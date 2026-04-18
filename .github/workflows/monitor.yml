@@ -24,7 +24,7 @@ jobs:
 
       - name: Run the monitor script
         # This executes your script and outputs to monitor_output.txt
-        run: python monitor_cron.py -o monitor_output.txt
+        run: python media-monitor.py -o monitor_output.txt
 
       - name: Commit and push the updated text file
         run: |
