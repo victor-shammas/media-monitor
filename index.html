@@ -213,21 +213,25 @@
                         } else if (lines[i].startsWith("Added:")) {
                             added = lines[i];
                         } else {
-                            summary += lines[i] + " ";
+                            // THE FIX: Only add the line to the summary if it isn't an exact copy of the title
+                            let lineText = lines[i];
+                            if (lineText !== title && lineText !== "") {
+                                summary += lineText + " ";
+                            }
                         }
                     }
 
                     // 4. Build the HTML Card
                     htmlOutput += `
-            <div class="article-card">
-                <h3><a href="${url || "#"}" target="_blank" rel="noopener noreferrer">${title}</a></h3>
-                <div class="article-meta">
-                    ${published ? `<span>📅 ${published.replace("Published:", "").trim()}</span>` : ""}
-                    ${added ? `<span>⏱️ ${added.replace("Added:", "").trim()}</span>` : ""}
-                </div>
-                ${summary ? `<p class="article-summary">${summary.trim()}</p>` : ""}
-            </div>
-            `;
+                        <div class="article-card">
+                            <h3><a href="${url || "#"}" target="_blank" rel="noopener noreferrer">${title}</a></h3>
+                            <div class="article-meta">
+                                ${published ? `<span>📅 ${published.replace("Published:", "").trim()}</span>` : ""}
+                                ${added ? `<span>⏱️ ${added.replace("Added:", "").trim()}</span>` : ""}
+                            </div>
+                            ${summary ? `<p class="article-summary">${summary.trim()}</p>` : ""}
+                        </div>
+                        `;
                 });
 
                 return htmlOutput;
