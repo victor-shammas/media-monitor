@@ -5,7 +5,7 @@ env:
 
 on:
   schedule:
-    # Runs once a day at 06:00 UTC (Adjust the "6" to change the hour)
+    # Runs once a day at 06:00 UTC
     - cron: "0 6 * * *"
   workflow_dispatch:
 
@@ -23,10 +23,9 @@ jobs:
           python-version: "3.x"
 
       - name: Install dependencies
-        run: pip install google-genai tenacity
+        run: pip install google-genai tenacity markdown
 
       - name: Run AI Reporter
-        # Pulls the secrets from GitHub and feeds them to the Python script
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           SENDER_EMAIL: ${{ secrets.SENDER_EMAIL }}
