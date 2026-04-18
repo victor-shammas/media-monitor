@@ -27,12 +27,12 @@
             .header {
                 background: #1a1a1a;
                 color: white;
-                padding: 20px 25px;
+                padding: 15px 25px; /* Tighter header */
                 text-align: center;
             }
             h1 {
                 margin: 0;
-                font-size: 1.5rem;
+                font-size: 1.3rem;
                 letter-spacing: 1px;
             }
 
@@ -44,12 +44,12 @@
             }
             .tab-button {
                 flex-grow: 1;
-                padding: 14px 20px;
+                padding: 10px 15px; /* Tighter tabs */
                 cursor: pointer;
                 color: #e2e8f0;
                 border: none;
                 background: none;
-                font-size: 14px;
+                font-size: 13px;
                 font-weight: 500;
                 outline: none;
                 transition: all 0.2s ease;
@@ -66,30 +66,30 @@
 
             /* Content Display */
             .content {
-                padding: 30px;
+                padding: 20px; /* Reduced from 30px */
                 background: #f8fafc;
             }
 
-            /* New Article Card Styling */
+            /* High-Density Article Card Styling */
             .article-card {
                 background: white;
                 border: 1px solid #e2e8f0;
-                border-radius: 8px;
-                padding: 20px;
-                margin-bottom: 20px;
-                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+                border-radius: 6px;
+                padding: 12px 16px; /* Significantly tighter padding */
+                margin-bottom: 10px; /* Tighter stacking */
+                box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
                 transition:
                     transform 0.1s ease,
                     box-shadow 0.1s ease;
             }
             .article-card:hover {
-                transform: translateY(-2px);
-                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+                transform: translateY(-1px);
+                box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
             }
             .article-card h3 {
-                margin: 0 0 10px 0;
-                font-size: 1.2rem;
-                line-height: 1.4;
+                margin: 0 0 4px 0; /* Tighter gap below title */
+                font-size: 1.05rem; /* Slightly scaled down */
+                line-height: 1.3;
             }
             .article-card h3 a {
                 color: #2b6cb0;
@@ -99,17 +99,14 @@
                 text-decoration: underline;
             }
             .article-meta {
-                font-size: 0.85rem;
+                font-size: 0.8rem; /* Smaller, subtler date text */
                 color: #718096;
-                margin-bottom: 12px;
-                display: flex;
-                flex-direction: column;
-                gap: 4px;
+                margin: 0;
             }
             .article-summary {
-                font-size: 0.95rem;
+                font-size: 0.9rem;
                 color: #4a5568;
-                margin: 0;
+                margin: 6px 0 0 0;
             }
 
             .loading {
@@ -170,11 +167,10 @@
                 // 1. Split the file by the "===" header dividers
                 const parts = rawText.split(/═{10,}/);
 
-                // If there are less than 3 parts, the header isn't there or file is empty
                 if (parts.length < 3)
                     return `<div class="no-results">No recent articles found in this category.</div>`;
 
-                // 2. Grab everything AFTER the header and split it by double-spacing (each article)
+                // 2. Grab everything AFTER the header and split it by double-spacing
                 const bodyText = parts.slice(2).join("═").trim();
                 if (!bodyText || bodyText.includes("(no results)")) {
                     return `<div class="no-results">No recent articles found in this category.</div>`;
@@ -189,31 +185,31 @@
                         .trim()
                         .split("\n")
                         .map((line) => line.trim());
-                    if (lines.length < 3) return; // Skip malformed blocks
+                    if (lines.length < 3) return;
 
-                    // Extract Title (Remove the "1. ", "2. " from the front)
+                    // Extract Title
                     let title = lines[0].replace(/^\d+\.\s*/, "");
 
-                    // Extract URL (Always the very last line)
+                    // Extract URL
                     let url = "";
                     let lastLine = lines[lines.length - 1];
                     if (lastLine.startsWith("http")) {
                         url = lastLine;
-                        lines.pop(); // Remove the URL from the list of text lines
+                        lines.pop();
                     }
 
                     // Extract Metadata and Summary
                     let published = "";
-                    let added = "";
                     let summary = "";
 
                     for (let i = 1; i < lines.length; i++) {
                         if (lines[i].startsWith("Published:")) {
                             published = lines[i];
                         } else if (lines[i].startsWith("Added:")) {
-                            added = lines[i];
+                            // SILENTLY IGNORE THE ADDED TIMESTAMP
+                            continue;
                         } else {
-                            // THE FIX: Only add the line to the summary if it isn't an exact copy of the title
+                            // Prevent duplicate titles in the summary
                             let lineText = lines[i];
                             if (lineText !== title && lineText !== "") {
                                 summary += lineText + " ";
@@ -221,17 +217,16 @@
                         }
                     }
 
-                    // 4. Build the HTML Card
+                    // 4. Build the High-Density HTML Card
                     htmlOutput += `
-                        <div class="article-card">
-                            <h3><a href="${url || "#"}" target="_blank" rel="noopener noreferrer">${title}</a></h3>
-                            <div class="article-meta">
-                                ${published ? `<span>📅 ${published.replace("Published:", "").trim()}</span>` : ""}
-                                ${added ? `<span>⏱️ ${added.replace("Added:", "").trim()}</span>` : ""}
-                            </div>
-                            ${summary ? `<p class="article-summary">${summary.trim()}</p>` : ""}
-                        </div>
-                        `;
+            <div class="article-card">
+                <h3><a href="${url || "#"}" target="_blank" rel="noopener noreferrer">${title}</a></h3>
+                <div class="article-meta">
+                    ${published ? `<span>📅 ${published.replace("Published:", "").trim()}</span>` : ""}
+                </div>
+                ${summary ? `<p class="article-summary">${summary.trim()}</p>` : ""}
+            </div>
+            `;
                 });
 
                 return htmlOutput;
@@ -254,7 +249,6 @@
                         return response.text();
                     })
                     .then((text) => {
-                        // Pass the raw text through our new parser before displaying it
                         feedContent.innerHTML = parseTextToHTML(text);
                     })
                     .catch((error) => {
