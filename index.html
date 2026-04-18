@@ -1,146 +1,262 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Right-Wing Media Monitor</title>
-    <style>
-        /* Modern, clean styling */
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background-color: #f4f4f9;
-            color: #333;
-            margin: 0;
-            padding: 20px;
-            line-height: 1.6;
-        }
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            overflow: hidden;
-        }
-        .header {
-            background: #1a1a1a;
-            color: white;
-            padding: 20px 25px;
-            text-align: center;
-        }
-        h1 { margin: 0; font-size: 1.5rem; letter-spacing: 1px; }
-        
-        /* Tab Navigation */
-        .tabs {
-            display: flex;
-            flex-wrap: wrap;
-            background: #2d3748;
-        }
-        .tab-button {
-            flex-grow: 1;
-            padding: 14px 20px;
-            cursor: pointer;
-            color: #e2e8f0;
-            border: none;
-            background: none;
-            font-size: 14px;
-            font-weight: 500;
-            outline: none;
-            transition: all 0.2s ease;
-        }
-        .tab-button:hover { background: #4a5568; }
-        .tab-button.active {
-            background: #ffffff;
-            color: #1a202c;
-            font-weight: bold;
-            border-top: 3px solid #3182ce;
-        }
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Right-Wing Media Monitor</title>
+        <style>
+            /* Modern, clean styling */
+            body {
+                font-family:
+                    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
+                    sans-serif;
+                background-color: #f4f4f9;
+                color: #333;
+                margin: 0;
+                padding: 20px;
+                line-height: 1.6;
+            }
+            .container {
+                max-width: 1000px;
+                margin: 0 auto;
+                background: white;
+                border-radius: 8px;
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+                overflow: hidden;
+            }
+            .header {
+                background: #1a1a1a;
+                color: white;
+                padding: 20px 25px;
+                text-align: center;
+            }
+            h1 {
+                margin: 0;
+                font-size: 1.5rem;
+                letter-spacing: 1px;
+            }
 
-        /* Content Display */
-        .content { padding: 25px; }
-        
-        /* We use <pre> to perfectly preserve the text formatting of your script */
-        pre {
-            white-space: pre-wrap;
-            word-wrap: break-word;
-            font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 6px;
-            border: 1px solid #e2e8f0;
-            font-size: 14px;
-            overflow-x: auto;
-        }
-        .loading { color: #718096; font-style: italic; }
-        .error { color: #e53e3e; font-weight: bold; }
-    </style>
-</head>
-<body>
+            /* Tab Navigation */
+            .tabs {
+                display: flex;
+                flex-wrap: wrap;
+                background: #2d3748;
+            }
+            .tab-button {
+                flex-grow: 1;
+                padding: 14px 20px;
+                cursor: pointer;
+                color: #e2e8f0;
+                border: none;
+                background: none;
+                font-size: 14px;
+                font-weight: 500;
+                outline: none;
+                transition: all 0.2s ease;
+            }
+            .tab-button:hover {
+                background: #4a5568;
+            }
+            .tab-button.active {
+                background: #ffffff;
+                color: #1a202c;
+                font-weight: bold;
+                border-top: 3px solid #3182ce;
+            }
 
-<div class="container">
-    <div class="header">
-        <h1>Transatlantic Right-Wing Media Monitor</h1>
-    </div>
-    
-    <div class="tabs" id="tab-container"></div>
-    
-    <div class="content">
-        <pre id="feed-content">Select a category to load the feed...</pre>
-    </div>
-</div>
+            /* Content Display */
+            .content {
+                padding: 30px;
+                background: #f8fafc;
+            }
 
-<script>
-    // Define the list of feeds matching the filenames in your Python script
-    const feeds = [
-        { filename: 'usa', name: '🇺🇸 USA' },
-        { filename: 'norway', name: '🇳🇴 Norway' },
-        { filename: 'sweden', name: '🇸🇪 Sweden' },
-        { filename: 'france', name: '🇫🇷 France' },
-        { filename: 'italy', name: '🇮🇹 Italy' },
-        { filename: 'uk', name: '🇬🇧 UK' },
-        { filename: 'hungary', name: '🇭🇺 Hungary' },
-        { filename: 'general', name: '🌍 General' },
-        { filename: 'networks', name: '🕸️ Networks' }
-    ];
+            /* New Article Card Styling */
+            .article-card {
+                background: white;
+                border: 1px solid #e2e8f0;
+                border-radius: 8px;
+                padding: 20px;
+                margin-bottom: 20px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+                transition:
+                    transform 0.1s ease,
+                    box-shadow 0.1s ease;
+            }
+            .article-card:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            }
+            .article-card h3 {
+                margin: 0 0 10px 0;
+                font-size: 1.2rem;
+                line-height: 1.4;
+            }
+            .article-card h3 a {
+                color: #2b6cb0;
+                text-decoration: none;
+            }
+            .article-card h3 a:hover {
+                text-decoration: underline;
+            }
+            .article-meta {
+                font-size: 0.85rem;
+                color: #718096;
+                margin-bottom: 12px;
+                display: flex;
+                flex-direction: column;
+                gap: 4px;
+            }
+            .article-summary {
+                font-size: 0.95rem;
+                color: #4a5568;
+                margin: 0;
+            }
 
-    const tabContainer = document.getElementById('tab-container');
-    const feedContent = document.getElementById('feed-content');
+            .loading {
+                color: #718096;
+                font-style: italic;
+            }
+            .error {
+                color: #e53e3e;
+                font-weight: bold;
+            }
+            .no-results {
+                color: #718096;
+                text-align: center;
+                padding: 40px 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <h1>Transatlantic Right-Wing Media Monitor</h1>
+            </div>
 
-    // Generate the tab buttons
-    feeds.forEach((feed, index) => {
-        const btn = document.createElement('button');
-        btn.className = 'tab-button';
-        btn.textContent = feed.name;
-        
-        btn.onclick = () => loadFeed(feed.filename, btn);
-        tabContainer.appendChild(btn);
-        
-        // Automatically load the first tab (USA) on page load
-        if (index === 0) loadFeed(feed.filename, btn);
-    });
+            <div class="tabs" id="tab-container"></div>
 
-    // Function to fetch and display the text file
-    function loadFeed(filename, clickedBtn) {
-        // Reset all tabs to inactive, then highlight the clicked one
-        document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
-        if (clickedBtn) clickedBtn.classList.add('active');
+            <div class="content" id="feed-content">Select a category to load the feed...</div>
+        </div>
 
-        feedContent.innerHTML = `<span class="loading">Fetching newest data for ${filename}...</span>`;
+        <script>
+            const feeds = [
+                { filename: "usa", name: "🇺🇸 USA" },
+                { filename: "norway", name: "🇳🇴 Norway" },
+                { filename: "sweden", name: "🇸🇪 Sweden" },
+                { filename: "france", name: "🇫🇷 France" },
+                { filename: "italy", name: "🇮🇹 Italy" },
+                { filename: "uk", name: "🇬🇧 UK" },
+                { filename: "hungary", name: "🇭🇺 Hungary" },
+                { filename: "general", name: "🌍 General" },
+                { filename: "networks", name: "🕸️ Networks" },
+            ];
 
-        // Fetch the corresponding text file from the feeds/ folder
-        fetch(`feeds/${filename}.txt`)
-            .then(response => {
-                if (!response.ok) throw new Error('File not found. Has the script run for this category yet?');
-                return response.text();
-            })
-            .then(text => {
-                feedContent.textContent = text;
-            })
-            .catch(error => {
-                feedContent.innerHTML = `<span class="error">Error: ${error.message}</span>`;
+            const tabContainer = document.getElementById("tab-container");
+            const feedContent = document.getElementById("feed-content");
+
+            feeds.forEach((feed, index) => {
+                const btn = document.createElement("button");
+                btn.className = "tab-button";
+                btn.textContent = feed.name;
+
+                btn.onclick = () => loadFeed(feed.filename, btn);
+                tabContainer.appendChild(btn);
+
+                if (index === 0) loadFeed(feed.filename, btn);
             });
-    }
-</script>
 
-</body>
+            // Custom Parser to turn the text file into clean HTML blocks
+            function parseTextToHTML(rawText) {
+                // 1. Split the file by the "===" header dividers
+                const parts = rawText.split(/═{10,}/);
+
+                // If there are less than 3 parts, the header isn't there or file is empty
+                if (parts.length < 3)
+                    return `<div class="no-results">No recent articles found in this category.</div>`;
+
+                // 2. Grab everything AFTER the header and split it by double-spacing (each article)
+                const bodyText = parts.slice(2).join("═").trim();
+                if (!bodyText || bodyText.includes("(no results)")) {
+                    return `<div class="no-results">No recent articles found in this category.</div>`;
+                }
+
+                const articleBlocks = bodyText.split(/\n\s*\n/);
+                let htmlOutput = "";
+
+                // 3. Process each article block
+                articleBlocks.forEach((block) => {
+                    const lines = block
+                        .trim()
+                        .split("\n")
+                        .map((line) => line.trim());
+                    if (lines.length < 3) return; // Skip malformed blocks
+
+                    // Extract Title (Remove the "1. ", "2. " from the front)
+                    let title = lines[0].replace(/^\d+\.\s*/, "");
+
+                    // Extract URL (Always the very last line)
+                    let url = "";
+                    let lastLine = lines[lines.length - 1];
+                    if (lastLine.startsWith("http")) {
+                        url = lastLine;
+                        lines.pop(); // Remove the URL from the list of text lines
+                    }
+
+                    // Extract Metadata and Summary
+                    let published = "";
+                    let added = "";
+                    let summary = "";
+
+                    for (let i = 1; i < lines.length; i++) {
+                        if (lines[i].startsWith("Published:")) {
+                            published = lines[i];
+                        } else if (lines[i].startsWith("Added:")) {
+                            added = lines[i];
+                        } else {
+                            summary += lines[i] + " ";
+                        }
+                    }
+
+                    // 4. Build the HTML Card
+                    htmlOutput += `
+            <div class="article-card">
+                <h3><a href="${url || "#"}" target="_blank" rel="noopener noreferrer">${title}</a></h3>
+                <div class="article-meta">
+                    ${published ? `<span>📅 ${published.replace("Published:", "").trim()}</span>` : ""}
+                    ${added ? `<span>⏱️ ${added.replace("Added:", "").trim()}</span>` : ""}
+                </div>
+                ${summary ? `<p class="article-summary">${summary.trim()}</p>` : ""}
+            </div>
+            `;
+                });
+
+                return htmlOutput;
+            }
+
+            function loadFeed(filename, clickedBtn) {
+                document
+                    .querySelectorAll(".tab-button")
+                    .forEach((btn) => btn.classList.remove("active"));
+                if (clickedBtn) clickedBtn.classList.add("active");
+
+                feedContent.innerHTML = `<span class="loading">Fetching newest data for ${filename}...</span>`;
+
+                fetch(`feeds/${filename}.txt`)
+                    .then((response) => {
+                        if (!response.ok)
+                            throw new Error(
+                                "File not found. Has the script run for this category yet?",
+                            );
+                        return response.text();
+                    })
+                    .then((text) => {
+                        // Pass the raw text through our new parser before displaying it
+                        feedContent.innerHTML = parseTextToHTML(text);
+                    })
+                    .catch((error) => {
+                        feedContent.innerHTML = `<span class="error">Error: ${error.message}</span>`;
+                    });
+            }
+        </script>
+    </body>
 </html>
