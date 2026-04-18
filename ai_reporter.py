@@ -4,6 +4,7 @@ import os
 import smtplib
 import sys
 import time
+import unicodedata
 from datetime import datetime, timedelta, timezone
 from email.message import EmailMessage
 
@@ -98,6 +99,9 @@ def main():
     try:
         response = generate_ai_content(client, prompt)
         analysis_text = response.text
+        analysis_text = unicodedata.normalize("NFKC", analysis_text)
+        analysis_text = analysis_text.replace("\xa0", " ")  # just in case
+
     except Exception as e:
         print(f"Final failure after multiple retries: {e}")
         sys.exit(1)
