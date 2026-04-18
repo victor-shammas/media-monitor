@@ -5,8 +5,8 @@ env:
 
 on:
   schedule:
-    # Runs once a day at 08:00 UTC (Adjust the "8" to change the hour)
-    - cron: "0 8 * * *"
+    # Runs once a day at 06:00 UTC (Adjust the "6" to change the hour)
+    - cron: "0 6 * * *"
   workflow_dispatch:
 
 jobs:
