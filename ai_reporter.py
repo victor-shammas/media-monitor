@@ -6,6 +6,7 @@ Modes:
   python ai_reporter.py              → HTML email (production)
   python ai_reporter.py --markdown   → writes .md files to reports/ (testing)
 """
+
 import argparse
 import json
 import os
@@ -35,6 +36,7 @@ STATE_FILE = "monitor_state.json"
 
 # ── Retry Logic ────────────────────────────────────────────────────────────
 
+
 @retry(
     stop=stop_after_attempt(5),
     wait=wait_exponential(multiplier=1, min=4, max=60),
@@ -55,6 +57,7 @@ MODEL_ALIASES = {
 
 
 # ── Helpers ────────────────────────────────────────────────────────────────
+
 
 def get_sort_time(item: dict) -> datetime:
     date_str = item.get("date", "")
@@ -93,6 +96,7 @@ CATEGORY_LABELS = {
 
 
 # ── Citation System ───────────────────────────────────────────────────────
+
 
 def compile_recent_data(state: dict, cutoff: datetime) -> tuple[str, dict, int, int]:
     """Extract recent articles, assign sequential reference numbers.
@@ -155,14 +159,14 @@ def inject_links_markdown(text: str, ref_map: dict) -> tuple[str, set]:
 
     # Pass 1: match [N, N, ...] groups (two or more comma-separated numbers)
     result = re.sub(
-        r'\[(\d+(?:\s*,\s*\d+)+)\]',
+        r"\[(\d+(?:\s*,\s*\d+)+)\]",
         replace_group,
         text,
     )
 
     # Pass 2: match remaining lone [N] not already converted to [[N]](...)
     result = re.sub(
-        r'(?<!\[)\[(\d+)\](?!\(|\])',
+        r"(?<!\[)\[(\d+)\](?!\(|\])",
         replace_single,
         result,
     )
@@ -189,10 +193,10 @@ def build_sources_appendix_md(ref_map: dict, cited: set) -> str:
 
 # ── Prompt ─────────────────────────────────────────────────────────────────
 
+
 def build_prompt(context: str) -> str:
     return (
-        "You are an expert political analyst writing a daily intelligence brief. "
-        "Analyze the last 24 hours of right-wing and far-right news from the data below.\n\n"
+        "Analyze the last 24-48 hours of right-wing and far-right news from the data below.\n\n"
         "FORMAT INSTRUCTIONS:\n"
         "- Write in Markdown.\n"
         "- Begin with a short executive summary paragraph (2-3 sentences) of the day's "
@@ -202,14 +206,14 @@ def build_prompt(context: str) -> str:
         "'## Transnational Conservative Networking').\n"
         "- Within each section, note cross-national patterns and connections where they exist.\n"
         "- Use **bold** for party names and key actors on first mention.\n"
-        "- End with a short 'Watchlist' section flagging 2-3 emerging stories to track.\n"
+        "- End with a short 'Watchlist' section flagging 3 emerging stories to track.\n"
         "- Keep the tone analytical and concise — this is a professional briefing, "
         "not a news summary.\n\n"
         "CITATION INSTRUCTIONS:\n"
         "- Each article in the data has a reference number in square brackets, e.g. [1], [2].\n"
         "- When you make a claim that draws on a specific article, cite it inline using its "
         "number: e.g. 'Vance faced bipartisan criticism [14] amid growing internal dissent [27].'\n"
-        "- Cite the most relevant 1-3 sources per claim. Do NOT cite every article.\n"
+        "- Cite only the single most relevant source per claim. Never stack multiple citations.\n"
         "- Do NOT invent reference numbers that are not in the data.\n"
         "- Do NOT create a bibliography or references section — just use inline citations.\n\n"
         f"DATA:\n{context}"
@@ -218,8 +222,10 @@ def build_prompt(context: str) -> str:
 
 # ── HTML Template ──────────────────────────────────────────────────────────
 
-def build_html_email(analysis_html: str, today_str: str, article_count: int,
-                     category_count: int) -> str:
+
+def build_html_email(
+    analysis_html: str, today_str: str, article_count: int, category_count: int
+) -> str:
     return f"""\
 <!DOCTYPE html>
 <html lang="en">
@@ -279,25 +285,41 @@ def build_html_email(analysis_html: str, today_str: str, article_count: int,
 
 # ── Inline Styles for Markdown → HTML ──────────────────────────────────────
 
+
 def style_html(raw_html: str) -> str:
     """Inject inline styles into the converted Markdown HTML for email clients."""
     replacements = [
-        ("<h1>", '<h1 style="font-size:20px; color:#1a1a2e; margin:28px 0 12px 0; '
-                 'border-bottom:2px solid #1a1a2e; padding-bottom:6px;">'),
+        (
+            "<h1>",
+            '<h1 style="font-size:20px; color:#1a1a2e; margin:28px 0 12px 0; '
+            'border-bottom:2px solid #1a1a2e; padding-bottom:6px;">',
+        ),
         ("<h2>", '<h2 style="font-size:17px; color:#1a1a2e; margin:24px 0 10px 0;">'),
-        ("<h3>", '<h3 style="font-size:15px; color:#333; margin:20px 0 8px 0; '
-                 'font-family:Helvetica,Arial,sans-serif;">'),
+        (
+            "<h3>",
+            '<h3 style="font-size:15px; color:#333; margin:20px 0 8px 0; '
+            'font-family:Helvetica,Arial,sans-serif;">',
+        ),
         ("<p>", '<p style="margin:0 0 14px 0;">'),
         ("<ul>", '<ul style="margin:0 0 16px 0; padding-left:20px;">'),
         ("<ol>", '<ol style="margin:0 0 16px 0; padding-left:20px;">'),
         ("<li>", '<li style="margin:0 0 6px 0;">'),
         ("<strong>", '<strong style="color:#1a1a2e;">'),
-        ("<blockquote>", '<blockquote style="margin:16px 0; padding:12px 20px; '
-                         'border-left:3px solid #1a1a2e; background:#f8f8fa; '
-                         'font-style:italic; color:#555;">'),
+        (
+            "<blockquote>",
+            '<blockquote style="margin:16px 0; padding:12px 20px; '
+            "border-left:3px solid #1a1a2e; background:#f8f8fa; "
+            'font-style:italic; color:#555;">',
+        ),
         ("<hr>", '<hr style="border:none; border-top:1px solid #ddd; margin:24px 0;">'),
-        ("<hr/>", '<hr style="border:none; border-top:1px solid #ddd; margin:24px 0;">'),
-        ("<hr />", '<hr style="border:none; border-top:1px solid #ddd; margin:24px 0;">'),
+        (
+            "<hr/>",
+            '<hr style="border:none; border-top:1px solid #ddd; margin:24px 0;">',
+        ),
+        (
+            "<hr />",
+            '<hr style="border:none; border-top:1px solid #ddd; margin:24px 0;">',
+        ),
     ]
     for old, new in replacements:
         raw_html = raw_html.replace(old, new)
@@ -306,23 +328,27 @@ def style_html(raw_html: str) -> str:
 
 # ── Main ───────────────────────────────────────────────────────────────────
 
+
 def main():
     parser = argparse.ArgumentParser(description="AI Intelligence Reporter")
     parser.add_argument(
-        "--markdown", action="store_true",
-        help="Write markdown reports to reports/ instead of sending email (testing mode)"
+        "--markdown",
+        action="store_true",
+        help="Write markdown reports to reports/ instead of sending email (testing mode)",
     )
     parser.add_argument(
-        "--hours", type=int, default=24,
-        help="Look-back window in hours (default: 24)"
+        "--hours", type=int, default=24, help="Look-back window in hours (default: 24)"
     )
     parser.add_argument(
-        "--outdir", default="reports",
-        help="Output directory for markdown reports (default: reports/)"
+        "--outdir",
+        default="reports",
+        help="Output directory for markdown reports (default: reports/)",
     )
     parser.add_argument(
-        "--model", default="pro", choices=["flash", "pro"],
-        help="Gemini model: 'flash' (fast, good for testing) or 'pro' (best, default)"
+        "--model",
+        default="pro",
+        choices=["flash", "pro"],
+        help="Gemini model: 'flash' (fast, good for testing) or 'pro' (best, default)",
     )
     args = parser.parse_args()
 
@@ -339,7 +365,9 @@ def main():
         email_password = os.environ.get("EMAIL_PASSWORD")
         receiver_email = os.environ.get("RECEIVER_EMAIL")
         if not all([sender_email, email_password, receiver_email]):
-            print("Error: Missing email secrets. Use --markdown for testing without email.")
+            print(
+                "Error: Missing email secrets. Use --markdown for testing without email."
+            )
             sys.exit(1)
 
     if not os.path.exists(STATE_FILE):
@@ -376,7 +404,9 @@ def main():
         with open(input_path, "w", encoding="utf-8") as f:
             f.write(f"# Gemini Input — {today_str}\n\n")
             f.write(f"**Look-back:** {args.hours} hours\n")
-            f.write(f"**Articles:** {article_count} across {category_count} categories\n")
+            f.write(
+                f"**Articles:** {article_count} across {category_count} categories\n"
+            )
             f.write(f"**References indexed:** {len(ref_map)}\n\n")
             f.write("---\n\n")
             f.write("## Prompt Instructions\n\n")
@@ -406,7 +436,9 @@ def main():
         output_path = os.path.join(args.outdir, f"{date_slug}_report.md")
         with open(output_path, "w", encoding="utf-8") as f:
             f.write(f"# Intelligence Brief — {today_str}\n\n")
-            f.write(f"*{article_count} articles across {category_count} categories*\n\n")
+            f.write(
+                f"*{article_count} articles across {category_count} categories*\n\n"
+            )
             f.write("---\n\n")
             f.write(analysis_linked)
             f.write(sources_appendix)
@@ -436,7 +468,9 @@ def main():
     analysis_html = style_html(analysis_html)
 
     subject = f"Intelligence Brief: Transatlantic Right-Wing Media ({today_str})"
-    full_html = build_html_email(analysis_html, today_str, article_count, category_count)
+    full_html = build_html_email(
+        analysis_html, today_str, article_count, category_count
+    )
 
     # Plain-text fallback: use the raw text with a simple sources list
     plain_sources = ""
