@@ -20,7 +20,7 @@ from urllib.request import Request, urlopen
 # ── Configuration ──────────────────────────────────────────────────────────
 
 STATE_FILE = "monitor_state.json"
-MAX_NEW_PER_RUN = 15  # The universal limit of new articles to add per run per category
+MAX_NEW_PER_RUN = 30  # The universal limit of new articles to add per run per category
 
 FEEDS = [
     {
