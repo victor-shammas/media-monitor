@@ -6,7 +6,7 @@ env:
 on:
   schedule:
     # Runs once a day at 08:00 UTC (Adjust the "8" to change the hour)
-    - cron: "0 8 * * *" 
+    - cron: "0 8 * * *"
   workflow_dispatch:
 
 jobs:
@@ -23,7 +23,7 @@ jobs:
           python-version: "3.x"
 
       - name: Install dependencies
-        run: pip install google-generativeai
+        run: pip install google-genai
 
       - name: Run AI Reporter
         # Pulls the secrets from GitHub and feeds them to the Python script

@@ -13,9 +13,9 @@ from datetime import datetime, timedelta, timezone
 from email.message import EmailMessage
 
 try:
-    import google.generativeai as genai
+    from google import genai
 except ImportError:
-    print("Please install google-generativeai: pip install google-generativeai")
+    print("Please install google-genai: pip install google-genai")
     sys.exit(1)
 
 STATE_FILE = "monitor_state.json"
@@ -59,7 +59,6 @@ def main():
     compiled_data = []
 
     for category, items in state.items():
-        # state dictionary keys are just the short IDs (maga, frp, sd), so we uppercase them for readability
         recent_items = [item for item in items if get_sort_time(item) >= cutoff]
 
         if recent_items:
@@ -74,17 +73,17 @@ def main():
 
     prompt_context = "\n".join(compiled_data)
     prompt = (
+        "You are an expert political analyst monitoring international media. "
         "Analyze the last 24 hours of right-wing news from around the world contained in the data below. "
         "Create a high-level summary of the far right's activities, strategies, priorities, and any transnational themes you notice. "
         "Format your response cleanly with readable paragraphs and bullet points (avoid using markdown asterisks since this will be sent as a plain text email).\n\n"
         f"DATA:\n{prompt_context}"
     )
 
-    # 3. Ask Gemini for the analysis
+    # 3. Ask Gemini for the analysis using the modern GenAI SDK
     print("Generating AI Analysis...")
-    genai.configure(api_key=api_key)
-    model = genai.GenerativeModel("gemini-1.5-flash")
-    response = model.generate_content(prompt)
+    client = genai.Client()  # Automatically grabs GEMINI_API_KEY from environment
+    response = client.models.generate_content(model="gemini-2.5-flash", contents=prompt)
     analysis_text = response.text
 
     # 4. Draft and send the email
