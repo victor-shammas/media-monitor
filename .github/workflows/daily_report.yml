@@ -5,7 +5,7 @@ env:
 
 on:
   schedule:
-    # Runs once a day at 06:00 UTC
+    # Runs daily at 06:00 UTC — after the scraper (05:00)
     - cron: "0 6 * * *"
   workflow_dispatch:
 

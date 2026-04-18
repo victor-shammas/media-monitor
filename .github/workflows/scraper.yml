@@ -1,0 +1,40 @@
+name: Article Scraper
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+on:
+  schedule:
+    # Runs daily at 05:00 UTC — after the monitor, before the reporter
+    - cron: "0 5 * * *"
+  workflow_dispatch:
+
+jobs:
+  scrape-articles:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Install dependencies
+        run: pip install trafilatura googlenewsdecoder
+
+      - name: Run scraper
+        run: python article_scraper.py --hours 26
+
+      - name: Commit enriched data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add enriched/
+          git commit -m "Daily article enrichment" || echo "No changes to commit"
+          git pull --rebase
+          git push
