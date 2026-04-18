@@ -1,4 +1,12 @@
 #!/usr/bin/env python3
+"""
+AI Reporter — generates intelligence briefs from the media monitor state file.
+
+Modes:
+  python ai_reporter.py              → HTML email (production)
+  python ai_reporter.py --markdown   → writes .md files to reports/ (testing)
+"""
+import argparse
 import json
 import os
 import smtplib
@@ -9,7 +17,7 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
 try:
-    import markdown
+    import markdown as md_lib
     from google import genai
     from tenacity import (
         retry,
@@ -165,26 +173,11 @@ def style_html(raw_html: str) -> str:
     return raw_html
 
 
-# ── Main ───────────────────────────────────────────────────────────────────
+# ── Data Compilation ──────────────────────────────────────────────────────
 
-def main():
-    api_key = os.environ.get("GEMINI_API_KEY")
-    sender_email = os.environ.get("SENDER_EMAIL")
-    email_password = os.environ.get("EMAIL_PASSWORD")
-    receiver_email = os.environ.get("RECEIVER_EMAIL")
-
-    if not all([api_key, sender_email, email_password, receiver_email]):
-        print("Error: Missing required environment variables/secrets.")
-        sys.exit(1)
-
-    if not os.path.exists(STATE_FILE):
-        print("No state file found.")
-        sys.exit(1)
-
-    with open(STATE_FILE, "r", encoding="utf-8") as f:
-        state = json.load(f)
-
-    cutoff = datetime.now(timezone.utc) - timedelta(hours=24)
+def compile_recent_data(state: dict, cutoff: datetime) -> tuple[str, int, int]:
+    """Extract recent articles from the state file.
+    Returns (context_str, article_count, category_count)."""
     compiled_data = []
     article_count = 0
     category_count = 0
@@ -200,12 +193,11 @@ def main():
                 compiled_data.append(f"- {item['title']} (Source: {item['source']})")
             compiled_data.append("")
 
-    if not compiled_data:
-        print("No new articles in the last 24 hours. Skipping report.")
-        sys.exit(0)
+    return "\n".join(compiled_data), article_count, category_count
 
-    prompt_context = "\n".join(compiled_data)
-    prompt = (
+
+def build_prompt(context: str) -> str:
+    return (
         "You are an expert political analyst writing a daily intelligence brief. "
         "Analyze the last 24 hours of right-wing and far-right news from the data below.\n\n"
         "FORMAT INSTRUCTIONS:\n"
@@ -220,9 +212,99 @@ def main():
         "- End with a short 'Watchlist' section flagging 2-3 emerging stories to track.\n"
         "- Keep the tone analytical and concise — this is a professional briefing, "
         "not a news summary.\n\n"
-        f"DATA:\n{prompt_context}"
+        f"DATA:\n{context}"
     )
 
+
+# ── Main ───────────────────────────────────────────────────────────────────
+
+def main():
+    parser = argparse.ArgumentParser(description="AI Intelligence Reporter")
+    parser.add_argument(
+        "--markdown", action="store_true",
+        help="Write markdown reports to reports/ instead of sending email (testing mode)"
+    )
+    parser.add_argument(
+        "--hours", type=int, default=24,
+        help="Look-back window in hours (default: 24)"
+    )
+    parser.add_argument(
+        "--outdir", default="reports",
+        help="Output directory for markdown reports (default: reports/)"
+    )
+    args = parser.parse_args()
+
+    # In markdown mode, only the API key is required
+    api_key = os.environ.get("GEMINI_API_KEY")
+    if not api_key:
+        print("Error: GEMINI_API_KEY not set.")
+        sys.exit(1)
+
+    if not args.markdown:
+        sender_email = os.environ.get("SENDER_EMAIL")
+        email_password = os.environ.get("EMAIL_PASSWORD")
+        receiver_email = os.environ.get("RECEIVER_EMAIL")
+        if not all([sender_email, email_password, receiver_email]):
+            print("Error: Missing email secrets. Use --markdown for testing without email.")
+            sys.exit(1)
+
+    if not os.path.exists(STATE_FILE):
+        print("No state file found.")
+        sys.exit(1)
+
+    with open(STATE_FILE, "r", encoding="utf-8") as f:
+        state = json.load(f)
+
+    cutoff = datetime.now(timezone.utc) - timedelta(hours=args.hours)
+    prompt_context, article_count, category_count = compile_recent_data(state, cutoff)
+
+    if not prompt_context.strip():
+        print(f"No new articles in the last {args.hours} hours. Skipping report.")
+        sys.exit(0)
+
+    prompt = build_prompt(prompt_context)
+    today_str = datetime.now().strftime("%B %d, %Y")
+    date_slug = datetime.now().strftime("%Y-%m-%d")
+
+    # ── Markdown mode: dump input + output to files ──────────────────────
+    if args.markdown:
+        os.makedirs(args.outdir, exist_ok=True)
+
+        # 1. Write the raw input (what Gemini sees)
+        input_path = os.path.join(args.outdir, f"{date_slug}_input.md")
+        with open(input_path, "w", encoding="utf-8") as f:
+            f.write(f"# Gemini Input — {today_str}\n\n")
+            f.write(f"**Look-back:** {args.hours} hours\n")
+            f.write(f"**Articles:** {article_count} across {category_count} categories\n\n")
+            f.write("---\n\n")
+            f.write("## Prompt\n\n")
+            f.write(f"```\n{prompt}\n```\n\n")
+            f.write("---\n\n")
+            f.write("## Raw Data Sent to Model\n\n")
+            f.write(prompt_context)
+        print(f"  ✓ Input saved → {input_path}")
+
+        # 2. Call Gemini
+        print("Generating AI Analysis (with automatic retries)...")
+        client = genai.Client()
+        try:
+            response = generate_ai_content(client, prompt)
+            analysis_text = sanitize(response.text)
+        except Exception as e:
+            print(f"Final failure after multiple retries: {e}")
+            sys.exit(1)
+
+        # 3. Write the analysis output
+        output_path = os.path.join(args.outdir, f"{date_slug}_report.md")
+        with open(output_path, "w", encoding="utf-8") as f:
+            f.write(f"# Intelligence Brief — {today_str}\n\n")
+            f.write(f"*{article_count} articles across {category_count} categories*\n\n")
+            f.write("---\n\n")
+            f.write(analysis_text)
+        print(f"  ✓ Report saved → {output_path}")
+        return
+
+    # ── Email mode (production) ──────────────────────────────────────────
     print("Generating AI Analysis (with automatic retries)...")
     client = genai.Client()
 
@@ -234,12 +316,10 @@ def main():
         sys.exit(1)
 
     # Convert Markdown → styled HTML
-    analysis_html = markdown.markdown(analysis_text, extensions=["extra", "smarty"])
+    analysis_html = md_lib.markdown(analysis_text, extensions=["extra", "smarty"])
     analysis_html = style_html(analysis_html)
 
-    today_str = datetime.now().strftime("%B %d, %Y")
     subject = f"Intelligence Brief: Transatlantic Right-Wing Media ({today_str})"
-
     full_html = build_html_email(analysis_html, today_str, article_count, category_count)
 
     # Build multipart message (plain text fallback + HTML)
@@ -247,10 +327,7 @@ def main():
     msg["Subject"] = subject
     msg["From"] = sender_email
     msg["To"] = receiver_email
-
-    # Plain-text fallback for email clients that don't render HTML
     msg.attach(MIMEText(analysis_text, "plain", "utf-8"))
-    # HTML version (preferred by most clients)
     msg.attach(MIMEText(full_html, "html", "utf-8"))
 
     print("Sending email...")

@@ -12,6 +12,8 @@ on:
 jobs:
   email-report:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
 
     steps:
       - name: Checkout repository
@@ -31,4 +33,16 @@ jobs:
           SENDER_EMAIL: ${{ secrets.SENDER_EMAIL }}
           EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
           RECEIVER_EMAIL: ${{ secrets.RECEIVER_EMAIL }}
-        run: python ai_reporter.py
+        # ──────────────────────────────────────────────────────────
+        # TESTING:  use --markdown to write reports/ instead of email
+        # PRODUCTION: remove --markdown to send HTML email
+        # ──────────────────────────────────────────────────────────
+        run: python ai_reporter.py --markdown
+
+      - name: Commit reports
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add reports/
+          git commit -m "Daily intelligence report" || echo "No changes to commit"
+          git push
