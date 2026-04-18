@@ -1,0 +1,36 @@
+name: Right-Wing Media Monitor
+
+on:
+  schedule:
+    # This runs the script every 4 hours. 
+    # (Change the '4' to a '6' or '12' if you want a different interval)
+    - cron: "0 */4 * * *" 
+  workflow_dispatch: # This allows you to manually trigger it via a button
+
+jobs:
+  run-monitor:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # This allows the bot to save the text file back to your repo
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+
+      - name: Run the monitor script
+        # This executes your script and outputs to monitor_output.txt
+        run: python monitor_cron.py -o monitor_output.txt
+
+      - name: Commit and push the updated text file
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add monitor_output.txt
+          # The '|| echo...' prevents the workflow from crashing if no new news was found
+          git commit -m "Automated monitor update" || echo "No changes to commit"
+          git push
