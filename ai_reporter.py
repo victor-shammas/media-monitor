@@ -1,12 +1,16 @@
 #!/usr/bin/env python3
 """
-AI Reporter — generates intelligence briefs from the media monitor state file.
+AI Reporter — generates intelligence briefs from the media monitor.
+
+Data sources (checked in order):
+  1. enriched/enriched_YYYY-MM-DD.json  (titles + article extracts)
+  2. monitor_state.json                  (titles only, fallback)
 
 Modes:
-  python ai_reporter.py              → HTML email (production)
-  python ai_reporter.py --markdown   → writes .md files to reports/ (testing)
+  python ai_reporter.py --markdown              → writes .md files (testing)
+  python ai_reporter.py                          → HTML email (production)
+  python ai_reporter.py --markdown --model flash → fast iteration
 """
-
 import argparse
 import json
 import os
@@ -36,7 +40,6 @@ STATE_FILE = "monitor_state.json"
 
 # ── Retry Logic ────────────────────────────────────────────────────────────
 
-
 @retry(
     stop=stop_after_attempt(5),
     wait=wait_exponential(multiplier=1, min=4, max=60),
@@ -58,7 +61,6 @@ MODEL_ALIASES = {
 
 # ── Helpers ────────────────────────────────────────────────────────────────
 
-
 def get_sort_time(item: dict) -> datetime:
     date_str = item.get("date", "")
     try:
@@ -74,9 +76,18 @@ def get_sort_time(item: dict) -> datetime:
 
 
 def sanitize(text: str) -> str:
-    """Normalize Unicode and strip non-breaking spaces."""
+    """Normalize Unicode and replace characters that cause email encoding issues."""
     text = unicodedata.normalize("NFKC", text)
     text = text.replace("\xa0", " ")
+    text = text.replace("\u201c", '"')
+    text = text.replace("\u201d", '"')
+    text = text.replace("\u2018", "'")
+    text = text.replace("\u2019", "'")
+    text = text.replace("\u2013", "-")
+    text = text.replace("\u2014", "--")
+    text = text.replace("\u2026", "...")
+    text = text.replace("\u00ab", '"')
+    text = text.replace("\u00bb", '"')
     return text
 
 
@@ -95,14 +106,68 @@ CATEGORY_LABELS = {
 }
 
 
-# ── Citation System ───────────────────────────────────────────────────────
+# ── Data Sources ──────────────────────────────────────────────────────────
+
+def load_enriched(enriched_dir: str, date_slug: str) -> list[dict] | None:
+    """Try to load today's enriched file. Returns list of articles or None."""
+    path = os.path.join(enriched_dir, f"enriched_{date_slug}.json")
+    if not os.path.exists(path):
+        return None
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            data = json.load(f)
+        articles = data.get("articles", [])
+        if not articles:
+            return None
+        return articles
+    except Exception as e:
+        print(f"  ⚠ Failed to load enriched file: {e}")
+        return None
 
 
-def compile_recent_data(state: dict, cutoff: datetime) -> tuple[str, dict, int, int]:
-    """Extract recent articles, assign sequential reference numbers.
+def compile_from_enriched(articles: list[dict]) -> tuple[str, dict, int, int]:
+    """Build prompt context from enriched data (titles + extracts).
     Returns (context_str, reference_map, article_count, category_count).
+    """
+    by_cat = {}
+    for a in articles:
+        by_cat.setdefault(a.get("category", "unknown"), []).append(a)
 
-    reference_map: {1: {"title": "...", "source": "...", "url": "..."}, ...}
+    compiled_data = []
+    reference_map = {}
+    ref_num = 0
+    article_count = 0
+    category_count = 0
+
+    for cat_id, items in by_cat.items():
+        category_count += 1
+        article_count += len(items)
+        label = CATEGORY_LABELS.get(cat_id, cat_id.upper())
+        compiled_data.append(f"### CATEGORY: {label} ###")
+
+        for item in items:
+            ref_num += 1
+            url = item.get("resolved_url") or item.get("google_url", "")
+            reference_map[ref_num] = {
+                "title": item.get("title", ""),
+                "source": item.get("source", ""),
+                "url": url,
+            }
+
+            line = f"- [{ref_num}] {item['title']} (Source: {item['source']})"
+            extract = item.get("extract")
+            if extract and item.get("extract_status") == "ok":
+                line += f"\n  EXTRACT: {extract}"
+            compiled_data.append(line)
+
+        compiled_data.append("")
+
+    return "\n".join(compiled_data), reference_map, article_count, category_count
+
+
+def compile_from_state(state: dict, cutoff: datetime) -> tuple[str, dict, int, int]:
+    """Build prompt context from monitor_state.json (titles only).
+    Returns (context_str, reference_map, article_count, category_count).
     """
     compiled_data = []
     reference_map = {}
@@ -132,6 +197,8 @@ def compile_recent_data(state: dict, cutoff: datetime) -> tuple[str, dict, int, 
     return "\n".join(compiled_data), reference_map, article_count, category_count
 
 
+# ── Citation System ───────────────────────────────────────────────────────
+
 def inject_links_markdown(text: str, ref_map: dict) -> tuple[str, set]:
     """Replace citation patterns with markdown links. Returns (text, cited_nums).
 
@@ -140,7 +207,6 @@ def inject_links_markdown(text: str, ref_map: dict) -> tuple[str, set]:
     cited = set()
 
     def link_single(num: int) -> str:
-        """Convert a single reference number to a markdown link."""
         ref = ref_map.get(num)
         if ref and ref.get("url"):
             cited.add(num)
@@ -148,25 +214,20 @@ def inject_links_markdown(text: str, ref_map: dict) -> tuple[str, set]:
         return f"[{num}]"
 
     def replace_group(m):
-        """Handle comma-separated groups like [14, 15, 27]."""
         inner = m.group(1)
         nums = [int(n.strip()) for n in inner.split(",") if n.strip().isdigit()]
         return " ".join(link_single(n) for n in nums)
 
     def replace_single(m):
-        """Handle lone [N] that weren't part of a group."""
         return link_single(int(m.group(1)))
 
-    # Pass 1: match [N, N, ...] groups (two or more comma-separated numbers)
     result = re.sub(
-        r"\[(\d+(?:\s*,\s*\d+)+)\]",
+        r'\[(\d+(?:\s*,\s*\d+)+)\]',
         replace_group,
         text,
     )
-
-    # Pass 2: match remaining lone [N] not already converted to [[N]](...)
     result = re.sub(
-        r"(?<!\[)\[(\d+)\](?!\(|\])",
+        r'(?<!\[)\[(\d+)\](?!\(|\])',
         replace_single,
         result,
     )
@@ -193,10 +254,20 @@ def build_sources_appendix_md(ref_map: dict, cited: set) -> str:
 
 # ── Prompt ─────────────────────────────────────────────────────────────────
 
+def build_prompt(context: str, enriched: bool = False) -> str:
+    data_description = (
+        "Each article includes a title and, where available, an EXTRACT "
+        "with the opening paragraphs of the article. Use the extracts to "
+        "ground your analysis in the actual framing and argumentation of "
+        "the source material."
+        if enriched else
+        "Each article is represented by its headline and source outlet."
+    )
 
-def build_prompt(context: str) -> str:
     return (
-        "Analyze the last 24-48 hours of right-wing and far-right news from the data below.\n\n"
+        "You are an expert political analyst writing a daily intelligence brief. "
+        "Analyze the last 24 hours of right-wing and far-right news from the data below.\n\n"
+        f"DATA DESCRIPTION: {data_description}\n\n"
         "FORMAT INSTRUCTIONS:\n"
         "- Write in Markdown.\n"
         "- Begin with a short executive summary paragraph (2-3 sentences) of the day's "
@@ -206,7 +277,7 @@ def build_prompt(context: str) -> str:
         "'## Transnational Conservative Networking').\n"
         "- Within each section, note cross-national patterns and connections where they exist.\n"
         "- Use **bold** for party names and key actors on first mention.\n"
-        "- End with a short 'Watchlist' section flagging 3 emerging stories to track.\n"
+        "- End with a short 'Watchlist' section flagging 2-3 emerging stories to track.\n"
         "- Keep the tone analytical and concise — this is a professional briefing, "
         "not a news summary.\n\n"
         "CITATION INSTRUCTIONS:\n"
@@ -222,10 +293,8 @@ def build_prompt(context: str) -> str:
 
 # ── HTML Template ──────────────────────────────────────────────────────────
 
-
-def build_html_email(
-    analysis_html: str, today_str: str, article_count: int, category_count: int
-) -> str:
+def build_html_email(analysis_html: str, today_str: str, article_count: int,
+                     category_count: int) -> str:
     return f"""\
 <!DOCTYPE html>
 <html lang="en">
@@ -285,41 +354,25 @@ def build_html_email(
 
 # ── Inline Styles for Markdown → HTML ──────────────────────────────────────
 
-
 def style_html(raw_html: str) -> str:
     """Inject inline styles into the converted Markdown HTML for email clients."""
     replacements = [
-        (
-            "<h1>",
-            '<h1 style="font-size:20px; color:#1a1a2e; margin:28px 0 12px 0; '
-            'border-bottom:2px solid #1a1a2e; padding-bottom:6px;">',
-        ),
+        ("<h1>", '<h1 style="font-size:20px; color:#1a1a2e; margin:28px 0 12px 0; '
+                 'border-bottom:2px solid #1a1a2e; padding-bottom:6px;">'),
         ("<h2>", '<h2 style="font-size:17px; color:#1a1a2e; margin:24px 0 10px 0;">'),
-        (
-            "<h3>",
-            '<h3 style="font-size:15px; color:#333; margin:20px 0 8px 0; '
-            'font-family:Helvetica,Arial,sans-serif;">',
-        ),
+        ("<h3>", '<h3 style="font-size:15px; color:#333; margin:20px 0 8px 0; '
+                 'font-family:Helvetica,Arial,sans-serif;">'),
         ("<p>", '<p style="margin:0 0 14px 0;">'),
         ("<ul>", '<ul style="margin:0 0 16px 0; padding-left:20px;">'),
         ("<ol>", '<ol style="margin:0 0 16px 0; padding-left:20px;">'),
         ("<li>", '<li style="margin:0 0 6px 0;">'),
         ("<strong>", '<strong style="color:#1a1a2e;">'),
-        (
-            "<blockquote>",
-            '<blockquote style="margin:16px 0; padding:12px 20px; '
-            "border-left:3px solid #1a1a2e; background:#f8f8fa; "
-            'font-style:italic; color:#555;">',
-        ),
+        ("<blockquote>", '<blockquote style="margin:16px 0; padding:12px 20px; '
+                         'border-left:3px solid #1a1a2e; background:#f8f8fa; '
+                         'font-style:italic; color:#555;">'),
         ("<hr>", '<hr style="border:none; border-top:1px solid #ddd; margin:24px 0;">'),
-        (
-            "<hr/>",
-            '<hr style="border:none; border-top:1px solid #ddd; margin:24px 0;">',
-        ),
-        (
-            "<hr />",
-            '<hr style="border:none; border-top:1px solid #ddd; margin:24px 0;">',
-        ),
+        ("<hr/>", '<hr style="border:none; border-top:1px solid #ddd; margin:24px 0;">'),
+        ("<hr />", '<hr style="border:none; border-top:1px solid #ddd; margin:24px 0;">'),
     ]
     for old, new in replacements:
         raw_html = raw_html.replace(old, new)
@@ -328,27 +381,31 @@ def style_html(raw_html: str) -> str:
 
 # ── Main ───────────────────────────────────────────────────────────────────
 
-
 def main():
     parser = argparse.ArgumentParser(description="AI Intelligence Reporter")
     parser.add_argument(
-        "--markdown",
-        action="store_true",
-        help="Write markdown reports to reports/ instead of sending email (testing mode)",
+        "--markdown", action="store_true",
+        help="Write markdown reports to reports/ instead of sending email (testing mode)"
     )
     parser.add_argument(
-        "--hours", type=int, default=24, help="Look-back window in hours (default: 24)"
+        "--hours", type=int, default=24,
+        help="Look-back window in hours (default: 24)"
     )
     parser.add_argument(
-        "--outdir",
-        default="reports",
-        help="Output directory for markdown reports (default: reports/)",
+        "--outdir", default="reports",
+        help="Output directory for markdown reports (default: reports/)"
     )
     parser.add_argument(
-        "--model",
-        default="pro",
-        choices=["flash", "pro"],
-        help="Gemini model: 'flash' (fast, good for testing) or 'pro' (best, default)",
+        "--model", default="pro", choices=["flash", "pro"],
+        help="Gemini model: 'flash' (fast, good for testing) or 'pro' (best, default)"
+    )
+    parser.add_argument(
+        "--enriched-dir", default="enriched",
+        help="Directory containing enriched JSON files (default: enriched/)"
+    )
+    parser.add_argument(
+        "--no-enriched", action="store_true",
+        help="Force titles-only mode even if enriched data exists"
     )
     args = parser.parse_args()
 
@@ -365,30 +422,46 @@ def main():
         email_password = os.environ.get("EMAIL_PASSWORD")
         receiver_email = os.environ.get("RECEIVER_EMAIL")
         if not all([sender_email, email_password, receiver_email]):
-            print(
-                "Error: Missing email secrets. Use --markdown for testing without email."
-            )
+            print("Error: Missing email secrets. Use --markdown for testing without email.")
             sys.exit(1)
 
     if not os.path.exists(STATE_FILE):
         print("No state file found.")
         sys.exit(1)
 
-    with open(STATE_FILE, "r", encoding="utf-8") as f:
-        state = json.load(f)
+    # ── Choose data source ────────────────────────────────────────────────
+    date_slug = datetime.now().strftime("%Y-%m-%d")
+    today_str = datetime.now().strftime("%B %d, %Y")
+    using_enriched = False
 
-    cutoff = datetime.now(timezone.utc) - timedelta(hours=args.hours)
-    prompt_context, ref_map, article_count, category_count = compile_recent_data(
-        state, cutoff
-    )
+    if not args.no_enriched:
+        enriched_articles = load_enriched(args.enriched_dir, date_slug)
+        if enriched_articles:
+            enriched_with_text = sum(
+                1 for a in enriched_articles if a.get("extract_status") == "ok"
+            )
+            print(
+                f"Using enriched data: {len(enriched_articles)} articles "
+                f"({enriched_with_text} with text extracts)"
+            )
+            prompt_context, ref_map, article_count, category_count = \
+                compile_from_enriched(enriched_articles)
+            using_enriched = True
+        else:
+            print("No enriched file found for today. Falling back to titles-only.")
+
+    if not using_enriched:
+        with open(STATE_FILE, "r", encoding="utf-8") as f:
+            state = json.load(f)
+        cutoff = datetime.now(timezone.utc) - timedelta(hours=args.hours)
+        prompt_context, ref_map, article_count, category_count = \
+            compile_from_state(state, cutoff)
 
     if not prompt_context.strip():
-        print(f"No new articles in the last {args.hours} hours. Skipping report.")
+        print(f"No articles found. Skipping report.")
         sys.exit(0)
 
-    prompt = build_prompt(prompt_context)
-    today_str = datetime.now().strftime("%B %d, %Y")
-    date_slug = datetime.now().strftime("%Y-%m-%d")
+    prompt = build_prompt(prompt_context, enriched=using_enriched)
 
     print(
         f"Compiled {article_count} articles across {category_count} categories "
@@ -399,18 +472,17 @@ def main():
     if args.markdown:
         os.makedirs(args.outdir, exist_ok=True)
 
-        # 1. Write the input debug file (no duplication)
+        # 1. Write the input debug file
         input_path = os.path.join(args.outdir, f"{date_slug}_input.md")
         with open(input_path, "w", encoding="utf-8") as f:
             f.write(f"# Gemini Input — {today_str}\n\n")
             f.write(f"**Look-back:** {args.hours} hours\n")
-            f.write(
-                f"**Articles:** {article_count} across {category_count} categories\n"
-            )
+            f.write(f"**Data source:** {'enriched' if using_enriched else 'titles-only'}\n")
+            f.write(f"**Articles:** {article_count} across {category_count} categories\n")
             f.write(f"**References indexed:** {len(ref_map)}\n\n")
             f.write("---\n\n")
             f.write("## Prompt Instructions\n\n")
-            f.write(f"```\n{build_prompt('(article data follows below)')}\n```\n\n")
+            f.write(f"```\n{build_prompt('(article data follows below)', enriched=using_enriched)}\n```\n\n")
             f.write("---\n\n")
             f.write("## Article Data\n\n")
             f.write(prompt_context)
@@ -436,9 +508,10 @@ def main():
         output_path = os.path.join(args.outdir, f"{date_slug}_report.md")
         with open(output_path, "w", encoding="utf-8") as f:
             f.write(f"# Intelligence Brief — {today_str}\n\n")
-            f.write(
-                f"*{article_count} articles across {category_count} categories*\n\n"
-            )
+            f.write(f"*{article_count} articles across {category_count} categories")
+            if using_enriched:
+                f.write(f" (enriched)")
+            f.write("*\n\n")
             f.write("---\n\n")
             f.write(analysis_linked)
             f.write(sources_appendix)
@@ -464,24 +537,22 @@ def main():
     print(f"  ✓ Gemini cited {len(cited)} of {len(ref_map)} references.")
 
     # Convert Markdown → styled HTML
-    analysis_html = md_lib.markdown(full_markdown, extensions=["extra", "smarty"])
+    analysis_html = md_lib.markdown(full_markdown, extensions=["extra"])
     analysis_html = style_html(analysis_html)
 
     subject = f"Intelligence Brief: Transatlantic Right-Wing Media ({today_str})"
-    full_html = build_html_email(
-        analysis_html, today_str, article_count, category_count
-    )
+    full_html = build_html_email(analysis_html, today_str, article_count, category_count)
 
-    # Plain-text fallback: use the raw text with a simple sources list
+    # Plain-text fallback
     plain_sources = ""
     if cited:
         plain_sources = "\n---\nSources:\n"
         for num in sorted(cited):
             ref = ref_map[num]
-            plain_sources += f"  [{num}] {ref['title']} — {ref['source']}\n"
+            plain_sources += f"  [{num}] {sanitize(ref['title'])} — {sanitize(ref['source'])}\n"
             if ref["url"]:
                 plain_sources += f"        {ref['url']}\n"
-    plain_text = analysis_text + plain_sources
+    plain_text = sanitize(analysis_text + plain_sources)
 
     # Build multipart message
     msg = MIMEMultipart("alternative")
@@ -489,7 +560,7 @@ def main():
     msg["From"] = sender_email
     msg["To"] = receiver_email
     msg.attach(MIMEText(plain_text, "plain", "utf-8"))
-    msg.attach(MIMEText(full_html, "html", "utf-8"))
+    msg.attach(MIMEText(sanitize(full_html), "html", "utf-8"))
 
     print("Sending email...")
     try:
