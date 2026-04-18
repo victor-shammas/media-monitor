@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Right-Wing Media Monitor</title>
+    <style>
+        /* Modern, clean styling */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .header {
+            background: #1a1a1a;
+            color: white;
+            padding: 20px 25px;
+            text-align: center;
+        }
+        h1 { margin: 0; font-size: 1.5rem; letter-spacing: 1px; }
+        
+        /* Tab Navigation */
+        .tabs {
+            display: flex;
+            flex-wrap: wrap;
+            background: #2d3748;
+        }
+        .tab-button {
+            flex-grow: 1;
+            padding: 14px 20px;
+            cursor: pointer;
+            color: #e2e8f0;
+            border: none;
+            background: none;
+            font-size: 14px;
+            font-weight: 500;
+            outline: none;
+            transition: all 0.2s ease;
+        }
+        .tab-button:hover { background: #4a5568; }
+        .tab-button.active {
+            background: #ffffff;
+            color: #1a202c;
+            font-weight: bold;
+            border-top: 3px solid #3182ce;
+        }
+
+        /* Content Display */
+        .content { padding: 25px; }
+        
+        /* We use <pre> to perfectly preserve the text formatting of your script */
+        pre {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+            background: #f8fafc;
+            padding: 20px;
+            border-radius: 6px;
+            border: 1px solid #e2e8f0;
+            font-size: 14px;
+            overflow-x: auto;
+        }
+        .loading { color: #718096; font-style: italic; }
+        .error { color: #e53e3e; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1>Transatlantic Right-Wing Media Monitor</h1>
+    </div>
+    
+    <div class="tabs" id="tab-container"></div>
+    
+    <div class="content">
+        <pre id="feed-content">Select a category to load the feed...</pre>
+    </div>
+</div>
+
+<script>
+    // Define the list of feeds matching the filenames in your Python script
+    const feeds = [
+        { filename: 'usa', name: '🇺🇸 USA' },
+        { filename: 'norway', name: '🇳🇴 Norway' },
+        { filename: 'sweden', name: '🇸🇪 Sweden' },
+        { filename: 'france', name: '🇫🇷 France' },
+        { filename: 'italy', name: '🇮🇹 Italy' },
+        { filename: 'uk', name: '🇬🇧 UK' },
+        { filename: 'hungary', name: '🇭🇺 Hungary' },
+        { filename: 'general', name: '🌍 General' },
+        { filename: 'networks', name: '🕸️ Networks' }
+    ];
+
+    const tabContainer = document.getElementById('tab-container');
+    const feedContent = document.getElementById('feed-content');
+
+    // Generate the tab buttons
+    feeds.forEach((feed, index) => {
+        const btn = document.createElement('button');
+        btn.className = 'tab-button';
+        btn.textContent = feed.name;
+        
+        btn.onclick = () => loadFeed(feed.filename, btn);
+        tabContainer.appendChild(btn);
+        
+        // Automatically load the first tab (USA) on page load
+        if (index === 0) loadFeed(feed.filename, btn);
+    });
+
+    // Function to fetch and display the text file
+    function loadFeed(filename, clickedBtn) {
+        // Reset all tabs to inactive, then highlight the clicked one
+        document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
+        if (clickedBtn) clickedBtn.classList.add('active');
+
+        feedContent.innerHTML = `<span class="loading">Fetching newest data for ${filename}...</span>`;
+
+        // Fetch the corresponding text file from the feeds/ folder
+        fetch(`feeds/${filename}.txt`)
+            .then(response => {
+                if (!response.ok) throw new Error('File not found. Has the script run for this category yet?');
+                return response.text();
+            })
+            .then(text => {
+                feedContent.textContent = text;
+            })
+            .catch(error => {
+                feedContent.innerHTML = `<span class="error">Error: ${error.message}</span>`;
+            });
+    }
+</script>
+
+</body>
+</html>
