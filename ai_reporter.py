@@ -89,7 +89,7 @@ def main():
     # 4. Draft and send the email
     print("Sending email...")
     msg = EmailMessage()
-    msg.set_content(analysis_text)
+    msg.set_content(analysis_text, charset="utf-8")
 
     today_str = datetime.now().strftime("%B %d, %Y")
     msg["Subject"] = f"Intelligence Brief: Transatlantic Right-Wing Media ({today_str})"
