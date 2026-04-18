@@ -37,7 +37,7 @@ jobs:
         # TESTING:  use --markdown to write reports/ instead of email
         # PRODUCTION: remove --markdown to send HTML email
         # ──────────────────────────────────────────────────────────
-        run: python ai_reporter.py
+        run: python ai_reporter.py --hours 24 --model flash --email --markdown
 
       - name: Commit reports
         run: |
