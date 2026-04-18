@@ -151,16 +151,34 @@
             const tabContainer = document.getElementById("tab-container");
             const feedContent = document.getElementById("feed-content");
 
+            // Read the word after the '#' in the URL (e.g., #hungary -> hungary)
+            const hash = window.location.hash.substring(1);
+            let initialFeedLoaded = false;
+
             feeds.forEach((feed, index) => {
                 const btn = document.createElement("button");
                 btn.className = "tab-button";
                 btn.textContent = feed.name;
 
-                btn.onclick = () => loadFeed(feed.filename, btn);
+                btn.onclick = () => {
+                    loadFeed(feed.filename, btn);
+                    // Silently update the URL address bar so the user can copy/share it!
+                    window.history.pushState(null, null, `#${feed.filename}`);
+                };
                 tabContainer.appendChild(btn);
 
-                if (index === 0) loadFeed(feed.filename, btn);
+                // If the URL matches this feed, load it immediately
+                if (hash === feed.filename) {
+                    loadFeed(feed.filename, btn);
+                    initialFeedLoaded = true;
+                }
             });
+
+            // Fallback: If there was no # in the URL (or they typed a bad one), just load the first tab (USA)
+            if (!initialFeedLoaded && feeds.length > 0) {
+                const firstBtn = tabContainer.firstChild;
+                loadFeed(feeds[0].filename, firstBtn);
+            }
 
             // Custom Parser to turn the text file into clean HTML blocks
             function parseTextToHTML(rawText) {
