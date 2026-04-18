@@ -34,4 +34,5 @@ jobs:
           # Safely add the entire feeds folder and the state file
           git add feeds/ monitor_state.json
           git commit -m "Automated monitor update" || echo "No changes to commit"
+          git pull --rebase
           git push
