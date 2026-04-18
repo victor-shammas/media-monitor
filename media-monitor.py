@@ -2,7 +2,7 @@
 """
 Transatlantic Right-Wing Media Monitor — Multi-File Edition
 Maintains a database of seen articles, regenerates cleanly grouped individual
-text files for each category, and allows cross-category duplicates.
+text files for each category, and ensures strict chronological sorting.
 """
 
 import argparse
@@ -118,7 +118,7 @@ def build_gnews_url(query: str, feed: dict) -> str:
 
 def fetch_rss(url: str, timeout: int = 15) -> list[dict]:
     req = Request(
-        url, headers={"User-Agent": "Mozilla/5.0 (compatible; RWMonitor/4.1)"}
+        url, headers={"User-Agent": "Mozilla/5.0 (compatible; RWMonitor/4.2)"}
     )
     with urlopen(req, timeout=timeout) as resp:
         raw = resp.read()
@@ -188,6 +188,23 @@ def fmt_date(iso: str) -> str:
         return iso[:10]
 
 
+def get_sort_time(item: dict) -> datetime:
+    """Helper to robustly sort items by publication date."""
+    date_str = item.get("date", "")
+    try:
+        # Try to parse the ISO formatted string saved in the JSON
+        return datetime.fromisoformat(date_str.replace("Z", "+00:00"))
+    except Exception:
+        # Fallback to the exact time the script added it
+        added_str = item.get("added_at", "")
+        try:
+            return datetime.strptime(added_str, "%Y-%m-%d %H:%M:%S").replace(
+                tzinfo=timezone.utc
+            )
+        except Exception:
+            return datetime.min.replace(tzinfo=timezone.utc)
+
+
 # ── Core Logic ─────────────────────────────────────────────────────────────
 
 
@@ -234,7 +251,7 @@ def fetch_feed(feed: dict, category_seen_urls: set, timestamp: str) -> list[dict
         for err in errors[:2]:
             print(f"  ⚠ {err}", file=sys.stderr)
 
-    # Universal cap of 15 new items per run
+    # Universal cap of new items per run
     return new_items[:MAX_NEW_PER_RUN]
 
 
@@ -329,10 +346,15 @@ def main():
 
         if new_items:
             print(f"    + Found {len(new_items)} new articles!", file=sys.stderr)
-            # Add new items to the top of the category's list
+            # Add new items to the category's list
             state[fid] = new_items + state[fid]
 
-    # Save the updated database back to JSON
+        # ---------------------------------------------------------
+        # NEW FIX: Sort everything chronologically, newest first!
+        # ---------------------------------------------------------
+        state[fid].sort(key=get_sort_time, reverse=True)
+
+    # Save the updated, strictly sorted database back to JSON
     with open(STATE_FILE, "w", encoding="utf-8") as f:
         json.dump(state, f, indent=2, ensure_ascii=False)
 
