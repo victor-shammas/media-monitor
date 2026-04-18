@@ -20,6 +20,7 @@ from email.utils import parsedate_to_datetime
 # ── Configuration ──────────────────────────────────────────────────────────
 
 STATE_FILE = "monitor_state.json"
+MAX_NEW_PER_RUN = 15  # The universal limit of new articles to add per run
 
 FEEDS = [
     {
@@ -28,8 +29,6 @@ FEEDS = [
         "q": '"Donald Trump" OR "Trump administration" OR MAGA OR "JD Vance" OR "Stephen Miller" OR "America First" OR "Steve Bannon"',
         "lang": "en",
         "country": "US",
-        "window": "7d",
-        "max": 8,
     },
     {
         "id": "frp",
@@ -37,8 +36,6 @@ FEEDS = [
         "q": 'Fremskrittspartiet OR FrP OR "Sylvi Listhaug" OR "Norwegian Progress Party" OR "Per-Willy Amundsen" OR "Hans Andreas Limi" OR "Simen Velle"',
         "lang": "no",
         "country": "NO",
-        "window": "7d",
-        "max": 8,
     },
     {
         "id": "sd",
@@ -46,8 +43,6 @@ FEEDS = [
         "q": 'Sverigedemokraterna OR "Jimmie Åkesson" OR "Sweden Democrats"',
         "lang": "sv",
         "country": "SE",
-        "window": "7d",
-        "max": 8,
     },
     {
         "id": "rn",
@@ -55,8 +50,6 @@ FEEDS = [
         "q": '"Rassemblement National" OR "Marine Le Pen" OR "Jordan Bardella" OR "National Rally" OR "Marion Maréchal"',
         "lang": "fr",
         "country": "FR",
-        "window": "7d",
-        "max": 8,
     },
     {
         "id": "fdi",
@@ -64,8 +57,6 @@ FEEDS = [
         "q": "Meloni OR Salvini OR \"Fratelli d'Italia\" OR \"Brothers of Italy\" OR Lega",
         "lang": "it",
         "country": "IT",
-        "window": "7d",
-        "max": 8,
     },
     {
         "id": "reform",
@@ -73,8 +64,6 @@ FEEDS = [
         "q": '"Reform UK" OR "Nigel Farage" OR "Richard Tice"',
         "lang": "en",
         "country": "GB",
-        "window": "7d",
-        "max": 8,
     },
     {
         "id": "general",
@@ -82,8 +71,6 @@ FEEDS = [
         "q": '"far right" OR "alt-right" OR "techno-fascism" OR "manosphere" OR "right-wing extremist" OR "national conservatism" OR "illiberal democracy" OR "fascism" OR "ethnonationalism" OR "white nationalism" OR "Christian nationalism"',
         "lang": "en",
         "country": "US",
-        "window": "7d",
-        "max": 12,
     },
     {
         "id": "nodes",
@@ -96,8 +83,6 @@ FEEDS = [
         ],
         "lang": "en",
         "country": "US",
-        "window": "30d",
-        "max": 12,
     },
     {
         "id": "hungary",
@@ -105,8 +90,6 @@ FEEDS = [
         "q": '"Viktor Orban" OR "Peter Magyar" OR "Fidesz" OR "Tisza"',
         "lang": "en",
         "country": "US",
-        "window": "7d",
-        "max": 9,
     },
 ]
 
@@ -194,7 +177,6 @@ def fetch_feed(feed: dict, seen_urls: set, timestamp: str) -> list[dict]:
             for item in raw_items:
                 link = item.get("link", "")
                 
-                # Deduplication check happens right here!
                 if not link or link in seen_urls:
                     continue
                 seen_urls.add(link)
@@ -212,7 +194,7 @@ def fetch_feed(feed: dict, seen_urls: set, timestamp: str) -> list[dict]:
                     "url": link,
                     "source": source,
                     "date": item.get("pubDate", ""),
-                    "added_at": timestamp,  # Add the timestamp!
+                    "added_at": timestamp,
                     "summary": summary,
                 })
         except Exception as e:
@@ -222,7 +204,8 @@ def fetch_feed(feed: dict, seen_urls: set, timestamp: str) -> list[dict]:
         for err in errors[:2]:
             print(f"  ⚠ {err}", file=sys.stderr)
 
-    return new_items
+    # Universal cap of 15 new items per run
+    return new_items[:MAX_NEW_PER_RUN]
 
 # ── Formatter ──────────────────────────────────────────────────────────────
 
@@ -253,7 +236,6 @@ def format_text(state: dict, active_feeds: list[dict], last_updated: str) -> str
             if meta:
                 lines.append(f"   Published: {meta}")
             
-            # The new Date/Time Added line
             lines.append(f"   Added:     {item.get('added_at', 'Unknown')}")
             
             if item["summary"]:
@@ -277,7 +259,7 @@ def main():
     if args.feeds:
         active_feeds = [f for f in FEEDS if f["id"] in args.feeds]
 
-    # 1. Load the database (if it exists)
+    # Load the database (if it exists)
     state = {}
     if os.path.exists(STATE_FILE):
         try:
@@ -286,12 +268,11 @@ def main():
         except Exception:
             pass
             
-    # Ensure all feeds have an empty list if they are new
     for feed in FEEDS:
         if feed["id"] not in state:
             state[feed["id"]] = []
 
-    # 2. Build a giant list of every URL we've ever seen to prevent duplicates
+    # Build a giant list of every URL we've ever seen to prevent duplicates
     seen_urls = set()
     for items in state.values():
         for item in items:
@@ -300,7 +281,6 @@ def main():
     print(f"[{timestamp}] Found {len(seen_urls)} previously saved articles.", file=sys.stderr)
     print(f"[{timestamp}] Fetching {len(active_feeds)} feeds for new articles…", file=sys.stderr)
     
-    # 3. Fetch new items
     for feed in active_feeds:
         fid = feed["id"]
         print(f"  → {feed['name']}…", file=sys.stderr)
@@ -311,15 +291,12 @@ def main():
             print(f"    + Found {len(new_items)} new articles!", file=sys.stderr)
             # Add new items to the top of the category's list
             state[fid] = new_items + state[fid]
-            
-            # Optional: Keep the file from growing infinitely by capping each category at 100 links
-            state[fid] = state[fid][:100]
 
-    # 4. Save the updated database back to JSON
+    # Save the updated database back to JSON
     with open(STATE_FILE, "w", encoding="utf-8") as f:
         json.dump(state, f, indent=2, ensure_ascii=False)
 
-    # 5. Completely rewrite the readable Text file using the updated database
+    # Completely rewrite the readable Text file using the updated database
     text = format_text(state, active_feeds, timestamp)
     with open(args.output, "w", encoding="utf-8") as f:
         f.write(text + "\n")
