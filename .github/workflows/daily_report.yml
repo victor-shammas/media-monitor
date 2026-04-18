@@ -23,7 +23,7 @@ jobs:
           python-version: "3.x"
 
       - name: Install dependencies
-        run: pip install google-genai
+        run: pip install google-genai tenacity
 
       - name: Run AI Reporter
         # Pulls the secrets from GitHub and feeds them to the Python script
