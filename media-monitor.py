@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
-Transatlantic Right-Wing Media Monitor — Multi-File Stateful Edition
-Maintains a database of seen articles, prevents duplicates,
-and regenerates cleanly grouped individual text files for each category.
+Transatlantic Right-Wing Media Monitor — Multi-File Edition
+Maintains a database of seen articles, regenerates cleanly grouped individual
+text files for each category, and allows cross-category duplicates.
 """
 
 import argparse
@@ -20,7 +20,7 @@ from urllib.request import Request, urlopen
 # ── Configuration ──────────────────────────────────────────────────────────
 
 STATE_FILE = "monitor_state.json"
-MAX_NEW_PER_RUN = 15  # The universal limit of new articles to add per run
+MAX_NEW_PER_RUN = 15  # The universal limit of new articles to add per run per category
 
 FEEDS = [
     {
@@ -118,7 +118,7 @@ def build_gnews_url(query: str, feed: dict) -> str:
 
 def fetch_rss(url: str, timeout: int = 15) -> list[dict]:
     req = Request(
-        url, headers={"User-Agent": "Mozilla/5.0 (compatible; RWMonitor/4.0)"}
+        url, headers={"User-Agent": "Mozilla/5.0 (compatible; RWMonitor/4.1)"}
     )
     with urlopen(req, timeout=timeout) as resp:
         raw = resp.read()
@@ -191,7 +191,7 @@ def fmt_date(iso: str) -> str:
 # ── Core Logic ─────────────────────────────────────────────────────────────
 
 
-def fetch_feed(feed: dict, seen_urls: set, timestamp: str) -> list[dict]:
+def fetch_feed(feed: dict, category_seen_urls: set, timestamp: str) -> list[dict]:
     queries = feed.get("queries", [feed.get("q", "")])
     cutoff = datetime.now(timezone.utc) - timedelta(days=30)
     new_items = []
@@ -204,9 +204,10 @@ def fetch_feed(feed: dict, seen_urls: set, timestamp: str) -> list[dict]:
             for item in raw_items:
                 link = item.get("link", "")
 
-                if not link or link in seen_urls:
+                # Check against the category's private memory
+                if not link or link in category_seen_urls:
                     continue
-                seen_urls.add(link)
+                category_seen_urls.add(link)
 
                 pub_dt = item.get("pub_dt")
                 if pub_dt and pub_dt < cutoff:
@@ -281,7 +282,7 @@ def main():
     parser.add_argument(
         "-d",
         "--outdir",
-        default=".",
+        default="feeds",
         help="Directory to save the individual text files",
     )
     parser.add_argument(
@@ -311,16 +312,6 @@ def main():
         if feed["id"] not in state:
             state[feed["id"]] = []
 
-    # Build a giant list of every URL we've ever seen to prevent duplicates
-    seen_urls = set()
-    for items in state.values():
-        for item in items:
-            seen_urls.add(item["url"])
-
-    print(
-        f"[{timestamp}] Found {len(seen_urls)} previously saved articles.",
-        file=sys.stderr,
-    )
     print(
         f"[{timestamp}] Fetching {len(active_feeds)} feeds for new articles…",
         file=sys.stderr,
@@ -330,7 +321,11 @@ def main():
         fid = feed["id"]
         print(f"  → {feed['name']}…", file=sys.stderr)
 
-        new_items = fetch_feed(feed, seen_urls, timestamp)
+        # Create a private memory pool just for this specific category
+        category_seen_urls = {item["url"] for item in state.get(fid, [])}
+
+        # Pass that private memory to the fetcher
+        new_items = fetch_feed(feed, category_seen_urls, timestamp)
 
         if new_items:
             print(f"    + Found {len(new_items)} new articles!", file=sys.stderr)

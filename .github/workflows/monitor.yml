@@ -33,8 +33,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add "*.txt" monitor_state.json
-
-          # The '|| echo...' prevents the workflow from crashing if no new news was found
+          git add "feeds/*.txt" monitor_state.json
           git commit -m "Automated monitor update" || echo "No changes to commit"
           git push
