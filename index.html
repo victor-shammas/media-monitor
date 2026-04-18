@@ -5,158 +5,201 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Right-Wing Media Monitor</title>
         <style>
-            /* Modern, clean styling */
+            :root {
+                --bg: #f5f5f4;
+                --ink: #1c1917;
+                --mute: #78716c;
+                --line: #e7e5e4;
+            }
+            * {
+                box-sizing: border-box;
+            }
             body {
-                font-family:
-                    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
-                    sans-serif;
-                background-color: #f4f4f9;
-                color: #333;
                 margin: 0;
-                padding: 20px;
-                line-height: 1.6;
+                background: var(--bg);
+                color: var(--ink);
+                font:
+                    15px/1.45 -apple-system,
+                    BlinkMacSystemFont,
+                    "Segoe UI",
+                    sans-serif;
+                padding: 0;
             }
-            .container {
-                max-width: 1000px;
+            .wrap {
+                max-width: 1200px;
                 margin: 0 auto;
-                background: white;
-                border-radius: 8px;
-                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-                overflow: hidden;
+                padding: 16px;
             }
-            .header {
-                background: #1a1a1a;
-                color: white;
-                padding: 15px 25px;
-                text-align: center;
+            header {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+                flex-wrap: wrap;
+                gap: 12px;
+                margin-bottom: 16px;
             }
             h1 {
                 margin: 0;
-                font-size: 1.3rem;
-                letter-spacing: 1px;
+                font-size: 22px;
+            }
+            .sub {
+                color: var(--mute);
+                font-size: 13px;
+                margin-top: 2px;
             }
 
-            /* Tab Navigation */
+            /* Tab Navigation — pill buttons matching rightwing.html */
             .tabs {
                 display: flex;
                 flex-wrap: wrap;
-                background: #2d3748;
+                gap: 6px;
+                margin-bottom: 16px;
             }
             .tab-button {
-                flex-grow: 1;
-                padding: 10px 15px;
+                font: inherit;
                 cursor: pointer;
-                color: #e2e8f0;
-                border: none;
-                background: none;
+                border-radius: 8px;
+                border: 1px solid var(--line);
+                background: #fff;
+                padding: 6px 12px;
                 font-size: 13px;
-                font-weight: 500;
-                outline: none;
-                transition: all 0.2s ease;
+                font-weight: 600;
+                letter-spacing: 0.3px;
+                color: #57534e;
+                transition: all 0.15s ease;
             }
             .tab-button:hover {
-                background: #4a5568;
+                background: #f5f5f4;
+                border-color: #d6d3d1;
             }
             .tab-button.active {
-                background: #ffffff;
-                color: #1a202c;
-                font-weight: bold;
-                border-top: 3px solid #3182ce;
+                background: var(--ink);
+                color: #fff;
+                border-color: var(--ink);
             }
 
-            /* Content Display with Custom Scrollbar */
+            /* Content area */
             .content {
-                padding: 20px;
-                background: #f8fafc;
-                max-height: 75vh; /* Locks the box height to 75% of the screen */
-                overflow-y: auto; /* Adds a scrollbar if articles overflow */
-                border-bottom: 4px solid #e2e8f0;
+                background: #fff;
+                border: 2px solid var(--line);
+                border-radius: 12px;
+                padding: 16px;
+                max-height: 75vh;
+                overflow-y: auto;
             }
 
-            /* High-Density Article Card Styling */
+            /* Article items — thin separator style from rightwing.html */
             .article-card {
-                background: white;
-                border: 1px solid #e2e8f0;
-                border-radius: 6px;
-                padding: 12px 16px;
-                margin-bottom: 10px;
-                box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
-                transition:
-                    transform 0.1s ease,
-                    box-shadow 0.1s ease;
+                border-top: 1px solid rgba(0, 0, 0, 0.08);
+                padding-top: 10px;
+                margin-top: 10px;
             }
-            .article-card:hover {
-                transform: translateY(-1px);
-                box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+            .article-card:first-child {
+                border-top: 0;
+                padding-top: 0;
+                margin-top: 0;
             }
             .article-card h3 {
-                margin: 0 0 4px 0;
-                font-size: 1.05rem;
+                margin: 0;
+                font-size: 14px;
+                font-weight: 600;
                 line-height: 1.3;
             }
             .article-card h3 a {
-                color: #2b6cb0;
+                color: var(--ink);
                 text-decoration: none;
             }
             .article-card h3 a:hover {
                 text-decoration: underline;
             }
+            .article-card h3 a::after {
+                content: " \2197";
+                font-size: 12px;
+                color: var(--mute);
+            }
             .article-meta {
-                font-size: 0.8rem;
-                color: #718096;
-                margin: 0;
+                font-size: 12px;
+                color: var(--mute);
+                margin-top: 2px;
             }
             .article-summary {
-                font-size: 0.9rem;
-                color: #4a5568;
-                margin: 6px 0 0 0;
+                font-size: 12.5px;
+                color: #44403c;
+                margin: 4px 0 0 0;
+                line-height: 1.35;
             }
 
             .loading {
-                color: #718096;
+                color: var(--mute);
                 font-style: italic;
                 display: block;
                 text-align: center;
                 padding: 20px;
             }
             .error {
-                color: #e53e3e;
-                font-weight: bold;
+                color: #b91c1c;
+                background: #fef2f2;
+                padding: 8px;
+                border-radius: 6px;
+                font-size: 12px;
                 display: block;
                 text-align: center;
-                padding: 20px;
             }
             .no-results {
-                color: #718096;
+                color: var(--mute);
+                font-style: italic;
+                font-size: 13px;
                 text-align: center;
                 padding: 40px 0;
+            }
+
+            /* Wrapper that locks content width to the tab row */
+            .feed-wrap {
+                display: inline-flex;
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            /* Footer */
+            .foot {
+                text-align: center;
+                color: var(--mute);
+                font-size: 12px;
+                margin-top: 20px;
+            }
+            .foot a {
+                color: var(--ink);
             }
         </style>
     </head>
     <body>
-        <div class="container">
-            <div class="header">
-                <h1>Transatlantic Right-Wing Media Monitor</h1>
-            </div>
+        <div class="wrap">
+            <header>
+                <div>
+                    <h1>Transatlantic Right-Wing Media Monitor</h1>
+                </div>
+            </header>
 
-            <div class="tabs" id="tab-container"></div>
+            <div class="feed-wrap">
+                <div class="tabs" id="tab-container"></div>
 
-            <div class="content" id="feed-content">
-                <span class="loading">Select a category to load the feed...</span>
+                <div class="content" id="feed-content">
+                    <span class="loading">Select a category to load the feed...</span>
+                </div>
             </div>
         </div>
 
         <script>
             const feeds = [
-                { filename: "usa", name: "🇺🇸 USA" },
-                { filename: "norway", name: "🇳🇴 Norway" },
-                { filename: "sweden", name: "🇸🇪 Sweden" },
-                { filename: "france", name: "🇫🇷 France" },
-                { filename: "italy", name: "🇮🇹 Italy" },
-                { filename: "uk", name: "🇬🇧 UK" },
-                { filename: "hungary", name: "🇭🇺 Hungary" },
-                { filename: "general", name: "🌍 General" },
-                { filename: "networks", name: "🕸️ Networks" },
+                { filename: "usa", name: "\u{1F1FA}\u{1F1F8} USA" },
+                { filename: "norway", name: "\u{1F1F3}\u{1F1F4} Norway" },
+                { filename: "sweden", name: "\u{1F1F8}\u{1F1EA} Sweden" },
+                { filename: "france", name: "\u{1F1EB}\u{1F1F7} France" },
+                { filename: "italy", name: "\u{1F1EE}\u{1F1F9} Italy" },
+                { filename: "uk", name: "\u{1F1EC}\u{1F1E7} UK" },
+                { filename: "hungary", name: "\u{1F1ED}\u{1F1FA} Hungary" },
+                { filename: "general", name: "\u{1F30D} General" },
+                { filename: "networks", name: "\u{1F578}\u{FE0F} Networks" },
             ];
 
             const tabContainer = document.getElementById("tab-container");
@@ -173,34 +216,28 @@
 
                 btn.onclick = () => {
                     loadFeed(feed.filename, btn);
-                    // Silently update the URL address bar so the user can copy/share it!
                     window.history.pushState(null, null, `#${feed.filename}`);
                 };
                 tabContainer.appendChild(btn);
 
-                // If the URL matches this feed, load it immediately
                 if (hash === feed.filename) {
                     loadFeed(feed.filename, btn);
                     initialFeedLoaded = true;
                 }
             });
 
-            // Fallback: If there was no # in the URL, load the first tab
             if (!initialFeedLoaded && feeds.length > 0) {
                 const firstBtn = tabContainer.firstChild;
                 loadFeed(feeds[0].filename, firstBtn);
             }
 
-            // Custom Parser to turn the text file into clean HTML blocks
             function parseTextToHTML(rawText) {
-                // 1. Split the file by the "===" header dividers
-                const parts = rawText.split(/═{10,}/);
+                const parts = rawText.split(/\u2550{10,}/);
 
                 if (parts.length < 3)
                     return `<div class="no-results">No recent articles found in this category.</div>`;
 
-                // 2. Grab everything AFTER the header and split it by double-spacing
-                const bodyText = parts.slice(2).join("═").trim();
+                const bodyText = parts.slice(2).join("\u2550").trim();
                 if (!bodyText || bodyText.includes("(no results)")) {
                     return `<div class="no-results">No recent articles found in this category.</div>`;
                 }
@@ -208,7 +245,6 @@
                 const articleBlocks = bodyText.split(/\n\s*\n/);
                 let htmlOutput = "";
 
-                // 3. Process each article block
                 articleBlocks.forEach((block) => {
                     const lines = block
                         .trim()
@@ -216,10 +252,8 @@
                         .map((line) => line.trim());
                     if (lines.length < 3) return;
 
-                    // Extract Title
                     let title = lines[0].replace(/^\d+\.\s*/, "");
 
-                    // Extract URL
                     let url = "";
                     let lastLine = lines[lines.length - 1];
                     if (lastLine.startsWith("http")) {
@@ -227,7 +261,6 @@
                         lines.pop();
                     }
 
-                    // Extract Metadata and Summary
                     let published = "";
                     let summary = "";
 
@@ -235,9 +268,8 @@
                         if (lines[i].startsWith("Published:")) {
                             published = lines[i];
                         } else if (lines[i].startsWith("Added:")) {
-                            continue; // Skip our internal scraping timestamp
+                            continue;
                         } else {
-                            // Prevent duplicate titles in the summary
                             let lineText = lines[i];
                             if (lineText !== title && lineText !== "") {
                                 summary += lineText + " ";
@@ -245,12 +277,11 @@
                         }
                     }
 
-                    // 4. Build the High-Density HTML Card
                     htmlOutput += `
             <div class="article-card">
                 <h3><a href="${url || "#"}" target="_blank" rel="noopener noreferrer">${title}</a></h3>
                 <div class="article-meta">
-                    ${published ? `<span>📅 ${published.replace("Published:", "").trim()}</span>` : ""}
+                    ${published ? `${published.replace("Published:", "").trim()}` : ""}
                 </div>
                 ${summary ? `<p class="article-summary">${summary.trim()}</p>` : ""}
             </div>
@@ -278,12 +309,10 @@
                     })
                     .then((text) => {
                         feedContent.innerHTML = parseTextToHTML(text);
-
-                        // Automatically scroll the feed box back to the top when switching tabs
                         feedContent.scrollTop = 0;
                     })
                     .catch((error) => {
-                        feedContent.innerHTML = `<span class="error">Error: ${error.message}</span>`;
+                        feedContent.innerHTML = `<span class="error">\u26A0 ${error.message}</span>`;
                     });
             }
         </script>
