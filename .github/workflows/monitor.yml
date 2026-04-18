@@ -1,17 +1,18 @@
-name: Right-Wing Media Monitor
+name: Transatlantic Right-Wing Media Monitor
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 on:
   schedule:
-    # This runs the script every 4 hours.
-    # (Change the '4' to a '6' or '12' if you want a different interval)
     - cron: "0 */4 * * *"
-  workflow_dispatch: # This allows you to manually trigger it via a button
+  workflow_dispatch:
 
 jobs:
-  run-monitor:
+  update-monitor:
     runs-on: ubuntu-latest
     permissions:
-      contents: write # This allows the bot to save the text file back to your repo
+      contents: write
 
     steps:
       - name: Checkout repository
@@ -20,19 +21,17 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.10"
+          python-version: "3.x"
 
       - name: Run the monitor script
-        # This executes your script and outputs to monitor_output.txt
-        run: python media-monitor.py -o monitor_output.txt
-
-      - name: Run the monitor script
-        run: python media-monitor.py
+        # Explicitly forces the script to output to the "feeds" folder
+        run: python media-monitor.py -d feeds
 
       - name: Commit and push the updated files
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add "feeds/*.txt" monitor_state.json
+          # Safely add the entire feeds folder and the state file
+          git add feeds/ monitor_state.json
           git commit -m "Automated monitor update" || echo "No changes to commit"
           git push
