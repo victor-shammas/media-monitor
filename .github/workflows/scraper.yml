@@ -28,7 +28,7 @@ jobs:
         run: pip install trafilatura googlenewsdecoder
 
       - name: Run scraper
-        run: python article_scraper.py --hours 26
+        run: python article_scraper.py --hours 24 --model flash --markdown --email
 
       - name: Commit enriched data
         run: |

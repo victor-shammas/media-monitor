@@ -9,6 +9,7 @@ Data sources (checked in order):
 Modes:
   python ai_reporter.py --markdown              → writes .md files (testing)
   python ai_reporter.py                          → HTML email (production)
+  python ai_reporter.py --markdown --email      → both markdown + email
   python ai_reporter.py --markdown --model flash → fast iteration
 """
 import argparse
@@ -407,17 +408,30 @@ def main():
         "--no-enriched", action="store_true",
         help="Force titles-only mode even if enriched data exists"
     )
+    parser.add_argument(
+        "--email", action="store_true",
+        help="Send email report (default when --markdown is not set; "
+             "combine with --markdown to do both)"
+    )
     args = parser.parse_args()
+
+    # ── Determine output modes ───────────────────────────────────────────
+    # No flags          → email only  (backward compatible)
+    # --markdown        → markdown only (backward compatible)
+    # --email           → email only
+    # --markdown --email→ both
+    do_markdown = args.markdown
+    do_email = args.email or (not args.markdown)
 
     model_name = MODEL_ALIASES[args.model]
 
-    # In markdown mode, only the API key is required
+    # In markdown-only mode, only the API key is required
     api_key = os.environ.get("GEMINI_API_KEY")
     if not api_key:
         print("Error: GEMINI_API_KEY not set.")
         sys.exit(1)
 
-    if not args.markdown:
+    if do_email:
         sender_email = os.environ.get("SENDER_EMAIL")
         email_password = os.environ.get("EMAIL_PASSWORD")
         receiver_email = os.environ.get("RECEIVER_EMAIL")
@@ -468,8 +482,32 @@ def main():
         f"({len(ref_map)} references indexed)."
     )
 
-    # ── Markdown mode: dump input + output to files ──────────────────────
-    if args.markdown:
+    # ── Generate AI analysis (once) ─────────────────────────────────────
+    mode_label = []
+    if do_markdown:
+        mode_label.append("markdown")
+    if do_email:
+        mode_label.append("email")
+    print(f"Output mode: {' + '.join(mode_label)}")
+
+    print(f"Generating AI Analysis via {model_name} (with automatic retries)...")
+    client = genai.Client()
+
+    try:
+        response = generate_ai_content(client, prompt, model=model_name)
+        analysis_text = sanitize(response.text)
+    except Exception as e:
+        print(f"Final failure after multiple retries: {e}")
+        sys.exit(1)
+
+    # Inject markdown links and build sources appendix
+    analysis_linked, cited = inject_links_markdown(analysis_text, ref_map)
+    sources_appendix = build_sources_appendix_md(ref_map, cited)
+
+    print(f"  ✓ Gemini cited {len(cited)} of {len(ref_map)} references.")
+
+    # ── Markdown output ──────────────────────────────────────────────────
+    if do_markdown:
         os.makedirs(args.outdir, exist_ok=True)
 
         # 1. Write the input debug file
@@ -488,23 +526,7 @@ def main():
             f.write(prompt_context)
         print(f"  ✓ Input saved → {input_path}")
 
-        # 2. Call Gemini
-        print(f"Generating AI Analysis via {model_name} (with automatic retries)...")
-        client = genai.Client()
-        try:
-            response = generate_ai_content(client, prompt, model=model_name)
-            analysis_text = sanitize(response.text)
-        except Exception as e:
-            print(f"Final failure after multiple retries: {e}")
-            sys.exit(1)
-
-        # 3. Inject links and build sources appendix
-        analysis_linked, cited = inject_links_markdown(analysis_text, ref_map)
-        sources_appendix = build_sources_appendix_md(ref_map, cited)
-
-        print(f"  ✓ Gemini cited {len(cited)} of {len(ref_map)} references.")
-
-        # 4. Write the report
+        # 2. Write the report
         output_path = os.path.join(args.outdir, f"{date_slug}_report.md")
         with open(output_path, "w", encoding="utf-8") as f:
             f.write(f"# Intelligence Brief — {today_str}\n\n")
@@ -516,63 +538,48 @@ def main():
             f.write(analysis_linked)
             f.write(sources_appendix)
         print(f"  ✓ Report saved → {output_path}")
-        return
 
-    # ── Email mode (production) ──────────────────────────────────────────
-    print(f"Generating AI Analysis via {model_name} (with automatic retries)...")
-    client = genai.Client()
+    # ── Email output ─────────────────────────────────────────────────────
+    if do_email:
+        full_markdown = analysis_linked + sources_appendix
 
-    try:
-        response = generate_ai_content(client, prompt, model=model_name)
-        analysis_text = sanitize(response.text)
-    except Exception as e:
-        print(f"Final failure after multiple retries: {e}")
-        sys.exit(1)
+        # Convert Markdown → styled HTML
+        analysis_html = md_lib.markdown(full_markdown, extensions=["extra"])
+        analysis_html = style_html(analysis_html)
 
-    # Inject markdown links before conversion
-    analysis_linked, cited = inject_links_markdown(analysis_text, ref_map)
-    sources_appendix = build_sources_appendix_md(ref_map, cited)
-    full_markdown = analysis_linked + sources_appendix
+        subject = f"Intelligence Brief: Transatlantic Right-Wing Media ({today_str})"
+        full_html = build_html_email(analysis_html, today_str, article_count, category_count)
 
-    print(f"  ✓ Gemini cited {len(cited)} of {len(ref_map)} references.")
+        # Plain-text fallback
+        plain_sources = ""
+        if cited:
+            plain_sources = "\n---\nSources:\n"
+            for num in sorted(cited):
+                ref = ref_map[num]
+                plain_sources += f"  [{num}] {sanitize(ref['title'])} — {sanitize(ref['source'])}\n"
+                if ref["url"]:
+                    plain_sources += f"        {ref['url']}\n"
+        plain_text = sanitize(analysis_text + plain_sources)
 
-    # Convert Markdown → styled HTML
-    analysis_html = md_lib.markdown(full_markdown, extensions=["extra"])
-    analysis_html = style_html(analysis_html)
+        # Build multipart message
+        msg = MIMEMultipart("alternative")
+        msg["Subject"] = subject
+        msg["From"] = sender_email
+        msg["To"] = receiver_email
+        msg.attach(MIMEText(plain_text, "plain", "utf-8"))
+        msg.attach(MIMEText(sanitize(full_html), "html", "utf-8"))
 
-    subject = f"Intelligence Brief: Transatlantic Right-Wing Media ({today_str})"
-    full_html = build_html_email(analysis_html, today_str, article_count, category_count)
-
-    # Plain-text fallback
-    plain_sources = ""
-    if cited:
-        plain_sources = "\n---\nSources:\n"
-        for num in sorted(cited):
-            ref = ref_map[num]
-            plain_sources += f"  [{num}] {sanitize(ref['title'])} — {sanitize(ref['source'])}\n"
-            if ref["url"]:
-                plain_sources += f"        {ref['url']}\n"
-    plain_text = sanitize(analysis_text + plain_sources)
-
-    # Build multipart message
-    msg = MIMEMultipart("alternative")
-    msg["Subject"] = subject
-    msg["From"] = sender_email
-    msg["To"] = receiver_email
-    msg.attach(MIMEText(plain_text, "plain", "utf-8"))
-    msg.attach(MIMEText(sanitize(full_html), "html", "utf-8"))
-
-    print("Sending email...")
-    try:
-        server = smtplib.SMTP("smtp.gmail.com", 587)
-        server.starttls()
-        server.login(sender_email, email_password)
-        server.send_message(msg)
-        server.quit()
-        print("Report emailed successfully!")
-    except Exception as e:
-        print(f"Failed to send email: {e}")
-        sys.exit(1)
+        print("Sending email...")
+        try:
+            server = smtplib.SMTP("smtp.gmail.com", 587)
+            server.starttls()
+            server.login(sender_email, email_password)
+            server.send_message(msg)
+            server.quit()
+            print("  ✓ Report emailed successfully!")
+        except Exception as e:
+            print(f"Failed to send email: {e}")
+            sys.exit(1)
 
 
 if __name__ == "__main__":
