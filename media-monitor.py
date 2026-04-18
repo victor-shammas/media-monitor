@@ -1,29 +1,25 @@
 #!/usr/bin/env python3
 """
-Transatlantic Right-Wing Media Monitor — Fast/Basic Edition
-Fetches Google News RSS directly and appends results to a text file.
-Leaves URLs as raw Google News links for maximum speed. No dependencies.
-
-Usage:
-    python3 monitor_cron.py                     # prints to stdout + appends to monitor_output.txt
-    python3 monitor_cron.py -o /path/to/file    # custom output path
-    python3 monitor_cron.py --json              # also write a JSON snapshot
-    python3 monitor_cron.py --feeds hungary frp # only fetch specific feeds
+Transatlantic Right-Wing Media Monitor — Stateful Edition
+Maintains a database of seen articles, prevents duplicates, 
+and regenerates a cleanly grouped text file on each run.
 """
 
-import argparse
-import html as html_mod
 import json
 import os
 import re
 import sys
+import argparse
+import html as html_mod
 import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
-from email.utils import parsedate_to_datetime
+from urllib.request import urlopen, Request
 from urllib.parse import quote
-from urllib.request import Request, urlopen
+from email.utils import parsedate_to_datetime
 
 # ── Configuration ──────────────────────────────────────────────────────────
+
+STATE_FILE = "monitor_state.json"
 
 FEEDS = [
     {
@@ -65,7 +61,7 @@ FEEDS = [
     {
         "id": "fdi",
         "name": "🇮🇹 Fratelli d'Italia / Lega",
-        "q": 'Meloni OR Salvini OR "Fratelli d\'Italia" OR "Brothers of Italy" OR Lega',
+        "q": "Meloni OR Salvini OR \"Fratelli d'Italia\" OR \"Brothers of Italy\" OR Lega",
         "lang": "it",
         "country": "IT",
         "window": "7d",
@@ -116,9 +112,7 @@ FEEDS = [
 
 # ── Helpers ────────────────────────────────────────────────────────────────
 
-
 def build_gnews_url(query: str, feed: dict) -> str:
-    """Build a Google News RSS URL."""
     win = feed.get("window", "7d")
     lang = feed["lang"]
     country = feed["country"]
@@ -128,28 +122,18 @@ def build_gnews_url(query: str, feed: dict) -> str:
         f"&hl={lang}&gl={country}&ceid={country}:{lang}"
     )
 
-
 def fetch_rss(url: str, timeout: int = 15) -> list[dict]:
-    """Fetch a Google News RSS feed and parse items (no URL decoding)."""
-    req = Request(
-        url,
-        headers={
-            "User-Agent": "Mozilla/5.0 (compatible; RWMonitor/2.0)",
-        },
-    )
+    req = Request(url, headers={"User-Agent": "Mozilla/5.0 (compatible; RWMonitor/3.0)"})
     with urlopen(req, timeout=timeout) as resp:
         raw = resp.read()
-
     root = ET.fromstring(raw)
     items = []
-
     for item_el in root.iter("item"):
         title = (item_el.findtext("title") or "").strip()
         link = (item_el.findtext("link") or "").strip()
         desc = (item_el.findtext("description") or "").strip()
         pub_date_str = (item_el.findtext("pubDate") or "").strip()
-
-        # Parse date
+        
         pub_dt = None
         if pub_date_str:
             try:
@@ -159,63 +143,48 @@ def fetch_rss(url: str, timeout: int = 15) -> list[dict]:
             except Exception:
                 pass
 
-        items.append(
-            {
-                "title": title,
-                "link": link,
-                "description": desc,
-                "pubDate": pub_dt.isoformat() if pub_dt else pub_date_str,
-                "pub_dt": pub_dt,
-            }
-        )
+        items.append({
+            "title": title,
+            "link": link,
+            "description": desc,
+            "pubDate": pub_dt.isoformat() if pub_dt else pub_date_str,
+            "pub_dt": pub_dt,
+        })
     return items
 
-
 def strip_html(text: str) -> str:
-    if not text:
-        return ""
+    if not text: return ""
     t = re.sub(r"<[^>]+>", " ", text)
     t = html_mod.unescape(t)
     t = re.sub(r"\s+", " ", t).strip()
     return t[:220] + "…" if len(t) > 220 else t
 
-
 def extract_source(title: str) -> str:
     m = re.search(r"\s-\s([^-]+)$", title)
     return m.group(1).strip() if m else ""
 
-
 def clean_title(title: str) -> str:
     return re.sub(r"\s-\s[^-]+$", "", title).strip()
 
-
 def strip_trailing_source(summary: str, source: str) -> str:
-    if not summary or not source:
-        return summary
+    if not summary or not source: return summary
     esc = re.escape(source)
-    return re.sub(
-        r"[\s\-–—]*" + esc + r"\s*$", "", summary, flags=re.IGNORECASE
-    ).strip()
-
+    return re.sub(r"[\s\-–—]*" + esc + r"\s*$", "", summary, flags=re.IGNORECASE).strip()
 
 def fmt_date(iso: str) -> str:
-    if not iso:
-        return ""
+    if not iso: return ""
     try:
         dt = datetime.fromisoformat(iso.replace("Z", "+00:00"))
         return dt.strftime("%b %d")
     except Exception:
         return iso[:10]
 
+# ── Core Logic ─────────────────────────────────────────────────────────────
 
-# ── Core fetch ─────────────────────────────────────────────────────────────
-
-
-def fetch_feed(feed: dict) -> list[dict]:
+def fetch_feed(feed: dict, seen_urls: set, timestamp: str) -> list[dict]:
     queries = feed.get("queries", [feed.get("q", "")])
     cutoff = datetime.now(timezone.utc) - timedelta(days=30)
-    all_items = []
-    seen = set()
+    new_items = []
     errors = []
 
     for q in queries:
@@ -224,161 +193,138 @@ def fetch_feed(feed: dict) -> list[dict]:
             raw_items = fetch_rss(url)
             for item in raw_items:
                 link = item.get("link", "")
-                if not link or link in seen:
+                
+                # Deduplication check happens right here!
+                if not link or link in seen_urls:
                     continue
-                seen.add(link)
+                seen_urls.add(link)
+                
                 pub_dt = item.get("pub_dt")
                 if pub_dt and pub_dt < cutoff:
                     continue
-
+                    
                 source = extract_source(item.get("title", ""))
                 summary = strip_html(item.get("description", ""))
                 summary = strip_trailing_source(summary, source)
-
-                all_items.append(
-                    {
-                        "title": clean_title(item.get("title", "")),
-                        "url": link,
-                        "source": source,
-                        "date": item.get("pubDate", ""),
-                        "date_dt": pub_dt,
-                        "summary": summary,
-                    }
-                )
+                
+                new_items.append({
+                    "title": clean_title(item.get("title", "")),
+                    "url": link,
+                    "source": source,
+                    "date": item.get("pubDate", ""),
+                    "added_at": timestamp,  # Add the timestamp!
+                    "summary": summary,
+                })
         except Exception as e:
             errors.append(f"{q[:40]}…: {e}")
-
-    # Sort newest first, cap to max
-    all_items.sort(
-        key=lambda x: x.get("date_dt") or datetime.min.replace(tzinfo=timezone.utc),
-        reverse=True,
-    )
-    all_items = all_items[: feed.get("max", 8)]
 
     if errors:
         for err in errors[:2]:
             print(f"  ⚠ {err}", file=sys.stderr)
 
-    return all_items
+    return new_items
 
-
-# ── Formatters ─────────────────────────────────────────────────────────────
+# ── Formatter ──────────────────────────────────────────────────────────────
 
 SEPARATOR = "═" * 72
 
-
-def format_text(
-    results: dict[str, list[dict]], timestamp: str, active_feeds: list[dict] = None
-) -> str:
-    feeds_to_show = active_feeds or FEEDS
+def format_text(state: dict, active_feeds: list[dict], last_updated: str) -> str:
     lines = []
-    lines.append("")
     lines.append(SEPARATOR)
     lines.append("  TRANSATLANTIC RIGHT-WING MEDIA MONITOR")
-    lines.append(f"  {timestamp}")
+    lines.append(f"  Last Updated: {last_updated}")
     lines.append(SEPARATOR)
 
-    for feed in feeds_to_show:
+    for feed in active_feeds:
         fid = feed["id"]
-        items = results.get(fid, [])
+        items = state.get(fid, [])
         lines.append("")
         lines.append(f"=== {feed['name']}  ({len(items)} items) ===")
         lines.append("")
-
+        
         if not items:
             lines.append("  (no results)")
-
+            
         for i, item in enumerate(items, 1):
             meta_parts = filter(None, [item.get("source", ""), fmt_date(item["date"])])
             meta = " · ".join(meta_parts)
-
+            
             lines.append(f"{i}. {item['title']}")
             if meta:
-                lines.append(f"   {meta}")
+                lines.append(f"   Published: {meta}")
+            
+            # The new Date/Time Added line
+            lines.append(f"   Added:     {item.get('added_at', 'Unknown')}")
+            
             if item["summary"]:
                 lines.append(f"   {item['summary']}")
             lines.append(f"   {item['url']}")
-
-            # Add a blank line between items for readability
             lines.append("")
 
     return "\n".join(lines)
 
-
-def format_json(
-    results: dict[str, list[dict]], timestamp: str, active_feeds: list[dict] = None
-) -> str:
-    feeds_to_show = active_feeds or FEEDS
-    out = {"timestamp": timestamp, "feeds": {}}
-    for feed in feeds_to_show:
-        fid = feed["id"]
-        items = results.get(fid, [])
-        out["feeds"][fid] = {
-            "name": feed["name"],
-            "count": len(items),
-            "items": [{k: v for k, v in it.items() if k != "date_dt"} for it in items],
-        }
-    return json.dumps(out, ensure_ascii=False, indent=2)
-
-
 # ── Main ───────────────────────────────────────────────────────────────────
 
-
 def main():
-    parser = argparse.ArgumentParser(
-        description="Right-wing media monitor (Fast Edition)"
-    )
-    parser.add_argument(
-        "-o",
-        "--output",
-        default="monitor_output.txt",
-        help="Text output file (appended to). Default: monitor_output.txt",
-    )
-    parser.add_argument(
-        "--json",
-        action="store_true",
-        help="Also write a JSON snapshot to <output>.json",
-    )
-    parser.add_argument(
-        "--feeds",
-        nargs="*",
-        default=None,
-        help="Only fetch specific feed IDs (e.g., --feeds hungary frp maga)",
-    )
+    parser = argparse.ArgumentParser(description="Stateful media monitor")
+    parser.add_argument("-o", "--output", default="monitor_output.txt", help="Text output file")
+    parser.add_argument("--feeds", nargs="*", default=None, help="Specific feeds to run")
     args = parser.parse_args()
 
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    
     active_feeds = FEEDS
-
     if args.feeds:
         active_feeds = [f for f in FEEDS if f["id"] in args.feeds]
-        if not active_feeds:
-            print(f"No matching feeds for: {args.feeds}", file=sys.stderr)
-            sys.exit(1)
 
-    print(f"[{timestamp}] Fetching {len(active_feeds)} feeds…", file=sys.stderr)
-    results = {}
+    # 1. Load the database (if it exists)
+    state = {}
+    if os.path.exists(STATE_FILE):
+        try:
+            with open(STATE_FILE, "r", encoding="utf-8") as f:
+                state = json.load(f)
+        except Exception:
+            pass
+            
+    # Ensure all feeds have an empty list if they are new
+    for feed in FEEDS:
+        if feed["id"] not in state:
+            state[feed["id"]] = []
 
+    # 2. Build a giant list of every URL we've ever seen to prevent duplicates
+    seen_urls = set()
+    for items in state.values():
+        for item in items:
+            seen_urls.add(item["url"])
+
+    print(f"[{timestamp}] Found {len(seen_urls)} previously saved articles.", file=sys.stderr)
+    print(f"[{timestamp}] Fetching {len(active_feeds)} feeds for new articles…", file=sys.stderr)
+    
+    # 3. Fetch new items
     for feed in active_feeds:
+        fid = feed["id"]
         print(f"  → {feed['name']}…", file=sys.stderr)
-        results[feed["id"]] = fetch_feed(feed)
+        
+        new_items = fetch_feed(feed, seen_urls, timestamp)
+        
+        if new_items:
+            print(f"    + Found {len(new_items)} new articles!", file=sys.stderr)
+            # Add new items to the top of the category's list
+            state[fid] = new_items + state[fid]
+            
+            # Optional: Keep the file from growing infinitely by capping each category at 100 links
+            state[fid] = state[fid][:100]
 
-    text = format_text(results, timestamp, active_feeds)
+    # 4. Save the updated database back to JSON
+    with open(STATE_FILE, "w", encoding="utf-8") as f:
+        json.dump(state, f, indent=2, ensure_ascii=False)
 
-    # Print to stdout
-    print(text)
-
-    # Append to file
-    with open(args.output, "a", encoding="utf-8") as f:
+    # 5. Completely rewrite the readable Text file using the updated database
+    text = format_text(state, active_feeds, timestamp)
+    with open(args.output, "w", encoding="utf-8") as f:
         f.write(text + "\n")
-    print(f"\n[appended to {args.output}]", file=sys.stderr)
-
-    if args.json:
-        json_path = os.path.splitext(args.output)[0] + ".json"
-        with open(json_path, "w", encoding="utf-8") as f:
-            f.write(format_json(results, timestamp, active_feeds))
-        print(f"[wrote {json_path}]", file=sys.stderr)
-
+        
+    print(f"\n[Updated {args.output} and {STATE_FILE}]", file=sys.stderr)
 
 if __name__ == "__main__":
     main()
