@@ -9,6 +9,7 @@ Modes:
 import argparse
 import json
 import os
+import re
 import smtplib
 import sys
 import unicodedata
@@ -43,8 +44,14 @@ STATE_FILE = "monitor_state.json"
         f"(Attempt {retry_state.attempt_number})"
     ),
 )
-def generate_ai_content(client, prompt):
-    return client.models.generate_content(model="gemini-2.5-flash", contents=prompt)
+def generate_ai_content(client, prompt, model="gemini-2.5-flash"):
+    return client.models.generate_content(model=model, contents=prompt)
+
+
+MODEL_ALIASES = {
+    "flash": "gemini-2.5-flash",
+    "pro": "gemini-2.5-pro",
+}
 
 
 # ── Helpers ────────────────────────────────────────────────────────────────
@@ -83,6 +90,130 @@ CATEGORY_LABELS = {
     "nodes": "🕸️ Transnational Networks",
     "hungary": "🇭🇺 Hungary (Fidesz / Tisza)",
 }
+
+
+# ── Citation System ───────────────────────────────────────────────────────
+
+def compile_recent_data(state: dict, cutoff: datetime) -> tuple[str, dict, int, int]:
+    """Extract recent articles, assign sequential reference numbers.
+    Returns (context_str, reference_map, article_count, category_count).
+
+    reference_map: {1: {"title": "...", "source": "...", "url": "..."}, ...}
+    """
+    compiled_data = []
+    reference_map = {}
+    ref_num = 0
+    article_count = 0
+    category_count = 0
+
+    for category, items in state.items():
+        recent_items = [item for item in items if get_sort_time(item) >= cutoff]
+        if recent_items:
+            category_count += 1
+            article_count += len(recent_items)
+            label = CATEGORY_LABELS.get(category, category.upper())
+            compiled_data.append(f"### CATEGORY: {label} ###")
+            for item in recent_items:
+                ref_num += 1
+                reference_map[ref_num] = {
+                    "title": item.get("title", ""),
+                    "source": item.get("source", ""),
+                    "url": item.get("url", ""),
+                }
+                compiled_data.append(
+                    f"- [{ref_num}] {item['title']} (Source: {item['source']})"
+                )
+            compiled_data.append("")
+
+    return "\n".join(compiled_data), reference_map, article_count, category_count
+
+
+def inject_links_markdown(text: str, ref_map: dict) -> tuple[str, set]:
+    """Replace citation patterns with markdown links. Returns (text, cited_nums).
+
+    Handles both single [N] and comma-separated [N, N, N] citation groups.
+    """
+    cited = set()
+
+    def link_single(num: int) -> str:
+        """Convert a single reference number to a markdown link."""
+        ref = ref_map.get(num)
+        if ref and ref.get("url"):
+            cited.add(num)
+            return f"[[{num}]]({ref['url']})"
+        return f"[{num}]"
+
+    def replace_group(m):
+        """Handle comma-separated groups like [14, 15, 27]."""
+        inner = m.group(1)
+        nums = [int(n.strip()) for n in inner.split(",") if n.strip().isdigit()]
+        return " ".join(link_single(n) for n in nums)
+
+    def replace_single(m):
+        """Handle lone [N] that weren't part of a group."""
+        return link_single(int(m.group(1)))
+
+    # Pass 1: match [N, N, ...] groups (two or more comma-separated numbers)
+    result = re.sub(
+        r'\[(\d+(?:\s*,\s*\d+)+)\]',
+        replace_group,
+        text,
+    )
+
+    # Pass 2: match remaining lone [N] not already converted to [[N]](...)
+    result = re.sub(
+        r'(?<!\[)\[(\d+)\](?!\(|\])',
+        replace_single,
+        result,
+    )
+
+    return result, cited
+
+
+def build_sources_appendix_md(ref_map: dict, cited: set) -> str:
+    """Build a markdown Sources section listing only cited references."""
+    if not cited:
+        return ""
+    lines = ["\n---\n", "## Sources\n"]
+    for num in sorted(cited):
+        ref = ref_map[num]
+        title = ref["title"]
+        source = ref["source"]
+        url = ref["url"]
+        if url:
+            lines.append(f"{num}. [{title}]({url}) — *{source}*")
+        else:
+            lines.append(f"{num}. {title} — *{source}*")
+    return "\n".join(lines) + "\n"
+
+
+# ── Prompt ─────────────────────────────────────────────────────────────────
+
+def build_prompt(context: str) -> str:
+    return (
+        "You are an expert political analyst writing a daily intelligence brief. "
+        "Analyze the last 24 hours of right-wing and far-right news from the data below.\n\n"
+        "FORMAT INSTRUCTIONS:\n"
+        "- Write in Markdown.\n"
+        "- Begin with a short executive summary paragraph (2-3 sentences) of the day's "
+        "most significant developments.\n"
+        "- Then organize your analysis by thematic cluster, NOT by country. Use ## headings "
+        "for each cluster (e.g., '## Immigration and Border Politics', "
+        "'## Transnational Conservative Networking').\n"
+        "- Within each section, note cross-national patterns and connections where they exist.\n"
+        "- Use **bold** for party names and key actors on first mention.\n"
+        "- End with a short 'Watchlist' section flagging 2-3 emerging stories to track.\n"
+        "- Keep the tone analytical and concise — this is a professional briefing, "
+        "not a news summary.\n\n"
+        "CITATION INSTRUCTIONS:\n"
+        "- Each article in the data has a reference number in square brackets, e.g. [1], [2].\n"
+        "- When you make a claim that draws on a specific article, cite it inline using its "
+        "number: e.g. 'Vance faced bipartisan criticism [14] amid growing internal dissent [27].'\n"
+        "- Cite the most relevant 1-3 sources per claim. Do NOT cite every article.\n"
+        "- Do NOT invent reference numbers that are not in the data.\n"
+        "- Do NOT create a bibliography or references section — just use inline citations.\n\n"
+        f"DATA:\n{context}"
+    )
 
 
 # ── HTML Template ──────────────────────────────────────────────────────────
@@ -173,49 +304,6 @@ def style_html(raw_html: str) -> str:
     return raw_html
 
 
-# ── Data Compilation ──────────────────────────────────────────────────────
-
-def compile_recent_data(state: dict, cutoff: datetime) -> tuple[str, int, int]:
-    """Extract recent articles from the state file.
-    Returns (context_str, article_count, category_count)."""
-    compiled_data = []
-    article_count = 0
-    category_count = 0
-
-    for category, items in state.items():
-        recent_items = [item for item in items if get_sort_time(item) >= cutoff]
-        if recent_items:
-            category_count += 1
-            article_count += len(recent_items)
-            label = CATEGORY_LABELS.get(category, category.upper())
-            compiled_data.append(f"### CATEGORY: {label} ###")
-            for item in recent_items:
-                compiled_data.append(f"- {item['title']} (Source: {item['source']})")
-            compiled_data.append("")
-
-    return "\n".join(compiled_data), article_count, category_count
-
-
-def build_prompt(context: str) -> str:
-    return (
-        "You are an expert political analyst writing a daily intelligence brief. "
-        "Analyze the last 24 hours of right-wing and far-right news from the data below.\n\n"
-        "FORMAT INSTRUCTIONS:\n"
-        "- Write in Markdown.\n"
-        "- Begin with a short executive summary paragraph (2-3 sentences) of the day's "
-        "most significant developments.\n"
-        "- Then organize your analysis by thematic cluster, NOT by country. Use ## headings "
-        "for each cluster (e.g., '## Immigration and Border Politics', "
-        "'## Transnational Conservative Networking').\n"
-        "- Within each section, note cross-national patterns and connections where they exist.\n"
-        "- Use **bold** for party names and key actors on first mention.\n"
-        "- End with a short 'Watchlist' section flagging 2-3 emerging stories to track.\n"
-        "- Keep the tone analytical and concise — this is a professional briefing, "
-        "not a news summary.\n\n"
-        f"DATA:\n{context}"
-    )
-
-
 # ── Main ───────────────────────────────────────────────────────────────────
 
 def main():
@@ -232,7 +320,13 @@ def main():
         "--outdir", default="reports",
         help="Output directory for markdown reports (default: reports/)"
     )
+    parser.add_argument(
+        "--model", default="pro", choices=["flash", "pro"],
+        help="Gemini model: 'flash' (fast, good for testing) or 'pro' (best, default)"
+    )
     args = parser.parse_args()
+
+    model_name = MODEL_ALIASES[args.model]
 
     # In markdown mode, only the API key is required
     api_key = os.environ.get("GEMINI_API_KEY")
@@ -256,7 +350,9 @@ def main():
         state = json.load(f)
 
     cutoff = datetime.now(timezone.utc) - timedelta(hours=args.hours)
-    prompt_context, article_count, category_count = compile_recent_data(state, cutoff)
+    prompt_context, ref_map, article_count, category_count = compile_recent_data(
+        state, cutoff
+    )
 
     if not prompt_context.strip():
         print(f"No new articles in the last {args.hours} hours. Skipping report.")
@@ -266,68 +362,99 @@ def main():
     today_str = datetime.now().strftime("%B %d, %Y")
     date_slug = datetime.now().strftime("%Y-%m-%d")
 
+    print(
+        f"Compiled {article_count} articles across {category_count} categories "
+        f"({len(ref_map)} references indexed)."
+    )
+
     # ── Markdown mode: dump input + output to files ──────────────────────
     if args.markdown:
         os.makedirs(args.outdir, exist_ok=True)
 
-        # 1. Write the raw input (what Gemini sees)
+        # 1. Write the input debug file (no duplication)
         input_path = os.path.join(args.outdir, f"{date_slug}_input.md")
         with open(input_path, "w", encoding="utf-8") as f:
             f.write(f"# Gemini Input — {today_str}\n\n")
             f.write(f"**Look-back:** {args.hours} hours\n")
-            f.write(f"**Articles:** {article_count} across {category_count} categories\n\n")
+            f.write(f"**Articles:** {article_count} across {category_count} categories\n")
+            f.write(f"**References indexed:** {len(ref_map)}\n\n")
             f.write("---\n\n")
-            f.write("## Prompt\n\n")
-            f.write(f"```\n{prompt}\n```\n\n")
+            f.write("## Prompt Instructions\n\n")
+            f.write(f"```\n{build_prompt('(article data follows below)')}\n```\n\n")
             f.write("---\n\n")
-            f.write("## Raw Data Sent to Model\n\n")
+            f.write("## Article Data\n\n")
             f.write(prompt_context)
         print(f"  ✓ Input saved → {input_path}")
 
         # 2. Call Gemini
-        print("Generating AI Analysis (with automatic retries)...")
+        print(f"Generating AI Analysis via {model_name} (with automatic retries)...")
         client = genai.Client()
         try:
-            response = generate_ai_content(client, prompt)
+            response = generate_ai_content(client, prompt, model=model_name)
             analysis_text = sanitize(response.text)
         except Exception as e:
             print(f"Final failure after multiple retries: {e}")
             sys.exit(1)
 
-        # 3. Write the analysis output
+        # 3. Inject links and build sources appendix
+        analysis_linked, cited = inject_links_markdown(analysis_text, ref_map)
+        sources_appendix = build_sources_appendix_md(ref_map, cited)
+
+        print(f"  ✓ Gemini cited {len(cited)} of {len(ref_map)} references.")
+
+        # 4. Write the report
         output_path = os.path.join(args.outdir, f"{date_slug}_report.md")
         with open(output_path, "w", encoding="utf-8") as f:
             f.write(f"# Intelligence Brief — {today_str}\n\n")
             f.write(f"*{article_count} articles across {category_count} categories*\n\n")
             f.write("---\n\n")
-            f.write(analysis_text)
+            f.write(analysis_linked)
+            f.write(sources_appendix)
         print(f"  ✓ Report saved → {output_path}")
         return
 
     # ── Email mode (production) ──────────────────────────────────────────
-    print("Generating AI Analysis (with automatic retries)...")
+    print(f"Generating AI Analysis via {model_name} (with automatic retries)...")
     client = genai.Client()
 
     try:
-        response = generate_ai_content(client, prompt)
+        response = generate_ai_content(client, prompt, model=model_name)
         analysis_text = sanitize(response.text)
     except Exception as e:
         print(f"Final failure after multiple retries: {e}")
         sys.exit(1)
 
+    # Inject markdown links before conversion
+    analysis_linked, cited = inject_links_markdown(analysis_text, ref_map)
+    sources_appendix = build_sources_appendix_md(ref_map, cited)
+    full_markdown = analysis_linked + sources_appendix
+
+    print(f"  ✓ Gemini cited {len(cited)} of {len(ref_map)} references.")
+
     # Convert Markdown → styled HTML
-    analysis_html = md_lib.markdown(analysis_text, extensions=["extra", "smarty"])
+    analysis_html = md_lib.markdown(full_markdown, extensions=["extra", "smarty"])
     analysis_html = style_html(analysis_html)
 
     subject = f"Intelligence Brief: Transatlantic Right-Wing Media ({today_str})"
     full_html = build_html_email(analysis_html, today_str, article_count, category_count)
 
-    # Build multipart message (plain text fallback + HTML)
+    # Plain-text fallback: use the raw text with a simple sources list
+    plain_sources = ""
+    if cited:
+        plain_sources = "\n---\nSources:\n"
+        for num in sorted(cited):
+            ref = ref_map[num]
+            plain_sources += f"  [{num}] {ref['title']} — {ref['source']}\n"
+            if ref["url"]:
+                plain_sources += f"        {ref['url']}\n"
+    plain_text = analysis_text + plain_sources
+
+    # Build multipart message
     msg = MIMEMultipart("alternative")
     msg["Subject"] = subject
     msg["From"] = sender_email
     msg["To"] = receiver_email
-    msg.attach(MIMEText(analysis_text, "plain", "utf-8"))
+    msg.attach(MIMEText(plain_text, "plain", "utf-8"))
     msg.attach(MIMEText(full_html, "html", "utf-8"))
 
     print("Sending email...")
