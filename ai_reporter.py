@@ -27,6 +27,7 @@ try:
     import markdown as md_lib
     from tenacity import (
         retry,
+        retry_if_exception,
         retry_if_exception_type,
         stop_after_attempt,
         wait_exponential,
@@ -72,10 +73,31 @@ def _call_gemini(prompt: str, model: str) -> str:
     return response.text
 
 
+def _is_retryable_anthropic(exception):
+    """Only retry on server errors and rate limits, not client errors."""
+    _ensure_anthropic()
+    # Never retry bad requests, auth errors, etc.
+    if isinstance(exception, (
+        anthropic.BadRequestError,
+        anthropic.AuthenticationError,
+        anthropic.PermissionDeniedError,
+        anthropic.NotFoundError,
+    )):
+        return False
+    # Retry on overload, rate limits, server errors
+    if isinstance(exception, (
+        anthropic.RateLimitError,
+        anthropic.InternalServerError,
+        anthropic.APIStatusError,
+    )):
+        return True
+    return False
+
+
 @retry(
     stop=stop_after_attempt(3),
     wait=wait_exponential(multiplier=1, min=4, max=30),
-    retry=retry_if_exception_type(Exception),
+    retry=retry_if_exception(_is_retryable_anthropic),
     before_sleep=lambda rs: print(
         f"    ⚠ Retrying in {rs.next_action.sleep:.0f}s... "
         f"(attempt {rs.attempt_number})"
@@ -155,8 +177,12 @@ def generate_with_fallback(prompt: str, chain: list[str] | None = None) -> tuple
             print(f"  ✓ Success with {prov['label']}")
             return text, prov["label"]
         except Exception as e:
-            last_error = e
-            print(f"  ✗ {prov['label']} failed: {e}")
+            # Unwrap tenacity RetryError to show the real cause
+            actual = e
+            if hasattr(e, 'last_attempt') and e.last_attempt.failed:
+                actual = e.last_attempt.exception()
+            last_error = actual
+            print(f"  ✗ {prov['label']} failed: {actual}")
             if name != available[-1]:
                 print(f"    Falling back to next provider...")
 
