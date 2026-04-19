@@ -24,6 +24,7 @@ Flags:
   -d, --outdir DIR          Output directory for per-category text files (default: feeds/)
   --feeds [ID ...]          Only run specific feed IDs (e.g., frp, maga, sd, afd, nodes)
   --rebuild                 Regenerate all text files from monitor_state.json without fetching
+  --archive-days N          Archive articles older than N days (default: 60)
   --block URL               Block a single article by URL and prevent re-ingestion
   --block-source SOURCE     Block all articles from a named source (case-insensitive)
   --block-pattern PHRASE    Block any article whose title contains this phrase (case-insensitive)
@@ -32,6 +33,7 @@ Flags:
 
 Data files:
   monitor_state.json        Persistent article database (one key per feed category)
+  archive.jsonl             Long-term archive of pruned articles (one JSON record per line)
   blocklist.json            Blocked URLs, sources, and title patterns (created on first use)
   feeds/*.txt               Human-readable per-category article listings (regenerated each run)
 """
@@ -52,7 +54,9 @@ from urllib.request import Request, urlopen
 
 STATE_FILE = "monitor_state.json"
 BLOCKLIST_FILE = "blocklist.json"
+ARCHIVE_FILE = "archive.jsonl"
 MAX_NEW_PER_RUN = 30  # The universal limit of new articles to add per run per category
+DEFAULT_ARCHIVE_DAYS = 60  # Articles older than this are archived and pruned from state
 
 FEEDS = [
     {
@@ -358,6 +362,39 @@ def purge_blocked_from_state(state: dict, blocklist: dict) -> int:
     return removed
 
 
+# ── Archiving ─────────────────────────────────────────────────────────────
+
+
+def prune_and_archive(state: dict, archive_days: int) -> int:
+    """Move articles older than archive_days from state into archive.jsonl.
+
+    Each archived article is written as a single JSON line with a 'feed_id'
+    field added so the record is self-contained.  Returns count archived.
+    """
+    cutoff = datetime.now(timezone.utc) - timedelta(days=archive_days)
+    archived = 0
+
+    lines_to_write = []
+    for fid in state:
+        keep = []
+        for item in state[fid]:
+            item_time = get_sort_time(item)
+            if item_time < cutoff:
+                record = dict(item, feed_id=fid)
+                lines_to_write.append(json.dumps(record, ensure_ascii=False))
+                archived += 1
+            else:
+                keep.append(item)
+        state[fid] = keep
+
+    if lines_to_write:
+        with open(ARCHIVE_FILE, "a", encoding="utf-8") as f:
+            for line in lines_to_write:
+                f.write(line + "\n")
+
+    return archived
+
+
 # ── Core Logic ─────────────────────────────────────────────────────────────
 
 
@@ -485,6 +522,13 @@ def main():
         "--rebuild",
         action="store_true",
         help="Regenerate all text files from monitor_state.json without fetching",
+    )
+    parser.add_argument(
+        "--archive-days",
+        type=int,
+        default=DEFAULT_ARCHIVE_DAYS,
+        metavar="N",
+        help=f"Archive articles older than N days (default: {DEFAULT_ARCHIVE_DAYS})",
     )
 
     # ── Blocklist management ──────────────────────────────────────────────
@@ -656,6 +700,15 @@ def main():
     purged = purge_blocked_from_state(state, blocklist)
     if purged:
         print(f"  ✗ Purged {purged} blocklisted item(s) from state.", file=sys.stderr)
+
+    # Archive old articles to JSONL and prune them from state
+    archived = prune_and_archive(state, args.archive_days)
+    if archived:
+        print(
+            f"  ↳ Archived {archived} article(s) older than {args.archive_days} days"
+            f" → {ARCHIVE_FILE}",
+            file=sys.stderr,
+        )
 
     print(
         f"[{timestamp}] Fetching {len(active_feeds)} feeds for new articles…",
