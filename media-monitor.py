@@ -69,7 +69,8 @@ FEEDS = [
         "q": 'Meloni OR Salvini OR "Fratelli d\'Italia" OR "Brothers of Italy" OR Lega',
         "variants": [
             {"lang": "it", "country": "IT"},
-            {"lang": "en", "country": "US"},
+            {"lang": "en", "country": "US",
+             "q": 'Meloni OR Salvini OR "Fratelli d\'Italia" OR "Brothers of Italy"'},
         ],
     },
     {
@@ -87,7 +88,8 @@ FEEDS = [
         "q": '"Alternative fur Deutschland" OR AfD OR "Tino Chrupalla" OR "Alice Weidel"',
         "variants": [
             {"lang": "de", "country": "DE"},
-            {"lang": "en", "country": "US"},
+            {"lang": "en", "country": "US",
+             "q": '"Alternative fur Deutschland" OR "Tino Chrupalla" OR "Alice Weidel"'},
         ],
     },
     {
@@ -118,7 +120,8 @@ FEEDS = [
         "q": '"Viktor Orbán" OR "Magyar Péter" OR "Fidesz" OR "Tisza"',
         "variants": [
             {"lang": "hu", "country": "HU"},
-            {"lang": "en", "country": "US"},
+            {"lang": "en", "country": "US",
+             "q": '"Viktor Orbán" OR "Peter Magyar" OR "Fidesz" OR "Tisza"'},
         ],
     },
     {
@@ -128,7 +131,8 @@ FEEDS = [
         "q": '"Prawo i Sprawiedliwość" OR "PiS" OR "Jarosław Kaczyński" OR "Mateusz Morawiecki" OR "Karol Nawrocki" OR "Law and Justice"',
         "variants": [
             {"lang": "pl", "country": "PL"},
-            {"lang": "en", "country": "US"},
+            {"lang": "en", "country": "US",
+             "q": '"Prawo i Sprawiedliwość" OR "Jarosław Kaczyński" OR "Mateusz Morawiecki" OR "Karol Nawrocki" OR "Law and Justice"'},
         ],
     },
     {
@@ -138,7 +142,8 @@ FEEDS = [
         "q": '"Vox" OR "Santiago Abascal" OR "Ignacio Garriga" OR "Javier Ortega Smith" OR "Rocío Monasterio" OR "Kiko Méndez-Monasterio"',
         "variants": [
             {"lang": "es", "country": "ES"},
-            {"lang": "en", "country": "US"},
+            {"lang": "en", "country": "US",
+             "q": '"Vox party" OR "Santiago Abascal" OR "Ignacio Garriga" OR "Javier Ortega Smith" OR "Rocío Monasterio" OR "Kiko Méndez-Monasterio"'},
         ],
     },
 ]
