@@ -137,20 +137,43 @@ def extract_article(url: str) -> tuple[str | None, int, str]:
 # ── Daily file management ────────────────────────────────────────────────
 
 
-def load_existing_enriched(path: str) -> tuple[list[dict], set[str]]:
-    """Load an existing enriched file. Returns (articles_list, set_of_google_urls)."""
+def load_enriched_file(path: str) -> list[dict]:
+    """Load a single enriched JSON file. Returns its articles list."""
     if not os.path.exists(path):
-        return [], set()
-
+        return []
     try:
         with open(path, "r", encoding="utf-8") as f:
             data = json.load(f)
-        articles = data.get("articles", [])
-        seen_urls = {a.get("google_url", "") for a in articles if a.get("google_url")}
-        return articles, seen_urls
+        return data.get("articles", [])
     except Exception as e:
-        print(f"  ⚠ Failed to load existing enriched file: {e}")
-        return [], set()
+        print(f"  ⚠ Failed to load {path}: {e}")
+        return []
+
+
+def load_today_and_recent_urls(
+    outdir: str, date_slug: str, hours: int
+) -> tuple[list[dict], set[str]]:
+    """Load today's enriched file for merging, and collect google_urls from
+    today + recent days (covering the lookback window) for deduplication.
+
+    Returns (today_articles, all_seen_urls).
+    """
+    today_path = os.path.join(outdir, f"enriched_{date_slug}.json")
+    today_articles = load_enriched_file(today_path)
+
+    # Collect seen URLs from today + previous days covered by the lookback window
+    days_to_check = (hours + 23) // 24  # ceiling division
+    all_seen_urls: set[str] = set()
+
+    now = datetime.now()
+    for offset in range(days_to_check):
+        day_slug = (now - timedelta(days=offset)).strftime("%Y-%m-%d")
+        day_path = os.path.join(outdir, f"enriched_{day_slug}.json")
+        articles = load_enriched_file(day_path) if day_slug != date_slug else today_articles
+        urls = {a.get("google_url", "") for a in articles if a.get("google_url")}
+        all_seen_urls |= urls
+
+    return today_articles, all_seen_urls
 
 
 # ── Main ──────────────────────────────────────────────────────────────────
@@ -179,17 +202,22 @@ def main():
     cutoff = datetime.now(timezone.utc) - timedelta(hours=args.hours)
     os.makedirs(args.outdir, exist_ok=True)
 
-    # ── Load existing enriched file for today (if any) ────────────────────
+    # ── Load today's enriched file + recent URLs for dedup ────────────────
     date_slug = datetime.now().strftime("%Y-%m-%d")
     outpath = os.path.join(args.outdir, f"enriched_{date_slug}.json")
 
-    existing_articles, already_scraped_urls = load_existing_enriched(outpath)
+    existing_articles, already_scraped_urls = load_today_and_recent_urls(
+        args.outdir, date_slug, args.hours
+    )
 
     if existing_articles:
         print(
-            f"  Loaded existing enriched file with {len(existing_articles)} articles "
-            f"({len(already_scraped_urls)} unique URLs)"
+            f"  Loaded today's enriched file with {len(existing_articles)} articles"
         )
+    print(
+        f"  Dedup pool: {len(already_scraped_urls)} URLs from enriched files "
+        f"covering last {args.hours}h"
+    )
 
     # ── Collect candidate articles from state ─────────────────────────────
     candidates = []
