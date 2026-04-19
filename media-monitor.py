@@ -510,35 +510,19 @@ def main():
         blocklist["urls"].add(args.block)
         save_blocklist(blocklist)
         print(f"✓ Blocked URL: {args.block}")
-        # Immediately purge from state if present
-        if os.path.exists(STATE_FILE):
-            with open(STATE_FILE, "r", encoding="utf-8") as f:
-                state = json.load(f)
-            removed = purge_blocked_from_state(state, blocklist)
-            if removed:
-                with open(STATE_FILE, "w", encoding="utf-8") as f:
-                    json.dump(state, f, indent=2, ensure_ascii=False)
-                print(f"  Purged {removed} matching item(s) from state.")
-        return
 
     if args.block_source:
         blocklist["sources"].add(args.block_source.lower())
         save_blocklist(blocklist)
         print(f"✓ Blocked source: {args.block_source}")
-        if os.path.exists(STATE_FILE):
-            with open(STATE_FILE, "r", encoding="utf-8") as f:
-                state = json.load(f)
-            removed = purge_blocked_from_state(state, blocklist)
-            if removed:
-                with open(STATE_FILE, "w", encoding="utf-8") as f:
-                    json.dump(state, f, indent=2, ensure_ascii=False)
-                print(f"  Purged {removed} matching item(s) from state.")
-        return
 
     if args.block_pattern:
         blocklist["title_patterns"].append(args.block_pattern.lower())
         save_blocklist(blocklist)
         print(f"✓ Blocked title pattern: \"{args.block_pattern}\"")
+
+    # If any block command was given, purge from state + regenerate text files
+    if args.block or args.block_source or args.block_pattern:
         if os.path.exists(STATE_FILE):
             with open(STATE_FILE, "r", encoding="utf-8") as f:
                 state = json.load(f)
@@ -547,6 +531,20 @@ def main():
                 with open(STATE_FILE, "w", encoding="utf-8") as f:
                     json.dump(state, f, indent=2, ensure_ascii=False)
                 print(f"  Purged {removed} matching item(s) from state.")
+                # Regenerate text files so feeds/ stays in sync
+                timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+                os.makedirs(args.outdir, exist_ok=True)
+                for feed in FEEDS:
+                    fid = feed["id"]
+                    items = state.get(fid, [])
+                    text = format_single_feed(feed, items, timestamp)
+                    filename = feed.get("filename", f"{fid}.txt")
+                    filepath = os.path.join(args.outdir, filename)
+                    with open(filepath, "w", encoding="utf-8") as f:
+                        f.write(text + "\n")
+                print(f"  Regenerated {len(FEEDS)} text file(s) in {args.outdir}/")
+            else:
+                print("  No matching items found in state.")
         return
 
     if args.unblock:
