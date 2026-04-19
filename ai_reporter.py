@@ -1,16 +1,26 @@
 #!/usr/bin/env python3
 """
-AI Reporter — generates intelligence briefs from the media monitor.
+AI Reporter — Generates intelligence briefs from the media monitor data.
 
-Data sources (checked in order):
-  1. enriched/enriched_YYYY-MM-DD.json  (titles + article extracts)
-  2. monitor_state.json                  (titles only, fallback)
+Consumes enriched JSON data (falling back to titles-only from monitor_state.json
+if necessary) to generate AI-produced intelligence briefs. Uses a resilient,
+multi-provider LLM fallback chain (Gemini Pro → Claude Sonnet → Gemini Flash).
 
-Modes:
-  python ai_reporter.py --markdown              → writes .md files (testing)
-  python ai_reporter.py                          → HTML email (production)
-  python ai_reporter.py --markdown --email      → both markdown + email
-  python ai_reporter.py --markdown --model flash → fast iteration
+Usage Examples:
+  python ai_reporter.py                          → HTML email mode (production default)
+  python ai_reporter.py --markdown               → Writes local .md files (testing/review)
+  python ai_reporter.py --markdown --email       → Writes local .md files and sends email
+  python ai_reporter.py --markdown --model flash → Fast iteration using Gemini Flash
+  python ai_reporter.py --hours 48               → Analyze a wider 48-hour window
+
+Flags:
+  --markdown          Write the analysis to a local Markdown file (.md) in reports/
+  --email             Send the final report as an HTML email (default if --markdown isn't used)
+  --model MODEL       Force a specific model (options: auto, pro, claude, flash).
+                      'auto' uses the fallback chain (default: auto).
+  --hours INT         Look-back window in hours for the analysis (default: 24)
+  --no-enriched       Force titles-only analysis even if enriched article text exists
+  --enriched-dir DIR  Override the directory to read enriched JSONs from (default: enriched/)
 """
 
 import argparse
@@ -765,9 +775,11 @@ def main():
         output_path = os.path.join(args.outdir, f"{report_slug}_report.md")
         with open(output_path, "w", encoding="utf-8") as f:
             f.write(f"# Intelligence Brief — {today_str}\n\n")
-            f.write("> **AI-GENERATED CONTENT — NOT VERIFIED.** "
-                    "This report was produced automatically by a large language model. "
-                    "Claims, interpretations, and citations may contain errors.\n\n")
+            f.write(
+                "> **AI-GENERATED CONTENT — NOT VERIFIED.** "
+                "This report was produced automatically by a large language model. "
+                "Claims, interpretations, and citations may contain errors.\n\n"
+            )
             f.write(f"*{article_count} articles across {category_count} categories")
             if using_enriched:
                 f.write(f" (enriched)")

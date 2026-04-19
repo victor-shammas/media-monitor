@@ -1,31 +1,32 @@
 #!/usr/bin/env python3
 """
-Transatlantic Right-Wing Media Monitor — Multi-File Edition
-Maintains a database of seen articles, regenerates cleanly grouped individual
-text files for each category, and ensures strict chronological sorting.
+Transatlantic Right-Wing Media Monitor
 
-Usage:
-  python media-monitor.py                              → fetch all feeds (default)
-  python media-monitor.py --feeds frp maga             → fetch specific feeds only
-  python media-monitor.py -d output                    → write text files to output/
-  python media-monitor.py --block <url>                → block a URL and purge from state
-  python media-monitor.py --block-source "Daily Mail"  → block all items from a source
-  python media-monitor.py --block-pattern "horoscope"  → block titles containing a phrase
-  python media-monitor.py --rebuild                     → regenerate text files from state (no fetch)
-  python media-monitor.py --show-blocklist             → display current blocklist
-  python media-monitor.py --unblock "Daily Mail"       → remove an entry from the blocklist
+Maintains a database of seen articles from Google News RSS feeds across various
+countries and categories. It regenerates cleanly grouped individual text files
+for each category, enforcing strict chronological sorting, and never visits
+article URLs directly to avoid rate limits and 403 errors.
+
+Usage Examples:
+  python media-monitor.py                              → Fetch all feeds (default)
+  python media-monitor.py --feeds frp maga             → Fetch specific feeds only
+  python media-monitor.py -d custom_folder/            → Write text files to custom dir
+  python media-monitor.py --rebuild                    → Regenerate text files from state (no fetch)
+
+Blocklist Management:
+  python media-monitor.py --block <url>                → Block a single URL and purge from state
+  python media-monitor.py --block-source "Daily Mail"  → Block all items from a source
+  python media-monitor.py --block-pattern "horoscope"  → Block titles containing a phrase
+  python media-monitor.py --show-blocklist             → Display the current blocklist
+  python media-monitor.py --unblock "Daily Mail"       → Remove an entry from the blocklist
 
 Flags:
   -d, --outdir DIR          Output directory for per-category text files (default: feeds/)
-  --feeds [ID ...]          Only run these feed IDs (e.g. frp, maga, sd, afd, nodes)
+  --feeds [ID ...]          Only run specific feed IDs (e.g., frp, maga, sd, afd, nodes)
   --rebuild                 Regenerate all text files from monitor_state.json without fetching
-
-  --block URL               Block a single article by URL; removes it from
-                            monitor_state.json and prevents re-ingestion on future runs
-  --block-source SOURCE     Block all articles from a named source (case-insensitive);
-                            purges existing matches from state immediately
-  --block-pattern PHRASE    Block any article whose title contains this phrase
-                            (case-insensitive); purges existing matches from state
+  --block URL               Block a single article by URL and prevent re-ingestion
+  --block-source SOURCE     Block all articles from a named source (case-insensitive)
+  --block-pattern PHRASE    Block any article whose title contains this phrase (case-insensitive)
   --unblock ENTRY           Remove a URL, source, or pattern from the blocklist
   --show-blocklist          Print the current blocklist and exit
 
@@ -69,8 +70,11 @@ FEEDS = [
         "q": 'Fremskrittspartiet OR FrP OR "Sylvi Listhaug" OR "Norwegian Progress Party" OR "Per-Willy Amundsen" OR "Hans Andreas Limi" OR "Simen Velle"',
         "variants": [
             {"lang": "no", "country": "NO"},
-            {"lang": "en", "country": "US",
-             "q": 'Fremskrittspartiet OR "Sylvi Listhaug" OR "Norwegian Progress Party" OR "Per-Willy Amundsen" OR "Hans Andreas Limi" OR "Simen Velle"'},
+            {
+                "lang": "en",
+                "country": "US",
+                "q": 'Fremskrittspartiet OR "Sylvi Listhaug" OR "Norwegian Progress Party" OR "Per-Willy Amundsen" OR "Hans Andreas Limi" OR "Simen Velle"',
+            },
         ],
     },
     {
@@ -100,8 +104,11 @@ FEEDS = [
         "q": 'Meloni OR Salvini OR "Fratelli d\'Italia" OR "Brothers of Italy" OR Lega',
         "variants": [
             {"lang": "it", "country": "IT"},
-            {"lang": "en", "country": "US",
-             "q": 'Meloni OR Salvini OR "Fratelli d\'Italia" OR "Brothers of Italy"'},
+            {
+                "lang": "en",
+                "country": "US",
+                "q": 'Meloni OR Salvini OR "Fratelli d\'Italia" OR "Brothers of Italy"',
+            },
         ],
     },
     {
@@ -119,8 +126,11 @@ FEEDS = [
         "q": '"Alternative fur Deutschland" OR AfD OR "Tino Chrupalla" OR "Alice Weidel"',
         "variants": [
             {"lang": "de", "country": "DE"},
-            {"lang": "en", "country": "US",
-             "q": '"Alternative fur Deutschland" OR "Tino Chrupalla" OR "Alice Weidel"'},
+            {
+                "lang": "en",
+                "country": "US",
+                "q": '"Alternative fur Deutschland" OR "Tino Chrupalla" OR "Alice Weidel"',
+            },
         ],
     },
     {
@@ -151,8 +161,11 @@ FEEDS = [
         "q": '"Viktor Orbán" OR "Magyar Péter" OR "Fidesz" OR "Tisza"',
         "variants": [
             {"lang": "hu", "country": "HU"},
-            {"lang": "en", "country": "US",
-             "q": '"Viktor Orbán" OR "Peter Magyar" OR "Fidesz" OR "Tisza"'},
+            {
+                "lang": "en",
+                "country": "US",
+                "q": '"Viktor Orbán" OR "Peter Magyar" OR "Fidesz" OR "Tisza"',
+            },
         ],
     },
     {
@@ -162,8 +175,11 @@ FEEDS = [
         "q": '"Prawo i Sprawiedliwość" OR "PiS" OR "Jarosław Kaczyński" OR "Mateusz Morawiecki" OR "Karol Nawrocki" OR "Law and Justice"',
         "variants": [
             {"lang": "pl", "country": "PL"},
-            {"lang": "en", "country": "US",
-             "q": '"Prawo i Sprawiedliwość" OR "Jarosław Kaczyński" OR "Mateusz Morawiecki" OR "Karol Nawrocki" OR "Law and Justice"'},
+            {
+                "lang": "en",
+                "country": "US",
+                "q": '"Prawo i Sprawiedliwość" OR "Jarosław Kaczyński" OR "Mateusz Morawiecki" OR "Karol Nawrocki" OR "Law and Justice"',
+            },
         ],
     },
     {
@@ -173,8 +189,11 @@ FEEDS = [
         "q": '"Vox" OR "Santiago Abascal" OR "Ignacio Garriga" OR "Javier Ortega Smith" OR "Rocío Monasterio" OR "Kiko Méndez-Monasterio"',
         "variants": [
             {"lang": "es", "country": "ES"},
-            {"lang": "en", "country": "US",
-             "q": '"Vox party" OR "Santiago Abascal" OR "Ignacio Garriga" OR "Javier Ortega Smith" OR "Rocío Monasterio" OR "Kiko Méndez-Monasterio"'},
+            {
+                "lang": "en",
+                "country": "US",
+                "q": '"Vox party" OR "Santiago Abascal" OR "Ignacio Garriga" OR "Javier Ortega Smith" OR "Rocío Monasterio" OR "Kiko Méndez-Monasterio"',
+            },
         ],
     },
 ]
@@ -342,8 +361,9 @@ def purge_blocked_from_state(state: dict, blocklist: dict) -> int:
 # ── Core Logic ─────────────────────────────────────────────────────────────
 
 
-def fetch_feed(feed: dict, category_seen_urls: set, timestamp: str,
-               blocklist: dict | None = None) -> list[dict]:
+def fetch_feed(
+    feed: dict, category_seen_urls: set, timestamp: str, blocklist: dict | None = None
+) -> list[dict]:
     queries = feed.get("queries", [feed.get("q", "")])
     window = feed.get("window", "7d")
     cutoff = datetime.now(timezone.utc) - timedelta(days=30)
@@ -352,13 +372,17 @@ def fetch_feed(feed: dict, category_seen_urls: set, timestamp: str,
     blocked_count = 0
 
     # Resolve language variants: explicit list, or synthesize from flat lang/country
-    variants = feed.get("variants") or [{"lang": feed["lang"], "country": feed["country"]}]
+    variants = feed.get("variants") or [
+        {"lang": feed["lang"], "country": feed["country"]}
+    ]
 
     for variant in variants:
         lang = variant["lang"]
         country = variant["country"]
         # Per-variant query override, falling back to feed-level queries
-        variant_queries = variant.get("queries") or ([variant["q"]] if "q" in variant else queries)
+        variant_queries = variant.get("queries") or (
+            [variant["q"]] if "q" in variant else queries
+        )
         for q in variant_queries:
             url = build_gnews_url(q, lang, country, window)
             try:
@@ -496,7 +520,9 @@ def main():
     blocklist = load_blocklist()
 
     if args.show_blocklist:
-        if not any([blocklist["urls"], blocklist["sources"], blocklist["title_patterns"]]):
+        if not any(
+            [blocklist["urls"], blocklist["sources"], blocklist["title_patterns"]]
+        ):
             print("Blocklist is empty.")
         else:
             if blocklist["urls"]:
@@ -510,7 +536,7 @@ def main():
             if blocklist["title_patterns"]:
                 print(f"Blocked title patterns ({len(blocklist['title_patterns'])}):")
                 for p in blocklist["title_patterns"]:
-                    print(f"  • \"{p}\"")
+                    print(f'  • "{p}"')
         return
 
     if args.block:
@@ -526,7 +552,7 @@ def main():
     if args.block_pattern:
         blocklist["title_patterns"].append(args.block_pattern.lower())
         save_blocklist(blocklist)
-        print(f"✓ Blocked title pattern: \"{args.block_pattern}\"")
+        print(f'✓ Blocked title pattern: "{args.block_pattern}"')
 
     # If any block command was given, purge from state + regenerate text files
     if args.block or args.block_source or args.block_pattern:
@@ -585,7 +611,9 @@ def main():
         if purged:
             with open(STATE_FILE, "w", encoding="utf-8") as f:
                 json.dump(state, f, indent=2, ensure_ascii=False)
-            print(f"  ✗ Purged {purged} blocklisted item(s) from state.", file=sys.stderr)
+            print(
+                f"  ✗ Purged {purged} blocklisted item(s) from state.", file=sys.stderr
+            )
         timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         os.makedirs(args.outdir, exist_ok=True)
         for feed in FEEDS:

@@ -1,15 +1,22 @@
 #!/usr/bin/env python3
 """
-Article Scraper — enriches monitor data with article text extracts.
+Article Scraper — Enriches monitor data with article text extracts.
 
-Reads monitor_state.json, resolves Google News redirect URLs, extracts
-article text via trafilatura, and writes dated enriched JSON files.
+Reads the RSS metadata from monitor_state.json, resolves Google News redirect
+URLs, extracts the first 300 words of article text via trafilatura, and writes dated enriched
+JSON files for the downstream AI Reporter.
 
-Usage:
-    python article_scraper.py                    # last 24 hours
-    python article_scraper.py --hours 48         # wider window
-    python article_scraper.py --category frp     # single category
+Usage Examples:
+  python article_scraper.py                    # Scrape articles from the last 24 hours
+  python article_scraper.py --hours 48         # Expand window to the last 48 hours
+  python article_scraper.py --category frp     # Scrape only a single specific category
+
+Flags:
+  --hours INT         Look-back window in hours to scrape (default: 24)
+  --outdir DIR        Output directory for the enriched JSON files (default: enriched/)
+  --category ID       Scrape only a specific feed ID (e.g., 'frp', 'maga')
 """
+
 import argparse
 import json
 import os
@@ -54,7 +61,7 @@ SKIP_DOMAINS = {
     "tiktok.com",
     "www.youtube.com",
     "youtube.com",
-    "www.msn.com",        # aggregator shell pages
+    "www.msn.com",  # aggregator shell pages
     "msn.com",
 }
 
@@ -66,6 +73,7 @@ REQUEST_DELAY = 1.0
 
 
 # ── Helpers ────────────────────────────────────────────────────────────────
+
 
 def get_sort_time(item: dict) -> datetime:
     date_str = item.get("date", "")
@@ -83,6 +91,7 @@ def get_sort_time(item: dict) -> datetime:
 
 # ── Step 1: Resolve Google News redirect URLs ─────────────────────────────
 
+
 def resolve_url(google_url: str) -> tuple[str | None, str]:
     """Decode a Google News URL. Returns (resolved_url, status)."""
     try:
@@ -95,6 +104,7 @@ def resolve_url(google_url: str) -> tuple[str | None, str]:
 
 
 # ── Step 2: Extract article text ──────────────────────────────────────────
+
 
 def extract_article(url: str) -> tuple[str | None, int, str]:
     """Fetch and extract article text. Returns (extract, word_count, status)."""
@@ -123,19 +133,17 @@ def extract_article(url: str) -> tuple[str | None, int, str]:
 
 # ── Main ──────────────────────────────────────────────────────────────────
 
+
 def main():
     parser = argparse.ArgumentParser(description="Article Scraper")
     parser.add_argument(
-        "--hours", type=int, default=24,
-        help="Look-back window in hours (default: 24)"
+        "--hours", type=int, default=24, help="Look-back window in hours (default: 24)"
     )
     parser.add_argument(
-        "--outdir", default="enriched",
-        help="Output directory (default: enriched/)"
+        "--outdir", default="enriched", help="Output directory (default: enriched/)"
     )
     parser.add_argument(
-        "--category", default=None,
-        help="Scrape only a specific category (e.g., 'frp')"
+        "--category", default=None, help="Scrape only a specific category (e.g., 'frp')"
     )
     args = parser.parse_args()
 
@@ -168,14 +176,24 @@ def main():
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     cat_count = len(set(a["_category"] for a in articles))
 
-    print(f"[{timestamp}] Scraping {len(articles)} articles across {cat_count} categories")
-    print(f"  Look-back: {args.hours}h | Output: {args.outdir}/enriched_{file_slug}.json")
+    print(
+        f"[{timestamp}] Scraping {len(articles)} articles across {cat_count} categories"
+    )
+    print(
+        f"  Look-back: {args.hours}h | Output: {args.outdir}/enriched_{file_slug}.json"
+    )
     print()
 
     # ── Process each article ──────────────────────────────────────────────
     enriched = []
-    stats = {"total": len(articles), "resolved": 0, "extracted": 0,
-             "skipped": 0, "failed_resolve": 0, "failed_extract": 0}
+    stats = {
+        "total": len(articles),
+        "resolved": 0,
+        "extracted": 0,
+        "skipped": 0,
+        "failed_resolve": 0,
+        "failed_extract": 0,
+    }
     ref_num = 0
 
     for i, item in enumerate(articles, 1):
@@ -261,8 +279,12 @@ def main():
     print("SCRAPER SUMMARY")
     print("=" * 60)
     print(f"  Total articles:    {total}")
-    print(f"  URLs resolved:     {stats['resolved']}/{total} ({100*stats['resolved']//total}%)")
-    print(f"  Text extracted:    {stats['extracted']}/{total} ({100*stats['extracted']//total}%)")
+    print(
+        f"  URLs resolved:     {stats['resolved']}/{total} ({100 * stats['resolved'] // total}%)"
+    )
+    print(
+        f"  Text extracted:    {stats['extracted']}/{total} ({100 * stats['extracted'] // total}%)"
+    )
     print(f"  Domains skipped:   {stats['skipped']}")
     print(f"  Failed (resolve):  {stats['failed_resolve']}")
     print(f"  Failed (extract):  {stats['failed_extract']}")
