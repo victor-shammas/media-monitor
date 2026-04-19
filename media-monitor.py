@@ -3,6 +3,34 @@
 Transatlantic Right-Wing Media Monitor — Multi-File Edition
 Maintains a database of seen articles, regenerates cleanly grouped individual
 text files for each category, and ensures strict chronological sorting.
+
+Usage:
+  python media-monitor.py                              → fetch all feeds (default)
+  python media-monitor.py --feeds frp maga             → fetch specific feeds only
+  python media-monitor.py -d output                    → write text files to output/
+  python media-monitor.py --block <url>                → block a URL and purge from state
+  python media-monitor.py --block-source "Daily Mail"  → block all items from a source
+  python media-monitor.py --block-pattern "horoscope"  → block titles containing a phrase
+  python media-monitor.py --show-blocklist             → display current blocklist
+  python media-monitor.py --unblock "Daily Mail"       → remove an entry from the blocklist
+
+Flags:
+  -d, --outdir DIR          Output directory for per-category text files (default: feeds/)
+  --feeds [ID ...]          Only run these feed IDs (e.g. frp, maga, sd, afd, nodes)
+
+  --block URL               Block a single article by URL; removes it from
+                            monitor_state.json and prevents re-ingestion on future runs
+  --block-source SOURCE     Block all articles from a named source (case-insensitive);
+                            purges existing matches from state immediately
+  --block-pattern PHRASE    Block any article whose title contains this phrase
+                            (case-insensitive); purges existing matches from state
+  --unblock ENTRY           Remove a URL, source, or pattern from the blocklist
+  --show-blocklist          Print the current blocklist and exit
+
+Data files:
+  monitor_state.json        Persistent article database (one key per feed category)
+  blocklist.json            Blocked URLs, sources, and title patterns (created on first use)
+  feeds/*.txt               Human-readable per-category article listings (regenerated each run)
 """
 
 import argparse
