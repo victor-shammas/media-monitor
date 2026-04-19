@@ -72,6 +72,14 @@ FEEDS = [
         "country": "GB",
     },
     {
+        "id": "afd",
+        "filename": "germany.txt",
+        "name": "🇩🇪 Alternative für Deutschland",
+        "q": '"Alternative fur Deutschland" OR AfD OR "Tino Chrupalla" OR "Alice Weidel"',
+        "lang": "de",
+        "country": "DE",
+    },
+    {
         "id": "general",
         "filename": "general.txt",
         "name": "🌍 General Right-Wing News",

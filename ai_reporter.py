@@ -101,6 +101,7 @@ CATEGORY_LABELS = {
     "rn": "🇫🇷 Rassemblement National",
     "fdi": "🇮🇹 Fratelli d'Italia / Lega",
     "reform": "🇬🇧 Reform UK",
+    "afd": "🇩🇪 Alternative für Deutschland",
     "general": "🌍 General Right-Wing",
     "nodes": "🕸️ Transnational Networks",
     "hungary": "🇭🇺 Hungary (Fidesz / Tisza)",
