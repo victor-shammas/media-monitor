@@ -20,6 +20,7 @@ from urllib.request import Request, urlopen
 # ── Configuration ──────────────────────────────────────────────────────────
 
 STATE_FILE = "monitor_state.json"
+BLOCKLIST_FILE = "blocklist.json"
 MAX_NEW_PER_RUN = 30  # The universal limit of new articles to add per run per category
 
 FEEDS = [
@@ -248,15 +249,77 @@ def get_sort_time(item: dict) -> datetime:
             return datetime.min.replace(tzinfo=timezone.utc)
 
 
+# ── Blocklist ─────────────────────────────────────────────────────────────
+
+
+def load_blocklist() -> dict:
+    """Load the blocklist file. Structure:
+    {
+      "urls": ["https://..."],
+      "sources": ["SomeSpamSite"],
+      "title_patterns": ["unwanted phrase"]
+    }
+    """
+    if os.path.exists(BLOCKLIST_FILE):
+        try:
+            with open(BLOCKLIST_FILE, "r", encoding="utf-8") as f:
+                data = json.load(f)
+            # Normalize: lowercase sources and patterns for case-insensitive matching
+            return {
+                "urls": set(data.get("urls", [])),
+                "sources": {s.lower() for s in data.get("sources", [])},
+                "title_patterns": [p.lower() for p in data.get("title_patterns", [])],
+            }
+        except Exception:
+            pass
+    return {"urls": set(), "sources": set(), "title_patterns": []}
+
+
+def save_blocklist(blocklist: dict) -> None:
+    """Persist the blocklist to disk."""
+    data = {
+        "urls": sorted(blocklist["urls"]),
+        "sources": sorted(blocklist["sources"]),
+        "title_patterns": sorted(blocklist["title_patterns"]),
+    }
+    with open(BLOCKLIST_FILE, "w", encoding="utf-8") as f:
+        json.dump(data, f, indent=2, ensure_ascii=False)
+
+
+def is_blocked(item: dict, blocklist: dict) -> bool:
+    """Check whether an item matches any blocklist rule."""
+    if item.get("url", "") in blocklist["urls"]:
+        return True
+    if item.get("source", "").lower() in blocklist["sources"]:
+        return True
+    title_lower = item.get("title", "").lower()
+    for pattern in blocklist["title_patterns"]:
+        if pattern in title_lower:
+            return True
+    return False
+
+
+def purge_blocked_from_state(state: dict, blocklist: dict) -> int:
+    """Remove any blocked items already in state. Returns count removed."""
+    removed = 0
+    for fid in state:
+        before = len(state[fid])
+        state[fid] = [item for item in state[fid] if not is_blocked(item, blocklist)]
+        removed += before - len(state[fid])
+    return removed
+
+
 # ── Core Logic ─────────────────────────────────────────────────────────────
 
 
-def fetch_feed(feed: dict, category_seen_urls: set, timestamp: str) -> list[dict]:
+def fetch_feed(feed: dict, category_seen_urls: set, timestamp: str,
+               blocklist: dict | None = None) -> list[dict]:
     queries = feed.get("queries", [feed.get("q", "")])
     window = feed.get("window", "7d")
     cutoff = datetime.now(timezone.utc) - timedelta(days=30)
     new_items = []
     errors = []
+    blocked_count = 0
 
     # Resolve language variants: explicit list, or synthesize from flat lang/country
     variants = feed.get("variants") or [{"lang": feed["lang"], "country": feed["country"]}]
@@ -286,19 +349,26 @@ def fetch_feed(feed: dict, category_seen_urls: set, timestamp: str) -> list[dict
                     summary = strip_html(item.get("description", ""))
                     summary = strip_trailing_source(summary, source)
 
-                    new_items.append(
-                        {
-                            "title": clean_title(item.get("title", "")),
-                            "url": link,
-                            "source": source,
-                            "date": item.get("pubDate", ""),
-                            "added_at": timestamp,
-                            "summary": summary,
-                        }
-                    )
+                    candidate = {
+                        "title": clean_title(item.get("title", "")),
+                        "url": link,
+                        "source": source,
+                        "date": item.get("pubDate", ""),
+                        "added_at": timestamp,
+                        "summary": summary,
+                    }
+
+                    # Check against blocklist before accepting
+                    if blocklist and is_blocked(candidate, blocklist):
+                        blocked_count += 1
+                        continue
+
+                    new_items.append(candidate)
             except Exception as e:
                 errors.append(f"[{lang}] {q[:40]}…: {e}")
 
+    if blocked_count:
+        print(f"    ✗ Blocked {blocked_count} item(s) via blocklist", file=sys.stderr)
     if errors:
         for err in errors[:3]:
             print(f"  ⚠ {err}", file=sys.stderr)
@@ -357,7 +427,120 @@ def main():
     parser.add_argument(
         "--feeds", nargs="*", default=None, help="Specific feeds to run"
     )
+
+    # ── Blocklist management ──────────────────────────────────────────────
+    block_group = parser.add_argument_group("blocklist management")
+    block_group.add_argument(
+        "--block",
+        metavar="URL",
+        help="Block a URL: removes it from state and prevents future inclusion",
+    )
+    block_group.add_argument(
+        "--block-source",
+        metavar="SOURCE",
+        help="Block all articles from a source (e.g. 'Daily Express')",
+    )
+    block_group.add_argument(
+        "--block-pattern",
+        metavar="PHRASE",
+        help="Block articles whose title contains this phrase (case-insensitive)",
+    )
+    block_group.add_argument(
+        "--unblock",
+        metavar="ENTRY",
+        help="Remove a URL, source, or pattern from the blocklist",
+    )
+    block_group.add_argument(
+        "--show-blocklist",
+        action="store_true",
+        help="Display the current blocklist and exit",
+    )
     args = parser.parse_args()
+
+    # ── Handle blocklist commands (run-and-exit) ──────────────────────────
+    blocklist = load_blocklist()
+
+    if args.show_blocklist:
+        if not any([blocklist["urls"], blocklist["sources"], blocklist["title_patterns"]]):
+            print("Blocklist is empty.")
+        else:
+            if blocklist["urls"]:
+                print(f"Blocked URLs ({len(blocklist['urls'])}):")
+                for u in sorted(blocklist["urls"]):
+                    print(f"  • {u}")
+            if blocklist["sources"]:
+                print(f"Blocked sources ({len(blocklist['sources'])}):")
+                for s in sorted(blocklist["sources"]):
+                    print(f"  • {s}")
+            if blocklist["title_patterns"]:
+                print(f"Blocked title patterns ({len(blocklist['title_patterns'])}):")
+                for p in blocklist["title_patterns"]:
+                    print(f"  • \"{p}\"")
+        return
+
+    if args.block:
+        blocklist["urls"].add(args.block)
+        save_blocklist(blocklist)
+        print(f"✓ Blocked URL: {args.block}")
+        # Immediately purge from state if present
+        if os.path.exists(STATE_FILE):
+            with open(STATE_FILE, "r", encoding="utf-8") as f:
+                state = json.load(f)
+            removed = purge_blocked_from_state(state, blocklist)
+            if removed:
+                with open(STATE_FILE, "w", encoding="utf-8") as f:
+                    json.dump(state, f, indent=2, ensure_ascii=False)
+                print(f"  Purged {removed} matching item(s) from state.")
+        return
+
+    if args.block_source:
+        blocklist["sources"].add(args.block_source.lower())
+        save_blocklist(blocklist)
+        print(f"✓ Blocked source: {args.block_source}")
+        if os.path.exists(STATE_FILE):
+            with open(STATE_FILE, "r", encoding="utf-8") as f:
+                state = json.load(f)
+            removed = purge_blocked_from_state(state, blocklist)
+            if removed:
+                with open(STATE_FILE, "w", encoding="utf-8") as f:
+                    json.dump(state, f, indent=2, ensure_ascii=False)
+                print(f"  Purged {removed} matching item(s) from state.")
+        return
+
+    if args.block_pattern:
+        blocklist["title_patterns"].append(args.block_pattern.lower())
+        save_blocklist(blocklist)
+        print(f"✓ Blocked title pattern: \"{args.block_pattern}\"")
+        if os.path.exists(STATE_FILE):
+            with open(STATE_FILE, "r", encoding="utf-8") as f:
+                state = json.load(f)
+            removed = purge_blocked_from_state(state, blocklist)
+            if removed:
+                with open(STATE_FILE, "w", encoding="utf-8") as f:
+                    json.dump(state, f, indent=2, ensure_ascii=False)
+                print(f"  Purged {removed} matching item(s) from state.")
+        return
+
+    if args.unblock:
+        entry = args.unblock
+        found = False
+        if entry in blocklist["urls"]:
+            blocklist["urls"].discard(entry)
+            found = True
+        if entry.lower() in blocklist["sources"]:
+            blocklist["sources"].discard(entry.lower())
+            found = True
+        if entry.lower() in blocklist["title_patterns"]:
+            blocklist["title_patterns"].remove(entry.lower())
+            found = True
+        if found:
+            save_blocklist(blocklist)
+            print(f"✓ Unblocked: {entry}")
+        else:
+            print(f"Not found in blocklist: {entry}")
+        return
+
+    # ── Normal monitor run ────────────────────────────────────────────────
 
     # Create output directory if it doesn't exist
     os.makedirs(args.outdir, exist_ok=True)
@@ -381,6 +564,11 @@ def main():
         if feed["id"] not in state:
             state[feed["id"]] = []
 
+    # Purge any previously-collected items that are now blocklisted
+    purged = purge_blocked_from_state(state, blocklist)
+    if purged:
+        print(f"  ✗ Purged {purged} blocklisted item(s) from state.", file=sys.stderr)
+
     print(
         f"[{timestamp}] Fetching {len(active_feeds)} feeds for new articles…",
         file=sys.stderr,
@@ -394,7 +582,7 @@ def main():
         category_seen_urls = {item["url"] for item in state.get(fid, [])}
 
         # Pass that private memory to the fetcher
-        new_items = fetch_feed(feed, category_seen_urls, timestamp)
+        new_items = fetch_feed(feed, category_seen_urls, timestamp, blocklist)
 
         if new_items:
             print(f"    + Found {len(new_items)} new articles!", file=sys.stderr)
