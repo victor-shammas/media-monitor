@@ -765,6 +765,9 @@ def main():
         output_path = os.path.join(args.outdir, f"{report_slug}_report.md")
         with open(output_path, "w", encoding="utf-8") as f:
             f.write(f"# Intelligence Brief — {today_str}\n\n")
+            f.write("> **AI-GENERATED CONTENT — NOT VERIFIED.** "
+                    "This report was produced automatically by a large language model. "
+                    "Claims, interpretations, and citations may contain errors.\n\n")
             f.write(f"*{article_count} articles across {category_count} categories")
             if using_enriched:
                 f.write(f" (enriched)")
