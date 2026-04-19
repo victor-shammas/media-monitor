@@ -162,7 +162,7 @@ def load_today_and_recent_urls(
     today_articles = load_enriched_file(today_path)
 
     # Collect seen URLs from today + previous days covered by the lookback window
-    days_to_check = (hours + 23) // 24  # ceiling division
+    days_to_check = (hours + 23) // 24 + 1  # +1 because the window always straddles midnight
     all_seen_urls: set[str] = set()
 
     now = datetime.now()

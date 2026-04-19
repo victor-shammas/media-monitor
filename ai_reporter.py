@@ -280,7 +280,7 @@ def load_enriched(enriched_dir: str, hours: int = 24) -> list[dict] | None:
     Returns a merged, deduplicated list of articles or None.
     """
     now = datetime.now()
-    days_needed = (hours + 23) // 24  # ceiling division
+    days_needed = (hours + 23) // 24 + 1  # +1 because the window always straddles midnight
     all_articles: list[dict] = []
     seen_titles: set[str] = set()
     files_loaded = 0
