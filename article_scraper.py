@@ -6,15 +6,19 @@ Reads the RSS metadata from monitor_state.json, resolves Google News redirect
 URLs, extracts the first 300 words of article text via trafilatura, and writes dated enriched
 JSON files for the downstream AI Reporter.
 
+Designed to be run multiple times per day. Each run accumulates into a single
+daily file (enriched_YYYY-MM-DD.json), merging new articles without duplicates.
+Already-enriched articles are skipped automatically.
+
 Usage Examples:
-  python article_scraper.py                    # Scrape articles from the last 24 hours
-  python article_scraper.py --hours 48         # Expand window to the last 48 hours
-  python article_scraper.py --category frp     # Scrape only a single specific category
+    python article_scraper.py              # Scrape articles from the last 24 hours
+    python article_scraper.py --hours 48   # Expand window to the last 48 hours
+    python article_scraper.py --category frp   # Scrape only a single specific category
 
 Flags:
-  --hours INT         Look-back window in hours to scrape (default: 24)
-  --outdir DIR        Output directory for the enriched JSON files (default: enriched/)
-  --category ID       Scrape only a specific feed ID (e.g., 'frp', 'maga')
+    --hours INT       Look-back window in hours to scrape (default: 24)
+    --outdir DIR      Output directory for the enriched JSON files (default: enriched/)
+    --category ID     Scrape only a specific feed ID (e.g., 'frp', 'maga')
 """
 
 import argparse
@@ -119,7 +123,6 @@ def extract_article(url: str) -> tuple[str | None, int, str]:
             include_tables=False,
             no_fallback=False,
         )
-
         if not text or len(text.strip()) < 50:
             return text, len(text.split()) if text else 0, "too_short"
 
@@ -129,6 +132,25 @@ def extract_article(url: str) -> tuple[str | None, int, str]:
 
     except Exception as e:
         return None, 0, f"error: {e}"
+
+
+# ── Daily file management ────────────────────────────────────────────────
+
+
+def load_existing_enriched(path: str) -> tuple[list[dict], set[str]]:
+    """Load an existing enriched file. Returns (articles_list, set_of_google_urls)."""
+    if not os.path.exists(path):
+        return [], set()
+
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            data = json.load(f)
+        articles = data.get("articles", [])
+        seen_urls = {a.get("google_url", "") for a in articles if a.get("google_url")}
+        return articles, seen_urls
+    except Exception as e:
+        print(f"  ⚠ Failed to load existing enriched file: {e}")
+        return [], set()
 
 
 # ── Main ──────────────────────────────────────────────────────────────────
@@ -157,46 +179,75 @@ def main():
     cutoff = datetime.now(timezone.utc) - timedelta(hours=args.hours)
     os.makedirs(args.outdir, exist_ok=True)
 
-    # Collect articles to scrape
-    articles = []
+    # ── Load existing enriched file for today (if any) ────────────────────
+    date_slug = datetime.now().strftime("%Y-%m-%d")
+    outpath = os.path.join(args.outdir, f"enriched_{date_slug}.json")
+
+    existing_articles, already_scraped_urls = load_existing_enriched(outpath)
+
+    if existing_articles:
+        print(
+            f"  Loaded existing enriched file with {len(existing_articles)} articles "
+            f"({len(already_scraped_urls)} unique URLs)"
+        )
+
+    # ── Collect candidate articles from state ─────────────────────────────
+    candidates = []
     for cat_id, items in state.items():
         if args.category and cat_id != args.category:
             continue
         for item in items:
             if get_sort_time(item) >= cutoff:
-                articles.append({**item, "_category": cat_id})
+                google_url = item.get("url", "")
+                # Skip articles we've already enriched
+                if google_url and google_url in already_scraped_urls:
+                    continue
+                candidates.append({**item, "_category": cat_id})
 
-    if not articles:
-        print(f"No articles found in the last {args.hours} hours.")
+    timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+
+    if not candidates:
+        total_for_day = len(existing_articles)
+        print(
+            f"[{timestamp}] No new articles to scrape. "
+            f"Enriched file already has {total_for_day} articles."
+        )
         sys.exit(0)
 
-    date_slug = datetime.now().strftime("%Y-%m-%d")
-    time_slug = datetime.now().strftime("%H%M")
-    file_slug = f"{date_slug}_{time_slug}"
-    timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    cat_count = len(set(a["_category"] for a in articles))
-
+    cat_count = len(set(a["_category"] for a in candidates))
     print(
-        f"[{timestamp}] Scraping {len(articles)} articles across {cat_count} categories"
+        f"[{timestamp}] Scraping {len(candidates)} new articles across {cat_count} categories"
     )
     print(
-        f"  Look-back: {args.hours}h | Output: {args.outdir}/enriched_{file_slug}.json"
+        f"  Look-back: {args.hours}h | Output: {outpath}"
     )
+    if existing_articles:
+        print(
+            f"  Merging with {len(existing_articles)} previously enriched articles"
+        )
     print()
 
-    # ── Process each article ──────────────────────────────────────────────
-    enriched = []
+    # ── Determine starting ref number ─────────────────────────────────────
+    # Continue numbering from where the existing file left off
+    if existing_articles:
+        max_existing_ref = max(a.get("ref", 0) for a in existing_articles)
+    else:
+        max_existing_ref = 0
+    ref_num = max_existing_ref
+
+    # ── Process each new article ──────────────────────────────────────────
+
+    new_articles = []
     stats = {
-        "total": len(articles),
+        "total": len(candidates),
         "resolved": 0,
         "extracted": 0,
         "skipped": 0,
         "failed_resolve": 0,
         "failed_extract": 0,
     }
-    ref_num = 0
 
-    for i, item in enumerate(articles, 1):
+    for i, item in enumerate(candidates, 1):
         ref_num += 1
         cat_id = item["_category"]
         cat_label = CATEGORY_LABELS.get(cat_id, cat_id)
@@ -218,7 +269,7 @@ def main():
         }
 
         # Progress indicator
-        progress = f"[{i}/{len(articles)}]"
+        progress = f"[{i}/{len(candidates)}]"
         print(f"  {progress} {cat_label} | {source} | {title[:55]}...")
 
         # Step 1: Resolve URL
@@ -227,8 +278,8 @@ def main():
         if resolve_status != "ok" or not resolved_url:
             record["extract_status"] = f"resolve_{resolve_status}"
             stats["failed_resolve"] += 1
-            print(f"         ✗ Redirect failed: {resolve_status}")
-            enriched.append(record)
+            print(f"      ✗ Redirect failed: {resolve_status}")
+            new_articles.append(record)
             continue
 
         record["resolved_url"] = resolved_url
@@ -239,55 +290,64 @@ def main():
         if domain in SKIP_DOMAINS:
             record["extract_status"] = "skipped_domain"
             stats["skipped"] += 1
-            print(f"         ⊘ Skipped ({domain})")
-            enriched.append(record)
+            print(f"      ⊘ Skipped ({domain})")
+            new_articles.append(record)
             continue
 
         # Step 2: Extract article text
         extract, word_count, extract_status = extract_article(resolved_url)
-
         record["extract"] = extract
         record["word_count"] = word_count
         record["extract_status"] = extract_status
 
         if extract_status == "ok":
             stats["extracted"] += 1
-            print(f"         ✓ {word_count} words ({domain})")
+            print(f"      ✓ {word_count} words ({domain})")
         else:
             stats["failed_extract"] += 1
-            print(f"         ✗ {extract_status} ({domain})")
+            print(f"      ✗ {extract_status} ({domain})")
 
-        enriched.append(record)
+        new_articles.append(record)
         time.sleep(REQUEST_DELAY)
 
-    # ── Write output ──────────────────────────────────────────────────────
+    # ── Merge and write output ────────────────────────────────────────────
+
+    merged_articles = existing_articles + new_articles
+
     output = {
-        "generated_at": timestamp,
-        "look_back_hours": args.hours,
-        "stats": stats,
-        "articles": enriched,
+        "date": date_slug,
+        "last_updated": timestamp,
+        "stats": {
+            "total_articles": len(merged_articles),
+            "this_run": stats,
+        },
+        "articles": merged_articles,
     }
 
-    outpath = os.path.join(args.outdir, f"enriched_{file_slug}.json")
     with open(outpath, "w", encoding="utf-8") as f:
         json.dump(output, f, indent=2, ensure_ascii=False)
 
     # ── Summary ───────────────────────────────────────────────────────────
-    total = stats["total"]
+
+    total_new = stats["total"]
     print()
     print("=" * 60)
     print("SCRAPER SUMMARY")
     print("=" * 60)
-    print(f"  Total articles:    {total}")
+    print(f"  New articles processed: {total_new}")
     print(
-        f"  URLs resolved:     {stats['resolved']}/{total} ({100 * stats['resolved'] // total}%)"
+        f"  URLs resolved:   {stats['resolved']}/{total_new} ({100 * stats['resolved'] // max(total_new, 1)}%)"
     )
     print(
-        f"  Text extracted:    {stats['extracted']}/{total} ({100 * stats['extracted'] // total}%)"
+        f"  Text extracted:  {stats['extracted']}/{total_new} ({100 * stats['extracted'] // max(total_new, 1)}%)"
     )
-    print(f"  Domains skipped:   {stats['skipped']}")
-    print(f"  Failed (resolve):  {stats['failed_resolve']}")
+    print(f"  Domains skipped: {stats['skipped']}")
+    print(f"  Failed (resolve): {stats['failed_resolve']}")
     print(f"  Failed (extract):  {stats['failed_extract']}")
+    print(f"  ─────────────────────────────")
+    print(f"  Total in enriched file: {len(merged_articles)}")
+    if existing_articles:
+        print(f"    (was {len(existing_articles)}, added {len(new_articles)})")
     print(f"\n  ✓ Saved → {outpath}")
     print()
 
