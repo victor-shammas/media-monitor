@@ -11,12 +11,14 @@ Usage:
   python media-monitor.py --block <url>                → block a URL and purge from state
   python media-monitor.py --block-source "Daily Mail"  → block all items from a source
   python media-monitor.py --block-pattern "horoscope"  → block titles containing a phrase
+  python media-monitor.py --rebuild                     → regenerate text files from state (no fetch)
   python media-monitor.py --show-blocklist             → display current blocklist
   python media-monitor.py --unblock "Daily Mail"       → remove an entry from the blocklist
 
 Flags:
   -d, --outdir DIR          Output directory for per-category text files (default: feeds/)
   --feeds [ID ...]          Only run these feed IDs (e.g. frp, maga, sd, afd, nodes)
+  --rebuild                 Regenerate all text files from monitor_state.json without fetching
 
   --block URL               Block a single article by URL; removes it from
                             monitor_state.json and prevents re-ingestion on future runs
@@ -455,6 +457,11 @@ def main():
     parser.add_argument(
         "--feeds", nargs="*", default=None, help="Specific feeds to run"
     )
+    parser.add_argument(
+        "--rebuild",
+        action="store_true",
+        help="Regenerate all text files from monitor_state.json without fetching",
+    )
 
     # ── Blocklist management ──────────────────────────────────────────────
     block_group = parser.add_argument_group("blocklist management")
@@ -564,6 +571,33 @@ def main():
             print(f"✓ Unblocked: {entry}")
         else:
             print(f"Not found in blocklist: {entry}")
+        return
+
+    # ── Rebuild: regenerate text files from state without fetching ──────
+    if args.rebuild:
+        if not os.path.exists(STATE_FILE):
+            print(f"Error: {STATE_FILE} not found.", file=sys.stderr)
+            sys.exit(1)
+        with open(STATE_FILE, "r", encoding="utf-8") as f:
+            state = json.load(f)
+        # Purge any blocklisted items before writing
+        purged = purge_blocked_from_state(state, blocklist)
+        if purged:
+            with open(STATE_FILE, "w", encoding="utf-8") as f:
+                json.dump(state, f, indent=2, ensure_ascii=False)
+            print(f"  ✗ Purged {purged} blocklisted item(s) from state.", file=sys.stderr)
+        timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        os.makedirs(args.outdir, exist_ok=True)
+        for feed in FEEDS:
+            fid = feed["id"]
+            items = state.get(fid, [])
+            text = format_single_feed(feed, items, timestamp)
+            filename = feed.get("filename", f"{fid}.txt")
+            filepath = os.path.join(args.outdir, filename)
+            with open(filepath, "w", encoding="utf-8") as f:
+                f.write(text + "\n")
+            print(f"  ✓ Saved {filename} ({len(items)} items)", file=sys.stderr)
+        print(f"\nRebuilt {len(FEEDS)} text file(s) in {args.outdir}/", file=sys.stderr)
         return
 
     # ── Normal monitor run ────────────────────────────────────────────────
