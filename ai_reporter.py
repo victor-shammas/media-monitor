@@ -25,7 +25,6 @@ from email.mime.text import MIMEText
 
 try:
     import markdown as md_lib
-    from google import genai
     from tenacity import (
         retry,
         retry_if_exception_type,
@@ -33,31 +32,136 @@ try:
         wait_exponential,
     )
 except ImportError:
-    print("Please install dependencies: pip install google-genai tenacity markdown")
+    print("Please install dependencies: pip install tenacity markdown")
     sys.exit(1)
+
+# Optional providers — imported on demand
+genai = None
+anthropic = None
+
+def _ensure_gemini():
+    global genai
+    if genai is None:
+        from google import genai as _genai
+        genai = _genai
+
+def _ensure_anthropic():
+    global anthropic
+    if anthropic is None:
+        import anthropic as _anthropic
+        anthropic = _anthropic
 
 STATE_FILE = "monitor_state.json"
 
 
-# ── Retry Logic ────────────────────────────────────────────────────────────
+# ── Provider Backends ──────────────────────────────────────────────────────
 
 @retry(
-    stop=stop_after_attempt(5),
-    wait=wait_exponential(multiplier=1, min=4, max=60),
+    stop=stop_after_attempt(3),
+    wait=wait_exponential(multiplier=1, min=4, max=30),
     retry=retry_if_exception_type(Exception),
-    before_sleep=lambda retry_state: print(
-        f"  ⚠ Model busy (503). Retrying in {retry_state.next_action.sleep}s... "
-        f"(Attempt {retry_state.attempt_number})"
+    before_sleep=lambda rs: print(
+        f"    ⚠ Retrying in {rs.next_action.sleep:.0f}s... "
+        f"(attempt {rs.attempt_number})"
     ),
 )
-def generate_ai_content(client, prompt, model="gemini-2.5-flash"):
-    return client.models.generate_content(model=model, contents=prompt)
+def _call_gemini(prompt: str, model: str) -> str:
+    _ensure_gemini()
+    client = genai.Client()
+    response = client.models.generate_content(model=model, contents=prompt)
+    return response.text
 
+
+@retry(
+    stop=stop_after_attempt(3),
+    wait=wait_exponential(multiplier=1, min=4, max=30),
+    retry=retry_if_exception_type(Exception),
+    before_sleep=lambda rs: print(
+        f"    ⚠ Retrying in {rs.next_action.sleep:.0f}s... "
+        f"(attempt {rs.attempt_number})"
+    ),
+)
+def _call_anthropic(prompt: str, model: str) -> str:
+    _ensure_anthropic()
+    client = anthropic.Anthropic()  # uses ANTHROPIC_API_KEY env var
+    response = client.messages.create(
+        model=model,
+        max_tokens=8192,
+        messages=[{"role": "user", "content": prompt}],
+    )
+    return response.content[0].text
+
+
+# ── Fallback Chain ─────────────────────────────────────────────────────────
+
+PROVIDERS = {
+    "gemini-pro": {
+        "fn": lambda prompt: _call_gemini(prompt, "gemini-2.5-pro"),
+        "label": "Gemini 2.5 Pro",
+        "env_key": "GEMINI_API_KEY",
+    },
+    "claude-sonnet": {
+        "fn": lambda prompt: _call_anthropic(prompt, "claude-sonnet-4-6"),
+        "label": "Claude Sonnet 4.6",
+        "env_key": "ANTHROPIC_API_KEY",
+    },
+    "gemini-flash": {
+        "fn": lambda prompt: _call_gemini(prompt, "gemini-2.5-flash"),
+        "label": "Gemini 2.5 Flash",
+        "env_key": "GEMINI_API_KEY",
+    },
+}
+
+DEFAULT_CHAIN = ["gemini-pro", "claude-sonnet", "gemini-flash"]
 
 MODEL_ALIASES = {
-    "flash": "gemini-2.5-flash",
-    "pro": "gemini-2.5-pro",
+    "flash": "gemini-flash",
+    "pro": "gemini-pro",
+    "claude": "claude-sonnet",
+    "auto": None,  # uses the full fallback chain
 }
+
+
+def generate_with_fallback(prompt: str, chain: list[str] | None = None) -> tuple[str, str]:
+    """Try each provider in the chain until one succeeds.
+    Returns (response_text, provider_label).
+    """
+    if chain is None:
+        chain = DEFAULT_CHAIN
+
+    # Filter to providers whose API key is actually set
+    available = []
+    skipped = []
+    for name in chain:
+        prov = PROVIDERS[name]
+        if os.environ.get(prov["env_key"]):
+            available.append(name)
+        else:
+            skipped.append(f"{prov['label']} (no {prov['env_key']})")
+
+    if skipped:
+        print(f"  ℹ Skipping: {', '.join(skipped)}")
+
+    if not available:
+        print("Error: No API keys set. Need at least one of: GEMINI_API_KEY, ANTHROPIC_API_KEY")
+        sys.exit(1)
+
+    last_error = None
+    for name in available:
+        prov = PROVIDERS[name]
+        print(f"  → Trying {prov['label']}...")
+        try:
+            text = prov["fn"](prompt)
+            print(f"  ✓ Success with {prov['label']}")
+            return text, prov["label"]
+        except Exception as e:
+            last_error = e
+            print(f"  ✗ {prov['label']} failed: {e}")
+            if name != available[-1]:
+                print(f"    Falling back to next provider...")
+
+    print(f"All providers failed. Last error: {last_error}")
+    sys.exit(1)
 
 
 # ── Helpers ────────────────────────────────────────────────────────────────
@@ -296,7 +400,7 @@ def build_prompt(context: str, enriched: bool = False) -> str:
 # ── HTML Template ──────────────────────────────────────────────────────────
 
 def build_html_email(analysis_html: str, today_str: str, article_count: int,
-                     category_count: int) -> str:
+                     category_count: int, provider_label: str = "Gemini") -> str:
     return f"""\
 <!DOCTYPE html>
 <html lang="en">
@@ -341,7 +445,7 @@ def build_html_email(analysis_html: str, today_str: str, article_count: int,
     <td style="padding:24px 40px; border-top:1px solid #e0e0e0; font-size:11px;
                color:#999999; font-family:Helvetica,Arial,sans-serif;">
       Generated automatically by the Transatlantic Right-Wing Media Monitor.
-      Analysis by Gemini&ensp;·&ensp;Data from Google News RSS.
+      Analysis by {provider_label}&ensp;·&ensp;Data from Google News RSS.
     </td>
   </tr>
 
@@ -398,8 +502,9 @@ def main():
         help="Output directory for markdown reports (default: reports/)"
     )
     parser.add_argument(
-        "--model", default="pro", choices=["flash", "pro"],
-        help="Gemini model: 'flash' (fast, good for testing) or 'pro' (best, default)"
+        "--model", default="auto", choices=["auto", "flash", "pro", "claude"],
+        help="Model selection: 'auto' (Pro→Claude→Flash fallback chain, default), "
+             "'pro' (Gemini Pro only), 'claude' (Claude only), 'flash' (Flash only)"
     )
     parser.add_argument(
         "--enriched-dir", default="enriched",
@@ -424,12 +529,22 @@ def main():
     do_markdown = args.markdown
     do_email = args.email or (not args.markdown)
 
-    model_name = MODEL_ALIASES[args.model]
+    # Build the provider chain based on --model
+    model_key = MODEL_ALIASES[args.model]
+    if model_key is None:
+        # "auto" — use the full fallback chain
+        chain = DEFAULT_CHAIN
+    else:
+        # Single provider requested
+        chain = [model_key]
 
-    # In markdown-only mode, only the API key is required
-    api_key = os.environ.get("GEMINI_API_KEY")
-    if not api_key:
-        print("Error: GEMINI_API_KEY not set.")
+    # Check at least one API key exists
+    available_keys = {k for k in ["GEMINI_API_KEY", "ANTHROPIC_API_KEY"]
+                      if os.environ.get(k)}
+    needed_keys = {PROVIDERS[name]["env_key"] for name in chain}
+    if not available_keys & needed_keys:
+        print(f"Error: No API keys set for the requested providers.")
+        print(f"  Need at least one of: {', '.join(sorted(needed_keys))}")
         sys.exit(1)
 
     if do_email:
@@ -445,8 +560,10 @@ def main():
         sys.exit(1)
 
     # ── Choose data source ────────────────────────────────────────────────
-    date_slug = datetime.now().strftime("%Y-%m-%d")
-    today_str = datetime.now().strftime("%B %d, %Y")
+    now = datetime.now()
+    date_slug = now.strftime("%Y-%m-%d")          # for enriched file lookup
+    report_slug = now.strftime("%Y-%m-%d_%H%M")   # for report filenames (no collisions)
+    today_str = now.strftime("%B %d, %Y")
     using_enriched = False
 
     if not args.no_enriched:
@@ -491,30 +608,36 @@ def main():
         mode_label.append("email")
     print(f"Output mode: {' + '.join(mode_label)}")
 
-    print(f"Generating AI Analysis via {model_name} (with automatic retries)...")
-    client = genai.Client()
+    chain_labels = [PROVIDERS[n]["label"] for n in chain
+                    if os.environ.get(PROVIDERS[n]["env_key"])]
+    print(f"Provider chain: {' → '.join(chain_labels)}")
+
+    print(f"Generating AI Analysis...")
 
     try:
-        response = generate_ai_content(client, prompt, model=model_name)
-        analysis_text = sanitize(response.text)
+        analysis_raw, provider_used = generate_with_fallback(prompt, chain)
+        analysis_text = sanitize(analysis_raw)
+    except SystemExit:
+        raise
     except Exception as e:
-        print(f"Final failure after multiple retries: {e}")
+        print(f"Final failure: {e}")
         sys.exit(1)
 
     # Inject markdown links and build sources appendix
     analysis_linked, cited = inject_links_markdown(analysis_text, ref_map)
     sources_appendix = build_sources_appendix_md(ref_map, cited)
 
-    print(f"  ✓ Gemini cited {len(cited)} of {len(ref_map)} references.")
+    print(f"  ✓ {provider_used} cited {len(cited)} of {len(ref_map)} references.")
 
     # ── Markdown output ──────────────────────────────────────────────────
     if do_markdown:
         os.makedirs(args.outdir, exist_ok=True)
 
         # 1. Write the input debug file
-        input_path = os.path.join(args.outdir, f"{date_slug}_input.md")
+        input_path = os.path.join(args.outdir, f"{report_slug}_input.md")
         with open(input_path, "w", encoding="utf-8") as f:
-            f.write(f"# Gemini Input — {today_str}\n\n")
+            f.write(f"# AI Input — {today_str}\n\n")
+            f.write(f"**Provider:** {provider_used}\n")
             f.write(f"**Look-back:** {args.hours} hours\n")
             f.write(f"**Data source:** {'enriched' if using_enriched else 'titles-only'}\n")
             f.write(f"**Articles:** {article_count} across {category_count} categories\n")
@@ -528,7 +651,7 @@ def main():
         print(f"  ✓ Input saved → {input_path}")
 
         # 2. Write the report
-        output_path = os.path.join(args.outdir, f"{date_slug}_report.md")
+        output_path = os.path.join(args.outdir, f"{report_slug}_report.md")
         with open(output_path, "w", encoding="utf-8") as f:
             f.write(f"# Intelligence Brief — {today_str}\n\n")
             f.write(f"*{article_count} articles across {category_count} categories")
@@ -549,7 +672,8 @@ def main():
         analysis_html = style_html(analysis_html)
 
         subject = f"Intelligence Brief: Transatlantic Right-Wing Media ({today_str})"
-        full_html = build_html_email(analysis_html, today_str, article_count, category_count)
+        full_html = build_html_email(analysis_html, today_str, article_count,
+                                     category_count, provider_used)
 
         # Plain-text fallback
         plain_sources = ""
