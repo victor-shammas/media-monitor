@@ -5,8 +5,8 @@ env:
 
 on:
   schedule:
-    # Runs daily at 05:00 UTC — after the monitor, before the reporter
-    - cron: "0 5 * * *"
+    # Runs daily at 03:00 UTC — after the monitor, before the reporter
+    - cron: "0 3 * * *"
   workflow_dispatch:
 
 jobs:
