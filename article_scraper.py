@@ -38,6 +38,8 @@ CATEGORY_LABELS = {
     "general": "🌍 General Right-Wing",
     "nodes": "🕸️ Transnational Networks",
     "hungary": "🇭🇺 Hungary (Fidesz / Tisza)",
+    "poland": "🇵🇱 Prawo i Sprawiedliwość",
+    "spain": "🇪🇸 Vox",
 }
 
 # Domains known to fail — skip to save time

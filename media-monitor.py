@@ -104,9 +104,25 @@ FEEDS = [
         "id": "hungary",
         "filename": "hungary.txt",
         "name": "🇭🇺 Hungary (Fidesz / Tisza)",
-        "q": '"Viktor Orban" OR "Peter Magyar" OR "Fidesz" OR "Tisza"',
-        "lang": "en",
-        "country": "US",
+        "q": '"Viktor Orbán" OR "Magyar Péter" OR "Fidesz" OR "Tisza"',
+        "lang": "hu",
+        "country": "HU",
+    },
+    {
+        "id": "poland",
+        "filename": "poland.txt",
+        "name": "🇵🇱 Prawo i Sprawiedliwość",
+        "q": '"Prawo i Sprawiedliwość" OR "PiS" OR "Jarosław Kaczyński" OR "Mateusz Morawiecki" OR "Karol Nawrocki" OR "Law and Justice"',
+        "lang": "pl",
+        "country": "PL",
+    },
+    {
+        "id": "spain",
+        "filename": "spain.txt",
+        "name": "🇪🇸 Vox",
+        "q": '"Vox" OR "Santiago Abascal" OR "Ignacio Garriga" OR "Javier Ortega Smith" OR "Rocío Monasterio" OR "Kiko Méndez-Monasterio"',
+        "lang": "es",
+        "country": "ES",
     },
 ]
 
