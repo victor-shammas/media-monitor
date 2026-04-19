@@ -30,14 +30,24 @@ jobs:
       - name: Run AI Reporter
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           SENDER_EMAIL: ${{ secrets.SENDER_EMAIL }}
           EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
           RECEIVER_EMAIL: ${{ secrets.RECEIVER_EMAIL }}
         # ──────────────────────────────────────────────────────────
         # TESTING:  use --markdown to write reports/ instead of email
         # PRODUCTION: remove --markdown to send HTML email
+        #
+        #--email sends email
+        #--markdown writes as a markdown report
+        #
+        #--model auto (now the default) — full fallback chain
+        #--model pro — Gemini 2.5 Pro only
+        #--model claude — Claude Sonnet only
+        #--model flash — Gemini 2.5 Flash only
+        # the run line below captures the last 24 hours of news reports, sends both email and writes a markdown file, and follows the fallback chain: Gemini 2.5 Pro → Claude Sonnet → Gemini 2.5 Flash
         # ──────────────────────────────────────────────────────────
-        run: python ai_reporter.py --hours 24 --model flash --email --markdown
+        run: python ai_reporter.py --hours 24 --model auto --email --markdown
 
       - name: Commit reports
         run: |
