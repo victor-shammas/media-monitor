@@ -12,7 +12,9 @@ Modes:
   python ai_reporter.py --markdown --email      → both markdown + email
   python ai_reporter.py --markdown --model flash → fast iteration
 """
+
 import argparse
+import glob
 import json
 import os
 import re
@@ -40,22 +42,28 @@ except ImportError:
 genai = None
 anthropic = None
 
+
 def _ensure_gemini():
     global genai
     if genai is None:
         from google import genai as _genai
+
         genai = _genai
+
 
 def _ensure_anthropic():
     global anthropic
     if anthropic is None:
         import anthropic as _anthropic
+
         anthropic = _anthropic
+
 
 STATE_FILE = "monitor_state.json"
 
 
 # ── Provider Backends ──────────────────────────────────────────────────────
+
 
 @retry(
     stop=stop_after_attempt(3),
@@ -77,19 +85,25 @@ def _is_retryable_anthropic(exception):
     """Only retry on server errors and rate limits, not client errors."""
     _ensure_anthropic()
     # Never retry bad requests, auth errors, etc.
-    if isinstance(exception, (
-        anthropic.BadRequestError,
-        anthropic.AuthenticationError,
-        anthropic.PermissionDeniedError,
-        anthropic.NotFoundError,
-    )):
+    if isinstance(
+        exception,
+        (
+            anthropic.BadRequestError,
+            anthropic.AuthenticationError,
+            anthropic.PermissionDeniedError,
+            anthropic.NotFoundError,
+        ),
+    ):
         return False
     # Retry on overload, rate limits, server errors
-    if isinstance(exception, (
-        anthropic.RateLimitError,
-        anthropic.InternalServerError,
-        anthropic.APIStatusError,
-    )):
+    if isinstance(
+        exception,
+        (
+            anthropic.RateLimitError,
+            anthropic.InternalServerError,
+            anthropic.APIStatusError,
+        ),
+    ):
         return True
     return False
 
@@ -144,7 +158,9 @@ MODEL_ALIASES = {
 }
 
 
-def generate_with_fallback(prompt: str, chain: list[str] | None = None) -> tuple[str, str]:
+def generate_with_fallback(
+    prompt: str, chain: list[str] | None = None
+) -> tuple[str, str]:
     """Try each provider in the chain until one succeeds.
     Returns (response_text, provider_label).
     """
@@ -165,7 +181,9 @@ def generate_with_fallback(prompt: str, chain: list[str] | None = None) -> tuple
         print(f"  ℹ Skipping: {', '.join(skipped)}")
 
     if not available:
-        print("Error: No API keys set. Need at least one of: GEMINI_API_KEY, ANTHROPIC_API_KEY")
+        print(
+            "Error: No API keys set. Need at least one of: GEMINI_API_KEY, ANTHROPIC_API_KEY"
+        )
         sys.exit(1)
 
     last_error = None
@@ -179,7 +197,7 @@ def generate_with_fallback(prompt: str, chain: list[str] | None = None) -> tuple
         except Exception as e:
             # Unwrap tenacity RetryError to show the real cause
             actual = e
-            if hasattr(e, 'last_attempt') and e.last_attempt.failed:
+            if hasattr(e, "last_attempt") and e.last_attempt.failed:
                 actual = e.last_attempt.exception()
             last_error = actual
             print(f"  ✗ {prov['label']} failed: {actual}")
@@ -191,6 +209,7 @@ def generate_with_fallback(prompt: str, chain: list[str] | None = None) -> tuple
 
 
 # ── Helpers ────────────────────────────────────────────────────────────────
+
 
 def get_sort_time(item: dict) -> datetime:
     date_str = item.get("date", "")
@@ -242,30 +261,52 @@ CATEGORY_LABELS = {
 
 # ── Data Sources ──────────────────────────────────────────────────────────
 
-def load_enriched(enriched_dir: str, date_slug: str) -> list[dict] | None:
-    """Try to load today's enriched file. Returns list of articles or None."""
-    path = os.path.join(enriched_dir, f"enriched_{date_slug}.json")
-    if not os.path.exists(path):
-        return None
-    try:
-        with open(path, "r", encoding="utf-8") as f:
-            data = json.load(f)
-        articles = data.get("articles", [])
-        if not articles:
-            return None
-        return articles
-    except Exception as e:
-        print(f"  ⚠ Failed to load enriched file: {e}")
-        return None
+
+def load_enriched(enriched_dir: str, hours: int = 24) -> list[dict] | None:
+    """Load enriched files covering the look-back window.
+
+    For hours <= 24 only today's file is needed; for larger windows
+    we also load previous days (e.g. 48 h → today + yesterday).
+    Returns a merged, deduplicated list of articles or None.
+    """
+    now = datetime.now()
+    days_needed = (hours + 23) // 24  # ceiling division
+    all_articles: list[dict] = []
+    seen_titles: set[str] = set()
+    files_loaded = 0
+
+    for offset in range(days_needed):
+        date_slug = (now - timedelta(days=offset)).strftime("%Y-%m-%d")
+        pattern = os.path.join(enriched_dir, f"enriched_{date_slug}*.json")
+        for path in sorted(glob.glob(pattern)):
+            try:
+                with open(path, "r", encoding="utf-8") as f:
+                    data = json.load(f)
+                for a in data.get("articles", []):
+                    key = a.get("title", "")
+                    if key and key not in seen_titles:
+                        seen_titles.add(key)
+                        all_articles.append(a)
+                files_loaded += 1
+            except Exception as e:
+                print(f"  ⚠ Failed to load enriched file {path}: {e}")
+
+    if files_loaded:
+        print(f"  Loaded {files_loaded} enriched file(s) spanning {days_needed} day(s)")
+    return all_articles if all_articles else None
 
 
-def compile_from_enriched(articles: list[dict]) -> tuple[str, dict, int, int]:
+def compile_from_enriched(
+    articles: list[dict], cutoff: datetime
+) -> tuple[str, dict, int, int]:
     """Build prompt context from enriched data (titles + extracts).
+    Only includes articles within the look-back window.
     Returns (context_str, reference_map, article_count, category_count).
     """
     by_cat = {}
     for a in articles:
-        by_cat.setdefault(a.get("category", "unknown"), []).append(a)
+        if get_sort_time(a) >= cutoff:
+            by_cat.setdefault(a.get("category", "unknown"), []).append(a)
 
     compiled_data = []
     reference_map = {}
@@ -333,6 +374,7 @@ def compile_from_state(state: dict, cutoff: datetime) -> tuple[str, dict, int, i
 
 # ── Citation System ───────────────────────────────────────────────────────
 
+
 def inject_links_markdown(text: str, ref_map: dict) -> tuple[str, set]:
     """Replace citation patterns with markdown links. Returns (text, cited_nums).
 
@@ -356,12 +398,12 @@ def inject_links_markdown(text: str, ref_map: dict) -> tuple[str, set]:
         return link_single(int(m.group(1)))
 
     result = re.sub(
-        r'\[(\d+(?:\s*,\s*\d+)+)\]',
+        r"\[(\d+(?:\s*,\s*\d+)+)\]",
         replace_group,
         text,
     )
     result = re.sub(
-        r'(?<!\[)\[(\d+)\](?!\(|\])',
+        r"(?<!\[)\[(\d+)\](?!\(|\])",
         replace_single,
         result,
     )
@@ -388,36 +430,37 @@ def build_sources_appendix_md(ref_map: dict, cited: set) -> str:
 
 # ── Prompt ─────────────────────────────────────────────────────────────────
 
-def build_prompt(context: str, enriched: bool = False) -> str:
+
+def build_prompt(context: str, enriched: bool = False, hours: int = 24) -> str:
     data_description = (
         "Each article includes a title and, where available, an EXTRACT "
         "with the opening paragraphs of the article. Use the extracts to "
         "ground your analysis in the actual framing and argumentation of "
         "the source material."
-        if enriched else
-        "Each article is represented by its headline and source outlet."
+        if enriched
+        else "Each article is represented by its headline and source outlet."
     )
 
     return (
         "You are an expert political analyst writing a daily intelligence brief. "
-        "Analyze the last 24 hours of right-wing and far-right news from the data below.\n\n"
+        f"Analyze the last {hours} hours of right-wing and far-right news from the data below.\n\n"
         f"DATA DESCRIPTION: {data_description}\n\n"
         "FORMAT INSTRUCTIONS:\n"
         "- Write in Markdown.\n"
         "- Begin with a short executive summary paragraph (2-3 sentences) of the day's "
         "most significant developments.\n"
         "- Then organize your analysis by thematic cluster, NOT by country. Use ## headings "
-        "for each cluster (e.g., '## Immigration and Border Politics', "
-        "'## Transnational Conservative Networking').\n"
+        "for each cluster.\n"
         "- Within each section, note cross-national patterns and connections where they exist.\n"
         "- Use **bold** for party names and key actors on first mention.\n"
-        "- End with a short 'Watchlist' section flagging 2-3 emerging stories to track.\n"
+        "- End with a short 'Watchlist' section flagging 3 emerging stories to track.\n"
         "- Keep the tone analytical and concise — this is a professional briefing, "
         "not a news summary.\n\n"
+        "- Treat headline-only items more cautiously: they can help identify a development, but you should avoid making strong interpretive claims unless the extract supports them.\n\n"
         "CITATION INSTRUCTIONS:\n"
         "- Each article in the data has a reference number in square brackets, e.g. [1], [2].\n"
         "- When you make a claim that draws on a specific article, cite it inline using its "
-        "number: e.g. 'Vance faced bipartisan criticism [14] amid growing internal dissent [27].'\n"
+        "number: e.g. 'Politician X said A [14], while politican Y claimed B instead [27].'\n"
         "- Cite only the single most relevant source per claim. Never stack multiple citations.\n"
         "- Do NOT invent reference numbers that are not in the data.\n"
         "- Do NOT create a bibliography or references section — just use inline citations.\n\n"
@@ -427,8 +470,14 @@ def build_prompt(context: str, enriched: bool = False) -> str:
 
 # ── HTML Template ──────────────────────────────────────────────────────────
 
-def build_html_email(analysis_html: str, today_str: str, article_count: int,
-                     category_count: int, provider_label: str = "Gemini") -> str:
+
+def build_html_email(
+    analysis_html: str,
+    today_str: str,
+    article_count: int,
+    category_count: int,
+    provider_label: str = "Gemini",
+) -> str:
     return f"""\
 <!DOCTYPE html>
 <html lang="en">
@@ -488,25 +537,41 @@ def build_html_email(analysis_html: str, today_str: str, article_count: int,
 
 # ── Inline Styles for Markdown → HTML ──────────────────────────────────────
 
+
 def style_html(raw_html: str) -> str:
     """Inject inline styles into the converted Markdown HTML for email clients."""
     replacements = [
-        ("<h1>", '<h1 style="font-size:20px; color:#1a1a2e; margin:28px 0 12px 0; '
-                 'border-bottom:2px solid #1a1a2e; padding-bottom:6px;">'),
+        (
+            "<h1>",
+            '<h1 style="font-size:20px; color:#1a1a2e; margin:28px 0 12px 0; '
+            'border-bottom:2px solid #1a1a2e; padding-bottom:6px;">',
+        ),
         ("<h2>", '<h2 style="font-size:17px; color:#1a1a2e; margin:24px 0 10px 0;">'),
-        ("<h3>", '<h3 style="font-size:15px; color:#333; margin:20px 0 8px 0; '
-                 'font-family:Helvetica,Arial,sans-serif;">'),
+        (
+            "<h3>",
+            '<h3 style="font-size:15px; color:#333; margin:20px 0 8px 0; '
+            'font-family:Helvetica,Arial,sans-serif;">',
+        ),
         ("<p>", '<p style="margin:0 0 14px 0;">'),
         ("<ul>", '<ul style="margin:0 0 16px 0; padding-left:20px;">'),
         ("<ol>", '<ol style="margin:0 0 16px 0; padding-left:20px;">'),
         ("<li>", '<li style="margin:0 0 6px 0;">'),
         ("<strong>", '<strong style="color:#1a1a2e;">'),
-        ("<blockquote>", '<blockquote style="margin:16px 0; padding:12px 20px; '
-                         'border-left:3px solid #1a1a2e; background:#f8f8fa; '
-                         'font-style:italic; color:#555;">'),
+        (
+            "<blockquote>",
+            '<blockquote style="margin:16px 0; padding:12px 20px; '
+            "border-left:3px solid #1a1a2e; background:#f8f8fa; "
+            'font-style:italic; color:#555;">',
+        ),
         ("<hr>", '<hr style="border:none; border-top:1px solid #ddd; margin:24px 0;">'),
-        ("<hr/>", '<hr style="border:none; border-top:1px solid #ddd; margin:24px 0;">'),
-        ("<hr />", '<hr style="border:none; border-top:1px solid #ddd; margin:24px 0;">'),
+        (
+            "<hr/>",
+            '<hr style="border:none; border-top:1px solid #ddd; margin:24px 0;">',
+        ),
+        (
+            "<hr />",
+            '<hr style="border:none; border-top:1px solid #ddd; margin:24px 0;">',
+        ),
     ]
     for old, new in replacements:
         raw_html = raw_html.replace(old, new)
@@ -515,37 +580,44 @@ def style_html(raw_html: str) -> str:
 
 # ── Main ───────────────────────────────────────────────────────────────────
 
+
 def main():
     parser = argparse.ArgumentParser(description="AI Intelligence Reporter")
     parser.add_argument(
-        "--markdown", action="store_true",
-        help="Write markdown reports to reports/ instead of sending email (testing mode)"
+        "--markdown",
+        action="store_true",
+        help="Write markdown reports to reports/ instead of sending email (testing mode)",
     )
     parser.add_argument(
-        "--hours", type=int, default=24,
-        help="Look-back window in hours (default: 24)"
+        "--hours", type=int, default=24, help="Look-back window in hours (default: 24)"
     )
     parser.add_argument(
-        "--outdir", default="reports",
-        help="Output directory for markdown reports (default: reports/)"
+        "--outdir",
+        default="reports",
+        help="Output directory for markdown reports (default: reports/)",
     )
     parser.add_argument(
-        "--model", default="auto", choices=["auto", "flash", "pro", "claude"],
+        "--model",
+        default="auto",
+        choices=["auto", "flash", "pro", "claude"],
         help="Model selection: 'auto' (Pro→Claude→Flash fallback chain, default), "
-             "'pro' (Gemini Pro only), 'claude' (Claude only), 'flash' (Flash only)"
+        "'pro' (Gemini Pro only), 'claude' (Claude only), 'flash' (Flash only)",
     )
     parser.add_argument(
-        "--enriched-dir", default="enriched",
-        help="Directory containing enriched JSON files (default: enriched/)"
+        "--enriched-dir",
+        default="enriched",
+        help="Directory containing enriched JSON files (default: enriched/)",
     )
     parser.add_argument(
-        "--no-enriched", action="store_true",
-        help="Force titles-only mode even if enriched data exists"
+        "--no-enriched",
+        action="store_true",
+        help="Force titles-only mode even if enriched data exists",
     )
     parser.add_argument(
-        "--email", action="store_true",
+        "--email",
+        action="store_true",
         help="Send email report (default when --markdown is not set; "
-             "combine with --markdown to do both)"
+        "combine with --markdown to do both)",
     )
     args = parser.parse_args()
 
@@ -567,8 +639,9 @@ def main():
         chain = [model_key]
 
     # Check at least one API key exists
-    available_keys = {k for k in ["GEMINI_API_KEY", "ANTHROPIC_API_KEY"]
-                      if os.environ.get(k)}
+    available_keys = {
+        k for k in ["GEMINI_API_KEY", "ANTHROPIC_API_KEY"] if os.environ.get(k)
+    }
     needed_keys = {PROVIDERS[name]["env_key"] for name in chain}
     if not available_keys & needed_keys:
         print(f"Error: No API keys set for the requested providers.")
@@ -580,7 +653,9 @@ def main():
         email_password = os.environ.get("EMAIL_PASSWORD")
         receiver_email = os.environ.get("RECEIVER_EMAIL")
         if not all([sender_email, email_password, receiver_email]):
-            print("Error: Missing email secrets. Use --markdown for testing without email.")
+            print(
+                "Error: Missing email secrets. Use --markdown for testing without email."
+            )
             sys.exit(1)
 
     if not os.path.exists(STATE_FILE):
@@ -589,13 +664,13 @@ def main():
 
     # ── Choose data source ────────────────────────────────────────────────
     now = datetime.now()
-    date_slug = now.strftime("%Y-%m-%d")          # for enriched file lookup
-    report_slug = now.strftime("%Y-%m-%d_%H%M")   # for report filenames (no collisions)
+    report_slug = now.strftime("%Y-%m-%d_%H%M")  # for report filenames (no collisions)
     today_str = now.strftime("%B %d, %Y")
+    cutoff = datetime.now(timezone.utc) - timedelta(hours=args.hours)
     using_enriched = False
 
     if not args.no_enriched:
-        enriched_articles = load_enriched(args.enriched_dir, date_slug)
+        enriched_articles = load_enriched(args.enriched_dir, args.hours)
         if enriched_articles:
             enriched_with_text = sum(
                 1 for a in enriched_articles if a.get("extract_status") == "ok"
@@ -604,8 +679,9 @@ def main():
                 f"Using enriched data: {len(enriched_articles)} articles "
                 f"({enriched_with_text} with text extracts)"
             )
-            prompt_context, ref_map, article_count, category_count = \
-                compile_from_enriched(enriched_articles)
+            prompt_context, ref_map, article_count, category_count = (
+                compile_from_enriched(enriched_articles, cutoff)
+            )
             using_enriched = True
         else:
             print("No enriched file found for today. Falling back to titles-only.")
@@ -613,15 +689,15 @@ def main():
     if not using_enriched:
         with open(STATE_FILE, "r", encoding="utf-8") as f:
             state = json.load(f)
-        cutoff = datetime.now(timezone.utc) - timedelta(hours=args.hours)
-        prompt_context, ref_map, article_count, category_count = \
-            compile_from_state(state, cutoff)
+        prompt_context, ref_map, article_count, category_count = compile_from_state(
+            state, cutoff
+        )
 
     if not prompt_context.strip():
         print(f"No articles found. Skipping report.")
         sys.exit(0)
 
-    prompt = build_prompt(prompt_context, enriched=using_enriched)
+    prompt = build_prompt(prompt_context, enriched=using_enriched, hours=args.hours)
 
     print(
         f"Compiled {article_count} articles across {category_count} categories "
@@ -636,8 +712,9 @@ def main():
         mode_label.append("email")
     print(f"Output mode: {' + '.join(mode_label)}")
 
-    chain_labels = [PROVIDERS[n]["label"] for n in chain
-                    if os.environ.get(PROVIDERS[n]["env_key"])]
+    chain_labels = [
+        PROVIDERS[n]["label"] for n in chain if os.environ.get(PROVIDERS[n]["env_key"])
+    ]
     print(f"Provider chain: {' → '.join(chain_labels)}")
 
     print(f"Generating AI Analysis...")
@@ -667,12 +744,18 @@ def main():
             f.write(f"# AI Input — {today_str}\n\n")
             f.write(f"**Provider:** {provider_used}\n")
             f.write(f"**Look-back:** {args.hours} hours\n")
-            f.write(f"**Data source:** {'enriched' if using_enriched else 'titles-only'}\n")
-            f.write(f"**Articles:** {article_count} across {category_count} categories\n")
+            f.write(
+                f"**Data source:** {'enriched' if using_enriched else 'titles-only'}\n"
+            )
+            f.write(
+                f"**Articles:** {article_count} across {category_count} categories\n"
+            )
             f.write(f"**References indexed:** {len(ref_map)}\n\n")
             f.write("---\n\n")
             f.write("## Prompt Instructions\n\n")
-            f.write(f"```\n{build_prompt('(article data follows below)', enriched=using_enriched)}\n```\n\n")
+            f.write(
+                f"```\n{build_prompt('(article data follows below)', enriched=using_enriched, hours=args.hours)}\n```\n\n"
+            )
             f.write("---\n\n")
             f.write("## Article Data\n\n")
             f.write(prompt_context)
@@ -700,8 +783,9 @@ def main():
         analysis_html = style_html(analysis_html)
 
         subject = f"Intelligence Brief: Transatlantic Right-Wing Media ({today_str})"
-        full_html = build_html_email(analysis_html, today_str, article_count,
-                                     category_count, provider_used)
+        full_html = build_html_email(
+            analysis_html, today_str, article_count, category_count, provider_used
+        )
 
         # Plain-text fallback
         plain_sources = ""
@@ -709,7 +793,9 @@ def main():
             plain_sources = "\n---\nSources:\n"
             for num in sorted(cited):
                 ref = ref_map[num]
-                plain_sources += f"  [{num}] {sanitize(ref['title'])} — {sanitize(ref['source'])}\n"
+                plain_sources += (
+                    f"  [{num}] {sanitize(ref['title'])} — {sanitize(ref['source'])}\n"
+                )
                 if ref["url"]:
                     plain_sources += f"        {ref['url']}\n"
         plain_text = sanitize(analysis_text + plain_sources)

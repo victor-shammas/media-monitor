@@ -163,11 +163,13 @@ def main():
         sys.exit(0)
 
     date_slug = datetime.now().strftime("%Y-%m-%d")
+    time_slug = datetime.now().strftime("%H%M")
+    file_slug = f"{date_slug}_{time_slug}"
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     cat_count = len(set(a["_category"] for a in articles))
 
     print(f"[{timestamp}] Scraping {len(articles)} articles across {cat_count} categories")
-    print(f"  Look-back: {args.hours}h | Output: {args.outdir}/enriched_{date_slug}.json")
+    print(f"  Look-back: {args.hours}h | Output: {args.outdir}/enriched_{file_slug}.json")
     print()
 
     # ── Process each article ──────────────────────────────────────────────
@@ -248,7 +250,7 @@ def main():
         "articles": enriched,
     }
 
-    outpath = os.path.join(args.outdir, f"enriched_{date_slug}.json")
+    outpath = os.path.join(args.outdir, f"enriched_{file_slug}.json")
     with open(outpath, "w", encoding="utf-8") as f:
         json.dump(output, f, indent=2, ensure_ascii=False)
 
