@@ -38,7 +38,8 @@ FEEDS = [
         "q": 'Fremskrittspartiet OR FrP OR "Sylvi Listhaug" OR "Norwegian Progress Party" OR "Per-Willy Amundsen" OR "Hans Andreas Limi" OR "Simen Velle"',
         "variants": [
             {"lang": "no", "country": "NO"},
-            {"lang": "en", "country": "US"},
+            {"lang": "en", "country": "US",
+             "q": 'Fremskrittspartiet OR "Sylvi Listhaug" OR "Norwegian Progress Party" OR "Per-Willy Amundsen" OR "Hans Andreas Limi" OR "Simen Velle"'},
         ],
     },
     {
@@ -258,7 +259,9 @@ def fetch_feed(feed: dict, category_seen_urls: set, timestamp: str) -> list[dict
     for variant in variants:
         lang = variant["lang"]
         country = variant["country"]
-        for q in queries:
+        # Per-variant query override, falling back to feed-level queries
+        variant_queries = variant.get("queries") or ([variant["q"]] if "q" in variant else queries)
+        for q in variant_queries:
             url = build_gnews_url(q, lang, country, window)
             try:
                 raw_items = fetch_rss(url)
