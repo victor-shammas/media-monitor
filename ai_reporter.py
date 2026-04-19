@@ -683,7 +683,7 @@ def main():
             f.write(f"*{article_count} articles across {category_count} categories")
             if using_enriched:
                 f.write(f" (enriched)")
-            f.write("*\n\n")
+            f.write(f" · Analysis by {provider_used}*\n\n")
             f.write("---\n\n")
             f.write(analysis_linked)
             f.write(sources_appendix)
