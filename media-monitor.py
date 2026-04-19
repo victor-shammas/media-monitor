@@ -36,32 +36,40 @@ FEEDS = [
         "filename": "norway.txt",
         "name": "🇳🇴 Fremskrittspartiet",
         "q": 'Fremskrittspartiet OR FrP OR "Sylvi Listhaug" OR "Norwegian Progress Party" OR "Per-Willy Amundsen" OR "Hans Andreas Limi" OR "Simen Velle"',
-        "lang": "no",
-        "country": "NO",
+        "variants": [
+            {"lang": "no", "country": "NO"},
+            {"lang": "en", "country": "US"},
+        ],
     },
     {
         "id": "sd",
         "filename": "sweden.txt",
         "name": "🇸🇪 Sverigedemokraterna",
         "q": 'Sverigedemokraterna OR "Jimmie Åkesson" OR "Sweden Democrats"',
-        "lang": "sv",
-        "country": "SE",
+        "variants": [
+            {"lang": "sv", "country": "SE"},
+            {"lang": "en", "country": "US"},
+        ],
     },
     {
         "id": "rn",
         "filename": "france.txt",
         "name": "🇫🇷 Rassemblement National",
         "q": '"Rassemblement National" OR "Marine Le Pen" OR "Jordan Bardella" OR "National Rally" OR "Marion Maréchal"',
-        "lang": "fr",
-        "country": "FR",
+        "variants": [
+            {"lang": "fr", "country": "FR"},
+            {"lang": "en", "country": "US"},
+        ],
     },
     {
         "id": "fdi",
         "filename": "italy.txt",
         "name": "🇮🇹 Fratelli d'Italia / Lega",
         "q": 'Meloni OR Salvini OR "Fratelli d\'Italia" OR "Brothers of Italy" OR Lega',
-        "lang": "it",
-        "country": "IT",
+        "variants": [
+            {"lang": "it", "country": "IT"},
+            {"lang": "en", "country": "US"},
+        ],
     },
     {
         "id": "reform",
@@ -76,8 +84,10 @@ FEEDS = [
         "filename": "germany.txt",
         "name": "🇩🇪 Alternative für Deutschland",
         "q": '"Alternative fur Deutschland" OR AfD OR "Tino Chrupalla" OR "Alice Weidel"',
-        "lang": "de",
-        "country": "DE",
+        "variants": [
+            {"lang": "de", "country": "DE"},
+            {"lang": "en", "country": "US"},
+        ],
     },
     {
         "id": "general",
@@ -105,37 +115,40 @@ FEEDS = [
         "filename": "hungary.txt",
         "name": "🇭🇺 Hungary (Fidesz / Tisza)",
         "q": '"Viktor Orbán" OR "Magyar Péter" OR "Fidesz" OR "Tisza"',
-        "lang": "hu",
-        "country": "HU",
+        "variants": [
+            {"lang": "hu", "country": "HU"},
+            {"lang": "en", "country": "US"},
+        ],
     },
     {
         "id": "poland",
         "filename": "poland.txt",
         "name": "🇵🇱 Prawo i Sprawiedliwość",
         "q": '"Prawo i Sprawiedliwość" OR "PiS" OR "Jarosław Kaczyński" OR "Mateusz Morawiecki" OR "Karol Nawrocki" OR "Law and Justice"',
-        "lang": "pl",
-        "country": "PL",
+        "variants": [
+            {"lang": "pl", "country": "PL"},
+            {"lang": "en", "country": "US"},
+        ],
     },
     {
         "id": "spain",
         "filename": "spain.txt",
         "name": "🇪🇸 Vox",
         "q": '"Vox" OR "Santiago Abascal" OR "Ignacio Garriga" OR "Javier Ortega Smith" OR "Rocío Monasterio" OR "Kiko Méndez-Monasterio"',
-        "lang": "es",
-        "country": "ES",
+        "variants": [
+            {"lang": "es", "country": "ES"},
+            {"lang": "en", "country": "US"},
+        ],
     },
 ]
 
 # ── Helpers ────────────────────────────────────────────────────────────────
 
 
-def build_gnews_url(query: str, feed: dict) -> str:
-    win = feed.get("window", "7d")
-    lang = feed["lang"]
-    country = feed["country"]
+def build_gnews_url(query: str, lang: str, country: str, window: str = "7d") -> str:
     return (
         f"https://news.google.com/rss/search?"
-        f"q={quote(query + ' when:' + win)}"
+        f"q={quote(query + ' when:' + window)}"
         f"&hl={lang}&gl={country}&ceid={country}:{lang}"
     )
 
@@ -234,45 +247,52 @@ def get_sort_time(item: dict) -> datetime:
 
 def fetch_feed(feed: dict, category_seen_urls: set, timestamp: str) -> list[dict]:
     queries = feed.get("queries", [feed.get("q", "")])
+    window = feed.get("window", "7d")
     cutoff = datetime.now(timezone.utc) - timedelta(days=30)
     new_items = []
     errors = []
 
-    for q in queries:
-        url = build_gnews_url(q, feed)
-        try:
-            raw_items = fetch_rss(url)
-            for item in raw_items:
-                link = item.get("link", "")
+    # Resolve language variants: explicit list, or synthesize from flat lang/country
+    variants = feed.get("variants") or [{"lang": feed["lang"], "country": feed["country"]}]
 
-                # Check against the category's private memory
-                if not link or link in category_seen_urls:
-                    continue
-                category_seen_urls.add(link)
+    for variant in variants:
+        lang = variant["lang"]
+        country = variant["country"]
+        for q in queries:
+            url = build_gnews_url(q, lang, country, window)
+            try:
+                raw_items = fetch_rss(url)
+                for item in raw_items:
+                    link = item.get("link", "")
 
-                pub_dt = item.get("pub_dt")
-                if pub_dt and pub_dt < cutoff:
-                    continue
+                    # Check against the category's private memory
+                    if not link or link in category_seen_urls:
+                        continue
+                    category_seen_urls.add(link)
 
-                source = extract_source(item.get("title", ""))
-                summary = strip_html(item.get("description", ""))
-                summary = strip_trailing_source(summary, source)
+                    pub_dt = item.get("pub_dt")
+                    if pub_dt and pub_dt < cutoff:
+                        continue
 
-                new_items.append(
-                    {
-                        "title": clean_title(item.get("title", "")),
-                        "url": link,
-                        "source": source,
-                        "date": item.get("pubDate", ""),
-                        "added_at": timestamp,
-                        "summary": summary,
-                    }
-                )
-        except Exception as e:
-            errors.append(f"{q[:40]}…: {e}")
+                    source = extract_source(item.get("title", ""))
+                    summary = strip_html(item.get("description", ""))
+                    summary = strip_trailing_source(summary, source)
+
+                    new_items.append(
+                        {
+                            "title": clean_title(item.get("title", "")),
+                            "url": link,
+                            "source": source,
+                            "date": item.get("pubDate", ""),
+                            "added_at": timestamp,
+                            "summary": summary,
+                        }
+                    )
+            except Exception as e:
+                errors.append(f"[{lang}] {q[:40]}…: {e}")
 
     if errors:
-        for err in errors[:2]:
+        for err in errors[:3]:
             print(f"  ⚠ {err}", file=sys.stderr)
 
     # Universal cap of new items per run
