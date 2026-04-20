@@ -342,12 +342,35 @@ def main():
 
     merged_articles = existing_articles + new_articles
 
+    # ── Compute cumulative stats across all articles in the file ─────────
+    cumulative = {
+        "total": len(merged_articles),
+        "resolved": 0,
+        "extracted": 0,
+        "skipped": 0,
+        "failed_resolve": 0,
+        "failed_extract": 0,
+    }
+    for a in merged_articles:
+        status = a.get("extract_status", "")
+        if status == "skipped_domain":
+            cumulative["skipped"] += 1
+        elif status in ("resolve_error", "resolve_decode_failed"):
+            cumulative["failed_resolve"] += 1
+        else:
+            cumulative["resolved"] += 1
+            if status == "ok":
+                cumulative["extracted"] += 1
+            elif status in ("fetch_failed", "too_short", "error"):
+                cumulative["failed_extract"] += 1
+
     output = {
         "date": date_slug,
         "last_updated": timestamp,
         "stats": {
             "total_articles": len(merged_articles),
             "this_run": stats,
+            "cumulative": cumulative,
         },
         "articles": merged_articles,
     }
@@ -358,6 +381,7 @@ def main():
     # ── Summary ───────────────────────────────────────────────────────────
 
     total_new = stats["total"]
+    total_all = cumulative["total"]
     print()
     print("=" * 60)
     print("SCRAPER SUMMARY")
@@ -373,7 +397,16 @@ def main():
     print(f"  Failed (resolve): {stats['failed_resolve']}")
     print(f"  Failed (extract):  {stats['failed_extract']}")
     print(f"  ─────────────────────────────")
-    print(f"  Total in enriched file: {len(merged_articles)}")
+    print(f"  Cumulative ({total_all} articles):")
+    print(
+        f"    Resolved:   {cumulative['resolved']}/{total_all} ({100 * cumulative['resolved'] // max(total_all, 1)}%)"
+    )
+    print(
+        f"    Extracted:  {cumulative['extracted']}/{total_all} ({100 * cumulative['extracted'] // max(total_all, 1)}%)"
+    )
+    print(f"    Skipped:    {cumulative['skipped']}")
+    print(f"    Failed (resolve): {cumulative['failed_resolve']}")
+    print(f"    Failed (extract): {cumulative['failed_extract']}")
     if existing_articles:
         print(f"    (was {len(existing_articles)}, added {len(new_articles)})")
     print(f"\n  ✓ Saved → {outpath}")
