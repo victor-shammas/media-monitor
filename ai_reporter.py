@@ -48,6 +48,12 @@ except ImportError:
     print("Please install dependencies: pip install tenacity markdown")
     sys.exit(1)
 
+import tomllib
+
+with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "config.toml"), "rb") as _f:
+    CONFIG = tomllib.load(_f)
+CATEGORY_LABELS = CONFIG["categories"]
+
 # Optional providers — imported on demand
 genai = None
 anthropic = None
@@ -251,24 +257,6 @@ def sanitize(text: str) -> str:
     return text
 
 
-# ── Category Labels ────────────────────────────────────────────────────────
-
-CATEGORY_LABELS = {
-    "maga": "🇺🇸 MAGA / Trump",
-    "frp": "🇳🇴 Fremskrittspartiet",
-    "sd": "🇸🇪 Sverigedemokraterna",
-    "rn": "🇫🇷 Rassemblement National",
-    "fdi": "🇮🇹 Fratelli d'Italia / Lega",
-    "reform": "🇬🇧 Reform UK",
-    "afd": "🇩🇪 Alternative für Deutschland",
-    "general": "🌍 General Right-Wing",
-    "nodes": "🕸️ Transnational Networks",
-    "hungary": "🇭🇺 Hungary (Fidesz / Tisza)",
-    "poland": "🇵🇱 Prawo i Sprawiedliwość",
-    "spain": "🇪🇸 Vox",
-}
-
-
 # ── Data Sources ──────────────────────────────────────────────────────────
 
 
@@ -442,39 +430,16 @@ def build_sources_appendix_md(ref_map: dict, cited: set) -> str:
 
 
 def build_prompt(context: str, enriched: bool = False, hours: int = 24) -> str:
+    prompt_cfg = CONFIG["prompt"]
     data_description = (
-        "Each article includes a title and, where available, an EXTRACT "
-        "with the opening paragraphs of the article. Use the extracts to "
-        "ground your analysis in the actual framing and argumentation of "
-        "the source material."
+        prompt_cfg["enriched_data_description"]
         if enriched
-        else "Each article is represented by its headline and source outlet."
+        else prompt_cfg["titles_only_data_description"]
     )
-
-    return (
-        "You are an expert political analyst writing a daily intelligence brief. "
-        f"Analyze the last {hours} hours of right-wing and far-right news from the data below.\n\n"
-        f"DATA DESCRIPTION: {data_description}\n\n"
-        "FORMAT INSTRUCTIONS:\n"
-        "- Write in Markdown.\n"
-        "- Begin with a short executive summary paragraph (2-3 sentences) of the day's "
-        "most significant developments.\n"
-        "- Then organize your analysis by thematic cluster, NOT by country. Use ## headings "
-        "for each cluster.\n"
-        "- Within each section, note cross-national patterns and connections where they exist.\n"
-        "- Use **bold** for party names and key actors on first mention.\n"
-        "- End with a short 'Watchlist' section flagging 3 emerging stories to track.\n"
-        "- Keep the tone analytical and concise — this is a professional briefing, "
-        "not a news summary.\n\n"
-        "- Treat headline-only items more cautiously: they can help identify a development, but you should avoid making strong interpretive claims unless the extract supports them.\n\n"
-        "CITATION INSTRUCTIONS:\n"
-        "- Each article in the data has a reference number in square brackets, e.g. [1], [2].\n"
-        "- When you make a claim that draws on a specific article, cite it inline using its "
-        "number: e.g. 'Politician X said A [14], while politican Y claimed B instead [27].'\n"
-        "- Cite only the single most relevant source per claim. Never stack multiple citations.\n"
-        "- Do NOT invent reference numbers that are not in the data.\n"
-        "- Do NOT create a bibliography or references section — just use inline citations.\n\n"
-        f"DATA:\n{context}"
+    return prompt_cfg["instructions"].format(
+        hours=hours,
+        data_description=data_description,
+        context=context,
     )
 
 

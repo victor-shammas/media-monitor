@@ -13,12 +13,12 @@ Already-enriched articles are skipped automatically.
 Usage Examples:
     python article_scraper.py              # Scrape articles from the last 24 hours
     python article_scraper.py --hours 48   # Expand window to the last 48 hours
-    python article_scraper.py --category frp   # Scrape only a single specific category
+    python article_scraper.py --category norway   # Scrape only a single specific category
 
 Flags:
     --hours INT       Look-back window in hours to scrape (default: 24)
     --outdir DIR      Output directory for the enriched JSON files (default: enriched/)
-    --category ID     Scrape only a specific feed ID (e.g., 'frp', 'maga')
+    --category ID     Scrape only a specific feed ID (e.g., 'norway', 'usa')
 """
 
 import argparse
@@ -36,22 +36,13 @@ except ImportError:
     print("Install dependencies: pip install trafilatura googlenewsdecoder")
     sys.exit(1)
 
-STATE_FILE = "monitor_state.json"
+import tomllib
 
-CATEGORY_LABELS = {
-    "maga": "🇺🇸 MAGA / Trump",
-    "frp": "🇳🇴 Fremskrittspartiet",
-    "sd": "🇸🇪 Sverigedemokraterna",
-    "rn": "🇫🇷 Rassemblement National",
-    "fdi": "🇮🇹 Fratelli d'Italia / Lega",
-    "reform": "🇬🇧 Reform UK",
-    "afd": "🇩🇪 Alternative für Deutschland",
-    "general": "🌍 General Right-Wing",
-    "nodes": "🕸️ Transnational Networks",
-    "hungary": "🇭🇺 Hungary (Fidesz / Tisza)",
-    "poland": "🇵🇱 Prawo i Sprawiedliwość",
-    "spain": "🇪🇸 Vox",
-}
+with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "config.toml"), "rb") as _f:
+    CONFIG = tomllib.load(_f)
+CATEGORY_LABELS = CONFIG["categories"]
+
+STATE_FILE = "monitor_state.json"
 
 # Domains known to fail — skip to save time
 SKIP_DOMAINS = {
