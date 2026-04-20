@@ -6,6 +6,11 @@ Consumes enriched JSON data (falling back to titles-only from monitor_state.json
 if necessary) to generate AI-produced intelligence briefs. Uses a resilient,
 multi-provider LLM fallback chain (Gemini Pro → Claude Sonnet → Gemini Flash).
 
+Enriched files are keyed by article publication date (enriched_YYYY-MM-DD.json).
+The reporter loads enough daily files to cover the lookback window (e.g. 2 files
+for --hours 24, since the window straddles midnight), then filters articles by
+their publication timestamp to include only those within the window.
+
 Usage Examples:
   python ai_reporter.py                          → HTML email mode (production default)
   python ai_reporter.py --markdown               → Writes local .md files (testing/review)

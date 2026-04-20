@@ -35,32 +35,32 @@ Scrapes Google News RSS feeds for twelve categories of right-wing political acti
 
 **Categories tracked:**
 
-| ID        | Label                                    | Languages |
-|-----------|------------------------------------------|-----------|
-| `maga`    | 🇺🇸 MAGA / Trump                         | en        |
-| `frp`     | 🇳🇴 Fremskrittspartiet                    | no + en   |
-| `sd`      | 🇸🇪 Sverigedemokraterna                   | sv + en   |
-| `rn`      | 🇫🇷 Rassemblement National                | fr + en   |
-| `fdi`     | 🇮🇹 Fratelli d'Italia / Lega              | it + en   |
-| `afd`     | 🇩🇪 Alternative für Deutschland           | de + en   |
-| `reform`  | 🇬🇧 Reform UK                             | en        |
-| `hungary` | 🇭🇺 Hungary (Fidesz / Tisza)              | hu + en   |
-| `poland`  | 🇵🇱 Prawo i Sprawiedliwość                | pl + en   |
-| `spain`   | 🇪🇸 Vox                                   | es + en   |
-| `general` | 🌍 General Right-Wing                     | en        |
-| `nodes`   | 🕸️ Transnational Network Infrastructure   | en        |
+| ID         | Label                                    | Languages |
+|------------|------------------------------------------|-----------|
+| `usa`      | 🇺🇸 MAGA / Trump                         | en        |
+| `norway`   | 🇳🇴 Fremskrittspartiet                    | no + en   |
+| `sweden`   | 🇸🇪 Sverigedemokraterna                   | sv + en   |
+| `france`   | 🇫🇷 Rassemblement National                | fr + en   |
+| `italy`    | 🇮🇹 Fratelli d'Italia / Lega              | it + en   |
+| `germany`  | 🇩🇪 Alternative für Deutschland           | de + en   |
+| `uk`       | 🇬🇧 Reform UK                             | en        |
+| `hungary`  | 🇭🇺 Fidesz / Tisza                        | hu + en   |
+| `poland`   | 🇵🇱 Prawo i Sprawiedliwość                | pl + en   |
+| `spain`    | 🇪🇸 Vox                                   | es + en   |
+| `general`  | 🌍 General Right-Wing News                | en        |
+| `networks` | 🕸️ Transnational Networks                 | en        |
 
 ### Stage 2: Scraper (`article_scraper.py`)
 
 Runs daily at 05:00 UTC. Takes the last 24 hours of articles from `monitor_state.json`, decodes Google News redirect URLs (which are base64-encoded protobuf, not HTTP redirects) using `googlenewsdecoder`, then extracts article text via `trafilatura`. Truncates each extract to ~300 words.
 
-Output: `enriched/enriched_YYYY-MM-DD.json` — a self-contained dated file with titles, resolved URLs, article extracts, and extraction status per article. These accumulate as a running archive.
+Output: `enriched/enriched_YYYY-MM-DD.json` — a self-contained dated file with titles, resolved URLs, article extracts, and extraction status per article. These accumulate as a running archive. Articles are routed by their **publication date**, not the scrape date — a single run may write to multiple date files.
 
 **Expected success rate:** ~80% of articles yield clean text. Failures cluster around paywalled outlets (Reuters), aggregator shells (MSN), and social media links (Facebook). Known-bad domains are pre-filtered.
 
 ### Stage 3: AI Reporter (`ai_reporter.py`)
 
-Runs daily at 06:00 UTC. Checks for today's enriched file; if found, builds the prompt with titles + article extracts. If not, falls back to titles-only from `monitor_state.json`. Sends the compiled data to the LLM with structured prompt instructions, then post-processes the output with a citation system that links reference numbers to source URLs.
+Runs daily at 06:00 UTC. Loads enriched files covering the lookback window (e.g. today + yesterday for a 24-hour window, since it straddles midnight), then filters articles by publication date. If no enriched files exist, falls back to titles-only from `monitor_state.json`. Sends the compiled data to the LLM with structured prompt instructions, then post-processes the output with a citation system that links reference numbers to source URLs.
 
 **Multi-provider fallback:** The default mode (`--model auto`) tries providers in sequence until one succeeds: Gemini 2.5 Pro → Claude Sonnet 4.6 → Gemini 2.5 Flash. Each provider gets 3 retry attempts with exponential backoff before falling back. If a provider's API key isn't set, it's silently skipped.
 
@@ -79,6 +79,7 @@ media-monitor/
 ├── media-monitor.py         # Stage 1: RSS monitor
 ├── article_scraper.py       # Stage 2: Article text extraction
 ├── ai_reporter.py           # Stage 3: Multi-LLM analysis + email
+├── config.toml              # Shared config: category labels + AI prompt
 ├── monitor_state.json       # Persistent article database (auto-generated)
 ├── feeds/                   # Human-readable .txt files per category
 ├── enriched/                # Dated enriched JSON files (auto-generated)
@@ -168,9 +169,9 @@ python ai_reporter.py --markdown --hours 48
 | `ai_reporter.py`    | `--model flash`     | Gemini Flash only                          |
 | `ai_reporter.py`    | `--hours N`         | Look-back window in hours                  |
 | `ai_reporter.py`    | `--no-enriched`     | Force titles-only even if enriched exists  |
-| `article_scraper.py`| `--category frp`    | Scrape only one category                   |
+| `article_scraper.py`| `--category norway` | Scrape only one category                   |
 | `article_scraper.py`| `--hours N`         | Look-back window                           |
-| `media-monitor.py`  | `--feeds maga frp`  | Run only specific feeds                    |
+| `media-monitor.py`  | `--feeds usa norway` | Run only specific feeds                   |
 
 ## Constraints and Design Decisions
 

@@ -3,12 +3,17 @@
 Article Scraper — Enriches monitor data with article text extracts.
 
 Reads the RSS metadata from monitor_state.json, resolves Google News redirect
-URLs, extracts the first 300 words of article text via trafilatura, and writes dated enriched
-JSON files for the downstream AI Reporter.
+URLs, extracts the first 300 words of article text via trafilatura, and writes
+dated enriched JSON files for the downstream AI Reporter.
 
-Designed to be run multiple times per day. Each run accumulates into a single
-daily file (enriched_YYYY-MM-DD.json), merging new articles without duplicates.
-Already-enriched articles are skipped automatically.
+Articles are routed into enriched files by their publication date, not the
+scrape date. An article published on April 19th will always land in
+enriched_2026-04-19.json, even if scraped on April 20th. A single run may
+therefore write to multiple date files.
+
+Designed to be run multiple times per day. Each run merges new articles into
+the appropriate date files without duplicates. Already-enriched articles are
+skipped automatically via a dedup pool spanning the lookback window.
 
 Usage Examples:
     python article_scraper.py              # Scrape articles from the last 24 hours
@@ -84,6 +89,16 @@ def get_sort_time(item: dict) -> datetime:
             return datetime.min.replace(tzinfo=timezone.utc)
 
 
+def publication_date_slug(item: dict) -> str:
+    """Return YYYY-MM-DD for the article's publication date, falling back to today."""
+    date_str = item.get("date", "")
+    try:
+        dt = datetime.fromisoformat(date_str.replace("Z", "+00:00"))
+        return dt.strftime("%Y-%m-%d")
+    except Exception:
+        return datetime.now().strftime("%Y-%m-%d")
+
+
 # ── Step 1: Resolve Google News redirect URLs ─────────────────────────────
 
 
@@ -142,30 +157,55 @@ def load_enriched_file(path: str) -> list[dict]:
         return []
 
 
-def load_today_and_recent_urls(
-    outdir: str, date_slug: str, hours: int
-) -> tuple[list[dict], set[str]]:
-    """Load today's enriched file for merging, and collect google_urls from
-    today + recent days (covering the lookback window) for deduplication.
+def load_recent_files(
+    outdir: str, hours: int
+) -> tuple[dict[str, list[dict]], set[str]]:
+    """Load enriched files covering the lookback window.
 
-    Returns (today_articles, all_seen_urls).
+    Returns (articles_by_date, all_seen_urls).
+    articles_by_date: {date_slug: [article, ...]} for each loaded file
+    all_seen_urls: set of google_urls across all loaded files (for dedup)
     """
-    today_path = os.path.join(outdir, f"enriched_{date_slug}.json")
-    today_articles = load_enriched_file(today_path)
-
-    # Collect seen URLs from today + previous days covered by the lookback window
-    days_to_check = (hours + 23) // 24 + 1  # +1 because the window always straddles midnight
+    days_to_check = (hours + 23) // 24 + 1
+    articles_by_date: dict[str, list[dict]] = {}
     all_seen_urls: set[str] = set()
 
     now = datetime.now()
     for offset in range(days_to_check):
         day_slug = (now - timedelta(days=offset)).strftime("%Y-%m-%d")
         day_path = os.path.join(outdir, f"enriched_{day_slug}.json")
-        articles = load_enriched_file(day_path) if day_slug != date_slug else today_articles
+        articles = load_enriched_file(day_path)
+        if articles:
+            articles_by_date[day_slug] = articles
         urls = {a.get("google_url", "") for a in articles if a.get("google_url")}
         all_seen_urls |= urls
 
-    return today_articles, all_seen_urls
+    return articles_by_date, all_seen_urls
+
+
+def _compute_cumulative_stats(articles: list[dict]) -> dict:
+    """Compute cumulative stats across a list of articles."""
+    cumulative = {
+        "total": len(articles),
+        "resolved": 0,
+        "extracted": 0,
+        "skipped": 0,
+        "failed_resolve": 0,
+        "failed_extract": 0,
+    }
+    for a in articles:
+        status = a.get("extract_status", "")
+        if status == "skipped_domain":
+            cumulative["skipped"] += 1
+        elif status in ("resolve_error", "resolve_decode_failed"):
+            cumulative["failed_resolve"] += 1
+        else:
+            cumulative["resolved"] += 1
+            if status == "ok":
+                cumulative["extracted"] += 1
+            elif status in ("fetch_failed", "too_short", "error"):
+                cumulative["failed_extract"] += 1
+    return cumulative
 
 
 # ── Main ──────────────────────────────────────────────────────────────────
@@ -194,17 +234,15 @@ def main():
     cutoff = datetime.now(timezone.utc) - timedelta(hours=args.hours)
     os.makedirs(args.outdir, exist_ok=True)
 
-    # ── Load today's enriched file + recent URLs for dedup ────────────────
-    date_slug = datetime.now().strftime("%Y-%m-%d")
-    outpath = os.path.join(args.outdir, f"enriched_{date_slug}.json")
-
-    existing_articles, already_scraped_urls = load_today_and_recent_urls(
-        args.outdir, date_slug, args.hours
+    # ── Load recent enriched files for dedup ─────────────────────────────
+    articles_by_date, already_scraped_urls = load_recent_files(
+        args.outdir, args.hours
     )
+    total_existing = sum(len(v) for v in articles_by_date.values())
 
-    if existing_articles:
+    if total_existing:
         print(
-            f"  Loaded today's enriched file with {len(existing_articles)} articles"
+            f"  Loaded {len(articles_by_date)} enriched file(s) with {total_existing} articles"
         )
     print(
         f"  Dedup pool: {len(already_scraped_urls)} URLs from enriched files "
@@ -227,10 +265,9 @@ def main():
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
     if not candidates:
-        total_for_day = len(existing_articles)
         print(
             f"[{timestamp}] No new articles to scrape. "
-            f"Enriched file already has {total_for_day} articles."
+            f"Enriched files already have {total_existing} articles."
         )
         sys.exit(0)
 
@@ -239,20 +276,20 @@ def main():
         f"[{timestamp}] Scraping {len(candidates)} new articles across {cat_count} categories"
     )
     print(
-        f"  Look-back: {args.hours}h | Output: {outpath}"
+        f"  Look-back: {args.hours}h | Output: {args.outdir}/"
     )
-    if existing_articles:
+    if total_existing:
         print(
-            f"  Merging with {len(existing_articles)} previously enriched articles"
+            f"  Merging with {total_existing} previously enriched articles"
         )
     print()
 
     # ── Determine starting ref number ─────────────────────────────────────
-    # Continue numbering from where the existing file left off
-    if existing_articles:
-        max_existing_ref = max(a.get("ref", 0) for a in existing_articles)
-    else:
-        max_existing_ref = 0
+    # Continue numbering from the highest ref across all loaded files
+    max_existing_ref = 0
+    for articles in articles_by_date.values():
+        for a in articles:
+            max_existing_ref = max(max_existing_ref, a.get("ref", 0))
     ref_num = max_existing_ref
 
     # ── Process each new article ──────────────────────────────────────────
@@ -332,50 +369,39 @@ def main():
         new_articles.append(record)
         time.sleep(REQUEST_DELAY)
 
-    # ── Merge and write output ────────────────────────────────────────────
+    # ── Route articles by publication date and write output ───────────────
 
-    merged_articles = existing_articles + new_articles
+    modified_dates = set()
+    for article in new_articles:
+        slug = publication_date_slug(article)
+        articles_by_date.setdefault(slug, [])
+        articles_by_date[slug].append(article)
+        modified_dates.add(slug)
 
-    # ── Compute cumulative stats across all articles in the file ─────────
-    cumulative = {
-        "total": len(merged_articles),
-        "resolved": 0,
-        "extracted": 0,
-        "skipped": 0,
-        "failed_resolve": 0,
-        "failed_extract": 0,
-    }
-    for a in merged_articles:
-        status = a.get("extract_status", "")
-        if status == "skipped_domain":
-            cumulative["skipped"] += 1
-        elif status in ("resolve_error", "resolve_decode_failed"):
-            cumulative["failed_resolve"] += 1
-        else:
-            cumulative["resolved"] += 1
-            if status == "ok":
-                cumulative["extracted"] += 1
-            elif status in ("fetch_failed", "too_short", "error"):
-                cumulative["failed_extract"] += 1
+    written_files = []
+    for slug in sorted(modified_dates):
+        merged = articles_by_date[slug]
+        outpath = os.path.join(args.outdir, f"enriched_{slug}.json")
+        cumulative = _compute_cumulative_stats(merged)
 
-    output = {
-        "date": date_slug,
-        "last_updated": timestamp,
-        "stats": {
-            "total_articles": len(merged_articles),
-            "this_run": stats,
-            "cumulative": cumulative,
-        },
-        "articles": merged_articles,
-    }
+        output = {
+            "date": slug,
+            "last_updated": timestamp,
+            "stats": {
+                "total_articles": len(merged),
+                "this_run": stats,
+                "cumulative": cumulative,
+            },
+            "articles": merged,
+        }
 
-    with open(outpath, "w", encoding="utf-8") as f:
-        json.dump(output, f, indent=2, ensure_ascii=False)
+        with open(outpath, "w", encoding="utf-8") as f:
+            json.dump(output, f, indent=2, ensure_ascii=False)
+        written_files.append((slug, len(merged)))
 
     # ── Summary ───────────────────────────────────────────────────────────
 
     total_new = stats["total"]
-    total_all = cumulative["total"]
     print()
     print("=" * 60)
     print("SCRAPER SUMMARY")
@@ -391,19 +417,8 @@ def main():
     print(f"  Failed (resolve): {stats['failed_resolve']}")
     print(f"  Failed (extract):  {stats['failed_extract']}")
     print(f"  ─────────────────────────────")
-    print(f"  Cumulative ({total_all} articles):")
-    print(
-        f"    Resolved:   {cumulative['resolved']}/{total_all} ({100 * cumulative['resolved'] // max(total_all, 1)}%)"
-    )
-    print(
-        f"    Extracted:  {cumulative['extracted']}/{total_all} ({100 * cumulative['extracted'] // max(total_all, 1)}%)"
-    )
-    print(f"    Skipped:    {cumulative['skipped']}")
-    print(f"    Failed (resolve): {cumulative['failed_resolve']}")
-    print(f"    Failed (extract): {cumulative['failed_extract']}")
-    if existing_articles:
-        print(f"    (was {len(existing_articles)}, added {len(new_articles)})")
-    print(f"\n  ✓ Saved → {outpath}")
+    for slug, count in written_files:
+        print(f"  ✓ Saved → enriched_{slug}.json ({count} articles)")
     print()
 
 
