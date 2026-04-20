@@ -9,7 +9,7 @@ article URLs directly to avoid rate limits and 403 errors.
 
 Usage Examples:
   python media-monitor.py                              → Fetch all feeds (default)
-  python media-monitor.py --feeds frp maga             → Fetch specific feeds only
+  python media-monitor.py --feeds norway usa            → Fetch specific feeds only
   python media-monitor.py -d custom_folder/            → Write text files to custom dir
   python media-monitor.py --rebuild                    → Regenerate text files from state (no fetch)
 
@@ -22,7 +22,7 @@ Blocklist Management:
 
 Flags:
   -d, --outdir DIR          Output directory for per-category text files (default: feeds/)
-  --feeds [ID ...]          Only run specific feed IDs (e.g., frp, maga, sd, afd, nodes)
+  --feeds [ID ...]          Only run specific feed IDs (e.g., norway, usa, sweden, germany, networks)
   --rebuild                 Regenerate all text files from monitor_state.json without fetching
   --archive-days N          Archive articles older than N days (default: 60)
   --block URL               Block a single article by URL and prevent re-ingestion
@@ -50,6 +50,12 @@ from email.utils import parsedate_to_datetime
 from urllib.parse import quote
 from urllib.request import Request, urlopen
 
+import tomllib
+
+with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "config.toml"), "rb") as _f:
+    CONFIG = tomllib.load(_f)
+CATEGORY_LABELS = CONFIG["categories"]
+
 # ── Configuration ──────────────────────────────────────────────────────────
 
 STATE_FILE = "monitor_state.json"
@@ -60,17 +66,15 @@ DEFAULT_ARCHIVE_DAYS = 60  # Articles older than this are archived and pruned fr
 
 FEEDS = [
     {
-        "id": "maga",
+        "id": "usa",
         "filename": "usa.txt",
-        "name": "🇺🇸 MAGA/Trump",
         "q": '"Donald Trump" OR "Trump administration" OR MAGA OR "JD Vance" OR "Stephen Miller" OR "America First" OR "Steve Bannon"',
         "lang": "en",
         "country": "US",
     },
     {
-        "id": "frp",
+        "id": "norway",
         "filename": "norway.txt",
-        "name": "🇳🇴 Fremskrittspartiet",
         "q": 'Fremskrittspartiet OR FrP OR "Sylvi Listhaug" OR "Norwegian Progress Party" OR "Per-Willy Amundsen" OR "Hans Andreas Limi" OR "Simen Velle"',
         "variants": [
             {"lang": "no", "country": "NO"},
@@ -82,9 +86,8 @@ FEEDS = [
         ],
     },
     {
-        "id": "sd",
+        "id": "sweden",
         "filename": "sweden.txt",
-        "name": "🇸🇪 Sverigedemokraterna",
         "q": 'Sverigedemokraterna OR "Jimmie Åkesson" OR "Sweden Democrats"',
         "variants": [
             {"lang": "sv", "country": "SE"},
@@ -92,9 +95,8 @@ FEEDS = [
         ],
     },
     {
-        "id": "rn",
+        "id": "france",
         "filename": "france.txt",
-        "name": "🇫🇷 Rassemblement National",
         "q": '"Rassemblement National" OR "Marine Le Pen" OR "Jordan Bardella" OR "National Rally" OR "Marion Maréchal"',
         "variants": [
             {"lang": "fr", "country": "FR"},
@@ -102,9 +104,8 @@ FEEDS = [
         ],
     },
     {
-        "id": "fdi",
+        "id": "italy",
         "filename": "italy.txt",
-        "name": "🇮🇹 Fratelli d'Italia / Lega",
         "q": 'Meloni OR Salvini OR "Fratelli d\'Italia" OR "Brothers of Italy" OR Lega',
         "variants": [
             {"lang": "it", "country": "IT"},
@@ -116,17 +117,15 @@ FEEDS = [
         ],
     },
     {
-        "id": "reform",
+        "id": "uk",
         "filename": "uk.txt",
-        "name": "🇬🇧 Reform UK",
         "q": '"Reform UK" OR "Nigel Farage" OR "Richard Tice"',
         "lang": "en",
         "country": "GB",
     },
     {
-        "id": "afd",
+        "id": "germany",
         "filename": "germany.txt",
-        "name": "🇩🇪 Alternative für Deutschland",
         "q": '"Alternative fur Deutschland" OR AfD OR "Tino Chrupalla" OR "Alice Weidel"',
         "variants": [
             {"lang": "de", "country": "DE"},
@@ -140,15 +139,13 @@ FEEDS = [
     {
         "id": "general",
         "filename": "general.txt",
-        "name": "🌍 General Right-Wing News",
         "q": '"far right" OR "alt-right" OR "techno-fascism" OR "manosphere" OR "right-wing extremist" OR "national conservatism" OR "illiberal democracy" OR "fascism" OR "ethnonationalism" OR "white nationalism" OR "Christian nationalism"',
         "lang": "en",
         "country": "US",
     },
     {
-        "id": "nodes",
+        "id": "networks",
         "filename": "networks.txt",
-        "name": "🕸️ Transnational Network Infrastructure",
         "queries": [
             '"Heritage Foundation" OR "Project 2025" OR "American Enterprise Institute" OR "Claremont Institute" OR "Edmund Burke Foundation"',
             '"Danube Institute" OR "Mathias Corvinus Collegium" OR "MCC Budapest" OR "MCC Brussels"',
@@ -161,7 +158,6 @@ FEEDS = [
     {
         "id": "hungary",
         "filename": "hungary.txt",
-        "name": "🇭🇺 Hungary (Fidesz / Tisza)",
         "q": '"Viktor Orbán" OR "Magyar Péter" OR "Fidesz" OR "Tisza"',
         "variants": [
             {"lang": "hu", "country": "HU"},
@@ -175,7 +171,6 @@ FEEDS = [
     {
         "id": "poland",
         "filename": "poland.txt",
-        "name": "🇵🇱 Prawo i Sprawiedliwość",
         "q": '"Prawo i Sprawiedliwość" OR "PiS" OR "Jarosław Kaczyński" OR "Mateusz Morawiecki" OR "Karol Nawrocki" OR "Law and Justice"',
         "variants": [
             {"lang": "pl", "country": "PL"},
@@ -189,7 +184,6 @@ FEEDS = [
     {
         "id": "spain",
         "filename": "spain.txt",
-        "name": "🇪🇸 Vox",
         "q": '"Vox" OR "Santiago Abascal" OR "Ignacio Garriga" OR "Javier Ortega Smith" OR "Rocío Monasterio" OR "Kiko Méndez-Monasterio"',
         "variants": [
             {"lang": "es", "country": "ES"},
@@ -477,7 +471,7 @@ def format_single_feed(feed: dict, items: list[dict], last_updated: str) -> str:
     lines = []
     lines.append(SEPARATOR)
     lines.append("  TRANSATLANTIC RIGHT-WING MEDIA MONITOR")
-    lines.append(f"  Category:     {feed['name']}")
+    lines.append(f"  Category:     {CATEGORY_LABELS.get(feed['id'], feed['id'])}")
     lines.append(f"  Total Items:  {len(items)}")
     lines.append(f"  Last Updated: {last_updated}")
     lines.append(SEPARATOR)
@@ -717,7 +711,7 @@ def main():
 
     for feed in active_feeds:
         fid = feed["id"]
-        print(f"  → {feed['name']}…", file=sys.stderr)
+        print(f"  → {CATEGORY_LABELS.get(fid, fid)}…", file=sys.stderr)
 
         # Create a private memory pool just for this specific category
         category_seen_urls = {item["url"] for item in state.get(fid, [])}
