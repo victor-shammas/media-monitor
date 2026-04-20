@@ -110,12 +110,12 @@ def resolve_url(google_url: str) -> tuple[str | None, str]:
 # ── Step 2: Extract article text ──────────────────────────────────────────
 
 
-def extract_article(url: str) -> tuple[str | None, int, str]:
-    """Fetch and extract article text. Returns (extract, word_count, status)."""
+def extract_article(url: str) -> tuple[str | None, int, int, str]:
+    """Fetch and extract article text. Returns (extract, word_count, article_length, status)."""
     try:
         downloaded = trafilatura.fetch_url(url)
         if not downloaded:
-            return None, 0, "fetch_failed"
+            return None, 0, 0, "fetch_failed"
 
         text = trafilatura.extract(
             downloaded,
@@ -124,14 +124,15 @@ def extract_article(url: str) -> tuple[str | None, int, str]:
             no_fallback=False,
         )
         if not text or len(text.strip()) < 50:
-            return text, len(text.split()) if text else 0, "too_short"
+            wc = len(text.split()) if text else 0
+            return text, wc, wc, "too_short"
 
         words = text.split()
         truncated = " ".join(words[:MAX_EXTRACT_WORDS])
-        return truncated, len(words), "ok"
+        return truncated, min(len(words), MAX_EXTRACT_WORDS), len(words), "ok"
 
     except Exception as e:
-        return None, 0, f"error: {e}"
+        return None, 0, 0, f"error: {e}"
 
 
 # ── Daily file management ────────────────────────────────────────────────
@@ -294,6 +295,7 @@ def main():
             "extract": None,
             "extract_status": "pending",
             "word_count": 0,
+            "article_length": 0,
         }
 
         # Progress indicator
@@ -323,9 +325,10 @@ def main():
             continue
 
         # Step 2: Extract article text
-        extract, word_count, extract_status = extract_article(resolved_url)
+        extract, word_count, article_length, extract_status = extract_article(resolved_url)
         record["extract"] = extract
         record["word_count"] = word_count
+        record["article_length"] = article_length
         record["extract_status"] = extract_status
 
         if extract_status == "ok":
