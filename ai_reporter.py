@@ -723,7 +723,7 @@ def main():
         os.makedirs(args.outdir, exist_ok=True)
 
         # 1. Write the input debug file
-        input_path = os.path.join(args.outdir, f"{report_slug}_input.md")
+        input_path = os.path.join("data-private/reports", f"{report_slug}_input.md")
         with open(input_path, "w", encoding="utf-8") as f:
             f.write(f"# AI Input — {today_str}\n\n")
             f.write(f"**Provider:** {provider_used}\n")
