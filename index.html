@@ -470,6 +470,43 @@
                     .join("");
             }
 
+            const MONTH_NAMES = [
+                "January",
+                "February",
+                "March",
+                "April",
+                "May",
+                "June",
+                "July",
+                "August",
+                "September",
+                "October",
+                "November",
+                "December",
+            ];
+
+            function formatReportName(filename) {
+                // Strip .md extension
+                const base = filename.replace(/\.md$/i, "");
+                // Try to match pattern: YYYY-MM-DD-HHMM-rest or YYYY_MM_DD_HHMM_rest
+                const m = base.match(
+                    /^(\d{4})[-_ ](\d{2})[-_ ](\d{2})[-_ ](\d{2})(\d{2})[-_ ](.+)$/,
+                );
+                if (m) {
+                    const month = MONTH_NAMES[parseInt(m[2], 10) - 1] || m[2];
+                    const day = parseInt(m[3], 10);
+                    const year = m[1];
+                    const hours = m[4];
+                    const minutes = m[5];
+                    const rest = m[6]
+                        .replace(/[-_]/g, " ")
+                        .replace(/\b\w/g, (c) => c.toUpperCase());
+                    return `${month} ${day}, ${year} (${hours}:${minutes}) \u2013 ${rest}`;
+                }
+                // Fallback: just clean up
+                return base.replace(/[-_]/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
+            }
+
             /* ── Analysis tab ── */
 
             function showAnalysisTab() {
@@ -538,11 +575,8 @@
 
                     let html = `<ul class="report-list">`;
                     reports.forEach((r) => {
-                        // Derive a display name: strip .md, replace hyphens/underscores with spaces, title-case
-                        const displayName = r.name
-                            .replace(/\.md$/i, "")
-                            .replace(/[-_]/g, " ")
-                            .replace(/\b\w/g, (c) => c.toUpperCase());
+                        // Derive a display name with formatted date/time if present
+                        const displayName = formatReportName(r.name);
                         html += `
             <li>
               <a onclick="loadReport('${r.download_url}', '${displayName.replace(/'/g, "\\'")}')">${displayName}</a>
