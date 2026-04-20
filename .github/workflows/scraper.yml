@@ -5,7 +5,7 @@ env:
 
 on:
   schedule:
-    - cron: '30 */2 * * *'  # 30 min after each monitor run
+    - cron: '30 */2 * * *'
   workflow_dispatch:
 
 jobs:
@@ -18,6 +18,13 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Checkout private data repo
+        uses: actions/checkout@v4
+        with:
+          repository: victor-shammas/media-monitor-data
+          path: data-private
+          token: ${{ secrets.DATA_REPO_PAT }}
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
@@ -27,13 +34,14 @@ jobs:
         run: pip install trafilatura googlenewsdecoder
 
       - name: Run scraper
+        timeout-minutes: 30
         run: python article_scraper.py --hours 24
 
-      - name: Commit enriched data
+      - name: Push enriched data to private repo
         run: |
+          cd data-private
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add enriched/
-          git commit -m "Daily article enrichment" || echo "No changes to commit"
-          git pull --rebase
+          git add -A
+          git commit -m "Enriched articles $(date -u +%Y-%m-%d)" || echo "No changes"
           git push
