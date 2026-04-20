@@ -166,6 +166,15 @@
             .foot a {
                 color: var(--ink);
             }
+            .foot a#analysis-link {
+                color: var(--mute);
+                text-decoration: none;
+                margin-left: 2px;
+            }
+            .foot a#analysis-link:hover {
+                color: var(--ink);
+                text-decoration: underline;
+            }
 
             /* ── Analysis tab styles ── */
 
@@ -374,6 +383,7 @@
             <p class="foot">
                 All links are automatically aggregated via Google News RSS. Errors and
                 irrelevant results may occur.
+                <a href="#analysis" id="analysis-link">Analysis</a>
             </p>
         </div>
 
@@ -430,20 +440,8 @@
                 }
             });
 
-            // Create the Analysis tab (rightmost)
-            const analysisBtn = document.createElement("button");
-            analysisBtn.className = "tab-button";
-            analysisBtn.textContent = "\u{1F4CA} Analysis";
-            analysisBtn.dataset.feed = "analysis";
-            analysisBtn.onclick = () => {
-                setActiveTab(analysisBtn);
-                window.history.pushState(null, null, "#analysis");
-                showAnalysisTab();
-            };
-            tabContainer.appendChild(analysisBtn);
-
+            // Handle #analysis deep link
             if (hash === "analysis") {
-                setActiveTab(analysisBtn);
                 showAnalysisTab();
                 initialFeedLoaded = true;
             }
@@ -509,7 +507,18 @@
 
             /* ── Analysis tab ── */
 
+            // Wire up the footer link
+            document.getElementById("analysis-link").addEventListener("click", (e) => {
+                e.preventDefault();
+                window.history.pushState(null, null, "#analysis");
+                showAnalysisTab();
+            });
+
             function showAnalysisTab() {
+                // Deselect any active feed tab
+                document
+                    .querySelectorAll(".tab-button")
+                    .forEach((b) => b.classList.remove("active"));
                 // Check if already authenticated this session
                 if (sessionStorage.getItem("analysis_auth") === "1") {
                     loadReportList();
