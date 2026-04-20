@@ -4,6 +4,8 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Right-Wing Media Monitor</title>
+        <!-- marked.js for Markdown rendering (Analysis tab) -->
+        <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
         <style>
             :root {
                 --bg: #f5f5f4;
@@ -47,8 +49,7 @@
                 font-size: 13px;
                 margin-top: 2px;
             }
-
-            /* Tab Navigation — pill buttons matching rightwing.html */
+            /* Tab Navigation — pill buttons */
             .tabs {
                 display: flex;
                 flex-wrap: wrap;
@@ -77,7 +78,6 @@
                 color: #fff;
                 border-color: var(--ink);
             }
-
             /* Content area */
             .content {
                 background: #fff;
@@ -87,8 +87,7 @@
                 max-height: 75vh;
                 overflow-y: auto;
             }
-
-            /* Article items — thin separator style from rightwing.html */
+            /* Article items — thin separator style */
             .article-card {
                 border-top: 1px solid rgba(0, 0, 0, 0.08);
                 padding-top: 10px;
@@ -128,7 +127,6 @@
                 margin: 4px 0 0 0;
                 line-height: 1.35;
             }
-
             .loading {
                 color: var(--mute);
                 font-style: italic;
@@ -152,14 +150,12 @@
                 text-align: center;
                 padding: 40px 0;
             }
-
             /* Wrapper that locks content width to the tab row */
             .feed-wrap {
                 display: inline-flex;
                 flex-direction: column;
                 align-items: stretch;
             }
-
             /* Footer */
             .foot {
                 text-align: center;
@@ -170,6 +166,196 @@
             .foot a {
                 color: var(--ink);
             }
+
+            /* ── Analysis tab styles ── */
+
+            /* Password form */
+            .pw-form {
+                text-align: center;
+                padding: 40px 20px;
+            }
+            .pw-form p {
+                color: var(--mute);
+                font-size: 13px;
+                margin: 0 0 12px 0;
+            }
+            .pw-form input {
+                font: inherit;
+                font-size: 14px;
+                padding: 8px 12px;
+                border: 1px solid var(--line);
+                border-radius: 8px;
+                outline: none;
+                width: 220px;
+                transition: border-color 0.15s;
+            }
+            .pw-form input:focus {
+                border-color: var(--ink);
+            }
+            .pw-form button {
+                font: inherit;
+                font-size: 13px;
+                font-weight: 600;
+                padding: 8px 16px;
+                margin-left: 6px;
+                border: none;
+                border-radius: 8px;
+                background: var(--ink);
+                color: #fff;
+                cursor: pointer;
+                transition: opacity 0.15s;
+            }
+            .pw-form button:hover {
+                opacity: 0.85;
+            }
+            .pw-error {
+                color: #b91c1c;
+                font-size: 12px;
+                margin-top: 8px;
+            }
+
+            /* Report list */
+            .report-list {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+            .report-list li {
+                border-top: 1px solid rgba(0, 0, 0, 0.08);
+                padding: 10px 0;
+            }
+            .report-list li:first-child {
+                border-top: 0;
+                padding-top: 0;
+            }
+            .report-list a {
+                color: var(--ink);
+                text-decoration: none;
+                font-size: 14px;
+                font-weight: 600;
+                display: block;
+                line-height: 1.3;
+                cursor: pointer;
+            }
+            .report-list a:hover {
+                text-decoration: underline;
+            }
+            .report-list .report-date {
+                font-size: 12px;
+                color: var(--mute);
+                margin-top: 2px;
+            }
+
+            /* Back button */
+            .back-btn {
+                font: inherit;
+                font-size: 13px;
+                font-weight: 600;
+                color: var(--mute);
+                background: none;
+                border: 1px solid var(--line);
+                border-radius: 8px;
+                padding: 5px 12px;
+                cursor: pointer;
+                margin-bottom: 12px;
+                transition: all 0.15s;
+            }
+            .back-btn:hover {
+                background: #f5f5f4;
+                border-color: #d6d3d1;
+                color: var(--ink);
+            }
+
+            /* Rendered markdown */
+            .md-body {
+                font-size: 14px;
+                line-height: 1.6;
+                color: var(--ink);
+            }
+            .md-body h1 {
+                font-size: 20px;
+                margin: 0 0 8px 0;
+                padding-bottom: 6px;
+                border-bottom: 2px solid var(--line);
+            }
+            .md-body h2 {
+                font-size: 17px;
+                margin: 20px 0 6px 0;
+                padding-bottom: 4px;
+                border-bottom: 1px solid var(--line);
+            }
+            .md-body h3 {
+                font-size: 15px;
+                margin: 16px 0 4px 0;
+            }
+            .md-body p {
+                margin: 8px 0;
+            }
+            .md-body ul,
+            .md-body ol {
+                padding-left: 24px;
+                margin: 8px 0;
+            }
+            .md-body li {
+                margin: 4px 0;
+            }
+            .md-body blockquote {
+                margin: 12px 0;
+                padding: 8px 16px;
+                border-left: 3px solid var(--ink);
+                background: var(--bg);
+                border-radius: 0 8px 8px 0;
+                color: #44403c;
+            }
+            .md-body pre {
+                background: #292524;
+                color: #e7e5e4;
+                padding: 12px 16px;
+                border-radius: 8px;
+                overflow-x: auto;
+                font-size: 13px;
+                line-height: 1.4;
+            }
+            .md-body code {
+                font-family: "SF Mono", "Fira Code", Menlo, monospace;
+                font-size: 13px;
+            }
+            .md-body :not(pre) > code {
+                background: var(--bg);
+                padding: 2px 5px;
+                border-radius: 4px;
+            }
+            .md-body table {
+                border-collapse: collapse;
+                width: 100%;
+                margin: 12px 0;
+                font-size: 13px;
+            }
+            .md-body th,
+            .md-body td {
+                border: 1px solid var(--line);
+                padding: 6px 10px;
+                text-align: left;
+            }
+            .md-body th {
+                background: var(--bg);
+                font-weight: 600;
+            }
+            .md-body hr {
+                border: none;
+                border-top: 1px solid var(--line);
+                margin: 16px 0;
+            }
+            .md-body a {
+                color: #2563eb;
+                text-decoration: none;
+            }
+            .md-body a:hover {
+                text-decoration: underline;
+            }
+            .md-body strong {
+                font-weight: 700;
+            }
         </style>
     </head>
     <body>
@@ -179,19 +365,33 @@
                     <h1>Transatlantic Right-Wing Media Monitor</h1>
                 </div>
             </header>
-
             <div class="feed-wrap">
                 <div class="tabs" id="tab-container"></div>
-
                 <div class="content" id="feed-content">
                     <span class="loading">Select a category to load the feed...</span>
                 </div>
             </div>
-
-            <p class="foot">All links are automatically aggregated via Google News RSS. Errors and irrelevant results may occur.</p>
+            <p class="foot">
+                All links are automatically aggregated via Google News RSS. Errors and
+                irrelevant results may occur.
+            </p>
         </div>
 
         <script>
+            /* ── Configuration ── */
+
+            // SHA-256 hash of the password. To change the password, run in browser console:
+            //   crypto.subtle.digest('SHA-256', new TextEncoder().encode('YOUR_PASSWORD'))
+            //     .then(h => console.log(Array.from(new Uint8Array(h)).map(b => b.toString(16).padStart(2,'0')).join('')))
+            // Then paste the resulting hash below.
+            const ANALYSIS_PW_HASH =
+                "72d293a6c33c566f6ca07e3523ec1e78ade66feae25cbb9137d4977c09c539e1"; // "password"
+
+            const REPORTS_API_URL =
+                "https://api.github.com/repos/victor-shammas/media-monitor/contents/reports";
+
+            /* ── Feed tabs ── */
+
             const feeds = [
                 { filename: "usa", name: "\u{1F1FA}\u{1F1F8} USA" },
                 { filename: "norway", name: "\u{1F1F3}\u{1F1F4} Norway" },
@@ -210,35 +410,173 @@
             const tabContainer = document.getElementById("tab-container");
             const feedContent = document.getElementById("feed-content");
 
-            // Read the word after the '#' in the URL (e.g., #hungary -> hungary)
             const hash = window.location.hash.substring(1);
             let initialFeedLoaded = false;
 
-            feeds.forEach((feed, index) => {
+            // Create feed tabs
+            feeds.forEach((feed) => {
                 const btn = document.createElement("button");
                 btn.className = "tab-button";
                 btn.textContent = feed.name;
-
+                btn.dataset.feed = feed.filename;
                 btn.onclick = () => {
                     loadFeed(feed.filename, btn);
                     window.history.pushState(null, null, `#${feed.filename}`);
                 };
                 tabContainer.appendChild(btn);
-
                 if (hash === feed.filename) {
                     loadFeed(feed.filename, btn);
                     initialFeedLoaded = true;
                 }
             });
 
+            // Create the Analysis tab (rightmost)
+            const analysisBtn = document.createElement("button");
+            analysisBtn.className = "tab-button";
+            analysisBtn.textContent = "\u{1F4CA} Analysis";
+            analysisBtn.dataset.feed = "analysis";
+            analysisBtn.onclick = () => {
+                setActiveTab(analysisBtn);
+                window.history.pushState(null, null, "#analysis");
+                showAnalysisTab();
+            };
+            tabContainer.appendChild(analysisBtn);
+
+            if (hash === "analysis") {
+                setActiveTab(analysisBtn);
+                showAnalysisTab();
+                initialFeedLoaded = true;
+            }
+
             if (!initialFeedLoaded && feeds.length > 0) {
                 const firstBtn = tabContainer.firstChild;
                 loadFeed(feeds[0].filename, firstBtn);
             }
 
+            /* ── Utility ── */
+
+            function setActiveTab(activeBtn) {
+                document
+                    .querySelectorAll(".tab-button")
+                    .forEach((b) => b.classList.remove("active"));
+                activeBtn.classList.add("active");
+            }
+
+            async function sha256(message) {
+                const msgBuffer = new TextEncoder().encode(message);
+                const hashBuffer = await crypto.subtle.digest("SHA-256", msgBuffer);
+                return Array.from(new Uint8Array(hashBuffer))
+                    .map((b) => b.toString(16).padStart(2, "0"))
+                    .join("");
+            }
+
+            /* ── Analysis tab ── */
+
+            function showAnalysisTab() {
+                // Check if already authenticated this session
+                if (sessionStorage.getItem("analysis_auth") === "1") {
+                    loadReportList();
+                    return;
+                }
+                // Show password prompt
+                feedContent.innerHTML = `
+        <div class="pw-form">
+          <p>This section is password-protected.</p>
+          <div>
+            <input type="password" id="pw-input" placeholder="Enter password" autocomplete="off" />
+            <button id="pw-submit">Unlock</button>
+          </div>
+          <div class="pw-error" id="pw-error" style="display:none;"></div>
+        </div>
+      `;
+                const pwInput = document.getElementById("pw-input");
+                const pwSubmit = document.getElementById("pw-submit");
+                const pwError = document.getElementById("pw-error");
+
+                async function tryAuth() {
+                    const val = pwInput.value;
+                    if (!val) return;
+                    const hashed = await sha256(val);
+                    if (hashed === ANALYSIS_PW_HASH) {
+                        sessionStorage.setItem("analysis_auth", "1");
+                        loadReportList();
+                    } else {
+                        pwError.textContent = "Incorrect password.";
+                        pwError.style.display = "block";
+                        pwInput.value = "";
+                        pwInput.focus();
+                    }
+                }
+
+                pwSubmit.addEventListener("click", tryAuth);
+                pwInput.addEventListener("keydown", (e) => {
+                    if (e.key === "Enter") tryAuth();
+                });
+                pwInput.focus();
+            }
+
+            async function loadReportList() {
+                feedContent.innerHTML = `<span class="loading">Loading reports...</span>`;
+                try {
+                    const res = await fetch(REPORTS_API_URL);
+                    if (!res.ok) throw new Error("Could not load reports folder.");
+                    const files = await res.json();
+
+                    // Filter: only .md files, exclude filenames containing "input" (case-insensitive)
+                    const reports = files
+                        .filter(
+                            (f) =>
+                                f.name.endsWith(".md") &&
+                                !f.name.toLowerCase().includes("input"),
+                        )
+                        .sort((a, b) => a.name.localeCompare(b.name));
+
+                    if (reports.length === 0) {
+                        feedContent.innerHTML = `<div class="no-results">No reports found.</div>`;
+                        return;
+                    }
+
+                    let html = `<ul class="report-list">`;
+                    reports.forEach((r) => {
+                        // Derive a display name: strip .md, replace hyphens/underscores with spaces, title-case
+                        const displayName = r.name
+                            .replace(/\.md$/i, "")
+                            .replace(/[-_]/g, " ")
+                            .replace(/\b\w/g, (c) => c.toUpperCase());
+                        html += `
+            <li>
+              <a onclick="loadReport('${r.download_url}', '${displayName.replace(/'/g, "\\'")}')">${displayName}</a>
+            </li>`;
+                    });
+                    html += `</ul>`;
+                    feedContent.innerHTML = html;
+                    feedContent.scrollTop = 0;
+                } catch (err) {
+                    feedContent.innerHTML = `<span class="error">\u26A0 ${err.message}</span>`;
+                }
+            }
+
+            async function loadReport(rawUrl, title) {
+                feedContent.innerHTML = `<span class="loading">Loading report...</span>`;
+                try {
+                    const res = await fetch(rawUrl);
+                    if (!res.ok) throw new Error("Could not fetch report.");
+                    const md = await res.text();
+                    const rendered = marked.parse(md);
+                    feedContent.innerHTML = `
+          <button class="back-btn" onclick="loadReportList()">\u2190 Back to reports</button>
+          <div class="md-body">${rendered}</div>
+        `;
+                    feedContent.scrollTop = 0;
+                } catch (err) {
+                    feedContent.innerHTML = `<span class="error">\u26A0 ${err.message}</span>`;
+                }
+            }
+
+            /* ── Feed loading (existing logic) ── */
+
             function parseTextToHTML(rawText) {
                 const parts = rawText.split(/\u2550{10,}/);
-
                 if (parts.length < 3)
                     return `<div class="no-results">No recent articles found in this category.</div>`;
 
@@ -258,7 +596,6 @@
                     if (lines.length < 3) return;
 
                     let title = lines[0].replace(/^\d+\.\s*/, "");
-
                     let url = "";
                     let lastLine = lines[lines.length - 1];
                     if (lastLine.startsWith("http")) {
@@ -268,7 +605,6 @@
 
                     let published = "";
                     let summary = "";
-
                     for (let i = 1; i < lines.length; i++) {
                         if (lines[i].startsWith("Published:")) {
                             published = lines[i];
@@ -283,27 +619,22 @@
                     }
 
                     htmlOutput += `
-            <div class="article-card">
-                <h3><a href="${url || "#"}" target="_blank" rel="noopener noreferrer">${title}</a></h3>
-                <div class="article-meta">
-                    ${published ? `${published.replace("Published:", "").trim()}` : ""}
-                </div>
-                ${summary ? `<p class="article-summary">${summary.trim()}</p>` : ""}
+          <div class="article-card">
+            <h3><a href="${url || "#"}" target="_blank" rel="noopener noreferrer">${title}</a></h3>
+            <div class="article-meta">
+              ${published ? `${published.replace("Published:", "").trim()}` : ""}
             </div>
-            `;
+            ${summary ? `<p class="article-summary">${summary.trim()}</p>` : ""}
+          </div>
+        `;
                 });
 
                 return htmlOutput;
             }
 
             function loadFeed(filename, clickedBtn) {
-                document
-                    .querySelectorAll(".tab-button")
-                    .forEach((btn) => btn.classList.remove("active"));
-                if (clickedBtn) clickedBtn.classList.add("active");
-
+                setActiveTab(clickedBtn);
                 feedContent.innerHTML = `<span class="loading">Fetching newest data for ${filename}...</span>`;
-
                 fetch(`feeds/${filename}.txt`)
                     .then((response) => {
                         if (!response.ok)
