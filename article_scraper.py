@@ -3,27 +3,18 @@
 Article Scraper — Enriches monitor data with article text extracts.
 
 Reads the RSS metadata from monitor_state.json, resolves Google News redirect
-URLs, extracts the first 300 words of article text via trafilatura, and writes
-dated enriched JSON files for the downstream AI Reporter.
-
-Articles are routed into enriched files by their publication date, not the
-scrape date. An article published on April 19th will always land in
-enriched_2026-04-19.json, even if scraped on April 20th. A single run may
-therefore write to multiple date files.
-
-Designed to be run multiple times per day. Each run merges new articles into
-the appropriate date files without duplicates. Already-enriched articles are
-skipped automatically via a dedup pool spanning the lookback window.
+URLs, extracts the first 300 words of article text via trafilatura, and writes dated enriched
+JSON files for the downstream AI Reporter.
 
 Usage Examples:
     python article_scraper.py              # Scrape articles from the last 24 hours
     python article_scraper.py --hours 48   # Expand window to the last 48 hours
-    python article_scraper.py --category norway   # Scrape only a single specific category
+    python article_scraper.py --category frp  # Scrape only a single specific category
 
 Flags:
-    --hours INT       Look-back window in hours to scrape (default: 24)
-    --outdir DIR      Output directory for the enriched JSON files (default: enriched/)
-    --category ID     Scrape only a specific feed ID (e.g., 'norway', 'usa')
+    --hours INT        Look-back window in hours to scrape (default: 24)
+    --outdir DIR       Output directory for the enriched JSON files (default: enriched/)
+    --category ID      Scrape only a specific feed ID (e.g., 'frp', 'maga')
 """
 
 import argparse
@@ -41,13 +32,23 @@ except ImportError:
     print("Install dependencies: pip install trafilatura googlenewsdecoder")
     sys.exit(1)
 
-import tomllib
-
-with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "config.toml"), "rb") as _f:
-    CONFIG = tomllib.load(_f)
-CATEGORY_LABELS = CONFIG["categories"]
-
 STATE_FILE = "monitor_state.json"
+BLOCKLIST_FILE = "blocklist.json"
+
+CATEGORY_LABELS = {
+    "maga": "🇺🇸 MAGA / Trump",
+    "frp": "🇳🇴 Fremskrittspartiet",
+    "sd": "🇸🇪 Sverigedemokraterna",
+    "rn": "🇫🇷 Rassemblement National",
+    "fdi": "🇮🇹 Fratelli d'Italia / Lega",
+    "reform": "🇬🇧 Reform UK",
+    "afd": "🇩🇪 Alternative für Deutschland",
+    "general": "🌍 General Right-Wing",
+    "nodes": "🕸️ Transnational Networks",
+    "hungary": "🇭🇺 Hungary (Fidesz / Tisza)",
+    "poland": "🇵🇱 Prawo i Sprawiedliwość",
+    "spain": "🇪🇸 Vox",
+}
 
 # Domains known to fail — skip to save time
 SKIP_DOMAINS = {
@@ -89,14 +90,39 @@ def get_sort_time(item: dict) -> datetime:
             return datetime.min.replace(tzinfo=timezone.utc)
 
 
-def publication_date_slug(item: dict) -> str:
-    """Return YYYY-MM-DD for the article's publication date, falling back to today."""
-    date_str = item.get("date", "")
+def load_blocklist() -> dict:
+    """Load blocklist.json if it exists. Returns dict with urls, sources, title_patterns."""
+    default = {"urls": [], "sources": [], "title_patterns": []}
+    if not os.path.exists(BLOCKLIST_FILE):
+        return default
     try:
-        dt = datetime.fromisoformat(date_str.replace("Z", "+00:00"))
-        return dt.strftime("%Y-%m-%d")
-    except Exception:
-        return datetime.now().strftime("%Y-%m-%d")
+        with open(BLOCKLIST_FILE, "r", encoding="utf-8") as f:
+            bl = json.load(f)
+        # Normalize source entries to lowercase for matching
+        bl.setdefault("urls", [])
+        bl.setdefault("sources", [])
+        bl.setdefault("title_patterns", [])
+        return bl
+    except Exception as e:
+        print(f"  Warning: could not load {BLOCKLIST_FILE}: {e}")
+        return default
+
+
+def is_blocklisted_source(source: str, blocklist: dict) -> bool:
+    """Check if a source name matches any blocklist source entry (case-insensitive substring)."""
+    source_lower = source.lower()
+    return any(b.lower() in source_lower for b in blocklist.get("sources", []))
+
+
+def is_blocklisted_title(title: str, blocklist: dict) -> bool:
+    """Check if a title matches any blocklist title pattern (case-insensitive substring)."""
+    title_lower = title.lower()
+    return any(p.lower() in title_lower for p in blocklist.get("title_patterns", []))
+
+
+def is_blocklisted_url(url: str, blocklist: dict) -> bool:
+    """Check if a resolved URL matches any blocklist URL entry (substring match)."""
+    return any(u in url for u in blocklist.get("urls", []))
 
 
 # ── Step 1: Resolve Google News redirect URLs ─────────────────────────────
@@ -116,12 +142,12 @@ def resolve_url(google_url: str) -> tuple[str | None, str]:
 # ── Step 2: Extract article text ──────────────────────────────────────────
 
 
-def extract_article(url: str) -> tuple[str | None, int, int, str]:
-    """Fetch and extract article text. Returns (extract, word_count, article_length, status)."""
+def extract_article(url: str) -> tuple[str | None, int, str]:
+    """Fetch and extract article text. Returns (extract, word_count, status)."""
     try:
         downloaded = trafilatura.fetch_url(url)
         if not downloaded:
-            return None, 0, 0, "fetch_failed"
+            return None, 0, "fetch_failed"
 
         text = trafilatura.extract(
             downloaded,
@@ -129,83 +155,15 @@ def extract_article(url: str) -> tuple[str | None, int, int, str]:
             include_tables=False,
             no_fallback=False,
         )
+
         if not text or len(text.strip()) < 50:
-            wc = len(text.split()) if text else 0
-            return text, wc, wc, "too_short"
+            return text, len(text.split()) if text else 0, "too_short"
 
         words = text.split()
         truncated = " ".join(words[:MAX_EXTRACT_WORDS])
-        return truncated, min(len(words), MAX_EXTRACT_WORDS), len(words), "ok"
-
+        return truncated, len(words), "ok"
     except Exception as e:
-        return None, 0, 0, f"error: {e}"
-
-
-# ── Daily file management ────────────────────────────────────────────────
-
-
-def load_enriched_file(path: str) -> list[dict]:
-    """Load a single enriched JSON file. Returns its articles list."""
-    if not os.path.exists(path):
-        return []
-    try:
-        with open(path, "r", encoding="utf-8") as f:
-            data = json.load(f)
-        return data.get("articles", [])
-    except Exception as e:
-        print(f"  ⚠ Failed to load {path}: {e}")
-        return []
-
-
-def load_recent_files(
-    outdir: str, hours: int
-) -> tuple[dict[str, list[dict]], set[str]]:
-    """Load enriched files covering the lookback window.
-
-    Returns (articles_by_date, all_seen_urls).
-    articles_by_date: {date_slug: [article, ...]} for each loaded file
-    all_seen_urls: set of google_urls across all loaded files (for dedup)
-    """
-    days_to_check = (hours + 23) // 24 + 1
-    articles_by_date: dict[str, list[dict]] = {}
-    all_seen_urls: set[str] = set()
-
-    now = datetime.now()
-    for offset in range(days_to_check):
-        day_slug = (now - timedelta(days=offset)).strftime("%Y-%m-%d")
-        day_path = os.path.join(outdir, f"enriched_{day_slug}.json")
-        articles = load_enriched_file(day_path)
-        if articles:
-            articles_by_date[day_slug] = articles
-        urls = {a.get("google_url", "") for a in articles if a.get("google_url")}
-        all_seen_urls |= urls
-
-    return articles_by_date, all_seen_urls
-
-
-def _compute_cumulative_stats(articles: list[dict]) -> dict:
-    """Compute cumulative stats across a list of articles."""
-    cumulative = {
-        "total": len(articles),
-        "resolved": 0,
-        "extracted": 0,
-        "skipped": 0,
-        "failed_resolve": 0,
-        "failed_extract": 0,
-    }
-    for a in articles:
-        status = a.get("extract_status", "")
-        if status == "skipped_domain":
-            cumulative["skipped"] += 1
-        elif status in ("resolve_error", "resolve_decode_failed"):
-            cumulative["failed_resolve"] += 1
-        else:
-            cumulative["resolved"] += 1
-            if status == "ok":
-                cumulative["extracted"] += 1
-            elif status in ("fetch_failed", "too_short", "error"):
-                cumulative["failed_extract"] += 1
-    return cumulative
+        return None, 0, f"error: {e}"
 
 
 # ── Main ──────────────────────────────────────────────────────────────────
@@ -231,80 +189,60 @@ def main():
     with open(STATE_FILE, "r", encoding="utf-8") as f:
         state = json.load(f)
 
+    # Load blocklist
+    blocklist = load_blocklist()
+    bl_sources = len(blocklist.get("sources", []))
+    bl_patterns = len(blocklist.get("title_patterns", []))
+    bl_urls = len(blocklist.get("urls", []))
+    if bl_sources or bl_patterns or bl_urls:
+        print(f"  Blocklist loaded: {bl_sources} sources, {bl_patterns} title patterns, {bl_urls} URLs")
+
     cutoff = datetime.now(timezone.utc) - timedelta(hours=args.hours)
     os.makedirs(args.outdir, exist_ok=True)
 
-    # ── Load recent enriched files for dedup ─────────────────────────────
-    articles_by_date, already_scraped_urls = load_recent_files(
-        args.outdir, args.hours
-    )
-    total_existing = sum(len(v) for v in articles_by_date.values())
-
-    if total_existing:
-        print(
-            f"  Loaded {len(articles_by_date)} enriched file(s) with {total_existing} articles"
-        )
-    print(
-        f"  Dedup pool: {len(already_scraped_urls)} URLs from enriched files "
-        f"covering last {args.hours}h"
-    )
-
-    # ── Collect candidate articles from state ─────────────────────────────
-    candidates = []
+    # Collect articles to scrape
+    articles = []
     for cat_id, items in state.items():
         if args.category and cat_id != args.category:
             continue
         for item in items:
             if get_sort_time(item) >= cutoff:
-                google_url = item.get("url", "")
-                # Skip articles we've already enriched
-                if google_url and google_url in already_scraped_urls:
-                    continue
-                candidates.append({**item, "_category": cat_id})
+                articles.append({**item, "_category": cat_id})
 
-    timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-
-    if not candidates:
-        print(
-            f"[{timestamp}] No new articles to scrape. "
-            f"Enriched files already have {total_existing} articles."
-        )
+    if not articles:
+        print(f"No articles found in the last {args.hours} hours.")
         sys.exit(0)
 
-    cat_count = len(set(a["_category"] for a in candidates))
+    date_slug = datetime.now().strftime("%Y-%m-%d")
+    time_slug = datetime.now().strftime("%H%M")
+    file_slug = f"{date_slug}_{time_slug}"
+    timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+
+    cat_count = len(set(a["_category"] for a in articles))
     print(
-        f"[{timestamp}] Scraping {len(candidates)} new articles across {cat_count} categories"
+        f"[{timestamp}] Scraping {len(articles)} articles across {cat_count} categories"
     )
     print(
-        f"  Look-back: {args.hours}h | Output: {args.outdir}/"
+        f"  Look-back: {args.hours}h | Output: {args.outdir}/enriched_{file_slug}.json"
     )
-    if total_existing:
-        print(
-            f"  Merging with {total_existing} previously enriched articles"
-        )
     print()
 
-    # ── Determine starting ref number ─────────────────────────────────────
-    # Continue numbering from the highest ref across all loaded files
-    max_existing_ref = 0
-    for articles in articles_by_date.values():
-        for a in articles:
-            max_existing_ref = max(max_existing_ref, a.get("ref", 0))
-    ref_num = max_existing_ref
+    # ── Process each article ──────────────────────────────────────────────
 
-    # ── Process each new article ──────────────────────────────────────────
-
-    new_articles = []
+    enriched = []
     stats = {
-        "total": len(candidates),
+        "total": len(articles),
         "resolved": 0,
         "extracted": 0,
         "skipped": 0,
+        "blocklisted": 0,
         "failed_resolve": 0,
         "failed_extract": 0,
     }
 
-    for i, item in enumerate(candidates, 1):
+    ref_num = 0
+
+    for i, item in enumerate(articles, 1):
         ref_num += 1
         cat_id = item["_category"]
         cat_label = CATEGORY_LABELS.get(cat_id, cat_id)
@@ -323,12 +261,27 @@ def main():
             "extract": None,
             "extract_status": "pending",
             "word_count": 0,
-            "article_length": 0,
         }
 
         # Progress indicator
-        progress = f"[{i}/{len(candidates)}]"
+        progress = f"[{i}/{len(articles)}]"
         print(f"  {progress} {cat_label} | {source} | {title[:55]}...")
+
+        # ── Blocklist: check source name ──────────────────────────────
+        if is_blocklisted_source(source, blocklist):
+            record["extract_status"] = "blocklisted_source"
+            stats["blocklisted"] += 1
+            print(f"    ⊘ Blocklisted source ({source})")
+            enriched.append(record)
+            continue
+
+        # ── Blocklist: check title patterns ───────────────────────────
+        if is_blocklisted_title(title, blocklist):
+            record["extract_status"] = "blocklisted_title"
+            stats["blocklisted"] += 1
+            print(f"    ⊘ Blocklisted title pattern")
+            enriched.append(record)
+            continue
 
         # Step 1: Resolve URL
         resolved_url, resolve_status = resolve_url(google_url)
@@ -336,89 +289,78 @@ def main():
         if resolve_status != "ok" or not resolved_url:
             record["extract_status"] = f"resolve_{resolve_status}"
             stats["failed_resolve"] += 1
-            print(f"      ✗ Redirect failed: {resolve_status}")
-            new_articles.append(record)
+            print(f"    ✗ Redirect failed: {resolve_status}")
+            enriched.append(record)
             continue
 
         record["resolved_url"] = resolved_url
         stats["resolved"] += 1
+
+        # ── Blocklist: check resolved URL ─────────────────────────────
+        if is_blocklisted_url(resolved_url, blocklist):
+            record["extract_status"] = "blocklisted_url"
+            stats["blocklisted"] += 1
+            print(f"    ⊘ Blocklisted URL ({resolved_url})")
+            enriched.append(record)
+            continue
 
         # Check for known-bad domains
         domain = urlparse(resolved_url).netloc.lower()
         if domain in SKIP_DOMAINS:
             record["extract_status"] = "skipped_domain"
             stats["skipped"] += 1
-            print(f"      ⊘ Skipped ({domain})")
-            new_articles.append(record)
+            print(f"    ⊘ Skipped ({domain})")
+            enriched.append(record)
             continue
 
         # Step 2: Extract article text
-        extract, word_count, article_length, extract_status = extract_article(resolved_url)
+        extract, word_count, extract_status = extract_article(resolved_url)
         record["extract"] = extract
         record["word_count"] = word_count
-        record["article_length"] = article_length
         record["extract_status"] = extract_status
 
         if extract_status == "ok":
             stats["extracted"] += 1
-            print(f"      ✓ {word_count} words ({domain})")
+            print(f"    ✓ {word_count} words ({domain})")
         else:
             stats["failed_extract"] += 1
-            print(f"      ✗ {extract_status} ({domain})")
+            print(f"    ✗ {extract_status} ({domain})")
 
-        new_articles.append(record)
+        enriched.append(record)
         time.sleep(REQUEST_DELAY)
 
-    # ── Route articles by publication date and write output ───────────────
+    # ── Write output ──────────────────────────────────────────────────────
 
-    modified_dates = set()
-    for article in new_articles:
-        slug = publication_date_slug(article)
-        articles_by_date.setdefault(slug, [])
-        articles_by_date[slug].append(article)
-        modified_dates.add(slug)
+    output = {
+        "generated_at": timestamp,
+        "look_back_hours": args.hours,
+        "stats": stats,
+        "articles": enriched,
+    }
 
-    written_files = []
-    for slug in sorted(modified_dates):
-        merged = articles_by_date[slug]
-        outpath = os.path.join(args.outdir, f"enriched_{slug}.json")
-        cumulative = _compute_cumulative_stats(merged)
-
-        output = {
-            "date": slug,
-            "last_updated": timestamp,
-            "stats": {
-                "total_articles": len(merged),
-                "this_run": stats,
-                "cumulative": cumulative,
-            },
-            "articles": merged,
-        }
-
-        with open(outpath, "w", encoding="utf-8") as f:
-            json.dump(output, f, indent=2, ensure_ascii=False)
-        written_files.append((slug, len(merged)))
+    outpath = os.path.join(args.outdir, f"enriched_{file_slug}.json")
+    with open(outpath, "w", encoding="utf-8") as f:
+        json.dump(output, f, indent=2, ensure_ascii=False)
 
     # ── Summary ───────────────────────────────────────────────────────────
 
-    total_new = stats["total"]
+    total = stats["total"]
     print()
     print("=" * 60)
     print("SCRAPER SUMMARY")
     print("=" * 60)
-    print(f"  New articles processed: {total_new}")
+    print(f"  Total articles:    {total}")
     print(
-        f"  URLs resolved:   {stats['resolved']}/{total_new} ({100 * stats['resolved'] // max(total_new, 1)}%)"
+        f"  URLs resolved:     {stats['resolved']}/{total} ({100 * stats['resolved'] // total}%)"
     )
     print(
-        f"  Text extracted:  {stats['extracted']}/{total_new} ({100 * stats['extracted'] // max(total_new, 1)}%)"
+        f"  Text extracted:    {stats['extracted']}/{total} ({100 * stats['extracted'] // total}%)"
     )
-    print(f"  Domains skipped: {stats['skipped']}")
-    print(f"  Failed (resolve): {stats['failed_resolve']}")
+    print(f"  Blocklisted:       {stats['blocklisted']}")
+    print(f"  Domains skipped:   {stats['skipped']}")
+    print(f"  Failed (resolve):  {stats['failed_resolve']}")
     print(f"  Failed (extract):  {stats['failed_extract']}")
-    print(f"  ─────────────────────────────")
-    for slug, count in written_files:
-        print(f"  ✓ Saved → enriched_{slug}.json ({count} articles)")
+    print(f"\n  ✓ Saved → {outpath}")
     print()
 
 
