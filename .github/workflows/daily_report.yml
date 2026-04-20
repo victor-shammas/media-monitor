@@ -25,7 +25,7 @@ jobs:
           python-version: "3.x"
 
       - name: Install dependencies
-        run: pip install google-genai tenacity markdown
+        run: pip install google-genai tenacity markdown anthropic
 
       - name: Run AI Reporter
         env:
