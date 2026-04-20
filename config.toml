@@ -6,11 +6,11 @@ france = "🇫🇷 Rassemblement National"
 italy = "🇮🇹 Fratelli d'Italia / Lega"
 uk = "🇬🇧 Reform UK"
 germany = "🇩🇪 Alternative für Deutschland"
-general = "🌍 General Right-Wing News"
-networks = "🕸️ Transnational Networks"
 hungary = "🇭🇺 Fidesz / Tisza"
 poland = "🇵🇱 Prawo i Sprawiedliwość"
 spain = "🇪🇸 Vox"
+general = "🌍 General Right-Wing News"
+networks = "🕸️ Transnational Networks"
 
 [prompt]
 enriched_data_description = "Each article includes a title and, where available, an EXTRACT with the opening paragraphs of the article. Use the extracts to ground your analysis in the actual framing and argumentation of the source material."
@@ -34,7 +34,7 @@ FORMAT INSTRUCTIONS:
 
 CITATION INSTRUCTIONS:
 - Each article in the data has a reference number in square brackets, e.g. [1], [2].
-- When you make a claim that draws on a specific article, cite it inline using its number: e.g. 'Politician X said A [14], while Politican Y claimed B instead [27].' However, cite only the single most relevant source per claim: Never stack multiple citations (e.g. do NOT write, "Politician X said A [3] [27] [99] [104].").
+- When you make a claim that draws on a specific article, cite it inline using its number: e.g. 'Politician X said A [14], while Politician Y claimed B instead [27].' However, cite only the single most relevant source per claim: Never stack multiple citations (e.g. do NOT write, "Politician X said A [3] [27] [99] [104].").
 - Do NOT invent reference numbers that are not in the data.
 - Do NOT create a bibliography or references section — just use inline citations.
 
