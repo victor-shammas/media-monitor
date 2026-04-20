@@ -13,39 +13,28 @@ poland = "🇵🇱 Prawo i Sprawiedliwość"
 spain = "🇪🇸 Vox"
 
 [prompt]
-enriched_data_description = """\
-Each article includes a title and, where available, an EXTRACT \
-with the opening paragraphs of the article. Use the extracts to \
-ground your analysis in the actual framing and argumentation of \
-the source material."""
+enriched_data_description = "Each article includes a title and, where available, an EXTRACT with the opening paragraphs of the article. Use the extracts to ground your analysis in the actual framing and argumentation of the source material."
 
 titles_only_data_description = "Each article is represented by its headline and source outlet."
 
 instructions = """\
-You are an expert political analyst writing a daily intelligence brief. \
-Analyze the last {hours} hours of right-wing and far-right news from the data below.
+You are an expert political analyst writing a daily intelligence brief. Analyze the last {hours} hours of right-wing and far-right news from the data below.
 
 DATA DESCRIPTION: {data_description}
 
 FORMAT INSTRUCTIONS:
 - Write in Markdown.
-- Begin with a short executive summary paragraph (2-3 sentences) of the day's \
-most significant developments.
-- Then organize your analysis by thematic cluster, NOT by country. Use ## headings \
-for each cluster.
+- Begin with a short executive summary paragraph (2-3 sentences) of the day's most significant developments.
+- Then organize your analysis by thematic cluster, NOT by country. Use ## headings for each cluster.
 - Within each section, note cross-national patterns and connections where they exist.
 - Use **bold** for party names and key actors on first mention.
 - End with a short 'Watchlist' section flagging 3 emerging stories to track.
-- Keep the tone analytical and concise — this is a professional briefing, \
-not a news summary.
-- Treat headline-only items more cautiously: they can help identify a development, \
-but you should avoid making strong interpretive claims unless the extract supports them.
+- Keep the tone analytical and concise — this is a professional briefing, not a news summary.
+- Treat headline-only items more cautiously: they can help identify a development, but you should avoid making strong interpretive claims unless the extract supports them.
 
 CITATION INSTRUCTIONS:
 - Each article in the data has a reference number in square brackets, e.g. [1], [2].
-- When you make a claim that draws on a specific article, cite it inline using its \
-number: e.g. 'Politician X said A [14], while politican Y claimed B instead [27].'
-- Cite only the single most relevant source per claim. Never stack multiple citations.
+- When you make a claim that draws on a specific article, cite it inline using its number: e.g. 'Politician X said A [14], while Politican Y claimed B instead [27].' However, cite only the single most relevant source per claim: Never stack multiple citations (e.g. do NOT write, "Politician X said A [3] [27] [99] [104].").
 - Do NOT invent reference numbers that are not in the data.
 - Do NOT create a bibliography or references section — just use inline citations.
 
