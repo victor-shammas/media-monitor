@@ -175,7 +175,7 @@ def main():
         "--hours", type=int, default=24, help="Look-back window in hours (default: 24)"
     )
     parser.add_argument(
-        "--outdir", default="enriched", help="Output directory (default: enriched/)"
+        "--outdir", default="data-private", help="Output directory (default: enriched/)"
     )
     parser.add_argument(
         "--category", default=None, help="Scrape only a specific category (e.g., 'frp')"
@@ -195,7 +195,9 @@ def main():
     bl_patterns = len(blocklist.get("title_patterns", []))
     bl_urls = len(blocklist.get("urls", []))
     if bl_sources or bl_patterns or bl_urls:
-        print(f"  Blocklist loaded: {bl_sources} sources, {bl_patterns} title patterns, {bl_urls} URLs")
+        print(
+            f"  Blocklist loaded: {bl_sources} sources, {bl_patterns} title patterns, {bl_urls} URLs"
+        )
 
     cutoff = datetime.now(timezone.utc) - timedelta(hours=args.hours)
     os.makedirs(args.outdir, exist_ok=True)

@@ -55,7 +55,9 @@ except ImportError:
 
 import tomllib
 
-with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "config.toml"), "rb") as _f:
+with open(
+    os.path.join(os.path.dirname(os.path.abspath(__file__)), "config.toml"), "rb"
+) as _f:
     CONFIG = tomllib.load(_f)
 CATEGORY_LABELS = CONFIG["categories"]
 
@@ -273,7 +275,9 @@ def load_enriched(enriched_dir: str, hours: int = 24) -> list[dict] | None:
     Returns a merged, deduplicated list of articles or None.
     """
     now = datetime.now()
-    days_needed = (hours + 23) // 24 + 1  # +1 because the window always straddles midnight
+    days_needed = (
+        hours + 23
+    ) // 24 + 1  # +1 because the window always straddles midnight
     all_articles: list[dict] = []
     seen_titles: set[str] = set()
     files_loaded = 0
@@ -585,7 +589,7 @@ def main():
     )
     parser.add_argument(
         "--enriched-dir",
-        default="enriched",
+        default="data-private",
         help="Directory containing enriched JSON files (default: enriched/)",
     )
     parser.add_argument(
