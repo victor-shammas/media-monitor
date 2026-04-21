@@ -22,10 +22,13 @@ Flags:
 import argparse
 import json
 import os
+import socket
 import sys
 import time
 from datetime import datetime, timedelta, timezone
 from urllib.parse import urlparse
+
+socket.setdefaulttimeout(30)
 
 try:
     import trafilatura
