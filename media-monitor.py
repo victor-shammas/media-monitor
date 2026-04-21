@@ -603,7 +603,7 @@ def main():
                     json.dump(state, f, indent=2, ensure_ascii=False)
                 print(f"  Purged {removed} matching item(s) from state.")
                 # Regenerate text files so feeds/ stays in sync
-                timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+                timestamp = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S")
                 os.makedirs(args.outdir, exist_ok=True)
                 for feed in FEEDS:
                     fid = feed["id"]
@@ -652,7 +652,7 @@ def main():
             print(
                 f"  ✗ Purged {purged} blocklisted item(s) from state.", file=sys.stderr
             )
-        timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        timestamp = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S")
         os.makedirs(args.outdir, exist_ok=True)
         for feed in FEEDS:
             fid = feed["id"]
@@ -671,7 +671,7 @@ def main():
     # Create output directory if it doesn't exist
     os.makedirs(args.outdir, exist_ok=True)
 
-    timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    timestamp = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S")
 
     active_feeds = FEEDS
     if args.feeds:
