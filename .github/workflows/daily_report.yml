@@ -19,6 +19,13 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Checkout private data repo
+        uses: actions/checkout@v4
+        with:
+          repository: victor-shammas/media-monitor-data
+          path: data-private
+          token: ${{ secrets.DATA_REPO_PAT }}
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
@@ -48,6 +55,15 @@ jobs:
         # the run line below captures the last 24 hours of news reports, sends both email and writes a markdown file, and follows the fallback chain: Gemini 2.5 Pro → Claude Sonnet → Gemini 2.5 Flash
         # ──────────────────────────────────────────────────────────
         run: python ai_reporter.py --hours 24 --model auto --email --markdown
+
+      - name: Push input logs to private repo
+        run: |
+          cd data-private
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Report input $(date -u +%Y-%m-%d)" || echo "No changes"
+          git push
 
       - name: Commit reports
         run: |
