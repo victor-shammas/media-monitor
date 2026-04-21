@@ -29,7 +29,6 @@ Flags:
 """
 
 import argparse
-import glob
 import json
 import os
 import re
@@ -284,19 +283,20 @@ def load_enriched(enriched_dir: str, hours: int = 24) -> list[dict] | None:
 
     for offset in range(days_needed):
         date_slug = (now - timedelta(days=offset)).strftime("%Y-%m-%d")
-        pattern = os.path.join(enriched_dir, f"enriched_{date_slug}*.json")
-        for path in sorted(glob.glob(pattern)):
-            try:
-                with open(path, "r", encoding="utf-8") as f:
-                    data = json.load(f)
-                for a in data.get("articles", []):
-                    key = a.get("title", "")
-                    if key and key not in seen_titles:
-                        seen_titles.add(key)
-                        all_articles.append(a)
-                files_loaded += 1
-            except Exception as e:
-                print(f"  ⚠ Failed to load enriched file {path}: {e}")
+        path = os.path.join(enriched_dir, f"enriched_{date_slug}.json")
+        if not os.path.exists(path):
+            continue
+        try:
+            with open(path, "r", encoding="utf-8") as f:
+                data = json.load(f)
+            for a in data.get("articles", []):
+                key = a.get("title", "")
+                if key and key not in seen_titles:
+                    seen_titles.add(key)
+                    all_articles.append(a)
+            files_loaded += 1
+        except Exception as e:
+            print(f"  ⚠ Failed to load enriched file {path}: {e}")
 
     if files_loaded:
         print(f"  Loaded {files_loaded} enriched file(s) spanning {days_needed} day(s)")
