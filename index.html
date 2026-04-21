@@ -6,6 +6,7 @@
         <title>Right-Wing Media Monitor</title>
         <!-- marked.js for Markdown rendering (Analysis tab) -->
         <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css" />
         <style>
             :root {
                 --bg: #f5f5f4;
@@ -68,6 +69,16 @@
                 letter-spacing: 0.3px;
                 color: #57534e;
                 transition: all 0.15s ease;
+                display: inline-flex;
+                align-items: center;
+                gap: 5px;
+            }
+            .tab-button .fi {
+                width: 16px;
+                height: 12px;
+                border-radius: 2px;
+                flex-shrink: 0;
+                line-height: 1;
             }
             .tab-button:hover {
                 background: #f5f5f4;
@@ -403,16 +414,16 @@
             /* ── Feed tabs ── */
 
             const feeds = [
-                { filename: "usa", name: "\u{1F1FA}\u{1F1F8} USA" },
-                { filename: "norway", name: "\u{1F1F3}\u{1F1F4} Norway" },
-                { filename: "sweden", name: "\u{1F1F8}\u{1F1EA} Sweden" },
-                { filename: "france", name: "\u{1F1EB}\u{1F1F7} France" },
-                { filename: "italy", name: "\u{1F1EE}\u{1F1F9} Italy" },
-                { filename: "uk", name: "\u{1F1EC}\u{1F1E7} UK" },
-                { filename: "germany", name: "\u{1F1E9}\u{1F1EA} Germany" },
-                { filename: "hungary", name: "\u{1F1ED}\u{1F1FA} Hungary" },
-                { filename: "poland", name: "\u{1F1F5}\u{1F1F1} Poland" },
-                { filename: "spain", name: "\u{1F1EA}\u{1F1F8} Spain" },
+                { filename: "usa", name: "USA", flag: "us" },
+                { filename: "norway", name: "Norway", flag: "no" },
+                { filename: "sweden", name: "Sweden", flag: "se" },
+                { filename: "france", name: "France", flag: "fr" },
+                { filename: "italy", name: "Italy", flag: "it" },
+                { filename: "uk", name: "UK", flag: "gb" },
+                { filename: "germany", name: "Germany", flag: "de" },
+                { filename: "hungary", name: "Hungary", flag: "hu" },
+                { filename: "poland", name: "Poland", flag: "pl" },
+                { filename: "spain", name: "Spain", flag: "es" },
                 { filename: "general", name: "\u{1F30D} General" },
                 { filename: "networks", name: "\u{1F578}\u{FE0F} Networks" },
             ];
@@ -427,7 +438,14 @@
             feeds.forEach((feed) => {
                 const btn = document.createElement("button");
                 btn.className = "tab-button";
-                btn.textContent = feed.name;
+                if (feed.flag) {
+                    const fi = document.createElement("span");
+                    fi.className = `fi fi-${feed.flag}`;
+                    btn.appendChild(fi);
+                    btn.appendChild(document.createTextNode(feed.name));
+                } else {
+                    btn.textContent = feed.name;
+                }
                 btn.dataset.feed = feed.filename;
                 btn.onclick = () => {
                     loadFeed(feed.filename, btn);
