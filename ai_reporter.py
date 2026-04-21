@@ -422,7 +422,7 @@ def build_sources_appendix_md(ref_map: dict, cited: set) -> str:
     """Build a markdown Sources section listing only cited references."""
     if not cited:
         return ""
-    lines = ["\n---\n", "## Sources\n"]
+    lines = ["\n\n---\n", "## Sources\n"]
     for num in sorted(cited):
         ref = ref_map[num]
         title = ref["title"]
