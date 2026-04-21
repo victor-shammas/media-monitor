@@ -3,8 +3,10 @@
 Article Scraper — Enriches monitor data with article text extracts.
 
 Reads the RSS metadata from monitor_state.json, resolves Google News redirect
-URLs, extracts the first 300 words of article text via trafilatura, and writes dated enriched
-JSON files for the downstream AI Reporter.
+URLs, extracts the first 300 words of article text via trafilatura, and writes
+one enriched JSON file per day (enriched_YYYY-MM-DD.json). Multiple scraper runs
+merge into the same day file, with articles placed by their publication date.
+Already-processed articles are skipped on subsequent runs.
 
 Usage Examples:
     python article_scraper.py              # Scrape articles from the last 24 hours
@@ -13,7 +15,7 @@ Usage Examples:
 
 Flags:
     --hours INT        Look-back window in hours to scrape (default: 24)
-    --outdir DIR       Output directory for the enriched JSON files (default: enriched/)
+    --outdir DIR       Output directory for the enriched JSON files (default: data-private/)
     --category ID      Scrape only a specific feed ID (e.g., 'frp', 'maga')
 """
 
@@ -125,6 +127,28 @@ def is_blocklisted_url(url: str, blocklist: dict) -> bool:
     return any(u in url for u in blocklist.get("urls", []))
 
 
+def article_date_slug(record: dict) -> str:
+    """Determine which day's file an article belongs to, based on its publication date."""
+    date_str = record.get("date", "")
+    try:
+        dt = datetime.fromisoformat(date_str.replace("Z", "+00:00"))
+        return dt.strftime("%Y-%m-%d")
+    except Exception:
+        return datetime.now().strftime("%Y-%m-%d")
+
+
+def load_existing_enriched(outdir: str, date_slug: str) -> dict | None:
+    """Load an existing enriched_YYYY-MM-DD.json file if it exists."""
+    path = os.path.join(outdir, f"enriched_{date_slug}.json")
+    if os.path.exists(path):
+        try:
+            with open(path, "r", encoding="utf-8") as f:
+                return json.load(f)
+        except Exception:
+            pass
+    return None
+
+
 # ── Step 1: Resolve Google News redirect URLs ─────────────────────────────
 
 
@@ -175,7 +199,7 @@ def main():
         "--hours", type=int, default=24, help="Look-back window in hours (default: 24)"
     )
     parser.add_argument(
-        "--outdir", default="data-private", help="Output directory (default: enriched/)"
+        "--outdir", default="data-private", help="Output directory (default: data-private/)"
     )
     parser.add_argument(
         "--category", default=None, help="Scrape only a specific category (e.g., 'frp')"
@@ -202,36 +226,49 @@ def main():
     cutoff = datetime.now(timezone.utc) - timedelta(hours=args.hours)
     os.makedirs(args.outdir, exist_ok=True)
 
-    # Collect articles to scrape
-    articles = []
+    # Collect candidate articles from state
+    candidates = []
     for cat_id, items in state.items():
         if args.category and cat_id != args.category:
             continue
         for item in items:
             if get_sort_time(item) >= cutoff:
-                articles.append({**item, "_category": cat_id})
+                candidates.append({**item, "_category": cat_id})
 
-    if not articles:
+    if not candidates:
         print(f"No articles found in the last {args.hours} hours.")
         sys.exit(0)
 
-    date_slug = datetime.now().strftime("%Y-%m-%d")
-    time_slug = datetime.now().strftime("%H%M")
-    file_slug = f"{date_slug}_{time_slug}"
+    # Load existing enriched files for relevant dates to skip already-processed articles
+    candidate_dates = {article_date_slug(c) for c in candidates}
+    already_processed_urls = set()
+    existing_by_date = {}
+    for ds in candidate_dates:
+        data = load_existing_enriched(args.outdir, ds)
+        if data:
+            existing_by_date[ds] = data
+            for a in data.get("articles", []):
+                already_processed_urls.add(a.get("google_url", ""))
+
+    articles = [c for c in candidates if c.get("url", "") not in already_processed_urls]
+
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+
+    if not articles:
+        print(f"[{timestamp}] All {len(candidates)} articles already processed.")
+        sys.exit(0)
 
     cat_count = len(set(a["_category"] for a in articles))
     print(
-        f"[{timestamp}] Scraping {len(articles)} articles across {cat_count} categories"
+        f"[{timestamp}] Scraping {len(articles)} new articles across {cat_count} categories"
     )
-    print(
-        f"  Look-back: {args.hours}h | Output: {args.outdir}/enriched_{file_slug}.json"
-    )
+    print(f"  ({len(candidates) - len(articles)} already processed, skipped)")
+    print(f"  Look-back: {args.hours}h | Output: {args.outdir}/enriched_YYYY-MM-DD.json")
     print()
 
     # ── Process each article ──────────────────────────────────────────────
 
-    enriched = []
+    new_by_date: dict[str, list[dict]] = {}
     stats = {
         "total": len(articles),
         "resolved": 0,
@@ -242,10 +279,7 @@ def main():
         "failed_extract": 0,
     }
 
-    ref_num = 0
-
     for i, item in enumerate(articles, 1):
-        ref_num += 1
         cat_id = item["_category"]
         cat_label = CATEGORY_LABELS.get(cat_id, cat_id)
         title = item.get("title", "")
@@ -253,7 +287,7 @@ def main():
         google_url = item.get("url", "")
 
         record = {
-            "ref": ref_num,
+            "ref": 0,
             "title": title,
             "source": source,
             "google_url": google_url,
@@ -265,7 +299,6 @@ def main():
             "word_count": 0,
         }
 
-        # Progress indicator
         progress = f"[{i}/{len(articles)}]"
         print(f"  {progress} {cat_label} | {source} | {title[:55]}...")
 
@@ -274,7 +307,8 @@ def main():
             record["extract_status"] = "blocklisted_source"
             stats["blocklisted"] += 1
             print(f"    ⊘ Blocklisted source ({source})")
-            enriched.append(record)
+            ds = article_date_slug(record)
+            new_by_date.setdefault(ds, []).append(record)
             continue
 
         # ── Blocklist: check title patterns ───────────────────────────
@@ -282,7 +316,8 @@ def main():
             record["extract_status"] = "blocklisted_title"
             stats["blocklisted"] += 1
             print(f"    ⊘ Blocklisted title pattern")
-            enriched.append(record)
+            ds = article_date_slug(record)
+            new_by_date.setdefault(ds, []).append(record)
             continue
 
         # Step 1: Resolve URL
@@ -292,7 +327,8 @@ def main():
             record["extract_status"] = f"resolve_{resolve_status}"
             stats["failed_resolve"] += 1
             print(f"    ✗ Redirect failed: {resolve_status}")
-            enriched.append(record)
+            ds = article_date_slug(record)
+            new_by_date.setdefault(ds, []).append(record)
             continue
 
         record["resolved_url"] = resolved_url
@@ -303,7 +339,8 @@ def main():
             record["extract_status"] = "blocklisted_url"
             stats["blocklisted"] += 1
             print(f"    ⊘ Blocklisted URL ({resolved_url})")
-            enriched.append(record)
+            ds = article_date_slug(record)
+            new_by_date.setdefault(ds, []).append(record)
             continue
 
         # Check for known-bad domains
@@ -312,7 +349,8 @@ def main():
             record["extract_status"] = "skipped_domain"
             stats["skipped"] += 1
             print(f"    ⊘ Skipped ({domain})")
-            enriched.append(record)
+            ds = article_date_slug(record)
+            new_by_date.setdefault(ds, []).append(record)
             continue
 
         # Step 2: Extract article text
@@ -328,21 +366,69 @@ def main():
             stats["failed_extract"] += 1
             print(f"    ✗ {extract_status} ({domain})")
 
-        enriched.append(record)
+        ds = article_date_slug(record)
+        new_by_date.setdefault(ds, []).append(record)
         time.sleep(REQUEST_DELAY)
 
-    # ── Write output ──────────────────────────────────────────────────────
+    # ── Merge into per-day files and write ────────────────────────────────
 
-    output = {
-        "generated_at": timestamp,
-        "look_back_hours": args.hours,
-        "stats": stats,
-        "articles": enriched,
-    }
+    written_files = []
+    for ds in sorted(new_by_date.keys()):
+        new_articles = new_by_date[ds]
+        existing = existing_by_date.get(ds)
 
-    outpath = os.path.join(args.outdir, f"enriched_{file_slug}.json")
-    with open(outpath, "w", encoding="utf-8") as f:
-        json.dump(output, f, indent=2, ensure_ascii=False)
+        if existing:
+            merged = list(existing.get("articles", []))
+            existing_urls_in_file = {a["google_url"] for a in merged}
+            for a in new_articles:
+                if a["google_url"] not in existing_urls_in_file:
+                    merged.append(a)
+            generated_at = existing.get("generated_at", timestamp)
+        else:
+            merged = list(new_articles)
+            generated_at = timestamp
+
+        for idx, a in enumerate(merged, 1):
+            a["ref"] = idx
+
+        file_stats = {
+            "total": len(merged),
+            "resolved": sum(1 for a in merged if a.get("resolved_url")),
+            "extracted": sum(1 for a in merged if a.get("extract_status") == "ok"),
+            "skipped": sum(
+                1 for a in merged if a.get("extract_status") == "skipped_domain"
+            ),
+            "blocklisted": sum(
+                1
+                for a in merged
+                if (a.get("extract_status") or "").startswith("blocklisted")
+            ),
+            "failed_resolve": sum(
+                1
+                for a in merged
+                if (a.get("extract_status") or "").startswith("resolve_")
+            ),
+            "failed_extract": sum(
+                1
+                for a in merged
+                if a.get("extract_status")
+                in ("fetch_failed", "too_short")
+                or (a.get("extract_status") or "").startswith("error")
+            ),
+        }
+
+        output = {
+            "generated_at": generated_at,
+            "last_updated_at": timestamp,
+            "stats": file_stats,
+            "articles": merged,
+        }
+
+        outpath = os.path.join(args.outdir, f"enriched_{ds}.json")
+        with open(outpath, "w", encoding="utf-8") as f:
+            json.dump(output, f, indent=2, ensure_ascii=False)
+
+        written_files.append((outpath, len(new_articles), len(merged)))
 
     # ── Summary ───────────────────────────────────────────────────────────
 
@@ -351,18 +437,22 @@ def main():
     print("=" * 60)
     print("SCRAPER SUMMARY")
     print("=" * 60)
-    print(f"  Total articles:    {total}")
-    print(
-        f"  URLs resolved:     {stats['resolved']}/{total} ({100 * stats['resolved'] // total}%)"
-    )
-    print(
-        f"  Text extracted:    {stats['extracted']}/{total} ({100 * stats['extracted'] // total}%)"
-    )
+    print(f"  New articles:      {total}")
+    print(f"  Already processed: {len(candidates) - len(articles)}")
+    if total:
+        print(
+            f"  URLs resolved:     {stats['resolved']}/{total} ({100 * stats['resolved'] // total}%)"
+        )
+        print(
+            f"  Text extracted:    {stats['extracted']}/{total} ({100 * stats['extracted'] // total}%)"
+        )
     print(f"  Blocklisted:       {stats['blocklisted']}")
     print(f"  Domains skipped:   {stats['skipped']}")
     print(f"  Failed (resolve):  {stats['failed_resolve']}")
     print(f"  Failed (extract):  {stats['failed_extract']}")
-    print(f"\n  ✓ Saved → {outpath}")
+    print()
+    for outpath, new_count, total_count in written_files:
+        print(f"  ✓ {outpath} — {new_count} new, {total_count} total")
     print()
 
 
