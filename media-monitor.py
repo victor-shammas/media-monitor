@@ -68,7 +68,10 @@ FEEDS = [
     {
         "id": "usa",
         "filename": "usa.txt",
-        "q": '"Donald Trump" OR "Trump administration" OR MAGA OR "JD Vance" OR "Stephen Miller" OR "America First" OR "Steve Bannon"',
+        "queries": [
+            '"Donald Trump" OR "President Trump" OR "Trump administration" OR MAGA OR "JD Vance" OR "Vice President Vance" OR "America First" OR "Stephen Miller" OR "Steve Bannon"',
+            '"Pete Hegseth" OR "Tulsi Gabbard" OR "Howard Lutnick" OR "Robert F. Kennedy Jr." OR "Markwayne Mullin" OR "Marco Rubio"',
+        ],
         "lang": "en",
         "country": "US",
     },
