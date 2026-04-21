@@ -273,7 +273,7 @@ def load_enriched(enriched_dir: str, hours: int = 24) -> list[dict] | None:
     we also load previous days (e.g. 48 h → today + yesterday).
     Returns a merged, deduplicated list of articles or None.
     """
-    now = datetime.now()
+    now = datetime.now(timezone.utc)
     days_needed = (
         hours + 23
     ) // 24 + 1  # +1 because the window always straddles midnight
@@ -647,7 +647,7 @@ def main():
         sys.exit(1)
 
     # ── Choose data source ────────────────────────────────────────────────
-    now = datetime.now()
+    now = datetime.now(timezone.utc)
     report_slug = now.strftime("%Y-%m-%d_%H%M")  # for report filenames (no collisions)
     today_str = now.strftime("%B %d, %Y")
     cutoff = datetime.now(timezone.utc) - timedelta(hours=args.hours)

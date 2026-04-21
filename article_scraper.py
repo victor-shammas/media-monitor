@@ -137,7 +137,7 @@ def article_date_slug(record: dict) -> str:
         dt = datetime.fromisoformat(date_str.replace("Z", "+00:00"))
         return dt.strftime("%Y-%m-%d")
     except Exception:
-        return datetime.now().strftime("%Y-%m-%d")
+        return datetime.now(timezone.utc).strftime("%Y-%m-%d")
 
 
 def load_existing_enriched(outdir: str, date_slug: str) -> dict | None:
@@ -255,7 +255,7 @@ def main():
 
     articles = [c for c in candidates if c.get("url", "") not in already_processed_urls]
 
-    timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    timestamp = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S")
 
     if not articles:
         print(f"[{timestamp}] All {len(candidates)} articles already processed.")
