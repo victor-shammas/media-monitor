@@ -43,6 +43,7 @@ import html as html_mod
 import json
 import os
 import re
+import subprocess
 import sys
 import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
@@ -366,6 +367,36 @@ def format_single_feed(feed: dict, items: list[dict], last_updated: str) -> str:
     return "\n".join(lines)
 
 
+# ── Git sync ──────────────────────────────────────────────────────────────
+
+
+def git_sync():
+    """Pull latest changes if the local branch is behind origin."""
+    repo_dir = os.path.dirname(os.path.abspath(__file__))
+    try:
+        subprocess.run(
+            ["git", "fetch"], cwd=repo_dir, capture_output=True, timeout=15
+        )
+        result = subprocess.run(
+            ["git", "status", "--porcelain", "-b"],
+            cwd=repo_dir,
+            capture_output=True,
+            text=True,
+            timeout=10,
+        )
+        if "behind" in result.stdout:
+            print("  ↓ Local branch is behind origin — pulling...", file=sys.stderr)
+            subprocess.run(
+                ["git", "pull", "--rebase"],
+                cwd=repo_dir,
+                capture_output=True,
+                timeout=30,
+            )
+            print("  ✓ Pulled latest changes", file=sys.stderr)
+    except Exception as e:
+        print(f"  Warning: git sync check failed: {e}", file=sys.stderr)
+
+
 # ── Main ───────────────────────────────────────────────────────────────────
 
 
@@ -421,6 +452,8 @@ def main():
         help="Display the current blocklist and exit",
     )
     args = parser.parse_args()
+
+    git_sync()
 
     # ── Handle blocklist commands (run-and-exit) ──────────────────────────
     blocklist = load_blocklist()
