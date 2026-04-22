@@ -121,7 +121,10 @@ def _call_minimax_batch(prompt: str) -> str:
     payload = json.dumps(
         {
             "model": MINIMAX_MODEL,
-            "messages": [{"role": "user", "content": prompt}],
+            "messages": [
+                {"role": "system", "content": "You are a news summarizer. Always respond in English regardless of the input language."},
+                {"role": "user", "content": prompt},
+            ],
             "max_tokens": 1024,
         }
     ).encode()
