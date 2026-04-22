@@ -87,7 +87,9 @@ MISTRAL_MODEL = "mistral-small-latest"
 SUMMARY_SYSTEM_PROMPT = (
     "You are a news summarizer. For each article the user sends, write exactly "
     "one sentence (max 25 words) that summarizes the key news. Be concrete and "
-    "specific. Always respond in English regardless of the input language. "
+    "specific. Always translate and respond in English, even if the article is "
+    "in French, Norwegian, Italian, German, Hungarian, Polish, Spanish, Swedish, "
+    "or any other language. Never skip an article. "
     "Return ONLY numbered lines, one per article."
 )
 
