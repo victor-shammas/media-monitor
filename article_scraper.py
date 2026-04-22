@@ -82,8 +82,6 @@ REQUEST_DELAY = 1.0
 # AI summary generation
 SUMMARY_BATCH_SIZE = 20
 SUMMARY_MODEL = "gemini-2.5-flash"
-MINIMAX_BASE_URL = "https://api.minimax.io/v1"
-MINIMAX_MODEL = "MiniMax-M2.7"
 
 genai = None
 
@@ -104,41 +102,12 @@ def _ensure_gemini():
         return False
 
 
-def _ensure_minimax():
-    return bool(os.environ.get("MINIMAX_API_KEY"))
-
-
 def _call_gemini_batch(prompt: str) -> str:
     client = genai.Client()
     response = client.models.generate_content(model=SUMMARY_MODEL, contents=prompt)
     return response.text or ""
 
 
-def _call_minimax_batch(prompt: str) -> str:
-    import urllib.request
-
-    api_key = os.environ["MINIMAX_API_KEY"]
-    payload = json.dumps(
-        {
-            "model": MINIMAX_MODEL,
-            "messages": [
-                {"role": "system", "content": "You are a news summarizer. Always respond in English regardless of the input language."},
-                {"role": "user", "content": prompt},
-            ],
-            "max_tokens": 1024,
-        }
-    ).encode()
-    req = urllib.request.Request(
-        f"{MINIMAX_BASE_URL}/chat/completions",
-        data=payload,
-        headers={
-            "Authorization": f"Bearer {api_key}",
-            "Content-Type": "application/json",
-        },
-    )
-    with urllib.request.urlopen(req, timeout=60) as resp:
-        data = json.loads(resp.read())
-    text = data["choices"][0]["message"]["content"]
     return re.sub(r"<think>.*?</think>\s*", "", text, flags=re.DOTALL)
 
 
@@ -287,16 +256,15 @@ def git_sync():
         print(f"  Warning: git sync check failed: {e}", file=sys.stderr)
 
 
-# ── Step 3: Generate one-sentence summaries (Gemini Flash → Minimax fallback)
+# ── Step 3: Generate one-sentence summaries (Gemini Flash)
 
 
 def generate_summaries(records: list[dict]) -> int:
-    """Send article extracts to an LLM and get back one-sentence summaries."""
+    """Send article extracts to Gemini Flash and get back one-sentence summaries."""
     has_gemini = _ensure_gemini()
-    has_minimax = _ensure_minimax()
 
-    if not has_gemini and not has_minimax:
-        print("  Warning: neither GEMINI_API_KEY nor MINIMAX_API_KEY set, skipping summaries")
+    if not has_gemini:
+        print("  Warning: GEMINI_API_KEY not set, skipping summaries")
         return 0
 
     extractable = [
@@ -325,23 +293,10 @@ def generate_summaries(records: list[dict]) -> int:
         prompt = "\n".join(prompt_lines)
         text = None
 
-        if has_gemini:
-            try:
-                text = _call_gemini_batch(prompt)
-            except Exception as e:
-                print(f"    Gemini failed: {e}, trying Minimax...")
-
-        if text is None and has_minimax:
-            for attempt in range(2):
-                try:
-                    text = _call_minimax_batch(prompt)
-                    break
-                except Exception as e:
-                    if attempt == 0:
-                        print(f"    Minimax attempt 1 failed: {e}, retrying...")
-                        time.sleep(2)
-                    else:
-                        print(f"    Minimax attempt 2 failed: {e}")
+        try:
+            text = _call_gemini_batch(prompt)
+        except Exception as e:
+            print(f"    Gemini failed: {e}")
 
         if text is None:
             print(f"    Warning: batch {batch_num} — all providers failed, skipping")

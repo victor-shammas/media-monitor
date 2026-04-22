@@ -118,8 +118,8 @@ def main():
     )
     args = parser.parse_args()
 
-    if not os.environ.get("GEMINI_API_KEY") and not os.environ.get("MINIMAX_API_KEY"):
-        print("Error: Set at least one of GEMINI_API_KEY or MINIMAX_API_KEY.")
+    if not os.environ.get("GEMINI_API_KEY"):
+        print("Error: GEMINI_API_KEY must be set.")
         sys.exit(1)
 
     with open(STATE_FILE, "r", encoding="utf-8") as f:
