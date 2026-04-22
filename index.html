@@ -380,6 +380,22 @@
                 display: inline-block;
                 animation: spin 1s linear infinite;
             }
+            /* Header search box */
+            #search-input {
+                font: inherit;
+                font-size: 13px;
+                padding: 5px 10px;
+                border: 1px solid var(--line);
+                border-radius: 8px;
+                background: #fff;
+                color: var(--ink);
+                outline: none;
+                width: 200px;
+                transition: border-color 0.15s;
+            }
+            #search-input:focus {
+                border-color: var(--ink);
+            }
             @keyframes spin {
                 to {
                     transform: rotate(360deg);
@@ -390,9 +406,10 @@
     <body>
         <div class="wrap">
             <header>
-                <div style="display:flex;align-items:baseline;gap:10px">
+                <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">
                     <h1>Transatlantic Right-Wing Media Monitor</h1>
                     <button class="tab-button" id="translate-btn" title="Translate to English" style="display:none;font-size:12px;padding:4px 10px">EN</button>
+                    <input type="search" id="search-input" placeholder="Search articles..." autocomplete="off" />
                 </div>
             </header>
             <div class="feed-wrap">
@@ -471,6 +488,22 @@
             });
 
             document.getElementById("translate-btn").onclick = () => toggleTranslate();
+
+            const searchInput = document.getElementById("search-input");
+            searchInput.addEventListener("input", applySearchFilter);
+
+            function applySearchFilter() {
+                const q = searchInput.value.trim().toLowerCase();
+                const cards = feedContent.querySelectorAll(".article-card");
+                cards.forEach((card) => {
+                    if (!q) {
+                        card.style.display = "";
+                        return;
+                    }
+                    const text = card.textContent.toLowerCase();
+                    card.style.display = text.includes(q) ? "" : "none";
+                });
+            }
 
             // Handle #analysis deep link
             if (hash === "analysis") {
@@ -801,6 +834,7 @@
                     .then((text) => {
                         feedContent.innerHTML = parseTextToHTML(text);
                         feedContent.scrollTop = 0;
+                        applySearchFilter();
                     })
                     .catch((error) => {
                         feedContent.innerHTML = `<span class="error">\u26A0 ${error.message}</span>`;
