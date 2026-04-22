@@ -84,6 +84,12 @@ SUMMARY_BATCH_SIZE = 20
 SUMMARY_MODEL = "gemini-2.5-flash"
 MISTRAL_BASE_URL = "https://api.mistral.ai/v1"
 MISTRAL_MODEL = "mistral-small-latest"
+SUMMARY_SYSTEM_PROMPT = (
+    "You are a news summarizer. For each article the user sends, write exactly "
+    "one sentence (max 25 words) that summarizes the key news. Be concrete and "
+    "specific. Always respond in English regardless of the input language. "
+    "Return ONLY numbered lines, one per article."
+)
 
 genai = None
 
@@ -114,7 +120,7 @@ def _ensure_mistral():
     return bool(os.environ.get("MISTRAL_API_KEY"))
 
 
-def _call_mistral_batch(prompt: str) -> str:
+def _call_mistral_batch(user_prompt: str) -> str:
     import urllib.request
 
     api_key = os.environ["MISTRAL_API_KEY"]
@@ -122,8 +128,8 @@ def _call_mistral_batch(prompt: str) -> str:
         {
             "model": MISTRAL_MODEL,
             "messages": [
-                {"role": "system", "content": "You are a news summarizer. Always respond in English regardless of the input language."},
-                {"role": "user", "content": prompt},
+                {"role": "system", "content": SUMMARY_SYSTEM_PROMPT},
+                {"role": "user", "content": user_prompt},
             ],
             "max_tokens": 1024,
         }
@@ -312,28 +318,24 @@ def generate_summaries(records: list[dict]) -> int:
         batch = extractable[batch_start : batch_start + SUMMARY_BATCH_SIZE]
         batch_num = batch_start // SUMMARY_BATCH_SIZE + 1
 
-        prompt_lines = [
-            "For each article below, write exactly one sentence (max 25 words) "
-            "that summarizes the key news. Be concrete and specific. "
-            "Always respond in English. "
-            "Return ONLY numbered lines, one per article.\n"
-        ]
+        article_lines = []
         for idx, rec in enumerate(batch, 1):
             snippet = " ".join(rec["extract"].split()[:200])
-            prompt_lines.append(f"{idx}. {rec['title']} | {snippet}")
+            article_lines.append(f"{idx}. {rec['title']} | {snippet}")
+        articles_block = "\n".join(article_lines)
 
-        prompt = "\n".join(prompt_lines)
+        gemini_prompt = f"{SUMMARY_SYSTEM_PROMPT}\n\n{articles_block}"
         text = None
 
         if has_gemini:
             try:
-                text = _call_gemini_batch(prompt)
+                text = _call_gemini_batch(gemini_prompt)
             except Exception as e:
                 print(f"    Gemini failed: {e}, trying Mistral...")
 
         if text is None and has_mistral:
             try:
-                text = _call_mistral_batch(prompt)
+                text = _call_mistral_batch(articles_block)
             except Exception as e:
                 print(f"    Mistral failed: {e}")
 
