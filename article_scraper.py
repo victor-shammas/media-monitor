@@ -277,31 +277,41 @@ def generate_summaries(records: list[dict]) -> int:
             snippet = " ".join(rec["extract"].split()[:200])
             prompt_lines.append(f"{idx}. {rec['title']} | {snippet}")
 
-        try:
-            client = genai.Client()
-            response = client.models.generate_content(
-                model=SUMMARY_MODEL, contents="\n".join(prompt_lines)
-            )
-            text = response.text or ""
+        max_retries = 4
+        for attempt in range(max_retries):
+            try:
+                client = genai.Client()
+                response = client.models.generate_content(
+                    model=SUMMARY_MODEL, contents="\n".join(prompt_lines)
+                )
+                text = response.text or ""
 
-            batch_count = 0
-            for line in text.strip().splitlines():
-                m = re.match(r"^(\d+)\.\s*(.+)", line.strip())
-                if m:
-                    num = int(m.group(1))
-                    sentence = m.group(2).strip()
-                    if 1 <= num <= len(batch) and sentence:
-                        batch[num - 1]["summary"] = sentence
-                        batch_count += 1
+                batch_count = 0
+                for line in text.strip().splitlines():
+                    m = re.match(r"^(\d+)\.\s*(.+)", line.strip())
+                    if m:
+                        num = int(m.group(1))
+                        sentence = m.group(2).strip()
+                        if 1 <= num <= len(batch) and sentence:
+                            batch[num - 1]["summary"] = sentence
+                            batch_count += 1
 
-            generated += batch_count
-            print(f"    Batch {batch_num}: {batch_count}/{len(batch)} summaries")
+                generated += batch_count
+                print(f"    Batch {batch_num}: {batch_count}/{len(batch)} summaries")
 
-            if batch_start + SUMMARY_BATCH_SIZE < len(extractable):
-                time.sleep(5)
+                if batch_start + SUMMARY_BATCH_SIZE < len(extractable):
+                    time.sleep(5)
+                break
 
-        except Exception as e:
-            print(f"    Warning: summary batch {batch_num} failed: {e}")
+            except Exception as e:
+                status = getattr(getattr(e, "response", None), "status_code", None)
+                if status in (403, 429) and attempt < max_retries - 1:
+                    wait = 2 ** (attempt + 1) * 15
+                    print(f"    Rate limited (HTTP {status}), retrying in {wait}s...")
+                    time.sleep(wait)
+                else:
+                    print(f"    Warning: summary batch {batch_num} failed: {e}")
+                    break
 
     print(f"  Summaries generated: {generated}/{len(extractable)}")
     return generated
