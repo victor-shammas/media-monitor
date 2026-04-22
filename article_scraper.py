@@ -314,6 +314,23 @@ def generate_summaries(records: list[dict]) -> int:
     if not extractable:
         return 0
 
+    LANG_GROUPS = {
+        "en": {"usa", "uk", "general", "networks"},
+        "no": {"norway"},
+        "sv": {"sweden"},
+        "fr": {"france"},
+        "it": {"italy"},
+        "de": {"germany"},
+        "hu": {"hungary"},
+        "pl": {"poland"},
+        "es": {"spain"},
+    }
+    cat_to_lang = {}
+    for lang, cats in LANG_GROUPS.items():
+        for cat in cats:
+            cat_to_lang[cat] = lang
+    extractable.sort(key=lambda r: cat_to_lang.get(r.get("category", ""), "zz"))
+
     print(f"\n  Generating summaries for {len(extractable)} articles...")
     generated = 0
 
