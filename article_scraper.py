@@ -312,6 +312,7 @@ def generate_summaries(records: list[dict]) -> int:
         prompt_lines = [
             "For each article below, write exactly one sentence (max 25 words) "
             "that summarizes the key news. Be concrete and specific. "
+            "Always respond in English. "
             "Return ONLY numbered lines, one per article.\n"
         ]
         for idx, rec in enumerate(batch, 1):
