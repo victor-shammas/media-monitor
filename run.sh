@@ -9,8 +9,8 @@ git -C data-private pull --rebase || true
 git pull --rebase || true
 
 # Harvest new links, then scrape content and generate summaries
-python media-monitor.py
-python article_scraper.py "$@"
+python3 media-monitor.py
+python3 article_scraper.py "$@"
 
 # Commit and push
 ./push.sh
