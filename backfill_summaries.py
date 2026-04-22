@@ -31,9 +31,11 @@ def _timeout_handler(signum, frame):
     raise ScrapeTimeout()
 
 from article_scraper import (
-    resolve_url,
+    article_date_slug,
     extract_article,
     generate_summaries,
+    load_existing_enriched,
+    resolve_url,
     SKIP_DOMAINS,
     STATE_FILE,
 )
@@ -50,6 +52,57 @@ def load_extract_cache(enriched_dir: str) -> dict[str, str]:
             if a.get("extract_status") == "ok" and a.get("extract"):
                 cache[a["google_url"]] = a["extract"]
     return cache
+
+
+def _save_to_enriched(records: list[dict], enriched_dir: str):
+    """Merge records into the per-day enriched JSON files."""
+    from datetime import datetime, timezone
+
+    by_date: dict[str, list[dict]] = {}
+    for rec in records:
+        ds = article_date_slug(rec)
+        by_date.setdefault(ds, []).append(rec)
+
+    timestamp = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S")
+    saved = 0
+    for ds, new_recs in by_date.items():
+        existing = load_existing_enriched(enriched_dir, ds)
+        if existing:
+            merged = list(existing.get("articles", []))
+            existing_urls = {a["google_url"] for a in merged}
+            for r in new_recs:
+                if r["google_url"] in existing_urls:
+                    for i, a in enumerate(merged):
+                        if a["google_url"] == r["google_url"]:
+                            merged[i] = r
+                            break
+                else:
+                    merged.append(r)
+            generated_at = existing.get("generated_at", timestamp)
+        else:
+            merged = list(new_recs)
+            generated_at = timestamp
+
+        for idx, a in enumerate(merged, 1):
+            a["ref"] = idx
+
+        output = {
+            "generated_at": generated_at,
+            "last_updated_at": timestamp,
+            "stats": {
+                "total": len(merged),
+                "resolved": sum(1 for a in merged if a.get("resolved_url")),
+                "extracted": sum(1 for a in merged if a.get("extract_status") == "ok"),
+            },
+            "articles": merged,
+        }
+
+        outpath = os.path.join(enriched_dir, f"enriched_{ds}.json")
+        with open(outpath, "w", encoding="utf-8") as f:
+            json.dump(output, f, indent=2, ensure_ascii=False)
+        saved += len(new_recs)
+
+    print(f"  Saved {saved} records to enriched JSON files")
 
 
 def main():
@@ -93,11 +146,17 @@ def main():
 
             url = item.get("url", "")
             rec = {
+                "ref": 0,
                 "title": item.get("title", ""),
+                "source": item.get("source", ""),
                 "google_url": url,
+                "resolved_url": None,
+                "date": item.get("date", ""),
                 "category": cat,
                 "extract": None,
                 "extract_status": "pending",
+                "word_count": 0,
+                "summary": None,
             }
 
             if url in cache:
@@ -133,6 +192,8 @@ def main():
                 time.sleep(1)
                 continue
 
+            rec["resolved_url"] = resolved_url
+
             domain = urlparse(resolved_url).netloc.lower()
             if domain in SKIP_DOMAINS:
                 rec["extract_status"] = "skipped_domain"
@@ -143,6 +204,7 @@ def main():
             extract, word_count, extract_status = extract_article(resolved_url)
             rec["extract"] = extract
             rec["extract_status"] = extract_status
+            rec["word_count"] = word_count
 
             if extract_status == "ok":
                 print(f"    ✓ {word_count} words ({domain})")
@@ -156,7 +218,16 @@ def main():
 
         time.sleep(1)
 
+    scraped = [r for r in records if r["extract_status"] != "pending" and r["google_url"] not in cache]
+    if scraped:
+        _save_to_enriched(scraped, args.enriched_dir)
+
     summary_count = generate_summaries(records)
+
+    if summary_count:
+        _save_to_enriched(
+            [r for r in records if r.get("summary")], args.enriched_dir
+        )
 
     if not summary_count:
         print("\nNo summaries generated.")
