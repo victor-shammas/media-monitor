@@ -82,6 +82,8 @@ REQUEST_DELAY = 1.0
 # AI summary generation
 SUMMARY_BATCH_SIZE = 10
 SUMMARY_MODEL = "gemini-2.5-flash"
+MINIMAX_BASE_URL = "https://api.minimax.io/v1"
+MINIMAX_MODEL = "MiniMax-M2.7"
 
 genai = None
 
@@ -100,6 +102,41 @@ def _ensure_gemini():
     except ImportError:
         print("  Warning: google-genai not installed, skipping summary generation")
         return False
+
+
+def _ensure_minimax():
+    return bool(os.environ.get("MINIMAX_API_KEY"))
+
+
+def _call_gemini_batch(prompt: str) -> str:
+    client = genai.Client()
+    response = client.models.generate_content(model=SUMMARY_MODEL, contents=prompt)
+    return response.text or ""
+
+
+def _call_minimax_batch(prompt: str) -> str:
+    import urllib.request
+
+    api_key = os.environ["MINIMAX_API_KEY"]
+    payload = json.dumps(
+        {
+            "model": MINIMAX_MODEL,
+            "messages": [{"role": "user", "content": prompt}],
+            "max_tokens": 1024,
+        }
+    ).encode()
+    req = urllib.request.Request(
+        f"{MINIMAX_BASE_URL}/chat/completions",
+        data=payload,
+        headers={
+            "Authorization": f"Bearer {api_key}",
+            "Content-Type": "application/json",
+        },
+    )
+    with urllib.request.urlopen(req, timeout=30) as resp:
+        data = json.loads(resp.read())
+    text = data["choices"][0]["message"]["content"]
+    return re.sub(r"<think>.*?</think>\s*", "", text, flags=re.DOTALL)
 
 
 # ── Helpers ────────────────────────────────────────────────────────────────
@@ -247,12 +284,16 @@ def git_sync():
         print(f"  Warning: git sync check failed: {e}", file=sys.stderr)
 
 
-# ── Step 3: Generate one-sentence summaries via Gemini Flash ─────────────
+# ── Step 3: Generate one-sentence summaries (Gemini Flash → Minimax fallback)
 
 
 def generate_summaries(records: list[dict]) -> int:
-    """Send article extracts to Gemini Flash and get back one-sentence summaries."""
-    if not _ensure_gemini():
+    """Send article extracts to an LLM and get back one-sentence summaries."""
+    has_gemini = _ensure_gemini()
+    has_minimax = _ensure_minimax()
+
+    if not has_gemini and not has_minimax:
+        print("  Warning: neither GEMINI_API_KEY nor MINIMAX_API_KEY set, skipping summaries")
         return 0
 
     extractable = [
@@ -277,41 +318,46 @@ def generate_summaries(records: list[dict]) -> int:
             snippet = " ".join(rec["extract"].split()[:200])
             prompt_lines.append(f"{idx}. {rec['title']} | {snippet}")
 
-        max_retries = 4
-        for attempt in range(max_retries):
+        prompt = "\n".join(prompt_lines)
+        text = None
+
+        if has_gemini:
             try:
-                client = genai.Client()
-                response = client.models.generate_content(
-                    model=SUMMARY_MODEL, contents="\n".join(prompt_lines)
-                )
-                text = response.text or ""
-
-                batch_count = 0
-                for line in text.strip().splitlines():
-                    m = re.match(r"^(\d+)\.\s*(.+)", line.strip())
-                    if m:
-                        num = int(m.group(1))
-                        sentence = m.group(2).strip()
-                        if 1 <= num <= len(batch) and sentence:
-                            batch[num - 1]["summary"] = sentence
-                            batch_count += 1
-
-                generated += batch_count
-                print(f"    Batch {batch_num}: {batch_count}/{len(batch)} summaries")
-
-                if batch_start + SUMMARY_BATCH_SIZE < len(extractable):
-                    time.sleep(5)
-                break
-
+                text = _call_gemini_batch(prompt)
             except Exception as e:
-                status = getattr(getattr(e, "response", None), "status_code", None)
-                if status in (403, 429, 503) and attempt < max_retries - 1:
-                    wait = 2 ** (attempt + 1) * 15
-                    print(f"    Rate limited (HTTP {status}), retrying in {wait}s...")
-                    time.sleep(wait)
-                else:
-                    print(f"    Warning: summary batch {batch_num} failed: {e}")
+                print(f"    Gemini failed: {e}, trying Minimax...")
+
+        if text is None and has_minimax:
+            for attempt in range(2):
+                try:
+                    text = _call_minimax_batch(prompt)
                     break
+                except Exception as e:
+                    if attempt == 0:
+                        print(f"    Minimax attempt 1 failed: {e}, retrying...")
+                        time.sleep(2)
+                    else:
+                        print(f"    Minimax attempt 2 failed: {e}")
+
+        if text is None:
+            print(f"    Warning: batch {batch_num} — all providers failed, skipping")
+            continue
+
+        batch_count = 0
+        for line in text.strip().splitlines():
+            m = re.match(r"^(\d+)\.\s*(.+)", line.strip())
+            if m:
+                num = int(m.group(1))
+                sentence = m.group(2).strip()
+                if 1 <= num <= len(batch) and sentence:
+                    batch[num - 1]["summary"] = sentence
+                    batch_count += 1
+
+        generated += batch_count
+        print(f"    Batch {batch_num}: {batch_count}/{len(batch)} summaries")
+
+        if batch_start + SUMMARY_BATCH_SIZE < len(extractable):
+            time.sleep(5)
 
     print(f"  Summaries generated: {generated}/{len(extractable)}")
     return generated
