@@ -89,7 +89,8 @@ SUMMARY_SYSTEM_PROMPT = (
     "one sentence (max 25 words) that summarizes the key news. Be concrete and "
     "specific. Always translate and respond in English, even if the article is "
     "in French, Norwegian, Italian, German, Hungarian, Polish, Spanish, Swedish, "
-    "or any other language. Never skip an article. "
+    "or any other language. Never skip an article. Never write 'duplicate' "
+    "or reference another article's number — every summary must be standalone. "
     "Return ONLY numbered lines, one per article."
 )
 
