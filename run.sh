@@ -8,7 +8,8 @@ echo "Pulling latest..."
 git -C data-private pull --rebase || true
 git pull --rebase || true
 
-# Run scraper (pass through any args, e.g. --hours 4)
+# Harvest new links, then scrape content and generate summaries
+python media-monitor.py
 python article_scraper.py "$@"
 
 # Commit and push
