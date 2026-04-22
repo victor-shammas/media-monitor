@@ -82,8 +82,8 @@ REQUEST_DELAY = 1.0
 # AI summary generation
 SUMMARY_BATCH_SIZE = 20
 SUMMARY_MODEL = "gemini-2.5-flash"
-GROQ_BASE_URL = "https://api.groq.com/openai/v1"
-GROQ_MODEL = "llama-3.3-70b-versatile"
+MISTRAL_BASE_URL = "https://api.mistral.ai/v1"
+MISTRAL_MODEL = "mistral-small-latest"
 
 genai = None
 
@@ -110,17 +110,17 @@ def _call_gemini_batch(prompt: str) -> str:
     return response.text or ""
 
 
-def _ensure_groq():
-    return bool(os.environ.get("GROQ_API_KEY"))
+def _ensure_mistral():
+    return bool(os.environ.get("MISTRAL_API_KEY"))
 
 
-def _call_groq_batch(prompt: str) -> str:
+def _call_mistral_batch(prompt: str) -> str:
     import urllib.request
 
-    api_key = os.environ["GROQ_API_KEY"]
+    api_key = os.environ["MISTRAL_API_KEY"]
     payload = json.dumps(
         {
-            "model": GROQ_MODEL,
+            "model": MISTRAL_MODEL,
             "messages": [
                 {"role": "system", "content": "You are a news summarizer. Always respond in English regardless of the input language."},
                 {"role": "user", "content": prompt},
@@ -129,7 +129,7 @@ def _call_groq_batch(prompt: str) -> str:
         }
     ).encode()
     req = urllib.request.Request(
-        f"{GROQ_BASE_URL}/chat/completions",
+        f"{MISTRAL_BASE_URL}/chat/completions",
         data=payload,
         headers={
             "Authorization": f"Bearer {api_key}",
@@ -287,16 +287,16 @@ def git_sync():
         print(f"  Warning: git sync check failed: {e}", file=sys.stderr)
 
 
-# ── Step 3: Generate one-sentence summaries (Gemini Flash → Groq fallback)
+# ── Step 3: Generate one-sentence summaries (Gemini Flash → Mistral fallback)
 
 
 def generate_summaries(records: list[dict]) -> int:
     """Send article extracts to an LLM and get back one-sentence summaries."""
     has_gemini = _ensure_gemini()
-    has_groq = _ensure_groq()
+    has_mistral = _ensure_mistral()
 
-    if not has_gemini and not has_groq:
-        print("  Warning: neither GEMINI_API_KEY nor GROQ_API_KEY set, skipping summaries")
+    if not has_gemini and not has_mistral:
+        print("  Warning: neither GEMINI_API_KEY nor MISTRAL_API_KEY set, skipping summaries")
         return 0
 
     extractable = [
@@ -329,13 +329,13 @@ def generate_summaries(records: list[dict]) -> int:
             try:
                 text = _call_gemini_batch(prompt)
             except Exception as e:
-                print(f"    Gemini failed: {e}, trying Groq...")
+                print(f"    Gemini failed: {e}, trying Mistral...")
 
-        if text is None and has_groq:
+        if text is None and has_mistral:
             try:
-                text = _call_groq_batch(prompt)
+                text = _call_mistral_batch(prompt)
             except Exception as e:
-                print(f"    Groq failed: {e}")
+                print(f"    Mistral failed: {e}")
 
         if text is None:
             print(f"    Warning: batch {batch_num} — all providers failed, skipping")
