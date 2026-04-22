@@ -22,6 +22,7 @@ Flags:
 import argparse
 import json
 import os
+import re
 import socket
 import sys
 import time
@@ -76,6 +77,28 @@ MAX_EXTRACT_WORDS = 300
 
 # Delay between requests (seconds) — be polite
 REQUEST_DELAY = 1.0
+
+# AI summary generation
+SUMMARY_BATCH_SIZE = 10
+SUMMARY_MODEL = "gemini-2.5-flash"
+
+genai = None
+
+
+def _ensure_gemini():
+    global genai
+    if genai is not None:
+        return True
+    if not os.environ.get("GEMINI_API_KEY"):
+        return False
+    try:
+        from google import genai as _genai
+
+        genai = _genai
+        return True
+    except ImportError:
+        print("  Warning: google-genai not installed, skipping summary generation")
+        return False
 
 
 # ── Helpers ────────────────────────────────────────────────────────────────
@@ -193,6 +216,91 @@ def extract_article(url: str) -> tuple[str | None, int, str]:
         return None, 0, f"error: {e}"
 
 
+# ── Step 3: Generate one-sentence summaries via Gemini Flash ─────────────
+
+
+def generate_summaries(records: list[dict]) -> int:
+    """Send article extracts to Gemini Flash and get back one-sentence summaries."""
+    if not _ensure_gemini():
+        return 0
+
+    extractable = [
+        r for r in records if r.get("extract_status") == "ok" and r.get("extract")
+    ]
+    if not extractable:
+        return 0
+
+    print(f"\n  Generating summaries for {len(extractable)} articles...")
+    generated = 0
+
+    for batch_start in range(0, len(extractable), SUMMARY_BATCH_SIZE):
+        batch = extractable[batch_start : batch_start + SUMMARY_BATCH_SIZE]
+        batch_num = batch_start // SUMMARY_BATCH_SIZE + 1
+
+        prompt_lines = [
+            "For each article below, write exactly one sentence (max 25 words) "
+            "that summarizes the key news. Be concrete and specific. "
+            "Return ONLY numbered lines, one per article.\n"
+        ]
+        for idx, rec in enumerate(batch, 1):
+            snippet = " ".join(rec["extract"].split()[:200])
+            prompt_lines.append(f"{idx}. {rec['title']} | {snippet}")
+
+        try:
+            client = genai.Client()
+            response = client.models.generate_content(
+                model=SUMMARY_MODEL, contents="\n".join(prompt_lines)
+            )
+            text = response.text or ""
+
+            batch_count = 0
+            for line in text.strip().splitlines():
+                m = re.match(r"^(\d+)\.\s*(.+)", line.strip())
+                if m:
+                    num = int(m.group(1))
+                    sentence = m.group(2).strip()
+                    if 1 <= num <= len(batch) and sentence:
+                        batch[num - 1]["summary"] = sentence
+                        batch_count += 1
+
+            generated += batch_count
+            print(f"    Batch {batch_num}: {batch_count}/{len(batch)} summaries")
+
+            if batch_start + SUMMARY_BATCH_SIZE < len(extractable):
+                time.sleep(5)
+
+        except Exception as e:
+            print(f"    Warning: summary batch {batch_num} failed: {e}")
+
+    print(f"  Summaries generated: {generated}/{len(extractable)}")
+    return generated
+
+
+def _write_summaries_to_state(records: list[dict]) -> int:
+    """Write AI-generated summaries back to monitor_state.json."""
+    summary_records = [r for r in records if r.get("summary")]
+    if not summary_records:
+        return 0
+
+    with open(STATE_FILE, "r", encoding="utf-8") as f:
+        state = json.load(f)
+
+    updated = 0
+    for rec in summary_records:
+        cat = rec.get("category", "")
+        google_url = rec.get("google_url", "")
+        for item in state.get(cat, []):
+            if item.get("url") == google_url:
+                item["summary"] = rec["summary"]
+                updated += 1
+                break
+
+    with open(STATE_FILE, "w", encoding="utf-8") as f:
+        json.dump(state, f, indent=2, ensure_ascii=False)
+
+    return updated
+
+
 # ── Main ──────────────────────────────────────────────────────────────────
 
 
@@ -300,6 +408,7 @@ def main():
             "extract": None,
             "extract_status": "pending",
             "word_count": 0,
+            "summary": None,
         }
 
         progress = f"[{i}/{len(articles)}]"
@@ -373,6 +482,11 @@ def main():
         new_by_date.setdefault(ds, []).append(record)
         time.sleep(REQUEST_DELAY)
 
+    # ── Step 3: Generate AI summaries ────────────────────────────────────
+
+    all_new_records = [r for recs in new_by_date.values() for r in recs]
+    summary_count = generate_summaries(all_new_records)
+
     # ── Merge into per-day files and write ────────────────────────────────
 
     written_files = []
@@ -433,6 +547,20 @@ def main():
 
         written_files.append((outpath, len(new_articles), len(merged)))
 
+    # ── Write AI summaries back to monitor_state.json ───────────────────
+
+    if summary_count:
+        state_updated = _write_summaries_to_state(all_new_records)
+        print(f"\n  Wrote {state_updated} summaries back to {STATE_FILE}")
+
+        import subprocess
+
+        print("  Rebuilding feed text files...")
+        subprocess.run(
+            [sys.executable, "media-monitor.py", "--rebuild"],
+            cwd=os.path.dirname(os.path.abspath(__file__)),
+        )
+
     # ── Summary ───────────────────────────────────────────────────────────
 
     total = stats["total"]
@@ -449,6 +577,7 @@ def main():
         print(
             f"  Text extracted:    {stats['extracted']}/{total} ({100 * stats['extracted'] // total}%)"
         )
+    print(f"  AI summaries:      {summary_count}")
     print(f"  Blocklisted:       {stats['blocklisted']}")
     print(f"  Domains skipped:   {stats['skipped']}")
     print(f"  Failed (resolve):  {stats['failed_resolve']}")

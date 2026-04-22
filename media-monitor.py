@@ -301,8 +301,6 @@ def fetch_feed(
                         continue
 
                     source = extract_source(item.get("title", ""))
-                    summary = strip_html(item.get("description", ""))
-                    summary = strip_trailing_source(summary, source)
 
                     candidate = {
                         "title": clean_title(item.get("title", "")),
@@ -310,7 +308,7 @@ def fetch_feed(
                         "source": source,
                         "date": item.get("pubDate", ""),
                         "added_at": timestamp,
-                        "summary": summary,
+                        "summary": "",
                     }
 
                     # Check against blocklist before accepting
@@ -360,8 +358,8 @@ def format_single_feed(feed: dict, items: list[dict], last_updated: str) -> str:
 
         lines.append(f"   Added:     {item.get('added_at', 'Unknown')}")
 
-        if item["summary"]:
-            lines.append(f"   {item['summary']}")
+        if item.get("summary"):
+            lines.append(f"   [AI Summary: {item['summary']}]")
         lines.append(f"   {item['url']}")
         lines.append("")
 
