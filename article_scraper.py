@@ -305,7 +305,7 @@ def generate_summaries(records: list[dict]) -> int:
 
             except Exception as e:
                 status = getattr(getattr(e, "response", None), "status_code", None)
-                if status in (403, 429) and attempt < max_retries - 1:
+                if status in (403, 429, 503) and attempt < max_retries - 1:
                     wait = 2 ** (attempt + 1) * 15
                     print(f"    Rate limited (HTTP {status}), retrying in {wait}s...")
                     time.sleep(wait)
