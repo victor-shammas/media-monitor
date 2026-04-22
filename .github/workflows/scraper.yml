@@ -37,7 +37,7 @@ jobs:
         timeout-minutes: 30
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          MINIMAX_API_KEY: ${{ secrets.MINIMAX_API_KEY }}
+          MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
         run: python article_scraper.py --hours 24
 
       - name: Push enriched data to private repo
