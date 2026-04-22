@@ -737,11 +737,8 @@
                 if (allDone) {
                     cards.forEach((card) => {
                         const titleEl = card.querySelector("h3 a");
-                        const summaryEl = card.querySelector(".article-summary");
                         if (titleEl && titleEl.dataset.original !== undefined)
                             titleEl.textContent = titleEl.dataset.original;
-                        if (summaryEl && summaryEl.dataset.original !== undefined)
-                            summaryEl.textContent = summaryEl.dataset.original;
                         delete card.dataset.translated;
                     });
                     isTranslated = false;
@@ -765,15 +762,6 @@
                                 try {
                                     titleEl.textContent = await translateText(
                                         titleEl.textContent,
-                                        currentFeed.lang,
-                                    );
-                                } catch {}
-                            }
-                            if (summaryEl) {
-                                summaryEl.dataset.original = summaryEl.textContent;
-                                try {
-                                    summaryEl.textContent = await translateText(
-                                        summaryEl.textContent,
                                         currentFeed.lang,
                                     );
                                 } catch {}
