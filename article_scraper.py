@@ -133,7 +133,7 @@ def _call_minimax_batch(prompt: str) -> str:
             "Content-Type": "application/json",
         },
     )
-    with urllib.request.urlopen(req, timeout=30) as resp:
+    with urllib.request.urlopen(req, timeout=60) as resp:
         data = json.loads(resp.read())
     text = data["choices"][0]["message"]["content"]
     return re.sub(r"<think>.*?</think>\s*", "", text, flags=re.DOTALL)
