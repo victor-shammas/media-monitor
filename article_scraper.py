@@ -284,20 +284,20 @@ def generate_summaries(records: list[dict]) -> int:
             article_lines.append(f"{idx}. {rec['title']} | {snippet}")
         articles_block = "\n".join(article_lines)
 
-        gemini_prompt = f"{SUMMARY_SYSTEM_PROMPT}\n\n{articles_block}"
         text = None
 
-        if has_gemini:
-            try:
-                text = _call_gemini_batch(gemini_prompt)
-            except Exception as e:
-                print(f"    Gemini failed: {e}, trying Mistral...")
-
-        if text is None and has_mistral:
+        if has_mistral:
             try:
                 text = _call_mistral_batch(articles_block)
             except Exception as e:
-                print(f"    Mistral failed: {e}")
+                print(f"    Mistral failed: {e}, trying Gemini...")
+
+        if text is None and has_gemini:
+            gemini_prompt = f"{SUMMARY_SYSTEM_PROMPT}\n\n{articles_block}"
+            try:
+                text = _call_gemini_batch(gemini_prompt)
+            except Exception as e:
+                print(f"    Gemini failed: {e}")
 
         if text is None:
             print(f"    Warning: batch {batch_num} — all providers failed, skipping")
