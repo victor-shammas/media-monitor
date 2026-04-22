@@ -1,15 +1,24 @@
-name: Article Scraper
+name: Media Monitor Pipeline
 
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 on:
   schedule:
-    - cron: '30 */2 * * *'
+    - cron: "0 */2 * * *"
   workflow_dispatch:
+    inputs:
+      fetch_only:
+        description: "Only fetch RSS, skip enrichment"
+        type: boolean
+        default: false
+
+concurrency:
+  group: media-pipeline
+  cancel-in-progress: false
 
 jobs:
-  scrape-articles:
+  monitor-and-enrich:
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -33,12 +42,17 @@ jobs:
       - name: Install dependencies
         run: pip install trafilatura googlenewsdecoder google-genai
 
-      - name: Run scraper
-        timeout-minutes: 30
+      - name: Run unified pipeline
+        timeout-minutes: 35
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
-        run: python article_scraper.py --hours 24
+        run: |
+          if [ "${{ inputs.fetch_only }}" = "true" ]; then
+            python media-monitor.py -d feeds --fetch-only
+          else
+            python media-monitor.py -d feeds --enrich --enrich-hours 24
+          fi
 
       - name: Push enriched data to private repo
         run: |
@@ -47,4 +61,13 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A
           git commit -m "Enriched articles $(date -u +%Y-%m-%d)" || echo "No changes"
+          git push
+
+      - name: Commit and push state + feeds
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add feeds/ monitor_state.json
+          git commit -m "Automated monitor update" || echo "No changes to commit"
+          git pull --rebase
           git push

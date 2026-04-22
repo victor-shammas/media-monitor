@@ -1,41 +1,30 @@
 #!/usr/bin/env python3
 """
-Transatlantic Right-Wing Media Monitor
+Transatlantic Right-Wing Media Monitor — Unified Pipeline
 
-Maintains a database of seen articles from Google News RSS feeds across various
-countries and categories. It regenerates cleanly grouped individual text files
-for each category, enforcing strict chronological sorting, and never visits
-article URLs directly to avoid rate limits and 403 errors.
+Fetches Google News RSS feeds and optionally enriches articles with text
+extraction and AI-generated summaries. Maintains a database of seen articles
+in monitor_state.json and generates per-category text files in feeds/.
 
 Usage Examples:
-  python media-monitor.py                              → Fetch all feeds (default)
-  python media-monitor.py --feeds norway usa            → Fetch specific feeds only
-  python media-monitor.py -d custom_folder/            → Write text files to custom dir
-  python media-monitor.py --rebuild                    → Regenerate text files from state (no fetch)
+  python media-monitor.py                               → Fetch all feeds (default)
+  python media-monitor.py --enrich                      → Fetch + enrich + summarize
+  python media-monitor.py --feeds norway usa             → Fetch specific feeds only
+  python media-monitor.py --rebuild                     → Regenerate text files from state
+  python media-monitor.py --enrich --enrich-hours 48    → Enrich with wider lookback
+
+Enrichment Flags:
+  --enrich                  After fetching, resolve URLs, extract text, generate AI summaries
+  --fetch-only              Only fetch RSS feeds (this is the default)
+  --enrich-hours N          Look-back window for enrichment (default: 24)
+  --enrich-outdir DIR       Output directory for enriched JSON (default: data-private/)
 
 Blocklist Management:
-  python media-monitor.py --block <url>                → Block a single URL and purge from state
-  python media-monitor.py --block-source "Daily Mail"  → Block all items from a source
-  python media-monitor.py --block-pattern "horoscope"  → Block titles containing a phrase
-  python media-monitor.py --show-blocklist             → Display the current blocklist
-  python media-monitor.py --unblock "Daily Mail"       → Remove an entry from the blocklist
-
-Flags:
-  -d, --outdir DIR          Output directory for per-category text files (default: feeds/)
-  --feeds [ID ...]          Only run specific feed IDs (e.g., norway, usa, sweden, germany, networks)
-  --rebuild                 Regenerate all text files from monitor_state.json without fetching
-  --archive-days N          Archive articles older than N days (default: 60)
-  --block URL               Block a single article by URL and prevent re-ingestion
-  --block-source SOURCE     Block all articles from a named source (case-insensitive)
-  --block-pattern PHRASE    Block any article whose title contains this phrase (case-insensitive)
-  --unblock ENTRY           Remove a URL, source, or pattern from the blocklist
+  --block URL               Block a single article by URL
+  --block-source SOURCE     Block all articles from a named source
+  --block-pattern PHRASE    Block titles containing a phrase
+  --unblock ENTRY           Remove an entry from the blocklist
   --show-blocklist          Print the current blocklist and exit
-
-Data files:
-  monitor_state.json        Persistent article database (one key per feed category)
-  archive.jsonl             Long-term archive of pruned articles (one JSON record per line)
-  blocklist.json            Blocked URLs, sources, and title patterns (created on first use)
-  feeds/*.txt               Human-readable per-category article listings (regenerated each run)
 """
 
 import argparse
@@ -43,7 +32,6 @@ import html as html_mod
 import json
 import os
 import re
-import subprocess
 import sys
 import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
@@ -51,16 +39,18 @@ from email.utils import parsedate_to_datetime
 from urllib.parse import quote
 from urllib.request import Request, urlopen
 
-import tomllib
-
-with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "config.toml"), "rb") as _f:
-    CONFIG = tomllib.load(_f)
-CATEGORY_LABELS = CONFIG["categories"]
+from monitor_utils import (
+    CONFIG,
+    CATEGORY_LABELS,
+    STATE_FILE,
+    BLOCKLIST_FILE,
+    get_sort_time,
+    load_blocklist,
+    git_sync,
+)
 
 # ── Configuration ──────────────────────────────────────────────────────────
 
-STATE_FILE = "monitor_state.json"
-BLOCKLIST_FILE = "blocklist.json"
 ARCHIVE_FILE = "archive.jsonl"
 MAX_NEW_PER_RUN = 30  # The universal limit of new articles to add per run per category
 DEFAULT_ARCHIVE_DAYS = 60  # Articles older than this are archived and pruned from state
@@ -150,47 +140,7 @@ def fmt_date(iso: str) -> str:
         return iso[:10]
 
 
-def get_sort_time(item: dict) -> datetime:
-    """Helper to robustly sort items by publication date."""
-    date_str = item.get("date", "")
-    try:
-        # Try to parse the ISO formatted string saved in the JSON
-        return datetime.fromisoformat(date_str.replace("Z", "+00:00"))
-    except Exception:
-        # Fallback to the exact time the script added it
-        added_str = item.get("added_at", "")
-        try:
-            return datetime.strptime(added_str, "%Y-%m-%d %H:%M:%S").replace(
-                tzinfo=timezone.utc
-            )
-        except Exception:
-            return datetime.min.replace(tzinfo=timezone.utc)
-
-
 # ── Blocklist ─────────────────────────────────────────────────────────────
-
-
-def load_blocklist() -> dict:
-    """Load the blocklist file. Structure:
-    {
-      "urls": ["https://..."],
-      "sources": ["SomeSpamSite"],
-      "title_patterns": ["unwanted phrase"]
-    }
-    """
-    if os.path.exists(BLOCKLIST_FILE):
-        try:
-            with open(BLOCKLIST_FILE, "r", encoding="utf-8") as f:
-                data = json.load(f)
-            # Normalize: lowercase sources and patterns for case-insensitive matching
-            return {
-                "urls": set(data.get("urls", [])),
-                "sources": {s.lower() for s in data.get("sources", [])},
-                "title_patterns": [p.lower() for p in data.get("title_patterns", [])],
-            }
-        except Exception:
-            pass
-    return {"urls": set(), "sources": set(), "title_patterns": []}
 
 
 def save_blocklist(blocklist: dict) -> None:
@@ -367,36 +317,6 @@ def format_single_feed(feed: dict, items: list[dict], last_updated: str) -> str:
     return "\n".join(lines)
 
 
-# ── Git sync ──────────────────────────────────────────────────────────────
-
-
-def git_sync():
-    """Pull latest changes if the local branch is behind origin."""
-    repo_dir = os.path.dirname(os.path.abspath(__file__))
-    try:
-        subprocess.run(
-            ["git", "fetch"], cwd=repo_dir, capture_output=True, timeout=15
-        )
-        result = subprocess.run(
-            ["git", "status", "--porcelain", "-b"],
-            cwd=repo_dir,
-            capture_output=True,
-            text=True,
-            timeout=10,
-        )
-        if "behind" in result.stdout:
-            print("  ↓ Local branch is behind origin — pulling...", file=sys.stderr)
-            subprocess.run(
-                ["git", "pull", "--rebase"],
-                cwd=repo_dir,
-                capture_output=True,
-                timeout=30,
-            )
-            print("  ✓ Pulled latest changes", file=sys.stderr)
-    except Exception as e:
-        print(f"  Warning: git sync check failed: {e}", file=sys.stderr)
-
-
 # ── Main ───────────────────────────────────────────────────────────────────
 
 
@@ -422,6 +342,30 @@ def main():
         default=DEFAULT_ARCHIVE_DAYS,
         metavar="N",
         help=f"Archive articles older than N days (default: {DEFAULT_ARCHIVE_DAYS})",
+    )
+
+    # ── Enrichment flags ─────────────────────────────────────────────────
+    enrich_group = parser.add_argument_group("enrichment (scraper + summaries)")
+    enrich_group.add_argument(
+        "--enrich",
+        action="store_true",
+        help="After fetching, enrich articles (resolve URLs, extract text, generate AI summaries)",
+    )
+    enrich_group.add_argument(
+        "--fetch-only",
+        action="store_true",
+        help="Only fetch RSS feeds, do not run enrichment (this is the default)",
+    )
+    enrich_group.add_argument(
+        "--enrich-hours",
+        type=int,
+        default=24,
+        help="Look-back window in hours for enrichment (default: 24)",
+    )
+    enrich_group.add_argument(
+        "--enrich-outdir",
+        default="data-private",
+        help="Output directory for enriched JSON files (default: data-private/)",
     )
 
     # ── Blocklist management ──────────────────────────────────────────────
@@ -647,6 +591,20 @@ def main():
         with open(filepath, "w", encoding="utf-8") as f:
             f.write(text + "\n")
         print(f"  ✓ Saved {filename}", file=sys.stderr)
+
+    # ── Optional enrichment pass ─────────────────────────────────────────
+    if args.enrich and not args.fetch_only:
+        print("\n[Enriching articles...]", file=sys.stderr)
+        from article_scraper import run_scraper
+
+        category = None
+        if args.feeds and len(args.feeds) == 1:
+            category = args.feeds[0]
+        run_scraper(
+            hours=args.enrich_hours,
+            outdir=args.enrich_outdir,
+            category=category,
+        )
 
 
 if __name__ == "__main__":

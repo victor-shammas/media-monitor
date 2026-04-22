@@ -1,22 +1,18 @@
 #!/usr/bin/env python3
 """
-Article Scraper — Enriches monitor data with article text extracts.
+Article Scraper — Enrichment library for the media monitor pipeline.
 
-Reads the RSS metadata from monitor_state.json, resolves Google News redirect
-URLs, extracts the first 300 words of article text via trafilatura, and writes
-one enriched JSON file per day (enriched_YYYY-MM-DD.json). Multiple scraper runs
-merge into the same day file, with articles placed by their publication date.
-Already-processed articles are skipped on subsequent runs.
+Resolves Google News redirect URLs, extracts article text via trafilatura,
+and generates AI summaries. Called by media-monitor.py --enrich or standalone.
 
-Usage Examples:
+Usage (standalone):
     python article_scraper.py              # Scrape articles from the last 24 hours
     python article_scraper.py --hours 48   # Expand window to the last 48 hours
-    python article_scraper.py --category frp  # Scrape only a single specific category
+    python article_scraper.py --category usa  # Scrape only a single category
 
-Flags:
-    --hours INT        Look-back window in hours to scrape (default: 24)
-    --outdir DIR       Output directory for the enriched JSON files (default: data-private/)
-    --category ID      Scrape only a specific feed ID (e.g., 'frp', 'maga')
+Usage (as library):
+    from article_scraper import run_scraper
+    run_scraper(hours=24, outdir="data-private")
 """
 
 import argparse
@@ -24,7 +20,6 @@ import json
 import os
 import re
 import socket
-import subprocess
 import sys
 import time
 from datetime import datetime, timedelta, timezone
@@ -39,23 +34,13 @@ except ImportError:
     print("Install dependencies: pip install trafilatura googlenewsdecoder")
     sys.exit(1)
 
-STATE_FILE = "monitor_state.json"
-BLOCKLIST_FILE = "blocklist.json"
-
-CATEGORY_LABELS = {
-    "maga": "🇺🇸 MAGA / Trump",
-    "frp": "🇳🇴 Fremskrittspartiet",
-    "sd": "🇸🇪 Sverigedemokraterna",
-    "rn": "🇫🇷 Rassemblement National",
-    "fdi": "🇮🇹 Fratelli d'Italia / Lega",
-    "reform": "🇬🇧 Reform UK",
-    "afd": "🇩🇪 Alternative für Deutschland",
-    "general": "🌍 General Right-Wing",
-    "nodes": "🕸️ Transnational Networks",
-    "hungary": "🇭🇺 Hungary (Fidesz / Tisza)",
-    "poland": "🇵🇱 Prawo i Sprawiedliwość",
-    "spain": "🇪🇸 Vox",
-}
+from monitor_utils import (
+    STATE_FILE,
+    BLOCKLIST_FILE,
+    CATEGORY_LABELS,
+    get_sort_time,
+    git_sync,
+)
 
 # Domains known to fail — skip to save time
 SKIP_DOMAINS = {
@@ -154,29 +139,14 @@ def _call_mistral_batch(user_prompt: str) -> str:
 # ── Helpers ────────────────────────────────────────────────────────────────
 
 
-def get_sort_time(item: dict) -> datetime:
-    date_str = item.get("date", "")
-    try:
-        return datetime.fromisoformat(date_str.replace("Z", "+00:00"))
-    except Exception:
-        added_str = item.get("added_at", "")
-        try:
-            return datetime.strptime(added_str, "%Y-%m-%d %H:%M:%S").replace(
-                tzinfo=timezone.utc
-            )
-        except Exception:
-            return datetime.min.replace(tzinfo=timezone.utc)
-
-
-def load_blocklist() -> dict:
-    """Load blocklist.json if it exists. Returns dict with urls, sources, title_patterns."""
+def load_blocklist_raw() -> dict:
+    """Load blocklist.json in raw list form (for substring matching in scraper)."""
     default = {"urls": [], "sources": [], "title_patterns": []}
     if not os.path.exists(BLOCKLIST_FILE):
         return default
     try:
         with open(BLOCKLIST_FILE, "r", encoding="utf-8") as f:
             bl = json.load(f)
-        # Normalize source entries to lowercase for matching
         bl.setdefault("urls", [])
         bl.setdefault("sources", [])
         bl.setdefault("title_patterns", [])
@@ -264,36 +234,6 @@ def extract_article(url: str) -> tuple[str | None, int, str]:
         return truncated, len(words), "ok"
     except Exception as e:
         return None, 0, f"error: {e}"
-
-
-# ── Git sync ──────────────────────────────────────────────────────────────
-
-
-def git_sync():
-    """Pull latest changes if the local branch is behind origin."""
-    repo_dir = os.path.dirname(os.path.abspath(__file__))
-    try:
-        subprocess.run(
-            ["git", "fetch"], cwd=repo_dir, capture_output=True, timeout=15
-        )
-        result = subprocess.run(
-            ["git", "status", "--porcelain", "-b"],
-            cwd=repo_dir,
-            capture_output=True,
-            text=True,
-            timeout=10,
-        )
-        if "behind" in result.stdout:
-            print("  ↓ Local branch is behind origin — pulling...", file=sys.stderr)
-            subprocess.run(
-                ["git", "pull", "--rebase"],
-                cwd=repo_dir,
-                capture_output=True,
-                timeout=30,
-            )
-            print("  ✓ Pulled latest changes", file=sys.stderr)
-    except Exception as e:
-        print(f"  Warning: git sync check failed: {e}", file=sys.stderr)
 
 
 # ── Step 3: Generate one-sentence summaries (Gemini Flash → Mistral fallback)
@@ -411,30 +351,20 @@ def _write_summaries_to_state(records: list[dict]) -> int:
 # ── Main ──────────────────────────────────────────────────────────────────
 
 
-def main():
-    parser = argparse.ArgumentParser(description="Article Scraper")
-    parser.add_argument(
-        "--hours", type=int, default=24, help="Look-back window in hours (default: 24)"
-    )
-    parser.add_argument(
-        "--outdir", default="data-private", help="Output directory (default: data-private/)"
-    )
-    parser.add_argument(
-        "--category", default=None, help="Scrape only a specific category (e.g., 'frp')"
-    )
-    args = parser.parse_args()
-
-    git_sync()
-
+def run_scraper(
+    hours: int = 24,
+    outdir: str = "data-private",
+    category: str | None = None,
+) -> None:
+    """Programmatic entry point for the scraper. Called by media-monitor.py --enrich."""
     if not os.path.exists(STATE_FILE):
         print(f"Error: {STATE_FILE} not found.")
-        sys.exit(1)
+        return
 
     with open(STATE_FILE, "r", encoding="utf-8") as f:
         state = json.load(f)
 
-    # Load blocklist
-    blocklist = load_blocklist()
+    blocklist = load_blocklist_raw()
     bl_sources = len(blocklist.get("sources", []))
     bl_patterns = len(blocklist.get("title_patterns", []))
     bl_urls = len(blocklist.get("urls", []))
@@ -443,28 +373,26 @@ def main():
             f"  Blocklist loaded: {bl_sources} sources, {bl_patterns} title patterns, {bl_urls} URLs"
         )
 
-    cutoff = datetime.now(timezone.utc) - timedelta(hours=args.hours)
-    os.makedirs(args.outdir, exist_ok=True)
+    cutoff = datetime.now(timezone.utc) - timedelta(hours=hours)
+    os.makedirs(outdir, exist_ok=True)
 
-    # Collect candidate articles from state
     candidates = []
     for cat_id, items in state.items():
-        if args.category and cat_id != args.category:
+        if category and cat_id != category:
             continue
         for item in items:
             if get_sort_time(item) >= cutoff:
                 candidates.append({**item, "_category": cat_id})
 
     if not candidates:
-        print(f"No articles found in the last {args.hours} hours.")
-        sys.exit(0)
+        print(f"No articles found in the last {hours} hours.")
+        return
 
-    # Load existing enriched files for relevant dates to skip already-processed articles
     candidate_dates = {article_date_slug(c) for c in candidates}
     already_processed_urls = set()
     existing_by_date = {}
     for ds in candidate_dates:
-        data = load_existing_enriched(args.outdir, ds)
+        data = load_existing_enriched(outdir, ds)
         if data:
             existing_by_date[ds] = data
             for a in data.get("articles", []):
@@ -476,14 +404,14 @@ def main():
 
     if not articles:
         print(f"[{timestamp}] All {len(candidates)} articles already processed.")
-        sys.exit(0)
+        return
 
     cat_count = len(set(a["_category"] for a in articles))
     print(
         f"[{timestamp}] Scraping {len(articles)} new articles across {cat_count} categories"
     )
     print(f"  ({len(candidates) - len(articles)} already processed, skipped)")
-    print(f"  Look-back: {args.hours}h | Output: {args.outdir}/enriched_YYYY-MM-DD.json")
+    print(f"  Look-back: {hours}h | Output: {outdir}/enriched_YYYY-MM-DD.json")
     print()
 
     # ── Process each article ──────────────────────────────────────────────
@@ -523,7 +451,6 @@ def main():
         progress = f"[{i}/{len(articles)}]"
         print(f"  {progress} {cat_label} | {source} | {title[:55]}...")
 
-        # ── Blocklist: check source name ──────────────────────────────
         if is_blocklisted_source(source, blocklist):
             record["extract_status"] = "blocklisted_source"
             stats["blocklisted"] += 1
@@ -532,7 +459,6 @@ def main():
             new_by_date.setdefault(ds, []).append(record)
             continue
 
-        # ── Blocklist: check title patterns ───────────────────────────
         if is_blocklisted_title(title, blocklist):
             record["extract_status"] = "blocklisted_title"
             stats["blocklisted"] += 1
@@ -541,7 +467,6 @@ def main():
             new_by_date.setdefault(ds, []).append(record)
             continue
 
-        # Step 1: Resolve URL
         resolved_url, resolve_status = resolve_url(google_url)
 
         if resolve_status != "ok" or not resolved_url:
@@ -555,7 +480,6 @@ def main():
         record["resolved_url"] = resolved_url
         stats["resolved"] += 1
 
-        # ── Blocklist: check resolved URL ─────────────────────────────
         if is_blocklisted_url(resolved_url, blocklist):
             record["extract_status"] = "blocklisted_url"
             stats["blocklisted"] += 1
@@ -564,7 +488,6 @@ def main():
             new_by_date.setdefault(ds, []).append(record)
             continue
 
-        # Check for known-bad domains
         domain = urlparse(resolved_url).netloc.lower()
         if domain in SKIP_DOMAINS:
             record["extract_status"] = "skipped_domain"
@@ -574,7 +497,6 @@ def main():
             new_by_date.setdefault(ds, []).append(record)
             continue
 
-        # Step 2: Extract article text
         extract, word_count, extract_status = extract_article(resolved_url)
         record["extract"] = extract
         record["word_count"] = word_count
@@ -650,13 +572,13 @@ def main():
             "articles": merged,
         }
 
-        outpath = os.path.join(args.outdir, f"enriched_{ds}.json")
+        outpath = os.path.join(outdir, f"enriched_{ds}.json")
         with open(outpath, "w", encoding="utf-8") as f:
             json.dump(output, f, indent=2, ensure_ascii=False)
 
         written_files.append((outpath, len(new_articles), len(merged)))
 
-    # ── Write AI summaries back to monitor_state.json ───────────────────
+    # ── Write AI summaries back to monitor_state.json + rebuild feeds ────
 
     if summary_count:
         state_updated = _write_summaries_to_state(all_new_records)
@@ -695,6 +617,23 @@ def main():
     for outpath, new_count, total_count in written_files:
         print(f"  ✓ {outpath} — {new_count} new, {total_count} total")
     print()
+
+
+def main():
+    parser = argparse.ArgumentParser(description="Article Scraper")
+    parser.add_argument(
+        "--hours", type=int, default=24, help="Look-back window in hours (default: 24)"
+    )
+    parser.add_argument(
+        "--outdir", default="data-private", help="Output directory (default: data-private/)"
+    )
+    parser.add_argument(
+        "--category", default=None, help="Scrape only a specific category (e.g., 'frp')"
+    )
+    args = parser.parse_args()
+
+    git_sync()
+    run_scraper(hours=args.hours, outdir=args.outdir, category=args.category)
 
 
 if __name__ == "__main__":
