@@ -80,7 +80,7 @@ MAX_EXTRACT_WORDS = 300
 REQUEST_DELAY = 1.0
 
 # AI summary generation
-SUMMARY_BATCH_SIZE = 10
+SUMMARY_BATCH_SIZE = 20
 SUMMARY_MODEL = "gemini-2.5-flash"
 MINIMAX_BASE_URL = "https://api.minimax.io/v1"
 MINIMAX_MODEL = "MiniMax-M2.7"
