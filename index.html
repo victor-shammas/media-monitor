@@ -512,7 +512,11 @@
                         runCrossSearch(q);
                     } else {
                         const searchBtn = document.getElementById("search-tab-btn");
-                        if (searchBtn) searchBtn.remove();
+                        if (searchBtn) {
+                            searchBtn.textContent = "🔍 Search";
+                            setActiveTab(searchBtn);
+                            feedContent.innerHTML = "";
+                        }
                     }
                 }
             });
