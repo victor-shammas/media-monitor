@@ -132,6 +132,19 @@
                 color: var(--mute);
                 margin-top: 2px;
             }
+            .source-badge {
+                display: inline-flex;
+                align-items: center;
+                gap: 3px;
+                font-weight: 600;
+                color: var(--ink);
+            }
+            .source-badge .fi {
+                width: 14px;
+                height: 10px;
+                border-radius: 2px;
+                flex-shrink: 0;
+            }
             .article-summary {
                 font-size: 12.5px;
                 color: #44403c;
@@ -491,8 +504,22 @@
 
             const searchInput = document.getElementById("search-input");
             searchInput.addEventListener("input", applySearchFilter);
+            searchInput.addEventListener("keydown", (e) => {
+                if (e.key === "Enter") {
+                    e.preventDefault();
+                    const q = searchInput.value.trim();
+                    if (q) {
+                        runCrossSearch(q);
+                    } else {
+                        const searchBtn = document.getElementById("search-tab-btn");
+                        if (searchBtn) searchBtn.remove();
+                    }
+                }
+            });
 
             function applySearchFilter() {
+                const searchBtn = document.getElementById("search-tab-btn");
+                if (searchBtn && searchBtn.classList.contains("active")) return;
                 const q = searchInput.value.trim().toLowerCase();
                 const cards = feedContent.querySelectorAll(".article-card");
                 cards.forEach((card) => {
@@ -503,6 +530,16 @@
                     const text = card.textContent.toLowerCase();
                     card.style.display = text.includes(q) ? "" : "none";
                 });
+            }
+
+            // Handle #search= deep link
+            if (hash.startsWith("search=")) {
+                const q = decodeURIComponent(hash.slice(7));
+                if (q) {
+                    searchInput.value = q;
+                    runCrossSearch(q);
+                    initialFeedLoaded = true;
+                }
             }
 
             // Handle #analysis deep link
@@ -739,6 +776,115 @@
                 });
 
                 return htmlOutput;
+            }
+
+            function parseArticles(rawText) {
+                const parts = rawText.split(/═{10,}/);
+                if (parts.length < 3) return [];
+                const bodyText = parts.slice(2).join("═").trim();
+                if (!bodyText || bodyText.includes("(no results)")) return [];
+
+                const articleBlocks = bodyText.split(/\n\s*\n/);
+                const articles = [];
+
+                articleBlocks.forEach((block) => {
+                    const lines = block.trim().split("\n").map((l) => l.trim());
+                    if (lines.length < 3) return;
+
+                    let title = lines[0].replace(/^\d+\.\s*/, "");
+                    let url = "";
+                    if (lines[lines.length - 1].startsWith("http")) {
+                        url = lines.pop();
+                    }
+
+                    let published = "";
+                    let summary = "";
+                    for (let i = 1; i < lines.length; i++) {
+                        if (lines[i].startsWith("Published:")) {
+                            published = lines[i].replace("Published:", "").trim();
+                        } else if (lines[i].startsWith("Added:")) {
+                            continue;
+                        } else if (lines[i] !== title && lines[i] !== "") {
+                            summary += lines[i] + " ";
+                        }
+                    }
+
+                    articles.push({ title, url, published, summary: summary.trim() });
+                });
+
+                return articles;
+            }
+
+            /* ── Cross-feed search ── */
+
+            async function runCrossSearch(query) {
+                const q = query.toLowerCase();
+
+                let searchBtn = document.getElementById("search-tab-btn");
+                if (!searchBtn) {
+                    searchBtn = document.createElement("button");
+                    searchBtn.className = "tab-button";
+                    searchBtn.id = "search-tab-btn";
+                    searchBtn.onclick = () => {
+                        const currentQ = searchInput.value.trim();
+                        if (currentQ) runCrossSearch(currentQ);
+                    };
+                    tabContainer.appendChild(searchBtn);
+                }
+                const label = query.length > 20 ? query.slice(0, 20) + "…" : query;
+                searchBtn.textContent = `🔍 “${label}”`;
+
+                setActiveTab(searchBtn);
+                currentFeed = null;
+                document.getElementById("translate-btn").style.display = "none";
+                feedContent.innerHTML = `<span class="loading">Searching all feeds…</span>`;
+                window.history.pushState(null, null, `#search=${encodeURIComponent(query)}`);
+
+                try {
+                    const results = await Promise.all(
+                        feeds.map(async (feed) => {
+                            try {
+                                const res = await fetch(`feeds/${feed.filename}.txt`);
+                                if (!res.ok) return [];
+                                const text = await res.text();
+                                return parseArticles(text).map((a) => ({ ...a, feed }));
+                            } catch {
+                                return [];
+                            }
+                        }),
+                    );
+
+                    const matched = results.flat().filter(
+                        (a) =>
+                            a.title.toLowerCase().includes(q) ||
+                            a.summary.toLowerCase().includes(q),
+                    );
+
+                    if (matched.length === 0) {
+                        feedContent.innerHTML = `<div class="no-results">No results found across all feeds.</div>`;
+                        return;
+                    }
+
+                    let html = "";
+                    matched.forEach((a) => {
+                        const flagHtml = a.feed.flag
+                            ? `<span class="fi fi-${a.feed.flag}"></span>`
+                            : "";
+                        html += `
+              <div class="article-card">
+                <h3><a href="${a.url || "#"}" target="_blank" rel="noopener noreferrer">${a.title}</a></h3>
+                <div class="article-meta">
+                  <span class="source-badge">${flagHtml} ${a.feed.name}</span>${a.published ? ` · ${a.published}` : ""}
+                </div>
+                ${a.summary ? `<p class="article-summary">${a.summary}</p>` : ""}
+              </div>`;
+                    });
+
+                    feedContent.innerHTML = html;
+                    feedContent.scrollTop = 0;
+                } catch (err) {
+                    feedContent.innerHTML = `<span class="error">⚠ Search failed: ${err.message}</span>`;
+                }
             }
 
             /* ── Translation ── */
