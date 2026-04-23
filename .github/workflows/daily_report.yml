@@ -36,6 +36,7 @@ jobs:
 
       - name: Run AI Reporter
         env:
+          MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           SENDER_EMAIL: ${{ secrets.SENDER_EMAIL }}
@@ -51,8 +52,9 @@ jobs:
         #--model auto (now the default) — full fallback chain
         #--model pro — Gemini 2.5 Pro only
         #--model claude — Claude Sonnet only
+        #--model mistral — Mistral Large only
         #--model flash — Gemini 2.5 Flash only
-        # the run line below captures the last 24 hours of news reports, sends both email and writes a markdown file, and follows the fallback chain: Gemini 2.5 Pro → Claude Sonnet → Gemini 2.5 Flash
+        # the run line below captures the last 24 hours of news reports, sends both email and writes a markdown file, and follows the fallback chain: Mistral Large → Gemini 2.5 Pro → Claude Sonnet → Gemini 2.5 Flash
         # ──────────────────────────────────────────────────────────
         run: python ai_reporter.py --hours 24 --model auto --email --markdown
 

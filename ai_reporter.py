@@ -88,6 +88,43 @@ STATE_FILE = "monitor_state.json"
 
 # ── Provider Backends ──────────────────────────────────────────────────────
 
+MISTRAL_BASE_URL = "https://api.mistral.ai/v1"
+MISTRAL_MODEL = "mistral-large-latest"
+
+
+@retry(
+    stop=stop_after_attempt(3),
+    wait=wait_exponential(multiplier=1, min=4, max=30),
+    retry=retry_if_exception_type(Exception),
+    before_sleep=lambda rs: print(
+        f"    ⚠ Retrying in {rs.next_action.sleep:.0f}s... "
+        f"(attempt {rs.attempt_number})"
+    ),
+)
+def _call_mistral(prompt: str) -> str:
+    import urllib.request
+
+    api_key = os.environ["MISTRAL_API_KEY"]
+    payload = json.dumps(
+        {
+            "model": MISTRAL_MODEL,
+            "messages": [{"role": "user", "content": prompt}],
+            "max_tokens": 16384,
+        }
+    ).encode()
+    req = urllib.request.Request(
+        f"{MISTRAL_BASE_URL}/chat/completions",
+        data=payload,
+        headers={
+            "Authorization": f"Bearer {api_key}",
+            "Content-Type": "application/json",
+        },
+    )
+    with urllib.request.urlopen(req, timeout=120) as resp:
+        data = json.loads(resp.read())
+    text = data["choices"][0]["message"]["content"]
+    return re.sub(r"<think>.*?</think>\s*", "", text, flags=re.DOTALL)
+
 
 @retry(
     stop=stop_after_attempt(3),
@@ -155,6 +192,11 @@ def _call_anthropic(prompt: str, model: str) -> str:
 # ── Fallback Chain ─────────────────────────────────────────────────────────
 
 PROVIDERS = {
+    "mistral": {
+        "fn": _call_mistral,
+        "label": "Mistral Large",
+        "env_key": "MISTRAL_API_KEY",
+    },
     "gemini-pro": {
         "fn": lambda prompt: _call_gemini(prompt, "gemini-2.5-pro"),
         "label": "Gemini 2.5 Pro",
@@ -172,9 +214,10 @@ PROVIDERS = {
     },
 }
 
-DEFAULT_CHAIN = ["gemini-pro", "claude-sonnet", "gemini-flash"]
+DEFAULT_CHAIN = ["mistral", "gemini-pro", "claude-sonnet", "gemini-flash"]
 
 MODEL_ALIASES = {
+    "mistral": "mistral",
     "flash": "gemini-flash",
     "pro": "gemini-pro",
     "claude": "claude-sonnet",
