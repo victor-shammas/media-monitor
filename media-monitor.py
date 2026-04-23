@@ -61,7 +61,7 @@ FEEDS = CONFIG["feeds"]
 # ── Helpers ────────────────────────────────────────────────────────────────
 
 
-def build_gnews_url(query: str, lang: str, country: str, window: str = "3d") -> str:
+def build_gnews_url(query: str, lang: str, country: str, window: str = "7d") -> str:
     return (
         f"https://news.google.com/rss/search?"
         f"q={quote(query + ' when:' + window)}"
@@ -218,7 +218,7 @@ def fetch_feed(
     feed: dict, category_seen_urls: set, category_seen_titles: set, timestamp: str, blocklist: dict | None = None
 ) -> list[dict]:
     queries = feed.get("queries", [feed.get("q", "")])
-    window = feed.get("window", "3d")
+    window = feed.get("window", "7d")
     cutoff = datetime.now(timezone.utc) - timedelta(days=30)
     new_items = []
     errors = []
