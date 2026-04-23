@@ -52,7 +52,7 @@ from monitor_utils import (
 
 # ── Configuration ──────────────────────────────────────────────────────────
 
-ARCHIVE_FILE = "archive.jsonl"
+ARCHIVE_FILE = "data/archive.jsonl"
 MAX_NEW_PER_RUN = 30  # The universal limit of new articles to add per run per category
 DEFAULT_ARCHIVE_DAYS = 60  # Articles older than this are archived and pruned from state
 

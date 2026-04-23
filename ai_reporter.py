@@ -84,7 +84,7 @@ def _ensure_anthropic():
         anthropic = _anthropic
 
 
-STATE_FILE = "monitor_state.json"
+STATE_FILE = "data/monitor_state.json"
 MAX_PROMPT_CHARS = 400_000  # ~100K tokens; keeps prompt within context/rate limits
 
 
