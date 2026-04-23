@@ -8,6 +8,18 @@ on:
     # Runs daily at 03:00 UTC — padded for Actions scheduling delays
     - cron: "0 3 * * *"
   workflow_dispatch:
+    inputs:
+      model:
+        description: "LLM model (auto = full fallback chain)"
+        required: false
+        default: "auto"
+        type: choice
+        options:
+          - auto
+          - mistral
+          - pro
+          - claude
+          - flash
 
 jobs:
   email-report:
@@ -56,7 +68,7 @@ jobs:
         #--model flash — Gemini 2.5 Flash only
         # the run line below captures the last 24 hours of news reports, sends both email and writes a markdown file, and follows the fallback chain: Mistral Large → Gemini 2.5 Pro → Claude Sonnet → Gemini 2.5 Flash
         # ──────────────────────────────────────────────────────────
-        run: python ai_reporter.py --hours 24 --model auto --email --markdown
+        run: python ai_reporter.py --hours 24 --model ${{ inputs.model || 'auto' }} --email --markdown
 
       - name: Push input logs to private repo
         run: |
