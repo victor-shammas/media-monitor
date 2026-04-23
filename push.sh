@@ -14,8 +14,8 @@ if git -C data-private diff --name-only --diff-filter=U 2>/dev/null | grep -q .;
     git -C data-private rebase --continue || true
 fi
 if git diff --name-only --diff-filter=U 2>/dev/null | grep -q .; then
-    git checkout --theirs feeds/ monitor_state.json 2>/dev/null || true
-    git add feeds/ monitor_state.json 2>/dev/null || true
+    git checkout --theirs feeds/ data/monitor_state.json 2>/dev/null || true
+    git add feeds/ data/monitor_state.json 2>/dev/null || true
     git rebase --continue || true
 fi
 

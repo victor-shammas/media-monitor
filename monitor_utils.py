@@ -12,7 +12,7 @@ import tomllib
 
 _SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 
-STATE_FILE = "monitor_state.json"
+STATE_FILE = "data/monitor_state.json"
 BLOCKLIST_FILE = "blocklist.json"
 
 with open(os.path.join(_SCRIPT_DIR, "config.toml"), "rb") as _f:

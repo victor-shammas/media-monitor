@@ -21,7 +21,7 @@ The system is a unified pipeline with an optional daily reporting step, orchestr
 │   └──────────┬───────────────────┘     └────────┬─────────┘    │
 │              │                                  │              │
 │              ▼                                  ▼              │
-│   monitor_state.json                       reports/            │
+│   data/monitor_state.json              reports/            │
 │   feeds/*.txt                              YYYY-MM-DD_HHMM     │
 │   data-private/enriched_YYYY-MM-DD.json    _report.md          │
 └─────────────────────────────────────────────────────────────────┘
@@ -31,9 +31,9 @@ The system is a unified pipeline with an optional daily reporting step, orchestr
 
 A single script that handles both RSS fetching and article enrichment:
 
-**Fetch phase** (always runs): Scrapes Google News RSS feeds for twelve categories of right-wing political activity. Stores all seen articles in `monitor_state.json` with deduplication per category. Generates human-readable `.txt` files in `feeds/` for browsing.
+**Fetch phase** (always runs): Scrapes Google News RSS feeds for twelve categories of right-wing political activity. Stores all seen articles in `data/monitor_state.json` with deduplication per category. Generates human-readable `.txt` files in `feeds/` for browsing.
 
-**Enrichment phase** (with `--enrich`): Takes recent articles from state, decodes Google News redirect URLs using `googlenewsdecoder`, extracts article text via `trafilatura` (truncated to ~300 words), and generates one-sentence AI summaries in batches. Summaries are written back to both `monitor_state.json` and dated enriched JSON files in `data-private/`.
+**Enrichment phase** (with `--enrich`): Takes recent articles from state, decodes Google News redirect URLs using `googlenewsdecoder`, extracts article text via `trafilatura` (truncated to ~300 words), and generates one-sentence AI summaries in batches. Summaries are written back to both `data/monitor_state.json` and dated enriched JSON files in `data-private/`.
 
 Without `--enrich`, the script only fetches RSS metadata — fast, lightweight, and immune to 403 blocks.
 
@@ -60,7 +60,7 @@ Without `--enrich`, the script only fetches RSS metadata — fast, lightweight, 
 
 ### AI Reporter (`ai_reporter.py`)
 
-Runs daily at 05:00 UTC. Loads enriched files covering the lookback window, filters articles by publication date, and sends compiled data to the LLM with structured prompt instructions from `config.toml`. If no enriched files exist, falls back to titles-only from `monitor_state.json`.
+Runs daily at 05:00 UTC. Loads enriched files covering the lookback window, filters articles by publication date, and sends compiled data to the LLM with structured prompt instructions from `config.toml`. If no enriched files exist, falls back to titles-only from `data/monitor_state.json`.
 
 The reporter assigns sequential reference numbers to articles before sending to the LLM. The prompt instructs the model to cite sources inline, and the script replaces each `[N]` with a clickable link post-hoc. This avoids LLM hallucination of URLs.
 
@@ -90,7 +90,8 @@ media-monitor/
 ├── backfill_enriched_summaries.py  # One-off: summarize a specific enriched file
 ├── config.toml                 # Category labels, feed definitions, AI prompt
 ├── blocklist.json              # Blocked URLs, sources, and title patterns
-├── monitor_state.json          # Persistent article database (auto-generated)
+├── data/
+│   └── monitor_state.json      # Persistent article database (auto-generated)
 ├── feeds/                      # Human-readable .txt files per category
 ├── data-private/               # Dated enriched JSON files (separate private repo)
 ├── reports/                    # Markdown reports and prompt inputs
@@ -107,7 +108,7 @@ A single-page viewer for the `feeds/` output, deployed to GitHub Pages on every 
 Google News RSS
     │
     ▼
-monitor_state.json ──────────────────────┐
+data/monitor_state.json ─────────────────┐
     │                                    │
     ▼                                    ▼
 data-private/enriched_YYYY-MM-DD.json  [fallback if no
@@ -181,7 +182,7 @@ python backfill_enriched_summaries.py data-private/enriched_2026-04-17.json
 
 ## Design Decisions
 
-**Unified pipeline.** RSS fetching and enrichment run as a single script (`media-monitor.py --enrich`) to eliminate race conditions between separate workflows writing to `monitor_state.json`.
+**Unified pipeline.** RSS fetching and enrichment run as a single script (`media-monitor.py --enrich`) to eliminate race conditions between separate workflows writing to `data/monitor_state.json`.
 
 **Lightweight by default.** Without `--enrich`, the monitor only reads RSS metadata. This keeps the fast path free of external dependencies like `trafilatura`.
 
