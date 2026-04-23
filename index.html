@@ -509,14 +509,14 @@
 
             document.getElementById("translate-btn").onclick = () => toggleTranslate();
 
+            const searchInput = document.getElementById("search-input");
+
             document.getElementById("home-link").addEventListener("click", (e) => {
                 e.preventDefault();
                 searchInput.value = "";
                 loadFeed(feeds[0].filename, tabContainer.firstChild);
                 window.history.pushState(null, null, `#${feeds[0].filename}`);
             });
-
-            const searchInput = document.getElementById("search-input");
             searchInput.addEventListener("input", applySearchFilter);
             searchInput.addEventListener("keydown", (e) => {
                 if (e.key === "Enter") {
