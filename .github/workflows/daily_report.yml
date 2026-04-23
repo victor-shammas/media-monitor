@@ -17,9 +17,11 @@ on:
         options:
           - auto
           - mistral
+          - mistral-medium
+          - mistral-small
           - pro
-          - claude
           - flash
+          - claude
 
 jobs:
   email-report:
@@ -65,8 +67,10 @@ jobs:
         #--model pro — Gemini 2.5 Pro only
         #--model claude — Claude Sonnet only
         #--model mistral — Mistral Large only
+        #--model mistral-medium — Mistral Medium only
+        #--model mistral-small — Mistral Small only
         #--model flash — Gemini 2.5 Flash only
-        # the run line below captures the last 24 hours of news reports, sends both email and writes a markdown file, and follows the fallback chain: Mistral Large → Gemini 2.5 Pro → Claude Sonnet → Gemini 2.5 Flash
+        # the run line below captures the last 24 hours of news reports, sends both email and writes a markdown file, and follows the fallback chain: Mistral Large → Mistral Medium → Mistral Small → Gemini Pro → Gemini Flash → Sonnet
         # ──────────────────────────────────────────────────────────
         run: python ai_reporter.py --hours 24 --model ${{ inputs.model || 'auto' }} --email --markdown
 

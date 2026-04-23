@@ -15,7 +15,8 @@ Usage Examples:
   python ai_reporter.py                          → HTML email mode (production default)
   python ai_reporter.py --markdown               → Writes local .md files (testing/review)
   python ai_reporter.py --markdown --email       → Writes local .md files and sends email
-  python ai_reporter.py --markdown --model flash → Fast iteration using Gemini Flash
+  python ai_reporter.py --markdown --model flash  → Fast iteration using Gemini Flash
+  python ai_reporter.py --model mistral-medium    → Run Mistral Medium only
   python ai_reporter.py --hours 48               → Analyze a wider 48-hour window
 
 Flags:
@@ -89,7 +90,6 @@ STATE_FILE = "monitor_state.json"
 # ── Provider Backends ──────────────────────────────────────────────────────
 
 MISTRAL_BASE_URL = "https://api.mistral.ai/v1"
-MISTRAL_MODEL = "mistral-large-latest"
 
 
 @retry(
@@ -101,13 +101,13 @@ MISTRAL_MODEL = "mistral-large-latest"
         f"(attempt {rs.attempt_number})"
     ),
 )
-def _call_mistral(prompt: str) -> str:
+def _call_mistral(prompt: str, model: str = "mistral-large-latest") -> str:
     import urllib.request
 
     api_key = os.environ["MISTRAL_API_KEY"]
     payload = json.dumps(
         {
-            "model": MISTRAL_MODEL,
+            "model": model,
             "messages": [{"role": "user", "content": prompt}],
             "max_tokens": 16384,
         }
@@ -192,9 +192,19 @@ def _call_anthropic(prompt: str, model: str) -> str:
 # ── Fallback Chain ─────────────────────────────────────────────────────────
 
 PROVIDERS = {
-    "mistral": {
-        "fn": _call_mistral,
+    "mistral-large": {
+        "fn": lambda prompt: _call_mistral(prompt, "mistral-large-latest"),
         "label": "Mistral Large",
+        "env_key": "MISTRAL_API_KEY",
+    },
+    "mistral-medium": {
+        "fn": lambda prompt: _call_mistral(prompt, "mistral-medium-latest"),
+        "label": "Mistral Medium",
+        "env_key": "MISTRAL_API_KEY",
+    },
+    "mistral-small": {
+        "fn": lambda prompt: _call_mistral(prompt, "mistral-small-latest"),
+        "label": "Mistral Small",
         "env_key": "MISTRAL_API_KEY",
     },
     "gemini-pro": {
@@ -202,26 +212,31 @@ PROVIDERS = {
         "label": "Gemini 2.5 Pro",
         "env_key": "GEMINI_API_KEY",
     },
-    "claude-sonnet": {
-        "fn": lambda prompt: _call_anthropic(prompt, "claude-sonnet-4-6"),
-        "label": "Claude Sonnet 4.6",
-        "env_key": "ANTHROPIC_API_KEY",
-    },
     "gemini-flash": {
         "fn": lambda prompt: _call_gemini(prompt, "gemini-2.5-flash"),
         "label": "Gemini 2.5 Flash",
         "env_key": "GEMINI_API_KEY",
     },
+    "claude-sonnet": {
+        "fn": lambda prompt: _call_anthropic(prompt, "claude-sonnet-4-6"),
+        "label": "Claude Sonnet 4.6",
+        "env_key": "ANTHROPIC_API_KEY",
+    },
 }
 
-DEFAULT_CHAIN = ["mistral", "gemini-pro", "claude-sonnet", "gemini-flash"]
+DEFAULT_CHAIN = [
+    "mistral-large", "mistral-medium", "mistral-small",
+    "gemini-pro", "gemini-flash", "claude-sonnet",
+]
 
 MODEL_ALIASES = {
-    "mistral": "mistral",
-    "flash": "gemini-flash",
+    "mistral": "mistral-large",
+    "mistral-medium": "mistral-medium",
+    "mistral-small": "mistral-small",
     "pro": "gemini-pro",
+    "flash": "gemini-flash",
     "claude": "claude-sonnet",
-    "auto": None,  # uses the full fallback chain
+    "auto": None,
 }
 
 
@@ -628,9 +643,10 @@ def main():
     parser.add_argument(
         "--model",
         default="auto",
-        choices=["auto", "mistral", "flash", "pro", "claude"],
-        help="Model selection: 'auto' (Pro→Claude→Flash fallback chain, default), "
-        "'pro' (Gemini Pro only), 'claude' (Claude only), 'flash' (Flash only)",
+        choices=["auto", "mistral", "mistral-medium", "mistral-small",
+                 "pro", "flash", "claude"],
+        help="Model selection: 'auto' (full fallback chain), 'mistral' (Large), "
+        "'mistral-medium', 'mistral-small', 'pro', 'flash', 'claude'",
     )
     parser.add_argument(
         "--enriched-dir",
