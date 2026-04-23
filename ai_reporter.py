@@ -669,7 +669,7 @@ def main():
 
     # Check at least one API key exists
     available_keys = {
-        k for k in ["GEMINI_API_KEY", "ANTHROPIC_API_KEY"] if os.environ.get(k)
+        k for k in ["MISTRAL_API_KEY", "GEMINI_API_KEY", "ANTHROPIC_API_KEY"] if os.environ.get(k)
     }
     needed_keys = {PROVIDERS[name]["env_key"] for name in chain}
     if not available_keys & needed_keys:
