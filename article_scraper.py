@@ -40,6 +40,7 @@ from monitor_utils import (
     CATEGORY_LABELS,
     get_sort_time,
     git_sync,
+    normalize_title_for_dedup,
 )
 
 # Domains known to fail — skip to save time
@@ -528,9 +529,15 @@ def run_scraper(
         if existing:
             merged = list(existing.get("articles", []))
             existing_urls_in_file = {a["google_url"] for a in merged}
+            existing_titles_in_file = {
+                normalize_title_for_dedup(a.get("title", "")) for a in merged
+            }
             for a in new_articles:
-                if a["google_url"] not in existing_urls_in_file:
+                title_key = normalize_title_for_dedup(a.get("title", ""))
+                if (a["google_url"] not in existing_urls_in_file
+                        and title_key not in existing_titles_in_file):
                     merged.append(a)
+                    existing_titles_in_file.add(title_key)
             generated_at = existing.get("generated_at", timestamp)
         else:
             merged = list(new_articles)

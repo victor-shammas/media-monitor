@@ -2,8 +2,10 @@
 
 import json
 import os
+import re
 import subprocess
 import sys
+import unicodedata
 from datetime import datetime, timezone
 
 import tomllib
@@ -31,6 +33,21 @@ def get_sort_time(item: dict) -> datetime:
             )
         except Exception:
             return datetime.min.replace(tzinfo=timezone.utc)
+
+
+def normalize_title_for_dedup(title: str) -> str:
+    """Normalize a title for dedup comparison. Strips trailing ' - Publisher'
+    to catch legacy titles and publishers with hyphens in their names."""
+    idx = title.rfind(" - ")
+    t = (title[:idx] if idx > 0 else title).lower()
+    t = unicodedata.normalize("NFKC", t)
+    t = t.replace("’", "'").replace("‘", "'")
+    t = t.replace("“", '"').replace("”", '"')
+    t = t.replace("–", "-").replace("—", "-")
+    t = t.replace("…", "...")
+    t = re.sub(r"[^\w\s]", "", t)
+    t = re.sub(r"\s+", " ", t).strip()
+    return t
 
 
 def load_blocklist() -> dict:

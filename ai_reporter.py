@@ -52,6 +52,8 @@ except ImportError:
     print("Please install dependencies: pip install tenacity markdown")
     sys.exit(1)
 
+from monitor_utils import normalize_title_for_dedup
+
 import tomllib
 
 with open(
@@ -290,7 +292,7 @@ def load_enriched(enriched_dir: str, hours: int = 24) -> list[dict] | None:
             with open(path, "r", encoding="utf-8") as f:
                 data = json.load(f)
             for a in data.get("articles", []):
-                key = a.get("title", "")
+                key = normalize_title_for_dedup(a.get("title", ""))
                 if key and key not in seen_titles:
                     seen_titles.add(key)
                     all_articles.append(a)

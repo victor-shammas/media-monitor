@@ -47,6 +47,7 @@ from monitor_utils import (
     get_sort_time,
     load_blocklist,
     git_sync,
+    normalize_title_for_dedup,
 )
 
 # ── Configuration ──────────────────────────────────────────────────────────
@@ -214,7 +215,7 @@ def prune_and_archive(state: dict, archive_days: int) -> int:
 
 
 def fetch_feed(
-    feed: dict, category_seen_urls: set, timestamp: str, blocklist: dict | None = None
+    feed: dict, category_seen_urls: set, category_seen_titles: set, timestamp: str, blocklist: dict | None = None
 ) -> list[dict]:
     queries = feed.get("queries", [feed.get("q", "")])
     window = feed.get("window", "3d")
@@ -252,9 +253,15 @@ def fetch_feed(
                         continue
 
                     source = extract_source(item.get("title", ""))
+                    title = clean_title(item.get("title", ""))
+
+                    title_key = normalize_title_for_dedup(title)
+                    if title_key and title_key in category_seen_titles:
+                        continue
+                    category_seen_titles.add(title_key)
 
                     candidate = {
-                        "title": clean_title(item.get("title", "")),
+                        "title": title,
                         "url": link,
                         "source": source,
                         "date": item.get("pubDate", ""),
@@ -342,6 +349,11 @@ def main():
         default=DEFAULT_ARCHIVE_DAYS,
         metavar="N",
         help=f"Archive articles older than N days (default: {DEFAULT_ARCHIVE_DAYS})",
+    )
+    parser.add_argument(
+        "--dedup-titles",
+        action="store_true",
+        help="Remove duplicate articles with near-identical titles from state and exit",
     )
 
     # ── Enrichment flags ─────────────────────────────────────────────────
@@ -511,6 +523,50 @@ def main():
         print(f"\nRebuilt {len(FEEDS)} text file(s) in {args.outdir}/", file=sys.stderr)
         return
 
+    # ── Dedup titles: one-time cleanup of existing state ────────────────
+    if args.dedup_titles:
+        if not os.path.exists(STATE_FILE):
+            print(f"Error: {STATE_FILE} not found.", file=sys.stderr)
+            sys.exit(1)
+        with open(STATE_FILE, "r", encoding="utf-8") as f:
+            state = json.load(f)
+
+        total_removed = 0
+        for fid in state:
+            seen = {}
+            deduped = []
+            for item in state[fid]:
+                item["title"] = clean_title(item.get("title", ""))
+                key = normalize_title_for_dedup(item["title"])
+                if key in seen:
+                    existing_idx = seen[key]
+                    if not deduped[existing_idx].get("summary") and item.get("summary"):
+                        deduped[existing_idx] = item
+                    total_removed += 1
+                else:
+                    seen[key] = len(deduped)
+                    deduped.append(item)
+            state[fid] = deduped
+
+        if total_removed:
+            with open(STATE_FILE, "w", encoding="utf-8") as f:
+                json.dump(state, f, indent=2, ensure_ascii=False)
+            print(f"Removed {total_removed} duplicate article(s) from state.", file=sys.stderr)
+            timestamp = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S")
+            os.makedirs(args.outdir, exist_ok=True)
+            for feed in FEEDS:
+                fid = feed["id"]
+                items = state.get(fid, [])
+                text = format_single_feed(feed, items, timestamp)
+                filename = feed.get("filename", f"{fid}.txt")
+                filepath = os.path.join(args.outdir, filename)
+                with open(filepath, "w", encoding="utf-8") as f:
+                    f.write(text + "\n")
+            print(f"Regenerated {len(FEEDS)} feed file(s).", file=sys.stderr)
+        else:
+            print("No duplicate titles found.", file=sys.stderr)
+        return
+
     # ── Normal monitor run ────────────────────────────────────────────────
 
     # Create output directory if it doesn't exist
@@ -560,9 +616,13 @@ def main():
 
         # Create a private memory pool just for this specific category
         category_seen_urls = {item["url"] for item in state.get(fid, [])}
+        category_seen_titles = {
+            normalize_title_for_dedup(item["title"])
+            for item in state.get(fid, [])
+        }
 
         # Pass that private memory to the fetcher
-        new_items = fetch_feed(feed, category_seen_urls, timestamp, blocklist)
+        new_items = fetch_feed(feed, category_seen_urls, category_seen_titles, timestamp, blocklist)
 
         if new_items:
             print(f"    + Found {len(new_items)} new articles!", file=sys.stderr)
