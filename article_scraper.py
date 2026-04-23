@@ -66,18 +66,14 @@ MAX_EXTRACT_WORDS = 300
 REQUEST_DELAY = 1.0
 
 # AI summary generation
-SUMMARY_BATCH_SIZE = 20
 SUMMARY_MODEL = "gemini-2.5-flash"
 MISTRAL_BASE_URL = "https://api.mistral.ai/v1"
 MISTRAL_MODEL = "mistral-small-latest"
 SUMMARY_SYSTEM_PROMPT = (
-    "You are a news summarizer. For each article the user sends, write exactly "
-    "one sentence (max 25 words) that summarizes the key news. Be concrete and "
-    "specific. Always translate and respond in English, even if the article is "
-    "in French, Norwegian, Italian, German, Hungarian, Polish, Spanish, Swedish, "
-    "or any other language. Never skip an article. Never write 'duplicate' "
-    "or reference another article's number — every summary must be standalone. "
-    "Return ONLY numbered lines, one per article."
+    "You are a news summarizer. Write exactly one sentence (max 25 words) "
+    "that summarizes the key news from the article. Be concrete and specific. "
+    "Always translate and respond in English, even if the article is in another "
+    "language. Return ONLY the summary sentence, nothing else."
 )
 
 genai = None
@@ -240,8 +236,22 @@ def extract_article(url: str) -> tuple[str | None, int, str]:
 # ── Step 3: Generate one-sentence summaries (Gemini Flash → Mistral fallback)
 
 
+def _extract_summary(text: str) -> str | None:
+    """Extract a clean summary sentence from a single-article LLM response."""
+    for line in text.strip().splitlines():
+        line = line.strip()
+        if not line:
+            continue
+        m = re.match(r"^\d+\.\s*(.+)", line)
+        if m:
+            line = m.group(1).strip()
+        if len(line) > 10:
+            return line
+    return None
+
+
 def generate_summaries(records: list[dict]) -> int:
-    """Send article extracts to an LLM and get back one-sentence summaries."""
+    """Generate one-sentence AI summaries, one article at a time."""
     has_gemini = _ensure_gemini()
     has_mistral = _ensure_mistral()
 
@@ -255,70 +265,40 @@ def generate_summaries(records: list[dict]) -> int:
     if not extractable:
         return 0
 
-    LANG_GROUPS = {
-        "en": {"usa", "uk", "general", "networks"},
-        "no": {"norway"},
-        "sv": {"sweden"},
-        "fr": {"france"},
-        "it": {"italy"},
-        "de": {"germany"},
-        "hu": {"hungary"},
-        "pl": {"poland"},
-        "es": {"spain"},
-    }
-    cat_to_lang = {}
-    for lang, cats in LANG_GROUPS.items():
-        for cat in cats:
-            cat_to_lang[cat] = lang
-    extractable.sort(key=lambda r: cat_to_lang.get(r.get("category", ""), "zz"))
-
     print(f"\n  Generating summaries for {len(extractable)} articles...")
     generated = 0
 
-    for batch_start in range(0, len(extractable), SUMMARY_BATCH_SIZE):
-        batch = extractable[batch_start : batch_start + SUMMARY_BATCH_SIZE]
-        batch_num = batch_start // SUMMARY_BATCH_SIZE + 1
-
-        article_lines = []
-        for idx, rec in enumerate(batch, 1):
-            snippet = " ".join(rec["extract"].split()[:200])
-            article_lines.append(f"{idx}. {rec['title']} | {snippet}")
-        articles_block = "\n".join(article_lines)
+    for i, rec in enumerate(extractable, 1):
+        snippet = " ".join(rec["extract"].split()[:200])
+        user_prompt = f"Title: {rec['title']}\n\n{snippet}"
 
         text = None
 
         if has_mistral:
             try:
-                text = _call_mistral_batch(articles_block)
+                text = _call_mistral_batch(user_prompt)
             except Exception as e:
-                print(f"    Mistral failed: {e}, trying Gemini...")
+                if not has_gemini:
+                    print(f"    [{i}] Mistral failed: {e}")
 
         if text is None and has_gemini:
-            gemini_prompt = f"{SUMMARY_SYSTEM_PROMPT}\n\n{articles_block}"
+            gemini_prompt = f"{SUMMARY_SYSTEM_PROMPT}\n\n{user_prompt}"
             try:
                 text = _call_gemini_batch(gemini_prompt)
             except Exception as e:
-                print(f"    Gemini failed: {e}")
+                print(f"    [{i}] All providers failed: {e}")
 
-        if text is None:
-            print(f"    Warning: batch {batch_num} — all providers failed, skipping")
-            continue
+        if text:
+            summary = _extract_summary(text)
+            if summary:
+                rec["summary"] = summary
+                generated += 1
 
-        batch_count = 0
-        for line in text.strip().splitlines():
-            m = re.match(r"^(\d+)\.\s*(.+)", line.strip())
-            if m:
-                num = int(m.group(1))
-                sentence = m.group(2).strip()
-                if 1 <= num <= len(batch) and sentence:
-                    batch[num - 1]["summary"] = sentence
-                    batch_count += 1
+        if i % 10 == 0:
+            print(f"    Progress: {i}/{len(extractable)} ({generated} summaries)")
 
-        generated += batch_count
-        print(f"    Batch {batch_num}: {batch_count}/{len(batch)} summaries")
-
-        if batch_start + SUMMARY_BATCH_SIZE < len(extractable):
-            time.sleep(5)
+        if i < len(extractable):
+            time.sleep(REQUEST_DELAY)
 
     print(f"  Summaries generated: {generated}/{len(extractable)}")
     return generated
