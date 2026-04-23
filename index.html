@@ -872,11 +872,22 @@
                         }),
                     );
 
-                    const matched = results.flat().filter(
+                    const allMatched = results.flat().filter(
                         (a) =>
                             a.title.toLowerCase().includes(q) ||
                             a.summary.toLowerCase().includes(q),
                     );
+
+                    const seen = new Set();
+                    const matched = allMatched.filter((a) => {
+                        const key = a.title
+                            .toLowerCase()
+                            .replace(/\s*[-–—|]\s*[^-–—|]+$/, "")
+                            .trim();
+                        if (seen.has(key)) return false;
+                        seen.add(key);
+                        return true;
+                    });
 
                     if (matched.length === 0) {
                         feedContent.innerHTML = `<div class="no-results">No results found across all feeds.</div>`;
