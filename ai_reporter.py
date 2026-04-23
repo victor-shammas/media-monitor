@@ -85,6 +85,7 @@ def _ensure_anthropic():
 
 
 STATE_FILE = "monitor_state.json"
+MAX_PROMPT_CHARS = 400_000  # ~100K tokens; keeps prompt within context/rate limits
 
 
 # ── Provider Backends ──────────────────────────────────────────────────────
@@ -364,6 +365,14 @@ def load_enriched(enriched_dir: str, hours: int = 24) -> list[dict] | None:
     return all_articles if all_articles else None
 
 
+def _format_enriched_article(item: dict, ref_num: int) -> str:
+    line = f"- [{ref_num}] {item['title']} (Source: {item['source']})"
+    extract = item.get("extract")
+    if extract and item.get("extract_status") == "ok":
+        line += f"\n  EXTRACT: {extract}"
+    return line
+
+
 def compile_from_enriched(
     articles: list[dict], cutoff: datetime
 ) -> tuple[str, dict, int, int]:
@@ -371,10 +380,39 @@ def compile_from_enriched(
     Only includes articles within the look-back window.
     Returns (context_str, reference_map, article_count, category_count).
     """
-    by_cat = {}
+    by_cat: dict[str, list[dict]] = {}
     for a in articles:
         if get_sort_time(a) >= cutoff:
             by_cat.setdefault(a.get("category", "unknown"), []).append(a)
+
+    for items in by_cat.values():
+        items.sort(key=get_sort_time, reverse=True)
+
+    num_cats = len(by_cat)
+    if num_cats == 0:
+        return "", {}, 0, 0
+
+    per_cat_budget = MAX_PROMPT_CHARS // num_cats
+
+    capped: dict[str, list[dict]] = {}
+    for cat_id, items in by_cat.items():
+        chars_used = 0
+        kept: list[dict] = []
+        for item in items:
+            article_text = _format_enriched_article(item, 0)
+            if kept and chars_used + len(article_text) > per_cat_budget:
+                break
+            kept.append(item)
+            chars_used += len(article_text)
+        capped[cat_id] = kept
+
+    total_before = sum(len(v) for v in by_cat.values())
+    total_after = sum(len(v) for v in capped.values())
+    if total_after < total_before:
+        print(
+            f"  ⚠ Capped articles evenly: {total_before} → {total_after} "
+            f"(~{total_after // num_cats} per category) to fit context window"
+        )
 
     compiled_data = []
     reference_map = {}
@@ -382,7 +420,7 @@ def compile_from_enriched(
     article_count = 0
     category_count = 0
 
-    for cat_id, items in by_cat.items():
+    for cat_id, items in capped.items():
         category_count += 1
         article_count += len(items)
         label = CATEGORY_LABELS.get(cat_id, cat_id.upper())
@@ -396,12 +434,7 @@ def compile_from_enriched(
                 "source": item.get("source", ""),
                 "url": url,
             }
-
-            line = f"- [{ref_num}] {item['title']} (Source: {item['source']})"
-            extract = item.get("extract")
-            if extract and item.get("extract_status") == "ok":
-                line += f"\n  EXTRACT: {extract}"
-            compiled_data.append(line)
+            compiled_data.append(_format_enriched_article(item, ref_num))
 
         compiled_data.append("")
 
@@ -412,30 +445,55 @@ def compile_from_state(state: dict, cutoff: datetime) -> tuple[str, dict, int, i
     """Build prompt context from monitor_state.json (titles only).
     Returns (context_str, reference_map, article_count, category_count).
     """
+    by_cat: dict[str, list[dict]] = {}
+    for category, items in state.items():
+        recent = [item for item in items if get_sort_time(item) >= cutoff]
+        if recent:
+            recent.sort(key=get_sort_time, reverse=True)
+            by_cat[category] = recent
+
+    num_cats = len(by_cat)
+    if num_cats == 0:
+        return "", {}, 0, 0
+
+    per_cat_budget = MAX_PROMPT_CHARS // num_cats
+
     compiled_data = []
     reference_map = {}
     ref_num = 0
     article_count = 0
     category_count = 0
 
-    for category, items in state.items():
-        recent_items = [item for item in items if get_sort_time(item) >= cutoff]
-        if recent_items:
-            category_count += 1
-            article_count += len(recent_items)
-            label = CATEGORY_LABELS.get(category, category.upper())
-            compiled_data.append(f"### CATEGORY: {label} ###")
-            for item in recent_items:
-                ref_num += 1
-                reference_map[ref_num] = {
-                    "title": item.get("title", ""),
-                    "source": item.get("source", ""),
-                    "url": item.get("url", ""),
-                }
-                compiled_data.append(
-                    f"- [{ref_num}] {item['title']} (Source: {item['source']})"
-                )
-            compiled_data.append("")
+    for category, items in by_cat.items():
+        category_count += 1
+        label = CATEGORY_LABELS.get(category, category.upper())
+        compiled_data.append(f"### CATEGORY: {label} ###")
+        chars_used = 0
+        cat_article_count = 0
+
+        for item in items:
+            line = f"- [{ref_num + 1}] {item['title']} (Source: {item['source']})"
+            if cat_article_count and chars_used + len(line) > per_cat_budget:
+                break
+            ref_num += 1
+            cat_article_count += 1
+            reference_map[ref_num] = {
+                "title": item.get("title", ""),
+                "source": item.get("source", ""),
+                "url": item.get("url", ""),
+            }
+            compiled_data.append(line)
+            chars_used += len(line)
+
+        article_count += cat_article_count
+        compiled_data.append("")
+
+    total_before = sum(len(v) for v in by_cat.values())
+    if article_count < total_before:
+        print(
+            f"  ⚠ Capped articles evenly: {total_before} → {article_count} "
+            f"(~{article_count // num_cats} per category) to fit context window"
+        )
 
     return "\n".join(compiled_data), reference_map, article_count, category_count
 
