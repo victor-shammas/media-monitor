@@ -120,7 +120,7 @@ def _call_mistral(prompt: str) -> str:
             "Content-Type": "application/json",
         },
     )
-    with urllib.request.urlopen(req, timeout=120) as resp:
+    with urllib.request.urlopen(req, timeout=300) as resp:
         data = json.loads(resp.read())
     text = data["choices"][0]["message"]["content"]
     return re.sub(r"<think>.*?</think>\s*", "", text, flags=re.DOTALL)
@@ -628,7 +628,7 @@ def main():
     parser.add_argument(
         "--model",
         default="auto",
-        choices=["auto", "flash", "pro", "claude"],
+        choices=["auto", "mistral", "flash", "pro", "claude"],
         help="Model selection: 'auto' (Pro→Claude→Flash fallback chain, default), "
         "'pro' (Gemini Pro only), 'claude' (Claude only), 'flash' (Flash only)",
     )
