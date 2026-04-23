@@ -231,6 +231,7 @@ DEFAULT_CHAIN = [
 
 MODEL_ALIASES = {
     "mistral": "mistral-large",
+    "mistral-large": "mistral-large",
     "mistral-medium": "mistral-medium",
     "mistral-small": "mistral-small",
     "pro": "gemini-pro",
@@ -643,8 +644,8 @@ def main():
     parser.add_argument(
         "--model",
         default="auto",
-        choices=["auto", "mistral", "mistral-medium", "mistral-small",
-                 "pro", "flash", "claude"],
+        choices=["auto", "mistral", "mistral-large", "mistral-medium",
+                 "mistral-small", "pro", "flash", "claude"],
         help="Model selection: 'auto' (full fallback chain), 'mistral' (Large), "
         "'mistral-medium', 'mistral-small', 'pro', 'flash', 'claude'",
     )
