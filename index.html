@@ -849,13 +849,13 @@
                     };
                     tabContainer.appendChild(searchBtn);
                 }
-                const label = query.length > 20 ? query.slice(0, 20) + "…" : query;
-                searchBtn.textContent = `🔍 “${label}”`;
+                const label = query.length > 20 ? query.slice(0, 20) + “…” : query;
+                searchBtn.innerHTML = `🔍 “${label}”`;
 
                 setActiveTab(searchBtn);
                 currentFeed = null;
-                document.getElementById("translate-btn").style.display = "none";
-                feedContent.innerHTML = `<span class="loading">Searching all feeds…</span>`;
+                document.getElementById(“translate-btn”).style.display = “none”;
+                feedContent.innerHTML = `<span class=”loading”>Searching all feeds…</span>`;
                 window.history.pushState(null, null, `#search=${encodeURIComponent(query)}`);
 
                 try {
@@ -877,6 +877,8 @@
                             a.title.toLowerCase().includes(q) ||
                             a.summary.toLowerCase().includes(q),
                     );
+
+                    searchBtn.innerHTML = `🔍 "${label}" <span style="font-weight:normal">(${matched.length} result${matched.length === 1 ? "" : "s"})</span>`;
 
                     if (matched.length === 0) {
                         feedContent.innerHTML = `<div class="no-results">No results found across all feeds.</div>`;
