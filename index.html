@@ -574,6 +574,85 @@
                 font-weight: 400;
                 font-size: 11.5px;
             }
+
+            /* ── Dark mode (system preference) ── */
+            @media (prefers-color-scheme: dark) {
+                :root {
+                    --bg: #1c1917;
+                    --ink: #e7e5e4;
+                    --mute: #a8a29e;
+                    --line: #44403c;
+                }
+                .tab-button {
+                    background: #292524;
+                    color: #a8a29e;
+                }
+                .tab-button:hover {
+                    background: #33302e;
+                    border-color: #57534e;
+                }
+                .tab-button.active {
+                    background: #e7e5e4;
+                    color: #1c1917;
+                    border-color: #e7e5e4;
+                }
+                .content {
+                    background: #292524;
+                }
+                .article-card {
+                    border-top-color: rgba(255, 255, 255, 0.08);
+                }
+                .article-summary {
+                    color: #a8a29e;
+                }
+                .error {
+                    color: #fca5a5;
+                    background: #451a1a;
+                }
+                .pw-form input {
+                    background: #292524;
+                    color: #e7e5e4;
+                }
+                .pw-form button {
+                    background: #e7e5e4;
+                    color: #1c1917;
+                }
+                .pw-error {
+                    color: #fca5a5;
+                }
+                .report-list li {
+                    border-top-color: rgba(255, 255, 255, 0.08);
+                }
+                .back-btn:hover {
+                    background: #33302e;
+                    border-color: #57534e;
+                }
+                .md-body blockquote {
+                    color: #a8a29e;
+                }
+                .md-body pre {
+                    background: #1c1917;
+                }
+                .md-body a {
+                    color: #60a5fa;
+                }
+                #search-input {
+                    background: #292524;
+                    color: #e7e5e4;
+                }
+                .hotspot-card {
+                    background: #292524;
+                }
+                .hotspot-card.is-new {
+                    box-shadow: 0 0 0 1px rgba(234, 88, 12, 0.35);
+                }
+                .hotspot-affect {
+                    color: #a8a29e;
+                }
+                .hotspot-signal {
+                    color: #a8a29e;
+                }
+            }
         </style>
     </head>
     <body>
