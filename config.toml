@@ -41,6 +41,87 @@ CITATION INSTRUCTIONS:
 DATA:
 {context}"""
 
+# ── Hotspots ──────────────────────────────────────────────────────────────
+# A "hotspot" is an event or development that commands disproportionate
+# attention as a subject of high affective investment — not just the most
+# covered story, but the most charged. The hotspots_generator script trawls
+# the last N hours of articles (with summaries) and asks the LLM to identify
+# the top-N hotspots across the whole cross-category universe.
+
+[hotspots]
+top_n = 5
+min_articles = 3
+lookback_hours = 48
+
+# Tweak this prompt to change how the LLM defines, scores, and selects
+# hotspots. The {top_n}, {min_articles}, {hours}, {previous}, {context}
+# placeholders are filled in by hotspots_generator.py.
+prompt = """\
+You are a media-attention analyst. Your job is to identify the TOP {top_n}
+HOTSPOTS in right-wing and far-right news coverage from the last {hours} hours.
+
+DEFINITION — A hotspot is an event, development, or controversy that commands
+disproportionate attention because it carries high AFFECTIVE INVESTMENT:
+strong-emotion framing (outrage, alarm, triumph, grievance, fear), polarized
+contention, moral charge, or a sense that something is at stake. A hotspot is
+NOT just "whatever has the most articles". It is the news story that the
+discourse is most CHARGED around. Volume matters, but so does intensity:
+a smaller cluster of furious coverage can outrank a large cluster of routine
+reporting.
+
+A hotspot does NOT have to be a single discrete event — it can be a thematic
+focal point (e.g., "panic over migration ruling", "celebration of court
+victory", "intra-party feud over leadership") that weaves together multiple
+articles. It also does not have to be cross-category; a hotspot may live
+entirely inside one country's coverage, as long as it is sufficiently charged.
+
+REQUIREMENTS:
+- Each hotspot must be supported by at least {min_articles} articles from the
+  data below. Do not invent a hotspot from a single article.
+- Rank from most to least intense. Return EXACTLY {top_n} hotspots if the
+  data supports it; fewer is acceptable if the day is genuinely quiet.
+- For each hotspot, score `intensity` from 1 to 5:
+    1 = mildly notable, low affective charge
+    2 = moderate attention, some heat
+    3 = clearly charged, prominent in coverage
+    4 = strongly charged, dominant theme, intense framing
+    5 = white-hot — defining story of the window, maximum affective investment
+- Justify the score with `affect_signals`: 2-4 short phrases naming what makes
+  this charged (e.g. "alarmist framing", "cross-source repetition",
+  "outrage-coded language", "leadership crisis tone", "moral panic register").
+- For `refs`, choose 3-5 representative articles by their reference number
+  from the data. Pick ones that best capture the affective register.
+
+CONTINUITY — A previous run's hotspots are listed below under PREVIOUS
+HOTSPOTS. If a hotspot from the previous run still ranks in the top {top_n},
+REUSE its `title` verbatim so the front-end can recognize it as the same
+ongoing story. Only mint a new title if the hotspot is genuinely new.
+
+OUTPUT — Respond with ONLY a single JSON object, no prose, no markdown
+fences. Schema:
+{{
+  "hotspots": [
+    {{
+      "title": "string, max 8 words, headline-style label",
+      "blurb": "2-3 sentences describing the hotspot",
+      "affect": "one sentence on why this commands disproportionate attention",
+      "intensity": 1-5,
+      "affect_signals": ["short phrase", "short phrase", ...],
+      "categories": ["category_id", ...],
+      "article_count": integer,
+      "refs": [reference_number, reference_number, ...]
+    }},
+    ...
+  ]
+}}
+
+PREVIOUS HOTSPOTS (from the last run, for continuity):
+{previous}
+
+DATA (articles from the last {hours} hours, each prefixed with [N] reference
+number):
+{context}"""
+
 # ── Feed Definitions ──────────────────────────────────────────────────────
 
 [[feeds]]

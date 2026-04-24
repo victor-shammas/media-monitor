@@ -225,9 +225,13 @@ PROVIDERS = {
     },
 }
 
+# NOTE: claude-sonnet is intentionally OMITTED from the default chain to avoid
+# Anthropic costs. Re-add "claude-sonnet" to this list to reactivate it; the
+# PROVIDERS entry above is left in place. The --model claude flag still works
+# for one-off explicit runs.
 DEFAULT_CHAIN = [
     "mistral-large", "mistral-medium", "mistral-small",
-    "gemini-pro", "gemini-flash", "claude-sonnet",
+    "gemini-pro", "gemini-flash",
 ]
 
 MODEL_ALIASES = {
