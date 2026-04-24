@@ -56,6 +56,7 @@ ARCHIVE_FILE = "data/archive.jsonl"
 MAX_NEW_PER_RUN = 30  # The universal limit of new articles to add per run per category
 DEFAULT_ARCHIVE_DAYS = 60  # Articles older than this are archived and pruned from state
 
+DEFAULT_WINDOW = CONFIG.get("settings", {}).get("window", "7d")
 FEEDS = CONFIG["feeds"]
 
 # ── Helpers ────────────────────────────────────────────────────────────────
@@ -218,7 +219,7 @@ def fetch_feed(
     feed: dict, category_seen_urls: set, category_seen_titles: set, timestamp: str, blocklist: dict | None = None
 ) -> list[dict]:
     queries = feed.get("queries", [feed.get("q", "")])
-    window = feed.get("window", "7d")
+    window = feed.get("window", DEFAULT_WINDOW)
     cutoff = datetime.now(timezone.utc) - timedelta(days=30)
     new_items = []
     errors = []
