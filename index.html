@@ -625,7 +625,7 @@
                 { filename: "spain", name: "Spain", flag: "es", lang: "es" },
                 { filename: "networks", name: "\u{1F578}\u{FE0F} Networks", lang: "en" },
                 { filename: "general", name: "\u{1F30D} General", lang: "en" },
-                { filename: "hotspots", name: "\u{1F525} Hotspots", lang: "en", kind: "hotspots" },
+                { filename: "hotspots", name: "Hotspots", lang: "en", kind: "hotspots", icon: '<svg width="14" height="14" viewBox="0 0 14 14" fill="none" style="vertical-align:-2px;margin-right:4px"><circle cx="7" cy="7" r="6" stroke="currentColor" stroke-width="1.5"/><circle cx="7" cy="7" r="3" stroke="currentColor" stroke-width="1.5"/><circle cx="7" cy="7" r="0.75" fill="currentColor"/></svg>' },
             ];
 
             const tabContainer = document.getElementById("tab-container");
@@ -646,6 +646,8 @@
                     fi.className = `fi fi-${feed.flag}`;
                     btn.appendChild(fi);
                     btn.appendChild(document.createTextNode(feed.name));
+                } else if (feed.icon) {
+                    btn.innerHTML = feed.icon + feed.name;
                 } else {
                     btn.textContent = feed.name;
                 }
