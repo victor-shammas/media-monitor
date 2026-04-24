@@ -550,6 +550,7 @@ def run_scraper(
                 in ("fetch_failed", "too_short")
                 or (a.get("extract_status") or "").startswith("error")
             ),
+            "summarized": sum(1 for a in merged if (a.get("summary") or "").strip()),
         }
 
         output = {

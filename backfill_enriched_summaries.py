@@ -79,6 +79,8 @@ def main():
 
     from datetime import datetime, timezone
     data["last_updated_at"] = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S")
+    if "stats" in data:
+        data["stats"]["summarized"] = sum(1 for a in articles if (a.get("summary") or "").strip())
 
     with open(args.enriched_file, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
