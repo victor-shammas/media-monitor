@@ -1168,6 +1168,113 @@
                         feedContent.innerHTML = `<span class="error">\u26A0 ${error.message}</span>`;
                     });
             }
+
+            /* ── Hotspots renderer ── */
+
+            function escapeHtml(s) {
+                return String(s ?? "").replace(/[&<>"']/g, (c) => ({
+                    "&": "&amp;",
+                    "<": "&lt;",
+                    ">": "&gt;",
+                    '"': "&quot;",
+                    "'": "&#39;",
+                }[c]));
+            }
+
+            function formatRelative(iso) {
+                if (!iso) return "";
+                const t = new Date(iso).getTime();
+                if (isNaN(t)) return "";
+                const diffMin = Math.round((Date.now() - t) / 60000);
+                if (diffMin < 1) return "just now";
+                if (diffMin < 60) return `${diffMin} min ago`;
+                const h = Math.round(diffMin / 60);
+                if (h < 48) return `${h}h ago`;
+                const d = Math.round(h / 24);
+                return `${d}d ago`;
+            }
+
+            function intensityBar(level) {
+                const n = Math.max(1, Math.min(5, parseInt(level, 10) || 1));
+                let pips = "";
+                for (let i = 1; i <= 5; i++) {
+                    pips += `<span class="intensity-pip${i <= n ? " on-" + n : ""}"></span>`;
+                }
+                return `<span class="intensity" title="Intensity ${n}/5"><span class="intensity-bar">${pips}</span>${n}/5</span>`;
+            }
+
+            function renderHotspot(h, rank) {
+                const isNew = h.first_seen && h.last_seen && h.first_seen === h.last_seen;
+                const signals = (h.affect_signals || [])
+                    .map((s) => `<span class="hotspot-signal">${escapeHtml(s)}</span>`)
+                    .join("");
+                const cats = (h.categories || []).join(" · ");
+                const refs = (h.refs || [])
+                    .map((r) => {
+                        const meta = [r.source, (r.date || "").slice(0, 10)]
+                            .filter(Boolean)
+                            .join(" · ");
+                        return `<li><a href="${escapeHtml(r.url || "#")}" target="_blank" rel="noopener noreferrer">${escapeHtml(r.title)}</a>${meta ? ` <span class="ref-meta">— ${escapeHtml(meta)}</span>` : ""}</li>`;
+                    })
+                    .join("");
+
+                const refCount = h.article_count || (h.refs || []).length;
+                return `
+                    <div class="hotspot-card${isNew ? " is-new" : ""}">
+                        <div class="hotspot-head">
+                            <span class="hotspot-rank">${rank}</span>
+                            <h3 class="hotspot-title">${escapeHtml(h.title)}${isNew ? '<span class="hotspot-new-badge">new</span>' : ""}</h3>
+                            ${intensityBar(h.intensity)}
+                        </div>
+                        ${h.blurb ? `<p class="hotspot-blurb">${escapeHtml(h.blurb)}</p>` : ""}
+                        ${h.affect ? `<p class="hotspot-affect">${escapeHtml(h.affect)}</p>` : ""}
+                        ${signals ? `<div class="hotspot-signals">${signals}</div>` : ""}
+                        ${cats ? `<div class="hotspot-cats">Categories: ${escapeHtml(cats)}</div>` : ""}
+                        ${refs ? `<details class="hotspot-refs"><summary>${refCount} article${refCount === 1 ? "" : "s"} — show sources</summary><ul>${refs}</ul></details>` : ""}
+                    </div>
+                `;
+            }
+
+            function loadHotspots() {
+                feedContent.innerHTML = `<span class="loading">Loading hotspots...</span>`;
+                fetch(`feeds/hotspots.json`, { cache: "no-store" })
+                    .then((response) => {
+                        if (!response.ok) {
+                            throw new Error(
+                                "Hotspots haven't been generated yet. The script runs every 2 hours; check back soon.",
+                            );
+                        }
+                        return response.json();
+                    })
+                    .then((data) => {
+                        const hotspots = data.hotspots || [];
+                        const meta = `
+                            <div class="hotspots-meta">
+                                <span>Top ${hotspots.length} hotspot${hotspots.length === 1 ? "" : "s"} from the last ${data.lookback_hours || 48}h</span>
+                                <span>Updated ${formatRelative(data.updated_at)}${data.model ? ` · via ${escapeHtml(data.model)}` : ""}</span>
+                            </div>
+                        `;
+                        if (hotspots.length === 0) {
+                            const reason =
+                                data.status === "insufficient-data"
+                                    ? "Not enough articles with summaries in the lookback window yet."
+                                    : data.status === "llm-unavailable"
+                                      ? "The model wasn't reachable on the last run."
+                                      : "No hotspots cleared the threshold on the last run.";
+                            feedContent.innerHTML = `${meta}<div class="no-results">${reason}</div>`;
+                            feedContent.scrollTop = 0;
+                            return;
+                        }
+                        const cards = hotspots
+                            .map((h, i) => renderHotspot(h, i + 1))
+                            .join("");
+                        feedContent.innerHTML = meta + cards;
+                        feedContent.scrollTop = 0;
+                    })
+                    .catch((error) => {
+                        feedContent.innerHTML = `<span class="error">⚠ ${error.message}</span>`;
+                    });
+            }
         </script>
     </body>
 </html>

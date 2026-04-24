@@ -15,7 +15,13 @@ hotspots keep the same title across runs (continuity).
 Usage:
   python hotspots_generator.py
   python hotspots_generator.py --hours 48 --top-n 5 --min-articles 3
-  python hotspots_generator.py --enriched-dir data-private --outdir feeds
+  python hotspots_generator.py --enriched-dir data-private --outdir feeds \\
+      --private-outdir data-private
+
+Output is written to both --outdir (public, served to the frontend) and
+--private-outdir (canonical artifact in the private data repo). The contents
+are identical — a hotspot is derived from already-public summaries — but the
+private copy provides an audit trail alongside the enriched JSON files.
 """
 
 import argparse
@@ -271,7 +277,26 @@ def load_previous_hotspots(path: str) -> list[dict]:
         return []
 
 
-def write_empty_output(path: str, reason: str, hours: int) -> None:
+def write_payload(payload: dict, paths: list[str]) -> None:
+    """Write the same payload to every path whose parent directory exists.
+
+    Skips paths whose parent dir is missing (e.g. the private data repo isn't
+    checked out in a local dev environment). Always writes at least the first
+    path, creating its parent dir if needed.
+    """
+    body = json.dumps(payload, ensure_ascii=False, indent=2)
+    for i, path in enumerate(paths):
+        parent = os.path.dirname(path) or "."
+        if i > 0 and not os.path.isdir(parent):
+            print(f"  Skipping {path} — parent directory not present")
+            continue
+        os.makedirs(parent, exist_ok=True)
+        with open(path, "w", encoding="utf-8") as f:
+            f.write(body)
+        print(f"  Wrote {path}")
+
+
+def write_empty_output(paths: list[str], reason: str, hours: int) -> None:
     payload = {
         "updated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "lookback_hours": hours,
@@ -279,10 +304,8 @@ def write_empty_output(path: str, reason: str, hours: int) -> None:
         "status": reason,
         "hotspots": [],
     }
-    os.makedirs(os.path.dirname(path) or ".", exist_ok=True)
-    with open(path, "w", encoding="utf-8") as f:
-        json.dump(payload, f, ensure_ascii=False, indent=2)
-    print(f"  Wrote empty hotspots file to {path} ({reason})")
+    write_payload(payload, paths)
+    print(f"  (status: {reason})")
 
 
 def main() -> int:
@@ -292,22 +315,32 @@ def main() -> int:
     parser.add_argument("--top-n", type=int, default=cfg.get("top_n", 5))
     parser.add_argument("--min-articles", type=int, default=cfg.get("min_articles", 3))
     parser.add_argument("--enriched-dir", default="data-private")
-    parser.add_argument("--outdir", default=DEFAULT_OUTDIR)
+    parser.add_argument("--outdir", default=DEFAULT_OUTDIR,
+                        help="Public output dir served to the frontend")
+    parser.add_argument("--private-outdir", default=None,
+                        help="Optional second output dir (canonical artifact, "
+                             "e.g. the private data repo). Skipped if missing.")
     args = parser.parse_args()
 
-    out_path = os.path.join(args.outdir, HOTSPOTS_FILENAME)
+    out_paths = [os.path.join(args.outdir, HOTSPOTS_FILENAME)]
+    if args.private_outdir:
+        out_paths.append(os.path.join(args.private_outdir, HOTSPOTS_FILENAME))
+
+    # Continuity: read from the canonical (private) copy if available,
+    # else fall back to the public one.
+    continuity_path = out_paths[-1] if len(out_paths) > 1 else out_paths[0]
 
     print(f"→ Loading articles from last {args.hours}h...")
     articles = load_recent_articles(args.enriched_dir, args.hours)
     print(f"  Found {len(articles)} articles with summaries")
 
     if len(articles) < args.min_articles:
-        write_empty_output(out_path, "insufficient-data", args.hours)
+        write_empty_output(out_paths, "insufficient-data", args.hours)
         return 0
 
     context, ref_map = build_context(articles)
 
-    previous = load_previous_hotspots(out_path)
+    previous = load_previous_hotspots(continuity_path)
     prev_by_id = {h["id"]: h for h in previous if h.get("id")}
 
     prompt_template = cfg.get("prompt")
@@ -328,8 +361,7 @@ def main() -> int:
     try:
         response_text, model_label = generate_with_fallback(prompt)
     except SystemExit:
-        # generate_with_fallback calls sys.exit(1) when no providers work
-        write_empty_output(out_path, "llm-unavailable", args.hours)
+        write_empty_output(out_paths, "llm-unavailable", args.hours)
         return 1
 
     try:
@@ -354,7 +386,7 @@ def main() -> int:
             hotspots.append(cleaned)
 
     if not hotspots:
-        write_empty_output(out_path, "no-qualifying-hotspots", args.hours)
+        write_empty_output(out_paths, "no-qualifying-hotspots", args.hours)
         return 0
 
     payload = {
@@ -364,10 +396,8 @@ def main() -> int:
         "status": "ok",
         "hotspots": hotspots,
     }
-    os.makedirs(os.path.dirname(out_path) or ".", exist_ok=True)
-    with open(out_path, "w", encoding="utf-8") as f:
-        json.dump(payload, f, ensure_ascii=False, indent=2)
-    print(f"✓ Wrote {len(hotspots)} hotspot(s) to {out_path} (via {model_label})")
+    write_payload(payload, out_paths)
+    print(f"✓ {len(hotspots)} hotspot(s) generated via {model_label}")
     return 0
 
 
