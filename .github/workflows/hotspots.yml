@@ -57,24 +57,13 @@ jobs:
           python hotspots_generator.py \
             --hours "${{ inputs.hours || '48' }}" \
             --top-n "${{ inputs.top_n || '5' }}" \
-            --enriched-dir data-private \
-            --outdir feeds \
-            --private-outdir data-private
+            --enriched-dir data-private
 
-      - name: Push canonical artifact to private repo
-        run: |
-          cd data-private
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add hotspots.json
-          git commit -m "Hotspots $(date -u +%Y-%m-%dT%H:%M)" || echo "No changes"
-          git push
-
-      - name: Commit and push public copy
+      - name: Commit and push
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add feeds/hotspots.json
+          git add data/hotspots.json
           git commit -m "Update hotspots" || echo "No changes to commit"
           git -c fetch.recurseSubmodules=no pull --rebase
           git push

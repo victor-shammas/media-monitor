@@ -1239,7 +1239,7 @@
 
             function loadHotspots() {
                 feedContent.innerHTML = `<span class="loading">Loading hotspots...</span>`;
-                fetch(`feeds/hotspots.json`, { cache: "no-store" })
+                fetch(`data/hotspots.json`, { cache: "no-store" })
                     .then((response) => {
                         if (!response.ok) {
                             throw new Error(
