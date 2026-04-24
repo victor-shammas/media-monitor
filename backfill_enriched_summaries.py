@@ -28,6 +28,9 @@ def main():
     parser.add_argument(
         "--dry-run", action="store_true", help="Show what would be done without calling the LLM"
     )
+    parser.add_argument(
+        "--limit", type=int, default=None, help="Max number of articles to summarize"
+    )
     args = parser.parse_args()
 
     if not os.path.exists(args.enriched_file):
@@ -53,6 +56,10 @@ def main():
     if not need_summary:
         print("Nothing to do — all extracted articles already have summaries.")
         return
+
+    if args.limit:
+        need_summary = need_summary[:args.limit]
+        print(f"Limited to: {len(need_summary)}")
 
     if args.dry_run:
         for a in need_summary:
