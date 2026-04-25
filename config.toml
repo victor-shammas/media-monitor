@@ -125,6 +125,163 @@ DATA (articles from the last {hours} hours, each prefixed with [N] reference
 number):
 {context}"""
 
+# ── Key Actors ────────────────────────────────────────────────────────────
+# A "key actor" is a political figure who commands disproportionate coverage
+# in the current window — not just mentioned often, but the one whose actions,
+# statements, or position are *driving* the discourse. The actors_generator
+# script trawls the last N hours of articles (with summaries) and asks the LLM
+# to identify the top-N actors across the whole cross-category universe.
+
+[actors]
+top_n = 8
+min_articles = 3
+lookback_hours = 48
+
+prompt = """\
+You are a media-coverage analyst. Your job is to identify the TOP {top_n}
+KEY ACTORS — individual political figures — who are driving right-wing and
+far-right news coverage in the last {hours} hours.
+
+DEFINITION — A key actor is a named politician, party leader, government
+official, or movement figure whose actions, statements, decisions, or
+position are generating significant coverage. The actor must be a SPECIFIC
+NAMED INDIVIDUAL (not a party, institution, or abstract concept).
+
+Rank by PROMINENCE: how much this person's actions are shaping the current
+news cycle. Consider both volume of coverage and centrality — a figure who
+is the subject of intense debate across multiple stories outranks one who is
+merely mentioned in many articles.
+
+REQUIREMENTS:
+- Each actor must be supported by at least {min_articles} articles from the
+  data below. Do not invent an actor from a single article.
+- Rank from most to least prominent. Return EXACTLY {top_n} actors if the
+  data supports it; fewer is acceptable if the window is genuinely quiet.
+- For each actor, score `prominence` from 1 to 5:
+    1 = minor mention, routine coverage
+    2 = moderate attention, some notable action
+    3 = clearly prominent, multiple stories driven by their actions
+    4 = dominant figure in the window, major decisions or controversy
+    5 = defining actor of the cycle — the person the discourse revolves around
+- Provide `signals`: 2-4 short phrases describing what makes this person
+  newsworthy right now (e.g. "coalition negotiations", "scandal fallout",
+  "policy announcement", "leadership challenge", "international posturing",
+  "election campaign", "judicial proceedings").
+- For `refs`, choose 3-5 representative articles by their reference number.
+
+CONTINUITY — A previous run's actors are listed below under PREVIOUS ACTORS.
+If an actor from the previous run still ranks in the top {top_n}, REUSE
+their `name` verbatim so the front-end can recognize them as the same person.
+Only use a different name if the person is genuinely new.
+
+OUTPUT — Respond with ONLY a single JSON object, no prose, no markdown
+fences. Schema:
+{{
+  "actors": [
+    {{
+      "name": "Full Name",
+      "role": "brief role description, e.g. 'Prime Minister of Hungary' or 'Leader of Vox'",
+      "blurb": "2-3 sentences on what this person is doing RIGHT NOW that generates coverage",
+      "prominence": 1-5,
+      "signals": ["short phrase", "short phrase", ...],
+      "categories": ["category_label", ...],
+      "article_count": integer,
+      "refs": [reference_number, reference_number, ...]
+    }},
+    ...
+  ]
+}}
+
+PREVIOUS ACTORS (from the last run, for continuity):
+{previous}
+
+DATA (articles from the last {hours} hours, each prefixed with [N] reference
+number):
+{context}"""
+
+# ── Cross-National Radar ─────────────────────────────────────────────────
+# A "radar theme" is a story, framing, or policy pattern that surfaces in
+# multiple country categories simultaneously — evidence of transnational
+# contagion, parallel developments, or shared discourse. The radar_generator
+# script identifies themes appearing in 2+ country categories.
+
+[radar]
+top_n = 5
+min_categories = 2
+min_articles = 3
+lookback_hours = 48
+
+prompt = """\
+You are a cross-national media analyst. Your job is to identify the TOP {top_n}
+CROSS-NATIONAL THEMES in right-wing and far-right news coverage from the last
+{hours} hours.
+
+DEFINITION — A cross-national theme is a story, policy development, rhetorical
+frame, or political pattern that appears in at least {min_categories} DIFFERENT
+COUNTRY categories simultaneously. This captures transnational contagion
+(e.g. "national priority" language spreading from Spain to Italy), parallel
+developments (multiple countries holding similar policy debates at the same
+time), or shared reactions to the same external event.
+
+The "General" and "Networks" categories do NOT count toward the minimum country
+threshold — only named country categories (USA, UK, France, Italy, Germany,
+Hungary, Poland, Spain, Sweden, Norway) count.
+
+Rank by CONVERGENCE: how strongly the same theme resonates across borders.
+A theme appearing intensely in 4 countries outranks one appearing faintly in 6.
+
+REQUIREMENTS:
+- Each theme must appear in at least {min_categories} distinct country
+  categories (not counting General or Networks).
+- Rank from strongest to weakest cross-national convergence. Return EXACTLY
+  {top_n} themes if the data supports it; fewer is acceptable.
+- For each theme, score `convergence` from 1 to 5:
+    1 = weak parallel, loosely connected coverage
+    2 = moderate — same broad topic in a few countries
+    3 = clear convergence — similar framing or shared concern across borders
+    4 = strong — intense parallel coverage, possible contagion or coordination
+    5 = dominant transnational theme — defining cross-border story of the window
+- Provide `signals`: 2-4 short phrases describing the nature of the
+  cross-national connection (e.g. "policy imitation", "shared framing",
+  "reaction to EU decision", "coordinated messaging", "parallel elections",
+  "contagion of rhetoric").
+- For `countries`, list each country category where the theme appears, with
+  a brief note on how it manifests there.
+- For `refs`, choose 3-6 representative articles by their reference number,
+  drawn from MULTIPLE countries.
+
+CONTINUITY — A previous run's themes are listed below under PREVIOUS THEMES.
+If a theme from the previous run still ranks in the top {top_n}, REUSE
+its `title` verbatim so the front-end can recognize it as the same ongoing
+pattern. Only mint a new title if the theme is genuinely new.
+
+OUTPUT — Respond with ONLY a single JSON object, no prose, no markdown
+fences. Schema:
+{{
+  "themes": [
+    {{
+      "title": "string, max 8 words, headline-style label",
+      "blurb": "2-3 sentences describing the cross-national pattern",
+      "convergence": 1-5,
+      "countries": [
+        {{"name": "category label (e.g. '🇪🇸 Vox')", "note": "brief note on how theme appears here"}},
+        ...
+      ],
+      "signals": ["short phrase", "short phrase", ...],
+      "article_count": integer,
+      "refs": [reference_number, reference_number, ...]
+    }},
+    ...
+  ]
+}}
+
+PREVIOUS THEMES (from the last run, for continuity):
+{previous}
+
+DATA (articles from the last {hours} hours, each prefixed with [N] reference
+number):
+{context}"""
+
 # ── Feed Definitions ──────────────────────────────────────────────────────
 
 [[feeds]]

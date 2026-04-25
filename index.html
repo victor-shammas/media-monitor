@@ -575,6 +575,291 @@
                 font-size: 11.5px;
             }
 
+            /* ── Actors tab styles ── */
+            .actor-card {
+                border: 1px solid var(--line);
+                border-radius: 10px;
+                padding: 14px 16px;
+                margin: 0 0 12px 0;
+                background: #fff;
+            }
+            .actor-card.is-new {
+                border-color: #2563eb;
+                box-shadow: 0 0 0 1px rgba(37, 99, 235, 0.18);
+            }
+            .actor-head {
+                display: flex;
+                align-items: flex-start;
+                gap: 10px;
+                margin: 0 0 6px 0;
+            }
+            .actor-rank {
+                font-size: 18px;
+                font-weight: 700;
+                color: var(--mute);
+                min-width: 22px;
+                line-height: 1.2;
+            }
+            .actor-name {
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 1.25;
+                color: var(--ink);
+                margin: 0;
+                flex: 1;
+            }
+            .actor-new-badge {
+                font-size: 10px;
+                font-weight: 700;
+                letter-spacing: 0.4px;
+                color: #fff;
+                background: #2563eb;
+                padding: 2px 6px;
+                border-radius: 4px;
+                margin-left: 6px;
+                vertical-align: 2px;
+                text-transform: uppercase;
+            }
+            .actor-role {
+                font-size: 12.5px;
+                color: var(--mute);
+                margin: 0 0 6px 0;
+                font-style: italic;
+            }
+            .actor-blurb {
+                font-size: 13.5px;
+                color: var(--ink);
+                margin: 6px 0 8px 0;
+                line-height: 1.45;
+            }
+            .actor-signals {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 4px;
+                margin: 0 0 10px 0;
+            }
+            .actor-signal {
+                font-size: 11px;
+                background: var(--bg);
+                color: #44403c;
+                padding: 2px 8px;
+                border-radius: 999px;
+                border: 1px solid var(--line);
+            }
+            .actor-cats {
+                font-size: 11.5px;
+                color: var(--mute);
+                margin: 0 0 8px 0;
+            }
+            .actor-refs {
+                margin-top: 4px;
+            }
+            .actor-refs > summary {
+                cursor: pointer;
+                font-size: 12px;
+                color: var(--mute);
+                padding: 4px 0;
+                user-select: none;
+            }
+            .actor-refs > summary:hover {
+                color: var(--ink);
+            }
+            .actor-refs ul {
+                list-style: none;
+                padding: 6px 0 2px 0;
+                margin: 0;
+            }
+            .actor-refs li {
+                font-size: 12.5px;
+                line-height: 1.4;
+                margin: 0 0 6px 0;
+            }
+            .actor-refs a {
+                color: var(--ink);
+                text-decoration: none;
+                font-weight: 600;
+            }
+            .actor-refs a:hover {
+                text-decoration: underline;
+            }
+            .actor-refs .ref-meta {
+                color: var(--mute);
+                font-weight: 400;
+                font-size: 11.5px;
+            }
+            .prominence {
+                display: inline-flex;
+                align-items: center;
+                gap: 6px;
+                font-size: 12px;
+                color: var(--mute);
+                white-space: nowrap;
+                margin-top: 2px;
+            }
+            .prominence-bar {
+                display: inline-flex;
+                gap: 2px;
+            }
+            .prominence-pip {
+                width: 8px;
+                height: 12px;
+                border-radius: 2px;
+                background: var(--line);
+            }
+            .prominence-pip.on-1 { background: #93c5fd; }
+            .prominence-pip.on-2 { background: #60a5fa; }
+            .prominence-pip.on-3 { background: #3b82f6; }
+            .prominence-pip.on-4 { background: #2563eb; }
+            .prominence-pip.on-5 { background: #1d4ed8; }
+
+            /* ── Radar tab styles ── */
+            .radar-card {
+                border: 1px solid var(--line);
+                border-radius: 10px;
+                padding: 14px 16px;
+                margin: 0 0 12px 0;
+                background: #fff;
+            }
+            .radar-card.is-new {
+                border-color: #059669;
+                box-shadow: 0 0 0 1px rgba(5, 150, 105, 0.18);
+            }
+            .radar-head {
+                display: flex;
+                align-items: flex-start;
+                gap: 10px;
+                margin: 0 0 6px 0;
+            }
+            .radar-rank {
+                font-size: 18px;
+                font-weight: 700;
+                color: var(--mute);
+                min-width: 22px;
+                line-height: 1.2;
+            }
+            .radar-title {
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 1.25;
+                color: var(--ink);
+                margin: 0;
+                flex: 1;
+            }
+            .radar-new-badge {
+                font-size: 10px;
+                font-weight: 700;
+                letter-spacing: 0.4px;
+                color: #fff;
+                background: #059669;
+                padding: 2px 6px;
+                border-radius: 4px;
+                margin-left: 6px;
+                vertical-align: 2px;
+                text-transform: uppercase;
+            }
+            .radar-blurb {
+                font-size: 13.5px;
+                color: var(--ink);
+                margin: 6px 0 8px 0;
+                line-height: 1.45;
+            }
+            .convergence {
+                display: inline-flex;
+                align-items: center;
+                gap: 6px;
+                font-size: 12px;
+                color: var(--mute);
+                white-space: nowrap;
+                margin-top: 2px;
+            }
+            .convergence-bar {
+                display: inline-flex;
+                gap: 2px;
+            }
+            .convergence-pip {
+                width: 8px;
+                height: 12px;
+                border-radius: 2px;
+                background: var(--line);
+            }
+            .convergence-pip.on-1 { background: #6ee7b7; }
+            .convergence-pip.on-2 { background: #34d399; }
+            .convergence-pip.on-3 { background: #10b981; }
+            .convergence-pip.on-4 { background: #059669; }
+            .convergence-pip.on-5 { background: #047857; }
+            .radar-countries {
+                margin: 8px 0;
+                padding: 0;
+                list-style: none;
+            }
+            .radar-countries li {
+                font-size: 12.5px;
+                line-height: 1.5;
+                color: var(--ink);
+                padding: 2px 0;
+                border-top: 1px solid rgba(0,0,0,0.05);
+            }
+            .radar-countries li:first-child {
+                border-top: none;
+            }
+            .radar-country-name {
+                font-weight: 600;
+            }
+            .radar-country-note {
+                color: var(--mute);
+                font-size: 11.5px;
+            }
+            .radar-signals {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 4px;
+                margin: 0 0 10px 0;
+            }
+            .radar-signal {
+                font-size: 11px;
+                background: var(--bg);
+                color: #44403c;
+                padding: 2px 8px;
+                border-radius: 999px;
+                border: 1px solid var(--line);
+            }
+            .radar-refs {
+                margin-top: 4px;
+            }
+            .radar-refs > summary {
+                cursor: pointer;
+                font-size: 12px;
+                color: var(--mute);
+                padding: 4px 0;
+                user-select: none;
+            }
+            .radar-refs > summary:hover {
+                color: var(--ink);
+            }
+            .radar-refs ul {
+                list-style: none;
+                padding: 6px 0 2px 0;
+                margin: 0;
+            }
+            .radar-refs li {
+                font-size: 12.5px;
+                line-height: 1.4;
+                margin: 0 0 6px 0;
+            }
+            .radar-refs a {
+                color: var(--ink);
+                text-decoration: none;
+                font-weight: 600;
+            }
+            .radar-refs a:hover {
+                text-decoration: underline;
+            }
+            .radar-refs .ref-meta {
+                color: var(--mute);
+                font-weight: 400;
+                font-size: 11.5px;
+            }
+
             /* ── Dark mode (system preference) ── */
             @media (prefers-color-scheme: dark) {
                 :root {
@@ -652,6 +937,30 @@
                 .hotspot-signal {
                     color: #a8a29e;
                 }
+                .actor-card {
+                    background: #292524;
+                }
+                .actor-card.is-new {
+                    box-shadow: 0 0 0 1px rgba(37, 99, 235, 0.35);
+                }
+                .actor-signal {
+                    color: #a8a29e;
+                }
+                .radar-card {
+                    background: #292524;
+                }
+                .radar-card.is-new {
+                    box-shadow: 0 0 0 1px rgba(5, 150, 105, 0.35);
+                }
+                .radar-signal {
+                    color: #a8a29e;
+                }
+                .radar-countries li {
+                    border-top-color: rgba(255, 255, 255, 0.05);
+                }
+                .radar-country-note {
+                    color: #a8a29e;
+                }
             }
         </style>
     </head>
@@ -705,6 +1014,8 @@
                 { filename: "networks", name: "Networks", lang: "en", icon: '<svg width="14" height="14" viewBox="0 0 14 14" fill="none" style="vertical-align:-2px;margin-right:4px"><circle cx="3" cy="3" r="1.5" fill="#607D9B"/><circle cx="11" cy="3" r="1.5" fill="#607D9B"/><circle cx="7" cy="11" r="1.5" fill="#607D9B"/><line x1="3" y1="3" x2="11" y2="3" stroke="#607D9B" stroke-width="1.2"/><line x1="3" y1="3" x2="7" y2="11" stroke="#607D9B" stroke-width="1.2"/><line x1="11" y1="3" x2="7" y2="11" stroke="#607D9B" stroke-width="1.2"/></svg>' },
                 { filename: "general", name: "General", lang: "en", icon: '<svg width="14" height="14" viewBox="0 0 14 14" fill="none" style="vertical-align:-2px;margin-right:4px"><circle cx="7" cy="7" r="5.5" stroke="#4A7A6F" stroke-width="1.3"/><ellipse cx="7" cy="7" rx="2.5" ry="5.5" stroke="#4A7A6F" stroke-width="1.2"/><line x1="1.5" y1="7" x2="12.5" y2="7" stroke="#4A7A6F" stroke-width="1.2"/></svg>' },
                 { filename: "hotspots", name: "Hotspots", lang: "en", kind: "hotspots", icon: '<svg width="14" height="14" viewBox="0 0 14 14" fill="none" style="vertical-align:-2px;margin-right:4px"><circle cx="7" cy="7" r="6" stroke="#B0584A" stroke-width="1.5"/><circle cx="7" cy="7" r="3" stroke="#B0584A" stroke-width="1.5"/><circle cx="7" cy="7" r="0.75" fill="#B0584A"/></svg>' },
+                { filename: "actors", name: "Actors", lang: "en", kind: "actors", icon: '<svg width="14" height="14" viewBox="0 0 14 14" fill="none" style="vertical-align:-2px;margin-right:4px"><circle cx="7" cy="5" r="3" stroke="#3B82F6" stroke-width="1.4"/><path d="M2 13c0-2.8 2.2-5 5-5s5 2.2 5 5" stroke="#3B82F6" stroke-width="1.4" fill="none"/></svg>' },
+                { filename: "radar", name: "Radar", lang: "en", kind: "radar", icon: '<svg width="14" height="14" viewBox="0 0 14 14" fill="none" style="vertical-align:-2px;margin-right:4px"><circle cx="7" cy="7" r="6" stroke="#059669" stroke-width="1.3"/><circle cx="7" cy="7" r="3" stroke="#059669" stroke-width="1.2"/><line x1="7" y1="7" x2="12" y2="4" stroke="#059669" stroke-width="1.4"/></svg>' },
             ];
 
             const tabContainer = document.getElementById("tab-container");
@@ -1096,7 +1407,7 @@
                 try {
                     const results = await Promise.all(
                         feeds
-                            .filter((feed) => feed.kind !== "hotspots")
+                            .filter((feed) => !feed.kind)
                             .map(async (feed) => {
                                 try {
                                     const res = await fetch(`feeds/${feed.filename}.txt`);
@@ -1230,6 +1541,14 @@
                     loadHotspots();
                     return;
                 }
+                if (currentFeed && currentFeed.kind === "actors") {
+                    loadActors();
+                    return;
+                }
+                if (currentFeed && currentFeed.kind === "radar") {
+                    loadRadar();
+                    return;
+                }
 
                 feedContent.innerHTML = `<span class="loading">Fetching newest data for ${filename}...</span>`;
                 fetch(`feeds/${filename}.txt`)
@@ -1322,7 +1641,7 @@
                     .then((response) => {
                         if (!response.ok) {
                             throw new Error(
-                                "Hotspots haven't been generated yet. The script runs every 2 hours; check back soon.",
+                                "Hotspots haven't been generated yet. The script runs every 6 hours; check back soon.",
                             );
                         }
                         return response.json();
@@ -1348,6 +1667,173 @@
                         }
                         const cards = hotspots
                             .map((h, i) => renderHotspot(h, i + 1))
+                            .join("");
+                        feedContent.innerHTML = meta + cards;
+                        feedContent.scrollTop = 0;
+                    })
+                    .catch((error) => {
+                        feedContent.innerHTML = `<span class="error">⚠ ${error.message}</span>`;
+                    });
+            }
+
+            /* ── Actors renderer ── */
+
+            function prominenceBar(level) {
+                const n = Math.max(1, Math.min(5, parseInt(level, 10) || 1));
+                let pips = "";
+                for (let i = 1; i <= 5; i++) {
+                    pips += `<span class="prominence-pip${i <= n ? " on-" + n : ""}"></span>`;
+                }
+                return `<span class="prominence" title="Prominence ${n}/5"><span class="prominence-bar">${pips}</span>${n}/5</span>`;
+            }
+
+            function renderActor(a, rank) {
+                const isNew = a.first_seen && a.last_seen && a.first_seen === a.last_seen;
+                const signals = (a.signals || [])
+                    .map((s) => `<span class="actor-signal">${escapeHtml(s)}</span>`)
+                    .join("");
+                const cats = (a.categories || []).join(" · ");
+                const refs = (a.refs || [])
+                    .map((r) => {
+                        const meta = [r.source, (r.date || "").slice(0, 10)]
+                            .filter(Boolean)
+                            .join(" · ");
+                        return `<li><a href="${escapeHtml(r.url || "#")}" target="_blank" rel="noopener noreferrer">${escapeHtml(r.title)}</a>${meta ? ` <span class="ref-meta">— ${escapeHtml(meta)}</span>` : ""}</li>`;
+                    })
+                    .join("");
+                const refCount = a.article_count || (a.refs || []).length;
+                return `
+                    <div class="actor-card${isNew ? " is-new" : ""}">
+                        <div class="actor-head">
+                            <span class="actor-rank">${rank}</span>
+                            <h3 class="actor-name">${escapeHtml(a.name)}${isNew ? '<span class="actor-new-badge">new</span>' : ""}</h3>
+                            ${prominenceBar(a.prominence)}
+                        </div>
+                        ${a.role ? `<p class="actor-role">${escapeHtml(a.role)}</p>` : ""}
+                        ${a.blurb ? `<p class="actor-blurb">${escapeHtml(a.blurb)}</p>` : ""}
+                        ${signals ? `<div class="actor-signals">${signals}</div>` : ""}
+                        ${cats ? `<div class="actor-cats">Categories: ${escapeHtml(cats)}</div>` : ""}
+                        ${refs ? `<details class="actor-refs"><summary>${refCount} article${refCount === 1 ? "" : "s"} — show sources</summary><ul>${refs}</ul></details>` : ""}
+                    </div>
+                `;
+            }
+
+            function loadActors() {
+                feedContent.innerHTML = `<span class="loading">Loading key actors...</span>`;
+                fetch(`data/actors.json`, { cache: "no-store" })
+                    .then((response) => {
+                        if (!response.ok) {
+                            throw new Error(
+                                "Key actors haven't been generated yet. The script runs every 6 hours; check back soon.",
+                            );
+                        }
+                        return response.json();
+                    })
+                    .then((data) => {
+                        const actors = data.actors || [];
+                        const meta = `
+                            <div class="hotspots-meta">
+                                <span>Top ${actors.length} actor${actors.length === 1 ? "" : "s"} from the last ${data.lookback_hours || 48}h</span>
+                                <span>Updated ${formatRelative(data.updated_at)}${data.model ? ` · via ${escapeHtml(data.model)}` : ""}</span>
+                            </div>
+                        `;
+                        if (actors.length === 0) {
+                            const reason =
+                                data.status === "insufficient-data"
+                                    ? "Not enough articles with summaries in the lookback window yet."
+                                    : data.status === "llm-unavailable"
+                                      ? "The model wasn't reachable on the last run."
+                                      : "No actors cleared the threshold on the last run.";
+                            feedContent.innerHTML = `${meta}<div class="no-results">${reason}</div>`;
+                            feedContent.scrollTop = 0;
+                            return;
+                        }
+                        const cards = actors
+                            .map((a, i) => renderActor(a, i + 1))
+                            .join("");
+                        feedContent.innerHTML = meta + cards;
+                        feedContent.scrollTop = 0;
+                    })
+                    .catch((error) => {
+                        feedContent.innerHTML = `<span class="error">⚠ ${error.message}</span>`;
+                    });
+            }
+
+            /* ── Radar renderer ── */
+
+            function convergenceBar(level) {
+                const n = Math.max(1, Math.min(5, parseInt(level, 10) || 1));
+                let pips = "";
+                for (let i = 1; i <= 5; i++) {
+                    pips += `<span class="convergence-pip${i <= n ? " on-" + n : ""}"></span>`;
+                }
+                return `<span class="convergence" title="Convergence ${n}/5"><span class="convergence-bar">${pips}</span>${n}/5</span>`;
+            }
+
+            function renderRadarTheme(t, rank) {
+                const isNew = t.first_seen && t.last_seen && t.first_seen === t.last_seen;
+                const signals = (t.signals || [])
+                    .map((s) => `<span class="radar-signal">${escapeHtml(s)}</span>`)
+                    .join("");
+                const countries = (t.countries || [])
+                    .map((c) => `<li><span class="radar-country-name">${escapeHtml(c.name || "")}</span>${c.note ? ` <span class="radar-country-note">— ${escapeHtml(c.note)}</span>` : ""}</li>`)
+                    .join("");
+                const refs = (t.refs || [])
+                    .map((r) => {
+                        const meta = [r.source, (r.date || "").slice(0, 10)]
+                            .filter(Boolean)
+                            .join(" · ");
+                        return `<li><a href="${escapeHtml(r.url || "#")}" target="_blank" rel="noopener noreferrer">${escapeHtml(r.title)}</a>${meta ? ` <span class="ref-meta">— ${escapeHtml(meta)}</span>` : ""}</li>`;
+                    })
+                    .join("");
+                const refCount = t.article_count || (t.refs || []).length;
+                return `
+                    <div class="radar-card${isNew ? " is-new" : ""}">
+                        <div class="radar-head">
+                            <span class="radar-rank">${rank}</span>
+                            <h3 class="radar-title">${escapeHtml(t.title)}${isNew ? '<span class="radar-new-badge">new</span>' : ""}</h3>
+                            ${convergenceBar(t.convergence)}
+                        </div>
+                        ${t.blurb ? `<p class="radar-blurb">${escapeHtml(t.blurb)}</p>` : ""}
+                        ${signals ? `<div class="radar-signals">${signals}</div>` : ""}
+                        ${countries ? `<ul class="radar-countries">${countries}</ul>` : ""}
+                        ${refs ? `<details class="radar-refs"><summary>${refCount} article${refCount === 1 ? "" : "s"} — show sources</summary><ul>${refs}</ul></details>` : ""}
+                    </div>
+                `;
+            }
+
+            function loadRadar() {
+                feedContent.innerHTML = `<span class="loading">Loading cross-national radar...</span>`;
+                fetch(`data/radar.json`, { cache: "no-store" })
+                    .then((response) => {
+                        if (!response.ok) {
+                            throw new Error(
+                                "Cross-national radar hasn't been generated yet. The script runs every 6 hours; check back soon.",
+                            );
+                        }
+                        return response.json();
+                    })
+                    .then((data) => {
+                        const themes = data.themes || [];
+                        const meta = `
+                            <div class="hotspots-meta">
+                                <span>Top ${themes.length} cross-national theme${themes.length === 1 ? "" : "s"} from the last ${data.lookback_hours || 48}h</span>
+                                <span>Updated ${formatRelative(data.updated_at)}${data.model ? ` · via ${escapeHtml(data.model)}` : ""}</span>
+                            </div>
+                        `;
+                        if (themes.length === 0) {
+                            const reason =
+                                data.status === "insufficient-data"
+                                    ? "Not enough articles with summaries in the lookback window yet."
+                                    : data.status === "llm-unavailable"
+                                      ? "The model wasn't reachable on the last run."
+                                      : "No cross-national themes cleared the threshold on the last run.";
+                            feedContent.innerHTML = `${meta}<div class="no-results">${reason}</div>`;
+                            feedContent.scrollTop = 0;
+                            return;
+                        }
+                        const cards = themes
+                            .map((t, i) => renderRadarTheme(t, i + 1))
                             .join("");
                         feedContent.innerHTML = meta + cards;
                         feedContent.scrollTop = 0;

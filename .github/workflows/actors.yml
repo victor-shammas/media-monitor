@@ -1,0 +1,68 @@
+name: Generate Key Actors
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+on:
+  schedule:
+    # Every 6 hours, offset 45 minutes from pipeline so enrichment has landed.
+    - cron: "45 */6 * * *"
+  workflow_dispatch:
+    inputs:
+      hours:
+        description: "Lookback window in hours"
+        type: string
+        default: "48"
+      top_n:
+        description: "Number of actors to return"
+        type: string
+        default: "8"
+
+concurrency:
+  group: media-actors
+  cancel-in-progress: false
+
+jobs:
+  actors:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Checkout private data repo
+        uses: actions/checkout@v4
+        with:
+          repository: victor-shammas/media-monitor-data
+          path: data-private
+          token: ${{ secrets.DATA_REPO_PAT }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Install dependencies
+        run: pip install google-genai tenacity markdown
+
+      - name: Generate key actors
+        timeout-minutes: 10
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
+        run: |
+          python actors_generator.py \
+            --hours "${{ inputs.hours || '48' }}" \
+            --top-n "${{ inputs.top_n || '8' }}" \
+            --enriched-dir data-private
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/actors.json data/actors/
+          git commit -m "Update key actors" || echo "No changes to commit"
+          git -c fetch.recurseSubmodules=no pull --rebase
+          git push
