@@ -37,7 +37,6 @@ from ai_reporter import generate_with_fallback, load_enriched
 
 STATE_FILE = "data/monitor_state.json"
 DEFAULT_OUTDIR = "data"
-ARCHIVE_SUBDIR = "hotspots"
 HOTSPOTS_FILENAME = "hotspots.json"
 MAX_PROMPT_CHARS = 350_000
 
@@ -286,15 +285,6 @@ def write_payload(payload: dict, path: str) -> None:
     print(f"  Wrote {path}")
 
 
-def archive_payload(payload: dict, outdir: str) -> None:
-    ts = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H%M")
-    archive_dir = os.path.join(outdir, ARCHIVE_SUBDIR)
-    os.makedirs(archive_dir, exist_ok=True)
-    archive_path = os.path.join(archive_dir, f"{ts}.json")
-    with open(archive_path, "w", encoding="utf-8") as f:
-        f.write(json.dumps(payload, ensure_ascii=False, indent=2))
-    print(f"  Archived {archive_path}")
-
 
 def write_empty_output(path: str, reason: str, hours: int) -> None:
     payload = {
@@ -389,7 +379,6 @@ def main() -> int:
         "hotspots": hotspots,
     }
     write_payload(payload, out_path)
-    archive_payload(payload, args.outdir)
     print(f"✓ {len(hotspots)} hotspot(s) generated via {model_label}")
     return 0
 
