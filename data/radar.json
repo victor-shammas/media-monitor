@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-27T20:01:08+00:00",
+  "updated_at": "2026-04-28T04:27:56+00:00",
   "lookback_hours": 48,
   "model": "Mistral Large",
   "status": "ok",
@@ -7,58 +7,94 @@
     {
       "id": "trumps-white-house-correspondents-dinner-shooting-dominates-global-right-wing-coverage",
       "title": "Trump’s White House Correspondents’ Dinner shooting dominates global right-wing coverage",
-      "blurb": "The attempted assassination of Donald Trump at the White House Correspondents’ Dinner has become a dominant transnational narrative, with right-wing media across multiple countries framing it as an attack on democracy and a symbol of rising political violence. Coverage emphasizes security failures, Trump’s defiance, and broader implications for political polarization.",
+      "blurb": "The attempted assassination of Donald Trump at the White House Correspondents' Dinner has become a transnational rallying point for right-wing and far-right media, framing the incident as an attack on democracy and a symbol of escalating political violence. Coverage spans multiple countries, with shared narratives of security failures and calls for heightened vigilance against perceived left-wing threats.",
       "convergence": 5,
       "countries": [
         {
           "name": "🇺🇸 MAGA / Trump",
-          "note": "Intense focus on security lapses, Trump’s reaction, and the suspect’s anti-Trump manifesto. Articles highlight Trump’s calls for unity and criticism of media coverage."
+          "note": "Intense focus on security lapses, shooter's motives, and Trump's defiant response; articles highlight Secret Service failures and political rhetoric as contributing factors."
         },
         {
           "name": "🇮🇹 Fratelli d'Italia / Lega",
-          "note": "Meloni’s solidarity with Trump, condemnation of political violence, and framing of the incident as part of a broader pattern of left-wing extremism."
+          "note": "Meloni expresses solidarity with Trump, framing the attack as part of a broader pattern of political violence; media emphasize the need for stronger security measures."
         },
         {
           "name": "🇫🇷 Rassemblement National",
-          "note": "Coverage emphasizes the attack as evidence of global political instability and aligns with Trump’s narrative of victimhood."
+          "note": "Coverage ties the incident to broader concerns about political extremism, with Bardella using it to criticize left-wing rhetoric in Europe."
         },
         {
           "name": "🇬🇧 Reform UK",
-          "note": "Farage and others use the incident to criticize U.S. security and media, while drawing parallels to domestic political tensions."
+          "note": "Farage and others frame the attack as evidence of growing threats to conservative leaders, calling for stricter immigration controls and anti-extremism policies."
         },
         {
           "name": "🇪🇸 Vox",
-          "note": "Abascal condemns the attack as political violence, linking it to broader critiques of left-wing radicalism and media bias."
+          "note": "Abascal condemns the attack as an assault on democratic values, linking it to Spain's own political divisions and Vox's struggles with left-wing opposition."
         },
         {
           "name": "🇩🇪 Alternative für Deutschland",
-          "note": "AfD frames the incident as part of a global trend of political violence, using it to critique U.S. and European security policies."
+          "note": "AfD uses the incident to criticize mainstream media and left-wing parties, portraying Trump as a victim of political persecution."
         },
         {
           "name": "🇵🇱 Prawo i Sprawiedliwość",
-          "note": "Polish leaders condemn the attack, emphasizing solidarity with Trump and framing it as an assault on democratic values."
+          "note": "Polish media emphasize the attack's implications for global democracy, with Nawrocki expressing solidarity with Trump and condemning political violence."
         }
       ],
       "signals": [
         "shared framing",
-        "reaction to external event",
-        "coordinated messaging",
-        "policy contagion"
+        "security failures",
+        "political violence",
+        "transnational solidarity",
+        "media criticism"
       ],
-      "article_count": 120,
+      "article_count": 150,
       "refs": [
         {
-          "title": "Live Special Report: Man charged with attempted assassination of President Trump",
-          "source": "wtol.com",
-          "url": "https://www.wtol.com/video/news/live-special-report-man-charged-with-attempted-assassination-of-president-trump/285-178475b2-c78d-4795-91a1-1403771f8a2f",
-          "date": "2026-04-27T19:07:00+00:00",
+          "title": "Donald Trump echoes Melania Trump’s calls for ABC to ‘take a stand’ after Jimmy Kimmel’s ‘widow’ joke",
+          "source": "Yahoo News Canada",
+          "url": "https://ca.news.yahoo.com/melania-trump-urges-abc-stand-144809358.html",
+          "date": "2026-04-28T02:35:39+00:00",
           "category": "usa"
         },
         {
-          "title": "Man charged with attempted assassination of President Trump in White House correspondents’ dinner shooting",
-          "source": "WXXV News 25",
-          "url": "https://www.wxxv25.com/man-charged-with-attempted-assassination-of-president-trump-in-white-house-correspondents-dinner-shooting/",
-          "date": "2026-04-27T18:59:20+00:00",
+          "title": "Gunman charged in attack targeting President Trump; Fitzpatrick and retired FBI agents warn of major security failures",
+          "source": "WFMZ.com",
+          "url": "https://www.wfmz.com/news/area/pennsylvania/gunman-charged-in-attack-targeting-president-trump-fitzpatrick-and-retired-fbi-agents-warn-of-major/article_2ad9954c-f64d-4b96-b8c3-22d8db1eecf4.html",
+          "date": "2026-04-28T02:00:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Donald Trump calls for Jimmy Kimmel to be fired over Melania 'expectant widow' gag",
+          "source": "Yahoo",
+          "url": "https://www.yahoo.com/entertainment/celebrity/articles/donald-trump-calls-jimmy-kimmel-234900823.html",
+          "date": "2026-04-27T23:49:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Man charged with attempting to assassinate President Trump",
+          "source": "CBS News",
+          "url": "https://www.cbsnews.com/chicago/video/man-charged-with-attempting-to-assassinate-president-trump/",
+          "date": "2026-04-27T22:40:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Video Suspect charged with attempting to assassinate President Trump - ABC News",
+          "source": "Breaking News, Latest News and Videos",
+          "url": "https://abcnews.com/video/132431561/",
+          "date": "2026-04-27T20:47:34+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Najprostsze, ale nie najlepsze? PiS (częściowo) na NIE dla (czasowego) zamknięcia",
+          "source": "Kurier Szczeciński",
+          "url": "https://24kurier.pl/ekurier/najprostsze-ale-nie-najlepsze-pis-czesciowo-na-nie-dla-czasowego-zamkniecia/",
+          "date": "2026-04-27T20:32:00+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Cole Allen charged with attempted assassination of President Trump in WHCD shooting",
+          "source": "FOX 29 Philadelphia",
+          "url": "https://www.fox29.com/video/fmc-rmxt1hajmb6t0nx1",
+          "date": "2026-04-27T19:58:39+00:00",
           "category": "usa"
         },
         {
@@ -69,10 +105,10 @@
           "category": "usa"
         },
         {
-          "title": "Suspect Charged With Attempting To Assassinate Donald Trump At White House Correspondents’ Dinner",
-          "source": "Deadline",
-          "url": "https://deadline.com/2026/04/suspect-charged-trump-assassination-attempt-1236873666/",
-          "date": "2026-04-27T18:18:00+00:00",
+          "title": "WHCD shooting suspect Cole Allen charged with trying assassinate President Trump",
+          "source": "New York Post",
+          "url": "https://nypost.com/2026/04/27/us-news/whcd-shooting-suspect-cole-allen-charged-with-trying-assassinate-president-trump/",
+          "date": "2026-04-27T18:13:00+00:00",
           "category": "usa"
         },
         {
@@ -83,27 +119,6 @@
           "category": "usa"
         },
         {
-          "title": "Magyar Péter: Az Orbán-kormány hozzon döntést a NAV jogköreinek bővítéséről!",
-          "source": "Hírstart",
-          "url": "https://www.hirstart.hu/hk/20260427_magyar_peter_tobb_ner-es_stroman_szamlaja_zarolasra_kerult",
-          "date": "2026-04-27T17:08:30+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Melania Trump blasts Kimmel, calls on ABC to ‘take stand’ against comedian",
-          "source": "Al Jazeera",
-          "url": "https://www.aljazeera.com/news/2026/4/27/melania-trump-blasts-kimmel-calls-on-abc-to-take-stand-against-comedian",
-          "date": "2026-04-27T17:04:52+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Donald Trump’s Assassination Attempt | Sports Junkies",
-          "source": "Audacy",
-          "url": "https://www.audacy.com/theteam980/video/donald-trump-s-assassination-attempt-sports-junkies-xa76lyg",
-          "date": "2026-04-27T16:40:48+00:00",
-          "category": "usa"
-        },
-        {
           "title": "White House to review Trump's security after shooting at dinner event",
           "source": "BBC",
           "url": "https://www.bbc.com/news/articles/cgj0j9439vlo",
@@ -111,11 +126,18 @@
           "category": "usa"
         },
         {
-          "title": "What does the US dinner shooting mean for Trump?",
-          "source": "Al Jazeera",
-          "url": "https://www.aljazeera.com/video/the-take-2/2026/4/27/what-does-the-us-dinner-shooting-mean-for-trump",
-          "date": "2026-04-27T16:29:07+00:00",
-          "category": "usa"
+          "title": "PP y Vox aplazan los detalles del nuevo gobierno extremeño y apelan a un “cambio de rumbo”",
+          "source": "Canal Extremadura",
+          "url": "http://www.canalextremadura.es/noticias/extremadura/pp-y-vox-aplazan-los-detalles-del-nuevo-gobierno-extremeno-y-apelan-un-cambio",
+          "date": "2026-04-27T15:47:20+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Vox condena el intento de atentado contra Trump y lo atribuye a un \"matonismo político\"",
+          "source": "La Razón",
+          "url": "https://www.larazon.es/espana/vox-condena-intento-atentado-trump-atribuye-matonismo-politico_2026042769ef71c9c8da43388c4154c8.html",
+          "date": "2026-04-27T15:14:02+00:00",
+          "category": "spain"
         },
         {
           "title": "President Trump talks about White House Correspondents’ Dinner shooting",
@@ -125,24 +147,17 @@
           "category": "usa"
         },
         {
-          "title": "Hivatalos: ez lesz a Fidesz és a KDNP parlamenti frakciója",
-          "source": "444",
-          "url": "https://444.hu/2026/04/27/hivatalos-ez-lesz-a-fidesz-es-a-kdnp-parlamenti-frakcioja",
-          "date": "2026-04-27T13:32:11+00:00",
-          "category": "hungary"
+          "title": "Vox ve en el intento de atentado a Trump un \"ataque contra las urnas\" y habla también de un \"matonismo político\" contra el partido de Abascal",
+          "source": "El Mundo",
+          "url": "https://www.elmundo.es/espana/2026/04/27/69ef3948e85ecef80c8b456e.html",
+          "date": "2026-04-27T12:47:14+00:00",
+          "category": "spain"
         },
         {
           "title": "What we know so far about the White House Correspondents' Dinner shooting",
           "source": "WPDE",
           "url": "https://wpde.com/news/nation-world/what-we-know-so-far-about-the-white-house-correspondents-dinner-shooting-washington-hilton-ballroom-journalists-political-leaders-president-trump-first-lady-melania-secret-service-agents-suspect-cole-tomas-allen-california-manifesto-investigation",
           "date": "2026-04-27T11:43:15+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "A political violence expert on what the latest attack on President Trump tells us",
-          "source": "The Independent",
-          "url": "https://www.independent.co.uk/news/world/americas/us-politics/trump-shooting-white-house-political-violence-b2965512.html",
-          "date": "2026-04-27T10:35:00+00:00",
           "category": "usa"
         },
         {
@@ -153,6 +168,13 @@
           "category": "usa"
         },
         {
+          "title": "A manifesto, a train ride, and gaps in security that let a shooter get near Trump",
+          "source": "Fortune",
+          "url": "https://fortune.com/2026/04/27/whcd-shooting-manifesto-security-gaps-assassin-near-trump/",
+          "date": "2026-04-27T09:46:00+00:00",
+          "category": "usa"
+        },
+        {
           "title": "Suspect in dinner shooting was targeting Trump administration officials, investigators say",
           "source": "FOX Carolina",
           "url": "https://www.foxcarolina.com/video/2026/04/27/suspect-dinner-shooting-was-targeting-trump-administration-officials-investigators-say/",
@@ -160,10 +182,10 @@
           "category": "usa"
         },
         {
-          "title": "Inside the White House correspondents’ dinner shooting – Full Story podcast",
-          "source": "The Guardian",
-          "url": "https://www.theguardian.com/us-news/video/2026/apr/27/inside-the-white-house-correspondents-dinner-shooting-full-story-podcast",
-          "date": "2026-04-27T07:28:00+00:00",
+          "title": "Donald Trump had 'not been worried' during White House Correspondents' Dinner",
+          "source": "The Jerusalem Post",
+          "url": "https://www.jpost.com/international/article-894255",
+          "date": "2026-04-27T08:00:25+00:00",
           "category": "usa"
         },
         {
@@ -171,13 +193,6 @@
           "source": "madhyamamonline.com",
           "url": "https://madhyamamonline.com/world/trump-administration-members-were-targets-initial-probe-suggests-anti-trump-sentiment-behind-attack-1514937",
           "date": "2026-04-27T06:51:43+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Why Trump, MAGA and Fetterman say correspondents’ dinner shooting seals deal for $400M White House ballroom",
-          "source": "The Independent",
-          "url": "https://www.independent.co.uk/news/world/americas/us-politics/trump-shooting-attempt-ballroom-correspondents-dinner-b2965370.html",
-          "date": "2026-04-27T05:33:00+00:00",
           "category": "usa"
         },
         {
@@ -195,10 +210,10 @@
           "category": "usa"
         },
         {
-          "title": "Read the full transcript of Norah O'Donnell's interview with President Trump here",
-          "source": "CBS News",
-          "url": "https://www.cbsnews.com/news/read-the-full-transcript-of-norah-odonnells-interview-with-president-trump-60-minutes/",
-          "date": "2026-04-27T00:51:00+00:00",
+          "title": "Trump safe after reported shooting at White House Correspondents' Dinner",
+          "source": "KMTV 3 News Now",
+          "url": "https://www.3newsnow.com/videos/news/national-news/armed-security-evacuates-president-donald-trump-from-white-house-correspondents-dinner",
+          "date": "2026-04-27T00:42:09+00:00",
           "category": "usa"
         },
         {
@@ -207,105 +222,82 @@
           "url": "https://www.theguardian.com/us-news/2026/apr/26/trump-60-minutes-interview-white-house-correspondents-dinner-shooting",
           "date": "2026-04-27T00:10:00+00:00",
           "category": "usa"
-        },
-        {
-          "title": "Trump Describes Moments Agents Scrambled To Get Him Out Of Ballroom",
-          "source": "Deadline",
-          "url": "https://deadline.com/2026/04/trump-white-house-correspondents-dinner-shooting-60-minutes-1236872891/",
-          "date": "2026-04-26T22:01:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Latest attack threatening President Trump reflects rising political violence in US",
-          "source": "The Conversation",
-          "url": "https://theconversation.com/latest-attack-threatening-president-trump-reflects-rising-political-violence-in-us-281513",
-          "date": "2026-04-26T20:40:47+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Trump calls for unity after White House press gala shooting",
-          "source": "DW.com",
-          "url": "https://www.dw.com/en/trump-calls-for-unity-after-white-house-press-gala-shooting/video-76946204",
-          "date": "2026-04-26T18:39:34+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Suspect in White House Correspondents’ dinner shooting wrote of targeting Trump administration",
-          "source": "NBC News",
-          "url": "https://www.nbcnews.com/news/us-news/shooting-suspect-white-house-correspondents-dinner-cole-thomas-allen-rcna342146",
-          "date": "2026-04-26T16:50:02+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Trump calls for unity after White House shooting",
-          "source": "KTAR News 92.3 FM",
-          "url": "https://ktar.com/national-news/trump-unity-white-house-shooting/5852734/",
-          "date": "2026-04-26T14:58:34+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "WHCD shooting suspect targeted Trump administration officials, sources tell CBS News",
-          "source": "CBS News",
-          "url": "https://www.cbsnews.com/video/whcd-shooting-suspect-targeted-trump-administration-officials-sources-tell-cbs-news/",
-          "date": "2026-04-26T14:34:00+00:00",
-          "category": "usa"
         }
       ],
       "first_seen": "2026-04-26T08:09:02+00:00",
-      "last_seen": "2026-04-27T20:01:08+00:00"
+      "last_seen": "2026-04-28T04:27:56+00:00"
     },
     {
       "id": "far-right-parties-surge-in-european-polls",
       "title": "Far-right parties surge in European polls",
-      "blurb": "Right-wing and far-right parties across Europe are experiencing a surge in polling and electoral success, with coverage highlighting their growing influence in national and regional politics. The narrative emphasizes their role in coalition governments, policy shifts, and rising public support amid economic and migration crises.",
+      "blurb": "Right-wing and far-right parties across Europe are experiencing a polling surge, with narratives emphasizing anti-immigration policies, national sovereignty, and opposition to EU fiscal rules. This trend is reflected in parallel coverage across multiple countries, often framed as a backlash against progressive governance and globalist policies.",
       "convergence": 4,
       "countries": [
         {
           "name": "🇩🇪 Alternative für Deutschland",
-          "note": "AfD leads national polls in Germany, with record support and growing influence in state and local elections. Coverage focuses on internal conflicts, policy proposals, and opposition to immigration."
+          "note": "AfD leads polls in multiple German states, with media emphasizing its anti-immigration stance and opposition to EU fiscal constraints."
         },
         {
           "name": "🇫🇷 Rassemblement National",
-          "note": "Bardella and Le Pen’s party gains traction ahead of the 2027 presidential election, with coverage highlighting their anti-immigration stance and rising popularity among business leaders."
+          "note": "Bardella's rising popularity is tied to market-friendly policies and opposition to EU migration policies, with media framing him as a viable 2027 presidential candidate."
         },
         {
           "name": "🇪🇸 Vox",
-          "note": "Vox’s coalition deals with PP in Aragón and Extremadura, and its push for 'national priority' policies, dominate coverage. Articles highlight internal disputes and electoral strategies."
+          "note": "Vox's polling gains are linked to its 'national priority' agenda, with media highlighting its influence in regional coalitions with PP."
         },
         {
           "name": "🇸🇪 Sverigedemokraterna",
-          "note": "Sweden Democrats’ growing influence in Swedish politics, including their role in shaping immigration and education policies, is a key focus of coverage."
+          "note": "SD's growing influence in Swedish politics is framed as a challenge to traditional parties, with media emphasizing its role in shaping immigration and welfare policies."
         },
         {
           "name": "🇳🇴 Fremskrittspartiet",
-          "note": "Norway’s Progress Party gains ground in local elections, with coverage emphasizing its anti-immigration and economic liberalization policies."
+          "note": "FrP's polling surge is tied to its opposition to immigration and EU integration, with media emphasizing its potential to reshape Norway's political landscape."
         },
         {
           "name": "🇬🇧 Reform UK",
-          "note": "Reform UK’s rising support in UK polls, particularly in local elections, and its anti-immigration platform, are central to coverage."
+          "note": "Reform UK's rise is framed as a backlash against Labour and the Conservatives, with media emphasizing its anti-immigration and anti-EU policies."
+        },
+        {
+          "name": "🇮🇹 Fratelli d'Italia / Lega",
+          "note": "Lega's push for fiscal flexibility and opposition to EU constraints is highlighted, with media framing it as a challenge to Meloni's leadership."
         }
       ],
       "signals": [
         "parallel elections",
         "policy imitation",
-        "shared framing",
-        "contagion of rhetoric"
+        "anti-immigration rhetoric",
+        "EU skepticism",
+        "polling trends"
       ],
-      "article_count": 90,
+      "article_count": 120,
       "refs": [
         {
-          "title": "Ulf Kristersson om S-ledaren debattdiss: ”Är fegt”",
-          "source": "Aftonbladet",
-          "url": "https://www.aftonbladet.se/nyheter/a/GxPOgl/ulf-kristersson-om-s-ledaren-debattdiss-ar-fegt",
-          "date": "2026-04-27T19:16:09+00:00",
-          "category": "sweden"
+          "title": "Neuer Höchstwert: AfD-Abstand zur Union vergrössert sich",
+          "source": "Die Weltwoche",
+          "url": "https://weltwoche.ch/daily/neuer-hoechstwert-afd-abstand-zur-union-vergroessert-sich/",
+          "date": "2026-04-27T23:41:54+00:00",
+          "category": "germany"
         },
         {
-          "title": "Sondaggio Tg La7, voto oggi e elezioni: sorride solo un big",
-          "source": "Adnkronos",
-          "url": "https://www.adnkronos.com/politica/sondaggio-tg-la7-elezioni-voto-oggi_6Azskxx9Qvh9dDOgpBkg9u",
-          "date": "2026-04-27T18:48:00+00:00",
-          "category": "italy"
+          "title": "Interview de Jordan Bardella à la tv",
+          "source": "Linternaute.com",
+          "url": "https://www.linternaute.com/television/interview-interview-de-jordan-bardella-p7000351/",
+          "date": "2026-04-27T20:03:25+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Can France’s Rightists Embrace the Supply-Side?",
+          "source": "The New York Sun",
+          "url": "https://www.nysun.com/article/can-frances-rightists-embrace-the-supply-side",
+          "date": "2026-04-27T19:51:16+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Après un accident de la route et un refus de se soumettre aux dépistages, le député RN Antoine Villedieu suspendu de son groupe parlementaire",
+          "source": "RTL.fr",
+          "url": "https://www.rtl.fr/actu/politique/apres-un-accident-de-la-route-et-un-refus-de-se-soumettre-aux-depistages-le-depute-rn-antoine-villedieu-suspendu-de-son-groupe-parlementaire-7900628722",
+          "date": "2026-04-27T18:57:48+00:00",
+          "category": "france"
         },
         {
           "title": "Sondaggio Swg, Vannacci sale e la Lega sprofonda. In calo anche Fratelli d'Italia: cosa è cambiato nell'ultima settimana",
@@ -315,32 +307,18 @@
           "category": "italy"
         },
         {
-          "title": "French presidential hopefuls share details of love lives ahead of race",
-          "source": "France 24",
-          "url": "https://www.france24.com/en/france/20260427-french-presidential-hopefuls-share-details-of-love-lives-ahead-of-race",
-          "date": "2026-04-27T16:58:59+00:00",
-          "category": "france"
+          "title": "SPD-Vize Rehlinger warnt bei Lanz: AfD-Steuerpläne würden \"uns ins Verderben stürzen\"",
+          "source": "swyrl",
+          "url": "https://www.swyrl.tv/article/spd-vize-rehlinger-warnt-bei-lanz-afd-steuerplaene-wuerden-uns-ins-verderben-stuerzen",
+          "date": "2026-04-27T18:08:38+00:00",
+          "category": "germany"
         },
         {
-          "title": "Lesparre-Médoc : le budget 2026 adopté malgré l’opposition du Rassemblement national",
-          "source": "Sud Ouest",
-          "url": "https://www.sudouest.fr/gironde/lesparre-medoc/lesparre-medoc-le-budget-2026-adopte-malgre-l-opposition-du-rassemblement-national-28834863.php",
-          "date": "2026-04-27T16:32:00+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Enfield local election candidates 2026 listed for every ward",
-          "source": "My London",
-          "url": "https://www.mylondon.news/news/north-london-news/enfield-local-election-candidates-2026-33846642",
-          "date": "2026-04-27T16:04:15+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Comment Jordan Bardella devient (politiquement) adulte avant 2027",
-          "source": "Blick",
-          "url": "https://www.blick.ch/fr/fr/monde/france/helvetix-cafe-comment-jordan-bardella-devient-politiquement-adulte-avant-2027-id21903627.html",
-          "date": "2026-04-27T15:27:41+00:00",
-          "category": "france"
+          "title": "S har bestämt sig – det blir SD",
+          "source": "Marcus Oscarsson",
+          "url": "https://marcusoscarsson.se/s-har-bestamt-sig-det-blir-sd/",
+          "date": "2026-04-27T15:42:12+00:00",
+          "category": "sweden"
         },
         {
           "title": "Sonntagsfrage - Zuspruch für die AfD ist längst kein Ausreißer mehr - Nordsee-Zeitung",
@@ -350,41 +328,6 @@
           "category": "germany"
         },
         {
-          "title": "Local elections mapped: Where Labour is facing a ‘calamity’ and the key seats to watch",
-          "source": "The Independent",
-          "url": "https://www.independent.co.uk/news/uk/politics/local-elections-2026-uk-seat-map-labour-greens-reform-b2964472.html",
-          "date": "2026-04-27T14:40:00+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Reform UK's 'national fuel tax protest' in Whitehall stalls as barely anyone turns up",
-          "source": "Yahoo News UK",
-          "url": "https://uk.news.yahoo.com/reform-uks-national-fuel-tax-140546346.html",
-          "date": "2026-04-27T14:05:46+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Då röstade 46 procent på Socialdemokraterna i Klippan – här är partiernas bästa val genom tiderna",
-          "source": "Newsworthy",
-          "url": "https://www.newsworthy.se/artikel/415007",
-          "date": "2026-04-27T13:32:56+00:00",
-          "category": "sweden"
-        },
-        {
-          "title": "M störst senast – men här är partiet som fått nästan 40 procent i Höör",
-          "source": "Newsworthy",
-          "url": "https://www.newsworthy.se/artikel/414847",
-          "date": "2026-04-27T13:32:56+00:00",
-          "category": "sweden"
-        },
-        {
-          "title": "SD störst senast – men här är partiet som fått mer än 48 procent i Färgelanda",
-          "source": "Newsworthy",
-          "url": "https://www.newsworthy.se/artikel/414999",
-          "date": "2026-04-27T13:32:56+00:00",
-          "category": "sweden"
-        },
-        {
           "title": "För första gången: SD störst i Lilla Edet – här är partiernas bästa val genom tiderna",
           "source": "Newsworthy",
           "url": "https://www.newsworthy.se/artikel/414947",
@@ -392,67 +335,18 @@
           "category": "sweden"
         },
         {
-          "title": "Då röstade 44 procent på Socialdemokraterna i Munkedal – här är partiernas bästa val genom tiderna",
+          "title": "För första gången: SD störst i Sölvesborg – här är partiernas bästa val genom tiderna",
           "source": "Newsworthy",
-          "url": "https://www.newsworthy.se/artikel/414873",
+          "url": "https://www.newsworthy.se/artikel/414983/f%C3%B6r-f%C3%B6rsta-g%C3%A5ngen--sd-st%C3%B6rst-i-s%C3%B6lvesborg---h%C3%A4r-%C3%A4r-partiernas-b%C3%A4sta-val-genom-tiderna",
           "date": "2026-04-27T13:32:56+00:00",
           "category": "sweden"
         },
         {
-          "title": "Då fick Socialdemokraterna egen majoritet i Katrineholm – här är partiernas bästa val genom tiderna",
-          "source": "Newsworthy",
-          "url": "https://www.newsworthy.se/artikel/414875",
-          "date": "2026-04-27T13:32:56+00:00",
-          "category": "sweden"
-        },
-        {
-          "title": "Då röstade 44 procent på Socialdemokraterna i Heby – här är partiernas bästa val genom tiderna",
-          "source": "Newsworthy",
-          "url": "https://www.newsworthy.se/artikel/414772",
-          "date": "2026-04-27T13:32:56+00:00",
-          "category": "sweden"
-        },
-        {
-          "title": "Då fick Socialdemokraterna egen majoritet i Örnsköldsvik – här är partiernas bästa val genom tiderna",
-          "source": "Newsworthy",
-          "url": "https://www.newsworthy.se/artikel/414818",
-          "date": "2026-04-27T13:32:56+00:00",
-          "category": "sweden"
-        },
-        {
-          "title": "Då röstade 43 procent på Socialdemokraterna i Älmhult – här är partiernas bästa val genom tiderna",
-          "source": "Newsworthy",
-          "url": "https://www.newsworthy.se/artikel/415040",
-          "date": "2026-04-27T13:32:56+00:00",
-          "category": "sweden"
-        },
-        {
-          "title": "Då röstade 47 procent på Socialdemokraterna i Borås – här är partiernas bästa val genom tiderna",
-          "source": "Newsworthy",
-          "url": "https://www.newsworthy.se/artikel/414831",
-          "date": "2026-04-27T13:32:56+00:00",
-          "category": "sweden"
-        },
-        {
-          "title": "S störst senast – men här är partiet som fått mer än 49 procent i Dals-Ed",
-          "source": "Newsworthy",
-          "url": "https://www.newsworthy.se/artikel/414924",
-          "date": "2026-04-27T13:32:56+00:00",
-          "category": "sweden"
-        },
-        {
-          "title": "Då röstade 45 procent på Socialdemokraterna i Mark – här är partiernas bästa val genom tiderna",
-          "source": "Newsworthy",
-          "url": "https://www.newsworthy.se/artikel/414894",
-          "date": "2026-04-27T13:32:56+00:00",
-          "category": "sweden"
-        },
-        {
-          "title": "Sverigedemokraterna i Västra Götalandsregionen presenterar sitt lokala valmanifest",
-          "source": "Mynewsdesk",
-          "url": "https://www.mynewsdesk.com/se/vaestra-goetalandsregionen-sverigedemokraterna/pressreleases/sverigedemokraterna-i-vaestra-goetalandsregionen-presenterar-sitt-lokala-valmanifest-3445052?utm_source=rss&utm_medium=rss&utm_campaign=Alert&utm_content=pressrelease",
-          "date": "2026-04-27T12:00:00+00:00",
-          "category": "sweden"
+          "title": "Vox considera complicado repetir los buenos resultados en Andalucía: «La situación está pareja a la de 2022»",
+          "source": "ABC",
+          "url": "https://www.abc.es/espana/andalucia/vox-considera-complicado-repetir-buenos-resultados-andalucia-20260427142128-nts.html",
+          "date": "2026-04-27T12:22:00+00:00",
+          "category": "spain"
         },
         {
           "title": "Reform wave to Britain! See if your area is about to get an MP from Farage's party",
@@ -469,18 +363,11 @@
           "category": "germany"
         },
         {
-          "title": "France’s Bardella vows showdown over German influence in the EU",
-          "source": "politico.eu",
-          "url": "https://www.politico.eu/article/france-bardella-brussels-eu-showdown-priority-french-presidential-election/",
-          "date": "2026-04-27T10:44:15+00:00",
+          "title": "Extrême droite : au Parlement européen, Jordan Bardella affirme sa radicalité",
+          "source": "La Croix",
+          "url": "https://www.la-croix.com/politique/extreme-droite-au-parlement-europeen-jordan-bardella-affirme-sa-radicalite-20260427",
+          "date": "2026-04-27T09:55:57+00:00",
           "category": "france"
-        },
-        {
-          "title": "Umfragen nahe am Ergebnis - AfD gewann bei jüngsten Landtagswahlen deutlich hinzu - dpa-factchecking.com",
-          "source": "",
-          "url": "https://dpa-factchecking.com/germany/260427-99-249834/",
-          "date": "2026-04-27T10:33:07+00:00",
-          "category": "germany"
         },
         {
           "title": "JUST NU: S har bestämt sig – det blir SD",
@@ -502,47 +389,101 @@
           "url": "https://sondaggibidimedia.com/sondaggio-bidimedia-aprile-voto-fiducia-meloni-2704/",
           "date": "2026-04-27T06:13:49+00:00",
           "category": "italy"
+        },
+        {
+          "title": "Germany’s Far-Right Party Tops National Polls with 28% Support",
+          "source": "WION",
+          "url": "https://www.wionews.com/videos/germany-s-far-right-party-tops-national-polls-with-28-support-1777264191936",
+          "date": "2026-04-27T04:30:00+00:00",
+          "category": "general"
         }
       ],
       "first_seen": "2026-04-25T21:40:31+00:00",
-      "last_seen": "2026-04-27T20:01:08+00:00"
+      "last_seen": "2026-04-28T04:27:56+00:00"
     },
     {
       "id": "pp-vox-coalitions-spark-constitutional-debates",
       "title": "PP-Vox coalitions spark constitutional debates",
-      "blurb": "The formation of coalition governments between Spain’s Partido Popular (PP) and Vox in regions like Aragón, Extremadura, and Castilla y León has ignited transnational debates over constitutional legality, immigration policies, and the rise of far-right influence in mainstream politics. Coverage highlights tensions between national and regional governments, as well as legal challenges to these coalitions.",
+      "blurb": "The formation of coalitions between Spain's Partido Popular (PP) and Vox in regional governments has ignited debates over constitutional principles, particularly regarding immigration policies and national sovereignty. This theme resonates across multiple countries, with right-wing media framing these coalitions as either necessary for stability or a threat to democratic values.",
       "convergence": 4,
       "countries": [
         {
           "name": "🇪🇸 Vox",
-          "note": "Vox’s 'national priority' policy, which prioritizes Spaniards for social aid and housing, dominates coverage. Articles highlight its implementation in regional governments and legal challenges."
+          "note": "Vox's 'national priority' policy in regional coalitions with PP is framed as a constitutional challenge, with media emphasizing its implications for immigration and social welfare."
         },
         {
           "name": "🇪🇸 Partido Popular",
-          "note": "PP’s coalition deals with Vox in Aragón and Extremadura, and its shifting stance on immigration and social policies, are central to coverage. Articles emphasize internal divisions and electoral strategies."
+          "note": "PP's adoption of Vox's policies in coalitions is debated as a pragmatic move or a betrayal of constitutional values, with media highlighting internal divisions."
         },
         {
           "name": "🇫🇷 Rassemblement National",
-          "note": "French far-right coverage draws parallels between Vox’s policies and RN’s own anti-immigration platform, framing the coalitions as part of a broader European trend."
+          "note": "RN's media coverage ties Spain's coalition debates to broader European trends, emphasizing the rise of far-right policies in governance."
         },
         {
           "name": "🇮🇹 Fratelli d'Italia / Lega",
-          "note": "Italian right-wing media critiques Vox’s policies, particularly their impact on EU cohesion and constitutional legality, while drawing comparisons to Italy’s own far-right governance."
+          "note": "Italian media frame Spain's coalitions as a cautionary tale, with Lega emphasizing the need for fiscal flexibility and national sovereignty in Italy's own coalition government."
+        },
+        {
+          "name": "🇵🇱 Prawo i Sprawiedliwość",
+          "note": "Polish media highlight the constitutional implications of Spain's coalitions, framing them as part of a broader European shift toward right-wing governance."
         }
       ],
       "signals": [
         "policy imitation",
-        "shared framing",
-        "parallel elections",
-        "reaction to EU decision"
+        "constitutional debates",
+        "regional governance",
+        "immigration policies",
+        "coalition dynamics"
       ],
-      "article_count": 80,
+      "article_count": 90,
       "refs": [
         {
-          "title": "\"Por favor, abandona el grupo\": así echó Vox a Javier Ortega Smith de su Comité Ejecutivo Nacional en 13",
-          "source": "LaSexta",
-          "url": "https://www.lasexta.com/noticias/nacional/favor-abandona-grupo-asi-echo-vox-javier-ortega-smith-comite-ejecutivo-nacional-13-minutos_2026042769efb384c8da43388c419fe2.html",
-          "date": "2026-04-27T19:05:40+00:00",
+          "title": "PP y Vox inauguran nueva etapa en Aragón: Azcón defenderá su acuerdo pese a las amenazas del Gobierno",
+          "source": "El Debate",
+          "url": "https://www.eldebate.com/espana/20260428/pp-vox-inauguran-nueva-etapa-aragon-azcon-defendera-acuerdo-pese-amenazas-gobierno_410319.html",
+          "date": "2026-04-28T02:35:00+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Vox lleva al Congreso otra iniciativa sobre la prioridad nacional e impide al PP pasar página",
+          "source": "El Debate",
+          "url": "https://www.eldebate.com/espana/20260428/vox-lleva-congreso-otra-iniciativa-sobre-prioridad-nacional-e-impide-pp-pasar-pagina_411566.html",
+          "date": "2026-04-28T02:20:00+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "El PP testa la \"prioridad nacional\" de Vox: cuatro de cada diez votantes del PSOE la respaldan",
+          "source": "larazon.es",
+          "url": "https://www.larazon.es/espana/testa-prioridad-nacional-vox-cuatro-cada-diez-votantes-psoe-respaldan_2026042869f013e06a56d80bba74b0c2.html",
+          "date": "2026-04-28T01:56:48+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Mañueco aplaza su pacto con Vox en Castilla y León para sacar la \"prioridad nacional\" de la campaña andaluza",
+          "source": "El Español",
+          "url": "https://www.elespanol.com/espana/politica/20260428/manueco-aplaza-pacto-vox-castilla-leon-sacar-prioridad-nacional-campana-andaluza/1003744222553_0.html",
+          "date": "2026-04-28T00:45:09+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "VOX pedirá en los plenos segovianos prioridad a los españoles en ayudas y vivienda",
+          "source": "Acueducto2",
+          "url": "https://www.acueducto2.com/vox-lleva-a-los-plenos-de-segovia-una-mocion-para-dar-prioridad-a-los-espanoles-en-ayudas-servicios-y-vivienda/182697",
+          "date": "2026-04-27T22:55:00+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Videos – Page 85 of 148",
+          "source": "The White House (.gov)",
+          "url": "https://www.whitehouse.gov/videos/page/85/?cst&query-7-page=3%3Fquery-inherit-past_event_type%3Dlive%3Fquery-inherit-past_event_type%3Dvideo%3Fquery-inherit-playlist_term%3Dthe-founders-museum%3Fquery-inherit-playlist_term%3Dpromises-made-promises-kept-executive-actions-bill-signings%3Fquery-inherit-playlist_term%3Dthe-founders-museum-moments-that-made-us%3Fquery-inherit-playlist_term%3Dpress-briefings%3Fquery-inherit-playlist_term%3Dremarks-from-president-trump%3Fquery-inherit-past_event_type%3Dvideo%3Fquery-inherit-playlist_term%3Dvp-jd-vance%3Fquery-inherit-past_event_type%3Dlive?query-inherit-playlist_term=america-250",
+          "date": "2026-04-27T20:41:22+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "El PP marca agenda frente a la prioridad nacional de Vox y pone el foco en la semana \"negra\" de Sánchez",
+          "source": "ESdiario",
+          "url": "https://www.esdiario.com/nacional/260427/186208/pp-marca-agenda-frente-prioridad-nacional-pone-foco-semana-negra-sanchez.html",
+          "date": "2026-04-27T19:55:47+00:00",
           "category": "spain"
         },
         {
@@ -553,13 +494,6 @@
           "category": "spain"
         },
         {
-          "title": "Vox insiste en extender la prioridad nacional a toda España mientras el PP cambia de guion: ahora habla de",
-          "source": "LaSexta",
-          "url": "https://www.lasexta.com/noticias/nacional/vox-insiste-extender-prioridad-nacional-toda-espana-mientras-cambia-guion-ahora-habla-migracion-contratos-trabajo_2026042769efa612c8da43388c419422.html",
-          "date": "2026-04-27T18:33:14+00:00",
-          "category": "spain"
-        },
-        {
           "title": "Vox se crece y confía en «apretar un poco más» al PP en Castilla y León: «Vamos a poner orden»",
           "source": "Diario Palentino",
           "url": "https://www.diariopalentino.es/noticia/z206bd18d-3e0d-440a-bcf7fd1d78e15ada/202604/vox-se-crece-y-confia-en-apretar-un-poco-mas-al-pp-en-cyl",
@@ -567,59 +501,10 @@
           "category": "spain"
         },
         {
-          "title": "VÍDEO | Toribio (Vox) se queda solo en su moción contra la regularización de inmigrantes",
-          "source": "Avilared",
-          "url": "https://avilared.com/art/91393/vox-queda-solo-mocion-regularizacion-inmigrantes-avila",
-          "date": "2026-04-27T18:07:02+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "La \"prioridad nacional\" de Vox se estrella en Canarias",
-          "source": "La Provincia",
-          "url": "https://www.laprovincia.es/canarias/2026/04/27/prioridad-nacional-vox-estrella-canarias-129591323.html",
-          "date": "2026-04-27T17:42:40+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Talayuela rechaza la supresión de las clases de árabe tras el acuerdo entre PP y Vox en Extremadura",
-          "source": "RTVE.es",
-          "url": "https://www.rtve.es/noticias/20260427/talayuela-rechaza-supresion-clases-arabe-tras-acuerdo-entre-pp-vox-extremadura/17043673.shtml",
-          "date": "2026-04-27T17:17:52+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox advierte al PP de Castilla y León: puede «apretar un poco más» en la negociación para formar gobierno",
-          "source": "El Debate",
-          "url": "https://www.eldebate.com/espana/castilla-y-leon/20260427/vox-advierte-pp-castilla-leon-puede-apretar-poco-negociacion-formar-gobierno_411638.html",
-          "date": "2026-04-27T16:45:23+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Los afectados por el embalse de Biscarrués denuncian el pacto PP-VOX y advierten de que no cederán ante esta amenaza",
-          "source": "El Diario de Huesca",
-          "url": "https://www.eldiariodehuesca.com/actualidad/afectados-por-embalse-biscarrues-denuncian-pacto-pp-vox-advierten-no-cederan-esta-amenaza_43045_102.html",
-          "date": "2026-04-27T16:06:05+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox tensa la cuerda en Castilla y León: \"Vamos a poner orden\"",
-          "source": "Diario de Castilla y León",
-          "url": "https://www.diariodecastillayleon.es/castilla-y-leon/260427/106420/vox-tensa-cuerda-castilla-leon-poner-orden.html",
-          "date": "2026-04-27T15:32:27+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "El \"arraigo\" de la prioridad nacional del pacto PP-Vox ya se aplica en una decena de prestaciones sociales en Aragón",
-          "source": "El Periódico de Aragón",
-          "url": "https://www.elperiodicodearagon.com/aragon/2026/04/27/arraigo-prioridad-nacional-pacto-pp-129579511.html",
-          "date": "2026-04-27T15:30:38+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox mete prisa al PP para firmar en Castilla y León: \"Por nosotros en 24 horas\" - Noticias Salamanca",
-          "source": "Tribuna",
-          "url": "https://www.tribunasalamanca.com/noticias/442696/vox-mete-prisa-al-pp-para-firmar-en-castilla-y-leon-por-nosotros-en-24-horas",
-          "date": "2026-04-27T15:10:03+00:00",
+          "title": "La 'prioridad nacional' que exige Vox no preocupa a Velázquez en Toledo: \"La verdadera prioridad es desalojar a Sánchez\"",
+          "source": "Toledodiario",
+          "url": "https://toledodiario.es/la-prioridad-nacional-que-exige-vox-no-preocupa-a-velazquez-en-toledo-la-verdadera-prioridad-es-desalojar-a-sanchez/",
+          "date": "2026-04-27T15:49:37+00:00",
           "category": "spain"
         },
         {
@@ -630,31 +515,10 @@
           "category": "spain"
         },
         {
-          "title": "What is the Spanish right's 'national priority' policy for Spaniards?",
-          "source": "The Local Spain",
-          "url": "https://www.thelocal.es/20260427/what-is-the-spanish-rights-national-priority-policy-for-spaniards",
-          "date": "2026-04-27T14:16:30+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox reta al PP a firmar ya en Castilla y León: \"Por nosotros en 24 horas\"",
-          "source": "La Opinión de Zamora",
-          "url": "https://www.laopiniondezamora.es/castilla-leon/2026/04/27/vox-reta-pp-firmar-castilla-129581003.html",
-          "date": "2026-04-27T14:02:30+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox espera que \"pronto\" se aplique en Castilla y León la prioridad nacional: \"Vamos a poner orden\"",
-          "source": "La Opinión de Zamora",
-          "url": "https://www.laopiniondezamora.es/castilla-leon/2026/04/27/vox-espera-pronto-aplique-castilla-129581000.html",
-          "date": "2026-04-27T13:52:29+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox, sobre la prioridad nacional y la inmigración: «Vamos a poner orden» - EFE",
-          "source": "Agencia de noticias",
-          "url": "https://efe.com/espana/vox-prioridad-nacional-inmigracion-fuster/",
-          "date": "2026-04-27T13:30:26+00:00",
+          "title": "Vox avisa al PP: “apretará un poco más” en Castilla y León porque se sabe más fuerte que en Extremadura y Aragón",
+          "source": "ESdiario",
+          "url": "https://www.esdiario.com/castilla-y-leon/260427/186179/vox-avisa-pp-apretara-poco-castilla-leon-fuerte-extremadura-aragon.html",
+          "date": "2026-04-27T14:07:32+00:00",
           "category": "spain"
         },
         {
@@ -665,13 +529,6 @@
           "category": "spain"
         },
         {
-          "title": "Vox propone blindar la bandera de España en los uniformes de la Policía Local",
-          "source": "ABC",
-          "url": "https://www.abc.es/espana/castilla-la-mancha/vox-propone-blindar-bandera-espana-uniformes-policia-20260427151155-nt.html",
-          "date": "2026-04-27T13:12:26+00:00",
-          "category": "spain"
-        },
-        {
           "title": "Vox subraya que puede haber un acuerdo de gobierno en Castilla y León “en 24 horas” si el PP quiere",
           "source": "Servimedia",
           "url": "https://www.servimedia.es/noticias/vox-subraya-puede-haber-acuerdo-gobierno-castilla-leon-24-horas-si-pp-quiere/1412829150",
@@ -679,101 +536,31 @@
           "category": "spain"
         },
         {
-          "title": "Vox propone repatriar y retirar la nacionalidad a extranjeros miembros de bandas juveniles",
-          "source": "El Periódico de España",
-          "url": "https://amp.epe.es/es/madrid/20260427/vox-propone-repatriar-retirar-nacionalidad-129575608",
-          "date": "2026-04-27T12:03:04+00:00",
+          "title": "Vox garantiza un gobierno estable en Extremadura y advierte de que el pacto \"se va a cumplir\"",
+          "source": "El Periódico Extremadura",
+          "url": "https://www.elperiodicoextremadura.com/extremadura/2026/04/27/vox-garantiza-gobierno-estable-extremadura-129569874.html",
+          "date": "2026-04-27T10:40:40+00:00",
           "category": "spain"
         },
         {
-          "title": "Patto di stabilità, Borghi (Lega) sfida Bruxelles: \"Dall'Ue regole prive di senso economico. Se von der Leyen non ci ascolta, siamo pronti ad andare via\"",
-          "source": "Affaritaliani",
-          "url": "https://www.affaritaliani.it/economia/patto-di-stabilita-borghi-lega-sfida-bruxelles-dallue-regole-prive-di-senso-economico-se-von-der-leyen-non-ci-ascolta-siamo-pronti-ad-andare-via.html",
-          "date": "2026-04-27T11:19:31+00:00",
+          "title": "Barking and Dagenham local election candidates 2026 - full list",
+          "source": "My London",
+          "url": "https://www.mylondon.news/news/east-london-news/barking-dagenham-local-election-candidates-33842810",
+          "date": "2026-04-27T08:54:41+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "PD LEGA San Giovanni Rotondo, una poltrona per cinque: PD spaccato, centrodestra senza Lega",
+          "source": "Stato Quotidiano",
+          "url": "https://www.statoquotidiano.it/27/04/2026/san-giovanni-rotondo-una-poltrona-per-cinque-pd-spaccato-centrodestra-senza-lega/1308900/",
+          "date": "2026-04-27T08:18:33+00:00",
           "category": "italy"
-        },
-        {
-          "title": "Vox lleva al Parlament la prioridad nacional y el PP recalca el derecho de los residentes legales",
-          "source": "La Vanguardia",
-          "url": "https://www.lavanguardia.com/politica/20260427/11523544/vox-lleva-parlament-prioridad-nacional-pp-recalca-derecho-residentes-legales.html",
-          "date": "2026-04-27T11:12:03+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "El portavoz de Vox en Aragón justifica por qué cree que las ayudas van a migrantes: \"Los primeros nombres son Mohamed\"",
-          "source": "elDiario.es",
-          "url": "https://www.eldiario.es/aragon/politica/portavoz-vox-aragon-justifica-cree-ayudas-migrantes-primeros-nombres-son-mohamed_1_13175205.html",
-          "date": "2026-04-27T10:43:00+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox defiende los avales para jóvenes y familias o la construcción de VPO para acceder a la vivienda",
-          "source": "Andalucía Información",
-          "url": "https://www.andaluciainformacion.es/articulo/sevilla/vox-defiende-avales-jovenes-familias-construccion-vpo-facilitar-acceso-vivienda/202604271234493250425.html",
-          "date": "2026-04-27T10:34:49+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Page, contra los gobiernos PP-Vox: «No entiendo que empresarios y sindicatos no levantéis la voz»",
-          "source": "ABC",
-          "url": "https://www.abc.es/espana/castilla-la-mancha/page-gobiernos-ppvox-entiendo-empresarios-sindicatos-levanteis-20260427122258-nt.html",
-          "date": "2026-04-27T10:23:04+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "PP y Vox aprueban mañana en el Consell la exigencia de cinco años de residencia legal en Mallorca para optar a las ayudas por la guerra de Irán",
-          "source": "Diario de Mallorca",
-          "url": "https://www.diariodemallorca.es/mallorca/2026/04/27/pp-vox-aprueban-manana-consell-129565517.html",
-          "date": "2026-04-27T10:11:41+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "El pacto entre PP y Vox en Aragón incluye recuperar el embalse de Biscarrués, que la Justicia anuló por daño ambiental",
-          "source": "elDiario.es",
-          "url": "https://www.eldiario.es/aragon/politica/pacto-pp-vox-aragon-incluye-recuperar-embalse-biscarrues-justicia-anulo-dano-ambiental_1_13174835.html",
-          "date": "2026-04-27T09:49:59+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Trasvase: Bellido pide a PP y Vox que se unan al Gobierno regional y no a quienes «nos esquilman»",
-          "source": "ABC",
-          "url": "https://www.abc.es/espana/castilla-la-mancha/trasvase-bellido-pide-pp-vox-unan-gobierno-20260427103303-nt.html",
-          "date": "2026-04-27T08:33:17+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Pablo Bustinduy acusa al PP de ceder ante Vox en sus pactos autonómicos",
-          "source": "La Gaceta de Salamanca",
-          "url": "https://www.lagacetadesalamanca.es/nacional/pablo-bustinduy-acusa-pp-ceder-ante-vox-20260427101632-nt.html",
-          "date": "2026-04-27T08:16:35+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "El PSOE eleva el tono, VOX avisa a Moreno y los médicos exigen la dimisión de Mónica García",
-          "source": "Libertad Digital",
-          "url": "https://www.libertaddigital.com/espana/2026-04-27/el-psoe-eleva-el-tono-vox-avisa-a-moreno-y-los-medicos-exigen-la-dimision-de-monica-garcia-1b-7394755/",
-          "date": "2026-04-27T07:46:06+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "El PP sube un poco y sigue en la mayoría absoluta, mientras Vox se desploma y el PSOE sigue en la UCI",
-          "source": "Libertad Digital",
-          "url": "https://www.libertaddigital.com/espana/politica/2026-04-27/el-pp-sube-un-poco-y-sigue-en-la-mayoria-absoluta-mientras-vox-se-desploma-y-el-psoe-sigue-en-la-uci-1b-7394717/",
-          "date": "2026-04-27T06:22:52+00:00",
-          "category": "spain"
         },
         {
           "title": "Malestar interno en el PP por el “gol” de Vox con la prioridad nacional",
           "source": "Elplural.com",
           "url": "https://www.elplural.com/politica/espana/malestar-interno-pp-gol-vox-prioridad-nacional_388230102",
           "date": "2026-04-27T06:03:23+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "La \"prioridad nacional\" de Vox: qué propone y hasta qué punto es legal",
-          "source": "Euronews.com",
-          "url": "https://es.euronews.com/my-europe/2026/04/27/espanoles-primero-en-que-consiste-la-prioridad-nacional-de-vox-y-hasta-que-punto-es-legal",
-          "date": "2026-04-27T05:54:20+00:00",
           "category": "spain"
         },
         {
@@ -784,27 +571,6 @@
           "category": "spain"
         },
         {
-          "title": "'El medio ambiente y la lucha contra el cambio climático son otros perdedores de los pactos entre PP y Vox'",
-          "source": "El Independiente de Granada",
-          "url": "http://elindependientedegranada.es/blog/medio-ambiente-lucha-cambio-climatico-son-otros-perdedores-pactos-pp-vox",
-          "date": "2026-04-27T04:33:52+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Los empresarios rechazan la política migratoria de PP-Vox // El pacto extremeño amenaza inversiones en renovables",
-          "source": "La Vanguardia",
-          "url": "https://www.lavanguardia.com/economia/20260427/11523216/empresarios-rechazan-politica-migratoria-pp-vox-pacto-extremeno-amenaza-inversiones-renovables.html",
-          "date": "2026-04-27T04:00:00+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Sánchez usa de ariete la prioridad nacional de PP y Vox para reactivar a su electorado",
-          "source": "Diario de León",
-          "url": "https://www.diariodeleon.es/nacional/260427/2083024/sanchez-ariete-prioridad-nacional-pp-vox-reactivar-electorado.html",
-          "date": "2026-04-27T04:00:00+00:00",
-          "category": "spain"
-        },
-        {
           "title": "La 'prioridad nacional' antes de los pactos de PP y Vox en Extremadura y Aragón: la lista de medidas donde ya se aplica",
           "source": "El Español",
           "url": "https://www.elespanol.com/aragon/20260427/prioridad-nacional-pactos-pp-vox-extremadura-aragon-lista-medidas-aplica/1003744222683_0.html",
@@ -812,346 +578,64 @@
           "category": "spain"
         },
         {
-          "title": "Así es como Feijóo reanima a Abascal y Sánchez",
-          "source": "elconfidencial.com",
-          "url": "https://www.elconfidencial.com/espana/no-es-no/2026-04-27/feijoo-vox-prioridad-nacional-ultraderecha-1hms_4345244/",
-          "date": "2026-04-27T03:00:00+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "«Prioridad nacional», una grieta que amenaza la estabilidad PP-Vox",
-          "source": "ABC",
-          "url": "https://www.abc.es/espana/paloma-esteban-metido-gol-vox-prioridad-nacional-20260427015808-nt.html",
-          "date": "2026-04-26T23:58:08+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "El PSOE hace equilibrios con la \"prioridad nacional\" de PP y Vox en la campaña andaluza",
-          "source": "El Independiente",
-          "url": "https://www.elindependiente.com/espana/2026/04/27/psoe-equilibrios-prioridad-nacional-campana-andaluza-sanchez-arma-montero-evita-eje/",
-          "date": "2026-04-26T22:01:24+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Feijóo sucumbe al discurso ultra de Vox",
-          "source": "elDiario.es",
-          "url": "https://www.eldiario.es/politica/feijoo-sucumbe-discurso-ultra-vox_1_13171084.html",
-          "date": "2026-04-26T20:59:40+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "La fórmula de pactos con Vox alejan a Feijóo de su anhelo de gobernar en solitario",
-          "source": "El Independiente",
-          "url": "https://www.elindependiente.com/espana/2026/04/26/la-formula-de-pactos-con-vox-alejan-a-feijoo-de-su-anhelo-de-gobernar-en-solitario/",
-          "date": "2026-04-26T20:20:47+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Sánchez promete combatir los pactos de “prioridad nacional” entre PP y Vox",
-          "source": "MUNDIARIO",
-          "url": "https://www.mundiario.com/articulo/politica/sanchez-confronta-pactos-senoros-pp-vox-promete-combatir-prioridad-nacional/20260426181800383893.amp.html",
-          "date": "2026-04-26T17:20:27+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "El PP pide a Vox y PSOE que no vengan a Málaga a \"insultar y enfrentar\"",
-          "source": "Málaga Hoy",
-          "url": "https://www.malagahoy.es/provincia/pp-pide-vox-psoe-no-malaga-insultar-enfrentar_0_2006599994.amp.html",
-          "date": "2026-04-26T16:30:47+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox pide cesar a Óscar Puente por tragedias ferroviarias de Adamuz y Gelida en el Congreso",
-          "source": "Revista Capital",
-          "url": "https://capital.es/actualidad/economia-vox-vuelve-a-pedir-esta-semana-en-el-congreso-el-cese-de-oscar-puente-por-las-tragedias-de-adamuz-y-gelida/180104/",
-          "date": "2026-04-26T15:31:42+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox denuncia la \"falta de medios\" en la atención educativa a menores con NEAE y critica la gestión del PP",
-          "source": "Andalucía Información",
-          "url": "https://www.andaluciainformacion.es/articulo/malaga-sociedad/vox-denuncia-falta-medios-atencion-educativa-menores-neae-critica-gestion-pp/202604261713133250068.html",
-          "date": "2026-04-26T15:13:13+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Patricia Navarro pide a Vox y PSOE que no vengan a Málaga a \"insultar y enfrentar\"",
-          "source": "La Opinión de Málaga",
-          "url": "https://www.laopiniondemalaga.es/malaga/2026/04/26/patricia-navarro-pide-vox-psoe-129546415.html",
-          "date": "2026-04-26T14:53:07+00:00",
+          "title": "PP y Vox alejan el pacto en Castilla y León hasta después de las andaluzas",
+          "source": "Artículo 14",
+          "url": "https://www.articulo14.es/politica/pp-y-vox-alejan-el-pacto-en-castilla-y-leon-hasta-despues-de-las-andaluzas-20260427.html",
+          "date": "2026-04-27T01:30:00+00:00",
           "category": "spain"
         }
       ],
       "first_seen": "2026-04-25T21:40:31+00:00",
-      "last_seen": "2026-04-27T20:01:08+00:00"
+      "last_seen": "2026-04-28T04:27:56+00:00"
     },
     {
       "id": "orbans-resignation-reshapes-hungarian-politics",
       "title": "Orbán’s resignation reshapes Hungarian politics",
-      "blurb": "Viktor Orbán’s decision to step down as Hungary’s prime minister and his party’s historic election defeat have triggered a seismic shift in Hungarian politics. Coverage focuses on the rise of Péter Magyar’s Tisza Party, the reorganization of Fidesz, and the implications for Hungary’s relationship with the EU and its frozen funds.",
+      "blurb": "Viktor Orbán's resignation as Hungary's prime minister and his decision not to take a parliamentary seat have triggered a political earthquake, with far-right and right-wing media across Europe analyzing the implications for Hungary's future and the broader populist movement. Coverage emphasizes the rise of Péter Magyar's Tisza Party and the potential for democratic renewal.",
       "convergence": 4,
       "countries": [
         {
           "name": "🇭🇺 Fidesz / Tisza",
-          "note": "Fidesz’s internal reorganization, Orbán’s resignation, and the rise of the Tisza Party dominate coverage. Articles highlight the party’s shift to opposition and efforts to regain public trust."
+          "note": "Media focus on Orbán's resignation and the formation of a new parliamentary faction, with narratives emphasizing the need for renewal and opposition to Magyar's Tisza Party."
         },
         {
           "name": "🇵🇱 Prawo i Sprawiedliwość",
-          "note": "Polish media frames Orbán’s resignation as a cautionary tale for PiS, emphasizing the risks of authoritarian overreach and the importance of EU relations."
+          "note": "Polish media analyze Orbán's resignation as a cautionary tale for populist leaders, with coverage emphasizing the potential for democratic backsliding or renewal."
         },
         {
           "name": "🇩🇪 Alternative für Deutschland",
-          "note": "AfD coverage draws parallels between Orbán’s downfall and its own political struggles, while critiquing the EU’s role in Hungary’s political transition."
+          "note": "AfD's media frame Orbán's resignation as a sign of populist decline, while also highlighting the challenges facing Hungary's new government."
         },
         {
           "name": "🇪🇺 EU Relations",
-          "note": "EU media focuses on Hungary’s frozen funds, the Tisza Party’s negotiations with Brussels, and the potential for Hungary to realign with EU priorities."
+          "note": "EU-focused media emphasize the potential for Hungary to unlock frozen EU funds under Magyar's leadership, framing it as a test of Hungary's commitment to democratic values."
+        },
+        {
+          "name": "🇫🇷 Rassemblement National",
+          "note": "RN's media tie Orbán's resignation to broader European trends, emphasizing the need for nationalist parties to adapt to changing political landscapes."
         }
       ],
       "signals": [
-        "parallel developments",
-        "policy contagion",
-        "reaction to EU decision",
-        "shared framing"
+        "leadership transition",
+        "democratic renewal",
+        "EU relations",
+        "populist decline",
+        "political realignment"
       ],
-      "article_count": 70,
+      "article_count": 80,
       "refs": [
         {
-          "title": "Videó: Orbán Viktor az országos választmányi ülésen jelöli ki a Fidesz megújulásának irányát",
-          "source": "HírTv",
-          "url": "https://hirtv.origo.hu/video/orban-viktor-az-orszagos-valasztmanyi-ulesen-jeloli-ki-a-fidesz-megujulasanak-iranyat",
-          "date": "2026-04-27T18:57:26+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Lomnici Zoltán szerint Magyar Péter felszólításai sértik a jogállami normákat",
-          "source": "HírTv",
-          "url": "https://hirtv.origo.hu/ahirtvhirei/2026/04/lomnici-zoltan-szerint-magyar-peter-felszolitasai-sertik-a-jogallami-normakat",
-          "date": "2026-04-27T18:55:53+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Gulyás Gergely lett a Fidesz frakcióvezetője, jelentős átalakulás a képviselőcsoportban",
-          "source": "HírTv",
-          "url": "https://hirtv.origo.hu/ahirtvhirei/2026/04/gulyas-gergely-lett-a-fidesz-frakciovezetoje-jelentos-atalakulas-a-kepviselocsoportban",
-          "date": "2026-04-27T18:52:41+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Keresi a bűnbakokat a Fidesz és holdudvara: Sátán, elhízás, nemzeti hübrisz és telónyomkodó fiatalok",
-          "source": "444",
-          "url": "https://444.hu/2026/04/27/keresi-a-bunbakokat-a-fidesz-es-holdudvara-satan-elhizas-nemzeti-hubrisz-es-telonyomkodo-fiatalok",
-          "date": "2026-04-27T18:30:24+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Orban's allies move assets, explore US options after Hungary election defeat",
-          "source": "The Jerusalem Post",
-          "url": "https://www.jpost.com/international/article-894327",
-          "date": "2026-04-27T18:25:15+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Propagandista, volt híradós és LMBTQ-ellenes keresztény intézetvezető is van az ellenzéki Fidesz-frakció új arcai közt",
-          "source": "Telex",
-          "url": "https://telex.hu/belfold/2026/04/27/fidesz-frakcio-ujoncok-megujulas-megafon-szent-istvan-intezet",
-          "date": "2026-04-27T18:23:18+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Új szerepben a Fidesz–KDNP: alkalmazkodás és megújulás az ellenzéki térben",
-          "source": "Magyar Nemzet",
-          "url": "https://magyarnemzet.hu/belfold/2026/04/fidesz-kdnp-parlament-tisza-megujulas-pindroch-tamas",
-          "date": "2026-04-27T17:58:47+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Magyar Péter szerint több stróman számláját zárolta a NAV, azonnali lépéseket követel a vagyonkimentés ellen",
-          "source": "444",
-          "url": "https://444.hu/2026/04/27/magyar-peter-szerint-tobb-stroman-szamlajat-zarolta-a-nav-azonnali-lepeseket-kovetel-a-vagyonkimentes-ellen",
-          "date": "2026-04-27T17:56:30+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Magyar Péter újabb felszólítást intézett az Orbán-kormányhoz",
-          "source": "Infostart",
-          "url": "https://infostart.hu/belfold/2026/04/27/magyar-peter-ujabb-felszolitast-intezett-az-orban-kormanyhoz",
-          "date": "2026-04-27T17:23:00+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Magyar Péter a NAV vezetőjének és a leköszönő kormánynak is üzent",
-          "source": "Magyar Hang",
-          "url": "https://hang.hu/belfold/magyar-peter-nav-vagyonkimentes-188004",
-          "date": "2026-04-27T17:11:00+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Telex: Felszámolják a Fidesz-közeli szervezetet, amely 2,5 milliárd közpénzt kapott a budapesti keresztény-konzervatív közösség megszervezéséhez",
-          "source": "| hvg.hu",
-          "url": "https://hvg.hu/itthon/20260427_bp-muhely-felszamolas-batthyany-lajos-alapitvany-kozpenz-kereszteny-konzervativ-budapest",
-          "date": "2026-04-27T16:51:47+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Magyar Péter felszólította a leköszönő kormányt, hogy szerdán hirdessen ki egy, a NAV-os zárolásokat érintő kormányrendeletet",
-          "source": "Telex",
-          "url": "https://telex.hu/belfold/2026/04/27/magyar-peter-nav-felszolitas-kormany",
-          "date": "2026-04-27T16:47:43+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Olimpiai bajnok, megafonos propagandista és bukott miniszterek – ők alkotják mostantól a Fidesz parlamenti frakcióját",
-          "source": "24.hu",
-          "url": "https://24.hu/belfold/2026/04/27/fidesz-frakcio-tagjai-2026-szijjarto-lazar-szecsi-szentkiralyi/",
-          "date": "2026-04-27T16:47:00+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Két fideszes jelölt volt kritikus a pártjával szemben a vereség után, egyikük sem került be a frakcióba",
-          "source": "444",
-          "url": "https://444.hu/2026/04/27/ket-fideszes-jelolt-volt-kritikus-a-partjaval-szemben-a-vereseg-utan-egyikuk-sem-kerult-be-a-frakcioba",
-          "date": "2026-04-27T16:34:06+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Magyar Péter szerint újabb milliárdos utalásokat blokkoltak, kőkemény fellépést követel a NAV-tól és a bankoktól",
-          "source": "Portfolio.hu",
-          "url": "https://www.portfolio.hu/gazdasag/20260427/magyar-peter-szerint-ujabb-milliardos-utalasokat-blokkoltak-kokemeny-fellepest-kovetel-a-nav-tol-es-a-bankoktol-833220",
-          "date": "2026-04-27T16:25:00+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Orbán exits Parliament, senior figures step aside, official Fidesz faction announced",
-          "source": "Daily News Hungary",
-          "url": "https://dailynewshungary.com/fidesz-turmoil-orban-exits-parliament/",
-          "date": "2026-04-27T15:50:56+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Political Capital: Orbánon kívül senkinek nincs esélye a Fidesz megmentésére, de neki sincs sok",
-          "source": "| hvg.hu",
-          "url": "https://hvg.hu/itthon/20260427_political-capital-orban-viktor-fidesz",
-          "date": "2026-04-27T15:50:00+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Új korszak kezdődik, összeállt a Fidesz és a KDNP frakciója - Mutatjuk a nagy távozók listáját",
-          "source": "Blikk",
-          "url": "https://www.blikk.hu/politika/magyar-politika/fidesz-kdnp-parlament-lista/l9vbt3e",
-          "date": "2026-04-27T15:39:00+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Hivatalos: Szijjártó Péter és Kocsis Máté is beül a parlamentbe, Kövér László és Rogán Antal búcsúzik",
-          "source": "Telex",
-          "url": "https://telex.hu/belfold/2026/04/27/parlament-fidesz-frakcio-megalakulasa-orban-viktor-gulyas-gergely",
-          "date": "2026-04-27T15:33:45+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Orbán Balázs nemzetközi kapcsolatokkal segítené a Fidesz megújulását, ezért lesz EP-képviselő",
-          "source": "444",
-          "url": "https://444.hu/2026/04/27/orban-balazs-nemzetkozi-kapcsolatokkal-segitene-a-fidesz-megujulasat-ezert-lesz-ep-kepviselo",
-          "date": "2026-04-27T15:22:59+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Megalakult a Fidesz-frakció - Politika - Hírek",
-          "source": "KaposPont",
-          "url": "https://kapos.hu/hirek/politika/2026-04-27/megalakult_a_fidesz-frakcio.html",
-          "date": "2026-04-27T15:13:54+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Lázár és Szijjártó marad, Rogán és Kövér távozik, egy megafonos pedig érkezik a Fidesz-frakcióba",
-          "source": "444",
-          "url": "https://444.hu/2026/04/27/lazar-es-szijjarto-marad-rogan-es-kover-tavozik-egy-megafonos-pedig-erkezik-a-fidesz-frakcioba",
-          "date": "2026-04-27T15:08:08+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Hivatalossá vált, kik lesznek a Fidesz és a KDNP parlamenti képviselői",
-          "source": "pecsma.hu",
-          "url": "https://www.pecsma.hu/hivatalossa-valt-kik-lesznek-a-fidesz-es-a-kdnp-parlamenti-kepviseloi/",
-          "date": "2026-04-27T15:07:53+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Bejelentette a Fidesz parlamenti frakció megalakulását Gulyás Gergely, Orbán Viktorhoz hasonlóan nem lesz képviselő Kövér László és Rogán Antal sem",
-          "source": "hirado.hu",
-          "url": "https://hirado.hu/belfold/cikk/2026/04/27/bejelentette-a-fidesz-parlamenti-frakcio-megalakulasat-gulyas-gergely-orban-viktorhoz-hasonloan-nem-lesz-kepviselo-kover-laszlo-es-rogan-antal",
-          "date": "2026-04-27T14:57:49+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Nagyon kevés idő maradt megmenteni az uniós milliárdokat, szerdán tárgyalóasztalhoz ül Magyar Péter és Ursula von der Leyen",
-          "source": "Forbes.hu",
-          "url": "https://forbes.hu/penz/unios-forras-hatarido-targyalas-magyar-peter-von-der-leyen/",
-          "date": "2026-04-27T14:56:25+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Szijjártó Péter és Vitályos Eszter is helyet kap a Fidesz padsoraiban",
-          "source": "Privátbankár.hu",
-          "url": "https://privatbankar.hu/cikkek/makro/szijjarto-peter-es-vitalyos-eszter-is-helyet-kap-a-fidesz-padsoraiban.html",
-          "date": "2026-04-27T14:36:00+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Itthon: Több nő lesz a parlamentben, mint ahány fideszes",
-          "source": "| hvg.hu",
-          "url": "https://hvg.hu/itthon/20260427_parlament-nok-fidesz",
-          "date": "2026-04-27T14:33:24+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "A Fidesz-frakció tagja név szerint",
-          "source": "Tudás.hu",
-          "url": "https://tudas.hu/a-fidesz-frakcio-tagja-nev-szerint/",
-          "date": "2026-04-27T14:31:36+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Ők azok a fideszesek, akik befutó helyen voltak a listán, de nem ülnek be a parlamentbe",
-          "source": "Telex",
-          "url": "https://telex.hu/belfold/2026/04/27/parlament-listas-kepviselok-mandatum-lemond-rogan-antal-kover-laszlo-valasztas",
-          "date": "2026-04-27T14:27:28+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Szijjártó Péter ott lesz az Országgyűlésben – megalakult a Fidesz frakciója",
-          "source": "mfor.hu",
-          "url": "https://mfor.hu/cikkek/kozelet/szijjarto-peter-ott-lesz-az-orszaggyulesben--megalakult-a-fidesz-frakcioja.html",
-          "date": "2026-04-27T14:07:00+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Régi tapasztalatokból és új arcokból építkezhet a Fidesz frakciója",
-          "source": "HírTv",
-          "url": "https://hirtv.origo.hu/ahirtvhirei/2026/04/fidesz-frakcio-megujulas",
-          "date": "2026-04-27T13:48:51+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Orbán Viktor lesz a Fidesz pártelnöke, önálló frakciója lesz a KDNP-nek",
-          "source": "HírTv",
-          "url": "https://hirtv.origo.hu/ahirtvhirei/2026/04/orban-viktor-fidesz-kdnp",
-          "date": "2026-04-27T13:48:14+00:00",
-          "category": "hungary"
+          "title": "The End of Orbán? Far-Right Populists Are Already Looking to the Future",
+          "source": "Australian Institute of International Affairs",
+          "url": "https://www.internationalaffairs.org.au/australianoutlook/the-end-of-orban-far-right-populists-are-already-looking-to-the-future/",
+          "date": "2026-04-28T02:40:30+00:00",
+          "category": "general"
         },
         {
           "title": "Lázár János beül az Országgyűlésbe, Kövér és Rogán búcsúzik",
           "source": "444",
           "url": "https://444.hu/2026/04/27/lazar-janos-beul-az-orszaggyulesbe",
           "date": "2026-04-27T13:43:08+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Választás 2026: kiderült, hogy melyik fideszesek ülnek be a Parlamentbe",
-          "source": "Portfolio.hu",
-          "url": "https://www.portfolio.hu/gazdasag/20260427/valasztas-2026-kiderult-hogy-melyik-fideszesek-ulnek-be-a-parlamentbe-833182",
-          "date": "2026-04-27T13:42:00+00:00",
           "category": "hungary"
         },
         {
@@ -1162,20 +646,6 @@
           "category": "hungary"
         },
         {
-          "title": "Lázár nem hívja ki Orbánt, mert szerinte Orbán marad a Fidesz elnöke",
-          "source": "Telex",
-          "url": "https://telex.hu/belfold/2026/04/27/lazar-elnokseg-fidesz-orban",
-          "date": "2026-04-27T13:37:24+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Gulyás Gergely bejelentette, hogy 42 listás képviselőből 25-en döntöttek úgy, hogy nem veszik fel a mandátumukat",
-          "source": "Telex",
-          "url": "https://telex.hu/belfold/2026/04/27/gulyas-gergely-bejelentes-2",
-          "date": "2026-04-27T13:32:52+00:00",
-          "category": "hungary"
-        },
-        {
           "title": "Hivatalos: ez lesz a Fidesz és a KDNP parlamenti frakciója",
           "source": "444",
           "url": "https://444.hu/2026/04/27/hivatalos-ez-lesz-a-fidesz-es-a-kdnp-parlamenti-frakcioja",
@@ -1183,25 +653,11 @@
           "category": "hungary"
         },
         {
-          "title": "Itthon: Itt a névsor, ők lesznek a Fidesz képviselői az új Országgyűlésben",
-          "source": "| hvg.hu",
-          "url": "https://hvg.hu/itthon/20260427_fidesz-frakcio-orszaggyules-gulyas-gergely-frakciovezeto",
-          "date": "2026-04-27T13:27:39+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Lázár János tagja lesz a Fidesz-frakciónak",
-          "source": "Euronews.com",
-          "url": "https://hu.euronews.com/my-europe/2026/04/27/lazar-janos-tagja-lesz-a-fidesz-frakcionak",
-          "date": "2026-04-27T13:17:48+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Nagy nevek maradhatnak ki a Fidesz új frakciójából, Lázár Jánosról is döntés született",
-          "source": "origo.hu",
-          "url": "https://www.origo.hu/belpol/2026/04/fidesz-frakcio-megujulas",
-          "date": "2026-04-27T12:59:18+00:00",
-          "category": "hungary"
+          "title": "Schwandorfer AfD-Kreistagsfraktion hat sich neu aufgestellt – Mixl ist Vorsitzender",
+          "source": "Mittelbayerische Zeitung",
+          "url": "https://www.mittelbayerische.de/lokales/landkreis-schwandorf/schwandorfer-afd-kreistagsfraktion-hat-sich-neu-aufgestellt-mixl-ist-vorsitzender-21019963",
+          "date": "2026-04-27T13:10:06+00:00",
+          "category": "germany"
         },
         {
           "title": "\"Ilyen döntés még nincs\" – mondta Orbán a kérdésre, újraindul-e a Fidesz-elnöki posztért",
@@ -1211,46 +667,11 @@
           "category": "hungary"
         },
         {
-          "title": "Ismert nevek esnek is a Fidesz frakciójából",
-          "source": "Portfolio.hu",
-          "url": "https://www.portfolio.hu/gazdasag/20260427/ismert-nevek-esnek-is-a-fidesz-frakciojabol-833162",
-          "date": "2026-04-27T12:50:00+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Itthon: Orbán az RTL-nek magyarázkodott: Még nincs döntés a pártelnökségről a Fideszben",
-          "source": "| hvg.hu",
-          "url": "https://hvg.hu/itthon/20260427_fidesz-partelnok-mandatum-parlament-orban-viktor",
-          "date": "2026-04-27T12:44:22+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Kövér László és Hollik István sem lesz tagja a Fidesz parlamenti frakciójának",
-          "source": "24.hu",
-          "url": "https://24.hu/belfold/2026/04/27/hollik-istvan-parlament-fidesz-frakcio/",
-          "date": "2026-04-27T12:33:00+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Szentkirályi Alexandra elmondta, hogy újulhat meg a Fidesz",
-          "source": "origo.hu",
-          "url": "https://www.origo.hu/belpol/2026/04/szentkiralyi-alexandra-fidesz-frakcioules",
-          "date": "2026-04-27T12:28:21+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Ülésező Fidesz-frakció: eldőlt Lázár János sorsa, újabb nagy távozó tett bejelentést",
-          "source": "Mandiner",
-          "url": "https://mandiner.hu/belfold/2026/04/ulesezo-fidesz-frakcio-eldolt-lazar-janos-sorsa-ujabb-nagy-tavozo-tett-bejelentest",
-          "date": "2026-04-27T12:12:53+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Frp vil fjerne særkrav og innsigelser for å øke boligbyggingen",
-          "source": "EiendomsWatch",
-          "url": "https://eiendomswatch.no/nyheter/regulering/article19234052.ece",
-          "date": "2026-04-27T11:58:08+00:00",
-          "category": "norway"
+          "title": "Independent and three parties challenge councillor Ian Ward for Sandown South",
+          "source": "Isle of Wight County Press",
+          "url": "https://www.countypress.co.uk/news/26056295.isle-wight-council-sandown-south-candidate-pitches/",
+          "date": "2026-04-27T12:05:24+00:00",
+          "category": "uk"
         },
         {
           "title": "Megérkeztek a Fidesz politikusai, hamarosan kiderül, kik lesznek a frakció tagjai",
@@ -1260,13 +681,6 @@
           "category": "hungary"
         },
         {
-          "title": "El portavoz de Vox ratifica la expulsión de Ortega Smith: \"No habría tenido ni la más mínima duda\"",
-          "source": "elDiario.es",
-          "url": "https://www.eldiario.es/politica/ultima-hora-actualidad-politica-directo_6_13174526_1122187.amp.html",
-          "date": "2026-04-27T11:31:55+00:00",
-          "category": "spain"
-        },
-        {
           "title": "Választás 2026: Magyar Péter üzent Mészáros Lőrincnek",
           "source": "Portfolio.hu",
           "url": "https://www.portfolio.hu/gazdasag/20260427/valasztas-2026-magyar-peter-uzent-meszaros-lorincnek-832990",
@@ -1274,31 +688,10 @@
           "category": "hungary"
         },
         {
-          "title": "Megérkeztek a Fidesz politikusai, hamarosan döntenek a frakció tagjairól - fotók",
-          "source": "Blikk",
-          "url": "https://www.blikk.hu/politika/magyar-politika/fidesz-frakcio-alakulasa/5m5zneg",
-          "date": "2026-04-27T11:03:14+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Videó: Kedden tartják meg a Fidesz választmányi ülését",
-          "source": "HírTv",
-          "url": "https://hirtv.origo.hu/video/kedden-tartjak-meg-a-fidesz-valasztmanyi-uleset",
-          "date": "2026-04-27T10:29:11+00:00",
-          "category": "hungary"
-        },
-        {
           "title": "Újraszerveződik a Fidesz-KDNP szövetsége",
           "source": "HírTv",
           "url": "https://hirtv.origo.hu/ahirtvhirei/2026/04/ujraszervezodik-a-fidesz-kdnp-szovetsege",
           "date": "2026-04-27T10:27:41+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Ez lehet a Tisza-kormány egyik legnagyobb gazdasági kihívása",
-          "source": "Privátbankár.hu",
-          "url": "https://privatbankar.hu/cikkek/makro/ez-lehet-a-tisza-kormany-egyik-legnagyobb-gazdasagi-kihivasa.html",
-          "date": "2026-04-27T10:18:00+00:00",
           "category": "hungary"
         },
         {
@@ -1316,31 +709,10 @@
           "category": "hungary"
         },
         {
-          "title": "After Orban, Hungary's Romani community hopes for change",
-          "source": "DW.com",
-          "url": "https://amp.dw.com/en/after-orban-hungarys-romani-community-hopes-for-change/video-76949041",
-          "date": "2026-04-27T09:13:44+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Donald Trump Ties Gala Shooting to Urgency for White House Ballroom Plan",
-          "source": "Yahoo",
-          "url": "https://www.yahoo.com/news/articles/donald-trump-ties-gala-shooting-090458755.html",
-          "date": "2026-04-27T09:04:58+00:00",
-          "category": "usa"
-        },
-        {
           "title": "Orbán Viktorék bicskája beletört, most a Tisza próbálkozhat a vidék felzárkóztatásával",
           "source": "Mfor.hu",
           "url": "https://mfor.hu/cikkek/makro/orban-viktorek-bicskaja-beletort-most-a-tisza-probalkozhat-a-videk-felzarkoztatasaval.html",
           "date": "2026-04-27T08:36:00+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Hungary's Romani community hopes for change",
-          "source": "DW.com",
-          "url": "https://www.dw.com/en/hungarys-romani-community-hopes-for-change-after-election/video-76949041",
-          "date": "2026-04-27T08:23:15+00:00",
           "category": "hungary"
         },
         {
@@ -1351,10 +723,10 @@
           "category": "hungary"
         },
         {
-          "title": "A Videoton-vezér: úgy látja, Magyar Péter győzelme korszakhatárt jelent a magyar politikában",
-          "source": "Pénzcentrum",
-          "url": "https://www.penzcentrum.hu/gazdasag/20260427/a-videoton-vezer-ugy-latja-magyar-peter-gyozelme-korszakhatart-jelent-a-magyar-politikaban-1197646",
-          "date": "2026-04-27T05:15:00+00:00",
+          "title": "Ma alakul meg a Fidesz új frakciója, a megújulás elkezdődött",
+          "source": "origo.hu",
+          "url": "https://www.origo.hu/belpol/2026/04/fidesz-uj-frakcioja-megujulas-elkezdodott",
+          "date": "2026-04-27T05:40:23+00:00",
           "category": "hungary"
         },
         {
@@ -1377,93 +749,71 @@
           "url": "https://ddnews.gov.in/en/india-hungary-bound-by-deep-rooted-friendship-pm-modi-congratulates-peter-magyar-on-landslide-win/",
           "date": "2026-04-27T03:18:50+00:00",
           "category": "hungary"
-        },
-        {
-          "title": "Magyar Péter Brüsszelbe megy, személyesen egyeztet az EB elnökével",
-          "source": "Startlap",
-          "url": "https://www.startlap.hu/hir-szem/magyar-peter-brusszelbe-megy-szemelyesen-egyeztet-az-eb-elnokevel/",
-          "date": "2026-04-27T00:32:01+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Először találkozik a választás óta személyesen is Magyar Péter és",
-          "source": "Kontroll",
-          "url": "https://kontroll.hu/cikk/belfold/2026/04/26/eloszoer-talalkozik-a-valasztas-ota-szemelyesen-is-magyar-peter-es",
-          "date": "2026-04-26T19:35:11+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Magyar Péter világosan megmutatta, hogy beleáll abba a konfrontációba, amit Orbán nagyon próbált kikerülni",
-          "source": "Telex",
-          "url": "https://telex.hu/kulfold/2026/04/26/robert-fico-magyar-peter-szlovak-magyar-viszony-az-uj-kormannyal-benes-dekretumok",
-          "date": "2026-04-26T18:07:39+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Orbán's oligarch network gearing up to flee Hungary, Magyar says - RBC-Ukraine",
-          "source": "",
-          "url": "https://newsukraine.rbc.ua/news/orb-n-s-oligarch-network-gearing-up-to-flee-1777222934.html",
-          "date": "2026-04-26T17:07:14+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Orbán associates rush to move wealth out of Hungary after election defeat",
-          "source": "The Guardian",
-          "url": "https://www.theguardian.com/world/2026/apr/26/viktor-orban-associates-wealth-hungary-election",
-          "date": "2026-04-26T16:42:00+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Power Shift In Hungary: Viktor Orban Steps Back After Defeat, Peter Magyar Rises",
-          "source": "wionews.com",
-          "url": "https://www.wionews.com/videos/power-shift-in-hungary-viktor-orban-steps-back-after-defeat-peter-magyar-rises-1777214684882",
-          "date": "2026-04-26T14:45:00+00:00",
-          "category": "hungary"
         }
       ],
       "first_seen": "2026-04-25T21:40:31+00:00",
-      "last_seen": "2026-04-27T20:01:08+00:00"
+      "last_seen": "2026-04-28T04:27:56+00:00"
     },
     {
       "id": "far-right-rhetoric-fuels-political-violence",
       "title": "Far-right rhetoric fuels political violence",
-      "blurb": "Right-wing and far-right media across multiple countries are amplifying narratives that link inflammatory rhetoric to acts of political violence. Coverage highlights incidents of violence against politicians, journalists, and marginalized groups, while also critiquing the role of far-right discourse in escalating tensions.",
+      "blurb": "The theme of far-right rhetoric contributing to political violence has gained traction in right-wing and far-right media, with coverage spanning multiple countries. Narratives often emphasize the dangers of left-wing extremism while downplaying far-right violence, framing it as a reaction to perceived threats to national identity and sovereignty.",
       "convergence": 3,
       "countries": [
         {
           "name": "🇮🇹 Fratelli d'Italia / Lega",
-          "note": "Italian media highlights Salvini’s rhetoric and its impact on political violence, including attacks on left-wing activists and journalists."
+          "note": "Media highlight incidents of political violence tied to far-right rhetoric, often framing it as a response to left-wing extremism or immigration."
         },
         {
           "name": "🇪🇸 Vox",
-          "note": "Vox’s inflammatory language, particularly its attacks on political opponents and migrants, is linked to rising political violence and protests against its rallies."
+          "note": "Vox's media emphasize the dangers of left-wing political violence, framing its own rhetoric as a necessary defense against threats to national identity."
         },
         {
           "name": "🇬🇧 Reform UK",
-          "note": "Reform UK’s anti-immigration rhetoric and its ties to far-right groups are scrutinized for fueling political violence and protests."
+          "note": "Farage and others frame political violence as a consequence of left-wing extremism, calling for stricter measures to combat perceived threats to conservative values."
         },
         {
           "name": "🇺🇸 MAGA / Trump",
-          "note": "Trump’s rhetoric and its role in inspiring political violence, including the WHCD shooting, are central to coverage. Articles highlight the normalization of violent discourse in U.S. politics."
+          "note": "Trump-aligned media emphasize the dangers of left-wing political violence, often framing it as a direct threat to conservative leaders and values."
         },
         {
           "name": "🇫🇷 Rassemblement National",
-          "note": "French media critiques RN’s rhetoric, particularly its anti-immigration stance, for contributing to political polarization and violence."
+          "note": "RN's media tie political violence to immigration and left-wing extremism, framing far-right rhetoric as a necessary response to protect national identity."
+        },
+        {
+          "name": "🇵🇱 Prawo i Sprawiedliwość",
+          "note": "Polish media highlight political violence as a consequence of left-wing extremism, emphasizing the need for stronger security measures and conservative leadership."
         }
       ],
       "signals": [
-        "shared framing",
-        "contagion of rhetoric",
-        "reaction to external event"
+        "political violence",
+        "rhetorical contagion",
+        "left-wing extremism",
+        "national identity",
+        "security measures"
       ],
-      "article_count": 50,
+      "article_count": 70,
       "refs": [
         {
-          "title": "Un experto en comunicación política da la lección del año a Santiago Abascal tras este llamar \"mierda\" a Pedro Sánchez",
-          "source": "El HuffPost",
-          "url": "https://www.huffingtonpost.es/virales/un-experto-comunicacion-politica-da-leccionno-santiago-abascal-llamar-mierda-pedro-sanchez-f202604.html",
-          "date": "2026-04-27T18:33:21+00:00",
-          "category": "spain"
+          "title": "25 APRILE, MELONI “AGGRESSIONI DA CHI DICE DI DIFENDERE LIBERTà, C’è UN PROBLEMA”",
+          "source": "Radio NBC Rete Regione",
+          "url": "https://radionbc.it/25-aprile-meloni-aggressioni-da-chi-dice-di-difendere-liberta-ce-un-problema/",
+          "date": "2026-04-27T23:51:52+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Reform UK issues chilling 2-word threat to Labour MPs ahead of Starmer sleaze vote",
+          "source": "Daily Express",
+          "url": "https://www.express.co.uk/news/politics/2199074/reform-uk-zia-yusuf-keir-starmer-privileges-committee",
+          "date": "2026-04-27T22:39:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Backlash erupts after Jay Inslee's post on attempted assassination of Donald Trump at White House Correspondents' Dinner",
+          "source": "MyNorthwest.com",
+          "url": "https://mynorthwest.com/mynorthwest-politics/jay-inslee-backlash-donald-trump/4231737",
+          "date": "2026-04-27T20:07:46+00:00",
+          "category": "usa"
         },
         {
           "title": "Bologna, a symbol of progressive Italy, is targeted by the far right",
@@ -1473,32 +823,25 @@
           "category": "general"
         },
         {
-          "title": "Paco Núñez llama \"dictador\" a Page por criticar los pactos PP-Vox",
-          "source": "elDiario.es",
-          "url": "https://www.eldiario.es/castilla-la-mancha/politica/paco-nunez-llama-dictador-page-criticar-pactos-pp-vox_1_13177034.html",
-          "date": "2026-04-27T18:21:33+00:00",
-          "category": "spain"
+          "title": "Protest gegen AfD-Tour durch das Düsseldorfer Bahnhofsviertel: „Sind keine Affen“",
+          "source": "NRZ",
+          "url": "https://www.nrz.de/lokales/duesseldorf/article411834821/protest-gegen-afd-tour-durch-das-duesseldorfer-bahnhofsviertel-sind-keine-affen.html",
+          "date": "2026-04-27T17:30:00+00:00",
+          "category": "germany"
         },
         {
-          "title": "Nigel Farage issues 'make Britain great again' pledge during Llandudno visit",
-          "source": "North Wales Live",
-          "url": "https://www.dailypost.co.uk/news/north-wales-news/nigel-farage-issues-make-britain-33847807",
-          "date": "2026-04-27T16:52:00+00:00",
-          "category": "uk"
+          "title": "Donald Trump to line Washington DC Reflecting Pool in \"American flag blue\"",
+          "source": "Dezeen",
+          "url": "https://www.dezeen.com/2026/04/27/donald-trump-lincoln-memorial-reflecting-pool/",
+          "date": "2026-04-27T16:14:00+00:00",
+          "category": "usa"
         },
         {
-          "title": "Row erupts after confrontation between Reform campaign volunteer and Green candidate",
-          "source": "Basingstoke Gazette",
-          "url": "https://www.basingstokegazette.co.uk/news/26056521.disagreement-reform-uk-green-party-tadley/",
-          "date": "2026-04-27T16:00:00+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Vox condena el intento de atentado contra Trump y lo atribuye a un \"matonismo político\"",
-          "source": "La Razón",
-          "url": "https://www.larazon.es/espana/vox-condena-intento-atentado-trump-atribuye-matonismo-politico_2026042769ef71c9c8da43388c4154c8.html",
-          "date": "2026-04-27T15:14:02+00:00",
-          "category": "spain"
+          "title": "SD attackerades i Malmö: ”Knuffade och bestulna”",
+          "source": "Kvartal",
+          "url": "https://kvartal.se/federicomoreno/artiklar/sd-attackerades-i-malmo-knuffade-och-bestulna/cG9zdDoxMDM5MTA",
+          "date": "2026-04-27T15:21:06+00:00",
+          "category": "sweden"
         },
         {
           "title": "Nationwide Anti-Racism Mobilisation Against Reform UK: SUTR NEWS to April 26",
@@ -1515,17 +858,24 @@
           "category": "uk"
         },
         {
-          "title": "‘The Red Hangar’ Warns of Criminal Obedience Amidst Rising Fascism",
-          "source": "PopMatters",
-          "url": "https://www.popmatters.com/the-red-hangar-sallato",
-          "date": "2026-04-27T12:30:42+00:00",
+          "title": "Vox ve en el intento de atentado a Trump un \"ataque contra las urnas\" y habla también de un \"matonismo político\" contra el partido de Abascal",
+          "source": "El Mundo",
+          "url": "https://www.elmundo.es/espana/2026/04/27/69ef3948e85ecef80c8b456e.html",
+          "date": "2026-04-27T12:47:14+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "The Prophetic and the Flag: Far-right extremism, Christian nationalism and the Church response",
+          "source": "ctbi.org.uk",
+          "url": "https://ctbi.org.uk/event/the-prophetic-and-the-flag-far-right-extremism-christian-nationalism-and-the-church-response/",
+          "date": "2026-04-27T10:58:52+00:00",
           "category": "general"
         },
         {
-          "title": "Romanian socialists and far right unveil joint plan to topple PM",
-          "source": "politico.eu",
-          "url": "https://www.politico.eu/article/romania-no-confidence-vote-psd-aur-ilie-bolojan/",
-          "date": "2026-04-27T11:29:10+00:00",
+          "title": "Neo-fascism and the concept of the nation",
+          "source": "MR Online",
+          "url": "https://mronline.org/2026/04/27/neo-fascism-and-the-concept-of-the-nation/",
+          "date": "2026-04-27T10:02:28+00:00",
           "category": "general"
         },
         {
@@ -1536,39 +886,18 @@
           "category": "general"
         },
         {
-          "title": "Vox, tras el intento de boicot del mitin en Cádiz: “La izquierda no nos va a callar ni a amedrentar”",
-          "source": "Andalucía Información",
-          "url": "https://www.andaluciainformacion.es/articulo/cadiz/vox-intento-boicot-mitin-cadiz-izquierda-nos-va-callar-ni-amedrentar/202604271042133250297.html",
-          "date": "2026-04-27T08:42:13+00:00",
-          "category": "spain"
+          "title": "Why Europe must call out the far-right’s defence bluff",
+          "source": "EUobserver",
+          "url": "https://euobserver.com/208455/why-europe-must-call-out-the-far-rights-defence-bluff/",
+          "date": "2026-04-27T08:02:16+00:00",
+          "category": "general"
         },
         {
-          "title": "Dani Mateo, sobre Ignacio Hoces: \"Es un 'asustaviejas' en su tiempo libre, que siendo de Vox es todo el rato\"",
-          "source": "LaSexta",
-          "url": "https://www.lasexta.com/programas/el-intermedio/dani-mateo-ignacio-hoces-asustaviejas-tiempo-libre-que-siendo-vox-todo-rato_2026042769ef1afec8da43388c40dd3e.html",
-          "date": "2026-04-27T08:14:54+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox pone el foco en Sánchez y su pacto con los herederos de ETA: intentan ilegalizar a Bildu en el Senado",
-          "source": "ESdiario",
-          "url": "https://www.esdiario.com/nacional/260427/186101/vox-pone-foco-sanchez-pacto-herederos-eta-intentan-ilegalizar-bildu-senado.html",
-          "date": "2026-04-27T07:34:18+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Politikk, Fremskrittspartiet | Skal lede Frp i kommunestyret: – Skjer mye spennende",
-          "source": "Varingen",
-          "url": "https://www.varingen.no/skal-lede-frp-i-kommunestyret-skjer-mye-spennende/s/5-92-706647",
-          "date": "2026-04-27T06:00:18+00:00",
-          "category": "norway"
-        },
-        {
-          "title": "What does Reform UK stand for? What you need to know",
-          "source": "hyphenonline.com",
-          "url": "https://hyphenonline.com/2026/04/27/reform-uk-guide-uk-muslims-islam-nigel-farage-policies/",
-          "date": "2026-04-27T05:02:05+00:00",
-          "category": "uk"
+          "title": "Note to Those So Inclined: Please Stop Trying to Kill Donald Trump",
+          "source": "CounterPunch.org",
+          "url": "https://www.counterpunch.org/2026/04/27/note-to-those-so-inclined-please-stop-trying-to-kill-donald-trump/",
+          "date": "2026-04-27T06:22:45+00:00",
+          "category": "usa"
         },
         {
           "title": "Spari alla cena di gala, la condanna di Meloni: «Odio politico e fanatismo non devono trovare spazio»",
@@ -1578,29 +907,15 @@
           "category": "italy"
         },
         {
-          "title": "Vox bloquea las ayudas de vivienda por tacticismo político",
-          "source": "Periódico de Ibiza y Formentera",
-          "url": "https://www.periodicodeibiza.es/opinion/mirador/2026/04/27/2617537/vox-bloquea-ayudas-vivienda-por-tacticismo-politico.html",
-          "date": "2026-04-27T01:58:01+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Stop the Radical Left’s Agenda",
-          "source": "American Center for Law and Justice",
-          "url": "https://aclj.org/mmmjgoe0",
-          "date": "2026-04-26T20:33:42+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Matones bukaneros boicotean bajo amenazas un acto de Vox en Vallecas: «¡Fuera de nuestro barrio!»",
-          "source": "OkDiario",
-          "url": "https://okdiario.com/espana/matones-bukaneros-boicotean-bajo-amenazas-acto-vox-vallecas-fuera-nuestro-barrio-16679776",
-          "date": "2026-04-26T17:10:22+00:00",
-          "category": "spain"
+          "title": "Latest attack threatening President Trump reflects rising political violence in US",
+          "source": "The Conversation",
+          "url": "https://theconversation.com/latest-attack-threatening-president-trump-reflects-rising-political-violence-in-us-281513",
+          "date": "2026-04-26T20:40:47+00:00",
+          "category": "usa"
         }
       ],
       "first_seen": "2026-04-25T21:40:31+00:00",
-      "last_seen": "2026-04-27T20:01:08+00:00"
+      "last_seen": "2026-04-28T04:27:56+00:00"
     }
   ]
 }
