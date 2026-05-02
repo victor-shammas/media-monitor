@@ -1,33 +1,351 @@
 {
-  "updated_at": "2026-05-02T08:03:19+00:00",
+  "updated_at": "2026-05-02T13:52:49+00:00",
   "lookback_hours": 48,
   "model": "Mistral Large",
   "status": "ok",
   "hotspots": [
     {
-      "id": "trump-administrations-iran-war-costs-and-strategies",
-      "title": "Trump administration’s Iran war costs and strategies",
-      "blurb": "The Trump administration faces intense scrutiny over the financial and human costs of the ongoing conflict with Iran, with rising gas prices and troop deployments sparking public and congressional backlash. The 60-day War Powers deadline has passed without clear resolution, fueling debates over executive authority and military spending.",
-      "affect": "This commands disproportionate attention due to its high-stakes geopolitical implications, economic impact, and the administration's defiance of congressional oversight, creating a charged political environment.",
+      "id": "magyar-peters-nepotism-and-government-formation",
+      "title": "Magyar Péter’s nepotism and government formation",
+      "blurb": "Hungarian politician Péter Magyar faces intense scrutiny after appointing his brother-in-law as justice minister and refunding a controversial 100 million forint donation from a billionaire. Critics accuse him of cronyism and undermining his anti-corruption platform.",
+      "affect": "This hotspot commands attention due to the moral outrage over perceived nepotism and the betrayal of voter trust in Magyar’s reformist promises.",
       "intensity": 5,
       "affect_signals": [
+        "moral panic register",
         "polarized contention",
-        "alarmist framing",
         "cross-source repetition",
         "outrage-coded language",
         "leadership crisis tone"
       ],
       "categories": [
-        "🇺🇸 MAGA / Trump"
+        "🇭🇺 Fidesz / Tisza"
       ],
-      "article_count": 120,
+      "article_count": 50,
       "refs": [
         {
-          "title": "‘Humiliated’ Trump Taking Toy Soldiers Home in Epic Tantrum",
-          "source": "The Daily Beast",
-          "url": "https://www.thedailybeast.com/trump-taking-toy-soldiers-home-in-epic-tantrum-after-he-was-humiliated/",
-          "date": "2026-05-02T06:52:00+00:00",
+          "title": "Magyar Péter elárasztotta az ígéreteivel a közösségi oldalát",
+          "source": "Magyar Nemzet",
+          "url": "https://magyarnemzet.hu/belfold/2026/05/magyar-peter-elarasztotta-az-igereteivel-a-kozossegi-oldalat",
+          "date": "2026-05-02T13:09:25+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Megszólalt Magyar Péter a pusztító helyzetről, felszólította miniszter-jelöltjét a cselekvésre",
+          "source": "Portfolio.hu",
+          "url": "https://www.portfolio.hu/gazdasag/20260502/megszolalt-magyar-peter-a-pusztito-helyzetrol-felszolitotta-miniszter-jeloltjet-a-cselekvesre-834230",
+          "date": "2026-05-02T13:02:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Vox exige medidas para facilitar el acceso al agua y reducir obstáculos para agricultores y ganaderos",
+          "source": "Andalucía Información",
+          "url": "https://www.andaluciainformacion.es/articulo/malaga/vox-respalda-sector-primario-exige-mas-agua-menos-trabas-agricultores-ganaderos/202605021431133252910.html",
+          "date": "2026-05-02T12:31:13+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Közösségi oldali felháborodás és politikai vita a Tisza jelöltje körül",
+          "source": "HírTv",
+          "url": "https://hirtv.origo.hu/ahirtvhirei/2026/05/kozossegi-oldali-felhaborodas-es-politikai-vita-a-tisza-jeloltje-korul",
+          "date": "2026-05-02T11:30:42+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Videó: Saját sógorát szánja igazságügyi miniszterének Magyar Péter",
+          "source": "HírTv",
+          "url": "https://hirtv.origo.hu/video/sajat-sogorat-szanja-igazsagugyi-miniszterenek-magyar-peter",
+          "date": "2026-05-02T10:42:56+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Még a tiszások is kiakadtak, amiért Magyar Péter sógora lesz az igazságügyi miniszter",
+          "source": "elemi.hu",
+          "url": "https://www.elemi.hu/meg-a-tiszasok-is-kiakadtak-amiert-magyar-peter-sogora-lesz-az-igazsagugyi-miniszter/",
+          "date": "2026-05-02T06:59:14+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Alig került hatalomra Magyar Péter, máris hemzsegnek a milliárdosok a Tisza Párt körül",
+          "source": "ORIGO",
+          "url": "https://www.origo.hu/belpol/2026/05/tisza-part-magyar-peter-milliardosok-panyi-miklos",
+          "date": "2026-05-02T06:26:05+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Bejelentette utolsó minisztereit Magyar Péter: családi szálak bonyolítják a kormánytervét",
+          "source": "RTL.hu",
+          "url": "https://rtl.hu/hirado/2026/05/01/magyar-peter-tisza-miniszterjelolt-csaladi-kapcsolatok-osszeferhetetlenseg",
+          "date": "2026-05-01T18:17:48+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Magyar Péter: Melléthei-Barna Márton jóval később lett a sógorom, mint hogy csatlakozott a Tiszához",
+          "source": "Euronews.com",
+          "url": "https://hu.euronews.com/my-europe/2026/05/01/magyar-peter-mellethei-barna-marton-joval-kesobb-lett-a-sogorom-mint-hogy-csatlakozott-a-t",
+          "date": "2026-05-01T14:14:40+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Családban marad: kiderült, ki lett Magyar Péter új igazságügyi minisztere",
+          "source": "HírTv",
+          "url": "https://hirtv.origo.hu/cikk-elonezet/9dea5528b41a1b8a220b35c5428570/latest",
+          "date": "2026-05-01T13:18:57+00:00",
+          "category": "hungary"
+        }
+      ],
+      "first_seen": "2026-05-01T13:58:36+00:00",
+      "last_seen": "2026-05-02T13:52:49+00:00"
+    },
+    {
+      "id": "afds-rising-influence-and-internal-scandals",
+      "title": "AfD’s rising influence and internal scandals",
+      "blurb": "Germany’s far-right Alternative für Deutschland (AfD) leads polls ahead of the CDU/CSU, while facing internal scandals including embezzlement allegations, extremist ties, and disciplinary actions against members. The party’s rhetoric on immigration and EU policies fuels polarization.",
+      "affect": "The AfD’s surge and scandals dominate coverage due to fears of democratic backsliding and the normalization of far-right extremism in mainstream politics.",
+      "intensity": 4,
+      "affect_signals": [
+        "alarmist framing",
+        "cross-source repetition",
+        "outrage-coded language",
+        "moral panic register",
+        "polarized contention"
+      ],
+      "categories": [
+        "🇩🇪 Alternative für Deutschland"
+      ],
+      "article_count": 45,
+      "refs": [
+        {
+          "title": "Zurück zur Blockpolitik der DDR: Alt-Bundespräsident Gauck fordert eine antifaschistische Einheitsfront gegen die AfD",
+          "source": "Die Weltwoche",
+          "url": "https://weltwoche.ch/daily/zurueck-zur-blockpolitik-der-ddr-alt-bundespraesident-gauck-fordert-eine-antifaschistische-einheitsfront-gegen-die-afd/",
+          "date": "2026-05-02T12:46:32+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Friedman: „Die AfD rechtsextrem? Das ist noch verharmlosend!“",
+          "source": "MOPO",
+          "url": "https://www.mopo.de/news/politik-wirtschaft/friedman-die-demokratie-lebt-vom-fragezeichen-die-diktatur-mit-dem-ausrufezeichen/",
+          "date": "2026-05-02T12:38:05+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Neue Umfrage zur Bundestagswahl – AfD weiter deutlich vor Union",
+          "source": "B.Z. – Die Stimme Berlins",
+          "url": "https://www.bz-berlin.de/ticker/neue-umfrage-zur-bundestagswahl-afd-weiter-deutlich-vor-union",
+          "date": "2026-05-02T12:35:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Vox Granada defiende el sentido común para \"cambiar la forma de gobernar\" y darle prioridad a los andaluces",
+          "source": "Europa Press",
+          "url": "https://www.europapress.es/andalucia/noticia-vox-granada-defiende-sentido-comun-cambiar-forma-gobernar-darle-prioridad-andaluces-20260502141409.html",
+          "date": "2026-05-02T12:14:09+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Más Madrid critica \"feudalismo con 'smartphone'\" del viaje de Ayuso a México y Vox cree que \"huye\" de prioridad nacional",
+          "source": "Europa Press",
+          "url": "https://www.europapress.es/madrid/noticia-mas-madrid-critica-feudalismo-smartphone-viaje-ayuso-mexico-vox-cree-huye-prioridad-nacional-20260502111323.html",
+          "date": "2026-05-02T09:13:23+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Ferencz Orsolya a Fidesz megújulásáról: Sokkal őszintébb szembenézésre, és változtatásokra lesz szükség",
+          "source": "Telex",
+          "url": "https://telex.hu/belfold/2026/05/02/ferencz-orsolya-fidesz-valasztmanyi-ules-lemondas-szavazas-megujulas-cser-palkovics",
+          "date": "2026-05-02T06:37:40+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Dresden: Unterschlagung? Verfahren gegen AfD-Stadträtin Daniela Walter eingestellt",
+          "source": "TAG24",
+          "url": "https://www.tag24.de/justiz/gerichtsprozesse-dresden/unterschlagungs-vorwuerfe-im-schoenfelder-hochland-verfahren-gegen-stadtraetin-eingestellt-3494967",
+          "date": "2026-05-02T05:05:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Joe Kaeser rät Kanzler Merz zu Minderheitsregierung: \"Letzte Chance vor AfD-Mehrheit\"",
+          "source": "osna.live",
+          "url": "https://osna-live.de/202283/joe-kaeser-raet-kanzler-merz-zu-minderheitsregierung-letzte-chance-vor-afd-mehrheit/",
+          "date": "2026-05-02T03:01:01+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Politics: Musk promotes German far-right leader",
+          "source": "NewVision.co.ug",
+          "url": "https://www.newvision.co.ug/category/politics/musk-promotes-german-far-right-leader-NV_202827_052026",
+          "date": "2026-05-01T20:57:57+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Parteiinterne Vorwürfe: AfD Niedersachsen: Parteiverfahren gegen Europaabgeordnete",
+          "source": "bietigheimerzeitung.de",
+          "url": "https://www.bietigheimerzeitung.de/inhalt.parteiinterne-vorwuerfe-afd-niedersachsen-parteiverfahren-gegen-europaabgeordnete.59ad8276-450f-43ea-b1a4-be0733e9ed3f.html",
+          "date": "2026-05-01T18:42:47+00:00",
+          "category": "germany"
+        }
+      ],
+      "first_seen": "2026-05-02T13:52:49+00:00",
+      "last_seen": "2026-05-02T13:52:49+00:00"
+    },
+    {
+      "id": "voxs-national-priority-and-regional-pacts-in-spain",
+      "title": "Vox’s ‘national priority’ and regional pacts in Spain",
+      "blurb": "Vox escalates its anti-immigration and anti-EU rhetoric in Andalusia’s election campaign, demanding ‘national priority’ policies and opposing the Mercosur trade deal. The party’s inflammatory language and clashes with the Catholic Church amplify tensions.",
+      "affect": "Vox’s aggressive campaigning and policy demands generate disproportionate attention due to their polarizing impact on Spanish politics and society.",
+      "intensity": 4,
+      "affect_signals": [
+        "outrage-coded language",
+        "polarized contention",
+        "cross-source repetition",
+        "moral charge",
+        "alarmist framing"
+      ],
+      "categories": [
+        "🇪🇸 Vox"
+      ],
+      "article_count": 60,
+      "refs": [
+        {
+          "title": "Óscar López lamenta que PP y Vox se confundan y hayan perdido \"hasta la educación\"",
+          "source": "ABC",
+          "url": "https://www.abc.es/espana/oscar-lopez-lamenta-pp-vox-confundan-perdido-20260502150038-nt.html",
+          "date": "2026-05-02T13:00:42+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Vox pide \"apoyo masivo\" el 17 de mayo y responsabiliza a PP y PSOE del paro en Cádiz",
+          "source": "Infobae",
+          "url": "https://www.infobae.com/espana/agencias/2026/05/02/vox-pide-apoyo-masivo-el-17-de-mayo-y-responsabiliza-a-pp-y-psoe-del-paro-en-cadiz/",
+          "date": "2026-05-02T12:43:27+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Vox exige medidas para facilitar el acceso al agua y reducir obstáculos para agricultores y ganaderos",
+          "source": "Andalucía Información",
+          "url": "https://www.andaluciainformacion.es/articulo/malaga/vox-respalda-sector-primario-exige-mas-agua-menos-trabas-agricultores-ganaderos/202605021431133252910.html",
+          "date": "2026-05-02T12:31:13+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Abascal llama a Sánchez \"chulo de putas\" y las redes se inundan de críticas: \"A ver qué dicen los de Campofrío sobre la polarización\"",
+          "source": "Diario Público",
+          "url": "https://www.publico.es/tremending/abascal-llama-sanchez-chulo-putas-redes-inundan-criticas-ver-dicen-campofrio-sobre-polarizacion.html",
+          "date": "2026-05-02T12:12:19+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Manuel Gavira (VOX) pide un apoyo masivo el 17 de mayo: \"Necesitamos un gobierno valiente que ponga a los...",
+          "source": "gaceta.es",
+          "url": "https://gaceta.es/espana/manuel-gavira-vox-pide-un-apoyo-masivo-el-17-de-mayo-necesitamos-un-gobierno-valiente-que-ponga-a-los-andaluces-primero-un-gobierno-que-defienda-la-prioridad-nacional-20260502-1355/",
+          "date": "2026-05-02T11:56:05+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "You Might Be Talking To A MAGA Supporter Without Even Knowing. These Common Phrases Could Be A Sign.",
+          "source": "Yahoo News New Zealand",
+          "url": "https://nz.news.yahoo.com/might-talking-maga-supporter-without-110018212.html",
+          "date": "2026-05-02T11:00:18+00:00",
           "category": "usa"
+        },
+        {
+          "title": "Puente sólo necesita cinco palabras para retratar los insultos de Abascal a Sánchez",
+          "source": "Elplural.com",
+          "url": "https://www.elplural.com/politica/espana/puente-solo-necesita-cinco-palabras-retratar-insultos-abascal-sanchez_388802102",
+          "date": "2026-05-02T10:49:03+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Vox admite que el decreto de alquileres beneficiaba a inquilinos pese a votarlo en contra",
+          "source": "El Boletín",
+          "url": "https://www.elboletin.com/vox-admite-que-el-decreto-de-alquileres-beneficiaba-a-inquilinos-pese-a-votarlo-en-contra/",
+          "date": "2026-05-02T07:49:36+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "La escalada antimigratoria de Vox: deportaciones masivas, contra la regularización y \"prioridad nacional\"",
+          "source": "Elplural.com",
+          "url": "https://www.elplural.com/politica/espana/escalada-antimigratoria-vox-deportaciones-masivas-contra-regularizacion-prioridad-nacional_388588102",
+          "date": "2026-05-02T05:09:37+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Vox se vuelve tímido en Andalucía para no acentuar su crisis: \"No digan que vamos a reventar mayorías absolutas\"",
+          "source": "El Mundo",
+          "url": "https://www.elmundo.es/espana/2026/05/02/69f4965be4d4d876618b45a3.html",
+          "date": "2026-05-02T00:34:33+00:00",
+          "category": "spain"
+        }
+      ],
+      "first_seen": "2026-05-01T13:58:36+00:00",
+      "last_seen": "2026-05-02T13:52:49+00:00"
+    },
+    {
+      "id": "trump-administrations-iran-war-costs-and-strategies",
+      "title": "Trump administration’s Iran war costs and strategies",
+      "blurb": "The Trump administration’s military actions in Iran face backlash over rising costs, troop withdrawals from Europe, and defiance of congressional war powers deadlines. Public disapproval of the war and its economic impact intensifies scrutiny.",
+      "affect": "The Iran war dominates coverage due to its high stakes, economic fallout, and constitutional controversies, fueling public outrage and political division.",
+      "intensity": 5,
+      "affect_signals": [
+        "alarmist framing",
+        "polarized contention",
+        "cross-source repetition",
+        "outrage-coded language",
+        "moral charge"
+      ],
+      "categories": [
+        "🇺🇸 MAGA / Trump"
+      ],
+      "article_count": 55,
+      "refs": [
+        {
+          "title": "Donald Trump’s Approval Rating Plummets On All Personality Traits",
+          "source": "Newsweek",
+          "url": "https://www.newsweek.com/donald-trump-approval-rating-plummets-personality-traits-11905848",
+          "date": "2026-05-02T12:25:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump says US Navy acting ‘like pirates’ to enforce Iran blockade",
+          "source": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/5/2/trump-says-us-navy-acting-like-pirates-to-enforce-iran-blockade",
+          "date": "2026-05-02T11:37:30+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "What is President Donald Trump's approval rating? See latest polls",
+          "source": "The Arizona Republic",
+          "url": "https://www.azcentral.com/story/news/politics/arizona/2026/05/02/donald-trump-latest-approval-rating/89894310007/",
+          "date": "2026-05-02T11:02:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Donald Trump Says US Will Take Over Cuba ‘Almost Immediately’",
+          "source": "Newsweek",
+          "url": "https://www.newsweek.com/donald-trump-us-take-over-cuba-11905781",
+          "date": "2026-05-02T10:03:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump says US Navy acting like ‘pirates’ during Iran blockade",
+          "source": "The Guardian",
+          "url": "https://www.theguardian.com/world/2026/may/02/trump-us-navy-pirates-iran-blockade",
+          "date": "2026-05-02T09:40:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "The Likelihood of a Stock Market Crash Under President Donald Trump Is Rapidly Rising -- and There's One Undeniable Catalyst to Blame",
+          "source": "The Globe and Mail",
+          "url": "https://www.theglobeandmail.com/investing/markets/stocks/INTC/pressreleases/1662312/the-likelihood-of-a-stock-market-crash-under-president-donald-trump-is-rapidly-rising-and-theres-one-undeniable-catalyst-to-blame/",
+          "date": "2026-05-02T08:26:48+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Local elections 2026: Nigel Farage leads Reform troops in Battle for Essex as Tories defend 'last stronghold'",
+          "source": "AOL.com",
+          "url": "https://www.aol.com/articles/local-elections-2026-nigel-farage-050023610.html",
+          "date": "2026-05-02T05:48:09+00:00",
+          "category": "uk"
         },
         {
           "title": "US pulling 5,000 troops from Germany amid spat with Trump over Iran war",
@@ -44,250 +362,107 @@
           "category": "usa"
         },
         {
-          "title": "Trump administration to pull 5,000 troops from Germany",
-          "source": "NBC News",
-          "url": "https://www.nbcnews.com/nightly-news/video/trump-administration-to-pull-5-000-troops-from-germany-262564421559",
-          "date": "2026-05-01T22:56:15+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Trump administration to cut 5,000 U.S. troops from Germany",
-          "source": "CBS News",
-          "url": "https://www.cbsnews.com/news/trump-germany-5000-troops/",
-          "date": "2026-05-01T21:19:06+00:00",
+          "title": "Donald Trump’s Iran war leaves US with sharpest fuel shock in G7",
+          "source": "Financial Times",
+          "url": "https://www.ft.com/content/aa553985-ef1a-4001-9f8d-f9501810dbb5?syn-25a6b1a6=1",
+          "date": "2026-05-01T20:59:00+00:00",
           "category": "usa"
         }
       ],
       "first_seen": "2026-04-30T14:30:38+00:00",
-      "last_seen": "2026-05-02T08:03:19+00:00"
+      "last_seen": "2026-05-02T13:52:49+00:00"
     },
     {
-      "id": "magyar-peters-nepotism-and-government-formation",
-      "title": "Magyar Péter’s nepotism and government formation",
-      "blurb": "Hungary’s incoming Prime Minister Péter Magyar faces accusations of nepotism after appointing his brother-in-law as justice minister, while his party, Tisza, grapples with transparency issues over pre-election donations from billionaires. The controversy threatens to undermine Magyar’s promises of anti-corruption and reform.",
-      "affect": "This commands disproportionate attention due to the moral outrage over perceived cronyism, the contrast with Magyar’s reformist rhetoric, and the broader implications for Hungary’s democratic institutions.",
-      "intensity": 5,
+      "id": "piss-internal-feuds-and-constitutional-reforms-in-poland",
+      "title": "PiS’s internal feuds and constitutional reforms in Poland",
+      "blurb": "Poland’s ruling Law and Justice (PiS) party faces internal divisions after MP Janusz Kowalski’s resignation and President Karol Nawrocki’s push for constitutional reforms. The party’s conflicts and controversial policies spark protests and legal battles.",
+      "affect": "PiS’s internal strife and constitutional ambitions command attention due to fears of democratic erosion and the party’s historical role in Poland’s political landscape.",
+      "intensity": 4,
       "affect_signals": [
-        "moral panic register",
-        "outrage-coded language",
-        "cross-source repetition",
         "leadership crisis tone",
-        "polarized contention"
-      ],
-      "categories": [
-        "🇭🇺 Fidesz / Tisza"
-      ],
-      "article_count": 100,
-      "refs": [
-        {
-          "title": "Már a Politico is arról ír, hogy Magyar Péter a sógorát jelölte igazságügyi miniszternek",
-          "source": "Mandiner",
-          "url": "https://mandiner.hu/kulfold/2026/05/mar-a-politico-is-arrol-ir-hogy-magyar-peter-a-sogorat-jelolte-igazsagugyi-miniszternek",
-          "date": "2026-05-02T06:37:36+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Alig került hatalomra Magyar Péter, máris hemzsegnek a milliárdosok a Tisza Párt körül",
-          "source": "ORIGO",
-          "url": "https://www.origo.hu/belpol/2026/05/tisza-part-magyar-peter-milliardosok-panyi-miklos",
-          "date": "2026-05-02T06:26:05+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Magyar Péter visszaadja a 100 milliót: „Még a látszatát is el akarjuk kerülni”",
-          "source": "FRISSS.hu",
-          "url": "https://www.frisss.hu/aktualis/magyar-peter-visszaadja-a-100-milliot-meg-a-latszatat-is-el-akarjuk-kerulni",
-          "date": "2026-05-01T18:17:39+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Magyar defends appointing brother-in-law as justice minister",
-          "source": "politico.eu",
-          "url": "https://www.politico.eu/article/hungary-peter-magyar-defends-appointing-brother-in-law-justice-minister/",
-          "date": "2026-05-01T15:17:24+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Itt van Magyar Péter magyarázata: ezért a sógorát választotta igazságügyi miniszternek",
-          "source": "Blikk",
-          "url": "https://www.blikk.hu/politika/magyar-politika/magyar-peter-igazsagugyi-miniszter-magyarazat/0dkm1sd",
-          "date": "2026-05-01T10:50:59+00:00",
-          "category": "hungary"
-        }
-      ],
-      "first_seen": "2026-05-01T13:58:36+00:00",
-      "last_seen": "2026-05-02T08:03:19+00:00"
-    },
-    {
-      "id": "rassemblement-nationals-macon-rally-and-2027-ambitions",
-      "title": "Rassemblement National’s Mâcon rally and 2027 ambitions",
-      "blurb": "France’s far-right Rassemblement National (RN) held a high-profile rally in Mâcon, with Marine Le Pen and Jordan Bardella addressing economic policies and the party’s 2027 presidential ambitions. The event underscored internal divisions over leadership and strategy ahead of a critical judicial ruling on Le Pen’s eligibility.",
-      "affect": "This commands disproportionate attention due to the high-stakes leadership dynamics, the party’s rising influence, and the charged rhetoric around nationalism and economic reform.",
-      "intensity": 4,
-      "affect_signals": [
         "polarized contention",
-        "alarmist framing",
-        "cross-source repetition",
-        "moral charge",
-        "leadership crisis tone"
-      ],
-      "categories": [
-        "🇫🇷 Rassemblement National"
-      ],
-      "article_count": 80,
-      "refs": [
-        {
-          "title": "Et Marine Le Pen parla d'\"assistanat\" : pour le 1er mai, le RN vire à droite",
-          "source": "L'Express",
-          "url": "https://www.lexpress.fr/politique/et-marine-le-pen-parla-dassistanat-pour-le-1er-mai-le-rn-vire-a-droite-SUZL2IPMYVARJEAV3FDVJSGISI/",
-          "date": "2026-05-01T20:18:42+00:00",
-          "category": "france"
-        },
-        {
-          "title": "1er-Mai : en meeting à Mâcon, le Rassemblement national célèbre la valeur du travail",
-          "source": "europe1.fr",
-          "url": "https://www.europe1.fr/politique/1er-mai-en-meeting-a-macon-le-rassemblement-national-celebre-la-valeur-du-travail-930491",
-          "date": "2026-05-01T18:55:58+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Présidentielle : au meeting du 1er mai, Marine Le Pen et Jordan Bardella mettent en scène leur entente",
-          "source": "l'Opinion",
-          "url": "https://www.lopinion.fr/politique/presidentielle-au-meeting-du-1er-mai-marine-le-pen-et-jordan-bardella-mettent-en-scene-leur-entente",
-          "date": "2026-05-01T17:52:00+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Fête de la Nation (RN) à Mâcon : Une entrée de rock stars pour Marine Le Pen et Jordan Baredella",
-          "source": "Macon Infos",
-          "url": "http://www.macon-infos.com/fr/opinion/175-politique-2/49757-fete-de-la-nation-rn-a-macon-une-entree-de-rock-stars-pour-marine-le-pen-et-jordan-baredella",
-          "date": "2026-05-01T16:52:41+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Dans son discours du 1er-Mai, Marine Le Pen déclare \"avoir foi en la justice\" face à \"la jungle réglementaire française et européenne\"",
-          "source": "BFM",
-          "url": "https://www.bfmtv.com/politique/video-dans-son-discours-du-1er-mai-marine-le-pen-declare-avoir-foi-en-la-justice-face-a-la-jungle-reglementaire-francaise-et-europeenne_VN-202605010528.html",
-          "date": "2026-05-01T14:24:15+00:00",
-          "category": "france"
-        }
-      ],
-      "first_seen": "2026-05-01T19:47:07+00:00",
-      "last_seen": "2026-05-02T08:03:19+00:00"
-    },
-    {
-      "id": "voxs-national-priority-and-regional-pacts-in-spain",
-      "title": "Vox’s ‘national priority’ and regional pacts in Spain",
-      "blurb": "Spain’s far-right Vox party continues to push its ‘national priority’ agenda, clashing with regional governments over immigration, housing, and trade policies. The party’s influence is growing in Andalusia and Castilla y León, where it negotiates pacts with the conservative PP amid accusations of extremism.",
-      "affect": "This commands disproportionate attention due to the polarizing nature of Vox’s policies, the high-stakes regional negotiations, and the broader implications for Spain’s political landscape.",
-      "intensity": 4,
-      "affect_signals": [
-        "outrage-coded language",
-        "moral panic register",
-        "cross-source repetition",
-        "polarized contention",
-        "leadership crisis tone"
-      ],
-      "categories": [
-        "🇪🇸 Vox"
-      ],
-      "article_count": 90,
-      "refs": [
-        {
-          "title": "Ayuso consigue contener a Vox y mantendría la absoluta mientras Más Madrid deja de liderar la oposición",
-          "source": "Libertad Digital",
-          "url": "https://www.libertaddigital.com/madrid/2026-05-02/ayuso-mantendria-la-mayoria-absoluta-mientras-vox-crece-y-la-izquierda-sigue-estancada-1b-7397824/",
-          "date": "2026-05-02T06:36:56+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "La escalada antimigratoria de Vox: deportaciones masivas, contra la regularización y \"prioridad nacional\"",
-          "source": "Elplural.com",
-          "url": "https://www.elplural.com/politica/espana/escalada-antimigratoria-vox-deportaciones-masivas-contra-regularizacion-prioridad-nacional_388588102",
-          "date": "2026-05-02T05:09:37+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox apuntala su campaña en la Andalucía rural en busca del 'sorpasso' al PSOE en cuatro provincias",
-          "source": "Vozpopuli",
-          "url": "https://www.vozpopuli.com/espana/andalucia/vox-apuntala-su-campana-en-la-andalucia-rural-en-busca-del-sorpasso-al-psoe-en-cuatro-provincias.html",
-          "date": "2026-05-02T02:45:00+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox pide a la Asamblea rechazar el acuerdo de Mercosur y alerta de la \"ruina del campo español\"",
-          "source": "Murcia Plaza",
-          "url": "https://murciaplaza.com/murciaplaza/region/vox-pide-a-la-asamblea-rechazar-el-acuerdo-de-mercosur-y-alerta-de-la-ruina-del-campo-espanol",
-          "date": "2026-05-01T16:56:35+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Abascal afirma en Jaén que mantendrá la 'batalla jurídica' contra la 'islamización' de la sociedad",
-          "source": "El Periódico",
-          "url": "https://www.elperiodico.com/es/politica/20260501/abascal-afirma-mantendra-batalla-juridica-129749939",
-          "date": "2026-05-01T14:49:46+00:00",
-          "category": "spain"
-        }
-      ],
-      "first_seen": "2026-05-01T13:58:36+00:00",
-      "last_seen": "2026-05-02T08:03:19+00:00"
-    },
-    {
-      "id": "reform-uks-nigel-farage-and-electoral-surge",
-      "title": "Reform UK’s Nigel Farage and electoral surge",
-      "blurb": "Nigel Farage’s Reform UK party is gaining momentum ahead of local elections, with Farage himself campaigning aggressively across the UK. The party’s rise is fueled by discontent with the Conservative government, though controversies over donations and candidate conduct threaten to undermine its credibility.",
-      "affect": "This commands disproportionate attention due to Farage’s polarizing persona, the party’s rapid electoral gains, and the charged rhetoric around immigration and economic reform.",
-      "intensity": 4,
-      "affect_signals": [
-        "polarized contention",
-        "alarmist framing",
         "cross-source repetition",
         "outrage-coded language",
-        "leadership crisis tone"
+        "moral panic register"
       ],
       "categories": [
-        "🇬🇧 Reform UK"
+        "🇵🇱 Prawo i Sprawiedliwość"
       ],
-      "article_count": 60,
+      "article_count": 40,
       "refs": [
         {
-          "title": "'We want a majority' Solihull Reform UK group leader says no thought of coalition deals",
-          "source": "Birmingham Live",
-          "url": "https://www.birminghammail.co.uk/news/midlands-news/we-want-majority-solihull-reform-33873977",
-          "date": "2026-05-02T07:36:00+00:00",
-          "category": "uk"
+          "title": "Prezydent: Trzeba szanować sojusze, a nie bezmyślnie podważać",
+          "source": "wPolityce.pl",
+          "url": "https://wpolityce.pl/polityka/759358-prezydent-trzeba-szanowac-sojusze-a-nie-bezmyslnie-podwazac",
+          "date": "2026-05-02T12:29:30+00:00",
+          "category": "poland"
         },
         {
-          "title": "Reform candidate ‘attacked’ while campaigning in Glasgow",
-          "source": "The Herald",
-          "url": "https://www.heraldscotland.com/news/26073629.reform-candidate-attacked-campaigning-glasgow/",
-          "date": "2026-05-02T07:08:36+00:00",
-          "category": "uk"
+          "title": "Karol Nawrocki o „bezmyślnym podważaniu sojuszy przez polityków”. Uderzył w Donalda Tuska?",
+          "source": "Wprost",
+          "url": "https://www.wprost.pl/polityka/12318747/karol-nawrocki-o-bezmyslnym-podwazaniu-sojuszy-przez-politykow-uderzyl-w-donalda-tuska.html",
+          "date": "2026-05-02T12:23:00+00:00",
+          "category": "poland"
         },
         {
-          "title": "Farage says a Reform council in Norfolk would launch legal action against solar farms",
-          "source": "EDP24",
-          "url": "https://www.edp24.co.uk/news/26070040.farage-vows-challenge-norfolk-solar-farms-court/",
-          "date": "2026-05-02T05:00:00+00:00",
-          "category": "uk"
+          "title": "Karol Nawrocki wręczył nominacje generalskie. Uroczystość przed Pałacem Prezydenckim - Polska - PR24.PL",
+          "source": "Polskie Radio",
+          "url": "https://www.polskieradio.pl/5/1222/Artykul/3681541,karol-nawrocki-wreczyl-nominacje-generalskie-uroczystosc-przed-palacem-prezydenckim",
+          "date": "2026-05-02T11:55:00+00:00",
+          "category": "poland"
         },
         {
-          "title": "War of words as Reform and Conservative leaders visit Hampshire - In Pictures",
-          "source": "portsmouth.co.uk",
-          "url": "https://www.portsmouth.co.uk/news/politics/reform-and-conservative-leaders-visit-hampshire-in-pictures-8478231",
-          "date": "2026-05-01T17:01:00+00:00",
-          "category": "uk"
+          "title": "Wpis Tuska o wspólnocie transatlantyckiej. Cięta riposta posła PiS",
+          "source": "Tygodnik Solidarność",
+          "url": "https://tysol.pl/wiadomosci/wpis-tuska-o-wspolnocie-transatlantyckiej-cieta-riposta-posla-pis,168308",
+          "date": "2026-05-02T11:27:00+00:00",
+          "category": "poland"
         },
         {
-          "title": "Nigel Farage and Zack Polanski have one thing in common with 40% of Britons",
-          "source": "Daily Express",
-          "url": "https://www.express.co.uk/news/politics/2200786/nigel-farage-zack-polanski-local-elections",
-          "date": "2026-05-01T16:00:00+00:00",
-          "category": "uk"
+          "title": "Prasa: Kaczyński radykalizuje się, by wrócić do władzy",
+          "source": "dw.com",
+          "url": "https://www.dw.com/pl/prasa-kaczy%C5%84ski-radykalizuje-si%C4%99-by-wr%C3%B3ci%C4%87-do-w%C5%82adzy/a-77017671",
+          "date": "2026-05-02T10:53:25+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Nawrocki wręczył odznaczenia. \"Wszystkich łączy jedno\"",
+          "source": "Do Rzeczy",
+          "url": "https://dorzeczy.pl/kraj/881638/nawrocki-wreczyl-odznaczenia-wszystkich-laczy-jedno.html",
+          "date": "2026-05-02T09:10:00+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Barbara Nowak rzuca wyzwanie, Kościół i PiS reagują! Jest NOWY, zaskakujący komunikat!",
+          "source": "Polityka Super Express",
+          "url": "https://polityka.se.pl/wiadomosci/barbara-nowak-rzuca-wyzwanie-kosciol-i-pis-reaguja-jest-nowy-zaskakujacy-komunikat-aa-s7qC-Tv7P-Qk9e.html",
+          "date": "2026-05-02T08:09:00+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Barbara Nowak bojkotuje państwowe obchody. Bernardyni reagują",
+          "source": "WP Wiadomości",
+          "url": "https://wiadomosci.wp.pl/barbara-nowak-bojkotuje-panstwowe-obchody-bernardyni-reaguja-7281368678873120a",
+          "date": "2026-05-02T05:35:59+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Trump administration defers $91M more in Minnesota Medicaid funds citing fraud vulnerability",
+          "source": "southernminn.com",
+          "url": "https://www.southernminn.com/faribault_daily_news/news/state/trump-administration-defers-91m-more-in-minnesota-medicaid-funds-citing-fraud-vulnerability/article_39801046-88ec-440e-99dc-40135f0cd519.html",
+          "date": "2026-05-01T21:00:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Odejście J. Kowalskiego to kolejna odsłona rozpadu PiS! R. Fritz – Wideo",
+          "source": "Do Rzeczy",
+          "url": "https://dorzeczy.pl/wideo/shorts/881560/odejscie-j-kowalskiego-to-kolejna-odslona-rozpadu-pis-r-fritz.html",
+          "date": "2026-05-01T18:07:27+00:00",
+          "category": "poland"
         }
       ],
-      "first_seen": "2026-05-01T13:58:36+00:00",
-      "last_seen": "2026-05-02T08:03:19+00:00"
+      "first_seen": "2026-05-02T13:52:49+00:00",
+      "last_seen": "2026-05-02T13:52:49+00:00"
     }
   ]
 }
