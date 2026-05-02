@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-02T04:04:16+00:00",
+  "updated_at": "2026-05-02T08:14:58+00:00",
   "lookback_hours": 48,
   "model": "Mistral Large",
   "status": "ok",
@@ -7,56 +7,82 @@
     {
       "id": "trumps-iran-war-dominates-global-right-wing-coverage",
       "title": "Trump’s Iran war dominates global right-wing coverage",
-      "blurb": "Right-wing and far-right media across the US, UK, France, and Italy are intensely covering the Trump administration's military actions in Iran, framing it as a decisive foreign policy move. Parallel narratives emphasize US strength, congressional deadlock, and economic impacts like rising gas prices, while European outlets criticize perceived US unilateralism.",
+      "blurb": "Right-wing media in the US, UK, France, Italy, and Spain are intensely focused on President Trump's military actions against Iran, framing it as a defining issue of his administration. The coverage highlights the economic impact, troop movements, and diplomatic tensions, with parallel reactions across these countries.",
       "convergence": 5,
       "countries": [
         {
           "name": "🇺🇸 MAGA / Trump",
-          "note": "Extensive coverage of troop withdrawals, congressional deadlines, and economic fallout; Trump’s speeches in The Villages highlight Iran as a key issue."
+          "note": "Extensive coverage of troop withdrawals from Germany, Iran war strategies, and economic impacts like rising gas prices."
         },
         {
           "name": "🇬🇧 Reform UK",
-          "note": "Farage ties Iran war to broader critiques of NATO and US foreign policy, echoing Trump’s rhetoric."
+          "note": "Criticism of Trump's Iran policies, focus on defense trust and national security implications."
         },
         {
           "name": "🇫🇷 Rassemblement National",
-          "note": "Bardella and Le Pen frame Iran conflict as a test of Western resolve, aligning with Trump’s ‘America First’ stance."
+          "note": "Reactions to Trump's tariffs and diplomatic tensions, with Bardella and Le Pen commenting on France's stance."
         },
         {
           "name": "🇮🇹 Fratelli d'Italia / Lega",
-          "note": "Meloni’s government navigates EU-US tensions over Iran, with Salvini echoing Trump’s hardline approach."
+          "note": "Meloni's government discusses Italy's role in the conflict, including diplomatic efforts and economic consequences."
         },
         {
           "name": "🇪🇸 Vox",
-          "note": "Abascal links Iran war to anti-immigration rhetoric, portraying it as a clash of civilizations."
+          "note": "Coverage of Spain's diplomatic tensions with the US over Iran, including threats of troop withdrawals and economic impacts."
+        },
+        {
+          "name": "🇩🇪 Alternative für Deutschland",
+          "note": "Focus on Germany's diplomatic tensions with the US, including criticism of Trump's troop withdrawal threats."
         }
       ],
       "signals": [
         "shared framing",
+        "reaction to external event",
         "policy contagion",
-        "parallel reactions to US actions"
+        "parallel elections"
       ],
-      "article_count": 150,
+      "article_count": 120,
       "refs": [
         {
-          "title": "Trump news at a glance: US troops to be pulled from Germany as president’s feud with Nato allies intensifies",
-          "source": "The Guardian",
-          "url": "https://www.theguardian.com/us-news/2026/may/01/trump-news-at-a-glance-latest-updates-today",
-          "date": "2026-05-02T02:33:00+00:00",
+          "title": "‘Humiliated’ Trump Taking Toy Soldiers Home in Epic Tantrum",
+          "source": "The Daily Beast",
+          "url": "https://www.thedailybeast.com/trump-taking-toy-soldiers-home-in-epic-tantrum-after-he-was-humiliated/",
+          "date": "2026-05-02T06:52:00+00:00",
           "category": "usa"
         },
         {
-          "title": "Congress defers to President Trump on Iran",
-          "source": "FOX 2 Detroit",
-          "url": "https://www.fox2detroit.com/video/fmc-m5i2pf242lsd0rgj",
-          "date": "2026-05-02T00:31:01+00:00",
+          "title": "US pulling 5,000 troops from Germany amid spat with Trump over Iran war",
+          "source": "The Times of Israel",
+          "url": "https://www.timesofisrael.com/us-pulling-5000-troops-from-germany-amid-spat-with-trump-over-iran-war/",
+          "date": "2026-05-02T03:49:09+00:00",
           "category": "usa"
         },
         {
-          "title": "US to withdraw 5,000 troops from Germany in next 6-12 months",
-          "source": "WSLS",
-          "url": "https://www.wsls.com/news/politics/2026/05/01/us-to-withdraw-5000-troops-from-germany-in-next-6-12-months/",
-          "date": "2026-05-01T22:30:52+00:00",
+          "title": "Trump administration pulling 5K troops out of Germany over Iran war criticism",
+          "source": "New York Post",
+          "url": "https://nypost.com/2026/05/01/world-news/trump-administration-pulling-5k-troops-out-of-germany-over-iran-war-criticism/",
+          "date": "2026-05-02T01:30:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump administration to pull 5,000 troops from Germany",
+          "source": "NBC News",
+          "url": "https://www.nbcnews.com/nightly-news/video/trump-administration-to-pull-5-000-troops-from-germany-262564421559",
+          "date": "2026-05-01T22:56:15+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump administration is pulling 5,000 troops from Germany",
+          "source": "NBC News",
+          "url": "https://www.nbcnews.com/politics/national-security/trump-administration-pulling-5000-troops-germany-rcna343147",
+          "date": "2026-05-01T22:20:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump administration to cut 5,000 U.S. troops from Germany",
+          "source": "CBS News",
+          "url": "https://www.cbsnews.com/news/trump-germany-5000-troops/",
+          "date": "2026-05-01T21:19:06+00:00",
           "category": "usa"
         },
         {
@@ -67,11 +93,11 @@
           "category": "usa"
         },
         {
-          "title": "Some Committees Moved Behind Closed Doors, Canada-Wyoming Pipeline",
-          "source": "CPAC.ca",
-          "url": "https://www.cpac.ca/scrums/episode/some-committees-moved-behind-closed-doors-canada-wyoming-pipeline?id=fa6e0564-6d68-4efb-b3ef-f0bf606d963f",
-          "date": "2026-05-01T19:37:41+00:00",
-          "category": "networks"
+          "title": "Donald Trump says Iran war 'terminated,' as war powers deadline arrives",
+          "source": "The Jerusalem Post",
+          "url": "https://www.jpost.com/international/article-894856",
+          "date": "2026-05-01T20:33:56+00:00",
+          "category": "usa"
         },
         {
           "title": "Trump says he doesn't need congressional authorization for military operations in Iran, citing ceasefire",
@@ -81,17 +107,31 @@
           "category": "usa"
         },
         {
-          "title": "Trump says he’s ‘not satisfied’ with Iran’s latest proposal to end war with US",
-          "source": "WOWT",
-          "url": "https://www.wowt.com/2026/05/01/trump-says-hes-not-satisfied-with-irans-latest-proposal-end-war-with-us/",
-          "date": "2026-05-01T17:21:00+00:00",
+          "title": "President Trump says he's ‘not satisfied’ with current Iran negotiations",
+          "source": "The Detroit News",
+          "url": "https://www.detroitnews.com/videos/news/world/2026/05/01/president-trump-not-satisfied-with-current-iran-negotiations/89893847007/",
+          "date": "2026-05-01T17:46:42+00:00",
           "category": "usa"
         },
         {
-          "title": "Iran delivers fresh talks proposal to Pakistani mediators",
-          "source": "DW.com",
-          "url": "https://www.dw.com/en/iran-delivers-fresh-talks-proposal-to-pakistani-mediators/live-77007473",
-          "date": "2026-05-01T15:31:28+00:00",
+          "title": "Trump: 'I'm not satisfied' with Iran's latest offer",
+          "source": "WLWT",
+          "url": "https://www.wlwt.com/article/trump-unsatisfied-iran-proposal-end-war/71186362",
+          "date": "2026-05-01T17:14:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "White House says Iran war ‘terminated,’ as war powers deadline arrives",
+          "source": "Bangor Daily News",
+          "url": "https://www.bangordailynews.com/2026/05/01/politics/washington/trump-iran-war-ceasefire-war-powers-act/",
+          "date": "2026-05-01T16:56:03+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Americans remain critical of Trump administration’s approach to Iran",
+          "source": "Pew Research Center",
+          "url": "https://www.pewresearch.org/short-reads/2026/05/01/americans-remain-critical-of-trump-administrations-approach-to-iran/",
+          "date": "2026-05-01T15:59:05+00:00",
           "category": "usa"
         },
         {
@@ -102,10 +142,10 @@
           "category": "usa"
         },
         {
-          "title": "The Latest: Trump administration says war in Iran has been ‘terminated’ before 60-day deadline",
-          "source": "WTOP",
-          "url": "https://wtop.com/national/2026/05/the-latest-trump-administration-says-war-in-iran-has-been-terminated-before-60-day-deadline/",
-          "date": "2026-05-01T12:19:42+00:00",
+          "title": "Trump administration claims Iran conflict ended as 60-day war powers deadline hits",
+          "source": "KOMO",
+          "url": "https://komonews.com/news/nation-world/president-donald-trump-administration-claims-iran-conflict-ended-as-60-day-war-powers-deadline-hits-fragile-ceasefire-democrat-republican-military-actions-us-naval-blockade-defense-secretary-hegseth",
+          "date": "2026-05-01T12:45:57+00:00",
           "category": "usa"
         },
         {
@@ -116,10 +156,10 @@
           "category": "usa"
         },
         {
-          "title": "Pete Hegseth says there is no deadline for war in Iran",
-          "source": "whas11.com",
-          "url": "https://www.whas11.com/video/news/nation-world/pete-hegseth-says-there-is-no-deadline-for-war-in-iran/417-fded0b7e-254a-47d7-9ece-15cb18900a34",
-          "date": "2026-05-01T10:14:00+00:00",
+          "title": "Deadline for Trump administration to get Iran war approved by Congress looming",
+          "source": "CBS News",
+          "url": "https://www.cbsnews.com/newyork/video/deadline-for-trump-administration-to-get-iran-war-approved-by-congress-looming/",
+          "date": "2026-05-01T10:44:00+00:00",
           "category": "usa"
         },
         {
@@ -137,77 +177,113 @@
           "category": "usa"
         },
         {
-          "title": "Trump administration says war with Iran ‘terminated’ before 60-day deadline",
-          "source": "ynetnews",
-          "url": "https://www.ynetnews.com/article/rymga00zczl",
-          "date": "2026-05-01T01:25:23+00:00",
+          "title": "Trump Administration Claims ‘No Need for Congress Nod’ on Iran Ops Amid Ceasefire",
+          "source": "Open Magazine",
+          "url": "https://openthemagazine.com/world/trump-administration-claims-no-need-for-congress-nod-on-iran-ops-amid-ceasefire",
+          "date": "2026-05-01T02:28:05+00:00",
           "category": "usa"
         }
       ],
       "first_seen": "2026-05-02T04:04:16+00:00",
-      "last_seen": "2026-05-02T04:04:16+00:00"
+      "last_seen": "2026-05-02T08:14:58+00:00"
     },
     {
       "id": "far-right-parties-push-national-priority-policies",
       "title": "Far-right parties push 'national priority' policies",
-      "blurb": "Vox in Spain, Rassemblement National in France, and Fratelli d'Italia in Italy are converging on policies that prioritize citizens over immigrants in welfare, housing, and employment. This theme extends to local elections, where far-right parties leverage anti-immigration sentiment to challenge mainstream conservatives.",
+      "blurb": "Right-wing and far-right parties in Spain, France, Italy, the UK, and Norway are advancing policies that prioritize citizens over immigrants, often framing it as a response to economic and social pressures. These policies include housing, welfare, and employment restrictions targeting non-citizens.",
       "convergence": 4,
       "countries": [
         {
           "name": "🇪🇸 Vox",
-          "note": "Campaigns in Andalusia and Valencia emphasize ‘Spaniards first’ in housing and social services, clashing with PSOE and PP."
+          "note": "Proposals for mass deportations, opposition to migrant regularization, and 'national priority' in housing and welfare."
         },
         {
           "name": "🇫🇷 Rassemblement National",
-          "note": "Le Pen and Bardella advocate for ‘French priority’ in welfare and jobs, targeting Macron’s immigration policies."
+          "note": "Bardella and Le Pen advocate for policies prioritizing French citizens in welfare and employment."
         },
         {
           "name": "🇮🇹 Fratelli d'Italia / Lega",
-          "note": "Meloni’s housing plan and labor decrees implicitly favor Italian citizens, while Salvini pushes anti-immigration measures."
+          "note": "Meloni's government introduces housing policies favoring Italian citizens and restricting migrant access."
         },
         {
           "name": "🇬🇧 Reform UK",
-          "note": "Farage’s ‘Britain First’ rhetoric mirrors ‘national priority’ themes, opposing migrant boat crossings."
+          "note": "Farage pushes for policies prioritizing British citizens in housing, welfare, and employment."
         },
         {
           "name": "🇳🇴 Fremskrittspartiet",
-          "note": "Listhaug ties welfare cuts to anti-immigration policies, prioritizing Norwegian citizens."
+          "note": "Listhaug advocates for stricter immigration controls and welfare prioritization for Norwegian citizens."
         }
       ],
       "signals": [
         "policy imitation",
+        "shared framing",
         "parallel elections",
-        "shared framing"
+        "contagion of rhetoric"
       ],
-      "article_count": 120,
+      "article_count": 80,
       "refs": [
         {
-          "title": "Vox toma la delantera en Valencia",
-          "source": "El Debate",
-          "url": "https://www.eldebate.com/espana/comunidad-valenciana/20260502/vox-toma-delantera-valencia_412796.html",
-          "date": "2026-05-02T02:00:00+00:00",
+          "title": "Vox admite que la prórroga de alquileres que rechazó en el Congreso beneficiaba \"puntualmente\" a inquilinos",
+          "source": "Europa Press",
+          "url": "https://www.europapress.es/economia/construccion-y-vivienda-00342/noticia-vox-admite-prorroga-alquileres-rechazo-congreso-beneficiaba-puntualmente-inquilinos-20260502094456.html",
+          "date": "2026-05-02T07:44:56+00:00",
           "category": "spain"
         },
         {
-          "title": "La regularización de migrantes, nuevo frente judicial entre Vox y el Ejecutivo",
-          "source": "MUNDIARIO",
-          "url": "https://www.mundiario.com/articulo/politica/regularizacion-migrantes-nuevo-frente-judicial-entre-vox-ejecutivo/20260501232722384769.html",
-          "date": "2026-05-01T21:27:22+00:00",
+          "title": "Bustinduy, a PP, Vox y Junts tras tumbar el decreto de los alquileres: \"Es injustificable votar para echar a tres millones de personas a la calle\"",
+          "source": "LaSexta",
+          "url": "https://www.lasexta.com/programas/el-intermedio/bustinduy-vox-junts-tumbar-decreto-alquileres-injustificable-votar-echar-tres-millones-personas-calle_2026050269f592f46a56d80bba7c8ed1.html",
+          "date": "2026-05-02T06:00:20+00:00",
           "category": "spain"
         },
         {
-          "title": "Vox dinamita los puentes con la Iglesia antes de la visita del Papa",
-          "source": "elDiario.es",
-          "url": "https://www.eldiario.es/sociedad/vox-dinamita-puentes-iglesia-visita-papa_1_13181876.html",
-          "date": "2026-05-01T19:30:31+00:00",
+          "title": "La escalada antimigratoria de Vox: deportaciones masivas, contra la regularización y \"prioridad nacional\"",
+          "source": "Elplural.com",
+          "url": "https://www.elplural.com/politica/espana/escalada-antimigratoria-vox-deportaciones-masivas-contra-regularizacion-prioridad-nacional_388588102",
+          "date": "2026-05-02T05:09:37+00:00",
           "category": "spain"
         },
         {
-          "title": "Magyar Péter bizalmi körből építkezik, ezért kap kulcstárcát a sógora",
-          "source": "Magyar Nemzet",
-          "url": "https://magyarnemzet.hu/belfold/2026/05/magyar-peter-sogor-tisza-mellethei-barna-marton-kiszelly-zoltan",
-          "date": "2026-05-01T18:06:00+00:00",
-          "category": "hungary"
+          "title": "VOX Boadilla llevará al próximo Pleno una moción en apoyo a las familias",
+          "source": "Noroeste Madrid",
+          "url": "https://www.noroestemadrid.com/2026/05/vox-boadilla-llevara-al-proximo-pleno-una-mocion-en-apoyo-a-las-familias/",
+          "date": "2026-05-02T04:27:16+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "El sindicato Solidaridad y VOX reivindican en Barcelona en el acto del 1 de mayo la \"prioridad nacional\" en...",
+          "source": "gaceta.es",
+          "url": "https://gaceta.es/espana/el-sindicato-solidaridad-y-vox-reivindican-en-barcelona-en-el-acto-del-1-de-mayo-la-prioridad-nacional-en-las-ayudas-en-la-sanidad-y-en-la-vivienda-20260502-0611/",
+          "date": "2026-05-02T04:15:40+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Los desvelos de Vox con el burka",
+          "source": "La Vanguardia",
+          "url": "https://www.lavanguardia.com/politica/20260502/11527676/desvelos-vox-burka.html",
+          "date": "2026-05-02T04:00:00+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Vox monitoriza 24 horas las redes sociales ante las amenazas de agresión en sus actos políticos",
+          "source": "The Objective",
+          "url": "https://theobjective.com/espana/politica/2026-05-02/vox-monitoriza-redes-sociales-amenazas-agresion-actos-politicos/",
+          "date": "2026-05-02T03:25:00+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Vox apuntala su campaña en la Andalucía rural en busca del 'sorpasso' al PSOE en cuatro provincias",
+          "source": "Vozpopuli",
+          "url": "https://www.vozpopuli.com/espana/andalucia/vox-apuntala-su-campana-en-la-andalucia-rural-en-busca-del-sorpasso-al-psoe-en-cuatro-provincias.html",
+          "date": "2026-05-02T02:45:00+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Moreno pide el respaldo de los andaluces para no tener \"las manos atadas\" respecto a Vox",
+          "source": "El Periódico",
+          "url": "https://www.elperiodico.com/es/politica/20260501/moreno-pide-respaldo-andaluces-manos-129757794",
+          "date": "2026-05-01T20:25:40+00:00",
+          "category": "spain"
         },
         {
           "title": "España: Santiago Abascal, el líder de VOX rechaza el acuerdo del Mercosur con la UE y ataca la migración desde América",
@@ -217,17 +293,31 @@
           "category": "spain"
         },
         {
-          "title": "El principio \"primero los de casa\" trastoca la campaña de Andalucía",
-          "source": "Diari ARA",
-          "url": "https://es.ara.cat/politica/principio-casa-trastoca-campana-andalucia_1_5724734.amp.html",
-          "date": "2026-05-01T17:01:09+00:00",
+          "title": "Luca Zaia: “Buttafuoco è una vittoria di Meloni. Ora tutti lo sostengano”",
+          "source": "HuffPost Italia",
+          "url": "https://www.huffingtonpost.it/politica/2026/05/01/news/luca_zaia_con_buttafuoco_meloni_ha_fatto_la_scelta_giusta_tutti_lo_sostengano-21821895/",
+          "date": "2026-05-01T17:08:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Vox busca en las urnas un grillete para Juanma Moreno",
+          "source": "Diario Sur",
+          "url": "https://www.diariosur.es/elecciones/vox-busca-urnas-grillete-juanma-moreno-20260501184222-nt.html",
+          "date": "2026-05-01T16:44:15+00:00",
           "category": "spain"
         },
         {
-          "title": "El mitin de Vox, protagonizado por Santiago Abascal, en imágenes",
-          "source": "Ideal",
-          "url": "https://www.ideal.es/jaen/mitin-vox-protagonizado-santiago-abascal-imagenes-20260501175721-ga.html",
-          "date": "2026-05-01T15:57:46+00:00",
+          "title": "Abascal incendia la campaña al llamar a Sánchez \"chulo putas\" y acusarle de \"robar las elecciones\"",
+          "source": "Libertad Digital",
+          "url": "https://www.libertaddigital.com/andalucia/2026-05-01/abascal-incendia-la-campana-al-llamar-a-sanchez-chulo-putas-y-acusarle-de-robar-las-elecciones-1b-7397736/",
+          "date": "2026-05-01T15:51:41+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Abascal asegura que está en juego \"si Moreno sigue con manos libres para no hacer nada\"",
+          "source": "Andalucía Información",
+          "url": "https://www.andaluciainformacion.es/articulo/elecciones-andalucia-17-mayo/abascal-asegura-que-juego-moreno-sigue-manos-libres-hacer-nada/202605011656213252708.html",
+          "date": "2026-05-01T14:56:21+00:00",
           "category": "spain"
         },
         {
@@ -238,31 +328,31 @@
           "category": "spain"
         },
         {
-          "title": "Gavira: \"Vamos a luchar para que el acuerdo de Mercosur no se aplique\"",
-          "source": "Canal Sur",
-          "url": "https://www.canalsur.es/noticias/gavira-vamos-a-luchar-para-que-el-acuerdo-de-mercosur-no-se-aplique/2269984.html",
-          "date": "2026-05-01T13:52:30+00:00",
+          "title": "Abascal escalates insults against Sánchez, calling him 'pimp'",
+          "source": "Todo Alicante",
+          "url": "https://www.todoalicante.es/english/abascal-escalates-insults-against-20260501010513-nt.html",
+          "date": "2026-05-01T13:55:13+00:00",
           "category": "spain"
         },
         {
-          "title": "Abascal defiende la \"prioridad nacional\" y asegura que el 17-M se juega el \"condicionar el Gobierno\" a Moreno Bonilla",
-          "source": "RTVE.es",
-          "url": "https://www.rtve.es/noticias/20260501/abascal-defiende-prioridad-nacional-asegura-17-m-se-juega-condicionar-gobierno-a-moreno-bonilla/17050056.shtml",
-          "date": "2026-05-01T12:52:16+00:00",
+          "title": "Vox will take the regularization of immigrants to the Supreme Court, which it associates with an “invasion” and “Islamization” of society | Andalusia Elections",
+          "source": "lnginnorthernbc.ca",
+          "url": "https://lnginnorthernbc.ca/2026/05/01/vox-will-take-the-regularization-of-immigrants-to-the-supreme-court-which-it-associates-with-an-invasion-and-islamization-of-society-andalusia-elections/",
+          "date": "2026-05-01T13:24:22+00:00",
           "category": "spain"
         },
         {
-          "title": "VOX rechaza el acuerdo Mercosur por amenazar el campo español y la soberanía alimentaria",
-          "source": "Cartagena Diario",
-          "url": "https://cartagenadiario.es/acuerdo-mercosur-campo-espanol-vox-asamblea-regional-murcia/",
-          "date": "2026-05-01T11:29:59+00:00",
+          "title": "Ana Redondo avisa a PP y Vox: \"No vamos a permitir retrocesos en Castilla y León\"",
+          "source": "tribunazamora.com",
+          "url": "https://www.tribunazamora.com/noticias/443170/ana-redondo-avisa-a-pp-y-vox-no-vamos-a-permitir-retrocesos-en-castilla-y-leon",
+          "date": "2026-05-01T11:15:00+00:00",
           "category": "spain"
         },
         {
-          "title": "Vox amaga en el Parlament con deportar a una diputada de ERC",
-          "source": "moncloa.com",
-          "url": "https://www.moncloa.com/2026/05/01/vox-parlament-deportacion-diputada-erc-3374647/",
-          "date": "2026-05-01T10:11:53+00:00",
+          "title": "Vox confía en que la dirección del PP no \"torpedee\" el acuerdo en Castilla y León",
+          "source": "Diario Palentino",
+          "url": "https://www.diariopalentino.es/noticia/zbccaf7e4-128e-43e3-b83959e4470b8482/202605/vox-confia-en-que-la-direccion-del-pp-no-torpedee-el-acuerdo",
+          "date": "2026-05-01T10:26:56+00:00",
           "category": "spain"
         },
         {
@@ -271,72 +361,87 @@
           "url": "https://www.lasexta.com/noticias/nacional/vamos-deportar-momento-amenaza-vox-parlament-diputada-musulmana-erc_2026050169f471147b1d574ac6639125.html",
           "date": "2026-05-01T09:23:32+00:00",
           "category": "spain"
-        },
-        {
-          "title": "VOX denuncia que el veto a coches con etiqueta B en Barcelona limita derechos desde 2028",
-          "source": "CatalunyaPress",
-          "url": "https://www.catalunyapress.es/articulo/politica-catalunya/2026-05-01/5865276-vox-denuncia-veto-coches-etiqueta-b-barcelona-limita-derechos-desde-2028",
-          "date": "2026-05-01T08:27:00+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "VOX acusa a Moreno Bonilla de excluir el tren a Motril del POTA y denuncia “humo electoralista” del PP",
-          "source": "La Gaceta de Granada",
-          "url": "https://lagacetadegranada.es/vox-acusa-a-moreno-bonilla-de-excluir-el-tren-a-motril-del-pota-y-denuncia-humo-electoralista-del-pp/",
-          "date": "2026-05-01T07:09:06+00:00",
-          "category": "spain"
         }
       ],
       "first_seen": "2026-04-29T14:59:17+00:00",
-      "last_seen": "2026-05-02T04:04:16+00:00"
+      "last_seen": "2026-05-02T08:14:58+00:00"
     },
     {
       "id": "far-right-surges-in-european-polls-and-elections",
       "title": "Far-right surges in European polls and elections",
-      "blurb": "Right-wing and far-right parties are making significant gains in polls and local elections across Europe, driven by economic discontent, immigration concerns, and anti-establishment sentiment. This trend is evident in Germany, France, Sweden, and the UK, where far-right parties are reshaping political landscapes.",
+      "blurb": "Right-wing and far-right parties in Germany, France, Sweden, the UK, and Norway are experiencing significant gains in polls and recent elections. This trend reflects growing voter dissatisfaction with mainstream parties and a shift toward nationalist and anti-immigration platforms.",
       "convergence": 4,
       "countries": [
         {
           "name": "🇩🇪 Alternative für Deutschland",
-          "note": "Leads polls in Saxony-Anhalt and gains in local elections, despite internal scandals."
+          "note": "Leading in polls for upcoming state elections, with strong grassroots mobilization efforts."
         },
         {
           "name": "🇫🇷 Rassemblement National",
-          "note": "Le Pen and Bardella lead polls ahead of 2027 presidential election, with strong showings in May Day rallies."
+          "note": "Le Pen and Bardella lead in polls for the 2027 presidential election, with strong May Day rallies."
         },
         {
           "name": "🇸🇪 Sverigedemokraterna",
-          "note": "Disrupts parliamentary vote-counting system, forcing concessions from ruling coalition."
+          "note": "Growing influence in Swedish politics, with potential to shape government policies on migration and welfare."
         },
         {
           "name": "🇬🇧 Reform UK",
-          "note": "Farage’s party wins by-elections and targets local council gains, challenging Conservatives."
+          "note": "Gaining ground in local elections, with Farage leading the charge against mainstream parties."
         },
         {
           "name": "🇳🇴 Fremskrittspartiet",
-          "note": "Listhaug’s party leads polls in Norway, aiming for 2029 government takeover."
+          "note": "Leading in Norwegian polls, with Listhaug positioning the party for potential government participation."
         }
       ],
       "signals": [
         "parallel elections",
-        "contagion of rhetoric",
-        "policy imitation"
+        "policy contagion",
+        "shared framing",
+        "contagion of rhetoric"
       ],
-      "article_count": 90,
+      "article_count": 60,
       "refs": [
         {
-          "title": "Reform storms to stunning by-election victory in huge boost for Nigel Farage",
-          "source": "Daily Express",
-          "url": "https://www.express.co.uk/news/politics/2200948/reform-tenbury-council-by-election-win",
-          "date": "2026-05-01T22:23:00+00:00",
-          "category": "uk"
+          "title": "«Soler seg i medgang»",
+          "source": "smp.no",
+          "url": "https://www.smp.no/meninger/leder/o/j03Xe0/finner-sakene-folk-kjenner-seg-igjen-i",
+          "date": "2026-05-02T07:18:31+00:00",
+          "category": "norway"
         },
         {
-          "title": "Meloni presenta Piano Casa a Palazzo Chigi, immagini",
-          "source": "Agenzia Vista",
-          "url": "https://www.agenziavista.it/tempo-reale/2026/1000391_meloni-presenta-piano-casa-a-palazzo-chigi-immagini/",
-          "date": "2026-05-01T18:07:00+00:00",
-          "category": "italy"
+          "title": "Swedish government commits to coalition with fascist Sweden Democrats after upcoming parliamentary election",
+          "source": "World Socialist Web Site",
+          "url": "https://www.wsws.org/en/articles/2026/05/02/dlfo-m02.html",
+          "date": "2026-05-02T04:16:40+00:00",
+          "category": "sweden"
+        },
+        {
+          "title": "Joe Kaeser rät Kanzler Merz zu Minderheitsregierung: \"Letzte Chance vor AfD-Mehrheit\"",
+          "source": "osna.live",
+          "url": "https://osna-live.de/202283/joe-kaeser-raet-kanzler-merz-zu-minderheitsregierung-letzte-chance-vor-afd-mehrheit/",
+          "date": "2026-05-02T03:01:01+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "«Kann niemandem mehr erklären, warum er nicht AfD wählen soll»: CDU-Politiker Engelhard kritisiert Kurs der eigenen Partei",
+          "source": "Die Weltwoche",
+          "url": "https://weltwoche.ch/daily/kann-niemandem-mehr-erklaeren-warum-er-nicht-afd-waehlen-soll-cdu-politiker-engelhard-kritisiert-kurs-der-eigenen-partei/",
+          "date": "2026-05-02T02:05:24+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Büttel wird in Hungen erneut Stadtverordnetenvorsteher",
+          "source": "Giessener Anzeiger",
+          "url": "https://www.giessener-anzeiger.de/lokales/hungen-ort848765/trotz-afd-einzug-buettel-wird-erneut-stadtverordnetenvorsteher-94288200.html",
+          "date": "2026-05-01T21:00:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Frp-politiker (23) fikk voldsalarm etter Gaza-utspill: – Redd for å gå ut",
+          "source": "NRK",
+          "url": "https://www.nrk.no/rogaland/frp-politiker-kristin-lode-fikk-voldsalarm-etter-gaza-utspill_-_-var-redd-for-a-ga-ut-1.17859619",
+          "date": "2026-05-01T19:36:11+00:00",
+          "category": "norway"
         },
         {
           "title": "Sondage : forte défiance envers Emmanuel Macron et percée du RN dans un paysage politique fragmenté",
@@ -346,39 +451,39 @@
           "category": "france"
         },
         {
-          "title": "Nigel Farage and Zack Polanski have one thing in common with 40% of Britons",
-          "source": "Daily Express",
-          "url": "https://www.express.co.uk/news/politics/2200786/nigel-farage-zack-polanski-local-elections",
-          "date": "2026-05-01T16:00:00+00:00",
-          "category": "uk"
+          "title": "Første Frp-landsmøte etter brakvalget: – De burde skifte navn til Administrasjonspartiet",
+          "source": "Altinget.no",
+          "url": "https://www.altinget.no/artikkel/foerste-frp-landsmoete-etter-brakvalget-de-burde-skifte-navn-til-administrasjonspartiet",
+          "date": "2026-05-01T16:28:09+00:00",
+          "category": "norway"
         },
         {
-          "title": "Horváth László kapja a visszalépő Szécsi Zoltán parlamenti mandátumát",
-          "source": "Blikk",
-          "url": "https://www.blikk.hu/politika/magyar-politika/szecsi-zoltan-fidesz-parlament-frakcio-horvath-laszlo/59j8htk",
-          "date": "2026-05-01T15:42:55+00:00",
-          "category": "hungary"
+          "title": "Sylvis maktdemonstrasjon",
+          "source": "Stavanger Aftenblad",
+          "url": "https://www.aftenbladet.no/meninger/kommentar/i/7pPAJw/sylvis-maktdemonstrasjon",
+          "date": "2026-05-01T15:22:57+00:00",
+          "category": "norway"
         },
         {
-          "title": "Filmmaker Stanley Kubrick’s Daughter Vivian Attacks Erika Kirk, Demands Trump ‘Kill’ Turning Point USA",
-          "source": "breitbart.com",
-          "url": "https://www.breitbart.com/entertainment/2026/05/01/filmmaker-stanley-kubricks-daughter-vivian-attacks-erika-kirk-demands-trump-kill-turning-point-usa/",
-          "date": "2026-05-01T15:15:19+00:00",
-          "category": "networks"
+          "title": "Svartmaling gjør susen",
+          "source": "Aftenposten",
+          "url": "https://www.aftenposten.no/meninger/kommentar/i/OkyBk3/svartmaling-gjoer-susen",
+          "date": "2026-05-01T14:30:53+00:00",
+          "category": "norway"
         },
         {
-          "title": "Council by-election results in full: Find out how Britons voted after Reform UK makes local debut",
-          "source": "GB News",
-          "url": "https://www.gbnews.com/politics/council-by-election-results-worcestershire-reform-uk-conservatives",
-          "date": "2026-05-01T14:12:19+00:00",
-          "category": "uk"
+          "title": "Staten er til for folket – folket er ikke til for staten - Fremskrittspartiet",
+          "source": "FrP.",
+          "url": "https://www.frp.no/nyheter/staten-er-til-for-folket-folket-er-ikke-til-for-staten",
+          "date": "2026-05-01T13:21:00+00:00",
+          "category": "norway"
         },
         {
-          "title": "Elezioni amministrative: il «mid term» insidioso di Giorgia Meloni",
-          "source": "panorama.it",
-          "url": "https://www.panorama.it/attualita/politica/elezioni-amministrative-il-mid-term-insidioso-di-giorgia-meloni",
-          "date": "2026-05-01T13:00:00+00:00",
-          "category": "italy"
+          "title": "Hardt ut: – Et parti tom for ideer",
+          "source": "Sol.no samler de viktigste nyhetene for deg!",
+          "url": "https://sol.no/nyheter/hardt-ut-et-parti-tom-for-ideer/84567297",
+          "date": "2026-05-01T12:58:33+00:00",
+          "category": "norway"
         },
         {
           "title": "Sylvi Listhaug taler til Frps landsmøte: –⁠ Hele landet skal få oppleve mer Frp-politikk",
@@ -395,11 +500,11 @@
           "category": "norway"
         },
         {
-          "title": "Election claims put NHS leadership, taxes and infrastructure under scrutiny",
-          "source": "South Wales Argus",
-          "url": "https://www.southwalesargus.co.uk/news/26067870.dan-thomas-voters-back-reform-uk-casnewydd/",
-          "date": "2026-05-01T11:00:00+00:00",
-          "category": "uk"
+          "title": "- En hodeløs politikk",
+          "source": "Dagbladet",
+          "url": "https://www.dagbladet.no/nyheter/en-hodelos-politikk/84562168",
+          "date": "2026-05-01T11:39:28+00:00",
+          "category": "norway"
         },
         {
           "title": "INSÄNDARE: Sverigedemokraterna sviker de arbetslösa",
@@ -409,17 +514,17 @@
           "category": "sweden"
         },
         {
-          "title": "Too good to be true: on the road with Nigel Farage – photo essay",
-          "source": "The Guardian",
-          "url": "https://www.theguardian.com/artanddesign/2026/may/01/too-good-to-be-true-on-the-road-with-nigel-farage-photo-essay",
-          "date": "2026-05-01T10:01:00+00:00",
-          "category": "uk"
+          "title": "Varför tackar Sverigedemokraterna Donald Trump?",
+          "source": "Kvartal",
+          "url": "https://kvartal.se/federicomoreno/artiklar/varfor-tackar-sverigedemokraterna-donald-trump/cG9zdDoxMDM3ODQ",
+          "date": "2026-05-01T09:32:14+00:00",
+          "category": "sweden"
         },
         {
-          "title": "Was die AfD für Sachsen-Anhalt plant – und warum kaum jemand darüber spricht",
-          "source": "Telepolis",
-          "url": "https://www.telepolis.de/article/Was-die-AfD-fuer-Sachsen-Anhalt-plant-und-warum-kaum-jemand-darueber-spricht-11274579.html",
-          "date": "2026-05-01T08:00:00+00:00",
+          "title": "AfD will die Alleinregierung: Partei setzt in Sachsen-Anhalt auf massive Straßenpräsenz",
+          "source": "Rundschau Online",
+          "url": "https://www.rundschau-online.de/politik/afd-sachsen-anhalt-massenpraesenz-und-starker-zulauf-trotz-extremismus-einstufung-1273493",
+          "date": "2026-05-01T07:10:57+00:00",
           "category": "germany"
         },
         {
@@ -428,58 +533,94 @@
           "url": "https://www.t-online.de/nachrichten/deutschland/id_101236724/ein-jahr-merz-afd-profitiert-von-fehlern-der-regierung.html",
           "date": "2026-05-01T05:39:40+00:00",
           "category": "germany"
+        },
+        {
+          "title": "Frp truer KrF-makt i bibelbeltet",
+          "source": "Vårt Land",
+          "url": "https://www.vl.no/nyheter/kan-vippe-hoyre-og-sp-ned-fra-tronen-og-true-krfs-trofeer/10322624",
+          "date": "2026-05-01T03:30:00+00:00",
+          "category": "norway"
         }
       ],
       "first_seen": "2026-05-02T04:04:16+00:00",
-      "last_seen": "2026-05-02T04:04:16+00:00"
+      "last_seen": "2026-05-02T08:14:58+00:00"
     },
     {
       "id": "trumps-policies-shape-global-right-wing-agendas",
       "title": "Trump’s policies shape global right-wing agendas",
-      "blurb": "Trump’s domestic and foreign policies continue to dominate right-wing media narratives worldwide, with leaders like Vox’s Abascal, Italy’s Meloni, and Reform UK’s Farage echoing his rhetoric on immigration, trade, and nationalism. European far-right parties adopt Trump-style populism to challenge mainstream conservatives.",
+      "blurb": "Right-wing parties in the US, Spain, Italy, the UK, and Poland are aligning their agendas with Trump's policies, particularly on immigration, trade, and national security. This includes adopting similar rhetoric and policy proposals to appeal to their voter bases.",
       "convergence": 4,
       "countries": [
         {
           "name": "🇺🇸 MAGA / Trump",
-          "note": "Tariffs on EU cars, troop withdrawals from Germany, and Iran war dominate US right-wing coverage."
+          "note": "Trump's policies on tariffs, immigration, and national security are influencing global right-wing agendas."
         },
         {
           "name": "🇪🇸 Vox",
-          "note": "Abascal’s anti-immigration and anti-EU rhetoric mirrors Trump’s ‘America First’ policies."
+          "note": "Adopts Trump-like rhetoric on immigration and trade, including opposition to the EU-Mercosur deal."
         },
         {
           "name": "🇮🇹 Fratelli d'Italia / Lega",
-          "note": "Meloni and Salvini align with Trump on Iran, immigration, and trade, despite EU tensions."
+          "note": "Meloni's government aligns with Trump on immigration and trade policies, including tariffs and national security."
         },
         {
           "name": "🇬🇧 Reform UK",
-          "note": "Farage’s anti-immigration and anti-NATO stance reflects Trump’s influence on UK right-wing politics."
+          "note": "Farage adopts Trump's rhetoric on immigration, trade, and national security, including opposition to solar farms."
         },
         {
           "name": "🇵🇱 Prawo i Sprawiedliwość",
-          "note": "Kaczyński’s government adopts Trump-style nationalism, clashing with EU over rule of law."
+          "note": "PiS aligns with Trump on immigration and national security, including opposition to EU policies."
         }
       ],
       "signals": [
-        "policy contagion",
+        "policy imitation",
         "shared framing",
-        "parallel reactions to US actions"
+        "contagion of rhetoric",
+        "parallel elections"
       ],
-      "article_count": 100,
+      "article_count": 50,
       "refs": [
         {
-          "title": "President Trump has ‘turned the tables’ on the Iranians, national security expert says",
-          "source": "Fox Business",
-          "url": "https://www.foxbusiness.com/video/6394372952112",
-          "date": "2026-05-01T23:31:27+00:00",
+          "title": "Ayuso consigue contener a Vox y mantendría la absoluta mientras Más Madrid deja de liderar la oposición",
+          "source": "Libertad Digital",
+          "url": "https://www.libertaddigital.com/madrid/2026-05-02/ayuso-mantendria-la-mayoria-absoluta-mientras-vox-crece-y-la-izquierda-sigue-estancada-1b-7397824/",
+          "date": "2026-05-02T06:36:56+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Programa del PP para las elecciones andaluzas: las 10 medidas de Juanma Moreno para frenar el auge de Vox",
+          "source": "El Correo de Andalucía",
+          "url": "https://www.elcorreoweb.es/andalucia/2026/05/02/programa-pp-elecciones-andaluzas-freno-voto-vox-129737997.html",
+          "date": "2026-05-02T05:01:49+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Jorge Azcón prevé mantener a su núcleo duro en el Gobierno de Aragón mientras Vox decide sus consejeros",
+          "source": "heraldo.es",
+          "url": "https://www.heraldo.es/noticias/aragon/2026/05/02/jorge-azcon-preve-mantener-su-nucleo-duro-gobierno-aragon-mientras-vox-decide-sus-consejeros-2016787.html",
+          "date": "2026-05-02T03:00:00+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Donald Trump backs Jared Golden’s bill to extend pause on federal lobster rules",
+          "source": "Bangor Daily News",
+          "url": "https://www.bangordailynews.com/2026/05/01/politics/washington/trump-supports-golden-lobster-bill/",
+          "date": "2026-05-01T21:17:52+00:00",
           "category": "usa"
         },
         {
-          "title": "Donald Trump’s Iran war leaves US with sharpest fuel shock in G7",
-          "source": "Financial Times",
-          "url": "https://www.ft.com/content/aa553985-ef1a-4001-9f8d-f9501810dbb5?syn-25a6b1a6=1",
-          "date": "2026-05-01T20:59:00+00:00",
-          "category": "usa"
+          "title": "Ayuso salva su mayoría absoluta por un escaño: limita a Vox por debajo del 10% y la izquierda sigue desfigurada",
+          "source": "El Mundo",
+          "url": "https://www.elmundo.es/espana/encuestas/2026/05/01/69f4e56ce4d4d876618b45ae.html",
+          "date": "2026-05-01T20:57:37+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Juanma Moreno manda un mensaje a los votantes de Vox: «Necesitamos autonomía»",
+          "source": "The Objective",
+          "url": "https://theobjective.com/espana/politica/2026-05-01/juanma-moreno-votantes-vox-autonomia/",
+          "date": "2026-05-01T20:41:20+00:00",
+          "category": "spain"
         },
         {
           "title": "Trump announces 25 percent tariffs on European Union cars, trucks",
@@ -489,10 +630,24 @@
           "category": "usa"
         },
         {
-          "title": "Trump raises tariffs on cars, trucks from EU to 25%",
-          "source": "DW.com",
-          "url": "https://www.dw.com/en/trump-says-he-will-impose-25-tariff-on-cars-from-eu/a-77014772",
-          "date": "2026-05-01T16:30:09+00:00",
+          "title": "Federal Court Blocks Trump Administration Policies Restricting Wind and Solar Permitting",
+          "source": "Crowell & Moring LLP",
+          "url": "https://www.crowell.com/en/insights/client-alerts/federal-court-blocks-trump-administration-policies-restricting-wind-and-solar-permitting",
+          "date": "2026-05-01T17:42:32+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Vox pide a la Asamblea rechazar el acuerdo de Mercosur y alerta de la \"ruina del campo español\"",
+          "source": "Murcia Plaza",
+          "url": "https://murciaplaza.com/murciaplaza/region/vox-pide-a-la-asamblea-rechazar-el-acuerdo-de-mercosur-y-alerta-de-la-ruina-del-campo-espanol",
+          "date": "2026-05-01T16:56:35+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Trump announces increased tariffs on cars and trucks from the European Union",
+          "source": "ABC7 WWSB",
+          "url": "https://www.mysuncoast.com/2026/05/01/trump-says-hell-place-25-tariff-autos-eu-accusing-bloc-not-complying-with-trade-deal/",
+          "date": "2026-05-01T16:27:00+00:00",
           "category": "usa"
         },
         {
@@ -503,39 +658,53 @@
           "category": "usa"
         },
         {
-          "title": "Could we see a JD Vance & Marco Rubio ticket in 2028?",
-          "source": "KTAR News 92.3 FM",
-          "url": "https://ktar.com/watch/could-we-see-a-jd-vance-and-marco-rubio-ticket-in-2028/019de3f3-a200-8008-f7ae-48a44418cc11",
-          "date": "2026-05-01T15:02:13+00:00",
+          "title": "Trump says he will raise tariffs on EU autos to 25%",
+          "source": "France 24",
+          "url": "https://www.france24.com/en/americas/20260501-trump-says-he-will-raise-tariffs-on-eu-autos-to-25",
+          "date": "2026-05-01T16:01:49+00:00",
           "category": "usa"
         },
         {
-          "title": "Trump threatens to withdraw troops from Italy and Spain",
-          "source": "The Guardian",
-          "url": "https://www.theguardian.com/us-news/2026/may/01/trump-threatens-withdraw-troops-italy-spain-strait-hormuz",
-          "date": "2026-05-01T13:28:53+00:00",
+          "title": "Germany needs no tips from Donald Trump, says Merz's deputy",
+          "source": "DW.com",
+          "url": "https://www.dw.com/en/germany-needs-no-tips-from-donald-trump-says-merzs-deputy/a-77013396",
+          "date": "2026-05-01T15:13:47+00:00",
           "category": "usa"
         },
         {
-          "title": "What is Donald Trump's approval rating? Poll gives Dems midterm edge",
-          "source": "The Palm Beach Post",
-          "url": "https://www.palmbeachpost.com/story/news/trump/2026/05/01/donald-trump-approval-rating-polls/89887759007/",
-          "date": "2026-05-01T12:56:00+00:00",
+          "title": "Présidentielle : Jordan Bardella fera retirer le drapeau européen de l'Élysée en cas de victoire du RN",
+          "source": "lejdd.fr",
+          "url": "https://www.lejdd.fr/politique/presidentielle-jordan-bardella-fera-retirer-le-drapeau-europeen-de-lelysee-en-cas-de-victoire-du-rn-172878",
+          "date": "2026-05-01T14:54:15+00:00",
+          "category": "france"
+        },
+        {
+          "title": "TODAY: President Trump coming to The Villages",
+          "source": "WESH",
+          "url": "https://www.wesh.com/article/president-trump-in-central-florida-the-villages/71183283",
+          "date": "2026-05-01T13:26:00+00:00",
           "category": "usa"
         },
         {
-          "title": "Marchena: Vox apela al \"sentido común\" y la \"prioridad nacional\" de cara a las elecciones andaluzas (vídeo)",
-          "source": "Diario Avanza",
-          "url": "https://www.diarioavanza.es/articulo/marchena/marchena-vox-apela-sentido-comun-prioridad-nacional-cara-elecciones-andaluzas/20260501133113019865.html",
-          "date": "2026-05-01T11:31:13+00:00",
+          "title": "VOX rechaza el acuerdo Mercosur por amenazar el campo español y la soberanía alimentaria",
+          "source": "Cartagena Diario",
+          "url": "https://cartagenadiario.es/acuerdo-mercosur-campo-espanol-vox-asamblea-regional-murcia/",
+          "date": "2026-05-01T11:29:59+00:00",
           "category": "spain"
         },
         {
-          "title": "Magyar Péter videóban reagált a sógora miniszteri kinevezésével kapcsolatos összeférhetetlenségi kérdésre",
-          "source": "| hvg.hu",
-          "url": "https://hvg.hu/itthon/20260501_magyar-peter-video-mellethei-barna-marton-igazsagugyminiszter-sogor-tisza-kormany-vagyonvisszaszerzesi-hivatal",
-          "date": "2026-05-01T11:12:01+00:00",
-          "category": "hungary"
+          "title": "VOX permanece firme en la defensa de la Prioridad Nacional en Cartagena y retrata al PP",
+          "source": "Ayuntamiento de Cartagena",
+          "url": "https://www.cartagena.es/detalle_noticias_grupos_municipales.asp?id=87977&pagina=1&c=&t=&d=&h=",
+          "date": "2026-05-01T10:55:58+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Un gobierno en solitario de Moreno, una izquierda fuerte y un posible ascenso de Vox: lo que se juegan PP y PSOE en Andalucía",
+          "source": "LaSexta",
+          "url": "https://www.lasexta.com/elecciones/autonomicas/gobierno-solitario-moreno-izquierda-fuerte-posible-ascenso-vox-que-juegan-psoe-andalucia_2026050169f47b517b1d574ac6639de4.html",
+          "date": "2026-05-01T10:07:13+00:00",
+          "category": "spain"
         },
         {
           "title": "Trump threatens Sánchez and Meloni with US troops withdrawal",
@@ -545,71 +714,86 @@
           "category": "italy"
         },
         {
-          "title": "From America First to America Alone",
-          "source": "Engelsberg Ideas",
-          "url": "https://engelsbergideas.com/essays/from-america-first-to-america-alone/",
-          "date": "2026-05-01T07:30:50+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Donald Trump Shares New Map Showing The 'Strait Of Trump' And It Doesn’t Chart Well",
-          "source": "Yahoo News Malaysia",
-          "url": "https://malaysia.news.yahoo.com/donald-trump-shares-map-showing-063826032.html",
-          "date": "2026-05-01T06:38:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Donald Trump Receives Unexpected Nickname From Wall Street Traders",
-          "source": "Yahoo",
-          "url": "https://www.yahoo.com/news/articles/donald-trump-receives-unexpected-nickname-041529733.html",
-          "date": "2026-05-01T04:15:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Trump opens up on LIV Golf drama — and what he wants to see from sport going forward",
-          "source": "New York Post",
-          "url": "https://nypost.com/2026/04/30/sports/donald-trump-opens-up-on-liv-golf-pif-funding-drama/",
-          "date": "2026-05-01T01:18:00+00:00",
-          "category": "usa"
+          "title": "Telex kommentelő: „Volt egy sejtésem, hogy a Tiszában is a bratyik kapnak pozíciót”",
+          "source": "ORIGO",
+          "url": "https://www.origo.hu/belpol/2026/05/magyar-peter-sogor-miniszter-komment-telex",
+          "date": "2026-05-01T07:27:02+00:00",
+          "category": "hungary"
         }
       ],
       "first_seen": "2026-05-02T04:04:16+00:00",
-      "last_seen": "2026-05-02T04:04:16+00:00"
+      "last_seen": "2026-05-02T08:14:58+00:00"
     },
     {
       "id": "far-right-rhetoric-fuels-political-violence",
       "title": "Far-right rhetoric fuels political violence",
-      "blurb": "Far-right rhetoric in Italy, the UK, and the US is increasingly linked to political violence, with protests, threats, and attacks targeting immigrants, political opponents, and journalists. This theme highlights the normalization of aggressive language and its real-world consequences.",
+      "blurb": "Right-wing and far-right rhetoric in Italy, the UK, the US, Spain, and France is increasingly linked to incidents of political violence, including protests, attacks on political figures, and threats against immigrants and minorities. This trend reflects growing polarization and radicalization.",
       "convergence": 3,
       "countries": [
         {
           "name": "🇮🇹 Fratelli d'Italia / Lega",
-          "note": "Salvini’s anti-immigration rhetoric fuels protests and clashes, particularly in Turin."
+          "note": "Meloni's government faces criticism for rhetoric linked to political violence, including protests and threats."
         },
         {
           "name": "🇬🇧 Reform UK",
-          "note": "Farage’s anti-immigration stance sparks protests and threats against candidates and journalists."
+          "note": "Farage and Reform UK candidates face accusations of inciting violence, including attacks on campaigners."
         },
         {
           "name": "🇺🇸 MAGA / Trump",
-          "note": "Trump’s rhetoric linked to assassination attempts, threats against journalists, and protests."
+          "note": "Trump's rhetoric linked to political violence, including assassination attempts and threats against opponents."
         },
         {
           "name": "🇪🇸 Vox",
-          "note": "Abascal’s anti-immigration speeches provoke protests and vandalism against party offices."
+          "note": "Vox's rhetoric linked to political violence, including protests and threats against immigrants and minorities."
         },
         {
           "name": "🇫🇷 Rassemblement National",
-          "note": "Le Pen’s rhetoric fuels protests and clashes during May Day rallies."
+          "note": "Le Pen and Bardella's rhetoric linked to political violence, including protests and threats against opponents."
         }
       ],
       "signals": [
+        "shared framing",
         "contagion of rhetoric",
-        "parallel reactions",
-        "shared framing"
+        "reaction to external event",
+        "parallel elections"
       ],
-      "article_count": 70,
+      "article_count": 40,
       "refs": [
+        {
+          "title": "Reform candidate ‘attacked’ while campaigning in Glasgow",
+          "source": "The Herald",
+          "url": "https://www.heraldscotland.com/news/26073629.reform-candidate-attacked-campaigning-glasgow/",
+          "date": "2026-05-02T07:08:36+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Reform's Thomas Kerr ‘attacked’ while campaigning in Glasgow",
+          "source": "Scottish Daily Express",
+          "url": "https://www.scottishdailyexpress.co.uk/news/politics/reforms-thomas-kerr-attacked-campaigning-37101137",
+          "date": "2026-05-02T07:08:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Question Time audience laughs as senior Reform UK figure is grilled on Warwickshire potholes",
+          "source": "Coventry Telegraph",
+          "url": "https://www.coventrytelegraph.net/news/local-news/question-time-audience-laughs-senior-33876837",
+          "date": "2026-05-02T06:42:05+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "CCOO y UGT salen a la calle en Mérida el 1º de Mayo para «defender la democracia» y contra el pacto de PP y Vox",
+          "source": "Onda Cero Sur Extremadura",
+          "url": "https://ondacerosur.es/2026/05/ccoo-y-ugt-salen-a-la-calle-en-merida-el-1o-de-mayo-para-defender-la-democracia-y-contra-el-pacto-de-pp-y-vox/",
+          "date": "2026-05-02T01:52:12+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Reform storms to stunning by-election victory in huge boost for Nigel Farage",
+          "source": "Daily Express",
+          "url": "https://www.express.co.uk/news/politics/2200948/reform-tenbury-council-by-election-win",
+          "date": "2026-05-01T22:23:00+00:00",
+          "category": "uk"
+        },
         {
           "title": "Anti-Trump 'May Day Strong' protests expected to sweep country: Report",
           "source": "National News Desk",
@@ -618,17 +802,24 @@
           "category": "usa"
         },
         {
-          "title": "Nationwide May Day protests expected to pick up mantle of 'No Kings'",
-          "source": "NPR",
-          "url": "https://www.npr.org/2026/05/01/nx-s1-5805805/may-day-protests-boycott-schools-trump",
-          "date": "2026-05-01T18:41:50+00:00",
+          "title": "Allegheny County man accused of threatening to kill President Trump, member of Congress",
+          "source": "WPXI",
+          "url": "https://www.wpxi.com/news/local/allegheny-county-man-accused-threatening-kill-president-trump-member-congress/KFMEQADD2VDMTNNYKEWVPREXEQ/",
+          "date": "2026-05-01T18:36:03+00:00",
           "category": "usa"
         },
         {
-          "title": "Dossier of Reform 'chaos and incompetence' drawn up ahead of crunch local elections",
-          "source": "The Mirror",
-          "url": "https://www.mirror.co.uk/news/politics/dossier-reform-chaos-incompetence-drawn-37093177",
-          "date": "2026-05-01T17:03:00+00:00",
+          "title": "Far-right Activists in Tel Aviv Seek Out African Asylum Seekers, Immigrants",
+          "source": "Haaretz",
+          "url": "https://www.haaretz.com/israel-news/israel-politics/2026-05-01/ty-article/.premium/far-right-activists-in-tel-aviv-seek-out-african-asylum-seekers-immigrants/0000019d-e2cd-d153-a3df-e3ef64a80000",
+          "date": "2026-05-01T18:00:00+00:00",
+          "category": "general"
+        },
+        {
+          "title": "Reform UK candidate ‘attacked on Glasgow doorstep’ just days before Scots election",
+          "source": "The Scottish Sun",
+          "url": "https://www.thescottishsun.co.uk/news/16217314/thomas-kerr-reform-candidate-attack-glasgow-election/",
+          "date": "2026-05-01T17:06:00+00:00",
           "category": "uk"
         },
         {
@@ -639,25 +830,46 @@
           "category": "uk"
         },
         {
-          "title": "“Dal governo solo chiacchiere”, i giovani al concertone di Roma bocciano il salario giusto di Meloni",
-          "source": "La Stampa",
-          "url": "https://www.lastampa.it/cronaca/2026/05/01/news/concertone_roma_primo_maggio_voci_giovani_salario_minimo_meloni-15606303/",
-          "date": "2026-05-01T14:47:00+00:00",
-          "category": "italy"
+          "title": "Nobody Embodies MAGA’s Clownish Menace Like Pete Hegseth",
+          "source": "New York Magazine",
+          "url": "https://nymag.com/intelligencer/article/pete-hegseth-congress-testimony-iran.html",
+          "date": "2026-05-01T15:13:53+00:00",
+          "category": "usa"
         },
         {
-          "title": "AIMEE WALSH: 'MAFS is giving airtime to the manosphere's ideas - it's not just the men'",
-          "source": "The Mirror",
-          "url": "https://www.mirror.co.uk/tv/aimee-walsh-mafs-giving-airtime-37096470",
-          "date": "2026-05-01T13:52:00+00:00",
+          "title": "Un diputado de Vox ironiza con \"no deportar de momento\" a una diputada de ERC de origen marroquí",
+          "source": "Onda Cero",
+          "url": "https://amp.ondacero.es/noticias/espana/diputado-vox-ironiza-deportar-momento-diputada-erc-origen-marroqui_2026050169f4aff16a56d80bba7ba908.html",
+          "date": "2026-05-01T13:51:45+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Abascal sobrepasa todos los límites y tilda a Pedro Sánchez de \"chulop****\" en plena campaña andaluza",
+          "source": "LaSexta",
+          "url": "https://www.lasexta.com/elecciones/autonomicas/abascal-sobrepasa-todos-limites-tilda-pedro-sanchez-chulop_2026050169f4a4fd6a56d80bba7b9cf9.html",
+          "date": "2026-05-01T13:05:01+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "3 family members assaulted Turning Point USA journalist at Minn. protest, indictment says",
+          "source": "Free Speech Center",
+          "url": "https://firstamendment.mtsu.edu/post/3-family-members-assaulted-turning-point-usa-journalist-at-minn-protest-indictment-says/",
+          "date": "2026-05-01T12:44:49+00:00",
+          "category": "networks"
+        },
+        {
+          "title": "'May Day Strong' protests planned in Texas against Trump. See locations",
+          "source": "El Paso Times",
+          "url": "https://www.elpasotimes.com/story/news/politics/2026/05/01/texas-protests-planned-for-may-day-against-president-donald-trump/89873397007/",
+          "date": "2026-05-01T12:03:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Banksy's latest: Dig at Trump or warning about far-right?",
+          "source": "Anadolu Ajansı",
+          "url": "https://aa.com.tr/en/europe/banksys-latest-dig-at-trump-or-warning-about-far-right/3924199",
+          "date": "2026-05-01T11:53:53+00:00",
           "category": "general"
-        },
-        {
-          "title": "\"Le RN, ça rime avec haine\" : à Mâcon, la \"Fête de la Nation\" du Rassemblement national fait face à une forte mobilisation des opposants",
-          "source": "France 3 Régions",
-          "url": "https://france3-regions.franceinfo.fr/bourgogne-franche-comte/saone-et-loire/macon/le-rn-ca-rime-avec-haine-a-macon-la-fete-de-la-nation-du-rassemblement-national-fait-face-a-une-forte-mobilisation-des-opposants-3344093.html",
-          "date": "2026-05-01T12:05:01+00:00",
-          "category": "france"
         },
         {
           "title": "Reform UK calls for Taser-armed police as Glasgow branded 'lawless' under SNP",
@@ -674,50 +886,22 @@
           "category": "poland"
         },
         {
-          "title": "'I Set Up a Fake Far-Right News Channel to Interview Reform UK Candidates and This Is What They Told Me'",
-          "source": "Byline Times",
-          "url": "https://bylinetimes.com/2026/05/01/i-set-up-a-fake-far-right-news-channel-to-interview-reform-uk-candidates-and-this-is-what-they-told-me/",
-          "date": "2026-05-01T08:41:55+00:00",
-          "category": "uk"
+          "title": "Bojkot święta 3 maja planowany w PiS. Aż rzecznik partii musiał zareagować",
+          "source": "naTemat.pl",
+          "url": "https://natemat.pl/651694,bojkot-swieta-3-maja-planowany-w-pis-az-rzecznik-partii-musial-zareagowac",
+          "date": "2026-05-01T08:12:43+00:00",
+          "category": "poland"
         },
         {
-          "title": "Three Individuals Federally Charged with Assault and Intimidating Turning Point USA Journalist by Force",
-          "source": "Red Lake Nation News",
-          "url": "https://www.redlakenationnews.com/story/2026/05/01/news/three-individuals-federally-charged-with-assault-and-intimidating-turning-point-usa-journalist-by-force/139940.html",
-          "date": "2026-05-01T06:13:38+00:00",
-          "category": "networks"
-        },
-        {
-          "title": "Pentagon Pete Hegseth’s Hearing Descends Into Chaos as Protesters Slam Him",
-          "source": "The Daily Beast",
-          "url": "https://www.thedailybeast.com/pentagon-pete-hegseths-hearing-descends-into-chaos-as-protesters-slam-him/",
-          "date": "2026-05-01T04:36:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "'You’re a war criminal': Protester disrupts Pete Hegseth at US Senate hearing",
-          "source": "The Economic Times",
-          "url": "https://m.economictimes.com/news/international/world-news/protester-disrupts-senate-hearing-calls-war-secretary-pete-hegseth-a-war-criminal/articleshow/130664269.cms",
-          "date": "2026-05-01T02:11:02+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Daughter of legendary director slams Erika Kirk, asks President Trump to ‘kill’ Turning Point USA",
-          "source": "New York Post",
-          "url": "https://nypost.com/2026/04/30/us-news/daughter-of-director-stanley-kubrick-goes-after-erika-kirk-on-x/",
-          "date": "2026-05-01T00:42:00+00:00",
-          "category": "networks"
-        },
-        {
-          "title": "'War Criminal' Pete Hegseth Hammered on True Costs of Iran Debacle During Senate Hearing",
-          "source": "Common Dreams",
-          "url": "https://www.commondreams.org/news/pete-hegseth-senate-hearing",
-          "date": "2026-04-30T23:01:39+00:00",
+          "title": "Pete Hegseth tangles with Senate Democrats: 5 takeaways",
+          "source": "wivb.com",
+          "url": "https://www.wivb.com/news/national/pete-hegseth-tangles-with-senate-democrats-5-takeaways/amp/",
+          "date": "2026-05-01T06:04:26+00:00",
           "category": "usa"
         }
       ],
       "first_seen": "2026-04-25T21:40:31+00:00",
-      "last_seen": "2026-05-02T04:04:16+00:00"
+      "last_seen": "2026-05-02T08:14:58+00:00"
     }
   ]
 }
