@@ -5,8 +5,8 @@ env:
 
 on:
   schedule:
-    # Every 6 hours, offset 50 minutes from pipeline so enrichment has landed.
-    - cron: "50 */6 * * *"
+    # Twice daily, offset 50 minutes from pipeline so enrichment has landed.
+    - cron: "50 */12 * * *"
   workflow_dispatch:
     inputs:
       hours:
