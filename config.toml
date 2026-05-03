@@ -12,6 +12,7 @@ germany = "🇩🇪 Alternative für Deutschland"
 hungary = "🇭🇺 Fidesz / Tisza"
 poland = "🇵🇱 Prawo i Sprawiedliwość"
 spain = "🇪🇸 Vox"
+argentina = "🇦🇷 La Libertad Avanza"
 general = "🌍 General Right-Wing News"
 networks = "🕸️ Transnational Networks"
 
@@ -225,7 +226,7 @@ time), or shared reactions to the same external event.
 
 The "General" and "Networks" categories do NOT count toward the minimum country
 threshold — only named country categories (USA, UK, France, Italy, Germany,
-Hungary, Poland, Spain, Sweden, Norway) count.
+Hungary, Poland, Spain, Sweden, Norway, Argentina) count.
 
 Rank by CONVERGENCE: how strongly the same theme resonates across borders.
 A theme appearing intensely in 4 countries outranks one appearing faintly in 6.
@@ -430,3 +431,16 @@ country = "ES"
 lang = "en"
 country = "US"
 q = '"Vox party" OR "Santiago Abascal" OR "Ignacio Garriga" OR "Javier Ortega Smith" OR "Rocío Monasterio" OR "Kiko Méndez-Monasterio"'
+
+[[feeds]]
+id = "argentina"
+filename = "argentina.txt"
+q = '"Javier Milei" OR "La Libertad Avanza" OR "Manuel Adorni" OR "Gabriel Bornoroni" OR "Karina Milei"'
+
+[[feeds.variants]]
+lang = "es"
+country = "AR"
+
+[[feeds.variants]]
+lang = "en"
+country = "US"

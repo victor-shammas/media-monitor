@@ -5,9 +5,9 @@ env:
 
 on:
   schedule:
-    # Every 6 hours, offset 30 minutes from the hourly pipeline so that
+    # Twice daily, offset 30 minutes from the hourly pipeline so that
     # enrichment from :00 has a chance to land before clustering kicks off.
-    - cron: "30 */6 * * *"
+    - cron: "30 */12 * * *"
   workflow_dispatch:
     inputs:
       hours:
