@@ -45,7 +45,6 @@ try:
     from tenacity import (
         retry,
         retry_if_exception,
-        retry_if_exception_type,
         stop_after_attempt,
         wait_exponential,
     )
@@ -54,6 +53,7 @@ except ImportError:
     sys.exit(1)
 
 from monitor_utils import normalize_title_for_dedup
+from llm_rate_limit import is_retryable_error
 
 import tomllib
 
@@ -96,7 +96,7 @@ MISTRAL_BASE_URL = "https://api.mistral.ai/v1"
 @retry(
     stop=stop_after_attempt(3),
     wait=wait_exponential(multiplier=1, min=4, max=30),
-    retry=retry_if_exception_type(Exception),
+    retry=retry_if_exception(is_retryable_error),
     before_sleep=lambda rs: print(
         f"    ⚠ Retrying in {rs.next_action.sleep:.0f}s... "
         f"(attempt {rs.attempt_number})"
@@ -130,7 +130,7 @@ def _call_mistral(prompt: str, model: str = "mistral-large-latest") -> str:
 @retry(
     stop=stop_after_attempt(3),
     wait=wait_exponential(multiplier=1, min=4, max=30),
-    retry=retry_if_exception_type(Exception),
+    retry=retry_if_exception(is_retryable_error),
     before_sleep=lambda rs: print(
         f"    ⚠ Retrying in {rs.next_action.sleep:.0f}s... "
         f"(attempt {rs.attempt_number})"

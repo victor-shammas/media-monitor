@@ -30,8 +30,14 @@ socket.setdefaulttimeout(30)
 try:
     import trafilatura
     from googlenewsdecoder import new_decoderv1
+    from tenacity import (
+        retry,
+        retry_if_exception,
+        stop_after_attempt,
+        wait_exponential,
+    )
 except ImportError:
-    print("Install dependencies: pip install trafilatura googlenewsdecoder")
+    print("Install dependencies: pip install trafilatura googlenewsdecoder tenacity")
     sys.exit(1)
 
 from monitor_utils import (
@@ -41,6 +47,11 @@ from monitor_utils import (
     get_sort_time,
     git_sync,
     normalize_title_for_dedup,
+)
+from llm_rate_limit import (
+    ProviderCircuit,
+    is_rate_limit_error,
+    is_retryable_error,
 )
 
 # Domains known to fail — skip to save time
@@ -95,6 +106,12 @@ def _ensure_gemini():
         return False
 
 
+@retry(
+    stop=stop_after_attempt(3),
+    wait=wait_exponential(multiplier=1, min=4, max=60),
+    retry=retry_if_exception(is_retryable_error),
+    reraise=True,
+)
 def _call_gemini_batch(prompt: str) -> str:
     client = genai.Client()
     response = client.models.generate_content(model=SUMMARY_MODEL, contents=prompt)
@@ -105,6 +122,12 @@ def _ensure_mistral():
     return bool(os.environ.get("MISTRAL_API_KEY"))
 
 
+@retry(
+    stop=stop_after_attempt(3),
+    wait=wait_exponential(multiplier=1, min=4, max=60),
+    retry=retry_if_exception(is_retryable_error),
+    reraise=True,
+)
 def _call_mistral_batch(user_prompt: str) -> str:
     import urllib.request
 
@@ -267,26 +290,50 @@ def generate_summaries(records: list[dict]) -> int:
 
     print(f"\n  Generating summaries for {len(extractable)} articles...")
     generated = 0
+    circuit = ProviderCircuit(threshold=3)
 
     for i, rec in enumerate(extractable, 1):
+        if circuit.is_open("mistral") and circuit.is_open("gemini"):
+            remaining = len(extractable) - i + 1
+            print(
+                f"    ⚠ All providers rate-limited; skipping remaining "
+                f"{remaining} articles"
+            )
+            break
+
         snippet = " ".join(rec["extract"].split()[:200])
         user_prompt = f"Title: {rec['title']}\n\n{snippet}"
 
         text = None
 
-        if has_mistral:
+        if has_mistral and not circuit.is_open("mistral"):
             try:
                 text = _call_mistral_batch(user_prompt)
+                circuit.record_success("mistral")
             except Exception as e:
-                if not has_gemini:
+                if is_rate_limit_error(e):
+                    if circuit.record_rate_limit("mistral"):
+                        print(
+                            "    ⚠ Mistral rate-limited; disabling for the "
+                            "rest of the run"
+                        )
+                elif not has_gemini or circuit.is_open("gemini"):
                     print(f"    [{i}] Mistral failed: {e}")
 
-        if text is None and has_gemini:
+        if text is None and has_gemini and not circuit.is_open("gemini"):
             gemini_prompt = f"{SUMMARY_SYSTEM_PROMPT}\n\n{user_prompt}"
             try:
                 text = _call_gemini_batch(gemini_prompt)
+                circuit.record_success("gemini")
             except Exception as e:
-                print(f"    [{i}] All providers failed: {e}")
+                if is_rate_limit_error(e):
+                    if circuit.record_rate_limit("gemini"):
+                        print(
+                            "    ⚠ Gemini rate-limited; disabling for the "
+                            "rest of the run"
+                        )
+                else:
+                    print(f"    [{i}] All providers failed: {e}")
 
         if text:
             summary = _extract_summary(text)
@@ -300,7 +347,13 @@ def generate_summaries(records: list[dict]) -> int:
         if i < len(extractable):
             time.sleep(REQUEST_DELAY)
 
-    print(f"  Summaries generated: {generated}/{len(extractable)}")
+    skipped_providers = [p for p in ("mistral", "gemini") if circuit.is_open(p)]
+    skipped_note = (
+        f" (rate-limited: {', '.join(skipped_providers)})"
+        if skipped_providers
+        else ""
+    )
+    print(f"  Summaries generated: {generated}/{len(extractable)}{skipped_note}")
     return generated
 
 
