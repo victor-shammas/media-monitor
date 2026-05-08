@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-08T04:03:01+00:00",
+  "updated_at": "2026-05-08T14:28:30+00:00",
   "lookback_hours": 48,
   "model": "Mistral Large",
   "status": "ok",
@@ -7,24 +7,28 @@
     {
       "id": "far-right-parties-push-national-priority-policies",
       "title": "Far-right parties push 'national priority' policies",
-      "blurb": "Right-wing and far-right parties across Europe are intensifying their focus on 'national priority' policies, which prioritize citizens over immigrants in access to social services, housing, and public benefits. This theme is prominently featured in Spain, Italy, and the UK, with parties like Vox, Fratelli d'Italia, Lega, and Reform UK advocating for these measures as a cornerstone of their political platforms.",
+      "blurb": "Right-wing and far-right parties across Europe are advancing 'national priority' policies, prioritizing citizens over immigrants in public aid, housing, and social services. This theme appears in Spain, Italy, France, and Hungary, with parties like Vox, Lega, Rassemblement National, and Tisza advocating for stricter residency requirements and exclusionary measures.",
       "convergence": 5,
       "countries": [
         {
           "name": "🇪🇸 Vox",
-          "note": "Vox promotes 'national priority' policies in Andalusia and other regions, emphasizing preferential treatment for Spanish citizens in social services and housing."
+          "note": "Proposes 'national priority' in public aid, excluding irregular migrants from social benefits in Andalusia and Madrid."
         },
         {
           "name": "🇮🇹 Fratelli d'Italia / Lega",
-          "note": "Fratelli d'Italia and Lega advocate for policies that prioritize Italian citizens in public services and benefits, aligning with their nationalist agenda."
-        },
-        {
-          "name": "🇬🇧 Reform UK",
-          "note": "Reform UK pushes for policies that prioritize British citizens in social welfare and public services, echoing similar themes in their local election campaigns."
+          "note": "Supports 'national priority' policies in housing and social services, aligning with Vox in regional coalitions."
         },
         {
           "name": "🇫🇷 Rassemblement National",
-          "note": "RN emphasizes 'national priority' in its political messaging, focusing on protecting French citizens' access to public resources."
+          "note": "Advocates for 'national priority' in welfare and immigration policies, criticizing EU migration policies."
+        },
+        {
+          "name": "🇭🇺 Fidesz / Tisza",
+          "note": "Tisza Party proposes reforms to prioritize Hungarian citizens in social benefits and public services."
+        },
+        {
+          "name": "🇬🇧 Reform UK",
+          "note": "Criticizes immigration policies and advocates for prioritizing British citizens in public services."
         }
       ],
       "signals": [
@@ -33,20 +37,125 @@
         "parallel elections",
         "contagion of rhetoric"
       ],
-      "article_count": 30,
+      "article_count": 42,
       "refs": [
         {
-          "title": "PP y Vox, indignados con la falta de transparencia del Gobierno ante una nueva crisis sanitaria: «Máxima alerta»",
-          "source": "El Debate",
-          "url": "https://www.eldebate.com/espana/20260508/pp-vox-indignados-falta-transparencia-gobierno-ante-nueva-crisis-sanitaria-maxima-alerta_415369.html",
-          "date": "2026-05-08T02:20:00+00:00",
+          "title": "Elecciones en Andalucía: ¿El primer gran pinchazo de Vox?",
+          "source": "El Periódico",
+          "url": "https://www.elperiodico.com/es/politica/20260508/elecciones-andalucia-vox-pinchazo-predicciones-encuestas-129991247",
+          "date": "2026-05-08T13:31:01+00:00",
           "category": "spain"
         },
         {
-          "title": "PP y Vox se unen por la prioridad nacional y la izquierda intensifica sus insultos contra Ayuso",
+          "title": "Vox apoyará modificaciones presupuestarias vinculadas a la emergencia de los autobuses de Burgos",
+          "source": "El Correo de Burgos",
+          "url": "https://www.elcorreodeburgos.com/burgos/260508/242912/vox-califica-mandato-ayala-absolutamente-negativo.html",
+          "date": "2026-05-08T12:56:39+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "La moción de Vox sobre inmigración fracasa en Torrent con el rechazo de la oposición y el PP - Levante-EMV",
+          "source": "",
+          "url": "https://www.levante-emv.com/horta/2026/05/08/mocion-vox-inmigracion-fracasa-torrent-129999526.html",
+          "date": "2026-05-08T12:55:04+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Vox El Puerto denuncia que el PP antepone el electoralismo al agua caliente en los polideportivos",
+          "source": "Diario de Cádiz",
+          "url": "https://www.diariodecadiz.es/elpuerto/vox-puerto-denuncia-pp-antepone_0_2006712038.html",
+          "date": "2026-05-08T12:13:53+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Vox pide la \"prioridad nacional\" en la Diputación de Soria y PP y PSOE contestan con un contundente rechazo - Heraldo-Diario de Soria",
+          "source": "",
+          "url": "https://www.heraldodiariodesoria.es/soria/provincia/260508/208748/vox-pide-prioridad-nacional-diputacion-soria-pp-psoe-contestan-contundente-rechazo.html",
+          "date": "2026-05-08T11:14:19+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "PSOE, tras acordar PP y Vox pedir a Sánchez prioridad nacional: \"Ayuso no necesita a Vox para hacer políticas racistas\"",
+          "source": "Europa Press",
+          "url": "https://www.europapress.es/madrid/noticia-psoe-acordar-pp-vox-pedir-sanchez-prioridad-nacional-ayuso-no-necesita-vox-hacer-politicas-racistas-20260508125520.html",
+          "date": "2026-05-08T10:55:20+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "VOX propone cuota 0 para autónomos con ingresos inferiores al SMI y una bajada generalizada de impuestos",
+          "source": "Andalucía Información",
+          "url": "https://www.andaluciainformacion.es/articulo/malaga-local/vox-propone-cuota-autonomos-ingresos-inferiores-smi-bajada-generalizada-impuestos/202605081244163256097.html",
+          "date": "2026-05-08T10:44:16+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "VOX lleva a la Asamblea Regional la prioridad nacional en las ayudas públicas",
+          "source": "Cartagena Diario",
+          "url": "https://cartagenadiario.es/vox-asamblea-regional-prioridad-nacional-ayudas-publicas-arraigo/",
+          "date": "2026-05-08T10:44:15+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Vox propone una \"zona de protección del patrimonio histórico\" en Toledo para no perder fondos por el rechazo a la ZBE",
+          "source": "Toledodiario",
+          "url": "https://toledodiario.es/vox-propone-una-zona-de-proteccion-del-patrimonio-historico-en-toledo-para-no-perder-fondos-por-el-rechazo-a-la-zbe/",
+          "date": "2026-05-08T10:26:55+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Poland's president appoints new head of national security bureau",
+          "source": "Polskie Radio",
+          "url": "https://www.polskieradio.pl/395/7784/Artykul/3684112,polands-president-appoints-new-head-of-national-security-bureau",
+          "date": "2026-05-08T10:10:00+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Vox propone priorizar a españoles y residentes con arraigo en el acceso a ayudas públicas",
+          "source": "Onda Regional de Murcia | ORM",
+          "url": "https://www.orm.es/informativos/vox-propone-priorizar-a-espanoles-y-residentes-con-arraigo-en-el-acceso-a-ayudas-publicas/",
+          "date": "2026-05-08T10:00:37+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Vox lleva a la Asamblea la prioridad nacional en las ayudas públicas y exige arraigo verificable",
+          "source": "La Opinión de Murcia",
+          "url": "https://www.laopiniondemurcia.es/fotos/comunidad/2026/05/08/vox-lleva-asamblea-prioridad-nacional-129987661.html",
+          "date": "2026-05-08T09:08:46+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Vox pedirá en la Asamblea de Murcia 'prioridad nacional' para prestaciones públicas",
+          "source": "Infobae",
+          "url": "https://www.infobae.com/espana/agencias/2026/05/08/vox-pedira-en-la-asamblea-de-murcia-prioridad-nacional-para-prestaciones-publicas/",
+          "date": "2026-05-08T08:10:33+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Vídeo: Vox se reúne con una empresa antiokupación para denunciar el aumento de casos en Zaragoza",
+          "source": "heraldo.es",
+          "url": "https://www.heraldo.es/aragon/zaragoza/video-vox-se-reune-con-una-empresa-antiokupacion-para-denunciar-aumento-casos-zaragoza-2018541-2.html",
+          "date": "2026-05-08T06:38:24+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Fernando Clavijo: «No apoyaremos un gobierno del PP donde esté Vox»",
           "source": "ABC",
-          "url": "https://www.abc.es/espana/madrid/pp-vox-unen-prioridad-nacional-izquierda-intensifica-20260507010217-nt.html",
-          "date": "2026-05-07T23:02:17+00:00",
+          "url": "https://www.abc.es/espana/canarias/fernando-clavijo-apoyaremos-gobierno-pp-vox-20260509072805-nt.html",
+          "date": "2026-05-08T05:28:05+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Mensaje a Vox: «El modelo de integración está funcionando»",
+          "source": "Diario de León",
+          "url": "https://www.diariodeleon.es/castilla-y-leon/260508/2084215/mensaje-vox-modelo-integracion-funcionando.html",
+          "date": "2026-05-08T04:00:00+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Vox endurece su discurso migratorio frente a Moreno: “Debe oponerse a la regularización masiva”",
+          "source": "Vozpopuli",
+          "url": "https://www.vozpopuli.com/espana/andalucia/vox-endurece-su-discurso-migratorio-frente-a-moreno-debe-oponerse-a-la-regularizacion-masiva.html",
+          "date": "2026-05-08T02:45:00+00:00",
           "category": "spain"
         },
         {
@@ -57,17 +166,17 @@
           "category": "spain"
         },
         {
+          "title": "Vox se queda solo en las Cortes en su rechazo a Mercosur",
+          "source": "La Tribuna de Ciudad Real",
+          "url": "https://www.latribunadeciudadreal.es/noticia/zbbcbc80d-0400-4ea3-a4352ce1acec27ae/202605/vox-se-queda-solo-en-las-cortes-en-su-rechazo-a-mercosur",
+          "date": "2026-05-07T18:51:00+00:00",
+          "category": "spain"
+        },
+        {
           "title": "Vox y el PP se ponen de acuerdo en la Asamblea en la 'prioridad nacional' que no sacaron adelante en el Congreso",
           "source": "El Debate",
           "url": "https://www.eldebate.com/espana/madrid/20260507/vox-pp-ponen-acuerdo-asamblea-prioridad-nacional-no-sacaron-adelante-congreso_415317.html",
           "date": "2026-05-07T18:18:34+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "El PP de Ayuso y el Vox de Moñino sellan su primer gran acuerdo ideológico: pacto por la \"prioridad nacional\"",
-          "source": "Libertad Digital",
-          "url": "https://www.libertaddigital.com/madrid/2026-05-07/el-pp-de-ayuso-y-el-vox-de-monino-sellan-su-primer-gran-acuerdo-ideologico-pacto-por-la-prioridad-nacional-1b-7401275/",
-          "date": "2026-05-07T18:17:04+00:00",
           "category": "spain"
         },
         {
@@ -78,73 +187,276 @@
           "category": "spain"
         },
         {
-          "title": "El PP de Ayuso acepta por primera vez la «prioridad nacional» de Vox, pero vinculada al arraigo",
-          "source": "ABC",
-          "url": "https://www.abc.es/espana/madrid/pp-ayuso-acepta-primera-vez-prioridad-nacional-20260507193720-nt.html",
-          "date": "2026-05-07T17:37:20+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "El PP de Madrid matiza la prioridad nacional de Vox con un \"arraigo reforzado\", vínculos y cotización en el territorio",
-          "source": "20Minutos",
-          "url": "https://www.20minutos.es/madrid/pp-madrid-matiza-prioridad-nacional-vox-con-un-arraigo-reforzado-vinculos-cotizacion-territorio_6967724_0.html",
-          "date": "2026-05-07T17:37:11+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "US Secretary of State Marco Rubio, Pope Leo XIV discuss Iran war at Vatican meeting",
-          "source": "OSV News",
-          "url": "https://www.osvnews.com/us-secretary-of-state-marco-rubio-pope-leo-xiv-discuss-iran-war-at-vatican-meeting/",
-          "date": "2026-05-07T17:02:23+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Igualdad pide a la Fiscalía investigar carteles de Vox en Granada por posible delito de odio",
+          "title": "PP y Vox acuerdan en la Asamblea exigir a Sánchez \"prioridad nacional\" acotada al \"arraigo real, duradero y verificable\"",
           "source": "Europa Press",
-          "url": "https://www.europapress.es/epsocial/igualdad/noticia-igualdad-pide-fiscalia-investigar-carteles-vox-granada-posible-delito-odio-20260507182536.html",
-          "date": "2026-05-07T16:25:36+00:00",
+          "url": "https://www.europapress.es/madrid/noticia-pp-vox-acuerdan-asamblea-exigir-sanchez-prioridad-nacional-acotada-arraigo-real-duradero-verificable-20260507194200.html",
+          "date": "2026-05-07T17:42:00+00:00",
           "category": "spain"
         }
       ],
       "first_seen": "2026-04-29T14:59:17+00:00",
-      "last_seen": "2026-05-08T04:03:01+00:00"
+      "last_seen": "2026-05-08T14:28:30+00:00"
     },
     {
       "id": "corruption-scandals-rock-far-right-governments",
       "title": "Corruption scandals rock far-right governments",
-      "blurb": "Corruption allegations are dominating coverage of far-right governments and movements in Argentina, Hungary, and Poland. These scandals involve high-ranking officials and party leaders, raising questions about transparency, accountability, and the integrity of these administrations.",
+      "blurb": "Corruption allegations are undermining far-right governments and leaders in Argentina, Hungary, and Poland. High-profile figures face investigations for illicit enrichment, misuse of public funds, and nepotism, leading to internal divisions and public backlash.",
       "convergence": 4,
       "countries": [
         {
           "name": "🇦🇷 La Libertad Avanza",
-          "note": "Manuel Adorni, Argentina's Chief of Staff, faces allegations of illicit enrichment and misuse of public funds, sparking a political crisis."
+          "note": "Manuel Adorni faces illicit enrichment allegations, sparking internal tensions and public scrutiny."
         },
         {
           "name": "🇭🇺 Fidesz / Tisza",
-          "note": "Hungary's Tisza Party faces scrutiny over nepotism and questionable appointments, including the nomination of relatives for key government positions."
+          "note": "Péter Magyar's government faces nepotism allegations after nominating his brother-in-law for justice minister."
         },
         {
           "name": "🇵🇱 Prawo i Sprawiedliwość",
-          "note": "Poland's PiS faces allegations of corruption and misuse of public funds, including scandals involving high-ranking party members."
+          "note": "Former PiS officials and associates face corruption investigations, including child pornography charges."
         },
         {
           "name": "🇫🇷 Rassemblement National",
-          "note": "RN is under investigation by the European Public Prosecutor's Office for alleged fraud involving EU funds used for media training during the 2022 presidential campaign."
+          "note": "EU investigates RN for alleged misuse of EU funds for media training during the 2022 campaign."
         }
       ],
       "signals": [
-        "parallel scandals",
         "shared framing",
-        "policy backlash",
-        "contagion of rhetoric"
+        "parallel investigations",
+        "public backlash",
+        "internal divisions"
       ],
-      "article_count": 40,
+      "article_count": 38,
       "refs": [
         {
-          "title": "“La Justicia va a aclarar todo”: Manuel Adorni se defendió en medio de su causa por presunto enriquecimiento ilícito",
+          "title": "La TV Pública giró millones a la productora del amigo de Manuel Adorni",
+          "source": "OPI Santa Cruz",
+          "url": "https://www.opisantacruz.com.ar/2026/05/08/la-tv-publica-giro-millones-a-la-productora-del-amigo-de-manuel-adorni/",
+          "date": "2026-05-08T13:39:36+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Se reúne el Gabinete en medio de las tensiones internas y el clamor por la salida de Manuel Adorni",
+          "source": "Ambito",
+          "url": "https://www.ambito.com/politica/se-reune-el-gabinete-medio-las-tensiones-internas-y-el-clamor-la-salida-manuel-adorni-n6275264",
+          "date": "2026-05-08T13:34:52+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Radiografía del gabinete en crisis: Patricia Bullrich le exige a Manuel Adorni lo que otros reclaman en privado",
+          "source": "Letra P",
+          "url": "https://www.letrap.com.ar/politica/radiografia-del-gabinete-crisis-patricia-bullrich-le-exige-manuel-adorni-lo-que-otros-reclaman-privado-n5423668",
+          "date": "2026-05-08T13:27:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Ouverture d’une enquête par le parquet européen sur des soupçons de fraude : le RN crie à nouveau au complot judiciaire",
+          "source": "L'Humanité",
+          "url": "https://www.humanite.fr/politique/jordan-bardella/ouverture-dune-enquete-par-le-parquet-europeen-sur-des-soupcons-de-fraude-le-rn-crie-a-nouveau-au-complot-judiciaire",
+          "date": "2026-05-08T13:17:35+00:00",
+          "category": "france"
+        },
+        {
+          "title": "\"Se están sobredimensionando muchas cosas\" | Representante salteño de La Libertad Avanza defiende a Adorni",
+          "source": "Cuarto: Salta a diario",
+          "url": "https://www.cuarto.com.ar/se-estan-sobredimensionando-muchas-cosas-representante-salteno-de-la-libertad-avanza-defiende-a-adorni/",
+          "date": "2026-05-08T13:10:18+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Magyar Péter szerint az elszámoltatás „kommunista tempó”",
+          "source": "ORIGO",
+          "url": "https://www.origo.hu/belpol/2026/05/magyar-peter-elszamoltatas-kommunista-tempo",
+          "date": "2026-05-08T13:00:50+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Karina Milei y José Peluc mostraron su cercanía con un cálido abrazo en San Juan",
+          "source": "Tiempo de San Juan",
+          "url": "https://www.tiempodesanjuan.com/politica/karina-milei-y-jose-peluc-mostraron-su-cercania-un-calido-abrazo-san-juan-n429775",
+          "date": "2026-05-08T12:57:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Manuel Adorni, ante una gestión bajo la lupa: las principales frases del jefe de Gabinete",
+          "source": "La Gaceta",
+          "url": "https://www.lagaceta.com.ar/nota/1135920/politica/manuel-adorni-ante-gestion-bajo-lupa-principales-frases-jefe-gabinete.html",
+          "date": "2026-05-08T12:51:34+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Manuel Adorni: “Esto me pasó porque soy una parte de Milei”",
+          "source": "Zona Norte Diario Online",
+          "url": "https://www.zonanortediario.com.ar/08/05/2026/manuel-adorni-esto-me-paso-porque-soy-una-parte-de-milei/",
+          "date": "2026-05-08T12:50:08+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "En la tradicional cena por el Día de la Minería estuvo la Secretaria General de la Presidencia, Karina Milei",
+          "source": "Editorial RN",
+          "url": "https://editorialrn.com.ar/en-la-tradicional-cena-por-el-dia-de-la-mineria-estuvo-la-secretaria-general-de-la-presidencia-karina-milei/",
+          "date": "2026-05-08T12:39:35+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Manuel Adorni adelantó que no será candidato a jefe de Gobierno porteño en 2027: “No va a pasar”",
+          "source": "Infobae",
+          "url": "https://www.infobae.com/politica/2026/05/08/manuel-adorni-adelanto-que-no-sera-candidato-a-jefe-de-gobierno-porteno-en-2027-no-va-a-pasar/",
+          "date": "2026-05-08T12:28:09+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Conservatives beat Reform UK to win Hertsmere Borough Council by-election",
+          "source": "Bishop's Stortford Independent",
+          "url": "https://www.bishopsstortfordindependent.co.uk/news/conservatives-beat-reform-uk-to-win-hertsmere-borough-counci-9465120/",
+          "date": "2026-05-08T12:24:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "No hubo spoileo de Bullrich: pese a los dichos de Milei, Manuel Adorni no pensaba adelantar su declaración jurada",
+          "source": "MDZ Online",
+          "url": "https://www.mdzol.com/politica/no-hubo-spoileo-bullrich-pese-los-dichos-milei-manuel-adorni-no-pensaba-adelantar-su-declaracion-jurada-n1515722",
+          "date": "2026-05-08T12:16:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Manuel Adorni se refirió a su situación judicial y aseguró que presentará su declaración jurada",
+          "source": "El Eco",
+          "url": "https://www.eleco.com.ar/politica/manuel-adorni-se-refirio-a-su-situacion-judicial-y-aseguro-que-presentara-su-declaracion-jurada",
+          "date": "2026-05-08T11:59:20+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Manuel Adorni rechazó a ser candidato a jefe de Gobierno porteño en 2027",
+          "source": "Infobae",
+          "url": "https://www.infobae.com/video/politica/manuel-adorni-rechazo-a-ser-candidato-a-jefe-de-gobierno-porteno-en-2027/zEnsME7u/",
+          "date": "2026-05-08T11:45:26+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Manuel Adorni confirma presentación de declaración jurada y denuncias, en respuesta a Patricia Bullrich.",
+          "source": "Mirador Provincial",
+          "url": "https://www.miradorprovincial.com/2026/05/08/manuel-adorni-confirma-presentacion-de-declaracion-jurada-y-denuncias-en-respuesta-a-patricia-bullrich/",
+          "date": "2026-05-08T11:42:37+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Manuel Adorni \"tiró abajo del tren\" a Cristina Pérez por horrorizarse hipócritamente | Infocielo",
+          "source": "Infocielo",
+          "url": "https://www.infocielo.com/politica-y-economia/manuel-adorni-tiro-abajo-del-tren-a-cristina-perez-por-horrorizarse-hipocritamente?amp",
+          "date": "2026-05-08T11:37:28+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Salieron a la luz fotos de cómo quedó la casa que Manuel Adorni compró en Indio Cuá tras las refacciones",
+          "source": "MinutoUno",
+          "url": "https://www.minutouno.com/politica/salieron-la-luz-fotos-como-quedo-la-casa-que-manuel-adorni-compro-indio-cua-las-refacciones-n6275333",
+          "date": "2026-05-08T11:05:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "La investigación contra Manuel Adorni sumó nuevas pruebas por propiedades en La Plata, viajes y gastos en dólares",
+          "source": "Punto Capital Noticias",
+          "url": "https://www.puntocapitalnoticias.com/la-investigacion-contra-manuel-adorni-sumo-nuevas-pruebas-por-propiedades-en-la-plata-viajes-y-gastos-en-dolares/",
+          "date": "2026-05-08T10:55:32+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Marco Rubio holds Italy talks amid U.S.-Europe tensions over Iran conflict",
+          "source": "cbs19.tv",
+          "url": "https://www.cbs19.tv/video/news/local/marco-rubio-holds-italy-talks-amid-us-europe-tensions-over-iran-conflict/501-6810330f-abb5-4314-ab41-503d71c8b7b5",
+          "date": "2026-05-08T10:53:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Manuel Adorni rompió el silencio sobre su patrimonio y aseguró que la Justicia aclarará todo",
+          "source": "Diario UNO",
+          "url": "https://www.diariouno.com.ar/politica/manuel-adorni-rompio-el-silencio-su-patrimonio-y-aseguro-que-la-justicia-aclarara-todo-n1553783",
+          "date": "2026-05-08T10:48:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Manuel Adorni dará una nueva conferencia de prensa en medio de la investigación de su patrimonio",
+          "source": "a24.com",
+          "url": "https://www.a24.com/politica/manuel-adorni-dara-una-nueva-conferencia-prensa-medio-la-investigacion-su-patrimonio-n1553792",
+          "date": "2026-05-08T10:30:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Adorni confirmó que presentará su declaración jurada y le respondió a Patricia Bullrich",
+          "source": "El Litoral",
+          "url": "https://www.ellitoral.com/politica/adorni-milei-patriciabullrich-justicia-declaracionjurada-karinamilei-gobierno_0_Ep8EPSBQKS.html",
+          "date": "2026-05-08T10:25:07+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Rassemblement national : le parti de nouveau mis en cause sur l’usage de financements européens",
+          "source": "La Croix",
+          "url": "https://www.la-croix.com/politique/rassemblement-national-le-parti-de-nouveau-mis-en-cause-sur-l-usage-de-financements-europeens-20260508",
+          "date": "2026-05-08T10:14:55+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Manuel Adorni aseguró que no hablará sobre sus bienes ni sus viajes porque podría interpretarse como “obstrucción a la Justicia”",
           "source": "Radio Mitre",
-          "url": "https://radiomitre.cienradios.com/politica/la-justicia-va-a-aclarar-todo-manuel-adorni-se-defendio-en-medio-de-su-causa-por-presunto-enriquecimiento-ilicito/",
-          "date": "2026-05-08T01:53:37+00:00",
+          "url": "https://radiomitre.cienradios.com/politica/manuel-adorni-aseguro-que-no-hablara-sobre-sus-bienes-ni-sus-viajes-porque-podria-interpretarse-como-obstruccion-a-la-justicia/",
+          "date": "2026-05-08T10:08:05+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Una nueva encuesta midió a Javier Milei en dos balotajes para 2027: uno lo ganó por apenas 0,8%",
+          "source": "Clarin.com",
+          "url": "https://www.clarin.com/politica/nueva-encuesta-midio-javier-milei-balotajes-2027-gano-apenas-08_0_ZdpPUuWlr2.html",
+          "date": "2026-05-08T09:00:44+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Minería reunió a Karina Milei con Orrego y la industria",
+          "source": "Diario del Rey",
+          "url": "https://www.diariodelrey.com.ar/2026/05/mineria-reunio-a-karina-milei-con-orrego-y-la-industria/",
+          "date": "2026-05-08T08:42:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "“Adulón de Trump” y “autócrata”: Jaime Bayly lanzó duras críticas contra Javier Milei",
+          "source": "Clarin.com",
+          "url": "https://www.clarin.com/politica/jaime-bayly-molesta-milei-adulon-trump_0_AhCYCG2GDL.html",
+          "date": "2026-05-08T07:44:08+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Bullrich desestima el enojo de Karina Milei, defiende su postura frente a Manuel Adorni y se prepara para recorrer CABA",
+          "source": "Infobae",
+          "url": "https://www.infobae.com/politica/2026/05/08/bullrich-desestima-el-enojo-de-karina-milei-defiende-su-postura-frente-a-manuel-adorni-y-se-prepara-para-recorrer-caba/?outputType=amp-type",
+          "date": "2026-05-08T06:19:41+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Manuel Adorni volvió a esquivar definiciones sobre la causa en su contra: \"No puedo hablar para no obstruir el trabajo de la justicia\"",
+          "source": "Ambito",
+          "url": "https://www.ambito.com/politica/manuel-adorni-volvio-esquivar-definiciones-la-causa-su-contra-no-puedo-hablar-no-obstruir-el-trabajo-la-justicia-n6275297",
+          "date": "2026-05-08T04:20:24+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Manuel Adorni dijo que la cascada es parte de su intimidad, prometió varios libros e incomodó a una persona que trabaja en televisión",
+          "source": "Clarin.com",
+          "url": "https://www.clarin.com/politica/manuel-adorni-dijo-cascada-parte-intimidad-prometio-varios-libros-incomodo-conductor-television_0_w3MnyvPSlZ.html",
+          "date": "2026-05-08T03:10:31+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Manuel Adorni: \"Si me pegan a mí, le pegan a Milei\"",
+          "source": "diariopopular.com.ar",
+          "url": "https://www.diariopopular.com.ar/politica/manuel-adorni-si-me-pegan-mi-le-pegan-milei-n899197",
+          "date": "2026-05-08T02:52:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Manuel Adorni rompió el silencio sobre su patrimonio y aseguró que “la Justicia va a aclarar todo”",
+          "source": "ADNSUR",
+          "url": "https://www.adnsur.com.ar/politica/manuel-adorni-rompio-el-silencio-sobre-su-patrimonio-y-aseguro-que--la-justicia-va-a-aclarar-todo-_a69fd4104ecf4ae0ffabb0c4f",
+          "date": "2026-05-08T01:57:00+00:00",
           "category": "argentina"
         },
         {
@@ -155,10 +467,17 @@
           "category": "argentina"
         },
         {
-          "title": "Manuel Adorni: “No voy a obstruir el trabajo de la Justicia“",
-          "source": "Cba24n",
-          "url": "https://www.cba24n.com.ar/argentina/manuel-adorni---no-voy-a-obstruir-el-trabajo-de-la-justicia-_a69fd3354e04f5abb9f05956b",
-          "date": "2026-05-08T00:54:00+00:00",
+          "title": "Manuel Adorni: “Javier me apoya porque sabe la verdad”",
+          "source": "El Cronista",
+          "url": "https://www.cronista.com/economia-politica/manuel-adorni-javier-me-apoya-porque-sabe-la-verdad/",
+          "date": "2026-05-08T01:21:55+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Manuel Adorni se defendió por su patrimonio: “No hablo porque no puedo hacerlo”",
+          "source": "Diario Río Negro",
+          "url": "https://www.rionegro.com.ar/politica/manuel-adorni-se-defendio-por-su-patrimonio-no-hablo-porque-no-puedo-hacerlo-4566953/?amp=1",
+          "date": "2026-05-08T01:16:12+00:00",
           "category": "argentina"
         },
         {
@@ -169,248 +488,682 @@
           "category": "argentina"
         },
         {
-          "title": "Ordenaron levantar el secreto fiscal de Manuel Adorni y su esposa ante Arba",
-          "source": "SEMANARIO EL TIEMPO PERGAMINO",
-          "url": "https://eltiempodepergamino.com.ar/26099-politica-ordenaron-levantar-el-secreto-fiscal-de-manuel-adorni-y-su-esposa-ante-arba",
-          "date": "2026-05-07T23:28:29+00:00",
+          "title": "Manuel Adorni mano a mano con Alejandro Fantino, cercado por el escándalo: \"No me arrepiento de mis decisiones...",
+          "source": "Perfil",
+          "url": "https://www.perfil.com/noticias/politica/manuel-adorni-habla-en-exclusiva-con-alejandro-fantino-y-reconoce-el-valor-de-su-familia-y-lo-que-extrana-trabajar-en-radio.phtml",
+          "date": "2026-05-08T00:32:00+00:00",
           "category": "argentina"
         },
         {
-          "title": "Le Rassemblement national visé par une enquête du Parquet européen pour fraude",
-          "source": "franceinfo",
-          "url": "https://www.franceinfo.fr/politique/front-national/le-rassemblement-national-vise-par-une-enquete-du-parquet-europeen-pour-fraude_7990946.html",
-          "date": "2026-05-07T22:14:09+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Média training de Bardella : enquête européenne ouverte",
-          "source": "Euronews.com",
-          "url": "https://fr.euronews.com/my-europe/2026/05/07/enquete-europeenne-sur-le-media-training-au-rn-une-denonciation-calomnieuse-selon-bardella",
-          "date": "2026-05-07T20:17:30+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Karina Milei lanzó la Mesa Federal Minera junto a gobernadores dialoguistas",
-          "source": "El Economista: Últimas noticias económicas y financieras",
-          "url": "https://eleconomista.com.ar/politica/karina-milei-lanzo-mesa-federal-minera-junto-gobernadores-dialoguistas-n94748",
-          "date": "2026-05-07T19:52:00+00:00",
+          "title": "El contratista de Adorni salió al cruce contra Javier Milei por tratarlo de K: \"Dolor en el corazón\"",
+          "source": "Diario Río Negro",
+          "url": "https://www.rionegro.com.ar/politica/el-contratista-de-adorni-salio-al-cruce-contra-javier-milei-por-tratarlo-de-k-dolor-en-el-corazon-4566664/?amp=1",
+          "date": "2026-05-07T20:24:13+00:00",
           "category": "argentina"
         },
         {
-          "title": "Media training du RN : le parquet européen ouvre une enquête sur les soupçons de fraude, le parti d’extrême droite \"conteste\" ces accusations",
-          "source": "ladepeche.fr",
-          "url": "https://www.ladepeche.fr/2026/05/07/media-training-du-rn-le-parquet-europeen-ouvre-une-enquete-sur-les-soupcons-de-fraude-le-parti-dextreme-droite-conteste-ces-accusations-13361011.php",
-          "date": "2026-05-07T18:28:00+00:00",
-          "category": "france"
+          "title": "El constructor de Manuel Adorni le respondió a Javier Milei: \"Tristeza escuchar al Presidente catalogarme de militante K\"",
+          "source": "Ambito",
+          "url": "https://www.ambito.com/politica/el-constructor-manuel-adorni-le-respondio-javier-milei-tristeza-escuchar-al-presidente-catalogarme-militante-k-n6275168",
+          "date": "2026-05-07T20:00:00+00:00",
+          "category": "argentina"
         },
         {
-          "title": "Le parquet européen enquête sur des soupçons de fraude autour de formations aux médias dont auraient notamment bénéficié Jordan Bardella, le RN dénonce une \"instrumentalisation politique\"",
-          "source": "franceinfo",
-          "url": "https://www.franceinfo.fr/politique/front-national/le-parquet-europeen-enquete-sur-des-soupcons-de-fraude-autour-de-formations-aux-medias-dont-auraient-notamment-beneficie-jordan-bardella-le-rn-denonce-une-instrumentalisation-politique_7989767.html",
-          "date": "2026-05-07T17:13:41+00:00",
-          "category": "france"
+          "title": "Schulze warnt vor Schulsterben im Fall einer AfD-Regierung",
+          "source": "WELT",
+          "url": "https://www.welt.de/regionales/sachsen-anhalt/article69fce0a630e98e4ac324dd05/schulze-warnt-vor-schulsterben-im-fall-einer-afd-regierung.html",
+          "date": "2026-05-07T18:58:50+00:00",
+          "category": "germany"
         }
       ],
       "first_seen": "2026-05-06T04:27:08+00:00",
-      "last_seen": "2026-05-08T04:03:01+00:00"
+      "last_seen": "2026-05-08T14:28:30+00:00"
     },
     {
       "id": "far-right-surges-in-european-polls-and-elections",
       "title": "Far-right surges in European polls and elections",
-      "blurb": "Far-right parties are making significant gains in polls and local elections across Europe, reflecting growing public dissatisfaction with mainstream parties. This trend is evident in Germany, Sweden, the UK, and Norway, where parties like AfD, Sverigedemokraterna, Reform UK, and Fremskrittspartiet are capitalizing on voter frustration.",
+      "blurb": "Far-right parties are making significant gains in local and regional elections across Europe, challenging traditional parties like Labour and Conservatives. This trend is evident in Germany, Sweden, the UK, and Norway, with parties like AfD, Sverigedemokraterna, and Reform UK leading the surge.",
       "convergence": 4,
       "countries": [
         {
           "name": "🇩🇪 Alternative für Deutschland",
-          "note": "AfD leads polls in Saxony-Anhalt with 41% support, signaling a potential shift in Germany's political landscape."
+          "note": "Leads polls in Saxony-Anhalt and gains ground in local elections, surpassing traditional parties."
         },
         {
           "name": "🇸🇪 Sverigedemokraterna",
-          "note": "Sverigedemokraterna continues to gain traction in Swedish polls, reflecting growing support for their nationalist policies."
+          "note": "Gains significant support in polls, nearing 20% and challenging coalition partners."
         },
         {
           "name": "🇬🇧 Reform UK",
-          "note": "Reform UK makes historic gains in local elections, surpassing Labour in several traditional strongholds and threatening mainstream parties."
+          "note": "Wins historic gains in local elections, taking control of councils and unseating Labour in traditional strongholds."
         },
         {
           "name": "🇳🇴 Fremskrittspartiet",
-          "note": "Fremskrittspartiet maintains strong polling numbers in Norway, capitalizing on public dissatisfaction with immigration and economic policies."
+          "note": "Gains momentum in local elections, challenging established parties in Norway."
         }
       ],
       "signals": [
         "parallel elections",
-        "shared framing",
-        "policy imitation",
-        "contagion of rhetoric"
+        "contagion of rhetoric",
+        "voter dissatisfaction",
+        "policy imitation"
       ],
       "article_count": 35,
       "refs": [
         {
-          "title": "Nigel Farage speech in full after 'historic' Reform local election win over Labour",
+          "title": "Keir Starmer's Labour suffers crushing election losses as Nigel Farage's Reform surges across Britain",
+          "source": "The News International",
+          "url": "https://www.thenews.com.pk/latest/1401888-keir-starmers-labour-suffers-crushing-election-losses-as-nigel-farages-reform-surges-across-britain",
+          "date": "2026-05-08T13:41:06+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Coventry election polls predict huge Labour losses as Reform UK gain momentum",
+          "source": "Coventry Telegraph",
+          "url": "https://www.coventrytelegraph.net/news/coventry-news/coventry-election-polls-predict-huge-33913643",
+          "date": "2026-05-08T13:37:09+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Reform take control of Suffolk County Council",
+          "source": "Ipswich Star",
+          "url": "https://www.ipswichstar.co.uk/news/26090263.reform-uk-take-control-suffolk-county-council-tories/",
+          "date": "2026-05-08T12:53:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Reform UK hails \"historic change\" for British politics",
+          "source": "Rayo",
+          "url": "https://planetradio.co.uk/hits-radio/uk/news/reform-historic-change-politics",
+          "date": "2026-05-08T12:47:58+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Full list of Peterborough local election results as Reform UK and Conservatives see biggest wins",
+          "source": "Cambridge News",
+          "url": "https://www.cambridge-news.co.uk/news/local-news/full-list-peterborough-local-election-33909469",
+          "date": "2026-05-08T12:43:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Why Nigel Farage will be Britain's next Prime Minister, writes Andrew Marr",
+          "source": "lbc.co.uk",
+          "url": "https://www.lbc.co.uk/article/nigel-farage-prime-minister-election-andrew-marr-opinion-5HjdYrp_2/",
+          "date": "2026-05-08T12:29:35+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Nigel Farage: Reform has taken Red Wall for good",
+          "source": "The Telegraph",
+          "url": "https://www.telegraph.co.uk/politics/2026/05/08/nigel-farage-reform-has-taken-labour-red-wall-for-good/",
+          "date": "2026-05-08T12:07:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Nuneaton and Bedworth Labour council leader loses seat to Reform UK",
+          "source": "Yahoo News UK",
+          "url": "https://uk.news.yahoo.com/nuneaton-bedworth-labour-council-leader-112914973.html",
+          "date": "2026-05-08T11:44:22+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Nigel Farage taunts Kemi Badenoch in local elections nightmare: 'She'd lose her seat!'",
           "source": "Daily Express",
-          "url": "https://www.express.co.uk/news/politics/2203081/nigel-farage-local-elections",
-          "date": "2026-05-08T02:21:00+00:00",
+          "url": "https://www.express.co.uk/news/politics/2203299/kemi-badenoch-would-lose-her",
+          "date": "2026-05-08T11:38:00+00:00",
           "category": "uk"
         },
         {
-          "title": "First counts confirm Reform UK's advance in Labour heartlands and open the door to a leadership crisis",
-          "source": "MercoPress",
-          "url": "https://en.mercopress.com/2026/05/08/first-counts-confirm-reform-uk-s-advance-in-labour-heartlands-and-open-the-door-to-a-leadership-crisis",
-          "date": "2026-05-08T01:51:00+00:00",
+          "title": "Nigel Farage hails 'truly historic shift' as Reform UK surges in local elections – video",
+          "source": "The Guardian",
+          "url": "https://www.theguardian.com/politics/video/2026/may/08/nigel-farage-historic-shift-reform-uk-local-elections-video",
+          "date": "2026-05-08T11:14:00+00:00",
           "category": "uk"
         },
         {
-          "title": "Labour appears to haemorrhage seats as first local election results roll in",
-          "source": "Times Series",
-          "url": "https://www.times-series.co.uk/news/national/26088274.labour-appears-haemorrhage-seats-first-local-election-results-roll/",
-          "date": "2026-05-08T01:10:48+00:00",
+          "title": "Reform UK gains two councils",
+          "source": "Local Government Chronicle",
+          "url": "https://www.lgcplus.com/politics/governance-and-structure/reform-uk-gains-councils-08-05-2026/",
+          "date": "2026-05-08T11:03:45+00:00",
           "category": "uk"
         },
         {
-          "title": "Reform UK trounce Labour in first Liverpool City Region local elections",
+          "title": "History made as Reform UK win Essex County Council elections from Conservatives",
+          "source": "Colchester Gazette",
+          "url": "http://www.essexcountystandard.co.uk/news/26089713.history-made-reform-uk-win-essex-county-council-elections/",
+          "date": "2026-05-08T11:00:38+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Reform UK seize control of Essex County Council in major political shockwave",
+          "source": "Essex Live",
+          "url": "https://www.essexlive.news/news/essex-news/reform-uk-seize-control-essex-10955641",
+          "date": "2026-05-08T10:55:05+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Nigel Farage’s Reform UK is on the rise",
+          "source": "Good Law Project",
+          "url": "https://goodlawproject.org/petition/farage-reform-is-on-the-rise/",
+          "date": "2026-05-08T10:45:09+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Hungary’s new leader, Péter Magyar walks a fine line between patriotism and populism",
+          "source": "EUobserver",
+          "url": "https://euobserver.com/215229/hungarys-new-leader-peter-magyar-walks-a-fine-line-between-patriotism-and-populism/",
+          "date": "2026-05-08T10:28:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Reform leader Nigel Farage - 'I am delighted Havering is under new management'",
+          "source": "Romford Recorder",
+          "url": "https://www.romfordrecorder.co.uk/news/26089216.nigel-farage-romford-celebrate-havering-election-win/",
+          "date": "2026-05-08T10:08:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Labour Suffers Heavy Losses As Reform UK Surges In Local Elections",
+          "source": "Yahoo News UK",
+          "url": "https://uk.news.yahoo.com/labour-suffers-heavy-losses-reform-100000929.html",
+          "date": "2026-05-08T10:00:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Reform UK closes in on ending Tories' 25-year control of Essex",
+          "source": "BBC",
+          "url": "https://www.bbc.com/news/articles/c4g8pn108qlo",
+          "date": "2026-05-08T09:42:45+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "English elections see Labour Party punished and gains for populist Reform",
+          "source": "RFI",
+          "url": "https://www.rfi.fr/en/international/20260508-english-elections-see-labour-party-punished-and-gains-for-right-wing-reform",
+          "date": "2026-05-08T09:40:20+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Nigel Farage celebrates Reform UK wins in major blow to Labour at local elections",
+          "source": "Coventry Telegraph",
+          "url": "https://www.coventrytelegraph.net/news/uk-world-news/nigel-farage-celebrates-reform-uk-33910421",
+          "date": "2026-05-08T09:11:15+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Reform UK's Nigel Farage celebrates 'wipe out' of Labour and Tories in local elections",
+          "source": "Wales Online",
+          "url": "https://www.walesonline.co.uk/news/uk-news/reform-uks-nigel-farage-celebrates-33910327",
+          "date": "2026-05-08T08:56:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Nigel Farage 'thrilled' as Reform UK scores major local election wins amid Labour losses",
+          "source": "Yorkshire Live",
+          "url": "https://www.examinerlive.co.uk/news/uk-world-news/nigel-farage-thrilled-reform-uk-33910269",
+          "date": "2026-05-08T08:45:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Farage hails ‘historic shift in British politics’ as Reform makes sweeping local election gains",
+          "source": "The Independent",
+          "url": "https://www.independent.co.uk/news/uk/politics/2026-local-elections-reform-farage-b2972744.html",
+          "date": "2026-05-08T08:44:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Farage hails 'historic shift' as Reform UK triumphs in local elections",
+          "source": "Teesside Live",
+          "url": "https://www.gazettelive.co.uk/news/uk-world-news/farage-hails-historic-shift-reform-33910208",
+          "date": "2026-05-08T08:41:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Nigel Farage celebrates 'historic shift' for Reform as Labour suffers losses in local elections",
           "source": "Liverpool Echo",
-          "url": "https://www.liverpoolecho.co.uk/news/liverpool-news/reform-uk-trounce-labour-first-33908943",
-          "date": "2026-05-08T01:02:00+00:00",
+          "url": "https://www.liverpoolecho.co.uk/news/uk-world-news/nigel-farage-celebrates-historic-shift-33910175",
+          "date": "2026-05-08T08:39:00+00:00",
           "category": "uk"
         },
         {
-          "title": "Reform UK now have the most seats on Hartlepool Borough Council after landslide victory at local elections",
-          "source": "Hartlepool Mail",
-          "url": "https://www.hartlepoolmail.co.uk/news/politics/reform-uk-now-have-the-most-seats-on-hartlepool-borough-council-after-landslide-victory-at-local-elections-8513232",
-          "date": "2026-05-08T00:59:00+00:00",
+          "title": "Nigel Farage 'thrilled and delighted' as Reform wins first London borough",
+          "source": "Yahoo News UK",
+          "url": "https://uk.news.yahoo.com/nigel-farage-thrilled-delighted-reform-083053366.html",
+          "date": "2026-05-08T08:38:02+00:00",
           "category": "uk"
         },
         {
-          "title": "Full list of Newcastle Borough Council election results as they happen - Stoke-on-Trent Live",
-          "source": "",
-          "url": "https://www.stokesentinel.co.uk/news/stoke-on-trent-news/full-list-newcastle-borough-council-10953132",
-          "date": "2026-05-07T22:38:00+00:00",
+          "title": "Farage 'thrilled' as Reform UK claims local elections wins with Labour 'wiped out'",
+          "source": "Chronicle Live",
+          "url": "https://www.chroniclelive.co.uk/news/uk-news/farage-thrilled-reform-uk-claims-33910201",
+          "date": "2026-05-08T08:32:00+00:00",
           "category": "uk"
         },
         {
-          "title": "AfD erreicht Rekordwert in Sachsen-Anhalt und baut Vorsprung weiter aus",
-          "source": "tagesschau.de",
-          "url": "https://www.tagesschau.de/tagesthemen/video-1583122.html",
-          "date": "2026-05-07T21:50:13+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Polls show Reform UK and Greens set to win big against Labour in British local elections",
-          "source": "The Globe and Mail",
-          "url": "https://www.theglobeandmail.com/world/article-polls-reform-uk-greens-labour-british-local-elections/",
-          "date": "2026-05-07T20:11:48+00:00",
+          "title": "Reform UK breaks into ‘red wall’ strongholds as Labour suffers heavy local losses",
+          "source": "Brussels Signal",
+          "url": "https://brusselssignal.eu/2026/05/reform-uk-breaks-into-red-wall-strongholds-as-labour-suffers-heavy-local-losses/",
+          "date": "2026-05-08T08:29:51+00:00",
           "category": "uk"
         },
         {
-          "title": "Umfrage für Sachsen-Anhalt: AfD vorn, Grüne und BSW unter fünf Prozent",
-          "source": "MDR",
-          "url": "https://www.mdr.de/video/mdr-videos/a/video-1009268.html",
-          "date": "2026-05-07T18:51:34+00:00",
-          "category": "germany"
+          "title": "Nigel Farage says 'best yet to come' after huge Reform gains and Labour vote collapse",
+          "source": "Manchester Evening News",
+          "url": "https://www.manchestereveningnews.co.uk/news/greater-manchester-news/nigel-farage-says-best-yet-33909961",
+          "date": "2026-05-08T08:25:00+00:00",
+          "category": "uk"
         },
         {
-          "title": "AfD erstmals stärkste Kraft im ARD‑\"Deutschlandtrend\"",
-          "source": "WEB.DE",
-          "url": "https://web.de/magazine/politik/afd-erstmals-staerkste-kraft-arddeutschlandtrend-42242678",
-          "date": "2026-05-07T18:39:32+00:00",
-          "category": "germany"
+          "title": "If Reform UK can hold this position, Nigel Farage will become UK prime minister",
+          "source": "The Irish Times",
+          "url": "https://www.irishtimes.com/world/uk/2026/05/08/nigel-farages-moment-as-keir-starmers-nightmare-deepens/",
+          "date": "2026-05-08T07:57:09+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Reform gains control of Newcastle-under-Lyme in historic night for party",
+          "source": "BBC",
+          "url": "https://www.bbc.com/news/articles/cwy2e2w7y46o",
+          "date": "2026-05-08T07:13:56+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Labour crumbles under the weight of Reform UK",
+          "source": "Radio Exe",
+          "url": "https://www.radioexe.co.uk/news-and-features/local-news/labour-crumbles-under-the-weight-of-reform-uk/",
+          "date": "2026-05-08T07:07:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Major gains for Reform UK in Greater Manchester council elections",
+          "source": "BBC",
+          "url": "https://www.bbc.co.uk/news/articles/cpvpr2wwv3mo",
+          "date": "2026-05-08T06:47:20+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Reform on course for general election win, claims triumphant Farage",
+          "source": "The Independent",
+          "url": "https://www.independent.co.uk/bulletin/news/local-elections-reform-farage-labour-b2972802.html",
+          "date": "2026-05-08T06:11:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "UK Labour dealt blow as far-right Reform surges, Greens gain in local elections",
+          "source": "The Times of Israel",
+          "url": "https://www.timesofisrael.com/uk-labour-dealt-blow-as-far-right-reform-surges-greens-gain-in-local-elections/",
+          "date": "2026-05-08T06:08:56+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "UK elections: Nigel Farage heralds ‘historic change’ as Reform UK surges",
+          "source": "The Irish Times",
+          "url": "https://www.irishtimes.com/world/uk/2026/05/08/uk-election-results-latest-news-labour-party-reform-uk-keir-starmer-nigel-farage/",
+          "date": "2026-05-08T05:51:27+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Nigel Farage suggests Reform UK on course for general election win after early local gains",
+          "source": "My London",
+          "url": "https://www.mylondon.news/news/uk-world-news/nigel-farage-suggests-reform-uk-33909241",
+          "date": "2026-05-08T05:46:45+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Reform win most seats up for election in Dudley",
+          "source": "BBC",
+          "url": "https://www.bbc.co.uk/news/articles/cgqpv8g7225o",
+          "date": "2026-05-08T05:32:34+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Nigel Farage predicts general election win as Reform UK makes huge gains in local elections",
+          "source": "Yorkshire Live",
+          "url": "https://www.examinerlive.co.uk/news/uk-world-news/nigel-farage-predicts-general-election-33909175",
+          "date": "2026-05-08T05:24:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "How many council seats Reform won across England in local elections 2026",
+          "source": "Manchester Evening News",
+          "url": "https://www.manchestereveningnews.co.uk/news/uk-news/how-many-council-seats-reform-33909158",
+          "date": "2026-05-08T05:15:00+00:00",
+          "category": "uk"
         }
       ],
       "first_seen": "2026-05-02T04:04:16+00:00",
-      "last_seen": "2026-05-08T04:03:01+00:00"
+      "last_seen": "2026-05-08T14:28:30+00:00"
     },
     {
       "id": "trumps-policies-dominate-global-right-wing-coverage",
       "title": "Trump’s policies dominate global right-wing coverage",
-      "blurb": "Donald Trump's policies and actions continue to dominate right-wing media coverage worldwide, with a particular focus on his administration's economic, immigration, and foreign policy decisions. This theme resonates strongly in the US, Italy, Poland, and the UK, where Trump's influence shapes political discourse and policy debates.",
+      "blurb": "Donald Trump's policies and rhetoric continue to shape right-wing discourse globally, influencing parties in the US, Italy, Poland, and the UK. Key themes include tariffs, immigration, and foreign policy, with Trump's actions often serving as a blueprint for right-wing leaders.",
       "convergence": 4,
       "countries": [
         {
           "name": "🇺🇸 MAGA / Trump",
-          "note": "Trump's policies on tariffs, immigration, and foreign relations are central to US right-wing media, with ongoing debates about their impact on the economy and global standing."
+          "note": "Trump's tariffs, immigration policies, and foreign policy dominate US right-wing discourse."
         },
         {
           "name": "🇮🇹 Fratelli d'Italia / Lega",
-          "note": "Italian media closely follows Trump's policies, particularly his stance on immigration and trade, which aligns with the nationalist agenda of Fratelli d'Italia and Lega."
+          "note": "Meloni aligns with Trump on foreign policy, facing tensions over Iran and trade disputes."
         },
         {
           "name": "🇵🇱 Prawo i Sprawiedliwość",
-          "note": "Polish right-wing media highlights Trump's foreign policy, especially his approach to NATO and relations with Russia, as a model for Poland's international stance."
+          "note": "PiS adopts Trump-like rhetoric on immigration and EU policies, facing internal divisions."
         },
         {
           "name": "🇬🇧 Reform UK",
-          "note": "Reform UK frequently references Trump's policies on immigration and trade, using them to critique the UK government's approach to similar issues."
+          "note": "Farage's party mirrors Trump's anti-immigration and anti-establishment rhetoric."
         }
       ],
       "signals": [
-        "reaction to US decisions",
         "policy imitation",
+        "coordinated messaging",
         "shared framing",
-        "contagion of rhetoric"
+        "reaction to external events"
       ],
-      "article_count": 50,
+      "article_count": 30,
       "refs": [
         {
-          "title": "Mail-a-handgun: Trump administration pushes to allow firearms to be delivered by USPS",
-          "source": "Los Angeles Times",
-          "url": "https://www.latimes.com/california/story/2026-05-07/mail-a-handgun-trump-administration-pushes-to-allow-firearms-to-be-delivered-by-usps",
-          "date": "2026-05-08T02:18:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Florida in talks with Trump administration to close 'Alligator Alcatraz,' report says",
-          "source": "WPEC",
-          "url": "https://cbs12.com/news/local/alligator-alcatraz-closing-cost-state-millions-trump-administration-department-of-homeland-security-new-york-times-florida-news",
-          "date": "2026-05-08T02:10:16+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Washington wins tariffs lawsuit against Trump administration",
+          "title": "Panel of federal judges rule President Trump's 10% tariffs are illegal",
           "source": "KING5.com",
-          "url": "https://www.king5.com/video/news/local/washington-wins-tariffs-lawsuit-against-trump-administration/281-2b116022-21b2-4835-8fe9-c6fe708b9f47",
-          "date": "2026-05-08T01:45:00+00:00",
+          "url": "https://www.king5.com/video/news/nation-world/panel-of-federal-judges-rule-president-trumps-10-tariffs-are-illegal/281-dbddf234-12bb-41b4-b354-ec5191674ab9",
+          "date": "2026-05-08T13:38:00+00:00",
           "category": "usa"
         },
         {
-          "title": "Trump Administration files to intervene on behalf of Sable Offshore in State Parks lawsuit - News Channel 3-12",
-          "source": "",
-          "url": "https://keyt.com/news/california/2026/05/07/trump-administration-files-to-intervene-on-behalf-of-sable-offshore-in-state-parks-lawsuit/",
-          "date": "2026-05-08T01:01:22+00:00",
+          "title": "President Trump to deliver keynote address at CT ‘s Coast Guard Academy Commencement. What to know",
+          "source": "Hartford Courant",
+          "url": "https://www.courant.com/2026/05/08/president-trump-to-deliver-keynote-address-at-ct-s-coast-guard-academy-commencement-what-to-know/",
+          "date": "2026-05-08T13:28:56+00:00",
           "category": "usa"
         },
         {
-          "title": "FBI director ordered polygraph tests on over 2 dozen staffers to find leaks within Trump administration: Report",
-          "source": "Anadolu Ajansı",
-          "url": "https://www.aa.com.tr/en/americas/fbi-director-ordered-polygraph-tests-on-over-2-dozen-staffers-to-find-leaks-within-trump-administration-report/3930803",
-          "date": "2026-05-08T00:47:14+00:00",
+          "title": "President Trump pushes for balance with China amid rising Iran threat",
+          "source": "Fox Business",
+          "url": "https://www.foxbusiness.com/video/6394965449112",
+          "date": "2026-05-08T13:27:34+00:00",
           "category": "usa"
         },
         {
-          "title": "Trade court rules Trump administration tariffs illegal under 1970s law",
-          "source": "KGW",
-          "url": "https://www.kgw.com/video/news/politics/national-politics/trade-court-rules-trump-administration-tariffs-illegal-under-1970s-law/283-2b81bb6e-abeb-4ed1-80fc-f1ceb73d4b40",
-          "date": "2026-05-08T00:36:00+00:00",
+          "title": "Trump Administration Launches a Legally Bogus Investigation into Smith College",
+          "source": "Ms. Magazine",
+          "url": "https://msmagazine.com/2026/05/08/trump-smith-college/",
+          "date": "2026-05-08T13:21:38+00:00",
           "category": "usa"
         },
         {
-          "title": "Trump Administration Says It Is Revoking Passports on an ‘Unprecedented Scale’",
-          "source": "NOTUS — News of the United States",
-          "url": "https://www.notus.org/trump-white-house/trump-administration-says-it-is-revoking-passports-on-an-unprecedented-scale",
-          "date": "2026-05-07T23:26:08+00:00",
+          "title": "Trump administration begins to release new UFO files to the public",
+          "source": "LiveNOW from FOX",
+          "url": "https://www.livenowfox.com/news/trump-administration-begins-release-new-ufo-files-public",
+          "date": "2026-05-08T13:17:49+00:00",
           "category": "usa"
         },
         {
-          "title": "Donald Trump’s 10% global tariff ruled illegal by US court",
-          "source": "Financial Times",
-          "url": "https://www.ft.com/content/a53ed6cc-bbef-4527-a19c-8041118e3661?syn-25a6b1a6=1",
-          "date": "2026-05-07T23:09:09+00:00",
+          "title": "Commentary: If GOP governors act, it's Christmas in May for MAGA",
+          "source": "Grand Forks Herald",
+          "url": "https://www.grandforksherald.com/opinion/columns/commentary-if-gop-governors-act-its-christmas-in-may-for-maga",
+          "date": "2026-05-08T13:15:48+00:00",
           "category": "usa"
         },
         {
-          "title": "Federal court rules against global tariffs President Trump imposed after Supreme Court loss",
+          "title": "Rubio a Palazzo Chigi, vertice di un'ora e mezza con Meloni. 'Spero in una seria proposta dell'Iran'",
+          "source": "ANSA",
+          "url": "https://www.ansa.it/sito/notizie/politica/2026/05/08/rubio-a-palazzo-chigi-vertice-di-unora-e-mezza-con-meloni.-spero-in-una_9e00c52d-af12-4244-b5be-545a8c4f4c36.html",
+          "date": "2026-05-08T13:03:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Rubio a Meloni, impegno Usa per stretta collaborazione su priorità condivise",
+          "source": "ANSA",
+          "url": "https://www.ansa.it/sito/notizie/topnews/2026/05/08/rubio-a-meloni-impegno-usa-per-stretta-collaborazione-su-priorita-condivise_efc27c2b-b679-4a59-a5c0-e6f56f366489.html",
+          "date": "2026-05-08T13:00:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "'Never-before-seen' UFO files released by the Trump administration",
+          "source": "WPDE",
+          "url": "https://wpde.com/news/nation-world/never-before-seen-ufo-files-released-by-the-president-donald-trump-administration-department-of-war-unidentified-anomalous-phenomena-uap-fbi-declassified-government-documents-transparency",
+          "date": "2026-05-08T12:54:01+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Rubio: non ho parlato con Meloni di ritiro delle truppe Usa dall’Italia",
+          "source": "Askanews",
+          "url": "https://askanews.it/2026/05/08/rubio-non-ho-parlato-con-meloni-di-ritiro-delle-truppe-usa-dallitalia/",
+          "date": "2026-05-08T12:41:22+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Far-right Minister Smotrich Orders Uprooting of 3,000 West Bank Trees",
+          "source": "Haaretz",
+          "url": "https://www.haaretz.com/west-bank/2026-05-08/ty-article/.premium/far-right-minister-smotrich-orders-uprooting-of-3-000-west-bank-trees/0000019e-038f-d9e5-a7de-ebcf59d10000",
+          "date": "2026-05-08T12:33:00+00:00",
+          "category": "general"
+        },
+        {
+          "title": "Jimmy Kimmel Grills Mike Tyson for Going to Donald Trump’s Mar-a-Lago",
+          "source": "Yahoo",
+          "url": "https://www.yahoo.com/entertainment/celebrity/articles/jimmy-kimmel-grills-mike-tyson-122412951.html",
+          "date": "2026-05-08T12:24:12+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Pope Leo XIV sought a pastoral role in his first year, but verbal sparring with Donald Trump intervened",
           "source": "Chicago Tribune",
-          "url": "https://www.chicagotribune.com/2026/05/07/trump-global-trariffs-federal-court-ruling/",
-          "date": "2026-05-07T22:40:20+00:00",
+          "url": "https://www.chicagotribune.com/2026/05/08/pope-leo-xiv-first-year-donald-trump/",
+          "date": "2026-05-08T12:07:47+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "\"Pierwszy katolik\". Jarosław Kaczyński wbija szpilę Donaldowi Tuskowi",
+          "source": "Wiadomości Onet",
+          "url": "https://wiadomosci.onet.pl/swiat/jaroslaw-kaczynski-wbija-szpile-donaldowi-tuskowi-pierwszy-katolik/1bgh0cp",
+          "date": "2026-05-08T11:55:23+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Rubio in Italia, Meloni e Tajani lo incontrano per rinsaldare il patto Italia-Usa",
+          "source": "RaiNews",
+          "url": "https://www.rainews.it/video/2026/05/rubio-in-italia-meloni-e-tajani-lo-incontrano-per-rinsaldare-il-patto-italia-usa-26e757bf-57a1-4327-aaa1-8607fe00cfbf.html",
+          "date": "2026-05-08T11:41:43+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Trade court rules President Trump's 10% global tariffs are illegal",
+          "source": "CNBC",
+          "url": "https://www.cnbc.com/video/2026/05/08/trade-court-rules-president-trumps-10-percent-global-tariffs-are-illegal.html",
+          "date": "2026-05-08T11:30:44+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "“Trump Just Lost Again”: Federal Court Rules Against Donald Trump’s Tariff Backup Plan",
+          "source": "Yahoo Finance UK",
+          "url": "https://uk.finance.yahoo.com/news/trump-just-lost-again-federal-111317480.html",
+          "date": "2026-05-08T11:13:17+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Federal court rules President Trump's 10% across-the-board tariffs illegal",
+          "source": "KHOU",
+          "url": "https://www.khou.com/video/news/nation-world/federal-court-rules-president-trumps-10-across-the-board-tariffs-illegal/285-f56c4fd1-9cba-4971-b3bb-0dc22b887c55",
+          "date": "2026-05-08T11:03:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump says Iran ‘militarily defeated’ in interview with Sharyl Attkisson",
+          "source": "Baltimore Sun",
+          "url": "https://www.baltimoresun.com/2026/05/08/trump-iran-defeated-full-measure-interview/",
+          "date": "2026-05-08T10:59:30+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "'They trifled with us': President Trump says ceasefire remains intact despite Iran's latest attack",
+          "source": "WDSU",
+          "url": "https://www.wdsu.com/article/president-trump-ceasefire-intact-despite-iran-latest-attack/71249811",
+          "date": "2026-05-08T10:58:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "President Trump says Iran ceasefire is still intact despite escalation in tensions",
+          "source": "KHOU",
+          "url": "https://www.khou.com/video/news/nation-world/president-trump-says-iran-ceasefire-is-still-intact-despite-escalation-in-tensions/285-d34268b7-0f07-4442-8270-4966e7cc63b4",
+          "date": "2026-05-08T10:57:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Marco Rubio holds Italy talks amid U.S.-Europe tensions over Iran conflict",
+          "source": "cbs19.tv",
+          "url": "https://www.cbs19.tv/video/news/local/marco-rubio-holds-italy-talks-amid-us-europe-tensions-over-iran-conflict/501-6810330f-abb5-4314-ab41-503d71c8b7b5",
+          "date": "2026-05-08T10:53:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Donald Trump’s Surgeon General Pick Criticized Him in Now-Deleted Post",
+          "source": "Yahoo",
+          "url": "https://www.yahoo.com/news/articles/donald-trump-surgeon-general-pick-104944906.html",
+          "date": "2026-05-08T10:49:44+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "President Trump confirms US-Iran clash; 'I call that a trifle'",
+          "source": "whas11.com",
+          "url": "https://www.whas11.com/video/news/nation-world/president-trump-confirms-us-iran-clash-i-call-that-a-trifle/417-f8de41a7-01c0-4331-9356-3954d801602c",
+          "date": "2026-05-08T10:39:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump administration to increase passport revocations over unpaid child support",
+          "source": "cbs19.tv",
+          "url": "https://www.cbs19.tv/video/news/local/trump-administration-to-increase-passport-revocations-over-unpaid-child-support/501-421d7eb6-3eeb-4c18-a75b-ed02db540766",
+          "date": "2026-05-08T10:37:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "German Minister Blames Donald Trump’s ‘Irresponsible War’ for Economic Slowdown",
+          "source": "Yahoo",
+          "url": "https://www.yahoo.com/news/articles/german-minister-blames-donald-trump-102847557.html",
+          "date": "2026-05-08T10:28:47+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Italy tells Rubio that Europe needs America and vice versa on Day 2 of US fence-mending visit",
+          "source": "thegazette.com",
+          "url": "https://www.thegazette.com/news/world/italy-tells-rubio-that-europe-needs-america-and-vice-versa-on-day-2-of-us/article_9ae8cd6b-46b3-58b2-ae4b-f5742d893e50.html",
+          "date": "2026-05-08T10:23:41+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Giorgia Meloni, il bilaterale con Marco Rubio a Palazzo Chigi",
+          "source": "Tgcom24",
+          "url": "https://www.tgcom24.mediaset.it/politica/giorgia-meloni-marco-rubio-incontro_111837872-202602k.shtml",
+          "date": "2026-05-08T10:21:01+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Kamala Harris tears into Trump administration",
+          "source": "Fox News",
+          "url": "https://www.foxnews.com/video/6394952853112",
+          "date": "2026-05-08T10:13:12+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Pope Leo & Marco Rubio Tighten Ties as Donald Trump Tensions Loom",
+          "source": "Yahoo",
+          "url": "https://www.yahoo.com/news/articles/pope-leo-marco-rubio-tighten-100557454.html",
+          "date": "2026-05-08T10:05:57+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "White House Slams ‘Sick’ Mark Hamill for Post Showing Donald Trump in Grave",
+          "source": "Yahoo",
+          "url": "https://www.yahoo.com/entertainment/celebrity/articles/white-house-slams-sick-mark-093725364.html",
+          "date": "2026-05-08T09:37:25+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump Spills the Deranged Message He Told Rubio to Give the Pope",
+          "source": "The Daily Beast",
+          "url": "https://www.thedailybeast.com/trump-spills-the-deranged-message-he-told-marco-rubio-to-give-pope-leo-xiv/",
+          "date": "2026-05-08T09:03:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump's Truth Social lays bare narrow obsessions of an extremely online president",
+          "source": "NPR",
+          "url": "https://www.npr.org/2026/05/08/nx-s1-5749358/trump-truth-social-online-posts-iran-white-house-ballroom",
+          "date": "2026-05-08T09:00:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "European countries emerge as NATO leaders as U.S. role recedes",
+          "source": "NPR",
+          "url": "https://www.npr.org/2026/05/08/nx-s1-5810515/us-war-trump-nato-iran-europe-canada-germany",
+          "date": "2026-05-08T09:00:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump invites Boeing, Mastercard CEOs to join China trip next week: sources",
+          "source": "South China Morning Post",
+          "url": "https://www.scmp.com/economy/global-economy/article/3352883/trump-invites-boeing-mastercard-ceos-join-china-trip-next-week-sources",
+          "date": "2026-05-08T08:31:53+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "‘They Trifled With Us’: President Trump Downplays Clash in Strait of Hormuz, Says Deal Could Happen ‘Any Day’",
+          "source": "The Media Line",
+          "url": "https://themedialine.org/headlines/they-trifled-with-us-president-trump-downplays-clash-in-strait-of-hormuz-says-deal-could-happen-any-day/",
+          "date": "2026-05-08T07:38:11+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Rubio set to meet Italy's Meloni as both sides seek to ease frictions over Iran war",
+          "source": "WSLS",
+          "url": "https://www.wsls.com/news/world/2026/05/08/rubio-set-to-meet-italys-meloni-as-both-sides-seek-to-ease-frictions-over-iran-war/",
+          "date": "2026-05-08T07:30:11+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Jimmy Kimmel mocks Donald Trump over Iran strategy that ‘mostly consists of flailing around’",
+          "source": "The Independent",
+          "url": "https://www.independent.co.uk/arts-entertainment/tv/news/jimmy-kimmel-donald-trump-iran-threats-strait-hormuz-b2972764.html",
+          "date": "2026-05-08T07:04:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Jimmy Kimmel Roasts Marco Rubio’s ‘Embarrassing’ Meeting With Pope Leo",
+          "source": "The Daily Beast",
+          "url": "https://www.thedailybeast.com/obsessed/jimmy-kimmel-roasts-marco-rubios-embarrassing-meeting-with-pope-leo/",
+          "date": "2026-05-08T05:17:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "President Trump Delivers Remarks in the Rose Garden - C-SPAN",
+          "source": "",
+          "url": "https://www.c-span.org/event/white-house-event/president-trump-delivers-remarks-in-the-rose-garden/442942",
+          "date": "2026-05-08T04:00:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "VP JD Vance visit to snarl traffic; how to navigate local detours",
+          "source": "WKRC",
+          "url": "https://local12.com/news/local/vp-jd-vance-visit-to-snarl-traffic-how-to-navigate-local-detours-cincinnati-roads-closures-disruptions",
+          "date": "2026-05-08T03:00:58+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Greece bets big on MAGA, as other EU countries turn away from Trump",
+          "source": "politico.eu",
+          "url": "https://www.politico.eu/article/greece-us-kimberly-guilfoyle-donald-trump/",
+          "date": "2026-05-08T02:05:46+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "How the Trump administration can reform the Jones Act to lower US energy costs",
+          "source": "Atlantic Council",
+          "url": "https://www.atlanticcouncil.org/dispatches/how-the-trump-administration-can-reform-the-jones-act-to-lower-us-energy-costs/",
+          "date": "2026-05-08T00:30:58+00:00",
           "category": "usa"
         },
         {
@@ -422,39 +1175,158 @@
         }
       ],
       "first_seen": "2026-05-08T04:03:01+00:00",
-      "last_seen": "2026-05-08T04:03:01+00:00"
+      "last_seen": "2026-05-08T14:28:30+00:00"
     },
     {
       "id": "eu-climate-policy-sparks-cross-national-backlash",
       "title": "EU climate policy sparks cross-national backlash",
-      "blurb": "Right-wing and far-right parties across Europe are rallying against EU climate policies, framing them as economically burdensome and detrimental to national sovereignty. This backlash is particularly strong in Poland, Hungary, and Germany, where leaders are calling for referendums or policy reversals to counter the EU's Green Deal.",
+      "blurb": "Right-wing and far-right parties across Europe are mobilizing against EU climate policies, framing them as economically burdensome and a threat to national sovereignty. This backlash is evident in Poland, Hungary, Germany, and France, with leaders proposing referendums and alternative policies.",
       "convergence": 3,
       "countries": [
         {
           "name": "🇵🇱 Prawo i Sprawiedliwość",
-          "note": "Polish President Karol Nawrocki proposes a referendum on EU climate policies, arguing they increase living costs and harm the economy."
+          "note": "President Nawrocki proposes a referendum on EU climate policies, criticizing their economic impact."
         },
         {
           "name": "🇭🇺 Fidesz / Tisza",
-          "note": "Hungary's Tisza Party criticizes EU climate policies, advocating for a more flexible approach that prioritizes national economic interests."
+          "note": "Tisza Party criticizes EU climate policies, advocating for national control over energy and environmental regulations."
         },
         {
           "name": "🇩🇪 Alternative für Deutschland",
-          "note": "AfD opposes EU climate policies, arguing they harm Germany's economy and sovereignty, and advocates for policy reversals."
+          "note": "AfD opposes EU climate policies, advocating for energy independence and reduced regulations."
         },
         {
           "name": "🇫🇷 Rassemblement National",
-          "note": "RN criticizes EU climate policies, framing them as economically damaging and calling for a reassessment of France's commitments."
+          "note": "RN criticizes EU climate policies, advocating for national sovereignty in environmental decisions."
         }
       ],
       "signals": [
         "reaction to EU decision",
         "shared framing",
-        "policy backlash",
-        "contagion of rhetoric"
+        "policy imitation",
+        "parallel elections"
       ],
       "article_count": 25,
       "refs": [
+        {
+          "title": "Referendum ws. cen prądu. Zandberg krytykuje Nawrockiego: Brzydka i zła tradycja",
+          "source": "Do Rzeczy",
+          "url": "https://dorzeczy.pl/opinie/884425/referendum-ws-cen-pradu-zandberg-krytykuje-nawrockiego-brzydka-i-zla-tradycja.html",
+          "date": "2026-05-08T13:03:00+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "SAFE mimo weta prezydenta. Szef BBN zapowiada konsekwencje",
+          "source": "Do Rzeczy",
+          "url": "https://dorzeczy.pl/kraj/884410/safe-mimo-weta-prezydenta-szef-bbn-zapowiada-konsekwencje.html",
+          "date": "2026-05-08T12:45:00+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Sachsen-Anhalt: Wie die AfD die großen Kirchen unter Druck setzt",
+          "source": "SZ.de",
+          "url": "https://www.sueddeutsche.de/politik/afd-kirchen-sachsen-anhalt-li.3479361",
+          "date": "2026-05-08T12:41:55+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Sachsen-Anhalt: Schulze warnt im Fall einer AfD-Regierung vor wertlosen Schulabschlüssen - Video",
+          "source": "WELT",
+          "url": "https://www.welt.de/politik/deutschland/video69fdd226591d4b3b0b719cad/sachsen-anhalt-schulze-warnt-im-fall-einer-afd-regierung-vor-wertlosen-schulabschluessen.html",
+          "date": "2026-05-08T12:12:37+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Polish President Pushes for Referendum on EU Climate Law",
+          "source": "The European Conservative",
+          "url": "https://europeanconservative.com/articles/news-corner/poland-president-karol-nawrocki-referendum-on-eu-climate-law/",
+          "date": "2026-05-08T10:25:47+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Poland's president appoints new head of national security bureau",
+          "source": "Polskie Radio",
+          "url": "https://www.polskieradio.pl/395/7784/Artykul/3684112,polands-president-appoints-new-head-of-national-security-bureau",
+          "date": "2026-05-08T10:10:00+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Ile ma kosztować referendum prezydenta Nawrockiego? Znamy szacunkową kwotę",
+          "source": "Fakt",
+          "url": "https://www.fakt.pl/polityka/referendum-karola-nawrockiego-ile-kosztowaloby-przeprowadzenie-glosowania/ejt287g",
+          "date": "2026-05-08T09:39:52+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "81 resolutions of 16th National Assembly and NA Standing Committee announced",
+          "source": "Nhan Dan Online",
+          "url": "https://en.nhandan.vn/81-resolutions-of-16th-national-assembly-and-na-standing-committee-announced-post161934.html",
+          "date": "2026-05-08T09:19:33+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "What Scares Louis Theroux More: The Manosphere or the Dystopia of the West Bank?",
+          "source": "Haaretz",
+          "url": "https://www.haaretz.com/life/2026-05-08/ty-article-magazine/.premium/what-scares-louis-theroux-more-the-manosphere-or-the-dystopia-of-the-west-bank/0000019d-ddf2-d9bc-a5bf-dffb59fa0000",
+          "date": "2026-05-08T09:04:00+00:00",
+          "category": "general"
+        },
+        {
+          "title": "A szegedi egyetem jogi karának dékánját, Dr. Görög Mártát kérte fel Magyar Péter igazságügyi miniszternek",
+          "source": "| eduline.hu",
+          "url": "https://eduline.hu/campus-life/20260508_gorog-marta-igazsagugyi-miniszter-szte-dekan-tisza-kormany",
+          "date": "2026-05-08T08:23:25+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Polish president calls for referendum on EU climate policy",
+          "source": "Polskie Radio",
+          "url": "https://polskieradio.pl/395/7784/Artykul/3684036,polish-president-calls-for-referendum-on-eu-climate-policy",
+          "date": "2026-05-08T08:15:00+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Prof. Dudek o referendum Nawrockiego. \"Taki jest cel tego ruchu\"",
+          "source": "Fakt",
+          "url": "https://www.fakt.pl/polityka/karol-nawrocki-chce-referendum-prof-dudek-ocenil-ruch-prezydenta/gs8dg04",
+          "date": "2026-05-08T07:59:37+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Wybieg Karola Nawrockiego nie ma sensu. \"Chodzi tylko o podgrzanie sporu\"",
+          "source": "Newsweek",
+          "url": "https://www.newsweek.pl/polska/polityka/pis-ustawia-na-szachownicy-figurke-gornika-poki-jest-dostepna/t7nlths",
+          "date": "2026-05-08T07:31:07+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Tak Polacy oceniają obecną konstytucję. Wyniki pokrzyżują plany Nawrockiego?",
+          "source": "Radio Zet",
+          "url": "https://wiadomosci.radiozet.pl/polityka/tak-polacy-oceniaja-obecna-konstytucje-wyniki-pokrzyzuja-plany-nawrockiego",
+          "date": "2026-05-08T07:29:20+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Gdyby prezydent mógł raz w roku rozwiązać Sejm, to by to robił",
+          "source": "Rzeczpospolita",
+          "url": "https://www.rp.pl/plus-minus/art44331621-kataryna-przepis-na-demolke-panstwa-w-trakcie-jednej-prezydenckiej-kadencji",
+          "date": "2026-05-08T06:15:00+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "\"Wotum nieufności wobec PiS\". Motyka ostro o pomyśle prezydenta",
+          "source": "RMF24",
+          "url": "https://www.rmf24.pl/tylko-w-rmf24/poranna-rozmowa/news-wotum-nieufnosci-wobec-pis-motyka-ostro-o-pomysle-prezydenta,nId,8080841",
+          "date": "2026-05-08T05:47:19+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Nawrocki chce referendum. Kto wygra brytyjskie wybory. Kolejne transkrypcje. 5 ważnych tematów na dziś",
+          "source": "Polityka.pl",
+          "url": "https://www.polityka.pl/tygodnikpolityka/kraj/2342159,1,nawrocki-chce-referendum-kto-wygra-brytyjskie-wybory-kolejne-transkrypcje-5-waznych-tematow-na-dzis.read",
+          "date": "2026-05-08T05:07:16+00:00",
+          "category": "poland"
+        },
         {
           "title": "Majowa ofensywa prezydenta. Dlaczego Karol Nawrocki wraca do starych pomysłów PiS?",
           "source": "xyz.pl",
@@ -463,10 +1335,10 @@
           "category": "poland"
         },
         {
-          "title": "Nowa inicjatywa Nawrockiego. Prof. Dudek: Żadnego referendum nie będzie",
-          "source": "Do Rzeczy",
-          "url": "https://dorzeczy.pl/opinie/883996/nowa-inicjatywa-nawrockiego-prof-dudek-zadnego-referendum-nie-bedzie.html",
-          "date": "2026-05-07T20:34:00+00:00",
+          "title": "Conservatives Are Beating Newsom at His Own Game",
+          "source": "American Center for Law and Justice",
+          "url": "https://aclj.org/news/conservatives-are-beating-newsom-at-his-own-game",
+          "date": "2026-05-07T20:23:24+00:00",
           "category": "poland"
         },
         {
@@ -484,10 +1356,17 @@
           "category": "poland"
         },
         {
-          "title": "Nawrocki chce referendum ws. polityki klimatycznej UE. \"Prezydent przechodzi do wiosennej ofensywy\"",
-          "source": "Gazeta",
-          "url": "https://wiadomosci.gazeta.pl/polityka/7,198012,32777014,prof-dudek-o-wniosku-ws-referendum-prezydent-przechodzi-do.html",
-          "date": "2026-05-07T19:14:46+00:00",
+          "title": "To politycy myślą o referendum Nawrockiego. \"Chce przykryć dwie porażki\"",
+          "source": "Fakt",
+          "url": "https://www.fakt.pl/polityka/karol-nawrocki-i-referendum-krzysztof-bosak-malgorzata-kidawa-blonska-i-marek-sawicki/5hmx2k2",
+          "date": "2026-05-07T19:08:12+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "\"PiS próbowało to ukryć\". Jaka jest prawda o opłacie reprograficznej",
+          "source": "Kultura Onet",
+          "url": "https://kultura.onet.pl/wywiady-i-artykuly/pis-probowalo-to-ukryc-jaka-jest-prawda-o-oplacie-reprograficznej/qjrc4wz",
+          "date": "2026-05-07T18:46:43+00:00",
           "category": "poland"
         },
         {
@@ -503,31 +1382,10 @@
           "url": "https://resfutura.pl/karol-nawrocki-z-propozycja-referendum-o-polityce-klimatycznej/",
           "date": "2026-05-07T17:53:22+00:00",
           "category": "poland"
-        },
-        {
-          "title": "Nie zostawiają suchej nitki na referendum Nawrockiego. \"Pytanie z tezą\"",
-          "source": "WP Wiadomości",
-          "url": "https://wiadomosci.wp.pl/nie-zostawiaja-suchej-nitki-na-referendum-nawrockiego-pytanie-z-teza-7283313925240864a",
-          "date": "2026-05-07T17:35:38+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Szułdrzyński: Referendum klimatyczne Nawrockiego ma rozpętać antyunijne emocje",
-          "source": "Rzeczpospolita",
-          "url": "https://www.rp.pl/komentarze/art44332641-michal-szuldrzynski-karol-nawrocki-i-referendum-nad-oze-sroze-czyli-manipulacja-zamiast-debaty",
-          "date": "2026-05-07T17:00:00+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Nationalist Polish president proposes referendum on EU Green Deal",
-          "source": "Euractiv",
-          "url": "https://www.euractiv.com/news/nationalist-polish-president-proposes-referendum-on-eu-green-deal/",
-          "date": "2026-05-07T15:27:12+00:00",
-          "category": "poland"
         }
       ],
       "first_seen": "2026-05-08T04:03:01+00:00",
-      "last_seen": "2026-05-08T04:03:01+00:00"
+      "last_seen": "2026-05-08T14:28:30+00:00"
     }
   ]
 }
