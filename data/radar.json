@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-10T14:12:28+00:00",
+  "updated_at": "2026-05-11T15:50:55+00:00",
   "lookback_hours": 48,
   "model": "Mistral Large",
   "status": "ok",
@@ -7,153 +7,536 @@
     {
       "id": "far-right-parties-push-national-priority-policies",
       "title": "Far-right parties push 'national priority' policies",
-      "blurb": "Right-wing and far-right parties across Europe are intensifying their focus on 'national priority' policies, advocating for preferential treatment of citizens over immigrants in welfare, housing, and social services. This theme is particularly prominent in Spain, France, and Italy, where parties like Vox, Rassemblement National, and Lega are framing these policies as essential to addressing domestic resource scarcity and protecting national identity.",
+      "blurb": "Right-wing and far-right parties across Europe are increasingly advocating for 'national priority' policies, which prioritize citizens over immigrants in public services and benefits. This theme is evident in Spain, France, and Italy, where parties like Vox, Rassemblement National, and Lega are pushing for similar measures, often clashing with EU regulations and left-wing opposition.",
       "convergence": 5,
       "countries": [
         {
           "name": "🇪🇸 Vox",
-          "note": "Vox campaigns on 'national priority' in Andalusia, proposing tax cuts and public fee reductions for Spanish families, and criticizing PP and PSOE for neglecting national interests in favor of immigrants."
+          "note": "Criticizes PP and PSOE for not prioritizing Spaniards in public services, demands national priority in aid and healthcare."
         },
         {
           "name": "🇫🇷 Rassemblement National",
-          "note": "RN emphasizes 'national priority' in social aid, opposing EU loans for campaigns and advocating for French citizens' preferential access to resources."
+          "note": "Advocates for French citizens' priority in housing and social benefits, opposing immigration policies."
         },
         {
           "name": "🇮🇹 Fratelli d'Italia / Lega",
-          "note": "Lega pushes for 'national priority' in housing and welfare policies, criticizing left-wing parties for prioritizing immigrants over Italian citizens."
+          "note": "Proposes policies to prioritize Italian citizens in public services, often clashing with EU migration policies."
         },
         {
           "name": "🇵🇱 Prawo i Sprawiedliwość",
-          "note": "PiS criticizes EU climate policies for harming Polish farmers and businesses, advocating for national sovereignty in policy-making."
+          "note": "President Nawrocki vetoes laws that could weaken state control over agricultural land, emphasizing national sovereignty."
         },
         {
           "name": "🇩🇪 Alternative für Deutschland",
-          "note": "AfD frames immigration as a threat to German social systems, advocating for policies that prioritize German citizens in welfare and housing."
+          "note": "Calls for stricter immigration controls and prioritization of German citizens in public services."
         }
       ],
       "signals": [
         "policy imitation",
         "shared framing",
-        "parallel elections",
-        "contagion of rhetoric"
+        "reaction to EU decision",
+        "parallel elections"
       ],
-      "article_count": 45,
+      "article_count": 30,
       "refs": [
         {
-          "title": "VOX reclama más infraestructuras hídricas y de transporte para acabar con el “aislamiento” de Huelva",
-          "source": "Huelva Información",
-          "url": "https://www.huelvainformacion.es/huelva/vox-reclama-infraestructuras-hidricas-transporte_0_2006727056.html",
-          "date": "2026-05-10T12:37:41+00:00",
+          "title": "La izquierda y Vox cargan contra Ayuso por su viaje a México y exigen transparencia",
+          "source": "ABC",
+          "url": "https://www.abc.es/espana/madrid/izquierda-vox-cargan-ayuso-viaje-mexico-exigen-20260511150549-nt.html",
+          "date": "2026-05-11T13:06:14+00:00",
           "category": "spain"
         },
         {
-          "title": "Vox promete eliminar las Zonas de Bajas Emisiones de Andalucía y desterrar las políticas del PSOE y del PP",
-          "source": "Granada Hoy",
-          "url": "https://www.granadahoy.com/granada/vox-promete-eliminar-zonas-bajas-emisiones-andalucia-desterrar-politicas-psoe-pp_0_2006726405.html",
-          "date": "2026-05-10T11:36:24+00:00",
+          "title": "Vox aplaude el gesto del PP de Madrid sobre la prioridad nacional y exige extenderlo a todas las ayudas públicas",
+          "source": "Demócrata",
+          "url": "https://www.democrata.es/actualidad/vox-aplaude-el-gesto-del-pp-de-madrid-sobre-la-prioridad-nacional-y-exige-extenderlo-a-todas-las-ayudas-publicas/",
+          "date": "2026-05-11T11:58:49+00:00",
           "category": "spain"
         },
         {
-          "title": "Maíllo propone supermercados públicos para garantizar una alimentación saludable y acusa a PP, PSOE y Vox de “perjudicar al campo andaluz”",
-          "source": "Tercera Información",
-          "url": "https://www.tercerainformacion.es/articulo/actualidad/10/05/2026/maillo-propone-supermercados-publicos-para-garantizar-una-alimentacion-saludable-y-acusa-a-pp-psoe-y-vox-de-perjudicar-al-campo-andaluz/",
-          "date": "2026-05-10T09:25:34+00:00",
+          "title": "Vox aplaude el gesto del PP sobre la prioridad nacional pero exige extenderlo a todas las ayudas en Madrid",
+          "source": "Demócrata",
+          "url": "https://www.democrata.es/comunidad-de-madrid/vox-aplaude-el-gesto-del-pp-sobre-la-prioridad-nacional-pero-exige-extenderlo-a-todas-las-ayudas-en-madrid/",
+          "date": "2026-05-11T11:46:36+00:00",
           "category": "spain"
         },
         {
-          "title": "El PSOE blinda en las Cortes el Pacto Verde Europeo frente a los pactos autonómicos de PP y Vox",
-          "source": "La Razón",
-          "url": "https://www.larazon.es/espana/psoe-blinda-cortes-pacto-verde-europeo-frente-pactos-autonomicos-vox_202605106a0048c3b5b06629960aca81.html",
-          "date": "2026-05-10T08:58:43+00:00",
+          "title": "Vox propone eliminar \"subvenciones a asociaciones que promuevan inmigración ilegal\"",
+          "source": "Europa Press",
+          "url": "https://www.europapress.es/andalucia/malaga-00356/noticia-vox-propone-eliminar-subvenciones-asociaciones-promuevan-inmigracion-ilegal-20260511131452.html",
+          "date": "2026-05-11T11:14:52+00:00",
           "category": "spain"
         },
         {
-          "title": "La izquierda pica el anzuelo de la \"prioridad nacional\"",
-          "source": "Diario digital Nueva Tribuna",
-          "url": "https://www.nuevatribuna.es/articulo/actualidad/psoe-iu-pp-vox-izquierda-pica-anzuelo-prioridad-nacional/20260509143834249998.html",
-          "date": "2026-05-10T06:25:20+00:00",
+          "title": "VOX propone retirar ayudas a las asociaciones que “fomenten la inmigración irregular” y no prioricen a los malagueños",
+          "source": "Malaga Actualidad",
+          "url": "https://www.malagactualidad.es/teletipos/73192-vox-propone-retirar-ayudas-a-las-asociaciones-que-%E2%80%9Cfomenten-la-inmigracion-irregular%E2%80%9D-y-no-prior",
+          "date": "2026-05-11T11:00:00+00:00",
           "category": "spain"
         },
         {
-          "title": "El 31% de los votantes del PSOE apoya la prioridad nacional de Vox",
-          "source": "Vozpopuli",
-          "url": "https://www.vozpopuli.com/espana/politica/el-31-de-los-votantes-del-psoe-apoya-la-prioridad-nacional-de-vox.html",
-          "date": "2026-05-10T02:44:00+00:00",
+          "title": "Vox confía en farmacéuticos y psicólogos para hacerse con la Junta el 17M",
+          "source": "Redacción Médica",
+          "url": "https://amp.redaccionmedica.com/autonomias/andalucia/vox-confia-en-farmaceuticos-y-psicologos-para-hacerse-con-la-junta-el-17m-4817",
+          "date": "2026-05-11T09:14:59+00:00",
           "category": "spain"
         },
         {
-          "title": "8 de cada 10 votantes del PP y Vox creen que los pactos autonómicos anticipan un acuerdo de Gobierno de coalición en España",
-          "source": "Vozpopuli",
-          "url": "https://www.vozpopuli.com/espana/politica/8-de-cada-10-votantes-del-pp-y-vox-creen-que-los-pactos-autonomicos-anticipan-un-acuerdo-de-gobierno-de-coalicion-en-espana.html",
-          "date": "2026-05-10T02:44:00+00:00",
+          "title": "Vox pedirá la prioridad nacional en el Ayuntamiento de Burgos",
+          "source": "Diario de Burgos",
+          "url": "https://www.diariodeburgos.es/noticia/za491b07d-0d7d-401f-b27de94dcd99c2fc/202605/vox-pedira-la-prioridad-nacional-en-el-ayuntamiento-de-burgos",
+          "date": "2026-05-11T07:56:00+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Manuel Gavira, el discreto veterano de Vox en Andalucía con el que los de Abascal quieren acabar con las \"manos libres\" del PP",
+          "source": "20Minutos",
+          "url": "https://www.20minutos.es/andalucia/manuel-gavira-discreto-veterano-vox-andalucia-con-que-los-abascal-quieren-acabar-con-las-manos-libres-pp_6966407_0.html",
+          "date": "2026-05-11T03:00:00+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Vox sostiene ser el único partido que rechaza la ZBE y defiende a trabajadores, familias, comerciantes y jóvenes",
+          "source": "Andalucía Información",
+          "url": "https://www.andaluciainformacion.es/articulo/granada/vox-asegura-que-solo-ellos-rechazan-zbe-apoyan-trabajadores-familias-comerciantes-jovenes/202605101552593256854.html",
+          "date": "2026-05-10T13:52:59+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Vox acusa al Gobierno de \"falta de inversión\" en las infraestructuras hídricas",
+          "source": "Andalucía Información",
+          "url": "https://www.andaluciainformacion.es/articulo/elecciones-andalucia-17-mayo/vox-acusa-gobierno-falta-inversion-infraestructuras-hidricas/202605101508123256832.html",
+          "date": "2026-05-10T13:08:12+00:00",
           "category": "spain"
         }
       ],
       "first_seen": "2026-04-29T14:59:17+00:00",
-      "last_seen": "2026-05-10T14:12:28+00:00"
+      "last_seen": "2026-05-11T15:50:55+00:00"
+    },
+    {
+      "id": "trumps-policies-dominate-global-right-wing-coverage",
+      "title": "Trump’s policies dominate global right-wing coverage",
+      "blurb": "Donald Trump's policies and rhetoric continue to shape right-wing discourse globally, with his administration's actions—such as rejecting Iran's peace proposal, launching new initiatives, and influencing international relations—being widely covered by right-wing media in the U.S., Poland, Italy, and beyond. His influence extends to domestic policies in countries where right-wing parties align with his vision.",
+      "convergence": 4,
+      "countries": [
+        {
+          "name": "🇺🇸 MAGA / Trump",
+          "note": "Trump's rejection of Iran's peace proposal and his administration's policies on immigration, trade, and energy dominate U.S. right-wing media."
+        },
+        {
+          "name": "🇵🇱 Prawo i Sprawiedliwość",
+          "note": "Covers Trump's influence on Polish politics, including his role in securing the release of Polish prisoners and shaping U.S.-Poland relations."
+        },
+        {
+          "name": "🇮🇹 Fratelli d'Italia / Lega",
+          "note": "Reports on Trump's policies, particularly his stance on NATO, immigration, and trade, which resonate with Italy's right-wing agenda."
+        },
+        {
+          "name": "🇬🇧 Reform UK",
+          "note": "Aligns with Trump's anti-immigration and nationalist rhetoric, influencing UK right-wing discourse."
+        },
+        {
+          "name": "🇦🇷 La Libertad Avanza",
+          "note": "Javier Milei's alignment with Trump's economic policies and rhetoric is frequently highlighted in Argentine right-wing media."
+        }
+      ],
+      "signals": [
+        "shared framing",
+        "reaction to U.S. decision",
+        "policy alignment",
+        "parallel elections"
+      ],
+      "article_count": 25,
+      "refs": [
+        {
+          "title": "President Trump says Iran's response to peace talks 'totally unacceptable'",
+          "source": "KGW",
+          "url": "https://www.kgw.com/video/news/politics/national-politics/president-trump-says-irans-response-to-peace-talks-totally-unacceptable/283-7ff66520-efa9-4ff4-8885-921fbfe492ae",
+          "date": "2026-05-11T14:36:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "President Trump calls Iran reply to U.S. peace plan unacceptable",
+          "source": "Vatican News",
+          "url": "https://www.vaticannews.va/en/world/news/2026-05/president-trump-calls-iran-reply-to-u-s-peace-plan-unacceptable.html",
+          "date": "2026-05-11T13:41:25+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "US-Iran ceasefire standoff deepens after President Trump rejects latest proposal",
+          "source": "10TV",
+          "url": "https://www.10tv.com/article/news/nation-world/attack-on-iran/ceasefire-iran-united-states-war-nuclear-uranium-strait-of-hormuz/507-3b56bd0d-43ad-4e3f-9e95-e0460eb43192",
+          "date": "2026-05-11T12:52:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump rejects Iran's ceasefire proposal response. And, Congress to tackle ICE funding",
+          "source": "NPR",
+          "url": "https://www.npr.org/2026/05/11/g-s1-121375/up-first-newsletter-trump-iran-congress-ice-cbp-hantavirus",
+          "date": "2026-05-11T11:31:31+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "President Trump rejects Iran's latest peace proposal",
+          "source": "WWLTV.com",
+          "url": "https://www.wwltv.com/video/news/politics/national-politics/president-trump-rejects-irans-latest-peace-proposal/289-4828a294-6622-40e4-8445-c63ca1ec88cf",
+          "date": "2026-05-11T10:19:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Iran responds to US ceasefire proposal but President Donald Trump rejects it as unacceptable",
+          "source": "WKYC",
+          "url": "https://www.wkyc.com/video/news/nation-world/attack-on-iran/iran-responds-to-us-ceasefire-proposal-but-president-donald-trump-rejects-it-as-unacceptable/95-c848d012-9023-4ab1-9d37-ceb5b348b424",
+          "date": "2026-05-11T09:35:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Donald Trump rejects Iran’s peace proposal, oil prices surge over 4%",
+          "source": "Crypto Briefing",
+          "url": "https://cryptobriefing.com/trump-rejects-iran-proposal-oil-surges/",
+          "date": "2026-05-11T07:34:36+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Negocjacje pokojowe wciąż w impasie. Trump ostro o Iranie [PODSUMOWANIE]",
+          "source": "Wiadomości Onet",
+          "url": "https://wiadomosci.onet.pl/swiat/donald-trump-pisze-o-iranie-nie-zalowal-ostrych-slow-podsumowanie-nocy/m2rdbwe",
+          "date": "2026-05-11T03:55:26+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Developing | China confirms dates for President Donald Trump’s state visit to Beijing",
+          "source": "South China Morning Post",
+          "url": "https://www.scmp.com/news/china/diplomacy/article/3353075/china-confirms-dates-donald-trumps-state-visit-beijing",
+          "date": "2026-05-11T01:04:29+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump to discuss Iran with Xi Jinping during China visit: Officials",
+          "source": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/5/10/trump-to-discuss-iran-with-xi-jinping-during-china-visit-officials",
+          "date": "2026-05-10T21:16:29+00:00",
+          "category": "usa"
+        }
+      ],
+      "first_seen": "2026-05-08T04:03:01+00:00",
+      "last_seen": "2026-05-11T15:50:55+00:00"
+    },
+    {
+      "id": "reform-uks-electoral-surge-reshapes-uk-politics",
+      "title": "Reform UK’s electoral surge reshapes UK politics",
+      "blurb": "Reform UK's recent electoral gains have significantly disrupted the UK's political landscape, challenging both Labour and the Conservatives. The party's success in local elections, particularly in traditional Labour strongholds, reflects growing voter dissatisfaction with mainstream parties and a shift toward nationalist and anti-immigration policies.",
+      "convergence": 5,
+      "countries": [
+        {
+          "name": "🇬🇧 Reform UK",
+          "note": "Reform UK gains over 1,400 council seats, reshaping local politics and challenging Labour's dominance in traditional strongholds."
+        },
+        {
+          "name": "🇺🇸 MAGA / Trump",
+          "note": "Trump's influence on Reform UK's policies and rhetoric is frequently highlighted in U.S. right-wing media."
+        },
+        {
+          "name": "🇮🇹 Fratelli d'Italia / Lega",
+          "note": "Covers Reform UK's rise as part of a broader trend of right-wing electoral success in Europe."
+        },
+        {
+          "name": "🇫🇷 Rassemblement National",
+          "note": "Compares Reform UK's success to its own electoral strategies and nationalist policies."
+        },
+        {
+          "name": "🇪🇸 Vox",
+          "note": "Analyzes Reform UK's electoral gains as a model for right-wing parties in Spain."
+        }
+      ],
+      "signals": [
+        "parallel elections",
+        "policy imitation",
+        "shared framing",
+        "contagion of rhetoric"
+      ],
+      "article_count": 20,
+      "refs": [
+        {
+          "title": "Redditch Labour group pledges to work with Reform UK",
+          "source": "BBC",
+          "url": "https://www.bbc.co.uk/news/articles/cx21q2d8xp1o",
+          "date": "2026-05-11T14:40:30+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Party of Far-Right U.K. Populist Nigel Farage Makes Historic Gains in Local Elections",
+          "source": "Democracy Now!",
+          "url": "https://www.democracynow.org/2026/5/11/headlines/party_of_far_right_uk_populist_nigel_farage_makes_historic_gains_in_local_elections",
+          "date": "2026-05-11T14:22:12+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Uncertain future at Sheffield City Council after local election results",
+          "source": "Rayo",
+          "url": "https://planetradio.co.uk/hits-radio/south-yorkshire/news/sheffield-local-election-results",
+          "date": "2026-05-11T14:05:29+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Three Reform UK candidates elected to represent Uttlesford at Essex County Council",
+          "source": "Saffron Walden Reporter",
+          "url": "https://www.saffronwaldenreporter.co.uk/news/26095752.three-reform-uk-candidates-elected-represent-uttlesford/",
+          "date": "2026-05-11T12:34:42+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Local Elections 2026: Huntingdonshire District Council results",
+          "source": "The Hunts Post",
+          "url": "https://www.huntspost.co.uk/news/26094782.huntingdonshire-district-council-elections-2026-results/",
+          "date": "2026-05-11T11:19:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Reform thanks Ipswich Town fans after taking control of county council",
+          "source": "Ipswich Star",
+          "url": "https://www.ipswichstar.co.uk/news/26094665.reform-uk-thank-ipswich-town-fans-county-council-win/",
+          "date": "2026-05-11T10:45:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Reform UK sweeps local elections, Labour loses over 1,400 seats",
+          "source": "Crypto Briefing",
+          "url": "https://cryptobriefing.com/reform-uk-sweeps-local-elections-labour-loses-over-1400-seats/",
+          "date": "2026-05-11T09:19:52+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "“Havering Council has to be radical and uncompromising in putting the best interests of Havering first”-Andrew Rosindell MP",
+          "source": "The Havering Daily",
+          "url": "https://thehaveringdaily.co.uk/2026/05/11/havering-council-has-to-be-radical-and-uncompromising-in-putting-the-best-interests-of-havering-first-andrew-rosindell-mp/",
+          "date": "2026-05-11T06:06:19+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "The Party They Said Would Never Govern: How Reform UK Reshaped British Politics",
+          "source": "Modern Diplomacy",
+          "url": "https://moderndiplomacy.eu/2026/05/11/the-party-they-said-would-never-govern-how-reform-uk-reshaped-british-politics/",
+          "date": "2026-05-11T02:00:12+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Reform UK wins majority at Gateshead Council",
+          "source": "AOL.com",
+          "url": "https://www.aol.com/articles/reform-uk-wins-majority-gateshead-185944863.html",
+          "date": "2026-05-10T18:19:16+00:00",
+          "category": "uk"
+        }
+      ],
+      "first_seen": "2026-05-09T14:10:13+00:00",
+      "last_seen": "2026-05-11T15:50:55+00:00"
+    },
+    {
+      "id": "corruption-scandals-rock-far-right-governments",
+      "title": "Corruption scandals rock far-right governments",
+      "blurb": "Corruption allegations are increasingly undermining far-right governments and parties across multiple countries. In Argentina, Hungary, Poland, and Spain, scandals involving high-ranking officials have sparked public outrage and internal divisions, threatening the stability of these administrations.",
+      "convergence": 4,
+      "countries": [
+        {
+          "name": "🇦🇷 La Libertad Avanza",
+          "note": "Manuel Adorni faces allegations of illicit enrichment, sparking internal divisions within Javier Milei's government."
+        },
+        {
+          "name": "🇭🇺 Fidesz / Tisza",
+          "note": "Former Fidesz officials face corruption charges, while the new Tisza government promises to address past abuses."
+        },
+        {
+          "name": "🇵🇱 Prawo i Sprawiedliwość",
+          "note": "Zbigniew Ziobro's flight to the U.S. amid corruption charges highlights ongoing scandals within the party."
+        },
+        {
+          "name": "🇪🇸 Vox",
+          "note": "Accuses PP and PSOE of corruption, particularly in pandemic-era bailouts and public contracts."
+        },
+        {
+          "name": "🇺🇸 MAGA / Trump",
+          "note": "Trump's administration faces scrutiny over financial dealings and alleged corruption, influencing global right-wing discourse."
+        }
+      ],
+      "signals": [
+        "parallel scandals",
+        "shared framing",
+        "policy backlash",
+        "internal divisions"
+      ],
+      "article_count": 20,
+      "refs": [
+        {
+          "title": "La pregunta del millón: ¿Se consolida Manuel Adorni como el hombre más fuerte del Gobierno?",
+          "source": "Cuestión Entrerriana",
+          "url": "https://cuestionentrerriana.com.ar/la-pregunta-del-millon-se-consolida-manuel-adorni-como-el-hombre-mas-fuerte-del-gobierno/",
+          "date": "2026-05-11T14:38:07+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Criptoactivos: qué investiga la Justicia sobre Manuel Adorni y cómo funciona la trazabilidad de los fondos",
+          "source": "La Voz del Interior",
+          "url": "https://www.lavoz.com.ar/politica/criptoactivos-investiga-justicia-manuel-adorni-funciona-trazabilidad-fondos_0_8qHh3l2fh8.html",
+          "date": "2026-05-11T14:09:08+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "La causa contra Manuel Adorni: La investigación que más preocupa al Presidente",
+          "source": "Infobae",
+          "url": "https://www.infobae.com/video/infobae-en-vivo-a-las-nueve/la-causa-contra-manuel-adorni-la-investigacion-que-mas-preocupa-al-presidente/CBOZ1Xn7/",
+          "date": "2026-05-11T12:52:07+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Vox interpone una querella contra el presidente de SEPI por los rescates de Plus Ultra y Air Europa en la pandemia",
+          "source": "Demócrata",
+          "url": "https://www.democrata.es/tribunales/vox-interpone-una-querella-contra-el-presidente-de-sepi-por-los-rescates-de-plus-ultra-y-air-europa-en-la-pandemia/",
+          "date": "2026-05-11T11:24:36+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Investigan el patrimonio de Manuel Adorni por gastos que trepan hasta u$s20.000 al mes",
+          "source": "DelSur Diario",
+          "url": "https://www.delsurdiario.com/82602-investigan-el-patrimonio-de-manuel-adorni-por-gastos-que-trepan-hasta-us20000-al-mes",
+          "date": "2026-05-11T10:47:10+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "La Justicia sigue de cerca los gastos de Manuel Adorni",
+          "source": "Telesol Diario",
+          "url": "https://www.telesoldiario.com/474529-la-justicia-sigue-de-cerca-los-gastos-de-manuel-adorni",
+          "date": "2026-05-11T09:51:25+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Una por una, las propiedades de Manuel Adorni y de su esposa que investiga la Justicia",
+          "source": "Infobae",
+          "url": "https://www.infobae.com/judiciales/2026/05/11/una-por-una-las-propiedades-de-manuel-adorni-y-de-su-esposa-que-investiga-la-justicia/",
+          "date": "2026-05-11T07:27:25+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Luis Caputo: \"Nadie va a dejar de invertir por la declaración jurada de Adorni\"",
+          "source": "Perfil",
+          "url": "https://www.perfil.com/noticias/politica/luis-caputo-mostro-su-respaldo-a-la-gestion-de-milei-nadie-va-a-dejar-de-invertir-por-la-declaracion-jurada-de-adorni.phtml",
+          "date": "2026-05-11T02:25:36+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "«Deudas de palabra» y lujo en efectivo: el complejo mapa patrimonial que Manuel Adorni debe explicar",
+          "source": "Diario Río Negro",
+          "url": "https://www.rionegro.com.ar/justicia/deudas-de-palabra-y-lujo-en-efectivo-el-complejo-mapa-patrimonial-que-manuel-adorni-debe-explicar-4569662/",
+          "date": "2026-05-10T18:44:54+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "¿Cuáles son las seis propiedades de Manuel Adorni y su esposa que están bajo la lupa de la Justicia Federal?",
+          "source": "0221",
+          "url": "https://www.0221.com.ar/nacional/cuales-son-las-seis-propiedades-manuel-adorni-y-su-esposa-que-estan-la-lupa-la-justicia-federal-n127770",
+          "date": "2026-05-10T15:51:00+00:00",
+          "category": "argentina"
+        }
+      ],
+      "first_seen": "2026-05-06T04:27:08+00:00",
+      "last_seen": "2026-05-11T15:50:55+00:00"
     },
     {
       "id": "hungarys-political-transition-dominates-coverage",
       "title": "Hungary’s political transition dominates coverage",
-      "blurb": "The recent election of Péter Magyar as Hungary's new prime minister, ending Viktor Orbán's 16-year rule, has become a dominant cross-national theme. This transition is being closely watched by right-wing and far-right media in the U.S., Poland, Italy, and Slovakia, with a focus on its implications for EU relations, anti-corruption efforts, and the broader shift away from populist governance in Central Europe.",
+      "blurb": "Hungary's political transition from Viktor Orbán's Fidesz government to Péter Magyar's Tisza Party has captured significant attention in right-wing and far-right media. The shift is framed as a potential turning point for Hungary's domestic policies and its relationship with the EU, with global implications for right-wing movements.",
       "convergence": 5,
       "countries": [
         {
           "name": "🇭🇺 Fidesz / Tisza",
-          "note": "Coverage centers on Magyar's swearing-in as PM, his promises of systemic change, anti-corruption reforms, and restoring EU relations after Orbán's era."
+          "note": "Péter Magyar's swearing-in as prime minister marks the end of Orbán's 16-year rule, with promises to address corruption and restore EU relations."
         },
         {
           "name": "🇺🇸 MAGA / Trump",
-          "note": "U.S. right-wing media highlights the end of Orbán's rule, framing it as a shift in Hungary's foreign policy and potential realignment with Western allies."
+          "note": "Covers Hungary's transition as part of broader shifts in global right-wing politics, including Trump's influence on Orbán."
         },
         {
           "name": "🇵🇱 Prawo i Sprawiedliwość",
-          "note": "Polish media focuses on the implications of Hungary's transition for regional politics, particularly Poland's strained relations with Hungary under Orbán."
+          "note": "Analyzes Hungary's transition in the context of Poland's own political shifts and right-wing alliances."
         },
         {
           "name": "🇮🇹 Fratelli d'Italia / Lega",
-          "note": "Italian coverage emphasizes the potential impact of Hungary's political shift on EU dynamics and Italy's diplomatic relations with Budapest."
+          "note": "Reports on Hungary's transition as a potential model or cautionary tale for Italy's right-wing coalition."
         },
         {
           "name": "🇸🇰 General (Slovakia)",
-          "note": "Slovak media analyzes the broader Central European implications of Hungary's transition, particularly for populist movements in the region."
+          "note": "Compares Hungary's transition to Slovakia's political dynamics under Robert Fico."
         }
       ],
       "signals": [
-        "reaction to external event",
-        "parallel developments",
-        "policy imitation",
-        "shared framing"
+        "parallel transitions",
+        "shared framing",
+        "reaction to EU decision",
+        "policy imitation"
       ],
-      "article_count": 50,
+      "article_count": 15,
       "refs": [
         {
-          "title": "WATCH: Hungary’s ‘dancing politician’ steals spotlight at PM Peter Magyar's swearing-in",
-          "source": "WION",
-          "url": "https://www.wionews.com/trending/watch-hungary-s-dancing-politician-steals-spotlight-at-pm-magyar-s-swearing-in-1778417615202",
-          "date": "2026-05-10T13:04:00+00:00",
+          "title": "Sorra igazolnak át a Tiszához a „független” újságírók",
+          "source": "ORIGO",
+          "url": "https://www.origo.hu/belpol/2026/05/tisza-part-mandula-viktor-fuggetlen-ujsagiro-atv-rtl",
+          "date": "2026-05-11T14:48:10+00:00",
           "category": "hungary"
         },
         {
-          "title": "‘He’s got some moves’: Hungary’s PM Peter Magyar’s swearing-in takes a turn as politician dances outside parliament",
-          "source": "The Tribune",
-          "url": "https://www.tribuneindia.com/news/trending/hes-got-some-moves-hungarys-pm-peter-magyars-swearing-in-takes-a-turn-as-politician-dances-outside-parliament/",
-          "date": "2026-05-10T12:31:52+00:00",
+          "title": "Tárnok Balázs a Newsweekben: Magyar Péter üzenetét nem hagyhatja figyelmen kívül az USA",
+          "source": "| hvg.hu",
+          "url": "https://hvg.hu/360/20260511_tarnok-balazs-nke-john-lukacs-intezet-newsweek-usa-magyar-peter-robert-fico-hataron-tuli-magyarok",
+          "date": "2026-05-11T14:11:04+00:00",
           "category": "hungary"
         },
         {
-          "title": "Peter Magyar Elected Hungary’s Prime Minister After Parliamentary Vote - The Sentinel",
-          "source": "of this Land, for its People",
-          "url": "https://www.sentinelassam.com/more-news/international/peter-magyar-elected-hungarys-prime-minister-after-parliamentary-vote",
-          "date": "2026-05-10T12:05:36+00:00",
+          "title": "Személyeskedett és magát fényezte a Tisza miniszterjelöltje a parlamenti meghallgatásán",
+          "source": "ORIGO",
+          "url": "https://www.origo.hu/belpol/2026/05/tisza-part-hegedus-zsolt-miniszterjelolt-meghallgatas",
+          "date": "2026-05-11T13:35:23+00:00",
           "category": "hungary"
         },
         {
-          "title": "Reform accused of failing to condemn ‘clear racism’ after councillor’s ‘Nigerians should fill pot holes’ remark",
-          "source": "The Independent",
-          "url": "https://www.independent.co.uk/news/uk/politics/reform-uk-tice-farage-gibbins-racism-potholes-b2973788.html",
-          "date": "2026-05-10T11:11:00+00:00",
-          "category": "uk"
+          "title": "Magyar Péter neveket mondott: ők lesznek a kormányszóvivők",
+          "source": "Privátbankár.hu",
+          "url": "https://privatbankar.hu/cikkek/makro/magyar-peter-neveket-mondott-ok-lesznek-a-kormanyszovivok.html",
+          "date": "2026-05-11T11:31:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Magyar Péter bemutatta kormánya új szóvivőit: ketten az RTL-től, egyvalaki az ATV-től érkezett",
+          "source": "| hvg.hu",
+          "url": "https://hvg.hu/itthon/20260511_magyar-peter-kormanyszovivok",
+          "date": "2026-05-11T11:13:27+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Frankfurter Rundschau: Magyar Péter leszámolást hirdet az Orbán-rendszerrel",
+          "source": "| hvg.hu",
+          "url": "https://hvg.hu/360/20260511_nemzetkozi-lapszemle",
+          "date": "2026-05-11T09:25:19+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Magyar Péter már első felszólalásában megszeghette esküjét, külföldön is felfigyeltek Sulyok Tamás megtámadására + videó",
+          "source": "Magyar Nemzet",
+          "url": "https://magyarnemzet.hu/belfold/2026/05/magyar-peter-parlament-alakulo-ules-sulyok-tamas",
+          "date": "2026-05-11T06:38:26+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Magyar Péter már a beiktatása előtt elkezdte a nemzetközi helyezkedést",
+          "source": "HírTv",
+          "url": "https://hirtv.origo.hu/hirtvkulfold/2026/05/magyar-peter-mar-a-beiktatasa-elott-elkezdte-a-nemzetkozi-helyezkedest",
+          "date": "2026-05-11T05:02:27+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Hungary’s new PM Péter Magyar vows Tisza “will never become another Fidesz” - The New Yorker",
+          "source": "Daily News Hungary",
+          "url": "https://dailynewshungary.com/peter-magyar-tisza-never-fidesz/",
+          "date": "2026-05-10T19:24:00+00:00",
+          "category": "hungary"
         },
         {
           "title": "Magyar beat Orban. Can Hungary's new PM undo his system?",
@@ -161,1394 +544,10 @@
           "url": "https://www.dw.com/en/magyar-toppled-orban-but-can-hungarys-new-pm-undo-his-system/video-77109190",
           "date": "2026-05-10T10:26:16+00:00",
           "category": "hungary"
-        },
-        {
-          "title": "Hungarian parliament officially installs Peter Magyar as Prime Minister",
-          "source": "saba.ye",
-          "url": "https://www.saba.ye/en/news3702076.htm",
-          "date": "2026-05-10T08:36:09+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Kormányalakítás: Magyar Péter letette az esküt, és azonnal megüzente, mi lesz az előző elittel",
-          "source": "Portfolio.hu",
-          "url": "https://www.portfolio.hu/gazdasag/20260510/kormanyalakitas-magyar-peter-letette-az-eskut-es-azonnal-meguzente-mi-lesz-az-elozo-elittel-835734",
-          "date": "2026-05-10T06:15:00+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Who is Péter Magyar, the man who ended Viktor Orbán’s 16-year rule in Hungary",
-          "source": "The Indian Express",
-          "url": "https://indianexpress.com/article/world/who-is-peter-magyar-hungary-prime-minister-viktor-orban-defeat-tisza-party-10681745/",
-          "date": "2026-05-10T02:37:34+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Magyar takes over as Hungary's prime minister",
-          "source": "香港電台",
-          "url": "https://news.rthk.hk/rthk/en/component/k2/1854154-20260510.htm?spTabChangeable=0",
-          "date": "2026-05-10T01:20:00+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "He ended Orban’s grip on power — can Peter Magyar change Hungary?",
-          "source": "Modern Ghana",
-          "url": "https://www.modernghana.com/videonews/dw/1/646826/",
-          "date": "2026-05-10T00:57:24+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Peter ‌Magyar sworn ​in ​as Hungary's new PM after defeating Trump-ally Orban | US President Trump had endorsed Viktor Orban | Inshorts",
-          "source": "Inshorts",
-          "url": "https://inshorts.com/en/news/peter--magyar-sworn--in--as-hungary-s-new-pm-after-defeating-trump-ally-orban-1778338577742",
-          "date": "2026-05-09T20:51:57+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Peter Magyar sworn in as prime minister, Von der Leyen: His victory a strong signal for Hungary in difficult times",
-          "source": "Balkanweb.com",
-          "url": "https://www.balkanweb.com/en/Peter-Magyar-sworn-in-as-Prime-Minister-von-der-Leyen--his-victory-a-strong-signal-for-Hungary-in-difficult-times/",
-          "date": "2026-05-09T19:27:00+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Magyar sworn in as Hungary’s prime minister, ending Orbán’s 16-year rule",
-          "source": "Los Angeles Times",
-          "url": "https://www.latimes.com/world-nation/story/2026-05-09/magyar-sworn-in-as-hungarys-prime-minister-ending-orbans-16-year-rule",
-          "date": "2026-05-09T17:48:00+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "A New Era Begins: Péter Magyar Sworn In as Hungary’s Prime Minister Amid Mass Celebrations",
-          "source": "Kyiv Post",
-          "url": "https://www.kyivpost.com/post/75785",
-          "date": "2026-05-09T17:47:01+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Peter Magyar sworn in as Hungary’s PM",
-          "source": "1Lurer",
-          "url": "https://www.1lurer.am/en/2026/05/09/Peter-Magyar-sworn-in-as-Hungary%E2%80%99s-PM/1511001",
-          "date": "2026-05-09T17:32:06+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Peter Magyar takes oath as Hungary’s PM, ends Viktor Orban’s 16-year rule",
-          "source": "WION",
-          "url": "https://www.wionews.com/world/peter-magyar-takes-oath-as-hungary-s-pm-ends-viktor-orban-s-16-year-rule-1778344658190",
-          "date": "2026-05-09T17:03:00+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Hungary lawmakers formally elect Peter Magyar as PM, succeeding Viktor Orban",
-          "source": "RFI",
-          "url": "https://www.rfi.fr/en/international/20260509-hungary-lawmakers-formally-elect-peter-magyar-as-pm-succeeding-viktor-orban",
-          "date": "2026-05-09T16:49:42+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Magyar sworn in as Hungary's prime minister, highlighting unity, inclusiveness",
-          "source": "Xinhua",
-          "url": "https://english.news.cn/20260510/a329aaeeadad4ddaab66dd67e64a3530/c.html",
-          "date": "2026-05-09T16:46:15+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Watch: Hungary gets new PM as Peter Magyar ends Orbán’s 16-year rule",
-          "source": "The Hindu",
-          "url": "https://www.thehindu.com/shorts/watch-hungary-gets-new-pm-as-peter-magyar-ends-orbans-16-year-rule/article70960179.ece",
-          "date": "2026-05-09T16:43:13+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Peter Magyar vows ‘regime change’ and flies EU flag at Hungarian parliament",
-          "source": "The Telegraph",
-          "url": "https://www.telegraph.co.uk/world-news/2026/05/09/peter-magyar-vows-regime-change-and-flies-eu-flag-at-hungar/",
-          "date": "2026-05-09T16:36:00+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Péter Magyar sworn in: End of the Orbán era - EFE",
-          "source": "Agencia de noticias",
-          "url": "https://efe.com/english/latest-news/2026-05-09/peter-magyar-hungary-prime-minister/",
-          "date": "2026-05-09T16:29:38+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Peter Magyar sworn in as Hungary PM, ending Viktor Orban’s 16-year rule",
-          "source": "Mathrubhumi English",
-          "url": "https://english.mathrubhumi.com/amp/news/world/peter-magyar-hungary-prime-minister-orban-end-rule-l6vt7k7j",
-          "date": "2026-05-09T16:28:36+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Péter Magyar sworn-in as Hungary's new prime minister after landslide April election victory",
-          "source": "AOL.com",
-          "url": "https://www.aol.co.uk/news/p-ter-magyar-sworn-hungarys-150854620.html",
-          "date": "2026-05-09T15:12:18+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Peter Magyar sworn in as Hungarys prime minister ᐉ News from Fakti.bg - World",
-          "source": "Fakti.bg",
-          "url": "https://fakti.bg/en/world/1053410-peter-magyar-sworn-in-as-hungary-s-prime-minister",
-          "date": "2026-05-09T15:01:09+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Péter Magyar sworn in as Hungary's prime minister, ending Viktor Orbán's rule",
-          "source": "CBS News",
-          "url": "https://www.cbsnews.com/news/peter-magyar-sworn-in-hungary-prime-minister-end-viktor-orban-rule/",
-          "date": "2026-05-09T14:50:51+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Magyar sworn in as Hungarian PM on promises of change",
-          "source": "The Standard | Warrnambool, VIC",
-          "url": "https://www.standard.net.au/story/9242991/magyar-sworn-in-as-hungarian-pm-on-promises-of-change/",
-          "date": "2026-05-09T14:49:49+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "| Riverine Herald",
-          "source": "Riverine Herald",
-          "url": "https://www.riverineherald.com.au/world/magyar-sworn-in-as-hungarian-pm-on-promises-of-change/",
-          "date": "2026-05-09T14:44:39+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "‘Wonderful’: new Hungarian PM Magyar sworn in ending Orbán’s 16-year rule",
-          "source": "South China Morning Post",
-          "url": "https://www.scmp.com/news/world/europe/article/3353010/hungarys-new-pm-peter-magyar-sworn-ending-viktor-orbans-16-year-rule",
-          "date": "2026-05-09T14:24:17+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Peter Magyar sworn in as Hungary’s PM, ending Orban’s 16 years in power",
-          "source": "Al Jazeera",
-          "url": "https://www.aljazeera.com/news/2026/5/9/peter-magyar-sworn-in-as-hungarys-pm-ending-orbans-16-years-in-power",
-          "date": "2026-05-09T13:41:30+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Peter Magyar takes over as Hungary’s prime minister, closing Orban era",
-          "source": "The Straits Times",
-          "url": "https://www.straitstimes.com/world/europe/magyar-sworn-in-as-hungarys-prime-minister-on-promises-of-change",
-          "date": "2026-05-09T13:18:34+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Renzi celebra la Festa dell'Europa e attacca Meloni: “Sulle scelte Ue è senza idee”",
-          "source": "il Giornale",
-          "url": "https://www.ilgiornale.it/news/interni/renzi-celebra-festa-delleuropa-e-attacca-meloni-sulle-scelte-2662083.html",
-          "date": "2026-05-09T13:14:27+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Magyar sworn in as Hungary’s prime minister on promises of change",
-          "source": "Internazionale",
-          "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/05/09/magyar-sworn-in-as-hungary-s-prime-minister-on-promises-of-change",
-          "date": "2026-05-09T13:10:35+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "EU hails ‘new chapter’ as Magyar sworn in as Hungary’s prime minister",
-          "source": "politico.eu",
-          "url": "https://www.politico.eu/article/eu-hails-new-chapter-as-magyar-sworn-in-as-hungarys-prime-minister/",
-          "date": "2026-05-09T13:09:37+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Magyar sworn in as Hungary's prime minister",
-          "source": "DW.com",
-          "url": "https://www.dw.com/en/hungary-peter-magyar-sworn-in-as-prime-minister/a-77104888",
-          "date": "2026-05-09T13:08:15+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Peter Magyar assumes office as Hungary's prime minister, ending Orban’s 16-year rule",
-          "source": "Anadolu Ajansı",
-          "url": "https://www.aa.com.tr/en/europe/peter-magyar-assumes-office-as-hungarys-prime-minister-ending-orban-s-16-year-rule/3932417",
-          "date": "2026-05-09T13:02:09+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Ungarn: Peter Magyar löst Victor Orban ab und ist neuer Ministerpräsident",
-          "source": "Hamburger Abendblatt",
-          "url": "https://www.abendblatt.de/politik/article411948408/peter-magyar-ist-ungarns-neuer-ministerpraesident.html",
-          "date": "2026-05-09T12:59:21+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Magyar Péter Magyarország új miniszterelnöke",
-          "source": "Infostart",
-          "url": "https://infostart.hu/belfold/2026/05/09/magyar-peter-magyarorszag-uj-miniszterelnoke",
-          "date": "2026-05-09T12:57:04+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Történelmi döntés: mostantól Magyar Péter Magyarország miniszterelnöke",
-          "source": "Privátbankár.hu",
-          "url": "https://privatbankar.hu/cikkek/makro/tortenelmi-dontes-mostantol-magyar-peter-magyarorszag-miniszterelnoke.html",
-          "date": "2026-05-09T12:56:00+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Magyar sworn in as Hungary's prime minister as Kyiv eyes reset in ties",
-          "source": "The Kyiv Independent",
-          "url": "https://kyivindependent.com/magyar-sworn-in-as-hungarys-pm-as-kyiv-eyes-reset-in-ties/",
-          "date": "2026-05-09T12:49:51+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Magyar Péter Magyarország miniszterelnöke",
-          "source": "Portfolio.hu",
-          "url": "https://www.portfolio.hu/gazdasag/20260509/magyar-peter-magyarorszag-miniszterelnoke-835688",
-          "date": "2026-05-09T12:37:00+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "‘Regime Change Begins!’ Péter Magyar Declares Victory As Viktor Orbán Era Officially Ends",
-          "source": "The Times of India",
-          "url": "https://timesofindia.indiatimes.com/short-videos/briefs/regime-change-begins-pter-magyar-declares-victory-as-viktor-orbn-era-officially-ends/shorttakes/130975387.cms",
-          "date": "2026-05-09T12:00:00+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Hungary: ‘Regime-Changing’ New Prime Minister To Be Sworn In Today",
-          "source": "The European Conservative",
-          "url": "https://europeanconservative.com/articles/news-corner/hungary-magyar-swearing-in-sulyok-parliament/",
-          "date": "2026-05-09T10:52:54+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Why fixing America is much harder than fixing Hungary",
-          "source": "Public Notice | Aaron Rupar",
-          "url": "https://www.publicnotice.co/p/trump-orban?utm_source=substack&utm_medium=email&utm_content=share&action=share",
-          "date": "2026-05-09T10:17:50+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Hungary's Magyar is set to be sworn in as leader",
-          "source": "The Courier | Ballarat, VIC",
-          "url": "https://www.thecourier.com.au/story/9242967/hungarys-magyar-is-set-to-be-sworn-in-as-leader/",
-          "date": "2026-05-09T10:04:18+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Péter Magyar’s inauguration as Hungarian prime minister holds Saturday",
-          "source": "Peoples Gazette Nigeria",
-          "url": "https://gazettengr.com/peter-magyars-inauguration-as-hungarian-prime-minister-holds-saturday/",
-          "date": "2026-05-09T09:51:53+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Péter Magyar to be sworn in as Hungary prime minister as Viktor Orbán’s 16-year rule ends",
-          "source": "The Independent",
-          "url": "https://www.independent.co.uk/news/world/europe/peter-magyar-viktor-orban-hungary-prime-minister-b2973493.html",
-          "date": "2026-05-09T09:51:00+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Hungary’s Péter Magyar is set to be sworn in as prime minister, ending Viktor Orbán’s 16-year rule",
-          "source": "Click2Houston",
-          "url": "https://www.click2houston.com/news/2026/05/09/hungarys-peter-magyar-is-set-to-be-sworn-in-as-prime-minister-ending-viktor-orbans-16-year-rule/",
-          "date": "2026-05-09T08:42:07+00:00",
-          "category": "hungary"
         }
       ],
       "first_seen": "2026-05-09T14:10:13+00:00",
-      "last_seen": "2026-05-10T14:12:28+00:00"
-    },
-    {
-      "id": "reform-uks-electoral-surge-reshapes-uk-politics",
-      "title": "Reform UK’s electoral surge reshapes UK politics",
-      "blurb": "Reform UK's unprecedented gains in the UK's local elections have sent shockwaves through the political landscape, with the party securing control of multiple councils and positioning itself as a major challenger to the Conservative and Labour parties. This theme is resonating across the U.S., Italy, France, and Spain, where right-wing media are analyzing the implications for British politics and the potential rise of Nigel Farage as a future prime minister.",
-      "convergence": 5,
-      "countries": [
-        {
-          "name": "🇬🇧 Reform UK",
-          "note": "Reform UK gains over 1,400 council seats, taking control of key councils like Essex, Sunderland, and Thurrock, and positioning itself as a major political force."
-        },
-        {
-          "name": "🇺🇸 MAGA / Trump",
-          "note": "U.S. right-wing media highlights Reform UK's success as a model for challenging establishment politics, drawing parallels to Trump's populist movement."
-        },
-        {
-          "name": "🇮🇹 Fratelli d'Italia / Lega",
-          "note": "Italian coverage focuses on the potential impact of Reform UK's rise on UK-EU relations and the broader European far-right movement."
-        },
-        {
-          "name": "🇫🇷 Rassemblement National",
-          "note": "French media analyzes Reform UK's electoral success as part of a broader European trend of far-right parties gaining ground."
-        },
-        {
-          "name": "🇪🇸 Vox",
-          "note": "Spanish coverage emphasizes the parallels between Reform UK's anti-immigration and anti-establishment rhetoric and Vox's own political platform."
-        }
-      ],
-      "signals": [
-        "parallel elections",
-        "policy imitation",
-        "contagion of rhetoric",
-        "coordinated messaging"
-      ],
-      "article_count": 40,
-      "refs": [
-        {
-          "title": "Political split over Birmingham City Council leadership 'not unworkable'",
-          "source": "BBC",
-          "url": "https://www.bbc.co.uk/news/articles/clypqq9vngno",
-          "date": "2026-05-10T12:52:16+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Tories are still biggest party on the right, claims Cleverly",
-          "source": "BBC",
-          "url": "https://www.bbc.co.uk/news/articles/c7v9778r9q9o",
-          "date": "2026-05-10T12:28:54+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Nigel Farage could face two probes over £5m gift as deputy asked if he accepted more",
-          "source": "The Mirror",
-          "url": "https://www.mirror.co.uk/news/politics/nigel-farage-could-face-two-37135709",
-          "date": "2026-05-10T12:17:00+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Nigel Farage's No2 blasted for not condemning Reform councillor who said Nigerians should be 'melted'",
-          "source": "The Mirror",
-          "url": "https://www.mirror.co.uk/news/politics/nigel-farages-no2-blasted-not-37135379",
-          "date": "2026-05-10T12:15:00+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Reform UK deputy says new councillors 'not doing coalitions' with other parties",
-          "source": "Birmingham Live",
-          "url": "https://www.birminghammail.co.uk/news/uk-news/reform-uk-deputy-says-new-33921053",
-          "date": "2026-05-10T11:37:00+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Thomas Kerr rages as Holyrood parties refuse to work with Reform UK",
-          "source": "The National Scot",
-          "url": "https://www.thenational.scot/news/26093319.thomas-kerr-rages-holyrood-parties-refuse-work-reform-uk/",
-          "date": "2026-05-10T11:33:54+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "‘They had their chance!’ Richard Tice slams the door shut on new defections to Reform",
-          "source": "GB News",
-          "url": "https://www.gbnews.com/politics/richard-tice-reform-tory-defectors-local-elections",
-          "date": "2026-05-10T11:13:18+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "17 seats secured - Reform UK faces total boycott from Scottish rivals",
-          "source": "upday News",
-          "url": "https://www.upday.com/uk/politics/17-seats-secured-reform-uk-faces-total-boycott-from-scottish-rivals/ms6g2r8",
-          "date": "2026-05-10T11:04:11+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Sunderland Reform UK councillor suspended over alleged racist posts",
-          "source": "BBC",
-          "url": "https://www.bbc.com/news/articles/cm2pyy6ngz0o",
-          "date": "2026-05-10T10:34:31+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Reform UK refuse to condemn Sunderland councillor’s ‘Nigerians should fill pot holes’",
-          "source": "The Northern Echo",
-          "url": "https://www.thenorthernecho.co.uk/news/26093261.reform-uk-fail-condemn-sunderland-councillors-racist-remark/",
-          "date": "2026-05-10T10:24:35+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Farage could face a by-election over undeclared £5m ‘gift’",
-          "source": "thecanary.co",
-          "url": "https://www.thecanary.co/trending/2026/05/10/farage-could-fac/",
-          "date": "2026-05-10T10:04:44+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Tice declines to say if Farage’s undeclared £5m gift was only used for security",
-          "source": "Herts Advertiser",
-          "url": "https://www.stalbansreview.co.uk/news/national/26093224.tice-declines-say-farages-undeclared-gbp5m-gift-used-security/",
-          "date": "2026-05-10T09:55:41+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Reform UK's Richard Tice Refuses To Condemn Councillor Who Said 'Nigerians Should Be Melted Down'",
-          "source": "Yahoo News UK",
-          "url": "https://uk.news.yahoo.com/reform-uks-richard-tice-refuses-094303813.html",
-          "date": "2026-05-10T09:43:03+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Local elections roundup: Reform UK surges across Britain as Labour suffers historic defeats...but Keir Starmer REFUSES to stand down",
-          "source": "GB News",
-          "url": "https://www.gbnews.com/politics/local-elections-roundup-reform-nigel-farage-labour-keir-starmer-greens-zack-polanski-snp-plaid-cymru",
-          "date": "2026-05-10T08:48:17+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Hundreds take to streets in 'day of rage' against Reform UK",
-          "source": "STV News",
-          "url": "https://news.stv.tv/west-central/hundreds-take-to-glasgow-streets-in-day-of-rage-against-reform-uk",
-          "date": "2026-05-10T08:23:20+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Unless Keir Starmer goes, Nigel Farage will be our prime minister",
-          "source": "The Independent",
-          "url": "https://www.independent.co.uk/voices/keir-starmer-resign-catherine-west-labour-mp-leader-b2973751.html",
-          "date": "2026-05-10T08:04:00+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Miesięcznica smoleńska. Kaczyński grozi więzieniem",
-          "source": "Do Rzeczy",
-          "url": "https://dorzeczy.pl/kraj/885001/miesiecznica-smolenska-kaczynski-grozi-wiezieniem.html",
-          "date": "2026-05-10T07:58:00+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Sunday newspaper round-up: Ed Miliband, Ukraine, British Steel, WH Smith, Peter Magyar, Reform UK",
-          "source": "Sharecast.com",
-          "url": "https://www.sharecast.com/news/press-round-up-full-premium/sunday-newspaper-round-up-ed-miliband-ukraine-british-steel-wh-smith-peter-magyar-reform-uk--22456621.html",
-          "date": "2026-05-10T07:34:31+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Labour's 2026 election wipeout mapped as Reform make huge gains - check your area",
-          "source": "Daily Express",
-          "url": "https://www.express.co.uk/news/politics/2203765/2026-local-election-maps-labour-reform",
-          "date": "2026-05-10T07:15:00+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Labour loses ground in local elections as Reform UK surges",
-          "source": "news.cgtn.com",
-          "url": "https://news.cgtn.com/news/2026-05-10/Labour-loses-ground-in-local-elections-as-Reform-UK-surges-1N1MlQw8xSE/p.html",
-          "date": "2026-05-10T06:34:29+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "17 seats: Labour ties with Reform UK in historic low as party turns on Starmer",
-          "source": "upday News",
-          "url": "https://www.upday.com/uk/politics/17-seats-labour-ties-with-reform-uk-in-historic-low-as-party-turns-on-starmer/n8xewez",
-          "date": "2026-05-10T05:13:25+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "New-look Milton Keynes Council prepares to welcome new faces",
-          "source": "BBC",
-          "url": "https://www.bbc.co.uk/news/articles/c78qjxl3ygeo",
-          "date": "2026-05-10T04:45:29+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Reform’s new MSPs could make this Holyrood’s most volatile parliament yet",
-          "source": "The Herald",
-          "url": "https://www.heraldscotland.com/news/26092630.reform-uks-arrival-holyrood-mean-scotland/",
-          "date": "2026-05-10T04:03:37+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "How Reform UK would perform in election if local results were repeated",
-          "source": "The Sun",
-          "url": "https://www.thesun.co.uk/news/39061260/reform-uk-general-election-council-results-revealed/",
-          "date": "2026-05-09T21:31:00+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "What happens if Reform UK wins a general election?",
-          "source": "The Times",
-          "url": "https://www.thetimes.co.uk/uk/politics/article/what-would-happen-reform-uk-won-general-election-n6l2l3vp9",
-          "date": "2026-05-09T21:00:00+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "What if Reform UK wins a general election?",
-          "source": "The Times",
-          "url": "https://www.thetimes.com/uk/politics/article/what-would-happen-reform-uk-won-general-election-n6l2l3vp9",
-          "date": "2026-05-09T21:00:00+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "How Nigel Farage went from outsider to contender for UK PM",
-          "source": "Australian Broadcasting Corporation",
-          "url": "https://www.abc.net.au/news/2026-05-10/nigel-farage-uk-local-elections/106662872",
-          "date": "2026-05-09T20:56:08+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Staffordians are great — their Reform UK vote is a cry of despair",
-          "source": "The Times",
-          "url": "https://www.thetimes.com/uk/politics/article/reform-uk-local-election-result-stoke-r23mtlhbp",
-          "date": "2026-05-09T20:00:23+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Labour loses control of Bradford council as Reform UK",
-          "source": "BBC",
-          "url": "https://www.bbc.co.uk/news/articles/ce3pvxq7npjo",
-          "date": "2026-05-09T19:12:12+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "This must be last election for Keir Starmer, says Bradford MP",
-          "source": "BBC",
-          "url": "https://www.bbc.co.uk/news/articles/cd9pl491k59o",
-          "date": "2026-05-09T18:31:00+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Local elections 2026: Farage tears apart Starmer’s red wall brick by brick as Labour heartlands decimated",
-          "source": "The Independent",
-          "url": "https://www.independent.co.uk/news/uk/politics/labour-red-wall-local-elections-2026-keir-starmer-reform-uk-b2972884.html",
-          "date": "2026-05-09T17:06:00+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "How Reform won votes from Swansea to Sunderland",
-          "source": "BBC",
-          "url": "https://www.bbc.com/news/articles/cwy2nz4gwj5o",
-          "date": "2026-05-09T17:00:08+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Reform has shattered the world view of the Westminster bubble",
-          "source": "The Telegraph",
-          "url": "https://www.telegraph.co.uk/news/2026/05/09/reform-uk-shattered-world-view-westminster-bubble/",
-          "date": "2026-05-09T16:41:00+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "SNP leader John Swinney rules out Holyrood talks with Reform UK",
-          "source": "BBC",
-          "url": "https://www.bbc.com/news/articles/cddpevvv97jo",
-          "date": "2026-05-09T16:30:54+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Starmer told to quit by London Labour MPs to 'save Britain from Farage'",
-          "source": "London Evening Standard",
-          "url": "https://www.standard.co.uk/news/politics/local-elections-2026-london-labour-mps-keir-starmer-resign-b1281728.html",
-          "date": "2026-05-09T16:15:33+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "‘Melt them down and fill in the potholes’: Reform UK candidate who made remarks against Nigerians wins ke",
-          "source": "The Times of India",
-          "url": "https://timesofindia.indiatimes.com/world/uk/melt-them-down-and-fill-in-the-potholes-reform-uk-candidate-who-made-remarks-against-nigerians-wins-key-seat-in-england/articleshow/130980205.cms",
-          "date": "2026-05-09T15:43:00+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "John Swinney wants to 'Farage-proof' Holyrood and will work with rival parties to 'lock out' Reform",
-          "source": "Daily Record",
-          "url": "https://www.dailyrecord.co.uk/news/scottish-news/john-swinney-wants-farage-proof-37133645",
-          "date": "2026-05-09T13:45:00+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "John Swinney vows to ‘lock Reform out’ after admitting Nigel Farage ‘on course to become PM’",
-          "source": "GB News",
-          "url": "https://www.gbnews.com/politics/john-swinney-vows-to-lock-reform-out-after-admitting-nigel-farage-on-course-to-become-pm",
-          "date": "2026-05-09T13:42:41+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "John Swinney wants Scottish Parliament to be ‘fully Farage-proofed’ by 2029",
-          "source": "London Evening Standard",
-          "url": "https://www.standard.co.uk/news/politics/nigel-farage-snp-scotland-scottish-parliament-holyrood-b1281709.html",
-          "date": "2026-05-09T13:18:59+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "John Swinney to speak with Holyrood opposition parties to ‘lock out Reform UK’",
-          "source": "The National Scot",
-          "url": "https://www.thenational.scot/news/26092509.john-swinney-speak-opposition-parties-lock-reform-uk/",
-          "date": "2026-05-09T12:49:56+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "‘Labour are doomed’: Reform UK’s Nigel Farage slams Starmer’s move to bring back Gordon Brown as adviser",
-          "source": "The Times of India",
-          "url": "https://timesofindia.indiatimes.com/world/uk/labour-are-doomed-reform-uks-nigel-farage-slams-starmers-move-to-bring-back-gordon-brown-as-adviser/articleshow/130977015.cms",
-          "date": "2026-05-09T12:18:00+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Nigel Farage doesn’t even have to be liked to waltz his way into No 10",
-          "source": "The Independent",
-          "url": "https://www.independent.co.uk/voices/reform-uk-local-elections-labour-nigel-farage-prime-minister-b2973244.html",
-          "date": "2026-05-09T11:06:00+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "MEP to UK Prime Minister? The rise and rise of Nigel Farage",
-          "source": "EU Reporter",
-          "url": "https://www.eureporter.co/blogspot/elections/ukip/nigel-farage/2026/05/09/mep-to-uk-prime-minister-the-rise-and-rise-of-nigel-farage/",
-          "date": "2026-05-09T09:24:02+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Reform UK will never take voters for granted, Yusuf says",
-          "source": "BBC",
-          "url": "https://www.bbc.com/news/articles/cz62d2482x1o",
-          "date": "2026-05-09T09:13:26+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Labour wiped out as Reform UK sweep to the brink of power after dramatic Kirklees Council elections",
-          "source": "Huddersfield Hub",
-          "url": "https://huddersfieldhub.co.uk/labour-wiped-out-as-reform-uk-sweep-to-the-brink-of-power-after-dramatic-kirklees-council-elections/",
-          "date": "2026-05-09T08:31:27+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "How Reform UK aim to deliver 'real change' for Sunderland",
-          "source": "Sunderland Echo",
-          "url": "https://www.sunderlandecho.com/news/politics/how-reform-uk-aim-to-deliver-real-change-for-residents-after-sunderland-city-council-elections-win-8514957",
-          "date": "2026-05-09T08:31:00+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Reform becomes largest party on Kirklees Council",
-          "source": "BBC",
-          "url": "https://www.bbc.co.uk/news/articles/c9d3j3qwzqwo",
-          "date": "2026-05-09T08:10:53+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Reform UK makes huge gains in local elections as Farage celebrates ‘truly historic day’",
-          "source": "The Independent",
-          "url": "https://www.independent.co.uk/bulletin/news/local-election-results-reform-uk-nigel-farage-b2973472.html",
-          "date": "2026-05-09T07:31:00+00:00",
-          "category": "uk"
-        }
-      ],
-      "first_seen": "2026-05-09T14:10:13+00:00",
-      "last_seen": "2026-05-10T14:12:28+00:00"
-    },
-    {
-      "id": "trumps-policies-dominate-global-right-wing-coverage",
-      "title": "Trump’s policies dominate global right-wing coverage",
-      "blurb": "Donald Trump's policies and political influence continue to dominate right-wing and far-right media coverage worldwide. This theme is particularly strong in Italy, Poland, Argentina, and the UK, where media outlets are closely following Trump's stance on international conflicts, trade policies, and his potential impact on global right-wing movements.",
-      "convergence": 4,
-      "countries": [
-        {
-          "name": "🇺🇸 MAGA / Trump",
-          "note": "Coverage focuses on Trump's policies on Iran, trade, and immigration, as well as his potential re-election campaign and influence on global right-wing movements."
-        },
-        {
-          "name": "🇮🇹 Fratelli d'Italia / Lega",
-          "note": "Italian media analyzes Trump's impact on Italy's foreign policy, particularly his stance on NATO, Iran, and trade relations with the EU."
-        },
-        {
-          "name": "🇵🇱 Prawo i Sprawiedliwość",
-          "note": "Polish coverage highlights Trump's potential influence on U.S.-Poland relations, particularly in defense and energy policies."
-        },
-        {
-          "name": "🇬🇧 Reform UK",
-          "note": "UK media draws parallels between Trump's populist rhetoric and Reform UK's anti-establishment platform, particularly on immigration and trade."
-        },
-        {
-          "name": "🇦🇷 La Libertad Avanza",
-          "note": "Argentinian coverage focuses on Trump's economic policies as a model for President Milei's libertarian reforms and his approach to international trade."
-        }
-      ],
-      "signals": [
-        "shared framing",
-        "policy imitation",
-        "reaction to external event",
-        "coordinated messaging"
-      ],
-      "article_count": 35,
-      "refs": [
-        {
-          "title": "‘I Wouldn’t Pay It’—President Trump Slams World Cup Ticket Prices, U.S. Opening Match Goes Unsold",
-          "source": "Sports Illustrated",
-          "url": "https://www.si.com/soccer/president-trump-slams-world-cup-ticket-prices-us-opening-match-unsold",
-          "date": "2026-05-10T12:05:25+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "How the Trump White House works against itself in its efforts to prevent overdoses",
-          "source": "The Guardian",
-          "url": "https://www.theguardian.com/us-news/2026/may/10/trump-administration-overdose-prevention-policies",
-          "date": "2026-05-10T12:01:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Iran war could make Trump's trip to China a bit chillier than his first-term visit",
-          "source": "New Haven Register",
-          "url": "https://www.nhregister.com/news/politics/article/iran-war-could-make-trump-s-trip-to-china-a-bit-22251545.php",
-          "date": "2026-05-10T11:31:25+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Why JD Vance was 'obsessed' with wife Usha when they met – Exclusive memoir excerpt",
-          "source": "USA Today",
-          "url": "https://www.usatoday.com/story/entertainment/books/2026/05/10/jd-vance-book-communion-excerpt/89983747007/",
-          "date": "2026-05-10T11:01:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Uh-Oh! President Trump's Landmark Tax Cuts Bill Could Be What Kills the Trump Bull Market",
-          "source": "24/7 Wall St.",
-          "url": "https://247wallst.com/investing/2026/05/10/uh-oh-president-trumps-landmark-tax-cuts-bill-could-be-what-kills-the-trump-bull-market/",
-          "date": "2026-05-10T10:08:22+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Donald Trump's war in Iran isn't working as well as Obama's deal | Mark Quinn",
-          "source": "Wisconsin State Journal",
-          "url": "https://madison.com/opinion/letters/article_ff1c2850-7f2f-4dcf-a899-a93e3bf437ab.html",
-          "date": "2026-05-10T10:00:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "President Donald Trump May Force the Fed's Hand -- but Not in the Way You'd Expect",
-          "source": "The Motley Fool",
-          "url": "https://www.fool.com/investing/2026/05/10/donald-trump-force-feds-hand-not-way-youd-expect/",
-          "date": "2026-05-10T08:21:35+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Markwayne Mullin Warns World Cup Security Readiness Is 'In Jeopardy' Due To DHS Funding Lapse",
-          "source": "Benzinga",
-          "url": "https://www.benzinga.com/news/politics/26/05/52436675/markwayne-mullin-warns-world-cup-security-readiness-is-in-jeopardy-due-to-dhs-funding-lapse",
-          "date": "2026-05-10T07:36:23+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Marco Rubio Rockets To Top Of 2028 Betting Odds As Early Race Shakes Up",
-          "source": "AOL.com",
-          "url": "https://www.aol.com/news/marco-rubio-rockets-top-2028-153703047.html",
-          "date": "2026-05-10T07:09:12+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Trump, Pope Leo’s spat not affecting U.S.-Catholic Church relationship: Marco Rubio",
-          "source": "Peoples Gazette Nigeria",
-          "url": "https://gazettengr.com/trump-pope-leos-spat-not-affecting-u-s-catholic-church-relationship-marco-rubio/",
-          "date": "2026-05-10T07:06:54+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Trump’s White House ballroom 'gift' to America set to cost taxpayers $1 billion",
-          "source": "The Jerusalem Post",
-          "url": "https://www.jpost.com/international/article-895306",
-          "date": "2026-05-10T05:55:15+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Donald Trump will arrive in Beijing this week knowing that Xi holds all the cards | Simon Tisdall",
-          "source": "The Guardian",
-          "url": "https://www.theguardian.com/commentisfree/2026/may/10/donald-trump-xi-jinping-beijing-summit-iran-taiwan",
-          "date": "2026-05-10T05:00:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Trump news at a glance: Marco Rubio hopes for ‘serious offer’ from Iran on ceasefire proposal",
-          "source": "The Guardian",
-          "url": "https://www.theguardian.com/us-news/2026/may/10/trump-news-at-a-glance-marco-rubio-hopes-for-serious-offer-from-iran-on-ceasefire-proposal",
-          "date": "2026-05-10T04:05:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "More than half of US voters disapprove of Trump’s handling of economy — FT poll",
-          "source": "Financial Times",
-          "url": "https://www.ft.com/content/d08de75e-4a62-4475-9754-7f6d186f7eeb",
-          "date": "2026-05-10T04:01:01+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Tehran, Taiwan, trade … what are the hazards facing Trump on Xi summit tightrope?",
-          "source": "The Guardian",
-          "url": "https://www.theguardian.com/news/ng-interactive/2026/may/10/tehran-taiwan-trade-donald-trump-xi-jinping-us-china-summit",
-          "date": "2026-05-10T04:00:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Giorgia Meloni BOLD Move Against Bibi On Israel And Iran! (xW8cifjUJu)",
-          "source": "Fathom Journal",
-          "url": "https://fathomjournal.org/7fa82776smm/df1416fe-NyYeL1ldJB8-GwU.html",
-          "date": "2026-05-10T02:02:49+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Trump’s Iran War Narrative Is Crumbling Against Reality",
-          "source": "Rolling Stone Australia",
-          "url": "https://au.rollingstone.com/culture/culture-features/trump-iran-war-narrative-reality-94768/",
-          "date": "2026-05-10T00:23:37+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Donald Trump Sparks Confusion With Bizarre Insect Analogy",
-          "source": "The Daily Beast",
-          "url": "https://www.thedailybeast.com/donald-trump-sparks-confusion-with-bizarre-insect-analogy/",
-          "date": "2026-05-10T00:22:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Experts warn Trump administration any Iran deal must close plutonium pathway to nuclear bombs",
-          "source": "Fox News",
-          "url": "https://www.foxnews.com/world/experts-warn-trump-administration-any-iran-deal-must-close-plutonium-pathway-nuclear-bombs",
-          "date": "2026-05-09T20:00:21+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Germany's Merz: Europe wants strong NATO, shares U.S. goal of ending Iran war",
-          "source": "Haaretz",
-          "url": "https://www.haaretz.com/world-news/europe/2026-05-09/ty-article/germanys-merz-europe-wants-strong-nato-shares-u-s-goal-of-ending-iran-war/0000019e-0cea-dfef-a9df-aefa99b00000",
-          "date": "2026-05-09T18:11:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Trump’s feuds and tensions with US allies likely to outlast Iran war",
-          "source": "The Times of Israel",
-          "url": "https://www.timesofisrael.com/trumps-feuds-and-tensions-with-us-allies-likely-to-outlast-iran-war/",
-          "date": "2026-05-09T18:02:59+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "MAGA Religious Leaders Dedicate and Bless 22-Foot Golden Trump Statue at Doral",
-          "source": "Letters from Leo",
-          "url": "https://www.thelettersfromleo.com/p/maga-religious-leaders-dedicate-and",
-          "date": "2026-05-09T17:16:36+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Top MAGA Allies Push One-Time Trump Foe for Attorney General",
-          "source": "The Daily Beast",
-          "url": "https://www.thedailybeast.com/top-maga-allies-push-one-time-trump-foe-for-attorney-general/",
-          "date": "2026-05-09T16:53:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Trump administration eyeing $400M settlement from TikTok for DC ‘beautification’",
-          "source": "WWAYTV3",
-          "url": "https://www.wwaytv3.com/trump-administration-eyeing-400m-settlement-from-tiktok-for-dc-beautification/",
-          "date": "2026-05-09T15:59:29+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Jordan Bardella, sa chérie Maria Carolina de Bourbon des Deux-Siciles fait une rencontre inattendue à Venise : incroyable mais vrai !",
-          "source": "public.fr",
-          "url": "https://www.public.fr/jordan-bardella-sa-cherie-maria-carolina-de-bourbon-des-deux-siciles-fait-une-rencontre-inattendue-a-venise-incroyable-mais-vrai",
-          "date": "2026-05-09T14:25:00+00:00",
-          "category": "france"
-        },
-        {
-          "title": "9 maggio, Mattarella ricorda le vittime del terrorismo in via Caetani",
-          "source": "Il Fatto Quotidiano",
-          "url": "https://www.ilfattoquotidiano.it/2026/05/09/giornata-vittime-terrorismo-mattarella-caetani-meloni-schlein/8380561/",
-          "date": "2026-05-09T13:48:35+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Jarosław Kaczyński: Samorząd to część państwa polskiego, a nie prywatny folwark",
-          "source": "wPolsce24",
-          "url": "https://wpolsce24.tv/polska/jaroslaw-kaczynski-samorzad-to-czesc-panstwa-polskiego,77494",
-          "date": "2026-05-09T13:06:27+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Trump airport branding deal opens new route to profit for family",
-          "source": "The Guardian",
-          "url": "https://www.theguardian.com/us-news/2026/may/09/trump-airport-branding-profit-deal",
-          "date": "2026-05-09T13:00:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Tariffs or not? How EU is dealing with US 'dealmaking'",
-          "source": "DW.com",
-          "url": "https://www.dw.com/en/tariffs-or-not-how-eu-is-dealing-with-us-dealmaking/a-77100109",
-          "date": "2026-05-09T12:49:27+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Why people vote for Donald Trump - middle-east-online.com",
-          "source": "",
-          "url": "https://middle-east-online.com/en/why-people-vote-donald-trump",
-          "date": "2026-05-09T12:20:48+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Trump says he ‘might’ move US troops to Poland from Germany",
-          "source": "politico.eu",
-          "url": "https://www.politico.eu/article/trump-says-might-move-us-troops-to-poland-from-germany/",
-          "date": "2026-05-09T11:57:00+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "‘There’s always a tweet’: Donald Trump’s 2012 post about gas prices comes back to haunt him",
-          "source": "Indy100",
-          "url": "https://www.indy100.com/politics/trump/donald-trump-post-gas-prices-2676872996",
-          "date": "2026-05-09T11:03:45+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Marco Rubio sanctions Chinese entities over satellite imagery supplied to Iran",
-          "source": "Crypto Briefing",
-          "url": "https://cryptobriefing.com/rubio-sanctions-chinese-entities-iran-satellite/",
-          "date": "2026-05-09T10:16:30+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Marco Rubio Seems to Be Having a Grand Time",
-          "source": "The Atlantic",
-          "url": "https://www.theatlantic.com/politics/2026/05/marco-rubio-2028-election-pope/687117/?utm_source=feed",
-          "date": "2026-05-09T10:00:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Is Marco Rubio the Happiest Cabinet Member?",
-          "source": "The Atlantic",
-          "url": "https://www.theatlantic.com/politics/2026/05/marco-rubio-2028-election-pope/687117/",
-          "date": "2026-05-09T10:00:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "US awaiting response from Iran over proposals for ceasefire deal, says Rubio",
-          "source": "The Guardian",
-          "url": "https://www.theguardian.com/world/2026/may/08/us-iran-war-strait-of-hormuz-negotiations-marco-rubio",
-          "date": "2026-05-09T08:44:06+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "US Vice President JD Vance meets Qatar PM to discuss Iran talks and regional stability amid Middle East tensions",
-          "source": "Pluang",
-          "url": "https://pluang.com/en/news-feed/jd-vance-temui-pm-qatar-di-washington-bahas-iran",
-          "date": "2026-05-09T07:42:23+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Marco Rubio’s Minor Diplomatic Miracle - by Eli Lake",
-          "source": "The Free Press",
-          "url": "https://www.thefp.com/p/marco-rubios-minor-diplomatic-miracle?utm_campaign=email-post&r=nmudu&utm_source=substack&utm_medium=email",
-          "date": "2026-05-09T07:22:28+00:00",
-          "category": "usa"
-        }
-      ],
-      "first_seen": "2026-05-08T04:03:01+00:00",
-      "last_seen": "2026-05-10T14:12:28+00:00"
-    },
-    {
-      "id": "corruption-scandals-rock-far-right-governments",
-      "title": "Corruption scandals rock far-right governments",
-      "blurb": "Corruption scandals involving high-ranking officials in far-right governments are making headlines across multiple countries. This theme is particularly prominent in Argentina, Hungary, Poland, and Spain, where media outlets are scrutinizing allegations of illicit enrichment, embezzlement, and abuse of power, often framing these scandals as evidence of systemic corruption within right-wing administrations.",
-      "convergence": 4,
-      "countries": [
-        {
-          "name": "🇦🇷 La Libertad Avanza",
-          "note": "Coverage focuses on the scandal involving Chief of Staff Manuel Adorni, accused of illicit enrichment and undeclared cryptocurrency transactions."
-        },
-        {
-          "name": "🇭🇺 Fidesz / Tisza",
-          "note": "Hungarian media highlights corruption allegations against former Orbán allies, with the new Magyar government vowing to investigate past abuses."
-        },
-        {
-          "name": "🇵🇱 Prawo i Sprawiedliwość",
-          "note": "Polish coverage centers on the scandal involving former Justice Minister Zbigniew Ziobro, accused of embezzlement and fleeing to the U.S."
-        },
-        {
-          "name": "🇪🇸 Vox",
-          "note": "Spanish media scrutinizes Vox's financial transparency, particularly its reliance on EU funds and allegations of misuse for political campaigns."
-        },
-        {
-          "name": "🇺🇸 MAGA / Trump",
-          "note": "U.S. right-wing media highlights corruption allegations against Trump administration officials, including Commerce Secretary Howard Lutnick's ties to Jeffrey Epstein."
-        }
-      ],
-      "signals": [
-        "parallel developments",
-        "shared framing",
-        "reaction to external event",
-        "policy imitation"
-      ],
-      "article_count": 30,
-      "refs": [
-        {
-          "title": "Manuel Adorni, Crece El Temor De Karina Milei Del “arrepentido” Libertario",
-          "source": "palermotour.com.ar",
-          "url": "https://palermotour.com.ar/tourdenoticias/manuel-adorni-crece-el-temor-de-karina-milei-del-arrepentido-libertario/",
-          "date": "2026-05-10T13:08:45+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Juan Leyrado fue contundente y criticó con dureza al gobierno de Javier Milei: \"Es gente que...\"",
-          "source": "MDZ Online",
-          "url": "https://www.mdzol.com/mdz-show/juan-leyrado-fue-contundente-y-critico-dureza-al-gobierno-javier-milei-es-gente-que-n1516945",
-          "date": "2026-05-10T13:05:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "La Justicia detectó movimientos con criptomonedas en la causa contra Manuel Adorni",
-          "source": "Filo News",
-          "url": "https://www.filo.news/noticia/2026/05/10/la-justicia-detecto-movimientos-con-criptomonedas-en-la-causa-contra-manuel-adorni",
-          "date": "2026-05-10T12:58:17+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Manuel Adorni bajo sospecha: gastos por US$20.000 mensuales con un sueldo de pobre",
-          "source": "Palermo Online Noticias",
-          "url": "https://palermonline.com.ar/wordpress/manuel-adorni-bajo-sospecha-gastos-por-us20-000-mensuales-con-un-sueldo-de-pobre/",
-          "date": "2026-05-10T12:55:06+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "El Gobierno nacional ya piensa en 2027 y negocia acuerdos con más de diez provincias",
-          "source": "ADNSUR",
-          "url": "https://www.adnsur.com.ar/politica/el-gobierno-nacional-ya-piensa-en-2027-y-negocia-acuerdos-con-mas-de-diez-provincias_a6a0070dc065f3579c292d070",
-          "date": "2026-05-10T12:39:21+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Crece la negatividad y el malestar domina la conversación digital argentina",
-          "source": "La Tecla",
-          "url": "https://www.latecla.info/166677-crece-la-negatividad-y-el-malestar-domina-la-conversacion-digital-argentina",
-          "date": "2026-05-10T12:17:32+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "“Rápido”: el pedido de Luis Juez al Gobierno sobre el caso Manuel Adorni",
-          "source": "El Intransigente",
-          "url": "https://elintransigente.com/2026/05/rapido-el-pedido-de-luis-juez-al-gobierno-sobre-el-caso-manuel-adorni/",
-          "date": "2026-05-10T11:41:38+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Internas en el gabinete de Javier Milei: del respaldo presidencial a Manuel Adorni a las presiones de Patricia Bullrich",
-          "source": "Diario Río Negro",
-          "url": "https://www.rionegro.com.ar/politica/internas-en-el-gabinete-de-javier-milei-del-respaldo-presidencial-a-manuel-adorni-a-las-presiones-de-patricia-bullrich-4569363/",
-          "date": "2026-05-10T11:18:19+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Una sorpresiva grieta en la oposición complica la sesión para avanzar con la interpelación a Manuel Adorni",
-          "source": "MDZ Online",
-          "url": "https://www.mdzol.com/politica/una-sorpresiva-grieta-la-oposicion-complica-la-sesion-avanzar-la-interpelacion-manuel-adorni-n1516734",
-          "date": "2026-05-10T10:23:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "El Gobierno sigue apostando a dejar atrás el caso Adorni",
-          "source": "El Litoral",
-          "url": "https://www.ellitoral.com/politica/milei-adorni-crisis-karina-mileismo-conflicto-gobierno-libertarios_0_nl6IgHRQxh.html",
-          "date": "2026-05-10T10:18:08+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Manuel Adorni: una extraña advertencia a Javier Milei en una semana clave para el país",
-          "source": "MDZ Online",
-          "url": "https://www.mdzol.com/manuel-adorni-una-extrana-advertencia-javier-milei-una-semana-clave-el-pais-n1516802",
-          "date": "2026-05-10T10:17:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Caso Manuel Adorni: la Justicia detectó movimientos de dinero digital con criptomonedas",
-          "source": "diariopopular.com.ar",
-          "url": "https://www.diariopopular.com.ar/politica/caso-manuel-adorni-la-justicia-detecto-movimientos-dinero-digital-criptomonedas-n899506",
-          "date": "2026-05-10T10:09:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "La ruta del dinero de Manuel Adorni",
-          "source": "C5N",
-          "url": "https://www.c5n.com/politica/la-ruta-del-dinero-manuel-adorni-n237595",
-          "date": "2026-05-10T10:07:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "AfD Bayern im Landtag: Führungskonflikt vor Neuwahlen",
-          "source": "SZ.de",
-          "url": "https://www.sueddeutsche.de/bayern/afd-bayern-landtag-fraktion-wahl-ebner-steiner-li.3480126",
-          "date": "2026-05-10T09:49:04+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Milei está dispuesto a pagar el costo político de sostener a Adorni mientras no haya dudas sobre su patrimonio",
-          "source": "TN",
-          "url": "https://tn.com.ar/opinion/2026/05/10/milei-esta-dispuesto-a-pagar-el-costo-politico-de-sostener-a-adorni-mientras-no-haya-dudas-sobre-su-patrimonio/",
-          "date": "2026-05-10T09:00:01+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Los riesgos de la obstinación política en tiempos de ebullición social",
-          "source": "TN",
-          "url": "https://tn.com.ar/opinion/2026/05/10/los-riesgos-de-la-obstinacion-politica-en-tiempos-de-ebullicion-social/",
-          "date": "2026-05-10T08:33:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Miesięcznica smoleńska. Kaczyński grozi więzieniem",
-          "source": "Do Rzeczy",
-          "url": "https://dorzeczy.pl/kraj/885001/miesiecznica-smolenska-kaczynski-grozi-wiezieniem.html",
-          "date": "2026-05-10T07:58:00+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "El Gabinete en crisis después de los gritos de Milei",
-          "source": "Perfil",
-          "url": "https://www.perfil.com/noticias/politica/el-gabinete-en-crisis-despues-de-los-gritos-de-milei.phtml",
-          "date": "2026-05-10T07:47:18+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Comodoro Py huele sangre y se activaron los casos por corrupción del Gobierno",
-          "source": "Perfil",
-          "url": "https://www.perfil.com/noticias/politica/comodoro-py-huele-sangre-y-se-activaron-los-casos-por-corrupcion-del-gobierno.phtml",
-          "date": "2026-05-10T07:44:19+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Una lista infinita de enemigos, traidores y golpistas",
-          "source": "Infobae",
-          "url": "https://www.infobae.com/politica/2026/05/10/una-lista-infinita-de-enemigos-traidores-y-golpistas/",
-          "date": "2026-05-10T05:30:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "El Gobierno, resignado ante el caso Adorni, apuesta todo al Mundial para cambiar el clima político",
-          "source": "Infobae",
-          "url": "https://www.infobae.com/politica/2026/05/10/el-gobierno-resignado-ante-el-caso-adorni-apuesta-todo-al-mundial-para-cambiar-el-clima-politico/",
-          "date": "2026-05-10T05:23:53+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Cuáles son los 12 inmuebles del Estado que concesionó el Gobierno y cuánto pagan de canon",
-          "source": "Infobae",
-          "url": "https://www.infobae.com/politica/2026/05/10/cuales-son-los-12-inmuebles-del-estado-que-concesiono-el-gobierno-y-cuanto-pagan-de-canon/",
-          "date": "2026-05-10T05:10:19+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Las seis propiedades de Manuel Adorni y de su esposa que investiga la Justicia",
-          "source": "Infobae",
-          "url": "https://www.infobae.com/judiciales/2026/05/10/las-seis-propiedades-de-manuel-adorni-y-de-su-esposa-que-investiga-la-justicia/",
-          "date": "2026-05-10T05:08:51+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Círculo rojo: Milei entrampado entre el “riesgo Adorni”, la economía y las expectativas del establishment",
-          "source": "Infobae",
-          "url": "https://www.infobae.com/politica/2026/05/10/circulo-rojo-milei-entrampado-entre-el-riesgo-adorni-la-economia-y-las-expectativas-del-establishment/",
-          "date": "2026-05-10T04:40:17+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Milei ratifica a Adorni, pero el escándalo no deja de contaminar la agenda política y económica del Gobierno",
-          "source": "elDiarioAR.com",
-          "url": "https://www.eldiarioar.com/politica/milei-ratifica-adorni-escandalo-no-deja-contaminar-agenda-politica-economica-gobierno_1_13207806.html",
-          "date": "2026-05-10T03:02:33+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Detectan gastos corrientes de Adorni de US$20.000 por mes y surge la pista de lavado",
-          "source": "elDiarioAR.com",
-          "url": "https://www.eldiarioar.com/politica/detectan-gastos-corrientes-adorni-us-20-000-mes-surge-pista-lavado_129_13209079.html",
-          "date": "2026-05-10T03:02:32+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "“Riesgo kuka” vs “riesgo Adorni”",
-          "source": "Diario Río Negro",
-          "url": "https://www.rionegro.com.ar/opinion/riesgo-kuka-vs-riesgo-adorni/",
-          "date": "2026-05-10T03:00:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Investigación por presunto enriquecimiento ilícito: detectan movimientos con criptomonedas vinculados a Manuel Adorni",
-          "source": "CFIN Noticias",
-          "url": "https://www.cfin.com.ar/especiales/manuel-adorni-investigacion-enriquecimiento-ilicito-criptomonedas/",
-          "date": "2026-05-10T02:32:12+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "La Justicia también detectó operaciones con criptomonedas de Manuel Adorni",
-          "source": "Cadena 3 Argentina",
-          "url": "https://www.cadena3.com/noticia/politica-y-economia/la-justicia-tambien-detecto-operaciones-con-criptomonedas-de-manuel-adorni_549708",
-          "date": "2026-05-10T02:02:51+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Detectan movimientos de criptomonedas no declarados por Manuel Adorni",
-          "source": "infodelestero.com",
-          "url": "https://infodelestero.com/2026/05/09/detectan-movimientos-de-criptomonedas-no-declarados-por-manuel-adorni/",
-          "date": "2026-05-10T01:41:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Caso Adorni: la Justicia detecta movimientos no declarados en criptomonedas y crece la lupa sobre su patrimonio",
-          "source": "Ambito",
-          "url": "https://www.ambito.com/politica/caso-adorni-la-justicia-detecto-movimientos-criptomonedas-y-avanza-su-patrimonio-digital-n6275856",
-          "date": "2026-05-10T01:35:42+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Los escándalos del jefe de Gabinete argentino, Manuel Adorni, ahogan al Gobierno de Milei",
-          "source": "El Sol de México",
-          "url": "https://oem.com.mx/elsoldemexico/mundo/los-escandalos-del-jefe-de-gabinete-argentino-ahogan-al-gobierno-de-milei-29899303",
-          "date": "2026-05-10T01:21:54+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "La Justicia detectó movimientos con criptomonedas en la investigación patrimonial contra Manuel Adorni",
-          "source": "Diario El Sol Mendoza",
-          "url": "https://www.elsol.com.ar/el-pais/la-justicia-detecto-movimientos-con-criptomonedas-en-la-investigacion-patrimonial-contra-manuel-adorni/",
-          "date": "2026-05-10T01:14:37+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "La Justicia detectó movimientos de Manuel Adorni con criptomonedas y analiza su patrimonio digital",
-          "source": "a24.com",
-          "url": "https://www.a24.com/politica/la-justicia-detecto-movimientos-manuel-adorni-criptomonedas-y-analiza-su-patrimonio-digital-n1554284/amp",
-          "date": "2026-05-10T01:05:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "La Justicia rastrea billeteras virtuales y movimientos en criptomonedas de Manuel Adorni",
-          "source": "Los Primeros TV",
-          "url": "https://www.losprimeros.tv/politica/la-justicia-rastrea-billeteras-virtuales-y-movimientos-en-criptomonedas-de-manuel-adorni_a69ffd3d5f10b72b7d014f766",
-          "date": "2026-05-10T00:50:14+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Causa por presunto enriquecimiento ilícito: la Justicia también detectó operaciones con criptomonedas de Manuel Adorni",
-          "source": "Infobae",
-          "url": "https://www.infobae.com/judiciales/2026/05/10/causa-por-presunto-enriquecimiento-ilicito-la-justicia-tambien-detecto-movimientos-de-criptomonedas-de-manuel-adorni/",
-          "date": "2026-05-10T00:45:05+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "La Justicia analiza el patrimonio digital de Manuel Adorni",
-          "source": "La Banda Diario",
-          "url": "https://labandadiario.com/la-justicia-analiza-el-patrimonio-digital-de-manuel-adorni/",
-          "date": "2026-05-10T00:42:56+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "La Justicia detectó transacciones de dinero digital a cargo de Manuel Adorni",
-          "source": "Cuestión Entrerriana",
-          "url": "https://cuestionentrerriana.com.ar/la-justicia-detecto-transacciones-de-dinero-digital-a-cargo-de-manuel-adorni/",
-          "date": "2026-05-10T00:42:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Causa Adorni: la Justicia detectó movimientos con criptomonedas y analiza su patrimonio digital",
-          "source": "Diario Río Negro",
-          "url": "https://www.rionegro.com.ar/politica/causa-adorni-la-justicia-detecto-movimientos-con-criptomonedas-y-analiza-su-patrimonio-digital-4569249/",
-          "date": "2026-05-10T00:28:59+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "La Justicia constató movimientos de Manuel Adorni con criptomonedas que no figuran en su DDJJ",
-          "source": "MDZ Online",
-          "url": "https://www.mdzol.com/politica/la-justicia-constato-movimientos-manuel-adorni-criptomonedas-que-no-figuran-su-ddjj-n1516775",
-          "date": "2026-05-10T00:22:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Nuevas dudas sobre el patrimonio de Manuel Adorni: investigan movimientos con criptomonedas no declarados",
-          "source": "Diario El Día de La Plata",
-          "url": "https://www.eldia.com/nota/2026-5-9-20-47-0-nuevas-dudas-sobre-el-patrimonio-de-manuel-adorni-investigan-movimientos-con-criptomonedas-no-declarados-politica-y-economia/amp",
-          "date": "2026-05-10T00:00:35+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Investigan movimientos con criptomonedas en la causa que involucra a Manuel Adorni — ACTUALIDAD",
-          "source": "Opinando San Nicolás",
-          "url": "https://www.opinandosannicolas.ar/2026/05/investigan-movimientos-con-criptomonedas-en-la-causa-que-involucra-a-manuel-adorni/",
-          "date": "2026-05-09T23:58:54+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Manuel Adorni cercado: la Justicia investiga movimientos del funcionario en Criptomonedas",
-          "source": "Perfil",
-          "url": "https://www.perfil.com/noticias/politica/manuel-adorni-la-justicia-investiga-movimientos-del-funcionario-en-criptomonedas.phtml",
-          "date": "2026-05-09T23:35:38+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "La Justicia detectó movimientos de dinero digital de Manuel Adorni a través de criptomonedas",
-          "source": "La Nación",
-          "url": "https://www.lanacion.com.ar/politica/la-justicia-detecto-movimientos-de-dinero-digital-de-manuel-adorni-a-traves-de-criptomonedas-nid09052026/",
-          "date": "2026-05-09T22:50:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Más problemas para Manuel Adorni: movió fondos con criptomonedas y no los informó en su declaración jurada",
-          "source": "Clarin.com",
-          "url": "https://www.clarin.com/politica/problemas-manuel-adorni-movio-fondos-criptomonedas-informo-declaracion-jurada_0_Hxms257X06.html",
-          "date": "2026-05-09T21:49:16+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "El´Riesgo Adorni´y la caída estrepitosa de Milei",
-          "source": "Página|12",
-          "url": "https://www.pagina12.com.ar/2026/05/10/elriesgo-adorniy-la-caida-estrepitosa-de-milei/",
-          "date": "2026-05-09T21:45:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Los lujos del jefe de Gabinete que acorralan a Javier Milei: su popularidad está a la baja",
-          "source": "El Espectador",
-          "url": "https://www.elespectador.com/mundo/america/los-lujos-del-jefe-de-gabinete-que-acorralan-a-javier-milei-su-popularidad-esta-a-la-baja/",
-          "date": "2026-05-09T18:00:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Adorni, Andis, $Libra: cuevas, operadores y la ruta del dinero que conecta los escándalos que complican a Javier Milei",
-          "source": "El Destape",
-          "url": "https://www.eldestapeweb.com/politica/adorni-andis-libra-la-ruta-del-dinero-que-conecta-los-escandalos-que-complican-a-milei-202659134025",
-          "date": "2026-05-09T16:49:38+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "El Gobierno quedó atrapado en el caso Adorni y ahora busca oxigenar la gestión con una batería de anuncios económicos",
-          "source": "TN",
-          "url": "https://tn.com.ar/politica/2026/05/09/el-gobierno-quedo-atrapado-en-el-caso-adorni-y-ahora-busca-oxigenar-la-gestion-con-anuncios-economicos/",
-          "date": "2026-05-09T12:44:39+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Manuel Adorni es un “pedazo de Milei”, pero ya no es vocero, ni jefe de Gabinete, ni candidato",
-          "source": "Tribuna de Periodistas",
-          "url": "https://periodicotribuna.com.ar/manuel-adorni-es-un-pedazo-de-milei-pero-ya-no-es-vocero-ni-jefe-de-gabinete-ni-candidato/",
-          "date": "2026-05-09T12:15:14+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Argentina: Corruption strengthens in a weakening state",
-          "source": "Latinoamérica 21",
-          "url": "https://latinoamerica21.com/en/argentina-corruption-strengthens-in-a-weakening-state/",
-          "date": "2026-05-09T12:00:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "El capricho de la “agenda Adorni” le hizo desperdiciar al gobierno de Milei una de sus mejores semanas",
-          "source": "TN",
-          "url": "https://tn.com.ar/opinion/2026/05/09/la-agenda-adorni-le-hizo-desperdiciar-al-gobierno-de-milei-una-de-sus-mejores-semanas/",
-          "date": "2026-05-09T08:22:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "El riesgo Adorni",
-          "source": "Infobae",
-          "url": "https://www.infobae.com/opinion/2026/05/09/el-riesgo-adorni/",
-          "date": "2026-05-09T07:55:25+00:00",
-          "category": "argentina"
-        }
-      ],
-      "first_seen": "2026-05-06T04:27:08+00:00",
-      "last_seen": "2026-05-10T14:12:28+00:00"
+      "last_seen": "2026-05-11T15:50:55+00:00"
     }
   ]
 }
