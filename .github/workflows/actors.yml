@@ -16,7 +16,7 @@ on:
       top_n:
         description: "Number of actors to return"
         type: string
-        default: "8"
+        default: "5"
 
 concurrency:
   group: media-actors
@@ -55,7 +55,7 @@ jobs:
         run: |
           python actors_generator.py \
             --hours "${{ inputs.hours || '48' }}" \
-            --top-n "${{ inputs.top_n || '8' }}" \
+            --top-n "${{ inputs.top_n || '5' }}" \
             --enriched-dir data-private
 
       - name: Commit and push
