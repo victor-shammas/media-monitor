@@ -12,7 +12,7 @@ ongoing coverage of the same person keeps a consistent entry across runs.
 
 Usage:
   python actors_generator.py
-  python actors_generator.py --hours 48 --top-n 8 --min-articles 3
+  python actors_generator.py --hours 48 --top-n 5 --min-articles 3
   python actors_generator.py --enriched-dir data-private
 """
 
@@ -276,7 +276,7 @@ def main() -> int:
     cfg = CONFIG.get("actors", {})
     parser = argparse.ArgumentParser(description="Generate key actors clustering")
     parser.add_argument("--hours", type=int, default=cfg.get("lookback_hours", 48))
-    parser.add_argument("--top-n", type=int, default=cfg.get("top_n", 8))
+    parser.add_argument("--top-n", type=int, default=cfg.get("top_n", 5))
     parser.add_argument("--min-articles", type=int, default=cfg.get("min_articles", 3))
     parser.add_argument("--enriched-dir", default="data-private")
     parser.add_argument("--outdir", default=DEFAULT_OUTDIR,
