@@ -1,362 +1,594 @@
 {
-  "updated_at": "2026-05-12T15:35:11+00:00",
+  "updated_at": "2026-05-13T04:37:00+00:00",
   "lookback_hours": 48,
   "model": "Mistral Large",
   "status": "ok",
   "themes": [
     {
-      "id": "far-right-parties-push-national-priority-policies",
-      "title": "Far-right parties push 'national priority' policies",
-      "blurb": "Right-wing and far-right parties across Europe are intensifying their focus on 'national priority' policies, which prioritize citizens over immigrants in access to social services, housing, and welfare. This theme has gained traction in Spain, Italy, and Sweden, with parties like Vox, Lega, and Sverigedemokraterna advocating for stricter immigration controls and preferential treatment for nationals.",
+      "id": "trumps-policies-dominate-global-right-wing-coverage",
+      "title": "Trump’s policies dominate global right-wing coverage",
+      "blurb": "President Trump's diplomatic engagements, particularly his visit to China and stance on the Iran war, have dominated right-wing media narratives across multiple countries. This theme reflects the global influence of Trump's policies and the shared focus on U.S. foreign relations among right-wing factions.",
       "convergence": 5,
       "countries": [
         {
-          "name": "🇪🇸 Vox",
-          "note": "Proposes 'national priority' in housing and social aid, criticizing PP and PSOE for neglecting Spaniards."
+          "name": "🇺🇸 MAGA / Trump",
+          "note": "Intense coverage of Trump’s China visit, Iran war stance, and domestic policies like gas tax suspension."
+        },
+        {
+          "name": "🇵🇱 Prawo i Sprawiedliwość",
+          "note": "Focus on Trump’s influence on Poland’s security policies, including potential U.S. troop relocations."
         },
         {
           "name": "🇮🇹 Fratelli d'Italia / Lega",
-          "note": "Advocates for policies favoring Italian citizens in social services and infrastructure projects."
+          "note": "Discussion of Trump’s impact on Italy’s foreign policy, particularly regarding Iran and China."
         },
         {
-          "name": "🇸🇪 Sverigedemokraterna",
-          "note": "Pushes for national priority in school meals and public services, excluding religious accommodations."
+          "name": "🇦🇷 La Libertad Avanza",
+          "note": "Coverage of Trump’s policies as a reference point for Argentina’s economic and diplomatic strategies."
         },
         {
           "name": "🇫🇷 Rassemblement National",
-          "note": "Emphasizes national priority in welfare and immigration policies, aligning with broader European far-right trends."
+          "note": "Analysis of Trump’s diplomatic moves and their implications for France’s far-right agenda."
+        }
+      ],
+      "signals": [
+        "shared framing",
+        "policy imitation",
+        "reaction to U.S. decisions"
+      ],
+      "article_count": 120,
+      "refs": [
+        {
+          "title": "Analysis: What to watch for as President Trump visits China this week",
+          "source": "Deseret News",
+          "url": "https://www.deseret.com/opinion/2026/05/12/things-to-watch-trump-visit-to-china/",
+          "date": "2026-05-13T03:06:00+00:00",
+          "category": "usa"
         },
         {
-          "name": "🇳🇴 Fremskrittspartiet",
-          "note": "Advocates for stricter citizenship tests and prioritizing Norwegian citizens in welfare policies."
+          "title": "Bardella’s next dream : a Franco-German reset",
+          "source": "politico.eu",
+          "url": "https://www.politico.eu/article/jordan-bardella-national-rally-marine-le-pen-friedrich-merz-germany-berlin-next-dream/",
+          "date": "2026-05-13T02:03:13+00:00",
+          "category": "france"
+        },
+        {
+          "title": "President Trump set to meet with Chinese leader Xi Jinping in Beijing as war and inflation weigh on his presidency",
+          "source": "Chicago Tribune",
+          "url": "https://www.chicagotribune.com/2026/05/12/trump-xi-jinping-beijing-meeting/",
+          "date": "2026-05-13T01:31:50+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump-Xi summit in Beijing: What’s at stake",
+          "source": "Los Angeles Times",
+          "url": "https://www.latimes.com/politics/story/2026-05-12/trump-xi-talks-in-beijing-whats-at-stake",
+          "date": "2026-05-12T22:10:14+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "DC Wrap: Trump departs for meeting with Xi in China; FDA chief out; inflation jumps amid Iran war",
+          "source": "Spectrum News",
+          "url": "https://spectrumlocalnews.com/us/snplus/politics/2026/05/12/dc-wrap-trump-xi-jinping-meeting-china-fda-marty-makary-resigns-inflation-report-higher",
+          "date": "2026-05-12T21:35:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump downplays US-Iran differences as he heads to Beijing to meet with Xi",
+          "source": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/5/12/trump-downplays-us-iran-differences-as-he-heads-to-beijing-to-meet-with-xi",
+          "date": "2026-05-12T21:07:33+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump downplays China's leverage over Iran: 'I don't think we need any help'",
+          "source": "KOMO",
+          "url": "https://komonews.com/news/nation-world/trump-downplays-chinas-leverage-over-iran-i-dont-think-we-need-any-help-xi-jinping-donald-trump-politics-economy-marine-one-war-lindsey-graham-concerns",
+          "date": "2026-05-12T20:23:48+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "President Trump Departs for China Ahead of Summit",
+          "source": "Yahoo",
+          "url": "https://www.yahoo.com/news/videos/president-trump-departs-china-ahead-200646412.html",
+          "date": "2026-05-12T20:06:46+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump says he’s not thinking about Americans’ finances ‘even a little bit’ in Iran talks",
+          "source": "NBC News",
+          "url": "https://www.nbcnews.com/politics/donald-trump/trump-not-thinking-american-finances-iran-talk-rcna344785",
+          "date": "2026-05-12T19:33:53+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump and Xi appear intent on keeping Iran war from overshadowing China summit",
+          "source": "PBS",
+          "url": "https://www.pbs.org/newshour/nation/trump-and-xi-appear-intent-on-keeping-iran-war-from-overshadowing-china-summit",
+          "date": "2026-05-12T18:43:56+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "President Trump departs White House en route to Beijing for high-stakes summit with President Xi",
+          "source": "CNBC",
+          "url": "https://www.cnbc.com/video/2026/05/12/president-trump-departs-white-house-en-route-to-beijing-for-high-stakes-summit-with-president-xi.html",
+          "date": "2026-05-12T18:07:53+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "President Trump heads to China where Iran war will be topic of discussion",
+          "source": "CBS News",
+          "url": "https://www.cbsnews.com/newyork/video/president-trump-heads-to-china-where-iran-war-will-be-topic-of-discussion/",
+          "date": "2026-05-12T17:09:00+00:00",
+          "category": "usa"
+        }
+      ],
+      "first_seen": "2026-05-08T04:03:01+00:00",
+      "last_seen": "2026-05-13T04:37:00+00:00"
+    },
+    {
+      "id": "far-right-parties-push-national-priority-policies",
+      "title": "Far-right parties push 'national priority' policies",
+      "blurb": "Right-wing and far-right parties in Spain, Italy, and Sweden are intensifying their focus on 'national priority' policies, which prioritize citizens over immigrants in access to social services, housing, and public resources. This theme highlights a transnational trend of exclusionary rhetoric and policy proposals.",
+      "convergence": 4,
+      "countries": [
+        {
+          "name": "🇪🇸 Vox",
+          "note": "Campaigns on 'national priority' in Andalusia, targeting immigration and social aid access."
+        },
+        {
+          "name": "🇮🇹 Fratelli d'Italia / Lega",
+          "note": "Debates over migration policies and national identity, including opposition to EU asylum pacts."
+        },
+        {
+          "name": "🇸🇪 Sverigedemokraterna",
+          "note": "Opposes forced mixed housing, citing safety concerns in immigrant-heavy areas."
+        },
+        {
+          "name": "🇫🇷 Rassemblement National",
+          "note": "Focus on migration control and national sovereignty in policy discussions."
         }
       ],
       "signals": [
         "policy imitation",
         "shared framing",
-        "parallel elections",
-        "contagion of rhetoric"
+        "parallel elections"
       ],
-      "article_count": 45,
+      "article_count": 85,
       "refs": [
         {
-          "title": "Vox denuncia el «éxodo masivo» de enfermeras en Castilla-La Mancha al «perder» cerca de 1.500 profesionales en un año",
-          "source": "ABC",
-          "url": "https://www.abc.es/espana/castilla-la-mancha/vox-denuncia-exodo-masivo-enfermeras-castillala-mancha-20260512155347-nt.html",
-          "date": "2026-05-12T13:59:07+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox da marcha atrás y no llevará a Les Corts su propuesta para instaurar la prioridad nacional",
-          "source": "Cadena SER",
-          "url": "https://cadenaser.com/comunitat-valenciana/2026/05/12/vox-da-marcha-atras-y-no-llevara-a-les-corts-su-propuesta-para-instaurar-la-prioridad-nacional-radio-valencia/",
-          "date": "2026-05-12T11:46:34+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "EH Bildu acusa a PSE y CCOO de tener en Euskadi sobre el euskera \"la posición de PP-Vox\" en otras comunidades bilingües",
-          "source": "Europa Press",
-          "url": "https://www.europapress.es/euskadi/noticia-eh-bildu-acusa-pse-ccoo-tener-euskadi-euskera-posicion-pp-vox-otras-comunidades-bilingues-20260512100119.html",
-          "date": "2026-05-12T08:01:19+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "SD Malmö: Skolmaten ska vara god och näringsrik – inte ett politiskt ställningstagande",
-          "source": "Mynewsdesk",
-          "url": "https://www.mynewsdesk.com/se/sverigedemokraterna-malmoe/pressreleases/sd-malmoe-skolmaten-ska-vara-god-och-naeringsrik-inte-ett-politiskt-staellningstagande-3447821?utm_source=rss&utm_medium=rss&utm_campaign=Alert&utm_content=pressrelease",
-          "date": "2026-05-12T06:00:00+00:00",
+          "title": "DEBATT: SD: Vi försvarar trygga och välfungerande bostadsområden",
+          "source": "Corren",
+          "url": "https://www.corren.se/debatt/artikel/sd-vi-forsvarar-trygga-och-valfungerande-bostadsomraden/rkyk99zj",
+          "date": "2026-05-13T03:00:00+00:00",
           "category": "sweden"
         },
         {
-          "title": "Vox tira de sus nuevos vicepresidentes en el cierre de campaña para reivindicar en Andalucía la vía de Aragón y Extremadura",
-          "source": "20Minutos",
-          "url": "https://www.20minutos.es/nacional/vox-tira-sus-nuevos-vicepresidentes-cierre-campana-para-reivindicar-andalucia-via-aragon-extremadura_6969021_0.html",
-          "date": "2026-05-12T03:00:00+00:00",
+          "title": "Vox enturbia la campaña con un acto frente al Consulado de Marruecos en Algeciras para difundir su discurso contra la inmigración",
+          "source": "Europa Sur",
+          "url": "https://www.europasur.es/algeciras/vox-enturbia-campana-acto-consulado-marruecos-discurso-inmigracion_0_2006751919.html",
+          "date": "2026-05-13T02:00:58+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Acción Contra el Odio y Sur Acoge denuncian la campaña de Vox que vincula migración y acoso sexual",
+          "source": "Campo de Gibraltar Siglo XXI",
+          "url": "https://www.campodegibraltarsigloxxi.com/accion-contra-el-odio-y-sur-acoge-denuncian-la-campana-de-vox-que-vincula-migracion-y-acoso-sexual/",
+          "date": "2026-05-12T23:50:00+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Förre SD-ledaren: Detta ligger bakom Åkessons Israelbesatthet",
+          "source": "frihetsnytt.se",
+          "url": "https://frihetsnytt.se/forre-sd-ledaren-detta-ligger-bakom-akessons-israelbesatthet/",
+          "date": "2026-05-12T21:56:14+00:00",
+          "category": "sweden"
+        },
+        {
+          "title": "Vox sigue la estela de Trump y Milei: los negacionistas de la OMS tiran de recortes y sacan la motosierra",
+          "source": "LaSexta",
+          "url": "https://www.lasexta.com/noticias/sociedad/vox-sigue-estela-trump-milei-negacionistas-oms-tiran-recortes-sacan-motosierra-sanitaria_202605126a03862bdd62c3164d27842a.html",
+          "date": "2026-05-12T19:57:30+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Cómo sobrevive Vox a sus contradicciones sin renunciar al proyecto posfascista",
+          "source": "Diario Público",
+          "url": "https://www.publico.es/opinion/columnas/sobrevive-vox-contradicciones-renunciar-proyecto-posfascista.html",
+          "date": "2026-05-12T19:30:00+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "President Trump Issues New Executive Order Significantly Increasing Sanctions Risk for Non U.S. Companies and Financial Institutions Doing Business with Cuba",
+          "source": "JD Supra",
+          "url": "https://www.jdsupra.com/legalnews/president-trump-issues-new-executive-1838561/",
+          "date": "2026-05-12T18:03:53+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "El presidente de los obispos llama a “superar” la idea de “prioridad nacional” con los migrantes e invita a Vox a dialogar",
+          "source": "La Vanguardia",
+          "url": "https://www.lavanguardia.com/politica/20260512/11536251/presidente-obispos-llama-superar-idea-prioridad-nacional-migrantes-e-invita-vox-dialogar.html",
+          "date": "2026-05-12T17:12:39+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Absuelto Jaïr Domínguez, el humorista que llamó a combatir al fascismo “con un puñetazo en la boca”",
+          "source": "EL PAÍS",
+          "url": "https://elpais.com/espana/catalunya/2026-05-12/absuelto-jair-dominguez-el-humorista-que-llamo-a-combatir-al-fascismo-con-un-punetazo-en-la-boca.html",
+          "date": "2026-05-12T16:24:51+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "La Audiencia de Barcelona absuelve a Jair Domínguez del delito de odio por llamar a combatir a Vox \"con un puñetazo\"",
+          "source": "Diario Público",
+          "url": "https://www.publico.es/politica/tribunales/audiencia-barcelona-absuelve-jair-dominguez-delito-odio-llamar-combatir-vox-punetazo.html",
+          "date": "2026-05-12T14:56:06+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "CC OO responde a Bildu tras acusarle de comportarse como Vox en el euskera: «Está fuera de lugar»",
+          "source": "El Correo",
+          "url": "https://www.elcorreo.com/politica/responde-bildu-tras-acusarle-comportarse-vox-euskera-20260512161600-nt.html",
+          "date": "2026-05-12T14:16:04+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Absuelto el humorista Jair Domínguez, acusado por Vox: llamar a dar \"un puñetazo\" al fascismo no es delito de odio",
+          "source": "elDiario.es",
+          "url": "https://www.eldiario.es/catalunya/absuelto-humorista-jair-dominguez-acusado-vox-llamar-dar-punetazo-fascismo-no-delito-odio_1_13147082.html",
+          "date": "2026-05-12T13:03:29+00:00",
           "category": "spain"
         }
       ],
       "first_seen": "2026-04-29T14:59:17+00:00",
-      "last_seen": "2026-05-12T15:35:11+00:00"
-    },
-    {
-      "id": "trumps-policies-dominate-global-right-wing-coverage",
-      "title": "Trump’s policies dominate global right-wing coverage",
-      "blurb": "Donald Trump's foreign and domestic policies continue to shape right-wing discourse worldwide, with his administration's actions—such as Iran negotiations, tariffs, and immigration reforms—being closely followed and debated in countries like Poland, Italy, and Argentina. His influence extends to electoral strategies and policy debates in these nations.",
-      "convergence": 4,
-      "countries": [
-        {
-          "name": "🇺🇸 MAGA / Trump",
-          "note": "Trump's Iran policies, tariffs, and immigration reforms are central to U.S. right-wing discourse."
-        },
-        {
-          "name": "🇵🇱 Prawo i Sprawiedliwość",
-          "note": "Polish right-wing media closely follows Trump's policies, particularly on Iran and immigration."
-        },
-        {
-          "name": "🇮🇹 Fratelli d'Italia / Lega",
-          "note": "Italian right-wing parties align with Trump's foreign policy stances, particularly on Iran and trade."
-        },
-        {
-          "name": "🇦🇷 La Libertad Avanza",
-          "note": "Argentina's libertarian government adopts Trump-style rhetoric and policies, particularly on deregulation and anti-socialism."
-        }
-      ],
-      "signals": [
-        "policy imitation",
-        "shared framing",
-        "reaction to U.S. decisions",
-        "coordinated messaging"
-      ],
-      "article_count": 50,
-      "refs": [
-        {
-          "title": "Donald Trump asserts Iran will stop enriching uranium and hand it over to the US",
-          "source": "The Jerusalem Post",
-          "url": "https://www.jpost.com/middle-east/iran-news/article-895937",
-          "date": "2026-05-12T14:33:47+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Will Donald Trump relaunch attacks on Iran?",
-          "source": "The New Arab",
-          "url": "https://www.newarab.com/news/will-donald-trump-relaunch-attacks-iran",
-          "date": "2026-05-12T14:19:33+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Trump nominates Kari Lake to be US ambassador to Jamaica",
-          "source": "The Guardian",
-          "url": "https://www.theguardian.com/us-news/2026/may/12/trump-kari-lake-us-ambassador-jamaica",
-          "date": "2026-05-12T14:07:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Videó: Három szóvivője lesz Magyar Péter kormányának",
-          "source": "HírTv",
-          "url": "https://hirtv.origo.hu/video/harom-szovivoje-lesz-magyar-peter-kormanyanak",
-          "date": "2026-05-12T13:40:27+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "New Bootle councillor quits Reform UK",
-          "source": "clickliverpool.com",
-          "url": "https://www.clickliverpool.com/news/65310-new-bootle-councillor-quits-reform-uk/",
-          "date": "2026-05-12T12:51:12+00:00",
-          "category": "uk"
-        }
-      ],
-      "first_seen": "2026-05-08T04:03:01+00:00",
-      "last_seen": "2026-05-12T15:35:11+00:00"
+      "last_seen": "2026-05-13T04:37:00+00:00"
     },
     {
       "id": "reform-uks-electoral-surge-reshapes-uk-politics",
       "title": "Reform UK’s electoral surge reshapes UK politics",
-      "blurb": "Reform UK's unprecedented gains in local elections have sent shockwaves through British politics, challenging Labour's dominance and reshaping the political landscape. The party's success is driven by anti-immigration rhetoric and dissatisfaction with mainstream parties, resonating across England and Scotland.",
-      "convergence": 5,
+      "blurb": "Reform UK’s significant gains in local elections have reshaped the UK’s political landscape, challenging traditional parties and influencing national discourse. This theme underscores the growing influence of far-right movements in Europe and their potential to disrupt established political systems.",
+      "convergence": 4,
       "countries": [
         {
           "name": "🇬🇧 Reform UK",
-          "note": "Reform UK wins over 1,400 council seats, becoming the largest opposition party in several regions."
+          "note": "Wins control of multiple councils, reshaping local governance and challenging Labour and Conservatives."
         },
         {
           "name": "🇺🇸 MAGA / Trump",
-          "note": "Trump endorses Reform UK's anti-immigration stance, influencing its electoral strategy."
+          "note": "Coverage of Reform UK’s rise as a model for U.S. conservative movements."
         },
         {
           "name": "🇮🇹 Fratelli d'Italia / Lega",
-          "note": "Italian right-wing parties monitor Reform UK's success as a model for anti-establishment politics."
-        },
-        {
-          "name": "🇫🇷 Rassemblement National",
-          "note": "RN draws parallels with Reform UK's electoral strategy, emphasizing anti-immigration policies."
+          "note": "Analysis of Reform UK’s impact on European far-right dynamics."
         }
       ],
       "signals": [
         "parallel elections",
-        "contagion of rhetoric",
         "policy imitation",
-        "shared framing"
+        "coordinated messaging"
       ],
-      "article_count": 40,
+      "article_count": 60,
       "refs": [
         {
-          "title": "Reform UK suspends candidate in South Gloucestershire election",
-          "source": "Bristol Live",
-          "url": "https://www.bristolpost.co.uk/news/bristol-news/winterbourne-reform-uk-candidate-suspended-10962269",
-          "date": "2026-05-12T14:32:00+00:00",
+          "title": "'It’s a Big, Big Day': Trump-Ally Nigel Farage Stuns British PM Keir Starmer With Shock Election Victory",
+          "source": "AOL.com",
+          "url": "https://www.aol.com/articles/big-big-day-trump-ally-002528635.html",
+          "date": "2026-05-13T01:07:17+00:00",
           "category": "uk"
         },
         {
-          "title": "Reform UK wins seats on Epping Forest District Council",
-          "source": "Epping Forest Guardian",
-          "url": "https://www.eppingforestguardian.co.uk/news/26100117.reform-uk-wins-seats-epping-forest-district-council/",
-          "date": "2026-05-12T14:03:19+00:00",
+          "title": "Reform UK vows to deliver 'brutal lesson' by crushing Andy Burnham leadership plot",
+          "source": "Daily Express",
+          "url": "https://www.express.co.uk/news/uk/2204862/reform-uk-andy-burnham-by-election-leadership-ambitions-no-safe-labour-seats",
+          "date": "2026-05-13T00:25:00+00:00",
           "category": "uk"
         },
         {
-          "title": "Why didn't Reform take more seats in Hertfordshire?",
-          "source": "BBC",
-          "url": "https://www.bbc.co.uk/news/articles/c2429351ln8o",
-          "date": "2026-05-12T12:33:25+00:00",
+          "title": "Reform UK 'absolutely ready to run councils'",
+          "source": "AOL.com",
+          "url": "https://www.aol.com/articles/reform-uk-absolutely-ready-run-135657037.html",
+          "date": "2026-05-12T23:45:40+00:00",
           "category": "uk"
         },
         {
-          "title": "Reform plots 'brutal' battle to stop Andy Burnham's march to No10 as Keir Starmer's rival receives by-election warning",
-          "source": "GB News",
-          "url": "https://www.gbnews.com/politics/andy-burnham-reform-uk-manchester-keir-starmer-resignation",
-          "date": "2026-05-12T11:33:28+00:00",
+          "title": "Reform UK urged to clarify stance on men’s rights group",
+          "source": "The Times",
+          "url": "https://www.thetimes.com/uk/scotland/article/reform-uk-urged-to-clarify-stance-on-mens-rights-group-pdzdxx98j",
+          "date": "2026-05-12T21:30:40+00:00",
           "category": "uk"
         },
         {
-          "title": "Reform UK selects Chris Eynon as Sunderland City Council leader",
-          "source": "BBC",
-          "url": "https://www.bbc.com/news/articles/cy72nv5vx2ro",
-          "date": "2026-05-12T11:23:38+00:00",
+          "title": "Protestant church magazine rebrands after confusion with Reform UK party",
+          "source": "The Independent",
+          "url": "https://www.independent.co.uk/bulletin/news/reform-church-magazine-name-rebrand-b2975330.html",
+          "date": "2026-05-12T20:23:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Column: Britain’s elections continue political earthquake",
+          "source": "Chicago Tribune",
+          "url": "https://www.chicagotribune.com/2026/05/12/arthur-i-cyr-column-britain-elections/",
+          "date": "2026-05-12T19:26:03+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Starmer faces calls to quit: “Step aside or give No 10 to Nigel Farage,” says former Labour adviser",
+          "source": "France 24",
+          "url": "https://www.france24.com/en/starmer-faces-calls-to-quit-step-aside-or-give-no-10-to-nigel-farage-says-former-labour-adviser",
+          "date": "2026-05-12T18:36:54+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Islamophobia, racist threats, Holocaust denial: Comments by newly-elected Reform councillors",
+          "source": "Middle East Eye",
+          "url": "https://www.middleeasteye.net/news/reform-uk-faces-backlash-over-alleged-racist-comments-made-newly-elected-councillors",
+          "date": "2026-05-12T18:15:09+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Reform councillor expelled by party amid claims he 'celebrated rape of Sikh women'",
+          "source": "Birmingham Live",
+          "url": "https://www.birminghammail.co.uk/black-country/reform-councillor-expelled-party-amid-33934923",
+          "date": "2026-05-12T17:35:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Reform UK is under new leadership in Northumberland",
+          "source": "Hexham Courant",
+          "url": "https://www.hexham-courant.co.uk/news/26101117.reform-uk-new-leadership-northumberland/",
+          "date": "2026-05-12T16:46:24+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Who is your Hampshire councillor after county elections?",
+          "source": "Liphook Herald",
+          "url": "https://www.liphookherald.com/news/politics/who-is-your-hampshire-councillor-after-county-elections-906494",
+          "date": "2026-05-12T15:28:05+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "West Sussex County Council election results 2026",
+          "source": "SussexWorld",
+          "url": "https://www.chichester.co.uk/news/politics/chichester-west-sussex-county-council-election-results-2026-8541857",
+          "date": "2026-05-12T14:10:00+00:00",
           "category": "uk"
         }
       ],
       "first_seen": "2026-05-09T14:10:13+00:00",
-      "last_seen": "2026-05-12T15:35:11+00:00"
+      "last_seen": "2026-05-13T04:37:00+00:00"
     },
     {
       "id": "corruption-scandals-rock-far-right-governments",
       "title": "Corruption scandals rock far-right governments",
-      "blurb": "Corruption allegations are undermining far-right governments and parties across multiple countries, including Argentina, Hungary, and Poland. These scandals involve misuse of public funds, nepotism, and conflicts of interest, eroding public trust in these administrations.",
-      "convergence": 4,
+      "blurb": "Corruption allegations and scandals involving high-profile figures in far-right governments have become a dominant theme, undermining public trust and sparking internal conflicts. This pattern reflects a broader trend of governance challenges within right-wing administrations.",
+      "convergence": 3,
       "countries": [
         {
           "name": "🇦🇷 La Libertad Avanza",
-          "note": "Scandals involving Manuel Adorni and Karina Milei dominate Argentine media, with allegations of illicit enrichment and nepotism."
+          "note": "Scandals involving Manuel Adorni and Karina Milei erode public trust in Milei’s government."
         },
         {
           "name": "🇭🇺 Fidesz / Tisza",
-          "note": "Hungary's new Tisza government faces allegations of corruption under Orbán's regime, including misuse of EU funds."
+          "note": "Allegations of luxury spending and corruption in Orbán’s government fuel public discontent."
         },
         {
           "name": "🇵🇱 Prawo i Sprawiedliwość",
-          "note": "Polish PiS party embroiled in scandals involving Zbigniew Ziobro and misuse of public funds."
+          "note": "Investigations into Zbigniew Ziobro and other party figures highlight internal corruption."
         },
         {
           "name": "🇪🇸 Vox",
-          "note": "Vox faces criticism over alleged misuse of public funds and nepotism in regional governments."
+          "note": "Internal conflicts and legal challenges over contract awards and campaign financing."
         }
       ],
       "signals": [
-        "parallel scandals",
         "shared framing",
-        "contagion of rhetoric",
-        "policy failures"
+        "parallel developments",
+        "contagion of rhetoric"
       ],
-      "article_count": 35,
+      "article_count": 70,
       "refs": [
         {
-          "title": "Patricia Bullrich desmintió que Milei haya gritado en la última reunión de Gabinete, pero resaltó: \"Tiene una emocionalidad importante\"",
-          "source": "TN",
-          "url": "https://tn.com.ar/politica/2026/05/12/patricia-bullrich-desmintio-que-javier-milei-haya-gritado-en-la-reunion-de-gabinete/",
-          "date": "2026-05-12T14:27:48+00:00",
-          "category": "argentina"
+          "title": "Vox Valencia adjudicó el contrato al marido de Bernabé sin comunicarlo a la dirección nacional",
+          "source": "The Objective",
+          "url": "https://theobjective.com/espana/comunidad-valenciana/2026-05-13/vox-valencia-contrato-marido-bernabe-direccion-nacional/",
+          "date": "2026-05-13T03:25:00+00:00",
+          "category": "spain"
         },
         {
-          "title": "Szexképekkel zsaroló, korábban elítélt hackert emelhet komoly pozícióba a Tisza Párt",
-          "source": "ORIGO",
-          "url": "https://www.origo.hu/belpol/2026/05/tisza-part-szexkep-buddha-kemelharito-belugyminiszterium",
-          "date": "2026-05-12T14:17:53+00:00",
+          "title": "G7: Havi 4-5 millió forintról mondhat le Magyar Péter, de ez csak a jéghegy csúcsa",
+          "source": "Telex",
+          "url": "https://telex.hu/g7/kozelet/2026/05/12/miniszterelnoki-fizetes-magyar-peter-orban-viktor-kozigazgatasi-letszam",
+          "date": "2026-05-13T02:52:36+00:00",
           "category": "hungary"
         },
         {
-          "title": "Bullrich habló sobre la tensa reunión de Gabinete con Milei: “El Presidente tiene una emocionalidad importante”",
-          "source": "Clarin.com",
-          "url": "https://www.clarin.com/politica/bullrich-hablo-tensa-reunion-gabinete-milei-presidente-emocionalidad-importante_0_N8GQ28zxgm.html",
-          "date": "2026-05-12T14:01:22+00:00",
+          "title": "El Caso Adorni ya tendría un impacto similar al escándalo de Olivos, según un estudio",
+          "source": "Los Andes",
+          "url": "https://www.losandes.com.ar/politica/el-caso-adorni-ya-tendria-un-impacto-similar-al-escandalo-olivos-segun-un-estudio-n5990910",
+          "date": "2026-05-13T00:35:00+00:00",
           "category": "argentina"
         },
         {
-          "title": "Empezaron a investigar a la esposa de Manuel Adorni por millonarios negocios con empresas vinculadas al Estado",
-          "source": "Diario Registrado",
-          "url": "https://www.diarioregistrado.com/politica/empezaron-a-investigar-a-la-esposa-de-manuel-adorni-por-millonarios-negocios-con-empresas-vinculadas-al-estado_a6a0328d18a620f8f5d0cc903",
-          "date": "2026-05-12T13:38:02+00:00",
+          "title": "El caso Adorni erosiona la imagen de Javier Milei y aseguran que su efecto se asemeja a la foto de Olivos",
+          "source": "Ambito",
+          "url": "https://www.ambito.com/politica/el-caso-adorni-erosiona-la-imagen-javier-milei-y-aseguran-que-su-efecto-se-asemeja-la-foto-olivos-n6276923",
+          "date": "2026-05-13T00:09:00+00:00",
           "category": "argentina"
         },
         {
-          "title": "Pagano denunció a la tarotista Karina Milei por darle un carguito a su mejor amiga: cobra millones y solo fue 2 veces",
-          "source": "Agencia NOVA",
-          "url": "https://www.agencianova.com/nota.asp?n=2026_5_12&id=167252&id_tiponota=4",
-          "date": "2026-05-12T11:28:30+00:00",
+          "title": "Javier Milei cambió el tratado de patentes por pedido de los laboratorios y Mauricio Macri se desmarcó",
+          "source": "Letra P",
+          "url": "https://www.letrap.com.ar/congreso/javier-milei-cambio-el-tratado-patentes-pedido-los-laboratorios-y-mauricio-macri-se-desmarco-n5423766",
+          "date": "2026-05-12T22:05:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Nicolás Posse, el primer jefe de gabinete de Javier Milei, reapareció y denunció un presunto intento de golpe en 2023",
+          "source": "Radio Mitre",
+          "url": "https://radiomitre.cienradios.com/politica/nicolas-posse-el-primer-jefe-de-gabinete-de-javier-milei-reaparecio-y-denuncio-un-presunto-intento-de-golpe-en-2023/",
+          "date": "2026-05-12T21:11:16+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Sugestiva \"reaparición\" de Nicolás Posse en medio de la debacle de Manuel Adorni",
+          "source": "Urgente24",
+          "url": "https://urgente24.com/actualidad/sugestiva-reaparicion-nicolas-posse-medio-la-debacle-manuel-adorni-n624526",
+          "date": "2026-05-12T19:39:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Mañas de la vieja política | Denunciaron a Karina Milei por contratar a su mejor amiga como asistente personal",
+          "source": "Cuarto: Salta a diario",
+          "url": "https://www.cuarto.com.ar/manas-de-la-vieja-politica-denunciaron-a-karina-milei-por-contratar-a-su-mejor-amiga-como-asistente-personal/",
+          "date": "2026-05-12T18:54:39+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Magyar Péter megmutatta Pintér Sándor luxusminisztériumát",
+          "source": "Mfor.hu",
+          "url": "https://mfor.hu/cikkek/kozelet/magyar-peter-megmutatta-pinter-sandor-luxusminiszteriumat.html",
+          "date": "2026-05-12T17:44:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Denuncian a Karina Milei por nombrar a su amiga en el Estado",
+          "source": "Noticias Urbanas",
+          "url": "https://www.noticiasurbanas.com.ar/denuncian-a-karina-milei-por-nombrar-a-su-amiga-en-el-estado",
+          "date": "2026-05-12T17:08:34+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Un gobernador aliado a Javier Milei advirtió que el caso Adorni \"complica el crecimiento del país\"",
+          "source": "MDZ Online",
+          "url": "https://www.mdzol.com/politica/un-gobernador-aliado-javier-milei-advirtio-que-el-caso-adorni-complica-el-crecimiento-del-pais-n1518492",
+          "date": "2026-05-12T16:23:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Una encuesta confirma que el caso Adorni impactó negativamente entre los votantes de Javier Milei",
+          "source": "Infobae",
+          "url": "https://www.infobae.com/politica/2026/05/12/una-encuesta-confirma-que-el-caso-adorni-impacto-negativamente-entre-los-votantes-de-javier-milei/",
+          "date": "2026-05-12T15:53:48+00:00",
           "category": "argentina"
         }
       ],
       "first_seen": "2026-05-06T04:27:08+00:00",
-      "last_seen": "2026-05-12T15:35:11+00:00"
+      "last_seen": "2026-05-13T04:37:00+00:00"
     },
     {
       "id": "hungarys-political-transition-dominates-coverage",
       "title": "Hungary’s political transition dominates coverage",
-      "blurb": "Hungary's political transition from Viktor Orbán's Fidesz government to Péter Magyar's Tisza Party has become a focal point in European right-wing media. The shift is marked by investigations into corruption, luxury spending, and the dismantling of Orbán's political network.",
-      "convergence": 5,
+      "blurb": "The political transition in Hungary, marked by the rise of Péter Magyar’s Tisza Party and the end of Viktor Orbán’s 16-year rule, has captured significant attention. This theme highlights the broader implications of Hungary’s shift for European politics and far-right governance.",
+      "convergence": 3,
       "countries": [
         {
           "name": "🇭🇺 Fidesz / Tisza",
-          "note": "Tisza Party forms new government, vowing to dismantle Orbán's legacy and address corruption."
+          "note": "Intense focus on the formation of the new Tisza government and its policy priorities."
         },
         {
           "name": "🇺🇸 MAGA / Trump",
-          "note": "U.S. right-wing media covers Hungary's transition as a model for anti-establishment governance."
+          "note": "Coverage of Hungary’s transition as a case study for populist governance."
         },
         {
           "name": "🇵🇱 Prawo i Sprawiedliwość",
-          "note": "Polish right-wing media draws parallels between Hungary's transition and Poland's political shifts."
-        },
-        {
-          "name": "🇮🇹 Fratelli d'Italia / Lega",
-          "note": "Italian right-wing parties monitor Hungary's transition for lessons on governance and anti-corruption measures."
+          "note": "Analysis of Hungary’s political shift and its impact on regional alliances."
         }
       ],
       "signals": [
-        "parallel transitions",
-        "shared framing",
+        "parallel developments",
         "policy imitation",
-        "contagion of rhetoric"
+        "reaction to EU decisions"
       ],
-      "article_count": 30,
+      "article_count": 50,
       "refs": [
         {
-          "title": "Kormányalakítás 2026: Megalakult a Tisza-kormány, letették az esküt a miniszterek",
-          "source": "Portfolio.hu",
-          "url": "https://www.portfolio.hu/global/20260512/kormanyalakitas-2026-megalakult-a-tisza-kormany-letettek-az-eskut-a-miniszterek-836088",
-          "date": "2026-05-12T14:20:00+00:00",
+          "title": "HUNGARY: ‘Civil society’s role is to ensure democratic restoration is genuine and inclusive’",
+          "source": "civicus lens",
+          "url": "https://lens.civicus.org/interview/hungary-civil-societys-role-is-to-ensure-democratic-restoration-is-genuine-and-inclusive/",
+          "date": "2026-05-13T00:55:04+00:00",
           "category": "hungary"
         },
         {
-          "title": "Magyar Péter bejelentette: 4 miniszter kap vétójogot a kormányban",
-          "source": "Portfolio.hu",
-          "url": "https://www.portfolio.hu/gazdasag/20260512/magyar-peter-bejelentette-4-miniszter-kap-vetojogot-a-kormanyban-836276",
-          "date": "2026-05-12T14:20:00+00:00",
+          "title": "I will serve - not rule over Hungary, says new PM",
+          "source": "AOL.com",
+          "url": "https://www.aol.com/articles/hungarys-pm-sworn-during-regime-004628479.html",
+          "date": "2026-05-13T00:34:15+00:00",
           "category": "hungary"
         },
         {
-          "title": "A parlamentben tesznek esküt a Tisza-kormány miniszterei",
+          "title": "Magyar Péter részleteket árult el az első kormányülésről",
+          "source": "Infostart",
+          "url": "https://infostart.hu/belfold/2026/05/12/magyar-peter-reszleteket-arult-el-az-elso-kormanyulesrol",
+          "date": "2026-05-12T20:07:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Magyar Péter bejelentette, hol tartják az első kormányülést",
+          "source": "Magyar Hang",
+          "url": "https://hang.hu/belfold/megvan-hol-tartja-az-elso-kormanyulest-az-uj-kabinet-188535",
+          "date": "2026-05-12T20:05:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Magyar Péter: Holnap Ópusztaszeren tartjuk az első kormányülést",
           "source": "24.hu",
-          "url": "https://24.hu/belfold/2026/05/12/parlament-tisza-kormany-miniszter-eskutetel/",
-          "date": "2026-05-12T14:17:00+00:00",
+          "url": "https://24.hu/belfold/2026/05/12/magyar-peter-kormanyules-tisza-part/",
+          "date": "2026-05-12T19:58:00+00:00",
           "category": "hungary"
         },
         {
-          "title": "Itthon: Megalakul a Tisza-kormány, esküt tesznek a miniszterek",
+          "title": "Magyar Péterék Ópusztaszeren tartják a Tisza első kormányülését, az Alaptörvényről is tárgyalnak majd",
           "source": "| hvg.hu",
-          "url": "https://hvg.hu/itthon/20260512_megalakul-a-tisza-kormany-eskut-tesznek-a-miniszterek",
-          "date": "2026-05-12T14:02:19+00:00",
+          "url": "https://hvg.hu/itthon/20260512_magyar-peterek-opusztaszer-kormanyules-kihelyezett-miniszterelnok",
+          "date": "2026-05-12T19:54:33+00:00",
           "category": "hungary"
         },
         {
-          "title": "Videó: Három szóvivője lesz Magyar Péter kormányának",
-          "source": "HírTv",
-          "url": "https://hirtv.origo.hu/video/harom-szovivoje-lesz-magyar-peter-kormanyanak",
-          "date": "2026-05-12T13:40:27+00:00",
+          "title": "Vox impone la \"prioridad nacional\" al PP en Sevilla: el Ayuntamiento fulmina las ayudas para países pobres",
+          "source": "Diario Público",
+          "url": "https://www.publico.es/sociedad/vox-impone-prioridad-nacional-pp-sevilla-ayuntamiento-fulmina-ayudas-paises-pobres.html",
+          "date": "2026-05-12T19:30:00+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Hungary's new government led by Peter Magyar takes office",
+          "source": "Xinhua",
+          "url": "https://english.news.cn/20260513/55fc7bdda2fc4c5890eb29ce1a822961/c.html",
+          "date": "2026-05-12T19:05:15+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Hungary's New Government: A Bold Shift Under Péter Magyar",
+          "source": "Devdiscourse",
+          "url": "https://www.devdiscourse.com/article/law-order/3905833-hungarys-new-government-a-bold-shift-under-pter-magyar?amp",
+          "date": "2026-05-12T17:57:46+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Mi lesz most? A Tisza miniszterei Sulyok Tamáshoz mennek, délután eskütétel, éjféltől lesz új kormány",
+          "source": "Telex",
+          "url": "https://telex.hu/belfold/2026/05/12/tisza-part-miniszter-meghallgatas-orszaghaz-parlament-kormany",
+          "date": "2026-05-12T17:37:19+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Hungary swears in new Cabinet as Péter Magyar takes power",
+          "source": "Caliber.Az",
+          "url": "https://caliber.az/en/post/hungary-swears-in-new-cabinet-as-peter-magyar-takes-power",
+          "date": "2026-05-12T16:43:28+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Ministers take office in Hungary's first non-Orbán government in 16 years - Journal-News.com",
+          "source": "",
+          "url": "https://www.journal-news.com/nation-world/ministers-take-office-in-hungarys-first-non-orb-n-government-in-16-years/article_5a9b975a-2f14-5e7e-aa80-be719071c87d.html",
+          "date": "2026-05-12T16:17:52+00:00",
           "category": "hungary"
         }
       ],
       "first_seen": "2026-05-09T14:10:13+00:00",
-      "last_seen": "2026-05-12T15:35:11+00:00"
+      "last_seen": "2026-05-13T04:37:00+00:00"
     }
   ]
 }
