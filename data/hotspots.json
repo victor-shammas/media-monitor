@@ -1,20 +1,793 @@
 {
-  "updated_at": "2026-05-16T04:09:15+00:00",
+  "updated_at": "2026-05-16T14:05:31+00:00",
   "lookback_hours": 48,
   "model": "Mistral Large",
   "status": "ok",
   "hotspots": [
     {
-      "id": "manuel-adorni-corruption-scandal-deepens",
-      "title": "Manuel Adorni corruption scandal deepens",
-      "blurb": "The illicit enrichment case against Argentina's Cabinet Chief Manuel Adorni has escalated with new evidence, including crypto wallets and luxury travel payments. Multiple articles detail judicial investigations, contractor testimonies, and political fallout.",
-      "affect": "This scandal commands disproportionate attention due to its high-profile nature, moral outrage over corruption allegations, and potential to destabilize the Milei administration.",
+      "id": "afds-poll-surge-and-leadership-ambitions",
+      "title": "AfD’s poll surge and leadership ambitions",
+      "blurb": "Germany's far-right Alternative für Deutschland (AfD) continues to dominate polls, leading in multiple states and sparking debates over its extremist ties and potential government roles. The party's radical policy proposals, including deportation forces and migration bans, have alarmed mainstream parties and civil society groups.",
+      "affect": "This commands disproportionate attention due to its potential to reshape German politics, with fears of extremist governance and erosion of democratic norms.",
+      "intensity": 5,
+      "affect_signals": [
+        "polarized contention",
+        "alarmist framing",
+        "cross-source repetition",
+        "moral panic register",
+        "leadership crisis tone"
+      ],
+      "categories": [
+        "🇩🇪 Alternative für Deutschland"
+      ],
+      "article_count": 60,
+      "refs": [
+        {
+          "title": "Insa-Sonntagstrend: AfD erreicht in neuer Umfrage Rekordwert – Sieben Prozentpunkte Abstand zur Union",
+          "source": "WELT",
+          "url": "https://www.welt.de/politik/deutschland/article6a0863a5d1570d73067a1cd7/insa-sonntagstrend-afd-erreicht-in-neuer-umfrage-rekordwert-sieben-prozentpunkte-abstand-zur-union.html",
+          "date": "2026-05-16T13:04:27+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "7 Punkte vor Union! AfD baut Umfrage-Vorsprung aus",
+          "source": "B.Z. – Die Stimme Berlins",
+          "url": "https://www.bz-berlin.de/ticker/7-punkte-vor-union-afd-baut-umfrage-vorsprung-aus",
+          "date": "2026-05-16T12:55:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "AfD erreicht Rekordhoch, Union und SPD stürzen ab",
+          "source": "Hasepost",
+          "url": "https://hasepost.de/afd-erreicht-rekordhoch-union-und-spd-stuerzen-ab-713387/",
+          "date": "2026-05-16T12:49:08+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Oficializaron los dos pedidos de sesión en Diputados",
+          "source": "Tiempo Sur",
+          "url": "https://www.tiemposur.com.ar/politica/oficializaron-los-dos-pedidos-de-sesion-en-diputados",
+          "date": "2026-05-16T12:41:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Rückführungspolizei, Abschiebehaft, Taskforce: Das ist das AfD-\"Regierungsprogramm\" für MV - T-Online",
+          "source": "",
+          "url": "https://www.t-online.de/nachrichten/deutschland/parteien/id_101257022/afd-brisantes-regierungsprogramm-fuer-mecklenburg-vorpommern.html",
+          "date": "2026-05-16T12:14:06+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Umfrage-Erfolg in MV: Putin-Vertrauter nennt AfD „Hoffnung für die Deutschen“",
+          "source": "Nordkurier",
+          "url": "http://www.svz.de/regional/mecklenburg-vorpommern/umfrage-erfolg-in-mv-putin-vertrauter-nennt-afd-hoffnung-fuer-die-deutschen-4578530",
+          "date": "2026-05-16T12:07:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "„Kurs der AfD läuft auf Gewaltherrschaft hinaus, die sich am Nationalsozialismus orientiert“ – Experte ordnet ein",
+          "source": "Frankfurter Rundschau",
+          "url": "https://www.fr.de/politik/afd-eine-gefahr-fuer-menschen-mit-behinderung-experte-ordnet-ein-94309227.html",
+          "date": "2026-05-16T11:00:03+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Länder-Innenminister warnen vor AfD-Regierung in Sachsen-Anhalt",
+          "source": "STERN.de",
+          "url": "https://www.stern.de/news/laender-innenminister-warnen-vor-afd-regierung-in-sachsen-anhalt-37402762.html",
+          "date": "2026-05-16T10:58:36+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Landtagswahl: Innenminister warnen vor AfD-Regierung in Sachsen-Anhalt",
+          "source": "Handelsblatt",
+          "url": "http://www.handelsblatt.com/politik/deutschland/landtagswahl-innenminister-warnen-vor-afd-regierung-in-sachsen-anhalt/100225359.html",
+          "date": "2026-05-16T09:27:53+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "„Regierungsprogramm“ der AfD: Radikale Pläne für „blaue Wende“ im Nordosten – von Remigration bis Kulturkampf",
+          "source": "Schwäbische Post",
+          "url": "http://www.schwaebische-post.de/welt/politik/afd-legt-regierungsprogramm-fuer-mecklenburg-vorpommern-vor-von-remigration-bis-kulturkampf-zr-94309157.html",
+          "date": "2026-05-16T08:47:52+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Andalucía contiene el aliento en la víspera electoral con Moreno como favorito y la duda de VOX",
+          "source": "COPE",
+          "url": "https://www.cope.es/programas/fin-de-semana/audios/andalucia-contiene-aliento-vispera-electoral-moreno-favorito-duda-vox-20260516_3365753.html",
+          "date": "2026-05-16T08:38:25+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Nagy Attila Tibor: Magyar Péter politikai szórakoztató műsort csinál a kormányzásból",
+          "source": "Index.hu",
+          "url": "https://index.hu/velemeny/2026/05/16/magyar-peter-miniszterelnok-kormany-show-kordonbontas-kommunikacio-illemszabaly-politika-fidesz-karmelita/",
+          "date": "2026-05-16T08:17:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "„Hoffnung für die Deutschen“: Vor den Landtagswahlen äußert sich ein Kreml-Vertreter positiv über die AfD",
+          "source": "Frankfurter Rundschau",
+          "url": "https://www.fr.de/politik/vor-den-landtagswahlen-kreml-vertreter-lobt-die-afd-94309127.html",
+          "date": "2026-05-16T07:59:19+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Freude über Höhenflug - Kreml-Gesandter nennt AfD „Hoffnung für Deutsche“",
+          "source": "Kronen Zeitung",
+          "url": "https://www.krone.at/4143257",
+          "date": "2026-05-16T07:38:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Rechnungsprüfer bemängeln Ausgaben von AfD-Kreistagsfraktion",
+          "source": "NDR.de",
+          "url": "https://www.ndr.de/nachrichten/mecklenburg-vorpommern/rechnungspruefer-bemaengeln-ausgaben-von-afd-kreistagsfraktion,afdmv-114.html",
+          "date": "2026-05-16T07:30:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "ÖRR, Migration, Nord Stream: Das AfD-„Regierungsprogramm”",
+          "source": "FOCUS online",
+          "url": "https://www.focus.de/politik/oerr-migration-nord-stream-das-afd-regierungsprogramm_ba53ec70-a6eb-445c-89cf-26f5ea7c02b5.html",
+          "date": "2026-05-16T07:26:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Kto najlepszym radnym Rady Miasta Lublin w kadencji 2024-29? Zagłosuj w naszej sondzie",
+          "source": "Kurier Lubelski",
+          "url": "https://kurierlubelski.pl/kto-najlepszym-radnym-rady-miasta-lublin-w-kadencji-2024-29-zaglosuj-w-naszej-sondzie/ar/c1p2-28976683",
+          "date": "2026-05-16T07:16:55+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Kreml-Vertrauter äußert sich zur AfD vor den Landtagswahlen und spricht von „Hoffnung für die Deutschen“",
+          "source": "Schwäbische Post",
+          "url": "http://www.schwaebische-post.de/welt/politik/putin-vertrauter-lobt-afd-als-hoffnung-fuer-die-deutschen-zr-94309076.html",
+          "date": "2026-05-16T06:52:46+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Putin-Vertrauter preist AfD als \"Hoffnung für die Deutschen\"",
+          "source": "GMX",
+          "url": "https://www.gmx.net/magazine/politik/inland/putin-vertrauter-preist-afd-hoffnung-deutschen-42275164",
+          "date": "2026-05-16T06:25:18+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Putin-Vertrauter bezeichnet AfD als \"Hoffnung für Deutschland\"",
+          "source": "GMX",
+          "url": "https://www.gmx.net/magazine/politik/videos/inland/putin-vertrauter-bezeichnet-afd-hoffnung-deutschland-42275250",
+          "date": "2026-05-16T06:15:06+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Putin-Vertrauter nennt AfD 'Hoffnung für die Deutschen' - boerse.de",
+          "source": "boerse.de",
+          "url": "https://www.boerse.de/nachrichten-amp/Putin-Vertrauter-nennt-AfD-Hoffnung-fuer-die-Deutschen/38331305",
+          "date": "2026-05-16T06:04:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Kremlgesandter lobt Umfrageergebnis Putin-Vertrauter feiert AfD als „Hoffnung für die Deutschen“",
+          "source": "Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/internationales/kremlgesandter-lobt-umfrageergebnis-putin-vertrauter-feiert-afd-als-hoffnung-fur-die-deutschen-15602593.html",
+          "date": "2026-05-16T05:43:29+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Putin-Vertrauter Kirill Dmitrijew nennt AfD «Hoffnung für die Deutschen»",
+          "source": "Watson",
+          "url": "https://www.watson.ch/international/deutschland/986381748-putin-vertrauter-kirill-dmitrijew-nennt-afd-hoffnung-fuer-die-deutschen",
+          "date": "2026-05-16T04:51:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "LEGNANO IMPATTA SUL 2-2 CON LIVORNO",
+          "source": "Lega Nazionale Pallacanestro",
+          "url": "https://www.legapallacanestro.com/legnano-impatta-sul-2-2-con-livorno",
+          "date": "2026-05-16T04:30:30+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Marco Rubio uses rap references to send warnings to Iran as he steps in for Karoline Leavitt at press briefing",
+          "source": "AOL.com",
+          "url": "https://www.aol.com/articles/marco-rubio-uses-rap-references-211104058.html",
+          "date": "2026-05-16T03:47:24+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Isabel Morillo, directora de 'El Correo de Andalucía': \"A Vox le molesta el discurso de Juanma Moreno, que representa el ala más moderada del PP\"",
+          "source": "El Periódico de España",
+          "url": "https://www.epe.es/es/madrid/20260516/isabel-morillo-directora-correo-andalucia-juanma-moreno-andalucia-elecciones-130281095",
+          "date": "2026-05-16T02:50:13+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Wahlkampfhilfe aus dem Kreml: Putin-Vertrauter nennt AfD \"Hoffnung für die Deutschen\"",
+          "source": "Ntv",
+          "url": "https://www.n-tv.de/politik/Putin-Vertrauter-nennt-AfD-Hoffnung-fuer-die-Deutschen-id30826464.html",
+          "date": "2026-05-16T01:15:03+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Bayerns Verfassungsschutz verrät: So treiben Extremisten die AfD vor sich her",
+          "source": "Augsburger Allgemeine",
+          "url": "https://www.augsburger-allgemeine.de/bayern/bayerischer-verfassungsschutz-ueber-afd-identitaere-bewegung-ib-und-rechtsextremismus-114233193",
+          "date": "2026-05-16T01:00:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Moskau: Kremlgesandter erklärt AfD zur „Hoffnung für die Deutschen“",
+          "source": "WELT",
+          "url": "https://www.welt.de/politik/deutschland/article6a07a066639442857fa20c9a/moskau-kremlgesandter-erklaert-afd-zur-hoffnung-fuer-die-deutschen.html",
+          "date": "2026-05-15T22:50:29+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "AfD bei 27 Prozent – und jetzt?",
+          "source": "Neue Gladbecker Zeitung",
+          "url": "https://neue-gladbecker-zeitung.de/afd-bei-27-prozent-und-jetzt/",
+          "date": "2026-05-15T22:31:27+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Kretschmer warnt: Scheitern von Reformen stärkt AfD deutlich",
+          "source": "Hasepost",
+          "url": "https://hasepost.de/kretschmer-warnt-scheitern-von-reformen-staerkt-afd-deutlich-713279/",
+          "date": "2026-05-15T22:19:02+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "AfD a BSW dopomhatej w Sakskej próstwje Zelenych k wjetšinje",
+          "source": "Die Sachsen News",
+          "url": "https://www.diesachsen.de/hsb/politika/afd-a-bsw-dopomhatej-w-sakskej-prostwje-zelenych-k-wjetsinje-3135225",
+          "date": "2026-05-15T21:22:04+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "\"Es wird keinen AfD-Ministerpräsidenten geben\": MP Boris Rhein (CDU) wird deutlich",
+          "source": "Osthessen|News",
+          "url": "https://osthessen-news.de/n11793318/es-wird-keinen-afd-ministerprasidenten-geben-mp-boris-rhein-cdu-wird-deutlich.html",
+          "date": "2026-05-15T19:43:10+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Zwrot w sprawie byłego posła PiS skazanego za korupcję. Sąd ponownie rozpatrzy jego sprawę",
+          "source": "Wiadomości Onet",
+          "url": "https://wiadomosci.onet.pl/kraj/sad-najwyzszy-uchyla-wyrok-bylego-posla-pis-proces-ruszy-od-nowa/zlq9tjr",
+          "date": "2026-05-15T18:50:25+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "„Es hat sich gerächt, dass man die AfD immer verteufelt hat“",
+          "source": "WELT",
+          "url": "https://www.welt.de/videos/video6a074eaf4166b8e84c362ddd/antje-hermenau-es-hat-sich-geraecht-dass-man-die-afd-immer-verteufelt-hat.html",
+          "date": "2026-05-15T18:10:39+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "AfD plant Alleinregierung in Sachsen-Anhalt mit Kadernetzwerk",
+          "source": "Hasepost",
+          "url": "https://hasepost.de/afd-plant-alleinregierung-in-sachsen-anhalt-mit-kadernetzwerk-713263/",
+          "date": "2026-05-15T17:49:02+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Hat ein früherer Schatzmeister der AfD Stuttgart Krankenkassengelder veruntreut?",
+          "source": "SWR",
+          "url": "https://www.swr.de/swraktuell/baden-wuerttemberg/afd-stuttgart-ermittlungen-veruntreuung-krankenkassengelder-100.html",
+          "date": "2026-05-15T17:29:45+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Baden-Württemberg: Hat ein früherer Schatzmeister der AfD Stuttgart Krankenkassengelder veruntreut?",
+          "source": "tagesschau.de",
+          "url": "https://www.tagesschau.de/inland/regional/badenwuerttemberg/swr-hat-ein-frueherer-schatzmeister-der-afd-stuttgart-krankenkassengelder-veruntreut-100.html",
+          "date": "2026-05-15T17:29:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "„Reiche weiße Nazis“: „Sarah Bosetti ist der beste Wahlkampfhelfer, den die AfD sich vorstellen kann“ - Video",
+          "source": "WELT",
+          "url": "https://www.welt.de/videos/video6a07483bd1570d73067a1362/reiche-weisse-nazis-sarah-bosetti-ist-der-beste-wahlkampfhelfer-den-die-afd-sich-vorstellen-kann.html",
+          "date": "2026-05-15T17:07:30+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Outgoing Glasgow City Council leader Susan Aitken brands Reform 'far-right'",
+          "source": "Scottish Daily Express",
+          "url": "https://www.scottishdailyexpress.co.uk/news/politics/outgoing-glasgow-city-council-leader-37162685",
+          "date": "2026-05-15T16:51:00+00:00",
+          "category": "general"
+        },
+        {
+          "title": "Federico González: “No es algo que le haga bien al Gobierno seguir manteniendo a Adorni en ese cargo”",
+          "source": "Perfil",
+          "url": "https://www.perfil.com/noticias/canal-e/federico-gonzalez-no-es-algo-que-le-haga-bien-al-gobierno-seguir-manteniendo-a-adorni-en-ese-cargo.phtml",
+          "date": "2026-05-15T16:38:47+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "SD vill flytta SVT och Sveriges Radio till Kista",
+          "source": "Svenska Epoch Times",
+          "url": "https://www.epochtimes.se/sd-vill-flytta-svt-och-sveriges-radio-till-kista",
+          "date": "2026-05-15T16:21:27+00:00",
+          "category": "sweden"
+        },
+        {
+          "title": "COMUNALI: IN ABRUZZO ARRIVANO I \"BIG\" DEI PARTITI, SALVINI, LOCATELLI, BONACCINI A CHIETI E AVEZZANO",
+          "source": "Abruzzo Web",
+          "url": "https://www.abruzzoweb.it/comunali-in-abruzzo-arrivano-i-big-dei-partiti-salvini-locatelli-bonaccini-a-chieti-e-avezzano/",
+          "date": "2026-05-15T16:00:24+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Con l’estate torna il Beach Soccer: la Lega Nazionale Dilettanti presenta la stagione 2026",
+          "source": "La Gazzetta dello Sport",
+          "url": "https://www.gazzetta.it/Calcio/altri-campionati/15-05-2026/beach-soccer-la-lega-nazionale-dilettanti-presenta-la-stagione-2026.shtml",
+          "date": "2026-05-15T15:44:05+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "AfD-Grünen-Mehrheit: Hilfe, die Demokratie hat abgestimmt!",
+          "source": "WELT",
+          "url": "https://www.welt.de/debatte/plus6a06d4c74166b8e84c36213a/afd-gruenen-mehrheit-hilfe-die-demokratie-hat-abgestimmt.html",
+          "date": "2026-05-15T15:14:13+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Nucleare entro l’estate? Meloni ha pronta la legge, ma non l’energia",
+          "source": "greenMe",
+          "url": "https://www.greenme.it/energia/nucleare-entro-lestate-meloni-ha-pronta-la-legge-ma-non-lenergia/",
+          "date": "2026-05-15T15:08:49+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Großbritannien verweigert AfD-Politiker Bystron und rechten Aktivisten vor Groß-Demo Einreise",
+          "source": "WELT",
+          "url": "https://www.welt.de/politik/ausland/article6a071453639442857fa20559/grossbritannien-verweigert-afd-politiker-bystron-und-rechten-aktivisten-vor-gross-demo-einreise.html",
+          "date": "2026-05-15T14:47:06+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "AfD Düsseldorf lädt zu nächstem „Stadtteilrundgang“ – was Protest-Bündnis plant",
+          "source": "NRZ",
+          "url": "https://www.nrz.de/lokales/duesseldorf/article412003368/afd-duesseldorf-laedt-zu-naechstem-stadtteilrundgang-was-protest-buendnis-plant.html",
+          "date": "2026-05-15T14:45:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "AfD plant offenbar Umbau von bis zu 200 Schlüsselpositionen",
+          "source": "WEB.DE",
+          "url": "https://web.de/magazine/politik/inland/afd-plant-offenbar-umbau-200-schluesselpositionen-42273528",
+          "date": "2026-05-15T14:33:02+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "200 Führungskräfte austauschen: Das sind die düsteren Fantasien der AfD",
+          "source": "Frankfurter Rundschau",
+          "url": "https://www.fr.de/meinung/kommentare/ulrich-siegmund-kuendigt-austausch-von-200-fuehrungskraeften-an-94308440.html",
+          "date": "2026-05-15T14:20:15+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "AfD will hunderte Behördenstellen neubesetzen im Fall einer Regierungsübernahme in Sachsen-Anhalt",
+          "source": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/afd-will-hunderte-behoerdenstellen-neubesetzen-im-fall-einer-regierungsuebernahme-in-sachsen-anhalt-100.html",
+          "date": "2026-05-15T13:55:57+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Bundespolitiker schlagen Alarm: AfD-Pläne bedrohen Sicherheitsarchitektur Deutschlands",
+          "source": "upday News",
+          "url": "https://www.upday.com/de/news/bundespolitiker-schlagen-alarm-afd-plane-bedrohen-sicherheitsarchitektur-deutschlands/crbz9yw",
+          "date": "2026-05-15T13:39:43+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "\"Kampf um Rechtsstaat\": Widerstand gegen AfD-Pläne in Sachsen-Anhalt - T-Online",
+          "source": "",
+          "url": "https://www.t-online.de/nachrichten/deutschland/innenpolitik/id_101256210/sachsen-anhalt-afd-will-bei-wahlerfolg-200-top-beamte-entlassen.html",
+          "date": "2026-05-15T13:35:02+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Sachsen-Anhalt: Der interne Machtplan der AfD",
+          "source": "FAZ",
+          "url": "https://www.faz.net/aktuell/politik/sachsen-anhalt-der-interne-machtplan-der-afd-200836110.html",
+          "date": "2026-05-15T13:31:41+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Vor der Landtagswahl: AfD plant Neubesetzungen in Landesverwaltung",
+          "source": "DIE ZEIT",
+          "url": "https://www.zeit.de/news/2026-05/15/afd-plant-neubesetzungen-in-landesverwaltung",
+          "date": "2026-05-15T13:23:13+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "US-China summit exposes Trump's limits on Iran war, Taiwan",
+          "source": "DW.com",
+          "url": "https://www.dw.com/en/us-china-summit-exposes-trumps-limits-on-iran-war-taiwan/a-77171942",
+          "date": "2026-05-15T13:16:27+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Verdi-Chef fordert AfD-Verbotsverfahren nach Beamten-Äußerung",
+          "source": "Oldenburger Onlinezeitung",
+          "url": "https://www.oldenburger-onlinezeitung.de/nachrichten/verdi-chef-fordert-afd-verbotsverfahren-nach-beamten-aeusserung-205378.html",
+          "date": "2026-05-15T13:00:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "AfD plant Umbau bei den Beamten? Diese Drohung hat auch ihr Gutes",
+          "source": "noz.de",
+          "url": "https://www.noz.de/deutschland-welt/politik/artikel/afd-sachsen-anhalt-will-verwaltung-umbauen-das-ist-ein-weckruf-50643280",
+          "date": "2026-05-15T12:59:00+00:00",
+          "category": "germany"
+        }
+      ],
+      "first_seen": "2026-05-12T15:20:29+00:00",
+      "last_seen": "2026-05-16T14:05:31+00:00"
+    },
+    {
+      "id": "far-right-protests-and-uk-bans",
+      "title": "Far-right protests and UK bans",
+      "blurb": "The UK government has banned 11 far-right figures from entering the country ahead of a major rally led by Tommy Robinson, citing threats to public order. The event has sparked counter-protests and raised tensions over immigration, free speech, and extremism.",
+      "affect": "This commands attention due to fears of violence, societal polarization, and the normalization of far-right extremism in mainstream discourse.",
       "intensity": 5,
       "affect_signals": [
         "outrage-coded language",
+        "moral panic register",
+        "polarized contention",
+        "cross-source repetition",
+        "alarmist framing"
+      ],
+      "categories": [
+        "🌍 General Right-Wing News",
+        "🇬🇧 Reform UK"
+      ],
+      "article_count": 50,
+      "refs": [
+        {
+          "title": "UK: Large scale far-right and pro-Palestine protests in London",
+          "source": "Modern Ghana",
+          "url": "https://www.modernghana.com/videonews/france24/1/650169/",
+          "date": "2026-05-16T13:14:30+00:00",
+          "category": "general"
+        },
+        {
+          "title": "Thousands turn up for far-right rally and counter demonstration in London",
+          "source": "The Straits Times",
+          "url": "https://www.straitstimes.com/world/europe/thousands-turn-up-for-far-right-rally-and-counter-demonstration-in-london",
+          "date": "2026-05-16T13:11:00+00:00",
+          "category": "general"
+        },
+        {
+          "title": "Thousands march in London for far-right, pro-Palestine protests",
+          "source": "France 24",
+          "url": "https://www.france24.com/en/europe/20260516-thousands-march-in-london-for-far-right-pro-palestine-protests",
+          "date": "2026-05-16T12:46:18+00:00",
+          "category": "general"
+        },
+        {
+          "title": "Trade unionists protest the far right",
+          "source": "Workers' Liberty",
+          "url": "https://www.workersliberty.org/story/2026-05-16/trade-unionists-protest-far-right?language_content_entity=en",
+          "date": "2026-05-16T12:44:01+00:00",
+          "category": "general"
+        },
+        {
+          "title": "Pro-Palestine protesters turn anger on ‘far-Right’",
+          "source": "The Telegraph",
+          "url": "https://www.telegraph.co.uk/news/2026/05/16/pro-palestine-protest-far-right-tommy-robinson-nakba-racism/",
+          "date": "2026-05-16T12:28:00+00:00",
+          "category": "general"
+        },
+        {
+          "title": "London police prepare for a busy day with two big rallies planned and a soccer final",
+          "source": "Seattlepi.com",
+          "url": "https://www.seattlepi.com/news/world/london-police-prepare-for-a-busy-day-with-two-big-a22262221",
+          "date": "2026-05-16T12:25:45+00:00",
+          "category": "general"
+        },
+        {
+          "title": "Magyar Péter reagált arra, hogy Orbán Viktor felajánlja a végkielégítését egy kárpátaljai gyermekotthonnak",
+          "source": "Blikk",
+          "url": "https://www.blikk.hu/politika/magyar-politika/magyar-peter-orban-viktor-felajanlas-reakcio-vegkielegites/bxyz3r4",
+          "date": "2026-05-16T12:16:39+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Thousands gather in London for simultaneous far-right, pro-Palestinian marches",
+          "source": "Haaretz",
+          "url": "https://www.haaretz.com/world-news/europe/2026-05-16/ty-article/thousands-gather-in-london-for-simultaneous-far-right-pro-palestinian-marches/0000019e-30a5-d0d2-a59e-b5e72b7f0000",
+          "date": "2026-05-16T12:08:00+00:00",
+          "category": "general"
+        },
+        {
+          "title": "Thousands to march in parallel Nakba Day and far-right rallies in central London",
+          "source": "Middle East Eye",
+          "url": "https://www.middleeasteye.net/news/thousands-march-parallel-nakba-day-and-far-right-rallies-central-london",
+          "date": "2026-05-16T11:46:03+00:00",
+          "category": "general"
+        },
+        {
+          "title": "Magyar Péter Havasi Bertalannak: állunk a pereskedés elé",
+          "source": "Infostart",
+          "url": "https://infostart.hu/belfold/2026/05/16/magyar-peter-havasi-bertalannak-allunk-a-pereskedes-ele",
+          "date": "2026-05-16T11:30:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Starmer government bans 11 ‘far-right agitators’ from entering UK ahead of Tommy Robinson rally",
+          "source": "The Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/uk/starmer-government-bans-11-far-right-agitators-from-entering-uk-ahead-of-tommy-robinson-rally/articleshow/131135746.cms",
+          "date": "2026-05-16T10:59:00+00:00",
+          "category": "general"
+        },
+        {
+          "title": "Pro-Palestinian march in London: Route changed during far-right rally Trafalgar square",
+          "source": "Modern Ghana",
+          "url": "https://www.modernghana.com/videonews/aljazeera/2/650081/",
+          "date": "2026-05-16T10:14:46+00:00",
+          "category": "general"
+        },
+        {
+          "title": "Rival pro-Palestine, far-right protests in London as 4,000 police deployed",
+          "source": "South China Morning Post",
+          "url": "https://www.scmp.com/news/world/europe/article/3353815/rival-pro-palestine-far-right-protests-london-4000-police-deployed",
+          "date": "2026-05-16T09:50:34+00:00",
+          "category": "general"
+        },
+        {
+          "title": "President Trump is making over this nation and its capital in his image [column]",
+          "source": "LancasterOnline",
+          "url": "https://lancasteronline.com/opinion/columnists/president-trump-is-making-over-this-nation-and-its-capital-in-his-image-column/article_03fb29ff-9354-4135-b696-07b55a2ecd51.html",
+          "date": "2026-05-16T09:00:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Crozza/Meloni: \"I miei ministri? Siamo peggio del Trono di Spade, se odiano tutti\"",
+          "source": "Il Sole 24 ORE",
+          "url": "https://stream24.ilsole24ore.com/video/cultura/crozzameloni-i-miei-ministri-siamo-peggio-trono-spade-se-odiano-tutti/AI7IDw6C",
+          "date": "2026-05-16T07:55:05+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "A new PM won't save us from the far-right",
+          "source": "openDemocracy",
+          "url": "https://www.opendemocracy.net/weekly-email-160526/",
+          "date": "2026-05-16T07:46:36+00:00",
+          "category": "general"
+        },
+        {
+          "title": "Tens of thousands set to rally in London for concurrent far-right, anti-Israel protests",
+          "source": "The Times of Israel",
+          "url": "https://www.timesofisrael.com/tens-of-thousands-set-to-rally-in-london-for-concurrent-far-right-anti-israel-protests/",
+          "date": "2026-05-16T07:09:26+00:00",
+          "category": "general"
+        },
+        {
+          "title": "Sondaggi politici, Meloni teme il campo largo ma l’alleanza progressista resta fragile",
+          "source": "QuiFinanza",
+          "url": "https://quifinanza.it/politica/sondaggi-politici-16-maggio-2026/993997/",
+          "date": "2026-05-16T07:03:24+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "London rally: Police brace for massive far-right protest",
+          "source": "The Straits Times",
+          "url": "https://www.straitstimes.com/world/europe/london-police-brace-themselves-for-big-far-right-rally-counter-demo",
+          "date": "2026-05-16T06:50:18+00:00",
+          "category": "general"
+        },
+        {
+          "title": "London police brace for big far-right rally, counter pro-Palestinian protest",
+          "source": "Khaleej Times",
+          "url": "https://www.khaleejtimes.com/world/europe/london-police-brace-for-big-far-right-rally-counter-pro-palestinian-protest",
+          "date": "2026-05-16T06:09:23+00:00",
+          "category": "general"
+        },
+        {
+          "title": "London police brace for big far-right rally, counter-demo",
+          "source": "Arab News PK",
+          "url": "https://www.arabnews.pk/node/2643764/world",
+          "date": "2026-05-16T05:47:11+00:00",
+          "category": "general"
+        },
+        {
+          "title": "INSÄNDARE: Historielöst av SD om migrationen",
+          "source": "Borås Tidning",
+          "url": "https://www.bt.se/insandare/historielost-av-sd-om-migrationen/",
+          "date": "2026-05-16T03:56:00+00:00",
+          "category": "sweden"
+        },
+        {
+          "title": "1 in 3 Reform UK voters has a positive view of Tommy Robinson",
+          "source": "politico.eu",
+          "url": "https://www.politico.eu/article/one-in-three-reform-uk-voters-positive-view-far-right-tommy-robinson/",
+          "date": "2026-05-16T02:02:12+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Event gegen Rechts in Solingen, Nordrhein-Westfalen » Tag des Grundgestzes: AfD Verbot Jetzt",
+          "source": "DemokraTEAM",
+          "url": "https://www.demokrateam.org/aktionen/tag-des-grundgestzes-afd-verbot-jetzt/",
+          "date": "2026-05-16T00:15:12+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "‘Far-right agitators’ banned from entering UK before rally",
+          "source": "The Times",
+          "url": "https://www.thetimes.com/uk/politics/article/far-right-agitators-banned-uk-tommy-robinson-rally-thgpxc9lr",
+          "date": "2026-05-15T20:45:35+00:00",
+          "category": "general"
+        },
+        {
+          "title": "\"Es wird keinen AfD-Ministerpräsidenten geben\": MP Boris Rhein wird deutlich",
+          "source": "Osthessen|News",
+          "url": "https://osthessen-news.de/n11793318/es-wird-keinen-afd-ministerprasidenten-geben-mp-boris-rhein-wird-deutlich.html",
+          "date": "2026-05-15T19:43:10+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Violence at Jerusalem's Flag March Declined, but the Message Was Still Sharp",
+          "source": "Haaretz",
+          "url": "https://www.haaretz.com/israel-news/israel-politics/2026-05-15/ty-article/.premium/violence-at-jerusalems-flag-march-declined-but-the-message-was-still-sharp/0000019e-2bd0-d61c-a5de-6bdaa7970000",
+          "date": "2026-05-15T18:55:00+00:00",
+          "category": "general"
+        },
+        {
+          "title": "Reform selects Nick Allan as Gateshead council leader",
+          "source": "BBC",
+          "url": "https://www.bbc.com/news/articles/c93600275kqo",
+          "date": "2026-05-15T18:43:24+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "The Government Bans ‘Far-Right Agitators’ from Entering the UK",
+          "source": "Free Speech Union",
+          "url": "https://freespeechunion.org/news/the-government-bans-far-right-agitators-from-entering-the-uk",
+          "date": "2026-05-15T18:29:44+00:00",
+          "category": "general"
+        },
+        {
+          "title": "AfD plant Alleinregierung in Sachsen-Anhalt mit Kadernetzwerk",
+          "source": "Hasepost",
+          "url": "https://hasepost.de/afd-plant-alleinregierung-in-sachsen-anhalt-mit-kadernetzwerk-713263/",
+          "date": "2026-05-15T17:49:02+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Met police preparing for large scale far-right and pro-Palestine protests in London",
+          "source": "The Guardian",
+          "url": "https://www.theguardian.com/uk-news/2026/may/15/met-police-preparing-far-right-pro-palestine-protests-london",
+          "date": "2026-05-15T17:10:00+00:00",
+          "category": "general"
+        },
+        {
+          "title": "Charity turns Tommy Robinson far-right march into ‘sponsored walk for refugees’",
+          "source": "The London Economic",
+          "url": "https://www.thelondoneconomic.com/news/tommy-robinson-far-right-march-refugee-fundraiser-choose-love-406245/",
+          "date": "2026-05-15T16:58:37+00:00",
+          "category": "general"
+        },
+        {
+          "title": "Nakba march to be held in London amid far-right 'UTK' rally",
+          "source": "The New Arab",
+          "url": "https://www.newarab.com/news/nakba-march-be-held-london-amid-far-right-utk-rally",
+          "date": "2026-05-15T16:46:20+00:00",
+          "category": "general"
+        },
+        {
+          "title": "London braces for weekend of protest as far-right calls for ‘show of force’",
+          "source": "Financial Times",
+          "url": "https://www.ft.com/content/a2b18731-2720-496f-baa5-45edec972537",
+          "date": "2026-05-15T16:44:22+00:00",
+          "category": "general"
+        },
+        {
+          "title": "London braces for weekend of protest as far right calls for ‘show of force’",
+          "source": "Financial Times",
+          "url": "https://www.ft.com/content/a2b18731-2720-496f-baa5-45edec972537?syn-25a6b1a6=1",
+          "date": "2026-05-15T16:44:22+00:00",
+          "category": "general"
+        },
+        {
+          "title": "How has Reform UK gone so mainstream so fast?",
+          "source": "openDemocracy",
+          "url": "https://www.opendemocracy.net/daniel-trilling-nigel-farage-how-has-reform-uk-gone-so-mainstream-so-fast/",
+          "date": "2026-05-15T16:36:43+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "UK Blocks Far-Right Extremists as Protests Loom",
+          "source": "Devdiscourse",
+          "url": "https://www.devdiscourse.com/article/law-order/3910202-uk-blocks-far-right-extremists-as-protests-loom",
+          "date": "2026-05-15T16:26:42+00:00",
+          "category": "general"
+        },
+        {
+          "title": "Magyar Péter: erre a hétvégére beteltek a helyek a kormányzati épületek látogatására",
+          "source": "Tények",
+          "url": "https://tenyek.hu/politika/2026/05/magyar-peter-erre-a-hetvegere-beteltek-a-helyek-a-kormanyzati-epuletek-latogatasara",
+          "date": "2026-05-15T16:04:43+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Suspended candidate among four Reform UK losses in South Gloucestershire by-elections",
+          "source": "Bristol Live",
+          "url": "https://www.bristolpost.co.uk/news/bristol-news/suspended-candidate-among-four-reform-10968536",
+          "date": "2026-05-15T15:35:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "As 2027 French presidential election looms, there's only one certainty: The extreme right",
+          "source": "Courthouse News",
+          "url": "https://www.courthousenews.com/as-2027-french-presidential-election-looms-theres-only-one-certainty-the-extreme-right/",
+          "date": "2026-05-15T14:42:12+00:00",
+          "category": "france"
+        },
+        {
+          "title": "11 people barred from coming to UK for far-right rally, says government",
+          "source": "Anadolu Ajansı",
+          "url": "https://www.aa.com.tr/en/world/11-people-barred-from-coming-to-uk-for-far-right-rally-says-government/3938774",
+          "date": "2026-05-15T14:29:20+00:00",
+          "category": "general"
+        },
+        {
+          "title": "Far-right activists barred from UK ahead of Tommy Robinson rally",
+          "source": "The Guardian",
+          "url": "https://www.theguardian.com/uk-news/2026/may/15/far-right-activists-barred-uk-tommy-robinson-rally",
+          "date": "2026-05-15T14:15:00+00:00",
+          "category": "general"
+        },
+        {
+          "title": "Starmer blocks 11 ‘far-Right extremists’ from UK ahead of weekend protests insisting 'thug' organisers are 'peddling hatred and division'",
+          "source": "lbc.co.uk",
+          "url": "https://www.lbc.co.uk/article/starmer-blocks-11-far-right-extremists-uk-ahead-weekend-protests-5HjdZF9_2/",
+          "date": "2026-05-15T13:54:50+00:00",
+          "category": "general"
+        },
+        {
+          "title": "Starmer blocks 11 ‘far-Right agitators’ from UK ahead of protests",
+          "source": "The Telegraph",
+          "url": "https://www.telegraph.co.uk/news/2026/05/15/starmer-blocks-11-far-right-agitators-uk-protests-london/",
+          "date": "2026-05-15T12:58:00+00:00",
+          "category": "general"
+        },
+        {
+          "title": "Tommy Robinson, Nigel Farage, and a Riot Over a Crime That Never Happened",
+          "source": "Novara Media",
+          "url": "https://novaramedia.com/2026/05/15/tommy-robinson-nigel-farage-and-a-riot-over-a-crime-that-never-happened/",
+          "date": "2026-05-15T12:43:09+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Labour collapses, the far right grows",
+          "source": "International Viewpoint Online magazine",
+          "url": "https://internationalviewpoint.org/Labour-collapses-the-far-right-grows",
+          "date": "2026-05-15T12:13:25+00:00",
+          "category": "general"
+        }
+      ],
+      "first_seen": "2026-05-16T04:09:15+00:00",
+      "last_seen": "2026-05-16T14:05:31+00:00"
+    },
+    {
+      "id": "manuel-adorni-corruption-scandal-deepens",
+      "title": "Manuel Adorni corruption scandal deepens",
+      "blurb": "Argentina's Chief of Staff Manuel Adorni faces escalating corruption allegations, including unexplained wealth, luxury property purchases, and cash payments to contractors. The scandal has sparked congressional investigations and raised questions about President Milei's judgment.",
+      "affect": "This commands attention due to its potential to destabilize Argentina's government, undermine economic reforms, and damage Milei's anti-corruption image.",
+      "intensity": 5,
+      "affect_signals": [
+        "outrage-coded language",
+        "moral panic register",
         "cross-source repetition",
         "leadership crisis tone",
-        "moral panic register",
         "polarized contention"
       ],
       "categories": [
@@ -23,10 +796,101 @@
       "article_count": 50,
       "refs": [
         {
-          "title": "Exclusivo, el contenido del audio \"bombita\" de Manuel Adorni al contratista Tabar",
-          "source": "a24.com",
-          "url": "https://www.a24.com/politica/exclusivo-el-contenido-del-audio-bombita-manuel-adorni-al-contratista-tabar-n1556458",
-          "date": "2026-05-16T01:38:00+00:00",
+          "title": "Triple asedio sobre Manuel Adorni: entre el avance judicial, la presión del Congreso y las dudas de Washington",
+          "source": "La Gaceta",
+          "url": "https://www.lagaceta.com.ar/nota/1137021/politica/triple-asedio-sobre-manuel-adorni-entre-avance-judicial-presion-congreso-dudas-washington.html",
+          "date": "2026-05-16T12:56:41+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "El Gobierno admite desgaste en su estrategia de comunicación tras la polémica con Manuel Adorni y analiza cambios",
+          "source": "Diario Río Negro",
+          "url": "https://www.rionegro.com.ar/politica/el-gobierno-admite-desgaste-en-su-estrategia-de-comunicacion-tras-la-polemica-con-manuel-adorni-y-analiza-cambios-4576509/",
+          "date": "2026-05-16T12:19:59+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Por pedido de la Justicia, un organismo especializado revisará los números de Manuel Adorni",
+          "source": "Perfil",
+          "url": "https://www.perfil.com/noticias/judiciales/por-pedido-de-la-justicia-un-organismo-especializado-revisara-los-numeros-de-manuel-adorni.phtml",
+          "date": "2026-05-16T10:00:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Kegyelmi ügy: Magyar Péter fontos házi feladatot adott Sulyok Tamásnak",
+          "source": "Kontroll",
+          "url": "https://kontroll.hu/cikk/belfold/2026/05/16/kegyelmi-uegy-magyar-peter-fontos-hazi-feladatot-adott-sulyok-tamasnak",
+          "date": "2026-05-16T09:36:17+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Qué le pidieron a Santiago Caputo en EEUU, el informe que complica a Adorni y el dato que preocupa a Milei",
+          "source": "TN",
+          "url": "https://tn.com.ar/politica/2026/05/16/que-le-pidieron-a-santiago-caputo-en-eeuu-el-informe-que-complica-a-adorni-y-el-dato-que-preocupa-a-milei/",
+          "date": "2026-05-16T08:24:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "En el Gobierno niegan que EEUU haya transmitido preocupación por las causas que involucran a Manuel Adorni",
+          "source": "Infobae",
+          "url": "https://www.infobae.com/politica/2026/05/16/en-el-gobierno-niegan-que-eeuu-haya-transmitido-preocupacion-por-las-causas-que-involucran-a-manuel-adorni/",
+          "date": "2026-05-16T07:01:27+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "El Gobierno admite desgaste en su esquema de comunicación y evalúa alternativas para recuperar la iniciativa",
+          "source": "Infobae",
+          "url": "https://www.infobae.com/politica/2026/05/16/el-gobierno-admite-desgaste-en-su-esquema-de-comunicacion-y-evalua-alternativas-para-recuperar-la-iniciativa/",
+          "date": "2026-05-16T07:01:25+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "La semana clave que enfrentará Manuel Adorni y el intento del Gobierno para recuperar la agenda pública",
+          "source": "Infobae",
+          "url": "https://www.infobae.com/politica/2026/05/16/la-semana-clave-que-enfrentara-manuel-adorni-y-el-intento-del-gobierno-para-recuperar-la-agenda-publica/",
+          "date": "2026-05-16T06:54:48+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Los clientes amigos del poder de MasBe, la consultora de coaching de Bettina Angeletti",
+          "source": "Perfil",
+          "url": "https://www.perfil.com/noticias/politica/los-clientes-amigos-del-poder-de-masbe-la-consultora-de-coaching-de-bettina-angeletti.phtml",
+          "date": "2026-05-16T05:54:43+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Debate. Manuel Adorni tiene presunción de culpabilidad",
+          "source": "La Voz del Interior",
+          "url": "https://www.lavoz.com.ar/opinion/manuel-adorni-presuncion-culpabilidad_0_d4pCVQDdSo.html",
+          "date": "2026-05-16T03:02:33+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "El contratista de Manuel Adorni aportó nuevas pruebas en la Justicia tras admitir los pagos en negro",
+          "source": "La 100",
+          "url": "https://la100.cienradios.com/politica/el-contratista-de-manuel-adorni-aporto-nuevas-pruebas-en-la-justicia-tras-admitir-los-pagos-en-negro/",
+          "date": "2026-05-16T03:00:37+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "A pedido de la fiscalía, un órgano especializado de la Justicia acelera la revisión de los números de Manuel Adorni",
+          "source": "Identidad Correntina",
+          "url": "https://www.identidadcorrentina.com.ar/noticia/32008_a-pedido-de-la-fiscala-un-rgano-especializado-de-la-justicia-acelera-la-revisin-de-los-nmeros-de-manuel-adorni.htm",
+          "date": "2026-05-16T01:12:16+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Patricia Bullrich no se inmolará por Manuel Adorni: «Si tienen que matarlo, mátenlo»",
+          "source": "Urgente24",
+          "url": "https://urgente24.com/actualidad/patricia-bullrich-no-se-inmolara-manuel-adorni-si-tienen-que-matarlo-matenlo-n624821",
+          "date": "2026-05-16T01:11:55+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "La ironía de Axel Kicillof sobre Manuel Adorni: \"Dicen que Milei no cuida el empleo...\"",
+          "source": "MinutoUno",
+          "url": "https://www.minutouno.com/politica/la-ironia-axel-kicillof-manuel-adorni-dicen-que-milei-no-cuida-el-empleo-n6278264",
+          "date": "2026-05-16T00:15:00+00:00",
           "category": "argentina"
         },
         {
@@ -51,244 +915,822 @@
           "category": "argentina"
         },
         {
+          "title": "El contratista de Adorni presentó en la Justicia nuevas facturas y chats sobre la obra en la casa de Indio Cuá",
+          "source": "Infobae",
+          "url": "https://www.infobae.com/judiciales/2026/05/15/el-contratista-de-adorni-presento-en-la-justicia-nuevas-facturas-y-chats-sobre-la-obra-en-la-casa-de-indio-cua/",
+          "date": "2026-05-15T23:05:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "El fuerte respaldo de Federico Sturzenegger a Manuel Adorni: “Creo en su honestidad”",
+          "source": "Radio Mitre",
+          "url": "https://radiomitre.cienradios.com/videos/el-fuerte-respaldo-de-federico-sturzenegger-a-manuel-adorni-creo-en-su-honestidad/",
+          "date": "2026-05-15T22:33:14+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "El contratista de Manuel Adorni se presentó espontáneamente en Comodoro Py y entregó más pruebas",
+          "source": "MDZ Online",
+          "url": "https://www.mdzol.com/politica/el-contratista-manuel-adorni-se-presento-espontaneamente-comodoro-py-y-entrego-mas-pruebas-n1521487",
+          "date": "2026-05-15T22:07:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "El dilema de Manuel Adorni: se muestre o se guarde, el Gobierno pierde igual",
+          "source": "Letra P",
+          "url": "https://www.letrap.com.ar/politica/el-dilema-manuel-adorni-se-muestre-o-se-guarde-el-gobierno-pierde-igual-n5423849",
+          "date": "2026-05-15T20:56:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Sturzenegger respaldó a Adorni y celebró la baja de la inflación: “Se resolvió un problema estructural”",
+          "source": "Perfil",
+          "url": "https://www.perfil.com/noticias/politica/sturzenegger-respaldo-a-adorni-y-celebro-la-baja-de-la-inflacion-se-resolvio-un-problema-estructural.phtml",
+          "date": "2026-05-15T20:37:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Federico Sturzenegger apoyó a Manuel Adorni: «Es un gran jefe de Gabinete»",
+          "source": "El Intransigente",
+          "url": "https://elintransigente.com/2026/05/federico-sturzenegger-apoyo-a-manuel-adorni-es-un-gran-jefe-de-gabinete/",
+          "date": "2026-05-15T20:01:09+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Marcela Pagano denunció a Javier Milei por presunto \"encubrimiento\" de dos delitos",
+          "source": "BAE Negocios",
+          "url": "https://www.baenegocios.com/politica/marcela-pagano-denuncio-a-javier-milei-por-presunto-encubrimiento-de-dos-delitos/",
+          "date": "2026-05-15T19:19:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Wyden, Merkley, Colleagues Raise Concerns about Trump Administration’s USDA Reorganization",
+          "source": "Merkley (.gov)",
+          "url": "https://www.merkley.senate.gov/wyden-merkley-colleagues-raise-concerns-about-trump-administrations-usda-reorganization/",
+          "date": "2026-05-15T19:07:30+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Reunión entre Javier Milei y Manuel Adorni para impulsar la agenda de la próxima semana",
+          "source": "Cba24n",
+          "url": "https://www.cba24n.com.ar/argentina/reunion-entre-javier-milei-y-manuel-adorni-para-impulsar-la-agenda-de-la-proxima-semana_a6a076832e3986a8573882c01",
+          "date": "2026-05-15T18:43:47+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "La Justicia detectó nuevos pagos en efectivo de Manuel Adorni en un hotel de lujo de Entre Ríos",
+          "source": "radio10.com.ar",
+          "url": "https://www.radio10.com.ar/manuel-adorni/la-justicia-detecto-nuevos-pagos-efectivo-manuel-adorni-un-hotel-lujo-rios-n6278136",
+          "date": "2026-05-15T18:25:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Denunciaron penalmente a Javier Milei por presunto encubrimiento de delitos",
+          "source": "La Capital",
+          "url": "https://www.lacapital.com.ar/politica/denunciaron-penalmente-javier-milei-presunto-encubrimiento-delitos-n10259571.html",
+          "date": "2026-05-15T18:15:57+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Donald Trump Called Out After New Financial Disclosure: ‘He Is the Swamp’",
+          "source": "Yahoo",
+          "url": "https://www.yahoo.com/news/articles/donald-trump-called-financial-disclosure-180004594.html",
+          "date": "2026-05-15T18:00:04+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Javier Milei celebra la inflación, pero la calle muestra otra realidad",
+          "source": "Urgente24",
+          "url": "https://urgente24.com/dinero/javier-milei-celebra-la-inflacion-pero-la-calle-muestra-otra-realidad-n624796",
+          "date": "2026-05-15T17:40:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Marcela Pagano denunció penalmente a Javier Milei por encubrimiento",
+          "source": "Crónica",
+          "url": "https://www.cronica.com.ar/politica/marcela-pagano-denuncio-penalmente-a-javier-milei-por-encubrimiento/",
+          "date": "2026-05-15T17:26:40+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "La Justicia le puso un freno al ajuste de La Libertad Avanza y exigió salvar el Banco Genético",
+          "source": "Medios Rioja",
+          "url": "https://mediosrioja.com.ar/la-justicia-le-puso-un-freno-al-ajuste-de-la-libertad-avanza-y-exigio-salvar-el-banco-genetico/",
+          "date": "2026-05-15T17:06:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Federico González: “No es algo que le haga bien al Gobierno seguir manteniendo a Adorni en ese cargo”",
+          "source": "Perfil",
+          "url": "https://www.perfil.com/noticias/canal-e/federico-gonzalez-no-es-algo-que-le-haga-bien-al-gobierno-seguir-manteniendo-a-adorni-en-ese-cargo.phtml",
+          "date": "2026-05-15T16:38:47+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Una diputada denunció a Javier Milei por presunto encubrimiento de delitos",
+          "source": "Tiempo Judicial",
+          "url": "https://tiempojudicial.com/2026/05/15/una-diputada-denuncio-a-javier-milei-por-presunto-encubrimiento-de-delitos/",
+          "date": "2026-05-15T16:24:17+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Corniglia confirmó la habilitación del hospital local y cruzó con dureza a La Libertad Avanza: \"Se hace politiquería sucia con la salud\"",
+          "source": "Bragado Informa",
+          "url": "https://www.bragadoinforma.com.ar/nota/30236/corniglia-confirmo-la-habilitacion-del-hospital-local-y-cruzo-con-dureza-a-la-libertad-avanza-quot-se-hace-politiqueria-sucia-con-la-salud-quot-.html",
+          "date": "2026-05-15T15:40:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Marcela Pagano denunció a Javier Milei por encubrimiento de delitos",
+          "source": "Mendovoz",
+          "url": "https://www.mendovoz.com/actualidad/nacionales/2026/5/15/marcela-pagano-denuncio-javier-milei-por-encubrimiento-de-delitos-170965.html",
+          "date": "2026-05-15T14:46:37+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "El Financial Times insiste con que Javier Milei se desmorona",
+          "source": "Crónica",
+          "url": "https://www.cronica.com.ar/politica/el-financial-times-insiste-con-que-milei-se-desmorona-3233/",
+          "date": "2026-05-15T14:36:06+00:00",
+          "category": "argentina"
+        },
+        {
           "title": "La Justicia detectó otros dos viajes de Manuel Adorni a un resort de lujo en Entre Ríos",
           "source": "MinutoUno",
           "url": "https://www.minutouno.com/politica/la-justicia-detecto-otros-dos-viajes-manuel-adorni-un-resort-lujo-rios-n6277968",
           "date": "2026-05-15T14:10:00+00:00",
           "category": "argentina"
+        },
+        {
+          "title": "Milei recibe a Manuel Adorni en la Quinta de Olivos mientras avanza la investigación por enriquecimiento ilícito",
+          "source": "Data Diario",
+          "url": "https://www.datadiario.com/politica/javier-milei-recibio-a-manuel-adorni-en-la-quinta-de-olivos-mientras-avanzan-las-investigaciones-judiciales-por-enriquecimiento-ilicito-en-su-contra-contra-202651510560",
+          "date": "2026-05-15T14:08:56+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Marcela Pagano denunció penalmente a Javier Milei por supuesto “encubrimiento” de delitos",
+          "source": "Agencia Noticias Argentinas",
+          "url": "https://noticiasargentinas.com/politica/marcela-pagano-denuncio-penalmente-a-javier-milei-por-supuestos--encubrimientos--de-delitos_a6a0721cad35c7ef05149da8e",
+          "date": "2026-05-15T13:43:08+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Manuel Adorni quiso celebrar el índice de inflación y la gente le pregunta por sus finanzas personales",
+          "source": "Diario Registrado",
+          "url": "https://www.diarioregistrado.com/politica/manuel-adorni-quiso-celebrar-el-indice-de-inflacion-y-la-gente-le-pregunta-por-sus-finanzas-personales_a6a071d9d5c28641161bedc61",
+          "date": "2026-05-15T13:32:44+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei recibe a Manuel Adorni en la Quinta de Olivos en medio de la investigación judicial",
+          "source": "a24.com",
+          "url": "https://www.a24.com/politica/javier-milei-recibe-manuel-adorni-la-quinta-olivos-medio-la-investigacion-judicial-n1556159",
+          "date": "2026-05-15T13:04:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Manuel Adorni se reúne con Javier Milei en Olivos",
+          "source": "Perfil",
+          "url": "https://www.perfil.com/noticias/politica/manuel-adorni-se-reune-con-javier-milei-en-olivos.phtml",
+          "date": "2026-05-15T12:52:54+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei se reúne con Manuel Adorni en Olivos tras las nuevas revelaciones judiciales",
+          "source": "MDZ Online",
+          "url": "https://www.mdzol.com/politica/javier-milei-se-reune-manuel-adorni-olivos-las-nuevas-revelaciones-judiciales-n1521033",
+          "date": "2026-05-15T12:30:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Crece la preocupación de Estados Unidos por la caída de la imagen de Javier Milei tras el caso Adorni",
+          "source": "MDZ Online",
+          "url": "https://www.mdzol.com/politica/crece-la-preocupacion-estados-unidos-la-caida-la-imagen-javier-milei-el-caso-adorni-n1520806",
+          "date": "2026-05-15T12:23:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei recibe en Olivos a Manuel Adorni",
+          "source": "Ambito",
+          "url": "https://www.ambito.com/politica/javier-milei-recibe-olivos-manuel-adorni-n6277899",
+          "date": "2026-05-15T12:01:00+00:00",
+          "category": "argentina"
         }
       ],
       "first_seen": "2026-05-16T04:09:15+00:00",
-      "last_seen": "2026-05-16T04:09:15+00:00"
+      "last_seen": "2026-05-16T14:05:31+00:00"
     },
     {
       "id": "javier-mileis-coup-allegations-and-inflation-battle",
       "title": "Javier Milei’s coup allegations and inflation battle",
-      "blurb": "President Milei continues to allege a coup attempt by political opponents, media, and business sectors while celebrating a drop in inflation. Multiple articles cover his accusations, economic policies, and declining approval ratings.",
-      "affect": "The coup rhetoric and economic struggles create a charged narrative of existential stakes for Milei's presidency, fueling intense affective investment.",
-      "intensity": 5,
+      "blurb": "Argentinian President Javier Milei has accused political opponents of plotting a coup, while his government struggles with economic instability, soaring inflation, and mass protests over austerity measures. The crisis has raised questions about his leadership and policy direction.",
+      "affect": "This commands attention due to fears of political instability, economic collapse, and the erosion of democratic institutions in Argentina.",
+      "intensity": 4,
       "affect_signals": [
         "alarmist framing",
         "polarized contention",
-        "moral charge",
-        "cross-source repetition",
-        "outrage-coded language"
+        "outrage-coded language",
+        "leadership crisis tone",
+        "cross-source repetition"
       ],
       "categories": [
         "🇦🇷 La Libertad Avanza"
       ],
-      "article_count": 45,
+      "article_count": 40,
       "refs": [
         {
-          "title": "Presentaron una denuncia penal contra Javier Milei por encubrimiento e incumplimiento de deberes públicos",
-          "source": "Border Periodismo",
-          "url": "https://www.borderperiodismo.com/actualidad/presentaron-una-denuncia-penal-contra-javier-milei-por-encubrimiento-e-incumplimiento-de-deberes-publicos/",
-          "date": "2026-05-16T00:30:59+00:00",
+          "title": "Javier Milei y sus medidas de Gobierno EN VIVO: últimas noticias del 16 de mayo, minuto a minuto",
+          "source": "El Destape",
+          "url": "https://www.eldestapeweb.com/politica/gobierno-argentino-envia-alimentos-bolivia-crisis-202651695714",
+          "date": "2026-05-16T12:57:32+00:00",
           "category": "argentina"
         },
         {
-          "title": "Marcela Pagano denunció penalmente al presidente Javier Milei por presunto encubrimiento y omisión de denuncia",
-          "source": "Radio LV11",
-          "url": "https://www.radiolv11.com.ar/noticia/marcela-pagano-denuncio-penalmente-al-presidente-javier-milei-por-presunto-encubrimiento-y-omision-de-denuncia",
-          "date": "2026-05-15T22:27:00+00:00",
+          "title": "Prezydent rozmawiał z rządem nt. obecności amerykańskich wojsk w Polsce. Pałac mówi o 'zawirowaniach'",
+          "source": "Wyborcza.pl",
+          "url": "https://wyborcza.pl/7,75398,32794217,prezydent-rozmawial-z-rzadem-nt-obecnosci-amerykanskich-wojsk.html",
+          "date": "2026-05-16T11:57:43+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Itthon: Magyar Péter rábólintott Orbán Viktor feljánlására, majd Varga Zs. Andrásnak üzent",
+          "source": "| hvg.hu",
+          "url": "https://hvg.hu/itthon/20260516_magyar-peter-orban-viktor-vegkielegites-kuria-beruhazas",
+          "date": "2026-05-16T11:01:55+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Karina Milei sin votos para eliminar las PASO negocia con aliados un sistema alternativo",
+          "source": "CHACODIAPORDIA.COM",
+          "url": "https://chacodiapordia.com/karina-milei-sin-votos-para-eliminar-las-paso-negocia-con-aliados-un-sistema-alternativo/",
+          "date": "2026-05-16T10:42:54+00:00",
           "category": "argentina"
         },
         {
-          "title": "¿Comenzó la degradación política de Javier Milei?",
+          "title": "Crecen los desencantados de Javier Milei y lo que antes estaba bien ahora pasa a estar mal",
           "source": "MDZ Online",
-          "url": "https://www.mdzol.com/politica/comenzo-la-degradacion-politica-javier-milei-n1521428",
-          "date": "2026-05-15T21:28:00+00:00",
+          "url": "https://www.mdzol.com/politica/crecen-los-desencantados-javier-milei-y-lo-que-antes-estaba-bien-ahora-pasa-estar-mal-n1521483/amp",
+          "date": "2026-05-16T10:30:00+00:00",
           "category": "argentina"
         },
         {
-          "title": "Tras conocerse los datos de la inflación, Milei habló de Economía y de un \"intento de golpe de Estado\"",
-          "source": "LM Neuquén",
-          "url": "https://www.lmneuquen.com/pais/tras-conocerse-los-datos-la-inflacion-milei-hablo-economia-y-un-intento-golpe-estado-n1238659",
-          "date": "2026-05-15T02:46:00+00:00",
+          "title": "Javier Milei está más preocupado en cuidar el futuro de Manuel Adorni que en lo que está pasando con la gestión",
+          "source": "MDZ Online",
+          "url": "https://www.mdzol.com/politica/javier-milei-esta-mas-preocupado-cuidar-el-futuro-manuel-adorni-que-lo-que-esta-pasando-la-gestion-n1521474",
+          "date": "2026-05-16T10:15:00+00:00",
           "category": "argentina"
         },
         {
-          "title": "“Un porcino iraní”, la frase de Javier Milei dedicada Marcela Pagano",
-          "source": "Agencia Noticias Argentinas",
-          "url": "https://noticiasargentinas.com/politica/-un-porcino-irani---la-frase-de-javier-milei-dedicada-marcela-pagano_a6a067f904d461d3001c33802",
-          "date": "2026-05-15T02:27:52+00:00",
+          "title": "El desafío de Javier Milei de cómo proteger la gestión mientras cuida a Manuel Adorni",
+          "source": "MDZ Online",
+          "url": "https://www.mdzol.com/politica/el-desafio-javier-milei-como-proteger-la-gestion-mientras-cuida-manuel-adorni-n1521474",
+          "date": "2026-05-16T10:15:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Las tres variables económicas que monitorea Milei para que mayo vuelva a mostrar una inflación a la baja",
+          "source": "TN",
+          "url": "https://tn.com.ar/politica/2026/05/16/las-tres-variables-economicas-que-monitorea-milei-para-que-mayo-vuelva-a-mostrar-una-inflacion-a-la-baja/",
+          "date": "2026-05-16T08:29:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "El corrosivo microclima de Olivos y el efecto inverso del respaldo a Adorni",
+          "source": "Infobae",
+          "url": "https://www.infobae.com/opinion/2026/05/16/el-corrosivo-microclima-de-olivos-y-el-efecto-inverso-del-respaldo-a-adorni/",
+          "date": "2026-05-16T07:46:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Argentina’s beef consumption falls to lowest level in 20 years as prices soar",
+          "source": "WSLS",
+          "url": "https://www.wsls.com/business/2026/05/16/argentinas-beef-consumption-falls-to-lowest-level-in-20-years-as-prices-soar/",
+          "date": "2026-05-16T07:28:11+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Misiones: el oficialismo impulsa una reforma política y La Libertad Avanza lo toma como una victoria propia",
+          "source": "Infobae",
+          "url": "https://www.infobae.com/politica/2026/05/16/misiones-el-oficialismo-impulsa-una-reforma-politica-y-la-libertad-avanza-lo-toma-como-una-victoria-propia/",
+          "date": "2026-05-16T07:01:26+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Już nie Chełm, tylko Pokrówka? Gmina stawia na nową nazwę",
+          "source": "Lublin.Wyborcza.pl",
+          "url": "https://lublin.wyborcza.pl/lublin/7,48724,32784161,gmina-chelm-chce-zmienic-nazwe-w-tle-konflikt-z-cudownym-dzieckiem.html",
+          "date": "2026-05-16T05:30:00+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Por qué Javier Milei perdió 17 puntos en cinco meses (y qué le queda para revertirlo)",
+          "source": "Ambito",
+          "url": "https://www.ambito.com/opiniones/por-que-javier-milei-perdio-17-puntos-cinco-meses-y-que-le-queda-revertirlo-n6278174",
+          "date": "2026-05-16T03:00:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "En “QR!” advirtieron que “Adorni no le permitió disfrutar a Milei la baja de la inflación”",
+          "source": "Perfil",
+          "url": "https://www.perfil.com/noticias/canal-e/en-qr-advirtieron-que-adorni-no-le-permitio-disfrutar-a-milei-la-baja-de-la-inflacion.phtml",
+          "date": "2026-05-16T02:15:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Sergio Capozzi, diputado por Provincias Unidas, reconoció que no le gusta “la actitud agresiva de Javier Milei”",
+          "source": "Net tv | Aire Fresco",
+          "url": "https://www.canalnet.tv/programas/chiche-en-vivo/sergio-capozzi-diputado-por-provincias-unidas-reconocio-que-no-le-gusta-la-actitud-agresiva-de-javier-milei_20260515/",
+          "date": "2026-05-16T00:30:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Power Rankings Político: Javier Milei levanta, mientras la marcha universitaria copó el top five",
+          "source": "El Observador",
+          "url": "https://www.elobservador.com.uy/argentina/power-rankings-politico-javier-milei-levanta-mientras-la-marcha-universitaria-copo-el-top-five-n6044181",
+          "date": "2026-05-15T22:14:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Se cerraron más de 24.000 empresas desde que asumió Javier Milei, según informe privado",
+          "source": "Perfil",
+          "url": "https://www.perfil.com/noticias/economia/se-cerraron-mas-de-24000-empresas-desde-que-asumio-javier-milei-segun-informe-privado-a40.phtml",
+          "date": "2026-05-15T22:03:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Fin: lapidaria encuesta electoral para Javier Milei sobre qué porcentaje no lo votaría en 2027",
+          "source": "Diario Registrado",
+          "url": "https://www.diarioregistrado.com/politica/fin--lapidaria-encuesta-electoral-para-javier-milei-sobre-que-porcentaje-no-lo-votaria-en-2027_a6a07880a5c28641161c8737f",
+          "date": "2026-05-15T21:00:26+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Dos convocatorias a sesión en Diputados: La Libertad Avanza se anticiparía a la oposición en un guiño a Manuel Adorni",
+          "source": "Ambito",
+          "url": "https://www.ambito.com/politica/dos-convocatorias-sesion-diputados-la-libertad-avanza-se-anticiparia-la-oposicion-un-guino-manuel-adorni-n6278203",
+          "date": "2026-05-15T20:41:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "El Gobierno de Milei desestima el acto de Macri y cree que se \"posiciona\" para negociar en 2027",
+          "source": "Perfil",
+          "url": "https://www.perfil.com/noticias/politica/el-gobierno-de-milei-desestima-el-acto-de-macri-y-cree-que-se-posiciona-para-negociar-en-2027.phtml",
+          "date": "2026-05-15T20:24:51+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Marcela Pagano denunció a Javier Milei por presunto encubrimiento y por sugerencia de un \"golpe de Estado\"",
+          "source": "FM Del Sol Pehuajo",
+          "url": "https://radiodelsolpehuajo.com.ar/articulo/2026/05/marcela-pagano-denuncio-a-javier-milei-por-presunto-encubrimiento-y-por-sugerencia-de-un-golpe-de-estado.php",
+          "date": "2026-05-15T20:01:33+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Funcionario salteño acusa a La Libertad Avanza de desviar mercadería decomisada en la frontera norte",
+          "source": "Cuarto: Salta a diario",
+          "url": "https://www.cuarto.com.ar/funcionario-salteno-acusa-a-la-libertad-avanza-de-desviar-mercaderia-decomisada-en-la-frontera-norte/",
+          "date": "2026-05-15T19:23:05+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Alarma empresaria: ya cerraron más de 24.000 empresas desde la llegada de Milei y la caída ya iguala a la pandemia",
+          "source": "El Economista: Últimas noticias económicas y financieras",
+          "url": "https://eleconomista.com.ar/negocios/alarma-empresaria-ya-cerraron-mas-24000-empresas-llegada-milei-caida-ya-iguala-pandemia-n94965",
+          "date": "2026-05-15T18:57:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Un paso atrás: Mauricio Macri encabezó un deslucido acto y reculó en el camino de confrontación con Milei",
+          "source": "Letra P",
+          "url": "https://www.letrap.com.ar/politica/un-paso-atras-mauricio-macri-encabezo-un-deslucido-acto-y-reculo-el-camino-confrontacion-milei-n5423847",
+          "date": "2026-05-15T18:55:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Cuáles son las 10 leyes que el Gobierno busca enviar al Congreso antes del Mundial",
+          "source": "a24.com",
+          "url": "https://www.a24.com/politica/cuales-son-las-10-leyes-que-enviara-el-gobierno-al-congreso-antes-del-mundial-n1556251",
+          "date": "2026-05-15T18:32:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Euronext, scontro Italia-Francia su Piazza Affari: le mosse del governo Meloni e l’ipotesi golden power",
+          "source": "Milano Finanza",
+          "url": "https://www.milanofinanza.it/news/euronext-scontro-italia-francia-su-piazza-affari-le-mosse-del-governo-meloni-e-l-ipotesi-golden-202605152017222065",
+          "date": "2026-05-15T18:09:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Prensa en alemán: Milei, Venezuela y reclutamiento de niños",
+          "source": "DW.com",
+          "url": "https://www.dw.com/es/prensa-en-alem%C3%A1n-milei-venezuela-y-reclutamiento-de-ni%C3%B1os-en-colombia/a-77176791",
+          "date": "2026-05-15T18:04:38+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Mauricio Macri buscó diferenciar al PRO y defendió la identidad del partido frente a Javier Milei",
+          "source": "Ambito",
+          "url": "https://www.ambito.com/politica/mauricio-macri-busco-diferenciar-al-pro-y-defendio-la-identidad-del-partido-frente-javier-milei-n6278102",
+          "date": "2026-05-15T17:45:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Jubilados: cuánto cobran en junio de 2026 y cómo evolucionaron los haberes en el último año",
+          "source": "Chequeado",
+          "url": "https://chequeado.com/ultimas-noticias/jubilados-cuanto-cobran-en-junio-de-2026-y-como-evolucionaron-los-haberes-en-el-ultimo-ano/",
+          "date": "2026-05-15T17:39:08+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "EAM Jaishankar congratulates Anita Orban on appointment as Hungary’s Deputy PM, Foreign Minister",
+          "source": "IANS LIVE",
+          "url": "https://ianslive.in/eam-jaishankar-congratulates-anita-orban-on-her-appoint-as-deputy-pm-and-foreign-minister-of-hungary--20260515222407",
+          "date": "2026-05-15T17:01:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Javier Milei versus el liberalismo",
+          "source": "Diagonales",
+          "url": "https://www.diagonales.com/opinion/javier-milei-versus-el-liberalismo_a6a0745fe0a3ce39269a2b8d4",
+          "date": "2026-05-15T16:13:32+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Colin Jost might've manifested Pete Hegseth quoting Pulp Fiction in a scrapped SNL cold open",
+          "source": "Entertainment Weekly",
+          "url": "https://ew.com/colin-jost-says-snl-cut-pete-hegseth-pulp-fiction-joke-and-then-it-happened-11975617",
+          "date": "2026-05-15T15:36:38+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Encuesta: el 60 por ciento siente \"vergüenza\", \"asco\", \"rechazo\" y \"bronca\" frente a la gestión Milei",
+          "source": "Revista Noticias",
+          "url": "https://noticias.perfil.com/noticias/politica/encuesta-el-60-por-ciento-siente-verguenza-asco-rechazo-y-bronca-frente-a-la-gestion-milei.phtml",
+          "date": "2026-05-15T14:51:19+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Elecciones 2027: ¿Y si los votos de Javier Milei se están yendo a Axel Kicillof?",
+          "source": "Agencia Paco Urondo",
+          "url": "https://www.agenciapacourondo.com.ar/opinion/elecciones-2027-y-si-los-votos-de-javier-milei-se-estan-yendo-axel-kicillof",
+          "date": "2026-05-15T14:24:02+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei confirmó una corrida y apuntó contra el establishment",
+          "source": "OPI Santa Cruz",
+          "url": "https://www.opisantacruz.com.ar/2026/05/15/javier-milei-confirmo-una-corrida-y-apunto-contra-el-establishment/",
+          "date": "2026-05-15T13:58:21+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Patricia Bullrich, Domingo Cavallo, Karina Milei, IERAL, Luis Caputo: Complicado",
+          "source": "Urgente24",
+          "url": "https://urgente24.com/actualidad/patricia-bullrich-domingo-cavallo-karina-milei-ieral-luis-caputo-complicado-n624760",
+          "date": "2026-05-15T13:33:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Watch: What did we learn from Trump's visit to China?",
+          "source": "BBC",
+          "url": "https://www.bbc.com/news/videos/cn8p36jzd7yo",
+          "date": "2026-05-15T13:25:23+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Javier Milei recibe a Manuel Adorni en Olivos para repasar la gestión y analizar los proyectos que enviarán al Congreso",
+          "source": "Radio LV11",
+          "url": "https://www.radiolv11.com.ar/noticia/javier-milei-recibe-a-manuel-adorni-en-olivos-para-repasar-la-gestion-y-analizar-los-proyectos-que-enviaran-al-congreso",
+          "date": "2026-05-15T13:04:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "What was accomplished during President Trump's trip to China?",
+          "source": "WFAA",
+          "url": "https://www.wfaa.com/video/news/nation-world/what-was-accomplished-during-president-trumps-trip-to-china/287-b93b689f-685a-4349-9b33-4421ea20781e",
+          "date": "2026-05-15T12:36:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Alejandra Vigo arrastró a Luis Juez en un reconocimiento incómodo para La Libertad Avanza en el Senado",
+          "source": "Letra P",
+          "url": "https://www.letrap.com.ar/politica/alejandra-vigo-arrastro-luis-juez-un-reconocimiento-incomodo-la-libertad-avanza-el-senado-n5423841",
+          "date": "2026-05-15T12:10:00+00:00",
           "category": "argentina"
         }
       ],
       "first_seen": "2026-05-15T04:34:53+00:00",
-      "last_seen": "2026-05-16T04:09:15+00:00"
+      "last_seen": "2026-05-16T14:05:31+00:00"
     },
     {
-      "id": "trump-xi-summit-amid-iran-war-tensions",
-      "title": "Trump-Xi summit amid Iran war tensions",
-      "blurb": "President Trump's summit with Chinese President Xi Jinping in Beijing focused on trade, Taiwan, and Iran, with mixed signals on cooperation. The summit's outcomes and Trump's rhetoric on Iran have dominated coverage.",
-      "affect": "The summit's geopolitical stakes, particularly regarding Iran and Taiwan, command intense attention due to the potential for global conflict and economic disruption.",
-      "intensity": 5,
-      "affect_signals": [
-        "alarmist framing",
-        "cross-source repetition",
-        "moral charge",
-        "polarized contention",
-        "leadership crisis tone"
-      ],
-      "categories": [
-        "🇺🇸 MAGA / Trump"
-      ],
-      "article_count": 50,
-      "refs": [
-        {
-          "title": "President Trump returns to White House; says bilateral trip to China was a 'tremendous success'",
-          "source": "Yahoo",
-          "url": "https://www.yahoo.com/news/videos/president-trump-returns-white-house-020312854.html",
-          "date": "2026-05-16T02:03:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Iran giving mixed signals on deals, US open to 20 year halt to enrichment deal, Trump says",
-          "source": "The Jerusalem Post",
-          "url": "https://www.jpost.com/middle-east/iran-news/article-896343",
-          "date": "2026-05-16T01:55:51+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Trump concludes Beijing summit with vague Iran commitment from China",
-          "source": "Upper Michigan's Source",
-          "url": "https://www.uppermichiganssource.com/2026/05/15/trump-concludes-beijing-summit-with-vague-iran-commitment-china/",
-          "date": "2026-05-15T17:00:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Iran war day 77: Trump, Xi discuss Hormuz as Tehran rallies BRICS",
-          "source": "Al Jazeera",
-          "url": "https://www.aljazeera.com/news/2026/5/15/iran-war-day-77-trump-xi-discuss-hormuz-as-tehran-rallies-brics",
-          "date": "2026-05-15T06:27:11+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "China and US ‘feel very similar about Iran’, Donald Trump says",
-          "source": "Financial Times",
-          "url": "https://www.ft.com/content/66933e51-e06d-475c-aed2-f808f9443dea?syn-25a6b1a6=1",
-          "date": "2026-05-15T03:39:18+00:00",
-          "category": "usa"
-        }
-      ],
-      "first_seen": "2026-05-13T15:23:39+00:00",
-      "last_seen": "2026-05-16T04:09:15+00:00"
-    },
-    {
-      "id": "afds-poll-surge-and-leadership-ambitions",
-      "title": "AfD’s poll surge and leadership ambitions",
-      "blurb": "Germany's AfD is leading polls in Saxony-Anhalt and Mecklenburg-Vorpommern, with plans to replace hundreds of civil service positions if elected. The party's ties to extremist groups and Kremlin praise have intensified scrutiny.",
-      "affect": "AfD's rise and authoritarian plans evoke strong emotional responses, including fear, outrage, and moral panic over democratic backsliding.",
+      "id": "polands-pis-party-faces-internal-crisis",
+      "title": "Poland’s PiS party faces internal crisis",
+      "blurb": "Poland's ruling Law and Justice (PiS) party is grappling with internal divisions, leadership struggles, and declining poll numbers. The crisis has been exacerbated by controversies involving key figures like Zbigniew Ziobro and tensions over U.S. military deployments.",
+      "affect": "This commands attention due to its potential to reshape Polish politics, impact NATO relations, and influence the country's democratic trajectory.",
       "intensity": 4,
       "affect_signals": [
-        "alarmist framing",
+        "leadership crisis tone",
         "polarized contention",
-        "moral panic register",
         "cross-source repetition",
-        "outrage-coded language"
+        "outrage-coded language",
+        "moral panic register"
       ],
       "categories": [
-        "🇩🇪 Alternative für Deutschland"
+        "🇵🇱 Prawo i Sprawiedliwość"
       ],
       "article_count": 40,
       "refs": [
         {
-          "title": "Minderheitsregierung in Sachsen-Anhalt? CDU erwägt Duldung durch Linkspartei",
-          "source": "Neue Zürcher Zeitung",
-          "url": "https://www.nzz.ch/deutschland/politik/minderheitsregierung-in-sachsen-anhalt-cdu-erwaegt-duldung-durch-linkspartei-ld.10007199",
-          "date": "2026-05-16T02:30:00+00:00",
-          "category": "germany"
+          "title": "Daleko od szosy",
+          "source": "rc.fm",
+          "url": "https://rc.fm/news/kalisz-warszawa-daleko-od-szosy.html",
+          "date": "2026-05-16T12:44:59+00:00",
+          "category": "poland"
         },
         {
-          "title": "Wahlkampfhilfe aus dem Kreml: Putin-Vertrauter nennt AfD \"Hoffnung für die Deutschen\"",
-          "source": "Ntv",
-          "url": "https://www.n-tv.de/politik/Putin-Vertrauter-nennt-AfD-Hoffnung-fuer-die-Deutschen-id30826464.html",
-          "date": "2026-05-16T01:15:03+00:00",
-          "category": "germany"
+          "title": "Kaczyński alarmuje po decyzji Pentagonu: \"Relacje z USA i zaufanie Tusk zniszczył w 2 lata\"",
+          "source": "Tygodnik Solidarność",
+          "url": "https://tysol.pl/wiadomosci/kaczynski-alarmuje-po-decyzji-pentagonu-relacje-z-usa-i-zaufanie-tusk-zniszczyl-w-2-lata,171385",
+          "date": "2026-05-16T12:43:36+00:00",
+          "category": "poland"
         },
         {
-          "title": "Bayerns Verfassungsschutz verrät: So treiben Extremisten die AfD vor sich her",
-          "source": "Augsburger Allgemeine",
-          "url": "https://www.augsburger-allgemeine.de/bayern/bayerischer-verfassungsschutz-ueber-afd-identitaere-bewegung-ib-und-rechtsextremismus-114233193",
-          "date": "2026-05-16T01:00:00+00:00",
-          "category": "germany"
+          "title": "Ważne spotkanie u prezydenta Nawrockiego ws. wojsk USA w Polsce",
+          "source": "wPolityce.pl",
+          "url": "https://wpolityce.pl/polityka/760436-wazne-spotkanie-u-prezydenta-nawrockiego-ws-wojsk-usa-w-polsce",
+          "date": "2026-05-16T12:01:36+00:00",
+          "category": "poland"
         },
         {
-          "title": "„Es hat sich gerächt, dass man die AfD immer verteufelt hat“",
-          "source": "WELT",
-          "url": "https://www.welt.de/videos/video6a074eaf4166b8e84c362ddd/antje-hermenau-es-hat-sich-geraecht-dass-man-die-afd-immer-verteufelt-hat.html",
-          "date": "2026-05-15T18:10:39+00:00",
-          "category": "germany"
+          "title": "Czarnek (PiS) chce od rządu informacji w sprawie obecności wojsk USA w Polsce",
+          "source": "Portal Samorządowy",
+          "url": "https://www.portalsamorzadowy.pl/polityka-i-spoleczenstwo/czarnek-pis-chce-od-rzadu-informacji-w-sprawie-obecnosci-wojsk-usa-w-polsce,661213.html",
+          "date": "2026-05-16T11:47:15+00:00",
+          "category": "poland"
         },
         {
-          "title": "Sachsen-Anhalt: Der interne Machtplan der AfD",
-          "source": "FAZ",
-          "url": "https://www.faz.net/aktuell/politik/sachsen-anhalt-der-interne-machtplan-der-afd-200836110.html",
-          "date": "2026-05-15T13:31:41+00:00",
-          "category": "germany"
+          "title": "Ziobro ukrywa się w USA. Prof. Dudek: To największy kłopot PiS",
+          "source": "WP Wiadomości",
+          "url": "https://wiadomosci.wp.pl/ziobro-ukrywa-sie-w-usa-prof-dudek-to-najwiekszy-klopot-pis-7286496402872352a",
+          "date": "2026-05-16T11:44:01+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Prezes PiS: Rząd Tuska w 2 lata zniszczył zaufanie w relacjach z USA",
+          "source": "Fronda.pl",
+          "url": "https://www.fronda.pl/a/Prezes-PiS-Rzad-Tuska-w-2-lata-zniszczyl-zaufanie-w-relacjach-z-USA,255058.html",
+          "date": "2026-05-16T11:20:00+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Jarosław Kaczyński bez ogródek mówi, co myśli o Tusku",
+          "source": "wPolsce24",
+          "url": "https://wpolsce24.tv/polska/jaroslaw-kaczynski-bez-ogrodek-mowi-co-mysli-o-tusku,78493",
+          "date": "2026-05-16T10:55:18+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Co dalej z wojskami USA w Polsce? Prezes PiS: Rząd to zniszczył",
+          "source": "wPolityce.pl",
+          "url": "https://wpolityce.pl/polityka/760437-co-dalej-z-wojskami-usa-w-polsce-prezes-pis-rzad-to-zniszczyl",
+          "date": "2026-05-16T10:51:57+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Kaczyński alarmuje: Tusk zniszczył to w dwa lata",
+          "source": "Do Rzeczy",
+          "url": "https://dorzeczy.pl/opinie/887953/kaczynski-alarmuje-tusk-zniszczyl-to-w-dwa-lata.html",
+          "date": "2026-05-16T10:27:00+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Będzie wspólny wiec Morawieckiego i Czarnka",
+          "source": "TVN24",
+          "url": "https://tvn24.pl/polska/spory-w-pis-bedzie-wspolny-wiec-mateusza-morawieckiego-i-przemyslawa-czarnka-st9051033",
+          "date": "2026-05-16T10:01:43+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Posłanka PiS wyszła ze studia TVP. \"Myślałem, że zostanie i przeprosi\"",
+          "source": "Gazeta",
+          "url": "https://wiadomosci.gazeta.pl/polityka/7,198012,32794010,poslanka-pis-wyszla-ze-studia-tvp-myslalem-ze-zostanie-i.html",
+          "date": "2026-05-16T09:40:55+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Awantura na klubie PiS? Cieszyński: Nie było żadnych krzyków",
+          "source": "Do Rzeczy",
+          "url": "https://dorzeczy.pl/opinie/887929/awantura-na-klubie-pis-cieszynski-nie-bylo-zadnych-krzykow.html",
+          "date": "2026-05-16T09:37:00+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Nagłe wyjście posłanki PiS ze studia TVP. „Myślałem, że pani Anna Krupka przeprosi”",
+          "source": "Wprost",
+          "url": "https://www.wprost.pl/kraj/12331908/nagle-wyjscie-poslanki-pis-ze-studia-tvp-myslalem-ze-pani-anna-krupka-przeprosi.html",
+          "date": "2026-05-16T09:21:00+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Odwilż w relacjach Czarnka z Morawieckim? Zapadła decyzja",
+          "source": "Wiadomości Onet",
+          "url": "https://wiadomosci.onet.pl/kraj/zapadla-decyzja-w-waskim-gronie-pis-dotyczy-czarnka-i-morawieckiego/ppsgg9f",
+          "date": "2026-05-16T08:50:50+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Prof. Czarnek i Morawiecki pojawią się wspólnym spotkaniu!",
+          "source": "wPolityce.pl",
+          "url": "https://wpolityce.pl/polityka/760423-prof-czarnek-i-morawiecki-pojawia-sie-wspolnym-spotkaniu",
+          "date": "2026-05-16T08:41:34+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Posłanka PiS wyszła ze studia TVP Info. \"Myślałem, że przeprosi\"",
+          "source": "Wiadomości Onet",
+          "url": "https://wiadomosci.onet.pl/kraj/poslanka-pis-wyszla-z-programu-na-zywo-myslalem-ze-zostanie-i-przeprosi/ekec8z0",
+          "date": "2026-05-16T06:39:46+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Zwarcie w Konfederacji. Mentzen chce pokrzyżować plany Bosaka",
+          "source": "Newsweek",
+          "url": "https://www.newsweek.pl/opinie/mentzen-walczy-z-bosakiem-chce-zablokowac-jego-koalicje-z-kaczynskim-opinia/mmf5ze6",
+          "date": "2026-05-16T06:07:00+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Szachy 5D: Awantura w PiS! Tykająca bomba, rozpad na horyzoncie?!",
+          "source": "Konfederacja",
+          "url": "https://konfederacja.pl/transmisja-live/szachy-5d-awantura-w-pis-tykajaca-bomba-rozpad-na-horyzoncie/?amp=1",
+          "date": "2026-05-16T05:18:07+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Bojkot głosowania przez PiS, ustawa o kryptowalutach, spotkania z dowódcami USA",
+          "source": "TVN24",
+          "url": "https://tvn24.pl/polska/piec-rzeczy-ktore-warto-wiedziec-w-sobote-16-maja-najwazniejsze-informacje-st9050771",
+          "date": "2026-05-16T04:13:17+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Hazte Oír acusa a Abascal de \"vender su alma al diablo\" con el aborto: \"Te niegas a proteger a los niños que llenan un estadio\"",
+          "source": "El Español",
+          "url": "https://www.elespanol.com/espana/politica/20260516/hazte-oir-acusa-abascal-vender-alma-diablo-aborto-niegas-proteger-ninos-llenan-estadio/1003744247381_0.html",
+          "date": "2026-05-16T00:35:19+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Na pewno będzie aż za ciekawie! A na razie, to ?OZE-sroze!?",
+          "source": "Wyborcza.pl",
+          "url": "https://wyborcza.pl/7,162657,32793744,zasiadlszy-po-prawicy-prezesa-od-razu-wyraznie-ozywil-lawke.html",
+          "date": "2026-05-15T21:00:56+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Fałszywe wezwanie policji do dyrektor biura posła PiS",
+          "source": "Do Rzeczy",
+          "url": "https://dorzeczy.pl/kraj/887836/falszywe-wezwanie-policji-do-dyrektor-biura-posla-pis.html",
+          "date": "2026-05-15T20:17:00+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Grzegorz Janik o uchylonym wyroku SN. Były poseł PiS: Sądy w Polsce działają",
+          "source": "Wprost",
+          "url": "https://www.wprost.pl/kraj/12331674/grzegorz-janik-o-uchylonym-wyroku-sn-byly-posel-pis-sady-w-polsce-dzialaja.html",
+          "date": "2026-05-15T19:57:00+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "El PJ criticó el “alineamiento ciego” del gobierno de Javier Milei con Estados Unidos e Israel",
+          "source": "La Nación",
+          "url": "https://www.lanacion.com.ar/politica/el-pj-critico-el-alineamiento-ciego-del-gobierno-de-javier-milei-con-estados-unidos-e-israel-nid15052026/",
+          "date": "2026-05-15T19:39:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Zwrot w sprawie byłego posła PiS skazanego za korupcję. Sąd ponownie rozpatrzy jego sprawę",
+          "source": "Wiadomości Onet",
+          "url": "https://wiadomosci.onet.pl/kraj/sad-najwyzszy-uchyla-wyrok-bylego-posla-pis-proces-ruszy-od-nowa/zlq9tjr",
+          "date": "2026-05-15T18:50:25+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "To nie nowy początek, a dalszy chaos. Sejm wybrał członków KRS. Minister komentuje",
+          "source": "Wiadomości Onet",
+          "url": "https://wiadomosci.onet.pl/tylko-w-onecie/to-nie-nowy-poczatek-a-dalszy-chaos-sejm-wybral-czlonkow-krs-minister-komentuje/zfc9rp0",
+          "date": "2026-05-15T18:30:38+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Zelenskyy vows response after Russian strike kills 24 in Kyiv",
+          "source": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/5/15/zelenskyy-vows-response-after-russian-strike-kills-24-in-kyiv",
+          "date": "2026-05-15T18:12:09+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Maciej Kluczka pyta o \"rozgardiasz\" w PiS. \"Zamieszanie kreowane czy autentyczna burza?\"",
+          "source": "TOK FM",
+          "url": "https://www.tokfm.pl/polityka/maciej-kluczka-pyta-o-rozgardiasz-w-pis-zamieszanie-kreowane-czy-autentyczna-burza",
+          "date": "2026-05-15T17:45:16+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Co się dzieje w PiS? Wicerzecznik partii apeluje do Kluczki: Chciałbym, żebyśmy zmienili temat",
+          "source": "TOK FM",
+          "url": "https://www.tokfm.pl/polityka/co-sie-dzieje-w-pis-wicerzecznik-partii-apeluje-do-kluczki-chcialbym-zebysmy-zmienili-temat",
+          "date": "2026-05-15T16:10:21+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "wantury w PiS trwają, a frustracja w miastach coraz mocniej rośnie",
+          "source": "Rzeczpospolita",
+          "url": "https://www.rp.pl/polityka/art44387841-ziobro-szkodzi-pis-ale-tez-koalicji-w-miastach-rosnie-frustracja",
+          "date": "2026-05-15T15:00:00+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Tusk ogłasza sukces i uderza w PiS. \"Mniej niż zero\"",
+          "source": "Polskie Radio 24",
+          "url": "https://polskieradio24.pl/artykul/3687186,tusk-oglasza-sukces-i-uderza-w-pis-mniej-niz-zero",
+          "date": "2026-05-15T14:39:00+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "46 mln zł straty? Kaczyński nie mówił prawdy. Ujawniamy stan finansów PiS",
+          "source": "Rzeczpospolita",
+          "url": "https://www.rp.pl/polityka/art44376561-pis-nie-ucierpial-finansowo-na-utracie-pieniedzy-z-budzetu-ujawniamy-sprawozdanie-finansowe",
+          "date": "2026-05-15T14:00:00+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Piebiak wszedł do KRS. Żurek: PiS strzela sobie w stopę",
+          "source": "Gazeta",
+          "url": "https://wiadomosci.gazeta.pl/polityka/7,198012,32793065,piebiak-wszedl-do-krs-zurek-pis-strzela-sobie-w-stope.html",
+          "date": "2026-05-15T13:43:00+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Nadchodzą intensywne dni dla prezydenta. Program wizyty robi wrażenie",
+          "source": "Fakt",
+          "url": "https://www.fakt.pl/polityka/karol-nawrocki-spotka-sie-z-prezydentem-i-premier-wloch-harmonogram-wizyty/0gkfddv",
+          "date": "2026-05-15T13:33:00+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Wojska USA nie przyjadą. Polska nie była na to przygotowana. Amerykanie też zaskoczeni",
+          "source": "Rzeczpospolita",
+          "url": "https://www.rp.pl/komentarze/art44386691-michal-szuldrzynski-relokacja-wojsk-usa-bezpieczenstwo-polski-nie-moze-przegrac-z-polityka",
+          "date": "2026-05-15T13:23:30+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Magyar Péter jól leteremtette Rogán Antalt a kormányzati átadáson, aztán Fásy Zsülike is szóba került",
+          "source": "nlc",
+          "url": "https://nlc.hu/sztarok/20260515/kormanyzati-atadas-atvetel-magyar-peter-leteremtette-rogant/",
+          "date": "2026-05-15T13:10:14+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Nieważne \"ślubowanie\" i presja na prezesa TK? Ważny ruch PiS!",
+          "source": "wPolityce.pl",
+          "url": "https://wpolityce.pl/polityka/760330-niewazne-slubowanie-i-presja-na-prezesa-tk-wazny-ruch-pis",
+          "date": "2026-05-15T12:51:57+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Przełom w PiS? Morawiecki ma propozycję dla Czarnka",
+          "source": "Do Rzeczy",
+          "url": "https://dorzeczy.pl/kraj/887605/przelom-w-pis-morawiecki-ma-propozycje-dla-czarnka.html",
+          "date": "2026-05-15T12:35:00+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Włodzimierz Czarzasty wbił szpilę Przemysławowi Czarnkowi. \"Niezłośliwie\"",
+          "source": "Fakt",
+          "url": "https://www.fakt.pl/polityka/wlodzimierz-czarzasty-wytknal-to-kandydatowi-pis-niezlosliwie/p46d6v7",
+          "date": "2026-05-15T12:28:25+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Polish lawmakers approve new crypto bill after president vetoed two earlier versions",
+          "source": "TVP World",
+          "url": "https://tvpworld.com/93269028/polish-lawmakers-approve-new-crypto-bill-after-two-earlier-versions-vetoed-by-nawrocki",
+          "date": "2026-05-15T12:25:00+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "PiS złoży zawiadomienie do prokuratury! Chodzi o Trybunał Konstytucyjny",
+          "source": "Polityka Super Express",
+          "url": "https://polityka.se.pl/wiadomosci/pis-zlozy-zawiadomienie-do-prokuratury-chodzi-o-trybunal-konstytucyjny-aa-3BvK-oG7e-fbPU.html",
+          "date": "2026-05-15T12:08:00+00:00",
+          "category": "poland"
         }
       ],
-      "first_seen": "2026-05-12T15:20:29+00:00",
-      "last_seen": "2026-05-16T04:09:15+00:00"
-    },
-    {
-      "id": "far-right-protests-and-uk-bans",
-      "title": "Far-right protests and UK bans",
-      "blurb": "The UK has banned 11 far-right figures from entering ahead of Tommy Robinson's London rally, amid counter-protests and heightened security measures. The event has sparked debates over free speech and public safety.",
-      "affect": "The rally and bans command attention due to fears of violence, moral outrage over far-right extremism, and polarized debates on immigration and free speech.",
-      "intensity": 4,
-      "affect_signals": [
-        "polarized contention",
-        "moral panic register",
-        "alarmist framing",
-        "cross-source repetition",
-        "outrage-coded language"
-      ],
-      "categories": [
-        "🌍 General Right-Wing News",
-        "🇬🇧 Reform UK"
-      ],
-      "article_count": 35,
-      "refs": [
-        {
-          "title": "‘Far-right agitators’ banned from entering UK before rally",
-          "source": "The Times",
-          "url": "https://www.thetimes.com/uk/politics/article/far-right-agitators-banned-uk-tommy-robinson-rally-thgpxc9lr",
-          "date": "2026-05-15T20:45:35+00:00",
-          "category": "general"
-        },
-        {
-          "title": "London braces for weekend of protest as far-right calls for ‘show of force’",
-          "source": "Financial Times",
-          "url": "https://www.ft.com/content/a2b18731-2720-496f-baa5-45edec972537",
-          "date": "2026-05-15T16:44:22+00:00",
-          "category": "general"
-        },
-        {
-          "title": "11 people barred from coming to UK for far-right rally, says government",
-          "source": "Anadolu Ajansı",
-          "url": "https://www.aa.com.tr/en/world/11-people-barred-from-coming-to-uk-for-far-right-rally-says-government/3938774",
-          "date": "2026-05-15T14:29:20+00:00",
-          "category": "general"
-        },
-        {
-          "title": "Starmer blocks 11 ‘far-Right extremists’ from UK ahead of weekend protests insisting 'thug' organisers are 'peddling hatred and division'",
-          "source": "lbc.co.uk",
-          "url": "https://www.lbc.co.uk/article/starmer-blocks-11-far-right-extremists-uk-ahead-weekend-protests-5HjdZF9_2/",
-          "date": "2026-05-15T13:54:50+00:00",
-          "category": "general"
-        },
-        {
-          "title": "Starmer blocks 11 ‘far-Right agitators’ from UK ahead of protests",
-          "source": "The Telegraph",
-          "url": "https://www.telegraph.co.uk/news/2026/05/15/starmer-blocks-11-far-right-agitators-uk-protests-london/",
-          "date": "2026-05-15T12:58:00+00:00",
-          "category": "general"
-        }
-      ],
-      "first_seen": "2026-05-16T04:09:15+00:00",
-      "last_seen": "2026-05-16T04:09:15+00:00"
+      "first_seen": "2026-05-16T14:05:31+00:00",
+      "last_seen": "2026-05-16T14:05:31+00:00"
     }
   ]
 }
