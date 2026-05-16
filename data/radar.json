@@ -1,264 +1,116 @@
 {
-  "updated_at": "2026-05-16T04:22:50+00:00",
+  "updated_at": "2026-05-16T14:13:33+00:00",
   "lookback_hours": 48,
   "model": "Mistral Large",
   "status": "ok",
   "themes": [
     {
-      "id": "trumps-policies-dominate-global-right-wing-coverage",
-      "title": "Trump’s policies dominate global right-wing coverage",
-      "blurb": "Right-wing media in the USA, Poland, Italy, Argentina, France, and the UK continue to focus intensely on Donald Trump’s diplomatic moves, policy shifts, and domestic controversies. Coverage spans his China summit, Iran war stance, and administration appointments, reflecting his enduring influence on global right-wing narratives.",
+      "id": "far-right-parties-push-national-priority-policies",
+      "title": "Far-right parties push 'national priority' policies",
+      "blurb": "Right-wing and far-right parties across Europe are intensifying their focus on 'national priority' policies, which prioritize citizens over non-citizens in access to public services. This theme is evident in Spain, Italy, Sweden, France, Norway, and Argentina, where parties like Vox, Fratelli d'Italia, Sverigedemokraterna, Rassemblement National, and La Libertad Avanza are advocating for these measures, often sparking controversy and legal challenges.",
       "convergence": 5,
       "countries": [
         {
-          "name": "🇺🇸 MAGA / Trump",
-          "note": "Extensive coverage of Trump’s China summit, Iran war stance, and administration appointments like Pete Hegseth and Marco Rubio."
-        },
-        {
-          "name": "🇵🇱 Prawo i Sprawiedliwość",
-          "note": "Polish media highlights Trump’s influence on PiS’s foreign policy, including reactions to his China visit and Iran strategy."
-        },
-        {
-          "name": "🇮🇹 Fratelli d'Italia / Lega",
-          "note": "Italian outlets discuss Trump’s impact on Meloni’s government, particularly regarding U.S.-Italy relations and defense policies."
-        },
-        {
-          "name": "🇦🇷 La Libertad Avanza",
-          "note": "Argentinian media covers Trump’s diplomatic moves, including his China summit and alignment with Milei’s government."
-        },
-        {
-          "name": "🇫🇷 Rassemblement National",
-          "note": "French right-wing media analyzes Trump’s policies as a reference point for RN’s own political strategies."
-        },
-        {
-          "name": "🇬🇧 Reform UK",
-          "note": "UK media discusses Trump’s influence on Reform UK’s policies, particularly on immigration and trade."
-        }
-      ],
-      "signals": [
-        "policy imitation",
-        "shared framing",
-        "reaction to U.S. decisions",
-        "coordinated messaging"
-      ],
-      "article_count": 200,
-      "refs": [
-        {
-          "title": "President Trump returns to White House; says bilateral trip to China was a 'tremendous success'",
-          "source": "Yahoo",
-          "url": "https://www.yahoo.com/news/videos/president-trump-returns-white-house-020312854.html",
-          "date": "2026-05-16T02:03:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Iran giving mixed signals on deals, US open to 20 year halt to enrichment deal, Trump says",
-          "source": "The Jerusalem Post",
-          "url": "https://www.jpost.com/middle-east/iran-news/article-896343",
-          "date": "2026-05-16T01:55:51+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Takeaways from Trump’s trip to China: Taiwan, a new framework for relationship and flattery for Xi",
-          "source": "thebanner.com",
-          "url": "https://www.thebanner.com/national/donald-trump-xi-jinping-china-trip-5SK4T7RCRZBDLHMONWTSVLMDBY/",
-          "date": "2026-05-15T21:59:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "What did Trump and Xi discuss during the China summit?",
-          "source": "Al Jazeera",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/5/15/what-did-trump-and-xi-discuss-during-the-china-summit-2",
-          "date": "2026-05-15T20:48:45+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Guidesi a Lecco con la Lega per sostenere la candidatura di Boscagli",
-          "source": "La Provincia Unica Tv",
-          "url": "https://www.laprovinciaunicatv.it/stories/politica/guidesi-a-lecco-con-la-lega-per-sostenere-la-candidatura-di-boscagli-o_3859378_11/",
-          "date": "2026-05-15T20:36:15+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Crozza-Meloni: “Se io sono la famiglia Addams, Renzi è il cugino sfigato di Willy il Coyote”",
-          "source": "Affaritaliani",
-          "url": "https://www.affaritaliani.it/mediatech/crozza-meloni-se-io-sono-la-famiglia-addams-renzi-e-il-cugino-sfigato-di-willy-il-coyote.html",
-          "date": "2026-05-15T20:30:11+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "China expert breaks down President Trump’s ‘very specific’ messaging to Chinese President Xi",
-          "source": "Fox Business",
-          "url": "https://www.foxbusiness.com/video/6395721213112",
-          "date": "2026-05-15T20:27:01+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Marcela Pagano denunció a Javier Milei por encubrimiento de dos delitos de acción pública",
-          "source": "Data Diario",
-          "url": "https://www.datadiario.com/politica/marcela-pagano-denuncio-a-javier-milei-por-encubrimiento-de-dos-delitos-de-accion-publica-20265151730",
-          "date": "2026-05-15T20:14:10+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Is the US dialling down its support for Taiwan?",
-          "source": "Al Jazeera",
-          "url": "https://www.aljazeera.com/video/inside-story/2026/5/15/is-the-us-dialling-down-its-support-for-taiwan",
-          "date": "2026-05-15T19:31:34+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Political expert discusses President Trump's visit to China",
-          "source": "CBS News",
-          "url": "https://www.cbsnews.com/losangeles/video/political-expert-discusses-president-trumps-visit-to-china/",
-          "date": "2026-05-15T18:58:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Trump administration is a “historic opportunity for China to deal with the United States”, says renowned Chinese scholar.",
-          "source": "CNN",
-          "url": "https://www.cnn.com/2026/05/15/world/video/china-u-s-xi-trump-rush-doshi-intv-051501pseg1-cnni-world-fast?cid=external-feeds_iluminar_google",
-          "date": "2026-05-15T18:34:58+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "U.S. eyes indictment against Raul Castro amid pressure by Trump administration, sources tell AP",
-          "source": "WKMG",
-          "url": "https://www.clickorlando.com/news/politics/2026/05/15/us-eyes-indictment-against-raul-castro-amid-pressure-by-trump-administration-sources-tell-ap/",
-          "date": "2026-05-15T18:04:26+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Trump concludes Beijing summit with vague Iran commitment from China",
-          "source": "Upper Michigan's Source",
-          "url": "https://www.uppermichiganssource.com/2026/05/15/trump-concludes-beijing-summit-with-vague-iran-commitment-china/",
-          "date": "2026-05-15T17:00:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Unpacking President Trump’s Visit to China | State of Play",
-          "source": "CSIS | Center for Strategic and International Studies",
-          "url": "https://www.csis.org/analysis/unpacking-president-trumps-visit-china-state-play",
-          "date": "2026-05-15T16:02:06+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Donald Trump left Beijing empty-handed – but avoided something worse",
-          "source": "The Conversation",
-          "url": "https://theconversation.com/donald-trump-left-beijing-empty-handed-but-avoided-something-worse-282663",
-          "date": "2026-05-15T15:12:23+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Donald Trump left with little to show for two days of talks with Xi Jinping",
-          "source": "Financial Times",
-          "url": "https://www.ft.com/content/7ae6a01d-df8d-4148-8424-27272e63939d?syn-25a6b1a6=1",
-          "date": "2026-05-15T14:12:29+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "US-China summit exposes Trump's limits on Iran war, Taiwan",
-          "source": "DW.com",
-          "url": "https://www.dw.com/en/us-china-summit-exposes-trumps-limits-on-iran-war-taiwan/a-77171942",
-          "date": "2026-05-15T13:16:27+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Crece la preocupación de Estados Unidos por la caída de la imagen de Javier Milei tras el caso Adorni",
-          "source": "MDZ Online",
-          "url": "https://www.mdzol.com/politica/crece-la-preocupacion-estados-unidos-la-caida-la-imagen-javier-milei-el-caso-adorni-n1520806",
-          "date": "2026-05-15T12:23:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Donald Trump and Xi Jinping wrap up summit claiming progress stabilizing US-China relations as differences persist",
-          "source": "Chicago Tribune",
-          "url": "https://www.chicagotribune.com/2026/05/15/trump-xi-summit-us-china-relations/",
-          "date": "2026-05-15T11:32:17+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Trump weighs Taiwan arms package after summit aimed at steadying U.S.-China ties",
-          "source": "Spectrum News",
-          "url": "https://spectrumlocalnews.com/us/snplus/international/2026/05/15/trump-xi-visit-china-beijing-trade-talks-taiwan-relationship-differences-",
-          "date": "2026-05-15T11:04:00+00:00",
-          "category": "usa"
-        }
-      ],
-      "first_seen": "2026-05-08T04:03:01+00:00",
-      "last_seen": "2026-05-16T04:22:50+00:00"
-    },
-    {
-      "id": "far-right-parties-push-national-priority-policies",
-      "title": "Far-right parties push 'national priority' policies",
-      "blurb": "Right-wing parties in Spain, Italy, Sweden, France, Norway, and Argentina are advancing policies that prioritize citizens over immigrants in access to housing, social services, and public aid. This theme reflects a transnational shift toward nationalist economic and social policies.",
-      "convergence": 4,
-      "countries": [
-        {
           "name": "🇪🇸 Vox",
-          "note": "Vox campaigns on 'national priority' policies in Andalusia, demanding preferential access to public services for locals."
+          "note": "Vox has implemented 'national priority' policies in regional governments, such as Zaragoza and Andalusia, prioritizing Spanish citizens in healthcare and social services. These policies have faced criticism from opposition parties and regional leaders."
         },
         {
           "name": "🇮🇹 Fratelli d'Italia / Lega",
-          "note": "Italian right-wing parties advocate for policies favoring citizens in housing and social services, often targeting immigrants."
+          "note": "The Italian government, led by Fratelli d'Italia, has endorsed third-country migrant processing hubs, similar to the 'national priority' model. This approach has gained legitimacy through the Council of Europe's adoption of the Chisinau Declaration."
         },
         {
           "name": "🇸🇪 Sverigedemokraterna",
-          "note": "Sweden Democrats propose policies to prioritize Swedish citizens in welfare and housing, excluding immigrants."
+          "note": "The Sweden Democrats have faced backlash for distributing flyers falsely claiming that social services remove children from families unjustly, a narrative that aligns with their broader 'national priority' rhetoric."
         },
         {
           "name": "🇫🇷 Rassemblement National",
-          "note": "RN pushes for policies that prioritize French citizens in social benefits and public services."
+          "note": "Jordan Bardella of Rassemblement National has emphasized policies that prioritize French citizens, particularly in the context of immigration and national identity, aligning with the broader 'national priority' theme."
         },
         {
           "name": "🇳🇴 Fremskrittspartiet",
-          "note": "Norwegian Progress Party advocates for policies favoring locals in welfare and housing, often targeting immigrants."
+          "note": "The Progress Party in Norway has advocated for policies that prioritize Norwegian citizens in public services, reflecting a similar 'national priority' stance."
         },
         {
           "name": "🇦🇷 La Libertad Avanza",
-          "note": "Milei’s government proposes policies that prioritize economic deregulation and privatization, often framed as 'national priority'."
+          "note": "While primarily focused on economic reforms, La Libertad Avanza has also engaged in debates over national priorities, particularly in the context of immigration and public resource allocation."
         }
       ],
       "signals": [
         "policy imitation",
         "shared framing",
-        "parallel elections",
-        "contagion of rhetoric"
+        "reaction to EU decision",
+        "parallel elections"
       ],
-      "article_count": 150,
+      "article_count": 50,
       "refs": [
         {
-          "title": "La Libertad Avanza Neuquén repudió amenazas vinculadas al conflicto territorial en Villa La Angostura",
-          "source": "Diario Río Negro",
-          "url": "https://www.rionegro.com.ar/politica/la-libertad-avanza-neuquen-repudio-amenazas-vinculadas-al-conflicto-territorial-en-villa-la-angostura-4576480/",
-          "date": "2026-05-16T02:40:14+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Santiago Abascal llama a \"votar con esperanza\" para \"no dejarse traicionar\"",
-          "source": "ABC",
-          "url": "https://www.abc.es/espana/santiago-abascal-llama-votar-esperanza-dejarse-traicionar-20260515233334-nt.html",
-          "date": "2026-05-15T21:33:39+00:00",
+          "title": "acuerdo entre el Ayuntamiento de Zaragoza PP-Vox y el Arzobispado de Zaragoza “Parroquias Seguras”",
+          "source": "AraInfo",
+          "url": "https://arainfo.org/tag/acuerdo-entre-el-ayuntamiento-de-zaragoza-pp-vox-y-el-arzobispado-de-zaragoza-parroquias-seguras/",
+          "date": "2026-05-16T13:08:13+00:00",
           "category": "spain"
         },
         {
-          "title": "PP y Vox escudan a Mazón y se 'olvidan' de Pradas en sus conclusiones sobre la dana en las Corts valencianes",
-          "source": "La Opinión de Murcia",
-          "url": "https://www.laopiniondemurcia.es/nacional/2026/05/15/pp-vox-escudan-mazon-olvidan-130284223.html",
-          "date": "2026-05-15T20:39:49+00:00",
+          "title": "Page ve \"insultante\" que Vox pida atención sanitaria solo para españoles: \"Luego van a misa y se enseñorean en calesa\"",
+          "source": "elDiario.es",
+          "url": "https://www.eldiario.es/castilla-la-mancha/politica/page-ve-insultante-vox-pida-atencion-sanitaria-espanoles-luego-misa-ensenorean-calesa_1_13226310.html",
+          "date": "2026-05-16T12:09:17+00:00",
           "category": "spain"
         },
         {
-          "title": "Rifirrafe entre Vox e IU en el Pleno de Avilés a cuenta de la memoria democrática: \"No puede haber víctimas de primera y de segunda\"",
-          "source": "LNE",
-          "url": "https://www.lne.es/aviles/2026/05/15/rifirrafe-vox-iu-pleno-aviles-130283243.html",
-          "date": "2026-05-15T20:01:04+00:00",
+          "title": "Page carga contra la prioridad nacional de Vox: \"¿No vamos a atender a un niño por el color de piel?\"",
+          "source": "ENCLM",
+          "url": "https://www.encastillalamancha.es/politica-cat/page-carga-contra-la-prioridad-nacional-de-vox-no-vamos-a-atender-a-un-nino-por-el-color-de-piel/",
+          "date": "2026-05-16T11:28:00+00:00",
           "category": "spain"
         },
         {
-          "title": "Gavira avisa a Moreno Bonilla: “Habrá prioridad nacional si VOX es decisivo”",
-          "source": "El Toro TV",
-          "url": "https://eltorotv.com/programas/redaccion-abierta/gavira-avisa-a-moreno-bonilla-habra-prioridad-nacional-si-vox-es-decisivo-20260515",
-          "date": "2026-05-15T19:05:51+00:00",
+          "title": "Qué proponen PP, PSOE, Vox y Sumar para mejorar las condiciones de los militares",
+          "source": "La Razón",
+          "url": "https://www.larazon.es/espana/que-proponen-psoe-vox-sumar-mejorar-condiciones-militares_202605166a083b9bdd62c3164d2bce4d.html",
+          "date": "2026-05-16T09:40:43+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Elecciones. Vox quiere más policía en Burtzeña y vincula sin datos \"el aumento de la inseguridad al incremento de la inmigración \"",
+          "source": "Barakaldo Digital",
+          "url": "http://barakaldodigital.blogspot.com/2026/05/elecciones-vox-pide-mas-policia-en.html",
+          "date": "2026-05-16T08:47:00+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Vox promete la prioridad nacional también en Andalucía y una “lucha decidida” contra la inmigración",
+          "source": "Servimedia",
+          "url": "https://www.servimedia.es/noticias/vox-promete-prioridad-nacional-tambien-andalucia-una-lucha-decidida-inmigracion/1412872171",
+          "date": "2026-05-16T07:05:00+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Andalucía necesita la presencia de VOX en el gobierno",
+          "source": "https://www.votoenblanco.com/",
+          "url": "https://www.votoenblanco.com/Andalucia-necesita-la-presencia-de-VOX-en-el-gobierno_a9891.html",
+          "date": "2026-05-16T04:41:33+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Ausländer im Gastgewerbe: Die Welt der AfD und die Wirklichkeit",
+          "source": "inSüdthüringen",
+          "url": "https://www.insuedthueringen.de/inhalt.auslaender-im-gastgewerbe-die-welt-der-afd-und-die-wirklichkeit.e67db79b-719d-4197-b5cf-3ee5c06fe7c0.html",
+          "date": "2026-05-16T04:00:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Moreno quiere librarse de Vox con los indecisos: \"Les pido que nos presten su voto\"",
+          "source": "El Confidencial",
+          "url": "https://www.elconfidencial.com/espana/andalucia/2026-05-15/moreno-elecciones-malaga-voto-pp-1hms_4356200/",
+          "date": "2026-05-15T20:39:00+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Moreno pide el candidato voto de la “concordia” para no depender de Vox: “Sabemos lo que ha pasado en otros sitios”",
+          "source": "elDiario.es",
+          "url": "https://www.eldiario.es/andalucia/moreno-presenta-candidato-concordia-no-depender-vox-pasado-sitios_1_13225492.html",
+          "date": "2026-05-15T20:10:39+00:00",
           "category": "spain"
         },
         {
@@ -266,27 +118,6 @@
           "source": "El Debate",
           "url": "https://www.eldebate.com/espana/castilla-y-leon/20260515/pp-vox-ensayan-burgos-prioridad-nacional-mientras-continuan-negociando-gobierno-manueco_418193.html",
           "date": "2026-05-15T18:17:38+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "SD: flytta SVT och SR till Kista",
-          "source": "frihetsnytt.se",
-          "url": "https://frihetsnytt.se/sd-flytta-svt-och-sr-till-kista/",
-          "date": "2026-05-15T17:32:22+00:00",
-          "category": "sweden"
-        },
-        {
-          "title": "SD vill flytta SVT och Sveriges Radio till Kista",
-          "source": "Svenska Epoch Times",
-          "url": "https://www.epochtimes.se/sd-vill-flytta-svt-och-sveriges-radio-till-kista",
-          "date": "2026-05-15T16:21:27+00:00",
-          "category": "sweden"
-        },
-        {
-          "title": "Vox interpone recurso de alzada para impedir retirada de la Cruz de los Caídos de Cáceres",
-          "source": "Región Digital",
-          "url": "https://www.regiondigital.com/noticias/caceres-y-provincia/429862-vox-interpone-recurso-de-alzada-para-impedir-retirada-de-la-cruz-de-los-caidos-de-caceres.html",
-          "date": "2026-05-15T15:29:30+00:00",
           "category": "spain"
         },
         {
@@ -302,114 +133,311 @@
           "url": "https://www.abc.es/espana/castilla-leon/pp-vox-ayuntamiento-burgos-aprueban-mocion-sobre-20260515152445-nt.html",
           "date": "2026-05-15T13:24:51+00:00",
           "category": "spain"
-        },
-        {
-          "title": "Vox interpone un recurso de alzada para impedir la retirada de la Cruz de Cáceres",
-          "source": "El Periódico Extremadura",
-          "url": "https://www.elperiodicoextremadura.com/caceres-local/2026/05/15/vox-recurso-alzada-cruz-caceres-130268226.html",
-          "date": "2026-05-15T12:44:41+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox reivindica el \"orgullo de pertenencia\" en San Isidro ante quienes intentan \"vender\" Madrid \"al extranjero\"",
-          "source": "Europa Press",
-          "url": "https://www.europapress.es/madrid/noticia-vox-reivindica-orgullo-pertenencia-san-isidro-quienes-intentan-vender-madrid-extranjero-20260515134922.html",
-          "date": "2026-05-15T11:49:22+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "El Parlament tumba la petición de Vox para hacer un minuto de silencio por el asesinato de una mujer en",
-          "source": "La Razón",
-          "url": "https://www.larazon.es/cataluna/parlament-tumba-peticion-vox-minuto-silencio-asesinato-mujer-esplugues-manos-magrebi_202605156a06f76a716e9c57147076ee.html",
-          "date": "2026-05-15T10:37:30+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox plantea en Castelló la \"prioridad nacional\" para garantizar un \"acceso preferente a ayudas y servicios\"",
-          "source": "Castellón Plaza",
-          "url": "https://castellonplaza.com/castellonplaza/castellon9/vox-defiende-en-castello-la-prioridad-nacional-para-garantizar-un-acceso-preferente-a-ayudas-y-servicios",
-          "date": "2026-05-15T10:13:37+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "VOX presenta en Castellón una declaración institucional para reclamar la prioridad nacional en ayudas y servicios públicos",
-          "source": "elperiodic.com",
-          "url": "https://www.elperiodic.com/castellon/presenta-castellon-declaracion-institucional-para-reclamar-prioridad-nacional-ayudas-servicios-publicos_1074236",
-          "date": "2026-05-15T10:02:38+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox se queda solo en la Asamblea de Madrid al pedir retirar la nacionalidad a inmigrantes con condena por banda criminal",
-          "source": "moncloa.com",
-          "url": "https://www.moncloa.com/2026/05/15/vox-nacionalidad-inmigrantes-madrid-3377301/",
-          "date": "2026-05-15T08:41:56+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "El Consell ultima el presupuesto para aprobarlo a final de julio",
-          "source": "castellonaldia.elmundo.es",
-          "url": "https://castellonaldia.elmundo.es/castellon/el-consell-ultima-el-presupuesto-para-aprobarlo-a-final-de-julio-IN26097539",
-          "date": "2026-05-15T06:00:00+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox critica la «indefensión» de los propietarios malagueños",
-          "source": "La Opinión de Málaga",
-          "url": "https://www.laopiniondemalaga.es/malaga/2026/05/15/vox-critica-indefension-propietarios-malaguenos-130244275.html",
-          "date": "2026-05-15T05:01:14+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox fía su receta económica para Andalucía a la ventanilla única y el silencio administrativo positivo",
-          "source": "Economía Digital",
-          "url": "https://www.economiadigital.es/andalucia/politica/vox-receta-economica-elecciones.html?amp",
-          "date": "2026-05-15T02:55:00+00:00",
-          "category": "spain"
         }
       ],
       "first_seen": "2026-04-29T14:59:17+00:00",
-      "last_seen": "2026-05-16T04:22:50+00:00"
+      "last_seen": "2026-05-16T14:13:33+00:00"
+    },
+    {
+      "id": "trumps-policies-dominate-global-right-wing-coverage",
+      "title": "Trump’s policies dominate global right-wing coverage",
+      "blurb": "Donald Trump's policies and actions continue to dominate right-wing and far-right news coverage globally. This theme is particularly strong in the USA, Poland, Italy, Argentina, France, and the UK, where Trump's influence shapes political narratives, policy debates, and electoral strategies. His recent visit to China and his administration's stance on immigration, trade, and international relations have further amplified his presence in cross-national discourse.",
+      "convergence": 5,
+      "countries": [
+        {
+          "name": "🇺🇸 MAGA / Trump",
+          "note": "Trump's policies, including his approach to China, immigration, and trade, are central to right-wing discourse in the USA. His recent summit with Xi Jinping and his administration's actions on issues like border security and tariffs have been widely covered."
+        },
+        {
+          "name": "🇵🇱 Prawo i Sprawiedliwość",
+          "note": "Poland's ruling party, Prawo i Sprawiedliwość, frequently references Trump's policies, particularly in the context of U.S.-Poland relations and NATO. The cancellation of a U.S. military deployment to Poland has been a major point of discussion."
+        },
+        {
+          "name": "🇮🇹 Fratelli d'Italia / Lega",
+          "note": "Italian right-wing parties, including Fratelli d'Italia and Lega, often align with Trump's policies, particularly on issues like immigration and national sovereignty. Trump's influence is evident in Italy's approach to international relations and domestic policy."
+        },
+        {
+          "name": "🇦🇷 La Libertad Avanza",
+          "note": "Argentina's La Libertad Avanza, led by Javier Milei, has drawn comparisons to Trump's economic policies and anti-establishment rhetoric. Milei's alignment with Trump's approach to international relations, particularly with the U.S., has been a recurring theme."
+        },
+        {
+          "name": "🇫🇷 Rassemblement National",
+          "note": "Rassemblement National in France frequently references Trump's policies, particularly on immigration and national identity. Trump's influence is evident in the party's rhetoric and policy proposals."
+        },
+        {
+          "name": "🇬🇧 Reform UK",
+          "note": "Reform UK, led by Nigel Farage, often echoes Trump's policies, particularly on immigration and national sovereignty. The party's rise in the UK has been linked to Trump's influence on right-wing politics globally."
+        }
+      ],
+      "signals": [
+        "policy imitation",
+        "shared framing",
+        "reaction to U.S. decisions",
+        "parallel elections"
+      ],
+      "article_count": 60,
+      "refs": [
+        {
+          "title": "US Vice President J.D. Vance honors Maui Police Officer Suzanne O",
+          "source": "mauinews.com",
+          "url": "https://www.mauinews.com/news/local-news/2026/05/u-s-vice-president-j-d-vance-honors-maui-police-officer-suzanne-o/",
+          "date": "2026-05-16T13:01:01+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump Describes Executions to Kids, While MAGA Bans Lessons Causing “Discomfort”",
+          "source": "Truthout",
+          "url": "https://truthout.org/articles/trump-describes-executions-to-kids-while-maga-bans-lessons-causing-discomfort/",
+          "date": "2026-05-16T12:44:18+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "China confirms deal to buy US aircraft after Donald Trump’s visit",
+          "source": "South China Morning Post",
+          "url": "https://www.scmp.com/news/china/diplomacy/article/3353826/china-confirms-deal-buy-us-aircraft-and-engines-after-donald-trumps-visit",
+          "date": "2026-05-16T12:43:39+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Brass bands in Beijing make way for sticker shock at home as Trump returns to escalating inflation",
+          "source": "News4JAX",
+          "url": "https://www.news4jax.com/business/2026/05/16/brass-bands-in-beijing-make-way-for-sticker-shock-at-home-as-trump-returns-to-escalating-inflation/",
+          "date": "2026-05-16T12:14:32+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Why Donald Trump Should Let European Nationalists Be Nationalists",
+          "source": "The National Interest",
+          "url": "https://nationalinterest.org/feature/why-donald-trump-should-let-european-nationalists-be-nationalists",
+          "date": "2026-05-16T12:01:35+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Pomp, pageantry but precious little to show for Trump’s Beijing excursion",
+          "source": "The Guardian",
+          "url": "https://www.theguardian.com/us-news/2026/may/16/donald-trump-xi-jinping-summit-china",
+          "date": "2026-05-16T11:57:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Donald Trump turns up the heat on Cuba",
+          "source": "Financial Times",
+          "url": "https://www.ft.com/content/fb62a4c4-6615-434e-a259-bc813a27ac6a",
+          "date": "2026-05-16T11:00:03+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "The Beguiling Pageantry of Donald Trump’s China Visit",
+          "source": "The New Yorker",
+          "url": "https://www.newyorker.com/news/the-lede/the-pageantry-and-flattery-of-donald-trumps-visit-to-china",
+          "date": "2026-05-16T10:00:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Donald Trump says Xi agrees Iran must open Strait of Hormuz, China calls war unjust",
+          "source": "The Jerusalem Post",
+          "url": "https://www.jpost.com/international/article-896363",
+          "date": "2026-05-16T09:27:22+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Donald Trump Deals New Blow to US Farmers on China Trip",
+          "source": "Newsweek",
+          "url": "https://www.newsweek.com/donald-trump-deals-new-blow-to-us-farmers-on-china-trip-11957997",
+          "date": "2026-05-16T09:00:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Donald Trump says he’s not looking for Taiwan to go independent after Beijing summit",
+          "source": "The Jerusalem Post",
+          "url": "https://www.jpost.com/international/article-896357",
+          "date": "2026-05-16T08:43:02+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "London rally: Police brace for massive far-right protest",
+          "source": "The Straits Times",
+          "url": "https://www.straitstimes.com/world/europe/london-police-brace-themselves-for-big-far-right-rally-counter-demo",
+          "date": "2026-05-16T06:50:18+00:00",
+          "category": "general"
+        },
+        {
+          "title": "Five takeaways from President Trump’s trip to China and his meeting with President Xi Jinping",
+          "source": "Chicago Tribune",
+          "url": "https://www.chicagotribune.com/2026/05/15/trump-china-trip-takeaways/",
+          "date": "2026-05-16T03:50:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "President Trump returns to White House; says bilateral trip to China was a 'tremendous success'",
+          "source": "Yahoo",
+          "url": "https://www.yahoo.com/news/videos/president-trump-returns-white-house-020312854.html",
+          "date": "2026-05-16T02:03:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump and Xi pledge 'strategic stability' but key questions remain unanswered",
+          "source": "PBS",
+          "url": "https://www.pbs.org/newshour/show/trump-and-xi-pledge-strategic-stability-but-key-questions-remain-unanswered",
+          "date": "2026-05-15T22:55:25+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Beyond the pomp and pageantry, Xi Jinping sent a message to Donald Trump",
+          "source": "The Christian Science Monitor",
+          "url": "https://www.csmonitor.com/World/Asia-Pacific/2026/0515/Trump-Xi-Beijing-summit-US-China?icid=rss",
+          "date": "2026-05-15T21:59:22+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "China expert breaks down President Trump’s ‘very specific’ messaging to Chinese President Xi",
+          "source": "Fox Business",
+          "url": "https://www.foxbusiness.com/video/6395721213112",
+          "date": "2026-05-15T20:27:01+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "What China critics in Maga movement make of Trump's Beijing trip",
+          "source": "BBC",
+          "url": "https://www.bbc.com/news/articles/cvgz902mqe5o",
+          "date": "2026-05-15T19:52:54+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump administration is a “historic opportunity for China to deal with the United States”, says renowned Chinese scholar.",
+          "source": "CNN",
+          "url": "https://www.cnn.com/2026/05/15/world/video/china-u-s-xi-trump-rush-doshi-intv-051501pseg1-cnni-world-fast?cid=external-feeds_iluminar_google",
+          "date": "2026-05-15T18:34:58+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "President Trump returns to U.S. following trip to China",
+          "source": "thv11.com",
+          "url": "https://www.thv11.com/video/news/nation-world/president-trump-returns-to-us-following-trip-to-china/91-9705db7a-f2d6-4828-b2b3-de8505aedd02",
+          "date": "2026-05-15T17:05:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "President Trump returns to US after historic summit with China",
+          "source": "whas11.com",
+          "url": "https://www.whas11.com/video/news/nation-world/president-trump-returns-to-us-after-historic-summit-with-china/417-a0e7b685-b7af-4a0d-98b3-5243cbe01db5",
+          "date": "2026-05-15T16:43:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "President Trump criticizes Iran's latest proposal for peace",
+          "source": "CNBC",
+          "url": "https://www.cnbc.com/video/2026/05/15/president-trump-criticizes-irans-latest-proposal-for-peace.html",
+          "date": "2026-05-15T15:30:13+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "President Trump in China: Deal or no deal?",
+          "source": "BBC",
+          "url": "https://www.bbc.com/audio/play/w3ct8q5j",
+          "date": "2026-05-15T14:09:04+00:00",
+          "category": "usa"
+        }
+      ],
+      "first_seen": "2026-05-08T04:03:01+00:00",
+      "last_seen": "2026-05-16T14:13:33+00:00"
     },
     {
       "id": "corruption-scandals-rock-far-right-governments",
       "title": "Corruption scandals rock far-right governments",
-      "blurb": "Corruption allegations are dominating coverage of far-right governments in Argentina, Hungary, Poland, Spain, and the USA. These scandals involve high-ranking officials and threaten the credibility of ruling parties, sparking internal divisions and public backlash.",
+      "blurb": "Corruption scandals are a recurring theme in far-right and right-wing governments, with recent coverage highlighting allegations in Argentina, Hungary, Poland, Spain, and the USA. These scandals often involve high-profile figures and have led to internal divisions, public backlash, and legal challenges, undermining the credibility of these governments.",
       "convergence": 4,
       "countries": [
         {
           "name": "🇦🇷 La Libertad Avanza",
-          "note": "Manuel Adorni faces illicit enrichment allegations, while Javier Milei is accused of covering up corruption."
+          "note": "Argentina's government, led by Javier Milei, is facing multiple corruption scandals, including allegations against Chief of Staff Manuel Adorni and other officials. These scandals have sparked public protests and legal investigations."
         },
         {
           "name": "🇭🇺 Fidesz / Tisza",
-          "note": "Hungarian media covers scandals involving Viktor Orbán’s government, including misuse of EU funds and cronyism."
+          "note": "Hungary's new government, led by Péter Magyar, has launched investigations into alleged corruption under the previous Fidesz administration. These efforts include canceling high-value contracts and demanding accountability from former officials."
         },
         {
           "name": "🇵🇱 Prawo i Sprawiedliwość",
-          "note": "Polish media highlights corruption allegations against PiS officials, including Zbigniew Ziobro’s controversial actions."
+          "note": "Poland's Prawo i Sprawiedliwość party has faced corruption allegations, particularly involving former officials like Zbigniew Ziobro. These scandals have contributed to internal divisions and public distrust."
         },
         {
           "name": "🇪🇸 Vox",
-          "note": "Vox faces internal corruption allegations, including misuse of party funds and harassment claims."
+          "note": "Vox in Spain has faced criticism over its handling of corruption allegations, particularly in regional governments. The party's expulsion of co-founder Javier Ortega Smith has also raised questions about internal accountability."
         },
         {
           "name": "🇺🇸 MAGA / Trump",
-          "note": "Trump administration officials face corruption allegations, including misuse of IRS funds and ties to Jeffrey Epstein."
+          "note": "The Trump administration has faced multiple corruption allegations, including investigations into financial dealings and conflicts of interest. These scandals have been a recurring theme in U.S. political discourse."
         }
       ],
       "signals": [
-        "parallel scandals",
+        "parallel investigations",
         "shared framing",
         "internal divisions",
         "public backlash"
       ],
-      "article_count": 120,
+      "article_count": 40,
       "refs": [
         {
-          "title": "Exclusivo, el contenido del audio \"bombita\" de Manuel Adorni al contratista Tabar",
-          "source": "a24.com",
-          "url": "https://www.a24.com/politica/exclusivo-el-contenido-del-audio-bombita-manuel-adorni-al-contratista-tabar-n1556458",
-          "date": "2026-05-16T01:38:00+00:00",
+          "title": "Triple asedio sobre Manuel Adorni: entre el avance judicial, la presión del Congreso y las dudas de Washington",
+          "source": "La Gaceta",
+          "url": "https://www.lagaceta.com.ar/nota/1137021/politica/triple-asedio-sobre-manuel-adorni-entre-avance-judicial-presion-congreso-dudas-washington.html",
+          "date": "2026-05-16T12:56:41+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "El Gobierno admite desgaste en su estrategia de comunicación tras la polémica con Manuel Adorni y analiza cambios",
+          "source": "Diario Río Negro",
+          "url": "https://www.rionegro.com.ar/politica/el-gobierno-admite-desgaste-en-su-estrategia-de-comunicacion-tras-la-polemica-con-manuel-adorni-y-analiza-cambios-4576509/",
+          "date": "2026-05-16T12:19:59+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Por pedido de la Justicia, un organismo especializado revisará los números de Manuel Adorni",
+          "source": "Perfil",
+          "url": "https://www.perfil.com/noticias/judiciales/por-pedido-de-la-justicia-un-organismo-especializado-revisara-los-numeros-de-manuel-adorni.phtml",
+          "date": "2026-05-16T10:00:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "„A gatyámnál fogva még kilógathatsz, hogy jobb legyen a látvány” – Karmelita-túrája közben Magyar Péter összefutott Havasi Bertalannal, szürreális beszélgetés lett belőle",
+          "source": "444",
+          "url": "https://444.hu/2026/05/16/a-gatyamnal-fogva-meg-kilogathatsz-hogy-jobb-legyen-a-latvany-karmelita-turaja-kozben-magyar-peter-osszefutott-havasi-bertalannal-szurrealis-beszelgetes-lett-belole",
+          "date": "2026-05-16T09:39:18+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Denuncian ante la Junta Electoral la venta de bufandas de VOX y simbología franquista en la Feria de Jerez durante la jornada de reflexión",
+          "source": "Mundo Obrero",
+          "url": "https://mundoobrero.es/2026/05/16/denuncian-ante-la-junta-electoral-la-venta-de-bufandas-de-vox-y-simbologia-franquista-en-la-feria-de-jerez-durante-la-jornada-de-reflexion/",
+          "date": "2026-05-16T09:06:30+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Qué le pidieron a Santiago Caputo en EEUU, el informe que complica a Adorni y el dato que preocupa a Milei",
+          "source": "TN",
+          "url": "https://tn.com.ar/politica/2026/05/16/que-le-pidieron-a-santiago-caputo-en-eeuu-el-informe-que-complica-a-adorni-y-el-dato-que-preocupa-a-milei/",
+          "date": "2026-05-16T08:24:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "El Gobierno admite desgaste en su esquema de comunicación y evalúa alternativas para recuperar la iniciativa",
+          "source": "Infobae",
+          "url": "https://www.infobae.com/politica/2026/05/16/el-gobierno-admite-desgaste-en-su-esquema-de-comunicacion-y-evalua-alternativas-para-recuperar-la-iniciativa/",
+          "date": "2026-05-16T07:01:25+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Los clientes amigos del poder de MasBe, la consultora de coaching de Bettina Angeletti",
+          "source": "Perfil",
+          "url": "https://www.perfil.com/noticias/politica/los-clientes-amigos-del-poder-de-masbe-la-consultora-de-coaching-de-bettina-angeletti.phtml",
+          "date": "2026-05-16T05:54:43+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "El contratista de Manuel Adorni aportó nuevas pruebas en la Justicia tras admitir los pagos en negro",
+          "source": "La 100",
+          "url": "https://la100.cienradios.com/politica/el-contratista-de-manuel-adorni-aporto-nuevas-pruebas-en-la-justicia-tras-admitir-los-pagos-en-negro/",
+          "date": "2026-05-16T03:00:37+00:00",
           "category": "argentina"
         },
         {
@@ -434,45 +462,24 @@
           "category": "argentina"
         },
         {
-          "title": "Marcela Pagano denunció penalmente al presidente Javier Milei por presunto encubrimiento y omisión de denuncia",
-          "source": "Radio LV11",
-          "url": "https://www.radiolv11.com.ar/noticia/marcela-pagano-denuncio-penalmente-al-presidente-javier-milei-por-presunto-encubrimiento-y-omision-de-denuncia",
-          "date": "2026-05-15T22:27:00+00:00",
+          "title": "El contratista de Manuel Adorni se presentó espontáneamente en Comodoro Py y entregó más pruebas",
+          "source": "MDZ Online",
+          "url": "https://www.mdzol.com/politica/el-contratista-manuel-adorni-se-presento-espontaneamente-comodoro-py-y-entrego-mas-pruebas-n1521487",
+          "date": "2026-05-15T22:07:00+00:00",
           "category": "argentina"
         },
         {
-          "title": "Marcela Pagano denunció a Javier Milei por presunto encubrimiento y por sugerencia de un \"golpe de Estado\"",
-          "source": "FM Del Sol Pehuajo",
-          "url": "https://radiodelsolpehuajo.com.ar/articulo/2026/05/marcela-pagano-denuncio-a-javier-milei-por-presunto-encubrimiento-y-por-sugerencia-de-un-golpe-de-estado.php",
-          "date": "2026-05-15T20:01:33+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Marcela Pagano denunció a Javier Milei por presunto encubrimiento",
-          "source": "Página|12",
-          "url": "https://www.pagina12.com.ar/2026/05/15/marcela-pagano-denuncio-a-javier-milei-por-presunto-encubrimiento/",
-          "date": "2026-05-15T19:56:14+00:00",
-          "category": "argentina"
+          "title": "A Krausz Ferenc vezette Élvonal Alapítvány várja a párbeszédet Magyar Péterrel és a kormánnyal",
+          "source": "Telex",
+          "url": "https://telex.hu/techtud/2026/05/15/a-krausz-ferenc-vezette-elvonal-alapitvany-varja-a-parbeszedet-magyar-peterrel-es-a-kormannyal",
+          "date": "2026-05-15T20:24:12+00:00",
+          "category": "hungary"
         },
         {
           "title": "Marcela Pagano denunció a Javier Milei por presunto \"encubrimiento\" de dos delitos",
           "source": "BAE Negocios",
           "url": "https://www.baenegocios.com/politica/marcela-pagano-denuncio-a-javier-milei-por-presunto-encubrimiento-de-dos-delitos/",
           "date": "2026-05-15T19:19:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Marcela Pagano denunció a Javier Milei por presunto encubrimiento, tras hablar de un “golpe de Estado”",
-          "source": "Perfil",
-          "url": "https://www.perfil.com/noticias/politica/marcela-pagano-denuncio-a-javier-milei-por-presunto-encubrimiento-tras-hablar-de-un-golpe-de-estado.phtml",
-          "date": "2026-05-15T19:04:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Marcela Pagano denunció a Javier Milei por delitos de \"gravedad institucional\" y por haberla insultado en vivo",
-          "source": "El Destape",
-          "url": "https://www.eldestapeweb.com/politica/marcela-pagano-denuncio-javier-milei-delitos-gravedad-institucional-haberla-insultado-vivo-2026515153923",
-          "date": "2026-05-15T18:48:40+00:00",
           "category": "argentina"
         },
         {
@@ -490,24 +497,10 @@
           "category": "argentina"
         },
         {
-          "title": "La Justicia le puso un freno al ajuste de La Libertad Avanza y exigió salvar el Banco Genético",
-          "source": "Medios Rioja",
-          "url": "https://mediosrioja.com.ar/la-justicia-le-puso-un-freno-al-ajuste-de-la-libertad-avanza-y-exigio-salvar-el-banco-genetico/",
-          "date": "2026-05-15T17:06:00+00:00",
-          "category": "argentina"
-        },
-        {
           "title": "Una diputada denunció a Javier Milei por presunto encubrimiento de delitos",
           "source": "Tiempo Judicial",
           "url": "https://tiempojudicial.com/2026/05/15/una-diputada-denuncio-a-javier-milei-por-presunto-encubrimiento-de-delitos/",
           "date": "2026-05-15T16:24:17+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Corniglia confirmó la habilitación del hospital local y cruzó con dureza a La Libertad Avanza: \"Se hace politiquería sucia con la salud\"",
-          "source": "Bragado Informa",
-          "url": "https://www.bragadoinforma.com.ar/nota/30236/corniglia-confirmo-la-habilitacion-del-hospital-local-y-cruzo-con-dureza-a-la-libertad-avanza-quot-se-hace-politiqueria-sucia-con-la-salud-quot-.html",
-          "date": "2026-05-15T15:40:00+00:00",
           "category": "argentina"
         },
         {
@@ -518,82 +511,152 @@
           "category": "argentina"
         },
         {
-          "title": "La Justicia detectó otros dos viajes de Manuel Adorni a un resort de lujo en Entre Ríos",
-          "source": "MinutoUno",
-          "url": "https://www.minutouno.com/politica/la-justicia-detecto-otros-dos-viajes-manuel-adorni-un-resort-lujo-rios-n6277968",
-          "date": "2026-05-15T14:10:00+00:00",
-          "category": "argentina"
-        },
-        {
           "title": "Marcela Pagano denunció penalmente a Javier Milei por supuesto “encubrimiento” de delitos",
           "source": "Agencia Noticias Argentinas",
           "url": "https://noticiasargentinas.com/politica/marcela-pagano-denuncio-penalmente-a-javier-milei-por-supuestos--encubrimientos--de-delitos_a6a0721cad35c7ef05149da8e",
           "date": "2026-05-15T13:43:08+00:00",
           "category": "argentina"
-        },
-        {
-          "title": "Manuel Adorni se reúne con Javier Milei en Olivos",
-          "source": "Perfil",
-          "url": "https://www.perfil.com/noticias/politica/manuel-adorni-se-reune-con-javier-milei-en-olivos.phtml",
-          "date": "2026-05-15T12:52:54+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Javier Milei se reúne con Manuel Adorni en Olivos tras las nuevas revelaciones judiciales",
-          "source": "MDZ Online",
-          "url": "https://www.mdzol.com/politica/javier-milei-se-reune-manuel-adorni-olivos-las-nuevas-revelaciones-judiciales-n1521033",
-          "date": "2026-05-15T12:30:00+00:00",
-          "category": "argentina"
         }
       ],
       "first_seen": "2026-05-06T04:27:08+00:00",
-      "last_seen": "2026-05-16T04:22:50+00:00"
+      "last_seen": "2026-05-16T14:13:33+00:00"
     },
     {
       "id": "far-right-parties-exploit-immigration-tensions",
       "title": "Far-right parties exploit immigration tensions",
-      "blurb": "Right-wing parties in Spain, France, Germany, the UK, Norway, and Italy are leveraging immigration as a key electoral issue. Coverage focuses on anti-immigration rhetoric, protests, and policy proposals to curb migration, reflecting a transnational strategy to mobilize voters.",
-      "convergence": 3,
+      "blurb": "Immigration remains a central issue for far-right and right-wing parties, with recent coverage highlighting how these parties are leveraging immigration tensions to mobilize support. This theme is evident in Spain, France, Germany, the UK, Norway, and Italy, where parties like Vox, Rassemblement National, Alternative für Deutschland, Reform UK, Fremskrittspartiet, and Fratelli d'Italia are using anti-immigration rhetoric to shape policy and electoral strategies.",
+      "convergence": 4,
       "countries": [
         {
           "name": "🇪🇸 Vox",
-          "note": "Vox exploits immigration tensions in Andalusia, framing it as a threat to national identity and security."
+          "note": "Vox has intensified its anti-immigration rhetoric, particularly in the context of regional elections in Andalusia. The party's 'national priority' policies and opposition to migrant regularization have been key themes in its campaign."
         },
         {
           "name": "🇫🇷 Rassemblement National",
-          "note": "RN uses anti-immigration rhetoric to mobilize voters, particularly in response to EU migration policies."
+          "note": "Rassemblement National continues to focus on immigration as a central issue, with leaders like Jordan Bardella and Marine Le Pen advocating for stricter immigration controls and national priority policies."
         },
         {
           "name": "🇩🇪 Alternative für Deutschland",
-          "note": "AfD campaigns on anti-immigration policies, targeting asylum seekers and undocumented migrants."
+          "note": "The AfD in Germany has made immigration a cornerstone of its platform, advocating for stricter asylum policies and deportation measures. The party's rising poll numbers reflect its success in mobilizing anti-immigration sentiment."
         },
         {
           "name": "🇬🇧 Reform UK",
-          "note": "Reform UK leverages immigration tensions, advocating for stricter border controls and deportation policies."
+          "note": "Reform UK, led by Nigel Farage, has centered its platform on anti-immigration policies, including calls to ban foreign flags on public buildings and stricter border controls."
         },
         {
           "name": "🇳🇴 Fremskrittspartiet",
-          "note": "Norwegian Progress Party pushes anti-immigration policies, focusing on welfare restrictions for migrants."
+          "note": "The Progress Party in Norway has advocated for stricter immigration policies, particularly in the context of labor migration and asylum seekers."
         },
         {
           "name": "🇮🇹 Fratelli d'Italia / Lega",
-          "note": "Italian right-wing parties exploit immigration tensions, particularly in response to EU migration policies."
+          "note": "Italian right-wing parties, including Fratelli d'Italia and Lega, have focused on immigration as a key issue, advocating for stricter border controls and third-country migrant processing hubs."
         }
       ],
       "signals": [
         "shared framing",
-        "parallel protests",
         "policy imitation",
-        "contagion of rhetoric"
+        "parallel protests",
+        "electoral mobilization"
       ],
-      "article_count": 100,
+      "article_count": 45,
       "refs": [
         {
-          "title": "PP y Vox se disputan el voto andaluz de los Guardias Civiles irritados tras la muerte de dos agentes en Huelva",
-          "source": "El Independiente",
-          "url": "https://www.elindependiente.com/espana/2026/05/16/pp-vox-se-disputan-voto-andaluz-los-guardias-civiles-irritados-tras-muerte-dos-agentes-huelva/",
-          "date": "2026-05-15T23:05:42+00:00",
+          "title": "SD kritiseras för flygblad – partier kräver avgång",
+          "source": "Dagens Nyheter",
+          "url": "https://www.dn.se/sverige/sd-kritiseras-for-flygblad-partier-kraver-avgang/",
+          "date": "2026-05-16T13:22:21+00:00",
+          "category": "sweden"
+        },
+        {
+          "title": "UK: Large scale far-right and pro-Palestine protests in London",
+          "source": "Modern Ghana",
+          "url": "https://www.modernghana.com/videonews/france24/1/650169/",
+          "date": "2026-05-16T13:14:30+00:00",
+          "category": "general"
+        },
+        {
+          "title": "Thousands march in London for far-right, pro-Palestine protests",
+          "source": "France 24",
+          "url": "https://www.france24.com/en/europe/20260516-thousands-march-in-london-for-far-right-pro-palestine-protests",
+          "date": "2026-05-16T12:46:18+00:00",
+          "category": "general"
+        },
+        {
+          "title": "Manilva, un paraíso andaluz roto por el narco y el crimen: «Violaron a una chica varios magrebíes y la deja...",
+          "source": "OkDiario",
+          "url": "https://okdiario.com/andalucia/manilva-paraiso-andaluz-roto-narco-crimen-violaron-chica-varios-magrebies-dejaron-tirada-16808505",
+          "date": "2026-05-16T12:10:50+00:00",
           "category": "spain"
+        },
+        {
+          "title": "Thousands to march in parallel Nakba Day and far-right rallies in central London",
+          "source": "Middle East Eye",
+          "url": "https://www.middleeasteye.net/news/thousands-march-parallel-nakba-day-and-far-right-rallies-central-london",
+          "date": "2026-05-16T11:46:03+00:00",
+          "category": "general"
+        },
+        {
+          "title": "Starmer government bans 11 ‘far-right agitators’ from entering UK ahead of Tommy Robinson rally",
+          "source": "The Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/uk/starmer-government-bans-11-far-right-agitators-from-entering-uk-ahead-of-tommy-robinson-rally/articleshow/131135746.cms",
+          "date": "2026-05-16T10:59:00+00:00",
+          "category": "general"
+        },
+        {
+          "title": "Rival pro-Palestine, far-right protests in London as 4,000 police deployed",
+          "source": "South China Morning Post",
+          "url": "https://www.scmp.com/news/world/europe/article/3353815/rival-pro-palestine-far-right-protests-london-4000-police-deployed",
+          "date": "2026-05-16T09:50:34+00:00",
+          "category": "general"
+        },
+        {
+          "title": "Elecciones. Vox quiere más policía en Burtzeña y vincula sin datos \"el aumento de la inseguridad al incremento de la inmigración \"",
+          "source": "Barakaldo Digital",
+          "url": "http://barakaldodigital.blogspot.com/2026/05/elecciones-vox-pide-mas-policia-en.html",
+          "date": "2026-05-16T08:47:00+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Migranti, Meloni su dichiarazione di Chisinau: \"Approccio italiano è ormai anche quello dell'Europa\"",
+          "source": "Adnkronos",
+          "url": "https://www.adnkronos.com/politica/migranti-meloni-dichiarazione-di-chisinau_2n9qzcLl0zHzMJlEei4e0u",
+          "date": "2026-05-16T07:52:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Tens of thousands set to rally in London for concurrent far-right, anti-Israel protests",
+          "source": "The Times of Israel",
+          "url": "https://www.timesofisrael.com/tens-of-thousands-set-to-rally-in-london-for-concurrent-far-right-anti-israel-protests/",
+          "date": "2026-05-16T07:09:26+00:00",
+          "category": "general"
+        },
+        {
+          "title": "London rally: Police brace for massive far-right protest",
+          "source": "The Straits Times",
+          "url": "https://www.straitstimes.com/world/europe/london-police-brace-themselves-for-big-far-right-rally-counter-demo",
+          "date": "2026-05-16T06:50:18+00:00",
+          "category": "general"
+        },
+        {
+          "title": "London police brace for big far-right rally, counter pro-Palestinian protest",
+          "source": "Khaleej Times",
+          "url": "https://www.khaleejtimes.com/world/europe/london-police-brace-for-big-far-right-rally-counter-pro-palestinian-protest",
+          "date": "2026-05-16T06:09:23+00:00",
+          "category": "general"
+        },
+        {
+          "title": "La canción contra el semáforo del polémico alcalde de Vox en Jaén: \"El pueblo merece un gobernante que sepa oír\"",
+          "source": "Jaén Hoy",
+          "url": "https://www.jaenhoy.es/jaen/cancion-semaforo-polemico-alcalde-vox-puente-genave_0_2006750667.html",
+          "date": "2026-05-16T04:00:55+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "1 in 3 Reform UK voters has a positive view of Tommy Robinson",
+          "source": "politico.eu",
+          "url": "https://www.politico.eu/article/one-in-three-reform-uk-voters-positive-view-far-right-tommy-robinson/",
+          "date": "2026-05-16T02:02:12+00:00",
+          "category": "uk"
         },
         {
           "title": "‘Far-right agitators’ banned from entering UK before rally",
@@ -603,32 +666,25 @@
           "category": "general"
         },
         {
-          "title": "Abascal usa el cierre de campaña en Andalucía para agitar el fantasma del fraude electoral en las próximas generales",
-          "source": "elDiario.es",
-          "url": "https://www.eldiario.es/andalucia/abascal-cierre-campana-andalucia-agitar-fantasma-fraude-electoral-proximas-generales_1_13225590.html",
-          "date": "2026-05-15T20:24:39+00:00",
+          "title": "Abascal llama a \"no dejarse traicionar\" por Sánchez y Moreno el 17M: \"No es rechazo ni odio, es sentido común\"",
+          "source": "Ultima Hora",
+          "url": "https://www.ultimahora.es/noticias/comunidades/2026/05/15/2630617/abascal-llama-dejarse-traicionar-por-sanchez-moreno-17m-rechazo-odio-sentido-comun.html",
+          "date": "2026-05-15T19:52:56+00:00",
           "category": "spain"
         },
         {
-          "title": "Abascal aspira a recuperar la 'llave' en Andalucía tras una campaña por grandes ciudades: \"No votéis con cálculos matemáticos\"",
-          "source": "El Mundo",
-          "url": "https://www.elmundo.es/elecciones/elecciones-andalucia/2026/05/15/6a07422f21efa072188b457d.html",
-          "date": "2026-05-15T19:24:38+00:00",
-          "category": "spain"
+          "title": "Reform selects Nick Allan as Gateshead council leader",
+          "source": "BBC",
+          "url": "https://www.bbc.com/news/articles/c93600275kqo",
+          "date": "2026-05-15T18:43:24+00:00",
+          "category": "uk"
         },
         {
-          "title": "Tromsø kommune, Frp | Valgforsker om Høyres Ap-flørt: – Åpenbart at kommunikasjonen svikter på borgerlig side",
-          "source": "Nordlys",
-          "url": "https://www.nordlys.no/valgforsker-om-hoyres-ap-flort-apenbart-at-kommunikasjonen-svikter-pa-borgerlig-side/s/5-34-2325272",
-          "date": "2026-05-15T18:33:30+00:00",
-          "category": "norway"
-        },
-        {
-          "title": "„Es hat sich gerächt, dass man die AfD immer verteufelt hat“",
-          "source": "WELT",
-          "url": "https://www.welt.de/videos/video6a074eaf4166b8e84c362ddd/antje-hermenau-es-hat-sich-geraecht-dass-man-die-afd-immer-verteufelt-hat.html",
-          "date": "2026-05-15T18:10:39+00:00",
-          "category": "germany"
+          "title": "The Government Bans ‘Far-Right Agitators’ from Entering the UK",
+          "source": "Free Speech Union",
+          "url": "https://freespeechunion.org/news/the-government-bans-far-right-agitators-from-entering-the-uk",
+          "date": "2026-05-15T18:29:44+00:00",
+          "category": "general"
         },
         {
           "title": "Met police preparing for large scale far-right and pro-Palestine protests in London",
@@ -652,17 +708,17 @@
           "category": "general"
         },
         {
-          "title": "Rechte Demo in London: Großbritannien verweigert AfD-Politiker Petr Bystron die Einreise",
-          "source": "DIE ZEIT",
-          "url": "https://www.zeit.de/politik/deutschland/2026-05/afd-petr-bystron-grossbritannien-einreise-demo",
-          "date": "2026-05-15T15:44:37+00:00",
-          "category": "germany"
+          "title": "UK Blocks Far-Right Extremists as Protests Loom",
+          "source": "Devdiscourse",
+          "url": "https://www.devdiscourse.com/article/law-order/3910202-uk-blocks-far-right-extremists-as-protests-loom",
+          "date": "2026-05-15T16:26:42+00:00",
+          "category": "general"
         },
         {
-          "title": "11 people barred from coming to UK for far-right rally, says government",
-          "source": "Anadolu Ajansı",
-          "url": "https://www.aa.com.tr/en/world/11-people-barred-from-coming-to-uk-for-far-right-rally-says-government/3938774",
-          "date": "2026-05-15T14:29:20+00:00",
+          "title": "Far-right activists barred from UK ahead of Tommy Robinson rally",
+          "source": "The Guardian",
+          "url": "https://www.theguardian.com/uk-news/2026/may/15/far-right-activists-barred-uk-tommy-robinson-rally",
+          "date": "2026-05-15T14:15:00+00:00",
           "category": "general"
         },
         {
@@ -673,100 +729,107 @@
           "category": "general"
         },
         {
-          "title": "Vox y Podemos, dos talantes opuestos ante la regularización de migrantes en la Región de Murcia",
-          "source": "La Opinión de Murcia",
-          "url": "https://www.laopiniondemurcia.es/comunidad/2026/05/15/vox-talantes-opuestos-regularizacion-migrantes-130268010.html",
-          "date": "2026-05-15T13:02:28+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Far-Right Activist Jake Lang Sparks Tensions in Dearborn and Hamtramck",
-          "source": "ArabAmericanNews",
-          "url": "https://arabamericannews.com/2026/05/15/quran-burning-attempts-by-extremist-agitator-trigger-outrage-in-hamtramck-and-dearborn/",
-          "date": "2026-05-15T12:18:10+00:00",
-          "category": "general"
-        },
-        {
-          "title": "Starmer condemns Tommy Robinson rally as 11 ‘far-right agitators’ blocked from UK",
-          "source": "The Independent",
-          "url": "https://www.independent.co.uk/bulletin/news/starmer-tommy-robinson-far-right-rally-london-b2977290.html",
-          "date": "2026-05-15T11:34:00+00:00",
-          "category": "general"
-        },
-        {
-          "title": "Tommy Robinson London march to raise money for refugees - without far right knowing",
-          "source": "The Mirror",
-          "url": "https://www.mirror.co.uk/news/uk-news/tommy-robinson-march-london-2026-37159468",
-          "date": "2026-05-15T10:26:00+00:00",
-          "category": "general"
-        },
-        {
-          "title": "Far-right Israelis rally near Al-Aqsa, police block worshippers",
-          "source": "Yeni Safak English",
-          "url": "https://en.yenisafak.com/world/far-right-israelis-rally-near-al-aqsa-police-block-worshippers-3718321",
-          "date": "2026-05-15T10:12:24+00:00",
-          "category": "general"
-        },
-        {
-          "title": "Far right and pro-Palestine groups to march in London this weekend - what you need to know",
-          "source": "The Mirror",
-          "url": "https://www.mirror.co.uk/news/uk-news/tommy-robinson-pro-palestine-rally-37159584",
-          "date": "2026-05-15T09:31:00+00:00",
-          "category": "general"
-        },
-        {
-          "title": "Trentino-Alto Adige: Meloni, approvazione riforma Statuto e' traguardo storico -2-",
-          "source": "Il Sole 24 ORE",
-          "url": "https://www.ilsole24ore.com/radiocor/nRC_15.05.2026_09.41_195",
-          "date": "2026-05-15T08:02:26+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Charges pressed against far-right MP for suggesting violence against Palestinians",
-          "source": "NL Times",
-          "url": "https://nltimes.nl/2026/05/15/charges-pressed-far-right-mp-suggesting-violence-palestinians",
-          "date": "2026-05-15T05:34:17+00:00",
+          "title": "Starmer blocks 11 ‘far-Right agitators’ from UK ahead of protests",
+          "source": "The Telegraph",
+          "url": "https://www.telegraph.co.uk/news/2026/05/15/starmer-blocks-11-far-right-agitators-uk-protests-london/",
+          "date": "2026-05-15T12:58:00+00:00",
           "category": "general"
         }
       ],
       "first_seen": "2026-05-14T04:35:49+00:00",
-      "last_seen": "2026-05-16T04:22:50+00:00"
+      "last_seen": "2026-05-16T14:13:33+00:00"
     },
     {
       "id": "right-wing-leaders-face-internal-party-divisions",
       "title": "Right-wing leaders face internal party divisions",
-      "blurb": "Internal divisions within right-wing parties are a recurring theme in Poland, Spain, Italy, the UK, and Hungary. These conflicts often revolve around leadership struggles, policy disagreements, and corruption allegations, threatening party unity and electoral prospects.",
+      "blurb": "Internal divisions within right-wing and far-right parties are a recurring theme, with recent coverage highlighting conflicts in Poland, Spain, Italy, the UK, and Hungary. These divisions often revolve around leadership disputes, policy disagreements, and strategic differences, threatening the unity and electoral prospects of these parties.",
       "convergence": 3,
       "countries": [
         {
           "name": "🇵🇱 Prawo i Sprawiedliwość",
-          "note": "PiS faces internal divisions between factions led by Morawiecki and Kaczyński, with corruption allegations exacerbating tensions."
+          "note": "Poland's Prawo i Sprawiedliwość party is facing significant internal divisions, particularly between factions led by Mateusz Morawiecki and Przemysław Czarnek. These conflicts have led to public disputes and weakened the party's cohesion."
         },
         {
           "name": "🇪🇸 Vox",
-          "note": "Vox experiences internal conflicts over leadership and policy direction, leading to resignations and public disputes."
+          "note": "Vox in Spain has experienced internal divisions, including the expulsion of co-founder Javier Ortega Smith. These conflicts have raised questions about the party's direction and leadership."
         },
         {
           "name": "🇮🇹 Fratelli d'Italia / Lega",
-          "note": "Italian right-wing parties face internal divisions over policy priorities, particularly regarding immigration and EU relations."
+          "note": "Italy's right-wing coalition, including Fratelli d'Italia and Lega, has faced internal tensions over policy issues such as assisted suicide and migration. These divisions have complicated the government's ability to implement its agenda."
         },
         {
           "name": "🇬🇧 Reform UK",
-          "note": "Reform UK grapples with internal divisions over leadership and policy direction, with resignations and public disputes."
+          "note": "Reform UK has faced internal divisions, including the suspension and resignation of councillors over controversial statements and actions. These conflicts have raised questions about the party's stability and leadership."
         },
         {
           "name": "🇭🇺 Fidesz / Tisza",
-          "note": "Hungarian media highlights divisions within Fidesz over Orbán’s leadership and the rise of the Tisza Party."
+          "note": "Hungary's Fidesz party has experienced internal divisions following its election loss, with debates over the party's future direction and leadership. The new Tisza government has also faced challenges in maintaining unity."
         }
       ],
       "signals": [
-        "leadership struggles",
+        "leadership disputes",
         "policy disagreements",
-        "internal conflicts",
+        "strategic differences",
         "public disputes"
       ],
-      "article_count": 80,
+      "article_count": 35,
       "refs": [
+        {
+          "title": "Daleko od szosy",
+          "source": "rc.fm",
+          "url": "https://rc.fm/news/kalisz-warszawa-daleko-od-szosy.html",
+          "date": "2026-05-16T12:44:59+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Będzie wspólne spotkanie Morawieckiego i Czarnka. \"Jedność jest potrzebna\"",
+          "source": "TOK FM",
+          "url": "https://www.tokfm.pl/polityka/bedzie-wspolne-spotkanie-morawieckiego-i-czarnka-jednosc-jest-potrzebna",
+          "date": "2026-05-16T12:38:27+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Ważne spotkanie u prezydenta Nawrockiego ws. wojsk USA w Polsce",
+          "source": "wPolityce.pl",
+          "url": "https://wpolityce.pl/polityka/760436-wazne-spotkanie-u-prezydenta-nawrockiego-ws-wojsk-usa-w-polsce",
+          "date": "2026-05-16T12:01:36+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Będzie wspólny wiec Morawieckiego i Czarnka",
+          "source": "TVN24",
+          "url": "https://tvn24.pl/polska/spory-w-pis-bedzie-wspolny-wiec-mateusza-morawieckiego-i-przemyslawa-czarnka-st9051033",
+          "date": "2026-05-16T10:01:43+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Awantura na klubie PiS? Cieszyński: Nie było żadnych krzyków",
+          "source": "Do Rzeczy",
+          "url": "https://dorzeczy.pl/opinie/887929/awantura-na-klubie-pis-cieszynski-nie-bylo-zadnych-krzykow.html",
+          "date": "2026-05-16T09:37:00+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Odwilż w relacjach Czarnka z Morawieckim? Zapadła decyzja",
+          "source": "Wiadomości Onet",
+          "url": "https://wiadomosci.onet.pl/kraj/zapadla-decyzja-w-waskim-gronie-pis-dotyczy-czarnka-i-morawieckiego/ppsgg9f",
+          "date": "2026-05-16T08:50:50+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Zwarcie w Konfederacji. Mentzen chce pokrzyżować plany Bosaka",
+          "source": "Newsweek",
+          "url": "https://www.newsweek.pl/opinie/mentzen-walczy-z-bosakiem-chce-zablokowac-jego-koalicje-z-kaczynskim-opinia/mmf5ze6",
+          "date": "2026-05-16T06:07:00+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Szachy 5D: Awantura w PiS! Tykająca bomba, rozpad na horyzoncie?!",
+          "source": "Konfederacja",
+          "url": "https://konfederacja.pl/transmisja-live/szachy-5d-awantura-w-pis-tykajaca-bomba-rozpad-na-horyzoncie/?amp=1",
+          "date": "2026-05-16T05:18:07+00:00",
+          "category": "poland"
+        },
         {
           "title": "Fine vita, Lega divisa. Tomaello: «Farei fatica a votare quel testo»",
           "source": "Il Gazzettino",
@@ -775,18 +838,25 @@
           "category": "italy"
         },
         {
-          "title": "Sturzenegger respaldó a Adorni y celebró la baja de la inflación: “Se resolvió un problema estructural”",
-          "source": "Perfil",
-          "url": "https://www.perfil.com/noticias/politica/sturzenegger-respaldo-a-adorni-y-celebro-la-baja-de-la-inflacion-se-resolvio-un-problema-estructural.phtml",
-          "date": "2026-05-15T20:37:00+00:00",
-          "category": "argentina"
+          "title": "Drake Is Flooding the Zone Like Steve Bannon",
+          "source": "Vulture",
+          "url": "https://www.vulture.com/article/drake-maga-flooding-the-zone.html",
+          "date": "2026-05-15T21:49:10+00:00",
+          "category": "usa"
         },
         {
-          "title": "Un paso atrás: Mauricio Macri encabezó un deslucido acto y reculó en el camino de confrontación con Milei",
-          "source": "Letra P",
-          "url": "https://www.letrap.com.ar/politica/un-paso-atras-mauricio-macri-encabezo-un-deslucido-acto-y-reculo-el-camino-confrontacion-milei-n5423847",
-          "date": "2026-05-15T18:55:00+00:00",
-          "category": "argentina"
+          "title": "Gavira y Abascal cierran la campaña de las elecciones andaluzas en Sevilla cargando contra Moreno: \"Estaba pensando en Eurovisión\"",
+          "source": "El Periódico",
+          "url": "https://www.elperiodico.com/es/politica/20260515/gavira-abascal-cierran-campana-elecciones-andaluzas-130283938",
+          "date": "2026-05-15T20:15:44+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Euronext, scontro Italia-Francia su Piazza Affari: le mosse del governo Meloni e l’ipotesi golden power",
+          "source": "Milano Finanza",
+          "url": "https://www.milanofinanza.it/news/euronext-scontro-italia-francia-su-piazza-affari-le-mosse-del-governo-meloni-e-l-ipotesi-golden-202605152017222065",
+          "date": "2026-05-15T18:09:00+00:00",
+          "category": "italy"
         },
         {
           "title": "Maciej Kluczka pyta o \"rozgardiasz\" w PiS. \"Zamieszanie kreowane czy autentyczna burza?\"",
@@ -817,10 +887,10 @@
           "category": "poland"
         },
         {
-          "title": "Javier Milei recibe a Manuel Adorni en la Quinta de Olivos en medio de la investigación judicial",
-          "source": "a24.com",
-          "url": "https://www.a24.com/politica/javier-milei-recibe-manuel-adorni-la-quinta-olivos-medio-la-investigacion-judicial-n1556159",
-          "date": "2026-05-15T13:04:00+00:00",
+          "title": "Macri reúne al PRO bonaerense ante el avance de Karina Milei en PBA",
+          "source": "InfoPlatense",
+          "url": "https://www.infoplatense.com.ar/macri-reune-al-pro-bonaerense-ante-el-avance-de-karina-milei-en-pba/",
+          "date": "2026-05-15T13:25:44+00:00",
           "category": "argentina"
         },
         {
@@ -838,78 +908,15 @@
           "category": "poland"
         },
         {
-          "title": "Czy to już koniec PiS? Kolejny spór w partii Kaczyńskiego",
-          "source": "RMF24",
-          "url": "https://www.rmf24.pl/tylko-w-rmf24/rozmowa/news-czy-to-juz-koniec-pis-kolejny-spor-w-partii-kaczynskiego,nId,8082052",
-          "date": "2026-05-15T11:45:03+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Wymiana zdań Błaszczaka i Czarzastego w Sejmie. \"Robię to, co mi wasz szef kazał\"",
-          "source": "TVN24",
-          "url": "https://tvn24.pl/polska/wymiana-zdan-w-sejmie-marszalek-do-poslow-pis-robie-to-co-mi-wasz-szef-kazal-st9049719",
-          "date": "2026-05-15T11:02:48+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Rozłam w PiS? Jarosław Kaczyński \"przestał panować nad swoim najwspanialszym dzieckiem\"",
-          "source": "TVN24",
-          "url": "https://tvn24.pl/polska/rozlam-w-pis-jaroslaw-kaczynski-przestal-panowac-nad-swoim-dzieckiem-st9049322",
-          "date": "2026-05-15T10:00:24+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Gorąco w Sejmie! PiS mówi o naciskach na prezydenta RP",
-          "source": "WM.pl",
-          "url": "https://wm.pl/artykul/goraco-w-sejmie-pis-n2296168",
-          "date": "2026-05-15T09:00:00+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Politolog dr Anna Szwed: Wewnętrzny konflikt w PiS osłabia tę partię",
-          "source": "Polskie Radio Lublin",
-          "url": "https://radio.lublin.pl/2026/05/politolog-dr-anna-szwed-wewnetrzny-konflikt-w-pis-oslabia-te-partie/",
-          "date": "2026-05-15T07:12:00+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Referendum PiS ws. nielegalnej migracji. W partii narasta chaos",
-          "source": "Wprost",
-          "url": "https://www.wprost.pl/kraj/12330663/referendum-pis-ws-nielegalnej-migracji-w-partii-narasta-chaos.html",
-          "date": "2026-05-15T06:08:00+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "PiS albo zmieni koncepcję, albo będzie miał kłopoty. Ucieczka Ziobry to wisienka na torcie | Polskie demo. Odc. 29",
-          "source": "Polityka.pl",
-          "url": "https://www.polityka.pl/podkasty/polskiedemo/2342479,1,pis-albo-zmieni-koncepcje-albo-bedzie-mial-klopoty-ucieczka-ziobry-to-wisienka-na-torcie.read",
-          "date": "2026-05-15T05:04:10+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Wielki projekt PiS utonął w morzu kłótni? „Najlepiej o tym zapomnieć”",
-          "source": "Radio Zet",
-          "url": "https://wiadomosci.radiozet.pl/polityka/wielki-projekt-pis-utonal-w-morzu-klotni-najlepiej-o-tym-zapomniec",
-          "date": "2026-05-15T04:22:00+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Marszałek chce połączyć dwa szpitale: w Kaliszu i Wolicy. Pomysł dzieli polityków PiS",
-          "source": "kalisz.wyborcza.pl",
-          "url": "https://kalisz.wyborcza.pl/kalisz/7,181359,32789269,marszalek-chce-polaczyc-dwa-szpitale-w-kaliszu-i-wolicy-pomysl.html",
-          "date": "2026-05-15T03:53:00+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Wyjazd Zbigniewa Ziobry do USA zaszkodzi notowaniom PiS? Polacy zabrali głos [SONDAŻ]",
-          "source": "Wiadomości Onet",
-          "url": "https://wiadomosci.onet.pl/tylko-w-onecie/wyjazd-zbigniewa-ziobry-do-usa-zaszkodzi-pis-polacy-zabrali-glos-sondaz/2b4j6e1",
-          "date": "2026-05-15T03:00:00+00:00",
-          "category": "poland"
+          "title": "A kormányzati átadás-átvétel után is a Fidesz politikusait fenyegette Magyar Péter",
+          "source": "HírTv",
+          "url": "https://hirtv.origo.hu/ahirtvhirei/2026/05/kormanyzati-atadas-atvetel-fidesz-magyar-peter",
+          "date": "2026-05-15T12:27:11+00:00",
+          "category": "hungary"
         }
       ],
       "first_seen": "2026-05-15T04:41:38+00:00",
-      "last_seen": "2026-05-16T04:22:50+00:00"
+      "last_seen": "2026-05-16T14:13:33+00:00"
     }
   ]
 }
