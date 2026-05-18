@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-18T05:00:15+00:00",
+  "updated_at": "2026-05-18T16:16:23+00:00",
   "lookback_hours": 48,
   "model": "Mistral Large",
   "status": "ok",
@@ -7,24 +7,28 @@
     {
       "id": "far-right-parties-push-national-priority-policies",
       "title": "Far-right parties push 'national priority' policies",
-      "blurb": "Right-wing and far-right parties across Europe are intensifying their focus on 'national priority' policies, particularly in Spain, Italy, and France. This theme reflects a shared rhetorical and policy framework emphasizing national sovereignty, stricter immigration controls, and opposition to EU-driven social policies. The convergence is evident in regional elections, coalition negotiations, and public statements by party leaders.",
+      "blurb": "Right-wing and far-right parties across Europe are leveraging recent election results to demand policies that prioritize native citizens over immigrants, particularly in housing, welfare, and employment. This theme is most intense in Spain and Italy, with parallel debates in France and Germany.",
       "convergence": 5,
       "countries": [
         {
           "name": "🇪🇸 Vox",
-          "note": "Demands 'national priority' in Andalusia elections, forcing PP to negotiate policy concessions like excluding undocumented migrants from early childhood aid."
+          "note": "Demands 'national priority' in Andalusia's government negotiations, excluding undocumented migrants from early childhood aid and housing benefits."
         },
         {
           "name": "🇮🇹 Fratelli d'Italia / Lega",
-          "note": "Salvini and Meloni push for stricter immigration laws, including revoking citizenship for serious crimes, following Modena car attack."
+          "note": "Salvini proposes revoking citizenship for foreign criminals, sparking coalition tensions over immigration rhetoric."
         },
         {
           "name": "🇫🇷 Rassemblement National",
-          "note": "Marine Le Pen and Jordan Bardella advocate for national sovereignty in economic and immigration policies, positioning RN as a mainstream alternative."
+          "note": "Criticized for anti-LGBTQ+ stances in regional governments, reinforcing 'national priority' framing in cultural debates."
+        },
+        {
+          "name": "🇩🇪 Alternative für Deutschland",
+          "note": "Advocates 'remigration' policies and stricter welfare eligibility for non-citizens, aligning with the 'national priority' narrative."
         },
         {
           "name": "🇬🇧 Reform UK",
-          "note": "Campaigns on anti-immigration platform, gaining traction in local elections and influencing mainstream parties' policies."
+          "note": "Proposes scrapping 'Clean Air Zone' charges to prioritize local businesses over environmental policies, echoing 'national priority' economic focus."
         }
       ],
       "signals": [
@@ -36,10 +40,59 @@
       "article_count": 120,
       "refs": [
         {
-          "title": "El PP y Vox deberán hablar también de «prioridad nacional» en Andalucía",
-          "source": "moncloa.com",
-          "url": "https://www.moncloa.com/2026/05/18/pp-prioridad-nacional-andalucia-3377575/",
-          "date": "2026-05-18T03:15:00+00:00",
+          "title": "Vox enseña sus 15 diputados a Bonilla pero son «conscientes de la representatividad»",
+          "source": "The Objective",
+          "url": "https://theobjective.com/espana/politica/2026-05-18/vox-diputados-bonilla-conscientes-representatividad/",
+          "date": "2026-05-18T12:07:57+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Vox está «convencido» de que Moreno negociará el «cambio» pedido por los andaluces",
+          "source": "ABC",
+          "url": "https://www.abc.es/espana/andalucia/vox-convencido-moreno-negociara-cambio-pedido-andaluces-20260518140520-nts.html",
+          "date": "2026-05-18T12:05:31+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Vox “no va a desaprovechar” la oportunidad en Andalucía y cree que Juanma Moreno se sentará a negociar",
+          "source": "Servimedia",
+          "url": "https://www.servimedia.es/noticias/vox-no-va-desaprovechar-oportunidad-andalucia-cree-juanma-moreno-sentara-negociar/1412894295",
+          "date": "2026-05-18T12:05:00+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Vox avisa que va a «condicionar» el Gobierno de Andalucía, pero no aclara si exigirá a Moreno entrar en él...",
+          "source": "OkDiario",
+          "url": "https://okdiario.com/andalucia/vox-avisa-que-va-condicionar-gobierno-andalucia-pero-no-aclara-si-exigira-moreno-entrar-16818575",
+          "date": "2026-05-18T11:36:00+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Moreno defiende gobernar en solitario \"con acuerdos\" y avisa a Vox: \"Vamos a defender la prioridad andaluza\"",
+          "source": "El Mundo",
+          "url": "https://www.elmundo.es/elecciones/elecciones-andalucia/2026/05/18/6a0af358e4d4d8ed5c8b4589.html",
+          "date": "2026-05-18T11:16:49+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Ignacio Garriga (Vox) comparece tras los resultados en Andalucía, en directo",
+          "source": "El Debate",
+          "url": "https://www.eldebate.com/espana/20260518/ignacio-garriga-vox-comparece-resultados-andalucia-directo_418669.html",
+          "date": "2026-05-18T10:26:31+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Gavira (Vox): \"Los andaluces han dicho que el PP tiene que entenderse con Vox\"",
+          "source": "RTVE.es",
+          "url": "https://www.rtve.es/play/audios/las-mananas-de-rne/gavira-vox-andaluces-han-dicho-pp-tiene-entenderse-vox/17073224/",
+          "date": "2026-05-18T08:06:52+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "El calendario de Juanma Moreno para formar gobierno: deberá pactar con Vox en un proceso que puede irse más",
+          "source": "LaSexta",
+          "url": "https://www.lasexta.com/elecciones/autonomicas/calendario-juanma-moreno-formar-gobierno-debera-pactar-vox-proceso-que-puede-irse-mas-alla-verano_202605186a0aab71716e9c571473790c.html",
+          "date": "2026-05-18T06:02:25+00:00",
           "category": "spain"
         },
         {
@@ -50,45 +103,17 @@
           "category": "spain"
         },
         {
-          "title": "Vox avisa a Juan Manuel Moreno: \"Los andaluces han dejado claro que lo que quieren es prioridad nacional\"",
-          "source": "Cadena SER",
-          "url": "https://cadenaser.com/nacional/2026/05/17/vox-avisa-a-juan-manuel-moreno-los-andaluces-han-dejado-que-lo-que-quieren-es-prioridad-nacional-cadena-ser/",
-          "date": "2026-05-17T23:08:43+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox Córdoba: «Gracias a nuestro partido, habrá más prioridad nacional; más apoyo a familias; más vivienda o más empleo»",
-          "source": "ABC",
-          "url": "https://www.abc.es/espana/andalucia/cordoba/vox-cordoba-gracias-partido-prioridad-nacional-apoyo-20260518003808-nts.html",
-          "date": "2026-05-17T22:38:12+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox se hace con la llave del Gobierno de Andalucía y avisa a Moreno: \"Los andaluces quieren prioridad",
-          "source": "LaSexta",
-          "url": "https://www.lasexta.com/elecciones/autonomicas/vox-hace-llave-gobierno-andalucia-avisa-moreno-andaluces-quieren-prioridad-nacional_202605176a0a2eec716e9c57147322c9.html",
-          "date": "2026-05-17T21:11:08+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox, a la espera de que suene el teléfono: Moreno Bonilla, obligado a atender a la prioridad nacional de Abascal",
-          "source": "Elplural.com",
-          "url": "https://www.elplural.com/autonomias/andalucia/vox-espera-suene-telefono-moreno-bonilla-obligado-atender-prioridad-nacional-abascal_390259102",
-          "date": "2026-05-17T20:49:00+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "El PSOE llevará al Ayuntamiento de Valencia una moción contra la «prioridad nacional» anunciada por Vox",
+          "title": "Vox forzará a Juanma Moreno a negociar tras descartar una abstención",
           "source": "El Debate",
-          "url": "https://www.eldebate.com/espana/comunidad-valenciana/20260517/psoe-llevara-ayuntamiento-valencia-mocion-contra-prioridad-nacional-anunciada-vox_418441.html",
-          "date": "2026-05-17T16:45:00+00:00",
+          "url": "https://www.eldebate.com/espana/andalucia/20260518/vox-forzara-juanma-moreno-negociar-descartar-abstencion_418541.html",
+          "date": "2026-05-17T22:05:42+00:00",
           "category": "spain"
         },
         {
-          "title": "El PSOE acusa al alcalde de Toledo de «LGTBIfobia institucional» por ceder ante Vox",
-          "source": "ABC",
-          "url": "https://www.abc.es/espana/castilla-la-mancha/toledo/psoe-acusa-alcalde-toledo-lgtbifobia-institucional-ceder-20260517174815-nt.html",
-          "date": "2026-05-17T15:50:21+00:00",
+          "title": "Cómo han votado las ciudades de Andalucía con más población migrante: la \"prioridad nacional\" de Vox araña sobre todo al PP",
+          "source": "El HuffPost",
+          "url": "https://www.huffingtonpost.es/politica/como-han-votado-ciudades-andalucia-mas-poblacion-migrante-prioridad-nacional-vox-arana-sobre-pp-f202605.html",
+          "date": "2026-05-17T20:22:55+00:00",
           "category": "spain"
         },
         {
@@ -97,348 +122,339 @@
           "url": "https://cadenaser.com/baleares/2026/05/17/vox-exige-al-pp-dejar-fuera-de-la-atencion-temprana-a-los-menores-sin-residencia-legal-radio-mallorca/",
           "date": "2026-05-17T13:06:26+00:00",
           "category": "spain"
-        },
-        {
-          "title": "El mercado de la vivienda elige el voto: un estudio asegura que la subida del alquiler en Madrid benefició al PP y Vox entre 2015 y 2019 en los barrios con más propietarios",
-          "source": "Infobae",
-          "url": "https://www.infobae.com/espana/2026/05/17/el-mercado-de-la-vivienda-elige-el-voto-un-estudio-asegura-que-la-subida-del-alquiler-en-madrid-beneficio-al-pp-y-vox-entre-2015-y-2019-en-los-barrios-con-mas-propietarios/",
-          "date": "2026-05-17T03:06:43+00:00",
-          "category": "spain"
         }
       ],
       "first_seen": "2026-04-29T14:59:17+00:00",
-      "last_seen": "2026-05-18T05:00:15+00:00"
+      "last_seen": "2026-05-18T16:16:23+00:00"
     },
     {
       "id": "trumps-policies-dominate-global-right-wing-coverage",
       "title": "Trump’s policies dominate global right-wing coverage",
-      "blurb": "Donald Trump's foreign and domestic policies continue to shape right-wing discourse worldwide, with extensive coverage of his Iran strategy, trade deals with China, and domestic initiatives like voter eligibility checks. This theme highlights Trump's enduring influence on transnational right-wing narratives, particularly in the U.S., Poland, Argentina, and Italy, where his policies are either emulated or criticized by local right-wing factions.",
+      "blurb": "Donald Trump's foreign policy decisions, economic strategies, and domestic initiatives continue to shape right-wing media narratives worldwide. His influence is particularly strong in Poland, Argentina, and Italy, where leaders align with or react to his policies.",
       "convergence": 5,
       "countries": [
         {
           "name": "🇺🇸 MAGA / Trump",
-          "note": "Trump's Iran policies, trade deals with China, and domestic initiatives like voter eligibility checks dominate U.S. right-wing media, influencing global narratives."
+          "note": "Trump's threats to Iran, corporate equity stakes, and immigration policies drive domestic and international coverage."
         },
         {
           "name": "🇵🇱 Prawo i Sprawiedliwość",
-          "note": "PiS aligns with Trump’s 'America First' rhetoric, criticizing EU policies and emphasizing national sovereignty in defense and economic matters."
+          "note": "PiS leaders criticize U.S. troop reductions in Poland, framing it as a consequence of Trump's foreign policy shifts."
         },
         {
           "name": "🇦🇷 La Libertad Avanza",
-          "note": "Javier Milei’s government mirrors Trump’s economic policies, including deregulation and anti-'wokism' rhetoric, while facing internal divisions over U.S. alignment."
+          "note": "Javier Milei's economic policies, including privatization and deregulation, are frequently compared to Trump's corporate equity strategies."
         },
         {
           "name": "🇮🇹 Fratelli d'Italia / Lega",
-          "note": "Meloni and Salvini navigate Trump’s influence, balancing support for U.S. policies with Italy’s strategic interests in the Mediterranean."
+          "note": "Meloni's government aligns with Trump on energy policies, seeking EU exemptions for high energy costs similar to U.S. corporate bailouts."
+        },
+        {
+          "name": "🇬🇧 Reform UK",
+          "note": "Nigel Farage's Reform UK party capitalizes on Brexit fallout, echoing Trump's anti-globalist rhetoric."
         }
       ],
       "signals": [
         "policy imitation",
-        "shared framing",
         "reaction to U.S. decisions",
-        "coordinated messaging"
+        "coordinated messaging",
+        "parallel economic strategies"
       ],
-      "article_count": 150,
+      "article_count": 110,
       "refs": [
         {
-          "title": "Donald Trump’s Iran war hits Americans with $40bn fuel bill",
+          "title": "President Donald Trump issues new threat to Iran",
+          "source": "KVUE",
+          "url": "https://www.kvue.com/video/news/nation-world/president-donald-trump-issues-new-threat-to-iran/269-ee6fc5bd-8981-4735-adbd-a27b56b94bf0",
+          "date": "2026-05-18T12:26:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump's new corporate playbook: Why the administration is taking equity stakes in companies like Intel",
+          "source": "Fortune",
+          "url": "https://fortune.com/2026/05/18/trump-corporate-playbook-administration-equity-stakes-companies-intel/",
+          "date": "2026-05-18T12:19:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Americans question war with Iran as President Trump says clock is ticking",
+          "source": "CBS News",
+          "url": "https://www.cbsnews.com/chicago/video/americans-question-war-with-iran-as-president-trump-says-clock-is-ticking/",
+          "date": "2026-05-18T11:03:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "President Trump warns Iran as tensions rise after UAE drone strike",
+          "source": "cbs19.tv",
+          "url": "https://www.cbs19.tv/video/news/local/president-trump-warns-iran-as-tensions-rise-after-uae-drone-strike/501-346a1580-77ca-4730-8a25-0e8dcf978c45",
+          "date": "2026-05-18T10:39:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "President Trump says Iran 'can make a deal or they get annihilated'",
+          "source": "WHAS11",
+          "url": "https://www.whas11.com/video/news/nation-world/president-trump-says-iran-can-make-a-deal-or-they-get-annihilated/417-8387d295-f132-4df6-acc9-add7e2a3008d",
+          "date": "2026-05-18T10:00:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "US President Trump: Iran is dying to sign a deal",
+          "source": "FXStreet",
+          "url": "https://www.fxstreet.com/news/us-president-trump-iran-is-dying-to-sign-a-deal-202605180833",
+          "date": "2026-05-18T08:33:38+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "President Trump on being America's CEO-in-chief, making 'deals that no normal person would make'",
+          "source": "Fortune",
+          "url": "https://www.fortune.com/2026/05/18/trump-interview-economic-strategy-tariffs-ai-dealmaking-china-summit/",
+          "date": "2026-05-18T07:00:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Donald Trump ready to back Mauricio Pochettino's USMNT at World Cup as talks over attending games continue - the-sun.com",
+          "source": "",
+          "url": "https://www.the-sun.com/sport/16366527/donald-trump-mauricio-pochettino-usmnt-world-cup/",
+          "date": "2026-05-18T05:20:22+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "President Trump's $10 billion lawsuit against the IRS",
+          "source": "KXLY.com",
+          "url": "https://www.kxly.com/video/president-trumps-10-billion-lawsuit-against-the-irs/video_1a3416b0-5d11-55ac-8a55-916a74d0f6ae.html",
+          "date": "2026-05-18T02:02:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "US President Donald Trump warns Iran to ‘get moving’ or ‘there won’t be anything left’",
+          "source": "FXStreet",
+          "url": "https://www.fxstreet.com/news/us-president-donald-trump-warns-iran-to-get-moving-or-there-wont-be-anything-left-202605172256",
+          "date": "2026-05-17T22:56:02+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "White House says Donald Trump and Xi Jinping agreed on ‘board of trade’ at summit",
           "source": "Financial Times",
-          "url": "https://www.ft.com/content/32ff9d8d-0103-42f8-8a78-10e2216b8fe2",
-          "date": "2026-05-18T04:00:13+00:00",
+          "url": "https://www.ft.com/content/aed42b42-0ca2-4104-848a-c8bca33fd837?syn-25a6b1a6=1",
+          "date": "2026-05-17T21:02:16+00:00",
           "category": "usa"
         },
         {
-          "title": "Xi Jinping prepares to welcome Vladimir Putin to China, four days after hosting Donald Trump",
-          "source": "The Guardian",
-          "url": "https://www.theguardian.com/world/2026/may/18/xi-jinping-vladimir-putin-china-russia-four-days-after-donald-trump-us-visit",
-          "date": "2026-05-18T03:53:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "President Trump warns Iran of \"ticking clock\" for negotiations | Conflict in Iran",
-          "source": "thv11.com",
-          "url": "https://www.thv11.com/video/news/politics/president-trump-warns-iran-of-ticking-clock-for-negotiations-conflict-in-iran/91-56e3bdbc-b5fc-4828-8baf-e7f94cb525dd",
-          "date": "2026-05-18T03:42:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Trump Administration: China Set to Buy ‘Double-Digit Billions’ in US Ag Products",
-          "source": "wwbl.com",
-          "url": "https://www.wwbl.com/2026/05/17/trump-administration-china-set-to-buy-double-digit-billions-in-us-ag-products/",
-          "date": "2026-05-18T03:29:47+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Maga’s Great Un-Greatening",
-          "source": "FlaglerLive",
-          "url": "https://flaglerlive.com/trump-regret/",
-          "date": "2026-05-18T01:03:04+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "President Trump issues 'stern' warning to Iran on social media on Sunday",
-          "source": "WUSA9",
-          "url": "https://www.wusa9.com/video/news/nation-world/attack-on-iran/president-trump-issues-stern-warning-to-iran-on-social-media-on-sunday/65-ce70bb21-2113-4530-bb19-44ee7bae4ef4",
-          "date": "2026-05-17T23:27:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Trump holds prayer rally to ‘rededicate’ US as ‘one nation under God’",
-          "source": "Al Jazeera",
-          "url": "https://www.aljazeera.com/gallery/2026/5/17/trump-holds-prayer-rally-to-rededicate-us-as-one-nation-under-god",
-          "date": "2026-05-17T22:56:24+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Trump Begins Branding America’s 250th Anniversary as a Christian Celebration",
-          "source": "Mother Jones",
-          "url": "https://www.motherjones.com/politics/2026/05/trump-maga-freedom250-christian/",
-          "date": "2026-05-17T21:26:08+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Prime Minister Netanyahu, US President Trump speak on Iran updates, China visit",
-          "source": "Yahoo",
-          "url": "https://www.yahoo.com/news/articles/prime-minister-netanyahu-us-president-185727439.html",
-          "date": "2026-05-17T18:57:27+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Trump's Reversal on China Buying U.S. Farmland Angers MAGA Supporters",
-          "source": "Yahoo",
-          "url": "https://www.yahoo.com/news/articles/trumps-reversal-china-buying-u-160401400.html",
-          "date": "2026-05-17T16:04:01+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Donald Trump rejects Xi Jinping's offer on Iran conflict",
-          "source": "Fox News",
-          "url": "https://www.foxnews.com/video/6395871758112",
-          "date": "2026-05-17T14:21:13+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Donald Trump wants to make China great again",
-          "source": "Salon.com",
-          "url": "https://www.salon.com/2026/05/17/donald-trump-wants-to-make-china-great-again/",
-          "date": "2026-05-17T13:00:07+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "White House Divided as Trump Faces Choice Between Fresh Strikes and Fractured Iran Diplomacy",
-          "source": "Kyiv Post",
-          "url": "https://www.kyivpost.com/post/76309",
-          "date": "2026-05-17T10:51:38+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "President Trump’s top employees are meeting expectations, unfortunately | Editorial",
-          "source": "Inquirer.com",
-          "url": "https://www.inquirer.com/opinion/editorials/trump-cabinet-sean-duffy-firing-kash-patel-marty-makary-20260517.html",
-          "date": "2026-05-17T09:01:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "US Secretary of State approves $25.8 billion in weapons sales to Middle East allies - report",
-          "source": "The Jerusalem Post",
-          "url": "https://www.jpost.com/international/article-896356",
-          "date": "2026-05-17T04:19:06+00:00",
+          "title": "'Clock is ticking' for Iran, warns US President Trump",
+          "source": "Anadolu Ajansı",
+          "url": "https://www.aa.com.tr/en/americas/clock-is-ticking-for-iran-warns-us-president-trump/3940336",
+          "date": "2026-05-17T17:13:10+00:00",
           "category": "usa"
         }
       ],
       "first_seen": "2026-05-08T04:03:01+00:00",
-      "last_seen": "2026-05-18T05:00:15+00:00"
+      "last_seen": "2026-05-18T16:16:23+00:00"
     },
     {
-      "id": "car-attack-in-modena-sparks-immigration-debate",
-      "title": "Car attack in Modena sparks immigration debate",
-      "blurb": "A vehicular attack in Modena, Italy, has ignited a transnational debate on immigration, integration, and security policies. Right-wing parties in Italy, France, Spain, and the UK are leveraging the incident to advocate for stricter immigration controls, revocation of citizenship for criminals, and 'remigration' policies. The coverage reflects a shared narrative linking immigration to public safety concerns.",
+      "id": "rise-of-far-right-parties-in-european-polls",
+      "title": "Rise of far-right parties in European polls",
+      "blurb": "Far-right parties are gaining significant traction in European polls, with the AfD in Germany and Vox in Spain leading the surge. This trend is mirrored in France, Sweden, and Hungary, where right-wing parties are reshaping political landscapes.",
       "convergence": 4,
       "countries": [
         {
-          "name": "🇮🇹 Fratelli d'Italia / Lega",
-          "note": "Salvini and Meloni use Modena attack to push for stricter immigration laws, including revoking citizenship for serious crimes."
-        },
-        {
-          "name": "🇫🇷 Rassemblement National",
-          "note": "RN seizes on Modena incident to reinforce anti-immigration stance, calling for stricter integration policies and deportations."
+          "name": "🇩🇪 Alternative für Deutschland",
+          "note": "AfD leads polls in Saxony-Anhalt with 41%, alarming mainstream parties and sparking debates over democratic risks."
         },
         {
           "name": "🇪🇸 Vox",
-          "note": "Vox links Modena attack to broader immigration concerns, demanding 'national priority' policies in Andalusia."
+          "note": "Gains decisive influence in Andalusia's government formation, becoming the second-largest party in several municipalities."
         },
         {
-          "name": "🇬🇧 Reform UK",
-          "note": "Reform UK uses Modena incident to bolster anti-immigration platform, calling for stricter border controls and deportation policies."
-        }
-      ],
-      "signals": [
-        "shared framing",
-        "reaction to external event",
-        "policy imitation",
-        "contagion of rhetoric"
-      ],
-      "article_count": 80,
-      "refs": [
-        {
-          "title": "Salim, è scontro sulle origini",
-          "source": "Quotidiano Nazionale",
-          "url": "https://www.quotidiano.net/politica/salim-e-scontro-sulle-origini-68f40791",
-          "date": "2026-05-18T03:19:33+00:00",
-          "category": "italy"
+          "name": "🇫🇷 Rassemblement National",
+          "note": "Jordan Bardella's potential candidacy in 2027 reflects RN's growing influence, fueled by anti-immigration and anti-EU rhetoric."
         },
         {
-          "title": "La lettera all'Ue sull'energia, Mattarella e Meloni dai feriti di Modena, Sinner re di Roma",
-          "source": "Corriere della Sera",
-          "url": "https://www.corriere.it/il-punto/prima-ora/26_maggio_18/la-lettera-all-ue-sull-energia-mattarella-e-meloni-dai-feriti-di-modena-sinner-re-di-roma.shtml",
-          "date": "2026-05-18T00:26:02+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Attentato a Modena, Tajani contro Salvini",
-          "source": "La Stampa",
-          "url": "https://www.lastampa.it/politica/2026/05/18/news/attentato_a_modena_tajani_contro_salvini-15626082/",
-          "date": "2026-05-17T23:00:00+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Auto su folla a Modena, Lega: È attacco terroristico",
-          "source": "Sky TG24",
-          "url": "https://tg24.sky.it/politica/video/2026/05/17/auto-su-folla-a-modena-lega-e-attacco-terroristico-1098853",
-          "date": "2026-05-17T20:57:09+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Mattarella e Meloni dai feriti, El Koudri non risponde ai pm",
-          "source": "ANSA",
-          "url": "https://www.ansa.it/sito/notizie/cronaca/2026/05/17/mattarella-e-meloni-dai-feriti-el-koudri-non-risponde-ai-pm_1c8f7017-518a-4d69-a0d6-f842099954bb.html",
-          "date": "2026-05-17T18:59:00+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "AfD im Aufwind: Es braucht einen neuen Pakt zwischen Regierung und Bürgern",
-          "source": "Merkur",
-          "url": "https://www.merkur.de/politik/afd-im-aufwind-es-braucht-einen-neuen-pakt-zwischen-regierung-und-buergern-94310431.html",
-          "date": "2026-05-17T17:25:53+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Tragedia di Modena, la Lega cavalca la xenofobia e Tajani attacca Salvini: “L’investitore è cittadino italiano”",
-          "source": "Globalist.it",
-          "url": "https://www.globalist.it/politics/2026/05/17/tragedia-di-modena-la-lega-cavalca-la-xenofobia-e-tajani-attacca-salvini-linvestitore-e-cittadino-italiano/",
-          "date": "2026-05-17T17:00:00+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Polemiche dopo Modena. Meloni e Tajani lasciano solo Salvini",
-          "source": "HuffPost Italia",
-          "url": "https://www.huffingtonpost.it/politica/2026/05/17/news/meloni_salvini_modena_rimpatri-21937241/",
-          "date": "2026-05-17T16:19:00+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Modena divide il centrodestra. Salvini vuole la stretta, Vannacci la remigrazione, Tajani: «El Koudri è italiano»",
-          "source": "Il Messaggero",
-          "url": "https://www.ilmessaggero.it/politica/modena_centrodestra_diviso_salvini_vannacci_tajani-9537967.html",
-          "date": "2026-05-17T15:37:10+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Auto sulla folla a Modena, Salvini: \"Stop permessi di soggiorno\". Tajani: \"El Koudri è italiano\"",
-          "source": "il Giornale",
-          "url": "https://www.ilgiornale.it/news/interni/auto-sulla-folla-modena-salvini-stop-permessi-soggiorno-2665880.html",
-          "date": "2026-05-17T13:54:34+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Auto sulla folla a Modena e Lega e Vannacci attaccano su Salim El Koudri, sindaco Mezzetti: \"Vedo avvoltoi\"",
-          "source": "Virgilio",
-          "url": "https://www.virgilio.it/notizie/auto-sulla-folla-a-modena-e-lega-e-vannacci-attaccano-su-salim-el-koudri-sindaco-mezzetti-vedo-avvoltoi-1756127",
-          "date": "2026-05-17T12:12:00+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Modena, la strage annunciata del silenzio: Mattarella e Meloni tra i feriti, resta l’ombra dei mancati controlli",
-          "source": "triestenews",
-          "url": "https://www.triesteallnews.it/2026/05/modena-la-strage-annunciata-del-silenzio-mattarella-e-meloni-tra-i-feriti-resta-lombra-dei-mancati-controlli/",
-          "date": "2026-05-17T10:40:06+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Modena, lite a destra sui permessi. Salvini: stop a chi delinque. Tajani: l’investitore è italiano",
-          "source": "la Repubblica",
-          "url": "https://www.repubblica.it/politica/2026/05/17/news/salvini_tajani_modena_auto_strage_reazioni-425351385/?rss",
-          "date": "2026-05-17T09:31:30+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Salvini cavalca la rabbia dopo Modena, e propone: «Revoca del permesso di soggiorno per chi delinque",
-          "source": "La Sicilia",
-          "url": "https://www.lasicilia.it/news/italia-mondo/3040832/salvini-cavalca-la-rabbia-dopo-modena-e-propone-revoca-del-permesso-di-soggiorno-per-chi-delinque.html",
-          "date": "2026-05-17T08:07:00+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Modena: per l’investitore l’accusa è di strage. Mattarella: grazie a chi lo ha fermato",
-          "source": "RSI Radiotelevisione svizzera",
-          "url": "https://www.rsi.ch/info/mondo/Modena-per-l%E2%80%99investitore-l%E2%80%99accusa-%C3%A8-di-strage.-Mattarella-grazie-a-chi-lo-ha-fermato--3746965.html",
-          "date": "2026-05-17T05:36:28+00:00",
-          "category": "italy"
-        }
-      ],
-      "first_seen": "2026-05-17T14:16:08+00:00",
-      "last_seen": "2026-05-18T05:00:15+00:00"
-    },
-    {
-      "id": "internal-divisions-within-far-right-parties",
-      "title": "Internal divisions within far-right parties",
-      "blurb": "Far-right and right-wing parties in Poland, Hungary, Argentina, and Germany are grappling with internal divisions, leadership challenges, and factional infighting. These conflicts are driven by ideological differences, personal rivalries, and strategic disagreements over alliances and policy directions. The coverage highlights the fragility of right-wing coalitions and the potential for fragmentation.",
-      "convergence": 4,
-      "countries": [
-        {
-          "name": "🇵🇱 Prawo i Sprawiedliwość",
-          "note": "PiS faces internal strife over leadership, with factions led by Morawiecki and Ziobro clashing over strategy and alliances."
+          "name": "🇸🇪 Sverigedemokraterna",
+          "note": "SD's policies on elderly care and immigration continue to shape Sweden's political discourse, with rising support in polls."
         },
         {
           "name": "🇭🇺 Fidesz / Tisza",
-          "note": "Tisza Party challenges Fidesz’s dominance, exposing divisions over governance style, corruption, and EU relations."
-        },
-        {
-          "name": "🇦🇷 La Libertad Avanza",
-          "note": "Javier Milei’s government struggles with infighting, particularly between Karina Milei and Santiago Caputo, over policy and leadership."
-        },
-        {
-          "name": "🇩🇪 Alternative für Deutschland",
-          "note": "AfD faces internal conflicts over leadership and extremism, with factions clashing over strategy ahead of regional elections."
+          "note": "Fidesz's historic collapse contrasts with Tisza Party's rise, highlighting Hungary's shifting political dynamics."
         }
       ],
       "signals": [
         "parallel elections",
-        "internal strife",
-        "leadership challenges",
-        "factional infighting"
+        "policy contagion",
+        "shared framing",
+        "electoral success"
       ],
-      "article_count": 90,
+      "article_count": 95,
       "refs": [
         {
-          "title": "A luxizás visszaütött az egész Fidesz-közösségre – van ebből visszaút?",
+          "title": "Analyse - Institut für Menschenrechte bezeichnet AfD als \"Gefahr für Menschen mit Behinderungen\" - Partei wehrt sich",
+          "source": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/institut-fuer-menschenrechte-bezeichnet-afd-als-gefahr-fuer-menschen-mit-behinderungen-partei-wehrt--100.html",
+          "date": "2026-05-18T12:24:53+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "AfD in Sachsen-Anhalt: Was Ulrich Siegmund für den Wahlsieg plant",
+          "source": "RP Online",
+          "url": "https://rp-online.de/politik/deutschland/afd-in-sachsen-anhalt-was-siegmund-fuer-eine-machtuebernahme-tut_aid-148489335",
+          "date": "2026-05-18T11:50:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Partei \"immer rechtsextremer\": Experte sieht massiv steigende Bereitschaft, AfD zu wählen",
+          "source": "Ntv",
+          "url": "https://www.n-tv.de/politik/Experte-sieht-massiv-steigende-Bereitschaft-AfD-zu-waehlen-id30831595.html",
+          "date": "2026-05-18T11:22:48+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "AfD überholt Union in Umfragen",
+          "source": "WEB.DE",
+          "url": "https://web.de/magazine/politik/videos/shorts/afd-ueberholt-union-umfragen-42282094",
+          "date": "2026-05-18T10:06:19+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Das Kreuzchen bei der AfD ist immer weniger mit Scham behaftet",
+          "source": "B.Z. – Die Stimme Berlins",
+          "url": "https://www.bz-berlin.de/ticker/das-kreuzchen-bei-der-afd-ist-immer-weniger-mit-scham-behaftet",
+          "date": "2026-05-18T07:52:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "„Összedőlt a kártyavár, amelyet eddig Fidesznek hívtak” – hihetetlen adatokat közölt a Publicus Intézet",
           "source": "atv.hu",
-          "url": "https://www.atv.hu/belfold/20260518/fidesz-gazdagodas-vereseg-orban/",
-          "date": "2026-05-18T04:06:00+00:00",
+          "url": "https://www.atv.hu/belfold/20260518/publicus-fidesz-szavazok/",
+          "date": "2026-05-18T07:09:00+00:00",
           "category": "hungary"
+        },
+        {
+          "title": "Umfrage-Beben für AfD und Union: Experten warnen: „Zeit für Schwarz-Rot wird knapp …“",
+          "source": "BILD",
+          "url": "https://www.bild.de/politik/inland/umfrage-beben-fuer-afd-und-union-experten-warnen-zeit-fuer-schwarz-rot-wird-knapp-6a098bb3c3a4b30c5691d513",
+          "date": "2026-05-18T05:55:47+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "AfD baut den Vorsprung weiter aus",
+          "source": "BILD",
+          "url": "https://www.bild.de/politik/afd-baut-den-vorsprung-weiter-aus-6a082e1c639442857fa21005",
+          "date": "2026-05-18T04:48:44+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Die schmerzhafte Wahrheit über die AfD - T-Online",
+          "source": "",
+          "url": "https://www.t-online.de/nachrichten/tagesanbruch/id_101258108/afd-es-droht-eine-boese-ueberraschung-.html",
+          "date": "2026-05-18T02:39:30+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Expertin warnt: Ohne Reformoffensive wächst AfD weiter rasant",
+          "source": "Hasepost",
+          "url": "https://hasepost.de/expertin-warnt-ohne-reformoffensive-waechst-afd-weiter-rasant-713640/",
+          "date": "2026-05-17T22:09:09+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "AfD baut Führung aus",
+          "source": "The Pioneer",
+          "url": "https://www.thepioneer.de/graphics/afd-baut-fuhrung-aus-oidf1z",
+          "date": "2026-05-17T19:33:24+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "AfD baut Vorsprung aus – Union fällt auf 23 Prozent",
+          "source": "Tabula Rasa Magazin",
+          "url": "https://www.tabularasamagazin.de/hermann-binkert-insa-sonntagsfrage-afd-steigt-auf-28-prozent-union-verliert-weiter/mdxlljyqkh2x/",
+          "date": "2026-05-17T17:49:23+00:00",
+          "category": "germany"
+        }
+      ],
+      "first_seen": "2026-05-17T14:16:08+00:00",
+      "last_seen": "2026-05-18T16:16:23+00:00"
+    },
+    {
+      "id": "internal-divisions-within-far-right-parties",
+      "title": "Internal divisions within far-right parties",
+      "blurb": "Far-right parties across Europe and the Americas are grappling with internal divisions, leadership challenges, and public scandals. These fractures are particularly evident in Poland, Hungary, Argentina, and Germany, where ideological and personal conflicts threaten party unity.",
+      "convergence": 4,
+      "countries": [
+        {
+          "name": "🇵🇱 Prawo i Sprawiedliwość",
+          "note": "PiS faces internal feuds between Morawiecki and Czarnek factions, with Ziobro's escape to the U.S. exacerbating tensions."
+        },
+        {
+          "name": "🇭🇺 Fidesz / Tisza",
+          "note": "Fidesz's historic collapse fuels internal criticism, while Tisza Party struggles with governance challenges and public scandals."
+        },
+        {
+          "name": "🇦🇷 La Libertad Avanza",
+          "note": "Javier Milei's government faces internal conflicts over corruption allegations, with factions led by Bullrich, Villarruel, and Caputo clashing."
+        },
+        {
+          "name": "🇩🇪 Alternative für Deutschland",
+          "note": "AfD's rising extremism and leadership disputes, particularly in Saxony-Anhalt, threaten its electoral momentum."
+        },
+        {
+          "name": "🇬🇧 Reform UK",
+          "note": "Reform UK faces scandals over racist remarks by councillors, undermining its credibility ahead of local elections."
+        }
+      ],
+      "signals": [
+        "parallel scandals",
+        "leadership disputes",
+        "ideological fractures",
+        "public backlash"
+      ],
+      "article_count": 80,
+      "refs": [
+        {
+          "title": "Kaczyński niechcący pokazał, jak fatalna jest sytuacja w PiS. Ratunek jest tylko jeden",
+          "source": "natemat.pl",
+          "url": "https://natemat.pl/653428,kaczynski-niechcacy-pokazal-jak-fatalna-jest-sytuacja-w-pis-ratunek-jest-tylko-jeden",
+          "date": "2026-05-18T12:17:22+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Publicus: 20 százalék alatt a Fidesz, Orbán tábora a választás óta egymillió szavazót veszített",
+          "source": "pecsma.hu",
+          "url": "https://www.pecsma.hu/publicus-20-szazalek-alatt-a-fidesz-a-valasztas-ota-egymillio-szavazot-veszitett/",
+          "date": "2026-05-18T11:28:03+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "AfD gründet in Mittelfranken Partei-Kaderschmiede",
+          "source": "Fränkischer Tag",
+          "url": "https://www.fraenkischertag.de/ueberregional/politik/geheimtreffen-in-mittelfranken-hoecke-gruendet-bayerische-afd-akademie-art-548110",
+          "date": "2026-05-18T10:01:18+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Szykuje się tornado zmian? „Morawiecki staje w ostrzej kontrze”",
+          "source": "TOK FM",
+          "url": "https://www.tokfm.pl/polityka/szykuje-sie-tornado-zmian-morawiecki-staje-w-ostrzej-kontrze",
+          "date": "2026-05-18T08:22:10+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Ukryta strona finansów PiS. Sprawozdanie pokazuje, ile naprawdę zebrał Kaczyński",
+          "source": "natemat.pl",
+          "url": "https://natemat.pl/653728,ukryta-strona-finansow-pis-sprawozdanie-pokazuje-ile-naprawde-zebral-kaczynski",
+          "date": "2026-05-18T08:04:15+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Kusiciel Morawiecki. Mami posłów PiS, choć drżą przed Kaczyńskim",
+          "source": "Newsweek",
+          "url": "https://www.newsweek.pl/polska/polityka/jak-dlugo-przemyslaw-czarnek-bedzie-kandydatem-pis-on-nie-jest-figurantem/6dtk4ky",
+          "date": "2026-05-18T06:47:47+00:00",
+          "category": "poland"
         },
         {
           "title": "„Skłócił ze sobą wiele osób, a teraz zwiał”. Ostre przetasowania w kolebce wyborczej PiS",
           "source": "Radio Zet",
           "url": "https://wiadomosci.radiozet.pl/polityka/opuscil-pis-chwali-konfederacje-janusz-kowalski-zmieni-barwy",
           "date": "2026-05-18T04:02:00+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Wywołuje skandale, pakuje PiS w kłopoty. \"Skłóciła nas z Kościołem\"",
-          "source": "Newsweek",
-          "url": "https://www.newsweek.pl/polska/polityka/wielkie-ambicje-barbary-nowak-pis-wpadl-przez-nia-w-powazne-klopoty/zfkpdjk",
-          "date": "2026-05-18T04:00:00+00:00",
           "category": "poland"
         },
         {
@@ -463,211 +479,145 @@
           "category": "poland"
         },
         {
-          "title": "«Te avisé que te estaban cercando los traidores»: Marcela Paganó cruzó a Milei tras la polémica con Martín Menem",
-          "source": "El Intransigente",
-          "url": "https://elintransigente.com/2026/05/te-avise-que-te-estaban-cercando-los-traidores-marcela-pagano-cruzo-a-milei-tras-la-polemica-con-martin-menem/",
-          "date": "2026-05-17T17:56:21+00:00",
+          "title": "Crece la tensión en el Gobierno por la situación de Adorni",
+          "source": "RosarioPlus",
+          "url": "https://www.rosarioplus.com/actualidad/politica/crece-la-tension-en-el-gobierno-por-la-situacion-de-adorni_a6a0a00b40cadbb303cd7a369",
+          "date": "2026-05-17T17:54:42+00:00",
           "category": "argentina"
         },
         {
-          "title": "Martín Menem: “Milei va a ser el primer presidente no peronista reelecto\"",
-          "source": "Diagonales",
-          "url": "https://www.diagonales.com/nacion/martin-menem---milei-va-a-ser-el-primer-presidente-no-peronista-reelecto-_a6a09e8bf0a3ce392691f315f?output=amp",
-          "date": "2026-05-17T16:19:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Javier Milei, la interna libertaria y el conflicto que volvió a sacudir al Gobierno",
-          "source": "CFIN Noticias",
-          "url": "https://www.cfin.com.ar/destacados/javier-milei-interna-libertaria-santiago-caputo-menem/",
-          "date": "2026-05-17T13:58:21+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Mauricio Macri, encerrado en su propia trampa",
-          "source": "Letra P",
-          "url": "https://www.letrap.com.ar/mauricio-macri-encerrado-su-propia-trampa-n5423864",
-          "date": "2026-05-17T13:02:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "La Libertad Avanza en llamas: tres frentes internos que desgastan al Gobierno de Milei",
-          "source": "InfoPlatense",
-          "url": "https://www.infoplatense.com.ar/la-libertad-avanza-en-llamas-tres-frentes-internos-que-desgastan-al-gobierno-de-milei/",
-          "date": "2026-05-17T11:38:01+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "El “riesgo Milei”: cómo el escándalo de Adorni alteró la estrategia política del oficialismo",
-          "source": "TN",
-          "url": "https://tn.com.ar/opinion/2026/05/17/riesgo-milei-la-emocionalidad-presidencial-y-el-olvido-del-pragmatismo/",
-          "date": "2026-05-17T09:00:01+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Tensión en el Gobierno: la frialdad de Karina Milei con Adorni contrasta con el apoyo cerrado del Presidente",
-          "source": "Infobae",
-          "url": "https://www.infobae.com/politica/2026/05/17/tension-en-el-gobierno-la-frialdad-de-karina-milei-con-adorni-contrasta-con-el-apoyo-cerrado-del-presidente/",
-          "date": "2026-05-17T05:44:34+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "\"Stan Wyjątkowy\". Ziobro zwiał do Ameryki. Kaczyński wściekł się na Morawieckiego. Kurski na celowniku Żurka",
-          "source": "Wiadomości Onet",
-          "url": "https://wiadomosci.onet.pl/kraj/stan-wyjatkowy-ziobro-zwial-do-ameryki-kaczynski-wsciekl-sie-na-morawieckiego-kurski/cp10bkd",
-          "date": "2026-05-17T04:29:42+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Fuerte interna en el oficialismo: denuncias, carpetazos y tensión entre Karina Milei y Santiago Caputo",
-          "source": "Agencia NOVA",
-          "url": "https://www.agencianova.com/nota.asp?n=2026_5_17&id=167483&id_tiponota=4",
-          "date": "2026-05-17T03:02:28+00:00",
+          "title": "Estalla la interna libertaria por una cuenta de X presuntamente administrada por Martín Menem",
+          "source": "Data Diario",
+          "url": "https://www.datadiario.com/politica/estalla-la-interna-libertaria-por-una-cuenta-de-x-presuntamente-administrada-por-martin-menem-202651711370",
+          "date": "2026-05-17T14:49:46+00:00",
           "category": "argentina"
         }
       ],
       "first_seen": "2026-05-17T14:16:08+00:00",
-      "last_seen": "2026-05-18T05:00:15+00:00"
+      "last_seen": "2026-05-18T16:16:23+00:00"
     },
     {
-      "id": "rise-of-far-right-parties-in-european-polls",
-      "title": "Rise of far-right parties in European polls",
-      "blurb": "Far-right parties in Germany, Sweden, France, and Hungary are gaining significant traction in polls and elections, reflecting a broader shift toward nationalist and anti-establishment politics. This theme captures the growing electoral success of these parties, their influence on mainstream politics, and the challenges they pose to traditional center-right and center-left parties.",
-      "convergence": 4,
+      "id": "energy-crisis-fuels-eu-fiscal-rule-debates",
+      "title": "Energy crisis fuels EU fiscal rule debates",
+      "blurb": "The ongoing energy crisis in Europe has reignited debates over EU fiscal rules, with Italy and Germany leading calls for exemptions to address soaring energy costs. This theme reflects broader tensions between national priorities and EU fiscal constraints.",
+      "convergence": 3,
       "countries": [
         {
-          "name": "🇩🇪 Alternative für Deutschland",
-          "note": "AfD leads polls in Saxony-Anhalt and Mecklenburg-Vorpommern, with 28-29% support, forcing mainstream parties to adapt."
+          "name": "🇮🇹 Fratelli d'Italia / Lega",
+          "note": "Meloni urges EU to extend fiscal derogations for energy crisis spending, risking tensions with Brussels."
         },
         {
-          "name": "🇸🇪 Sverigedemokraterna",
-          "note": "SD gains influence in Sweden, shaping government policies on immigration and integration, despite internal divisions."
+          "name": "🇩🇪 Alternative für Deutschland",
+          "note": "AfD's rise fuels debates over energy policies, with mainstream parties pressured to address voter concerns over high costs."
+        },
+        {
+          "name": "🇪🇸 Vox",
+          "note": "Criticizes PP's energy policies in Andalusia, demanding national priority in energy subsidies and infrastructure."
+        },
+        {
+          "name": "🇵🇱 Prawo i Sprawiedliwość",
+          "note": "PiS proposes laws to reveal EU climate policy costs in electricity bills, blaming Brussels for high energy prices."
         },
         {
           "name": "🇫🇷 Rassemblement National",
-          "note": "RN consolidates support ahead of 2027 presidential elections, with nearly 50% of French voters considering it a viable option."
-        },
-        {
-          "name": "🇭🇺 Fidesz / Tisza",
-          "note": "Tisza Party challenges Fidesz’s dominance, reshaping Hungary’s political landscape with a focus on anti-corruption and EU relations."
+          "note": "RN's energy policies focus on reducing dependence on foreign energy sources, aligning with broader EU debates."
         }
       ],
       "signals": [
-        "parallel elections",
-        "electoral success",
-        "policy influence",
-        "contagion of rhetoric"
+        "reaction to EU decision",
+        "policy imitation",
+        "shared framing",
+        "national vs. EU priorities"
       ],
-      "article_count": 70,
+      "article_count": 60,
       "refs": [
         {
-          "title": "Forscher: Offenheit für AfD wächst trotz mehr Radikalität",
-          "source": "WELT",
-          "url": "https://www.welt.de/regionales/berlin/article6a0a8f26639442857fa22af4/forscher-offenheit-fuer-afd-waechst-trotz-mehr-radikalitaet.html",
-          "date": "2026-05-18T04:04:03+00:00",
-          "category": "germany"
+          "title": "Tra i 27 Paesi Ue l’Italia è quello che paga più cara l’elettricità. Meloni di nuovo alla carica sul Patto di stabilità, niet di Bruxelles",
+          "source": "Greenreport",
+          "url": "https://www.greenreport.it/news/nuove-energie/61822-tra-i-27-paesi-ue-litalia-e-quello-che-paga-piu-cara-lelettricita-meloni-di-nuovo-alla-carica-sul-patto-di-stabilita-niet-di-bruxelles",
+          "date": "2026-05-18T11:59:44+00:00",
+          "category": "italy"
         },
         {
-          "title": "Sonntagsfrage: Vorsprung der AfD wächst weiter",
-          "source": "BILD",
-          "url": "https://www.bild.de/politik/sonntagsfrage-vorsprung-der-afd-waechst-weiter-6a082e3f639442857fa21009",
-          "date": "2026-05-18T03:00:13+00:00",
-          "category": "germany"
+          "title": "Bruxelles gela Meloni: nessuna deroga al Patto per il caro energia (Irina Smirnova)",
+          "source": "FarodiRoma",
+          "url": "https://www.farodiroma.it/bruxelles-gela-meloni-nessuna-deroga-al-patto-per-il-caro-energia-irina-smirnova/",
+          "date": "2026-05-18T11:35:38+00:00",
+          "category": "italy"
         },
         {
-          "title": "Die schmerzhafte Wahrheit über die AfD - T-Online",
-          "source": "",
-          "url": "https://www.t-online.de/nachrichten/tagesanbruch/id_101258108/afd-es-droht-eine-boese-ueberraschung-.html",
-          "date": "2026-05-18T02:39:30+00:00",
-          "category": "germany"
+          "title": "CARO ENERGIA: MELONI CHIEDE ALL’U.E. UNA DEROGA LA PATTO DI STABILITA’, MA VON DER LEYEN CHIUDE",
+          "source": "Radio Onda d`Urto",
+          "url": "https://www.radiondadurto.org/2026/05/18/caro-energia-meloni-chiede-allu-e-una-deroga-la-patto-di-stabilita-ma-von-der-leyen-chiude/",
+          "date": "2026-05-18T09:45:06+00:00",
+          "category": "italy"
         },
         {
-          "title": "Wie die AfD hinter den Kulissen fürs Regieren plant",
-          "source": "STERN.de",
-          "url": "https://www.stern.de/politik/deutschland/5-minuten-talk-podcast/wie-die-afd-hinter-den-kulissen-fuers-regieren-plant-37390650.html",
-          "date": "2026-05-18T02:01:13+00:00",
-          "category": "germany"
+          "title": "Meloni all’Ue: \"Deroga al Patto di Stabilità contro il caro energia\"",
+          "source": "Il Sole 24 ORE",
+          "url": "https://stream24.ilsole24ore.com/video/italia/meloni-all-ue-deroga-patto-stabilita-contro-caro-energia/AIbBHO8C",
+          "date": "2026-05-18T08:45:49+00:00",
+          "category": "italy"
         },
         {
-          "title": "Expertin warnt: Ohne Reformoffensive wächst AfD weiter rasant",
-          "source": "Hasepost",
-          "url": "https://hasepost.de/expertin-warnt-ohne-reformoffensive-waechst-afd-weiter-rasant-713640/",
-          "date": "2026-05-17T22:09:09+00:00",
-          "category": "germany"
+          "title": "La lettera di Meloni a von der Leyen per un Patto di stabilità «soft»",
+          "source": "opificiumagazine.it",
+          "url": "https://www.opificiumagazine.it/la-lettera-di-meloni-a-von-der-leyen-per-un-patto-di-stabilita-soft/",
+          "date": "2026-05-18T08:13:02+00:00",
+          "category": "italy"
         },
         {
-          "title": "AfD baut Führung aus",
-          "source": "The Pioneer",
-          "url": "https://www.thepioneer.de/graphics/afd-baut-fuhrung-aus-oidf1z",
-          "date": "2026-05-17T19:33:24+00:00",
-          "category": "germany"
+          "title": "Meloni scrive a von der Leyen: \"Derogare a Patto stabilità per spese energia\"",
+          "source": "la Repubblica",
+          "url": "https://finanza.repubblica.it/News/2026/05/18/meloni_scrive_a_von_der_leyen_derogare_a_patto_stabilita_per_spese_energia_-17/",
+          "date": "2026-05-18T07:49:00+00:00",
+          "category": "italy"
         },
         {
-          "title": "AfD baut Vorsprung aus – Union fällt auf 23 Prozent",
-          "source": "Tabula Rasa Magazin",
-          "url": "https://www.tabularasamagazin.de/hermann-binkert-insa-sonntagsfrage-afd-steigt-auf-28-prozent-union-verliert-weiter/mdxlljyqkh2x/",
-          "date": "2026-05-17T17:49:23+00:00",
-          "category": "germany"
+          "title": "Meloni chiede una deroga al Patto di Stabilità per il nuovo shock economico, ma l'Ue chiude",
+          "source": "RaiNews",
+          "url": "https://www.rainews.it/video/2026/05/meloni-chiede-una-deroga-al-patto-di-stabilita-per-il-nuovo-shock-economico-ma-lue-chiude-7da094ca-8bbb-449a-9b2f-0af8c7cecc3b.html",
+          "date": "2026-05-18T07:02:46+00:00",
+          "category": "italy"
         },
         {
-          "title": "„Zensur an der Schule“: Was eine AfD-Regierung in Sachsen-Anhalt für die Bildung bedeutet",
-          "source": "Frankfurter Rundschau",
-          "url": "https://www.fr.de/politik/zensur-an-der-schule-was-eine-afd-regierung-in-sachsen-anhalt-fuer-die-bildung-bedeutet-zr-94310376.html",
-          "date": "2026-05-17T16:26:55+00:00",
-          "category": "germany"
+          "title": "Lettera di Meloni a Von der Leyen: \"Deroghe al patto anche per energia o Safe a rischio\"",
+          "source": "Sky TG24",
+          "url": "https://tg24.sky.it/politica/2026/05/18/lettera-meloni-von-der-leyen",
+          "date": "2026-05-18T06:30:24+00:00",
+          "category": "italy"
         },
         {
-          "title": "Mit dieser Strategie will Weidel in Deutschland an die Macht (B+)",
-          "source": "Blick",
-          "url": "https://www.blick.ch/ausland/29-prozent-fuer-die-afd-mit-dieser-strategie-will-weidel-in-deutschland-an-die-macht-id21956228.html",
-          "date": "2026-05-17T14:55:18+00:00",
-          "category": "germany"
+          "title": "Lettera di Meloni a von der Leyen: “Estendere la deroga del Patto di Stabilità anche all’energia”",
+          "source": "Affaritaliani",
+          "url": "https://www.affaritaliani.it/esteri/lettera-di-meloni-a-von-der-leyen-estendere-la-deroga-del-patto-di-stabilita-anche-allenergia.html",
+          "date": "2026-05-18T04:33:15+00:00",
+          "category": "italy"
         },
         {
-          "title": "AfD bei fast 30 Prozent: „Jetzt muss sich Union entscheiden”",
-          "source": "FOCUS online",
-          "url": "https://www.focus.de/politik/deutschland/afd-bei-fast-30-prozent-jetzt-muss-sich-union-entscheiden_148370b1-c041-462c-88c0-41a3449f7aba.html",
-          "date": "2026-05-17T14:01:27+00:00",
-          "category": "germany"
+          "title": "La lettera all'Ue sull'energia, Mattarella e Meloni dai feriti di Modena, Sinner re di Roma",
+          "source": "Corriere della Sera",
+          "url": "https://www.corriere.it/il-punto/prima-ora/26_maggio_18/la-lettera-all-ue-sull-energia-mattarella-e-meloni-dai-feriti-di-modena-sinner-re-di-roma.shtml",
+          "date": "2026-05-18T00:26:02+00:00",
+          "category": "italy"
         },
         {
-          "title": "Fotos: Die bekanntesten Politiker der AfD seit Parteigründung",
-          "source": "RP Online",
-          "url": "https://rp-online.de/politik/deutschland/fotos-das-sind-bekanntesten-politike-der-afd-seit-parteigruendung_bid-18100277",
-          "date": "2026-05-17T12:42:00+00:00",
-          "category": "germany"
+          "title": "Energia, Meloni scrive a von der Leyen: \"Estendere deroga al Patto per rispondere a priorità cittadini\"",
+          "source": "OglioPoNews",
+          "url": "https://www.oglioponews.it/2026/05/17/energia-meloni-scrive-a-von-der-leyen-estendere-deroga-al-patto-per-rispondere-a-priorita-cittadini/",
+          "date": "2026-05-17T22:07:03+00:00",
+          "category": "italy"
         },
         {
-          "title": "Wie die Regierung der AfD die nächste Steilvorlage liefert",
-          "source": "Augsburger Allgemeine",
-          "url": "https://www.augsburger-allgemeine.de/politik/afd-klettert-in-umfrage-auf-hoechsten-bundesweiten-wert-114246432",
-          "date": "2026-05-17T11:11:39+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "SPD-Mann Maier warnt wegen AfD-Plänen vor „Staatsstreich”",
-          "source": "FOCUS online",
-          "url": "https://www.focus.de/politik/deutschland/spd-mann-maier-warnt-wegen-afd-plaenen-vor-staatsstreich_05ae84db-edf8-4cc1-9aa4-79e33017593f.html",
-          "date": "2026-05-17T09:10:00+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Merz verliert weiter - Neuer Höchststand: AfD klettert auf 29 Prozent",
-          "source": "Kronen Zeitung",
-          "url": "https://www.krone.at/4144696",
-          "date": "2026-05-17T07:48:00+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "So hoch wie noch nie: AfD klettert in Umfragen auf 29 Prozent",
-          "source": "DiePresse.com",
-          "url": "https://www.diepresse.com/24372552/so-hoch-wie-noch-nie-afd-klettert-in-umfragen-auf-29-prozent",
-          "date": "2026-05-17T06:44:44+00:00",
-          "category": "germany"
+          "title": "Meloni a von der Leyen: la deroga al Patto per la difesa va estesa all’energia",
+          "source": "Il Sole 24 ORE",
+          "url": "https://www.ilsole24ore.com/art/meloni-von-der-leyen-deroga-patto-la-difesa-va-estesa-all-energia-AI1elw7C",
+          "date": "2026-05-17T17:03:32+00:00",
+          "category": "italy"
         }
       ],
-      "first_seen": "2026-05-17T14:16:08+00:00",
-      "last_seen": "2026-05-18T05:00:15+00:00"
+      "first_seen": "2026-05-18T16:16:23+00:00",
+      "last_seen": "2026-05-18T16:16:23+00:00"
     }
   ]
 }
