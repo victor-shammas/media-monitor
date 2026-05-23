@@ -1,353 +1,396 @@
 {
-  "updated_at": "2026-05-23T04:30:37+00:00",
+  "updated_at": "2026-05-23T14:19:37+00:00",
   "lookback_hours": 48,
   "model": "Mistral Large",
   "status": "ok",
   "themes": [
     {
+      "id": "mass-protests-demand-spanish-pms-resignation",
+      "title": "Mass protests demand Spanish PM’s resignation",
+      "blurb": "Spain saw tens of thousands march in Madrid demanding Pedro Sánchez’s resignation over corruption scandals, with Vox and PP leaders joining the protests. Similar anti-government demonstrations have emerged in other European countries, reflecting a broader trend of public discontent with ruling parties.",
+      "convergence": 5,
+      "countries": [
+        {
+          "name": "🇪🇸 Vox",
+          "note": "Organized and participated in mass protests in Madrid demanding Sánchez’s resignation over corruption scandals like the Plus Ultra case."
+        },
+        {
+          "name": "🇪🇸 PP",
+          "note": "Joined Vox in supporting the protests, amplifying calls for Sánchez’s resignation and early elections."
+        },
+        {
+          "name": "🇮🇹 Fratelli d'Italia / Lega",
+          "note": "Coverage of protests in Spain as part of broader European discontent with ruling parties, framing it as a cross-national trend."
+        },
+        {
+          "name": "🇫🇷 Rassemblement National",
+          "note": "Highlighted Spain’s protests as part of a broader narrative of political instability and corruption in Europe."
+        }
+      ],
+      "signals": [
+        "shared framing",
+        "policy imitation",
+        "parallel protests",
+        "transnational discontent"
+      ],
+      "article_count": 45,
+      "refs": [
+        {
+          "title": "Tens of thousands march in Madrid to demand Spanish prime minister resigns",
+          "source": "Devdiscourse",
+          "url": "https://www.devdiscourse.com/article/law-order/3919381-tens-of-thousands-march-in-madrid-to-demand-spanish-prime-minister-resigns",
+          "date": "2026-05-23T12:55:38+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "La extrema derecha sale a las calles en Madrid para fijar como \"prioridad nacional\" la \"expulsión\" de Sánchez",
+          "source": "elDiario.es",
+          "url": "https://www.eldiario.es/politica/extrema-derecha-sale-calles-madrid-fijar-prioridad-nacional-expulsion-sanchez_1_13244864.html",
+          "date": "2026-05-23T11:38:36+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Miles de personas exigen a Sánchez que dimita en una marcha en Madrid apoyada por Vox y PP",
+          "source": "Vozpopuli",
+          "url": "https://www.vozpopuli.com/espana/miles-de-personas-exigen-a-sanchez-que-dimita-en-una-marcha-en-madrid-apoyada-por-vox-y-pp.html",
+          "date": "2026-05-23T10:55:21+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Multitudinaria marcha en Madrid exige la dimisión de Sánchez con el respaldo de Vox y PP",
+          "source": "Demócrata",
+          "url": "https://www.democrata.es/politica/multitudinaria-marcha-en-madrid-exige-la-dimision-de-sanchez-con-el-respaldo-de-vox-y-pp/",
+          "date": "2026-05-23T10:24:46+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Miles de personas piden en Madrid la dimisión de Sánchez y la detención de Zapatero en una marcha apoyada por Vox y PP",
+          "source": "El Mundo",
+          "url": "https://www.elmundo.es/espana/2026/05/23/6a117ad6e85ece405c8b45c0.html",
+          "date": "2026-05-23T10:04:04+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Arranca la manifestación en Colón para exigir la dimisión inmediata de Pedro Sánchez",
+          "source": "CLMPress",
+          "url": "https://clmpress.com/n/2026/05/arranca-la-manifestacion-en-colon-para-exigir-la-dimision-inmediata-de-pedro-sanchez/",
+          "date": "2026-05-23T09:07:14+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Miles de personas piden la dimisión de Sánchez en Madrid",
+          "source": "Canal Extremadura",
+          "url": "https://www.canalextremadura.es/noticias/nacional/miles-de-personas-piden-la-dimision-de-sanchez-en-madrid",
+          "date": "2026-05-23T08:30:02+00:00",
+          "category": "spain"
+        }
+      ],
+      "first_seen": "2026-05-23T14:19:37+00:00",
+      "last_seen": "2026-05-23T14:19:37+00:00"
+    },
+    {
       "id": "far-right-parties-push-national-priority-policies",
       "title": "Far-right parties push 'national priority' policies",
-      "blurb": "Right-wing and far-right parties across Europe are intensifying their focus on 'national priority' policies, which prioritize citizens over immigrants in access to public services, housing, and welfare. This theme is evident in Spain, Italy, and France, where parties like Vox, Lega, and Rassemblement National are advocating for stricter immigration controls and preferential treatment for nationals.",
+      "blurb": "Far-right parties across Europe are advocating for policies that prioritize citizens over immigrants, such as restricting access to public services and housing. This theme has gained traction in Spain, Italy, and France, with parties like Vox, Fratelli d'Italia, and Rassemblement National leading the charge.",
       "convergence": 4,
       "countries": [
         {
           "name": "🇪🇸 Vox",
-          "note": "Vox demands 'national priority' in healthcare and housing, arguing that immigrants should not receive the same benefits as Spanish citizens."
+          "note": "Advocates for 'national priority' policies, including restrictions on migrant access to public services and housing."
         },
         {
           "name": "🇮🇹 Fratelli d'Italia / Lega",
-          "note": "Lega pushes for policies that prioritize Italian citizens in welfare and public services, aligning with broader nationalist rhetoric."
+          "note": "Supports policies that prioritize Italian citizens in public services, aligning with broader far-right narratives."
         },
         {
           "name": "🇫🇷 Rassemblement National",
-          "note": "Marine Le Pen advocates for stricter immigration policies and national priority in social benefits, reinforcing the party's anti-immigration stance."
+          "note": "Promotes policies that prioritize French citizens, such as restricting welfare benefits for immigrants."
         },
         {
-          "name": "🇪🇸 Vox (Andalusia)",
-          "note": "Vox in Andalusia pushes for 'national priority' in regional policies, demanding that public resources be reserved for Spanish citizens."
+          "name": "🇳🇴 Fremskrittspartiet",
+          "note": "Advocates for stricter immigration policies and prioritizing Norwegian citizens in public services."
         }
       ],
       "signals": [
         "policy imitation",
         "shared framing",
-        "parallel elections"
+        "parallel legislative efforts"
       ],
-      "article_count": 20,
+      "article_count": 30,
       "refs": [
         {
-          "title": "PP y Vox maniobran para evitar que Mazón y Llorca voten en las Corts seguir con la investigación de la dana",
+          "title": "Vox pide al PP que esté \"a la altura del momento grave\" y presente una moción de censura",
+          "source": "Infobae",
+          "url": "https://www.infobae.com/espana/agencias/2026/05/23/vox-pide-al-pp-que-este-a-la-altura-del-momento-grave-y-presente-una-mocion-de-censura/",
+          "date": "2026-05-23T13:17:37+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "De la cautela ante Hitler a la tibieza ante Vox y Le Pen: ¿está la Iglesia repitiendo errores del pasado?",
+          "source": "Religión Digital",
+          "url": "https://www.religiondigital.org/opinion/cautela-hitler-tibieza-vox-le_1_1454706.html",
+          "date": "2026-05-23T12:22:30+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Izquierda Unida y Podemos de Tomelloso critican una moción de Vox y alertan de su impacto en derechos y servicios públicos",
+          "source": "Cadena SER",
+          "url": "https://cadenaser.com/castillalamancha/2026/05/22/izquierda-unida-y-podemos-de-tomelloso-critican-una-mocion-de-vox-y-alertan-de-su-impacto-en-derechos-y-servicios-publicos-radio-azul/",
+          "date": "2026-05-22T11:23:55+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Adelante Andalucía promete usar \"todas las herramientas\" para evitar que un pacto PP-Vox \"ataque derechos\" ciudadanos",
+          "source": "Europa Press",
+          "url": "https://www.europapress.es/andalucia/noticia-adelante-andalucia-promete-usar-todas-herramientas-evitar-pacto-pp-vox-ataque-derechos-ciudadanos-20260522111854.html",
+          "date": "2026-05-22T09:18:54+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Adelante Andalucía se cierra a cualquier diálogo con Vox en el Parlamento pese a admitir que tiene la llave de la legislatura",
           "source": "elDiario.es",
-          "url": "https://www.eldiario.es/comunitat-valenciana/pp-vox-maniobran-evitar-mazon-llorca-voten-corts-seguir-investigacion-dana_1_13242020.html",
-          "date": "2026-05-22T21:00:23+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "El PSOE seguirá «presionando» a PP y Vox en las Cortes para que se posicionen sobre las sentencias del trasvase",
-          "source": "ABC",
-          "url": "https://www.abc.es/espana/castilla-la-mancha/psoe-seguira-presionando-pp-vox-cortes-posicionen-20260522184704-nt.html",
-          "date": "2026-05-22T16:47:05+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox carga contra las zonas tensionadas en Asturias: «Provocan miedo entre los propietarios»",
-          "source": "El Comercio",
-          "url": "https://www.elcomercio.es/aviles/vox-carga-zonas-tensionadas-asturias-provocan-miedo-20260522175837-nt.html",
-          "date": "2026-05-22T15:58:37+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox rechaza implantar zonas tensionadas en Asturias por ser \"un ataque directo a la propiedad privada\", y advierte de sus consecuencias",
-          "source": "LNE",
-          "url": "https://www.lne.es/asturias/canal-parlamento/2026/05/22/vox-rechaza-implantar-zonas-tensionadas-130543828.html",
-          "date": "2026-05-22T13:08:11+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "“Prioridad nacional”: inconstitucional, inhumana y, de propina, estúpida",
-          "source": "Diario digital Nueva Tribuna",
-          "url": "https://www.nuevatribuna.es/articulo/actualidad/vox-pp-prioridad-nacional-inconstitucional-inhumana-estupida/20260521231531250545.html",
-          "date": "2026-05-22T06:24:54+00:00",
+          "url": "https://www.eldiario.es/andalucia/adelante-andalucia-cierra-dialogo-vox-parlamento-pese-admitir-llave-legislatura_1_13241835.html",
+          "date": "2026-05-22T10:37:07+00:00",
           "category": "spain"
         }
       ],
       "first_seen": "2026-04-29T14:59:17+00:00",
-      "last_seen": "2026-05-23T04:30:37+00:00"
+      "last_seen": "2026-05-23T14:19:37+00:00"
     },
     {
       "id": "trumps-policies-dominate-global-right-wing-coverage",
       "title": "Trump’s policies dominate global right-wing coverage",
-      "blurb": "Donald Trump's policies and political maneuvers continue to dominate right-wing and far-right media narratives worldwide. From immigration reforms to economic strategies, Trump's influence is evident in the U.S., Poland, Argentina, and the UK, where his policies are either emulated or criticized by local right-wing factions.",
-      "convergence": 5,
+      "blurb": "Trump’s policies, including immigration restrictions, AI regulations, and military actions, are heavily influencing right-wing narratives worldwide. His administration’s decisions are frequently cited by right-wing parties in Poland, Argentina, and the UK as models for their own policies.",
+      "convergence": 4,
       "countries": [
         {
           "name": "🇺🇸 MAGA / Trump",
-          "note": "Trump's immigration policies, such as restricting green card applications, are central to his administration's agenda and receive extensive coverage."
+          "note": "Trump’s policies on immigration, AI, and military actions are central to global right-wing narratives."
         },
         {
           "name": "🇵🇱 Prawo i Sprawiedliwość",
-          "note": "Poland's PiS party aligns with Trump's nationalist policies, particularly in defense and immigration, and highlights U.S.-Poland military cooperation."
+          "note": "Frequently references Trump’s policies as a model for Poland’s approach to security and immigration."
         },
         {
           "name": "🇦🇷 La Libertad Avanza",
-          "note": "Javier Milei's government in Argentina frequently references Trump's economic policies, particularly deregulation and tax cuts, as a model for reform."
+          "note": "Aligns with Trump’s economic and deregulatory policies, often citing them as inspiration."
         },
         {
           "name": "🇬🇧 Reform UK",
-          "note": "Reform UK echoes Trump's anti-immigration rhetoric, advocating for stricter border controls and reduced migration."
+          "note": "Advocates for policies similar to Trump’s, particularly on immigration and economic deregulation."
         }
       ],
       "signals": [
         "policy imitation",
-        "shared framing",
-        "coordinated messaging"
+        "coordinated messaging",
+        "parallel policy debates"
       ],
-      "article_count": 30,
+      "article_count": 50,
       "refs": [
+        {
+          "title": "A New Social Security Garnishment Is Coming, Courtesy of the Trump Administration -- and There Are 2 Perfectly Legal Ways You Can Avoid It",
+          "source": "The Motley Fool",
+          "url": "https://www.fool.com/retirement/2026/05/23/social-security-garnishment-2-legal-ways-to-avoid/",
+          "date": "2026-05-23T13:13:05+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump administration’s AI executive order shifts to voluntary model sharing with government",
+          "source": "Crypto Briefing",
+          "url": "https://cryptobriefing.com/trump-ai-executive-order-voluntary-model-sharing/",
+          "date": "2026-05-23T13:08:31+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump administration requiring people to apply for green cards outside the US",
+          "source": "wusa9.com",
+          "url": "https://www.wusa9.com/video/news/politics/immigration-news/trump-administration-requiring-people-to-apply-for-green-cards-outside-the-us/65-4c4b87a7-2d63-4f5a-ac0e-6bd58cfd17bd",
+          "date": "2026-05-23T11:54:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "ABW mówi o rosyjskim wywiadzie. W tle były polityk obozu PiS?",
+          "source": "Polityka Super Express",
+          "url": "https://polityka.se.pl/wiadomosci/abw-mowi-o-rosyjskim-wywiadzie-w-tle-byly-polityk-obozu-pis-aa-NSPV-KLJn-ZvaD.html",
+          "date": "2026-05-23T10:37:00+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Trump's plan to limit student-loan forgiveness for public servants is inching closer to borrowers",
+          "source": "Business Insider",
+          "url": "https://www.businessinsider.com/trump-limit-pslf-student-loan-forgiveness-getting-closer-borrowers-relief-2026-5",
+          "date": "2026-05-23T08:56:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump administration to change policy for green card applicants",
+          "source": "AZ Family",
+          "url": "https://www.azfamily.com/2026/05/23/trump-administration-change-policy-green-card-applicants/",
+          "date": "2026-05-23T04:33:00+00:00",
+          "category": "usa"
+        },
         {
           "title": "Trump administration restricts most green card applications from within U.S.",
           "source": "MS NOW",
           "url": "https://www.ms.now/news/trump-administration-restricts-most-green-card-applications-from-within-u-s",
           "date": "2026-05-23T00:10:14+00:00",
           "category": "usa"
-        },
-        {
-          "title": "Trump administration to make foreigners leave US to apply for green cards",
-          "source": "Financial Times",
-          "url": "https://www.ft.com/content/5d4c3de6-07d9-436e-8822-2dbafd10774a",
-          "date": "2026-05-22T22:48:37+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Trump reverses course, announces 5,000 additional U.S. troops for Poland",
-          "source": "The New Voice of Ukraine",
-          "url": "https://english.nv.ua/nation/united-states-to-send-an-additional-5-000-troops-to-poland-trump-s-statement-50610103.html",
-          "date": "2026-05-22T09:18:00+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Trump announces sending additional 5,000 US troops to Poland",
-          "source": "ukranews.com",
-          "url": "https://ukranews.com/en/news/1153358-trump-announces-sending-additional-5-000-us-troops-to-poland",
-          "date": "2026-05-22T06:50:20+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Trump says he's sending 5,000 more troops to Poland, stirring confusion about US presence in Europe",
-          "source": "The Korea Times",
-          "url": "https://www.koreatimes.co.kr/amp/world/20260522/trump-says-hes-sending-5000-more-troops-to-poland-stirring-confusion-about-us-presence-in-europe",
-          "date": "2026-05-22T05:21:00+00:00",
-          "category": "poland"
         }
       ],
       "first_seen": "2026-05-08T04:03:01+00:00",
-      "last_seen": "2026-05-23T04:30:37+00:00"
+      "last_seen": "2026-05-23T14:19:37+00:00"
     },
     {
       "id": "rise-of-far-right-parties-in-european-polls",
       "title": "Rise of far-right parties in European polls",
-      "blurb": "Far-right parties across Europe are gaining traction in polls, reflecting a broader shift toward nationalist and anti-establishment politics. This trend is particularly strong in Germany, Sweden, France, and Norway, where parties like AfD, Sverigedemokraterna, and Rassemblement National are either leading or making significant electoral gains.",
+      "blurb": "Far-right parties are gaining significant traction in European polls, with parties like AfD in Germany, Sverigedemokraterna in Sweden, and Rassemblement National in France leading in surveys. This trend reflects growing public dissatisfaction with mainstream parties and immigration policies.",
       "convergence": 4,
       "countries": [
         {
           "name": "🇩🇪 Alternative für Deutschland",
-          "note": "AfD leads polls in several German states, capitalizing on anti-immigration and anti-EU sentiment."
+          "note": "Leads polls in several German states, reflecting growing far-right support."
         },
         {
           "name": "🇸🇪 Sverigedemokraterna",
-          "note": "Sverigedemokraterna maintains strong polling numbers, focusing on immigration and law-and-order policies."
+          "note": "Gaining influence in Sweden, pushing for stricter immigration policies and nationalist agendas."
         },
         {
           "name": "🇫🇷 Rassemblement National",
-          "note": "Marine Le Pen's party is leading in French polls, positioning itself as the main opposition to Macron's government."
+          "note": "Leads French polls, positioning itself as the dominant far-right force ahead of the 2027 elections."
         },
         {
           "name": "🇳🇴 Fremskrittspartiet",
-          "note": "Fremskrittspartiet leads Norwegian polls, advocating for stricter immigration policies and tax cuts."
+          "note": "Increasingly influential in Norway, advocating for stricter immigration controls and nationalist policies."
         }
       ],
       "signals": [
         "parallel elections",
-        "contagion of rhetoric",
-        "shared framing"
+        "shared framing",
+        "policy contagion"
       ],
-      "article_count": 25,
+      "article_count": 35,
       "refs": [
         {
-          "title": "Race for French presidency sees ex-PM Philippe as early favourite to beat populists",
-          "source": "BBC",
-          "url": "https://www.bbc.com/news/articles/c4g0410gnv5o",
-          "date": "2026-05-22T23:07:55+00:00",
+          "title": "Albig plädiert für Kooperation mit der AfD: Die Debatte, die die SPD lieber nicht führen würde",
+          "source": "Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/politik/albig-pladiert-fur-kooperation-mit-der-afd-die-debatte-die-die-spd-lieber-nicht-fuhren-wurde-15632950.html",
+          "date": "2026-05-23T13:19:20+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "„Ein Parteienverbot ist ein undemokratisches Mittel“",
+          "source": "WELT",
+          "url": "https://www.welt.de/videos/video6a117e049c51a75bc47530d0/debatte-ueber-afd-verbot-ein-parteienverbot-ist-ein-undemokratisches-mittel.html",
+          "date": "2026-05-23T12:49:40+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "“Il a bien fait” : Marine Le Pen vole au secours d’un célèbre acteur en pleine polémique",
+          "source": "Gala",
+          "url": "https://www.gala.fr/l_actu/news_de_stars/il-a-bien-fait-marine-le-pen-vole-au-secours-d-un-celebre-acteur-en-pleine-polemique-20260523",
+          "date": "2026-05-23T10:18:35+00:00",
           "category": "france"
         },
         {
-          "title": "Gigantene gjør som de vil",
-          "source": "Nationen",
-          "url": "https://www.nationen.no/hvem-har-skylda-for-hoye-matpriser-dagligvarekjedene-skrur-opp-prisene/o/5-148-912410",
-          "date": "2026-05-22T18:01:02+00:00",
-          "category": "norway"
+          "title": "Åkesson: SD vill ha tre av de tyngsta ministerposterna",
+          "source": "tidningensyre.se",
+          "url": "https://tidningensyre.se/2026/23-maj-2026/akesson-sd-vill-ha-tre-av-de-tyngsta-ministerposterna/",
+          "date": "2026-05-23T06:51:44+00:00",
+          "category": "sweden"
         },
         {
-          "title": "Morawiecki krytykuje Tuska: Zachowuje się jak małpa z brzytwą",
-          "source": "Do Rzeczy",
-          "url": "https://dorzeczy.pl/opinie/891073/morawiecki-krytykuje-tuska-zachowuje-sie-jak-malpa-z-brzytwa.html",
-          "date": "2026-05-22T15:56:00+00:00",
-          "category": "poland"
+          "title": "Sachsens CDU-Ministerpräsident über Wirtschaft, AfD und Brandmauern",
+          "source": "Euronews.com",
+          "url": "https://de.euronews.com/my-europe/2026/05/23/sachsens-ministerprasident-kretschmer-wirtschaft-afd-brandmauer",
+          "date": "2026-05-23T06:00:26+00:00",
+          "category": "germany"
         },
         {
-          "title": "Kommunevalget 2027, Tromsø Frp | Kan Fremskrittspartiet overta styringen av Tromsø?",
-          "source": "Nordnorsk debatt",
-          "url": "https://www.nordnorskdebatt.no/kan-fremskrittspartiet-overta-styringen-av-tromso/o/5-124-430583",
-          "date": "2026-05-22T11:43:04+00:00",
-          "category": "norway"
-        },
-        {
-          "title": "Kristersson och Andersson i skattebråk: \"Stenrik ska betala\"",
-          "source": "Nyheter24",
-          "url": "https://nyheter24.se/nyheter/politik/1484068-kristersson-vill-pressa-andersson-om-skatter",
-          "date": "2026-05-22T09:03:18+00:00",
+          "title": "SD vill ha nära hälften av ministerposterna",
+          "source": "Aftonbladet",
+          "url": "https://www.aftonbladet.se/nyheter/a/rrnPXm/sd-vill-ha-nara-halften-av-ministerposterna",
+          "date": "2026-05-23T02:54:36+00:00",
           "category": "sweden"
         }
       ],
       "first_seen": "2026-05-17T14:16:08+00:00",
-      "last_seen": "2026-05-23T04:30:37+00:00"
+      "last_seen": "2026-05-23T14:19:37+00:00"
     },
     {
       "id": "internal-divisions-within-far-right-parties",
       "title": "Internal divisions within far-right parties",
-      "blurb": "Far-right parties in multiple countries are grappling with internal divisions, often centered around leadership disputes, policy disagreements, or personal rivalries. These divisions are evident in Poland, Hungary, Argentina, and Italy, where factions within parties like PiS, Fidesz, La Libertad Avanza, and Lega are openly clashing.",
-      "convergence": 4,
+      "blurb": "Far-right parties across Europe and the Americas are experiencing internal divisions, with factions competing for influence and leadership. These conflicts are evident in Poland’s PiS, Hungary’s Fidesz, Argentina’s La Libertad Avanza, and Italy’s Lega.",
+      "convergence": 3,
       "countries": [
         {
           "name": "🇵🇱 Prawo i Sprawiedliwość",
-          "note": "PiS faces internal strife over leadership and policy direction, particularly regarding relations with the U.S. and EU."
+          "note": "Faces internal divisions over leadership and policy direction, particularly regarding EU relations."
         },
         {
           "name": "🇭🇺 Fidesz / Tisza",
-          "note": "Fidesz and the Tisza Party are locked in a power struggle, with accusations of corruption and authoritarianism dividing the right."
+          "note": "Experiencing factionalism between Orbán loyalists and reformists within the party."
         },
         {
           "name": "🇦🇷 La Libertad Avanza",
-          "note": "Javier Milei's government is plagued by infighting, particularly between factions led by Karina Milei and Patricia Bullrich."
+          "note": "Internal conflicts between factions led by Milei’s sister and advisors over policy and leadership."
         },
         {
           "name": "🇮🇹 Fratelli d'Italia / Lega",
-          "note": "Lega faces internal divisions over its alliance with Fratelli d'Italia, with Salvini struggling to maintain party unity."
+          "note": "Divisions over leadership and policy direction, particularly regarding alliances with other right-wing parties."
         }
       ],
       "signals": [
         "parallel elections",
-        "contagion of rhetoric",
-        "internal power struggles"
+        "internal power struggles",
+        "factionalism"
       ],
-      "article_count": 22,
+      "article_count": 25,
       "refs": [
         {
-          "title": "Governo diviso sui tagli. Salvini: “Ora basta”. Meloni: “Sacrifici utili”",
-          "source": "la Repubblica",
-          "url": "https://www.repubblica.it/politica/2026/05/23/news/tagli_governo_salvini_meloni-425364355/",
-          "date": "2026-05-22T23:00:00+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Salvini: “Tutti in ritiro”. Ma Zaia e Giorgetti disertano il meeting",
-          "source": "la Repubblica",
-          "url": "https://www.repubblica.it/politica/2026/05/23/news/salvini_lega_raduno_zaia_giorgetti_assenti-425364455/",
-          "date": "2026-05-22T23:00:00+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Interna en La Libertad Avanza: Diego Raus advirtió que el Gobierno “no tiene sustentabilidad política”",
-          "source": "Perfil",
-          "url": "https://www.perfil.com/noticias/canal-e/interna-en-la-libertad-avanza-diego-raus-advirtio-que-el-gobierno-no-tiene-sustentabilidad-politica.phtml",
-          "date": "2026-05-22T21:28:19+00:00",
+          "title": "Mauricio Macri desembarcó en Mendoza para fortalecer al PRO y volvió a marcar distancia de Javier Milei",
+          "source": "Radio Facundo Quiroga",
+          "url": "https://facundoquiroga.com/mauricio-macri-desembarco-en-mendoza-para-fortalecer-al-pro-y-volvio-a-marcar-distancia-de-javier-milei/",
+          "date": "2026-05-23T13:03:06+00:00",
           "category": "argentina"
         },
         {
-          "title": "Máxima tensión en el oficialismo: Karina Milei excluyó a Patricia Bullrich de las reuniones de gabinete",
-          "source": "Exclusiva | Plataforma de noticias",
-          "url": "https://exclusiva.com.ar/hoy/maxima-tension-en-el-oficialismo-karina-milei-excluyo-a-patricia-bullrich-de-las-reuniones-de-gabinete/",
-          "date": "2026-05-21T20:24:35+00:00",
+          "title": "Héroes y tumbas: Javier Milei baja impuestos a los ricos, pero el mundo debate políticas para que paguen más",
+          "source": "Letra P",
+          "url": "https://www.letrap.com.ar/economia/heroes-y-tumbas-javier-milei-baja-impuestos-los-ricos-pero-el-mundo-debate-politicas-que-paguen-mas-n5424011",
+          "date": "2026-05-23T11:12:00+00:00",
           "category": "argentina"
         },
         {
-          "title": "La interna libertaria: cómo escaló la guerra tuitera que Milei no quiere -o no puede- parar",
-          "source": "La Nación",
-          "url": "https://www.lanacion.com.ar/politica/la-interna-libertaria-como-escalo-la-guerra-tuitera-que-milei-no-quiere-o-no-puede-parar-nid21052026/",
-          "date": "2026-05-22T06:08:00+00:00",
+          "title": "Javier Milei ante el punto de no retorno en la interna libertaria",
+          "source": "Diario Neuquino",
+          "url": "https://diarioneuquino.com.ar/javier-milei-ante-el-punto-de-no-retorno-en-la-interna-libertaria/",
+          "date": "2026-05-23T09:17:11+00:00",
           "category": "argentina"
+        },
+        {
+          "title": "Cómo es el origen de los dos sectores de la interna libertaria que se disputan el poder dentro del Gobierno",
+          "source": "Infobae",
+          "url": "https://www.infobae.com/politica/2026/05/23/como-es-el-origen-de-los-dos-sectores-de-la-interna-libertaria-que-se-disputan-el-poder-dentro-del-gobierno/",
+          "date": "2026-05-23T06:03:43+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei ante el punto de no retorno en la interna y las sorpresas políticas del Mundial",
+          "source": "Infobae",
+          "url": "https://www.infobae.com/politica/2026/05/23/javier-milei-ante-el-punto-de-no-retorno-en-la-interna-y-las-sorpresas-politicas-del-mundial/",
+          "date": "2026-05-23T05:52:04+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Walka o władze w PiS. Atlas frakcji pokazuje, kto liczy się w walkę o władzę",
+          "source": "Fakt",
+          "url": "https://www.fakt.pl/polityka/bol-glowy-jaroslawa-kaczynskiego-oto-wszystkie-frakcje-w-pis/tf8ym89",
+          "date": "2026-05-23T05:00:00+00:00",
+          "category": "poland"
         }
       ],
       "first_seen": "2026-05-17T14:16:08+00:00",
-      "last_seen": "2026-05-23T04:30:37+00:00"
-    },
-    {
-      "id": "far-right-governments-target-universities-and-education",
-      "title": "Far-right governments target universities and education",
-      "blurb": "Right-wing and far-right governments are increasingly targeting universities and education systems, either through funding cuts, ideological control, or attacks on academic freedom. This trend is visible in Hungary, the U.S., Argentina, and Germany, where governments are reshaping educational institutions to align with their political agendas.",
-      "convergence": 3,
-      "countries": [
-        {
-          "name": "🇭🇺 Fidesz / Tisza",
-          "note": "The Hungarian government under Viktor Orbán has centralized control over universities, limiting academic freedom and cutting funding for liberal institutions."
-        },
-        {
-          "name": "🇺🇸 MAGA / Trump",
-          "note": "The Trump administration has proposed significant cuts to education funding and pushed for ideological control over curricula."
-        },
-        {
-          "name": "🇦🇷 La Libertad Avanza",
-          "note": "Javier Milei's government has proposed sweeping reforms to Argentina's education system, including privatization and deregulation."
-        },
-        {
-          "name": "🇩🇪 Alternative für Deutschland",
-          "note": "AfD advocates for homeschooling and reduced state control over education, challenging Germany's traditional school system."
-        }
-      ],
-      "signals": [
-        "policy imitation",
-        "shared framing",
-        "contagion of rhetoric"
-      ],
-      "article_count": 15,
-      "refs": [
-        {
-          "title": "La tasa de graduados de UNLP desmiente el relato libertario",
-          "source": "Página|12",
-          "url": "https://www.pagina12.com.ar/2026/05/22/la-tasa-de-graduados-de-unlp-desmiente-el-relato-libertario/",
-          "date": "2026-05-22T23:47:25+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Mathe-Unterricht am Küchentisch? AfD steht beim Aufweichen der Schulpflicht alleine da",
-          "source": "News4teachers",
-          "url": "https://www.news4teachers.de/2026/05/mathe-unterricht-am-kuechentisch-afd-steht-beim-aufweichen-der-schulpflicht-alleine-da/",
-          "date": "2026-05-22T01:02:28+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "What’s in the Trump Administration’s Final Proposal for Overhauling College Accreditation",
-          "source": "The Chronicle of Higher Education",
-          "url": "https://www.chronicle.com/article/whats-in-the-trump-administrations-final-proposal-for-overhauling-college-accreditation",
-          "date": "2026-05-21T23:15:20+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Javier Milei presentará su propia Ley de Medios y los periodistas deberán presentar declaraciones juradas",
-          "source": "MDZ Online",
-          "url": "https://www.mdzol.com/politica/javier-milei-presentara-su-propia-ley-medios-y-los-periodistas-deberan-presentar-declaraciones-juradas-n1525993",
-          "date": "2026-05-21T22:50:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Javier Milei impulsará su propia Ley de Medios y los periodistas deberán presentar declaraciones juradas",
-          "source": "MDZ Online",
-          "url": "https://www.mdzol.com/politica/javier-milei-impulsara-su-propia-ley-medios-y-los-periodistas-deberan-presentar-declaraciones-juradas-n1525993",
-          "date": "2026-05-21T22:50:00+00:00",
-          "category": "argentina"
-        }
-      ],
-      "first_seen": "2026-05-21T16:04:27+00:00",
-      "last_seen": "2026-05-23T04:30:37+00:00"
+      "last_seen": "2026-05-23T14:19:37+00:00"
     }
   ]
 }
