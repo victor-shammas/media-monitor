@@ -1,33 +1,895 @@
 {
-  "updated_at": "2026-05-23T14:08:47+00:00",
+  "updated_at": "2026-05-24T04:48:04+00:00",
   "lookback_hours": 48,
   "model": "Mistral Large",
   "status": "ok",
   "hotspots": [
     {
-      "id": "mass-protests-demand-sanchez-resignation",
-      "title": "Mass protests demand Sánchez resignation",
-      "blurb": "Tens of thousands marched in Madrid demanding Spanish PM Pedro Sánchez's resignation over corruption scandals, with Vox and PP leaders joining the protests. The demonstrations followed Zapatero's indictment in the Plus Ultra case.",
-      "affect": "This commands disproportionate attention due to its high moral charge and polarized contention, with right-wing and far-right groups framing it as a fight against systemic corruption.",
+      "id": "milei-villarruel-rift-deepens-over-tedeum-snub",
+      "title": "Milei-Villarruel rift deepens over Tedeum snub",
+      "blurb": "Argentina's President Javier Milei excluded Vice President Victoria Villarruel from the May 25 Tedeum ceremony, escalating internal government tensions. Villarruel's absence signals a complete breakdown in their relationship, with multiple articles highlighting the political fallout and public reactions.",
+      "affect": "This commands disproportionate attention due to the high-stakes leadership crisis within Argentina's ruling party, La Libertad Avanza, and the moral outrage over perceived disrespect to constitutional roles.",
       "intensity": 5,
       "affect_signals": [
+        "leadership crisis tone",
         "polarized contention",
-        "moral panic register",
         "cross-source repetition",
         "outrage-coded language",
-        "leadership crisis tone"
+        "moral panic register"
       ],
       "categories": [
-        "Vox",
-        "Spain"
+        "La Libertad Avanza"
+      ],
+      "article_count": 60,
+      "refs": [
+        {
+          "title": "25 de Mayo: Javier Milei no invitó a Victoria Villarruel al Tedeum en la Catedral",
+          "source": "Data Diario",
+          "url": "https://www.datadiario.com/politica/fractura-en-el-gobierno-nacional-javier-milei-no-invito-a-victoria-villarruel-al-tedeum-del-25-de-mayo-202652320370",
+          "date": "2026-05-23T23:58:09+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Karina Milei excluyó a Victoria Villarruel del Tedeum del 25 de Mayo",
+          "source": "Mirador Provincial",
+          "url": "https://www.miradorprovincial.com/2026/05/23/karina-milei-excluyo-a-victoria-villarruel-del-tedeum-del-25-de-mayo/",
+          "date": "2026-05-23T23:13:52+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Grieta en el Gobierno: Karina Milei no invitó a Victoria Villarruel al Tedeum del 25 de Mayo",
+          "source": "MisionesOnline",
+          "url": "https://misionesonline.net/2026/05/23/karina-milei-no-invito-a-victoria-villarruel-al-tedeum/",
+          "date": "2026-05-23T22:33:02+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "El Gobierno no invitó a Victoria Villarruel al Tedeum del 25 de mayo y se profundiza la interna",
+          "source": "Radio Mitre",
+          "url": "https://radiomitre.cienradios.com/politica/el-gobierno-no-invito-a-victoria-villarruel-al-tedeum-del-25-de-mayo-y-se-profundiza-la-interna/",
+          "date": "2026-05-23T22:09:55+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Se profundiza la ruptura en el Gobierno: Victoria Villaruel no fue invitada al Tedeum y apuntó contra Karina Milei",
+          "source": "Diario El Sol Mendoza",
+          "url": "https://www.elsol.com.ar/el-pais/se-profundiza-la-ruptura-en-el-gobierno-victoria-villaruel-no-fue-invitada-al-tedeum-y-apunto-contra-karina-milei/",
+          "date": "2026-05-23T21:17:39+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "El Gobierno excluyó a Victoria Villarruel del Tedeum por el 25 de mayo",
+          "source": "El Litoral",
+          "url": "https://www.ellitoral.com/politica/gobierno-excluyo-victoria-villarruel-tedeum-25-mayo_0_uYAvLQpsZc.html",
+          "date": "2026-05-23T21:07:09+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "No le llegó la invitación de Karina Milei: Victoria Villarruel no asistirá al Tedeum del 25 de Mayo",
+          "source": "El Intransigente",
+          "url": "https://elintransigente.com/2026/05/no-le-llego-la-invitacion-de-karina-milei-victoria-villarruel-no-asistira-al-tedeum-del-25-de-mayo/",
+          "date": "2026-05-23T20:27:31+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Sin retorno: el gobierno dejó a Victoria Villarruel afuera del Tedeum",
+          "source": "DataClave",
+          "url": "https://www.dataclave.com.ar/poder/sin-retorno--el-gobierno-dejo-a-victoria-villarruel-afuera-del-tedeum_a6a120666edbf8eb81123df18?output=amp",
+          "date": "2026-05-23T20:26:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Una pelea feroz que pone en jaque a Milei",
+          "source": "Página|12",
+          "url": "https://www.pagina12.com.ar/2026/05/24/una-pelea-feroz-que-pone-en-jaque-a-milei/",
+          "date": "2026-05-23T20:08:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Karina Milei dejó afuera a Victoria Villarruel del Tedeum del 25 de Mayo y profundiza la interna en el Gobierno",
+          "source": "Cuestión Entrerriana",
+          "url": "https://cuestionentrerriana.com.ar/karina-milei-dejo-afuera-a-victoria-villarruel-del-tedeum-del-25-de-mayo-y-profundiza-la-interna-en-el-gobierno/",
+          "date": "2026-05-23T19:36:51+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei profundiza la interna con Victoria Villarruel y la deja afuera del Tedeum del 25 de mayo",
+          "source": "0221",
+          "url": "https://www.0221.com.ar/nacional/javier-milei-profundiza-la-interna-victoria-villarruel-y-la-deja-afuera-del-tedeum-del-25-mayo-n128466",
+          "date": "2026-05-23T19:28:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei no invitó a Victoria Villarruel al Tedeum en la Catedral",
+          "source": "Página|12",
+          "url": "https://www.pagina12.com.ar/2026/05/23/javier-milei-no-invito-a-victoria-villarruel-al-tedeum-en-la-catedral/",
+          "date": "2026-05-23T19:25:02+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Victoria Villarruel estará ausente en el Tedeum del 25 Mayo en la Catedral Metropolitana",
+          "source": "MinutoUno",
+          "url": "https://www.minutouno.com/politica/victoria-villarruel-estara-ausente-el-tedeum-del-25-mayo-la-catedral-metropolitana-n6280895",
+          "date": "2026-05-23T18:50:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Milei no invitó a Villarruel al Tedeum del 25 de Mayo y crece la ruptura en el Gobierno",
+          "source": "Perfil",
+          "url": "https://www.perfil.com/noticias/politica/milei-no-invito-a-villarruel-al-tedeum-del-25-de-mayo-y-crece-la-ruptura-en-el-gobierno.phtml",
+          "date": "2026-05-23T18:48:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "El Gobierno no invitó a Victoria Villarruel al Tedeum del 25 de mayo",
+          "source": "a24.com",
+          "url": "https://www.a24.com/politica/el-gobierno-no-invito-victoria-villarruel-al-tedeum-del-25-mayo-n1558850",
+          "date": "2026-05-23T18:48:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Victoria Villarruel no fue invitada al Tedeum del 25 de Mayo y crece la tensión con Milei",
+          "source": "ADNSUR",
+          "url": "https://www.adnsur.com.ar/politica/victoria-villarruel-no-fue-invitada-al-tedeum-del-25-de-mayo-y-crece-la-tension-con-milei_a6a11e607259fc3ab3e781134",
+          "date": "2026-05-23T18:31:40+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Karina Milei dejó afuera a Victoria Villarruel del Tedeum del 25 de Mayo y se profundiza la interna oficialista",
+          "source": "InfoVeloz.com",
+          "url": "https://www.infoveloz.com/post/karina-milei-dejo-afuera-a-victoria-villarruel-del-tedeum-del-25-de-mayo-y-se-profundiza-la-interna-oficialista_280114",
+          "date": "2026-05-23T18:27:45+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Fractura total: el Gobierno no invitó a Victoria Villarruel al tedeum",
+          "source": "Infobae",
+          "url": "https://www.infobae.com/politica/2026/05/23/fractura-total-el-gobierno-no-invito-a-victoria-villarruel-al-tedeum/",
+          "date": "2026-05-23T18:23:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Victoria Villarruel no fue invitada al Tedeum del 25 de Mayo y se profundiza la tensión con Javier Milei",
+          "source": "abcdiario.com.ar",
+          "url": "https://www.abcdiario.com.ar/nacionales/victoria-villarruel-no-fue-invitada-al-tedeum-del-25-de-mayo-y-se-profundiza-la-tension-con-javier-milei/",
+          "date": "2026-05-23T18:19:01+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "No hay invitación: el Gobierno excluyó a Victoria Villarruel del Tedeum del 25 de Mayo",
+          "source": "Canal26",
+          "url": "https://www.canal26.com/politica/2026/05/23/no-hay-invitacion-el-gobierno-excluyo-a-victoria-villarruel-del-tedeum-del-25-de-mayo/",
+          "date": "2026-05-23T18:03:04+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Victoria Villarruel no fue invitada al Tedeum del 25 de mayo y se profundiza la interna con Milei",
+          "source": "Filo News",
+          "url": "https://www.filo.news/noticia/2026/05/23/victoria-villarruel-no-fue-invitada-al-tedeum-del-25-de-mayo-y-se-profundiza-la-interna-con-milei",
+          "date": "2026-05-23T17:53:48+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "El Gobierno no invitó a Villarruel al tedeum del 25 de mayo",
+          "source": "Bardeo.news",
+          "url": "https://bardeo.news/politica/el-gobierno-no-invito-a-villarruel-al-tedeum-del-25-de-mayo_a6a11e5cc0a3ce3926909cd26",
+          "date": "2026-05-23T17:42:01+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Sin invitación oficial al Tedeum, la interna entre Javier Milei y Victoria Villarruel suma otro capítulo",
+          "source": "Diario Río Negro",
+          "url": "https://www.rionegro.com.ar/politica/sin-invitacion-oficial-al-tedeum-la-interna-entre-javier-milei-y-victoria-villarruel-suma-otro-capitulo-4585756/",
+          "date": "2026-05-23T17:33:35+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "25 de Mayo. Tensión total en el Gobierno: dejaron fuera del tedeum a Victoria Villarruel",
+          "source": "La Voz del Interior",
+          "url": "https://www.lavoz.com.ar/politica/tension-total-gobierno-dejaron-tedeum-victoria-villarruel_0_PYAJjqbpX1.html",
+          "date": "2026-05-23T17:32:05+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Karina Milei no invitó a Villarruel al Tedeum del 25 de Mayo",
+          "source": "El Esquiu",
+          "url": "https://www.elesquiu.com/politica/2026/5/23/karina-milei-no-invito-villarruel-al-tedeum-del-25-de-mayo-598906.html",
+          "date": "2026-05-23T17:32:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Victoria Villarruel no fue invitada al Tedeum del 25 de Mayo y crece la distancia con Milei",
+          "source": "LM Neuquén",
+          "url": "https://www.lmneuquen.com/pais/victoria-villarruel-no-fue-invitada-al-tedeum-del-25-mayo-y-crece-la-distancia-milei-n1239669",
+          "date": "2026-05-23T17:32:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Karina Milei no invitó a Victoria Villarruel al Tedeum del 25 de Mayo",
+          "source": "Los Andes",
+          "url": "https://www.losandes.com.ar/politica/karina-milei-no-invito-victoria-villarruel-al-tedeum-del-25-mayo-n5992212",
+          "date": "2026-05-23T17:21:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "El Gobierno excluyó a Victoria Villarruel del Tedeum y profundizó la crisis en la cima del poder",
+          "source": "La Gaceta",
+          "url": "https://www.lagaceta.com.ar/nota/1138030/politica/gobierno-excluyo-victoria-villarruel-tedeum-profundizo-crisis-cima-poder.html",
+          "date": "2026-05-23T17:16:50+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Karina Milei no invitó a Victoria Villarruel al Tedeum",
+          "source": "TN",
+          "url": "https://tn.com.ar/politica/2026/05/23/karina-milei-no-invito-a-victoria-villarruel-al-tedeum/",
+          "date": "2026-05-23T17:08:07+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Tedeum del 25 de mayo: Karina Milei excluyó a Victoria Villarruel",
+          "source": "» Cholila Online",
+          "url": "https://cholilaonline.ar/2026/05/tedeum-del-25-de-mayo-karina-milei-excluyo-a-victoria-villarruel.html",
+          "date": "2026-05-23T16:53:48+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Sin tregua en la interna del Gobierno: Karina Milei dejó a Villarruel afuera de la comitiva oficial para el Tedeum por el 25 de mayo",
+          "source": "Clarin.com",
+          "url": "https://www.clarin.com/politica/tregua-interna-gobierno-karina-milei-dejo-villarruel-afuera-comitiva-oficial-tedeum-25-mayo_0_uqdY4xCOAu.html",
+          "date": "2026-05-23T16:40:10+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Thousands protest for prime minister's resignation in Madrid",
+          "source": "The Brussels Times",
+          "url": "https://www.brusselstimes.com/eu-affairs/2149099/thousands-protest-for-prime-ministers-resignation-in-madrid",
+          "date": "2026-05-23T15:11:50+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Zona fría: silencio de La Libertad Avanza en Bolívar ante el proyecto nacional",
+          "source": "diariolamanana.com.ar",
+          "url": "https://www.diariolamanana.com.ar/nota-zona-fria-silencio-de-la-libertad-avanza-en-bolivar-ante-el-proyecto-nacional-155203",
+          "date": "2026-05-23T15:05:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "La marcha para pedir la dimisión de Sánchez acaba con 3 detenidos y 7 agentes heridos",
+          "source": "heraldo.es",
+          "url": "https://www.heraldo.es/noticias/nacional/2026/05/23/marcha-para-pedir-dimision-sanchez-acaba-con-detenidos-agentes-heridos-2022854.html",
+          "date": "2026-05-23T14:45:28+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "¿Victoria Villarruel se queda afuera del tedeum?",
+          "source": "Letra P",
+          "url": "https://www.letrap.com.ar/politica/victoria-villarruel-se-queda-afuera-del-tedeum-n5424025",
+          "date": "2026-05-23T14:24:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "La cuenta pendiente de Javier Milei: cómo avanza la designación de jueces y fiscales",
+          "source": "Tribuna de Periodistas",
+          "url": "https://periodicotribuna.com.ar/la-cuenta-pendiente-de-milei-como-avanza-la-designacion-de-jueces-y-fiscales/",
+          "date": "2026-05-23T13:13:50+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei contra las cuerdas: escándalos, crisis y decisiones polémicas que sacuden su Gobierno",
+          "source": "Agencia NOVA",
+          "url": "https://www.agencianova.com/nota.asp?n=2026_5_23&id=166630&id_tiponota=51",
+          "date": "2026-05-23T12:42:13+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "La Libertad Avanza decidió postergar la sesión en el Senado para tratar 73 pliegos judiciales",
+          "source": "frente a Cano",
+          "url": "https://frenteacano.com.ar/la-libertad-avanza-decidio-postergar-la-sesion-en-el-senado-para-tratar-73-pliegos-judiciales/",
+          "date": "2026-05-23T12:01:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Caos en la Casa Rosada: enfrentamiento entre Santiago Caputo y Karina Milei por Adorni",
+          "source": "Informate Salta",
+          "url": "https://informatesalta.com.ar/gobierno/caos-en-la-casa-rosada--enfrentamiento-entre-santiago-caputo-y-karina-milei-por-adorni_a6a1190ec0a3ce39269fb4155",
+          "date": "2026-05-23T11:30:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Karina Milei vs. Santiago Caputo: la génesis de una interna que corroe el liderazgo de Javier Milei",
+          "source": "Letra P",
+          "url": "https://www.letrap.com.ar/politica/karina-milei-vs-santiago-caputo-la-genesis-una-interna-que-corroe-el-liderazgo-javier-milei-n5423996",
+          "date": "2026-05-23T11:09:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Vox pide prisión provisional para Zapatero y que Sánchez declare como testigo",
+          "source": "El Diario Vasco",
+          "url": "https://www.diariovasco.com/politica/vox-pide-prision-provisional-zapatero-declare-testigo-20260523120138-ntrc.html",
+          "date": "2026-05-23T10:01:38+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "„Dől a dominó” – Magyar Péter reagált arra, hogy Novák Katalin kabinetfőnöke szerint kulcszerepe volt a kegyelmi ügyben Balog Zoltánnak",
+          "source": "| hvg.hu",
+          "url": "https://hvg.hu/itthon/20260523_dol-a-domino-magyar-peter-reagalt-arra-hogy-novak-katalin-kabinetfonoke-szerint-kulcszerepe-volt-a-kegyelmi-ugyben-balog-zoltannak",
+          "date": "2026-05-23T09:57:27+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Javier Milei ante el punto de no retorno en la interna libertaria",
+          "source": "Diario Neuquino",
+          "url": "https://diarioneuquino.com.ar/javier-milei-ante-el-punto-de-no-retorno-en-la-interna-libertaria/",
+          "date": "2026-05-23T09:17:11+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "A un año de votar en CLM: Page exhibe gestión para defender su mayoría ante una oposición PP-Vox que urge a desbancarlo",
+          "source": "ENCLM",
+          "url": "https://www.encastillalamancha.es/politica-cat/a-un-ano-de-votar-en-clm-page-exhibe-gestion-para-defender-su-mayoria-ante-una-oposicion-pp-vox-que-urge-a-desbancarlo/",
+          "date": "2026-05-23T09:06:00+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "La motosierra no pasó por la SIDE, que ya destinó casi $ 3.800 millones a gastos reservados",
+          "source": "Perfil",
+          "url": "https://www.perfil.com/noticias/economia/la-motosierra-no-paso-por-la-side-que-ya-destino-casi-3800-millones-a-gastos-reservados.phtml",
+          "date": "2026-05-23T06:39:42+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei ante el punto de no retorno en la interna y las sorpresas políticas del Mundial",
+          "source": "Infobae",
+          "url": "https://www.infobae.com/politica/2026/05/23/javier-milei-ante-el-punto-de-no-retorno-en-la-interna-y-las-sorpresas-politicas-del-mundial/",
+          "date": "2026-05-23T05:52:04+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Santiago Caputo patea el tablero: no acepta una tregua y redobla la apuesta contra Menem",
+          "source": "Perfil",
+          "url": "https://www.perfil.com/noticias/politica/caputo-patea-el-tablero-no-acepta-una-tregua-y-redobla-la-apuesta-contra-menem.phtml",
+          "date": "2026-05-23T05:47:32+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Aseguran que Karina Milei echó a Patricia Bullrich de reuniones de gabinete por un pedido sobre Adorni",
+          "source": "agencianova.com",
+          "url": "https://www.agencianova.com/nota.asp?n=2026_5_23&id=167754&id_tiponota=4",
+          "date": "2026-05-23T03:00:08+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "El Gobierno envió al Congreso cuatro nuevos proyectos de ley: de qué se tratan",
+          "source": "LM Neuquén",
+          "url": "https://www.lmneuquen.com/pais/el-gobierno-envio-al-congreso-cuatro-nuevos-proyectos-ley-que-se-tratan-n1239624",
+          "date": "2026-05-23T02:26:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Interna en La Libertad Avanza: Diego Raus advirtió que el Gobierno “no tiene sustentabilidad política”",
+          "source": "Perfil",
+          "url": "https://www.perfil.com/noticias/canal-e/interna-en-la-libertad-avanza-diego-raus-advirtio-que-el-gobierno-no-tiene-sustentabilidad-politica.phtml",
+          "date": "2026-05-22T21:28:19+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "El Gobierno celebró una semana clave para la economía, pero la crisis política con Manuel Adorni empaña el repunte",
+          "source": "Diario Río Negro",
+          "url": "https://www.rionegro.com.ar/politica/el-gobierno-celebro-una-semana-clave-para-la-economia-pero-la-crisis-politica-con-manuel-adorni-empana-el-repunte-4584996/",
+          "date": "2026-05-22T20:45:25+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Ahora Milei invita a Bullrich a la reunión de ministros y Karina arma un gabinete VIP para dejarla afuera",
+          "source": "La Política Online",
+          "url": "https://www.lapoliticaonline.com/politica/ahora-milei-invita-a-bullrich-a-la-reunion-de-ministros-y-karina-arma-un-gabinete-vip-para-dejarla-afuera/",
+          "date": "2026-05-22T19:45:28+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Karina Milei en la mira: investigan presunta malversación de fondos públicos",
+          "source": "Canal C",
+          "url": "https://canalc.com.ar/karina-milei-en-la-mira-investigan-presunta-malversacion-de-fondos-publicos/",
+          "date": "2026-05-22T19:40:39+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Pagano denunció a Karina Milei por una licitación de 700 millones de pesos para jardinería y mantenimiento de Olivos",
+          "source": "Diario Digital Conclusión",
+          "url": "https://www.conclusion.com.ar/politica/pagano-denuncio-a-karina-milei-por-una-licitacion-de-700-millones-de-pesos-para-jardineria-y-mantenimiento-de-olivos/05/2026/",
+          "date": "2026-05-22T19:08:33+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Las Fuerzas del Cielo hablan por Santiago Caputo y Javier Milei no consigue un alto al fuego",
+          "source": "Letra P",
+          "url": "https://www.letrap.com.ar/politica/las-fuerzas-del-cielo-hablan-santiago-caputo-y-javier-milei-no-consigue-un-alto-al-fuego-n5423995",
+          "date": "2026-05-22T19:04:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Milei no puede frenar la interna: 'Ninguneado', Gordo Dan contraataca",
+          "source": "Urgente24",
+          "url": "https://urgente24.com/actualidad/milei-no-puede-frenar-la-interna-ninguneado-gordo-dan-contraataca-n625286",
+          "date": "2026-05-22T18:38:00+00:00",
+          "category": "argentina"
+        }
+      ],
+      "first_seen": "2026-05-24T04:48:04+00:00",
+      "last_seen": "2026-05-24T04:48:04+00:00"
+    },
+    {
+      "id": "trump-announces-near-final-iran-deal-amid-gop-alarm",
+      "title": "Trump announces near-final Iran deal amid GOP alarm",
+      "blurb": "President Trump claimed a 'largely negotiated' deal with Iran to reopen the Strait of Hormuz, sparking intense reactions from Republican leaders and global stakeholders. Multiple articles report on the deal's terms, regional implications, and internal U.S. political divisions.",
+      "affect": "This commands disproportionate attention due to the high affective investment in Middle East geopolitics, the polarized contention over Trump's foreign policy, and the moral charge of potential peace versus military escalation.",
+      "intensity": 5,
+      "affect_signals": [
+        "alarmist framing",
+        "polarized contention",
+        "cross-source repetition",
+        "outrage-coded language",
+        "moral panic register"
+      ],
+      "categories": [
+        "MAGA / Trump"
       ],
       "article_count": 50,
       "refs": [
+        {
+          "title": "Deal to end war with Iran has been 'largely negotiated,' President Trump says",
+          "source": "WFAA",
+          "url": "https://www.wfaa.com/video/news/nation-world/attack-on-iran/deal-end-war-with-iran-largely-negotiated-president-trump/287-8dd674f2-fa02-422e-9fe4-0efbbb605a60",
+          "date": "2026-05-24T03:46:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump news at a glance: Does the president see a chance to end the war with Iran?",
+          "source": "The Guardian",
+          "url": "https://www.theguardian.com/us-news/2026/may/24/trump-news-at-a-glance-does-the-president-see-a-chance-to-end-the-war-with-iran",
+          "date": "2026-05-24T02:24:11+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Iran war: Trump says deal 'largely negotiated'",
+          "source": "DW.com",
+          "url": "https://www.dw.com/en/iran-war-donald-trump-says-deal-largely-negotiated/live-77276381",
+          "date": "2026-05-24T01:53:17+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "President Trump says a deal with Iran and opening of Strait of Hormuz are 'largely negotiated'",
+          "source": "WAKA 8",
+          "url": "https://www.waka.com/2026/05/23/president-trump-says-a-deal-with-iran-and-opening-of-strait-of-hormuz-are-largely-negotiated/",
+          "date": "2026-05-24T01:06:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "President Trump hinting at end to Iran conflict",
+          "source": "WUSA9",
+          "url": "https://www.wusa9.com/video/news/nation-world/attack-on-iran/president-trump-hinting-at-end-to-iran-conflict/65-59fb9b7f-c772-4e32-aa67-947bddb1d50e",
+          "date": "2026-05-23T23:19:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump says U.S., Iran are ‘getting a lot closer,’ but questions remain about concessions",
+          "source": "Los Angeles Times",
+          "url": "https://www.latimes.com/politics/story/2026-05-23/trump-says-u-s-iran-are-getting-lot-closer-but-questions-remain-about-concessions",
+          "date": "2026-05-23T23:07:24+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Live - Trump says Iran deal largely negotiated, announcement expected shortly",
+          "source": "ایران اینترنشنال",
+          "url": "https://www.iranintl.com/en/liveblog/202605238115",
+          "date": "2026-05-23T22:51:52+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "President Trump announces tentative peace deal with Iran",
+          "source": "WHAS11",
+          "url": "https://www.whas11.com/video/news/nation-world/president-trump-announces-tentative-peace-deal-with-iran/417-09b803dc-818f-46e0-9f3b-32218097b470",
+          "date": "2026-05-23T22:34:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Donald Trump says Iran peace deal is near, negotiations will reopen Strait of Hormuz",
+          "source": "AFR",
+          "url": "https://www.afr.com/world/middle-east/trump-says-iran-peace-deal-is-near-20260524-p60021",
+          "date": "2026-05-23T22:32:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump says Iran deal announcement coming ‘shortly’",
+          "source": "Roll Call",
+          "url": "https://rollcall.com/2026/05/23/trump-says-iran-deal-announcement-coming-shortly/",
+          "date": "2026-05-23T21:50:13+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Donald Trump Says Peace Agreement “Largely Negotiated” To End War In Iran",
+          "source": "Deadline",
+          "url": "https://deadline.com/2026/05/trump-iran-war-peace-agreement-1236920040/",
+          "date": "2026-05-23T21:33:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Donald Trump says deal with Iran to reopen Strait of Hormuz ‘largely negotiated’",
+          "source": "Financial Times",
+          "url": "https://www.ft.com/content/a27cc653-71ee-4668-8fcf-562fd7c9b93f?syn-25a6b1a6=1",
+          "date": "2026-05-23T21:01:27+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "President Trump says deal with Iran, opening Strait of Hormuz ‘largely negotiated’",
+          "source": "WPXI",
+          "url": "https://www.wpxi.com/news/world/president-trump-says-deal-with-iran-opening-strait-hormuz-largely-negotiated/SOPUREZDZZGJJBY7MB3DLUCTMY/",
+          "date": "2026-05-23T20:56:30+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "President Trump says deal with Iran is ‘largely negotiated’",
+          "source": "Fox News",
+          "url": "https://www.foxnews.com/video/6396458472112",
+          "date": "2026-05-23T20:54:02+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Peace agreement negotiated between Iran, US, Gulf nations, Trump announces",
+          "source": "The Jerusalem Post",
+          "url": "https://www.jpost.com/middle-east/iran-news/article-897063",
+          "date": "2026-05-23T20:42:36+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Damián Arabia: “Hay más gente que llega a fin de mes desde que asumió el presidente Milei”",
+          "source": "Infobae",
+          "url": "https://www.infobae.com/politica/2026/05/23/damian-arabia-hay-mas-gente-que-llega-a-fin-de-mes-desde-que-asumio-el-presidente-milei/",
+          "date": "2026-05-23T20:18:19+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Iran submits revised proposal, Trump says ceasefire 'a lot closer'",
+          "source": "Australian Broadcasting Corporation",
+          "url": "https://www.abc.net.au/news/2026-05-24/donald-trump-says-iran-ceasefire-a-lot-closer/106714964",
+          "date": "2026-05-23T19:45:39+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "President Trump Says Chances Are ‘50/50’ on Iran Deal or Strikes; Netanyahu Reportedly Uneasy With Draft Terms",
+          "source": "The Media Line",
+          "url": "https://themedialine.org/headlines/president-trump-says-chances-are-50-50-on-iran-deal-or-strikes-netanyahu-reportedly-uneasy-with-draft-terms/",
+          "date": "2026-05-23T19:10:57+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "What will Trump do next with Iran?",
+          "source": "NPR",
+          "url": "https://www.npr.org/2026/05/23/nx-s1-5832542/trump-iran-decision",
+          "date": "2026-05-23T17:49:28+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Marco Rubio signals imminent decision on Iran plan",
+          "source": "Fox News",
+          "url": "https://www.foxnews.com/video/6396445318112",
+          "date": "2026-05-23T17:21:12+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Le Pen says she would pull France from alliance’s military command",
+          "source": "The New Voice of Ukraine",
+          "url": "https://english.nv.ua/nation/le-pen-says-she-would-pull-france-from-nato-military-command-50610326.html",
+          "date": "2026-05-23T17:04:00+00:00",
+          "category": "france"
+        },
+        {
+          "title": "President Trump says he won't attend son's wedding; CBS News has learned U.S. may renew Iran attacks",
+          "source": "KHOU",
+          "url": "https://www.khou.com/video/news/nation-world/president-trump-says-he-wont-attend-sons-wedding-cbs-news-has-learned-us-may-renew-iran-attacks/285-e9a9485d-d128-410e-b665-51ffc1bacc8d",
+          "date": "2026-05-23T16:14:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Donald Trump calls Jaxson Dart 'beautiful' in his speech in New York",
+          "source": "Touchdown Wire",
+          "url": "https://touchdownwire.usatoday.com/story/sports/nfl/touchdown/2026/05/23/president-donald-trump-calls-giants-qb-jaxson-dart-beautiful-in-his-speech-in-new-york/90224446007/",
+          "date": "2026-05-23T14:44:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "President Trump Calls Potential SCOTUS Ruling Against New Birthright Citizenship Policy a \"Disgrace\"",
+          "source": "The Maine Wire",
+          "url": "https://www.themainewire.com/2026/05/president-trump-calls-potential-scotus-ruling-against-new-birthright-citizenship-policy-a-disgrace/",
+          "date": "2026-05-23T13:48:45+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "NYT: Benjamin Netanyahu 'sidelined' by Donald Trump on Iran talks",
+          "source": "The Jerusalem Post",
+          "url": "https://www.jpost.com/israel-news/article-897047",
+          "date": "2026-05-23T12:48:35+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "US Media Report Trump Administration Preparing New Strikes on Iran",
+          "source": "8am.media",
+          "url": "https://8am.media/eng/us-media-report-trump-administration-preparing-new-strikes-on-iran/",
+          "date": "2026-05-23T11:44:59+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Marco Rubio combats Cuban American backlash as he seeks Havana deal",
+          "source": "Financial Times",
+          "url": "https://www.ft.com/content/b3eff5d9-10e9-407c-ab6b-1daeeed63a3c?syn-25a6b1a6=1",
+          "date": "2026-05-23T11:00:07+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Hunter Biden, Candace Owens and the power of “the Epstein class”",
+          "source": "Salon.com",
+          "url": "https://www.salon.com/2026/05/23/hunter-biden-candace-owens-and-the-power-of-the-epstein-class/",
+          "date": "2026-05-23T10:45:37+00:00",
+          "category": "networks"
+        },
+        {
+          "title": "Tulsi Gabbard Quits Trump Administration",
+          "source": "تسنیم",
+          "url": "https://www.tasnimnews.ir/en/news/2026/05/23/3598169/tulsi-gabbard-quits-trump-administration",
+          "date": "2026-05-23T09:46:17+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Megtudtuk Magyar Péter titkos tervét – ez állhat a személyes hadjárata hátterében",
+          "source": "ORIGO",
+          "url": "https://www.origo.hu/belpol/2026/05/magyar-peter-diktatura",
+          "date": "2026-05-23T09:24:19+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "BREAKING: #Bitcoin surges as President Trump says an agreement with Iran has been “largely negotiated” and will be announced shortly.",
+          "source": "Moomoo",
+          "url": "https://www.moomoo.com/community/feed/breaking-bitcoin-surges-as-president-trump-says-an-agreement-with-116625963941893",
+          "date": "2026-05-23T08:23:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump releases new batch of previously classified UFO files",
+          "source": "Al Jazeera",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/5/23/trump-releases-new-batch-of-previously-classified-ufo-files",
+          "date": "2026-05-23T05:41:45+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Who will succeed Trump? JD Vance and Marco Rubio are getting ready",
+          "source": "Euronews.com",
+          "url": "https://www.euronews.com/2026/05/23/in-the-race-to-succeed-trump-vance-and-rubio-set-for-unpopularity-contest-among-republican",
+          "date": "2026-05-23T05:00:24+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Taiwan whiplash? How Trump’s blunt warning collides with a historic call offer",
+          "source": "South China Morning Post",
+          "url": "https://www.scmp.com/news/china/diplomacy/article/3354544/whiplash-taiwan-how-donald-trumps-blunt-warning-collides-historic-call-offer",
+          "date": "2026-05-23T04:00:08+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "MAGA Warmonger Thirsts Over New Target After Trump Summit",
+          "source": "The Daily Beast",
+          "url": "https://www.thedailybeast.com/maga-warmonger-lindsey-graham-thirsts-over-new-target-after-donald-trump-summit/",
+          "date": "2026-05-23T02:46:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump cancels trip to son's wedding, returns to Washington amid key moment on Iran negotiations",
+          "source": "The Jerusalem Post",
+          "url": "https://www.jpost.com/international/article-897032",
+          "date": "2026-05-22T21:17:03+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "US intel chief Tulsi Gabbard resigns citing husband’s health, amid claim she was forced out",
+          "source": "The Times of Israel",
+          "url": "https://www.timesofisrael.com/us-intel-chief-tulsi-gabbard-resigns-citing-husbands-health-amid-claim-she-was-forced-out/",
+          "date": "2026-05-22T20:51:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Tulsi Gabbard resigns as Trump’s top US intelligence official",
+          "source": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/5/22/tulsi-gabbard-resigns-as-trumps-top-us-intelligence-official",
+          "date": "2026-05-22T20:46:38+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Marine Le Pen turns France’s Algeria deportation dispute into a sovereignty test for Macron’s government",
+          "source": "Ecostylia Magazine",
+          "url": "https://www.ecostylia.com/en/marine-le-pen-oqtf-algeria/",
+          "date": "2026-05-22T20:14:56+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Crisis en Bolivia: el gobierno de Javier Milei sigue de cerca el conflicto y evalúa intensificar los controles en la frontera",
+          "source": "Canal26",
+          "url": "https://www.canal26.com/politica/2026/05/22/crisis-en-bolivia-el-gobierno-de-javier-milei-sigue-de-cerca-el-conflicto-y-evalua-intensificar-los-controles-en-la-frontera/",
+          "date": "2026-05-22T19:27:42+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Tulsi Gabbard needed a Trump exit, with integrity and principles intact",
+          "source": "Responsible Statecraft",
+          "url": "https://responsiblestatecraft.org/tulsi-gabbard-resigns/",
+          "date": "2026-05-22T19:23:13+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Colorado GOP governor primary: Establishment favorite vs. MAGA candidates",
+          "source": "Sentinel Colorado",
+          "url": "https://sentinelcolorado.com/state-and-region-news/colorado-news-state-and-region-news/colorado-gop-governor-primary-establishment-favorite-vs-maga-candidates/",
+          "date": "2026-05-22T18:59:01+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump intelligence chief Tulsi Gabbard resigns, citing husband’s cancer",
+          "source": "Wausau Pilot & Review",
+          "url": "https://wausaupilotandreview.com/2026/05/22/trump-intelligence-chief-tulsi-gabbard-resigns-citing-husbands-cancer/",
+          "date": "2026-05-22T18:35:54+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Tulsi Gabbard Steps Down As Trump's National Intelligence Director",
+          "source": "i24NEWS",
+          "url": "https://www.i24news.tv/en/news/international/americas/artc-tulsi-gabbard-steps-down-as-trump-s-national-intelligence-director",
+          "date": "2026-05-22T17:54:47+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Tulsi Gabbard resigns as Trump's national intelligence director",
+          "source": "PBS",
+          "url": "https://www.pbs.org/newshour/amp/politics/tulsi-gabbard-resigns-as-trumps-national-intelligence-director",
+          "date": "2026-05-22T17:40:24+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Tulsi Gabbard Resigns from Trump Administration Citing Husband's 'Extremely Rare Form of Bone Cancer'",
+          "source": "People.com",
+          "url": "https://people.com/tulsi-gabbard-resigns-trump-administration-11960883",
+          "date": "2026-05-22T17:35:33+00:00",
+          "category": "usa"
+        }
+      ],
+      "first_seen": "2026-05-24T04:48:04+00:00",
+      "last_seen": "2026-05-24T04:48:04+00:00"
+    },
+    {
+      "id": "mass-protests-demand-sanchez-resignation",
+      "title": "Mass protests demand Sánchez resignation",
+      "blurb": "Tens of thousands protested in Madrid, demanding Spanish Prime Minister Pedro Sánchez's resignation over corruption allegations involving former PM José Luis Rodríguez Zapatero. The protests, backed by PP and Vox, highlight deep political divisions and public outrage.",
+      "affect": "This commands disproportionate attention due to the moral charge of corruption allegations, the polarized contention between left and right, and the high affective investment in Spain's political future.",
+      "intensity": 5,
+      "affect_signals": [
+        "moral panic register",
+        "polarized contention",
+        "cross-source repetition",
+        "outrage-coded language",
+        "alarmist framing"
+      ],
+      "categories": [
+        "Vox"
+      ],
+      "article_count": 40,
+      "refs": [
+        {
+          "title": "40.000 personas marchan en Madrid contra Sánchez",
+          "source": "la7tv.es",
+          "url": "https://www.la7tv.es/articulo/politica/miles-personas-piden-madrid-dimision-sanchez/20260523204857068876.amp.html",
+          "date": "2026-05-23T18:48:57+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Manifestantes y partido de ultra derecha Vox, piden renuncia de Pedro Sánchez, en España",
+          "source": "Teleamazonas",
+          "url": "https://www.teleamazonas.com/actualidad/noticias/internacional/manifestantes-partido-ultra-derecha-vox-renuncia-pedro-sanchez-espana/",
+          "date": "2026-05-23T18:13:03+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "\"Gracias, General Franco\": la pancarta franquista que retrata la manifestación ultra contra Sánchez",
+          "source": "Elplural.com",
+          "url": "https://www.elplural.com/politica/espana/gracias-general-franco-pancarta-franquista-retrata-manifestacion-ultra-contra-sanchez_390897102",
+          "date": "2026-05-23T17:36:54+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "PP y Vox sitúan a Sánchez en el centro de la supuesta trama del expresidente Zapatero - atlas-news.com",
+          "source": "",
+          "url": "https://www.atlas-news.com/politica/pp-vox-situan-sanchez-centro_3_02124979.html",
+          "date": "2026-05-23T17:07:00+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Miles de personas piden en Madrid la dimisión de Sánchez en una marcha apoyada por el PP y Vox",
+          "source": "La Región",
+          "url": "https://www.laregion.es/lri/miles-personas-piden-madrid-dimision_1_20260523-4287897.html",
+          "date": "2026-05-23T16:30:00+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Tens of Thousands Protest in Madrid Demanding Resignation of Socialist Prime Minister Sánchez",
+          "source": "breitbart.com",
+          "url": "https://www.breitbart.com/europe/2026/05/23/tens-of-thousands-protest-in-madrid-demanding-resignation-of-socialist-prime-minister-sanchez/amp/",
+          "date": "2026-05-23T16:04:43+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Thousands protest for prime minister's resignation in Madrid",
+          "source": "The Brussels Times",
+          "url": "https://www.brusselstimes.com/eu-affairs/2149099/thousands-protest-for-prime-ministers-resignation-in-madrid",
+          "date": "2026-05-23T15:11:50+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "PP y Vox respaldan la marcha que exige la dimisión de Sánchez y prisión para Zapatero",
+          "source": "El Boletín",
+          "url": "https://www.elboletin.com/pp-y-vox-respaldan-la-marcha-que-exige-la-dimision-de-sanchez-y-prision-para-zapatero/",
+          "date": "2026-05-23T14:48:45+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "La marcha para pedir la dimisión de Sánchez acaba con 3 detenidos y 7 agentes heridos",
+          "source": "heraldo.es",
+          "url": "https://www.heraldo.es/noticias/nacional/2026/05/23/marcha-para-pedir-dimision-sanchez-acaba-con-detenidos-agentes-heridos-2022854.html",
+          "date": "2026-05-23T14:45:28+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Miles de personas marchan en Madrid para pedir la dimisión de Pedro Sánchez: “España está secuestrada por una mafia corrupta”",
+          "source": "Infobae",
+          "url": "https://www.infobae.com/espana/2026/05/23/miles-de-personas-marchan-en-madrid-para-pedir-la-dimision-de-pedro-sanchez-espana-esta-secuestrada-por-una-mafia-corrupta/",
+          "date": "2026-05-23T14:20:32+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "UPDATE 1-Tens of thousands march in Madrid to demand prime minister's resignation",
+          "source": "Devdiscourse",
+          "url": "https://www.devdiscourse.com/article/law-order/3919436-update-1-tens-of-thousands-march-in-madrid-to-demand-prime-ministers-resignation?amp",
+          "date": "2026-05-23T13:43:05+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Tres detenidos y siete policías heridos al finalizar la manifestación para pedir la dimisión de Sánchez",
+          "source": "Infobae",
+          "url": "https://www.infobae.com/espana/agencias/2026/05/23/tres-detenidos-y-siete-policias-heridos-al-finalizar-la-manifestacion-para-pedir-la-dimision-de-sanchez/?outputType=amp-type",
+          "date": "2026-05-23T13:39:22+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Miles de personas protestan en Madrid contra el “Gobierno corrupto” de Sánchez",
+          "source": "MUNDIARIO",
+          "url": "https://www.mundiario.com/articulo/politica/miles-personas-protestan-madrid-gobierno-corrupto-sanchez/20260523153516387621.html",
+          "date": "2026-05-23T13:35:16+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Vox pide al PP que esté \"a la altura del momento grave\" y presente una moción de censura",
+          "source": "Infobae",
+          "url": "https://www.infobae.com/espana/agencias/2026/05/23/vox-pide-al-pp-que-este-a-la-altura-del-momento-grave-y-presente-una-mocion-de-censura/",
+          "date": "2026-05-23T13:17:37+00:00",
+          "category": "spain"
+        },
         {
           "title": "Tens of thousands march in Madrid to demand Spanish prime minister resigns",
           "source": "Devdiscourse",
           "url": "https://www.devdiscourse.com/article/law-order/3919381-tens-of-thousands-march-in-madrid-to-demand-spanish-prime-minister-resigns",
           "date": "2026-05-23T12:55:38+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Vox pide prisión para Zapatero por el caso Plus Ultra",
+          "source": "Madrid Actual",
+          "url": "https://www.madridactual.es/nacional/politica-nacional/vox-prision-provisional-zapatero-declaren-testigos-pedro-20260523-8103045.html",
+          "date": "2026-05-23T12:42:02+00:00",
           "category": "spain"
         },
         {
@@ -45,10 +907,38 @@
           "category": "spain"
         },
         {
+          "title": "'We are held hostage by a mafia': Spaniards decry corruption in the PSOE and call for Pedro Sánchez's resignation",
+          "source": "voz.us",
+          "url": "https://voz.us/en/world/260523/35970/spain-rally-corruption-psoe-resignation-pedro-sanchez.html",
+          "date": "2026-05-23T11:37:07+00:00",
+          "category": "spain"
+        },
+        {
           "title": "La \"Marcha por la Dignidad\" exige la dimisión del gobierno de Sánchez y Vox pide la entrada en prisión de Zapatero",
           "source": "El Confidencial",
           "url": "https://www.elconfidencial.com/espana/2026-05-23/la-marcha-por-la-dignidad-exige-la-dimision-del-gobierno-de-sanchez-y-vox-pide-la-entrada-en-prision-de-zapatero_4360351/",
           "date": "2026-05-23T11:21:00+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Miles de personas, apoyados por PP y Vox, piden la dimisión de Sánchez y Abascal dice que \"es prioridad nacional\"",
+          "source": "Diario Público",
+          "url": "https://www.publico.es/sociedad/miles-personas-apoyados-pp-vox-piden-dimision-sanchez-abascal-dice-prioridad-nacional.html",
+          "date": "2026-05-23T11:17:01+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Abascal sobre los escándalos del entorno de Sánchez: \"Demasiadas presunciones de inocencia juntas\"",
+          "source": "ESdiario",
+          "url": "https://www.esdiario.com/nacional/260523/188547/abascal-pide-prision-zapatero-apunta-directamente-pedro-sanchez.html",
+          "date": "2026-05-23T11:09:48+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Ampliación | Decenas de miles exigen en Madrid la dimisión de Sánchez en una marcha respaldada por Vox y PP",
+          "source": "Demócrata",
+          "url": "https://www.democrata.es/politica/ampliacion-decenas-de-miles-exigen-en-madrid-la-dimision-de-sanchez-en-una-marcha-respaldada-por-vox-y-pp/",
+          "date": "2026-05-23T11:06:38+00:00",
           "category": "spain"
         },
         {
@@ -57,34 +947,321 @@
           "url": "https://www.vozpopuli.com/espana/miles-de-personas-exigen-a-sanchez-que-dimita-en-una-marcha-en-madrid-apoyada-por-vox-y-pp.html",
           "date": "2026-05-23T10:55:21+00:00",
           "category": "spain"
+        },
+        {
+          "title": "Multitudinaria marcha en Madrid exige la dimisión de Sánchez con el respaldo de Vox y PP",
+          "source": "Demócrata",
+          "url": "https://www.democrata.es/politica/multitudinaria-marcha-en-madrid-exige-la-dimision-de-sanchez-con-el-respaldo-de-vox-y-pp/",
+          "date": "2026-05-23T10:24:46+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Miles de personas piden en Madrid la dimisión de Sánchez en una marcha apoyada por Vox y PP",
+          "source": "Europa Press",
+          "url": "https://www.europapress.es/nacional/noticia-miles-personas-piden-madrid-dimision-sanchez-marcha-apoyada-vox-pp-20260523122213.html",
+          "date": "2026-05-23T10:22:13+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Miles de personas piden en Madrid la dimisión de Sánchez y la detención de Zapatero en una marcha apoyada por Vox y PP",
+          "source": "El Mundo",
+          "url": "https://www.elmundo.es/espana/2026/05/23/6a117ad6e85ece405c8b45c0.html",
+          "date": "2026-05-23T10:04:04+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Dirigentes de PP y Vox se manifiestan junto a cientos de personas por Madrid para pedir la dimisión \"inmediata\" de Sánchez",
+          "source": "El Periódico de España",
+          "url": "https://www.epe.es/es/madrid/20260523/dirigentes-pp-vox-manifiestan-cientos-madrid-dimision-sanchez-130566966",
+          "date": "2026-05-23T09:59:31+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Vox pide en la Audiencia Nacional la prisión provisional del expresidente Zapatero",
+          "source": "Infobae",
+          "url": "https://www.infobae.com/espana/agencias/2026/05/23/vox-pide-en-la-audiencia-nacional-la-prision-provisional-del-expresidente-zapatero/",
+          "date": "2026-05-23T09:50:31+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Vox pide prisión provisional para Zapatero y citar a Sánchez y todo su Gobierno de 2021 por el rescate de Plus Ultra",
+          "source": "ABC",
+          "url": "https://www.abc.es/espana/vox-pide-prision-provisional-zapatero-citar-sanchez-20260523114808-nt.html",
+          "date": "2026-05-23T09:48:08+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Vox pide prisión provisional para Zapatero y la declaración como testigos del Consejo de Ministros de 2021",
+          "source": "Vozpopuli",
+          "url": "https://www.vozpopuli.com/espana/politica/vox-pide-prision-provisional-para-zapatero-y-la-declaracion-como-testigos-del-consejo-de-ministros-de-2021.html",
+          "date": "2026-05-23T09:40:56+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Santiago Abascal anuncia que VOX pide prisión provisional para Zapatero y la citación de Sánchez y sus...",
+          "source": "gaceta.es",
+          "url": "https://gaceta.es/espana/santiago-abascal-anuncia-que-vox-pide-prision-provisional-para-zapatero-y-la-citacion-de-sanchez-y-sus-ministros-como-testigos-20260523-1123/",
+          "date": "2026-05-23T09:34:47+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "La derecha y la ultraderecha marchan en Madrid y exigen la dimisión de Pedro Sánchez: \"La prioridad nacional",
+          "source": "LaSexta",
+          "url": "https://www.lasexta.com/noticias/nacional/derecha-ultraderecha-marchan-madrid-exigen-dimision-pedro-sanchez-prioridad-nacional-expulsarle-poder_202605236a117316339dd32ea990a823.html",
+          "date": "2026-05-23T09:27:50+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Vox pide prisión provisional para Zapatero y que declaren Sánchez y el Gobierno de 2021",
+          "source": "Revista Capital",
+          "url": "https://capital.es/actualidad/vox-pide-prision-provisional-para-zapatero-y-que-declaren-sanchez-y-el-gobierno-de-2021/186511/",
+          "date": "2026-05-23T09:21:59+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "El juez admite a PP, Vox y Hazte Oír en el caso Plus Ultra y estudia agrupar acusaciones",
+          "source": "Revista Capital",
+          "url": "https://capital.es/actualidad/el-juez-admite-a-pp-vox-y-hazte-oir-en-el-caso-plus-ultra-y-estudia-agrupar-acusaciones/186418/",
+          "date": "2026-05-23T09:09:45+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Kundgebungen in NRW für AfD-Verbot geplant",
+          "source": "WAZ | Westdeutsche Allgemeine Zeitung",
+          "url": "https://www.waz.de/lokales/article412077525/kundgebungen-in-nrw-fuer-afd-verbot-geplant.html",
+          "date": "2026-05-23T09:02:28+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Dirigentes de PP y Vox respaldan en Madrid la manifestación para exigir la dimisión de Pedro Sánchez",
+          "source": "Antena 3",
+          "url": "https://www.antena3.com/noticias/espana/dirigentes-vox-respaldan-madrid-manifestacion-exigir-dimision-pedro-sanchez_202605236a1168c2339dd32ea99098f9.html",
+          "date": "2026-05-23T08:43:46+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Vox insiste al PP para que presente una moción de censura contra un Gobierno \"falto de escrúpulos\" que no dimite",
+          "source": "Diario de Noticias de Álava",
+          "url": "https://www.noticiasdealava.eus/politica/2026/05/23/vox-insiste-pp-presente-mocion-censura-gobierno-falto-escrupulos-no-dimite-11107604.html",
+          "date": "2026-05-23T08:30:53+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "PP y Vox respaldan la marcha de Sociedad Civil Española para pedir la dimisión de Sánchez tras la imputación de Zapatero",
+          "source": "RTVE.es",
+          "url": "https://www.rtve.es/noticias/20260523/manifestacion-dimision-pedro-sanchez-sociedad-civil-espanola/17082380.shtml",
+          "date": "2026-05-23T08:24:46+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "VOX denuncia ante Anticorrupción el bloqueo de la liquidación de EPSI Íllora y el impago a familias desde 2007",
+          "source": "La Gaceta de Granada",
+          "url": "https://lagacetadegranada.es/59270-2/",
+          "date": "2026-05-23T07:59:49+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Am Tag des Grundgesetzes: Demo für AfD-Verbot in der Hamburger City",
+          "source": "Hamburger Abendblatt",
+          "url": "https://www.abendblatt.de/hamburg/hamburg-mitte/article412039918/demo-fuer-afd-verbot-in-hamburg-muessen-handeln-bevor-es-zu-spaet-ist-1.html",
+          "date": "2026-05-23T06:28:53+00:00",
+          "category": "germany"
         }
       ],
       "first_seen": "2026-05-23T14:08:47+00:00",
-      "last_seen": "2026-05-23T14:08:47+00:00"
+      "last_seen": "2026-05-24T04:48:04+00:00"
     },
     {
       "id": "afds-poll-surge-and-leadership-ambitions",
       "title": "AfD’s poll surge and leadership ambitions",
-      "blurb": "Germany's AfD party continues to gain traction in polls, with debates over cooperation with other parties intensifying. Former SPD leaders suggest breaking the 'firewall' against AfD, sparking internal party conflicts.",
-      "affect": "This hotspot is charged due to alarmist framing around AfD's rise and the potential for far-right governance, alongside cross-party debates on democratic norms.",
+      "blurb": "Germany's far-right AfD party leads polls in Saxony-Anhalt and other eastern states, with Ulrich Siegmund poised to become the first AfD state premier. Articles highlight the party's growing influence, internal dynamics, and public reactions.",
+      "affect": "This commands disproportionate attention due to the high affective investment in Germany's political future, the moral charge of far-right governance, and the polarized contention over AfD's rise.",
       "intensity": 4,
       "affect_signals": [
         "alarmist framing",
         "polarized contention",
         "cross-source repetition",
-        "moral panic register"
+        "outrage-coded language",
+        "leadership crisis tone"
       ],
       "categories": [
-        "Alternative für Deutschland",
-        "Germany"
+        "Alternative für Deutschland"
       ],
       "article_count": 40,
       "refs": [
         {
-          "title": "Albig plädiert für Kooperation mit der AfD: Die Debatte, die die SPD lieber nicht führen würde",
+          "title": "Was, wenn die Menschen glauben, dass sie keine andere Wahl mehr haben?",
+          "source": "Nordkurier",
+          "url": "http://www.uckermarkkurier.de/kommentare/was-wenn-die-menschen-glauben-dass-sie-keine-andere-wahl-mehr-haben-4582354",
+          "date": "2026-05-24T03:55:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Ulrich Siegmund: Naht der erste Ministerpräsident der AfD?",
+          "source": "Neue Zürcher Zeitung",
+          "url": "https://www.nzz.ch/international-nzz-aktuell/der-seelenverkaeufer-wie-ulrich-siegmund-der-erste-ministerpraesident-der-afd-in-deutschland-werden-will-ld.10007825",
+          "date": "2026-05-24T03:30:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Brandmauer zur AfD: Ex-Bundeskanzler Olaf Scholz rät von Zusammenarbeit mit AfD ab",
+          "source": "DIE ZEIT",
+          "url": "https://www.zeit.de/politik/deutschland/2026-05/brandmauer-afd-ex-bundeskanzler-olaf-scholz-keine-zusammenarbeit",
+          "date": "2026-05-23T22:40:47+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Scholz pocht auf Brandmauer zur AfD - 23.05.26 - News",
+          "source": "Ariva",
+          "url": "https://www.ariva.de/news/scholz-pocht-auf-brandmauer-zur-afd-12014996",
+          "date": "2026-05-23T20:28:35+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Scholz pocht auf Brandmauer zur AfD - boerse.de",
+          "source": "boerse.de",
+          "url": "https://www.boerse.de/nachrichten/Scholz-pocht-auf-Brandmauer-zur-AfD/38347706",
+          "date": "2026-05-23T20:28:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Hamburg Journal: Anti-AfD-Demo in Hamburg - hier anschauen",
+          "source": "ARD Mediathek",
+          "url": "https://www.ardmediathek.de/video/hamburg-journal/anti-afd-demo-in-hamburg/ndr/Y3JpZDovL25kci5kZS8zYjZjYWVhYi00ZmViLTRhZDctYjliZC05MjExYTk1NjBiMWQ",
+          "date": "2026-05-23T18:41:11+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Demo für ein AfD-Verbot zieht durch Hamburger Innenstadt",
+          "source": "NDR.de",
+          "url": "https://www.ndr.de/nachrichten/hamburg/demo-fuer-ein-afd-verbot-zieht-durch-hamburger-innenstadt,kurzehh-3264.html",
+          "date": "2026-05-23T18:40:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Murdoch Paper Warns That Trump, 79, Has ‘Lost the Plot’",
+          "source": "The Daily Beast",
+          "url": "https://www.thedailybeast.com/rupert-murdochs-wall-street-journal-warns-donald-trump-79-has-lost-the-plot/",
+          "date": "2026-05-23T18:37:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Ministerpräsident Voigt wirft AfD Religionsfeindlichkeit vor",
+          "source": "Thüringer Allgemeine",
+          "url": "https://www.thueringer-allgemeine.de/politik/article412079924/ministerpraesident-voigt-wirft-afd-religionsfeindlichkeit-vor.html",
+          "date": "2026-05-23T18:21:23+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Neue brisante Umfragen: Deutsche fordern mehr Reform-Mut – und haben Angst vor AfD",
+          "source": "Merkur",
+          "url": "https://www.merkur.de/wirtschaft/bundesregierung-merz-news-umfrage-politik-mas-spd-afd-wahl-pistorius-deutschland-zdf-barometer-zr-94320093.html",
+          "date": "2026-05-23T17:37:46+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "AfD fordert Bau von Abschiebehafteinrichtung am Frankfurter Flughafen",
+          "source": "Wetterau.News",
+          "url": "https://www.wetterau.news/aktuelles/32749-afd-fordert-bau-von-abschiebehafteinrichtung-am-frankfurter-flughafen.html",
+          "date": "2026-05-23T17:18:06+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "SPD-Vize Midyatli fordert AfD-Verbot und rügt Albig",
+          "source": "Hasepost",
+          "url": "https://hasepost.de/spd-vize-midyatli-fordert-afd-verbot-und-ruegt-albig-715512/",
+          "date": "2026-05-23T16:49:02+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "SPD-Vize Midyatli kritisiert Albigs AfD-Vorstoß scharf",
+          "source": "Oldenburger Onlinezeitung",
+          "url": "https://www.oldenburger-onlinezeitung.de/nachrichten/spd-vize-midyatli-kritisiert-albigs-afd-vorstoss-scharf-206548.html",
+          "date": "2026-05-23T16:30:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Hunderte demonstrieren für AfD-Verbot in der City – „bevor es zu spät ist“",
+          "source": "Hamburger Abendblatt",
+          "url": "https://www.abendblatt.de/hamburg/hamburg-mitte/article412039918/demo-fuer-afd-verbot-in-hamburg-muessen-handeln-bevor-es-zu-spaet-ist-2.html",
+          "date": "2026-05-23T16:27:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Ein buntes Bündnis stellt sich hinter das Ziel, die AfD zu verbieten",
+          "source": "Allgäuer Zeitung",
+          "url": "https://www.allgaeuer-zeitung.de/kempten/kundgebung-in-kempten-unterstuetzt-forderung-nach-afd-verbot-114299554",
+          "date": "2026-05-23T16:10:01+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "„Es gibt keinen Schalter, den man umlegen kann, und dann ist die AfD Geschichte“",
+          "source": "Hamburger Abendblatt",
+          "url": "https://www.abendblatt.de/politik/article412071586/dobrindt-ansage-werden-straftaeter-vom-gefaengnistor-abholen-und-zurueckfuehren.html",
+          "date": "2026-05-23T15:20:40+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Mega-Schlappe in Umfrage: Koalitionsparteien verlieren „fast jeden vierten Wähler“",
+          "source": "Frankfurter Rundschau",
+          "url": "https://www.fr.de/politik/insa-sonntagstrend-afd-bleibt-unangefochten-union-und-spd-erholen-sich-nicht-94320013.html",
+          "date": "2026-05-23T15:08:41+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Institutionen warnen vor AfD-Regierung in Sachsen-Anhalt",
+          "source": "Oldenburger Onlinezeitung",
+          "url": "https://www.oldenburger-onlinezeitung.de/nachrichten/institutionen-warnen-vor-afd-regierung-in-sachsen-anhalt-206546.html",
+          "date": "2026-05-23T14:57:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "How is the Trump administration changing the green card application process?",
+          "source": "WPBF",
+          "url": "https://www.wpbf.com/article/how-trump-administration-changing-green-card-application-process/71391810",
+          "date": "2026-05-23T14:45:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Aktionstag für ein AfD-Verbot - Demonstrationen in Bayern",
+          "source": "Antenne Bayern",
+          "url": "https://www.antenne.de/nachrichten/bayern/aktionstag-fuer-ein-afd-verbot-demonstrationen-in-bayern",
+          "date": "2026-05-23T14:36:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Bayern: Aktionstag für ein AfD-Verbot - Demonstrationen in Bayern",
+          "source": "Ntv",
+          "url": "https://www.n-tv.de/regionales/bayern/Aktionstag-fuer-ein-AfD-Verbot-Demonstrationen-in-Bayern-id30852789.html",
+          "date": "2026-05-23T14:36:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Drohende AfD-Regierung in Ostdeutschland: Das Worst-Case-Szenario",
+          "source": "taz.de",
+          "url": "https://taz.de/Drohende-AfD-Regierung-in-Ostdeutschland/!6177987/",
+          "date": "2026-05-23T14:17:49+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Parteien - Ex-Landeschef Albig empfiehlt SPD Zusammenarbeit mit AfD - Politik",
+          "source": "SZ.de",
+          "url": "https://www.sueddeutsche.de/politik/parteien-ex-landeschef-albig-empfiehlt-spd-zusammenarbeit-mit-afd-dpa.urn-newsml-dpa-com-20090101-260522-930-119002",
+          "date": "2026-05-23T14:07:56+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "„Ich weiß nicht, was er raucht“ SPD-Politiker Albig empfiehlt Kooperation mit der AfD – Empörung in der Partei",
           "source": "Tagesspiegel",
-          "url": "https://www.tagesspiegel.de/politik/albig-pladiert-fur-kooperation-mit-der-afd-die-debatte-die-die-spd-lieber-nicht-fuhren-wurde-15632950.html",
-          "date": "2026-05-23T13:19:20+00:00",
+          "url": "https://www.tagesspiegel.de/politik/ich-weiss-nicht-was-er-raucht-spd-politiker-albig-empfiehlt-kooperation-mit-der-afd--emporung-in-der-partei-15632950.html",
+          "date": "2026-05-23T13:16:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "„Ich weiß nicht, was er raucht“ Sozialdemokrat Albig empfiehlt Kooperation mit der AfD – Empörung in der Partei",
+          "source": "Tagesspiegel",
+          "url": "http://www.pnn.de/politik/ich-weiss-nicht-was-er-raucht-sozialdemokrat-albig-empfiehlt-kooperation-mit-der-afd--emporung-in-der-partei-15632950.html",
+          "date": "2026-05-23T13:16:00+00:00",
           "category": "germany"
         },
         {
@@ -95,10 +1272,10 @@
           "category": "germany"
         },
         {
-          "title": "„Ein Parteienverbot ist ein undemokratisches Mittel“",
-          "source": "WELT",
-          "url": "https://www.welt.de/videos/video6a117e049c51a75bc47530d0/debatte-ueber-afd-verbot-ein-parteienverbot-ist-ein-undemokratisches-mittel.html",
-          "date": "2026-05-23T12:49:40+00:00",
+          "title": "Politikverdrossenheit: Könnte diese AfD-Forderung die Demokratie retten?",
+          "source": "shz.de",
+          "url": "https://www.shz.de/deutschland-welt/politik/artikel/koennte-dieser-afd-vorschlag-die-deutsche-demokratie-retten-50667800",
+          "date": "2026-05-23T13:00:00+00:00",
           "category": "germany"
         },
         {
@@ -109,61 +1286,243 @@
           "category": "germany"
         },
         {
-          "title": "Uli Hoeneß will AfD an die Macht lassen",
+          "title": "„Weiß nicht, was ihn da reitet“ – Scharfe Kritik an Vorstoß von SPD-Politiker zur AfD",
+          "source": "WELT",
+          "url": "https://www.welt.de/politik/deutschland/article6a11655ebe29d4b4607a45b7/albig-fuer-zusammenarbeit-mit-afd-weiss-nicht-was-ihn-da-reitet-scharfe-kritik-an-vorstoss-von-spd-politiker-zur-afd.html",
+          "date": "2026-05-23T12:22:30+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "\"Der Feind steht rechts\": SPD-Politiker gehen Torsten Albig für AfD-Vorstoß scharf an",
+          "source": "Ntv",
+          "url": "https://www.n-tv.de/politik/SPD-Politiker-gehen-Torsten-Albig-fuer-AfD-Vorstoss-scharf-an-id30852449.html",
+          "date": "2026-05-23T12:16:36+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "AfD: Ministerpräsident Mario Voigt wirft AfD Religionsfeindlichkeit vor",
+          "source": "DIE ZEIT",
+          "url": "https://www.zeit.de/politik/deutschland/2026-05/afd-kirche-mario-voigt-gxe",
+          "date": "2026-05-23T11:35:35+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "SPD-Spitze weist Albigs Vorstoß zu AfD-Zusammenarbeit scharf zurück",
+          "source": "Hasepost",
+          "url": "https://hasepost.de/spd-spitze-weist-albigs-vorstoss-zu-afd-zusammenarbeit-scharf-zurueck-715470/",
+          "date": "2026-05-23T11:09:03+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "SPD-Politiker weisen Albig-Vorstoß zur AfD scharf zurück",
+          "source": "Oldenburger Onlinezeitung",
+          "url": "https://www.oldenburger-onlinezeitung.de/nachrichten/spd-politiker-weisen-albig-vorstoss-zur-afd-scharf-zurueck-206532.html",
+          "date": "2026-05-23T11:01:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "„Weiß nicht, was ihn da reitet“ – Früherer Ministerpräsident empfiehlt SPD Zusammenarbeit mit AfD",
+          "source": "WELT",
+          "url": "https://www.welt.de/politik/deutschland/article6a11655ebe29d4b4607a45b7/vor-landtagswahl-weiss-nicht-was-ihn-da-reitet-frueherer-ministerpraesident-empfiehlt-spd-zusammenarbeit-mit-afd.html",
+          "date": "2026-05-23T10:59:12+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Brandmauer zur AfD: SPD-Politiker weisen Albig-Aussagen zu Zusammenarbeit mit AfD zurück",
+          "source": "DIE ZEIT",
+          "url": "https://www.zeit.de/politik/deutschland/2026-05/spd-torsten-albig-julian-barlen-stefan-krach-afd-brandmauer-gxe",
+          "date": "2026-05-23T10:52:22+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "„Ein Parteienverbot ist grundsätzlich ein undemokratisches Mittel“",
+          "source": "WELT",
+          "url": "https://www.welt.de/videos/video6a117e049c51a75bc47530d0/afd-debatte-ein-parteienverbot-ist-grundsaetzlich-ein-undemokratisches-mittel.html",
+          "date": "2026-05-23T10:42:23+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "„Billige populistische Verteufelung“: Kretschmer kritisiert Brandmauer-Debatte scharf",
+          "source": "Berliner Zeitung",
+          "url": "https://www.berliner-zeitung.de/article/brandmauer-sachsens-ministerpraesident-kretschmer-kritisiert-debatte-scharf-10038080",
+          "date": "2026-05-23T10:26:46+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "SPD-Ex-Ministerpräsident will AfD-Brandmauer kippen - so reagieren Jusos und Landeschef",
+          "source": "NDR.de",
+          "url": "https://www.ndr.de/nachrichten/schleswig-holstein/spd-ex-ministerpraesident-albig-fordert-afd-brandmauer-einzureissen,albig-124.html",
+          "date": "2026-05-23T10:00:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Brandmauer zur AfD einreißen? SPD watscht Genossen für Vorstoß ab",
           "source": "BILD",
-          "url": "https://www.bild.de/politik/inland/uli-hoeness-will-afd-an-die-macht-lassen-6a117908be29d4b4607a4720",
-          "date": "2026-05-23T10:54:16+00:00",
+          "url": "https://www.bild.de/politik/inland/brandmauer-zur-afd-einreissen-spd-watscht-genossen-fuer-vorstoss-ab-6a1169a0be29d4b4607a4610",
+          "date": "2026-05-23T09:33:07+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Ex-Landeschef Albig wirbt für Zusammenarbeit von SPD mit AfD",
+          "source": "ZDFheute",
+          "url": "https://www.zdfheute.de/politik/deutschland/albig-spd-afd-brandmauer-zusammenarbeit-wahlen-schleswig-holstein-100.html",
+          "date": "2026-05-23T09:27:48+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "„Wird mit mir garantiert keine Minister der AfD oder der Linken geben“",
+          "source": "WELT",
+          "url": "https://www.welt.de/politik/deutschland/plus6a10031cf0f7eb608db7a1fd/sachsen-anhalts-regierungschef-wird-mit-mir-garantiert-keine-minister-der-afd-oder-der-linken-geben.html",
+          "date": "2026-05-23T09:23:14+00:00",
           "category": "germany"
         }
       ],
       "first_seen": "2026-05-12T15:20:29+00:00",
-      "last_seen": "2026-05-23T14:08:47+00:00"
+      "last_seen": "2026-05-24T04:48:04+00:00"
     },
     {
       "id": "trump-administration-restricts-green-card-applications",
       "title": "Trump administration restricts green card applications",
-      "blurb": "The Trump administration announced a policy change requiring most green card applicants to leave the U.S. for processing, reversing a decades-old practice. This has sparked backlash from immigration advocates and businesses.",
-      "affect": "This commands attention due to its strong moral charge around immigration policy and the potential humanitarian and economic impacts, framed as a triumph by MAGA supporters.",
-      "intensity": 5,
+      "blurb": "The Trump administration announced a policy change requiring most green card applicants to leave the U.S. and apply from their home countries. This move has sparked widespread criticism from immigration advocates and legal experts.",
+      "affect": "This commands disproportionate attention due to the moral charge of immigration policy changes, the polarized contention over U.S. immigration reform, and the high affective investment in the lives of affected immigrants.",
+      "intensity": 4,
       "affect_signals": [
-        "outrage-coded language",
         "alarmist framing",
+        "polarized contention",
         "cross-source repetition",
-        "moral charge"
+        "outrage-coded language",
+        "moral panic register"
       ],
       "categories": [
-        "MAGA / Trump",
-        "United States"
+        "MAGA / Trump"
       ],
-      "article_count": 35,
+      "article_count": 30,
       "refs": [
         {
-          "title": "A New Social Security Garnishment Is Coming, Courtesy of the Trump Administration -- and There Are 2 Perfectly Legal Ways You Can Avoid It",
-          "source": "The Motley Fool",
-          "url": "https://www.fool.com/retirement/2026/05/23/social-security-garnishment-2-legal-ways-to-avoid/",
-          "date": "2026-05-23T13:13:05+00:00",
+          "title": "Extremadura dicta sentencia a la espera de las generales: el PP gana, pero Vox decide",
+          "source": "El Periódico Extremadura",
+          "url": "https://www.elperiodicoextremadura.com/extremadura/2026/05/24/extremadura-dicta-sentencia-espera-generales-130588699.html",
+          "date": "2026-05-24T04:01:15+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Trump administration announces major changes for immigrants seeking green cards",
+          "source": "CBS News",
+          "url": "https://www.cbsnews.com/video/trump-administration-announces-major-changes-for-immigrants-seeking-green-cards/",
+          "date": "2026-05-23T18:01:41+00:00",
           "category": "usa"
         },
         {
-          "title": "Trump administration requiring people to apply for green cards outside the US",
-          "source": "wusa9.com",
-          "url": "https://www.wusa9.com/video/news/politics/immigration-news/trump-administration-requiring-people-to-apply-for-green-cards-outside-the-us/65-4c4b87a7-2d63-4f5a-ac0e-6bd58cfd17bd",
-          "date": "2026-05-23T11:54:00+00:00",
+          "title": "Trump Admin Fires Two More NYC Immigration Judges",
+          "source": "New York Focus",
+          "url": "https://nysfocus.com/2026/05/23/trump-fires-two-nyc-immigration-judges-sponzo-dandelet",
+          "date": "2026-05-23T17:45:00+00:00",
           "category": "usa"
         },
         {
-          "title": "Trump administration tightens overseas green card processing, raising concerns for African migrants",
-          "source": "Business Insider Africa",
-          "url": "https://africa.businessinsider.com/local/lifestyle/trump-administration-tightens-overseas-green-card-processing-raising-concerns-for/kxm8y81",
-          "date": "2026-05-23T09:38:34+00:00",
+          "title": "Trump administration orders green card applicants to leave the US, apply from their home countries",
+          "source": "FOX 11 Los Angeles",
+          "url": "https://www.foxla.com/news/trump-administration-orders-green-card-applicants-leave-us-apply-from-home-countries",
+          "date": "2026-05-23T17:40:15+00:00",
           "category": "usa"
         },
         {
-          "title": "Brandmauer zur AfD: Ex-Ministerpräsident Torsten Albig rät SPD zu Zusammenarbeit mit AfD",
-          "source": "DIE ZEIT",
-          "url": "https://www.zeit.de/politik/deutschland/2026-05/brandmauer-afd-torsten-albig-zusammenarbeit-spd",
-          "date": "2026-05-23T01:01:31+00:00",
-          "category": "germany"
+          "title": "How is the Trump administration changing the green card application process?",
+          "source": "WPBF",
+          "url": "https://www.wpbf.com/article/how-trump-administration-changing-green-card-application-process/71391810",
+          "date": "2026-05-23T14:45:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "President Trump Calls Potential SCOTUS Ruling Against New Birthright Citizenship Policy a \"Disgrace\"",
+          "source": "The Maine Wire",
+          "url": "https://www.themainewire.com/2026/05/president-trump-calls-potential-scotus-ruling-against-new-birthright-citizenship-policy-a-disgrace/",
+          "date": "2026-05-23T13:48:45+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump administration’s AI executive order shifts to voluntary model sharing with government",
+          "source": "Crypto Briefing",
+          "url": "https://cryptobriefing.com/trump-ai-executive-order-voluntary-model-sharing/",
+          "date": "2026-05-23T13:08:31+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Magyar Péter szerint a kérdés, hogy „ki vette rá Orbán házi lelkészét” arra, hogy lobbizon K. Endréért",
+          "source": "Magyar Hang",
+          "url": "https://hang.hu/belfold/magyar-peter-szerint-kerdes-hogy-ki-vette-ra-orban-hazi-lelkeszet-arra-hogy-lobbizon-k-endreert-188903",
+          "date": "2026-05-23T10:06:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Trump's plan to limit student-loan forgiveness for public servants is inching closer to borrowers",
+          "source": "Business Insider",
+          "url": "https://www.businessinsider.com/trump-limit-pslf-student-loan-forgiveness-getting-closer-borrowers-relief-2026-5",
+          "date": "2026-05-23T08:56:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump administration to end in-country applications for US permanent residency",
+          "source": "SBS Australia",
+          "url": "https://www.sbs.com.au/news/article/trump-administration-ends-in-country-applications-for-united-states-permanent-residency/4mslxstsq",
+          "date": "2026-05-23T06:08:15+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump administration to change policy for green card applicants",
+          "source": "AZ Family",
+          "url": "https://www.azfamily.com/2026/05/23/trump-administration-change-policy-green-card-applicants/",
+          "date": "2026-05-23T04:33:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Tulsi Gabbard resigns at director of national intelligence",
+          "source": "newscentermaine.com",
+          "url": "https://www.newscentermaine.com/video/news/national/tulsi-gabbard-resigns-at-director-of-national-intelligence/97-f5d72272-546b-4884-b230-573824cfe229",
+          "date": "2026-05-23T04:02:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "What smart people are saying about the Trump administration's green card crackdown",
+          "source": "Business Insider",
+          "url": "https://www.businessinsider.com/experts-react-donald-trump-new-immigration-policy-green-card-applications-2026-5",
+          "date": "2026-05-23T02:17:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump administration restricts most green card applications from within U.S.",
+          "source": "MS NOW",
+          "url": "https://www.ms.now/news/trump-administration-restricts-most-green-card-applications-from-within-u-s",
+          "date": "2026-05-23T00:10:14+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump administration rolls out major change to green card process",
+          "source": "NBC 5 Chicago",
+          "url": "https://www.nbcchicago.com/video/news/local/trump-administration-rolls-out-major-change-to-green-card-process/3939591/",
+          "date": "2026-05-22T23:07:23+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump administration to make foreigners leave US to apply for green cards",
+          "source": "Financial Times",
+          "url": "https://www.ft.com/content/5d4c3de6-07d9-436e-8822-2dbafd10774a",
+          "date": "2026-05-22T22:48:37+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "US green card applicants will now have to return to home countries to apply, DHS says",
+          "source": "The Guardian",
+          "url": "https://www.theguardian.com/us-news/2026/may/22/green-card-applicants-trump-administration",
+          "date": "2026-05-22T22:19:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump administration upends green card process, potentially compelling hundreds of thousands to leave US to apply",
+          "source": "CNN",
+          "url": "https://www.cnn.com/2026/05/22/politics/green-card-seekers-leave-us-apply",
+          "date": "2026-05-22T21:53:58+00:00",
+          "category": "usa"
         },
         {
           "title": "Foreigners in U.S. must apply for green cards abroad, new Trump administration rule says",
@@ -171,124 +1530,87 @@
           "url": "https://www.pbs.org/newshour/politics/foreigners-in-u-s-must-apply-for-green-cards-abroad-new-trump-administration-rule-says",
           "date": "2026-05-22T21:41:08+00:00",
           "category": "usa"
+        },
+        {
+          "title": "Trump administration will make green card hopefuls return to home countries before applying",
+          "source": "Stateline",
+          "url": "https://stateline.org/2026/05/22/trump-administration-will-make-green-card-hopefuls-return-to-home-countries-before-applying/",
+          "date": "2026-05-22T21:25:11+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Donald Trump’s Lackeys Launch Frenzied Bid to Throw Out Legal Migrants",
+          "source": "The Daily Beast",
+          "url": "https://www.thedailybeast.com/donald-trumps-goons-launch-frenzied-bid-to-throw-out-legal-migrants/",
+          "date": "2026-05-22T20:43:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Roundup: Consumer sentiment / Tulsi Gabbard / Memorial Day",
+          "source": "Baton Rouge Business Report",
+          "url": "https://www.businessreport.com/article/roundup-consumer-sentiment-tulsi-gabbard-memorial-day",
+          "date": "2026-05-22T19:58:26+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Vox insta al CSD a retirar de manera “inmediata” la camiseta el Athletic Club por incluir a Treviño en el mapa del País Vasco",
+          "source": "El Correo de Burgos",
+          "url": "https://www.elcorreodeburgos.com/burgos/provincia/260522/243229/vox-insta-csd-retirar-manera-inmediata-camiseta-athletic-club-incluir-trevino-mapa-pais-vasco.html",
+          "date": "2026-05-22T19:24:33+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Fastcast: U.S. senator introduces bill to help corrections officers, Tulsi Gabbard resigns",
+          "source": "WIFR",
+          "url": "https://www.wifr.com/video/2026/05/22/fastcast-us-senator-introduces-bill-help-corrections-officers-tulsi-gabbard-resigns/",
+          "date": "2026-05-22T19:12:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump administration to require most immigrants seeking green cards to leave the U.S. first",
+          "source": "CBS News",
+          "url": "https://www.cbsnews.com/news/trump-green-cards-leave-us/",
+          "date": "2026-05-22T18:59:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "NTEU asks Trump administration to ease telework rules as gas prices spike",
+          "source": "Government Executive",
+          "url": "https://www.govexec.com/pay-benefits/2026/05/nteu-telework-rules-gas-prices/413727/?oref=ge-mini-feed",
+          "date": "2026-05-22T17:55:18+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "National Intelligence Director Tulsi Gabbard is resigning",
+          "source": "WAFB",
+          "url": "https://www.wafb.com/video/2026/05/22/national-intelligence-director-tulsi-gabbard-is-resigning/",
+          "date": "2026-05-22T17:43:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump Administration Narrows Path to Seek Green Cards Inside US",
+          "source": "Bloomberg Law News",
+          "url": "https://news.bloomberglaw.com/immigration/trump-administration-narrows-path-to-seek-green-cards-inside-us",
+          "date": "2026-05-22T17:31:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Charity demands apology from Farage for ‘intimidating’ uninvited visit",
+          "source": "The Guardian",
+          "url": "https://www.theguardian.com/politics/2026/may/22/charity-demands-apology-from-farage-for-intimidating-uninvited-visit",
+          "date": "2026-05-22T17:31:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Non-immigrant visa holders must return to home countries to apply for green cards, Trump administration says",
+          "source": "NBC News",
+          "url": "https://www.nbcnews.com/news/us-news/visa-holders-green-cards-return-home-country-trump-rcna346546",
+          "date": "2026-05-22T17:28:54+00:00",
+          "category": "usa"
         }
       ],
       "first_seen": "2026-05-23T04:15:05+00:00",
-      "last_seen": "2026-05-23T14:08:47+00:00"
-    },
-    {
-      "id": "la-libertad-avanza-internal-power-struggles",
-      "title": "La Libertad Avanza internal power struggles",
-      "blurb": "Argentina's ruling La Libertad Avanza party faces escalating internal conflicts, with factions led by Karina Milei and Santiago Caputo clashing over political strategies. The disputes threaten the government's stability.",
-      "affect": "This hotspot is charged due to its leadership crisis tone and polarized contention within the ruling party, with high stakes for Argentina's political future.",
-      "intensity": 4,
-      "affect_signals": [
-        "leadership crisis tone",
-        "polarized contention",
-        "cross-source repetition",
-        "outrage-coded language"
-      ],
-      "categories": [
-        "La Libertad Avanza",
-        "Argentina"
-      ],
-      "article_count": 45,
-      "refs": [
-        {
-          "title": "La cuenta pendiente de Javier Milei: cómo avanza la designación de jueces y fiscales",
-          "source": "Tribuna de Periodistas",
-          "url": "https://periodicotribuna.com.ar/la-cuenta-pendiente-de-milei-como-avanza-la-designacion-de-jueces-y-fiscales/",
-          "date": "2026-05-23T13:13:50+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Caso Libra: Encuentran en el celular de Novelli un supuesto contrato por US$5 millones vinculado a Javier Milei",
-          "source": "Filo News",
-          "url": "https://www.filo.news/noticia/2026/05/23/caso-libra-encuentran-en-el-celular-de-novelli-un-supuesto-contrato-por-ususd5-millones-vinculado-a-javier-milei",
-          "date": "2026-05-23T12:44:18+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Karina Milei vs. Santiago Caputo: la génesis de una interna que corroe el liderazgo de Javier Milei",
-          "source": "Letra P",
-          "url": "https://www.letrap.com.ar/politica/karina-milei-vs-santiago-caputo-la-genesis-una-interna-que-corroe-el-liderazgo-javier-milei-n5423996",
-          "date": "2026-05-23T11:09:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Javier Milei ante el punto de no retorno en la interna libertaria",
-          "source": "Diario Neuquino",
-          "url": "https://diarioneuquino.com.ar/javier-milei-ante-el-punto-de-no-retorno-en-la-interna-libertaria/",
-          "date": "2026-05-23T09:17:11+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Cómo es el origen de los dos sectores de la interna libertaria que se disputan el poder dentro del Gobierno",
-          "source": "Infobae",
-          "url": "https://www.infobae.com/politica/2026/05/23/como-es-el-origen-de-los-dos-sectores-de-la-interna-libertaria-que-se-disputan-el-poder-dentro-del-gobierno/",
-          "date": "2026-05-23T06:03:43+00:00",
-          "category": "argentina"
-        }
-      ],
-      "first_seen": "2026-05-19T04:41:51+00:00",
-      "last_seen": "2026-05-23T14:08:47+00:00"
-    },
-    {
-      "id": "melonis-government-faces-backlash-over-policies",
-      "title": "Meloni’s government faces backlash over policies",
-      "blurb": "Italy's Prime Minister Giorgia Meloni faces criticism over her government's handling of energy crises, migration, and economic policies. Opposition leaders and allies like Matteo Salvini clash over fiscal and social issues.",
-      "affect": "This commands attention due to its polarized contention and alarmist framing around Italy's economic and social stability, with high affective investment from both supporters and critics.",
-      "intensity": 4,
-      "affect_signals": [
-        "polarized contention",
-        "alarmist framing",
-        "cross-source repetition",
-        "moral charge"
-      ],
-      "categories": [
-        "Fratelli d'Italia / Lega",
-        "Italy"
-      ],
-      "article_count": 40,
-      "refs": [
-        {
-          "title": "Altroché spending review, con il governo Meloni la spesa corrente è aumentata ancora di 34 miliardi",
-          "source": "Milano Finanza",
-          "url": "https://www.milanofinanza.it/news/altroche-spending-review-con-il-governo-meloni-la-spesa-corrente-e-aumentata-ancora-di-34-miliardi-202605231501256661",
-          "date": "2026-05-23T13:00:00+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Quella tentazione chiamata elezioni anticipate",
-          "source": "Il Dubbio",
-          "url": "https://www.ildubbio.news/news/politica/50778/quella-tentazione-chiamata-elezioni-anticipate.html",
-          "date": "2026-05-23T12:38:00+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Gli interventi del governo, dalle accise al comparto agricolo. Meloni: \"Puntiamo al salario giusto\"",
-          "source": "RaiNews",
-          "url": "https://www.rainews.it/video/2026/05/gli-interventi-del-governo-dalle-accise-al-comparto-agricolo-meloni-puntiamo-al-salario-giusto-2786cd78-3c4f-44f5-b3a6-b9c469819d3c.html",
-          "date": "2026-05-23T11:18:20+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Strage di Capaci, Morrone (Lega): \"L’eredità di Falcone non diventi vuota retorica\"",
-          "source": "ForlìToday",
-          "url": "https://www.forlitoday.it/politica/strage-di-capaci-morrone-lega-l-eredita-di-falcone-non-diventi-vuota-retorica.html",
-          "date": "2026-05-23T10:56:23+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Renzi a Brescia: «Italia più povera dopo quattro anni di governo Meloni»",
-          "source": "Giornale di Brescia",
-          "url": "https://www.giornaledibrescia.it/politica/matteo-renzi-brescia-italia-piu-povera-governo-meloni-futureproofsociety-san-barnaba-cij6invx",
-          "date": "2026-05-23T10:32:03+00:00",
-          "category": "italy"
-        }
-      ],
-      "first_seen": "2026-05-23T14:08:47+00:00",
-      "last_seen": "2026-05-23T14:08:47+00:00"
+      "last_seen": "2026-05-24T04:48:04+00:00"
     }
   ]
 }
