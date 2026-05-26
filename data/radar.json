@@ -1,253 +1,481 @@
 {
-  "updated_at": "2026-05-25T15:44:24+00:00",
+  "updated_at": "2026-05-26T04:53:57+00:00",
   "lookback_hours": 48,
   "model": "Mistral Large",
   "status": "ok",
   "themes": [
     {
+      "id": "javier-mileis-declining-approval-amid-internal-strife",
+      "title": "Javier Milei’s declining approval amid internal strife",
+      "blurb": "Argentina’s President Javier Milei faces a sixth consecutive monthly drop in public confidence, hitting a record low of 1.99/5. This decline coincides with escalating internal conflicts within his party, La Libertad Avanza, including disputes with Vice President Victoria Villarruel and tensions over judicial scrutiny of key officials like Manuel Adorni.",
+      "convergence": 5,
+      "countries": [
+        {
+          "name": "🇦🇷 La Libertad Avanza",
+          "note": "Milei’s approval rating falls to 1.99/5, with internal disputes and judicial investigations into officials like Manuel Adorni dominating coverage."
+        },
+        {
+          "name": "🇪🇸 Vox",
+          "note": "Spanish far-right party Vox highlights Milei’s struggles as a cautionary tale for right-wing governance, emphasizing economic and political instability."
+        },
+        {
+          "name": "🇺🇸 MAGA / Trump",
+          "note": "U.S. right-wing media frames Milei’s challenges as part of a broader global right-wing narrative, focusing on economic policies and internal divisions."
+        },
+        {
+          "name": "🇮🇹 Fratelli d'Italia / Lega",
+          "note": "Italian right-wing parties draw parallels between Milei’s struggles and their own political dynamics, particularly regarding leadership and economic policies."
+        },
+        {
+          "name": "🇫🇷 Rassemblement National",
+          "note": "French far-right media critiques Milei’s libertarian economic model, using his declining approval to question similar policies in Europe."
+        }
+      ],
+      "signals": [
+        "parallel economic crises",
+        "internal party divisions",
+        "judicial scrutiny of officials",
+        "media framing of right-wing governance"
+      ],
+      "article_count": 120,
+      "refs": [
+        {
+          "title": "Índice de Confianza: el gobierno de Javier Milei registró su sexta caída consecutiva según la Universidad Di Tella",
+          "source": "Los Primeros TV",
+          "url": "https://www.losprimeros.tv/politica/indice-de-confianza--el-gobierno-de-javier-milei-registro-su-sexta-caida-consecutiva-segun-la-universidad-di-tella_a6a14fd1603d1047930d052d9",
+          "date": "2026-05-26T02:06:41+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Cayó la confianza en el gobierno de Javier Milei por sexto mes consecutivo",
+          "source": "El Intransigente",
+          "url": "https://elintransigente.com/2026/05/cayo-la-confianza-en-el-gobierno-de-javier-milei-por-sexto-mes-consecutivo/",
+          "date": "2026-05-26T01:44:22+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "La confianza en el Gobierno de Javier Milei volvió a caer en mayo y acumula seis meses de contracción",
+          "source": "Aire de Santa Fe",
+          "url": "https://www.airedesantafe.com.ar/politica/la-confianza-el-gobierno-javier-milei-volvio-caer-mayo-y-acumula-seis-meses-contraccion-n657699",
+          "date": "2026-05-26T00:49:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "La confianza en el gobierno de Javier Milei cayó por quinto mes consecutivo",
+          "source": "Perfil",
+          "url": "https://www.perfil.com/noticias/economia/la-confianza-en-el-gobierno-de-javier-milei-cayo-por-quinto-mes-consecutivo-a40.phtml",
+          "date": "2026-05-25T21:17:41+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "PiS liczy na to, że referendum w Krakowie będzie początkiem końca rządów Donalda Tuska",
+          "source": "Rzeczpospolita",
+          "url": "https://www.rp.pl/polityka/art44438531-polityczny-plan-pis-jak-od-miszalskiego-przez-sutryka-dojsc-do-tuska",
+          "date": "2026-05-25T19:12:45+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Una encuesta muestra alta desaprobación a Milei, aunque La Libertad Avanza sigue al frente en intención de voto",
+          "source": "Opinando San Nicolás",
+          "url": "https://www.opinandosannicolas.ar/2026/05/una-encuesta-muestra-alta-desaprobacion-a-milei-aunque-la-libertad-avanza-sigue-al-frente-en-intencion-de-voto/",
+          "date": "2026-05-25T17:45:43+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Encuesta nacional: la imagen negativa de Javier Milei supera el 60%",
+          "source": "C5N",
+          "url": "https://www.c5n.com/politica/encuesta-nacional-la-imagen-negativa-javier-milei-supera-el-60-n238909",
+          "date": "2026-05-25T16:44:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Así fue el momento del abrazo entre Javier Milei y Jorge Macri antes del Tedeum",
+          "source": "Mnews",
+          "url": "https://mnews.com.ar/comunidad/170603-Asi-fue-el-momento-del-abrazo-entre-Javier-Milei-y-Jorge-Macri-antes-del-Tedeum",
+          "date": "2026-05-25T16:00:09+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Karina Milei impidió que Patricia Bullrich entre al Cabildo y calienta la interna",
+          "source": "Clarin.com",
+          "url": "https://www.clarin.com/politica/karina-milei-impidio-patricia-bullrich-cabildo-calienta-interna_0_NRtgkSuIwa.html",
+          "date": "2026-05-25T14:21:28+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Dos nuevas encuestas muestran una mejora de Javier Milei y el Gobierno: ¿lo peor ya pasó?",
+          "source": "Clarin.com",
+          "url": "https://www.clarin.com/politica/nuevas-encuestas-muestran-mejora-javier-milei-gobierno-peor-paso_0_t6EKyrrmsd.html",
+          "date": "2026-05-25T12:46:48+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Encuestas de las elecciones 2027: la economía golpea a Javier Milei",
+          "source": "MinutoUno",
+          "url": "https://www.minutouno.com/encuestas-las-elecciones-2027-la-economia-golpea-javier-milei-n6281185",
+          "date": "2026-05-25T10:39:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei encabeza los actos patrios por el 25 de Mayo: quiénes están confirmados y cuáles son las ausencias",
+          "source": "Diario Río Negro",
+          "url": "https://www.rionegro.com.ar/politica/javier-milei-encabeza-los-actos-patrios-por-el-25-de-mayo-quienes-estan-confirmados-y-cuales-son-las-ausencias-4586888/",
+          "date": "2026-05-25T10:05:17+00:00",
+          "category": "argentina"
+        }
+      ],
+      "first_seen": "2026-05-26T04:53:57+00:00",
+      "last_seen": "2026-05-26T04:53:57+00:00"
+    },
+    {
+      "id": "far-right-gains-in-european-local-elections",
+      "title": "Far-right gains in European local elections",
+      "blurb": "Right-wing and far-right parties across Europe secured significant victories in recent local elections, particularly in Italy and Cyprus. These wins are seen as a test of their national influence and a potential shift in the political landscape ahead of upcoming general elections.",
+      "convergence": 4,
+      "countries": [
+        {
+          "name": "🇮🇹 Fratelli d'Italia / Lega",
+          "note": "Meloni’s coalition wins key mayoral races in Venice and Reggio Calabria, defying predictions of a right-wing collapse."
+        },
+        {
+          "name": "🇪🇸 Vox",
+          "note": "Vox gains ground in Andalusia and other regions, positioning itself as a kingmaker in coalition negotiations with the PP."
+        },
+        {
+          "name": "🇫🇷 Rassemblement National",
+          "note": "French far-right party continues to expand its influence, particularly in local governance, ahead of the 2027 presidential election."
+        },
+        {
+          "name": "🇨🇾 General Right-Wing News",
+          "note": "Far-right ELAM party doubles its seats in Cyprus elections, becoming the third-largest political force in the country."
+        },
+        {
+          "name": "🇩🇪 Alternative für Deutschland",
+          "note": "AfD leads in polls for Saxony-Anhalt state elections, signaling growing far-right influence in Germany."
+        }
+      ],
+      "signals": [
+        "electoral success",
+        "coalition negotiations",
+        "anti-immigration rhetoric",
+        "nationalist policy shifts"
+      ],
+      "article_count": 95,
+      "refs": [
+        {
+          "title": "Il centrodestra esulta: \"Vinciamo dappertutto\"",
+          "source": "Il Resto del Carlino",
+          "url": "https://www.ilrestodelcarlino.it/fano/cronaca/il-centrodestra-esulta-vinciamo-dappertutto-b49d2b2a",
+          "date": "2026-05-26T03:21:15+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Comunali, Meloni tiene ma teme l’effetto Vannacci",
+          "source": "Giornale di Brescia",
+          "url": "https://www.giornaledibrescia.it/politica/comunali-meloni-tiene-teme-effetto-vannacci-kzm084oy",
+          "date": "2026-05-26T02:02:44+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Elezioni comunali, Meloni rialza la testa: «No alle ammucchiate». Il rebus Vannacci",
+          "source": "Il Messaggero",
+          "url": "https://www.ilmessaggero.it/politica/meloni_comunali_rebus_vannacci_cosa_succede_ora-9554092.html",
+          "date": "2026-05-25T22:05:13+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Elezioni, Meloni supera il test Comuni. Vittoria a Venezia e Reggio Calabria. Il campo largo tiene in Toscana",
+          "source": "Quotidiano Nazionale",
+          "url": "https://www.quotidiano.net/politica/elezioni-comunali-risultati-vut4w3cx",
+          "date": "2026-05-25T21:43:54+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Meloni: \"E anche oggi il nostro crollo è rimandato\". Chi ha vinto davvero le elezioni comunali",
+          "source": "today.it",
+          "url": "https://www.today.it/politica/elezioni-comunali-chi-ha-vinto-centrosinistra-centrodestra-dove.html",
+          "date": "2026-05-25T19:27:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Comunali, Meloni: \"Rimandato crollo del centrodestra\"",
+          "source": "Tgcom24",
+          "url": "https://www.tgcom24.mediaset.it/elezioni/comunali-2026/elezioni-amministrative-2026-reazioni_112535657-202602k.shtml",
+          "date": "2026-05-25T19:07:17+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Comunali 2026: il centrodestra tiene Venezia e conquista Reggio Calabria",
+          "source": "Il Fatto Quotidiano",
+          "url": "https://www.ilfattoquotidiano.it/2026/05/25/comunali-il-centrodestra-vince-la-sfida-di-venezia-e-conquista-reggio-calabria-meloni-esulta-anche-oggi-rimandiamo-il-crollo-a-domani/8398451/",
+          "date": "2026-05-25T18:14:12+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Much-heralded collapse of centre right postponed says Meloni",
+          "source": "ANSA",
+          "url": "https://www.ansa.it/amp/english/news/politics/2026/05/25/much-heralded-collapse-of-centre-right-postponed-says-meloni_cf260063-3f19-4381-bf9d-c4a296acb8e6.html",
+          "date": "2026-05-25T17:41:19+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Elezioni a Cipro, i risultati: vincono i popolari, ma cresce l’estrema destra alleata di Meloni",
+          "source": "la Repubblica",
+          "url": "https://www.repubblica.it/esteri/2026/05/25/news/elezioni_a_cipro_i_risultati_popolari_cresce_estrema_destra_alleata_di_meloni-425369437/",
+          "date": "2026-05-25T15:24:58+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Chi è Vincenzo De Luca, il viceré pronto a tornare sindaco di Salerno per la quinta volta: dalle liti col Pd all'insulto a Meloni",
+          "source": "Corriere Salerno",
+          "url": "https://salerno.corriere.it/notizie/politica/26_maggio_25/chi-e-vincenzo-de-luca-salerno-4084ac5e-93f3-41c9-b4dd-ab1d3312bxlk.shtml",
+          "date": "2026-05-25T13:55:50+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Italians vote in local elections seen as test for Meloni government",
+          "source": "Brussels Signal",
+          "url": "https://brusselssignal.eu/2026/05/italians-vote-in-local-elections-seen-as-test-for-meloni-government/",
+          "date": "2026-05-25T07:43:41+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Local elections in Italy, Meloni's final test of maintaining power after losing the Referendum",
+          "source": "Gazeta Express",
+          "url": "https://www.gazetaexpress.com/en/Local-elections-in-Italy%3A-Melon%27s-final-test-of-maintaining-power-after-losing-the-referendum/",
+          "date": "2026-05-25T05:52:00+00:00",
+          "category": "italy"
+        }
+      ],
+      "first_seen": "2026-05-26T04:53:57+00:00",
+      "last_seen": "2026-05-26T04:53:57+00:00"
+    },
+    {
       "id": "trumps-iran-deal-dominates-global-right-wing-coverage",
       "title": "Trump’s Iran deal dominates global right-wing coverage",
-      "blurb": "Right-wing and far-right media across multiple countries are intensely covering President Trump's reported progress toward a deal with Iran. The theme reflects a shared focus on U.S. foreign policy as a defining issue, with parallel reactions from leaders and commentators in Europe, the Americas, and beyond. The coverage often frames the deal as either a diplomatic triumph or a betrayal of conservative principles, depending on the outlet's stance.",
+      "blurb": "Donald Trump’s negotiations with Iran have become a focal point for right-wing and far-right media worldwide. The potential deal, which Trump claims will be better than Obama’s, has sparked debates over U.S. foreign policy, the Abraham Accords, and the role of regional allies like Israel and Saudi Arabia.",
       "convergence": 5,
       "countries": [
         {
           "name": "🇺🇸 MAGA / Trump",
-          "note": "Trump's announcement of a 'largely negotiated' Iran deal is the dominant story, with outlets debating its merits and potential implications for U.S. foreign policy."
+          "note": "Trump’s Iran negotiations dominate U.S. right-wing media, with claims of progress and criticism of opponents who question the deal."
+        },
+        {
+          "name": "🇮🇱 General Right-Wing News",
+          "note": "Israeli far-right ministers push for escalation in Lebanon, opposing any deal that does not dismantle Iran’s nuclear capabilities."
         },
         {
           "name": "🇮🇹 Fratelli d'Italia / Lega",
-          "note": "Italian media and political figures react to Trump's Iran deal, with some praising it as a diplomatic breakthrough and others warning of its risks for European security."
+          "note": "Italian right-wing media frames the Iran deal as a test of U.S.-Europe relations, with Meloni urging caution and alignment with Israel."
         },
         {
           "name": "🇵🇱 Prawo i Sprawiedliwość",
-          "note": "Polish right-wing media highlight Trump's deal as a key development in global geopolitics, often framing it as a counterbalance to Russian and Chinese influence."
+          "note": "Polish right-wing media highlights Trump’s demands for regional allies to join the Abraham Accords as part of the deal."
         },
         {
           "name": "🇬🇧 Reform UK",
-          "note": "UK far-right outlets discuss the Iran deal in the context of Trump's broader foreign policy legacy, often contrasting it with the perceived failures of the Biden administration."
-        },
-        {
-          "name": "🇦🇷 La Libertad Avanza",
-          "note": "Argentinian far-right media cover the Iran deal as part of a broader narrative about Trump's global influence and the need for strong alliances with the U.S."
-        },
-        {
-          "name": "🇫🇷 Rassemblement National",
-          "note": "French far-right media analyze the Iran deal through the lens of national sovereignty, often criticizing the EU's response and advocating for closer ties with the U.S."
+          "note": "UK far-right media critiques Trump’s approach, questioning the deal’s impact on global security and British interests."
         }
       ],
       "signals": [
-        "shared framing",
-        "reaction to U.S. foreign policy",
-        "transnational political alignment",
-        "contagion of rhetoric"
+        "foreign policy focus",
+        "Abraham Accords expansion",
+        "regional ally involvement",
+        "media framing of diplomacy"
       ],
-      "article_count": 100,
+      "article_count": 80,
       "refs": [
         {
-          "title": "'Defend the deal': Republican party pressured to support Trump's Iran agreement",
-          "source": "The Jerusalem Post",
-          "url": "https://www.jpost.com/middle-east/iran-news/article-897239",
-          "date": "2026-05-25T11:18:32+00:00",
+          "title": "Donald Trump says Iranian uranium must be handed over or destroyed",
+          "source": "Middle East Eye",
+          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/us-president-says-iranian-uranium-must-be-handed-over-or-destroyed",
+          "date": "2026-05-25T23:51:00+00:00",
           "category": "usa"
         },
         {
-          "title": "Donald Trump slams politicians who spoke against Iran deal, says it will be 'great'",
-          "source": "The Jerusalem Post",
-          "url": "https://www.jpost.com/international/article-897236",
-          "date": "2026-05-25T10:57:57+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Giants view Jaxson Dart's introduction of President Trump as a 'misstep'",
-          "source": "Giants Wire",
-          "url": "https://giantswire.usatoday.com/story/sports/nfl/giants/2026/05/25/new-york-giants-jaxson-dart-introduction-president-trump-misstep/90248957007/",
-          "date": "2026-05-25T10:04:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Can Anything Stop Trump’s Corruption?",
-          "source": "The New Yorker",
-          "url": "https://www.newyorker.com/news/the-financial-page/can-anything-stop-trumps-corruption",
-          "date": "2026-05-25T10:00:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Meloni, cautela sull’Iran e sguardo rivolto all'Ucraina: «Serve una pace giusta»",
-          "source": "Il Gazzettino",
-          "url": "https://www.ilgazzettino.it/esteri/meloni_iran_ucraina_pace-9552557.html",
-          "date": "2026-05-25T07:53:20+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Israel began the Iran war as a partner of the US — and is ending it on the sidelines",
-          "source": "The Times of Israel",
-          "url": "https://www.timesofisrael.com/israel-began-the-iran-war-as-a-partner-of-the-us-and-is-ending-it-on-the-sidelines/",
-          "date": "2026-05-25T06:35:50+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Rubio says US will find 'another way' if Iran talks fail to deliver deal",
-          "source": "ynetnews",
-          "url": "https://www.ynetnews.com/article/sj1ikp11emg",
-          "date": "2026-05-25T05:41:42+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Diplomacy funded by illusions: Trump's deal with Iran must be more than promises - editorial",
-          "source": "The Jerusalem Post",
-          "url": "https://www.jpost.com/opinion/article-897161",
-          "date": "2026-05-25T03:00:01+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Trump: Potential Agreement with Iran Will Be Better Than the Obama-Administration Deal",
-          "source": "8am.media",
-          "url": "https://8am.media/eng/trump-potential-agreement-with-iran-will-be-better-than-the-obama-administration-deal/",
-          "date": "2026-05-25T02:21:58+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Panel of experts discuss President Donald Trump's potential deal in Iran",
+          "title": "Donald Trump pushes for Iran deal, honors war dead",
           "source": "Fox News",
-          "url": "https://www.foxnews.com/video/6396514112112",
-          "date": "2026-05-24T19:20:34+00:00",
+          "url": "https://www.foxnews.com/video/6396601416112",
+          "date": "2026-05-25T22:40:51+00:00",
           "category": "usa"
         },
         {
-          "title": "Republicans who have drawn a hard line on Iran pan Trump's emerging proposal to end the war",
-          "source": "ClickOnDetroit | WDIV Local 4",
-          "url": "https://www.clickondetroit.com/news/politics/2026/05/24/republicans-who-have-drawn-a-hard-line-on-iran-pan-trumps-emerging-proposal-to-end-the-war/",
-          "date": "2026-05-24T18:40:44+00:00",
-          "category": "networks"
-        },
-        {
-          "title": "'Time is on our side': Trump tempers expectations of a peace deal with Iran",
-          "source": "France 24",
-          "url": "https://www.france24.com/en/middle-east/20260524-time-is-on-our-side-trump-tempers-expectations-of-a-peace-deal-with-iran",
-          "date": "2026-05-24T16:05:15+00:00",
+          "title": "President Trump says Iran talks are 'proceeding nicely,' but deal remains uncertain",
+          "source": "KMBC",
+          "url": "https://www.kmbc.com/article/president-trump-says-iran-talks-are-proceeding-nicely-but-deal-remains-uncertain/71403083",
+          "date": "2026-05-25T22:36:18+00:00",
           "category": "usa"
         },
         {
-          "title": "Details emerge of a potential Iran deal as Trump says not to rush",
-          "source": "Chicago Tribune",
-          "url": "https://www.chicagotribune.com/2026/05/24/potential-iran-war-deal/",
-          "date": "2026-05-24T15:32:00+00:00",
+          "title": "Iran is schooling Trump in the art of the deal",
+          "source": "AFR",
+          "url": "https://www.afr.com/world/middle-east/iran-is-schooling-trump-in-the-art-of-the-deal-20260526-p600mj",
+          "date": "2026-05-25T21:41:00+00:00",
           "category": "usa"
         },
         {
-          "title": "Marco Rubio reports significant progress on Iran nuclear framework, crypto implications emerge",
-          "source": "Crypto Briefing",
-          "url": "https://cryptobriefing.com/rubio-iran-nuclear-framework-crypto/",
-          "date": "2026-05-24T13:41:15+00:00",
+          "title": "Trump says it should be ‘mandatory’ for more countries to join the Abraham Accords as part of Iran deal",
+          "source": "NBC News",
+          "url": "https://www.nbcnews.com/politics/trump-administration/trump-says-mandatory-countries-join-abraham-accords-part-iran-deal-rcna346816",
+          "date": "2026-05-25T18:37:22+00:00",
           "category": "usa"
         },
         {
-          "title": "Donald Trump holds off on Iran strike as Gulf States push for diplomacy",
+          "title": "Street preacher backed by Nigel Farage is accused of bigotry",
+          "source": "The Times",
+          "url": "https://www.thetimes.com/uk/politics/article/nigel-farage-preacher-stephen-clayden-97t2v7vvq",
+          "date": "2026-05-25T17:25:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Trump: Saudi Arabia, Qatar Should Join Abraham Accords as Iran Deal Takes Shape",
+          "source": "Haaretz",
+          "url": "https://www.haaretz.com/middle-east-news/2026-05-25/ty-article/.premium/trump-saudi-arabia-qatar-should-join-abraham-accords-as-iran-deal-takes-shape/0000019e-5f86-d03d-adfe-df86bc350000",
+          "date": "2026-05-25T15:03:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump links Iran negotiations to expansion of Abraham Accords",
+          "source": "Al Jazeera",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/5/25/trump-links-iran-negotiations-to-expansion-of-abraham-accords",
+          "date": "2026-05-25T14:51:44+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Donald Trump demands Saudi Arabia, Qatar, Pakistan join Abraham Accords in Iran deal",
           "source": "The Jerusalem Post",
-          "url": "https://www.jpost.com/opinion/article-897134",
-          "date": "2026-05-24T12:15:17+00:00",
+          "url": "https://www.jpost.com/international/article-897249",
+          "date": "2026-05-25T13:20:06+00:00",
           "category": "usa"
         },
         {
-          "title": "Donald Trump says he won't sign deal with Iran unless nuclear program dismantled",
-          "source": "The Jerusalem Post",
-          "url": "https://www.jpost.com/israel-news/article-897115",
-          "date": "2026-05-24T10:00:23+00:00",
+          "title": "Iran-U.S. negotiators have agreed to broad principles of agreement, official says; Trump says \"time is on our side\"",
+          "source": "CBS News",
+          "url": "https://www.cbsnews.com/live-updates/iran-war-trump-us-peace-talks-strait-of-hormuz-control/",
+          "date": "2026-05-25T10:40:00+00:00",
           "category": "usa"
         },
         {
-          "title": "Marco Rubio hints at possibility of ‘good news’ on the Strait of Hormuz",
-          "source": "The Independent",
-          "url": "https://www.independent.co.uk/bulletin/news/marco-rubio-iran-strait-hormuz-b2982679.html",
-          "date": "2026-05-24T08:50:00+00:00",
+          "title": "Trump said he’d end the world’s wars. Iran may prove him wrong",
+          "source": "AFR",
+          "url": "https://www.afr.com/world/middle-east/trump-said-he-d-end-the-world-s-wars-iran-may-prove-him-wrong-20260525-p600ca",
+          "date": "2026-05-25T06:58:00+00:00",
           "category": "usa"
         },
         {
-          "title": "'Not Remotely America First': Republican Hawks Attack Trump's Emerging Iran Deal",
-          "source": "i24NEWS",
-          "url": "https://www.i24news.tv/en/news/international/americas/artc-not-remotely-america-first-republican-hawks-attack-trump-s-emerging-iran-deal",
-          "date": "2026-05-24T05:17:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Trump says U.S., Iran are ‘getting a lot closer,’ but questions remain about concessions",
-          "source": "Los Angeles Times",
-          "url": "https://www.latimes.com/politics/story/2026-05-23/trump-says-u-s-iran-are-getting-lot-closer-but-questions-remain-about-concessions",
-          "date": "2026-05-23T23:07:24+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Donald Trump says deal with Iran to reopen Strait of Hormuz ‘largely negotiated’",
-          "source": "Financial Times",
-          "url": "https://www.ft.com/content/a27cc653-71ee-4668-8fcf-562fd7c9b93f?syn-25a6b1a6=1",
-          "date": "2026-05-23T21:01:27+00:00",
+          "title": "Donald Trump Signals Slower Approach to Iran Deal Talks",
+          "source": "Yahoo",
+          "url": "https://www.yahoo.com/news/politics/articles/donald-trump-signals-slower-approach-052636414.html",
+          "date": "2026-05-25T05:26:00+00:00",
           "category": "usa"
         }
       ],
       "first_seen": "2026-05-24T04:56:16+00:00",
-      "last_seen": "2026-05-25T15:44:24+00:00"
+      "last_seen": "2026-05-26T04:53:57+00:00"
     },
     {
       "id": "far-right-parties-push-national-priority-policies",
       "title": "Far-right parties push 'national priority' policies",
-      "blurb": "Far-right parties in Europe and beyond are increasingly advocating for policies that prioritize citizens over immigrants, particularly in areas like housing, social welfare, and employment. This theme reflects a transnational trend of using anti-immigration rhetoric to mobilize voters, with similar policy proposals appearing in multiple countries simultaneously. The framing often emphasizes cultural preservation and economic protectionism.",
+      "blurb": "Far-right parties in Spain, Italy, and Sweden are advancing policies that prioritize nationals over immigrants in areas like housing, education, and social services. These measures, often framed as 'national priority' initiatives, are gaining traction in local and regional governments, sparking debates over their legality and impact on integration.",
       "convergence": 4,
       "countries": [
         {
           "name": "🇪🇸 Vox",
-          "note": "Vox continues to push for 'national priority' policies in housing, social welfare, and employment, often clashing with regional governments over implementation."
-        },
-        {
-          "name": "🇫🇷 Rassemblement National",
-          "note": "RN advocates for policies that prioritize French citizens in social housing and welfare benefits, framing immigration as a threat to national identity and economic stability."
-        },
-        {
-          "name": "🇳🇴 Fremskrittspartiet",
-          "note": "FrP promotes policies that prioritize Norwegian citizens in welfare and housing, often criticizing immigration policies that they argue disadvantage locals."
-        },
-        {
-          "name": "🇸🇪 Sverigedemokraterna",
-          "note": "Sweden Democrats push for stricter immigration controls and policies that prioritize Swedish citizens in social services, often citing cultural and economic concerns."
+          "note": "Vox demands national priority status for Spanish-language schools in Euskadi and pushes for residency requirements in social housing."
         },
         {
           "name": "🇮🇹 Fratelli d'Italia / Lega",
-          "note": "Italian far-right parties advocate for policies that prioritize Italian citizens in welfare and employment, often targeting immigration as a key issue in their platforms."
+          "note": "Meloni’s government expands migrant detention policies, prioritizing nationals in social services and housing."
+        },
+        {
+          "name": "🇸🇪 Sverigedemokraterna",
+          "note": "Sweden Democrats oppose forced housing mixing in functional areas, advocating for policies that prioritize Swedish nationals."
+        },
+        {
+          "name": "🇳🇴 Fremskrittspartiet",
+          "note": "Norwegian Progress Party prioritizes local welfare over refugee settlement, citing budget constraints and integration challenges."
+        },
+        {
+          "name": "🇫🇷 Rassemblement National",
+          "note": "French far-right proposes a three-year immigration moratorium, citing integration challenges and national identity concerns."
         }
       ],
       "signals": [
         "policy imitation",
-        "shared framing",
-        "parallel policy debates",
-        "contagion of rhetoric"
+        "anti-immigration rhetoric",
+        "local governance focus",
+        "legal and social debates"
       ],
-      "article_count": 60,
+      "article_count": 70,
       "refs": [
         {
-          "title": "Sergio Chagartegui (Vox Aranda): “Antes que ideológicamente correctos tenemos que ser moralmente correctos con la ciudadanía”",
-          "source": "Cadena SER",
-          "url": "https://cadenaser.com/castillayleon/2026/05/25/sergio-chagartegui-vox-aranda-antes-que-ideologicamente-correctos-tenemos-que-ser-moralmente-correctos-con-la-ciudadania-radio-aranda/",
-          "date": "2026-05-25T12:14:04+00:00",
+          "title": "Otra \"prioridad nacional\" de Vox en Euskadi: impedir el cierre del último colegio en castellano de Getxo",
+          "source": "Crónica Vasca",
+          "url": "https://cronicavasca.elespanol.com/politica/20260526/prioridad-nacional-vox-euskadi-impedir-castellano-getxo/1003742764433_0.html",
+          "date": "2026-05-26T03:00:00+00:00",
           "category": "spain"
         },
         {
-          "title": "Vox apremia a Juanma Moreno a iniciar una negociación tras las elecciones andaluzas: \"¿Ahora no está bloqueando él?\"",
-          "source": "El Mundo",
-          "url": "https://www.elmundo.es/espana/2026/05/25/6a142556e85ece233a8b457e.html",
-          "date": "2026-05-25T12:06:38+00:00",
+          "title": "PP y Vox trabajan ya en la 'prioridad nacional': cumplirán a rajatabla el pacto y pedirán 5 años de empadronamiento",
+          "source": "El Español",
+          "url": "https://www.elespanol.com/aragon/actualidad/20260526/pp-vox-trabajan-prioridad-nacional-cumpliran-rajatabla-pacto-pediran-anos-empadronamiento/1003744258457_0.html",
+          "date": "2026-05-26T03:00:00+00:00",
           "category": "spain"
         },
         {
-          "title": "Vox exige al PP \"tomarse en serio la oposición a Sánchez\" y presentar la moción de censura",
-          "source": "El Independiente",
-          "url": "https://www.elindependiente.com/espana/2026/05/25/vox-exige-al-pp-tomarse-en-serio-la-oposicion-a-sanchez-y-presentar-la-mocion-de-censura/",
-          "date": "2026-05-25T12:00:07+00:00",
+          "title": "El pacto que PP y Vox firmaron en 2019: freno a la inmigración, atención a embarazadas y consejería de familia",
+          "source": "El Debate",
+          "url": "https://www.eldebate.com/espana/andalucia/20260526/pacto-pp-vox-firmaron-2019-freno-inmigracion-atencion-embarazadas-consejeria-familia_421415.html",
+          "date": "2026-05-26T02:25:00+00:00",
           "category": "spain"
         },
         {
-          "title": "Vox exige a los socios de Sánchez que reaccionen y plantea una moción sin negociación para forzar elecciones",
-          "source": "PressDigital",
-          "url": "https://www.pressdigital.es/articulo/politica/2026-05-25/5894245-vox-exige-socios-sanchez-reaccionen-plantea-mocion-negociacion-forzar-elecciones",
-          "date": "2026-05-25T11:59:00+00:00",
+          "title": "President Trump lays wreath at Tomb of the Unknown Soldier on Memorial Day",
+          "source": "WKYC",
+          "url": "https://www.wkyc.com/video/news/nation-world/president-trump-lays-wreath-at-tomb-of-the-unknown-soldier-on-memorial-day/95-16dcb751-ce34-4302-a554-c681989fb7cc",
+          "date": "2026-05-25T21:45:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "PP y Vox piden en el Congreso la vuelta de OCON-Sur y endurecer la respuesta al narcotráfico",
+          "source": "Diario Área Campo de Gibraltar",
+          "url": "https://www.diarioarea.com/campo-de-gibraltar/pp-vox-congreso-vuelta-ocon-sur-edurecer-respuesta-narcotrafico/",
+          "date": "2026-05-25T18:42:08+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Vox propone la exención del IRPF para rentas inferiores a 22.000 euros en la Región de Murcia",
+          "source": "Murcia Plaza",
+          "url": "https://murciaplaza.com/murciaplaza/region/vox-propone-la-exencion-del-irpf-para-rentas-inferiores-a-22000-euros-en-la-region-de-murcia",
+          "date": "2026-05-25T17:22:23+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Vox ordena dejar de dar fruta extranjera en los colegios de Aragón: adiós a la naranja de Egipto y la pera de Sudáfrica",
+          "source": "El Español",
+          "url": "https://www.elespanol.com/aragon/actualidad/20260525/vox-ordena-dejar-dar-fruta-extranjera-colegios-aragon-adios-naranja-egipto-pera-sudafrica/1003744259018_0.html",
+          "date": "2026-05-25T16:06:16+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Polémica por las declaraciones de Vox en las Cortes de Aragón: \"Me gustaría ver mucho cerdo en los comedores escolares\"",
+          "source": "heraldo.es",
+          "url": "https://www.heraldo.es/noticias/aragon/2026/05/25/polemica-por-las-declaraciones-vox-las-cortes-aragon-me-gustaria-ver-mucho-cerdo-los-comedores-escolares-2023325.html",
+          "date": "2026-05-25T15:37:42+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Vox exige reforzar la seguridad en el centro y barrios históricos de Granada ante las \"mafias de carteristas\"",
+          "source": "Granada Hoy",
+          "url": "https://www.granadahoy.com/granada/vox-exige-reforzar-seguridad-centro-barrios-historicos-granada-mafias-carteristas_0_2006853557.amp.html",
+          "date": "2026-05-25T15:06:28+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "La primera medida de Vox en el Gobierno de Aragón no está en el pacto con el PP de 2026",
+          "source": "El Periódico de Aragón",
+          "url": "https://www.elperiodicodearagon.com/aragon/2026/05/25/primera-medida-vox-gobierno-aragon-130628676.html",
+          "date": "2026-05-25T13:25:37+00:00",
           "category": "spain"
         },
         {
@@ -258,369 +486,120 @@
           "category": "spain"
         },
         {
-          "title": "VOX se reivindica como oposición al \"gobierno de centro izquierda\"",
-          "source": "Onda Cero",
-          "url": "https://www.ondacero.es/emisoras/asturias/gijon/vox-reivindica-como-oposicion-gobierno-centro-izquierda_202605256a142736339dd32ea9949546.html",
-          "date": "2026-05-25T10:40:54+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Czarnek nadał nawet ksywkę Miszalskiemu. PiS szaleje po referendum w Krakowie",
-          "source": "naTemat.pl",
-          "url": "https://natemat.pl/654634,czarnek-nadal-nawet-ksywke-miszalskiemu-pis-szaleje-po-referendum-w-krakowie",
-          "date": "2026-05-25T10:05:27+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "PSOE y Vox defienden hoy sus enmiendas a la Ley de Vivienda en el Parlamento cántabro",
-          "source": "Demócrata",
-          "url": "https://www.democrata.es/cantabria/psoe-y-vox-defienden-hoy-sus-enmiendas-a-la-ley-de-vivienda-en-el-parlamento-cantabro/",
-          "date": "2026-05-25T08:00:46+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Immigration : \"Nous voulons proposer aux Français un grand référendum\", indique Yoann Gillet, porte-parole du Rassemblement national",
-          "source": "franceinfo",
-          "url": "https://www.franceinfo.fr/replay-magazine/franceinfo/l-invite-politique/immigration-nous-voulons-proposer-aux-francais-un-grand-referendum-indique-yoann-gillet-porte-parole-du-rassemblement-national_7983896.html",
-          "date": "2026-05-25T06:35:35+00:00",
-          "category": "france"
-        },
-        {
           "title": "Las Tres Mil no son una 'banlieue', pero Vox ya funciona como Le Pen en los barrios de renta baja",
           "source": "El Confidencial",
           "url": "https://www.elconfidencial.com/espana/andalucia/2026-05-25/las-tres-mil-banlieue-vox-funciona-lepen-barrios-renta-baja_4359264/",
           "date": "2026-05-25T03:00:00+00:00",
           "category": "spain"
-        },
-        {
-          "title": "La mitad de las nuevas afiliaciones de VOX en Madrid llegan de municipios obreros del sur",
-          "source": "Confidencial Digital",
-          "url": "https://www.elconfidencialdigital.com/articulo/politica/mitad-nuevas-afiliaciones-vox-madrid-llegan-municipios-obreros-sur/202605251300001022320.html",
-          "date": "2026-05-25T03:00:00+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "El sistema ideológico español se agrieta",
-          "source": "El Mundo",
-          "url": "https://www.elmundo.es/opinion/columnistas/2026/05/24/6a12d33121efa0fc138b456e.html",
-          "date": "2026-05-24T21:32:30+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox desafía al PP en el Ayuntamiento de Sevilla con su prioridad nacional como aperitivo a negociar su apoyo a Moreno",
-          "source": "elDiario.es",
-          "url": "https://www.eldiario.es/sevilla/vox-desafia-pp-ayuntamiento-sevilla-prioridad-nacional-aperitivo-negociar-apoyo-moreno_1_13246578.html",
-          "date": "2026-05-24T18:47:05+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "El trágala de Vox al PP en Extremadura y Aragón planea sobre Andalucía: prioridad nacional, desregulación y gestión privada",
-          "source": "elDiario.es",
-          "url": "https://www.eldiario.es/andalucia/tragala-vox-pp-extremadura-aragon-planea-andalucia-prioridad-nacional-desregulacion-gestion-privada_1_13238434.html",
-          "date": "2026-05-24T18:42:46+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "« On a plein de sujets sur lesquels on n’a rien à dire » : les angles morts que le RN doit colmater d’ici 2027",
-          "source": "Le Parisien",
-          "url": "https://www.leparisien.fr/elections/presidentielle/on-a-plein-de-sujets-sur-lesquels-on-na-rien-a-dire-les-angles-morts-que-le-rn-doit-colmater-dici-2027-24-05-2026-ASY6TONZK5E4FAH4YQHIA67TMA.php",
-          "date": "2026-05-24T13:58:45+00:00",
-          "category": "france"
-        },
-        {
-          "title": "El PP busca que el Congreso repruebe a Marlaska y Vox pide dotar a la Guardia Civil de armamento contra el narcotráfico",
-          "source": "Infobae",
-          "url": "https://www.infobae.com/espana/agencias/2026/05/24/el-pp-busca-que-el-congreso-repruebe-a-marlaska-y-vox-pide-dotar-a-la-guardia-civil-de-armamento-contra-el-narcotrafico/?outputType=amp-type",
-          "date": "2026-05-24T10:28:16+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "El exPodemos Alberto Rodríguez compra el discurso de la “prioridad nacional”",
-          "source": "ESdiario",
-          "url": "https://www.esdiario.com/chismografo/medios/260524/188590/expodemos-alberto-rodriguez-compra-discurso-prioridad-nacional.html",
-          "date": "2026-05-24T10:00:00+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "PP y Vox perfilan un acuerdo en Andalucía a costa de la asistencia social y la inmigración",
-          "source": "rionegrotur.com.ar",
-          "url": "https://rionegrotur.com.ar/pp-y-vox-perfilan-un-acuerdo-en-andalucia-a-costa-de-la-asistencia-social-y-la-inmigracion/",
-          "date": "2026-05-24T05:54:09+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Andalucía no es Extremadura ni Aragón: las claves que separan a Moreno del resto de pactos con Vox",
-          "source": "ABC",
-          "url": "https://www.abc.es/espana/andalucia/andalucia-extremadura-aragon-claves-separan-moreno-resto-20260524185323-nts.html",
-          "date": "2026-05-24T05:18:39+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "La crueldad de Vox",
-          "source": "Ultima Hora",
-          "url": "https://www.ultimahora.es/opinion/tribuna/2026/05/24/2635759/crueldad-vox-1.html",
-          "date": "2026-05-24T01:43:26+00:00",
-          "category": "spain"
         }
       ],
       "first_seen": "2026-04-29T14:59:17+00:00",
-      "last_seen": "2026-05-25T15:44:24+00:00"
-    },
-    {
-      "id": "rise-of-far-right-parties-in-european-polls",
-      "title": "Rise of far-right parties in European polls",
-      "blurb": "Far-right parties across Europe are experiencing a surge in popularity, with polls showing increased support in multiple countries. This theme reflects a broader trend of growing far-right influence in European politics, often fueled by concerns over immigration, economic instability, and dissatisfaction with mainstream parties. The coverage highlights both the electoral successes and the internal challenges these parties face.",
-      "convergence": 4,
-      "countries": [
-        {
-          "name": "🇩🇪 Alternative für Deutschland",
-          "note": "AfD continues to gain traction in German polls, with strong showings in regional elections and growing influence in national politics."
-        },
-        {
-          "name": "🇸🇪 Sverigedemokraterna",
-          "note": "Sweden Democrats maintain strong polling numbers, positioning themselves as a key player in Swedish politics and pushing for stricter immigration policies."
-        },
-        {
-          "name": "🇫🇷 Rassemblement National",
-          "note": "RN leads in French polls ahead of the 2027 presidential election, with Marine Le Pen positioning herself as the candidate of 'the people' against the establishment."
-        },
-        {
-          "name": "🇳🇴 Fremskrittspartiet",
-          "note": "FrP leads in Norwegian polls, with its leader Sylvi Listhaug positioning the party as a viable alternative to the current government."
-        },
-        {
-          "name": "🇮🇹 Fratelli d'Italia / Lega",
-          "note": "Italian far-right parties continue to perform well in polls, with Meloni's government facing challenges but maintaining strong support."
-        }
-      ],
-      "signals": [
-        "parallel elections",
-        "shared polling trends",
-        "transnational political shifts",
-        "contagion of rhetoric"
-      ],
-      "article_count": 50,
-      "refs": [
-        {
-          "title": "Dom: SD i Klippan blir utan partistöd",
-          "source": "Aftonbladet",
-          "url": "https://www.aftonbladet.se/nyheter/a/wrvRad/dom-sd-i-klippan-blir-utan-partistod",
-          "date": "2026-05-25T12:05:50+00:00",
-          "category": "sweden"
-        },
-        {
-          "title": "Kommunevalget 2027, Tromsø kommune | Kan bli størst, men uten makt",
-          "source": "Nordnorsk debatt",
-          "url": "https://www.nordnorskdebatt.no/kan-bli-storst-men-uten-makt/o/5-124-430837",
-          "date": "2026-05-25T10:04:22+00:00",
-          "category": "norway"
-        },
-        {
-          "title": "Jimmie Åkesson presenterar Landsbygdspolitiskt program för 2026",
-          "source": "Via TT",
-          "url": "https://via.tt.se/pressmeddelande/4398919/jimmie-akesson-presenterar-landsbygdspolitiskt-program-for-2026?publisherId=3236128&lang=sv",
-          "date": "2026-05-25T09:24:16+00:00",
-          "category": "sweden"
-        },
-        {
-          "title": "SD:s tydlighet besvärande för högern",
-          "source": "Aftonbladet",
-          "url": "https://www.aftonbladet.se/nyheter/kolumnister/a/K8P6ey/sd-s-tydlighet-besvarande-for-hogern",
-          "date": "2026-05-25T09:18:15+00:00",
-          "category": "sweden"
-        },
-        {
-          "title": "Sweden Democrats aim for half of cabinet seats in a right-wing government",
-          "source": "The Local Sweden",
-          "url": "https://www.thelocal.se/20260525/sweden-democrats-aim-for-half-of-cabinet-seats-in-a-right-wing-government?gaa_at=eafs&gaa_n=AVngi4geQZ1payrJF1eHfqhPbdnboQ3CaZQ1bOYlQhVPtkV441M0QJlADvdO&gaa_ts=6a140a57&gaa_sig=9plaCmfw5nF2K4B1JNya3vfO3uOytnf_in-2Ud7ucg5KNjpLjvIarTi4VqTdxcfM6NbBB-EY6VNrzKvIlH0bBg%3D%3D",
-          "date": "2026-05-25T06:51:07+00:00",
-          "category": "sweden"
-        },
-        {
-          "title": "Local elections held across 700 towns in Italy, a new test for Meloni",
-          "source": "Euronews.com",
-          "url": "https://www.euronews.com/my-europe/2026/05/25/local-elections-over-6-million-italians-vote-in-mayoral-polls-seen-to-be-a-fresh-test-for-",
-          "date": "2026-05-25T04:10:58+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Far-right surge and anti-establishment wave shake Cyprus politics",
-          "source": "Neos Kosmos",
-          "url": "https://neoskosmos.com/en/2026/05/25/news/cyprus/far-right-surge-and-anti-establishment-wave-shake-cyprus-politics/",
-          "date": "2026-05-25T02:41:50+00:00",
-          "category": "general"
-        },
-        {
-          "title": "Cyprus: Voters boost far right in parliamentary election",
-          "source": "DW.com",
-          "url": "https://www.dw.com/en/cyprus-voters-boost-the-far-right-in-parliamentary-election/a-77279514",
-          "date": "2026-05-24T19:41:15+00:00",
-          "category": "general"
-        },
-        {
-          "title": "UPDATE 3-Far right and newcomers make gains in Cyprus election",
-          "source": "Devdiscourse",
-          "url": "https://www.devdiscourse.com/article/politics/3920483-update-3-far-right-and-newcomers-make-gains-in-cyprus-election",
-          "date": "2026-05-24T18:35:22+00:00",
-          "category": "general"
-        },
-        {
-          "title": "UPDATE 2-Far right and newcomer make gains in Cyprus election, early results show",
-          "source": "Devdiscourse",
-          "url": "https://www.devdiscourse.com/article/politics/3920414-update-2-far-right-and-newcomer-make-gains-in-cyprus-election-early-results-show",
-          "date": "2026-05-24T16:49:20+00:00",
-          "category": "general"
-        },
-        {
-          "title": "Far right and newcomer make gains in Cyprus election, early results show",
-          "source": "TradingView",
-          "url": "https://www.tradingview.com/news/reuters.com,2026:newsml_L6N42103S:0-far-right-and-newcomer-make-gains-in-cyprus-election-early-results-show/",
-          "date": "2026-05-24T15:46:20+00:00",
-          "category": "general"
-        },
-        {
-          "title": "Historians claim that America exhibits all '10 signs of fascism.'",
-          "source": "GIGAZINE",
-          "url": "https://gigazine.net/gsc_news/en/20260524-america-fascism-10-signs/",
-          "date": "2026-05-24T13:00:00+00:00",
-          "category": "general"
-        },
-        {
-          "title": "Die AfD und die Wahl in Sachsen-Anhalt: Was die Rechtsextremen vorhaben",
-          "source": "Badische Zeitung",
-          "url": "https://www.badische-zeitung.de/die-afd-und-die-wahl-in-sachsen-anhalt-was-die-rechtsextremen-vorhaben",
-          "date": "2026-05-24T09:30:00+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "AfD weiter sieben Punkte vor Union FDP legt nach Entscheidung für Kubicki als Chef leicht zu",
-          "source": "Tagesspiegel",
-          "url": "https://www.tagesspiegel.de/politik/afd-weiter-sieben-punkte-vor-union-fdp-legt-nach-entscheidung-fur-kubicki-als-chef-leicht-zu-15634467.html",
-          "date": "2026-05-24T08:51:46+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Reform's by-election candidate responds to the first poll",
-          "source": "Wigan Today",
-          "url": "https://www.wigantoday.net/news/people/reforms-robert-kenyon-responds-to-first-makerfield-by-election-poll-8638657",
-          "date": "2026-05-24T07:14:00+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "RECENSION: Tidöpakten – ett sluttande plan i auktoritär riktning",
-          "source": "Borås Tidning",
-          "url": "https://www.bt.se/kultur/tidopakten-ett-sluttande-plan-i-auktoritar-riktning/",
-          "date": "2026-05-24T05:00:00+00:00",
-          "category": "sweden"
-        },
-        {
-          "title": "Extremadura dicta sentencia a la espera de las generales: el PP gana, pero Vox decide",
-          "source": "El Periódico Extremadura",
-          "url": "https://www.elperiodicoextremadura.com/extremadura/2026/05/24/extremadura-dicta-sentencia-espera-generales-130588699.html",
-          "date": "2026-05-24T04:01:15+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "UK Local Elections 2026 Odds: Reform UK Odds-On Favourite",
-          "source": "OLBG",
-          "url": "https://www.olbg.com/news/uk-local-elections-2026-odds-reform-uk-odds-favourite",
-          "date": "2026-05-24T02:35:42+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "'We'll axe tax on overtime' and 'Brolly hot, isn't it'",
-          "source": "BBC",
-          "url": "https://www.bbc.com/news/articles/cpwpjxelwd5o",
-          "date": "2026-05-24T02:02:07+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "«Trump, Le Pen, Vox... todos participan en fijar la visión histórica de un pasado imperial grandioso»",
-          "source": "naiz:",
-          "url": "https://www.naiz.eus/en/hemeroteca/7k/editions/7k_2026-05-24-07-00/hemeroteca_articles/trump-le-pen-vox-todos-participan-en-fijar-la-vision-historica-de-un-pasado-imperial-grandioso",
-          "date": "2026-05-23T22:00:00+00:00",
-          "category": "spain"
-        }
-      ],
-      "first_seen": "2026-05-17T14:16:08+00:00",
-      "last_seen": "2026-05-25T15:44:24+00:00"
+      "last_seen": "2026-05-26T04:53:57+00:00"
     },
     {
       "id": "internal-divisions-within-far-right-parties",
       "title": "Internal divisions within far-right parties",
-      "blurb": "Far-right parties in multiple countries are grappling with internal divisions, often between hardline factions and more moderate elements. This theme reflects a broader trend of infighting within far-right movements, which can undermine their electoral prospects and policy coherence. The coverage highlights leadership struggles, ideological disputes, and the challenges of maintaining party unity.",
+      "blurb": "Far-right parties across Europe and the Americas are grappling with internal divisions, ranging from leadership disputes to ideological fractures. These conflicts are often exacerbated by external pressures, such as judicial investigations, electoral setbacks, and shifting alliances with mainstream conservative parties.",
       "convergence": 3,
       "countries": [
         {
           "name": "🇵🇱 Prawo i Sprawiedliwość",
-          "note": "PiS faces internal divisions over leadership and policy direction, with factions competing for influence ahead of future elections."
-        },
-        {
-          "name": "🇭🇺 Fidesz / Tisza",
-          "note": "Hungarian politics is marked by divisions between Fidesz and the newly formed Tisza Party, with both sides accusing each other of betraying national interests."
+          "note": "PiS faces internal conflicts over leadership and judicial appointments, with factions clashing over strategy and ideology."
         },
         {
           "name": "🇦🇷 La Libertad Avanza",
-          "note": "Javier Milei's government faces internal conflicts, particularly between his sister Karina and key advisors, which threaten to destabilize his administration."
+          "note": "Milei’s party is divided over economic policies and leadership, with tensions between Milei, Villarruel, and key advisors."
         },
         {
           "name": "🇮🇹 Fratelli d'Italia / Lega",
-          "note": "Italian far-right parties experience internal divisions, with factions competing for influence within the coalition government."
+          "note": "Lega and Fratelli d'Italia experience internal tensions over leadership and policy direction, particularly regarding alliances with other right-wing parties."
         },
         {
-          "name": "🇪🇸 Vox",
-          "note": "Vox faces internal turmoil, with defections and leadership challenges undermining its electoral prospects and policy coherence."
+          "name": "🇫🇷 Rassemblement National",
+          "note": "French far-right party faces internal contradictions over economic policies, with Bardella and Le Pen courting different voter bases."
+        },
+        {
+          "name": "🇬🇧 Reform UK",
+          "note": "Reform UK struggles with internal divisions over strategy and messaging, particularly in the lead-up to by-elections."
         }
       ],
       "signals": [
-        "parallel leadership struggles",
-        "ideological disputes",
-        "party infighting",
-        "contagion of rhetoric"
+        "leadership disputes",
+        "ideological fractures",
+        "judicial investigations",
+        "electoral setbacks"
       ],
-      "article_count": 40,
+      "article_count": 60,
       "refs": [
         {
-          "title": "Milei encabeza el 25 de Mayo rodeado por el ala dura de su gabinete y con ausencias de peso",
-          "source": "Border Periodismo",
-          "url": "https://www.borderperiodismo.com/actualidad/milei-encabeza-el-25-de-mayo-rodeado-por-el-ala-dura-de-su-gabinete-y-con-ausencias-de-peso/",
-          "date": "2026-05-25T12:24:18+00:00",
+          "title": "El frágil equilibrio dentro del equipo de Javier Milei",
+          "source": "Ambito",
+          "url": "https://www.ambito.com/politica/fragil-equilibrio-dentro-del-equipo-javier-milei-n6281428",
+          "date": "2026-05-26T03:00:00+00:00",
           "category": "argentina"
         },
         {
-          "title": "Javier Milei en el Tedeum: ¿Unión o división en el círculo íntimo?",
-          "source": "puntal.com.ar",
-          "url": "https://www.puntal.com.ar/javier-milei/javier-milei-el-tedeum-union-o-division-el-circulo-intimo-n258304",
-          "date": "2026-05-25T12:16:37+00:00",
-          "category": "argentina"
+          "title": "The French far right’s weak spot: economic incoherence",
+          "source": "politico.eu",
+          "url": "https://www.politico.eu/article/jordan-bardella-marine-le-pen-french-far-right-torn-economic-incoherence/",
+          "date": "2026-05-26T02:05:12+00:00",
+          "category": "france"
         },
         {
-          "title": "Sin Villarruel, Javier Milei encabezará el Tedeum del 25 de Mayo y participará de una reunión de Gabinete",
-          "source": "a24.com",
-          "url": "https://www.a24.com/politica/sin-villarruel-javier-milei-encabezara-el-tedeum-del-25-mayo-y-participara-una-reunion-gabinete-n1559016",
-          "date": "2026-05-25T11:53:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Milei encabeza el 25 de Mayo con ausencias clave y tensión interna en el oficialismo",
-          "source": "ADNSUR",
-          "url": "https://www.adnsur.com.ar/politica/milei-encabeza-el-25-de-mayo-con-ausencias-clave-y-tension-interna-en-el-oficialismo_a6a142f689ab8290088735d9a",
-          "date": "2026-05-25T11:33:42+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Javier Milei en el Tedeum del 25 de Mayo, sin Victoria Villarruel y una cumbre de gabinete al rojo vivo",
-          "source": "Diario El Sol Mendoza",
-          "url": "https://www.elsol.com.ar/el-pais/javier-milei-en-el-tedeum-del-25-de-mayo-sin-victoria-villarruel-y-una-cumbre-de-gabinete-al-rojo-vivo/",
-          "date": "2026-05-25T11:04:14+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Fratelli d'Italia: Pietro Macconi lascia il partito per andare da Vannacci",
-          "source": "Corriere Bergamo",
-          "url": "https://bergamo.corriere.it/notizie/cronaca/26_maggio_25/fratelli-d-italia-pietro-macconi-lascia-il-partito-per-andare-da-vannacci-4176002e-94be-4974-bb52-29e123f93xlk.shtml",
-          "date": "2026-05-25T10:07:13+00:00",
+          "title": "L’exploit di Futuro Nazionale e il campo largo in vantaggio: per Salvini ko a Vigevano",
+          "source": "la Repubblica",
+          "url": "https://milano.repubblica.it/cronaca/2026/05/26/news/elezioni_ko_salvini_vigevano_futuro_nazionale_campo_largo-425369913/",
+          "date": "2026-05-25T23:00:00+00:00",
           "category": "italy"
+        },
+        {
+          "title": "'Nigel Farage's Reform UK needs to ditch misogyny and show basic standards of decency'",
+          "source": "The Mirror",
+          "url": "https://www.mirror.co.uk/news/politics/nigel-farages-reform-uk-needs-37203872",
+          "date": "2026-05-25T20:41:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Restore’s extremism is a problem for Nigel Farage",
+          "source": "The Times",
+          "url": "https://www.thetimes.com/comment/columnists/article/restore-extremism-nigel-farage-makerfield-by-election-fkp8zvz7c",
+          "date": "2026-05-25T18:20:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "\"Kaczyński zapamięta to Karolowi\". U części PiS wściekłość po decyzji Nawrockiego",
+          "source": "WP Wiadomości",
+          "url": "https://wiadomosci.wp.pl/kaczynski-zapamieta-to-karolowi-u-czesci-pis-wscieklosc-po-decyzji-nawrockiego-7289763161569440a",
+          "date": "2026-05-25T17:27:15+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Karina Milei borró a Villarruel del Tedeum del 25 de Mayo y fue denunciada por abuso de autoridad",
+          "source": "El Argentino Diario",
+          "url": "https://elargentinodiario.com.ar/politica/25/05/2026/karina-milei-borro-a-villarruel-del-tedeum-del-25-de-mayo-y-fue-denunciada-por-abuso-de-autoridad/",
+          "date": "2026-05-25T16:14:03+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Details of Farage’s £5m gift obtained ‘illegally’ as MP backs leader",
+          "source": "The Independent",
+          "url": "https://www.independent.co.uk/bulletin/news/nigel-farage-donation-christopher-harborne-danny-kruger-b2983147.html",
+          "date": "2026-05-25T13:56:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "L’avanzata di Vannacci, i contorcimenti di Salvini, la tentazione brutta di Meloni",
+          "source": "Il Diario del Lavoro",
+          "url": "https://www.ildiariodellavoro.it/lavanzata-di-vannacci-i-contorcimenti-di-salvini-la-tentazione-brutta-di-meloni/",
+          "date": "2026-05-25T12:57:41+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Oh, the irony! Nigel Farage whinges about Elon Musk’s support for Restore Britain",
+          "source": "The London Economic",
+          "url": "https://www.thelondoneconomic.com/politics/who-are-restore-britain-elon-musk-rupert-lowe-nigel-farage-406437/",
+          "date": "2026-05-25T11:14:32+00:00",
+          "category": "uk"
         },
         {
           "title": "Los purgados de Vox denuncian la deriva \"personalista\" de Sánchez y Abascal",
@@ -630,270 +609,15 @@
           "category": "spain"
         },
         {
-          "title": "Javier Milei reúne a su Gabinete en medio de la interna de La Libertad Avanza",
-          "source": "El Intransigente",
-          "url": "https://elintransigente.com/2026/05/javier-milei-reune-a-su-gabinete-en-medio-de-la-interna-de-la-libertad-avanza/",
-          "date": "2026-05-25T04:10:55+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "La crisis interna de Vox agita el tablero político murciano",
-          "source": "La Razón",
-          "url": "https://www.larazon.es/murcia/crisis-interna-vox-agita-tablero-politico-murciano_202605256a13c976339dd32ea99404b4.html",
-          "date": "2026-05-25T04:00:54+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Interna feroz: Milei reúne a un gabinete en crisis que hizo tambalear su autoridad política",
-          "source": "Página|12",
-          "url": "https://www.pagina12.com.ar/2026/05/24/interna-feroz-milei-reune-a-un-gabinete-en-crisis-que-hizo-tambalear-su-autoridad-politica/",
-          "date": "2026-05-24T22:52:58+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Macri quiere armar un polo de derecha con Francos, Marra y Mondino",
-          "source": "La Política Online",
-          "url": "https://www.lapoliticaonline.com/politica/macri-quiere-armar-un-polo-de-derecha-con-francos-marra-y-mondino-4032/",
-          "date": "2026-05-24T21:08:14+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "El PRO insiste con una posible candidatura de Mauricio Macri y advierte que las internas del Gobierno afectan la gestión",
-          "source": "Infobae",
-          "url": "https://www.infobae.com/politica/2026/05/24/el-pro-insiste-con-una-posible-candidatura-de-mauricio-macri-y-advierte-que-las-internas-del-gobierno-afectan-la-gestion/",
-          "date": "2026-05-24T18:24:45+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Karina Milei tomó un rol más activo como jefa de Gabinete \"blue\" y es más optimista sobre Manuel Adorni",
-          "source": "El Observador",
-          "url": "https://www.elobservador.com.uy/argentina/politica/karina-milei-tomo-un-rol-mas-activo-como-jefa-gabinete-blue-y-es-mas-optimista-manuel-adorni-n6045031",
-          "date": "2026-05-24T16:02:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "\"los liberales no somos manada\": los argumentos de Milei para justificar las peleas en su equipo",
-          "source": "Somos Jujuy",
-          "url": "https://www.somosjujuy.com.ar/nacionales/los-liberales-somos-manada-argumentos-milei-justificar-peleas-su-equipo-n118373/amp",
-          "date": "2026-05-24T13:39:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Javier Milei pierde ganando: interna libertaria mata festejos legislativos",
-          "source": "Letra P",
-          "url": "https://www.letrap.com.ar/congreso/javier-milei-pierde-ganando-interna-libertaria-mata-festejos-legislativos-n5424029",
-          "date": "2026-05-24T13:09:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Javier Milei encuentra oxígeno en medio de la pelea interna permanente",
-          "source": "Tribuna de Periodistas",
-          "url": "https://periodicotribuna.com.ar/javier-milei-encuentra-oxigeno-en-medio-de-la-pelea-interna-permanente/",
-          "date": "2026-05-24T12:06:04+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Javier Milei, la interna y una semana de fuego: de los audios malditos a una economía bendita",
-          "source": "MDZ Online",
-          "url": "https://www.mdzol.com/javier-milei-la-interna-y-una-semana-fuego-los-audios-malditos-una-economia-bendita-n1527505",
-          "date": "2026-05-24T10:30:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Rebelión en la galaxia libertaria: Milei avanza sobre el caos interno",
-          "source": "Infobae",
-          "url": "https://www.infobae.com/politica/2026/05/24/rebelion-en-la-galaxia-libertaria-milei-avanza-sobre-el-caos-interno/",
-          "date": "2026-05-24T07:13:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Círculo rojo: Milei encerrado en su sistema de toma de decisiones y los intereses cruzados en la casa matriz del PRO",
-          "source": "Infobae",
-          "url": "https://www.infobae.com/politica/2026/05/24/circulo-rojo-milei-encerrado-en-su-sistema-de-toma-de-decisiones-y-los-intereses-cruzados-en-la-casa-matriz-del-pro/",
-          "date": "2026-05-24T06:21:37+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Tedeum, Gabinete y mesa política: la semana en la que Milei intentará bajar la tensión interna",
-          "source": "elDiarioAR.com",
-          "url": "https://www.eldiarioar.com/politica/tedeum-gabinete-mesa-politica-semana-milei-intentara-bajar-tension-interna_1_13244340.html",
-          "date": "2026-05-24T03:02:22+00:00",
-          "category": "argentina"
+          "title": "Ryzyko sporów w PiS. Wnioski z frakcyjnych konfliktów",
+          "source": "xyz.pl",
+          "url": "https://xyz.pl/ryzyko-sporow-w-pis-wnioski-z-frakcyjnych-konfliktow/",
+          "date": "2026-05-25T03:30:00+00:00",
+          "category": "poland"
         }
       ],
       "first_seen": "2026-05-17T14:16:08+00:00",
-      "last_seen": "2026-05-25T15:44:24+00:00"
-    },
-    {
-      "id": "false-alarms-target-right-wing-leaders-homes",
-      "title": "False alarms target right-wing leaders' homes",
-      "blurb": "A series of false alarms have targeted the homes of right-wing leaders in multiple countries, prompting accusations of political intimidation and raising concerns about the security of political figures. This theme reflects a broader pattern of using emergency services to harass or discredit political opponents, with similar incidents reported in Poland, Hungary, and the UK.",
-      "convergence": 3,
-      "countries": [
-        {
-          "name": "🇵🇱 Prawo i Sprawiedliwość",
-          "note": "False alarms at the homes of PiS leaders, including President Nawrocki, spark accusations of political intimidation and government overreach."
-        },
-        {
-          "name": "🇬🇧 Reform UK",
-          "note": "Reform UK leaders report false alarms and security incidents at their homes, raising concerns about political harassment."
-        },
-        {
-          "name": "🇭🇺 Fidesz / Tisza",
-          "note": "Hungarian right-wing leaders face false alarms and security incidents, with both sides accusing each other of orchestrating political intimidation."
-        }
-      ],
-      "signals": [
-        "parallel security incidents",
-        "political intimidation",
-        "shared framing",
-        "contagion of rhetoric"
-      ],
-      "article_count": 30,
-      "refs": [
-        {
-          "title": "Politycy PiS domagają się dymisji Kierwińskiego. \"Nie panuje nad służbami\"",
-          "source": "Gazeta",
-          "url": "https://wiadomosci.gazeta.pl/polityka/7,198012,32811034,politycy-pis-domagaja-sie-dymisji-kierwinskiego-nie-panuje.html",
-          "date": "2026-05-25T11:46:39+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Co pokazał fałszywy alarm w domu rodziny Nawrockiego? \"Tak będzie grzana cała kampania wyborcza\"",
-          "source": "TOK FM",
-          "url": "https://www.tokfm.pl/polityka/co-pokazal-falszywy-alarm-w-domu-rodziny-nawrockiego-tak-bedzie-grzana-cala-kampania-wyborcza",
-          "date": "2026-05-25T10:21:02+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Seria fałszywych alarmów. Szynkowski vel Sęk: za chwilę wjadą do Pałacu Prezydenckiego - Jedynka",
-          "source": "Polskie Radio",
-          "url": "https://jedynka.polskieradio.pl/artykul/3690820,Seria-falszywych-alarmow-Szynkowski-vel-Sek-za-chwile-wjada-do-Palacu-Prezydenckiego",
-          "date": "2026-05-25T06:44:24+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "La Justicia evalúa citar a Adorni como sospechoso",
-          "source": "La Gaceta",
-          "url": "https://www.lagaceta.com.ar/nota/1138213/politica/justicia-evalua-citar-adorni-como-sospechoso.html",
-          "date": "2026-05-25T02:57:01+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Trump's Justice Department scrubs its website of news releases about Jan. 6 defendants",
-          "source": "NBC4 Washington",
-          "url": "https://www.nbcwashington.com/news/national-international/trumps-justice-department-scrubs-website-news-releases-jan-6-defendants/4108315/",
-          "date": "2026-05-24T19:42:32+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Fałszywy alarm i wejście służb do mieszkania matki Nawrockiego. Kaczyński: Granica została przekroczona",
-          "source": "Wyborcza.pl",
-          "url": "https://wyborcza.pl/7,75398,32809410,falszywy-alarm-i-wejscie-sluzb-do-mieszkania-matki-nawrockiego.html",
-          "date": "2026-05-24T13:05:34+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "PiS w amoku po interwencji u Nawrockich. Tusk krótko: \"Kompromitujecie się\"",
-          "source": "naTemat.pl",
-          "url": "https://natemat.pl/654580,pis-w-amoku-po-interwencji-u-nawrockich-tusk-krotko-kompromitujecie-sie",
-          "date": "2026-05-24T12:56:18+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Prowokacja w mieszkaniu rodziny prezydenta. Prezes PiS atakuje rząd. \"To zło\"",
-          "source": "Wiadomości Onet",
-          "url": "https://wiadomosci.onet.pl/kraj/sluzby-w-mieszkaniu-matki-prezydenta-kaczynski-oskarza-tuska-to-zlo/xspfyzn",
-          "date": "2026-05-24T12:34:06+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Ostry wpis Jarosława Kaczyńskiego. \"Testują, jak daleko mogą się posunąć\"",
-          "source": "Fakt",
-          "url": "https://www.fakt.pl/polityka/akcja-sluzb-w-domu-rodzinnym-nawrockiego-kaczynski-zabral-glos/pce9nyg",
-          "date": "2026-05-24T11:52:24+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Fałszywy alarm i straż pożarna u Nawrockiego. Fogiel: Kierwiński do dymisji",
-          "source": "Do Rzeczy",
-          "url": "https://dorzeczy.pl/kraj/891694/falszywy-alarm-i-straz-pozarna-u-nawrockiego-fogiel-kierwinski-do-dymisji.html",
-          "date": "2026-05-24T11:19:00+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Kaczyńskiego poniosło? Najostrzejsza reakcja po akcji u rodziny prezydenta.",
-          "source": "Polityka Super Express",
-          "url": "https://polityka.se.pl/wiadomosci/kaczynskiego-ponioslo-najostrzejsza-reakcja-po-akcji-u-rodziny-prezydenta-aa-wod9-7xPe-198d.html",
-          "date": "2026-05-24T11:14:00+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Nocny alarm i wyważone drzwi. Rzecznik prezydenta Nawrockiego bije na alarm: Nikt nie wiedział, że to mieszkanie głowy państwa?",
-          "source": "wPolsce24",
-          "url": "https://wpolsce24.tv/polska/rzecznik-prezydenta-bije-na-alarm-przekroczona-granica,79523",
-          "date": "2026-05-24T11:00:00+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Zaatakowano mieszkanie matki prezydenta. „Kolejna granica została przekroczona”",
-          "source": "wPolsce24",
-          "url": "https://wpolsce24.tv/polska/zaatakowano-mieszkanie-matki-prezydenta,79512",
-          "date": "2026-05-24T10:45:00+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Służby w mieszkaniu rodzinnym Nawrockiego. Tusk uderza w polityków PiS. \"Skrajny cynizm\"",
-          "source": "Gazeta",
-          "url": "https://wiadomosci.gazeta.pl/polityka/7,198012,32809249,sluzby-w-mieszkaniu-rodzinnym-nawrockiego-tusk-uderza-w-politykow.html",
-          "date": "2026-05-24T10:32:40+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "\"Kompromitujecie się\". Donald Tusk wywołał trzech polityków",
-          "source": "Fakt",
-          "url": "https://www.fakt.pl/polityka/burza-wokol-akcji-sluzb-donald-tusk-wywolal-trzech-politykow/d99hfbb",
-          "date": "2026-05-24T10:15:40+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Donald Tusk o reakcji polityków PiS: skrajny cynizm lub skrajna głupota",
-          "source": "Wiadomości Onet",
-          "url": "https://wiadomosci.onet.pl/kraj/donald-tusk-o-reakcji-politykow-pis-skrajny-cynizm-lub-skrajna-glupota/xw6x8t5",
-          "date": "2026-05-24T09:22:37+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Służby weszły do domu rodziny prezydenta. Fala reakcji w sieci. \"Kompromitacja\"",
-          "source": "Wiadomości Onet",
-          "url": "https://wiadomosci.onet.pl/kraj/sluzby-weszla-do-domu-rodziny-prezydenta-fala-reakcji-w-sieci-kompromitacja/w9sjfsv",
-          "date": "2026-05-24T08:55:14+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Służby u prezydenta. Wielowieyska oskarża PiS o nowe \"kłamstwo smoleńskie.",
-          "source": "Do Rzeczy",
-          "url": "https://dorzeczy.pl/opinie/891658/sluzby-u-prezydenta-wielowieyska-oskarza-pis-o-nowe-klamstwo-smolenskie.html",
-          "date": "2026-05-24T08:45:00+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Hoax fire call hits flat of Polish President’s family member, PM Tusk says",
-          "source": "The Straits Times",
-          "url": "https://www.straitstimes.com/world/europe/hoax-fire-call-hits-flat-of-polish-presidents-family-member-tusk-says",
-          "date": "2026-05-24T07:08:41+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Interwencja służb w rodzinnym domu Nawrockiego. Jest reakcja rządu",
-          "source": "TOK FM",
-          "url": "https://www.tokfm.pl/polityka/interwencja-sluzb-w-rodzinnym-domu-nawrockiego-jest-reakcja-rzadu",
-          "date": "2026-05-24T05:53:03+00:00",
-          "category": "poland"
-        }
-      ],
-      "first_seen": "2026-05-24T14:15:38+00:00",
-      "last_seen": "2026-05-25T15:44:24+00:00"
+      "last_seen": "2026-05-26T04:53:57+00:00"
     }
   ]
 }
