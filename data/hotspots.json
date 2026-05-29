@@ -1,2309 +1,287 @@
 {
-  "updated_at": "2026-05-29T04:53:04+00:00",
+  "updated_at": "2026-05-29T16:13:53+00:00",
   "lookback_hours": 48,
   "model": "Mistral Large",
   "status": "ok",
   "hotspots": [
     {
-      "id": "javier-mileis-governance-and-internal-rifts",
-      "title": "Javier Milei’s governance and internal rifts",
-      "blurb": "Coverage focuses on Argentine President Javier Milei’s economic policies, internal party conflicts, and public clashes with opposition figures. Recent articles highlight his government’s struggles with inflation, job creation, and legislative battles, alongside personal controversies involving his sister and key advisors.",
-      "affect": "This commands disproportionate attention due to its high-stakes economic framing, moral panic over austerity, and intra-party power struggles that mirror broader ideological battles in Latin America.",
+      "id": "trump-administrations-anti-weaponization-fund-blocked",
+      "title": "Trump administration’s ‘anti-weaponization’ fund blocked",
+      "blurb": "A federal judge temporarily blocked Trump’s $1.8 billion 'anti-weaponization fund' pending a June 12 hearing, sparking intense debate over its legality and purpose. The fund, intended to support allies, faces bipartisan criticism and legal challenges.",
+      "affect": "This story commands attention due to its high-stakes legal battle, polarized framing, and implications for political funding and judicial oversight.",
+      "intensity": 4,
+      "affect_signals": [
+        "polarized contention",
+        "outrage-coded language",
+        "cross-source repetition",
+        "leadership crisis tone"
+      ],
+      "categories": [
+        "🇺🇸 MAGA / Trump"
+      ],
+      "article_count": 20,
+      "refs": [
+        {
+          "title": "US federal judge temporarily blocks Trump’s ‘anti-weaponisation fund’",
+          "source": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/5/29/us-federal-judge-temporarily-blocks-trumps-anti-weaponisation-fund",
+          "date": "2026-05-29T15:30:02+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Judge temporary freezes payments from Trump administration’s ‘Anti-Weaponization Fund’",
+          "source": "Rural Radio Network",
+          "url": "https://ruralradio.com/rrn/abc_news/judge-temporary-freezes-payments-from-trump-administrations-antiweaponization-fund-abcidb97f5827/",
+          "date": "2026-05-29T15:09:27+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Judge halts Trump ‘anti-weaponization’ fund after Jan. 6 prosecutor files suit",
+          "source": "NBC News",
+          "url": "https://www.nbcnews.com/politics/justice-department/judge-halts-trump-anti-weaponization-fund-jan-6-prosecutor-files-suit-rcna347539",
+          "date": "2026-05-29T14:09:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "US judge temporarily blocks Trump’s $1.8bn ‘anti-weaponization’ fund",
+          "source": "The Guardian",
+          "url": "https://www.theguardian.com/us-news/2026/may/29/trump-weaponization-fund-federal-ruling",
+          "date": "2026-05-29T14:02:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "The Latest: Judge temporarily blocks payouts from Trump administration’s ‘anti-weaponization’ fund",
+          "source": "KSAT",
+          "url": "https://www.ksat.com/news/politics/2026/05/29/the-latest-judge-temporarily-blocks-payouts-from-trump-administrations-anti-weaponization-fund/",
+          "date": "2026-05-29T12:25:32+00:00",
+          "category": "usa"
+        }
+      ],
+      "first_seen": "2026-05-29T16:13:53+00:00",
+      "last_seen": "2026-05-29T16:13:53+00:00"
+    },
+    {
+      "id": "afds-controversial-russia-ties-and-eu-scrutiny",
+      "title": "AfD’s controversial Russia ties and EU scrutiny",
+      "blurb": "High-ranking AfD politicians attended Putin’s economic forum in St. Petersburg, drawing sharp criticism and EU investigations into the party’s alleged anti-democratic and pro-Russia stance. The EU is also reviewing AfD’s European party for potential funding cuts over violations of EU values.",
+      "affect": "This hotspot is charged due to geopolitical tensions, moral panic over foreign influence, and the EU’s unprecedented scrutiny of a far-right party.",
       "intensity": 5,
       "affect_signals": [
-        "polarized contention",
-        "alarmist framing on economic collapse",
-        "cross-source repetition of internal feuds",
-        "moral panic over austerity measures",
-        "leadership crisis tone"
-      ],
-      "categories": [
-        "La Libertad Avanza"
-      ],
-      "article_count": 150,
-      "refs": [
-        {
-          "title": "En medio de la interna, La Libertad Avanza movió fichas en la Legislatura bonaerense",
-          "source": "Noticia Baires",
-          "url": "https://www.noticiabaires.com.ar/nota/11202/en-medio-de-la-interna-la-libertad-avanza-movio-fichas-en-la-legislatura-bonaerense.html",
-          "date": "2026-05-29T03:21:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Javier Milei admitió que solo con bajar la inflación y lograr estabilidad \"no alcanza\" para generar empleo",
-          "source": "La 100",
-          "url": "https://la100.cienradios.com/politica/javier-milei-admitio-que-solo-con-bajar-la-inflacion-y-lograr-estabilidad-no-alcanza-para-generar-empleo/",
-          "date": "2026-05-29T03:08:37+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Economía. El presidente Javier Milei y la transición",
-          "source": "La Voz del Interior",
-          "url": "https://www.lavoz.com.ar/opinion/presidente-javier-milei-transicion_0_m9a66WFkhq.html",
-          "date": "2026-05-29T03:01:43+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Javier Milei admite que solo con bajar la inflación y lograr la estabilidad no alcanza para generar empleo",
-          "source": "Clarin.com",
-          "url": "https://www.clarin.com/economia/milei-admite-solo-bajar-inflacion-lograr-estabilidad-alcanza-generar-empleo_0_MMqG23AazG.html",
-          "date": "2026-05-29T00:37:49+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "El irónico pedido de Ramiro Marra sobre Karina Milei y sus tortas: \"La que me las hacía lamentablemente se dedica a otra cosa\"",
-          "source": "Clarin.com",
-          "url": "https://www.clarin.com/politica/ironico-pedido-ramiro-marra-karina-milei-tortas-lamentablemente-dedica-cosa_0_1YBlaktKqY.html",
-          "date": "2026-05-28T23:43:22+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Javier Milei arremetió contra la oposición y el populismo; Luis Caputo tuvo su turno",
-          "source": "Mirador Provincial",
-          "url": "https://www.miradorprovincial.com/2026/05/28/javier-milei-arremetio-contra-la-oposicion-y-el-populismo-luis-caputo-tuvo-su-turno/",
-          "date": "2026-05-28T22:48:42+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Tra caro energia e programma sul riarmo, il doppio binario di Meloni e governo in Ue",
-          "source": "Adnkronos",
-          "url": "https://www.adnkronos.com/politica/meloni-ue-caro-energia-dossier-riarmo_26wObcLAb1Z24hrtPS5VrC",
-          "date": "2026-05-28T22:12:00+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "The Milei Government trusts in imposing the economy over politics to win the elections",
-          "source": "lnginnorthernbc.ca",
-          "url": "https://lnginnorthernbc.ca/2026/05/29/the-milei-government-trusts-in-imposing-the-economy-over-politics-to-win-the-elections/",
-          "date": "2026-05-28T22:10:37+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Javier Milei anticipa un polémico proyecto para retirar al Estado de la prestación de servicios como la educación y la salud",
-          "source": "LM Neuquén",
-          "url": "https://www.lmneuquen.com/pais/javier-milei-anticipa-un-polemico-proyecto-retirar-al-estado-la-prestacion-servicios-como-la-educacion-y-la-salud-n1240270",
-          "date": "2026-05-28T22:00:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Negocios junto a Karina: quién es Mara Gorini, la asesora especial de El Jefe - Por Giselle Leclercq",
-          "source": "NotiAR",
-          "url": "https://www.notiar.com.ar/index.php/component/k2/141064-negocios-junto-a-karina-quien-es-mara-gorini-la-asesora-especial-de-el-jefe-por-giselle-leclercq",
-          "date": "2026-05-28T21:56:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Mientras negocia con aliados, La Libertad Avanza activa en Diputados el debate del super-RIGI y la ley de Lobby",
-          "source": "TN",
-          "url": "https://tn.com.ar/politica/2026/05/28/la-libertad-avanza-activa-en-diputados-el-debate-del-super-rigi-y-la-ley-de-lobby/",
-          "date": "2026-05-28T21:02:58+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Javier Milei en el Latam Economic Forum: \"Argentina será 'investment grade' el día que los argentinos terminen de sepultar al populismo\"",
-          "source": "roadshow.com.ar",
-          "url": "https://www.roadshow.com.ar/javier-milei-en-el-latam-economic-forum-argentina-sera-investment-grade-el-dia-que-los-argentinos-terminen-de-sepultar-al-populismo/",
-          "date": "2026-05-28T20:30:37+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Javier Milei activó el modo campaña: \"Última oportunidad\"",
-          "source": "Urgente24",
-          "url": "https://urgente24.com/actualidad/javier-milei-activo-el-modo-campana-ultima-oportunidad-n625631",
-          "date": "2026-05-28T19:46:57+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Javier Milei en Latam Economic Forum: discurso de baja intensidad, auditorio semivacío y pocos aplausos",
-          "source": "Letra P",
-          "url": "https://www.letrap.com.ar/politica/javier-milei-latam-economic-forum-discurso-baja-intensidad-auditorio-semivacio-y-pocos-aplausos-n5424096",
-          "date": "2026-05-28T19:43:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Javier Milei defendió su plan económico con críticas a la oposición y al periodismo",
-          "source": "Diario UNO",
-          "url": "https://www.diariouno.com.ar/politica/javier-milei-defendio-su-plan-economico-criticas-la-oposicion-y-al-periodismo-n1560391",
-          "date": "2026-05-28T19:30:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Energía: fuerte disputa por el negocio de las baterías eléctricas que Javier Milei instalará en el interior",
-          "source": "Letra P",
-          "url": "https://www.letrap.com.ar/economia/energia-fuerte-disputa-el-negocio-las-baterias-electricas-que-javier-milei-instalara-el-interior-n5424095",
-          "date": "2026-05-28T19:18:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Javier Milei defendió la gestión, atacó a la prensa y ya proyecta el año electoral",
-          "source": "La Nación",
-          "url": "https://www.lanacion.com.ar/politica/javier-milei-defendio-la-gestion-ataco-a-la-prensa-y-ya-proyecta-el-ano-electoral-nid28052026/",
-          "date": "2026-05-28T18:03:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Milei volvió a hablar: Adorni presente, críticas al \"populismo\" y posible viaje",
-          "source": "El Litoral",
-          "url": "https://www.ellitoral.com/politica/ahora-hoy-milei-adorni-latam-economic-forum-argentina-discurso-estadosunidos-caputo_0_z589bUrGct.html",
-          "date": "2026-05-28T17:42:58+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Javier Milei defendió el ajuste y apuntó contra la oposición",
-          "source": "Página|12",
-          "url": "https://www.pagina12.com.ar/2026/05/28/javier-milei-defendio-el-ajuste-y-apunto-contra-la-oposicion/",
-          "date": "2026-05-28T17:32:52+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "El lado B y las dudas del foro empresarial donde Javier Milei y Luis Caputo defendieron el plan económico",
-          "source": "C5N",
-          "url": "https://www.c5n.com/politica/el-lado-b-y-las-dudas-del-foro-empresarial-donde-javier-milei-y-luis-caputo-defendieron-el-plan-economico-n239215",
-          "date": "2026-05-28T17:28:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Milei anticipa una \"revolución de los seguros\" para reemplazar al Estado en salud, educación y seguridad",
-          "source": "elDiarioAR.com",
-          "url": "https://www.eldiarioar.com/economia/milei-anticipa-revolucion-seguros-reemplazar-salud-educacion-seguridad_1_13258497.html",
-          "date": "2026-05-28T17:21:08+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Milei analizó el futuro económico: “La baja inflación y la estabilidad macroeconómica no generan crecimiento”",
-          "source": "Infobae",
-          "url": "https://www.infobae.com/economia/2026/05/28/milei-analizo-el-futuro-economico-la-baja-inflacion-y-la-estabilidad-macroeconomica-no-generan-crecimiento/",
-          "date": "2026-05-28T17:06:32+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Javier Milei volvió a apuntar contra los medios y habló de “ataques” al Gobierno",
-          "source": "Filo News",
-          "url": "https://www.filo.news/noticia/2026/05/28/javier-milei-volvio-a-apuntar-contra-los-medios-y-hablo-de-ataques-al-gobierno",
-          "date": "2026-05-28T16:52:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "\"Vamos Messi, carajo\", la arenga mundialista de Javier Milei durante un discurso económico",
-          "source": "Clarin.com",
-          "url": "https://www.clarin.com/videos/vamos-messi-carajo-arenga-mundialista-javier-milei-discurso-economico_3_WTpweTtOOI.html",
-          "date": "2026-05-28T16:40:24+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Javier Milei destacó el impacto del RIGI usando a Neuquén como ejemplo",
-          "source": "LM Neuquén",
-          "url": "https://www.lmneuquen.com/pais/javier-milei-destaco-el-impacto-del-rigi-usando-neuquen-como-ejemplo-n1240222",
-          "date": "2026-05-28T16:28:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Javier Milei en el Latam Economic Forum: \"Vamos a seguir abriendo la economía argentina\"",
-          "source": "C5N",
-          "url": "https://www.c5n.com/politica/javier-milei-el-latam-economic-forum-vamos-seguir-abriendo-la-economia-argentina-n239235",
-          "date": "2026-05-28T16:22:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Javier Milei afirmó que \"14 millones de personas salieron de la pobreza\" y denunció intentos de \"golpe de Estado\"",
-          "source": "MDZ Online",
-          "url": "https://www.mdzol.com/politica/javier-milei-afirmo-que-14-millones-personas-salieron-la-pobreza-y-denuncio-intentos-golpe-estado-n1530978",
-          "date": "2026-05-28T16:04:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Javier Milei: \"Argentina va a ser investment grade el día que los argentinos terminen de sepultar al populismo\"",
-          "source": "Ambito",
-          "url": "https://www.ambito.com/politica/javier-milei-argentina-va-ser-investment-grade-el-dia-que-los-argentinos-terminen-sepultar-al-populismo-n6282536",
-          "date": "2026-05-28T15:48:04+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Javier Milei: \"hice todo mal para estar en la política\"",
-          "source": "MinutoUno",
-          "url": "https://www.minutouno.com/politica/javier-milei-hice-todo-mal-estar-la-n6282533",
-          "date": "2026-05-28T15:35:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Javier Milei: \"hice todo mal para estar en la política y por eso soy el primer presidente liberal libertario\"",
-          "source": "MinutoUno",
-          "url": "https://www.minutouno.com/politica/javier-milei-hice-todo-mal-estar-la-y-eso-soy-el-primer-presidente-liberal-libertario-n6282533",
-          "date": "2026-05-28T15:35:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Javier Milei habla ante empresarios en el cierre del Latam Economic Forum",
-          "source": "El Cronista",
-          "url": "https://www.cronista.com/economia-politica/milei-habla-ante-empresarios-y-cierra-el-latam-economic-forum/",
-          "date": "2026-05-28T15:29:47+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "¿Arranca o no arranca la Argentina de Javier Milei?",
-          "source": "Letra P",
-          "url": "https://www.letrap.com.ar/economia/arranca-o-no-arranca-la-argentina-javier-milei-n5424094",
-          "date": "2026-05-28T15:27:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "EN VIVO: Javier Milei da un discurso en el Latam Economic Forum ante empresarios",
-          "source": "Crónica",
-          "url": "https://www.cronica.com.ar/politica/en-vivo-javier-milei-da-un-discurso-en-el-latam-economic-forum-ante-empresarios-9535/",
-          "date": "2026-05-28T14:59:23+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Latam Economic Forum: en vivo, el discurso de Javier Milei ante el círculo rojo este jueves 28 de mayo",
-          "source": "Diario Río Negro",
-          "url": "https://www.rionegro.com.ar/economia/javier-milei-cierra-el-latam-economic-forum-ante-el-circulo-rojo-en-vivo-su-discurso-este-jueves-28-de-mayo-4590453/",
-          "date": "2026-05-28T14:56:06+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Javier Milei en vivo frente a empresarios e inversores en el Latam Economic Forum",
-          "source": "Perfil",
-          "url": "https://www.perfil.com/noticias/economia/javier-milei-en-vivo-frente-a-empresarios-e-inversores-en-el-latam-economic-forum-a40.phtml",
-          "date": "2026-05-28T14:50:36+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "La breve tregua de Javier Milei es solo una pausa en el inevitable camino del líder radicalizado",
-          "source": "Perfil",
-          "url": "https://www.perfil.com/noticias/columnistas/la-breve-tregua-de-javier-milei-es-solo-una-pausa-en-el-inevitable-camino-del-lider-radicalizado.phtml",
-          "date": "2026-05-28T14:30:36+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "¿Se viene el repunte de Javier Milei?: Bajó su rechazo pero confirma la preocupación por Patricia Bullrich",
-          "source": "Urgente24",
-          "url": "https://urgente24.com/actualidad/se-viene-el-repunte-javier-milei-su-rechazo-pero-confirma-la-preocupacion-patricia-bullrich-n625593",
-          "date": "2026-05-28T13:36:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Cosa prevede la legge elettorale proposta dal Governo Meloni",
-          "source": "VDnews",
-          "url": "https://www.vdnews.it/politica/2026/05/28/news/cosa-prevede-la-legge-elettorale-proposta-dal-governo-meloni-22018851/",
-          "date": "2026-05-28T13:18:00+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Gericht entscheidet: AfD Drochtersen darf doch ins Bürgerhaus",
-          "source": "Tageblatt",
-          "url": "https://www.tageblatt.de/Nachrichten/Gericht-entscheidet-AfD-Drochtersen-darf-doch-ins-Buergerhaus-745054.html",
-          "date": "2026-05-28T13:01:34+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "El duro diagnóstico de Roberto Cachanosky sobre la economía de Javier Milei",
-          "source": "La Gaceta",
-          "url": "https://www.lagaceta.com.ar/nota/amp/1138670/economia/duro-diagnostico-roberto-cachanosky-sobre-economia-javier-milei.html",
-          "date": "2026-05-28T12:41:30+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "La popularidad de Javier Milei repunta mientras la inflación se modera en Argentina",
-          "source": "Bloomberg Línea",
-          "url": "https://www.bloomberglinea.com/latinoamerica/argentina/la-popularidad-de-javier-milei-repunta-mientras-la-inflacion-se-modera-en-argentina/",
-          "date": "2026-05-28T12:19:59+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "La estrategia de Milei con los gobernadores: acuerdos políticos, leyes y elecciones 2027",
-          "source": "ADNSUR",
-          "url": "https://www.adnsur.com.ar/politica/la-estrategia-de-milei-con-los-gobernadores--acuerdos-politicos--leyes-y-elecciones-2027_a6a181fe8c9ab49335fba3124",
-          "date": "2026-05-28T11:39:50+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "University demands against Argentina’s Milei escalate with student protests and faculty strikes",
-          "source": "EL PAÍS English",
-          "url": "https://english.elpais.com/international/2026-05-28/university-demands-against-argentinas-milei-escalate-with-student-protests-and-faculty-strikes.html?outputType=amp",
-          "date": "2026-05-28T11:20:29+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Javier Milei y Luis Caputo exponen en el 12° Latam Economic Forum ante empresarios e inversores",
-          "source": "Perfil",
-          "url": "https://www.perfil.com/noticias/economia/javier-milei-y-luis-caputo-exponen-en-el-12-latam-economic-forum-ante-empresarios-e-inversores-a40.phtml",
-          "date": "2026-05-28T10:56:22+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Javier Milei y Luis Caputo exponen ante empresarios en el Latam Economic Forum",
-          "source": "elDiarioAR.com",
-          "url": "https://www.eldiarioar.com/politica/javier-milei-luis-caputo-exponen-empresarios-latam-economic-forum_1_13256875.html",
-          "date": "2026-05-28T10:53:14+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Javier Milei expone ante empresarios en el Latam Economic Forum",
-          "source": "Filo News",
-          "url": "https://www.filo.news/noticia/2026/05/28/javier-milei-expone-ante-empresarios-en-el-latam-economic-forum",
-          "date": "2026-05-28T10:39:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "El FMI respaldó las medidas laborales de Javier Milei y reclamó más flexibilidad en el mercado del dólar",
-          "source": "Radio Mitre",
-          "url": "https://radiomitre.cienradios.com/politica/el-fmi-respaldo-las-medidas-laborales-de-javier-milei-y-reclamo-mas-flexibilidad-en-el-mercado-del-dolar/",
-          "date": "2026-05-28T10:32:38+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Buffalo named ‘Donald Trump’ is spared Eid sacrifice after viral fame in Bangladesh",
-          "source": "NBC News",
-          "url": "https://www.nbcnews.com/world/asia/buffalo-named-donald-trump-spared-eid-sacrifice-bangladesh-rcna347280",
-          "date": "2026-05-28T10:07:50+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Cayó la aprobación de Javier Milei en una provincia antikirchnerista que antes le había sido favorable",
-          "source": "El Intransigente",
-          "url": "https://elintransigente.com/2026/05/cayo-la-aprobacion-de-javier-milei-en-una-provincia-antikirchnerista-que-antes-le-habia-sido-favorable/",
-          "date": "2026-05-28T09:50:43+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Milei buscará dejar atrás la crisis política con un discurso en el Latam Economic Forum",
-          "source": "MDZ Online",
-          "url": "https://www.mdzol.com/politica/milei-buscara-dejar-atras-la-crisis-politica-un-discurso-el-latam-economic-forum-n1530540",
-          "date": "2026-05-28T09:30:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Super RIGI y reforma electoral: el Gobierno quiere aprobarlas antes del Mundial, pero no llegará a tiempo",
-          "source": "elDiarioAR.com",
-          "url": "https://www.eldiarioar.com/politica/super-rigi-reforma-electoral-gobierno-quiere-aprobarlas-mundial-no-llegara-tiempo_1_13255836.html",
-          "date": "2026-05-28T09:26:25+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "El Gobierno ya apuesta a la reelección de Javier Milei para quebrar el riesgo país pese a las alertas del mercado y el FMI",
-          "source": "radio3caseros.com.ar",
-          "url": "https://www.radio3caseros.com.ar/articulo/el-gobierno-ya-apuesta-a-la-reeleccion-de-javier-milei-para-quebrar-el-riesgo-pais-pese-a-las-alertas-del-mercado-y-el-fmi.php",
-          "date": "2026-05-28T09:18:52+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Milei recibirá a representantes de los laboratorios en medio de la disputa por el tratado de patentes que impulsa Estados Unidos",
-          "source": "TN",
-          "url": "https://tn.com.ar/politica/2026/05/28/milei-recibe-a-los-laboratorios-en-medio-de-la-disputa-por-el-tratado-de-patentes-que-impulsa-eeuu/",
-          "date": "2026-05-28T09:00:01+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "El FMI elogió la reforma laboral, pero pidió acompañarla con un dólar flexible y más desregulación",
-          "source": "TN",
-          "url": "https://tn.com.ar/economia/2026/05/28/el-fmi-elogio-la-reforma-laboral-pero-pidio-acompanarla-con-un-dolar-flexible-y-mas-desregulacion/",
-          "date": "2026-05-28T09:00:01+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "El Gobierno ya apuesta a la reelección de Milei para quebrar el riesgo país pese a las alertas del mercado y e...",
-          "source": "Perfil",
-          "url": "https://www.perfil.com/noticias/economia/el-gobierno-ya-apuesta-a-la-reeleccion-de-javier-milei-para-quebrar-el-riesgo-pais-pese-a-las-alertas-del-mercado-y-el-fmi-a40.phtml",
-          "date": "2026-05-28T08:30:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "De llamar al Congreso \"nido de ratas\" a negociar leyes: el giro parlamentario de Milei y los proyectos que no avanzan",
-          "source": "Perfil",
-          "url": "https://www.perfil.com/noticias/politica/de-llamar-al-congreso-nido-de-ratas-a-negociar-leyes-el-giro-parlamentario-de-milei-y-los-proyectos-que-no-avanzan.phtml",
-          "date": "2026-05-28T08:30:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Encuesta: la desaprobación de Milei llega al 58.3% y se consolidan las figuras de Myriam Bregman y Axel Kicill...",
-          "source": "Perfil",
-          "url": "https://www.perfil.com/noticias/politica/encuesta-la-desaprobacion-de-milei-llega-al-583-y-se-consolidan-las-figuras-de-myriam-bregman-y-axel-kicillof.phtml",
-          "date": "2026-05-28T08:30:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Milei en su laberinto: las ambiciones de la plana mayor del Gobierno y el juego que profundiza Bullrich",
-          "source": "Infobae",
-          "url": "https://www.infobae.com/politica/2026/05/28/milei-en-su-laberinto-las-ambiciones-de-la-plana-mayor-del-gobierno-y-el-juego-que-profundiza-bullrich/",
-          "date": "2026-05-28T06:49:05+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "El Gobierno empieza a jerarquizar el vínculo con las provincias pensando en las reformas y el año electoral",
-          "source": "Infobae",
-          "url": "https://www.infobae.com/politica/2026/05/28/el-gobierno-empieza-a-jerarquizar-el-vinculo-con-las-provincias-pensando-en-las-reformas-y-el-ano-electoral/",
-          "date": "2026-05-28T06:49:05+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Azonnal gyengülni kezdett a forint, kiéleződött a konfliktus, de Magyar Péter egyetlen bejelentése új tempót diktálhat",
-          "source": "Portfolio.hu",
-          "url": "https://www.portfolio.hu/deviza/20260528/azonnal-gyengulni-kezdett-a-forint-kielezodott-a-konfliktus-de-magyar-peter-egyetlen-bejelentese-uj-tempot-diktalhat-839550",
-          "date": "2026-05-28T06:22:00+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Kuchciński usłyszał, co myśli Kaczyński. Poseł PiS szybko zmienił zdanie",
-          "source": "Fakt",
-          "url": "https://www.fakt.pl/polityka/marek-kuchcinski-zmienil-zdanie-uslyszal-co-mysli-prezes-pis/48c1gq0",
-          "date": "2026-05-28T05:57:40+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Un poder inesperado cubre la ausencia opositora",
-          "source": "La Nación",
-          "url": "https://www.lanacion.com.ar/politica/un-poder-inesperado-cubre-la-ausencia-opositora-nid27052026/",
-          "date": "2026-05-28T04:56:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "El Gobierno frenó una candidatura a jueza por ser familiar de un periodista que investiga a Manuel Adorni",
-          "source": "El Intransigente",
-          "url": "https://elintransigente.com/2026/05/el-gobierno-freno-una-candidatura-a-jueza-por-ser-familiar-de-un-periodista-que-investiga-a-manuel-adorni/",
-          "date": "2026-05-28T04:15:34+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Reuniones con empresarios y disertaciones: La apretada agenda de Javier Milei en los próximos días",
-          "source": "El Intransigente",
-          "url": "https://elintransigente.com/2026/05/reuniones-con-empresarios-y-disertaciones-la-apretada-agenda-de-javier-milei-en-los-proximos-dias/",
-          "date": "2026-05-28T03:25:34+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Milei hablará sobre economía y reformas en un foro empresarial en Buenos Aires",
-          "source": "Los Andes",
-          "url": "https://www.losandes.com.ar/politica/milei-hablara-economia-y-reformas-un-foro-empresarial-buenos-aires-n5992736",
-          "date": "2026-05-28T03:19:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Pese a que aseguran que está en regla, Manuel Adorni demora la presentación de su declaración jurada",
-          "source": "El Intransigente",
-          "url": "https://elintransigente.com/2026/05/pese-a-que-aseguran-que-esta-en-regla-manuel-adorni-demora-la-presentacion-de-su-declaracion-jurada/",
-          "date": "2026-05-28T02:50:25+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "La UOCRA denunció que se perdieron 91.000 empleos desde que comenzó la gestión de Javier Milei",
-          "source": "Data Diario",
-          "url": "https://www.datadiario.com/economia/la-uocra-denuncio-que-se-perdieron-91-000-empleos-desde-que-comenzo-la-gestion-de-javier-milei-202652723430",
-          "date": "2026-05-28T02:49:25+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Por orden de Karina Milei, se vetó en el Senado el pliego de una jueza por su vínculo familiar con un reconoci...",
-          "source": "Perfil",
-          "url": "https://www.perfil.com/noticias/judiciales/por-orden-de-karina-milei-se-veto-en-el-senado-el-pliego-de-una-jueza-por-su-vinculo-familiar-con-un-reconocido-periodista.phtml",
-          "date": "2026-05-28T02:42:06+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "La doble advertencia de Eduardo Feinmann al gobierno de Javier Milei por los argentinos que no llegan a fin de mes",
-          "source": "MDZ Online",
-          "url": "https://www.mdzol.com/mdz-show/la-doble-advertencia-eduardo-feinmann-al-gobierno-javier-milei-los-argentinos-que-no-llegan-fin-mes-n1530470",
-          "date": "2026-05-28T02:12:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Reforma previsional: ¿Qué propone Javier Milei para las jubilaciones y por qué preocupa?",
-          "source": "Urgente24",
-          "url": "https://urgente24.com/dinero/reforma-previsional-que-propone-javier-milei-las-jubilaciones-y-que-preocupa-n625564",
-          "date": "2026-05-28T01:38:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "El nuevo Súper RIGI de Javier Milei y la polémica por los privilegios fiscales a inversiones faraónicas",
-          "source": "Sitio Andino",
-          "url": "https://www.sitioandino.com.ar/economia/el-nuevo-super-rigi-javier-milei-y-la-polemica-los-privilegios-fiscales-inversiones-faraonicas-n5723563",
-          "date": "2026-05-28T01:03:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Mayra Mendoza acusa a Javier Milei de abandonar la obra pública",
-          "source": "El Editor Platense",
-          "url": "https://eleditorplatense.com/economia/mayra-mendoza-acusa-javier-milei-abandonar-la-obra-publica-n5391145",
-          "date": "2026-05-28T00:00:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Argentina Faces New IMF Mandates: Tax Reform Pressure",
-          "source": "teleSUR English",
-          "url": "https://www.telesurenglish.net/argentina-faces-new-imf-mandates/",
-          "date": "2026-05-27T23:59:58+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "La Libertad Avanza apura el súper-RIGI y demora los otros proyectos que envió Javier Milei",
-          "source": "Letra P",
-          "url": "https://www.letrap.com.ar/congreso/la-libertad-avanza-apura-el-super-rigi-y-demora-los-otros-proyectos-que-envio-javier-milei-n5424085",
-          "date": "2026-05-27T23:47:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "El regreso del Milei bueno y las señales a Santiago Caputo y Karina Milei",
-          "source": "Clarin.com",
-          "url": "https://www.clarin.com/politica/regreso-milei-bueno-senales-santiago-caputo-karina-milei_0_leO2HpvbJG.html",
-          "date": "2026-05-27T23:21:23+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Funcionarios de Trump respaldaron a Milei: “Las reformas están funcionando y la inversión está llegando”",
-          "source": "TN",
-          "url": "https://tn.com.ar/politica/2026/05/27/funcionarios-de-trump-respaldaron-a-milei-las-reformas-estan-funcionando-y-la-inversion-esta-llegando/",
-          "date": "2026-05-27T23:11:46+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Manuel Adorni demora la presentación de su DDJJ ante la Oficina Anticorrupción",
-          "source": "BAE Negocios",
-          "url": "https://www.baenegocios.com/politica/manuel-adorni-demora-la-presentacion-de-su-ddjj-ante-la-oficina-anticorrupcion/",
-          "date": "2026-05-27T22:54:46+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Manuel Adorni presentaría su declaración jurada en medio de la tensión con Bullrich y Villarruel",
-          "source": "Radiofonica 100.7",
-          "url": "https://radiofonica.com/manuel-adorni-presentaria-su-declaracion-jurada-en-medio-de-la-tension-con-bullrich-y-villarruel/",
-          "date": "2026-05-27T22:45:52+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Manuel Adorni se prepara para presentar su declaración jurada, pero elude las presiones de Bullrich y Villarruel",
-          "source": "diariolapluma.com.ar",
-          "url": "https://diariolapluma.com.ar/manuel-adorni-se-prepara-para-presentar-su-declaracion-jurada-pero-elude-las-presiones-de-bullrich-y-villarruel/",
-          "date": "2026-05-27T22:38:41+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "La votación por una deuda millonaria de Espinoza en La Matanza reactivó la interna de libertaria en las redes",
-          "source": "Infobae",
-          "url": "https://www.infobae.com/politica/2026/05/27/la-votacion-por-una-deuda-millonaria-de-espinoza-en-la-matanza-reactivo-la-interna-de-libertaria-en-las-redes/",
-          "date": "2026-05-27T22:16:57+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "\"Si no le ponemos flow\": el insólito momento de un funcionario de Javier Milei con referentes del campo",
-          "source": "Diario Río Negro",
-          "url": "https://www.rionegro.com.ar/politica/si-no-le-ponemos-flow-el-insolito-momento-de-un-funcionario-de-javier-milei-con-referentes-del-campo-4589787/",
-          "date": "2026-05-27T22:00:43+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "La revolución de los seguros de Javier Milei: las claves del megapaquete que prepara Federico Sturzenegger",
-          "source": "Letra P",
-          "url": "https://www.letrap.com.ar/la-revolucion-los-seguros-javier-milei-las-claves-del-megapaquete-que-prepara-federico-sturzenegger-n5424072",
-          "date": "2026-05-27T21:38:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "La revolución de los seguros de Javier Milei: el megapaquete que prepara Federico Sturzenegger",
-          "source": "Letra P",
-          "url": "https://www.letrap.com.ar/la-revolucion-los-seguros-javier-milei-el-megapaquete-que-prepara-federico-sturzenegger-n5424072/amp",
-          "date": "2026-05-27T21:38:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Manuel Adorni resiste la presión interna y mantiene su plan para presentar su declaración jurada",
-          "source": "Telefe Córdoba",
-          "url": "https://cordoba.mitelefe.com/politica-y-economia/manuel-adorni-resiste-la-presion-interna-y-mantiene-su-plan-para-presentar-su-declaracion-jurada-pid2554081",
-          "date": "2026-05-27T21:35:11+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "“Renovamos el optimismo”: los nuevos números que le llegaron al Gobierno y el pedido para que baje la interna",
-          "source": "Infobae",
-          "url": "https://www.infobae.com/politica/2026/05/27/renovamos-el-optimismo-los-nuevos-numeros-que-le-llegaron-al-gobierno-y-el-pedido-para-que-baje-la-interna/",
-          "date": "2026-05-27T21:08:23+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Luis Juez levantó el perfil con el fantasma de un pacto Llaryora-Milei y señales de juego propio en Córdoba",
-          "source": "Letra P",
-          "url": "https://www.letrap.com.ar/politica/luis-juez-levanto-el-perfil-el-fantasma-un-pacto-llaryora-milei-y-senales-juego-propio-cordoba-n5424078",
-          "date": "2026-05-27T21:07:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Manuel Adorni sigue sin presentar su declaracion jurada y la situación se torna grave",
-          "source": "Tribuna de Periodistas",
-          "url": "https://periodicotribuna.com.ar/manuel-adorni-sigue-sin-presentar-su-declaracion-jurada-y-la-situacion-se-torna-grave/",
-          "date": "2026-05-27T20:40:26+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "En medio de la guerra tuitera entre caputistas y karinistas, Javier Milei recibió al influencer Iñaki Gutiérrez",
-          "source": "La Nación",
-          "url": "https://www.lanacion.com.ar/politica/en-medio-de-la-guerra-tuitera-entre-caputistas-y-karinistas-javier-milei-recibio-al-influencer-inaki-nid27052026/",
-          "date": "2026-05-27T20:37:00+00:00",
-          "category": "argentina"
-        }
-      ],
-      "first_seen": "2026-05-27T04:55:17+00:00",
-      "last_seen": "2026-05-29T04:53:04+00:00"
-    },
-    {
-      "id": "trump-administration-pushes-governmentwide-nda",
-      "title": "Trump administration pushes governmentwide NDA",
-      "blurb": "The Trump administration’s proposal to mandate nondisclosure agreements (NDAs) for federal employees has sparked outrage, with critics framing it as an authoritarian overreach to suppress leaks and dissent. Coverage highlights legal challenges, bipartisan opposition, and comparisons to historical censorship.",
-      "affect": "This story dominates due to its perceived threat to democratic norms, with intense framing around secrecy, authoritarianism, and the erosion of transparency in government.",
-      "intensity": 4,
-      "affect_signals": [
-        "outrage-coded language",
-        "polarized contention",
-        "cross-source repetition of authoritarian framing",
-        "moral panic over government secrecy",
-        "leadership crisis tone"
-      ],
-      "categories": [
-        "MAGA / Trump"
-      ],
-      "article_count": 80,
-      "refs": [
-        {
-          "title": "Giunta, il sindaco prova a disinnescare la Lega",
-          "source": "Il Resto del Carlino",
-          "url": "https://www.ilrestodelcarlino.it/ancona/cronaca/giunta-il-sindaco-prova-a-69695ee3",
-          "date": "2026-05-29T03:33:30+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Trump administration proposes NDA rule for federal employees",
-          "source": "CBS News",
-          "url": "https://www.cbsnews.com/video/trump-administration-proposes-ndas-federal-employees/",
-          "date": "2026-05-28T22:45:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Trump Administration Proposes Agreements to Silence Leaks by Government Workers",
-          "source": "The Well News",
-          "url": "https://www.thewellnews.com/federal-workforce/trump-administration-proposes-agreements-to-silence-leaks-by-government-workers/",
-          "date": "2026-05-28T17:35:52+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Trump administration reforms surprise billing dispute resolution",
-          "source": "Healthcare Dive",
-          "url": "https://www.healthcaredive.com/news/final-surprise-billing-dispute-resolution-rule-hhs-labor-treasury-nsa/821337/",
-          "date": "2026-05-28T16:40:20+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Trump administration proposes NDAs for federal employees to stop news leaks",
-          "source": "Free Speech Center",
-          "url": "https://firstamendment.mtsu.edu/post/trump-administration-proposes-ndas-for-federal-employees-to-stop-news-leaks/",
-          "date": "2026-05-28T13:27:32+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "The Trump Administration’s Assault on Immigrants Degrades the Rule of Law",
-          "source": "Center for American Progress",
-          "url": "https://www.americanprogress.org/article/the-trump-administrations-assault-on-immigrants-degrades-the-rule-of-law/",
-          "date": "2026-05-28T13:03:51+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Inside the Trump Administration’s Attack on Smith College and Title IX",
-          "source": "Washington Monthly",
-          "url": "https://washingtonmonthly.com/2026/05/28/inside-the-trump-administrations-attack-on-smith-college-and-title-ix/",
-          "date": "2026-05-28T09:00:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Kubicki: Brandmauer zur AfD ist keine Selbstverständlichkeit",
-          "source": "Oldenburger Onlinezeitung",
-          "url": "https://www.oldenburger-onlinezeitung.de/nachrichten/kubicki-brandmauer-zur-afd-ist-keine-selbstverstaendlichkeit-207098.html",
-          "date": "2026-05-28T06:49:00+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Federal workers share mixed opinions as Trump administration pushes workers to sign NDAs",
-          "source": "WRAL",
-          "url": "https://www.wral.com/video/federal-workers-share-mixed-opinions-as-trump-administration-pushes-workers-to-sign-ndas/22362490/",
-          "date": "2026-05-28T01:04:41+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Trump administration pitches mandatory NDA for Wyoming’s 5,900 federal workers",
-          "source": "WyoFile",
-          "url": "https://wyofile.com/trump-administration-pitches-mandatory-nda-for-wyomings-5900-federal-workers/",
-          "date": "2026-05-27T23:01:47+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Trump administration ‘drawing up plans’ to stop processing international flights in sanctuary cities",
-          "source": "The Guardian",
-          "url": "https://www.theguardian.com/us-news/2026/may/27/dhs-international-flights-sanctuary-cities",
-          "date": "2026-05-27T21:44:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Democrats renew criticism of ICE detention conditions as Trump administration weighs new restrictions",
-          "source": "FOX 32 Chicago",
-          "url": "https://www.fox32chicago.com/video/fmc-4we421xcghhdcuhq",
-          "date": "2026-05-27T21:27:47+00:00",
-          "category": "usa"
-        }
-      ],
-      "first_seen": "2026-05-27T04:55:17+00:00",
-      "last_seen": "2026-05-29T04:53:04+00:00"
-    },
-    {
-      "id": "afds-rise-and-mainstream-party-responses-in-germany",
-      "title": "AfD’s rise and mainstream party responses in Germany",
-      "blurb": "The Alternative für Deutschland (AfD) continues to surge in polls, particularly in eastern Germany, prompting debates over mainstream parties’ strategies to counter its influence. Coverage focuses on CDU/SPD efforts to exclude AfD from leadership roles, legal challenges to its extremism, and public protests against its policies.",
-      "affect": "This commands high affective investment due to fears of far-right normalization, democratic backsliding, and the moral panic over immigration and nationalism.",
-      "intensity": 4,
-      "affect_signals": [
-        "alarmist framing on extremism",
-        "polarized contention over immigration",
-        "cross-source repetition of AfD’s electoral gains",
-        "moral panic over democratic erosion",
-        "leadership crisis tone in mainstream parties"
-      ],
-      "categories": [
-        "Alternative für Deutschland"
-      ],
-      "article_count": 100,
-      "refs": [
-        {
-          "title": "Pressestimme: 'Rheinpfalz' zur Warnschrift der CDU an AfD-Abgeordnete",
-          "source": "MarketScreener Deutschland",
-          "url": "https://de.marketscreener.com/boerse-nachrichten/pressestimme-rheinpfalz-zur-warnschrift-der-cdu-an-afd-abgeordnete-ce7f5ddbd988f72c",
-          "date": "2026-05-29T03:36:32+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "«Die Union macht die AfD stärker»: Kubicki über die Brandmauer-Debatte",
-          "source": "Neue Zürcher Zeitung",
-          "url": "https://www.nzz.ch/deutschland/wir-stehen-vor-der-alternative-erfolg-oder-bedeutungslosigkeit-sagt-fdp-vize-wolfgang-kubicki-ld.10008877",
-          "date": "2026-05-29T02:30:00+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Baden-Württemberg: Betrugsvorwürfe im AfD-Kreisverband Stuttgart",
-          "source": "Ntv",
-          "url": "https://www.n-tv.de/regionales/baden-wuerttemberg/Betrugsvorwuerfe-im-AfD-Kreisverband-Stuttgart-id30869156.html",
-          "date": "2026-05-29T02:02:00+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "101 Tage bis zur Wahl in Sachsen-Anhalt: Das wäre bis dahin nötig, um die AfD zu stoppen",
-          "source": "der Freitag",
-          "url": "https://www.freitag.de/autoren/der-freitag/noch-101-tage-bis-zur-wahl-in-sachsen-anhalt-101-tage-um-die-afd-zu-stoppen",
-          "date": "2026-05-29T02:00:00+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Geld-Hammer für die AfD: Europapartei droht Verlust von Millionen-Förderung der EU",
-          "source": "Express",
-          "url": "https://www.express.de/politik-und-wirtschaft/europapartei-der-afd-droht-millionen-verlust-eu-prueft-vorwuerfe-wegen-hassrede-und-grundwerte-verletzung-1289412",
-          "date": "2026-05-29T01:37:18+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Wirbel um eine Anti-AfD-Aktion an Schulen",
-          "source": "Rundblick Niedersachsen",
-          "url": "https://rundblick-niedersachsen.de/wirbel-um-anti-afd-aktion-an-schulen",
-          "date": "2026-05-28T20:02:15+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Political shift as Reform UK claims 'effective majority' at Norfolk County Council",
-          "source": "Rayo",
-          "url": "https://www.hellorayo.co.uk/greatest-hits/norfolk/news/reform-majority-norfolk-council",
-          "date": "2026-05-28T19:15:58+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Arild Hermstad: – Jeg er Arild Hermstad",
-          "source": "Nettavisen",
-          "url": "https://www.nettavisen.no/nyheter/ble-hengt-ut-av-tonje-brenna-na-svarer-mdg-sjefen/s/5-95-3061765",
-          "date": "2026-05-28T18:46:30+00:00",
-          "category": "norway"
-        },
-        {
-          "title": "Diego Raus sobre una posible reelección de Milei: “Los gobiernos siempre tuvieron como horizonte la reelección...",
-          "source": "Perfil",
-          "url": "https://www.perfil.com/noticias/canal-e/diego-raus-sobre-una-posible-reeleccion-de-milei-los-gobiernos-siempre-tuvieron-como-horizonte-la-reeleccion.phtml",
-          "date": "2026-05-28T18:01:38+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "« L’Allemagne de Merz n’est plus celle de Merkel » : Jordan Bardella se rapproche de la droite allemande au détriment de l’AfD",
-          "source": "Le Figaro",
-          "url": "https://www.lefigaro.fr/politique/l-allemagne-de-merz-n-est-plus-celle-de-merkel-jordan-bardella-se-rapproche-de-la-droite-allemande-au-detriment-de-l-afd-20260528",
-          "date": "2026-05-28T17:45:00+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Demo vor der Haustür, Kratzer im Autolack: AfD-Politikerin in Jena im Zentrum von Attacken",
-          "source": "Thüringer Allgemeine",
-          "url": "https://www.thueringer-allgemeine.de/politik/article412122263/demo-vor-der-haustuer-kratzer-im-autolack-afd-politikerin-in-jena-im-zentrum-von-attacken.html",
-          "date": "2026-05-28T17:30:00+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "\"Leute, da ist Gefahr im Busch\": Müntefering macht brisanten Vorschlag zur AfD - T-Online",
-          "source": "",
-          "url": "https://www.t-online.de/nachrichten/deutschland/innenpolitik/id_101274002/franz-muentefering-frueherer-spd-chef-fordert-verbotsverfahren-gegen-afd-.html",
-          "date": "2026-05-28T17:15:15+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Susan Collins opposes Donald Trump’s $1 billion ballroom request",
-          "source": "The Portland Press Herald",
-          "url": "https://www.pressherald.com/2026/05/28/susan-collins-opposes-donald-trumps-1-billion-ballroom-request/",
-          "date": "2026-05-28T16:59:41+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "40 Prozent AfD – die Zukunft im Osten muss neu gedacht werden",
-          "source": "Nordkurier",
-          "url": "https://www.nordkurier.de/politik/40-prozent-afd-die-zukunft-im-osten-muss-neu-gedacht-werden-4605459",
-          "date": "2026-05-28T16:45:00+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Kampfhunde: Oberhausener AfD scheitert mit neuer Hundesteuer-Idee",
-          "source": "WAZ | Westdeutsche Allgemeine Zeitung",
-          "url": "https://www.waz.de/lokales/oberhausen/article412116399/kampfhunde-oberhausener-afd-scheitert-mit-neuer-hundesteuer-idee.html",
-          "date": "2026-05-28T16:25:00+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Land­tags­gre­mi­en: Warum CDU, SPD und Grüne die AfD außen vor hal­ten wol­len",
-          "source": "Die Rheinpfalz",
-          "url": "https://www.rheinpfalz.de/rheinland-pfalz_artikel,-landtagsgremien-warum-cdu-spd-und-gr%C3%BCne-die-afd-au%C3%9Fen-vor-halten-wollen-_arid,5894666.html",
-          "date": "2026-05-28T16:19:00+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "AfD-Anträge: Sparkassen erklären ihr Sponsoring",
-          "source": "Die Glocke",
-          "url": "https://www.die-glocke.de/kreis-guetersloh/guetersloh/artikel/afd-antraege-sparkassen-erklaeren-ihr-sponsoring-1779986120",
-          "date": "2026-05-28T16:08:00+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Manuela Schwesig: „Ich habe versucht, die AfD einzubinden“",
-          "source": "Berliner Zeitung",
-          "url": "https://www.berliner-zeitung.de/article/manuela-schwesig-ich-habe-versucht-die-afd-einzubinden-10038556",
-          "date": "2026-05-28T16:02:40+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Bessent says Trump Accounts app coming Thursday",
-          "source": "PBS",
-          "url": "https://www.pbs.org/newshour/economy/bessent-says-trump-accounts-app-coming-thursday",
-          "date": "2026-05-28T15:44:31+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Partner auf Europa-Ebene: Jetzt droht dem Rechtsaußen-Bündnis der AfD ein Verbot",
-          "source": "WELT",
-          "url": "https://www.welt.de/politik/deutschland/plus6a18385a77d857fdb4526ec3/partner-auf-europa-ebene-jetzt-droht-dem-rechtsaussen-buendnis-der-afd-ein-verbot.html",
-          "date": "2026-05-28T15:36:17+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "„Sind hier, um zu zeigen, dass wir so ein Gedankengut nicht unterstützen“",
-          "source": "RP Online",
-          "url": "https://rp-online.de/nrw/staedte/neuss/lautstarker-protest-gegen-afd-treffen-in-neuss_aid-148951135",
-          "date": "2026-05-28T15:32:36+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "„Ein zeithistorisches Dokument“ – Von Storch macht sich über CDU-Brief an AfD-Abgeordnete lustig",
-          "source": "WELT",
-          "url": "https://www.welt.de/politik/deutschland/article6a17d3ca61be973b7ac9f6f2/bundestag-ein-zeithistorisches-dokument-von-storch-macht-sich-ueber-cdu-brief-an-afd-abgeordnete-lustig.html",
-          "date": "2026-05-28T15:13:14+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "„Rzecz w tym”: Kraków nie zaszkodził Tuskowi. Ale w PiS zaczyna wrzeć",
-          "source": "Rzeczpospolita",
-          "url": "https://www.rp.pl/polityka/art44482471-rzecz-w-tym-krakow-nie-zaszkodzil-tuskowi-ale-w-pis-zaczyna-wrzec",
-          "date": "2026-05-28T15:00:00+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Trump Judge Gives Shock Green Light to His Voting Power Grab",
-          "source": "The Daily Beast",
-          "url": "https://www.thedailybeast.com/donald-trump-judge-carl-nichols-gives-shock-green-light-to-his-mail-in-voting-power-grab/",
-          "date": "2026-05-28T14:54:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Auch CDU wählt keine AfD-Kandidaten für Ausschussvorsitz",
-          "source": "tagesschau.de",
-          "url": "https://www.tagesschau.de/inland/regional/rheinlandpfalz/swr-auch-cdu-waehlt-keine-afd-kandidaten-fuer-ausschussvorsitz-100.html?t={seek_to_second_number}",
-          "date": "2026-05-28T14:43:00+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "AfD Gevelsberg bezahlt Büro mit Steuergeldern – will Adresse aber nicht verraten",
-          "source": "Westfalenpost",
-          "url": "https://www.wp.de/lokales/ennepetal-gevelsberg-schwelm/article412119726/afd-gevelsberg-bezahlt-buero-mit-steuergeldern-will-adresse-aber-nicht-verraten.html",
-          "date": "2026-05-28T14:39:51+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "„Habe mich köstlich amüsiert – insbesondere über die unsouveräne Reaktion der AfD-Spitze“",
-          "source": "WELT",
-          "url": "https://www.welt.de/videos/video6a1839a6d1e7d2dae635f968/bundestag-habe-mich-koestlich-amuesiert-insbesondere-ueber-die-unsouveraene-reaktion-der-afd-spitze.html",
-          "date": "2026-05-28T14:12:37+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Osnabrück: Wahlrecht für Ausländer? Wie die Linke das Geschäft der AfD betreibt",
-          "source": "OZ online",
-          "url": "https://www.oz-online.de/artikel/1658702/Wahlrecht-fuer-Auslaender-Wie-die-Linke-das-Geschaeft-der-AfD-betreibt",
-          "date": "2026-05-28T14:00:00+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "In Tittmoning ist ein AfD-Mann für die Kultur zuständig - das erregt Protest - Bayern - SZ.de",
-          "source": "SZ.de",
-          "url": "https://www.sueddeutsche.de/bayern/tittmoning-afd-bayern-kulturreferent-brandmauer-li.3490341",
-          "date": "2026-05-28T13:56:56+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Neues aus Mainz: Auch die CDU will keine Ausschuss-Vorsitzenden der AfD - Rheinland-Pfalz - Rhein-Zeitung",
-          "source": "",
-          "url": "https://www.rhein-zeitung.de/rheinland-pfalz/auch-die-cdu-will-keine-ausschuss-vorsitzenden-der-afd_arid-4129178.html",
-          "date": "2026-05-28T13:43:00+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Wir­kungs­lo­ser Ak­tio­nis­mus: Warum die CDU-​Broschüre an AfD-​Abgeordnete kaum einen Ef­fekt haben wird",
-          "source": "Die Rheinpfalz",
-          "url": "https://www.rheinpfalz.de/politik_artikel,-wirkungsloser-aktionismus-warum-die-cdu-brosch%C3%BCre-an-afd-abgeordnete-kaum-einen-effekt-haben-wird-_arid,5894577.html",
-          "date": "2026-05-28T13:41:00+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Kommunalwahl in Stuttgart: Bekommt die AfD nach Stimmenzuwachs nun einen Bürgermeisterposten? - stuttgarter-nachrichten.de",
-          "source": "",
-          "url": "https://www.stuttgarter-nachrichten.de/inhalt.kommunalwahl-in-stuttgart-bekommt-die-afd-nach-stimmenzuwachs-nun-einen-buergermeisterposten.eece4374-76fe-4854-9db4-1d3e9a3da7e1.html",
-          "date": "2026-05-28T13:38:22+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "„Man muss die Republik jetzt wachrütteln“ Müntefering für AfD-Verbotsverfahren vor nächster Bundestagswahl",
-          "source": "Tagesspiegel",
-          "url": "https://www.tagesspiegel.de/politik/man-muss-die-republik-jetzt-wachrutteln-muntefering-fur-afd-verbotsverfahren-vor-nachster-bundestagswahl-15650391.html",
-          "date": "2026-05-28T13:20:02+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "AfD-Spitzenkandidat Siegmund: Keine „Gesinnungsprüfung“ bei Staatsämter-Besetzung",
-          "source": "STERN.de",
-          "url": "https://www.stern.de/news/afd-spitzenkandidat-siegmund--keine--gesinnungspruefung--bei-staatsaemter-besetzung-37456268.html",
-          "date": "2026-05-28T13:17:43+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Söhne geben Verdienstkreuz ihrer Mutter zurück – wegen Albigs AfD-Aussage",
-          "source": "Hamburger Abendblatt",
-          "url": "https://www.abendblatt.de/schleswig-holstein/pinneberg/article412115697/soehne-geben-verdienstkreuz-ihrer-mutter-empoert-zurueck-wegen-albigs-afd-aussage.html",
-          "date": "2026-05-28T13:15:00+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "AfD-Politiker aus Erkrath: Staatsanwaltschaft ermittelt wegen Volksverhetzung",
-          "source": "RP Online",
-          "url": "https://rp-online.de/nrw/staedte/erkrath/afd-politiker-erkrath-ermittlung-wegen-volksverhetzung_aid-149014071",
-          "date": "2026-05-28T13:11:00+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Court Orders Repeat Election in Saarbrücken—AfD Exclusion Ruled Unlawful",
-          "source": "The European Conservative",
-          "url": "https://europeanconservative.com/articles/news-corner/alternative-fur-deutschland-court-orders-repeat-election-in-saarbruckenafd-exclusion-ruled-unlawful/",
-          "date": "2026-05-28T13:10:17+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "CDU schickt Broschüre an AfD-Abgeordnete - mit Austrittstext",
-          "source": "Jüdische Allgemeine",
-          "url": "https://www.juedische-allgemeine.de/politik/cdu-schickt-broschuere-an-afd-abgeordnete-mit-austrittstext/",
-          "date": "2026-05-28T12:54:00+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Radni PiS przed sesją absolutoryjną",
-          "source": "STARnowa.tv",
-          "url": "https://www.starnowa.tv/radni-pis-przed-sesja-absolutoryjna/",
-          "date": "2026-05-28T12:16:29+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "„Popanz Brandmauer“: Zukünftige FDP-Chefs offen für Abstimmungen mit der AfD",
-          "source": "Berliner Zeitung",
-          "url": "https://www.berliner-zeitung.de/article/keine-brandmauer-zukuenftige-fdp-chefs-offen-fuer-abstimmungen-mit-der-afd-10039303",
-          "date": "2026-05-28T12:03:41+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Wahlkampf in Sachsen-Anhalt Im Kampf gegen die AfD geht Schulze auf Distanz zum Kanzler",
-          "source": "Tagesspiegel",
-          "url": "https://www.tagesspiegel.de/politik/wahlkampf-in-sachsen-anhalt-im-kampf-gegen-die-afd-geht-schulze-auf-distanz-zum-kanzler-15649588.html",
-          "date": "2026-05-28T11:54:49+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Müntefering fordert AfD-Verbotsverfahren – Warnung vor Machtgewinn im Osten",
-          "source": "Berliner Zeitung",
-          "url": "https://www.berliner-zeitung.de/article/muentefering-fordert-afd-verbotsverfahren-warnung-vor-machtgewinn-im-osten-10039186",
-          "date": "2026-05-28T11:47:14+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Soziokultur – AfD-Angriff auf Treibhaus in Döbeln scheitert - nd-aktuell.de",
-          "source": "",
-          "url": "https://www.nd-aktuell.de/artikel/1199977.soziokultur-afd-angriff-auf-treibhaus-in-doebeln-scheitert.html",
-          "date": "2026-05-28T11:33:23+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "\"Gegen Europas Werte\": EU leitet Verbotsverfahren gegen AfD-Parteienbündnis ein",
-          "source": "Kurier",
-          "url": "https://kurier.at/politik/ausland/afd-fpoe-deutschland-eu-esn-eu-parlament/403163849",
-          "date": "2026-05-28T11:23:00+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Staatsanwaltschaft ermittelt wegen Kinderpornografie: Stadtrat aus Hannover verlässt AfD",
-          "source": "OZ online",
-          "url": "https://www.oz-online.de/artikel/1658625/Staatsanwaltschaft-ermittelt-wegen-Kinderpornografie-Stadtrat-aus-Hannover-verlaesst-AfD",
-          "date": "2026-05-28T11:16:07+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "„Kleiner Service“ CDU schickt AfD-Abgeordneten Broschüre – inklusive Muster-Austrittsschreiben",
-          "source": "Tagesspiegel",
-          "url": "https://www.tagesspiegel.de/politik/kleiner-service-cdu-schickt-afd-abgeordneten-broschure--inklusive-muster-austrittsschreiben-15649420.html",
-          "date": "2026-05-28T11:14:18+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "AfD sieht \"Scherz-Briefchen\": CDU verschickt Austrittsvordruck an AfD-Abgeordnete",
-          "source": "Ntv",
-          "url": "https://www.n-tv.de/politik/CDU-verschickt-Austrittsvordruck-an-AfD-Abgeordnete-id30866601.html",
-          "date": "2026-05-28T11:11:13+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Bundestag: CDU schickt »Abstieg für Deutschland«-Broschüren an AfD-Abgeordnete",
-          "source": "DIE ZEIT",
-          "url": "https://www.zeit.de/politik/deutschland/2026-05/cdu-broschuere-afd-abgeordnete-abstieg-fuer-deutschland-gxe",
-          "date": "2026-05-28T10:59:25+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Rheinland-Pfalz & Saarland: Kein Landtags-Ausschuss unter AfD-Vorsitz? Wahlen stehen an",
-          "source": "Ntv",
-          "url": "https://www.n-tv.de/regionales/rheinland-pfalz-und-saarland/Kein-Landtags-Ausschuss-unter-AfD-Vorsitz-Wahlen-stehen-an-id30866510.html",
-          "date": "2026-05-28T10:47:00+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Parlament: Kein Landtags-Ausschuss unter AfD-Vorsitz? Wahlen stehen an",
-          "source": "Saarbrücker Zeitung",
-          "url": "https://www.saarbruecker-zeitung.de/saarland/blickzumnachbarn/kein-landtags-ausschuss-unter-afd-vorsitz-wahlen-stehen-an_bid-149012527",
-          "date": "2026-05-28T10:46:00+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Kein Landtags-Ausschuss unter AfD-Vorsitz? Wahlen stehen an",
-          "source": "Allgemeine Zeitung",
-          "url": "https://www.allgemeine-zeitung.de/lokales/rheinland-pfalz/kein-landtags-ausschuss-unter-afd-vorsitz-wahlen-stehen-an-5736155",
-          "date": "2026-05-28T10:46:00+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Umfragewerte für die AfD: Spirale der Unzufriedenheit",
-          "source": "RP Online",
-          "url": "https://rp-online.de/politik/deutschland/umfragewerte-fuer-die-afd-immer-mehr-menschen-sind-radikal-unzufrieden_aid-148559859",
-          "date": "2026-05-28T10:39:56+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "„Ich erkenne die Melodie“ – Müntefering fordert AfD-Verbotsverfahren",
-          "source": "WELT",
-          "url": "https://www.welt.de/politik/deutschland/article6a17f9b661be973b7ac9f924/muentefering-fordert-afd-verbotsverfahren-ich-erkenne-die-melodie.html",
-          "date": "2026-05-28T10:39:19+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Kein Vorsitz für AfD-Politiker in Landtagsausschüssen? - NR-Kurier",
-          "source": "",
-          "url": "https://www.nr-kurier.de/artikel/171447-kein-vorsitz-fuer-afd-politiker-in-landtagsausschuessen-",
-          "date": "2026-05-28T10:24:59+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Studie: Die Brandmauer hält auch in den Kreis- und Stadtparlamenten, trotz Rissen",
-          "source": "politik&kommunikation",
-          "url": "https://www.politik-kommunikation.de/studie-die-brandmauer-haelt-auch-in-den-kreis-und-stadtparlamenten/",
-          "date": "2026-05-28T10:17:29+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "President Trump says Strait of Hormuz should be 'open to everybody'",
-          "source": "whas11.com",
-          "url": "https://www.whas11.com/video/news/nation-world/president-trump-says-strait-of-hormuz-should-be-open-to-everybody/417-45409622-ed05-474b-b05d-715f2db1c659",
-          "date": "2026-05-28T10:01:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Schulen, Polizei, Beamte, Kirchen, Vereine In diesen fünf Bereichen würde man merken, dass die AfD in Sachsen-Anhalt regiert",
-          "source": "Tagesspiegel",
-          "url": "https://www.tagesspiegel.de/politik/schulen-polizei-beamte-kirchen-vereine-in-diesen-funf-bereichen-wurde-man-merken-dass-die-afd-in-sachsen-anhalt-regiert-15643851.html",
-          "date": "2026-05-28T10:00:00+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Auch CDU wählt keine AfD-Ausschussvorsitzenden im Landtag",
-          "source": "tagesschau.de",
-          "url": "https://www.tagesschau.de/inland/regional/rheinlandpfalz/swr-auch-cdu-waehlt-keine-afd-ausschussvorsitzenden-im-landtag-100.html?t={seek_to_second_number}",
-          "date": "2026-05-28T10:00:00+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "„Hat seine Quelle in Berlin“: Seehofer über hohe AfD-Umfragewerte im Osten",
-          "source": "Berliner Zeitung",
-          "url": "https://www.berliner-zeitung.de/article/hohe-afd-umfragewerte-im-osten-seehofer-und-gysi-ueber-die-landtasgwahlen-10038939",
-          "date": "2026-05-28T09:54:02+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "\"Popanz Brandmauer\": Designierter FDP-Generalsekretär will neuen Umgang mit AfD",
-          "source": "1&1",
-          "url": "https://home.1und1.de/magazine/politik/inland/designierter-fdp-generalsekretaer-umgang-afd-42320508",
-          "date": "2026-05-28T09:46:26+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Rheinland-Pfalz & Saarland: Keine AfD-Politiker als Ausschuss-Vorsitzende?",
-          "source": "Ntv",
-          "url": "https://www.n-tv.de/regionales/rheinland-pfalz-und-saarland/Keine-AfD-Politiker-als-Ausschuss-Vorsitzende-id30866510.html",
-          "date": "2026-05-28T09:39:00+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Keine AfD-Politiker als Ausschuss-Vorsitzende?",
-          "source": "Allgemeine Zeitung",
-          "url": "https://www.allgemeine-zeitung.de/lokales/rheinland-pfalz/keine-afd-politiker-als-ausschuss-vorsitzende-5736155",
-          "date": "2026-05-28T09:38:00+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "CDU verschickt brisante Broschüre an AfD-Abgeordnete – „kleines Goodie“ lässt Partei-Streit eskalieren",
-          "source": "Frankfurter Rundschau",
-          "url": "https://www.fr.de/politik/cdu-verschickt-brisante-broschuere-an-afd-abgeordnete-und-legt-austrittserklaerung-bei-94325901.html",
-          "date": "2026-05-28T09:33:38+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "\"Brandmauer nicht in Verfassung\": Kubicki offen für Mehrheiten mit AfD",
-          "source": "Ntv",
-          "url": "https://www.n-tv.de/politik/Kubicki-offen-fuer-Mehrheiten-mit-AfD-id30866411.html",
-          "date": "2026-05-28T09:33:08+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "82 Prozent in AfD-Hochburg: Wie ein SPD-Bürgermeister sein Amt verteidigt",
-          "source": "vorwärts.de",
-          "url": "https://vorwaerts.de/inland/82-prozent-trotz-afd-hochburg-wie-ein-spd-buergermeister-sein-amt-verteidigt",
-          "date": "2026-05-28T08:52:26+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Kritik an Friedrich Merz: Das Ende der Konsenskultur",
-          "source": "FAZ",
-          "url": "https://www.faz.net/aktuell/politik/inland/kritik-an-friedrich-merz-das-ende-der-konsenskultur-200871379.html",
-          "date": "2026-05-28T08:35:18+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Brüssel leitet Verbotsverfahren gegen AfD-Europapartei ESN ein",
-          "source": "Berliner Zeitung",
-          "url": "https://www.berliner-zeitung.de/article/bruessel-leitet-verbotsverfahren-gegen-afd-europapartei-esn-ein-10038877",
-          "date": "2026-05-28T08:32:29+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "„41 Prozent für die AfD hat die Bundesregierung zu verantworten“, kritisiert Seehofer",
-          "source": "WELT",
-          "url": "https://www.welt.de/politik/deutschland/article6a17e3ec61be973b7ac9f7ce/horst-seehofer-41-prozent-fuer-die-afd-hat-die-bundesregierung-zu-verantworten-kritisiert-csu-ehrenvorsitzender.html",
-          "date": "2026-05-28T08:06:12+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Pénteken lesz von der Leyen és Magyar Péter találkozója",
-          "source": "Privátbankár.hu",
-          "url": "https://privatbankar.hu/cikkek/kozerdeku/penteken-lesz-von-der-leyen-es-magyar-peter-talalkozoja.html",
-          "date": "2026-05-28T07:52:00+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "82 Prozent trotz AfD-Hochburg: Wie ein SPD-Bürgermeister sein Amt verteidigt",
-          "source": "vorwärts.de",
-          "url": "https://www.vorwaerts.de/inland/82-prozent-trotz-afd-hochburg-wie-ein-spd-buergermeister-sein-amt-verteidigt",
-          "date": "2026-05-28T07:50:34+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Müntefering fordert AfD-Verbotsverfahren",
-          "source": "Presse Augsburg",
-          "url": "https://presse-augsburg.de/muentefering-fordert-afd-verbotsverfahren/1166825/",
-          "date": "2026-05-28T07:47:03+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Ausschuss-Chef: Isolierung von Landesverfassungsschutz bei AfD-Regierung denkbar",
-          "source": "STERN.de",
-          "url": "https://www.stern.de/news/ausschuss-chef--isolierung-von-landesverfassungsschutz-bei-afd-regierung-denkbar-37453906.html",
-          "date": "2026-05-28T07:46:30+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Steigbügelhalter für die AfD – SPD hat Hemmungen verloren",
-          "source": "Neue Gladbecker Zeitung",
-          "url": "https://neue-gladbecker-zeitung.de/steigbuegelhalter-fuer-die-afd-spd-hat-hemmungen-verloren/",
-          "date": "2026-05-28T07:40:24+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "CDU schickt AfD-Politkern „vorformulierte Austrittserklärung“",
-          "source": "FOCUS online",
-          "url": "https://www.focus.de/politik/deutschland/cdu-schickt-afd-politkern-vorformulierte-austrittserklaerung_81acdbd4-ff36-4fbb-89e8-827d0d521c0f.html",
-          "date": "2026-05-28T07:18:00+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "\"Nie wiem, co czyta prezydent\". Poseł komentuje zapowiadany ruch Karola Nawrockiego",
-          "source": "Wiadomości Onet",
-          "url": "https://wiadomosci.onet.pl/tylko-w-onecie/nie-wiem-co-czyta-prezydent-posel-komentuje-zapowiadany-ruch-karola-nawrockiego/gf6gtdy",
-          "date": "2026-05-28T07:15:01+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Kubicki stellt Ende der FDP-Brandmauer zur AfD in Aussicht",
-          "source": "Hasepost",
-          "url": "https://hasepost.de/kubicki-stellt-ende-der-fdp-brandmauer-zur-afd-in-aussicht-716865/",
-          "date": "2026-05-28T06:59:03+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Saarbrücken – Gericht kippt Abstimmung: AfD erzwingt Neuwahl",
-          "source": "Heute",
-          "url": "https://www.heute.at/s/gericht-kippt-wahl-afd-erzwingt-neuwahl-120201265",
-          "date": "2026-05-28T06:57:00+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Als einzige Partei: Warum die AfD beim Bramscher Stadtfest Wahlwerbung machen durfte",
-          "source": "noz.de",
-          "url": "https://www.noz.de/lokales/bramsche/artikel/afd-stand-beim-bramscher-stadtfest-rathaus-patzte-50696790",
-          "date": "2026-05-28T06:46:00+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Stadtrat muss neu gewählt werden: Politisches Beben in Saarbrücken – so kam es zu der Neuwahl-Entscheidung",
-          "source": "Saarbrücker Zeitung",
-          "url": "https://www.saarbruecker-zeitung.de/saarland/saarbruecken/saarbruecken-nach-afd-eklakt-erzwingt-ovg-stadtratswahl-wiederholung_aid-148947757",
-          "date": "2026-05-28T06:44:00+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Bundestag: CDU verschickt vorformulierte Austrittserklärungen an alle AfD-Abgeordneten",
-          "source": "WELT",
-          "url": "https://www.welt.de/politik/deutschland/article6a17d3ca61be973b7ac9f6f2/bundestag-cdu-verschickt-vorformulierte-austrittserklaerungen-an-alle-afd-abgeordneten.html",
-          "date": "2026-05-28T06:10:50+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Superintendent Montanus nach AfD-Videos: „In ihren Augen sind sie der Dreck“",
-          "source": "WAZ | Westdeutsche Allgemeine Zeitung",
-          "url": "https://www.waz.de/lokales/gelsenkirchen/article412102879/superintendent-montanus-nach-afd-videos-in-ihren-augen-sind-sie-der-dreck.html",
-          "date": "2026-05-28T06:10:13+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "CDU-Sicherheitsexperte: Verfassungsschutz könnte AfD-geführtes Land ausschließen",
-          "source": "Hasepost",
-          "url": "https://hasepost.de/cdu-sicherheitsexperte-verfassungsschutz-koennte-afd-gefuehrtes-land-ausschliessen-716824/",
-          "date": "2026-05-28T05:19:07+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Kulturschaffende in MV sorgen sich vor AfD-Plänen",
-          "source": "Presse Augsburg",
-          "url": "https://presse-augsburg.de/kulturschaffende-in-mv-sorgen-sich-vor-afd-plaenen/1166784/",
-          "date": "2026-05-28T04:46:00+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "„Mein Austritt aus der AfD“ – CDU verschickt vorformulierte Austrittsschreiben an alle AfD-Abgeordneten",
-          "source": "WELT",
-          "url": "https://www.welt.de/videos/video6a17bf4c61be973b7ac9f5c9/sprecherin-bestaetigt-medienbericht-mein-austritt-aus-der-afd-cdu-verschickt-vorformulierte-austrittsschreiben-an-alle-afd-abgeordneten.html",
-          "date": "2026-05-28T04:29:26+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "AfD als Gefahr für die CDU: Inge Gräßle aus Gmünd fordert eine klare Abgrenzung",
-          "source": "Gmünder Tagespost",
-          "url": "https://www.gmuender-tagespost.de/ostalb/schwaebisch-gmuend/stadt-schwaebisch-gmuend/cdu-schwaebisch-gmuend-gegen-afd-zusammenarbeit-laut-inge-graessle-94323587.html",
-          "date": "2026-05-28T04:00:00+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "AfD in Mecklenburg-Vorpommern: Seifert soll Generalsekretär werden",
-          "source": "Nordkurier",
-          "url": "https://www.svz.de/regional/mecklenburg-vorpommern/ein-frueherer-neonazi-als-generalsekretaer-der-afd-in-mv-wer-ist-dario-seifert-4601198",
-          "date": "2026-05-28T03:57:00+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Cas Mudde über den Aufstieg der AfD „Die Brandmauer-Strategie ist zum Scheitern verurteilt, wenn ...“",
-          "source": "Tagesspiegel",
-          "url": "https://www.tagesspiegel.de/politik/cas-mudde-uber-den-aufstieg-der-afd-die-brandmauer-strategie-ist-zum-scheitern-verurteilt-wenn--15643798.html",
-          "date": "2026-05-28T03:00:00+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Erfolg der AfD: Die unheimliche Spirale aus Verachtung und Gegenverachtung",
-          "source": "MOZ.de",
-          "url": "https://www.moz.de/nachrichten/politik/erfolg-der-afd-die-unheimliche-spirale-aus-verachtung-und-gegenverachtung-79055528.html",
-          "date": "2026-05-28T03:00:00+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Experte warnt Merz vor AfD-Stärkung durch Themenübernahme",
-          "source": "Oldenburger Onlinezeitung",
-          "url": "https://www.oldenburger-onlinezeitung.de/nachrichten/experte-warnt-merz-vor-afd-staerkung-durch-themenuebernahme-207063.html",
-          "date": "2026-05-28T03:00:00+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Keine Gegenstimmen für AfD-Vorschlag: Ein vermeidbarer Tabubruch im Dormagener Stadtrat",
-          "source": "RP Online",
-          "url": "https://rp-online.de/nrw/staedte/dormagen/afd-antrag-dormagen-einstimmig-beschlossen-ein-vermeidbarer-tabubruch_aid-148943473",
-          "date": "2026-05-28T02:50:00+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "CDU und SPD gegen AfD-Vertreter als Ausschuss-Vorsitzende im Landtag",
-          "source": "SWR",
-          "url": "https://www.swr.de/swraktuell/rheinland-pfalz/spd-cdu-waehlen-keine-afd-vertreter-ausschuss-vorsitzende-100.html",
-          "date": "2026-05-27T22:00:00+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Merz: Lehre aus NS-Zeit verbietet Zusammenarbeit der CDU mit der AfD",
-          "source": "TradingView",
-          "url": "https://de.tradingview.com/news/reuters.com,2026:newsml_L8N4242CY:0/",
-          "date": "2026-05-27T20:58:58+00:00",
-          "category": "germany"
-        }
-      ],
-      "first_seen": "2026-05-28T04:50:36+00:00",
-      "last_seen": "2026-05-29T04:53:04+00:00"
-    },
-    {
-      "id": "voxs-aggressive-push-for-policy-influence-in-spain",
-      "title": "Vox’s aggressive push for policy influence in Spain",
-      "blurb": "Vox is leveraging its kingmaker role in regional governments to advance hardline policies on immigration, national identity, and public services. Coverage highlights its demands for ‘national priority’ laws, clashes with the PP, and efforts to reshape Spain’s political landscape ahead of national elections.",
-      "affect": "This story generates intense affective investment due to its polarizing framing around nationalism, immigration, and the erosion of progressive policies, with frequent moral panic over Vox’s extremism.",
-      "intensity": 4,
-      "affect_signals": [
-        "polarized contention over immigration",
-        "alarmist framing on nationalist policies",
-        "cross-source repetition of Vox’s regional influence",
-        "moral panic over far-right extremism",
-        "leadership crisis tone in coalition talks"
-      ],
-      "categories": [
-        "Vox"
-      ],
-      "article_count": 70,
-      "refs": [
-        {
-          "title": "El acuerdo de Gobierno entre PP y Vox, «muy próximo» y pendiente del reparto de consejerías",
-          "source": "Diario Palentino",
-          "url": "https://www.diariopalentino.es/noticia/z51b7bd32-4362-4464-abf42fefaf84375c/202605/el-acuerdo-pp-vox-a-la-espera-del-reparto-de-consejerias",
-          "date": "2026-05-29T03:00:00+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "El 86% de los votantes de Vox le piden al partido entrar en el Gobierno de Moreno tras las elecciones andaluzas",
-          "source": "20Minutos",
-          "url": "https://www.20minutos.es/andalucia/86-los-votantes-vox-le-piden-partido-entrar-gobierno-moreno-tras-las-elecciones-andaluzas_6975992_0.html",
-          "date": "2026-05-29T03:00:00+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "El PP rechaza la 'prioridad nacional' en Sevilla y anticipa las líneas rojas de Juanma Moreno con Vox",
-          "source": "El Debate",
-          "url": "https://www.eldebate.com/espana/andalucia/sevilla/20260529/pp-rechaza-prioridad-nacional-sevilla-anticipa-lineas-rojas-juanma-moreno-vox_422678.html",
-          "date": "2026-05-29T02:30:00+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Talos, Aquiles, Sigfrido, Vox y PP",
-          "source": "Diario de Sevilla",
-          "url": "https://www.diariodesevilla.es/opinion/articulos/talos-aquiles-sigfrido-vox-pp_0_2006885927.html",
-          "date": "2026-05-29T01:07:23+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Intervención de Formosa: el libertario Francisco Paoltroni no tiene apoyo de su bloque y se cae el proyecto",
-          "source": "Letra P",
-          "url": "https://www.letrap.com.ar/congreso/intervencion-formosa-el-libertario-francisco-paoltroni-no-tiene-apoyo-su-bloque-y-se-cae-el-proyecto-n5424102",
-          "date": "2026-05-28T23:29:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Israel’s far-right defence minister openly pledges to ethnically cleanse Gaza",
-          "source": "thecanary.co",
-          "url": "https://www.thecanary.co/global/world-news/2026/05/29/israel-far-right-defence/",
-          "date": "2026-05-28T23:08:47+00:00",
-          "category": "general"
-        },
-        {
-          "title": "Isabel Gil Rosiña: “El presupuesto del PP y Vox responde a un modelo de prioridades que no se corresponde con la Extremadura real”",
-          "source": "Infoprovincia",
-          "url": "https://infoprovincia.net/2026/05/29/isabel-gil-rosina-el-presupuesto-del-pp-y-vox-responde-a-un-modelo-de-prioridades-que-no-se-corresponde-con-la-extremadura-real/",
-          "date": "2026-05-28T22:05:22+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "La prioridad nacional de Vox encalla hasta con pacto previo",
-          "source": "La Razón",
-          "url": "https://www.larazon.es/andalucia/prioridad-nacional-vox-encalla-pacto-previo_202605296a18bc19cb17881aa25efd62.html",
-          "date": "2026-05-28T22:05:13+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Ni actos LGTBI ni ayudas a entidades que ayuden a inmigrantes: las peticiones de Vox para apoyar las cuentas en Totana",
-          "source": "Cadena SER",
-          "url": "https://cadenaser.com/murcia/2026/05/28/ni-actos-lgtbi-ni-ayudas-a-entidades-que-ayuden-a-inmigrantes-las-peticiones-de-vox-para-apoyar-las-cuentas-en-totana-radio-lorca/",
-          "date": "2026-05-28T21:03:13+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "PP y Vox dejan patente su sintonía en la Comunitat frente a las críticas de la izquierda",
-          "source": "Las Provincias",
-          "url": "https://www.lasprovincias.es/politica/pp-vox-dejan-patente-sintonia-comunitat-frente-20260528224623-nt.html",
-          "date": "2026-05-28T20:46:23+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "TELENIT ENTREVISTA | AURORA RODIL PORTAVOZ VOX – 28/05/2026",
-          "source": "TeleElx",
-          "url": "https://teleelx.es/2026/05/28/telenit-entrevista-aurora-rodil-portavoz-vox-28-05-2026/",
-          "date": "2026-05-28T20:22:01+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "El limbo de las negociaciones entre PP y Vox en Castilla y León: no han repartido ni las consejerías",
-          "source": "elDiario.es",
-          "url": "https://www.eldiario.es/castilla-y-leon/politica/limbo-negociaciones-pp-vox-castilla-leon-no-han-repartido-consejerias_1_13255159.html",
-          "date": "2026-05-28T19:54:24+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Feijóo aprovecha las presuntas cloacas del PSOE para llamar a los socios a acabar con Sánchez mientras Vox le",
-          "source": "LaSexta",
-          "url": "https://www.lasexta.com/noticias/nacional/feijoo-aprovecha-presuntas-cloacas-psoe-llamar-socios-acabar-sanchez-mientras-vox-presiona-mocion-censura_202605286a189620cb17881aa25e8346.html",
-          "date": "2026-05-28T19:23:12+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Ni Vox ni corrupción: el debate que sacude al Gobierno",
-          "source": "MUNDIARIO",
-          "url": "https://www.mundiario.com/articulo/opiniones/ni-vox-ni-corrupcion-debate-que-sacude-gobierno/20260528205017388270.html",
-          "date": "2026-05-28T18:50:17+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "La Justicia frena el intento de PSOE y Vox de apartar al nuevo edil del PP en Cieza",
-          "source": "La Verdad",
-          "url": "https://www.laverdad.es/murcia/cieza/justicia-frena-intento-psoe-vox-apartar-nuevo-20260528203307-nt.html",
-          "date": "2026-05-28T18:33:08+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "El acuerdo PP-Vox, al caer y será «positivo y útil» para los castellanos y leoneses",
-          "source": "La Razón",
-          "url": "https://www.larazon.es/castilla-y-leon/acuerdo-ppvox-caer-sera-positivo-util-castellanos-leoneses_202605286a1889b77d8b1d38125cdb5e.html",
-          "date": "2026-05-28T18:30:15+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "PP y Vox no apoyan el copago farmacéutico que rebaja el precio de los medicamentos en el Congreso",
-          "source": "Elplural.com",
-          "url": "https://www.elplural.com/politica/espana/pp-vox-no-apoyan-copago-farmaceutico-rebaja-precio-medicamentos-congreso_391418102",
-          "date": "2026-05-28T18:29:38+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "PP y Vox tumban en las Cortes de Aragón dos propuestas para agilizar la elaboración de la normativa de extraescolares",
-          "source": "heraldo.es",
-          "url": "https://www.heraldo.es/noticias/aragon/2026/05/28/pp-vox-tumban-las-cortes-aragon-dos-propuestas-para-agilizar-elaboracion-normativa-extraescolares-2024396.html",
-          "date": "2026-05-28T18:17:54+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Asociaciones culturales de la Franja rechazan el acuerdo PP-Vox contra la \"imposición\" del catalán",
-          "source": "heraldo.es",
-          "url": "https://www.heraldo.es/noticias/aragon/teruel/2026/05/28/asociaciones-culturales-franja-rechazan-acuerdo-pp-vox-contra-imposicion-catalan-2024394.html",
-          "date": "2026-05-28T18:10:33+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "El PP aprueba la moción de Vox en Cartagena para que los tránsfugas no puedan disponer de medios materiales ni humanos",
-          "source": "La Opinión de Murcia",
-          "url": "https://www.laopiniondemurcia.es/cartagena/2026/05/28/pp-aprueba-mocion-vox-cartagena-130770261.html",
-          "date": "2026-05-28T18:00:46+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox tacha de \"aburridísimo\" el discurso de López Miras en la remodelación del Gobierno: \"Es un proyecto agotado y fracasado\"",
-          "source": "Murcia Plaza",
-          "url": "https://murciaplaza.com/murciaplaza/region/vox-tacha-de-aburridisimo-el-discurso-de-lopez-miras-en-la-remodelacion-del-gobierno-es-un-proyecto-agotado-y-fracasado",
-          "date": "2026-05-28T17:44:22+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox saca adelante tres mociones en San Andrés, pero no logra aprobar la prioridad nacional",
-          "source": "Leonoticias",
-          "url": "https://www.leonoticias.com/alfoz/sanandresdelrabanedo/vox-saca-adelante-tres-mociones-san-andres-20260528192846-nt.html",
-          "date": "2026-05-28T17:29:11+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Plantón de Vox a la tránsfuga Marisa Gaspar en Zaragoza: se van del pleno y acusan a la edil de \"traicionar el mandato electoral\"",
-          "source": "heraldo.es",
-          "url": "https://www.heraldo.es/noticias/aragon/zaragoza/2026/05/28/planton-vox-transfuga-marisa-gaspar-zaragoza-se-van-pleno-acusan-edil-traicionar-mandato-electoral-2024364.html",
-          "date": "2026-05-28T17:24:15+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Las clases de lengua y cultura árabe en Talayuela seguirán pero \"fuera de las aulas\"",
-          "source": "El Periódico Extremadura",
-          "url": "https://www.elperiodicoextremadura.com/extremadura/2026/05/28/clases-lengua-cultura-arabe-talayuela-130773107.html",
-          "date": "2026-05-28T16:58:38+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vaivén de apoyos y recriminaciones de Vox y PP durante el pleno municipal de mayo",
-          "source": "Activa Orihuela",
-          "url": "https://activaorihuela.es/vaiven-de-apoyos-y-recriminaciones-de-vox-y-pp-durante-el-pleno-municipal-de-mayo/",
-          "date": "2026-05-28T16:54:23+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox reclama que el Parlamento riojano condene los casos de corrupción del PSOE",
-          "source": "Demócrata",
-          "url": "https://www.democrata.es/actualidad/vox-reclama-que-el-parlamento-riojano-condene-los-casos-de-corrupcion-del-psoe/",
-          "date": "2026-05-28T16:48:47+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Macskáról is üzent Magyar Péter Brüsszelből",
-          "source": "Infostart",
-          "url": "https://infostart.hu/belfold/2026/05/28/macskarol-uzent-magyar-peter-brusszelbol",
-          "date": "2026-05-28T16:45:00+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "\"Głupota i kłamstwo\", czyli Stefaniak o zapowiedziach ludzi Nawrockiego. \"To może się bardzo zemścić\"",
-          "source": "TOK FM",
-          "url": "https://www.tokfm.pl/polityka/glupota-i-klamstwo-czyli-stefaniak-o-zapowiedziach-ludzi-nawrockiego-to-moze-sie-bardzo-zemscic",
-          "date": "2026-05-28T16:31:07+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Primer paso para la \"prioridad nacional\" en la vivienda en Aragón: PP y Vox sacan adelante su primera propuesta",
-          "source": "El Periódico de Aragón",
-          "url": "https://www.elperiodicodearagon.com/aragon/2026/05/28/primer-paso-prioridad-nacional-vivienda-130770085.html",
-          "date": "2026-05-28T16:21:56+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "El PP rechaza la moción de Vox sobre \"prioridad nacional\" en el Ayuntamiento de Sevilla",
-          "source": "Diario Público",
-          "url": "https://www.publico.es/politica/pp-rechaza-mocion-vox-sobre-prioridad-nacional-ayuntamiento-sevilla.amp.html",
-          "date": "2026-05-28T16:14:28+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "PP, PSOE, Unidas Podemos y Vox del Ayuntamiento de Albacete aprueban una moción de apoyo al sector cuchillero",
-          "source": "elDiario.es",
-          "url": "https://www.eldiario.es/castilla-la-mancha/provincias/albacete/pp-psoe-unidas-vox-ayuntamiento-albacete-aprueban-mocion-apoyo-sector-cuchillero_1_13258335.html",
-          "date": "2026-05-28T16:14:17+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "El primer presupuesto PP-Vox asciende a 8.854 millones, 200 más que el que fue retirado - EFE",
-          "source": "Agencia de noticias",
-          "url": "https://efe.com/extremadura/2026-05-28/el-primer-presupuesto-pp-vox-asciende-a-8-854-millones/",
-          "date": "2026-05-28T16:04:39+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox liga el presupuesto extremeño a la prioridad nacional y cifra en 10 millones el recorte en cooperación e inmigración",
-          "source": "El Periódico Extremadura",
-          "url": "https://www.elperiodicoextremadura.com/extremadura/2026/05/28/vox-presupuesto-pp-prioridad-nacional-politica-extremadura-130770291.html",
-          "date": "2026-05-28T16:03:14+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox anuncia un recorte de 10 millones de euros en las ayudas a cooperación internacional",
-          "source": "Hoy",
-          "url": "https://www.hoy.es/extremadura/vox-anuncia-recorte-millones-euros-ayudas-cooperacion-20260528171623-nt.html",
-          "date": "2026-05-28T16:02:21+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Los apoyos de Vox en Andalucía",
-          "source": "elDiario.es",
-          "url": "https://www.eldiario.es/piedrasdepapel/apoyos-vox-andalucia_132_13258279.html",
-          "date": "2026-05-28T15:58:36+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "PP y Vox alzan la voz por el retraso de Adif en las obras del Portillo",
-          "source": "Aragón Digital",
-          "url": "https://www.aragondigital.es/articulo/zaragoza/pp-vox-alzan-voz-retraso-adif-obras-portillo/20260528175640986463.html",
-          "date": "2026-05-28T15:56:40+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "PP y Vox rechazan en Calvià una comisión de investigación sobre la compra del Hostal Colón y del Hotel Teix",
-          "source": "Diario de Mallorca",
-          "url": "https://www.diariodemallorca.es/part-forana/2026/05/28/pp-vox-rechazan-calvia-comision-130762348.html",
-          "date": "2026-05-28T15:27:48+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox señala a la Fiscalía en el juicio de David Sánchez: «Tenemos una fiscal que no acusa»",
-          "source": "The Objective",
-          "url": "https://theobjective.com/espana/tribunales/2026-05-28/vox-fiscalia-juicio-david-sanchez/",
-          "date": "2026-05-28T15:25:22+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "PP, PSOE, Vox y Con Málaga piden de manera institucional un \"calendario concreto\" del tren litoral",
-          "source": "Málaga Hoy",
-          "url": "https://www.malagahoy.es/malaga/pp-psoe-vox-malaga-tren-litoral-calendario_0_2006882666.html",
-          "date": "2026-05-28T15:21:55+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox confía en que el juicio a David Sánchez pruebe que el presidente impulsó un traje a medida",
-          "source": "Demócrata",
-          "url": "https://www.democrata.es/tribunales/vox-confia-en-que-el-juicio-a-david-sanchez-pruebe-que-el-presidente-impulso-un-traje-a-medida/",
-          "date": "2026-05-28T15:08:54+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox, PSOE y ZEC se unen contra \"la chapuza\" de Distrito 7: \"La gestión es bochornosa e inaceptable\"",
-          "source": "El Español",
-          "url": "https://www.elespanol.com/aragon/actualidad/zaragoza/20260528/vox-psoe-zec-unen-chapuza-distrito-gestion-bochornosa-inaceptable/1003744264146_0.html",
-          "date": "2026-05-28T15:01:05+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "El PP rechaza la regularización de inmigrantes en Alicante a propuesta de Vox",
-          "source": "La Vanguardia",
-          "url": "https://www.lavanguardia.com/local/valencia/20260528/11550069/pp-rechaza-regularizacion-inmigrantes-alicante-propuesta-vox.html",
-          "date": "2026-05-28T14:52:04+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox amenaza el pacto en el Ayuntamiento de Sevilla tras negar el PP su apoyo a una moción sobre la \"prioridad nacional\"",
-          "source": "El Mundo",
-          "url": "https://www.elmundo.es/andalucia/2026/05/28/6a1854bbe85eceb2078b45b9.html",
-          "date": "2026-05-28T14:46:46+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Jaxson Dart addressed Giants teammates about President Trump introduction",
-          "source": "Yahoo Sports",
-          "url": "https://sports.yahoo.com/articles/jaxson-dart-addressed-giants-teammates-143631529.html",
-          "date": "2026-05-28T14:36:31+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "José Ángel Antelo abandona Vox y pide la creación de un partido \"liberal y patriótico\": \"Ha sido un proyecto fracasado\"",
-          "source": "El Mundo",
-          "url": "https://www.elmundo.es/murcia/2026/05/28/6a18005afc6c8377358b45a1.html",
-          "date": "2026-05-28T14:23:16+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "PP y Vox acusan a Page de generar «inseguridad jurídica» y «engañar» a los jóvenes en la rebaja fiscal",
-          "source": "ABC",
-          "url": "https://www.abc.es/espana/castilla-la-mancha/pp-vox-acusan-page-generar-inseguridad-juridica-20260528161853-nt.html",
-          "date": "2026-05-28T14:18:53+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "ALÈS Le Rassemblement national face à \"l'écologie punitive\" en matière de logement",
-          "source": "Objectif Gard",
-          "url": "https://www.objectifgard.com/politique/ales-le-rassemblement-national-face-a-lecologie-punitive-en-matiere-de-logement-164291.php",
-          "date": "2026-05-28T14:02:51+00:00",
-          "category": "france"
-        },
-        {
-          "title": "El PSOE lamenta que PP y Vox vuelven a dar la espalda a la escuela pública y votan contra proteger al profesorado y mejorar la etapa 0-3 años",
-          "source": "PSOE Aragón",
-          "url": "https://aragonpsoe.es/blog/2026/05/28/el-psoe-lamenta-que-pp-y-vox-vuelven-a-dar-la-espalda-a-la-escuela-publica-y-votan-contra-proteger-al-profesorado-y-mejorar-la-etapa-0-3-anos/",
-          "date": "2026-05-28T13:51:44+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "El Ayuntamiento de Sevilla rechaza la prioridad nacional de Vox en la antesala de las negociaciones para la investidura de Moreno",
-          "source": "EL PAÍS",
-          "url": "https://elpais.com/espana/elecciones-andalucia/2026-05-28/el-ayuntamiento-de-sevilla-rechaza-la-prioridad-nacional-de-vox-en-la-antesala-de-las-negociaciones-para-la-investidura-de-moreno.html",
-          "date": "2026-05-28T13:40:52+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox pide al Ayuntamiento de Granada buscar patrocinios a clubes para abaratar el coste por el uso de polideportivos",
-          "source": "Granada Hoy",
-          "url": "https://www.granadahoy.com/granada/vox-pide-ayuntamiento-granada-buscar-patrocinadores-clubes-abaratar-coste-polideportivos_0_2006882191.html",
-          "date": "2026-05-28T13:39:57+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "El PP andaluz rechaza la \"prioridad nacional\" de Vox y dificulta la negociación de un nuevo Gobierno",
-          "source": "Vozpopuli",
-          "url": "https://www.vozpopuli.com/espana/andalucia/el-pp-rechaza-la-prioridad-nacional-de-vox-en-sevilla-a-las-puertas-de-las-negociaciones-para-el-gobierno.html",
-          "date": "2026-05-28T13:31:22+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox a la izquierda en el Pleno de Alicante ante la presencia policial: «No se preocupen, no es la UCO»",
-          "source": "OkDiario",
-          "url": "https://okdiario.com/comunidad-valenciana/vox-izquierda-pleno-alicante-presencia-policial-no-preocupen-no-uco-17374206",
-          "date": "2026-05-28T13:21:13+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "El PP cree que hay tiempo para negociar y pide tranquilidad a Vox",
-          "source": "ABC",
-          "url": "https://www.abc.es/espana/andalucia/pp-cree-tiempo-negociar-pide-tranquilidad-vox-20260528150326-nts.html",
-          "date": "2026-05-28T13:03:27+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Los españoles señalan a la formación de Santiago Abascal como la más mentirosa de la política actual",
-          "source": "Cuatro",
-          "url": "https://www.cuatro.com/noticias/espana/20260528/espanoles-senalan-formacion-santiago-abascal-mas-mentirosa_18_019290613.html?amp=true",
-          "date": "2026-05-28T12:57:03+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "El PP tumba la prioridad nacional de Vox en el Ayuntamiento de Sevilla y le muestra a Moreno un camino a seguir",
-          "source": "elDiario.es",
-          "url": "https://www.eldiario.es/sevilla/pp-tumba-prioridad-nacional-vox-ayuntamiento-sevilla-le-muestra-moreno-camino-seguir_1_13256063.html",
-          "date": "2026-05-28T12:39:38+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "VOX: PSOE y PP quedan retratados al votar a favor de la moción contra el transfuguismo presentada por VOX",
-          "source": "Ayuntamiento de Cartagena",
-          "url": "https://www.cartagena.es/detalle_noticias_grupos_municipales.asp?id=88367&pagina=1&c=111&t=&d=&h=",
-          "date": "2026-05-28T12:20:08+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox da por sentado que Sánchez intentará agotar el mandato y pone la pelota en el tejado de Feijóo y el PP",
-          "source": "Ultima Hora",
-          "url": "https://www.ultimahora.es/noticias/nacional/2026/05/28/2638979/vox-por-sentado-sanchez-intentara-agotar-mandato-pone-pelota-tejado-feijoo-pp.html",
-          "date": "2026-05-28T12:12:00+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "El enfado de Vox por el mutismo del PP y el acuerdo en Valencia presionan a Moreno",
-          "source": "El Confidencial",
-          "url": "https://www.elconfidencial.com/espana/andalucia/2026-05-28/el-enfado-de-vox-por-el-mutismo-del-pp-y-el-acuerdo-en-valencia-elevan-la-presion-sobre-moreno_4361881/",
-          "date": "2026-05-28T12:01:00+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox quiere saber «si la corrupción de Ferraz llega hasta C-LM»: Page y una transferencia de 415.000 euros",
-          "source": "El Debate",
-          "url": "https://www.eldebate.com/espana/castilla-la-mancha/20260528/vox-quiere-saber-corrupcion-ferraz-llega-hasta-clm-page-transferencia-41500-euros_422626.html",
-          "date": "2026-05-28T11:50:05+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "El PP-A pide a Vox \"tranquilidad\" y actuar \"sin nerviosismo\" pese a las quejas de Gavira",
-          "source": "Libertad Digital",
-          "url": "https://www.libertaddigital.com/andalucia/2026-05-28/el-pp-a-pide-a-vox-tranquilidad-y-actuar-sin-nerviosismo-pese-a-las-quejas-de-gavira-7411593/",
-          "date": "2026-05-28T11:48:51+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox exige elecciones generales «inmediatas» ante ante la «corrupción sistémica» del Gobierno de Sánchez",
-          "source": "El Debate",
-          "url": "https://www.eldebate.com/espana/comunidad-valenciana/20260528/vox-exige-elecciones-generales-inmediatas-ante-ante-corrupcion-sistemica-gobierno-sanchez_422594.html",
-          "date": "2026-05-28T11:29:05+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "El PP cambia de opinión y se une a Vox para impedir que Teruel Existe tenga grupo propio en las Cortes de Aragón",
-          "source": "elDiario.es",
-          "url": "https://www.eldiario.es/aragon/politica/pp-cambia-opinion-une-vox-impedir-teruel-existe-tenga-grupo-propio-cortes-aragon_1_13256977.html",
-          "date": "2026-05-28T11:16:14+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Fernández Carriedo: “El acuerdo con Vox ya está muy próximo”",
-          "source": "SoriaNoticias",
-          "url": "https://sorianoticias.com/noticia/2026-05-28-fernandez-carriedo-el-acuerdo-con-vox-ya-esta-muy-proximo-133116",
-          "date": "2026-05-28T11:14:00+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox apremia a un PP sin prisa por iniciar la legislatura",
-          "source": "Diario Sur",
-          "url": "https://www.diariosur.es/andalucia/vox-apremia-pp-prisa-iniciar-legislatura-20260528131229-nt.html",
-          "date": "2026-05-28T11:12:30+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "El sindicato afín a Vox crea una sección sindical en RTVE para denunciar «la corrupción mediática de Sánche...",
-          "source": "OkDiario",
-          "url": "https://okdiario.com/espana/sindicato-afin-vox-crea-seccion-sindical-rtve-denunciar-corrupcion-mediatica-sanchez-17373310",
-          "date": "2026-05-28T11:07:29+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox reivindica su sello: recortes a ONG migratorias y prioridad nacional en vivienda",
-          "source": "Canal Extremadura",
-          "url": "https://www.canalextremadura.es/noticias/extremadura/vox-reivindica-su-sello-recortes-ong-migratorias-y-prioridad-nacional-en",
-          "date": "2026-05-28T11:06:13+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Santiago Abascal no ha dicho que “los jubilados no sirven para nada”",
-          "source": "Infoveritas",
-          "url": "https://info-veritas.com/desinformacion-santiago-abascal-jubilados-no-sirven-nada/",
-          "date": "2026-05-28T10:56:49+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox toma cartas en el asunto y exige que España pueda volver a jugar en el País Vasco",
-          "source": "OkDiario",
-          "url": "https://okdiario.com/deportes/vox-toma-cartas-asunto-exige-que-espana-pueda-volver-jugar-pais-vasco-17374005",
-          "date": "2026-05-28T10:42:43+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox reprocha a Moreno que hayan pasado «once días» de las elecciones y no haya habido «ningún contacto serio»",
-          "source": "El Debate",
-          "url": "https://www.eldebate.com/espana/andalucia/20260528/vox-reprocha-moreno-hayan-pasado-once-dias-elecciones-no-haya-habido-ningun-contacto-serio_422560.html",
-          "date": "2026-05-28T10:42:07+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Paso adelante para \"blindar\" Torre Outlet: PP y Vox aprueban un cambio en los suelos para legalizar el centro comercial",
-          "source": "Cadena SER",
-          "url": "https://cadenaser.com/aragon/2026/05/28/paso-adelante-para-blindar-torre-outlet-pp-y-vox-aprueban-un-cambio-en-los-suelos-para-legalizar-el-centro-comercial-radio-zaragoza/",
-          "date": "2026-05-28T10:42:03+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox desmiente un choque con el PP por la seguridad en los centros de menores: “no hay ninguna crisis”",
-          "source": "La Vanguardia",
-          "url": "https://www.lavanguardia.com/politica/20260528/11549785/vox-desmiente-choque-pp-seguridad-centros-menores-hay-ninguna-crisis.html",
-          "date": "2026-05-28T10:04:52+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "PP y Vox mantienen su alianza en Aragón \"sin crisis\" e impiden que Teruel Existe tenga grupo propio en las Cortes",
-          "source": "El Mundo",
-          "url": "https://www.elmundo.es/aragon/2026/05/28/6a18093ae85ecee8318b45a3.html",
-          "date": "2026-05-28T10:03:35+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox exige la \"inmediata retirada\" del Honoris Causa a Zapatero",
-          "source": "Diario de Burgos",
-          "url": "https://www.diariodeburgos.es/noticia/z7f6f5711-444f-42d0-9de27112d22eaf29/202605/vox-exige-la-inmediata-retirada-del-honoris-causa-a-zapatero",
-          "date": "2026-05-28T09:55:07+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Antelo se marcha de Vox dando un portazo: \"Ha dejado de ser un partido para convertirse en una sociedad limitada al servicio de cuatro\"",
-          "source": "Elplural.com",
-          "url": "https://www.elplural.com/politica/espana/antelo-marcha-vox-dando-portazo-ha-dejado-ser-partido-convertirse-sociedad-limitada-servicio-cuatro_391367102",
-          "date": "2026-05-28T09:53:15+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "PP y Vox tumban que Teruel Existe pueda tener grupo propio en las Cortes de Aragón",
-          "source": "El Periódico de Aragón",
-          "url": "https://www.elperiodicodearagon.com/aragon/2026/05/28/pp-vox-tumban-teruel-existe-130743338.html",
-          "date": "2026-05-28T09:25:21+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Intercambio de información y reuniones de PP y Vox en la Embajada de EEUU: las sospechas de IU respecto a una \"operación coordinada por un Gobierno extranjero\"",
-          "source": "El HuffPost",
-          "url": "https://www.huffingtonpost.es/politica/intercambio-informacion-reuniones-pp-vox-embajada-eeuu-sospechas-iu-respecto-operacion-coordinada-gobierno-extranjero-f202605.html",
-          "date": "2026-05-28T09:20:51+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Antelo rompe definitivamente con Vox: \"Ha dejado de ser una alternativa para convertirse en un proyecto de cuatro personas\"",
-          "source": "Murcia Plaza",
-          "url": "https://murciaplaza.com/murciaplaza/region/antelo-rompe-definitivamente-con-vox-ha-dejado-de-ser-una-alternativa-para-convertirse-en-un-proyecto-de-cuatro-personas",
-          "date": "2026-05-28T08:59:18+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Antelo rompe con Vox y anuncia que deja el partido: \"Se ha convertido en una empresa\"",
-          "source": "Cadena SER",
-          "url": "https://cadenaser.com/murcia/2026/05/28/antelo-rompe-con-vox-y-anuncia-que-deja-el-partido-se-ha-convertido-en-una-empresa-radio-murcia/",
-          "date": "2026-05-28T08:55:24+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "José Ángel Antelo abandona definitivamente Vox",
-          "source": "La Verdad",
-          "url": "https://www.laverdad.es/murcia/jose-angel-antelo-abandona-definitivamente-vox-20260528105338-nt.html",
-          "date": "2026-05-28T08:53:38+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox reclama una revisión de las valoraciones catastrales en los diseminados portuenses",
-          "source": "Diario de Cádiz",
-          "url": "https://www.diariodecadiz.es/elpuerto/vox-reclama-revision-valoraciones-catastrales_0_2006879189.html",
-          "date": "2026-05-28T08:35:14+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "José Ángel Antelo abandona Vox",
-          "source": "Onda Regional de Murcia | ORM",
-          "url": "https://www.orm.es/informativos/jose-angel-antelo-abandona-vox/",
-          "date": "2026-05-28T07:56:51+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "¿Cuánto cobra el presidente del Consejo de Transparencia de Castilla-La Mancha para que Vox pida su supresión?",
-          "source": "sueldospublicos.com",
-          "url": "https://www.sueldospublicos.com/texto-diario/mostrar/5897881/cuanto-cobra-presidente-consejo-transparencia-castilla-mancha-vox-pida-supresion",
-          "date": "2026-05-28T07:55:18+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Garriga (Vox) pide al PP romper pactos con PSOE: \"Apoyaríamos cualquier moción de censura\" contra Sánchez",
-          "source": "Europa Press",
-          "url": "https://www.europapress.es/catalunya/noticia-garriga-vox-pide-pp-romper-pactos-psoe-apoyariamos-cualquier-mocion-censura-contra-sanchez-20260528093513.html",
-          "date": "2026-05-28T07:35:13+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Juicio David Sánchez: declaraciones de Marta Castro, abogada de Vox",
-          "source": "El Periódico Extremadura",
-          "url": "https://www.elperiodicoextremadura.com/extremadura/2026/05/28/juicio-david-sanchez-declaraciones-marta-130742387.html",
-          "date": "2026-05-28T07:35:00+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Estalla la primera crisis del Gobierno PP-Vox en Aragón: Nolasco reta a Bermúdez de Castro en un comunicado",
-          "source": "El Periódico",
-          "url": "https://www.elperiodico.com/es/politica/20260528/polemicas-vox-persiguen-pp-semanas-130741728",
-          "date": "2026-05-28T07:14:39+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "La 'prioridad nacional' de Vox llega a León: rechaza Villaquilambre y debate San Andrés",
-          "source": "Leonoticias",
-          "url": "https://www.leonoticias.com/alfoz/prioridad-nacional-vox-llega-leon-rechaza-villaquilambre-20260528080412-nt.html",
-          "date": "2026-05-28T06:04:12+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox pone a prueba al PP en Sevilla con una moción para limitar la asistencia sanitaria a inmigrantes a los casos de urgencia",
-          "source": "ABC",
-          "url": "https://www.abc.es/espana/andalucia/vox-pone-prueba-pp-sevilla-mocion-limitar-20260528074646-nts.html",
-          "date": "2026-05-28T05:46:46+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Los sobrinos pagarán menos por heredar y donar solares para construir vivienda no tributará en Extremadura",
-          "source": "El Periódico Extremadura",
-          "url": "https://www.elperiodicoextremadura.com/extremadura/2026/05/28/sobrinos-pagaran-heredar-donar-solares-130739008.html",
-          "date": "2026-05-28T05:00:36+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox lleva la \"prioridad nacional\" al Pleno de Sevilla a las puertas de las negociaciones con el PP para el gobierno de la Junta",
-          "source": "El Español",
-          "url": "https://www.elespanol.com/sevilla/20260528/vox-lleva-prioridad-nacional-pleno-sevilla-puertas-negociaciones-pp-gobierno-junta/1003744262446_0.html",
-          "date": "2026-05-28T04:50:00+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "El Senado tramitará la ley de Vox para prohibir el burka y el nicab con el apoyo de PP",
-          "source": "ABC",
-          "url": "https://www.abc.es/espana/senado-tramitara-ley-vox-prohibir-burka-nicab-20260528055717-nt.html",
-          "date": "2026-05-28T03:57:21+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "El caso de la dircom que Vox Valencia quería «quitar» acaba en condena al Ayuntamiento",
-          "source": "The Objective",
-          "url": "https://theobjective.com/espana/comunidad-valenciana/2026-05-28/caso-dircom-vox-valencia-condena-ayuntamiento/",
-          "date": "2026-05-28T03:25:00+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "El Grupo Vox pedirá en Pleno el rechazo del acuerdo de Mercosur y la defensa del campo",
-          "source": "La Tribuna de Talavera",
-          "url": "https://www.latribunadetalavera.es/noticia/z304dd1aa-207a-4f69-a512bcf3779b8757/202605/vox-pedira-en-pleno-el-rechazo-del-acuerdo-de-mercosur",
-          "date": "2026-05-28T03:00:00+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "PP y Vox acercan un pacto en Castilla y León con 'sillones' para Abascal y \"prioridad nacional\"",
-          "source": "Vozpopuli",
-          "url": "https://www.vozpopuli.com/espana/politica/pp-y-vox-acercan-un-pacto-en-castilla-y-leon-con-sillones-para-abascal-y-prioridad-nacional.html",
-          "date": "2026-05-28T02:45:00+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Toledo declara la guerra por el AVE: Vox pide hacer ‘non gratos’ a Óscar Puente y Nacho Hernando",
-          "source": "El Debate",
-          "url": "https://www.eldebate.com/espana/castilla-la-mancha/20260528/toledo-declara-guerra-ave-vox-pide-hacer-non-gratos-oscar-puente-nacho-hernando_422217.html",
-          "date": "2026-05-28T02:25:00+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox denuncia el «sacrificio clandestino» de corderos en Manacor: «Hay una permisividad institucional»",
-          "source": "El Debate",
-          "url": "https://www.eldebate.com/espana/baleares/20260528/vox-denuncia-sacrificio-clandestino-corderos-manacor-hay-permisividad-institucional_422114.html",
-          "date": "2026-05-28T02:25:00+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox exige la deportación inmediata del sudamericano detenido por masturbarse ante el colegio Madre Alberta",
-          "source": "OkDiario",
-          "url": "https://okdiario.com/baleares/vox-exige-deportacion-inmediata-del-sudamericano-detenido-masturbarse-colegio-madre-alberta-17368525",
-          "date": "2026-05-28T02:00:38+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "La «serenidad» de Moreno irrita a Vox: «No daremos un sí porque toca»",
-          "source": "La Razón",
-          "url": "https://www.larazon.es/espana/serenidad-moreno-irrita-vox-daremos-porque-toca_202605286a179abf7d8b1d38125a8bb2.html",
-          "date": "2026-05-28T01:30:39+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Lo que sí une a PP y Vox en Andalucía: energía, industria, bajada de impuestos o mejorar la sanidad",
-          "source": "La Razón",
-          "url": "https://www.larazon.es/andalucia/que-une-vox-andalucia-energia-industria-bajada-impuestos-mejorar-sanidad_202605286a179a9691bae05c35dfcb97.html",
-          "date": "2026-05-28T01:29:58+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "El Senado insta al Gobierno a derogar el calendario nuclear y paralizar el cierre de Almaraz con votos de PP, Vox y UPN",
-          "source": "El Periódico de la Energía",
-          "url": "https://elperiodicodelaenergia.com/el-senado-insta-al-gobierno-a-derogar-el-calendario-nuclear-y-paralizar-el-cierre-de-almaraz-con-votos-de-pp-vox-y-upn/",
-          "date": "2026-05-27T22:31:23+00:00",
-          "category": "spain"
-        }
-      ],
-      "first_seen": "2026-05-28T04:50:36+00:00",
-      "last_seen": "2026-05-29T04:53:04+00:00"
-    },
-    {
-      "id": "threats-against-erika-kirk-and-turning-point-usa",
-      "title": "Threats against Erika Kirk and Turning Point USA",
-      "blurb": "A Texas man was arrested for allegedly threatening to bomb and kill Erika Kirk, CEO of Turning Point USA, ahead of a conservative summit. Coverage emphasizes the escalating violence against right-wing figures, the role of online radicalization, and the broader climate of political intimidation.",
-      "affect": "This story commands high affective investment due to its alarmist framing around political violence, moral panic over extremism, and the perceived targeting of conservative leaders.",
-      "intensity": 3,
-      "affect_signals": [
-        "alarmist framing on political violence",
-        "polarized contention over extremism",
-        "cross-source repetition of bomb threats",
-        "moral panic over online radicalization",
+        "alarmist framing",
+        "moral panic register",
+        "cross-source repetition",
         "outrage-coded language"
       ],
       "categories": [
-        "Transnational Networks"
+        "🇩🇪 Alternative für Deutschland"
       ],
       "article_count": 30,
       "refs": [
         {
-          "title": "Man charged after allegedly threatening to bomb Erika Kirk",
-          "source": "The Nightly",
-          "url": "https://thenightly.com.au/world/usa/erika-kirk-jacob-wenske-charged-over-alleged-death-terror-threat-to-charlie-kirk-widow-turning-point-usa-c-22354230",
-          "date": "2026-05-29T01:54:14+00:00",
-          "category": "networks"
+          "title": "Bericht: Drei hochrangige AfD-Politiker reisen zu Putins wichtigstem Wirtschaftsforum",
+          "source": "WELT",
+          "url": "https://www.welt.de/politik/deutschland/article6a19ac2593307d2934591957/bericht-drei-hochrangige-afd-politiker-reisen-zu-putins-wichtigstem-wirtschaftsforum.html",
+          "date": "2026-05-29T15:29:43+00:00",
+          "category": "germany"
         },
         {
-          "title": "Sicko arrested for allegedly threatening to kill Erika Kirk at a Turning Point USA event: ‘Know exactly where to bomb’",
-          "source": "AOL.com",
-          "url": "https://www.aol.com/articles/sicko-arrested-allegedly-threatening-kill-201355560.html",
-          "date": "2026-05-29T00:43:03+00:00",
-          "category": "networks"
+          "title": "AfD-Spitzenpolitiker planen umstrittene Russland-Reise zu Wirtschaftskongress",
+          "source": "Hasepost",
+          "url": "https://hasepost.de/afd-spitzenpolitiker-planen-umstrittene-russland-reise-zu-wirtschaftskongress-717510/",
+          "date": "2026-05-29T15:29:07+00:00",
+          "category": "germany"
         },
         {
-          "title": "Man Arrested After Sick Alleged Bomb Threats Targeting Erika Kirk",
-          "source": "okmagazine.com",
-          "url": "https://okmagazine.com/p/erika-kirk-man-arrested-accused-targeting-bomb-threats-charlie-assassination-mugshot/",
-          "date": "2026-05-29T00:08:36+00:00",
-          "category": "networks"
-        },
-        {
-          "title": "Man Arrested For 'Threatening to Kill' Erika Kirk During TPUSA Event",
-          "source": "RadarOnline",
-          "url": "https://radaronline.com/p/erika-kirk-assassination-plot-jacob-wenske-arrested-terroristic-threats/",
-          "date": "2026-05-28T23:30:18+00:00",
-          "category": "networks"
-        },
-        {
-          "title": "'Death to Erika Kirk' | San Antonio man faces charges for threatening CEO of Turning Point USA",
-          "source": "kens5.com",
-          "url": "https://www.kens5.com/video/news/crime/death-to-erika-kirk-san-antonio-man-faces-charges-for-threatening-ceo-of-turning-point-usa/273-065260fa-d3e5-4e60-83e8-08b8aa3a5e39",
-          "date": "2026-05-28T23:20:00+00:00",
-          "category": "networks"
-        },
-        {
-          "title": "Erika Kirk, TPUSA Women's Summit Targeted With Bomb Threat by Texas Man",
-          "source": "townhall.com",
-          "url": "https://townhall.com/tipsheet/julia-cassidy/2026/05/28/erika-kirk-tpusa-womens-leadership-event-receive-online-bomb-threats-from-texas-man-n2676850",
-          "date": "2026-05-28T21:45:00+00:00",
-          "category": "networks"
-        },
-        {
-          "title": "Erika Kirk Targeted in Bomb Threat Against Turning Point USA Event",
-          "source": "The Daily Wire",
-          "url": "https://www.dailywire.com/news/erika-kirk-targeted-in-bomb-threat-against-turning-point-usa-event",
-          "date": "2026-05-28T20:52:50+00:00",
-          "category": "networks"
-        },
-        {
-          "title": "Texas man charged over alleged threats to bomb Turning Point USA event, kill Erika Kirk",
-          "source": "WION",
-          "url": "https://www.wionews.com/world/texas-man-charged-over-alleged-threats-to-bomb-turning-point-usa-event-kill-erika-kirk-1779998940884",
-          "date": "2026-05-28T20:25:00+00:00",
-          "category": "networks"
-        },
-        {
-          "title": "Who Is Jacob Wenske? Man Arrested for Threats to Kill Erika Kirk Ahead of Turning Point USA San Antonio Event",
-          "source": "Times Now",
-          "url": "https://www.timesnownews.com/world/us/us-news/who-is-jacob-wenske-man-arrested-for-threats-to-kill-erika-kirk-ahead-of-turning-point-usa-san-antonio-event-article-154421789",
-          "date": "2026-05-28T19:49:26+00:00",
-          "category": "networks"
-        },
-        {
-          "title": "Texas man accused of making bomb, death threats toward Erika Kirk and Turning Point USA",
-          "source": "Just The News",
-          "url": "https://justthenews.com/government/security/texas-man-accused-making-bomb-death-threats-toward-erika-kirk-and-turning-point",
-          "date": "2026-05-28T19:22:50+00:00",
-          "category": "networks"
-        },
-        {
-          "title": "'Death to Erika Kirk' | Man faces charges for threatening CEO of Turning Point USA, bomb threats in San Antonio",
-          "source": "kens5.com",
-          "url": "https://www.kens5.com/article/news/crime/death-threats-erika-kirk-bomb-san-antonio-arrest-turning-point-usa/273-6553796a-b8d2-435c-9ac7-95b4f9cd5f06",
-          "date": "2026-05-28T18:32:00+00:00",
-          "category": "networks"
-        },
-        {
-          "title": "Scary Erika Kirk obsessive, 26, is arrested after 'threatening to kill her' - the-sun.com",
+          "title": "Einflussreiche AfD-Abgeordnete suchen Nähe zu Putin - T-Online",
           "source": "",
-          "url": "https://www.the-sun.com/news/16424354/erika-kirk-arrested-threatening-turn-point-usa-ceo/",
-          "date": "2026-05-28T18:28:31+00:00",
+          "url": "https://www.t-online.de/nachrichten/deutschland/innenpolitik/id_101275294/kotre-urban-frohnmaier-afd-prominenz-reist-zu-putins-wirtschaftsforum-.html",
+          "date": "2026-05-29T13:58:06+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Europapartei der AfD wird untersucht",
+          "source": "WEB.DE",
+          "url": "https://web.de/magazine/politik/videos/europapartei-afd-untersucht-42324524",
+          "date": "2026-05-29T08:40:13+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Der Tag: Überwachungsbehörde prüft Europapartei der AfD",
+          "source": "Ntv",
+          "url": "https://www.n-tv.de/der_tag/Ueberwachungsbehoerde-prueft-Europapartei-der-AfD-id30869901.html",
+          "date": "2026-05-29T07:12:00+00:00",
+          "category": "germany"
+        }
+      ],
+      "first_seen": "2026-05-29T16:13:53+00:00",
+      "last_seen": "2026-05-29T16:13:53+00:00"
+    },
+    {
+      "id": "javier-mileis-governance-and-internal-rifts",
+      "title": "Javier Milei’s governance and internal rifts",
+      "blurb": "Argentine President Javier Milei faces backlash over economic policies, internal party disputes, and controversial judicial nominations. His government’s deregulation plans and clashes with opposition and media have intensified public and political scrutiny.",
+      "affect": "This story is highly charged due to Milei’s radical reforms, internal power struggles, and the moral framing of his policies as either revolutionary or destructive.",
+      "intensity": 5,
+      "affect_signals": [
+        "polarized contention",
+        "alarmist framing",
+        "moral panic register",
+        "leadership crisis tone"
+      ],
+      "categories": [
+        "🇦🇷 La Libertad Avanza"
+      ],
+      "article_count": 50,
+      "refs": [
+        {
+          "title": "tarifas de luz y gas: el Gobierno oficializó los aumentos para junio",
+          "source": "Data Diario",
+          "url": "https://www.datadiario.com/economia/el-gobierno-de-javier-milei-oficializo-que-las-tarifas-de-gas-aumentaran-2-8-y-las-de-luz-subiran-1-5-en-junio-20265291270",
+          "date": "2026-05-29T15:13:58+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei aprobó aumentos en las tarifas de luz y gas que duplican la inflación",
+          "source": "El Ágora Digital",
+          "url": "https://elagora.digital/argentina/javier-milei-aumentos-luz-gas-inflacion-2026/",
+          "date": "2026-05-29T14:36:58+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Itthon: Magyar Péter: Megszüntetjük az MCC-t fenntartó alapítványt",
+          "source": "| hvg.hu",
+          "url": "https://hvg.hu/itthon/20260529_mathias-corvinus-collegium-mcc-megszuntetes-magyar-peter-augusztus-31-bejelentes",
+          "date": "2026-05-29T14:16:35+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Eduardo Elsztain marcó distancia de Javier Milei con una contundente defensa del periodismo",
+          "source": "Perfil",
+          "url": "https://www.perfil.com/noticias/politica/eduardo-elsztain-marco-distancia-de-milei-con-una-contundente-defensa-del-periodismo.phtml",
+          "date": "2026-05-29T13:45:19+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Los planes de Javier Milei para acelerar la gestión antes de que inicie la campaña para las elecciones 2027",
+          "source": "Diario Río Negro",
+          "url": "https://www.rionegro.com.ar/sociedad/los-planes-de-javier-milei-para-acelerar-la-gestion-antes-de-que-inicie-la-campana-para-las-elecciones-2027-4591581/",
+          "date": "2026-05-29T13:23:18+00:00",
+          "category": "argentina"
+        }
+      ],
+      "first_seen": "2026-05-27T04:55:17+00:00",
+      "last_seen": "2026-05-29T16:13:53+00:00"
+    },
+    {
+      "id": "voxs-aggressive-push-for-policy-influence-in-spain",
+      "title": "Vox’s aggressive push for policy influence in Spain",
+      "blurb": "Vox is leveraging its coalition agreements with the PP to push controversial policies like 'national priority' for Spaniards in public services, sparking protests and political tensions. The party’s influence is reshaping regional governments and national debates.",
+      "affect": "This hotspot is charged due to Vox’s polarizing policies, moral framing of immigration and nationalism, and its growing influence in Spanish politics.",
+      "intensity": 4,
+      "affect_signals": [
+        "polarized contention",
+        "outrage-coded language",
+        "moral panic register",
+        "cross-source repetition"
+      ],
+      "categories": [
+        "🇪🇸 Vox"
+      ],
+      "article_count": 40,
+      "refs": [
+        {
+          "title": "El PSOE ve \"un ajuste de cuentas\" entre PP y Vox en unos Presupuestos que para Unidas son \"mentiras\"",
+          "source": "elDiario.es",
+          "url": "https://www.eldiario.es/extremadura/politica/psoe-ve-ajuste-cuentas-pp-vox-presupuestos-unidas-son-mentiras_1_13261234.html",
+          "date": "2026-05-29T15:02:17+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "PP y PSOE votan en contra de la moción de Vox sobre el campo",
+          "source": "La Tribuna de Toledo",
+          "url": "https://www.latribunadetoledo.es/noticia/zce352307-ac87-4bad-861a843c6a764ca8/202605/pp-y-psoe-votan-en-contra-de-la-mocion-de-vox-sobre-el-campo",
+          "date": "2026-05-29T14:56:01+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Magyar Péter megállapodott a migrációs paktumról",
+          "source": "ORIGO",
+          "url": "https://www.origo.hu/belpol/2026/05/magyar-peter-migracios-paktum-ursula-von-der-leyen",
+          "date": "2026-05-29T14:23:42+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Magyar Péter: 16,4 milliárd euró felszabadításáról állapodtunk meg",
+          "source": "| minap.hu",
+          "url": "https://minap.hu/belfold/2026/05/29/magyar-peter-164-milliard-euro-felszabaditasarol-allapodtunk-meg",
+          "date": "2026-05-29T13:19:21+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "How Donald Trump Became Jimmy Carter",
+          "source": "Rolling Stone",
+          "url": "https://www.rollingstone.com/politics/political-commentary/donald-trump-jimmy-carter-iran-war-1235569587/",
+          "date": "2026-05-29T13:00:00+00:00",
+          "category": "usa"
+        }
+      ],
+      "first_seen": "2026-05-28T04:50:36+00:00",
+      "last_seen": "2026-05-29T16:13:53+00:00"
+    },
+    {
+      "id": "threats-against-erika-kirk-and-turning-point-usa",
+      "title": "Threats against Erika Kirk and Turning Point USA",
+      "blurb": "A Texas man was arrested for threatening to bomb a Turning Point USA event and kill its CEO, Erika Kirk. The incident highlights rising tensions and security concerns around far-right events and figures.",
+      "affect": "This story commands attention due to its violent threats, moral panic over far-right extremism, and the high-profile nature of the targets.",
+      "intensity": 3,
+      "affect_signals": [
+        "alarmist framing",
+        "outrage-coded language",
+        "moral panic register"
+      ],
+      "categories": [
+        "🕸️ Transnational Networks"
+      ],
+      "article_count": 15,
+      "refs": [
+        {
+          "title": "Who is Jacob Wenske? Man Arrested For Threats Against Erika Kirk Ahead of Turning Point USA Event",
+          "source": "ibtimes.sg",
+          "url": "https://www.ibtimes.sg/who-jacob-wenske-man-arrested-threats-against-erika-kirk-ahead-turning-point-usa-event-87148",
+          "date": "2026-05-29T14:04:48+00:00",
           "category": "networks"
         },
         {
-          "title": "Terrifying Erika Kirk obsessive, 26, is arrested after 'threatening to kill the Turning Point USA CEO by bombing event'",
-          "source": "The Sun",
-          "url": "https://www.thesun.co.uk/news/39246769/erika-kirk-arrested-threatening-turn-point-usa-ceo/",
-          "date": "2026-05-28T18:26:00+00:00",
+          "title": "Erika Kirk Bomb Threat: Texas Man Jacob Wenske Arrested Over Turning Point USA Plot",
+          "source": "International Business Times UK",
+          "url": "https://www.ibtimes.co.uk/texas-man-arrested-bomb-threat-erika-kirk-turning-point-usa-1799643",
+          "date": "2026-05-29T13:48:30+00:00",
           "category": "networks"
         },
         {
-          "title": "Texas man allegedly threatened to bomb Turning Point USA event and kill CEO Erika Kirk in online posts",
-          "source": "Fox News",
-          "url": "https://www.foxnews.com/us/texas-man-allegedly-threatened-bomb-turning-point-usa-event-kill-ceo-erika-kirk-online-posts",
-          "date": "2026-05-28T18:21:39+00:00",
+          "title": "Man arrested for threatening to kill Erika Kirk at Turning Point USA event",
+          "source": "wonderwall.com",
+          "url": "https://www.wonderwall.com/politics/erika-kirk-assassination-plot-nightmare-man-arrested-threat-kill-turning-point-event/",
+          "date": "2026-05-29T13:45:16+00:00",
           "category": "networks"
         },
         {
-          "title": "'Death to Erika Kirk': Man arrested for threatening to bomb San Antonio Turning Point USA event - San Antonio Express-News",
-          "source": "",
-          "url": "https://www.expressnews.com/news/article/erika-kirk-threat-arrest-turning-point-summit-22280768.php",
-          "date": "2026-05-28T17:59:23+00:00",
+          "title": "Man allegedly boasted he'd drive Erika Kirk to event he threatened to bomb",
+          "source": "The Mirror US",
+          "url": "https://www.themirror.com/news/us-news/texas-man-allegedly-boasted-hed-1860342",
+          "date": "2026-05-29T10:25:00+00:00",
           "category": "networks"
         },
         {
-          "title": "San Antonio man charged after alleged threats against local TPUSA Event, Erika Kirk",
-          "source": "WOAI",
-          "url": "https://news4sanantonio.com/news/local/gallery/san-antonio-man-charged-after-alleged-threats-against-local-tpusa-event-erika-kirk-valet-facebook-email-security-k9-charlie-conservative",
-          "date": "2026-05-28T15:56:31+00:00",
+          "title": "San Antonio man arrested for threatening to kill Turning Point USA speaker Erika Kirk",
+          "source": "SSBCrack",
+          "url": "https://news.ssbcrack.com/san-antonio-man-arrested-for-threatening-to-kill-turning-point-usa-speaker-erika-kirk/",
+          "date": "2026-05-29T08:39:54+00:00",
           "category": "networks"
-        },
-        {
-          "title": "Man arrested for threats to kill Erika Kirk ahead of Turning Point USA event in San Antonio",
-          "source": "KSAT",
-          "url": "https://www.ksat.com/news/ksat-investigates/2026/05/28/man-arrested-for-threats-to-kill-erika-kirk-ahead-of-turning-point-usa-event-in-san-antonio/",
-          "date": "2026-05-28T15:56:28+00:00",
-          "category": "networks"
-        },
-        {
-          "title": "27 MPs submit letter of complaint to equalities watchdog over Reform UK’s Islamophobia",
-          "source": "thecanary.co",
-          "url": "https://www.thecanary.co/uk/analysis/2026/05/28/reform-islamophobia/",
-          "date": "2026-05-28T15:01:53+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "MP embroiled in public disagreement surrounding deportation policy",
-          "source": "Newark Advertiser",
-          "url": "https://www.newarkadvertiser.co.uk/news/mp-embroiled-in-public-disagreement-surrounding-deportation-9467857/",
-          "date": "2026-05-28T12:32:00+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Goalhanger and The Observer collaborate for investigative podcast series",
-          "source": "InPublishing",
-          "url": "https://www.inpublishing.co.uk/articles/goalhanger-and-the-observer-collaborate-for-investigative-podcast-series-26588",
-          "date": "2026-05-28T09:01:11+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Far-right forum brings Korea’s free speech dilemma to fore",
-          "source": "koreaherald.com",
-          "url": "https://www.koreaherald.com/article/10757947",
-          "date": "2026-05-28T05:11:19+00:00",
-          "category": "general"
-        },
-        {
-          "title": "Steve Coogan says Reform UK threaten human rights in stark political message",
-          "source": "AOL.com",
-          "url": "https://www.aol.com/news/steve-coogan-says-reform-uk-090520967.html",
-          "date": "2026-05-28T00:14:30+00:00",
-          "category": "uk"
         }
       ],
       "first_seen": "2026-05-29T04:53:04+00:00",
-      "last_seen": "2026-05-29T04:53:04+00:00"
+      "last_seen": "2026-05-29T16:13:53+00:00"
     }
   ]
 }
