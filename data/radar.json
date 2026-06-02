@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-02T05:18:34+00:00",
+  "updated_at": "2026-06-02T17:11:04+00:00",
   "lookback_hours": 48,
   "model": "Mistral Large",
   "status": "ok",
@@ -7,43 +7,92 @@
     {
       "id": "far-right-push-for-national-priority-policies",
       "title": "Far-right push for 'national priority' policies",
-      "blurb": "Right-wing parties across Europe are intensifying demands for policies that prioritize citizens over immigrants in housing, welfare, and employment. This theme reflects a coordinated effort to institutionalize 'national preference' in domestic legislation, with parallel legislative proposals in Spain, Italy, Sweden, and Norway.",
+      "blurb": "Right-wing parties across Europe are intensifying demands for 'national priority' policies, which prioritize citizens over immigrants for state aid, housing, and social services. This theme appears prominently in Spain, Italy, Sweden, and Norway, with parties like Vox, Fratelli d'Italia, and Sverigedemokraterna framing it as a response to immigration and economic pressures. The policy has sparked debates over discrimination and integration, with critics accusing these parties of fostering exclusionary rhetoric.",
       "convergence": 5,
       "countries": [
         {
           "name": "🇪🇸 Vox",
-          "note": "Proposes 'national priority' in Valencian housing law, reducing immigrant access to public housing."
+          "note": "Demands 'national priority' in Valencian budgets, requiring strong ties and social security contributions for housing and aid."
         },
         {
           "name": "🇮🇹 Fratelli d'Italia / Lega",
-          "note": "Advocates for 'Italiani prima' policies in regional budgets, restricting welfare benefits to citizens."
+          "note": "Supports EU flexibility for energy spending but aligns with Vox on prioritizing national interests in social policies."
         },
         {
           "name": "🇸🇪 Sverigedemokraterna",
-          "note": "Halves public transport costs for citizens, excludes non-citizens from subsidies."
+          "note": "Proposes policies favoring long-term residents for state-owned housing, excluding refugees and benefit recipients."
         },
         {
           "name": "🇳🇴 Fremskrittspartiet",
-          "note": "Supports Denmark's welfare tourism restrictions, aims to retain unemployment benefits for domestic workers."
+          "note": "Advocates for prioritizing local residents in housing and social services, aligning with broader 'national priority' rhetoric."
         },
         {
           "name": "🇫🇷 Rassemblement National",
-          "note": "Proposes banning public Islamic prayers, citing 'national cohesion' concerns."
+          "note": "Proposes halting immigration and reinstating mandatory minimum sentences to curb urban violence, echoing 'national priority' themes."
         }
       ],
       "signals": [
         "policy imitation",
         "shared framing",
-        "parallel legislative proposals",
+        "parallel elections",
         "contagion of rhetoric"
       ],
-      "article_count": 25,
+      "article_count": 42,
       "refs": [
         {
-          "title": "La ley de Acompañamiento también pasa de puntillas sobre la prioridad nacional de Vox",
-          "source": "Valencia Plaza",
-          "url": "https://valenciaplaza.com/valenciaplaza/comunitat-valenciana1/la-ley-de-acompanamiento-tambien-pasa-de-puntillas-sobre-la-prioridad-nacional-de-vox",
-          "date": "2026-06-02T04:00:57+00:00",
+          "title": "Violences après la victoire du PSG : Jordan Bardella réclame l'arrêt de l'immigration et le retour des peines planchers",
+          "source": "epochtimes.fr",
+          "url": "https://www.epochtimes.fr/violences-apres-la-victoire-du-psg-jordan-bardella-reclame-larret-de-limmigration-et-le-retour-des-peines-planchers-3273686.html",
+          "date": "2026-06-02T13:47:52+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Mitt anslag på 2–5 nye plasser årlig i Øygarden baserer seg på ren matematikk",
+          "source": "vestnytt.no",
+          "url": "https://www.vestnytt.no/meninger/leserinnlegg/n/L4P749/enkeltmennesket-foran-systemet",
+          "date": "2026-06-02T13:30:36+00:00",
+          "category": "norway"
+        },
+        {
+          "title": "Fondi Ue, Meloni strappa 5 miliardi a Bruxelles: in arrivo flessibilità sul deficit per l’Energia",
+          "source": "Milano Finanza",
+          "url": "https://www.milanofinanza.it/news/fondi-ue-meloni-strappa-5-miliardi-a-bruxelles-in-arrivo-flessibilita-sul-deficit-per-l-energia-202606021422205100",
+          "date": "2026-06-02T12:22:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Vox marca el paso al Gobierno valenciano con los presupuestos y la \"prioridad nacional\": \"Si no aparece, no lo apoyaremos\"",
+          "source": "El Periódico",
+          "url": "https://www.elperiodico.com/es/politica/20260602/vox-marca-paso-gobierno-valenciano-130924930",
+          "date": "2026-06-02T10:07:49+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Vox afirma que la prioridad nacional no necesita \"ocho apellidos españoles\" y confirma que está en los",
+          "source": "La Razón",
+          "url": "https://www.larazon.es/comunidad-valenciana/vox-afirma-que-prioridad-nacional-necesita-ocho-apellidos-espanoles-confirma-que-esta-presupuestos-generalitat-2026_202606026a1e9a5391bae05c35eb3b48.html",
+          "date": "2026-06-02T08:54:43+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Vox advierte a Llorca de que no tendrá cuentas sin \"prioridad nacional\": \"Hablamos de los españoles primero, no de ocho apellidos\"",
+          "source": "El Mundo",
+          "url": "https://www.elmundo.es/comunidad-valenciana/2026/06/02/6a1e98e0e85ece87018b457c.html",
+          "date": "2026-06-02T08:52:38+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Ciriani (FdI), 'accordo su rimpatri conferma linea indicata da Meloni in Ue'",
+          "source": "ANSA",
+          "url": "https://www.ansa.it/europa/notizie/rubriche/altrenews/2026/06/02/ciriani-fdi-accordo-su-rimpatri-conferma-linea-indicata-da-meloni-in-ue_5972fdd4-3147-44ae-8601-1488498d6505.html",
+          "date": "2026-06-02T08:18:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Vox aplica su \"prioridad nacional\" por primera vez en unas ayudas a emprendedores en Valencia: exige 5 años de arraigo",
+          "source": "El Español",
+          "url": "https://www.elespanol.com/valencia/20260602/vox-aplica-prioridad-nacional-primera-vez-ayudas-emprendedores-valencia-exige-anos-arraigo/1003744268403_0.html",
+          "date": "2026-06-02T04:00:00+00:00",
           "category": "spain"
         },
         {
@@ -52,81 +101,103 @@
           "url": "https://www.elespanol.com/valencia/20260602/prioridad-nacional-vox-queda-reducida-puntos-extra-vinculacion-territorial-continuada-acceder-vpp/1003744268413_0.html",
           "date": "2026-06-02T02:14:46+00:00",
           "category": "spain"
-        },
-        {
-          "title": "INSÄNDARE: Med SD får du nu en halverad kostnad i kollektivtrafiken",
-          "source": "Hudiksvalls Tidning",
-          "url": "https://www.ht.se/opinion/insandare/med-sd-far-du-nu-en-halverad-kostnad-i-kollektivtrafiken/",
-          "date": "2026-06-02T02:00:00+00:00",
-          "category": "sweden"
-        },
-        {
-          "title": "Vox quiere que se prohíban los rezos islámicos en la calle en Málaga",
-          "source": "Diario Sur",
-          "url": "https://www.diariosur.es/malaga-capital/vox-quiere-prohiban-rezos-islamicos-calle-malaga-20260601124815-nt.html",
-          "date": "2026-06-01T18:10:24+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox planteará iniciativas en Málaga contras los rezos islámicos en espacios públicos",
-          "source": "Málaga Hoy",
-          "url": "https://www.malagahoy.es/malaga/vox-planteara-iniciativas-malaga-contras-rezos-islamicos-espacios-publicos_0_2006913252.html",
-          "date": "2026-06-01T16:44:00+00:00",
-          "category": "spain"
         }
       ],
       "first_seen": "2026-05-27T05:06:41+00:00",
-      "last_seen": "2026-06-02T05:18:34+00:00"
+      "last_seen": "2026-06-02T17:11:04+00:00"
     },
     {
       "id": "javier-mileis-declining-approval-amid-internal-strife",
       "title": "Javier Milei’s declining approval amid internal strife",
-      "blurb": "Argentina's President Javier Milei faces plummeting approval ratings and escalating internal conflicts, with key allies like Patricia Bullrich publicly opposing his judicial nominations. This theme resonates in Spain and Italy, where far-right parties monitor Milei's struggles as a cautionary tale for their own governance ambitions.",
+      "blurb": "Argentina's President Javier Milei faces declining approval ratings and growing internal divisions within his La Libertad Avanza coalition. The theme is evident in Argentina, Spain, and Italy, where Milei's economic policies and leadership style have sparked criticism and protests. Internal conflicts, such as disputes with allies like Patricia Bullrich and Karina Milei, have further weakened his political standing, with polls showing a significant drop in public support.",
       "convergence": 5,
       "countries": [
         {
           "name": "🇦🇷 La Libertad Avanza",
-          "note": "61% disapproval rating; Bullrich opposes judicial nominee withdrawal, fracturing government unity."
+          "note": "Milei's approval drops to 35-40%, with internal conflicts over judicial appointments and economic policies."
         },
         {
           "name": "🇪🇸 Vox",
-          "note": "Monitors Milei's economic policies as a test case for far-right governance in Europe."
+          "note": "Criticizes Milei's leadership and economic policies, reflecting broader right-wing skepticism."
         },
         {
           "name": "🇺🇸 MAGA / Trump",
-          "note": "Trump praises Milei's deregulation but distances from his economic instability."
+          "note": "Monitors Milei's struggles as a cautionary tale for populist leaders, with media highlighting his declining influence."
         },
         {
           "name": "🇮🇹 Fratelli d'Italia / Lega",
-          "note": "Criticizes Milei's labor reforms as 'too radical' for European contexts."
+          "note": "Observes Milei's challenges as part of a broader trend of right-wing leaders facing backlash over economic policies."
         }
       ],
       "signals": [
-        "parallel governance challenges",
-        "shared framing of economic instability",
-        "contagion of political tactics"
+        "parallel elections",
+        "shared framing",
+        "policy imitation",
+        "contagion of rhetoric"
       ],
-      "article_count": 30,
+      "article_count": 38,
       "refs": [
         {
-          "title": "La causa ANDIS llega a Karina Milei: el peritaje que ordenó Lijo y puede cambiar el rumbo de la investigación",
+          "title": "Bullrich volvió a tomar distancia del Gobierno y rechazó la baja de una candidata a jueza federal",
+          "source": "el1digital.com.ar",
+          "url": "https://www.el1digital.com.ar/politica/nacional-politica/bullrich-volvio-a-tomar-distancia-del-gobierno-y-rechazo-la-baja-de-una-candidata-a-jueza-federal/",
+          "date": "2026-06-02T13:38:43+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei y Luis Caputo defienden el plan económico ante empresarios en el Congreso del IAEF",
+          "source": "C5N",
+          "url": "https://www.c5n.com/politica/javier-milei-luis-caputo-congreso-iaef-2-junio-2026",
+          "date": "2026-06-02T13:09:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Encuesta: el desgaste de Javier Milei posiciona a Patricia Bullrich como la dirigente con mejor imagen positiv...",
+          "source": "Perfil",
+          "url": "https://www.perfil.com/noticias/politica/encuesta-el-desgaste-de-javier-milei-posiciona-a-patricia-bullrich-como-la-dirigente-con-mejor-imagen-positiva-a-nivel-nacional.phtml",
+          "date": "2026-06-02T13:07:04+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Bullrich hace la suya y enfrenta a Karina por el pliego de una jueza en el Senado",
+          "source": "La Izquierda Diario",
+          "url": "https://www.laizquierdadiario.com/Bullrich-hace-la-suya-y-enfrenta-a-Karina-por-el-pliego-de-una-jueza-en-el-Senado",
+          "date": "2026-06-02T13:02:10+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Más de 250 funcionarios dejaron sus cargos en la gestión de Javier Milei",
+          "source": "BAE Negocios",
+          "url": "https://www.baenegocios.com/politica/mas-de-250-funcionarios-dejaron-sus-cargos-en-la-gestion-de-milei/",
+          "date": "2026-06-02T13:02:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Patricia Bullrich llega a Mendoza tras un nuevo desmarque de Javier Milei",
+          "source": "MDZ Online",
+          "url": "https://www.mdzol.com/politica/patricia-bullrich-llega-mendoza-un-nuevo-desmarque-javier-milei-n1534115",
+          "date": "2026-06-02T12:16:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Bullrich ignoró el pedido de los Milei y no acompañará el retiro del pliego judicial cuestionado por Karina",
+          "source": "El Ágora Digital",
+          "url": "https://elagora.digital/argentina/patricia-bullrich-pliego-jueza-michelli-javier-karina-milei/",
+          "date": "2026-06-02T12:08:48+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Patricia Bullrich desafió la línea oficial y ratificó su apoyo a una jueza impugnada por el Ejecutivo",
+          "source": "La Gaceta",
+          "url": "https://www.lagaceta.com.ar/nota/1139361/politica/patricia-bullrich-desafio-linea-oficial-ratifico-apoyo-jueza-impugnada-ejecutivo.html",
+          "date": "2026-06-02T11:29:34+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "La peor imagen de la política: Karina Milei y Adorni, los más rechazados mientras los bolsillos siguen en rojo",
           "source": "El Argentino Diario",
-          "url": "https://elargentinodiario.com.ar/politica/02/06/2026/la-causa-andis-llega-a-karina-milei-el-peritaje-que-ordeno-lijo-y-puede-cambiar-el-rumbo-de-la-investigacion/",
-          "date": "2026-06-02T03:43:13+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Marcelo Bonelli cuestionó como nunca al Gobierno de Javier Milei: \"Atado con alambre\"",
-          "source": "El Destape",
-          "url": "https://www.eldestapeweb.com/espectaculos/marcelo-bonelli-cuestiono-gobierno-javier-milei-atado-alambre-2026620310",
-          "date": "2026-06-02T03:33:05+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Patricia Bullrich desafía a Javier Milei: se niega a retirar un pliego judicial y define el kirchnerismo",
-          "source": "Letra P",
-          "url": "https://www.letrap.com.ar/congreso/patricia-bullrich-desafia-javier-milei-se-niega-retirar-un-pliego-judicial-y-define-el-kirchnerismo-n5424178",
-          "date": "2026-06-02T03:05:20+00:00",
+          "url": "https://elargentinodiario.com.ar/politica/01/06/2026/la-peor-imagen-de-la-politica-karina-milei-y-adorni-los-mas-rechazados-mientras-los-bolsillos-siguen-en-rojo/",
+          "date": "2026-06-02T02:43:13+00:00",
           "category": "argentina"
         },
         {
@@ -135,195 +206,324 @@
           "url": "https://urgente24.com/actualidad/encuesta-hugo-haime-61-los-argentinos-desaprueba-javier-milei-n625860",
           "date": "2026-06-02T02:10:00+00:00",
           "category": "argentina"
-        },
-        {
-          "title": "Una encuesta ubicó a Bullrich como la dirigente mejor valorada y a Karina Milei como la peor",
-          "source": "Mnews",
-          "url": "https://mnews.com.ar/politica/171227-Una-encuesta-ubico-a-Bullrich-como-la-dirigente-mejor-valorada-y-a-Karina-Milei-como-la-peor",
-          "date": "2026-06-01T13:05:11+00:00",
-          "category": "argentina"
         }
       ],
       "first_seen": "2026-05-26T04:53:57+00:00",
-      "last_seen": "2026-06-02T05:18:34+00:00"
+      "last_seen": "2026-06-02T17:11:04+00:00"
     },
     {
       "id": "far-right-gains-in-european-local-elections",
       "title": "Far-right gains in European local elections",
-      "blurb": "Far-right parties are making significant inroads in local elections across Germany, Italy, and Spain, often leveraging anti-immigration and anti-establishment rhetoric. These gains signal a broader shift in European political landscapes, with mainstream parties struggling to counter the far-right surge.",
+      "blurb": "Far-right parties are making significant gains in local and regional elections across Europe, reflecting a broader shift in voter sentiment. This theme is evident in Germany, Italy, Spain, and Sweden, where parties like Alternative für Deutschland (AfD), Fratelli d'Italia, Vox, and Sverigedemokraterna are securing victories or increasing their influence in municipal and state governments. These gains are often framed as a rejection of mainstream parties and a response to immigration and economic concerns.",
       "convergence": 4,
       "countries": [
         {
           "name": "🇩🇪 Alternative für Deutschland",
-          "note": "Leads polls in Saxony-Anhalt, Thuringia, and Brandenburg state elections."
+          "note": "Leads polls in Saxony-Anhalt and Mecklenburg-Vorpommern, with potential to form state governments."
         },
         {
           "name": "🇮🇹 Fratelli d'Italia / Lega",
-          "note": "Gains third council seat in Messina, overtaking Lega in local elections."
+          "note": "Consolidates power in regional governments, particularly in northern Italy, through coalition agreements."
         },
         {
           "name": "🇪🇸 Vox",
-          "note": "Nears three-fifths majority with PP in Castilla y León, threatens PSOE irrelevance."
+          "note": "Secures coalition deals with PP in Castilla y León and Extremadura, gaining influence in regional governance."
         },
         {
           "name": "🇸🇪 Sverigedemokraterna",
-          "note": "Proposes easing coastal protection laws to simplify construction for citizens."
+          "note": "Influences national policy through coalition agreements, particularly on migration and housing."
         }
       ],
       "signals": [
         "parallel elections",
-        "shared framing of anti-establishment success",
-        "policy contagion"
+        "policy imitation",
+        "contagion of rhetoric",
+        "shared framing"
       ],
-      "article_count": 20,
+      "article_count": 28,
       "refs": [
         {
-          "title": "PP y Vox, a un paso de cerrar el acuerdo de gobierno en Castilla y León, a falta de concretar el reparto de consejerías",
-          "source": "El Debate",
-          "url": "https://www.eldebate.com/espana/castilla-y-leon/20260602/pp-vox-paso-cerrar-acuerdo-gobierno-castilla-leon-falta-concretar-reparto-consejerias_423802.html",
-          "date": "2026-06-02T02:30:00+00:00",
-          "category": "spain"
+          "title": "Radiosender Cosmo soll abgeschafft werden: Wenn die ARD die Politik der AfD macht",
+          "source": "Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/kultur/radiosender-cosmo-soll-abgeschafft-werden-wenn-die-ard-die-politik-der-afd-macht-15666368.html",
+          "date": "2026-06-02T13:39:54+00:00",
+          "category": "germany"
         },
         {
-          "title": "Los sondeos acercan al PP y a Vox a una mayoría de tres quintos que relegaría al PSOE a la irrelevancia",
-          "source": "El Debate",
-          "url": "https://www.eldebate.com/espana/20260602/sondeos-acercan-pp-vox-mayoria-tres-quintos-relegaria-psoe-irrelevancia_423996_amp.html",
-          "date": "2026-06-02T02:30:00+00:00",
-          "category": "spain"
+          "title": "Rheinland-Pfalz & Saarland: Konfrontation im Landtag - CDU, SPD und Grüne contra AfD",
+          "source": "Ntv",
+          "url": "https://www.n-tv.de/regionales/rheinland-pfalz-und-saarland/Konfrontation-im-Landtag-CDU-SPD-und-Gruene-contra-AfD-id30883187.html",
+          "date": "2026-06-02T13:12:00+00:00",
+          "category": "germany"
         },
         {
-          "title": "Sondaggi SWG: Fratelli d'Italia si conferma al 28,2%, flettono Pd e Lega. Avanzano M5S e Futuro Nazionale",
-          "source": "LA7",
-          "url": "https://www.la7.it/intanto/video/sondaggi-swg-fratelli-ditalia-si-conferma-al-282-flettono-pd-e-lega-avanzano-m5s-e-futuro-nazionale-01-06-2026-647522",
-          "date": "2026-06-01T19:19:35+00:00",
+          "title": "AfD geht bei Ausschussvorsitzen leer aus",
+          "source": "Allgemeine Zeitung",
+          "url": "https://www.allgemeine-zeitung.de/politik/politik-rheinland-pfalz/afd-geht-bei-ausschussvorsitzen-leer-aus-5748994",
+          "date": "2026-06-02T13:00:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Vor ostdeutschen Unternehmern: Dann spricht Merz von einem „Big Bang“ der AfD",
+          "source": "WELT",
+          "url": "https://www.welt.de/politik/deutschland/plus6a1eac26f2919cfc74893fca/vor-ostdeutschen-unternehmern-dann-spricht-merz-von-einem-big-bang-der-afd.html",
+          "date": "2026-06-02T12:52:04+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "BSW öffnet Tür für Zusammenarbeit: Bringt Sahra Wagenknecht die AfD an die Macht?",
+          "source": "Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/politik/bsw-offnet-tur-fur-zusammenarbeit-bringt-sahra-wagenknecht-die-afd-an-die-macht-15667526.html",
+          "date": "2026-06-02T12:34:35+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Salvini assente alla festa della Repubblica, La Russa: \"Mi dispiace, ognuno è dove vuole\"",
+          "source": "today.it",
+          "url": "https://www.today.it/politica/salvini-assente-festa-della-repubblica-oggi-2-giugno-2026.html",
+          "date": "2026-06-02T12:11:00+00:00",
           "category": "italy"
         },
         {
-          "title": "Sondaggio Tg La7, un big 'flop' tra Meloni-Schlein-Conte e Vannacci decolla: voto oggi",
-          "source": "Adnkronos",
-          "url": "https://www.adnkronos.com/politica/sondaggio-tg-la7-meloni-schlein-vannacci_21FeCn4u1d5Ktm8svkF7Zm",
-          "date": "2026-06-01T18:57:00+00:00",
+          "title": "Oslo har lang tradisjon for å bomme",
+          "source": "Avisa Oslo",
+          "url": "https://www.ao.no/kongshavn-fergeterminal-fremstar-som-en-kostnadsbombe-frp-vil-ha-delt-losning-mellom-vippetangen-og-hjortnes/o/5-128-1327110",
+          "date": "2026-06-02T11:59:16+00:00",
+          "category": "norway"
+        },
+        {
+          "title": "2 giugno, La Russa: \"Salvini assente? Spiace ma da opposizione neanche capigruppo\"",
+          "source": "Il Sole 24 ORE",
+          "url": "https://stream24.ilsole24ore.com/video/italia/2-giugno-russa-salvini-assente-spiace-ma-opposizione-neanche-capigruppo/AI8f4LQD",
+          "date": "2026-06-02T11:46:08+00:00",
           "category": "italy"
         },
         {
-          "title": "Keine Chefposten in Ausschüssen: Wie die anderen Parteien die AfD im Landtag ausbremsen wollen",
-          "source": "SWR",
-          "url": "https://www.swr.de/swraktuell/rheinland-pfalz/spd-cdu-gruene-waehlen-keine-afd-vertreter-ausschuss-vorsitzende-100.html",
-          "date": "2026-06-02T02:03:56+00:00",
+          "title": "Pięć podpisów, jedno weto. Karol Nawrocki zdecydował w sprawie kolejnych ustaw",
+          "source": "Interia Wydarzenia",
+          "url": "https://wydarzenia.interia.pl/kraj/news-piec-podpisow-jedno-weto-karol-nawrocki-zdecydowal,nId,23491151",
+          "date": "2026-06-02T11:31:09+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "AfD vor Einzug in Landesregierungen?",
+          "source": "Perspektive Online",
+          "url": "https://perspektive-online.net/2026/06/afd-vor-einzug-in-landesregierungen/",
+          "date": "2026-06-02T07:30:09+00:00",
           "category": "germany"
         }
       ],
       "first_seen": "2026-05-26T04:53:57+00:00",
-      "last_seen": "2026-06-02T05:18:34+00:00"
+      "last_seen": "2026-06-02T17:11:04+00:00"
     },
     {
       "id": "internal-divisions-within-far-right-parties",
       "title": "Internal divisions within far-right parties",
-      "blurb": "Far-right parties in Poland, Hungary, and the UK are grappling with internal divisions, often between hardline factions and more moderate elements. These splits threaten party cohesion and electoral prospects, with similar dynamics observed in France and Argentina.",
+      "blurb": "Far-right parties across Europe and the Americas are grappling with internal divisions, often centered around leadership disputes, ideological differences, and strategic disagreements. This theme is evident in Poland, Hungary, the UK, France, and Argentina, where parties like Prawo i Sprawiedliwość (PiS), Fidesz, Reform UK, Rassemblement National, and La Libertad Avanza are experiencing fractures that threaten their cohesion and electoral prospects.",
       "convergence": 4,
       "countries": [
         {
           "name": "🇵🇱 Prawo i Sprawiedliwość",
-          "note": "Kaczyński convenes meeting to address Morawiecki's rival association, risking party fracture."
+          "note": "Faces leadership disputes and tensions over cooperation with Konfederacja ahead of elections."
         },
         {
           "name": "🇭🇺 Fidesz / Tisza",
-          "note": "Magyar threatens constitutional changes to remove Orbán-appointed president Sulyok."
+          "note": "Experiences internal strife over constitutional changes and leadership transitions, with factions vying for influence."
         },
         {
           "name": "🇬🇧 Reform UK",
-          "note": "Nigel Farage's leadership challenged by internal factions over policy direction."
+          "note": "Struggles with racial rhetoric and internal cohesion, with Nigel Farage's leadership sparking controversy."
         },
         {
           "name": "🇫🇷 Rassemblement National",
-          "note": "Bardella and Le Pen split over pension reform, exposing party divisions."
+          "note": "Faces ideological splits over pension reforms and leadership dynamics between Marine Le Pen and Jordan Bardella."
         },
         {
           "name": "🇦🇷 La Libertad Avanza",
-          "note": "Adorni scandal divides Milei voters, with ideological supporters remaining loyal."
+          "note": "Internal conflicts over judicial appointments and economic policies, with allies like Patricia Bullrich opposing Milei's decisions."
         }
       ],
       "signals": [
-        "parallel internal conflicts",
-        "shared framing of leadership challenges",
-        "contagion of factionalism"
+        "parallel elections",
+        "shared framing",
+        "policy imitation",
+        "contagion of rhetoric"
       ],
-      "article_count": 25,
+      "article_count": 35,
       "refs": [
         {
-          "title": "Szalikowcy zakładają fundację Sprawiedliwość. Chcą zmienić przepisy o małym świadku koronnym",
-          "source": "Katowice.Wyborcza.pl",
-          "url": "https://katowice.wyborcza.pl/katowice/7,35063,32819059,szalikowcy-zakladaja-fundacje-sprawiedliwosc-chca-zmienic-przepisy.html",
-          "date": "2026-06-02T03:55:00+00:00",
-          "category": "poland"
+          "title": "Vox pide a Feijóo una moción de censura, pero rechaza que acuda a Waterloo a negociar con Junts",
+          "source": "La Vanguardia",
+          "url": "https://www.lavanguardia.com/politica/20260602/11554051/vox-pide-feijoo-mocion-censura-rechaza-acuda-waterloo-negociar-junts.html",
+          "date": "2026-06-02T13:35:35+00:00",
+          "category": "spain"
         },
         {
-          "title": "Time to say no to Trump: Israeli officials condemn Netanyahu's decision to cancel Lebanon strike",
-          "source": "The Jerusalem Post",
-          "url": "https://www.jpost.com/israel-news/politics-and-diplomacy/article-898056",
-          "date": "2026-06-02T02:36:01+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "As Trump resists curbs on AI, MAGA grassroots shows growing momentum against it",
-          "source": "The Japan Times",
-          "url": "https://www.japantimes.co.jp/news/2026/06/02/world/trump-ai-maga/",
-          "date": "2026-06-02T02:23:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Verfassungsschützer kritisiert AfD-Reise nach Russland",
-          "source": "Presse Augsburg",
-          "url": "https://presse-augsburg.de/verfassungsschuetzer-kritisiert-afd-reise-nach-russland/1167636/",
-          "date": "2026-06-02T01:48:00+00:00",
+          "title": "Wagenknecht dient sich vor Landtagswahlen AfD an",
+          "source": "ZDFheute",
+          "url": "https://www.zdfheute.de/politik/deutschland/landtagswahlen-bsw-wagenknecht-afd-100.html",
+          "date": "2026-06-02T13:30:00+00:00",
           "category": "germany"
         },
         {
-          "title": "Los planes del Gobierno para acelerar la gestión y los intentos por aplacar la interna",
-          "source": "Infobae",
-          "url": "https://www.infobae.com/politica/2026/06/01/los-planes-del-gobierno-para-acelerar-la-gestion-y-los-intentos-por-aplacar-la-interna/",
-          "date": "2026-06-01T06:05:00+00:00",
+          "title": "Ortega Smith asegura que la justicia le da la razón y no sale del grupo municipal de Vox",
+          "source": "La Vanguardia",
+          "url": "https://www.lavanguardia.com/local/madrid/20260602/11554026/ortega-smith-asegura-justicia-le-da-razon-sale-grupo-municipal-vox.html",
+          "date": "2026-06-02T13:03:43+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Bullrich hace la suya y enfrenta a Karina por el pliego de una jueza en el Senado",
+          "source": "La Izquierda Diario",
+          "url": "https://www.laizquierdadiario.com/Bullrich-hace-la-suya-y-enfrenta-a-Karina-por-el-pliego-de-una-jueza-en-el-Senado",
+          "date": "2026-06-02T13:02:10+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Chcą uchylić immunitet Patryka Jakiego. Europoseł PiS grzmi",
+          "source": "Wiadomości Onet",
+          "url": "https://wiadomosci.onet.pl/kraj/prokuratura-chce-uchylic-immunitet-patryka-jakiego-europosel-pis-grzmi/3evv93w",
+          "date": "2026-06-02T13:01:20+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "La Justicia detiene la expulsión de Ortega Smith del grupo municipal de Vox y seguirá como portavoz",
+          "source": "Vozpopuli",
+          "url": "https://www.vozpopuli.com/espana/madrid/la-justicia-detiene-la-expulsion-de-ortega-smith-del-grupo-municipal-de-vox-y-seguira-como-portavoz.html",
+          "date": "2026-06-02T12:59:19+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "SD-ledamot utreds för barnpornografibrott – Gruppledaren svarar ”Besvärande uppgifter”",
+          "source": "ETC.se",
+          "url": "https://www.etc.se/inrikes/sd-ledamot-utreds-foer-barnpornografibrott",
+          "date": "2026-06-02T12:43:46+00:00",
+          "category": "sweden"
+        },
+        {
+          "title": "La condición de Junts para la moción agita a Vox: \"Una reunión de Feijóo con Puigdemont no la entendería nadie\"",
+          "source": "El Independiente",
+          "url": "https://www.elindependiente.com/espana/2026/06/02/condicion-junts-mocion-agita-vox-reunion-feijoo-puigdemont-no-entenderia-nadie/amp/",
+          "date": "2026-06-02T12:36:49+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Bayerns Antisemitismus-Beauftragter Ludwig Spaenle fordert Aktionsplan gegen AfD - Bayern - SZ.de",
+          "source": "SZ.de",
+          "url": "https://www.sueddeutsche.de/bayern/bayern-ludwig-spaenle-afd-csu-antisemitismus-li.3491093",
+          "date": "2026-06-02T12:30:51+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Bullrich ignoró el pedido de los Milei y no acompañará el retiro del pliego judicial cuestionado por Karina",
+          "source": "El Ágora Digital",
+          "url": "https://elagora.digital/argentina/patricia-bullrich-pliego-jueza-michelli-javier-karina-milei/",
+          "date": "2026-06-02T12:08:48+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Patricia Bullrich desafió la línea oficial y ratificó su apoyo a una jueza impugnada por el Ejecutivo",
+          "source": "La Gaceta",
+          "url": "https://www.lagaceta.com.ar/nota/1139361/politica/patricia-bullrich-desafio-linea-oficial-ratifico-apoyo-jueza-impugnada-ejecutivo.html",
+          "date": "2026-06-02T11:29:34+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Reforma electoral: el Gobierno no tiene los votos para eliminar las PASO y negocia cambios con aliados",
+          "source": "TN",
+          "url": "https://tn.com.ar/politica/2026/06/02/reforma-electoral-el-gobierno-no-tiene-los-votos-para-eliminar-las-paso-y-negocia-cambios-con-aliados/",
+          "date": "2026-06-02T09:00:01+00:00",
           "category": "argentina"
         }
       ],
       "first_seen": "2026-05-17T14:16:08+00:00",
-      "last_seen": "2026-06-02T05:18:34+00:00"
+      "last_seen": "2026-06-02T17:11:04+00:00"
     },
     {
       "id": "far-right-reactions-to-middle-east-conflicts",
       "title": "Far-right reactions to Middle East conflicts",
-      "blurb": "Far-right leaders in the US, Argentina, and Italy are aligning with Israel in the ongoing Middle East conflicts, often framing their support as a defense of Western civilization. This theme reflects a broader transnational trend of far-right solidarity with Israel, contrasting with left-wing critiques of Israeli policies.",
+      "blurb": "Far-right parties and leaders are increasingly framing their responses to Middle East conflicts through the lens of national security, immigration, and cultural identity. This theme is evident in the US, Argentina, Italy, and Poland, where parties like MAGA/Trump, La Libertad Avanza, Fratelli d'Italia/Lega, and Prawo i Sprawiedliwość are aligning with Israel and adopting hardline stances against perceived threats from Iran and Islamist groups. These reactions often emphasize the defense of Western values and the need to counter terrorism and antisemitism.",
       "convergence": 4,
       "countries": [
         {
           "name": "🇺🇸 MAGA / Trump",
-          "note": "Mediates Israel-Hezbollah ceasefire, urges Netanyahu to halt Beirut strike."
+          "note": "Mediates ceasefire between Israel and Hezbollah, emphasizing US leadership in Middle East security."
         },
         {
           "name": "🇦🇷 La Libertad Avanza",
-          "note": "Milei reaffirms Argentina's support for Israel as 'Western bastion' at IHRA conference."
+          "note": "Milei reaffirms strong support for Israel, framing it as a bastion of Western values amid Middle East tensions."
         },
         {
           "name": "🇮🇹 Fratelli d'Italia / Lega",
-          "note": "Meloni distances from Israel after Trump's criticism, highlighting shifting alliances."
+          "note": "Supports Israel and criticizes Iran, aligning with broader right-wing narratives on Middle East security."
         },
         {
           "name": "🇵🇱 Prawo i Sprawiedliwość",
-          "note": "Criticizes Zelensky for naming military unit after UPA, threatens to revoke honor."
+          "note": "Criticizes Ukraine for honoring controversial military units, reflecting broader right-wing skepticism toward Middle East and Eastern European conflicts."
         }
       ],
       "signals": [
-        "shared framing of Israel as 'Western bastion'",
-        "parallel diplomatic stances",
-        "contagion of pro-Israel rhetoric"
+        "shared framing",
+        "reaction to external event",
+        "coordinated messaging",
+        "policy imitation"
       ],
-      "article_count": 20,
+      "article_count": 25,
       "refs": [
+        {
+          "title": "Video Trump administration's Ebola policy a 'very bad idea': Dr. Ashish Jha - ABC News",
+          "source": "Breaking News, Latest News and Videos",
+          "url": "https://abcnews.com/video/133517063/",
+          "date": "2026-06-02T13:42:56+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Jeremy Clarkson reveals young farmers are supporting Reform UK",
+          "source": "Oxford Mail",
+          "url": "https://www.oxfordmail.co.uk/news/26159163.young-farmers-supporting-reform-uk-reveals-jeremy-clarkson/",
+          "date": "2026-06-02T13:00:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Escándalo judicial: investigan a Javier Milei por vetar a una jueza vinculada a un periodista",
+          "source": "MDZ Online",
+          "url": "https://www.mdzol.com/politica/escandalo-judicial-investigan-javier-milei-vetar-una-jueza-vinculada-un-periodista-n1534130",
+          "date": "2026-06-02T12:41:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Video President Trump's mixed messages on war with Iran - ABC News",
+          "source": "Breaking News, Latest News and Videos",
+          "url": "https://abcnews.com/video/133509610/",
+          "date": "2026-06-02T11:20:14+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Benjamin Netanyahu faces backlash after Donald Trump call",
+          "source": "Financial Times",
+          "url": "https://www.ft.com/content/9938fefc-2ad5-41f1-9a10-699385d5bac1",
+          "date": "2026-06-02T07:05:44+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump administration proposes 25% tariff on Brazilian goods over unfair trade practices",
+          "source": "CNBC",
+          "url": "https://www.cnbc.com/2026/06/02/trump-proposes-25-tariff-on-brazil.html",
+          "date": "2026-06-02T04:13:10+00:00",
+          "category": "usa"
+        },
         {
           "title": "Time to say no to Trump: Israeli officials condemn Netanyahu's decision to cancel Lebanon strike",
           "source": "The Jerusalem Post",
           "url": "https://www.jpost.com/israel-news/politics-and-diplomacy/article-898056",
           "date": "2026-06-02T02:36:01+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump news at a glance: Trump mediates between Israel and Hezbollah in effort to salvage Iran peace talks",
+          "source": "The Guardian",
+          "url": "https://www.theguardian.com/us-news/2026/jun/01/trump-administration-news-latest-updates-today",
+          "date": "2026-06-02T01:17:00+00:00",
           "category": "usa"
         },
         {
@@ -334,29 +534,15 @@
           "category": "argentina"
         },
         {
-          "title": "Javier Milei ratificó su respaldo a Israel y lo definió como un “bastión de Occidente”",
-          "source": "minutodecierre.com",
-          "url": "https://www.minutodecierre.com/nota/2026-6-1-19-34-0-javier-milei-ratifico-su-respaldo-a-israel-y-lo-definio-como-un-bastion-de-occidente",
-          "date": "2026-06-01T22:48:02+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "President Trump Requests Israel Halt Retaliation on Beirut",
-          "source": "The Presidential Prayer Team",
-          "url": "https://www.presidentialprayerteam.org/2026/06/01/president-trump-requests-israel-halt-retaliation-on-beirut/",
-          "date": "2026-06-01T22:00:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "En medio de la escalada del conflicto en Medio Oriente, Javier Milei respaldó a Israel: “Debemos defenderlo, es el bastión de Occidente\"",
-          "source": "TN",
-          "url": "https://tn.com.ar/politica/2026/06/01/en-medio-de-la-escalada-del-conflicto-en-medio-oriente-javier-milei-respaldo-a-israel-debemos-defenderlo/?outputType=amp",
-          "date": "2026-06-01T18:36:04+00:00",
+          "title": "Javier Milei volvió a respaldar a Israel y lo definió como \"el bastión de Occidente\"",
+          "source": "MinutoUno",
+          "url": "https://www.minutouno.com/politica/javier-milei-volvio-respaldar-israel-y-lo-definio-como-el-bastion-occidente-n6283938",
+          "date": "2026-06-01T23:04:00+00:00",
           "category": "argentina"
         }
       ],
       "first_seen": "2026-06-02T05:18:34+00:00",
-      "last_seen": "2026-06-02T05:18:34+00:00"
+      "last_seen": "2026-06-02T17:11:04+00:00"
     }
   ]
 }
