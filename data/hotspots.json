@@ -1,27 +1,2201 @@
 {
-  "updated_at": "2026-06-03T17:26:42+00:00",
+  "updated_at": "2026-06-04T05:21:20+00:00",
   "lookback_hours": 48,
   "model": "Mistral Large",
   "status": "ok",
   "hotspots": [
     {
-      "id": "afds-extremism-classification-in-hesse",
-      "title": "AfD’s extremism classification in Hesse",
-      "blurb": "A court ruling in Hesse has allowed the Verfassungsschutz to monitor the AfD as a suspected right-wing extremist group, sparking intense reactions from the party and its supporters. The decision has led to a surge in coverage, with AfD politicians defending their actions and criticizing the government's stance.",
-      "affect": "This commands disproportionate attention due to the high moral and political stakes involved in labeling a major political party as extremist, which fuels polarized contention and alarmist framing.",
+      "id": "bullrichs-rebellion-against-javier-milei",
+      "title": "Bullrich’s rebellion against Javier Milei",
+      "blurb": "Internal strife within Argentina's ruling La Libertad Avanza party escalates as Security Minister Patricia Bullrich challenges President Javier Milei over judicial appointments, threatening resignation and sparking fears of a leadership crisis.",
+      "affect": "This commands disproportionate attention due to the high-stakes power struggle within the ruling party, threatening governance stability and policy direction.",
+      "intensity": 5,
+      "affect_signals": [
+        "leadership crisis tone",
+        "polarized contention",
+        "cross-source repetition",
+        "outrage-coded language",
+        "moral panic register"
+      ],
+      "categories": [
+        "La Libertad Avanza"
+      ],
+      "article_count": 70,
+      "refs": [
+        {
+          "title": "Javier Milei respaldó el retiro del pliego de Michelli",
+          "source": "OPI Santa Cruz",
+          "url": "https://www.opisantacruz.com.ar/2026/06/03/javier-milei-respaldo-el-retiro-del-pliego-de-michelli/",
+          "date": "2026-06-04T02:58:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Apoyo a Javier, resistencia a Karina: el desafío de Bullrich al poder de la hermana del Presidente",
+          "source": "El Destape",
+          "url": "https://www.eldestapeweb.com/politica/apoyo-javier-resistencia-karina-desafio-bullrich-poder-hermana-presidente-202663232935",
+          "date": "2026-06-04T02:33:58+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Karina Milei y Patricia Bullrich mostraron unidad en la Casa Rosada",
+          "source": "Telesol Diario",
+          "url": "https://www.telesoldiario.com/476326-karina-milei-y-patricia-bullrich-mostraron-unidad-en-la-casa-rosada",
+          "date": "2026-06-04T01:44:16+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "El retroceso de Karina Milei ante el avance institucional de Victoria Villarruel y Patricia Bullrich",
+          "source": "Diario 13 San Juan",
+          "url": "https://www.canal13sanjuan.com/politica/el-retroceso-de-karina-milei-ante-el-avance-institucional-de-victoria-villarruel-y-patricia-bullrich_a6a20d53fa79bacc032fb49fa",
+          "date": "2026-06-04T01:38:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Bullrich y Karina Milei se mostraron juntas tras las diferencias dentro de La Libertad Avanza",
+          "source": "8digital",
+          "url": "https://www.8digital.com.ar/bullrich-y-karina-milei-se-mostraron-juntas-tras-las-diferencias-dentro-de-la-libertad-avanza/",
+          "date": "2026-06-04T01:21:18+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Patricia Bullrich se reunió con Karina Milei y prometió continuar en LLA — ACTUALIDAD",
+          "source": "Opinando San Nicolás",
+          "url": "https://www.opinandosannicolas.ar/2026/06/patricia-bullrich-se-reunio-con-karina-milei-y-prometio-continuar-en-lla/",
+          "date": "2026-06-04T01:11:13+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Nueva interna en La Libertad Avanza: le recriminan a Patricia Bullrich por su objeción de conciencia",
+          "source": "Tiempo de San Juan",
+          "url": "https://www.tiempodesanjuan.com/politica/nueva-interna-la-libertad-avanza-le-recriminan-patricia-bullrich-su-objecion-conciencia-n431951",
+          "date": "2026-06-04T01:04:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Patricia Bullrich se reunió con Karina Milei y despejó los rumores sobre su salida",
+          "source": "» Cholila Online",
+          "url": "https://cholilaonline.ar/2026/06/patricia-bullrich-se-reunio-con-karina-milei-y-despejo-los-rumores-sobre-su-salida.html",
+          "date": "2026-06-04T00:39:09+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Patricia Bullrich se reunió con Karina Milei y ratificó su continuidad",
+          "source": "puntal.com.ar",
+          "url": "https://www.puntal.com.ar/patricia-bullrich/patricia-bullrich-se-reunio-karina-milei-y-ratifico-su-continuidad-n258867",
+          "date": "2026-06-03T23:43:27+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "La foto de la tregua: Karina Milei y Patricia Bullrich buscan contener una interna que inquieta al oficialismo",
+          "source": "Identidad Correntina",
+          "url": "https://www.identidadcorrentina.com.ar/noticia/32671_la-foto-de-la-tregua-karina-milei-y-patricia-bullrich-buscan-contener-una-interna-que-inquieta-al-oficialismo.htm",
+          "date": "2026-06-03T23:42:30+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "El Gobierno analiza una reunión de la mesa política para bajar la tensión tras la interna por la jueza Michelli",
+          "source": "Infobae",
+          "url": "https://www.infobae.com/politica/2026/06/03/el-gobierno-analiza-una-reunion-de-la-mesa-politica-para-bajar-la-tension-tras-la-interna-por-la-jueza-michelli/",
+          "date": "2026-06-03T22:54:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Bullrich se reunió con Karina Milei y buscó desactivar la tensión en el oficialismo | 3 de junio de 2026",
+          "source": "Hoy Día Córdoba",
+          "url": "https://hoydia.com.ar/politica/nacional/bullrich-karina-milei-oficialismo-interna/amp/",
+          "date": "2026-06-03T22:49:32+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Los Jefes: Karina Milei escenificó un alto al fuego con una Bullrich que ya ganó",
+          "source": "Letra P",
+          "url": "https://www.letrap.com.ar/politica/los-jefes-karina-milei-escenifico-un-alto-al-fuego-una-bullrich-que-ya-gano-n5424234/amp",
+          "date": "2026-06-03T22:36:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Las redes reaccionaron a la particular foto que publicaron juntas Karina Milei y Patricia Bullrich",
+          "source": "Diario Registrado",
+          "url": "https://www.diarioregistrado.com/politica/las-redes-reaccionaron-a-la-particular-foto-que-publicaron-juntas-karina-milei-y-patricia-bullrich_a6a20a13ac09a456b35ee8459",
+          "date": "2026-06-03T22:10:45+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Voucher energia da 100 euro, ecco a chi sarà destinato. Meloni: «Indicata la via»",
+          "source": "Il Messaggero",
+          "url": "https://www.ilmessaggero.it/politica/voucher_energia_100_euro_come_funziona_ultime_notizie-9571519.html",
+          "date": "2026-06-03T22:05:15+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Tras las tensiones por el pliego de una jueza, Bullrich se mostró con Karina Milei",
+          "source": "Radio LV11",
+          "url": "https://www.radiolv11.com.ar/noticia/tras-las-tensiones-por-el-pliego-de-una-jueza-bullrich-se-mostro-con-karina-milei",
+          "date": "2026-06-03T21:50:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Patricia Bullrich reapareció con Karina Milei tras poner su renuncia a disposición: “Trabajando juntas”",
+          "source": "Radio Mitre",
+          "url": "https://radiomitre.cienradios.com/politica/patricia-bullrich-reaparecio-con-karina-milei-tras-poner-su-renuncia-a-disposicion-trabajando-juntas/",
+          "date": "2026-06-03T21:39:45+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Noted MAGA Homophobe Blames Staffer for Homophobic Post",
+          "source": "Rolling Stone Australia",
+          "url": "https://au.rollingstone.com/culture/culture-news/andy-ogles-blames-staffer-anti-lgbtq-pride-month-post-96198/",
+          "date": "2026-06-03T21:25:42+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Patricia Bullrich publicó una foto junto a Karina Milei: Trabajando juntas",
+          "source": "Radio Sudamericana",
+          "url": "https://www.radiosudamericana.com/amp/politica/345609-Patricia-Bullrich-publico-una-foto-junto-a-Karina-Milei--Trabajando-juntas.htm",
+          "date": "2026-06-03T21:19:49+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Bullrich se reunió con Karina Milei y confirmó que seguirá en el bloque de LLA en el Senado",
+          "source": "El Argentino Diario",
+          "url": "https://elargentinodiario.com.ar/politica/03/06/2026/bullrich-se-reunio-con-karina-milei-y-confirmo-que-seguira-en-el-bloque-de-lla-en-el-senado/",
+          "date": "2026-06-03T21:15:54+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Bullrich y Karina Milei sellaron la paz tras el amago de renuncia por las diferencias oficiales",
+          "source": "Exclusiva | Plataforma de noticias",
+          "url": "https://exclusiva.com.ar/hoy/bullrich-y-karina-milei-sellaron-la-paz-tras-el-amago-de-renuncia-por-las-diferencias-oficiales/",
+          "date": "2026-06-03T21:11:47+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Con guiño del PRO, La Libertad Avanza busca abrir el negocio de la VTV en la Ciudad",
+          "source": "Letra P",
+          "url": "https://www.letrap.com.ar/politica/con-guino-del-pro-la-libertad-avanza-busca-abrir-el-negocio-la-vtv-la-ciudad-n5424230",
+          "date": "2026-06-03T21:05:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "En medio de las tensiones por el pliego de la jueza Michelli, Karina Milei recibió a Patricia Bullrich en la Casa Rosada",
+          "source": "Infobae",
+          "url": "https://www.infobae.com/politica/2026/06/03/en-medio-de-las-tensiones-por-el-pliego-de-la-jueza-michelli-karina-milei-recibio-a-patricia-bullrich-en-la-casa-rosada/",
+          "date": "2026-06-03T21:01:56+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei compartió un mensaje que defiende el retiro del pliego de la jueza Michelli",
+          "source": "Infobae",
+          "url": "https://www.infobae.com/politica/2026/06/03/javier-milei-compartio-un-mensaje-que-defiende-el-retiro-del-pliego-de-la-jueza-michelli/",
+          "date": "2026-06-03T20:54:19+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Bullrich se reunió con Karina Milei y ratificó su continuidad en La Libertad Avanza",
+          "source": "El Eco",
+          "url": "https://www.eleco.com.ar/politica/bullrich-se-reunio-con-karina-milei-y-ratifico-su-continuidad-en-la-libertad-avanza",
+          "date": "2026-06-03T20:47:43+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Trump signs order to make it easier to fire 8,000 highly paid federal workers",
+          "source": "The Guardian",
+          "url": "https://www.theguardian.com/us-news/2026/jun/03/trump-order-federal-workers",
+          "date": "2026-06-03T20:35:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Tras las tensiones por el pliego de una jueza, Patricia Bullrich publicó una foto junto a Karina Milei: \"Trabajando juntas\"",
+          "source": "TN",
+          "url": "https://tn.com.ar/politica/2026/06/03/en-medio-de-las-tensiones-por-el-pliego-de-una-jueza-bullrich-se-mostro-con-karina-milei-trabajando-juntas/",
+          "date": "2026-06-03T20:28:56+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Por primera vez, Javier Milei justificó la decisión de retirar el pliego de la jueza Michelli",
+          "source": "TN",
+          "url": "https://tn.com.ar/politica/2026/06/03/por-primera-vez-javier-milei-justifico-la-decision-de-retirar-el-pliego-de-la-jueza-michelli/",
+          "date": "2026-06-03T20:20:47+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "En medio de la interna, Bullrich se reunió con Karina Milei",
+          "source": "El Ancasti",
+          "url": "https://www.elancasti.com.ar/politica-y-economia/en-medio-la-interna-bullrich-se-reunio-karina-milei-n614042",
+          "date": "2026-06-03T20:18:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "MAGA bikini congresswoman Anna Paulina Luna patrols streets in a cop car, Angel goes flying & abandoned malls",
+          "source": "Fox News",
+          "url": "https://www.foxnews.com/outkick-culture/maga-bikini-congresswoman-anna-paulina-luna-patrols-streets-cop-car-angel-goes-flying-abandoned-malls-",
+          "date": "2026-06-03T20:15:57+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Reunión y foto de Patricia Bullrich con Karina Milei en medio de las tensiones internas del Gobierno",
+          "source": "DataClave",
+          "url": "https://www.dataclave.com.ar/poder/reunion-y-foto-de-patricia-bullrich-con-karina-milei-en-medio-de-las-tensiones-internas-del-gobierno_a6a20850ca351186a25cb0329",
+          "date": "2026-06-03T20:10:30+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Después de los cruces, Patricia Bullrich se mostró junto a Karina Milei y negó una salida de La Libertad Avanza",
+          "source": "Diario Río Negro",
+          "url": "https://www.rionegro.com.ar/politica/despues-de-los-cruces-patricia-bullrich-se-mostro-junto-a-karina-milei-y-nego-una-salida-de-la-libertad-avanza-4597420/",
+          "date": "2026-06-03T20:09:35+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Guillotina debilitada: Karina Milei digiere en silencio y con una foto el desafío público de Patricia Bullrich por los pliegos de los jueces",
+          "source": "Clarin.com",
+          "url": "https://www.clarin.com/politica/guillotina-debilitada-karina-milei-digiere-silencio-foto-desafio-publico-patricia-bullrich-pliegos-jueces_0_LobRm6OppQ.html",
+          "date": "2026-06-03T19:59:21+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Patricia Bullrich le prometió a Karina Milei que se queda en La Libertad Avanza",
+          "source": "Tiempo de San Juan",
+          "url": "https://www.tiempodesanjuan.com/politica/patricia-bullrich-le-prometio-karina-milei-que-se-queda-la-libertad-avanza-n431914",
+          "date": "2026-06-03T19:54:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Karina Milei y Bullrich escenificaron una tregua tras la rebelión de la senadora",
+          "source": "elDiarioAR.com",
+          "url": "https://www.eldiarioar.com/politica/karina-milei-bullrich-escenificaron-tregua-rebelion-senadora_1_13273839.html",
+          "date": "2026-06-03T19:47:16+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Patricia Bullrich se reunió con Karina Milei en medio de la interna: Trabajando siempre juntas",
+          "source": "La Gaceta",
+          "url": "https://www.lagaceta.com.ar/nota/amp/1139596/politica/patricia-bullrich-se-reunio-karina-milei-medio-interna-trabajando-siempre-juntas.html",
+          "date": "2026-06-03T19:42:16+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Bullrich y Karina Milei exhiben unidad en medio de la interna libertaria",
+          "source": "El Esquiu",
+          "url": "https://www.elesquiu.com/politica/2026/6/3/bullrich-y-karina-milei-exhiben-unidad-en-medio-de-la-interna-libertaria-584194.html",
+          "date": "2026-06-03T19:42:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "En plena interna libertaria Patricia Bullrich compartió una foto con Karina Milei",
+          "source": "Clarin.com",
+          "url": "https://www.clarin.com/politica/plena-interna-libertaria-patricia-bullrich-compartio-foto-karina-milei_0_VBxPjIn1Ta.html",
+          "date": "2026-06-03T19:36:34+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "\"Siempre juntas\": Patricia Bullrich se mostró con Karina Milei en medio de la interna que golpea al Gobierno",
+          "source": "MDZ Online",
+          "url": "https://www.mdzol.com/politica/siempre-juntas-patricia-bullrich-se-mostro-karina-milei-medio-la-interna-que-golpea-al-gobierno-n1535464",
+          "date": "2026-06-03T19:30:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Karina Milei y Bullrich buscan bajarle la tensión a la interna: \"Siempre juntas\"",
+          "source": "El Destape",
+          "url": "https://www.eldestapeweb.com/politica/karina-milei-bullrich-buscan-bajarle-tension-interna-siempre-juntas-202663162339",
+          "date": "2026-06-03T19:28:07+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "En plena tensión interna, Bullrich se mostró con Karina Milei: Siempre juntas",
+          "source": "Cadena 3 Argentina",
+          "url": "https://www.cadena3.com/amp/noticia/politica-y-economia/en-plena-tension-interna-bullrich-se-mostro-con-karina-milei-siempre-juntas_558440",
+          "date": "2026-06-03T19:24:04+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Patricia Bullrich se reunió con Karina Milei y prometió continuar en LLA",
+          "source": "Agencia Noticias Argentinas",
+          "url": "https://noticiasargentinas.com/politica/patricia-bullrich-se-reunio-con-karina-milei-y-despejo-rumores-de-su-salida_a6a207c3fd3cd8e5499847695",
+          "date": "2026-06-03T19:17:51+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Patricia Bullrich y foto de paz con Karina Milei: \"Trabajando siempre juntas por las transformaciones que lide",
+          "source": "Crónica",
+          "url": "https://www.cronica.com.ar/amp/politica/patricia-bullrich-y-foto-de-paz-con-karina-milei-trabajando-siempre-juntas-por-las-transformaciones-que-lidera-el-presidente/",
+          "date": "2026-06-03T19:17:01+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Patricia Bullrich se reúne con Karina Milei para consolidar el apoyo al proyecto político libertario",
+          "source": "Perfil",
+          "url": "https://www.perfil.com/noticias/politica/luego-de-los-cortocircuitos-publicos-patricia-bullrich-y-karina-milei-se-muestran-juntas-para-intentar-cerrar-la-interna-en-el-gobierno.phtml",
+          "date": "2026-06-03T19:16:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "En medio de la interna, Patricia Bullrich se reunió con Karina Milei",
+          "source": "La Nación",
+          "url": "https://www.lanacion.com.ar/politica/en-medio-de-la-interna-patricia-bullrich-se-reunio-con-karina-milei-nid03062026/",
+          "date": "2026-06-03T19:01:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Mañueco cede a Vox las consejerías de agricultura, cultura y familia",
+          "source": "Acueducto2",
+          "url": "https://www.acueducto2.com/manueco-cede-a-vox-las-consejerias-de-agricultura-cultura-y-familia/183239",
+          "date": "2026-06-03T18:42:21+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Bruciati vivi in auto ad Amendolara, Giorgia Meloni e l'orrore per l'omicidio: \"Fare luce sul crimine\"",
+          "source": "Virgilio",
+          "url": "https://www.virgilio.it/notizie/bruciati-vivi-in-auto-ad-amendolara-giorgia-meloni-e-l-orrore-per-l-omicidio-fare-luce-sul-crimine-1759904",
+          "date": "2026-06-03T18:33:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Migranti, Meloni: accordo su rimpatri storico, Italia indica la strada",
+          "source": "Quotidiano Nazionale",
+          "url": "https://www.quotidiano.net/video/politica/migranti-meloni-accordo-su-rimpatri-storico-italia-indica-la-strada-bywbiyba",
+          "date": "2026-06-03T18:20:37+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Encuesta: el 53 por ciento le pone de nota un 1 al gobierno de Milei",
+          "source": "Revista Noticias",
+          "url": "https://noticias.perfil.com/noticias/politica/encuesta-el-53-por-ciento-le-pone-de-nota-un-1-al-gobierno-de-milei.phtml",
+          "date": "2026-06-03T18:11:07+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Meloni: \"14 miliardi contro il caro-energia, l'Italia indica la strada all'Ue\"",
+          "source": "ANSA",
+          "url": "https://www.ansa.it/sito/videogallery/italia/2026/06/03/meloni-14-miliardi-contro-il-caro-energia-litalia-indica-la-strada-allue_23d46c8f-1647-44e4-9518-5a50bda88248.html",
+          "date": "2026-06-03T17:58:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Victoria Villarruel recibió a la jueza vetada por Javier Milei y reavivó la interna libertaria",
+          "source": "Página|12",
+          "url": "https://www.pagina12.com.ar/2026/06/03/victoria-villarruel-recibio-a-la-jueza-vetada-por-javier-milei-y-reavivo-la-interna-libertaria/",
+          "date": "2026-06-03T17:47:50+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "GG Mary Simon Attends Farewell Reception – June 3, 2026",
+          "source": "CPAC.ca",
+          "url": "https://www.cpac.ca/headline-politics/episode/gg-mary-simon-attends-farewell-reception--june-3-2026?id=9507e129-ee09-402a-9262-438573d13c95",
+          "date": "2026-06-03T17:18:57+00:00",
+          "category": "networks"
+        },
+        {
+          "title": "Keir Starmer calls out Farage’s “pure, cold rage” comments during PMQs",
+          "source": "The London Economic",
+          "url": "https://www.thelondoneconomic.com/politics/keir-starmer-calls-out-farages-pure-cold-rage-comments-during-pmqs-406736/",
+          "date": "2026-06-03T17:11:57+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "BBC deletes Newsnight episode after Farage complains about 'white cold rage' misquote",
+          "source": "Metro.co.uk",
+          "url": "https://metro.co.uk/2026/06/03/bbc-deletes-newsnight-episode-farage-complains-white-cold-rage-misquote-28635647/",
+          "date": "2026-06-03T17:10:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Külpolitika - Magyar Péter: közös érdek a korrupcióellenes fellépés",
+          "source": "Hét Nap",
+          "url": "https://hetnap.rs/cikk/Magyar-Peter-kozos-erdek-a-korrupcioellenes-fellepes-59238.html",
+          "date": "2026-06-03T16:51:49+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Warsh names Project 2025 author as first Federal Reserve hire",
+          "source": "mpamag.com",
+          "url": "https://www.mpamag.com/us/mortgage-industry/industry-trends/warsh-names-project-2025-author-as-first-federal-reserve-hire/577634",
+          "date": "2026-06-03T16:43:48+00:00",
+          "category": "networks"
+        },
+        {
+          "title": "Patricia Bullrich le presentó la renuncia a Javier Milei y estalló la interna con Karina",
+          "source": "Net tv | Aire Fresco",
+          "url": "https://www.canalnet.tv/programas/longobardi-en-vivo/patricia-bullrich-le-presento-la-renuncia-a-javier-milei-y-estallo-la-interna-con-karina_20260603/?amp=1",
+          "date": "2026-06-03T16:35:07+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Patricia Bullrich desafía a Karina Milei y escala en la pelea tras la situación en el Senado",
+          "source": "El Observador",
+          "url": "https://www.elobservador.com.uy/argentina/politica/patricia-bullrich-desafia-karina-milei-y-escala-la-pelea-la-situacion-el-senado-n6046211",
+          "date": "2026-06-03T16:26:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Ni una Menos: fuerte caída de los fondos destinados a programas de género en la gestión de Javier Milei",
+          "source": "Chequeado",
+          "url": "https://chequeado.com/el-explicador/ni-una-menos-fuerte-caida-de-los-fondos-destinados-a-programas-de-genero-en-la-gestion-de-javier-milei/",
+          "date": "2026-06-03T16:03:59+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Magyar Péter meghívta a francia elnököt Budapestre",
+          "source": "Magyar Hang",
+          "url": "https://hang.hu/belfold/magyar-peter-meghivta-a-francia-elnokot-budapestre-189225",
+          "date": "2026-06-03T15:54:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Bullrich relativizó el choque con Milei y aseguró que La Libertad Avanza mantiene la unidad",
+          "source": "DataClave",
+          "url": "https://www.dataclave.com.ar/poder/bullrich-relativizo-el-choque-con-milei-y-aseguro-que-la-libertad-avanza-mantiene-la-unidad_a6a204051a351186a25c8ea60",
+          "date": "2026-06-03T15:48:03+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Victoria Villarruel vs. Javier Milei: Se reunió con la jueza 'vetada'",
+          "source": "Urgente24",
+          "url": "https://urgente24.com/actualidad/victoria-villarruel-vs-javier-milei-se-reunio-la-jueza-vetada-n625985",
+          "date": "2026-06-03T15:26:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "\"No hay riesgo de fractura”: la frase de Patricia Bullrich tras poner su renuncia a disposición",
+          "source": "Perfil",
+          "url": "https://www.perfil.com/noticias/politica/no-hay-riesgo-de-fractura-la-frase-de-patricia-bullrich-tras-poner-su-renuncia-a-disposicion.phtml",
+          "date": "2026-06-03T15:21:08+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Bullrich bajó el tono a la disputa con Milei, pero persisten las dudas sobre la sesión en el Senado",
+          "source": "La Gaceta",
+          "url": "https://www.lagaceta.com.ar/nota/1139560/politica/bullrich-bajo-tono-disputa-milei-pero-persisten-dudas-sobre-sesion-senado.html",
+          "date": "2026-06-03T15:20:14+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Victoria Villarruel recibió a la jueza cuyo nombramiento fue frenado por Javier Milei y le expresó su respaldo institucional",
+          "source": "Diario Río Negro",
+          "url": "https://www.rionegro.com.ar/politica/victoria-villarruel-recibio-a-la-jueza-cuyo-nombramiento-fue-frenado-por-javier-milei-y-le-expreso-su-respaldo-institucional-4596738/",
+          "date": "2026-06-03T15:11:14+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Patricia Bullrich negó la ruptura con Javier Milei y usó la justicia de la Patagonia para defender un pliego clave",
+          "source": "Diario Río Negro",
+          "url": "https://www.rionegro.com.ar/politica/patricia-bullrich-nego-la-ruptura-con-javier-milei-y-uso-la-justicia-de-la-patagonia-para-defender-un-pliego-clave-4596775/?amp=1",
+          "date": "2026-06-03T15:08:02+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Patricia Bullrich desafía a Karina Milei por el pliego de Michelli y el Gobierno se expone a una dura derrota",
+          "source": "Perfil",
+          "url": "https://www.perfil.com/noticias/politica/patricia-bullrich-desafia-a-karina-milei-por-el-pliego-de-michelli-y-el-gobierno-se-expone-a-una-dura-derrota.phtml",
+          "date": "2026-06-03T15:07:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Patricia Bullrich descartó una ruptura con Javier Milei: “No hay riesgo de fractura” — ACTUALIDAD",
+          "source": "Opinando San Nicolás",
+          "url": "https://www.opinandosannicolas.ar/2026/06/patricia-bullrich-descarto-una-ruptura-con-javier-milei-no-hay-riesgo-de-fractura/",
+          "date": "2026-06-03T14:56:24+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Bullrich trató de minimizar la nueva interna en La Libertad Avanza: \"No hay riesgo de fractura\"",
+          "source": "Crónica",
+          "url": "https://www.cronica.com.ar/politica/bullrich-trato-de-minimizar-la-nueva-interna-en-la-libertad-avanza-no-hay-riesgo-de-fractura-7297/",
+          "date": "2026-06-03T14:53:25+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Bullrich descartó una fractura en La Libertad Avanza tras poner su renuncia a disposición de Milei",
+          "source": "El Eco",
+          "url": "https://www.eleco.com.ar/politica/bullrich-descarto-una-fractura-en-la-libertad-avanza-tras-poner-su-renuncia-a-disposicion-de-milei",
+          "date": "2026-06-03T14:36:19+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Mateusz Morawiecki pokazał majątek. Może się zakręcić w głowie od tych kwot",
+          "source": "Polityka Super Express",
+          "url": "https://polityka.se.pl/wiadomosci/mateusz-morawiecki-pokazal-majatek-moze-sie-zakrecic-w-glowie-od-tych-kwot-aa-3W6o-JHzy-82x9.html",
+          "date": "2026-06-03T14:33:54+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Bullrich desafió a Karina Milei y se abre una nueva crisis en el oficialismo",
+          "source": "Realidad Sanmartinense",
+          "url": "https://realidadsm.com/2026/06/03/bullrich-desafio-a-karina-milei-y-se-abre-una-nueva-crisis-en-el-oficialismo/",
+          "date": "2026-06-03T14:16:26+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Karina Milei en alerta máxima, desconfía del chat entre Mauricio Macri y Patricia Bullrich",
+          "source": "Ambito",
+          "url": "https://www.ambito.com/politica/karina-milei-alerta-maxima-desconfia-del-chat-mauricio-macri-y-patricia-bullrich-n6284546",
+          "date": "2026-06-03T14:16:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Patricia Bullrich minimizó la crisis interna y negó fractura en La Libertad Avanza",
+          "source": "Ambito",
+          "url": "https://www.ambito.com/politica/patricia-bullrich-minimizo-la-crisis-interna-y-nego-fractura-la-libertad-avanza-n6284588",
+          "date": "2026-06-03T14:14:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "El factor Bullrich sacudió la verticalidad del Gabinete y reavivó las sospechas de interna",
+          "source": "La Gaceta",
+          "url": "https://www.lagaceta.com.ar/nota/1139543/politica/factor-bullrich-sacudio-verticalidad-gabinete-reavivo-sospechas-interna.html",
+          "date": "2026-06-03T14:12:54+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Manuel Adorni gastó $14 millones en muebles para su departamento de Caballito",
+          "source": "El Esquiu",
+          "url": "https://www.elesquiu.com/nacionales/2026/5/6/manuel-adorni-gasto-14-millones-en-muebles-para-su-departamento-de-caballito-581040.html",
+          "date": "2026-06-03T14:04:26+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Tensión en el Senado: Patricia Bullrich cuestiona la decisión de Javier Milei tras veto a jueza",
+          "source": "Diario Río Negro",
+          "url": "https://www.rionegro.com.ar/politica/guerra-silenciosa-en-el-senado-los-motivos-detras-del-portazo-de-patricia-bullrich-que-sacude-javier-milei-4596395/",
+          "date": "2026-06-03T13:42:24+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Karina Milei mandó a la IGJ a investigar los negocios de los socios de Santiago Caputo",
+          "source": "El Ágora Digital",
+          "url": "https://elagora.digital/argentina/karina-milei-igj-investiga-fundacion-faro-neuss-santiago-caputo/",
+          "date": "2026-06-03T13:42:14+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Senador de La Libertad Avanza respaldó a Bullrich y criticó el retiro del pliego de Michelli: \"Es una desproli",
+          "source": "cronica.com.ar",
+          "url": "https://www.cronica.com.ar/politica/senador-de-la-libertad-avanza-respaldo-a-bullrich-y-critico-el-retiro-del-pliego-de-micheli-es-una-desprolijidad-muy-grande-9049/",
+          "date": "2026-06-03T13:31:25+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "La agenda de Javier Milei abre nuevos interrogantes en el marco del acuerdo Mercosur-Unión Europea",
+          "source": "Ambito",
+          "url": "https://www.ambito.com/politica/la-agenda-javier-milei-abre-nuevos-interrogantes-el-marco-del-acuerdo-union-europea-mercosur-n6284472",
+          "date": "2026-06-03T13:16:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Nueva tensión en el Gobierno: Patricia Bullrich ofreció su renuncia y Javier Milei la rechazó",
+          "source": "Minuto Neuquen",
+          "url": "https://www.minutoneuquen.com/nacionales/2026/6/3/nueva-tension-en-el-gobierno-patricia-bullrich-ofrecio-su-renuncia-javier-milei-la-rechazo-411103.html",
+          "date": "2026-06-03T13:03:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Sin renunciar, Bullrich dijo que quiere la reelección de Milei y adelantó que Adorni presentará su DDJJ el 15 de junio",
+          "source": "elDiarioAR.com",
+          "url": "https://www.eldiarioar.com/politica/renunciar-bullrich-dijo-quiere-reeleccion-milei-adelanto-adorni-presentara-ddjj-15-junio_1_13272373.html",
+          "date": "2026-06-03T12:47:18+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Bullrich vs Karina Milei: renunció como jefa de bloque y la interna en LLA es irreconciliable",
+          "source": "» Cholila Online",
+          "url": "https://cholilaonline.ar/2026/06/patricia-bullrich-abre-nueva-grieta-oficialismo-karina-milei-interna-lla.html",
+          "date": "2026-06-03T12:30:22+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei y un clima de amotinamiento en el Senado: Cuando la psicológica explica la política",
+          "source": "Urgente24",
+          "url": "https://urgente24.com/actualidad/javier-milei-y-un-clima-amotinamiento-el-senado-cuando-la-psicologica-explica-la-politica-n625962",
+          "date": "2026-06-03T12:15:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Crisis en La Libertad Avanza: Patricia Bullrich le ofreció la renuncia a Milei y pone en duda 70 pliegos judiciales",
+          "source": "diariopopular.com.ar",
+          "url": "https://www.diariopopular.com.ar/politica/crisis-la-libertad-avanza-patricia-bullrich-le-ofrecio-la-renuncia-milei-y-pone-duda-70-pliegos-judiciales-n903360",
+          "date": "2026-06-03T11:58:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Gobierno sin gobierno: la nueva revolución de Carolina Serrano",
+          "source": "Letra P",
+          "url": "https://www.letrap.com.ar/gobierno-gobierno-la-nueva-revolucion-carolina-serrano-n5424212",
+          "date": "2026-06-03T10:00:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Escándalos, denuncias y operaciones: quién es quién, detrás de la feroz pelea entre Santiago Caputo y Karina Milei",
+          "source": "Clarin.com",
+          "url": "https://www.clarin.com/politica/escandalos-denuncias-operaciones-detras-feroz-pelea-santiago-caputo-karina-milei_0_fDoHa1LoCU.html",
+          "date": "2026-06-03T09:00:59+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "La pelea por el pliego de una jueza divide al bloque libertario en el Senado y complica la sesión de mañana",
+          "source": "TN",
+          "url": "https://tn.com.ar/politica/2026/06/03/la-pelea-por-el-pliego-de-una-jueza-divide-al-bloque-libertario-y-complica-la-sesion-del-jueves/",
+          "date": "2026-06-03T09:00:01+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Tait Global shouldn’t have associated itself with the Trump administration [letter]",
+          "source": "LancasterOnline",
+          "url": "https://lancasteronline.com/opinion/letters_to_editor/tait-global-shouldn-t-have-associated-itself-with-the-trump-administration-letter/article_df83e141-4bcd-43ec-a97b-d294d5dbed3a.html",
+          "date": "2026-06-03T09:00:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Bullrich en modo despegue: desautorizó a Milei por un pliego judicial, propuso su renuncia y generó crisis en LLA",
+          "source": "elDiarioAR.com",
+          "url": "https://www.eldiarioar.com/politica/bullrich-despegue-desautorizo-milei-pliego-judicial-propuso-renuncia-genero-crisis-lla_1_13270755.html",
+          "date": "2026-06-03T08:50:33+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Tuits que vuelven: cuando Adorni pedía que \"el que roba\" vaya \"preso de por vida\"",
+          "source": "Revista Noticias",
+          "url": "https://noticias.perfil.com/noticias/politica/tuits-que-vuelven-cuando-adorni-pedia-que-el-que-roba-vaya-preso-de-por-vida.phtml",
+          "date": "2026-06-03T08:10:53+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "El desplante de Bullrich a Milei escaló y en el bloque libertario reina la desconfianza",
+          "source": "Infobae",
+          "url": "https://www.infobae.com/politica/2026/06/03/el-desplante-de-bullrich-a-milei-escalo-y-en-el-bloque-libertario-reina-la-desconfianza/?outputType=amp-type",
+          "date": "2026-06-03T07:19:17+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "El dilema de otro desafío de Bullrich al Gobierno: del malestar de Karina Milei a los gestos del Presidente",
+          "source": "Infobae",
+          "url": "https://www.infobae.com/politica/2026/06/03/el-dilema-de-otro-desafio-de-bullrich-al-gobierno-del-malestar-de-karina-milei-a-los-gestos-del-presidente/",
+          "date": "2026-06-03T07:10:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "La incomodidad en el Gabinete por la diferenciación de Bullrich y la hipótesis que vuelve a enfrentar a la interna",
+          "source": "Infobae",
+          "url": "https://www.infobae.com/politica/2026/06/03/la-incomodidad-en-el-gabinete-por-la-diferenciacion-de-bullrich-y-la-hipotesis-que-vuelve-a-enfrentar-a-la-interna/?outputType=amp-type",
+          "date": "2026-06-03T07:00:20+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Bullrich se rebeló y puso a disposición su renuncia del bloque en el Senado",
+          "source": "La Gaceta",
+          "url": "https://www.lagaceta.com.ar/nota/amp/1139495/politica/bullrich-se-rebelo-puso-disposicion-renuncia-bloque-senado.html",
+          "date": "2026-06-03T02:54:37+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Bullrich desafió a Karina Milei, ofreció su renuncia y abrió una nueva grieta en el oficialismo",
+          "source": "Diario Río Negro",
+          "url": "https://www.rionegro.com.ar/politica/bullrich-desafio-a-karina-milei-ofrecio-su-renuncia-y-abrio-una-nueva-grieta-en-el-oficialismo-4596336/",
+          "date": "2026-06-03T02:22:16+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "La mutación eterna de Bullrich",
+          "source": "Perfil",
+          "url": "https://www.perfil.com/noticias/columnistas/la-mutacion-eterna-de-bullrich.phtml",
+          "date": "2026-06-03T02:06:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Patricia Bullrich le bajó el tono a las tensiones dentro de La Libertad Avanza: \"No hay internas\"",
+          "source": "MDZ Online",
+          "url": "https://www.mdzol.com/politica/patricia-bullrich-le-el-tono-las-tensiones-dentro-la-libertad-avanza-no-hay-internas-n1534743",
+          "date": "2026-06-03T01:30:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Bullrich confirmó que ofreció su renuncia al bloque de la Libertad Avanza",
+          "source": "elnueve.com",
+          "url": "https://www.elnueve.com/mendoza/bullrich-confirmo-que-ofrecio-su-renuncia-al-bloque-de-la-libertad-avanza_20260602/",
+          "date": "2026-06-03T01:22:40+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Patricia Bullrich confirmó que puso su renuncia a disposición de Javier Milei por la polémica del pliego de una jueza",
+          "source": "minutodecierre.com",
+          "url": "https://www.minutodecierre.com/nota/2026-6-2-21-8-0-patricia-bullrich-confirmo-que-puso-su-renuncia-a-disposicion-de-javier-milei-por-la-polemica-del-pliego-de-una-jueza",
+          "date": "2026-06-03T00:59:14+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Patricia Bullrich discutió con su bloque, amenazó a Milei con renunciar y peligra la sesión del Senado",
+          "source": "Letra P",
+          "url": "https://www.letrap.com.ar/congreso/patricia-bullrich-discutio-su-bloque-amenazo-milei-renunciar-y-peligra-la-sesion-del-senado-n5424207",
+          "date": "2026-06-03T00:38:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Crisis en LLA: Patricia Bullrich ofreció su renuncia a Javier Milei",
+          "source": "Radio Salta",
+          "url": "https://www.radiosalta.com.ar/nota/2026-6-2-20-29-0-crisis-en-lla-patricia-bullrich-ofrecio-su-renuncia-a-javier-milei/amp",
+          "date": "2026-06-02T23:57:41+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei: Una arenga por los “mejores 30 años” y el antídoto contra los “monstruos”, en medio de una nueva tensión interna",
+          "source": "La Nación",
+          "url": "https://www.lanacion.com.ar/politica/javier-milei-una-arenga-por-los-mejores-30-anos-y-el-antidoto-contra-los-monstruos-en-medio-de-una-nid02062026/",
+          "date": "2026-06-02T23:42:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "En Mendoza, Patricia Bullrich confirmó que puso su renuncia a disposición de Javier Milei y él no la aceptó",
+          "source": "Los Andes",
+          "url": "https://www.losandes.com.ar/politica/en-mendoza-patricia-bullrich-confirmo-que-puso-su-renuncia-disposicion-javier-milei-y-el-no-la-acepto-n5993404",
+          "date": "2026-06-02T23:20:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei en el IAEF: «Intentaron un golpe de Estado y les salió mal»",
+          "source": "» Cholila Online",
+          "url": "https://cholilaonline.ar/2026/06/javier-milei-en-el-iaef-intentaron-un-golpe-de-estado-y-les-salio-mal.html",
+          "date": "2026-06-02T23:17:23+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei, contra quienes dicen que \"el gobierno está paralizado\": \"Hicimos cosas que no pudo hacer nadie en 40 años\"",
+          "source": "Clarín",
+          "url": "https://www.clarin.com/videos/javier-milei-dicen-gobierno-paralizado-hicimos-cosas-pudo-hacer-nadie-40-anos_3_60OXPQLhFW.html",
+          "date": "2026-06-02T22:43:37+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Crisis en La Libertad Avanza: Bullrich ofreció su renuncia y complica la aprobación de pliegos en el Senado",
+          "source": "La Prensa Digital",
+          "url": "https://www.laprensa.com.ar/amp/Crisis-en-La-Libertad-Avanza-Bullrich-ofrecio-su-renuncia-y-complica-la-aprobacion-de-pliegos-en-el-Senado-572320.note.aspx",
+          "date": "2026-06-02T22:29:41+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Patricia Bullrich le presentó su renuncia a Javier Milei",
+          "source": "LM Neuquén",
+          "url": "https://www.lmneuquen.com/pais/patricia-bullrich-le-presento-su-renuncia-javier-milei-n1240804",
+          "date": "2026-06-02T22:00:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Llamada entre Javier Milei y Patricia Bullrich vuelve a encender alarmas: disidencias en el bloque y renuncia a disposición",
+          "source": "Ambito",
+          "url": "https://www.ambito.com/politica/llamada-javier-milei-y-patricia-bullrich-vuelven-encender-alarmas-disidencias-el-bloque-y-renuncia-diposicion-n6284370",
+          "date": "2026-06-02T21:59:54+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "El pliego de María Verónica Michelli desató otro cortocircuito entre Javier Milei y Patricia Bullrich",
+          "source": "0221",
+          "url": "https://www.0221.com.ar/nacional/el-pliego-maria-veronica-michelli-desato-otro-cortocircuito-javier-milei-y-patricia-bullrich-n128964",
+          "date": "2026-06-02T21:48:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Crisis en La Libertad Avanza: Bullrich rechazó el veto a Michelli y ofreció su renuncia",
+          "source": "Diario Nuevo Día",
+          "url": "https://www.eldiarionuevodia.com.ar/nacionales/crisis-en-la-libertad-avanza-bullrich-rechazo-el-veto-a-michelli-y-ofrecio-su-renuncia-6327/",
+          "date": "2026-06-02T21:40:01+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei rechazó la renuncia de Patricia Bullrich, pero hierve el vínculo con la senadora",
+          "source": "MDZ Online",
+          "url": "https://www.mdzol.com/politica/javier-milei-rechazo-la-renuncia-patricia-bullrich-pero-hierve-el-vinculo-la-senadora-n1534632",
+          "date": "2026-06-02T21:38:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Patricia Bullrich, rebelde: Karina Milei pone el grito en el cielo, pero ordena no confrontar con la senadora",
+          "source": "Letra P",
+          "url": "https://www.letrap.com.ar/politica/patricia-bullrich-rebelde-karina-milei-pone-el-grito-el-cielo-pero-ordena-no-confrontar-la-senadora-n5424188",
+          "date": "2026-06-02T21:26:36+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Martín Menem volvió a minimizar la interna en el Gobierno: \"No le cambia la vida a nadie\"",
+          "source": "Clarín",
+          "url": "https://www.clarin.com/politica/martin-menem-volvio-minimizar-interna-gobierno-cambia-vida-nadie_0_j2mr5HAkJs.html",
+          "date": "2026-06-02T20:57:35+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Bullrich ofreció su renuncia como jefa del bloque libertario y expuso nuevas tensiones con los Milei",
+          "source": "Suquia",
+          "url": "https://suquia.ar/bullrich-ofrecio-su-renuncia-como-jefa-del-bloque-libertario-y-expuso-nuevas-tensiones-con-los-milei/",
+          "date": "2026-06-02T20:55:53+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "ÚLTIMO MOMENTO: Patricia Bullrich ofreció su renuncia a Javier Milei",
+          "source": "En Boca de Todos",
+          "url": "https://www.enbocadetodoshd.com.ar/amp/ultimo-momento-patricia-bullrich-ofrecio-su-renuncia-javier-milei-119042.html",
+          "date": "2026-06-02T20:50:53+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Bullrich desafió a Milei por el veto a una candidata a jueza y hasta ofreció su renuncia",
+          "source": "La Gaceta",
+          "url": "https://www.lagaceta.com.ar/nota/1139448/politica/bullrich-desafio-milei-veto-candidata-jueza-hasta-ofrecio-renuncia.html",
+          "date": "2026-06-02T20:41:45+00:00",
+          "category": "argentina"
+        }
+      ],
+      "first_seen": "2026-06-04T05:21:20+00:00",
+      "last_seen": "2026-06-04T05:21:20+00:00"
+    },
+    {
+      "id": "pp-and-vox-coalition-talks-intensify-in-spain",
+      "title": "PP and Vox coalition talks intensify in Spain",
+      "blurb": "Spain's conservative People's Party (PP) and far-right Vox accelerate coalition talks across multiple regions, including Castilla y León, Extremadura, and Aragón, sparking national debate over policy concessions and ideological shifts.",
+      "affect": "This commands disproportionate attention due to the ideological polarization, potential policy shifts, and the broader implications for Spain's political landscape.",
       "intensity": 5,
       "affect_signals": [
         "polarized contention",
-        "alarmist framing",
         "cross-source repetition",
+        "moral charge",
+        "leadership crisis tone",
+        "alarmist framing"
+      ],
+      "categories": [
+        "Vox"
+      ],
+      "article_count": 65,
+      "refs": [
+        {
+          "title": "Alfonso Fernández Mañueco blinda con Vox cuatro años de Gobierno basados en 324 medidas",
+          "source": "Diario de Ávila",
+          "url": "https://www.diariodeavila.es/noticia/zce0e427c-79dd-4938-9688caacd8c2de36/202606/manueco-blinda-con-vox-cuatro-anos-de-gobierno-con-324-medidas",
+          "date": "2026-06-04T03:00:00+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "El PP, tan lejos de Cataluña y tan cerca de Vox",
+          "source": "Crónica Vasca",
+          "url": "https://cronicavasca.elespanol.com/opinion/20260604/pp-lejos-cataluna-cerca-vox/1003742767138_12.html",
+          "date": "2026-06-04T03:00:00+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Dirigentes del PP ven capaz a Moreno de sortear la entrada de Vox en la Junta, pero no la prioridad nacional",
+          "source": "El Confidencial",
+          "url": "https://www.elconfidencial.com/espana/andalucia/2026-06-04/pp-moreno-sortear-entrada-vox-junta-prioridad-nacional_4366644/",
+          "date": "2026-06-04T03:00:00+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Vox avisa de que las pruebas a los \"falsos menas\" son solo el principio y Delegación ofrece la colaboración que niegue la DGA",
+          "source": "El Español",
+          "url": "https://www.elespanol.com/aragon/actualidad/20260604/vox-avisa-pruebas-falsos-menas-solo-principio-delegacion-ofrece-colaboracion-niegue-dga/1003744272566_0.html",
+          "date": "2026-06-04T03:00:00+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "PP y Vox consolidan su alianza para desalojar al sanchismo tras ocho años enfrentados",
+          "source": "Vozpopuli",
+          "url": "https://www.vozpopuli.com/espana/politica/pp-y-vox-consolidan-su-alianza-para-desalojar-al-sanchismo-tras-ocho-anos-enfrentados.html",
+          "date": "2026-06-04T02:45:00+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "El PP presiona a Vox tras su freno a la Ley Agraria y la de Costas: «Ellos decidirán si van contra los agri...",
+          "source": "OkDiario",
+          "url": "https://okdiario.com/baleares/pp-presiona-vox-freno-leyes-agraria-costas-ellos-decidiran-si-van-contra-agricultores-17632599",
+          "date": "2026-06-04T02:00:20+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "El problema de juntarse con Vox",
+          "source": "Málaga Hoy",
+          "url": "https://www.malagahoy.es/opinion/articulos/problema-juntarse-vox_0_2006933428.html",
+          "date": "2026-06-04T01:07:54+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "PP y Vox firman su pacto en Castilla y León con un plan contra la política migratoria de Sánchez",
+          "source": "ABC",
+          "url": "https://www.abc.es/espana/castilla-leon/pp-vox-firman-acuerdo-castilla-leon-plan-20260603024221-nt.html",
+          "date": "2026-06-04T00:42:21+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Vox traslada la presión a Andalucía y mantiene la exigencia de la 'prioridad nacional' para Moreno",
+          "source": "ABC",
+          "url": "https://www.abc.es/espana/vox-traslada-presion-andalucia-mantiene-exigencia-prioridad-20260604013931-nt.html",
+          "date": "2026-06-03T23:39:31+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "UPL carga contra el pacto PP-Vox en Castilla y León: “gris, del miedo y hecho desde Madrid”",
+          "source": "Ahora León",
+          "url": "https://ahoraleon.com/upl-carga-contra-el-pacto-pp-vox-en-castilla-y-leon-gris-del-miedo-y-hecho-desde-madrid/",
+          "date": "2026-06-03T22:13:42+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Aimar Bretos señala un punto clave del acuerdo PP-Vox en Castilla y León: \"Ha quedado eclipsado, pero es igual de bestia que la prioridad nacional\"",
+          "source": "Cadena SER",
+          "url": "https://cadenaser.com/nacional/2026/06/03/aimar-bretos-senala-un-punto-clave-del-acuerdo-pp-vox-en-castilla-y-leon-ha-quedado-eclipsado-pero-es-igual-de-bestia-que-la-prioridad-nacional-cadena-ser/",
+          "date": "2026-06-03T22:13:35+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Vox maximiza su área de influencia ideológica en Castilla y León al hacerse con un ansiado tridente: inmigración, política ambiental y cultura",
+          "source": "El Mundo",
+          "url": "https://www.elmundo.es/espana/2026/06/04/6a20714ee85ece00578b45a4.html",
+          "date": "2026-06-03T22:10:00+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "La 'prioridad nacional' se extiende a Castilla y León: ¿Qué dice el acuerdo PP-Vox?",
+          "source": "Tribuna de Salamanca.",
+          "url": "https://www.tribunasalamanca.com/noticias/447238/la-prioridad-nacional-se-extiende-a-castilla-y-leon-que-dice-el-acuerdo-pp-vox",
+          "date": "2026-06-03T20:43:00+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "PP y Vox en Castilla y León: un acuerdo \"sin sesgo ideológico\" que defiende a la Iglesia, los toros y la prioridad nacional",
+          "source": "Diario Público",
+          "url": "https://www.publico.es/politica/partidos/pp-vox-castilla-leon-acuerdo-sesgo-ideologico-defiende-iglesia-toros-prioridad-nacional.html",
+          "date": "2026-06-03T20:38:41+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "PP y Vox comienzan el deshielo en Andalucía y buscan fecha para empezar a negociar",
+          "source": "El Confidencial",
+          "url": "https://www.elconfidencial.com/espana/andalucia/2026-06-03/pp-y-vox-comienzan-el-deshielo-en-andalucia_4366938/",
+          "date": "2026-06-03T20:33:00+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Mañueco habla de \"un buen día para Castilla y León\" y justifica la prioridad nacional como \"arraigo\"",
+          "source": "Tribuna de Salamanca.",
+          "url": "https://www.tribunasalamanca.com/noticias/447210/manueco-habla-de-un-buen-dia-para-castilla-y-leon-y-justifica-la-prioridad-nacional-como-arraigo",
+          "date": "2026-06-03T19:23:00+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Los sindicatos ven en el pacto entre PP y Vox un «regreso al pasado»",
+          "source": "Diario de Ávila",
+          "url": "https://www.diariodeavila.es/noticia/za1c92965-820e-4950-b182ff4b1b9d9b90/202606/los-sindicatos-ven-en-el-pacto-un-regreso-al-pasado",
+          "date": "2026-06-03T19:20:57+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Los sindicatos ven en el pacto un «regreso al pasado»",
+          "source": "Diario de Burgos",
+          "url": "https://www.diariodeburgos.es/noticia/za1c92965-820e-4950-b182ff4b1b9d9b90/202606/los-sindicatos-ven-en-el-pacto-un-regreso-al-pasado",
+          "date": "2026-06-03T19:20:57+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "El camino de baldosas verdes de Feijóo o cómo el PP cede ante Vox: nuevo acuerdo en Castilla y León mientras",
+          "source": "LaSexta",
+          "url": "https://www.lasexta.com/noticias/nacional/camino-baldosas-verdes-feijoo-como-cede-vox-nuevo-acuerdo-castilla-leon-mientras-que-andalucia-empiezan-contactos_202606036a207e947d8b1d38126825ef.html",
+          "date": "2026-06-03T19:20:52+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "El tercer acuerdo PP-Vox con la \"prioridad nacional\" eleva la presión sobre la negociación de Moreno con los ultras",
+          "source": "elDiario.es",
+          "url": "https://www.eldiario.es/andalucia/tercer-acuerdo-pp-vox-prioridad-nacional-eleva-presion-negociacion-moreno-ultras_1_13271060.html",
+          "date": "2026-06-03T19:18:39+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "PP y Vox dejan marcada su impronta en vivienda, fiscalidad e inmigración",
+          "source": "Diario Palentino",
+          "url": "https://www.diariopalentino.es/noticia/z96509da9-921d-444d-91d7b683c86142fb/202606/pp-y-vox-dejan-marcada-su-impronta-politica-en-el-acuerdo",
+          "date": "2026-06-03T19:11:12+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "\"Es un día triste para nuestra Comunidad Autónoma\"",
+          "source": "RTVE.es",
+          "url": "https://www.rtve.es/play/audios/24-horas/carlos-martinez-psoe-cyl-dia-triste-para-nuestra-comunidad-autonoma/17099800/",
+          "date": "2026-06-03T18:59:39+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Mañueco cede a Vox las consejerías de agricultura, cultura y familia",
+          "source": "Acueducto2",
+          "url": "https://www.acueducto2.com/manueco-cede-a-vox-las-consejerias-de-agricultura-cultura-y-familia/183239",
+          "date": "2026-06-03T18:42:21+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Abascal felicita a Castilla y León por el acuerdo alcanzado entre PP y Vox",
+          "source": "ABC",
+          "url": "https://www.abc.es/espana/castilla-leon/abascal-felicita-castilla-leon-acuerdo-alcanzado-pp-20260603202831-nt.html",
+          "date": "2026-06-03T18:28:32+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Caporalato o guerra dei campi dietro la strage dei braccianti",
+          "source": "ANSA",
+          "url": "https://www.ansa.it/sito/notizie/cronaca/2026/06/03/caporalato-o-guerra-dei-campi-dietro-la-strage-dei-braccianti_460c79bf-9ae4-4a52-bc0b-d46d05eb8048.html",
+          "date": "2026-06-03T18:14:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Tisza-kormány: Magyar Péter új megállapodást köt Emmanuel Macronnal, felszólítást küldött Orbán Viktornak",
+          "source": "Portfolio.hu",
+          "url": "https://www.portfolio.hu/gazdasag/20260603/tisza-kormany-magyar-peter-uj-megallapodast-kot-emmanuel-macronnal-felszolitast-kuldott-orban-viktornak-840824",
+          "date": "2026-06-03T18:04:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "PP y Vox reclaman devolver al Gobierno la Ley del Cine por obsoleta y con carga ideológica",
+          "source": "Demócrata",
+          "url": "https://www.democrata.es/politica/congreso-y-senado/pp-y-vox-reclaman-devolver-al-gobierno-la-ley-del-cine-por-obsoleta-y-con-carga-ideologica/",
+          "date": "2026-06-03T17:54:45+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Las medidas específicas para Salamanca del acuerdo de Gobierno PP-VOX en Castilla y León: carreteras, industria y tren",
+          "source": "Salamancahoy",
+          "url": "https://www.salamancahoy.es/salamanca/ciudad/medidas-especificas-salamanca-acuerdo-gobierno-ppvox-castilla-20260603160741-nt.html",
+          "date": "2026-06-03T17:13:41+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Meloni hails EU flexibility for energy decision",
+          "source": "ANSA",
+          "url": "https://www.ansa.it/english/news/business/2026/06/03/meloni-hails-eu-flexibility-for-energy-decision_fb1be0d5-c608-4d9f-a025-0b8fb35356f7.html",
+          "date": "2026-06-03T17:08:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Los leoneses, divididos ante el pacto entre PP y Vox para gobernar Castilla y León",
+          "source": "La Nueva Crónica",
+          "url": "https://www.lanuevacronica.com/actualidad/encuesta-leoneses-pacto-pp-vox-castilla-y-leon_197499_102.html",
+          "date": "2026-06-03T16:58:00+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "El PP da tres consejerías a Vox en Castilla y León y acepta la “prioridad nacional” para investir a Mañueco",
+          "source": "CLMPress",
+          "url": "https://clmpress.com/n/2026/06/el-pp-da-tres-consejerias-a-vox-en-castilla-y-leon-y-acepta-la-prioridad-nacional-para-investir-a-manueco/",
+          "date": "2026-06-03T16:53:56+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "PP y Vox acuerdan la bonificación de los peajes y el ramal ferroviario de Prado del Hoyo",
+          "source": "El Norte de Castilla",
+          "url": "https://www.elnortedecastilla.es/segovia/pp-vox-acuerdan-bonificacion-peajes-ramal-ferroviario-20260603185132-nt.html",
+          "date": "2026-06-03T16:51:33+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Los pactos de PP y Vox en CyL, Extremadura y Aragón coinciden en su núcleo ideológico",
+          "source": "Región Digital",
+          "url": "https://www.regiondigital.com/noticias/extremadura/430847-los-pactos-de-pp-y-vox-en-cyl-extremadura-y-aragon-coinciden-en-su-nucleo-ideologico.html",
+          "date": "2026-06-03T16:49:51+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "PP y Vox acercan posiciones en Andalucía para 'traducir' la 'prioridad nacional' e investir a Juanma Moreno",
+          "source": "ABC",
+          "url": "https://www.abc.es/espana/andalucia/pp-vox-acercan-posiciones-andalucia-traducir-prioridad-20260603183152-nts.html",
+          "date": "2026-06-03T16:31:53+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "El PP y Vox rechazan en la Diputación de Alicante apoyar al profesorado valenciano en plena huelga educativa",
+          "source": "Información",
+          "url": "https://www.informacion.es/politica/2026/06/03/pp-vox-rechazan-diputacion-alicante-apoyar-profesorado-130970961.html",
+          "date": "2026-06-03T16:24:34+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "PP y Vox reivindican para León muchas infraestructuras... pero de otras administraciones",
+          "source": "La Nueva Crónica",
+          "url": "https://www.lanuevacronica.com/actualidad/pp-vox-reivindican-leon-muchas-infraestructuras-pero-otras-administraciones_197494_102.html",
+          "date": "2026-06-03T16:22:00+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "El PSOE ve el pacto PP-Vox en CyL plagado de \"xenofobia y racismo\", recortes de \"derechos y libertades\"",
+          "source": "PressDigital",
+          "url": "https://www.pressdigital.es/articulo/politica/2026-06-03/5905995-psoe-ve-pacto-pp-vox-cyl-plagado-xenofobia-racismo-recortes-derechos-libertades",
+          "date": "2026-06-03T16:09:00+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Ciudad Real: Vox exige una solución urgente para la N-430 y la ejecución de la A-43",
+          "source": "La Tribuna de Ciudad Real",
+          "url": "https://www.latribunadeciudadreal.es/noticia/z0d5bccf0-c3e1-48f5-8765b0d952d58a85/202606/vox-exige-una-solucion-urgente-para-la-n-430",
+          "date": "2026-06-03T16:07:00+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Efter misstankarna – lämnar SD helt",
+          "source": "Svenska Dagbladet",
+          "url": "https://www.svd.se/a/k0plwB/efter-misstankarna-ny-sd-ledamot-pa-plats",
+          "date": "2026-06-03T15:55:03+00:00",
+          "category": "sweden"
+        },
+        {
+          "title": "Miguel Ángel Viñas (IU): \"Las políticas del PP con VOX se van a rechizar más y va a ser negativo para la provincia\"",
+          "source": "La Opinión de Zamora",
+          "url": "https://www.laopiniondezamora.es/zamora/2026/06/03/miguel-angel-vinas-iu-politicas-130976932.html",
+          "date": "2026-06-03T15:47:12+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Las 5 menciones directas a Soria en el pacto PP-Vox por la Junta de Castilla y León - Heraldo-Diario de Soria",
+          "source": "",
+          "url": "https://www.heraldodiariodesoria.es/soria/260603/209499/5-menciones-directas-soria-pacto-pp-vox-junta-castilla-leon.html",
+          "date": "2026-06-03T15:45:09+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Las negociaciones entre el PP y Vox en Andalucía serán \"inminentes\" y las liderará Moreno \"en clave andaluza\"",
+          "source": "20Minutos",
+          "url": "https://www.20minutos.es/andalucia/las-negociaciones-entre-pp-vox-andalucia-seran-inminentes-las-liderara-moreno-clave-andaluza_6978813_0.html",
+          "date": "2026-06-03T15:23:12+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Pruebas forenses a niñas de nueve años: Vox inflama en Aragón su lucha contra los menores migrantes con el plácet del PP",
+          "source": "elDiario.es",
+          "url": "https://www.eldiario.es/aragon/politica/pruebas-forenses-ninas-nueve-anos-vox-inflama-aragon-lucha-menores-migrantes-placet-pp_1_13272515.html",
+          "date": "2026-06-03T15:12:58+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Así será el nuevo gobierno PP-Vox en Castilla y León",
+          "source": "Tribuna de Valladolid.",
+          "url": "https://www.tribunavalladolid.com/noticias/447219/asi-sera-el-nuevo-gobierno-pp-vox-en-castilla-y-leon",
+          "date": "2026-06-03T14:23:36+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Abascal se congratula por el acuerdo de Gobierno de PP y Vox y destaca que incluye la prioridad nacional",
+          "source": "PressDigital",
+          "url": "https://www.pressdigital.es/articulo/politica/2026-06-03/5906002-abascal-congratula-acuerdo-gobierno-pp-vox-destaca-incluye-prioridad-nacional",
+          "date": "2026-06-03T14:04:00+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Provincia di Salerno e Lega Pallavolo Serie A Femminile, sottoscritto il Protocollo d'Intesa",
+          "source": "Provincia di Salerno",
+          "url": "https://www.provincia.salerno.it/archivio10_notizie-e-comunicati_0_14898.html",
+          "date": "2026-06-03T13:48:03+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Vox asume más competencias dispuesto a mostrarse exigente en el cumplimiento del pacto",
+          "source": "El Norte de Castilla",
+          "url": "https://www.elnortedecastilla.es/castillayleon/vox-asume-competencias-dispuesto-mostrarse-exigente-cumplimiento-20260603153745-nt.html",
+          "date": "2026-06-03T13:37:45+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Pacto PP-Vox en Castilla y León: de gasto en Primaria a la fidelización MIR",
+          "source": "Redacción Médica",
+          "url": "https://amp.redaccionmedica.com/autonomias/castilla-leon/pacto-pp-vox-en-castilla-y-leon-de-gasto-en-primaria-a-la-fidelizacion-mir-5757",
+          "date": "2026-06-03T13:35:30+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Acuerdo \"amplio\" de PP y Vox en Castilla y León con la prioridad nacional \"en ayudas sociales y de vivienda\"",
+          "source": "El Mundo",
+          "url": "https://www.elmundo.es/espana/2026/06/03/6a202486e4d4d871528b45c4-video.html",
+          "date": "2026-06-03T12:56:40+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "El pacto PP-Vox recoge cuatro leyes, 5 estrategias y 20 planes",
+          "source": "Diario de Burgos",
+          "url": "https://www.diariodeburgos.es/noticia/z2fe76c13-8400-453f-9c4e9bc55f732123/202606/el-pacto-pp-vox-recoge-cuatro-leyes-5-estrategias-y-20-planes",
+          "date": "2026-06-03T12:39:00+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Vox tendrá un vicepresidente y dos consejeros en el Gobierno de Castilla y León, según el acuerdo con el PP - EFE",
+          "source": "Agencia de noticias",
+          "url": "https://efe.com/espana/2026-06-03/pp-vox-acuerdo-gobierno-castilla-y-leon/",
+          "date": "2026-06-03T12:37:32+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "PP y Vox impulsarán en el Parlament una iniciativa para llevar al Congreso la prohibición del burka en espacios públicos de Baleares",
+          "source": "Diario de Mallorca",
+          "url": "https://www.diariodemallorca.es/mallorca/2026/06/03/pp-vox-impulsaran-parlament-iniciativa-130971757.html",
+          "date": "2026-06-03T12:35:41+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Así se reparten PP y Vox las consejerías en Castilla y León: la «prioridad nacional» entra con la cartera de Desregularización",
+          "source": "Leonoticias",
+          "url": "https://www.leonoticias.com/castillayleon/reparten-pp-vox-consejerias-castilla-leon-prioridad-20260603142334-nt.html",
+          "date": "2026-06-03T12:23:34+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "El PP abraza la «prioridad nacional» de Vox para pactar en Castilla y León",
+          "source": "naiz:",
+          "url": "https://www.naiz.eus/info/noticia/amp/20260603/el-pp-abraza-la-prioridad-nacional-de-vox-para-pactar-en-castilla-y-leon",
+          "date": "2026-06-03T12:22:00+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "PP y Vox firman un acuerdo con 324 medidas y muchas incógnitas en el organigrama de la Junta",
+          "source": "El Norte de Castilla",
+          "url": "https://www.elnortedecastilla.es/castillayleon/pp-vox-firman-acuerdo-324-medidas-incognitas-20260603140830-nt.html",
+          "date": "2026-06-03T12:16:27+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Así queda el reparto de poder en Castilla y León: el PP tendrá siete consejerías y Vox, tres y la Vicepresidencia primera",
+          "source": "El Debate",
+          "url": "https://www.eldebate.com/espana/castilla-y-leon/20260603/asi-queda-reparto-poder-castilla-leon-pp-tendra-siete-consejerias-vox-tres-vicepresidencia-primera_424706.html",
+          "date": "2026-06-03T11:59:11+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Mañueco cede a Vox una vicepresidencia y las consejerías de Cultura, Agricultura y Familia en Castilla y León",
+          "source": "Diario Público",
+          "url": "https://www.publico.es/politica/partidos/vox-asume-vicepresidencia-castilla-leon-consejerias-cultura-agricultura-familia.html",
+          "date": "2026-06-03T11:39:08+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "El gobierno de PP y VOX contará con dos vicepresidencias con Pollán como número dos y tres consejerías para los de Abascal",
+          "source": "Diario de Castilla y León",
+          "url": "https://www.diariodecastillayleon.es/castilla-y-leon/260603/107157/gobierno-pp-vox-contara-dos-vicepresidencias-pollan-numeros-dos-tres-consejerias-abascal.html",
+          "date": "2026-06-03T11:35:00+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "PP y VOX sellan el nuevo organigrama de la Junta de Castilla y León: 10 consejerías para una nueva etapa",
+          "source": "Castilla y León Televisión",
+          "url": "https://www.cyltv.es/Noticia/4D0AB286-E961-43D0-83F9C8111F4B7DEB/PP-y-VOX-sellan-el-nuevo-organigrama-de-la-Junta-de-Castilla-y-Leon-10-consejerias-para-una-nueva-etapa",
+          "date": "2026-06-03T11:24:58+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "DOCUMENTO | Consulta el pacto íntegro entre PP y Vox en Castilla y León",
+          "source": "elDiario.es",
+          "url": "https://www.eldiario.es/castilla-y-leon/documento-consulta-pacto-integro-pp-vox-castilla-leon_1_13271808.html",
+          "date": "2026-06-03T11:12:05+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "PP y Vox alcanzan un pacto de Gobierno en Castilla y León",
+          "source": "Libertad Digital",
+          "url": "https://www.libertaddigital.com/espana/politica/2026-06-03/pp-y-vox-alcanzan-un-pacto-de-gobierno-en-castilla-y-leon-7414363/",
+          "date": "2026-06-03T11:08:13+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Así se reparten PP y Vox las competencias en el nuevo Gobierno de Castilla y León",
+          "source": "ABC",
+          "url": "https://www.abc.es/espana/castilla-leon/reparten-pp-vox-competencias-nuevo-gobierno-castilla-20260603130119-nt.html",
+          "date": "2026-06-03T11:01:20+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "El pacto PP y Vox en CyL incluye prioridad nacional y una vicepresidencia y 3 consejerías para los de Abascal",
+          "source": "Europa Press",
+          "url": "https://www.europapress.es/castilla-y-leon/noticia-pacto-pp-vox-cyl-incluye-prioridad-nacional-vicepresidencia-consejerias-abascal-20260603124620.html",
+          "date": "2026-06-03T10:46:20+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Vox se queda con la Consejería de Agricultura tras el pacto de Gobierno en Castilla y León",
+          "source": "Animalshealth.es",
+          "url": "https://www.animalshealth.es/politica/vox-queda-con-consejeria-agricultura-tras-pacto-gobierno-castilla-leon",
+          "date": "2026-06-03T09:40:00+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Frp | Frp sikrer mer frihet i motorferdselen",
+          "source": "Namdalsavisa",
+          "url": "https://www.namdalsavisa.no/frp-sikrer-mer-frihet-i-motorferdselen/o/5-121-1576383",
+          "date": "2026-06-03T09:18:32+00:00",
+          "category": "norway"
+        },
+        {
+          "title": "Vox advierte que no tolerará \"parches electorales\" en la futura estación de autobuses de Arévalo",
+          "source": "Tribuna de Ávila.",
+          "url": "https://www.tribunaavila.com/noticias/447186/vox-advierte-que-no-tolerara-parches-electorales-en-la-futura-estacion-de-autobuses-de-arevalo",
+          "date": "2026-06-03T09:05:38+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Vox tendrá tres consejerías, una con rango de Vicepresidencia en Castilla y León",
+          "source": "ABC",
+          "url": "https://www.abc.es/espana/castilla-leon/vox-tres-consejerias-rango-vicepresidencia-castilla-leon-20260603110135-nt.html",
+          "date": "2026-06-03T09:01:35+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Javier Milei recortó un 89% el presupuesto para políticas de género",
+          "source": "Perfil",
+          "url": "https://www.perfil.com/noticias/politica/javier-milei-recorto-un-89-el-presupuesto-para-politicas-de-genero.phtml",
+          "date": "2026-06-03T08:38:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "PP y Vox alcanzan un acuerdo con prioridad nacional para el Gobierno de Castilla y León que presentarán hoy",
+          "source": "ABC",
+          "url": "https://www.abc.es/espana/castilla-leon/pp-vox-presentan-hoy-acuerdo-gobierno-castilla-20260603092338-nt.html",
+          "date": "2026-06-03T08:36:52+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "El PP cierra un acuerdo con Vox en Castilla y León",
+          "source": "ORAIN",
+          "url": "https://orain.eus/es/politica/2026/06/03/el-pp-cierra-un-acuerdo-vox-en-castilla-leon/",
+          "date": "2026-06-03T08:02:55+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "PP y VOX cierran el acuerdo de Gobierno en Castilla y León",
+          "source": "Diario de Castilla y León",
+          "url": "https://www.diariodecastillayleon.es/castilla-y-leon/260603/107156/pp-vox-cierran-el-acuerdo-gobierno-castilla-leon.html",
+          "date": "2026-06-03T07:52:12+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "PP y Vox cierran su acuerdo de gobierno en Castilla y León para investir a Mañueco como presidente",
+          "source": "Euronews",
+          "url": "https://es.euronews.com/my-europe/2026/06/03/pp-y-vox-cierran-su-acuerdo-de-gobierno-en-castilla-y-leon-para-investir-a-manueco-como-pr",
+          "date": "2026-06-03T07:47:06+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "PP y Vox cierran su acuerdo de gobierno de coalición para Castilla y León",
+          "source": "Infobae",
+          "url": "https://www.infobae.com/espana/2026/06/03/pp-y-vox-cierran-su-acuerdo-de-gobierno-de-coalicion-para-castilla-y-leon/",
+          "date": "2026-06-03T07:45:36+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "PP y Vox afianzan su alianza con un nuevo pacto en Castilla y León para investir a Mañueco",
+          "source": "El Correo",
+          "url": "https://www.elcorreo.com/politica/pp-vox-alcanzan-acuerdo-castilla-leon-investir-20260603094218-ntrc.html",
+          "date": "2026-06-03T07:42:18+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "PP y Vox alcanzan un acuerdo para investir a Mañueco en Castilla y León y presentarán el texto este miércoles",
+          "source": "20Minutos",
+          "url": "https://www.20minutos.es/castilla-y-leon/pp-vox-alcanzan-un-acuerdo-para-investir-manueco-castilla-leon-presentaran-texto-este-miercoles_6978513_0.html",
+          "date": "2026-06-03T07:40:23+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Hay acuerdo PP-Vox en Castilla y León",
+          "source": "El Norte de Castilla",
+          "url": "https://www.elnortedecastilla.es/castillayleon/acuerdo-ppvox-castilla-leon-20260603093908-nt.html",
+          "date": "2026-06-03T07:39:08+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "PP y Vox alcanzan un acuerdo para gobernar Castilla y León en coalición",
+          "source": "Cadena SER",
+          "url": "https://cadenaser.com/castillayleon/2026/06/03/pp-y-vox-alcanzan-un-acuerdo-para-gobernar-castilla-y-leon-en-coalicion-radio-valladolid/",
+          "date": "2026-06-03T07:38:53+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "PP y Vox cierran su acuerdo de gobierno para Castilla y León",
+          "source": "El Mundo",
+          "url": "https://www.elmundo.es/espana/2026/06/03/6a1fd7a4e4d4d87a258b45a3.html",
+          "date": "2026-06-03T07:38:27+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "PP y Vox llegan a un acuerdo de gobierno en Castilla y León",
+          "source": "El Independiente",
+          "url": "https://www.elindependiente.com/espana/castilla-y-leon/2026/06/03/pp-y-vox-llegan-a-un-acuerdo-de-gobierno-en-castilla-y-leon/",
+          "date": "2026-06-03T07:36:53+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "PP y Vox cierran un acuerdo de gobierno en Castilla y León para investir a Mañueco",
+          "source": "El Confidencial",
+          "url": "https://www.elconfidencial.com/espana/castilla-y-leon/2026-06-03/pp-vox-cierran-acuerdo-gobierno-castilla-leon_4366395/",
+          "date": "2026-06-03T07:35:00+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "El PP y Vox alcanzan un acuerdo de gobierno en Castilla y León",
+          "source": "Antena 3",
+          "url": "https://www.antena3.com/noticias/espana/vox-alcanzan-acuerdo-gobierno-castilla-leon_202606036a1fd8e8cb17881aa268a342.html",
+          "date": "2026-06-03T07:34:00+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "El PP y Vox alcanzan un acuerdo en Castilla y León para investir a Mañueco como presidente de la Junta",
+          "source": "RTVE.es",
+          "url": "https://amp.rtve.es/noticias/20260603/pp-vox-alcanzan-acuerdo-castilla-leon-investir-manueco-presidente/17098118.shtml",
+          "date": "2026-06-03T07:32:46+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "El PP y Vox cierran un acuerdo en Castilla y León para investir presidente a Mañueco que incluye la \"prioridad nacional\"",
+          "source": "RTVE.es",
+          "url": "https://www.rtve.es/noticias/20260603/pp-vox-alcanzan-acuerdo-castilla-leon-investir-manueco-presidente/17098118.shtml",
+          "date": "2026-06-03T07:32:46+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "PP y Vox alcanzan un acuerdo para gobernar en Castilla y León",
+          "source": "Onda Cero",
+          "url": "https://www.ondacero.es/noticias/espana/vox-alcanzan-acuerdo-gobernar-castilla-leon_202606036a1fd7e091bae05c35ec66f5.html",
+          "date": "2026-06-03T07:29:36+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "PP y Vox cierran un acuerdo de gobierno en Castilla y León que incluye la \"prioridad nacional\"",
+          "source": "El Periódico",
+          "url": "https://www.elperiodico.com/es/politica/20260603/pp-vox-cierran-acuerdo-gobierno-130959144",
+          "date": "2026-06-03T07:29:35+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "PP y Vox alcanzan un acuerdo en Castilla y León para investir a Mañueco que incluye la \"prioridad nacional\"",
+          "source": "LaSexta",
+          "url": "https://amp.lasexta.com/noticias/nacional/vox-alcanzan-acuerdo-castilla-leon-investir-manueco-que-incluye-prioridad-nacional_202606036a1fd7de91bae05c35ec66e3.html",
+          "date": "2026-06-03T07:29:34+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Acuerdo PP y Vox en Castilla y León: Mañueco le da a la ultraderecha la vicepresidencia, tres consejerías e",
+          "source": "LaSexta",
+          "url": "https://www.lasexta.com/noticias/nacional/vox-alcanzan-acuerdo-castilla-leon-investir-manueco-que-incluye-prioridad-nacional_202606036a1fd7de91bae05c35ec66e3.html",
+          "date": "2026-06-03T07:29:34+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "PP y Vox sellan el acuerdo en Castilla y León con la prioridad nacional para investir a Mañueco",
+          "source": "La Vanguardia",
+          "url": "https://www.lavanguardia.com/politica/20260603/11554612/pp-vox-sellan-acuerdo-castilla-leon-investir-manueco.html",
+          "date": "2026-06-03T07:28:03+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Vox presume de controlar los presupuestos de Llorca y le aprieta con inmigración y valenciano",
+          "source": "La Vanguardia",
+          "url": "https://www.lavanguardia.com/local/valencia/20260603/11553889/vox-presume-controlar-presupuestos-llorca-le-aprieta-inmigracion-valenciano.html",
+          "date": "2026-06-03T03:30:00+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Fracasa la alianza del PSOE con dos exediles de Vox para una moción de censura en Cartagena",
+          "source": "La Voz de Galicia",
+          "url": "https://www.lavozdegalicia.es/noticia/espana/2026/06/02/fracasa-alianza-psoe-dos-exediles-vox-mocion-censura-cartagena/00031780430611896815969.htm",
+          "date": "2026-06-03T03:06:35+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Hermetismo y una «extraordinaria prudencia»: Juanma Moreno aísla del ruido las negociaciones con Vox",
+          "source": "El Debate",
+          "url": "https://www.eldebate.com/espana/andalucia/20260603/hermetismo-extraordinaria-prudencia-juanma-moreno-aisla-ruido-negociaciones-vox_424348.html",
+          "date": "2026-06-03T02:20:00+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Vox frena en seco leyes pactadas con Prohens a la vista de nuevos acuerdos del PP con la izquierda",
+          "source": "OkDiario",
+          "url": "https://okdiario.com/baleares/vox-frena-seco-leyes-pactadas-prohens-vista-nuevos-acuerdos-del-pp-izquierda-17471778",
+          "date": "2026-06-03T02:00:38+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "La moción de censura contra Arroyo decae tras el no del PP, Vox y Del Álamo y tres horas de tensión y opereta",
+          "source": "Murcia Plaza",
+          "url": "https://murciaplaza.com/murciaplaza/cartagena/la-mocion-de-censura-contra-arroyo-decae-tras-el-no-del-pp-vox-y-del-alamo-y-tres-horas-de-tension-y-opereta",
+          "date": "2026-06-03T00:42:21+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "La moción de censura de Feijóo choca con los límites de Junts y Vox",
+          "source": "MUNDIARIO",
+          "url": "https://www.mundiario.com/articulo/politica/feijoo-evita-encerrona-waterloo-mocion-censura-choca-limites-junts-vox/20260603023754388894.html",
+          "date": "2026-06-03T00:37:54+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "VOX alerta del peligro que supone la carne contaminada procedente de Brasil y registra una batería de iniciativas ante el «riesgo sanitario»",
+          "source": "gaceta.es",
+          "url": "https://gaceta.es/europa/vox-alerta-del-peligro-que-supone-la-carne-contaminada-procedente-de-brasil-y-registra-una-bateria-de-iniciativas-para-conocer-el-volumen-de-las-importaciones-20260603-0100/",
+          "date": "2026-06-03T00:18:32+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Vox cree que la moción de censura «distrae» del objetivo: «Sacar a Sánchez»",
+          "source": "ABC",
+          "url": "https://www.abc.es/espana/vox-cree-asunto-mocion-distrae-objetivo-sacar-20260603020708-nt.html",
+          "date": "2026-06-03T00:07:08+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Vox y Feijóo aciertan",
+          "source": "El Debate",
+          "url": "https://www.eldebate.com/opinion/20260603/vox-feijoo-aciertan_424442.html",
+          "date": "2026-06-02T23:30:00+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Vox dice que aún faltan \"flecos\" para el pacto de gobierno con el PP en Castilla y León",
+          "source": "ABC",
+          "url": "https://www.abc.es/espana/vox-dice-faltan-flecos-pacto-gobierno-pp-20260602233954-nt.html",
+          "date": "2026-06-02T21:39:59+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Vox avisa a Feijóo que no sirve de nada abogar por la moción si quien puede no la impulsa",
+          "source": "ABC",
+          "url": "https://www.abc.es/espana/vox-avisa-feijoo-sirve-abogar-mocion-puede-20260602233636-nt.html",
+          "date": "2026-06-02T21:36:41+00:00",
+          "category": "spain"
+        }
+      ],
+      "first_seen": "2026-06-02T05:11:08+00:00",
+      "last_seen": "2026-06-04T05:21:20+00:00"
+    },
+    {
+      "id": "farages-racial-rhetoric-sparks-uk-outrage",
+      "title": "Farage’s racial rhetoric sparks UK outrage",
+      "blurb": "Reform UK leader Nigel Farage faces backlash for exploiting the murder of teenager Henry Nowak to push claims of 'two-tier policing,' sparking violent protests and accusations of stoking racial tensions.",
+      "affect": "This commands disproportionate attention due to the inflammatory rhetoric, violent protests, and the broader implications for social cohesion and policing policies in the UK.",
+      "intensity": 4,
+      "affect_signals": [
         "outrage-coded language",
+        "polarized contention",
+        "cross-source repetition",
+        "moral panic register",
+        "alarmist framing"
+      ],
+      "categories": [
+        "Reform UK",
+        "General Right-Wing News"
+      ],
+      "article_count": 50,
+      "refs": [
+        {
+          "title": "UK far right accused of exploiting killing of Henry Nowak",
+          "source": "Al Jazeera",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/6/4/uk-far-right-accused-of-exploiting-killing-of-henry-nowak",
+          "date": "2026-06-04T03:11:31+00:00",
+          "category": "general"
+        },
+        {
+          "title": "Southampton stabbing protests: Far-right accuse police of anti-white racism",
+          "source": "Modern Ghana",
+          "url": "https://www.modernghana.com/videonews/aljazeera/1/659976/",
+          "date": "2026-06-04T03:06:48+00:00",
+          "category": "general"
+        },
+        {
+          "title": "Farage calls for end to ‘two-tier policing’ amid backlash over Henry Nowak’s murder",
+          "source": "Sky News Australia",
+          "url": "https://www.skynews.com.au/australia-news/politics/reform-uk-leader-nigel-farage-demands-end-to-divisive-twotier-policing-following-public-backlash-over-henry-nowak-murder/news-story/a1143352d64bddd25f8afcc75b53ffcc",
+          "date": "2026-06-04T01:47:21+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Nigel Farage accuses police of two-tiered justice following teenager’s murder",
+          "source": "Fox News",
+          "url": "https://www.foxnews.com/video/6397479047112",
+          "date": "2026-06-03T23:22:01+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Nigel Farage defends his response to Henry Nowak murder amid criticism from PM",
+          "source": "The Irish News",
+          "url": "https://www.irishnews.com/news/uk/nigel-farage-defends-his-response-to-henry-nowak-murder-amid-criticism-from-pm-TJJ2AXNSGNMUPJOJ26QVJG4IHA/",
+          "date": "2026-06-03T23:01:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Farage warns UK unrest over Henry Nowak murder just ‘the beginning’",
+          "source": "AFR",
+          "url": "https://www.afr.com/world/europe/farage-warns-uk-unrest-over-teen-s-murder-just-the-beginning-20260604-p603qp",
+          "date": "2026-06-03T22:53:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "The Trump Administration Stopped Processing Certain Green Card Applications. Our FOIA Found What Happened Next.",
+          "source": "American Immigration Council",
+          "url": "https://www.americanimmigrationcouncil.org/blog/trump-stops-processing-green-cards-foia-what-happened/",
+          "date": "2026-06-03T20:02:06+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Nigel Farage accused of ‘unforgivable’ exploitation of Henry Nowak’s murder",
+          "source": "The Independent",
+          "url": "https://www.independent.co.uk/bulletin/news/nigel-farage-exploit-henry-nowak-murder-stabbing-b2989090.html",
+          "date": "2026-06-03T19:57:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "BBC Newsnight presenter apologises after misquoting Nigel Farage",
+          "source": "The National Scot",
+          "url": "https://www.thenational.scot/news/26164453.bbc-presenter-apologises-misquoting-nigel-farage/",
+          "date": "2026-06-03T19:41:56+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "PM accuses Nigel Farage of exploiting Henry Nowak’s death",
+          "source": "Channel 4",
+          "url": "https://www.channel4.com/news/pm-accuses-nigel-farage-of-exploiting-henry-nowaks-death",
+          "date": "2026-06-03T19:19:21+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "UK far right exploiting student stabbing attack 'to promote moral panic', expert says",
+          "source": "Modern Ghana",
+          "url": "https://www.modernghana.com/videonews/france24/1/659754/",
+          "date": "2026-06-03T19:17:28+00:00",
+          "category": "general"
+        },
+        {
+          "title": "Starmer accuses the far-right Farage of politicizing the murder of young Henry Nowak",
+          "source": "Diari ARA",
+          "url": "https://en.ara.cat/international/starmer-accuses-the-far-right-farage-of-politicizing-the-murder-of-young-henry-nowak_1_5757444.amp.html",
+          "date": "2026-06-03T18:53:34+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Elon Musk and America’s Far Right Stoke Anger Over Murder of UK Teen",
+          "source": "WIRED",
+          "url": "https://www.wired.com/story/elon-musk-and-americas-far-right-stoke-anger-over-murder-of-uk-teen/",
+          "date": "2026-06-03T18:29:00+00:00",
+          "category": "general"
+        },
+        {
+          "title": "Reform’s Aberdeen candidate is a 5G conspiracist",
+          "source": "thecanary.co",
+          "url": "https://www.thecanary.co/trending/2026/06/03/reform-aberdeen-candidate/",
+          "date": "2026-06-03T18:27:19+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Trump acknowledges calling Netanyahu 'crazy,' says Israel is complicating peace talks with Iran",
+          "source": "PBS",
+          "url": "https://www.pbs.org/newshour/world/trump-acknowledges-calling-netanyahu-crazy-says-israel-is-complicating-peace-talks-with-iran",
+          "date": "2026-06-03T18:13:18+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "We are heading to a dark place",
+          "source": "owenjones.news",
+          "url": "https://www.owenjones.news/p/we-are-heading-to-a-dark-place",
+          "date": "2026-06-03T18:09:33+00:00",
+          "category": "general"
+        },
+        {
+          "title": "Nigel Farage condemned for ‘exploiting’ murder of Henry Nowak",
+          "source": "The Independent",
+          "url": "https://www.independent.co.uk/news/uk/politics/nigel-farage-henry-nowak-murder-pmqs-riots-b2988966.html",
+          "date": "2026-06-03T17:50:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Nigel Farage’s rabble-rousing proves he is unfit to run the country",
+          "source": "The Independent",
+          "url": "https://www.independent.co.uk/voices/editorials/farage-henry-nowak-reform-stabbing-makerfield-b2988972.html",
+          "date": "2026-06-03T17:48:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Starmer says Farage ‘dodging questions’ about £5m gift from crypto billionaire",
+          "source": "The Guardian",
+          "url": "https://www.theguardian.com/politics/2026/jun/03/keir-starmer-nigel-farage-dodging-questions-5m-gift-crypto-billionaire",
+          "date": "2026-06-03T17:39:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Emily Maitlis: 'Nigel Farage clearly feels cornered'",
+          "source": "lbc.co.uk",
+          "url": "https://www.lbc.co.uk/videos/2JsSe12DTom/",
+          "date": "2026-06-03T17:29:29+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Ben Jennings on Nigel Farage’s response to Henry Nowak’s murder – cartoon",
+          "source": "The Guardian",
+          "url": "https://www.theguardian.com/commentisfree/picture/2026/jun/03/ben-jennings-nigel-farage-response-henry-nowak-cartoon",
+          "date": "2026-06-03T17:14:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Keir Starmer calls out Farage’s “pure, cold rage” comments during PMQs",
+          "source": "The London Economic",
+          "url": "https://www.thelondoneconomic.com/politics/keir-starmer-calls-out-farages-pure-cold-rage-comments-during-pmqs-406736/",
+          "date": "2026-06-03T17:11:57+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "BBC deletes Newsnight episode after Farage complains about 'white cold rage' misquote",
+          "source": "Metro.co.uk",
+          "url": "https://metro.co.uk/2026/06/03/bbc-deletes-newsnight-episode-farage-complains-white-cold-rage-misquote-28635647/",
+          "date": "2026-06-03T17:10:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "This grim spectacle is a dangerous gamble for Nigel Farage",
+          "source": "The Times",
+          "url": "https://www.thetimes.com/uk/politics/article/pmqs-nigel-farage-keir-starmer-henry-nowak-commons-k2m07bg56",
+          "date": "2026-06-03T16:57:54+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "What did Nigel Farage say about Henry Nowak's attack?",
+          "source": "lbc.co.uk",
+          "url": "https://www.lbc.co.uk/article/what-did-nigel-farage-say-about-henry-nowak-attack-5Hjdb6m_2/",
+          "date": "2026-06-03T16:48:31+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Tak zmienił się majątek Czarnka. Jeden wpis przyciąga uwagę",
+          "source": "Fakt",
+          "url": "https://www.fakt.pl/pieniadze/majatek-przemyslawa-czarnka-oszczednosci-wzrosly-pojawil-sie-nowy-wpis/g0q8q7r",
+          "date": "2026-06-03T16:45:00+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Henry Nowak murder: is Farage right to say UK has two-tier policing?",
+          "source": "Channel 4",
+          "url": "https://www.channel4.com/news/henry-nowak-murder-is-farage-right-to-say-uk-has-two-tier-policing",
+          "date": "2026-06-03T16:42:36+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Arch-deflector Nigel Farage turns his pure, cold, performative rage against Newsnight",
+          "source": "thenewworld.co.uk",
+          "url": "https://www.thenewworld.co.uk/rats-in-a-sack-arch-deflector-nigel-farage-turns-his-pure-cold-performative-rage-against-newsnight/",
+          "date": "2026-06-03T16:34:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "We can reject Farage’s opportunism but still say policing is broken",
+          "source": "The Independent",
+          "url": "https://www.independent.co.uk/voices/herny-nowak-stabbing-racism-farage-police-b2988733.html",
+          "date": "2026-06-03T16:18:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Carlos Bianco le dio un ultimátum a Javier Milei: «Se termina en diciembre del 2027»",
+          "source": "Fenix 95.1",
+          "url": "https://fenix951.com.ar/noticia.php?id=341436",
+          "date": "2026-06-03T16:02:36+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Fury as Reform councillor says poor people ’should not have babies’",
+          "source": "Kent Online",
+          "url": "https://www.kentonline.co.uk/dover/news/fury-as-reform-councillor-says-poor-people-should-not-have-341104/",
+          "date": "2026-06-03T15:59:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "BBC Apologises to Nigel Farage Over Matt Chorley’s Newsnight Comments",
+          "source": "Guido Fawkes",
+          "url": "https://order-order.com/2026/06/03/bbc-apologises-to-nigel-farage-over-matt-chorleys-newsnight-comments/",
+          "date": "2026-06-03T15:53:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Zegarek Tuska, bitcoiny Mentzena. Oświadczenia majątkowe posłów",
+          "source": "PolsatNews.pl",
+          "url": "https://www.polsatnews.pl/wiadomosc/2026-06-03/oswiadczenia-majatkowe-poslow-ujawniono-majatki-politykow/",
+          "date": "2026-06-03T15:45:00+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "British lawmakers erupt at Farage's response to Southampton protest",
+          "source": "The Detroit News",
+          "url": "https://www.detroitnews.com/videos/news/world/2026/06/03/britains-nigel-farage-compared-nowak-killing-with-george-floyds/90386433007/",
+          "date": "2026-06-03T15:32:51+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Handcuffed student’s death sparks uproar in UK, as far right accused of inflaming tensions",
+          "source": "CNN",
+          "url": "https://www.cnn.com/2026/06/03/uk/henry-nowak-death-far-right-intl",
+          "date": "2026-06-03T15:19:07+00:00",
+          "category": "general"
+        },
+        {
+          "title": "Der Tag: Weiterer AfD-Landesverband darf zukünftig beobachtet werden",
+          "source": "Ntv",
+          "url": "https://www.n-tv.de/der_tag/Weiterer-AfD-Landesverband-darf-zukuenftig-beobachtet-werden-id30888789.html",
+          "date": "2026-06-03T14:44:12+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Starmer accuses Farage of inciting rage in wake of Southampton riot",
+          "source": "Middle East Eye",
+          "url": "https://www.middleeasteye.net/news/starmer-accuses-farage-inciting-rage-southampton-riot",
+          "date": "2026-06-03T14:15:04+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "‘Sober reflection, not pure cold rage’: Readers slam Farage’s Henry Nowak response",
+          "source": "The Independent",
+          "url": "https://www.independent.co.uk/news/uk/politics/henry-nowak-nigel-farage-police-protests-b2988692.html",
+          "date": "2026-06-03T13:58:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Watch: Sir Keir Starmer and Nigel Farage clash over Henry Novak murder 'rage' comment",
+          "source": "Yorkshire Post",
+          "url": "https://www.yorkshirepost.co.uk/news/politics/watch-sir-keir-starmer-nigel-farage-novak-murder-8656443",
+          "date": "2026-06-03T13:50:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Keir Starmer: Nigel Farage is exploiting Henry Nowak’s murder",
+          "source": "The Times",
+          "url": "https://www.thetimes.com/uk/politics/article/keir-starmer-two-tier-policing-henry-nowak-nigel-farage-36b8klrrm",
+          "date": "2026-06-03T13:08:51+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Keir Starmer slams 'unforgivable' Nigel Farage and denies 'two-tier policing' in UK",
+          "source": "Manchester Evening News",
+          "url": "https://www.manchestereveningnews.co.uk/news/uk-news/keir-starmer-slams-unforgivable-nigel-34058499",
+          "date": "2026-06-03T13:02:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Keir Starmer slates Reform's Makerfield candidate Robert Kenyon as 'self-professed sexist'",
+          "source": "Manchester Evening News",
+          "url": "https://www.manchestereveningnews.co.uk/news/uk-news/keir-starmer-slates-reforms-makerfield-34058336.amp",
+          "date": "2026-06-03T12:57:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Henry Nowak: Sikhs scared to leave their homes over ‘politicisation’ of death",
+          "source": "The Independent",
+          "url": "https://www.independent.co.uk/bulletin/news/henry-nowak-protests-sikh-community-b2988759.html",
+          "date": "2026-06-03T12:55:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Does UK’s new far-right party, Restore, pose a threat to Farage’s Reform?",
+          "source": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/6/3/does-uks-new-far-right-party-restore-pose-a-threat-to-farages-reform",
+          "date": "2026-06-03T12:29:24+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Henry Nowak murder is the fight Reform has been waiting for",
+          "source": "The Times",
+          "url": "https://www.thetimes.com/uk/politics/article/henry-nowak-southampton-nigel-farage-reform-csdl0tnn7",
+          "date": "2026-06-03T12:20:14+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "MPs turn on 'unforgivable' Nigel Farage amid Henry Nowak murder",
+          "source": "The National Scot",
+          "url": "https://www.thenational.scot/news/26162543.furious-mps-turn-nigel-farage-amid-murder-henry-nowak/",
+          "date": "2026-06-03T12:15:44+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "MPs erupt as Nigel Farage claims Britain dealing with two-tier policing after Henry Nowak murder: ‘Condemn the violence’",
+          "source": "AOL.com",
+          "url": "https://www.aol.com/articles/mps-erupt-nigel-farage-claims-120010000.html",
+          "date": "2026-06-03T12:15:26+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "MPs erupt as Nigel Farage claims Britain dealing with two-tier policing",
+          "source": "The Independent",
+          "url": "https://www.independent.co.uk/tv/news/henry-nowak-nigel-farage-video-b2988724.html",
+          "date": "2026-06-03T12:00:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "'Condemn It': Farage Ignores MPs' Calls To Criticise Violence At Henry Nowak Murder Protest",
+          "source": "HuffPost UK",
+          "url": "https://www.huffingtonpost.co.uk/amp/entry/nigel-farage-henry-nowak-pmqs_uk_6a201059e4b0ba317304a9cf/",
+          "date": "2026-06-03T11:55:23+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Swindon group criticises Nigel Farage comments after Henry Nowak death and protests",
+          "source": "Swindon Advertiser",
+          "url": "https://www.swindonadvertiser.co.uk/news/26161495.swindon-group-criticises-nigel-farage-henry-nowak-death/",
+          "date": "2026-06-03T11:30:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Keir Starmer Launches Direct Attack On Nigel Farage's Call For 'Rage' After Henry Nowak Murder",
+          "source": "HuffPost UK",
+          "url": "https://www.huffingtonpost.co.uk/amp/entry/keir-starmer-direct-attack-farage_uk_6a200bf6e4b08a03cfbdb215/",
+          "date": "2026-06-03T11:25:54+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Nigel Farage is a threat to national security",
+          "source": "The i Paper",
+          "url": "https://inews.co.uk/opinion/nigel-farage-threat-to-national-security-4450676",
+          "date": "2026-06-03T10:26:23+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Interpol searching for Nigel Farage",
+          "source": "NewsBiscuit",
+          "url": "https://www.newsbiscuit.com/post/interpol-searching-for-nigel-farage",
+          "date": "2026-06-03T10:00:44+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Tommy Robinson inflames white riot as thugs throw Nazi salutes",
+          "source": "thecanary.co",
+          "url": "https://www.thecanary.co/trending/2026/06/03/tommy-robinson-islamophobia/",
+          "date": "2026-06-03T09:59:30+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "‘Losing core constituency’: Keir Starmer abandoned by working class for Reform UK",
+          "source": "Sky News Australia",
+          "url": "https://www.skynews.com.au/opinion/losing-core-constituency-keir-starmer-abandoned-by-working-class-for-reform-uk/video/10b99c9917b946c3fc2743207b5e50d1",
+          "date": "2026-06-03T07:35:49+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Nigel Farage says Henry Nowak murder shows 'two-tier culture' as protesters clash with riot police",
+          "source": "Manchester Evening News",
+          "url": "https://www.manchestereveningnews.co.uk/news/uk-news/nigel-farage-says-henry-nowak-34055057.amp",
+          "date": "2026-06-03T06:19:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Furious Farage calls for ‘pure cold hard rage’ as livid protesters mobilise over Henry Nowak murder",
+          "source": "Sky News Australia",
+          "url": "https://www.skynews.com.au/world-news/united-kingdom/furious-farage-calls-for-pure-cold-hard-rage-as-livid-protesters-mobilise-over-henry-nowak-murder/video/ad4a303f70d38d3e3e4c9c50c286bd9f?amp",
+          "date": "2026-06-03T05:04:33+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Nigel Farage Calls Out “Anti-White” Police Over Murder of Student",
+          "source": "Novara Media",
+          "url": "https://novaramedia.com/2026/06/02/nigel-farage-calls-out-anti-white-police-over-murder-of-student/",
+          "date": "2026-06-02T21:09:35+00:00",
+          "category": "uk"
+        }
+      ],
+      "first_seen": "2026-06-04T05:21:20+00:00",
+      "last_seen": "2026-06-04T05:21:20+00:00"
+    },
+    {
+      "id": "afds-extremism-classification-in-hesse",
+      "title": "AfD’s extremism classification in Hesse",
+      "blurb": "Germany's domestic intelligence agency continues to classify the Alternative für Deutschland (AfD) in Hesse as a suspected extremist group, sparking legal battles and debates over surveillance and democratic safeguards.",
+      "affect": "This commands disproportionate attention due to the legal and political implications of classifying a major political party as extremist, raising questions about democracy and surveillance.",
+      "intensity": 4,
+      "affect_signals": [
+        "polarized contention",
+        "cross-source repetition",
+        "moral charge",
+        "alarmist framing",
         "leadership crisis tone"
       ],
       "categories": [
-        "🇩🇪 Alternative für Deutschland"
+        "Alternative für Deutschland"
       ],
-      "article_count": 40,
+      "article_count": 45,
       "refs": [
+        {
+          "title": "Kommunalwahl: Bäko-Chef fordert klare Haltung zur AfD",
+          "source": "Kreiszeitung Wesermarsch",
+          "url": "https://www.kreiszeitung-wesermarsch.de/nachrichten/kommunalwahl-baeko-chef-fordert-klare-haltung-zur-afd-376955.html",
+          "date": "2026-06-04T04:01:41+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Zehdenick: Wie René Stadtkewitz von der AfD zum Bürgermeister wurde",
+          "source": "Neue Zürcher Zeitung",
+          "url": "https://www.nzz.ch/deutschland/international/die-leute-haben-so-die-schnauze-voll-wie-ein-afd-politiker-buergermeister-einer-brandenburgischen-kleinstadt-wurde-ld.10007515",
+          "date": "2026-06-04T03:30:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Zukunftspaket 2030: AfD-Gemeinderäte kritisieren doppelte Maßstäbe",
+          "source": "Badische Neueste Nachrichten",
+          "url": "https://bnn.de/mittelbaden/gaggenau/gernsbach/zukunftspaket-2030-afd-gemeinderaete-kritisieren-doppelte-massstaebe",
+          "date": "2026-06-04T03:30:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Wohnungsmarkt Berlin: AfD fordert Ausschluss von Asylbewerbern",
+          "source": "Börse Express",
+          "url": "https://www.boerse-express.com/news/articles/wohnungsmarkt-berlin-afd-fordert-ausschluss-von-asylbewerbern-913017",
+          "date": "2026-06-04T02:20:05+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Ostthüringer Gymnasiallehrer soll \"Fuck AfD\" auf Schulfoto montiert haben",
+          "source": "MDR.de",
+          "url": "https://www.mdr.de/nachrichten/thueringen/ost-thueringen/saalfeld-rudolstadt/schule-manipuliertes-foto-afd-100.html",
+          "date": "2026-06-04T01:50:27+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Jean-Pascal Hohm: Chef der AfD-Jugendorganisation kandidiert für Bundesvorstand",
+          "source": "DIE ZEIT",
+          "url": "https://www.zeit.de/politik/ausland/2026-06/jean-pascal-hohm-afd-parteitag-bundesvorstand-kandidatur",
+          "date": "2026-06-03T23:55:04+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Parteien: Chef der AfD-Jugend will in Bundesvorstand",
+          "source": "DIE ZEIT",
+          "url": "https://www.zeit.de/news/2026-06/03/chef-der-afd-jugend-will-in-bundesvorstand",
+          "date": "2026-06-03T19:42:12+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Chef der AfD-Jugend will in Bundesvorstand",
+          "source": "Nordkurier",
+          "url": "https://www.nnn.de/regional/brandenburg/chef-der-afd-jugend-will-in-bundesvorstand-4620821",
+          "date": "2026-06-03T19:42:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "„Es gibt immer Wege. Die Deutschen sind sehr gut darin“ AfD-Vize holt sich Tipps für „Massendeportationen“ bei US-Abschiebeoffizier",
+          "source": "Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/politik/konnten-wir-das-gleiche-auch-in-deutschland-machen-afd-vize-holt-sich-tipps-fur-massendeportationen-bei-us-abschiebeoffizier-15674953.html",
+          "date": "2026-06-03T19:31:35+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Wagenknecht fordert Regierungsbeteiligung der AfD in Sachsen-Anhalt",
+          "source": "Leipziger Zeitung",
+          "url": "https://www.l-iz.de/politik/region/2026/06/wagenknecht-regierung-afd-659470",
+          "date": "2026-06-03T18:39:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "AfD Hessen bleibt rechtsextremer Verdachtsfall",
+          "source": "fuldainfo.de",
+          "url": "https://www.fuldainfo.de/afd-hessen-bleibt-rechtsextremer-verdachtsfall/",
+          "date": "2026-06-03T18:17:14+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Neonazi-Lokal war beliebter AfD-Treff",
+          "source": "B.Z. – Die Stimme Berlins",
+          "url": "https://www.bz-berlin.de/brandenburg/neonazi-lokal-war-beliebter-afd-treff",
+          "date": "2026-06-03T18:10:23+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Prozesse: Hessische AfD zurecht als Verdachtsfall eingestuft",
+          "source": "DIE ZEIT",
+          "url": "https://www.zeit.de/news/2026-06/03/afd-hessen-darf-vom-verfassungsschutz-beobachtet-werden",
+          "date": "2026-06-03T17:55:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "AfD bleibt stärkste Kraft, Union fällt auf Tiefstwert",
+          "source": "Hasepost",
+          "url": "https://hasepost.de/afd-bleibt-staerkste-kraft-union-faellt-auf-tiefstwert-718941/",
+          "date": "2026-06-03T17:39:05+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Schock-Umfrage: Union fällt auf schwächsten Wert seit Jahren - T-Online",
+          "source": "",
+          "url": "https://www.t-online.de/nachrichten/deutschland/innenpolitik/id_101282272/deutschlandtrend-union-so-schwach-wie-seit-jahren-nicht-afd-weiter-vorn.html",
+          "date": "2026-06-03T17:29:21+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "ARD-Deutschlandtrend: AfD liegt weiter vor der Union",
+          "source": "NDR.de",
+          "url": "https://www.ndr.de/nachrichten/info/ard-deutschlandtrend-afd-liegt-weiter-vor-der-union,audio-3278352.html",
+          "date": "2026-06-03T17:24:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Kehrtwende bei Adler Schiffe? Reeder Paulsen zieht Absage von AfD-Fahrt in Erwägung",
+          "source": "shz.de",
+          "url": "https://www.shz.de/lokales/sylt/artikel/afd-fahrt-auf-der-freya-lenkt-adler-schiffe-jetzt-ein-50730064",
+          "date": "2026-06-03T17:06:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Streit bei der AfD Stuttgart wegen gefälschter Kontoauszüge und dubiosen Zahlungen",
+          "source": "SWR",
+          "url": "https://www.swr.de/swraktuell/baden-wuerttemberg/stuttgart/afd-untreue-fall-vorstaende-weissen-kritik-zurueck-100.html",
+          "date": "2026-06-03T16:54:20+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Umfrage: Begrüßt die ostdeutsche Wirtschaft mögliche AfD-Landesregierungen?",
+          "source": "Berliner Zeitung",
+          "url": "https://www.berliner-zeitung.de/article/begruesst-mehrheit-der-ostdeutschen-wirtschaft-moegliche-afd-landesregierungen-10057208",
+          "date": "2026-06-03T16:50:28+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Aktuelle Umfrage: Neuer Tiefstand für die CDU, ein Viertel für gezielte Kooperation mit der AfD",
+          "source": "Berliner Zeitung",
+          "url": "https://www.berliner-zeitung.de/article/aktuelle-umfrage-neuer-tiefstand-fuer-die-cdu-ein-viertel-fuer-gezielte-kooperation-mit-der-afd-10059866",
+          "date": "2026-06-03T16:50:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Hessens Verfassungsschutz darf AfD beobachten",
+          "source": "ZDFheute",
+          "url": "https://www.zdfheute.de/politik/deutschland/afd-hessen-landesverband-verdachtsfall-gericht-100.html",
+          "date": "2026-06-03T16:19:53+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Verfassungsschutz darf AfD Hessen als rechtsextremen Verdachtsfall beobachten",
+          "source": "Frankfurter Rundschau",
+          "url": "https://www.fr.de/rhein-main/landespolitik/verfassungsschutz-darf-afd-hessen-als-rechtsextremen-verdachtsfall-beobachten-94335779.html",
+          "date": "2026-06-03T16:18:50+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Partei hatte geklagt: Gericht erlaubt Beobachtung der hessischen AfD",
+          "source": "Ntv",
+          "url": "https://www.n-tv.de/politik/Gericht-erlaubt-Beobachtung-der-hessischen-AfD-id30888693.html",
+          "date": "2026-06-03T16:15:08+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "AfD vorne – 57 Prozent wählen die Partei aus Enttäuschung",
+          "source": "FOCUS online",
+          "url": "https://www.focus.de/politik/deutschland/afd-vorne-57-prozent-waehlen-die-partei-aus-enttaeuschung_3e0b9a3c-509e-4ea0-bc62-99e860ad1a85.html",
+          "date": "2026-06-03T16:09:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Urteil: Hessen-AfD bleibt rechtsextremer Verdachtsfall",
+          "source": "Echo Online",
+          "url": "https://www.echo-online.de/politik/politik-hessen/urteil-hessen-afd-bleibt-rechtsextremer-verdachtsfall-5755798",
+          "date": "2026-06-03T15:00:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Urteil: Einstufung der AfD Hessen als Verdachtsfall erlaubt",
+          "source": "FAZ",
+          "url": "https://www.faz.net/aktuell/rhein-main/region-und-hessen/urteil-einstufung-der-afd-hessen-als-verdachtsfall-erlaubt-200895928.html",
+          "date": "2026-06-03T14:47:12+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Der Tag: Weiterer AfD-Landesverband darf zukünftig beobachtet werden",
+          "source": "Ntv",
+          "url": "https://www.n-tv.de/der_tag/Weiterer-AfD-Landesverband-darf-zukuenftig-beobachtet-werden-id30888789.html",
+          "date": "2026-06-03T14:44:12+00:00",
+          "category": "germany"
+        },
         {
           "title": "Hessen: Hessische AfD zurecht als Verdachtsfall eingestuft",
           "source": "Ntv",
@@ -58,6 +2232,13 @@
           "category": "germany"
         },
         {
+          "title": "Verfassungsschutz darf hessische AfD als Verdachtsfall beobachten",
+          "source": "STERN.de",
+          "url": "https://www.stern.de/news/verfassungsschutz-darf-hessische-afd-als-verdachtsfall-beobachten-37488128.html",
+          "date": "2026-06-03T14:14:09+00:00",
+          "category": "germany"
+        },
+        {
           "title": "AfD in Hessen: Hessische AfD darf als Verdachtsfall beobachtet werden",
           "source": "DIE ZEIT",
           "url": "https://www.zeit.de/politik/deutschland/2026-06/afd-hessen-verfassungsschutz-rechtsextrem-verdachtsfall",
@@ -72,6 +2253,20 @@
           "category": "germany"
         },
         {
+          "title": "Rechtsextremistischer Verdachtsfall: Verfassungsschutz darf AfD Hessen beobachten",
+          "source": "hessenschau.de",
+          "url": "https://www.hessenschau.de/politik/afd-hessen-darf-vom-verfassungsschutz-beobachtet-werden-v2,afd-gericht-verdachtsfall-100.html",
+          "date": "2026-06-03T14:03:10+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "AfD in Hessen darf laut Gericht als Verdachtsfall eingestuft werden",
+          "source": "tagesschau.de",
+          "url": "https://www.tagesschau.de/inland/regional/hessen/-afd-hessen-beobachtung-rechtsextremismus-100.html",
+          "date": "2026-06-03T14:03:00+00:00",
+          "category": "germany"
+        },
+        {
           "title": "Rechtsextremer Verdachtsfall: Verfassungsschutz darf AfD Hessen beobachten - T-Online",
           "source": "",
           "url": "https://www.t-online.de/nachrichten/deutschland/innenpolitik/id_101282038/hessen-verfassungsschutz-darf-afd-als-verdachtsfall-beobachten.html",
@@ -79,446 +2274,520 @@
           "category": "germany"
         },
         {
-          "title": "Hessen: AfD Hessen darf vom Verfassungsschutz beobachtet werden",
-          "source": "Ntv",
-          "url": "https://www.n-tv.de/regionales/hessen/AfD-Hessen-darf-vom-Verfassungsschutz-beobachtet-werden-id30888635.html",
-          "date": "2026-06-03T13:58:46+00:00",
+          "title": "Wird das BSW zum Königsmacher der AfD bei den Wahlen im Osten?",
+          "source": "STERN.de",
+          "url": "https://www.stern.de/politik/deutschland/wird-das-bsw-zum-koenigsmacher-der-afd-bei-den-wahlen-im-osten--37479312.html",
+          "date": "2026-06-03T10:34:00+00:00",
           "category": "germany"
         },
         {
-          "title": "„Westen hat sich Russland als Feind ausgeguckt und rüstet“, sagt der AfD-Abgeordnete",
-          "source": "WELT",
-          "url": "https://www.welt.de/politik/deutschland/plus6a1e8ca8f2919cfc74893c34/besuch-bei-putins-wirtschaftsforum-westen-hat-sich-russland-als-feind-ausgeguckt-und-ruestet-sagt-der-afd-abgeordnete.html",
-          "date": "2026-06-03T12:00:40+00:00",
+          "title": "Törvényjavaslat a politikai reklámokról: vizuális környezetszennyezés ellen lépne fel a Tisza",
+          "source": "Dehir",
+          "url": "https://dehir.hu/belfold/torvenyjavaslat-a-politikai-reklamokrol-gyuloletkeltes-ellen-lepne-fel-a-tisza/2026/06/03",
+          "date": "2026-06-03T10:33:21+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Reagált a Fidesz az óbudai korrupciós ügyre: Mindenkinek vállalnia kell a felelősséget tetteiért",
+          "source": "Telex",
+          "url": "https://telex.hu/belfold/2026/06/03/obudai-korrupcios-ugy-fidesz-reagalas",
+          "date": "2026-06-03T09:39:44+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Frp | Frp sikrer mer frihet i motorferdselen",
+          "source": "Namdalsavisa",
+          "url": "https://www.namdalsavisa.no/frp-sikrer-mer-frihet-i-motorferdselen/o/5-121-1576383",
+          "date": "2026-06-03T09:18:32+00:00",
+          "category": "norway"
+        },
+        {
+          "title": "AfD wirft Herforder aus der Partei: Alexander Eichwald zieht vor die nächste Instanz - Lippische Landes-Zeitung",
+          "source": "",
+          "url": "https://www.lz.de/owl/24345867_AfD-wirft-Herforder-aus-der-Partei-Alexander-Eichwald-zieht-vor-die-naechste-Instanz.html",
+          "date": "2026-06-03T08:20:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "AfD-Pläne zur Schulpflicht alarmieren Politologen - von Storch fühlt sich in der ARD „damönisiert“",
+          "source": "OP Online",
+          "url": "https://www.op-online.de/politik/afd-plaene-zur-schulpflicht-alarmieren-politologen-von-storch-fuehlt-sich-in-der-ard-damoenisiert-zr-94334390.html",
+          "date": "2026-06-03T04:35:01+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "AfD beim St. Petersburger Wirtschaftsforum",
+          "source": "tagesschau.de",
+          "url": "https://www.tagesschau.de/video/video-1592120.html",
+          "date": "2026-06-03T04:34:28+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Bonns Oberbürgermeisterin bittet um Prüfung des AfD-Verbots - Radio Bonn / Rhein-Sieg",
+          "source": "",
+          "url": "https://www.radiobonn.de/artikel/bonns-oberbuergermeisterin-bittet-um-pruefung-des-afd-verbots-2330326",
+          "date": "2026-06-03T03:26:07+00:00",
           "category": "germany"
         }
       ],
       "first_seen": "2026-06-03T17:26:42+00:00",
-      "last_seen": "2026-06-03T17:26:42+00:00"
+      "last_seen": "2026-06-04T05:21:20+00:00"
     },
     {
-      "id": "patricia-bullrichs-rebellion-against-javier-milei",
-      "title": "Patricia Bullrich’s rebellion against Javier Milei",
-      "blurb": "Patricia Bullrich, a key ally of Argentine President Javier Milei, has publicly opposed his decisions, including the withdrawal of a judicial nomination, and even offered her resignation. This has exposed deep internal fractures within the ruling La Libertad Avanza coalition.",
-      "affect": "This commands disproportionate attention due to the high-stakes power struggle within the ruling coalition, which threatens its stability and future electoral prospects.",
-      "intensity": 5,
-      "affect_signals": [
-        "leadership crisis tone",
-        "polarized contention",
-        "cross-source repetition",
-        "outrage-coded language",
-        "moral panic register"
-      ],
-      "categories": [
-        "🇦🇷 La Libertad Avanza"
-      ],
-      "article_count": 60,
-      "refs": [
-        {
-          "title": "Karina Milei en alerta máxima, desconfía del chat entre Mauricio Macri y Patricia Bullrich",
-          "source": "Ambito",
-          "url": "https://www.ambito.com/politica/karina-milei-alerta-maxima-desconfia-del-chat-mauricio-macri-y-patricia-bullrich-n6284546",
-          "date": "2026-06-03T14:16:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Patricia Bullrich minimizó la crisis interna y negó fractura en La Libertad Avanza",
-          "source": "Ambito",
-          "url": "https://www.ambito.com/politica/patricia-bullrich-minimizo-la-crisis-interna-y-nego-fractura-la-libertad-avanza-n6284588",
-          "date": "2026-06-03T14:14:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "El factor Bullrich sacudió la verticalidad del Gabinete y reavivó las sospechas de interna",
-          "source": "La Gaceta",
-          "url": "https://www.lagaceta.com.ar/nota/1139543/politica/factor-bullrich-sacudio-verticalidad-gabinete-reavivo-sospechas-interna.html",
-          "date": "2026-06-03T14:12:54+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Tensión en el Senado: Patricia Bullrich cuestiona la decisión de Javier Milei tras veto a jueza",
-          "source": "Diario Río Negro",
-          "url": "https://www.rionegro.com.ar/politica/guerra-silenciosa-en-el-senado-los-motivos-detras-del-portazo-de-patricia-bullrich-que-sacude-javier-milei-4596395/",
-          "date": "2026-06-03T13:42:24+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Jaime Durán Barba y la interna libertaria: Creo que Patricia Bullrich tiene un plan para ser presidenta",
-          "source": "La Voz del Interior",
-          "url": "https://www.lavoz.com.ar/politica/jaime-duran-barba-interna-libertaria-posicion-patricia-bullrich-sensata-gobierno_0_GxtkSDtZzF.html",
-          "date": "2026-06-03T13:33:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Senador de La Libertad Avanza respaldó a Bullrich y criticó el retiro del pliego de Michelli: \"Es una desproli",
-          "source": "cronica.com.ar",
-          "url": "https://www.cronica.com.ar/politica/senador-de-la-libertad-avanza-respaldo-a-bullrich-y-critico-el-retiro-del-pliego-de-micheli-es-una-desprolijidad-muy-grande-9049/",
-          "date": "2026-06-03T13:31:25+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Nueva tensión en el Gobierno: Patricia Bullrich ofreció su renuncia y Javier Milei la rechazó",
-          "source": "Minuto Neuquen",
-          "url": "https://www.minutoneuquen.com/nacionales/2026/6/3/nueva-tension-en-el-gobierno-patricia-bullrich-ofrecio-su-renuncia-javier-milei-la-rechazo-411103.html",
-          "date": "2026-06-03T13:03:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Keir Starmer slams 'unforgivable' Nigel Farage and denies 'two-tier policing' in UK",
-          "source": "Manchester Evening News",
-          "url": "https://www.manchestereveningnews.co.uk/news/uk-news/keir-starmer-slams-unforgivable-nigel-34058499",
-          "date": "2026-06-03T13:02:00+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Sin renunciar, Bullrich dijo que quiere la reelección de Milei y adelantó que Adorni presentará su DDJJ el 15 de junio",
-          "source": "elDiarioAR.com",
-          "url": "https://www.eldiarioar.com/politica/renunciar-bullrich-dijo-quiere-reeleccion-milei-adelanto-adorni-presentara-ddjj-15-junio_1_13272373.html",
-          "date": "2026-06-03T12:47:18+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Bullrich vs Karina Milei: renunció como jefa de bloque y la interna en LLA es irreconciliable",
-          "source": "» Cholila Online",
-          "url": "https://cholilaonline.ar/2026/06/patricia-bullrich-abre-nueva-grieta-oficialismo-karina-milei-interna-lla.html",
-          "date": "2026-06-03T12:30:22+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Bullrich ignoró el pedido de los Milei y no acompañará el retiro del pliego judicial cuestionado por Karina",
-          "source": "El Ágora Digital",
-          "url": "https://elagora.digital/argentina/patricia-bullrich-pliego-jueza-michelli-javier-karina-milei/",
-          "date": "2026-06-02T12:08:48+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Patricia Bullrich desafió la línea oficial y ratificó su apoyo a una jueza impugnada por el Ejecutivo",
-          "source": "La Gaceta",
-          "url": "https://www.lagaceta.com.ar/nota/1139361/politica/patricia-bullrich-desafio-linea-oficial-ratifico-apoyo-jueza-impugnada-ejecutivo.html",
-          "date": "2026-06-02T11:29:34+00:00",
-          "category": "argentina"
-        }
-      ],
-      "first_seen": "2026-06-03T05:25:30+00:00",
-      "last_seen": "2026-06-03T17:26:42+00:00"
-    },
-    {
-      "id": "pp-and-vox-coalition-talks-intensify-in-spain",
-      "title": "PP and Vox coalition talks intensify in Spain",
-      "blurb": "The conservative People's Party (PP) and the far-right Vox have reached a coalition agreement in Castilla y León, granting Vox significant influence in the regional government. This deal has sparked controversy over Vox's policies, including its 'national priority' clause.",
-      "affect": "This commands disproportionate attention due to the moral and political implications of a far-right party gaining power, which polarizes public opinion and fuels alarmist framing.",
+      "id": "hungary-ukraine-minority-rights-deal",
+      "title": "Hungary-Ukraine minority rights deal",
+      "blurb": "Hungary's new Prime Minister Péter Magyar secures a landmark agreement with Ukraine to expand rights for the Hungarian minority, potentially unlocking EU accession talks and easing long-standing tensions.",
+      "affect": "This commands disproportionate attention due to its geopolitical significance, potential to ease EU-Hungary tensions, and the broader implications for minority rights and regional stability.",
       "intensity": 4,
       "affect_signals": [
-        "polarized contention",
-        "alarmist framing",
         "cross-source repetition",
         "moral charge",
-        "leadership crisis tone"
-      ],
-      "categories": [
-        "🇪🇸 Vox"
-      ],
-      "article_count": 50,
-      "refs": [
-        {
-          "title": "Así será el nuevo gobierno PP-Vox en Castilla y León",
-          "source": "Tribuna de Valladolid.",
-          "url": "https://www.tribunavalladolid.com/noticias/447219/asi-sera-el-nuevo-gobierno-pp-vox-en-castilla-y-leon",
-          "date": "2026-06-03T14:23:36+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Abascal se congratula por el acuerdo de Gobierno de PP y Vox y destaca que incluye la prioridad nacional",
-          "source": "PressDigital",
-          "url": "https://www.pressdigital.es/articulo/politica/2026-06-03/5906002-abascal-congratula-acuerdo-gobierno-pp-vox-destaca-incluye-prioridad-nacional",
-          "date": "2026-06-03T14:04:00+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox asume más competencias dispuesto a mostrarse exigente en el cumplimiento del pacto",
-          "source": "El Norte de Castilla",
-          "url": "https://www.elnortedecastilla.es/castillayleon/vox-asume-competencias-dispuesto-mostrarse-exigente-cumplimiento-20260603153745-nt.html",
-          "date": "2026-06-03T13:37:45+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Acuerdo \"amplio\" de PP y Vox en Castilla y León con la prioridad nacional \"en ayudas sociales y de vivienda\"",
-          "source": "El Mundo",
-          "url": "https://www.elmundo.es/espana/2026/06/03/6a202486e4d4d871528b45c4-video.html",
-          "date": "2026-06-03T12:56:40+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "El pacto PP-Vox recoge cuatro leyes, 5 estrategias y 20 planes",
-          "source": "Diario de Burgos",
-          "url": "https://www.diariodeburgos.es/noticia/z2fe76c13-8400-453f-9c4e9bc55f732123/202606/el-pacto-pp-vox-recoge-cuatro-leyes-5-estrategias-y-20-planes",
-          "date": "2026-06-03T12:39:00+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox tendrá un vicepresidente y dos consejeros en el Gobierno de Castilla y León, según el acuerdo con el PP - EFE",
-          "source": "Agencia de noticias",
-          "url": "https://efe.com/espana/2026-06-03/pp-vox-acuerdo-gobierno-castilla-y-leon/",
-          "date": "2026-06-03T12:37:32+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "El PP abraza la «prioridad nacional» de Vox para pactar en Castilla y León",
-          "source": "naiz:",
-          "url": "https://www.naiz.eus/info/noticia/amp/20260603/el-pp-abraza-la-prioridad-nacional-de-vox-para-pactar-en-castilla-y-leon",
-          "date": "2026-06-03T12:22:00+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Así queda el reparto de poder en Castilla y León: el PP tendrá siete consejerías y Vox, tres y la Vicepresidencia primera",
-          "source": "El Debate",
-          "url": "https://www.eldebate.com/espana/castilla-y-leon/20260603/asi-queda-reparto-poder-castilla-leon-pp-tendra-siete-consejerias-vox-tres-vicepresidencia-primera_424706.html",
-          "date": "2026-06-03T11:59:11+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "DOCUMENTO | Consulta el pacto íntegro entre PP y Vox en Castilla y León",
-          "source": "elDiario.es",
-          "url": "https://www.eldiario.es/castilla-y-leon/documento-consulta-pacto-integro-pp-vox-castilla-leon_1_13271808.html",
-          "date": "2026-06-03T11:12:05+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "PP y Vox alcanzan un pacto de Gobierno en Castilla y León",
-          "source": "Libertad Digital",
-          "url": "https://www.libertaddigital.com/espana/politica/2026-06-03/pp-y-vox-alcanzan-un-pacto-de-gobierno-en-castilla-y-leon-7414363/",
-          "date": "2026-06-03T11:08:13+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "PP y Vox cierran su acuerdo de gobierno en Castilla y León para investir a Mañueco como presidente",
-          "source": "Euronews",
-          "url": "https://es.euronews.com/my-europe/2026/06/03/pp-y-vox-cierran-su-acuerdo-de-gobierno-en-castilla-y-leon-para-investir-a-manueco-como-pr",
-          "date": "2026-06-03T07:47:06+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "PP y Vox cierran su acuerdo de gobierno para Castilla y León",
-          "source": "El Mundo",
-          "url": "https://www.elmundo.es/espana/2026/06/03/6a1fd7a4e4d4d87a258b45a3.html",
-          "date": "2026-06-03T07:38:27+00:00",
-          "category": "spain"
-        }
-      ],
-      "first_seen": "2026-06-02T05:11:08+00:00",
-      "last_seen": "2026-06-03T17:26:42+00:00"
-    },
-    {
-      "id": "nigel-farages-racial-rhetoric-sparks-uk-outrage",
-      "title": "Nigel Farage’s racial rhetoric sparks UK outrage",
-      "blurb": "Reform UK leader Nigel Farage has been accused of exploiting the murder of Henry Nowak to stoke racial tensions, using phrases like 'pure cold rage' and 'two-tier policing.' His comments have sparked widespread condemnation and protests.",
-      "affect": "This commands disproportionate attention due to the moral outrage over Farage's rhetoric, which is seen as divisive and inflammatory, fueling polarized contention and public protests.",
-      "intensity": 4,
-      "affect_signals": [
-        "outrage-coded language",
-        "polarized contention",
-        "cross-source repetition",
-        "moral panic register",
+        "triumphal framing",
+        "leadership crisis tone",
         "alarmist framing"
       ],
       "categories": [
-        "🇬🇧 Reform UK"
+        "Fidesz / Tisza"
       ],
       "article_count": 40,
       "refs": [
         {
-          "title": "Watch: Sir Keir Starmer and Nigel Farage clash over Henry Novak murder 'rage' comment",
-          "source": "Yorkshire Post",
-          "url": "https://www.yorkshirepost.co.uk/news/politics/watch-sir-keir-starmer-nigel-farage-novak-murder-8656443",
-          "date": "2026-06-03T13:50:00+00:00",
-          "category": "uk"
+          "title": "Elképesztő magasságokban a Tisza támogatottsága: az 1990-es rendszerváltás óta nem volt ilyen népszerű párt Magyarországon",
+          "source": "24.hu",
+          "url": "https://24.hu/belfold/2026/06/04/tisza-part-gyozteshez-huzas-fidesz-kozvelemeny-kutatas-24extra/",
+          "date": "2026-06-04T03:55:00+00:00",
+          "category": "hungary"
         },
         {
-          "title": "Keir Starmer: Nigel Farage is exploiting Henry Nowak’s murder",
-          "source": "The Times",
-          "url": "https://www.thetimes.com/uk/politics/article/keir-starmer-two-tier-policing-henry-nowak-nigel-farage-36b8klrrm",
-          "date": "2026-06-03T13:08:51+00:00",
-          "category": "uk"
+          "title": "„A Tisza-kormány feszegeti a határokat, próbálgatja, mi az, ami még belefér, és mi az, ami nem”",
+          "source": "Népszava",
+          "url": "https://nepszava.hu/3324680_tisza-kormany-polgarmesterek-bercsokkentes-elemzes",
+          "date": "2026-06-04T03:55:00+00:00",
+          "category": "hungary"
         },
         {
-          "title": "Keir Starmer slams 'unforgivable' Nigel Farage and denies 'two-tier policing' in UK",
-          "source": "Manchester Evening News",
-          "url": "https://www.manchestereveningnews.co.uk/news/uk-news/keir-starmer-slams-unforgivable-nigel-34058499",
-          "date": "2026-06-03T13:02:00+00:00",
-          "category": "uk"
+          "title": "Elemző: Magyar Péternek két nagy kockázattal is számolnia kell a Sulyok Tamás elleni harcban",
+          "source": "Index.hu",
+          "url": "https://index.hu/belfold/pillanatkep/2026/06/04/pillanatkep-sulyok-tamas-allamfo-magyar-peter-tisza-kormany-parlament-fidesz-gulyas-gergely-mi-hazank-toroczkai-laszlo/",
+          "date": "2026-06-04T03:44:00+00:00",
+          "category": "hungary"
         },
         {
-          "title": "Henry Nowak murder is the fight Reform has been waiting for",
-          "source": "The Times",
-          "url": "https://www.thetimes.com/uk/politics/article/henry-nowak-southampton-nigel-farage-reform-csdl0tnn7",
-          "date": "2026-06-03T12:20:14+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "MPs turn on 'unforgivable' Nigel Farage amid Henry Nowak murder",
-          "source": "The National Scot",
-          "url": "https://www.thenational.scot/news/26162543.furious-mps-turn-nigel-farage-amid-murder-henry-nowak/",
-          "date": "2026-06-03T12:15:44+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "MPs erupt as Nigel Farage claims Britain dealing with two-tier policing after Henry Nowak murder: ‘Condemn the violence’",
-          "source": "AOL.com",
-          "url": "https://www.aol.com/articles/mps-erupt-nigel-farage-claims-120010000.html",
-          "date": "2026-06-03T12:15:26+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "„Westen hat sich Russland als Feind ausgeguckt und rüstet“, sagt der AfD-Abgeordnete",
-          "source": "WELT",
-          "url": "https://www.welt.de/politik/deutschland/plus6a1e8ca8f2919cfc74893c34/besuch-bei-putins-wirtschaftsforum-westen-hat-sich-russland-als-feind-ausgeguckt-und-ruestet-sagt-der-afd-abgeordnete.html",
-          "date": "2026-06-03T12:00:40+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "MPs erupt as Nigel Farage claims Britain dealing with two-tier policing",
-          "source": "The Independent",
-          "url": "https://www.independent.co.uk/tv/news/henry-nowak-nigel-farage-video-b2988724.html",
-          "date": "2026-06-03T12:00:00+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "'Condemn It': Farage Ignores MPs' Calls To Criticise Violence At Henry Nowak Murder Protest",
-          "source": "HuffPost UK",
-          "url": "https://www.huffingtonpost.co.uk/amp/entry/nigel-farage-henry-nowak-pmqs_uk_6a201059e4b0ba317304a9cf/",
-          "date": "2026-06-03T11:55:23+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Keir Starmer Launches Direct Attack On Nigel Farage's Call For 'Rage' After Henry Nowak Murder",
-          "source": "HuffPost UK",
-          "url": "https://www.huffingtonpost.co.uk/amp/entry/keir-starmer-direct-attack-farage_uk_6a200bf6e4b08a03cfbdb215/",
-          "date": "2026-06-03T11:25:54+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Nigel Farage says Henry Nowak murder shows 'two-tier culture' as protesters clash with riot police",
-          "source": "Manchester Evening News",
-          "url": "https://www.manchestereveningnews.co.uk/news/uk-news/nigel-farage-says-henry-nowak-34055057.amp",
-          "date": "2026-06-03T06:19:00+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Furious Farage calls for ‘pure cold hard rage’ as livid protesters mobilise over Henry Nowak murder",
-          "source": "Sky News Australia",
-          "url": "https://www.skynews.com.au/world-news/united-kingdom/furious-farage-calls-for-pure-cold-hard-rage-as-livid-protesters-mobilise-over-henry-nowak-murder/video/ad4a303f70d38d3e3e4c9c50c286bd9f?amp",
-          "date": "2026-06-03T05:04:33+00:00",
-          "category": "uk"
-        }
-      ],
-      "first_seen": "2026-06-02T17:00:49+00:00",
-      "last_seen": "2026-06-03T17:26:42+00:00"
-    },
-    {
-      "id": "trump-administrations-1-8b-anti-weaponization-fund-scrapped",
-      "title": "Trump administration’s $1.8B anti-weaponization fund scrapped",
-      "blurb": "The Trump administration has abandoned its controversial $1.8 billion fund intended to compensate allies and individuals allegedly targeted by political weaponization. The decision follows bipartisan backlash and legal challenges.",
-      "affect": "This commands disproportionate attention due to the high moral and political stakes of the fund, which was seen as a tool for rewarding political allies and undermining democratic norms.",
-      "intensity": 4,
-      "affect_signals": [
-        "polarized contention",
-        "cross-source repetition",
-        "outrage-coded language",
-        "moral charge",
-        "leadership crisis tone"
-      ],
-      "categories": [
-        "🇺🇸 MAGA / Trump"
-      ],
-      "article_count": 50,
-      "refs": [
-        {
-          "title": "The Trump Administration Has Launched Its Biggest Threat Yet to Scientific Research. We Can Stop Them. - The Equation",
-          "source": "Union of Concerned Scientists",
-          "url": "https://blog.ucs.org/alexa-dietrich/the-trump-administration-has-launched-its-biggest-threat-yet-to-scientific-research-we-can-stop-them/",
-          "date": "2026-06-03T14:15:39+00:00",
+          "title": "Knicks Star Josh Hart Not Afraid To Share Opinion Of President Trump",
+          "source": "Yahoo Sports",
+          "url": "https://sports.yahoo.com/articles/knicks-star-josh-hart-not-230000725.html",
+          "date": "2026-06-04T02:25:38+00:00",
           "category": "usa"
         },
         {
-          "title": "The biggest threat to U.S. security isn’t Iran, it’s President Trump",
-          "source": "Inquirer.com",
-          "url": "https://www.inquirer.com/opinion/trump-national-security-threat-ukraine-russia-war-20260603.html",
-          "date": "2026-06-03T14:01:00+00:00",
-          "category": "usa"
+          "title": "Ukrán fronton is nyert a Tisza – a nap hírei",
+          "source": "Infostart",
+          "url": "https://infostart.hu/belfold/2026/06/03/ukran-fronton-is-nyert-a-tisza-a-nap-hirei",
+          "date": "2026-06-03T20:52:00+00:00",
+          "category": "hungary"
         },
         {
-          "title": "Trump administration scraps $1.8B 'Anti-Weaponization Fund'",
-          "source": "FOX 10 Phoenix",
-          "url": "https://www.fox10phoenix.com/video/fmc-42u0t2hgz9kytk6m",
-          "date": "2026-06-03T13:30:23+00:00",
-          "category": "usa"
+          "title": "Budapest, Kyiv reach comprehensive deal on Hungarian minority rights, PM Magyar says",
+          "source": "The New Voice of Ukraine",
+          "url": "https://english.nv.ua/nation/budapest-kyiv-reach-deal-on-hungarian-minority-rights-50613215.html",
+          "date": "2026-06-03T20:30:00+00:00",
+          "category": "hungary"
         },
         {
-          "title": "The Latest: Trump keeps immunity from tax probes while scrapping $1.8 billion compensation fund",
-          "source": "KSAT",
-          "url": "https://www.ksat.com/news/politics/2026/06/03/the-latest-trump-keeps-immunity-from-tax-probes-while-scrapping-18-billion-compensation-fund/",
-          "date": "2026-06-03T12:39:28+00:00",
-          "category": "usa"
+          "title": "Magyar Péter: Áttörést értünk el a kárpátaljaiak jogainak biztosításában",
+          "source": "Klubrádió",
+          "url": "https://www.klubradio.hu/hirek/magyar-peter-attorest-ertunk-el-a-karpataljaiak-jogainak-biztositasaban-161223",
+          "date": "2026-06-03T20:00:08+00:00",
+          "category": "hungary"
         },
         {
-          "title": "El PP abraza la «prioridad nacional» de Vox para pactar en Castilla y León",
-          "source": "naiz:",
-          "url": "https://www.naiz.eus/info/noticia/amp/20260603/el-pp-abraza-la-prioridad-nacional-de-vox-para-pactar-en-castilla-y-leon",
-          "date": "2026-06-03T12:22:00+00:00",
+          "title": "Magyar Péter: Megállapodásra jutottunk Ukrajnával a magyar kisebbség jogainak rendezéséről",
+          "source": "Telex",
+          "url": "https://telex.hu/kulfold/2026/06/03/magyar-peter-teljes-koru-megallapodasra-jutott-ukrajnaval-karpatalja-magyar-kisebbseg-jogok",
+          "date": "2026-06-03T18:36:41+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Magyar Péter: Sikerült Ukrajnával megállapodni a magyar kisebbség jogairól",
+          "source": "Szabad Magyar Szó",
+          "url": "https://szmsz.press/2026/06/03/magyar-peter-sikerult-ukrajnaval-megallapodni-a-magyar-kisebbseg-jogairol/",
+          "date": "2026-06-03T18:35:21+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Magyar Péter bejelentette, teljes körű megállapodás született a magyar kisebbség jogairól Ukrajnával",
+          "source": "Népszava",
+          "url": "https://nepszava.hu/3324724_magyar-peter-ukrajna-megallapodas-magyar-kisebbseg-nyelvi-oktatasi-kulturalis-es-politikai-jogainak-bovites",
+          "date": "2026-06-03T18:25:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Magyar Péter: Jelentős áttörés történt az ukrajnai magyar kisebbség jogainak bővítésében",
+          "source": "atv.hu",
+          "url": "https://www.atv.hu/belfold/20260603/magyar-peter-ukrajnai-jog/",
+          "date": "2026-06-03T18:19:07+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Magyar Péter: megállapodtunk Ukrajnával a magyar kisebbség jogainak bővítéséről",
+          "source": "Privátbankár.hu",
+          "url": "https://privatbankar.hu/cikkek/kozerdeku/magyar-peter-megallapodtunk-ukrajnaval-a-magyar-kisebbseg-jogainak-boviteserol.html",
+          "date": "2026-06-03T18:15:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Magyar Péter bejelentette, hogy sikerült megállapodni Ukrajnával a magyar kisebbségi jogokról",
+          "source": "24.hu",
+          "url": "https://24.hu/belfold/2026/06/03/magyar-peter-ukrajna-megallapodas/",
+          "date": "2026-06-03T18:14:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Óriási hírt jelentett be Magyar Péter: „3 hét alatt sikerült elérnünk azt, amit Orbán Viktoréknek 10 év alatt nem”",
+          "source": "Mfor.hu",
+          "url": "https://mfor.hu/cikkek/kozerdeku/oriasi-hirt-jelentett-be-magyar-peter-3-het-alatt-sikerult-elernunk-azt-amit-orban-viktoreknek-10-ev-alatt-nem.html",
+          "date": "2026-06-03T18:08:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Magyar Péter szenzációs bejelentést tett",
+          "source": "Infostart",
+          "url": "https://infostart.hu/belfold/2026/06/03/magyar-peter-szenzacios-bejelentest-tett",
+          "date": "2026-06-03T18:07:52+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Vége: itt a megállapodás Ukrajnával – Magyar Péter rendkívüli bejelentése!",
+          "source": "Blikk",
+          "url": "https://www.blikk.hu/politika/magyar-politika/magyar-peter-ukrajna-megallapodas-kisebbseg/t061k4p",
+          "date": "2026-06-03T18:05:15+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Tisza-kormány: Magyar Péter új megállapodást köt Emmanuel Macronnal, felszólítást küldött Orbán Viktornak",
+          "source": "Portfolio.hu",
+          "url": "https://www.portfolio.hu/gazdasag/20260603/tisza-kormany-magyar-peter-uj-megallapodast-kot-emmanuel-macronnal-felszolitast-kuldott-orban-viktornak-840824",
+          "date": "2026-06-03T18:04:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Magyar Péter bejelentette: sikerült megállapodnunk Ukrajnával",
+          "source": "Portfolio.hu",
+          "url": "https://www.portfolio.hu/global/20260603/magyar-peter-bejelentette-sikerult-megallapodnunk-ukrajnaval-841086",
+          "date": "2026-06-03T18:04:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Magyar Péter: Teljeskörű megállapodásra jutottunk Ukrajnával",
+          "source": "Magyar Hang",
+          "url": "https://hang.hu/hataron-tul/magyar-peter-teljeskoru-megallapodasra-jutottunk-ukrajnaval-189230",
+          "date": "2026-06-03T18:02:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Magyar Péter: Sikerült megállapodni Ukrajnával a magyar kisebbség jogairól",
+          "source": "Euronews",
+          "url": "https://hu.euronews.com/my-europe/2026/06/03/magyar-peter-sikerult-megallapodni-ukrajnaval-a-magyar-kisebbseg-jogairol",
+          "date": "2026-06-03T18:00:23+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Magyar Péter: Sikerült megállapodni Ukrajnával a magyar kisebbségi jogokról",
+          "source": "444",
+          "url": "https://444.hu/2026/06/03/magyar-peter-sikerult-megallapodni-ukrajnaval-a-magyar-kisebbsegi-jogokrol",
+          "date": "2026-06-03T17:58:20+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Itthon: Magyar Péter bejelentette, sikerült Ukrajnával megállapodni a magyar kisebbség jogairól",
+          "source": "| hvg.hu",
+          "url": "https://hvg.hu/itthon/20260603_magyar-peter-tisza-kormany-bejelentes",
+          "date": "2026-06-03T17:46:52+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Magyar Péter: Berlinben és Párizsban is sikerült megerősíteni Magyarország pozícióit",
+          "source": "hirado.hu",
+          "url": "https://hirado.hu/kulfold/cikk/2026/06/03/magyar-peter-berlinben-es-parizsban-is-sikerult-megerositeni-magyarorszag-pozicioit",
+          "date": "2026-06-03T17:21:41+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Magyar Péter „késhegyre menő vitákra” számít az EU-ban",
+          "source": "Infostart",
+          "url": "https://infostart.hu/kulfold/2026/06/03/magyar-peter-keshegyre-meno-vitakra-az-eu-ban",
+          "date": "2026-06-03T17:10:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Informe desde Madrid: PP y Vox firman acuerdo de gobierno en Castilla y León",
+          "source": "France 24",
+          "url": "https://www.france24.com/es/video/20260603-informe-desde-madrid-pp-y-vox-firman-acuerdo-de-gobierno-en-castilla-y-le%C3%B3n",
+          "date": "2026-06-03T16:44:07+00:00",
           "category": "spain"
         },
         {
-          "title": "Under pressure, Trump administration drops controversial fund for Capitol rioters",
-          "source": "Le Monde.fr",
-          "url": "https://www.lemonde.fr/en/international/article/2026/06/03/under-pressure-trump-administration-drops-controversial-fund-for-capitol-rioters_6754078_4.html",
-          "date": "2026-06-03T08:57:15+00:00",
-          "category": "usa"
+          "title": "Magyar Péter a magyar–francia stratégiai megállapodás megújításáról állapodott meg a francia elnökkel",
+          "source": "hirado.hu",
+          "url": "https://hirado.hu/kulfold/cikk/2026/06/03/magyar-peter-a-magyar-francia-strategiai-megallapodas-megujitasarol-allapodott-meg-a-francia-elnokkel",
+          "date": "2026-06-03T16:01:09+00:00",
+          "category": "hungary"
         },
         {
-          "title": "From courts, critics and his own party, Donald Trump runs smack into reality",
-          "source": "930 WFMD Free Talk",
-          "url": "https://www.wfmd.com/2026/06/03/from-courts-critics-and-his-own-party-donald-trump-runs-smack-into-reality/",
-          "date": "2026-06-03T08:05:10+00:00",
-          "category": "usa"
+          "title": "Lehet-e valódi eredménye a Tisza vízügyi cselekvési tervének?",
+          "source": "| hvg.hu",
+          "url": "https://hvg.hu/zhvg/20260603_kozos-koltseg-timar-gabor-aszaly-podcast",
+          "date": "2026-06-03T16:00:00+00:00",
+          "category": "hungary"
         },
         {
-          "title": "Donald Trump’s Controversial $1.8 Billion Fund Is Officially Over",
-          "source": "Yahoo",
-          "url": "https://www.yahoo.com/news/politics/articles/donald-trump-controversial-1-8-062559874.html",
-          "date": "2026-06-03T06:25:00+00:00",
-          "category": "usa"
+          "title": "Magyar Péter meghívta a francia elnököt Budapestre",
+          "source": "Magyar Hang",
+          "url": "https://hang.hu/belfold/magyar-peter-meghivta-a-francia-elnokot-budapestre-189225",
+          "date": "2026-06-03T15:54:00+00:00",
+          "category": "hungary"
         },
         {
-          "title": "Trump administration drops 'Anti-Weaponization Fund'",
-          "source": "Yahoo",
-          "url": "https://www.yahoo.com/news/politics/articles/trump-administration-drops-anti-weaponization-011052190.html",
-          "date": "2026-06-03T01:10:00+00:00",
-          "category": "usa"
+          "title": "Magyar Péter meghívta Emmanuel Macront az 1956-os forradalom hetvenedik évfordulójára",
+          "source": "Telex",
+          "url": "https://telex.hu/belfold/2026/06/03/magyar-peter-emmanuel-macron-francia-elnok-parizs-latogatas-meghivas-nemzeti-unnep-1956",
+          "date": "2026-06-03T15:29:55+00:00",
+          "category": "hungary"
         },
         {
-          "title": "Trump administration shuts down anti-weaponization fund",
-          "source": "Fox News",
-          "url": "https://www.foxnews.com/video/6397357481112",
-          "date": "2026-06-03T00:08:02+00:00",
-          "category": "usa"
+          "title": "Miért pont Berlin, miért pont Párizs?",
+          "source": "24.hu",
+          "url": "https://24.hu/kulfold/2026/06/03/berlin-parizs-visegradi-negyek-magyar-peter-latogatasok-24extra/",
+          "date": "2026-06-03T15:26:11+00:00",
+          "category": "hungary"
         },
         {
-          "title": "Trump administration scrapping $1.8B to compensate president's allies, Blanche says",
-          "source": "southernminn.com",
-          "url": "https://www.southernminn.com/faribault_daily_news/news/nation/trump-administration-scrapping-1-8b-to-compensate-presidents-allies-blanche-says/article_89c5e79b-ea05-417b-a71d-9d984bebd258.html",
-          "date": "2026-06-02T22:52:43+00:00",
-          "category": "usa"
+          "title": "Macron szerint Magyarország visszatért Európába",
+          "source": "Magyarország Kormánya",
+          "url": "https://kormany.hu/hirek/macron-szerint-magyarorszag-visszatert-europaba",
+          "date": "2026-06-03T15:14:24+00:00",
+          "category": "hungary"
         },
         {
-          "title": "Trump administration won’t pursue $1.8B “Anti-Weaponization Fund,\" Acting AG says",
-          "source": "FOX 11 Los Angeles",
-          "url": "https://www.foxla.com/news/trump-administration-wont-pursue-1-8b-anti-weaponization-fund-acting-ag-says",
-          "date": "2026-06-02T22:08:46+00:00",
-          "category": "usa"
+          "title": "Péter Magyar offers Budapest as venue for peace negotiations",
+          "source": "The New Voice of Ukraine",
+          "url": "https://english.nv.ua/nation/asked-about-potential-security-guarantees-for-ukraine-and-what-they-should-look-like-magyar-recalle-50613122.html",
+          "date": "2026-06-03T15:10:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Fidesz: A német és a francia vezetés is bevasalta Magyar Péteren a kampánytámogatás árát",
+          "source": "hirado.hu",
+          "url": "https://hirado.hu/belfold/cikk/2026/06/03/fidesz-a-nemet-es-a-francia-vezetes-is-bevasalta-magyar-peteren-a-kampanytamogatas-arat",
+          "date": "2026-06-03T13:21:58+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Magyar Péter a stratégiai együttműködés elmélyítéséről egyezett meg a francia elnökkel Párizsban",
+          "source": "Euronews",
+          "url": "https://hu.euronews.com/my-europe/2026/06/03/magyar-peter-a-strategiai-egyuttmukodes-elmelyiteserol-egyezett-meg-a-francia-elnokkel-par",
+          "date": "2026-06-03T12:52:33+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Videók. Magyar Péter a stratégiai együttműködés elmélyítéséről egyezett meg a francia elnökkel Párizsban",
+          "source": "Euronews.com",
+          "url": "https://hu.euronews.com/video/2026/06/03/magyar-peter-a-strategiai-egyuttmukodes-elmelyiteserol-egyezett-meg-a-francia-elnokkel-par",
+          "date": "2026-06-03T12:52:33+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Media report links Orbán to raid on Ukrainian cash convoy in Hungary - RBC-Ukraine",
+          "source": "",
+          "url": "https://newsukraine.rbc.ua/news/media-report-links-orb-n-to-raid-on-ukrainian-1780489990.html",
+          "date": "2026-06-03T12:40:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Ukrajna támogatása, Európa biztonsága, korrupcióellenes lépések: zajlik a Magyar Péter–Emmanuel Macron csúcs Párizsban",
+          "source": "Privátbankár.hu",
+          "url": "https://privatbankar.hu/cikkek/kozerdeku/ukrajna-tamogatasa-europa-biztonsaga-korrupcioellenes-lepesek-zajlik-a-magyar-peteremmanuel-macron-csucs-parizsban.html",
+          "date": "2026-06-03T12:20:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Magyar Péter Budapestre hívta Macront, megújulhat a magyar-francia stratégiai megállapodás",
+          "source": "Mfor.hu",
+          "url": "https://mfor.hu/cikkek/kozerdeku/magyar-peter-budapestre-hivta-macront-megujulhat-a-magyar-francia-strategiai-megallapodas.html",
+          "date": "2026-06-03T12:12:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Magyar Péter: A korrupcióellenes fellépés közös magyar és európai érdek",
+          "source": "hirado.hu",
+          "url": "https://hirado.hu/kulfold/cikk/2026/06/03/magyar-peter-a-korrupcioellenes-fellepes-kozos-magyar-es-europai-erdek",
+          "date": "2026-06-03T12:10:18+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Nagy bejelentést tett Macron és Magyar Péter Párizsban: új korszak jöhet a magyar–francia kapcsolatokban",
+          "source": "Pénzcentrum",
+          "url": "https://www.penzcentrum.hu/vilag/20260603/nagy-bejelentest-tett-macron-es-magyar-peter-parizsban-uj-korszak-johet-a-magyar-francia-kapcsolatokban-1199836",
+          "date": "2026-06-03T12:10:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "After Orbán: Hungary's new PM brings EU reset to Paris",
+          "source": "TVP World",
+          "url": "https://tvpworld.com/93621015/hungarys-magyar-meets-macron-in-post-orbn-eu-reset",
+          "date": "2026-06-03T11:51:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Nagy bejelentésre készül Macron és Magyar Péter: stratégiai együttműködésre lépünk Franciaországgal",
+          "source": "Portfolio.hu",
+          "url": "https://www.portfolio.hu/unios-forrasok/20260603/nagy-bejelentesre-keszul-macron-es-magyar-peter-strategiai-egyuttmukodesre-lepunk-franciaorszaggal-840958",
+          "date": "2026-06-03T11:41:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Magyar Péter: Ha alacsonyabb lenne a korrupció, akkor több francia befektető érkezhetne Magyarországra",
+          "source": "Népszava",
+          "url": "https://nepszava.hu/3324625_magyar-peter-emmanuel-macron-franciaorszag",
+          "date": "2026-06-03T11:36:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Magyar Péter megérkezett az Élysée-palotába, meghívta Emmanuel Macront október 23-ra Budapestre",
+          "source": "24.hu",
+          "url": "https://24.hu/kulfold/2026/06/03/magyar-peter-parizs-emmanuel-macron-talakozo-breaking/",
+          "date": "2026-06-03T11:24:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Magyar Péter Párizsban: meghívom Emmanuel Macront október 23-ra, a forradalom 70. évfordulójának megünneplésére",
+          "source": "Infostart",
+          "url": "https://infostart.hu/belfold/2026/06/03/magyar-peter-parizsban-meghivom-emmanuel-macront-oktober-23-ra-a-forradalom-70-evfordulojanak-megunneplesere",
+          "date": "2026-06-03T11:19:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Most találkozik Magyar Péter és Emmaneul Macron",
+          "source": "Portfolio.hu",
+          "url": "https://www.portfolio.hu/percrol-percre/840824/most-talalkozik-magyar-peter-es-emmaneul-macron-1037778",
+          "date": "2026-06-03T11:04:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Magyar Péter: Budapesten tehetnének pontot az orosz–ukrán háború végére",
+          "source": "Portfolio.hu",
+          "url": "https://www.portfolio.hu/unios-forrasok/20260603/magyar-peter-budapesten-tehetnenek-pontot-az-orosz-ukran-haboru-vegere-840920",
+          "date": "2026-06-03T10:07:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Magyar Péter a FAZ-nak: Azon dolgozunk, hogy néhány napon belül megállapodást érjünk el a kárpátaljai magyarok jogainak helyreállításáról",
+          "source": "444",
+          "url": "https://444.hu/2026/06/03/magyar-peter-a-faz-nak-azon-dolgozunk-hogy-nehany-napon-belul-megallapodast-erjunk-el-a-karpataljai-magyarok-jogainak-helyreallitasarol",
+          "date": "2026-06-03T09:36:01+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Hungary PM Magyar says tax reform will come after new 2026 budget",
+          "source": "AOL.com",
+          "url": "https://www.aol.com/articles/hungary-pm-magyar-says-tax-112832000.html",
+          "date": "2026-06-03T09:14:46+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Már Párizsban van Magyar Péter, és rögtön egy akcióval kezdett – fotók",
+          "source": "Infostart",
+          "url": "https://infostart.hu/kulfold/2026/06/03/mar-parizsban-van-magyar-peter-es-rogton-egy-akcioval-kezdett-fotok",
+          "date": "2026-06-03T09:09:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Tisza-kormány: Magyar Péter felszólította Orbán Viktort, a francia elnökkel tárgyal a kormányfő",
+          "source": "Portfolio.hu",
+          "url": "https://www.portfolio.hu/gazdasag/20260603/tisza-kormany-magyar-peter-felszolitotta-orban-viktort-a-francia-elnokkel-targyal-a-kormanyfo-840824",
+          "date": "2026-06-03T08:48:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Török Gábor szerint Orbán Viktor hatalmat gyakorolt, Magyar Péter politikát művel",
+          "source": "Telex",
+          "url": "https://telex.hu/belfold/2026/06/03/torok-gabor-elemzo-orban-viktor-magyar-peter-politika-hatalom",
+          "date": "2026-06-03T07:54:51+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "A Fidesz szerint Magyar Péter hazudik az ukrán aranykonvojról, nem Orbán Viktor utasítására indult meg az akció",
+          "source": "Index.hu",
+          "url": "https://index.hu/belfold/2026/06/03/fidesz-reakcio-magyar-peter-orban-viktor-ukran-aranykonvoj/",
+          "date": "2026-06-03T07:53:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Magyar Péter: Orbán kézi vezérléssel irányította a bűnüldöző és a titkosszolgálati szervek munkáját",
+          "source": "| hvg.hu",
+          "url": "https://hvg.hu/itthon/20260603_magyar-peter-aranykonvoj-reakcio-fidesz",
+          "date": "2026-06-03T07:35:52+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Hungary's PM threatens legal action to force president out of office",
+          "source": "malaysiasun.com",
+          "url": "https://www.malaysiasun.com/news/279095769/hungarys-pm-threatens-to-force-president-out-of-office",
+          "date": "2026-06-03T07:28:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Magyar Péter az ukrán aranykonvoj ügyéről: Orbán Viktor kézi vezérléssel irányította a hatóságokat, vállalnia kell a felelősséget",
+          "source": "Portfolio.hu",
+          "url": "https://www.portfolio.hu/gazdasag/20260603/magyar-peter-az-ukran-aranykonvoj-ugyerol-orban-viktor-kezi-vezerlessel-iranyitotta-a-hatosagokat-vallalnia-kell-a-felelosseget-840866",
+          "date": "2026-06-03T07:02:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "A Tisza Párt beütheti az utolsó szöget a Szuverenitásvédelmi Hivatal koporsójába",
+          "source": "Privátbankár.hu",
+          "url": "https://privatbankar.hu/cikkek/makro/a-tisza-part-beutheti-az-utolso-szoget-a-szuverenitasvedelmi-hivatal-koporsojaba.html",
+          "date": "2026-06-03T06:39:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Török Gábor elmondta, mi a különbség Orbán Viktor és Magyar Péter között",
+          "source": "Portfolio.hu",
+          "url": "https://www.portfolio.hu/global/20260603/torok-gabor-elmondta-mi-a-kulonbseg-orban-viktor-es-magyar-peter-kozott-840842",
+          "date": "2026-06-03T06:19:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Török Gábor: Orbán Viktor hatalmat gyakorolt, Magyar Péter politikát művel",
+          "source": "Népszava",
+          "url": "https://nepszava.hu/3324591_torok-gabor-orban-viktor-magyar-peter",
+          "date": "2026-06-03T05:55:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Tisza-kormány: Macronnal tárgyal Magyar Péter, folytatódnak a személycserék az állami hivatalokban",
+          "source": "Portfolio.hu",
+          "url": "https://www.portfolio.hu/gazdasag/20260603/tisza-kormany-macronnal-targyal-magyar-peter-folytatodnak-a-szemelycserek-az-allami-hivatalokban-840824",
+          "date": "2026-06-03T04:23:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Politico: Magyar Péter zárt ajtók mögött jelezte, hogy zöld utat adhat Ukrajna uniós csatlakozásának",
+          "source": "Index.hu",
+          "url": "https://index.hu/kulfold/2026/06/03/magyarorszag-ukrajna-europai-unio-csatlakozas-moldova-magyar-peter-tisza-kormany/",
+          "date": "2026-06-03T04:04:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "New Hungarian Prime Minister Magyar takes on Orban's legacy",
+          "source": "DW.com",
+          "url": "https://www.dw.com/en/new-hungarian-prime-minister-magyar-takes-on-orbans-legacy/video-77390182",
+          "date": "2026-06-03T01:42:48+00:00",
+          "category": "hungary"
         }
       ],
-      "first_seen": "2026-06-03T05:25:30+00:00",
-      "last_seen": "2026-06-03T17:26:42+00:00"
+      "first_seen": "2026-06-04T05:21:20+00:00",
+      "last_seen": "2026-06-04T05:21:20+00:00"
     }
   ]
 }
