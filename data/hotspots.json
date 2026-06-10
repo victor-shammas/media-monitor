@@ -1,38 +1,1224 @@
 {
-  "updated_at": "2026-06-09T15:39:10+00:00",
+  "updated_at": "2026-06-10T04:57:18+00:00",
   "lookback_hours": 48,
   "model": "Mistral Large",
   "status": "ok",
   "hotspots": [
     {
-      "id": "trumps-explosive-nbc-interview-meltdown",
-      "title": "Trump’s explosive NBC interview meltdown",
-      "blurb": "President Donald Trump abruptly ended an NBC 'Meet the Press' interview after being pressed on election fraud claims and a proposed $1.8 billion 'anti-weaponization' fund. The incident sparked widespread media coverage and social media reactions, highlighting tensions between Trump and mainstream media outlets.",
-      "affect": "This commands disproportionate attention due to the high-profile nature of Trump’s confrontation with the media, which fuels polarized contention and moral outrage among his supporters and critics alike.",
+      "id": "manuel-adornis-corruption-scandal-deepens",
+      "title": "Manuel Adorni’s corruption scandal deepens",
+      "blurb": "Judicial authorities in Argentina are intensifying their investigation into Chief of Staff Manuel Adorni for alleged illicit enrichment. Multiple articles detail forensic analysis of a contractor’s phone, asset inconsistencies, and pending sworn declarations, with fiscal scrutiny of cryptocurrency transactions and undeclared assets.",
+      "affect": "The scandal commands disproportionate attention due to its moral charge, polarized contention between government allies and opposition, and the high-profile nature of Adorni’s role in President Milei’s administration.",
       "intensity": 5,
       "affect_signals": [
-        "polarized contention",
         "outrage-coded language",
         "cross-source repetition",
+        "leadership crisis tone",
+        "moral panic register",
+        "polarized contention"
+      ],
+      "categories": [
+        "🇦🇷 La Libertad Avanza"
+      ],
+      "article_count": 40,
+      "refs": [
+        {
+          "title": "Caso Manuel Adorni: la Justicia analiza el celular del contratista",
+          "source": "diariopopular.com.ar",
+          "url": "https://www.diariopopular.com.ar/politica/caso-manuel-adorni-la-justicia-analiza-el-celular-del-contratista-n904395",
+          "date": "2026-06-10T00:03:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "La esposa de Manuel Adorni ingresó al régimen de “inocencia fiscal”",
+          "source": "La Nación",
+          "url": "https://www.lanacion.com.ar/politica/la-esposa-de-manuel-adorni-ingreso-al-regimen-de-inocencia-fiscal-nid09062026/",
+          "date": "2026-06-10T00:02:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Caso Adorni: peritarán el celular del contratista de Indio Cuá",
+          "source": "Mendovoz",
+          "url": "https://www.mendovoz.com/actualidad/nacionales/2026/6/9/caso-adorni-peritaran-el-celular-del-contratista-de-indio-cua-172849.html",
+          "date": "2026-06-09T23:15:50+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Avanza la investigación judicial contra Manuel Adorni tras el análisis del celular del contratista",
+          "source": "El Eco",
+          "url": "https://www.eleco.com.ar/politica/avanza-la-investigacion-judicial-contra-manuel-adorni-tras-el-analisis-del-celular-del-contratista",
+          "date": "2026-06-09T22:13:40+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Se dice de mí: Patricia Bullrich confía su estrategia digital a un abogado de bajo perfil",
+          "source": "Letra P",
+          "url": "https://www.letrap.com.ar/politica/se-dice-mi-patricia-bullrich-confia-su-estrategia-digital-un-abogado-perfil-n5424355",
+          "date": "2026-06-09T21:46:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Caso Manuel Adorni: la Justicia revisa el teléfono del contratista que expuso los lujos del funcionario",
+          "source": "Los Andes",
+          "url": "https://www.losandes.com.ar/politica/caso-manuel-adorni-la-justicia-revisa-el-telefono-del-contratista-que-expuso-los-lujos-del-funcionario-n5994225",
+          "date": "2026-06-09T21:41:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "MSG crowd boos Donald Trump at NBA Finals; 'mostly cheers,' he says",
+          "source": "Yahoo Sports",
+          "url": "https://sports.yahoo.com/articles/msg-crowd-boos-donald-trump-211256799.html",
+          "date": "2026-06-09T21:12:56+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Caso Adorni: la Justicia ya analiza el celular del contratista vinculado a las obras en la casa de Indio Cuá",
+          "source": "Diario Río Negro",
+          "url": "https://www.rionegro.com.ar/justicia/caso-adorni-la-justicia-ya-analiza-el-celular-del-contratista-vinculado-a-las-obras-en-la-casa-de-indio-cua-4604800/",
+          "date": "2026-06-09T20:43:44+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Caso Manuel Adorni: la Justicia analiza el contenido del celular del contratista",
+          "source": "MinutoUno",
+          "url": "https://www.minutouno.com/politica/caso-manuel-adorni-la-justicia-analiza-el-contenido-del-celular-del-contratista-n6286932",
+          "date": "2026-06-09T20:24:32+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Adorni complicado: la Justicia avanza e investiga sus movimientos",
+          "source": "Nota al Pie",
+          "url": "https://www.notaalpie.com.ar/2026/06/09/adorni-acorralado-por-la-justicia/",
+          "date": "2026-06-09T20:00:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "La Justicia analiza el celular del contratista de Manuel Adorni para determinar las transacciones realizadas",
+          "source": "Nexofin",
+          "url": "https://www.nexofin.com/notas/1278674-la-justicia-analiza-el-celular-del-contratista-de-manuel-adorni-para-determinar-las-transacciones-realizadas-n-/amp/",
+          "date": "2026-06-09T18:37:03+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "¿Tiembla Manuel Adorni? La Justicia extrajo el contenido del celular del contratista",
+          "source": "Urgente24",
+          "url": "https://urgente24.com/actualidad/tiembla-manuel-adorni-la-justicia-extrajo-el-contenido-del-celular-del-contratista-n626373",
+          "date": "2026-06-09T18:06:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "La Justicia extrajo la información del celular del contratista de Manuel Adorni",
+          "source": "BAE Negocios",
+          "url": "https://www.baenegocios.com/politica/la-justicia-extrajo-la-informacion-del-celular-del-contratista-de-manuel-adorni/",
+          "date": "2026-06-09T17:29:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Causa Manuel Adorni: la Justicia extrajo los datos del celular del contratista Matías Tabar y analiza su contenido",
+          "source": "Ambito",
+          "url": "https://www.ambito.com/politica/causa-manuel-adorni-la-justicia-extrajo-los-datos-del-celular-del-contratista-matias-tabar-y-analiza-su-contenido-n6286861",
+          "date": "2026-06-09T17:29:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Extrajeron el contenido del celular del contratista que complicó a Adorni",
+          "source": "Cadena 3 Argentina",
+          "url": "https://www.cadena3.com/amp/noticia/politica-y-economia/extrajeron-el-contenido-del-celular-del-contratista-que-complico-a-adorni_560523",
+          "date": "2026-06-09T17:18:15+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "La prueba que inquieta a Manuel Adorni: la Justicia ya tiene la copia íntegra del celular del contratista Matí",
+          "source": "Crónica",
+          "url": "https://www.cronica.com.ar/politica/la-prueba-que-inquieta-a-manuel-adorni-la-justicia-ya-tiene-la-copia-integra-del-celular-del-contratista-matias-tabar/",
+          "date": "2026-06-09T17:04:41+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "La Justicia extrajo el contenido del celular del contratista Matías Tabar en la causa contra Manuel Adorni",
+          "source": "La Voz del Interior",
+          "url": "https://www.lavoz.com.ar/politica/justicia-extrajo-contenido-celular-contratista-matias-tabar-causa-manuel-adorni_0_4UZcfQjgIN.html",
+          "date": "2026-06-09T16:30:19+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Extrajeron el contenido del celular del contratista que complicó a Manuel Adorni y ya está bajo análisis de la Justicia",
+          "source": "Infobae",
+          "url": "https://www.infobae.com/judiciales/2026/06/09/extrajeron-el-contenido-del-celular-del-contratista-que-complico-a-manuel-adorni-y-ya-esta-bajo-analisis-de-la-justicia/?outputType=amp-type",
+          "date": "2026-06-09T16:09:14+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Manuel Adorni presentaría su declaración jurada coincidiendo con el inicio del Mundial",
+          "source": "0221",
+          "url": "https://www.0221.com.ar/nacional/manuel-adorni-presentaria-su-declaracion-jurada-coincidiendo-el-inicio-del-mundial-n129328",
+          "date": "2026-06-09T15:09:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Insólito: Manuel Adorni pagó más que Telefe por cada partido que la TV Pública transmitirá del Mundial 2026",
+          "source": "Página|12",
+          "url": "https://www.pagina12.com.ar/2026/06/09/insolito-manuel-adorni-pago-mas-que-telefe-por-cada-partido-que-la-tv-publica-transmitira-del-mundial-2026/",
+          "date": "2026-06-09T15:07:19+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Manuel Adorni:la Justicia analiza el celular del contratista",
+          "source": "Hoy Día Córdoba",
+          "url": "https://hoydia.com.ar/politica/nacional/adorni-justicia-celular-contratista/",
+          "date": "2026-06-09T14:59:34+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "\"Horas antes\" del Mundial 2026: la estrategia del Gobierno para la presentación de la declaración jurada de Manuel Adorni",
+          "source": "Diario Río Negro",
+          "url": "https://www.rionegro.com.ar/politica/horas-antes-del-mundial-2026-la-estrategia-del-gobierno-para-la-presentacion-de-la-declaracion-jurada-de-manuel-adorni-4603941/",
+          "date": "2026-06-09T14:06:11+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "A tres meses del estallido del escándalo, finalmente Manuel Adorni presentará su declaración jurada",
+          "source": "Radio LV11",
+          "url": "https://www.radiolv11.com.ar/noticia/a-tres-meses-del-estallido-del-escandalo-finalmente-manuel-adorni-presentara-su-declaracion-jurada",
+          "date": "2026-06-09T13:29:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Fiscal Pollicita intimará a Manuel Adorni por inconsistencias patrimoniales",
+          "source": "OPI Santa Cruz",
+          "url": "https://www.opisantacruz.com.ar/2026/06/09/fiscal-pollicita-intimara-a-manuel-adorni-por-inconsistencias-patrimoniales/",
+          "date": "2026-06-09T13:16:37+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Magyar Péter szerint titkos kormányhatározatot találtak arról, hogy a Fidesz Vitnyédre menekülttábort épített volna",
+          "source": "savariaforum.hu",
+          "url": "https://www.savariaforum.hu/rovat/magyar-peter-szerint-titkos-kormanyhatarozatot-talaltak-arrol-hogy-a-fidesz-vitnyedre-menekulttabort-epitett-volna",
+          "date": "2026-06-09T12:39:37+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Javier Milei eliminó 16 resoluciones y disposiciones que regulaban la actividad de distintos sectores",
+          "source": "MinutoUno",
+          "url": "https://www.minutouno.com/economia/javier-milei-elimino-16-resoluciones-y-disposiciones-que-regulaban-la-actividad-distintos-sectores-n6286650",
+          "date": "2026-06-09T11:15:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "La Justicia acorrala a Manuel Adorni y prepara un pedido de justificación de bienes",
+          "source": "El Intransigente",
+          "url": "https://elintransigente.com/2026/06/la-justicia-acorrala-a-manuel-adorni-y-prepara-un-pedido-de-justificacion-de-bienes/",
+          "date": "2026-06-09T10:25:45+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Ahora dicen que Manuel Adorni presentará su declaración jurada \"horas antes\" del inicio del Mundial",
+          "source": "Clarin.com",
+          "url": "https://www.clarin.com/politica/ahora-dicen-manuel-adorni-presentara-declaracion-jurada-horas-inicio-mundial_0_42hOS2D9m8.html",
+          "date": "2026-06-09T09:00:25+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei y sus medidas, en vivo: la interna oficialista y nueva actividad en el Senado -",
+          "source": "Impacto Castex",
+          "url": "https://impactocastex.com.ar/?p=19954",
+          "date": "2026-06-09T07:27:53+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "PP y Vox apuran los plazos para negociar la investidura de Moreno",
+          "source": "Diario de Sevilla",
+          "url": "https://www.diariodesevilla.es/andalucia/pp-vox-apuran-plazos-negociar_0_2006981249.html",
+          "date": "2026-06-09T04:58:33+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Törlesztette adósságát Magyar Péter",
+          "source": "Infostart",
+          "url": "https://infostart.hu/belfold/2026/06/09/torlesztette-adossagat-magyar-peter/amp",
+          "date": "2026-06-09T02:00:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Avanza la causa contra Adorni: le pedirán justificar sus bienes",
+          "source": "Mendovoz",
+          "url": "https://www.mendovoz.com/actualidad/nacionales/2026/6/8/avanza-la-causa-contra-adorni-le-pediran-justificar-sus-bienes-172808.html",
+          "date": "2026-06-09T01:02:31+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Crece la presión judicial sobre Manuel Adorni: el fiscal prepara un pedido de justificación de bienes",
+          "source": "Los Andes",
+          "url": "https://www.losandes.com.ar/politica/crece-la-presion-judicial-manuel-adorni-el-fiscal-prepara-un-pedido-justificacion-bienes-n5994108",
+          "date": "2026-06-09T00:45:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Gerardo Pollicita prepara la intimación a Adorni para que justifique su patrimonio",
+          "source": "Data Diario",
+          "url": "https://www.datadiario.com/politica/pollicita-prepara-un-pedido-de-justificacion-de-bienes-para-manuel-adorni-en-la-causa-por-presunto-enriquecimiento-ilicito-2026682140",
+          "date": "2026-06-09T00:42:23+00:00",
+          "category": "argentina"
+        }
+      ],
+      "first_seen": "2026-06-10T04:57:18+00:00",
+      "last_seen": "2026-06-10T04:57:18+00:00"
+    },
+    {
+      "id": "pp-vox-coalition-deals-reshape-spanish-regional-governments",
+      "title": "PP-Vox coalition deals reshape Spanish regional governments",
+      "blurb": "Spain’s conservative PP and far-right Vox have formalized coalition agreements in Castilla y León, Aragón, and Extremadura, adopting Vox’s ‘national priority’ policies. The deals have sparked backlash over anti-immigration measures, budget reallocations, and ideological concessions, with negotiations ongoing in Andalusia.",
+      "affect": "The hotspot is charged due to the ideological polarization, moral panic over immigration policies, and the high stakes of far-right influence in regional governance.",
+      "intensity": 4,
+      "affect_signals": [
+        "polarized contention",
+        "alarmist framing",
+        "cross-source repetition",
+        "moral panic register",
+        "leadership crisis tone"
+      ],
+      "categories": [
+        "🇪🇸 Vox"
+      ],
+      "article_count": 60,
+      "refs": [
+        {
+          "title": "Sell, eurodiputado de la ultra AfD, invitado de Vox en Madrid: \"Los alemanes pagan la estafa de Sánchez con las pensiones\"",
+          "source": "El Español",
+          "url": "https://www.elespanol.com/espana/politica/20260610/sell-eurodiputado-ultra-afd-invitado-vox-madrid-alemanes-pagan-estafa-sanchez-pensiones/1003744280161_0.html",
+          "date": "2026-06-09T23:54:02+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "La investidura de Mañueco sale adelante con los 47 procuradores del PP y Vox, frente a los 35 de la oposición",
+          "source": "El Norte de Castilla",
+          "url": "https://www.elnortedecastilla.es/castillayleon/investidura-manueco-sale-adelante-procuradores-pp-vox-20260609200453-nt.html",
+          "date": "2026-06-09T23:36:35+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "PP y Vox vetan las preguntas al Consell en las Corts hasta después de verano y evitan votar una nueva comisión de la dana",
+          "source": "elDiario.es",
+          "url": "https://www.eldiario.es/comunitat-valenciana/pp-vox-vetan-preguntas-consell-corts-despues-verano-evitan-votar-nueva-comision-dana_1_13288569.html",
+          "date": "2026-06-09T21:02:46+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Mañueco inicia su tercer mandato al frente de la Junta tras ser investido con los votos de PP y Vox",
+          "source": "leon24horas.net",
+          "url": "https://leon24horas.net/actualidad/manueco-inicia-su-tercer-mandato-al-frente-de-la-junta-tras-ser-investido-con-los-votos-de-pp-y-vox/",
+          "date": "2026-06-09T21:01:23+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Dos procuradores de Vox discrepan sobre el escaño que ocupar en la investidura de Mañueco",
+          "source": "ABC",
+          "url": "https://www.abc.es/espana/dos-procuradores-vox-discrepan-sobre-escano-ocupar-20260609220655-nt.html",
+          "date": "2026-06-09T20:06:59+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Bronca entre los dirigentes de VOX Hierro y Díaz Pico por el escaño junto a Pollán",
+          "source": "Diario de Valladolid",
+          "url": "https://www.diariodevalladolid.es/castilla-y-leon/260609/283684/bronca-dirigentes-vox-hierro-diaz-pico-escano-pollan.html",
+          "date": "2026-06-09T20:03:15+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Dos diputados de Vox discuten por su asiento en las Cortes de Castilla y León durante la investidura de Mañueco",
+          "source": "Cadena SER",
+          "url": "https://cadenaser.com/nacional/2026/06/09/dos-diputados-de-vox-discuten-por-su-asiento-en-las-cortes-de-castilla-y-leon-durante-la-investidura-de-manueco-cadena-ser/?outputType=amp",
+          "date": "2026-06-09T20:00:51+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "'Amarás a Vox sobre todas las cosas' o 'No codiciarás ayudas ajenas': los mandamientos ultras que asume",
+          "source": "LaSexta",
+          "url": "https://amp.lasexta.com/noticias/nacional/amaras-vox-todas-cosas-codiciaras-ayudas-ajenas-mandamientos-ultras-que-asume-manueco_202606096a284a629c159d030ffc5966.html",
+          "date": "2026-06-09T19:10:57+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Mañueco, investido presidente de Castilla y León con los votos del PP y Vox",
+          "source": "Diario Público",
+          "url": "https://www.publico.es/politica/manueco-investido-presidente-castilla-leon-votos-pp-vox.html",
+          "date": "2026-06-09T19:09:57+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Mañueco, investido presidente de la Junta de Castilla y León con el apoyo de un Vox que augura «muchos éxitos»",
+          "source": "El Debate",
+          "url": "https://www.eldebate.com/espana/castilla-y-leon/20260609/manueco-investido-presidente-junta-castilla-leon-apoyo-vox-augura-muchos-exitos_426988.html",
+          "date": "2026-06-09T19:07:06+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Mañueco abraza la \"prioridad nacional\" de Vox para amarrar su tercera Presidencia en Castilla y León",
+          "source": "Vozpopuli",
+          "url": "https://www.vozpopuli.com/espana/castilla-y-leon/manueco-abraza-la-prioridad-nacional-de-vox-para-amarrar-su-tercera-presidencia-en-castilla-y-leon.html",
+          "date": "2026-06-09T18:56:32+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Mañueco revalida el poder con Vox y asume la \"prioridad nacional\" en Castilla y León: \"La dignidad humana no depende del lugar de nacimiento\", replica el PSOE",
+          "source": "El HuffPost",
+          "url": "https://www.huffingtonpost.es/politica/manueco-revalida-vox-asume-prioridad-nacional-castilla-leon-la-dignidad-humana-depende-lugar-nacimiento-replica-psoe-f202606.html",
+          "date": "2026-06-09T18:53:21+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Mañueco, investido presidente de Castilla y León gracias al apoyo de Vox",
+          "source": "The Objective",
+          "url": "https://theobjective.com/espana/politica/2026-06-09/manueco-investido-presidente-castilla-y-leon-2/",
+          "date": "2026-06-09T18:48:21+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Mañueco, reelegido presidente con los votos de PP y Vox",
+          "source": "Diario de Burgos",
+          "url": "https://www.diariodeburgos.es/noticia/z19fbe255-0899-4a2a-9b52e1b352b7b5bd/202606/manueco-reelegido-presidente-con-los-votos-de-pp-y-vox",
+          "date": "2026-06-09T18:45:34+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Mañueco asume la \"prioridad nacional\" de Vox en su investidura como presidente de Castilla y León",
+          "source": "Libertad Digital",
+          "url": "https://www.libertaddigital.com/castilla-leon/2026-06-09/manueco-asume-la-prioridad-nacional-de-vox-en-su-investidura-como-presidente-de-castilla-y-leon-7418432/amp.html",
+          "date": "2026-06-09T18:42:16+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Mañueco afronta su tercer mandato tras ser investido presidente de Castilla y León con los votos de Vox",
+          "source": "OkDiario",
+          "url": "https://okdiario.com/castilla-leon/manueco-investido-presidente-castilla-leon-votos-vox-18228814",
+          "date": "2026-06-09T18:40:33+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Mañueco es investido presidente de Castilla y León tras comprar la prioridad nacional de Vox como la",
+          "source": "LaSexta",
+          "url": "https://www.lasexta.com/noticias/nacional/manueco-investido-presidente-castilla-leon-comprar-prioridad-nacional-vox-como-asignacion-justa-recursos_202606096a282f539c159d030ffbcf80.html",
+          "date": "2026-06-09T18:39:24+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Mañueco, investido presidente de Castilla y León con los votos de Vox tras asumir la \"prioridad nacional\"",
+          "source": "El Confidencial",
+          "url": "https://www.elconfidencial.com/espana/castilla-y-leon/2026-06-09/el-si-de-vox-inviste-a-manueco-como-presidente-junta-de-castilla-y-leon_4370220/",
+          "date": "2026-06-09T18:38:00+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Pollán (Vox) garantiza que \"ni un euro más saldrá de CyL para alimentar el efecto llamada\"",
+          "source": "ABC",
+          "url": "https://www.abc.es/espana/pollan-vox-garantiza-euro-saldra-cyl-alimentar-20260609202736-nt.html",
+          "date": "2026-06-09T18:27:41+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Vox brinda una muleta antisanchista a Mañueco",
+          "source": "El Norte de Castilla",
+          "url": "https://www.elnortedecastilla.es/castillayleon/vox-brinda-muleta-antisanchista-manueco-20260609200703-nt.html",
+          "date": "2026-06-09T18:21:08+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "De Pollán en Castilla y León a García en Extremadura: los consejeros de Vox en los nuevos gobiernos",
+          "source": "LaSexta",
+          "url": "https://amp.lasexta.com/noticias/nacional/pollan-castilla-leon-garcia-extremadura-consejeros-vox-nuevos-gobiernos-populares-golpe-prioridad-nacional_202606096a28592e44a9ef68251eb8a5.html",
+          "date": "2026-06-09T18:19:26+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Pollán augura “éxitos” para PP y Vox gracias a un acuerdo que recoge referencias firmadas en 2022",
+          "source": "La Nueva Crónica",
+          "url": "https://www.lanuevacronica.com/actualidad/pollan-augura-exitos-pp-vox-gracias-acuerdo-recoge-referencias-firmadas-en-2022_197875_102.html",
+          "date": "2026-06-09T18:18:00+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Vox no se \"arrugará\" en política migratoria y Pollán arremete contra los socialistas: \"No hay un PSOE bueno\"",
+          "source": "La Razón",
+          "url": "https://www.larazon.es/castilla-y-leon/vox-arrugara-politica-migratoria-pollan-arremete-socialistas-hay-psoe-bueno_202606096a2854fb9c159d030ffc8b10.html",
+          "date": "2026-06-09T18:01:31+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Juanma Moreno se sienta con Vox para negociar un pacto de investidura en Andalucía",
+          "source": "The Objective",
+          "url": "https://theobjective.com/espana/politica/2026-06-09/moreno-vox-negociacion-investidura-andalucia/",
+          "date": "2026-06-09T17:54:59+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Vox urge al PP para que inicie conversaciones para acordar el gobierno en Andalucía, pero no despeja si busca entrar",
+          "source": "elnoticierodigital.com",
+          "url": "https://www.elnoticierodigital.com/vox-urge-al-pp-para-que-inicie-conversaciones-para-acordar-el-gobierno-en-andalucia-pero-no-despeja-si-busca-entrar/",
+          "date": "2026-06-09T17:47:24+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Las negociaciones de Moreno Bonilla y la investidura de Mañueco atan al PP a Vox y su prioridad nacional",
+          "source": "Elplural.com",
+          "url": "https://www.elplural.com/politica/espana/negociaciones-moreno-bonilla-investidura-manueco-atan-pp-vox-prioridad-nacional_392482102",
+          "date": "2026-06-09T17:34:36+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Juanma Moreno se sienta por primera vez con con Vox para negociar un pacto de investidura",
+          "source": "Libertad Digital",
+          "url": "https://www.libertaddigital.com/andalucia/2026-06-09/juanma-moreno-se-sienta-por-fin-con-vox-para-negociar-un-pacto-de-investidura-7418406/",
+          "date": "2026-06-09T17:33:43+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Moreno y Vox inician contactos directos a dos días de la constitución del Parlamento",
+          "source": "Diario Sur",
+          "url": "https://www.diariosur.es/andalucia/moreno-vox-inician-contactos-directos-dos-dias-20260609193133-nt.html",
+          "date": "2026-06-09T17:31:33+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Török Gábor: ez volt a Fidesz-kampány egyik legnagyobb hibája",
+          "source": "24.hu",
+          "url": "https://24.hu/belfold/2026/06/09/torok-gabor-kampany-fidesz/",
+          "date": "2026-06-09T17:16:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Vox pregunta mañana a Bolaños si también cree que hay un complot contra el Gobierno en los casos de corrupción",
+          "source": "PressDigital",
+          "url": "https://www.pressdigital.es/articulo/politica/2026-06-09/5913143-vox-pregunta-manana-bolanos-tambien-cree-hay-complot-contra-gobierno-casos-corrupcion",
+          "date": "2026-06-09T17:15:00+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Moreno busca con Vox un pacto de legislatura en Andalucía tras una primera reunión \"cordial\"",
+          "source": "El Confidencial",
+          "url": "https://www.elconfidencial.com/espana/andalucia/2026-06-09/moreno-busca-vox-pacto-legislatura-andalucia-primera-reunion_4370136/",
+          "date": "2026-06-09T16:54:00+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "PP y Vox se reúnen para negociar la investidura de Moreno Bonilla en Andalucía",
+          "source": "Diario Público",
+          "url": "https://www.publico.es/politica/pp-vox-reunen-negociar-investidura-moreno-bonilla-andalucia.html",
+          "date": "2026-06-09T16:50:35+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "El PP y Vox mantienen la primera reunión en Andalucía para negociar un posible acuerdo de Gobierno",
+          "source": "20Minutos",
+          "url": "https://www.20minutos.es/andalucia/pp-vox-mantienen-primera-reunion-andalucia-para-negociar-un-posible-acuerdo-gobierno_6981260_0.html",
+          "date": "2026-06-09T16:44:34+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "PP y Vox se reúnen por primera vez tras las elecciones para abordar un acuerdo en Andalucía",
+          "source": "OkDiario",
+          "url": "https://okdiario.com/andalucia/pp-vox-reunen-primera-vez-elecciones-abordar-acuerdo-andalucia-18227979",
+          "date": "2026-06-09T16:34:47+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Primera reunión de Moreno con Vox en Andalucía para acordar el \"reparto de sillones\" del Parlamento",
+          "source": "La Razón",
+          "url": "https://www.larazon.es/espana/primera-reunion-moreno-vox-andalucia-acordar-reparto-sillones-parlamento_202606096a2840389c159d030ffc23f3.html",
+          "date": "2026-06-09T16:32:56+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Juanma Moreno se reúne con Vox para negociar el futuro Gobierno de la Junta de Andalucía",
+          "source": "RTVE.es",
+          "url": "https://amp.rtve.es/noticias/20260609/juanma-moreno-se-reune-con-vox-para-negociar-futuro-gobierno-junta-andalucia/17108121.shtml",
+          "date": "2026-06-09T16:31:30+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Moreno mantiene su primera reunión con Vox tras el 17M para un \"posible acuerdo de gobernabilidad\" en Andalucía",
+          "source": "Europa Press",
+          "url": "https://www.europapress.es/andalucia/noticia-moreno-mantiene-primera-reunion-vox-17m-posible-acuerdo-gobernabilidad-andalucia-20260609183044.html",
+          "date": "2026-06-09T16:30:44+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Juanma Moreno se sienta con Vox 22 días después de las elecciones del 17 de mayo para negociar un pacto de investidura",
+          "source": "El Mundo",
+          "url": "https://www.elmundo.es/andalucia/2026/06/09/6a283dd9fdddff6c018b45ce.html",
+          "date": "2026-06-09T16:25:58+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "PP y Vox blindan el presupuesto que sella su pacto de gobierno en Extremadura",
+          "source": "El Periódico Extremadura",
+          "url": "https://www.elperiodicoextremadura.com/extremadura/2026/06/09/pp-vox-blindan-presupuesto-sella-131208565.html",
+          "date": "2026-06-09T16:23:29+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Moreno se reúne por fin con Vox, casi un mes después de las elecciones, para negociar su investidura",
+          "source": "El Debate",
+          "url": "https://www.eldebate.com/espana/andalucia/20260609/moreno-reune-fin-casi-mes-despues-elecciones-vox-negociar-investidura_426943.html",
+          "date": "2026-06-09T16:22:52+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "PP y Vox se reúnen para negociar el pacto de investidura de Moreno",
+          "source": "ABC",
+          "url": "https://www.abc.es/espana/andalucia/pp-vox-reunen-negociar-pacto-investidura-moreno-20260609182157-nts.html",
+          "date": "2026-06-09T16:21:58+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Moreno abre negociaciones con Vox a dos días de constituirse el Parlamento andaluz",
+          "source": "El Independiente",
+          "url": "https://www.elindependiente.com/espana/2026/06/09/moreno-abre-negociaciones-con-vox-a-dos-dias-de-constituirse-el-parlamento-andaluz/",
+          "date": "2026-06-09T15:51:13+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Martínez acusa a Mañueco de “entregarse” a Vox: “Cuanto más hablaba, más desaparecía el PP”",
+          "source": "La Nueva Crónica",
+          "url": "https://www.lanuevacronica.com/actualidad/martinez-acusa-manueco-entregarse-vox-cuanto-mas-hablaba-mas-desaparecia-pp_197857_102.html",
+          "date": "2026-06-09T15:47:18+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Juanma Moreno se reúne con Vox para formar gobierno en Andalucía con la prioridad nacional de fondo",
+          "source": "LaSexta",
+          "url": "https://www.lasexta.com/noticias/nacional/juanma-moreno-reune-vox-formar-gobierno-andalucia-prioridad-nacional-fondo_202606096a2832ae9c159d030ffbdf52.html",
+          "date": "2026-06-09T15:35:10+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Moreno y Vox inician las negociaciones para el Gobierno andaluz 23 días después",
+          "source": "Elplural.com",
+          "url": "https://www.elplural.com/autonomias/andalucia/moreno-vox-inician-negociaciones-formales-gobierno-andaluz-23-dias-despues_392473102",
+          "date": "2026-06-09T15:31:00+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Juanma Moreno inicia las negociaciones con Vox en Andalucía: los partidos se reúnen en el Parlamento",
+          "source": "El Periódico",
+          "url": "https://www.elperiodico.com/es/politica/20260609/juanma-moreno-anuncia-negociaciones-inminentes-vox-acuerdo-investidura-131205429",
+          "date": "2026-06-09T15:25:57+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Vox rechaza la enmienda de Unidas al PGEx por ser un 'refrito de reproches ideológicos'",
+          "source": "regiondigital.com",
+          "url": "https://www.regiondigital.com/noticias/portada/431156-vox-rechaza-la-enmienda-de-unidas-al-pgex-por-ser-un-refrito-de-reproches-ideologicos.html",
+          "date": "2026-06-09T15:10:53+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Juan Manuel Moreno se reúne con Vox por primera vez para negociar el gobierno de Andalucía",
+          "source": "Cadena SER",
+          "url": "https://cadenaser.com/andalucia/2026/06/09/juan-manuel-moreno-se-reune-con-vox-por-primera-vez-para-negociar-el-gobierno-de-andalucia-radio-sevilla/",
+          "date": "2026-06-09T15:03:18+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Vox coloca a un juez y profesor universitario al frente de la desregulación en Aragón",
+          "source": "elDiario.es",
+          "url": "https://www.eldiario.es/aragon/politica/vox-universitario-pone-juez-profesor-frente-desregulacion-aragon_1_13288191.html",
+          "date": "2026-06-09T15:02:10+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Mañueco destaca que el pacto entre PP y Vox demuestra generosidad y responsabilidad",
+          "source": "ABC",
+          "url": "https://www.abc.es/espana/manueco-destaca-pacto-pp-vox-demuestra-generosidad-20260609151859-nt.html",
+          "date": "2026-06-09T13:19:04+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Mañueco asegura que PP y VOX aplicarán la prioridad nacional \"acatando las leyes\"",
+          "source": "Cadena SER",
+          "url": "https://cadenaser.com/castillayleon/2026/06/09/manueco-asegura-que-pp-y-vox-aplicaran-la-prioridad-nacional-acatando-la-constitucion-radio-valladolid/?outputType=amp",
+          "date": "2026-06-09T13:11:41+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Mañueco hace suya la \"prioridad nacional\" de Vox con una llamada a \"prescindir de las demagogias interesadas\"",
+          "source": "El Mundo",
+          "url": "https://www.elmundo.es/espana/2026/06/09/6a2805cae85ece95758b456e.html",
+          "date": "2026-06-09T12:53:26+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "El bipartito de PP y Vox de Elche activa los trámites para pedir un préstamo de 10,9 millones de euros",
+          "source": "Información",
+          "url": "https://www.informacion.es/elche/2026/06/09/bipartito-pp-vox-elche-tramites-prestamo-hacienda-131197258.html",
+          "date": "2026-06-09T12:45:10+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Nuevo golpe de Vox a la cooperación en Aragón: retira el apoyo a la cátedra de Unizar y lo destina a la prioridad nacional",
+          "source": "elDiario.es",
+          "url": "https://www.eldiario.es/aragon/politica/nuevo-golpe-vox-cooperacion-aragon-retira-apoyo-catedra-unizar-destina-prioridad-nacional_1_13287230.html",
+          "date": "2026-06-09T12:09:49+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Nolasco (Vox) cancela la partida que la Universidad de Zaragoza dedicaba a cooperación",
+          "source": "Cadena SER",
+          "url": "https://cadenaser.com/aragon/2026/06/09/nolasco-vox-cancela-la-partida-que-la-universidad-de-zaragoza-dedicaba-a-cooperacion-radio-zaragoza/",
+          "date": "2026-06-09T12:07:05+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Vox corta los fondos para la cátedra de Cooperación al Desarrollo de la Universidad de Zaragoza",
+          "source": "La Vanguardia",
+          "url": "https://www.lavanguardia.com/politica/20260609/11560272/vox-corta-fondos-catedra-cooperacion-desarrollo-universidad-zaragoza.html",
+          "date": "2026-06-09T11:51:34+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Vox espera una nueva «huida hacia delante» de Sánchez en su comparecencia por los casos de corrupción",
+          "source": "ABC",
+          "url": "https://www.abc.es/espana/vox-espera-nueva-huida-delante-sanchez-comparecencia-20260609132657-nt.html",
+          "date": "2026-06-09T11:26:58+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Juanma Moreno anuncia una negociación «inminente» con Vox",
+          "source": "ABC",
+          "url": "https://www.abc.es/espana/andalucia/malaga/juanma-moreno-anuncia-negociacion-inminente-vox-20260609132154-nts.html",
+          "date": "2026-06-09T11:21:55+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Vox presiona al PP para iniciar una negociación \"formal\" en Andalucía a 48 horas del primer test a su relación",
+          "source": "El Mundo",
+          "url": "https://www.elmundo.es/espana/2026/06/09/6a27e347e9cf4a4d168b456f.html",
+          "date": "2026-06-09T11:11:40+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Vox reprocha a Junts su \"falta de educación\" al reclamar al Papa que hable catalán",
+          "source": "ABC",
+          "url": "https://www.abc.es/espana/vox-reprocha-junts-falta-educacion-reclamar-papa-20260609123650-nt.html",
+          "date": "2026-06-09T10:36:55+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Cotrina plantea retirar su veto a las cuentas si Guardiola rompe con Vox y asume siete acuerdos clave",
+          "source": "Demócrata",
+          "url": "https://www.democrata.es/extremadura/cotrina-plantea-retirar-su-veto-a-las-cuentas-si-guardiola-rompe-con-vox-y-asume-siete-acuerdos-clave/",
+          "date": "2026-06-09T09:30:30+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Cotrina ofrece a Guardiola retirar la enmienda de totalidad a los PGEx si cesa a los consejeros de Vox y acepta 7 pactos",
+          "source": "Europa Press",
+          "url": "https://www.europapress.es/extremadura/noticia-cotrina-ofrece-guardiola-retirar-enmienda-totalidad-pgex-si-cesa-consejeros-vox-acepta-pactos-20260609112656.html",
+          "date": "2026-06-09T09:26:56+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "⁠El campo andaluz avisa de que no quiere a Vox en la Consejería de Agricultura: «Necesitamos estabilidad»",
+          "source": "El Debate",
+          "url": "https://www.eldebate.com/espana/andalucia/20260609/campo-andaluz-avisa-no-quiere-vox-consejeria-agricultura-necesitamos-estabilidad_426656.html",
+          "date": "2026-06-09T09:20:31+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "VOX insiste en su discurso de que \"la criminalidad se dispara en Huesca\"",
+          "source": "El Diario de Huesca",
+          "url": "https://www.eldiariodehuesca.com/actualidad/vox-insiste-en-su-discurso-criminalidad-se-dispara-en-huesca_44399_102.html",
+          "date": "2026-06-09T09:19:48+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "VOX denuncia un aumento del 19,1% de la criminalidad en Huesca en el primer trimestre de 2026",
+          "source": "Cadena SER",
+          "url": "https://cadenaser.com/aragon/2026/06/09/vox-denuncia-un-aumento-del-191-de-la-criminalidad-en-huesca-en-el-primer-trimestre-de-2026-radio-huesca/",
+          "date": "2026-06-09T09:17:28+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Nigel Farage Immigration Press Conference Chaos",
+          "source": "Suffolk Gazette",
+          "url": "https://www.suffolkgazette.com/nigel-farage-immigration-press-conference-chaos/",
+          "date": "2026-06-09T08:14:03+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Vox defiende en el Congreso proteger el desarrollo escolar de los alumnos con necesidades educativas especiales",
+          "source": "Servimedia",
+          "url": "https://www.servimedia.es/noticias/vox-defiende-congreso-proteger-desarrollo-escolar-alumnos-necesidades-educativas-especiales/1412942592",
+          "date": "2026-06-09T06:06:00+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "La mesa del Parlamento será la primera gran clave del pacto PP-Vox en Andalucía",
+          "source": "ABC",
+          "url": "https://www.abc.es/espana/andalucia/mesa-parlamento-primera-gran-clave-pacto-ppvox-20260609202056-nts.html",
+          "date": "2026-06-09T05:12:16+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Mañueco afronta su tercera investidura con el regreso del tándem PP-Vox: una jornada de alto voltaje en las Cortes",
+          "source": "El Español",
+          "url": "https://www.elespanol.com/castilla-y-leon/region/20260609/manueco-afronta-tercera-investidura-regreso-tandem-pp-vox-jornada-alto-voltaje-cortes/1003744277355_0.html",
+          "date": "2026-06-09T05:00:00+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "PP y Vox apuran los plazos para negociar la investidura de Moreno",
+          "source": "Diario de Sevilla",
+          "url": "https://www.diariodesevilla.es/andalucia/pp-vox-apuran-plazos-negociar_0_2006981249.html",
+          "date": "2026-06-09T04:58:33+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "El acuerdo en Sevilla de PP y Vox, el espejo en el que Moreno puede mirarse: sin prioridad nacional ni concejalías",
+          "source": "El Español",
+          "url": "https://www.elespanol.com/sevilla/20260609/acuerdo-sevilla-pp-vox-espejo-moreno-puede-mirarse-sin-prioridad-nacional-concejalias/1003744278403_0.html",
+          "date": "2026-06-09T04:50:00+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Objetivo de Vox para 2027: arrebatar las competencias a Conchita Ruiz",
+          "source": "La Opinión de Murcia",
+          "url": "https://www.laopiniondemurcia.es/comunidad/2026/06/09/vox-2027-conchita-ruiz-131171353.html",
+          "date": "2026-06-09T04:00:55+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "La tutela de Génova y el nivel de influencia de Abascal: las dudas entre PP y Vox en Andalucía",
+          "source": "El Confidencial",
+          "url": "https://www.elconfidencial.com/espana/andalucia/2026-06-09/tutela-genova-nivel-influencia-abascal-dudas-pp-vox-andalucia_4369180/",
+          "date": "2026-06-09T03:00:00+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "PP y Vox se reunirán esta semana para iniciar las negociaciones y repartir la Mesa del Parlamento andaluz",
+          "source": "Vozpopuli",
+          "url": "https://www.vozpopuli.com/espana/politica/pp-y-vox-se-reuniran-esta-semana-para-iniciar-las-negociaciones-y-repartir-la-mesa-del-parlamento-andaluz.html",
+          "date": "2026-06-09T02:45:00+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Vox llama a poner coto a las homologaciones de títulos de medicina extranjeros tras incrementarse un 282 % en un año",
+          "source": "El Debate",
+          "url": "https://www.eldebate.com/espana/madrid/20260609/vox-llama-poner-coto-homologaciones-titulos-medicina-extranjeros-incrementarse-282-ano_426402.html",
+          "date": "2026-06-09T02:25:00+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "El alcalde de Sevilla marca el camino a Juanma Moreno: «A la ciudad le ha ido bien con el acuerdo con Vox»",
+          "source": "El Debate",
+          "url": "https://www.eldebate.com/espana/andalucia/sevilla/20260609/alcalde-sevilla-marca-camino-juanma-moreno-ciudad-le-ido-bien-acuerdo-vox_426434.html",
+          "date": "2026-06-09T02:25:00+00:00",
+          "category": "spain"
+        }
+      ],
+      "first_seen": "2026-06-10T04:57:18+00:00",
+      "last_seen": "2026-06-10T04:57:18+00:00"
+    },
+    {
+      "id": "trumps-explosive-nbc-interview-meltdown",
+      "title": "Trump’s explosive NBC interview meltdown",
+      "blurb": "President Trump abruptly ended an NBC interview after aggressive questioning about his $1.8 billion ‘anti-weaponization’ fund and election integrity claims. The incident sparked widespread media coverage, with critics accusing him of evading accountability and supporters praising his defiance.",
+      "affect": "The meltdown commands attention due to its dramatic framing, polarized reactions, and the high stakes of Trump’s media strategy ahead of the 2026 midterms.",
+      "intensity": 4,
+      "affect_signals": [
+        "outrage-coded language",
+        "cross-source repetition",
+        "polarized contention",
+        "alarmist framing",
         "leadership crisis tone"
       ],
       "categories": [
         "🇺🇸 MAGA / Trump"
       ],
-      "article_count": 20,
+      "article_count": 30,
       "refs": [
         {
-          "title": "„Nawrocki rośnie w siłę, Kaczyński traci realny wpływ”. Co dzieje się na prawej stronie sceny politycznej?",
-          "source": "Super Nowości",
-          "url": "https://supernowosci24.pl/aktualnosci/nawrocki-rosnie-w-sile-kaczynski-traci-realny-wplyw-co-dzieje-sie-na-prawej-stronie-sceny-politycznej/",
-          "date": "2026-06-09T11:00:00+00:00",
-          "category": "poland"
+          "title": "Opinion | Williams: Trump administration resurrects dangerous cyanide bombs",
+          "source": "VailDaily.com",
+          "url": "https://www.vaildaily.com/opinion/opinion-williams-trump-administration-resurrects-dangerous-cyanide-bombs/",
+          "date": "2026-06-10T00:01:19+00:00",
+          "category": "usa"
         },
         {
-          "title": "What Donald Trump Will Never Understand About Fighting",
-          "source": "The Atlantic",
-          "url": "https://www.theatlantic.com/ideas/2026/06/trump-ufc-martial-arts/687471/",
-          "date": "2026-06-09T12:00:00+00:00",
+          "title": "Trump Administration Has Detained More Than 500 Babies and Toddlers: Report",
+          "source": "Yahoo",
+          "url": "https://www.yahoo.com/news/politics/articles/trump-administration-detained-more-500-234652208.html",
+          "date": "2026-06-09T23:46:52+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "How do New Yorkers view President Trump?",
+          "source": "Fox News",
+          "url": "https://www.foxnews.com/video/6398019185112",
+          "date": "2026-06-09T23:35:30+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump administration moves swiftly on plans to restrict voting by mail in the states - The Frederick News-Post",
+          "source": "",
+          "url": "https://www.fredericknewspost.com/news/politics_and_government/elections/trump-administration-moves-swiftly-on-plans-to-restrict-voting-by-mail-in-the-states/article_67ca59ac-1ba6-5a3b-822e-8494d4d15719.html",
+          "date": "2026-06-09T23:30:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "US strikes on Iran will not stop negotiations, officials, Donald Trump says",
+          "source": "The Jerusalem Post",
+          "url": "https://www.jpost.com/middle-east/iran-news/article-898909",
+          "date": "2026-06-09T23:27:30+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "JD Vance installs custom chicken coop at Naval Observatory and will personally care for birds",
+          "source": "Fox News",
+          "url": "https://www.foxnews.com/politics/jd-vance-installs-custom-chicken-coop-naval-observatory-personally-care-birds",
+          "date": "2026-06-09T23:13:41+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Immigration Advocates Condemn Trump Administration Over ‘Discriminatory’ Treatment of World Cup Teams",
+          "source": "WTTW News",
+          "url": "https://news.wttw.com/2026/06/09/immigration-advocates-condemn-trump-administration-over-discriminatory-treatment-world",
+          "date": "2026-06-09T23:07:47+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Secretary of War Pete Hegseth to engage troops at CENTCOM in Tampa",
+          "source": "Tampa Bay 28",
+          "url": "https://www.tampabay28.com/news/national-news/secretary-of-war-pete-hegseth-to-engage-troops-at-centcom-in-tampa",
+          "date": "2026-06-09T22:59:44+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Donald Trump's approval rating on the economy is tanking",
+          "source": "Yahoo",
+          "url": "https://www.yahoo.com/news/politics/articles/donald-trumps-approval-rating-economy-225549537.html",
+          "date": "2026-06-09T22:55:49+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump met House speaker amid pressure over surveillance law deadline",
+          "source": "The Guardian",
+          "url": "https://www.theguardian.com/us-news/2026/jun/09/trump-johnson-surveillance-law",
+          "date": "2026-06-09T22:32:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump Administration Shovels $75 million into Controversial Oakland Coal Terminal",
+          "source": "KQED",
+          "url": "https://www.kqed.org/forum/2010101914067/trump-administration-shovels-75-million-into-controversial-oakland-coal-terminal",
+          "date": "2026-06-09T22:25:07+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "JD Vance claims US ‘very close’ to peace deal with Iran",
+          "source": "The Guardian",
+          "url": "https://www.theguardian.com/us-news/2026/jun/09/jd-vance-iran-peace-deal",
+          "date": "2026-06-09T22:19:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Cardi B Says President Trump Brought ‘Dark’ Vibe Behind the Scenes at NY Knicks vs. Spurs Game 3",
+          "source": "Yahoo Sports",
+          "url": "https://sports.yahoo.com/articles/cardi-b-says-president-trump-215243021.html",
+          "date": "2026-06-09T21:52:43+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump administration warns over 500 hospitals to provide more price information or face fines",
+          "source": "AP News",
+          "url": "https://apnews.com/article/trump-hospital-prices-healthcare-affordability-313817c2ba73f1a3f4055ecde27b82be",
+          "date": "2026-06-09T21:26:07+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "The Trump administration's D.C. makeover is costing taxpayers millions with no-bid contracts",
+          "source": "WAMU",
+          "url": "https://wamu.org/story/26/06/09/dc-reflecting-pool-trump-new-york-times/",
+          "date": "2026-06-09T21:21:49+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Palm Beach Council approves new rules for President Trump's Mar-a-Lago helipad",
+          "source": "WFLX",
+          "url": "https://www.wflx.com/2026/06/09/palm-beach-council-approves-new-rules-president-trumps-mar-a-lago-helipad/",
+          "date": "2026-06-09T21:06:41+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump administration to install metal barriers in Big Bend National Park",
+          "source": "Houston Chronicle",
+          "url": "https://www.houstonchronicle.com/politics/texas/article/big-bend-trump-vehicle-barriers-22298094.php",
+          "date": "2026-06-09T21:01:33+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "US urges Europe to step up travel measures to prevent spread of Ebola from Africa",
+          "source": "Boston Herald",
+          "url": "https://www.bostonherald.com/2026/06/09/us-presses-europe-travel-restrictions-ebola-outbreak/",
+          "date": "2026-06-09T20:34:40+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump administration sanctions on Cuban leaders are a 'pretext' for military action, Cuba’s top diplomat to US tells AP",
+          "source": "news8000.com",
+          "url": "https://www.news8000.com/news/politics/national-politics/trump-administration-sanctions-on-cuban-leaders-are-a-pretext-for-military-action-cuba-s-top/article_bb89765c-7f74-52d9-b7f3-822fbd0df61c.html",
+          "date": "2026-06-09T20:04:18+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Paranoia is so strong inside Pete Hegseth’s Pentagon that it’s crippling decision making and preparedness: report",
+          "source": "The Independent",
+          "url": "https://www.independent.co.uk/news/world/americas/us-politics/pete-hegseth-pentagon-paranoia-decision-making-b2992722.html",
+          "date": "2026-06-09T20:03:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Magyar Péter még egyszer, négyszemközt fog beszélni Sulyok Tamással és mondhat neki valami újat is",
+          "source": "Népszava",
+          "url": "https://nepszava.hu/3325353_magyar-peter-sulyok-tamas-sandor-palota-eljaras-eltavolitas-elnokvalasztas-korrupcioellenes-torveny-unios-forrasok-kapcsolod",
+          "date": "2026-06-09T19:46:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Vance: Iran deal could happen in a week or months from now — but \"absolutely\" before midterms",
+          "source": "CBS News",
+          "url": "https://www.cbsnews.com/news/jd-vance-iran-deal-interview/",
+          "date": "2026-06-09T19:37:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Elönti a Sándor-palotát a Tisza áradása? - Ez itt a kérdés",
+          "source": "MédiaKlikk",
+          "url": "https://mediaklikk.hu/kozelet/video/2026/06/09/kozelet/ez-itt-a-kerdes-elnoki-ugyek",
+          "date": "2026-06-09T19:12:39+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Trump administration sued over ‘illegal’ and ‘corrupt’ UFC event on White House lawn",
+          "source": "Los Angeles Times",
+          "url": "https://www.latimes.com/sports/story/2026-06-09/lawsuit-ufc-freedom-250-white-house-south-lawn-trump",
+          "date": "2026-06-09T19:05:26+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "President Trump Shares Candid Take On NBA After Adam Silver Conversation At MSG",
+          "source": "Yahoo Sports",
+          "url": "https://sports.yahoo.com/articles/president-trump-shares-candid-nba-184437533.html",
+          "date": "2026-06-09T18:50:21+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "The Trump Administration moves forward with revoking the citizenship of 17 naturalized immigrants",
+          "source": "EL PAÍS English",
+          "url": "https://english.elpais.com/usa/2026-06-09/the-trump-administration-moves-forward-with-revoking-the-citizenship-of-17-naturalized-immigrants.html",
+          "date": "2026-06-09T18:34:18+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "In the News: John Abraham on the Trump administration AI oversight",
+          "source": "Newsroom | University of St. Thomas",
+          "url": "https://news.stthomas.edu/in-the-news-john-abraham-on-the-trump-administration-ai-oversight/",
+          "date": "2026-06-09T18:19:46+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Donald Trump-Stephen A. Smith beef, explained: U.S. President, ESPN personality argue about who has lower IQ",
+          "source": "Yahoo Sports",
+          "url": "https://sports.yahoo.com/articles/donald-trump-stephen-smith-beef-174903062.html",
+          "date": "2026-06-09T17:49:03+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "President Trump downplays weekend attacks between Israel and Iran amid peace talks",
+          "source": "CBS News",
+          "url": "https://www.cbsnews.com/baltimore/video/president-trump-downplays-weekend-attacks-between-israel-and-iran-amid-peace-talks/",
+          "date": "2026-06-09T17:41:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "President Trump: U.S. must respond to Iranian attack on Apache helicopter over Strait of Hormuz",
+          "source": "CNBC",
+          "url": "https://www.cnbc.com/video/2026/06/09/president-trump-u-s-must-respond-to-iranian-attack-on-apache-helicopter-over-strait-of-hormuz.html",
+          "date": "2026-06-09T17:02:22+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Donald Trump vows to ‘respond’ after Iran ‘shot down’ a US helicopter",
+          "source": "Financial Times",
+          "url": "https://www.ft.com/content/ceb10e74-9ff1-4cf6-82e0-70161c6f1f09?syn-25a6b1a6=1",
+          "date": "2026-06-09T16:50:23+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump says U.S. 'must' respond after Iran shots down Army helicopter near Strait of Hormuz",
+          "source": "PBS",
+          "url": "https://www.pbs.org/newshour/world/pilots-are-fine-after-u-s-helicopter-crashes-near-strait-of-hormuz-trump-says",
+          "date": "2026-06-09T16:47:30+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Pentagon Pete’s Secret Paranoid Chaos Is Leaked",
+          "source": "The Daily Beast",
+          "url": "https://www.thedailybeast.com/pentagon-pete-hegseths-secret-paranoid-crisis-is-leaked/",
+          "date": "2026-06-09T16:42:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Vance demands Justice Department probe of Minnesota officials as White House presses ‘war on fraud’",
+          "source": "Whittier Daily News",
+          "url": "https://www.whittierdailynews.com/2026/06/09/jd-vance-demands-doj-probe-minnesota/",
+          "date": "2026-06-09T16:28:40+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "“Meloni non è entusiasta del formato E3”. Il retroscena sulla fuga in avanti di Macron, Merz e Starmer sull'Ucraina",
+          "source": "il Giornale",
+          "url": "https://www.ilgiornale.it/news/politica-internazionale/meloni-non-entusiasta-formato-e3-retroscena-sulla-fuga-2676358.html",
+          "date": "2026-06-09T16:27:09+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Trump Administration’s Travel Ban Adjudication Policies Deemed Unlawful by District Court: What Employers Need to Know",
+          "source": "JD Supra",
+          "url": "https://www.jdsupra.com/legalnews/trump-administration-s-travel-ban-8176962/",
+          "date": "2026-06-09T16:17:32+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump administration moves to strip citizenship of 17 immigrants",
+          "source": "USA Today",
+          "url": "https://www.usatoday.com/story/news/nation/2026/06/09/trump-administration-denaturalization-push-citizens-immigrants/90472659007/",
+          "date": "2026-06-09T15:42:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Donald Trump, James Dolan tried to ruin NBA Finals vibe. The Knicks’ loss killed it",
+          "source": "The New York Times",
+          "url": "https://www.nytimes.com/athletic/7343657/2026/06/09/nba-finals-knicks-trump-fans-disappointment/",
+          "date": "2026-06-09T15:31:01+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "JD Vance asks justice department to investigate Minnesota governor Tim Walz over fraud allegations",
+          "source": "The Guardian",
+          "url": "https://www.theguardian.com/us-news/2026/jun/09/jd-vance-doj-inquiry-tim-walz-minnesota",
+          "date": "2026-06-09T15:18:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "PP y Vox impulsan en Baleares la prohibición del burka y el niqab en espacios públicos",
+          "source": "ABC",
+          "url": "https://www.abc.es/espana/baleares/pp-vox-impulsan-baleares-prohibicion-burka-niqab-20260609161755-nt.html",
+          "date": "2026-06-09T15:05:09+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "President Trump: Iran deal to come in \"2 to 3 days\"",
+          "source": "LiveNOW from FOX",
+          "url": "https://www.livenowfox.com/video/fmc-l29g308t6fczhb5o",
+          "date": "2026-06-09T14:37:07+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "President Trump booed before Knicks lose to Spurs at Madison Square Garden in NBA Finals Game 3",
+          "source": "CNBC",
+          "url": "https://www.cnbc.com/video/2026/06/09/president-trump-booed-before-knicks-lose-to-spurs-at-madison-square-garden-in-nba-finals-game-3.html",
+          "date": "2026-06-09T14:16:58+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "JD Vance Isn’t Handling Republicans’ Defeat in Los Angeles Very Well",
+          "source": "The New Republic",
+          "url": "https://newrepublic.com/post/211535/jd-vance-republicans-defeat-los-angeles-mayor-election",
+          "date": "2026-06-09T14:14:35+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Why officials in the U.K. are accusing JD Vance of trying to ‘interfere in our democracy’",
+          "source": "MS NOW",
+          "url": "https://www.ms.now/rachel-maddow-show/maddowblog/vance-immigrants-british-murder-uk-officials",
+          "date": "2026-06-09T13:51:55+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Donald Trump and Benjamin Netanyahu’s paths diverge",
+          "source": "Financial Times",
+          "url": "https://www.ft.com/content/a4e66a4e-4545-4557-a0f4-981fea390862",
+          "date": "2026-06-09T13:00:07+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "House is set to fund Trump's immigration actions for second term",
+          "source": "Spectrum News",
+          "url": "https://spectrumlocalnews.com/nc/triad/politics/2026/06/09/house-is-set-to-fund-trump-s-immigration-actions-for-rest-of-his-time-in-white-house",
+          "date": "2026-06-09T12:35:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "JD Vance vows full criminal investigation into Minnesota social services fraud",
+          "source": "Fox Business",
+          "url": "https://www.foxbusiness.com/video/6397973779112",
+          "date": "2026-06-09T11:28:45+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "UPDATE: Trump administration looking to transfer billions in Iranian assets to Kushner clients",
+          "source": "Popular Information | Judd Legum",
+          "url": "https://popular.info/p/update-trump-administration-looking",
+          "date": "2026-06-09T10:31:28+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "A Trump administration policy could force retailers to stop accepting SNAP benefits",
+          "source": "WPR",
+          "url": "https://www.wpr.org/news/trump-administration-policy-could-force-retailers-stop-accepting-snap-benefits",
+          "date": "2026-06-09T10:00:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Deep in rural Virginia, a MAGA pro-gun push takes an unnerving turn and more headlines",
+          "source": "Virginia Mercury",
+          "url": "https://virginiamercury.com/briefs/deep-in-rural-virginia-a-maga-pro-gun-push-takes-an-unnerving-turn-and-more-headlines/",
+          "date": "2026-06-09T09:07:46+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Battenfeld: President Trump targets “crooked” media, walks off interview",
+          "source": "Boston Herald",
+          "url": "https://www.bostonherald.com/2026/06/09/battenfeld-president-trump-targets-crooked-media-walks-off-interview/",
+          "date": "2026-06-09T09:04:06+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Donald Trump Gives Major Update on Iran Peace Deal Negotiation",
+          "source": "Yahoo",
+          "url": "https://www.yahoo.com/news/politics/articles/donald-trump-gives-major-iran-084406580.html",
+          "date": "2026-06-09T08:44:06+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "President Trump Says ‘Powerful’ Iran Deal Will Happen ‘Within 2 or 3 Days,’ as Tehran Accuses US of Altering MoU",
+          "source": "The Media Line",
+          "url": "https://themedialine.org/headlines/president-trump-says-powerful-iran-deal-will-happen-within-2-or-3-days-as-tehran-accuses-us-of-altering-mou/",
+          "date": "2026-06-09T07:58:46+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Donald Trump fires back at ESPN personality Stephen A. Smith",
+          "source": "USA Today",
+          "url": "https://www.usatoday.com/story/sports/nba/playoffs/2026/06/09/donald-trump-stephen-a-smith-knicks-spurs/90470188007/",
+          "date": "2026-06-09T07:18:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Let this be a warning – if Europe worries about Trump, it has even more reason to fear JD Vance | Gaby Hinsliff",
+          "source": "The Guardian",
+          "url": "https://www.theguardian.com/commentisfree/2026/jun/09/warning-europe-worries-trump-fear-jd-vance",
+          "date": "2026-06-09T07:13:00+00:00",
           "category": "usa"
         },
         {
@@ -43,40 +1229,188 @@
           "category": "usa"
         },
         {
-          "title": "Trump Walks Out on Interview Ambush",
-          "source": "American Center for Law and Justice",
-          "url": "https://aclj.org/news/trump-walks-out-on-interview-ambush",
-          "date": "2026-06-08T20:47:07+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "SHOCKING: Trump Walks Out on Interview Ambush",
-          "source": "American Center for Law and Justice",
-          "url": "https://aclj.org/radioshow/news/shocking-trump-walks-out-on-interview-ambush",
-          "date": "2026-06-08T16:02:07+00:00",
-          "category": "poland"
+          "title": "Vance recommends DOJ criminal investigation into Tim Walz and Minnesota AG over state’s fraud scandal",
+          "source": "CNN",
+          "url": "https://www.cnn.com/2026/06/08/politics/vance-criminal-referral-minnesota-fraud",
+          "date": "2026-06-09T03:38:00+00:00",
+          "category": "usa"
         }
       ],
       "first_seen": "2026-06-08T05:12:16+00:00",
-      "last_seen": "2026-06-09T15:39:10+00:00"
+      "last_seen": "2026-06-10T04:57:18+00:00"
     },
     {
       "id": "afds-surge-in-german-regional-elections",
       "title": "AfD’s surge in German regional elections",
-      "blurb": "The Alternative für Deutschland (AfD) continues to gain traction in German regional polls, leading with 27-29% support in multiple surveys. The party’s controversial statements and internal debates over extremism have fueled intense media scrutiny and public discourse.",
-      "affect": "The AfD’s rise commands attention due to its implications for German politics, evoking alarmist framing and moral panic over far-right extremism and its potential impact on EU policies.",
+      "blurb": "Germany’s far-right AfD is leading polls in Mecklenburg-Vorpommern and other states, with internal debates over leadership and ideological direction. The party’s rise has sparked alarm over its extremist rhetoric, historical revisionism, and potential to reshape German politics.",
+      "affect": "The hotspot is charged due to alarmist framing, moral panic over extremism, and the high stakes of AfD’s influence on German democracy.",
       "intensity": 4,
       "affect_signals": [
         "alarmist framing",
-        "polarized contention",
         "cross-source repetition",
-        "moral panic register"
+        "polarized contention",
+        "moral panic register",
+        "leadership crisis tone"
       ],
       "categories": [
         "🇩🇪 Alternative für Deutschland"
       ],
-      "article_count": 30,
+      "article_count": 35,
       "refs": [
+        {
+          "title": "Kubicki würde Stimmen der AfD akzeptieren – \"Selbstverständlich\" - T-Online",
+          "source": "",
+          "url": "https://www.t-online.de/nachrichten/deutschland/innenpolitik/id_101290016/kubicki-bei-maischberger-so-viel-afd-naehe-haelt-der-fdp-chef-fuer-vertretbar.html",
+          "date": "2026-06-09T23:40:40+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Panorama 3: Landtagswahl: Was will die AfD in Mecklenburg-Vorpommern? - hier anschauen",
+          "source": "ARD Mediathek",
+          "url": "https://www.ardmediathek.de/video/panorama-3/landtagswahl-was-will-die-afd-in-mecklenburg-vorpommern/ndr/Y3JpZDovL25kci5kZS85ZDkzNWMyNy1mZDNkLTRhZDctYTY1My1iYTQ2NDQ0MWQ1ZTk",
+          "date": "2026-06-09T20:08:34+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "In Germany, they demanded an explanation from Kiev about the undermining of Nord Streams",
+          "source": "EADaily",
+          "url": "https://eadaily.com/en/news/2026/06/09/in-germany-they-demanded-an-explanation-from-kiev-about-the-undermining-of-nord-streams",
+          "date": "2026-06-09T18:59:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Jacek Sasin prezesem nowego stowarzyszenia. „Misją jest wzmacnianie jedności partii”",
+          "source": "Rzeczpospolita",
+          "url": "https://www.rp.pl/polityka/art44593571-nowe-stowarzyszenie-w-pis-deklarujemy-pelna-lojalnosc-wobec-jaroslawa-kaczynskiego",
+          "date": "2026-06-09T17:52:13+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Politisch motivierte Kriminalität: Alarmierende Bilanz des Hasses",
+          "source": "Frankfurter Rundschau",
+          "url": "https://www.fr.de/meinung/kommentare/politisch-motivierte-kriminalitaet-85-837-straftaten-doppelt-so-viele-wie-2015-94343873.html",
+          "date": "2026-06-09T17:43:38+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "AfD ist Mitglied: Verstöße gegen Grundwerte – EU‑Fraktionen fordern Verbot der rechten ESN-Partei",
+          "source": "WELT",
+          "url": "https://www.welt.de/politik/ausland/article6a28447d2f1d3992450582a0/afd-ist-mitglied-verstoesse-gegen-grundwerte-eufraktionen-fordern-verbot-der-rechten-esn-partei.html",
+          "date": "2026-06-09T17:34:20+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "SPD fällt weiter ab: AfD bleibt in Umfrage deutlich vor Union",
+          "source": "Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/politik/spd-fallt-weiter-ab-afd-bleibt-in-umfrage-deutlich-vor-union-15698288.html",
+          "date": "2026-06-09T17:26:50+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Frp knuser ALLE på ny måling",
+          "source": "VG",
+          "url": "https://www.vg.no/nyheter/i/gkzLPq/frp-knuser-alle-paa-ny-maaling",
+          "date": "2026-06-09T17:03:55+00:00",
+          "category": "norway"
+        },
+        {
+          "title": "Frp oppe på 31,5 prosent i ny måling",
+          "source": "adressa.no",
+          "url": "https://www.adressa.no/nyheter/innenriks/i/Gxjjm9/frp-oppe-paa-31-5-prosent-i-ny-meningsmaaling-for-vg-og-aftenposten",
+          "date": "2026-06-09T17:03:29+00:00",
+          "category": "norway"
+        },
+        {
+          "title": "Corruzione Stretto di Messina: perquisito l'ex commissario Lega Saccomanno",
+          "source": "Il Fatto Quotidiano",
+          "url": "https://www.ilfattoquotidiano.it/2026/06/09/stretto-messina-spa-saccomanno-corruzione-notizie/8413975/",
+          "date": "2026-06-09T16:46:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Mini-Demo auf Balkon: Bundestagspolizei wird gleich zwei Mal in AfD-Büro vorstellig",
+          "source": "Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/politik/mini-demo-auf-abgeordnetenbalkon-bundestagspolizei-zwei-mal-in-afd-buro-15698127.html",
+          "date": "2026-06-09T16:18:57+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "AfD lädt zum „Bürgerdialog“ nach Langenzenn: Kann die Stadt etwas dagegen tun?",
+          "source": "NN.de",
+          "url": "https://www.nn.de/fuerth/afd-ladt-zum-burgerdialog-nach-langenzenn-kann-die-stadt-etwas-dagegen-tun-1.15146762",
+          "date": "2026-06-09T16:00:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "AfD: Mün­zen­mai­er macht ernst",
+          "source": "Die Rheinpfalz",
+          "url": "https://www.rheinpfalz.de/rheinland-pfalz_artikel,-afd-m%C3%BCnzenmaier-macht-ernst-_arid,5898241.html",
+          "date": "2026-06-09T15:49:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "AfD stärkste Kraft, SPD stürzt ab: Nächste bittere Umfrage für Merz und Klingbeil",
+          "source": "Frankfurter Rundschau",
+          "url": "https://www.fr.de/politik/naechste-bittere-umfrage-fuer-merz-und-klingbeil-zeigt-afd-erneut-auf-platz-zr-94343712.html",
+          "date": "2026-06-09T15:32:28+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Neue Umfrage: SPD fällt auf historisches Tief - T-Online",
+          "source": "",
+          "url": "https://www.t-online.de/nachrichten/deutschland/innenpolitik/id_101289660/sonntagsfrage-spd-sackt-in-umfrage-weiter-ab-afd-bleibt-vor-union.html",
+          "date": "2026-06-09T14:54:29+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "AfD-Politiker kritisieren Höcke für \"Deutschtum\"-Aussagen",
+          "source": "ZDFheute",
+          "url": "https://www.zdfheute.de/politik/deutschland/hoecke-afd-ost-west-deutsche-amerika-diskussion-100.html",
+          "date": "2026-06-09T14:38:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "AfD-Rechtsaußen: Kritik an Höcke-These zu Westdeutschen",
+          "source": "STERN.de",
+          "url": "https://www.stern.de/gesellschaft/regional/thueringen/afd-rechtsaussen--kritik-an-hoecke-these-zu-westdeutschen-37517366.html",
+          "date": "2026-06-09T14:37:11+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "SPD fällt auf neuen Tiefstwert, Union bleibt weiter hinter AfD zurück",
+          "source": "STERN.de",
+          "url": "https://www.stern.de/politik/umfragewerte--spd-faellt-auf-neuen-tiefstwert--union-bleibt-hinter-afd-37517732.html",
+          "date": "2026-06-09T14:20:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Höcke hält nur Ostdeutsche für richtige Deutsche Selbst Weidel und Chrupalla distanzieren sich",
+          "source": "Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/politik/hocke-halt-nur-ostdeutsche-fur-richtige-deutsche-selbst-weidel-und-chrupalla-distanzieren-sich-15697581.html",
+          "date": "2026-06-09T14:11:28+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "SPD fällt in Umfrage auf schlechtesten Wert seit 2019 – Union verkürzt Rückstand zur AfD",
+          "source": "WELT",
+          "url": "https://www.welt.de/politik/deutschland/article6a280df5751bf6a58a808fb2/umfrage-spd-faellt-auf-schlechtesten-wert-seit-2019-union-verkuerzt-rueckstand-zu-afd.html",
+          "date": "2026-06-09T14:03:22+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "‘Violence is never the answer’- appeals for calm as far-right call for street protests in wake of Belfast stabbing",
+          "source": "The Irish News",
+          "url": "https://www.irishnews.com/news/northern-ireland/violence-is-never-the-answer-appeals-for-calm-as-far-right-call-for-street-protests-in-wake-of-belfast-stabbing-XQ4SXXFWFVE4RGHPG344T3K5XI/",
+          "date": "2026-06-09T13:39:30+00:00",
+          "category": "general"
+        },
+        {
+          "title": "IDZ-Analyse: Steht in Saalfeld-Rudolstadt der nächste AfD-Landrat in den Startlöchern?",
+          "source": "Belltower.News",
+          "url": "https://www.belltower.news/idz-analyse-steht-in-saalfeld-rudolstadt-der-naechste-afd-landrat-in-den-startloechern-165969/",
+          "date": "2026-06-09T12:20:46+00:00",
+          "category": "germany"
+        },
         {
           "title": "SPD fällt auf Rekordtief, AfD bleibt weit vor Union",
           "source": "nTV",
@@ -85,10 +1419,59 @@
           "category": "germany"
         },
         {
-          "title": "Thüringens AfD-Chef: Für Björn Höcke sind Westdeutsche keine „echten Deutschen“ - Video",
-          "source": "WELT",
-          "url": "https://www.welt.de/politik/video6a27a75229fcf2207deb175c/thueringens-afd-chef-fuer-bjoern-hoecke-sind-westdeutsche-keine-echten-deutschen.html",
-          "date": "2026-06-09T11:21:16+00:00",
+          "title": "„Irgendwo im 20. Jahrhundert hängen geblieben“ Kritik in AfD an kruden Höcke-Thesen zu Ost- und Westdeutschen",
+          "source": "Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/politik/irgendwo-im-20-jahrhundert-hangen-geblieben-kritik-in-afd-an-kruden-hocke-thesen-zu-ost-und-westdeutschen-15696261.html",
+          "date": "2026-06-09T11:42:26+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Der Tag: Höckes Ost-West-Äußerung sorgt für Diskussion in der AfD",
+          "source": "nTV",
+          "url": "https://www.n-tv.de/der_tag/Hoeckes-Ost-West-Aeusserung-sorgt-fuer-Diskussion-in-der-AfD-id30946547.html",
+          "date": "2026-06-09T11:30:47+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "\"Falsch und töricht\": AfD-Politiker kritisieren Höcke-Aussage deutlich - T-Online",
+          "source": "",
+          "url": "https://www.t-online.de/nachrichten/deutschland/id_101289328/afd-hoecke-stoesst-mit-these-zu-ost-und-westdeutschen-auf-kritik.html",
+          "date": "2026-06-09T11:10:19+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Being Black in Pete Hegseth’s Military",
+          "source": "The Atlantic",
+          "url": "https://www.theatlantic.com/magazine/2026/07/black-military-patriots-hegseth/687306/",
+          "date": "2026-06-09T11:00:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Alice Weidel: Massiver Jobabbau und Standortflucht - Merz' Wirtschaftspolitik sorgt ...",
+          "source": "Presseportal",
+          "url": "https://www.presseportal.de/pm/110332/6291007",
+          "date": "2026-06-09T10:39:34+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "AfD-Politiker Höcke sorgt mit provokanter Ost-West-These für Diskussionen - auch in der eigenen Partei",
+          "source": "Nordkurier",
+          "url": "https://www.svz.de/politik/afd-politiker-hoecke-sorgt-mit-provokanter-ost-west-these-fuer-diskussionen-auch-in-der-eigenen-partei-4631793",
+          "date": "2026-06-09T10:33:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "C sluter upp bakom S",
+          "source": "100.se",
+          "url": "https://www.100.se/artiklar/analys/c-sluter-upp-bakom-s",
+          "date": "2026-06-09T09:52:13+00:00",
+          "category": "sweden"
+        },
+        {
+          "title": "Insa-Ranking: Alice Weidel ist die beliebteste Politikerin Deutschlands",
+          "source": "Die Weltwoche",
+          "url": "https://weltwoche.ch/daily/insa-ranking-alice-weidel-ist-die-beliebteste-politikerin-deutschlands/",
+          "date": "2026-06-09T09:43:02+00:00",
           "category": "germany"
         },
         {
@@ -99,40 +1482,174 @@
           "category": "germany"
         },
         {
-          "title": "Aktuelle Umfrage: AfD weiter vorn, Wolfang Kubicki steigt im Politiker-Ranking auf",
-          "source": "Berliner Zeitung",
-          "url": "https://www.berliner-zeitung.de/article/fdp-vorsitzender-wolfgang-kubicki-in-politiker-ranking-10075452",
-          "date": "2026-06-09T08:08:59+00:00",
+          "title": "Sachsen-Anhalt droht ein rechtsextremer Totalumbau",
+          "source": "Infosperber",
+          "url": "https://www.infosperber.ch/freiheit-recht/sachsen-anhalt-droht-ein-rechtsextremer-totalumbau/",
+          "date": "2026-06-09T08:33:00+00:00",
           "category": "germany"
         },
         {
-          "title": "Kaczyński wezwany do prokuratury. Chodzi o śledztwo w sprawie \"dwóch wież\"",
-          "source": "TVN24",
-          "url": "https://tvn24.pl/polska/jaroslaw-kaczynski-wezwany-do-prokuratury-w-sprawie-sledztwa-dotyczacego-dwoch-wiez-st9086538",
-          "date": "2026-06-09T06:00:38+00:00",
-          "category": "poland"
+          "title": "„Die AfD wird niemals eine Mehrheit im Bundestag erreichen“",
+          "source": "swp.de",
+          "url": "https://www.swp.de/politik/top-politologe-francis-fukuyama-die-afd-wird-niemals-eine-mehrheit-im-bundestag-erreichen-79161237.html",
+          "date": "2026-06-09T07:31:33+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Nächste Hiobsbotschaft für CDU/CSU: AfD überholt Union bei brisantem Wert",
+          "source": "BILD",
+          "url": "https://www.bild.de/politik/inland/naechste-hiobsbotschaft-fuer-cdu-csu-afd-ueberholt-union-bei-brisantem-wert-6a26b500b20db0d89b659436",
+          "date": "2026-06-09T06:42:29+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Nach Höckes Logik betreibt Alice Weidel aktiv \"das Ende Deutschlands\"",
+          "source": "DerWesten",
+          "url": "https://www.derwesten.de/politik/afd-bjoern-hoecke-alice-weidel-widerspruch-id302076506.html",
+          "date": "2026-06-09T06:30:42+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Friedrich Nietzsche und die AfD",
+          "source": "FAZ",
+          "url": "https://www.faz.net/aktuell/wissen/geist-soziales/friedrich-nietzsche-und-die-afd-accg-200886477.html",
+          "date": "2026-06-09T06:14:46+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Björn Höcke: Westdeutsche sind für AfD-Politiker keine „echten Deutschen“",
+          "source": "Berliner Morgenpost",
+          "url": "https://www.morgenpost.de/politik/article412227120/fuer-bjoern-hoecke-sind-westdeutsche-keine-echten-deutschen.html",
+          "date": "2026-06-09T04:51:20+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Der AfD Landesverband Niedersachsen - als Beobachtungsobjekt von erheblicher Bedeutung",
+          "source": "Rechtslupe",
+          "url": "https://www.rechtslupe.de/verwaltungsrecht/der-afd-landesverband-niedersachsen-als-beobachtungsobjekt-von-erheblicher-bedeutung-3350875",
+          "date": "2026-06-09T04:02:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Parteien: Münzenmaier will AfD-Landesvorsitzender werden",
+          "source": "STERN.de",
+          "url": "https://www.stern.de/gesellschaft/regional/rheinland-pfalz-saarland/parteien--muenzenmaier-will-afd-landesvorsitzender-werden-37514322.html",
+          "date": "2026-06-09T01:30:08+00:00",
+          "category": "germany"
         }
       ],
       "first_seen": "2026-06-08T05:12:16+00:00",
-      "last_seen": "2026-06-09T15:39:10+00:00"
+      "last_seen": "2026-06-10T04:57:18+00:00"
     },
     {
       "id": "patricia-bullrichs-rebellion-against-milei",
       "title": "Patricia Bullrich’s rebellion against Milei",
-      "blurb": "Argentina’s Security Minister Patricia Bullrich has openly clashed with President Javier Milei over judicial appointments and policy directions, leading to internal fractures within the ruling La Libertad Avanza coalition. The tensions have sparked debates over the government’s stability and future electoral prospects.",
-      "affect": "This commands attention due to the high-stakes power struggle within Argentina’s government, which carries strong-emotion framing around leadership crises and ideological divisions.",
-      "intensity": 4,
+      "blurb": "Argentine libertarian senator Patricia Bullrich is openly challenging President Milei’s leadership, skipping key events and clashing over judicial nominations. The infighting has exposed divisions within La Libertad Avanza, with Bullrich positioning herself as a potential 2027 presidential contender.",
+      "affect": "The hotspot commands attention due to the leadership crisis, polarized contention between allies, and the high stakes of internal party fractures ahead of the 2027 election.",
+      "intensity": 3,
       "affect_signals": [
         "leadership crisis tone",
         "polarized contention",
+        "cross-source repetition",
         "outrage-coded language",
-        "cross-source repetition"
+        "moral charge"
       ],
       "categories": [
         "🇦🇷 La Libertad Avanza"
       ],
-      "article_count": 25,
+      "article_count": 20,
       "refs": [
+        {
+          "title": "Con la ausencia de Manuel Adorni, Karina Milei lanzó la Escuela de Dirigentes de La Libertad Avanza en la Capital",
+          "source": "FM Del Sol Pehuajo",
+          "url": "https://radiodelsolpehuajo.com.ar/articulo/2026/06/con-la-ausencia-de-manuel-adorni-karina-milei-lanzo-la-escuela-de-dirigentes-de-la-libertad-avanza-en-la-capital.php",
+          "date": "2026-06-10T00:03:51+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Karina Milei lanzó la escuela de dirigentes de La Libertad Avanza en la Capital",
+          "source": "Perfil",
+          "url": "https://www.perfil.com/noticias/politica/karina-milei-lanzo-la-escuela-de-dirigentes-de-la-libertad-avanza-en-la-capital-con-la-ausencia-de-manuel-adorni.phtml",
+          "date": "2026-06-09T23:08:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Se dice de mí: Patricia Bullrich confía su estrategia digital a un abogado de bajo perfil",
+          "source": "Letra P",
+          "url": "https://www.letrap.com.ar/politica/se-dice-mi-patricia-bullrich-confia-su-estrategia-digital-un-abogado-perfil-n5424355",
+          "date": "2026-06-09T21:46:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Bullrich dejó plantada a una aliada neuquina de Karina Milei",
+          "source": "El nuevo rojense",
+          "url": "https://elnuevorojense.com.ar/bullrich-dejo-plantada-a-una-aliada-neuquina-de-karina-milei/",
+          "date": "2026-06-09T19:01:19+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Politisch motivierte Kriminalität: Alarmierende Bilanz des Hasses",
+          "source": "Frankfurter Rundschau",
+          "url": "https://www.fr.de/meinung/kommentare/politisch-motivierte-kriminalitaet-85-837-straftaten-doppelt-so-viele-wie-2015-94343873.html",
+          "date": "2026-06-09T17:43:38+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Bullrich confirma que irá al desfile de Piazza en un nuevo gesto de autonomía para con Javier Milei",
+          "source": "Perfil",
+          "url": "https://www.perfil.com/noticias/politica/bullrich-confirma-que-ira-al-desfile-de-piazza-en-un-nuevo-gesto-de-autonomia-con-javier-milei.phtml",
+          "date": "2026-06-09T17:30:54+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Frp, Sylvi Listaug | Beste måling for Frp siden 2008 – oppe på 31,5 prosent",
+          "source": "Romerikes Blad",
+          "url": "https://www.rb.no/beste-maling-for-frp-siden-2008-oppe-pa-31-5-prosent/s/5-43-2771260",
+          "date": "2026-06-09T17:28:29+00:00",
+          "category": "norway"
+        },
+        {
+          "title": "Vox pregunta mañana a Bolaños si también cree que hay un complot contra el Gobierno en los casos de corrupción",
+          "source": "PressDigital",
+          "url": "https://www.pressdigital.es/articulo/politica/2026-06-09/5913143-vox-pregunta-manana-bolanos-tambien-cree-hay-complot-contra-gobierno-casos-corrupcion",
+          "date": "2026-06-09T17:15:00+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Karina Milei cenó con los diputados de LLA: Sushi, estrategia y la \"prohibición\" de viajar al Mundial",
+          "source": "» Cholila Online",
+          "url": "https://cholilaonline.ar/2026/06/karina-milei-ceno-con-los-diputados-de-lla.html",
+          "date": "2026-06-09T16:05:38+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Karina Milei cenó con el bloque de diputados de LLA: bajada de línea y armados provinciales",
+          "source": "Infobae",
+          "url": "https://www.infobae.com/politica/2026/06/09/karina-milei-ceno-con-el-bloque-de-diputados-de-lla-bajada-de-linea-y-armados-provinciales/?outputType=amp-type",
+          "date": "2026-06-09T15:43:16+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Bullrich publicó un video y volvió a agitar la interna libertaria",
+          "source": "La Izquierda Diario",
+          "url": "https://www.laizquierdadiario.com/Bullrich-publico-un-video-y-volvio-a-agitar-la-interna-libertaria",
+          "date": "2026-06-09T14:14:16+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Bullrich suspendió un viaje clave y profundiza la interna con Karina Milei",
+          "source": "Cuestión Entrerriana",
+          "url": "https://cuestionentrerriana.com.ar/bullrich-suspendio-un-viaje-clave-y-profundiza-la-interna-con-karina-milei/",
+          "date": "2026-06-09T14:13:20+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "PP y Vox dan el primer paso para prohibir el burka y el niqab en Baleares: multas de hasta 30.000 euros y prisión para quien obligue a una mujer a llevarlo",
+          "source": "Diario de Mallorca",
+          "url": "https://www.diariodemallorca.es/mallorca/2026/06/09/pp-vox-dan-primer-paso-131187897.html",
+          "date": "2026-06-09T13:24:06+00:00",
+          "category": "spain"
+        },
         {
           "title": "El malestar del Gobierno con Patricia Bullrich condiciona la previa de un nuevo encuentro clave encabezado por Karina Milei",
           "source": "Diario Río Negro",
@@ -148,6 +1665,20 @@
           "category": "argentina"
         },
         {
+          "title": "Unions rebuff Farage and say Reform ‘cosplaying’ as workers’ champions",
+          "source": "The Guardian",
+          "url": "https://www.theguardian.com/politics/2026/jun/09/unions-rebuff-nigel-farage-reform-cosplaying-workers-rights",
+          "date": "2026-06-09T09:22:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Javier Milei y sus medidas, en vivo: la interna oficialista y nueva actividad en el Senado -",
+          "source": "Impacto Castex",
+          "url": "https://impactocastex.com.ar/?p=19954",
+          "date": "2026-06-09T07:27:53+00:00",
+          "category": "argentina"
+        },
+        {
           "title": "Karina, Wasserman & Angelici: Sin Manuel Adorni, binomio Jorge Macri / Pilar Ramírez",
           "source": "Urgente24",
           "url": "https://urgente24.com/actualidad/karina-wasserman-angelici-manuel-adorni-binomio-jorge-macri-pilar-ramirez-n626328",
@@ -155,134 +1686,22 @@
           "category": "argentina"
         },
         {
-          "title": "Patricia Bullrich mantiene 11 diputados fieles y los habilita a diferenciarse del Gobierno",
-          "source": "Letra P",
-          "url": "https://www.letrap.com.ar/congreso/patricia-bullrich-mantiene-11-diputados-fieles-y-los-habilita-diferenciarse-del-gobierno-n5424346",
-          "date": "2026-06-08T23:45:00+00:00",
+          "title": "Libertarios “sin trato” con el oficialismo",
+          "source": "El Esquiu",
+          "url": "https://www.elesquiu.com/politica/2026/6/9/libertarios-sin-trato-con-el-oficialismo-584781.html",
+          "date": "2026-06-09T04:01:23+00:00",
           "category": "argentina"
         },
         {
-          "title": "El pacto de Karina con los gobernadores por las PASO: elecciones desdobladas, candidatos ignotos y reelección de Milei",
-          "source": "MDZ Online",
-          "url": "https://www.mdzol.com/politica/el-pacto-karina-los-gobernadores-las-paso-elecciones-desdobladas-candidatos-ignotos-y-reeleccion-milei-n1538822",
-          "date": "2026-06-08T17:43:00+00:00",
+          "title": "Karina Milei encabezó la inauguración de la Escuela de Dirigentes de La Libertad Avanza en la Ciudad",
+          "source": "Diario CEMBA",
+          "url": "https://cemba.com.ar/karina-milei-encabezo-la-inauguracion-de-la-escuela-de-dirigentes-de-la-libertad-avanza-en-la-ciudad/",
+          "date": "2026-06-09T01:23:54+00:00",
           "category": "argentina"
         }
       ],
       "first_seen": "2026-06-08T05:12:16+00:00",
-      "last_seen": "2026-06-09T15:39:10+00:00"
-    },
-    {
-      "id": "hungarys-eu-migration-pact-protests",
-      "title": "Hungary’s EU migration pact protests",
-      "blurb": "Hungary’s government, led by Péter Magyar, faces backlash over its stance on the EU migration pact, with protests erupting over perceived betrayals of national sovereignty. The issue has become a focal point for debates on Hungary’s relationship with the EU and its domestic policies.",
-      "affect": "This commands attention due to the moral charge surrounding Hungary’s defiance of EU policies, evoking alarmist framing and polarized contention over sovereignty and migration.",
-      "intensity": 4,
-      "affect_signals": [
-        "moral panic register",
-        "alarmist framing",
-        "polarized contention",
-        "cross-source repetition"
-      ],
-      "categories": [
-        "🇭🇺 Fidesz / Tisza"
-      ],
-      "article_count": 20,
-      "refs": [
-        {
-          "title": "Ukrainian Grain Surrender: Quality Control Instead of an Outright Ban?",
-          "source": "Hungary Today",
-          "url": "https://hungarytoday.hu/ukrainian-grain-surrender-quality-control-instead-of-an-outright-ban/",
-          "date": "2026-06-09T12:04:27+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Magyar Péter a Vitnyédre tervezett menekülttáborról: Megvan a titkos kormányhatározat, kedves Pócs János",
-          "source": "Telex",
-          "url": "https://telex.hu/belfold/2026/06/09/magyar-peter-vitnyed-menekulttabor-titkos-kormanyhatarozat",
-          "date": "2026-06-09T11:15:16+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Magyar Péter szerint az Orbán-kormány menekülttábort akart építtetni, nyilvánosságra hozzák a kormányhatározatot",
-          "source": "Index.hu",
-          "url": "https://index.hu/belfold/2026/06/09/orszaggyules-parlament-tisza-part-fidesz-kdnp-mi-hazank-mozgalom-vita-plakatok-szuverenitasvedelmi-hivatal/",
-          "date": "2026-06-09T08:30:00+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Protests target alleged Brussels deal on illegal immigrants",
-          "source": "The Budapest Times",
-          "url": "https://www.budapesttimes.hu/world/protests-target-alleged-brussels-deal-on-illegal-immigrants/",
-          "date": "2026-06-09T04:19:25+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "FIDESZ Urges TISZA Government to Reject EU Migration Pact",
-          "source": "Hungary Today",
-          "url": "https://hungarytoday.hu/fidesz-urges-tisza-government-to-reject-eu-migration-pact/",
-          "date": "2026-06-08T12:49:24+00:00",
-          "category": "hungary"
-        }
-      ],
-      "first_seen": "2026-06-07T14:27:57+00:00",
-      "last_seen": "2026-06-09T15:39:10+00:00"
-    },
-    {
-      "id": "vannaccis-futuro-nazionale-gains-momentum",
-      "title": "Vannacci’s Futuro Nazionale gains momentum",
-      "blurb": "Roberto Vannacci, a controversial Italian general, has launched the Futuro Nazionale party, drawing support from disaffected members of the Lega and Fratelli d’Italia. His rise has sparked debates over the future of Italy’s right-wing coalition and its electoral strategies.",
-      "affect": "This commands attention due to Vannacci’s polarizing figure and the potential fragmentation of Italy’s right-wing coalition, evoking strong-emotion framing and moral outrage.",
-      "intensity": 3,
-      "affect_signals": [
-        "polarized contention",
-        "outrage-coded language",
-        "leadership crisis tone",
-        "cross-source repetition"
-      ],
-      "categories": [
-        "🇮🇹 Fratelli d'Italia / Lega"
-      ],
-      "article_count": 15,
-      "refs": [
-        {
-          "title": "Loizzo blinda Salvini: «Non credo all’iperbole Vannacci. La Lega è una comunità costruita da Nord a Sud» · LaC News24",
-          "source": "LaC News24",
-          "url": "https://www.lacnews24.it/politica/loizzo-blinda-salvini-non-credo-alliperbole-vannacci-la-lega-e-una-comunita-costruita-da-nord-a-sud-vhbl0y42",
-          "date": "2026-06-09T12:12:41+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Tra i dilemmi di Salvini e l’ascesa di Vannacci",
-          "source": "Il Roma",
-          "url": "https://www.ilroma.net/news/opinioni/862108/tra-i-dilemmi-di-salvini-e-lascesa-di-vannacci.html",
-          "date": "2026-06-09T06:25:00+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Vannacci “sfila” 350mila euro a Salvini. Zaia prepara il ritorno alla vecchia Lega",
-          "source": "Domani",
-          "url": "https://www.editorialedomani.it/politica/italia/vannacci-sfila-350mila-euro-a-salvini-zaia-prepara-il-ritorno-alla-vecchia-lega-f9f05dq3",
-          "date": "2026-06-09T05:00:00+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Vannacci officially launches FN",
-          "source": "Brussels Signal",
-          "url": "https://brusselssignal.eu/2026/06/vannacci-officially-launches-futuro-nazionale-as-lawmakers-defect-from-italys-ruling-right/",
-          "date": "2026-06-08T13:13:14+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Supermedia YouTrend: Futuro Nazionale continua a crescere (a scapito della Lega). I sondaggi politici",
-          "source": "Sky TG24",
-          "url": "https://tg24.sky.it/politica/2026/06/08/sondaggi-partiti-politici-intenzioni-voto-supermedia-youtrend",
-          "date": "2026-06-08T13:22:52+00:00",
-          "category": "italy"
-        }
-      ],
-      "first_seen": "2026-06-07T05:06:34+00:00",
-      "last_seen": "2026-06-09T15:39:10+00:00"
+      "last_seen": "2026-06-10T04:57:18+00:00"
     }
   ]
 }
