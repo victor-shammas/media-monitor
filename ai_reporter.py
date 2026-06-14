@@ -86,11 +86,14 @@ def _ensure_anthropic():
 
 STATE_FILE = "data/monitor_state.json"
 # Budget for the article context only (not the surrounding instruction template).
-# ~800K chars ≈ 200K tokens. mistral-large-latest (Mistral Large 3) has a 256K-token
-# window shared between prompt and output, so this leaves headroom for the 16384
-# output tokens, the instruction template, and token-estimate slack on dense
-# URL/non-English text. Raise toward ~900K only if you also watch for context errors.
-MAX_PROMPT_CHARS = 800_000
+# ~700K chars ≈ 175-210K tokens depending on language. mistral-large-latest
+# (Mistral Large 3) has a 256K-token window shared between prompt and output.
+# Our feeds are all Latin-script European, but several (Polish, Hungarian, German)
+# tokenize denser than English (~3.3-3.7 chars/token), so 700K keeps an ~11-16%
+# margin under the window even on a dense-language day, after reserving the 16384
+# output tokens and the instruction template. Don't push much past this without
+# switching to real token-counting (mistral-common) instead of this char heuristic.
+MAX_PROMPT_CHARS = 700_000
 
 
 # ── Provider Backends ──────────────────────────────────────────────────────
