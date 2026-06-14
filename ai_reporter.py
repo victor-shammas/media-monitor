@@ -85,7 +85,12 @@ def _ensure_anthropic():
 
 
 STATE_FILE = "data/monitor_state.json"
-MAX_PROMPT_CHARS = 400_000  # ~100K tokens; keeps prompt within context/rate limits
+# Budget for the article context only (not the surrounding instruction template).
+# ~800K chars ≈ 200K tokens. mistral-large-latest (Mistral Large 3) has a 256K-token
+# window shared between prompt and output, so this leaves headroom for the 16384
+# output tokens, the instruction template, and token-estimate slack on dense
+# URL/non-English text. Raise toward ~900K only if you also watch for context errors.
+MAX_PROMPT_CHARS = 800_000
 
 
 # ── Provider Backends ──────────────────────────────────────────────────────
