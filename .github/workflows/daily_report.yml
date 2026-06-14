@@ -81,7 +81,13 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A
           git commit -m "Report input $(date -u +%Y-%m-%d)" || echo "No changes"
-          git push
+          for attempt in 1 2 3 4 5; do
+            git pull --rebase --autostash && git push && exit 0
+            echo "Push attempt $attempt rejected (concurrent update to data repo); re-syncing and retrying in $((attempt * 5))s..."
+            sleep $((attempt * 5))
+          done
+          echo "::error::Failed to push to data repo after 5 attempts due to concurrent updates"
+          exit 1
 
       - name: Commit reports
         run: |
@@ -89,5 +95,10 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add reports/
           git commit -m "Daily intelligence report" || echo "No changes to commit"
-          git -c fetch.recurseSubmodules=no pull --rebase
-          git push
+          for attempt in 1 2 3 4 5; do
+            git -c fetch.recurseSubmodules=no pull --rebase --autostash && git push && exit 0
+            echo "Push attempt $attempt rejected (concurrent update to main); re-syncing and retrying in $((attempt * 5))s..."
+            sleep $((attempt * 5))
+          done
+          echo "::error::Failed to push to main after 5 attempts due to concurrent updates"
+          exit 1
