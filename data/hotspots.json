@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-15T05:36:25+00:00",
+  "updated_at": "2026-06-15T17:31:30+00:00",
   "lookback_hours": 48,
   "model": "Mistral Large",
   "status": "ok",
@@ -7,40 +7,250 @@
     {
       "id": "manuel-adornis-corruption-scandal-deepens",
       "title": "Manuel Adorni’s corruption scandal deepens",
-      "blurb": "Manuel Adorni, Argentina's Chief of Staff, faces intense scrutiny over undeclared wealth, including $500K in Bitcoin, sparking calls for his resignation and a potential censure motion in Congress. President Milei continues to defend him despite growing opposition pressure.",
-      "affect": "This scandal commands attention due to its moral charge and polarized contention, threatening the government's stability and legislative agenda.",
+      "blurb": "Argentina's Chief of Staff Manuel Adorni faces escalating judicial scrutiny over alleged illicit enrichment, tax evasion, and inconsistencies in his asset declarations. The scandal has triggered internal government tensions, with allies and opposition demanding his resignation.",
+      "affect": "This commands disproportionate attention due to its high moral charge, polarized contention, and the perceived threat to the government's credibility and reform agenda.",
       "intensity": 5,
       "affect_signals": [
+        "moral panic register",
         "polarized contention",
-        "outrage-coded language",
-        "leadership crisis tone",
         "cross-source repetition",
-        "moral panic register"
+        "outrage-coded language",
+        "leadership crisis tone"
       ],
       "categories": [
-        "🇦🇷 La Libertad Avanza"
+        "La Libertad Avanza"
       ],
       "article_count": 120,
       "refs": [
         {
-          "title": "Adorni convertido en el mejor opositor y el nubarrón que alerta a la economía",
-          "source": "Clarin.com",
-          "url": "https://www.clarin.com/opinion/adorni-convertido-mejor-opositor-nubarron-alerta-economia_0_6TACiN698N.html",
-          "date": "2026-06-14T23:39:30+00:00",
+          "title": "La Justicia acelera las medidas de prueba y cerca el patrimonio de Manuel Adorni",
+          "source": "La Gaceta",
+          "url": "https://www.lagaceta.com.ar/nota/1141152/politica/justicia-acelera-medidas-prueba-cerca-patrimonio-manuel-adorni.html",
+          "date": "2026-06-15T13:09:38+00:00",
           "category": "argentina"
         },
         {
-          "title": "En medio de los cuestionamientos, Javier Milei compartió un posteo en defensa de Adorni",
+          "title": "Señal de apoyo: el sugestivo gesto de Karina Milei a Patricia Bullrich que sacude la interna por el caso Adorni",
+          "source": "Diario Río Negro",
+          "url": "https://www.rionegro.com.ar/politica/senal-de-apoyo-el-sugestivo-gesto-de-karina-milei-a-patricia-bullrich-que-sacude-la-interna-por-el-caso-adorni-4611427/",
+          "date": "2026-06-15T13:07:47+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "El caso Adorni profundiza tensiones en el Gobierno y complica la agenda de reformas de LLA en el Congreso",
           "source": "TN",
-          "url": "https://tn.com.ar/politica/2026/06/14/en-medio-de-los-cuestionamientos-javier-milei-compartio-un-posteo-en-defensa-de-adorni/",
-          "date": "2026-06-14T23:29:13+00:00",
+          "url": "https://tn.com.ar/politica/2026/06/15/el-caso-adorni-profundiza-tensiones-en-el-gobierno-y-complica-la-agenda-de-reformas-de-lla-en-el-congreso/",
+          "date": "2026-06-15T12:41:44+00:00",
           "category": "argentina"
         },
         {
-          "title": "Manuel Adorni quedó entre los funcionarios más ricos del Gobierno",
-          "source": "Cuestión Entrerriana",
-          "url": "https://cuestionentrerriana.com.ar/manuel-adorni-quedo-entre-los-funcionarios-mas-ricos-del-gobierno/",
-          "date": "2026-06-14T23:23:07+00:00",
+          "title": "„Die Wölfe stehen vor der Tür“, warnt Söder mit Blick auf die AfD-Umfragewerte",
+          "source": "WELT",
+          "url": "https://www.welt.de/politik/deutschland/article6a2fe8381a21c266c42b6d1c/reformplaene-der-regierung-die-woelfe-stehen-vor-der-tuer-warnt-soeder-mit-blick-auf-die-afd-umfragewerte.html",
+          "date": "2026-06-15T12:28:18+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Por qué Javier Milei mantiene a Manuel Adorni en el Gobierno pese a la investigación judicial — ACTUALIDAD",
+          "source": "Opinando San Nicolás",
+          "url": "https://www.opinandosannicolas.ar/2026/06/por-que-javier-milei-mantiene-a-manuel-adorni-en-el-gobierno-pese-a-la-investigacion-judicial/",
+          "date": "2026-06-15T12:21:46+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "La alianza entre La Libertad Avanza y el PRO está amenazada: detalles de una relación resquebrajada",
+          "source": "Crónica",
+          "url": "https://www.cronica.com.ar/amp/politica/la-alianza-entre-la-libertad-avanza-y-el-pro-esta-amenazada-detalles-de-una-relacion-resquebrajada/",
+          "date": "2026-06-15T12:20:08+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Milei ratifica su respaldo a Adorni mientras Karina Milei y Bullrich buscan contener la tensión interna",
+          "source": "Gabal",
+          "url": "https://www.radiogabal.com.ar/index.php/el-pais/milei-ratifica-su-respaldo-a-adorni-mientras-karina-milei-y-bullrich-buscan-contener-la-tension-interna",
+          "date": "2026-06-15T12:18:48+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei volvió a defender a Manuel Adorni por ahorrar en negro",
+          "source": "Perfil",
+          "url": "https://www.perfil.com/noticias/politica/javier-milei-volvio-a-defender-a-manuel-adorni-por-ahorrar-en-negro.phtml",
+          "date": "2026-06-15T11:57:08+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Italia-Giappone: Meloni, costruiremo sinergie tra Piano Mattei e programma Ticad",
+          "source": "Il Sole 24 ORE",
+          "url": "https://en.ilsole24ore.com/radiocor/nRC_15.06.2026_13.24_331",
+          "date": "2026-06-15T11:55:36+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "A pesar del apoyo de Milei, la gente en la calle le pide a Manuel Adorni que renuncie",
+          "source": "Diario Registrado",
+          "url": "https://www.diarioregistrado.com/politica/a-pesar-del-apoyo-de-milei--la-gente-en-la-calle-le-pide-a-manuel-adorni-que-renuncie_a6a2fe1d697005460049e9b1c",
+          "date": "2026-06-15T11:37:15+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Mientras Milei respalda a Adorni, los aliados esperan señales para contener la crisis",
+          "source": "Diario El Sol Mendoza",
+          "url": "https://www.elsol.com.ar/el-pais/mientras-milei-respalda-a-adorni-los-aliados-esperan-senales-para-contener-la-crisis/",
+          "date": "2026-06-15T10:54:45+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei respaldó a Manuel Adorni en medio de la investigación judicial por su patrimonio",
+          "source": "Diario UNO",
+          "url": "https://www.diariouno.com.ar/politica/javier-milei-respaldo-manuel-adorni-medio-la-investigacion-judicial-su-patrimonio-n1565722",
+          "date": "2026-06-15T10:44:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Maniobra en el Congreso: Manuel Adorni fijó fecha para su informe de gestión y busca desactivar la moción del peronismo",
+          "source": "Diario Río Negro",
+          "url": "https://www.rionegro.com.ar/politica/maniobra-en-el-congreso-manuel-adorni-fijo-fecha-para-su-informe-de-gestion-y-busca-desactivar-la-mocion-del-peronismo-4611394/?amp=1",
+          "date": "2026-06-15T10:12:40+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "El meteorito \"Adorni\" amenaza con chocar al planeta libertario",
+          "source": "MDZ Online",
+          "url": "https://www.mdzol.com/dinero/el-meteorito-adorni-amenaza-chocar-al-planeta-libertario-n1543389",
+          "date": "2026-06-15T09:32:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Los tres argumentos que da el Gobierno para explicar por qué Manuel Adorni continúa en su cargo",
+          "source": "Agencia Noticias Argentinas",
+          "url": "https://noticiasargentinas.com/politica/los-tres-argumentos-que-da-el-gobierno-para-explicar-por-que-manuel-adorni-continua-en-su-cargo_a6a2c31bcd3cd8e549962db7a",
+          "date": "2026-06-15T09:30:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Die AfD-Pläne für Hausunterricht dienen der Spaltung",
+          "source": "FAZ",
+          "url": "https://www.faz.net/aktuell/politik/wahl-in-sachsen-anhalt/die-afd-plaene-fuer-hausunterricht-dienen-der-spaltung-200929147.html",
+          "date": "2026-06-15T09:00:47+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "El Gobierno monitorea el impacto del caso Adorni entre sus aliados de la oposición y prepara más reuniones con gobernadores",
+          "source": "TN",
+          "url": "https://tn.com.ar/politica/2026/06/15/el-gobierno-monitorea-el-impacto-del-caso-adorni-en-los-aliados-y-prepara-mas-reuniones-con-gobernadores/",
+          "date": "2026-06-15T09:00:01+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei y sus medidas, EN VIVO: la interna del Gobierno y tensiones con la oposición dialoguista por Adorni",
+          "source": "Impacto Castex",
+          "url": "https://impactocastex.com.ar/?p=20393",
+          "date": "2026-06-15T08:24:39+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Milei no le suelta la mano a Adorni, el encuentro reservado de Karina y Bullrich y el gesto que esperaban los aliados",
+          "source": "Infobae",
+          "url": "https://www.infobae.com/politica/2026/06/15/milei-no-le-suelta-la-mano-a-adorni-el-encuentro-reservado-de-karina-y-bullrich-y-el-gesto-que-esperaban-los-aliados/",
+          "date": "2026-06-15T08:00:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "En medio de días complejos, Adorni trabaja en el informe de gestión con el que busca cambiar el eje de la discusión",
+          "source": "Infobae",
+          "url": "https://www.infobae.com/politica/2026/06/15/en-medio-de-dias-complejos-adorni-trabaja-en-el-informe-de-gestion-con-el-que-busca-cambiar-el-eje-de-la-discusion/",
+          "date": "2026-06-15T05:46:41+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Senado: dudas por el ascenso de grado de un militar en una comisión que La Libertad Avanza confeccionó a gusto",
+          "source": "Infobae",
+          "url": "https://www.infobae.com/politica/2026/06/15/senado-dudas-por-el-ascenso-de-grado-de-un-militar-en-una-comision-que-la-libertad-avanza-confecciono-a-gusto/",
+          "date": "2026-06-15T05:29:02+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "La encuesta que mira un sector del Gobierno sobre la situación de Manuel Adorni y las figuras que empiezan a crecer",
+          "source": "Infobae",
+          "url": "https://www.infobae.com/politica/2026/06/15/la-encuesta-que-mira-un-sector-del-gobierno-sobre-la-situacion-de-manuel-adorni-y-las-figuras-que-empiezan-a-crecer/",
+          "date": "2026-06-15T04:58:04+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Por Manuel Adorni se profundiza la interna libertaria: banca de Javier Milei y burlas de Victoria Villarruel",
+          "source": "MinutoUno",
+          "url": "https://www.minutouno.com/politica/por-manuel-adorni-se-profundiza-la-interna-libertaria-banca-javier-milei-y-burlas-victoria-villarruel-n6288783",
+          "date": "2026-06-15T03:30:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Solo en Off | Karina Milei y Patricia Bullrich volvieron a festejar, pero sin foto y, sobre todo, sin Adorni",
+          "source": "La Nación",
+          "url": "https://www.lanacion.com.ar/politica/solo-en-off-karina-milei-y-patricia-bullrich-volvieron-a-festejar-sin-foto-y-sin-adorni-nid15062026/",
+          "date": "2026-06-15T03:01:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "En medio de las polémicas y la interna, Milei sale del país",
+          "source": "La Gaceta",
+          "url": "https://www.lagaceta.com.ar/nota/amp/1141151/politica/medio-polemicas-interna-milei-sale-pais.html",
+          "date": "2026-06-15T02:49:09+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Milei sostiene su defensa a Manuel Adorni y asegura que “va a salir fortalecido”",
+          "source": "infodelestero.com",
+          "url": "https://infodelestero.com/2026/06/14/milei-sostiene-su-defensa-a-manuel-adorni-y-asegura-que-va-a-salir-fortalecido/",
+          "date": "2026-06-15T02:34:33+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Rolando Graña destrozó a Manuel Adorni en vivo: \"Cadáver político\"",
+          "source": "El Destape",
+          "url": "https://www.eldestapeweb.com/espectaculos/rolando-grana-contundente-editorial-adorni-cadaver-2026614231542",
+          "date": "2026-06-15T02:19:31+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "WATCH: President Trump makes entrance at UFC Freedom 250 fight",
+          "source": "FOX 29 Philadelphia",
+          "url": "https://www.fox29.com/video/fmc-o2q9djm6t29z02bp",
+          "date": "2026-06-15T01:08:56+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Enriquecimiento ilícito: la Justicia duda de que Manuel Adorni pueda justificar su patrimonio",
+          "source": "MDZ Online",
+          "url": "https://www.mdzol.com/politica/enriquecimiento-ilicito-la-justicia-duda-que-manuel-adorni-pueda-justificar-su-patrimonio-n1543238/amp",
+          "date": "2026-06-15T01:00:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Adorni multiplicó su patrimonio y escala posiciones entre los más ricos del Gabinete",
+          "source": "El Eco",
+          "url": "https://www.eleco.com.ar/nacionales/adorni-multiplico-su-patrimonio-y-escala-posiciones-entre-los-mas-ricos-del-gabinete",
+          "date": "2026-06-15T01:00:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei volvió a respaldar a Manuel Adorni por el escándalo y cargó contra las operaciones",
+          "source": "C5N",
+          "url": "https://www.c5n.com/politica/javier-milei-volvio-respaldar-manuel-adorni-el-escandalo-y-cargo-contra-las-operaciones-n240751",
+          "date": "2026-06-15T00:46:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Manuel Adorni en la cuerda floja: ¿por qué Javier Milei lo sostiene?",
+          "source": "Aire de Santa Fe",
+          "url": "https://www.airedesantafe.com.ar/politica/manuel-adorni-la-cuerda-floja-por-que-javier-milei-lo-sostiene-n659828",
+          "date": "2026-06-15T00:24:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Adorni, un activo cada vez más tóxico",
+          "source": "La Nación",
+          "url": "https://www.lanacion.com.ar/politica/adorni-un-activo-cada-vez-mas-toxico-nid14062026/",
+          "date": "2026-06-14T23:46:00+00:00",
           "category": "argentina"
         },
         {
@@ -58,10 +268,17 @@
           "category": "argentina"
         },
         {
-          "title": "Hasta Nik le suelta la mano a Manuel Adorni en plena polémica por la declaración jurada",
-          "source": "MinutoUno",
-          "url": "https://www.minutouno.com/espectaculos/hasta-nik-le-suelta-la-mano-manuel-adorni-plena-polemica-la-declaracion-jurada-n6288667",
-          "date": "2026-06-14T21:30:31+00:00",
+          "title": "Javier Milei viaja a Rosario y Tucumán para calmar la crisis de su gobierno por las denuncias contra Manuel Adorni y su patrimonio",
+          "source": "infodelestero.com",
+          "url": "https://infodelestero.com/2026/06/14/javier-milei-viaja-a-rosario-y-tucuman-para-calmar-la-crisis-de-su-gobierno-por-las-denuncias-contra-manuel-adorni-y-su-patrimonio/",
+          "date": "2026-06-14T21:58:20+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Milei volvió a respaldar a Adorni en medio de la polémica por sus declaraciones juradas",
+          "source": "radio10.com.ar",
+          "url": "https://www.radio10.com.ar/milei/milei-volvio-respaldar-adorni-medio-la-polemica-sus-declaraciones-juradas-n6288701",
+          "date": "2026-06-14T21:25:25+00:00",
           "category": "argentina"
         },
         {
@@ -79,17 +296,31 @@
           "category": "argentina"
         },
         {
-          "title": "Javier Milei bancó otra vez a Manuel Adorni en redes tras el escándalo de su declaración jurada",
-          "source": "Aire de Santa Fe",
-          "url": "https://www.airedesantafe.com.ar/politica/javier-milei-banco-otra-vez-manuel-adorni-redes-el-escandalo-su-declaracion-jurada-n659959",
-          "date": "2026-06-14T20:10:00+00:00",
+          "title": "Adorni's admission deepens divisions in Milei's cabinet as the opposition seeks a censure vote",
+          "source": "MercoPress",
+          "url": "https://en.mercopress.com/2026/06/14/adorni-s-admission-deepens-divisions-in-milei-s-cabinet-as-the-opposition-seeks-a-censure-vote",
+          "date": "2026-06-14T20:32:00+00:00",
           "category": "argentina"
         },
         {
-          "title": "Lilia Lemoine defendió a Manuel Adorni tras las denuncias patrimoniales: \"Es inocente, a cualquiera lo pueden traicionar los nervios al dar explicaciones\"",
-          "source": "Radio LV11",
-          "url": "https://www.radiolv11.com.ar/noticia/lilia-lemoine-defendio-a-manuel-adorni-tras-las-denuncias-patrimoniales-es-inocente-a-cualquiera-lo-pueden-traicionar-los-nervios-al-dar-explicaciones",
-          "date": "2026-06-14T19:56:00+00:00",
+          "title": "Milei volvió a defender a Adorni en medio de la polémica por su declaración jurada",
+          "source": "El Litoral",
+          "url": "https://www.ellitoral.com/politica/milei-javier-karina-adorni-declaracion-jurada-respaldo-apoyo-redes-sociales-mensaje_0_BpSa4wcZzz.html",
+          "date": "2026-06-14T20:25:15+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Milei volvió a respaldar a Adorni tras las críticas por su declaración jurada",
+          "source": "diariopopular.com.ar",
+          "url": "https://www.diariopopular.com.ar/politica/milei-volvio-respaldar-adorni-las-criticas-su-declaracion-jurada-n905206",
+          "date": "2026-06-14T20:08:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Milei volvió a ratificar a Adorni y dejó un mensaje de unidad: “Va a salir fortalecido”",
+          "source": "El Cronista",
+          "url": "https://www.cronista.com/economia-politica/milei-volvio-a-ratificar-a-adorni-y-dejo-un-mensaje-de-unidad-va-a-salir-fortalecido/?outputType=amp-type",
+          "date": "2026-06-14T19:47:43+00:00",
           "category": "argentina"
         },
         {
@@ -100,45 +331,577 @@
           "category": "argentina"
         },
         {
+          "title": "En plena controversia, Milei compartió una publicación en defensa de Adorni",
+          "source": "Los Andes",
+          "url": "https://www.losandes.com.ar/politica/en-plena-controversia-milei-compartio-una-publicacion-defensa-adorni-n5994775",
+          "date": "2026-06-14T19:18:00+00:00",
+          "category": "argentina"
+        },
+        {
           "title": "“Fortalecido”: Javier Milei volvió a respaldar a Manuel Adorni tras el escándalo",
           "source": "El Intransigente",
           "url": "https://elintransigente.com/2026/06/fortalecido-javier-milei-volvio-a-respaldar-a-manuel-adorni-tras-el-escandalo/",
           "date": "2026-06-14T18:46:02+00:00",
           "category": "argentina"
+        },
+        {
+          "title": "Milei respaldó otra vez a Adorni pese a las críticas por su declaración jurada",
+          "source": "BAE Negocios",
+          "url": "https://www.baenegocios.com/politica/milei-respaldo-otra-vez-a-adorni-pese-a-las-criticas-por-su-declaracion-jurada/",
+          "date": "2026-06-14T18:44:32+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Milei respaldó a Manuel Adorni en redes tras el escándalo de su declaración jurada",
+          "source": "La Capital",
+          "url": "https://www.lacapital.com.ar/politica/milei-respaldo-manuel-adorni-redes-el-escandalo-su-declaracion-jurada-n10264525.html",
+          "date": "2026-06-14T18:34:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Victoria Villarruel volvió a burlarse de Manuel Adorni",
+          "source": "Bardeo.news",
+          "url": "https://bardeo.news/politica/victoria-villarruel-volvio-a-burlarse-de-manuel-adorni_a6a2ee90b506cc3dbc5a47541",
+          "date": "2026-06-14T18:27:09+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Con este mensaje, Milei volvió a respaldar a Adorni por la polémica de su patrimonio",
+          "source": "Crónica",
+          "url": "https://www.cronica.com.ar/politica/con-este-mensaje-milei-volvio-a-respaldar-a-adorni-por-la-polemica-de-su-patrimonio/",
+          "date": "2026-06-14T18:17:08+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Victoria Villarruel volvió a apuntar contra Manuel Adorni y se burló del escándalo por los Bitcoins",
+          "source": "Ambito",
+          "url": "https://www.ambito.com/politica/victoria-villarruel-volvio-apuntar-contra-manuel-adorni-y-se-burlo-del-escandalo-los-bitcoins-n6288663",
+          "date": "2026-06-14T17:37:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Tras la nueva declaración jurada de Adorni, la fiscalía prepara una medida para avanzar con la investigación por presunto enriquecimiento ilícito",
+          "source": "TN",
+          "url": "https://tn.com.ar/politica/2026/06/14/la-medida-que-prepara-la-fiscalia-para-avanzar-con-la-investigacion-en-el-caso-adorni/",
+          "date": "2026-06-14T16:46:02+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Un decreto de Javier Milei incidió en la reducción de la pena a la hija del narco que lavó dinero con una inmobiliaria",
+          "source": "Aire de Santa Fe",
+          "url": "https://www.airedesantafe.com.ar/policiales/un-decreto-javier-milei-incidio-la-reduccion-la-pena-la-hija-del-narco-que-lavo-dinero-una-inmobiliaria-n659929",
+          "date": "2026-06-14T16:40:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Recorte del poder digital en LLA tras tensiones internas y planes para ampliarlo",
+          "source": "Identidad Correntina",
+          "url": "https://www.identidadcorrentina.com.ar/noticia/32965_recorte-del-poder-digital-en-lla-tras-tensiones-internas-y-planes-para-ampliarlo.htm",
+          "date": "2026-06-14T16:32:08+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Chiche Gelblung salió de su internación y criticó duramente a Manuel Adorni: \"Vergüenza\"",
+          "source": "MDZ Online",
+          "url": "https://www.mdzol.com/mdz-show/chiche-gelblung-salio-su-internacion-y-critico-duramente-manuel-adorni-verguenza-n1543079",
+          "date": "2026-06-14T16:05:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "«¿Le creen?»: Mirtha Legrand liquidó a Manuel Adorni en vivo en su programa",
+          "source": "El Intransigente",
+          "url": "https://elintransigente.com/2026/06/le-creen-mirtha-legrand-liquido-a-manuel-adorni-en-vivo-en-su-programa/",
+          "date": "2026-06-14T15:55:53+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Manuel Adorni y la omisión estructural: la pregunta que el sistema sigue sin responder",
+          "source": "MDZ Online",
+          "url": "https://www.mdzol.com/politica/manuel-adorni-y-la-omision-estructural-la-pregunta-que-el-sistema-sigue-responder-n1543023",
+          "date": "2026-06-14T15:40:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Magyar Péter nem bírt magával, ismét rátört a szereplési kényszer",
+          "source": "ORIGO",
+          "url": "https://www.origo.hu/belpol/2026/06/magyar-peter-tisza-migracios-paktum-tisza-kormany",
+          "date": "2026-06-14T15:08:57+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "La polémica con Manuel Adorni sumó tensión en el Congreso y amenaza proyectos clave del Gobierno",
+          "source": "Diario Río Negro",
+          "url": "https://www.rionegro.com.ar/politica/la-polemica-con-manuel-adorni-sumo-tension-en-el-congreso-y-amenaza-proyectos-clave-del-gobierno-4610818/",
+          "date": "2026-06-14T14:51:57+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "El silencio de la motosierra ante el escándalo Adorni",
+          "source": "Página|12",
+          "url": "https://www.pagina12.com.ar/2026/06/14/el-silencio-de-la-motosierra-ante-el-escandalo-adorni/",
+          "date": "2026-06-14T14:51:11+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Milei sigue respaldando a Bullrich pese a sus diferencias con el Gobierno: cuáles son las razones",
+          "source": "Los Andes",
+          "url": "https://www.losandes.com.ar/politica/milei-sigue-respaldando-bullrich-pese-sus-diferencias-el-gobierno-cuales-son-las-razones-n5994749",
+          "date": "2026-06-14T14:28:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "El Gobierno de Milei espera definiciones clave de Comodoro Py por el futuro de Manuel Adorni",
+          "source": "Mirador Provincial",
+          "url": "https://www.miradorprovincial.com/2026/06/14/el-gobierno-de-milei-espera-definiciones-clave-de-comodoro-py-por-el-futuro-de-manuel-adorni/",
+          "date": "2026-06-14T14:14:23+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Victoria Villarruel se burló de Manuel Adorni en medio del escándalo: ¿Y si esta semana te toca a vos?",
+          "source": "C5N",
+          "url": "https://www.c5n.com/politica/victoria-villarruel-se-burlo-manuel-adorni-medio-del-escandalo-y-si-esta-semana-te-toca-vos-n240716",
+          "date": "2026-06-14T13:59:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Milei vuelve a España en plena crisis por Adorni: Conferencia en Madrid y otra fuga del Congreso",
+          "source": "Urgente24",
+          "url": "https://urgente24.com/actualidad/milei-vuelve-espana-plena-crisis-adorni-conferencia-madrid-y-otra-fuga-del-congreso-n626684",
+          "date": "2026-06-14T13:58:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Los motivos por los que el Gobierno sostiene a Bullrich y habilita sus disidencias públicas",
+          "source": "Diario La Capital de Mar del Plata",
+          "url": "https://www.lacapitalmdp.com/los-motivos-por-los-que-el-gobierno-sostiene-a-bullrich-y-habilita-sus-disidencias-publicas/",
+          "date": "2026-06-14T13:57:27+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "La privatización de Intercargo se dilata porque nadie quiere quedarse con la empresa",
+          "source": "Letra P",
+          "url": "https://www.letrap.com.ar/economia/la-privatizacion-intercargo-se-dilata-porque-nadie-quiere-quedarse-la-empresa-n5424469",
+          "date": "2026-06-14T13:52:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "\"¿Y si esta semana te toca a vos?\", el irónico posteo de Victoria Villarruel sobre las criptomonedas de Manuel Adorni",
+          "source": "Clarin.com",
+          "url": "https://www.clarin.com/politica/semana-toca-vos-ironico-posteo-victoria-villarruel-criptomonedas-manuel-adorni_0_4SDQQfoNvx.html",
+          "date": "2026-06-14T13:31:19+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Milei se aferra a Adorni y busca frenar el avance opositor para desplazarlo del Gobierno",
+          "source": "InfoVeloz.com",
+          "url": "https://www.infoveloz.com/post/milei-se-aferra-a-adorni-y-busca-frenar-el-avance-opositor-para-desplazarlo-del-gobierno_280780",
+          "date": "2026-06-14T13:29:57+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Manuel Adorni, sin margen: renuncia o el Congreso lo expulsa",
+          "source": "Letra P",
+          "url": "https://www.letrap.com.ar/congreso/manuel-adorni-margen-renuncia-o-el-congreso-lo-expulsa-n5424481",
+          "date": "2026-06-14T13:19:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Todo marcha acorde al plan de Javier Milei",
+          "source": "Letra P",
+          "url": "https://www.letrap.com.ar/todo-marcha-acorde-al-plan-javier-milei-n5424475",
+          "date": "2026-06-14T13:06:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei y sus medidas, EN VIVO: el Gobierno apura la presentación de Adorni en el Senado, cercado por las críticas de opositores y aliados",
+          "source": "Clarin.com",
+          "url": "https://www.clarin.com/politica/javier-milei-medidas-vivo-gobierno-apura-presentacion-adorni-senado-cercado-criticas-opositores-aliados_0_bOChGn81bM.html",
+          "date": "2026-06-14T12:37:54+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Caso Manuel Adorni: qué se sabe hasta ahora y cómo sigue la investigación",
+          "source": "Ambito",
+          "url": "https://www.ambito.com/politica/caso-manuel-adorni-que-se-sabe-ahora-y-como-sigue-la-investigacion-n6288613",
+          "date": "2026-06-14T12:33:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "La Justicia investiga la evolución del Bitcoin en la causa de Manuel Adorni",
+          "source": "GN Noticias",
+          "url": "https://gnnoticias.com.ar/politica/la-justicia-investiga-la-evolucion-del-bitcoin-en-la-causa-de-manuel-adorni",
+          "date": "2026-06-14T12:28:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "El efecto Bitcoin en Manuel Adorni: multiplicó su patrimonio y ganó lugar entre los funcionarios más ricos del Gabinete",
+          "source": "Diario Río Negro",
+          "url": "https://www.rionegro.com.ar/politica/el-efecto-bitcoin-en-manuel-adorni-multiplico-su-patrimonio-y-gano-lugar-entre-los-funcionarios-mas-ricos-del-gabinete-4610730/",
+          "date": "2026-06-14T12:24:41+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Cómo impactó el escándalo de Manuel Adorni en la Ciudad",
+          "source": "Agencia Noticias Argentinas",
+          "url": "https://noticiasargentinas.com/politica/como-impacto-el-escandalo-de-manuel-adorni-en-la-ciudad_a6a2d6c35d3cd8e5499805b99",
+          "date": "2026-06-14T12:15:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Donald Trump świętuje 80. urodziny w Białym Domu. Karol Nawrocki zaskakuje gestemo",
+          "source": "Kobieta Onet",
+          "url": "https://kobieta.onet.pl/wiadomosci/karol-nawrocki-ma-wyjatkowy-prezent-dla-donalda-trumpa-wazy-ponad-120-kg/emrdjfx",
+          "date": "2026-06-14T12:07:01+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "En medio de la tensión por el caso Adorni, Milei reactiva su agenda internacional y viajará a Madrid la semana que viene",
+          "source": "TN",
+          "url": "https://tn.com.ar/politica/2026/06/14/en-medio-de-la-tension-por-el-caso-adorni-milei-reactiva-su-agenda-internacional-y-viajara-a-madrid/",
+          "date": "2026-06-14T11:51:44+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Juntada a la gorra, trolls y el hartazgo en el campamento libertario",
+          "source": "El Cronista",
+          "url": "https://www.cronista.com/columnistas/juntada-a-la-gorra-trolls-y-el-hartazgo-en-el-campamento-libertario/",
+          "date": "2026-06-14T11:49:53+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "¿Por qué Milei no le pide la renuncia a Adorni?",
+          "source": "puntal.com.ar",
+          "url": "https://www.puntal.com.ar/adorni/por-que-milei-no-le-pide-la-renuncia-adorni-n259464",
+          "date": "2026-06-14T11:37:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Adorni, el mago que hace desaparecer hasta lo bueno del Gobierno",
+          "source": "puntal.com.ar",
+          "url": "https://www.puntal.com.ar/adorni/adorni-el-mago-que-hace-desaparecer-lo-bueno-del-gobierno-n259463",
+          "date": "2026-06-14T11:34:57+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Crece la presión sobre Manuel Adorni mientras Milei sostiene su respaldo en medio de la polémica patrimonial",
+          "source": "puntocapitalnoticias.com",
+          "url": "https://www.puntocapitalnoticias.com/crece-la-presion-sobre-manuel-adorni-mientras-milei-sostiene-su-respaldo-en-medio-de-la-polemica-patrimonial/",
+          "date": "2026-06-14T11:31:11+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Salvini \"Donare sangue salva la vita a qualcuno e fa bene anche a sé stessi\"",
+          "source": "Italpress",
+          "url": "https://www.italpress.com/salvini-donare-sangue-salva-la-vita-a-qualcuno-e-fa-bene-anche-a-se-stessi/",
+          "date": "2026-06-14T11:01:43+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Aliados y opositores piden la renuncia de Manuel Adorni",
+          "source": "Vía País",
+          "url": "https://viapais.com.ar/politica/aliados-opositores-piden-renuncia-adorni_0_1IJnMV6AJR.html",
+          "date": "2026-06-14T11:01:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "¿Evasión, omisión o delito? las claves judiciales de los 500 mil dólares ocultos que complican a Manuel Adorni",
+          "source": "Aire de Santa Fe",
+          "url": "https://www.airedesantafe.com.ar/actualidad/evasion-omision-o-delito-las-claves-judiciales-los-500-mil-dolares-ocultos-que-complican-manuel-adorni-n659732",
+          "date": "2026-06-14T10:31:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Crecen las presiones sobre Manuel Adorni tras su explicación patrimonial y se acelera su exposición en el Senado",
+          "source": "El Zonda",
+          "url": "https://www.diarioelzondasj.com.ar/358190-crecen-las-presiones-sobre-manuel-adorni-tras-su-explicacion-patrimonial-y-se-acelera-su-exposicion-en-el-senado",
+          "date": "2026-06-14T10:29:56+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Días de hartazgo y desconcierto en la Casa Rosada: crece la presión interna para que Manuel Adorni deje su cargo",
+          "source": "La Nación",
+          "url": "https://www.lanacion.com.ar/politica/dias-de-hartazgo-y-desconcierto-en-la-casa-rosada-crece-la-presion-interna-para-que-manuel-adorni-nid14062026/",
+          "date": "2026-06-14T10:28:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Manuel Adorni y una pregunta que algunos temen hacer: ¿por qué lo sigue apoyando Javier Milei?",
+          "source": "MDZ Online",
+          "url": "https://www.mdzol.com/politica/manuel-adorni-y-una-pregunta-que-algunos-temen-hacer-por-que-lo-sigue-apoyando-javier-milei-n1542945",
+          "date": "2026-06-14T10:22:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "El criptocolchón de medio millón y otras ficciones de Manuel Adorni",
+          "source": "C5N",
+          "url": "https://www.c5n.com/politica/el-criptocolchon-medio-millon-y-otras-ficciones-manuel-adorni-n240673",
+          "date": "2026-06-14T10:15:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "El patrimonio de Manuel Adorni creció un 775% y reordenó el mapa de las fortunas en el Gobierno",
+          "source": "Diario Mendoza Today",
+          "url": "https://mendozatoday.com.ar/nacionales/el-patrimonio-de-manuel-adorni-crecio-un-775-y-reordeno-el-mapa-de-las-fortunas-en-el-gobierno/",
+          "date": "2026-06-14T10:14:42+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "El Gobierno nacional espera movimientos de Comodoro Py",
+          "source": "El Litoral",
+          "url": "https://www.ellitoral.com/politica/manueladorni-javiermilei-karinamilei-gobierno-lalibertadavanza-congreso-justiciafederal_0_HVD3v4AOID.html",
+          "date": "2026-06-14T10:01:54+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Del viejo Vizcacha a Manuel Adorni",
+          "source": "El Litoral",
+          "url": "https://www.ellitoral.com/opinion/politica-gobierno-nacion-adorni-milei-bullrich-lla-corrupcion-enriquecimiento-ilicitos-elecciones_0_Wqz75yjAUM.html",
+          "date": "2026-06-14T10:01:43+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "El viejo truco de Martín Llaryora y Juan Schiaretti",
+          "source": "Letra P",
+          "url": "https://www.letrap.com.ar/politica/el-viejo-truco-martin-llaryora-y-juan-schiaretti-n5424479",
+          "date": "2026-06-14T10:00:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Mahnwache gegen AfD-Jugend - Polizei löst Sitzblockaden auf",
+          "source": "noz.de",
+          "url": "https://www.noz.de/deutschland-welt/niedersachsen/artikel/mahnwache-gegen-afd-jugend-polizei-loest-sitzblockaden-auf-50777436",
+          "date": "2026-06-14T09:32:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Tisza-kormány: vagyonadó, titkos tábor és a körvonalazódó átfogó változások",
+          "source": "Portfolio.hu",
+          "url": "https://www.portfolio.hu/gazdasag/20260614/tisza-kormany-vagyonado-titkos-tabor-es-a-korvonalazodo-atfogo-valtozasok-843164",
+          "date": "2026-06-14T09:17:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Javier Milei resiste la presión opositora sobre Manuel Adorni y busca evitar que el Congreso lo eche",
+          "source": "TN",
+          "url": "https://tn.com.ar/opinion/2026/06/14/javier-milei-resiste-la-presion-opositora-sobre-manuel-adorni-y-busca-evitar-que-el-congreso-lo-eche/?outputType=amp",
+          "date": "2026-06-14T09:00:01+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Manuel Adorni logró lo impensado: cerró la grieta en todo el arco político de Mendoza",
+          "source": "Diario Mendoza Today",
+          "url": "https://mendozatoday.com.ar/sociedad/manuel-adorni-logro-lo-impensado-cerro-la-grieta-en-todo-el-arco-politico-de-mendoza-7814/",
+          "date": "2026-06-14T09:00:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "La foto que Adorni quiso ocultar, el sorpresivo festejo de Bullrich y un secreto inédito sobre Cristina Kirchner",
+          "source": "TN",
+          "url": "https://tn.com.ar/politica/2026/06/14/la-foto-que-adorni-quiso-ocultar-el-sugestivo-gesto-de-bullrich-y-un-secreto-inedito-sobre-cfk/",
+          "date": "2026-06-14T08:45:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Los Milei se aferran a su ministro, pero en el Gabinete se quejan de la estrategia elegida",
+          "source": "Perfil",
+          "url": "https://www.perfil.com/noticias/politica/los-milei-se-aferran-a-su-ministro-pero-en-el-gabinete-se-quejan-de-la-estrategia-elegida.phtml",
+          "date": "2026-06-14T07:06:40+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "La decisión final de Karina, los motivos que sostienen a Adorni y por qué el mercado no tiene miedo a una crisis política",
+          "source": "Infobae",
+          "url": "https://www.infobae.com/politica/2026/06/14/la-decision-final-de-karina-los-motivos-que-sostienen-a-adorni-y-por-que-el-mercado-no-tiene-miedo-a-una-crisis-politica/",
+          "date": "2026-06-14T06:22:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "El mensaje del PRO a Javier Milei por el escándalo Adorni",
+          "source": "Minuto Neuquen",
+          "url": "https://www.minutoneuquen.com/nacionales/2026/6/14/el-mensaje-del-pro-a-javier-milei-por-el-escandalo-adorni-406607.html",
+          "date": "2026-06-14T06:20:00+00:00",
+          "category": "argentina"
         }
       ],
       "first_seen": "2026-06-10T04:57:18+00:00",
-      "last_seen": "2026-06-15T05:36:25+00:00"
+      "last_seen": "2026-06-15T17:31:30+00:00"
     },
     {
       "id": "trumps-explosive-iran-threats-and-military-actions",
       "title": "Trump’s explosive Iran threats and military actions",
-      "blurb": "President Trump announced a potential peace deal with Iran, set to be signed on June 19, which includes reopening the Strait of Hormuz and lifting the U.S. naval blockade. However, tensions escalate with Iran's Revolutionary Guard disputing the timeline and ongoing military strikes.",
-      "affect": "This story dominates coverage due to its high-stakes geopolitical implications, alarmist framing, and Trump's direct involvement in military and diplomatic actions.",
+      "blurb": "President Trump announced a preliminary peace deal with Iran, including the reopening of the Strait of Hormuz and the lifting of the U.S. naval blockade. However, the deal faces skepticism from allies like Israel and hardliners within Iran.",
+      "affect": "This commands disproportionate attention due to its alarmist framing, geopolitical stakes, and the polarized reactions from international actors.",
       "intensity": 4,
       "affect_signals": [
         "alarmist framing",
         "cross-source repetition",
-        "moral charge",
-        "outrage-coded language"
+        "polarized contention",
+        "moral charge"
       ],
       "categories": [
-        "🇺🇸 MAGA / Trump"
+        "MAGA / Trump"
       ],
       "article_count": 95,
       "refs": [
+        {
+          "title": "Iran, Meloni: \"Soddisfazione per accordo, fondamentale riapertura Hormuz\"",
+          "source": "Il Sole 24 ORE",
+          "url": "https://stream24.ilsole24ore.com/video/italia/iran-meloni-soddisfazione-accordo-fondamentale-riapertura-hormuz/AI3wIOgD",
+          "date": "2026-06-15T13:06:10+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Video Vice President JD Vance talks US-Iran agreement - ABC News",
+          "source": "Breaking News, Latest News and Videos",
+          "url": "https://abcnews.com/video/133884252/",
+          "date": "2026-06-15T12:56:23+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Vice President JD Vance: 'A lot' of Iran deal details to figure out, but U.S. has 'all the cards'",
+          "source": "CNBC",
+          "url": "https://www.cnbc.com/video/2026/06/15/vice-president-jd-vance-a-lot-of-iran-deal-details-to-figure-out-but-u-s-has-all-the-cards.html",
+          "date": "2026-06-15T12:36:33+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Vice President JD Vance: Expect Strait of Hormuz to be opened 'in a toll-free way for the long term'",
+          "source": "CNBC",
+          "url": "https://www.cnbc.com/video/2026/06/15/vice-president-jd-vance-expect-strait-of-hormuz-to-be-opened-in-a-toll-free-way-for-the-long-term.html",
+          "date": "2026-06-15T12:35:36+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "President Trump turns 80, closes deal with Iran before G-7 Summit",
+          "source": "WRAL",
+          "url": "https://www.wral.com/video/president-trump-turns-80-deal-with-iran-g7-summit-june-2026/",
+          "date": "2026-06-15T12:21:12+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Video President Trump says ceasefire agreement with Iran is 'now complete' - ABC News",
+          "source": "Breaking News, Latest News and Videos",
+          "url": "https://abcnews.com/video/133880798/",
+          "date": "2026-06-15T12:07:52+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Donald Trump announces historic peace deal with Iran, impacting oil prices and shipping",
+          "source": "Fox Business",
+          "url": "https://www.foxbusiness.com/video/6398453145112",
+          "date": "2026-06-15T11:54:23+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Magyar Péter szerint az Orbán-kormány migránsokat akart befogatni",
+          "source": "HírTv",
+          "url": "https://hirtv.origo.hu/ahirtvhirei/2026/06/magyar-peter-orban-kormany-migrans",
+          "date": "2026-06-15T11:38:12+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Trump announces deal to end war in Iran. And, how to stay safe in deadly heat",
+          "source": "NPR",
+          "url": "https://www.npr.org/2026/06/15/g-s1-128145/up-first-newsletter-iran-war-g7-summit-ufc-fight",
+          "date": "2026-06-15T10:59:23+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Meloni-Trump, Crosetto-Hegseth e Tajani-Rubio, gli intrecci tra Italia e Usa dopo le distanze dell’ultimo periodo",
+          "source": "Il Sole 24 ORE",
+          "url": "https://www.ilsole24ore.com/art/meloni-trump-crosetto-hegseth-e-tajani-rubio-intrecci-italia-e-usa-le-distanze-dell-ultimo-periodo-AId1SyfD",
+          "date": "2026-06-15T10:56:49+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "U.S., Iran reach deal to end the war, President Trump says",
+          "source": "CBS News",
+          "url": "https://www.cbsnews.com/newyork/video/u-s-iran-reach-deal-to-end-the-war-president-trump-says/",
+          "date": "2026-06-15T10:21:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "U.S. and Iran announce a deal to end the war, reopen Strait of Hormuz",
+          "source": "NPR",
+          "url": "https://www.npr.org/2026/06/15/nx-s1-5858590/us-iran-deal-updates",
+          "date": "2026-06-15T09:55:23+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "President Trump: U.S. and Iran Reach Deal to End War",
+          "source": "WIBC 93.1 FM",
+          "url": "https://wibc.com/889716/president-trump-us-and-iran-reach-deal-to-end-war/",
+          "date": "2026-06-15T09:41:53+00:00",
+          "category": "networks"
+        },
+        {
+          "title": "Vox se querellará contra Zapatero por «delitos contra la hacienda pública y contrabando»",
+          "source": "OkDiario",
+          "url": "https://okdiario.com/espana/vox-querellara-contra-zapatero-delitos-contra-hacienda-publica-contrabando-18573760",
+          "date": "2026-06-15T09:19:52+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Ben-Gvir says 'Trump's agreement' doesn't bind Israel as Netanyahu stays mum",
+          "source": "Haaretz",
+          "url": "https://www.haaretz.com/israel-news/israel-security/2026-06-15/ty-article/.premium/ben-gvir-says-trumps-agreement-doesnt-bind-israel-as-netanyahu-stays-mum/0000019e-c9e6-d43d-a39f-efff30030000",
+          "date": "2026-06-15T08:06:00+00:00",
+          "category": "general"
+        },
+        {
+          "title": "Did Iran, Donald Trump, or Israel come out ahead? Winners, losers of the new deal",
+          "source": "The Jerusalem Post",
+          "url": "https://www.jpost.com/israel-news/article-899423",
+          "date": "2026-06-15T06:03:13+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "President Trump says Iran deal \"complete\" as both sides signal agreement",
+          "source": "CBS News",
+          "url": "https://www.cbsnews.com/texas/video/president-trump-says-iran-deal-complete-as-both-sides-signal-agreement/",
+          "date": "2026-06-15T04:21:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "President Trump announces Iran deal as lawmakers wait for details on nuclear program terms",
+          "source": "KOCO",
+          "url": "https://www.koco.com/article/trump-iran-deal-lawmakers-await-details/71584010",
+          "date": "2026-06-15T03:39:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "‘What a Life’ — Michael Irvin, Other NFL Players Attend President Donald Trump’s UFC Freedom 250 Event at White House",
+          "source": "Yahoo Sports",
+          "url": "https://sports.yahoo.com/articles/life-michael-irvin-other-nfl-033248932.html",
+          "date": "2026-06-15T03:32:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump celebrates 80th birthday with Iran deal and UFC cage fight at White House",
+          "source": "The Hindu",
+          "url": "https://www.thehindu.com/news/international/trump-celebrates-80th-birthday-with-iran-deal-and-ufc-cage-fight-at-white-house/article71103305.ece/amp/",
+          "date": "2026-06-15T03:06:01+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Trump news at a glance: Fate of the strait of Hormuz unclear as president claims ‘toll-free opening’",
+          "source": "The Guardian",
+          "url": "https://www.theguardian.com/us-news/2026/jun/15/trump-administration-news-today-politics",
+          "date": "2026-06-15T02:45:40+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump Celebrates While America Capitulates",
+          "source": "The Atlantic",
+          "url": "https://www.theatlantic.com/ideas/2026/06/trump-iran-deal/687547/",
+          "date": "2026-06-15T01:32:00+00:00",
+          "category": "usa"
+        },
         {
           "title": "Donald Trump says Benjamin Netanyahu should thank US for reaching deal with Iran",
           "source": "The Jerusalem Post",
           "url": "https://www.jpost.com/international/article-899404",
           "date": "2026-06-14T23:47:20+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "U.S.-Iran peace deal is complete, President Trump says",
-          "source": "CBS News",
-          "url": "https://www.cbsnews.com/philadelphia/video/u-s-iran-peace-deal-is-complete-president-trump-says/",
-          "date": "2026-06-14T23:41:00+00:00",
           "category": "usa"
         },
         {
@@ -191,33 +954,502 @@
           "category": "usa"
         },
         {
+          "title": "Sean Strickland keeps trolling Donald Trump hours ahead of UFC White House card",
+          "source": "Yahoo Sports",
+          "url": "https://sports.yahoo.com/articles/sean-strickland-keeps-trolling-donald-213043833.html",
+          "date": "2026-06-14T21:30:43+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Markwayne Mullin makes alarming comment about sending ICE to polling places",
+          "source": "AOL.com",
+          "url": "https://www.aol.com/entertainment/markwayne-mullin-makes-alarming-sending-170814268.html",
+          "date": "2026-06-14T20:23:21+00:00",
+          "category": "usa"
+        },
+        {
           "title": "Iran war update: US President Trump says deal reached with Iran and he has authorized that naval blockade leave Strait of Hormuz",
           "source": "ABC7 Los Angeles",
           "url": "https://abc7.com/post/iran-war-update-today-trump-pakistan-say-deal-could-signed-sunday-tehran-signals-more-time-is-needed/19294554/",
           "date": "2026-06-14T20:14:27+00:00",
           "category": "usa"
+        },
+        {
+          "title": "Donald Trump lambasts Binyamin Netanyahu for delaying Iran peace deal",
+          "source": "The Times",
+          "url": "https://www.thetimes.com/world/middle-east/israel-iran/article/trump-netanyahu-no-judgment-israel-iran-lebanon-peace-deal-m3zmx3dq3",
+          "date": "2026-06-14T20:02:24+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Donald Trump’s least favorite country might just win Donald Trump’s World Cup",
+          "source": "politico.eu",
+          "url": "https://www.politico.eu/article/donald-trump-least-spain-win-world-cup/",
+          "date": "2026-06-14T20:02:05+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump: Iran will never have a nuclear weapon",
+          "source": "Forex Factory",
+          "url": "https://www.forexfactory.com/news/1403540-trump-iran-will-never-have-a-nuclear-weapon",
+          "date": "2026-06-14T19:37:00+00:00",
+          "category": "networks"
+        },
+        {
+          "title": "G7 in Evian: Meloni meets Trump again following tensions; Ukraine and the Strait of Hormuz take centre stage at the summit",
+          "source": "Il Sole 24 ORE",
+          "url": "https://en.ilsole24ore.com/art/g7-evian-meloni-meets-trump-tensions-over-ukraine-and-hormuz-take-centre-stage-at-the-summit-AIuwmVfD",
+          "date": "2026-06-14T19:29:24+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "G7 a Evian, Meloni rivede Trump dopo le tensioni: Ucraina e Hormuz al centro del vertice",
+          "source": "Il Sole 24 ORE",
+          "url": "https://www.ilsole24ore.com/art/g7-evian-meloni-rivede-trump-le-tensioni-ucraina-e-hormuz-centro-vertice-AIuwmVfD",
+          "date": "2026-06-14T19:28:44+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Cosa aspettarsi dal G7 di Evian: focus sul conflitto in Medio Oriente. Giorgia Meloni punta a Trump e Macron",
+          "source": "Virgilio",
+          "url": "https://www.virgilio.it/notizie/cosa-aspettarsi-dal-g7-di-evian-focus-sul-conflitto-in-medio-oriente-giorgia-meloni-punta-a-trump-e-macron-1762272",
+          "date": "2026-06-14T19:28:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Trump reportedly tells Putin he is prepared to help end war in Ukraine",
+          "source": "The Guardian",
+          "url": "https://www.theguardian.com/us-news/2026/jun/14/trump-putin-call-ukraine-russia-iran-war",
+          "date": "2026-06-14T19:00:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Meloni contro l’antifascismo: «Un patentino? È censura». È sfida nera con Vannacci",
+          "source": "Domani",
+          "url": "https://www.editorialedomani.it/politica/italia/meloni-vannacci-sfida-fascismo-piu-libri-piu-liberi-femminicidio-t2gxx57j",
+          "date": "2026-06-14T18:17:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Trump speaks with Putin and Zelenskyy as war in Ukraine rages on",
+          "source": "CBS News",
+          "url": "https://www.cbsnews.com/news/trump-putin-zelenskyy-ukraine-war-russia/",
+          "date": "2026-06-14T17:53:36+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Donald Trump warns Israel and Iran not to ‘blow it’ after new strikes threaten emerging ceasefire deal",
+          "source": "Florida Politics",
+          "url": "https://floridapolitics.com/archives/801940-donald-trump-warns-israel-and-iran-not-to-blow-it-after-new-strikes-threaten-emerging-ceasefire-deal/",
+          "date": "2026-06-14T17:22:12+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "US Secretary of War Pete Hegseth says Israel’s Beirut strike won’t disrupt Iran deal plans",
+          "source": "Crypto Briefing",
+          "url": "https://cryptobriefing.com/hegseth-israel-strike-iran-deal/",
+          "date": "2026-06-14T16:28:06+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump administration cuts down on NATO contributions",
+          "source": "Fox News",
+          "url": "https://www.foxnews.com/video/6398391984112",
+          "date": "2026-06-14T16:15:06+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Iran will never have a nuclear weapon under US deal, Hegseth says",
+          "source": "The Jerusalem Post",
+          "url": "https://www.jpost.com/middle-east/iran-news/article-899376",
+          "date": "2026-06-14T16:06:45+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "The U.S.-led war in Iran will dominate Trump’s G7 trip to France",
+          "source": "NPR",
+          "url": "https://www.npr.org/2026/06/14/nx-s1-5857167/trump-g7-iran-war-macron-france",
+          "date": "2026-06-14T16:00:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Donald Trump denounces IDF strikes in Beirut",
+          "source": "The Jerusalem Post",
+          "url": "https://www.jpost.com/israel-news/defense-news/article-899374",
+          "date": "2026-06-14T15:21:58+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Pete Hegseth says U.S. is \"already doing things I can't talk about\" to reopen Strait of Hormuz",
+          "source": "CBS News",
+          "url": "https://www.cbsnews.com/video/pete-hegseth-says-us-is-already-doing-things-i-cant-talk-about-to-reopen-strait-of-hormuz/",
+          "date": "2026-06-14T14:31:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Donald Trump turns 80 and celebrates with UFC cage fighting on the White House lawn",
+          "source": "WKMG",
+          "url": "https://www.clickorlando.com/news/politics/2026/06/14/donald-trump-turns-80-and-celebrates-with-ufc-cage-fighting-on-the-white-house-lawn/",
+          "date": "2026-06-14T14:23:21+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Can Donald Trump secure an Iran deal without another Middle East war?",
+          "source": "The Jerusalem Post",
+          "url": "https://www.jpost.com/jerusalem-report/article-899333",
+          "date": "2026-06-14T13:53:17+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Peace deal with Iran will be finalised on Sunday, declares Trump",
+          "source": "The Times",
+          "url": "https://www.thetimes.com/world/middle-east/article/us-iran-peace-deal-trump-czddlsq69",
+          "date": "2026-06-14T13:25:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "President Trump's 80th birthday bash features UFC fights at the White House",
+          "source": "WOAI",
+          "url": "https://news4sanantonio.com/sports/content/president-trumps-80th-birthday-bash-features-ufc-fights-at-the-white-house-freedom-250-flag-day-south-lawn-ilia-topuria-justin-gaethj-alex-pereira-ciryl-gane-mma",
+          "date": "2026-06-14T13:09:21+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump’s Iran deal may be worse than Obama’s, former Netanyahu security adviser says - opinion",
+          "source": "The Jerusalem Post",
+          "url": "https://www.jpost.com/middle-east/iran-news/article-899351",
+          "date": "2026-06-14T12:19:09+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "President Donald Trump confident deal in War with Iran will get done",
+          "source": "WKMG",
+          "url": "https://www.clickorlando.com/video/news/2026/06/14/president-donald-trump-confident-deal-in-war-with-iran-will-get-done/",
+          "date": "2026-06-14T11:34:54+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "The U.S. got pushed into the Iran war. Can Trump get us out?",
+          "source": "Houston Chronicle",
+          "url": "https://www.houstonchronicle.com/opinion/letters/article/iran-war-gas-prices-trump-israel-ceasefire-shots-22303246.php",
+          "date": "2026-06-14T11:24:04+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump says US-Iran deal to be signed on Sunday as Tehran casts doubt on timing",
+          "source": "BBC",
+          "url": "https://www.bbc.com/news/articles/cvglmn49xz0o",
+          "date": "2026-06-14T11:23:36+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Vannacci sul femminicidio, \"Non esiste e non serve reato specifico\": messaggi a Salvini e Meloni",
+          "source": "Virgilio",
+          "url": "https://www.virgilio.it/notizie/vannacci-sul-femminicidio-non-esiste-e-non-serve-reato-specifico-messaggi-a-salvini-e-meloni-1762215",
+          "date": "2026-06-14T11:14:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Donald Trump turns 80: what is the origin of his fortune, which already exceeds 6 billion dollars",
+          "source": "MARCA",
+          "url": "https://www.marca.com/en/lifestyle/us-news/2026/06/14/donald-trump-turns-80-what-is-the-origin-of-his-fortune-which-already-exceeds-6-billion-dollars.html",
+          "date": "2026-06-14T10:23:04+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Nawrocki dowodem na genialność Trumpa? \"To dlatego jest tak ważny dla prezydenta USA\"",
+          "source": "TOK FM",
+          "url": "https://www.tokfm.pl/swiat/karol-nawrocki-w-usa-to-dlatego-jest-tak-wazny-dla-prezydenta-usa",
+          "date": "2026-06-14T09:10:08+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Trump's UFC fights bring historic spectacle to White House",
+          "source": "NPR",
+          "url": "https://www.npr.org/2026/06/14/nx-s1-5854962/trump-ufc-white-house-fights",
+          "date": "2026-06-14T09:00:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "National Flag Day, Freedom 250 UFC Event, and President Trump’s 80th Birthday Converge on June 14",
+          "source": "The Media Line",
+          "url": "https://themedialine.org/headlines/national-flag-day-freedom-250-ufc-event-and-president-trumps-80th-birthday-converge-on-june-14/",
+          "date": "2026-06-14T08:30:46+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump's negotiation strategy of talks, strikes may lead to unfavorable deal for Israel - analysis",
+          "source": "The Jerusalem Post",
+          "url": "https://www.jpost.com/middle-east/iran-news/article-899298",
+          "date": "2026-06-14T07:34:18+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump Casually Drops ‘Ultimate’ Threat if War Deal Fizzles",
+          "source": "The Daily Beast",
+          "url": "https://www.thedailybeast.com/trump-casually-drops-ultimate-threat-if-deal-with-iran-fizzles/",
+          "date": "2026-06-14T07:25:00+00:00",
+          "category": "usa"
         }
       ],
       "first_seen": "2026-06-11T16:34:51+00:00",
-      "last_seen": "2026-06-15T05:36:25+00:00"
+      "last_seen": "2026-06-15T17:31:30+00:00"
     },
     {
       "id": "afds-internal-extremism-controversies",
       "title": "AfD’s internal extremism controversies",
-      "blurb": "Germany's far-right AfD faces internal and external backlash over extremist rhetoric, including a photo of a CDU leader with an AfD candidate and allegations of Nazi symbolism. The party's rising poll numbers and controversial policies spark nationwide protests.",
-      "affect": "The AfD's extremism controversies generate intense affective investment due to their moral charge, polarized contention, and implications for Germany's political future.",
+      "blurb": "Germany's AfD faces growing scrutiny over extremist ties, including allegations of Nazi-era rhetoric, anti-democratic policies, and controversial alliances with mainstream parties. The party's rising poll numbers in eastern states add urgency to the debate.",
+      "affect": "This commands disproportionate attention due to its moral panic register, polarized contention, and the perceived threat to democratic norms.",
       "intensity": 4,
       "affect_signals": [
+        "moral panic register",
         "polarized contention",
-        "outrage-coded language",
         "cross-source repetition",
-        "moral panic register"
+        "outrage-coded language"
       ],
       "categories": [
-        "🇩🇪 Alternative für Deutschland"
+        "Alternative für Deutschland"
       ],
       "article_count": 80,
       "refs": [
+        {
+          "title": "„Kriegsdrohungen“ – AfD-Chef Chrupalla kritisiert Aussagen von Luftwaffen-Chef",
+          "source": "WELT",
+          "url": "https://www.welt.de/politik/ausland/article6a2fb4e66bb5c7fe2e1c7448/russland-afd-chef-chrupalla-kritisiert-interview-aussagen-von-luftwaffen-chef.html",
+          "date": "2026-06-15T13:07:47+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Gericht entscheidet: Ex-AfD-Fraktionschef darf nicht zur Kripo",
+          "source": "Berliner Morgenpost",
+          "url": "https://www.morgenpost.de/berlin/article412290218/gericht-entscheidet-ex-afd-fraktionschef-darf-nicht-zur-kripo.html",
+          "date": "2026-06-15T13:06:12+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Berlin: Erst Zu-, dann Absage – Gericht verweigert AfD-Politiker Zulassung zum gehobenen Beamtendienst",
+          "source": "WELT",
+          "url": "https://www.welt.de/politik/deutschland/article6a2fea4a1a21c266c42b6d58/berlin-erst-zu-dann-absage-gericht-verweigert-afd-politiker-zulassung-zum-gehobenen-beamtendienst.html",
+          "date": "2026-06-15T13:00:31+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "„Bin hier heimisch geworden“: Landrat in der Eifel: Der zweite Kandidat für die Wahl steht fest",
+          "source": "Volksfreund",
+          "url": "https://www.volksfreund.de/region/bitburg-pruem/eifelkreis-peter-einert-afd-will-landrat-werden_aid-149909143",
+          "date": "2026-06-15T12:34:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Sachsen-Anhalt: Die Wirklichkeit ist komplizierter als ein Foto - ein Kommentar",
+          "source": "SZ.de",
+          "url": "https://www.sueddeutsche.de/meinung/sachsen-anhalt-cdu-afd-foto-heuer-siegmund-kommentar-li.3498887",
+          "date": "2026-06-15T12:30:18+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "„Die Wölfe stehen vor der Tür“, warnt Söder mit Blick auf die AfD-Umfragewerte",
+          "source": "WELT",
+          "url": "https://www.welt.de/politik/deutschland/article6a2fe8381a21c266c42b6d1c/reformplaene-der-regierung-die-woelfe-stehen-vor-der-tuer-warnt-soeder-mit-blick-auf-die-afd-umfragewerte.html",
+          "date": "2026-06-15T12:28:18+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Vox eleva la presión en Andalucía y avisa a Moreno de que la \"prioridad nacional\" será una condición clave: \"Él ya sabe lo que nosotros queremos\"",
+          "source": "El Mundo",
+          "url": "https://www.elmundo.es/espana/2026/06/15/6a2febdbe4d4d8c7508b45a4.html",
+          "date": "2026-06-15T12:17:52+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Vox pide \"todo el peso de la ley\" a quienes hayan cometido ilegalidades",
+          "source": "ABC",
+          "url": "https://www.abc.es/espana/vox-pide-peso-ley-cometido-ilegalidades-20260615141328-nt.html",
+          "date": "2026-06-15T12:13:33+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Migration: Zahlen gehen runter, AfD profitiert trotzdem",
+          "source": "FAZ",
+          "url": "https://www.faz.net/aktuell/politik/inland/migration-zahlen-gehen-runter-afd-profitiert-trotzdem-200928118.html",
+          "date": "2026-06-15T12:02:55+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Wirbel um „Verbrüderung“ von AfD und CDU: Aufgetauchtes Video enthüllt neue Details",
+          "source": "Frankfurter Rundschau",
+          "url": "https://www.fr.de/politik/wirbel-um-verbruederung-von-afd-und-cdu-aufgetauchtes-video-enthuellt-neue-details-94351863.html",
+          "date": "2026-06-15T11:54:23+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Garriga (VOX) pide no apropiarse de los mensajes de León XIV y acusa al PSOE de pretender ser \"más papista que el papa\"",
+          "source": "Europa Press",
+          "url": "https://www.europapress.es/sociedad/noticia-garriga-vox-pide-no-apropiarse-mensajes-leon-xiv-acusa-psoe-pretender-ser-mas-papista-papa-20260615133623.html",
+          "date": "2026-06-15T11:36:23+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "„Koalition mit CDU wird es Gott sei Dank nicht geben“ – jetzt äußert sich die AfD zum „Flirt“-Foto",
+          "source": "WELT",
+          "url": "https://www.welt.de/politik/deutschland/article6a2fb8740611b9299a15591e/sachsen-anhalt-koalition-mit-cdu-wird-es-gott-sei-dank-nicht-geben-jetzt-aeussert-sich-die-afd-zum-flirt-foto.html",
+          "date": "2026-06-15T10:20:50+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "„Dieses Bild steht für alles, was im Osten bei der CDU nicht läuft“",
+          "source": "WELT",
+          "url": "https://www.welt.de/videos/video6a2fc4f91a21c266c42b6897/afd-foto-aus-sachsen-anhalt-dieses-bild-steht-fuer-alles-was-im-osten-bei-der-cdu-nicht-laeuft.html",
+          "date": "2026-06-15T09:50:54+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Vom Umgang mit der AfD bis Social Media: Schultheatertage mit kontroversen Themen",
+          "source": "WAZ | Westdeutsche Allgemeine Zeitung",
+          "url": "https://www.waz.de/lokales/essen/article412284443/vom-umgang-mit-der-afd-bis-social-media-schultheatertage-mit-kontroversen-themen.html",
+          "date": "2026-06-15T09:06:38+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Überraschung bei AfD-Jugend: Gesetzter Kandidat fällt bei der Wahl zum Landesvorsitz durch",
+          "source": "Badische Zeitung",
+          "url": "https://www.badische-zeitung.de/ueberraschung-bei-afd-jugend-gesetzter-kandidat-faellt-bei-der-wahl-zum-landesvorsitz-durch",
+          "date": "2026-06-15T09:00:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Bei Zusammenarbeit mit AfD: CDU-Minister Laumann kündigt Parteiaustritt an - Kirche-und-Leben.de",
+          "source": "",
+          "url": "https://www.kirche-und-leben.de/artikel/afd-cdu-csu-union-brandmauer-zusammenarbeit-koalition-minister-karl-josef-laumann-nordrhein-westfalen-ankuendigung-austritt",
+          "date": "2026-06-15T08:28:40+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "AfD in Sachsen-Anhalt: Was die Partei mit den Schulen vorhat",
+          "source": "FAZ",
+          "url": "https://www.faz.net/aktuell/feuilleton/debatten/afd-in-sachsen-anhalt-was-die-partei-mit-den-schulen-vorhat-accg-200923748.html",
+          "date": "2026-06-15T08:22:19+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "„Massiv gefährdet“: CDU-Spitzenkandidat Peters warnt vor Wohlstandsverlust durch AfD",
+          "source": "Frankfurter Rundschau",
+          "url": "https://www.fr.de/politik/aerzte-handwerker-hochschullehrer-cdu-mann-peters-warnt-vor-fachkraefte-exodus-unter-afd-zr-94351262.html",
+          "date": "2026-06-15T07:48:59+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "AfD-Forderung Homeschooling: Diese Länder stellen sich hinter die Schulpflicht",
+          "source": "FAZ",
+          "url": "https://www.faz.net/aktuell/politik/inland/afd-forderung-homeschooling-diese-laender-stellen-sich-hinter-die-schulpflicht-accg-200927209.html",
+          "date": "2026-06-15T07:16:29+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Kajdi Csaba elmondta, mit gondol Magyar Péter stílusáról",
+          "source": "Blikk",
+          "url": "https://www.blikk.hu/sztarvilag/hazai-sztarok/kajdi-csaba-influenszer-vasvrari-vivien-magyar-peter/kq3mne2",
+          "date": "2026-06-15T05:44:44+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Brisantes AfD-Foto aus Sachsen-Anhalt – Video weckt Zweifel an Darstellung von CDU-Politiker",
+          "source": "WELT",
+          "url": "https://www.welt.de/politik/deutschland/article6a2f88e27e682fc37fbfa34f/brisantes-afd-foto-aus-sachsen-anhalt-video-weckt-zweifel-an-darstellung-von-cdu-politiker.html",
+          "date": "2026-06-15T05:33:36+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Die von der AfD geforderte Abschaffung der Schulpflicht wäre ein Fehler",
+          "source": "FAZ",
+          "url": "https://www.faz.net/aktuell/feuilleton/debatten/die-von-der-afd-geforderte-abschaffung-der-schulpflicht-waere-ein-fehler-200928473.html",
+          "date": "2026-06-15T05:18:01+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Der Tag: CDU/AfD-Foto aus Sachsen-Anhalt lässt Grüne und Linke schäumen",
+          "source": "Ntv",
+          "url": "https://www.n-tv.de/der_tag/CDU-AfD-Foto-aus-Sachsen-Anhalt-laesst-Gruene-und-Linke-schaeumen-id30966707.html",
+          "date": "2026-06-15T05:05:25+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "„Das ist die Unwahrheit, Herr Kollege“ – Video bringt CDU Sachsen-Anhalt in Erklärungsnot",
+          "source": "WELT",
+          "url": "https://www.welt.de/videos/video6a2f7cdb6bb5c7fe2e1c6ee0/naehe-zur-afd-das-ist-die-unwahrheit-herr-kollege-video-bringt-cdu-sachsen-anhalt-in-erklaerungsnot.html",
+          "date": "2026-06-15T04:43:39+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Was Wagenknecht wirklich will – und warum das BSW dabei nur Mittel zum Zweck ist",
+          "source": "focusplus.de",
+          "url": "https://www.focusplus.de/politik/wagenknecht-wirklich-warum-bsw-dabei-nur-mittel-zweck-ist-13816",
+          "date": "2026-06-15T04:28:33+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Klare Kante gegen die AfD, sonst droht der Untergang",
+          "source": "Nordkurier",
+          "url": "https://www.nnn.de/politik/klare-kante-gegen-die-afd-sonst-droht-der-untergang-4643784",
+          "date": "2026-06-15T04:23:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "The Trump years have reminded me of what I stand for | Opinion",
+          "source": "Cincinnati Enquirer",
+          "url": "https://www.cincinnati.com/story/opinion/contributors/2026/06/15/the-lessons-i-never-expected-to-learn-from-donald-trump/90462513007/",
+          "date": "2026-06-15T04:05:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Kumpelei von CDU und AfD: Eine Debatte, die keine ist",
+          "source": "politico.eu",
+          "url": "https://www.politico.eu/podcast/berlin-playbook-podcast/kumpelei-von-cdu-und-afd-eine-debatte-die-keine-ist/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+          "date": "2026-06-15T04:02:39+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Bürger protestieren vor AfD-Büro",
+          "source": "Traunsteiner Tagblatt",
+          "url": "https://www.traunsteiner-tagblatt.de/region/landkreis-traunstein/traunstein_artikel,-buerger-protestieren-vor-afdbuero-_arid,1001033.html",
+          "date": "2026-06-15T04:00:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Bürger protestieren vor AfD-Büro in Traunstein",
+          "source": "Traunsteiner Tagblatt",
+          "url": "https://www.traunsteiner-tagblatt.de/region/landkreis-traunstein/traunstein_artikel,-buerger-protestieren-vor-afdbuero-in-traunstein-_arid,1001033.html",
+          "date": "2026-06-15T04:00:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "AfD-Parteitag, Blockaden, Foto-Eklat: Warum Panik den Verstand frisst - T-Online",
+          "source": "",
+          "url": "https://www.t-online.de/nachrichten/tagesanbruch/id_101296418/afd-ost-wahlen-ruecken-naeher-warum-panik-und-empoerung-jetzt-nicht-helfen.html",
+          "date": "2026-06-15T02:20:57+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "«A pesar del ajuste, el país crece»: la banca de Salvador Distefano a la política de Javier Milei",
+          "source": "El Intransigente",
+          "url": "https://elintransigente.com/2026/06/a-pesar-del-ajuste-el-pais-crece-la-banca-de-salvador-distefano-a-la-politica-de-javier-milei/",
+          "date": "2026-06-15T02:10:11+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Watch: Bill Maher Endorses ‘Nazi’ Tattoo Democrat Graham Platner Despite ‘Scary’ Scandals",
+          "source": "breitbart.com",
+          "url": "https://www.breitbart.com/entertainment/2026/06/14/watch-bill-maher-endorses-nazi-tattoo-democrat-graham-platner-despite-scary-scandals/amp/",
+          "date": "2026-06-15T01:35:19+00:00",
+          "category": "networks"
+        },
+        {
+          "title": "UFC Freedom 250 Trump",
+          "source": "Rutland Herald",
+          "url": "https://www.rutlandherald.com/ap/national/ufc-freedom-250-trump/image_f01ce25f-15e0-51c0-aa9e-e498577f5dec.html",
+          "date": "2026-06-14T23:23:51+00:00",
+          "category": "poland"
+        },
         {
           "title": "Linke und Grüne kritisieren CDU/AfD-Foto aus Sachsen-Anhalt - GN-Online",
           "source": "",
@@ -240,6 +1472,13 @@
           "category": "germany"
         },
         {
+          "title": "Meloni è costretta a inseguire Vannacci sul “chi è il più nero del reame?”",
+          "source": "Articolo21",
+          "url": "https://www.articolo21.org/2026/06/meloni-e-costretta-a-inseguire-vannacci-sul-chi-e-il-piu-nero-del-reame/",
+          "date": "2026-06-14T18:54:53+00:00",
+          "category": "italy"
+        },
+        {
           "title": "Mehr Programm bitte: CDU-Foto mit AfD-Spitzenkandidaten sorgt für Aufsehen",
           "source": "Frankfurter Rundschau",
           "url": "https://www.fr.de/meinung/kommentare/cdu-sachsen-anhalt-foto-mit-afd-kandidat-sorgt-fuer-wirbel-94350916.html",
@@ -252,6 +1491,20 @@
           "url": "https://www.t-online.de/nachrichten/deutschland/innenpolitik/id_101296440/sachsen-anhalt-naehe-zur-afd-video-setzt-cdu-politiker-heuer-unter-druck.html",
           "date": "2026-06-14T18:12:14+00:00",
           "category": "germany"
+        },
+        {
+          "title": "Konfrontation statt Verbrüderung? Videoausschnitt weckt Zweifel an CDU-Darstellung zu AfD-Foto in Sachsen-Anhalt",
+          "source": "Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/politik/konfrontation-statt-verbruderung-videoausschnitt-weckt-zweifel-an-cdu-darstellung-zu-afd-foto-in-sachsen-anhalt-15714167.html",
+          "date": "2026-06-14T17:57:22+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Conte al Forum in Masseria: \"Meloni beniamina dell'establishment, governo dura grazie ai poteri forti\"",
+          "source": "Gazzetta di Roma",
+          "url": "https://www.gazzettadiroma.it/conte-al-forum-in-masseria-meloni-beniamina-dellestablishment-governo-dura-grazie-ai-poteri-forti/",
+          "date": "2026-06-14T17:38:45+00:00",
+          "category": "italy"
         },
         {
           "title": "Streit um Bild: Nach „Kumpel-Foto“ mit AfD-Mann – Grüne und Linke werfen CDU „Lüge“ vor",
@@ -275,52 +1528,430 @@
           "category": "germany"
         },
         {
-          "title": "Überraschung bei AfD-Jugend: So lief die Gründung der „Generation Deutschland“",
-          "source": "zvw.de",
-          "url": "https://www.zvw.de/rems-murr-kreis/%C3%BCberraschung-bei-afd-jugend-so-lief-die-gr%C3%BCndung-der-generation-deutschland_arid-1087108",
-          "date": "2026-06-14T16:53:00+00:00",
-          "category": "germany"
-        },
-        {
           "title": "„Irrlichternde Frontfrau“: Grünen-Chef teilt wegen AfD-Video aus Sachsen-Anhalt gegen Wagenknecht und CDU aus",
           "source": "Frankfurter Rundschau",
           "url": "https://www.fr.de/politik/video-aus-sachsen-anhalt-sorgt-fuer-wirben-gruenen-chef-teilt-gegen-cdu-aus-zr-94350839.html",
           "date": "2026-06-14T16:38:43+00:00",
           "category": "germany"
+        },
+        {
+          "title": "Karol Nawrocki w USA. Ma \"cel strategiczny\"",
+          "source": "TVN24",
+          "url": "https://tvn24.pl/swiat/prezydent-karol-nawrocki-w-usa-wezmie-udzial-w-urodzinach-donalda-trumpa-rozmawial-z-dziennikarzami-st9095738",
+          "date": "2026-06-14T16:16:46+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Festakt im Gürzenich: CDU-Parteichefin Serap Güler würdigt Adenauer und warnt vor der AfD",
+          "source": "Rundschau Online",
+          "url": "https://www.rundschau-online.de/koeln/cdu-parteichefin-serap-gueler-wuerdigt-adenauer-und-warnt-vor-der-afd-1301329",
+          "date": "2026-06-14T16:12:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Femminicidi, da Lega a Pd è coro di critiche",
+          "source": "Sky TG24",
+          "url": "https://tg24.sky.it/politica/video/2026/06/14/femminicidi-da-lega-a-pd-e-coro-di-critiche-1105247",
+          "date": "2026-06-14T16:09:21+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "CDU-Politiker warnen vor Zusammenarbeit mit AfD - 14.06.26 - News",
+          "source": "Ariva",
+          "url": "https://www.ariva.de/news/cdu-politiker-warnen-vor-zusammenarbeit-mit-afd-12036455",
+          "date": "2026-06-14T16:00:49+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "AfD Neu-Ulm: Franz Schmid weiht neues Zentrum in Vöhringen ein",
+          "source": "swp.de",
+          "url": "https://www.swp.de/lokales/ulm/afd-neu-ulm-franz-schmid-weiht-neues-zentrum-in-voehringen-ein-79176793.html",
+          "date": "2026-06-14T16:00:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Nicht die AfD ist das größte Problem der CDU, sondern ihre inhaltliche Beliebigkeit",
+          "source": "Berliner Zeitung",
+          "url": "https://www.berliner-zeitung.de/article/nicht-die-afd-ist-das-groesste-problem-der-cdu-sondern-ihre-inhaltliche-beliebigkeit-10090632",
+          "date": "2026-06-14T15:50:21+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Testfall TU Berlin: Die AfD greift die Wissenschaftsfreiheit an",
+          "source": "FAZ",
+          "url": "https://www.faz.net/aktuell/wissen/forschung-politik/testfall-tu-berlin-die-afd-greift-die-wissenschaftsfreiheit-an-accg-200928685.html",
+          "date": "2026-06-14T15:34:17+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "'Manufactured Story!' Pete Hegseth Snipes at CBS's Brennan in Tense Exchange Over US Military Stockpiles",
+          "source": "Yahoo",
+          "url": "https://www.yahoo.com/news/videos/manufactured-story-pete-hegseth-snipes-151217366.html",
+          "date": "2026-06-14T15:12:17+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Landesverband der Generation Deutschland: Viel Gegenwind für die AfD-Jugend in Donzdorf",
+          "source": "swp.de",
+          "url": "https://www.swp.de/lokales/goeppingen/landesverband-der-generation-deutschland-viel-gegenwind-fuer-die-afd-jugend-in-donzdorf-79167999.html",
+          "date": "2026-06-14T14:55:32+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "„Generation Baden-Württemberg“ gegründet - Überraschung bei Wahl zum Landesvorsitz",
+          "source": "Südkurier",
+          "url": "https://www.suedkurier.de/baden-wuerttemberg/generation-baden-wuerttemberg-gegruendet-ueberraschung-bei-wahl-zum-landesvorsitz-114443716",
+          "date": "2026-06-14T14:30:26+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Gründung in Donzdorf: Überraschung bei AfD-Jugend - stuttgarter-nachrichten.de",
+          "source": "",
+          "url": "https://www.stuttgarter-nachrichten.de/inhalt.gruendung-in-donzdorf-ueberraschung-bei-afd-jugend.4d9fd3ee-dfa9-4993-8643-469bddcb0fc9.html",
+          "date": "2026-06-14T14:18:21+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Italy’s Meloni faces a far-right dilemma as 'Il Generale' Vannacci rises",
+          "source": "WSLS",
+          "url": "https://www.wsls.com/news/world/2026/06/14/italys-meloni-faces-a-far-right-dilemma-as-il-generale-vannacci-rises/",
+          "date": "2026-06-14T13:59:08+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "PiS odsłania karty ws. obietnic wyborczych. Ma propozycję dla emerytów",
+          "source": "Interia Biznes",
+          "url": "https://biznes.interia.pl/gospodarka/news-wyjscie-z-ets-ulgi-dla-emerytow-wyzszy-prog-podatkowy-pis-po,nId,23496201",
+          "date": "2026-06-14T13:40:11+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Manuel Bompard: \"Je trouve assez surprenant que des voix qui se revendiquent de la gauche se mettent presque à faire la campagne de Jordan Bardella\"",
+          "source": "BFM",
+          "url": "https://www.bfmtv.com/politique/la-france-insoumise/video-manuel-bompard-je-trouve-assez-surprenant-que-des-voix-qui-se-revendiquent-de-la-gauche-se-mettent-presque-a-faire-la-campagne-de-jordan-bardella_VN-202606140279.html",
+          "date": "2026-06-14T13:36:30+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Perché Meloni può puntare alla mediazione (difficile) con Vannacci. Parla Di Gregorio",
+          "source": "Formiche.net",
+          "url": "https://formiche.net/2026/06/perche-meloni-puo-puntare-alla-mediazione-difficile-con-vannacci-parla-di-gregorio/",
+          "date": "2026-06-14T13:33:01+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "„Sehr mulmig“: Ex-SPD-Chef Beck zieht vor Landtagswahl in Sachsen-Anhalt wegen AfD erschreckenden Vergleich",
+          "source": "TZ",
+          "url": "https://www.tz.de/politik/alt-spd-chef-beck-wird-vor-landtagswahlen-sehr-mulmig-94350610.html",
+          "date": "2026-06-14T13:28:20+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "AfD startet Jugendverband \"Generation Deutschland BW\" trotz Protesten und Kritik",
+          "source": "SWR",
+          "url": "https://www.swr.de/swraktuell/baden-wuerttemberg/afd-jugend-gruendet-landesverband-in-bw-100.html",
+          "date": "2026-06-14T13:04:27+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "CDU unter Druck nach „Kuschelfoto“ mit AfD-Mann? Die Mitte macht sich lächerlich",
+          "source": "noz.de",
+          "url": "https://www.noz.de/deutschland-welt/politik/artikel/kuschelfoto-mit-afd-mann-die-kritik-an-der-cdu-ist-bodenlos-50777243",
+          "date": "2026-06-14T13:00:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "„Kuschelfoto“ mit AfD-Mann? Die Kritik an der CDU ist bodenlos",
+          "source": "shz.de",
+          "url": "https://www.shz.de/deutschland-welt/politik/artikel/kuschelfoto-mit-afd-mann-die-kritik-an-der-cdu-ist-bodenlos-50777244",
+          "date": "2026-06-14T13:00:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Lyhanna: Le Pen pointe la \"responsabilité essentielle\" du \"politique\", juge que Darmanin \"aurait dû démissionn",
+          "source": "Boursorama",
+          "url": "https://www.boursorama.com/actualite-economique/actualites-amp/lyhanna-le-pen-pointe-la-responsabilite-essentielle-du-politique-juge-que-darmanin-aurait-du-demissionner-9739eb32f407f30b8f965922d2bd05eb",
+          "date": "2026-06-14T12:57:46+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Neue AfD-Jugend in Donzdorf gegründet: Götz wird Chef",
+          "source": "Wochenblatt Reporter",
+          "url": "https://www.wochenblatt-reporter.de/c-lokales/neue-afd-jugend-in-donzdorf-gegruendet-goetz-wird-chef_a798438",
+          "date": "2026-06-14T12:51:17+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "AfD-Politikerin soll Goebbels-Zitat als Klingelton verwendet haben",
+          "source": "FAZ",
+          "url": "https://www.faz.net/aktuell/gesellschaft/kriminalitaet/afd-politikerin-soll-goebbels-zitat-als-klingelton-verwendet-haben-accg-200928865.html",
+          "date": "2026-06-14T12:31:27+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Wie CDU und SPD Ministerpräsidenten-Ämter im Osten verteidigen wollen",
+          "source": "Jüdische Allgemeine",
+          "url": "https://www.juedische-allgemeine.de/politik/wie-cdu-und-spd-ministerpraesidenten-aemter-im-osten-verteidigen-wollen/",
+          "date": "2026-06-14T12:25:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "\"Sturmfest\" des AfD-Nachwuchses sorgt für Sitzblockaden in Brettorf",
+          "source": "Weser Kurier",
+          "url": "https://www.weser-kurier.de/landkreis-oldenburg/gemeinde-doetlingen/sturmfest-des-afd-nachwuchses-sorgt-fuer-sitzblockaden-in-brettorf-doc86a76sfxsohga5dzd5m",
+          "date": "2026-06-14T12:07:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Kubicki: Keine Zusammenarbeit mit der AfD",
+          "source": "WELT",
+          "url": "https://www.welt.de/regionales/hamburg/article6a2e8dd66bb5c7fe2e1c5f8e/kubicki-keine-zusammenarbeit-mit-der-afd.html",
+          "date": "2026-06-14T11:19:16+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "FDP-Landesparteitag: Kubicki: Keine Zusammenarbeit mit der AfD",
+          "source": "DIE ZEIT",
+          "url": "https://www.zeit.de/news/2026-06/14/kubicki-keine-zusammenarbeit-mit-der-afd",
+          "date": "2026-06-14T11:15:56+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Visszaszólt a Fidesz Magyar Péternek a migránstábor ügyében",
+          "source": "mfor.hu",
+          "url": "https://mfor.hu/cikkek/kozelet/visszaszolt-a-fidesz-magyar-peternek-a-migranstabor-ugyeben.html",
+          "date": "2026-06-14T11:13:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "„Diese Menschen sind der AfD nicht deutsch genug“",
+          "source": "WELT",
+          "url": "https://www.welt.de/politik/deutschland/article6a2901592f1d399245058820/cdu-spitzenkandidat-peters-diese-menschen-sind-der-afd-nicht-deutsch-genug.html",
+          "date": "2026-06-14T10:34:19+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Kumpelei zwischen CDU und AfD? Neues Video zeigt ganze Szene",
+          "source": "FOCUS online",
+          "url": "https://www.focus.de/politik/deutschland/kumpelei-zwischen-cdu-und-afd-neues-video-zeigt-ganze-szene_a6b1e204-c0fc-46e9-b7fb-d79be0e8ca8f.html",
+          "date": "2026-06-14T10:25:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "AfD-Sommerfest in Apolda: 17-Jähriger wird von Polizei kontrolliert und hat sieben Messer dabei",
+          "source": "TAG24",
+          "url": "https://www.tag24.de/justiz/polizei/afd-sommerfest-in-apolda-17-jaehriger-hat-sieben-messer-dabei-3507807",
+          "date": "2026-06-14T10:10:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Mahnwache gegen AfD-Jugend - Polizei löst Sitzblockaden auf",
+          "source": "noz.de",
+          "url": "https://www.noz.de/deutschland-welt/niedersachsen/artikel/mahnwache-gegen-afd-jugend-polizei-loest-sitzblockaden-auf-50777436",
+          "date": "2026-06-14T09:32:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "„Wir Linke haben den Osten vernachlässigt“ – Gysi sieht Mitschuld seiner Partei am AfD-Aufstieg",
+          "source": "WELT",
+          "url": "https://www.welt.de/politik/deutschland/article6a2e62c17e682fc37fbf9324/gregor-gysi-sieht-mitschuld-seiner-partei-am-afd-aufstieg-wir-linke-haben-den-osten-vernachlaessigt.html",
+          "date": "2026-06-14T09:15:10+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "„Angeschlossen, ohne die Arbeit selbst machen zu müssen“ – Höcke setzt auf Platz in der Bundespartei",
+          "source": "WELT",
+          "url": "https://www.welt.de/politik/deutschland/article6a2e5b2c317e6926892e51f8/afd-angeschlossen-ohne-die-arbeit-selbst-machen-zu-muessen-bjoern-hoecke-setzt-auf-platz-in-der-bundespartei.html",
+          "date": "2026-06-14T08:15:09+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Kemény szembesítés után nagy változások jönnek a Fideszben",
+          "source": "ORIGO",
+          "url": "https://www.origo.hu/belpol/2026/06/fidesz-nyaron-ne-legyen-politikai-uborkaszezon",
+          "date": "2026-06-14T08:04:31+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Gefährdet die AfD die Zeitenwende?",
+          "source": "FAZ",
+          "url": "https://www.faz.net/aktuell/feuilleton/debatten/gefaehrdet-die-afd-die-zeitenwende-accg-200909274.html",
+          "date": "2026-06-14T07:15:02+00:00",
+          "category": "germany"
         }
       ],
       "first_seen": "2026-06-11T16:34:51+00:00",
-      "last_seen": "2026-06-15T05:36:25+00:00"
+      "last_seen": "2026-06-15T17:31:30+00:00"
     },
     {
       "id": "jordan-bardellas-justice-reform-crusade",
       "title": "Jordan Bardella’s justice reform crusade",
-      "blurb": "Jordan Bardella, leader of France's Rassemblement National, demands stricter justice reforms and the resignation of Justice Minister Gérald Darmanin following the murder of 11-year-old Lyhanna. His calls for life imprisonment and criticism of Macron's policies dominate political discourse.",
-      "affect": "Bardella's crusade commands disproportionate attention due to its moral charge, alarmist framing, and polarized contention over justice and immigration policies.",
+      "blurb": "France's far-right leader Jordan Bardella is pushing for radical justice reforms, including stricter penalties for child predators and a reduction in France's EU contributions. His proposals have sparked intense debate over immigration, national sovereignty, and judicial independence.",
+      "affect": "This commands disproportionate attention due to its moral charge, polarized contention, and the high stakes for France's political future.",
       "intensity": 4,
       "affect_signals": [
-        "alarmist framing",
-        "outrage-coded language",
+        "moral panic register",
+        "polarized contention",
         "cross-source repetition",
-        "moral charge"
+        "alarmist framing"
       ],
       "categories": [
-        "🇫🇷 Rassemblement National"
+        "Rassemblement National"
       ],
       "article_count": 60,
       "refs": [
+        {
+          "title": "“Il y en a tous les jours” : après la mort de Lyhanna, Jordan Bardella dérape et s’attire les foudres des internautes, “Si Barella avait été noir ou arabe…”",
+          "source": "Marie France, magazine féminin",
+          "url": "https://www.mariefrance.fr/faits-divers/mort-lyhanna-jordan-bardella-attire-foudres-internautes-si-barella-avait-ete-noir-ou-arabe-1278625.html",
+          "date": "2026-06-15T12:52:14+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Jordan Bardella ne s’attendait pas à cette question sur sa relation avec Maria Carolina à l’antenne",
+          "source": "vsd.fr",
+          "url": "https://vsd.fr/97032-jordan-bardella-ne-sattendait-pas-a-cette-question-sur-sa-relation-avec-maria-carolina-a-lantenne/",
+          "date": "2026-06-15T12:45:00+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Bardella veut réduire de moitié la contribution de la France à l'Union européenne",
+          "source": "Boursorama",
+          "url": "https://www.boursorama.com/actualite-economique/actualites-amp/bardella-veut-reduire-de-moitie-la-contribution-de-la-france-a-l-union-europeenne-984a89cf13ad80f242f310d28b392ed9",
+          "date": "2026-06-15T12:21:16+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Un comportement « erratique » : Jordan Bardella multiplie les critiques à l’égard de Donald Trump",
+          "source": "l'Opinion",
+          "url": "https://www.lopinion.fr/politique/un-comportement-erratique-jordan-bardella-multiplie-les-critiques-a-legard-de-donald-trump",
+          "date": "2026-06-15T11:46:43+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Bardella Says EU “Completely Obsolete,” Vows Nationalist Reforms",
+          "source": "The European Conservative",
+          "url": "https://europeanconservative.com/articles/news/bardella-politico-eu-completely-obsolete-nationalist-reforms/",
+          "date": "2026-06-15T11:40:11+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Présidentielle 2027 : Jordan Bardella veut « réduire de moitié » la contribution nette française dans le budget de l’Union européenne",
+          "source": "Sud Ouest",
+          "url": "https://www.sudouest.fr/politique/jordan-bardella/presidentielle-2027-jordan-bardella-veut-reduire-de-moitie-la-contribution-nette-francaise-dans-le-budget-de-l-union-europeenne-29497794.php",
+          "date": "2026-06-15T10:58:27+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Le Pen says it’s ‘a relief’ Bardella can stand in French presidential election if she’s banned",
+          "source": "politico.eu",
+          "url": "https://www.politico.eu/article/marine-le-pen-endorses-jordan-bardella-saying-she-would-be-relieved-if-he-ran/",
+          "date": "2026-06-15T10:54:49+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Retraites : Marine Le Pen ouvre la porte à une dose de capitalisation",
+          "source": "Valeurs actuelles",
+          "url": "https://www.valeursactuelles.com/economie/presidentielle-2027-marine-le-pen-propose-une-capitalisation-volontaire-des-retraites",
+          "date": "2026-06-15T10:30:46+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Retraites : Marine Le Pen contredit Jordan Bardella sur l’âge de départ… Tout en ouvrant la voie à la capitalisation",
+          "source": "L'Humanité",
+          "url": "https://www.humanite.fr/politique/jordan-bardella/retraites-marine-le-pen-contredit-jordan-bardella-sur-lage-de-depart-tout-en-ouvrant-la-voie-a-la-capitalisation",
+          "date": "2026-06-15T10:20:22+00:00",
+          "category": "france"
+        },
+        {
+          "title": "«L’épaisseur du matelas de l’assassin de Lyhanna, ce n’est pas mon problème» : Jordan Bardella défend le modèle carcéral salvadorien",
+          "source": "Le Figaro",
+          "url": "https://www.lefigaro.fr/politique/l-epaisseur-du-matelas-de-l-assassin-de-lyhanna-ce-n-est-pas-mon-probleme-jordan-bardella-defend-le-modele-carceral-salvadorien-20260615",
+          "date": "2026-06-15T10:11:30+00:00",
+          "category": "france"
+        },
+        {
+          "title": "\"Tout changer sans rien détruire\": Jordan Bardella veut \"réduire de moitié\" la contribution \"excessive\" de la France au budget de l'Union européenne si le Rassemblement national remporte l'élection présidentielle",
+          "source": "BFM",
+          "url": "https://www.bfmtv.com/economie/economie-social/union-europeenne/tout-changer-sans-rien-detruire-jordan-bardella-veut-reduire-de-moitie-la-contribution-excessive-de-la-france-au-budget-de-l-union-europeenne-si-le-rassemblement-national-remporte-l-election-presidentielle_AD-202606150495.html",
+          "date": "2026-06-15T10:05:09+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Jordan Bardella sur la mort de Lyhanna : \"Des marches blanches, il y en a tous les jours...\" Le président du RN justifie sa présence au Grand Prix de F1 de Monaco",
+          "source": "ladepeche.fr",
+          "url": "https://www.ladepeche.fr/2026/06/15/jordan-bardella-sur-la-mort-de-lyhanna-des-marches-blanches-il-y-en-a-tous-les-jours-le-president-du-rn-justifie-sa-presence-au-grand-prix-de-f1-de-13420000.php",
+          "date": "2026-06-15T09:36:00+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Maria Carolina de Bourbon : la compagne de Jordan Bardella et son chapeau ne passent pas inaperçus au Prix de Diane",
+          "source": "Closer",
+          "url": "https://www.closermag.fr/people/maria-carolina-de-bourbon-la-compagne-de-jordan-bardella-et-son-chapeau-ne-passent-pas-inapercus-au-prix-de-diane-3642130",
+          "date": "2026-06-15T08:19:55+00:00",
+          "category": "france"
+        },
+        {
+          "title": "L’opinion d’Eric Revel : \"Retraites : tensions au RN entre Bardella et Le Pen !\"",
+          "source": "Sud Radio",
+          "url": "https://www.sudradio.fr/politique/lopinion-deric-revel-retraites-tensions-au-rn-entre-bardella-et-le-pen",
+          "date": "2026-06-15T07:44:31+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Franck Allisio : \"Tout le monde parle comme Marine Le Pen, c'est la marinisation des esprits\"",
+          "source": "Sud Radio",
+          "url": "https://www.sudradio.fr/linvite-politique/franck-allisio-tout-le-monde-parle-comme-marine-le-pen-cest-la-marinisation-des-esprits",
+          "date": "2026-06-15T07:16:18+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Michèle Cotta : entre Marine Le Pen et Jordan Bardella, la fin de la lune de miel ?",
+          "source": "parismatch.com",
+          "url": "https://www.parismatch.com/actu/politique/michele-cotta-entre-marine-le-pen-et-jordan-bardella-la-fin-de-la-lune-de-miel-270821",
+          "date": "2026-06-15T06:33:29+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Jordan Bardella interrogé sur ses sorties chics avec la princesse Maria-Carolina : “C’est une question sérieuse ?”",
+          "source": "Gala",
+          "url": "https://www.gala.fr/l_actu/news_de_stars/jordan-bardella-interroge-sur-ses-sorties-chics-avec-la-princesse-maria-carolina-c-est-une-question-serieuse-20260615",
+          "date": "2026-06-15T05:48:14+00:00",
+          "category": "france"
+        },
+        {
+          "title": "‘The EU is completely obsolete’: France’s far-right leader wants to shake up Europe",
+          "source": "politico.eu",
+          "url": "https://www.politico.eu/article/jordan-bardella-france-far-right-frontrunner-donald-trump-nato-future-of-eu/",
+          "date": "2026-06-15T03:02:00+00:00",
+          "category": "france"
+        },
+        {
+          "title": "An Italian princess and EU budgets: 5 takeaways from POLITICO’s Jordan Bardella interview",
+          "source": "politico.eu",
+          "url": "https://www.politico.eu/article/france-jordan-bardella-5-takeaways-from-politico-interview/",
+          "date": "2026-06-15T02:03:39+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Jordan Bardella is coming for Europe",
+          "source": "politico.eu",
+          "url": "https://www.politico.eu/article/france-eu-far-right-jordan-bardella-coming-for-europe/",
+          "date": "2026-06-15T02:03:37+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Defence votes in Brussels once again expose growing cracks within Europe's far right",
+          "source": "Euractiv",
+          "url": "https://www.euractiv.com/news/defence-votes-in-brussels-once-again-expose-growing-cracks-within-europes-far-right/",
+          "date": "2026-06-15T02:03:11+00:00",
+          "category": "france"
+        },
         {
           "title": "Pour Jordan Bardella (RN) \"il faut interdire la politisation des syndicats\" dans le monde de la justice",
           "source": "BFM",
           "url": "https://www.bfmtv.com/politique/video-pour-jordan-bardella-rn-il-faut-interdire-la-politisation-des-syndicats-dans-le-monde-de-la-justice_VN-202606140413.html",
           "date": "2026-06-14T21:27:10+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Jordan Bardella (RN) \"souhaite que Marine Le Pen puisse être candidate\" à l'élection présidentielle",
-          "source": "BFM",
-          "url": "https://www.bfmtv.com/politique/video-jordan-bardella-rn-souhaite-que-marine-le-pen-puisse-etre-candidate-a-l-election-presidentielle_VN-202606140410.html",
-          "date": "2026-06-14T21:17:00+00:00",
           "category": "france"
         },
         {
@@ -345,6 +1976,20 @@
           "category": "france"
         },
         {
+          "title": "Nawrocki nie gryzł się w język. Szpila w Tuska i Sikorskiego. \"Nie jest prezydent od tego, aby...\"",
+          "source": "wPolityce.pl",
+          "url": "https://wpolityce.pl/polityka/762667-prezydent-nie-gryzl-sie-w-jezyk-szpila-w-tuska-i-sikorskiego",
+          "date": "2026-06-14T20:33:14+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Présidentielle 2027: \"Je souhaite que Marine [Le Pen] puisse être candidate\", déclare Jordan Bardella (RN)",
+          "source": "BFM",
+          "url": "https://www.bfmtv.com/politique/video-presidentielle-2027-je-souhaite-que-marine-le-pen-puisse-etre-candidate-declare-jordan-bardella-rn_VN-202606140391.html",
+          "date": "2026-06-14T20:14:13+00:00",
+          "category": "france"
+        },
+        {
           "title": "Jordan Bardella (RN) au GP de Monaco pendant la marche blanche pour Lyhanna: ”Des marches blanches, il y en a tous les jours\"",
           "source": "BFM",
           "url": "https://www.bfmtv.com/politique/video-jordan-bardella-rn-au-gp-de-monaco-pendant-la-marche-blanche-pour-lyhanna-des-marches-blanches-il-y-en-a-tous-les-jours_VN-202606140389.html",
@@ -357,6 +2002,13 @@
           "url": "https://www.bfmtv.com/politique/video-jordan-bardella-president-du-rassemblement-national-il-faut-un-durcissement-massif-et-inedit-des-sanctions_VN-202606140386.html",
           "date": "2026-06-14T20:01:46+00:00",
           "category": "france"
+        },
+        {
+          "title": "UPDATE: Polish president seeks permanent US troop presence on Washington visit",
+          "source": "Polskie Radio",
+          "url": "https://polskieradio.pl/395/7784/Artykul/3698210,update-polish-president-seeks-permanent-us-troop-presence-on-washington-visit",
+          "date": "2026-06-14T20:00:00+00:00",
+          "category": "poland"
         },
         {
           "title": "Perpétuité réelle incompressible, critiques contre Emmanuel Macron, démission de Gérald Darmanin... Ce qu’il faut retenir de l'interview de Jordan Bardella sur l'affaire Lyhanna",
@@ -378,16 +2030,226 @@
           "url": "https://www.bfmtv.com/politique/video-jordan-bardella-president-du-rassemblement-national-nous-devons-rendre-la-perpetuite-reelle-dans-le-droit-francais_VN-202606140383.html",
           "date": "2026-06-14T19:39:33+00:00",
           "category": "france"
+        },
+        {
+          "title": "Jordan Bardella: “Il faut un parquet national spécialisé pour les victimes mineures”",
+          "source": "BFM",
+          "url": "https://www.bfmtv.com/politique/video-jordan-bardella-il-faut-un-parquet-national-specialise-pour-les-victimes-mineures_VN-202606140378.html",
+          "date": "2026-06-14T19:22:55+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Jordan Bardella, président du Rassemblement national: “Si nous arrivons à la tête du pays, nous allons remettre la justice à l’endroit”",
+          "source": "BFM",
+          "url": "https://www.bfmtv.com/politique/video-jordan-bardella-president-du-rassemblement-national-si-nous-arrivons-a-la-tete-du-pays-nous-allons-remettre-la-justice-a-l-endroit_VN-202606140377.html",
+          "date": "2026-06-14T19:20:23+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Jordan Bardella, président du Rassemblement national : Emmanuel Macron “a failli à protéger les Français”",
+          "source": "BFM",
+          "url": "https://www.bfmtv.com/politique/video-jordan-bardella-president-du-rassemblement-national-emmanuel-macron-a-failli-a-proteger-les-francais_VN-202606140376.html",
+          "date": "2026-06-14T19:17:16+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Jordan Bardella: “C’est un drame [l’affaire Lyhanna] qui ne passe pas”",
+          "source": "Orange Actualités",
+          "url": "https://actu.orange.fr/videos/france/jordan-bardella-c-est-un-drame-l-affaire-lyhanna-qui-ne-passe-pas-CNT000002pXm9y.html",
+          "date": "2026-06-14T19:16:00+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Jordan Bardella: “Cette affaire [Lyhanna] est un tournant dans la vie de notre pays”",
+          "source": "BFM",
+          "url": "https://www.bfmtv.com/politique/video-jordan-bardella-cette-affaire-lyhanna-est-un-tournant-dans-la-vie-de-notre-pays_VN-202606140374.html",
+          "date": "2026-06-14T19:13:30+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Jordan Bardella: “Chaque jour de guerre supplémentaire est un jour douloureux pour l'économie française”",
+          "source": "BFM",
+          "url": "https://www.bfmtv.com/politique/video-jordan-bardella-chaque-jour-de-guerre-supplementaire-est-un-jour-douloureux-pour-l-economie-francaise_VN-202606140373.html",
+          "date": "2026-06-14T19:04:17+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Marine Le Pen appelle à soutenir Israël face au Hezbollah",
+          "source": "IsraJ",
+          "url": "https://israj.media-j.com/article/62354/marine-le-pen-appelle-a-soutenir-israel-face-au-hezbollah",
+          "date": "2026-06-14T18:07:24+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Jordan Bardella, Marine Le Pen: \"Ce qui me fait peur, c'est le défaitisme de certains\", explique Xavier Bertrand (LR)",
+          "source": "BFM",
+          "url": "https://www.bfmtv.com/politique/les-republicains/video-jordan-bardella-marine-le-pen-ce-qui-me-fait-peur-c-est-le-defaitisme-de-certains-explique-xavier-bertrand-lr_VN-202606140337.html",
+          "date": "2026-06-14T16:40:36+00:00",
+          "category": "france"
+        },
+        {
+          "title": "White House UFC event on South Lawn marks President Donald Trump’s 80th birthday",
+          "source": "Goodreturns",
+          "url": "https://www.goodreturns.in/news/white-house-ufc-fight-night-south-lawn-trump-80th-birthday-event-011-1515417.html",
+          "date": "2026-06-14T16:21:01+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Marine Le Pen réaffirme son soutien à Israël face au Hezbollah et appelle à une solution globale au Liban",
+          "source": "Anadolu Ajansı",
+          "url": "https://www.aa.com.tr/fr/france/marine-le-pen-r%C3%A9affirme-son-soutien-%C3%A0-isra%C3%ABl-face-au-hezbollah-et-appelle-%C3%A0-une-solution-globale-au-liban/3966757",
+          "date": "2026-06-14T15:58:56+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Retraites : Marine Le Pen se dit favorable à une part de capitalisation «volontaire»",
+          "source": "lejdd.fr",
+          "url": "https://www.lejdd.fr/politique/retraites-marine-le-pen-se-dit-favorable-a-une-part-de-capitalisation-volontaire-176451",
+          "date": "2026-06-14T15:10:28+00:00",
+          "category": "france"
+        },
+        {
+          "title": "\"Les électeurs eux-mêmes ont déjà fait leur choix d'une certaine façon\" : entre Marine Le Pen et Jordan Bardella, la fin de la lune de miel",
+          "source": "TF1 Info",
+          "url": "https://www.tf1info.fr/politique/video-rassemblement-national-les-electeurs-eux-memes-ont-deja-fait-leur-choix-d-une-certaine-facon-entre-marine-le-pen-et-jordan-bardella-la-fin-de-la-lune-de-miel-2447303.html",
+          "date": "2026-06-14T14:35:28+00:00",
+          "category": "france"
+        },
+        {
+          "title": "« Il y a un Trump du lundi, du mardi et du mercredi » : Jordan Bardella prend ses distances avec le président américain",
+          "source": "parismatch.com",
+          "url": "https://www.parismatch.com/Actu/il-y-a-un-trump-du-lundi-du-mardi-et-du-mercredi-jordan-bardella-prend-ses-distances-avec-le-president-americain-270803",
+          "date": "2026-06-14T13:57:36+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Jordan Bardella et Marine Le Pen réclament la démission de Gérald Darmanin",
+          "source": "ENTREVUE.FR",
+          "url": "https://entrevue.fr/police-justice/jordan-bardella-et-marine-le-pen-reclament-la-demission-de-gerald-darmanin/",
+          "date": "2026-06-14T13:41:00+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Jordan Bardella and Marine Le Pen call for Gérald Darmanin's resignation – Interview",
+          "source": "ENTREVUE.FR",
+          "url": "https://entrevue.fr/en/police-justice/jordan-bardella-et-marine-le-pen-reclament-la-demission-de-gerald-darmanin/",
+          "date": "2026-06-14T13:41:00+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Retraites : Marine Le Pen pour une part de capitalisation «volontaire»",
+          "source": "Europe 1",
+          "url": "https://www.europe1.fr/economie/retraites-marine-le-pen-pour-une-part-de-capitalisation-volontaire-953651?amp",
+          "date": "2026-06-14T13:11:24+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Lyhanna: Le Pen pointe la \"responsabilité essentielle\" du \"politique\", juge que Darmanin \"aurait dû démissionn",
+          "source": "Boursorama",
+          "url": "https://www.boursorama.com/actualite-economique/actualites-amp/lyhanna-le-pen-pointe-la-responsabilite-essentielle-du-politique-juge-que-darmanin-aurait-du-demissionner-9739eb32f407f30b8f965922d2bd05eb",
+          "date": "2026-06-14T12:57:46+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Nigel Farage claims ‘anti-whiteness is institutionalised’ in the UK",
+          "source": "The Times",
+          "url": "https://www.thetimes.com/uk/politics/article/nigel-farage-britain-anti-white-7pmx909pw",
+          "date": "2026-06-14T12:55:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Mort de Lyhanna: Marine Le Pen met en cause la «responsabilité» du politique et cible Gérald Darmanin",
+          "source": "Le Figaro",
+          "url": "https://www.lefigaro.fr/politique/mort-de-lyhanna-marine-le-pen-met-en-cause-la-responsabilite-du-politique-et-cible-gerald-darmanin-20260614",
+          "date": "2026-06-14T12:49:22+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Retraites : Marine Le Pen favorable à une part de capitalisation «volontaire»",
+          "source": "Le Figaro",
+          "url": "https://www.lefigaro.fr/social/retraites-marine-le-pen-favorable-a-une-part-de-capitalisation-volontaire-20260614",
+          "date": "2026-06-14T12:36:20+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Sur l’affaire Darmanin, Marine Le Pen rejoint finalement Jordan Bardella",
+          "source": "lesinguliersete.fr",
+          "url": "https://lesinguliersete.fr/sur-laffaire-darmanin-marine-le-pen-rejoint-finalement-jordan-bardella/",
+          "date": "2026-06-14T12:35:04+00:00",
+          "category": "france"
+        },
+        {
+          "title": "\"Gérald Darmanin aurait dû présenter sa démission\" : Marine Le Pen change d'avis et se range du côté de Jordan Bardella",
+          "source": "Orange Actualités",
+          "url": "https://actu.orange.fr/politique/gerald-darmanin-aurait-du-presenter-sa-demission-marine-le-pen-change-d-avis-et-se-range-du-cote-de-jordan-bardella-magic-CNT000002pXikN.html",
+          "date": "2026-06-14T12:16:00+00:00",
+          "category": "france"
+        },
+        {
+          "title": "\"Je vois qu'il y a de plus en plus de sujets sur lesquels ils ne sont pas d'accord\", estime Manuel Bompard à propos de Marine Le Pen et Jordan Bardella",
+          "source": "Orange Actualités",
+          "url": "https://actu.orange.fr/videos/politique/je-vois-qu-il-y-a-de-plus-en-plus-de-sujets-sur-lesquels-ils-ne-sont-pas-d-accord-estime-manuel-bompard-a-propos-de-marine-le-pen-et-jordan-bardella-CNT000002pXiRH.html",
+          "date": "2026-06-14T11:35:14+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Farage vows to ban foreign nationals from social housing as byelection looms",
+          "source": "The Guardian",
+          "url": "https://www.theguardian.com/politics/2026/jun/14/nigel-farage-vows-ban-social-housing-foreign-nationals-makerfield-byelection",
+          "date": "2026-06-14T10:58:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "French MEP Glucksmann tests presidential waters with sovereignty pitch",
+          "source": "Euractiv",
+          "url": "https://www.euractiv.com/news/french-mep-glucksmann-tests-presidential-waters-with-sovereignty-pitch/",
+          "date": "2026-06-14T10:24:27+00:00",
+          "category": "france"
+        },
+        {
+          "title": "‘We told you so’: French far right responds to European fighter jet failure",
+          "source": "politico.eu",
+          "url": "https://www.politico.eu/article/european-fighter-jet-failure-vindicates-french-far-right-national-rally-jordan-bardella/",
+          "date": "2026-06-14T10:04:57+00:00",
+          "category": "france"
+        },
+        {
+          "title": "France’s far-right front-runner rejects Trump’s backing",
+          "source": "politico.eu",
+          "url": "https://www.politico.eu/article/frances-far-right-frontrunner-jordan-bardella-rejects-us-donald-trumps-backing/",
+          "date": "2026-06-14T10:01:21+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Présidentielle: Mélenchon et Glucksmann au coude-à-coude, derrière le RN et Édouard Philippe, selon un sondage",
+          "source": "Boursorama",
+          "url": "https://www.boursorama.com/actualite-economique/actualites-amp/presidentielle-melenchon-et-glucksmann-au-coude-a-coude-derriere-le-rn-et-edouard-philippe-selon-un-sondage-0b0dd01fd571e04fc1bed00781312439",
+          "date": "2026-06-14T10:00:09+00:00",
+          "category": "france"
+        },
+        {
+          "title": "US’s Anthropic order exposes EU’s AI dependency",
+          "source": "politico.eu",
+          "url": "https://www.politico.eu/article/us-anthropic-order-exposes-eu-ai-dependency/",
+          "date": "2026-06-14T08:47:00+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Entre Jordan Bardella et Marine Le Pen, les premières lignes de fracture apparaissent",
+          "source": "La Libre.be",
+          "url": "https://www.lalibre.be/international/2026/06/14/entre-jordan-bardella-et-marine-le-pen-les-premieres-lignes-de-fracture-apparaissent-DT7JLP2WMBGSVH57SZ2TKA3MUY/",
+          "date": "2026-06-14T06:16:00+00:00",
+          "category": "france"
         }
       ],
       "first_seen": "2026-06-15T05:36:25+00:00",
-      "last_seen": "2026-06-15T05:36:25+00:00"
+      "last_seen": "2026-06-15T17:31:30+00:00"
     },
     {
       "id": "pp-vox-coalition-deals-reshape-spanish-regional-governments",
       "title": "PP-Vox coalition deals reshape Spanish regional governments",
-      "blurb": "Spain's conservative PP and far-right Vox form coalition governments in multiple regions, including Castilla y León and Andalusia, sparking controversy over policies like 'national priority' housing and immigration reforms.",
-      "affect": "These coalition deals generate intense affective investment due to their polarized contention, moral charge, and implications for Spain's political landscape.",
+      "blurb": "Spain's conservative PP and far-right Vox have formed coalition governments in multiple regions, including Castilla y León and Andalusia. The alliances have sparked controversy over policies like 'national priority' housing and immigration restrictions.",
+      "affect": "This commands disproportionate attention due to its polarized contention, moral charge, and the perceived shift in Spain's political landscape.",
       "intensity": 3,
       "affect_signals": [
         "polarized contention",
@@ -396,10 +2258,185 @@
         "outrage-coded language"
       ],
       "categories": [
-        "🇪🇸 Vox"
+        "Vox"
       ],
       "article_count": 50,
       "refs": [
+        {
+          "title": "El segundo Gobierno de PP y Vox echa a andar en Castilla y León: «Trabajaremos como un equipo compacto»",
+          "source": "El Norte de Castilla",
+          "url": "https://www.elnortedecastilla.es/castillayleon/segundo-gobierno-pp-vox-echa-andar-castilla-20260615145658-nt.html",
+          "date": "2026-06-15T12:56:58+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Vox acusa a Ayuso de \"disfrazarse de Vox\" con la polémica sobre el abono transporte",
+          "source": "ABC",
+          "url": "https://www.abc.es/espana/vox-acusa-ayuso-disfrazarse-vox-polemica-sobre-20260615143804-nt.html",
+          "date": "2026-06-15T12:38:09+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Vox sigue sin aclarar si entrará en el Gobierno de Andalucía mientras estudia alternativas",
+          "source": "El Independiente",
+          "url": "https://www.elindependiente.com/espana/2026/06/15/vox-sigue-sin-aclarar-si-entraran-en-el-gobierno-de-andalucia-mientras-estudia-alternativas/",
+          "date": "2026-06-15T12:35:29+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Vox eleva la presión en Andalucía y avisa a Moreno de que la \"prioridad nacional\" será una condición clave: \"Él ya sabe lo que nosotros queremos\"",
+          "source": "El Mundo",
+          "url": "https://www.elmundo.es/espana/2026/06/15/6a2febdbe4d4d8c7508b45a4.html",
+          "date": "2026-06-15T12:17:52+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Vox pide \"todo el peso de la ley\" a quienes hayan cometido ilegalidades",
+          "source": "ABC",
+          "url": "https://www.abc.es/espana/vox-pide-peso-ley-cometido-ilegalidades-20260615141328-nt.html",
+          "date": "2026-06-15T12:13:33+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Vox avisa a Juanma Moreno de que la prioridad nacional es «una obligación»",
+          "source": "ABC",
+          "url": "https://www.abc.es/espana/andalucia/directiva-nacional-vox-aclara-pediran-entrar-gobierno-20260615105831-nts.html",
+          "date": "2026-06-15T12:07:37+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Vox apunta a Sánchez como la «X» de una operación para «dinamitar la limpieza democrática»",
+          "source": "ABC",
+          "url": "https://www.abc.es/espana/vox-apunta-sanchez-operacion-dinamitar-limpieza-democratica-20260615140608-nt.html",
+          "date": "2026-06-15T12:06:09+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Besteiro acusa a Rueda de blanquear los pactos del PP con Vox y situarse en el lado equivocado de la historia",
+          "source": "Faro de Vigo",
+          "url": "https://www.farodevigo.es/galicia/2026/06/15/besteiro-acusa-rueda-blanquear-pactos-131417701.html",
+          "date": "2026-06-15T11:36:53+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "El PP reivindica la 'prioridad andaluza' en unas negociaciones «discretas» con Vox",
+          "source": "El Debate",
+          "url": "https://www.eldebate.com/espana/andalucia/20260615/pp-reivindica-prioridad-andaluza-negociaciones-discretas-vox_428726.html",
+          "date": "2026-06-15T10:44:11+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "El PP-A confirma que mantendrá esta semana un diálogo \"serio, riguroso y solvente\" con Vox",
+          "source": "Andalucía Información",
+          "url": "https://www.andaluciainformacion.es/articulo/andalucia/pp-garantiza-dialogo-semana-vox-serio-riguroso-solvente/202606151230143402465.html",
+          "date": "2026-06-15T10:30:14+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Vox vincula su apoyo a la investidura de Juanma Moreno a una «hoja de ruta del cambio»",
+          "source": "Diario Sur",
+          "url": "https://www.diariosur.es/andalucia/vox-vincula-apoyo-investidura-juanma-moreno-hoja-ruta-cambio-andalucia-20260615113601-nt_amp.html",
+          "date": "2026-06-15T09:46:39+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Vox insiste en la discreción y la prudencia durante las negociaciones con el PP-A y no confirma si reclamará un puesto en la Junta",
+          "source": "Andalucía Información",
+          "url": "https://www.andaluciainformacion.es/articulo/andalucia/vox-apela-discrecion-prudencia-negociaciones-pp-aclara-pedira-estar-junta/202606151117083402286.html",
+          "date": "2026-06-15T09:17:08+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Desde este 15 de junio es obligatorio estar empadronado en Madrid para tener el abono de transporte: miles de usuarios quedan excluidos",
+          "source": "Infobae",
+          "url": "https://www.infobae.com/espana/2026/06/15/desde-este-15-de-junio-es-obligatorio-estar-empadronado-en-madrid-para-tener-el-abono-de-transporte-miles-de-usuarios-quedan-excluidos/",
+          "date": "2026-06-15T05:55:48+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "VOX pide que la Asamblea de Madrid condene los sucesivos escándalos de corrupción del Gobierno de Sánchez y...",
+          "source": "gaceta.es",
+          "url": "https://gaceta.es/espana/vox-pide-que-la-asamblea-de-madrid-condene-los-sucesivos-escandalos-de-corrupcion-del-gobierno-de-sanchez-y-reclame-elecciones-generales-20260615-0723/",
+          "date": "2026-06-15T05:54:12+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Harrogate Reform UK councillor defends low attendance record",
+          "source": "The Stray Ferret",
+          "url": "https://thestrayferret.co.uk/news/latest/harrogate-reform-uk-councillor-defends-low-attendance-record",
+          "date": "2026-06-15T05:14:08+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "La promessa di Schlein: \"Mai un governo di larghe intese\". Poi punzecchia Meloni: \"Ha giurato sulla Costituzione antifascista\"",
+          "source": "today.it",
+          "url": "https://www.today.it/politica/schlein-mai-governo-larghe-intese-meloni-costituzione-antifascista.html",
+          "date": "2026-06-15T04:39:32+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "\"La Lega ora torni a fare la Lega. Vannacci centralismo da combattere\"",
+          "source": "il Giornale",
+          "url": "https://www.ilgiornale.it/news/interni/lega-ora-torni-fare-lega-vannacci-centralismo-combattere-2678928.html",
+          "date": "2026-06-15T04:07:19+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "El PSOE no duda de la candidatura de Tita García en 2027: \"Talavera está sucia con PP y Vox\"",
+          "source": "Toledodiario",
+          "url": "https://toledodiario.es/el-psoe-no-duda-de-la-candidatura-de-tita-garcia-en-2027-talavera-esta-sucia-con-pp-y-vox/",
+          "date": "2026-06-15T04:00:34+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "El Gobierno PP-Vox echa a andar",
+          "source": "Diario de León",
+          "url": "https://www.diariodeleon.es/castilla-y-leon/260615/2088293/gobierno-pp-vox-echa-andar.html",
+          "date": "2026-06-15T04:00:00+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Eva Gutiérrez nueva alcaldesa de Puebla de Don Rodrigo",
+          "source": "CLMPress",
+          "url": "https://clmpress.com/n/2026/06/eva-gutierrez-nueva-alcaldesa-de-puebla-de-don-rodrigo/",
+          "date": "2026-06-15T03:08:44+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "El último año de la legislatura marcará de nuevo la relación PP-Vox",
+          "source": "Periódico de Ibiza y Formentera",
+          "url": "https://www.periodicodeibiza.es/opinion/mirador/2026/06/15/2650177/ultimo-ano-legislatura-marcara-nuevo-relacion-vox.html",
+          "date": "2026-06-15T01:58:01+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Noticias Relacionadas: Vox avisa de que sigue sin dar por cumplido el acuerdo de presupuestos de 2025",
+          "source": "Ultima Hora",
+          "url": "https://www.ultimahora.es/noticias/local/2026/06/15/2649841/vox-avisa-sigue-dar-por-cumplido-acuerdo-presupuestos-2025/relacionadas.html",
+          "date": "2026-06-15T01:48:01+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Vox avisa de que sigue sin dar por cumplido el acuerdo de presupuestos de 2025",
+          "source": "Ultima Hora",
+          "url": "https://www.ultimahora.es/noticias/local/2026/06/15/2649841/vox-avisa-sigue-dar-por-cumplido-acuerdo-presupuestos-2025.html",
+          "date": "2026-06-15T01:46:57+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "El PP crece gracias al PI y el PSIB no logra retener a sus votantes",
+          "source": "Ultima Hora",
+          "url": "https://www.ultimahora.es/noticias/local/2026/06/15/2650199/crece-gracias-psib-logra-retener-votantes.html",
+          "date": "2026-06-15T01:46:31+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "PP y Vox aparcan sus diferencias ante el declive de Sánchez",
+          "source": "ABC",
+          "url": "https://www.abc.es/espana/pp-vox-aparcan-diferencias-ante-declive-sanchez-20260612024731-nt.html",
+          "date": "2026-06-15T00:47:31+00:00",
+          "category": "spain"
+        },
         {
           "title": "Encuesta del PP: Almeida ampliaría su mayoría absoluta y la izquierda retrocede",
           "source": "La Razón",
@@ -408,17 +2445,31 @@
           "category": "spain"
         },
         {
-          "title": "VOX apuesta por declarar Bien de Interés Cultural (BIC) el monumento a Carrero Blanco de Santoña, para mantenerlo",
-          "source": "cantabria directa",
-          "url": "https://www.cantabriadirecta.es/144364-2-noticias-cantabria-santander-santona-carrero-blanco/",
-          "date": "2026-06-14T23:27:33+00:00",
+          "title": "Las encuestas sonríen a Almeida a un año de las elecciones: 30 concejales y una mayoría absoluta más holgada",
+          "source": "El Mundo",
+          "url": "https://amp.elmundo.es/madrid/2026/06/15/6a2f0f7f21efa02b288b457e.html",
+          "date": "2026-06-14T22:21:00+00:00",
           "category": "spain"
         },
         {
-          "title": "VOX acompaña a Embid en la celebración de la Octava del Corpus",
-          "source": "Nueva Alcarria.com",
-          "url": "https://nuevaalcarria.com/articulos/vox-acompana-a-embid-en-la-celebracion-de-la-octava-del-corpus",
-          "date": "2026-06-14T17:48:00+00:00",
+          "title": "Cómo combatir en los tribunales la \"prioridad nacional\" en el acceso a la vivienda y las ayudas públicas",
+          "source": "Diario Público",
+          "url": "https://www.publico.es/politica/tribunales/combatir-tribunales-prioridad-nacional-acceso-vivienda-ayudas-publicas.html",
+          "date": "2026-06-14T18:55:00+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "La Policía acusa de dos delitos a cinco antifascistas por los incidentes de Granada en los que Abascal animó a una turba a disolver su protesta",
+          "source": "Diario Público",
+          "url": "https://www.publico.es/politica/partidos/policia-acusa-dos-delitos-cinco-antifascistas-incidentes-granada-abascal-animo-turba-disolver-protesta.html",
+          "date": "2026-06-14T18:55:00+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Ávila gana peso en el equipo de Mañueco",
+          "source": "La Razón",
+          "url": "https://www.larazon.es/castilla-y-leon/avila-gana-peso-equipo-manueco_202606146a2ef3360d35a17610ba2622.html",
+          "date": "2026-06-14T18:30:14+00:00",
           "category": "spain"
         },
         {
@@ -429,18 +2480,18 @@
           "category": "spain"
         },
         {
-          "title": "Vox cede la alcaldía de un pueblo de Ciudad Real en favor del PP: Eva Gutiérrez, nueva regidora municipal",
-          "source": "El Español",
-          "url": "https://www.elespanol.com/eldigitalcastillalamancha/region/ciudad-real/20260614/vox-cede-alcaldia-pueblo-ciudad-real-favor-pp-eva-gutierrez-nueva-regidora-municipal/1003744285660_0.html",
-          "date": "2026-06-14T16:53:00+00:00",
+          "title": "Eva Gutiérrez sustituye a María Luisa López en la Alcaldía de Puebla de Dor Rodrigo tras el acuerdo de Gobierno PP-Vox",
+          "source": "Europa Press",
+          "url": "https://www.europapress.es/castilla-lamancha/noticia-eva-gutierrez-sustituye-maria-luisa-lopez-alcaldia-puebla-dor-rodrigo-acuerdo-gobierno-pp-vox-20260614172941.html",
+          "date": "2026-06-14T15:29:41+00:00",
           "category": "spain"
         },
         {
-          "title": "El portavoz de Vox en Murcia respalda al concejal denunciado por llevar un espray ilegal: \"Supo pararle los pies a un delincuente, un gentuzo\"",
-          "source": "La Opinión de Murcia",
-          "url": "https://www.laopiniondemurcia.es/sucesos/2026/06/14/portavoz-vox-murcia-respalda-concejal-denunciado-llevar-espray-ilegal-131390037.html",
-          "date": "2026-06-14T14:27:33+00:00",
-          "category": "spain"
+          "title": "Rewolucja w podatkach i prądzie. Czarnek zapowiada pierwsze decyzje nowego rządu",
+          "source": "Zero.pl",
+          "url": "https://zero.pl/news/pis-odslania-plan-czarnka-oto-pierwsze-obietnice-na-wybory-2027-r",
+          "date": "2026-06-14T14:21:07+00:00",
+          "category": "poland"
         },
         {
           "title": "Mañueco reconfigura el Gobierno de Castilla y León: el PP asume las carteras críticas y relega a Vox",
@@ -450,29 +2501,85 @@
           "category": "spain"
         },
         {
-          "title": "Rueda reconoce el \"radicalismo\" de Vox pero justifica los pactos: \"Feijóo tiene derecho a conformar mayorías\"",
-          "source": "Cadena SER",
-          "url": "https://cadenaser.com/galicia/2026/06/14/rueda-reconoce-el-radicalismo-de-vox-pero-justifica-los-pactos-feijoo-tiene-derecho-a-conformar-mayorias-radio-galicia/",
-          "date": "2026-06-14T12:37:34+00:00",
+          "title": "Trump endorses Collins in Georgia Senate runoff. It's his latest 'MAGA' pick in Republican primaries - ABC News",
+          "source": "Breaking News, Latest News and Videos",
+          "url": "https://abcnews.com/US/wireStory/trump-endorses-collins-georgia-senate-runoff-latest-maga-133860323",
+          "date": "2026-06-14T12:56:15+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "El PP ve posible la mayoría absoluta y la izquierda anuncia que seguirá trabajando para revertir la encuesta",
+          "source": "Ultima Hora",
+          "url": "https://www.ultimahora.es/noticias/local/2026/06/14/2650123/posible-mayoria-absoluta-izquierda-anuncia-seguira-trabajando-para-revertir-encuesta.html",
+          "date": "2026-06-14T11:57:00+00:00",
           "category": "spain"
         },
         {
-          "title": "Mercedes González comparece el martes en el Senado tras desvelar la UCO citas con Leire Díez y pedir su cese PP y Vox",
-          "source": "Infobae",
-          "url": "https://www.infobae.com/espana/agencias/2026/06/14/mercedes-gonzalez-comparece-el-martes-en-el-senado-tras-desvelar-la-uco-citas-con-leire-diez-y-pedir-su-cese-pp-y-vox/",
-          "date": "2026-06-14T10:57:45+00:00",
+          "title": "Tajani: 'Salvini al Viminale? Il rimpasto non è all'ordine del giorno'",
+          "source": "ANSA",
+          "url": "https://www.ansa.it/sito/notizie/politica/2026/06/14/tajani-salvini-al-viminale-il-rimpasto-non-e-allordine-del-giorno_a4468c1a-1760-4760-8d88-e1d78da1f62f.html",
+          "date": "2026-06-14T11:54:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Vox fuerza una nueva votación en el Congreso sobre la 'prioridad nacional' en plena negociación con el PP en Andalucía",
+          "source": "LNE",
+          "url": "https://www.lne.es/espana/2026/06/14/vox-congreso-prioridad-nacional-pp-andalucia-131385260.html",
+          "date": "2026-06-14T10:27:42+00:00",
           "category": "spain"
         },
         {
-          "title": "Vox reafirma su apoyo al sector cinegético de Castilla-La Mancha",
-          "source": "MiCiudadReal.es",
-          "url": "https://www.miciudadreal.es/2026/06/14/vox-reafirma-su-apoyo-al-sector-cinegetico-de-castilla-la-mancha/",
-          "date": "2026-06-14T10:08:57+00:00",
+          "title": "Castilla y León: Pollán vicepresidente y consejero de Inmigración",
+          "source": "moncloa.com",
+          "url": "https://www.moncloa.com/2026/06/14/gobierno-manueco-vox-pollan-vicepresidente-3384716/",
+          "date": "2026-06-14T09:07:00+00:00",
           "category": "spain"
+        },
+        {
+          "title": "Así es el nuevo gobierno de la Junta de Castilla y León: áreas, caras nuevas y cambios",
+          "source": "ABC",
+          "url": "https://www.abc.es/espana/castilla-leon/nuevo-gobierno-junta-castilla-leon-areas-caras-20260614104053-nt.html",
+          "date": "2026-06-14T08:45:31+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Tak mieszkają Iwona i Mateusz Morawieccy. Oto ich dom w Warszawie",
+          "source": "Express Bydgoski",
+          "url": "https://expressbydgoski.pl/tak-mieszkaja-iwona-i-mateusz-morawieccy-oto-ich-dom-w-warszawie/ar/c1p2-29086547",
+          "date": "2026-06-14T08:17:21+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Vox pide que la Asamblea \"condene los sucesivos y graves escándalos de corrupción\" de Sánchez y que reclame elecciones",
+          "source": "Ultima Hora",
+          "url": "https://www.ultimahora.es/noticias/comunidades/2026/06/14/2650001/vox-pide-asamblea-condene-sucesivos-graves-escandalos-corrupcion-sanchez-reclame-elecciones.html",
+          "date": "2026-06-14T08:15:33+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "UPL critica el nuevo Gobierno de la Junta por reducir el peso de la Región Leonesa",
+          "source": "Ahora León",
+          "url": "https://ahoraleon.com/upl-critica-el-nuevo-gobierno-de-la-junta-por-reducir-el-peso-de-la-region-leonesa/",
+          "date": "2026-06-14T08:15:02+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Veteranos frente a novatos en el Gobierno con el que Mañueco afronta su nuevo pacto con Vox",
+          "source": "El Norte de Castilla",
+          "url": "https://www.elnortedecastilla.es/castillayleon/veteranos-frente-novatos-gobierno-manueco-afronta-pp-vox-20260614203845-nt.html",
+          "date": "2026-06-14T06:25:35+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Marco Rubio defends US actions in Strait of Hormuz after Indian protests over killed mariners",
+          "source": "Crypto Briefing",
+          "url": "https://cryptobriefing.com/rubio-defends-hormuz-strikes-indian-protests/",
+          "date": "2026-06-14T06:24:25+00:00",
+          "category": "usa"
         }
       ],
       "first_seen": "2026-06-10T04:57:18+00:00",
-      "last_seen": "2026-06-15T05:36:25+00:00"
+      "last_seen": "2026-06-15T17:31:30+00:00"
     }
   ]
 }
