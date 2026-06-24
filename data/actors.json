@@ -1,1545 +1,845 @@
 {
-  "updated_at": "2026-06-23T15:41:19+00:00",
+  "updated_at": "2026-06-24T04:53:09+00:00",
   "lookback_hours": 48,
   "model": "Mistral Large",
   "status": "ok",
   "actors": [
     {
+      "id": "donald-trump",
+      "name": "Donald Trump",
+      "role": "President of the United States",
+      "blurb": "Donald Trump remains a dominant figure in the news cycle due to his ongoing influence in U.S. politics, particularly his administration's policies and international dealings. Recent coverage highlights his involvement in high-stakes negotiations with Iran, his economic policies, and his role in upcoming international events like the FIFA World Cup final. Trump's statements and decisions continue to generate significant controversy and media attention, both domestically and internationally.",
+      "prominence": 5,
+      "signals": [
+        "Iran negotiations",
+        "economic policies",
+        "international posturing",
+        "controversial statements",
+        "upcoming World Cup final"
+      ],
+      "categories": [
+        "U.S. Politics",
+        "International Relations",
+        "Economic Policy"
+      ],
+      "article_count": 150,
+      "refs": [
+        {
+          "title": "US defence groups to meet Donald Trump as missile production struggles",
+          "source": "Financial Times",
+          "url": "https://www.ft.com/content/8b573145-da0a-4229-b163-4eb77f024494",
+          "date": "2026-06-24T04:00:08+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump claims US recouped Venezuela war costs 28 times over",
+          "source": "Al Jazeera",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/6/24/trump-claims-us-recouped-venezuela-war-costs-28-times-over",
+          "date": "2026-06-24T03:57:32+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "President Trump calls Iran agreement historic peace deal",
+          "source": "news8000.com",
+          "url": "https://www.news8000.com/news/president-trump-calls-iran-agreement-historic-peace-deal/video_c515a966-5318-50e3-8a8a-141be9695268.html",
+          "date": "2026-06-24T03:55:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Lawrence: Republican Senator Sheehy just made Donald Trump Iran’s ‘dope’",
+          "source": "MS NOW",
+          "url": "https://www.ms.now/the-last-word/watch/lawrence-republican-senator-sheehy-just-made-donald-trump-iran-s-dope-2504569411779",
+          "date": "2026-06-24T03:39:28+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "President Donald Trump to Present Trophy to World Cup Final Winners, FIFA President Says",
+          "source": "People.com",
+          "url": "https://people.com/president-donald-trump-to-present-trophy-to-world-cup-final-winners-12005479",
+          "date": "2026-06-24T03:35:10+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "2 women who shaped JD Vance’s faith",
+          "source": "Deseret News",
+          "url": "https://www.deseret.com/faith/2026/06/23/memoir-jd-vance-faith-politics/",
+          "date": "2026-06-24T03:00:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "US defence secretary Pete Hegseth forces out top army officer in Europe",
+          "source": "Financial Times",
+          "url": "https://www.ft.com/content/b2936511-6549-4a93-9c9f-b6dc3cd165a0",
+          "date": "2026-06-24T02:29:49+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump esulta (troppo?) per Hormuz, Meloni «ricuce» con gli Usa, la morsa del caldo",
+          "source": "Corriere della Sera",
+          "url": "https://www.corriere.it/il-punto/prima-ora/26_giugno_24/trump-esulta-troppo-per-hormuz-meloni-ricuce-con-gli-usa-la-morsa-del-caldo.shtml",
+          "date": "2026-06-24T01:15:04+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Trump Administration Installs Fences Around Reflecting Pool After Series of Mishaps Following His Renovation",
+          "source": "People.com",
+          "url": "https://people.com/trump-administration-blocks-off-reflecting-pool-with-fences-after-mishaps-following-his-renovation-12005435",
+          "date": "2026-06-24T01:07:30+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Wide-ranging speech | President Trump visits Pa. to back tariffs and other economic policies",
+          "source": "WGAL",
+          "url": "https://www.wgal.com/article/president-trump-visits-pennsylvania-talk-economy-midterms-loom/71685681",
+          "date": "2026-06-24T00:07:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "President Trump touches down in Berks County for first Pa. visit of the year",
+          "source": "WFMZ.com",
+          "url": "https://www.wfmz.com/news/area/berks/reading-area/president-trump-touches-down-in-berks-county-for-first-pa-visit-of-the-year/article_a785966f-093b-4c09-9008-c9200f7dcd74.html",
+          "date": "2026-06-23T23:32:16+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Congressman Krishnamoorthi Questions Witnesses on Dangerous Failures of the Trump Administration's \"MAHA\" Agenda",
+          "source": "House.gov",
+          "url": "https://krishnamoorthi.house.gov/media/press-releases/congressman-krishnamoorthi-questions-witnesses-dangerous-failures-trump",
+          "date": "2026-06-23T23:20:52+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump urges Lehigh Valley residents to vote Republican during visit to Mack Trucks in Pennsylvania",
+          "source": "CBS News",
+          "url": "https://www.cbsnews.com/philadelphia/news/donald-trump-pennsylvania-lehigh-valley/",
+          "date": "2026-06-23T22:53:49+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "President Trump touts economy during Pennsylvania visit",
+          "source": "Fox News",
+          "url": "https://www.foxnews.com/video/6399204799112",
+          "date": "2026-06-23T22:52:40+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "President Trump reveals insider details about pressure he put on US Attorney to save California's election",
+          "source": "New York Post",
+          "url": "https://nypost.com/2026/06/23/us-news/president-trump-reveals-insider-details-about-pressure-he-put-on-us-attorney-to-save-californias-election/",
+          "date": "2026-06-23T22:33:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "At Mack Trucks, Trump touts economy and Iran deal, making case for GOP in 2026 midterms",
+          "source": "The Morning Call",
+          "url": "https://www.mcall.com/2026/06/23/donald-trump-mack-trucks-lehigh-valley/",
+          "date": "2026-06-23T22:25:15+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "US Senate votes to pass Iran war powers resolution in blow to Trump",
+          "source": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/6/23/us-senate-votes-to-halt-iran-war-bucking-trump",
+          "date": "2026-06-23T22:19:17+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump doubles down on Meloni picture claim after Italy PM said it was 'completely made up'",
+          "source": "AOL.com",
+          "url": "https://www.aol.com/entertainment/breaking-trump-doubles-down-meloni-120032169.html",
+          "date": "2026-06-23T21:57:39+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Conflict is escalating between President Trump and Senate Republicans",
+          "source": "NPR",
+          "url": "https://www.npr.org/2026/06/23/nx-s1-5862113/conflict-is-escalating-between-president-trump-and-senate-republicans",
+          "date": "2026-06-23T21:43:25+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Is Donald Trump on a Wonder Weight Loss Drug? Here’s What You Need to Know.",
+          "source": "Slate Magazine",
+          "url": "https://slate.com/news-and-politics/2026/06/trump-weight-loss-drug-questions.html",
+          "date": "2026-06-23T21:25:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "President Trump heads to battleground Pennsylvania but keep focuses on himself ahead of midterm elections",
+          "source": "Chicago Tribune",
+          "url": "https://www.chicagotribune.com/2026/06/23/trump-battleground-pennsylvania-midterms/",
+          "date": "2026-06-23T21:18:35+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "California to Sue Trump Administration for Canceled Offshore Wind Leases",
+          "source": "The Maritime Executive",
+          "url": "https://maritime-executive.com/article/california-to-sue-trump-administration-for-canceled-offshore-wind-leases",
+          "date": "2026-06-23T20:53:14+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Marco Rubio says getting allies on board with Iran peace plan is \"a work in progress\"",
+          "source": "CBS News",
+          "url": "https://www.cbsnews.com/video/marco-rubio-says-getting-allies-board-iran-peace-plan-work-progress/",
+          "date": "2026-06-23T20:33:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "President Trump scores starring role at World Cup final trophy presentation",
+          "source": "Yahoo Sports",
+          "url": "https://sports.yahoo.com/articles/president-trump-scores-starring-role-202330594.html",
+          "date": "2026-06-23T20:23:30+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "President Trump Delivers Remarks, Jun. 23, 2026",
+          "source": "The White House (.gov)",
+          "url": "https://www.whitehouse.gov/videos/president-trump-delivers-remarks-jun-23-2026/",
+          "date": "2026-06-23T20:23:15+00:00",
+          "category": "usa"
+        }
+      ],
+      "first_seen": "2026-06-24T04:53:09+00:00",
+      "last_seen": "2026-06-24T04:53:09+00:00"
+    },
+    {
       "id": "javier-milei",
       "name": "Javier Milei",
       "role": "President of Argentina",
-      "blurb": "Milei is driving significant media coverage due to his government's aggressive economic reforms and recent cabinet reshuffles. His administration's policies, including deregulation and austerity measures, have sparked both domestic and international debate. The appointment of a new presidential spokesman and the ongoing judicial scrutiny of his Chief of Staff, Manuel Adorni, are central to the current news cycle.",
+      "blurb": "Javier Milei continues to drive significant news coverage due to his economic policies and political maneuvers in Argentina. Recent articles focus on his government's economic announcements, including GDP growth and real wage increases, as well as internal political struggles and legislative battles. Milei's public appearances and statements, particularly those involving his new spokesperson, also contribute to his prominence in the news cycle.",
       "prominence": 5,
       "signals": [
-        "economic reforms",
-        "cabinet reshuffle",
-        "judicial scrutiny",
-        "international posturing"
+        "economic announcements",
+        "policy implementation",
+        "internal political struggles",
+        "legislative battles",
+        "public appearances"
       ],
       "categories": [
         "Economic Policy",
-        "Government Leadership",
-        "Judicial Proceedings"
+        "Domestic Politics",
+        "Legislative Affairs"
       ],
       "article_count": 100,
       "refs": [
         {
-          "title": "Javier Milei y sus medidas, EN VIVO: el Presidente habla en la Fundación Faro y Adorni se reúne con senadores libertarios en busca de respaldo",
-          "source": "Impacto Castex",
-          "url": "https://impactocastex.com.ar/?p=20992",
-          "date": "2026-06-23T12:28:30+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Yuyito González rompió el silencio y dejó entrever qué detonó su ruptura con Javier Milei",
-          "source": "Urgente24",
-          "url": "https://urgente24.com/ocio/yuyito-gonzalez-rompio-el-silencio-y-dejo-entrever-que-detono-su-ruptura-javier-milei-n627215",
-          "date": "2026-06-23T11:55:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "La Libertad Avanza retiró un proyecto para desregular el mercado inmobiliario",
-          "source": "LU24 Radio Tres Arroyos",
-          "url": "https://www.lu24.com.ar/la-libertad-avanza-retiro-un-proyecto-para-desregular-el-mercado-inmobiliario/",
-          "date": "2026-06-23T11:36:55+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Más ajuste: Javier Milei avanza ahora con el desguace de la Administración de Parques Nacionales",
+          "title": "Javier Milei aseguró que aumentó el salario real y subirán las jubilaciones y el consumo",
           "source": "MinutoUno",
-          "url": "https://www.minutouno.com/politica/mas-ajuste-javier-milei-avanza-ahora-el-desguace-la-administracion-parques-nacionales-n6291705",
-          "date": "2026-06-23T11:30:00+00:00",
+          "url": "https://www.minutouno.com/politica/javier-milei-aseguro-que-aumento-el-salario-real-y-subiran-las-jubilaciones-y-el-consumo-n6292143",
+          "date": "2026-06-24T03:19:00+00:00",
           "category": "argentina"
         },
         {
-          "title": "Javier Milei se mostrará con el nuevo vocero presidencial, Adrián Ravier, en un evento de la Fundación Faro",
+          "title": "En medio de la tensión con Bullrich, Adorni se apoya en Karina Milei y sigue en el Gobierno, pero con poder recortado",
+          "source": "La Nación",
+          "url": "https://www.lanacion.com.ar/politica/en-medio-de-la-pelea-con-bullrich-adorni-se-recuesta-en-karina-milei-y-sigue-en-el-gobierno-pero-con-nid24062026/",
+          "date": "2026-06-24T03:01:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei se mostró por primera vez con Adrián Ravier, su nuevo vocero presidencial: “Su experiencia es fundamental”",
           "source": "Radio Mitre",
-          "url": "https://radiomitre.cienradios.com/politica/javier-milei-se-mostrara-con-el-nuevo-vocero-presidencial-adrian-ravier-en-un-evento-de-la-fundacion-faro/",
-          "date": "2026-06-23T11:27:25+00:00",
+          "url": "https://radiomitre.cienradios.com/politica/javier-milei-se-mostro-por-primera-vez-con-adrian-ravier-su-nuevo-vocero-presidencial-su-experiencia-es-fundamental/",
+          "date": "2026-06-24T02:28:44+00:00",
           "category": "argentina"
         },
         {
-          "title": "Milei presentará a Adrián Ravier en un acto de la Fundación Faro",
-          "source": "El Eco",
-          "url": "https://www.eleco.com.ar/politica/milei-presentara-a-adrian-ravier-en-un-acto-de-la-fundacion-faro",
-          "date": "2026-06-23T10:50:18+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "El gobierno de Javier Milei flexibiliza la importación de maquinaria usada para proyectos industriales e incentivar la producción local",
-          "source": "Ambito",
-          "url": "https://www.ambito.com/economia/el-gobierno-javier-milei-flexibiliza-la-importacion-maquinaria-usada-proyectos-industriales-e-incentivar-la-produccion-local-n6291700",
-          "date": "2026-06-23T10:44:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Javier Milei reaparece con su nuevo vocero Adrián Ravier en una actividad antes de viajar a España",
-          "source": "a24.com",
-          "url": "https://www.a24.com/politica/javier-milei-reaparece-su-nuevo-vocero-adrian-ravier-una-actividad-antes-viajar-espana-n1568351",
-          "date": "2026-06-23T10:40:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Gov. Pritzker responds to President Donald Trump's comments about violence in Chicago on Truth Social",
-          "source": "ABC7 Chicago",
-          "url": "https://abc7chicago.com/post/gov-pritzker-responds-president-donald-trumps-comments-violence-chicago-truth-social/19361356/",
-          "date": "2026-06-23T10:28:38+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Watchdog ‘may take different view’ from me over £5 million gift, says Farage",
-          "source": "Stratford Herald",
-          "url": "https://www.stratford-herald.com/national/watchdog-may-take-different-view-from-me-over-5-million-gift-says-farage-168387/",
-          "date": "2026-06-23T09:43:01+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Milei se mostrará hoy con su nuevo vocero durante la presentación de un libro ante referentes del liberalismo internacional",
-          "source": "TN",
-          "url": "https://tn.com.ar/politica/2026/06/23/milei-se-mostrara-hoy-con-su-nuevo-vocero-durante-la-presentacion-de-un-libro-ante-referentes-del-liberalismo-internacional/",
-          "date": "2026-06-23T08:00:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "GMB's Ed Balls has heated exchange with Nigel Farage in awkward interview",
-          "source": "Wales Online",
-          "url": "https://www.walesonline.co.uk/lifestyle/tv/gmbs-ed-balls-heated-exchange-34169501",
-          "date": "2026-06-23T07:39:00+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Los cambios en el Gobierno también influyeron en la interna y Santiago Caputo volvió a ganar terreno",
-          "source": "Infobae",
-          "url": "https://www.infobae.com/politica/2026/06/23/los-cambios-en-el-gobierno-tambien-influyeron-en-la-interna-y-santiago-caputo-volvio-a-ganar-terreno/",
-          "date": "2026-06-23T05:35:58+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Ustica, il centrosinistra a Meloni: \"Fare pressione su Macron per la verità\"",
-          "source": "Il Resto del Carlino",
-          "url": "https://www.ilrestodelcarlino.it/bologna/cronaca/ustica-il-centrosinistra-a-meloni-cfbcd28c",
-          "date": "2026-06-23T04:57:28+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Reconstrucción de Alemania y eliminación del populismo en Argentina",
-          "source": "Los Andes",
-          "url": "https://www.losandes.com.ar/opinion/reconstruccion-alemania-y-eliminacion-del-populismo-argentina-n5995233",
-          "date": "2026-06-23T03:20:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Javier Milei presenta a Adrián Ravier y relanza su estrategia de comunicación antes de una nueva gira",
-          "source": "Ambito",
-          "url": "https://www.ambito.com/politica/javier-milei-presenta-adrian-ravier-y-relanza-su-estrategia-comunicacion-antes-una-nueva-gira-n6291653",
-          "date": "2026-06-23T03:00:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "La esperanza en Javier Milei bajó de 43% a 29 % tras 2 años y medio de gestión",
-          "source": "Urgente24",
-          "url": "https://urgente24.com/actualidad/la-esperanza-javier-milei-43-29-2-anos-y-medio-gestion-n627209",
-          "date": "2026-06-23T01:50:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Adrián Ravier acompañará a Javier Milei en el acto en la Fundación Faro este martes",
-          "source": "El Intransigente",
-          "url": "https://elintransigente.com/2026/06/adrian-ravier-acompanara-a-javier-milei-en-el-acto-en-la-fundacion-faro-este-martes/",
-          "date": "2026-06-23T01:48:32+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Repunta la confianza en el gobierno de Javier Milei, según la Universidad Di Tella",
-          "source": "Los Primeros TV",
-          "url": "https://www.losprimeros.tv/politica/repunta-la-confianza-en-el-gobierno-de-javier-milei--segun-la-universidad-di-tella_a6a39d5e1856ee9feac1d8f6a",
-          "date": "2026-06-23T01:19:55+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Encuesta: el peronismo aventaja a la Libertad Avanza en Tucumán",
-          "source": "LV12",
-          "url": "https://www.lv12.com.ar/encuestas/encuesta-el-peronismo-aventaja-la-libertad-avanza-tucuman-n199709",
-          "date": "2026-06-23T01:17:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "La señal económica que espera Javier Milei y puede cambiar el clima del Gobierno",
+          "title": "Javier Milei se mostró por primera vez con Ravier y Fernández en la cumbre de la Fundación Faro",
           "source": "MDZ Online",
-          "url": "https://www.mdzol.com/dinero/la-senal-economica-que-espera-javier-milei-y-puede-cambiar-el-clima-del-gobierno-n1548755",
-          "date": "2026-06-22T23:57:00+00:00",
+          "url": "https://www.mdzol.com/politica/javier-milei-se-mostro-primera-vez-ravier-y-fernandez-la-cumbre-la-fundacion-faro-n1550091/amp",
+          "date": "2026-06-24T01:57:00+00:00",
           "category": "argentina"
         },
         {
-          "title": "A second Milei rises in Colombia Copying Western liberals failed the Left",
-          "source": "UnHerd",
-          "url": "https://unherd.com/2026/06/a-second-milei-rises-in-colombia/",
-          "date": "2026-06-22T23:53:05+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "La confianza en el Gobierno de Javier Milei subió 3,9% en junio, tras cinco meses de caídas",
-          "source": "Perfil",
-          "url": "https://www.perfil.com/noticias/economia/la-confianza-en-el-gobierno-de-javier-milei-volvio-a-subir-en-junio-tras-cinco-meses-de-caidas-a40.phtml",
-          "date": "2026-06-22T23:49:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Javier Milei celebró el triunfo de la Selección Argentina y habló del récord de Lionel Messi",
-          "source": "Radio Mitre",
-          "url": "https://radiomitre.cienradios.com/deportes/javier-milei-celebro-el-triunfo-de-la-seleccion-argentina-y-hablo-del-record-de-lionel-messi/",
-          "date": "2026-06-22T22:38:13+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Hungary’s new PM Magyar plans anti-corruption drive, new constitution",
-          "source": "Qatar Tribune",
-          "url": "https://www.qatar-tribune.com/article/240659/world/hungarys-new-pm-magyar-plans-anti-corruption-drive-new-constitution/amp",
-          "date": "2026-06-22T22:33:44+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "From Exploding Cats to Mega-Prisons: Meet Colombia’s Next President",
-          "source": "Zeteo",
-          "url": "https://zeteo.com/p/from-exploding-cats-to-mega-prisons",
-          "date": "2026-06-22T21:53:12+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "El Índice de Confianza en el Gobierno creció por primera vez en 2026: subió casi 4% en junio - El Economista",
-          "source": "Últimas noticias económicas y financieras",
-          "url": "https://eleconomista.com.ar/politica/el-indice-confianza-gobierno-crecio-primera-vez-2026-subio-casi-4-junio-n96017",
-          "date": "2026-06-22T21:52:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Rebotó la confianza en el gobierno de Javier Milei pero la evaluación general es mala",
-          "source": "Infocielo",
-          "url": "https://www.infocielo.com/politica-y-economia/reboto-la-confianza-en-el-gobierno-de-javier-milei-pero-la-evaluacion-general-es-mala",
-          "date": "2026-06-22T21:28:22+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "“El mejor del mundo”: los elogios a Messi y a la selección argentina en el arco político tras el triunfo ante Austria",
-          "source": "Infobae",
-          "url": "https://www.infobae.com/politica/2026/06/22/el-mejor-del-mundo-los-elogios-a-messi-y-a-la-seleccion-argentina-en-el-arco-politico-tras-el-triunfo-ante-austria/",
-          "date": "2026-06-22T21:08:05+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "El tuit de Javier Milei para festejar el triunfo de la Selección y el récord de Lionel Messi",
+          "title": "Javier Milei: \"Abróchense los cinturones que la Argentina será grande otra vez\"",
           "source": "diariopopular.com.ar",
-          "url": "https://www.diariopopular.com.ar/politica/el-tuit-javier-milei-festejar-el-triunfo-la-seleccion-y-el-record-lionel-messi-n906433",
-          "date": "2026-06-22T20:57:00+00:00",
+          "url": "https://www.diariopopular.com.ar/politica/javier-milei-abrochense-los-cinturones-que-la-argentina-sera-grande-otra-vez-n906657",
+          "date": "2026-06-24T01:46:00+00:00",
           "category": "argentina"
         },
         {
-          "title": "«La alegría no tiene ni tendrá fin»: el mensaje de Javier Milei por el triunfo de Argentina ante Austria",
-          "source": "El Intransigente",
-          "url": "https://elintransigente.com/2026/06/la-alegria-no-tiene-ni-tendra-fin-el-mensaje-de-javier-milei-por-el-triunfo-de-argentina-ante-austria/",
-          "date": "2026-06-22T20:55:39+00:00",
+          "title": "Javier Milei: “Los medios de comunicación solo muestran datos negativos”",
+          "source": "Agencia Noticias Argentinas",
+          "url": "https://noticiasargentinas.com/politica/javier-milei---los-medios-de-comunicacion-solo-muestran-datos-negativos-_a6a3b2306d3cd8e549983fb6c",
+          "date": "2026-06-24T01:30:00+00:00",
           "category": "argentina"
         },
         {
-          "title": "Javier Milei celebró el triunfo de Argentina y destacó a Lionel Messi: \"La alegría no tiene ni tendrá fin\"",
-          "source": "LM Neuquén",
-          "url": "https://www.lmneuquen.com/pais/javier-milei-celebro-el-triunfo-argentina-y-destaco-lionel-messi-la-alegria-no-tiene-ni-tendra-fin-n1243191",
-          "date": "2026-06-22T20:36:00+00:00",
+          "title": "Javier Milei celebró el crecimiento del PBI en el primer trimestre: “Hoy se cayeron las mentiras”",
+          "source": "La Nación",
+          "url": "https://www.lanacion.com.ar/politica/las-principales-declaraciones-de-milei-en-la-fundacion-faro-hoy-se-cayeron-las-mentiras-nid23062026/",
+          "date": "2026-06-24T01:20:00+00:00",
           "category": "argentina"
         },
         {
-          "title": "Sondaggi, lo scontro con Trump fa bene a Meloni: +2% di consensi in un mese, ora è al 40%",
-          "source": "Il Fatto Quotidiano",
-          "url": "https://www.ilfattoquotidiano.it/2026/06/22/sondaggi-meloni-trump-consensi-notizie/8426883/",
-          "date": "2026-06-22T20:11:28+00:00",
-          "category": "italy"
+          "title": "Javier Milei destacó el crecimiento del PBI en el primer trimestre: \"Hoy se cayeron todas esas mentiras\"",
+          "source": "a24.com",
+          "url": "https://www.a24.com/politica/javier-milei-destaco-el-crecimiento-del-pbi-el-primer-trimestre-hoy-se-cayeron-todas-esas-mentiras-n1568743",
+          "date": "2026-06-24T01:06:00+00:00",
+          "category": "argentina"
         },
         {
-          "title": "El festejo de Javier Milei por el récord de Lionel Messi en medio de los cimbronazos en su Gabinete",
+          "title": "Tras el dato del PBI, Javier Milei habló de un \"milagro económico\"",
+          "source": "Border Periodismo",
+          "url": "https://www.borderperiodismo.com/actualidad/tras-el-dato-del-pbi-javier-milei-hablo-de-un-milagro-economico/",
+          "date": "2026-06-24T01:05:58+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Milei se mostró por primera vez con su nuevo vocero Adrián Ravier: “Va a empezar un enorme desafío”",
+          "source": "TN",
+          "url": "https://tn.com.ar/politica/2026/06/23/milei-se-muestra-por-primera-vez-con-su-nuevo-vocero-adrian-ravier-va-a-empezar-un-enorme-desafio/",
+          "date": "2026-06-24T00:39:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Habla Javier Milei en la Fundación Faro, en su primera aparición junto al flamante nuevo vocero",
+          "source": "Crónica",
+          "url": "https://www.cronica.com.ar/amp/politica/habla-javier-milei-en-la-fundacion-faro-en-su-primera-aparicion-junto-al-flamante-nuevo-vocero/",
+          "date": "2026-06-24T00:04:04+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei presenta a su nuevo vocero, Adrián Ravier, en la Fundación Faro",
+          "source": "Perfil",
+          "url": "https://www.perfil.com/noticias/politica/javier-milei-presenta-a-su-nuevo-vocero-adrian-ravier-en-la-fundacion-faro.phtml",
+          "date": "2026-06-23T23:37:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Bullrich confirmó que Adorni canceló su informe en el Senado: “No tiene sentido exponerlo”",
+          "source": "eldoce",
+          "url": "https://eldoce.tv/politica/2026/06/23/bullrich-confirmo-que-adorni-cancelo-su-informe-en-el-senado-no-tiene-sentido-exponerlo/",
+          "date": "2026-06-23T22:49:15+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei hablará en Fundación Faro junto a Adrián Ravier, su nuevo vocero presidencial",
+          "source": "Ambito",
+          "url": "https://www.ambito.com/politica/javier-milei-hablara-fundacion-faro-junto-adrian-ravier-su-nuevo-vocero-presidencial-n6292091",
+          "date": "2026-06-23T22:49:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Catalán suma a José García Hamilton y acelera el armado de La Libertad Avanza para 2027",
+          "source": "Tendencia de Noticias",
+          "url": "https://tendenciadenoticias.com.ar/politica/catalan-suma-a-jose-garcia-hamilton-y-acelera-el-armado-de-la-libertad-avanza-para-2027",
+          "date": "2026-06-23T22:22:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei compartió una imagen de Lionel Messi sin la estrella del Mundial que ganó",
           "source": "MinutoUno",
-          "url": "https://www.minutouno.com/politica/el-festejo-javier-milei-el-record-lionel-messi-medio-los-cimbronazos-su-gabinete-n6291588",
-          "date": "2026-06-22T19:51:00+00:00",
+          "url": "https://www.minutouno.com/politica/javier-milei-compartio-una-imagen-lionel-messi-la-estrella-del-mundial-que-gano-n6292049",
+          "date": "2026-06-23T21:49:00+00:00",
           "category": "argentina"
         },
         {
-          "title": "Turkish president to host Polish counterpart for talks on bilateral, regional issues",
-          "source": "Anadolu Ajansı",
-          "url": "https://www.aa.com.tr/en/turkiye/turkish-president-to-host-polish-counterpart-for-talks-on-bilateral-regional-issues/3974943",
-          "date": "2026-06-22T19:43:44+00:00",
+          "title": "Polish, Turkish presidents discuss security, NATO, economic ties",
+          "source": "Polskie Radio",
+          "url": "https://polskieradio.pl/395/7784/Artykul/3701468,polish-turkish-presidents-discuss-security-nato-economic-ties",
+          "date": "2026-06-23T21:45:00+00:00",
           "category": "poland"
         },
         {
-          "title": "Javier Milei festejó el triunfo de Argentina ante Austria: “La alegría no tiene ni tendrá fin”",
+          "title": "Javier Milei festejó el dato de crecimiento económico que difundió el INDEC",
           "source": "TN",
-          "url": "https://tn.com.ar/politica/2026/06/22/javier-milei-festejo-el-triunfo-de-argentina-ante-austria-la-alegria-no-tiene-ni-tendra-fin/",
-          "date": "2026-06-22T19:42:57+00:00",
+          "url": "https://tn.com.ar/politica/2026/06/23/javier-milei-festejo-el-dato-de-crecimiento-economico-que-difundio-el-indec/",
+          "date": "2026-06-23T21:24:44+00:00",
           "category": "argentina"
         },
         {
-          "title": "¿Acuerdo confirmado? La Libertad Avanza salió a respaldar la segunda reelección de Gustavo Sáenz",
-          "source": "Elintra.com.ar",
-          "url": "https://elintra.com.ar/2026/06/22/acuerdo-confirmado-la-libertad-avanza-salio-a-respaldar-la-segunda-reeleccion-de-gustavo-saenz/",
-          "date": "2026-06-22T19:37:20+00:00",
-          "category": "argentina"
+          "title": "Gov. Walz files requests to uncover Trump administration 'retribution campaign’ - FOX 9 Minneapolis-St. Paul",
+          "source": "",
+          "url": "https://www.fox9.com/news/gov-walz-files-requests-uncover-trump-administration-retribution-campaign-june-2026",
+          "date": "2026-06-23T21:07:27+00:00",
+          "category": "usa"
         },
         {
-          "title": "Manuel Adorni confirmó la salida de Javier Lanari como secretario de Comunicación",
-          "source": "Página|12",
-          "url": "https://www.pagina12.com.ar/2026/06/22/manuel-adorni-confirmo-la-salida-de-javier-lanari-como-secretario-de-comunicacion/",
-          "date": "2026-06-22T18:41:20+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Elections in Colombia Signal Another Victory for the Right in Latin America",
-          "source": "Left Voice",
-          "url": "https://www.leftvoice.org/colombia-elections-victory-for-latin-american-right/",
-          "date": "2026-06-22T18:32:05+00:00",
-          "category": "general"
-        },
-        {
-          "title": "Por qué Javier Milei puso a un economista como vocero para oxigenar la defensa de los logros económicos",
-          "source": "MDZ Online",
-          "url": "https://www.mdzol.com/dinero/por-que-javier-milei-puso-un-economista-como-vocero-oxigenar-la-defensa-los-logros-economicos-n1548808",
-          "date": "2026-06-22T17:30:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "En su primera actividad como vocero, Ravier conversó con Adorni y protagoniza una serie de reuniones en Casa Rosada",
-          "source": "Infobae",
-          "url": "https://www.infobae.com/politica/2026/06/22/en-su-primera-actividad-como-vocero-ravier-converso-con-adorni-y-protagoniza-una-serie-de-reuniones-en-casa-rosada/",
-          "date": "2026-06-22T16:58:27+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Manuel Adorni anunció que Javier Lanari deja la Secretaría de Comunicación y Prensa",
-          "source": "Cba24n",
-          "url": "https://www.cba24n.com.ar/argentina/manuel-adorni-anuncio-que-javier-lanari-deja-la-secretaria-de-comunicacion-y-prensa_a6a395ea13f0a4955d44f69e7",
-          "date": "2026-06-22T16:15:50+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Cambios en el Gabinete: se fue la mano derecha de Manuel Adorni",
-          "source": "MinutoUno",
-          "url": "https://www.minutouno.com/politica/cambios-el-gabinete-se-fue-la-mano-derecha-manuel-adorni-n6291481",
-          "date": "2026-06-22T16:15:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Más cambios en el Gabinete: Adorni anunció la salida del secretario de Comunicación",
-          "source": "a24.com",
-          "url": "https://www.a24.com/politica/mas-cambios-el-gabinete-adorni-anuncio-la-salida-del-secretario-comunicacion-n1568146",
-          "date": "2026-06-22T15:50:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Renunció el segundo de Manuel Adorni: Javier Lanari dejó su cargo como Secretario de Comunicación y Prensa",
-          "source": "Perfil",
-          "url": "https://www.perfil.com/noticias/politica/renunci%C3%B3-javier-Lanari-como-secretario-de-comunicaci%C3%B3n-prensaJa.phtml",
-          "date": "2026-06-22T15:49:52+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Maximiliano Pullaro: \"Si Manuel Adorni fuera funcionario de Santa Fe, no estaría desde hace rato en su cargo\"",
-          "source": "Crónica",
-          "url": "https://www.cronica.com.ar/politica/maximiliano-pullaro-si-manuel-adorni-fuera-funcionario-de-santa-fe-no-estaria-desde-hace-rato-en-su-cargo/",
-          "date": "2026-06-22T15:22:01+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Rosario: ATE declaró persona no grata a Javier Milei",
-          "source": "ATE",
-          "url": "https://ate.org.ar/260622-milei-rosario/",
-          "date": "2026-06-22T13:47:09+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Maxi Pullaro: “Si Manuel Adorni fuera funcionario de Santa Fe no estaría desde hace rato en su cargo”",
-          "source": "Clarin.com",
-          "url": "https://www.clarin.com/politica/maxi-pullaro-manuel-adorni-funcionario-santa-fe-hace-rato-cargo_0_Ds2e2Yg3zQ.html",
-          "date": "2026-06-22T12:52:16+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Javier Milei felicitó a Abelardo de la Espriella tras su triunfo en Colombia: “El león y el tigre rugen en Latinoamérica”",
-          "source": "Radio Mitre",
-          "url": "https://radiomitre.cienradios.com/politica/javier-milei-felicito-a-abelardo-de-la-espriella-tras-su-triunfo-en-colombia-el-leon-y-el-tigre-rugen-en-latinoamerica/",
-          "date": "2026-06-22T10:20:02+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Ni de Karina ni de Caputo: quién es Adrián Ravier, el nuevo vocero que Javier Milei eligió en medio del caso Adorni",
-          "source": "Diario Río Negro",
-          "url": "https://www.rionegro.com.ar/politica/ni-de-karina-ni-de-caputo-quien-es-adrian-ravier-el-nuevo-vocero-que-javier-milei-eligio-en-medio-del-caso-adorni-4620278/",
-          "date": "2026-06-22T10:08:54+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Javier Milei viajará a España por sexta vez para buscar inversiones y dar una clase",
-          "source": "Aire de Santa Fe",
-          "url": "https://www.airedesantafe.com.ar/politica/javier-milei-viajara-espana-sexta-vez-buscar-inversiones-y-dar-una-clase-n660740",
-          "date": "2026-06-22T09:55:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Javier Milei y sus medidas de Gobierno EN VIVO: últimas noticias del 22 de junio, minuto a minuto",
-          "source": "El Destape",
-          "url": "https://www.eldestapeweb.com/politica/comienza-gestion-ravier-vocero-presidencial-jura-casa-rosada-acto-fundacion-faro-202662263331",
-          "date": "2026-06-22T09:47:57+00:00",
+          "title": "Karina Milei y Manuel Adorni acompañarán a Milei en la primera aparición pública de Ravier desde que es vocero",
+          "source": "TN",
+          "url": "https://tn.com.ar/politica/2026/06/23/karina-milei-y-manuel-adorni-acompanaran-a-milei-en-la-primera-aparicion-publica-de-ravier-desde-que-es-vocero/",
+          "date": "2026-06-23T20:47:54+00:00",
           "category": "argentina"
         }
       ],
       "first_seen": "2026-06-23T15:41:19+00:00",
-      "last_seen": "2026-06-23T15:41:19+00:00"
+      "last_seen": "2026-06-24T04:53:09+00:00"
     },
     {
       "id": "giorgia-meloni",
       "name": "Giorgia Meloni",
       "role": "Prime Minister of Italy",
-      "blurb": "Meloni remains a dominant figure in the news cycle due to her diplomatic tensions with former U.S. President Donald Trump and her government's domestic policies. The ongoing feud with Trump over a G7 photo incident has escalated into a broader discussion about Italy's international relations and its stance within NATO. Additionally, her government's housing and infrastructure plans continue to generate significant debate.",
+      "blurb": "Giorgia Meloni remains a central figure in European politics, with recent coverage focusing on her diplomatic relations, particularly her public spat with Donald Trump. The news cycle also highlights her domestic policies, including economic reforms and responses to natural disasters. Meloni's leadership and political strategies continue to generate significant media attention and debate.",
       "prominence": 4,
       "signals": [
-        "diplomatic tensions",
-        "NATO relations",
-        "housing policy",
-        "infrastructure plans"
+        "diplomatic relations",
+        "domestic policies",
+        "economic reforms",
+        "natural disaster response",
+        "political strategies"
       ],
       "categories": [
         "International Relations",
-        "Domestic Policy",
-        "Government Leadership"
+        "Domestic Politics",
+        "Economic Policy"
       ],
-      "article_count": 80,
+      "article_count": 120,
       "refs": [
         {
-          "title": "«Il Piano casa di Meloni non basterà». Le storie di chi ha perso la speranza dell’alloggio popolare",
-          "source": "Domani",
-          "url": "https://www.editorialedomani.it/politica/italia/piano-casa-meloni-case-popolari-attesa-anni-ejg5a8z1",
-          "date": "2026-06-23T12:22:00+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Sisma Centro Italia: Meloni, molto resta da fare, avanti con determinazione",
-          "source": "Il Sole 24 ORE",
-          "url": "https://www.ilsole24ore.com/radiocor/nRC_23.06.2026_13.14_407",
-          "date": "2026-06-23T11:35:16+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Trasporti: Salvini riunisce al Mit i vertici gruppo FS",
-          "source": "Ministero delle infrastrutture e dei trasporti",
-          "url": "https://www.mit.gov.it/comunicazione/news/trasporti-salvini-riunisce-al-mit-i-vertici-gruppo-fs",
-          "date": "2026-06-23T11:30:33+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "“I felt sorry for her”: ecco l’audio originale della telefonata tra il giornalista Compatangelo e Trump su Meloni",
-          "source": "Il Fatto Quotidiano",
-          "url": "https://www.ilfattoquotidiano.it/2026/06/23/esclusivo-la7-trump-meloni/8427308/",
-          "date": "2026-06-23T11:23:53+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Meloni a Farmindustria: “La farmaceutica è un asset strategico per la crescita dell’Italia”",
-          "source": "la Repubblica",
-          "url": "https://finanza.repubblica.it/News/2026/06/23/meloni_a_farmindustria_%E2%80%9Cla_farmaceutica_e_un_asset_strategico_per_la_crescita_dell%E2%80%99italia%E2%80%9D-71/",
-          "date": "2026-06-23T10:49:00+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Meloni verso il palco della Gdf: \"Un segnale dello Stato\"",
-          "source": "RaiNews",
-          "url": "https://www.rainews.it/tgr/puglia/video/2026/06/meloni-gdf-foggia-c798928c-910f-41d1-b805-3bb03a0e8c73.html",
-          "date": "2026-06-23T10:42:49+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "\"Scontro Meloni-Trump? Lei modello di governo conservatore in Ue, ricuciremo\"",
-          "source": "Adnkronos",
-          "url": "https://www.adnkronos.com/internazionale/esteri/trump-meloni-intervista-mccarthy-heritage_4VSRLmwcNPCJ2bKf6poMTu",
-          "date": "2026-06-23T10:32:00+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Scontro Trump-Meloni: in esclusiva su La7 l'audio originale della telefonata tra il presidente USA e Compatangelo",
-          "source": "TGLA7",
-          "url": "https://tg.la7.it/esteri/scontro-trump-meloni-la7-audio-originale-telefonata-compatangelo-23-06-2026-258863",
-          "date": "2026-06-23T10:11:00+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Con Meloni e contro Meloni: i due volti di Vannacci",
-          "source": "il Giornale",
-          "url": "https://www.ilgiornale.it/news/interni/meloni-e-contro-meloni-i-due-volti-vannacci-2682976.html",
-          "date": "2026-06-23T10:04:00+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Meloni a Farmindustria, settore strategico ed eccellenza del made in Italy",
-          "source": "ANSA",
-          "url": "https://www.ansa.it/sito/notizie/economia/pmi/2026/06/23/meloni-a-farmindustria-settore-strategico-ed-eccellenza-del-made-in-italy_3279fe29-4034-4e24-9f27-a8c0ba4836dd.html",
-          "date": "2026-06-23T10:01:00+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Telefonata di Trump, Donatella Di Cesare: \"Il problema principale è la personalizzazione della politica di Giorgia Meloni\"",
-          "source": "LA7",
-          "url": "https://www.la7.it/laria-che-tira/video/telefonata-di-trump-donatella-di-cesare-il-problema-principale-e-la-personalizzazione-della-politica-23-06-2026-650058",
-          "date": "2026-06-23T09:59:15+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "L’audio della telefonata in cui Trump attacca Meloni",
-          "source": "Il Post",
-          "url": "https://www.ilpost.it/flashes/audio-telefonata-trump-meloni-la7/",
-          "date": "2026-06-23T09:39:55+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Trump-Meloni, autorizzata la pubblicazione dell'audio originale della telefonata che ha innescato lo scontro Usa-Italia",
-          "source": "LA7",
-          "url": "https://www.la7.it/laria-che-tira/video/trump-meloni-autorizzata-la-pubblicazione-dellaudio-originale-della-telefonata-che-ha-innescato-lo-23-06-2026-650054",
-          "date": "2026-06-23T09:39:08+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "L'audio originale della telefonata in cui Trump attacca Meloni",
-          "source": "LA7",
-          "url": "https://www.la7.it/laria-che-tira/video/laudio-originale-della-telefonata-in-cui-trump-attacca-meloni-23-06-2026-650049",
-          "date": "2026-06-23T09:35:36+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "L'audio della telefonata di Trump con La7 contro Meloni",
+          "title": "L'artimetica delle balle. Trump vs Meloni, Ciabatti vs Mari: uffa!",
           "source": "Il Foglio",
-          "url": "https://www.ilfoglio.it/esteri/2026/06/23/news/laudio-della-telefonata-di-trump-con-la7-contro-meloni--401035",
-          "date": "2026-06-23T09:25:00+00:00",
+          "url": "https://www.ilfoglio.it/rubriche/contro-mastro-ciliegia/2026/06/24/news/lartimetica-delle-balle-trump-vs-meloni-ciabatti-vs-mari-uffa--401083",
+          "date": "2026-06-24T04:00:00+00:00",
           "category": "italy"
         },
         {
-          "title": "Lo scontro Meloni-Trump visto dai Maga di casa nostra: chi sceglie Vannacci, chi Polymarket",
-          "source": "Domani",
-          "url": "https://www.editorialedomani.it/politica/italia/scontro-meloni-trump-maga-casa-nostra-vannacci-polymarket-meloni-kp2no3vk",
-          "date": "2026-06-23T09:24:00+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Cordoglio per il vigile morto nel Milanese, Meloni: “Onore a Imprezzabile, l’Italia non dimentica”",
-          "source": "la Repubblica",
-          "url": "https://milano.repubblica.it/cronaca/2026/06/23/news/cordoglio_reazioni_vigile_morto_imprezzabile_meloni_la_russa_sala-425428688/",
-          "date": "2026-06-23T09:21:20+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Meloni, onore a Imprezzabile, l'Italia non dimentica il sacrificio",
-          "source": "ANSA",
-          "url": "https://www.ansa.it/sito/notizie/topnews/2026/06/23/meloni-onore-a-imprezzabile-litalia-non-dimentica-il-sacrificio_dd7868ed-b7a6-4ac7-8de7-0aab29da105e.html",
-          "date": "2026-06-23T09:04:00+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "La lettera immaginaria di Meloni a Trump per chiudere con un sorriso la rissa di questi giorni",
-          "source": "Il Foglio",
-          "url": "https://www.ilfoglio.it/il-foglio-ai/2026/06/23/news/la-lettera-immaginaria-di-meloni-a-trump-per-chiudere-con-un-sorriso-la-rissa-di-questi-giorni--401027",
-          "date": "2026-06-23T08:52:00+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Quarta Repubblica: Scontro Trump-Meloni, cosa è successo al G7? Video",
-          "source": "Mediaset Infinity",
-          "url": "https://mediasetinfinity.mediaset.it/video/quartarepubblica/scontro-trump-meloni-cosa-e-successo-al-g7_F314087001042C02",
-          "date": "2026-06-23T08:37:30+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "“Brexit voto di libertà”, dalla sovranista Meloni allo shock di Renzi: le reazioni 10 anni fa",
-          "source": "la Repubblica",
-          "url": "https://www.repubblica.it/politica/2026/06/23/news/meloni_salvini_berlusconi_renzi_reazioni_brexit-425428511/",
-          "date": "2026-06-23T08:01:33+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Assemblea 2026 di Farmindustria, il messaggio del Presidente Meloni",
-          "source": "Governo.it",
-          "url": "https://www.governo.it/en/node/32159",
-          "date": "2026-06-23T07:45:29+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Haute-Saône : Nathalie Fritsch sera la candidate du Rassemblement National aux élections sénatoriales de septembre prochain – Les Affiches de la Haute-Saône - Les Affiches de la Haute-Saône",
-          "source": "",
-          "url": "https://www.lesaffichesdelahautesaone.fr/haute-saone-nathalie-fritsch-sera-la-candidate-du-rassemblement-national-aux-elections-senatoriales-de-septembre-prochain/",
-          "date": "2026-06-23T07:41:39+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Il caso Trump-Meloni allarma le imprese venete: «Ogni parola può pesare: c'è bisogno di certezze»",
-          "source": "Corriere del Veneto",
-          "url": "https://corrieredelveneto.corriere.it/notizie/politica/26_giugno_23/il-caso-trump-meloni-allarma-le-imprese-venete-ogni-parola-puo-pesare-c-e-bisogno-di-certezze-7bb5c040-f5b9-4349-b590-d122e5710xlk_amp.shtml",
-          "date": "2026-06-23T07:22:34+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Sondaggio politico La7 martedì 23 giugno 2026, Salvini sorpassa Vannacci: FdI in calo, già anche Pd e M5s",
-          "source": "Virgilio",
-          "url": "https://www.virgilio.it/notizie/sondaggio-politico-la7-martedi-23-giugno-2026-salvini-sorpassa-vannacci-fdi-in-calo-gia-anche-pd-e-m5s-1764042",
-          "date": "2026-06-23T06:46:00+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Italia-Usa, dal 2 luglio alla missione dei conservatori a Washington: come si muove il governo dopo lo scontro Meloni-Trump",
-          "source": "Il Sole 24 ORE",
-          "url": "https://www.ilsole24ore.com/art/italia-usa-2-luglio-missione-conservatori-washington-come-si-muove-governo-lo-scontro-meloni-trump-AIS0NfoD",
-          "date": "2026-06-23T06:15:48+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Paura dopo l’orgoglio: ora Meloni deve ricucire con Trump",
-          "source": "Il Dubbio",
-          "url": "https://www.ildubbio.news/news/politica/51230/meloni-trump-rottura-usa-rischi-italia.html",
-          "date": "2026-06-23T06:07:00+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Ustica, il centrosinistra a Meloni: \"Fare pressione su Macron per la verità\"",
+          "title": "Sisma, dieci anni dopo. Meloni: avanti con forza: \"Ricostruiamo il futuro\"",
           "source": "Il Resto del Carlino",
-          "url": "https://www.ilrestodelcarlino.it/bologna/cronaca/ustica-il-centrosinistra-a-meloni-cfbcd28c",
-          "date": "2026-06-23T04:57:28+00:00",
+          "url": "https://www.ilrestodelcarlino.it/marche/cronaca/sisma-dieci-anni-dopo-meloni-9459c21b",
+          "date": "2026-06-24T03:18:51+00:00",
           "category": "italy"
         },
         {
-          "title": "\"Rimpatri: la linea Meloni passa in Ue\"",
-          "source": "Il Resto del Carlino",
-          "url": "https://www.ilrestodelcarlino.it/ferrara/cronaca/rimpatri-la-linea-meloni-4fde4d16",
-          "date": "2026-06-23T04:32:56+00:00",
+          "title": "Il dopo Trump di Giorgia Meloni, blackout per il caldo record, Lorenzo ucciso per una lite a calcetto e le altre notizie da sapere per iniziare la giornata",
+          "source": "today.it",
+          "url": "https://www.today.it/rassegna/start/ultime-notizie-oggi-24-giugno-2026.html",
+          "date": "2026-06-24T03:12:00+00:00",
           "category": "italy"
         },
         {
-          "title": "Magyar Péter arra törekszik, hogy újjáélessze a gyengélkedő V4 együttműködést",
-          "source": "Euronews",
-          "url": "https://hu.euronews.com/2026/06/23/magyar-peter-arra-torekszik-hogy-ujjaelessze-a-gyengelkedo-v4-egyuttmukodest",
-          "date": "2026-06-23T04:30:34+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "La pace di Meloni. Like alle stelle e lei ai ministri: “Immutati i rapporti. Con Trump ma la vedo io\"",
-          "source": "Il Foglio",
-          "url": "https://www.ilfoglio.it/politica/2026/06/23/news/la-pace-di-meloni-like-alle-stelle-e-lei-ai-ministri-immutati-i-rapporti-con-trump-ma-la-vedo-io--401006",
-          "date": "2026-06-23T04:00:00+00:00",
+          "title": "Italy US relations: Tajani seeks to mend ties",
+          "source": "The Straits Times",
+          "url": "https://www.straitstimes.com/world/italy-seeks-to-mend-ties-with-the-us-after-trump-meloni-blowout",
+          "date": "2026-06-24T02:54:00+00:00",
           "category": "italy"
         },
         {
-          "title": "Meloni dia un taglio al taglio delle accise",
-          "source": "Il Foglio",
-          "url": "https://www.ilfoglio.it/economia/2026/06/23/news/meloni-dia-un-taglio-al-taglio-delle-accise--400990",
-          "date": "2026-06-23T04:00:00+00:00",
+          "title": "Meloni signals truce after extraordinary public spat with Trump: 'I don't intend to keep fuelling this dispute'",
+          "source": "WION",
+          "url": "https://www.wionews.com/world/meloni-signals-truce-after-extraordinary-public-spat-with-trump-i-don-t-intend-to-keep-fuelling-this-dispute-1782265096024",
+          "date": "2026-06-24T02:10:00+00:00",
           "category": "italy"
         },
         {
-          "title": "Meloni davanti ai ministri tra ironia e strategie: “Non boicottiamo gli Usa”",
-          "source": "La Stampa",
-          "url": "https://www.lastampa.it/politica/2026/06/23/news/meloni_davanti_ai_ministri_tra_ironia_e_strategie_non_boicottiamo_gli_usa-15667986/?ref=ST-LA-2",
-          "date": "2026-06-22T23:00:00+00:00",
-          "category": "italy"
+          "title": "Renewed Debate Over Evanston’s Reparations Program As Trump Administration Seeks to End It",
+          "source": "WTTW News",
+          "url": "https://news.wttw.com/2026/06/23/renewed-debate-over-evanston-s-reparations-program-trump-administration-seeks-end-it",
+          "date": "2026-06-24T00:58:00+00:00",
+          "category": "usa"
         },
         {
-          "title": "Meloni: “Il caso è chiuso, non boicottiamo gli Usa”. Trump: “Italia cattiva”",
-          "source": "la Repubblica",
-          "url": "https://www.repubblica.it/politica/2026/06/23/news/meloni_frena_su_trump_usa-425427909/",
-          "date": "2026-06-22T23:00:00+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Meloni, Trump e il nodo strategico dell’Europa",
-          "source": "La Discussione",
-          "url": "https://ladiscussione.com/447467/attualita/trump-meloni-alleanza/",
-          "date": "2026-06-22T22:11:21+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Ora Meloni teme l’impatto dello scontro con Trump",
-          "source": "il manifesto",
-          "url": "https://ilmanifesto.it/ora-meloni-teme-limpatto-dello-scontro-con-trump",
-          "date": "2026-06-22T22:03:34+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Meloni ringrazia Starmer: \"Collaborazione concreta su migranti, difesa ed energia\"",
-          "source": "Tgcom24",
-          "url": "https://www.tgcom24.mediaset.it/mondo/meloni-ringrazia-starmer-collaborazione-concreta-su-migranti-difesa-ed-energia-_113492708-202602k.shtml",
-          "date": "2026-06-22T21:21:05+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Sondaggi, lo scontro con Trump fa bene a Meloni: +2% di consensi in un mese, ora è al 40%",
-          "source": "Il Fatto Quotidiano",
-          "url": "https://www.ilfattoquotidiano.it/2026/06/22/sondaggi-meloni-trump-consensi-notizie/8426883/",
-          "date": "2026-06-22T20:11:28+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Gli attacchi di Trump aiutano Meloni, il sondaggio: aumenta la fiducia nella premier",
-          "source": "Adnkronos",
-          "url": "https://www.adnkronos.com/internazionale/esteri/trump-meloni-sondaggio-fiducia-italiani_6tBi7Gv6sX11KI5niWzol2",
-          "date": "2026-06-22T20:07:00+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "UK: Meloni ringrazia premier Starmer per lavoro svolto",
-          "source": "Giornale Diplomatico",
-          "url": "https://www.giornalediplomatico.it/uk-meloni-ringrazia-premier-starmer-per-lavoro-svolto.htm",
-          "date": "2026-06-22T20:05:00+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Lo scontro con Trump rafforza Meloni: cresce la fiducia degli italiani nella premier",
-          "source": "il Giornale",
-          "url": "https://www.ilgiornale.it/news/politica-internazionale/scontro-trump-rafforza-meloni-cresce-fiducia-degli-italiani-2682745.html",
-          "date": "2026-06-22T19:50:50+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "En la Casa Rosada creen que los dólares de Insaurralde y los videos de Jessica Cirio alejan la atención sobre...",
-          "source": "Perfil",
-          "url": "https://www.perfil.com/noticias/politica/en-la-casa-rosada-creen-que-los-dolares-de-insaurralde-y-los-videos-de-jessica-cirio-alejan-la-atencion-sobre-adorni.phtml",
-          "date": "2026-06-22T19:34:53+00:00",
+          "title": "Manuel Adorni aseguró que está dispuesto a asistir al Senado tras la suspensión de su informe de gestión",
+          "source": "Diario Río Negro",
+          "url": "https://www.rionegro.com.ar/politica/manuel-adorni-aseguro-que-esta-dispuesto-a-asistir-al-senado-tras-la-suspension-de-su-informe-de-gestion-4622926/",
+          "date": "2026-06-24T00:18:48+00:00",
           "category": "argentina"
         },
         {
-          "title": "Meloni e lo scontro con Trump: 'Non impatti sui rapporti con gli Usa'",
-          "source": "ANSA",
-          "url": "https://www.ansa.it/sito/notizie/politica/2026/06/22/meloni-in-cdm-sullo-scontro-con-trump-non-impatti-sui-rapporti_73e89765-3cf3-454d-ad46-dcf8b60f5847.html",
-          "date": "2026-06-22T19:01:15+00:00",
+          "title": "Meloni e lo scontro con Trump: «Rapporti Italia-Usa? Non vedo rischi di contraccolpi. Politica estera non è Temptation Island»",
+          "source": "Il Messaggero",
+          "url": "https://www.ilmessaggero.it/politica/meloni_temptetion_island_trump_rapporti_italia_usa-9609946.html",
+          "date": "2026-06-23T23:12:31+00:00",
           "category": "italy"
         },
         {
-          "title": "Meloni prova ad andare oltre lo scontro con Trump: non impatti sui rapporti con Usa",
-          "source": "Askanews",
-          "url": "https://askanews.it/2026/06/22/meloni-prova-ad-andare-oltre-lo-scontro-con-trump-non-impatti-sui-rapporti-con-usa/",
-          "date": "2026-06-22T18:43:52+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Tensioni Usa-Italia, Merz non commenta ma Berlino tifa Meloni",
-          "source": "ItalyPost",
-          "url": "https://www.italypost.it/news/politica/7618/tensioni-usa-italia-merz-non-commenta-ma-berlino-tifa-meloni.html",
-          "date": "2026-06-22T18:16:36+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Infrastrutture e Pnrr, ok dal Cdm. Meloni ai ministri: preservare intesa con gli USA",
-          "source": "Teleborsa",
-          "url": "https://www.teleborsa.it/News/2026/06/22/infrastrutture-e-pnrr-ok-dal-cdm-meloni-ai-ministri-preservare-intesa-con-gli-usa-1_TLS.html",
-          "date": "2026-06-22T18:08:51+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Meloni: “Scontro con Trump non impatti su rapporti con Usa”. L’ambasciatore: resti vera partnership",
+          "title": "Meloni: “Colpita da Trump. La politica estera è complessa, non è Temptation island”",
           "source": "la Repubblica",
-          "url": "https://www.repubblica.it/politica/2026/06/22/news/meloni_scontro_con_trump_rapporti_usa_schlein-425427469/",
-          "date": "2026-06-22T18:00:07+00:00",
+          "url": "https://www.repubblica.it/politica/2026/06/24/news/meloni_colpita_da_trump_la_politica_estera_non_e_temptation_island-425430116/",
+          "date": "2026-06-23T23:00:00+00:00",
           "category": "italy"
         },
         {
-          "title": "Meloni gioca in difesa: «Con gli Stati Uniti non cambia nulla»",
-          "source": "Domani",
-          "url": "https://www.editorialedomani.it/politica/italia/meloni-gioca-in-difesa-con-gli-stati-uniti-non-cambia-nulla-qa1fv86b",
-          "date": "2026-06-22T17:50:00+00:00",
+          "title": "'Don't Intend To Keep Fueling Dispute': Meloni Calls For Normal Italy-US Ties After Trump Photo Spat",
+          "source": "News18",
+          "url": "https://www.news18.com/world/dont-intend-to-keep-fueling-dispute-meloni-calls-for-normal-italy-us-ties-after-trump-photo-spat-ws-l-10169286.html",
+          "date": "2026-06-23T22:22:10+00:00",
           "category": "italy"
         },
         {
-          "title": "Meloni in Cdm sullo scontro con Trump: «Non impatti sui rapporti con gli Usa»",
-          "source": "Il Sole 24 ORE",
-          "url": "https://www.ilsole24ore.com/art/meloni-cdm-scontro-trump-non-impatti-rapporti-gli-usa-AIk1XsoD",
-          "date": "2026-06-22T17:23:40+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Meloni sullo scontro con Trump: «Non impatti sui rapporti tra Italia e Stati Uniti». E invita i ministri a partecipare al party all'ambasciata Usa",
-          "source": "Corriere Roma",
-          "url": "https://roma.corriere.it/notizie/politica/26_giugno_22/meloni-scontro-trump-rapporti-italia-stati-uniti-ambasciata-a2655fa9-c753-4c14-bb11-8121aa32fxlk.shtml",
-          "date": "2026-06-22T17:18:21+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Contenere i danni con Trump. Emissari negli Usa e ministri alla festa del 4 luglio, Meloni va in Europa (di G. Ucciero)",
-          "source": "HuffPost Italia",
-          "url": "https://www.huffingtonpost.it/politica/2026/06/22/news/contenere_il_danno_trump_emissari_negli_usa_e_ministri_alla_festa_del_4_luglio_meloni_va_in_europa-22192082/",
-          "date": "2026-06-22T17:07:00+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "La rottura con l’«amica» fa rumore sui media Usa",
+          "title": "«Colpita da Trump, ma ora basta». Meloni: missione per ricucire",
           "source": "il manifesto",
-          "url": "https://ilmanifesto.it/la-rottura-con-lamica-fa-rumore-sui-media-usa",
-          "date": "2026-06-22T17:06:31+00:00",
+          "url": "https://ilmanifesto.it/colpita-da-trump-ma-ora-basta-meloni-missione-per-ricucire",
+          "date": "2026-06-23T22:18:45+00:00",
           "category": "italy"
         },
         {
-          "title": "Meloni pronta ad andare a Milano per testimoniare contro Fabrizio Corona",
-          "source": "La Stampa",
-          "url": "https://www.lastampa.it/cronaca/2026/06/22/news/fabrizio_corona_giorgia_meloni_processo-15667622/",
-          "date": "2026-06-22T15:55:00+00:00",
+          "title": "Trump-Meloni Feud Leads to Cancellation of U.S.-Italy Business Forum",
+          "source": "Yahoo",
+          "url": "https://www.yahoo.com/news/politics/articles/trump-meloni-feud-leads-cancellation-221653437.html",
+          "date": "2026-06-23T22:16:53+00:00",
           "category": "italy"
         },
         {
-          "title": "Giorgia Meloni e gli altri, 25 anni dopo Genova i voltafaccia sui “no global”. Su Millennium in librerie e store online",
+          "title": "Meloni archivia il caso Trump: “Colpita dagli attacchi, ma con Washington si torna alla normalità”",
+          "source": "La Discussione",
+          "url": "https://ladiscussione.com/447672/attualita/meloni-trump-usa-2/",
+          "date": "2026-06-23T22:10:01+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Meloni su Trump: “No a Temptation Island” Ed esorcizza l’inciucio",
           "source": "Il Fatto Quotidiano",
-          "url": "https://www.ilfattoquotidiano.it/2026/06/22/giorgia-meloni-e-gli-altri-25-anni-dopo-genova-i-voltafaccia-sui-no-global-su-millennium-in-librerie-e-store-online/8426406/",
-          "date": "2026-06-22T15:35:34+00:00",
+          "url": "https://www.ilfattoquotidiano.it/in-edicola/articoli/2026/06/24/meloni-su-trump-no-a-temptation-island-ed-esorcizza-linciucio/8428133/",
+          "date": "2026-06-23T22:01:00+00:00",
           "category": "italy"
         },
         {
-          "title": "'Diffamata da Corona', Giorgia Meloni pronta a testimoniare in aula a Milano",
-          "source": "ANSA",
-          "url": "https://www.ansa.it/sito/notizie/topnews/2026/06/22/diffamata-da-corona-giorgia-meloni-pronta-a-testimoniare-in-aula-a-milano_7c72c6b6-c152-4d7b-8faa-fa5af46ecd6c.html",
-          "date": "2026-06-22T15:25:00+00:00",
+          "title": "Italy's Meloni says she was 'taken aback' by Trump's remarks but vows no change in foreign policy",
+          "source": "Anadolu Ajansı",
+          "url": "https://www.aa.com.tr/en/europe/italys-meloni-says-she-was-taken-aback-by-trumps-remarks-but-vows-no-change-in-foreign-policy/3976075",
+          "date": "2026-06-23T21:53:43+00:00",
           "category": "italy"
         },
         {
-          "title": "La settimana politica: il gelo tra Meloni e Trump",
-          "source": "Conflavoro PMI",
-          "url": "https://www.conflavoro.it/settimana-politica-gelo-meloni-trump/",
-          "date": "2026-06-22T15:10:33+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Giorgia Meloni in Tribunale a Milano contro Corona: la premier testimonierà nel processo per diffamazione aggravata",
-          "source": "MilanoToday",
-          "url": "https://www.milanotoday.it/cronaca/giorgia-meloni-udienza-diffamazione-fabrizio-corona.html",
-          "date": "2026-06-22T14:59:03+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Con le tensioni tra Trump e Meloni trema anche il comparto vitivinicolo italiano: l'incognita dazi e il timore di ritorsioni",
-          "source": "L'Espresso",
-          "url": "https://lespresso.it/c/mondo/2026/6/22/vino-export-usa-italia-dazi-evento-miami-numeri/62939",
-          "date": "2026-06-22T14:44:29+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Tensioni Trump-Meloni, gli imprenditori italo-americani: “Non fermiamo il dialogo”",
-          "source": "La Stampa",
-          "url": "https://www.lastampa.it/milano/2026/06/22/news/tensioni_trump-meloni_gli_imprenditori_italo-americani_non_fermiamo_il_dialogo-15667473/",
-          "date": "2026-06-22T13:42:00+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Trump e l'ennesima mossa autodistruttiva: perché l'attacco a Meloni può inimicargli l'elettorato degli italo-americani",
-          "source": "Corriere della Sera",
-          "url": "https://www.corriere.it/esteri/26_giugno_22/trump-ennesima-mossa-autodistruttiva-attacco-meloni-italo-americani-01006c6c-c44e-4ba2-8a22-e2260d642xlk.shtml",
-          "date": "2026-06-22T12:01:38+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "MELONI, TRUMP E IL FILO TESO SUL FUTURO DELL’OCCIDENTE",
-          "source": "Le Cronache Lucane",
-          "url": "https://www.lecronachelucane.it/2026/06/22/meloni-trump-e-il-filo-teso-sul-futuro-delloccidente/",
-          "date": "2026-06-22T11:13:00+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Trump, Fittipaldi: \"Meloni non poteva non difendere il Papa, non è più credibile in politica internazionale\"",
-          "source": "LA7",
-          "url": "https://www.la7.it/omnibus/video/trump-fittipaldi-meloni-non-poteva-non-difendere-il-papa-non-e-piu-credibile-in-politica-22-06-2026-649923",
-          "date": "2026-06-22T11:01:09+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Le reazioni italiane al botta e risposta Trump-Meloni",
-          "source": "Euronews.com",
-          "url": "https://it.euronews.com/my-europe/2026/06/22/usa-italia-cosa-teme-il-governo-italiano-e-cosa-puo-cambiare-nelle-relazioni-tra-i-due-pae",
-          "date": "2026-06-22T10:36:54+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Colombia: Meloni, complimenti a presidente de la Espriella, lavoreremo insieme",
+          "title": "Meloni: \"Colpita da Trump ma la politica estera non cambia\"",
           "source": "Il Sole 24 ORE",
-          "url": "https://en.ilsole24ore.com/radiocor/nRC_22.06.2026_11.10_211",
-          "date": "2026-06-22T09:50:54+00:00",
+          "url": "https://stream24.ilsole24ore.com/video/italia/meloni-colpita-trump-ma-politica-estera-non-cambia/AISYfHqD",
+          "date": "2026-06-23T21:45:07+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Enzo Iacchetti contro Trump e Giorgia Meloni dopo gli attacchi: \"Tra una settimana faranno ancora comunella\"",
+          "source": "Virgilio",
+          "url": "https://www.virgilio.it/notizie/enzo-iacchetti-contro-trump-e-giorgia-meloni-dopo-gli-attacchi-tra-una-settimana-faranno-ancora-comunella-1764328",
+          "date": "2026-06-23T21:40:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Meloni: non intendo alimentare scontro con Usa",
+          "source": "Sky TG24",
+          "url": "https://tg24.sky.it/politica/video/2026/06/23/meloni-non-intendo-alimentare-scontro-con-usa-1107223",
+          "date": "2026-06-23T20:26:48+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Bettina Anderson marries Donald Trump Jr. in slinky silk wedding dress",
+          "source": "Page Six",
+          "url": "https://pagesix.com/2026/06/23/style/bettina-anderson-marries-donald-trump-jr-in-slinky-silk-wedding-dress/",
+          "date": "2026-06-23T20:21:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Meloni: “Colpita da quanto successo con Trump, ma il lavoro con gli Usa deve tornare alla normalità”",
+          "source": "Quotidiano Nazionale",
+          "url": "https://www.quotidiano.net/politica/meloni-trump-il-lavoro-con-gli-usa-deve-tornare-alla-normalita-dgv6a2p5",
+          "date": "2026-06-23T19:26:21+00:00",
           "category": "italy"
         }
       ],
       "first_seen": "2026-06-23T04:48:44+00:00",
-      "last_seen": "2026-06-23T15:41:19+00:00"
+      "last_seen": "2026-06-24T04:53:09+00:00"
     },
     {
       "id": "manuel-adorni",
       "name": "Manuel Adorni",
       "role": "Chief of Staff of Argentina",
-      "blurb": "Adorni is at the center of a political storm in Argentina due to allegations of illicit enrichment and misuse of public funds. His potential interpellation in Congress and the government's efforts to delay or block these proceedings have made him a key figure in the current news cycle. The recent reshuffling of his communication team adds another layer to the controversy.",
+      "blurb": "Manuel Adorni has been a prominent figure in recent news due to allegations of illicit enrichment and asset laundering, which have led to significant political tension within Argentina's government. His potential interpellation in the Senate and the internal power struggles within La Libertad Avanza have kept him in the spotlight. Adorni's public appearances and statements continue to drive media coverage.",
       "prominence": 4,
       "signals": [
-        "judicial proceedings",
-        "government reshuffle",
-        "congressional interpellation",
-        "media strategy"
+        "allegations of illicit enrichment",
+        "Senate interpellation",
+        "internal power struggles",
+        "public appearances",
+        "government communication"
       ],
       "categories": [
-        "Government Leadership",
-        "Judicial Proceedings",
-        "Media Coverage"
+        "Domestic Politics",
+        "Government Affairs",
+        "Legal Issues"
       ],
-      "article_count": 70,
+      "article_count": 80,
       "refs": [
         {
-          "title": "La Libertad Avanza corre a Adorni de la agenda en Diputados para aprobar el Súper RIGI y el acuerdo con holdouts",
-          "source": "Mirador Provincial",
-          "url": "https://www.miradorprovincial.com/2026/06/23/la-libertad-avanza-corre-a-adorni-de-la-agenda-en-diputados-para-aprobar-el-super-rigi-y-el-acuerdo-con-holdouts/",
-          "date": "2026-06-23T12:30:50+00:00",
+          "title": "La Libertad Avanza quiere evitar un papelón en el Senado y Adorni no irá a dar su informe",
+          "source": "Agencia Comunas",
+          "url": "https://www.agenciacomunas.com.ar/la-libertad-avanza-quiere-evitar-un-papelon-en-el-senado-y-adorni-no-ira-a-dar-su-informe/",
+          "date": "2026-06-24T03:19:54+00:00",
           "category": "argentina"
         },
         {
-          "title": "Javier Milei y sus medidas, EN VIVO: el Presidente habla en la Fundación Faro y Adorni se reúne con senadores libertarios en busca de respaldo",
-          "source": "Impacto Castex",
-          "url": "https://impactocastex.com.ar/?p=20992",
-          "date": "2026-06-23T12:28:30+00:00",
+          "title": "En medio de la tensión con Bullrich, Adorni se apoya en Karina Milei y sigue en el Gobierno, pero con poder recortado",
+          "source": "La Nación",
+          "url": "https://www.lanacion.com.ar/politica/en-medio-de-la-pelea-con-bullrich-adorni-se-recuesta-en-karina-milei-y-sigue-en-el-gobierno-pero-con-nid24062026/",
+          "date": "2026-06-24T03:01:00+00:00",
           "category": "argentina"
         },
         {
-          "title": "La Libertad Avanza busca bloquear la interpelación de Adorni en el Senado con el respaldo de bloques aliados",
-          "source": "Canal 12 Web",
-          "url": "https://canal12web.com/la-libertad-avanza-busca-bloquear-la-interpelacion-de-adorni-en-el-senado-con-el-respaldo-de-bloques-aliados/",
-          "date": "2026-06-23T11:57:46+00:00",
+          "title": "El PRO volvió a presionar al Gobierno con un fuerte comunicado: “Manuel Adorni no puede seguir en el cargo”",
+          "source": "La 100",
+          "url": "https://la100.cienradios.com/politica/el-pro-volvio-a-presionar-al-gobierno-con-un-fuerte-comunicado-manuel-adorni-no-puede-seguir-en-el-cargo/",
+          "date": "2026-06-24T02:55:25+00:00",
           "category": "argentina"
         },
         {
-          "title": "Fabián Fernández llega a la Secretaría de Prensa y Adorni pierde el control de la comunicación",
-          "source": "El Ágora Digital",
-          "url": "https://elagora.digital/argentina/fabian-fernandez-adrian-ravier-prensa-voceria/",
-          "date": "2026-06-23T11:36:57+00:00",
+          "title": "El PRO endureció su postura y presiona al Gobierno: “Manuel Adorni no puede seguir en el cargo”",
+          "source": "» Cholila Online",
+          "url": "https://cholilaonline.ar/2026/06/el-pro-endurecio-su-postura-y-presiona-al-gobierno-manuel-adorni-no-puede-seguir-en-el-cargo.html",
+          "date": "2026-06-24T01:50:03+00:00",
           "category": "argentina"
         },
         {
-          "title": "Manuel Adorni recibe este martes al bloque de senadores de La Libertad Avanza, encabezado por Patricia Bullrich",
-          "source": "Radio Mitre",
-          "url": "https://radiomitre.cienradios.com/politica/manuel-adorni-recibe-este-martes-al-bloque-de-senadores-de-la-libertad-avanza-encabezado-por-patricia-bullrich/",
-          "date": "2026-06-23T11:34:08+00:00",
+          "title": "El PRO endureció su postura contra Manuel Adorni: No puede seguir en el cargo",
+          "source": "La Gaceta",
+          "url": "https://www.lagaceta.com.ar/nota/amp/1142501/politica/pro-endurecio-postura-contra-manuel-adorni-no-puede-seguir-cargo.html",
+          "date": "2026-06-24T00:54:24+00:00",
           "category": "argentina"
         },
         {
-          "title": "En la previa de una eventual interpelación, Manuel Adorni recibirá al bloque de senadores de LLA encabezado por Patricia Bullrich",
+          "title": "Cómo el oficialismo construyó el respaldo en Diputados para frenar la interpelación de Manuel Adorni",
           "source": "TN",
-          "url": "https://tn.com.ar/politica/2026/06/23/en-la-previa-de-una-eventual-interpelacion-manuel-adorni-recibira-al-bloque-de-senadores-de-lla-encabezado-por-patricia-bullrich/",
-          "date": "2026-06-23T09:00:00+00:00",
+          "url": "https://tn.com.ar/politica/2026/06/23/como-el-oficialismo-construyo-el-respaldo-en-diputados-para-frenar-la-interpelacion-de-manuel-adorni/?outputType=amp",
+          "date": "2026-06-24T00:51:00+00:00",
           "category": "argentina"
         },
         {
-          "title": "El oficialismo despliega una contraofensiva en el Congreso para frenar los pedidos de interpelación contra Manuel Adorni",
+          "title": "Manuel Adorni aclaró que está dispuesto a presentarse en el Senado",
+          "source": "todojujuy.com",
+          "url": "https://www.todojujuy.com/pais/manuel-adorni-aclaro-que-esta-dispuesto-presentarse-el-senado-n292134",
+          "date": "2026-06-24T00:45:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Patricia Bullrich quiere lejos a Manuel Adorni: frenó la interpelación y le exige no dar el informe de gestión",
+          "source": "Letra P",
+          "url": "https://www.letrap.com.ar/congreso/patricia-bullrich-quiere-lejos-manuel-adorni-freno-la-interpelacion-y-le-exige-no-dar-el-informe-gestion-n5424676",
+          "date": "2026-06-24T00:25:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Manuel Adorni aseguró que está dispuesto a asistir al Senado tras la suspensión de su informe de gestión",
+          "source": "Diario Río Negro",
+          "url": "https://www.rionegro.com.ar/politica/manuel-adorni-aseguro-que-esta-dispuesto-a-asistir-al-senado-tras-la-suspension-de-su-informe-de-gestion-4622926/",
+          "date": "2026-06-24T00:18:48+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "El PRO redobló la apuesta y presionó al Gobierno: “Manuel Adorni no puede seguir en el cargo”",
           "source": "TN",
-          "url": "https://tn.com.ar/politica/2026/06/23/el-oficialismo-despliega-una-contraofensiva-en-el-congreso-para-frenar-los-pedidos-de-interpelacion-contra-manuel-adorni/",
-          "date": "2026-06-23T09:00:00+00:00",
+          "url": "https://tn.com.ar/politica/2026/06/23/el-pro-redoblo-la-apuesta-y-presiono-al-gobierno-manuel-adorni-no-puede-seguir-en-el-cargo/",
+          "date": "2026-06-24T00:11:01+00:00",
           "category": "argentina"
         },
         {
-          "title": "Adorni finge gestión, la oposición blanda ayuda y mejora la confianza: ¿fin del desgaste?",
-          "source": "Perfil",
-          "url": "https://www.perfil.com/noticias/opinion/adorni-finge-gestion-la-oposicion-blanda-ayuda-y-mejora-la-confianza-fin-del-desgaste.phtml",
-          "date": "2026-06-23T08:00:00+00:00",
+          "title": "Argentina. Bullrich le mandó otro gesto a Karina y logró suspender el informe de gestión de Manuel Adorni - Resumen Latinoamericano -",
+          "source": "",
+          "url": "https://www.resumenlatinoamericano.org/2026/06/23/argentina-bullrich-le-mando-otro-gesto-a-karina-y-logro-suspender-el-informe-de-gestion-de-manuel-adorni/",
+          "date": "2026-06-23T23:46:49+00:00",
           "category": "argentina"
         },
         {
-          "title": "El Senado volverá a reunirse en Labor Parlamentaria para dilatar la interpelación de Adorni",
-          "source": "Infobae",
-          "url": "https://www.infobae.com/politica/2026/06/23/el-senado-volvera-a-reunirse-en-labor-parlamentaria-para-dilatar-la-interpelacion-de-adorni/",
-          "date": "2026-06-23T06:13:00+00:00",
+          "title": "Manuel Adorni contradijo a Bullrich tras la suspensión de su informe de gestión en el Senado: “Estoy dispuesto a ir”",
+          "source": "La Nación",
+          "url": "https://www.lanacion.com.ar/politica/manuel-adorni-contradijo-a-bullrich-tras-la-suspension-de-su-informe-de-gestion-en-el-senado-estoy-nid23062026/",
+          "date": "2026-06-23T23:33:00+00:00",
           "category": "argentina"
         },
         {
-          "title": "Los cambios en el Gobierno también influyeron en la interna y Santiago Caputo volvió a ganar terreno",
-          "source": "Infobae",
-          "url": "https://www.infobae.com/politica/2026/06/23/los-cambios-en-el-gobierno-tambien-influyeron-en-la-interna-y-santiago-caputo-volvio-a-ganar-terreno/",
-          "date": "2026-06-23T05:35:58+00:00",
+          "title": "La respuesta de Manuel Adorni tras la suspensión de su informe en el Senado",
+          "source": "Agencia Noticias Argentinas",
+          "url": "https://noticiasargentinas.com/politica/la-respuesta-de-manuel-adorni-tras-la-suspension-de-su-informe-en-el-senado_a6a3b1410d3cd8e549982ff92",
+          "date": "2026-06-23T23:21:00+00:00",
           "category": "argentina"
         },
         {
-          "title": "El Gobierno apuesta a oxigenar la comunicación y se esperanza con un relanzamiento de la gestión",
-          "source": "Infobae",
-          "url": "https://www.infobae.com/politica/2026/06/23/el-gobierno-apuesta-a-oxigenar-la-comunicacion-y-se-esperanza-con-un-relanzamiento-de-la-gestion/?outputType=amp-type",
-          "date": "2026-06-23T05:07:02+00:00",
+          "title": "Senado: Manuel Adorni contradijo la versión de Bullrich y se puso a disposición para dar su informe de gestión el 2 de julio",
+          "source": "TN",
+          "url": "https://tn.com.ar/politica/2026/06/23/senado-manuel-adorni-contradijo-la-version-de-bullrich-y-se-puso-a-disposicion-para-dar-su-informe-de-gestion-el-2-de-julio/",
+          "date": "2026-06-23T23:10:45+00:00",
           "category": "argentina"
         },
         {
-          "title": "Manuel Adorni: \"Bienvenido Fabián Fernández, nuevo Secretario de Comunicación y Prensa del Gobierno Nacional\"",
-          "source": "Tendencia de Noticias",
-          "url": "https://tendenciadenoticias.com.ar/politica/manuel-adorni-bienvenido-fabian-fernandez-nuevo-secretario-de-comunicacion-y-prensa-del-gobierno-nacional",
-          "date": "2026-06-23T04:05:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "El analista Lucas Romero habló sobre los cambios en el Gobierno: “Es una suerte de renuncia funcional de Adorni”",
-          "source": "Infobae",
-          "url": "https://www.infobae.com/politica/2026/06/23/el-analista-lucas-romero-hablo-sobre-los-cambios-en-el-gobierno-es-una-suerte-de-renuncia-funcional-de-adorni/",
-          "date": "2026-06-23T01:08:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "El oficialismo logró desinflar la sesión opositora por Manuel Adorni",
-          "source": "Uno Entre Rios",
-          "url": "https://www.unoentrerios.com.ar/el-pais/el-oficialismo-logro-desinflar-la-sesion-opositora-manuel-adorni-n10265908.html",
-          "date": "2026-06-23T00:43:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "La Fiscalía detectó fuertes inconsistencias en el patrimonio de Manuel Adorni y pone la lupa sobre gastos “en negro”",
-          "source": "Cuestión Entrerriana",
-          "url": "https://cuestionentrerriana.com.ar/la-fiscalia-detecto-fuertes-inconsistencias-en-el-patrimonio-de-manuel-adorni-y-pone-la-lupa-sobre-gastos-en-negro/",
-          "date": "2026-06-22T23:34:17+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Manuel Adorni presiona para que el Senado también postergue su interpelación",
-          "source": "Letra P",
-          "url": "https://www.letrap.com.ar/congreso/manuel-adorni-presiona-que-el-senado-tambien-postergue-su-interpelacion-n5424653",
-          "date": "2026-06-22T23:27:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "El oficialismo y aliados pactaron dilatar el debate contra Manuel Adorni en Diputados",
-          "source": "El Submarino Jujuy",
-          "url": "https://elsubmarinojujuy.com.ar/el-oficialismo-y-aliados-pactaron-dilatar-el-debate-contra-manuel-adorni-en-diputados/",
-          "date": "2026-06-22T23:25:14+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Fabián Fernández fue designado nuevo Secretario de Comunicación",
-          "source": "El Eco",
-          "url": "https://www.eleco.com.ar/nacionales/fabian-fernandez-fue-designado-nuevo-secretario-de-comunicacion",
-          "date": "2026-06-22T23:12:30+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Pullaro y el PRO de Santa Fe le tiran la pelota a Milei y le sacan el cuerpo a la interpelación de Adorni",
-          "source": "Letra P",
-          "url": "https://www.letrap.com.ar/politica/pullaro-y-el-pro-santa-fe-le-tiran-la-pelota-milei-y-le-sacan-el-cuerpo-la-interpelacion-adorni-n5424652",
-          "date": "2026-06-22T22:40:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "El oficialismo ofreció abrir una comisión para demorar la interpelación a Adorni",
-          "source": "El Eco",
-          "url": "https://www.eleco.com.ar/nacionales/el-oficialismo-ofrecio-abrir-una-comision-para-demorar-la-interpelacion-a-adorni",
-          "date": "2026-06-22T22:28:43+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Maximiliano Pullaro advirtió que si Manuel Adorni fuese funcionario en Santa Fe \"no estaría hace rato en el cargo\"",
-          "source": "C5N",
-          "url": "https://www.c5n.com/politica/maximiliano-pullaro-advirtio-que-si-manuel-adorni-fuese-funcionario-santa-fe-no-estaria-hace-rato-el-cargo-n241504",
-          "date": "2026-06-22T22:20:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "El gobierno busca hacer caer la sesión por Manuel Adorni con una reunión de comisión",
-          "source": "Diario UNO",
-          "url": "https://www.diariouno.com.ar/politica/el-gobierno-busca-hacer-caer-la-sesion-manuel-adorni-una-reunion-comision-n1568282",
-          "date": "2026-06-22T22:15:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "LA LIBERTAD AVANZA CITÓ A LA COMISIÓN DE ASUNTOS CONSTITUCIONALES",
-          "source": "Radio Provincia",
-          "url": "https://provinciaradio.com.ar/noticia.php?noti_id=22330",
-          "date": "2026-06-22T22:11:12+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "El Gobierno designó a Fabián Fernández como nuevo Secretario de Comunicación y Prensa",
-          "source": "Infobae",
-          "url": "https://www.infobae.com/politica/2026/06/22/el-gobierno-designo-a-fabian-fernandez-como-nuevo-secretario-de-comunicacion-y-prensa/",
-          "date": "2026-06-22T21:37:03+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Caso Manuel Adorni: el oficialismo acordó con el PRO y la UCR para no dar quórum en la sesión de Diputados",
-          "source": "0221",
-          "url": "https://www.0221.com.ar/nacional/caso-manuel-adorni-el-oficialismo-acordo-el-pro-y-la-ucr-no-dar-quorum-la-sesion-diputados-n129973",
-          "date": "2026-06-22T21:16:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Manuel Adorni anunció al nuevo secretario de Prensa: Fabián Fernández viene de YPF y trabajó con Néstor Grindetti en Lanús",
-          "source": "Clarin.com",
-          "url": "https://www.clarin.com/politica/manuel-adorni-anuncio-nuevo-secretario-prensa-fabian-fernandez-viene-ypf-trabajo-nestor-grindetti-lanus_0_xt193mwbpD.html",
-          "date": "2026-06-22T21:08:57+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Manuel Adorni anunció al nuevo secretario de Comunicación y Prensa, Fabián Fernández",
-          "source": "Crónica",
-          "url": "https://www.cronica.com.ar/politica/manuel-adorni-anuncio-al-nuevo-secretario-de-comunicacion-y-prensa-fabian-fernandez/",
-          "date": "2026-06-22T21:08:11+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Manuel Adorni anunció a Fabián Fernández como nuevo secretario de Comunicación y Prensa",
+          "title": "Aseguran que Manuel Adorni no asistirá al Senado el próximo 2 de julio: el motivo",
           "source": "MinutoUno",
-          "url": "https://www.minutouno.com/politica/manuel-adorni-anuncio-fabian-fernandez-como-nuevo-secretario-comunicacion-y-prensa-n6291623",
-          "date": "2026-06-22T21:04:00+00:00",
+          "url": "https://www.minutouno.com/politica/aseguran-que-manuel-adorni-no-asistira-al-senado-el-proximo-2-julio-el-motivo-n6292093",
+          "date": "2026-06-23T23:02:00+00:00",
           "category": "argentina"
         },
         {
-          "title": "Manuel Adorni, atornillado: Diego Santilli diseñó una estrategia para estirar la agonía en el Congreso",
-          "source": "MDZ Online",
-          "url": "https://www.mdzol.com/politica/manuel-adorni-atornillado-diego-santilli-diseno-una-estrategia-estirar-la-agonia-el-congreso-n1549054",
-          "date": "2026-06-22T20:56:00+00:00",
+          "title": "Bullrich confirmó que Adorni canceló su informe en el Senado: “No tiene sentido exponerlo”",
+          "source": "eldoce",
+          "url": "https://eldoce.tv/politica/2026/06/23/bullrich-confirmo-que-adorni-cancelo-su-informe-en-el-senado-no-tiene-sentido-exponerlo/",
+          "date": "2026-06-23T22:49:15+00:00",
           "category": "argentina"
         },
         {
-          "title": "La vocería de Adrián Ravier, made in Caputo: sobriedad y chicanas cero, en contraste con el karinista Adorni",
-          "source": "Letra P",
-          "url": "https://www.letrap.com.ar/politica/la-voceria-adrian-ravier-impronta-sobria-y-chicanas-contraste-manuel-adorni-n5424641",
-          "date": "2026-06-22T20:35:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Diputados: La Libertad Avanza habilita el debate en comisión por la interpelación a Manuel Adorni y busca desactivar la sesión de este martes",
-          "source": "Aire de Santa Fe",
-          "url": "https://www.airedesantafe.com.ar/politica/diputados-la-libertad-avanza-habilita-el-debate-comision-la-interpelacion-manuel-adorni-y-busca-desactivar-la-sesion-este-martes-n660823",
-          "date": "2026-06-22T19:24:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Scontro Meloni-Trump, Renzi: \"Insulti da asilo nido. Inutile fingersi anti-Trump, la trascinerà in basso\"",
-          "source": "LA7",
-          "url": "https://www.la7.it/otto-e-mezzo/video/scontro-meloni-trump-renzi-insulti-da-asilo-nido-inutile-fingersi-anti-trump-la-trascinera-in-basso-22-06-2026-649996",
-          "date": "2026-06-22T19:09:52+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Retteghetnek a korrupt politikusok, Sulyok Tamást még a nyár vége előtt leválthatják – Magyar Péter új részleteket közölt",
-          "source": "Portfolio.hu",
-          "url": "https://www.portfolio.hu/gazdasag/20260622/retteghetnek-a-korrupt-politikusok-sulyok-tamast-meg-a-nyar-vege-elott-levalthatjak-magyar-peter-uj-reszleteket-kozolt-844978",
-          "date": "2026-06-22T18:58:00+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "El oficialismo busca frenar la interpelación a Manuel Adorni en el Congreso",
-          "source": "Canal 12 Web",
-          "url": "https://canal12web.com/el-oficialismo-busca-frenar-la-interpelacion-a-manuel-adorni-en-el-congreso/",
-          "date": "2026-06-22T18:55:23+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "La Libertad Avanza acordó con el PRO y la UCR una estrategia para desactivar la ofensiva opositora contra Adorni",
-          "source": "El Esquiu",
-          "url": "https://www.elesquiu.com/politica/2026/6/22/la-libertad-avanza-acordo-con-el-pro-y-la-ucr-una-estrategia-para-desactivar-la-ofensiva-opositora-c-586342.html",
-          "date": "2026-06-22T18:50:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "PP y Vox mantienen el veto a la bandera LGTBI en Toledo y el PSOE acusa a Velázquez de “mercadear con los derechos”",
-          "source": "Elplural.com",
-          "url": "https://www.elplural.com/autonomias/castilla-la-mancha/pp-vox-mantienen-veto-bandera-lgtbi-toledo-psoe-acusa-velazquez-mercadear-derechos_393691102",
-          "date": "2026-06-22T18:35:47+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Manuel Adorni en apuros: Diputados confirmó la sesión para votar su interpelación",
-          "source": "Data Diario",
-          "url": "https://www.datadiario.com/politica/diputados-confirmo-la-sesion-para-votar-la-interpelacion-de-manuel-adorni-20266221500",
-          "date": "2026-06-22T18:14:54+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Burza wokół „Pomnika Trzech Cesarzy” w Szczecinie. Radni PiS mówią o samowoli, historycy odpowiadają: „To nie nowy pomnik”",
-          "source": "GS24",
-          "url": "https://gs24.pl/burza-wokol-pomnika-trzech-cesarzy-w-szczecinie-radni-pis-mowia-o-samowoli-historycy-odpowiadaja-to-nie-nowy-pomnik/ar/c1p2-29114559",
-          "date": "2026-06-22T18:00:00+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "LLA busca desactivar la interpelación contra Manuel Adorni en Diputados",
-          "source": "Página|12",
-          "url": "https://www.pagina12.com.ar/2026/06/22/lla-busca-desactivar-la-interpelacion-contra-manuel-adorni-en-diputados/",
-          "date": "2026-06-22T16:43:45+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Adrián Ravier inicia sus funciones: reunión con Manuel Adorni, perfil de la vocería y la primera conferencia de prensa",
-          "source": "Diario Río Negro",
-          "url": "https://www.rionegro.com.ar/politica/adrian-ravier-inicia-sus-funciones-reunion-con-manuel-adorni-perfil-de-la-voceria-y-la-primera-conferencia-de-prensa-4620817/?amp=1",
-          "date": "2026-06-22T16:22:47+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "En la Casa Rosada creen que los dólares de Insaurralde y los videos de Jesica Cirio alejan la atención sobre A...",
+          "title": "Adorni suspendió su informe en el Senado y habría sido sugerencia de Bullrich",
           "source": "Perfil",
-          "url": "https://www.perfil.com/noticias/amp/politica/en-la-casa-rosada-creen-que-los-dolares-de-insaurralde-y-los-videos-de-jessica-cirio-alejan-la-atencion-sobre-adorni.phtml",
-          "date": "2026-06-22T16:09:36+00:00",
+          "url": "https://www.perfil.com/noticias/amp/politica/adorni-suspendio-su-informe-en-el-senado-y-crecen-las-versiones-de-una-interna-con-bullrich.phtml",
+          "date": "2026-06-23T22:35:29+00:00",
           "category": "argentina"
         },
         {
-          "title": "Presionado por aliados y Patricia Bullrich, Martín Menem abre el debate sobre la continuidad de Manuel Adorni",
-          "source": "Letra P",
-          "url": "https://www.letrap.com.ar/presionado-aliados-y-patricia-bullrich-martin-menem-abre-el-debate-la-continuidad-manuel-adorni-n5424639",
-          "date": "2026-06-22T16:06:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Martín Menem acordó con el PRO y la UCR para que no den quórum en la sesión que busca interpelar a Adorni",
-          "source": "Infobae",
-          "url": "https://www.infobae.com/politica/2026/06/22/martin-menem-acordo-con-el-pro-y-la-ucr-para-que-no-den-quorum-en-la-sesion-que-busca-interpelar-a-adorni/",
-          "date": "2026-06-22T15:57:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Manuel Adorni anunció la salida del secretario de Comunicación, Javier Lanari",
-          "source": "Crónica",
-          "url": "https://www.cronica.com.ar/politica/manuel-adorni-anuncio-la-salida-del-secretario-de-comunicacion-javier-lanari-1894/",
-          "date": "2026-06-22T15:55:49+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Diputados confirmó la sesión para interpelar a Manuel Adorni por el uso de fondos públicos",
-          "source": "Mendovoz",
-          "url": "https://www.mendovoz.com/actualidad/nacionales/2026/6/22/diputados-confirmo-la-sesion-para-interpelar-manuel-adorni-por-el-uso-de-fondos-publicos-173265.html",
-          "date": "2026-06-22T15:25:42+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Maximiliano Pullaro: \"Si Manuel Adorni fuera funcionario de Santa Fe, no estaría desde hace rato en su cargo\"",
-          "source": "Crónica",
-          "url": "https://www.cronica.com.ar/politica/maximiliano-pullaro-si-manuel-adorni-fuera-funcionario-de-santa-fe-no-estaria-desde-hace-rato-en-su-cargo/",
-          "date": "2026-06-22T15:22:01+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Diputados: LLA convoca a la comisión de Asuntos Constitucionales por el caso Adorni para desactivar la sesión de mañana",
-          "source": "TN",
-          "url": "https://tn.com.ar/politica/2026/06/22/diputados-lla-convoca-a-la-comision-de-asuntos-constitucionales-por-el-caso-adorni-para-desactivar-la-sesion-de-manana/",
-          "date": "2026-06-22T14:41:50+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Diputados: acuerdo del oficialismo con la UCR y el PRO para no dar quórum en la sesión que quiere interpelar a Manuel Adorni",
-          "source": "Diario Río Negro",
-          "url": "https://www.rionegro.com.ar/politica/diputados-confirmo-para-este-martes-la-sesion-que-busca-avanzar-en-la-interpelacion-a-manuel-adorni-4620510/",
-          "date": "2026-06-22T13:59:42+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Manuel Adorni se reúne con senadores antes de su posible interpelación en el Congreso",
+          "title": "Se bajó Manuel Adorni y no irá al Senado para brindar el informe de gestión",
           "source": "Cba24n",
-          "url": "https://www.cba24n.com.ar/argentina/manuel-adorni-se-reune-con-senadores-antes-de-su-posible-interpelacion-en-el-congreso_a6a39221f3f0a4955d44d8350",
-          "date": "2026-06-22T13:27:11+00:00",
+          "url": "https://www.cba24n.com.ar/argentina/se-bajo-manuel-adorni-y-no-ira-al-senado-para-brindar-el-informe-de-gestion_a6a3b048a3f0a4955d45c780a",
+          "date": "2026-06-23T22:27:48+00:00",
           "category": "argentina"
         },
         {
-          "title": "Diputados sesionará para definir la interpelación al jefe de Gabinete Manuel Adorni",
-          "source": "El Eco",
-          "url": "https://www.eleco.com.ar/politica/diputados-sesionara-para-definir-la-interpelacion-al-jefe-de-gabinete-manuel-adorni",
-          "date": "2026-06-22T12:39:01+00:00",
+          "title": "Manuel Adorni suspendió el informe de gestión que iba a presentar en el Senado",
+          "source": "Filo News",
+          "url": "https://www.filo.news/noticia/2026/06/23/manuel-adorni-suspendio-el-informe-de-gestion-que-iba-a-presentar-en-el-senado",
+          "date": "2026-06-23T22:26:00+00:00",
           "category": "argentina"
         },
         {
-          "title": "Con la interpelación a Manuel Adorni en el temario, la Cámara de Diputados sesionará este martes",
+          "title": "Manuel Adorni suspendió su informe de gestión en el Senado y crecen las versiones sobre los motivos",
           "source": "0221",
-          "url": "https://www.0221.com.ar/nacional/con-la-interpelacion-manuel-adorni-el-temario-la-camara-diputados-sesionara-este-martes-n129941",
-          "date": "2026-06-22T12:00:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Tras semanas complejas, el Gobierno intenta reordenar la agenda con Ravier",
-          "source": "El Eco",
-          "url": "https://www.eleco.com.ar/nacionales/tras-semanas-complejas-el-gobierno-intenta-reordenar-la-agenda-con-ravier",
-          "date": "2026-06-22T10:23:33+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Manuel Adorni pone en jaque la agenda parlamentaria en el Congreso",
-          "source": "Diario Mendoza Today",
-          "url": "https://mendozatoday.com.ar/nacionales/manuel-adorni-pone-en-jaque-la-agenda-parlamentaria-en-el-congreso/",
-          "date": "2026-06-22T09:41:22+00:00",
+          "url": "https://www.0221.com.ar/nacional/manuel-adorni-suspendio-su-informe-gestion-el-senado-y-crecen-las-versiones-los-motivos-n130044",
+          "date": "2026-06-23T22:19:00+00:00",
           "category": "argentina"
         }
       ],
       "first_seen": "2026-06-23T04:48:44+00:00",
-      "last_seen": "2026-06-23T15:41:19+00:00"
+      "last_seen": "2026-06-24T04:53:09+00:00"
     },
     {
-      "id": "peter-magyar",
-      "name": "Péter Magyar",
-      "role": "Prime Minister of Hungary",
-      "blurb": "Magyar has become a defining figure in Hungary's political landscape by launching an anti-corruption campaign and proposing significant constitutional reforms. His 'Clean Fire' operation aims to dismantle what he describes as the 'Orbán mafia,' and his plans to remove the current president and limit parliamentary terms have generated intense media coverage and political debate.",
-      "prominence": 4,
+      "id": "jimmie-akesson",
+      "name": "Jimmie Åkesson",
+      "role": "Leader of the Sweden Democrats",
+      "blurb": "Jimmie Åkesson remains a key figure in Swedish politics, with recent coverage focusing on internal power struggles within the Sweden Democrats and his public appearances. The news cycle highlights his party's influence on Sweden's migration policies and the broader political landscape. Åkesson's statements and actions continue to generate significant media attention and debate.",
+      "prominence": 3,
       "signals": [
-        "anti-corruption campaign",
-        "constitutional reforms",
-        "leadership challenge",
-        "political restructuring"
+        "internal power struggles",
+        "public appearances",
+        "migration policies",
+        "political influence",
+        "party leadership"
       ],
       "categories": [
-        "Government Leadership",
-        "Anti-Corruption",
-        "Constitutional Reform"
+        "Domestic Politics",
+        "Migration Policy",
+        "Party Leadership"
       ],
-      "article_count": 60,
+      "article_count": 50,
       "refs": [
         {
-          "title": "Itthon: Magyar Péter elvenné Novák Katalin és Schmitt Pál élethosszig tartó juttatását",
-          "source": "| hvg.hu",
-          "url": "https://hvg.hu/itthon/20260623_magyar-peter-koztarsasagi-elnok-elethosszig-tarto-juttatas-megvonas-javaslat-ebx",
-          "date": "2026-06-23T12:25:14+00:00",
-          "category": "hungary"
+          "title": "Okända maktstriden inom SD – larmet gick till Åkesson i Thailand",
+          "source": "Dagens Nyheter",
+          "url": "https://www.dn.se/sverige/okanda-maktstriden-inom-sd-larmet-gick-till-akesson-i-thailand/",
+          "date": "2026-06-24T04:12:35+00:00",
+          "category": "sweden"
         },
         {
-          "title": "Hoppon maradt Hadházy, nem kér belőle a Tisza",
-          "source": "ORIGO",
-          "url": "https://www.origo.hu/belpol/2026/06/hadhazy-akos-tisza-kormany",
-          "date": "2026-06-23T12:16:07+00:00",
-          "category": "hungary"
+          "title": "Kändisarnas protest mot Jimmie Åkesson",
+          "source": "Expressen",
+          "url": "https://www.expressen.se/nyheter/politik/kandisarnas-protest-mot-jimmie-akesson-/",
+          "date": "2026-06-24T04:08:05+00:00",
+          "category": "sweden"
         },
         {
-          "title": "Magyar Péter Szijjártón élezte a nyelvét – sokan nevettek",
-          "source": "RTL.hu",
-          "url": "https://rtl.hu/belfold/2026/06/23/magyar-peter-szijjarton-elezte-a-nyelvet-sokan-nevettek",
-          "date": "2026-06-23T12:15:00+00:00",
-          "category": "hungary"
+          "title": "Jimmie Åkesson håller pressträff",
+          "source": "Via TT",
+          "url": "https://via.tt.se/pressmeddelande/4449640/jimmie-akesson-haller-presstraff?publisherId=3236128&lang=sv",
+          "date": "2026-06-24T04:00:00+00:00",
+          "category": "sweden"
         },
         {
-          "title": "Orbán Balázs szerint nem neki kell változnia, a Tisza-kormány politikáját éri majd utol a valóság",
-          "source": "Népszava",
-          "url": "https://nepszava.hu/3326852_orban-balazs-fidesz-tisza-kormany-ellenzek-valosag",
-          "date": "2026-06-23T12:00:00+00:00",
-          "category": "hungary"
+          "title": "Manifestation med stora artistnamn – när Åkesson håller tal",
+          "source": "Helagotland",
+          "url": "https://www.helagotland.se/nyheter/visby/artikel/artister-och-greenpeace-i-manifestation-i-almedalen/lyx8yg6r",
+          "date": "2026-06-24T03:55:00+00:00",
+          "category": "sweden"
         },
         {
-          "title": "Az olasz maffiához hasonlította a Fideszt és gazdasági holdudvarát Magyar Péter",
-          "source": "atv.hu",
-          "url": "https://www.atv.hu/videok/az-olasz-maffiahoz-hasonlitotta-a-fideszt-es-gazdasagi-holdudvarat-magyar-peter/",
-          "date": "2026-06-23T11:48:52+00:00",
-          "category": "hungary"
+          "title": "LEIPH BERGGREN (FD. L): Därför ser jag SD:s fascistiska ambitioner",
+          "source": "Helagotland",
+          "url": "https://www.helagotland.se/ledare/svergiedemokraterna/artikel/darfor-ser-jag-sds-fascistiska-ambitioner/jvzgzppr",
+          "date": "2026-06-24T02:56:00+00:00",
+          "category": "sweden"
         },
         {
-          "title": "Kezdeményezi a polgármesteri fizetések befagyasztását a Tisza-kormány",
-          "source": "atv.hu",
-          "url": "https://www.atv.hu/videok/kezdemenyezi-a-polgarmesteri-fizetesek-befagyasztasat-a-tisza-kormany/",
-          "date": "2026-06-23T11:48:52+00:00",
-          "category": "hungary"
+          "title": "Buschs nya utspel: sågar Åkesson och regeringens migrationspolitik",
+          "source": "frihetsnytt.se",
+          "url": "https://frihetsnytt.se/buschs-nya-utspel-sagar-akesson-och-regeringens-migrationspolitik/",
+          "date": "2026-06-24T01:58:32+00:00",
+          "category": "sweden"
         },
         {
-          "title": "Átfogó alkotmányozási programot indít a Tisza-kormány szeptembertől",
-          "source": "HírTv",
-          "url": "https://hirtv.origo.hu/ahirtvhirei/2026/06/alkotmanyozasi-program-tisza-kormany",
-          "date": "2026-06-23T11:33:11+00:00",
-          "category": "hungary"
+          "title": "Det är partiledaren väljarna helst vill dricka en öl med",
+          "source": "Nyheter24",
+          "url": "https://nyheter24.se/nyheter/politik/1493697-det-ar-partiledaren-valjarna-helst-vill-dricka-en-ol-med",
+          "date": "2026-06-23T18:45:00+00:00",
+          "category": "sweden"
         },
         {
-          "title": "„Megszabadítjuk a magyarokat a politikai és gazdasági maffiától” – Magyar Péter elindítja a Tisztítótűz műveletet",
-          "source": "RTL.hu",
-          "url": "https://rtl.hu/reggeli/2026/06/23/magyar-peter-tisztitotuz-muvelet-parlament-virag-andrea",
-          "date": "2026-06-23T11:30:00+00:00",
-          "category": "hungary"
+          "title": "Högerprofilerna om Tidös tuffa läge: ”Få ner L till noll”",
+          "source": "Omni",
+          "url": "https://omni.se/hogerprofilerna-om-tidos-tuffa-lage-fa-ner-l-till-noll/a/8pR53w",
+          "date": "2026-06-23T17:58:54+00:00",
+          "category": "sweden"
         },
         {
-          "title": "Elfogadta a médiatörvény módosítását a Parlament",
-          "source": "HírTv",
-          "url": "https://hirtv.origo.hu/ahirtvhirei/2026/06/mediatorveny-kozmedia-parlament",
-          "date": "2026-06-23T11:14:55+00:00",
-          "category": "hungary"
+          "title": "HANS STIGSSON: Blågula blocket har inte råd med några solospel",
+          "source": "NT",
+          "url": "https://www.nt.se/ledare/artikel/blagula-blocket-har-inte-rad-med-nagra-solospel/r5p2dpgj",
+          "date": "2026-06-23T17:00:00+00:00",
+          "category": "sweden"
         },
         {
-          "title": "Tisza-kormány: megszűnik a közmédia, ahogy eddig ismertük, és a védett üzemanyagárat is eltörölték",
-          "source": "Portfolio.hu",
-          "url": "https://www.portfolio.hu/gazdasag/20260623/tisza-kormany-magyar-peter-nagy-tervvel-allt-elo-delutan-jon-a-v4-csucs-godollon-844990",
-          "date": "2026-06-23T10:55:00+00:00",
-          "category": "hungary"
+          "title": "OPINION: Debatt: Varför tro på Jimmie Åkesson den här gången?",
+          "source": "Sydöstran",
+          "url": "https://www.sydostran.se/insandare/varfor-ska-vanligt-folk-tro-pa-jimmie-akesson-den-har-gangen/",
+          "date": "2026-06-23T16:19:24+00:00",
+          "category": "sweden"
         },
         {
-          "title": "Zsebre megy: már most Sulyok Tamás után nyúlna Magyar Péter",
-          "source": "Privátbankár.hu",
-          "url": "https://privatbankar.hu/cikkek/kozerdeku/zsebre-megy-mar-most-sulyok-tamas-utan-nyulna-magyar-peter.html",
-          "date": "2026-06-23T10:19:00+00:00",
-          "category": "hungary"
+          "title": "Bara Liberalerna kan stoppa Jimmie Åkesson",
+          "source": "TTELA",
+          "url": "https://www.ttela.se/asikt/ledare/bara-liberalerna-kan-stoppa-jimmie-akesson.caa0572d-84c5-439d-8164-28c3744329a5",
+          "date": "2026-06-23T15:00:00+00:00",
+          "category": "sweden"
         },
         {
-          "title": "Itthon: Magyar Péter: A fideszes képviselők megint elárulták a hazájukat",
-          "source": "| hvg.hu",
-          "url": "https://hvg.hu/itthon/20260623_magyar-peter-fidesz-tisza-parlament-arulas-miniszterelnok-kormanypart-torveny-szavazas",
-          "date": "2026-06-23T10:13:50+00:00",
-          "category": "hungary"
+          "title": "Mätningen: Noll procent vill gå på pub med Mohamsson",
+          "source": "ETC.se",
+          "url": "https://www.etc.se/inrikes/maetningen-noll-procent-vill-gaa-paa-pub-med-mohamsson",
+          "date": "2026-06-23T14:50:00+00:00",
+          "category": "sweden"
         },
         {
-          "title": "Magyar Péter: „elárulták a hazájukat”",
-          "source": "Infostart",
-          "url": "https://infostart.hu/belfold/2026/06/23/magyar-peter-elarultak-a-hazajukat",
-          "date": "2026-06-23T09:50:00+00:00",
-          "category": "hungary"
+          "title": "Unga förstagångsväljare ölar helst med Åkesson",
+          "source": "Bulletin",
+          "url": "https://bulletin.nu/unga-forstagangsvaljare-olar-helst-med-akesson",
+          "date": "2026-06-23T14:45:25+00:00",
+          "category": "sweden"
         },
         {
-          "title": "Gentiloni: bene Mattarella, solidarietà a Meloni",
-          "source": "Sky TG24",
-          "url": "https://tg24.sky.it/politica/video/2026/06/23/gentiloni-bene-mattarella-solidarieta-a-meloni-1107067",
-          "date": "2026-06-23T09:27:23+00:00",
-          "category": "italy"
+          "title": "Nej, slöjan är inget hot – men SD:s förbud är det",
+          "source": "Aftonbladet",
+          "url": "https://www.aftonbladet.se/debatt/a/OkW6WO/nej-slojan-ar-inget-hot-men-sd-s-forbud-ar-det",
+          "date": "2026-06-23T13:38:15+00:00",
+          "category": "sweden"
         },
         {
-          "title": "Magyar Péter a havi több millió forintos juttatásaitól is megfosztaná Sulyok Tamást",
-          "source": "Telex",
-          "url": "https://telex.hu/belfold/2026/06/23/magyar-peter-sulyok-tamas-elete-vegeig-jaro-juttatas-elvonas",
-          "date": "2026-06-23T09:27:12+00:00",
-          "category": "hungary"
+          "title": "Busch om att SD ska ansvara för integration: ”Inte i min värld”",
+          "source": "Omni",
+          "url": "https://omni.se/busch-om-sd-s-ansvar-for-integrationen-inte-i-min-varld/a/8pR59d",
+          "date": "2026-06-23T13:04:41+00:00",
+          "category": "sweden"
         },
         {
-          "title": "Tisza-kormány: megszavazták a médiatörvényt, gyökeresen átalakul a közmédia",
-          "source": "Portfolio.hu",
-          "url": "https://www.portfolio.hu/gazdasag/20260623/tisza-kormany-megszavaztak-a-mediatorvenyt-gyokeresen-atalakul-a-kozmedia-844990",
-          "date": "2026-06-23T09:17:00+00:00",
-          "category": "hungary"
+          "title": "SD presenterar karta över moskéer i Sverige",
+          "source": "Kvartal",
+          "url": "https://kvartal.se/pellezackrisson/artiklar/sd-presenterar-karta-over-moskeer-i-sverige/cG9zdDoxMzUzNjk",
+          "date": "2026-06-23T08:18:25+00:00",
+          "category": "sweden"
         },
         {
-          "title": "Felállva tapsoltak a képviselők, miután megszavazták a Tisza eddigi legnagyobb javaslatcsomagját",
-          "source": "Index.hu",
-          "url": "https://index.hu/belfold/2026/06/23/orszaggyules-parlament-europai-unio-unios-penzek/",
-          "date": "2026-06-23T09:05:00+00:00",
-          "category": "hungary"
+          "title": "Sweden Democrats launch retro election campaign to make 'Sweden like Sweden again'",
+          "source": "The Local Sweden",
+          "url": "https://www.thelocal.se/20260623/sweden-democrats-launch-retro-election-campaign-to-make-sweden-like-sweden-again?gaa_at=eafs&gaa_n=AVngi4jtI6iUFS1hEPTfXBrCPfYtPU4ci_uSueHiqO-5ZSnntz07rdVW4A-K&gaa_ts=6a3a5829&gaa_sig=AetRlDa7h3Wmq9reVhQ4QrwahapmTfG8bhLSWLI9IbouXjS38eYPLfR5oQ-Shk5dSUUli_85fBoY6h1SIxQ8cA%3D%3D",
+          "date": "2026-06-23T07:27:07+00:00",
+          "category": "sweden"
         },
         {
-          "title": "Magyar Péter: Közép-Európa jelen van, erős, és készen áll arra, hogy saját jövőjét alakítsa",
-          "source": "EgerHírek",
-          "url": "https://egerhirek.hu/2026/06/23/magyar-peter-kozep-europa-jelen-van-eros-es-keszen-all-arra-hogy-sajat-jovojet-alakitsa/kozelet/egerhirek",
-          "date": "2026-06-23T09:02:00+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Elfogadta a parlament a médiatörvényt, amivel felszámolják a jelenlegi közmédiát",
-          "source": "Telex",
-          "url": "https://telex.hu/belfold/2026/06/23/mediatorveny-elfogadas-kozmedia-atalakitasa-sajtoalap-mtva-mti",
-          "date": "2026-06-23T08:49:15+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Bóka János rákosista módszerekkel vádolja a kormányt, Magyar Péter szerint ezrek haltak meg Bóka János miatt",
-          "source": "444",
-          "url": "https://444.hu/2026/06/23/boka-janos-rakosista-modszerekkel-vadolja-a-kormanyt-magyar-peter-szerint-ezrek-haltak-meg-boka-janos-miatt",
-          "date": "2026-06-23T08:45:11+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Bóka János: Rákosi Mátyás forgatókönyvét alkalmazzák - Magyar Péter: Mit képzel ön magáról?",
-          "source": "Index.hu",
-          "url": "https://index.hu/belfold/2026/06/23/orszaggyules-parlament-tisza-part-magyar-peter-fidesz-kdnp-vita-gulyas-gergely-mi-hazank-mozgalom-toroczkai-laszlo/boka-janos-rakosi-matyas-forgatokonyvet-alkalmazzak---magyar-peter-mit-kepzel-on-magarol-/",
-          "date": "2026-06-23T08:22:58+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Magyar Péter szerint az állam százmilliókkal támogatta Tusványost, ahova nem merték meghívni",
-          "source": "444",
-          "url": "https://444.hu/2026/06/23/magyar-peter-szerint-az-allam-szazmilliokkal-tamogatta-tusvanyost-ahova-nem-mertek-meghivni",
-          "date": "2026-06-23T08:19:59+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "VOX registra en el Parlamento de Canarias una iniciativa para garantizar la rehabilitación y reapertura del Hospital Insular de Lanzarote",
-          "source": "Isladelanzarote.com",
-          "url": "https://isladelanzarote.com/vox-registra-en-el-parlamento-de-canarias-una-iniciativa-para-garantizar-la-rehabilitacion-y-reapertura-del-hospital-insular-de-lanzarote/",
-          "date": "2026-06-23T08:06:47+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Magyar Péter: Közép-Európa készen áll arra, hogy saját jövőjét alakítsa",
-          "source": "Magyar Hang",
-          "url": "https://hang.hu/belfold/magyar-peter-kozep-europa-keszen-all-arra-hogy-sajat-jovojet-alakitsa-189888",
-          "date": "2026-06-23T07:45:00+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Magyar Péter a V4-csúcs előtt: Mind tudjuk, milyen érzés úgy élni, hogy saját sorsunkról idegen fővárosban döntenek",
-          "source": "| hvg.hu",
-          "url": "https://hvg.hu/itthon/20260623_magyar-peter-parlament-napirend-elott",
-          "date": "2026-06-23T07:35:11+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "El Congreso debate este martes la reforma VOX para que el voto por correo se cuente por separado y evitar el...",
-          "source": "gaceta.es",
-          "url": "https://gaceta.es/espana/el-congreso-debate-este-martes-la-reforma-vox-para-que-el-voto-por-correo-se-cuente-por-separado-y-evitar-el-fraude-electoral-20260623-0930/",
-          "date": "2026-06-23T07:32:26+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Magyar Péter: Az Orbán-kormány újraélesztette Magyarország tragédiáját",
-          "source": "24.hu",
-          "url": "https://24.hu/belfold/2026/06/23/magyar-peter-v4-parlament/",
-          "date": "2026-06-23T07:28:00+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Kivette a TISZA az Átlátszó által is kifogásolt részt a törvénymódosító javaslatok közül",
-          "source": "atlatszo.hu",
-          "url": "https://atlatszo.hu/kozugy/2026/06/23/kivette-a-tisza-az-atlatszo-altal-is-kifogasolt-reszt-a-torvenymodosito-javaslatok-kozul/",
-          "date": "2026-06-23T07:06:42+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Tisza-kormány: indul a V4-csúcs Gödöllőn, élőben beszél Magyar Péter",
-          "source": "Portfolio.hu",
-          "url": "https://www.portfolio.hu/gazdasag/20260623/tisza-kormany-indul-a-v4-csucs-godollon-eloben-beszel-magyar-peter-844990",
-          "date": "2026-06-23T07:02:00+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Magyar Péter nem csak az interneten szörföl: Így hódította meg a hullámokat is",
-          "source": "RTL.hu",
-          "url": "https://rtl.hu/bulvar/2026/06/23/magyar-peter-szorf-miniszterelnok-nyar",
-          "date": "2026-06-23T07:00:00+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Itt vannak a részletek a szuperhatóságról, amellyel Magyar Péter felszámolná a „magyar Cosa Nostrát”",
-          "source": "Index.hu",
-          "url": "https://index.hu/belfold/2026/06/23/magyar-peter-nvvh-tisztitotuz-muvelet-vagyon-vedelem-hivatal/",
-          "date": "2026-06-23T06:06:00+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Magyar Péter: Vizsgálhatja az NVVH azokat a cégeket, amelyek éves árbevételének 75 százaléka közbeszerzésből származik",
-          "source": "Népszava",
-          "url": "https://nepszava.hu/3326818_nvvh-magyar-peter-cegek-vizsgalat-arbevetel-75-szazalek",
-          "date": "2026-06-23T06:01:00+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Magyar Péter szerint akár kormánytag vagy Tisza Sziget-tag is lehet a következő köztársasági elnök – Szegedi hírek",
-          "source": "Szeged365",
-          "url": "https://szeged365.hu/2026/06/23/magyar-peter-szerint-akar-kormanytag-vagy-tisza-sziget-tag-is-lehet-a-kovetkezo-koztarsasagi-elnok/",
-          "date": "2026-06-23T05:52:22+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Afera orderowa nie zmieni geografii – ani Polski, ani Ukrainy",
-          "source": "TVP Info",
-          "url": "https://www.tvp.info/93955219/odebranie-orderu-zelenskiemu-przez-nawrockiego-dlaczego-ukraina-igra-z-polska",
-          "date": "2026-06-23T05:20:00+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Lemond és távozik egy fideszes politikus",
-          "source": "24.hu",
-          "url": "https://24.hu/belfold/2026/06/23/lemondas-fidesz-ori-laszlo/",
-          "date": "2026-06-23T05:01:00+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Magyar Péter arra törekszik, hogy újjáélessze a gyengélkedő V4 együttműködést",
-          "source": "Euronews",
-          "url": "https://hu.euronews.com/2026/06/23/magyar-peter-arra-torekszik-hogy-ujjaelessze-a-gyengelkedo-v4-egyuttmukodest",
-          "date": "2026-06-23T04:30:34+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Tizenöt év után kiszáll a közéletből a Fidesz egyik meghatározó baranyai politikusa, az elszámoltatásról is megszólalt",
-          "source": "Index.hu",
-          "url": "https://index.hu/belfold/2026/06/23/ori-laszlo-baranya-pecs-fidesz-elnok-lemondas-csizi-peter-csizmadia-peter-nagy-csaba-varmegye/",
-          "date": "2026-06-23T04:27:00+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "A Hormuzi-szoros miatt még visszaüthet Magyar Péter bejelentése",
-          "source": "ORIGO",
-          "url": "https://www.origo.hu/belpol/2026/06/hormuzi-szoros-olaj-magyar-peter-vedett-ar",
-          "date": "2026-06-23T04:05:13+00:00",
-          "category": "hungary"
+          "title": "Industrisemestern startar – då laddar Sveriges största partier upp",
+          "source": "Aftonbladet",
+          "url": "https://www.aftonbladet.se/nyheter/a/6ql3Me/s-sd-och-m-laddar-upp-infor-valet-mitt-i-semestern",
+          "date": "2026-06-23T05:54:57+00:00",
+          "category": "sweden"
         },
         {
           "title": "Lita inte på Åkessons löften om a-kassan",
@@ -1549,836 +849,15 @@
           "category": "sweden"
         },
         {
-          "title": "Fix 3%-os hitelek: beintett a Tisza-kormány az egyiknek, felkészül az Otthon Start?",
-          "source": "Portfolio.hu",
-          "url": "https://www.portfolio.hu/bank/20260623/fix-3-os-hitelek-beintett-a-tisza-kormany-az-egyiknek-felkeszul-az-otthon-start-844936",
+          "title": "DEBATT: SD: En piska mot stans bilister - Jönköpings-Posten",
+          "source": "",
+          "url": "https://www.jp.se/debatt/darfor-sager-vi-nej-till-politik-som-forsvarar-bilresandet/",
           "date": "2026-06-23T04:00:00+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Videó: Magyar Péter rendkívüli sajtótájékoztatója",
-          "source": "HírTv",
-          "url": "https://hirtv.origo.hu/video/magyar-peter-rendkivuli-sajtotajekoztatoja",
-          "date": "2026-06-23T02:38:10+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Meloni: “Il caso è chiuso, non boicottiamo gli Usa”. Trump: “Italia cattiva”",
-          "source": "la Repubblica",
-          "url": "https://www.repubblica.it/politica/2026/06/23/news/meloni_frena_su_trump_usa-425427909/",
-          "date": "2026-06-22T23:00:00+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Locutor y especialista en comunicación institucional: quién es Fabián Fernández, el nuevo Secretario de Prensa",
-          "source": "Infobae",
-          "url": "https://www.infobae.com/politica/2026/06/22/locutor-y-especialista-en-comunicacion-institucional-quien-es-fabian-fernandez-el-nuevo-secretario-de-prensa/",
-          "date": "2026-06-22T21:46:44+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Szinte teljesen eltüntetné a jelenlegi ellenzéki frakciókat a Tisza-kormány az Alaptörvény 17. módosításával",
-          "source": "ORIGO",
-          "url": "https://www.origo.hu/belpol/2026/06/tisza-kormany-alaptorveny-17-modositas",
-          "date": "2026-06-22T20:08:00+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Elindítja a Tisza a Tisztítótűz-műveletet – a nap hírei",
-          "source": "Infostart",
-          "url": "https://infostart.hu/belfold/2026/06/22/elinditja-a-tisza-a-tisztitotuz-muveletet-a-nap-hirei",
-          "date": "2026-06-22T20:05:00+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Magyar Péter: az új szuperhatóság „mindent látni fog és elhozza a várt eredményeket”",
-          "source": "Infostart",
-          "url": "https://infostart.hu/belfold/2026/06/22/magyar-peter-az-uj-szuperhatosag-mindent-latni-fog-es-elhozza-a-vart-eredmenyeket",
-          "date": "2026-06-22T19:53:00+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Magyar Péter szerint nemcsak a fideszesek, a tiszások miatt is fontos lesz a vagyonvédelmi hivatal",
-          "source": "Telex",
-          "url": "https://telex.hu/belfold/2026/06/22/magyar-peter-atv-interju-szuperhatosag-tiszasok-fideszesek",
-          "date": "2026-06-22T19:32:20+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Magyar Péter elárulta, hogy kihelyezett kormányülés lesz a hétvégén",
-          "source": "Magyar Hang",
-          "url": "https://hang.hu/belfold/magyar-peter-189875",
-          "date": "2026-06-22T19:05:00+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Magyar Péter: Állami felügyelet alá kerülhetnek azok a cégek, akik nem bánnak megfelelően a közpénzzel",
-          "source": "| hvg.hu",
-          "url": "https://hvg.hu/itthon/20260622_magyar-peter-allami-felugyelet-cegek-nav-kozpenz",
-          "date": "2026-06-22T18:44:22+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Tisza-kormány: Magyar Péter bejelentést tett a vagyonvisszaszerzési hivatalról, elszámoltatás kezdődik a Tisztítótűz művelettel",
-          "source": "Portfolio.hu",
-          "url": "https://www.portfolio.hu/gazdasag/20260622/tisza-kormany-magyar-peter-bejelentest-tett-a-vagyonvisszaszerzesi-hivatalrol-elszamoltatas-kezdodik-a-tisztitotuz-muvelettel-844742",
-          "date": "2026-06-22T18:27:00+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Itthon: Magyar Péter: Az új államfőnek tudnia kell, hogy csak ideiglenes megbízása lesz",
-          "source": "| hvg.hu",
-          "url": "https://hvg.hu/itthon/20260622_magyar-peter-tisztitotuzi-gulyas-gergely-sulyok-tamas",
-          "date": "2026-06-22T18:13:28+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Magyar Péter beszélt a leendő köztársasági elnökről, az alkotmányozásról és a vagyonvisszaszerzésről",
-          "source": "Portfolio.hu",
-          "url": "https://www.portfolio.hu/gazdasag/20260622/magyar-peter-beszelt-a-leendo-koztarsasagi-elnokrol-az-alkotmanyozasrol-es-a-vagyonvisszaszerzesrol-844964",
-          "date": "2026-06-22T17:35:00+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Magyar Péter háromnapos kihelyezett kormányülésről, valamint a következő államfő személyéről is beszélt",
-          "source": "Index.hu",
-          "url": "https://index.hu/belfold/2026/06/22/magyar-peter-interju-tisztitotuz-muvelet-sulyok-tamas-tisza-part-kormanyules/",
-          "date": "2026-06-22T17:33:00+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Péntektől háromnapos kihelyezett kormányülést tart a Tisza",
-          "source": "Telex",
-          "url": "https://telex.hu/belfold/2026/06/22/magyar-peter-interju-444-tisztitotuz-alaptorveny-modositas-sulyok-tamas",
-          "date": "2026-06-22T17:22:14+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Magyar Péter: az új köztársasági elnök megbízatása akár ideiglenes is lehet",
-          "source": "Infostart",
-          "url": "https://infostart.hu/belfold/2026/06/22/magyar-peter-a-heten-kihelyezett-kormanyulest-tart-a-tisza-kormany",
-          "date": "2026-06-22T17:14:00+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Magyar: akár kormánytag vagy Tisza Sziget-tag is lehet a következő köztársasági elnök",
-          "source": "24.hu",
-          "url": "https://24.hu/belfold/2026/06/22/magyar-kormanytag-koztarsasagi-elnok/",
-          "date": "2026-06-22T16:57:00+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "\"A Sulyok Tamás-történetnek a mai nappal vége\" – Galgóczi Eszter a Magyar Péter által bejelentett Tisztítótűz-műveletről",
-          "source": "24.hu",
-          "url": "https://24.hu/belfold/2026/06/22/galgoczi-eszter-sulyok-tamas-vagyonvisszaszerzes-interju/",
-          "date": "2026-06-22T16:56:00+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Kihelyezett ülést szervez a Tisza-kormány, Magyar Péter mindenkitől kritikát vár",
-          "source": "Portfolio.hu",
-          "url": "https://www.portfolio.hu/gazdasag/20260622/kihelyezett-ulest-szervez-a-tisza-kormany-magyar-peter-mindenkitol-kritikat-var-844954",
-          "date": "2026-06-22T16:45:00+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Rendkívüli támogatásokat fizetne a Tisza-kormány az országot pusztító hőség miatt",
-          "source": "Portfolio.hu",
-          "url": "https://www.portfolio.hu/gazdasag/20260622/rendkivuli-tamogatasokat-fizetne-a-tisza-kormany-az-orszagot-pusztito-hoseg-miatt-844948",
-          "date": "2026-06-22T16:33:00+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Magyar Péter szerint szeptemberre kiderülhet, ki lesz a vagyonvisszaszerzési hivatal elnöke",
-          "source": "24.hu",
-          "url": "https://24.hu/belfold/2026/06/22/magyar-peter-szerint-szeptembere-kiderulhet-ki-lesz-a-vagyonvisszaszerzesi-hivatal-elnoke/",
-          "date": "2026-06-22T16:30:00+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Elárulta Magyar Péter, mikorra állhat fel a vagyonvisszaszerzési hivatal",
-          "source": "Privátbankár.hu",
-          "url": "https://privatbankar.hu/cikkek/kozerdeku/elarulta-magyar-peter-mikorra-allhat-fel-a-vagyonvisszaszerzesi-hivatal.html",
-          "date": "2026-06-22T16:07:00+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Tisztítótűz és vagyonvisszaszerzés – Magyar Péter a 444-en",
-          "source": "444",
-          "url": "https://444.hu/2026/06/22/tisztitotuz-es-vagyonvisszaszerzes-magyar-peter-a-444-en",
-          "date": "2026-06-22T16:04:12+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Magyar Péter: augusztus 20-a előtt lesz új köztársasági elnök",
-          "source": "Mfor.hu",
-          "url": "https://mfor.hu/cikkek/kozerdeku/magyar-peter-augusztus-20-a-elott-lesz-uj-koztarsasagi-elnok.html",
-          "date": "2026-06-22T15:51:00+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Magyar Péter Alaptörvény-módosítással távolítaná el pozíciójából a köztársasági elnököt",
-          "source": "HírTv",
-          "url": "https://hirtv.origo.hu/ahirtvhirei/2026/06/magyar-peter-alaptorveny-modositas-sulyok-tamas",
-          "date": "2026-06-22T15:41:55+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Magyar Péter: hamarosan távozik a legfőbb ügyész",
-          "source": "Portfolio.hu",
-          "url": "https://www.portfolio.hu/gazdasag/20260622/magyar-peter-hamarosan-tavozik-a-legfobb-ugyesz-844934",
-          "date": "2026-06-22T15:39:00+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "„Sulyok Tamás július 20-a körül már nem lesz Magyarország köztársasági elnöke” – pörög a Tisza által indított társadalmi egyeztetés",
-          "source": "Forbes.hu",
-          "url": "https://www.forbes.hu/hirek/sulyok-tamas-julius-20-a-korul-mar-nem-lesz-magyarorszag-koztarsasagi-elnoke-porog-a-tisza-altal-inditott-tarsadalmi-egyeztetes/",
-          "date": "2026-06-22T15:35:42+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Magyar Péter: Sulyok Tamás július 20. körül már nem lesz államfő",
-          "source": "444",
-          "url": "https://444.hu/2026/06/22/magyar-peter-bejelenti-hogyan-tavolitanak-el-sulyok-tamast-meg-a-tobbieket",
-          "date": "2026-06-22T15:32:56+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Magyar Péter nem zárta ki, hogy a jövőben közvetlenül választják a köztársasági elnököt",
-          "source": "24.hu",
-          "url": "https://24.hu/belfold/2026/06/22/magyar-peter-nem-zarta-ki-hogy-a-jovoben-kozvetlenul-valasztjak-a-koztarsasagi-elnokot/",
-          "date": "2026-06-22T15:29:00+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Magyar Péter: Augusztus 20-a előtt biztosan lesz új köztársasági elnöke Magyarországnak",
-          "source": "Népszava",
-          "url": "https://nepszava.hu/3326779_magyar-peter-sajtotajekoztato-tisztitotuz-muvelet-cosa-nostra-nvvh",
-          "date": "2026-06-22T15:27:00+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Magyar Péter: A legfőbb ügyésznek hamarosan le kell mondania",
-          "source": "24.hu",
-          "url": "https://24.hu/belfold/2026/06/22/magyar-peter-a-legfobb-ugyesznek-hamarosan-le-kell-mondania/",
-          "date": "2026-06-22T15:15:00+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Magyar Péter: a vagyonvisszaszerzési hivatal a jogalap nélküli gazdagodást is vizsgálni fogja",
-          "source": "Portfolio.hu",
-          "url": "https://www.portfolio.hu/gazdasag/20260622/magyar-peter-a-vagyonvisszaszerzesi-hivatal-a-jogalap-nelkuli-gazdagodast-is-vizsgalni-fogja-844786",
-          "date": "2026-06-22T15:08:00+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "„Jeśli będzie chciał obrażać Polaków i gloryfikować ludobójców...”. Przydacz odpowiada Zełenskiemu",
-          "source": "Rzeczpospolita",
-          "url": "https://www.rp.pl/polityka/art44674651-marcin-przydacz-polska-nie-zalezy-od-ukrainy-ogon-chce-machac-psem-tak-nie-moze-byc",
-          "date": "2026-06-22T15:04:31+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Magyar Péter rendkívüli sajtótájékoztatót tart: a vagyonvisszaszerzési hivatal a jogalap nélküli gazdagodást is vizsgálni fogja",
-          "source": "Portfolio.hu",
-          "url": "https://www.portfolio.hu/gazdasag/20260622/magyar-peter-rendkivuli-sajtotajekoztatot-tart-a-vagyonvisszaszerzesi-hivatal-a-jogalap-nelkuli-gazdagodast-is-vizsgalni-fogja-844786",
-          "date": "2026-06-22T14:43:00+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Magyar Péter: Ha Sulyok Tamás nem írja alá az Alaptörvény-módosítást, megfosztási eljárás indul ellene",
-          "source": "24.hu",
-          "url": "https://24.hu/belfold/2026/06/22/magyar-peter-ha-sulyok-tamas-nem-irja-ala-az-alaptorveny-modositast-megfosztasi-eljaras-indul-ellene/",
-          "date": "2026-06-22T14:36:00+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Magyar Péter: Sulyok Tamás egy hónap múlva nem lesz Magyarország köztársasági elnöke",
-          "source": "Telex",
-          "url": "https://telex.hu/belfold/2026/06/22/magyar-peter-tisztitotuz-sajtotajekoztato",
-          "date": "2026-06-22T14:33:12+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Magyar Péter bejelentette, hogy Sulyok Tamásnak körülbelül egy hónapja maradt az államfői tisztségben",
-          "source": "Index.hu",
-          "url": "https://index.hu/belfold/2026/06/22/magyar-peter-sulyok-tamas-bejelentes-sajtotajekoztato-parlament-koztarsasagi-elnok-alkotmany/",
-          "date": "2026-06-22T14:20:00+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Magyar Péter: A rendelkezésemre álló információk szerint a legfőbb ügyésznek hamarosan le kell mondania",
-          "source": "| hvg.hu",
-          "url": "https://hvg.hu/itthon/20260622_magyar-peter-tisztitotuz-jogalkotas-reszletek-elo-kozvetites-tervek",
-          "date": "2026-06-22T14:15:41+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Magyar Péter: Elindítjuk a Tisztítótűz műveletet, Sulyok Tamás megbízatása megszűnik, új alkotmány jön",
-          "source": "Index.hu",
-          "url": "https://index.hu/belfold/2026/06/22/orszaggyules-parlament-magyar-peter-tisza-part-gulyas-gergely-fidesz-kdnp-toroczkai-laszlo-mi-hazank-mozgalom/",
-          "date": "2026-06-22T13:58:00+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Magyar Péter ismer becsületes fideszest, de nem akarta megnevezni, nehogy kizárják",
-          "source": "Telex",
-          "url": "https://telex.hu/belfold/2026/06/22/parlament-magyar-peter-napirend-elott-sulyok-tamas-vagyonvisszaszerzesi-hivatal",
-          "date": "2026-06-22T13:52:30+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "A Fidesz közel a frakciója felét elveszítené, ha életbe lépne a Tisza 12 éves képviselői mandátum-korlátozása",
-          "source": "Telex",
-          "url": "https://telex.hu/belfold/2026/06/22/12-ev-kepviseloi-mandatum-korlatozasa-fidesz-szijjarto-gulyas-alkotmanybirok",
-          "date": "2026-06-22T13:41:59+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Polt Péterrel együtt négy alkotmánybírót cserél le egy csapásra a Tisza",
-          "source": "444",
-          "url": "https://444.hu/2026/06/22/polt-peterrel-egyutt-negy-alkotmanybirot-cserel-le-egy-csapasra-a-tisza",
-          "date": "2026-06-22T13:15:35+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Gyakorlatikag lenullázza a Fidesz és a KDNP frakcióit, ha 12 évben maximalizálják a képviselőséget",
-          "source": "24.hu",
-          "url": "https://24.hu/belfold/2026/06/22/parlament-12-ev-mandatumkorlatozas-fidesz-kdnp-mi-hazank/",
-          "date": "2026-06-22T13:11:00+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Magyar Péter: elindul a Tisztítótűz-művelet",
-          "source": "Portfolio.hu",
-          "url": "https://www.portfolio.hu/gazdasag/20260622/magyar-peter-elindul-a-tisztitotuz-muvelet-844840",
-          "date": "2026-06-22T12:54:00+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "70 éves korlimit az alkotmánybíróknak, 12 éves mandátumlimit a képviselőknek – ezeket jelentette be Magyar Péter a parlamentben",
-          "source": "Telex",
-          "url": "https://telex.hu/belfold/2026/06/22/magyar-peter-bejelentes-parlament-alkotmanybirok-korlimit-kepviseloi-mandatum-sulyok-tamas-elmozditasa",
-          "date": "2026-06-22T12:30:45+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Magyar Péter bejelentette: ekkor szűnhet meg Sulyok Tamás megbízatása",
-          "source": "RTL.hu",
-          "url": "https://rtl.hu/belfold/2026/06/22/magyar-peter-bejelentes-tisztitotuz-orszaggyules",
-          "date": "2026-06-22T12:11:11+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Nem csak a miniszterelnöki ciklust korlátozzák: komoly bejelentést tett Magyar Péter a képviselők mandátumáról",
-          "source": "Forbes.hu",
-          "url": "https://www.forbes.hu/hirek/nem-csak-a-miniszterelnoki-ciklust-korlatozzak-komoly-bejelentest-tett-magyar-peter-a-kepviselok-mandatumarol/",
-          "date": "2026-06-22T12:10:44+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "President Sulyok Vows Legal Fight to Stay in Office amid Constitutional Dispute",
-          "source": "Hungary Today",
-          "url": "https://hungarytoday.hu/president-sulyok-vows-legal-fight-to-stay-in-office-amid-constitutional-dispute/",
-          "date": "2026-06-22T12:04:39+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Tisza-kormány: bejelentették a Tisztítótűz-műveletet, jön a vagyonvisszaszerzés",
-          "source": "Portfolio.hu",
-          "url": "https://www.portfolio.hu/gazdasag/20260622/tisza-kormany-bejelentettek-a-tisztitotuz-muveletet-jon-a-vagyonvisszaszerzes-844742",
-          "date": "2026-06-22T11:57:00+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Magyar Péter a Nemzeti Vagyonvisszaszerzési és Védelmi Hivatalról: Ma megkezdjük a Tisztítótűz műveletet",
-          "source": "Forbes.hu",
-          "url": "https://www.forbes.hu/hirek/magyar-peter-a-nemzeti-vagyonvisszaszerzesi-es-vedelmi-hivatalrol-ma-megkezdjuk-a-tisztitotuz-muveletet/",
-          "date": "2026-06-22T11:48:08+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Hungary PM Magyar says president to be removed from office with constitutional amendment",
-          "source": "Devdiscourse",
-          "url": "https://www.devdiscourse.com/article/politics/3938699-hungary-pm-magyar-says-president-to-be-removed-from-office-with-constitutional-amendment",
-          "date": "2026-06-22T11:45:41+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Videók. Tisztítótűz-műveletet jelentett be Magyar Péter",
-          "source": "Euronews",
-          "url": "https://hu.euronews.com/video/2026/06/22/bejelentette-a-tisztitotuz-muveletet-a-kormanyfo",
-          "date": "2026-06-22T11:31:31+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Tisztítótűz-műveletet jelentett be Magyar Péter",
-          "source": "Euronews",
-          "url": "https://hu.euronews.com/my-europe/2026/06/22/bejelentette-a-tisztitotuz-muveletet-a-kormanyfo",
-          "date": "2026-06-22T11:31:31+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Magyar Péter: Ma elindítjuk a Tisztítótűz műveletet, kezdeményezzük a jelenlegi köztársasági elnök megbízatásának megszüntetését",
-          "source": "Népszava",
-          "url": "https://nepszava.hu/3326739_parlament-rendkivuli-ules-magyar-peter-unios-forrasok-kozmedia-torvenyjavaslat",
-          "date": "2026-06-22T11:25:00+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Magyar Péter: elindul a Tiszítótűz-művelet",
-          "source": "Portfolio.hu",
-          "url": "https://www.portfolio.hu/gazdasag/20260622/magyar-peter-elindul-a-tiszitotuz-muvelet-844840",
-          "date": "2026-06-22T11:24:00+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Hamarosan eddigi talán legfontosabb beszédét mondja el Magyar Péter",
-          "source": "Portfolio.hu",
-          "url": "https://www.portfolio.hu/gazdasag/20260622/hamarosan-eddigi-talan-legfontosabb-beszedet-mondja-el-magyar-peter-844840",
-          "date": "2026-06-22T10:40:00+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Eddigi legfontosabb parlamenti beszédét mondja el Magyar Péter – nézze itt!",
-          "source": "atv.hu",
-          "url": "https://www.atv.hu/belfold/20260622/magyar-peter-parlament-kozvetites/",
-          "date": "2026-06-22T10:10:32+00:00",
-          "category": "hungary"
+          "category": "sweden"
         }
       ],
-      "first_seen": "2026-06-22T17:21:02+00:00",
-      "last_seen": "2026-06-23T15:41:19+00:00"
-    },
-    {
-      "id": "santiago-abascal",
-      "name": "Santiago Abascal",
-      "role": "Leader of Vox (Spain)",
-      "blurb": "Abascal continues to drive media coverage through his party's negotiations with the People's Party (PP) for regional governance in Andalusia and other parts of Spain. His accusations of electoral fraud and calls for a no-confidence motion against Prime Minister Pedro Sánchez have kept Vox in the spotlight. The party's stance on social issues, such as LGBTQ+ rights, also generates significant debate.",
-      "prominence": 4,
-      "signals": [
-        "coalition negotiations",
-        "electoral fraud accusations",
-        "no-confidence motion",
-        "social policy debates"
-      ],
-      "categories": [
-        "Party Leadership",
-        "Electoral Politics",
-        "Social Policy"
-      ],
-      "article_count": 50,
-      "refs": [
-        {
-          "title": "Vox augura un pucherazo de Sánchez en el voto por correo y busca cambiar la ley",
-          "source": "Libertad Digital",
-          "url": "https://www.libertaddigital.com/espana/politica/2026-06-23/vox-augura-un-pucherazo-de-sanchez-en-el-voto-por-correo-y-busca-cambiar-la-ley-7425422/",
-          "date": "2026-06-23T12:12:57+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Adelante avisa a PP y Vox que \"maltrato\" a pacientes con cáncer será \"el tema de la legislatura",
-          "source": "ABC",
-          "url": "https://www.abc.es/espana/adelante-avisa-pp-vox-maltrato-pacientes-cancer-20260623140752-nt.html",
-          "date": "2026-06-23T12:07:57+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox niega que haya acuerdo con el PP para investir a Moreno y asegura que no tienen prisa",
-          "source": "ABC",
-          "url": "https://www.abc.es/espana/vox-niega-acuerdo-pp-investir-moreno-asegura-20260623140052-nt.html",
-          "date": "2026-06-23T12:00:56+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Los tres asuntos para los que Vox quiere la prioridad nacional en Castelló",
-          "source": "El Periódico Mediterráneo",
-          "url": "https://www.elperiodicomediterraneo.com/castello/2026/06/23/tres-asuntos-vox-quiere-prioridad-nacional-castello-pleno-ayuntamiento-131721746.html",
-          "date": "2026-06-23T11:59:40+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox fuerza al PP a retratarse sobre la bandera LGTBI en Toledo",
-          "source": "ABC",
-          "url": "https://www.abc.es/espana/castilla-la-mancha/toledo/vox-fuerza-pp-retratarse-sobre-bandera-lgtbi-20260623135923-nt.html",
-          "date": "2026-06-23T11:59:23+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "El PP presiona para activar una investidura exprés en Andalucía mientras Vox amenaza con votar en contra si no hay acuerdo",
-          "source": "Cadena SER",
-          "url": "https://cadenaser.com/andalucia/2026/06/23/el-pp-presiona-para-activar-una-investidura-expres-en-andalucia-mientras-vox-amenaza-con-votar-en-contra-si-no-hay-acuerdo-radio-sevilla/",
-          "date": "2026-06-23T11:50:32+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "VOX fuerza al PP a pronunciarse sobre la colocación de la bandera del colectivo LGTBI en el Ayuntamiento de Toledo",
-          "source": "Cadena SER",
-          "url": "https://cadenaser.com/castillalamancha/2026/06/23/vox-fuerza-al-pp-a-pronunciarse-sobre-la-colocacion-de-la-bandera-del-colectivo-lgtbi-en-el-ayuntamiento-de-toledo-ser-toledo/",
-          "date": "2026-06-23T11:50:30+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Montero cree que PP y Vox tienen \"sellado\" su acuerdo y el pleno de investidura será \"en días\"",
-          "source": "ABC",
-          "url": "https://www.abc.es/espana/montero-cree-pp-vox-sellado-acuerdo-pleno-20260623134930-nt.html",
-          "date": "2026-06-23T11:49:35+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox subraya que «la estructura criminal que sostuvo a Ábalos, Koldo y Aldama detenta el poder desde Moncloa»",
-          "source": "El Debate",
-          "url": "https://www.eldebate.com/espana/20260623/vox-subraya-estructura-criminal-sostuvo-abalos-koldo-aldama-detenta-poder-desde-moncloa_431674.html",
-          "date": "2026-06-23T11:49:34+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox pide al Gobierno central un acceso directo a la A-30 sentido Albacete desde las urbanizaciones de Molina de Segura | ORM",
-          "source": "Onda Regional de Murcia | ORM",
-          "url": "https://www.orm.es/informativos/vox-pide-al-gobierno-central-un-acceso-directo-a-la-a-30-sentido-albacete-desde-las-urbanizaciones-de-molina-de-segura/",
-          "date": "2026-06-23T11:39:16+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Ciudad Real: Vox exige un plan integral para modernizar la red de agua",
-          "source": "La Tribuna de Ciudad Real",
-          "url": "https://www.latribunadeciudadreal.es/noticia/z0e17b30b-7d52-47b3-995687d971cdfc5f/202606/vox-pide-un-plan-para-la-red-de-agua-de-ciudad-real",
-          "date": "2026-06-23T11:13:00+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox asegura que a día de hoy vota en contra de la investidura de Juanma Moreno porque “no hay acuerdo”",
-          "source": "Servimedia",
-          "url": "https://www.servimedia.es/noticias/vox-asegura-dia-hoy-vota-investidura-juanma-moreno-porque-no-hay-acuerdo/1413002397",
-          "date": "2026-06-23T11:06:00+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox enfría las expectativas de una investidura rápida de Juanma Moreno en Andalucía: \"Les han entrado las prisas pero a día de hoy votaríamos que no\"",
-          "source": "El Correo de Andalucía",
-          "url": "https://www.elcorreoweb.es/andalucia/2026/06/23/vox-enfria-expectativas-investidura-rapida-131717208.html",
-          "date": "2026-06-23T11:02:25+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox enfría la investidura de Juanma Moreno y advierte que su voto sigue siendo 'no'",
-          "source": "ABC",
-          "url": "https://www.abc.es/espana/andalucia/vox-enfria-investidura-juanma-moreno-advierte-voto-20260623125954-nts.html",
-          "date": "2026-06-23T10:59:55+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox mantiene su rechazo a la investidura de Moreno Bonilla mientras continúan las negociaciones",
-          "source": "OkDiario",
-          "url": "https://okdiario.com/andalucia/vox-mantiene-rechazo-investidura-moreno-bonilla-mientras-continuan-negociaciones-18841309",
-          "date": "2026-06-23T10:57:34+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox dice que Sánchez es el principal \"beneficiario\" de la trama Ábalos",
-          "source": "ABC",
-          "url": "https://www.abc.es/espana/vox-dice-sanchez-principal-beneficiario-trama-abalos-20260623122729-nt.html",
-          "date": "2026-06-23T10:27:34+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "PP y Vox exprimen los plazos y logran encajar la votación de Presupuestos y Acompañamiento en julio",
-          "source": "Valencia Plaza",
-          "url": "https://valenciaplaza.com/valenciaplaza/comunitat-valenciana1/pp-y-vox-exprimen-los-plazos-y-logran-encajar-la-votacion-de-presupuestos-y-acompanamiento-en-julio",
-          "date": "2026-06-23T10:11:30+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "VOX anuncia iniciativas en toda la provincia para pedir al Ayuntamiento de Málaga la devolución de las multas de la ZBE",
-          "source": "Andalucía Información",
-          "url": "https://www.andaluciainformacion.es/articulo/malaga-local/vox-anuncia-iniciativas-toda-provincia-pedir-ayuntamiento-malaga-devolucion-multas-zbe/202606231131383410538.html",
-          "date": "2026-06-23T09:31:38+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Figaredo (Vox) llama \"psicópata\" a Sánchez y denuncia que trabaja en un \"pucherazo electoral\" nacionalizanzando nietos",
-          "source": "heraldo.es",
-          "url": "https://www.heraldo.es/noticias/nacional/2026/06/23/figaredo-vox-llama-psicopata-sanchez-denuncia-trabaja-pucherazo-electoral-nacionalizanzando-nietos-2031411.html",
-          "date": "2026-06-23T09:25:28+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "'What’s it got to do with you? I can spend it on Ferraris if I want': Farage fumes on LBC as he fields questions over £5m gift",
-          "source": "lbc.co.uk",
-          "url": "https://www.lbc.co.uk/article/nigel-farage-fumes-as-he-fields-questions-over-5m-gift-5Hjdby4_2/",
-          "date": "2026-06-23T09:08:32+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Adelante Andalucía fija los fallos en los cribados como primer eje de su oposición al nuevo gobierno de PP y Vox: \"No permitiremos un pacto del olvido\"",
-          "source": "El Correo de Andalucía",
-          "url": "https://www.elcorreoweb.es/andalucia/2026/06/23/adelante-andalucia-fija-fallos-cribados-131711258.html",
-          "date": "2026-06-23T08:49:58+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "«On n’appellera pas à l’insurrection, on n’est pas LFI» : le RN assure qu’il respectera la décision sur l’inéligibilité de Marine Le Pen",
-          "source": "Gentside",
-          "url": "https://www.gentside.com/news/on-nappellera-pas-a-linsurrection-on-nest-pas-lfi-le-rn-assure-quil-respectera-la-decision-sur-lineligibilite-de-marine-le-pen_art126226.html",
-          "date": "2026-06-23T08:30:00+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Adelante avisa a PP y Vox tras reunirse con Amama que el \"maltrato\" a personas con cáncer será \"tema de la legislatura\"",
-          "source": "Europa Press",
-          "url": "https://www.europapress.es/andalucia/noticia-adelante-avisa-pp-vox-reunirse-amama-maltrato-personas-cancer-sera-tema-legislatura-20260623102958.html",
-          "date": "2026-06-23T08:29:58+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox vivienda: PP, Junts y Vox tumban la moratoria antidesahucios y la prórroga de alquileres",
-          "source": "moncloa.com",
-          "url": "https://www.moncloa.com/2026/06/23/vox-vivienda-moratoria-antidesahucios-3388715/",
-          "date": "2026-06-23T08:23:28+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox y Aliança Catalana convergen en el nativismo pese a su rivalidad pública",
-          "source": "moncloa.com",
-          "url": "https://www.moncloa.com/2026/06/23/vox-alianca-catalana-nativismo-rivalidad-3388720/",
-          "date": "2026-06-23T08:22:08+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Kocsis Fülöp megáldotta a gyermekvédelmi gondoskodásban élő fiatalok új pihenőházát a Tisza-tónál",
-          "source": "Magyar Kurír",
-          "url": "https://www.magyarkurir.hu/hirek/kocsis-fulop-megaldotta-gyermekvedelmi-gondoskodasban-elo-fiatalok-uj-pihenohazat-tisza-tonal",
-          "date": "2026-06-23T07:49:18+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Santiago Abascal vuelve a retratar a Pedro Sánchez: \"España está en manos de un desequilibrado peligroso\"",
-          "source": "gaceta.es",
-          "url": "https://gaceta.es/espana/santiago-abascal-vuelve-a-retratar-a-pedro-sanchez-espana-esta-en-manos-de-un-desequilibrado-peligroso-20260623-0910/",
-          "date": "2026-06-23T07:12:18+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Afternoon Update: Labor and Greens reach tax deal; Karl Stefanovic embraces far-right activist; and World Cup’s biggest stars shine",
-          "source": "The Guardian",
-          "url": "https://www.theguardian.com/australia-news/2026/jun/23/afternoon-update-tuesday-ntwnfb",
-          "date": "2026-06-23T07:05:00+00:00",
-          "category": "general"
-        },
-        {
-          "title": "Más Madrid: «PP y Vox se rompen ‘otro poco’ mientras Alcalá de Henares espera»",
-          "source": "Dream Alcalá",
-          "url": "https://www.dream-alcala.com/mas-madrid-pp-y-vox-se-rompen-otro-poco-mientras-alcala-de-henares-espera/",
-          "date": "2026-06-23T07:02:00+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Una concejala de Vox es denunciada por haber estafado, presuntamente, 237.000 euros a cuatro personas",
-          "source": "Elplural.com",
-          "url": "https://www.elplural.com/politica/espana/concejala-vox-denunciada-haber-estafado-presuntamente-237000-euros-cuatro-personas_393714102_amp",
-          "date": "2026-06-23T06:54:13+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Rétvári Bence: Magyar Péter 14 évig nem emelte fel hangját az állítólagos korrupció ellen",
-          "source": "HírTv",
-          "url": "https://hirtv.origo.hu/ahirtvhirei/2026/06/retvari-bence-magyar-peter-14-evig-nem-emelte-fel-hangjat-az-allitolagos-korrupcio-ellen",
-          "date": "2026-06-23T06:16:42+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "El PP andaluz pide a los partidos \"facilitar\" la investidura de Moreno, aunque solo negocia con Vox",
-          "source": "Elplural.com",
-          "url": "https://www.elplural.com/autonomias/andalucia/pp-andaluz-pide-partidos-facilitar-investidura-moreno-solo-negocia-vox_393681102",
-          "date": "2026-06-23T05:15:00+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Abascal advierte que Sánchez hará 'todo lo posible' para seguir en el poder tras condena a Ábalos",
-          "source": "moncloa.com",
-          "url": "https://www.moncloa.com/2026/06/23/abascal-condena-abalos-caso-mascarillas-3388427/",
-          "date": "2026-06-23T05:09:00+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "¿Qué es la desregulación que Vox ve prioritaria al negociar con el PP en Andalucía?",
-          "source": "ABC",
-          "url": "https://www.abc.es/espana/andalucia/desregulacion-vox-prioritario-negociar-pp-andalucia-20260623070458-nts.html",
-          "date": "2026-06-23T05:04:58+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Jon Stewart blames JD Vance's Iran negotiations failure on a nose-picking incident: 'Classic diplomatic faux pas'",
-          "source": "Entertainment Weekly",
-          "url": "https://ew.com/jon-stewart-blames-jd-vance-iran-negotiations-failure-on-nose-picking-incident-12004552",
-          "date": "2026-06-23T04:59:08+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Vox en Atocha",
-          "source": "La Gaceta de Salamanca",
-          "url": "https://www.lagacetadesalamanca.es/campo/cesar-lumbreras-vox-atocha-20260622060000-nt.html",
-          "date": "2026-06-23T04:00:31+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Reform UK vows to ban Pride flags from council buildings if they win power next year",
-          "source": "Yorkshire Live",
-          "url": "https://www.examinerlive.co.uk/news/local-news/reform-uk-vows-ban-pride-34168451.amp",
-          "date": "2026-06-23T03:00:00+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Vox ve prematuro que el PP marque \"líneas rojas\" para un futuro Gobierno de coalición y le pide \"centrarse\" en hacer oposición",
-          "source": "20Minutos",
-          "url": "https://www.20minutos.es/nacional/vox-ve-prematuro-que-pp-marque-lineas-rojas-para-un-futuro-gobierno-coalicion-le-pide-centrarse-hacer-oposicion_6986485_0.amp.html",
-          "date": "2026-06-23T03:00:00+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox asume que los guiños de Feijóo a Abascal debilitan la posición de Moreno en las negociaciones andaluzas",
-          "source": "Vozpopuli",
-          "url": "https://www.vozpopuli.com/amp/espana/andalucia/vox-asume-que-los-guinos-de-feijoo-a-abascal-debilitan-la-posicion-de-moreno-en-las-negociaciones-andaluzas.html",
-          "date": "2026-06-23T02:45:00+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Del enfrentamiento al \"idilio\": nueva fase en la relación entre PP y Vox",
-          "source": "La Razón",
-          "url": "https://www.larazon.es/espana/enfrentamiento-idilio-nueva-fase-relacion-vox_202606236a39e4daabcaef0cd1223132.html",
-          "date": "2026-06-23T01:43:54+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "President Trump endorses Rep. John James in Michigan governor's race",
-          "source": "Michigan Public",
-          "url": "https://www.michiganpublic.org/politics-government/2026-06-22/president-trump-endorses-rep-john-james-in-michigan-governors-race",
-          "date": "2026-06-22T22:00:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "So, How's Spain's Mass Amnesty Working Out?",
-          "source": "pjmedia.com",
-          "url": "https://pjmedia.com/aaron-hanscom/2026/06/22/so-hows-spains-mass-amnesty-working-out-n4954241",
-          "date": "2026-06-22T20:54:29+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "El cañón no cesa y el PP y Vox anuncian boda",
-          "source": "elDiario.es",
-          "url": "https://www.eldiario.es/blog/el-ojo-izquierdo/canon-no-cesa-pp-vox-anuncian-boda_132_13324394.amp.html",
-          "date": "2026-06-22T19:01:22+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox critica que el grupo de Gobierno del Cabildo de Gran Canaria es «limitado y limitante»",
-          "source": "La Provincia",
-          "url": "https://www.laprovincia.es/gran-canaria/2026/06/22/vox-critica-grupo-gobierno-cabildo-131698878.html",
-          "date": "2026-06-22T18:28:26+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "PP y Vox señalan a Sánchez y PSOE defiende que actuó contra Ábalos desde el primer minuto",
-          "source": "Infobae",
-          "url": "https://www.infobae.com/espana/agencias/2026/06/22/pp-y-vox-senalan-a-sanchez-y-psoe-defiende-que-actuo-contra-abalos-desde-el-primer-minuto/",
-          "date": "2026-06-22T17:14:03+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Santiago Abascal lanza una alerta tras la condena a Ábalos: \"Sánchez es aún más peligroso\"",
-          "source": "ESdiario",
-          "url": "https://www.esdiario.com/nacional/260622/191231/santiago-abascal-lanza-alerta-condena-abalos-sanchez-aun-peligroso.html",
-          "date": "2026-06-22T16:09:42+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Moreno apremia en la negociación con Vox para tener gobierno \"cuanto antes\" y empezar a trabajar en los presupuestos de 2027",
-          "source": "El Mundo",
-          "url": "https://www.elmundo.es/andalucia/2026/06/22/6a3956ccfdddffa4678b4584.html",
-          "date": "2026-06-22T15:56:43+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox replica al alcalde de Sevilla (PP) tras tildar de \"ilegal\" la prioridad nacional: \"Moreno podría aceptarla\"",
-          "source": "Ultima Hora",
-          "url": "https://www.ultimahora.es/noticias/comunidades/2026/06/22/2655753/vox-replica-alcalde-sevilla-tras-tildar-ilegal-prioridad-nacional-moreno-podria-aceptarla.html",
-          "date": "2026-06-22T15:25:09+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "PP y Vox reaccionan a la condena de Ábalos por el Tribunal Supremo y exigen dimisión de Sánchez",
-          "source": "ABC",
-          "url": "https://www.abc.es/espana/pp-vox-reaccionan-condena-abalos-tribunal-supremo-20260622171923-nt.html",
-          "date": "2026-06-22T15:19:27+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Abascal vaticina cárcel para Sánchez tras conocer la sentencia de Ábalos: «Sabe qué futuro le espera»",
-          "source": "ABC",
-          "url": "https://www.abc.es/espana/vox-tras-conocer-sentencia-abalos-pasar-sanchez-20260622134708-nt.html",
-          "date": "2026-06-22T14:36:21+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Sánchez, en el centro de la tormenta tras la sentencia a Ábalos: presión de PP, Vox y Podemos",
-          "source": "diaridetarragona.com",
-          "url": "https://www.diaridetarragona.com/espana/263744/sanchez-centro-tormenta-sentencia-abalos-presion-pp-vox.html",
-          "date": "2026-06-22T14:24:24+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Abascal predicts jail for Sánchez like Ábalos upon leaving Moncloa: \"He now knows the future that awaits him\"",
-          "source": "Demócrata",
-          "url": "https://www.democrata.es/en/politics/abascal-predicts-jail-for-sanchez-like-abalos-upon-leaving-moncloa-he-now-knows-the-future-that-awaits-him/amp/",
-          "date": "2026-06-22T13:38:30+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox se pregunta \"qué más tiene que pasar\" para que Sánchez dimita",
-          "source": "ABC",
-          "url": "https://www.abc.es/espana/vox-pregunta-pasar-sanchez-dimita-20260622144935-nt.html",
-          "date": "2026-06-22T12:49:39+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox redobla la presión sobre el PP tras la condena a Ábalos: «¿Qué más necesita para presentar una moción de censura?»",
-          "source": "El Correo",
-          "url": "https://www.elcorreo.com/politica/vox-redobla-presion-sobre-pp-tras-sentencia-20260622142716-ntrc.html",
-          "date": "2026-06-22T12:27:16+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox celebra la condena a Ábalos y urge al PP a presentar la moción de censura: \"¿Qué más tiene que pasar?\"",
-          "source": "20Minutos",
-          "url": "https://www.20minutos.es/nacional/vox-celebra-condena-abalos-urge-pp-presentar-mocion-censura-que-mas-tiene-que-pasar_6986311_0.html",
-          "date": "2026-06-22T12:21:57+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox urge al PP a presentar una moción de censura contra la «mafia criminal» de Sánchez: «¿Qué más tiene que pasar?»",
-          "source": "El Debate",
-          "url": "https://www.eldebate.com/espana/20260622/vox-urge-pp-presentar-mocion-censura-contra-mafia-criminal-sanchez-tiene-pasar_431268.html",
-          "date": "2026-06-22T11:56:42+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox sobre la cárcel a Ábalos y Koldo: «Todos los casos de corrupción tienen de nexo común a Sánchez»",
-          "source": "OkDiario",
-          "url": "https://okdiario.com/espana/vox-sobre-carcel-abalos-koldo-todos-casos-corrupcion-tienen-nexo-comun-sanchez-18832698",
-          "date": "2026-06-22T11:32:04+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox ofrece una rueda de prensa tras su Comité de Acción Política, en directo",
-          "source": "El Debate",
-          "url": "https://www.eldebate.com/espana/20260622/vox-ofrece-rueda-prensa-comite-accion-politica-directo_431207.html",
-          "date": "2026-06-22T10:16:14+00:00",
-          "category": "spain"
-        }
-      ],
-      "first_seen": "2026-06-22T06:15:12+00:00",
-      "last_seen": "2026-06-23T15:41:19+00:00"
+      "first_seen": "2026-06-24T04:53:09+00:00",
+      "last_seen": "2026-06-24T04:53:09+00:00"
     }
   ]
 }
