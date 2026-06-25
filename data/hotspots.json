@@ -1,160 +1,414 @@
 {
-  "updated_at": "2026-06-25T04:43:51+00:00",
+  "updated_at": "2026-06-25T15:24:03+00:00",
   "lookback_hours": 48,
   "model": "Mistral Large",
   "status": "ok",
   "hotspots": [
     {
-      "id": "adorni-scandal-deepens",
-      "title": "Adorni scandal deepens",
-      "blurb": "Manuel Adorni, Argentina's Chief of Cabinet, faces intense scrutiny over asset declaration irregularities and alleged corruption, with opposition parties pushing for his interpellation in Congress. The scandal has exposed internal government rifts, particularly between Karina Milei and Patricia Bullrich.",
-      "affect": "This commands disproportionate attention due to its high moral charge, polarized contention between government factions, and the potential for a leadership crisis within La Libertad Avanza.",
+      "id": "afd-ban-debate-intensifies",
+      "title": "AfD ban debate intensifies",
+      "blurb": "A series of legal reports and expert opinions have concluded that Germany's far-right AfD party is likely unconstitutional, citing racist policies and threats to democracy. This has reignited calls from across the political spectrum for a formal ban procedure before the Federal Constitutional Court.",
+      "affect": "This commands disproportionate attention due to the high-stakes legal and political implications of banning a major party, combined with the AfD's rising electoral strength and the moral panic over its extremist ties.",
       "intensity": 5,
       "affect_signals": [
         "polarized contention",
+        "alarmist framing",
+        "cross-source repetition",
         "moral panic register",
+        "leadership crisis tone"
+      ],
+      "categories": [
+        "🇩🇪 Alternative für Deutschland",
+        "🌍 General Right-Wing News"
+      ],
+      "article_count": 50,
+      "refs": [
+        {
+          "title": "Bas für juristische Schritte: AfD-Verbot: Neues Gutachten befeuert Debatte",
+          "source": "Ntv",
+          "url": "https://www.n-tv.de/ticker/AfD-Verbot-Neues-Gutachten-befeuert-Debatte-id31013023.html",
+          "date": "2026-06-25T12:44:54+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "AfD-Verbotsverfahren in Deutschland: Gutachten sieht gute Chancen",
+          "source": "SZ.de",
+          "url": "https://www.sueddeutsche.de/politik/afd-verbot-deutschland-gutachten-chancen-bundesverfassungsgericht-li.3504614",
+          "date": "2026-06-25T12:29:48+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Gesellschaft für Freiheitsrechte: Gutachten hält Erfolg von AfD-Verbotsverfahren für realistisch",
+          "source": "DIE ZEIT",
+          "url": "https://www.zeit.de/politik/deutschland/2026-06/afd-gutachten-verfassungswidrigkeit-gesellschaft-freiheitsrechte",
+          "date": "2026-06-25T12:28:16+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "GFF-Gutachten zur AfD: 30.000 Belege für Verbotsdebatte",
+          "source": "MiGAZIN",
+          "url": "https://www.migazin.de/2026/06/25/gutachten-afd-verbotsverfahren-haette-gute-chancen/",
+          "date": "2026-06-25T12:15:09+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "AfD: Unabhängiges Gutachten sieht Partei als klar verfassungswidrig",
+          "source": "Berliner Morgenpost",
+          "url": "https://www.morgenpost.de/politik/article412389586/unabhaengiges-gutachten-sieht-afd-als-klar-verfassungswidrig.html",
+          "date": "2026-06-25T12:04:06+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "AfD-Verbot: GFF-Gutachten hält Erfolg für wahrscheinlich",
+          "source": "rechtsanwalt.com",
+          "url": "https://www.rechtsanwalt.com/news/afd-verbot-gff-gutachten/",
+          "date": "2026-06-25T11:38:07+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Der Tag: Gutachten: AfD-Verbotsverfahren hätte wahrscheinlich Erfolg",
+          "source": "Ntv",
+          "url": "https://www.n-tv.de/der_tag/Gutachten-AfD-Verbotsverfahren-haette-wahrscheinlich-Erfolg-id31012476.html",
+          "date": "2026-06-25T11:16:19+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Gutachten: AfD-Verbotsverfahren hätte wahrscheinlich Erfolg",
+          "source": "STERN.de",
+          "url": "https://www.stern.de/news/gutachten--afd-verbotsverfahren-haette-wahrscheinlich-erfolg-37601634.html",
+          "date": "2026-06-25T10:53:45+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Neues Experten-Gutachten: Juristen sehen gute Chancen für AfD-Verbotsantrag",
+          "source": "Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/politik/neues-experten-gutachten-juristen-sehen-gute-chancen-fur-afd-verbotsantrag-15756525.html",
+          "date": "2026-06-25T10:35:34+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Juristisches Gutachten für NGO sieht AfD als verfassungswidrig",
+          "source": "WELT",
+          "url": "https://www.welt.de/politik/deutschland/article6a3cf287113e90346dc4c25b/juristisches-gutachten-fuer-ngo-sieht-afd-als-verfassungswidrig.html",
+          "date": "2026-06-25T10:30:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Gutachten sieht Chancen für AfD-Verbotsantrag vor Bundesverfassungsgericht - T-Online",
+          "source": "",
+          "url": "https://www.t-online.de/nachrichten/deutschland/innenpolitik/id_101312780/afd-verbot-juristisches-gutachten-sieht-rechtliche-erfolgschancen.html",
+          "date": "2026-06-25T10:22:20+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Ein AfD-Verbot hätte Erfolg – dieses Gutachten ändert alles!",
+          "source": "Volksverpetzer",
+          "url": "https://www.volksverpetzer.de/aktuelles/afd-verbot-erfolg-gutachten/",
+          "date": "2026-06-25T09:38:32+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Gutachten: Chancen für AfD-Verbotsantrag stehen gut - GN-Online",
+          "source": "",
+          "url": "https://www.gn-online.de/deutschland-und-welt/gutachten-chancen-fuer-afd-verbotsantrag-stehen-gut-614437.html",
+          "date": "2026-06-25T09:18:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Gutachten: Chancen für AfD-Verbotsantrag stehen gut | Foto: Sören Stache/dpa-Pool/dpa - main-echo.de",
+          "source": "",
+          "url": "https://www.main-echo.de/ressorts/politik/gutachten-chancen-fuer-afd-verbotsantrag-stehen-gut-art-8740705",
+          "date": "2026-06-25T09:17:03+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Spendenfinanzierte Analyse: Gutachten: Chancen für AfD-Verbotsantrag stehen gut",
+          "source": "Südkurier",
+          "url": "https://www.suedkurier.de/politik/spendenfinanzierte-analyse-gutachten-chancen-fuer-afd-verbotsantrag-stehen-gut-114553620",
+          "date": "2026-06-25T09:17:03+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Juristisches Gutachten - AfD ist verfassungswidrig",
+          "source": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/afd-ist-verfassungswidrig-100.html",
+          "date": "2026-06-25T09:03:01+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Neues Gutachten bescheinigt AfD Verfassungswidrigkeit",
+          "source": "fuldainfo.de",
+          "url": "https://www.fuldainfo.de/neues-gutachten-bescheinigt-afd-verfassungswidrigkeit/",
+          "date": "2026-06-25T08:36:53+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "NGO-Gutachten: AfD-Verbot 'wahrscheinlich' erfolgreich",
+          "source": "Legal Tribune Online",
+          "url": "https://www.lto.de/recht/nachrichten/n/gff-afd-verbot-gutachten-bverfg-parteiverbot-demokratieprinzip-menschenwuerde",
+          "date": "2026-06-25T08:28:43+00:00",
+          "category": "germany"
+        }
+      ],
+      "first_seen": "2026-06-25T15:24:03+00:00",
+      "last_seen": "2026-06-25T15:24:03+00:00"
+    },
+    {
+      "id": "adorni-scandal-deepens",
+      "title": "Adorni scandal deepens",
+      "blurb": "Argentina's Cabinet Chief Manuel Adorni faces mounting allegations of illicit enrichment and asset declaration irregularities, with opposition parties pushing for his removal. The scandal has exposed internal rifts within the Milei government, particularly between Adorni and Security Minister Patricia Bullrich.",
+      "affect": "This remains a dominant theme due to the combination of personal corruption allegations, intra-government feuds, and the broader crisis of legitimacy for Milei's administration.",
+      "intensity": 5,
+      "affect_signals": [
+        "outrage-coded language",
         "leadership crisis tone",
         "cross-source repetition",
-        "outrage-coded language"
+        "moral charge",
+        "polarized contention"
       ],
       "categories": [
         "🇦🇷 La Libertad Avanza"
       ],
-      "article_count": 120,
+      "article_count": 80,
       "refs": [
+        {
+          "title": "El Gobierno enfrenta una sesión clave en el Senado con la presión del PRO que pide un paso al costado de Adorn...",
+          "source": "Perfil",
+          "url": "https://www.perfil.com/noticias/politica/el-gobierno-enfrenta-una-sesion-clave-en-el-senado-con-la-presion-del-pro-que-pide-un-paso-al-costado-de-manuel-adorni.phtml",
+          "date": "2026-06-25T12:37:59+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Senado: el Gobierno asegura que no prosperará el pedido de interpelación a Manuel Adorni",
+          "source": "Filo News",
+          "url": "https://www.filo.news/noticia/2026/06/25/senado-el-gobierno-asegura-que-no-prosperara-el-pedido-de-interpelacion-a-manuel-adorni",
+          "date": "2026-06-25T12:36:27+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Senado: hay sesión en el Congreso, pero el debate sobre la interpelación a Adorni está condicionado",
+          "source": "Data Diario",
+          "url": "https://www.datadiario.com/politica/el-gobierno-sigue-cubriendo-a-manuel-adorni-finalmente-habra-sesion-en-el-senado-pero-el-debate-sobre-la-interpelacion-al-jefe-de-gabinete-esta-condicionado-20266259200",
+          "date": "2026-06-25T12:34:05+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Magyar Péter csütörtök három óráig adott határidőt a legfőbb ügyésznek, hogy számoljon be az aranykonvoj ügyről",
+          "source": "HírTv",
+          "url": "https://hirtv.origo.hu/ahirtvhirei/2026/06/magyar-peter-csutortok-harom-oraig-adott-hataridot-a-legfobb-ugyesznek-hogy-szamoljon-be-az-aranykonvoj-ugyrol",
+          "date": "2026-06-25T12:25:37+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Trump’s showdown with Republican Sen. Cassidy: Inside the blow-up on Capitol Hill",
+          "source": "Boston Herald",
+          "url": "https://www.bostonherald.com/2026/06/25/trump-showdown-bill-cassidy/",
+          "date": "2026-06-25T12:22:36+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "El Senado sesiona con foco en la interpelación a Manuel Adorni",
+          "source": "Crónica",
+          "url": "https://www.cronica.com.ar/politica/el-senado-sesiona-con-foco-en-la-interpelacion-a-manuel-adorni-772/",
+          "date": "2026-06-25T11:53:16+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Sesiona el Senado: discuten el mecanismo para interpelar a Manuel Adorni",
+          "source": "Análisis Digital",
+          "url": "https://www.analisisdigital.com.ar/nacionales/2026/06/25/sesiona-el-senado-discuten-el-mecanismo-para-interpelar-manuel-adorni",
+          "date": "2026-06-25T11:40:10+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "La permanencia de Manuel Adorni en el Gobierno genera tensiones y dudas en el PRO",
+          "source": "El Eco",
+          "url": "https://www.eleco.com.ar/politica/la-permanencia-de-manuel-adorni-en-el-gobierno-genera-tensiones-y-dudas-en-el-pro",
+          "date": "2026-06-25T11:38:33+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei firmó las 47 designaciones de jueces pero rechazó la de María Verónica Michelli",
+          "source": "Perfil",
+          "url": "https://www.perfil.com/noticias/politica/javier-milei-firmo-las-47-designaciones-de-jueces-pero-rechazo-la-de-maria-veronica-michelli.phtml",
+          "date": "2026-06-25T11:35:31+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Rząd D. Tuska chce podwyższyć i rozszerzyć wprowadzoną przez PiS opłatę cukrową. Pos. A. Kosztowniak: Bez wątpienia służy to ściągnięciu dodatkowych pieniędzy",
+          "source": "RadioMaryja.pl",
+          "url": "https://www.radiomaryja.pl/informacje/rzad-d-tuska-chce-podwyzszyc-i-rozszerzyc-wprowadzona-przez-pis-oplate-cukrowa-pos-a-kosztowniak-bez-watpienia-sluzy-to-sciagnieciu-dodatkowych-pieniedzy/",
+          "date": "2026-06-25T11:26:04+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "La contabilidad de Vox bajo lupa: el partido desvió casi 13 millones de euros a la fundación de Abascal en seis años",
+          "source": "moncloa.com",
+          "url": "https://www.moncloa.com/2026/06/25/contabilidad-vox-bajo-lupa-desvio-casi-13-millones-fundacion-abascal-3389952/",
+          "date": "2026-06-25T11:14:02+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Kaczyński zwróci ukraiński order. „Takie akty są dzisiaj potrzebne”",
+          "source": "TVP Info",
+          "url": "https://www.tvp.info/94006574/prezes-pis-jaroslaw-kaczynski-zwroci-przyznany-mu-w-2022-r-ukrainski-order-ksiecia-jaroslawa-madrego",
+          "date": "2026-06-25T11:08:00+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Javier Milei se le plantó al Senado y dejó afuera a María Verónica Michelli de las designaciones judiciales",
+          "source": "Infocielo",
+          "url": "https://www.infocielo.com/politica-y-economia/javier-milei-se-le-planto-al-senado-y-dejo-afuera-a-maria-veronica-michelli-de-las-designaciones-judiciales",
+          "date": "2026-06-25T10:58:35+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Senado: LLA cierra filas por Adorni en medio de las tensiones con Bullrich por el informe de gestión",
+          "source": "TN",
+          "url": "https://tn.com.ar/politica/2026/06/25/senado-lla-cierra-filas-por-adorni-en-medio-de-las-tensiones-con-bullrich-por-el-informe-de-gestion/?outputType=amp",
+          "date": "2026-06-25T09:00:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "“La Libertad Aguanta”: la defensa de Adorni suma complicaciones al Gobierno y genera dudas en el PRO",
+          "source": "Infobae",
+          "url": "https://www.infobae.com/politica/2026/06/25/la-libertad-aguanta-la-defensa-de-adorni-suma-complicaciones-al-gobierno-y-genera-dudas-en-el-pro/",
+          "date": "2026-06-25T07:29:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Militarizzare e liberare le principali stazioni: pugno duro di Salvini per avere più sicurezza",
+          "source": "Il Tempo",
+          "url": "https://www.iltempo.it/politica/2026/06/25/news/militarizzare-e-liberare-le-principali-stazioni-pugno-duro-di-salvini-per-avere-piu-sicurezza-48303762/",
+          "date": "2026-06-25T07:00:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Itthon: Magyar Péter felmentette Czunyiné Bertalan Juditot",
+          "source": "| hvg.hu",
+          "url": "https://hvg.hu/itthon/20260625_magyar-peter-felmentes-czunyine-bertalan-judit",
+          "date": "2026-06-25T06:12:28+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "El Gobierno ofreció asistencia sanitaria a Venezuela luego de que se registraran los dos terremotos",
+          "source": "Infobae",
+          "url": "https://www.infobae.com/politica/2026/06/25/el-gobierno-ofrecio-asistencia-sanitaria-a-venezuela-luego-de-que-se-registraran-los-dos-terremotos/",
+          "date": "2026-06-25T03:01:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "José Mayans aseguró que Javier Milei “usa” a Mauricio Macri cuando le conviene y después “lo deja solo”",
+          "source": "El Intransigente",
+          "url": "https://elintransigente.com/2026/06/jose-mayans-aseguro-que-javier-milei-usa-a-mauricio-macri-cuando-le-conviene-y-despues-lo-deja-solo/",
+          "date": "2026-06-25T02:42:37+00:00",
+          "category": "argentina"
+        },
         {
           "title": "Iván Schargrodsky reveló qué hará Milei con Manuel Adorni: \"En privado...\"",
           "source": "El Destape",
           "url": "https://www.eldestapeweb.com/espectaculos/ivan-schargrodsky-revelo-hara-milei-manuel-adorni-2026624225830",
           "date": "2026-06-25T01:59:15+00:00",
           "category": "argentina"
-        },
-        {
-          "title": "Diego Giuliano, sobre Manuel Adorni: «Está socialmente destituido»",
-          "source": "El Intransigente",
-          "url": "https://elintransigente.com/2026/06/diego-giuliano-sobre-manuel-adorni-esta-socialmente-destituido/",
-          "date": "2026-06-25T01:49:48+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Senador de La Libertad Avanza afirmó que Adorni explicó su situación judicial en reuniones de la Rosada",
-          "source": "Crónica",
-          "url": "https://www.cronica.com.ar/amp/politica/senador-de-la-libertad-avanza-afirmo-que-adorni-explico-su-situacion-judicial-en-reuniones-de-la-rosada/",
-          "date": "2026-06-25T01:18:36+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "“Es insostenible y le dio en el corazón al discurso de Milei”: la senadora Florencia López cuestionó la permanencia de Adorni",
-          "source": "Infobae",
-          "url": "https://www.infobae.com/politica/2026/06/24/es-insostenible-y-le-dio-en-el-corazon-al-discurso-de-milei-la-senadora-florencia-lopez-cuestiono-la-permanencia-de-adorni/",
-          "date": "2026-06-25T00:53:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Manuel Adorni no será citado a dar el informe de gestión y Bullrich patea la interpelación",
-          "source": "Letra P",
-          "url": "https://www.letrap.com.ar/congreso/manuel-adorni-no-sera-citado-dar-el-informe-gestion-y-bullrich-patea-la-interpelacion-n5424706/amp",
-          "date": "2026-06-25T00:14:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "La frase demoledora de Patricia Bullrich sobre Adorni y la paranoia del jefe de Gabinete",
-          "source": "Clarin.com",
-          "url": "https://www.clarin.com/politica/frase-demoledora-patricia-bullrich-adorni-paranoia-jefe-gabinete_0_aUG1qJj9hI.html",
-          "date": "2026-06-24T23:30:59+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "El Gobierno minimiza el conflicto y busca bajar la tensión entre Bullrich y Adorni, pero persiste el malestar",
-          "source": "Infobae",
-          "url": "https://www.infobae.com/politica/2026/06/24/el-gobierno-minimiza-el-conflicto-y-busca-bajar-la-tension-entre-bullrich-y-adorni-pero-persiste-el-malestar/",
-          "date": "2026-06-24T23:01:46+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "La Libertad Avanza frena la interpelación a Adorni en el Senado",
-          "source": "puntal.com.ar",
-          "url": "https://www.puntal.com.ar/la-libertad-avanza/la-libertad-avanza-frena-la-interpelacion-adorni-el-senado-n260106",
-          "date": "2026-06-24T22:30:33+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Marjorie Taylor Greene Sides With Giorgia Meloni, Declares 'Trump Lies Constantly' After Italian PM Rejects Photo-Begging Claim",
-          "source": "AOL.com",
-          "url": "https://www.aol.com/articles/marjorie-taylor-greene-sides-giorgia-215000978.html",
-          "date": "2026-06-24T22:05:38+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Krishnamoorthi, Landsman Lead 44-Member Effort Opposing Trump Administration Proposal Requiring Nondisclosure Agreements for Federal Employees",
-          "source": "House.gov",
-          "url": "https://krishnamoorthi.house.gov/media/press-releases/krishnamoorthi-landsman-lead-44-member-effort-opposing-trump-administration",
-          "date": "2026-06-24T21:55:50+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "FULL: President Trump meets with NATO Secretary General",
-          "source": "FOX 29 Philadelphia",
-          "url": "https://www.fox29.com/video/fmc-e08t68nkzkovi5gy",
-          "date": "2026-06-24T21:34:47+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Interna al rojo vivo entre Bullrich y Adorni mientras Karina Milei mueve fichas en el Senado",
-          "source": "DataClave",
-          "url": "https://www.dataclave.com.ar/poder/interna-al-rojo-vivo-entre-bullrich-y-adorni-mientras-karina-milei-mueve-fichas-en-el-senado_a6a3c0babee8953e574c49eff",
-          "date": "2026-06-24T21:21:11+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Morawiecki o aferze w Szpitalu Południowym. \"Mówimy o rzeczach ostatecznych\"",
-          "source": "Wiadomości Onet",
-          "url": "https://wiadomosci.onet.pl/kraj/mateusz-morawiecki-komentuje-afere-w-szpitalu-poludniowym-padly-mocne-slowa/t3n12yf",
-          "date": "2026-06-24T21:11:22+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "El PRO pidió la interpelación de Manuel Adorni en el Senado y se diferencia de la postura del bloque en Diputados",
-          "source": "Infobae",
-          "url": "https://www.infobae.com/politica/2026/06/24/el-pro-pidio-la-interpelacion-de-manuel-adorni-en-el-senado-y-se-diferencia-de-la-postura-del-bloque-en-diputados/",
-          "date": "2026-06-24T21:04:33+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "La sucesión de Axel Kicillof: la Casa Rosada le baja el precio al Plan Petrecca de Mauricio Macri",
-          "source": "Letra P",
-          "url": "https://www.letrap.com.ar/politica/la-sucesion-axel-kicillof-la-casa-rosada-le-baja-el-precio-al-plan-petrecca-mauricio-macri-n5424696",
-          "date": "2026-06-24T20:47:00+00:00",
-          "category": "argentina"
         }
       ],
       "first_seen": "2026-06-24T04:46:55+00:00",
-      "last_seen": "2026-06-25T04:43:51+00:00"
+      "last_seen": "2026-06-25T15:24:03+00:00"
     },
     {
       "id": "trump-meloni-feud-escalates",
       "title": "Trump-Meloni feud escalates",
-      "blurb": "The public spat between Donald Trump and Italian PM Giorgia Meloni intensified after Trump accused Meloni of 'begging' for a photo at the G7 summit. NATO Secretary General Mark Rutte's remarks about U.S. military flights from Italian bases further fueled the controversy.",
-      "affect": "This commands disproportionate attention due to its high-profile international contention, moral charge over national sovereignty, and the potential impact on NATO and U.S.-Italy relations.",
-      "intensity": 5,
+      "blurb": "Tensions between Donald Trump and Italian PM Giorgia Meloni have flared over NATO operations and military base usage, with Trump publicly criticizing Meloni's leadership. The dispute has been amplified by NATO Secretary General Mark Rutte's remarks about U.S. military flights from Italian bases.",
+      "affect": "This commands high affective investment due to the international implications of transatlantic rifts, the personal animosity between two major right-wing leaders, and the broader questions about NATO's future under Trump's potential second term.",
+      "intensity": 4,
       "affect_signals": [
         "polarized contention",
         "alarmist framing",
         "cross-source repetition",
-        "moral charge over sovereignty",
-        "international diplomatic tone"
+        "outrage-coded language",
+        "leadership crisis tone"
       ],
       "categories": [
-        "🇮🇹 Fratelli d'Italia / Lega",
-        "🇺🇸 MAGA / Trump"
+        "🇺🇸 MAGA / Trump",
+        "🇮🇹 Fratelli d'Italia / Lega"
       ],
-      "article_count": 100,
+      "article_count": 60,
       "refs": [
         {
-          "title": "'Need each other': Macron to host Italian PM Giorgia Meloni amid strained relation, Trump rift | World News",
-          "source": "Hindustan Times",
-          "url": "https://www.hindustantimes.com/world-news/need-each-other-macron-to-host-italian-pm-giorgia-meloni-amid-strained-relation-france-trump-rift-101782355039724.html",
-          "date": "2026-06-25T03:23:31+00:00",
+          "title": "Grünen-Fraktionschefinnen fordern neuen Anlauf für AfD-Verbotsverfahren",
+          "source": "STERN.de",
+          "url": "https://www.stern.de/news/gruenen-fraktionschefinnen-fordern-neuen-anlauf-fuer-afd-verbotsverfahren-37601924.html",
+          "date": "2026-06-25T11:32:11+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Macron-Meloni: vertice a casa Picasso",
+          "source": "Corriere della Sera",
+          "url": "https://www.corriere.it/il-punto/america-cina/26_giugno_25/macron-e-meloni-vertice-con-picasso.shtml",
+          "date": "2026-06-25T11:15:02+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Caracciolo a La7: “500 aerei Usa dalle basi italiane? Che dentro ci siano panini o bombe, è un’azione di guerra. Meloni riferisca in Parlamento”",
+          "source": "Il Fatto Quotidiano",
+          "url": "https://www.ilfattoquotidiano.it/2026/06/25/caracciolo-basi-usa-nato-italia-guerra-iran-trump-meloni/8429912/",
+          "date": "2026-06-25T11:13:45+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "II Presidente del Consiglio, Giorgia Meloni, ha partecipato a Berlino alla riunione dei Leader dell'E5. (Foto e Video)",
+          "source": "Sito ufficiale di Giorgia Meloni",
+          "url": "https://www.giorgiameloni.it/2026/06/25/ii-presidente-del-consiglio-giorgia-meloni-ha-partecipato-a-berlino-alla-riunione-dei-leader-delle5-foto-e-video/",
+          "date": "2026-06-25T10:57:06+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Perché Giorgia Meloni volta le spalle a Trump",
+          "source": "Internazionale",
+          "url": "https://www.internazionale.it/magazine/amy-kazmin/2026/06/25/perche-giorgia-meloni-volta-le-spalle-a-trump",
+          "date": "2026-06-25T10:52:30+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Meloni irritata con Rutte: «Un discorso illogico». E chiama l’olandese per protestare. I sospetti di uno “sgambetto” di Trump",
+          "source": "Il Messaggero",
+          "url": "https://www.ilmessaggero.it/politica/rutte_aerei_italiani_meloni_irritata_sgambetto_trump-9612394.html",
+          "date": "2026-06-25T09:01:35+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "La Pax Silica per pacificare Trump e Meloni",
+          "source": "la Repubblica",
+          "url": "https://www.repubblica.it/tecnologia/2026/06/25/news/la_pax_silica_per_pacificare_trump_e_meloni-425433086/",
+          "date": "2026-06-25T08:52:25+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Meloni e Macron, polemiche, sgarbi e baci. Le relazioni pericolose fino al bilaterale di Antibes",
+          "source": "la Repubblica",
+          "url": "https://www.repubblica.it/politica/2026/06/25/news/macron_meloni_polemiche_bilaterale_antibes-425433066/",
+          "date": "2026-06-25T08:43:58+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Basi militari in Italia, come sono state usate dagli Usa per le operazioni in Iran?",
+          "source": "Sky TG24",
+          "url": "https://tg24.sky.it/mondo/2026/06/25/basi-militari-italia-operazioni-usa-iran",
+          "date": "2026-06-25T06:45:14+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Meloni, la chiamata a Rutte e i sospetti su Trump: «Questo è un tranello». Il caso dei voli Usa dall'Italia",
+          "source": "Corriere Roma",
+          "url": "https://roma.corriere.it/notizie/politica/26_giugno_25/meloni-rutte-trump-tranello-9f3f6042-2a40-4173-8cf3-c351bb41exlk.shtml",
+          "date": "2026-06-25T05:55:03+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Basi Usa in Italia, Giorgia Meloni: «Un tranello di Rutte». Il sospetto: dietro c’è Trump?",
+          "source": "Open",
+          "url": "https://www.open.online/2026/06/25/basi-usa-italia-iran-meloni-rutte-trump/",
+          "date": "2026-06-25T03:49:42+00:00",
           "category": "italy"
         },
         {
@@ -165,24 +419,10 @@
           "category": "italy"
         },
         {
-          "title": "Salvini rispolvera l’allarme sicurezza e scappa dalla crisi",
-          "source": "il manifesto",
-          "url": "https://ilmanifesto.it/salvini-rispolvera-lallarme-sicurezza-e-scappa-dalla-crisi",
-          "date": "2026-06-24T22:30:40+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Meloni: “L’Europa sia più forte nella Nato”",
-          "source": "La Discussione",
-          "url": "https://ladiscussione.com/447903/attualita/meloni-nato-berlino/",
-          "date": "2026-06-24T22:09:56+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Vannacci è Meloni allo specchio, trumpista anche senza Trump",
-          "source": "il manifesto",
-          "url": "https://ilmanifesto.it/vannacci-e-meloni-allo-specchio-trumpista-anche-senza-trump",
-          "date": "2026-06-24T22:02:37+00:00",
+          "title": "Meloni e i sospetti su Trump. La telefonata a Rutte: “Sulle basi frasi illogiche, insensate”",
+          "source": "la Repubblica",
+          "url": "https://www.repubblica.it/politica/2026/06/25/news/meloni_trump_rutte_basi_usa_italia-425432280/",
+          "date": "2026-06-24T23:00:00+00:00",
           "category": "italy"
         },
         {
@@ -200,34 +440,6 @@
           "category": "italy"
         },
         {
-          "title": "Nate Bargatze facing cancellation from the left for attending UFC 250 White House event: 'Team Fascism'",
-          "source": "Fox News",
-          "url": "https://www.foxnews.com/outkick-analysis/nate-bargatze-facing-cancellation-left-attending-ufc-250-white-house-event-team-fascism",
-          "date": "2026-06-24T21:54:49+00:00",
-          "category": "general"
-        },
-        {
-          "title": "HUD trims FHA red tape; groups want MIP cut next",
-          "source": "National Mortgage News",
-          "url": "https://www.nationalmortgagenews.com/news/hud-trims-fha-red-tape-groups-want-mip-cut-next",
-          "date": "2026-06-24T21:48:00+00:00",
-          "category": "networks"
-        },
-        {
-          "title": "FULL: President Trump meets with NATO Secretary General",
-          "source": "FOX 29 Philadelphia",
-          "url": "https://www.fox29.com/video/fmc-e08t68nkzkovi5gy",
-          "date": "2026-06-24T21:34:47+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "4 di sera News: Giorgia Meloni sull'utilizzo delle basi americane in Italia Video",
-          "source": "Mediaset Infinity",
-          "url": "https://mediasetinfinity.mediaset.it/video/4diseranews/giorgia-meloni-sullutilizzo-delle-basi-americane-in-italia_F314042101084C02",
-          "date": "2026-06-24T19:47:21+00:00",
-          "category": "italy"
-        },
-        {
           "title": "Se il trumpismo alimenta le tensioni con la Lega",
           "source": "Corriere della Sera",
           "url": "https://www.corriere.it/politica/26_giugno_24/se-il-trumpismo-alimenta-le-tensioni-con-la-lega-ddb8f6ef-b571-4020-8ed5-65820175cxlk_amp.shtml",
@@ -242,10 +454,10 @@
           "category": "italy"
         },
         {
-          "title": "Meloni, rafforziamo il legame transatlantico, un pilastro dell'unità dell'Occidente",
-          "source": "ANSA",
-          "url": "https://www.ansa.it/sito/notizie/mondo/europa/2026/06/24/meloni-rafforziamo-il-legame-transatlantico-un-pilastro-dellunita-delloccidente_bb4f5095-c102-4a77-a4fe-dcb35dd4bdcd.html",
-          "date": "2026-06-24T17:02:00+00:00",
+          "title": "Meloni al vertice E5 sorvola sul caso Rutte. Fertitta: “La premier ha fatto lavoro eccellente”",
+          "source": "la Repubblica",
+          "url": "https://www.repubblica.it/politica/2026/06/24/news/meloni_vertice_e5_sorvola_caso_rutte_fertitta_salvini-425431738/",
+          "date": "2026-06-24T17:08:02+00:00",
           "category": "italy"
         },
         {
@@ -254,29 +466,106 @@
           "url": "https://www.eunews.it/en/2026/06/24/iran-rutte-500-us-flights-have-departed-from-italy-crosetto-a-misleading-message-i-am-ready-to-report-on-this/",
           "date": "2026-06-24T16:16:46+00:00",
           "category": "italy"
+        },
+        {
+          "title": "Donald Trump’s Feud With Meloni Just Became a Fight Over NATO",
+          "source": "AOL.com",
+          "url": "https://www.aol.com/lifestyle/donald-trump-feud-meloni-just-150618458.html",
+          "date": "2026-06-24T14:08:09+00:00",
+          "category": "italy"
         }
       ],
       "first_seen": "2026-06-20T04:50:49+00:00",
-      "last_seen": "2026-06-25T04:43:51+00:00"
+      "last_seen": "2026-06-25T15:24:03+00:00"
     },
     {
       "id": "afd-party-congress-tensions",
       "title": "AfD party congress tensions",
-      "blurb": "Germany's far-right AfD party faces internal power struggles and external protests ahead of its July 4-5 congress in Erfurt. The event has sparked nationwide debates over extremism, with police bracing for large-scale counter-demonstrations.",
-      "affect": "This commands disproportionate attention due to its high affective investment in Germany's political stability, polarized contention over far-right extremism, and the potential for violent clashes during the congress.",
+      "blurb": "Germany's AfD prepares for its July party congress in Erfurt amid massive protests, with police bracing for up to 50,000 demonstrators including 2,500 violent left-wing extremists. The event has become a flashpoint for broader societal conflicts over far-right politics.",
+      "affect": "This generates intense affective investment due to the potential for violent clashes, the symbolic importance of the AfD's gathering, and the broader cultural war over Germany's political future.",
       "intensity": 4,
       "affect_signals": [
         "alarmist framing",
         "polarized contention",
         "cross-source repetition",
-        "outrage-coded language",
-        "moral panic register"
+        "moral panic register",
+        "outrage-coded language"
       ],
       "categories": [
         "🇩🇪 Alternative für Deutschland"
       ],
-      "article_count": 80,
+      "article_count": 40,
       "refs": [
+        {
+          "title": "German police brace for unrest at far-right AfD conference",
+          "source": "politico.eu",
+          "url": "https://www.politico.eu/article/german-police-fear-unrest-afd-conference/",
+          "date": "2026-06-25T13:17:14+00:00",
+          "category": "general"
+        },
+        {
+          "title": "AfD-Parteitag in Erfurt: 2500 gewaltbereite Linksextremisten erwartet",
+          "source": "BILD",
+          "url": "https://www.bild.de/politik/inland/afd-parteitag-in-erfurt-2500-gewaltbereite-linksextremisten-erwartet-6a3cf630507c0ee6f17a791d",
+          "date": "2026-06-25T11:52:34+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "AfD-Parteitag in Erfurt: Bundesweite Mobilisierung gegen „Zusammenrottung mit Höcke“ – Polizei alarmiert",
+          "source": "Frankfurter Rundschau",
+          "url": "https://www.fr.de/politik/bundesweite-mobilisierung-gegen-afd-parteitag-in-erfurt-mit-hoecke-94368566.html",
+          "date": "2026-06-25T10:54:20+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "„Tag X“ bei AfD-Parteitag in Erfurt? Linksextreme kündigen „militante“ Besetzung an – Polizei alarmiert",
+          "source": "Schwäbische Post",
+          "url": "https://www.schwaebische-post.de/welt/politik/afd-parteitag-in-erfurt-2500-gewaltbereite-linksextreme-erwartet-zr-94368228.html",
+          "date": "2026-06-25T09:06:07+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "„Man geht von 2.500 gewaltbereiten Linksextremisten aus – Da gibt es intern die Kategorie Rot“",
+          "source": "WELT",
+          "url": "https://www.welt.de/videos/video6a3ce5080720f035db42ccec/afd-parteitag-in-erfurt-man-geht-von-2-500-gewaltbereiten-linksextremisten-aus-da-gibt-es-intern-die-kategorie-rot.html",
+          "date": "2026-06-25T08:41:42+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Presse: Polizei rechnet mit bis zu 50.000 Demonstrierenden bei AfD-Parteitag",
+          "source": "STERN.de",
+          "url": "https://www.stern.de/news/presse--polizei-rechnet-mit-bis-zu-50-000-demonstrierenden-bei-afd-parteitag-37600024.html",
+          "date": "2026-06-25T07:13:35+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Behörden rechnen mit bis zu 50.000 Demonstranten bei AfD-Parteitag – Minister warnt vor Blockaden",
+          "source": "WELT",
+          "url": "https://www.welt.de/videos/video6a3ccb86afe845031b3ad6c0/thueringen-behoerden-rechnen-mit-bis-zu-50-000-demonstranten-bei-afd-parteitag-minister-warnt-vor-blockaden.html",
+          "date": "2026-06-25T06:50:49+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Umfrage: AfD erreicht Höchstwert in Brandenburg – Linkspartei liegt gleichauf mit CDU",
+          "source": "WELT",
+          "url": "https://www.welt.de/politik/deutschland/article6a3cb964afe845031b3ad5af/umfrage-afd-erreicht-hoechstwert-in-brandenburg-linkspartei-liegt-gleichauf-mit-cdu.html",
+          "date": "2026-06-25T06:09:47+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Polizei erwartet Großlage bei AfD-Parteitag in Erfurt",
+          "source": "Hasepost",
+          "url": "https://hasepost.de/polizei-erwartet-grosslage-bei-afd-parteitag-in-erfurt-725655/",
+          "date": "2026-06-25T03:19:07+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Polizei erwartet bei AfD-Parteitag gewaltbereite Linksextremisten",
+          "source": "Oldenburger Onlinezeitung",
+          "url": "https://www.oldenburger-onlinezeitung.de/nachrichten/polizei-erwartet-bei-afd-parteitag-gewaltbereite-linksextremisten-211512.html",
+          "date": "2026-06-25T03:12:00+00:00",
+          "category": "germany"
+        },
         {
           "title": "Protest gegen AfD-Parteitag: Worst-Case-Szenario mit 2500 Linksextremisten der Kategorie „Rot“",
           "source": "WELT",
@@ -285,31 +574,10 @@
           "category": "germany"
         },
         {
-          "title": "AfD bei Seelow: Störung des Gemeinde-Friedens, Letschin fordert Mandatsverlust",
-          "source": "MOZ.de",
-          "url": "https://www.moz.de/lokales/seelow/afd-bei-seelow-stoerung-des-gemeinde-friedens-letschin-fordert-mandatsverlust-79199816.html",
-          "date": "2026-06-25T02:00:00+00:00",
-          "category": "germany"
-        },
-        {
           "title": "AfD-Parteitag in Erfurt: Thüringens Innenminister Maier warnt vor Blockaden gegen AfD-Parteitag",
           "source": "DIE ZEIT",
           "url": "https://www.zeit.de/politik/deutschland/2026-06/afd-parteitag-erfurt-blockaden-proteste-georg-maier",
           "date": "2026-06-25T01:56:57+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Weidel gegen Chrupalla: Showdown an der AfD-Spitze - T-Online",
-          "source": "",
-          "url": "https://www.t-online.de/nachrichten/tagesanbruch/id_101311050/weidel-gegen-chrupalla-die-luft-brennt-in-der-afd-zentrale-.html",
-          "date": "2026-06-25T01:46:08+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "„Würde nur der AfD nützen“ – SPD-Minister warnt vor Blockaden gegen Parteitag",
-          "source": "WELT",
-          "url": "https://www.welt.de/politik/deutschland/article6a3c7364113e90346dc4bac8/thueringen-wuerde-nur-der-afd-nuetzen-spd-minister-warnt-vor-blockaden-gegen-parteitag.html",
-          "date": "2026-06-25T01:32:48+00:00",
           "category": "germany"
         },
         {
@@ -327,13 +595,6 @@
           "category": "germany"
         },
         {
-          "title": "Standpunkt: EWTN und AfD - Rosinenpicken aus menschenfeindlicher Ideologie",
-          "source": "Katholisch.de",
-          "url": "https://katholisch.de/artikel/69175-ewtn-und-afd-rosinenpicken-aus-menschenfeindlicher-ideologie",
-          "date": "2026-06-24T22:01:00+00:00",
-          "category": "germany"
-        },
-        {
           "title": "Sommer der Entscheidung – AfD",
           "source": "European Stability Initiative | ESI",
           "url": "https://www.esiweb.org/newsletter/sommer-der-entscheidung-afd",
@@ -341,38 +602,17 @@
           "category": "germany"
         },
         {
-          "title": "Hitlergruß oder Ritterschlag? AfD-Landeschef Reichardt in der Kritik",
-          "source": "Berliner Morgenpost",
-          "url": "https://www.morgenpost.de/politik/article412383648/hitlergruss-oder-ritterschlag-afd-landeschef-reichardt-in-der-kritik.html",
-          "date": "2026-06-24T18:01:07+00:00",
-          "category": "germany"
+          "title": "PP y Vox tienen una semana para cerrar el acuerdo y hacer presidente a Juanma Moreno",
+          "source": "ABC",
+          "url": "https://www.abc.es/espana/andalucia/pp-vox-semana-cerrar-acuerdo-haga-presidente-20260624200530-nts.html",
+          "date": "2026-06-24T18:05:30+00:00",
+          "category": "spain"
         },
         {
-          "title": "Innenminister Maier: AfD-Parteitag und friedliche Proteste in Erfurt ermöglichen",
-          "source": "MDR.de",
-          "url": "https://www.mdr.de/nachrichten/thueringen/landtag-afd-parteitag-protest-100.html",
-          "date": "2026-06-24T17:51:00+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "„Nazi-Bekenntnis“: Rücktrittsforderungen gegen AfD-Chef Reichardt nach mutmaßlichem Hitlergruß",
-          "source": "Berliner Zeitung",
-          "url": "https://www.berliner-zeitung.de/article/nazi-bekenntnis-ruecktrittsforderungen-gegen-afd-chef-reichardt-nach-mutmasslichem-hitlergruss-10130788",
-          "date": "2026-06-24T17:21:12+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Sachsen-Anhalt - Kritik an AfD-Antrag zur Einhaltung \"deutscher Kultur\" für Kunstförderung",
-          "source": "Deutschlandfunk",
-          "url": "https://www.deutschlandfunk.de/kritik-an-afd-antrag-zur-einhaltung-deutscher-kultur-fuer-kunstfoerderung-100.html",
-          "date": "2026-06-24T16:46:49+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Verdacht auf Hitlergruß: AfD-Chef von Sachsen-Anhalt wegen Foto in der Kritik",
-          "source": "MDR.de",
-          "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/martin-reichardt-foto-kritik,afd-hitlergruss-verdacht-100.html",
-          "date": "2026-06-24T16:13:00+00:00",
+          "title": "Vor AfD-Parteitag: Erfurt – Stadt im Ausnahmezustand",
+          "source": "inSüdthüringen",
+          "url": "https://www.insuedthueringen.de/inhalt.vor-afd-parteitag-erfurt-stadt-im-ausnahmezustand.1ef72908-c125-4972-bdf9-d607d90f7eec.html",
+          "date": "2026-06-24T17:18:21+00:00",
           "category": "germany"
         },
         {
@@ -381,264 +621,187 @@
           "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/audio-afd-hitlergruss-verdacht-100.html",
           "date": "2026-06-24T16:00:00+00:00",
           "category": "germany"
+        },
+        {
+          "title": "Thüringen: Maier: Keine bürgerkriegsähnlichen Zustände bei AfD-Protest",
+          "source": "Ntv",
+          "url": "https://www.n-tv.de/regionales/thueringen/Maier-Keine-buergerkriegsaehnlichen-Zustaende-bei-AfD-Protest-id31007051.html",
+          "date": "2026-06-24T13:09:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Thüringen: Linke schickt mehrere parlamentarische Beobachter zu Anti-AfD-Protesten",
+          "source": "WELT",
+          "url": "https://www.welt.de/politik/deutschland/article6a3bb21d03b2c4af3627614c/thueringen-linke-schickt-mehrere-parlamentarische-beobachter-zu-anti-afd-protesten.html",
+          "date": "2026-06-24T12:38:00+00:00",
+          "category": "germany"
         }
       ],
       "first_seen": "2026-06-25T04:43:51+00:00",
-      "last_seen": "2026-06-25T04:43:51+00:00"
+      "last_seen": "2026-06-25T15:24:03+00:00"
     },
     {
-      "id": "vox-pp-coalition-tensions-in-spain",
-      "title": "Vox-PP coalition tensions in Spain",
-      "blurb": "Negotiations between Spain's PP and far-right Vox party for regional governments have intensified, with Vox demanding policy concessions on immigration, LGBTQ+ rights, and national sovereignty. The Andalusian investiture vote is a key flashpoint.",
-      "affect": "This commands disproportionate attention due to its high moral charge over cultural issues, polarized contention between mainstream and far-right parties, and the potential to reshape Spain's political landscape.",
-      "intensity": 4,
-      "affect_signals": [
-        "polarized contention",
-        "moral panic register",
-        "cross-source repetition",
-        "outrage-coded language",
-        "leadership crisis tone"
-      ],
-      "categories": [
-        "🇪🇸 Vox"
-      ],
-      "article_count": 70,
-      "refs": [
-        {
-          "title": "Vox reclama que el Estado le pague los intereses exorbitantes que abonó al banco de Orbán",
-          "source": "EL PAÍS",
-          "url": "https://elpais.com/espana/2026-06-25/vox-reclama-que-el-estado-le-pague-los-intereses-exorbitantes-que-abono-al-banco-de-orban.html",
-          "date": "2026-06-25T03:30:01+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox presiona con el ‘no’ a la investidura de Moreno y exige que se cierren las “medidas” para la legislatura",
-          "source": "Vozpopuli",
-          "url": "https://www.vozpopuli.com/espana/andalucia/vox-presiona-con-el-no-a-la-investidura-de-moreno-y-exige-que-se-cierren-las-medidas-para-la-legislatura.html",
-          "date": "2026-06-25T02:45:00+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "El rosario de posibles irregularidades que Vox ha denunciado en el Ayuntamiento de Soria en los últimos años",
-          "source": "El Debate",
-          "url": "https://www.eldebate.com/espana/castilla-y-leon/20260625/rosario-posibles-irregularidades-vox-denunciado-ayuntamiento-soria-ultimos-anos_432203.html",
-          "date": "2026-06-25T02:30:00+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox alerta en un vídeo de la «islamización» de Ibiza tras el cierre de tiendas de toda la vida",
-          "source": "El Debate",
-          "url": "https://www.eldebate.com/espana/baleares/20260625/vox-alerta-video-islamizacion-ibiza-cierre-tiendas-toda-vida_432266.html",
-          "date": "2026-06-25T02:30:00+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "El PP y Vox aventajan en las encuestas al PSOE de Morant y a Compromís a la espera de la ratificación de sus candidatos",
-          "source": "El Debate",
-          "url": "https://www.eldebate.com/espana/comunidad-valenciana/20260625/pp-vox-aventajan-encuestas-psoe-morant-compromis-espera-ratificacion-candidatos_431640.html",
-          "date": "2026-06-25T02:00:00+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Moreno ve \"posible\" cerrar el pacto con Vox antes de su investidura",
-          "source": "La Razón",
-          "url": "https://www.larazon.es/espana/moreno-posible-cerrar-pacto-vox-antes-investidura_202606256a3c840195cc61359cdcfdb3.html",
-          "date": "2026-06-25T01:27:29+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "PP y Vox blindan su relación dos meses después de los acuerdos en Extremadura y Aragón, con la inmigración en el punto de mira",
-          "source": "El Mundo",
-          "url": "https://www.elmundo.es/espana/2026/06/25/6a3569fdfc6c831d378b4598.html",
-          "date": "2026-06-25T01:25:00+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "VOX logra reducir en un 50% las subvenciones a sindicatos y patronal en Extremadura: \"La izquierda rabia...",
-          "source": "gaceta.es",
-          "url": "https://gaceta.es/espana/vox-logra-reducir-en-un-50-las-subvenciones-a-sindicatos-y-patronal-en-extremadura-la-izquierda-rabia-porque-les-estamos-cerrando-el-grifo-20260625-0224/",
-          "date": "2026-06-25T00:25:43+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Adrián Ravier dejó su banca en Diputados y asumirá el viernes como vocero presidencial",
-          "source": "a24.com",
-          "url": "https://www.a24.com/politica/adrian-ravier-dejo-su-banca-diputados-y-asumira-el-viernes-como-vocero-presidencial-n1569110",
-          "date": "2026-06-24T22:27:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Info ou intox - La climatisation est-elle diabolisée à tort, comme l'affirme le Rassemblement National ?",
-          "source": "France 24",
-          "url": "https://www.france24.com/fr/%C3%A9missions/info-ou-intox/20260624-la-climatisation-g%C3%A9n%C3%A9ralis%C3%A9e-pr%C3%B4n%C3%A9e-par-le-rn-est-elle-un-rem%C3%A8de-pire-que-le-mal",
-          "date": "2026-06-24T21:45:30+00:00",
-          "category": "france"
-        },
-        {
-          "title": "La muleta del PP en Zaragoza: Natalia Chueca echa mano de una concejal tránsfuga de Vox para votaciones clave",
-          "source": "elDiario.es",
-          "url": "https://www.eldiario.es/aragon/politica/muleta-pp-zaragoza-natalia-chueca-echa-mano-concejal-transfuga-vox-votaciones-clave_1_13325701.html",
-          "date": "2026-06-24T21:35:07+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Cuerpo rechaza la España \"en ruinas\" que dibuja Vox e insiste en que \"avanza y funciona\"",
-          "source": "ABC",
-          "url": "https://www.abc.es/espana/cuerpo-rechaza-espana-ruinas-dibuja-vox-insiste-20260624214830-nt.html",
-          "date": "2026-06-24T19:48:34+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox acusa al PP de «echarse en manos de la izquierda» con el Plan de Igualdad de Oviedo",
-          "source": "El Comercio",
-          "url": "https://www.elcomercio.es/oviedo/vox-acusa-pp-echarse-manos-izquierda-plan-20260624213318-nt.html",
-          "date": "2026-06-24T19:33:18+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox ha desviado casi 13 millones de euros en seis años a la fundación de Abascal",
-          "source": "Diario Público",
-          "url": "https://www.publico.es/politica/partidos/vox-desvia-dos-millones-euros-ano-fundacion-abascal-cuentas-partido.html",
-          "date": "2026-06-24T19:10:26+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Ricardo Chamorro (VOX) defiende en el Congreso una moción para salvar el campo español",
-          "source": "Lanza Digital",
-          "url": "https://www.lanzadigital.com/provincia/ciudad-real/ricardo-chamorro-vox-defiende-en-el-congreso-una-mocion-para-salvar-el-campo-espanol/amp/",
-          "date": "2026-06-24T18:09:22+00:00",
-          "category": "spain"
-        }
-      ],
-      "first_seen": "2026-06-23T15:31:45+00:00",
-      "last_seen": "2026-06-25T04:43:51+00:00"
-    },
-    {
-      "id": "mileis-economic-policies-spark-backlash",
-      "title": "Milei’s economic policies spark backlash",
-      "blurb": "Argentinian President Javier Milei's aggressive economic reforms, including the Super-RIGI investment bill and debt settlements, have faced opposition in Congress and protests from labor groups. His international trips to Spain and the U.S. have also drawn criticism.",
-      "affect": "This commands disproportionate attention due to its high affective investment in Argentina's economic stability, polarized contention over austerity measures, and the potential for social unrest.",
+      "id": "kaczynski-ukraine-feud-escalates",
+      "title": "Kaczyński-Ukraine feud escalates",
+      "blurb": "Polish opposition leader Jarosław Kaczyński has announced he will return Ukraine's Order of Prince Yaroslav the Wise, escalating tensions between Poland and Ukraine over historical grievances and Ukraine's EU accession process. This follows President Karol Nawrocki's revocation of Zelensky's Order of the White Eagle.",
+      "affect": "This commands high affective investment due to the historical weight of WWII-era grievances, the current geopolitical stakes of Poland-Ukraine relations, and the symbolic importance of state honors in diplomatic signaling.",
       "intensity": 4,
       "affect_signals": [
         "polarized contention",
         "alarmist framing",
         "cross-source repetition",
-        "outrage-coded language",
-        "moral charge over governance"
+        "moral charge",
+        "outrage-coded language"
       ],
       "categories": [
-        "🇦🇷 La Libertad Avanza"
+        "🇵🇱 Prawo i Sprawiedliwość",
+        "🌍 General Right-Wing News"
       ],
-      "article_count": 60,
+      "article_count": 35,
       "refs": [
         {
-          "title": "Diputados: Javier Milei logró aprobar el Súper-RIGI y tiene los votos en el Senado para que sea ley",
-          "source": "Letra P",
-          "url": "https://www.letrap.com.ar/congreso/diputados-javier-milei-logro-aprobar-el-super-rigi-y-tiene-los-votos-el-senado-que-sea-ley-n5424712",
-          "date": "2026-06-25T02:56:00+00:00",
-          "category": "argentina"
+          "title": "Jarosław Kaczyński zachował się jak Ukraińcy. \"To akt mojej lojalności\"",
+          "source": "naTemat.pl",
+          "url": "https://natemat.pl/658627,jaroslaw-kaczynski-zachowal-sie-jak-ukraincy-to-akt-mojej-lojalnosci",
+          "date": "2026-06-25T13:14:42+00:00",
+          "category": "poland"
         },
         {
-          "title": "José Mayans aseguró que Javier Milei “usa” a Mauricio Macri cuando le conviene y después “lo deja solo”",
-          "source": "El Intransigente",
-          "url": "https://elintransigente.com/2026/06/jose-mayans-aseguro-que-javier-milei-usa-a-mauricio-macri-cuando-le-conviene-y-despues-lo-deja-solo/",
-          "date": "2026-06-25T02:42:37+00:00",
-          "category": "argentina"
+          "title": "Jarosław Kaczyński odda ukraiński order. „Ukraina nie może mieć na sztandarach ludobójców”",
+          "source": "Kresy.pl",
+          "url": "https://kresy.pl/?post_type=post&p=1172695",
+          "date": "2026-06-25T12:37:16+00:00",
+          "category": "poland"
         },
         {
-          "title": "«Javier Milei tuvo buenas ideas, pero no tiene proyecto de refundar el país»",
-          "source": "El Debate",
-          "url": "https://www.eldebate.com/internacional/20260625/javier-milei-tuvo-buenas-ideas-no-tiene-proyecto-refundar-pais_431179.html",
-          "date": "2026-06-25T02:30:00+00:00",
-          "category": "argentina"
+          "title": "Kaczyński: Polska powinna rozpocząć blokowanie rokowań dotyczących wejścia Ukrainy do UE",
+          "source": "Gazeta",
+          "url": "https://wiadomosci.gazeta.pl/polityka/7,198012,32877400,kaczynski-polska-powinna-rozpoczac-blokowanie-rokowan-dotyczacych.html",
+          "date": "2026-06-25T12:08:44+00:00",
+          "category": "poland"
         },
         {
-          "title": "Javier Milei emprendió su viaje a España, sin reuniones oficiales",
-          "source": "MDZ Online",
-          "url": "https://www.mdzol.com/politica/javier-milei-emprendio-su-viaje-espana-reuniones-oficiales-n1550803",
-          "date": "2026-06-25T02:30:00+00:00",
-          "category": "argentina"
+          "title": "Jarosław Kaczyński zapowiedział, że zwróci Ukrainie order! Decyzja już została podjęta",
+          "source": "Polityka Super Express",
+          "url": "https://polityka.se.pl/wiadomosci/jaroslaw-kaczynski-zapowiedzial-ze-zwroci-ukrainie-order-decyzja-juz-zostala-podjeta-aa-jVvJ-HLes-KQx7.html",
+          "date": "2026-06-25T11:55:00+00:00",
+          "category": "poland"
         },
         {
-          "title": "Javier Milei partió hacia España: recibirá una medalla y será el primero de tres viajes consecutivos",
-          "source": "Crónica",
-          "url": "https://www.cronica.com.ar/amp/politica/javier-milei-partio-hacia-espana-recibira-una-medalla-y-sera-el-primero-de-tres-viajes-consecutivos/",
-          "date": "2026-06-25T02:26:57+00:00",
-          "category": "argentina"
+          "title": "Kaczyński zwróci ukraiński order. „To akt lojalności wobec prezydenta Nawrockiego”",
+          "source": "Radio Zet",
+          "url": "https://wiadomosci.radiozet.pl/polityka/kaczynski-zwroci-ukrainski-order-to-akt-lojalnosci-wobec-prezydenta-nawrockiego",
+          "date": "2026-06-25T11:54:18+00:00",
+          "category": "poland"
         },
         {
-          "title": "Iván Schargrodsky reveló qué hará Milei con Manuel Adorni: \"En privado...\"",
-          "source": "El Destape",
-          "url": "https://www.eldestapeweb.com/espectaculos/ivan-schargrodsky-revelo-hara-milei-manuel-adorni-2026624225830",
-          "date": "2026-06-25T01:59:15+00:00",
-          "category": "argentina"
+          "title": "Kaczyński zaskoczył. Prezes PiS chce zwrócić swój order. Jest nagranie",
+          "source": "WP Wiadomości",
+          "url": "https://wiadomosci.wp.pl/kaczynski-zaskoczyl-prezes-pis-chce-zwrocic-swoj-order-jest-nagranie-7300645530948161v",
+          "date": "2026-06-25T11:50:01+00:00",
+          "category": "poland"
         },
         {
-          "title": "Se viene una nueva reunión entre Javier Milei y Flávio Bolsonario: cuándo y dónde",
-          "source": "MinutoUno",
-          "url": "https://www.minutouno.com/politica/se-viene-una-nueva-reunion-javier-milei-y-flavio-bolsonario-cuando-y-donde-n6292547",
-          "date": "2026-06-25T01:18:00+00:00",
-          "category": "argentina"
+          "title": "Jarosław Kaczyński zapowiada zwrot orderu, który dostał od Ukraińców. 'Akt lojalności wobec naszego prezydenta'",
+          "source": "Wyborcza.pl",
+          "url": "https://wyborcza.pl/7,75398,32877502,jaroslaw-kaczynski-zapowiada-zwrot-orderu-ktory-dostal-od-ukraincow.html",
+          "date": "2026-06-25T11:13:42+00:00",
+          "category": "poland"
         },
         {
-          "title": "Christopher Meloni Recalls Terrifying Experience as a New York City Bouncer Before Law & Order: Special Victims Unit.",
-          "source": "Tekedia",
-          "url": "https://www.tekedia.com/forum/topic/christopher-meloni-recalls-terrifying-experience-as-a-new-york-city-bouncer-before-law-order-special-victims-unit/?part=1",
-          "date": "2026-06-25T00:26:38+00:00",
-          "category": "italy"
+          "title": "Kaczyński zwróci ukraiński order. „Takie akty są dzisiaj potrzebne”",
+          "source": "TVP Info",
+          "url": "https://www.tvp.info/94006574/prezes-pis-jaroslaw-kaczynski-zwroci-przyznany-mu-w-2022-r-ukrainski-order-ksiecia-jaroslawa-madrego",
+          "date": "2026-06-25T11:08:00+00:00",
+          "category": "poland"
         },
         {
-          "title": "La Libertad Avanza no descarta un acuerdo con el PRO en la Ciudad de Buenos Aires para 2027",
-          "source": "Nuevo Diario de Salta",
-          "url": "https://nuevodiariodesalta.com.ar/la-libertad-avanza-no-descarta-un-acuerdo-con-el-pro-en-la-ciudad-de-buenos-aires-para-2027/",
-          "date": "2026-06-24T23:02:11+00:00",
-          "category": "argentina"
+          "title": "Kaczyński: zwrócę przyznany mi ukraiński Order Księcia Jarosława Mądrego",
+          "source": "www.gosc.pl",
+          "url": "https://www.gosc.pl/doc/9789583.Kaczynski-zwroce-przyznany-mi-ukrainski-Order-Ksiecia-Jaroslawa",
+          "date": "2026-06-25T11:06:24+00:00",
+          "category": "poland"
         },
         {
-          "title": "Javier Milei recibirá a Flavio Bolsonaro para darle su apoyo de cara a las elecciones en Brasil",
-          "source": "DataClave",
-          "url": "https://www.dataclave.com.ar/poder/javier-milei-recibira-a-flavio-bolsonaro-para-darle-su-apoyo-de-cara-a-las-elecciones-en-brasil_a6a3c4316ee8953e574c62b27",
-          "date": "2026-06-24T22:33:05+00:00",
-          "category": "argentina"
+          "title": "\"Akt lojalności\" wobec Nawrockiego. Nagła decyzja Kaczyńskiego",
+          "source": "Polskie Radio 24",
+          "url": "https://polskieradio24.pl/polska/kaczynski-zwroci-ukrainski-order-to-akt-lojalnosci",
+          "date": "2026-06-25T11:05:01+00:00",
+          "category": "poland"
         },
         {
-          "title": "Javier Milei se reunirá con Flávio Bolsonaro en medio de la tensión con Lula da Silva",
-          "source": "Ambito",
-          "url": "https://www.ambito.com/politica/javier-milei-se-reunira-flavio-bolsonaro-medio-la-tension-lula-da-silva-n6292468",
-          "date": "2026-06-24T21:37:00+00:00",
-          "category": "argentina"
+          "title": "Kaczyński odda ukraiński order. Mówi o \"gwałtownej eskalacji\"",
+          "source": "RMF24",
+          "url": "https://www.rmf24.pl/polityka/news-kaczynski-odda-ukrainski-order-mowi-o-gwaltownej-eskalacji,nId,8091428",
+          "date": "2026-06-25T10:53:13+00:00",
+          "category": "poland"
         },
         {
-          "title": "Javier Milei viaja a España por sexta vez para recibir una distinción académica",
-          "source": "Radio Facundo Quiroga",
-          "url": "https://facundoquiroga.com/javier-milei-viaja-a-espana-por-sexta-vez-para-recibir-una-distincion-academica/",
-          "date": "2026-06-24T21:24:02+00:00",
-          "category": "argentina"
+          "title": "Jarosław Kaczyński: zwrócę ukraiński Order Jarosława Mądrego",
+          "source": "Do Rzeczy",
+          "url": "https://dorzeczy.pl/kraj/906142/jaroslaw-kaczynski-zwroce-ukrainski-order-jaroslawa-madrego.html",
+          "date": "2026-06-25T10:50:00+00:00",
+          "category": "poland"
         },
         {
-          "title": "Javier Milei en el país donde nadie invierte",
-          "source": "Página|12",
-          "url": "https://www.pagina12.com.ar/2026/06/24/javier-milei-en-el-pais-donde-nadie-invierte/",
-          "date": "2026-06-24T21:11:43+00:00",
-          "category": "argentina"
+          "title": "Jarosław Kaczyński zwróci order Ukraińcom",
+          "source": "Rzeczpospolita",
+          "url": "https://www.rp.pl/polityka/art44693151-jaroslaw-kaczynski-zwroci-order-ukraincom",
+          "date": "2026-06-25T10:41:18+00:00",
+          "category": "poland"
         },
         {
-          "title": "Javier Milei inicia una nueva gira internacional con foco en inversiones, Mercosur y Estados Unidos",
-          "source": "Perfil",
-          "url": "https://www.perfil.com/noticias/canal-e/javier-milei-inicia-una-nueva-gira-internacional-con-foco-en-inversiones-mercosur-y-estados-unidos.phtml",
-          "date": "2026-06-24T20:11:45+00:00",
-          "category": "argentina"
+          "title": "Kaczyński zmienia ton wobec Ukrainy. „Zwrócę Order Jarosława Mądrego”",
+          "source": "Rzeczpospolita",
+          "url": "https://www.rp.pl/polityka/art44693151-jaroslaw-kaczynski-chce-blokady-negocjacji-ukrainy-z-ue-zapowiada-zwrot-ukrainskiego-orderu",
+          "date": "2026-06-25T10:41:00+00:00",
+          "category": "poland"
         },
         {
-          "title": "Fuel costs are brutalizing Trump’s fans in these red states: report",
-          "source": "Alternet",
-          "url": "https://www.alternet.org/trump-gas-prices-2677093330/",
-          "date": "2026-06-24T19:16:00+00:00",
-          "category": "networks"
+          "title": "Jarosław Kaczyński: zwrócę ukraiński order",
+          "source": "TVN24",
+          "url": "https://tvn24.pl/polska/jaroslaw-kaczynski-zwroce-ukrainski-order-st9113713",
+          "date": "2026-06-25T10:39:15+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Kaczyński zwróci order Ukraińcom. \"Wyraz lojalności\"",
+          "source": "Interia Wydarzenia",
+          "url": "https://wydarzenia.interia.pl/kraj/news-kaczynski-zwroci-order-ukraincom-wyraz-lojalnosci,nId,23505045",
+          "date": "2026-06-25T10:38:15+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Jarosław Kaczyński zwróci ukraiński order. Nazywa mera Lwowa \"banderowcem\"",
+          "source": "PolsatNews.pl",
+          "url": "https://www.polsatnews.pl/wiadomosc/2026-06-25/kaczynski-zwraca-ukrainski-order-i-nazywa-mera-lwowa-banderowcem/",
+          "date": "2026-06-25T10:37:00+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Jarosław Kaczyński zwróci ukraiński order. \"Akt lojalności\"",
+          "source": "Wiadomości Onet",
+          "url": "https://wiadomosci.onet.pl/kraj/jaroslaw-kaczynski-zwroci-ukrainski-order-akt-lojalnosci/lv719zk",
+          "date": "2026-06-25T10:34:33+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Trump krytykuje Europę, ale chwali Polskę. „W ogóle nie lubiłem człowieka, który był prezydentem",
+          "source": "Radio Zet",
+          "url": "https://wiadomosci.radiozet.pl/polityka/trump-krytykuje-europe-ale-chwali-polske-w-ogole-nie-lubilem-czlowieka-ktory-byl-prezydentem",
+          "date": "2026-06-25T08:30:25+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Morawiecki: Zełenski pogubił się. Zaatakował PiS, prezydenta Trumpa i to był błąd. Teraz ma potężne problemy w rozmowach z USA",
+          "source": "wPolsce24",
+          "url": "https://wpolsce24.tv/swiat/morawiecki-zelenski-zaatakowal-trumpa-i-to-byl-blad,115212",
+          "date": "2026-06-25T07:11:46+00:00",
+          "category": "poland"
         }
       ],
-      "first_seen": "2026-06-25T04:43:51+00:00",
-      "last_seen": "2026-06-25T04:43:51+00:00"
+      "first_seen": "2026-06-25T15:24:03+00:00",
+      "last_seen": "2026-06-25T15:24:03+00:00"
     }
   ]
 }
