@@ -23,7 +23,7 @@ jobs:
     if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: ${{ steps.deployment.outputs.page_url || steps.deployment_retry.outputs.page_url }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -48,6 +48,20 @@ jobs:
         with:
           path: .
 
+      # GitHub Pages intermittently rejects a deployment mid-sync with
+      # "Deployment failed, try again later." — a transient server-side error.
+      # Treat the first attempt as non-fatal, pause briefly, then retry once.
+      # The job only fails if BOTH attempts fail.
       - name: Deploy to GitHub Pages
         id: deployment
+        uses: actions/deploy-pages@v4
+        continue-on-error: true
+
+      - name: Pause before retrying a transient Pages failure
+        if: steps.deployment.outcome == 'failure'
+        run: sleep 20
+
+      - name: Retry GitHub Pages deployment
+        id: deployment_retry
+        if: steps.deployment.outcome == 'failure'
         uses: actions/deploy-pages@v4
