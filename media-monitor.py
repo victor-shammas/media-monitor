@@ -52,9 +52,8 @@ from monitor_utils import (
 
 # ── Configuration ──────────────────────────────────────────────────────────
 
-ARCHIVE_FILE = "data/archive.jsonl"
 MAX_NEW_PER_RUN = 30  # The universal limit of new articles to add per run per category
-DEFAULT_ARCHIVE_DAYS = 60  # Articles older than this are archived and pruned from state
+DEFAULT_RETENTION_DAYS = 60  # Articles older than this are pruned from state (feeds show a 60-day window)
 
 DEFAULT_WINDOW = CONFIG.get("settings", {}).get("window", "7d")
 FEEDS = CONFIG["feeds"]
@@ -179,37 +178,30 @@ def purge_blocked_from_state(state: dict, blocklist: dict) -> int:
     return removed
 
 
-# ── Archiving ─────────────────────────────────────────────────────────────
+# ── Retention ──────────────────────────────────────────────────────────────
 
 
-def prune_and_archive(state: dict, archive_days: int) -> int:
-    """Move articles older than archive_days from state into archive.jsonl.
+def prune_old_articles(state: dict, retention_days: int) -> int:
+    """Drop articles older than retention_days from state. Returns count pruned.
 
-    Each archived article is written as a single JSON line with a 'feed_id'
-    field added so the record is self-contained.  Returns count archived.
+    This is what caps monitor_state.json (and the feeds/*.txt regenerated from
+    it) to a rolling window. The full historical record — including article-text
+    extracts and AI summaries — is preserved separately in the private data repo
+    (data-private/enriched_*.json), which is never pruned.
     """
-    cutoff = datetime.now(timezone.utc) - timedelta(days=archive_days)
-    archived = 0
+    cutoff = datetime.now(timezone.utc) - timedelta(days=retention_days)
+    pruned = 0
 
-    lines_to_write = []
     for fid in state:
         keep = []
         for item in state[fid]:
-            item_time = get_sort_time(item)
-            if item_time < cutoff:
-                record = dict(item, feed_id=fid)
-                lines_to_write.append(json.dumps(record, ensure_ascii=False))
-                archived += 1
+            if get_sort_time(item) < cutoff:
+                pruned += 1
             else:
                 keep.append(item)
         state[fid] = keep
 
-    if lines_to_write:
-        with open(ARCHIVE_FILE, "a", encoding="utf-8") as f:
-            for line in lines_to_write:
-                f.write(line + "\n")
-
-    return archived
+    return pruned
 
 
 # ── Core Logic ─────────────────────────────────────────────────────────────
@@ -345,11 +337,11 @@ def main():
         help="Regenerate all text files from monitor_state.json without fetching",
     )
     parser.add_argument(
-        "--archive-days",
+        "--retention-days",
         type=int,
-        default=DEFAULT_ARCHIVE_DAYS,
+        default=DEFAULT_RETENTION_DAYS,
         metavar="N",
-        help=f"Archive articles older than N days (default: {DEFAULT_ARCHIVE_DAYS})",
+        help=f"Prune articles older than N days from state (default: {DEFAULT_RETENTION_DAYS})",
     )
     parser.add_argument(
         "--dedup-titles",
@@ -597,12 +589,11 @@ def main():
     if purged:
         print(f"  ✗ Purged {purged} blocklisted item(s) from state.", file=sys.stderr)
 
-    # Archive old articles to JSONL and prune them from state
-    archived = prune_and_archive(state, args.archive_days)
-    if archived:
+    # Prune articles older than the retention window from state
+    pruned = prune_old_articles(state, args.retention_days)
+    if pruned:
         print(
-            f"  ↳ Archived {archived} article(s) older than {args.archive_days} days"
-            f" → {ARCHIVE_FILE}",
+            f"  ↳ Pruned {pruned} article(s) older than {args.retention_days} days from state",
             file=sys.stderr,
         )
 
