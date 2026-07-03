@@ -30,6 +30,16 @@ jobs:
         with:
           ref: main
 
+      - name: Prune files not served by the site
+        run: |
+          # data/monitor_state.json is the internal article DB (~60MB) and is never
+          # fetched by index.html — the frontend only loads feeds/*.txt and
+          # data/{hotspots,actors,radar}.json. Dropping it here roughly halves the
+          # Pages artifact, which avoids the intermittent server-side
+          # "Deployment failed, try again later" errors during syncing_files.
+          # This only touches the ephemeral CI checkout; git history is unaffected.
+          rm -f data/monitor_state.json
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
