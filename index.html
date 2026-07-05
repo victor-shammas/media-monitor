@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Right-Wing Media Monitor</title>
+        <title>Right-Wing Monitor</title>
         <link rel="icon" type="image/svg+xml" href="favicon.svg" />
         <!-- marked.js for Markdown rendering (Analysis tab) -->
         <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
@@ -211,15 +211,6 @@
             }
             .foot a {
                 color: var(--ink);
-            }
-            .foot a#analysis-link {
-                color: var(--mute);
-                text-decoration: none;
-                margin-left: 2px;
-            }
-            .foot a#analysis-link:hover {
-                color: var(--ink);
-                text-decoration: underline;
             }
 
             /* ── Analysis tab styles ── */
@@ -989,7 +980,7 @@
         <div class="wrap">
             <header>
                 <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">
-                    <h1><a href="#" id="home-link">Transatlantic Right-Wing Media Monitor</a></h1>
+                    <h1><a href="#" id="home-link">Transatlantic Right-Wing Monitor</a></h1>
                     <button class="tab-button" id="translate-btn" title="Translate to English" style="display:none;font-size:12px;padding:4px 10px">EN</button>
                     <input type="search" id="search-input" placeholder="Search articles..." autocomplete="off" />
                 </div>
@@ -1002,7 +993,9 @@
             </div>
             <p class="foot">
                 All links are automatically aggregated via Google News RSS, and all summaries are AI-generated. Errors and irrelevant results may occur.
-                [<a href="#analysis" id="analysis-link">Analysis</a>]
+            </p>
+            <p class="foot">
+                &copy; 2026 Victor Shammas (<a href="https://victorshammas.com" target="_blank" rel="noopener">victorshammas.com</a>)
             </p>
         </div>
 
@@ -1204,13 +1197,6 @@
             }
 
             /* ── Analysis tab ── */
-
-            // Wire up the footer link
-            document.getElementById("analysis-link").addEventListener("click", (e) => {
-                e.preventDefault();
-                window.history.pushState(null, null, "#analysis");
-                showAnalysisTab();
-            });
 
             function showAnalysisTab() {
                 // Deselect any active feed tab
