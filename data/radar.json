@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-05T04:47:26+00:00",
+  "updated_at": "2026-07-05T14:23:42+00:00",
   "lookback_hours": 48,
   "model": "Mistral Large",
   "status": "ok",
@@ -7,50 +7,330 @@
     {
       "id": "far-right-afd-party-congress-sparks-mass-protests-in-germany",
       "title": "Far-right AfD party congress sparks mass protests in Germany",
-      "blurb": "Germany's far-right AfD party held its congress in Erfurt, drawing massive protests with tens of thousands of demonstrators. The event saw re-election of party leaders Alice Weidel and Tino Chrupalla, while police clashed with protesters attempting to block the event. This theme reflects the intense cross-national resonance of far-right politics and opposition to it.",
+      "blurb": "Germany's far-right AfD party congress in Erfurt has drawn massive protests, with tens of thousands demonstrating against the party's policies and leadership. The event has seen clashes between protesters and police, highlighting deep societal divisions and concerns over the AfD's growing influence ahead of regional elections.",
       "convergence": 5,
       "countries": [
         {
           "name": "🇩🇪 Alternative für Deutschland",
-          "note": "AfD congress in Erfurt with re-election of leaders and mass protests"
+          "note": "AfD party congress in Erfurt faced large-scale protests, with police reporting over 30,000 demonstrators. The event saw re-election of co-leaders Alice Weidel and Tino Chrupalla, amid debates over the party's extremist ties."
         },
         {
           "name": "🇫🇷 Rassemblement National",
-          "note": "Coverage of far-right party dynamics and protests in Europe"
+          "note": "French far-right figures like Marion Maréchal have drawn parallels to Germany's AfD protests, emphasizing the broader European trend of rising far-right movements and public backlash."
         },
         {
           "name": "🇬🇧 Reform UK",
-          "note": "Parallels drawn between AfD and UK far-right movements"
+          "note": "UK's Reform UK faced scrutiny over leadership and funding, with protests and media criticism mirroring the broader European far-right backlash seen in Germany."
         },
         {
           "name": "🇮🇹 Fratelli d'Italia / Lega",
-          "note": "Reporting on far-right party developments and protests in Europe"
+          "note": "Italian far-right parties have closely watched the AfD's congress, with internal debates over extremism and electoral strategies reflecting similar tensions within their own ranks."
         },
         {
           "name": "🇪🇸 Vox",
-          "note": "Discussion of far-right party strategies and public reactions"
+          "note": "Spain's Vox party has drawn comparisons to AfD's rise, with protests against its policies in regional governments echoing the German demonstrations."
         }
       ],
       "signals": [
         "policy imitation",
         "shared framing",
-        "parallel protests",
+        "parallel elections",
         "contagion of rhetoric"
       ],
-      "article_count": 150,
+      "article_count": 120,
       "refs": [
         {
-          "title": "Demonstrationen in Erfurt: Proteste gegen AfD-Parteitag verliefen überwiegend friedlich",
-          "source": "DIE ZEIT",
-          "url": "https://www.zeit.de/politik/deutschland/2026-07/proteste-afd-parteitag-erfurt-polizei",
-          "date": "2026-07-04T20:51:51+00:00",
+          "title": "AfD-Parteitag in Erfurt zu Ende gegangen: Polizei spricht von weitgehend friedlichen Aktionen",
+          "source": "tagesschau.de",
+          "url": "https://www.tagesschau.de/video/video-1609666.html",
+          "date": "2026-07-05T13:27:42+00:00",
           "category": "germany"
+        },
+        {
+          "title": "Demos gegen AfD-Parteitag: Thüringer Polizei zieht positive Bilanz",
+          "source": "tagesschau.de",
+          "url": "https://www.tagesschau.de/inland/innenpolitik/afd-parteitag-polizeibilanz-100.html",
+          "date": "2026-07-05T13:26:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "AfD-Bundesparteitag in Erfurt – zur aktuellen Lage am Sonntagnachmittag",
+          "source": "MDR.de",
+          "url": "https://www.mdr.de/video/mdr-plus-videos/video-1609650.html",
+          "date": "2026-07-05T13:18:39+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Parteitag unter Druck: AfD setzt auf Geschlossenheit - Erfurt erlebt heftige Proteste - n-tv.de - n-tv.de",
+          "source": "",
+          "url": "https://www.n-tv.de/politik/AfD-setzt-auf-Geschlossenheit-Erfurt-erlebt-heftige-Proteste-id31049942.html",
+          "date": "2026-07-05T13:14:51+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "AfD-Parteitag: Linkes Bündnis zieht positive Bilanz der Proteste in Erfurt",
+          "source": "DIE ZEIT",
+          "url": "https://www.zeit.de/politik/deutschland/2026-07/erfurt-proteste-afd-bundesparteitag-blockaden-polizei-bilanz-widersetzen-gxe",
+          "date": "2026-07-05T12:54:38+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Dämpfer für Chrupalla, Weidel gestärkt AfD bekräftigt Machtanspruch zum Ende des Parteitags",
+          "source": "Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/politik/dampfer-fur-chrupalla-weidel-gestarkt-afd-bekraftigt-machtanspruch-zum-ende-des-parteitags-15794774.html",
+          "date": "2026-07-05T12:52:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "AfD-Parteitag in Erfurt endet: Beobachter kritisieren „überdimensionierten Polizeieinsatz“",
+          "source": "taz.de",
+          "url": "https://taz.de/AfD-Parteitag-in-Erfurt-endet/!6193602/",
+          "date": "2026-07-05T12:36:26+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "AfD-Parteitag zu Ende",
+          "source": "WELT",
+          "url": "https://www.welt.de/regionales/thueringen/article6a4a4d82dbe2b30aced1acbb/afd-parteitag-zu-ende.html",
+          "date": "2026-07-05T12:28:21+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Bilanz zum AfD-Parteitag: “Auf Weidel zugeschnitten”",
+          "source": "ZDF",
+          "url": "https://www.zdf.de/video/magazine/phoenix-collection-phoenix-1080805-1610/phoenix-bilanz-zum-afd-parteitag-auf-weidel-zugeschnitten-100",
+          "date": "2026-07-05T12:22:59+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Erfurter Parteitag: Die Professionalisierung der AfD",
+          "source": "WELT",
+          "url": "https://www.welt.de/debatte/plus6a4a0613ad32e994f875bf7d/erfurter-parteitag-die-professionalisierung-der-afd.html",
+          "date": "2026-07-05T12:16:28+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "AfD Bundesparteitag: Alice Weidel zelebriert den wirtschaftlichen Niedergang",
+          "source": "FAZ",
+          "url": "https://www.faz.net/aktuell/wirtschaft/mehr-wirtschaft/afd-bundesparteitag-alice-weidel-zelebriert-den-wirtschaftlichen-niedergang-accg-200999296.html",
+          "date": "2026-07-05T12:03:23+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "AfD-Parteitag: Weidel kontert Wahlprogramm: «Ich lebe etwas anderes»",
+          "source": "DIE ZEIT",
+          "url": "https://www.zeit.de/news/2026-07/05/weidel-kontert-wahlprogramm-ich-lebe-etwas-anderes",
+          "date": "2026-07-05T11:50:51+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Javier Milei confirmó que asistirá a las asunciones de Keiko Fujimori y De la Espriella",
+          "source": "Los Primeros TV",
+          "url": "https://www.losprimeros.tv/politica/javier-milei-confirmo-que-asistira-a-las-asunciones-de-keiko-fujimori-y-de-la-espriella_a6a4a42d9210279097d55cc8b",
+          "date": "2026-07-05T11:42:47+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Erfurt: Die AfD legt sich das Parfüm der Rechtsstaatlichkeit an",
+          "source": "SZ.de",
+          "url": "https://www.sueddeutsche.de/meinung/afd-erfurt-extremismus-weidel-kommentar-li.3509795",
+          "date": "2026-07-05T11:27:56+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Germany sees mass demonstrations as far-right AfD eyes power | Daily Sabah",
+          "source": "Daily Sabah",
+          "url": "https://www.dailysabah.com/world/europe/germany-sees-mass-demonstrations-as-far-right-afd-eyes-power",
+          "date": "2026-07-05T11:20:00+00:00",
+          "category": "general"
+        },
+        {
+          "title": "Far-right Alternative for Germany party conference draws to a close",
+          "source": "Yahoo",
+          "url": "https://www.yahoo.com/news/politics/articles/far-alternative-germany-party-conference-111930618.html",
+          "date": "2026-07-05T11:19:30+00:00",
+          "category": "general"
+        },
+        {
+          "title": "Die AfD präsentiert sich beim Parteitag in Erfurt fast schon wie eine Altpartei",
+          "source": "der Freitag",
+          "url": "https://www.freitag.de/autoren/sebastian-friedrich/die-afd-praesentiert-sich-beim-parteitag-in-erfurt-fast-schon-wie-eine-altpartei",
+          "date": "2026-07-05T11:10:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Rothman: ‘If High Court ignores the law, we’ll follow the law’",
+          "source": "Ynetnews",
+          "url": "https://www.ynetnews.com/article/ryvnv2pqzg",
+          "date": "2026-07-05T11:09:29+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "AfD bestätigt Spitzenduo – Chrupalla verliert an Rückhalt",
+          "source": "WELT",
+          "url": "https://www.welt.de/regionales/thueringen/article6a4a38a6ac819a6f6bcafedf/afd-bestaetigt-spitzenduo-chrupalla-verliert-an-rueckhalt.html",
+          "date": "2026-07-05T11:01:37+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "AfD-Parteitag im Liveticker: Alle News zur Lage in Erfurt",
+          "source": "FOCUS online",
+          "url": "https://www.focus.de/politik/deutschland/afd-parteitag-im-liveticker-alle-news-zur-lage-in-erfurt_65879014-67e4-4bd5-8057-7d014248e4f4.html",
+          "date": "2026-07-05T10:41:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "AfD will jetzt nach Macht in Deutschland greifen: „Wir werden regieren“",
+          "source": "Schwäbische.de",
+          "url": "https://www.schwaebische.de/politik/afd-will-jetzt-nach-macht-in-deutschland-greifen-wir-werden-regieren-4696172",
+          "date": "2026-07-05T10:09:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "AfD-Bundesparteitag in Erfurt geht zu Ende",
+          "source": "tagesschau.de",
+          "url": "https://www.tagesschau.de/video/video-1609620.html",
+          "date": "2026-07-05T10:07:23+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Proteste gegen Parteitag: Wie man AfDler in tiefster Nacht aus dem Bett zwingt",
+          "source": "SZ.de",
+          "url": "https://www.sueddeutsche.de/politik/erfurt-proteste-afd-bundesparteitag-blockaden-li.3510509",
+          "date": "2026-07-05T09:49:58+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Doppelspitze bröckelt – Weidel triumphiert, Höcke gewinnt an Einfluss",
+          "source": "WELT",
+          "url": "https://www.welt.de/videos/video6a4a16c7dbe2b30aced1a8a9/afd-parteitag-in-erfurt-doppelspitze-broeckelt-alice-weidel-triumphiert-bjoern-hoecke-gewinnt-an-einfluss-und-eine-klatsche-fuer-tino-chrupalla.html",
+          "date": "2026-07-05T08:57:35+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Umfrage-Schock für Merz: AfD zieht Union davon",
+          "source": "Berliner Zeitung",
+          "url": "https://www.berliner-zeitung.de/article/umfrage-schock-fuer-merz-afd-zieht-union-davon-10166798",
+          "date": "2026-07-05T08:27:41+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "In Erfurt setzt die AfD ihren Bundesparteitag fort",
+          "source": "tagesschau.de",
+          "url": "https://www.tagesschau.de/video/video-1609572.html",
+          "date": "2026-07-05T07:28:51+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Im Gespräch mit Dunja Hayali: Alice Weidel verliert Fassung im Interview",
+          "source": "RP Online",
+          "url": "https://rp-online.de/politik/deutschland/alice-weidel-verliert-fassung-waehrend-interview-mit-dunja-halali_aid-150986681",
+          "date": "2026-07-05T07:21:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "AfD baut Vorsprung aus: Union verliert in Umfrage weiter an Zustimmung",
+          "source": "Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/politik/afd-baut-vorsprung-aus-union-verliert-in-umfrage-weiter-an-zustimmung-15801747.html",
+          "date": "2026-07-05T06:50:37+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Weidel klar vor Chrupalla im Amt bestätigt ‒ Polizei hat Proteste im Griff",
+          "source": "WELT",
+          "url": "https://www.welt.de/videos/video6a49e81bad32e994f875be23/afd-parteitag-in-erfurt-alice-weidel-klar-vor-tino-chrupalla-im-amt-bestaetigt-polizei-hat-antifa-proteste-voll-im-griff.html",
+          "date": "2026-07-05T05:50:11+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Nachrichtenpodcast: Neue alte Spitze: Wohin steuert die AfD jetzt?",
+          "source": "DIE ZEIT",
+          "url": "https://www.zeit.de/politik/2026-07/afd-parteitag-erfurt-thueringen-partei-nachrichtenpodcast",
+          "date": "2026-07-05T04:00:06+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "AfD-Parteitag endet mit Reden von Weidel und Chrupalla",
+          "source": "Südtirol News",
+          "url": "https://www.suedtirolnews.it/politik/afd-parteitag-endet-mit-reden-von-weidel-und-chrupalla",
+          "date": "2026-07-05T03:05:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "AfD: Weidel zieht neue Saiten auf - T-Online",
+          "source": "",
+          "url": "https://www.t-online.de/nachrichten/deutschland/innenpolitik/id_101328104/afd-parteitag-chrupalla-abgestraft-weidels-schlachtfest-.html",
+          "date": "2026-07-05T02:29:24+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Delegiertentreffen: AfD-Parteitag endet - Protestbündnis zieht positive Bilanz",
+          "source": "DIE ZEIT",
+          "url": "https://www.zeit.de/news/2026-07/05/afd-parteitag-endet-protestbuendnis-zieht-positive-bilanz",
+          "date": "2026-07-05T02:15:04+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Sonntagsfrage: AfD fast zehn Prozent vor Union",
+          "source": "bild.de",
+          "url": "https://www.bild.de/politik/sonntagsfrage-afd-fast-zehn-prozent-vor-union-6a47c77dad32e994f875a50c",
+          "date": "2026-07-05T02:00:20+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "AfD liegt laut Umfrage acht Prozentpunkte vor der Union",
+          "source": "FAZ",
+          "url": "https://www.faz.net/aktuell/politik/inland/afd-liegt-laut-umfrage-acht-prozentpunkte-vor-der-union-accg-200998531.html",
+          "date": "2026-07-05T00:08:42+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Far-right opposition party divides Germany as its popularity grows",
+          "source": "The Christian Science Monitor",
+          "url": "https://www.csmonitor.com/World/Europe/2026/0704/Alternative-for-Germany-convention-protests",
+          "date": "2026-07-04T20:50:35+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Protests, arrests at German far-right AfD congress",
+          "source": "DW.com",
+          "url": "https://www.dw.com/en/protests-arrests-at-german-far-right-afd-congress/video-77833769",
+          "date": "2026-07-04T19:01:05+00:00",
+          "category": "general"
+        },
+        {
+          "title": "Mass protests in Germany fail to stop far-right congress",
+          "source": "Arab News PK",
+          "url": "https://www.arabnews.pk/node/2649671/world",
+          "date": "2026-07-04T18:33:31+00:00",
+          "category": "general"
         },
         {
           "title": "Zehntausende demonstrieren rund um den Parteitag der AfD",
           "source": "tagesschau.de",
           "url": "https://www.tagesschau.de/tagesschau_20_uhr/video-1609408.html",
           "date": "2026-07-04T18:27:25+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Germanys AfD Re-Elects Alice Weidel, Tino Chrupalla As Party Co-Leaders",
+          "source": "ABP Live English",
+          "url": "https://news.abplive.com/news/world/germany-s-afd-re-elects-alice-weidel-tino-chrupalla-as-party-co-leaders-1854516",
+          "date": "2026-07-04T17:50:44+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Proteste begleiten AfD-Parteitag in Erfurt",
+          "source": "ORF ON",
+          "url": "https://on.orf.at/video/14329839/16116571/proteste-begleiten-afd-parteitag-in-erfurt",
+          "date": "2026-07-04T17:42:57+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Erfurt am Samstag: Mehr als 30.000 Menschen protestieren gegen AfD-Parteitag",
+          "source": "Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/politik/erfurt-am-samstag-mehr-als-30000-menschen-protestieren-gegen-afd-parteitag-15796385.html",
+          "date": "2026-07-04T17:41:08+00:00",
           "category": "germany"
         },
         {
@@ -61,11 +341,137 @@
           "category": "germany"
         },
         {
+          "title": "Extreme Rechte – Tausendfacher Widerspruch gegen die AfD in Erfurt - nd-aktuell.de",
+          "source": "",
+          "url": "https://www.nd-aktuell.de/artikel/1200891.extreme-rechte-tausendfacher-widerspruch-gegen-die-afd-in-erfurt.html",
+          "date": "2026-07-04T15:32:50+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Tausendfacher Protest gegen die AfD",
+          "source": "WEB.DE",
+          "url": "https://web.de/magazine/politik/inland/tausendfacher-protest-afd-42465630",
+          "date": "2026-07-04T15:15:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "'We are the new people's party': Far-right AfD re-elects leaders as mass protests rock Germany",
+          "source": "The Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/europe/we-are-the-new-peoples-party-afd-re-elects-leaders-as-mass-protests-rock-germany/articleshow/132183453.cms",
+          "date": "2026-07-04T15:14:00+00:00",
+          "category": "general"
+        },
+        {
+          "title": "Germany's anti-immigration AfD elects new leaders amid mass protests",
+          "source": "AOL.com",
+          "url": "https://www.aol.co.uk/articles/germanys-anti-immigration-afd-elects-151308000.html",
+          "date": "2026-07-04T15:13:08+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Weitgehend friedlicher Protest gegen die AfD – Bundesparteitag bestätigt Doppelspitze Weidel-Chrupalla",
+          "source": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/weitgehend-friedlicher-protest-gegen-die-afd-bundesparteitag-bestaetigt-doppelspitze-weidel-chrupall-100.html",
+          "date": "2026-07-04T15:00:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "AfD-Parteitag vor Landtagswahlen: Weidel und Chrupalla bestätigt",
+          "source": "FAZ",
+          "url": "https://www.faz.net/video/afd-parteitag-vor-landtagswahlen-weidel-und-chrupalla-bestaetigt-200998102.html",
+          "date": "2026-07-04T14:39:04+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "In Germany, Thousands Are Protesting Far-Right AfD Party Congress",
+          "source": "Left Voice",
+          "url": "https://www.leftvoice.org/in-germany-thousands-are-protesting-far-right-afd-party-congress/",
+          "date": "2026-07-04T13:48:50+00:00",
+          "category": "general"
+        },
+        {
+          "title": "Demonstrationen gegen die AfD: Blockadeversuche in Erfurt scheitern",
+          "source": "DIE ZEIT",
+          "url": "https://www.zeit.de/politik/deutschland/2026-07/demonstrationen-afd-parteitag-erfurt-blockaden",
+          "date": "2026-07-04T13:19:47+00:00",
+          "category": "germany"
+        },
+        {
           "title": "German riot police clash with protesters attempting to block far-right AfD conference – video",
           "source": "The Guardian",
           "url": "https://www.theguardian.com/world/video/2026/jul/04/german-riot-police-far-right-afd-conference-protest-video",
           "date": "2026-07-04T13:17:00+00:00",
           "category": "general"
+        },
+        {
+          "title": "Germans protest, block roads in massive rally to stop far-right AfD party convention",
+          "source": "TRT World",
+          "url": "https://www.trtworld.com/article/6913c9b1b613",
+          "date": "2026-07-04T13:15:23+00:00",
+          "category": "general"
+        },
+        {
+          "title": "In Germany, the AfD re-elected its leaders at its convention",
+          "source": "UA.NEWS",
+          "url": "https://ua.news/en/world/u-nimechchini-adn-pereobrala-svoyikh-lideriv-na-zyizdi",
+          "date": "2026-07-04T13:04:54+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "AfD-Parteitag in Erfurt: Doppelspitze wiedergewählt - Proteste vor der Halle",
+          "source": "tagesschau.de",
+          "url": "https://www.tagesschau.de/multimedia/audio/audio-3338906.html",
+          "date": "2026-07-04T12:52:39+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Thousands protest against far-right German party",
+          "source": "The Canberra Times",
+          "url": "https://www.canberratimes.com.au/story/9304683/thousands-protest-against-far-right-german-party/",
+          "date": "2026-07-04T12:48:49+00:00",
+          "category": "general"
+        },
+        {
+          "title": "tagesschau24 - AfD-Chefs Weidel und Chrupalla werden von Delegierten im Amt bestätigt - hier anschauen",
+          "source": "ARD Mediathek",
+          "url": "https://www.ardmediathek.de/video/tagesschau24/afd-chefs-weidel-und-chrupalla-werden-von-delegierten-im-amt-bestaetigt/tagesschau24/Y3JpZDovL3RhZ2Vzc2NoYXUuZGUvOTk4YjQyYzQtNmEwOS00YTk5LTgwM2MtNGM5YzI1ZjYxZDkw",
+          "date": "2026-07-04T12:33:22+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Thousands of protesters in Germany rally against far-right AfD",
+          "source": "politico.eu",
+          "url": "https://www.politico.eu/article/thousands-of-protesters-in-germany-rally-against-far-right-afd/",
+          "date": "2026-07-04T12:09:00+00:00",
+          "category": "general"
+        },
+        {
+          "title": "German riot police clash with protesters hoping to block far-right AfD conference",
+          "source": "The Guardian",
+          "url": "https://www.theguardian.com/world/2026/jul/04/german-riot-police-clash-protesters-block-far-right-afd-conference",
+          "date": "2026-07-04T12:06:00+00:00",
+          "category": "general"
+        },
+        {
+          "title": "Thüringen - Bundesparteitag in Erfurt: Alice Weidel und Tino Chrupalla bleiben AfD-Vorsitzende",
+          "source": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/bundesparteitag-in-erfurt-alice-weidel-und-tino-chrupalla-bleiben-afd-vorsitzende-100.html",
+          "date": "2026-07-04T12:02:35+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "AfD-Parteitag - Weidel und Chrupalla als AfD-Spitzenduo bestätigt - Politik",
+          "source": "SZ.de",
+          "url": "https://www.sueddeutsche.de/politik/afd-parteitag-weidel-und-chrupalla-als-afd-spitzenduo-bestaetigt-dpa.urn-newsml-dpa-com-20090101-260704-930-333314",
+          "date": "2026-07-04T11:54:29+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Proteste gegen AfD-Bundesparteitag",
+          "source": "tagesschau.de",
+          "url": "https://www.tagesschau.de/video/video-1609192.html",
+          "date": "2026-07-04T11:40:50+00:00",
+          "category": "germany"
         },
         {
           "title": "Erfurt am Samstag: Meist bunt und friedlich: Tausendfacher Protest gegen AfD",
@@ -75,44 +481,37 @@
           "category": "germany"
         },
         {
-          "title": "Demos und Proteste begleiten AfD-Parteitag in Erfurt",
-          "source": "ORF",
-          "url": "https://orf.at/stories/3435224/",
-          "date": "2026-07-04T10:07:48+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Proteste anlässlich des AfD-Parteitags in Erfurt",
-          "source": "tagesschau.de",
-          "url": "https://www.tagesschau.de/multimedia/audio/audio-3338466.html",
-          "date": "2026-07-04T06:56:00+00:00",
-          "category": "germany"
+          "title": "Thousands protest in Germany as far-right AfD party meets",
+          "source": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/7/4/thousands-protest-in-germany-as-far-right-afd-party-meets",
+          "date": "2026-07-04T11:21:47+00:00",
+          "category": "general"
         }
       ],
       "first_seen": "2026-07-04T14:19:34+00:00",
-      "last_seen": "2026-07-05T04:47:26+00:00"
+      "last_seen": "2026-07-05T14:23:42+00:00"
     },
     {
       "id": "pp-vox-coalitions-reshape-spain-s-regional-governments",
       "title": "PP-Vox coalitions reshape Spain's regional governments",
-      "blurb": "Spain's conservative Partido Popular (PP) and far-right Vox have formed coalition governments in multiple regions, including Andalusia, reshaping the political landscape. These alliances reflect a broader trend of far-right integration into mainstream governance across Europe, with shared policies on immigration, nationalism, and social issues.",
+      "blurb": "Spain's conservative Partido Popular (PP) and far-right Vox have formed coalition governments in multiple regions, most notably in Andalusia. These alliances reflect a broader rightward shift in Spanish politics, with Vox gaining unprecedented influence in regional governance.",
       "convergence": 4,
       "countries": [
         {
           "name": "🇪🇸 Vox",
-          "note": "Coalition agreements with PP in Andalusia and other regions"
+          "note": "Vox secured key roles in Andalusia's government, including vice-presidency and control over tourism and justice portfolios, marking its most significant regional power grab yet."
         },
         {
           "name": "🇪🇸 Partido Popular",
-          "note": "Formation of coalition governments with Vox in multiple regions"
+          "note": "PP leader Juanma Moreno formed a coalition with Vox in Andalusia, abandoning his centrist stance and embracing far-right policies to secure a third term as president."
         },
         {
           "name": "🇮🇹 Fratelli d'Italia / Lega",
-          "note": "Coverage of far-right coalition dynamics in Europe"
+          "note": "Italian far-right parties have closely monitored Spain's PP-Vox coalitions, drawing parallels to their own regional governance strategies and potential national alliances."
         },
         {
           "name": "🇫🇷 Rassemblement National",
-          "note": "Analysis of far-right integration into governance"
+          "note": "France's far-right RN has analyzed Spain's regional coalitions, using them as a case study for potential future alliances in French politics."
         }
       ],
       "signals": [
@@ -121,21 +520,462 @@
         "shared framing",
         "contagion of rhetoric"
       ],
-      "article_count": 120,
+      "article_count": 80,
       "refs": [
+        {
+          "title": "Moreno Bonilla reivindica la \"vía andaluza\" en el arranque de su nuevo Gobierno con Vox",
+          "source": "Ceuta Ahora",
+          "url": "https://ceutaahora.com/art/22050/moreno-bonilla-reivindica-la-via-andaluza-en-el-arranque-de-su-nuevo-gobierno-con-vox",
+          "date": "2026-07-05T13:17:35+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Montero, sobre el pacto PP-Vox: Sitúa a Andalucía al servicio de la agenda reaccionaria",
+          "source": "Infobae",
+          "url": "https://www.infobae.com/espana/agencias/2026/07/05/montero-sobre-el-pacto-pp-vox-situa-a-andalucia-al-servicio-de-la-agenda-reaccionaria/",
+          "date": "2026-07-05T12:51:01+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Robert Jenrick forced to deny embattled Farage is a ‘liability’",
+          "source": "The Independent",
+          "url": "https://www.independent.co.uk/bulletin/news/nigel-farage-robert-jenrick-reform-b3009220.html",
+          "date": "2026-07-05T12:12:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Moreno asegura, tras el pacto con Vox, que la 'vía andaluza' sigue viva",
+          "source": "Diario Sur",
+          "url": "https://www.diariosur.es/andalucia/moreno-asegura-via-andaluza-sigue-viva-pese-20260705120636-nt.html",
+          "date": "2026-07-05T11:27:44+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Moreno promete ser \"fiel\" a la \"vía andaluza del diálogo\" tras pactar con Vox",
+          "source": "Diario Público",
+          "url": "https://www.publico.es/politica/moreno-promete-fiel-via-andaluza-dialogo-pactar-vox.html",
+          "date": "2026-07-05T11:09:02+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Juanma Moreno ya es presidente y defiende su pacto con Vox: \"La vía andaluza sigue vigente\"",
+          "source": "MARCA",
+          "url": "https://www.marca.com/tiramillas/politica/2026/07/05/juanma-moreno-presidente-defiende-pacto-vox-via-andaluza-sigue-vigente.html",
+          "date": "2026-07-05T11:07:08+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Gavira garantiza que Moreno tendrá en Vox un 'socio leal': «Somos un partido fiable y predecible»",
+          "source": "El Debate",
+          "url": "https://www.eldebate.com/espana/andalucia/20260705/gavira-garantiza-moreno-tendra-vox-socio-leal-somos-partido-fiable-predecible_436163_amp.html",
+          "date": "2026-07-05T10:43:51+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Gavira garantiza que Moreno tendrá en Vox un \"socio leal\": \"Somos un partido fiable\"",
+          "source": "ABC",
+          "url": "https://www.abc.es/espana/gavira-garantiza-moreno-vox-socio-leal-partido-20260705122756-nt.html",
+          "date": "2026-07-05T10:28:01+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Juanma Moreno toma posesión como presidente andaluz por tercera vez",
+          "source": "rtpa.es",
+          "url": "https://www.rtpa.es/noticias-nacional/2026-07-05/Juanma-Moreno-toma-posesion-como-presidente-andaluz-por-tercera-vez_111783247309.html",
+          "date": "2026-07-05T10:28:00+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Moreno promete gobernar para la mayoría: Vox gestionará solo el 2,3% del presupuesto andaluz",
+          "source": "moncloa.com",
+          "url": "https://www.moncloa.com/2026/07/05/moreno-vox-gestiona-23-presupuesto-andaluz-3394791/",
+          "date": "2026-07-05T10:10:00+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Gavira asegura que Vox será un \"socio leal\": \"Esto no va de lo que digamos Moreno o yo sino de lo mejor para Andalucía\"",
+          "source": "Europa Press",
+          "url": "https://www.europapress.es/andalucia/noticia-gavira-garantiza-moreno-tendra-vox-socio-leal-somos-partido-fiable-predecible-20260705115415.html",
+          "date": "2026-07-05T09:54:15+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Manuel Gavira promete lealtad a Juanma Moreno: «El PP encontrará en Vox un socio fiable»",
+          "source": "OkDiario",
+          "url": "https://okdiario.com/andalucia/manuel-gavira-promete-lealtad-juanma-moreno-pp-encontrara-vox-socio-fiable-18931154",
+          "date": "2026-07-05T09:53:39+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Juanma Moreno promete ser \"fiel\" al pacto con Vox en su toma de posesión",
+          "source": "Diari ARA",
+          "url": "https://es.ara.cat/politica/juanma-moreno-promete-fiel-pacto-vox-toma-posesion_25_5789718.html",
+          "date": "2026-07-05T09:50:37+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "PP, PSOE y Vox piden que la atención a la discapacidad sea una “prioridad” en el nuevo marco financiero de la UE",
+          "source": "La Vanguardia",
+          "url": "https://www.lavanguardia.com/economia/20260705/11584909/pp-psoe-vox-piden-atencion-discapacidad-sea-prioridad-nuevo-marco-financiero-ue-servimedia20260705.html",
+          "date": "2026-07-05T09:49:00+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Gavira defiende la prioridad nacional en Andalucía tras la toma de posesión de Moreno: \"El Gobierno que va a poner por delante a los españoles\"",
+          "source": "Cadena SER",
+          "url": "https://cadenaser.com/andalucia/2026/07/05/gavira-defiende-la-prioridad-nacional-en-andalucia-tras-la-toma-de-posesion-de-moreno-el-gobierno-que-va-a-poner-por-delante-a-los-espanoles-radio-sevilla/",
+          "date": "2026-07-05T09:42:42+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "El Gobierno recurrirá al Constitucional si Vox y PP derogan la Ley de Memoria andaluza",
+          "source": "moncloa.com",
+          "url": "https://www.moncloa.com/2026/07/05/vox-recurso-constitucional-memoria-3394953/",
+          "date": "2026-07-05T09:37:41+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Manuel Gavira (Vox): \"Andalucía pondrá siempre primero a los españoles\"",
+          "source": "La Razón",
+          "url": "https://www.larazon.es/andalucia/manuel-gavira-vox-andalucia-pondra-siempre-primero-espanoles_202607056a4a2512a8768a6aee41d92c.html",
+          "date": "2026-07-05T09:34:10+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Juanma Moreno trata de minimizar el efecto de su pacto con Vox: \"Los valores no cambian, la vía andaluza sigue vigente\"",
+          "source": "El Mundo",
+          "url": "https://www.elmundo.es/andalucia/2026/07/05/6a4a06b4e4d4d8f91a8b4571.html",
+          "date": "2026-07-05T09:32:00+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Gavira sienta las bases de la vicepresidencia de Vox en la Junta de Andalucía: “Empieza una nueva era, el Gobierno pondrá siempre a los españoles por delante”",
+          "source": "El Correo de Andalucía",
+          "url": "https://www.elcorreoweb.es/andalucia/2026/07/05/gavira-sienta-bases-vicepresidencia-vox-132139602.html",
+          "date": "2026-07-05T09:26:15+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "El Gobierno seguirá apostando por la vía del diálogo con la Junta pese al retroceso de 40 años que atribuye al pacto de Moreno con Vox",
+          "source": "Demócrata",
+          "url": "https://www.democrata.es/politica/el-gobierno-seguira-apostando-por-la-via-del-dialogo-con-la-junta-pese-al-retroceso-de-40-anos-que-atribuye-al-pacto-de-moreno-con-vox/",
+          "date": "2026-07-05T09:22:29+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Sevilla: Investidura de Juanma Moreno con Vox en Turismo y Justicia y un presupuesto de 1.200 millones",
+          "source": "moncloa.com",
+          "url": "https://www.moncloa.com/2026/07/05/investidura-juanma-moreno-sevilla-vox-gobierno-3394898/",
+          "date": "2026-07-05T09:19:00+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Moreno promete ser \"fiel\" a vía andaluza del diálogo tras pactar con Vox: \"Espero legislatura fructífera o no será\"",
+          "source": "La Región",
+          "url": "https://www.laregion.es/espana/moreno-fiel-via-andaluza-pacto-vox-pp_1_20260705-4341214.html",
+          "date": "2026-07-05T09:15:00+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Manuel Gavira (VOX) reitera que el nuevo Gobierno andaluz defenderá el \"sentido común\" y trabajará para que...",
+          "source": "gaceta.es",
+          "url": "https://gaceta.es/espana/manuel-gavira-vox-reitera-que-el-nuevo-gobierno-andaluz-defendera-el-sentido-comun-y-trabajara-para-que-los-espanoles-sean-los-primeros-20260705-1109/",
+          "date": "2026-07-05T09:11:47+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Moreno se reafirma en la vía andaluza del diálogo tras sellar su pacto con Vox",
+          "source": "Demócrata",
+          "url": "https://www.democrata.es/politica/moreno-se-reafirma-en-la-via-andaluza-del-dialogo-tras-sellar-su-pacto-con-vox/",
+          "date": "2026-07-05T09:04:54+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "El Gobierno mantendrá la \"vía del diálogo\" con la Junta pese al \"retroceso de 40 años\" del pacto de Moreno con Vox",
+          "source": "Europa Press",
+          "url": "https://www.europapress.es/andalucia/noticia-gobierno-mantendra-via-dialogo-junta-pese-retroceso-40-anos-pacto-moreno-vox-20260705110309.html",
+          "date": "2026-07-05T09:03:09+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Moreno reivindica la vía andaluza tras el pacto con Vox: \"Cabemos todos\"",
+          "source": "ESdiario",
+          "url": "https://www.esdiario.com/andalucia/260705/192411/moreno-reivindica-via-andaluza-pacto-vox-cabemos-todos.html",
+          "date": "2026-07-05T08:47:24+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "José Yélamo, del pacto de Juanma Moreno con Vox: \"Nunca un gobierno autonómico del PP costó tan caro; se ha comido con patatas 150 medidas\"",
+          "source": "LaSexta",
+          "url": "https://amp.lasexta.com/programas/sexta-noche/jose-yelamo-pacto-juanma-moreno-vox-nunca-gobierno-autonomico-costo-tan-caro-comido-patatas-150-medidas_202607056a4a1906a8768a6aee41ceab.html",
+          "date": "2026-07-05T08:42:46+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Moreno, en su toma de posesión tras pactar con Vox: \"Los acuerdos no gustan al 100% ni a las partes que lo firman\"",
+          "source": "elDiario.es",
+          "url": "https://www.eldiario.es/andalucia/moreno-toma-posesion-pactar-vox-acuerdos-no-gustan-100-partes-firman_1_13357223.html",
+          "date": "2026-07-05T08:35:11+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Moreno toma posesión tras el pacto con Vox: \"Espero una legislatura fructífera o no será\"",
+          "source": "Onda Regional de Murcia | ORM",
+          "url": "https://www.orm.es/informativos/moreno-toma-posesion-tras-el-pacto-con-vox-espero-legislatura-fructifera-o-no-sera/",
+          "date": "2026-07-05T08:27:44+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Moreno defiende el pacto con Vox en una toma de posesión de perfil bajo: \"La vía andaluza siempre ha sido contraria a los cordones sanitarios\"",
+          "source": "El Correo de Andalucía",
+          "url": "https://www.elcorreoweb.es/andalucia/2026/07/05/moreno-defiende-pacto-vox-toma-132133854.html",
+          "date": "2026-07-05T08:27:41+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Juanma Moreno toma posesión como presidente y defiende su pacto con Vox: \"Los acuerdos son la esencia del diálogo\"",
+          "source": "huffingtonpost.es",
+          "url": "https://www.huffingtonpost.es/politica/juanma-moreno-toma-posesion-presidente-defiende-pacto-vox-losacuerdos-son-esencia-dialogo-f202607.html",
+          "date": "2026-07-05T08:16:35+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Juanma Moreno cierra el acuerdo PP-Vox para gobernar Andalucía con vicepresidencia para Vox",
+          "source": "moncloa.com",
+          "url": "https://www.moncloa.com/2026/07/05/juanma-moreno-acuerdo-pp-vox-andalucia-3394789/",
+          "date": "2026-07-05T08:07:00+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Moreno defiende el acuerdo con Vox: \"La vía andaluza es inclusiva y no excluyente\"",
+          "source": "La Razón",
+          "url": "https://www.larazon.es/andalucia/moreno-defiende-acuerdo-vox-via-andaluza-inclusiva-excluyente_202607056a4a1063a8768a6aee41c78c.html",
+          "date": "2026-07-05T08:05:55+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Juanma Moreno toma posesión como presidente de la Junta tras su acuerdo con Vox: “Los valores no cambian”",
+          "source": "La Vanguardia",
+          "url": "https://www.lavanguardia.com/politica/20260705/11584871/juanma-moreno-toma-posesion-presidente-junta-tercera-vez.html",
+          "date": "2026-07-05T08:05:50+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Moreno toma posesión como presidente andaluz y da inicio a un Gobierno de coalición marcado por Vox",
+          "source": "Cadena SER",
+          "url": "https://cadenaser.com/nacional/2026/07/05/moreno-toma-posesion-este-domingo-como-presidente-andaluz-y-da-inicio-a-un-gobierno-de-coalicion-marcado-por-vox-cadena-ser/",
+          "date": "2026-07-05T07:46:28+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Moreno Bonilla toma posesión como presidente de Andalucía tras asumir los postulados de Vox",
+          "source": "Elplural.com",
+          "url": "https://www.elplural.com/autonomias/andalucia/moreno-bonilla-toma-posesion-presidente-andalucia-asumir-postulados-vox_394829102",
+          "date": "2026-07-05T07:39:53+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Moreno Bonilla reivindica su pacto con Vox en su toma de posesión: \"Es la vía andaluza\"",
+          "source": "Elplural.com",
+          "url": "https://www.elplural.com/autonomias/andalucia/moreno-bonilla-reivindica-pacto-vox-toma-posesion-via-andaluza_394829102",
+          "date": "2026-07-05T07:39:00+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Directo | Juanma Moreno arma un Gobierno de contrapesos a Vox con más peso para Antonio Repullo y Antonio Sanz",
+          "source": "El Periódico",
+          "url": "https://amp.elperiodico.com/es/politica/20260705/directo-juanma-moreno-arma-gobierno-132137585",
+          "date": "2026-07-05T07:25:53+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Farage denies wrongdoing over reports of undeclared financial benefits",
+          "source": "The Independent",
+          "url": "https://www.independent.co.uk/bulletin/news/nigel-farage-george-cottrell-reform-uk-b3009131.html",
+          "date": "2026-07-05T07:06:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "El acuerdo PP-Vox recorta ayudas a sindicatos y organizaciones empresariales: Gavira dice que \"se acabaron las mariscadas\"",
+          "source": "lavozdelsur.es",
+          "url": "https://www.lavozdelsur.es/actualidad/politica/el-acuerdo-pp-vox-recorta-ayudas-a-sindicatos-y-organizaciones-empresariales-gavira-dice-que-se-acabaron-las-mariscadas.html",
+          "date": "2026-07-05T06:53:30+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "La vía andaluza de Moreno también lleva hasta Vox",
+          "source": "elDiario.es",
+          "url": "https://www.eldiario.es/blog/politica-para-supervivientes/via-andaluza-moreno-lleva-vox_132_13354801.html",
+          "date": "2026-07-05T06:34:59+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "La Junta asigna a Vox una macroconsejería en Sevilla con 1.200 millones de presupuesto",
+          "source": "moncloa.com",
+          "url": "https://www.moncloa.com/2026/07/05/macroconsejeria-vox-sevilla-andalucia-presupuesto-3394901/",
+          "date": "2026-07-05T06:13:15+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Présidentielle 2027 : « Bardella n’a plus intérêt à jouer les doublures », l’analyse du chercheur Bruno Cautrès",
+          "source": "Sud Ouest",
+          "url": "https://www.sudouest.fr/elections/presidentielle/presidentielle-2027-bardella-n-a-plus-interet-a-jouer-les-doublures-l-analyse-du-chercheur-bruno-cautres-29764331.php",
+          "date": "2026-07-05T06:00:00+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Lo que ha dicho Margallo sobre la 'prioridad nacional' igual no sienta bien a más de uno en Génova",
+          "source": "El HuffPost",
+          "url": "https://www.huffingtonpost.es/virales/lo-dicho-margallo-sobre-prioridad-nacional-igual-sienta-mas-genova-f202607.html",
+          "date": "2026-07-05T05:51:30+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Se cae la careta de Moreno Bonilla: se arrodilla ante Vox y Feijóo tras fracasar su asalto a Madrid",
+          "source": "Elplural.com",
+          "url": "https://www.elplural.com/opinion/cae-careta-moreno-bonilla-arrodilla-vox-feijoo-fracasar-asalto-madrid_394756102",
+          "date": "2026-07-05T05:17:19+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "DIRECTO | Toma de posesión de Juanma Moreno como presidente de la Junta de Andalucía tras su pacto con Vox",
+          "source": "El Correo de Andalucía",
+          "url": "https://www.elcorreoweb.es/andalucia/2026/07/05/directo-toma-posesion-juanma-moreno-132132080.html",
+          "date": "2026-07-05T05:11:27+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Una Ley de Familias para fomentar la natalidad, entre las primeras medidas del pacto andaluz PP-Vox",
+          "source": "ABC",
+          "url": "https://www.abc.es/espana/andalucia/ley-familias-fomentar-natalidad-primeras-normas-20260705070902-nts.html",
+          "date": "2026-07-05T05:09:02+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "NATO chief faces challenge at summit as Trump demands 'loyalty' and not just burden-sharing",
+          "source": "KSAT",
+          "url": "https://www.ksat.com/news/world/2026/07/05/nato-chief-faces-challenge-at-summit-as-trump-demands-loyalty-and-not-just-burden-sharing/",
+          "date": "2026-07-05T05:07:53+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Juanma piensa en los malagueños de su Gobierno, Vox se va a la playa y el PSOE lidia con la «traición» y su historia",
+          "source": "La Opinión de Málaga",
+          "url": "https://www.laopiniondemalaga.es/malaga/2026/07/05/juanma-piensa-malaguenos-gobierno-vox-andalucia-132128719.amp.html",
+          "date": "2026-07-05T05:00:50+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Juanma Moreno arma un Gobierno de contrapesos a Vox con más peso para Antonio Repullo y Antonio Sanz",
+          "source": "El Correo de Andalucía",
+          "url": "https://www.elcorreoweb.es/andalucia/2026/07/05/juanma-moreno-arma-gobierno-contrapesos-132108655.html",
+          "date": "2026-07-05T04:59:27+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "El contenido del acuerdo entre el PP y Vox en Andalucía y el problema del escorpión",
+          "source": "Contando Estrelas",
+          "url": "https://www.outono.net/elentir/2026/07/05/el-contenido-del-acuerdo-entre-el-pp-y-vox-en-andalucia-y-el-problema-del-escorpion/",
+          "date": "2026-07-05T04:49:00+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Lo que dice el pacto entre PP y Vox sobre la prioridad nacional y la bajada de impuestos",
+          "source": "Diario de Sevilla",
+          "url": "https://www.diariodesevilla.es/andalucia/dice-pacto-pp-vox-prioridad_0_2007306193.html",
+          "date": "2026-07-05T04:00:52+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "El reto de Moreno: Cómo gobernar si ha acatado todo el ideario de Vox",
+          "source": "Diario de Sevilla",
+          "url": "https://www.diariodesevilla.es/andalucia/reto-moreno-gobernar-si-acatado_0_2007306183.html",
+          "date": "2026-07-05T04:00:44+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Moreno toma posesión como presidente andaluz en el palacio de San Telmo para un tercer mandato tras su pacto con Vox",
+          "source": "RTVE.es",
+          "url": "https://www.rtve.es/noticias/20260705/juanma-moreno-directo-investidura-presidente-andalucia-cronica-resumen/17143886.shtml",
+          "date": "2026-07-05T04:00:34+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Investidura de Juanma Moreno en Andalucía, en directo | Vídeo",
+          "source": "RTVE.es",
+          "url": "https://amp.rtve.es/noticias/20260705/juanma-moreno-directo-investidura-presidente-andalucia-cronica-resumen/17143886.shtml",
+          "date": "2026-07-05T04:00:34+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "El aznarismo y Vox frenan los viajes al centroderecha y los acercamientos a Junts del PP de Feijóo",
+          "source": "El Nacional.cat",
+          "url": "https://www.elnacional.cat/es/politica/aznarismo-vox-frenan-viajes-centroderecha-acercamientos-junts-pp-feijoo_1664120_102.html",
+          "date": "2026-07-05T03:30:00+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Fernando Jáuregui.- El giro a la derecha en la derecha",
+          "source": "Diario Palentino",
+          "url": "https://www.diariopalentino.es/opinion/z3aacfe17-e09a-49ea-8277fda45a616f05/202607/el-giro-a-la-derecha-en-la-derecha",
+          "date": "2026-07-05T03:05:39+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "El PP se ata a Vox tras el ciclo autonómico y allana el camino para su coalición tras las generales",
+          "source": "heraldo.es",
+          "url": "https://www.heraldo.es/noticias/nacional/2026/07/05/pp-se-ata-vox-tras-ciclo-autonomico-allana-camino-coalicion-tras-elecciones-generales-2034655.html",
+          "date": "2026-07-05T03:00:00+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "El PP entre dos aguas: el pulso con Vox que marca su estrategia territorial en pleno debate nacional",
+          "source": "MUNDIARIO",
+          "url": "https://www.mundiario.com/articulo/politica/pp-entre-dos-aguas-pulso-vox-que-marca-estrategia-territorial-pleno-debate-nacional/20260705044917393017.html",
+          "date": "2026-07-05T02:49:17+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "El PP aprovechará sus pactos con Vox para reducir la brecha ideológica y la dependencia en las generales",
+          "source": "Vozpopuli",
+          "url": "https://www.vozpopuli.com/amp/espana/politica/el-pp-aprovechara-sus-pactos-con-vox-para-reducir-la-brecha-ideologica-y-la-dependencia-en-las-generales.html",
+          "date": "2026-07-05T02:44:00+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "PP y Vox cambian a la fuerza: Feijóo admite que no puede solo y Abascal abraza la institucionalidad",
+          "source": "El Mundo",
+          "url": "https://www.elmundo.es/espana/2026/07/05/6a493c10e4d4d8090f8b4583.html",
+          "date": "2026-07-05T01:25:19+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "José Ignacio García (Adelante Andalucía), tras el pacto de Juanma Moreno con Vox: \"Sabíamos que no era moderado; se ha comido con gusto la prioridad nacional\"",
+          "source": "LaSexta",
+          "url": "https://www.lasexta.com/programas/sexta-noche/jose-ignacio-garcia-adelante-andalucia-pacto-juanma-moreno-vox-sabiamos-que-era-moderado-comido-gusto-prioridad-nacional_202607046a497b2edcb2092ca8c5ec9c.html",
+          "date": "2026-07-04T21:29:18+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Stankiewicz zakpił z próby otrucia Nawrockiego!",
+          "source": "wPolityce.pl",
+          "url": "https://wpolityce.pl/polityka/764218-stankiewicz-zakpil-z-proby-otrucia-nawrockiego",
+          "date": "2026-07-04T20:47:07+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "PP y Vox frente a los enemigos de España",
+          "source": "La Razón",
+          "url": "https://www.larazon.es/opinion/vox-frente-enemigos-espana_202607046a49693edcb2092ca8c5ddb4.html",
+          "date": "2026-07-04T20:12:46+00:00",
+          "category": "spain"
+        },
         {
           "title": "Bienvenidos a la Andalucía del Gobierno \"imposible\": el PP busca otro socio dócil y Vox la contrarrevolución a Juanma Moreno",
           "source": "elDiario.es",
           "url": "https://www.eldiario.es/andalucia/bienvenidos-andalucia-gobierno-imposible-pp-busca-socio-docil-vox-contrarrevolucion-juanma-moreno_1_13354091.html",
           "date": "2026-07-04T20:10:42+00:00",
           "category": "spain"
-        },
-        {
-          "title": "Karina Milei: \"Mi gran objetivo es que mi hermano sea reelecto en 2027\"",
-          "source": "Bardeo.news",
-          "url": "https://bardeo.news/politica/karina-milei---mi-gran-objetivo-es-que-mi-hermano-sea-reelecto-en-2027-_a6a4958ba210279097d0dfdfe",
-          "date": "2026-07-04T19:06:53+00:00",
-          "category": "argentina"
         },
         {
           "title": "\"Es una amenaza autoritaria\": la izquierda carga contra el \"pacto infame\" de Moreno con Vox en Andalucía",
@@ -145,10 +985,150 @@
           "category": "spain"
         },
         {
-          "title": "PP y Vox superarían los 200 escaños mientras el bloque de gobierno se hunde: el PSOE pierde fuelle y Sumar se desploma",
-          "source": "Telemadrid",
-          "url": "https://www.telemadrid.es/programas/telenoticias-1/PP-y-Vox-superarian-los-200-escanos-mientras-el-bloque-de-gobierno-se-hunde-el-PSOE-pierde-fuelle-y-Sumar-se-desploma-2-2904029582--20260704042520.html",
-          "date": "2026-07-04T14:25:20+00:00",
+          "title": "Redondo acusa al PP y a Vox en el Orgullo de ir \"en tándem para recortar derechos\"",
+          "source": "ABC",
+          "url": "https://www.abc.es/espana/redondo-acusa-pp-vox-orgullo-tandem-recortar-20260704201835-nt.html",
+          "date": "2026-07-04T18:18:39+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Redondo acusa al PP y a Vox en el Orgullo de ir \"en tándem para recortar derechos\" y aboga por \"saltos hacia adelante\"",
+          "source": "Europa Press",
+          "url": "https://www.europapress.es/sociedad/noticia-redondo-acusa-pp-vox-orgullo-ir-tandem-recortar-derechos-aboga-saltos-adelante-20260704194008.html",
+          "date": "2026-07-04T17:40:08+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "¿Qué pasará con Andalusian Crush?: Moreno entrega a Vox la marca turística que vendía una Andalucía abierta, emocional y global",
+          "source": "El Correo de Andalucía",
+          "url": "https://www.elcorreoweb.es/andalucia/2026/07/04/pasara-andalusian-crush-moreno-entrega-132107535.html",
+          "date": "2026-07-04T17:07:56+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "El defiende sus pactos con Vox tras el acuerdo en Andalucía: \"Garantizan la gobernabilidad\"",
+          "source": "La Razón",
+          "url": "https://www.larazon.es/espana/defiende-sus-pactos-vox-acuerdo-andalucia-garantizan-gobernabilidad_202607046a493d5fa8768a6aee412ba7.html",
+          "date": "2026-07-04T17:05:45+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "PP y Vox cargan contra la planificación de los incendios del Govern y reclaman más prevención",
+          "source": "El Periódico",
+          "url": "https://www.elperiodico.com/es/politica/20260704/pp-vox-cargan-govern-incendios-gavarres-emporda-prevencion-132125897",
+          "date": "2026-07-04T15:52:20+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Moreno limita el alcance de la 'prioridad nacional' con Vox: 'Ni migrantes sin sanidad ni niños desescolarizados'",
+          "source": "moncloa.com",
+          "url": "https://www.moncloa.com/2026/07/04/moreno-limita-prioridad-nacional-vox-3394675/",
+          "date": "2026-07-04T15:06:37+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Dev Benegal's restored classic English, August to have 4K world premiere at 83rd Venice International Film...",
+          "source": "Moneycontrol.com",
+          "url": "https://www.moneycontrol.com/entertainment/dev-benegal-s-restored-classic-english-august-to-have-4k-world-premiere-at-83rd-venice-international-film-festival-article-13966083.html",
+          "date": "2026-07-04T14:30:42+00:00",
+          "category": "networks"
+        },
+        {
+          "title": "Óscar López eleva el tono contra Feijóo tras el pacto andaluz: «Va a pasar a la historia por blanquear a Vox»",
+          "source": "El Debate",
+          "url": "https://www.eldebate.com/espana/andalucia/20260704/oscar-lopez-eleva-tono-contra-feijoo-pacto-andaluz-pasar-historia-blanquear-vox_436018.html",
+          "date": "2026-07-04T13:50:40+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Tellado defiende los pactos con Vox y contrapone esos acuerdos a los del PSOE con Bildu: \"Garantizan la gobernabilidad\"",
+          "source": "Europa Press",
+          "url": "https://www.europapress.es/galicia/noticia-tellado-defiende-pactos-vox-contrapone-acuerdos-psoe-bildu-garantizan-gobernabilidad-20260704134451.html",
+          "date": "2026-07-04T13:02:14+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "La foto en Tucumán: Javier Milei apuesta al debut de Diego Santilli para sumar aliados de cara a la reforma electoral",
+          "source": "MDZ Online",
+          "url": "https://www.mdzol.com/politica/la-foto-tucuman-javier-milei-apuesta-al-debut-diego-santilli-sumar-aliados-cara-la-reforma-electoral-n1558179",
+          "date": "2026-07-04T12:53:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Manuel Rico, sobre el pacto de Moreno con la ultraderecha: \"Lo que va a haber en Andalucía es un presidente del PP con un programa de Vox\"",
+          "source": "Cadena SER",
+          "url": "https://cadenaser.com/nacional/2026/07/04/manuel-rico-sobre-el-pacto-de-moreno-con-la-ultraderecha-lo-que-va-a-haber-en-andalucia-es-un-presidente-del-pp-con-un-programa-de-vox-cadena-ser/",
+          "date": "2026-07-04T12:45:03+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Belarra: «Me gusta mucho más la España de Lamine Yamal que la que señalan PP y Vox»",
+          "source": "OkDiario",
+          "url": "https://okdiario.com/espana/belarra-gusta-mucho-mas-espana-lamine-yamal-que-que-senalan-pp-vox-18928059",
+          "date": "2026-07-04T12:29:39+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Moncloa inicia el pulso contra la nueva Junta de PP y Vox por la Ley de Memoria",
+          "source": "Elplural.com",
+          "url": "https://www.elplural.com/autonomias/andalucia/moncloa-inicia-pulso-contra-nueva-junta-pp-vox-ley-memoria_394805102",
+          "date": "2026-07-04T12:25:11+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Gavira (Vox), sobre los sindicatos: Se acabaron las mariscadas a costa de los andaluces",
+          "source": "Infobae",
+          "url": "https://www.infobae.com/espana/agencias/2026/07/04/gavira-vox-sobre-los-sindicatos-se-acabaron-las-mariscadas-a-costa-de-los-andaluces/",
+          "date": "2026-07-04T12:22:08+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Belarra defiende \"la España de Lamine Yamal\" frente a la del pacto andaluz PP-Vox y dice que el PSOE \"no está a la altura\"",
+          "source": "20Minutos",
+          "url": "https://www.20minutos.es/andalucia/malaga/belarra-defiende-espana-lamine-yamal-frente-pacto-andaluz-pp-vox-dice-que-psoe-no-esta-altura_7010610_0.html",
+          "date": "2026-07-04T12:15:56+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "De hablar de promesas \"ilegales\" a un \"acuerdo sensato\": Moreno baila al ritmo de Vox y pasa por el aro de la ultraderecha",
+          "source": "LaSexta",
+          "url": "https://www.lasexta.com/noticias/nacional/hablar-promesas-ilegales-acuerdo-sensato-moreno-baila-ritmo-vox-traga-ultraderecha-andalucia_202607046a48f85d403b9f2792e71249.html",
+          "date": "2026-07-04T12:11:09+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "De hablar de promesas \"ilegales\" a un \"acuerdo sensato\": Moreno baila al ritmo de Vox y traga con la ultraderecha en Andalucía",
+          "source": "LaSexta",
+          "url": "https://amp.lasexta.com/noticias/nacional/hablar-promesas-ilegales-acuerdo-sensato-moreno-baila-ritmo-vox-traga-ultraderecha-andalucia_202607046a48f85d403b9f2792e71249.html",
+          "date": "2026-07-04T12:11:09+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Óscar López acusa a Feijóo de «blanquear» a Vox y asegura que son «indistinguibles»",
+          "source": "The Objective",
+          "url": "https://theobjective.com/espana/politica/2026-07-04/oscar-lopez-acusa-feijoo-blanquear-vox/",
+          "date": "2026-07-04T12:09:50+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Tellado defiende los pactos con Vox: \"Garantizan la gobernabilidad\"",
+          "source": "El Confidencial",
+          "url": "https://www.elconfidencial.com/espana/2026-07-04/pp-vox-acuerdos-gobierno-elecciones-1tps_4383468/",
+          "date": "2026-07-04T11:57:00+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "El PSOE critica que el PP acepte de Vox \"cada vez más exigencias\": No hablan de la mujer",
+          "source": "Infobae",
+          "url": "https://www.infobae.com/espana/agencias/2026/07/04/el-psoe-critica-que-el-pp-acepte-de-vox-cada-vez-mas-exigencias-no-hablan-de-la-mujer/",
+          "date": "2026-07-04T11:56:32+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Belarra defiende \"la España de Lamine Yamal\" frente a la del pacto de PP y Vox en Andalucía",
+          "source": "elDiario.es",
+          "url": "https://www.eldiario.es/andalucia/belarra-defiende-espana-lamine-yamal-frente-pacto-pp-vox-andalucia_1_13356442.html",
+          "date": "2026-07-04T11:48:26+00:00",
           "category": "spain"
         },
         {
@@ -159,60 +1139,186 @@
           "category": "spain"
         },
         {
-          "title": "Vox regreso gobiernos PP: la ‘prioridad nacional’ como bandera",
-          "source": "moncloa.com",
-          "url": "https://www.moncloa.com/2026/07/04/vox-regreso-gobiernos-pp-prioridad-nacional-3394523/",
-          "date": "2026-07-04T10:18:05+00:00",
+          "title": "\"Prioridad nacional\", \"no más inmigrantes ilegales\"\" o \"plan de repatriación\": Vox le cuela a Juanma Moreno más de una decena de postulados antimigratorios en el acuerdo de gobierno",
+          "source": "espacio andaluz",
+          "url": "https://espacioandaluz.com/andalucia/prioridad-nacional-no-mas-inmigrantes-ilegales-o-repatriacion-vox-juanma-moreno-mas-de-una-decena-de-postulados-antimigratorios-acuerdo-de-gobierno/",
+          "date": "2026-07-04T11:20:14+00:00",
           "category": "spain"
         },
         {
-          "title": "Vox impone su agenda en Andalucía: 150 medidas con prioridad nacional y auditoría del gasto en inmigración",
-          "source": "moncloa.com",
-          "url": "https://www.moncloa.com/2026/07/04/medidas-pacto-pp-vox-andalucia-3394305/",
-          "date": "2026-07-04T06:11:00+00:00",
+          "title": "Óscar López acusa a Feijóo de ser el \"gran blanqueador de Vox\" tras el pacto de Moreno en Andalucía",
+          "source": "Europa Press",
+          "url": "https://www.europapress.es/castilla-lamancha/noticia-oscar-lopez-acusa-feijoo-ser-gran-blanqueador-vox-pacto-moreno-andalucia-20260704130504.html",
+          "date": "2026-07-04T11:05:04+00:00",
           "category": "spain"
         }
       ],
       "first_seen": "2026-07-04T14:19:34+00:00",
-      "last_seen": "2026-07-05T04:47:26+00:00"
+      "last_seen": "2026-07-05T14:23:42+00:00"
     },
     {
       "id": "right-wing-parties-target-lgbtq-rights-in-europe",
       "title": "Right-wing parties target LGBTQ+ rights in Europe",
-      "blurb": "Across Europe, right-wing and far-right parties are advancing policies that restrict LGBTQ+ rights, including opposition to gender identity laws, Pride events, and educational programs. This theme highlights the coordinated pushback against progressive social policies in multiple countries.",
+      "blurb": "Across Europe, right-wing and far-right parties are intensifying their opposition to LGBTQ+ rights, with legislative proposals and public statements challenging progressive policies. This trend spans multiple countries, reflecting a coordinated pushback against recent advances in LGBTQ+ equality.",
       "convergence": 4,
       "countries": [
         {
           "name": "🇪🇸 Vox",
-          "note": "Opposition to LGBTQ+ rights and Pride events in Spain"
+          "note": "Vox has led opposition to LGBTQ+ rights in Spain, particularly in Andalusia, where its coalition with PP has raised concerns about rollbacks on progressive policies."
         },
         {
           "name": "🇵🇱 Prawo i Sprawiedliwość",
-          "note": "Restrictive policies on gender identity and LGBTQ+ education"
+          "note": "Poland's PiS has maintained its conservative stance on LGBTQ+ issues, with recent statements and policies reinforcing traditional family values and opposing progressive legislation."
         },
         {
           "name": "🇮🇹 Fratelli d'Italia / Lega",
-          "note": "Criticism of LGBTQ+ policies and Pride events"
+          "note": "Italian far-right parties have targeted LGBTQ+ rights, with legislative proposals and public statements challenging progressive policies, particularly in education and family law."
         },
         {
           "name": "🇫🇷 Rassemblement National",
-          "note": "Opposition to progressive social policies"
+          "note": "France's RN has intensified its opposition to LGBTQ+ rights, with leaders like Marine Le Pen and Jordan Bardella framing progressive policies as threats to traditional values."
         }
       ],
       "signals": [
         "policy imitation",
         "shared framing",
         "parallel elections",
-        "contagion of rhetoric"
+        "coordinated messaging"
       ],
-      "article_count": 80,
+      "article_count": 50,
       "refs": [
+        {
+          "title": "Appello di deputate bipartisan contro le preferenze, 'penalizzano le donne'",
+          "source": "Quotidiano Nazionale",
+          "url": "https://www.quotidiano.net/ultimaora/appello-di-deputate-bipartisan-contro-bcf74a67",
+          "date": "2026-07-05T13:21:58+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "DEBATT: SD: Det är inte omsorgen det ska sparas på - Västerviks-Tidningen",
+          "source": "",
+          "url": "https://www.vt.se/debatt/artikel/sd-det-ar-inte-omsorgen-det-ska-sparas-pa/lzd21ngr",
+          "date": "2026-07-05T13:20:00+00:00",
+          "category": "sweden"
+        },
+        {
+          "title": "Bolzano, politica in strada: Fratelli d’Italia lancia la campagna ‘Dillo a noi’",
+          "source": "Buongiorno Südtirol",
+          "url": "https://www.buongiornosuedtirol.it/2026/07/05/bolzano-politica-in-strada-fratelli-ditalia-lancia-la-campagna-dillo-a-noi/",
+          "date": "2026-07-05T12:19:04+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Maureen Dowd: Donald Trump and George Washington have only one thing in common",
+          "source": "The Irish Times",
+          "url": "https://www.irishtimes.com/world/us/2026/07/05/maureen-dowd-donald-trump-and-george-washington-have-only-one-thing-in-common/",
+          "date": "2026-07-05T12:01:09+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "À Liévin, Bardella et Le Pen main dans la main avant le verdict dans l’affaire des assistants parlementaires",
+          "source": "L'Humanité",
+          "url": "https://www.humanite.fr/politique/jordan-bardella/a-lievin-bardella-et-le-pen-main-dans-la-main-avant-le-verdict-dans-laffaire-des-assistants-parlementaires",
+          "date": "2026-07-05T11:54:17+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Bertie Benegas Lynch la pasó mal cuando le hablaron de Manuel Adorni: \"Gastó mucha más plata de la que ganaba\"",
+          "source": "MinutoUno",
+          "url": "https://www.minutouno.com/politica/bertie-benegas-lynch-la-paso-mal-cuando-le-hablaron-manuel-adorni-gasto-mucha-mas-plata-la-que-ganaba-n6296274",
+          "date": "2026-07-05T11:45:49+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Robert Jenrick and Trevor Phillip in heated clash over Nigel Farage allegations: ‘You’re just wrong’",
+          "source": "The Independent",
+          "url": "https://www.independent.co.uk/tv/news/robert-jenrick-trevor-phillips-nigel-farage-video-b3009203.html",
+          "date": "2026-07-05T11:13:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "PP y Vox incluirán la historia del terrorismo de ETA en los colegios andaluces",
+          "source": "El Debate",
+          "url": "https://www.eldebate.com/espana/andalucia/20260705/pp-vox-incluiran-historia-terrorismo-eta-colegios-andaluces_436167.html",
+          "date": "2026-07-05T10:57:21+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "«Basta slogan, sui mezzi pubblici servono controlli»: dopo le ultime aggressioni, la Lega denuncia il fallimento del piano dei bus notturni",
+          "source": "La Firenze che Vorrei",
+          "url": "https://lafirenzechevorrei.it/basta-slogan-sui-mezzi-pubblici-servono-controlli-dopo-le-ultime-aggressioni-la-lega-denuncia-il-fallimento-del-piano-dei-bus-notturni/",
+          "date": "2026-07-05T10:32:59+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "PP, PSOE y Vox piden que la atención a la discapacidad sea una “prioridad” en el nuevo marco financiero de la UE",
+          "source": "La Vanguardia",
+          "url": "https://www.lavanguardia.com/economia/20260705/11584909/pp-psoe-vox-piden-atencion-discapacidad-sea-prioridad-nuevo-marco-financiero-ue-servimedia20260705.html",
+          "date": "2026-07-05T09:49:00+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Una hiperventilada Irene Montero se sube a una carroza del Orgullo para rabiar contra PP y Vox: «Sobran los...",
+          "source": "OkDiario",
+          "url": "https://okdiario.com/espana/hiperventilada-irene-montero-sube-carroza-del-orgullo-rabiar-contra-pp-vox-sobran-odiadores-18930738",
+          "date": "2026-07-05T08:24:21+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Marine Le Pen à Liévin : son fief du Pas-de-Calais lui sert de refuge politique face à la pression judiciaire - parlons-politique.fr",
+          "source": "",
+          "url": "https://www.parlons-politique.fr/elections/marine-le-pen-a-lievin-son-fief-du-pas-de-calais-lui-sert-de-refuge-politique-face-a-la-pression-judiciaire_22783/",
+          "date": "2026-07-05T07:49:43+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Coinger premiata, Marino (Fratelli d’Italia): «Non dai cittadini»",
+          "source": "malpensa24",
+          "url": "https://www.malpensa24.it/coinger-rifiuti-fratelli-italia/",
+          "date": "2026-07-05T07:38:30+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Trump’s Rocker Foe Goes Scorched Earth on MAGA",
+          "source": "The Daily Beast",
+          "url": "https://www.thedailybeast.com/obsessed/trumps-rocker-foe-jack-white-goes-scorched-earth-on-maga/",
+          "date": "2026-07-05T07:22:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Vox ‘mata’ a Juanma",
+          "source": "Elplural.com",
+          "url": "https://www.elplural.com/politica/espana/vox-mata-juanma_394825102_amp",
+          "date": "2026-07-05T06:24:33+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Letras Capitulares: La amenaza de Vox para el gobierno de Bruno García en Cádiz",
+          "source": "Diario de Cádiz",
+          "url": "https://www.diariodecadiz.es/opinion/analisis/amenaza-vox-gobierno-bruno-garcia_0_2007293934.html",
+          "date": "2026-07-05T05:01:09+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "La izquierda arremete contra PP y Vox en el Orgullo: \"La extrema derecha ha irrumpido en las redes sociales... Y hay mucha gente que se deja engañar\"",
+          "source": "El Mundo",
+          "url": "https://www.elmundo.es/madrid/2026/07/05/6a495d9dfc6c83860e8b4583.html",
+          "date": "2026-07-04T22:02:00+00:00",
+          "category": "spain"
+        },
         {
           "title": "Podemos acusa a PP y Vox de \"poner la bandera LGTBI en las papeleras\": \"Quieren retroceder\"",
           "source": "ABC",
           "url": "https://www.abc.es/espana/podemos-acusa-pp-vox-poner-bandera-lgtbi-20260704224832-nt.html",
           "date": "2026-07-04T20:48:37+00:00",
           "category": "spain"
+        },
+        {
+          "title": "Nueva etapa: el Gobierno apura negociaciones con los gobernadores y ahora Karina Milei no descarta un acuerdo con el PRO en CABA",
+          "source": "Clarin.com",
+          "url": "https://www.clarin.com/politica/nueva-etapa-gobierno-apura-negociaciones-gobernadores-ahora-karina-milei-descarta-acuerdo-pro-caba_0_quv15thJ8X.html",
+          "date": "2026-07-04T20:13:08+00:00",
+          "category": "argentina"
         },
         {
           "title": "El PSOE advierte contra el tándem PP-Vox que \"recorta\" los derechos del colectivo LGTBI",
@@ -222,10 +1328,24 @@
           "category": "spain"
         },
         {
+          "title": "El Sindicat d\"Estudiants de València denuncia que un concejal de Vox allanó \"ilegalmente\" su sede",
+          "source": "LaSexta",
+          "url": "https://www.lasexta.com/noticias/nacional/sindicat-destudiants-valencia-denuncia-que-concejal-vox-allano-ilegalmente-sede_202607046a495416a8768a6aee4140c2.html",
+          "date": "2026-07-04T18:42:30+00:00",
+          "category": "spain"
+        },
+        {
           "title": "Podemos acusa a PP y Vox de \"poner la bandera LGTBI en las papeleras\": \"Quieren retroceder en derechos\"",
           "source": "Europa Press",
           "url": "https://www.europapress.es/sociedad/noticia-podemos-acusa-pp-vox-poner-bandera-lgtbi-papeleras-quieren-retroceder-derechos-20260704203144.html",
           "date": "2026-07-04T18:31:44+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Orgullo 2026: el Gobierno y el PP llaman a combatir el odio a las personas LGTBIQ+ entre reproches cruzados",
+          "source": "RTVE.es",
+          "url": "https://www.rtve.es/noticias/20260704/orgullo-2026-reacciones-politicas-gobierno-pp-vox/17143989.shtml",
+          "date": "2026-07-04T18:25:35+00:00",
           "category": "spain"
         },
         {
@@ -243,44 +1363,72 @@
           "category": "spain"
         },
         {
+          "title": "VOX pide recuperar el papel de Primaria en la prestación del menor enfermo",
+          "source": "Redacción Médica",
+          "url": "https://amp.redaccionmedica.com/secciones/parlamentarios/vox-pide-recuperar-el-papel-de-primaria-en-la-prestacion-del-menor-enfermo-5173",
+          "date": "2026-07-04T15:23:17+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Vannacci risponde ad Arianna Meloni: \"Siete voi la casta funzionale alla sinistra\"",
+          "source": "today.it",
+          "url": "https://amp.today.it/politica/vannacci-arianna-meloni-casta-voto-utile.html",
+          "date": "2026-07-04T14:22:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "IU llama a la “movilización” en las comunidades que gobiernan PP y Vox",
+          "source": "Servimedia",
+          "url": "https://www.servimedia.es/noticias/iu-llama-movilizacion-comunidades-gobiernan-pp-vox/1413053076",
+          "date": "2026-07-04T13:07:00+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Weidel bremst Höcke aus – doch Experten warnen vor „nächstem Schritt der Radikalisierung“",
+          "source": "Frankfurter Rundschau",
+          "url": "https://www.fr.de/politik/afd-parteitag-in-erfurt-weidel-stoppt-hoecke-antrag-zur-unvereinbarkeitsliste-der-extremistischen-gruppen-zr-94382613.html",
+          "date": "2026-07-04T12:29:16+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Vox exige retirar el borrador del Gobierno que recortará la ayuda a las familias con hijos gravemente enfermos",
+          "source": "El Debate",
+          "url": "https://www.eldebate.com/sociedad/20260704/vox-exige-retirar-borrador-gobierno-recortara-ayuda-familias-hijos-gravemente-enfermos_436009.html",
+          "date": "2026-07-04T11:57:05+00:00",
+          "category": "spain"
+        },
+        {
           "title": "El Sindicato de Estudiantes denuncia el «allanamiento» de su sede por un concejal de Vox en Valencia",
           "source": "El Debate",
           "url": "https://www.eldebate.com/espana/comunidad-valenciana/20260704/sindicato-estudiantes-denuncia-allanamiento-sede-concejal-vox-valencia_435999.html",
           "date": "2026-07-04T11:48:57+00:00",
           "category": "spain"
-        },
-        {
-          "title": "El Sindicato de Estudiantes denuncia a un concejal de Vox por allanar su sede en Valencia",
-          "source": "Las Provincias",
-          "url": "https://www.lasprovincias.es/valencia-ciudad/sindicato-estudiantes-denuncia-vox-20260704115700-nt_amp.html",
-          "date": "2026-07-04T09:57:35+00:00",
-          "category": "spain"
         }
       ],
       "first_seen": "2026-06-28T14:30:05+00:00",
-      "last_seen": "2026-07-05T04:47:26+00:00"
+      "last_seen": "2026-07-05T14:23:42+00:00"
     },
     {
       "id": "javier-milei-s-regional-alliances-and-anti-socialism-bloc",
       "title": "Javier Milei's regional alliances and anti-socialism bloc",
-      "blurb": "Argentine President Javier Milei is building regional alliances with right-wing leaders across Latin America, including Peru's Keiko Fujimori and Colombia's Abelardo de la Espriella. This theme reflects the growing transnational cooperation among right-wing leaders in the region, united by anti-socialist rhetoric and free-market policies.",
+      "blurb": "Argentine President Javier Milei is actively building regional alliances with right-wing leaders across Latin America, positioning himself as a key figure in an emerging anti-socialist bloc. His diplomatic efforts include attending inaugurations of far-right leaders and promoting a shared ideological agenda.",
       "convergence": 4,
       "countries": [
         {
           "name": "🇦🇷 La Libertad Avanza",
-          "note": "Milei's alliances with right-wing leaders in Latin America"
+          "note": "Milei is attending inaugurations of far-right leaders in Peru and Colombia, seeking to build a regional anti-socialist alliance and strengthen his international profile."
         },
         {
           "name": "🇺🇸 MAGA / Trump",
-          "note": "Parallels drawn between Milei's policies and Trump's agenda"
+          "note": "The Trump administration has shown support for Milei's anti-socialist agenda, with diplomatic engagements reflecting shared ideological goals in the Americas."
         },
         {
           "name": "🇵🇪 Peru (external)",
-          "note": "Milei's alliance with Keiko Fujimori"
+          "note": "Milei will attend Keiko Fujimori's inauguration in Peru, signaling support for her right-wing government and reinforcing regional anti-socialist ties."
         },
         {
           "name": "🇨🇴 Colombia (external)",
-          "note": "Milei's alliance with Abelardo de la Espriella"
+          "note": "Milei is set to attend the inauguration of Colombia's far-right president Abelardo de la Espriella, further solidifying his role in the regional anti-socialist bloc."
         }
       ],
       "signals": [
@@ -289,13 +1437,265 @@
         "parallel elections",
         "coordinated messaging"
       ],
-      "article_count": 60,
+      "article_count": 40,
       "refs": [
         {
-          "title": "Karina Milei en Misiones: \"El objetivo es que mi hermano sea reelecto en 2027\"",
-          "source": "Cadena 3 Argentina",
-          "url": "https://www.cadena3.com/noticia/politica-y-economia/karina-milei-en-misiones-el-objetivo-es-que-mi-hermano-sea-reelecto-en-2027_569843",
-          "date": "2026-07-04T20:41:02+00:00",
+          "title": "Santilli y Karina Milei revisan los nombramientos de Adorni y buscan limpiar el lastre de su gestión",
+          "source": "Los Andes",
+          "url": "https://www.losandes.com.ar/politica/santilli-y-karina-milei-revisan-los-nombramientos-adorni-y-buscan-limpiar-el-lastre-su-gestion-n5997405",
+          "date": "2026-07-05T13:14:10+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei reordena su tropa legislativa para la reelección",
+          "source": "Letra P",
+          "url": "https://www.letrap.com.ar/politica/javier-milei-reordena-su-tropa-legislativa-la-reeleccion-n5424937",
+          "date": "2026-07-05T12:50:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei y sus medidas, EN VIVO: el Presidente visitará · Examedia",
+          "source": "examedia.com.ar",
+          "url": "https://www.examedia.com.ar/portada/post/87442688",
+          "date": "2026-07-05T12:19:12+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Operativo reelección de Javier Milei: sin Adorni tampoco hay paraíso",
+          "source": "Letra P",
+          "url": "https://www.letrap.com.ar/politica/operativo-reeleccion-javier-milei-adorni-tampoco-hay-paraiso-n5424935",
+          "date": "2026-07-05T11:58:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei confirmó que viajará a las asunciones de Keiko Fujimori en Perú y Abelardo de la Espriella en Colombia",
+          "source": "Radiofonica 100.7",
+          "url": "https://radiofonica.com/javier-milei-confirmo-que-viajara-a-las-asunciones-de-keiko-fujimori-en-peru-y-abelardo-de-la-espriella-en-colombia/",
+          "date": "2026-07-05T11:46:40+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei confirmó que asistirá a las asunciones de Keiko Fujimori y De la Espriella",
+          "source": "Los Primeros TV",
+          "url": "https://www.losprimeros.tv/politica/javier-milei-confirmo-que-asistira-a-las-asunciones-de-keiko-fujimori-y-de-la-espriella_a6a4a42d9210279097d55cc8b",
+          "date": "2026-07-05T11:42:47+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Santilli y Karina Milei, bajo el desafío de limpiar el “lastre” que dejó Adorni",
+          "source": "Agencia Noticias Argentinas",
+          "url": "https://noticiasargentinas.com/politica/santilli-y-karina-milei--bajo-el-desafio-de-limpiar-el--lastre--que-dejo-adorni_a6a490d08d35c29fedfd9c9d4",
+          "date": "2026-07-05T10:30:53+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "La salida de Adorni, el debut de Santilli y los desafíos de Karina Milei con la reforma electoral a la cabeza",
+          "source": "Aire de Santa Fe",
+          "url": "https://www.airedesantafe.com.ar/politica/la-salida-adorni-el-debut-santilli-y-los-desafios-karina-milei-la-reforma-electoral-la-cabeza-n662165",
+          "date": "2026-07-05T10:15:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "La Casa Rosada se reactiva en búsqueda de otro mandato para Milei",
+          "source": "El Litoral",
+          "url": "https://www.ellitoral.com/politica/javier-milei-casa-rosada-diego-santilli-congreso-reforma-politica-gobierno-nacional-libertad-avanza_0_jfSuAboTP6.html",
+          "date": "2026-07-05T10:07:22+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Quién es Ignacio Devitt, el hombre que trabajaba con Adorni y se ganó la confianza de Karina Milei",
+          "source": "Agencia Noticias Argentinas",
+          "url": "https://noticiasargentinas.com/politica/quien-es-ignacio-devitt--el-hombre-que-trabajaba-con-adorni-y-se-gano-la-confianza-de-karina-milei_a6a481395d35c29fedfbef0f3",
+          "date": "2026-07-05T10:00:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "El Mundial de Gabriel Bornoroni, Rodrigo de Loredo y Luis Juez",
+          "source": "Letra P",
+          "url": "https://www.letrap.com.ar/politica/el-mundial-gabriel-bornoroni-rodrigo-loredo-y-luis-juez-n5424934",
+          "date": "2026-07-05T10:00:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Karina Milei concentra el poder político y el Gobierno busca acuerdos con gobernadores para encarar la etapa electoral",
+          "source": "Diario Neuquino",
+          "url": "https://diarioneuquino.com.ar/karina-milei-concentra-el-poder-politico-y-el-gobierno-busca-acuerdos-con-gobernadores-para-encarar-la-etapa-electoral/",
+          "date": "2026-07-05T09:14:36+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Tras el caso Adorni, Karina Milei convocó a la mesa política de La Libertad Avanza",
+          "source": "El Intransigente",
+          "url": "https://elintransigente.com/2026/07/tras-el-caso-adorni-karina-milei-convoco-a-la-mesa-politica-de-la-libertad-avanza/",
+          "date": "2026-07-05T09:11:15+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Adorni dejó un gabinete en crisis y Santilli llega para intentar rescatarlo",
+          "source": "TN",
+          "url": "https://tn.com.ar/politica/2026/07/05/manuel-adorni-dejo-un-gabinete-en-crisis-y-diego-santilli-llega-para-intentar-rescatarlo/",
+          "date": "2026-07-05T09:11:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "El Gobierno va por las leyes y las reformas que ayuden a la reelección del presidente Milei, sin ir a las PASO",
+          "source": "TN",
+          "url": "https://tn.com.ar/opinion/2026/07/05/el-gobierno-va-por-las-leyes-y-las-reformas-que-ayuden-a-la-reeleccion-del-presidente-milei-sin-ir-a-las-paso/",
+          "date": "2026-07-05T08:55:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Las colectoras de Karina Milei y un pacto con el PRO hacen arder la interna libertaria",
+          "source": "examedia.com.ar",
+          "url": "https://www.examedia.com.ar/portada/post/87442422",
+          "date": "2026-07-05T07:58:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "\"¡Un horror!\": las colectoras de Karina Milei y un pacto con el PRO hacen arder la interna libertaria",
+          "source": "TN",
+          "url": "https://tn.com.ar/politica/2026/07/05/la-reforma-electoral-que-impulsa-karina-milei-el-pacto-con-el-pro-y-los-candidatos-que-analiza-cfk-para-2027/",
+          "date": "2026-07-05T07:53:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Ujawniono list Kaczyńskiego do działaczy PiS. Padły mocne słowa o Ukrainie i UE",
+          "source": "Wprost",
+          "url": "https://www.wprost.pl/polityka/12378324/ujawniono-list-kaczynskiego-do-dzialaczy-pis-padly-mocne-slowa-o-ukrainie-i-ue.html",
+          "date": "2026-07-05T07:13:00+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "«Compartimos los mismos principios fundadores»: Javier Milei felicitó a Estados Unidos por el 4 de Julio",
+          "source": "El Intransigente",
+          "url": "https://elintransigente.com/2026/07/compartimos-los-mismos-principios-fundadores-javier-milei-felicito-a-estados-unidos-por-el-4-de-julio/",
+          "date": "2026-07-05T06:47:20+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Santilli le toma el gusto a la nueva posición, las colectoras como “salvoconducto” y el factor Pettovello en la salida de Adorni",
+          "source": "Infobae",
+          "url": "https://www.infobae.com/politica/2026/07/05/santilli-le-toma-el-gusto-a-la-nueva-posicion-las-colectoras-como-salvoconducto-y-el-factor-pettovello-en-la-salida-de-adorni/",
+          "date": "2026-07-05T05:39:32+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "El acuerdo electoral que se cocina en el Gobierno y la advertencia puertas adentro por la interna libertaria",
+          "source": "Infobae",
+          "url": "https://www.infobae.com/politica/2026/07/05/el-acuerdo-electoral-que-se-cocina-en-el-gobierno-y-la-advertencia-puertas-adentro-por-la-interna-libertaria/",
+          "date": "2026-07-05T05:35:49+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Inflación inferior al 2% y recomposición de los ingresos: encuestas muestran una recuperación de la imagen de Milei",
+          "source": "Infobae",
+          "url": "https://www.infobae.com/economia/2026/07/05/inflacion-inferior-al-2-y-recomposicion-de-los-ingresos-encuestas-muestran-una-recuperacion-de-la-imagen-de-milei/",
+          "date": "2026-07-05T04:00:16+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "El momento de Diego",
+          "source": "Perfil",
+          "url": "https://www.perfil.com/noticias/columnistas/el-momento-de-diego-por-nelson-castro.phtml",
+          "date": "2026-07-05T03:56:40+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Llegó Diego Santilli: las batallas que pierden los Milei y los cambios que desvelan al Presidente",
+          "source": "Clarin.com",
+          "url": "https://www.clarin.com/politica/llego-diego-santilli-batallas-pierden-milei-cambios-desvelan-presidente_0_QD6YGdKXMy.html",
+          "date": "2026-07-05T03:15:06+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "La segunda etapa del mileísmo: cómo Karina Milei prepara la batalla por las provincias",
+          "source": "elDiarioAR.com",
+          "url": "https://www.eldiarioar.com/politica/segunda-etapa-mileismo-karina-milei-prepara-batalla-provincias_1_13352808.html",
+          "date": "2026-07-05T03:01:22+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "El relanzamiento del Gobierno y el balotaje que ya preocupa a Javier Milei y al PJ",
+          "source": "Ambito",
+          "url": "https://www.ambito.com/politica/el-relanzamiento-del-gobierno-y-el-balotaje-que-ya-preocupa-javier-milei-y-al-pj-n6296219",
+          "date": "2026-07-05T03:00:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Gestos de cercanía entre LLA y el PRO rumbo al 2027: se reflota la posibilidad de una alianza en la Ciudad",
+          "source": "TN",
+          "url": "https://tn.com.ar/politica/2026/07/04/gestos-de-cercania-entre-lla-y-el-pro-rumbo-al-2027-se-reflota-la-chance-de-una-alianza-en-la-ciudad/",
+          "date": "2026-07-05T01:34:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Karina Milei endurece el control sobre los legisladores libertarios: ningún proyecto podrá presentarse sin autorización del Gobierno",
+          "source": "Canal26",
+          "url": "https://www.canal26.com/politica/2026/07/05/karina-milei-endurece-el-control-sobre-los-legisladores-libertarios-ningun-proyecto-podra-presentarse-sin-autorizacion-del-gobierno/",
+          "date": "2026-07-05T01:18:31+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Karina Milei: «Mi objetivo es construir el camino para que mi hermano sea reelecto en 2027»",
+          "source": "EL FUERTE DIARIO",
+          "url": "https://elfuertediario.com.ar/karina-milei-mi-objetivo-es-construir-el-camino-para-que-mi-hermano-sea-reelecto-en-2027/",
+          "date": "2026-07-05T01:06:12+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "\"Mi objetivo es que mi hermano sea reelecto\": Karina Milei presentó la Escuela de Dirigentes en Misiones",
+          "source": "ADNSUR",
+          "url": "https://www.adnsur.com.ar/politica/-mi-objetivo-es-que-mi-hermano-sea-reelecto---karina-milei-presento-la-escuela-de-dirigentes-en-misiones_a6a497d059897fff6f9ede118",
+          "date": "2026-07-05T01:04:53+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei saludó a EEUU por el Día de la Independencia: “Argentina fue un país fundado bajo este mismo anhelo”",
+          "source": "Infobae",
+          "url": "https://www.infobae.com/politica/2026/07/04/javier-milei-saludo-a-eeuu-por-el-dia-de-la-independencia-argentina-fue-un-pais-fundado-bajo-este-mismo-anhelo/",
+          "date": "2026-07-05T00:51:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei confirmó su presencia en la asunción de Keiko Fujimori y Abelardo de la Espriella",
+          "source": "Ambito",
+          "url": "https://www.ambito.com/politica/javier-milei-confirmo-su-presencia-la-asuncion-keiko-fujimori-y-abelardo-la-espriella-n6296200",
+          "date": "2026-07-05T00:31:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "¿Javier Milei y Victoria Villarruel volverán a cruzarse en Tucumán?",
+          "source": "Urgente24",
+          "url": "https://urgente24.com/actualidad/javier-milei-y-victoria-villarruel-volveran-cruzarse-tucuman-n628049",
+          "date": "2026-07-05T00:25:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei asistirá a las ceremonias de asunción de Keiko Fujimori y Abelardo de la Espriella",
+          "source": "Diario Río Negro",
+          "url": "https://www.rionegro.com.ar/politica/javier-milei-asistira-a-las-ceremonias-de-asuncion-de-keiko-fujimori-y-abelardo-de-la-espriella-4637040/",
+          "date": "2026-07-04T23:24:13+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Nueva etapa: el Gobierno apura negociaciones con los gobernadores y ahora Karina Milei no descarta un acuerdo con el PRO en CABA",
+          "source": "Clarin.com",
+          "url": "https://www.clarin.com/politica/nueva-etapa-gobierno-apura-negociaciones-gobernadores-ahora-karina-milei-descarta-acuerdo-pro-caba_0_quv15thJ8X.html",
+          "date": "2026-07-04T20:13:08+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Paso a paso: cómo será la visita de Javier Milei a Tucumán para los festejos por el Día de la Independencia",
+          "source": "La Gaceta",
+          "url": "https://www.lagaceta.com.ar/nota/1144065/politica/paso-paso-como-sera-visita-javier-milei-tucuman-para-festejos-dia-independencia.html",
+          "date": "2026-07-04T18:07:36+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "La Libertad Avanza lanzó su escuela de dirigentes",
+          "source": "Tiempo Sur",
+          "url": "https://www.tiemposur.com.ar/politica/la-libertad-avanza-lanzo-su-escuela-de-dirigentes",
+          "date": "2026-07-04T16:48:00+00:00",
           "category": "argentina"
         },
         {
@@ -306,80 +1706,472 @@
           "category": "argentina"
         },
         {
-          "title": "Óscar López eleva el tono contra Feijóo tras el pacto andaluz: «Va a pasar a la historia por blanquear a Vox»",
-          "source": "El Debate",
-          "url": "https://www.eldebate.com/espana/andalucia/20260704/oscar-lopez-eleva-tono-contra-feijoo-pacto-andaluz-pasar-historia-blanquear-vox_436018.html",
-          "date": "2026-07-04T13:50:40+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Javier Milei asistirá a la asunción de Keiko Fujimori en Perú -",
-          "source": "sinfiltro.ar",
-          "url": "https://sinfiltro.ar/javier-milei-asistira-a-la-asuncion-de-keiko-fujimori-en-peru/",
-          "date": "2026-07-04T11:37:44+00:00",
+          "title": "El Gobierno buscará incentivar a los gobernadores por la reforma electoral durante el acto de 9 de julio",
+          "source": "Diario Río Negro",
+          "url": "https://www.rionegro.com.ar/politica/el-gobierno-buscara-el-acto-del-9-de-julio-en-tucuman-para-incentivar-a-los-gobernadores-por-la-reforma-electoral-4636541/",
+          "date": "2026-07-04T14:06:22+00:00",
           "category": "argentina"
         },
         {
-          "title": "El pedido de los Milei a Diego Santilli, la preocupación de Mauricio Macri y la causa judicial que inquieta a Karina",
-          "source": "TN",
-          "url": "https://tn.com.ar/politica/2026/07/04/el-pedido-de-los-milei-a-santilli-la-preocupacion-de-mauricio-macri-y-la-causa-judicial-que-inquieta-a-karina/",
-          "date": "2026-07-04T08:11:00+00:00",
+          "title": "El viaje de Javier Milei a Tucumán marcado por el debut de Diego Santilli como jefe de Gabinete y el reencuentro con Victoria Villarruel",
+          "source": "Diario Río Negro",
+          "url": "https://www.rionegro.com.ar/politica/el-viaje-de-javier-milei-a-tucuman-marcado-por-el-debut-de-diego-santilli-como-jefe-de-gabinete-y-el-reencuentro-con-victoria-villarruel-4636446/",
+          "date": "2026-07-04T13:04:58+00:00",
           "category": "argentina"
         },
         {
-          "title": "Economía 2027: cómo es el plan del Gobierno para evitar la volatilidad cambiaria antes de las elecciones",
-          "source": "Infobae",
-          "url": "https://www.infobae.com/economia/2026/07/04/economia-2027-como-es-el-plan-del-gobierno-para-evitar-la-volatilidad-cambiaria-antes-de-las-elecciones/",
-          "date": "2026-07-04T03:41:36+00:00",
+          "title": "La foto en Tucumán: Javier Milei apuesta al debut de Diego Santilli para sumar aliados de cara a la reforma electoral",
+          "source": "MDZ Online",
+          "url": "https://www.mdzol.com/politica/la-foto-tucuman-javier-milei-apuesta-al-debut-diego-santilli-sumar-aliados-cara-la-reforma-electoral-n1558179",
+          "date": "2026-07-04T12:53:00+00:00",
           "category": "argentina"
         },
         {
-          "title": "No + No = Sí a Vox | La Huffetera",
-          "source": "El HuffPost",
-          "url": "https://www.huffingtonpost.es/videos/no-si-vox-huffetera-f202607.html",
-          "date": "2026-07-03T19:02:57+00:00",
-          "category": "spain"
+          "title": "El Gobierno prepara cambios en el sistema electoral y busca respaldo en el Senado",
+          "source": "Diario La Capital de Mar del Plata",
+          "url": "https://www.lacapitalmdp.com/el-gobierno-prepara-cambios-en-el-sistema-electoral-y-busca-respaldo-en-el-senado/",
+          "date": "2026-07-04T12:13:10+00:00",
+          "category": "argentina"
         }
       ],
       "first_seen": "2026-07-03T04:34:03+00:00",
-      "last_seen": "2026-07-05T04:47:26+00:00"
+      "last_seen": "2026-07-05T14:23:42+00:00"
     },
     {
       "id": "marine-le-pen-s-eligibility-ruling-dominates-french-politics",
       "title": "Marine Le Pen's eligibility ruling dominates French politics",
-      "blurb": "France's far-right leader Marine Le Pen faces a pivotal court ruling on July 7 that could determine her eligibility for the 2027 presidential election. This decision has sparked intense political maneuvering within the Rassemblement National, with Jordan Bardella positioned as a potential replacement. The theme reflects the cross-national focus on far-right leadership dynamics in Europe.",
+      "blurb": "France's far-right leader Marine Le Pen faces a critical court ruling on her eligibility for the 2027 presidential election. The decision, expected within days, has become a defining moment in French politics, with potential implications for the far-right's electoral prospects and the broader political landscape.",
       "convergence": 4,
       "countries": [
         {
           "name": "🇫🇷 Rassemblement National",
-          "note": "Le Pen's eligibility ruling and internal party dynamics"
+          "note": "Le Pen's potential ineligibility for the 2027 presidential election has dominated French political discourse, with her party rallying support ahead of the court's decision."
         },
         {
           "name": "🇪🇸 Vox",
-          "note": "Coverage of far-right leadership challenges in Europe"
+          "note": "Spain's Vox has closely followed Le Pen's legal battle, drawing parallels to its own challenges with judicial scrutiny and electoral eligibility."
         },
         {
           "name": "🇩🇪 Alternative für Deutschland",
-          "note": "Analysis of far-right party leadership issues"
+          "note": "Germany's AfD has monitored Le Pen's situation, using it as a case study for potential legal challenges to far-right leaders across Europe."
         },
         {
           "name": "🇮🇹 Fratelli d'Italia / Lega",
-          "note": "Reporting on far-right political developments in France"
+          "note": "Italian far-right parties have analyzed Le Pen's legal battle, considering its implications for their own leaders' electoral prospects and judicial vulnerabilities."
         }
       ],
       "signals": [
         "shared framing",
+        "reaction to EU decision",
         "parallel elections",
-        "policy imitation",
-        "contagion of rhetoric"
+        "coordinated messaging"
       ],
-      "article_count": 70,
+      "article_count": 60,
       "refs": [
+        {
+          "title": "Rassemblement national : Marine Le Pen et Jordan Bardella affichent leur unité",
+          "source": "franceinfo",
+          "url": "https://www.franceinfo.fr/replay-jt/france-2/13-heures/rassemblement-national-marine-le-pen-et-jordan-bardella-affichent-leur-unite_8095028.html",
+          "date": "2026-07-05T13:06:27+00:00",
+          "category": "france"
+        },
+        {
+          "title": "\"La France n'est pas un pays raciste\" : Jean-Luc Mélenchon assure qu'il \"battra\" le RN, qui pourrait même être \"éliminé\" dès le premier tour de la présidentielle",
+          "source": "RTL",
+          "url": "https://www.rtl.fr/actu/politique/la-france-n-est-pas-un-pays-raciste-jean-luc-melenchon-assure-qu-il-battra-le-rn-qui-pourrait-meme-etre-elimine-des-le-premier-tour-de-la-presidentielle-7900652668",
+          "date": "2026-07-05T12:55:26+00:00",
+          "category": "france"
+        },
+        {
+          "title": "« Nous avons l’un pour l’autre une immense amitié, une immense confiance » : Bardella-Le Pen, l’opération « papouilles »",
+          "source": "Challenges",
+          "url": "https://www.challenges.fr/politique/bardella-le-pen-le-serment-de-lievin_644706",
+          "date": "2026-07-05T12:42:00+00:00",
+          "category": "france"
+        },
+        {
+          "title": "La Lega di Nerviano vuole \"chiarezza\" sui lavori per la scuola di via Diaz: \"Intervento cruciale\"",
+          "source": "LegnanoNews",
+          "url": "https://www.legnanonews.com/aree-geografiche/alto_milanese/2026/07/05/la-lega-di-nerviano-vuole-chiarezza-sui-lavori-per-la-scuola-di-via-diaz-intervento-cruciale/1456441/",
+          "date": "2026-07-05T12:22:07+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "\"Ich lebe es!\": Weidel kritisiert Abwertung homosexueller Partnerschaften in AfD - n-tv.de - n-tv.de",
+          "source": "",
+          "url": "https://www.n-tv.de/politik/Weidel-kritisiert-Abwertung-homosexueller-Partnerschaften-in-AfD-id31050163.html",
+          "date": "2026-07-05T12:17:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Présidentielle 2027 : Jean-Luc Mélenchon se dit capable « d’éliminer » le candidat du RN, « peut-être » même dès le premier tour",
+          "source": "Sud Ouest",
+          "url": "https://www.sudouest.fr/politique/jean-luc-melenchon/presidentielle-2027-jean-luc-melenchon-se-dit-capable-d-eliminer-le-candidat-du-rn-peut-etre-meme-des-le-premier-tour-29802175.php",
+          "date": "2026-07-05T12:00:36+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Jordan Bardella et Marine Le Pen : la photo qui agite la toile lors de la victoire des Bleus",
+          "source": "Ohmymag",
+          "url": "https://www.ohmymag.com/people/actu-people/jordan-bardella-et-marine-le-pen-la-photo-qui-agite-la-toile-lors-de-la-victoire-des-bleus_art190738.html",
+          "date": "2026-07-05T12:00:00+00:00",
+          "category": "france"
+        },
+        {
+          "title": "À Liévin, Bardella et Le Pen main dans la main avant le verdict dans l’affaire des assistants parlementaires",
+          "source": "L'Humanité",
+          "url": "https://www.humanite.fr/politique/jordan-bardella/a-lievin-bardella-et-le-pen-main-dans-la-main-avant-le-verdict-dans-laffaire-des-assistants-parlementaires",
+          "date": "2026-07-05T11:54:17+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Jordan Bardella, la France qui fait peur à Edouard Philippe",
+          "source": "Blick",
+          "url": "https://www.blick.ch/fr/monde/france/lex-premier-ministre-se-lance-jordan-bardella-la-france-qui-fait-peur-a-edouard-philippe-id22085000.html",
+          "date": "2026-07-05T11:17:40+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Présidentielle : Mélenchon persuadé d'\"éliminer\" le candidat RN, \"peut-être\" dès le premier tour",
+          "source": "France 24",
+          "url": "https://www.france24.com/fr/info-en-continu/20260705-pr%C3%A9sidentielle-m%C3%A9lenchon-persuad%C3%A9-d-%C3%A9liminer-le-candidat-rn-peut-%C3%AAtre-d%C3%A8s-le-premier-tour",
+          "date": "2026-07-05T11:17:09+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Procès en appel de Marine Le Pen : à 2 jours du verdict, on n'y croit plus vraiment au RN",
+          "source": "Sud Radio",
+          "url": "https://www.sudradio.fr/emission/la-revue-de-presse-2-89",
+          "date": "2026-07-05T11:09:59+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Inéligibilité de Marine Le Pen : les juges risquent-ils de kidnapper la démocratie ?",
+          "source": "Sud Radio",
+          "url": "https://www.sudradio.fr/emission/le-debat-de-la-semaine-224",
+          "date": "2026-07-05T11:09:59+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Paris appeals court ruling could upend Marine Le Pen’s 2027 presidential bid",
+          "source": "France 24",
+          "url": "https://www.france24.com/en/paris-appeals-court-ruling-could-upend-marine-le-pen-s-2027-presidential-bid",
+          "date": "2026-07-05T11:06:27+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Le sort de Marine Le Pen se joue ce mardi: son avenir politique suspendu à la décision de la justice française",
+          "source": "L'Avenir",
+          "url": "https://www.lavenir.net/actu/monde/2026/07/05/le-sort-de-marine-le-pen-se-joue-ce-mardi-son-avenir-politique-suspendu-a-la-decision-de-la-justice-francaise-ZJOUMXAFKVBPDPUWTQNBEGTB4I/",
+          "date": "2026-07-05T11:02:00+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Marine Le Pen appeal verdict: Will the far-right leader be barred from the French presidency?",
+          "source": "Modern Ghana",
+          "url": "https://www.modernghana.com/news/1507938/marine-le-pen-appeal-verdict-will-the-far-right.html",
+          "date": "2026-07-05T10:47:49+00:00",
+          "category": "general"
+        },
+        {
+          "title": "Procès de Marine Le Pen : de la relaxe à l’inéligibilité, voici tous les cas de figure possibles pour la cheffe de file du RN pour l’élection présidentielle de 2027 - Nice-Matin",
+          "source": "",
+          "url": "https://www.nicematin.com/societe/politique/proces-de-marine-le-pen-de-la-relaxe-a-l-ineligibilite-voici-tous-les-cas-de-figure-possibles-pour-la-cheffe-de-file-du-rn-pour-l-election-presidentielle-de-2027-10688120",
+          "date": "2026-07-05T10:25:32+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Procès en appel du RN: \"Je crois que personne ne considère que la démocratie sera en danger\" si Marine Le Pen ne peut pas se présenter à la présidentielle, lance Thierry Breton, Thierry Breton, ancien commissaire européen",
+          "source": "BFM",
+          "url": "https://www.bfmtv.com/replay-emissions/bfm-politique/video-proces-en-appel-du-rn-je-crois-que-personne-ne-considere-que-la-democratie-sera-en-danger-si-marine-le-pen-ne-peut-pas-se-presenter-a-la-presidentielle-lance-thierry-breton-thierry-breton-ancien-commissaire-europeen_VN-202607050218.html",
+          "date": "2026-07-05T10:10:33+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Avant la décision de la cour d’appel concernant Marine Le Pen, le RN entre « espérance » et renoncement",
+          "source": "Le Monde.fr",
+          "url": "https://www.lemonde.fr/politique/article/2026/07/05/avant-la-decision-de-la-cour-d-appel-concernant-marine-le-pen-le-rn-entre-esperance-et-renoncement_6720860_823448.html",
+          "date": "2026-07-05T10:00:27+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Verdict in Marine Le Pen appeal: Will she be barred from running for the French presidency?",
+          "source": "Inbox.eu",
+          "url": "https://news.inbox.eu/150gutm-verdict-in-marine-le-pen-appeal-will-she-be-barred-from-running-for-the-french-presidency?language=en",
+          "date": "2026-07-05T09:53:24+00:00",
+          "category": "france"
+        },
+        {
+          "title": "« Marine, c’est le phœnix » : au RN, veillée d’armes pour Le Pen dans le Pas-de-Calais",
+          "source": "parismatch.com",
+          "url": "https://www.parismatch.com/actu/politique/marine-cest-le-phoenix-au-rn-veillee-darmes-pour-le-pen-dans-le-pas-de-calais-272073",
+          "date": "2026-07-05T09:37:43+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Britain’s Farage denies rules broken after report of undeclared benefits",
+          "source": "The Straits Times",
+          "url": "https://www.straitstimes.com/world/europe/uks-farage-denies-rules-broken-after-report-of-undeclared-benefits",
+          "date": "2026-07-05T09:21:29+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Marine Le Pen et Jordan Bardella affichent leur unité avant le couperet judiciaire",
+          "source": "Le Temps",
+          "url": "https://www.letemps.ch/monde/france/marine-le-pen-et-jordan-bardella-affichent-leur-unite-avant-le-couperet-judiciaire",
+          "date": "2026-07-05T09:18:00+00:00",
+          "category": "france"
+        },
+        {
+          "title": "France | L’avenir politique de Marine Le Pen décidé mardi",
+          "source": "La Presse",
+          "url": "https://www.lapresse.ca/international/2026-07-05/france/l-avenir-politique-de-marine-le-pen-decide-mardi.php",
+          "date": "2026-07-05T09:00:00+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Présidentielle: Marine Le Pen et Jordan Bardella se jurent \"confiance\" et \"amitié\"",
+          "source": "RMC",
+          "url": "https://rmc.bfmtv.com/actualites/societe/video-presidentielle-marine-le-pen-et-jordan-bardella-se-jurent-confiance-et-amitie_VN-202607050182.html",
+          "date": "2026-07-05T08:32:52+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Procès en appel de Marine Le Pen : le RN dans l’attente d’un jugement décisif pour 2027",
+          "source": "France 24",
+          "url": "https://www.france24.com/fr/france/20260705-france-proces-en-appel-marine-le-pen-rassemblement-national-rn-dans-attente-jugement-decisif-pour-2027",
+          "date": "2026-07-05T08:25:41+00:00",
+          "category": "france"
+        },
+        {
+          "title": "RN : M. Le Pen et J. Bardella affichent leur union avant le procès",
+          "source": "France 24",
+          "url": "https://www.france24.com/fr/vid%C3%A9o/20260705-rn-m-le-pen-et-j-bardella-affichent-leur-union-avant-le-proc%C3%A8s",
+          "date": "2026-07-05T08:25:02+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Marine Le Pen et Jordan Bardella se jurent « confiance » et « amitié »",
+          "source": "Yahoo Actualités",
+          "url": "https://fr.news.yahoo.com/marine-pen-jordan-bardella-jurent-082256465.html",
+          "date": "2026-07-05T08:22:56+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Procès de Marine Le Pen : la décision de la Cour d’appel, dernier secret de la République",
+          "source": "l'Opinion",
+          "url": "https://www.lopinion.fr/politique/proces-de-marine-le-pen-la-decision-de-la-cour-dappel-dernier-secret-de-la-republique",
+          "date": "2026-07-05T08:00:00+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Affaire des assistants parlementaires du RN : ce que l’arrêt attendu peut changer pour Marine Le Pen et 2027 - parlons-politique.fr",
+          "source": "",
+          "url": "https://www.parlons-politique.fr/union-europeenne/affaire-des-assistants-parlementaires-du-rn-ce-que-larret-attendu-peut-changer-pour-marine-le-pen-et-2027_22785/",
+          "date": "2026-07-05T07:51:49+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Jordan Bardella obtient un gros baiser de Marine Le Pen : la photo inédite jugée \"gênante\"",
+          "source": "public.fr",
+          "url": "https://www.public.fr/jordan-bardella-obtient-un-gros-baiser-de-marine-le-pen-la-photo-inedite-jugee-genante",
+          "date": "2026-07-05T07:45:00+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Marine Le Pen embrasse et enlace Jordan Bardella à Liévin : un élan de tendresse qui fait réagir",
+          "source": "Gala",
+          "url": "https://www.gala.fr/politique/marine-le-pen-embrasse-et-enlace-jordan-bardella-a-lievin-un-elan-de-tendresse-qui-fait-reagir-20260705",
+          "date": "2026-07-05T07:37:03+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Court ruling may decide whether Marine Le Pen can run in France's 2027 election",
+          "source": "United News of Bangladesh",
+          "url": "https://unb.com.bd/category/World/court-ruling-may-decide-whether-marine-le-pen-can-run-in-frances-2027-election/189886",
+          "date": "2026-07-05T07:11:56+00:00",
+          "category": "france"
+        },
+        {
+          "title": "ENTRETIEN. « Le nom du candidat RN à la présidentielle ne modifie pas son potentiel de voix -",
+          "source": "Alençon.maville.com",
+          "url": "https://alencon.maville.com/actu/actudet_-entretien.-le-nom-du-candidat-rn-a-la-presidentielle-ne-modifie-pas-son-potentiel-de-voix-estime-pascal-perrineau-_54135-7392381_actu.Htm",
+          "date": "2026-07-05T07:00:00+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Procès en appel du RN : «Un juge n'a pas à interférer dans le pouvoir politique», estime Gilbert Collard",
+          "source": "CNews",
+          "url": "https://www.cnews.fr/videos/france/2026-07-05/proces-en-appel-du-rn-un-juge-na-pas-interferer-dans-le-pouvoir-politique",
+          "date": "2026-07-05T06:52:31+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Pas vu à la télé : A 3 jours de la décision de la Cour d'Appel qui déterminera son avenir, Marine Le P... - Jean-Marc Morandini",
+          "source": "",
+          "url": "https://www.jeanmarcmorandini.com/article-645802-pas-vu-a-la-tele-a-3-jours-de-la-decision-de-la-cour-d-appel-qui-determinera-son-avenir-marine-le-pen-chante-du-dalida-a-l-occasion-d-une-fete-champetre-a-lievin-video.html?amp",
+          "date": "2026-07-05T06:49:26+00:00",
+          "category": "france"
+        },
+        {
+          "title": "À Liévin, dans le Pas-de-Calais, Marine Le Pen revient «puiser l’envie de continuer»",
+          "source": "Le Figaro",
+          "url": "https://www.lefigaro.fr/politique/a-lievin-dans-le-pas-de-calais-marine-le-pen-revient-puiser-l-envie-de-continuer-20260705",
+          "date": "2026-07-05T06:47:43+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Jordan Bardella et Marine Le Pen s'affichent unis à Liévin",
+          "source": "franceinfo",
+          "url": "https://www.franceinfo.fr/politique/front-national/jordan-bardella-et-marine-le-pen-s-affichent-unis-a-lievin_8094614.html",
+          "date": "2026-07-05T06:46:59+00:00",
+          "category": "france"
+        },
+        {
+          "title": "RN et Bardella dans le viseur : la campagne médiatique de 2027 est lancée",
+          "source": "Ojim.fr",
+          "url": "https://www.ojim.fr/rn-et-bardella-dans-le-viseur-la-campagne-mediatique-de-2027-est-lancee/",
+          "date": "2026-07-05T06:38:54+00:00",
+          "category": "france"
+        },
+        {
+          "title": "“Non, vous n’allez pas voir la fiancée” : à Liévin dans le Pas-de-Calais, ce clin d’ œil de Jordan Bardella à la princesse Maria Carolina",
+          "source": "Gala",
+          "url": "https://www.gala.fr/l_actu/news_de_stars/non-vous-n-allez-pas-voir-la-fiancee-a-lievin-dans-le-pas-de-calais-ce-clin-d-oeil-de-jordan-bardella-a-la-princesse-maria-carolina-20260705",
+          "date": "2026-07-05T06:20:36+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Entre deuil familial et condamnation, Marine Le Pen affronte une année qui fragilise son avenir politique - parlons-politique.fr",
+          "source": "",
+          "url": "https://www.parlons-politique.fr/analyses-opinions/entre-deuil-familial-et-condamnation-marine-le-pen-affronte-une-annee-qui-fragilise-son-avenir-politique_22775/",
+          "date": "2026-07-05T06:14:34+00:00",
+          "category": "france"
+        },
+        {
+          "title": "How Paris appeals court ruling could upend Marine Le Pen’s 2027 presidential bid",
+          "source": "Toronto Star",
+          "url": "https://www.thestar.com/news/world/europe/how-paris-appeals-court-ruling-could-upend-marine-le-pens-2027-presidential-bid/article_41bb759c-0e6e-5711-831e-04fb03aa10e7.html",
+          "date": "2026-07-05T06:14:16+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Comment le 7 juillet tranchera les hésitations stratégiques du RN",
+          "source": "Contexte",
+          "url": "https://www.contexte.com/fr/article/pouvoirs/comment-le-7-juillet-tranchera-les-hesitations-strategiques-du-rn_271201",
+          "date": "2026-07-05T06:00:00+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Marine Le Pen : le vertige de l’empêchement",
+          "source": "lejdd.fr",
+          "url": "https://www.lejdd.fr/politique/marine-le-pen-le-vertige-de-lempechement-178179",
+          "date": "2026-07-05T05:54:16+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Bardella ou Le Pen en 2027 ? Comment leurs adversaires guettent le tournant du 7 juillet",
+          "source": "Le HuffPost",
+          "url": "https://www.huffingtonpost.fr/politique/article/jordan-bardella-ou-marine-le-pen-en-2027-comment-leurs-adversaires-guettent-le-tournant-du-7-juillet_280700.html",
+          "date": "2026-07-05T05:50:09+00:00",
+          "category": "france"
+        },
+        {
+          "title": "«Marine Le Pen ou Jordan Bardella, ce que l’on veut, c’est le changement!» Les nouveaux électeurs du RN face aux déchirements avant le verdict du procès",
+          "source": "Le Temps",
+          "url": "https://www.letemps.ch/monde/france/marine-le-pen-ou-jordan-bardella-ce-que-l-on-veut-c-est-le-changement-les-nouveaux-electeurs-du-rn-face-aux-dechirements-avant-le-verdict-du-proces",
+          "date": "2026-07-05T05:18:55+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Magyar Péter kinevette Gulyás Gergelyt, szerinte vicces, hogy a Fidesz elkezdett aggódni az alkotmányért",
+          "source": "Népszava",
+          "url": "https://nepszava.hu/3328264_magyar-peter-gulyas-gergely-fidesz-alkotmany-aggodalom-vicc",
+          "date": "2026-07-05T05:15:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "\"Ça sera très dur si c'est elle\" : pourquoi les adversaires du RN préfèrent affronter Jordan Bardella plutôt que Marine Le Pen à la présidentielle",
+          "source": "franceinfo",
+          "url": "https://www.franceinfo.fr/elections/presidentielle/ca-sera-tres-dur-si-c-est-elle-pourquoi-les-adversaires-du-rn-preferent-affronter-jordan-bardella-plutot-que-marine-le-pen-a-la-presidentielle_8084963.html",
+          "date": "2026-07-05T04:57:44+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Le choc et le chagrin : de la mort de son père à la condamnation, l’«annus horribilis» 2025 de Marine Le Pen",
+          "source": "Le Figaro",
+          "url": "https://www.lefigaro.fr/politique/le-choc-et-le-chagrin-de-la-mort-de-son-pere-a-la-condamnation-l-annus-horribilis-2025-de-marine-le-pen-20260705",
+          "date": "2026-07-05T04:30:00+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Présidentielle: l'union sacrée entre Marine Le Pen et Jordan Bardella, à quelques jours de la décision de la cour d'appel",
+          "source": "BFM",
+          "url": "https://www.bfmtv.com/politique/elections/presidentielle/video-presidentielle-l-union-sacree-entre-marine-le-pen-et-jordan-bardella-a-quelques-jours-de-la-decision-de-la-cour-d-appel_VN-202607050092.html",
+          "date": "2026-07-05T04:20:58+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Marine Le Pen: the far-right French leader whose politica...",
+          "source": "The Observer",
+          "url": "https://observer.co.uk/news/politics/article/marine-le-pen-the-far-right-french-leader-whose-political-future-hangs-in-the-balance",
+          "date": "2026-07-05T04:09:03+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Govt body to judge judges’ performance annually",
+          "source": "Dawn",
+          "url": "https://www.dawn.com/news/amp/2013032",
+          "date": "2026-07-05T01:52:12+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Moment of destiny for France's Le Pen in verdict to decide her future in presidential race",
+          "source": "Yahoo",
+          "url": "https://www.yahoo.com/news/politics/articles/moment-destiny-frances-le-pen-231732452.html",
+          "date": "2026-07-04T23:17:32+00:00",
+          "category": "france"
+        },
+        {
+          "title": "France's far-right leader Marine Le Pen awaits court verdict",
+          "source": "BBC",
+          "url": "https://www.bbc.co.uk/news/articles/c5yzlwz34p7o",
+          "date": "2026-07-04T23:17:24+00:00",
+          "category": "france"
+        },
         {
           "title": "Présidentielle 2027 : Jordan Bardella adresse son \"total soutien\" à Marine Le Pen",
           "source": "TF1 Info",
           "url": "https://www.tf1info.fr/politique/videos/video-presidentielle-2027-jordan-bardella-adresse-son-total-soutien-a-marine-le-pen-57423-2451366.html",
           "date": "2026-07-04T22:00:12+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Marine Le Pen et Jordan Bardella : avant une décision capitale à Liévin",
+          "source": "Ohmymag",
+          "url": "https://www.ohmymag.com/people/actu-people/marine-le-pen-et-jordan-bardella-avant-une-decision-capitale-a-lievin_art190708.html",
+          "date": "2026-07-04T22:00:00+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Meet Jordan Bardella, the 30 year old who could be France's next president",
+          "source": "ABC News & Headlines – Australian Broadcasting Corporation",
+          "url": "https://www.abc.net.au/listen/programs/sundayextra/jordan-bardella-marine-le-pen-president-france-national-rally/106877840",
+          "date": "2026-07-04T21:25:00+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Marine Le Pen et Jordan Bardella : dernier tango à Liévin",
+          "source": "La Tribune",
+          "url": "https://www.latribune.fr/article/la-tribune-dimanche/politique/21560203892311/marine-le-pen-et-jordan-bardella-dernier-tango-a-lievin",
+          "date": "2026-07-04T21:20:15+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Présidentielle 2027 : l’unité affichée par Marine Le Pen et Bardella masque un duel décisif avec la justice - parlons-politique.fr",
+          "source": "",
+          "url": "https://www.parlons-politique.fr/elections/presidentielle-2027-lunite-affichee-par-marine-le-pen-et-bardella-masque-un-duel-decisif-avec-la-justice_22769/",
+          "date": "2026-07-04T21:10:08+00:00",
           "category": "france"
         },
         {
@@ -390,6 +2182,27 @@
           "category": "france"
         },
         {
+          "title": "Marine Le Pen et Jordan Bardella affichent leur unité à quelques jours du délibéré",
+          "source": "Blick",
+          "url": "https://www.blick.ch/fr/monde/france/proces-rn-marine-le-pen-et-jordan-bardella-affichent-leur-unite-a-quelques-jours-du-delibere-id22084207.html",
+          "date": "2026-07-04T19:59:33+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Marine Le Pen et Jordan Bardella affichent leur unité à Liévin, avant la décision dans l’affaire des assistants d’eurodéputés du FN",
+          "source": "Le Monde.fr",
+          "url": "https://www.lemonde.fr/politique/article/2026/07/04/marine-le-pen-et-jordan-bardella-affichent-leur-unite-a-lievin-avant-la-decision-dans-l-affaire-des-assistants-d-eurodeputes-du-fn_6720708_823448.html",
+          "date": "2026-07-04T19:43:07+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Présidentielle 2027: si elle ne peut pas se présenter, Marine Le Pen \"soutiendra Jordan Bardella\"",
+          "source": "Yahoo Actualités",
+          "url": "https://fr.news.yahoo.com/pr%C3%A9sidentielle-2027-ne-peut-pr%C3%A9senter-192550796.html",
+          "date": "2026-07-04T19:25:50+00:00",
+          "category": "france"
+        },
+        {
           "title": "Présidentielle 2027 : si elle ne peut se présenter, Marine Le Pen assure qu'elle soutiendra Jordan Bardella «avec énergie, confiance et conviction»",
           "source": "Europe 1",
           "url": "https://www.europe1.fr/politique/presidentielle-2027-si-elle-ne-peut-se-presenter-marine-le-pen-assure-quelle-soutiendra-jordan-bardella-avec-energie-confiance-et-conviction-966405",
@@ -397,25 +2210,95 @@
           "category": "france"
         },
         {
-          "title": "Jordan Bardella redit son « total soutien » à Marine Le Pen et « espère bien la voir élue présidente de la République » - Nice-Matin",
-          "source": "",
-          "url": "https://www.nicematin.com/societe/politique/jordan-bardella-redit-son-total-soutien-a-marine-le-pen-et-espere-bien-la-voir-elue-presidente-de-la-republique-10688088",
-          "date": "2026-07-04T18:37:25+00:00",
-          "category": "france"
-        },
-        {
-          "title": "À quelques jours de la décision de la cour d’appel de Paris, Marine Le Pen et Jordan Bardella réunis pour un \"banquet champêtre\" à Liévin",
+          "title": "Jordan Bardella réaffirme son soutien à Marine Le Pen avant la décision de la Cour d'appel de Paris",
           "source": "BFM",
-          "url": "https://www.bfmtv.com/politique/front-national/video-a-quelques-jours-de-la-decision-de-la-cour-d-appel-de-paris-marine-le-pen-et-jordan-bardella-reunis-pour-un-banquet-champetre-a-lievin_VN-202607040380.html",
-          "date": "2026-07-04T17:52:05+00:00",
+          "url": "https://www.bfmtv.com/politique/elections/presidentielle/video-jordan-bardella-reaffirme-son-soutien-a-marine-le-pen-avant-la-decision-de-la-cour-d-appel-de-paris_VN-202607040404.html",
+          "date": "2026-07-04T19:20:58+00:00",
           "category": "france"
         },
         {
-          "title": "La reacción de Óscar Puente a lo que dice Figaredo (Vox) sobre la Ley de Nietos no tiene pérdida: \"Es más tonto que un sonajero\"",
-          "source": "El HuffPost",
-          "url": "https://www.huffingtonpost.es/virales/la-reaccion-oscar-puente-dice-figaredo-vox-sobre-ley-nietos-perdida-es-mas-tonto-sonajero-f202607.html",
-          "date": "2026-07-04T14:31:31+00:00",
-          "category": "spain"
+          "title": "\"J'espère bien la voir élue\" : Jordan Bardella assure à Marine Le Pen son \"total soutien\" à trois du jugement qui déterminera sa candidature à la présidentielle 2027",
+          "source": "RTL",
+          "url": "https://www.rtl.fr/actu/politique/j-espere-bien-la-voir-elue-jordan-bardella-assure-a-marine-le-pen-son-total-soutien-a-trois-du-jugement-qui-determinera-sa-candidature-a-la-presidentielle-2027-7900652578",
+          "date": "2026-07-04T19:14:08+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Affaire des assistants parlementaires: \"Nous ne nous découragerons jamais, nous lutterons toujours\", affirme Marine Le Pen",
+          "source": "BFM",
+          "url": "https://www.bfmtv.com/politique/elections/presidentielle/video-affaire-des-assistants-parlementaires-nous-ne-decouragerons-jamais-nous-lutterons-toujours-affirme-marine-le-pen_VN-202607040401.html",
+          "date": "2026-07-04T19:10:36+00:00",
+          "category": "france"
+        },
+        {
+          "title": "«On a autant confiance en l'un qu'à l'autre» : à Liévin, les militants du Rassemblement national unis quel que soit le candidat pour 2027",
+          "source": "Europe 1",
+          "url": "https://www.europe1.fr/politique/on-a-autant-confiance-en-lun-qua-lautre-a-lievin-les-militants-du-rassemblement-national-unis-quel-que-soit-le-candidat-pour-2027-966357",
+          "date": "2026-07-04T18:43:55+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Édouard Philippe et Gabriel Attal sont des \"Macron de rechange\", estime Jordan Bardella",
+          "source": "Orange Actualités",
+          "url": "https://actu.orange.fr/videos/politique/edouard-philippe-et-gabriel-attal-sont-des-macron-de-rechange-estime-jordan-bardella-CNT000002qkHgN.html",
+          "date": "2026-07-04T18:34:59+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Présidentielle 2027 : Jordan Bardella redit son «total soutien» à Marine Le Pen et «espère bien la voir élue»",
+          "source": "Le Figaro",
+          "url": "https://www.lefigaro.fr/elections/presidentielles/presidentielle-2027-jordan-bardella-redit-son-total-soutien-a-marine-le-pen-et-espere-bien-la-voir-elue-20260704",
+          "date": "2026-07-04T18:33:57+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Jordan Bardella réaffirme son soutien à Marine Le Pen avant la décision de justice de mardi et \"espère la voir élue dans quelques mois\"",
+          "source": "BFM",
+          "url": "https://www.bfmtv.com/politique/front-national/video-jordan-bardella-reaffirme-son-soutien-a-marine-le-pen-avant-la-decision-de-justice-de-mardi-et-espere-la-voir-elue-dans-quelques-mois_VN-202607040386.html",
+          "date": "2026-07-04T18:24:20+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Présidentielle 2027 : Marine Le Pen “tutrice” de Jordan Bardella ? - Extrait vidéo C à vous",
+          "source": "France TV",
+          "url": "https://www.france.tv/france-5/c-a-vous/saison-17/8646840-presidentielle-2027-marine-le-pen-tutrice-de-jordan-bardella.html",
+          "date": "2026-07-04T18:00:48+00:00",
+          "category": "france"
+        },
+        {
+          "title": "En cas d’inéligibilité de Marine Le Pen, Jordan Bardella \"doit s’inscrire dans les traces du général de Gaulle\", selon un cadre du RN",
+          "source": "Orange Actualités",
+          "url": "https://actu.orange.fr/politique/en-cas-d-ineligibilite-de-marine-le-pen-jordan-bardella-doit-s-inscrire-dans-les-traces-du-general-de-gaulle-selon-un-cadre-du-rn-magic-CNT000002qkG1k.html",
+          "date": "2026-07-04T18:00:00+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Si quelqu'un cherche à me tuer : Marine Le Pen et Jordan Bardella réunis une dernière fois avant que tout change, “rien ne sera plus pareil”",
+          "source": "Closer",
+          "url": "https://www.closermag.fr/politique/si-quelquun-cherche-a-me-tuer-marine-le-pen-et-jordan-bardella-reunis-une-derniere-fois-avant-que-tout-change-rien-ne-sera-plus-pareil-3646073",
+          "date": "2026-07-04T17:30:45+00:00",
+          "category": "france"
+        },
+        {
+          "title": "France's Aurelien Tchouameni not in Starting XI vs. Paraguay",
+          "source": "irishsun.com",
+          "url": "https://www.irishsun.com/news/279167183/france-aurelien-tchouameni-not-in-starting-xi-vs-paraguay",
+          "date": "2026-07-04T16:25:00+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Présidentielle 2027 : Entre Le Pen et Bardella, le jeu des cinq différences",
+          "source": "Sud Ouest",
+          "url": "https://www.sudouest.fr/elections/presidentielle/presidentielle-2027-entre-le-pen-et-bardella-le-jeu-des-cinq-differences-29734809.php",
+          "date": "2026-07-04T15:27:44+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Procès en appel de Marine Le Pen : «Cela fait partie de l'éviction de la démocratie», pointe Michel Onfray",
+          "source": "CNews",
+          "url": "https://www.cnews.fr/videos/france/2026-07-04/proces-en-appel-de-marine-le-pen-cela-fait-partie-de-leviction-de-la",
+          "date": "2026-07-04T11:34:24+00:00",
+          "category": "france"
         },
         {
           "title": "Marine Le Pen faces defining court ruling: How Brussels try to block her path to the Élysée",
@@ -426,7 +2309,7 @@
         }
       ],
       "first_seen": "2026-07-05T04:47:26+00:00",
-      "last_seen": "2026-07-05T04:47:26+00:00"
+      "last_seen": "2026-07-05T14:23:42+00:00"
     }
   ]
 }
