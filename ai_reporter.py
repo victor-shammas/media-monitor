@@ -222,8 +222,8 @@ PROVIDERS = {
         "env_key": "GEMINI_API_KEY",
     },
     "gemini-flash": {
-        "fn": lambda prompt: _call_gemini(prompt, "gemini-2.5-flash"),
-        "label": "Gemini 2.5 Flash",
+        "fn": lambda prompt: _call_gemini(prompt, "gemini-3-flash"),
+        "label": "Gemini 3 Flash",
         "env_key": "GEMINI_API_KEY",
     },
     "claude-sonnet": {
