@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-06T16:00:39+00:00",
+  "updated_at": "2026-07-07T04:33:30+00:00",
   "lookback_hours": 48,
   "model": "Mistral Large",
   "status": "ok",
@@ -7,27 +7,468 @@
     {
       "id": "marine-le-pen-s-eligibility-crisis",
       "title": "Marine Le Pen's eligibility crisis",
-      "blurb": "Marine Le Pen faces a critical court ruling on July 7 that could bar her from the 2027 French presidential election due to a 2025 conviction for misusing EU parliamentary assistants' funds. The verdict will determine if she remains the RN's candidate or if Jordan Bardella takes her place.",
-      "affect": "This commands disproportionate attention because it directly impacts the leadership and future of France's far-right movement, with potential ripple effects across Europe.",
+      "blurb": "A Paris appeals court is set to rule on Marine Le Pen's eligibility for the 2027 French presidential election following her 2025 conviction for misuse of EU funds. The verdict could bar her from running, reshaping France's far-right political landscape.",
+      "affect": "This ruling carries high moral and political stakes, potentially ending Le Pen's decades-long leadership of the National Rally and forcing a generational shift in the party.",
       "intensity": 5,
       "affect_signals": [
         "polarized contention",
         "leadership crisis tone",
-        "moral panic register",
         "cross-source repetition",
-        "outrage-coded language"
+        "moral panic register",
+        "high-stakes judicial framing"
       ],
       "categories": [
-        "fr_rassemblement_national"
+        "🇫🇷 Rassemblement National"
       ],
       "article_count": 100,
       "refs": [
+        {
+          "title": "Verdict Awaited: Marine Le Pen's Political Future at a Crossroads",
+          "source": "Devdiscourse",
+          "url": "https://www.devdiscourse.com/article/politics/3946143-verdict-awaited-marine-le-pens-political-future-at-a-crossroads",
+          "date": "2026-07-06T22:00:40+00:00",
+          "category": "france"
+        },
+        {
+          "title": "France-Le destin présidentiel de Marine Le Pen entre les mains de la cour d'appel de Paris",
+          "source": "Boursorama",
+          "url": "https://www.boursorama.com/actualite-economique/actualites-amp/france-le-destin-presidentiel-de-marine-le-pen-entre-les-mains-de-la-cour-d-appel-de-paris-06eb0d59a31de5e78a4ac781790d01a0",
+          "date": "2026-07-06T22:00:00+00:00",
+          "category": "france"
+        },
+        {
+          "title": "France's Marine Le Pen, who brought hard-right National Rally to cusp of electoral success",
+          "source": "Yahoo News Canada",
+          "url": "https://ca.news.yahoo.com/frances-marine-le-pen-brought-205740424.html",
+          "date": "2026-07-06T20:57:40+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Jordan Bardella: The 'blank canvas' who could be France's youngest president",
+          "source": "BBC",
+          "url": "https://www.bbc.co.uk/news/articles/cn7558gdvjro",
+          "date": "2026-07-06T20:57:17+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Affaire des assistants parlementaires européens : Marine Le Pen retient son souffle à la veille de la décision de la cour d'appel de Paris",
+          "source": "franceinfo",
+          "url": "https://www.franceinfo.fr/politique/marine-le-pen/affaire-des-assistants-parlementaires-europeens-marine-le-pen-retient-son-souffle-a-la-veille-de-la-decision-de-la-cour-d-appel-de-paris_8096795.html",
+          "date": "2026-07-06T20:46:28+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Marine Le Pen Première ministre de Jordan Bardella ou hors-jeu ? L'avenir politique de \"l'héritière\" en pointillé",
+          "source": "Linternaute.com",
+          "url": "https://www.linternaute.com/actualite/politique/10864947-marine-le-pen-premiere-ministre-de-jordan-bardella-ou-hors-jeu-l-avenir-politique-de-l-heritiere-en-pointille/",
+          "date": "2026-07-06T20:12:00+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Diputados y senadores libertarios viajarán a Tucumán por el 9 de julio para reforzar la foto de unidad del Gobierno",
+          "source": "Infobae",
+          "url": "https://www.infobae.com/politica/2026/07/06/diputados-y-senadores-libertarios-viajaran-a-tucuman-por-el-9-de-julio-para-reforzar-la-foto-de-unidad-del-gobierno/",
+          "date": "2026-07-06T19:39:15+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Marine Le Pen faces critical court ruling over eligibility to run for French presidency",
+          "source": "The Independent",
+          "url": "https://www.independent.co.uk/bulletin/news/marine-le-pen-france-presidential-election-court-of-appeal-b3010001.html",
+          "date": "2026-07-06T19:28:00+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Marine Le Pen ou Jordan Bardella : la justice peut redessiner la présidentielle et forcer le RN à changer de visage - parlons-politique.fr",
+          "source": "",
+          "url": "https://www.parlons-politique.fr/elections/marine-le-pen-ou-jordan-bardella-la-justice-peut-redessiner-la-presidentielle-et-forcer-le-rn-a-changer-de-visage_22928/",
+          "date": "2026-07-06T19:22:45+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Marine Le Pen devant la justice : quels scénarios pour la présidentielle ?",
+          "source": "franceinfo",
+          "url": "https://www.franceinfo.fr/politique/marine-le-pen/marine-le-pen-devant-la-justice-quels-scenarios-pour-la-presidentielle_8096681.html",
+          "date": "2026-07-06T19:00:02+00:00",
+          "category": "france"
+        },
+        {
+          "title": "«Quelle que soit la décision, rien ne s’arrêtera pour toi» : avant le verdict de la justice, Marion Maréchal rend hommage à sa tante",
+          "source": "Le Figaro",
+          "url": "https://www.lefigaro.fr/elections/presidentielles/quelle-que-soit-la-decision-rien-ne-s-arretera-pour-toi-avant-le-verdict-de-la-justice-marion-marechal-rend-hommage-a-sa-tante-20260706",
+          "date": "2026-07-06T18:45:25+00:00",
+          "category": "france"
+        },
+        {
+          "title": "État d'esprit de Marine Le Pen, hypothèses pour la présidentielle: le RN prêt à affronter la décision de la cour d'appel de Paris",
+          "source": "BFM",
+          "url": "https://www.bfmtv.com/politique/front-national/etat-d-esprit-de-marine-le-pen-hypotheses-pour-la-presidentielle-le-rn-pret-a-affronter-la-decision-de-la-cour-d-appel-de-paris_AV-202607060815.html",
+          "date": "2026-07-06T18:45:04+00:00",
+          "category": "france"
+        },
+        {
+          "title": "France : Jordan Bardella réaffirme son soutien « total » à Marine Le Pen avant une décision judiciaire attendue",
+          "source": "Anadolu Ajansı",
+          "url": "https://www.aa.com.tr/fr/france/france-jordan-bardella-r%C3%A9affirme-son-soutien-total-%C3%A0-marine-le-pen-avant-une-d%C3%A9cision-judiciaire-attendue/3987828",
+          "date": "2026-07-06T18:35:02+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Marine Le Pen peut-elle encore viser l’Élysée ? L’arrêt de la cour d’appel oblige le RN à préparer deux scénarios - parlons-politique.fr",
+          "source": "",
+          "url": "https://www.parlons-politique.fr/elections/marine-le-pen-peut-elle-encore-viser-lelysee-larret-de-la-cour-dappel-oblige-le-rn-a-preparer-deux-scenarios_22926/",
+          "date": "2026-07-06T18:30:48+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Quand la justice peut écarter Marine Le Pen, le RN doit prouver qu’il peut encore gagner sans sa candidate historique - parlons-politique.fr",
+          "source": "",
+          "url": "https://www.parlons-politique.fr/elections/quand-la-justice-peut-ecarter-marine-le-pen-le-rn-doit-prouver-quil-peut-encore-gagner-sans-sa-candidate-historique_22924/",
+          "date": "2026-07-06T18:29:14+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Inéligibilité de Marine Le Pen : ce que la cour d’appel peut décider pour la présidentielle de 2027 - parlons-politique.fr",
+          "source": "",
+          "url": "https://www.parlons-politique.fr/elections/ineligibilite-de-marine-le-pen-ce-que-la-cour-dappel-peut-decider-pour-la-presidentielle-de-2027_22922/",
+          "date": "2026-07-06T18:27:49+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Justice. Procès en appel de Marine Le Pen : avant le verdict, retour une stratégie de défense risquée",
+          "source": "Le Dauphiné Libéré",
+          "url": "https://www.ledauphine.com/elections/2026/07/06/proces-en-appel-de-marine-le-pen-avant-le-verdict-retour-une-strategie-de-defense-risquee",
+          "date": "2026-07-06T18:15:51+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Menace, pardon et unité : Jordan Bardella au défi du rassemblement",
+          "source": "l'Opinion",
+          "url": "https://www.lopinion.fr/politique/menace-pardon-et-unite-jordan-bardella-au-defi-du-rassemblement",
+          "date": "2026-07-06T18:15:00+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Jordan Bardella, son ancienne compagne Nolwenn propulsée à un poste stratégique : les deux ex à nouveau réunis !",
+          "source": "Gala",
+          "url": "https://www.gala.fr/politique/jordan-bardella-son-ancienne-compagne-nolwenn-propulsee-a-un-poste-strategique-les-deux-ex-a-nouveau-reunis-20260706",
+          "date": "2026-07-06T18:06:00+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Procès en appel de Marine Le Pen : pas d’hypothèse judiciaire rassurante à part la relaxe",
+          "source": "Le Figaro",
+          "url": "https://www.lefigaro.fr/politique/proces-en-appel-de-marine-le-pen-pas-d-hypothese-judiciaire-rassurante-a-part-la-relaxe-20260706",
+          "date": "2026-07-06T18:01:19+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Procès de Marine Le Pen : une décision qui fera forcément polémique ? - Extrait vidéo C à vous",
+          "source": "France TV",
+          "url": "https://www.france.tv/france-5/c-a-vous/saison-17/8663595-proces-de-marine-le-pen-une-decision-qui-fera-forcement-polemique.html",
+          "date": "2026-07-06T17:58:03+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Marine Le Pen inéligible en 2027 ? Le RN retient son souffle",
+          "source": "TF1+",
+          "url": "https://www.tf1.fr/tf1/jt-20h/videos/marine-le-pen-ineligible-en-2027-le-rn-retient-son-souffle-66271696.html",
+          "date": "2026-07-06T17:57:49+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Procès de Marine Le Pen : un verdict crucial pour les prochaines élections - RCA",
+          "source": "La Radio",
+          "url": "https://www.rcalaradio.com/proces-de-marine-le-pen-un-verdict-crucial-pour-les-prochaines-elections",
+          "date": "2026-07-06T17:46:30+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Marine Le Pen, le jugement dernier",
+          "source": "l'Opinion",
+          "url": "https://www.lopinion.fr/politique/marine-le-pen-le-jugement-dernier",
+          "date": "2026-07-06T17:45:00+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Fixée sur son sort mardi, quelles options pour Marine Le Pen et le Rassemblement national ?",
+          "source": "Orange Actualités",
+          "url": "https://actu.orange.fr/france/fixee-sur-son-sort-mardi-quelles-options-pour-marine-le-pen-et-le-rassemblement-national-magicExpress-CNT000002qmZr2.html",
+          "date": "2026-07-06T17:40:00+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Présidentielle 2027 : Marine Le Pen et Jordan Bardella face à leur destin",
+          "source": "Le Figaro",
+          "url": "https://www.lefigaro.fr/elections/presidentielles/presidentielle-2027-marine-le-pen-et-jordan-bardella-face-a-leur-destin-20260706",
+          "date": "2026-07-06T17:30:00+00:00",
+          "category": "france"
+        },
+        {
+          "title": "À quelle heure la décision sur Marine Le Pen sera-t-elle rendue ce mardi? - LCP-Assemblée nationale",
+          "source": "",
+          "url": "https://lcp.fr/actualites/a-quelle-heure-la-decision-sur-marine-le-pen-sera-t-elle-rendue-ce-mardi-438845?amp",
+          "date": "2026-07-06T17:15:08+00:00",
+          "category": "france"
+        },
+        {
+          "title": "À quelle heure la décision sur Marine Le Pen sera-t-elle rendue par la justice ce mardi? - LCP-Assemblée nationale",
+          "source": "",
+          "url": "https://lcp.fr/actualites/a-quelle-heure-la-decision-sur-marine-le-pen-sera-t-elle-rendue-par-la-justice-ce-mardi",
+          "date": "2026-07-06T17:15:08+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Procès en appel du RN : la possible inéligibilité de Marine Le Pen est «la faute des politiques», estime Jules Torres",
+          "source": "Europe 1",
+          "url": "https://www.europe1.fr/politique/proces-en-appel-du-rn-la-possible-ineligibilite-de-marine-le-pen-est-la-faute-des-politiques-estime-jules-torres-967425",
+          "date": "2026-07-06T17:15:00+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Bardella affiche sa sérénité avant le jugement de Marine Le Pen",
+          "source": "Orange Actualités",
+          "url": "https://actu.orange.fr/politique/bardella-affiche-sa-serenite-avant-le-jugement-de-marine-le-pen-CNT000002qmHeH.html",
+          "date": "2026-07-06T17:11:16+00:00",
+          "category": "france"
+        },
+        {
+          "title": "If Marine Le Pen is banned, will the French right embrace her protégé?",
+          "source": "The Times",
+          "url": "https://www.thetimes.com/world/europe/article/marine-le-pen-appeal-verdict-8z930d5mt",
+          "date": "2026-07-06T17:10:34+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Bracelet électronique, inéligibilité, relaxe : Marine Le Pen fixée mardi sur son avenir présidentiel",
+          "source": "La République du Centre",
+          "url": "https://www.larep.fr/paris-75000/actualites/bracelet-electronique-ineligibilite-relaxe-marine-le-pen-fixee-mardi-sur-son-avenir-presidentiel_15015940/",
+          "date": "2026-07-06T17:10:00+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Pour Marine Le Pen et son parti, la décision judiciaire qui peut tout changer",
+          "source": "Mediapart",
+          "url": "https://www.mediapart.fr/journal/france/060726/pour-marine-le-pen-et-son-parti-la-decision-judiciaire-qui-peut-tout-changer",
+          "date": "2026-07-06T17:06:31+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Le Pen and Deputy Bardella Show Solidarity Ahead of Ruling on Eligibility for Presidential Race",
+          "source": "breitbart.com",
+          "url": "https://www.breitbart.com/europe/2026/07/06/le-pen-and-deputy-bardella-stress-solidarity-ahead-of-ruling-on-eligibility-for-presidential-race/",
+          "date": "2026-07-06T17:03:30+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Marine Le Pen, hors course pour 2027 ? Les scénarios possibles du 7 juillet",
+          "source": "Le Nouvel Obs",
+          "url": "https://www.nouvelobs.com/politique/20260706.OBS116455/marine-le-pen-hors-course-pour-2027-les-scenarios-possibles-du-7-juillet.html",
+          "date": "2026-07-06T17:00:14+00:00",
+          "category": "france"
+        },
+        {
+          "title": "The possible outcomes of Marine Le Pen's trial",
+          "source": "Le Monde.fr",
+          "url": "https://www.lemonde.fr/en/france/article/2026/07/06/the-possible-outcomes-of-marine-le-pen-s-trial_6755208_7.html",
+          "date": "2026-07-06T17:00:09+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Marine Le Pen inéligible en 2027 ? Le procès en appel du RN aura «des conséquences durables sur le fonctionnement de la justice»",
+          "source": "Europe 1",
+          "url": "https://www.europe1.fr/politique/marine-le-pen-ineligible-en-2027-le-proces-en-appel-du-rn-aura-des-consequences-durables-sur-le-fonctionnement-de-la-justice-967389",
+          "date": "2026-07-06T17:00:00+00:00",
+          "category": "france"
+        },
+        {
+          "title": "« Ça bloque tout, ça congèle » : le saut dans le vide du RN avant le couperet judiciaire pour Marine Le Pen",
+          "source": "Mediapart",
+          "url": "https://www.mediapart.fr/journal/politique/060726/ca-bloque-tout-ca-congele-le-saut-dans-le-vide-du-rn-avant-le-couperet-judiciaire-pour-marine-le-pen",
+          "date": "2026-07-06T16:58:46+00:00",
+          "category": "france"
+        },
+        {
+          "title": "France's national rally leader Marine Le Pen awaits a defining verdict",
+          "source": "WION",
+          "url": "https://www.wionews.com/videos/france-s-national-rally-leader-marine-le-pen-awaits-a-defining-verdict-1783357055927",
+          "date": "2026-07-06T16:57:00+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Poutine, Otan, Union européenne : « Jordan Bardella ne s’écarte pas de la ligne historique du RN »",
+          "source": "Challenges",
+          "url": "https://www.challenges.fr/politique/poutine-otan-union-europeenne-jordan-bardella-ne-secarte-pas-de-la-ligne-historique-du-rassemblement-national_644732",
+          "date": "2026-07-06T16:30:00+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Présidentielle: Jordan Bardella assure être \"serein\" et se dit \"prêt à assumer les conséquences\" à la veille de la décision de la cour d'appel de Paris concernant Marine Le Pen",
+          "source": "BFM",
+          "url": "https://www.bfmtv.com/politique/video-presidentielle-jordan-bardella-assure-etre-serein-et-se-dit-pret-a-assumer-les-consequences-du-jugement-de-marine-le-pen_VN-202607060717.html",
+          "date": "2026-07-06T16:24:23+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Le verdict sur l’inéligibilité de Marine Le Pen peut forcer le RN à choisir vite entre continuité et succession - parlons-politique.fr",
+          "source": "",
+          "url": "https://www.parlons-politique.fr/elections/le-verdict-sur-lineligibilite-de-marine-le-pen-peut-forcer-le-rn-a-choisir-vite-entre-continuite-et-succession_22907/",
+          "date": "2026-07-06T16:08:05+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Procès en appel de Marine Le Pen : Jordan Bardella se déclare «serein» et «prêt à assumer les conséquences» du jugement",
+          "source": "Le Figaro",
+          "url": "https://www.lefigaro.fr/politique/proces-en-appel-de-marine-le-pen-jordan-bardella-se-declare-serein-et-pret-a-assumer-les-consequences-du-jugement-20260706",
+          "date": "2026-07-06T16:02:57+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Présidentielle 2027: Jordan Bardella assure être \"serein\" et se dit \"prêt à assumer les conséquences\" du jugement de Marine Le Pen",
+          "source": "Yahoo Actualités",
+          "url": "https://fr.news.yahoo.com/pr%C3%A9sidentielle-2027-jordan-bardella-assure-160148368.html",
+          "date": "2026-07-06T16:01:48+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Présidentielle 2027: Jordan Bardella assure être \"serein\" et se dit \"prêt à assumer les conséquences\" de la décision de la cour d'appel concernant Marine Le Pen",
+          "source": "BFM",
+          "url": "https://www.bfmtv.com/politique/elections/presidentielle/presidentielle-2027-jordan-bardella-assure-etre-serein-et-se-dit-pret-a-assumer-les-consequences-du-jugement-de-marine-le-pen_AD-202607060683.html",
+          "date": "2026-07-06T16:01:48+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Le Pen ou Bardella ? Quoi qu'il arrive, le premier meeting du RN pour la présidentielle aura lieu à Orléans",
+          "source": "ici.fr",
+          "url": "https://www.ici.fr/centre-val-de-loire/loiret-45/orleans/le-pen-ou-bardella-quoi-qu-il-arrive-le-premier-meeting-du-rn-pour-la-presidentielle-aura-lieu-a-orleans-1074703",
+          "date": "2026-07-06T16:00:04+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Procès en appel de Marine le Pen : relaxe, peine d’inéligibilité raccourcie, pourvoi en cassation… Quels cas de figure lui permettraient d’être candidate à la présidentielle ?",
+          "source": "Public Sénat",
+          "url": "https://www.publicsenat.fr/actualites/politique/proces-en-appel-de-marine-le-pen-relaxe-peine-dineligibilite-raccourcie-pourvoi-en-cassation-quels-cas-de-figure-lui-permettraient-detre-candidate-a-la-presidentie",
+          "date": "2026-07-06T15:49:57+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Procès en appel des assistants parlementaires du RN : relaxe, inéligibilité… les différents scénarios pour Marine Le Pen avant le délibéré ce mardi",
+          "source": "L'Indépendant",
+          "url": "https://www.lindependant.fr/2026/07/06/proces-en-appel-des-assistants-parlementaires-du-rn-relaxe-ineligibilite-les-differents-scenarios-pour-marine-le-pen-avant-le-delibere-ce-mardi-13455797.php",
+          "date": "2026-07-06T15:22:00+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Présidentielle 2027 : entre Marine Le Pen et Jordan Bardella, la classe politique fait son choix",
+          "source": "La Croix",
+          "url": "https://www.la-croix.com/politique/presidentielle-2027-entre-marine-le-pen-et-jordan-bardella-la-classe-politique-fait-son-choix-20260706",
+          "date": "2026-07-06T15:20:50+00:00",
+          "category": "france"
+        },
+        {
+          "title": "\"Que ce soit Marine Le Pen ou Jordan...\" : les électeurs du RN suspendus à la décision du tribunal pour 2027",
+          "source": "franceinfo",
+          "url": "https://www.franceinfo.fr/replay-jt/france-2/13-heures/que-ce-soit-marine-le-pen-ou-jordan-les-electeurs-du-rn-suspendus-a-la-decision-du-tribunal-pour-2027_8096279.html",
+          "date": "2026-07-06T15:06:08+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Candidate ou empêchée ? Tous les scénarios possibles pour Marine Le Pen avant le verdict de son procès en appel",
+          "source": "L'Humanité",
+          "url": "https://www.humanite.fr/politique/assistants-parlementaires/candidate-ou-empechee-tous-les-scenarios-possibles-pour-marine-le-pen-avant-le-verdict-de-son-proces-en-appel",
+          "date": "2026-07-06T15:02:55+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Le destin politique de Marine Le Pen entre les mains de la justice",
+          "source": "RFI",
+          "url": "https://www.rfi.fr/fr/france/20260706-le-destin-politique-de-marine-le-pen-entre-les-mains-de-la-justice",
+          "date": "2026-07-06T14:56:05+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Marine Le Pen fixée sur son sort judiciaire et politique ce mardi",
+          "source": "Charente Libre",
+          "url": "https://www.charentelibre.fr/politique/marine-le-pen-fixee-sur-son-sort-judiciaire-et-politique-ce-mardi-29820340.php",
+          "date": "2026-07-06T14:42:13+00:00",
+          "category": "france"
+        },
+        {
+          "title": "France : la justice rendra-t-elle Marine Le Pen inéligible en 2027 ?",
+          "source": "France 24",
+          "url": "https://www.france24.com/fr/vid%C3%A9o/20260706-france-la-justice-rendra-t-elle-marine-le-pen-in%C3%A9ligible-en-2027",
+          "date": "2026-07-06T14:29:07+00:00",
+          "category": "france"
+        },
+        {
+          "title": "VOX acusa al Gobierno de Sánchez de actuar como un \"sistema mafioso\" y exige ceses por los casos de corrupción",
+          "source": "ESdiario",
+          "url": "https://www.esdiario.com/nacional/260706/192520/vox-acusa-gobierno-sanchez-actuar-sistema-mafioso-exige-ceses-casos-corrupcion.html",
+          "date": "2026-07-06T14:28:37+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Procès en appel de Marine Le Pen: les différents scénarios avant la décision de la cour d'appel de Paris",
+          "source": "BFM",
+          "url": "https://www.bfmtv.com/politique/front-national/proces-en-appel-de-marine-le-pen-les-differents-scenarios-avant-la-decision-de-la-cour-d-appel-de-paris_AV-202607060600.html",
+          "date": "2026-07-06T14:13:00+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Marine Le Pen fixée mardi dans l'affaire des assistants parlementaires du RN : les différents scénarios pour la présidentielle 2027",
+          "source": "TF1 Info",
+          "url": "https://www.tf1info.fr/justice-faits-divers/marine-le-pen-fixee-en-appel-ce-mardi-7-juillet-dans-l-affaire-des-assistants-parlementaires-du-rn-les-differents-scenarios-pour-une-candidature-a-la-presidentielle-2027-2450729.html",
+          "date": "2026-07-06T13:59:25+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Avant le jugement de Le Pen, les cadres du RN reprennent en chœur leur refrain complotiste",
+          "source": "Le HuffPost",
+          "url": "https://www.huffingtonpost.fr/politique/video/avant-le-jugement-de-marine-le-pen-les-cadres-rn-n-ont-pas-pu-s-empecher-de-reprendre-leur-refrain-complotiste_284399.html",
+          "date": "2026-07-06T13:45:07+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Quand Marine Le Pen reprend « le Chant des partisans »",
+          "source": "L'Humanité",
+          "url": "https://www.humanite.fr/politique/le-billet-de-maurice-ulrich/quand-marine-le-pen-reprend-le-chant-des-partisans",
+          "date": "2026-07-06T13:00:19+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Affaire des assistants parlementaires européens du FN : les différents scénarios judiciaires pour Marine Le Pen après la décision en appel",
+          "source": "Le Monde.fr",
+          "url": "https://www.lemonde.fr/societe/article/2026/07/06/affaire-des-assistants-parlementaires-europeens-du-fn-les-differents-scenarios-judiciaires-pour-marine-le-pen-apres-la-decision-en-appel_6721182_3224.html",
+          "date": "2026-07-06T13:00:12+00:00",
+          "category": "france"
+        },
+        {
+          "title": "In pictures: Marine Le Pen’s political rise and frustrated presidential ambitions",
+          "source": "France 24",
+          "url": "https://www.france24.com/en/france/20260706-in-pictures-marine-le-pen-s-political-rise-and-frustrated-presidential-ambitions",
+          "date": "2026-07-06T12:58:05+00:00",
+          "category": "general"
+        },
         {
           "title": "Affaire des assistants parlementaires : les 5 moments clés du procès en appel de Marine le Pen et du RN",
           "source": "L'Humanité",
           "url": "https://www.humanite.fr/politique/justice/affaire-des-assistants-parlementaires-les-5-moments-cles-du-proces-en-appel-de-marine-le-pen-et-du-rn",
           "date": "2026-07-06T12:47:32+00:00",
           "category": "france"
+        },
+        {
+          "title": "Reform's Poll Lead Collapses Amid Row Over Nigel Farage's Finances",
+          "source": "HuffPost UK",
+          "url": "https://www.huffingtonpost.co.uk/entry/reform-poll-collapse-nigel-farage-collapse_uk_6a4b8865e4b05c9d0338ce8e",
+          "date": "2026-07-06T12:46:22+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Social-Media-KI der AfD: Wut auf Knopfdruck",
+          "source": "SZ.de",
+          "url": "https://www.sueddeutsche.de/medien/alternita-studio-ki-social-media-afd-instagram-li.3510054",
+          "date": "2026-07-06T12:45:32+00:00",
+          "category": "germany"
         },
         {
           "title": "[Podcasts] Le tacle du jour - Joëlle Dago-Serry : \"Oui, les cartes seront rebattues. Si Marine Le Pen est condamnée, Mélenchon devra affronter un jet-setter au second tour\" - 06/07",
@@ -51,11 +492,32 @@
           "category": "general"
         },
         {
-          "title": "Pociski dla Ukrainy. Tusk do Nawrockiego i polityków: Nie igrajcie z ogniem",
-          "source": "Do Rzeczy",
-          "url": "https://dorzeczy.pl/kraj/911254/pociski-dla-ukrainy-tusk-do-nawrockiego-i-politykow-nie-igrajcie-z-ogniem.html",
-          "date": "2026-07-06T10:58:00+00:00",
-          "category": "poland"
+          "title": "Trump renews attack on Meloni",
+          "source": "Brussels Signal",
+          "url": "https://brusselssignal.eu/2026/07/trump-renews-attack-on-meloni/",
+          "date": "2026-07-06T11:27:28+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Procès de Marine Le Pen : « Nous attendons sereinement la décision » réagit Marie-Caroline -",
+          "source": "Le Mans.maville.com",
+          "url": "https://lemans.maville.com/actu/actudet_-proces-de-marine-le-pen-nous-attendons-sereinement-la-decision-reagit-marie-caroline-le-pen-deleguee-rn-en-sarthe-_fil-7393678_actu.Htm",
+          "date": "2026-07-06T11:16:00+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Marine Le Pen : un proche dans le business du halal, l’ex-présidente du RN taclée après une déclaration choc \"C'est bien qu'on le sache !\"",
+          "source": "NextPlz",
+          "url": "https://www.nextplz.fr/people/561258-marine-le-pen-un-proche-dans-le-business-du-halal-lex-presidente-du-rn-taclee-apres-une-declaration-choc-cest-bien-quon-le-sache",
+          "date": "2026-07-06T11:10:28+00:00",
+          "category": "france"
+        },
+        {
+          "title": "«Entre Marine le Pen et Jordan Bardella, le fond est assez identique», analyse Sébastien Lignier",
+          "source": "Europe 1",
+          "url": "https://www.europe1.fr/politique/entre-marine-le-pen-et-jordan-bardella-le-fond-est-assez-identique-analyse-sebastien-lignier-967176?amp",
+          "date": "2026-07-06T10:53:36+00:00",
+          "category": "france"
         },
         {
           "title": "La France retient son souffle dans l'attente du verdict concernant Marine Le Pen.",
@@ -72,10 +534,66 @@
           "category": "france"
         },
         {
+          "title": "Procès en appel du RN : quels sont les scénarios possibles pour Marine Le Pen ?",
+          "source": "CNews",
+          "url": "https://www.cnews.fr/france/2026-07-06/proces-en-appel-du-rn-quels-sont-les-scenarios-possibles-pour-marine-le-pen",
+          "date": "2026-07-06T10:07:27+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Procès de Marine Le Pen : Guillaume Drago décrypte les scénarios avant la décision de la cour d'appel",
+          "source": "lejdd.fr",
+          "url": "https://www.lejdd.fr/politique/proces-de-marine-le-pen-guillaume-drago-decrypte-les-scenarios-avant-la-decision-de-la-cour-dappel-178185",
+          "date": "2026-07-06T10:01:04+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Marine Le Pen's possible stand-in as French presidential candidate is not her carbon copy",
+          "source": "Shoreline Media Group",
+          "url": "https://www.shorelinemedia.net/ludington_daily_news/videos/marine-le-pens-possible-stand-in-as-french-presidential-candidate-is-not-her-carbon-copy/video_b4496488-7d13-54e0-aca2-d48fdda2490d.html",
+          "date": "2026-07-06T10:00:38+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Quelle que soit la décision de justice, TF1 annonce que Marine Le Pen sera l’invitée du journal de 20h ... - Jean-Marc Morandini",
+          "source": "",
+          "url": "https://www.jeanmarcmorandini.com/article-645850-quelle-que-soit-la-decision-de-justice-tf1-annonce-que-marine-le-pen-sera-l-invitee-du-journal-de-20h-mardi-soir-apres-l-arret-rendu-le-jour-meme-de-la-cour-d-appel-de-paris.html",
+          "date": "2026-07-06T09:54:00+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Procès en appel du RN : ce que la cour d'appel peut décider pour Marine Le Pen",
+          "source": "HorizonActu.fr",
+          "url": "https://www.horizonactu.fr/actualite-48770-proces-en-appel-du-rn-ce-que-la-cour-d-appel-peut-decider-pour-marine-le-pen",
+          "date": "2026-07-06T09:52:00+00:00",
+          "category": "france"
+        },
+        {
           "title": "Marine Le Pen hors-jeu? Le verdict tombe demain",
           "source": "Watson",
           "url": "https://www.watson.ch/fr/international/politique/425699709-marine-le-pen-hors-jeu-le-verdict-tombe-demain",
           "date": "2026-07-06T09:44:02+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Agorà Estate 2026 - Trump, nuovo attacco a Meloni: \"Serve un ordine restrittivo\" - 06/07/2026 - Video",
+          "source": "RaiPlay",
+          "url": "https://www.raiplay.it/video/2026/07/Trump-nuovo-attacco-a-Meloni-Serve-un-ordine-restrittivo---Agora-Estate-06072026-59981148-3cb0-4c68-958d-4d50454de12b.html",
+          "date": "2026-07-06T09:16:42+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "\"Quel que soit le résultat le 7 juillet, Marine Le Pen s’exprimera\" : on saura mardi qui sera le candidat du RN à la présidentielle",
+          "source": "Centre Presse Aveyron",
+          "url": "https://www.centrepresseaveyron.fr/2026/07/06/quel-que-soit-le-resultat-le-7-juillet-marine-le-pen-sexprimera-on-saura-mardi-qui-sera-le-candidat-du-rn-a-la-presidentielle-13455257.php",
+          "date": "2026-07-06T08:42:00+00:00",
+          "category": "france"
+        },
+        {
+          "title": "[Podcasts] Procès en appel de Marine Le Pen : la présidentielle en jeu ? - 06/07",
+          "source": "RMC",
+          "url": "https://rmc.bfmtv.com/replay-emissions/les-grandes-gueules/proces-en-appel-de-marine-le-pen-la-presidentielle-en-jeu-06-07_EN-202607060347.html",
+          "date": "2026-07-06T08:37:58+00:00",
           "category": "france"
         },
         {
@@ -86,40 +604,698 @@
           "category": "france"
         },
         {
+          "title": "Procès en appel de Marine Le Pen : l'état-major du RN oscille entre espoir et résignation",
+          "source": "Europe 1",
+          "url": "https://www.europe1.fr/politique/proces-en-appel-de-marine-le-pen-letat-major-du-rn-oscille-entre-espoir-et-resignation-967005",
+          "date": "2026-07-06T08:09:00+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Marine Le Pen court ruling: What does this mean for France?",
+          "source": "Newstalk ZB",
+          "url": "https://www.newstalkzb.co.nz/on-air/heather-du-plessis-allan-drive/audio/gavin-grey-uk-correspondent-on-the-upcoming-court-ruling-on-marine-le-pen/",
+          "date": "2026-07-06T08:05:00+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Procès en appel de Marine Le Pen : Jordan Bardella se dit \"serein et prêt à assumer les conséquences\"",
+          "source": "La Provence",
+          "url": "https://www.laprovence.com/article/faits-divers-justice/49073084243470/proces-en-appel-de-marine-le-pen-jordan-bardella-se-dit-serein-et-pret-a-assumer-les-consequences",
+          "date": "2026-07-06T08:03:00+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Présidentielle: \"Le RN sera représenté soit par Marine Le Pen, soit par Jordan Bardella. Ce sera le même programme et la même campagne\", assure Laurent Jacobelli",
+          "source": "BFM",
+          "url": "https://www.bfmtv.com/politique/elections/presidentielle/video-presidentielle-le-rn-sera-represente-soit-par-marine-le-pen-soit-par-jordan-bardella-ce-sera-le-meme-programme-et-la-meme-campagne-assure-laurent-jacobelli_VN-202607060309.html",
+          "date": "2026-07-06T07:54:38+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Pourquoi la décision sur l'inéligibilité de Marine Le Pen peut signifier \"la fin de la droite\" pour Louis Sarkozy",
+          "source": "RMC",
+          "url": "https://rmc.bfmtv.com/actualites/politique/pourquoi-la-decision-sur-l-ineligibilite-de-marine-le-pen-peut-signifier-la-fin-de-la-droite-pour-louis-sarkozy_AV-202607060305.html",
+          "date": "2026-07-06T07:49:08+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Procès en appel du RN : «Notre souhait, c'est Marine Le Pen à l'Élysée, Jordan Bardella à Matignon», assure Franck Allisio",
+          "source": "CNews",
+          "url": "https://www.cnews.fr/videos/france/2026-07-06/proces-en-appel-du-rn-notre-souhait-cest-marine-le-pen-lelysee-jordan",
+          "date": "2026-07-06T07:02:04+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Le sort de Marine Le Pen peut encore bouleverser le choix des électeurs en 2027, selon la décision attendue le 7 juillet - parlons-politique.fr",
+          "source": "",
+          "url": "https://www.parlons-politique.fr/elections/le-sort-de-marine-le-pen-peut-encore-bouleverser-le-choix-des-electeurs-en-2027-selon-la-decision-attendue-le-7-juillet_22836/",
+          "date": "2026-07-06T06:19:30+00:00",
+          "category": "france"
+        },
+        {
+          "title": "\"On est inquiets\": la fébrilité des militants RN avant le verdict crucial des juges pour Marine Le Pen",
+          "source": "RMC",
+          "url": "https://rmc.bfmtv.com/actualites/politique/on-est-inquiets-la-febrilite-des-militants-rn-avant-le-verdict-crucial-des-juges-pour-marine-le-pen_AV-202607060199.html",
+          "date": "2026-07-06T06:01:26+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Présidentielle 2027 : Jordan Bardella prêt à remplacer Marine le Pen en cas de condamnation",
+          "source": "Europe 1",
+          "url": "https://www.europe1.fr/politique/presidentielle-2027-jordan-bardella-pret-a-remplacer-marine-le-pen-en-cas-de-condamnation-966981",
+          "date": "2026-07-06T06:01:00+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Politique. L'élection présidentielle suspendue au 7 juillet, date du jugement de Marine Le Pen",
+          "source": "Le Dauphiné Libéré",
+          "url": "https://www.ledauphine.com/elections/2026/07/06/l-election-presidentielle-suspendue-au-7-juillet-date-du-jugement-de-marine-le-pen",
+          "date": "2026-07-06T06:00:42+00:00",
+          "category": "france"
+        },
+        {
           "title": "Délibéré du procès de Marine Le Pen : quels scénarios pour la présidentielle 2027 ?",
           "source": "mesinfos",
           "url": "https://mesinfos.fr/75000-paris/delibere-du-proces-de-marine-le-pen-quels-scenarios-pour-la-presidentielle-2027-334424.html",
           "date": "2026-07-06T06:00:00+00:00",
           "category": "france"
+        },
+        {
+          "title": "Trump posts a photo of Meloni with the caption: ‘We need a restraining order’",
+          "source": "Il Sole 24 ORE",
+          "url": "https://en.ilsole24ore.com/art/trump-posts-a-meme-about-meloni-a-restraining-order-is-needed-AJV6rC",
+          "date": "2026-07-06T05:48:41+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Procès en appel de Marine Le Pen : Le verdict demain",
+          "source": "RMC",
+          "url": "https://rmc.bfmtv.com/actualites/politique/video-proces-en-appel-de-marine-le-pen-le-verdict-demain_VN-202607060156.html",
+          "date": "2026-07-06T05:34:48+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Rassemblement national : pour 2027, Marine Le Pen ou Jordan Bardella ?",
+          "source": "France 24",
+          "url": "https://www.france24.com/fr/vid%C3%A9o/20260706-rdp-fr-060726",
+          "date": "2026-07-06T05:31:17+00:00",
+          "category": "france"
+        },
+        {
+          "title": "« On tient un truc en or » : retour sur l’enquête à l’origine du procès de Marine Le Pen dans l’affaire des assistants européens du RN",
+          "source": "ina.fr",
+          "url": "https://larevuedesmedias.ina.fr/marine-le-pen-proces-assistants-parlementaires-europeens-coulisses-enquete-mediapart",
+          "date": "2026-07-06T05:00:07+00:00",
+          "category": "france"
+        },
+        {
+          "title": "La candidature de Marine Le Pen à l'élection présidentielle suspendue à la décision de son procès en appel",
+          "source": "Orange Actualités",
+          "url": "https://actu.orange.fr/videos/france/la-candidature-de-marine-le-pen-a-l-election-presidentielle-suspendue-a-la-decision-de-son-proces-en-appel-CNT000002qm0f7.html",
+          "date": "2026-07-06T04:59:31+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Procès en appel du RN: l'espoir d'un verdict favorable pour les partisans de Marine Le Pen",
+          "source": "Orange Actualités",
+          "url": "https://actu.orange.fr/videos/politique/proces-en-appel-du-rn-l-espoir-d-un-verdict-favorable-pour-les-partisans-de-marine-le-pen-CNT000002qmqKM.html",
+          "date": "2026-07-06T04:48:34+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Procès en appel du RN: l'espoir d'un verdict favorable pour les partisans Marine Le Pen",
+          "source": "BFM",
+          "url": "https://www.bfmtv.com/replay-emissions/bfm-premiere/video-proces-en-appel-du-rn-l-espoir-d-un-verdict-favorable-pour-les-partisans-marine-le-pen_VN-202607060110.html",
+          "date": "2026-07-06T04:48:25+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Procès en appel des assistants parlementaires du FN : quels scénarios pourraient-ils permettre à Marine Le Pen de se présenter ?",
+          "source": "Europe 1",
+          "url": "https://www.europe1.fr/police-justice/proces-en-appel-des-assistants-parlementaires-du-fn-quels-scenarios-pourraient-ils-permettre-a-marine-le-pen-de-se-presenter-966867?amp",
+          "date": "2026-07-06T04:15:00+00:00",
+          "category": "france"
+        },
+        {
+          "title": "EXCLUSIF - Un électeur RN sur deux veut que Bardella soit candidat même si Le Pen peut l’être",
+          "source": "Le HuffPost",
+          "url": "https://www.huffingtonpost.fr/politique/article/bardella-candidat-en-2027-quel-que-soit-le-jugement-de-le-pen-c-est-le-souhait-de-la-moitie-des-electeurs-rn_283010.html",
+          "date": "2026-07-06T04:00:10+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Marine Le Pen sera-t-elle candidate en 2027 ? \"C'est le grand calme avant la tempête\" : la campagne présidentielle sur le point de démarrer",
+          "source": "RTL",
+          "url": "https://www.rtl.fr/actu/politique/marine-le-pen-sera-t-elle-candidate-en-2027-c-est-le-grand-calme-avant-la-tempete-la-campagne-presidentielle-sur-le-point-de-demarrer-7900652366",
+          "date": "2026-07-06T04:00:00+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Residents’ calls for puffin crossing turned down by council",
+          "source": "LincsOnline",
+          "url": "https://www.stamfordmercury.co.uk/stamford/news/residents-calls-for-puffin-crossing-turned-down-by-council-9472346/",
+          "date": "2026-07-06T04:00:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Marine Le Pen will find out on Tuesday whether or not she can run for the French presidency in next year’s elections, when a Paris appeal court decides at 13:30 (11:30 GMT) whether to uphold an embezzlement conviction against her. Le Pen, the 57-year-old",
+          "source": "Diebewertung",
+          "url": "https://www.diebewertung.de/marine-le-pen-will-find-out-on-tuesday-whether-or-not-she-can-run-for-the-french-presidency-in-next-years-elections-when-a-paris-appeal-court-decides-at-1330-1130-gmt-whether-to-uphold-an-embez/",
+          "date": "2026-07-06T03:47:20+00:00",
+          "category": "france"
+        },
+        {
+          "title": "\"Ça aurait pu partir dans le décor\" : avant la décision en appel sur l'inéligibilité de Marine Le Pen, cinq longs mois d'attente et de doutes au Rassemblement national",
+          "source": "franceinfo",
+          "url": "https://www.franceinfo.fr/politique/marine-le-pen/recit-ca-aurait-pu-partir-dans-le-decor-avant-la-decision-en-appel-sur-l-ineligibilite-de-marine-le-pen-cinq-longs-mois-d-attente-et-de-doutes-au-rassemblement-national_8080595.html",
+          "date": "2026-07-06T03:41:04+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Affaire des assistants parlementaires du RN : pour Marine Le Pen, il est temps de savoir",
+          "source": "La Provence",
+          "url": "https://www.laprovence.com/article/politique/32893781128130/affaire-des-assistants-parlementaires-du-rn-pour-marine-le-pen-il-est-temps-de-savoir",
+          "date": "2026-07-06T03:40:00+00:00",
+          "category": "france"
+        },
+        {
+          "title": "El nuevo estilo del Gobierno, la reforma electoral rumbo a 2027 y los motivos detrás de los cambios de la mesa política",
+          "source": "Infobae",
+          "url": "https://www.infobae.com/politica/2026/07/06/el-nuevo-estilo-del-gobierno-la-reforma-electoral-rumbo-a-2027-y-los-motivos-detras-de-los-cambios-de-la-mesa-politica/",
+          "date": "2026-07-06T03:27:14+00:00",
+          "category": "argentina"
         }
       ],
       "first_seen": "2026-07-02T14:39:14+00:00",
-      "last_seen": "2026-07-06T16:00:39+00:00"
+      "last_seen": "2026-07-07T04:33:30+00:00"
     },
     {
       "id": "trump-meloni-feud-escalates-ahead-of-nato-summit",
       "title": "Trump-Meloni feud escalates ahead of NATO summit",
-      "blurb": "Donald Trump intensified his feud with Italian PM Giorgia Meloni by posting a meme on Truth Social demanding a 'restraining order' against her, just days before their meeting at the NATO summit in Ankara. Italian officials dismissed the attack as a provocation but reaffirmed strong U.S.-Italy relations.",
-      "affect": "The personal and public nature of Trump's attacks on a key NATO ally commands high affective investment due to its implications for transatlantic relations and alliance unity.",
+      "blurb": "Donald Trump reignited his feud with Italian Prime Minister Giorgia Meloni by posting a meme suggesting she needs a 'restraining order,' escalating tensions ahead of their meeting at the NATO summit in Ankara. The Italian government has chosen to ignore the provocation, but the incident highlights growing transatlantic strains.",
+      "affect": "The personal and public nature of the attacks, combined with their timing ahead of a critical NATO summit, amplifies the sense of diplomatic crisis and polarization between traditional allies.",
       "intensity": 5,
       "affect_signals": [
-        "alarmist framing",
         "outrage-coded language",
         "cross-source repetition",
         "polarized contention",
-        "moral charge"
+        "alarmist framing",
+        "leadership crisis tone"
       ],
       "categories": [
-        "it_fratelli_ditalia",
-        "us_maga"
+        "🇮🇹 Fratelli d'Italia / Lega",
+        "🇺🇸 MAGA / Trump"
       ],
-      "article_count": 80,
+      "article_count": 90,
       "refs": [
+        {
+          "title": "Meloni, la scelta di non replicare all’ultima provocazione di Trump. Le armi dietro lo strappo",
+          "source": "la Repubblica",
+          "url": "https://www.repubblica.it/politica/2026/07/07/news/meloni_non_replica_ultima_provocazione_trump_armi-425455622/",
+          "date": "2026-07-06T23:00:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Trump, Markell: “Un attacco incomprensibile, Meloni è nostra alleata”",
+          "source": "la Repubblica",
+          "url": "https://www.repubblica.it/politica/2026/07/07/news/jack_markell_trump_meloni_intervista-425455635/",
+          "date": "2026-07-06T23:00:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "‘People come and go’: Italy reacts to Trump ‘restraining order’ Meloni jab",
+          "source": "NZ Herald",
+          "url": "https://www.nzherald.co.nz/world/people-come-and-go-italy-replies-to-trump-restraining-order-jab-at-meloni/EJCUYOHRSVCULA32P4LEERDIIA/",
+          "date": "2026-07-06T22:14:14+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "I sospetti della destra italiana: Donald ha scelto di puntare su Vannacci?",
+          "source": "il manifesto",
+          "url": "https://ilmanifesto.it/i-sospetti-della-destra-italiana-donald-ha-scelto-di-puntare-su-vannacci",
+          "date": "2026-07-06T22:12:38+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Silenzio e profilo basso, Meloni ad Ankara spera di evitare Trump",
+          "source": "il manifesto",
+          "url": "https://ilmanifesto.it/silenzio-e-profilo-basso-meloni-ad-ankara-spera-di-evitare-trump",
+          "date": "2026-07-06T22:12:37+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Nuovo caso Trump-Meloni alla vigilia del vertice Nato: Palazzo Chigi sceglie il silenzio",
+          "source": "Adnkronos",
+          "url": "https://www.adnkronos.com/politica/italia-usa-mina-trump-sul-vertice-nato-silenzio-da-palazzo-chigi_2QeyZsp9iVcJHgtCm1i00B",
+          "date": "2026-07-06T22:05:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Trump-Meloni, la strategia della premier in vista dei lavori del summit: non gli forniamo più assist",
+          "source": "Il Messaggero",
+          "url": "https://www.ilmessaggero.it/politica/meloni_trump_strategia_premier_qual_e-9635731.html",
+          "date": "2026-07-06T22:04:47+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Trump, la Nato e gli attacchi a Meloni: la strategia di Donald, l'analisi",
+          "source": "Adnkronos",
+          "url": "https://www.adnkronos.com/internazionale/esteri/trump-meloni-analisi-ft-reazioni-italia-precedenti_4DjwlpVieP3OJ5jelOjztv",
+          "date": "2026-07-06T22:04:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Rissa Trump-Meloni: se non facesse pena, farebbe quasi ridere",
+          "source": "Il Fatto Quotidiano",
+          "url": "https://www.ilfattoquotidiano.it/in-edicola/articoli/2026/07/07/rissa-trump-meloni-se-non-facesse-pena-farebbe-quasi-ridere/8441238/",
+          "date": "2026-07-06T22:01:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "President Trump Addresses FIFA Controversy From Oval Office",
+          "source": "American Center for Law and Justice",
+          "url": "https://aclj.org/news/president-trump-addresses-fifa-controversy-from-oval-office",
+          "date": "2026-07-06T21:53:31+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Con diputados y senadores, el Gobierno prepara una postal de unidad para el 9 de Julio en Tucumán",
+          "source": "TN",
+          "url": "https://tn.com.ar/politica/2026/07/06/con-diputados-y-senadores-el-gobierno-prepara-una-postal-de-unidad-para-el-9-de-julio-en-tucuman/",
+          "date": "2026-07-06T21:19:04+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Tutti contro la sparata di Trump: «Su Meloni frasi inaccettabili»",
+          "source": "Corriere Roma",
+          "url": "https://roma.corriere.it/notizie/politica/26_luglio_06/trump-meloni-reazioni-frasi-37048c60-1783-4614-8b25-271dc3aa9xlk.shtml",
+          "date": "2026-07-06T21:02:19+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "‘Restraining order needed’: Trump shares doctored Meloni meme to reignite feud - Truth or Fake",
+          "source": "France 24",
+          "url": "https://www.france24.com/en/restraining-order-needed-trump-shares-doctored-meloni-meme-to-reignite-feud-1",
+          "date": "2026-07-06T20:49:27+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Italian Minister Responds to Trump's Comments About Giorgia Meloni",
+          "source": "India News Network",
+          "url": "https://www.indianewsnetwork.com/en/italian-minister-responds-trump-comments-about-giorgia-meloni-20260707",
+          "date": "2026-07-06T20:43:54+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Meloni-Trump: il paradosso di un governo che investiva su Washington",
+          "source": "Corriere della Sera",
+          "url": "https://www.corriere.it/politica/26_luglio_06/meloni-trump-il-paradosso-di-un-governo-che-investiva-su-washington-04928156-e915-4931-9ecd-5990fd5a6xlk.shtml",
+          "date": "2026-07-06T20:32:21+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Trump vs Meloni, governo compatto respinge provocazioni",
+          "source": "Sky TG24",
+          "url": "https://tg24.sky.it/politica/video/2026/07/06/trump-vs-meloni-governo-1110158",
+          "date": "2026-07-06T20:28:49+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "La scelta di Meloni: un silenzio “gelido”. Si punta a evitare i contatti con Trump",
+          "source": "Avvenire",
+          "url": "https://www.avvenire.it/politica/la-scelta-di-meloni-un-silenzio-gelido-si-punta-a-evitare-i-contatti-con-trump_110627",
+          "date": "2026-07-06T19:40:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "La Libertad Avanza presenta a su candidato a intendente de Fernández con referentes nacionales",
+          "source": "infodelestero.com",
+          "url": "https://infodelestero.com/2026/07/06/la-libertad-avanza-presenta-a-su-candidato-a-intendente-de-fernandez-con-referentes-nacionales/",
+          "date": "2026-07-06T19:32:49+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Trump attacca Meloni, Padellaro: \"Sta cambiando cavallo, l'ha accantonata. Anche a Washington conoscono i sondaggi di Vannacci\"",
+          "source": "LA7",
+          "url": "https://www.la7.it/in-onda/video/trump-attacca-meloni-padellaro-sta-cambiando-cavallo-lha-accantonata-anche-a-washington-conoscono-i-06-07-2026-651286",
+          "date": "2026-07-06T19:29:40+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Crisi Italia-Usa, nuovo affondo di Trump contro Meloni",
+          "source": "Tv2000",
+          "url": "https://www.tv2000.it/tg2000/video/crisi-italia-usa-nuovo-affondo-di-trump-contro-meloni/",
+          "date": "2026-07-06T19:15:03+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Trump vs Meloni: US President reignites feud with Italian PM ahead of NATO summit",
+          "source": "WION",
+          "url": "https://www.wionews.com/videos/trump-vs-meloni-us-president-reignites-feud-with-italian-pm-ahead-of-nato-summit-1783365120357",
+          "date": "2026-07-06T19:12:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Trump rehashes Meloni feud with TRUTH Post: RESTRAINING ORDER NEEDED",
+          "source": "National Desk",
+          "url": "https://thenationaldesk.com/news/americas-news-now/trump-rehashes-meloni-feud-with-truth-post-restraining-order-needed-strait-of-hormuz-italy-g7-summit",
+          "date": "2026-07-06T19:07:50+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Conte: respingiamo parole Trump ma Meloni lo ha assecondato in tutto",
+          "source": "Quotidiano Nazionale",
+          "url": "https://www.quotidiano.net/video/politica/conte-respingiamo-parole-trump-ma-meloni-lo-ha-assecondato-in-tutto-wm49s1yq",
+          "date": "2026-07-06T19:05:42+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Court blocks Trump administration changes to homelessness funding",
+          "source": "CT Mirror",
+          "url": "https://ctmirror.org/2026/07/06/continuums-of-care-funding-change-blocked-lawsuit/",
+          "date": "2026-07-06T18:56:31+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Sondaggi, Meloni resta prima ma perde ancora: Vannacci cresce e cambia gli equilibri della destra",
+          "source": "Allora! Italian Australian News",
+          "url": "https://alloranews.com/politics/sondaggi-meloni-resta-prima-ma-perde-ancora-vannacci-cresce-e-cambia-gli-equilibri-della-destra/",
+          "date": "2026-07-06T18:45:40+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "L'attacco di Trump a Meloni, le forze politiche: \"Inaccettabile\"",
+          "source": "RaiNews",
+          "url": "https://www.rainews.it/video/2026/07/lattacco-di-trump-a-meloni-le-forze-politiche-inaccettabile-1ebc3aa8-b705-475e-97b7-24d0d3236589.html",
+          "date": "2026-07-06T18:44:47+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Vox lleva de nuevo al Pleno de Córdoba una moción para proteger a los mayores y exigir que se cumplan los acuerdos aprobados",
+          "source": "Diario Córdoba",
+          "url": "https://www.diariocordoba.com/cordoba-ciudad/2026/07/06/vox-lleva-nuevo-pleno-cordoba-132184586.html",
+          "date": "2026-07-06T18:38:25+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Donald Trump’s Latest Giorgia Meloni Post Makes Their Feud Even Stranger",
+          "source": "Yahoo",
+          "url": "https://www.yahoo.com/news/videos/donald-trump-latest-giorgia-meloni-182051866.html",
+          "date": "2026-07-06T18:20:51+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Il meme di Trump che irride: la linea del silenzio della premier Meloni",
+          "source": "RaiNews",
+          "url": "https://www.rainews.it/amp/video/2026/07/il-meme-di-trump-che-irride-la-linea-del-silenzio-della-premier-meloni-da834bb4-5c43-4f46-850c-e344e7f9eed3.html",
+          "date": "2026-07-06T18:10:13+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Trump says he asked FIFA to review the ‘horrible’ red card given to Team USA star Folarin Balogun",
+          "source": "WWNY",
+          "url": "https://www.wwnytv.com/2026/07/06/trump-says-he-asked-fifa-review-horrible-red-card-given-team-usa-star-folarin-balogun/",
+          "date": "2026-07-06T18:08:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "‘Restraining order needed’: Trump reignites Meloni feud with Truth Social post mocking Italian leader",
+          "source": "Washington Examiner",
+          "url": "https://www.washingtonexaminer.com/news/world/4637123/restraining-order-trump-meloni-feud-mocks-italy-leader/",
+          "date": "2026-07-06T17:54:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "‘I did receive a call from President Donald Trump’: FIFA president breaks his silence as criticism mounts",
+          "source": "Yahoo Sports",
+          "url": "https://sports.yahoo.com/articles/did-receive-call-president-donald-174213474.html",
+          "date": "2026-07-06T17:42:13+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "People come and go: Italy responds to Trump's 'restraining order' jab at Meloni",
+          "source": "India Today",
+          "url": "https://www.indiatoday.in/world/story/italy-responds-to-donald-trumps-restraining-order-jab-at-giorgia-meloni-nato-summit-turkey-2942056-2026-07-06",
+          "date": "2026-07-06T17:27:29+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Donald Trump Admits He Asked FIFA to Review Balogun Red Card",
+          "source": "Yahoo Sports",
+          "url": "https://sports.yahoo.com/articles/donald-trump-admits-asked-fifa-171301500.html",
+          "date": "2026-07-06T17:13:01+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump Taunts Meloni Again Ahead of NATO Summit",
+          "source": "Newser",
+          "url": "https://www.newser.com/story/392320/trump-taunts-meloni-again-ahead-of-nato-summit.html",
+          "date": "2026-07-06T16:55:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Trump e la richiesta di \"ordine restrittivo\" per Meloni, negli Usa contro molestie e stalking: cosa prevede",
+          "source": "Virgilio",
+          "url": "https://www.virgilio.it/notizie/trump-e-la-richiesta-di-ordine-restrittivo-per-meloni-negli-usa-contro-molestie-e-stalking-cosa-prevede-1767113",
+          "date": "2026-07-06T16:38:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Bye bye Trump. Meloni punta a un incontro con Erdoğan",
+          "source": "HuffPost Italia",
+          "url": "https://www.huffingtonpost.it/politica/2026/07/06/news/bye_bye_trump_meloni_punta_a_un_incontro_con_erdogan-22299294/",
+          "date": "2026-07-06T16:30:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Perché Donald Trump ha deciso di prendere di mira Giorgia Meloni: ma lei ne esce vittima o vincente?",
+          "source": "Vanity Fair Italia",
+          "url": "https://www.vanityfair.it/article/donald-trump-attacco-truth-giorgia-meloni",
+          "date": "2026-07-06T16:14:49+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Trump attacca Meloni per attaccare l'Unione Europea",
+          "source": "Radio Popolare",
+          "url": "https://www.radiopopolare.it/puntata/popolare-clip/clip_06_07_2026_17_50",
+          "date": "2026-07-06T16:11:28+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Salvini, 'meme di Trump su Meloni? Non commento più queste cose'",
+          "source": "ANSA",
+          "url": "https://www.ansa.it/sito/notizie/topnews/2026/07/06/salvini-meme-di-trump-su-meloni-non-commento-piu-queste-cose_71b29f6f-590e-46cf-8976-c7ffb84adb23.html",
+          "date": "2026-07-06T16:09:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Magyar Péter: még Isztambulban is nevettek, hogy a Fidesz akar tüntetni a demokrácia mellett",
+          "source": "Frisss.hu",
+          "url": "https://www.frisss.hu/aktualis/magyar-peter-meg-isztambulban-is-nevettek-hogy-a-fidesz-akar-tuntetni-a-demokracia-mellett",
+          "date": "2026-07-06T15:58:08+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Rome brushes off Trump’s ‘restraining order’ meme targeting Meloni",
+          "source": "politico.eu",
+          "url": "https://www.politico.eu/article/italian-government-brush-off-donald-trumps-meme-about-giorgia-meloni/",
+          "date": "2026-07-06T15:55:35+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "‘People come and go’: Italy responds to Trump's latest attack on Meloni | World News",
+          "source": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/world-news/people-come-and-go-italy-responds-to-trumps-latest-attack-on-meloni-101783347247397.html",
+          "date": "2026-07-06T15:49:15+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Sardoni a Parenzo: \"Grafica terribile su Salvini, con Toninelli non la ricordo\". \"Le facevamo\"",
+          "source": "LA7",
+          "url": "https://www.la7.it/laria-che-tira/video/sardoni-a-parenzo-grafica-terribile-su-salvini-con-toninelli-non-la-ricordo-le-facevamo-06-07-2026-651276",
+          "date": "2026-07-06T15:40:59+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Trump attacca di nuovo la premier Meloni, ma il governo non replica",
+          "source": "panorama.it",
+          "url": "https://www.panorama.it/attualita/trump-attacca-di-nuovo-la-premier-meloni-ma-il-governo-non-replica",
+          "date": "2026-07-06T15:36:09+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Trump attacca Meloni, Paolo Mieli: \"La tratta come una persona che ha tradito un segreto condiviso”",
+          "source": "LA7",
+          "url": "https://www.la7.it/laria-che-tira/video/trump-attacca-meloni-paolo-mieli-la-tratta-come-una-persona-che-ha-tradito-un-segreto-condiviso-06-07-2026-651274",
+          "date": "2026-07-06T15:26:53+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Trump: I need a restraining order against Meloni",
+          "source": "The Telegraph",
+          "url": "https://www.telegraph.co.uk/world-news/2026/07/06/trump-i-need-a-restraining-order-against-giorgia-meloni/",
+          "date": "2026-07-06T15:20:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Trump e Meloni, lo psichiatra: «Il presidente Usa un pazzo? Credo sia tutto studiato: l'umiliazione è una strategia per ridefinire i rapporti di forza»",
+          "source": "Corriere della Sera",
+          "url": "https://www.corriere.it/salute/26_luglio_06/trump-e-meloni-lo-psichiatra-l-umiliazione-e-una-strategia-per-ridefinire-i-rapporti-di-forza-3ee03d1a-4a69-4a11-868f-5e0c3e9b5xlk.shtml",
+          "date": "2026-07-06T15:18:49+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Trump’s Brotherhood Was Always Going to Betray Him",
+          "source": "Newsweek",
+          "url": "https://www.newsweek.com/trump-meloni-italy-brotherhood-nationalism-12161722",
+          "date": "2026-07-06T15:07:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Trump vs Meloni, dallo stalking alle molestie: da cosa protegge il ‘restraining order’",
+          "source": "Startupbusiness.it",
+          "url": "https://www.startupbusiness.it/trump-vs-meloni-dallo-stalking-alle-molestie-da-cosa-protegge-il-restraining-order/182791/",
+          "date": "2026-07-06T14:56:49+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "President Donald Trump reveals how he handled Folarin Balogun's red-card suspension by FIFA at World Cup",
+          "source": "Yahoo Sports",
+          "url": "https://sports.yahoo.com/articles/president-donald-trump-reveals-handled-144823604.html",
+          "date": "2026-07-06T14:48:23+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Sky Cube 6/7 - Nuova frattura tra Trump e Meloni?",
+          "source": "Sky TG24",
+          "url": "https://tg24.sky.it/mondo/video/2026/07/06/trump-contro-meloni-post-social-sky-cube-1110068",
+          "date": "2026-07-06T14:36:52+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Vertice Nato ad Ankara, Meloni alla prova dell'Alleanza: tra Erdogan, Trump e il dossier Ucraina",
+          "source": "il Giornale",
+          "url": "https://www.ilgiornale.it/news/politica-internazionale/vertice-nato-ad-ankara-meloni-prova-dellalleanza-erdogan-2689710.html",
+          "date": "2026-07-06T14:35:37+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Trump reignites row with Italy PM Giorgia Meloni by suggesting she's a stalker: 'Restraining order needed'",
+          "source": "New York Post",
+          "url": "https://nypost.com/2026/07/06/us-news/trump-reignites-row-with-italy-pm-giorgia-meloni-by-suggesting-shes-a-stalker-restraining-order-needed/",
+          "date": "2026-07-06T14:28:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Italia-Usa, l’amico di Trump George Lombardi: “Attacco a Meloni calcolato, la favorisce”",
+          "source": "Key4biz",
+          "url": "https://www.key4biz.it/italia-usa-lamico-di-trump-george-lombardi-attacco-a-meloni-calcolato-la-favorisce/579168/amp/",
+          "date": "2026-07-06T14:27:26+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Trump attacca Meloni? L'amico del tycoon svela il retroscena: \"In realtà le sta facendo un favore\"",
+          "source": "Adnkronos",
+          "url": "https://www.adnkronos.com/politica/trump-contro-meloni-intervista-george-lombardi_6aUtuGNAvpSmNE9IIJPXjD",
+          "date": "2026-07-06T14:27:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Il post del presidente Usa contro la premier, Stefanini (Ispi): \"Meno Meloni cerca Trump e meglio è, si trinceri dietro posizione Ue\"",
+          "source": "Key4biz",
+          "url": "https://www.key4biz.it/il-post-del-presidente-usa-contro-la-premier-stefanini-ispi-meno-meloni-cerca-trump-e-meglio-e-si-trinceri-dietro-posizione-ue/579170/",
+          "date": "2026-07-06T14:24:02+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Trump attacca Meloni, Minzolini: \"La cosa migliore è mantenere una distanza istituzionale\"",
+          "source": "LA7",
+          "url": "https://www.la7.it/laria-che-tira/video/trump-attacca-meloni-minzolini-la-cosa-migliore-e-mantenere-una-distanza-istituzionale-06-07-2026-651267",
+          "date": "2026-07-06T14:18:45+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Trump Escalates Feud With Italy’s Meloni With Deranged Post",
+          "source": "Yahoo",
+          "url": "https://www.yahoo.com/news/politics/articles/trump-escalates-feud-italy-meloni-140501560.html",
+          "date": "2026-07-06T14:05:01+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Perché Trump attacca ancora Meloni: la strategia delle polemiche per dominare il dibattito",
+          "source": "il Giornale",
+          "url": "https://www.ilgiornale.it/news/politica-estera/perch-trump-attacca-ancora-meloni-strategia-delle-polemiche-2689678.html",
+          "date": "2026-07-06T14:00:09+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Italy Responds to Trump's Latest Attack on Meloni",
+          "source": "UA.NEWS",
+          "url": "https://ua.news/en/world/v-italiyi-vidpovili-na-novii-vipad-trampa-proti-meloni",
+          "date": "2026-07-06T13:54:27+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "'People come and go but relationships remain': Italy minister plays down Trump's Meloni jibe",
+          "source": "The Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/europe/people-come-and-go-but-relationships-remain-italy-minister-plays-down-trumps-meloni-jibe/articleshow/132217496.cms",
+          "date": "2026-07-06T13:31:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Cos'è il «restraining order», la misura citata da Trump contro Meloni: negli Usa tutela le vittime di stalking e molestie",
+          "source": "Open",
+          "url": "https://www.open.online/2026/07/06/ordine-restrittivo-trump-meloni-cosa-e-stalking-usa/",
+          "date": "2026-07-06T13:25:39+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "'Restraining Order Needed': Italy reacts to Trump's latest Meloni jibe",
+          "source": "The Local Italy",
+          "url": "https://www.thelocal.it/20260706/restraining-order-needed-italy-reacts-to-trumps-meloni-jibe",
+          "date": "2026-07-06T13:04:03+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Balogun Suspension Lifted, Trump-Meloni Feud, Khamenei Funerals In Tehran: The Bulletin, July 6",
+          "source": "Newsweek",
+          "url": "https://www.newsweek.com/videos/balogun-red-card-lifted-trump-meloni-feud-khamenei-funerals-in-tehran-the-bulletin-july-6",
+          "date": "2026-07-06T13:02:19+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Magyar Péter a Fidesz-KDNP kezdeményezéséről: még Isztambulban is nevettek",
+          "source": "Infostart",
+          "url": "https://infostart.hu/belfold/2026/07/06/magyar-peter-a-fidesz-kdnp-kezdemenyezeserol-meg-isztambulban-is-nevettek",
+          "date": "2026-07-06T12:50:00+00:00",
+          "category": "hungary"
+        },
         {
           "title": "Trump attacca Meloni: 'Serve ordine restrittivo'. Tajani: 'Parole che si commentano da sole'",
           "source": "ANSA",
           "url": "https://www.ansa.it/sito/notizie/mondo/nordamerica/2026/07/06/trump-attacca-meloni-serve-ordine-restrittivo.-tajani-parole-che-si-commentano_5c7d2e10-a87e-4318-a0cb-3fec90a74812.html",
           "date": "2026-07-06T12:20:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Trump renews feud with Italian PM Meloni through social media post",
+          "source": "The Independent",
+          "url": "https://www.independent.co.uk/bulletin/news/trump-giorgia-meloni-truth-social-feud-b3009724.html",
+          "date": "2026-07-06T12:16:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Trump suggests Giorgia Meloni is stalking him as right-wing feud escalates",
+          "source": "The Independent",
+          "url": "https://www.independent.co.uk/news/world/americas/us-politics/trump-giorgia-meloni-truth-social-feud-row-b3009534.html",
+          "date": "2026-07-06T12:07:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Nuovo attacco di Trump a Meloni: posta una foto \"meme\" con la premier e scrive: \"Serve un ordine restrittivo\"",
+          "source": "Tgcom24",
+          "url": "https://www.tgcom24.mediaset.it/mondo/trump-pubblica-foto-meme-con-meloni-serve-ordine-restrittivo-_114060376-202602k.shtml",
+          "date": "2026-07-06T12:03:57+00:00",
           "category": "italy"
         },
         {
@@ -130,11 +1306,74 @@
           "category": "italy"
         },
         {
-          "title": "Ukraine: AfD-Influencer Noah Krieger zieht wohl für Putin in den Krieg - T-Online",
-          "source": "",
-          "url": "https://www.t-online.de/nachrichten/deutschland/parteien/id_101330222/ukraine-afd-influencer-noah-krieger-zieht-wohl-fuer-putin-in-den-krieg.html",
-          "date": "2026-07-06T11:49:42+00:00",
-          "category": "germany"
+          "title": "Tajani: “Le dichiarazioni di Trump si commentano da sole”. Schlein: “Ora Meloni scelga l’Europa”",
+          "source": "La Stampa",
+          "url": "https://www.lastampa.it/politica/2026/07/06/news/trump_dichiarazioni_tajani_schlein-15682183/",
+          "date": "2026-07-06T11:56:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Trump Doubles Down on Meloni Feud With 'Restraining Order' Photo",
+          "source": "Yahoo",
+          "url": "https://www.yahoo.com/news/politics/articles/trump-doubles-down-meloni-feud-113505932.html",
+          "date": "2026-07-06T11:35:05+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Trump: ordine restrittivo per Giorgia Meloni, intervista a Filippo Sensi (6.07.2026)",
+          "source": "Radio Radicale",
+          "url": "https://www.radioradicale.it/scheda/793970/trump-ordine-restrittivo-per-giorgia-meloni-intervista-a-filippo-sensi",
+          "date": "2026-07-06T11:30:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Trump renews attack on Meloni",
+          "source": "Brussels Signal",
+          "url": "https://brusselssignal.eu/2026/07/trump-renews-attack-on-meloni/",
+          "date": "2026-07-06T11:27:28+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Trump Reignites Meloni Feud With ‘Restraining Order’ Post Ahead Of NATO Summit",
+          "source": "Forbes",
+          "url": "https://www.forbes.com/sites/siladityaray/2026/07/06/trump-reignites-feud-with-meloni-with-restraining-order-post-ahead-of-nato-summit/",
+          "date": "2026-07-06T11:23:26+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Trump Reignites Feud With Meloni With ‘Restraining Order’ Post Ahead Of NATO Summit",
+          "source": "Yahoo",
+          "url": "https://www.yahoo.com/news/politics/articles/trump-reignites-feud-meloni-restraining-112326755.html",
+          "date": "2026-07-06T11:23:26+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Trump attacca di nuovo Meloni alla vigilia del vertice di Ankara e insiste su aumento spese militari",
+          "source": "RaiNews",
+          "url": "https://www.rainews.it/video/2026/07/trump-torna-ad-attaccare-meloni-alla-vigilia-del-vertice-di-ankara-e-insiste-su-aumento-spese-militari-0112bda8-928b-4852-96b0-7d090a10974a.html",
+          "date": "2026-07-06T11:19:02+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Donald Trump ancora contro Giorgia Meloni, lo psicologo e l’effetto meme",
+          "source": "lapresse.it",
+          "url": "https://www.lapresse.it/salute/2026/07/06/donald-trump-ancora-contro-giorgia-meloni-lo-psicologo-e-leffetto-meme/",
+          "date": "2026-07-06T10:43:33+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Meloni vs Trump, dall'idillio allo strappo",
+          "source": "Sky TG24",
+          "url": "https://tg24.sky.it/politica/video/2026/07/06/meloni-vs-trump-dallidillio-allo-strappo-1109975",
+          "date": "2026-07-06T10:39:42+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Che cos'è l'ordine restrittivo citato nel post di Trump contro Meloni: si applica negli Usa nei casi di molestie e stalking",
+          "source": "Corriere della Sera",
+          "url": "https://www.corriere.it/esteri/26_luglio_06/che-cos-e-l-ordine-restrittivo-citato-nel-post-di-trump-contro-meloni-si-applica-negli-usa-nei-casi-di-molestie-e-stalking-3ce70155-4cf8-418b-80f2-af9725ecaxlk.shtml",
+          "date": "2026-07-06T10:26:25+00:00",
+          "category": "italy"
         },
         {
           "title": "Tajani: «Parole Trump si commentano da sole». Crosetto: «Le persone passano ma con gli Usa i rapporti devono restare»",
@@ -144,17 +1383,73 @@
           "category": "italy"
         },
         {
-          "title": "Agorà Estate 2026 - Trump, nuovo attacco a Meloni: \"Serve un ordine restrittivo\" - 06/07/2026 - Video",
-          "source": "RaiPlay",
-          "url": "https://www.raiplay.it/video/2026/07/Trump-nuovo-attacco-a-Meloni-Serve-un-ordine-restrittivo---Agora-Estate-06072026-59981148-3cb0-4c68-958d-4d50454de12b.html",
-          "date": "2026-07-06T09:16:42+00:00",
+          "title": "Trump posta meme con Meloni, 'serve un ordine restrittivo'. Crosetto: 'Le persone passano, ma con gli Usa i rapporti devono restare'",
+          "source": "ANSA",
+          "url": "https://www.ansa.it/sito/notizie/mondo/nordamerica/2026/07/06/trump-posta-meme-con-meloni-serve-un-ordine-restrittivo.-crosetto-le-persone_5c7d2e10-a87e-4318-a0cb-3fec90a74812.html",
+          "date": "2026-07-06T09:50:00+00:00",
           "category": "italy"
         },
         {
-          "title": "Trump launches fresh attack on Meloni; Crosetto: ‘People come and go, but relations with the US must endure’",
-          "source": "Il Sole 24 ORE",
-          "url": "https://en.ilsole24ore.com/art/new-attack-trump-meloni-crosetto-people-come-and-go-but-us-relations-must-endure-AJhxyL",
-          "date": "2026-07-06T08:45:02+00:00",
+          "title": "Meme di Trump contro Meloni, Renzi: “Frasi infami”. Schlein: “Inaccettabili”. I ministri minimizzano",
+          "source": "la Repubblica",
+          "url": "https://www.repubblica.it/politica/2026/07/06/news/meme_trump_contro_meloni_reazioni_politica_renzi_schlein_crosetto-425454161/",
+          "date": "2026-07-06T09:32:16+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Trump renews attacks on Meloni with ‘restraining order needed’ post",
+          "source": "Financial Times",
+          "url": "https://www.ft.com/content/558dfb9e-5541-48b6-bc86-1e1ca0d31c1d?syn-25a6b1a6=1",
+          "date": "2026-07-06T09:29:15+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Live In, Renzi: \"Tra Trump e Meloni io sto con la premier\"",
+          "source": "Sky TG24",
+          "url": "https://tg24.sky.it/politica/video/2026/07/06/live-in-renzi-tra-trump-e-meloni-io-sto-con-la-premier-1109938",
+          "date": "2026-07-06T09:25:57+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Live In Milano, Schlein: \"Inaccettabili attacchi Trump a Meloni\"",
+          "source": "Sky TG24",
+          "url": "https://tg24.sky.it/politica/video/2026/07/06/elly-schlein-trump-meloni-live-in-1109936",
+          "date": "2026-07-06T09:17:08+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Trump Reignites Feud With Italy’s Meloni: ‘Restraining Order Needed’",
+          "source": "Newsweek",
+          "url": "https://www.newsweek.com/trump-reignites-feud-italy-meloni-restraining-order-12160062",
+          "date": "2026-07-06T09:11:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Live In, Renzi: \"Se sinistra divisa, Meloni prende Colle\"",
+          "source": "Sky TG24",
+          "url": "https://tg24.sky.it/politica/video/2026/07/06/matteo-renzi-giorgia-meloni-quirinale-live-in-1109932",
+          "date": "2026-07-06T09:04:42+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Trump renews feud with Italy PM Giorgia Meloni by suggesting she’s stalking him in latest social media post",
+          "source": "Yahoo",
+          "url": "https://www.yahoo.com/news/politics/articles/trump-renews-feud-italy-pm-090411896.html",
+          "date": "2026-07-06T09:04:11+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Non reagire, ma non fidarsi più. Il gelo di Meloni spiazzata dal meme di Trump",
+          "source": "la Repubblica",
+          "url": "https://www.repubblica.it/politica/2026/07/06/news/meloni_trump_ordine_restrittivo_meme_fotomontaggio-425453942/",
+          "date": "2026-07-06T07:53:52+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Live In Milano, Sala: \"Meloni fa bene a ignorare Trump\"",
+          "source": "Sky TG24",
+          "url": "https://tg24.sky.it/politica/video/2026/07/06/live-in-milano-giuseppe-sala-1109909",
+          "date": "2026-07-06T07:45:38+00:00",
           "category": "italy"
         },
         {
@@ -165,10 +1460,73 @@
           "category": "italy"
         },
         {
+          "title": "Donald Trump attacca di nuovo Giorgia Meloni: «Serve un ordine restrittivo»",
+          "source": "Corriere del Ticino",
+          "url": "https://www.cdt.ch/news/mondo/donald-trump-attacca-di-nuovo-giorgia-meloni-serve-un-ordine-restrittivo-433115",
+          "date": "2026-07-06T07:03:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Vertice Nato Ankara, alla vigilia nuovo attacco di Trump contro Meloni",
+          "source": "Sky TG24",
+          "url": "https://tg24.sky.it/mondo/2026/07/06/trump-meloni-vertice-nato-ankara",
+          "date": "2026-07-06T07:02:29+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Il nuovo insensato attacco di Trump a Giorgia Meloni",
+          "source": "Avvenire",
+          "url": "https://www.avvenire.it/politica/il-nuovo-insensato-attacco-di-trump-a-giorgia-meloni_110583",
+          "date": "2026-07-06T06:22:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Sui social Trump se la prende ancora con Meloni",
+          "source": "Il Foglio",
+          "url": "https://www.ilfoglio.it/politica/2026/07/06/news/sui-social-trump-se-la-prende-ancora-con-meloni--401672",
+          "date": "2026-07-06T06:22:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Trump pubblica foto di Meloni con la scritta: «Serve un’ordinanza restrittiva»",
+          "source": "Il Sole 24 ORE",
+          "url": "https://www.ilsole24ore.com/art/trump-posta-meme-meloni-serve-un-ordinanza-restrittiva-AJV6rC",
+          "date": "2026-07-06T06:00:00+00:00",
+          "category": "italy"
+        },
+        {
           "title": "Nuovo attacco di Trump a Meloni: posta un meme con la frase «serve un ordine restrittivo»",
           "source": "Domani",
           "url": "https://www.editorialedomani.it/politica/mondo/nuovo-attacco-trump-meloni-meme-frase-serve-ordine-restrittivo-vertice-nato-ankara-smdcez2s",
           "date": "2026-07-06T05:58:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Trump su Meloni, \"serve un ordine restrittivo\" è la nuova provocazione ma Palazzo Chigi sceglie di non reagire",
+          "source": "Virgilio",
+          "url": "https://www.virgilio.it/notizie/trump-su-meloni-serve-un-ordine-restrittivo-e-la-nuova-provocazione-ma-palazzo-chigi-sceglie-di-non-reagire-1766956",
+          "date": "2026-07-06T05:55:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Trump attacca Meloni su Truth: \"Serve un ordine restrittivo\"",
+          "source": "Euronews",
+          "url": "https://it.euronews.com/my-europe/2026/07/06/trump-attacca-meloni-prima-del-vertice-nato-ad-ankara-serve-un-ordine-restrittivo",
+          "date": "2026-07-06T05:37:18+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Trump attacca ancora Meloni su Truth: 'Serve un ordine restrittivo'. Palazzo Chigi: 'Non reagiremo a questa provocazione'",
+          "source": "TGLA7",
+          "url": "https://tg.la7.it/esteri/trump-attacca-meloni-truth-ordine-restrittivo-palazzo-chigi-provocazione-06-07-2026-259404",
+          "date": "2026-07-06T05:12:34+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Secondo Trump serve un “divieto di avvicinamento” per Meloni",
+          "source": "Il Post",
+          "url": "https://www.ilpost.it/flashes/trump-meloni-divieto-avvicinamento/",
+          "date": "2026-07-06T05:07:21+00:00",
           "category": "italy"
         },
         {
@@ -179,40 +1537,306 @@
           "category": "italy"
         },
         {
+          "title": "'Restraining order needed': Trump reignites feud with Meloni after G7 picture row | World News",
+          "source": "Hindustan Times",
+          "url": "https://www.hindustantimes.com/world-news/restraining-order-needed-donald-trump-reignites-feud-with-giorgia-meloni-after-g7-summit-picture-row-101783309379355.html",
+          "date": "2026-07-06T04:08:52+00:00",
+          "category": "italy"
+        },
+        {
           "title": "Perché Trump ha insultato di nuovo Giorgia Meloni, la Nato come bancomat Usa e l'ultimo attacco prima del vertice. La reazione del governo",
           "source": "Open",
           "url": "https://www.open.online/2026/07/06/trump-vs-meloni-meme-vertice-nato-strategia/",
           "date": "2026-07-06T04:01:45+00:00",
           "category": "italy"
+        },
+        {
+          "title": "Trump reignites feud with Giorgia Meloni with meme calling for restraining order against Italian PM",
+          "source": "news.meaww.com",
+          "url": "https://news.meaww.com/trump-reignites-feud-with-giorgia-meloni-with-meme-calling-for-restraining-order-against-italian-pm",
+          "date": "2026-07-06T03:06:17+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "'Restraining order needed': Donald Trump shares meme on his feud with Italy PM Meloni ahead of Nato summit",
+          "source": "inkl",
+          "url": "https://www.inkl.com/glance/news/restraining-order-needed-donald-trump-shares-meme-on-his-feud-with-italy-pm-meloni-ahead-of-nato-summit",
+          "date": "2026-07-06T02:47:40+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "'Restraining order needed': Donald Trump shares meme on his feud with Italy PM Meloni ahead of Nato summi",
+          "source": "The Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/us/restraining-order-needed-donald-trump-shares-meme-on-his-feud-with-italy-pm-meloni-ahead-of-nato-summit/articleshow/132205589.cms",
+          "date": "2026-07-06T02:21:00+00:00",
+          "category": "usa"
         }
       ],
       "first_seen": "2026-07-06T04:52:02+00:00",
-      "last_seen": "2026-07-06T16:00:39+00:00"
+      "last_seen": "2026-07-07T04:33:30+00:00"
     },
     {
       "id": "afd-party-congress-protests",
       "title": "AfD party congress protests",
-      "blurb": "Germany's far-right AfD held its party congress in Erfurt amid massive protests, with tens of thousands demonstrating against the party. The event saw violent clashes, attacks on journalists, and a reaffirmation of the AfD's ambition to govern, despite internal power struggles.",
-      "affect": "The protests and the AfD's radicalization command high affective investment due to fears of far-right governance in Germany and the erosion of democratic norms.",
+      "blurb": "Germany's far-right Alternative für Deutschland (AfD) held its party congress in Erfurt amid massive protests, with tens of thousands demonstrating against the party's policies. The event saw clashes, attacks on journalists, and a strong police presence, reflecting deep societal divisions over the AfD's rise.",
+      "affect": "The protests and counter-protests, along with the AfD's internal power struggles, create a charged atmosphere of societal polarization and moral panic over the far-right's growing influence in German politics.",
       "intensity": 5,
       "affect_signals": [
-        "alarmist framing",
         "polarized contention",
-        "moral panic register",
+        "alarmist framing",
         "cross-source repetition",
-        "outrage-coded language"
+        "outrage-coded language",
+        "moral panic register"
       ],
       "categories": [
-        "de_alternative_fur_deutschland"
+        "🇩🇪 Alternative für Deutschland"
       ],
-      "article_count": 90,
+      "article_count": 80,
       "refs": [
+        {
+          "title": "Missbrauchsprozess wird von AfD instrumentalisiert",
+          "source": "WDR",
+          "url": "https://www1.wdr.de/mediathek/video/sendungen/lokalzeit-ruhr/missbrauchsprozess-wird-von-afd-instrumentalisiert-100.amp",
+          "date": "2026-07-06T18:17:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Landtagswahlen 2026: Und so taumelt das Land auf die größte politische Krise zu",
+          "source": "DIE ZEIT",
+          "url": "https://www.zeit.de/feuilleton/2026-06/landtagswahlen-sachsen-anhalt-mecklenburg-vorpommern-afd-reform-demokratie",
+          "date": "2026-07-06T18:16:36+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Protest darf nicht zur Blockade werden",
+          "source": "FAZ",
+          "url": "https://www.faz.net/premium/einspruch/exklusiv/protest-darf-nicht-zur-blockade-werden-201003858.html",
+          "date": "2026-07-06T16:31:14+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Germany divided: thousands protest as far-right AfD strengthens leadership",
+          "source": "EUalive",
+          "url": "https://eualive.net/germany-divided-thousands-protest-as-far-right-afd-strengthens-leadership/",
+          "date": "2026-07-06T16:31:10+00:00",
+          "category": "general"
+        },
+        {
+          "title": "„Menschenverachtendes Gedankengut“: Aigner warnt vor der AfD (und vor „unsozialen Medien“)",
+          "source": "News4teachers",
+          "url": "https://www.news4teachers.de/2026/07/menschenverachtendes-gedankengut-aigner-warnt-vor-der-afd-und-vor-unsozialen-medien/",
+          "date": "2026-07-06T16:13:03+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "ARD-Moderatorin kritisiert AfD – doch ihr Vorwurf wirft Fragen auf",
+          "source": "DerWesten",
+          "url": "https://www.derwesten.de/politik/afd-landesparteitag-anja-kohl-appell-angriffe-journalisten-id302096993.html",
+          "date": "2026-07-06T16:03:52+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "AfD-Bundesparteitag 2026: Ein Sieg für den faschistischen Flügel",
+          "source": "Perspektive Online",
+          "url": "https://perspektive-online.net/2026/07/afd-bundesparteitag-2026-ein-sieg-fuer-den-faschistischen-fluegel/",
+          "date": "2026-07-06T16:00:50+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "AfD Göttingen: Warum die Fraktion dem Landkreis fast 20.000 Euro schuldet",
+          "source": "Harzkurier",
+          "url": "https://www.harzkurier.de/harzkurier/article412469655/afd-goettingen-warum-die-fraktion-dem-landkreis-fast-20000-euro-schuldet.html",
+          "date": "2026-07-06T16:00:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Mocne słowa o PiS i Braunie. Ekspertka wprost o cynicznej grze",
+          "source": "Fakt",
+          "url": "https://www.fakt.pl/polityka/pis-walczy-o-wyborcow-brauna-ekspertka-mowi-o-cynizmie/61vgxj9",
+          "date": "2026-07-06T15:59:00+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Nur \"ein bisschen holprig\"?: Weidel hält sich für \"liberaler\", doch Abwertung ist das Kerngeschäft der AfD - n-tv.de - n-tv.de",
+          "source": "",
+          "url": "https://www.n-tv.de/politik/politik_kommentare/Weidel-haelt-sich-fuer-liberaler-doch-Abwertung-ist-das-Kerngeschaeft-der-AfD-id31052082.html",
+          "date": "2026-07-06T15:35:13+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Schroeder zur \"Machtarchitektur\": Mit neuem AfD-Vorstand \"hängt weitere Botschaft zusammen\" - n-tv.de",
+          "source": "",
+          "url": "https://www.n-tv.de/mediathek/videos/politik/Mit-neuem-AfD-Vorstand-haengt-weitere-Botschaft-zusammen-id31052835.html",
+          "date": "2026-07-06T15:34:56+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Afra Blanco analiza el acuerdo de PP-Vox en Andalucía: \"El PP no es un partido moderado\"",
+          "source": "atresplayer",
+          "url": "https://www.atresplayer.com/lasexta/programas/al-rojo-vivo/clips/afra-blanco-analiza-el-acuerdo-de-pp-vox-en-andalucia-el-pp-no-es-un-partido-moderado_6a4bc514f557e30007873a96/",
+          "date": "2026-07-06T15:33:05+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Partei-Chefin muss Kröte schlucken: Warum Weidel gestärkt aus dem AfD-Parteitag hervorgeht - n-tv.de",
+          "source": "",
+          "url": "https://www.n-tv.de/mediathek/videos/politik/Warum-Weidel-gestaerkt-aus-dem-AfD-Parteitag-hervorgeht-id31053057.html",
+          "date": "2026-07-06T15:04:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Chrupalla mit 70 Prozent abgestraft „Der Parteitag hatte etwas von einem Anfang vom Ende für ihn“",
+          "source": "Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/politik/chrupalla-mit-70-prozent-abgestraft-der-parteitag-hatte-etwas-von-einem-anfang-vom-ende-fur-ihn-15807660.html",
+          "date": "2026-07-06T15:03:05+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "AfD-Bundes·partei·tag: Weidel und Chrupalla bleiben Partei·chefs",
+          "source": "SWR",
+          "url": "https://www.swr.de/barrierefrei/leichte-sprache/nachrichten/afd-bundesparteitag-erfurt-weidel-chrupalla-100.html",
+          "date": "2026-07-06T14:09:49+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Angriffe auf Reporter: Pressefreiheit gilt auch für rechte Medien",
+          "source": "ZDFheute",
+          "url": "https://www.zdfheute.de/politik/deutschland/afd-parteitag-angriff-journalist-apollo-news-junge-freiheit-100.html",
+          "date": "2026-07-06T14:06:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "AfD: Alice Weidel weiß, wo sie milde und wo sie hart sein muss",
+          "source": "SZ.de",
+          "url": "https://www.sueddeutsche.de/meinung/afd-bundesparteitag-erfurt-weidel-fuehrung-li.3511084",
+          "date": "2026-07-06T13:59:51+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "„Beim Thema Antifa und Linksextremismus wird gerne mal ein Auge zugedrückt“",
+          "source": "WELT",
+          "url": "https://www.welt.de/videos/video6a4bac427edf43f08dbcfc09/afd-parteitag-in-erfurt-beim-thema-antifa-und-linksextremismus-wird-gerne-mal-ein-auge-zugedrueckt.html",
+          "date": "2026-07-06T13:56:28+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Proteste gegen die AfD – Feindbildproduktion: Wagenknecht hetzt gegen Antifa - nd-aktuell.de",
+          "source": "",
+          "url": "https://www.nd-aktuell.de/artikel/1200908.proteste-gegen-die-afd-feindbildproduktion-wagenknecht-hetzt-gegen-antifa.html",
+          "date": "2026-07-06T13:37:03+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Dunja Hayalis ZDF-Interview mit Alice Weidel: Warum „Framing“ zum Vorwurf wird",
+          "source": "SZ.de",
+          "url": "https://www.sueddeutsche.de/medien/alice-weidel-dunja-hayali-zdf-interview-framing-li.3511107",
+          "date": "2026-07-06T13:35:44+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Erfurt: Linke verurteilt Attacken auf Journalisten bei Anti-AfD-Protest",
+          "source": "WELT",
+          "url": "https://www.welt.de/politik/deutschland/article6a4b9ed5bfe786e9bb64ce1e/erfurt-linke-verurteilt-attacken-auf-journalisten-bei-anti-afd-protest.html",
+          "date": "2026-07-06T13:35:03+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Bundestags-Vize Ramelow: So sollten Kirchen mit AfD-Anhängern umgehen - Kirche-und-Leben.de",
+          "source": "",
+          "url": "https://www.kirche-und-leben.de/artikel/bodo-ramelow-bundestag-vizepraesident-kirchen-afd-anhaenger-dialog-gespraech-bundesparteitag-erfurt-evangelisch",
+          "date": "2026-07-06T13:34:56+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "La Coalición Cívica rechaza la reforma política del Gobierno: “Busca una ley de lemas encubierta\"",
+          "source": "Agencia Noticias Argentinas",
+          "url": "https://noticiasargentinas.com/politica/la-coalicion-civica-rechaza-la-reforma-politica-del-gobierno---busca-una-ley-de-lemas-encubierta-_a6a4ba530d35c29fedf18e049",
+          "date": "2026-07-06T13:30:47+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Wie Walter Ulbricht schon sagte: Höcke und Chrupalla streiten über die echten Deutschen",
+          "source": "Berliner Zeitung",
+          "url": "https://www.berliner-zeitung.de/article/tino-chrupalla-bjoern-hoecke-afd-parteitag-erfurt-10169302",
+          "date": "2026-07-06T13:12:50+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Einen Parteitag der AfD zu blockieren reicht nicht",
+          "source": "der Freitag",
+          "url": "https://www.freitag.de/autoren/alina-saha/einen-parteitag-der-afd-zu-blockieren-reicht-nicht",
+          "date": "2026-07-06T13:12:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "AfD-Parteitag – Ein Signal der Hoffnung aus Erfurt - nd-aktuell.de",
+          "source": "",
+          "url": "https://www.nd-aktuell.de/artikel/1200890.afd-parteitag-ein-signal-der-hoffnung-aus-erfurt.html",
+          "date": "2026-07-06T12:54:59+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Antifaschistische Blockaden – Ein Signal der Hoffnung aus Erfurt - nd-aktuell.de",
+          "source": "",
+          "url": "https://www.nd-aktuell.de/artikel/1200890.antifaschistische-blockaden-ein-signal-der-hoffnung-aus-erfurt.html",
+          "date": "2026-07-06T12:53:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "„Kollaboration mit Russland ist offensichtlich“ Sicherheitspolitiker fordern konkrete Vorkehrungen für möglichen AfD-Wahlsieg",
+          "source": "Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/politik/kollaboration-mit-russland-ist-offensichtlich-sicherheitspolitiker-fordern-konkrete-vorkehrungen-fur-moglichen-afd-wahlsieg-15804395.html",
+          "date": "2026-07-06T12:50:19+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "„Imperial March“ gegen AfD: Clueso und Bosse rocken Erfurt",
+          "source": "rollingstone.de",
+          "url": "https://www.rollingstone.de/imperial-march-gegen-afd-clueso-und-bosse-rocken-erfurt-3165199/",
+          "date": "2026-07-06T12:45:10+00:00",
+          "category": "germany"
+        },
         {
           "title": "Anti-AfD-Proteste: Der Begriff „Faschist“ wird zum Freibrief, alle Grenzen zu überschreiten",
           "source": "WELT",
           "url": "https://www.welt.de/debatte/plus6a4b4eb0d38ff307b9185677/anti-afd-proteste-der-begriff-faschist-wird-zum-freibrief-alle-grenzen-zu-ueberschreiten.html",
           "date": "2026-07-06T12:27:31+00:00",
           "category": "germany"
+        },
+        {
+          "title": "Linke verurteilt Angriffe auf Reporter bei Anti-AfD-Protest",
+          "source": "WELT",
+          "url": "https://www.welt.de/regionales/thueringen/article6a4b9e4d7edf43f08dbcfa94/linke-verurteilt-angriffe-auf-reporter-bei-anti-afd-protest.html",
+          "date": "2026-07-06T12:26:22+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Am Rande des Parteitags: Linke verurteilt Angriffe auf Reporter bei Anti-AfD-Protest",
+          "source": "DIE ZEIT",
+          "url": "https://www.zeit.de/news/2026-07/06/linke-verurteilt-angriffe-auf-reporter-bei-anti-afd-protest",
+          "date": "2026-07-06T12:22:05+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Wenn eine AfD-Länderregierung sich verweigert - was kann der Bund tun?",
+          "source": "tagesschau.de",
+          "url": "https://www.tagesschau.de/multimedia/audio/audio-3341652.html",
+          "date": "2026-07-06T12:06:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Török Gábor szerint van más Tisza is a parlamentben",
+          "source": "Portfolio.hu",
+          "url": "https://www.portfolio.hu/gazdasag/20260706/torok-gabor-szerint-van-mas-tisza-is-a-parlamentben-847844",
+          "date": "2026-07-06T12:05:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Trump administration initiates Section 232 investigation of anthracite coal imports",
+          "source": "White & Case LLP",
+          "url": "https://www.whitecase.com/insight-alert/trump-administration-initiates-section-232-investigation-anthracite-coal-imports",
+          "date": "2026-07-06T12:00:00+00:00",
+          "category": "usa"
         },
         {
           "title": "Proteste gegen die AfD in Erfurt: Aufforderung zum Rechtsbruch",
@@ -222,11 +1846,88 @@
           "category": "germany"
         },
         {
-          "title": "‘Time to put our fatherland back on its feet’: Germany’s far-right AfD sets sight on power",
-          "source": "The Irish Times",
-          "url": "https://www.irishtimes.com/world/europe/2026/07/06/time-to-put-our-fatherland-back-on-its-feet-germanys-far-right-afd-sets-sight-on-power/",
-          "date": "2026-07-06T11:22:08+00:00",
+          "title": "Ukraine: AfD-Influencer Noah Krieger zieht wohl für Putin in den Krieg - T-Online",
+          "source": "",
+          "url": "https://www.t-online.de/nachrichten/deutschland/parteien/id_101330222/ukraine-afd-influencer-noah-krieger-zieht-wohl-fuer-putin-in-den-krieg.html",
+          "date": "2026-07-06T11:49:42+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Polizeieinsatz Erfurt: Voigt bescheinigt Polizei umsichtiges Agieren in Erfurt",
+          "source": "DIE ZEIT",
+          "url": "https://www.zeit.de/news/2026-07/06/innenminister-lobt-polizei-nach-afd-parteitag-in-erfurt",
+          "date": "2026-07-06T11:35:23+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "A Fidesz utcára megy Magyar Péter miatt",
+          "source": "Mfor.hu",
+          "url": "https://mfor.hu/cikkek/kozelet/fidesz-utcara-megy-magyar-peter-miatt.html",
+          "date": "2026-07-06T11:27:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Montero carga contra el acuerdo PP-Vox de Andalucía",
+          "source": "SER Comunicación",
+          "url": "https://www.sercomunicacion.com/maria-jesus-montero-acuerdo-andalucia-pp-vox-entrevista/",
+          "date": "2026-07-06T11:15:53+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "AfD-Parteitag: Es ist vorbei, bye, bye, Antifa!",
+          "source": "WELT",
+          "url": "https://www.welt.de/debatte/plus6a4b4f0cad32e994f875cf7b/afd-parteitag-es-ist-vorbei-bye-bye-antifa.html",
+          "date": "2026-07-06T11:05:56+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "AfD hat den Ernst der Klima-Lage wohl noch nicht kapiert",
+          "source": "Echo Online",
+          "url": "https://www.echo-online.de/lokales/kreis-gross-gerau/landkreis-gross-gerau/afd-hat-den-ernst-der-klima-lage-wohl-noch-nicht-kapiert-5847778",
+          "date": "2026-07-06T11:00:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "A timeline of Marine Le Pen's political career and the rise of the French far right - ABC News",
+          "source": "Breaking News, Latest News and Videos",
+          "url": "https://abcnews.com/International/wireStory/timeline-marine-le-pens-political-career-rise-french-134510615",
+          "date": "2026-07-06T10:59:38+00:00",
           "category": "general"
+        },
+        {
+          "title": "Sachsen-Anhalt: LRK fordert Autonomie, Freiheit und demokratische Strukturen",
+          "source": "Forschung & Lehre",
+          "url": "https://www.forschung-und-lehre.de/management/lrk-fordert-autonomie-freiheit-und-demokratische-strukturen-7779",
+          "date": "2026-07-06T10:52:35+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "El PP se desmarca de Vox con el voto exterior, pero espera que la \"ley de nietos\" se declare \"ilegal\"",
+          "source": "La Razón",
+          "url": "https://www.larazon.es/espana/desmarca-vox-voto-exterior-pero-espera-que-ley-nietos-declare-ilegal_202607066a4b88a8a8768a6aee430116.html",
+          "date": "2026-07-06T10:51:20+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Baden-Württemberg: Finanzskandal bei AfD - Vorwürfe gegen Landesvorstand - n-tv.de - n-tv.de",
+          "source": "",
+          "url": "https://www.n-tv.de/regionales/baden-wuerttemberg/Finanzskandal-bei-AfD-Vorwuerfe-gegen-Landesvorstand-id31052895.html",
+          "date": "2026-07-06T10:30:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "AfD-Parteitag in Erfurt: Kubicki fordert Überprüfung der NGO-Förderung – und klare Distanzierung von Gewalt",
+          "source": "WELT",
+          "url": "https://www.welt.de/politik/deutschland/article6a4b67057bfb3e5e95d171c0/afd-parteitag-in-erfurt-kubicki-fordert-ueberpruefung-der-ngo-foerderung-und-klare-distanzierung-von-gewalt.html",
+          "date": "2026-07-06T10:23:14+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "New UK election funding rules could impact Reform’s Tether billionaire donors",
+          "source": "Crypto Briefing",
+          "url": "https://cryptobriefing.com/uk-election-funding-reform-tether-donors/",
+          "date": "2026-07-06T10:06:49+00:00",
+          "category": "uk"
         },
         {
           "title": "AfD-Parteitag in Erfurt: Proteste und Höckes Machtgewinn",
@@ -236,74 +1937,445 @@
           "category": "germany"
         },
         {
-          "title": "Zehntausende bei Protest gegen AfD in Erfurt: Das Wochenende in Bildern",
-          "source": "MDR.de",
-          "url": "https://www.mdr.de/nachrichten/thueringen/mitte-thueringen/erfurt/bilder-widersetzen,afd-parteitag-protest-demo-messe-100.html",
-          "date": "2026-07-06T08:05:00+00:00",
+          "title": "Umstrittener Podcaster Ben Berndt fordert „Jobgarantie” für AfD-nahe Journalisten",
+          "source": "FOCUS online",
+          "url": "https://www.focus.de/politik/deutschland/umstrittener-podcaster-ben-berndt-fordert-jobgarantie-fuer-afd-nahe-journalisten_32e572cb-133e-473a-8357-8442f8960f56.html",
+          "date": "2026-07-06T09:43:00+00:00",
           "category": "germany"
         },
         {
-          "title": "Erfurt: Nach gescheiterter Blockade von AfD-Parteitag – Aktivisten drohen jetzt CDU und BSW",
+          "title": "Nach dem AfD-Bundesparteitag: Wohin steuert die Partei?",
+          "source": "WDR",
+          "url": "https://www1.wdr.de/radio/wdr5/sendungen/tagesgespraech/afd-bundesparteitag-erfurt-fazit-100.html",
+          "date": "2026-07-06T09:27:06+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Right, right, far right: Alice Weidel, AfD's woman for victory",
+          "source": "vreme.com",
+          "url": "https://vreme.com/en/svet/nemacka-krajnja-desnica-afd/",
+          "date": "2026-07-06T09:11:07+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "„Bei linksextremen Gewalttaten sind die Zahlen nochmal nach oben geschnellt“",
           "source": "WELT",
-          "url": "https://www.welt.de/politik/deutschland/article6a4b36edad32e994f875ce19/erfurt-nach-gescheiterter-blockade-von-afd-parteitag-aktivisten-drohen-jetzt-cdu-und-bsw.html",
-          "date": "2026-07-06T06:04:44+00:00",
+          "url": "https://www.welt.de/videos/video6a4b6bc10b14ed961bb538bb/anti-afd-proteste-bei-linksextremen-gewalttaten-sind-die-zahlen-nochmal-nach-oben-geschnellt.html",
+          "date": "2026-07-06T09:02:36+00:00",
           "category": "germany"
         },
         {
-          "title": "German far-right rally sparks anger",
-          "source": "China Daily",
-          "url": "https://www.chinadaily.com.cn/a/202607/06/WS6a4b05b1a310986e2b463a92.html",
-          "date": "2026-07-06T01:32:31+00:00",
-          "category": "general"
-        },
-        {
-          "title": "AfD ta jaddada burin kafa gwamnati a Jamus",
-          "source": "DW.com",
-          "url": "https://www.dw.com/ha/jamiyyar-adawa-afd-ta-jaddada-burin-kafa-gwamnati-a-jamus/a-77840626",
-          "date": "2026-07-05T19:52:41+00:00",
+          "title": "Germany’s far-right AfD holds meeting - Northwest Arkansas Democrat-Gazette",
+          "source": "",
+          "url": "https://www.nwaonline.com/news/2026/jul/06/germanys-far-right-afd-holds-meeting/",
+          "date": "2026-07-06T09:00:00+00:00",
           "category": "germany"
         },
         {
-          "title": "Zehntausende demonstrieren gegen AfD-Parteitag: „Hirn an, Hass aus, AfD raus!“",
-          "source": "Frankfurter Rundschau",
-          "url": "https://www.fr.de/politik/50-000-demonstrieren-gegen-afd-parteitag-doch-manche-sagen-wahnsinn-94383604.html",
-          "date": "2026-07-05T17:21:04+00:00",
+          "title": "The unravelling of Nigel Farage",
+          "source": "thenewworld.co.uk",
+          "url": "https://www.thenewworld.co.uk/james-ball-the-unravelling-of-nigel-farage/",
+          "date": "2026-07-06T08:54:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Bei Wahlsieg: AfD plant neues Ministerium für Kultur, Wissenschaft und Bildung in Sachsen-Anhalt - Video",
+          "source": "WELT",
+          "url": "https://www.welt.de/videos/video6a4b39910b14ed961bb5359e/bei-wahlsieg-afd-plant-neues-ministerium-fuer-kultur-wissenschaft-und-bildung-in-sachsen-anhalt.html",
+          "date": "2026-07-06T08:40:01+00:00",
           "category": "germany"
         },
         {
-          "title": "SZ-Podcast: Weidel, Höcke, Chrupalla – wer hat in der AfD den meisten Einfluss?",
-          "source": "SZ.de",
-          "url": "https://www.sueddeutsche.de/politik/podcast-nachrichten-auf-den-punkt-afd-parteitag-erfurt-li.3510779",
-          "date": "2026-07-05T14:08:22+00:00",
+          "title": "AfD-Parteitag: Angriffe auf Reporter – ARD-Journalistin irritiert mit Kritik an AfD-Verhalten",
+          "source": "WELT",
+          "url": "https://www.welt.de/politik/deutschland/article6a4b3e700b14ed961bb5360a/afd-parteitag-angriffe-auf-reporter-ard-journalistin-irritiert-mit-kritik-an-afd-verhalten.html",
+          "date": "2026-07-06T07:31:02+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "„Linksradikale vom Bündnis ‚Widersetzen‘ drohen CDU und BSW“",
+          "source": "WELT",
+          "url": "https://www.welt.de/videos/video6a4b552dad32e994f875cfe5/nach-afd-parteitag-linksradikale-vom-buendnis-widersetzen-drohen-cdu-und-bsw.html",
+          "date": "2026-07-06T07:30:59+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Fremfører klassi­keren foran flere titalls tusen tilskuere",
+          "source": "agderposten.no",
+          "url": "https://www.agderposten.no/sport/n/6qWw0W/slik-skal-kjendisene-se-storkampen-og-dette-mener-de-om-roingen",
+          "date": "2026-07-06T07:14:36+00:00",
+          "category": "norway"
+        },
+        {
+          "title": "Gutachten: Paderborner AfD-Politiker äußert sich unter anderem antisemitisch",
+          "source": "Radio Hochstift",
+          "url": "https://www.radiohochstift.de/nachrichten/paderborn-hoexter/gutachten-paderborner-afd-politiker-aeussert-sich-unter-anderem-antisemitisch.html",
+          "date": "2026-07-06T07:11:58+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Thüringen: Innenminister lobt Polizei nach AfD-Parteitag in Erfurt - n-tv.de - n-tv.de",
+          "source": "",
+          "url": "https://www.n-tv.de/regionales/thueringen/Innenminister-lobt-Polizei-nach-AfD-Parteitag-in-Erfurt-id31051864.html",
+          "date": "2026-07-06T06:55:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "AfD-Parteitag in Erfurt: Die Angst vor dem faschistischen Überwachungsstaat",
+          "source": "Netzpolitik.org",
+          "url": "https://netzpolitik.org/2026/afd-parteitag-in-erfurt-die-angst-vor-dem-faschistischen-ueberwachungsstaat/",
+          "date": "2026-07-06T06:36:18+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "AfD-Bundesparteitag in Erfurt: \"Das Extreme wird besser verpackt\"",
+          "source": "NDR.de",
+          "url": "https://www.ndr.de/nachrichten/info/afd-bundesparteitag-in-erfurt-das-extreme-wird-besser-verpackt,audio-3340974.html",
+          "date": "2026-07-06T06:07:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Widerspruch von Weidel - Abgrenzung von AfD-Familienbild",
+          "source": "SCHWULISSIMO.de",
+          "url": "https://schwulissimo.de/neuigkeiten/widerspruch-von-weidel-abgrenzung-von-afd-familienbild",
+          "date": "2026-07-06T06:00:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "„Ich lebe etwas anderes“ – Weidel kritisiert Sachsen-Anhalter AfD-Programm zu Familienbild",
+          "source": "WELT",
+          "url": "https://www.welt.de/politik/deutschland/article6a4b37d97bfb3e5e95d16e96/afd-chefin-alice-weidel-kritisiert-sachsen-anhalter-afd-wahlprogramm-ich-lebe-etwas-anderes.html",
+          "date": "2026-07-06T05:39:12+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Warum Markus Lanz und Dunja Hayali im Umgang mit der AfD an ihre Grenzen stoßen",
+          "source": "Berliner Zeitung",
+          "url": "https://www.berliner-zeitung.de/article/warum-markus-lanz-und-dunja-hayali-im-umgang-mit-der-afd-an-ihre-grenzen-stossen-10168287",
+          "date": "2026-07-06T05:29:03+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "„Die können reinschreiben, was sie wollen. Ich lebe etwas anderes“",
+          "source": "RP Online",
+          "url": "https://rp-online.de/politik/deutschland/alice-weidel-afd-familienbild-ich-lebe-etwas-anderes-v1_aid-150994345",
+          "date": "2026-07-06T05:28:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Extremismus-Forscher Quent: AfD übt sich in \"Selbstnormalisierung\"",
+          "source": "NDR.de",
+          "url": "https://www.ndr.de/nachrichten/info/extremismus-forscher-quent-afd-uebt-sich-in-selbstnormalisierung,audio-3340750.html",
+          "date": "2026-07-06T05:20:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "France awaits decision on whether Marine Le Pen can run for president",
+          "source": "The Observer",
+          "url": "https://observer.co.uk/news/the-sensemaker/article/france-awaits-decision-on-whether-marine-le-pen-can-run-for-president",
+          "date": "2026-07-06T05:18:54+00:00",
+          "category": "france"
+        },
+        {
+          "title": "AfD und Demokratie: Was deutsche Unternehmen wirklich denken",
+          "source": "FAZ",
+          "url": "https://www.faz.net/aktuell/wirtschaft/mehr-wirtschaft/afd-und-demokratie-was-deutsche-unternehmen-wirklich-denken-accg-200999083.html",
+          "date": "2026-07-06T05:11:53+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Keine Distanzierung: Wie Björn Höcke die AfD prägt",
+          "source": "Augsburger Allgemeine",
+          "url": "https://www.augsburger-allgemeine.de/politik/der-thueringer-weg-wird-zum-modell-fuer-die-afd-1-114553245",
+          "date": "2026-07-06T05:11:31+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "AfD-Parteitag: Mehr Macht für Weidel",
+          "source": "The Pioneer",
+          "url": "https://www.thepioneer.de/originals/others/articles/afd-parteitag-mehr-macht-fuer-weidel",
+          "date": "2026-07-06T03:47:16+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "AfD-Bundesparteitag in Thüringen: Das Dilemma des Innenministers",
+          "source": "Thüringer Allgemeine",
+          "url": "https://www.thueringer-allgemeine.de/politik/article412490027/afd-bundesparteitag-in-thueringen-das-dilemma-des-innenministers.html",
+          "date": "2026-07-06T03:30:00+00:00",
           "category": "germany"
         }
       ],
       "first_seen": "2026-07-03T14:41:37+00:00",
-      "last_seen": "2026-07-06T16:00:39+00:00"
+      "last_seen": "2026-07-07T04:33:30+00:00"
     },
     {
       "id": "nigel-farage-funding-scandal",
       "title": "Nigel Farage funding scandal",
-      "blurb": "Nigel Farage faces multiple investigations over undeclared financial support from convicted fraudster George Cottrell, including staffing, security, and housing. The scandal threatens his leadership of Reform UK and could trigger a by-election.",
-      "affect": "The scandal commands high affective investment due to its implications for Farage's credibility, Reform UK's future, and broader concerns about political funding transparency.",
+      "blurb": "Reform UK leader Nigel Farage faces multiple investigations over undeclared financial support from convicted fraudster George Cottrell and crypto billionaire Christopher Harborne. The scandal threatens Farage's political future and Reform UK's credibility.",
+      "affect": "The allegations of financial impropriety and ties to convicted criminals create a sense of moral outrage and political scandal, threatening to undermine Farage's anti-establishment image and Reform UK's electoral prospects.",
       "intensity": 4,
       "affect_signals": [
         "outrage-coded language",
-        "polarized contention",
         "cross-source repetition",
-        "moral charge",
-        "leadership crisis tone"
+        "moral panic register",
+        "leadership crisis tone",
+        "scandal framing"
       ],
       "categories": [
-        "gb_reform_uk"
+        "🇬🇧 Reform UK"
       ],
       "article_count": 70,
       "refs": [
+        {
+          "title": "Trump appears to back Farage amid row over ally’s financial help",
+          "source": "Wimbledon Guardian",
+          "url": "https://www.wimbledonguardian.co.uk/news/national/26257747.trump-appears-back-farage-amid-row-allys-financial-help/",
+          "date": "2026-07-06T22:45:53+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Reform UK leader in hot water over undeclared gift from convicted criminal",
+          "source": "Newstalk ZB",
+          "url": "https://www.newstalkzb.co.nz/on-air/mike-hosking-breakfast/audio/enda-brady-uk-correspondent-on-reform-uks-nigel-farage-facing-media-scrutiny-over-an-undeclared-gift-from-george-cottrell/",
+          "date": "2026-07-06T22:03:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Nigel Farage under pressure over financial support from convicted criminal",
+          "source": "The Journal",
+          "url": "https://www.thejournal.ie/nigel-farage-sky-news-financial-support-7093632-Jul2026/",
+          "date": "2026-07-06T21:55:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "‘Posh George’ Cottrell: What is Nigel Farage accused of and why does it matter?",
+          "source": "The Independent",
+          "url": "https://www.independent.co.uk/news/uk/politics/politics-explained/nigel-farage-posh-george-cottrell-gifts-donations-b3009983.html",
+          "date": "2026-07-06T21:29:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Nigel Farage set to be interviewed by standards watchdog over £5m gift",
+          "source": "The Times",
+          "url": "https://www.thetimes.com/uk/politics/article/nigel-farage-interview-standards-commissioner-k0r8v9ssb",
+          "date": "2026-07-06T20:25:29+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Nigel Farage sleaze report delayed until September",
+          "source": "The Telegraph",
+          "url": "https://www.telegraph.co.uk/politics/2026/07/06/nigel-farage-sleaze-report-delay-september/",
+          "date": "2026-07-06T19:54:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Fraudster George Cottrell seen at numerous Reform events despite ‘no formal role’ in party",
+          "source": "The Guardian",
+          "url": "https://www.theguardian.com/politics/2026/jul/06/reform-uk-nigel-farage-george-cottrell",
+          "date": "2026-07-06T18:26:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Will 'Posh George' scandal finally undo Nigel Farage?",
+          "source": "The National Scot",
+          "url": "https://www.thenational.scot/news/26257638.will-posh-george-scandal-finally-undo-nigel-farage/",
+          "date": "2026-07-06T17:55:15+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Who is George Cottrell, the mystery donor who has potentially landed Nigel Farage in hot water?",
+          "source": "The Guardian",
+          "url": "https://www.theguardian.com/politics/video/2026/jul/06/who-is-george-cottrell-the-mystery-donor-who-has-potentially-landed-nigel-farage-in-hot-water",
+          "date": "2026-07-06T17:30:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Posh George and Thai Chris: Meet the eccentric moguls bankrolling Nigel Farage",
+          "source": "The National Scot",
+          "url": "https://www.thenational.scot/politics/26257557.meet-posh-george-thai-chris-eccentric-moguls-funding-farage/",
+          "date": "2026-07-06T17:29:07+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Farage under pressure over gifts from convicted fraudster - The Latest",
+          "source": "The Guardian",
+          "url": "https://www.theguardian.com/news/video/2026/jul/06/farage-under-pressure-over-gifts-from-convicted-fraudster-the-latest",
+          "date": "2026-07-06T17:26:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Nigel Farage faces probe following crypto aide’s secret support, report",
+          "source": "Protos | Informed crypto news",
+          "url": "https://protos.com/nigel-farage-faces-probe-following-crypto-aides-secret-support-report/",
+          "date": "2026-07-06T17:11:51+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Plaid Cymru refers Nigel Farage MP for formal investigation following undeclared benefits from convicted criminal",
+          "source": "Carmarthenshire News Online",
+          "url": "https://www.carmarthenshirenewsonline.com/nationalnews/plaid-cymru-refers-nigel-farage-mp-for-formal-investigation-following-undeclared-benefits-from-convicted-criminal/",
+          "date": "2026-07-06T17:11:02+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Why is Nigel Farage facing renewed scrutiny over his finances?",
+          "source": "BBC",
+          "url": "https://www.bbc.co.uk/news/articles/c1kyygjvz7go",
+          "date": "2026-07-06T16:39:46+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Nigel Farage cries ‘witch-hunt’ – but this may be Reform’s Partygate moment",
+          "source": "The Guardian",
+          "url": "https://www.theguardian.com/politics/2026/jul/06/nigel-farage-witch-hunt-reform-partygate-moment",
+          "date": "2026-07-06T16:25:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Will Nigel Farage be forced to fight a by-election?",
+          "source": "New Statesman",
+          "url": "https://www.newstatesman.com/politics/2026/07/will-nigel-farage-be-forced-to-fight-a-by-election",
+          "date": "2026-07-06T16:11:50+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Nigel Farage's latest scandal might finally bring him down",
+          "source": "Metro.co.uk",
+          "url": "https://metro.co.uk/2026/07/06/nigel-farages-latest-scandal-might-finally-bring-29066318/",
+          "date": "2026-07-06T16:11:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Nigel Farage is in exquisite danger – and he knows it",
+          "source": "The i Paper",
+          "url": "https://inews.co.uk/opinion/nigel-farage-exquisite-danger-he-knows-it-4627197",
+          "date": "2026-07-06T15:55:56+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Nigel Farage facing pressure over undeclared finances",
+          "source": "RTE.ie",
+          "url": "https://www.rte.ie/news/2026/0706/1582050-nigel-farage-finances/",
+          "date": "2026-07-06T15:54:09+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "News Explorer — UK Government Tightens Rules on Foreign Political Funding, Affecting Crypto Billionaires Supporting Reform UK",
+          "source": "Decrypt",
+          "url": "https://decrypt.co/news-explorer?pinned=1478303&title=uk-government-tightens-rules-on-foreign-political-funding-affecting-crypto-billionaires-supporting-reform-uk",
+          "date": "2026-07-06T15:47:21+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "What to know about the cash questions chasing Nigel Farage",
+          "source": "politico.eu",
+          "url": "https://www.politico.eu/article/nigel-farage-uk-donation-investigation-crypto-gifts/",
+          "date": "2026-07-06T15:45:11+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Nigel Farage's Approval Rating Plummets Over His Finances",
+          "source": "HuffPost UK",
+          "url": "https://www.huffingtonpost.co.uk/entry/nigel-farage-ipsos-poll-reform-george-cottrell_uk_6a4bcbcce4b094d71e6f7658",
+          "date": "2026-07-06T15:45:06+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "From Reform to the SNP, money is rotting politics - we need to clean the pigsty now",
+          "source": "The Herald",
+          "url": "https://www.heraldscotland.com/politics/viewpoint/26256438.america-uk-tale-two-democracies-corrupt-cash/",
+          "date": "2026-07-06T15:01:51+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Fabrikklandbruk passer dårlig i Norge - Fjell-Ljom",
+          "source": "",
+          "url": "https://www.fjell-ljom.no/distriktslandbruk-geografi-hoyre-og-fremskrittspartiet/fabrikklandbruk-passer-darlig-i-norge/325789",
+          "date": "2026-07-06T15:00:00+00:00",
+          "category": "norway"
+        },
+        {
+          "title": "VÍDEO | Vox deja claro que no cambiará su ideario aunque ocupe la vicepresidencia de la Junta",
+          "source": "El Correo de Andalucía",
+          "url": "https://www.elcorreoweb.es/videos/2026/07/06/video-vox-deja-claro-cambiara-132181214.html",
+          "date": "2026-07-06T14:31:56+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Nigel Farage faces four sleaze probes after fraudster gift revelations",
+          "source": "The National Scot",
+          "url": "https://www.thenational.scot/news/26256515.nigel-farage-faces-four-sleaze-probes-fraudster-gift-revelations/",
+          "date": "2026-07-06T14:22:24+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Reports that Nigel Farage didn't declare benifits from a man previously convicted of fraud",
+          "source": "RTE.ie",
+          "url": "https://www.rte.ie/radio/podcasts/22627105-reports-that-nigel-farage-didnt-declare-benifits/",
+          "date": "2026-07-06T14:08:58+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Chris Mason: Accusations around Farage leave him looking vulnerable to his rivals",
+          "source": "BBC",
+          "url": "https://www.bbc.co.uk/news/articles/c04yyx15xngo",
+          "date": "2026-07-06T14:01:19+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Reform is holding a celebration meal with Makerfield election \"star\" near Doncaster",
+          "source": "Doncaster Free Press",
+          "url": "http://www.southyorkshiretimes.co.uk/news/reform-uk-to-host-election-celebration-dinner-with-makerfield-election-star-8780633",
+          "date": "2026-07-06T13:55:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Influenceur sur TikTok, président sur Facebook : la nouvelle stratégie de Jordan Bardella",
+          "source": "The Conversation",
+          "url": "https://theconversation.com/influenceur-sur-tiktok-president-sur-facebook-la-nouvelle-strategie-de-jordan-bardella-282575",
+          "date": "2026-07-06T13:46:00+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Farage denies ‘wrongdoing’ over undeclared benefits from ally",
+          "source": "Maldon & Burnham Standard",
+          "url": "https://www.maldonandburnhamstandard.co.uk/news/26255999.farage-urged-level-public-support-convict/",
+          "date": "2026-07-06T13:00:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "The allegations Nigel Farage is facing and what happens next?",
+          "source": "The Times",
+          "url": "https://www.thetimes.com/uk/politics/article/nigel-farage-allegations-george-cottrell-what-happens-next-0thbqtz3b",
+          "date": "2026-07-06T12:55:30+00:00",
+          "category": "uk"
+        },
         {
           "title": "Reform UK leader Nigel Farage faces questions over donations from a convicted fraudster",
           "source": "SRN News",
           "url": "https://srnnews.com/reform-uk-leader-nigel-farage-faces-questions-over-donations-from-a-convicted-fraudster/",
           "date": "2026-07-06T12:45:29+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Vox carga contra Feijóo por rechazar el veto al voto CERA: \"No es el que pueda hacer que haga, hay que hacer\"",
+          "source": "PressDigital",
+          "url": "https://www.pressdigital.es/articulo/politica/2026-07-06/5944482-vox-carga-contra-feijoo-rechazar-veto-voto-cera-no-pueda-hacer-haga-hay-hacer",
+          "date": "2026-07-06T12:40:00+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "‘Hit job’: Why limelight-loving Nigel Farage has gone quiet",
+          "source": "The Nightly",
+          "url": "https://thenightly.com.au/politics/world/nigel-farage-reform-uk-leader-faces-questions-over-donations-from-a-convicted-fraudster-c-22539561",
+          "date": "2026-07-06T12:38:13+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Nigel Farage denies wrongdoing over unclaimed benefits",
+          "source": "BBC",
+          "url": "https://www.bbc.co.uk/news/videos/cwy00vp1rjdo",
+          "date": "2026-07-06T12:38:06+00:00",
           "category": "uk"
         },
         {
@@ -321,11 +2393,53 @@
           "category": "uk"
         },
         {
-          "title": "President Trump to travel to Turkey for NATA summit, renews push to end Russia’s war with Ukraine",
-          "source": "CBS News",
-          "url": "https://www.cbsnews.com/texas/video/president-trump-to-travel-to-turkey-for-nata-summit-renews-push-to-end-russias-war-with-ukraine/",
-          "date": "2026-07-06T11:53:00+00:00",
+          "title": "Vox aspira a más cargos en organismos andaluces como Canal Sur mientras sigue negociando con el PP",
+          "source": "Demócrata",
+          "url": "https://www.democrata.es/politica/vox-aspira-a-mas-cargos-en-organismos-andaluces-como-canal-sur-mientras-sigue-negociando-con-el-pp/",
+          "date": "2026-07-06T12:09:00+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Life of Farage backer George Cottrell who calls Reform leader 'Daddy'",
+          "source": "Metro.co.uk",
+          "url": "https://metro.co.uk/2026/07/06/life-farage-backer-george-cottrell-calls-reform-leader-daddy-29062474/",
+          "date": "2026-07-06T12:04:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Opinion | My Conversation With Karl Marx About Donald Trump",
+          "source": "Common Dreams",
+          "url": "https://www.commondreams.org/opinion/karl-marx-reflects-on-donald-trump",
+          "date": "2026-07-06T11:31:05+00:00",
           "category": "usa"
+        },
+        {
+          "title": "Reform UK councillor misused residents' data for restaurant and party promotions",
+          "source": "Yahoo News UK",
+          "url": "https://uk.news.yahoo.com/reform-uk-councillor-misused-residents-111718804.html",
+          "date": "2026-07-06T11:17:18+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Reform councillor doxxed residents and breached data rules",
+          "source": "thecanary.co",
+          "url": "https://www.thecanary.co/trending/2026/07/06/reform-councillor-breaches-gdpr/",
+          "date": "2026-07-06T11:16:44+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Fraudster who gave money to Farage was expelled from UK private school for gambling",
+          "source": "The Worcester News",
+          "url": "https://www.worcesternews.co.uk/news/26255734.farage-supporter-expelled-malvern-college-teenager/",
+          "date": "2026-07-06T11:01:29+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Reform UK Leader Allegedly Received Undisclosed Funding from Crypto Fraudster",
+          "source": "ForkLog",
+          "url": "https://forklog.com/en/reform-uk-leader-allegedly-received-undisclosed-funding-from-crypto-fraudster/",
+          "date": "2026-07-06T11:00:00+00:00",
+          "category": "uk"
         },
         {
           "title": "'It's gonna carry on running': Angela Rayner says Farage will struggle to shrug off questions over money received from convicted criminal",
@@ -335,10 +2449,52 @@
           "category": "uk"
         },
         {
-          "title": "Pressure grows on Nigel Farage over cash from criminal as he cries 'hit job'",
-          "source": "inkl",
-          "url": "https://www.inkl.com/news/pressure-grows-on-nigel-farage-over-cash-from-criminal-as-he-cries-hit-job",
-          "date": "2026-07-06T09:25:41+00:00",
+          "title": "UK’s Farage’s gold deal tests his populist brand as Restore Britain rises",
+          "source": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/7/6/uks-farages-gold-deal-tests-his-populist-brand-as-restore-britain-rises",
+          "date": "2026-07-06T10:23:01+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Nigel Farage accepted gifts from crypto linked fraudster: Re|Cointelegraph",
+          "source": "خبرپو",
+          "url": "https://khabarpu.com/b.htm?u=Nigel-Farage-accepted-gifts-from-crypto-linked-fraudster%3A-Report_Y29pbnRlbGVncmFwaC5jb20vbmV3cy9uaWdlbC1mYXJhZ2UtYWNjZXB0ZWQtZ2lmdHMtZnJvbS1jcnlwdG8tbGlua2VkLWZyYXVkc3Rlci1yZXBvcnQ/dXRtX3NvdXJjZT1yc3NfZmVlZCZhbXA7dXRtX21lZGl1bT1yc3MmYW1wO3V0bV9jYW1wYWlnbj1yc3NfcGFydG5lcl9pbmJvdW5k_Q29pbnRlbGVncmFwaA==",
+          "date": "2026-07-06T10:17:36+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "New UK election funding rules could impact Reform’s Tether billionaire donors",
+          "source": "Crypto Briefing",
+          "url": "https://cryptobriefing.com/uk-election-funding-reform-tether-donors/",
+          "date": "2026-07-06T10:06:49+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Dodgy Farage backer had Reform UK business cards",
+          "source": "thecanary.co",
+          "url": "https://www.thecanary.co/trending/2026/07/06/farage-backer/",
+          "date": "2026-07-06T10:03:58+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Is Nigel Farage's Career ‘Dead in the Water’ As Funding Questions Mount?",
+          "source": "HuffPost UK",
+          "url": "https://www.huffingtonpost.co.uk/entry/nigel-farage-career-reform_uk_6a4b6e1ce4b05c9d0338a297?origin=home-politics-grid-unit",
+          "date": "2026-07-06T09:02:47+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Leserbriefe zur AfD: Die Verantwortung der Union",
+          "source": "SZ.de",
+          "url": "https://www.sueddeutsche.de/kolumne/union-afd-cdu-leserbriefe-li.3505678",
+          "date": "2026-07-06T08:53:26+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Farage faces mounting pressure to ‘level with the public’ about ally’s support",
+          "source": "Oxford Mail",
+          "url": "https://www.oxfordmail.co.uk/news/national/26254782.farage-faces-mounting-pressure-level-public-allys-support/",
+          "date": "2026-07-06T08:11:19+00:00",
           "category": "uk"
         },
         {
@@ -349,6 +2505,41 @@
           "category": "uk"
         },
         {
+          "title": "„Parlamentarischer Arm Moskaus“ Pistorius trifft Vorkehrungen für AfD-Wahlsieg – Unterstützung von Grünen",
+          "source": "Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/politik/parlamentarischer-arm-moskaus-pistorius-trifft-vorkehrungen-fur-afd-wahlsieg--unterstutzung-von-grunen-15804395.html",
+          "date": "2026-07-06T07:47:53+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "New foreign donation rules could hit Reform UK’s crypto millionaire funders hard",
+          "source": "The Independent",
+          "url": "https://www.independent.co.uk/news/uk/politics/government-foreign-donations-reform-uk-b3009524.html",
+          "date": "2026-07-06T07:39:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Farage says he's 'done no wrongdoing' after benefits from ally not declared",
+          "source": "BBC",
+          "url": "https://www.bbc.co.uk/news/articles/cql11kk90zgo",
+          "date": "2026-07-06T07:21:07+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Nigel Farage says 'no wrongdoing' after benefits from ally not declared",
+          "source": "BBC",
+          "url": "http://www.bbc.com/news/articles/cql11kk90zgo",
+          "date": "2026-07-06T07:21:07+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Nigel Farage denies wrongdoing over gifts linked to crypto fraudster",
+          "source": "Crypto News",
+          "url": "https://crypto.news/nigel-farage-denies-wrongdoing-over-gifts-linked-to-crypto-fraudster/",
+          "date": "2026-07-06T07:11:44+00:00",
+          "category": "uk"
+        },
+        {
           "title": "Nigel Farage 'secretly funded by convicted criminal': The Lib Dems' Josh Babarinde and Tory Peer Lord Hayward join Nick Ferrari",
           "source": "lbc.co.uk",
           "url": "https://www.lbc.co.uk/videos/2JsSevXWnv6/",
@@ -356,10 +2547,45 @@
           "category": "uk"
         },
         {
+          "title": "George Cottrell allegations won’t bring down Nigel Farage",
+          "source": "UnHerd",
+          "url": "https://unherd.com/newsroom/george-cottrell-allegations-wont-bring-down-nigel-farage/",
+          "date": "2026-07-06T06:08:54+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Nigel Farage issues 'hit job' statement after claims he was funded by convicted criminal",
+          "source": "Manchester Evening News",
+          "url": "https://www.manchestereveningnews.co.uk/incoming/nigel-farage-issues-hit-job-34241495.amp",
+          "date": "2026-07-06T05:40:00+00:00",
+          "category": "uk"
+        },
+        {
           "title": "Farage under pressure as calls for sleaze inquiry mount",
           "source": "The Independent",
           "url": "https://www.independent.co.uk/bulletin/news/reform-farage-george-cottrell-b3009483.html",
           "date": "2026-07-06T05:32:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "UK tightens overseas political donation rules to curb foreign influences",
+          "source": "The Jerusalem Post",
+          "url": "https://www.jpost.com/international/article-901539",
+          "date": "2026-07-06T05:02:09+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Blow for Farage as crypto backers hit by fresh crackdown on foreign donations",
+          "source": "The i Paper",
+          "url": "https://inews.co.uk/news/politics/farage-crypto-backers-fresh-crackdown-foreign-donations-4625862",
+          "date": "2026-07-06T05:00:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "How ‘Posh George’ and a crypto tycoon could bring Farage unstuck",
+          "source": "AFR",
+          "url": "https://www.afr.com/world/europe/how-posh-george-and-a-crypto-tycoon-could-bring-farage-unstuck-20260705-p60ct0",
+          "date": "2026-07-06T03:03:00+00:00",
           "category": "uk"
         },
         {
@@ -371,26 +2597,614 @@
         }
       ],
       "first_seen": "2026-07-05T14:17:10+00:00",
-      "last_seen": "2026-07-06T16:00:39+00:00"
+      "last_seen": "2026-07-07T04:33:30+00:00"
     },
     {
       "id": "javier-milei-s-re-election-strategy-unfolds",
       "title": "Javier Milei's re-election strategy unfolds",
-      "blurb": "Argentine President Javier Milei is reshaping his government and political strategy to secure re-election in 2027, including cabinet changes, alliances with governors, and efforts to eliminate PASO primaries. His approval rating has risen, but corruption concerns persist.",
-      "affect": "Milei's re-election strategy commands high affective investment due to its impact on Argentina's political and economic future, with intense framing around his libertarian policies and governance style.",
+      "blurb": "Argentine President Javier Milei is consolidating power ahead of the 2027 elections, reshuffling his cabinet, eliminating primary elections, and seeking alliances with provincial governors. His government faces internal divisions and declining approval ratings amid economic challenges.",
+      "affect": "Milei's aggressive political maneuvers, combined with economic struggles and internal party conflicts, create a charged atmosphere of political crisis and moral panic over Argentina's future direction.",
       "intensity": 4,
       "affect_signals": [
+        "leadership crisis tone",
         "polarized contention",
-        "alarmist framing",
         "cross-source repetition",
-        "moral charge",
-        "leadership crisis tone"
+        "alarmist framing",
+        "moral panic register"
       ],
       "categories": [
-        "ar_la_libertad_avanza"
+        "🇦🇷 La Libertad Avanza"
       ],
-      "article_count": 60,
+      "article_count": 80,
       "refs": [
+        {
+          "title": "La tropa parlamentaria de La Libertad Avanza viajará a Tucumán para acompañar a Milei por el 9 de julio",
+          "source": "Agencia Noticias Argentinas",
+          "url": "https://noticiasargentinas.com/politica/la-tropa-parlamentaria-de-la-libertad-avanza-viajara-a-tucuman-para-acompanar-a-milei-por-el-9-de-julio_a6a4c2d53d4a2dbfb07f03004",
+          "date": "2026-07-06T23:42:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Catalán le respondió a Jaldo: El sistema de acoples es la trampa electoral más grande del país",
+          "source": "La Gaceta",
+          "url": "https://www.lagaceta.com.ar/nota/1144394/politica/catalan-le-respondio-jaldo-sistema-acoples-trampa-electoral-mas-grande-pais.html",
+          "date": "2026-07-06T23:26:16+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "El Gobierno adaptó su agenda por la Selección Argentina y Javier Milei prepara el viaje a Tucumán",
+          "source": "diariopopular.com.ar",
+          "url": "https://www.diariopopular.com.ar/politica/el-gobierno-adapto-su-agenda-la-seleccion-argentina-y-javier-milei-prepara-el-viaje-tucuman-n908639",
+          "date": "2026-07-06T23:20:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Quién es Fabián Fernández, el nuevo secretario de Comunicación que Karina Milei incorporó a la mesa política del Gobierno",
+          "source": "FM Del Sol Pehuajo",
+          "url": "https://radiodelsolpehuajo.com.ar/articulo/2026/07/quien-es-fabian-fernandez-el-nuevo-secretario-de-comunicacion-que-karina-milei-incorporo-a-la-mesa-politica-del-gobierno.php",
+          "date": "2026-07-06T23:03:55+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Por el partido de la Selección, Karina Milei postergó la reunión de la mesa política",
+          "source": "InfoYa",
+          "url": "https://www.diarioinfoya.com.ar/politica/por-el-partido-de-la-seleccion-karina-milei-postergo-la-reunion-de-la-mesa-politica-135/",
+          "date": "2026-07-06T23:00:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Quién es Ignacio Devitt, el hombre de confianza de Karina Milei que es el segundo de Diego Santilli",
+          "source": "Perfil",
+          "url": "https://www.perfil.com/noticias/amp/politica/quien-es-ignacio-devitt-el-hombre-de-confianza-de-karina-milei-que-sera-el-segundo-de-diego-santilli.phtml",
+          "date": "2026-07-06T22:43:28+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Milei acelera la avanzada sobre el PRO en CABA y enfría cualquier negociación electoral futura",
+          "source": "DataClave",
+          "url": "https://www.dataclave.com.ar/poder/milei-acelera-la-avanzada-sobre-el-pro-en-caba-y-enfria-cualquier-negociacion-electoral-futura_a6a4be9c8e98d7f32fd21dbfb",
+          "date": "2026-07-06T22:32:55+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Marcos Juárez: Bornoroni no tendrá candidato, pero Pasquali lo desafía y juega con radicales y democrátas",
+          "source": "Letra P",
+          "url": "https://www.letrap.com.ar/region-centro/marcos-juarez-bornoroni-no-tendra-candidato-pero-pasquali-lo-desafia-y-juega-radicales-y-democratas-n5424963",
+          "date": "2026-07-06T22:23:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "La Libertad Avanza de Lanús presentó el proyecto \"Ficha Limpia\": Una movida que le marcha la cancha a la gestión de Julián Álvarez",
+          "source": "Data Conurbano / NET",
+          "url": "https://dataconurbano.net/sinretorno/la-libertad-avanza-de-lanus-presento-el-proyecto-ficha-limpia-una-movida-que-le-marcha-la-cancha-a-la-gestion-de-julian-alvarez/",
+          "date": "2026-07-06T22:14:44+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Dos salidas en el gobierno de Javier Milei: renunciaron dos funcionarios y ya tienen reemplazo",
+          "source": "Diario El Sol Mendoza",
+          "url": "https://www.elsol.com.ar/el-pais/dos-salidas-en-el-gobierno-de-javier-milei-renunciaron-dos-funcionarios-y-ya-tienen-reemplazo/",
+          "date": "2026-07-06T22:14:23+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Reforma electoral: partidos provinciales piden suspender las PASO y archivar el debate por las colectoras",
+          "source": "Letra P",
+          "url": "https://www.letrap.com.ar/congreso/reforma-electoral-partidos-provinciales-piden-suspender-las-paso-y-archivar-el-debate-las-colectoras-n5424960/amp",
+          "date": "2026-07-06T21:30:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "La crisis por Manuel Adorni golpeó a Javier Milei",
+          "source": "El nuevo rojense",
+          "url": "https://elnuevorojense.com.ar/la-crisis-por-manuel-adorni-golpeo-a-javier-milei/",
+          "date": "2026-07-06T21:22:12+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Balogun Brouhaha Turns a National TV Sports Moment of Unity Into a Moment of Division (Again)",
+          "source": "The Hollywood Reporter",
+          "url": "https://www.hollywoodreporter.com/news/politics-news/what-did-donald-trump-do-balogun-world-cup-us-1236639088/",
+          "date": "2026-07-06T21:04:43+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Fugas de concejales libertarios en PBA: el \"loteo de cargos\" expone grietas en La Libertad Avanza bonaerense",
+          "source": "MDZ Online",
+          "url": "https://www.mdzol.com/politica/fugas-concejales-libertarios-pba-el-loteo-cargos-expone-grietas-la-libertad-avanza-bonaerense-n1559514",
+          "date": "2026-07-06T20:29:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Santiago «Indio» Godoy: “La Libertad Avanza y Gustavo Sáenz son lo mismo”",
+          "source": "Elintra.com.ar",
+          "url": "https://elintra.com.ar/2026/07/06/santiago-indio-godoy-la-libertad-avanza-y-gustavo-saenz-son-lo-mismo/",
+          "date": "2026-07-06T20:28:46+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "El riesgo país cayó al nivel más bajo de la era Javier Milei: a cuánto se ubicó",
+          "source": "Uno Entre Rios",
+          "url": "https://www.unoentrerios.com.ar/el-pais/el-riesgo-pais-cayo-al-nivel-mas-la-era-javier-milei-cuanto-se-ubico-n10268343.html",
+          "date": "2026-07-06T20:23:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Las apuestas del Gobierno, entre la mesa política y una nueva foto con gobernadores",
+          "source": "Agencia Noticias Argentinas",
+          "url": "https://noticiasargentinas.com/politica/las-apuestas-del-gobierno--entre-la-mesa-politica-y-una-nueva-foto-con-gobernadores_a6a4c07bc9134cc1801e733c0",
+          "date": "2026-07-06T20:20:36+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "El Gobierno toma aire y vuelve a la cancha",
+          "source": "Perfil",
+          "url": "https://www.perfil.com/noticias/politica/el-gobierno-toma-aire-y-vuelve-a-la-cancha.phtml",
+          "date": "2026-07-06T20:16:36+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "La mancha que no se va: Manuel Adorni sigue complicando a Javier Milei en el debate de redes sociales",
+          "source": "MDZ Online",
+          "url": "https://www.mdzol.com/politica/la-mancha-que-no-se-va-manuel-adorni-sigue-complicando-javier-milei-el-debate-redes-sociales-n1559582",
+          "date": "2026-07-06T20:15:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Por el partido Argerntina-Egipto, Karina Milei postergó la reunión de la mesa política oficial",
+          "source": "Diario UNO",
+          "url": "https://www.diariouno.com.ar/politica/por-el-partido-argerntina-egipto-karina-milei-postergo-la-reunion-la-mesa-politica-oficial-n1572828",
+          "date": "2026-07-06T20:13:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Argentine lawmaker files criminal complaint against Milei over US military exercises",
+          "source": "MercoPress",
+          "url": "https://en.mercopress.com/2026/07/06/argentine-lawmaker-files-criminal-complaint-against-milei-over-us-military-exercises",
+          "date": "2026-07-06T20:12:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei: su imagen política crece impulsada por la economía, pero cae en el plano digital",
+          "source": "Mirador Provincial",
+          "url": "https://www.miradorprovincial.com/2026/07/06/javier-milei-su-imagen-politica-crece-impulsada-por-la-economia-pero-cae-en-el-plano-digital/",
+          "date": "2026-07-06T20:03:14+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "La primera plana del gobierno de Javier Milei estará en Tucumán por el 9 de julio y se espera foto con goberna",
+          "source": "Crónica",
+          "url": "https://www.cronica.com.ar/politica/la-primera-plana-del-gobierno-de-javier-milei-estara-en-tucuman-por-el-9-de-julio-y-se-espera-foto-con-gobernadores/",
+          "date": "2026-07-06T19:56:34+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Bendodo dice que el acuerdo PP-Vox es \"bueno\" para Andalucía y que la vía andaluza \"está más viva que nunca\"",
+          "source": "Teleprensa",
+          "url": "https://www.teleprensa.com/articulo/malaga/bendodo-dice-que-acuerdo-pp-vox-es-bueno-andalucia-que-via-andaluza-mas-viva-que-nunca/202607061947272459229.amp.html",
+          "date": "2026-07-06T19:47:27+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Las redes no levantan: Milei cerró junio con mayoría de comentarios negativos por quinto mes seguido",
+          "source": "DataClave",
+          "url": "https://www.dataclave.com.ar/poder/las-redes-no-levantan--milei-cerro-junio-con-mayoria-de-comentarios-negativos-por-quinto-mes-seguido_a6a4bdb9de98d7f32fd217b66",
+          "date": "2026-07-06T19:45:23+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Privatización de rutas: Cristóbal López ganó una licitación y regresa al negocio de los peajes",
+          "source": "Letra P",
+          "url": "https://www.letrap.com.ar/economia/privatizacion-rutas-cristobal-lopez-gano-una-licitacion-y-regresa-al-negocio-los-peajes-n5424953",
+          "date": "2026-07-06T19:40:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Legislatura bonaerense: Diputados corta el Mundial con la interna peronista en la mira",
+          "source": "Letra P",
+          "url": "https://www.letrap.com.ar/conurbano/legislatura-bonaerense-diputados-corta-el-mundial-la-interna-peronista-la-mira-n5424958",
+          "date": "2026-07-06T19:38:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Lule Menem vuelve a chocar con Adrián Ravier en medio de la interna de La Libertad Avanza",
+          "source": "Telesol Diario",
+          "url": "https://www.telesoldiario.com/478700-lule-menem-vuelve-a-chocar-con-adrian-ravier-en-medio-de-la-interna-de-la-libertad-avanza",
+          "date": "2026-07-06T19:30:57+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Crece la disputa por el control de La Libertad Avanza y expone a Lule Menem frente a Milei",
+          "source": "El Zonda",
+          "url": "https://www.diarioelzondasj.com.ar/359826-crece-la-disputa-por-el-control-de-la-libertad-avanza-y-expone-a-lule-menem-frente-a-milei",
+          "date": "2026-07-06T19:30:53+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Provincia denunció que una obra clave para La Plata, Berisso y Ensenada está trabada por Javier Milei",
+          "source": "0221",
+          "url": "https://www.0221.com.ar/la-plata/provincia-denuncio-que-una-obra-clave-la-plata-berisso-y-ensenada-esta-trabada-javier-milei-n130646",
+          "date": "2026-07-06T19:21:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei y un plan audaz: cómo afrontará sus deudas del año",
+          "source": "abc.com.py",
+          "url": "https://www.abc.com.py/internacionales/2026/07/06/javier-milei-y-un-plan-audaz-como-afrontara-sus-deudas-del-ano/",
+          "date": "2026-07-06T19:05:33+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "El Gobierno reacomoda su agenda, mientras Javier Milei viaja a Tucumán por el 9 de julio",
+          "source": "a24.com",
+          "url": "https://www.a24.com/politica/el-gobierno-reacomoda-su-agenda-mientras-javier-milei-viaja-tucuman-el-9-julio-n1572768",
+          "date": "2026-07-06T19:04:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "La crisis por Adorni marca una nueva caída en la imagen en redes de Javier Milei",
+          "source": "Canal 12 Web",
+          "url": "https://canal12web.com/la-crisis-por-adorni-marca-una-nueva-caida-en-la-imagen-en-redes-de-javier-milei/",
+          "date": "2026-07-06T18:57:48+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Karina Milei suma un nuevo integrante a la mesa política y refuerza su poder en la Casa Rosada",
+          "source": "Perfil",
+          "url": "https://www.perfil.com/noticias/politica/karina-milei-suma-un-nuevo-integrante-a-la-mesa-politica-y-refuerza-su-poder-en-la-casa-rosada.phtml",
+          "date": "2026-07-06T18:44:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Qué se espera de la visita de Javier Milei a Tucumán para este 9 de Julio",
+          "source": "La Gaceta",
+          "url": "https://www.lagaceta.com.ar/nota/1144317/politica/que-se-espera-visita-javier-milei-tucuman-para-este-9-julio.html",
+          "date": "2026-07-06T18:39:17+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Milei tuvo un crecimiento de imagen política, pero con nueva caída en el plano digital",
+          "source": "El Litoral",
+          "url": "https://www.ellitoral.com/politica/javier-milei-imagen-politica-caida-digital-libertad-avanza-manuel-adorni-enriquecimiento-ilicito-luis-caputo-axel-kicillof-ahora-hoy_0_G8xN1tY4ik.html",
+          "date": "2026-07-06T18:29:48+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Cae la imagen digital de Javier Milei por quinto mes consecutivo",
+          "source": "OPI Santa Cruz",
+          "url": "https://www.opisantacruz.com.ar/2026/07/06/cae-la-imagen-digital-de-javier-milei-por-quinto-mes-consecutivo/",
+          "date": "2026-07-06T18:24:29+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Freno a la reforma electoral: la Coalición Cívica rechaza los cambios",
+          "source": "Mendovoz",
+          "url": "https://www.mendovoz.com/actualidad/nacionales/2026/7/6/freno-la-reforma-electoral-la-coalicion-civica-rechaza-los-cambios-173808.html",
+          "date": "2026-07-06T18:23:30+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Videó: Németh Balázs: Maratoni frakcióülést tart a Fidesz-KDNP",
+          "source": "HírTv",
+          "url": "https://hirtv.origo.hu/video/nemeth-balazs-maratoni-frakcioulest-tart-a-fidesz-kdnp",
+          "date": "2026-07-06T18:22:27+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "El Gobierno cambió la fecha de la mesa política y afina la estrategia para avanzar con las reformas",
+          "source": "DataClave",
+          "url": "https://www.dataclave.com.ar/poder/el-gobierno-cambio-la-fecha-de-la-mesa-politica-y-afina-la-estrategia-para-avanzar-con-las-reformas_a6a4bcfb1e98d7f32fd213140",
+          "date": "2026-07-06T18:08:36+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "La crisis por Manuel Adorni golpeó a Javier Milei: un informe detectó cinco meses seguidos de caída en redes",
+          "source": "El Intransigente",
+          "url": "https://elintransigente.com/2026/07/la-crisis-por-manuel-adorni-golpeo-a-javier-milei-un-informe-detecto-cinco-meses-seguidos-de-caida-en-redes/",
+          "date": "2026-07-06T18:06:30+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Argentina reestructura su Gobierno tras la renuncia de Manuel Adorni",
+          "source": "Noticia Zavaleta",
+          "url": "https://www.noticiazavaleta.info/argentina-reestructura-su-gobierno-tras-la-renuncia-de-manuel-adorni/",
+          "date": "2026-07-06T17:54:56+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Redes sociales: Milei cerró junio con 53% de menciones negativas y el caso Adorni volvió a pesar",
+          "source": "Los Andes",
+          "url": "https://www.losandes.com.ar/politica/redes-sociales-milei-cerro-junio-53-menciones-negativas-y-el-caso-adorni-volvio-pesar-n5997531",
+          "date": "2026-07-06T17:51:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "El debate interno detrás de las alternativas del Gobierno para aprobar la reforma electoral",
+          "source": "Infobae",
+          "url": "https://www.infobae.com/politica/2026/07/06/el-debate-interno-detras-de-las-alternativas-del-gobierno-para-aprobar-la-reforma-electoral/",
+          "date": "2026-07-06T17:44:22+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Lule Menem choca con el nuevo vocero por la interna de La Pampa y se arriesga a un cruce con Milei",
+          "source": "La Política Online",
+          "url": "https://www.lapoliticaonline.com/politica/lule-menem-choca-con-el-nuevo-vocero-por-la-interna-de-la-pampa-y-se-arriesga-a-un-cruce-con-milei/",
+          "date": "2026-07-06T17:33:48+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "La Libertad Avanza sale a colonizar al PRO y enfría acuerdo para 2027",
+          "source": "Ambito",
+          "url": "https://www.ambito.com/politica/la-libertad-avanza-sale-colonizar-al-pro-y-enfria-acuerdo-2027-n6296666",
+          "date": "2026-07-06T17:31:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Mentzen uderza w Czarnka. Poszło o donacje dla Ukrainy",
+          "source": "Do Rzeczy",
+          "url": "https://dorzeczy.pl/kraj/911434/mentzen-uderza-w-czarnka-poszlo-o-donacje-dla-ukrainy.html",
+          "date": "2026-07-06T17:17:00+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "VOX alerta de que el «caos» en las licencias urbanísticas de Oviedo puede costar «muy caro» a los ciudadanos",
+          "source": "El Comercio",
+          "url": "https://www.elcomercio.es/oviedo/vox-alerta-caos-licencias-urbanisticas-oviedo-puede-20260706191346-nt_amp.html",
+          "date": "2026-07-06T17:14:00+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Coordinamento Provinciale Fratelli d’Italia Sannio: Grazie a Claudio Cataudo per aver saputo unire la coalizione. Centrodestra è pronto a vincere",
+          "source": "Realtà Sannita",
+          "url": "https://www.realtasannita.it/articoli/politica/coordinamento-provinciale-fratelli-d-italia-sannio-grazie-a-claudio-cataudo-per-aver-saputo-unire-la-coalizione-il-centrodestra-e-pronto-a-vincere-la-sfida-delle-provinciali.html",
+          "date": "2026-07-06T17:11:04+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Un informe privado indicó un aumento de las menciones negativas hacia Milei en redes sociales durante junio",
+          "source": "Opinando San Nicolás",
+          "url": "https://www.opinandosannicolas.ar/2026/07/un-informe-privado-indico-un-aumento-de-las-menciones-negativas-hacia-milei-en-redes-sociales-durante-junio/",
+          "date": "2026-07-06T16:57:56+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Milei sacó pecho en redes sociales con una camiseta que le firmó Haaland",
+          "source": "Revista Noticias",
+          "url": "https://noticias.perfil.com/noticias/politica/milei-saco-pecho-en-redes-sociales-con-una-camiseta-que-le-firmo-haaland.phtml",
+          "date": "2026-07-06T16:55:38+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "El PSOE alerta del peligro de la paralización definitiva de las exhumaciones en Córdoba por el pacto PP-Vox en la Junta",
+          "source": "El Día de Córdoba",
+          "url": "https://www.eldiadecordoba.es/cordoba/psoe-paralizacion-exhumaciones-cordoba-pacto-pp-vox_0_2007331271.html",
+          "date": "2026-07-06T16:53:59+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "El partido de Argentina le cambió los planes a Karina Milei: se reprograma la reunión de la mesa política y en",
+          "source": "Crónica",
+          "url": "https://www.cronica.com.ar/amp/politica/el-partido-de-argentina-le-cambio-los-planes-a-karina-milei-se-reprograma-la-reunion-de-la-mesa-politica-y-entran-nuevos-jugadores/",
+          "date": "2026-07-06T16:43:45+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Vice President JD Vance is scheduled to visit Wisconsin Wednesday",
+          "source": "NBC26",
+          "url": "https://www.nbc26.com/news/local-news/vice-president-jd-vance-is-scheduled-to-visit-wisconsin-wednesday",
+          "date": "2026-07-06T16:32:53+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Hungary could vote to oust president as early as next week as opposition complains of 'tyranny'",
+          "source": "Euronews.com",
+          "url": "https://www.euronews.com/my-europe/2026/07/06/hungary-could-vote-to-oust-president-as-early-as-next-week-as-opposition-complains-of-tyra",
+          "date": "2026-07-06T16:19:34+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "La crisis por Adorni golpeó a Milei: quinto mes consecutivo de comentarios negativos en redes",
+          "source": "Agencia Noticias Argentinas",
+          "url": "https://noticiasargentinas.com/politica/la-crisis-por-adorni-golpeo-a-milei--quinto-mes-consecutivo-de-comentarios-negativos-en-redes_a6a4bcafcd35c29fedf1d2da9",
+          "date": "2026-07-06T15:59:19+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Motosierra a las provincias: Javier Milei aplicó en junio el mayor ajuste de envíos no automáticos en dos décadas",
+          "source": "Ambito",
+          "url": "https://www.ambito.com/economia/motosierra-las-provincias-javier-milei-aplico-junio-el-mayor-ajuste-envios-no-automaticos-dos-decadas-n6296651",
+          "date": "2026-07-06T15:58:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Karina Milei postergó la reunión de la mesa política y reprogramó la estrategia antes del viaje a Tucumán",
+          "source": "Diario Mendoza Today",
+          "url": "https://mendozatoday.com.ar/nacionales/karina-milei-postergo-la-reunion-de-la-mesa-politica-y-reprogramo-la-estrategia-antes-del-viaje-a-tucuman/",
+          "date": "2026-07-06T15:55:53+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Con dirigentes propios y control sobre los bloques, Karina Milei ordena el Congreso para 2027",
+          "source": "La Nación",
+          "url": "https://www.lanacion.com.ar/politica/con-dirigentes-propios-y-control-sobre-los-bloques-karina-milei-ordena-el-congreso-para-2027-nid06072026/",
+          "date": "2026-07-06T15:53:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Massismo sale a la caza de los decepcionados con Milei y suma dirigentes territoriales de La Libertad Avanza",
+          "source": "DataClave",
+          "url": "https://www.dataclave.com.ar/poder/massismo-sale-a-la-caza-de-los-decepcionados-con-milei-y-suma-dirigentes-territoriales-de-la-libertad-avanza_a6a4baf38e98d7f32fd20409e",
+          "date": "2026-07-06T15:39:53+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Trump attacca di nuovo la premier Meloni, ma il governo non replica",
+          "source": "panorama.it",
+          "url": "https://www.panorama.it/attualita/trump-attacca-di-nuovo-la-premier-meloni-ma-il-governo-non-replica",
+          "date": "2026-07-06T15:36:09+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Reacomodo en Casa Rosada: Karina Milei fortalece su armado y Patricia Bullrich sigue en la mira",
+          "source": "Urgente24",
+          "url": "https://urgente24.com/actualidad/politica/reacomodo-casa-rosada-karina-milei-fortalece-su-armado-y-patricia-bullrich-sigue-la-mira-n628113",
+          "date": "2026-07-06T15:29:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Karina Milei amplía la mesa política y reprograma el encuentro por el partido de Argentina con Egipto",
+          "source": "Letra P",
+          "url": "https://www.letrap.com.ar/politica/karina-milei-amplia-la-mesa-politica-y-reprograma-el-encuentro-el-partido-argentina-egipto-n5424947",
+          "date": "2026-07-06T15:28:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "La mesa política se reprogramó para el miércoles, en la previa a la visita de Javier Milei a Tucumán",
+          "source": "Agencia Noticias Argentinas",
+          "url": "https://noticiasargentinas.com/politica/la-mesa-politica-se-reprogramo-para-el-miercoles--en-la-previa-a-la-visita-de-javier-milei-a-tucuman_a6a4bac8ad35c29fedf19ba5e",
+          "date": "2026-07-06T15:26:26+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Quién es Fabián Fernández, la \"voz en off\" que sumó Karina Milei para mejorar la relación del Gobierno con los medios",
+          "source": "Clarin.com",
+          "url": "https://www.clarin.com/politica/fabian-fernandez-voz-off-sumo-karina-milei-mejorar-relacion-gobierno-medios_0_WxjvvTOndQ.html",
+          "date": "2026-07-06T15:23:30+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Karina Milei gira la estrategia y busca acordar con gobernadores",
+          "source": "Identidad Correntina",
+          "url": "https://www.identidadcorrentina.com.ar/noticia/33877_karina-milei-gira-la-estrategia-y-busca-acordar-con-gobernadores.htm",
+          "date": "2026-07-06T15:04:18+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Karina Milei suma otro alfil a la mesa política y busca debilitar a Patricia Bullrich en el Senado' data-next-head=",
+          "source": "Mnews",
+          "url": "https://mnews.com.ar/comunidad/174492-Karina-Milei-suma-otro-alfil-a-la-mesa-politica-y-busca-debilitar-a-Patricia-Bullrich-en-el-Senado-data-next-head=",
+          "date": "2026-07-06T15:02:59+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "La Libertad Avanza apuesta a fortalecer las estructuras locales con miras al 2027",
+          "source": "Minuto Neuquen",
+          "url": "https://www.minutoneuquen.com/neuquen/2026/7/6/la-libertad-avanza-apuesta-a-fortalecer-las-estructuras-locales-con-miras-al-2027-407622.html",
+          "date": "2026-07-06T15:00:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei y Victoria Villarruel se reencontrarán en Tucumán",
+          "source": "Perfil",
+          "url": "https://www.perfil.com/noticias/politica/javier-milei-y-victoria-villarruel-se-rencontraran-en-tucuman-para-el-acto-oficial-por-el-9-de-julio.phtml",
+          "date": "2026-07-06T14:44:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Ortelli: \"Ravier empieza a ser cuestionado internamente por el circulo de confianza de Karina\"",
+          "source": "Diario Registrado",
+          "url": "https://www.diarioregistrado.com/politica/ortelli---ravier-empieza-a-ser-cuestionado-internamente-por-el-circulo-de-confianza-de-karina-_a6a4bb1dbbea99561b641e44b",
+          "date": "2026-07-06T14:34:01+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Karina Milei lanzó la Escuela de Dirigentes de La Libertad Avanza en Misiones",
+          "source": "noticiasd.com",
+          "url": "https://www.noticiasd.com/argentina/misiones/karina-milei-lanzo-la-escuela-de-dirigentes-de-la-libertad-avanza-en-misiones--201316233",
+          "date": "2026-07-06T14:32:09+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "¿Están dejando solo a Javier Milei en su \"batalla cultural\"?",
+          "source": "Urgente24",
+          "url": "https://urgente24.com/actualidad/estan-dejando-solo-javier-milei-su-batalla-cultural-n628108",
+          "date": "2026-07-06T14:23:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Neuquén: Nadia Márquez acelera su armado en la provincia con la reelección de Javier Milei como prioridad",
+          "source": "Letra P",
+          "url": "https://www.letrap.com.ar/politica/neuquen-nadia-marquez-acelera-su-armado-la-provincia-la-reeleccion-javier-milei-como-prioridad-n5424949",
+          "date": "2026-07-06T14:16:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "El gobierno de PBA sube a Santilli al ring y también lo culpa por el ajuste de Milei",
+          "source": "La Tecla",
+          "url": "https://www.latecla.info/168017-el-gobierno-de-pba-sube-a-santilli-al-ring-y-tambien-lo-culpa-por-el-ajuste-de-milei",
+          "date": "2026-07-06T14:15:54+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Reelección de Javier Milei: \"Hay dos actores propios que le pueden generar mucho daño, Mauricio Macri y Villar...",
+          "source": "Perfil",
+          "url": "https://www.perfil.com/noticias/canal-e/reeleccion-de-javier-milei-hay-dos-actores-propios-que-le-pueden-generar-mucho-dano-mauricio-macri-y-villarruel.phtml",
+          "date": "2026-07-06T14:12:12+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Luis Caputo dijo que su objetivo es que \"Argentina sea grado de inversión para fines del segundo mandato\" de Javier Milei",
+          "source": "Clarin.com",
+          "url": "https://www.clarin.com/videos/luis-caputo-dijo-objetivo-argentina-grado-inversion-fines-segundo-mandato-javier-milei_3_7stYwWHO6u.html",
+          "date": "2026-07-06T14:05:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "La estrategia del oficialismo para la reelección de Javier Milei: eliminar las PASO y un programa para pagar la deuda",
+          "source": "Diario Río Negro",
+          "url": "https://www.rionegro.com.ar/politica/la-estrategia-del-oficialismo-para-la-reeleccion-de-javier-milei-eliminar-las-paso-y-un-programa-para-pagar-la-deuda-4638013/",
+          "date": "2026-07-06T13:46:49+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Valentina Bassi alzó la voz contra el gobierno de Javier Milei y sacudió la televisión: \"Te morís\"",
+          "source": "MDZ Online",
+          "url": "https://www.mdzol.com/mdz-show/valentina-bassi-alzo-la-voz-contra-el-gobierno-javier-milei-y-sacudio-la-television-te-moris-n1559185",
+          "date": "2026-07-06T13:40:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei se embaló con el 4 de Julio y lo sepultaron: \"Traidor a la patria\"",
+          "source": "Urgente24",
+          "url": "https://urgente24.com/medios/javier-milei-celebro-el-4-julio-y-lo-enterraron-criticas-traidor-la-patria-n628091",
+          "date": "2026-07-06T13:15:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei y Victoria Villarruel coincidirán en Tucumán por el Día de la Independencia",
+          "source": "El Eco",
+          "url": "https://www.eleco.com.ar/politica/javier-milei-y-victoria-villarruel-coincidiran-en-tucuman-por-el-dia-de-la-independencia",
+          "date": "2026-07-06T13:03:09+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "La Libertad Avanza busca sesionar en el Senado para debatir propiedad privada, Ley Hojarasca y pliegos judiciales",
+          "source": "Filo News",
+          "url": "https://www.filo.news/noticia/2026/07/06/la-libertad-avanza-busca-sesionar-en-el-senado-para-debatir-propiedad-privada-ley-hojarasca-y-pliegos-judiciales",
+          "date": "2026-07-06T12:57:12+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Torres: “El candidato natural de La Libertad Avanza es Javier Milei”",
+          "source": "ADNSUR",
+          "url": "https://www.adnsur.com.ar/politica/torres---el-candidato-natural-de-la-libertad-avanza-es-javier-milei-_a6a4b83b89897fff6f90d9052",
+          "date": "2026-07-06T12:45:31+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Habrá reencuentro entre Javier Milei y Victoria Villarruel",
+          "source": "Bardeo.news",
+          "url": "https://bardeo.news/politica/habra-reencuentro-entre-javier-milei-y-victoria-villarruel_a6a4b9224210279097dbcbd7e",
+          "date": "2026-07-06T12:28:11+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei y sus medidas, EN VIVO: el Presidente y Victoria Villarruel confirmaron su presencia en la vigilia por el Día de la Independencia en Tucumán",
+          "source": "Impacto Castex",
+          "url": "https://impactocastex.com.ar/?p=22002",
+          "date": "2026-07-06T12:25:34+00:00",
+          "category": "argentina"
+        },
         {
           "title": "El Gobierno pone en marcha una semana clave para ordenar la agenda política camino a las elecciones 2027",
           "source": "Ambito",
@@ -399,24 +3213,59 @@
           "category": "argentina"
         },
         {
-          "title": "La Libertad Avanza se reunió en Neuquén y comienza a delinear la estrategia para 2027",
-          "source": "La Tecla Patagonia",
-          "url": "https://www.lateclapatagonia.com.ar/99466-la-libertad-avanza-se-reunio-en-neuquen-y-comienza-a-delinear-la-estrategia-para-2027",
-          "date": "2026-07-06T12:01:06+00:00",
+          "title": "La consultora que vió el triunfo de Javier Milei le trae malas noticias sobre corrupción y Patricia Bullrich",
+          "source": "Urgente24",
+          "url": "https://urgente24.com/actualidad/la-consultora-que-vio-el-triunfo-javier-milei-le-trae-malas-noticias-corrupcion-y-patricia-bullrich-n628095",
+          "date": "2026-07-06T12:19:41+00:00",
           "category": "argentina"
         },
         {
-          "title": "La Libertad Avanza busca apoyo en el Senado para sesionar la reforma de la propiedad privada la próxima semana",
-          "source": "Canal 12 Web",
-          "url": "https://canal12web.com/la-libertad-avanza-busca-apoyo-en-el-senado-para-sesionar-la-reforma-de-la-propiedad-privada-la-proxima-semana/",
-          "date": "2026-07-06T11:35:13+00:00",
+          "title": "Javier Milei y Karina Milei no le sueltan la mano a Manuel Adorni y le envían un mensaje a La Libertad Avanza",
+          "source": "El Observador",
+          "url": "https://www.elobservador.com.uy/argentina/politica/javier-milei-y-karina-milei-no-le-sueltan-la-mano-manuel-adorni-y-le-envian-un-mensaje-la-libertad-avanza-n6049811",
+          "date": "2026-07-06T12:04:00+00:00",
           "category": "argentina"
         },
         {
-          "title": "Con más reservas y menos vencimientos, Javier Milei presenta su plan para consolidar el programa financiero",
+          "title": "Javier Milei y Victoria Villarruel coincidirán en el acto de Tucumán, en un clima de plena tensión",
           "source": "MDZ Online",
-          "url": "https://www.mdzol.com/dinero/con-mas-reservas-y-menos-vencimientos-javier-milei-presenta-su-plan-consolidar-el-programa-financiero-n1559087",
-          "date": "2026-07-06T10:58:59+00:00",
+          "url": "https://www.mdzol.com/politica/javier-milei-y-victoria-villarruel-coincidiran-el-acto-tucuman-un-clima-plena-tension-n1559130",
+          "date": "2026-07-06T12:01:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Karina Milei teje acuerdos con los gobernadores y deja afuera a los libertarios",
+          "source": "El Ágora Digital",
+          "url": "https://elagora.digital/argentina/karina-milei-acuerdo-gobernadores-candidatos-libertarios-santilli/",
+          "date": "2026-07-06T11:34:21+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei y Victoria Villarruel volverán a mostrarse juntos en Tucumán en medio de una fuerte interna política",
+          "source": "Radio LV11",
+          "url": "https://www.radiolv11.com.ar/noticia/javier-milei-y-victoria-villarruel-volveran-a-mostrarse-juntos-en-tucuman-en-medio-de-una-fuerte-interna-politica",
+          "date": "2026-07-06T11:24:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei y sus medidas, EN VIVO: el Presidente y Victori · Examedia",
+          "source": "examedia.com.ar",
+          "url": "https://www.examedia.com.ar/portada/post/87445222",
+          "date": "2026-07-06T11:04:29+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "La Libertad Avanza comenzó a mover sus fichas en Neuquén y apunta a fortalecer su estructura rumbo a 2027",
+          "source": "Diario Neuquino",
+          "url": "https://diarioneuquino.com.ar/la-libertad-avanza-comenzo-a-mover-sus-fichas-en-neuquen-y-apunta-a-fortalecer-su-estructura-rumbo-a-2027/",
+          "date": "2026-07-06T10:46:39+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei y sus medidas de Gobierno EN VIVO: últimas noticias del 6 de julio, minuto a minuto",
+          "source": "El Destape",
+          "url": "https://www.eldestapeweb.com/politica/caputo-presenta-plan-economico-gobierno-revela-pago-deuda-externa-20267673920",
+          "date": "2026-07-06T10:40:33+00:00",
           "category": "argentina"
         },
         {
@@ -427,10 +3276,45 @@
           "category": "argentina"
         },
         {
+          "title": "Una encuesta mostró una mejora en la imagen de Javier Milei y una baja de dirigentes peronistas",
+          "source": "Aire de Santa Fe",
+          "url": "https://www.airedesantafe.com.ar/politica/una-encuesta-mostro-una-mejora-la-imagen-javier-milei-y-una-baja-dirigentes-peronistas-n662322",
+          "date": "2026-07-06T10:03:08+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Cómo se vive en el Gobierno la salida de Manuel Adorni",
+          "source": "Ambito",
+          "url": "https://www.ambito.com/politica/como-se-vive-el-gobierno-la-salida-manuel-adorni-n6296402",
+          "date": "2026-07-06T10:00:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Under new Trump administration proposal, a few hundred Mainers could lose permanent housing",
+          "source": "Maine Public",
+          "url": "https://www.mainepublic.org/politics/2026-07-06/under-new-trump-administration-proposal-a-few-hundred-mainers-could-lose-permanent-housing",
+          "date": "2026-07-06T09:57:00+00:00",
+          "category": "usa"
+        },
+        {
           "title": "El Gobierno reordena su estrategia legislativa y busca apoyos para avanzar con la reforma electoral",
           "source": "TN",
           "url": "https://tn.com.ar/politica/2026/07/06/el-gobierno-reordena-su-estrategia-legislativa-y-busca-apoyos-para-avanzar-con-la-reforma-electoral/",
           "date": "2026-07-06T08:52:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "El Gobierno abre la semana con cambios en Inocencia Fiscal y el ruido del caso Adorni en el Congreso",
+          "source": "Perfil",
+          "url": "https://www.perfil.com/noticias/politica/el-gobierno-abre-la-semana-con-cambios-en-inocencia-fiscal-y-el-ruido-del-caso-adorni-en-el-congreso.phtml",
+          "date": "2026-07-06T08:00:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "La Libertad Avanza Tandil inauguró su nuevo local partidario en el centro de la ciudad",
+          "source": "El diario de Tandil",
+          "url": "https://www.eldiariodetandil.com/nota-la-libertad-avanza-tandil-inauguro-su-nuevo-local-partidario-en-el-centro-de-la-ciudad-101693",
+          "date": "2026-07-06T07:23:12+00:00",
           "category": "argentina"
         },
         {
@@ -448,6 +3332,48 @@
           "category": "argentina"
         },
         {
+          "title": "Karina Milei encabezará la reunión de mesa política",
+          "source": "Tendencia de Noticias",
+          "url": "https://tendenciadenoticias.com.ar/politica/karina-milei-encabezara-la-reunion-de-mesa-politica",
+          "date": "2026-07-06T05:03:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "El Gobierno avanza con cambios en inocencia fiscal: la estrategia parlamentaria y el factor Adorni que sigue complicando",
+          "source": "Infobae",
+          "url": "https://www.infobae.com/politica/2026/07/06/el-gobierno-avanza-con-cambios-en-inocencia-fiscal-la-estrategia-parlamentaria-y-el-factor-adorni-que-sigue-complicando/?outputType=amp-type",
+          "date": "2026-07-06T04:03:27+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "La Libertad Avanza busca acuerdo para sesionar la próxima semana y tratar propiedad privada",
+          "source": "Agencia Noticias Argentinas",
+          "url": "https://noticiasargentinas.com/politica/la-libertad-avanza-busca-acuerdo-para-sesionar-la-proxima-semana-y-tratar-propiedad-privada_a6a4b0935d35c29fedf0d925a",
+          "date": "2026-07-06T04:00:18+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei y sus medidas, en vivo: el plan para pagar la deuda hasta 2027 y la reforma electoral",
+          "source": "examedia.com.ar",
+          "url": "https://www.examedia.com.ar/portada/post/87444672",
+          "date": "2026-07-06T03:53:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Milei eliminó el Ministerio del Interior en Argentina",
+          "source": "El Economista",
+          "url": "https://www.eleconomista.com.mx/internacionales/milei-elimino-ministerio-interior-argentina-20260705-821797.html",
+          "date": "2026-07-06T03:45:25+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Los riesgos del plan de La Libertad Avanza para el Congreso en la era post Adorni",
+          "source": "examedia.com.ar",
+          "url": "https://www.examedia.com.ar/portada/post/87444578",
+          "date": "2026-07-06T03:12:00+00:00",
+          "category": "argentina"
+        },
+        {
           "title": "Récord histórico de recambios: Javier Milei se convierte en el presidente con más Jefes de Gabinete en un solo período de gobierno – Foro de Baires",
           "source": "Foro de Baires",
           "url": "https://forodebaires.com.ar/record-historico-de-recambios-javier-milei-se-convierte-en-el-presidente-con-mas-jefes-de-gabinete-en-un-solo-periodo-de-gobierno/",
@@ -455,15 +3381,50 @@
           "category": "argentina"
         },
         {
-          "title": "El nuevo tablero de Javier Milei: Diego Santilli al frente, Karina con más poder y la obsesión por las PASO",
-          "source": "MDZ Online",
-          "url": "https://www.mdzol.com/politica/el-nuevo-tablero-javier-milei-diego-santilli-al-frente-karina-mas-poder-y-la-obsesion-las-paso-n1558828/amp",
-          "date": "2026-07-06T01:38:00+00:00",
+          "title": "El presidente Javier Milei llegó a Bahía Blanca tras el temporal que destrozó la ciudad",
+          "source": "La Opinion Online",
+          "url": "https://laopinionline.ar/articulo/el-presidente-javier-milei-llego-a-bahia-blanca-tras-el-temporal-que-destrozo-la-ciudad",
+          "date": "2026-07-06T02:55:11+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei y Victoria Villarruel coincidirán en Tucumán para la vigilia del Día de la Independencia",
+          "source": "C5N",
+          "url": "https://www.c5n.com/politica/javier-milei-y-victoria-villarruel-coincidiran-tucuman-la-vigilia-del-dia-la-independencia-n242749",
+          "date": "2026-07-06T02:48:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Rolando Graña reveló el dato que preocupa a Javier Milei: \"Las encuestas...\"",
+          "source": "El Destape",
+          "url": "https://www.eldestapeweb.com/espectaculos/rolando-grana-revelo-dato-preocupa-javier-milei-20267523384",
+          "date": "2026-07-06T02:40:11+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Milei se hunde en las encuestas: la desaprobación llega al 58%, con la \"corrupción\" como problema principal",
+          "source": "MinutoUno",
+          "url": "https://www.minutouno.com/politica/milei-se-hunde-las-encuestas-la-desaprobacion-llega-al-58-la-corrupcion-como-problema-principal-n6296489",
+          "date": "2026-07-06T02:25:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Manuel Adorni renunció a la jefatura de Gabinete tras tres meses y medio de escándalo patrimonial: Santilli, el nombre que suena para sucederlo",
+          "source": "La Opinion Online",
+          "url": "https://laopinionline.ar/articulo/manuel-adorni-renuncio-la-jefatura-gabinete-tres-meses-y-medio-escandalo-patrimonial-santilli-el-nombre-que-suena-sucederlo",
+          "date": "2026-07-06T02:23:50+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Desastre de Karina Milei, Lule Menem y los periodistas 'de la casa'",
+          "source": "Urgente24",
+          "url": "https://urgente24.com/actualidad/desastre-karina-milei-lule-menem-y-los-periodistas-de-la-casa-n628080",
+          "date": "2026-07-06T02:17:00+00:00",
           "category": "argentina"
         }
       ],
       "first_seen": "2026-07-06T04:52:02+00:00",
-      "last_seen": "2026-07-06T16:00:39+00:00"
+      "last_seen": "2026-07-07T04:33:30+00:00"
     }
   ]
 }
