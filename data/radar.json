@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-08T04:01:20+00:00",
+  "updated_at": "2026-07-08T15:03:32+00:00",
   "lookback_hours": 48,
   "model": "Mistral Large",
   "status": "ok",
@@ -7,43 +7,166 @@
     {
       "id": "far-right-leaders-face-legal-and-political-challenges",
       "title": "Far-right leaders face legal and political challenges",
-      "blurb": "Marine Le Pen's eligibility ruling and Nigel Farage's resignation to trigger a by-election dominate far-right news, reflecting shared struggles with legal constraints and political legitimacy across France and the UK. Both leaders frame their actions as battles against establishment forces, resonating with their transnational base.",
+      "blurb": "Multiple far-right leaders across Europe are confronting legal troubles and political backlash. Marine Le Pen's conviction and ineligibility for office, Nigel Farage's financial scandals, and Hungary's media crackdowns highlight a pattern of legal and political pressure on right-wing figures.",
       "convergence": 5,
       "countries": [
         {
           "name": "🇫🇷 Rassemblement National",
-          "note": "Le Pen's reduced ineligibility sentence allows her to run for president in 2027, sparking debates on judicial leniency and political opportunism."
+          "note": "Marine Le Pen convicted of embezzlement, faces ineligibility but appeals to run in 2027 presidential election"
         },
         {
           "name": "🇬🇧 Reform UK",
-          "note": "Farage resigns as MP to contest a by-election amid financial scrutiny, framing it as a 'people vs establishment' fight."
+          "note": "Nigel Farage resigns as MP amid financial scandals, triggering a by-election"
         },
         {
           "name": "🇪🇸 Vox",
-          "note": "Abascal criticizes Trump's attacks on Meloni, signaling a strategic shift in European far-right alliances."
+          "note": "Vox officials face resignations and investigations, including a probe into a communications director"
         },
         {
           "name": "🇮🇹 Fratelli d'Italia / Lega",
-          "note": "Meloni's diplomatic tensions with Trump highlight far-right divisions over NATO and national sovereignty."
+          "note": "Giorgia Meloni faces diplomatic tensions with Trump, legal scrutiny over party financing"
         },
         {
           "name": "🇩🇪 Alternative für Deutschland",
-          "note": "AfD faces EU scrutiny over its party status, mirroring Le Pen's legal battles with EU institutions."
+          "note": "AfD faces protests, internal power struggles, and legal challenges over extremist ties"
+        },
+        {
+          "name": "🇭🇺 Fidesz / Tisza",
+          "note": "Hungary's public media crackdown sparks protests and legal battles over press freedom"
         }
       ],
       "signals": [
-        "judicial leniency",
-        "anti-establishment framing",
-        "transnational far-right coordination",
-        "electoral gambits"
+        "legal pressure",
+        "political backlash",
+        "judicial interference",
+        "media crackdowns"
       ],
-      "article_count": 200,
+      "article_count": 150,
       "refs": [
         {
-          "title": "Avec sa candidature à la présidentielle de 2027, Marine Le Pen la «miraculée» place la France «en territoire inconnu», analyse la presse",
-          "source": "Le Temps",
-          "url": "https://www.letemps.ch/monde/france/avec-sa-candidature-a-la-presidentielle-de-2027-marine-le-pen-la-miraculee-place-la-france-en-territoire-inconnu-analyse-la-presse",
-          "date": "2026-07-08T02:21:51+00:00",
+          "title": "Marine Le Pen condamnée : ce qu’il faut savoir sur le bracelet électronique",
+          "source": "Le Club des Juristes",
+          "url": "https://www.leclubdesjuristes.com/justice/marine-le-pen-condamnee-ce-quil-faut-savoir-sur-le-bracelet-electronique-16864/",
+          "date": "2026-07-08T13:49:51+00:00",
+          "category": "france"
+        },
+        {
+          "title": "\"Je me réjouis\" : la réaction de Jordan Bardella à la candidature de Marine Le Pen à la présidentielle 2027",
+          "source": "Orange Actualités",
+          "url": "https://actu.orange.fr/politique/je-me-rejouis-la-reaction-de-jordan-bardella-a-la-candidature-de-marine-le-pen-a-la-presidentielle-2027-magic-CNT000002qpxYM.html",
+          "date": "2026-07-08T13:34:00+00:00",
+          "category": "france"
+        },
+        {
+          "title": "What to know about Nigel Farage’s dramatic resignation and political gambit",
+          "source": "AP News",
+          "url": "https://apnews.com/article/britain-farage-reform-election-what-to-know-c19066252386ffd88ef13fdbf0516a25",
+          "date": "2026-07-08T12:36:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Présidentielle 2027 : Marine Le Pen et Jordan Bardella main dans la main pour la campagne",
+          "source": "France 24",
+          "url": "https://www.france24.com/fr/france/20260708-jordan-bardella-se-r%C3%A9jouit-marine-le-pen-pr%C3%A9sidentielle-2027-extreme-droite-rassemblement-national-campagne",
+          "date": "2026-07-08T12:20:32+00:00",
+          "category": "france"
+        },
+        {
+          "title": "\"Je ne joue pas la montre\", assure Marine Le Pen à propos de son pourvoi en cassation, au lendemain de sa condamnation et de sa candidature à la présidentielle",
+          "source": "franceinfo",
+          "url": "https://www.franceinfo.fr/politique/front-national/affaire-des-assistants-fn-au-parlement-europeen/video-marine-le-pen-condamnee-en-appel-je-ne-joue-pas-la-montre-declare-la-candidate-rn-a-la-presidentielle-a-propos-de-son-pourvoi-en-cassation_8099414.html",
+          "date": "2026-07-08T12:03:35+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Marine Le Pen lance sa campagne à La Flèche, dans la Sarthe, et goûte un premier bain de foule après sa condamnation",
+          "source": "franceinfo",
+          "url": "https://www.franceinfo.fr/politique/front-national/affaire-des-assistants-fn-au-parlement-europeen/marine-le-pen-lance-sa-campagne-a-la-fleche-dans-la-sarthe-et-goute-un-premier-bain-de-foule-apres-sa-condamnation_8099402.html",
+          "date": "2026-07-08T11:38:45+00:00",
+          "category": "france"
+        },
+        {
+          "title": "\"La campagne démarre\" : après sa condamnation, Marine Le Pen au marché de La Flèche avec Jordan Bardella",
+          "source": "Radio France",
+          "url": "https://www.radiofrance.fr/franceinter/podcasts/l-info-de-france-inter/la-campagne-demarre-apres-sa-condamnation-marine-le-pen-au-marche-de-la-fleche-avec-jordan-bardella-3760714",
+          "date": "2026-07-08T11:31:34+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Candidate à la présidentielle 2027, Marine Le Pen dévoile son affiche de campagne : \"Pour la France, la Renaissance\"",
+          "source": "TF1 Info",
+          "url": "https://www.tf1info.fr/politique/candidate-a-la-election-presidentielle-2027-marine-le-pen-rn-devoile-son-affiche-de-campagne-pour-la-france-la-renaissance-2451969.html",
+          "date": "2026-07-08T10:49:26+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Marine Le Pen sous bracelet électronique avant l'élection présidentielle : ce scénario a-t-il des chances d'arriver",
+          "source": "TF1 Info",
+          "url": "https://www.tf1info.fr/politique/marine-le-pen-sous-bracelet-electronique-avant-l-election-presidentielle-2027-ce-scenario-a-t-il-des-chances-d-arriver-oui-ou-non-2451985.html",
+          "date": "2026-07-08T10:09:01+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Marine Le Pen candidate à la présidentielle : dans son fief de Hénin-Beaumont, les électeurs soulagés ou agacés",
+          "source": "ici.fr",
+          "url": "https://www.ici.fr/hauts-de-france/pas-de-calais-62/henin-beaumont/marine-le-pen-candidate-a-la-presidentielle-dans-son-fief-de-henin-beaumont-les-electeurs-soulages-ou-agaces-6932902",
+          "date": "2026-07-08T09:52:43+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Marine Le Pen launches 2027 presidential bid despite conviction",
+          "source": "The Connexion",
+          "url": "https://www.connexionfrance.com/news/marine-le-pen-launches-2027-presidential-bid-despite-conviction/800796",
+          "date": "2026-07-08T09:23:17+00:00",
+          "category": "general"
+        },
+        {
+          "title": "Marine Le Pen condamnée mais candidate à la présidentielle : \"un risque considérable\" vu de l'étranger",
+          "source": "L'Express",
+          "url": "https://www.lexpress.fr/politique/marine-le-pen-condamnee-mais-candidate-a-la-presidentielle-un-risque-considerable-vu-de-letranger-UJBAJOBX6JBMLNZ56PPOYI3LDE/",
+          "date": "2026-07-08T08:43:38+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Marine Le Pen candidate à la présidentielle 2027 : pourvoi en cassation, bracelet, calendrier… Les questions qui se posent",
+          "source": "Sud Ouest",
+          "url": "https://www.sudouest.fr/politique/marine-le-pen/marine-le-pen-candidate-a-la-presidentielle-2027-pourvoi-en-cassation-bracelet-calendrier-les-questions-qui-se-posent-29847298.php",
+          "date": "2026-07-08T08:05:13+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Présidentielle 2027 : Marine Le Pen «débutera» sa campagne «sans bracelet», assure la procureure générale de la cour d’appel de Paris",
+          "source": "Le Figaro",
+          "url": "https://www.lefigaro.fr/politique/presidentielle-2027-marine-le-pen-debutera-sa-campagne-sans-bracelet-assure-la-procureure-generale-de-la-cour-d-appel-de-paris-20260708",
+          "date": "2026-07-08T07:49:44+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Marine Le Pen condamnée en appel : \"Un vent de démocratie a soufflé dans cette cour d'appel\", réagit Laure Lavalette, députée RN du Var",
+          "source": "franceinfo",
+          "url": "https://www.franceinfo.fr/replay-magazine/franceinfo/l-invite-politique/l-invite-politique-du-mercredi-08-juillet-2026_8066756.html",
+          "date": "2026-07-08T07:18:41+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Marine Le Pen : comment son pourvoi en cassation pourrait se retourner contre elle",
+          "source": "L'Express",
+          "url": "https://www.lexpress.fr/politique/marine-le-pen-comment-son-pourvoi-en-cassation-pourrait-se-retourner-contre-elle-WLXGZCI5KBBVBHF7SDRI3VI23M/",
+          "date": "2026-07-08T06:12:49+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Décryptage. Marine Le Pen se pourvoit en cassation : pourrait-elle entrer à l'Élysée avec un bracelet électronique ?",
+          "source": "Le Dauphiné Libéré",
+          "url": "https://www.ledauphine.com/faits-divers-justice/2026/07/08/marine-le-pen-se-pourvoit-en-cassation-pourrait-elle-entrer-a-l-elysee-avec-un-bracelet-electronique",
+          "date": "2026-07-08T05:11:33+00:00",
+          "category": "france"
+        },
+        {
+          "title": "\"Faites ce que je dis, pas ce que je fais\": Marine Le Pen pointée du doigt par ses rivaux pour la présidentielle 2027",
+          "source": "RMC",
+          "url": "https://rmc.bfmtv.com/actualites/politique/faites-ce-que-je-dis-pas-ce-que-je-fais-marine-le-pen-pointee-du-doigt-par-ses-rivaux-pour-la-presidentielle-2027_AN-202607080082.html",
+          "date": "2026-07-08T04:23:23+00:00",
           "category": "france"
         },
         {
@@ -61,10 +184,10 @@
           "category": "france"
         },
         {
-          "title": "Affiche de campagne de Marine Le Pen: \"Ce n'est qu'un hommage fait par l'extrême droite à la Macronie\", selon Danièle Obono, députée \"La France insoumise\" de Paris",
-          "source": "BFM",
-          "url": "https://www.bfmtv.com/politique/elections/video-affiche-de-campagne-de-marine-le-pen-ce-n-est-qu-un-hommage-fait-par-l-extreme-droite-a-la-macronie-selon-daniele-obono-deputee-la-france-insoumise-de-paris_VN-202607070927.html",
-          "date": "2026-07-07T21:37:38+00:00",
+          "title": "\"Un tapis avec une paire de 4\" : pourquoi la candidature de Marine Le Pen malgré sa condamnation est un coup de poker",
+          "source": "RTL",
+          "url": "https://www.rtl.fr/actu/politique/un-tapis-avec-une-paire-de-4-pourquoi-la-candidature-de-marine-le-pen-malgre-sa-condamnation-est-un-coup-de-poker-7900653485",
+          "date": "2026-07-07T21:33:37+00:00",
           "category": "france"
         },
         {
@@ -75,32 +198,11 @@
           "category": "france"
         },
         {
-          "title": "Marine Le Pen to run for French presidency despite losing court appeal",
-          "source": "Yahoo News Singapore",
-          "url": "https://sg.news.yahoo.com/french-court-clears-path-le-131504500.html",
-          "date": "2026-07-07T20:56:07+00:00",
-          "category": "general"
-        },
-        {
-          "title": "Revealed: Farage’s £5m gift reported to UK crime agency over money laundering concerns",
-          "source": "The Guardian",
-          "url": "https://www.theguardian.com/politics/2026/jul/07/revealed-farages-5m-gift-reported-to-uk-agency-over-money-laundering-concerns",
-          "date": "2026-07-07T20:35:00+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "French far-right leader Marine Le Pen says she will run for president in 2027 – video",
-          "source": "The Guardian",
-          "url": "https://www.theguardian.com/world/video/2026/jul/07/french-far-right-leader-marine-le-pen-says-she-will-run-for-president-in-2027-video",
-          "date": "2026-07-07T20:13:00+00:00",
-          "category": "general"
-        },
-        {
-          "title": "Nigel Farage accused of ‘desperate stunt’ after quitting UK parliament in face of financial scrutiny",
-          "source": "The Guardian",
-          "url": "https://www.theguardian.com/politics/2026/jul/07/nigel-farage-rejects-scrutiny-uk-parliament-people-v-establishment-byelection",
-          "date": "2026-07-07T19:38:00+00:00",
-          "category": "uk"
+          "title": "Présidentielle: Marine Le Pen choisit le tribunal des urnes",
+          "source": "l'Opinion",
+          "url": "https://www.lopinion.fr/politique/marine-le-pen-choisit-le-tribunal-des-urnes",
+          "date": "2026-07-07T20:30:00+00:00",
+          "category": "france"
         },
         {
           "title": "Marine Le Pen vows to run in presidential election despite ankle bracelet ruling",
@@ -110,131 +212,107 @@
           "category": "general"
         },
         {
-          "title": "France-Marine Le Pen défie la justice et annonce sa candidature en 2027",
-          "source": "Boursorama",
-          "url": "https://www.boursorama.com/actualite-economique/actualites-amp/france-marine-le-pen-defie-la-justice-et-annonce-sa-candidature-en-2027-02ba3174189334edfa660c817777ff80",
-          "date": "2026-07-07T19:07:19+00:00",
+          "title": "Marine Le Pen, 30 ans de combat politique et une quatrième candidature à la présidentielle",
+          "source": "La Croix",
+          "url": "https://www.la-croix.com/politique/marine-le-pen-30-ans-de-combat-politique-et-une-quatrieme-candidature-a-la-presidentielle-20260707",
+          "date": "2026-07-07T18:54:44+00:00",
           "category": "france"
-        },
-        {
-          "title": "\"Je suis candidate à la présidentielle\": Marine Le Pen officialise sa candidature pour 2027",
-          "source": "BFM",
-          "url": "https://www.bfmtv.com/politique/elections/presidentielle/video-je-suis-candidate-a-la-presidentielle-marine-le-pen-officialise-sa-candidature-pour-2027_VN-202607070834.html",
-          "date": "2026-07-07T18:52:18+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Marine Le Pen annonce être candidate à la présidentielle et va se pourvoir en cassation",
-          "source": "France 24",
-          "url": "https://www.france24.com/fr/france/20260707-marine-le-pen-annonce-%C3%AAtre-candidate-%C3%A0-la-pr%C3%A9sidentielle-et-va-se-pourvoir-en-cassation",
-          "date": "2026-07-07T18:39:13+00:00",
-          "category": "france"
-        },
-        {
-          "title": "\"Je ne changerai pas d'avis\": condamnée en appel mais éligible, Marine Le Pen confirme être candidate à l'élection présidentielle 2027",
-          "source": "BFM",
-          "url": "https://www.bfmtv.com/politique/front-national/je-ne-changerai-pas-d-avis-condamnee-en-appel-mais-eligible-marine-le-pen-confirme-etre-candidate-a-l-election-presidentielle-2027_AN-202607070804.html",
-          "date": "2026-07-07T18:18:24+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Marine Le Pen condamnée à 1 an ferme sous bracelet, mais éligible en 2027, elle pourrait être candidate à la présidentielle",
-          "source": "Public Sénat",
-          "url": "https://www.publicsenat.fr/actualites/politique/marine-le-pen-condamnee-a-1-an-ferme-sous-bracelet-mais-eligible-en-2027-pourrait-etre-candidate-a-la-presidentielle",
-          "date": "2026-07-07T17:27:37+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Marine Le Pen peut se présenter malgré sa condamnation",
-          "source": "Libre Journal",
-          "url": "https://librejournal.fr/article/presidentielle-les-juges-laissent-marine-le-pen-decider/",
-          "date": "2026-07-07T16:43:46+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Condamnation allégée pour Marine Le Pen : une victoire de la stratégie du RN ?",
-          "source": "France 24",
-          "url": "https://www.france24.com/fr/france/20260707-condamnation-allegee-marine-le-pen-victoire-strategie-rassemblement-national-pr%C3%A9sidentielle",
-          "date": "2026-07-07T16:04:53+00:00",
-          "category": "france"
-        },
-        {
-          "title": "French far-right leader Marine Le Pen cleared to run for president but with ankle monitor",
-          "source": "Saudi Gazette",
-          "url": "https://saudigazette.com.sa/article/662811/world/french-far-right-chief-marine-le-pen-cleared-to-run-for-president-but-with-ankle-monitor",
-          "date": "2026-07-07T15:53:00+00:00",
-          "category": "general"
-        },
-        {
-          "title": "French court clears Le Pen for 2027 presidential run under condition she rejects",
-          "source": "The Times of Israel",
-          "url": "https://www.timesofisrael.com/french-court-clears-le-pen-for-2027-presidential-run-under-condition-she-rejects/",
-          "date": "2026-07-07T15:26:02+00:00",
-          "category": "general"
-        },
-        {
-          "title": "French far-right chief Marine Le Pen cleared to run for President but with ankle tag",
-          "source": "The Hindu",
-          "url": "https://www.thehindu.com/news/international/french-far-right-chief-marine-le-pen-cleared-to-run-for-president-but-with-ankle-tag/article71194169.ece",
-          "date": "2026-07-07T14:17:27+00:00",
-          "category": "general"
-        },
-        {
-          "title": "'Decision time' for far right National Rally as ruling clears Le Pen's way for election run",
-          "source": "France 24",
-          "url": "https://www.france24.com/en/decision-time-for-far-right-national-rally-as-ruling-clears-le-pen-s-way-for-election-run",
-          "date": "2026-07-07T13:10:13+00:00",
-          "category": "general"
-        },
-        {
-          "title": "French court clears way for far-right leader Le Pen to run in 2027, with ankle bracelet",
-          "source": "France 24",
-          "url": "https://www.france24.com/en/europe/20260707-french-court-clears-way-for-far-right-leader-le-pen-to-run-in-2027-with-ankle-bracelet",
-          "date": "2026-07-07T12:24:00+00:00",
-          "category": "general"
-        },
-        {
-          "title": "French court allows far-right leader Marine Le Pen to run for president with ankle tag — a condition she rejects",
-          "source": "NBC News",
-          "url": "https://www.nbcnews.com/world/europe/france-far-right-marine-le-pen-presidential-election-macron-rcna353271",
-          "date": "2026-07-07T12:08:47+00:00",
-          "category": "general"
         }
       ],
       "first_seen": "2026-07-08T04:01:20+00:00",
-      "last_seen": "2026-07-08T04:01:20+00:00"
+      "last_seen": "2026-07-08T15:03:32+00:00"
     },
     {
       "id": "mileis-shutdown-policy-sparks-global-right-wing-emulation",
       "title": "Milei’s ‘shutdown’ policy sparks global right-wing emulation",
-      "blurb": "Argentina’s Javier Milei proposes a U.S.-style government ‘shutdown’ to cap public spending, inspiring parallel debates in Europe and the U.S. about fiscal austerity and state overreach. The policy’s cross-national appeal underscores a shared right-wing agenda of shrinking the state.",
+      "blurb": "Javier Milei's proposal for a U.S.-style government shutdown to cap public spending is gaining traction among right-wing leaders in Europe and the U.S. Similar fiscal policies are being debated in Spain, Italy, and Germany as a way to curb state expenditure and enforce fiscal discipline.",
       "convergence": 4,
       "countries": [
         {
           "name": "🇦🇷 La Libertad Avanza",
-          "note": "Milei announces a U.S.-style 'shutdown' law to freeze public spending when budgets are exhausted, alongside Central Bank reforms."
+          "note": "Milei proposes 'shutdown' law to halt state spending when budget is exhausted"
         },
         {
           "name": "🇺🇸 MAGA / Trump",
-          "note": "Trump’s administration previously implemented shutdowns, providing a model for Milei’s proposal."
+          "note": "Trump administration's shutdowns and fiscal policies cited as inspiration for Milei"
         },
         {
           "name": "🇪🇸 Vox",
-          "note": "Vox’s economic policies in Andalusia echo Milei’s austerity measures, focusing on reducing public spending."
+          "note": "Vox pushes for fiscal austerity measures in regional governments, aligning with Milei's proposals"
         },
         {
           "name": "🇮🇹 Fratelli d'Italia / Lega",
-          "note": "Lega’s Tovaglieri proposes biofuels over electric cars, aligning with Milei’s deregulatory approach to economic policy."
+          "note": "Meloni's government debates fiscal reforms to align with NATO spending targets, inspired by Milei's approach"
+        },
+        {
+          "name": "🇩🇪 Alternative für Deutschland",
+          "note": "AfD advocates for reduced public spending and fiscal discipline, echoing Milei's policies"
         }
       ],
       "signals": [
         "policy imitation",
-        "austerity contagion",
-        "state-shrinking rhetoric",
-        "transatlantic right-wing alignment"
+        "fiscal austerity",
+        "government shutdown",
+        "economic reform"
       ],
-      "article_count": 150,
+      "article_count": 80,
       "refs": [
+        {
+          "title": "Javier Milei habló de una inflación por debajo del 2% para junio y busca blindar el equilibrio fiscal por ley",
+          "source": "Ambito",
+          "url": "https://www.ambito.com/politica/javier-milei-hablo-una-inflacion-debajo-del-2-junio-y-busca-blindar-el-equilibrio-fiscal-ley-n6297495",
+          "date": "2026-07-08T13:47:45+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "SPD-Spitzenkandidat in NRW drängt auf AfD-Verbotsverfahren",
+          "source": "Oldenburger Onlinezeitung",
+          "url": "https://www.oldenburger-onlinezeitung.de/nachrichten/spd-spitzenkandidat-in-nrw-draengt-auf-afd-verbotsverfahren-214331.html",
+          "date": "2026-07-08T13:00:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Qué es el 'shutdown' que Javier Milei quiere implementar en Argentina como en Estados Unidos",
+          "source": "Mnews",
+          "url": "https://mnews.com.ar/politica/174677-Que-es-el-shutdown-que-Javier-Milei-quiere-implementar-en-Argentina%C2%A0-como-en-Estados-Unidos",
+          "date": "2026-07-08T11:37:35+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei diseña un proyecto de ley para paralizar los gastos estatales cuando se agote el presupuesto",
+          "source": "Radio LV11",
+          "url": "https://www.radiolv11.com.ar/noticia/javier-milei-disena-un-proyecto-de-ley-para-paralizar-los-gastos-estatales-cuando-se-agote-el-presupuesto-",
+          "date": "2026-07-08T11:15:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei adelantó que impulsará un “shutdown” al estilo de Estados Unidos: de qué se trata el proyecto",
+          "source": "Radio Mitre",
+          "url": "https://radiomitre.cienradios.com/politica/javier-milei-adelanto-que-impulsara-un-shutdown-al-estilo-de-estados-unidos-de-que-se-trata-el-proyecto/",
+          "date": "2026-07-08T10:39:26+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "La estrategia de las \"adhesiones\": el plan de la Casa Rosada para licuar al PRO y golpear al PJ en las urnas",
+          "source": "Diario Río Negro",
+          "url": "https://www.rionegro.com.ar/politica/la-estrategia-de-las-adhesiones-el-plan-de-la-casa-rosada-para-licuar-al-pro-y-golpear-al-pj-en-las-urnas-4640489/",
+          "date": "2026-07-08T10:08:35+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Milei plans US-style government shutdown mechanism to cap Argentina's spending",
+          "source": "MercoPress",
+          "url": "https://en.mercopress.com/2026/07/08/milei-plans-us-style-government-shutdown-mechanism-to-cap-argentina-s-spending",
+          "date": "2026-07-08T07:20:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Reforma electoral y alianzas: la condición que fija el Gobierno para negociar con los aliados rumbo a 2027",
+          "source": "Infobae",
+          "url": "https://www.infobae.com/politica/2026/07/08/reforma-electoral-y-alianzas-la-condicion-que-fija-el-gobierno-para-negociar-con-los-aliados-rumbo-a-2027/",
+          "date": "2026-07-08T05:38:44+00:00",
+          "category": "argentina"
+        },
         {
           "title": "Qué es el \"shutdown\", el proyecto de Javier Milei para \"apagar el Estado\" como en Estados Unidos",
           "source": "MDZ Online",
@@ -271,17 +349,10 @@
           "category": "argentina"
         },
         {
-          "title": "Javier Milei anunció que prepara un proyecto inspirado en el “shutdown” de Estados Unidos para limitar los gastos del Estado",
-          "source": "TN",
-          "url": "https://tn.com.ar/politica/2026/07/07/javier-milei-anuncio-que-prepara-un-proyecto-inspirado-en-el-shutdown-de-estados-unidos-para-limitar-los-gastos-del-estado/",
-          "date": "2026-07-07T22:54:32+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Javier Milei adelantó que presentará un proyecto de \"cierre\" del Estado como en EE.UU.",
-          "source": "Perfil",
-          "url": "https://www.perfil.com/noticias/economia/javier-milei-adelanto-que-presentara-un-proyecto-de-cierre-del-estado-como-en-eeuu-a40.phtml",
-          "date": "2026-07-07T22:10:07+00:00",
+          "title": "Javier Milei prepara un proyecto de \"apagón\" del Estado para limitar el gasto público cuando se agote el Presupuesto",
+          "source": "Somos Jujuy",
+          "url": "https://www.somosjujuy.com.ar/politica/javier-milei-prepara-proyecto-apagon-estado-limitar-gasto-publico-cuando-agote-presupuesto-n120562",
+          "date": "2026-07-08T00:19:00+00:00",
           "category": "argentina"
         },
         {
@@ -289,13 +360,6 @@
           "source": "MinutoUno",
           "url": "https://www.minutouno.com/politica/se-apaga-el-estado-javier-milei-anticipo-un-proyecto-aplicar-un-shutdown-n6297295",
           "date": "2026-07-07T21:58:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Javier Milei anticipó una reforma del Banco Central",
-          "source": "LV12",
-          "url": "https://www.lv12.com.ar/javier-milei/javier-milei-anticipo-una-reforma-del-banco-central-n200487",
-          "date": "2026-07-07T21:27:18+00:00",
           "category": "argentina"
         },
         {
@@ -320,96 +384,170 @@
           "category": "argentina"
         },
         {
+          "title": "El mensaje de Javier Milei tras el agónico triunfo de Argentina: “Que manera de sufrir”",
+          "source": "La Opinión Austral",
+          "url": "https://laopinionaustral.com.ar/argentina/el-mensaje-de-javier-milei-tras-el-agonico-triunfo-de-argentina-que-manera-de-sufrir-680035.html",
+          "date": "2026-07-07T19:06:47+00:00",
+          "category": "argentina"
+        },
+        {
           "title": "El hermético mensaje de Milei por la baja del riesgo país: \"TMAP. MAGA. VLLC\"",
           "source": "Revista Noticias",
           "url": "https://noticias.perfil.com/noticias/politica/el-hermetico-mensaje-de-milei-por-la-baja-del-riesgo-pais-tmap-maga-vllc.phtml",
           "date": "2026-07-07T18:37:40+00:00",
           "category": "argentina"
-        },
-        {
-          "title": "El Gobierno confirmó que Manuel Adorni sigue con custodia por \"cuestiones de seguridad\"",
-          "source": "MDZ Online",
-          "url": "https://www.mdzol.com/politica/el-gobierno-confirmo-que-manuel-adorni-sigue-custodia-cuestiones-seguridad-n1560245",
-          "date": "2026-07-07T16:45:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "¿Cuáles son las tres claves que en el Gobierno consideran decisivas para la reelección de Javier Milei?",
-          "source": "0221",
-          "url": "https://www.0221.com.ar/nacional/cuales-son-las-tres-claves-que-el-gobierno-consideran-decisivas-la-reeleccion-javier-milei-n130697",
-          "date": "2026-07-07T15:14:10+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "El Gobierno confirmó que mantiene la custodia a Manuel Adorni",
-          "source": "Ambito",
-          "url": "https://www.ambito.com/politica/el-gobierno-confirmo-que-mantiene-la-custodia-manuel-adorni-n6297105",
-          "date": "2026-07-07T14:40:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Javier Milei y sus medidas, EN VIVO: el Gobierno se enfoca en la economía y ya habla de un triunfo en primera vuelta en 2027",
-          "source": "Impacto Castex",
-          "url": "https://impactocastex.com.ar/?p=22116",
-          "date": "2026-07-07T13:28:16+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Los planes del Gobierno para la reelección de Javier Milei: claves en busca de 4 años más en el poder",
-          "source": "Crónica",
-          "url": "https://www.cronica.com.ar/amp/politica/los-planes-del-gobierno-para-la-reeleccion-de-javier-milei-claves-en-busca-de-4-anos-mas-en-el-poder/",
-          "date": "2026-07-07T12:41:05+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Denuncian que Manuel Adorni mantiene custodia y un vehículo oficial pese a haber dejado el Gobierno",
-          "source": "infodelestero.com",
-          "url": "https://infodelestero.com/2026/07/07/denuncian-que-manuel-adorni-mantiene-custodia-y-un-vehiculo-oficial-pese-a-haber-dejado-el-gobierno/",
-          "date": "2026-07-07T11:42:27+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Javier Milei's proposal of an AI-run company with no humans involved is deeply flawed. Here's why",
-          "source": "livemint.com",
-          "url": "https://www.livemint.com/opinion/online-views/javier-milei-ai-run-company-no-humans-limited-liability-llp-east-india-company-management-11783338321999.html",
-          "date": "2026-07-07T10:31:07+00:00",
-          "category": "argentina"
         }
       ],
       "first_seen": "2026-07-08T04:01:20+00:00",
-      "last_seen": "2026-07-08T04:01:20+00:00"
+      "last_seen": "2026-07-08T15:03:32+00:00"
     },
     {
       "id": "trump-meloni-feud-escalates-ahead-of-nato-summit",
       "title": "Trump-Meloni feud escalates ahead of NATO summit",
-      "blurb": "Tensions between Donald Trump and Giorgia Meloni over NATO commitments and Iran policy dominate coverage in Italy, the U.S., and Spain. The feud highlights fractures within the far-right over transatlantic alliances and national sovereignty, with Vox and other European parties taking sides.",
+      "blurb": "Tensions between Donald Trump and Giorgia Meloni have intensified over Italy's refusal to support U.S. military actions in Iran and NATO spending disputes. The feud highlights broader transatlantic divisions within the right-wing alliance, with other European leaders caught in the crossfire.",
       "convergence": 4,
       "countries": [
         {
           "name": "🇺🇸 MAGA / Trump",
-          "note": "Trump criticizes Meloni for not supporting U.S. actions in Iran, threatening NATO troop withdrawals."
+          "note": "Trump criticizes Meloni for Italy's lack of support on Iran, threatens NATO troop withdrawals"
         },
         {
           "name": "🇮🇹 Fratelli d'Italia / Lega",
-          "note": "Meloni maintains 'cordial' relations with Trump despite his public insults, downplaying the feud to preserve diplomatic ties."
+          "note": "Meloni defends Italy's sovereign decisions on NATO spending and military engagements"
         },
         {
           "name": "🇪🇸 Vox",
-          "note": "Abascal defends Meloni against Trump’s attacks, signaling a rift in the far-right’s transatlantic alliance."
+          "note": "Vox leader Abascal defends Meloni against Trump, signaling rifts in far-right alliances"
         },
         {
           "name": "🇬🇧 Reform UK",
-          "note": "Farage’s resignation overshadows the NATO summit, but his anti-establishment rhetoric aligns with Trump’s criticisms of European allies."
+          "note": "Farage comments on transatlantic tensions, aligning with Trump's criticisms of European allies"
+        },
+        {
+          "name": "🇫🇷 Rassemblement National",
+          "note": "Le Pen's diplomatic stance reflects broader European skepticism toward U.S. leadership under Trump"
         }
       ],
       "signals": [
-        "transatlantic far-right divisions",
-        "NATO skepticism",
-        "national sovereignty debates",
-        "diplomatic brinkmanship"
+        "diplomatic tensions",
+        "NATO disputes",
+        "transatlantic rifts",
+        "military alliances"
       ],
-      "article_count": 120,
+      "article_count": 70,
       "refs": [
+        {
+          "title": "Vertice Ankara, la linea Meloni: «Rispettiamo gli impegni della Nato. Ma decidiamo noi tempi, modi e priorità",
+          "source": "Milano Finanza",
+          "url": "https://www.milanofinanza.it/news/vertice-ankara-la-linea-meloni-rispettiamo-gli-impegni-della-nato-ma-decidiamo-noi-tempi-modi-e-202607081549199904",
+          "date": "2026-07-08T14:00:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Meloni, ancora aiuti militari a Kiev, Crosetto sta facendo valutazioni",
+          "source": "ANSA",
+          "url": "https://www.ansa.it/sito/notizie/topnews/2026/07/08/meloni-ancora-aiuti-militari-a-kiev-crosetto-sta-facendo-valutazioni_797f0231-899b-4c20-afb8-a4fee3485d13.html",
+          "date": "2026-07-08T13:38:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Meloni, 'se investiamo in difesa quei soldi devono restare in Italia'",
+          "source": "ANSA",
+          "url": "https://www.ansa.it/sito/notizie/topnews/2026/07/08/meloni-se-investiamo-in-difesa-quei-soldi-devono-restare-in-italia_f3b8372a-af12-411c-a35c-84fc634fce92.html",
+          "date": "2026-07-08T13:35:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Meloni: “Il post di Trump? Non torno sull’argomento, non mi pento di nulla”",
+          "source": "la Repubblica",
+          "url": "https://www.repubblica.it/politica/2026/07/08/news/meloni_post_trump_non_mi_pento_di_nulla-425458919/",
+          "date": "2026-07-08T13:34:35+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Meloni lontana da Trump: la foto ufficiale dei leader al vertice Nato",
+          "source": "La Stampa",
+          "url": "https://www.lastampa.it/esteri/2026/07/08/video/foto_ufficiale_vertice_nato_meloni_trump-15684221/",
+          "date": "2026-07-08T13:15:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Incontro Erdogan-Meloni a margine del vertice Nato",
+          "source": "ANSA",
+          "url": "https://www.ansa.it/sito/notizie/mondo/2026/07/08/incontro-erdogan-meloni-a-margine-del-vertice-nato_bdc3ff6c-a6e8-4396-8522-c46ee4865cf7.html",
+          "date": "2026-07-08T13:10:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Meloni incontra Trump ad Ankara: \"Rapporti cordiali\". Impegno in Ucraina e sguardo al Mediterraneo",
+          "source": "RaiNews",
+          "url": "https://www.rainews.it/video/2026/07/vertice-nato-turchia-meloni-incontra-trump-ad-ankara-rapporti-cordiali-impegno-in-ucraina-e-sguardo-al-mediterraneo-e8287e1b-abdb-4c13-a0f5-e940647e0cb2.html",
+          "date": "2026-07-08T11:53:40+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Gelo tra Meloni e Trump al vertice Nato di Ankara, lei si gira quando arriva e lui non le stringe la mano",
+          "source": "Virgilio",
+          "url": "https://www.virgilio.it/notizie/gelo-tra-meloni-e-trump-al-vertice-nato-di-ankara-lei-si-gira-quando-arriva-e-lui-non-le-stringe-la-mano-1767552",
+          "date": "2026-07-08T10:44:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Meloni al vertice Nato, la premier nella foto di gruppo e l'arrivo di Trump - Video",
+          "source": "Adnkronos",
+          "url": "https://www.adnkronos.com/internazionale/esteri/meloni-foto-trump-video-vertice-nato_5TC6t41DihBodRnqtJiYDR",
+          "date": "2026-07-08T10:09:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Cena della \"tregua\" tra Meloni e Trump (e il resto dell'Ue). \"Rapporti cordiali\"",
+          "source": "il Giornale",
+          "url": "https://www.ilgiornale.it/news/politica/cena-tregua-meloni-e-trump-e-resto-dellue-rapporti-cordiali-2690359.html",
+          "date": "2026-07-08T10:03:07+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Trump, prima l’elogio e poi la stoccata: \"Meloni mi piace ma non c'è stata per noi\"",
+          "source": "La Stampa",
+          "url": "https://www.lastampa.it/esteri/2026/07/08/video/trump_meloni_mi_piace_iran_sigonella-15684037/",
+          "date": "2026-07-08T08:33:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Trump attacca Meloni al vertice Nato di Ankara, la reazione della premier spiazza tutti: \"Rapporti cordiali\"",
+          "source": "Virgilio",
+          "url": "https://www.virgilio.it/notizie/trump-attacca-meloni-al-vertice-nato-di-ankara-la-reazione-della-premier-spiazza-tutti-rapporti-cordiali-1767494",
+          "date": "2026-07-08T07:52:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Meloni a cena con Trump ad Ankara: 'Rapporti cordiali'",
+          "source": "Treccani",
+          "url": "https://www.treccani.it/magazine/atlante/notizie/meloni-a-cena-con-trump-ad-ankara-rapporti-cordiali-/",
+          "date": "2026-07-08T06:02:13+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Trump-Meloni Feud Cools? Italian PM Says Ties 'Cordial' After US President Calls Her 'Nice'",
+          "source": "News18",
+          "url": "https://www.news18.com/world/trump-meloni-feud-cools-italian-pm-says-ties-cordial-after-us-president-calls-her-nice-ws-l-10197177.html",
+          "date": "2026-07-08T05:48:03+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "«Lei ha fatto un errore», la retromarcia di Trump su Meloni. Faccia a faccia al vertice Nato: il ritardo alla cena e il gelo allo stesso tavolo",
+          "source": "Open",
+          "url": "https://www.open.online/2026/07/08/vertice-nato-trump-vs-meloni-primo-giorno-cosa-successo/",
+          "date": "2026-07-08T04:02:12+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "After weeks of tension, Trump calls Meloni 'nice'; Italian PM responds with 'cordial relations' remark",
+          "source": "theweek.in",
+          "url": "https://www.theweek.in/news/world/2026/07/08/trump-meloni-relations-mending.html",
+          "date": "2026-07-08T02:51:31+00:00",
+          "category": "italy"
+        },
         {
           "title": "Meloni says ties with Trump remain 'cordial,' even as Italy labels him ‘US President who loves to provoke’",
           "source": "WION",
@@ -418,38 +556,17 @@
           "category": "italy"
         },
         {
-          "title": "Meloni su Trump: “Rapporti cordiali”, premier taglia corto sui chiarimenti",
-          "source": "IlMetropolitano.it",
-          "url": "https://www.ilmetropolitano.it/2026/07/08/meloni-trump-rapporti-cordiali-ankara-nato/",
-          "date": "2026-07-08T00:53:42+00:00",
+          "title": "Italian PM Meloni says she has \"cordial relations\" with Trump after US President calls her a...",
+          "source": "Moneycontrol.com",
+          "url": "https://www.moneycontrol.com/world/italian-pm-meloni-says-she-has-cordial-relations-with-trump-after-us-president-calls-her-a-nice-person-article-13968415.html/amp",
+          "date": "2026-07-08T00:08:37+00:00",
           "category": "italy"
         },
         {
-          "title": "Vertice Nato, Trump e Meloni a cena allo stesso tavolo",
-          "source": "Sky TG24",
-          "url": "https://tg24.sky.it/politica/video/2026/07/08/vertice-nato-trump-e-meloni-a-cena-allo-stesso-tavolo-1110377",
-          "date": "2026-07-07T23:17:32+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Vertice Nato, Meloni arriva per ultima poi la cena ad alta tensione: “Trump? Rapporti cordiali”",
+          "title": "Trump: “Deluso dagli alleati, Meloni brava ma non ci aiuta”. E rivendica la Groenlandia",
           "source": "la Repubblica",
-          "url": "https://www.repubblica.it/politica/2026/07/08/news/meloni_trump_cena_vertice_nato_cena_rapporti_cordiali-425457785/",
-          "date": "2026-07-07T23:00:00+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Trump says Meloni 'made a mistake' on Iran - India Tribune",
-          "source": "Chicago",
-          "url": "https://www.indiatribune.com/public/trump-says-meloni-made-a-mistake-on-iran",
-          "date": "2026-07-07T22:41:09+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Meloni dribbla il tycoon, l’arrivo ad Ankara all’ultimo secondo. “Ma i rapporti sono cordiali”",
-          "source": "Quotidiano Nazionale",
-          "url": "https://www.quotidiano.net/esteri/meloni-trump-ankara-i3il9jrn",
-          "date": "2026-07-07T22:02:43+00:00",
+          "url": "https://www.repubblica.it/politica/2026/07/08/news/trump_vertice_nato_ankara_alleati_meloni_groenlandia-425457771/amp/",
+          "date": "2026-07-07T22:01:00+00:00",
           "category": "italy"
         },
         {
@@ -467,59 +584,31 @@
           "category": "italy"
         },
         {
-          "title": "Meloni: \"Come è andata con Trump? Rapporti cordiali\"",
-          "source": "Il Sole 24 ORE",
-          "url": "https://stream24.ilsole24ore.com/video/italia/meloni-come-e-andata-trump-rapporti-cordiali/AJmSCEC",
-          "date": "2026-07-07T21:14:27+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Meloni al vertice Nato di Ankara: Con Trump rapporti cordiali",
-          "source": "Il Sole 24 ORE",
-          "url": "https://stream24.ilsole24ore.com/video/mondo/meloni-vertice-nato-ankara-trump-rapporti-cordiali/AJsopDC?cmpid=.com",
-          "date": "2026-07-07T20:54:24+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Freddi convenevoli. Meloni al tavolo con Trump: \"Com'è andata? Rapporti cordiali\"",
-          "source": "HuffPost Italia",
-          "url": "https://www.huffingtonpost.it/politica/2026/07/07/news/freddi_convenevoli_meloni_al_tavolo_con_trump_come_andata_rapporti_cordiali-22309002/",
-          "date": "2026-07-07T20:26:00+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Meloni al vertice Nato: \"Con Trump rapporti cordiali\" - Video",
-          "source": "Adnkronos",
-          "url": "https://www.adnkronos.com/internazionale/esteri/meloni-video-trump-vertice-nato_72mKCTwFcCGMyk3EuwCfPh",
-          "date": "2026-07-07T20:13:00+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Trump: 'Deluso dalla Nato, Meloni mi piace ma non ci ha aiutato'. La premier: 'Rapporti cordiali'",
+          "title": "La premier in ritardo, poi il gelo con Trump: 'Rapporti cordiali'",
           "source": "ANSA",
-          "url": "https://www.ansa.it/sito/notizie/mondo/2026/07/07/trump-deluso-dalla-nato-meloni-mi-piace-ma-non-ci-ha-aiutato.-la-premier-rapporti_f8d739d7-37c6-4d0f-bd18-f93fbe6e5309.html",
-          "date": "2026-07-07T20:07:08+00:00",
+          "url": "https://www.ansa.it/sito/notizie/politica/2026/07/07/la-linea-del-silenzio-il-gelo-della-premier-che-arriva-in-ritardo_e448d0ed-1fcc-4663-995e-9fbf6e4b7ff2.html",
+          "date": "2026-07-07T20:14:32+00:00",
           "category": "italy"
         },
         {
-          "title": "Meloni, 'Trump? Rapporti cordiali' - Ultima ora",
-          "source": "ANSA",
-          "url": "https://www.ansa.it/sito/notizie/topnews/2026/07/07/meloni-trump-rapporti-cordiali_d79b5c12-975d-4135-83d4-6f4b9a672460.html",
-          "date": "2026-07-07T19:57:00+00:00",
+          "title": "Meloni al vertice Nato dribbla i giornalisti: \"Chiarimento con Trump? Ho già risposto\"",
+          "source": "la Repubblica",
+          "url": "https://www.repubblica.it/politica/2026/07/07/video/meloni_arriva_al_vertice_nato_e_dribbla_i_giornalisti_chiarimento_con_trump_ho_gia_risposto-425457624/",
+          "date": "2026-07-07T20:04:00+00:00",
           "category": "italy"
         },
         {
-          "title": "‘She’s a nice person actually’: Trump on Meloni",
-          "source": "CTV News",
-          "url": "https://www.ctvnews.ca/world/article/shes-a-nice-person-actually-trump-on-meloni/",
-          "date": "2026-07-07T19:26:35+00:00",
-          "category": "italy"
+          "title": "La reacción de Javier Milei tras el agónico triunfo de la Selección Argentina",
+          "source": "MinutoUno",
+          "url": "https://www.minutouno.com/politica/la-reaccion-javier-milei-el-agonico-triunfo-la-seleccion-argentina-n6297229",
+          "date": "2026-07-07T19:21:03+00:00",
+          "category": "argentina"
         },
         {
-          "title": "Ad Ankara nuovo ‘stress test’ Trump, Meloni insiste su linea silenzio",
-          "source": "Askanews",
-          "url": "https://askanews.it/2026/07/07/ad-ankara-nuovo-stress-test-trump-meloni-insiste-su-linea-silenzio/",
-          "date": "2026-07-07T19:03:35+00:00",
+          "title": "Meloni al tavolo con Trump, ma il presidente Usa attacca di nuovo: «Lei mi piace ma ha rifiutato di aiutarci»",
+          "source": "L'Unione Sarda.it",
+          "url": "https://www.unionesarda.it/news/mondo/meloni-al-tavolo-con-trump-ma-il-presidente-usa-attacca-di-nuovo-lei-mi-piace-ma-ha-rifiutato-di-aiutarci-dqwnx90b",
+          "date": "2026-07-07T18:31:00+00:00",
           "category": "italy"
         },
         {
@@ -537,222 +626,145 @@
           "category": "italy"
         },
         {
-          "title": "'I like her, but…': Trump calls Italy's Meloni a 'nice person' amid spat over Iran war",
-          "source": "The Economic Times",
-          "url": "https://m.economictimes.com/news/international/world-news/i-like-her-but-trump-calls-italys-meloni-a-nice-person-amid-spat-over-iran-war/videoshow/132245435.cms",
-          "date": "2026-07-07T18:09:18+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "'She's a nice person, actually': Trump softens tone on Meloni",
-          "source": "TRT World",
-          "url": "https://www.trtworld.com/article/b2d031de147a",
-          "date": "2026-07-07T17:17:17+00:00",
-          "category": "italy"
-        },
-        {
           "title": "Trump attacca Meloni: \"Mi piace ma non c'è stata per noi sull'Iran\"",
           "source": "Il Sole 24 ORE",
           "url": "https://stream24.ilsole24ore.com/video/mondo/trump-attacca-meloni-mi-piace-ma-non-c-e-stata-noi-iran/AJybR1B?cmpid=.com",
           "date": "2026-07-07T17:14:36+00:00",
           "category": "italy"
-        },
-        {
-          "title": "Trump: «Meloni mi piace ma per noi non c'è stata»",
-          "source": "Corriere della Sera",
-          "url": "https://video.corriere.it/esteri/trump-meloni-mi-piace-ma-per-noi-non-c-e-stata/78dd3d57-b6e3-4264-b28f-5b2c83c66xlk",
-          "date": "2026-07-07T16:10:01+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Trump torna a parlare di Meloni: \"Mi piace, è una brava persona, ma non c'è stata per noi\"",
-          "source": "Il Foglio",
-          "url": "https://www.ilfoglio.it/politica/2026/07/07/video/trump-torna-a-parlare-di-meloni-mi-piace-e-una-brava-persona-ma-non-ce-stata-per-noi--401782",
-          "date": "2026-07-07T16:05:28+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Trump calls Meloni 'a nice person actually' ahead of NATO talks",
-          "source": "The Local Italy",
-          "url": "https://www.thelocal.it/20260707/trump-calls-meloni-a-nice-person-actually-ahead-of-nato-talks",
-          "date": "2026-07-07T15:45:44+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Trump on Italy’s Meloni: Relationship ‘soured’ over Iran war",
-          "source": "CNN",
-          "url": "https://www.cnn.com/2026/07/07/world/video/trump-italy-meloni-relationship-soured-digvid-vrtc",
-          "date": "2026-07-07T15:42:00+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Trump Says Meloni ‘Wasn’t There For Us’",
-          "source": "The Pavlovic Today",
-          "url": "https://thepavlovictoday.com/trump-says-meloni-wasnt-there-for-us/",
-          "date": "2026-07-07T15:31:22+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Trump calls Meloni 'nice person' after photo feud strained ties | Daily Sabah",
-          "source": "Daily Sabah",
-          "url": "https://www.dailysabah.com/world/europe/trump-calls-meloni-nice-person-after-photo-feud-strained-ties/amp",
-          "date": "2026-07-07T15:26:00+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Trump: Meloni mi piace ma non c'è stata per noi, ha guastato rapporti",
-          "source": "Quotidiano Nazionale",
-          "url": "https://www.quotidiano.net/video/esteri/trump-meloni-mi-piace-ma-non-ce-stata-per-noi-ha-guastato-rapporti-mzzwqa4h",
-          "date": "2026-07-07T15:23:51+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Trump taunts Meloni with fresh photo salvo as NATO summit puts allies face-to-face",
-          "source": "Fox News",
-          "url": "https://www.foxnews.com/politics/trump-taunts-meloni-fresh-photo-salvo-nato-summit-puts-allies-face-to-face",
-          "date": "2026-07-07T15:01:14+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Trump-show al vertice Nato: \"Sono venuto solo perché ospitato da Erdogan\". E su Meloni: \"Lei mi piace, ma per noi non c'è stata\"",
-          "source": "L'Espresso",
-          "url": "https://lespresso.it/c/mondo/2026/7/7/trump-ankara-nato-dichiarazioni-meloni-delusione/63287",
-          "date": "2026-07-07T14:46:42+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Trump in Turchia: \"Meloni mi piace ma sull'Iran ha sbagliato\"",
-          "source": "AGI",
-          "url": "https://www.agi.it/estero/news/2026-07-07/trump-nato-ankara-meloni-37907940/",
-          "date": "2026-07-07T13:51:59+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Trump, il video e la retromarcia: \"Meloni mi piace, è una brava persona ma ha sbagliato\"",
-          "source": "Adnkronos",
-          "url": "https://www.adnkronos.com/internazionale/esteri/trump-meloni-video-vertice-nato_4Ie3Wwqtc8ja4BcFijTE4D",
-          "date": "2026-07-07T13:51:00+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Donald Trump torna a pungere Giorgia Meloni e l'Italia, \"brava persona ma per noi non c'è stata sull'Iran\"",
-          "source": "Virgilio",
-          "url": "https://www.virgilio.it/notizie/donald-trump-torna-a-pungere-giorgia-meloni-e-l-italia-brava-persona-ma-per-noi-non-c-e-stata-sull-iran-1767363",
-          "date": "2026-07-07T13:46:00+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Trump non perdona: \"Meloni è brava, ma non ci ha aiutato nella guerra all'Iran\"",
-          "source": "HuffPost Italia",
-          "url": "https://www.huffingtonpost.it/esteri/2026/07/07/news/trump_italia_germania_meloni-22305354/",
-          "date": "2026-07-07T13:38:00+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Trump: \"Meloni mi piace ma ha fatto un errore: non c'è stata per noi sull'Iran\"",
-          "source": "la Repubblica",
-          "url": "https://www.repubblica.it/esteri/2026/07/07/video/trump_meloni_mi_piace_brava_persona_ma_non_ci_ha_aiutato_in_iran-425456872/",
-          "date": "2026-07-07T13:24:00+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Trump and Meloni set for Nato showdown over defence spending",
-          "source": "thenationalnews.com",
-          "url": "https://www.thenationalnews.com/news/europe/2026/07/07/trump-and-meloni-set-for-nato-showdown-over-defence-spending/",
-          "date": "2026-07-07T13:14:13+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Trump, Meloni mi piace ma non c'è stata per noi",
-          "source": "ANSA",
-          "url": "https://www.ansa.it/sito/notizie/topnews/2026/07/07/trump-meloni-mi-piace-ma-non-ce-stata-per-noi_782294b8-5610-4e86-8f17-bb0c3d7fa932.html",
-          "date": "2026-07-07T13:12:00+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "President Trump lands in Turkey for NATO summit amid global tensions",
-          "source": "Fox Business",
-          "url": "https://www.foxbusiness.com/video/6400437795112",
-          "date": "2026-07-07T11:46:51+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Vertice Nato, Trump rinnova le critiche agli alleati e a Meloni",
-          "source": "Euronews.com",
-          "url": "https://it.euronews.com/my-europe/2026/07/07/il-presidente-usa-donald-trump-arriva-in-turchia-per-il-vertice-nato",
-          "date": "2026-07-07T11:16:10+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Trump e Meloni, dall'idillio alla rottura: cosa è successo",
-          "source": "Sky TG24",
-          "url": "https://tg24.sky.it/mondo/approfondimenti/trump-meloni-cosa-e-successo",
-          "date": "2026-07-07T10:48:48+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Italy's Meloni seeks to avoid escalation after Trump revives personal feud",
-          "source": "Yahoo",
-          "url": "https://www.yahoo.com/news/politics/articles/italy-no-longer-respond-trumps-082408850.html",
-          "date": "2026-07-07T10:20:40+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Vox sale en defensa de Meloni frente a las \"descalificaciones inaceptables\" de Trump: \"Es aliada y ejemplo a seguir\"",
-          "source": "El Periódico",
-          "url": "https://www.elperiodico.com/es/politica/20260707/vox-sale-defensa-meloni-frente-132207705",
-          "date": "2026-07-07T10:05:47+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Trump posts 'restraining order' jab at Italian PM Meloni, Italy says she’s done responding",
-          "source": "Ynetnews",
-          "url": "https://www.ynetnews.com/article/sylpmh5mgl",
-          "date": "2026-07-07T09:25:06+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Nato, Meloni a vertice Ankara dopo siluro Trump. La premier sceglie linea silenzio",
-          "source": "Askanews",
-          "url": "https://askanews.it/2026/07/06/nato-meloni-a-vertice-ankara-dopo-siluro-trump-la-premier-sceglie-linea-silenzio/",
-          "date": "2026-07-07T08:45:15+00:00",
-          "category": "italy"
         }
       ],
       "first_seen": "2026-07-06T05:02:00+00:00",
-      "last_seen": "2026-07-08T04:01:20+00:00"
+      "last_seen": "2026-07-08T15:03:32+00:00"
     },
     {
       "id": "public-media-crackdowns-fuel-far-right-backlash",
       "title": "Public media crackdowns fuel far-right backlash",
-      "blurb": "Hungary’s suspension of state TV news and Poland’s media reforms spark protests and accusations of authoritarianism from far-right and conservative factions. The crackdowns reflect a broader pattern of right-wing governments targeting independent media, with cross-national solidarity emerging among opposition groups.",
+      "blurb": "Governments in Hungary and Poland are facing far-right backlash over crackdowns on public media. Hungary's suspension of state broadcasts and Poland's legal actions against former state media officials have galvanized far-right opposition, framing these moves as attacks on free speech and national sovereignty.",
       "convergence": 3,
       "countries": [
         {
           "name": "🇭🇺 Fidesz / Tisza",
-          "note": "Hungarian state TV halts news broadcasts, replacing them with apologies for past propaganda, sparking protests from Fidesz."
+          "note": "Hungary suspends state media broadcasts, sparking protests and accusations of authoritarianism"
         },
         {
           "name": "🇵🇱 Prawo i Sprawiedliwość",
-          "note": "Poland’s government faces criticism for media reforms, with PiS accusing opposition of undermining press freedom."
+          "note": "Poland's PiS condemns media reforms, accuses government of silencing opposition voices"
         },
         {
           "name": "🇪🇸 Vox",
-          "note": "Vox demands transparency in public media, aligning with Fidesz’s accusations of left-wing bias."
+          "note": "Vox criticizes Spain's public media policies, accusing government of bias and censorship"
         },
         {
           "name": "🇩🇪 Alternative für Deutschland",
-          "note": "AfD criticizes German public media for alleged bias, echoing Hungarian and Polish far-right narratives."
+          "note": "AfD protests media bias, accuses German public broadcasters of suppressing far-right views"
         }
       ],
       "signals": [
         "media suppression",
-        "authoritarian backlash",
-        "transnational far-right solidarity",
-        "propaganda wars"
+        "free speech debates",
+        "state propaganda",
+        "authoritarian backlash"
       ],
-      "article_count": 80,
+      "article_count": 60,
       "refs": [
+        {
+          "title": "'Propaganda' Is Over: Hungary Takes Down Orbán's State Media Empire, Promising Independent News Instead",
+          "source": "International Business Times UK",
+          "url": "https://www.ibtimes.co.uk/hungary-state-media-suspended-orban-propaganda-ends-1807641",
+          "date": "2026-07-08T13:42:07+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Kárász Róbertet és a választás utáni Magyar Péter-interjúkat készítő műsorvezetőket is kirúgták a közmédiából",
+          "source": "444",
+          "url": "https://444.hu/2026/07/08/karasz-robertet-es-a-valasztas-utani-magyar-peter-interjukat-keszito-musorvezetoket-is-kirugtak-a-kozmediabol",
+          "date": "2026-07-08T13:39:55+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Vertice Nato, la conferenza stampa di Meloni",
+          "source": "ANSA",
+          "url": "https://www.ansa.it/sito/notizie/dirette_live/2026/07/08/vertice-nato-la-conferenza-stampa-di-meloni_56283c62-e436-43a2-99dd-9204928eada0.html",
+          "date": "2026-07-08T13:26:52+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "A Magyar Péter-interjúkat készítő műsorvezetőket és Kárász Róbertet is felmentette a közmédia új vezetése",
+          "source": "Telex",
+          "url": "https://telex.hu/belfold/2026/07/08/mtva-kozmedia-atalakitas-felmentes-karasz-robert-csete-beata-kakuk-l-tamas",
+          "date": "2026-07-08T12:59:34+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Már a KDNP-nek is kellemetlen a Fidesz",
+          "source": "Ugytudjuk.hu",
+          "url": "https://ugytudjuk.hu/cikk/2026-07-08_mar-a-kdnp-nek-is-kellemetlen-a-fidesz",
+          "date": "2026-07-08T12:42:36+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "A kormány és a Tisza-frakció nem megy el Tusványosra, de augusztusban tíz napot pihennek",
+          "source": "Telex",
+          "url": "https://telex.hu/belfold/2026/07/08/magyar-peter-kormany-augusztus-tisza-part-tusvanyos",
+          "date": "2026-07-08T12:22:30+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Javier Milei espera recibir el respaldo de gobernadores aliados en Tucumán",
+          "source": "Sitio Andino",
+          "url": "https://www.sitioandino.com.ar/politica/javier-milei-espera-recibir-el-respaldo-gobernadores-aliados-tucuman-n5726189",
+          "date": "2026-07-08T12:20:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "A Fidesz szerint a rendőrség őrizetbe vette Szakács István megafonos influenszert, aki azóta meg is szólalt",
+          "source": "Telex",
+          "url": "https://telex.hu/belfold/2026/07/08/a-fidesz-szerint-orizetbe-vettek-szakacs-istvan-megafonos-influenszert",
+          "date": "2026-07-08T10:33:18+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "A Fidesz-közeli Magyar Nemzeti Médiaszövetség szerint a közmédia adása nem szünetelhet",
+          "source": "Media1",
+          "url": "https://media1.hu/2026/07/08/a-fidesz-kozeli-magyar-nemzeti-mediaszovetseg-szerint-a-kozmedia-adasa-nem-szunetelhet/",
+          "date": "2026-07-08T09:21:41+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Public Media Goes Silent, EU Mentored Tisza Government Fires Editors and Journalists",
+          "source": "Hungary Today",
+          "url": "https://hungarytoday.hu/public-media-goes-silent-eu-mentored-tisza-government-fires-editors-and-journalists/",
+          "date": "2026-07-08T07:14:30+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Az M1 fekete napja: ez történt az elsötétedés előtt, ez pedig utána",
+          "source": "nlc",
+          "url": "https://nlc.hu/ezvan/20260708/m1-kozteve-kozmedia/",
+          "date": "2026-07-08T05:07:59+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Még mindig hasít a Fidesz-éra egyik közbeszerzés-bajnoka",
+          "source": "mfor.hu",
+          "url": "https://mfor.hu/cikkek/vallalatok/most-meg-hasit-a-fidesz-era-kozbeszerzes-bajnoka.html",
+          "date": "2026-07-08T03:56:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Esta es la \"casta\" que venían a combatir: Manuel Adorni mantiene su custodia oficial -",
+          "source": "Jornada Politica",
+          "url": "https://jornadapolitica.com.ar/esta-es-la-casta-que-venian-a-combatir-manuel-adorni-mantiene-su-custodia-oficial/",
+          "date": "2026-07-08T00:17:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Hungarian state TV suspends news broadcast for revamp",
+          "source": "RNZ",
+          "url": "https://www.rnz.co.nz/news/world/684847/hungarian-state-tv-suspends-news-broadcast-for-revamp",
+          "date": "2026-07-07T20:49:49+00:00",
+          "category": "hungary"
+        },
         {
           "title": "Leállították az M1 adását és a Hirado.hu-t",
           "source": "Telex",
@@ -768,20 +780,6 @@
           "category": "hungary"
         },
         {
-          "title": "„Ennek most vége” – írta Magyar Péter az M1 elsötétedéséhez",
-          "source": "nlc",
-          "url": "https://nlc.hu/ezvan/20260707/m1-magyar-peter/",
-          "date": "2026-07-07T17:40:19+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Fidesz calls fresh anti-government protest after Hungary's public broadcaster suspends news",
-          "source": "Daily News Hungary",
-          "url": "https://dailynewshungary.com/fidesz-anti-govt-protest-public-broadcaster/",
-          "date": "2026-07-07T17:24:00+00:00",
-          "category": "hungary"
-        },
-        {
           "title": "Hungarian public media outlets halt broadcasting in post-Orbán shake-up",
           "source": "AOL.com",
           "url": "https://www.aol.co.uk/articles/hungarian-public-media-outlets-halt-171908000.html",
@@ -789,18 +787,11 @@
           "category": "hungary"
         },
         {
-          "title": "Magyar Péter: Ma véget ért a propaganda sugárzása a közmédia felületein",
-          "source": "Telex",
-          "url": "https://telex.hu/belfold/2026/07/07/magyar-peter-ma-veget-ert-a-propaganda-sugarzasa-a-kozmedia-feluletein",
-          "date": "2026-07-07T17:17:31+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Peter Magyar: We have stopped the Hungarian pro-Orban public media ᐉ News from Fakti.bg - World",
-          "source": "Fakti.bg",
-          "url": "https://fakti.bg/en/world/1066049-peter-magyar-we-have-stopped-the-hungarian-pro-orban-public-media",
-          "date": "2026-07-07T17:15:00+00:00",
-          "category": "hungary"
+          "title": "Nonprofit sues Trump admin for allegedly sharing confidential immigration info",
+          "source": "Spectrum News",
+          "url": "https://spectrumlocalnews.com/tx/austin/immigration/2026/07/07/iranian-legal-defense-fund-lawsuit-asylum-seekers-confidential-information",
+          "date": "2026-07-07T17:10:00+00:00",
+          "category": "usa"
         },
         {
           "title": "Orbán is reagált a Fidesz-propaganda leállítására, át is vezényelte híveit",
@@ -808,161 +799,144 @@
           "url": "https://www.hodpress.hu/orban-is-reagalt-a-fidesz-propaganda-leallitasara-at-is-vezenyelte-hiveit/",
           "date": "2026-07-07T16:31:46+00:00",
           "category": "hungary"
-        },
-        {
-          "title": "Tüntetést szervez a Fidesz a közmédia elé",
-          "source": "444",
-          "url": "https://444.hu/2026/07/07/tuntetest-szervez-a-fidesz-a-kozmedia-ele",
-          "date": "2026-07-07T16:31:44+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Hungary's Media Makeover: A New Era of Independence?",
-          "source": "Devdiscourse",
-          "url": "https://www.devdiscourse.com/article/entertainment/3946652-hungarys-media-makeover-a-new-era-of-independence?amp",
-          "date": "2026-07-07T15:25:32+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Magyar Péter bejelentette, mikor indul újra az M1 adása, különleges időpontot választottak",
-          "source": "PORT",
-          "url": "https://port.hu/cikk/tv/magyar-peter-bejelentette-mikor-indul-ujra-az-m1-adasa-kulonleges-idopontot-valasztottak/article-128526",
-          "date": "2026-07-07T15:24:00+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Magyar Péter: Hazudtak éjjel, hazudtak nappal, hazudtak minden hullámhosszon. Ennek most vége",
-          "source": "24.hu",
-          "url": "https://24.hu/belfold/2026/07/07/magyar-peter-kozmedia-m1-leallas/",
-          "date": "2026-07-07T14:29:00+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Tisza-kormány: Kapitány István lecserélte az MVM vezéreit, elsötétült az M1 képernyője",
-          "source": "Portfolio.hu",
-          "url": "https://www.portfolio.hu/gazdasag/20260707/tisza-kormany-kapitany-istvan-lecserelte-az-mvm-vezereit-elsotetult-az-m1-kepernyoje-847992",
-          "date": "2026-07-07T14:18:00+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Egy felszólalót már bejelentettek, aki beszédet mond a Fidesz tüntetésén",
-          "source": "Magyar Hang",
-          "url": "https://hang.hu/belfold/egy-felszolalot-mar-bejelentettek-aki-beszedet-mond-a-fidesz-tuntetesen-190344",
-          "date": "2026-07-07T13:18:00+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Törökországból üzent Magyar Péter: „A bábszínháznak vége van!” | ATV Híradó 2026.07.07.",
-          "source": "atv.hu",
-          "url": "https://www.atv.hu/videok/torokorszagbol-uzent-magyar-peter-a-babszinhaznak-vege-van-atv-hirado-2026-07-07/",
-          "date": "2026-07-07T12:46:20+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Tisza-kormány: Kapitány István kirúgta az MVM vezéreit, megkezdte a munkát a közmédia új vezetése",
-          "source": "Portfolio.hu",
-          "url": "https://www.portfolio.hu/gazdasag/20260707/tisza-kormany-kapitany-istvan-kirugta-az-mvm-vezereit-megkezdte-a-munkat-a-kozmedia-uj-vezetese-847992",
-          "date": "2026-07-07T12:46:00+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Áder János mond beszédet a tüntetésen, amelyet a Fidesz a \"tiszás önkényuralom\" ellen hirdetett meg",
-          "source": "24.hu",
-          "url": "https://24.hu/belfold/2026/07/07/sandor-palota-tuntetes-fidesz-ader-janos/",
-          "date": "2026-07-07T12:36:00+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Itthon: Áder János mond beszédet a Fidesz „Stop Önkény!” tüntetésén",
-          "source": "| hvg.hu",
-          "url": "https://hvg.hu/itthon/20260707_ader-janos-mond-beszedet-a-fidesz-stop-onkeny-tuntetesen",
-          "date": "2026-07-07T12:09:20+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Hungary's Fidesz party announces protest after PM Magyar files constitutional amendment",
-          "source": "IANS LIVE",
-          "url": "https://ianslive.in/hungarys-fidesz-party-announces-protest-after-pm-magyar-files-constitutional-amendment--20260707160539",
-          "date": "2026-07-07T11:44:00+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Tisza-kormány: Magyar Péter az ankarai NATO-csúcson, megkezdte a munkát a közmédia új vezetése",
-          "source": "Portfolio.hu",
-          "url": "https://www.portfolio.hu/gazdasag/20260707/tisza-kormany-magyar-peter-az-ankarai-nato-csucson-megkezdte-a-munkat-a-kozmedia-uj-vezetese-847992",
-          "date": "2026-07-07T11:22:00+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Mégis kap végkielégítést a Fidesz kommunikációs igazgatója",
-          "source": "Mfor.hu",
-          "url": "https://mfor.hu/cikkek/kozelet/megis-kap-vegkielegitest-a-fidesz-kommunikacios-igazgatoja-.html",
-          "date": "2026-07-07T11:12:00+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Videó: Gulyás Gergely szerint a Tisza-kormány megalázta az államfői tisztséget",
-          "source": "HírTv",
-          "url": "https://hirtv.origo.hu/video/gulyas-gergely-szerint-a-tisza-kormany-megalazta-az-allamfoi-tisztseget",
-          "date": "2026-07-07T10:33:13+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Orbán és Gulyás vezetésével tüntetést szervez a Fidesz",
-          "source": "atv.hu",
-          "url": "https://www.atv.hu/videok/orban-es-gulyas-vezetesevel-tuntetest-szervez-a-fidesz/",
-          "date": "2026-07-07T09:50:55+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Mancsra emlékezik Magyar Péter miniszterelnök",
-          "source": "| minap.hu",
-          "url": "https://minap.hu/miskolc/2026/07/07/mancsra-emlekezik-magyar-peter-miniszterelnok",
-          "date": "2026-07-07T08:54:44+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Magyar Péter: vége a bábszínháznak!",
-          "source": "Infostart",
-          "url": "https://infostart.hu/belfold/2026/07/07/magyar-peter-vege-a-babszinhaznak",
-          "date": "2026-07-07T08:50:37+00:00",
-          "category": "hungary"
         }
       ],
       "first_seen": "2026-07-08T04:01:20+00:00",
-      "last_seen": "2026-07-08T04:01:20+00:00"
+      "last_seen": "2026-07-08T15:03:32+00:00"
     },
     {
       "id": "right-wing-parties-push-anti-immigration-policies-in-europe",
       "title": "Right-wing parties push anti-immigration policies in Europe",
-      "blurb": "Spain’s Vox and Italy’s Lega propose measures to restrict immigration, including scrapping language classes for Moroccan students and prioritizing ‘national citizens’ in crime reporting. These policies reflect a shared far-right agenda of cultural protectionism and border control across Europe.",
+      "blurb": "Far-right parties across Europe are intensifying their anti-immigration rhetoric and policies. From Spain's Vox demanding stricter border controls to Italy's Lega proposing accelerated deportations, immigration remains a dominant theme in right-wing political agendas.",
       "convergence": 3,
       "countries": [
         {
           "name": "🇪🇸 Vox",
-          "note": "Vox proposes scrapping Moroccan language classes in Andalusia and publishing criminals' origins in crime reports."
+          "note": "Vox demands stricter immigration controls, proposes measures to block mosque construction"
         },
         {
           "name": "🇮🇹 Fratelli d'Italia / Lega",
-          "note": "Lega’s Tovaglieri advocates for biofuels over electric cars, aligning with Vox’s anti-globalist economic policies."
+          "note": "Lega proposes laws to tighten citizenship rules and accelerate deportations of convicted immigrants"
         },
         {
           "name": "🇫🇷 Rassemblement National",
-          "note": "Le Pen’s anti-immigration stance resonates with Vox’s proposals, reinforcing a shared far-right agenda."
+          "note": "Le Pen campaigns on anti-immigration platform, proposes stricter asylum policies"
         },
         {
           "name": "🇩🇪 Alternative für Deutschland",
-          "note": "AfD’s anti-immigration policies in Germany mirror Vox’s proposals, focusing on cultural assimilation and border security."
+          "note": "AfD pushes for stricter immigration controls, opposes multiculturalism"
+        },
+        {
+          "name": "🇳🇴 Fremskrittspartiet",
+          "note": "FrP criticizes Norway's immigration policies, demands stricter border controls"
         }
       ],
       "signals": [
-        "cultural protectionism",
-        "border control",
-        "anti-globalist rhetoric",
-        "policy imitation"
+        "anti-immigration rhetoric",
+        "border security",
+        "deportation policies",
+        "cultural nationalism"
       ],
-      "article_count": 70,
+      "article_count": 50,
       "refs": [
+        {
+          "title": "Vox afirma que el balance LGTBI de la Junta «es un folleto de actividades subvencionadas»",
+          "source": "ABC",
+          "url": "https://www.abc.es/espana/castilla-la-mancha/vox-afirma-balance-lgtbi-junta-folleto-actividades-20260708152121-nt.html",
+          "date": "2026-07-08T13:21:22+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Planas ve un \"sinsentido\" que acuerdo PP-Vox en Andalucía \"niegue el cambio climático\" cuando es de las que más lo sufre",
+          "source": "Europa Press",
+          "url": "https://www.europapress.es/cantabria/noticia-planas-ve-sinsentido-acuerdo-pp-vox-andalucia-niegue-cambio-climatico-cuando-mas-sufre-20260708150128.html",
+          "date": "2026-07-08T13:01:28+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Vox intentará \"paralizar\" la Mezquita de Sevilla: \"Estamos en contra de la islamización\"",
+          "source": "ABC",
+          "url": "https://www.abc.es/espana/vox-intentara-paralizar-mezquita-sevilla-islamizacion-20260708135804-nt.html",
+          "date": "2026-07-08T11:58:10+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "El PSPV-POSE acusa al PP y Vox de dejar Castellón 'desprotegido' ante el riesgo de incendios y exige más medios",
+          "source": "El Periódico Mediterráneo",
+          "url": "https://www.elperiodicomediterraneo.com/castello-provincia/2026/07/08/pspv-pose-acusa-pp-vox-132249278.html",
+          "date": "2026-07-08T11:05:20+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Vox quiere parar la nueva mezquita de Sevilla para evitar \"la islamización de los barrios\"",
+          "source": "Infobae",
+          "url": "https://www.infobae.com/espana/agencias/2026/07/08/vox-quiere-parar-la-nueva-mezquita-de-sevilla-para-evitar-la-islamizacion-de-los-barrios/",
+          "date": "2026-07-08T10:41:11+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Vox intentará \"paralizar\" la Mezquita del Polígono Sur: \"Estamos en contra de la islamización de nuestros barrios\"",
+          "source": "Europa Press",
+          "url": "https://www.europapress.es/andalucia/sevilla-00357/noticia-vox-intentara-paralizar-mezquita-poligono-sur-estamos-contra-islamizacion-barrios-20260708122801.html",
+          "date": "2026-07-08T10:28:01+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "El vicepresidente de la Junta de Andalucía avisa al PP que Vox hará todo lo posible por frenar la mezquita de Sevilla: \"Quieren islamizar nuestros barrios\"",
+          "source": "El Correo de Andalucía",
+          "url": "https://www.elcorreoweb.es/andalucia/2026/07/08/vicepresidente-junta-andalucia-avisa-pp-132243788.html",
+          "date": "2026-07-08T10:11:19+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Samuel Vázquez, policía nacional y portavoz de Inmigración, Interior y Seguridad de Vox, en los cursos del CEU",
+          "source": "El Debate",
+          "url": "https://www.eldebate.com/espana/20260708/samuel-vazquez-policia-nacional-portavoz-inmigracion-interior-seguridad-vox-cursos-ceu_437268_amp.html",
+          "date": "2026-07-08T09:02:41+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "VOX exige cerrar las puertas a la «barbarie» que está colapsando Cataluña: \"No hay nada que obligue a los...",
+          "source": "gaceta.es",
+          "url": "https://gaceta.es/espana/vox-exige-cerrar-las-puertas-a-la-barbarie-que-esta-colapsando-cataluna-no-hay-nada-que-obligue-a-los-catalanes-a-convivir-con-tiroteos-semanales-20260708-1042/",
+          "date": "2026-07-08T08:48:45+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Las clases de árabe y cultura marroquí en Andalucía: el pacto PP-Vox las suprime el próximo curso en colegios e institutos",
+          "source": "Maldita.es",
+          "url": "https://maldita.es/desinfo/20260708/pp-y-vox-eliminan-clases-arabe-andalucia/",
+          "date": "2026-07-08T08:38:59+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Alicante El Ayuntamiento deja de ingresar 2\"2 millones en dos años por las bajadas del IBI acordadas con Vox",
+          "source": "Onda Cero",
+          "url": "https://www.ondacero.es/emisoras/comunidad-valenciana/alicante/noticias/ayuntamiento-alicante-deja-ingresar-22-millones-dos-anos-bajadas-ibi-acordadas-vox_202607086a4dfffcc0b5fb431c467919.html",
+          "date": "2026-07-08T07:45:00+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Jakter borgerlige ordførerkandidater: – Trenger ei ny retning for å komme på fote",
+          "source": "NRK",
+          "url": "https://www.nrk.no/tromsogfinnmark/jakter-borgerlige-ordforerkandidater-i-tromso-1.17950979",
+          "date": "2026-07-08T05:30:38+00:00",
+          "category": "norway"
+        },
+        {
+          "title": "El proyecto de una gran mezquita junto al Polígono Sur abre un nuevo pulso de Vox al PP en Sevilla: \"No queremos que se construya ni ahora ni nunca\"",
+          "source": "El Correo de Andalucía",
+          "url": "https://www.elcorreoweb.es/sevilla/2026/07/08/nuevo-gran-mezquita-poligono-sur-vox-pp-comunidad-islamica-132226500.html",
+          "date": "2026-07-08T04:59:03+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Cristian Toro, piragüista olímpico y portavoz de Deportes en Vox : \"Los cánticos de 'musulmán el que no bote' son el resultado de meter la ideología en el deporte; el español defiende su cultura\"",
+          "source": "La Nueva España",
+          "url": "https://www.lne.es/asturias/2026/07/08/cristian-toro-piraguista-olimpico-portavoz-132220058.html",
+          "date": "2026-07-08T02:27:09+00:00",
+          "category": "spain"
+        },
         {
           "title": "VOX propone publicar el origen de delincuentes en los balances de criminalidad y que los extranjeros...",
           "source": "gaceta.es",
@@ -978,18 +952,25 @@
           "category": "spain"
         },
         {
-          "title": "El mensaje del PP y Vox a las mujeres: no te has duchado y ya has perdido derechos",
-          "source": "elDiario.es",
-          "url": "https://www.eldiario.es/opinion/tribuna-abierta/mensaje-pp-vox-mujeres-no-has-duchado-has-perdido-derechos_129_13362519.html",
-          "date": "2026-07-07T20:07:46+00:00",
+          "title": "Vox dulcifica su relación con el PP tras el giro de Feijóo: \"Mano tendida absoluta\"",
+          "source": "El Mundo",
+          "url": "https://www.elmundo.es/espana/2026/07/07/6a4d4063e85ecee16a8b4573.html",
+          "date": "2026-07-07T20:47:46+00:00",
           "category": "spain"
         },
         {
-          "title": "Procès en appel du RN: Marine Le Pen et Jordan Bardella arrivent au siège du Rassemblement National",
-          "source": "BFM",
-          "url": "https://www.bfmtv.com/politique/elections/video-proces-en-appel-du-rn-marine-le-pen-et-jordan-bardella-arrivent-au-siege-du-rassemblement-national_VN-202607070847.html",
-          "date": "2026-07-07T19:08:06+00:00",
-          "category": "france"
+          "title": "Politikk, Sentrum | Borgli om Sp: – Jeg kjenner ikke partiet igjen",
+          "source": "Sandnesposten",
+          "url": "https://www.sandnesposten.no/borgli-om-sp-jeg-kjenner-ikke-partiet-igjen/s/5-105-1404849",
+          "date": "2026-07-07T18:59:37+00:00",
+          "category": "norway"
+        },
+        {
+          "title": "Content creator says satirical videos excluded her from JD Vance event",
+          "source": "USA Today",
+          "url": "https://www.usatoday.com/story/news/politics/2026/07/07/amanda-mcgonigle-jd-vance-aclu-lawsuit/90833783007/",
+          "date": "2026-07-07T17:56:00+00:00",
+          "category": "usa"
         },
         {
           "title": "Chamorro (Vox) mantiene una reunión de trabajo en las Cortes Valencianas",
@@ -997,122 +978,10 @@
           "url": "https://www.miciudadreal.es/2026/07/07/chamorro-vox-mantiene-una-reunion-de-trabajo-en-las-cortes-valencianas/",
           "date": "2026-07-07T17:35:17+00:00",
           "category": "spain"
-        },
-        {
-          "title": "Así será la sanidad andaluza, según el acuerdo PP-Vox",
-          "source": "iSanidad",
-          "url": "https://isanidad.com/379579/listas-espera-fidelizacion-mir-eir-desburocratizacion-primaria-agresiones-hoja-ruta-andaluza/",
-          "date": "2026-07-07T17:00:10+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox critica que el Principado destine \"una limosna\" al deporte asturiano",
-          "source": "Europa Press",
-          "url": "https://www.europapress.es/asturias/noticia-vox-critica-principado-destine-limosna-deporte-asturiano-20260707180818.html",
-          "date": "2026-07-07T16:08:18+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox pide sustituir la bandera arcoíris de la plaza Pedro Zerolo de Madrid por una de España",
-          "source": "El Debate",
-          "url": "https://www.eldebate.com/espana/madrid/20260707/vox-pide-sustituir-bandera-arcoiris-plaza-pedro-zerolo-madrid-espana_437077.html",
-          "date": "2026-07-07T15:54:21+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox propone dejar a la plaza de Pedro Zerolo sin su bandera LGTBI y, en su lugar, instalar una de España",
-          "source": "Elplural.com",
-          "url": "https://www.elplural.com/autonomias/madrid/vox-propone-dejar-plaza-pedro-zerolo-sin-bandera-lgtbi-y-lugar-instalar-espana_395010102",
-          "date": "2026-07-07T15:31:18+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox exige transparencia y paralizar cualquier proyecto de mezquita en Polígono Sur hasta garantizar el consenso",
-          "source": "Teleprensa",
-          "url": "https://www.teleprensa.com/articulo/sevilla/vox-exige-transparencia-paralizar-cualquier-proyecto-mezquita-poligono-sur-garantizar-consenso/202607071517312460036.html",
-          "date": "2026-07-07T15:17:31+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Orbán’s favorite Brussels think tank eyes new funding after Hungary orders parent organization to close",
-          "source": "politico.eu",
-          "url": "https://www.politico.eu/article/mcc-brussels-think-tank-new-funding-hungary/",
-          "date": "2026-07-07T14:20:46+00:00",
-          "category": "networks"
-        },
-        {
-          "title": "Santiago Abascal: \"Una auditoría en Andalucía dará a conocer el gasto sanitario de los extranjeros\"",
-          "source": "El MIRA",
-          "url": "https://www.elmira.es/articulo/andalucia/santiago-abascal-auditoria-andalucia-dara-conocer-gasto-sanitario-inmigrantes/20260707153118566719.html",
-          "date": "2026-07-07T13:31:18+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox asks to remove the LGTBI flag from Pedro Zerolo Square in Madrid",
-          "source": "La Voz de Madrid",
-          "url": "https://lavozmadrid.es/en/madrid-capital/general/vox-proposes-replacing-the-rainbow-flag-with-the-spanish-flag-in-madrids-pedro-zerolo-square",
-          "date": "2026-07-07T13:17:13+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox marca distancia con el PP sobre Blas Infante: «No representa la Andalucía que queremos»",
-          "source": "Diario Sur",
-          "url": "https://www.diariosur.es/andalucia/vox-marca-distancia-pp-blas-infante-20260707141809-nt.html",
-          "date": "2026-07-07T12:18:09+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox propone sustituir la bandera arcoíris por la de España en la plaza Pedro Zerolo, corazón del Orgullo en Madrid",
-          "source": "elDiario.es",
-          "url": "https://www.eldiario.es/madrid/somos/chueca/vox-propone-sustituir-bandera-arcoiris-espana-plaza-pedro-zerolo-corazon-orgullo-madrid_1_13362309.amp.html",
-          "date": "2026-07-07T11:57:44+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox quiere que la bandera arcoíris deje de ondear en la plaza Pedro Zerolo",
-          "source": "MadridPress",
-          "url": "https://madridpress.com/art/349672/vox-quiere-que-la-bandera-arcoiris-deje-de-ondear-en-la-plaza-pedro-zerolo",
-          "date": "2026-07-07T11:41:57+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Donald Trump accidentally confirmed what every fan knew about FIFA",
-          "source": "Yahoo Sports",
-          "url": "https://sports.yahoo.com/articles/donald-trump-accidentally-confirmed-every-112445616.html",
-          "date": "2026-07-07T11:24:45+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Vox exige al Ayuntamiento de Sevilla que «paralice» la mezquita del Polígono Sur",
-          "source": "ABC",
-          "url": "https://www.abc.es/sevilla/ciudad/vox-exige-ayuntamiento-sevilla-paralice-mezquita-poligono-20260707125848-nts.html",
-          "date": "2026-07-07T11:00:12+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox quiere convertir el mar en motor económico para Melilla - El Faro de Melilla",
-          "source": "El Faro de Melilla",
-          "url": "https://elfarodemelilla.es/vox-quiere-convertir-el-mar-en-motor-economico-para-melilla/",
-          "date": "2026-07-07T10:38:28+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox pide en el Congreso que Interior publique el país de origen de los infractores en sus balances - EFE",
-          "source": "Agencia de noticias",
-          "url": "https://efe.com/espana/2026-07-07/vox-pide-interior-publique-origen-infractores/",
-          "date": "2026-07-07T10:14:55+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox insiste en que la “prioridad nacional” es “un principio político y moral basado en el sentido común”",
-          "source": "Servimedia",
-          "url": "https://www.servimedia.es/noticias/vox-insiste-prioridad-nacional-es-principio-politico-moral-basado-sentido-comun/1413064682",
-          "date": "2026-07-07T09:07:00+00:00",
-          "category": "spain"
         }
       ],
       "first_seen": "2026-07-08T04:01:20+00:00",
-      "last_seen": "2026-07-08T04:01:20+00:00"
+      "last_seen": "2026-07-08T15:03:32+00:00"
     }
   ]
 }
