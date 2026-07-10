@@ -1,27 +1,637 @@
 {
-  "updated_at": "2026-07-10T04:33:02+00:00",
+  "updated_at": "2026-07-10T15:12:59+00:00",
   "lookback_hours": 48,
   "model": "Mistral Large",
   "status": "ok",
   "hotspots": [
     {
-      "id": "afd-s-rise-and-backlash-in-germany",
-      "title": "AfD's rise and backlash in Germany",
-      "blurb": "The Alternative für Deutschland (AfD) continues to dominate German right-wing news, with intense coverage of its electoral gains, internal scandals, and societal backlash. Recent polls show AfD leading in several states, but its policies and actions have sparked protests and legal challenges.",
-      "affect": "This commands disproportionate attention due to the high stakes of AfD's potential influence on German politics, its controversial policies, and the polarized reactions from both supporters and opponents.",
+      "id": "marine-le-pen-s-eligibility-crisis",
+      "title": "Marine Le Pen's eligibility crisis",
+      "blurb": "Marine Le Pen's 2027 presidential candidacy proceeds despite her conviction for misusing EU funds, sparking debates over judicial interference and democratic principles. Her appeal suspends her sentence, allowing her to campaign freely.",
+      "affect": "This commands disproportionate attention due to the moral and legal contradictions of a convicted politician running for office, polarizing public opinion and media discourse.",
       "intensity": 5,
       "affect_signals": [
         "polarized contention",
-        "alarmist framing",
+        "moral panic register",
         "cross-source repetition",
         "outrage-coded language",
         "leadership crisis tone"
       ],
       "categories": [
+        "🇫🇷 Rassemblement National"
+      ],
+      "article_count": 60,
+      "refs": [
+        {
+          "title": "Procès de Marine Le Pen : « Le vote n’efface pas juridiquement une condamnation »",
+          "source": "La Vie.fr",
+          "url": "https://www.lavie.fr/actualite/societe/proces-de-marine-le-pen-le-vote-nefface-pas-juridiquement-une-condamnation-104813.php",
+          "date": "2026-07-10T12:42:00+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Condamnation de Marine Le Pen : « C’est une idée très française de considérer que si l’on empêche une personne de se présenter, c’est l’ensemble de la démocratie qu’on entrave »",
+          "source": "Le Monde.fr",
+          "url": "https://www.lemonde.fr/idees/article/2026/07/10/condamnation-de-marine-le-pen-c-est-une-idee-tres-francaise-de-considerer-que-si-l-on-empeche-une-personne-de-se-presenter-c-est-l-ensemble-de-la-democratie-qu-on-entrave_6722441_3232.html",
+          "date": "2026-07-10T12:00:26+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Marine Le Pen candidate : cette réaction de Jordan Bardella qui en dirait long sur sa déception",
+          "source": "Gala",
+          "url": "https://www.gala.fr/politique/marine-le-pen-candidate-cette-reaction-de-jordan-bardella-qui-en-dirait-long-sur-sa-deception-20260710",
+          "date": "2026-07-10T11:52:33+00:00",
+          "category": "france"
+        },
+        {
+          "title": "“La décision de Marine Le Pen est un pas de plus dans le défi populiste lancé contre la justice et l’Etat de droit”",
+          "source": "Le Nouvel Obs",
+          "url": "https://www.nouvelobs.com/opinions/20260710.OBS116556/la-decision-de-marine-le-pen-est-un-pas-de-plus-dans-le-defi-populiste-lance-contre-la-justice-et-l-etat-de-droit.html",
+          "date": "2026-07-10T10:30:06+00:00",
+          "category": "france"
+        },
+        {
+          "title": "L'actu en dessin : Marine Le Pen condamnée, sous bracelet pendant la campagne présidentielle",
+          "source": "France 24",
+          "url": "https://www.france24.com/fr/france/20260710-actu-en-dessin-marine-le-pen-condamn%C3%A9e-bracelet-campagne-pr%C3%A9sidentielle-jordan-bardella-%C3%A9lection",
+          "date": "2026-07-10T10:07:36+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Corruption, the courts, and the French Presidency: Marine Le Pen declares for 2027",
+          "source": "springmag.ca",
+          "url": "https://springmag.ca/corruption-the-courts-and-the-french-presidency-marine-le-pen-declares-for-2027",
+          "date": "2026-07-10T10:01:21+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Inéligibilité de Marine Le Pen : ce que change vraiment le pourvoi en cassation pour les électeurs et la présidentielle - parlons-politique.fr",
+          "source": "",
+          "url": "https://www.parlons-politique.fr/elections/ineligibilite-de-marine-le-pen-ce-que-change-vraiment-le-pourvoi-en-cassation-pour-les-electeurs-et-la-presidentielle_23403/",
+          "date": "2026-07-10T09:23:31+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Présidentielle 2027: Marine Le Pen domine largement le premier tour selon un sondage, Édouard Philippe meilleur champion du centre et de la droite",
+          "source": "BFM",
+          "url": "https://www.bfmtv.com/politique/elections/presidentielle/presidentielle-2027-marine-le-pen-domine-largement-le-premier-tour-selon-un-sondage-edouard-philippe-meilleur-champion-du-centre-et-de-la-droite_AV-202607100356.html",
+          "date": "2026-07-10T08:03:48+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Présidentielle 2027 : La condamnation en appel de Marine Le Pen est-elle vraiment un handicap auprès des électeurs",
+          "source": "Yahoo Actualités",
+          "url": "https://fr.news.yahoo.com/pr%C3%A9sidentielle-2027-condamnation-appel-marine-071236050.html",
+          "date": "2026-07-10T07:12:36+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Marine Le Pen, une image qui divise en vue de la présidentielle 2027",
+          "source": "Sud Radio",
+          "url": "https://www.sudradio.fr/emission/soyez-libres-423",
+          "date": "2026-07-10T06:31:02+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Does Marine Le Pen's conviction end her dream of the presidency? The far-right faces its toughest test",
+          "source": "i24NEWS",
+          "url": "https://www.i24news.tv/en/news/international/europe/artc-does-marine-le-pen-s-conviction-end-her-dream-of-the-presidency-the-far-right-faces-its-toughest-test",
+          "date": "2026-07-10T05:40:00+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Procès en appel du RN : pourquoi l'article 432-15 du Code pénal cristallise-t-il les débats entre Marine Le Pen et la justice ?",
+          "source": "CNews",
+          "url": "https://www.cnews.fr/france/2026-07-10/proces-en-appel-du-rn-pourquoi-larticle-432-15-du-code-penal-cristallise-t-il-les",
+          "date": "2026-07-10T04:54:01+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Marine Le Pen, héritière de Trump",
+          "source": "Le Devoir",
+          "url": "https://www.ledevoir.com/opinion/idees/993830/marine-pen-heritiere-trump",
+          "date": "2026-07-10T04:00:00+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Marine Le Pen: A Poisoned Bracelet",
+          "source": "Open Magazine",
+          "url": "https://openthemagazine.com/world/marine-le-pen-a-poisoned-bracelet",
+          "date": "2026-07-10T03:39:00+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Le Pen to run for president, French court shortens ban",
+          "source": "The Nightly",
+          "url": "https://thenightly.com.au/politics/world/marine-le-pen-to-run-for-president-french-court-shortens-ban-c-22546340",
+          "date": "2026-07-10T01:52:55+00:00",
+          "category": "france"
+        },
+        {
+          "title": "French Appeals Court Upholds Marine Le Pen’s Conviction but Clears Her to Run for Office",
+          "source": "Organized Crime and Corruption Reporting Project | OCCRP",
+          "url": "https://www.occrp.org/en/news/french-appeals-court-upholds-marine-le-pens-conviction-but-clears-her-to-run-for-office",
+          "date": "2026-07-09T21:52:15+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Le Pen sheds ankle monitor to reclaim position at top of French ticket",
+          "source": "Washington Examiner",
+          "url": "https://www.washingtonexaminer.com/news/world/4642471/le-pen-topping-french-polls-ankle-monitor-jordan-bardella/",
+          "date": "2026-07-09T19:36:00+00:00",
+          "category": "france"
+        },
+        {
+          "title": "France: Despite her conviction, Marine Le Pen launches her campaign",
+          "source": "Cartooning for Peace",
+          "url": "https://www.cartooningforpeace.org/en/editos/france-despite-her-conviction-marine-le-pen-launches-her-campaign/",
+          "date": "2026-07-09T18:31:31+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Marine Le Pen, candidate à la présidentielle: \"Les juges ont décidé qu'elle était éligible, donc elle a le droit de se présenter\", observe François-Xavier Bellamy, vice-président Les Républicains",
+          "source": "BFM",
+          "url": "https://www.bfmtv.com/politique/elections/presidentielle/video-marine-le-pen-candidate-a-la-presidentielle-les-juges-ont-decide-qu-elle-etait-eligible-donc-elle-a-le-droit-de-se-presenter-observe-francois-xavier-bellamy-vice-president-les-republicains_VN-202607090764.html",
+          "date": "2026-07-09T17:38:23+00:00",
+          "category": "france"
+        },
+        {
+          "title": "\"Un seuil de décence a été dépassé\" : François Ruffin estime sur RTL que la France a \"perdu le contrôle de la corruption\" après l'annonce de la candidature de Marine Le Pen",
+          "source": "RTL",
+          "url": "https://www.rtl.fr/actu/politique/un-seuil-de-decence-a-ete-depasse-francois-ruffin-estime-sur-rtl-que-la-france-a-perdu-le-controle-de-la-corruption-apres-l-annonce-de-la-candidature-de-marine-le-pen-7900654081",
+          "date": "2026-07-09T17:26:45+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Présidentielle 2027 : Marine Le Pen en tête des intentions de vote au premier tour, loin devant Edouard Philippe et Jean-Luc Mélenchon",
+          "source": "CNews",
+          "url": "https://www.cnews.fr/france/2026-07-09/presidentielle-2027-marine-le-pen-en-tete-des-intentions-de-vote-au-premier-tour",
+          "date": "2026-07-09T17:24:40+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Présidentielle: une courte majorité donne \"raison à Marine Le Pen de se présenter\" (sondage)",
+          "source": "Boursorama",
+          "url": "https://www.boursorama.com/videos/actualites/presidentielle-une-courte-majorite-donne-raison-a-marine-le-pen-de-se-presenter-sondage-2d4a0a273ad89342db30935f8fd3e5ef",
+          "date": "2026-07-09T17:24:35+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Marine Le Pen: guilty but free to run",
+          "source": "DW.com",
+          "url": "https://www.dw.com/en/marine-le-pen-guilty-but-free-to-run/av-77895170",
+          "date": "2026-07-09T17:07:59+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Giertych zawdzięcza pozycję armii Silnych Razem. Sam dla partii jest problemem",
+          "source": "Rzeczpospolita",
+          "url": "https://www.rp.pl/plus-minus/art44795471-kataryna-giertych-nie-ma-hamulcow-tusk-okazuje-sie-za-slaby-by-go-utemperowac",
+          "date": "2026-07-09T17:00:00+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Marine Le Pen condamnée mais en campagne : la tactique éléctorale va-t-elle faire basculer l'élection présidentielle ?",
+          "source": "L'Humanité",
+          "url": "https://www.humanite.fr/politique/gauche/marine-le-pen-condamnee-mais-en-campagne-la-tactique-electorale-va-t-elle-faire-basculer-lelection-presidentielle",
+          "date": "2026-07-09T16:36:36+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Le Pen's presidential bid 'is the ultimate symbol of the erosion of public ethics'",
+          "source": "Le Monde.fr",
+          "url": "https://www.lemonde.fr/en/opinion/article/2026/07/09/le-pen-s-presidential-bid-is-the-ultimate-symbol-of-the-erosion-of-public-ethics_6755311_23.html",
+          "date": "2026-07-09T16:00:08+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Marine Le Pen would win next election despite conviction, say polls",
+          "source": "The Telegraph",
+          "url": "https://www.telegraph.co.uk/world-news/2026/07/09/marine-le-pen-win-next-election-conviction-france/",
+          "date": "2026-07-09T15:36:00+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Marine Le Pen candidate en 2027 : Jordan Bardella, le dauphin qui attendait son heure",
+          "source": "La Croix",
+          "url": "https://www.la-croix.com/politique/marine-le-pen-candidate-en-2027-jordan-bardella-le-dauphin-qui-attendait-son-heure-20260709",
+          "date": "2026-07-09T15:34:42+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Marine Le Pen candidate en 2027 : en Italie, “on l’a presque pris avec de l’ironie”",
+          "source": "Courrier international",
+          "url": "https://www.courrierinternational.com/article/interview-marine-le-pen-candidate-en-2027-en-italie-on-l-a-presque-pris-avec-de-l-ironie_247716",
+          "date": "2026-07-09T15:26:46+00:00",
+          "category": "france"
+        },
+        {
+          "title": "The Le Pen Verdict: How French Politics Turned MAGA",
+          "source": "Carnegie Endowment for International Peace",
+          "url": "https://carnegieendowment.org/europe/strategic-europe/2026/07/the-le-pen-verdict-how-french-politics-turned-maga",
+          "date": "2026-07-09T15:06:57+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Marine Le Pen Maintains High Chances of Victory in the 2027 Elections",
+          "source": "Inbox.eu",
+          "url": "https://news.inbox.eu/150hiiw-marine-le-pen-maintains-high-chances-of-victory-in-the-2027-elections?language=en",
+          "date": "2026-07-09T14:40:22+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Populism unites Le Pen and Farage. But she is a step closer to power",
+          "source": "The Guardian",
+          "url": "https://www.theguardian.com/commentisfree/2026/jul/09/populism-unites-le-pen-and-farage-but-she-is-a-step-closer-to-power",
+          "date": "2026-07-09T14:20:00+00:00",
+          "category": "france"
+        },
+        {
+          "title": "‘She doesn’t give up that easily’: France’s Le Pen eyes the Elysee",
+          "source": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/7/9/shes-extremely-dangerous-frances-le-pen-eyes-the-elysee",
+          "date": "2026-07-09T14:11:27+00:00",
+          "category": "france"
+        }
+      ],
+      "first_seen": "2026-07-02T14:39:14+00:00",
+      "last_seen": "2026-07-10T15:12:59+00:00"
+    },
+    {
+      "id": "afd-s-rise-and-backlash-in-germany",
+      "title": "AfD's rise and backlash in Germany",
+      "blurb": "The Alternative for Germany (AfD) continues to gain traction in polls, sparking debates over potential bans, extremism, and the party's impact on German democracy. Industry leaders warn against AfD's potential government participation.",
+      "affect": "This commands disproportionate attention due to fears of far-right extremism, legal battles over party bans, and the broader implications for German politics and society.",
+      "intensity": 5,
+      "affect_signals": [
+        "alarmist framing",
+        "cross-source repetition",
+        "outrage-coded language",
+        "leadership crisis tone",
+        "moral panic register"
+      ],
+      "categories": [
         "🇩🇪 Alternative für Deutschland"
       ],
-      "article_count": 120,
+      "article_count": 100,
       "refs": [
+        {
+          "title": "Eklat im Bundestag: Julia Klöckner droht der AfD",
+          "source": "BILD",
+          "url": "https://www.bild.de/politik/inland/eklat-im-bundestag-julia-kloeckner-droht-der-afd-6a50e85b8b5b8e3f0122a886",
+          "date": "2026-07-10T12:55:36+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Söder gegen teilweises AfD-Verbotsverfahren",
+          "source": "WELT",
+          "url": "https://www.welt.de/regionales/bayern/article6a50e9768b5b8e3f0122a8a5/soeder-gegen-teilweises-afd-verbotsverfahren.html",
+          "date": "2026-07-10T12:49:13+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "AfD NRW in Marl: Kandidatenliste für Landtagswahl 2027 wird in Sinsen aufgestellt",
+          "source": "Marler Zeitung",
+          "url": "https://www.marler-zeitung.de/marl/afd-landeswahlversammlung-nrw-2027-machtkampf-proteste-in-marl-w1219553-9001326750/",
+          "date": "2026-07-10T12:30:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Pfandringe, Papier, politische Kante: Im Rat von Haltern prallen Grüne und AfD aufeinander",
+          "source": "Halterner Zeitung",
+          "url": "https://www.halternerzeitung.de/haltern/politik-rat-haltern-gruene-afd-streit-muellkonzept-pfandringe-w1219447-3002129992/",
+          "date": "2026-07-10T12:30:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "AfD mit verfrühter Werbung: Wahlplakate sorgen für Ärger - kreiszeitung-wochenblatt.de",
+          "source": "",
+          "url": "https://www.kreiszeitung-wochenblatt.de/buchholz/c-politik/wahlplakate-sorgen-fuer-aerger_a411328",
+          "date": "2026-07-10T12:29:04+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Vermeintlicher Überfall auf Rostocker AfD-Politiker: Ermittlungen halten an",
+          "source": "NDR.de",
+          "url": "https://www.ndr.de/nachrichten/mecklenburg-vorpommern/landtagswahl/vermeintlicher-ueberfall-auf-rostocker-afd-politiker-ermittlungen-halten-an,mvwahl-152.html",
+          "date": "2026-07-10T12:24:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "AfD Listenaufstellung zur Landtagswahl | WDR aktuell",
+          "source": "WDR",
+          "url": "https://www1.wdr.de/mediathek/video/nrw-video/afd-listenaufstellung-landesparteitag-wdr-aktuell-100.html",
+          "date": "2026-07-10T12:09:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Mehr als 2,5 Millionen Euro für Anti-AfD-Kampagnen gesammelt",
+          "source": "WELT",
+          "url": "https://www.welt.de/regionales/mecklenburg-vorpommern/article6a50ddfa4c65dbb4ac8fd588/mehr-als-2-5-millionen-euro-fuer-anti-afd-kampagnen-gesammelt.html",
+          "date": "2026-07-10T11:57:49+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Höcke nicht wählbar? Spahn bringt Wahlrechtszentzug für Thüringens AfD-Chef ins Spiel",
+          "source": "MDR.de",
+          "url": "https://www.mdr.de/nachrichten/thueringen/vorschlag-jens-spahn-,hoecke-wahlrecht-100.html",
+          "date": "2026-07-10T11:55:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "AfD ruft immer weiter rein, da wird es Klöckner zu bunt: Sie droht gesamter Partei mit Rauswurf",
+          "source": "Soester Anzeiger",
+          "url": "https://www.soester-anzeiger.de/politik/kloeckner-droht-gesamter-afd-fraktion-mit-rauswurf-aus-bundestag-zr-94391724.html",
+          "date": "2026-07-10T11:53:45+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Vor der Landtagswahl in MV: Debatte über die Brandmauer zur AfD",
+          "source": "NDR.de",
+          "url": "https://www.ndr.de/nachrichten/mecklenburg-vorpommern/landtagswahl/vor-der-landtagswahl-in-mv-debatte-ueber-die-brandmauer-zur-afd,mvwahl-154.html",
+          "date": "2026-07-10T11:40:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Wahlrechtsentzug bis Verbot - wie umgehen mit der Höcke-AfD?",
+          "source": "WELT",
+          "url": "https://www.welt.de/regionales/thueringen/article6a50d85a8b5b8e3f0122a6e1/wahlrechtsentzug-bis-verbot-wie-umgehen-mit-der-hoecke-afd.html",
+          "date": "2026-07-10T11:35:21+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Linke / Landtagswahl Sachsen-Anhalt – Sachsen-Anhalt: »Bündnis mit SPD und Grünen ist nicht im Angebot - nd-aktuell.de",
+          "source": "",
+          "url": "https://www.nd-aktuell.de/artikel/1201024.linke-landtagswahl-sachsen-anhalt-sachsen-anhalt-buendnis-mit-spd-und-gruenen-ist-nicht-im-angebot.html",
+          "date": "2026-07-10T11:25:50+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Nordrhein-Westfalen: AfD schickt Kandidat für Ministerpräsidenten-Amt ins Rennen - n-tv.de - n-tv.de",
+          "source": "",
+          "url": "https://www.n-tv.de/regionales/nordrhein-westfalen/AfD-schickt-Kandidat-fuer-Ministerpraesidenten-Amt-ins-Rennen-id31069706.html",
+          "date": "2026-07-10T11:23:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "AfD: Höcke das Wahlrecht entziehen? Spahn bringt brisante Idee ins Spiel",
+          "source": "Berliner Morgenpost",
+          "url": "https://www.morgenpost.de/politik/article412537393/hoecke-das-wahlrecht-entziehen-spahn-bringt-brisante-idee-ins-spiel.html",
+          "date": "2026-07-10T11:10:37+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Spełnia się czarny sen Tuska? Wyciekł plan Kaczyńskiego na wielką prawicową koalicję!",
+          "source": "wPolityce.pl",
+          "url": "https://wpolityce.pl/polityka/764624-spelnia-sie-czarny-sen-tuska-wyciekl-plan-kaczynskiego",
+          "date": "2026-07-10T11:01:02+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Abstimmung im Bundestag: Mehrere Länder wollen wegen GKV-Reform Vermittlungsausschuss anrufen",
+          "source": "DIE ZEIT",
+          "url": "https://www.zeit.de/politik/deutschland/2026-07/reformen-gesetzliche-krankenversicherung-heizungsgesetz-bundestag-live",
+          "date": "2026-07-10T10:40:58+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Ultimi sondaggi, la supermedia del 10 luglio: sorpasso di Vannacci sulla Lega",
+          "source": "LA7",
+          "url": "https://www.la7.it/omnibus/video/ultimi-sondaggi-la-supermedia-del-10-luglio-sorpasso-di-vannacci-sulla-lega-10-07-2026-651582",
+          "date": "2026-07-10T10:00:49+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "AfD-Verbotsdebatte: Jens Spahn schlägt vor, Björn Höcke das Wahlrecht zu entziehen",
+          "source": "Berliner Zeitung",
+          "url": "https://www.berliner-zeitung.de/article/afd-verbot-jens-spahn-will-bjoern-hoecke-das-wahlrecht-entziehen-10185551",
+          "date": "2026-07-10T09:38:44+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Was dürfen Lehrer sagen? - Gesellschaft - SZ.de",
+          "source": "SZ.de",
+          "url": "https://www.sueddeutsche.de/leben/schule-lehrer-neutral-afd-rechtstextremismus-li.3505157",
+          "date": "2026-07-10T09:09:03+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "„Glaube nicht, dass das der richtige Weg ist“, sagt Söder zum AfD-Teilverbot",
+          "source": "WELT",
+          "url": "https://www.welt.de/politik/video6a50ae0843b7fd5185004bc4/csu-chef-glaube-nicht-dass-das-der-richtige-weg-ist-sagt-soeder-zum-afd-teilverbot.html",
+          "date": "2026-07-10T08:52:59+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "\"Wenn es um Rassismus geht, kann man sich nicht mehr raushalten\"",
+          "source": "MDR.de",
+          "url": "https://www.mdr.de/nachrichten/deutschland/politik/afd-gegen-kirche-asyl-gemeinde-,amtskirchen-100.html",
+          "date": "2026-07-10T08:25:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Feuerwehrverband verurteilt AfD-Wahlkampf mit ausrangierten Löschfahrzeugen",
+          "source": "Hasepost",
+          "url": "https://hasepost.de/feuerwehrverband-verurteilt-afd-wahlkampf-mit-ausrangierten-loeschfahrzeugen-731276/",
+          "date": "2026-07-10T08:24:09+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Unionsfraktionschef Spahn regt Wahlrechtsentzug für Höcke an",
+          "source": "ZDFheute",
+          "url": "https://www.zdfheute.de/politik/deutschland/spahn-wahlrechtsentzug-hoecke-afd-100.html",
+          "date": "2026-07-10T08:19:23+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Sondaggi politici, Futuro Nazionale di Vannacci cresce di un punto ed è stabile sopra la Lega",
+          "source": "Il Foglio",
+          "url": "https://www.ilfoglio.it/politica/2026/07/10/news/sondaggi-politici-futuro-nazionale-di-vannacci-cresce-di-un-punto-ed-e-stabile-sopra-la-lega--401965",
+          "date": "2026-07-10T08:13:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Sachsen-Anhalt: AfD-Politiker enthüllt im ZDF Parteiinterna – nun soll er die Partei verlassen",
+          "source": "WELT",
+          "url": "https://www.welt.de/politik/deutschland/article6a509d5443b7fd5185004a3f/sachsen-anhalt-afd-politiker-enthuellt-im-zdf-parteiinterna-nun-soll-er-die-partei-verlassen.html",
+          "date": "2026-07-10T08:03:42+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Vor Landtagswahlen: BDI warnt vor AfD-Regierungsbeteiligung und Folgen für den Wirtschaftsstandort - n-tv.de - n-tv.de",
+          "source": "",
+          "url": "https://www.n-tv.de/ticker/BDI-warnt-vor-AfD-Regierungsbeteiligung-und-Folgen-fuer-den-Wirtschaftsstandort-id31070718.html",
+          "date": "2026-07-10T07:47:15+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Auf Steuerzahler-Kosten zum Parteitag gefahren? AfD-Mann Holm gerät in Erklärungsnot",
+          "source": "Nordkurier",
+          "url": "https://www.nordkurier.de/regional/mecklenburg-vorpommern/auf-steuerzahler-kosten-zum-parteitag-gefahren-afd-mann-holm-geraet-in-erklaerungsnot-4702413",
+          "date": "2026-07-10T07:40:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "AfD: CSU-Politiker zeigen sich offen für Teilverbot im Fall Thüringen - Video",
+          "source": "WELT",
+          "url": "https://www.welt.de/politik/video6a509abfc13a557858aa06e5/afd-csu-politiker-zeigen-sich-offen-fuer-teilverbot-im-fall-thueringen.html",
+          "date": "2026-07-10T07:33:37+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Awantura na miesięcznicy smoleńskiej. Doszło do rękoczynów",
+          "source": "Wiadomości Onet",
+          "url": "https://wiadomosci.onet.pl/warszawa/awantura-na-miesiecznicy-smolenskiej-doszlo-do-szarpaniny/pdf3clc",
+          "date": "2026-07-10T07:14:52+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Vor Landtagswahlen in Ostdeutschland: Campact sammelt 2,5 Millionen Euro Spenden gegen die AfD",
+          "source": "taz.de",
+          "url": "https://taz.de/Vor-Landtagswahlen-in-Ostdeutschland/!6194987/",
+          "date": "2026-07-10T07:12:39+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Landtagswahl im September: Industrie warnt vor AfD-Regierungsbeteiligung",
+          "source": "RP Online",
+          "url": "https://rp-online.de/politik/deutschland/afd-schadet-wirtschaft-bdi-warnung-zur-wahl_aid-151282499",
+          "date": "2026-07-10T07:10:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Nach rassistischem Video: AfD-Bürgermeister verliert sein Amt",
+          "source": "WA.de",
+          "url": "https://www.wa.de/nordrhein-westfalen/afd-buergermeister-norbert-emmerich-verliert-sein-amt-in-gelsenkirchen-94391033.html",
+          "date": "2026-07-10T06:45:21+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Statt Parteiverbotsverfahren Spahn plädiert für Wahlrechtsentzug von Thüringens AfD-Chef Höcke",
+          "source": "Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/politik/statt-parteiverbotsverfahren-spahn-pladiert-fur-wahlrechtsentzug-von-thuringens-afd-chef-hocke-15825624.html",
+          "date": "2026-07-10T06:38:40+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "„Markus Lanz“: Gauck fordert mehr „argumentativen Eifer“ gegenüber der AfD",
+          "source": "WELT",
+          "url": "https://www.welt.de/politik/deutschland/article6a50879cbb0cf80de56a437c/markus-lanz-gauck-fordert-mehr-argumentativen-eifer-gegenueber-der-afd.html",
+          "date": "2026-07-10T06:27:51+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Gauck bei Lanz über Ostdeutschland und die AfD: „Ich bin der Meinung, dass sie falsch wählen“",
+          "source": "Berliner Zeitung",
+          "url": "https://www.berliner-zeitung.de/article/gauck-lanz-zdf-afd-ostdeutschland-falsch-waehlen-10184571",
+          "date": "2026-07-10T05:46:28+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "BDI: Industrieverband warnt vor Regierungsbeteiligung von AfD",
+          "source": "DIE ZEIT",
+          "url": "https://www.zeit.de/politik/deutschland/2026-07/bdi-afd-landtagswahlen-ostdeutschland-tanja-goenner-gxe",
+          "date": "2026-07-10T05:39:55+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "\"Auf Irrweg\": Joachim Gauck fällt bei Lanz deutliches Urteil über AfD-Wähler",
+          "source": "Joyn",
+          "url": "https://newstime.joyn.de/themen/newstime/auf-irrweg-joachim-gauck-faellt-bei-lanz-deutliches-urteil-ueber-afd-waehler-153406",
+          "date": "2026-07-10T05:38:58+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Schulpflicht: Wie sich die Länder gegen die AfD-Attacke wappnen",
+          "source": "FAZ",
+          "url": "https://www.faz.net/aktuell/politik/inland/schulpflicht-wie-sich-die-laender-gegen-die-afd-attacke-wappnen-accg-201005839.html",
+          "date": "2026-07-10T05:35:25+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "AfD-Pläne stoßen auf Widerstand: So wollen Länder die Schulpflicht absichern",
+          "source": "FAZ",
+          "url": "https://www.faz.net/aktuell/politik/inland/afd-plaene-stossen-auf-widerstand-so-wollen-laender-die-schulpflicht-absichern-accg-201005839.html",
+          "date": "2026-07-10T05:35:25+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Jens Spahn will Björn Höcke von der AfD in Thüringen das Wahlrecht entziehen",
+          "source": "BILD",
+          "url": "https://www.bild.de/politik/inland/jens-spahn-will-bjoern-hoecke-von-der-afd-in-thueringen-das-wahlrecht-entziehen-6a50798543b7fd5185004850",
+          "date": "2026-07-10T05:24:42+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "AfD-Landeschef Thüringen: Jens Spahn bringt Wahlrechtsentzug für Björn Höcke ins Spiel",
+          "source": "DIE ZEIT",
+          "url": "https://www.zeit.de/politik/deutschland/2026-07/bjoern-hoecke-wahlrecht-entzug-afd-verbotsverfahren-gxe",
+          "date": "2026-07-10T05:09:07+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Anti-AfD-Demo: Pressefreiheit gilt jetzt auch für Journalisten",
+          "source": "WELT",
+          "url": "https://www.welt.de/debatte/plus6a4f525a43b7fd5185003291/anti-afd-demo-pressefreiheit-gilt-jetzt-auch-fuer-journalisten.html",
+          "date": "2026-07-10T04:55:07+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Umfrage zur Bundestagswahl: Koalition erreicht Tiefstwert – AfD und Linke legen zu",
+          "source": "Berliner Zeitung",
+          "url": "https://www.berliner-zeitung.de/article/umfrage-bundestagswahl-ipsos-cdu-spd-tiefstwert-afd-hoechstwert-linke-legt-zu-10184495",
+          "date": "2026-07-10T04:34:04+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Markus Lanz: Joachim Gauck rechnet mit AfD-Wählern ab",
+          "source": "WEB.DE",
+          "url": "https://web.de/magazine/politik/politische-talkshows/markus-lanz-joachim-gauck-rechnet-afd-waehlern-42487644",
+          "date": "2026-07-10T04:28:50+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Joachim Gauck: AfD-Wähler \"befinden sich auf einem Irrweg\"",
+          "source": "WEB.DE",
+          "url": "https://web.de/magazine/politik/politische-talkshows/markus-lanz-joachim-gauck-afd-waehler-befinden-irrweg-42487644",
+          "date": "2026-07-10T04:28:50+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Joachim Gauck bei „Markus Lanz“: „Das war eine Portion Optimismus zu viel“",
+          "source": "Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/politik/joachim-gauck-bei-markus-lanz-das-war-eine-portion-optimismus-zu-viel-15825422.html",
+          "date": "2026-07-10T04:27:36+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "„Einfach mal ein Verfahren machen“ – Spahn schlägt Wahlrechtsentzug für Höcke vor",
+          "source": "WELT",
+          "url": "https://www.welt.de/politik/deutschland/article6a506fbcbb0cf80de56a4298/afd-einfach-mal-ein-verfahren-machen-spahn-schlaegt-wahlrechtsentzug-fuer-hoecke-vor.html",
+          "date": "2026-07-10T04:24:24+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Stadt vermietet Ratssaal nicht mehr an Dritte – AfD glaubt, den Grund zu kennen",
+          "source": "WAZ | Westdeutsche Allgemeine Zeitung",
+          "url": "https://www.waz.de/lokales/essen/article412528255/stadt-vermietet-ratssaal-nicht-mehr-an-dritte-afd-glaubt-den-grund-zu-kennen.html",
+          "date": "2026-07-10T03:55:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Ex-Bundespräsident bei Lanz: Kein Verständnis für AfD – und wenig für die Brandmauer",
+          "source": "Berliner Morgenpost",
+          "url": "https://www.morgenpost.de/kultur/tv-streaming/article412535509/joachim-gauck-kritisiert-bei-markus-lanz-die-brandmauer.html",
+          "date": "2026-07-10T03:25:16+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Umfrage: AfD auf Rekordwert – Union verliert",
+          "source": "WEB.DE",
+          "url": "https://web.de/magazine/politik/videos/umfrage-afd-rekordwert-union-verliert-42487576",
+          "date": "2026-07-10T03:12:38+00:00",
+          "category": "germany"
+        },
         {
           "title": "\"Wenn es um Rassismus geht, kann man sich da nicht mehr raushalten.\"",
           "source": "MDR.de",
@@ -58,11 +668,18 @@
           "category": "germany"
         },
         {
-          "title": "Berlin: AfD-Politiker soll Frau ins Gesicht geschlagen haben – Partei erhebt Gegenvorwurf",
-          "source": "WELT",
-          "url": "https://www.welt.de/politik/deutschland/article6a504bcb43b7fd518500466e/berlin-afd-politiker-soll-frau-ins-gesicht-geschlagen-haben-partei-erhebt-gegenvorwurf.html",
-          "date": "2026-07-10T02:26:50+00:00",
+          "title": "Markus Lanz spricht mit Joachim Gauck über Demokratie und die AfD - Medien - SZ.de",
+          "source": "SZ.de",
+          "url": "https://www.sueddeutsche.de/medien/joachim-gauck-markus-lanz-demokratie-afd-li.3512691",
+          "date": "2026-07-10T02:59:34+00:00",
           "category": "germany"
+        },
+        {
+          "title": "President Trump cleans house at the bipartisan Election Assistance Commission",
+          "source": "90.5 WESA",
+          "url": "https://www.wesanews.org/national-international-news/2026-07-09/president-trump-cleans-house-at-the-bipartisan-election-assistance-commission",
+          "date": "2026-07-10T02:52:00+00:00",
+          "category": "usa"
         },
         {
           "title": "CSD in Müncheberg: Auch AfD-Funktionäre bei Gegendemo von Rechtsextremisten",
@@ -72,52 +689,94 @@
           "category": "germany"
         },
         {
-          "title": "\"Ungute Suppe\": Gauck bei Lanz über Rechtspopulisten - T-Online",
-          "source": "",
-          "url": "https://www.t-online.de/nachrichten/deutschland/gesellschaft/id_101336752/joachim-gauck-sieht-afd-waehler-auf-dem-irrweg.html",
-          "date": "2026-07-10T01:33:55+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Listenplätze werden vergeben: NRW-AfD wählt Spitzenkandidaten für Landtagswahl 2027",
-          "source": "DIE ZEIT",
-          "url": "https://www.zeit.de/news/2026-07/10/nrw-afd-waehlt-spitzenkandidaten-fuer-landtagswahl-2027",
-          "date": "2026-07-10T01:30:19+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Umfrage: AfD baut Vorsprung auf Union aus – Linke zieht erstmals mit SPD gleich",
+          "title": "Industrieverband: Regierungsbeteiligung der AfD wäre «fatal»",
           "source": "WELT",
-          "url": "https://www.welt.de/politik/deutschland/article6a50217cbb0cf80de56a40b9/umfrage-afd-baut-vorsprung-auf-union-aus-linke-zieht-erstmals-mit-spd-gleich.html",
-          "date": "2026-07-09T23:08:18+00:00",
+          "url": "https://www.welt.de/regionales/mecklenburg-vorpommern/article6a501fe6bb0cf80de56a40ae/industrieverband-regierungsbeteiligung-der-afd-waere-fatal.html",
+          "date": "2026-07-09T22:27:46+00:00",
           "category": "germany"
         },
         {
-          "title": "„Würde den Standort schwächen“ – Führender Industrieverband warnt vor Regierungsbeteiligung der AfD",
-          "source": "WELT",
-          "url": "https://www.welt.de/wirtschaft/article6a501dfbfe4170d03593c231/afd-wuerde-den-standort-schwaechen-fuehrender-industrieverband-warnt-vor-regierungsbeteiligung.html",
-          "date": "2026-07-09T22:35:17+00:00",
+          "title": "Landtagswahlen - Industrieverband: Regierungsbeteiligung der AfD wäre „fatal“ - Politik - SZ.de",
+          "source": "SZ.de",
+          "url": "https://www.sueddeutsche.de/politik/landtagswahlen-industrieverband-regierungsbeteiligung-der-afd-waere-fatal-dpa.urn-newsml-dpa-com-20090101-260709-930-361806",
+          "date": "2026-07-09T22:24:04+00:00",
           "category": "germany"
         },
         {
-          "title": "Former MAGA influencer declares Turning Point USA 'dead in the water'",
-          "source": "rawstory.com",
-          "url": "https://www.rawstory.com/maga-2677199682/",
-          "date": "2026-07-09T21:40:00+00:00",
-          "category": "networks"
+          "title": "Landtagswahlen: BDI warnt vor AfD-Regierungsbeteiligung",
+          "source": "Presse Augsburg",
+          "url": "https://presse-augsburg.de/landtagswahlen-bdi-warnt-vor-afd-regierungsbeteiligung/1176691/",
+          "date": "2026-07-09T22:16:49+00:00",
+          "category": "germany"
         },
         {
-          "title": "Er verriet brisante Details: AfD-Politiker nach ZDF-Interview aus Fraktion geworfen",
-          "source": "BILD",
-          "url": "https://www.bild.de/regional/sachsen-anhalt/er-verriet-brisante-details-afd-politiker-nach-zdf-interview-aus-fraktion-geworfen-6a4e7544bb0cf80de56a295b",
-          "date": "2026-07-09T19:27:33+00:00",
-          "category": "germany"
+          "title": "Vertice Nato, il regalo di Erdogan ai leader: una pistola con proiettili. E Meloni la accetta",
+          "source": "Il Fatto Quotidiano",
+          "url": "https://www.ilfattoquotidiano.it/in-edicola/articoli/2026/07/10/vertice-nato-il-regalo-di-erdogan-ai-leader-una-pistola-con-proiettili-e-meloni-la-accetta/8444519/",
+          "date": "2026-07-09T22:01:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Pier Silvio Berlusconi difende Meloni: “Trump ha offeso tutti gli italiani”. Cauto su Vannacci: “Aspetto il programma”",
+          "source": "Quotidiano Nazionale",
+          "url": "https://www.quotidiano.net/politica/berlusconi-meloni-trump-vannacci-tajani-e8h301m1",
+          "date": "2026-07-09T21:21:10+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "As Trump threatens the Smithsonian, Congress is on the sidelines",
+          "source": "Roll Call",
+          "url": "https://rollcall.com/2026/07/09/trump-threatens-smithsonian-congress-sidelines/",
+          "date": "2026-07-09T20:49:26+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Milei, Davos y la teoría del tamaño mínimo: qué dice el paper que fundamenta la desregulación",
+          "source": "TN",
+          "url": "https://tn.com.ar/economia/2026/07/09/que-dice-la-teoria-del-tamano-minimo-que-milei-uso-en-davos-para-explicar-por-que-hay-que-desregular-el-estado/",
+          "date": "2026-07-09T20:24:29+00:00",
+          "category": "argentina"
         },
         {
           "title": "AfD-Bürgermeister in Gelsenkrichen abgewählt",
           "source": "WDR",
           "url": "https://www1.wdr.de/mediathek/video/sendungen/lokalzeit-ruhr/moegliche-abwahl-afd-buergermeister-gelsenkirchen-100.html",
           "date": "2026-07-09T18:33:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "MV-Trends zur Landtagswahl: AfD weiterhin vor SPD",
+          "source": "NDR.de",
+          "url": "https://www.ndr.de/fernsehen/sendungen/nordmagazin/mv-trends-zur-landtagswahl-afd-weiterhin-vor-spd,nordmagazin-12026.html",
+          "date": "2026-07-09T18:15:19+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Gelsenkirchen wählt AfD-Vize-Bürgermeister Norbert Emmerich ab",
+          "source": "RTL.de",
+          "url": "https://www.rtl.de/rtl-west/gelsenkirchen-waehlt-afd-vize-buergermeister-norbert-emmerich-ab-id31069214.html",
+          "date": "2026-07-09T17:28:59+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Reform byelection campaign risks a replay of the Johnson error",
+          "source": "The Guardian",
+          "url": "https://www.theguardian.com/politics/2026/jul/09/reform-byelection-campaign-risks-a-replay-of-the-johnson-error",
+          "date": "2026-07-09T17:16:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Polish president makes key Supreme Court appointment as judicial dispute persists",
+          "source": "Anadolu Ajansı",
+          "url": "https://www.aa.com.tr/en/europe/polish-president-makes-key-supreme-court-appointment-as-judicial-dispute-persists/3993510",
+          "date": "2026-07-09T17:03:31+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Nach AfD-Vorstoß: Bundesrat will die Schulpflicht gegen Reformen absichern",
+          "source": "Berliner Morgenpost",
+          "url": "https://www.morgenpost.de/politik/article412526639/nach-afd-vorstoss-bundesrat-will-die-schulpflicht-gegen-reformen-absichern.html",
+          "date": "2026-07-09T17:01:45+00:00",
           "category": "germany"
         },
         {
@@ -128,6 +787,34 @@
           "category": "germany"
         },
         {
+          "title": "Juanma Moreno eleva la Sanidad y crea dos vicepresidencias para contrapesar la entrada de Vox en la Junta de Andalucía",
+          "source": "ABC",
+          "url": "https://www.abc.es/espana/andalucia/juanma-moreno-eleva-sanidad-crea-dos-vicepresidencias-20260709185057-nts.html",
+          "date": "2026-07-09T16:52:06+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "AfD in Baden-Württemberg: Die Strategie der harten Abgrenzung",
+          "source": "FAZ",
+          "url": "https://www.faz.net/aktuell/politik/inland/afd-in-baden-wuerttemberg-die-strategie-der-harten-abgrenzung-200999184.html",
+          "date": "2026-07-09T16:00:43+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Ralf Stegner über Alice Weidel, Ulrich Siegmund und die Wirkung der AfD",
+          "source": "ServusTV On",
+          "url": "https://www.servustv.com/de/page/AAJCBNQEGC98BGSSI5AA/ralf-stegner-uber-alice-weidel-ulrich-siegmund-und-die-wirkung-der-afd",
+          "date": "2026-07-09T16:00:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Stegner warnt vor einem Experiment mit der AfD in Sachsen-Anhalt",
+          "source": "ServusTV On",
+          "url": "https://www.servustv.com/de/page/page:AA4SQFMMK15ZWM7P9TUN",
+          "date": "2026-07-09T16:00:00+00:00",
+          "category": "germany"
+        },
+        {
           "title": "Gelsenkirchen: Nach Empörung über „menschenverachtendes“ Putz-Video – AfD-Bürgermeister verliert Amt",
           "source": "WELT",
           "url": "https://www.welt.de/politik/deutschland/article6a4fb88dbb0cf80de56a3ca9/gelsenkirchen-nach-empoerung-ueber-menschenverachtendes-putz-video-afd-buergermeister-verliert-amt.html",
@@ -135,11 +822,53 @@
           "category": "germany"
         },
         {
-          "title": "AfD-Bürgermeister in Gelsenkirchen nach Skandal-Video abgewählt",
-          "source": "derwesten.de",
-          "url": "https://www.derwesten.de/region/afd-buergermeister-gelsenkirchen-putz-video-id302099705.html",
-          "date": "2026-07-09T14:40:11+00:00",
+          "title": "Am Freitag in Marl: Zerstrittene NRW-AfD wählt Spitzenkandidaten für Landtagswahl 2027",
+          "source": "RP Online",
+          "url": "https://rp-online.de/nrw/landespolitik/nrw-afd-waehlt-spitzenkandidaten-fuer-landtagswahl-2027_aid-151248921",
+          "date": "2026-07-09T15:47:00+00:00",
           "category": "germany"
+        },
+        {
+          "title": "Trend MV-Landtagswahlen 2026: AfD weiterhin stärkste Kraft",
+          "source": "NDR.de",
+          "url": "https://www.ndr.de/nachrichten/info/trend-mv-landtagswahlen-2026-afd-weiterhin-staerkste-kraft,ndrinfo-14650.html",
+          "date": "2026-07-09T15:35:45+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "MDR würde gegen AfD bei Senderausstieg klagen",
+          "source": "FAZ",
+          "url": "https://www.faz.net/aktuell/feuilleton/medien-und-film/medienpolitik/mdr-wuerde-gegen-afd-bei-senderausstieg-klagen-201014994.html",
+          "date": "2026-07-09T15:06:48+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Kirchenbasis hält gegen AfD-Pläne in Sachsen-Anhalt",
+          "source": "MDR.de",
+          "url": "https://www.mdr.de/nachrichten/deutschland/politik/audio-3348788.html",
+          "date": "2026-07-09T14:56:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Streit um «Putz-Video»: AfD-Bürgermeister nach «Putz-Video» abgewählt",
+          "source": "DIE ZEIT",
+          "url": "https://www.zeit.de/news/2026-07/09/afd-buergermeister-nach-putz-video-abgewaehlt",
+          "date": "2026-07-09T14:31:52+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Coburger Stadtrat: AfD-Antrag bringt andere Fraktionen in Bredouille",
+          "source": "Neue Presse Coburg",
+          "url": "https://www.np-coburg.de/inhalt.stadtrat-coburg-afd-fordert-klares-nein-zu-umspannwerk.005ffa3b-6017-4092-a581-d65fb0310d67.html",
+          "date": "2026-07-09T14:30:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Classifica",
+          "source": "Lega Serie B",
+          "url": "https://www.legab.it/seriebkt/classifica",
+          "date": "2026-07-09T14:22:54+00:00",
+          "category": "italy"
         },
         {
           "title": "Rassistisches Video: Stadtrat von Gelsenkirchen wählt AfD-Bürgermeister ab",
@@ -149,300 +878,410 @@
           "category": "germany"
         },
         {
-          "title": "Nach nur sieben Monaten: Gelsenkirchens erster AfD-Bürgermeister ist abgewählt",
-          "source": "WAZ | Westdeutsche Allgemeine Zeitung",
-          "url": "https://www.waz.de/lokales/gelsenkirchen/article412522599/nach-nur-sieben-monaten-gelsenkirchens-erster-afd-buergermeister-ist-abgewaehlt.html",
-          "date": "2026-07-09T13:41:43+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Nach Putz-Demütigung: Rat könnte AfD-Bürgermeister abwählen",
-          "source": "Jüdische Allgemeine",
-          "url": "https://www.juedische-allgemeine.de/politik/nach-putz-demuetigung-rat-koennte-afd-buergermeister-abwaehlen/",
-          "date": "2026-07-09T11:44:00+00:00",
+          "title": "Kommunalwahlen in Friesland: AfD-Kandidat ums Bürgermeisteramt in Sande springt ab",
+          "source": "NWZonline",
+          "url": "https://www.nwzonline.de/friesland/kommunalwahlen-in-friesland-afd-kandidat-ums-buergermeisteramt-in-sande-springt-ab_a_4,3,1120944115.html",
+          "date": "2026-07-09T14:12:44+00:00",
           "category": "germany"
         }
       ],
       "first_seen": "2026-07-10T04:33:02+00:00",
-      "last_seen": "2026-07-10T04:33:02+00:00"
-    },
-    {
-      "id": "marine-le-pen-s-eligibility-crisis",
-      "title": "Marine Le Pen's eligibility crisis",
-      "blurb": "Marine Le Pen's legal troubles and her 2027 presidential candidacy dominate French far-right news. Despite her conviction for misusing EU funds, she remains a leading figure in the polls, sparking debates about her eligibility and the broader implications for French politics.",
-      "affect": "This story commands attention due to Le Pen's high-profile status, the moral and legal controversies surrounding her candidacy, and the potential impact on France's political landscape.",
-      "intensity": 5,
-      "affect_signals": [
-        "moral panic register",
-        "polarized contention",
-        "cross-source repetition",
-        "outrage-coded language",
-        "leadership crisis tone"
-      ],
-      "categories": [
-        "🇫🇷 Rassemblement National"
-      ],
-      "article_count": 100,
-      "refs": [
-        {
-          "title": "Présidentielle 2027: \"Je ne vois pas d'adversaire qui serait en mesure de battre Marine Le Pen\", assure Gilbert Collard, ancien député européen RN",
-          "source": "BFM",
-          "url": "https://www.bfmtv.com/politique/elections/presidentielle/video-presidentielle-2027-je-ne-vois-pas-d-adversaire-qui-serait-en-mesure-de-battre-marine-le-pen-assure-gilbert-collard-ancien-depute-europeen-rn_VN-202607090862.html",
-          "date": "2026-07-09T21:02:26+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Marine Le Pen relance sa course à l’Élysée sous la menace d’une condamnation qui peut encore peser sur 2027 - parlons-politique.fr",
-          "source": "",
-          "url": "https://www.parlons-politique.fr/elections/marine-le-pen-relance-sa-course-a-lelysee-sous-la-menace-dune-condamnation-qui-peut-encore-peser-sur-2027_23375/",
-          "date": "2026-07-09T18:26:20+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Bracelet électronique : Marine Le Pen jusqu'en 2027 - parlons-politique.fr",
-          "source": "",
-          "url": "https://www.parlons-politique.fr/elections/le-pourvoi-de-marine-le-pen-suspend-le-bracelet-electronique-et-maintient-sa-candidature-jusqua-la-presidentielle-2027_23373/",
-          "date": "2026-07-09T18:24:32+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Marine Le Pen : Candidate en 2027, envers et contre tout - Politique",
-          "source": "France 24",
-          "url": "https://www.france24.com/fr/%C3%A9missions/politique/20260709-marine-le-pen-candidate-en-2027-envers-et-contre-tout",
-          "date": "2026-07-09T17:03:58+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Marine Le Pen condamnée mais en campagne : la tactique éléctorale va-t-elle faire basculer l'élection présidentielle ?",
-          "source": "L'Humanité",
-          "url": "https://www.humanite.fr/politique/gauche/marine-le-pen-condamnee-mais-en-campagne-la-tactique-electorale-va-t-elle-faire-basculer-lelection-presidentielle",
-          "date": "2026-07-09T16:36:36+00:00",
-          "category": "france"
-        },
-        {
-          "title": "France : même condamnée, Marine Le Pen lance sa campagne",
-          "source": "Cartooning for Peace",
-          "url": "https://www.cartooningforpeace.org/editos/france-meme-condamnee-marine-le-pen-lance-sa-campagne/",
-          "date": "2026-07-09T16:13:11+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Présidentielle 2027: Marine Le Pen s'imposerait dans tous les cas de figure au second tour, selon un sondage Ifop",
-          "source": "BFM",
-          "url": "https://www.bfmtv.com/politique/video-presidentielle-2027-marine-le-pen-s-imposerait-dans-tous-les-cas-de-figure-au-second-tour-selon-un-sondage-ifop_VN-202607090628.html",
-          "date": "2026-07-09T15:20:52+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Pourvoi de Marine Le Pen : dans tous les cas, elle ne portera pas de bracelet électronique avant la présidentielle",
-          "source": "ici.fr",
-          "url": "https://www.ici.fr/infos/politique/pourvoi-de-marine-le-pen-dans-tous-les-cas-elle-ne-portera-pas-de-bracelet-electronique-avant-la-presidentielle-8834855",
-          "date": "2026-07-09T14:58:48+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Présidentielle 2027 : Marine Le Pen ne portera pas de bracelet électronique avant le scrutin, faute de temps",
-          "source": "Orange Actualités",
-          "url": "https://actu.orange.fr/politique/presidentielle-2027-marine-le-pen-ne-portera-pas-de-bracelet-electronique-avant-le-scrutin-faute-de-temps-magic-CNT000002qqFlC.html",
-          "date": "2026-07-09T13:45:00+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Comment Marine Le Pen peut jouer la montre pour s'éviter un bracelet électronique pendant la campagne",
-          "source": "Les Surligneurs",
-          "url": "https://lessurligneurs.eu/comment-marine-le-pen-peut-jouer-la-montre-pour-seviter-un-bracelet-electronique-pendant-la-campagne/",
-          "date": "2026-07-09T12:14:20+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Pourvoi en cassation de Marine Le Pen : dans tous les cas de figure, la candidate à la présidentielle ne portera pas de bracelet électronique avant le scrutin",
-          "source": "franceinfo",
-          "url": "https://www.franceinfo.fr/politique/marine-le-pen/pourvoi-en-cassation-de-marine-le-pen-dans-tous-les-cas-de-figure-la-candidate-a-la-presidentielle-ne-portera-pas-de-bracelet-electronique-avant-le-scrutin_8101046.html",
-          "date": "2026-07-09T11:21:29+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Condamnation de Marine Le Pen : devra-t-elle quitter son mandat de député ?",
-          "source": "Les Surligneurs",
-          "url": "https://lessurligneurs.eu/condamnation-de-marine-le-pen-devra-t-elle-quitter-son-mandat-de-depute/",
-          "date": "2026-07-09T10:59:04+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Condamnation de Marine Le Pen : la Cour de cassation devrait se prononcer « au plus tard début avril 2027",
-          "source": "Journal Spécial des Sociétés",
-          "url": "https://jss.fr/post/condamnation-de-marine-le-pen-la-cour-de-cassation-devrait-se-prononcer-au-plus-tard-debut-avril-2027",
-          "date": "2026-07-09T10:11:00+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Marine Le Pen rendue inéligible par son pourvoi en cassation ? \"Je ne vois pas le Conseil constitutionnel lui interdire d'être candidate\", explique le politologue Benjamin Morel",
-          "source": "franceinfo",
-          "url": "https://www.franceinfo.fr/politique/front-national/affaire-des-assistants-fn-au-parlement-europeen/marine-le-pen-rendue-ineligible-par-son-pourvoi-en-cassation-je-ne-vois-pas-le-conseil-constitutionnel-lui-interdire-d-etre-candidate-explique-le-politologue-benjamin-morel_8100827.html",
-          "date": "2026-07-09T09:55:55+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Marine Le Pen condamnée : la décision de la Cour de cassation attendue début avril 2027 \"au plus tard\"",
-          "source": "franceinfo",
-          "url": "https://www.franceinfo.fr/politique/marine-le-pen/marine-le-pen-condamnee-la-decision-de-la-cour-de-cassation-attendue-debut-avril-2027-au-plus-tard_8100803.html",
-          "date": "2026-07-09T09:15:22+00:00",
-          "category": "france"
-        }
-      ],
-      "first_seen": "2026-07-02T14:39:14+00:00",
-      "last_seen": "2026-07-10T04:33:02+00:00"
-    },
-    {
-      "id": "javier-milei-s-re-election-strategy-unfolds",
-      "title": "Javier Milei's re-election strategy unfolds",
-      "blurb": "Argentinian President Javier Milei's economic reforms and political maneuvers are a focal point, with coverage highlighting his push for re-election, cabinet reshuffles, and tensions with the Church and opposition. His government's deregulation policies and Central Bank reforms are particularly contentious.",
-      "affect": "This commands attention due to Milei's radical economic policies, the high stakes of Argentina's economic recovery, and the intense political battles shaping his re-election strategy.",
-      "intensity": 4,
-      "affect_signals": [
-        "alarmist framing",
-        "cross-source repetition",
-        "outrage-coded language",
-        "leadership crisis tone",
-        "moral charge"
-      ],
-      "categories": [
-        "🇦🇷 La Libertad Avanza"
-      ],
-      "article_count": 110,
-      "refs": [
-        {
-          "title": "Escala mínima viable: las claves del paper con el que Javier Milei y Demian Reidel buscan dar sustento teórico a la desregulación",
-          "source": "Ambito",
-          "url": "https://www.ambito.com/economia/escala-minima-viable-las-claves-del-paper-el-que-javier-milei-y-demian-reidel-buscan-dar-sustento-teorico-la-desregulacion-n6298057",
-          "date": "2026-07-10T02:40:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Karina Milei reúne a los legisladores porteños para alinear la estrategia de La Libertad Avanza en la Ciudad",
-          "source": "Radio Mitre",
-          "url": "https://radiomitre.cienradios.com/politica/karina-milei-reune-a-los-legisladores-portenos-para-alinear-la-estrategia-de-la-libertad-avanza-en-la-ciudad/",
-          "date": "2026-07-10T02:25:04+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Javier Milei reunió al gabinete en la primera reunión con Diego Santilli como jefe",
-          "source": "Radio Mitre",
-          "url": "https://radiomitre.cienradios.com/politica/javier-milei-reunio-al-gabinete-en-la-primera-reunion-con-diego-santilli-como-jefe/",
-          "date": "2026-07-10T02:19:56+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "«Lo vi más agradecido con los demás»: El positivo balance de Jaldo sobre el discurso de Javier Milei en Tucumán",
-          "source": "El Intransigente",
-          "url": "https://elintransigente.com/2026/07/lo-vi-mas-agradecido-con-los-demas-el-positivo-balance-de-jaldo-sobre-el-discurso-de-javier-milei-en-tucuman/",
-          "date": "2026-07-10T01:41:15+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "TEDEUM PATRIO: LA IGLESIA LE PIDIÓ A JAVIER MILEI INVERTIR EN LOS MÁS POBRES Y LLAMÓ A LA UNIDAD CON UNA FRASE DE MESSI",
-          "source": "Federal Al Día",
-          "url": "https://federalaldia.com.ar/2026/07/09/tedeum-patrio-la-iglesia-le-pidio-a-javier-milei-invertir-en-los-mas-pobres-y-llamo-a-la-unidad-con-una-frase-de-messi/",
-          "date": "2026-07-10T01:31:58+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Javier Milei reunió a su Gabinete con la reforma del BCRA en la mira",
-          "source": "Diario El Sol Mendoza",
-          "url": "https://www.elsol.com.ar/el-pais/javier-milei-reunio-a-su-gabinete-con-la-reforma-del-bcra-en-la-mira/",
-          "date": "2026-07-10T00:54:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Reforma electoral: La Libertad Avanza busca reactivar el debate en septiembre, pero no reúne los votos para eliminar las PASO",
-          "source": "Canal26",
-          "url": "https://www.canal26.com/politica/2026/07/10/reforma-electoral-la-libertad-avanza-busca-reactivar-el-debate-en-septiembre-pero-no-reune-los-votos-para-eliminar-las-paso/",
-          "date": "2026-07-10T00:03:12+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Un paper de Javier Milei y Demian Reidel plantea que la productividad define si una economía crece o colapsa",
-          "source": "Diario Río Negro",
-          "url": "https://www.rionegro.com.ar/politica/un-paper-de-javier-milei-y-demian-reidel-plantea-que-la-productividad-define-si-una-economia-crece-o-colapsa-4643055/",
-          "date": "2026-07-09T22:44:13+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Los tres umbrales clave para sostener el crecimiento, según el nuevo paper de Javier Milei y Demian Reidel",
-          "source": "Ambito",
-          "url": "https://www.ambito.com/economia/los-tres-umbrales-clave-sostener-el-crecimiento-segun-el-nuevo-paper-javier-milei-y-demian-reidel-n6298039",
-          "date": "2026-07-09T22:39:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "No hay quórum para Javier Milei: la reforma electoral quedó atrapada entre el PRO y la UCR",
-          "source": "MDZ Online",
-          "url": "https://www.mdzol.com/politica/no-hay-quorum-javier-milei-la-reforma-electoral-quedo-atrapada-el-pro-y-la-ucr-n1562237",
-          "date": "2026-07-09T22:12:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "La Libertad Avanza quiere debatir la reforma electoral en septiembre p",
-          "source": "El Esquiu",
-          "url": "https://www.elesquiu.com/politica/2026/7/9/la-libertad-avanza-quiere-debatir-la-reforma-electoral-en-septiembre-p-588360.html",
-          "date": "2026-07-09T21:20:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Para explicar el programa económico, Javier Milei y Demian Reidel publicaron un paper de sustento teórico",
-          "source": "Crónica",
-          "url": "https://www.cronica.com.ar/politica/para-explicar-el-programa-economico-javier-milei-y-demian-reidel-publicaron-un-paper-de-sustento-teorico/",
-          "date": "2026-07-09T20:30:04+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Javier Milei acelera la reforma del Banco Central en medio de la interna libertaria",
-          "source": "Letra P",
-          "url": "https://www.letrap.com.ar/javier-milei-acelero-la-reforma-del-banco-central-medio-la-interna-libertaria-n5425036",
-          "date": "2026-07-09T19:44:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Javier Milei encabezó una reunión de Gabinete tras el Tedeum con foco en la reforma del BCRA",
-          "source": "La Gaceta",
-          "url": "https://www.lagaceta.com.ar/nota/1144815/politica/javier-milei-encabezo-reunion-gabinete-tras-tedeum-foco-reforma-bcra.html",
-          "date": "2026-07-09T19:20:56+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Javier Milei reunió a su Gabinete y ratificó que la reforma del BCRA se presentará las próximas semanas",
-          "source": "Ambito",
-          "url": "https://www.ambito.com/politica/javier-milei-reunio-su-gabinete-y-ratifico-que-la-reforma-del-bcra-se-presentara-las-proximas-semanas-n6297991",
-          "date": "2026-07-09T18:56:00+00:00",
-          "category": "argentina"
-        }
-      ],
-      "first_seen": "2026-07-06T04:52:02+00:00",
-      "last_seen": "2026-07-10T04:33:02+00:00"
+      "last_seen": "2026-07-10T15:12:59+00:00"
     },
     {
       "id": "nigel-farage-resignation-triggers-by-election-storm",
       "title": "Nigel Farage resignation triggers by-election storm",
-      "blurb": "Nigel Farage's resignation as an MP to contest a by-election has sparked intense scrutiny, particularly over financial controversies and the broader implications for Reform UK. His decision has led to a charged political atmosphere, with satirical candidates and internal party tensions emerging.",
-      "affect": "This commands attention due to Farage's polarizing influence, the financial scandals surrounding his resignation, and the high-stakes nature of the by-election as a test of Reform UK's credibility.",
+      "blurb": "Nigel Farage's resignation as an MP to contest a by-election in Clacton has sparked intense scrutiny over Reform UK's finances, including a police investigation into £500,000 in donations linked to a convicted fraudster's mother.",
+      "affect": "This commands disproportionate attention due to Farage's high-profile status, the financial scandal, and the political implications of his return to frontline politics.",
       "intensity": 4,
       "affect_signals": [
         "polarized contention",
         "cross-source repetition",
         "outrage-coded language",
         "leadership crisis tone",
-        "moral charge"
+        "alarmist framing"
       ],
       "categories": [
         "🇬🇧 Reform UK"
       ],
-      "article_count": 80,
+      "article_count": 70,
       "refs": [
+        {
+          "title": "UK public want Count Binface to beat Farage in by-election, poll finds",
+          "source": "The National Scot",
+          "url": "https://www.thenational.scot/news/26270315.uk-public-want-count-binface-beat-farage-by-election-poll-finds/",
+          "date": "2026-07-10T13:07:48+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "New online game pits Nigel Farage against Count Binface in Clacton",
+          "source": "Colchester Gazette",
+          "url": "http://www.essexcountystandard.co.uk/news/26269374.nigel-farage-new-game-binface-clacton-by-election/",
+          "date": "2026-07-10T13:00:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "British Voters Want Count Binface To Beat Nigel Farage In Clacton By-Election",
+          "source": "HuffPost UK",
+          "url": "https://www.huffingtonpost.co.uk/entry/british-voters-want-count-binface-to-beat-nigel-farage-in-clacton-by-election_uk_6a50e71de4b08b2da689b51d?ncid=NEWSSTAND0001",
+          "date": "2026-07-10T12:58:23+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "How Pauline Hanson courts UK’s far-right – and builds a global brand – with ‘pseudo events’ and publicity stunts",
+          "source": "The Guardian",
+          "url": "https://www.theguardian.com/australia-news/2026/jul/10/how-pauline-hanson-courts-uks-far-right-builds-brand-with-pseudo-events-publicity-stunts-ntwnfb",
+          "date": "2026-07-10T12:36:00+00:00",
+          "category": "general"
+        },
+        {
+          "title": "Tusk znów się \"popisał\"! Tak określił prezesa PiS",
+          "source": "wPolityce.pl",
+          "url": "https://wpolityce.pl/polityka/764629-tusk-znow-sie-popisal-tak-okreslil-prezesa-pis",
+          "date": "2026-07-10T12:24:30+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "The ultra Nigel Farage collides with an intergalactic trash can",
+          "source": "Diari ARA",
+          "url": "https://en.ara.cat/international/the-ultra-nigel-farage-collides-with-an-intergalactic-trash-can_130_5794939.html",
+          "date": "2026-07-10T12:23:01+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Reform in shambles as even right-wing media turn on it",
+          "source": "thecanary.co",
+          "url": "https://www.thecanary.co/skwawkbox/2026/07/10/reform-farage-gambit/",
+          "date": "2026-07-10T12:20:11+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Reform Greater Manchester candidate criticised over ‘migrant rapists’ comments",
+          "source": "The Guardian",
+          "url": "https://www.theguardian.com/politics/2026/jul/10/reform-greater-manchester-candidate-criticised-over-migrant-rapists-comments",
+          "date": "2026-07-10T12:04:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "UK’s sleaziest politician is named – and it’s more bad news for Farage",
+          "source": "The Independent",
+          "url": "https://www.independent.co.uk/bulletin/news/nigel-farage-uk-sleaziest-politicians-yougov-b3012624.html",
+          "date": "2026-07-10T11:38:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Party mulls new name amid confusion with Reform UK",
+          "source": "Yahoo",
+          "url": "https://www.yahoo.com/news/politics/articles/party-mulls-name-amid-confusion-113636263.html",
+          "date": "2026-07-10T11:36:36+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Reform Jersey considers new name amid confusion with Reform UK",
+          "source": "BBC",
+          "url": "https://www.bbc.co.uk/news/articles/c932e3n45eno",
+          "date": "2026-07-10T11:35:35+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Nigel Farage’s by-election gamble ‘won’t change’ those who love him",
+          "source": "Sky News Australia",
+          "url": "https://www.skynews.com.au/opinion/nigel-farages-byelection-gamble-wont-change-those-who-love-him/video/75937f410f2ce3a84489893a568f21d0",
+          "date": "2026-07-10T11:19:13+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Nigel Farage Is Flailing",
+          "source": "compactmag.com",
+          "url": "https://www.compactmag.com/article/nigel-farage-is-flailing/",
+          "date": "2026-07-10T11:00:33+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "How Nigel Farage Accidentally Picked a Fight With a Bin",
+          "source": "Novara Media",
+          "url": "https://novaramedia.com/2026/07/10/how-nigel-farage-accidentally-picked-a-fight-with-a-bin/",
+          "date": "2026-07-10T10:59:09+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Reform UK becomes North Wales council's second largest party",
+          "source": "North Wales Live",
+          "url": "https://www.dailypost.co.uk/news/north-wales-news/reform-uk-becomes-north-wales-34270165",
+          "date": "2026-07-10T10:55:29+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Reform UK becomes second biggest group on Flintshire Council in three months",
+          "source": "Leader Live",
+          "url": "https://www.leaderlive.co.uk/news/26269572.reform-uk-now-largest-opposition-group-flintshire-council/",
+          "date": "2026-07-10T10:45:48+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Clacton by-election date confirmed after Nigel Farage resignation",
+          "source": "Manchester Evening News",
+          "url": "https://www.manchestereveningnews.co.uk/news/uk-news/clacton-election-date-confirmed-after-34269959",
+          "date": "2026-07-10T10:45:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Count Binface: Nigel Farage’s biggest nemesis since Brexit",
+          "source": "The Week",
+          "url": "https://theweek.com/politics/count-binface-nigel-farages-biggest-nemesis-since-brexit",
+          "date": "2026-07-10T10:43:03+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Nigel Farage named sleaziest politician in UK in new poll – and even Reform voters think it",
+          "source": "The Independent",
+          "url": "https://www.independent.co.uk/news/uk/politics/nigel-farage-reform-uk-donation-sleaze-poll-b3012567.html",
+          "date": "2026-07-10T10:41:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Reform UK councillor in Newcastle resigns two months after local elections",
+          "source": "Chronicle Live",
+          "url": "https://www.chroniclelive.co.uk/news/north-east-news/reform-uk-councillor-newcastle-resigns-34269444",
+          "date": "2026-07-10T10:31:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Legge elettorale, Quagliariello: \"L'attuale non piace a Meloni. Vannacci modifica i giochi\"",
+          "source": "LA7",
+          "url": "https://www.la7.it/omnibus/video/legge-elettorale-quagliariello-lattuale-non-piace-a-meloni-vannacci-modifica-i-giochi-10-07-2026-651584",
+          "date": "2026-07-10T10:20:49+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Farage and Truss Jamboree Backed by Crypto Lobbyists",
+          "source": "DeSmog",
+          "url": "https://www.desmog.com/2026/07/10/farage-truss-cpac-gb-backed-crypto-bitcoin-lobbyists/",
+          "date": "2026-07-10T09:38:33+00:00",
+          "category": "networks"
+        },
+        {
+          "title": "Times Radio: Reform UK’s Richard Tice pays tribute to ‘forthright but charming’ Ann Widdecombe",
+          "source": "The Times",
+          "url": "https://www.thetimes.com/video/times-radio/article/times-radio-reform-uks-richard-tice-pays-tribute-to-forthright-but-charming-ann-widdecombe-twn76jk5p",
+          "date": "2026-07-10T09:38:20+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Tice claims ‘politically motivated smear’ amid scrutiny of Reform UK finances",
+          "source": "Borehamwood Times",
+          "url": "https://www.borehamwoodtimes.co.uk/news/national/26269072.tice-claims-politically-motivated-smear-amid-scrutiny-reform-uk-finances/",
+          "date": "2026-07-10T09:38:02+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Met Police investigate £500k Reform UK donation in latest scandal to hit Nigel Farage's party",
+          "source": "London Evening Standard",
+          "url": "https://www.standard.co.uk/news/politics/met-police-reform-uk-donation-nigel-farage-linda-cottrell-b1289486.html",
+          "date": "2026-07-10T09:32:32+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "\" Il va se faire larguer par Maria Carolina \" Jordan Bardella au cœur des moqueries après l’annonce de Marine Le Pen pour 2027",
+          "source": "Ohmymag",
+          "url": "https://www.ohmymag.com/people/actu-people/il-va-se-faire-larguer-par-maria-carolina-jordan-bardella-au-coeur-des-moqueries-apres-lannonce-de-marine-le-pen-pour-2027_art191185.html",
+          "date": "2026-07-10T09:30:00+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Ann Widdecombe, former Tory MP and Reform UK member, dies aged 78 | News - Greatest Hits Radio 70s",
+          "source": "Rayo",
+          "url": "https://hellorayo.co.uk/greatest-hits-radio-70s/uk/news/ann-widdecombe-former-tory-mp-and-reform-uk-member-dies-aged-78/",
+          "date": "2026-07-10T09:11:32+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Reform UK wins second council by-election in Scotland",
+          "source": "The Scotsman",
+          "url": "https://www.scotsman.com/news/politics/reform-uk-wins-second-council-by-election-in-scotland-8788913",
+          "date": "2026-07-10T09:10:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Reform UK win Larkhall by-election in South Lanarkshire",
+          "source": "The National Scot",
+          "url": "https://www.thenational.scot/news/26268922.reform-uk-win-larkhall-by-election-south-lanarkshire/",
+          "date": "2026-07-10T09:06:44+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Count Binface: The intergalactic warrior who could upend Britain's strangest election",
+          "source": "NPR",
+          "url": "https://www.npr.org/2026/07/10/nx-s1-5887550/count-binface-the-intergalactic-warrior-who-could-upend-britains-strangest-election",
+          "date": "2026-07-10T09:00:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Ann Widdecombe, former Tory Minister turned Reform UK campaigner, dies aged 78",
+          "source": "The Church Times",
+          "url": "https://www.churchtimes.co.uk/articles/2026/17-july/news/uk/ann-widdecombe-former-tory-minister-turned-reform-uk-campaigner-dies-aged-78",
+          "date": "2026-07-10T08:48:57+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Most Britons say Nigel Farage is ‘very sleazy’",
+          "source": "YouGov",
+          "url": "https://yougov.com/en-gb/articles/55146-most-britons-say-nigel-farage-is-very-sleazy",
+          "date": "2026-07-10T08:41:16+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "What we know as police probe donations from fraudster’s mother to Reform",
+          "source": "The Independent",
+          "url": "https://www.independent.co.uk/bulletin/news/nigel-farage-reform-donations-b3012492.html",
+          "date": "2026-07-10T08:38:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Klub PiS składa zawiadomienie, Ordo Iuris rusza z apelem do samorządów. Chwałkowo: sprawa nabiera ogólnopolskiego wymiaru",
+          "source": "ordoiuris.pl",
+          "url": "https://ordoiuris.pl/informacje-prasowe/klub-pis-sklada-zawiadomienie-ordo-iuris-rusza-z-apelem-do-samorzadow-chwalkowo-sprawa-nabiera-ogolnopolskiego-wymiaru/",
+          "date": "2026-07-10T08:33:51+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Jesse Norman jokes Nigel Farage is 'novelty comedy act' in Binface race",
+          "source": "The Hereford Times",
+          "url": "https://www.herefordtimes.com/news/26267184.jesse-norman-mp-jokes-nigel-farage-count-binface/",
+          "date": "2026-07-10T08:33:31+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "British police investigate donations to Nigel Farage’s Reform party",
+          "source": "The Straits Times",
+          "url": "https://www.straitstimes.com/world/europe/british-police-investigate-donations-to-farages-reform-party",
+          "date": "2026-07-10T08:22:45+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "British police investigate donations to Farage's Reform party",
+          "source": "Yahoo News UK",
+          "url": "https://uk.news.yahoo.com/british-police-investigate-donations-farages-082038600.html",
+          "date": "2026-07-10T08:20:38+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Inför medborgarveto mot politiskt framtvingad omvandling av villaområden",
+          "source": "Skövde Nyheter",
+          "url": "https://www.skovdenyheter.se/skovde/infor-medborgarveto-mot-politiskt-framtvingad-omvandling-av-villaomraden/",
+          "date": "2026-07-10T08:00:00+00:00",
+          "category": "sweden"
+        },
+        {
+          "title": "Who is Count Binface — and why is he taking on Reform UK leader Nigel Farage?",
+          "source": "Gulf News",
+          "url": "https://gulfnews.com/world/europe/who-is-count-binface-and-why-is-he-taking-on-reform-uk-leader-nigel-farage-1.500603373",
+          "date": "2026-07-10T07:44:14+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Former Conservative MP, Reform UK spokesperson Ann Widdecombe dies aged 78",
+          "source": "The Times of India",
+          "url": "https://timesofindia.indiatimes.com/world/uk/former-conservative-mp-reform-uk-spokesperson-ann-widdecombe-dies-aged-78/articleshow/132306235.cms",
+          "date": "2026-07-10T07:44:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Police launch criminal investigation into Reform UK donations by fraudster's mother",
+          "source": "The National Scot",
+          "url": "https://www.thenational.scot/news/26268567.police-launch-criminal-investigation-500-000-reform-uk-donation/",
+          "date": "2026-07-10T07:36:22+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Ann Widdecombe: former Tory minister, Eurosceptic and Reform UK member dies aged 78",
+          "source": "The Irish Times",
+          "url": "https://www.irishtimes.com/world/uk/2026/07/10/ann-widdecombe-former-tory-minister-eurosceptic-and-reform-uk-member-dies-aged-78/",
+          "date": "2026-07-10T07:24:51+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Kristina Lindquist: Vilken epok är det Sverigedemokraterna vill återvända till egentligen?",
+          "source": "Dagens Nyheter",
+          "url": "https://www.dn.se/kultur/kristina-lindquist-vilken-epok-ar-det-sverigedemokraterna-vill-atervanda-till-egentligen/",
+          "date": "2026-07-10T07:08:03+00:00",
+          "category": "sweden"
+        },
+        {
+          "title": "Former Conservative MP and Reform UK member Ann Widdecombe dies aged 78",
+          "source": "Chronicle Live",
+          "url": "https://www.chroniclelive.co.uk/news/north-east-news/former-conservative-mp-reform-uk-34267930",
+          "date": "2026-07-10T06:37:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Second Reform UK councillor quits Merseyside council after party swept to power in May",
+          "source": "Liverpool Echo",
+          "url": "https://www.liverpoolecho.co.uk/news/liverpool-news/second-reform-uk-councillor-quits-34267938",
+          "date": "2026-07-10T06:36:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Police investigate Reform donations, the Times reports",
+          "source": "BBC",
+          "url": "https://www.bbc.co.uk/news/articles/c3eyq2np7qgo",
+          "date": "2026-07-10T06:30:05+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Ann Widdecombe, former Tory MP and Reform UK member, dies aged 78",
+          "source": "The Guardian",
+          "url": "https://www.theguardian.com/politics/2026/jul/10/ann-widdecombe-former-tory-mp-and-reform-uk-member-dies-aged-78",
+          "date": "2026-07-10T06:02:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Friday briefing: Inside our investigation of Nigel Farage and Reform’s deepening financial scandal",
+          "source": "The Guardian",
+          "url": "https://www.theguardian.com/world/2026/jul/10/friday-briefing-inside-our-investigation-of-nigel-farage-and-reforms-deepening-financial-scandal",
+          "date": "2026-07-10T05:47:33+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Former Tory minister Ann Widdecombe dies at 78",
+          "source": "BBC",
+          "url": "https://www.bbc.co.uk/news/articles/ced47jqyg1eo",
+          "date": "2026-07-10T05:29:53+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Nigel Farage latest: Reform UK leader to make statement amid questions over donations",
+          "source": "AOL.com",
+          "url": "https://www.aol.com/articles/nigel-farage-latest-reform-uk-111514406.html",
+          "date": "2026-07-10T05:05:17+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Jordan Bardella et son ex Nolwenn réunis dans la Sarthe : entre sourires et suspicions, leurs retrouvailles sont au cœur de rumeurs…",
+          "source": "Gala",
+          "url": "https://www.gala.fr/politique/jordan-bardella-et-son-ex-nolwenn-reunis-dans-la-sarthe-entre-sourires-et-suspicions-leurs-retrouvailles-sont-au-coeur-de-rumeurs-20260710",
+          "date": "2026-07-10T04:44:00+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Javier Milei reunió a sus ministros con Diego Santilli a la cabeza y avanzan los cambios en el Banco Central",
+          "source": "La 100",
+          "url": "https://la100.cienradios.com/politica/javier-milei-reunio-a-sus-ministros-con-diego-santilli-a-la-cabeza-y-avanzan-los-cambios-en-el-banco-central/",
+          "date": "2026-07-10T02:47:58+00:00",
+          "category": "argentina"
+        },
         {
           "title": "Lloyds silent on whether it will continue to bank Farage and Reform UK",
           "source": "TheBanker.com",
           "url": "https://www.thebanker.com/content/2bf7cd97-290b-4b00-a40d-be677247276b",
           "date": "2026-07-10T01:52:30+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Why Prince Harry and Nigel Farage hate ‘the Establishment’",
+          "source": "The Spectator",
+          "url": "https://spectator.com/article/why-prince-harry-and-nigel-farage-hate-the-establishment/",
+          "date": "2026-07-10T01:33:00+00:00",
           "category": "uk"
         },
         {
@@ -481,10 +1320,31 @@
           "category": "uk"
         },
         {
+          "title": "Police investigate £500,000 in Reform UK donations by mother of Farage aide",
+          "source": "Financial Times",
+          "url": "https://www.ft.com/content/f80bfc5c-51fd-4af1-9d43-0667e76d89bd?syn-25a6b1a6=1",
+          "date": "2026-07-09T22:10:07+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "‘Evict and convict Donald Trump’: Texans protest in Houston after fatal ICE shooting killed motorist",
+          "source": "Global News",
+          "url": "https://globalnews.ca/video/11960412/evict-and-convict-donald-trump-texans-protest-in-houston-after-fatal-ice-shooting-killed-motorist/",
+          "date": "2026-07-09T22:02:59+00:00",
+          "category": "usa"
+        },
+        {
           "title": "Police investigate £500,000 Reform donations from mother of fraudster who backed Farage",
           "source": "The Guardian",
           "url": "https://www.theguardian.com/politics/2026/jul/09/police-investigate-500000-reform-donations-from-mother-of-fraudster-who-backed-farage",
           "date": "2026-07-09T21:10:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Nigel Farage and the Limits of Anti-Establishment Politics",
+          "source": "www.lvivherald.com",
+          "url": "https://www.lvivherald.com/post/nigel-farage-and-the-limits-of-anti-establishment-politics",
+          "date": "2026-07-09T20:36:40+00:00",
           "category": "uk"
         },
         {
@@ -495,6 +1355,13 @@
           "category": "uk"
         },
         {
+          "title": "Is Nigel Farage better than a trash can? 'Count Binface' challenges far-right party leader",
+          "source": "Modern Ghana",
+          "url": "https://www.modernghana.com/videonews/nbc/1/679745",
+          "date": "2026-07-09T20:11:03+00:00",
+          "category": "uk"
+        },
+        {
           "title": "Police 'investigating £500k given to Reform by convicted fraudster's mother just weeks before 2024 election'",
           "source": "lbc.co.uk",
           "url": "https://www.lbc.co.uk/article/met-police-reform-uk-donation-probe-fiona-george-cottrell-fraudster-nigel-farage-5HjddPx_2/",
@@ -502,17 +1369,80 @@
           "category": "uk"
         },
         {
-          "title": "Farage wins Clacton backing after resignation triggers by-election bid",
-          "source": "standard.co.uk",
-          "url": "https://www.standard.co.uk/news/uk/farage-clacton-backing-mp-resignation-byelection-bid-b1289126.html",
-          "date": "2026-07-09T19:03:56+00:00",
+          "title": "Dale Vince backs Count Binface to defeat Nigel Farage – and says he's ready to fund the campaign",
+          "source": "Stroud Times",
+          "url": "https://stroudtimes.com/dale-vince-backs-count-binface-to-defeat-nigel-farage-and-says-hes-ready-to-fund-the-campaign/",
+          "date": "2026-07-09T19:34:05+00:00",
           "category": "uk"
+        },
+        {
+          "title": "Javier Milei encabezó una reunión de Gabinete tras el Tedeum con foco en la reforma del BCRA",
+          "source": "La Gaceta",
+          "url": "https://www.lagaceta.com.ar/nota/1144815/politica/javier-milei-encabezo-reunion-gabinete-tras-tedeum-foco-reforma-bcra.html",
+          "date": "2026-07-09T19:20:56+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "‘Count Binface’ challenges Reform UK’s Nigel Farage",
+          "source": "MS NOW",
+          "url": "https://www.ms.now/katy-tur/watch/count-binface-challenges-reform-uk-s-nigel-farage-2506085443927",
+          "date": "2026-07-09T18:47:18+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Nigel Farage leaves Parliament: What now happens to the standards investigation? - Parliament Matters podcast, Episode 150",
+          "source": "Hansard Society",
+          "url": "https://www.hansardsociety.org.uk/news/parliament-matters-podcast-e150",
+          "date": "2026-07-09T18:33:07+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Orbán allies protest in Hungary against plans to oust President Tamás Sulyok",
+          "source": "Plainview Herald",
+          "url": "https://www.myplainview.com/news/world/article/orb-n-allies-protest-in-hungary-against-plans-to-22339225.php",
+          "date": "2026-07-09T18:29:12+00:00",
+          "category": "hungary"
         },
         {
           "title": "Police investigate Reform donations by mother of fraudster who bankrolled Farage",
           "source": "The Times",
           "url": "https://www.thetimes.com/uk/politics/article/police-investigate-reform-donations-by-mother-of-fraudster-who-bankrolled-farage-3kd826j7h",
           "date": "2026-07-09T18:05:05+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "A timeline of Nigel Farage’s £5mn gift and his return to politics",
+          "source": "Financial Times",
+          "url": "https://www.ft.com/content/20fa0b54-e45b-46f3-8914-8bdeedb2abd4",
+          "date": "2026-07-09T17:33:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "The Guardian view on Nigel Farage’s crypto cash: accountability is not a conspiracy | Editorial",
+          "source": "The Guardian",
+          "url": "https://www.theguardian.com/commentisfree/2026/jul/09/the-guardian-view-on-nigel-farages-crypto-cash-accountability-is-not-a-conspiracy",
+          "date": "2026-07-09T17:32:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "LEDARE: Klår den satiriske soptunnan Englands Jimmie Åkesson?",
+          "source": "Värmlands Folkblad",
+          "url": "https://www.vf.se/asikter/ledare/klar-den-satiriske-soptunnan-englands-jimmie-akesson/",
+          "date": "2026-07-09T17:15:00+00:00",
+          "category": "sweden"
+        },
+        {
+          "title": "UK politicians mull permanent crypto donation ban in wake of Nigel Farage scandal",
+          "source": "Cryptonews.net",
+          "url": "https://cryptonews.net/news/legal/33126578/",
+          "date": "2026-07-09T17:12:07+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Ben Jennings on Nigel Farage’s byelection announcement – cartoon",
+          "source": "The Guardian",
+          "url": "https://www.theguardian.com/commentisfree/picture/2026/jul/09/ben-jennings-nigel-farage-byelection-cartoon",
+          "date": "2026-07-09T17:06:00+00:00",
           "category": "uk"
         },
         {
@@ -523,10 +1453,52 @@
           "category": "uk"
         },
         {
-          "title": "Stroud-based tycoon's huge support to Count Binface in fight against Nigel Farage",
-          "source": "Stroud News and Journal",
-          "url": "https://www.stroudnewsandjournal.co.uk/news/26268069.nigel-farage-count-binface-gets-support-dale-vince/",
-          "date": "2026-07-09T16:13:17+00:00",
+          "title": "Who Is Count Binface? How the Masked Comedian Might Actually Win in Clacton",
+          "source": "Variety",
+          "url": "https://variety.com/2026/politics/global/count-binface-election-uk-politics-nigel-farage-1236805466/",
+          "date": "2026-07-09T16:27:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Who is Count Binface, the man challenging Nigel Farage in the Clacton by-election?",
+          "source": "The Scotsman",
+          "url": "https://www.scotsman.com/news/politics/who-is-count-binface-the-man-challenging-nigel-farage-in-the-clacton-by-election-8787144",
+          "date": "2026-07-09T15:45:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "How Nigel Farage's attempt to copy Donald Trump is backfiring badly – Alistair Carmichael",
+          "source": "The Scotsman",
+          "url": "https://www.scotsman.com/news/opinion/columnists/how-nigel-farages-attempt-to-copy-donald-trump-is-backfiring-badly-8787513",
+          "date": "2026-07-09T15:45:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Donald Trump: 'No idea' how McConnell is doing amid secretive hospitalization",
+          "source": "WAAY 31 News",
+          "url": "https://www.waaytv.com/video/donald-trump-no-idea-how-mcconnell-is-doing-amid-secretive-hospitalization/video_30d13f83-ee59-5e2b-8cbd-26a7c3c4919a.html",
+          "date": "2026-07-09T15:31:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Pepe (Lega) sulla riforma della cittadinanza: “Fondata su diritti, ma anche su doveri e rispetto delle regole”",
+          "source": "ilmattinoquotidiano.it",
+          "url": "https://www.ilmattinoquotidiano.it/news/basilicata-free/249451/pepe-lega-sulla-riforma-della-cittadinanza-fondata-su-diritti-ma-anche-su-doveri-e-rispetto-delle-regole.html",
+          "date": "2026-07-09T15:25:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Is Nigel Farage a part of the establishment?",
+          "source": "lbc.co.uk",
+          "url": "https://www.lbc.co.uk/article/is-nigel-farage-a-part-of-the-establishment-5HjddPf_2/",
+          "date": "2026-07-09T14:56:02+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Jeremy Corbyn's brother Piers will stand against Nigel Farage in Clacton by-election",
+          "source": "Manchester Evening News",
+          "url": "https://www.manchestereveningnews.co.uk/news/jeremy-corbyns-brother-piers-stand-34265566",
+          "date": "2026-07-09T14:23:00+00:00",
           "category": "uk"
         },
         {
@@ -537,75 +1509,390 @@
           "category": "uk"
         },
         {
-          "title": "Nigel Farage camp brands standards probe a 'stitch-up' amid by-election chaos",
-          "source": "The National Scot",
-          "url": "https://www.thenational.scot/news/26267084.nigel-farage-brands-standards-probe-stitch-up-amid-by-election-chaos/",
-          "date": "2026-07-09T13:37:16+00:00",
+          "title": "Of course I want to stop Nigel Farage – so I’ll be backing Count Binface",
+          "source": "The Independent",
+          "url": "https://www.independent.co.uk/voices/carol-vorderman-nigel-farage-count-binface-clacton-b3011849.html",
+          "date": "2026-07-09T14:10:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Fraudster Cottrell was introduced as Farage’s chief of staff, says ex-Reform candidate",
+          "source": "The Guardian",
+          "url": "https://www.theguardian.com/politics/2026/jul/09/fraudster-cottrell-was-introduced-as-farage-chief-of-staff-says-ex-reform-candidate",
+          "date": "2026-07-09T14:08:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Inside the Reform discontent over Farage by-election gamble",
+          "source": "The i Paper",
+          "url": "https://inews.co.uk/shorts/inside-reform-discontent-farage-by-election-gamble",
+          "date": "2026-07-09T14:04:05+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Plymouth Reform backs Farage over by-election \"circus\"",
+          "source": "Plymouth Live",
+          "url": "https://www.plymouthherald.co.uk/news/plymouth-news/plymouth-reform-backs-farage-over-11052383",
+          "date": "2026-07-09T13:57:00+00:00",
           "category": "uk"
         }
       ],
       "first_seen": "2026-07-07T15:25:52+00:00",
-      "last_seen": "2026-07-10T04:33:02+00:00"
+      "last_seen": "2026-07-10T15:12:59+00:00"
     },
     {
-      "id": "trump-declares-iran-ceasefire-over-escalates-tensions",
-      "title": "Trump declares Iran ceasefire over, escalates tensions",
-      "blurb": "President Trump's decision to end the Iran ceasefire and escalate military actions has dominated U.S. right-wing news. Coverage highlights the geopolitical implications, domestic reactions, and Trump's broader foreign policy strategy, including his interactions with global leaders.",
-      "affect": "This commands attention due to the high stakes of U.S.-Iran relations, the potential for broader conflict, and the intense domestic and international reactions to Trump's aggressive stance.",
+      "id": "javier-milei-s-re-election-strategy-unfolds",
+      "title": "Javier Milei's re-election strategy unfolds",
+      "blurb": "Argentinian President Javier Milei's government faces internal divisions, economic challenges, and shifting alliances as he prepares for re-election. His administration's reforms, including Central Bank restructuring and deregulation, are under intense scrutiny.",
+      "affect": "This commands disproportionate attention due to Milei's radical economic policies, internal party conflicts, and the high stakes of Argentina's political and economic future.",
       "intensity": 4,
       "affect_signals": [
-        "alarmist framing",
+        "polarized contention",
         "cross-source repetition",
         "outrage-coded language",
-        "moral charge",
-        "polarized contention"
+        "leadership crisis tone",
+        "alarmist framing"
       ],
       "categories": [
-        "🇺🇸 MAGA / Trump"
+        "🇦🇷 La Libertad Avanza"
       ],
-      "article_count": 90,
+      "article_count": 80,
       "refs": [
         {
-          "title": "Donald Trump and Katz must align US, Israel on Lebanon withdrawal conditions",
-          "source": "The Jerusalem Post",
-          "url": "https://www.jpost.com/opinion/article-902073",
-          "date": "2026-07-10T03:00:20+00:00",
+          "title": "Javier Milei defendió su proyecto de “shutdown” del Estado: “El que está en contra avala presupuestos desequilibrados",
+          "source": "InfoVeloz.com",
+          "url": "https://www.infoveloz.com/post/javier-milei-defendio-su-proyecto-de-shutdown-del-estado-el-que-esta-en-contra-avala-presupuestos-desequilibrados_281840",
+          "date": "2026-07-10T12:56:15+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei acusó un “intento de golpe de Estado” y apuntó: “Muchos se disfrazaban de periodistas”",
+          "source": "El Intransigente",
+          "url": "https://elintransigente.com/2026/07/javier-milei-acuso-un-intento-de-golpe-de-estado-y-apunto-muchos-se-disfrazaban-de-periodistas/",
+          "date": "2026-07-10T12:41:08+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "El gesto de Javier Milei que dejó expuesto a un senador neuquino",
+          "source": "Minuto Neuquen",
+          "url": "https://www.minutoneuquen.com/neuquen/2026/7/10/el-gesto-de-javier-milei-que-dejo-expuesto-a-un-senador-neuquino-407819.html",
+          "date": "2026-07-10T12:30:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei: \"En una elección presidencial ganaríamos en primera vuelta\"",
+          "source": "Perfil",
+          "url": "https://www.perfil.com/noticias/politica/javier-milei-defendio-la-reforma-del-banco-central-y-vaticino-en-una-eleccion-presidencial-ganariamos-en-primera-vuelta.phtml",
+          "date": "2026-07-10T12:16:17+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei y sus medidas, EN VIVO: el Presidente defendió · Examedia",
+          "source": "examedia.com.ar",
+          "url": "https://www.examedia.com.ar/portada/post/87463277",
+          "date": "2026-07-10T12:15:05+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Patricia Bullrich se alinea con Karina Milei y ahora ve con buenos ojos la incoporación de listas colectoras",
+          "source": "MinutoUno",
+          "url": "https://www.minutouno.com/politica/patricia-bullrich-se-alinea-karina-milei-y-ahora-ve-buenos-ojos-la-incoporacion-listas-colectoras-n6298102",
+          "date": "2026-07-10T12:10:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Victoria Villarruel se aleja de Javier Milei y Osvaldo Jaldo critica con mesura",
+          "source": "La Gaceta",
+          "url": "https://www.lagaceta.com.ar/nota/1144868/politica/victoria-villarruel-se-aleja-javier-milei-osvaldo-jaldo-critica-mesura.html",
+          "date": "2026-07-10T12:04:12+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "A partir del lunes, Javier Milei pone en marcha un cambio para jubilados de Anses",
+          "source": "La Opinión Austral",
+          "url": "https://laopinionaustral.com.ar/sociedad/a-partir-del-lunes-javier-milei-pone-en-marcha-un-cambio-para-jubilados-de-anses-680554.html",
+          "date": "2026-07-10T12:00:48+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei inició una nueva estrategia política rumbo a las elecciones 2027: los factores Villarruel y Manuel Adorni",
+          "source": "Diario Río Negro",
+          "url": "https://www.rionegro.com.ar/politica/javier-milei-inicio-una-nueva-estrategia-politica-rumbo-a-las-elecciones-2027-los-factores-villarruel-y-manuel-adorni-4643241/?amp=1",
+          "date": "2026-07-10T12:00:05+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Leandro Santoro y una fuerte definición sobre Javier Milei: “No es el principio de nada, sino el fin de una etapa”",
+          "source": "El Intransigente",
+          "url": "https://elintransigente.com/2026/07/leandro-santoro-y-una-fuerte-definicion-sobre-javier-milei-no-es-el-principio-de-nada-sino-el-fin-de-una-etapa/",
+          "date": "2026-07-10T11:46:30+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Eduardo Feinmann advirtió sobre el plan de Victoria Villarruel que podría complicar la reelección de Javier Milei",
+          "source": "MDZ Online",
+          "url": "https://www.mdzol.com/mdz-show/eduardo-feinmann-advirtio-el-plan-victoria-villarruel-que-podria-complicar-la-reeleccion-javier-milei-n1562378",
+          "date": "2026-07-10T11:41:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Vox refuerza su grupo parlamentario con José Antonio Palomo",
+          "source": "La Razón",
+          "url": "https://www.larazon.es/castilla-y-leon/vox-refuerza-grupo-parlamentario-jose-antonio-palomo_202607106a50d7c5c48a78681b7fad2f.html?outputType=amp",
+          "date": "2026-07-10T11:30:13+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Javier Milei presentó su paper académico sobre desregulación económica y advirtió que el intervencionismo estatal conduce a la \"extinción\"",
+          "source": "Radio LV11",
+          "url": "https://www.radiolv11.com.ar/noticia/javier-milei-presento-su-paper-academico-sobre-desregulacion-economica-y-advirtio-que-el-intervencionismo-estatal-conduce-a-la-extincion",
+          "date": "2026-07-10T11:08:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Report: Trump administration stopping four Minnesota wind power developments",
+          "source": "Minnesota Reformer",
+          "url": "https://minnesotareformer.com/2026/07/10/report-trump-administration-styming-four-minnesota-wind-power-developments/",
+          "date": "2026-07-10T11:06:40+00:00",
           "category": "usa"
         },
         {
-          "title": "President Trump cleans house at the bipartisan Election Assistance Commission",
-          "source": "90.5 WESA",
-          "url": "https://www.wesanews.org/national-international-news/2026-07-09/president-trump-cleans-house-at-the-bipartisan-election-assistance-commission",
-          "date": "2026-07-10T02:52:00+00:00",
+          "title": "Netanyahu Says He's Supporting Argentina at 2026 World Cup, Praises Javier Milei as 'Great Friend of Israel'",
+          "source": "International Business Times UK",
+          "url": "https://www.ibtimes.co.uk/netanyahu-backs-argentina-2026-world-cup-1808043",
+          "date": "2026-07-10T11:04:44+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Ignacio Devitt, el nuevo niño mimado de Karina Milei",
+          "source": "Revista Noticias",
+          "url": "https://noticias.perfil.com/noticias/politica/ignacio-devitt-el-nuevo-nino-mimado-de-karina-milei.phtml",
+          "date": "2026-07-10T10:15:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Nikol Pashinyan felicitó a Javier Milei por el Día de la Independencia de Argentina",
+          "source": "Diario Armenia",
+          "url": "https://www.diarioarmenia.org.ar/nikol-pashinyan-felicito-a-javier-milei-por-el-dia-de-la-independencia-de-argentina/",
+          "date": "2026-07-10T10:10:12+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Del Pacto de Mayo al de la reelección",
+          "source": "Infobae",
+          "url": "https://www.infobae.com/opinion/2026/07/10/del-pacto-de-mayo-al-de-la-reeleccion/",
+          "date": "2026-07-10T09:34:54+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Deutsch Tamás szerint olyan sokan voltak a Fidesz tüntetésén, hogy \"még a török riviéráról is látszott\"",
+          "source": "REFRESHER.hu",
+          "url": "https://refresher.hu/13003-Deutsch-Tamas-szerint-olyan-sokan-voltak-a-Fidesz-tuntetesen-hogy-meg-a-torok-rivierarol-is-latszott",
+          "date": "2026-07-10T09:21:52+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Awantura na miesięcznicy smoleńskiej. Kaczyński zapowiada \"gwardię obywatelską\"",
+          "source": "PolsatNews.pl",
+          "url": "https://www.polsatnews.pl/wiadomosc/2026-07-10/awantura-na-miesiecznicy-smolenskiej-kaczynski-zapowiada-gwardie-obywatelska/",
+          "date": "2026-07-10T09:14:00+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Javier Milei tiene la reelección asegurada... al menos por ahora",
+          "source": "Diario Mendoza Today",
+          "url": "https://mendozatoday.com.ar/nacionales/javier-milei-tiene-la-reeleccion-asegurada-al-menos-por-ahora-6319/",
+          "date": "2026-07-10T09:00:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Equilibrio y pragmatismo: el delgado hilo político que une a Alfredo Cornejo con Javier Milei",
+          "source": "Diario Mendoza Today",
+          "url": "https://mendozatoday.com.ar/politica/equilibrio-y-pragmatismo-el-delgado-hilo-politico-que-une-a-alfredo-cornejo-con-javier-milei-7602/",
+          "date": "2026-07-10T09:00:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Les Experts : Présidentielle, Marine Le Pen inquiète Bruxelles - 10/07",
+          "source": "BFM",
+          "url": "https://www.bfmtv.com/economie/replay-emissions/les-experts/video-les-experts-presidentielle-marine-le-pen-inquiete-bruxelles-10-07_VN-202607100397.html",
+          "date": "2026-07-10T08:41:42+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Milei baja el tono y busca evitar una fuga de votos por derecha rumbo a 2027",
+          "source": "Perfil",
+          "url": "https://www.perfil.com/noticias/politica/milei-baja-el-tono-y-busca-evitar-una-fuga-de-votos-por-derecha-rumbo-a-2027.phtml",
+          "date": "2026-07-10T08:30:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Sulyok Tamás elmozdítása ellen tüntetett a Fidesz, Orbán Viktor nem volt ott",
+          "source": "Transtelex",
+          "url": "https://transtelex.ro/kulfold/2026/07/10/stop-onkeny-fidesz-tuntetes-sulyok",
+          "date": "2026-07-10T08:29:18+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Milei acelera la reforma del Banco Central y enfrenta el desafío de mostrar alivio antes de 2027",
+          "source": "Perfil",
+          "url": "https://www.perfil.com/noticias/politica/milei-acelera-la-reforma-del-banco-central-y-enfrenta-el-desafio-de-mostrar-alivio-antes-de-2027.phtml",
+          "date": "2026-07-10T08:00:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Török Gábor: Eltűnt a hit, hogy Orbán még fontos, és ez az egész rendszert összeomlasztotta",
+          "source": "24.hu",
+          "url": "https://24.hu/belfold/2026/07/10/torok-gabor-orban-ner-fidesz-osszeomlas-torokules/",
+          "date": "2026-07-10T07:47:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "2026 World Cup: Israel PM Netanyahu sends strong message to Messi and Argentina",
+          "source": "Legit.ng",
+          "url": "https://www.legit.ng/sports/football/1718543-israel-prime-minister-netanyahu-declares-support-argentina-win-world-cup/",
+          "date": "2026-07-10T07:28:03+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "„A Fidesz nagyon puha, így ezt a szemét bandát nem fogja tudni eltávolítani” – az önkény ellen tüntetőknek csak a jogállam és Orbán Viktor hiányzik",
+          "source": "| hvg.hu",
+          "url": "https://hvg.hu/itthon/20260710_fidesz-tuntetes-video-stop-onkeny-sandor-palota-sulyok-tamas-ebx",
+          "date": "2026-07-10T07:02:14+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Javier Milei y sus medidas, en vivo: los movimientos en el Gobierno y los próximos proyectos legislativos",
+          "source": "examedia.com.ar",
+          "url": "https://www.examedia.com.ar/portada/post/87462752",
+          "date": "2026-07-10T06:32:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "El Gobierno reactivó la calculadora electoral: el factor Villarruel, los resabios de Adorni y otra vez el Milei conciliador",
+          "source": "Infobae",
+          "url": "https://www.infobae.com/politica/2026/07/10/el-gobierno-reactivo-la-calculadora-electoral-el-factor-villarruel-los-resabios-de-adorni-y-otra-vez-el-milei-conciliador/",
+          "date": "2026-07-10T05:53:32+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Netanyahu On The 2026 World Cup: \"I Support Argentina, Milei Is A Great Friend Of Israel\"",
+          "source": "i24NEWS",
+          "url": "https://www.i24news.tv/en/news/fifa-world-cup-2026/artc-netanyahu-on-the-2026-world-cup-i-support-argentina-milei-is-a-great-friend-of-israel",
+          "date": "2026-07-10T05:25:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Vox, ante la oportunidad de recuperar la pesca tradicional sin ideología",
+          "source": "Diario de Valladolid",
+          "url": "https://www.diariodevalladolid.es/opinion/260710/284615/vox-oportunidad-recuperar-pesca-tradicional-ideologia.html",
+          "date": "2026-07-10T04:30:00+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Nato, il regalo di Erdogan a Meloni e agli altri leader: una pistola (con proiettili)",
+          "source": "Il Messaggero",
+          "url": "https://www.ilmessaggero.it/politica/erdogan_regalo_pistola_meloni_trump_macron_merz_perche-9642019.html",
+          "date": "2026-07-10T04:00:32+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Meloni: nuovo approccio UE sui migranti",
+          "source": "IlMetropolitano.it",
+          "url": "https://www.ilmetropolitano.it/2026/07/10/meloni-approccio-ue-migranti/",
+          "date": "2026-07-10T03:51:42+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "El \"Congreso más reformista\" de Javier Milei quedó atrapado entre su agenda y los votos aliados",
+          "source": "Ambito",
+          "url": "https://www.ambito.com/politica/el-congreso-mas-reformista-javier-milei-quedo-atrapado-su-agenda-y-los-votos-aliados-n6297228",
+          "date": "2026-07-10T03:00:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei reunió a sus ministros con Diego Santilli a la cabeza y avanzan los cambios en el Banco Central",
+          "source": "La 100",
+          "url": "https://la100.cienradios.com/politica/javier-milei-reunio-a-sus-ministros-con-diego-santilli-a-la-cabeza-y-avanzan-los-cambios-en-el-banco-central/",
+          "date": "2026-07-10T02:47:58+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Escala mínima viable: las claves del paper con el que Javier Milei y Demian Reidel buscan dar sustento teórico a la desregulación",
+          "source": "Ambito",
+          "url": "https://www.ambito.com/economia/escala-minima-viable-las-claves-del-paper-el-que-javier-milei-y-demian-reidel-buscan-dar-sustento-teorico-la-desregulacion-n6298057",
+          "date": "2026-07-10T02:40:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei reunió al gabinete en la primera reunión con Diego Santilli como jefe",
+          "source": "Radio Mitre",
+          "url": "https://radiomitre.cienradios.com/politica/javier-milei-reunio-al-gabinete-en-la-primera-reunion-con-diego-santilli-como-jefe/",
+          "date": "2026-07-10T02:19:56+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei reunió a su Gabinete con la reforma del BCRA en la mira",
+          "source": "Diario El Sol Mendoza",
+          "url": "https://www.elsol.com.ar/el-pais/javier-milei-reunio-a-su-gabinete-con-la-reforma-del-bcra-en-la-mira/",
+          "date": "2026-07-10T00:54:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei puso la Casa Rosada a disposición de la Selección Argentina y aseguró que no estará presente durante la visita",
+          "source": "La Gaceta",
+          "url": "https://www.lagaceta.com.ar/nota/1144873/mundial-2026/javier-milei-puso-casa-rosada-disposicion-seleccion-argentina-aseguro-no-estara-presente-durante-visita.html",
+          "date": "2026-07-10T00:43:44+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Reforma electoral: La Libertad Avanza busca reactivar el debate en septiembre, pero no reúne los votos para eliminar las PASO",
+          "source": "Canal26",
+          "url": "https://www.canal26.com/politica/2026/07/10/reforma-electoral-la-libertad-avanza-busca-reactivar-el-debate-en-septiembre-pero-no-reune-los-votos-para-eliminar-las-paso/",
+          "date": "2026-07-10T00:03:12+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Un paper de Javier Milei y Demian Reidel plantea que la productividad define si una economía crece o colapsa",
+          "source": "Diario Río Negro",
+          "url": "https://www.rionegro.com.ar/politica/un-paper-de-javier-milei-y-demian-reidel-plantea-que-la-productividad-define-si-una-economia-crece-o-colapsa-4643055/",
+          "date": "2026-07-09T22:44:13+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Los tres umbrales clave para sostener el crecimiento, según el nuevo paper de Javier Milei y Demian Reidel",
+          "source": "Ambito",
+          "url": "https://www.ambito.com/economia/los-tres-umbrales-clave-sostener-el-crecimiento-segun-el-nuevo-paper-javier-milei-y-demian-reidel-n6298039",
+          "date": "2026-07-09T22:39:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei convocó a todo su Gabinete para avanzar con la reforma del BCRA",
+          "source": "Los Andes",
+          "url": "https://www.losandes.com.ar/politica/javier-milei-convoco-todo-su-gabinete-avanzar-la-reforma-del-bcra-n5998003",
+          "date": "2026-07-09T22:28:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Israeli PM Benjamin Netanyahu Backs Argentina at FIFA World Cup 2026 For Javier Milei, Not Lionel Messi— Here’s Why",
+          "source": "NewsX",
+          "url": "https://www.newsx.com/sports/israeli-pm-benjamin-netanyahu-backs-argentina-at-fifa-world-cup-2026-for-javier-milei-not-lionel-messi-heres-why-246805/",
+          "date": "2026-07-09T22:13:57+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Minnesota sues Trump administration over cap on homeless housing funding",
+          "source": "Northern News Now",
+          "url": "https://www.northernnewsnow.com/2026/07/09/minnesota-sues-trump-administration-over-cap-homeless-housing-funding/",
+          "date": "2026-07-09T22:13:00+00:00",
           "category": "usa"
         },
         {
-          "title": "On the same day, a Florida airport and a Tennessee bridge are renamed after Trump",
-          "source": "NBC News",
-          "url": "https://www.nbcnews.com/politics/donald-trump/palm-beach-international-airport-tennessee-bridge-renamed-rcna353784",
-          "date": "2026-07-10T02:16:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Man from Southern W.Va. arrested as part of UFC White House attack plot",
-          "source": "WSAZ",
-          "url": "https://www.wsaz.com/2026/07/10/man-southern-wva-arrested-part-ufc-white-house-attack-plot/",
-          "date": "2026-07-10T01:22:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Donald Trump, Recep Tayyip Erdogan embrace shows Israel must prepare for Turkey threat",
-          "source": "The Jerusalem Post",
-          "url": "https://www.jpost.com/opinion/article-902084",
-          "date": "2026-07-10T00:00:19+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "New Mexico accuses US Justice Department of impeding Epstein investigation",
-          "source": "Al Jazeera",
-          "url": "https://www.aljazeera.com/news/2026/7/9/new-mexico-accuses-us-justice-department-of-impeding-epstein-investigation",
-          "date": "2026-07-09T23:29:06+00:00",
-          "category": "usa"
+          "title": "No hay quórum para Javier Milei: la reforma electoral quedó atrapada entre el PRO y la UCR",
+          "source": "MDZ Online",
+          "url": "https://www.mdzol.com/politica/no-hay-quorum-javier-milei-la-reforma-electoral-quedo-atrapada-el-pro-y-la-ucr-n1562237",
+          "date": "2026-07-09T22:12:00+00:00",
+          "category": "argentina"
         },
         {
           "title": "Israel shares intelligence with US regarding new Iranian plan to assassinate Trump - report",
@@ -615,64 +1902,1269 @@
           "category": "usa"
         },
         {
-          "title": "US strikes on Iran resume after President Trump declares ceasefire 'over'",
-          "source": "KCBY",
-          "url": "https://kcby.com/news/nation-world/gallery/us-strikes-on-iran-resume-after-president-trump-declares-ceasefire-over-air-force-one-strait-hormuz-us-assets",
-          "date": "2026-07-09T21:17:09+00:00",
-          "category": "usa"
+          "title": "Javier Milei encabezó una nueva reunión de equipo",
+          "source": "diariopopular.com.ar",
+          "url": "https://www.diariopopular.com.ar/politica/javier-milei-encabezo-una-nueva-reunion-equipo-n909125",
+          "date": "2026-07-09T21:59:00+00:00",
+          "category": "argentina"
         },
         {
-          "title": "Trump administration puts pressure on states to revise election practices",
-          "source": "LiveNOW from FOX",
-          "url": "https://www.livenowfox.com/news/trump-administration-states-election-practices",
-          "date": "2026-07-09T18:37:18+00:00",
-          "category": "usa"
+          "title": "Javier Milei reunió al Gabinete y le dio detalles de la reforma del Banco Central",
+          "source": "diariopopular.com.ar",
+          "url": "https://www.diariopopular.com.ar/politica/javier-milei-reunio-al-gabinete-y-le-dio-detalles-la-reforma-del-banco-central-n909125",
+          "date": "2026-07-09T21:59:00+00:00",
+          "category": "argentina"
         },
         {
-          "title": "Polish president makes key Supreme Court appointment as judicial dispute persists",
-          "source": "Anadolu Ajansı",
-          "url": "https://www.aa.com.tr/en/europe/polish-president-makes-key-supreme-court-appointment-as-judicial-dispute-persists/3993510",
-          "date": "2026-07-09T17:03:31+00:00",
+          "title": "La Libertad Avanza quiere debatir la reforma electoral en septiembre p",
+          "source": "El Esquiu",
+          "url": "https://www.elesquiu.com/politica/2026/7/9/la-libertad-avanza-quiere-debatir-la-reforma-electoral-en-septiembre-p-588360.html",
+          "date": "2026-07-09T21:20:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Bullrich dijo que las colectoras “deforman el sistema electoral” y puso reparos a la suspensión de las PASO",
+          "source": "TN",
+          "url": "https://tn.com.ar/politica/2026/07/09/patricia-bullrich-dijo-que-las-colectoras-deforman-el-sistema-electoral-y-puso-reparos-a-la-suspension-de-las-paso/",
+          "date": "2026-07-09T21:18:38+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Tedeum y poder: Milei exhibió un gabinete ordenado mientras comienza una nueva etapa política",
+          "source": "Identidad Correntina",
+          "url": "https://www.identidadcorrentina.com.ar/noticia/34175_tedeum-y-poder-milei-exhibi-un-gabinete-ordenado-mientras-comienza-una-nueva-etapa-poltica.htm",
+          "date": "2026-07-09T21:16:59+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Rafecas ordenó nuevas medidas de prueba contra el diputado Francisco Adorni",
+          "source": "Agencia DIB",
+          "url": "https://dib.com.ar/politica/rafecas-ordeno-nuevas-medidas-prueba-contra-el-diputado-manuel-adorni-n54124",
+          "date": "2026-07-09T21:11:21+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei firmó el decreto 614/2025 y habrá solo dos feriados en 136 días que encima no se trasladarán",
+          "source": "MinutoUno",
+          "url": "https://www.minutouno.com/sociedad/javier-milei-firmo-el-decreto-6142025-y-habra-solo-dos-feriados-136-dias-que-encima-no-se-trasladaran-n6298019",
+          "date": "2026-07-09T21:07:28+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Inflación en dólares: Argentina se encareció 3,5% desde que asumió Javier Milei, aunque se abarató respecto de América Latina",
+          "source": "Ambito",
+          "url": "https://www.ambito.com/economia/inflacion-dolares-argentina-se-encarecio-35-que-asumio-javier-milei-aunque-se-abarato-respecto-america-latina-n6298004",
+          "date": "2026-07-09T20:56:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei encabezó una reunión de Gabinete en Casa Rosada",
+          "source": "LV12",
+          "url": "https://www.lv12.com.ar/milei/javier-milei-encabezo-una-reunion-gabinete-casa-rosada-n200574",
+          "date": "2026-07-09T20:48:08+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei y Demian Reidel publicaron un paper que explica las bases teóricas de su programa económico",
+          "source": "Aire de Santa Fe",
+          "url": "https://www.airedesantafe.com.ar/politica/javier-milei-y-demian-reidel-publicaron-un-paper-que-explica-las-bases-teoricas-su-programa-economico-n662671",
+          "date": "2026-07-09T20:44:26+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Para explicar el programa económico, Javier Milei y Demian Reidel publicaron un paper de sustento teórico",
+          "source": "Crónica",
+          "url": "https://www.cronica.com.ar/politica/para-explicar-el-programa-economico-javier-milei-y-demian-reidel-publicaron-un-paper-de-sustento-teorico/",
+          "date": "2026-07-09T20:30:04+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Top Hungary news: Mackenzie's murderer jailed, Fidesz protest, digital euro, stylish minister — 9 July, 2026",
+          "source": "Daily News Hungary",
+          "url": "https://dailynewshungary.com/top-hungary-news-9-july-2026/",
+          "date": "2026-07-09T20:24:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Diputados: el lunes eyectan a Agustín Romo de la conducción del bloque de La Libertad Avanza",
+          "source": "Infocielo",
+          "url": "https://www.infocielo.com/politica-y-economia/diputados-el-lunes-eyectan-a-agustin-romo-de-la-conduccion-del-bloque-de-la-libertad-avanza",
+          "date": "2026-07-09T20:14:44+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei se reunió con sus ministros en Casa Rosada para fijar el rumbo de la gestión durante el segundo semestre",
+          "source": "economis.com.ar",
+          "url": "https://economis.com.ar/javier-milei-ministros-casa-rosada/",
+          "date": "2026-07-09T20:02:22+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei acelera la reforma del Banco Central en medio de la interna libertaria",
+          "source": "Letra P",
+          "url": "https://www.letrap.com.ar/javier-milei-acelero-la-reforma-del-banco-central-medio-la-interna-libertaria-n5425036",
+          "date": "2026-07-09T19:44:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "La Libertad Avanza apunta a debatir la reforma electoral en septiembre, pero no tiene los votos necesarios",
+          "source": "Fenix951",
+          "url": "https://www.fenix951.com.ar/noticia.php?id=345737",
+          "date": "2026-07-09T19:21:15+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei reunió a su Gabinete y ratificó que la reforma del BCRA se presentará las próximas semanas",
+          "source": "Ambito",
+          "url": "https://www.ambito.com/politica/javier-milei-reunio-su-gabinete-y-ratifico-que-la-reforma-del-bcra-se-presentara-las-proximas-semanas-n6297991",
+          "date": "2026-07-09T18:56:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Milei reunió a su Gabinete tras el Tedeum: el foco, la reforma del Banco Central",
+          "source": "Cadena 3 Argentina",
+          "url": "https://www.cadena3.com/amp/noticia/politica-y-economia/milei-reunio-a-su-gabinete-tras-el-tedeum-el-foco-la-reforma-del-banco-central_571478",
+          "date": "2026-07-09T18:52:10+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei habló por el 9 de Julio y anunció que impulsará nuevas reformas antes de 2027",
+          "source": "Aire de Santa Fe",
+          "url": "https://www.airedesantafe.com.ar/politica/javier-milei-hablo-el-9-julio-y-anuncio-que-impulsara-nuevas-reformas-antes-2027-n662659",
+          "date": "2026-07-09T18:33:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Luego de participar del Te Deum, Javier Milei reunió al Gabinete en Casa Rosada para avanzar con nuevas reformas",
+          "source": "MDZ Online",
+          "url": "https://www.mdzol.com/politica/luego-participar-del-te-deum-javier-milei-reunio-al-gabinete-casa-rosada-avanzar-nuevas-reformas-n1561874",
+          "date": "2026-07-09T18:32:34+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "El presidente Javier Milei participó del Tedeum por el Día de la Independencia",
+          "source": "Vía País",
+          "url": "https://viapais.com.ar/politica/presidente-javier-milei-participo-tedeum-dia-independencia_0_87xi89ai1y.html",
+          "date": "2026-07-09T18:30:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Moreno se marca como objetivo \"encapsular\" a su nuevo Gobierno PP-Vox ante la \"confrontación partidista y electoral\"",
+          "source": "Europa Press",
+          "url": "https://www.europapress.es/andalucia/noticia-moreno-marca-objetivo-encapsular-nuevo-gobierno-pp-vox-confrontacion-partidista-electoral-20260709161415.html",
+          "date": "2026-07-09T18:26:38+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Nueva encuesta ubica a Axel Kicillof como el principal opositor a Javier Milei y enciende alarmas",
+          "source": "Radio LV11",
+          "url": "https://www.radiolv11.com.ar/noticia/nueva-encuesta-ubica-a-axel-kicillof-como-el-principal-opositor-a-javier-milei-y-enciende-alarmas",
+          "date": "2026-07-09T18:23:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei encabezó una reunión de Gabinete junto a Diego Santilli para definir la reforma estructural del Banco Central",
+          "source": "Radio LV11",
+          "url": "https://www.radiolv11.com.ar/noticia/javier-milei-encabezo-una-reunion-de-gabinete-junto-a-diego-santilli-para-definir-la-reforma-estructural-del-banco-central",
+          "date": "2026-07-09T18:01:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "El FMI respaldó la reforma del Banco Central de Javier Milei y confirmó la primera visita de Kristalina Georgieva al país",
+          "source": "Radio LV11",
+          "url": "https://www.radiolv11.com.ar/noticia/el-fmi-respaldo-la-reforma-del-banco-central-de-javier-milei-y-confirmo-la-primera-visita-de-kristalina-georgieva-al-pais",
+          "date": "2026-07-09T17:49:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Sondaż: KO liderem, spora przewaga nad PiS. PSL poza Sejmem",
+          "source": "Do Rzeczy",
+          "url": "https://dorzeczy.pl/kraj/912763/sondaz-ko-liderem-spora-przewaga-nad-pis-psl-poza-sejmem.html",
+          "date": "2026-07-09T17:32:00+00:00",
           "category": "poland"
         },
         {
-          "title": "US State Department Spokesperson: President Trump Is Not Looking for a Prolonged War",
-          "source": "IranWire",
-          "url": "https://iranwire.com/en/features/154731-us-state-department-spokesperson-president-trump-is-not-looking-for-a-prolonged-war/",
-          "date": "2026-07-09T15:45:00+00:00",
-          "category": "usa"
+          "title": "Con Javier Milei presente, Diego Santilli encabezó su primera reunión como jefe de Gabinete",
+          "source": "MinutoUno",
+          "url": "https://www.minutouno.com/politica/con-javier-milei-presente-diego-santilli-encabezo-su-primera-reunion-como-jefe-gabinete-n6297963",
+          "date": "2026-07-09T17:15:00+00:00",
+          "category": "argentina"
         },
         {
-          "title": "DONALD TRUMP SENDS OMINOUS WARNING ABOUT IRAN",
-          "source": "Channel 3000",
-          "url": "https://www.channel3000.com/news/shareable-stories/donald-trump-sends-ominous-warning-about-iran/video_3c3bd369-d8d2-5d99-aa6e-9e2639af5580.html",
-          "date": "2026-07-09T14:44:38+00:00",
-          "category": "usa"
+          "title": "El abrazo de Javier Milei a Santiago Caputo y Patricia Bullrich en el balcón de la Rosada",
+          "source": "Crónica",
+          "url": "https://www.cronica.com.ar/politica/el-abrazo-de-javier-milei-a-santiago-caputo-y-patricia-bullrich-en-el-balcon-de-la-rosada/",
+          "date": "2026-07-09T17:09:33+00:00",
+          "category": "argentina"
         },
         {
-          "title": "Trump Spews Wild Threat to NATO Over Greenland",
-          "source": "The New Republic",
-          "url": "https://newrepublic.com/post/212880/donald-trump-threat-nato-troops-greenland",
-          "date": "2026-07-09T13:25:03+00:00",
-          "category": "usa"
+          "title": "Gabinete sin feriado: Milei convocó a una reunión en Casa Rosada luego del Tedeum",
+          "source": "Perfil",
+          "url": "https://www.perfil.com/noticias/actualidad/gabinete-sin-feriado-milei-convoco-a-una-reunion-en-casa-rosada-luego-del-tedeum.phtml",
+          "date": "2026-07-09T17:06:00+00:00",
+          "category": "argentina"
         },
         {
-          "title": "U.S. and Iran trade strikes for second day after President Trump said ceasefire is 'over'",
-          "source": "CNBC",
-          "url": "https://www.cnbc.com/video/2026/07/09/u-s-and-iran-trade-strikes-for-second-day.html",
-          "date": "2026-07-09T10:23:50+00:00",
-          "category": "usa"
+          "title": "Javier Milei encabezó una reunión de Gabinete con Santilli y avanzan en la reforma de la Carta Orgánica del Banco Central",
+          "source": "MisionesOnline",
+          "url": "https://misionesonline.net/2026/07/09/javier-milei-encabezo-una-reunion-de-gabinete-con-santilli-y-avanzan-en-la-reforma-de-la-carta-organica-del-banco-central/",
+          "date": "2026-07-09T17:02:35+00:00",
+          "category": "argentina"
         },
         {
-          "title": "President Trump ended up assisting United States’ World Cup loss [letter]",
-          "source": "LancasterOnline",
-          "url": "https://lancasteronline.com/opinion/letters_to_editor/president-trump-ended-up-assisting-united-states-world-cup-loss-letter/article_f349959f-067e-40bd-a361-70d8edb3fa06.html",
-          "date": "2026-07-09T09:00:00+00:00",
-          "category": "usa"
+          "title": "Javier Milei encabezó una nueva reunión de equipo, la primera con Santilli",
+          "source": "Tiempo Sur",
+          "url": "https://www.tiemposur.com.ar/politica/amp/javier-milei-encabezo-una-nueva-reunion-de-equipo-la-primera-con-santilli",
+          "date": "2026-07-09T16:59:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Lo que no se vio del acto de Milei en el Tedeum y los sutiles movimientos entre los funcionarios del Gabinete",
+          "source": "Infobae",
+          "url": "https://www.infobae.com/politica/2026/07/09/lo-que-no-se-vio-del-acto-de-milei-en-el-tedeum-y-los-sutiles-movimientos-entre-los-funcionarios-del-gabinete/",
+          "date": "2026-07-09T16:49:41+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "De la tensión del 2025 al saludo del 2026: el cambio de clima entre Javier Milei y Jorge Macri",
+          "source": "MDZ Online",
+          "url": "https://www.mdzol.com/politica/de-la-tension-del-2025-al-saludo-del-2026-el-cambio-clima-javier-milei-y-jorge-macri-n1562005",
+          "date": "2026-07-09T16:45:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei y Diego Santilli definen las reformas para el segundo semestre",
+          "source": "Diario Río Negro",
+          "url": "https://www.rionegro.com.ar/politica/javier-milei-y-diego-santilli-definen-las-reformas-para-el-segundo-semestre-4642448/?amp=1",
+          "date": "2026-07-09T16:32:31+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Con Diego Santilli al frente, Javier Milei activó el plan de reformas para el segundo semestre desde Casa Rosada",
+          "source": "Diario Río Negro",
+          "url": "https://www.rionegro.com.ar/politica/javier-milei-y-diego-santilli-definen-las-reformas-para-el-segundo-semestre-4642448/",
+          "date": "2026-07-09T16:32:31+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Donald Tump saludó a Javier Milei por el 9 de julio: “Argentina se ha convertido en un socio indispensable”",
+          "source": "Radio Mitre",
+          "url": "https://radiomitre.cienradios.com/politica/donald-tump-saludo-a-javier-milei-por-el-9-de-julio-argentina-se-ha-convertido-en-un-socio-indispensable/",
+          "date": "2026-07-09T16:18:32+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Milei says Argentina is 'diametrically opposite' to the country he inherited in 2023",
+          "source": "MercoPress",
+          "url": "https://en.mercopress.com/2026/07/09/milei-says-argentina-is-diametrically-opposite-to-the-country-he-inherited-in-2023",
+          "date": "2026-07-09T16:12:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei encabezó una nueva reunión de equipo, la primera con Santilli como jefe de Gabinete",
+          "source": "Agencia Noticias Argentinas",
+          "url": "https://noticiasargentinas.com/politica/javier-milei-encabeza-una-nueva-reunion-de-equipo--la-primera-con-santilli-como-jefe-de-gabinete_a6a4fb99d222a027f5fdeffcc",
+          "date": "2026-07-09T16:10:32+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei ofreció la Casa Rosada a la Selección y prometió no estar para la foto",
+          "source": "Diario Río Negro",
+          "url": "https://www.rionegro.com.ar/politica/javier-milei-ofrecio-la-casa-rosada-a-la-seleccion-y-prometio-no-estar-para-la-foto-4642376/",
+          "date": "2026-07-09T16:03:32+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "El FMI respaldó la reforma del BCRA de Javier Milei",
+          "source": "Crónica",
+          "url": "https://www.cronica.com.ar/amp/politica/el-fmi-respaldo-la-reforma-del-bcra-de-javier-milei-6743/",
+          "date": "2026-07-09T15:51:31+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Tedeum: García Cuerva volvió a incomodar a Javier Milei",
+          "source": "Urgente24",
+          "url": "https://urgente24.com/actualidad/tedeum-garcia-cuerva-volvio-incomodar-javier-milei-n628352",
+          "date": "2026-07-09T15:44:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Donald Trump saludó a Javier Milei y definió a la Argentina como un socio indispensable",
+          "source": "Tendencia de Noticias",
+          "url": "https://tendenciadenoticias.com.ar/tendencias/donald-trump-saludo-a-javier-milei-y-definio-a-la-argentina-como-un-socio-indispensable",
+          "date": "2026-07-09T15:36:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Sin Villarruel, Javier Milei participó del Tedeum patrio",
+          "source": "Tiempo Sur",
+          "url": "https://www.tiemposur.com.ar/politica/sin-villarruel-javier-milei-participo-del-tedeum-patrio",
+          "date": "2026-07-09T15:27:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Frente a Javier Milei, García Cuerva llamó a la “unidad” y pidió dejar la “mezquindad política”",
+          "source": "El Intransigente",
+          "url": "https://elintransigente.com/2026/07/frente-a-javier-milei-garcia-cuerva-llamo-a-la-unidad-y-pidio-dejar-la-mezquindad-politica/",
+          "date": "2026-07-09T15:26:40+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Video: el inesperado momento viral de Javier Milei con los Granaderos a la salida del Tedeum",
+          "source": "Lmneuquen.com",
+          "url": "https://www.lmneuquen.com/pais/video-el-inesperado-momento-viral-javier-milei-los-granaderos-la-salida-del-tedeum-n1245388",
+          "date": "2026-07-09T15:24:26+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei y Jorge Macri, a los abrazos en el Tedeum",
+          "source": "Cadena 3 Argentina",
+          "url": "https://www.cadena3.com/noticia/politica-y-economia/javier-milei-y-jorge-macri-a-los-abrazos-en-el-tedeum_571329",
+          "date": "2026-07-09T15:23:49+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Ante Milei, la Iglesia advirtió por las “cuevas de la corrupción” y mencionó a Messi para un pedido especial",
+          "source": "ElDoce.tv",
+          "url": "https://eldoce.tv/politica/2026/07/09/ante-milei-la-iglesia-advirtio-por-las-cuevas-de-la-corrupcion-y-menciono-a-messi-para-un-pedido-especial/",
+          "date": "2026-07-09T15:18:09+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "El saludo de Javier Milei al bebé de Jorge Macri y María Belén Ludueña durante el Tedeum por el Día de la Independencia",
+          "source": "Infobae",
+          "url": "https://www.infobae.com/politica/2026/07/09/el-saludo-de-javier-milei-al-bebe-de-jorge-macri-y-maria-belen-luduena-durante-el-tedeum-por-el-dia-de-la-independencia/",
+          "date": "2026-07-09T15:17:40+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Tras escuchar la homilía en el Tedeum, Javier Milei encabezó una reunión de Gabinete",
+          "source": "C5N",
+          "url": "https://www.c5n.com/politica/javier-milei-reunion-de-gabiente-jueves-9-de-julio-2026",
+          "date": "2026-07-09T15:07:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei se reúne con sus ministros en Casa Rosada para fijar el rumbo de la gestión durante el segundo semestre",
+          "source": "TN",
+          "url": "https://tn.com.ar/politica/2026/07/09/javier-milei-se-reune-con-sus-ministros-en-casa-rosada-para-fijar-el-rumbo-de-la-gestion-durante-el-segundo-semestre/",
+          "date": "2026-07-09T15:05:27+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Sin Villarruel, Javier Milei participa del Tedeum escoltado por su nuevo Gabinete",
+          "source": "La Prensa Digital",
+          "url": "https://www.laprensa.com.ar/amp/Sin-Villarruel-Javier-Milei-participa-del-Tedeum-escoltado-por-su-nuevo-Gabinete-573562.note.aspx",
+          "date": "2026-07-09T15:04:58+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "El aval del FMI al proyecto de Javier Milei para reformar el Banco Central",
+          "source": "TN",
+          "url": "https://tn.com.ar/economia/2026/07/09/el-fmi-apoyo-el-proyecto-de-milei-para-reformar-el-banco-central-ayudara-a-bajar-la-inflacion/",
+          "date": "2026-07-09T15:02:05+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei asegura que Argentina es \"diametralmente opuesta\" a la que recibió en 2023",
+          "source": "Infobae",
+          "url": "https://www.infobae.com/america/agencias/2026/07/09/javier-milei-asegura-que-argentina-es-diametralmente-opuesta-a-la-que-recibio-en-2023/",
+          "date": "2026-07-09T14:55:48+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "El presidente Javier Milei participó del Tedeum por el 9 de Julio",
+          "source": "Radionacional.com.ar",
+          "url": "https://www.radionacional.com.ar/el-presidente-javier-milei-participo-del-tedeum-por-el-9-de-julio/",
+          "date": "2026-07-09T14:55:23+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Milei encabezó el Tedeum oficial en Buenos Aires junto a su Gabinete",
+          "source": "El Litoral",
+          "url": "https://www.ellitoral.com/politica/javier-milei-tedeum-buenos-aires-gabinete-diego-santilli-catedral-metropolitana-ahora-hoy-argentina-9dejulio_0_FIDLVJTHTN.html",
+          "date": "2026-07-09T14:47:59+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Ya sin Adorni para este Tedeum, Milei contó con la primera plana completa el 9 de julio y habrá reunión de gab",
+          "source": "Crónica",
+          "url": "https://www.cronica.com.ar/amp/politica/ya-sin-adorni-para-este-tedeum-javier-milei-conto-con-el-gabinete-completo-el-9-de-julio/",
+          "date": "2026-07-09T14:44:39+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei encabezó el acto por el 9 de Julio en Tucumán y anunció nuevas reformas ante gobernadores aliados",
+          "source": "Somos Jujuy",
+          "url": "https://www.somosjujuy.com.ar/politica/javier-milei-encabezo-acto-9-julio-tucuman-anuncio-nuevas-reformas-gobernadores-aliados-n120631",
+          "date": "2026-07-09T14:43:44+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Sin Villaruel: El presidente Javier Milei participó del Tedeum escoltado por Diego Santilli",
+          "source": "Mnews",
+          "url": "https://mnews.com.ar/agentina/174812-Sin-Villaruel-El-presidente-Javier-Milei-participo-del-Tedeum-escoltado-por-Diego-Santilli",
+          "date": "2026-07-09T14:39:39+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Milei encabezó el Tedeum oficial junto a su Gabinete",
+          "source": "TV Pública",
+          "url": "https://www.tvpublica.com.ar/post/milei-encabezo-el-tedeum-oficial-junto-a-su-gabinete",
+          "date": "2026-07-09T14:37:17+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "En la vigilia del 9 de Julio, Javier Milei expuso su plan para el interior en Tucumán",
+          "source": "Villa María VIVO",
+          "url": "https://villamariavivo.com/en-la-vigilia-del-9-de-julio-javier-milei-expuso-su-plan-para-el-interior-en-tucuman/",
+          "date": "2026-07-09T14:29:59+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "El Sindicat d'Estudiants se querella contra Badenas (Vox) por allanamiento de su despacho - Levante-EMV",
+          "source": "",
+          "url": "https://www.levante-emv.com/valencia/2026/07/09/sindicat-destudiants-querella-badenas-vox-132296402.html",
+          "date": "2026-07-09T14:11:09+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "En Buenos Aires, Javier Milei participa del Tedeum en la Catedral por el Día de la Independencia",
+          "source": "La Gaceta",
+          "url": "https://www.lagaceta.com.ar/nota/1144780/politica/buenos-aires-javier-milei-participa-tedeum-catedral-dia-independencia.html",
+          "date": "2026-07-09T14:05:42+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Tras la vigilia en Tucumán, Javier Milei encabeza el Tedeum junto a su Gabinete",
+          "source": "Análisis Digital",
+          "url": "https://www.analisisdigital.com.ar/nacionales/2026/07/09/tras-la-vigilia-en-tucuman-javier-milei-encabeza-el-tedeum-junto-su-gabinete",
+          "date": "2026-07-09T14:03:10+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "En VIVO: Javier Milei participa del Tedeum por el 9 de Julio",
+          "source": "Lmneuquen.com",
+          "url": "https://www.lmneuquen.com/pais/en-vivo-javier-milei-participa-del-tedeum-el-9-julio-n1245337",
+          "date": "2026-07-09T14:00:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei participa del Tedeum del 9 de julio en la Catedral Metropolitana",
+          "source": "Cba24n",
+          "url": "https://www.cba24n.com.ar/argentina/javier-milei-participa-del-tedeum-del-9-de-julio-en-la-catedral-metropolitana_a6a4fa74a50789dfe858544b9",
+          "date": "2026-07-09T13:59:37+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei participó del Tedeum del 9 de julio en la Catedral Metropolitana",
+          "source": "Cba24n",
+          "url": "https://www.cba24n.com.ar/argentina/javier-milei-participo-del-tedeum-del-9-de-julio-en-la-catedral-metropolitana_a6a4fa74a50789dfe858544b9",
+          "date": "2026-07-09T13:59:37+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei encabezó la vigilia en Tucumán y anunció nuevas reformas para antes de 2027",
+          "source": "El Eco",
+          "url": "https://www.eleco.com.ar/politica/javier-milei-encabezo-la-vigilia-en-tucuman-y-anuncio-nuevas-reformas-para-antes-de-2027",
+          "date": "2026-07-09T13:50:25+00:00",
+          "category": "argentina"
         }
       ],
-      "first_seen": "2026-07-09T04:30:39+00:00",
-      "last_seen": "2026-07-10T04:33:02+00:00"
+      "first_seen": "2026-07-06T04:52:02+00:00",
+      "last_seen": "2026-07-10T15:12:59+00:00"
+    },
+    {
+      "id": "fidesz-tisza-feud-over-hungary-s-future",
+      "title": "Fidesz-Tisza feud over Hungary's future",
+      "blurb": "Hungary's political landscape is dominated by a bitter feud between Fidesz, led by Viktor Orbán, and the Tisza Party, led by Péter Magyar. The conflict centers on constitutional changes, media freedom, and allegations of corruption, sparking mass protests and legal battles.",
+      "affect": "This commands disproportionate attention due to the high-stakes power struggle, allegations of authoritarianism, and the broader implications for Hungary's democracy and EU relations.",
+      "intensity": 4,
+      "affect_signals": [
+        "polarized contention",
+        "cross-source repetition",
+        "outrage-coded language",
+        "leadership crisis tone",
+        "moral panic register"
+      ],
+      "categories": [
+        "🇭🇺 Fidesz / Tisza"
+      ],
+      "article_count": 70,
+      "refs": [
+        {
+          "title": "Latorcai Csaba: \"A Tisza Párt meghátrált\" - Sarkalatos marad a földtörvény és a nemzeti vagyon védelméről szóló törvény",
+          "source": "Vasárnap.hu",
+          "url": "https://vasarnap.hu/2026/07/10/latorcai-csaba-a-tisza-part-meghatralt-sarkalatos-marad-a-foldtorveny-es-a-nemzeti-vagyon-vedelmerol-szolo-torveny/",
+          "date": "2026-07-10T12:55:32+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Gazdaság: Magyar Péter az uniós pénzek felszabadításáról: „Megígértük, megcsináltuk”",
+          "source": "| hvg.hu",
+          "url": "https://hvg.hu/gazdasag/20260710_unios-forrasok-felszabaditasa-magyar-peter-vitezy-david-reakcio",
+          "date": "2026-07-10T12:43:10+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Benyújtották a Vagyonvisszaszerzési Hivatalról szóló törvényjavaslatot",
+          "source": "444",
+          "url": "https://444.hu/2026/07/10/benyujtottak-a-vagyonvisszaszerzesi-hivatalrol-szolo-torvenyjavaslatot",
+          "date": "2026-07-10T12:38:11+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Medián: A választók csaknem 40 százaléka követi a parlamenti közvetítéseket, és a többséget nem zavarja Magyar Péter stílusa",
+          "source": "Népszava",
+          "url": "https://nepszava.hu/3328675_median-hann-endre-parlament-magyar-peter",
+          "date": "2026-07-10T12:36:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Videó: Áder János: Magyar Péter valótlan dolgokat állít",
+          "source": "HírTv",
+          "url": "https://hirtv.origo.hu/video/ader-janos-magyar-peter-valotlan-dolgokat-allit",
+          "date": "2026-07-10T12:34:11+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "A Fidesz nem indít jelöltet a békéscsabai időközi önkormányzati választáson",
+          "source": "BEHIR",
+          "url": "https://behir.hu/a-fidesz-nem-indit-jeloltet-a-bekescsabai-idokozi-onkormanyzati-valasztason",
+          "date": "2026-07-10T12:24:07+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Csalásgyanúval újra nyomoznak Józsefváros gyereküdülőjének a Fidesz alatt történt zavaros felújítása miatt",
+          "source": "| hvg.hu",
+          "url": "https://hvg.hu/itthon/20260710_csalasgyanuval-ujra-nyomoznak-jozsefvaros-gyerekudulojenek-a-fidesz-eraban-tortent-zavaros-felujitasa-miatt",
+          "date": "2026-07-10T12:20:59+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Magyar Péter: Benyújtottuk a Nemzeti Vagyonvisszaszerzési és Vagyonvédelmi Hivatalról szóló törvényt",
+          "source": "Index.hu",
+          "url": "https://index.hu/belfold/2026/07/10/magyar-peter-nemzeti-vagyonvisszaszerzesi-es-vagyonvedelmi-hivatal-torveny-benyujtas-unios-penzek-ugyeszseg/",
+          "date": "2026-07-10T12:18:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Magyar Péter: Jönnek az uniós ezermilliárdok",
+          "source": "atv.hu",
+          "url": "https://www.atv.hu/belfold/20260710/magyar-peter-unios-penzek/",
+          "date": "2026-07-10T12:14:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Molnár Áron kemény kritikával illette a Fidesz csütörtöki tüntetését: „Ne hazudjatok magatoknak”",
+          "source": "nlc",
+          "url": "https://nlc.hu/sztarok/20260710/molnar-aron-kritika-fidesz-tuntetes/",
+          "date": "2026-07-10T12:00:40+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Były wiceminister PiS na Białorusi. Z prezentami dla rosyjskich żołnierzy",
+          "source": "TVP Info",
+          "url": "https://www.tvp.info/94273125/krzysztof-tolwinski-byly-wiceminister-w-rzadzie-pis-pojechal-na-bialorus-przekazal-tam-apteczki-pierwszej-pomocy-dla-rosyjskich-zolnierzy-wideo",
+          "date": "2026-07-10T11:59:00+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Magyar Péter: „Megígértük, megcsináltuk”",
+          "source": "Magyar Hang",
+          "url": "https://hang.hu/belfold/magyar-peter-megigertuk-megcsinaltuk-190441",
+          "date": "2026-07-10T11:48:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Magyar Péter: Sokan lehetetlennek tartották, mi három hónap kőkemény munkával megcsináltuk",
+          "source": "Index.hu",
+          "url": "https://index.hu/belfold/2026/07/10/magyarorszag-europai-unio-helyreallitasi-alap-unios-forrasok-magyar-peter-vitezy-david-reakcio/",
+          "date": "2026-07-10T11:44:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Bundestag: Julia Klöckner droht ganzer AfD-Fraktion mit Rauswurf - T-Online",
+          "source": "",
+          "url": "https://www.t-online.de/video/nachrichten/politik/id_101337738/im-bundestag-droht-julia-kloeckner-der-afd-fraktion-mit-rauswurf.html",
+          "date": "2026-07-10T11:34:33+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Lesz mire költeni: Magyar Péter bejelentette, hogy végre hazajönnek az uniós ezermilliárdok – Szegedi hírek",
+          "source": "Szeged365",
+          "url": "https://szeged365.hu/2026/07/10/lesz-mire-kolteni-magyar-peter-szerint-vegre-hazajonnek-az-unios-ezermilliardok/",
+          "date": "2026-07-10T11:32:02+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Mi történt? Orbán Viktort kórházban kapták lencsevégre",
+          "source": "Mfor.hu",
+          "url": "https://mfor.hu/cikkek/kozelet/mi-tortent-orban-viktort-korhazban-kaptak-lencsevegre.html",
+          "date": "2026-07-10T11:19:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "„Inkább élünk picit szegényebben, de biztonságban” – fotókon a falvak, ahol tarolt a Fidesz áprilisban",
+          "source": "| hvg.hu",
+          "url": "https://hvg.hu/elet/20260710_galeria-fideszes-falvak-videk",
+          "date": "2026-07-10T11:15:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Tisza-kormány: jönnek az uniós milliárdok Magyarországra, megtette az első feljelentéseket Ruff Bálint",
+          "source": "Portfolio.hu",
+          "url": "https://www.portfolio.hu/gazdasag/20260710/tisza-kormany-jonnek-az-unios-milliardok-magyarorszagra-megtette-az-elso-feljelenteseket-ruff-balint-848734",
+          "date": "2026-07-10T11:09:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Zöld utat kapott a Magyar Péter vezette kormány, uniós pénzeső ömölhet Magyarországra",
+          "source": "Portfolio.hu",
+          "url": "https://www.portfolio.hu/unios-forrasok/20260710/zold-utat-kapott-a-magyar-peter-vezette-kormany-unios-penzeso-omolhet-magyarorszagra-848766",
+          "date": "2026-07-10T11:09:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Sokan szerintük az ötvenes éveket idézi a Tisza politikája",
+          "source": "HírTv",
+          "url": "https://hirtv.origo.hu/ahirtvhirei/2026/07/sokan-szerintuk-az-otvenes-eveket-idezi-a-tisza-politikaja",
+          "date": "2026-07-10T10:49:24+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Sokak szerint az ötvenes éveket idézi a Tisza politikája",
+          "source": "HírTv",
+          "url": "https://hirtv.origo.hu/ahirtvhirei/2026/07/sokak-szerint-az-otvenes-eveket-idezi-a-tisza-politikaja",
+          "date": "2026-07-10T10:49:24+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Videó: Sokak szerint az ötvenes évek és a besúgóhálózat tért vissza a Tisza-kormánnyal",
+          "source": "HírTv",
+          "url": "https://hirtv.origo.hu/video/sokak-szerint-az-otvenes-evek-es-a-besugohalozat-tert-vissza-a-tisza-kormannyal",
+          "date": "2026-07-10T10:33:04+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "En France, 7 800 hectares brûlés en dix jours seulement",
+          "source": "France 24",
+          "url": "https://www.france24.com/fr/vid%C3%A9o/20260710-en-france-7-800-hectares-br%C3%BBl%C3%A9s-en-dix-jours-seulement",
+          "date": "2026-07-10T10:32:53+00:00",
+          "category": "france"
+        },
+        {
+          "title": "\"Sueddeutsche Zeitung\": Koniec rywalizacji Tuska z Kaczyńskim?",
+          "source": "Do Rzeczy",
+          "url": "https://dorzeczy.pl/obserwator-mediow/913051/sueddeutsche-zeitung-koniec-rywalizacji-tuska-z-kaczynskim.html",
+          "date": "2026-07-10T10:04:00+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Molnár Áron elmondta, mit gondol a Fidesz csütörtöki tüntetéséről és Orbán Viktor távolmaradásáról",
+          "source": "24.hu",
+          "url": "https://24.hu/szorakozas/2026/07/10/molnar-aron-fidesz-tuntetes-orban-viktor/",
+          "date": "2026-07-10T09:49:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Deutsch Tamás szerint olyan sokan voltak a Fidesz tüntetésén, hogy \"még a török riviéráról is látszott\"",
+          "source": "REFRESHER.hu",
+          "url": "https://refresher.hu/13003-Deutsch-Tamas-szerint-olyan-sokan-voltak-a-Fidesz-tuntetesen-hogy-meg-a-torok-rivierarol-is-latszott",
+          "date": "2026-07-10T09:21:52+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Nem engedélyezte a főegyházmegye Osztie Zoltán plébános felszólalását a Fidesz tüntetésén",
+          "source": "| hvg.hu",
+          "url": "https://hvg.hu/itthon/20260710_osztie-zoltan-plebanos-felszolalas-fidesz-tuntetes-egyhazmegye-elhatarolodas",
+          "date": "2026-07-10T09:19:24+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Itthon: Orbán Viktort csütörtök reggel lefotózták a Sportkórházban",
+          "source": "| hvg.hu",
+          "url": "https://hvg.hu/itthon/20260710_orban-viktor-sportkorhaz-panyi-szabolcs-foto",
+          "date": "2026-07-10T09:03:38+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Keményen ráfázhat a Fidesz, ha meglépi ezt a döntést",
+          "source": "ORIGO",
+          "url": "https://www.origo.hu/belpol/2026/07/fidesz-parlament-bojkott-tisza-magyar-peter",
+          "date": "2026-07-10T09:02:01+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "„Nagyon sok öngól volt a tegnapi tüntetésen”",
+          "source": "atv.hu",
+          "url": "https://www.atv.hu/videok/nagyon-sok-ongol-volt-a-tegnapi-tuntetesen/",
+          "date": "2026-07-10T08:50:30+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Did overpriced contracts help Fidesz-close figures?",
+          "source": "Daily News Hungary",
+          "url": "https://dailynewshungary.com/overpriced-contracts-fidesz-close-figures/",
+          "date": "2026-07-10T08:44:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Fidesz concerned for the rule of law in Hungary, protests against amendment of Fundamental Law",
+          "source": "Telex",
+          "url": "https://telex.hu/english/2026/07/10/fidesz-concerned-for-the-rule-of-law-in-hungary-protests-against-amendment-of-fundamental-law",
+          "date": "2026-07-10T08:43:17+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Anti-democratic actors consolidate power: Orbán converts elections into constitutional control",
+          "source": "Lowy Institute",
+          "url": "https://www.lowyinstitute.org/publications/democratic-erosion-report/anti-democratic-actors-consolidate-power-orban-converts-elections-into-constitutional-control",
+          "date": "2026-07-10T08:32:37+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "ENAC, niente proroga per Di Palma, Salvini spinge per il commissario",
+          "source": "Policy Maker",
+          "url": "https://www.policymakermag.it/primo-piano/enac-niente-proroga-per-di-palma-salvini-spinge-per-il-commissario/",
+          "date": "2026-07-10T08:31:32+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Sulyok Tamás elmozdítása ellen tüntetett a Fidesz, Orbán Viktor nem volt ott",
+          "source": "Transtelex",
+          "url": "https://transtelex.ro/kulfold/2026/07/10/stop-onkeny-fidesz-tuntetes-sulyok",
+          "date": "2026-07-10T08:29:18+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Elhatárolódott a főegyházmegye a Fidesz tüntetésén felszólaló plébánostól",
+          "source": "24.hu",
+          "url": "https://24.hu/belfold/2026/07/10/osztie-zoltan-tuntetes-beszed-fidesz-egyhaz/",
+          "date": "2026-07-10T08:24:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Az Orbánt támogató Osztie Zoltán atya nem a főegyházmegye engedélyével lépett fel a Fidesz tüntetésén",
+          "source": "Magyar Hang",
+          "url": "https://hang.hu/belfold/az-orbant-tamogato-osztie-zoltan-atya-nem-a-foegyhazmegye-engedelyevel-lepett-fel-a-fidesz-tuntetesen-190434",
+          "date": "2026-07-10T08:20:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Újabb tiszás ígéret landolt a kukában: hiába ígérte Magyar Péter, nem lesz 0% minden gyógyszer áfája",
+          "source": "Cs3.hu",
+          "url": "https://cs3.hu/2026/07/10/ujabb-tiszas-igeret-landolt-a-kukaban-hiaba-igerte-magyar-peter-nem-lesz-0-minden-gyogyszer-afaja/",
+          "date": "2026-07-10T08:08:29+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Donald Trump ‘Embarrassed’ Over Last-Minute Air Force One Swap",
+          "source": "The Daily Beast",
+          "url": "https://www.thedailybeast.com/donald-trump-embarrassed-over-last-minute-air-force-one-swap/",
+          "date": "2026-07-10T07:59:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Thousands Protest Against President’s Planned Removal and \"TISZA Dictatorship\"",
+          "source": "Hungary Today",
+          "url": "https://hungarytoday.hu/thousands-protest-against-presidents-removal-and-tisza-dictatorship/",
+          "date": "2026-07-10T07:51:12+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Awantura na miesięcznicy smoleńskiej. Kaczyński groził policjantom",
+          "source": "Gazeta",
+          "url": "https://wiadomosci.gazeta.pl/polityka/7,198012,32906008,awantura-na-miesiecznicy-smolenskiej-kaczynski-grozil-policjantom.html",
+          "date": "2026-07-10T07:49:07+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Itthon: A magyarok közel kétharmada elégedett a Tisza-kormánnyal",
+          "source": "| hvg.hu",
+          "url": "https://hvg.hu/itthon/20260710_magyar-peter-kormany-elegedettseg-kozvelemeny-kutatas-idea-intezet",
+          "date": "2026-07-10T07:28:14+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "IDEA: egyelőre töretlen a TISZA-kormány iránti bizalom",
+          "source": "Mfor.hu",
+          "url": "https://mfor.hu/cikkek/kozelet/idea-egyelore-toretlen-a-tisza-kormany-iranti-bizalom.html",
+          "date": "2026-07-10T07:22:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Orbán’s Fidesz rallies at presidential palace against plan to remove Sulyok",
+          "source": "Brussels Signal",
+          "url": "https://brusselssignal.eu/2026/07/orbans-fidesz-rallies-at-presidential-palace-against-plan-to-remove-sulyok/",
+          "date": "2026-07-10T07:11:24+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "IDEA: A választók majdnem kétharmada elégedett a Tisza-kormány teljesítményével",
+          "source": "Magyar Hang",
+          "url": "https://hang.hu/belfold/idea-a-valasztok-majdnem-ketharmada-elegedett-a-tisza-kormany-teljesitmenyevel-190429",
+          "date": "2026-07-10T07:05:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "„A Fidesz nagyon puha, így ezt a szemét bandát nem fogja tudni eltávolítani” – az önkény ellen tüntetőknek csak a jogállam és Orbán Viktor hiányzik",
+          "source": "| hvg.hu",
+          "url": "https://hvg.hu/itthon/20260710_fidesz-tuntetes-video-stop-onkeny-sandor-palota-sulyok-tamas-ebx",
+          "date": "2026-07-10T07:02:14+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Én most érzem azt, hogy veszélyben van a sajtószabadság, lekapcsolták a Kossuth rádiót",
+          "source": "Telex",
+          "url": "https://telex.hu/video/2026/07/10/fidesz-tuntetes-stop-onkeny-sulyok-tamas-tisza-part-alkotmanymodositas",
+          "date": "2026-07-10T06:53:17+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Fidesz stages first major rally in opposition against Tisza government's constitutional overhaul",
+          "source": "IntelliNews",
+          "url": "https://www.intellinews.com/fidesz-stages-first-major-rally-in-opposition-against-tisza-government-s-constitutional-overhaul-453891/?source=hungary",
+          "date": "2026-07-10T06:52:16+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Ennyiért szerződött Balásy Gyula cége arra a BL-döntőre, ahol végül a Tisza-kormány rendezte az alvállalkozók felé fennálló 300 milliós tartozást",
+          "source": "Forbes.hu",
+          "url": "https://forbes.hu/uzlet/ennyiert-szerzodott-balasy-gyula-cege-arra-a-bl-dontore-ahol-vegul-a-tisza-kormany-rendezte-az-alvallalkozok-fele-fennallo-300-millios-tartozast/",
+          "date": "2026-07-10T06:42:36+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "IDEA: Nagyon optimisták lettek a magyarok a választások óta",
+          "source": "24.hu",
+          "url": "https://24.hu/belfold/2026/07/10/idea-kozvelemeny-kutatas-optimizmus/",
+          "date": "2026-07-10T06:42:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Itthon: Bloomberg: Orbán Viktor csökkenő befolyásáról árulkodik a csütörtöki tüntetés",
+          "source": "| hvg.hu",
+          "url": "https://hvg.hu/itthon/20260710_bloomberg-orban-viktor-fidesz-stop-onkeny-tuntetes-sandor-palota",
+          "date": "2026-07-10T06:37:44+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Tisza-kormány: ma dől el az Uniós pénzek sorsa",
+          "source": "Portfolio.hu",
+          "url": "https://www.portfolio.hu/gazdasag/20260710/tisza-kormany-ma-dol-el-az-unios-penzek-sorsa-848734",
+          "date": "2026-07-10T06:29:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "El diario de Amilibia: ¿Pacto o cita de \"First Dates\"?",
+          "source": "La Razón",
+          "url": "https://www.larazon.es/gente/poder/diario-amilibia-pacto-cita-first-dates_202607106a5085bd772f745d2c3e3f50.html",
+          "date": "2026-07-10T05:40:13+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Megmagyarázta a Fidesz, miért nem ment el Orbán Viktor a tegnapi tüntetésre",
+          "source": "Népszava",
+          "url": "https://nepszava.hu/3328635_orban-viktor-tuntetes-sulyok-tamas-havasi-bertalan",
+          "date": "2026-07-10T05:24:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Trabajadores de Canal Sur celebran la investigación de Antifraude a Zancajo: \"A ver si meten mano a la criatura\"",
+          "source": "Elplural.com",
+          "url": "https://www.elplural.com/extratele/trabajadores-canal-sur-celebran-investigacion-antifraude-zancajo-ver-si-meten-mano-criatura_395191102",
+          "date": "2026-07-10T05:09:37+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Orbán Viktor azért nem ment el tüntetni, hogy ne vigye el a fókuszt",
+          "source": "444",
+          "url": "https://444.hu/2026/07/10/orban-viktor-azert-nem-ment-el-tuntetni-hogy-ne-vigye-el-a-fokuszt",
+          "date": "2026-07-10T04:48:47+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Kiderült, miért nem volt ott Orbán Viktor a Fidesz tüntetésén",
+          "source": "24.hu",
+          "url": "https://24.hu/belfold/2026/07/10/orban-viktor-fidesz-tuntetes-sandor-palota-ader-janos-breaking/",
+          "date": "2026-07-10T04:18:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "\"Nem jó, ha az a felfogás eluralkodik, hogy a győztes bármit megtehet\" – megtartotta első kormányellenes tüntetését a Fidesz",
+          "source": "24.hu",
+          "url": "https://24.hu/belfold/2026/07/10/sulyok-tamas-tisza-part-magyar-peter-fidesz-tuntetes-video/",
+          "date": "2026-07-10T03:57:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Megérkezett a magyarázat arra, miért nem ment el Orbán Viktor a tüntetésre",
+          "source": "Telex",
+          "url": "https://telex.hu/belfold/2026/07/10/orban-viktor-sulyok-tamas-tuntetes",
+          "date": "2026-07-10T03:37:15+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Áder János szórakozott professzorként próbálta feltüzelni a tüntetőket, de ennél sokkal súlyosabb problémákkal is szembe kell néznie a Fidesznek",
+          "source": "| hvg.hu",
+          "url": "https://hvg.hu/itthon/20260710_tuntetes-sandor-palota-ader-janos-szorakozott-professzor-fidesz-sulyok-tamas-elemzes",
+          "date": "2026-07-10T03:29:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Thousands protest in Budapest in defense of President Tamas Sujok ᐉ News from Fakti.bg - World",
+          "source": "Fakti.bg",
+          "url": "https://fakti.bg/en/world/1066604-thousands-protest-in-budapest-in-defense-of-president-tamas-sujok",
+          "date": "2026-07-10T02:51:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Economist Robert Reich Slams Trump Administration Move to Roll Back Airline Price Rules, Says Flying Could Get Worse: 'Yet Another Way...'",
+          "source": "Yahoo",
+          "url": "https://www.yahoo.com/news/politics/articles/economist-robert-reich-slams-trump-023105508.html",
+          "date": "2026-07-10T02:31:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "A Fidesz nem hagyja, hű, de nem hagyja a Fidesz!",
+          "source": "444",
+          "url": "https://444.hu/2026/07/10/a-fidesz-nem-hagyja-hu-de-nem-hagyja-a-fidesz",
+          "date": "2026-07-09T22:37:35+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "“Vannacci è molto efficace Meloni valuti un accordo”",
+          "source": "Il Fatto Quotidiano",
+          "url": "https://www.ilfattoquotidiano.it/in-edicola/articoli/2026/07/10/vannacci-e-molto-efficace-meloni-valuti-un-accordo/8444475/",
+          "date": "2026-07-09T22:01:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "„A magyar demokrácia végét jelenti” – Így értékelik a Sándor-palota előtti Fidesz-tüntetés megszólalói a Tisza-kormány terveit",
+          "source": "Blikk",
+          "url": "https://www.blikk.hu/politika/magyar-politika/tuntetes-alkotmany-modositas-sandor-palota-fidesz/mntz9dy",
+          "date": "2026-07-09T20:23:45+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "„Orbán Viktornak nem az a dolga, hogy ide jöjjön!” – Testen kívüli élmény volt a Fidesz tüntetése, a fiatalok csak röhögni mentek",
+          "source": "Népszava",
+          "url": "https://nepszava.hu/3328629_fidesz-tuntetes-sandor-palota-orban-viktor-fidesz-riport",
+          "date": "2026-07-09T19:40:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Az államfő elmozdítása ellen tüntettek a Fidesz és a KDNP szervezésében a Sándor-palotánál",
+          "source": "Ma7",
+          "url": "https://ma7.sk/nagyvilag/az-allamfo-elmozditasa-ellen-tuntettek-a-fidesz-es-a-kdnp-szervezeseben-a-sandor",
+          "date": "2026-07-09T19:27:19+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "A Sándor-palotánál tüntetett a Fidesz és a KDNP",
+          "source": "Portfolio.hu",
+          "url": "https://www.portfolio.hu/percrol-percre/848508/a-sandor-palotanal-tuntetett-a-fidesz-es-a-kdnp-1043768",
+          "date": "2026-07-09T19:25:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Önkény, ima, lemondás – Galéria a Fidesz tüntetéséről",
+          "source": "Népszava",
+          "url": "https://nepszava.hu/3328627_onkeny-ima-lemondas-galeria-a-fidesz-tunteteserol",
+          "date": "2026-07-09T19:20:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Fidesz holds protest in Budapest against Tisza Party’s removal of president",
+          "source": "Daily News Hungary",
+          "url": "https://dailynewshungary.com/fidesz-kdnp-protest-tisza-party-president/",
+          "date": "2026-07-09T19:14:35+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Szűcs Gábor: Sokan vannak az országban, akiknek nem tetszik Magyar Péter",
+          "source": "Telex",
+          "url": "https://telex.hu/belfold/2026/07/09/szucs-gabor-sokan-vannak-az-orszagban-akiknek-nem-tetszik-magyar-peter",
+          "date": "2026-07-09T19:03:24+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "A jogállamért tüntetett a Fidesz a budai Várban, Orbán Viktor nem volt ott",
+          "source": "Telex",
+          "url": "https://telex.hu/belfold/2026/07/09/fidesz-stop-onkeny-tuntetes-ader-janos",
+          "date": "2026-07-09T18:48:51+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Több mint 1,2 milliárd forintot osztott szét a Tisza-kormány az önkormányzatok között",
+          "source": "Népszava",
+          "url": "https://nepszava.hu/3328626_tisza-kormany-onkormanyzatok-1-2-milliard",
+          "date": "2026-07-09T18:27:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "rbb24 Abendschau",
+          "source": "ARD Mediathek",
+          "url": "https://www.ardmediathek.de/video/rbb24-abendschau/afd-hat-sich-zur-fraktionsklausur-getroffen/rbb/Y3JpZDovL3JiYl9hNzA0OTRkNi05ZmI3LTQ5NmYtYTVjMi1lZjg2MDQ5OTRiNjhfcHVibGljYXRpb24",
+          "date": "2026-07-09T18:24:34+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Tanács Zoltán: Gyerekkoromban kinevettük a hanyatló Kádár-rendszert, most a Fidesz is olyanná válik, mint az MSZMP",
+          "source": "Telex",
+          "url": "https://telex.hu/belfold/2026/07/09/tanacs-zoltan-csalodott-fidesz-orban-viktor-hos-mszmp",
+          "date": "2026-07-09T17:55:26+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Magyar Péter számon kérte Áder Jánost, azonnal jött a válasz: „Találkozunk a bíróságon”",
+          "source": "atv.hu",
+          "url": "https://www.atv.hu/videok/magyar-peter-szamon-kerte-ader-janost-azonnal-jott-a-valasz-talalkozunk-a-birosagon/",
+          "date": "2026-07-09T17:48:51+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Går til frontalangrep på Listhaug: – Kortslutning",
+          "source": "Nettavisen",
+          "url": "https://www.nettavisen.no/okonomi/gar-til-frontalangrep-pa-listhaug-kortslutning/s/5-95-3138773",
+          "date": "2026-07-09T17:47:43+00:00",
+          "category": "norway"
+        },
+        {
+          "title": "A köztársasági elnök leváltása ellen tűntet a Fidesz, Áder János az alkotmányossáh védelmében beszél",
+          "source": "Euronews.com",
+          "url": "https://hu.euronews.com/my-europe/2026/07/09/a-koztarsasagi-elnok-levaltasa-ellen-tuntet-a-fidesz-ader-janos-az-alkotmanyossah-vedelmeb",
+          "date": "2026-07-09T17:21:04+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Videók. Orbán Viktor nélkül tűntet a Fidesz a demokrácia védelmében",
+          "source": "Euronews.com",
+          "url": "https://hu.euronews.com/video/2026/07/09/a-koztarsasagi-elnok-levaltasa-ellen-tuntet-a-fidesz-ader-janos-az-alkotmanyossah-vedelmeb",
+          "date": "2026-07-09T17:21:04+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Tóth Elizabeth: Magyar Péter elárulta a magyar érdekeket, ígérete ellenére rombolásba kezdett",
+          "source": "HírTv",
+          "url": "https://hirtv.origo.hu/ahirtvhirei/2026/07/toth-elizabeth-magyar-peter-elarulta-a-magyar-erdekeket-igerete-ellenere-rombolasba-kezdett",
+          "date": "2026-07-09T17:17:16+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Ennyien mentek ki a Fidesz mai tüntetésére",
+          "source": "Nyugat",
+          "url": "https://www.nyugat.hu/cikk/ennyien_mentek_ki_fidesz_mai_tuntetesere",
+          "date": "2026-07-09T17:06:07+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Osztie Zoltán: Imádkozunk Orbánért és Magyar Péter megtéréséért",
+          "source": "24.hu",
+          "url": "https://24.hu/belfold/2026/07/09/osztie-zoltan-imadkozunk-orbanert-es-magyar-peter-megtereseert/",
+          "date": "2026-07-09T17:03:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Videó: Ezért szervezett tüntetést a Fidesz a Sándor-palota elé",
+          "source": "HírTv",
+          "url": "https://hirtv.origo.hu/video/ezert-szervezett-tuntetest-a-fidesz-a-sandor-palota-ele",
+          "date": "2026-07-09T17:02:34+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Magyar Péter hallgatta el a Magyar Rádiót",
+          "source": "24.hu",
+          "url": "https://24.hu/belfold/2026/07/09/magyar-peter-hallgatta-el-a-magyar-radiot/",
+          "date": "2026-07-09T17:02:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Mallorca exige, a petición de Vox, una tarifa plana para residentes en los vuelos con la Península",
+          "source": "El Debate",
+          "url": "https://www.eldebate.com/espana/baleares/20260709/mallorca-pide-peticion-vox-tarifa-plana-residentes-vuelos-peninsula_438025_amp.html",
+          "date": "2026-07-09T16:40:58+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "A tiszás „önkény” ellen tüntet a Fidesz a Sándor-palota előtt",
+          "source": "Magyar Hang",
+          "url": "https://hang.hu/belfold/tuntetes-190412",
+          "date": "2026-07-09T16:33:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "A Tisza EP-képviselőcsoportja a gyermekek védelméről hozott fontos döntésről számolt be",
+          "source": "atv.hu",
+          "url": "https://www.atv.hu/kulfold/20260709/tisza-ep-gyermekek-vedelme-dontes/",
+          "date": "2026-07-09T16:18:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Zmiana na czele ważnej Izby Sądu Najwyższego. Karol Nawrocki wskazał nową prezes",
+          "source": "strefabiznesu.pl",
+          "url": "https://strefabiznesu.pl/zmiana-na-czele-waznej-izby-sadu-najwyzszego-karol-nawrocki-wskazal-nowa-prezes/ar/c3p2-29168497",
+          "date": "2026-07-09T16:17:35+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Szemmel láthatóan van érdeklődés a Fidesz-KDNP tüntetésére",
+          "source": "24.hu",
+          "url": "https://24.hu/belfold/2026/07/09/szemmel-lathatoan-van-erdeklodes-a-fidesz-kdnp-tuntetesere/",
+          "date": "2026-07-09T16:12:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Szűcs Gábor: Sokan nem értenek egyet Magyar Péterrel",
+          "source": "24.hu",
+          "url": "https://24.hu/belfold/2026/07/09/szucs-gabor-sokan-nem-ertenek-egyet-magyar-peterrel/",
+          "date": "2026-07-09T16:10:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Élet+Stílus: Magyar Péter új hashtaggel figurázza ki a Fidesz önkényezését",
+          "source": "| hvg.hu",
+          "url": "https://hvg.hu/elet/20260709_magyar-peter-ader-janos-onkeny-stop-orkeny-hashtag-fidesz-tuntetes",
+          "date": "2026-07-09T16:09:14+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Hogy jutottunk el odáig, hogy a fideszesek tüntetnek a jogállamiságért?",
+          "source": "24.hu",
+          "url": "https://24.hu/belfold/2026/07/09/hogy-jutottunk-el-odaig-hogy-a-fideszesek-tuntetnek-a-jogallamisagert/",
+          "date": "2026-07-09T16:08:36+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Magyar Péter kapott egy pisztolyt a török elnöktől",
+          "source": "Népszava",
+          "url": "https://nepszava.hu/3328613_magyar-peter-recep-tayyip-erdogan-nato-csucs-pisztoly",
+          "date": "2026-07-09T16:07:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Zúgott a „mocskos Tisza”, a „nem félünk” és a „hazaáruló” – ilyen volt a Fidesz tüntetése a Sándor-palota előtt",
+          "source": "| hvg.hu",
+          "url": "https://hvg.hu/itthon/20260709_tuntetes-sulyok-tamas-ader-janos-sandor-palota",
+          "date": "2026-07-09T15:58:37+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Az alkotmányosság felszámolása ellen tüntet a Fidesz-KDNP",
+          "source": "24.hu",
+          "url": "https://24.hu/belfold/2026/07/09/az-alkotmanyossag-felszamolasa-ellen-tuntet-a-fidesz-kdnp/",
+          "date": "2026-07-09T15:56:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Először tüntet hivatalosan a Fidesz a parlamenti választás óta, egyelőre nem világos, Orbán Viktor veszi-e a fáradságot a megjelenéshez",
+          "source": "Népszava",
+          "url": "https://nepszava.hu/3328618_fidesz-tuntetes-alkotmanymodositas-sandor-palota",
+          "date": "2026-07-09T15:55:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Az alkotmányosság felszámolása ellen tüntet a Fidesz-KDNP a Sándor-palotánál",
+          "source": "24.hu",
+          "url": "https://24.hu/belfold/2026/07/09/tuntetes-fidesz-kdnp-sandor-palota-elo-kozvetites/",
+          "date": "2026-07-09T15:48:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "A kormány és a Tisza-frakció nem lesz ott a Tusványoson, viszont tartanak egy hosszabb pihenőt",
+          "source": "Infostart",
+          "url": "https://infostart.hu/belfold/2026/07/09/a-kormany-es-a-tisza-frakcio-nem-lesz-ott-a-tusvanyoson-viszont-tartanak-egy-hosszabb-pihenot",
+          "date": "2026-07-09T15:42:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Öt feljelentést tett a Fidesz-kormány ügyei miatt a Magyar-kabinet",
+          "source": "Kontroll",
+          "url": "https://kontroll.hu/cikk/belfold/2026/07/09/oet-feljelentest-tett-a-fidesz-kormany-uegyei-miatt-a-magyar-kabinet",
+          "date": "2026-07-09T15:26:51+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "A Tisza-kormány feljelentést tesz a fekete csuklyások és tízmilliárdos túlárazások miatt",
+          "source": "Klubrádió",
+          "url": "https://www.klubradio.hu/hirek/a-tisza-kormany-feljelentest-tesz-fekete-csuklyasok-es-tizmilliardos-tularazasok-miatt-162181",
+          "date": "2026-07-09T15:24:54+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Takács Pétert a Tisza megfosztotta egy fontos déli rutinjától, pedig ehhez még a komcsiknak sem volt merszük",
+          "source": "| hvg.hu",
+          "url": "https://hvg.hu/itthon/20260709_takacs-peter-kossuth-radio-deli-harangszo-panasz-komcsik-tisza",
+          "date": "2026-07-09T15:04:06+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Különös ajándék: Magyar Péter névre szóló pisztolyt és töltényeket kapott Erdogantól a NATO-csúcson",
+          "source": "Blikk",
+          "url": "https://www.blikk.hu/politika/magyar-politika/magyar-peter-erdogan-nato-csucs-ajandek-pisztoly/s087lls",
+          "date": "2026-07-09T14:34:10+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Itthon: Magyar Péter megmutatta az Erdogantól kapott pisztolyát – fotó",
+          "source": "| hvg.hu",
+          "url": "https://hvg.hu/itthon/20260709_nato-csucs-torokorszag-recep-tayyip-erdogan-ajandek-psztoly-revolver-magyar-peter",
+          "date": "2026-07-09T14:26:16+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Egy dokumentumban személyi titkárként, fidesz.hu-ra végződő emailcímmel szerepel az egyik ember, aki rendre feltűnt Orbán Viktor fórumain",
+          "source": "Telex",
+          "url": "https://telex.hu/belfold/2026/07/09/egy-dokumentumban-szemelyi-titkarkent-fidesz-hu-ra-vegzodo-emailcimmel-szerepel-az-egyik-ember-aki-rendre-feltunt-orban-viktor-forumain",
+          "date": "2026-07-09T14:14:21+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Magyar Péter megmutatta pisztolyát",
+          "source": "Telex",
+          "url": "https://telex.hu/belfold/2026/07/09/magyar-peter-megmutatta-a-pisztolyat",
+          "date": "2026-07-09T14:07:13+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Magyar Péter pisztolyt és töltényeket kapott ajándékba Erdogantól",
+          "source": "Hetek",
+          "url": "https://www.hetek.hu/cikkek/online/magyar-peter-pisztolyt-es-toltenyeket-kapott-ajandekba-erdogantol",
+          "date": "2026-07-09T14:07:06+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Magyar Péter megmutatta a török elnöktől ajándékba kapott revolverét",
+          "source": "24.hu",
+          "url": "https://24.hu/belfold/2026/07/09/magyar-peter-nato-csucs-erdogan-ajandek-revolver/",
+          "date": "2026-07-09T14:03:03+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Nevére gravírozott revolvert kapott Magyar Péter a török elnöktől",
+          "source": "Nyugat",
+          "url": "https://www.nyugat.hu/cikk/nevere_gravirozott_revolvert_kapott_magyar_peter_a",
+          "date": "2026-07-09T13:56:37+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Magyar Péter kapott Erdoğantól egy Magnumot",
+          "source": "444",
+          "url": "https://444.hu/2026/07/09/magyar-peter-kapott-erodgantol-egy-magnumot",
+          "date": "2026-07-09T13:49:25+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Magyar Péter kapott Erodğantól egy Magnumot",
+          "source": "444",
+          "url": "https://444.hu/2026/07/09/magyar-peter-kapott-erodgantol-egy-magnumot?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_syndication",
+          "date": "2026-07-09T13:49:25+00:00",
+          "category": "hungary"
+        }
+      ],
+      "first_seen": "2026-07-10T15:12:59+00:00",
+      "last_seen": "2026-07-10T15:12:59+00:00"
     }
   ]
 }
