@@ -1,229 +1,193 @@
 {
-  "updated_at": "2026-07-11T14:14:50+00:00",
+  "updated_at": "2026-07-12T04:19:51+00:00",
   "lookback_hours": 48,
   "model": "Mistral Large",
   "status": "ok",
   "themes": [
     {
-      "id": "far-right-leaders-face-legal-and-political-challenges",
-      "title": "Far-right leaders face legal and political challenges",
-      "blurb": "Across multiple countries, far-right leaders are confronting significant legal and political hurdles. In France, Marine Le Pen's legal troubles continue as she appeals her conviction while running for president. In Poland, PiS faces internal divisions and public backlash over historical commemorations. Hungary's Fidesz is protesting constitutional changes that threaten its power.",
+      "id": "iran-threatens-western-leaders-amid-escalating-tensions",
+      "title": "Iran threatens Western leaders amid escalating tensions",
+      "blurb": "Iran's state media published a 'revenge list' targeting Western leaders, including Italy's Giorgia Meloni and former U.S. President Donald Trump, following the death of Ayatollah Khamenei. This has sparked diplomatic backlash and heightened security concerns across multiple countries.",
       "convergence": 5,
       "countries": [
         {
+          "name": "🇮🇹 Fratelli d'Italia / Lega",
+          "note": "Meloni listed on Iranian 'revenge list'; Italian government condemns threats and expresses solidarity."
+        },
+        {
+          "name": "🇺🇸 MAGA / Trump",
+          "note": "Trump threatened retaliation after being listed; U.S. strikes Iran in response to ship attacks."
+        },
+        {
           "name": "🇫🇷 Rassemblement National",
-          "note": "Marine Le Pen faces legal challenges and appeals her conviction while running for president in 2027."
-        },
-        {
-          "name": "🇵🇱 Prawo i Sprawiedliwość",
-          "note": "PiS faces internal divisions and public backlash over historical commemorations and police confrontations."
-        },
-        {
-          "name": "🇭🇺 Fidesz / Tisza",
-          "note": "Fidesz protests constitutional changes that threaten its power and influence."
+          "note": "Marine Le Pen indirectly referenced in Iranian threats; French government monitors situation."
         },
         {
           "name": "🇬🇧 Reform UK",
-          "note": "Nigel Farage faces scrutiny over undeclared donations and resigns to trigger a by-election."
+          "note": "UK leaders, including Starmer, listed; government issues security advisories."
         },
         {
           "name": "🇪🇸 Vox",
-          "note": "Vox faces challenges in regional coalitions and legal disputes over policy implementations."
+          "note": "Spanish government condemns Iranian threats; Vox demands stronger stance."
         }
       ],
       "signals": [
-        "legal troubles",
-        "political backlash",
-        "internal divisions",
-        "public protests",
-        "electoral challenges"
+        "shared external threat",
+        "diplomatic solidarity",
+        "military escalation",
+        "transnational security concerns"
       ],
-      "article_count": 200,
+      "article_count": 50,
       "refs": [
         {
-          "title": "De Toto Riina à Marine Le Pen, ces privilèges conquis par les délinquants",
-          "source": "Le Club de Mediapart",
-          "url": "https://blogs.mediapart.fr/khaled-satour/blog/110726/de-toto-riina-marine-le-pen-ces-privileges-conquis-par-les-delinquants",
-          "date": "2026-07-11T11:47:05+00:00",
-          "category": "france"
+          "title": "Mojtaba minaccia vendetta per il padre, anche Meloni nella lista nera",
+          "source": "ANSA",
+          "url": "https://www.ansa.it/sito/notizie/mondo/2026/07/11/mojtaba-minaccia-vendetta-per-il-padre-anche-meloni-nella-lista-nera_f6fb4923-2d40-485d-9852-082b1159c51e.html",
+          "date": "2026-07-11T19:39:00+00:00",
+          "category": "italy"
         },
         {
-          "title": "Les métiers que Marine Le Pen ne peut plus exercer selon une avocate",
-          "source": "Le Dauphiné Libéré",
-          "url": "https://www.ledauphine.com/videos/les-metiers-que-marine-le-pen-ne-peut-plus-exercer-selon-une-avocate-3vzluxu?playlist=qls5zz",
-          "date": "2026-07-11T10:50:44+00:00",
-          "category": "france"
+          "title": "Tajani, 'massima solidarietà a Meloni, che certamente non si fa intimidire'",
+          "source": "ANSA",
+          "url": "https://www.ansa.it/sito/notizie/mondo/mediooriente/2026/07/11/tajani-massima-solidarieta-a-meloni-che-certamente-non-si-fa-intimidire_c289455e-0d47-4667-bdba-a92a3a0d89c4.html",
+          "date": "2026-07-11T19:18:00+00:00",
+          "category": "italy"
         },
         {
-          "title": "Var : Forte mobilisation pour Marine Le Pen en 3e circonscription",
-          "source": "Presse Agence",
-          "url": "https://presseagence.fr/var-presidentielle-forte-mobilisation-militante-dans-la-3%E1%B5%89-circonscription/",
-          "date": "2026-07-11T08:32:17+00:00",
-          "category": "france"
+          "title": "Mojtaba minaccia vendetta per il padre, Trump e Meloni nella lista nera",
+          "source": "ANSA",
+          "url": "https://www.ansa.it/sito/notizie/mondo/2026/07/11/mojtaba-minaccia-vendetta-per-il-padre-trump-e-meloni-nella-lista-nera_f6fb4923-2d40-485d-9852-082b1159c51e.html",
+          "date": "2026-07-11T18:34:15+00:00",
+          "category": "italy"
         },
         {
-          "title": "Edito. Le Pen-Bardella : un ticket choc ? - Nice-Matin",
-          "source": "",
-          "url": "https://www.nicematin.com/societe/debat/edito/edito-le-pen-bardella-un-ticket-choc-10688709",
-          "date": "2026-07-11T08:10:07+00:00",
-          "category": "france"
+          "title": "Anche Meloni nella lista nera dell'Iran, che richiude Hormuz e colpisce le navi",
+          "source": "ANSA",
+          "url": "https://www.ansa.it/amp/sito/notizie/mondo/2026/07/11/quotidiano-iran-meloni-nella-lista-nera-dei-responsabili-della-morte_f6fb4923-2d40-485d-9852-082b1159c51e.html",
+          "date": "2026-07-11T17:30:33+00:00",
+          "category": "italy"
         },
         {
-          "title": "‘Politicians have always been schemers’: upheld conviction fails to dent Le Pen’s popularity",
-          "source": "The Guardian",
-          "url": "https://www.theguardian.com/world/2026/jul/11/upheld-conviction-le-pen-popularity-france",
-          "date": "2026-07-11T08:00:00+00:00",
-          "category": "france"
+          "title": "Magyar Péter: Sulyok Tamás januárban két napot töltött közpénzen abban az angol kisvárosban, ahol a lánya lakik",
+          "source": "Telex",
+          "url": "https://telex.hu/belfold/2026/07/11/magyar-peter-sulyok-tamas-utazas-facebook",
+          "date": "2026-07-11T13:02:47+00:00",
+          "category": "hungary"
         },
         {
-          "title": "Présidentielle 2027 : comment le RN se prépare à surmonter les accusations sur l'intégrité de Marine Le Pen durant la campagne ?",
-          "source": "Europe 1",
-          "url": "https://www.europe1.fr/politique/presidentielle-2027-comment-le-rn-se-prepare-a-surmonter-les-accusations-sur-lintegrite-de-marine-le-pen-durant-la-campagne-970287",
-          "date": "2026-07-11T05:05:00+00:00",
-          "category": "france"
-        },
-        {
-          "title": "L'Atelier politique - Edwige Diaz : «Nous sommes là pour sauver la France»",
-          "source": "RFI",
-          "url": "https://www.rfi.fr/fr/podcasts/l-atelier-politique/20260711-edwige-diaz-nous-sommes-l%C3%A0-pour-sauver-la-france",
-          "date": "2026-07-11T05:00:18+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Le Pen's Conviction boosts her to front-runner status in France's Presidential race",
-          "source": "Escudo Digital",
-          "url": "https://www.escudodigital.com/en/geopolitics/le-pens-conviction-boosts-her-to-front-runner-status-in-frances-presidential-race.html",
-          "date": "2026-07-11T05:00:05+00:00",
-          "category": "france"
-        },
-        {
-          "title": "France's Far-Right Marine Le Pen is Entering the Election Fray—Ankle Monitor and All",
-          "source": "Air Mail",
-          "url": "https://airmail.news/issues/2026-7-11/the-view-from-here",
-          "date": "2026-07-11T02:03:44+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Pete Hegseth’s war on beards has deep roots",
-          "source": "The Times",
-          "url": "https://www.thetimes.com/us/american-politics/article/pete-hegseth-beard-policy-navy-army-q2rdpb2hf",
-          "date": "2026-07-10T22:45:44+00:00",
+          "title": "US Iran war update today: Donald Trump threatens Iran after calls for his assassination during Ayatollah Ali Khamenei's funeral",
+          "source": "ABC7 Bay Area",
+          "url": "https://abc7news.com/amp/post/us-iran-war-update-today-donald-trump-threatens-calls-assassination-during-ayatollah-ali-khameneis-funeral/19485436/",
+          "date": "2026-07-11T11:20:38+00:00",
           "category": "usa"
         },
         {
-          "title": "Marine Le Pen Cleared To Run For President After Public Funds Scandal",
-          "source": "AOL.com",
-          "url": "https://www.aol.com/articles/marine-le-pen-cleared-run-191808000.html",
-          "date": "2026-07-10T19:34:54+00:00",
-          "category": "france"
+          "title": "Trump threatens Iran after chants for his death erupted at Khamenei funeral",
+          "source": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/7/11/trump-threatens-iran-after-chants-for-his-death-erupted-at-khamenei-funeral",
+          "date": "2026-07-11T08:05:19+00:00",
+          "category": "usa"
         },
         {
-          "title": "Marine Le Pen vows to run in France’s 2027 presidential election despite fraud conviction",
-          "source": "AOL.com",
-          "url": "https://www.aol.com/articles/marine-le-pen-vows-remain-184224000.html",
-          "date": "2026-07-10T18:53:55+00:00",
-          "category": "france"
+          "title": "Donald Trump Lays Out His Own Assassination Revenge Fantasy",
+          "source": "The Daily Beast",
+          "url": "https://www.thedailybeast.com/donald-trump-lays-out-his-own-assassination-revenge-fantasy/",
+          "date": "2026-07-11T06:57:00+00:00",
+          "category": "usa"
         },
         {
-          "title": "Marine Le Pen candidate en 2027 : son site web volé, une rançon de 25.000 euros demandée",
-          "source": "Closer",
-          "url": "https://www.closermag.fr/politique/marine-le-pen-candidate-en-2027-son-site-web-vole-une-rancon-de-25-000-euros-demandee-3647303",
-          "date": "2026-07-10T18:02:12+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Le coup de main secret de Macron à Le Pen",
-          "source": "Le Média",
-          "url": "https://www.lemediatv.fr/emissions/2026/le-coup-de-main-secret-de-macron-a-le-pen-SHK4K5wvQyG_j49zm58qVQ",
+          "title": "What we know about Iran's apparent plot to assassinate President Trump",
+          "source": "CBS News",
+          "url": "https://www.cbsnews.com/video/what-we-know-about-irans-plot-to-assassinate-president-trump/",
           "date": "2026-07-10T18:00:00+00:00",
-          "category": "france"
+          "category": "usa"
         },
         {
-          "title": "Gabriel Attal opens his 2027 French campaign on probity as Marine Le Pen legal uncertainty shadows the race",
-          "source": "Ecostylia",
-          "url": "https://www.ecostylia.com/en/attal-le-pen-2027/",
-          "date": "2026-07-10T17:48:35+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Pour les lecteurs de Valeurs Actuelles, Marine Le Pen doit rester candidate",
-          "source": "Valeurs actuelles",
-          "url": "https://www.valeursactuelles.com/politique/presidentielle-2027-cest-la-candidate-qui-peut-faire-evoluer-notre-pays-pour-les-lecteurs-de-valeurs-actuelles-marine-le-pen-doit-rester-candidate",
-          "date": "2026-07-10T17:00:04+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Marine Le Pen souffrira-t-elle de sa condamnation pour détournement de fonds publics ? “Aux yeux de ses électeurs, elle n’est pas une politique ordinaire”",
-          "source": "Le Nouvel Obs",
-          "url": "https://www.nouvelobs.com/politique/20260710.OBS116567/marine-le-pen-souffrira-t-elle-de-sa-condamnation-pour-detournement-de-fonds-publics-aux-yeux-de-ses-electeurs-elle-n-est-pas-une-politique-ordinaire.html",
-          "date": "2026-07-10T16:00:03+00:00",
-          "category": "france"
-        },
-        {
-          "title": "With Marine Le Pen on the right and Defiant France on the left, French Jews face an impossible choice",
-          "source": "The Forward",
-          "url": "https://forward.com/opinion/837356/marine-le-pen-defiant-france-antisemitism-french-elections-jewish-vote/",
-          "date": "2026-07-10T14:44:42+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Marine Le Pen of France confirms 2027 presidential run despite embezzlement conviction",
-          "source": "Legit.ng",
-          "url": "https://www.legit.ng/world/1718646-marine-le-pen-france-confirms-2027-presidential-run-embezzlement-conviction/",
-          "date": "2026-07-10T14:44:38+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Condamnation de Marine Le Pen : le Conseil constitutionnel, l’autre étape sur la route de la présidentielle",
-          "source": "Public Sénat",
-          "url": "https://www.publicsenat.fr/actualites/politique/condamnation-de-marine-le-pen-le-conseil-constitutionnel-lautre-etape-sur-la-route-de-la-presidentielle",
-          "date": "2026-07-10T13:58:56+00:00",
-          "category": "france"
+          "title": "Trump tells The Post he’s ‘left instructions’ should Iran assassinate him: ‘Bomb them at levels’ never seen before",
+          "source": "New York Post",
+          "url": "https://nypost.com/2026/07/10/us-news/trump-tells-the-post-hes-left-instructions-should-iran-succeed-in-assassinating-its-no-1-target/",
+          "date": "2026-07-10T16:43:44+00:00",
+          "category": "usa"
         }
       ],
-      "first_seen": "2026-07-08T04:01:20+00:00",
-      "last_seen": "2026-07-11T14:14:50+00:00"
+      "first_seen": "2026-07-12T04:19:51+00:00",
+      "last_seen": "2026-07-12T04:19:51+00:00"
     },
     {
       "id": "right-wing-parties-push-anti-immigration-policies-in-europe",
       "title": "Right-wing parties push anti-immigration policies in Europe",
-      "blurb": "Anti-immigration policies are a central focus for right-wing parties across Europe. Germany's AfD proposes mandatory work for asylum seekers and stricter deportation rules. Italy's Lega and Fratelli d'Italia emphasize security and stricter immigration controls. Spain's Vox advocates for national priority in housing and social services, often targeting immigrant populations.",
+      "blurb": "Far-right and right-wing parties across Europe are intensifying their focus on anti-immigration policies, with parallel legislative efforts and public campaigns in Germany, Italy, Spain, and Scandinavia. These policies often emphasize stricter border controls, deportations, and cultural assimilation.",
       "convergence": 4,
       "countries": [
         {
           "name": "🇩🇪 Alternative für Deutschland",
-          "note": "AfD proposes mandatory work for asylum seekers and stricter deportation rules in its 100-day plan."
+          "note": "AfD unveils 100-day plan including mandatory work for asylum seekers and increased deportations."
         },
         {
           "name": "🇮🇹 Fratelli d'Italia / Lega",
-          "note": "Lega and Fratelli d'Italia emphasize security and stricter immigration controls, including deportations and integration policies."
+          "note": "Lega proposes ID cards for delivery riders and stricter immigration controls."
         },
         {
           "name": "🇪🇸 Vox",
-          "note": "Vox advocates for national priority in housing and social services, often targeting immigrant populations."
+          "note": "Vox demands deportation of undocumented migrants and stricter residency verification."
         },
         {
           "name": "🇳🇴 Fremskrittspartiet",
-          "note": "FrP opposes 'remigration' policies but prioritizes deportation of criminal foreigners."
+          "note": "Proposes stricter immigration policies and welfare cuts for non-citizens."
         },
         {
           "name": "🇸🇪 Sverigedemokraterna",
-          "note": "SD promotes stricter immigration policies and integration debates."
+          "note": "Advocates for preserving rural schools to maintain local infrastructure and limit immigration."
         }
       ],
       "signals": [
         "policy imitation",
+        "parallel legislative efforts",
         "shared framing",
-        "parallel elections",
-        "contagion of rhetoric"
+        "electoral positioning"
       ],
-      "article_count": 150,
+      "article_count": 45,
       "refs": [
         {
-          "title": "Bildungspolitik – Frontalangriff auf die Schule - nd-aktuell.de",
-          "source": "",
-          "url": "https://www.nd-aktuell.de/artikel/1201052.bildungspolitik-frontalangriff-auf-die-schule.html",
-          "date": "2026-07-11T11:42:43+00:00",
+          "title": "Neue Umfrage: AfD bleibt vorn – aber die Union holt auf",
+          "source": "Watson",
+          "url": "https://www.watson.ch/international/umfrage/338485000-neue-umfrage-afd-bleibt-vorn-aber-die-union-holt-auf",
+          "date": "2026-07-12T01:45:47+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Lega e FI: stop alla tassa sui pacchi fino al 2027",
+          "source": "Il Messaggero",
+          "url": "https://www.ilmessaggero.it/economia/lega_fi_stop_tassa_sui_pacchi_fino_al_2027-9645851.html",
+          "date": "2026-07-11T22:15:02+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Oficialismo. Karina Milei marca la cancha: Santilli negocia, pero la estrategia electoral no se toca",
+          "source": "La Voz del Interior",
+          "url": "https://www.lavoz.com.ar/politica/karina-milei-marca-cancha-santilli-negocia-estrategia-electoral-toca_0_TBhKawPrcy.html",
+          "date": "2026-07-11T20:36:12+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Zu freizügig gekleidet? Schwandorfer AfD-Kreisrat kritisiert Schülerinnen – FW fordern Rücktritt",
+          "source": "Mittelbayerische Zeitung",
+          "url": "https://www.mittelbayerische.de/21529766",
+          "date": "2026-07-11T17:00:31+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Migration, Rundfunk, Demokratieförderung AfD präsentiert 100-Tage-Plan für Sachsen-Anhalt",
+          "source": "Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/politik/migration-rundfunk-demokratieforderung-afd-prasentiert-100-tage-plan-fur-sachsen-anhalt-15829992.html",
+          "date": "2026-07-11T14:35:04+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "„Wir haben Geld für die ganze Welt, aber bekommen keine kostenlose Kita-Versorgung hin“",
+          "source": "WELT",
+          "url": "https://www.welt.de/videos/video6a5234da7932425e5583766b/afd-in-sachsen-anhalt-wir-haben-geld-fuer-die-ganze-welt-aber-bekommen-keine-kostenlose-kita-versorgung-hin.html",
+          "date": "2026-07-11T12:53:25+00:00",
           "category": "germany"
         },
         {
@@ -234,46 +198,11 @@
           "category": "germany"
         },
         {
-          "title": "100-Tage-Programm der AfD Sachsen-Anhalt: Partei bekräftigt Regierungsanspruch nach Landtagswahl",
-          "source": "Deutschlandfunk",
-          "url": "https://www.deutschlandfunk.de/100-tage-programm-der-afd-sachsen-anhalt-partei-bekraeftigt-regierungsanspruch-nach-landtagswahl-100.html",
-          "date": "2026-07-11T10:42:20+00:00",
+          "title": "AfD setzt auf Regierungswechsel: Siegmund präsentiert 100-Tage-Programm",
+          "source": "Berliner Zeitung",
+          "url": "https://www.berliner-zeitung.de/article/afd-legt-100-tage-programm-fuer-regierungsuebernahme-vor-10188658",
+          "date": "2026-07-11T09:52:55+00:00",
           "category": "germany"
-        },
-        {
-          "title": "Das will die AfD in Sachsen-Anhalt in 100 Tagen umsetzen",
-          "source": "WELT",
-          "url": "https://www.welt.de/regionales/sachsen-anhalt/article6a520e6d9b72e0389c4bfcb9/das-will-die-afd-in-sachsen-anhalt-in-100-tagen-umsetzen.html",
-          "date": "2026-07-11T09:38:41+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "AfD präsentiert 100-Tage-Plan für Sachsen-Anhalt",
-          "source": "WEB.DE",
-          "url": "https://web.de/magazine/politik/wahlen/landtagswahlen/sachsen-anhalt/wahl-sachsen-anhalt-afd-praesentiert-100-tage-plan-42492704",
-          "date": "2026-07-11T09:36:05+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Landtagswahl: Das will die AfD in Sachsen-Anhalt in 100 Tagen umsetzen",
-          "source": "DIE ZEIT",
-          "url": "https://www.zeit.de/news/2026-07/11/das-will-die-afd-in-sachsen-anhalt-in-100-tagen-umsetzen",
-          "date": "2026-07-11T09:34:14+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Landtagswahl - Das will die AfD in Sachsen-Anhalt in 100 Tagen umsetzen - Politik - SZ.de",
-          "source": "SZ.de",
-          "url": "https://www.sueddeutsche.de/politik/landtagswahl-das-will-die-afd-in-sachsen-anhalt-in-100-tagen-umsetzen-dpa.urn-newsml-dpa-com-20090101-260711-930-369332",
-          "date": "2026-07-11T09:34:14+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "VOX reclama \"deportación, reemigración y prioridad nacional\" tras el violento robo a una mujer de 80 años...",
-          "source": "gaceta.es",
-          "url": "https://gaceta.es/espana/vox-reclama-deportacion-reemigracion-y-prioridad-nacional-tras-el-violento-robo-a-una-mujer-de-80-anos-en-santiago-de-la-ribera-murcia-20260711-0906/",
-          "date": "2026-07-11T07:07:30+00:00",
-          "category": "spain"
         },
         {
           "title": "Vox quiere que la Policía Local vigile las restricciones al burka y el niqab en espacios públicos",
@@ -283,121 +212,199 @@
           "category": "spain"
         },
         {
-          "title": "Tiri a segno, la riforma Meloni facilita la diffusione delle armi",
-          "source": "Il Fatto Quotidiano",
-          "url": "https://www.ilfattoquotidiano.it/in-edicola/articoli/2026/07/11/tiri-a-segno-la-riforma-meloni-facilita-la-diffusione-delle-armi/8445425/",
-          "date": "2026-07-10T22:01:00+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "AfD Landtagswahl-Kampagne zur „blauen Wende“",
-          "source": "NDR.de",
-          "url": "https://www.ndr.de/fernsehen/sendungen/nordmagazin/afd-landtagswahl-kampagne-zur-blauen-wende,nordmagazin-12070.html",
-          "date": "2026-07-10T20:17:17+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Pino (VOX) pone en el foco a la fauna silvestre y apuesta por \"diezmarla\" para prevenir enfermedades y accidentes - Heraldo-Diario de Soria",
+          "title": "INSÄNDARE: Äldreomsorgen behöver fler medarbetare – inte tomma löften - Västerviks-Tidningen",
           "source": "",
-          "url": "https://www.heraldodiariodesoria.es/castilla-y-leon/260710/210500/pino-vox-pone-foco-fauna-silvestre-apuesta-diezmarla-prevenir-enfermedades-accidentes.html",
-          "date": "2026-07-10T16:29:30+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "AfD greift die Schulpflicht an – Bundesländer stellen sich demonstrativ davor",
-          "source": "News4teachers",
-          "url": "https://www.news4teachers.de/2026/07/afd-greift-die-schulpflicht-an-bundeslaender-stellen-sich-demonstrativ-davor/",
-          "date": "2026-07-10T15:27:41+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Grembiuli blu per tutti in una scuola primaria, la Lega insorge: “Maschi e femmine esistono a livello biologico e non si cancellano con un grembiule uguale per tutti”",
-          "source": "Orizzonte Scuola Notizie",
-          "url": "https://www.orizzontescuola.it/grembiuli-blu-per-tutti-in-una-scuola-primaria-la-lega-insorge-maschi-e-femmine-esistono-a-livello-biologico-e-non-si-cancellano-con-un-grembiule-uguale-per-tutti/",
-          "date": "2026-07-10T14:49:58+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "El PP y Vox tratan de frenar la reforma que busca que las ofensas a la Corona y a la religión no sean delito",
-          "source": "El Debate",
-          "url": "https://www.eldebate.com/espana/20260710/pp-vox-tratan-frenar-reforma-busca-ofensas-corona-religion-no-sean-delito_438274.html",
-          "date": "2026-07-10T14:10:40+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Schulpflicht in Deutschland: Länder stellen sich gegen Homeschooling-Pläne der AfD",
-          "source": "RP Online",
-          "url": "https://rp-online.de/politik/deutschland/homeschooling-in-deutschland-bundesrat-verteidigt-schulpflicht_aid-151302785",
-          "date": "2026-07-10T13:16:00+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Sevilla paraliza la licencia de obras de la nueva gran mezquita tras la petición de Vox",
-          "source": "El Periódico",
-          "url": "https://www.elperiodico.com/es/sociedad/20260710/sevilla-paraliza-licencia-obras-nueva-132332819",
-          "date": "2026-07-10T12:45:46+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Backlash as local Reform councillors vow to 'camp out' for Farage campaign 180 miles away",
-          "source": "Gloucestershire Live",
-          "url": "https://www.gloucestershirelive.co.uk/news/gloucester-news/backlash-local-reform-councillors-vow-11052153.amp",
-          "date": "2026-07-10T12:01:00+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Vox celebra la paralización del proyecto de la mezquita de Sevilla: \"No permitiremos la islamización de los barrios\"",
-          "source": "Europa Press",
-          "url": "https://www.europapress.es/andalucia/sevilla-00357/noticia-vox-celebra-paralizacion-proyecto-mezquita-sevilla-no-permitiremos-islamizacion-barrios-20260710132049.html",
-          "date": "2026-07-10T11:20:49+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox consigue paralizar la licencia para el proyecto de mezquita en el Polígono Sur",
-          "source": "El Español",
-          "url": "https://www.elespanol.com/sevilla/20260710/vox-consigue-paralizar-licencia-proyecto-mezquita-poligono-sur/1003744316915_0.html",
-          "date": "2026-07-10T09:42:00+00:00",
-          "category": "spain"
+          "url": "https://www.vt.se/insandare/artikel/aldreomsorgen-behover-fler-medarbetare-inte-tomma-loften/rky0voxj",
+          "date": "2026-07-11T01:00:00+00:00",
+          "category": "sweden"
         }
       ],
       "first_seen": "2026-07-08T04:01:20+00:00",
-      "last_seen": "2026-07-11T14:14:50+00:00"
+      "last_seen": "2026-07-12T04:19:51+00:00"
+    },
+    {
+      "id": "far-right-leaders-face-legal-and-political-challenges",
+      "title": "Far-right leaders face legal and political challenges",
+      "blurb": "Far-right leaders across Europe and the Americas are confronting legal battles, internal party conflicts, and declining public approval. These challenges are reshaping political landscapes and testing the resilience of far-right movements.",
+      "convergence": 4,
+      "countries": [
+        {
+          "name": "🇫🇷 Rassemblement National",
+          "note": "Marine Le Pen faces legal challenges over EU funds misuse but remains eligible for presidential run."
+        },
+        {
+          "name": "🇵🇱 Prawo i Sprawiedliwość",
+          "note": "PiS faces internal divisions and legal scrutiny over historical statements and party actions."
+        },
+        {
+          "name": "🇭🇺 Fidesz / Tisza",
+          "note": "Hungarian PM Péter Magyar faces backlash over constitutional amendments and corruption allegations."
+        },
+        {
+          "name": "🇬🇧 Reform UK",
+          "note": "Nigel Farage resigns amid financial scandal; party faces electoral challenges."
+        },
+        {
+          "name": "🇪🇸 Vox",
+          "note": "Vox faces internal disputes and legal challenges over historical commemorations."
+        },
+        {
+          "name": "🇦🇷 La Libertad Avanza",
+          "note": "Javier Milei faces legal challenges over academic work and declining approval ratings."
+        }
+      ],
+      "signals": [
+        "legal scrutiny",
+        "internal party conflicts",
+        "declining approval",
+        "electoral setbacks"
+      ],
+      "article_count": 40,
+      "refs": [
+        {
+          "title": "Marine Le Pen extends lead in French election poll after court ruling",
+          "source": "The Straits Times",
+          "url": "https://www.straitstimes.com/world/europe/marine-le-pen-extends-lead-in-french-election-poll-after-court-ruling",
+          "date": "2026-07-11T23:48:00+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Présidentielle 2027. Sondage Odoxa: Gabriel Attal pas sûr d’être au second tour / Marine Le Pen élue",
+          "source": "lecentrisme.com",
+          "url": "http://www.lecentrisme.com/2026/07/presidentielle-2027-sondage-odoxa.html",
+          "date": "2026-07-11T21:24:08+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Marine Le Pen ne voit pas sa candidature menacée par la justice",
+          "source": "bluewin.ch",
+          "url": "https://www.bluewin.ch/fr/infos/monde/marine-le-pen-ne-voit-pas-sa-candidature-menac-e-par-la-justice-li.3525205",
+          "date": "2026-07-11T19:49:00+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Présidentielle 2027. « Je suis éligible, je suis candidate » : Marine Le Pen juge « irréaliste » de penser sa candidature encore menacée par la justice",
+          "source": "Sud Ouest",
+          "url": "https://www.sudouest.fr/politique/marine-le-pen/presidentielle-2027-je-suis-eligible-je-suis-candidate-marine-le-pen-juge-irrealiste-de-penser-sa-candidature-encore-menacee-par-la-justice-29899622.php",
+          "date": "2026-07-11T19:26:08+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Au moins quatre raisons pour vomir Marine le Pen et son rassemblement national",
+          "source": "Le Club de Mediapart",
+          "url": "https://blogs.mediapart.fr/pierre-sassier/blog/110726/au-moins-quatre-raisons-pour-vomir-marine-le-pen-et-son-rassemblement-national",
+          "date": "2026-07-11T17:47:26+00:00",
+          "category": "france"
+        },
+        {
+          "title": "'The latest chapter in Le Pen's legal saga illustrates the intractable challenge of judging politicians'",
+          "source": "Le Monde.fr",
+          "url": "https://www.lemonde.fr/en/opinion/article/2026/07/11/the-latest-chapter-in-le-pen-s-legal-saga-illustrates-the-intractable-challenge-of-judging-politicians_6755376_23.html",
+          "date": "2026-07-11T15:00:49+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Marine Le Pen : liberté, liberté chérie…",
+          "source": "Causeur",
+          "url": "https://www.causeur.fr/marine-le-pen-liberte-liberte-cherie-330322",
+          "date": "2026-07-11T11:59:28+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Bracelet électronique de Marine Le Pen : «La première question à se poser serait celle de la fréquence de ses déplacements et de leur amplitude horaire»",
+          "source": "Le Figaro",
+          "url": "https://www.lefigaro.fr/actualite-france/bracelet-electronique-de-marine-le-pen-la-premiere-question-a-se-poser-serait-celle-de-la-frequence-de-ses-deplacements-et-de-leur-amplitude-horaire-20260711",
+          "date": "2026-07-11T09:30:00+00:00",
+          "category": "france"
+        },
+        {
+          "title": "‘Politicians have always been schemers’: upheld conviction fails to dent Le Pen’s popularity",
+          "source": "The Guardian",
+          "url": "https://www.theguardian.com/world/2026/jul/11/upheld-conviction-le-pen-popularity-france",
+          "date": "2026-07-11T08:00:00+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Marine Le Pen vows to run in France’s 2027 presidential election despite fraud conviction",
+          "source": "AOL.com",
+          "url": "https://www.aol.com/articles/marine-le-pen-vows-remain-184224000.html",
+          "date": "2026-07-10T18:53:55+00:00",
+          "category": "france"
+        }
+      ],
+      "first_seen": "2026-07-08T04:01:20+00:00",
+      "last_seen": "2026-07-12T04:19:51+00:00"
     },
     {
       "id": "trump-meloni-feud-escalates-ahead-of-nato-summit",
       "title": "Trump-Meloni feud escalates ahead of NATO summit",
-      "blurb": "The ongoing feud between Donald Trump and Italian Prime Minister Giorgia Meloni has intensified in the lead-up to the NATO summit. Reports highlight their strained relationship, with Trump making derogatory remarks about Meloni and her administration. This tension reflects broader transatlantic divisions within right-wing leadership.",
+      "blurb": "Tensions between former U.S. President Donald Trump and Italian Prime Minister Giorgia Meloni have escalated, with public exchanges and diplomatic fallout. This feud reflects broader transatlantic divisions and challenges in NATO cohesion.",
       "convergence": 4,
       "countries": [
         {
           "name": "🇺🇸 MAGA / Trump",
-          "note": "Trump makes derogatory remarks about Meloni and criticizes her leadership style."
+          "note": "Trump cancels meeting with Meloni; makes critical remarks about her leadership."
         },
         {
           "name": "🇮🇹 Fratelli d'Italia / Lega",
-          "note": "Meloni faces criticism from Trump, with reports of strained relations and diplomatic tensions."
+          "note": "Meloni cancels U.S. visit; Italian government denies tensions but faces internal criticism."
         },
         {
           "name": "🇬🇧 Reform UK",
-          "note": "Farage and Reform UK comment on the transatlantic tensions between Trump and Meloni."
+          "note": "Farage comments on transatlantic divisions; calls for stronger UK-Italy relations."
         },
         {
           "name": "🇪🇸 Vox",
-          "note": "Vox observes and comments on the diplomatic fallout between Trump and Meloni."
+          "note": "Vox leader criticizes Meloni's handling of U.S. relations; demands stronger stance."
         },
         {
           "name": "🇫🇷 Rassemblement National",
-          "note": "Le Pen and RN monitor the Trump-Meloni tensions and their implications for European right-wing politics."
+          "note": "Le Pen comments on NATO divisions; calls for stronger European defense."
         }
       ],
       "signals": [
-        "shared reactions",
         "diplomatic tensions",
         "transatlantic divisions",
-        "coordinated messaging"
+        "NATO cohesion challenges",
+        "public exchanges"
       ],
-      "article_count": 100,
+      "article_count": 25,
       "refs": [
+        {
+          "title": "Vannacci, i dubbi di Meloni e il futuro del campo largo",
+          "source": "Giornale di Brescia",
+          "url": "https://www.giornaledibrescia.it/opinioni/vannacci-dubbi-meloni-futuro-campo-largo-xfxy1fod",
+          "date": "2026-07-12T02:00:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Fiazza e Occhi (Lega): «Pinza nella pancia, nessuna zona d'ombra per sicurezza dei pazienti",
+          "source": "Gazzetta di Parma",
+          "url": "https://www.gazzettadiparma.it/home/2026/07/12/news/fiazza-e-occhi-lega-pinza-nella-pancia-nessuna-zona-d-ombra-per-sicurezza-dei-pazienti-955365/",
+          "date": "2026-07-12T01:01:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "US judge dismisses January 6 case against Proud Boys after Trump order",
+          "source": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/7/11/us-judge-dismisses-january-6-case-against-proud-boys-after-trump-order",
+          "date": "2026-07-11T21:58:11+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Rift Deepens Between Meloni & Trump After Cancelled Trip",
+          "source": "theatlasnews.com",
+          "url": "https://www.theatlasnews.com/rift-deepens-between-meloni-trump-after-cancelled-trip/",
+          "date": "2026-07-11T17:17:08+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "President Trump and Iranian leaders trade threats as mediators try to save crumbling deal",
+          "source": "Chicago Tribune",
+          "url": "https://www.chicagotribune.com/2026/07/11/us-iran-threats/",
+          "date": "2026-07-11T14:30:46+00:00",
+          "category": "usa"
+        },
         {
           "title": "Trump contro Meloni e il retroscena di Crosetto sulla cena al Vertice Nato, \"Chi era presente lo sa bene\"",
           "source": "Virgilio",
@@ -420,98 +427,105 @@
           "category": "usa"
         },
         {
-          "title": "Italian minister cancels US visit over Trump’s comments on Meloni Archives",
-          "source": "The Rahnuma Daily",
-          "url": "https://therahnuma.com/tag/italian-minister-cancels-us-visit-over-trumps-comments-on-meloni/",
-          "date": "2026-07-10T23:46:28+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Milei plans regional tour seeking investment, with a Bolsonaro visit that irks Lula",
-          "source": "MercoPress",
-          "url": "https://en.mercopress.com/2026/07/10/milei-plans-regional-tour-seeking-investment-with-a-bolsonaro-visit-that-irks-lula",
-          "date": "2026-07-10T18:27:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Javier Milei confirmó que viajará en julio a Brasil para respaldar la candidatura de Flavio Bolsonaro",
-          "source": "La Opinión Austral",
-          "url": "https://laopinionaustral.com.ar/argentina/javier-milei-confirmo-que-viajara-en-julio-a-brasil-para-respaldar-la-candidatura-de-flavio-bolsonaro-681230.html",
-          "date": "2026-07-10T16:36:12+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Hegseth steps in to ‘fix’ situation after Apache pilots suspended for ‘Salute from the Shores’ flyover",
-          "source": "Fox News",
-          "url": "https://www.foxnews.com/politics/hegseth-steps-fix-situation-apache-pilots-suspended-salute-shores-flyover",
-          "date": "2026-07-10T15:02:12+00:00",
+          "title": "Burnham will have to master something Starmer couldn’t: the art of dealing with Donald Trump | Gaby Hinsliff",
+          "source": "The Guardian",
+          "url": "https://www.theguardian.com/commentisfree/2026/jul/10/andy-burnham-keir-starmer-donald-trump-foreign-secretary",
+          "date": "2026-07-10T18:10:00+00:00",
           "category": "usa"
         },
         {
-          "title": "Meloni ricorda il magistrato Occorsio, a 50 anni dall'uccisione",
-          "source": "L'Unione Sarda.it",
-          "url": "https://www.unionesarda.it/multimedia/meloni-ricorda-il-magistrato-occorsio-a-50-anni-dall-uccisione-ph3tt46l",
-          "date": "2026-07-10T12:57:01+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Spie russe, sicurezza interna e frontiere. Perché Meloni ha convocato il vertice sulla sicurezza",
-          "source": "Formiche.net",
-          "url": "https://formiche.net/2026/07/spie-russe-sicurezza-interna-e-frontiere-perche-meloni-ha-convocato-il-vertice-sulla-sicurezza/",
-          "date": "2026-07-10T11:44:25+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Donald Trump claims Italy PM Giorgia Meloni needs 'restraining order' amid bitter feud",
-          "source": "AOL.com",
-          "url": "https://www.aol.com/articles/donald-trump-claims-italy-pm-113603000.html",
-          "date": "2026-07-10T09:39:24+00:00",
-          "category": "italy"
+          "title": "Wielka awantura na miesięcznicy smoleńskiej. Tusk: Kaczyński zachowuje się jak klasyczny warchoł",
+          "source": "Radio Zet",
+          "url": "https://wiadomosci.radiozet.pl/polityka/wielka-awantura-na-miesiecznicy-smolenskiej-tusk-kaczynski-zachowuje-sie-jak-klasyczny-warchol",
+          "date": "2026-07-10T16:34:26+00:00",
+          "category": "poland"
         }
       ],
       "first_seen": "2026-07-06T05:02:00+00:00",
-      "last_seen": "2026-07-11T14:14:50+00:00"
+      "last_seen": "2026-07-12T04:19:51+00:00"
     },
     {
       "id": "mileis-shutdown-policy-sparks-global-right-wing-emulation",
       "title": "Milei’s ‘shutdown’ policy sparks global right-wing emulation",
-      "blurb": "Javier Milei's implementation of a 'shutdown' policy in Argentina has sparked interest and potential emulation among right-wing leaders globally. This policy, aimed at curbing government spending, is being closely watched by leaders in Spain, Italy, and the US, who are considering similar measures to address fiscal challenges.",
+      "blurb": "Argentine President Javier Milei's 'shutdown' policy, aimed at reducing government spending, is being closely watched and emulated by right-wing leaders in the U.S., Spain, and Italy. This policy reflects a broader trend of fiscal austerity and government downsizing among conservative movements.",
       "convergence": 3,
       "countries": [
         {
           "name": "🇦🇷 La Libertad Avanza",
-          "note": "Milei implements a 'shutdown' policy to curb government spending and address fiscal challenges."
+          "note": "Milei proposes 'shutdown' policy to curb government spending; faces opposition in Congress."
         },
         {
           "name": "🇺🇸 MAGA / Trump",
-          "note": "Trump administration considers similar fiscal policies to address government spending."
+          "note": "Trump administration considers similar measures; housing bill becomes law without signature."
         },
         {
           "name": "🇪🇸 Vox",
-          "note": "Vox observes and discusses the potential of Milei's policies for Spain's fiscal challenges."
+          "note": "Vox supports austerity measures; criticizes government spending in Andalusia."
         },
         {
           "name": "🇮🇹 Fratelli d'Italia / Lega",
-          "note": "Italian right-wing parties discuss the implications of Milei's shutdown policy for Italy."
+          "note": "Lega proposes spending cuts; supports fiscal austerity measures."
         },
         {
           "name": "🇬🇧 Reform UK",
-          "note": "Reform UK considers the potential of adopting similar fiscal policies in the UK."
+          "note": "Farage calls for government downsizing; criticizes public spending."
         }
       ],
       "signals": [
-        "policy imitation",
-        "shared framing",
-        "economic policy debates",
-        "contagion of rhetoric"
+        "policy emulation",
+        "fiscal austerity",
+        "government downsizing",
+        "transnational influence"
       ],
-      "article_count": 80,
+      "article_count": 20,
       "refs": [
         {
-          "title": "Reforma del Banco Central: tras el anuncio, qué analiza Javier Milei sobre su plan de dolarización",
-          "source": "Canal26",
-          "url": "https://www.canal26.com/politica/2026/07/11/reforma-del-banco-central-tras-el-anuncio-que-analiza-javier-milei-sobre-su-plan-de-dolarizacion/",
-          "date": "2026-07-11T11:28:24+00:00",
+          "title": "Milei anticipó una dura pelea en el Congreso por la reforma del Banco Central",
+          "source": "Uno Entre Rios",
+          "url": "https://www.unoentrerios.com.ar/el-pais/milei-anticipo-una-dura-pelea-el-congreso-la-reforma-del-banco-central-n10269210.html",
+          "date": "2026-07-11T23:09:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "States sue Trump administration to block school mental health funding cuts",
+          "source": "North Platte Post",
+          "url": "https://northplattepost.com/posts/6fccd09c-0db0-442b-94ca-d9880311690a",
+          "date": "2026-07-11T20:07:50+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Javier Milei impulsa la reforma del Banco Central, el “shutdown” del Ejecutivo y el Presupuesto 2027 en el Congreso",
+          "source": "Radio LV11",
+          "url": "https://www.radiolv11.com.ar/noticia/javier-milei-impulsa-la-reforma-del-banco-central-el-shutdown-del-ejecutivo-y-el-presupuesto-2027-en-el-congreso",
+          "date": "2026-07-11T16:48:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Prof. Bugaj ocenił nowy pomysł Czarnka. \"Kaczyński popełnił błąd\"",
+          "source": "Fakt",
+          "url": "https://www.fakt.pl/polityka/przemyslaw-czarnek-skrytykowany-przez-prof-bugaja-chodzi-o-projekt-pis/sks604v",
+          "date": "2026-07-11T13:26:47+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Milei defendió la reforma del Banco Central y el mecanismo de “shutdown” para limitar el gasto público",
+          "source": "El Eco",
+          "url": "https://www.eleco.com.ar/economia/milei-defendio-la-reforma-del-banco-central-y-el-mecanismo-de-shutdown-para-limitar-el-gasto-publico",
+          "date": "2026-07-11T12:40:19+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "El debate que viene: el gobierno busca por tercera vez la reforma electoral",
+          "source": "El Litoral",
+          "url": "https://www.ellitoral.com/politica/reforma-electoral-paso-financiamiento-bup-congreso-nacional-milei-ahora-hoy_0_Mm3UAvrJYs.html",
+          "date": "2026-07-11T10:15:36+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "El giro forzado de Milei hacia los moderados: el Gobierno busca al tercio que puede definir la reelección",
+          "source": "Infobae",
+          "url": "https://www.infobae.com/opinion/2026/07/11/el-giro-forzado-de-milei-hacia-los-moderados-el-gobierno-busca-al-tercio-que-puede-definir-la-reeleccion/",
+          "date": "2026-07-11T06:27:03+00:00",
           "category": "argentina"
         },
         {
@@ -529,166 +543,15 @@
           "category": "argentina"
         },
         {
-          "title": "Javier Milei defendió el \"shutdown\" para frenar el gasto público y lanzó una fuerte advertencia al Congreso",
-          "source": "Radio LV11",
-          "url": "https://www.radiolv11.com.ar/noticia/javier-milei-defendio-el-shutdown-para-frenar-el-gasto-publico-y-lanzo-una-fuerte-advertencia-al-congreso",
-          "date": "2026-07-10T14:45:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Javier Milei volvió a cuestionar la Carta Orgánica del Banco Central: \"Es un disparate\"",
-          "source": "Border Periodismo",
-          "url": "https://www.borderperiodismo.com/actualidad/javier-milei-volvio-a-cuestionar-la-carta-organica-del-banco-central-es-un-disparate/",
-          "date": "2026-07-10T14:30:58+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Exultante. Javier Milei defendió la reforma del Banco Central y justificó un posible \"shutdown\" del Estado",
-          "source": "La Voz del Interior",
-          "url": "https://www.lavoz.com.ar/politica/javier-milei-defendio-reforma-banco-central-justifico-posible-shutdown-estado_0_70fKO6OfxM.html",
-          "date": "2026-07-10T14:00:43+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Javier Milei defendió su proyecto para limitar el gasto del Estado y desafió a la oposición",
-          "source": "TN",
-          "url": "https://tn.com.ar/economia/2026/07/10/javier-milei-defendio-su-proyecto-para-limitar-el-gasto-del-estado-y-desafio-a-la-oposicion/",
-          "date": "2026-07-10T13:46:48+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "El presidente Javier Milei analiza implementar un mecanismo de cierre del Estado ante eventuales faltas de presupuesto",
-          "source": "Radio LV11",
-          "url": "https://www.radiolv11.com.ar/noticia/el-presidente-javier-milei-analiza-implementar-un-mecanismo-de-cierre-del-estado-ante-eventuales-faltas-de-presupuesto",
-          "date": "2026-07-10T13:13:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Javier Milei defendió su proyecto de “shutdown” del Estado: “El que está en contra avala presupuestos desequilibrados",
-          "source": "InfoVeloz.com",
-          "url": "https://www.infoveloz.com/post/javier-milei-defendio-su-proyecto-de-shutdown-del-estado-el-que-esta-en-contra-avala-presupuestos-desequilibrados_281840",
-          "date": "2026-07-10T12:56:15+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Javier Milei inició una nueva estrategia política rumbo a las elecciones 2027: los factores Villarruel y Manuel Adorni",
-          "source": "Diario Río Negro",
-          "url": "https://www.rionegro.com.ar/politica/javier-milei-inicio-una-nueva-estrategia-politica-rumbo-a-las-elecciones-2027-los-factores-villarruel-y-manuel-adorni-4643241/?amp=1",
-          "date": "2026-07-10T12:00:05+00:00",
-          "category": "argentina"
+          "title": "Patriot missiles for Ukraine: why they are fighting in Poland ᐉ Новини от Fakti.bg - Opinions",
+          "source": "Fakti.bg",
+          "url": "https://fakti.bg/en/amp/mnenia/1066709-patriot-missiles-for-ukraine-why-they-are-fighting-in-poland",
+          "date": "2026-07-10T16:01:00+00:00",
+          "category": "poland"
         }
       ],
       "first_seen": "2026-07-08T04:01:20+00:00",
-      "last_seen": "2026-07-11T14:14:50+00:00"
-    },
-    {
-      "id": "public-media-crackdowns-fuel-far-right-backlash",
-      "title": "Public media crackdowns fuel far-right backlash",
-      "blurb": "Government crackdowns on public media are provoking strong reactions from far-right parties across Europe. In Hungary, Fidesz protests changes to state media control. In Poland, PiS criticizes media reforms and alleged bias. Germany's AfD opposes public broadcasting policies, while Spain's Vox challenges media regulations and funding.",
-      "convergence": 3,
-      "countries": [
-        {
-          "name": "🇭🇺 Fidesz / Tisza",
-          "note": "Fidesz protests changes to state media control and alleged government interference."
-        },
-        {
-          "name": "🇵🇱 Prawo i Sprawiedliwość",
-          "note": "PiS criticizes media reforms and alleged bias in public broadcasting."
-        },
-        {
-          "name": "🇩🇪 Alternative für Deutschland",
-          "note": "AfD opposes public broadcasting policies and advocates for media reforms."
-        },
-        {
-          "name": "🇪🇸 Vox",
-          "note": "Vox challenges media regulations and funding, particularly in regional broadcasting."
-        },
-        {
-          "name": "🇫🇷 Rassemblement National",
-          "note": "RN criticizes public media bias and advocates for media reforms."
-        }
-      ],
-      "signals": [
-        "policy backlash",
-        "media regulation debates",
-        "government interference",
-        "shared framing"
-      ],
-      "article_count": 70,
-      "refs": [
-        {
-          "title": "Magyar Péter: Sulyoknak öt napja lesz aláírni az Alaptörvény-módosítást",
-          "source": "Pécsi STOP",
-          "url": "https://pecsistop.hu/kozelet/magyar-peter-sulyoknak-ot-napja-lesz-alairni-az-alaptorveny-modositast/534020",
-          "date": "2026-07-11T11:44:47+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Magyar Péter megüzente Sulyok Tamásnak, mi történik, ha nem írja alá az alkotmánymódosítást",
-          "source": "Szabad Magyar Szó",
-          "url": "https://szmsz.press/2026/07/11/magyar-peter-meguzente-sulyok-tamasnak-mi-tortenik-ha-nem-irja-ala-az-alkotmanymodositast/",
-          "date": "2026-07-11T10:59:42+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Rai-Meloni prende la palla al balzo per sospendere le repliche estive di Report",
-          "source": "SUD e FUTURI",
-          "url": "https://www.sudefuturi.it/2026/07/11/rai-meloni-trova-una-scusa-per-sospendere-le-repliche-estive-di-report/",
-          "date": "2026-07-11T10:00:00+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Nemzetközi lapszemle: még mindig sok újságnál téma a köztévé elsötétülése",
-          "source": "| hvg.hu",
-          "url": "https://hvg.hu/360/20260711_nemzetkozi-lapszemle-meg-mindig-sok-ujsagnal-tema-a-kozteve-elsotetulese",
-          "date": "2026-07-11T08:01:34+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Működnek a rendőrség régi reflexei, csak már nem a Fidesz van hatalmon",
-          "source": "Népszava",
-          "url": "https://nepszava.hu/3328707_rendorseg-reflexek-fidesz-szakacs-istvan-influenszer-gyanusitas",
-          "date": "2026-07-11T03:55:00+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Meloni, l’omaggio a Occorsio: «Un magistrato esemplare»",
-          "source": "Il Messaggero",
-          "url": "https://www.ilmessaggero.it/politica/meloni_omaggio_occorsio_un_magistrato_esemplare-9644043.html",
-          "date": "2026-07-10T22:35:06+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Kiderült, miért nem ment el Orbán a tegnapi fideszes tüntetésre",
-          "source": "atv.hu",
-          "url": "https://www.atv.hu/videok/kiderult-miert-nem-ment-el-orban-a-tegnapi-fideszes-tuntetesre/",
-          "date": "2026-07-10T18:51:17+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Nem fogta vissza magát a Tisza-kormány, emléktáblát kapott Rogán Antal egykori minisztériumának épülete",
-          "source": "Index.hu",
-          "url": "https://index.hu/belfold/2026/07/10/magyarorszag-katai-nemeth-vilmos-szocialis-es-csaladugyi-miniszterium-rogan-antal-miniszterelnoki-kabinetiroda-tabla/",
-          "date": "2026-07-10T16:31:00+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Magyar Péter a Kék Bolygó Alapítványt támadja, amellyel Tanács Zoltán is szerződésben állt",
-          "source": "HírTv",
-          "url": "https://hirtv.origo.hu/ahirtvhirei/2026/07/magyar-peter-a-kek-bolygo-alapitvanyt-tamadja-amellyel-tanacs-zoltan-is-szerzodesben-allt",
-          "date": "2026-07-10T15:40:12+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Érkezik a Tisza-kormány klímatörvénye, radikális lépésekkel mentenék meg a magyar vizeket",
-          "source": "Index.hu",
-          "url": "https://index.hu/belfold/2026/07/10/gajdos-laszlo-klima-klimatorveny-valtozas-kornyezet-vedelem-vizek/",
-          "date": "2026-07-10T15:25:00+00:00",
-          "category": "hungary"
-        }
-      ],
-      "first_seen": "2026-07-08T04:01:20+00:00",
-      "last_seen": "2026-07-11T14:14:50+00:00"
+      "last_seen": "2026-07-12T04:19:51+00:00"
     }
   ]
 }
