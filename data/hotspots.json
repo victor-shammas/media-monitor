@@ -1,32 +1,637 @@
 {
-  "updated_at": "2026-07-11T14:01:28+00:00",
+  "updated_at": "2026-07-12T04:07:25+00:00",
   "lookback_hours": 48,
   "model": "Mistral Large",
   "status": "ok",
   "hotspots": [
     {
-      "id": "afd-s-saxony-anhalt-100-day-plan",
-      "title": "AfD's Saxony-Anhalt 100-day plan",
-      "blurb": "The AfD's Saxony-Anhalt branch unveiled a controversial 100-day plan for its potential first 100 days in office, including mandatory work for asylum seekers, scrapping integration programs, and promoting more deportation centers. The plan has sparked intense debate and protests.",
-      "affect": "This commands disproportionate attention due to its radical policy proposals, which have polarized public opinion and sparked protests, indicating high moral and political stakes.",
-      "intensity": 4,
+      "id": "iran-s-revenge-threats-against-western-leaders",
+      "title": "Iran's revenge threats against Western leaders",
+      "blurb": "Iranian state media published a 'revenge list' targeting Western leaders, including Italy's Giorgia Meloni, Donald Trump, and others, for alleged involvement in the death of Ayatollah Khamenei. The list has sparked international condemnation and solidarity with the threatened leaders.",
+      "affect": "This commands disproportionate attention due to the high-stakes geopolitical tensions and the direct threats to prominent political figures, invoking fear and moral outrage.",
+      "intensity": 5,
       "affect_signals": [
+        "moral panic register",
         "polarized contention",
         "alarmist framing",
         "cross-source repetition",
         "outrage-coded language"
       ],
       "categories": [
-        "de_politics",
-        "immigration"
+        "Fratelli d'Italia / Lega",
+        "MAGA / Trump"
       ],
-      "article_count": 20,
+      "article_count": 50,
       "refs": [
         {
-          "title": "Bildungspolitik – Frontalangriff auf die Schule - nd-aktuell.de",
+          "title": "Vannacci, i dubbi di Meloni e il futuro del campo largo",
+          "source": "Giornale di Brescia",
+          "url": "https://www.giornaledibrescia.it/opinioni/vannacci-dubbi-meloni-futuro-campo-largo-xfxy1fod",
+          "date": "2026-07-12T02:00:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Morte Khamenei, Meloni nella lista nera di Teheran",
+          "source": "il manifesto",
+          "url": "https://ilmanifesto.it/morte-khamenei-meloni-nella-lista-nera-di-teheran",
+          "date": "2026-07-11T22:12:34+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Iran, Mojtaba Khamenei vuole vendetta: non solo Trump nel mirino, anche Meloni in lista nera",
+          "source": "Adnkronos",
+          "url": "https://www.adnkronos.com/internazionale/esteri/iran-khamenei-vendetta-leader-meloni-news_3L9ApUw3oZyxQqiQX2E2cF",
+          "date": "2026-07-11T22:11:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Trump-Iran tra missili e vendetta Meloni nella lista nera di Mojtaba",
+          "source": "Il Fatto Quotidiano",
+          "url": "https://www.ilfattoquotidiano.it/in-edicola/articoli/2026/07/12/trump-iran-tra-missili-e-vendetta-meloni-nella-lista-nera-di-mojtaba/8446264/",
+          "date": "2026-07-11T22:01:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Meloni nella lista nera dell'Iran pubblicata da un quotidiano di Teheran. Il figlio di Khamenei: «Vendetta per mio padre»",
+          "source": "Il Messaggero",
+          "url": "https://www.ilmessaggero.it/mondo/meloni_lista_nera_iran_vendetta_khamenei-9645879.html",
+          "date": "2026-07-11T21:55:12+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Giornale iraniano mette Meloni in lista nera per morte Khamenei",
+          "source": "Sky TG24",
+          "url": "https://tg24.sky.it/mondo/video/2026/07/11/giornale-iraniano-mette-meloni-in-lista-nera-per-morte-khamenei-1111365",
+          "date": "2026-07-11T21:30:21+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "¿Nayib Bukele, Javier Milei y José Antonio Kast en Perú? Qué presidentes estarán en la juramentación de Keiko Fujimori",
+          "source": "Infobae",
+          "url": "https://www.infobae.com/peru/2026/07/11/nayib-bukele-javier-milei-y-jose-antonio-kast-en-peru-que-presidentes-estaran-en-la-juramentacion-de-keiko-fujimori/?outputType=amp-type",
+          "date": "2026-07-11T21:12:02+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Quotidiano Iran, Meloni nella lista nera dei responsabili della morte di Khamenei Archivi",
+          "source": "EspansioneTv",
+          "url": "https://www.espansionetv.it/tag/quotidiano-iran-meloni-nella-lista-nera-dei-responsabili-della-morte-di-khamenei/",
+          "date": "2026-07-11T20:48:15+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Iran, Mojtaba Khamenei: “Vendetta per mio padre” Anche Meloni nella lista nera. Il regime: non più vincolati a un accordo se gli Stati Uniti attaccano ancora",
+          "source": "Quotidiano Nazionale",
+          "url": "https://www.quotidiano.net/esteri/iran-mojtaba-khamenei-vendetta-per-mio-padre-anche-meloni-nella-lista-nera-il-regime-non-piu-vincolati-a-un-accordo-se-gli-stati-uniti-attaccano-ancora-lnaxa6t8",
+          "date": "2026-07-11T20:20:06+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Mojtaba minaccia vendetta per il padre, anche Meloni nella lista nera",
+          "source": "ANSA",
+          "url": "https://www.ansa.it/sito/notizie/mondo/2026/07/11/mojtaba-minaccia-vendetta-per-il-padre-anche-meloni-nella-lista-nera_f6fb4923-2d40-485d-9852-082b1159c51e.html",
+          "date": "2026-07-11T19:39:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "La lista nera dell'Iran: nel mirino c'è anche Giorgia Meloni",
+          "source": "Avvenire",
+          "url": "https://www.avvenire.it/mondo/la-lista-nera-delliran-nel-mirino-ce-anche-giorgia-meloni_110829",
+          "date": "2026-07-11T19:22:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "4 di sera Weekend: Stampa iraniana: \"Giorgia Meloni tra i responsabili della morte di Khamenei\" Video",
+          "source": "Mediaset Infinity",
+          "url": "https://mediasetinfinity.mediaset.it/video/4diseraweekend/stampa-iraniana-giorgia-meloni-tra-i-responsabili-della-morte-di-khamenei_F313765001164C01",
+          "date": "2026-07-11T19:19:35+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Farnesina: solidarietà di Tajani al presidente Meloni",
+          "source": "Giornale Diplomatico",
+          "url": "https://www.giornalediplomatico.it/farnesina-solidarieta-di-tajani-al-presidente-meloni.htm",
+          "date": "2026-07-11T19:16:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "“Solidarietà e vicinanza”: la politica si stringe attorno a Meloni dopo la minaccia dell’Iran",
+          "source": "il Giornale",
+          "url": "https://www.ilgiornale.it/news/governo/solidariet-e-vicinanza-politica-si-stringe-attorno-meloni-2692279.html",
+          "date": "2026-07-11T19:05:12+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Meloni on the \"blacklist\" of those responsible for Khamenei's death",
+          "source": "L'Unione Sarda.it",
+          "url": "https://www.unionesarda.it/en/world/meloni-on-the-quot-blacklistquot-of-those-responsible-for-khamenei39-s-death-a8czu8q5",
+          "date": "2026-07-11T18:55:48+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Iranian Newspaper's \"Revenge List\" Targets World Leaders",
+          "source": "JFeed",
+          "url": "https://www.jfeed.com/news-world/iranian-newspaper-revenge-list-world-leaders",
+          "date": "2026-07-11T18:45:30+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Provocazione dell’Iran, Meloni insieme a Trump in tuta arancione da detenuta: il messaggio all’Occidente",
+          "source": "Virgilio",
+          "url": "https://www.virgilio.it/notizie/provocazione-dell-iran-meloni-insieme-a-trump-in-tuta-arancione-da-detenuta-il-messaggio-all-occidente-1768379",
+          "date": "2026-07-11T18:45:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Mojtaba minaccia vendetta per il padre, Trump e Meloni nella lista nera",
+          "source": "ANSA",
+          "url": "https://www.ansa.it/sito/notizie/mondo/2026/07/11/mojtaba-minaccia-vendetta-per-il-padre-trump-e-meloni-nella-lista-nera_f6fb4923-2d40-485d-9852-082b1159c51e.html",
+          "date": "2026-07-11T18:34:15+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Meloni in tuta da detenuta su un giornale iraniano: «Vendetta per Khamenei»",
+          "source": "Giornale di Brescia",
+          "url": "https://www.giornaledibrescia.it/cronaca/meloni-tuta-detenuta-giornale-iraniano-vendetta-khamenei-acino2l1",
+          "date": "2026-07-11T18:31:41+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Meloni nella “lista nera” dei responsabili della morte di Khamenei",
+          "source": "L'Unione Sarda.it",
+          "url": "https://www.unionesarda.it/news/mondo/meloni-nella-lista-nera-dei-responsabili-della-morte-di-khamenei-pw06hffm",
+          "date": "2026-07-11T18:18:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Su giornale iraniano Meloni nel mirino",
+          "source": "RaiNews",
+          "url": "https://www.rainews.it/articoli/ultimora/-su-giornale-iraniano-meloni-nel-mirino--1ba22e29-5028-43d1-8c51-5586b9925075.html",
+          "date": "2026-07-11T18:10:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Dall’Iran una nuova minaccia contro l’Italia. Meloni finisce nella lista dei nemici insieme ad altri leader Ue",
+          "source": "Domani",
+          "url": "https://www.editorialedomani.it/politica/mondo/meloni-foto-giornale-teheran-tuta-carcere-minaccia-guerra-stati-uniti-iran-khamenei-h7b9v12s",
+          "date": "2026-07-11T18:09:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Giorgia Meloni nella «lista nera» per la morte di Khamenei: le foto sulla stampa iraniana",
+          "source": "Open",
+          "url": "https://www.open.online/2026/07/11/iran-meloni-lista-nera-morte-khamenei/",
+          "date": "2026-07-11T18:08:54+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Quotidiano iraniano pubblica la lista nera per la morte di Khamenei: c'è anche Giorgia Meloni",
+          "source": "today.it",
+          "url": "https://www.today.it/mondo/iran-lista-nera-meloni.html",
+          "date": "2026-07-11T17:55:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Iran, anche Giorgia Meloni nella lista nera dei responsabili della morte di Khamenei | Con la tuta arancione insieme a Netanyahu e Trump",
+          "source": "Tgcom24",
+          "url": "https://www.tgcom24.mediaset.it/mondo/foto/iran-lista-nera-meloni-trump-tuta-arancione-morte-khamenei_114311142-202602k.shtml",
+          "date": "2026-07-11T17:53:49+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Iran, giornale pubblica foto dei \"leader che attendono la vendetta della nazione\": c'è anche Meloni",
+          "source": "Startupbusiness.it",
+          "url": "https://www.startupbusiness.it/iran-giornale-pubblica-foto-dei-leader-che-attendono-la-vendetta-della-nazione-ce-anche-meloni/184323/",
+          "date": "2026-07-11T17:42:33+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "\"Ecco i leader che devono aspettare la vendetta dell'Iran\", anche Meloni nella lista",
+          "source": "Adnkronos",
+          "url": "https://www.adnkronos.com/internazionale/esteri/iran-lista-leader-giornale-teheran-vendetta-meloni_1YkHn1rDl6QbKzzg9euGUh",
+          "date": "2026-07-11T17:42:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Anche Meloni nella lista nera dell'Iran, che richiude Hormuz e colpisce le navi",
+          "source": "ANSA",
+          "url": "https://www.ansa.it/amp/sito/notizie/mondo/2026/07/11/quotidiano-iran-meloni-nella-lista-nera-dei-responsabili-della-morte_f6fb4923-2d40-485d-9852-082b1159c51e.html",
+          "date": "2026-07-11T17:30:33+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "\"Meloni nella lista nera\". Un giornale di Teheran la indica tra i responsabili per la morte di Khamenei",
+          "source": "HuffPost Italia",
+          "url": "https://www.huffingtonpost.it/politica/2026/07/11/news/meloni_nella_lista_nera_di_teheran-22338872/",
+          "date": "2026-07-11T17:30:00+00:00",
+          "category": "italy"
+        }
+      ],
+      "first_seen": "2026-07-12T04:07:25+00:00",
+      "last_seen": "2026-07-12T04:07:25+00:00"
+    },
+    {
+      "id": "marine-le-pen-s-eligibility-crisis",
+      "title": "Marine Le Pen's eligibility crisis",
+      "blurb": "Marine Le Pen's legal eligibility to run in the 2027 French presidential election has been a dominant theme, following a court ruling that reduced her ineligibility period. This has sparked debates on judicial influence in politics and her political future.",
+      "affect": "This commands attention due to the high affective investment in Le Pen's political career and the moral charge around her legal battles and far-right policies.",
+      "intensity": 5,
+      "affect_signals": [
+        "polarized contention",
+        "leadership crisis tone",
+        "moral panic register",
+        "cross-source repetition",
+        "outrage-coded language"
+      ],
+      "categories": [
+        "Rassemblement National"
+      ],
+      "article_count": 40,
+      "refs": [
+        {
+          "title": "Marine Le Pen extends lead in French election poll after court ruling",
+          "source": "The Straits Times",
+          "url": "https://www.straitstimes.com/world/europe/marine-le-pen-extends-lead-in-french-election-poll-after-court-ruling",
+          "date": "2026-07-11T23:48:00+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Présidentielle 2027. Sondage Odoxa: Gabriel Attal pas sûr d’être au second tour / Marine Le Pen élue",
+          "source": "lecentrisme.com",
+          "url": "http://www.lecentrisme.com/2026/07/presidentielle-2027-sondage-odoxa.html",
+          "date": "2026-07-11T21:24:08+00:00",
+          "category": "france"
+        },
+        {
+          "title": "\"S'il n'y a pas, dans l'espace central, un grand rassemblement, Marine Le Pen sera présidente de la République\", estime le député Modem Richard Ramos",
+          "source": "BFM",
+          "url": "https://www.bfmtv.com/politique/elections/presidentielle/video-s-il-n-y-a-pas-dans-l-espace-central-un-grand-rassemblement-marine-le-pen-sera-presidente-de-la-republique-estime-le-depute-modem-richard-ramos_VN-202607110380.html",
+          "date": "2026-07-11T21:03:46+00:00",
+          "category": "france"
+        },
+        {
+          "title": "\"Ça montre l'attente qu'il y a chez les Français qui souffrent le plus\", estime Aleksandar Nikolic (RN) à propos du sondage Elabe pour BFMTV qui place Marine Le Pen en tête",
+          "source": "BFM",
+          "url": "https://www.bfmtv.com/politique/elections/presidentielle/video-ca-montre-l-attente-qu-il-y-a-chez-les-francais-qui-souffrent-le-plus-estime-aleksandar-nikolic-rn-a-propos-du-sondage-elabe-pour-bfmtv-qui-place-marine-le-pen-en-tete_VN-202607110379.html",
+          "date": "2026-07-11T21:03:01+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Présidentielle 2027 : Marine Le Pen largement en tête, Jean-Luc Mélenchon se rapproche du 2e tour",
+          "source": "Europe 1",
+          "url": "https://www.europe1.fr/politique/presidentielle-2027-marine-le-pen-largement-en-tete-jean-luc-melenchon-se-rapproche-du-2e-tour-970494?amp",
+          "date": "2026-07-11T20:33:34+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Marine Le Pen : «J'irai au bout du combat»",
+          "source": "lejdd.fr",
+          "url": "https://www.lejdd.fr/sommaire/marine-le-pen-jirai-au-bout-du-combat-178833",
+          "date": "2026-07-11T20:21:14+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Marine Le Pen ne voit pas sa candidature menacée par la justice",
+          "source": "bluewin.ch",
+          "url": "https://www.bluewin.ch/fr/infos/monde/marine-le-pen-ne-voit-pas-sa-candidature-menac-e-par-la-justice-li.3525205",
+          "date": "2026-07-11T19:49:00+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Présidentielle 2027 : Le Pen largement en tête, Mélenchon se rapproche… Qui sont les mieux placés pour accéder au second tour selon ce sondage",
+          "source": "Midi Libre",
+          "url": "https://www.midilibre.fr/2026/07/11/presidentielle-2027-le-pen-largement-en-tete-melenchon-se-rapproche-qui-sont-les-mieux-places-pour-acceder-au-second-tour-selon-ce-sondage-13465075.php",
+          "date": "2026-07-11T19:36:00+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Présidentielle 2027. « Je suis éligible, je suis candidate » : Marine Le Pen juge « irréaliste » de penser sa candidature encore menacée par la justice",
+          "source": "Sud Ouest",
+          "url": "https://www.sudouest.fr/politique/marine-le-pen/presidentielle-2027-je-suis-eligible-je-suis-candidate-marine-le-pen-juge-irrealiste-de-penser-sa-candidature-encore-menacee-par-la-justice-29899622.php",
+          "date": "2026-07-11T19:26:08+00:00",
+          "category": "france"
+        },
+        {
+          "title": "\"Les Français veulent l'alternance, ils savent que les autres candidats pour bon nombre, sont des macronistes qui ne s'assument plus trop\", estime Yoann Gillet, directeur adjoint de la campagne de Marine Le Pen",
+          "source": "BFM",
+          "url": "https://www.bfmtv.com/politique/elections/presidentielle/video-les-francais-veulent-l-alternance-ils-savent-que-les-autres-candidats-pour-bon-nombre-sont-des-macronistes-qui-ne-s-assument-plus-trop-estime-yoann-gillet-directeur-adjoint-de-la-campagne-de-marine-le-pen_VN-202607110354.html",
+          "date": "2026-07-11T19:16:13+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Présidentielle : un nouveau sondage donne Marine Le Pen gagnante au second tour dans tous les cas",
+          "source": "Le Figaro",
+          "url": "https://www.lefigaro.fr/politique/presidentielle-un-nouveau-sondage-donne-marine-le-pen-gagnante-au-second-tour-dans-tous-les-cas-20260711",
+          "date": "2026-07-11T19:15:33+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Présidentielle 2027 : le sondage qui montre que Marine Le Pen reste la mieux placée pour battre ses rivaux - parlons-politique.fr",
           "source": "",
-          "url": "https://www.nd-aktuell.de/artikel/1201052.bildungspolitik-frontalangriff-auf-die-schule.html",
-          "date": "2026-07-11T11:42:43+00:00",
+          "url": "https://www.parlons-politique.fr/elections/presidentielle-2027-le-sondage-qui-montre-que-marine-le-pen-reste-la-mieux-placee-pour-battre-ses-rivaux_23475/",
+          "date": "2026-07-11T19:11:47+00:00",
+          "category": "france"
+        },
+        {
+          "title": "«On ne peut pas parler d’une incertitude judiciaire» : Marine Le Pen juge «irréaliste» que la justice perturbe la suite de sa campagne",
+          "source": "Le Figaro",
+          "url": "https://www.lefigaro.fr/politique/on-ne-peut-pas-parler-d-une-incertitude-judiciaire-marine-le-pen-juge-irrealiste-que-la-justice-perturbe-la-suite-de-sa-campagne-20260711",
+          "date": "2026-07-11T19:11:24+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Marine Le Pen favorite dans tous les cas de figure au second tour selon un sondage Elabe pour BFMTV",
+          "source": "BFM",
+          "url": "https://www.bfmtv.com/politique/elections/presidentielle/video-marine-le-pen-favorite-dans-tous-les-cas-de-figure-au-second-tour-selon-un-sondage-elabe-pour-bfmtv_VN-202607110351.html",
+          "date": "2026-07-11T19:04:19+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Les Français et l’élection présidentielle 2027",
+          "source": "ELABE",
+          "url": "https://elabe.fr/presidentielle-2027-iv3/",
+          "date": "2026-07-11T18:56:15+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Présidentielle 2027: Marine Le Pen largement en tête au premier tour selon le dernier sondage Elabe pour BFMTV",
+          "source": "BFM",
+          "url": "https://www.bfmtv.com/politique/elections/presidentielle/video-presidentielle-2027-marine-le-pen-largement-en-tete-au-premier-tour-selon-le-dernier-sondage-elabe-pour-bfmtv_VN-202607110346.html",
+          "date": "2026-07-11T18:40:48+00:00",
+          "category": "france"
+        },
+        {
+          "title": "SONDAGE PRÉSIDENTIELLE. Le Pen en tête, Mélenchon progresse",
+          "source": "La Tribune",
+          "url": "https://www.latribune.fr/article/la-tribune-dimanche/politique/45944749344411/sondage-presidentielle-le-pen-en-tete-melenchon-progresse",
+          "date": "2026-07-11T18:37:36+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Marine Le Pen is back — will Jordan Bardella settle for No 2?",
+          "source": "The Times",
+          "url": "https://www.thetimes.com/world/europe/article/marine-le-pen-jordan-bardella-election-qpsld5rlz",
+          "date": "2026-07-11T18:30:34+00:00",
+          "category": "france"
+        },
+        {
+          "title": "SONDAGE BFMTV. Présidentielle 2027: Édouard Philippe, Jean-Luc Mélenchon, Gabriel Attal, Bruno Retailleau… Qui est le mieux placé pour affronter Marine Le Pen en cas de second tour?",
+          "source": "BFM",
+          "url": "https://www.bfmtv.com/politique/sondage-bfmtv-presidentielle-2027-edouard-philippe-jean-luc-melenchon-gabriel-attal-bruno-retailleau-qui-est-le-mieux-place-pour-affronter-marine-le-pen-en-cas-de-second-tour_AN-202607110301.html",
+          "date": "2026-07-11T18:30:19+00:00",
+          "category": "france"
+        },
+        {
+          "title": "«Nous sommes radicalement différents sur nos solutions économiques» : la charge de Sarah Knafo contre Marine Le Pen",
+          "source": "Le Figaro",
+          "url": "https://www.lefigaro.fr/politique/nous-sommes-radicalement-differents-sur-nos-solutions-economiques-la-charge-de-sarah-knafo-contre-marine-le-pen-20260711",
+          "date": "2026-07-11T17:53:03+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Marine Le Pen, au plus haut dans les sondages : Thierry Breton réagit - Extrait vidéo C à vous",
+          "source": "France TV",
+          "url": "https://www.france.tv/france-5/c-a-vous/saison-17/8677836-marine-le-pen-au-plus-haut-dans-les-sondages-thierry-breton-reagit.html",
+          "date": "2026-07-11T17:30:04+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Marine Le Pen, favorite malgré tout ? - L’édito de Yaël Goosz avec Thierry Breton - Extrait vidéo C à vous",
+          "source": "France TV",
+          "url": "https://www.france.tv/france-5/c-a-vous/saison-17/8677833-marine-le-pen-favorite-malgre-tout-l-edito-de-yael-goosz-avec-thierry-breton.html",
+          "date": "2026-07-11T17:20:14+00:00",
+          "category": "france"
+        },
+        {
+          "title": "EXCLUSIF. Marine Le Pen : «Je ne laisserai personne confisquer cette présidentielle aux Français»",
+          "source": "lejdd.fr",
+          "url": "https://www.lejdd.fr/politique/exclusif-marine-le-pen-je-ne-laisserai-personne-confisquer-cette-presidentielle-aux-francais-178776",
+          "date": "2026-07-11T17:00:06+00:00",
+          "category": "france"
+        },
+        {
+          "title": "'The latest chapter in Le Pen's legal saga illustrates the intractable challenge of judging politicians'",
+          "source": "Le Monde.fr",
+          "url": "https://www.lemonde.fr/en/opinion/article/2026/07/11/the-latest-chapter-in-le-pen-s-legal-saga-illustrates-the-intractable-challenge-of-judging-politicians_6755376_23.html",
+          "date": "2026-07-11T15:00:49+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Présidentielle 2027 : Marine Le Pen en tête, Mélenchon s’installe selon un sondage",
+          "source": "Valeurs actuelles",
+          "url": "https://www.valeursactuelles.com/politique/presidentielle-2027-marine-le-pen-en-tete-melenchon-sinstalle-selon-un-sondage",
+          "date": "2026-07-11T12:15:11+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Marine Le Pen : liberté, liberté chérie…",
+          "source": "Causeur",
+          "url": "https://www.causeur.fr/marine-le-pen-liberte-liberte-cherie-330322",
+          "date": "2026-07-11T11:59:28+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Marine Le Pen’s redemption story",
+          "source": "Financial Times",
+          "url": "https://www.ft.com/content/17c6d9ac-6793-4ef2-90c6-a6a3e9de9fc3",
+          "date": "2026-07-11T10:00:08+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Marine Le Pen against society",
+          "source": "Mediapart",
+          "url": "https://www.mediapart.fr/en/journal/politique/110726/marine-le-pen-against-society",
+          "date": "2026-07-11T09:07:31+00:00",
+          "category": "france"
+        },
+        {
+          "title": "‘Politicians have always been schemers’: upheld conviction fails to dent Le Pen’s popularity",
+          "source": "The Guardian",
+          "url": "https://www.theguardian.com/world/2026/jul/11/upheld-conviction-le-pen-popularity-france",
+          "date": "2026-07-11T08:00:00+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Présidentielle 2027 : comment le RN se prépare à surmonter les accusations sur l'intégrité de Marine Le Pen durant la campagne ?",
+          "source": "Europe 1",
+          "url": "https://www.europe1.fr/politique/presidentielle-2027-comment-le-rn-se-prepare-a-surmonter-les-accusations-sur-lintegrite-de-marine-le-pen-durant-la-campagne-970287",
+          "date": "2026-07-11T05:05:00+00:00",
+          "category": "france"
+        }
+      ],
+      "first_seen": "2026-07-02T14:39:14+00:00",
+      "last_seen": "2026-07-12T04:07:25+00:00"
+    },
+    {
+      "id": "afd-s-saxony-anhalt-100-day-plan",
+      "title": "AfD's Saxony-Anhalt 100-day plan",
+      "blurb": "The Alternative für Deutschland (AfD) unveiled a controversial 100-day plan for Saxony-Anhalt, including stricter immigration policies, mandatory work for asylum seekers, and increased deportations. This has sparked significant backlash and debate over the party's extremist tendencies.",
+      "affect": "This commands attention due to the high affective investment in AfD's rise, the alarmist framing of their policies, and the polarized contention over immigration and national identity.",
+      "intensity": 4,
+      "affect_signals": [
+        "alarmist framing",
+        "polarized contention",
+        "outrage-coded language",
+        "cross-source repetition",
+        "moral panic register"
+      ],
+      "categories": [
+        "Alternative für Deutschland"
+      ],
+      "article_count": 35,
+      "refs": [
+        {
+          "title": "Neue Umfrage: AfD bleibt vorn – aber die Union holt auf",
+          "source": "Watson",
+          "url": "https://www.watson.ch/international/umfrage/338485000-neue-umfrage-afd-bleibt-vorn-aber-die-union-holt-auf",
+          "date": "2026-07-12T01:45:47+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Umfrage: Union verkürzt Rückstand auf die AfD – große Unzufriedenheit mit Merz",
+          "source": "WELT",
+          "url": "https://www.welt.de/politik/deutschland/article6a52be91bf1e9b647262e3f6/umfrage-union-verkuerzt-rueckstand-auf-die-afd-grosse-unzufriedenheit-mit-merz.html",
+          "date": "2026-07-11T22:30:58+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "AfD bleibt stärkste Kraft im aktuellen Insa-Sonntagstrend",
+          "source": "Hasepost",
+          "url": "https://hasepost.de/afd-bleibt-staerkste-kraft-im-aktuellen-insa-sonntagstrend-731563/",
+          "date": "2026-07-11T20:24:03+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Insa: Union legt zu, AfD bleibt aber stärkste Kraft",
+          "source": "Oldenburger Onlinezeitung",
+          "url": "https://www.oldenburger-onlinezeitung.de/nachrichten/insa-union-legt-zu-afd-bleibt-aber-staerkste-kraft-214978.html",
+          "date": "2026-07-11T20:21:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Was Sachsen-Anhalts AfD plant - und wem das Sorge bereitet",
+          "source": "ZDFheute",
+          "url": "https://www.zdfheute.de/politik/deutschland/afd-sachsen-anhalt-landtagswahl-100-tage-programm-100.html",
+          "date": "2026-07-11T19:06:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Pressetimme: 'Handelsblatt' zum 100-Tage-Programm der AfD in Sachsen-Anhalt - 11.07.26 - News",
+          "source": "Ariva",
+          "url": "https://www.ariva.de/news/pressetimme-handelsblatt-zum-100-tage-programm-der-afd-in-12065440",
+          "date": "2026-07-11T18:35:03+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Pressetimme: 'Handelsblatt' zum 100-Tage-Programm der AfD in Sachsen-Anhalt - boerse.de",
+          "source": "boerse.de",
+          "url": "https://www.boerse.de/nachrichten-amp/Pressetimme-Handelsblatt-zum-100-Tage-Programm-der-AfD-in-Sachsen-Anhalt/38445525",
+          "date": "2026-07-11T18:35:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Sachsen-Anhalt: AfD stellt 100-Tage-Plan vor",
+          "source": "ZDFheute",
+          "url": "https://www.zdfheute.de/video/heute-nachrichten/landtagswahl-afd-sachsen-sofortprogramm-video-100.html",
+          "date": "2026-07-11T17:00:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "AfD mit drastischem 100-Tage-Plan für Sachsen-Anhalt",
+          "source": "Joyn",
+          "url": "https://newstime.joyn.de/themen/politik/afd-stellt100-tage-plan-fuer-sachsen-anhalt-vor-154084",
+          "date": "2026-07-11T16:24:43+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "100-Tage-Programm: Was die AfD in Sachsen-Anhalt nach der Wahl vorhat - Politik - SZ.de",
+          "source": "SZ.de",
+          "url": "https://www.sueddeutsche.de/politik/afd-sachsen-anhalt-ulrich-siegmund-li.3513407",
+          "date": "2026-07-11T15:13:52+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Sachsen-Anhalt: AfD-Spitzenkandidat Siegmund strebt Alleinregierung an",
+          "source": "FAZ",
+          "url": "https://www.faz.net/video/sachsen-anhalt-afd-spitzenkandidat-siegmund-strebt-alleinregierung-an-201020835.html",
+          "date": "2026-07-11T14:53:15+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Sachsen-Anhalt: AfD-Spitzenkandidat stellt \"100-Tage-Plan\" vor - Panorama - SZ.de",
+          "source": "SZ.de",
+          "url": "https://www.sueddeutsche.de/panorama/sachsen-anhalt-afd-spitzenkandidat-stellt-100-tage-plan-vor-li.3514372",
+          "date": "2026-07-11T14:17:01+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "AfD plant Regierungsübernahme in Sachsen-Anhalt: Das sind Siegmunds Sofortmaßnahmen",
+          "source": "Frankfurter Rundschau",
+          "url": "https://www.fr.de/politik/regierungsuebernahme-geplant-wie-die-afd-sachsen-anhalt-veraendern-will-zr-94392999.html",
+          "date": "2026-07-11T14:06:24+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Siegmund stellt 100-Tage-Programm der AfD für Sachsen-Anhalt vor",
+          "source": "FAZ",
+          "url": "https://www.faz.net/aktuell/politik/inland/siegmund-stellt-100-tage-programm-der-afd-fuer-sachsen-anhalt-vor-accg-201020619.html",
+          "date": "2026-07-11T13:59:24+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Abschiebehaft und Arbeitspflicht: AfD stellt Zehn-Punkte-Plan für Sachsen-Anhalt vor",
+          "source": "MDR.de",
+          "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/100-tage-programm-nach-wahl,afd-parteitag-magdeburg-116.html",
+          "date": "2026-07-11T13:58:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Landesparteitag in Magdeburg - 100-Tage-Programm der AfD Sachsen-Anhalt vorgestellt",
+          "source": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/100-tage-programm-der-afd-sachsen-anhalt-vorgestellt-100.html",
+          "date": "2026-07-11T13:56:10+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Landtagswahl: Die AfD und ihr 100-Tage-Plan für Sachsen-Anhalt - General-Anzeiger Bonn",
+          "source": "",
+          "url": "https://ga.de/news/politik/deutschland/die-afd-und-ihr-100-tage-plan-fuer-sachsen-anhalt_aid-151346133",
+          "date": "2026-07-11T13:43:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Sachsen-Anhalt: AfD präsentiert 100-Tage-Plan - Panorama - SZ.de",
+          "source": "SZ.de",
+          "url": "https://www.sueddeutsche.de/panorama/sachsen-anhalt-afd-praesentiert-100-tage-plan-li.3514365",
+          "date": "2026-07-11T13:39:47+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Sachsen-Anhalt: AfD präsentiert 100-Tage-Plan",
+          "source": "Hit Radio FFH",
+          "url": "https://www.ffh.de/video/mediathek/473464-sachsen-anhalt-afd-praesentiert-100-tage-plan.html",
+          "date": "2026-07-11T13:38:01+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "\"Das Ziel heißt Staatskanzlei\": AfD plant 100-Tage-Rundumschlag in Sachsen-Anhalt - n-tv.de",
+          "source": "",
+          "url": "https://www.n-tv.de/politik/AfD-plant-100-Tage-Rundumschlag-in-Sachsen-Anhalt-id31075113.html",
+          "date": "2026-07-11T13:12:23+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "„Wir haben Geld für die ganze Welt, aber bekommen keine kostenlose Kita-Versorgung hin“",
+          "source": "WELT",
+          "url": "https://www.welt.de/videos/video6a5234da7932425e5583766b/afd-in-sachsen-anhalt-wir-haben-geld-fuer-die-ganze-welt-aber-bekommen-keine-kostenlose-kita-versorgung-hin.html",
+          "date": "2026-07-11T12:53:25+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "„Woher das Geld für all diese Dinge kommt, ist noch nicht ganz schlüssig“, sagt Stordel",
+          "source": "WELT",
+          "url": "https://www.welt.de/videos/video6a521a781aef3ee5864814ce/afd-in-sachsen-anhalt-woher-das-geld-fuer-all-diese-dinge-kommt-ist-noch-nicht-ganz-schluessig-sagt-stordel.html",
+          "date": "2026-07-11T12:03:19+00:00",
           "category": "germany"
         },
         {
@@ -44,10 +649,10 @@
           "category": "germany"
         },
         {
-          "title": "Parteitag der AfD in Sachsen-Anhalt",
-          "source": "tagesschau.de",
-          "url": "https://www.tagesschau.de/video/video-1612932.html",
-          "date": "2026-07-11T10:15:16+00:00",
+          "title": "AfD setzt auf Regierungswechsel: Siegmund präsentiert 100-Tage-Programm",
+          "source": "Berliner Zeitung",
+          "url": "https://www.berliner-zeitung.de/article/afd-legt-100-tage-programm-fuer-regierungsuebernahme-vor-10188658",
+          "date": "2026-07-11T09:52:55+00:00",
           "category": "germany"
         },
         {
@@ -84,268 +689,183 @@
           "url": "https://www.tagesschau.de/video/video-1612910.html",
           "date": "2026-07-11T09:01:29+00:00",
           "category": "germany"
-        },
-        {
-          "title": "When is the Clacton by-election and who is standing in Farage’s clash with Binface?",
-          "source": "The Independent",
-          "url": "https://www.independent.co.uk/news/uk/politics/nigel-farage-byelection-clacton-who-is-standing-b3011341.html",
-          "date": "2026-07-10T11:09:00+00:00",
-          "category": "uk"
         }
       ],
       "first_seen": "2026-07-11T14:01:28+00:00",
-      "last_seen": "2026-07-11T14:01:28+00:00"
-    },
-    {
-      "id": "marine-le-pen-s-eligibility-crisis",
-      "title": "Marine Le Pen's eligibility crisis",
-      "blurb": "Marine Le Pen's legal troubles continue as she faces a conviction for embezzlement, which could impact her eligibility to run in the 2027 French presidential election. Despite this, she has announced her candidacy, sparking debates about judicial influence on politics.",
-      "affect": "This commands attention due to the high moral charge of her legal battles and the implications for France's political landscape, with strong emotional framing around justice and democracy.",
-      "intensity": 5,
-      "affect_signals": [
-        "moral charge",
-        "polarized contention",
-        "outrage-coded language",
-        "cross-source repetition"
-      ],
-      "categories": [
-        "fr_politics",
-        "legal_issues"
-      ],
-      "article_count": 30,
-      "refs": [
-        {
-          "title": "De Toto Riina à Marine Le Pen, ces privilèges conquis par les délinquants",
-          "source": "Le Club de Mediapart",
-          "url": "https://blogs.mediapart.fr/khaled-satour/blog/110726/de-toto-riina-marine-le-pen-ces-privileges-conquis-par-les-delinquants",
-          "date": "2026-07-11T11:47:05+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Trash Politics with Brio: Count Binface versus Nigel Farage",
-          "source": "Modern Ghana",
-          "url": "https://www.modernghana.com/news/1509715/trash-politics-with-brio-count-binface-versus.html",
-          "date": "2026-07-11T11:07:08+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Les métiers que Marine Le Pen ne peut plus exercer selon une avocate",
-          "source": "Le Dauphiné Libéré",
-          "url": "https://www.ledauphine.com/videos/les-metiers-que-marine-le-pen-ne-peut-plus-exercer-selon-une-avocate-3vzluxu?playlist=qls5zz",
-          "date": "2026-07-11T10:50:44+00:00",
-          "category": "france"
-        },
-        {
-          "title": "El Gobierno continúa calibrando la agenda internacional de Milei",
-          "source": "Agencia Noticias Argentinas",
-          "url": "https://noticiasargentinas.com/politica/el-gobierno-continua-calibrando-la-agenda-internacional-de-milei_a6a515a70222a027f5f0608c7",
-          "date": "2026-07-11T10:35:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Magyar Péter: Vajon mit keresett Sulyok Tamás fia az elnök 12 napos amerikai útján a honvédségi Falcon gépen?",
-          "source": "24.hu",
-          "url": "https://24.hu/belfold/2026/07/11/magyar-peter-sulyok-tamas-amerikai-ut-koztarsasagi-elnok/",
-          "date": "2026-07-11T10:08:00+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Marine Le Pen’s redemption story",
-          "source": "Financial Times",
-          "url": "https://www.ft.com/content/17c6d9ac-6793-4ef2-90c6-a6a3e9de9fc3",
-          "date": "2026-07-11T10:00:08+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Tusk wykiwał PiS z Wołyniem. Prawica szaleje, bo Mur Pamięci to nie ich pomysł",
-          "source": "naTemat.pl",
-          "url": "https://natemat.pl/660496,tusk-wykiwal-pis-z-wolyniem-prawica-szaleje-bo-mur-pamieci-to-nie-ich-pomysl",
-          "date": "2026-07-11T09:55:21+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Bracelet électronique de Marine Le Pen : «La première question à se poser serait celle de la fréquence de ses déplacements et de leur amplitude horaire»",
-          "source": "Le Figaro",
-          "url": "https://www.lefigaro.fr/actualite-france/bracelet-electronique-de-marine-le-pen-la-premiere-question-a-se-poser-serait-celle-de-la-frequence-de-ses-deplacements-et-de-leur-amplitude-horaire-20260711",
-          "date": "2026-07-11T09:30:00+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Var : Forte mobilisation pour Marine Le Pen en 3e circonscription",
-          "source": "Presse Agence",
-          "url": "https://presseagence.fr/var-presidentielle-forte-mobilisation-militante-dans-la-3%E1%B5%89-circonscription/",
-          "date": "2026-07-11T08:32:17+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Edito. Le Pen-Bardella : un ticket choc ? - Nice-Matin",
-          "source": "",
-          "url": "https://www.nicematin.com/societe/debat/edito/edito-le-pen-bardella-un-ticket-choc-10688709",
-          "date": "2026-07-11T08:10:07+00:00",
-          "category": "france"
-        },
-        {
-          "title": "‘Politicians have always been schemers’: upheld conviction fails to dent Le Pen’s popularity",
-          "source": "The Guardian",
-          "url": "https://www.theguardian.com/world/2026/jul/11/upheld-conviction-le-pen-popularity-france",
-          "date": "2026-07-11T08:00:00+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Pourquoi le programme économique du RN inquiète encore les entreprises malgré le virage de Marine Le Pen - parlons-politique.fr",
-          "source": "",
-          "url": "https://www.parlons-politique.fr/elections/pourquoi-le-programme-economique-du-rn-inquiete-encore-les-entreprises-malgre-le-virage-de-marine-le-pen_23459/",
-          "date": "2026-07-11T07:29:36+00:00",
-          "category": "france"
-        },
-        {
-          "title": "En cas d'élection de Marine Le Pen, «le plus probable serait qu'elle soit dispensée du port du bracelet le temps de son mandat», affirme Benjamin Morel",
-          "source": "Europe 1",
-          "url": "https://www.europe1.fr/politique/en-cas-delection-de-marine-le-pen-le-plus-probable-serait-quelle-soit-dispensee-du-port-du-bracelet-le-temps-de-son-mandat-affirme-benjamin-morel-970353?amp",
-          "date": "2026-07-11T06:47:38+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Présidentielle 2027 : comment le RN se prépare à surmonter les accusations sur l'intégrité de Marine Le Pen durant la campagne ?",
-          "source": "Europe 1",
-          "url": "https://www.europe1.fr/politique/presidentielle-2027-comment-le-rn-se-prepare-a-surmonter-les-accusations-sur-lintegrite-de-marine-le-pen-durant-la-campagne-970287",
-          "date": "2026-07-11T05:05:00+00:00",
-          "category": "france"
-        },
-        {
-          "title": "L'Atelier politique - Edwige Diaz : «Nous sommes là pour sauver la France»",
-          "source": "RFI",
-          "url": "https://www.rfi.fr/fr/podcasts/l-atelier-politique/20260711-edwige-diaz-nous-sommes-l%C3%A0-pour-sauver-la-france",
-          "date": "2026-07-11T05:00:18+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Le Pen's Conviction boosts her to front-runner status in France's Presidential race",
-          "source": "Escudo Digital",
-          "url": "https://www.escudodigital.com/en/geopolitics/le-pens-conviction-boosts-her-to-front-runner-status-in-frances-presidential-race.html",
-          "date": "2026-07-11T05:00:05+00:00",
-          "category": "france"
-        },
-        {
-          "title": "VIDÉO. Allons-y franco: le pari risqué de Marine Le Pen",
-          "source": "tv5monde",
-          "url": "https://information.tv5monde.com/international/video/allons-y-franco-le-pari-risque-de-marine-le-pen-2829820?amp",
-          "date": "2026-07-11T03:49:00+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Pete Hegseth’s war on beards has deep roots",
-          "source": "The Times",
-          "url": "https://www.thetimes.com/us/american-politics/article/pete-hegseth-beard-policy-navy-army-q2rdpb2hf",
-          "date": "2026-07-10T22:45:44+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Marine Le Pen Cleared To Run For President After Public Funds Scandal",
-          "source": "AOL.com",
-          "url": "https://www.aol.com/articles/marine-le-pen-cleared-run-191808000.html",
-          "date": "2026-07-10T19:34:54+00:00",
-          "category": "france"
-        },
-        {
-          "title": "\"Mêmes blessures que les homosexuels\" : Jean-Philippe Tanguy compare Marine Le Pen à Mylène Farmer",
-          "source": "Melty",
-          "url": "https://www.melty.fr/people/memes-blessures-que-les-homosexuels-jean-philippe-tanguy-compare-marine-le-pen-a-mylene-farmer-2331301.html",
-          "date": "2026-07-10T19:30:30+00:00",
-          "category": "france"
-        },
-        {
-          "title": "\"Je suis inquiet, car je pense que Marine Le Pen est une candidate infiniment plus sérieuse que Jordan Bardella\", affirme Alain Minc, essayiste",
-          "source": "BFM",
-          "url": "https://www.bfmtv.com/politique/elections/video-je-suis-inquiet-car-je-pense-que-marine-le-pen-est-une-candidate-infiniment-plus-serieuse-que-jordan-bardella-affirme-alain-minc-essayiste_VN-202607100812.html",
-          "date": "2026-07-10T19:13:23+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Marine Le Pen vows to run in France’s 2027 presidential election despite fraud conviction",
-          "source": "AOL.com",
-          "url": "https://www.aol.com/articles/marine-le-pen-vows-remain-184224000.html",
-          "date": "2026-07-10T18:53:55+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Electronic monitoring in France as Marine Le Pen appeals embezzlement verdict before election",
-          "source": "Goodreturns",
-          "url": "https://www.goodreturns.in/news/france-electronic-monitoring-le-pen-appeal-campaign-2027-election-011-1520701.html",
-          "date": "2026-07-10T18:51:54+00:00",
-          "category": "france"
-        },
-        {
-          "title": "« On ne sera jamais amies » : Diam's et Philippe Katerine, la politique en chansons contre Marine Le Pen",
-          "source": "parismatch.com",
-          "url": "https://www.parismatch.com/culture/musique/on-ne-sera-jamais-amies-diams-et-philippe-katerine-la-politique-en-chansons-contre-marine-le-pen-272474",
-          "date": "2026-07-10T18:04:47+00:00",
-          "category": "france"
-        },
-        {
-          "title": "« On ne sera jamais amies » : la charge, en chanson, de Diam's et Philippe Katerine, contre Marine Le Pen",
-          "source": "parismatch.com",
-          "url": "https://www.parismatch.com/culture/musique/on-ne-sera-jamais-amies-la-charge-en-chanson-de-diams-et-philippe-katerine-contre-marine-le-pen-272474",
-          "date": "2026-07-10T18:04:47+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Marine Le Pen candidate en 2027 : son site web volé, une rançon de 25.000 euros demandée",
-          "source": "Closer",
-          "url": "https://www.closermag.fr/politique/marine-le-pen-candidate-en-2027-son-site-web-vole-une-rancon-de-25-000-euros-demandee-3647303",
-          "date": "2026-07-10T18:02:12+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Le coup de main secret de Macron à Le Pen",
-          "source": "Le Média",
-          "url": "https://www.lemediatv.fr/emissions/2026/le-coup-de-main-secret-de-macron-a-le-pen-SHK4K5wvQyG_j49zm58qVQ",
-          "date": "2026-07-10T18:00:00+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Gabriel Attal opens his 2027 French campaign on probity as Marine Le Pen legal uncertainty shadows the race",
-          "source": "Ecostylia",
-          "url": "https://www.ecostylia.com/en/attal-le-pen-2027/",
-          "date": "2026-07-10T17:48:35+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Pour les lecteurs de Valeurs Actuelles, Marine Le Pen doit rester candidate",
-          "source": "Valeurs actuelles",
-          "url": "https://www.valeursactuelles.com/politique/presidentielle-2027-cest-la-candidate-qui-peut-faire-evoluer-notre-pays-pour-les-lecteurs-de-valeurs-actuelles-marine-le-pen-doit-rester-candidate",
-          "date": "2026-07-10T17:00:04+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Marine Le Pen souffrira-t-elle de sa condamnation pour détournement de fonds publics ? “Aux yeux de ses électeurs, elle n’est pas une politique ordinaire”",
-          "source": "Le Nouvel Obs",
-          "url": "https://www.nouvelobs.com/politique/20260710.OBS116567/marine-le-pen-souffrira-t-elle-de-sa-condamnation-pour-detournement-de-fonds-publics-aux-yeux-de-ses-electeurs-elle-n-est-pas-une-politique-ordinaire.html",
-          "date": "2026-07-10T16:00:03+00:00",
-          "category": "france"
-        }
-      ],
-      "first_seen": "2026-07-02T14:39:14+00:00",
-      "last_seen": "2026-07-11T14:01:28+00:00"
+      "last_seen": "2026-07-12T04:07:25+00:00"
     },
     {
       "id": "trump-administration-subpoenas-nyt-journalists",
       "title": "Trump administration subpoenas NYT journalists",
-      "blurb": "The Trump administration has subpoenaed New York Times journalists over their reporting on security concerns related to the new Air Force One. This move has sparked outrage and debates over press freedom and government transparency.",
-      "affect": "This commands attention due to the high affective investment in press freedom and the perceived threat to journalistic integrity, framed as a moral and democratic issue.",
+      "blurb": "The Trump administration subpoenaed multiple New York Times journalists over their reporting on Air Force One security concerns, escalating tensions over press freedom and government transparency.",
+      "affect": "This commands attention due to the high affective investment in press freedom issues, polarized contention over government transparency, and moral outrage over perceived attacks on journalism.",
       "intensity": 4,
       "affect_signals": [
+        "polarized contention",
         "outrage-coded language",
-        "moral charge",
         "cross-source repetition",
-        "alarmist framing"
+        "moral panic register",
+        "leadership crisis tone"
       ],
       "categories": [
-        "us_politics",
-        "press_freedom"
+        "MAGA / Trump"
       ],
-      "article_count": 15,
+      "article_count": 30,
       "refs": [
+        {
+          "title": "4 Reporters Subpoenaed After Asking About President Trump's Qatari Air Force One's Defenses",
+          "source": "Military.com",
+          "url": "https://www.military.com/justice-department-subpoenas-reporters-air-force-one-security",
+          "date": "2026-07-12T00:17:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump administration subpoenas journalists over Air Force One story",
+          "source": "CNA",
+          "url": "https://www.channelnewsasia.com/world/trump-administration-subpoenas-journalists-over-air-force-one-story-6248551",
+          "date": "2026-07-11T21:55:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump’s DOJ subpoenas New York Times reporters, escalating press freedom concerns",
+          "source": "Los Angeles Times",
+          "url": "https://www.latimes.com/world-nation/story/2026-07-11/trumps-doj-subpoenas-new-york-times-reporters",
+          "date": "2026-07-11T20:13:17+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump Administration Subpoenas Multiple New York Times Journalists",
+          "source": "People.com",
+          "url": "https://people.com/trump-administration-subpoenas-multiple-new-york-times-journalists-12016616",
+          "date": "2026-07-11T19:26:20+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump administration subpoenas journalists over Air Force One reporting",
+          "source": "CNN",
+          "url": "https://edition.cnn.com/2026/07/11/politics/video/trump-administration-subpoenas-journalists-air-force-one-digvid-vrtc",
+          "date": "2026-07-11T18:59:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump administration subpoenas New York Times reporters over coverage",
+          "source": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/7/11/trump-administration-subpoenas-new-york-times-reporters-over-coverage",
+          "date": "2026-07-11T18:46:43+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump administration trying to force reporters to identify sources on Air Force One story",
+          "source": "Straight Arrow",
+          "url": "https://san.com/cc/reporters-cited-security-concerns-about-new-air-force-one-doj-demands-to-know-their-sources/",
+          "date": "2026-07-11T18:00:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "New York Times reporters are subpoenaed after Air Force One stories, raising press freedom concerns",
+          "source": "PBS",
+          "url": "https://www.pbs.org/newshour/politics/new-york-times-reporters-are-subpoenaed-after-air-force-one-stories-raising-press-freedom-concerns",
+          "date": "2026-07-11T17:13:39+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump Administration Subpoenas New York Times Reporters Over Air Force One Story - News of the United States",
+          "source": "NOTUS",
+          "url": "https://www.notus.org/trump-white-house/trump-subpoena-new-york-times-air-force-one",
+          "date": "2026-07-11T16:52:48+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump administration subpoenas New York Times journalists over reporting on Air Force One",
+          "source": "Anadolu Ajansı",
+          "url": "https://www.aa.com.tr/en/americas/trump-administration-subpoenas-new-york-times-journalists-over-reporting-on-air-force-one/3995199",
+          "date": "2026-07-11T16:46:28+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump administration subpoenas New York Times journalists over Air Force One reporting",
+          "source": "BBC",
+          "url": "https://www.bbc.com/news/articles/cpd3g8q51g7o",
+          "date": "2026-07-11T15:40:23+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Roma: seminario su coesione e competitività promosso da Fratelli d'Italia",
+          "source": "Canale 7 TV",
+          "url": "https://www.canale7.tv/news/16534/roma-seminario-su-coesione-e-competitivita-promosso-da-fratelli-ditalia.html",
+          "date": "2026-07-11T15:39:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Trump administration subpoenas journalists who reported security concerns",
+          "source": "WRAL",
+          "url": "https://www.wral.com/news/local/trump-administration-subpoenas-journalists-july-2026/",
+          "date": "2026-07-11T15:25:40+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump administration subpoenas New York Times reporters after Air Force One security report",
+          "source": "The Globe and Mail",
+          "url": "https://www.theglobeandmail.com/world/article-new-york-times-subpoenas-air-force-one/",
+          "date": "2026-07-11T15:23:30+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump administration subpoenas New York Times journalists over new Air Force One reporting",
+          "source": "The Guardian",
+          "url": "https://www.theguardian.com/us-news/2026/jul/11/justice-department-subpoenas-new-york-times-air-force-one",
+          "date": "2026-07-11T14:17:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump subpoenas New York Times journalists over Air Force One security concerns: report",
+          "source": "New York Daily News",
+          "url": "https://www.nydailynews.com/2026/07/11/trump-subpoenas-new-york-times-journalists-over-air-force-one-security-concerns-nyc/",
+          "date": "2026-07-11T14:08:21+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump admin subpoena NY Times reporters after claiming prez swapped out $400M Air Force One jet duirng trip to Turkey",
+          "source": "New York Post",
+          "url": "https://nypost.com/2026/07/11/us-news/times-reporters-subpoenaed-after-air-force-one-report/",
+          "date": "2026-07-11T13:52:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump team issues subpoenas for New York Times journalists over plane report - the-independent.com",
+          "source": "",
+          "url": "https://www.the-independent.com/news/world/americas/us-politics/trump-new-york-times-subpoenas-b3013139.html",
+          "date": "2026-07-11T13:17:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "New York Times reporters are subpoenaed after Air Force One reporting, newspaper says",
+          "source": "WLFI",
+          "url": "https://www.wlfi.com/2026/07/11/new-york-times-reporters-are-subpoenaed-after-air-force-one-reporting-newspaper-says/",
+          "date": "2026-07-11T13:01:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump administration subpoenas New York Times journalists who reported security concerns around new Air Force One",
+          "source": "KTEN",
+          "url": "https://www.kten.com/news/politics/trump-administration-subpoenas-new-york-times-journalists-who-reported-security-concerns-around-new-air-force/article_ca4dc43d-d1f8-5a26-b4ee-4b219cc12d28.html",
+          "date": "2026-07-11T12:36:38+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Daniele Fabbri contro Renzi, \"Mi ha rubato il titolo dello spettacolo\": è il comico querelato da Meloni",
+          "source": "Virgilio",
+          "url": "https://www.virgilio.it/notizie/daniele-fabbri-contro-renzi-mi-ha-rubato-il-titolo-dello-spettacolo-e-il-comico-querelato-da-meloni-1768305",
+          "date": "2026-07-11T12:31:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Marco Rubio SLAMS Walz over pardon of illegal immigrant",
+          "source": "Fox News",
+          "url": "https://www.foxnews.com/video/6400881479112",
+          "date": "2026-07-11T11:52:44+00:00",
+          "category": "usa"
+        },
         {
           "title": "DOJ subpoenas NYT journalists: Donald Trump administration subpoenas New York Times reporters over new Air Force One reporting",
           "source": "ABC7 Chicago",
@@ -354,11 +874,11 @@
           "category": "usa"
         },
         {
-          "title": "Donald Trump's new Air Force One raises security concerns",
-          "source": "DW.com",
-          "url": "https://www.dw.com/en/donald-trump-air-force-one-qatar-safety/video-77915807",
-          "date": "2026-07-11T11:26:15+00:00",
-          "category": "usa"
+          "title": "Magyar Péter megüzente Sulyok Tamásnak, mi történik, ha nem írja alá az alkotmánymódosítást",
+          "source": "Szabad Magyar Szó",
+          "url": "https://szmsz.press/2026/07/11/magyar-peter-meguzente-sulyok-tamasnak-mi-tortenik-ha-nem-irja-ala-az-alkotmanymodositast/",
+          "date": "2026-07-11T10:59:42+00:00",
+          "category": "hungary"
         },
         {
           "title": "Trump administration subpoenas Times journalists who reported security concerns around new Air Force One",
@@ -375,39 +895,25 @@
           "category": "usa"
         },
         {
-          "title": "Donald Trump administration subpoenas journalists over Air Force One security report",
-          "source": "The Jerusalem Post",
-          "url": "https://www.jpost.com/international/article-902156",
-          "date": "2026-07-11T07:52:01+00:00",
+          "title": "44 anni fa il trionfo a Spagna 82’",
+          "source": "Lega Serie A",
+          "url": "https://www.legaseriea.it/serie-a/news/44-anni-fa-il-trionfo-a-spagna-82",
+          "date": "2026-07-11T05:30:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Trump looked to bypass federal election agency, report says",
+          "source": "DW.com",
+          "url": "https://www.dw.com/en/us-trump-looked-to-bypass-federal-election-agency-before-firings-says-report/a-77913362",
+          "date": "2026-07-11T04:03:21+00:00",
           "category": "usa"
         },
         {
-          "title": "Federal judge dismisses January 6 case against Proud Boys at Trump administration's request",
-          "source": "Anadolu Ajansı",
-          "url": "https://www.aa.com.tr/en/americas/federal-judge-dismisses-january-6-case-against-proud-boys-at-trump-administrations-request/3994827",
-          "date": "2026-07-11T07:30:38+00:00",
+          "title": "Trump administration opens endangered species’ habitats to development, reversing 50 years of environmental law",
+          "source": "CNN",
+          "url": "https://www.cnn.com/2026/07/10/climate/trump-endangered-species-habitats-rule-change",
+          "date": "2026-07-10T22:14:26+00:00",
           "category": "usa"
-        },
-        {
-          "title": "Harry Kane confirms round of golf with Donald Trump: ‘A pretty surreal experience’",
-          "source": "The New York Times",
-          "url": "https://www.nytimes.com/athletic/7437726/2026/07/10/harry-kane-confirms-round-of-golf-with-donald-trump-a-pretty-surreal-experience/",
-          "date": "2026-07-11T00:21:01+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Trump social media post involving Minnesota children called ‘anti-Muslim bigotry’",
-          "source": "Los Angeles Times",
-          "url": "https://www.latimes.com/world-nation/story/2026-07-10/trump-social-media-post-involving-minnesota-children-called-anti-muslim-bigotry",
-          "date": "2026-07-10T22:29:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Air Force One Mystery Deepens After New Report",
-          "source": "American Center for Law and Justice",
-          "url": "https://aclj.org/news/air-force-one-mystery-deepens-after-new-report",
-          "date": "2026-07-10T21:01:11+00:00",
-          "category": "poland"
         },
         {
           "title": "Trump ousts members of bipartisan federal election commission",
@@ -415,404 +921,242 @@
           "url": "https://www.nbcwashington.com/news/politics/donald-trump-election-assistance-commission-members/4128698/",
           "date": "2026-07-10T19:21:09+00:00",
           "category": "usa"
-        },
-        {
-          "title": "Bipartisan Senators Reach Agreement With Trump Administration to Advance New Russia Sanctions Bill",
-          "source": "Quiver Quantitative",
-          "url": "https://www.quiverquant.com/news/Bipartisan+Senators+Reach+Agreement+With+Trump+Administration+to+Advance+New+Russia+Sanctions+Bill",
-          "date": "2026-07-10T18:27:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "What we know about Iran's apparent plot to assassinate President Trump",
-          "source": "CBS News",
-          "url": "https://www.cbsnews.com/video/what-we-know-about-irans-plot-to-assassinate-president-trump/",
-          "date": "2026-07-10T18:00:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Trump says he 'will not sign' bipartisan housing bill, but doesn't threaten veto either - ABC News",
-          "source": "Breaking News, Latest News and Videos",
-          "url": "https://abcnews.com/Politics/trump-sign-bipartisan-housing-bill-threaten-veto/story?id=134649463",
-          "date": "2026-07-10T13:58:44+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "President Trump ousts election commission members in latest push to reshape U.S. voting process",
-          "source": "KTVN",
-          "url": "http://www.ktvn.com/news/national/president-trump-ousts-election-commission-members-in-latest-push-to-reshape-u-s-voting-process/article_09e5fb8c-c3ba-4d5a-b54f-3a877959696b.html",
-          "date": "2026-07-10T13:29:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Donald Trump ousts election commission members in latest push to reshape US voting process",
-          "source": "Los Angeles Daily News",
-          "url": "https://www.dailynews.com/2026/07/10/trump-ousts-election-commission-members/",
-          "date": "2026-07-10T12:56:57+00:00",
-          "category": "usa"
         }
       ],
       "first_seen": "2026-07-11T14:01:28+00:00",
-      "last_seen": "2026-07-11T14:01:28+00:00"
+      "last_seen": "2026-07-12T04:07:25+00:00"
     },
     {
       "id": "pis-opposes-ukraine-s-eu-membership",
       "title": "PiS opposes Ukraine's EU membership",
-      "blurb": "Poland's PiS party has proposed a resolution opposing Ukraine's EU membership, citing historical grievances related to the Volhynia massacre and the glorification of Ukrainian nationalist leaders. This has sparked significant controversy and debate.",
-      "affect": "This commands attention due to the charged historical context and the moral implications of opposing Ukraine's EU integration, framed as a matter of national honor and historical justice.",
+      "blurb": "Poland's Law and Justice (PiS) party has taken a strong stance against Ukraine's EU membership, citing historical grievances over the Volhynia massacre and the glorification of Ukrainian nationalist groups. This has escalated tensions between Poland and Ukraine.",
+      "affect": "This commands attention due to the high affective investment in historical grievances, polarized contention over EU expansion, and moral outrage over perceived national betrayals.",
       "intensity": 4,
       "affect_signals": [
-        "moral charge",
         "polarized contention",
+        "moral panic register",
         "outrage-coded language",
-        "cross-source repetition"
+        "cross-source repetition",
+        "leadership crisis tone"
       ],
       "categories": [
-        "pl_politics",
-        "eu_relations"
+        "Prawo i Sprawiedliwość"
       ],
-      "article_count": 25,
+      "article_count": 30,
       "refs": [
         {
-          "title": "PiS sprzeciwia się integracji Ukrainy z Unią Europejską. Stawia warunki i ogłasza projekt uchwały",
-          "source": "Zero.pl",
-          "url": "https://zero.pl/news/pis-sprzeciwia-sie-integracji-ukrainy-z-unia-europejska-stawia-warunki",
-          "date": "2026-07-11T11:40:19+00:00",
+          "title": "All set for 9th OIC moot on women today",
+          "source": "The Express Tribune",
+          "url": "https://tribune.com.pk/story/2617782/all-set-for-9th-oic-moot-on-women-today",
+          "date": "2026-07-12T00:14:23+00:00",
           "category": "poland"
         },
         {
-          "title": "Szef MON o projekcie uchwały PiS ws. sprzeciwu wobec integracji Ukrainy z UE: rząd nie musi być do niczego wzywany",
-          "source": "Portal Samorządowy",
-          "url": "https://www.portalsamorzadowy.pl/polityka-i-spoleczenstwo/szef-mon-o-projekcie-uchwaly-pis-ws-sprzeciwu-wobec-integracji-ukrainy-z-ue-rzad-nie-musi-byc-do-niczego-wzywany,668300.html",
-          "date": "2026-07-11T10:57:40+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Nowa deklaracja PiS dotycząca Ukrainy. \"Wzywamy rząd\"",
-          "source": "Fakt",
-          "url": "https://www.fakt.pl/polityka/pis-z-nowym-stanowiskiem-w-sprawie-ukrainy-jest-apel-do-rzadu-tuska/669ny7p",
-          "date": "2026-07-11T10:10:16+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "UPA albo UE. PiS składa projekt uchwały ws. akcesji Ukrainy!",
-          "source": "wPolityce.pl",
-          "url": "https://wpolityce.pl/polityka/764719-upa-albo-ue-pis-sklada-projekt-uchwaly-ws-akcesji-ukrainy",
-          "date": "2026-07-11T09:54:18+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "PiS składa projekt uchwały przeciw członkostwu Ukrainy w UE. Powodem gloryfikacja UPA",
-          "source": "Kresy.pl",
-          "url": "https://kresy.pl/wydarzenia/pis-sklada-projekt-uchwaly-przeciw-czlonkostwu-ukrainy-w-ue-powodem-gloryfikacja-upa/",
-          "date": "2026-07-11T09:34:02+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "PiS domaga się od rządu sprzeciwu wobec akcesji Ukrainy do UE. Czarnek składa projekt uchwały",
-          "source": "Gazeta",
-          "url": "https://wiadomosci.gazeta.pl/polityka/7,198012,32908014,pis-domaga-sie-od-rzadu-sprzeciwu-wobec-akcesji-ukrainy-do-ue.html",
-          "date": "2026-07-11T08:46:49+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "PiS uderza w Ukrainę w rocznicę Wołynia. Czarnek ogłosił to pod pomnikiem ofiar",
-          "source": "naTemat.pl",
-          "url": "https://natemat.pl/660493,pis-uderza-w-ukraine-w-rocznice-wolynia-czarnek-oglosil-to-pod-pomnikiem-ofiar",
-          "date": "2026-07-11T08:38:04+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Czarnek: Ukraina z banderyzmem nie wejdzie do UE. PiS składa projekt uchwały",
-          "source": "Polskie Radio 24",
-          "url": "https://www.polskieradio24.pl/polska/pis-sprzeciwia-sie-wejsciu-ukrainy-do-ue-czarnek-oglasza-projekt-uchwaly",
-          "date": "2026-07-11T08:29:44+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "PiS składa projekt uchwały. Nie chce Ukrainy w Unii Europejskiej",
-          "source": "WP Wiadomości",
-          "url": "https://wiadomosci.wp.pl/pis-sklada-projekt-uchwaly-nie-chce-ukrainy-w-unii-europejskiej-7306265302071712a",
-          "date": "2026-07-11T08:14:41+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "PiS nie chce Ukrainy w UE. Czarnek zabrał głos. „Wzywamy rząd\"",
-          "source": "Radio Zet",
-          "url": "https://wiadomosci.radiozet.pl/polityka/pis-nie-chce-ukrainy-w-ue-czarnek-zabral-glos-wzywamy-rzad",
-          "date": "2026-07-11T07:55:39+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "PiS składa projekt uchwały ws. integracji Ukrainy z UE i pamięci o ofiarach Wołynia",
-          "source": "RadioMaryja.pl",
-          "url": "https://www.radiomaryja.pl/informacje/pis-sklada-projekt-uchwaly-ws-integracji-ukrainy-z-ue-i-pamieci-o-ofiarach-wolynia/",
-          "date": "2026-07-11T07:49:55+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "\"Ukraina z banderyzmem nie wejdzie do UE\". PiS składa uchwałę i apeluje do rządu",
-          "source": "Tygodnik Solidarność",
-          "url": "https://tysol.pl/wiadomosci/ukraina-z-banderyzmem-nie-wejdzie-do-ue-pis-sklada-uchwale-i-apeluje-do-rzadu,186203",
-          "date": "2026-07-11T07:43:58+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "PiS przeciwny członkostwu Ukrainy w Unii Europejskiej. Ma złożyć projekt uchwały",
-          "source": "Polskie Radio Lublin",
-          "url": "https://radio.lublin.pl/2026/07/pis-przeciwny-czlonkostwu-ukrainy-w-unii-europejskiej-ma-zlozyc-projekt-uchwaly/",
-          "date": "2026-07-11T06:59:00+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "PiS składa uchwałę ws. Ukrainy. Czarnek apeluje do rządu",
+          "title": "Patryk Jaki z deklaracją. \"Albo twardy kurs, albo beze mnie\"",
           "source": "PolsatNews.pl",
-          "url": "https://www.polsatnews.pl/wiadomosc/2026-07-11/pis-sklada-uchwale-przeciwko-ukrainie-w-ue-ruch-tlumaczy-gloryfikacja-upa/",
-          "date": "2026-07-11T06:44:00+00:00",
+          "url": "https://www.polsatnews.pl/wiadomosc/2026-07-11/patryk-jaki-zlozyl-deklaracje-albo-twardy-kurs-albo-ja-sie-wypisuje/",
+          "date": "2026-07-11T20:54:00+00:00",
           "category": "poland"
         },
         {
-          "title": "\"Wzywamy rząd do sprzeciwu\". PiS chce zablokować drogę Ukrainy do UE",
-          "source": "Wiadomości Onet",
-          "url": "https://wiadomosci.onet.pl/kraj/pis-chce-zablokowac-droge-ukrainy-do-ue-wzywamy-rzad-do-sprzeciwu/nk2cc1y",
-          "date": "2026-07-11T06:19:35+00:00",
+          "title": "Jarosław Kaczyński: Ukraina nie może wejść do UE z banderyzmem. 'My zrobimy wszystko'",
+          "source": "Gazeta",
+          "url": "https://wiadomosci.gazeta.pl/polityka/7,198012,32908491,kaczynski-stawia-ukrainie-warunki-ws-wejscia-do-ue-zrobimy.html",
+          "date": "2026-07-11T20:50:10+00:00",
           "category": "poland"
         },
         {
-          "title": "PiS nie chce Ukrainy w Unii Europejskiej. Jest projekt uchwały",
-          "source": "Do Rzeczy",
-          "url": "https://dorzeczy.pl/opinie/913438/pis-nie-chce-ukrainy-w-unii-europejskiej-jest-projekt-uchwaly.html",
-          "date": "2026-07-11T06:11:00+00:00",
+          "title": "Jarosław Kaczyński w Chełmie: z bagażem banderyzmu Ukraina nie może wejść do UE",
+          "source": "Kurier Lubelski",
+          "url": "https://kurierlubelski.pl/jaroslaw-kaczynski-w-chelmie-z-bagazem-banderyzmu-ukraina-nie-moze-wejsc-do-ue/ar/c1p2-29173259",
+          "date": "2026-07-11T20:25:22+00:00",
           "category": "poland"
         },
         {
-          "title": "PiS składa projekt uchwały sprzeciwiającej się członkostwu Ukrainy w UE",
-          "source": "HISTORIA.org.pl",
-          "url": "https://historia.org.pl/2026/07/11/pis-sklada-projekt-uchwaly-sprzeciwiajacej-sie-czlonkostwu-ukrainy-w-ue/",
-          "date": "2026-07-11T05:39:00+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Poland could cut arms aid to Ukraine as WWII spat continues",
-          "source": "DW.com",
-          "url": "https://www.dw.com/en/poland-could-cut-arms-aid-to-ukraine-as-wwii-spat-continues/a-77893170",
-          "date": "2026-07-11T05:22:27+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Tusk urges Poles to curb emotions to rebuild relations with Ukraine - RBC-Ukraine",
+          "title": "Nawrocki calls for ban on Ukrainian Insurgent Army flag in Poland - RBC-Ukraine",
           "source": "",
-          "url": "https://newsukraine.rbc.ua/news/tusk-urges-poles-to-curb-emotions-to-rebuild-1783701914.html",
-          "date": "2026-07-10T16:52:14+00:00",
+          "url": "https://newsukraine.rbc.ua/news/nawrocki-calls-for-ban-on-ukrainian-insurgent-1783800707.html",
+          "date": "2026-07-11T20:15:47+00:00",
           "category": "poland"
         },
         {
-          "title": "Patriot missiles for Ukraine: why they are fighting in Poland ᐉ News from Fakti.bg - Opinions",
-          "source": "Fakti.bg",
-          "url": "https://fakti.bg/en/mnenia/1066709-patriot-missiles-for-ukraine-why-they-are-fighting-in-poland",
-          "date": "2026-07-10T16:01:00+00:00",
+          "title": "Poland marks anniversary of WWII massacre by Ukrainian Nazi collaborators (VIDEOS)",
+          "source": "Big News Network.com",
+          "url": "https://www.bignewsnetwork.com/news/279181512/poland-marks-anniversary-of-wwii-massacre-by-ukrainian-nazi-collaborators-videos",
+          "date": "2026-07-11T19:41:00+00:00",
           "category": "poland"
         },
         {
-          "title": "Patriot missiles for Ukraine: why they are fighting in Poland ᐉ Новини от Fakti.bg - Opinions",
-          "source": "Fakti.bg",
-          "url": "https://fakti.bg/en/amp/mnenia/1066709-patriot-missiles-for-ukraine-why-they-are-fighting-in-poland",
-          "date": "2026-07-10T16:01:00+00:00",
+          "title": "Kaczyński zdecydowanie ws. Ukrainy. \"Nie może wejść do UE z banderyzmem\"",
+          "source": "WP Wiadomości",
+          "url": "https://wiadomosci.wp.pl/kaczynski-zdecydowanie-ws-ukrainy-nie-moze-wejsc-do-ue-z-banderyzmem-7306438029338976a",
+          "date": "2026-07-11T19:36:12+00:00",
           "category": "poland"
         },
         {
-          "title": "Morawiecki ostro do rządu ws. Ukrainy: Żywa tarcza, żelazo za krew",
-          "source": "RMF24",
-          "url": "https://www.rmf24.pl/fakty/polityka/news-morawiecki-ostro-do-rzadu-ws-ukrainy-zywa-tarcza-zelazo-za-k,nIdn,1009560",
-          "date": "2026-07-10T15:17:00+00:00",
+          "title": "Jarosław Kaczyński chce blokować wejście Ukrainy do UE. Stawia ultimatum",
+          "source": "Wiadomości Onet",
+          "url": "https://wiadomosci.onet.pl/kraj/jaroslaw-kaczynski-ostro-o-ukrainie-nie-wejdzie-do-ue-z-bagazem-banderyzmu/sje8zwr",
+          "date": "2026-07-11T19:34:39+00:00",
           "category": "poland"
         },
         {
-          "title": "Morawiecki: polityka PiS wobec Ukrainy nie była „służeniem”; była transakcją „żelazo za krew”",
-          "source": "Portal Samorządowy",
-          "url": "https://www.portalsamorzadowy.pl/polityka-i-spoleczenstwo/morawiecki-polityka-pis-wobec-ukrainy-nie-byla-sluzeniem-byla-transakcja-zelazo-za-krew,668255.html",
-          "date": "2026-07-10T14:42:54+00:00",
+          "title": "Twarde warunki wobec Ukrainy! Prezes PiS tego nie ukrywa. \"Zrobimy wszystko...\"",
+          "source": "wPolityce.pl",
+          "url": "https://wpolityce.pl/polityka/764763-twarde-warunki-wobec-ukrainy-prezes-pis-tego-nie-ukrywa",
+          "date": "2026-07-11T19:25:40+00:00",
           "category": "poland"
         },
         {
-          "title": "Morawiecki: Użyliśmy Ukrainy jako żywej tarczy. Ocaliliśmy Polskę przed Putinem",
-          "source": "Do Rzeczy",
-          "url": "https://dorzeczy.pl/opinie/913162/morawiecki-uzylismy-ukrainy-jako-zywej-tarczy-ocalilismy-polske-przed-putinem.html",
-          "date": "2026-07-10T13:01:00+00:00",
+          "title": "Prawo i Sprawiedliwość nie chce Ukrainy w Unii Europejskiej w związku z gloryfikacją sprawców ludobójstwa na Wołyniu",
+          "source": "RadioMaryja.pl",
+          "url": "https://www.radiomaryja.pl/informacje/prawo-i-sprawiedliwosc-nie-chce-ukrainy-w-unii-europejskiej-w-zwiazku-z-gloryfikacja-sprawcow-ludobojstwa-na-wolyniu/",
+          "date": "2026-07-11T19:24:24+00:00",
           "category": "poland"
         },
         {
-          "title": "'It Drives Me Crazy': Polish Defense Minister Defends Patriot Missiles for Ukraine",
-          "source": "Kyiv Post",
-          "url": "https://www.kyivpost.com/post/80002",
-          "date": "2026-07-10T10:25:32+00:00",
+          "title": "Prezes PiS: Ukraina nie może wejść do UE z bagażem banderyzmu",
+          "source": "Stooq",
+          "url": "https://stooq.pl/n/?f=1770825",
+          "date": "2026-07-11T19:02:23+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Nawrocki calls for ban on UPA red-and-black flag in Poland - Ukrinform",
+          "source": "Ukrainian National News Agency",
+          "url": "https://www.ukrinform.net/rubric-polytics/4143305-nawrocki-calls-for-ban-on-upa-redandblack-flag-in-poland.html",
+          "date": "2026-07-11T18:32:00+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Karol Nawrocki zrównał UPA z Hitlerem i Stalinem. „Oskarżamy banderowską ideologię”",
+          "source": "Kresy.pl",
+          "url": "https://kresy.pl/?post_type=post&p=1177576",
+          "date": "2026-07-11T17:00:56+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "On day commemorating victims of Volyn tragedy, Nawrocki called for ban on OUN-UPA flag in Poland",
+          "source": "Цензор.НЕТ",
+          "url": "https://censor.net/en/news/4012993/nawrocki-called-for-a-legislative-ban-on-the-red-and-black-flag-of-the-oun-upa",
+          "date": "2026-07-11T16:35:00+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Mur Pamięci w Warszawie i obchody w Radrużu. Tusk i Nawrocki w rocznicę krwawej niedzieli",
+          "source": "Centrum Europy",
+          "url": "https://centrumeuropy.pl/94292642/mur-pamieci-w-warszawie-i-obchody-w-radruzu-tusk-i-nawrocki-w-rocznice-krwawej-niedzieli",
+          "date": "2026-07-11T16:20:00+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "\"Stan Wyjątkowy”. Nawrocki wypowiada wojnę Kosiniakowi. Mentzen pluje na PiS. Tusk wstrzymuje dymisję",
+          "source": "Wiadomości Onet",
+          "url": "https://wiadomosci.onet.pl/kraj/stan-wyjatkowy-nawrocki-wypowiada-wojne-kosiniakowi-mentzen-pluje-na-pis-tusk/ltcshxs",
+          "date": "2026-07-11T16:05:43+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Poland commemorates victims of WWII Ukrainian massacres amid major row",
+          "source": "Yahoo",
+          "url": "https://www.yahoo.com/news/world/articles/poland-commemorates-victims-wwii-ukrainian-160332213.html",
+          "date": "2026-07-11T16:03:32+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Navrotsky called for a ban on the red-and-black flag in Poland",
+          "source": "UA.NEWS",
+          "url": "https://ua.news/en/world/navrotskii-zaklikav-zaboroniti-chervono-chornii-prapor-u-polshchi",
+          "date": "2026-07-11T16:00:33+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Prezydent Karol Nawrocki w Radrużu oddał hołd ofiarom OUN-UPA [NASZA FOTORELACJA]",
+          "source": "ZLUBACZOWA.PL",
+          "url": "https://zlubaczowa.pl/news/wydarzenia/19702-prezydent-karol-nawrocki-w-radruzu-oddal-hold-ofiarom-oun-upa-nasza-fotorelacja",
+          "date": "2026-07-11T15:41:47+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Polish president calls on parliament to ban red-and-black Ukrainian Insurgent Army flag in Poland",
+          "source": "Українська правда",
+          "url": "https://www.pravda.com.ua/eng/news/2026/07/11/8043611/",
+          "date": "2026-07-11T15:39:00+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Prezydent Karol Nawrocki uczestniczył w obchodach Narodowego Dnia Pamięci Ofiar Ludobójstwa OUN i UPA",
+          "source": "Nowiny 24",
+          "url": "https://nowiny24.pl/prezydent-karol-nawrocki-uczestniczyl-w-obchodach-narodowego-dnia-pamieci-ofiar-ludobojstwa-oun-i-upa/ar/c1p2-29172549",
+          "date": "2026-07-11T15:06:23+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Rząd i PiS podobnie reagują na presję wyborców. Ekspert: to efekt domina",
+          "source": "Wiadomości Onet",
+          "url": "https://wiadomosci.onet.pl/kraj/ekspert-komentuje-slowa-tuska-i-czarnka-o-ukrainie-to-efekt-pewnego-domina/0r54ylr",
+          "date": "2026-07-11T14:46:59+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Karol Nawrocki w Radrużu: czerwono-czarnej flagi nie chcemy w Polsce",
+          "source": "Polskie Radio",
+          "url": "https://www.polskieradio.pl/399/7975/Artykul/3707519,karol-nawrocki-w-radruzu-czerwonoczarnej-flagi-nie-chcemy-w-polsce",
+          "date": "2026-07-11T14:30:00+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Majmurek: przemówienie Nawrockiego było perfekcyjnie przemyślane",
+          "source": "Newsweek",
+          "url": "https://www.newsweek.pl/polska/polityka/karol-nawrocki-znow-gra-rzezia-wolynska-i-pewnie-mu-sie-to-oplaci/pnqqk9h",
+          "date": "2026-07-11T14:23:12+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Nawrocki o zbrodni wołyńskiej: To nie jest ideologia, to nie są bohaterowie, na których Europa czeka",
+          "source": "Wyborcza.pl",
+          "url": "https://wyborcza.pl/7,75398,32908239,nawrocki-o-zbrodni-wolynskiej-to-nie-jest-ideologia-to-nie.html",
+          "date": "2026-07-11T14:21:15+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Karol Nawrocki na Podkarpaciu. Obchody Narodowego Dnia Pamięci o ofiarach UPA i OUN",
+          "source": "Rzeszów News",
+          "url": "https://rzeszow-news.pl/obchody-w-radruzu-nawrocki-upamietnil-ofiary/",
+          "date": "2026-07-11T14:16:29+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Nawrocki mówi, co doprowadziło do rzezi wołyńskiej. Wspomniał o fladze Blut und Boden",
+          "source": "Rzeczpospolita",
+          "url": "https://www.rp.pl/polityka/art44809921-karol-nawrocki-w-rocznice-rzezi-wolynskiej-nie-oskarzamy-calego-narodu-ukrainskiego-oskarzamy-banderowska-ideologie",
+          "date": "2026-07-11T14:16:18+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Prezydent: nie oskarżamy całego narodu ukraińskiego, tylko banderowską ideologię",
+          "source": "xyz.pl",
+          "url": "https://xyz.pl/dzieje-sie/prezydent-nie-oskarzamy-calego-narodu-ukrainskiego-tylko-banderowska-ideologie-6247",
+          "date": "2026-07-11T13:22:09+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Zbrodnia wołyńska. Prezydent Nawrocki: Pod czerwono-czarną flagą jest cała ideologia ukraińskiego nacjonalisty",
+          "source": "Newsmax Polska",
+          "url": "https://newsmaxpolska.pl/kraj/polityka/58049/karol-nawrocki-nie-zgadzamy-sie-na-flage-upa-w-polsce/news",
+          "date": "2026-07-11T12:53:00+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Poland’s PiS opposes Ukraine’s EU bid over Volhynia killings legacy",
+          "source": "TVP World",
+          "url": "https://tvpworld.com/94291064/polands-pis-drafts-bill-against-ukraines-eu-bid-over-glorification-of-upa",
+          "date": "2026-07-11T12:51:00+00:00",
           "category": "poland"
         }
       ],
       "first_seen": "2026-07-11T14:01:28+00:00",
-      "last_seen": "2026-07-11T14:01:28+00:00"
-    },
-    {
-      "id": "tisza-government-s-constitutional-amendment",
-      "title": "Tisza government's constitutional amendment",
-      "blurb": "The Tisza government in Hungary is pushing for a constitutional amendment that could potentially remove President Tamás Sulyok if he refuses to sign it. This move has sparked protests and debates over authoritarianism and democratic norms.",
-      "affect": "This commands attention due to the high moral stakes involved in constitutional changes and the perceived threat to democratic institutions, framed with strong emotional and political language.",
-      "intensity": 4,
-      "affect_signals": [
-        "leadership crisis tone",
-        "polarized contention",
-        "alarmist framing",
-        "cross-source repetition"
-      ],
-      "categories": [
-        "hu_politics",
-        "constitutional_law"
-      ],
-      "article_count": 20,
-      "refs": [
-        {
-          "title": "Magyar Péter: Sulyoknak öt napja lesz aláírni az Alaptörvény-módosítást",
-          "source": "Pécsi STOP",
-          "url": "https://pecsistop.hu/kozelet/magyar-peter-sulyoknak-ot-napja-lesz-alairni-az-alaptorveny-modositast/534020",
-          "date": "2026-07-11T11:44:47+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Magyar Péter Sulyok Tamás fiát is elővette, autóbérlésre is tízmilliókat költhetett az elnöki delegáció",
-          "source": "atv.hu",
-          "url": "https://www.atv.hu/belfold/20260711/magyar-peter-sulyok-tamas-fia/",
-          "date": "2026-07-11T11:13:00+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Magyar Péter: Sulyok Tamás fia is a honvédségi géppel utazott az államfő amerikai útjára, pedig nem volt delegációtag",
-          "source": "444",
-          "url": "https://444.hu/2026/07/11/magyar-peter-sulyok-tamas-fia-is-a-honvedsegi-geppel-utazott-az-allamfo-amerikai-utjara-pedig-nem-volt-delegaciotag",
-          "date": "2026-07-11T11:01:36+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Magyar Péter megüzente Sulyok Tamásnak, mi történik, ha nem írja alá az alkotmánymódosítást",
-          "source": "Szabad Magyar Szó",
-          "url": "https://szmsz.press/2026/07/11/magyar-peter-meguzente-sulyok-tamasnak-mi-tortenik-ha-nem-irja-ala-az-alkotmanymodositast/",
-          "date": "2026-07-11T10:59:42+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "„Tovább is van. Mondjam még?” – Magyar Péter Sulyok Tamás amerikai útját is firtatja",
-          "source": "Infostart",
-          "url": "https://infostart.hu/belfold/2026/07/11/tovabb-is-van-mondjam-meg-magyar-peter-sulyok-tamas-amerikai-utjat-is-firtatja",
-          "date": "2026-07-11T10:52:00+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Magyar Péter: Hétfőn szavaz az Országgyűlés az Alaptörvény 17. módosításáról",
-          "source": "Vajdaság MA",
-          "url": "https://www.vajma.info/cikk/magyarorszag/27916/Magyar-Peter-Hetfon-szavaz-az-Orszaggyules-az-Alaptorveny-17_-modositasarol.html",
-          "date": "2026-07-11T10:34:07+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Magyar Péter újabb botrányt leplezett le: Sulyok Tamás fia is többszáz milliós utazáson vett részt",
-          "source": "nlc",
-          "url": "https://nlc.hu/ezvan/20260711/magyar-peter-sulyok-tamas-botrany/",
-          "date": "2026-07-11T10:29:02+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "„Nagyon gyenge terelés. Nem kéne inkább elmondani az igazságot?” – ismét üzent Magyar Péter Áder Jánosnak",
-          "source": "Index.hu",
-          "url": "https://index.hu/belfold/2026/07/11/ader-janos-magyar-peter-egyesult-allamok-disneyland-utazas-birosag/",
-          "date": "2026-07-11T10:20:00+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Magyar Péter: Vajon mit keresett Sulyok Tamás fia az elnök 12 napos amerikai útján a honvédségi Falcon gépen?",
-          "source": "24.hu",
-          "url": "https://24.hu/belfold/2026/07/11/magyar-peter-sulyok-tamas-amerikai-ut-koztarsasagi-elnok/",
-          "date": "2026-07-11T10:08:00+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Magyar Péter figyelmeztette Sulyok Tamást: megfosztási eljárás indulhat, ha nem írja alá az Alaptörvény módosítását",
-          "source": "Kontroll",
-          "url": "https://kontroll.hu/cikk/belfold/2026/07/11/magyar-peter-figyelmeztette-sulyok-tamast-megfosztasi-eljaras-indulhat-ha-nem-irja-ala-az-alaptoerveny-modositasat",
-          "date": "2026-07-11T09:08:29+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Magyar: Ha Sulyok 5 napon belül nem írja alá az alaptörvény-módosítást, megfosztási eljárás indul ellene",
-          "source": "444",
-          "url": "https://444.hu/2026/07/11/magyar-ha-sulyok-5-napon-belul-nem-irja-ala-az-alaptorveny-modositast-megfosztasi-eljaras-indul-ellene",
-          "date": "2026-07-11T08:21:49+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Magyar Péter a nyaralása alatt is Sulyok Tamást fenyegeti",
-          "source": "ORIGO",
-          "url": "https://www.origo.hu/belpol/2026/07/magyar-peter-sulyok-tamas-alaptorveny-megfosztas",
-          "date": "2026-07-11T08:10:56+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Magyar Péter: „a köztársasági elnöknek 5 napja lesz, hogy aláírja\"",
-          "source": "atv.hu",
-          "url": "https://www.atv.hu/belfold/20260711/magyar-peter-koztarsasagi-elnok-alairas/",
-          "date": "2026-07-11T08:10:00+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Magyar Péter öt napra figyelmeztetett",
-          "source": "Infostart",
-          "url": "https://infostart.hu/belfold/2026/07/11/magyar-peter-ot-napra-figyelmeztetett",
-          "date": "2026-07-11T07:46:00+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Már hétfőn elfogadhatják az Alaptörvény-módosítást, Magyar Péter öt napot adott Sulyok Tamásnak",
-          "source": "Népszava",
-          "url": "https://nepszava.hu/3328724_magyar-peter-alaptorveny-modositas-orszaggyules-alairas-sulyok-tamas",
-          "date": "2026-07-11T07:45:00+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Magyar Péter megüzente Sulyok Tamásnak, mi fog történni, ha nem írja alá az Alaptörvény-módosítást",
-          "source": "Telex",
-          "url": "https://telex.hu/belfold/2026/07/11/magyar-peter-sulyok-tamas-alaptorveny-modositas-alairas-megfosztas",
-          "date": "2026-07-11T07:42:46+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Magyar Péter megüzente Sulyok Tamásnak: öt napja lesz, hogy aláírja az Alaptörvény-módosítást",
-          "source": "Magyar Hang",
-          "url": "https://hang.hu/belfold/megint-uzent-sulyok-tamasnak-magyar-peter-190458",
-          "date": "2026-07-11T07:37:00+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Itthon: Magyar Péter öt napot adott Sulyok Tamásnak",
-          "source": "| hvg.hu",
-          "url": "https://hvg.hu/itthon/20260711_magyar-peter-ot-napot-adott-sulyok-tamasnak",
-          "date": "2026-07-11T07:32:14+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Magyar Péter elmondta, mi lesz Sulyok Tamással, ha nem írja alá az Alaptörvény-módosítást",
-          "source": "24.hu",
-          "url": "https://24.hu/belfold/2026/07/11/sulyok-tamas-magyar-peter-alaptorveny-modositas/",
-          "date": "2026-07-11T07:24:00+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Magyar Péter ultimátuma után Sulyok Tamás olyan lépésre szánta el magát, amire még nem volt példa",
-          "source": "Index.hu",
-          "url": "https://index.hu/belfold/2026/07/11/sulyok-tamas-koztarsasagi-elnok-eltavolitas-alaptorveny-modositas-velencei-bizottsag/",
-          "date": "2026-07-11T04:11:00+00:00",
-          "category": "hungary"
-        }
-      ],
-      "first_seen": "2026-07-11T14:01:28+00:00",
-      "last_seen": "2026-07-11T14:01:28+00:00"
+      "last_seen": "2026-07-12T04:07:25+00:00"
     }
   ]
 }
