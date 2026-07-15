@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-14T14:32:11+00:00",
+  "updated_at": "2026-07-15T03:51:03+00:00",
   "lookback_hours": 48,
   "model": "Mistral Large",
   "status": "ok",
@@ -7,32 +7,28 @@
     {
       "id": "right-wing-parties-push-anti-immigration-policies-in-europe",
       "title": "Right-wing parties push anti-immigration policies in Europe",
-      "blurb": "Across Europe, right-wing and far-right parties are intensifying their focus on anti-immigration policies, framing them as national priorities. This theme is evident in Spain, Norway, the UK, Germany, Italy, and France, where parties like Vox, Fremskrittspartiet, Reform UK, AfD, Fratelli d'Italia, Lega, and Rassemblement National are advocating for stricter border controls, prioritizing national citizens in social services, and criticizing government responses to immigration crises.",
+      "blurb": "Across Europe, right-wing and far-right parties are intensifying their focus on anti-immigration policies, proposing measures to restrict voting rights, prioritize national citizens in social services, and reduce foreign aid. This theme appears prominently in Norway, Spain, Sweden, and the UK, reflecting a shared transnational agenda.",
       "convergence": 5,
       "countries": [
         {
-          "name": "🇪🇸 Vox",
-          "note": "Criticizes government for 'pull effect' on immigration and demands stricter border controls in Ceuta and Andalusia."
+          "name": "🇳🇴 Fremskrittspartiet",
+          "note": "Proposes revoking local voting rights for foreign citizens, affecting 360,000 residents, including 70,000 Poles."
         },
         {
-          "name": "🇳🇴 Fremskrittspartiet",
-          "note": "Advocates for stricter immigration policies and local governance reforms to address demographic challenges."
+          "name": "🇪🇸 Vox",
+          "note": "Demands prioritization of national citizens in social services and housing, and criticizes government spending on immigrants."
+        },
+        {
+          "name": "🇸🇪 Sverigedemokraterna",
+          "note": "Advocates for stricter immigration controls and expansion of repatriation grants to include naturalized citizens."
         },
         {
           "name": "🇬🇧 Reform UK",
-          "note": "Proposes criminalizing non-English election materials and tightening immigration controls."
+          "note": "Proposes criminalizing non-English election materials and prioritizing UK citizens in social services."
         },
         {
           "name": "🇩🇪 Alternative für Deutschland",
-          "note": "Leads polls with anti-immigration rhetoric, criticizing government policies and proposing stricter controls."
-        },
-        {
-          "name": "🇮🇹 Fratelli d'Italia / Lega",
-          "note": "Supports stricter immigration policies and prioritizes national security, with Salvini emphasizing immigration as a greater threat than Russia."
-        },
-        {
-          "name": "🇫🇷 Rassemblement National",
-          "note": "Focuses on anti-immigration policies as a cornerstone of its 2027 presidential campaign, criticizing Macron's approach."
+          "note": "Calls for stricter asylum policies and opposes multiculturalism, linking immigration to crime and social issues."
         }
       ],
       "signals": [
@@ -41,34 +37,97 @@
         "parallel elections",
         "contagion of rhetoric"
       ],
-      "article_count": 45,
+      "article_count": 30,
       "refs": [
         {
-          "title": "VOX culpa a Pedro Sánchez del efecto llamada a la inmigración y de abandonar a las fuerzas de seguridad",
-          "source": "Ceuta Ahora",
-          "url": "https://ceutaahora.com/art/22129/vox-culpa-a-pedro-sanchez-del-efecto-llamada-a-la-inmigracion-y-de-abandonar-a-las-fuerzas-de-seguridad",
-          "date": "2026-07-14T11:53:28+00:00",
+          "title": "Vil frata utenlandske statsborgere stemmerett ved lokalvalg",
+          "source": "Agder Press",
+          "url": "https://apress.no/vil-frata-utenlandske-statsborgere-stemmerett-ved-lokalvalg/",
+          "date": "2026-07-15T02:23:29+00:00",
+          "category": "norway"
+        },
+        {
+          "title": "DEBATT: (SD): Vi sträcker gärna ut handen mot C",
+          "source": "NT",
+          "url": "https://www.nt.se/debatt/artikel/sd-vi-stracker-garna-ut-handen-mot-c/rgo9o9ej",
+          "date": "2026-07-15T02:00:00+00:00",
+          "category": "sweden"
+        },
+        {
+          "title": "El TSJ ratifica como ilegal el acuerdo de PSOE y Vox que retiró los sueldos al alcalde y dos ediles de Cieza",
+          "source": "La Verdad",
+          "url": "https://www.laverdad.es/murcia/otros-municipios/tsj-ratifica-ilegal-acuerdo-psoe-vox-retiro-20260715234234-nt.html",
+          "date": "2026-07-14T21:42:34+00:00",
           "category": "spain"
         },
         {
-          "title": "Vox acusa al Gobierno de Sánchez por el “efecto llamada” y de abandonar a las FFCCSE",
-          "source": "El Pueblo de Ceuta",
-          "url": "https://www.elpueblodeceuta.es/sec/politica/inmigracion/vox-acusa-gobierno-sanchez-efecto_1_1182067.html",
-          "date": "2026-07-14T11:51:00+00:00",
+          "title": "SD polisanmäler sabotage mot valaffischer",
+          "source": "Kvartal",
+          "url": "https://kvartal.se/nyheter/artiklar/sd-polisanmaler-sabotage-mot-valaffischer/cG9zdDoxNDY2MTA",
+          "date": "2026-07-14T19:29:46+00:00",
+          "category": "sweden"
+        },
+        {
+          "title": "Reform UK plans to jail candidates for using Cornish on election leaflets",
+          "source": "Bude & Stratton Post",
+          "url": "https://www.bude-today.co.uk/news/reform-uk-plans-to-jail-candidates-for-using-cornish-on-election-leaflets-927216",
+          "date": "2026-07-14T17:04:09+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Vox y PP restan 100.000 euros a UGT y CCOO en ayudas para elaborar planes de igualdad",
+          "source": "La Vanguardia",
+          "url": "https://www.lavanguardia.com/local/valencia/20260714/11592246/vox-pp-restan-100-000-euros-ugt-ccoo-ayudas-elaborar-planes-igualdad.html",
+          "date": "2026-07-14T14:34:43+00:00",
           "category": "spain"
         },
         {
-          "title": "Vox reitera su petición de eliminar la Zona de Bajas Emisiones en Málaga",
-          "source": "Malaga Actualidad",
-          "url": "https://www.malagactualidad.es/teletipos/74421-vox-reitera-su-peticion-de-eliminar-la-zona-de-bajas-emisiones-en-malaga",
-          "date": "2026-07-14T10:00:00+00:00",
+          "title": "El PP aprueba en C. Valenciana las enmiendas de Vox a los presupuestos, que incluyen la prioridad nacional",
+          "source": "Teleprensa",
+          "url": "https://www.teleprensa.com/articulo/nacional-3/pp-aprueba-c-valenciana-enmiendas-vox-presupuestos-que-incluyen-prioridad-nacional/202607141322282465700.amp.html",
+          "date": "2026-07-14T13:22:28+00:00",
           "category": "spain"
         },
         {
-          "title": "\"Castigan a quien no contamina\": Vox exige tumbar la ZBE de Gijón y señala a la industria y al puerto",
-          "source": "Europa Press",
-          "url": "https://www.europapress.es/asturias/noticia-castigan-quien-no-contamina-vox-exige-tumbar-zbe-gijon-senala-industria-puerto-20260714105002.html",
-          "date": "2026-07-14T08:50:02+00:00",
+          "title": "El PP aprueba en Valencia las enmiendas de Vox sobre prioridad nacional en servicios sociales, que fijan un arraigo \"verificable\"",
+          "source": "20Minutos",
+          "url": "https://www.20minutos.es/comunidad-valenciana/valencia/pp-aprueba-valencia-lenmiendas-vox-prioridad-nacional-servicios-sociales-fijan-arraigo-verificable_7014448_0.html",
+          "date": "2026-07-14T11:34:00+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Vox fuerza también al PP de Llorca a incorporar la prioridad nacional en las ayudas sociales",
+          "source": "La Vanguardia",
+          "url": "https://www.lavanguardia.com/local/valencia/20260714/11592059/vox-fuerza-pp-llorca-incorporar-prioridad-nacional-ayudas-sociales.amp.html",
+          "date": "2026-07-14T11:22:15+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Vox da por aprobada la \"prioridad nacional\" en Servicios Sociales en la Comunitat Valenciana tras lograrlo en vivienda",
+          "source": "La Razón",
+          "url": "https://www.larazon.es/comunidad-valenciana/vox-aprobada-prioridad-nacional-servicios-sociales-comunitat-valenciana-lograrlo-vivienda_202607146a56114dc0b5fb431c554af4.html",
+          "date": "2026-07-14T10:37:01+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Vox subraya que el techo de gasto del Gobierno es “pura propaganda” y le acusa de “no atender a los españoles”",
+          "source": "Servimedia",
+          "url": "https://www.servimedia.es/noticias/vox-subraya-techo-gasto-gobierno-es-pura-propaganda-acusa-no-atender-espanoles/1413083765",
+          "date": "2026-07-14T09:07:00+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "VOX logra incluir la prioridad nacional en los presupuestos",
+          "source": "Valencia News",
+          "url": "https://valencianews.es/politica/vox-destaca-la-incorporacion-de-la-prioridad-nacional-en-los-presupuestos-de-la-generalitat-de-2026/",
+          "date": "2026-07-14T08:42:17+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Pérez Llorca allana los presupuestos de la Generalitat al aceptar la 'prioridad nacional' de Vox en vivienda",
+          "source": "moncloa.com",
+          "url": "https://www.moncloa.com/2026/07/14/perez-llorca-prioridad-nacional-presupuestos-vox-3399457/",
+          "date": "2026-07-14T07:53:05+00:00",
           "category": "spain"
         },
         {
@@ -77,97 +136,107 @@
           "url": "https://amp.elperiodico.com/es/politica/20260714/pp-pliega-vox-acepta-introducir-132426170",
           "date": "2026-07-14T06:39:25+00:00",
           "category": "spain"
-        },
-        {
-          "title": "El PP traga con las exigencias de Vox: asume la prioridad nacional y fomentar el retorno de migrantes",
-          "source": "Valencia Plaza",
-          "url": "https://valenciaplaza.com/valenciaplaza/comunitat-valenciana1/el-pp-traga-con-las-exigencias-de-vox-asume-la-prioridad-nacional-y-fomentar-el-retorno-de-migrantes",
-          "date": "2026-07-14T04:01:13+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox impone su “prioridad nacional” al PP en el presupuesto de la Generalitat Valenciana",
-          "source": "EL PAÍS",
-          "url": "https://elpais.com/espana/comunidad-valenciana/2026-07-13/vox-impone-su-prioridad-nacional-al-pp-en-el-presupuesto-de-la-generalitat-valenciana.html",
-          "date": "2026-07-13T19:40:03+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "PP y Vox introducen por primera vez el término \"priodidad nacional\" en ayudas públicas de la Generalitat Valenciana",
-          "source": "elDiario.es",
-          "url": "https://www.eldiario.es/comunitat-valenciana/pp-vox-introducen-primera-vez-termino-priodidad-nacional-ayudas-publicas-generalitat-valenciana_1_13377648.html",
-          "date": "2026-07-13T17:48:07+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "PP y Vox aprueban el \"arraigo real, duradero y verificable\" para acceder a los programas de compra de vivienda",
-          "source": "El Español",
-          "url": "https://www.elespanol.com/valencia/20260713/pp-vox-aprueban-arraigo-real-duradero-verificable-acceder-programas-compra-vivienda/1003744319377_0.html",
-          "date": "2026-07-13T16:12:21+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox exige frenar el repliegue de la Guardia Civil y la Policía en Cataluña y País Vasco",
-          "source": "ESdiario",
-          "url": "https://www.esdiario.com/nacional/260713/193144/vox-exige-frenar-repliegue-guardia-civil-policia-cataluna-pais-vasco.html",
-          "date": "2026-07-13T15:04:53+00:00",
-          "category": "spain"
         }
       ],
       "first_seen": "2026-07-08T04:01:20+00:00",
-      "last_seen": "2026-07-14T14:32:11+00:00"
+      "last_seen": "2026-07-15T03:51:03+00:00"
     },
     {
       "id": "iran-threatens-western-leaders-amid-escalating-tensions",
       "title": "Iran threatens Western leaders amid escalating tensions",
-      "blurb": "Iran's aggressive posturing and threats against Western leaders have become a dominant transnational theme, with right-wing and far-right media amplifying the narrative of escalating geopolitical tensions. This theme is particularly prominent in the U.S., Italy, France, the UK, Spain, and Hungary, where leaders and media outlets are framing Iran as a direct threat to Western security and sovereignty.",
+      "blurb": "Right-wing and far-right media across multiple countries are amplifying narratives of Iranian aggression and threats to Western leaders. This theme is driven by U.S. strikes on Iran, Iran's nuclear ambitions, and regional conflicts involving Iran-backed militias, resonating strongly in the U.S., Italy, France, and the UK.",
       "convergence": 5,
       "countries": [
         {
           "name": "🇺🇸 MAGA / Trump",
-          "note": "Trump escalates rhetoric against Iran, announces Strait of Hormuz blockade, and imposes fees on ships, framing Iran as a direct threat to U.S. interests."
+          "note": "Trump administration escalates military actions against Iran, including strikes on nuclear sites and threats to impose fees in the Strait of Hormuz."
         },
         {
           "name": "🇮🇹 Fratelli d'Italia / Lega",
-          "note": "Meloni is targeted in Iranian media, with right-wing outlets amplifying the threat narrative and emphasizing Italy's role in countering Iran."
+          "note": "Covers Italy's role in regional security amid U.S.-Iran tensions, including Meloni's diplomatic engagements in the Middle East."
         },
         {
           "name": "🇫🇷 Rassemblement National",
-          "note": "Le Pen's party highlights Iran's threats as part of its broader critique of Macron's foreign policy, positioning itself as a stronger alternative."
+          "note": "Highlights France's stance on Iran, including concerns over nuclear threats and regional instability."
         },
         {
           "name": "🇬🇧 Reform UK",
-          "note": "Farage and Reform UK amplify Iran threat narrative, linking it to broader concerns about national security and immigration."
+          "note": "Criticizes UK government's handling of Iran-related threats and calls for stronger security measures."
         },
         {
           "name": "🇪🇸 Vox",
-          "note": "Criticizes government for not taking a stronger stance against Iran, framing it as part of a broader failure to protect national sovereignty."
-        },
-        {
-          "name": "🇭🇺 Fidesz / Tisza",
-          "note": "Amplifies Iran threat narrative, positioning Hungary as a defender of European sovereignty against external threats."
+          "note": "Frames Iran as a security threat to Spain and Europe, advocating for stronger defense policies."
         }
       ],
       "signals": [
         "reaction to external event",
-        "coordinated messaging",
         "shared framing",
-        "policy response"
+        "coordinated messaging",
+        "policy imitation"
       ],
-      "article_count": 50,
+      "article_count": 25,
       "refs": [
+        {
+          "title": "Trump: Strikes on Iran to continue until 'I say it's enough'",
+          "source": "DW.com",
+          "url": "https://www.dw.com/en/trump-strikes-on-iran-to-continue-until-i-say-its-enough/live-77960667",
+          "date": "2026-07-14T23:25:53+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "President Donald Trump: We're going to hit them 'very hard'",
+          "source": "Fox News",
+          "url": "https://www.foxnews.com/video/6401153317112",
+          "date": "2026-07-14T23:17:02+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "What is Iran’s Pickaxe Mountain?",
+          "source": "Al Jazeera",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/7/14/what-is-irans-pickaxe-mountain-2",
+          "date": "2026-07-14T20:44:59+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump pivots from 20 percent Strait of Hormuz fee amid Iran war escalation",
+          "source": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/7/14/trump-pivots-from-20-percent-strait-of-hormuz-fee-amid-iran-war-escalation",
+          "date": "2026-07-14T18:33:45+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "US President Trump drops 20% Strait of Hormuz fee plan",
+          "source": "Al Jazeera",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/7/14/us-president-trump-drops-20-strait-of-hormuz-fee-plan",
+          "date": "2026-07-14T18:24:18+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump's Economic Shift in Gulf Conflict Over Strait of Hormuz",
+          "source": "Devdiscourse",
+          "url": "https://www.devdiscourse.com/article/politics/3950315-trumps-economic-shift-in-gulf-conflict-over-strait-of-hormuz?amp",
+          "date": "2026-07-14T17:54:38+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "« J'aurais dû être avortée » : Marion Maréchal lâche une confidence glaçante sur sa naissance",
+          "source": "Le Tribunal du Net",
+          "url": "https://www.letribunaldunet.fr/people/marion-marechal-non-desiree-parents-confidence.html",
+          "date": "2026-07-14T17:24:00+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Trump wants to impose fees for Strait of Hormuz transit just like Iran: Is that legal? - explainer",
+          "source": "The Jerusalem Post",
+          "url": "https://www.jpost.com/middle-east/iran-news/article-902504",
+          "date": "2026-07-14T14:18:54+00:00",
+          "category": "usa"
+        },
         {
           "title": "Iran mocks Donald Trump Hormuz fee as Gulf states face costly US protection dilemma",
           "source": "The Jerusalem Post",
           "url": "https://www.jpost.com/middle-east/iran-news/article-902499",
           "date": "2026-07-14T13:19:52+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Donald Trump returns to escalation against Iran",
-          "source": "Financial Times",
-          "url": "https://www.ft.com/content/ef06822f-c107-4286-b35b-71e4bbaba0a5",
-          "date": "2026-07-14T13:00:05+00:00",
           "category": "usa"
         },
         {
@@ -192,88 +261,112 @@
           "category": "usa"
         },
         {
-          "title": "President Trump Notifies Congress on US Strikes; Iran Attack on UAE Kills One",
-          "source": "The Media Line",
-          "url": "https://themedialine.org/headlines/president-trump-notifies-congress-on-us-strikes-iran-attack-on-uae-kills-one/",
-          "date": "2026-07-14T09:10:46+00:00",
-          "category": "usa"
-        },
-        {
           "title": "Donald Trump Threatens to ‘Take Out’ Pickaxe Mountain as Iran Fight Widens",
           "source": "Yahoo",
           "url": "https://www.yahoo.com/news/politics/articles/donald-trump-threatens-pickaxe-mountain-073616555.html",
           "date": "2026-07-14T07:36:16+00:00",
           "category": "usa"
-        },
-        {
-          "title": "Hungary’s parliament votes to oust president in latest anti-Orban move",
-          "source": "Al Jazeera",
-          "url": "https://www.aljazeera.com/news/2026/7/14/hungarys-parliament-votes-to-oust-president-in-latest-anti-orban-move",
-          "date": "2026-07-14T02:07:59+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Trump says US will become ‘guardian’ of Strait of Hormuz and collect tolls",
-          "source": "Al Jazeera",
-          "url": "https://www.aljazeera.com/news/2026/7/13/trump-says-us-will-become-guardian-of-strait-of-hormuz-and-collect-tolls",
-          "date": "2026-07-13T20:48:45+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Trump: US will ‘take over’ Strait of Hormuz",
-          "source": "Al Jazeera",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/7/13/trump-us-will-take-over-strait-of-hormuz",
-          "date": "2026-07-13T15:51:58+00:00",
-          "category": "usa"
         }
       ],
       "first_seen": "2026-07-12T04:19:51+00:00",
-      "last_seen": "2026-07-14T14:32:11+00:00"
+      "last_seen": "2026-07-15T03:51:03+00:00"
     },
     {
       "id": "far-right-leaders-face-legal-and-political-challenges",
       "title": "Far-right leaders face legal and political challenges",
-      "blurb": "Far-right leaders across multiple countries are confronting significant legal and political challenges, ranging from criminal investigations to internal party divisions. This theme is evident in France, Spain, Hungary, the UK, the U.S., and Poland, where leaders like Marine Le Pen, Santiago Abascal, Viktor Orbán, Nigel Farage, Donald Trump, and Jarosław Kaczyński are navigating legal scrutiny, internal dissent, and public backlash.",
+      "blurb": "Far-right leaders across Europe and the U.S. are confronting legal troubles, political setbacks, and internal party conflicts. This theme is evident in France, Spain, Hungary, the UK, and the U.S., where leaders like Marine Le Pen, Santiago Abascal, Viktor Orbán, Nigel Farage, and Donald Trump face corruption charges, electoral defeats, or internal dissent.",
       "convergence": 4,
       "countries": [
         {
           "name": "🇫🇷 Rassemblement National",
-          "note": "Marine Le Pen faces legal challenges, including convictions and fines, while navigating internal party dynamics ahead of the 2027 presidential election."
+          "note": "Marine Le Pen faces corruption charges and legal battles while running for president in 2027."
         },
         {
           "name": "🇪🇸 Vox",
-          "note": "Santiago Abascal and Vox face legal scrutiny over hate speech allegations and internal disputes with coalition partners."
+          "note": "Santiago Abascal and party members face legal scrutiny over corruption allegations and misuse of public funds."
         },
         {
           "name": "🇭🇺 Fidesz / Tisza",
-          "note": "Orbán and Fidesz face internal divisions, legal challenges, and public protests over constitutional changes and corruption allegations."
+          "note": "Viktor Orbán's government faces constitutional crises, internal dissent, and EU legal challenges over democratic backsliding."
         },
         {
           "name": "🇬🇧 Reform UK",
-          "note": "Nigel Farage faces legal scrutiny over security arrangements, party finances, and internal disputes following Ann Widdecombe's death."
+          "note": "Nigel Farage faces scrutiny over political donations, security threats, and internal party conflicts."
         },
         {
           "name": "🇺🇸 MAGA / Trump",
-          "note": "Trump faces multiple legal challenges, including IRS lawsuits, investigations into election interference, and scrutiny over foreign policy decisions."
-        },
-        {
-          "name": "🇵🇱 Prawo i Sprawiedliwość",
-          "note": "Kaczyński and PiS face internal divisions, legal challenges over corruption allegations, and public backlash over controversial statements."
+          "note": "Donald Trump faces multiple lawsuits, including defamation cases and investigations into election interference."
         }
       ],
       "signals": [
-        "legal scrutiny",
-        "internal divisions",
-        "public backlash",
-        "political maneuvering"
+        "parallel legal challenges",
+        "shared framing",
+        "internal dissent",
+        "electoral setbacks"
       ],
-      "article_count": 40,
+      "article_count": 20,
       "refs": [
         {
-          "title": "Nigel Farage wants to be protected — and persecuted",
-          "source": "Thelead.uk",
-          "url": "https://national.thelead.uk/p/ann-widdecombe-death-nigel-farage-reform-government-protection-snubbed",
-          "date": "2026-07-14T13:31:58+00:00",
+          "title": "France: Le Pen to run for president, despite corruption verdict",
+          "source": "Green Left",
+          "url": "https://www.greenleft.org.au/2026/1458/world/france-le-pen-run-president-despite-corruption-verdict",
+          "date": "2026-07-15T01:19:04+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Vox Extremadura reclama elecciones para \"echar a esta gentuza del Gobierno de España\" tras la condena a David Sánchez",
+          "source": "Onda Cero",
+          "url": "https://www.ondacero.es/emisoras/extremadura/noticias/vox-extremadura-reclama-elecciones-echar-esta-gentuza-gobierno-espana-condena-david-sanchez_202607156a56da211db8de04098e864c.html",
+          "date": "2026-07-15T00:53:53+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Les affiches de la condamnée Marine Le Pen pour 2027",
+          "source": "Charlie Hebdo",
+          "url": "https://charliehebdo.fr/2026/07/politique/extreme-droite/les-affiches-de-la-condamnee-marine-le-pen-pour-2027/",
+          "date": "2026-07-14T23:13:44+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Marine Le Pen condamnée à 3 ans de prison",
+          "source": "horizons.dz",
+          "url": "https://www.horizons.dz/2026/07/marine-le-pen-condamnee-a-3-ans-de-prison/",
+          "date": "2026-07-14T19:22:35+00:00",
+          "category": "france"
+        },
+        {
+          "title": "« Gouvernement d’union nationale » : le projet de Jordan Bardella après la présidentielle 2027",
+          "source": "Valeurs actuelles",
+          "url": "https://www.valeursactuelles.com/clubvaleurs/politique/presidentielle-2027-jordan-bardella-veut-batir-un-gouvernement-dunion-nationale",
+          "date": "2026-07-14T18:00:27+00:00",
+          "category": "france"
+        },
+        {
+          "title": "France Attack Commemoration",
+          "source": "Bluefield Daily Telegraph",
+          "url": "https://www.bdtonline.com/sports/college_sports/france-attack-commemoration/image_019fe848-2c69-59a3-89fb-8ec1f31d692f.html",
+          "date": "2026-07-14T16:20:03+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Augusztus 20-án az állami ünnep mellett országos Tisza sziget találkozót tartanak Budapesten",
+          "source": "444",
+          "url": "https://444.hu/2026/07/14/augusztus-20-an-az-allami-unnep-mellett-orszagos-tisza-sziget-talalkozot-tartanak-budapesten",
+          "date": "2026-07-14T15:33:13+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Ann Widdecombe’s last interview just minutes before she was killed",
+          "source": "The Independent",
+          "url": "https://www.independent.co.uk/bulletin/news/ann-widdecombe-murder-interview-farage-b3014703.html",
+          "date": "2026-07-14T14:53:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Ann Widdecombe gave interview defending Nigel Farage minutes before killing",
+          "source": "The Independent",
+          "url": "https://www.independent.co.uk/news/uk/crime/ann-widdecombe-murder-farage-terror-police-reform-b3014595.html",
+          "date": "2026-07-14T14:11:00+00:00",
           "category": "uk"
         },
         {
@@ -284,134 +377,18 @@
           "category": "france"
         },
         {
-          "title": "Hommage, applaudissements et effervescence autour de Marine Le Pen : à Nice, du défilé militaire du 14-Juillet au rush médiatique - Nice-Matin",
-          "source": "",
-          "url": "https://www.nicematin.com/societe/politique/hommage-applaudissements-et-effervescence-autour-de-marine-le-pen-a-nice-du-defile-militaire-du-14-juillet-au-rush-mediatique-10689250",
-          "date": "2026-07-14T12:50:05+00:00",
+          "title": "\"Tout commence\" : Jordan Bardella affiche ses ambitions malgré le retour de Marine Le Pen",
+          "source": "melty.fr",
+          "url": "https://www.melty.fr/people/tout-commence-jordan-bardella-affiche-ses-ambitions-malgre-le-retour-de-marine-le-pen-2332067.html",
+          "date": "2026-07-14T11:39:35+00:00",
           "category": "france"
         },
         {
-          "title": "El Parlament sancionará a Sílvia Orriols e Ignacio Garriga por sus faltas de \"respeto\"",
-          "source": "Diari ARA",
-          "url": "https://es.ara.cat/politica/parlament-sancionara-silvia-orriols-e-ignacio-garriga-comentarios-irrespetuosos_1_5798501.html",
-          "date": "2026-07-14T12:37:11+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "El PP pide la dimisión de Sánchez y Vox tilda a su entorno de \"chorizos\" tras la condena al hermano del presidente",
-          "source": "RTVE.es",
-          "url": "https://amp.rtve.es/noticias/20260714/pp-dimision-sanchez-vox-entorno-chorizos-condena-hermano-presidente/17155904.shtml",
-          "date": "2026-07-14T11:46:33+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Fideszes provokációk, tiszás kivonulás miatt félbeszakadt az Országgyűlés ülése, Magyar Péter milliós bírságokat követel",
-          "source": "Népszava",
-          "url": "https://nepszava.hu/3328900_orszaggyules-botrany-fidesz-tisza-part-provokacio-videozas-pocs-janos-nemeth-balazs-kivonulas-hazbizottsag",
-          "date": "2026-07-14T10:39:00+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Vox subraya que el techo de gasto del Gobierno es “pura propaganda” y le acusa de “no atender a los españoles”",
-          "source": "Servimedia",
-          "url": "https://www.servimedia.es/noticias/vox-subraya-techo-gasto-gobierno-es-pura-propaganda-acusa-no-atender-espanoles/1413083765",
-          "date": "2026-07-14T09:07:00+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Umfrage: AfD verliert überraschend deutlich – knapp die Hälfte hält Reformpaket der Regierung für falsch",
-          "source": "WELT",
-          "url": "https://www.welt.de/politik/deutschland/article6a55cdbb04bf7e616bda7c80/umfrage-afd-verliert-ueberraschend-deutlich-knapp-die-haelfte-haelt-reformpaket-der-regierung-fuer-falsch.html",
-          "date": "2026-07-14T06:25:04+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "PP y Vox buscan frenar el intento de los socios de Sánchez de despenalizar las ofensas a los sentimientos religiosos y las injurias a la Corona",
-          "source": "El Debate",
-          "url": "https://www.eldebate.com/espana/20260714/pp-vox-buscan-frenar-intento-socios-sanchez-despenalizar-ofensas-sentimientos-religiosos-injurias-corona_439144.html",
-          "date": "2026-07-14T02:20:00+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Reform UK row erupts over MP safety after death of Ann Widdecombe",
-          "source": "The Guardian",
-          "url": "https://www.theguardian.com/politics/video/2026/jul/13/reform-uk-row-erupts-over-mp-safety-after-death-of-ann-widdecombe",
-          "date": "2026-07-13T19:40:00+00:00",
-          "category": "uk"
-        }
-      ],
-      "first_seen": "2026-07-08T04:01:20+00:00",
-      "last_seen": "2026-07-14T14:32:11+00:00"
-    },
-    {
-      "id": "javier-mileis-economic-reforms-spark-global-right-wing-emulation",
-      "title": "Javier Milei’s economic reforms spark global right-wing emulation",
-      "blurb": "Javier Milei's radical economic reforms in Argentina are inspiring right-wing and libertarian movements globally, with leaders in the U.S., Spain, the UK, and Italy looking to emulate his policies. This theme highlights the transnational appeal of Milei's deregulation, austerity, and anti-inflation measures, as well as the political challenges he faces in implementing them.",
-      "convergence": 4,
-      "countries": [
-        {
-          "name": "🇦🇷 La Libertad Avanza",
-          "note": "Milei pushes for Central Bank reform, deregulation, and austerity measures, facing both domestic opposition and international interest."
-        },
-        {
-          "name": "🇺🇸 MAGA / Trump",
-          "note": "Trump and U.S. conservatives praise Milei's reforms, with some advocating for similar deregulation and austerity measures in the U.S."
-        },
-        {
-          "name": "🇪🇸 Vox",
-          "note": "Vox supports Milei's economic policies, using them as a model for Spain and criticizing the Spanish government's economic management."
-        },
-        {
-          "name": "🇬🇧 Reform UK",
-          "note": "Reform UK cites Milei's reforms as inspiration for its own economic policies, particularly in deregulation and reducing government spending."
-        },
-        {
-          "name": "🇮🇹 Fratelli d'Italia / Lega",
-          "note": "Italian right-wing parties, including Lega, express interest in Milei's economic model, particularly his approach to deregulation and inflation control."
-        }
-      ],
-      "signals": [
-        "policy imitation",
-        "shared framing",
-        "economic discourse",
-        "political strategy"
-      ],
-      "article_count": 35,
-      "refs": [
-        {
-          "title": "El Gobierno reúne a la mesa política para ordenar las reformas que quiere Milei y confía en suspender las PASO",
-          "source": "Infobae",
-          "url": "https://www.infobae.com/politica/2026/07/14/el-gobierno-reune-a-la-mesa-politica-para-ordenar-las-reformas-que-quiere-milei-y-confia-en-suspender-las-paso/",
-          "date": "2026-07-14T13:20:52+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Javier Milei en el laberinto: Entre la distracción de la Selección y el termómetro del bolsillo",
-          "source": "examedia.com.ar",
-          "url": "https://www.examedia.com.ar/portada/post/87477006",
-          "date": "2026-07-14T13:18:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Reforma del Banco Central: las principales claves del proyecto que Javier Milei expuso a los legisladores",
-          "source": "Minuto Neuquen",
-          "url": "https://www.minutoneuquen.com/nacionales/2026/7/14/reforma-del-banco-central-las-principales-claves-del-proyecto-que-javier-milei-expuso-a-los-legislad-407967.html",
-          "date": "2026-07-14T12:44:34+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Reforma del Banco Central: los cinco cambios que impulsa Javier Milei",
-          "source": "El Esquiu",
-          "url": "https://www.elesquiu.com/nacionales/2026/7/14/reforma-del-banco-central-los-cinco-cambios-que-impulsa-javier-milei-588871.html",
-          "date": "2026-07-14T10:38:02+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Javier Milei y sus medidas de Gobierno EN VIVO: últimas noticias del 14 de julio, minuto a minuto",
-          "source": "El Destape",
-          "url": "https://www.eldestapeweb.com/politica/gobierno-vuelve-reunir-mesa-politica-ordenar-agenda-legislativa-20267147552",
-          "date": "2026-07-14T10:08:53+00:00",
-          "category": "argentina"
+          "title": "Far-right extremists empowered amid concerns over human rights",
+          "source": "Justice For Colombia",
+          "url": "https://justiceforcolombia.org/far-right-extremists-empowered-amid-concerns-over-human-rights/",
+          "date": "2026-07-14T10:40:17+00:00",
+          "category": "general"
         },
         {
           "title": "Le Pen’s Gambit: France’s Next Presidential Election Could Put the Rule of Law on the Ballot",
@@ -421,141 +398,285 @@
           "category": "france"
         },
         {
-          "title": "Reforma del Banco Central: qué cambios impulsa Javier Milei y por qué busca prohibir la emisión para financiar al Estado",
-          "source": "roadshow.com.ar",
-          "url": "https://www.roadshow.com.ar/reforma-del-banco-central-que-cambios-impulsa-javier-milei-y-por-que-busca-prohibir-la-emision-para-financiar-al-estado/",
-          "date": "2026-07-14T03:31:51+00:00",
+          "title": "Marine Le Pen condamnée en appel : éligible en 2027, mais sous menace judiciaire",
+          "source": "INFO.FR",
+          "url": "https://info.fr/marine-le-pen-condamnee-appel-eligible-2027-menace-judiciaire/",
+          "date": "2026-07-14T05:36:36+00:00",
+          "category": "france"
+        }
+      ],
+      "first_seen": "2026-07-08T04:01:20+00:00",
+      "last_seen": "2026-07-15T03:51:03+00:00"
+    },
+    {
+      "id": "javier-mileis-economic-reforms-spark-global-right-wing-emulation",
+      "title": "Javier Milei’s economic reforms spark global right-wing emulation",
+      "blurb": "Argentina's President Javier Milei is becoming a global icon for right-wing and libertarian movements, with his economic reforms—such as central bank restructuring, deregulation, and fiscal austerity—being closely watched and emulated by right-wing leaders in the U.S., Spain, the UK, and Italy. This theme reflects a transnational fascination with Milei’s radical economic policies.",
+      "convergence": 4,
+      "countries": [
+        {
+          "name": "🇦🇷 La Libertad Avanza",
+          "note": "Milei's government pushes for radical economic reforms, including central bank restructuring, deregulation, and fiscal austerity."
+        },
+        {
+          "name": "🇺🇸 MAGA / Trump",
+          "note": "Trump administration and allies praise Milei’s reforms, particularly his deregulation and anti-inflation measures."
+        },
+        {
+          "name": "🇪🇸 Vox",
+          "note": "Vox leaders express admiration for Milei’s economic policies and seek to emulate his deregulation agenda in Spain."
+        },
+        {
+          "name": "🇬🇧 Reform UK",
+          "note": "Farage and Reform UK cite Milei’s reforms as a model for the UK’s economic future."
+        },
+        {
+          "name": "🇮🇹 Fratelli d'Italia / Lega",
+          "note": "Italian right-wing parties discuss adopting Milei-style economic policies, particularly fiscal austerity and deregulation."
+        }
+      ],
+      "signals": [
+        "policy imitation",
+        "shared framing",
+        "transnational influence",
+        "economic nationalism"
+      ],
+      "article_count": 22,
+      "refs": [
+        {
+          "title": "Feriado este miércoles para ver a la Selección Argentina: la tajante decisión del Gobierno de Javier Milei",
+          "source": "MinutoUno",
+          "url": "https://www.minutouno.com/sociedad/feriado-este-miercoles-ver-la-seleccion-argentina-la-tajante-decision-del-gobierno-javier-milei-n6299594",
+          "date": "2026-07-15T01:19:00+00:00",
           "category": "argentina"
         },
         {
-          "title": "Qué cambios propone la reforma del Banco Central impulsada por Javier Milei — ACTUALIDAD",
-          "source": "Opinando San Nicolás",
-          "url": "https://www.opinandosannicolas.ar/2026/07/que-cambios-propone-la-reforma-del-banco-central-impulsada-por-javier-milei/",
-          "date": "2026-07-14T00:32:21+00:00",
+          "title": "Javier Milei descartó el asueto estatal para la semifinal del Mundial entre Argentina e Inglaterra",
+          "source": "Radio LV11",
+          "url": "https://www.radiolv11.com.ar/noticia/javier-milei-descarto-el-asueto-estatal-para-la-semifinal-del-mundial-entre-argentina-e-inglaterra",
+          "date": "2026-07-15T00:48:00+00:00",
           "category": "argentina"
         },
         {
-          "title": "Con la mira en la emisión y el \"shutdown\", Javier Milei detalló ante sus legisladores la reforma del Banco Central",
+          "title": "El Gobierno reunió a la mesa política y definió enviar la reforma del Banco Central al Congreso en agosto",
+          "source": "Diario de Cuyo",
+          "url": "https://www.diariodecuyo.com.ar/politica/el-gobierno-reunio-la-mesa-politica-y-definio-enviar-la-reforma-del-banco-central-al-congreso-agosto-n6577488",
+          "date": "2026-07-14T22:59:46+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei celebró la inflación de junio y volvió a elogiar a Luis Caputo",
+          "source": "Mendovoz",
+          "url": "https://www.mendovoz.com/actualidad/nacionales/2026/7/14/javier-milei-celebro-la-inflacion-de-junio-volvio-elogiar-luis-caputo-174080.html",
+          "date": "2026-07-14T21:51:37+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Marine Le Pen à la merci des sondages",
+          "source": "Le Club de Mediapart",
+          "url": "https://blogs.mediapart.fr/louis-bulidon/blog/140726/marine-le-pen-la-merci-des-sondages",
+          "date": "2026-07-14T19:48:00+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Reforma del BCRA: las claves del proyecto de Javier Milei",
+          "source": "Crónica",
+          "url": "https://www.cronica.com.ar/amp/politica/reforma-del-bcra-las-claves-del-proyecto-de-javier-milei-1879/",
+          "date": "2026-07-14T18:35:59+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "El Gobierno estudia blindar al Indec dentro de la reforma del Banco Central",
+          "source": "Cadena 3 Argentina",
+          "url": "https://www.cadena3.com/amp/noticia/politica-y-economia/el-gobierno-estudia-blindar-al-indec-dentro-de-la-reforma-del-banco-central_572932",
+          "date": "2026-07-14T17:57:02+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Los ejes principales de la reforma del Banco Central que Javier Milei presentó ante los legisladores",
           "source": "Diario Río Negro",
-          "url": "https://www.rionegro.com.ar/politica/con-la-mira-en-la-emision-y-el-shutdown-javier-milei-detallo-ante-sus-legisladores-la-reforma-del-banco-central-4646930/",
-          "date": "2026-07-13T22:03:15+00:00",
+          "url": "https://www.rionegro.com.ar/politica/los-ejes-principales-de-la-reforma-del-banco-central-que-javier-milei-presento-ante-los-legisladores-4647663/",
+          "date": "2026-07-14T16:58:39+00:00",
           "category": "argentina"
         },
         {
-          "title": "Milei busca blindar por ley el modelo libertario y reunió a su tropa para avanzar con la reforma del Banco Central",
-          "source": "Página|12",
-          "url": "https://www.pagina12.com.ar/2026/07/13/milei-busca-blindar-por-ley-el-modelo-libertario-y-reunio-a-su-tropa-para-avanzar-con-la-reforma-del-banco-central/",
-          "date": "2026-07-13T20:24:20+00:00",
+          "title": "Las claves del proyecto de Javier Milei para cumplir con el FMI y reformar la Carta Orgánica del Banco Central",
+          "source": "Minutouno",
+          "url": "https://www.minutouno.com/economia/las-claves-del-proyecto-javier-milei-cumplir-el-fmi-y-reformar-la-carta-organica-del-banco-central-n6299337",
+          "date": "2026-07-14T15:45:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Reforma del Banco Central: las claves de la ley de Milei",
+          "source": "Hoy Día Córdoba",
+          "url": "https://hoydia.com.ar/economia/reforma-banco-central-claves-milei-peru/",
+          "date": "2026-07-14T14:08:56+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Milei impulsa una reforma del Banco Central: los cinco cambios clave que propone para la Carta Orgánica",
+          "source": "Filo News",
+          "url": "https://www.filo.news/noticia/2026/07/14/milei-impulsa-una-reforma-del-banco-central-los-cinco-cambios-clave-que-propone-para-la-carta-organica",
+          "date": "2026-07-14T12:48:17+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Las claves del proyecto de Javier Milei para reformar la Carta Orgánica del BCRA",
+          "source": "Ambito",
+          "url": "https://www.ambito.com/politica/las-claves-del-proyecto-javier-milei-reformar-la-carta-organica-del-bcra-n6299210",
+          "date": "2026-07-14T12:00:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Milei AVANZA con la centralización de los ATN y EMPODERA a Gustavo Coria",
+          "source": "El Destape",
+          "url": "https://www.eldestapeweb.com/politica/milei-concentra-manejo-atn-deja-manos-coria-ayuda-provincias-202671481022",
+          "date": "2026-07-14T11:14:53+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Milei analiza sumar un blindaje al Indec en la reforma del Banco Central",
+          "source": "Perfil",
+          "url": "https://www.perfil.com/noticias/politica/milei-analiza-sumar-un-blindaje-al-indec-en-la-reforma-del-banco-central.phtml",
+          "date": "2026-07-14T08:00:00+00:00",
           "category": "argentina"
         }
       ],
       "first_seen": "2026-07-14T03:50:25+00:00",
-      "last_seen": "2026-07-14T14:32:11+00:00"
+      "last_seen": "2026-07-15T03:51:03+00:00"
     },
     {
       "id": "right-wing-parties-clash-over-electoral-reforms",
       "title": "Right-wing parties clash over electoral reforms",
-      "blurb": "Electoral reforms are a contentious issue among right-wing parties in Europe, with debates over preference voting, proportional representation, and constitutional changes creating divisions. This theme is particularly evident in Italy, Hungary, Spain, and Poland, where parties like Fratelli d'Italia, Lega, Fidesz, Vox, and PiS are navigating internal and external conflicts over electoral laws.",
+      "blurb": "Electoral reforms are a contentious issue among right-wing parties in Europe, particularly in Italy, Hungary, Spain, and Poland. These debates center on voting systems, preferential voting, and constitutional amendments, often leading to internal dissent and political crises within governing coalitions.",
       "convergence": 3,
       "countries": [
         {
           "name": "🇮🇹 Fratelli d'Italia / Lega",
-          "note": "Meloni and Salvini clash over electoral reforms, particularly the reintroduction of preference voting, with internal divisions threatening coalition unity."
+          "note": "Meloni’s government faces internal dissent over electoral law reforms, with allies rejecting preferential voting proposals."
         },
         {
           "name": "🇭🇺 Fidesz / Tisza",
-          "note": "Orbán and Fidesz face internal dissent over constitutional changes and electoral reforms, with Gulyás Gergely resigning in protest."
+          "note": "Hungary’s ruling party pushes constitutional amendments to remove the president, sparking political crises and opposition backlash."
         },
         {
           "name": "🇪🇸 Vox",
-          "note": "Vox pushes for electoral reforms, including prioritizing national citizens in social services and challenging government policies on voting rights."
+          "note": "Vox clashes with coalition partners over electoral reforms, including deficit targets and budget priorities."
         },
         {
           "name": "🇵🇱 Prawo i Sprawiedliwość",
-          "note": "PiS faces internal divisions over electoral reforms, including proposals to block Ukraine's EU accession and changes to Poland's electoral laws."
+          "note": "PiS faces internal divisions over electoral strategies and constitutional reforms, particularly regarding EU relations."
         }
       ],
       "signals": [
-        "policy debate",
-        "internal divisions",
-        "constitutional changes",
-        "electoral strategy"
+        "parallel elections",
+        "internal dissent",
+        "policy debates",
+        "constitutional amendments"
       ],
-      "article_count": 30,
+      "article_count": 18,
       "refs": [
         {
-          "title": "Meloni sfida opposizioni: su preferenze non chiedano voto segreto",
-          "source": "Askanews",
-          "url": "https://askanews.it/2026/07/14/meloni-sfida-opposizioni-su-preferenze-non-chiedano-voto-segreto/",
-          "date": "2026-07-14T13:40:30+00:00",
+          "title": "Meloni sfida il voto segreto, ma passa la “palude” alla Camera",
+          "source": "IlMetropolitano.it",
+          "url": "https://www.ilmetropolitano.it/2026/07/15/meloni-voto-segreto-franchi-tiratori-preferenze-camera/",
+          "date": "2026-07-15T01:23:18+00:00",
           "category": "italy"
         },
         {
-          "title": "Legge elettorale: ok di Lega e Forza Italia alle preferenze. Opposizioni chiedono voto segreto",
+          "title": "Legge elettorale, l'irritazione di Meloni e i timori sul logoramento. L'ipotesi voto anticipato (smentita dai fedelissimi)",
+          "source": "Il Messaggero",
+          "url": "https://www.ilmessaggero.it/politica/legge_elettorale_meloni_crisi_governo_voto_anticipato_timori_logoramento-9651294.html",
+          "date": "2026-07-14T22:11:20+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Italy's Meloni loses knife-edge vote on electoral reform",
+          "source": "Yahoo",
+          "url": "https://www.yahoo.com/news/politics/articles/italys-meloni-loses-knife-edge-203353030.html",
+          "date": "2026-07-14T20:33:53+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "I franchi tiratori affossano le preferenze. Meloni sconfitta, 'vince la palude'",
+          "source": "ANSA",
+          "url": "https://www.ansa.it/sito/notizie/politica/2026/07/14/legge-elettorale-la-maggioranza-battuta-alla-camera-sulle-preferenze_1e8abb4b-4a07-47a9-a11f-3a40f8365ae0.html",
+          "date": "2026-07-14T20:11:42+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Legge elettorale: 30 franchi tiratori nel centrodestra, Meloni va sotto",
+          "source": "Il Fatto Quotidiano",
+          "url": "https://www.ilfattoquotidiano.it/2026/07/14/legge-elettorale-franchi-tiratori-centrodestra-notizie/8448705/",
+          "date": "2026-07-14T19:31:14+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "***Ddl legge elettorale: Meloni, vince la palude, serve riflessione maggioranza",
           "source": "Il Sole 24 ORE",
-          "url": "https://www.ilsole24ore.com/art/legge-elettorale-ok-lega-preferenze-anche-fi-il-si-pd-chiedera-voto-segreto-AJptzsI",
-          "date": "2026-07-14T13:32:13+00:00",
+          "url": "https://www.ilsole24ore.com/radiocor/nRC_14.07.2026_20.55_714",
+          "date": "2026-07-14T19:17:21+00:00",
           "category": "italy"
         },
         {
-          "title": "Ddl legge elettorale: Lega, ok a emendamento Fdi-Nm-Udc su preferenze",
-          "source": "Il Sole 24 ORE",
-          "url": "https://en.ilsole24ore.com/radiocor/nRC_14.07.2026_12.20_322",
-          "date": "2026-07-14T11:21:28+00:00",
+          "title": "Legge elettorale, maggioranza sotto alla Camera. Schlein e Conte: «Meloni sfiduciata, ora a casa». E parte il coro «elezioni»",
+          "source": "Il Messaggero",
+          "url": "https://www.ilmessaggero.it/politica/legge_elettorale_governo_crisi_reazioni_meloni_sfiducia_cosa_e_successo-9651077.html",
+          "date": "2026-07-14T19:02:28+00:00",
           "category": "italy"
         },
         {
-          "title": "Legge elettorale, Schlein: \"Irricevibile, opposizioni faranno muro\". Ok della Lega a preferenze, anche Forza Italia verso il sì",
-          "source": "OglioPoNews",
-          "url": "https://www.oglioponews.it/2026/07/14/legge-elettorale-schlein-irricevibile-opposizioni-faranno-muro-ok-della-lega-a-preferenze-anche-forza-italia-verso-il-si/",
-          "date": "2026-07-14T11:09:41+00:00",
+          "title": "Meloni sconfitta sul Melonellum, i franchi tiratori affossano le preferenze",
+          "source": "Domani",
+          "url": "https://www.editorialedomani.it/politica/italia/legge-elettorale-preferenze-meloni-crisi-governo-franchi-tiratori-ffg5nu9r",
+          "date": "2026-07-14T18:27:00+00:00",
           "category": "italy"
         },
         {
-          "title": "Legge Elettorale oggi in Aula. Sì a preferenze anche da Lega, Fi e Vannacci. Il Pd: 'Faremo muro'",
-          "source": "TGLA7",
-          "url": "https://tg.la7.it/politica/legge-elettorale-aula-preferenze-lega-forza-italia-terzo-mandato-governatori-opposizioni-14-07-2026-259772",
-          "date": "2026-07-14T11:03:23+00:00",
+          "title": "Legge elettorale bocciata e Meloni tradita dai franchi tiratori, per Pd e M5s \"crisi di governo ed elezioni\"",
+          "source": "Virgilio",
+          "url": "https://www.virgilio.it/notizie/legge-elettorale-bocciata-e-meloni-tradita-dai-franchi-tiratori-per-pd-e-m5s-crisi-di-governo-ed-elezioni-1768982",
+          "date": "2026-07-14T17:54:00+00:00",
           "category": "italy"
         },
         {
-          "title": "Legge elettorale, la Lega ci ripensa: ok alle preferenze. Anche Forza Italia verso il sì",
+          "title": "Il governo è stato sconfitto in un importante voto sulla legge elettorale alla Camera",
+          "source": "Il Post",
+          "url": "https://www.ilpost.it/2026/07/14/voto-legge-elettorale-camera/",
+          "date": "2026-07-14T17:41:30+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Meloni's coalition loses important election-law vote",
+          "source": "ANSA",
+          "url": "https://www.ansa.it/english/news/politics/2026/07/14/melonis-coalition-loses-important-election-law-vote_f9a2b50b-1fa0-4bde-b93f-55358a798484.html",
+          "date": "2026-07-14T17:29:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Legge elettorale alla Camera. Ok di Lega e Fi alle preferenze. Le opposizioni chiedono il voto segreto. Meloni: \"Doverosa operazione verità\"",
+          "source": "Agenzia Dire",
+          "url": "https://www.dire.it/14-07-2026/1255422-legge-elettorale-alla-camera-il-pd-chiedera-il-voto-segreto-sugli-emendamenti-schlein-le-opposizioni-faranno-muro/",
+          "date": "2026-07-14T16:05:44+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Legge elettorale, il dietrofront di Forza Italia e Lega: voteranno sì alle preferenze (annacquate) proposte da FdI. Ma c'è l'incognita voto segreto",
+          "source": "L'Espresso",
+          "url": "https://lespresso.it/c/politica/2026/7/14/legge-elettorale-preferenze-fratelli-d-italia-forza-italia-lega-campo-largo-proteste-schlein-conte/63447",
+          "date": "2026-07-14T14:49:43+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Meloni sfida opposizioni, niente voto segreto, si metta la faccia sulle preferenze",
           "source": "Quotidiano Nazionale",
-          "url": "https://www.quotidiano.net/politica/legge-elettorale-la-lega-ci-ripensa-ok-alle-preferenze-anche-forza-italia-verso-il-si-kffxabq4",
-          "date": "2026-07-14T10:24:38+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Il nodo preferenze alla prova dell'Aula. E Meloni teme i franchi tiratori",
-          "source": "il Giornale",
-          "url": "https://www.ilgiornale.it/news/politica/nodo-preferenze-prova-dellaula-e-meloni-teme-i-franchi-2693074.html",
-          "date": "2026-07-14T10:02:05+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Legge elettorale, dietrofront di Forza Italia: sì alle preferenze, ma la destra teme il voto segreto",
-          "source": "la Repubblica",
-          "url": "https://www.repubblica.it/politica/2026/07/14/news/legge_elettorale_centrodestra_forza_italia_opposizioni_emendamento_preferenze-425469791/",
-          "date": "2026-07-14T09:21:13+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Ecco il compromesso sulla legge elettorale per stanare Lega e FI",
-          "source": "Il Foglio",
-          "url": "https://www.ilfoglio.it/politica/2026/07/14/news/ecco-il-compromesso-sulla-legge-elettorale-per-stanare-lega-e-fi--402123",
-          "date": "2026-07-14T04:00:00+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Preferenze, Fratelli d’Italia tira dritto. Non c’è l’accordo con Forza Italia e Lega. L’emendamento arriva lo stesso",
-          "source": "Quotidiano Nazionale",
-          "url": "https://www.quotidiano.net/politica/preferenze-fratelli-ditalia-tira-dritto-non-ce-laccordo-con-forza-italia-e-lega-lemendamento-arriva-lo-stesso-tj8r1wfd",
-          "date": "2026-07-14T00:20:54+00:00",
+          "url": "https://www.quotidiano.net/ultimaora/meloni-sfida-opposizioni-niente-voto-c3e9521e",
+          "date": "2026-07-14T13:51:07+00:00",
           "category": "italy"
         }
       ],
       "first_seen": "2026-07-14T03:50:25+00:00",
-      "last_seen": "2026-07-14T14:32:11+00:00"
+      "last_seen": "2026-07-15T03:51:03+00:00"
     }
   ]
 }
