@@ -1,76 +1,572 @@
 {
-  "updated_at": "2026-07-16T03:54:40+00:00",
+  "updated_at": "2026-07-16T14:50:12+00:00",
   "lookback_hours": 48,
   "model": "Mistral Large",
   "status": "ok",
   "themes": [
     {
+      "id": "right-wing-parties-push-anti-immigration-policies-in-europe",
+      "title": "Right-wing parties push anti-immigration policies in Europe",
+      "blurb": "Across Europe, right-wing and far-right parties are intensifying their focus on anti-immigration policies, with parallel legislative efforts in Spain, Sweden, Norway, Germany, and the UK. These policies often frame immigration as a security and cultural threat, resonating with nationalist rhetoric and electoral strategies.",
+      "convergence": 5,
+      "countries": [
+        {
+          "name": "🇪🇸 Vox",
+          "note": "Criticizes local governments for ineffective anti-occupation offices and demands stricter immigration controls, linking immigration to crime (e.g., refs 34, 126, 374)."
+        },
+        {
+          "name": "🇸🇪 Sverigedemokraterna",
+          "note": "Polling data shows 50% of Swedes avoid dating party supporters due to political differences, reflecting its hardline stance on immigration (ref 476)."
+        },
+        {
+          "name": "🇳🇴 Fremskrittspartiet",
+          "note": "Proposes restricting local voting rights to Norwegian citizens only, excluding ~360,000 foreign residents (ref 919)."
+        },
+        {
+          "name": "🇩🇪 Alternative für Deutschland",
+          "note": "Advocates for immediate deportations and stricter immigration policies in Saxony-Anhalt, framing it as a security measure (refs 101, 233, 370)."
+        },
+        {
+          "name": "🇬🇧 Reform UK",
+          "note": "Proposes revoking Birmingham's 'City of Sanctuary' status and demands 24/7 security for MPs, citing immigration as a key issue (refs 92, 340, 542)."
+        }
+      ],
+      "signals": [
+        "policy imitation",
+        "shared framing",
+        "parallel legislative efforts",
+        "electoral strategy"
+      ],
+      "article_count": 20,
+      "refs": [
+        {
+          "title": "Nuevo tirón de orejas de Vox al alcalde del PP de Palma: «La Oficina Antiokupación no funciona, es nula»",
+          "source": "OkDiario",
+          "url": "https://okdiario.com/baleares/nuevo-tiron-orejas-vox-alcalde-del-pp-palma-oficina-antiokupacion-no-funciona-nula-19009279",
+          "date": "2026-07-16T13:13:56+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Reform UK MS raises concerns over NHS delays in Fflint Wrecsam",
+          "source": "Wrexham.com",
+          "url": "https://wrexham.com/news/fflint-wrecsam-ms-tells-senedd-he-waited-a-year-for-betsi-cadwaladr-appointment-contact-295920.html",
+          "date": "2026-07-16T12:09:46+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "VOX logra recortar 10.000 euros a Cruz Roja en la Comunidad Valenciana para hacer frente a la delincuencia generada por la inmigración masiva",
+          "source": "gaceta.es",
+          "url": "https://gaceta.es/uncategorized/vox-logra-recortar-10-000-euros-a-cruz-roja-en-la-comunidad-valenciana-para-hacer-frente-a-la-delincuencia-generada-por-la-inmigracion-masiva-20260716-1329/",
+          "date": "2026-07-16T11:30:58+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "„Vollmundige Versprechungen“: Migrationsrechtler zerlegt AfD-Abschiebe-Versprechen für Sachsen-Anhalt",
+          "source": "Gmünder Tagespost",
+          "url": "https://www.gmuender-tagespost.de/welt/politik/abschieben-ab-minute-experte-zerlegt-afd-plan-in-sachsen-anhalt-zr-94400208.html",
+          "date": "2026-07-16T10:13:34+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Reform UK's Sarah Wood 'delighted' to be elected as new Leader of Kirklees Council as two-month stalemate finally ends",
+          "source": "Dewsbury Reporter",
+          "url": "https://www.dewsburyreporter.co.uk/news/politics/council/reform-uks-sarah-wood-delighted-to-be-elected-as-new-leader-of-kirklees-council-as-two-month-stalemate-finally-ends-8802069",
+          "date": "2026-07-16T09:00:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Montessori-Schule bangt um Inklusion: Was passiert mit 23 Förderkindern, wenn AfD Pläne greifen?",
+          "source": "MDR.de",
+          "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/halle/halle/update-montessori-schule-foerderschulen-afd-plaene,inklusion-188.html",
+          "date": "2026-07-16T08:37:25+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "PP y Vox en el Consell recortan 10.000 € a Cruz Roja para estudio sobre inmigración y delincuencia",
+          "source": "moncloa.com",
+          "url": "https://www.moncloa.com/2026/07/16/recorte-cruz-roja-valenciana-vox-inmigracion-3400609/",
+          "date": "2026-07-16T08:35:19+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Ny undersökning: Sverigedemokraterna minst attraktiva på dejtingmarknaden",
+          "source": "Mynewsdesk",
+          "url": "https://www.mynewsdesk.com/se/lelo/pressreleases/ny-undersoekning-sverigedemokraterna-minst-attraktiva-paa-dejtingmarknaden-3457711?utm_source=rss&utm_medium=rss&utm_campaign=Alert&utm_content=pressrelease",
+          "date": "2026-07-16T06:25:00+00:00",
+          "category": "sweden"
+        },
+        {
+          "title": "Birmingham refugees voice fear and sadness as Reform UK request sparks backlash",
+          "source": "Yahoo News UK",
+          "url": "https://uk.news.yahoo.com/birmingham-refugees-voice-fear-sadness-050000488.html",
+          "date": "2026-07-16T05:00:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Ønsker kun norske stemmer ved lokalvalg",
+          "source": "Radio Nordkapp",
+          "url": "https://www.radionordkapp.no/nyheter/33994/onsker-kun-norske-stemmer-ved-lokalvalg/",
+          "date": "2026-07-15T18:00:00+00:00",
+          "category": "norway"
+        }
+      ],
+      "first_seen": "2026-07-08T04:01:20+00:00",
+      "last_seen": "2026-07-16T14:50:12+00:00"
+    },
+    {
+      "id": "far-right-leaders-face-legal-and-political-challenges",
+      "title": "Far-right leaders face legal and political challenges",
+      "blurb": "Far-right leaders across multiple countries are confronting legal battles, internal party conflicts, and public backlash. These challenges often revolve around allegations of corruption, extremist rhetoric, or electoral setbacks, testing their political resilience and public support.",
+      "convergence": 4,
+      "countries": [
+        {
+          "name": "🇫🇷 Rassemblement National",
+          "note": "Marine Le Pen faces legal challenges over embezzlement convictions and trademark disputes, complicating her 2027 presidential bid (refs 78, 294, 420, 595)."
+        },
+        {
+          "name": "🇪🇸 Vox",
+          "note": "Faces lawsuits over alleged misuse of privileged judicial information and internal party disputes over leadership and policy (refs 106, 204, 330, 820)."
+        },
+        {
+          "name": "🇭🇺 Fidesz / Tisza",
+          "note": "Internal fractures as key figures resign, with corruption allegations and legal threats undermining party cohesion (refs 127, 443, 493, 627)."
+        },
+        {
+          "name": "🇬🇧 Reform UK",
+          "note": "Nigel Farage faces scrutiny over undeclared donations and security threats following a politician's murder (refs 334, 364, 874, 1078)."
+        },
+        {
+          "name": "🇺🇸 MAGA / Trump",
+          "note": "Trump administration faces legal challenges, including subpoenas for reporters and lawsuits over policy decisions (refs 2, 39, 184, 331)."
+        }
+      ],
+      "signals": [
+        "legal battles",
+        "internal party conflicts",
+        "public backlash",
+        "electoral setbacks"
+      ],
+      "article_count": 25,
+      "refs": [
+        {
+          "title": "The Trump Administration's Portentous Subpoenas of NYT Reporters",
+          "source": "Executive Functions | Jack Goldsmith",
+          "url": "https://www.execfunctions.org/p/the-trump-administrations-portentous",
+          "date": "2026-07-16T13:47:45+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Sen. Durbin on Todd Blanche's answers about President Trump and the Epstein files at his confirmation hearing",
+          "source": "CNN",
+          "url": "https://edition.cnn.com/2026/07/16/politics/video/berman-durbin-blanche-confirmation-hearing-cnc",
+          "date": "2026-07-16T13:12:01+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Marine Le Pen : une justice sous influence des sondages",
+          "source": "Politis.fr",
+          "url": "https://www.politis.fr/articles/2026/07/regard-denis-sieffert-marine-le-pen-une-justice-sous-influence-des-sondages/",
+          "date": "2026-07-16T12:34:36+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Martínez-Vares, tras decir Vox en Les Corts que tiene \"información privilegiada\" de la Fiscalía: \"De Pérez Llorca no va a salir nada que incomode a sus socios, el PP es víctima de este pacto\"",
+          "source": "LaSexta",
+          "url": "https://amp.lasexta.com/programas/al-rojo-vivo/martinezvares-decir-vox-les-corts-que-tiene-informacion-privilegiada-fiscalia-perez-llorca-salir-nada-que-incomode-sus-socios-victima-este-pacto_202607166a58c5fb0500ab412c98aa89.html",
+          "date": "2026-07-16T11:52:27+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Szijjártó kiszállása azt mutatja, szerinte a Fidesz már nem menthető, Orbán pedig már túl gyenge, hogy megakadályozza fontos embere lelépését",
+          "source": "| hvg.hu",
+          "url": "https://hvg.hu/360/20260716_szijjarto-lepes-mutat-fidesz-szeteses-menthetetlen-orban-gyenge-elemzo",
+          "date": "2026-07-16T11:30:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Of course Donald Trump doesn't belong on Mount Rushmore | James Rosen",
+          "source": "Arizona Daily Star",
+          "url": "https://tucson.com/opinion/column/article_1739628a-fdd9-5643-b443-f93465b921fe.html",
+          "date": "2026-07-16T10:45:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Pilar Bernabé considera \"escandaloso\" que Vox \"alardee\" de tener información de una fiscal : \"Como mínimo, merece una investigación\"",
+          "source": "elDiario.es",
+          "url": "https://www.eldiario.es/comunitat-valenciana/politica/pilar-bernabe-considera-escandaloso-vox-alardee-informacion-fiscal-minimo-merece-investigacion_1_13384756.html",
+          "date": "2026-07-16T10:28:28+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Assignation en référé de Marine Le Pen et du RN pour « contrefaçon de marque » : Jean-Philippe Tanguy dénonce une décision « pathétique »",
+          "source": "Gentside",
+          "url": "https://www.gentside.com/news/assignation-en-refere-de-marine-le-pen-et-du-rn-pour-contrefacon-de-marque-jean-philippe-tanguy-denonce-une-decision-pathetique_art126464.html",
+          "date": "2026-07-16T09:30:00+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Bernabé cree un \"escándalo\" que un diputado de Vox presuma de tener información privilegiada: \"Merece una investigación\"",
+          "source": "Europa Press",
+          "url": "https://www.europapress.es/comunitat-valenciana/noticia-bernabe-cree-escandalo-diputado-vox-presuma-tener-informacion-privilegiada-merece-investigacion-20260716110026.html",
+          "date": "2026-07-16T09:00:26+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Poll: Costs Are the Top Health Care Issue for Voters in the Midterms, But Fraud Tops Republicans' List As Trump Administration Pushes Crackdown",
+          "source": "KFF",
+          "url": "https://www.kff.org/public-opinion/poll-costs-are-the-top-health-care-issue-for-voters-in-the-midterms-but-fraud-tops-republicans-list-as-trump-administration-pushes-crackdown/",
+          "date": "2026-07-16T09:00:16+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Nigel Farage's By-Election Spectacle Was Suddenly Overshadowed by a National Tragedy",
+          "source": "EasternEye",
+          "url": "https://www.easterneye.biz/nigel-farage-by-election-drama-overshadowed-by-uk-tragedy/",
+          "date": "2026-07-16T09:00:05+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Comment: How Nigel Farage's by-election farce was overshadowed by tragedy",
+          "source": "EasternEye",
+          "url": "https://www.easterneye.biz/comment-how-nigel-farage-s-by-election-farce-was-overshadowed-by-tragedy/",
+          "date": "2026-07-16T08:40:05+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Renaissance menace le Rassemblement national de poursuites pour l’utilisation de son nom dans une campagne",
+          "source": "Dijon Actualités",
+          "url": "https://dijon-actualites.fr/2026/07/16/renaissance-menace-le-rassemblement-national-de-poursuites-pour-lutilisation-de-son-nom-dans-une-campagne/",
+          "date": "2026-07-16T07:44:09+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Financial Times: Magyar Péter kormánya pillanatok alatt bontja le az Orbán-rendszert",
+          "source": "24.hu",
+          "url": "https://24.hu/belfold/2026/07/16/magyar-peter-tisza-kormany-orban-rendszer-financial-times/",
+          "date": "2026-07-16T07:19:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Magyar calls Szijjártó’s BYD deal corruption — and says he has the paperwork to prove it",
+          "source": "The Budapest Times",
+          "url": "https://www.budapesttimes.hu/hungary/magyar-calls-szijjartos-byd-deal-corruption-and-says-he-has-the-paperwork-to-prove-it/",
+          "date": "2026-07-16T06:03:49+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Présidentielle 2027 : Elon Musk soutient Marine Le Pen, Sébastien Chenu réagit",
+          "source": "La Provence",
+          "url": "https://www.laprovence.com/article/politique/43007945988082/presidentielle-2027-elon-musk-soutient-marine-le-pen-sebastien-chenu-reagit",
+          "date": "2026-07-16T03:29:00+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Magyar Péter a korrupció legvérlázítóbb fajtájának tartja, hogy Szijjártó a BYD-hoz szerződött",
+          "source": "Telex",
+          "url": "https://telex.hu/belfold/2026/07/15/magyar-peter-szijjarto-peter-byd-allami-tamogatas",
+          "date": "2026-07-16T02:15:39+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "PSPV y Compromís estudian llevar a los tribunales las afirmaciones de Vox sobre \"información privilegiada\" de un caso abierto",
+          "source": "Elplural.com",
+          "url": "https://www.elplural.com/autonomias/comunidad-valenciana/pspv-compromis-estudian-llevar-tribunales-afirmaciones-vox-informacion-privilegiada-caso-abierto_395769102",
+          "date": "2026-07-15T19:39:22+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Man arrested over threat to ‘shoot’ Nigel Farage in head",
+          "source": "AFR",
+          "url": "https://www.afr.com/world/europe/man-arrested-over-threat-to-shoot-nigel-farage-in-head-20260716-p60foo",
+          "date": "2026-07-15T18:41:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Man arrested over social media threat to Nigel Farage",
+          "source": "politico.eu",
+          "url": "https://www.politico.eu/article/man-arrested-over-social-media-threat-nigel-farage/",
+          "date": "2026-07-15T16:08:52+00:00",
+          "category": "uk"
+        }
+      ],
+      "first_seen": "2026-07-08T04:01:20+00:00",
+      "last_seen": "2026-07-16T14:50:12+00:00"
+    },
+    {
+      "id": "internal-divisions-fracture-right-wing-coalitions",
+      "title": "Internal divisions fracture right-wing coalitions",
+      "blurb": "Right-wing coalitions in Italy, Poland, and Spain are experiencing significant internal divisions, with factions clashing over policy priorities, leadership, and electoral strategies. These rifts threaten the stability and unity of governing alliances, potentially reshaping political landscapes.",
+      "convergence": 4,
+      "countries": [
+        {
+          "name": "🇮🇹 Fratelli d'Italia / Lega",
+          "note": "Meloni's government faces collapse over electoral law disputes, with allies abandoning her and internal factions clashing (refs 12, 194, 301, 498)."
+        },
+        {
+          "name": "🇵🇱 Prawo i Sprawiedliwość",
+          "note": "Internal power struggles as Morawiecki defies Kaczyński's ultimatum, risking party split ahead of elections (refs 36, 42, 304, 402)."
+        },
+        {
+          "name": "🇪🇸 Vox",
+          "note": "Internal disputes over leadership and policy, with former leaders suing the party and regional factions clashing (refs 33, 168, 248, 315)."
+        },
+        {
+          "name": "🇭🇺 Fidesz / Tisza",
+          "note": "Fidesz faces internal collapse as key figures resign, with Magyar's Tisza party capitalizing on the instability (refs 119, 437, 592, 837)."
+        },
+        {
+          "name": "🇺🇸 MAGA / Trump",
+          "note": "Trump's administration faces internal divisions over policy decisions, with figures like JD Vance criticizing handling of Epstein files (refs 28, 268, 656, 742)."
+        }
+      ],
+      "signals": [
+        "policy clashes",
+        "leadership disputes",
+        "electoral strategy conflicts",
+        "coalition instability"
+      ],
+      "article_count": 25,
+      "refs": [
+        {
+          "title": "Nuova legge elettorale, il governo è a fine corsa? Emiliano Fittipaldi: \"Meloni si è messa nel bunker fidandosi degli alleati\"",
+          "source": "LA7",
+          "url": "https://www.la7.it/laria-che-tira/video/nuova-legge-elettorale-il-governo-e-a-fine-corsa-emiliano-fittipaldi-meloni-si-e-messa-nel-bunker-16-07-2026-652148",
+          "date": "2026-07-16T13:35:11+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "El exlíder de Vox en Murcia ratifica su denuncia a ese partido por usurpación de su firma",
+          "source": "Infobae",
+          "url": "https://www.infobae.com/espana/agencias/2026/07/16/el-exlider-de-vox-en-murcia-ratifica-su-denuncia-a-ese-partido-por-usurpacion-de-su-firma/",
+          "date": "2026-07-16T13:15:37+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Ludzie Morawieckiego szykują list otwarty do Kaczyńskiego. \"Manifest jedności w różnorodności\"",
+          "source": "WP Wiadomości",
+          "url": "https://wiadomosci.wp.pl/ludzie-morawieckiego-szykuja-list-otwarty-do-kaczynskiego-manifest-jednosci-w-roznorodnosci-7308111643162624a",
+          "date": "2026-07-16T13:13:16+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "PiS grozi rozłam? \"Nie możemy dłużej tego przeciągać\"",
+          "source": "Do Rzeczy",
+          "url": "https://dorzeczy.pl/opinie/915688/pis-grozi-rozlam-nie-mozemy-dluzej-tego-przeciagac.html",
+          "date": "2026-07-16T13:10:00+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Kétségbe vonta a Fidesz márkájának megmenthetőségét Navracsics",
+          "source": "24.hu",
+          "url": "https://24.hu/belfold/2026/07/16/navracsics-fidesz-jovoje-uj-part-orban/",
+          "date": "2026-07-16T11:42:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "El exlíder de Vox en Murcia denuncia en los juzgados la presunta falsificación de su firma para presentar su propio cese",
+          "source": "elDiario.es",
+          "url": "https://www.eldiario.es/murcia/politica/exlider-vox-murcia-denuncia-juzgados-presunta-falsificacion-firma-presentar-propio-cese_1_13384946.html",
+          "date": "2026-07-16T10:58:20+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Legge Elettorali, in aula cartelli dell'opposizione contro il governo: \"Meloni ha fallito\"",
+          "source": "Il Sole 24 ORE",
+          "url": "https://stream24.ilsole24ore.com/video/italia/legge-elettorali-aula-cartelli-opposizione-contro-governo-meloni-ha-fallito/AJmwehL",
+          "date": "2026-07-16T10:35:24+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "El exlíder de Vox en Murcia denuncia al partido por falsificar su firma «para solicitar su cese»",
+          "source": "The Objective",
+          "url": "https://theobjective.com/espana/tribunales/2026-07-16/exlider-vox-denuncia-partido-falsificar-firma-solicitar-cese/",
+          "date": "2026-07-16T10:02:51+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Würzburg: AfD-Stadtrat ruft Nazi-Parole - Geldstrafe",
+          "source": "SZ.de",
+          "url": "https://www.sueddeutsche.de/bayern/wuerzburg-afd-stadtrat-nazi-parole-strafe-li.3517008",
+          "date": "2026-07-16T09:52:42+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Legge elettorale, Bonaccini a In Onda: \"È il primo voto contro Meloni\"",
+          "source": "LA7",
+          "url": "https://www.la7.it/in-onda/video/legge-elettorale-bonaccini-a-in-onda-e-il-primo-voto-contro-meloni-16-07-2026-652077",
+          "date": "2026-07-16T09:20:29+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Bunt w PiS. Do prezesa Kaczyńskiego miało trafić ostrzeżenie",
+          "source": "Fakt",
+          "url": "https://www.fakt.pl/polityka/jaroslaw-kaczynski-mial-otrzymac-ostrzezenie-kulisy-buntu-w-pis/tbzyd1y",
+          "date": "2026-07-16T09:18:19+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Antelo lleva ante el juez la \"usurpación\" de su firma durante la crisis de Vox en la Región: \"Son prácticas absolutamente socialistas alejadas del que pretenda gobernar\"",
+          "source": "La Opinión de Murcia",
+          "url": "https://www.laopiniondemurcia.es/comunidad/2026/07/16/antelo-lleva-juez-usurpacion-firma-132505086.html",
+          "date": "2026-07-16T09:09:37+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Wojna w PiS nabiera tempa. Morawiecki odrzuca ultimatum prezesa \"Wóz albo przewóz\"",
+          "source": "Interia Wydarzenia",
+          "url": "https://wydarzenia.interia.pl/kraj/news-w-ciagu-tygodnia-rozlam-w-pis-prezes-nie-chce-dac-sie-ogrywa,nId,23515019",
+          "date": "2026-07-16T08:06:08+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "La interna libertaria entra en una etapa decisiva: Karina Milei avanza sobre áreas estratégicas y reconfigura el poder dentro del Gobierno",
+          "source": "Identidad Correntina",
+          "url": "https://www.identidadcorrentina.com.ar/noticia/34849_la-interna-libertaria-entra-en-una-etapa-decisiva-karina-milei-avanza-sobre-reas-estratgicas-y-reconfigura-el-poder-dentro-del-gobierno.htm",
+          "date": "2026-07-16T07:28:14+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Elly Schlein. \"Il governo di Giorgia Meloni è finito\"",
+          "source": "HuffPost Italia",
+          "url": "https://www.huffingtonpost.it/politica/2026/07/16/news/elly_schlein_il_governo_di_giorgia_meloni_e_finito-22367773/",
+          "date": "2026-07-16T05:54:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Ferencz Orsolya új politikai közösséget szervez, Török Gábor szerint ezzel megkezdődött a Fidesz formális bomlása",
+          "source": "nlc",
+          "url": "https://nlc.hu/ezvan/20260716/ferencz-orsolya-uj-politikai-kozosseg-torok-gabor-reagalas/",
+          "date": "2026-07-16T03:32:07+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "‘We screwed up the comms’: JD Vance admits errors over Epstein files release",
+          "source": "The Guardian",
+          "url": "https://www.theguardian.com/us-news/2026/jul/15/jd-vance-joe-rogan-epstein-files",
+          "date": "2026-07-15T23:41:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "JD Vance Says the Trump Administration Mishandled the Epstein Files’ Release - News of the United States",
+          "source": "NOTUS",
+          "url": "https://www.notus.org/jd-vance-epstein-files-rogan-podcast",
+          "date": "2026-07-15T21:36:48+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Török Gábor: Úgy néz ki, hogy megkezdődik a Fidesz formális bomlása is",
+          "source": "Telex",
+          "url": "https://telex.hu/belfold/2026/07/15/torok-gabor-fidesz-bomlas-reakcio-ferencz-orsolya",
+          "date": "2026-07-15T19:16:23+00:00",
+          "category": "hungary"
+        }
+      ],
+      "first_seen": "2026-07-16T03:54:40+00:00",
+      "last_seen": "2026-07-16T14:50:12+00:00"
+    },
+    {
       "id": "argentinas-world-cup-victory-fuels-nationalist-rhetoric",
       "title": "Argentina’s World Cup victory fuels nationalist rhetoric",
-      "blurb": "Right-wing and far-right leaders across multiple countries are leveraging Argentina’s World Cup semifinal victory over England to amplify nationalist and anti-colonial rhetoric, particularly around the Falkland Islands dispute. This theme reflects a shared transnational strategy of using sports victories to reinforce sovereignty claims and historical grievances, often with explicit or implicit anti-British sentiment.",
+      "blurb": "Argentina's World Cup success has become a focal point for nationalist rhetoric, with political leaders across multiple countries leveraging the victory to promote national pride, sovereignty claims, and political agendas. This theme highlights the intersection of sports and politics in right-wing narratives.",
       "convergence": 4,
       "countries": [
         {
           "name": "🇦🇷 La Libertad Avanza",
-          "note": "President Javier Milei and Vice President Victoria Villarruel celebrated Argentina’s victory, with Villarruel invoking the Falklands dispute and criticizing England as 'pirates.'"
+          "note": "Milei and Villarruel use Argentina's World Cup success to promote nationalist rhetoric, including sovereignty claims over the Falkland Islands (refs 9, 23, 61, 475)."
         },
         {
           "name": "🇬🇧 Reform UK",
-          "note": "Reform UK figures commented on the political implications of the match, framing it as a nationalist moment for Argentina."
+          "note": "Nigel Farage criticizes FIFA's investigation into political flags at World Cup matches, framing it as an attack on national sovereignty (ref 98)."
         },
         {
           "name": "🇪🇸 Vox",
-          "note": "Vox used the victory to criticize Spain’s diplomatic stance on the Falklands, aligning with Argentina’s sovereignty claims."
+          "note": "Supports Argentina's sovereignty claims over the Falkland Islands, using the World Cup to amplify nationalist rhetoric (refs 116, 182, 199)."
         },
         {
           "name": "🇺🇸 MAGA / Trump",
-          "note": "Trump-aligned media highlighted the political undertones of the match, emphasizing the historical tensions between Argentina and England."
+          "note": "Trump's administration faces criticism for politicizing the World Cup, including attempts to influence FIFA decisions (refs 904, 1174)."
         },
         {
           "name": "🇮🇹 Fratelli d'Italia / Lega",
-          "note": "Italian far-right media covered the match’s nationalist implications, echoing Argentina’s anti-colonial rhetoric."
+          "note": "Italian politicians celebrate Argentina's victory, with nationalist undertones in their rhetoric (refs 15, 50)."
         }
       ],
       "signals": [
-        "shared framing",
-        "contagion of rhetoric",
-        "parallel reactions to external event"
+        "sovereignty claims",
+        "nationalist framing",
+        "political leverage",
+        "sports-politics intersection"
       ],
-      "article_count": 45,
+      "article_count": 20,
       "refs": [
         {
-          "title": "How Wikipedia Turned a World Cup Controversy Into an Antisemitic Conspiracy Theory",
-          "source": "The Free Press",
-          "url": "https://www.thefp.com/p/how-wikipedia-turned-a-world-cup",
-          "date": "2026-07-16T03:01:46+00:00",
+          "title": "Javier Milei habló de la bandera de Malvinas que mostraron los jugadores de la Selección: \"En el peor de los casos será una multa\"",
+          "source": "Radio Mitre",
+          "url": "https://radiomitre.cienradios.com/politica/javier-milei-hablo-de-la-bandera-de-malvinas-que-mostraron-los-jugadores-de-la-seleccion-en-el-peor-de-los-casos-sera-una-multa/",
+          "date": "2026-07-16T13:38:46+00:00",
           "category": "argentina"
         },
         {
-          "title": "La emoción de Javier Milei tras la victoria de Argentina ante Inglaterra por el Mundial 2026: “Imposible de describir”",
-          "source": "La 100",
-          "url": "https://la100.cienradios.com/deportes/la-emocion-de-javier-milei-tras-la-victoria-de-argentina-ante-inglaterra-por-el-mundial-2026-imposible-de-describir/",
-          "date": "2026-07-16T00:45:36+00:00",
+          "title": "Algeria: Meloni, profondo cordoglio per vittime incendio orfanotrofio Algeri",
+          "source": "Il Sole 24 ORE",
+          "url": "https://www.ilsole24ore.com/radiocor/nRC_16.07.2026_15.13_493",
+          "date": "2026-07-16T13:34:36+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Javier Milei salió avalar la bandera de Malvinas que desplegaron los jugadores: \"Válido y lícito\"",
+          "source": "Urgente24",
+          "url": "https://urgente24.com/javier-milei-salio-avalar-la-bandera-malvinas-que-desplegaron-los-jugadores-valido-y-licito-n628725",
+          "date": "2026-07-16T13:28:00+00:00",
           "category": "argentina"
         },
         {
-          "title": "Milei festejó el triunfo de Argentina y se diferenció de Villarruel: “No hay que caer en eslóganes populistas”",
-          "source": "TN",
-          "url": "https://tn.com.ar/politica/2026/07/15/milei-festejo-el-triunfo-de-argentina-y-se-diferencio-de-villarruel-no-hay-que-caer-en-esloganes-populistas/",
-          "date": "2026-07-15T23:29:11+00:00",
-          "category": "argentina"
+          "title": "Fidanza al Cpac di Londra, 'modello Meloni sui migranti cambia l'Europa'",
+          "source": "ANSA",
+          "url": "https://www.ansa.it/europa/notizie/rubriche/altrenews/2026/07/16/fidanza-al-cpac-di-londra-modello-meloni-sui-migranti-cambia-leuropa_6363eaaa-7238-4f61-a3f2-0f4e3c8093e5.html",
+          "date": "2026-07-16T13:05:00+00:00",
+          "category": "italy"
         },
         {
-          "title": "‘Malvinas are Argentinian’: Victors celebrate with Falklands banner after England World Cup exit",
-          "source": "AOL.co.uk",
-          "url": "https://www.aol.co.uk/news/malvinas-argentinian-victors-celebrate-falklands-230135601.html",
-          "date": "2026-07-15T23:01:35+00:00",
-          "category": "argentina"
+          "title": "Salvini a Bari: “Vannacci? No nel centrodestra chi vota ogni giorno col PD”",
+          "source": "TRM network",
+          "url": "https://www.trmtv.it/primo-piano/2026_07_16/558072.html",
+          "date": "2026-07-16T12:56:09+00:00",
+          "category": "italy"
         },
         {
-          "title": "Villarruel volvió a hablar de Malvinas antes del duelo con Inglaterra y lanzó una ironía contra Karina Milei",
-          "source": "Los Andes",
-          "url": "https://www.losandes.com.ar/politica/villarruel-volvio-hablar-malvinas-antes-del-duelo-inglaterra-y-lanzo-una-ironia-contra-karina-milei-n5998652",
-          "date": "2026-07-15T23:01:00+00:00",
+          "title": "'Insane': Nigel Farage has his say on flags under investigation in town",
+          "source": "Northwich Guardian",
+          "url": "https://www.northwichguardian.co.uk/news/26284810.nigel-farage-say-flags-investigation-northwich/",
+          "date": "2026-07-16T12:00:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Buxadé (Vox): «La unidad de España solo será defendida por los españoles» - EFE",
+          "source": "Agencia de noticias",
+          "url": "https://efe.com/espana/2026-07-16/vox-aval-tjue-ley-amnistia/",
+          "date": "2026-07-16T11:46:52+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Vox se compromete a \"revertir\" la ley de amnistía cuando llegue al Gobierno tras el aval de la justicia europea",
+          "source": "El Periódico",
+          "url": "https://www.elperiodico.com/es/politica/20260716/vox-compromete-revertir-ley-amnistia-132511304",
+          "date": "2026-07-16T10:48:36+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Vox garantiza que derogará la amnistía cuando llegue al Gobierno: \"El TJUE demuestra que la unidad de España solo la defienden los españoles\"",
+          "source": "El Independiente",
+          "url": "https://www.elindependiente.com/espana/2026/07/16/vox-garantiza-que-derogara-la-amnistia-cuando-llegue-al-gobierno-el-tjue-demuestra-que-la-unidad-de-espana-solo-la-defienden-los-espanoles/amp/",
+          "date": "2026-07-16T10:30:17+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Argentina VP claims 'Falklands are Argentine' hours after branding England 'pirates'",
+          "source": "Daily Express",
+          "url": "https://www.express.co.uk/news/world/2229668/argentina-vice-president-falkland-islands-world-cup",
+          "date": "2026-07-16T06:26:00+00:00",
           "category": "argentina"
         },
         {
@@ -88,967 +584,170 @@
           "category": "argentina"
         },
         {
-          "title": "Victoria Villarruel volvió a vincular el partido entre Argentina e Inglaterra con Malvinas y apuntó contra Karina Milei",
-          "source": "Perfil",
-          "url": "https://www.perfil.com/noticias/politica/victoria-villarruel-volvio-a-vincular-el-partido-entre-argentina-e-inglaterra-con-malvinas-y-apunto-contra-karina-milei.phtml",
-          "date": "2026-07-15T22:40:00+00:00",
+          "title": "El mensaje de Javier Milei tras el triunfo de la Selección Argentina ante Inglaterra",
+          "source": "diariopopular.com.ar",
+          "url": "https://www.diariopopular.com.ar/politica/el-mensaje-javier-milei-el-triunfo-la-seleccion-argentina-inglaterra-n910003",
+          "date": "2026-07-15T22:15:00+00:00",
           "category": "argentina"
         },
         {
-          "title": "\"No era un partido más\", de Victoria Villarruel a Javier Milei, los festejos del Gobierno por el pase de Argentina a la final",
-          "source": "MDZ Online",
-          "url": "https://www.mdzol.com/politica/no-era-un-partido-mas-victoria-villarruel-javier-milei-los-festejos-del-gobierno-el-pase-argentina-la-final-n1566330",
-          "date": "2026-07-15T22:27:00+00:00",
+          "title": "FIFA Sends Message to Critics Of President Trump's World Cup Behavior",
+          "source": "Yahoo Sports",
+          "url": "https://sports.yahoo.com/articles/fifa-sends-message-critics-president-181224476.html",
+          "date": "2026-07-15T18:12:24+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "World Cup: Argentine VP calls English ‘pirates’ ahead of semi-final",
+          "source": "Punch Newspapers",
+          "url": "https://punchng.com/world-cup-argentine-vp-calls-english-pirates-ahead-of-semi-final/",
+          "date": "2026-07-15T16:44:02+00:00",
           "category": "argentina"
         },
         {
-          "title": "Argentina fans celebrate World Cup win over England",
-          "source": "BBC",
-          "url": "https://www.bbc.com/news/videos/c235lvr13vpo",
-          "date": "2026-07-15T21:58:36+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "El eufórico festejo de Javier Milei tras el histórico triunfo de Argentina ante Inglaterra",
-          "source": "ADNSUR",
-          "url": "https://www.adnsur.com.ar/deportes/el-euforico-festejo-de-javier-milei-tras-el-historico-triunfo-de-argentina-ante-inglaterra_a6a57fb7054487cf0d9d48bdd",
-          "date": "2026-07-15T21:54:34+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Javier Milei festejó el pase a la final de la Copa del Mundo.",
-          "source": "Urgente24",
-          "url": "https://urgente24.com/actualidad/javier-milei-festejo-el-pase-la-final-la-copa-del-mundo-n628679/amp",
-          "date": "2026-07-15T21:49:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Javier Milei celebró el triunfo de Argentina y el pase a la final del Mundial 2026",
-          "source": "La Gaceta",
-          "url": "https://www.lagaceta.com.ar/nota/1145631/politica/javier-milei-celebro-triunfo-argentina-pase-final-mundial-2026.html",
-          "date": "2026-07-15T21:34:47+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "La reacción de Milei al triunfo de la Selección Argentina",
-          "source": "El Diario de la Pampa",
-          "url": "https://www.eldiariodelapampa.com.ar/pais/77267/la-reaccion-de-milei-al-triunfo-de-la-seleccion-argentina",
-          "date": "2026-07-15T21:34:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Milei se expresó tras el triunfo argentino: \"LRPMQLRCRMP...\"",
-          "source": "Mendoza Post",
-          "url": "https://www.mendozapost.com/politica/milei-seleccion-argentina-expresion/",
-          "date": "2026-07-15T21:31:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Tusk ironizuje o sytuacji w PiS. Uszczypliwy komentarz",
-          "source": "WP Wiadomości",
-          "url": "https://wiadomosci.wp.pl/tusk-ironizuje-o-sytuacji-w-pis-uszczypliwy-komentarz-7307870097455104a",
-          "date": "2026-07-15T21:23:18+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "La reacción de Javier Milei tras el triunfo de la Selección Argentina ante Inglaterra",
-          "source": "Diario Mendoza Today",
-          "url": "https://mendozatoday.com.ar/nacionales/la-reaccion-de-javier-milei-tras-el-triunfo-de-la-seleccion-argentina-ante-inglaterra-9766/",
-          "date": "2026-07-15T21:08:01+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "\"Argentina lo pasó por arriba\": Javier Milei celebró el triunfo de la Selección ante Inglaterra y confirmó que no viajará a la final del Mundial",
-          "source": "Clarin.com",
-          "url": "https://www.clarin.com/politica/vamos-argentina-carajo-javier-milei-celebro-triunfo-argentina-pase-final-mundial_0_Ti2jWnWmkC.html",
-          "date": "2026-07-15T21:04:34+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "El guiño de Mauricio Macri a Javier Milei por haberle ofrecido la Casa Rosada a la Selección: \"No es lo mismo que quería hacer el kirchnerismo\"",
-          "source": "TN",
-          "url": "https://tn.com.ar/politica/2026/07/15/el-guino-de-macri-a-milei-por-haberle-ofrecido-la-casa-rosada-a-la-seleccion-no-es-lo-mismo-que-queria-hacer-el-kirchnerismo/",
-          "date": "2026-07-15T20:18:11+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "\"Ella lleva los scones\": el palazo de Villarruel a Karina Milei antes de la semifinal contra Inglaterra",
-          "source": "El Argentino Diario",
-          "url": "https://elargentinodiario.com.ar/politica/15/07/2026/villarruel-esto-no-es-solo-futbol-y-le-pego-a-karina-milei-con-los-scones/",
-          "date": "2026-07-15T19:29:55+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Villarruel cruzó a Karina Milei por el partido: «No es solo fútbol»",
-          "source": "» Cholila Online",
-          "url": "https://cholilaonline.ar/2026/07/victoria-villarruel-contra-karina-milei-por-todo.html",
-          "date": "2026-07-15T19:10:09+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "El partido más politizado del Mundial, con Malvinas como telón de fondo: la reacción del Gobierno",
-          "source": "El Cronista",
-          "url": "https://www.cronista.com/economia-politica/el-partido-mas-politizado-del-mundial-con-malvinas-como-telon-de-fondo-la-reaccion-del-gobierno/?outputType=amp-type",
-          "date": "2026-07-15T18:47:31+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "¿Irá Karina a disculparse a la embajada británica por las críticas de Villarruel?: \"Seguramente vaya y lleve scones\", ironizó la Vice",
-          "source": "Urgente24",
-          "url": "https://urgente24.com/actualidad/ira-karina-disculparse-la-embajada-britanica-las-criticas-villarruel-seguramente-vaya-y-lleve-scones-ironizo-la-vice-n628661",
-          "date": "2026-07-15T18:16:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Malvinas: ¿Qué piensa Javier Milei sobre las Islas?",
-          "source": "Data Diario",
-          "url": "https://www.datadiario.com/politica/que-piensa-javier-milei-sobre-las-islas-malvinas-las-polemicas-declaraciones-del-presidente-en-los-ultimos-10-anos-202671513450",
-          "date": "2026-07-15T17:08:48+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Tras la ironía contra Karina Milei, Villarruel celebró el triunfo de Argentina comparando a los jugadores con los soldados en Malvinas",
-          "source": "Clarin.com",
-          "url": "https://www.clarin.com/politica/horas-semifinal-argentina-inglaterra-victoria-villarruel-redoblo-apuesta-apunto-karina-milei_0_XWuOB32jBx.html",
-          "date": "2026-07-15T16:57:13+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Argentine VP calls English 'pirates' ahead of World Cup semifinal",
-          "source": "theScore",
-          "url": "https://www.thescore.com/news/3566752",
-          "date": "2026-07-15T16:24:06+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "England branded ‘usurping pirates’ by hate-filled Argentine Vice President in another jibe before tense World Cup clash",
-          "source": "The Irish Sun",
-          "url": "https://www.thesun.ie/sport/17300376/england-vice-president-argentina-pirates-falklands/",
-          "date": "2026-07-15T16:05:26+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "‘England are usurping pirates’ — Argentina’s vice-president fuels feud",
-          "source": "The Times",
-          "url": "https://www.thetimes.com/sport/football/world-cup/article/argentina-vice-president-world-cup-match-england-pirates-kj8qvh3wv",
-          "date": "2026-07-15T15:45:53+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Javier Milei le abre las puertas a una petrolera británica para explorar el Mar Argentino",
-          "source": "MinutoUno",
-          "url": "https://www.minutouno.com/economia/javier-milei-le-abre-las-puertas-una-petrolera-britanica-explorar-el-mar-argentino-n6299789",
-          "date": "2026-07-15T15:25:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "En el día de Argentina vs. Inglaterra, Javier Milei nombró jueza a la esposa del magistrado de la causa $Libra",
-          "source": "Urgente24",
-          "url": "https://urgente24.com/actualidad/en-el-dia-argentina-vs-inglaterra-javier-milei-nombro-jueza-la-esposa-del-magistrado-la-causa-libra-n628651",
-          "date": "2026-07-15T14:36:20+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "How Trump blew up the Falklands row",
-          "source": "Yahoo",
-          "url": "https://www.yahoo.com/news/politics/articles/trump-blew-falklands-row-134942240.html",
-          "date": "2026-07-15T13:49:42+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "\"Contra los piratas\": Victoria Villarruel desafió la diplomacia de Javier Milei en la previa al partido de Argentina vs Inglaterra",
-          "source": "Diario Río Negro",
-          "url": "https://www.rionegro.com.ar/politica/contra-los-piratas-victoria-villarruel-desafio-la-diplomacia-de-javier-milei-en-la-previa-al-partido-de-argentina-vs-inglaterra-4648624/?amp=1",
-          "date": "2026-07-15T12:27:33+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Why the Falklands Oil Boom is Igniting a New Crisis in Buenos Aires",
-          "source": "Lavender Hotel",
-          "url": "https://weddings.lavenderhotels.co.uk/falklands-oil-boom-igniting-new-crisis-buenos-aires",
-          "date": "2026-07-15T12:10:19+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "England are ‘usurping pirates’, says Argentina’s vice-president",
-          "source": "Yahoo",
-          "url": "https://www.yahoo.com/news/world/articles/england-usurping-pirates-says-argentina-110556494.html",
-          "date": "2026-07-15T11:05:56+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Javier Milei descartó dar asueto por la semifinal ante Inglaterra y reveló que mirará el partido desde la Quinta de Olivos",
-          "source": "La 100",
-          "url": "https://la100.cienradios.com/sociedad/javier-milei-descarto-dar-asueto-por-la-semifinal-ante-inglaterra-y-revelo-que-mirara-el-partido-desde-la-quinta-de-olivos/",
-          "date": "2026-07-15T10:33:54+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Una pugna interna, un despacho y poca diplomacia: Milei cesa al cónsul general en España tras enfrentarse con el embajador",
-          "source": "elDiarioAR.com",
-          "url": "https://www.eldiarioar.com/politica/javier-milei-argentina-ultraderecha_1_13380897.html",
-          "date": "2026-07-15T09:34:45+00:00",
-          "category": "argentina"
+          "title": "NYC Mayor Zohran Mamdani brushes off Donald Trump question ahead of World Cup final",
+          "source": "Yahoo Sports",
+          "url": "https://sports.yahoo.com/articles/nyc-mayor-zohran-mamdani-brushes-151842573.html",
+          "date": "2026-07-15T15:18:42+00:00",
+          "category": "usa"
         }
       ],
       "first_seen": "2026-07-16T03:54:40+00:00",
-      "last_seen": "2026-07-16T03:54:40+00:00"
+      "last_seen": "2026-07-16T14:50:12+00:00"
     },
     {
-      "id": "right-wing-parties-push-anti-immigration-policies-in-europe",
-      "title": "Right-wing parties push anti-immigration policies in Europe",
-      "blurb": "Anti-immigration policies continue to dominate right-wing and far-right agendas across Europe, with parties in Spain, Sweden, Norway, and Germany proposing or implementing measures to restrict immigration, prioritize nationals in social services, and link immigration to crime. This theme highlights the ongoing convergence of policy priorities and rhetorical strategies across borders.",
-      "convergence": 5,
+      "id": "electoral-law-reforms-spark-cross-national-debates",
+      "title": "Electoral law reforms spark cross-national debates",
+      "blurb": "Electoral law reforms are dominating political discourse in Italy, Hungary, and Poland, with right-wing parties pushing for changes that consolidate power, alter voting systems, or address perceived electoral injustices. These debates reflect broader concerns about democratic representation and political stability.",
+      "convergence": 3,
       "countries": [
         {
-          "name": "🇪🇸 Vox",
-          "note": "Vox proposed 'national priority' policies in regional governments, restricting social aid and housing to Spanish nationals and linking immigration to crime."
-        },
-        {
-          "name": "🇸🇪 Sverigedemokraterna",
-          "note": "The Sweden Democrats pushed for stricter immigration controls and linked immigration to rising crime rates in local governance."
-        },
-        {
-          "name": "🇳🇴 Fremskrittspartiet",
-          "note": "The Progress Party proposed restricting local election voting rights to Norwegian citizens only, excluding foreign residents."
-        },
-        {
-          "name": "🇩🇪 Alternative für Deutschland",
-          "note": "AfD proposed ending inclusion policies for students with special needs and linking immigration to crime in regional platforms."
-        },
-        {
-          "name": "🇬🇧 Reform UK",
-          "note": "Reform UK proposed banning non-English languages in elections and increasing deportations, framing immigration as a security threat."
-        }
-      ],
-      "signals": [
-        "policy imitation",
-        "shared framing",
-        "parallel elections",
-        "contagion of rhetoric"
-      ],
-      "article_count": 50,
-      "refs": [
-        {
-          "title": "As her deputy questions promise to ban headscarves, Le Pen doubles down",
-          "source": "Le Monde.fr",
-          "url": "https://www.lemonde.fr/en/politics/article/2026/07/16/as-her-deputy-questions-promise-to-ban-headscarves-le-pen-doubles-down_6755519_5.html",
-          "date": "2026-07-16T03:00:11+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Kommentar: Frp nå største parti – og eneste parti som har brydd seg om thailandsfarere",
-          "source": "Thailands Tidende",
-          "url": "https://www.thailandstidende.com/component/k2/item/4999-kommentar-frp-na-storste-parti-og-eneste-parti-som-har-brydd-seg-om-thailandsfarere",
-          "date": "2026-07-16T02:39:52+00:00",
-          "category": "norway"
-        },
-        {
-          "title": "Weg mit Weihnachten? Weimer wirft AfD antikirchlichen Reflex vor - T-Online",
-          "source": "",
-          "url": "https://www.t-online.de/nachrichten/deutschland/innenpolitik/id_101345582/weimer-warnt-vor-afd-abschaffung-von-weihnachten.html",
-          "date": "2026-07-16T01:20:26+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "PP y Vox pactan \"reorientar\" la Agencia de Emergencias a la lucha contra la \"delincuencia vinculada a la inmigración\"",
-          "source": "El Mundo",
-          "url": "https://www.elmundo.es/comunidad-valenciana/2026/07/16/6a57b8fbe4d4d897458b4583.html",
-          "date": "2026-07-15T22:14:00+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox lleva su ofensiva contra la ‘ley de nietos’ a las autonomías donde gobierna con el PP y pide informes para analizar una posible invasión de competencias",
-          "source": "Infobae",
-          "url": "https://www.infobae.com/espana/2026/07/15/vox-lleva-su-ofensiva-contra-la-ley-de-nietos-a-las-autonomias-donde-gobierna-con-el-pp-y-pide-informes-para-analizar-una-posible-invasion-de-competencias/",
-          "date": "2026-07-15T19:48:42+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "PP y Vox recortan 10.000 euros a Cruz Roja valenciana para hacer estudios que asocian inmigración y delincuencia",
-          "source": "elDiario.es",
-          "url": "https://www.eldiario.es/comunitat-valenciana/pp-vox-recortan-10-000-euros-cruz-roja-valenciana-estudios-asocian-inmigracion-delincuencia_1_13382955.html",
-          "date": "2026-07-15T19:29:59+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "El PP y Vox blindan los 1,5 millones para la sede de la Cámara de Carlos Baño pese a las obras sin licencia",
-          "source": "Información",
-          "url": "https://www.informacion.es/politica/2026/07/15/pp-vox-camara-alicante-obras-132487533.html",
-          "date": "2026-07-15T18:26:30+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox encarga informes jurídicos de sus gobiernos sobre la «invasión de competencias» de la Ley de Nietos",
-          "source": "OkDiario",
-          "url": "https://okdiario.com/espana/vox-encarga-informes-juridicos-sus-gobiernos-sobre-invasion-competencias-ley-nietos-19004108",
-          "date": "2026-07-15T18:20:31+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox encarga informes jurídicos a sus gobiernos autonómicos por la invasión de la ‘ley de nietos’",
-          "source": "The Objective",
-          "url": "https://theobjective.com/espana/politica/2026-07-15/vox-informes-autonomicos-ley-nietos/?amp",
-          "date": "2026-07-15T18:00:25+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox evalúa a través de sus gobiernos autonómicos una \"posible invasión de competencias\" por la 'ley de nietos'",
-          "source": "El Mundo",
-          "url": "https://www.elmundo.es/espana/2026/07/15/6a57bdc3e85ece4f408b4592.html",
-          "date": "2026-07-15T17:39:52+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox pide un informe a los servicios jurídicos de sus gobiernos sobre la \"invasión de competencias\" de la 'ley de nietos'",
-          "source": "Europa Press",
-          "url": "https://www.europapress.es/nacional/noticia-vox-pide-informe-servicios-juridicos-gobiernos-invasion-competencias-ley-nietos-20260715193149.html",
-          "date": "2026-07-15T17:31:49+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox acusa al PP de robarle la idea de las pulseras infantiles en las playas de Alicante",
-          "source": "Información",
-          "url": "https://www.informacion.es/alicante/2026/07/15/vox-acusa-pp-robarle-idea-alicante-132491397.html",
-          "date": "2026-07-15T17:26:50+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox lleva su ofensiva contra la 'ley de nietos' a sus gobiernos autonómicos con el PP",
-          "source": "El Correo",
-          "url": "https://www.elcorreo.com/politica/vox-lanza-ofensiva-ley-nietos-bruselas-vamos-20260715183142-ntrc.html",
-          "date": "2026-07-15T16:31:43+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox endurece el tono con Chueca: \"Aparque las fotos y las luces y céntrese en gestionar Zaragoza\"",
-          "source": "Aragón Digital",
-          "url": "https://www.aragondigital.es/articulo/zaragoza/vox-endurece-tono-chueca-aparque-fotos-luces-centrese-gestionar-zaragoza/20260715181937995880.html",
-          "date": "2026-07-15T16:19:37+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "\"Si on ne fait rien dans les premiers jours, on est morts\" : le programme du RN, entre totems et tabous",
-          "source": "L'Express",
-          "url": "https://www.lexpress.fr/politique/rn/si-on-ne-fait-rien-dans-les-premiers-jours-on-est-morts-le-programme-du-rn-entre-totems-et-tabous-POEK2C4ODFGWZKFCOG7WK2ED3Y/",
-          "date": "2026-07-15T16:00:00+00:00",
-          "category": "france"
-        },
-        {
-          "title": "El PP andaluz abraza el discurso de Vox sobre el cambio climático",
-          "source": "Elplural.com",
-          "url": "https://www.elplural.com/autonomias/andalucia/pp-andaluz-abraza-discurso-vox-cambio-climatico_395737102",
-          "date": "2026-07-15T15:25:48+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox advierte que los viticultores de Huelva llevan \"un año esperando\" las ayudas prometidas por el PP en Diputación",
-          "source": "Europa Press",
-          "url": "https://www.europapress.es/andalucia/huelva-00354/noticia-vox-advierte-viticultores-huelva-llevan-ano-esperando-ayudas-prometidas-pp-diputacion-20260715170844.html",
-          "date": "2026-07-15T15:08:44+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Carolina España destaca la importancia de una \"legislatura fructífera\" con Vox",
-          "source": "ABC",
-          "url": "https://www.abc.es/espana/carolina-espana-destaca-importancia-legislatura-fructifera-vox-20260715164842-nt.html",
-          "date": "2026-07-15T14:48:46+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox pide al Ayuntamiento de Oviedo un estudio para agilizar los retrasos en el Servicio de Licencias",
-          "source": "Europa Press",
-          "url": "https://www.europapress.es/asturias/noticia-vox-pide-ayuntamiento-oviedo-estudio-agilizar-retrasos-servicio-licencias-20260715163918.html",
-          "date": "2026-07-15T14:39:18+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Un micro de las Corts pilla a un diputado de Vox que llama “bruja” a una socialista y alardea de tener información de una fiscal",
-          "source": "elDiario.es",
-          "url": "https://www.eldiario.es/comunitat-valenciana/politica/diputado-vox-jacta-corts-informacion-privilegiada-investigacion-dicho-fiscal_1_13382875.html",
-          "date": "2026-07-15T14:30:26+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "José Muñoz, sobre la prioridad nacional impulsada por Vox en Valencia: \"Me niego a llamarla prioridad nacional; creo que esto es un apartheid\"",
-          "source": "LaSexta",
-          "url": "https://amp.lasexta.com/programas/al-rojo-vivo/jose-munoz-prioridad-nacional-impulsada-vox-valencia-niego-llamarla-prioridad-nacional-creo-que-esto-apartheid_202607156a579562e9f2e84b5c69c07d.html",
-          "date": "2026-07-15T14:12:50+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Carolina España minimiza diferencias con Vox en el nuevo Gobierno: «Lo importante es que sea una legislatura fructífera»",
-          "source": "Ideal",
-          "url": "https://www.ideal.es/andalucia/carolina-espana-minimiza-diferencias-vox-nuevo-gobierno-20260715153708-nt_amp.html",
-          "date": "2026-07-15T13:37:09+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox, sobre la caída de la Verja en Gibraltar: \"Es una traición a España\"",
-          "source": "La Voz del Sur",
-          "url": "https://www.lavozdelsur.es/ediciones/provincia-cadiz/campo-gibraltar/vox-sobre-la-caida-de-la-verja-en-gibraltar-es-una-traicion-a-espana.html",
-          "date": "2026-07-15T13:20:30+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox recuerda al consejero de Empleo de Castilla y León que han pactado reducir un 50% las subvenciones a los sindicatos",
-          "source": "elDiario.es",
-          "url": "https://www.eldiario.es/castilla-y-leon/politica/vox-recuerda-consejero-empleo-castilla-leon-han-pactado-reducir-50-subvenciones-sindicatos_1_13382415.html",
-          "date": "2026-07-15T13:19:11+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Garriga (Vox) sobre la corrupción en el PSOE: \"Falta el más importante: la imputación de Sánchez\"",
-          "source": "PressDigital",
-          "url": "https://www.pressdigital.es/articulo/politica/2026-07-15/5954717-garriga-vox-sobre-corrupcion-psoe-falta-importante-imputacion-sanchez",
-          "date": "2026-07-15T13:03:00+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox aprueba con el PP ayudas para el retorno de extutelados a sus países de origen y para víctimas de la okupación",
-          "source": "Valencia Plaza",
-          "url": "https://valenciaplaza.com/valenciaplaza/comunitat-valenciana1/vox-aprueba-con-el-pp-ayudas-para-el-retorno-de-extutelados-a-sus-paises-de-origen-y-para-victimas-de-la-okupacion",
-          "date": "2026-07-15T12:47:13+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "El PSPV lamenta que PP y Vox no incluyan el centro de salud de Torrellano ni Conservatorio en los presupuestos",
-          "source": "Alicante Plaza",
-          "url": "https://alicanteplaza.es/alicanteplaza/elcheplaza/el-pspv-lamenta-que-pp-y-vox-no-incluyan-el-centro-de-salud-de-torrellano-ni-conservatorio-en-los-presupuestos",
-          "date": "2026-07-15T12:36:00+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "El PP aprueba la enmienda de Vox de 400 mil euros para avanzar en el nuevo Conservatorio de Música y rechaza las del PSPV",
-          "source": "TeleElx",
-          "url": "https://teleelx.es/2026/07/15/el-pp-aprueba-la-enmienda-de-vox-de-400-mil-euros-para-avanzar-en-el-nuevo-conservatorio-de-musica-y-rechaza-las-del-pspv/",
-          "date": "2026-07-15T12:11:15+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "VOX pretende modificar la declaración institucional para reforzar la españolidad de Ceuta",
-          "source": "Ceuta Ahora",
-          "url": "https://ceutaahora.com/art/22138/vox-pretende-modificar-la-declaracion-institucional-para-reforzar-la-espanolidad-de-ceuta",
-          "date": "2026-07-15T11:48:31+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox propone un plan municipal de hidratación para ampliar la red de fuentes públicas en la ciudad de Huesca",
-          "source": "heraldo.es",
-          "url": "https://www.heraldo.es/noticias/aragon/huesca/2026/07/15/vox-propone-un-plan-municipal-hidratacion-para-ampliar-red-fuentes-publicas-ciudad-huesca-2037372.html",
-          "date": "2026-07-15T11:36:44+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "El PP fija su primera línea roja a Vox y rechaza el recorte de 1 millón de euros a la AVL - Levante-EMV",
-          "source": "",
-          "url": "https://www.levante-emv.com/comunitat-valenciana/2026/07/15/pp-fija-primera-linea-roja-avl-132476228.html",
-          "date": "2026-07-15T11:28:40+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox carga contra el acuerdo de la Unión Europea con Gibraltar tras el fin de la verja: \"Es infame e inexplicable\"",
-          "source": "El Correo de Andalucía",
-          "url": "https://www.elcorreoweb.es/andalucia/2026/07/15/vox-carga-acuerdo-union-europea-132474618.html",
-          "date": "2026-07-15T11:14:45+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox pide más medios policiales para erradicar la \"creciente delincuencia\" en el casco histórico de Granada",
-          "source": "Granada Hoy",
-          "url": "https://www.granadahoy.com/granada/vox-pide-medios-policiales-erradicar_0_2007453596.html",
-          "date": "2026-07-15T11:02:16+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Rosa Tirador denuncia que el pacto de Moreno Bonilla con Vox condena a Huelva a más recortes y privatización de la sanidad pública",
-          "source": "PSOE de Huelva",
-          "url": "https://www.psoedehuelva.es/rosa-tirador-denuncia-que-el-pacto-de-moreno-bonilla-con-vox-condena-a-huelva-a-mas-recortes-y-privatizacion-de-la-sanidad-publica/",
-          "date": "2026-07-15T10:45:12+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox propone un Plan Municipal de Hidratación para la ciudad de Huesca",
-          "source": "Cadena SER",
-          "url": "https://cadenaser.com/aragon/2026/07/15/vox-propone-un-plan-municipal-de-hidratacion-para-la-ciudad-de-huesca-radio-huesca/",
-          "date": "2026-07-15T10:22:42+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox cuela por primera vez la prioridad nacional en las ayudas sociales del País Valencià",
-          "source": "El Salto",
-          "url": "https://www.elsaltodiario.com/pais-valenciano/vox-cuela-primera-vez-prioridad-nacional-ayudas-sociales-del-pais-valencia",
-          "date": "2026-07-15T10:09:00+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "El Gobierno de Page acusa a PP, Vox y Junts de rechazar 50 millones para sanidad, educación y servicios sociales",
-          "source": "Elplural.com",
-          "url": "https://www.elplural.com/autonomias/castilla-la-mancha/gobierno-page-acusa-pp-vox-junts-rechazar-50-millones-sanidad-educacion-servicios-sociales_395702102",
-          "date": "2026-07-15T09:48:17+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "PP y Vox sacan adelante que el Consell haga un estudio sobre el impacto de los inmigrantes en la delincuencia",
-          "source": "Valencia Plaza",
-          "url": "https://valenciaplaza.com/valenciaplaza/comunitat-valenciana1/pp-y-vox-sacan-adelante-que-el-consell-haga-un-estudio-sobre-el-impacto-de-los-inmigrantes-en-la-delincuencia",
-          "date": "2026-07-15T09:37:12+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "L. elettorale, Vannacci: Meloni faccia votare emendamento Fn, tiri fuori attributi",
-          "source": "Askanews",
-          "url": "https://askanews.it/2026/07/15/l-elettorale-vannacci-meloni-faccia-votare-emendamento-fn-tiri-fuori-attributi/",
-          "date": "2026-07-15T09:24:34+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "El Gobierno andaluz PP-Vox marca sus prioridades: rechazo a menores migrantes, toro y abandono de la Agenda 2030",
-          "source": "moncloa.com",
-          "url": "https://www.moncloa.com/2026/07/15/prioridades-gobierno-andaluz-pp-vox-3400103/",
-          "date": "2026-07-15T08:14:23+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox abre un frente con Juanma Moreno al rechazar el análisis climático del incendio de Almería",
-          "source": "moncloa.com",
-          "url": "https://www.moncloa.com/2026/07/15/vox-frente-moreno-cambio-climatico-almeria-3400110/",
-          "date": "2026-07-15T08:13:38+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox avisa a López Miras de que si quiere tener presupuestos tendrá que asumir la “prioridad nacional”",
-          "source": "Servimedia",
-          "url": "https://www.servimedia.es/noticias/vox-avisa-lopez-miras-si-quiere-tener-presupuestos-tendra-asumir-prioridad-nacional/1413088354",
-          "date": "2026-07-15T08:07:00+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Comunidad Valenciana: la \"prioridad nacional\" de Vox también impregna las políticas sociales y por primera vez 'a petición' del PP",
-          "source": "El Periódico",
-          "url": "https://amp.elperiodico.com/es/politica/20260715/comunidad-valenciana-prioridad-nacional-vox-132465699",
-          "date": "2026-07-15T07:58:19+00:00",
-          "category": "spain"
-        }
-      ],
-      "first_seen": "2026-07-08T04:01:20+00:00",
-      "last_seen": "2026-07-16T03:54:40+00:00"
-    },
-    {
-      "id": "far-right-leaders-face-legal-and-political-challenges",
-      "title": "Far-right leaders face legal and political challenges",
-      "blurb": "Far-right leaders in France, Spain, Hungary, and the UK are confronting legal troubles, internal party divisions, and public backlash. These challenges include corruption investigations, electoral setbacks, and internal rebellions, reflecting a broader pattern of instability within far-right movements across Europe.",
-      "convergence": 4,
-      "countries": [
-        {
-          "name": "🇫🇷 Rassemblement National",
-          "note": "Marine Le Pen faces legal challenges over her 2026 conviction for embezzlement, which could impact her 2027 presidential campaign."
-        },
-        {
-          "name": "🇪🇸 Vox",
-          "note": "Vox faces internal disputes and legal challenges over its policies, including accusations of leaking privileged judicial information."
+          "name": "🇮🇹 Fratelli d'Italia / Lega",
+          "note": "Meloni's government faces collapse over electoral law reforms, with allies abandoning her and opposition protests (refs 12, 102, 190, 494)."
         },
         {
           "name": "🇭🇺 Fidesz / Tisza",
-          "note": "Fidesz is experiencing internal fractures, with key figures resigning and defecting amid corruption allegations and electoral losses."
+          "note": "Tisza party proposes new electoral laws to prevent single-party supermajorities, aiming to reshape Hungary's political landscape (refs 10, 291, 378, 516)."
         },
         {
-          "name": "🇬🇧 Reform UK",
-          "note": "Nigel Farage faces scrutiny over undeclared donations and rising threats against party members, including the murder of Ann Widdecombe."
-        },
-        {
-          "name": "🇺🇸 MAGA / Trump",
-          "note": "Trump and his allies face legal challenges, including investigations into his administration’s handling of classified documents and subpoenas for reporters."
-        }
-      ],
-      "signals": [
-        "parallel legal challenges",
-        "internal party divisions",
-        "electoral setbacks"
-      ],
-      "article_count": 40,
-      "refs": [
-        {
-          "title": "Diffamò Salvini, Costa condannato a mille euro di multa",
-          "source": "Il Resto del Carlino",
-          "url": "https://www.ilrestodelcarlino.it/reggio-emilia/cronaca/diffamo-salvini-costa-condannato-a-1ca36cbf",
-          "date": "2026-07-16T03:18:11+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Does Nigel Farage think he’s above scrutiny?",
-          "source": "The Spectator",
-          "url": "https://spectator.com/article/does-nigel-farage-think-hes-above-scrutiny/?edition=us",
-          "date": "2026-07-16T01:55:59+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Trump administration fires new U.S. attorney in Seattle less than an hour after appointment",
-          "source": "Yahoo",
-          "url": "https://www.yahoo.com/news/politics/articles/trump-administration-fires-u-attorney-234656052.html",
-          "date": "2026-07-15T23:46:56+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Reform UK demands 'Full Security' after Ann Widdecombe murder and threats against Nigel Farage",
-          "source": "The News International",
-          "url": "https://www.thenews.com.pk/latest/1409259-reform-uk-demands-full-security-after-ann-widdecombe-murder-and-threats-against-nigel-farage",
-          "date": "2026-07-15T23:12:00+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Mike Lindell was elated after President Trump endorsed him for governor. Here’s what he said.",
-          "source": "Minnesota Reformer",
-          "url": "https://minnesotareformer.com/2026/07/15/mike-lindell-was-elated-after-president-trump-endorsed-him-for-governor-heres-what-he-said/",
-          "date": "2026-07-15T22:34:44+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "El Gobierno nacional se muestra activo y apura la aprobación de proyectos con foco en la reforma política",
-          "source": "El Litoral",
-          "url": "https://www.ellitoral.com/politica/gobierno-nacional-reforma-politica-proyectos-oficiales-javier-milei-diego-santilli-ahora_0_dMS8AxYZeC.html",
-          "date": "2026-07-15T22:02:24+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "JD Vance tells Joe Rogan that Jeffrey Epstein had ‘connections’ to Israeli intelligence",
-          "source": "Jewish Telegraphic Agency",
-          "url": "https://www.jta.org/2026/07/15/politics/jd-vance-tells-joe-rogan-that-jeffrey-epstein-had-connections-to-israeli-intelligence",
-          "date": "2026-07-15T21:42:07+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Epstein Files Update: JD Vance Admits Trump Admin ‘Screwed Up’",
-          "source": "Newsweek",
-          "url": "https://www.newsweek.com/jd-vance-admits-trump-admin-screwed-up-epstein-files-12201075",
-          "date": "2026-07-15T21:10:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Vance says Trump administration ‘screwed up’ its approach to the Epstein files",
-          "source": "NBC News",
-          "url": "https://www.nbcnews.com/politics/jd-vance/vance-trump-administration-epstein-files-approach-rcna587715",
-          "date": "2026-07-15T21:09:22+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "At a fiery hearing, President Trump’s pick for Attorney General faces tough questions",
-          "source": "NPR",
-          "url": "https://www.npr.org/2026/07/15/nx-s1-5894785/at-a-fiery-hearing-president-trumps-pick-for-attorney-general-faces-tough-questions",
-          "date": "2026-07-15T21:01:28+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Marine Le Pen, candidate en sursis : anatomie d’une fuite en avant",
-          "source": "Éditions Golias",
-          "url": "https://www.golias-editions.fr/2026/07/15/marine-le-pen-candidate-en-sursis-anatomie-dune-fuite-en-avant/",
-          "date": "2026-07-15T20:51:15+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Todd Blanche grilled over loyalty to Donald Trump in tense confirmation hearing",
-          "source": "Financial Times",
-          "url": "https://www.ft.com/content/f96ac6cc-6185-46e2-ad7f-3b145b45df27?syn-25a6b1a6=1",
-          "date": "2026-07-15T20:23:08+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Une affiche de Marine Le Pen attaquée en justice par Gabriel Attal, le RN répond en se moquant de lui",
-          "source": "Linternaute.com",
-          "url": "https://www.linternaute.com/actualite/societe/10942308-une-affiche-de-marine-le-pen-attaquee-en-justice-par-gabriel-attal-le-rn-repond-en-se-moquant-de-lui/",
-          "date": "2026-07-15T20:17:55+00:00",
-          "category": "france"
-        },
-        {
-          "title": "“Pour la France, la Renaissance” : le slogan de Marine Le Pen lui vaut une plainte pour contrefaçon",
-          "source": "guadeloupe.franceantilles.fr",
-          "url": "https://www.guadeloupe.franceantilles.fr/actualite/politique/pour-la-france-la-renaissance-le-slogan-de-marine-le-pen-lui-vaut-une-plainte-pour-contrefacon-1086525.php",
-          "date": "2026-07-15T20:17:09+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Le Pen shows that Farage should have let sleaze inquiry run its course",
-          "source": "AOL.com",
-          "url": "https://www.aol.com/articles/le-pen-shows-farage-let-125122000.html",
-          "date": "2026-07-15T19:58:59+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Vance admits to Joe Rogan that the Trump administration ‘mishandled’ the release of the Epstein files",
-          "source": "The Independent",
-          "url": "https://www.independent.co.uk/news/world/americas/us-politics/jd-vance-joe-rogan-epstein-files-b3015671.html",
-          "date": "2026-07-15T19:58:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Candidature de Marine Le Pen: \"Cela change le climat de la campagne\", estime Dominique de Villepin, ancien Premier ministre",
-          "source": "BFM",
-          "url": "https://www.bfmtv.com/politique/video-candidature-de-marine-le-pen-cela-change-le-climat-de-la-campagne-estime-dominique-de-villepin-ancien-premier-ministre_VN-202607150772.html",
-          "date": "2026-07-15T19:29:21+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Marine Le Pen face à la justice : le non-recours du parquet général resserre encore l’étau avant la présidentielle - parlons-politique.fr",
-          "source": "",
-          "url": "https://www.parlons-politique.fr/elections/marine-le-pen-face-a-la-justice-le-non-recours-du-parquet-general-resserre-encore-letau-avant-la-presidentielle_23750/",
-          "date": "2026-07-15T19:20:44+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Elon Musk: \"Marine Le Pen is France's last hope\" – Interview",
-          "source": "ENTREVUE.FR",
-          "url": "https://entrevue.fr/en/elections/elon-musk-marine-le-pen-est-le-dernier-espoir-de-la-france/",
-          "date": "2026-07-15T19:00:00+00:00",
-          "category": "france"
-        },
-        {
-          "title": "«Le dernier espoir de la France» : Elon Musk apporte son soutien à Marine Le Pen en vue de la présidentielle de 2027",
-          "source": "Le Figaro",
-          "url": "https://www.lefigaro.fr/elections/presidentielles/le-dernier-espoir-de-la-france-elon-musk-apporte-son-soutien-a-marine-le-pen-en-vue-de-la-presidentielle-de-2027-20260715",
-          "date": "2026-07-15T18:38:22+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Elon Musk qualifie Marine Le Pen de « dernier espoir de la France »",
-          "source": "Le Monde.fr",
-          "url": "https://www.lemonde.fr/pixels/article/2026/07/15/elon-musk-qualifie-marine-le-pen-de-dernier-espoir-de-la-france_6723610_4408996.html",
-          "date": "2026-07-15T18:29:10+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Koniec stowarzyszeń. Prezes stawia ultimatum politykom PiS. \"To może być na rękę Morawieckiemu\"",
-          "source": "Polskie Radio 24",
-          "url": "https://polskieradio24.pl/polityka/kaczynski-mowi-sprawdzam-test-politycznej-lojalnosci-czy-dazenie-do-rozlamu-w-pis",
-          "date": "2026-07-15T18:11:23+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Présidentielle 2027 : Marine Le Pen reçoit le soutien public d’Elon Musk",
-          "source": "Orange Actualités",
-          "url": "https://actu.orange.fr/politique/presidentielle-2027-marine-le-pen-recoit-le-soutien-public-d-elon-musk-magic-CNT000002qwdG3.html",
-          "date": "2026-07-15T17:27:00+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Todd Blanche’s loyalty to Trump questioned in Senate confirmation hearing",
-          "source": "Al Jazeera",
-          "url": "https://www.aljazeera.com/news/2026/7/15/todd-blanches-loyalty-to-trump-questioned-in-senate-confirmation-hearing",
-          "date": "2026-07-15T17:24:59+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Présidentielle 2027 : Elon Musk affiche son soutien à Marine Le Pen",
-          "source": "Frandroid",
-          "url": "https://www.frandroid.com/culture-tech/politique/3181425_presidentielle-2027-elon-musk-affiche-son-soutien-a-marine-le-pen",
-          "date": "2026-07-15T17:02:37+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Affaire des assistants d'eurodéputés du Front national : huit pourvois en cassation déposés par les condamnés en appel",
-          "source": "ici.fr",
-          "url": "https://www.ici.fr/infos/faits-divers-justice/affaire-des-assistants-d-eurodeputes-du-front-national-huit-pourvois-en-cassation-deposes-par-les-condamnes-en-appel-5792607",
-          "date": "2026-07-15T16:48:36+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Procès RN : le parquet général ne se pourvoit pas en cassation contre la décision en appel",
-          "source": "L'Humanité",
-          "url": "https://www.humanite.fr/politique/cour-de-cassation/proces-rn-le-parquet-general-ne-se-pourvoit-pas-en-cassation-contre-la-decision-en-appel",
-          "date": "2026-07-15T16:10:38+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Présidentielle 2027 : Elon Musk apporte son soutien à Marine Le Pen, estimant qu’elle « est le dernier espoir de la France »",
-          "source": "Sud Ouest",
-          "url": "https://www.sudouest.fr/politique/marine-le-pen/presidentielle-2027-elon-musk-apporte-son-soutien-a-marine-le-pen-estimant-qu-elle-est-le-dernier-espoir-de-la-france-29945367.php",
-          "date": "2026-07-15T16:09:22+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Présidentielle 2027: Elon Musk soutient Marine Le Pen",
-          "source": "Le Matin",
-          "url": "https://www.lematin.ch/story/presidentielle-2027-pour-elon-musk-marine-le-pen-est-l-espoir-de-la-france-103603664",
-          "date": "2026-07-15T16:06:11+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Le Pen-Bardella, les failles cachées",
-          "source": "Le Nouvel Obs",
-          "url": "https://www.nouvelobs.com/dossiers/20260715.OBS116708/le-pen-bardella-les-failles-cachees.html",
-          "date": "2026-07-15T16:00:21+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Huit pourvois en cassation déposés à ce stade dans l'affaire des assistants d'eurodéputés FN",
-          "source": "franceinfo",
-          "url": "https://www.franceinfo.fr/politique/front-national/huit-pourvois-en-cassation-deposes-a-ce-stade-dans-l-affaire-des-assistants-d-eurodeputes-fn_8109122.html",
-          "date": "2026-07-15T15:54:18+00:00",
-          "category": "france"
-        },
-        {
-          "title": "« Elle est le dernier espoir de la France » : Elon Musk apporte son soutien à Marine Le Pen",
-          "source": "Le Républicain Lorrain",
-          "url": "https://www.republicain-lorrain.fr/elections/2026/07/15/elle-est-le-dernier-espoir-de-la-france-elon-musk-apporte-son-soutien-a-marine-le-pen",
-          "date": "2026-07-15T15:37:28+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Elon Musk apporte son soutien à Marine Le Pen : «Pour la connaître, je pense que ça ne lui fait pas plaisir», estime Jules Torres",
-          "source": "Europe 1",
-          "url": "https://www.europe1.fr/politique/elon-musk-apporte-son-soutien-a-marine-le-pen-pour-la-connaitre-je-pense-que-ca-ne-lui-fait-pas-plaisir-estime-jules-torres-974598",
-          "date": "2026-07-15T15:29:00+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Marine Le Pen à la présidentielle de 2027 : Elon Musk estime qu’elle est « le dernier espoir de la France",
-          "source": "Ohmymag",
-          "url": "https://www.ohmymag.com/people/actu-people/marine-le-pen-a-la-presidentielle-de-2027-elon-musk-estime-quelle-est-le-dernier-espoir-de-la-france_art191575.html",
-          "date": "2026-07-15T15:26:09+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Elon Musk Le Pen: ce que change son soutien - parlons-politique.fr",
-          "source": "",
-          "url": "https://www.parlons-politique.fr/elections/quand-elon-musk-soutient-marine-le-pen-les-electeurs-voient-sinviter-un-acteur-etranger-dans-la-presidentielle-francaise_23712/",
-          "date": "2026-07-15T15:16:19+00:00",
-          "category": "france"
-        },
-        {
-          "title": "\"Marine Le Pen est le dernier espoir de la France\": le soutien d'Elon Musk au RN provoque des accusations d'\"ingérence étrangère\" - LCP-Assemblée nationale",
-          "source": "",
-          "url": "https://lcp.fr/actualites/marine-le-pen-est-le-dernier-espoir-de-la-france-le-soutien-d-elon-musk-au-rn-provoque",
-          "date": "2026-07-15T15:10:10+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Marine Le Pen : le parquet général renonce à un pourvoi en cassation, voici ce que cette décision change pour le procès du RN",
-          "source": "NextPlz",
-          "url": "https://www.nextplz.fr/people/562870-marine-le-pen-le-parquet-general-renonce-a-un-pourvoi-en-cassation-voici-ce-que-cette-decision-change-pour-le-proces-du-rn",
-          "date": "2026-07-15T15:00:00+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Gabriel Attal poursuit Marine Le Pen et le Rassemblement national pour “parasitisme” et “contrefaçon de marque”",
-          "source": "BFM",
-          "url": "https://www.bfmtv.com/politique/elections/presidentielle/video-gabriel-attal-poursuit-marine-le-pen-et-le-rassemblement-national-pour-parasitisme-et-contrefacon-de-marque_VN-202607150561.html",
-          "date": "2026-07-15T14:44:14+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Nigel Farage Made £2.3 Million in Two Years While Serving as Clacton’s MP",
-          "source": "DeSmog",
-          "url": "https://www.desmog.com/2026/07/15/farage-made-2-3-million-in-two-years-while-serving-as-clactons-mp/",
-          "date": "2026-07-15T13:54:25+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Condamnée et candidate ? Même pas peur... Mais de qui Marine Le Pen aurait-elle peur vu son avance dans les sondages",
-          "source": "moustique.be",
-          "url": "https://www.moustique.be/notre-epoque/les-infos/2026/07/15/marine-le-pen-sera-candidate-malgre-sa-condamnation-pourquoi-les-sondages-lencouragent-a-ne-vraiment-avoir-peur-de-rien-ENXFVNL4F5DDVGNTUBXDZLHQMI/",
-          "date": "2026-07-15T13:30:00+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Gabriel Attal attaque Marine Le Pen en justice pour avoir utilisé le mot « renaissance » sur son affiche de campagne",
-          "source": "Yahoo Actualités",
-          "url": "https://fr.news.yahoo.com/gabriel-attal-attaque-marine-le-pen-en-justice-pour-avoir-utilise-le-mot-%C2%AB-renaissance-%C2%BB-sur-son-affiche-de-campagne-114909573.html",
-          "date": "2026-07-15T12:56:16+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Présidentielle 2027 : Marine Le Pen utilise le mot « Renaissance » sur son affiche électorale, Gabriel Attal l’assigne pour « contrefaçon »",
-          "source": "Sud Ouest",
-          "url": "https://www.sudouest.fr/justice/presidentielle-2027-marine-le-pen-utilise-le-mot-renaissance-sur-son-affiche-electorale-gabriel-attal-l-assigne-pour-contrefacon-29942142.php",
-          "date": "2026-07-15T12:27:40+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Marine Le Pen peut encore faire campagne : le parquet renonce à un pourvoi et laisse la présidentielle sous tension - parlons-politique.fr",
-          "source": "",
-          "url": "https://www.parlons-politique.fr/elections/marine-le-pen-peut-encore-faire-campagne-le-parquet-renonce-a-un-pourvoi-et-laisse-la-presidentielle-sous-tension_23699/",
-          "date": "2026-07-15T12:14:14+00:00",
-          "category": "france"
-        },
-        {
-          "title": "« La renaissance » : Gabriel Attal assigne Marine Le Pen pour « contrefaçon de marque »",
-          "source": "Le Dauphiné Libéré",
-          "url": "https://www.ledauphine.com/elections/2026/07/15/la-renaissance-gabriel-attal-assigne-marine-le-pen-pour-contrefacon-de-marque",
-          "date": "2026-07-15T11:35:28+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Gabriel Attal assigne Marine Le Pen pour « contrefaçon » sur l’utilisation du terme « renaissance » dans son affiche de campagne",
-          "source": "Le Monde.fr",
-          "url": "https://www.lemonde.fr/election-presidentielle-2027/article/2026/07/15/gabriel-attal-assigne-marine-le-pen-pour-contrefacon-sur-l-utilisation-du-terme-renaissance-dans-son-affiche-de-campagne_6723546_6205049.html",
-          "date": "2026-07-15T11:23:41+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Présidentielle 2027 : Marine Le Pen et le RN poursuivis par le parti de Gabriel Attal pour l’utilisation du terme «Renaissance»",
-          "source": "CNews",
-          "url": "https://www.cnews.fr/france/2026-07-15/presidentielle-2027-marine-le-pen-et-le-rn-poursuivis-par-le-parti-de-gabriel?amp",
-          "date": "2026-07-15T11:03:17+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Procès en appel du RN : le parquet général renonce au pourvoi en cassation",
-          "source": "Sud Ouest",
-          "url": "https://www.sudouest.fr/politique/marine-le-pen/proces-en-appel-du-rn-le-parquet-general-renonce-au-pourvoi-en-cassation-29941283.php",
-          "date": "2026-07-15T10:46:45+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Procès Marine Le Pen : pas de pourvoi en cassation du parquet général contre la décision de la cour d’appel",
-          "source": "RTBF",
-          "url": "https://www.rtbf.be/article/proces-marine-le-pen-pas-de-pourvoi-en-cassation-du-parquet-general-contre-la-decision-de-la-cour-d-appel-11758139",
-          "date": "2026-07-15T10:34:48+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Procès en appel des assistants parlementaires du RN : le parquet général décide de ne pas se pourvoir en cassation",
-          "source": "L'Indépendant",
-          "url": "https://www.lindependant.fr/2026/07/15/proces-en-appel-des-assistants-parlementaires-du-rn-le-parquet-general-decide-de-ne-pas-se-pourvoir-en-cassation-13469435.php",
-          "date": "2026-07-15T10:30:00+00:00",
-          "category": "france"
-        }
-      ],
-      "first_seen": "2026-07-08T04:01:20+00:00",
-      "last_seen": "2026-07-16T03:54:40+00:00"
-    },
-    {
-      "id": "trump-administration-escalates-tensions-with-iran",
-      "title": "Trump administration escalates tensions with Iran",
-      "blurb": "The Trump administration’s aggressive stance toward Iran has intensified, with airstrikes, sanctions, and threats of further military action dominating coverage. This theme reflects a coordinated transnational narrative among right-wing media, framing Iran as an existential threat to Western interests and justifying a hardline approach.",
-      "convergence": 4,
-      "countries": [
-        {
-          "name": "🇺🇸 MAGA / Trump",
-          "note": "Trump ordered airstrikes on Iranian targets, reimposed sanctions, and threatened further military action, escalating tensions in the Middle East."
-        },
-        {
-          "name": "🇬🇧 Reform UK",
-          "note": "Reform UK media echoed Trump’s rhetoric, framing Iran as a threat to global stability and supporting a hardline stance."
-        },
-        {
-          "name": "🇮🇹 Fratelli d'Italia / Lega",
-          "note": "Italian far-right media amplified Trump’s Iran policy, portraying it as necessary to counter Iranian aggression."
+          "name": "🇵🇱 Prawo i Sprawiedliwość",
+          "note": "PiS explores electoral alliances and reforms to counter opposition dominance in the Senate (refs 36, 990, 1020)."
         },
         {
           "name": "🇪🇸 Vox",
-          "note": "Vox aligned with Trump’s Iran strategy, emphasizing the need for a strong Western response to Iranian threats."
+          "note": "Demands electoral reforms and citizen referendums on contentious issues like mosque construction (refs 86, 87, 306)."
         },
         {
-          "name": "🇫🇷 Rassemblement National",
-          "note": "French far-right media supported Trump’s approach, framing Iran as a destabilizing force in the region."
+          "name": "🇺🇸 MAGA / Trump",
+          "note": "Trump's administration focuses on election security and voting machine reforms, sparking debates over electoral integrity (refs 7, 35, 617)."
         }
       ],
       "signals": [
-        "shared framing",
-        "reaction to external event",
-        "coordinated messaging"
+        "power consolidation",
+        "voting system changes",
+        "electoral justice debates",
+        "political stability concerns"
       ],
-      "article_count": 30,
+      "article_count": 20,
       "refs": [
+        {
+          "title": "Is Trump giving a speech tonight? What time does Trump speak tonight",
+          "source": "Asbury Park Press",
+          "url": "https://www.app.com/story/news/2026/07/16/trump-speech-today-live-what-time-is-president-trump-speaking-today/90941063007/",
+          "date": "2026-07-16T13:42:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Két-három éven belül új választási törvényt alkot a Tisza",
+          "source": "Infostart",
+          "url": "https://infostart.hu/belfold/2026/07/16/ket-harom-even-belul-uj-valasztasi-torvenyt-alkot-a-tisza",
+          "date": "2026-07-16T13:38:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Nuova legge elettorale, il governo è a fine corsa? Emiliano Fittipaldi: \"Meloni si è messa nel bunker fidandosi degli alleati\"",
+          "source": "LA7",
+          "url": "https://www.la7.it/laria-che-tira/video/nuova-legge-elettorale-il-governo-e-a-fine-corsa-emiliano-fittipaldi-meloni-si-e-messa-nel-bunker-16-07-2026-652148",
+          "date": "2026-07-16T13:35:11+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "President Trump to address nation tonight on elections and voting machines",
+          "source": "Scripps News",
+          "url": "https://www.scrippsnews.com/politics/elections/president-trump-to-address-nation-tonight-on-elections-and-voting-machines",
+          "date": "2026-07-16T13:13:34+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Ludzie Morawieckiego szykują list otwarty do Kaczyńskiego. \"Manifest jedności w różnorodności\"",
+          "source": "WP Wiadomości",
+          "url": "https://wiadomosci.wp.pl/ludzie-morawieckiego-szykuja-list-otwarty-do-kaczynskiego-manifest-jednosci-w-roznorodnosci-7308111643162624a",
+          "date": "2026-07-16T13:13:16+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "El Ayuntamiento aprueba una moción de VOX exigiendo la convocatoria de elecciones generales",
+          "source": "ÓRBITA Navalmoral",
+          "url": "https://orbitanavalmoral.com/ayuntamiento-aprueba-mocion-de-vox-exigiendo-convocatoria-elecciones-generales/",
+          "date": "2026-07-16T12:22:50+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Vox apremia al alcalde a una consulta ciudadana por la mezquita, con un Sanz que aguarda a Urbanismo",
+          "source": "ABC",
+          "url": "https://www.abc.es/sevilla/ciudad/vox-apremia-alcalde-consulta-ciudadana-mezquita-sanz-20260716142017-nts.html",
+          "date": "2026-07-16T12:20:18+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Via libera della Camera alla legge elettorale con 217 sì, passa al Senato",
+          "source": "ANSA",
+          "url": "https://www.ansa.it/sito/notizie/politica/2026/07/16/via-libera-della-camera-alla-legge-elettorale-con-217-si-passa_71b15c5c-c928-4550-8305-b137147950ef.html",
+          "date": "2026-07-16T11:56:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "L.elettorale, via libera Camera con voto segreto a riforma Meloni",
+          "source": "Il Sole 24 ORE",
+          "url": "https://stream24.ilsole24ore.com/video/italia/lelettorale-via-libera-camera-voto-segreto-riforma-meloni/AJzithL?cmpid=.com",
+          "date": "2026-07-16T10:36:49+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "A Tisza Párt jogi vezetője szerint másfél-két éven belül új választási törvénye lesz Magyarországnak",
+          "source": "hodpress.hu",
+          "url": "https://www.hodpress.hu/a-tisza-part-jogi-vezetoje-szerint-masfel-ket-even-belul-uj-valasztasi-torvenye-lesz-magyarorszagnak/",
+          "date": "2026-07-16T09:30:22+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Vox propone catalogar y proteger los azulejos religiosos y retablos cerámicos de Córdoba",
+          "source": "Diario Córdoba",
+          "url": "https://www.diariocordoba.com/cordoba-ciudad/2026/07/16/vox-propone-catalogar-proteger-azulejos-132503578.html",
+          "date": "2026-07-16T09:16:10+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Új választási rendszert tervez a Tisza, kizárnák, hogy egy párt kétharmados többséget szerezzen – Szegedi hírek",
+          "source": "Szeged365",
+          "url": "https://szeged365.hu/2026/07/16/uj-valasztasi-rendszert-tervez-a-tisza-kizarnak-hogy-egy-part-ketharmados-tobbseget-szerezzen/",
+          "date": "2026-07-16T08:33:40+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Legge elettorale, Meloni sfida i franchi tiratori",
+          "source": "Italia Informa",
+          "url": "https://italia-informa.com/legge-elettorale-meloni-franchi-tiratori.aspx",
+          "date": "2026-07-16T06:00:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Melléthei-Barna Márton szerint másfél-két éven belül elfogadnak egy új választási törvényt",
+          "source": "444",
+          "url": "https://444.hu/2026/07/16/mellethei-barna-marton-szerint-masfel-ket-even-belul-elfogadnak-egy-uj-valasztasi-torvenyt",
+          "date": "2026-07-16T05:31:37+00:00",
+          "category": "hungary"
+        },
         {
           "title": "President Trump to address the nation Thursday night; 939 the Eagle and KWOS to carry address live",
           "source": "93.9 The Eagle",
@@ -1057,581 +756,22 @@
           "category": "usa"
         },
         {
-          "title": "US will not win Iran war from the air, Donald Trump’s ex-defence chief warns",
-          "source": "Financial Times",
-          "url": "https://www.ft.com/content/80245363-32d8-4fe6-805f-c4e3dec6279c",
-          "date": "2026-07-16T00:46:19+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "‘We screwed up the comms’: JD Vance admits errors over Epstein files release",
-          "source": "The Guardian",
-          "url": "https://www.theguardian.com/us-news/2026/jul/15/jd-vance-joe-rogan-epstein-files",
-          "date": "2026-07-15T23:41:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "U.S. reimposes blockade and steps up strikes as Iran threatens to halt all energy exports from the region",
-          "source": "PBS",
-          "url": "https://www.pbs.org/newshour/world/u-s-reimposes-blockade-and-steps-up-strikes-as-iran-threatens-to-halt-all-energy-exports-from-the-region",
-          "date": "2026-07-15T15:23:45+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Fact Sheet: Costs of the Trump Administration’s War in Iran",
-          "source": "Center for American Progress",
-          "url": "https://www.americanprogress.org/article/fact-sheet-costs-of-the-trump-administrations-war-in-iran/",
-          "date": "2026-07-15T15:04:55+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "ICE should continue traffic stops despite recent shootings, Trump says on social media",
-          "source": "PBS",
-          "url": "https://www.pbs.org/newshour/politics/ice-should-continue-traffic-stops-despite-recent-shootings-trump-on-social-media",
-          "date": "2026-07-15T14:47:25+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "President Trump reverses on Strait of Hormuz toll less than 24 hours after announcing it",
-          "source": "WDSU",
-          "url": "https://www.wdsu.com/article/trump-reverses-strait-of-hormuz-toll-proposal/71942067",
-          "date": "2026-07-15T13:54:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "President Trump backs off Strait of Hormuz toll less than 24 hours after announcing it",
-          "source": "WMTW",
-          "url": "https://www.wmtw.com/article/trump-reverses-strait-of-hormuz-toll-proposal/71942067",
-          "date": "2026-07-15T13:54:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Donald Trump is running out of options in Iran",
-          "source": "The Conversation",
-          "url": "https://theconversation.com/donald-trump-is-running-out-of-options-in-iran-287525",
-          "date": "2026-07-15T13:39:23+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "„Próbują zajść Grzegorza Brauna z prawej strony”. Morawiecki ocenia polityków PiS",
-          "source": "Rzeczpospolita",
-          "url": "https://www.rp.pl/polityka/art44829481-pomagalismy-z-chlodnej-kalkulacji-morawiecki-komentuje-slowa-czarnka-o-ukrainie",
-          "date": "2026-07-15T13:26:00+00:00",
+          "title": "PiS porozumiało się z Bezpartyjnymi Samorządowcami. Jarosław Kaczyński ogłasz plan na Senat",
+          "source": "Portal Samorządowy",
+          "url": "https://www.portalsamorzadowy.pl/polityka-i-spoleczenstwo/pis-porozumialo-sie-z-bezpartyjnymi-samorzadowcami-jaroslaw-kaczynski-oglasz-plan-na-senat,668767.html",
+          "date": "2026-07-15T17:14:00+00:00",
           "category": "poland"
         },
         {
-          "title": "Contradicting his own administration, Donald Trump calls for ICE to keep using traffic stops",
-          "source": "Bangor Daily News",
-          "url": "https://www.bangordailynews.com/2026/07/15/politics/washington/maine-ice-shooting-donald-trump-vehicle-stops/",
-          "date": "2026-07-15T12:48:17+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Portugal’s civic freedoms “under pressure from far-right surge, police abuses”",
-          "source": "Portugal Resident",
-          "url": "https://www.portugalresident.com/portugals-civic-freedoms-under-pressure-from-far-right-surge-police-abuses/",
-          "date": "2026-07-15T11:58:03+00:00",
-          "category": "general"
-        },
-        {
-          "title": "President Trump says ICE should continue traffic stops after recent fatal shootings",
-          "source": "WPLG Local 10",
-          "url": "https://www.local10.com/video/news/local/2026/07/15/president-trump-says-ice-should-continue-traffic-stops-after-recent-fatal-shootings/",
-          "date": "2026-07-15T11:55:24+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Trump: ICE should continue traffic stops after recent shootings, seeming to contradict new policy",
-          "source": "MyNorthwest.com",
-          "url": "https://mynorthwest.com/national/trump-ice-should-continue-traffic-stops-after-recent-shootings-seeming-to-contradict-new-policy/4257068",
-          "date": "2026-07-15T11:41:06+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Human rights groups sue over Trump administration's sanctions on ICC for investigations into Israel",
-          "source": "Toronto Star",
-          "url": "https://www.thestar.com/news/world/united-states/human-rights-groups-sue-over-trump-administrations-sanctions-on-icc-for-investigations-into-israel/article_810568b3-95fe-5821-9a12-a63eddbbe51f.html",
-          "date": "2026-07-15T10:31:20+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "President Trump Updates Strait of Hormuz Strategy",
-          "source": "The Presidential Prayer Team",
-          "url": "https://www.presidentialprayerteam.org/2026/07/15/president-trump-updates-strait-of-hormuz-strategy/",
-          "date": "2026-07-15T10:00:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "President Trump drops 20% fee plan for Strait of Hormuz",
-          "source": "VOV World",
-          "url": "https://vovworld.vn/news/president-trump-drops-20-fee-plan-for-strait-of-hormuz-2450529.vov5",
-          "date": "2026-07-15T09:55:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Trump's push for an IDF withdrawal could force Israel to rethink its Syria strategy - analysis",
-          "source": "The Jerusalem Post",
-          "url": "https://www.jpost.com/middle-east/article-902562",
-          "date": "2026-07-15T09:38:06+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Israel blocking regional stability by refusing to withdraw, Syria's al-Sharaa tells Trump - report",
-          "source": "The Jerusalem Post",
-          "url": "https://www.jpost.com/middle-east/article-902557",
-          "date": "2026-07-15T09:32:06+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Stephen Miller Melts Down as Trump’s Biggest Deal Implodes",
-          "source": "The Daily Beast",
-          "url": "https://www.thedailybeast.com/stephen-miller-melts-down-in-fox-interview-as-trumps-deal-to-end-war-with-iran-implodes/",
-          "date": "2026-07-15T09:06:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "President Trump to speak at Pa. Defense and Innovation Summit hosted by Sen. McCormick",
-          "source": "WFMZ.com",
-          "url": "https://www.wfmz.com/news/area/pennsylvania/president-trump-to-speak-at-pa-defense-and-innovation-summit-hosted-by-sen-mccormick/article_96d4a8c6-623b-4a12-881f-22d34975f5a8.html",
-          "date": "2026-07-15T09:06:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Gavin Newsom Warns Donald Trump Poses ‘Gravest Threat’ Before Midterms",
-          "source": "Yahoo",
-          "url": "https://www.yahoo.com/news/politics/articles/gavin-newsom-warns-donald-trump-090239135.html",
-          "date": "2026-07-15T09:02:39+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Furious Trump overturns suspension of ICE traffic stops amid MAGA criticism",
-          "source": "CNN",
-          "url": "https://www.cnn.com/2026/07/15/us/trump-ice-traffic-stops",
-          "date": "2026-07-15T08:00:25+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Donald Trump’s Hormuz Reversal Leaves One Big Question for Oil Markets",
-          "source": "Yahoo Finance",
-          "url": "https://finance.yahoo.com/energy/articles/donald-trump-hormuz-reversal-leaves-075538656.html",
-          "date": "2026-07-15T07:55:38+00:00",
-          "category": "usa"
-        }
-      ],
-      "first_seen": "2026-07-16T03:54:40+00:00",
-      "last_seen": "2026-07-16T03:54:40+00:00"
-    },
-    {
-      "id": "internal-divisions-fracture-right-wing-coalitions",
-      "title": "Internal divisions fracture right-wing coalitions",
-      "blurb": "Right-wing coalitions in Italy, Poland, and Spain are experiencing significant internal divisions, with factions clashing over policy priorities, electoral strategies, and leadership. These divisions threaten the stability of governing alliances and highlight the fragility of right-wing unity across Europe.",
-      "convergence": 3,
-      "countries": [
-        {
-          "name": "🇮🇹 Fratelli d'Italia / Lega",
-          "note": "Meloni’s coalition suffered a parliamentary defeat over electoral reform, exposing divisions between Fratelli d’Italia, Lega, and Forza Italia."
-        },
-        {
-          "name": "🇵🇱 Prawo i Sprawiedliwość",
-          "note": "PiS faces internal rebellion over its stance on Ukraine, with factions led by Morawiecki and Czarnek clashing with Kaczyński’s leadership."
-        },
-        {
-          "name": "🇪🇸 Vox",
-          "note": "Vox’s coalition with PP in regional governments is strained by disagreements over climate policy, social priorities, and budget allocations."
-        },
-        {
-          "name": "🇭🇺 Fidesz / Tisza",
-          "note": "Fidesz is fracturing as key figures resign or defect, with former members forming new political movements."
-        }
-      ],
-      "signals": [
-        "parallel elections",
-        "internal party divisions",
-        "policy disputes"
-      ],
-      "article_count": 35,
-      "refs": [
-        {
-          "title": "Legge elettorale, maggioranza ancora divisa, Meloni va avanti",
-          "source": "Corriere della Sera",
-          "url": "https://www.corriere.it/il-punto/prima-ora/26_luglio_16/legge-elettorale-maggioranza-ancora-divisa-meloni-insiste.shtml",
-          "date": "2026-07-15T23:16:26+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Legge elettorale, oggi voto finale. Bocciato emendamento Vannacci, centrodestra di nuovo diviso. Schlein contro Meloni",
-          "source": "OglioPoNews",
-          "url": "https://www.oglioponews.it/2026/07/16/legge-elettorale-oggi-voto-finale-bocciato-emendamento-vannacci-centrodestra-di-nuovo-diviso-schlein-contro-meloni/",
-          "date": "2026-07-15T23:03:56+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "La premier a Tajani e Salvini: “La pazienza ormai è al limite”",
-          "source": "la Repubblica",
-          "url": "https://www.repubblica.it/politica/2026/07/16/news/meloni_legge_elettorale_ultimatum_salvini_tajani-425473439/",
-          "date": "2026-07-15T23:00:00+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Fratelli d’Italia rompe la maggioranza",
-          "source": "il manifesto",
-          "url": "https://ilmanifesto.it/fratelli-ditalia-rompe-la-maggioranza",
-          "date": "2026-07-15T22:15:45+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Legge elettorale, centrodestra di nuovo diviso su preferenze: Meloni tace ma governo avanti. Oggi il voto finale",
-          "source": "Adnkronos",
-          "url": "https://www.adnkronos.com/politica/legge-elettorale-oggi-voto-finale-cosa-successo-ieri_3cTx5yo71cOtUEd9Qk6SfH",
-          "date": "2026-07-15T22:12:00+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Meloni azzoppata insegue vannacci",
-          "source": "Il Fatto Quotidiano",
-          "url": "https://www.ilfattoquotidiano.it/in-edicola/articoli/2026/07/16/meloni-azzoppata-insegue-vannacci/8449927/",
-          "date": "2026-07-15T22:01:00+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Legge elettorale, Meloni tira dritto e c.destra guarda a tenuta gruppi",
-          "source": "Sky TG24",
-          "url": "https://tg24.sky.it/politica/video/2026/07/15/legge-elettorale-meloni-tira-dritto-e-cdestra-guarda-a-tenuta-gruppi-1112209",
-          "date": "2026-07-15T20:39:10+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Legge elettorale, Schlein: \"Surreale che Meloni vada avanti fischiettando come se niente fosse\"",
-          "source": "la Repubblica",
-          "url": "https://www.repubblica.it/politica/2026/07/15/video/legge_elettorale_schlein_surreale_che_meloni_vada_avanti_fischiettando_come_se_nulla_fosse-425473276/",
-          "date": "2026-07-15T19:43:00+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "‘Justice has finally been served': Meloni reacts as Italy's apex court upholds life sentences in Saman Abbas honour killing case",
-          "source": "WION",
-          "url": "https://www.wionews.com/world/justice-has-finally-been-served-meloni-reacts-as-italy-s-apex-court-upholds-life-sentences-in-saman-abbas-honour-killing-case-1784143290105",
-          "date": "2026-07-15T19:26:00+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Bunt Morawieckiego, idzie na starcie z Kaczyńskim. \"Bagno konfliktów\"",
-          "source": "Polskie Radio 24",
-          "url": "https://polskieradio24.pl/polska/morawiecki-idzie-na-starcie-z-kaczynskim-bagno-konfliktow",
-          "date": "2026-07-15T18:58:57+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Zakaz Kaczyńskiego dla członków PiS. Morawiecki zabrał głos",
-          "source": "Do Rzeczy",
-          "url": "https://dorzeczy.pl/opinie/915346/zakaz-kaczynskiego-dla-czlonkow-pis-morawiecki-zabral-glos.html",
-          "date": "2026-07-15T18:33:00+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Zaskakująca decyzja władz PiS. Co ze stowarzyszeniami Morawieckiego i Sasina?",
-          "source": "TOK FM",
-          "url": "https://www.tokfm.pl/polityka/zaskakujaca-decyzja-wladz-pis-co-ze-stowarzyszeniami-morawieckiego-i-sasina",
-          "date": "2026-07-15T18:15:23+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "W PiS wrze po decyzji władz partii. Morawiecki zabrał głos",
-          "source": "Wprost",
-          "url": "https://www.wprost.pl/kraj/12388341/w-pis-wrze-po-decyzji-wladz-partii-morawiecki-zabral-glos.html",
-          "date": "2026-07-15T18:08:00+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Buntownicy z PiS. Kaczyński może stracić kilkudziesięciu posłów",
-          "source": "TVP Info",
-          "url": "https://www.tvp.info/94358154/bunt-w-pis-mateusz-morawiecki-i-kilkudziesieciu-poslow-moze-opuscic-partie",
-          "date": "2026-07-15T17:52:00+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Ultimatum w PiS. Mateusz Morawiecki odpowiedział na zakaz wprowadzony przez władze partii",
-          "source": "Rzeczpospolita",
-          "url": "https://www.rp.pl/polityka/art44832551-morawiecki-odpowiedzial-na-zakaz-wprowadzony-przez-pis-musimy-mowic-wlasnym-jezykiem",
-          "date": "2026-07-15T17:51:49+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Ultimatum Jarosława Kaczyńskiego. \"Naprawdę prezes zabrał się za porządki\"",
-          "source": "Newsweek",
-          "url": "https://www.newsweek.pl/polska/polityka/jaroslaw-kaczynski-zada-likwidacji-stowarzyszen-w-pis-uderza-w-morawieckiego/vtwe8td",
-          "date": "2026-07-15T17:50:29+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "PiS na krawędzi rozłamu. Działo się w środę [SKRÓT DNIA]",
-          "source": "WP Wiadomości",
-          "url": "https://wiadomosci.wp.pl/pis-na-krawedzi-rozlamu-dzialo-sie-w-srode-skrot-dnia-7307822807615488a",
-          "date": "2026-07-15T17:48:30+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Morawiecki odpowiada na ultimatum prezesa PiS. Padła deklaracja",
-          "source": "Fakt",
-          "url": "https://www.fakt.pl/polityka/morawiecki-odpowiada-na-ultimatum-pis-padla-deklaracja/y3vbngn",
-          "date": "2026-07-15T17:46:36+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Morawiecki odpowiada na ultimatum prezesa PiS. \"Taki jest i pozostanie cel\"",
-          "source": "Fakt",
-          "url": "https://www.fakt.pl/polityka/morawiecki-odpowiada-na-ultimatum-kaczynskiego-taki-jest-i-pozostanie-cel/y3vbngn",
-          "date": "2026-07-15T17:46:36+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Po słowach Czarnka Kaczyński zareagował. Teraz PiS stawia sprawę jasno",
-          "source": "Rzeczpospolita",
-          "url": "https://www.rp.pl/polityka/art44833471-pis-zamyka-sprawe-wypowiedzi-czarnka-bochenek-nie-bylo-zadnego-sporu",
-          "date": "2026-07-15T17:22:53+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Morawiecki reaguje na ultimatum władz PiS. Padła zdecydowana deklaracja",
-          "source": "PolsatNews.pl",
-          "url": "https://www.polsatnews.pl/wiadomosc/2026-07-15/morawiecki-reaguje-na-ultimatum-wladz-pis-padla-zdecydowana-deklaracja/",
-          "date": "2026-07-15T17:07:00+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Morawiecki nie rezygnuje ze stowarzyszenia \"Rozwój Plus\". \"Nie wycofujemy się\" - mówią jego ludzie",
-          "source": "WP Wiadomości",
-          "url": "https://wiadomosci.wp.pl/morawiecki-nie-rezygnuje-ze-stowarzyszenia-rozwoj-plus-nie-wycofujemy-sie-mowia-jego-ludzie-7307815304099840a",
-          "date": "2026-07-15T17:04:11+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Jarosław Kaczyński nakazuje rozwiązać stowarzyszenia. Nieoficjalnie: Morawiecki się nie podporządkuje",
-          "source": "Wiadomości Onet",
-          "url": "https://wiadomosci.onet.pl/kraj/jaroslaw-kaczynski-nakazuje-rozwiazac-stowarzyszenia-nieoficjalnie-morawiecki-sie-nie/gpdb16v",
-          "date": "2026-07-15T16:45:27+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Trzęsienie ziemi w PiS? Ultimatum dla Sasina i Morawieckiego",
-          "source": "TVP Info",
-          "url": "https://www.tvp.info/94356212/-pis-przyjelo-uchwale-mateusz-morawiecki-i-jacek-sasin-musza-zrezygnowac-ze-stowarzyszen-albo-zostana-wyrzuceni-z-partii",
-          "date": "2026-07-15T16:33:00+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Bezwzględny zakaz w PiS. Padł termin i ultimatum",
-          "source": "Polskie Radio 24",
-          "url": "https://polskieradio24.pl/polityka/ruch-jaroslawa-kaczynskiego-ws-stowarzyszen-w-pis-padl-termin-i-ultimatum",
-          "date": "2026-07-15T16:08:30+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "PiS podjął decyzję ws. zakazu stowarzyszeń. Ich członkowie mają siedem dni",
-          "source": "Gazeta",
-          "url": "https://wiadomosci.gazeta.pl/polityka/7,198012,32915283,pis-podjal-decyzje-ws-zakazu-stowarzyszen-ich-czlonkowie-maja.html",
-          "date": "2026-07-15T16:06:30+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Jest decyzja PiS w sprawie stowarzyszeń. \"W ciągu siedmiu dni\"",
-          "source": "Interia Wydarzenia",
-          "url": "https://wydarzenia.interia.pl/kraj/news-jest-decyzja-pis-w-sprawie-stowarzyszen-w-ciagu-siedmiu-dni,nId,23514877",
-          "date": "2026-07-15T16:05:02+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Koniec stowarzyszeń w PiS. Stanowcza decyzja kierownictwa partii",
+          "title": "Jarosław Kaczyński ogłosił nowy sojusz. Wiemy, jak zareagowała druga strona",
           "source": "Zero.pl",
-          "url": "https://zero.pl/news/koniec-stowarzyszen-w-pis-stanowcza-decyzja-kierownictwa-partii",
-          "date": "2026-07-15T16:04:07+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Pilna decyzja władz PiS ws. stowarzyszeń. \"W ciągu siedmiu dni\"",
-          "source": "PolsatNews.pl",
-          "url": "https://www.polsatnews.pl/wiadomosc/2026-07-15/pilna-decyzja-wladz-pis-w-ciagu-siedmiu-dni/",
-          "date": "2026-07-15T15:58:00+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "PiS straszy wykluczeniami. Dają politykom 7 dni",
-          "source": "WP Wiadomości",
-          "url": "https://wiadomosci.wp.pl/pis-straszy-wykluczeniami-daja-politykom-7-dni-7307799973382592a",
-          "date": "2026-07-15T15:57:31+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Ultimatum w PiS-ie. \"Powinni natychmiast powstrzymać się od działalności\"",
-          "source": "Wiadomości Onet",
-          "url": "https://wiadomosci.onet.pl/kraj/zdecydowany-ruch-jaroslawa-kaczynskiego-w-sprawie-stowarzyszen-maja-siedem-dni/4bphc20",
-          "date": "2026-07-15T15:55:02+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Vox advierte que los viticultores llevan \"un año esperando\" las ayudas prometidas por el PP en Diputación",
-          "source": "Teleprensa",
-          "url": "https://www.teleprensa.com/articulo/huelva/vox-advierte-que-viticultores-llevan-ano-esperando-ayudas-prometidas-pp-diputacion/202607151512332466953.amp.html",
-          "date": "2026-07-15T15:12:33+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Javier y Karina Milei mirarán la semifinal de Argentina contra Inglaterra en la Quinta de Olivos",
-          "source": "elpaisdiario.com.ar",
-          "url": "https://www.elpaisdiario.com.ar/javier-y-karina-milei-miraran-la-semifinal-de-argentina-contra-inglaterra-en-la-quinta-de-olivos-163074/",
-          "date": "2026-07-15T15:05:11+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Qué es el \"Shutdown\", el plan de Javier Milei para \"apagar el Estado\"",
-          "source": "diariopopular.com.ar",
-          "url": "https://www.diariopopular.com.ar/politica/que-es-el-shutdown-el-plan-javier-milei-apagar-el-estado-n909969",
-          "date": "2026-07-15T14:19:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Czarnek na ścieżce pani Teresy z Ostródy – czyli jak PiS miota się w kwestii Ukrainy",
-          "source": "OKO.press",
-          "url": "https://oko.press/czarnek-na-sciezce-pani-teresy-z-ostrody-czyli-jak-pis-miota-sie-w-kwestii-ukrainy",
-          "date": "2026-07-15T14:11:01+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Présidentielle 2027 : le parti de Gabriel Attal assigne en justice Marine Le Pen et le RN pour avoir utilisé le terme \"Renaissance\" sur son affiche de campagne",
-          "source": "ladepeche.fr",
-          "url": "https://www.ladepeche.fr/2026/07/15/presidentielle-2027-le-parti-de-gabriel-attal-assigne-en-justice-marine-le-pen-et-le-rn-pour-avoir-utilise-le-terme-renaissance-sur-son-affiche-de-13469620.php",
-          "date": "2026-07-15T13:56:00+00:00",
-          "category": "france"
-        },
-        {
-          "title": "„Próbują zajść Grzegorza Brauna z prawej strony”. Morawiecki ocenia polityków PiS",
-          "source": "Rzeczpospolita",
-          "url": "https://www.rp.pl/polityka/art44829481-pomagalismy-z-chlodnej-kalkulacji-morawiecki-komentuje-slowa-czarnka-o-ukrainie",
-          "date": "2026-07-15T13:26:00+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Wymowne puste miejsce obok Kaczyńskiego. W tle zgrzyt w PiS",
-          "source": "Fakt",
-          "url": "https://www.fakt.pl/polityka/wymowne-puste-miejsce-obok-kaczynskiego-w-sejmie-nie-bylo-czarnka/9nyx33p",
-          "date": "2026-07-15T12:50:22+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Jarosław Kaczyński ogłasza sojusz z Markiem Wochem. Lawina komentarzy",
-          "source": "Wiadomości Onet",
-          "url": "https://wiadomosci.onet.pl/kraj/prezes-pis-oglasza-pakt-senacki-zachlysnalem-sie-kawa-ze-smiechu/ry1zke4",
-          "date": "2026-07-15T12:40:24+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "PiS buduje prawicowy pakt senacki. Kaczyński ogłosił pierwsze porozumienie",
-          "source": "Do Rzeczy",
-          "url": "https://dorzeczy.pl/opinie/915142/pis-buduje-prawicowy-pakt-senacki-kaczynski-oglosil-pierwsze-porozumienie.html",
-          "date": "2026-07-15T11:58:00+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Kaczyński pokazał się z byłym kandydatem na prezydenta. \"Musimy się zjednoczyć\"",
-          "source": "Fakt",
-          "url": "https://www.fakt.pl/polityka/jaroslaw-kaczynski-i-marek-woch-zapowiedzieli-wspolny-pakt-senacki/mjerwy0",
-          "date": "2026-07-15T11:33:00+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Kaczyński ogłosił niespodziewany sojusz. Chodzi o dawnego przeciwnika Nawrockiego",
-          "source": "Rzeczpospolita",
-          "url": "https://www.rp.pl/polityka/art44828841-pakt-na-prawicy-jaroslaw-kaczynski-porozumial-sie-z-bylym-kandydatem-na-prezydenta",
-          "date": "2026-07-15T11:31:00+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Kaczyński ogłosił pakt senacki z Wochem. Pokrzyżował plany Konfederacji",
-          "source": "Gazeta",
-          "url": "https://wiadomosci.gazeta.pl/polityka/7,198012,32914489,kaczynski-oglosil-pakt-senacki-z-wochem-pokrzyzowal-plany-konfederacji.html",
-          "date": "2026-07-15T11:29:51+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Kaczyński i Woch ogłaszają plany. Zawarli sojusz przedwyborczy",
-          "source": "Interia Wydarzenia",
-          "url": "https://wydarzenia.interia.pl/kraj/news-kaczynski-oglosil-sojusz-przedwyborczy-porozumielismy-sie,nId,23514666",
-          "date": "2026-07-15T11:15:48+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Prezes PiS ogłasza nowy sojusz. Nawiązał współpracę z byłym kandydatem na prezydenta",
-          "source": "Wiadomości Onet",
-          "url": "https://wiadomosci.onet.pl/kraj/prezes-pis-oglasza-nowy-sojusz-nawiazal-wspolprace-z-bylym-kandydatem-na-prezydenta/s19elgz",
-          "date": "2026-07-15T11:13:17+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Kaczyński spotkał się z Czarnkiem w cztery oczy. Prezes dostał wewnętrzny sondaż",
-          "source": "Interia Wydarzenia",
-          "url": "https://wydarzenia.interia.pl/kraj/news-operacja-ratowania-czarnka-pokazali-kaczynskiemu-wewnetrzne,nId,23514632",
-          "date": "2026-07-15T10:33:43+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Awantura na sejmowej mównicy. Z sali padły okrzyki o \"skandalu\"",
-          "source": "Wiadomości Onet",
-          "url": "https://wiadomosci.onet.pl/kraj/konrad-frysztak-i-mariusz-kaluzny-starli-sie-w-sejmie-z-sali-krzyczano-o-skandalu/lsv59kj",
-          "date": "2026-07-15T09:49:31+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "\"Prezydent Nawrocki został przesłuchany\". Prokuratura potwierdza",
-          "source": "PolsatNews.pl",
-          "url": "https://www.polsatnews.pl/wiadomosc/2026-07-15/karol-nawrocki-przesluchany-przez-prokurature-w-tle-sprawa-lokali-muzeum-ii-ws/",
-          "date": "2026-07-15T09:16:00+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Karol Nawrocki przesłuchany. Prokurator przyjechała do Pałacu",
-          "source": "Wiadomości Onet",
-          "url": "https://wiadomosci.onet.pl/trojmiasto/karol-nawrocki-i-apartamenty-w-muzeum-nowe-informacje-z-prokuratury/k91hvtc",
-          "date": "2026-07-15T09:06:56+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "\"Takie jest stanowisko prezydenta\". Leśkiewicz reaguje na słowa Czarnka",
-          "source": "PolsatNews.pl",
-          "url": "https://www.polsatnews.pl/wiadomosc/2026-07-15/takie-jest-stanowisko-prezydenta-leskiewicz-reaguje-na-slowa-czarnka/",
-          "date": "2026-07-15T08:51:00+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Czarnek rozmówił się z Kaczyńskim, sondażowy alarm dla PiS [SKRÓT PORANKA]",
-          "source": "WP Wiadomości",
-          "url": "https://wiadomosci.wp.pl/czarnek-rozmowil-sie-z-kaczynskim-sondazowy-alarm-dla-pis-7307686073616384a",
-          "date": "2026-07-15T08:39:55+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Czarnek broni swoich słów. Tłumaczy reakcję Kaczyńskiego",
-          "source": "WP Wiadomości",
-          "url": "https://wiadomosci.wp.pl/czarnek-broni-swoich-slow-tlumaczy-reakcje-kaczynskiego-7307664508662337v",
-          "date": "2026-07-15T08:32:06+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Czarnek idzie w zaparte. Nie wycofa się ze swoich słów o Ukrainie",
-          "source": "Gazeta",
-          "url": "https://wiadomosci.gazeta.pl/polityka/7,198012,32913697,pomoc-dla-ukrainy-podzielila-czarnka-i-kaczynskiego-wiceprezes.html",
-          "date": "2026-07-15T08:01:18+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Czarnek wbrew prezesowi. Powtórzyłby wypowiedź o Ukrainie „bez najmniejszego zahamowania”",
-          "source": "RMF24",
-          "url": "https://www.rmf24.pl/fakty/polityka/news-czarnek-wbrew-prezesowi-powtorzylby-wypowiedz-o-ukrainie-bez,nIdn,1010025",
-          "date": "2026-07-15T07:49:00+00:00",
+          "url": "https://zero.pl/news/pis-i-bezpartyjni-samorzadowcy-oglaszaja-sojusz-do-senatu-politycy-koalicji-rzadzacej-komentuja",
+          "date": "2026-07-15T16:54:29+00:00",
           "category": "poland"
         }
       ],
-      "first_seen": "2026-07-16T03:54:40+00:00",
-      "last_seen": "2026-07-16T03:54:40+00:00"
+      "first_seen": "2026-07-16T14:50:12+00:00",
+      "last_seen": "2026-07-16T14:50:12+00:00"
     }
   ]
 }
