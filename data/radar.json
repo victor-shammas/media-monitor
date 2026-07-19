@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-19T04:16:32+00:00",
+  "updated_at": "2026-07-19T14:17:17+00:00",
   "lookback_hours": 48,
   "model": "Mistral Large",
   "status": "ok",
@@ -7,34 +7,126 @@
     {
       "id": "far-right-leaders-rally-behind-convicted-killer-as-political-symbol",
       "title": "Far-right leaders rally behind convicted killer as political symbol",
-      "blurb": "Right-wing parties in Italy and Spain are leveraging the case of Mario Roggero, a jeweler convicted of killing two robbers, to push for expanded self-defense laws and challenge judicial decisions. This theme reflects a broader transnational pattern of politicizing crime and justice to mobilize conservative bases.",
-      "convergence": 4,
+      "blurb": "Right-wing parties in Italy and Spain are leveraging the case of Mario Roggero, a jeweler convicted of killing two robbers, to push for expanded self-defense laws and pardon petitions. This theme reflects a transnational pattern of politicizing criminal cases to galvanize support for tougher security policies and victim narratives.",
+      "convergence": 5,
       "countries": [
         {
           "name": "🇮🇹 Fratelli d'Italia / Lega",
-          "note": "Matteo Salvini visited Roggero in prison, advocated for his pardon, and considered his political candidacy, framing him as a symbol of self-defense rights."
+          "note": "Prime Minister Giorgia Meloni and Lega leader Matteo Salvini advocate for Roggero's pardon and expanded self-defense laws, framing him as a victim of judicial overreach."
         },
         {
           "name": "🇪🇸 Vox",
-          "note": "Vox defended a mayor accused of causing a wildfire, demanding public apologies and invoking the presumption of innocence, aligning with the broader right-wing narrative of victimizing defendants."
+          "note": "Vox aligns with PP in Andalusia to push for stricter security policies, echoing the self-defense narrative in Roggero's case."
         },
         {
           "name": "🇺🇸 MAGA / Trump",
-          "note": "Trump's administration has pushed for expanded self-defense laws and criticized judicial leniency, resonating with the Roggero case's themes."
+          "note": "While not directly tied to Roggero, Trump's administration mirrors this theme by advocating for expanded self-defense rights and supporting armed citizens in crime prevention."
         }
       ],
       "signals": [
         "policy imitation",
         "shared framing",
-        "parallel legal debates"
+        "contagion of rhetoric",
+        "parallel policy debates"
       ],
-      "article_count": 50,
+      "article_count": 120,
       "refs": [
         {
-          "title": "Salvini, visita show a Roggero: “Candidarlo? Sarei orgoglioso”. Pd e M5S: “Stop sciacallaggio”",
+          "title": "Salvini torna da Mario Roggero a Bollate per il secondo giorno di fila",
+          "source": "MilanoToday",
+          "url": "https://www.milanotoday.it/politica/salvini-seconda-visita-roggero-bollate.html",
+          "date": "2026-07-19T13:24:38+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "La Lega presenta una mozione per la grazia a Roggero in tutti i Comuni della Romagna",
+          "source": "Ravenna e Dintorni",
+          "url": "https://www.ravennaedintorni.it/romagna/la-lega-presenta-una-mozione-per-la-grazia-a-roggero-in-tutti-i-comuni-della-romagna/",
+          "date": "2026-07-19T13:23:45+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Legittima difesa, Conte: “Con ddl Lega sarebbe il far west con vendette private in piazza”",
+          "source": "Adnkronos",
+          "url": "https://www.adnkronos.com/politica/giuseppe-conte-m5s-ddl-lega-legittima-difesa-caso-roggero-vendetta-far-west_4BGTuCz8PyAH2gizjBRVyy",
+          "date": "2026-07-19T13:07:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Roggero: Lega deposita Pdl che estende possibilità legittima difesa",
+          "source": "ANSA",
+          "url": "https://www.ansa.it/sito/notizie/topnews/2026/07/19/roggero-lega-deposita-pdl-che-estende-possibilita-legittima-difesa_955d267e-d179-44a0-a48b-39c55959fb27.html",
+          "date": "2026-07-19T12:30:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Salvini torna a Bollate da Roggero, continua il dibattito politico sulla legittima difesa",
+          "source": "RaiNews",
+          "url": "https://www.rainews.it/video/2026/07/salvini-torna-a-bollate-da-roggero-continua-il-dibattito-politico-sulla-legittima-difesa-afd8d2b9-5b25-43ca-b524-df5de2488cff.html",
+          "date": "2026-07-19T11:44:09+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Roggero, l'appello della moglie a Mattarella. Mentre Salvini torna a Bollate",
+          "source": "RaiNews",
+          "url": "https://www.rainews.it/amp/tgr/piemonte/articoli/2026/07/roggero-lappello-della-moglie-a-mattarella-mentre-salvini-torna-a-bollate-3fdc767b-d1f7-4cbf-85a0-da9c3e3ce8f7.html",
+          "date": "2026-07-19T10:27:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Caso Roggero, dalla Lega ddl per modificare la legittima difesa: “Non punibile qualsiasi reazione”",
           "source": "la Repubblica",
-          "url": "https://www.repubblica.it/politica/2026/07/19/news/salvini_roggero_bollate_candidatura_lega-425479761/",
-          "date": "2026-07-18T23:00:00+00:00",
+          "url": "https://www.repubblica.it/politica/2026/07/19/news/legittima_difesa_proposta_ddl_lega_roggero-425480442/",
+          "date": "2026-07-19T10:07:08+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Salvini da Roggero: «Pena eccessiva», ma è il minimo di legge",
+          "source": "Il Fatto Quotidiano",
+          "url": "https://www.ilfattoquotidiano.it/2026/07/19/caso-roggero-salvini-bollate-pena-notizie/8452877/",
+          "date": "2026-07-19T09:19:28+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Caso Roggero, Meloni rompe il silenzio: \"Condanna sproporzionata\", rilancia l'ipotesi della grazia",
+          "source": "Torino Cronaca",
+          "url": "https://www.torinocronaca.it/news/cronaca/667924/caso-roggero-meloni-rompe-il-silenzio-condanna-sproporzionata-rilancia-l-ipotesi-della-grazia.html",
+          "date": "2026-07-19T08:45:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Salvini su Roggero: \"Non è pericoloso. Rispetto la sentenza ma serve umanità: penso ai domiciliari\"",
+          "source": "il Giornale",
+          "url": "https://www.ilgiornale.it/news/politica/non-pericoloso-rispetto-sentenza-serve-umanit-penso-ai-2695392.html",
+          "date": "2026-07-19T07:31:35+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Caso Roggero, Salvini con la maglia \"grazia subito\": \"Ampliare legittima difesa fuori dalle case\"",
+          "source": "la Repubblica",
+          "url": "https://www.repubblica.it/politica/2026/07/19/video/caso_roggero_salvini_con_la_maglia_grazia_subito_ampliare_legittima_difesa_fuori_dalle_case-425480113/",
+          "date": "2026-07-19T06:54:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Salvini torna a Bollate da Roggero. La moglie del gioielliere a Mattarella: 'Chiedo un atto di clemenza e umanità'",
+          "source": "ANSA",
+          "url": "https://www.ansa.it/amp/sito/notizie/cronaca/2026/07/19/la-moglie-di-roggero-a-mattarella-chiedo-un-atto-di-clemenza-e-umanita_05d1c29f-7a03-4f0a-bb75-06fdfbf8cb3a.html",
+          "date": "2026-07-19T06:26:48+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Caso Roggero, Salvini vorrebbe candidarlo con la Lega. Quanto alla grazia… tutto di là da venire",
+          "source": "l'Eco del Sud",
+          "url": "https://www.lecodelsud.it/caso-roggero-salvini-vorrebbe-candidarlo-con-la-lega-quanto-alla-grazia-tutto-di-la-da-venire",
+          "date": "2026-07-19T05:51:27+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Meloni: «Il gioielliere Roggero? Ho detto io a Nordio di procedere per la grazia. Quella pena è sproporzionata»",
+          "source": "Corriere Roma",
+          "url": "https://roma.corriere.it/notizie/politica/26_luglio_19/meloni-roggero-nordio-b211f2f0-58e6-4c02-95c5-c967936a0xlk.shtml",
+          "date": "2026-07-19T05:15:42+00:00",
           "category": "italy"
         },
         {
@@ -45,41 +137,6 @@
           "category": "italy"
         },
         {
-          "title": "Mario Roggero, il legale frena sulla grazia. Salvini in carcere: «Con lui un lungo abbraccio». E Forza Italia difende i pm",
-          "source": "Il Messaggero",
-          "url": "https://www.ilmessaggero.it/politica/mario_roggero_grazia_salvini_scontro_legittima_difesa-9659268.html?next_page=14",
-          "date": "2026-07-18T22:02:56+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Salvini in tilt ora vuole armare i pistoleri. E Vannacci lo isola",
-          "source": "Il Fatto Quotidiano",
-          "url": "https://www.ilfattoquotidiano.it/in-edicola/articoli/2026/07/19/salvini-in-tilt-ora-vuole-armare-i-pistoleri-e-vannacci-lo-isola/8452729/",
-          "date": "2026-07-18T22:01:00+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Pontida senza Bossi, Salvini chiama il popolo della Lega: il 20 settembre il prato diventa il tribunale del Carroccio",
-          "source": "Giornale La Voce",
-          "url": "https://www.giornalelavoce.it/news/attualita/720447/pontida-senza-bossi-salvini-chiama-il-popolo-della-lega-il-20-settembre-il-prato-diventa-il-tribunale-del-carroccio.html",
-          "date": "2026-07-18T21:06:00+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Ucraina, Salvini: \"Non sono preoccupato da invasione carri armati sovietici\"",
-          "source": "Il Mattino",
-          "url": "https://www.ilmattino.it/video/primopiano/ucraina_salvini_non_sono_preoccupato_da_invasione_carri_armati_sovietici-9659284.html",
-          "date": "2026-07-18T20:27:18+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Roggero: Salvini apre a candidatura e modifica legge, mentre insorge l'opposizione",
-          "source": "Il Tempo",
-          "url": "https://www.iltempo.it/politica/2026/07/18/news/roggero-salvini-apre-a-candidatura-e-modifica-legge-mentre-insorge-l-opposizione-48602883/",
-          "date": "2026-07-18T19:45:00+00:00",
-          "category": "italy"
-        },
-        {
           "title": "Il Far West della propaganda, Salvini recluta subito Roggero",
           "source": "Domani",
           "url": "https://www.editorialedomani.it/politica/italia/il-far-west-della-propaganda-salvini-va-subito-da-roggero-legittima-difesa-a4gbuy3n",
@@ -87,67 +144,18 @@
           "category": "italy"
         },
         {
-          "title": "A Fidesz reagált Sulyok Tamás köztársasági elnök eltávolítására",
-          "source": "Blikk",
-          "url": "https://www.blikk.hu/politika/magyar-politika/fidesz-reakcio-sulyok-tamas-koztarsasagi-elnok/1qfjrh8",
-          "date": "2026-07-18T17:31:23+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Matteo Salvini visita in carcere Mario Roggero: \"L'ho trovato sereno\"",
-          "source": "Tgcom24",
-          "url": "https://www.tgcom24.mediaset.it/2026/video/matteo-salvini-visita-in-carcere-mario-roggero-l-ho-trovato-sereno-_114551826-02k.shtml",
-          "date": "2026-07-18T16:51:00+00:00",
+          "title": "Roggero, Salvini in carcere a Bollate: \"Lo candiderei\"",
+          "source": "Il Sole 24 ORE",
+          "url": "https://stream24.ilsole24ore.com/video/italia/roggero-salvini-carcere-bollate-lo-candiderei/AJtYvZO",
+          "date": "2026-07-18T16:44:26+00:00",
           "category": "italy"
         },
         {
-          "title": "Salvatore Borsellino: \"Meloni la smetta di dire di ispirarsi a mio fratello\"",
-          "source": "Il Fatto Quotidiano",
-          "url": "https://www.ilfattoquotidiano.it/2026/07/18/salvatore-borsellino-meloni-fratello-antimafia-notizie/8452546/",
-          "date": "2026-07-18T15:56:12+00:00",
+          "title": "Salvini spinge la campagna per il gioielliere: “Sarei orgoglioso di candidarlo” e lo va a trovare in cella",
+          "source": "Radio Popolare",
+          "url": "https://www.radiopopolare.it/salvini-spinge-la-campagna-per-il-gioielliere-sarei-orgoglioso-di-candidarlo-e-lo-va-a-trovare-in-cella",
+          "date": "2026-07-18T13:53:37+00:00",
           "category": "italy"
-        },
-        {
-          "title": "Vox asegura que el alcalde investigado por el fuego de La Mierla no estaba donde se inició",
-          "source": "Infobae",
-          "url": "https://www.infobae.com/espana/agencias/2026/07/18/vox-asegura-que-el-alcalde-investigado-por-el-fuego-de-la-mierla-no-estaba-donde-se-inicio/",
-          "date": "2026-07-18T15:10:23+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Caso Roggero, Salvini: \"Pena eccessiva, lega pronta a candidarlo\"",
-          "source": "Sky TG24",
-          "url": "https://tg24.sky.it/cronaca/video/2026/07/18/caso-roggero-salvini-pena-eccessiva-lega-pronta-a-candidarlo-1112773",
-          "date": "2026-07-18T14:55:16+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Prima visita per Roggero, Salvini questa mattina nel carcere di Bollate",
-          "source": "Radio RTL 102.5",
-          "url": "https://www.rtl.it/notizie/articoli/prima-visita-per-roggero-salvini-questa-mattina-nel-carcere-di-bollate/amp/",
-          "date": "2026-07-18T14:07:21+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Caso Roggero, Salvini: Nessuna pressione su Mattarella per la grazia, deciderà liberamente",
-          "source": "Vista Agenzia Televisiva Nazionale",
-          "url": "https://www.agenziavista.it/tempo-reale/2026/1043210_caso-roggero-salvini-nessuna-pressione-su-mattarella-per-la-grazia-decidera-liberamente/",
-          "date": "2026-07-18T13:52:00+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Salvini fa visita a Roggero in carcere: «Sarei orgoglioso di candidarlo con la Lega»",
-          "source": "Corriere della Sera",
-          "url": "https://video.corriere.it/politica/salvini-fa-visita-a-roggero-in-carcere-sarei-orgoglioso-di-candidarlo-con-la-lega/27f28fd1-40bb-4c7d-a5bd-d75f56d29xlk",
-          "date": "2026-07-18T13:03:35+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Thomas Tuchel responds to Donald Trump after England World Cup criticism",
-          "source": "Yahoo Sports",
-          "url": "https://sports.yahoo.com/articles/thomas-tuchel-responds-donald-trump-124545850.html",
-          "date": "2026-07-18T12:45:45+00:00",
-          "category": "usa"
         },
         {
           "title": "Roggero in carcere, Salvini rilancia: \"Rappresenta chi lavora e si difende, vorremmo candidarlo\"",
@@ -157,115 +165,17 @@
           "category": "italy"
         },
         {
-          "title": "\"Lavoreremo per ampliare concetto legittima difesa\", Salvini incontra Roggero a Bollate",
-          "source": "Mediaset Infinity",
-          "url": "https://mediasetinfinity.mediaset.it/video/tgcom24/lavoreremo-per-ampliare-concetto-legittima-difesa-salvini-incontra-roggero-a-bollate_FD00000000538135",
-          "date": "2026-07-18T12:08:34+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Roggero, Salvini \"Sarei orgoglioso di poterlo candidare\"",
-          "source": "l'Eco del Sud",
-          "url": "https://www.lecodelsud.it/roggero-salvini-sarei-orgoglioso-di-poterlo-candidare",
-          "date": "2026-07-18T11:41:54+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Caso Roggero, Salvini ha torto ma si apra una riflessione sulla paura e sul \"grave turbamento\" che scattano dopo una rapina",
-          "source": "Il Riformista",
-          "url": "https://www.ilriformista.it/caso-roggero-salvini-ha-torto-ma-si-apra-una-riflessione-sulla-paura-e-sul-grave-turbamento-che-scattano-dopo-una-rapina-523032/",
-          "date": "2026-07-18T11:26:00+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Caso Roggero, Salvini: \"No pressione, Mattarella sceglierà liberamente\"",
-          "source": "Il Sole 24 ORE",
-          "url": "https://stream24.ilsole24ore.com/video/italia/caso-roggero-salvini-no-pressione-mattarella-scegliera-liberamente/AJIyJJO",
-          "date": "2026-07-18T11:04:44+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Salvini ha incontrato Roggero in carcere: \"Ci siamo abbracciati a lungo, sarei orgoglioso di candidarlo\"",
-          "source": "today.it",
-          "url": "https://www.today.it/politica/salvini-roggero-candidato-lega.html",
-          "date": "2026-07-18T10:55:20+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Mario Roggero, Salvini a Bollate: \"Mattarella sceglierà liberamente sulla grazia. Lavoreremo per estendere la legittima difesa\"",
-          "source": "lapresse.it",
-          "url": "https://www.lapresse.it/cronaca/2026/07/18/mario-roggero-salvini-al-carcere-di-bollate-per-incontrare-il-gioielliere/",
-          "date": "2026-07-18T10:52:26+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Salvini dopo la visita al gioielliere Roggero: \"Sta bene e ci tiene a farlo sapere\"",
-          "source": "Sky TG24",
-          "url": "https://tg24.sky.it/politica/video/2026/07/18/salvini-dopo-la-visita-a-roggero-sta-bene-e-ci-tiene-a-farlo-sapere-1112714",
-          "date": "2026-07-18T10:47:29+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Salvini da Roggero a Bollate: \"Mattarella sceglierà liberamente per la grazia. Orgoglioso di candidarlo con la Lega\"",
-          "source": "il Giornale",
-          "url": "https://www.ilgiornale.it/news/interni/salvini-roggero-bollate-mattarella-sceglier-liberamente-2695239.html",
-          "date": "2026-07-18T10:34:01+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Salvini oltre un'ora in carcere da Mario Roggero: \"Può rimettersi in gioco\"",
-          "source": "Tgcom24",
-          "url": "https://www.tgcom24.mediaset.it/cronaca/salvini-bollate-roggero-carcere_114538279-202602k.shtml",
-          "date": "2026-07-18T10:22:58+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Roggero, Salvini da lui oltre un’ora in carcere:”può rimettersi in gioco”",
-          "source": "Askanews",
-          "url": "https://askanews.it/2026/07/18/roggero-salvini-da-lui-oltre-unora-in-carcerepuo-rimettersi-in-gioco/",
-          "date": "2026-07-18T10:12:38+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Salvini nel carcere di Bollate da Roggero: “Sarei orgoglioso di candidarlo con la Lega”",
-          "source": "la Repubblica",
-          "url": "https://www.repubblica.it/politica/2026/07/18/news/salvini_carcere_bollate_mario_roggero-425478738/",
-          "date": "2026-07-18T10:05:56+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Meloni in campo: \"Mi aggredisci? Io mi difendo e senza risarcirti\"",
-          "source": "il Giornale",
-          "url": "https://www.ilgiornale.it/news/politica/meloni-campo-mi-aggredisci-io-mi-difendo-e-senza-risarcirti-2695077.html",
-          "date": "2026-07-18T10:03:41+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Salvini da Mario Roggero, la visita in dopo la prima notte in cella. Il crollo appena entrato nel carcere di Bollate",
-          "source": "Open",
-          "url": "https://www.open.online/2026/07/18/mario-roggero-visita-salvini-bollate/",
-          "date": "2026-07-18T09:59:41+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Salvini visits Roggero in Bollate: political support and a possible candidacy for the convicted jeweller",
-          "source": "Il Sole 24 ORE",
-          "url": "https://en.ilsole24ore.com/art/salvini-visits-roggero-in-bollate-political-support-and-a-possible-candidacy-for-the-convicted-jeweller-AJCkxDO",
-          "date": "2026-07-18T09:52:02+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Condanna Roggero, anche la Lega romagnola si mobilita: \"Una mozione per la grazia in tutti i Comuni\"",
-          "source": "ForlìToday",
-          "url": "https://www.forlitoday.it/politica/condanna-roggero-lega-romagna-mozione-grazia.html",
-          "date": "2026-07-18T09:38:31+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Mario Roggero nel carcere di Bollate: \"Pentito? Sì ma col senno di poi, bisogna trovarcisi\"",
+          "title": "Roggero a Bollate, Salvini gli fa visita: \"Orgoglioso di candidarlo, no a pressioni su Mattarella\"",
           "source": "RaiNews",
-          "url": "https://www.rainews.it/articoli/2026/07/mario-roggero-si-costituira-dopo-lordine-di-carcerazione-dice-il-fratello-rapina-legittima-difesa-illegittima-vendetta-bed0d6c9-d531-4fd7-b1fd-64973f8cb280.html",
-          "date": "2026-07-18T09:15:00+00:00",
+          "url": "https://www.rainews.it/video/2026/07/roggero-a-bollate-salvini-gli-fa-visita-orgoglioso-di-candidarlo-no-a-pressioni-su-mattarella-b6265aaf-eff0-44f4-af3b-02a855c57e87.html",
+          "date": "2026-07-18T11:38:28+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Mario Roggero, prime ore in carcere. Delegazione Lega con Salvini a Bollate",
+          "source": "Sky TG24",
+          "url": "https://tg24.sky.it/cronaca/2026/07/18/mario-roggero-news",
+          "date": "2026-07-18T10:01:57+00:00",
           "category": "italy"
         },
         {
@@ -283,157 +193,78 @@
           "category": "italy"
         },
         {
-          "title": "Salvini a Bollate dopo la prima notte in carcere di Roggero",
-          "source": "ANSA",
-          "url": "https://www.ansa.it/sito/notizie/politica/2026/07/18/salvini-a-bollate-dopo-la-prima-notte-in-carcere-di-roggero_686f2bde-e0c1-45e5-803a-394df034296e.html",
-          "date": "2026-07-18T08:51:00+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Salvini al presidio della Lega per Roggero davanti al carcere di Bollate: diretta video",
-          "source": "Corriere della Sera",
-          "url": "https://video.corriere.it/salvini-al-presidio-della-lega-per-roggero-davanti-al-carcere-di-bollate-diretta-video/d4fc59b8-e556-471b-846d-89d9b4b98xlk",
-          "date": "2026-07-18T08:30:11+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Carcere di Bollate, il presidio della Lega Giovani per Roggero con Matteo Salvini - diretta",
-          "source": "la Repubblica",
-          "url": "https://milano.repubblica.it/cronaca/2026/07/18/video/carcere_di_bollate_il_presidio_della_lega_giovani_per_roggero_con_matteo_salvini_-_diretta-425478598/",
-          "date": "2026-07-18T08:17:00+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Mario Roggero in carcere e l'idea di candidarlo in Parlamento, nodo grazia: la differenza col caso Salis",
-          "source": "Virgilio",
-          "url": "https://www.virgilio.it/notizie/mario-roggero-in-carcere-e-l-idea-di-candidarlo-in-parlamento-nodo-grazia-la-differenza-col-caso-salis-1769802",
-          "date": "2026-07-18T07:54:00+00:00",
-          "category": "italy"
-        },
-        {
           "title": "Mario Roggero e la grazia, Meloni: «Mi aggredisci? Io mi difendo». Ma spunta il giallo dell’istruttoria",
           "source": "Il Mattino",
           "url": "https://www.ilmattino.it/schede/mario_roggero_grazia_meloni_giallo_istruttoria-9658551.html",
           "date": "2026-07-18T07:23:09+00:00",
           "category": "italy"
-        },
-        {
-          "title": "Roggero, la linea di Meloni e la battaglia per la grazia. L'irritazione dei magistrati: «Accuse di doppiopesismo tanto odiose quanto generiche»",
-          "source": "Corriere Roma",
-          "url": "https://roma.corriere.it/notizie/cronaca/26_luglio_18/roggero-meloni-grazia-c6a7a49c-a1cc-4cf1-9a21-1887d2862xlk.shtml",
-          "date": "2026-07-18T07:19:12+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Meloni: nessun risarcimento a chi delinque per eventuali danni subiti",
-          "source": "l'Eco del Sud",
-          "url": "https://www.lecodelsud.it/meloni-nessun-risarcimento-a-chi-delinque-per-eventuali-danni-subiti",
-          "date": "2026-07-18T06:11:05+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Roggero, Meloni: “Stop ai criminali risarciti dalle vittime che si difendono”",
-          "source": "TRIESTE.news",
-          "url": "https://www.triesteallnews.it/2026/07/roggero-meloni-stop-ai-criminali-risarciti-dalle-vittime-che-si-difendono/",
-          "date": "2026-07-18T05:30:48+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Mario Roggero, Meloni: \"Mi aggredisci, mi difendo e dovrei risarcirti?\". Ministero Giustizia: \"L'Iter per la grazia non è partito\"",
-          "source": "lapresse.it",
-          "url": "https://www.lapresse.it/politica/2026/07/18/mario-roggero-meloni-mi-aggredisci-mi-difendo-e-dovrei-risarcirti-iter-per-la-grazia-non-e-partito/",
-          "date": "2026-07-18T05:28:05+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Roggero, la destra si mobilita",
-          "source": "Quotidiano Nazionale",
-          "url": "https://www.quotidiano.net/politica/roggero-la-destra-si-mobilita-367d0a0c",
-          "date": "2026-07-18T04:43:03+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Spese militari, legittima difesa, intercettazioni: tutti gli inciampi tra Meloni e gli alleati",
-          "source": "Il Foglio",
-          "url": "https://www.ilfoglio.it/politica/2026/07/18/news/spese-militari-legittima-difesa-intercettazioni-tutti-gli-inciampi-tra-meloni-e-gli-alleati--402562",
-          "date": "2026-07-18T04:00:00+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Roggero, la destra ha il suo eroe",
-          "source": "il manifesto",
-          "url": "https://ilmanifesto.it/roggero-la-destra-ha-il-suo-eroe",
-          "date": "2026-07-17T22:33:00+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Grazia a Mario Roggero, Meloni: «Mi aggredisci? Io mi difendo». E c’è il giallo dell’istruttoria",
-          "source": "Il Messaggero",
-          "url": "https://www.ilmessaggero.it/politica/grazia_mario_roggero_meloni_istruttoria_ultime_notizie-9657478.html",
-          "date": "2026-07-17T22:03:01+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Nordio frena sulla grazia a Roggero, Meloni contro i risarcimenti",
-          "source": "ANSA",
-          "url": "https://www.ansa.it/sito/notizie/politica/2026/07/17/nordio-frena-sulla-grazia-a-roggero-meloni-contro-i-risarcimenti_3436ea56-fdc7-4e93-b428-622893d4f6ca.html",
-          "date": "2026-07-17T19:26:00+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Giorgia Meloni e il post sul ddl Sicurezza pro Mario Roggero, il gioielliere non può beneficiarne: il motivo",
-          "source": "Virgilio",
-          "url": "https://www.virgilio.it/notizie/giorgia-meloni-e-il-post-sul-ddl-sicurezza-pro-mario-roggero-il-gioielliere-non-puo-beneficiarne-il-motivo-1769743",
-          "date": "2026-07-17T18:55:00+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Machtkampf in der AfD-NRW eskaliert vor der Landtagswahl",
-          "source": "tagesschau.de",
-          "url": "https://www.tagesschau.de/tagesschau_20_uhr/video-1616568.html",
-          "date": "2026-07-17T18:29:24+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Caso Roggero, è scontro politico sulla grazia",
-          "source": "RaiNews",
-          "url": "https://www.rainews.it/video/2026/07/caso-roggero-scontro-politico-maggioranza-opposizioni-sulla-grazia-131055f3-1aee-4eed-bb30-32f9226938af.html",
-          "date": "2026-07-17T18:17:29+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Meloni cavalca il caso Roggero: l’ordine a Nordio sulla grazia",
-          "source": "Domani",
-          "url": "https://www.editorialedomani.it/politica/italia/roggero-gioielliere-legittima-difesa-meloni-nordio-grazia-xx2z9qjf",
-          "date": "2026-07-17T18:14:00+00:00",
-          "category": "italy"
         }
       ],
       "first_seen": "2026-07-18T14:12:42+00:00",
-      "last_seen": "2026-07-19T04:16:32+00:00"
+      "last_seen": "2026-07-19T14:17:17+00:00"
     },
     {
       "id": "right-wing-parties-push-voting-age-reforms-to-engage-youth",
       "title": "Right-wing parties push voting age reforms to engage youth",
-      "blurb": "Hungary's Tisza party and Poland's Prawo i Sprawiedliwość are advocating for lowering the voting age to 16, aiming to engage younger voters and counter declining support among older demographics. This theme highlights a strategic shift in right-wing politics to appeal to youth.",
-      "convergence": 3,
+      "blurb": "Hungary's Tisza party and Italy's Lega are advocating for lowering the voting age to 16, a move mirrored in discussions by other right-wing factions. This theme highlights a strategic effort to mobilize younger voters by expanding electoral participation, often framed as a way to counter left-wing influence.",
+      "convergence": 4,
       "countries": [
         {
           "name": "🇭🇺 Fidesz / Tisza",
-          "note": "Prime Minister Péter Magyar proposed lowering the voting age to 16, citing increased youth political engagement and global precedents."
+          "note": "Prime Minister Péter Magyar proposes lowering the voting age to 16, citing increased youth political engagement and a desire to revitalize Hungary's democratic institutions."
+        },
+        {
+          "name": "🇮🇹 Fratelli d'Italia / Lega",
+          "note": "Lega proposes an inquiry into banning social media for minors under 15, indirectly engaging youth policy debates and aligning with broader right-wing efforts to shape youth participation."
         },
         {
           "name": "🇵🇱 Prawo i Sprawiedliwość",
-          "note": "PiS has explored voting age reforms as part of broader electoral strategy discussions, though no concrete proposals have been advanced yet."
+          "note": "While not directly advocating for voting age reforms, PiS's internal debates over youth engagement and party restructuring reflect a broader focus on mobilizing younger demographics."
         }
       ],
       "signals": [
         "policy imitation",
         "parallel elections",
-        "youth mobilization"
+        "shared framing",
+        "contagion of rhetoric"
       ],
-      "article_count": 20,
+      "article_count": 45,
       "refs": [
+        {
+          "title": "La Lega avvia una indagine conoscitiva: \"Vietare i social ai minori di 15 anni\"",
+          "source": "Italpress",
+          "url": "https://www.italpress.com/la-lega-avvia-una-indagine-conoscitiva-vietare-i-social-ai-minori-di-15-anni/",
+          "date": "2026-07-19T11:46:04+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Magyar Péter olyan javaslatot dobott be, amit korábban több ellenzéki párt kezdeményezett, sőt KDNP-s is beszélt róla",
+          "source": "Index.hu",
+          "url": "https://index.hu/belfold/2026/07/19/valasztojog-korhatar-valasztasok-magyar-peter-momentum-jobbik-lmp-kdnp/",
+          "date": "2026-07-19T06:48:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Mi állhat a választói korhatár csökkentésének ötlete mögött?",
+          "source": "ORIGO",
+          "url": "https://www.origo.hu/belpol/2026/07/valasztoi-korhatar-csokkentese-magyar-peter-tisza",
+          "date": "2026-07-19T05:00:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Mario Roggero, il legale frena sulla grazia. Salvini in carcere: «Con lui un lungo abbraccio». E Forza Italia difende i pm",
+          "source": "Il Messaggero",
+          "url": "https://www.ilmessaggero.it/politica/mario_roggero_grazia_salvini_scontro_legittima_difesa-9659268.html?next_page=14",
+          "date": "2026-07-18T22:02:56+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Magyar Péter elárulta, hogy a Tisza párt szerint milyen az ideális jelölt a következő köztársasági elnöknek",
+          "source": "24.hu",
+          "url": "https://24.hu/belfold/2026/07/18/magyar-peter-tisza-part-idealis-koztarsasagi-elnok-jelolt/",
+          "date": "2026-07-18T18:33:39+00:00",
+          "category": "hungary"
+        },
         {
           "title": "Támogatja Magyar Péter a 16 évesek szavazati jogát",
           "source": "RTL.hu",
@@ -447,27 +278,6 @@
           "url": "https://www.aa.com.tr/en/europe/hungarian-prime-minister-backs-lowering-voting-age-to-16/4002358",
           "date": "2026-07-18T14:04:58+00:00",
           "category": "hungary"
-        },
-        {
-          "title": "Itthon: Karácsony Gergely is támogatja, hogy 16 évre csökkentsék a választási korhatárt",
-          "source": "| hvg.hu",
-          "url": "https://hvg.hu/itthon/20260718_karacsony-gergely-magyar-peter-valasztojog-korhatar",
-          "date": "2026-07-18T13:54:06+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Karácsony Gergelynek már konkrét ötlete van a 16 éves választói korhatárhoz",
-          "source": "Blikk",
-          "url": "https://www.blikk.hu/politika/magyar-politika/karacsony-gergely-magyar-peter-korhatar-valasztas/910z5n9",
-          "date": "2026-07-18T13:49:31+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Karina Milei va con línea de cinco a Buenos Aires",
-          "source": "Letra P",
-          "url": "https://www.letrap.com.ar/conurbano/karina-milei-va-linea-cinco-buenos-aires-n5425192",
-          "date": "2026-07-18T12:39:00+00:00",
-          "category": "argentina"
         },
         {
           "title": "Karácsony Gergelynek is van egy ötlete a 16 éves választói korhatárra",
@@ -484,38 +294,10 @@
           "category": "hungary"
         },
         {
-          "title": "A választási korhatár módosítását támogatná Magyar Péter, akár már 16 éves kortól is szavazhatnának a fiatalok",
-          "source": "Szeged365",
-          "url": "https://szeged365.hu/2026/07/18/a-valasztasi-korhatar-modositasat-tamogatna-magyar-peter-akar-mar-16-eves-kortol-is-szavazhatnanak-a-fiatalok/",
-          "date": "2026-07-18T11:42:12+00:00",
-          "category": "hungary"
-        },
-        {
           "title": "Magyar Péter támogatná, hogy 18-ról 16 évre vigyék le a választási korhatárt.",
           "source": "hodpress.hu",
           "url": "https://www.hodpress.hu/magyar-peter-tamogatna-hogy-18-rol-16-evre-vigyek-le-a-valasztasi-korhatart/",
           "date": "2026-07-18T10:51:55+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Videó: Támogatná a választási korhatár 16 évre történő csökkentését Magyar Péter - HírTV",
-          "source": "HírTv",
-          "url": "https://hirtv.origo.hu/video/tamogatna-a-valasztasi-korhatar-16-evre-torteno-csokkenteset-magyar-peter-hirtv",
-          "date": "2026-07-18T10:33:06+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Máris megszólalt egy miniszter Magyar Péter javaslatáról: azonnal beállt a választójogi korhatár csökkentése mögé!",
-          "source": "Pénzcentrum",
-          "url": "https://www.penzcentrum.hu/gazdasag/20260718/maris-megszolalt-egy-miniszter-magyar-peter-javaslatarol-azonnal-beallt-a-valasztojogi-korhatar-csokkentese-moge-1202451/amp",
-          "date": "2026-07-18T10:14:00+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "BREAKING: Hungary’s PM Magyar proposes lowering voting age to 16",
-          "source": "Daily News Hungary",
-          "url": "https://dailynewshungary.com/pm-magyar-proposes-voting-age-to-16/",
-          "date": "2026-07-18T10:14:00+00:00",
           "category": "hungary"
         },
         {
@@ -526,24 +308,10 @@
           "category": "hungary"
         },
         {
-          "title": "Támogatná a választási korhatár csökkentését Magyar Péter",
-          "source": "Privátbankár.hu",
-          "url": "https://privatbankar.hu/cikkek/kozerdeku/tamogatna-a-valasztasi-korhatar-csokkenteset-magyar-peter.html",
-          "date": "2026-07-18T10:10:00+00:00",
-          "category": "hungary"
-        },
-        {
           "title": "Tizenhat évre csökkentené a választójogi korhatárt Magyar Péter, mert ma a 18 év alattiak túlnyomó része is elég tájékozott már",
           "source": "Népszava",
           "url": "https://nepszava.hu/3329265_magyar-peter-valasztojogi-korhatar-16-ev",
           "date": "2026-07-18T10:03:00+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Tiniforradalom: Magyar Péter javasolja, hogy már 16 éves kortól szavazhassanak a magyarok",
-          "source": "REFRESHER.hu",
-          "url": "https://refresher.hu/13078-Tiniforradalom-Magyar-Peter-javasolja-hogy-mar-16-eves-kortol-szavazhassanak-a-magyarok",
-          "date": "2026-07-18T10:02:58+00:00",
           "category": "hungary"
         },
         {
@@ -554,82 +322,153 @@
           "category": "hungary"
         },
         {
-          "title": "Magyar Péter támogatná a választási korhatár csökkentését: ennyi éves kortól lehetne szavazni",
-          "source": "Femina.hu",
-          "url": "https://femina.hu/terasz/magyar-peter-valasztasi-korhatas-csokkentes/",
-          "date": "2026-07-18T09:26:00+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Magyar Péter 16 évre csökkentené a választói korhatárt",
-          "source": "ORIGO",
-          "url": "https://www.origo.hu/belpol/2026/07/valasztoi-korhatar-16-ev-magyar-peter",
-          "date": "2026-07-18T09:22:39+00:00",
-          "category": "hungary"
-        },
-        {
           "title": "Magyar Péter támogatná a 18 éven aluliak választójogát",
           "source": "savariaforum.hu",
           "url": "https://www.savariaforum.hu/rovat/magyar-peter-tamogatna-a-16-even-aluliak-valasztojogat",
           "date": "2026-07-18T09:14:33+00:00",
           "category": "hungary"
+        },
+        {
+          "title": "Magyar Péter támogatná, hogy 16 évre csökkentsék a választási korhatárt",
+          "source": "24.hu",
+          "url": "https://24.hu/belfold/2026/07/18/magyar-petre-valasztasi-korhatar-csokkentese-16-ev/",
+          "date": "2026-07-18T08:58:00+00:00",
+          "category": "hungary"
         }
       ],
       "first_seen": "2026-07-18T14:12:42+00:00",
-      "last_seen": "2026-07-19T04:16:32+00:00"
+      "last_seen": "2026-07-19T14:17:17+00:00"
     },
     {
       "id": "internal-divisions-fracture-right-wing-coalitions",
       "title": "Internal divisions fracture right-wing coalitions",
-      "blurb": "Right-wing parties in Poland, Italy, and Germany are grappling with internal divisions, with factions challenging leadership and threatening party unity. This theme underscores the fragility of right-wing coalitions and the risks of ideological fragmentation.",
+      "blurb": "Right-wing parties across Europe and the Americas are experiencing internal fractures, with leadership conflicts and ideological splits threatening their unity. This theme underscores the fragility of right-wing coalitions as they grapple with competing visions for their political futures.",
       "convergence": 4,
       "countries": [
         {
           "name": "🇵🇱 Prawo i Sprawiedliwość",
-          "note": "PiS faces a potential split as members defy orders to leave political associations, with Morawiecki's faction challenging Kaczyński's leadership."
+          "note": "PiS faces a major internal split as Jarosław Kaczyński demands members leave Morawiecki's 'Rozwój Plus' association or face expulsion, risking a party breakup."
         },
         {
           "name": "🇮🇹 Fratelli d'Italia / Lega",
-          "note": "Tensions between Meloni and Salvini over policy direction and alliances with far-right figures like Vannacci threaten coalition stability."
+          "note": "Lega's declining influence and internal power struggles, particularly over alliances with far-right figures like Vannacci, threaten the stability of Italy's ruling coalition."
         },
         {
-          "name": "🇩🇪 Alternative für Deutschland",
-          "note": "AfD's NRW branch faces a power struggle between Vincentz and Weidel, with walkouts and legal threats escalating internal conflicts."
+          "name": "🇦🇷 La Libertad Avanza",
+          "note": "Javier Milei's government faces internal conflicts over key appointments and policy directions, with factions led by Karina Milei and Santiago Caputo vying for influence."
         }
       ],
       "signals": [
         "parallel elections",
-        "coordinated messaging",
-        "contagion of rhetoric"
+        "internal power struggles",
+        "contagion of rhetoric",
+        "policy disputes"
       ],
-      "article_count": 40,
+      "article_count": 90,
       "refs": [
+        {
+          "title": "Konflikt w PiS. Terlecki: Prezes czasem lubi słuchać lizusów",
+          "source": "Do Rzeczy",
+          "url": "https://dorzeczy.pl/kraj/917080/konflikt-w-pis-terlecki-prezes-czasem-lubi-sluchac-lizusow.html",
+          "date": "2026-07-19T13:31:00+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Narasta kryzys w PiS. Ekspertka: Kaczyński straci na tym rozłamie",
+          "source": "Wiadomości Onet",
+          "url": "https://wiadomosci.onet.pl/kraj/narasta-kryzys-w-pis-ekspertka-kaczynski-straci-na-tym-rozlamie/njwg0rf",
+          "date": "2026-07-19T13:29:43+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Kaczyński spotkał się z Morawieckim. Media ujawniają kulisy",
+          "source": "Do Rzeczy",
+          "url": "https://dorzeczy.pl/kraj/917074/kaczynski-spotkal-sie-z-morawieckim-media-ujawniaja-kulisy.html",
+          "date": "2026-07-19T12:48:00+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Co z Morawieckim? Jest blisko Kaczyńskiego i mówi wprost. \"Prezes skłania się ku temu rozwiązaniu\"",
+          "source": "Fakt",
+          "url": "https://www.fakt.pl/polityka/kryzys-w-pis-jest-blisko-kaczynskiego-i-mowi-co-zrobi-z-morawieckim/9kqk7qv",
+          "date": "2026-07-19T12:28:20+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Terlecki włącza się do konfliktu. \"Prezes nie szanuje lizusów\"",
+          "source": "WP Wiadomości",
+          "url": "https://wiadomosci.wp.pl/terlecki-wlacza-sie-do-konfliktu-prezes-nie-szanuje-lizusow-7309161849845760a",
+          "date": "2026-07-19T12:27:29+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Wrze w PiS. Morawiecki nie posłuchał Kaczyńskiego. Wybuchła awantura",
+          "source": "Wprost",
+          "url": "https://www.wprost.pl/kraj/12391392/wrze-w-pis-morawiecki-nie-posluchal-kaczynskiego-wybuchla-awantura.html",
+          "date": "2026-07-19T12:04:00+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "W PiS oskarżenia o \"kłamstwa i manipulacje\". Tobiasz Bocheński: nieprzemyślane i emocjonalne",
+          "source": "TVN24",
+          "url": "https://tvn24.pl/polska/kolejne-spory-w-pis-tobiasz-bochenski-o-emocjonalnym-i-nieprzemyslanym-wpisie-st9148836",
+          "date": "2026-07-19T11:35:02+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Będzie na \"grillu\" Morawieckiego i ma prognozę dla PiS. \"Będzie bolało\"",
+          "source": "Fakt",
+          "url": "https://www.fakt.pl/polityka/kryzys-w-pis-robert-winnicki-ma-prognoze-bedzie-bolalo/s8xc3eq",
+          "date": "2026-07-19T10:27:56+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Ostre spięcie polityków PiS. Poszło o Morawieckiego. „Miarka się przebiera”",
+          "source": "Radio Zet",
+          "url": "https://wiadomosci.radiozet.pl/polityka/ostre-spiecie-politykow-pis-poszlo-o-morawieckiego-miarka-sie-przebiera",
+          "date": "2026-07-19T08:33:22+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Kolejna odsłona sporu w PiS. Komentują wymianę zdań między posłami",
+          "source": "WP Wiadomości",
+          "url": "https://wiadomosci.wp.pl/kolejna-odslona-sporu-w-pis-komentuja-wymiane-zdan-miedzy-poslami-7309091951306752a",
+          "date": "2026-07-19T08:00:54+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Spięcie polityków PiS w sieci. \"Kłamiesz\"",
+          "source": "Wiadomości Onet",
+          "url": "https://wiadomosci.onet.pl/kraj/spiecie-politykow-pis-w-sieci-poszlo-o-stowarzyszenie-mateusza-morawieckiego/9jwcnwp",
+          "date": "2026-07-19T06:47:29+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Awantura w PiS już na całego. \"To bliżej jakichś majaków i halucynacji\"",
+          "source": "Fakt",
+          "url": "https://www.fakt.pl/polityka/awantura-w-pis-politycy-kloca-sie-o-morawieckiego/dxlg9r0",
+          "date": "2026-07-19T06:21:20+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "PiS zagrożony rozłamem? Zdania wśród polityków są podzielone",
+          "source": "czestochowa.wyborcza.pl",
+          "url": "https://czestochowa.wyborcza.pl/czestochowa/7,48725,32918226,lokalni-politycy-pis-czekaja-na-rozwoj-sytuacji-z-morawieckim.html",
+          "date": "2026-07-19T05:15:00+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "\"Stan Wyjątkowy\". Kaczyński chce wyrzucić Morawieckiego. Znamy kulisy ich ostatniego spotkania",
+          "source": "Wiadomości Onet",
+          "url": "https://wiadomosci.onet.pl/kraj/stan-wyjatkowy-kaczynski-chce-wyrzucic-morawieckiego-kulisy-ostatniego-spotkania/ne43sm3",
+          "date": "2026-07-19T04:27:29+00:00",
+          "category": "poland"
+        },
         {
           "title": "Spór w PiS narasta. \"Bliżej majaków i halucynacji\"",
           "source": "WP Wiadomości",
           "url": "https://wiadomosci.wp.pl/spor-w-pis-narasta-blizej-majakow-i-halucynacji-7308954520279040a",
           "date": "2026-07-18T23:14:14+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Pontida senza Bossi, Salvini chiama il popolo della Lega: il 20 settembre il prato diventa il tribunale del Carroccio",
-          "source": "Giornale La Voce",
-          "url": "https://www.giornalelavoce.it/news/attualita/720447/pontida-senza-bossi-salvini-chiama-il-popolo-della-lega-il-20-settembre-il-prato-diventa-il-tribunale-del-carroccio.html",
-          "date": "2026-07-18T21:06:00+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "State Police carry out 9,000 checks in Rome and Milan – In the centre of Florence – Meloni: ‘The State has your back’",
-          "source": "Il Sole 24 ORE",
-          "url": "https://en.ilsole24ore.com/art/police-carried-out-9000-checks-in-rome-and-milan-florence-city-centre-meloni-is-looking-out-for-you-AJdT4hO",
-          "date": "2026-07-18T20:04:35+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Płażyński: Morawiecki dzieli partię",
-          "source": "Do Rzeczy",
-          "url": "https://dorzeczy.pl/opinie/916888/plazynski-morawiecki-dzieli-partie.html",
-          "date": "2026-07-18T18:40:00+00:00",
           "category": "poland"
         },
         {
@@ -647,52 +486,10 @@
           "category": "poland"
         },
         {
-          "title": "Rząd Konfederacji z KO? Szef sztabu Mentzena nie wyklucza",
-          "source": "Rzeczpospolita",
-          "url": "https://www.rp.pl/polityka/art44841501-bartosz-bochenczak-donald-tusk-zawiesil-w-krakowie-demokracje",
-          "date": "2026-07-18T16:13:57+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Georgia Sen. Jon Ossoff fuels reelection campaign with attacks on President Trump",
-          "source": "Chicago Tribune",
-          "url": "https://www.chicagotribune.com/2026/07/18/georgia-jon-ossoff-reelection-campaign/",
-          "date": "2026-07-18T15:30:10+00:00",
-          "category": "usa"
-        },
-        {
           "title": "Jest ultimatum, nie będzie rozłamu? \"Politycy PiS robią w głowach bilans\"",
           "source": "TVN24",
           "url": "https://tvn24.pl/plus/programy/w-kuluarach/ultimatum-prezesa-jaroslawa-kaczynskiego-bedzie-rozlam-w-pis-vc9148502",
           "date": "2026-07-18T13:34:33+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Zapytali Polaków, kto jest lepszy jako premier. Tusk czy Morawiecki?",
-          "source": "Fakt",
-          "url": "https://www.fakt.pl/polityka/sondaz-kto-jest-lepszy-jako-premier-tusk-czy-morawiecki/dndd496",
-          "date": "2026-07-18T12:43:43+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Morawiecki powinien odejść z PiS? Są wyniki sondażu",
-          "source": "Do Rzeczy",
-          "url": "https://dorzeczy.pl/kraj/916810/morawiecki-powinien-odejsc-z-pis-sa-wyniki-sondazu.html",
-          "date": "2026-07-18T12:35:00+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Donald Trump Uses Alien Terrorist Removal Court For First Time Ever",
-          "source": "Newsweek",
-          "url": "https://www.newsweek.com/donald-trump-uses-alien-terrorist-removal-court-for-first-time-ever-12213771",
-          "date": "2026-07-18T12:12:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Mateusz Morawiecki ze swoją partią w sondażu. Wiadomo jaki wynik by osiągnął",
-          "source": "Wprost",
-          "url": "https://www.wprost.pl/kraj/12391014/mateusz-morawiecki-ze-swoja-partia-w-sondazu-wiadomo-jaki-wynik-by-osiagnal.html",
-          "date": "2026-07-18T12:10:00+00:00",
           "category": "poland"
         },
         {
@@ -703,60 +500,11 @@
           "category": "poland"
         },
         {
-          "title": "Polacy o partii Mateusza Morawieckiego. Zaskakują wyborcy PiS [SONDAŻ]",
-          "source": "Wiadomości Onet",
-          "url": "https://wiadomosci.onet.pl/kraj/polacy-o-partii-mateusza-morawieckiego-zaskakuja-wyborcy-pis-sondaz/8mpsvzt",
-          "date": "2026-07-18T11:16:27+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Czy dojdzie do rozłamu PiS-u?",
-          "source": "RadioMaryja.pl",
-          "url": "https://www.radiomaryja.pl/informacje/czy-dojdzie-do-rozlamu-pis-u/",
-          "date": "2026-07-18T11:04:40+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Kaczyński gra na dwa fortepiany. Morawiecki i Czarnek mają odzyskać władzę",
-          "source": "Rzeczpospolita",
-          "url": "https://www.rp.pl/opinie-polityczno-spoleczne/art44844631-skazani-na-wspolprace-jaroslaw-kaczynski-nie-zatrzyma-mateusza-morawieckiego",
-          "date": "2026-07-18T10:38:39+00:00",
-          "category": "poland"
-        },
-        {
           "title": "Polacy dają Morawieckiemu jasny sygnał. Nowy sondaż zagotuje Kaczyńskiego",
           "source": "naTemat.pl",
           "url": "https://natemat.pl/661336,polacy-daja-morawieckiemu-jasny-sygnal-nowy-sondaz-zagotuje-kaczynskiego",
           "date": "2026-07-18T10:35:07+00:00",
           "category": "poland"
-        },
-        {
-          "title": "Piotr Skwieciński: \"PiS to przeszłość\", czyli o pożytkach ze straszenia radykałami",
-          "source": "Wiadomości Onet",
-          "url": "https://wiadomosci.onet.pl/kraj/piotr-skwiecinski-pis-to-przeszlosc-czyli-o-pozytkach-ze-straszenia-radykalami/trqnfsd",
-          "date": "2026-07-18T10:29:22+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Rimpasto nel governo Meloni, la data è il 20 settembre: Salvini anti-Vannacci opziona il Viminale, Piantedosi può archiviare un Nordio sui carboni ardenti",
-          "source": "Il Riformista",
-          "url": "https://www.ilriformista.it/rimpasto-nel-governo-meloni-la-data-e-il-20-settembre-salvini-anti-vannacci-opziona-il-viminale-piantedosi-puo-archiviare-un-nordio-sui-carboni-ardenti-523108/",
-          "date": "2026-07-18T10:29:00+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Prof. M. Ryba o tarciach w PiS-ie: Być może Mateusz Morawiecki ma nadzieję, że poszerzy elektorat centrum i będzie naturalnym sojusznikiem dla Prawa i Sprawiedliwości",
-          "source": "RadioMaryja.pl",
-          "url": "https://www.radiomaryja.pl/informacje/prof-m-ryba-o-tarciach-w-pis-ie-byc-moze-mateusz-morawiecki-ma-nadzieje-ze-poszerzy-elektorat-centrum-i-bedzie-naturalnym-sojusznikiem-dla-prawa-i-sprawiedliwosci/",
-          "date": "2026-07-18T09:47:35+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Magyar Péter egy Angela Merkel-i fordulattal idővel még nagyobb válságba dönthetné a Fideszt",
-          "source": "| hvg.hu",
-          "url": "https://hvg.hu/360/20260718_magyar-peter-egy-angela-merkel-i-fordulattal-idovel-meg-nagyobb-valsagba-donthetne-a-fideszt",
-          "date": "2026-07-18T09:43:24+00:00",
-          "category": "hungary"
         },
         {
           "title": "\"Kaczyński i Morawiecki postawili się pod ścianą\". Co dalej z PiS?",
@@ -766,17 +514,10 @@
           "category": "poland"
         },
         {
-          "title": "Morawiecki założy własną partię? Wyborcy PiS wysłali byłemu premierowi jasny sygnał [SONDAŻ]",
-          "source": "Gazeta",
-          "url": "https://wiadomosci.gazeta.pl/polityka/7,198012,32919670,morawiecki-zalozy-wlasna-partie-wyborcy-pis-wyslali-bylemu.html",
-          "date": "2026-07-18T09:20:36+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Morawiecki powinien założyć własną partię? Tak głosowaliby na nią Polacy",
-          "source": "WP Wiadomości",
-          "url": "https://wiadomosci.wp.pl/morawiecki-powinien-zalozyc-wlasna-partie-tak-glosowaliby-na-nia-polacy-7308744250231232a",
-          "date": "2026-07-18T09:15:32+00:00",
+          "title": "PiSdrama: prezes Kaczyński i Mateusz Morawiecki spotkali się, ale nic nie ustalili",
+          "source": "Donald.pl",
+          "url": "https://www.donald.pl/artykuly/RsSa3UCh/pisdrama-prezes-kaczynski-i-mateusz-morawiecki-spotkali-sie-ale-nic-nie-ustalili",
+          "date": "2026-07-18T09:00:00+00:00",
           "category": "poland"
         },
         {
@@ -787,13 +528,6 @@
           "category": "poland"
         },
         {
-          "title": "El alcalde de Vox investiado por el incendio de Guadalajara intenta diluir su responsabilidad en una defensa del campo",
-          "source": "Elplural.com",
-          "url": "https://www.elplural.com/autonomias/castilla-la-mancha/alcalde-vox-investiado-incendio-guadalajara-intenta-diluir-responsabilidad-defensa-campo_395994102",
-          "date": "2026-07-18T08:37:12+00:00",
-          "category": "spain"
-        },
-        {
           "title": "„Jeszcze się nie urodził taki, który podzieli mnie z Prezesem”",
           "source": "RMF24",
           "url": "https://www.rmf24.pl/fakty/polityka/news-jeszcze-sie-nie-urodzil-taki-ktory-podzieli-mnie-z-prezesem,nIdn,1010439",
@@ -801,25 +535,11 @@
           "category": "poland"
         },
         {
-          "title": "Łódzki PiS sypie się mocniej niż zakładały władze partii. Kolejni politycy dołączają do stowarzyszenia Morawieckiego",
-          "source": "Dziennik Łódzki",
-          "url": "https://dzienniklodzki.pl/lodzki-pis-sypie-sie-mocniej-niz-zakladaly-wladze-partii-kolejni-politycy-dolaczaja-do-stowarzyszenia-morawieckiego/ar/c1p2-29191325",
-          "date": "2026-07-18T08:03:42+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Polacy chcą odejścia Morawieckiego z PiS",
-          "source": "salon24.pl",
-          "url": "https://www.salon24.pl/newsroom/1513238,polacy-chca-odejscia-morawiecki-z-pis",
-          "date": "2026-07-18T07:44:01+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Czy Morawiecki powinien opuścić PiS? Duża zmiana w opiniach Polaków [SONDAŻ]",
-          "source": "Wiadomości Onet",
-          "url": "https://wiadomosci.onet.pl/kraj/co-powinien-zrobic-mateusz-morawiecki-rosnie-liczba-zwolennikow-rozlamu-sondaz/dmnwcw2",
-          "date": "2026-07-18T07:40:21+00:00",
-          "category": "poland"
+          "title": "Carcere di Bollate, il presidio della Lega Giovani per Roggero con Matteo Salvini - diretta",
+          "source": "la Repubblica",
+          "url": "https://milano.repubblica.it/cronaca/2026/07/18/video/carcere_di_bollate_il_presidio_della_lega_giovani_per_roggero_con_matteo_salvini_-_diretta-425478598/",
+          "date": "2026-07-18T08:17:00+00:00",
+          "category": "italy"
         },
         {
           "title": "List ostatniej szansy? W PiS narasta konflikt",
@@ -836,31 +556,10 @@
           "category": "poland"
         },
         {
-          "title": "Kaczyński tym razem się nie cofnie. PiS, jaki znamy, może przestać istnieć",
-          "source": "Newsweek",
-          "url": "https://www.newsweek.pl/opinie/kaczynski-idzie-na-wojne-o-pis-stankiewicz-tym-razem-nie-moze-sie-cofnac/h481mrh",
-          "date": "2026-07-18T06:15:00+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Morawiecki rozmawiał z Kaczyńskim. \"Przeciwnik jest jeden\"",
-          "source": "Wyborcza.pl",
-          "url": "https://wyborcza.pl/7,75398,32919613,morawiecki-rozmawial-z-kaczynskim-przeciwnik-jest-jeden.html",
-          "date": "2026-07-18T05:53:02+00:00",
-          "category": "poland"
-        },
-        {
           "title": "Koniec sporu o Rozwój Plus? Morawiecki: jeszcze się nie urodził taki intrygant...",
           "source": "Fakt",
           "url": "https://www.fakt.pl/polityka/ultimatum-pis-dla-rozwoju-plus-zaskakujace-oswiadczenie-morawieckiego/ew6wlcr",
           "date": "2026-07-18T05:37:00+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Narastający konflikt może \"sprawiać frajdę\". Problem w tym, że PiS \"zaczyna mówić Braunem\"",
-          "source": "TVN24",
-          "url": "https://tvn24.pl/polska/narastajacy-konflikt-w-pis-komentarze-politykow-st9147726",
-          "date": "2026-07-18T05:10:10+00:00",
           "category": "poland"
         },
         {
@@ -871,83 +570,140 @@
           "category": "poland"
         },
         {
-          "title": "Morawiecki zabrał głos po spotkaniu z Kaczyńskim. Mocny wpis",
-          "source": "Wprost",
-          "url": "https://www.wprost.pl/kraj/12390873/morawiecki-zabral-glos-po-spotkaniu-z-kaczynskim-mocny-wpis.html",
-          "date": "2026-07-18T04:51:00+00:00",
-          "category": "poland"
-        },
-        {
           "title": "Kryzys w PiS niezwykle cieszy Konfederację. \"To jest początek końca duopolu\"",
           "source": "Wyborcza.pl",
           "url": "https://wyborcza.pl/7,75398,32918989,kryzys-w-pis-niezwykle-cieszy-konfederacje-to-jest-poczatek.html",
           "date": "2026-07-18T04:00:00+00:00",
           "category": "poland"
-        },
-        {
-          "title": "Rozwód Morawieckiego z PiS rozpoczął się rok temu. Wakacyjny grill będzie finałem?",
-          "source": "Polityka Super Express",
-          "url": "https://polityka.se.pl/wiadomosci/rozwod-morawieckiego-z-pis-rozpoczal-sie-rok-temu-wakacyjny-grill-bedzie-finalem-aa-nkYu-AtVP-76gA.html",
-          "date": "2026-07-18T03:10:00+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Czy Morawiecki powinien odejść z PiS i założyć własną partię? Znacząca zmiana w sondażu",
-          "source": "Polityka Super Express",
-          "url": "https://polityka.se.pl/wiadomosci/czy-morawiecki-powinien-odejsc-z-pis-i-zalozyc-wlasna-partie-znaczaca-zmiana-w-sondazu-aa-ThNf-bmmi-vwc1.html",
-          "date": "2026-07-18T01:37:00+00:00",
-          "category": "poland"
         }
       ],
       "first_seen": "2026-07-16T03:54:40+00:00",
-      "last_seen": "2026-07-19T04:16:32+00:00"
+      "last_seen": "2026-07-19T14:17:17+00:00"
     },
     {
       "id": "right-wing-leaders-exploit-crime-and-security-concerns",
       "title": "Right-wing leaders exploit crime and security concerns",
-      "blurb": "Right-wing parties in Italy, Spain, and the U.S. are amplifying crime and security concerns to justify stricter laws and mobilize voters. This theme reflects a transnational strategy of leveraging fear to push conservative agendas.",
+      "blurb": "Right-wing parties in Italy, Spain, and the U.S. are amplifying crime and security narratives to justify stricter policies, including expanded self-defense laws and crackdowns on immigration. This theme reflects a transnational strategy to rally support by portraying their nations as under siege from crime and external threats.",
       "convergence": 4,
       "countries": [
         {
           "name": "🇮🇹 Fratelli d'Italia / Lega",
-          "note": "Meloni and Salvini are pushing for expanded self-defense laws and stricter immigration policies, citing rising crime rates."
+          "note": "Meloni and Salvini use the Roggero case to push for expanded self-defense laws and stricter security measures, framing Italy as facing rising crime threats."
         },
         {
           "name": "🇪🇸 Vox",
-          "note": "Vox has accused regional governments of negligence in handling wildfires and immigration, demanding stricter security measures."
+          "note": "Vox leverages wildfire incidents and immigration concerns to advocate for stricter security policies, including opposition to migrant rights and climate regulations."
         },
         {
           "name": "🇺🇸 MAGA / Trump",
-          "note": "Trump's administration has emphasized election security and immigration enforcement, framing them as critical to national safety."
+          "note": "Trump's administration focuses on crime and immigration crackdowns, including stricter Medicaid and SNAP fraud enforcement, to appeal to voter concerns over security."
         }
       ],
       "signals": [
-        "shared framing",
         "policy imitation",
-        "parallel elections"
+        "shared framing",
+        "parallel policy debates",
+        "contagion of rhetoric"
       ],
-      "article_count": 35,
+      "article_count": 80,
       "refs": [
         {
-          "title": "Ucraina, Salvini: \"Non sono preoccupato da invasione carri armati sovietici\"",
-          "source": "Il Mattino",
-          "url": "https://www.ilmattino.it/video/primopiano/ucraina_salvini_non_sono_preoccupato_da_invasione_carri_armati_sovietici-9659284.html",
-          "date": "2026-07-18T20:27:18+00:00",
-          "category": "italy"
+          "title": "J.D. Vance in Milwaukee: Administration pushes new crackdown on Medicaid and SNAP fraud.",
+          "source": "The Fulcrum",
+          "url": "https://thefulcrum.us/health/jd-vance-milwaukee-fraud-crackdown-medicaid-snap",
+          "date": "2026-07-19T13:19:46+00:00",
+          "category": "usa"
         },
         {
-          "title": "Datos y exigencias que desmontan la 'prioridad nacional' y cuestionan los \"privilegios\" del pacto andaluz de PP y Vox",
-          "source": "elDiario.es",
-          "url": "https://www.eldiario.es/andalucia/datos-exigencias-desmontan-prioridad-nacional-cuestionan-privilegios-pacto-andaluz-pp-vox_1_13366655.html",
-          "date": "2026-07-18T20:23:11+00:00",
+          "title": "El portavoz de Vox (Sevilla) plantea reducir en más de 10.000 el número límite de pisos turísticos en la ciudad",
+          "source": "Europa Press",
+          "url": "https://www.europapress.es/andalucia/sevilla-00357/noticia-portavoz-vox-sevilla-plantea-reducir-mas-10000-numero-limite-pisos-turisticos-ciudad-20260719150442.html",
+          "date": "2026-07-19T13:04:42+00:00",
           "category": "spain"
         },
         {
-          "title": "Polizia di Stato e locale, 9mila controlli a Roma e Milano",
-          "source": "Il Sole 24 ORE",
-          "url": "https://www.ilsole24ore.com/art/polizia-stato-9mila-controlli-roma-e-milano--centro-firenze--meloni-stato-vi-copre-spalle-AJdT4hO",
-          "date": "2026-07-18T20:18:00+00:00",
+          "title": "Vox defiende el desbroce de los montes y la recuperación del pastoreo para prevenir incendios",
+          "source": "Teleprensa",
+          "url": "https://www.teleprensa.com/articulo/sevilla/vox-defiende-desbroce-montes-recuperacion-pastoreo-prevenir-incendios/202607191202232469751.html",
+          "date": "2026-07-19T12:02:23+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Vox se reúne con Stop Biogás y defiende que el Ayuntamiento \"tenga la última palabra\"",
+          "source": "Andalucía Información",
+          "url": "https://www.andaluciainformacion.es/articulo/cordoba/andalucia-cordoba-vox-mantiene-reunion-plataforma-stop-biogas-reitera-que-ayuntamiento-tenga-ultima-palabra/202607191359443435593.html",
+          "date": "2026-07-19T11:59:44+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "«Ni ha sido citado, ni filiado dentro de la investigación», incide Vox sobre el alcalde señalado por el incendio de La Mierla",
+          "source": "ABC",
+          "url": "https://www.abc.es/espana/castilla-la-mancha/citado-filiado-dentro-investigacion-incide-vox-sobre-20260719133959-nt.html",
+          "date": "2026-07-19T11:40:00+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Vox Baena se reúne con la Plataforma Stop Biogás y rechaza la instalación de la macroplanta en el municipio",
+          "source": "El Debate",
+          "url": "https://www.eldebate.com/espana/la-voz-de-cordoba/provincia/20260719/vox-baena-reune-plataforma-stop-biogas-rechaza-instalacion-macroplanta-municipio_441254.html",
+          "date": "2026-07-19T10:59:47+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Comunicado de Vox Guadalajara: ‘Reiteramos que el alcalde de Robledillo de Mohernando, Rubén Marchamalo, no se encontraba en el lugar donde comenzó el incendio de La Mierla, ni era la persona que manejaba la cosechadora, ni ha sido citado por la",
+          "source": "El Heraldo del Henares",
+          "url": "https://www.elheraldodelhenares.com/cartas/comunicado-de-vox-guadalajara-reiteramos-que-el-alcalde-de-robledillo-de-mohernando-ruben-marchamalo-no-se-encontraba-en-el-lugar-donde-comenzo-el-incendio-de-la-mierla-ni-era-la-persona-que-man/",
+          "date": "2026-07-19T10:55:04+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "VOX denuncia la paralización del centro de salud de Lo Pagán tras la rescisión del contrato",
+          "source": "Cartagena Diario",
+          "url": "https://cartagenadiario.es/vox-paralizacion-centro-salud-lo-pagan-rescision-contrato/",
+          "date": "2026-07-19T10:42:36+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Ni 72.000 hectáreas quemadas les convencen: Vox continúa con su negacionismo del cambio climático",
+          "source": "LaSexta",
+          "url": "https://amp.lasexta.com/ibercheck/72000-hectareas-quemadas-les-convencen-vox-continua-negacionismo-cambio-climatico_202607196a5ca822e9f2e84b5c71771b.html",
+          "date": "2026-07-19T10:34:10+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "\"Non punibile qualsiasi reazione\", così la Lega vuole cambiare la legge sulla legittima difesa",
+          "source": "Adnkronos",
+          "url": "https://www.adnkronos.com/politica/legittima-difesa-ddl-lega-caso-roggero_67057Ww5PGqYIMzAv3B0lT",
+          "date": "2026-07-19T09:48:00+00:00",
           "category": "italy"
+        },
+        {
+          "title": "Las burlas homófobas del concejal de Vox en Sant Cugat contra los críticos de la selección española",
+          "source": "El Nacional.cat",
+          "url": "https://www.elnacional.cat/es/politica/burlas-homofobas-concejal-vox-en-sant-cugat-contra-criticos-seleccion-espanola_1670345_102.html",
+          "date": "2026-07-19T08:25:06+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "José Luis Sanz y Vox ultiman un pacto para limitar al 5% los pisos turísticos",
+          "source": "ABC",
+          "url": "https://www.abc.es/sevilla/ciudad/jose-luis-sanz-vox-ultiman-pacto-limitar-20260719105740-nts.html",
+          "date": "2026-07-19T05:14:26+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Objetivo: revertir la amnistía",
+          "source": "La Vanguardia",
+          "url": "https://www.lavanguardia.com/politica/20260719/11595646/objetivo-revertir-amnistia.amp.html",
+          "date": "2026-07-19T04:00:00+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "La incongruencia de Vox: de denunciar el \"intento de criminalizar a un agricultor que cumplía la ley\" al \"no estaba en el lugar\" de los hechos",
+          "source": "EL DECANO DE GUADALAJARA",
+          "url": "https://eldecanodeguadalajara.com/index.php/news/19739/la-incongruencia-de-vox-de-denunciar-el-intento-de-criminalizar-a-un-agricultor-que-cumpl%C3%ADa-la-ley-al-no-estaba-en-el-lugar-de-los-hechos/",
+          "date": "2026-07-18T22:01:59+00:00",
+          "category": "spain"
         },
         {
           "title": "Vox asegura que el alcalde supuestamente investigado no estaba en el lugar del incendio",
@@ -957,39 +713,11 @@
           "category": "spain"
         },
         {
-          "title": "El alcalde de Vox al que acusan del incendio en La Mierla: \"No somos delincuentes, somos agricultores\"",
-          "source": "ESdiario",
-          "url": "https://www.esdiario.com/nacional/260718/193612/alcalde-vox-acusan-incendio-mierla-delincuentes-agricultores.html",
-          "date": "2026-07-18T18:00:00+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox asegura que el alcalde investigado no estaba en el lugar del incendio",
-          "source": "GuadalajaraDiario.es",
-          "url": "https://www.guadalajaradiario.es/provincia/70596-vox-asegura-que-el-alcalde-investigado-no-estaba-en-el-lugar-del-incendio.html",
-          "date": "2026-07-18T17:23:02+00:00",
-          "category": "spain"
-        },
-        {
           "title": "El alcalde de Vox investigado por el incendio de La Mierla (Guadalajara) asegura que no estaba en el lugar donde se inició el fuego",
           "source": "LaSexta",
           "url": "https://amp.lasexta.com/noticias/nacional/alcalde-vox-investigado-incendio-mierla-guadalajara-asegura-que-estaba-lugar-donde-inicio-fuego_202607186a5bb5590500ab412c9d4253.html",
           "date": "2026-07-18T17:18:17+00:00",
           "category": "spain"
-        },
-        {
-          "title": "El alcalde de Vox señalado por el incendio de La Mierla niega haber estado en el lugar donde se originó el fuego",
-          "source": "elDiario.es",
-          "url": "https://www.eldiario.es/castilla-la-mancha/provincias/guadalajara/alcalde-vox-senalado-incendio-mierla-niega-haber-lugar-origino-fuego_1_13390783.html",
-          "date": "2026-07-18T17:07:50+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Petizione di Fratelli d’Italia sui bus gratuiti per richiedenti asilo, l’assessora Madri: ‘Falsità’",
-          "source": "èTV Rete 7",
-          "url": "https://e-tv.it/bologna/senza-titolo-118/",
-          "date": "2026-07-18T16:29:31+00:00",
-          "category": "italy"
         },
         {
           "title": "El alcalde señalado por el incendio de La Mierla agradece el apoyo del sector agrario",
@@ -1006,27 +734,6 @@
           "category": "spain"
         },
         {
-          "title": "Vox exige disculpas para el alcalde señalado por el incendio",
-          "source": "La Tribuna de Ciudad Real",
-          "url": "https://www.latribunadeciudadreal.es/noticia/z4cc8122d-91ea-408b-ae1eeb5f42c94966/202607/vox-exige-disculpas-para-el-alcalde-senalado-por-el-incendio",
-          "date": "2026-07-18T15:23:35+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox asegura que el alcalde investigado por el fuego de La Mierla no estaba donde se inició",
-          "source": "Infobae",
-          "url": "https://www.infobae.com/espana/agencias/2026/07/18/vox-asegura-que-el-alcalde-investigado-por-el-fuego-de-la-mierla-no-estaba-donde-se-inicio/",
-          "date": "2026-07-18T15:10:23+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox acusa a la subdelegada del Gobierno de filtrar una falsedad contra el alcalde de Robledillo",
-          "source": "La Crónica de Guadalajara",
-          "url": "https://www.lacronica.net/vox-acusa-a-la-subdelegada-del-gobierno-de-filtrar-una-falsedad-contra-el-alcalde-de-robledillo/",
-          "date": "2026-07-18T14:27:50+00:00",
-          "category": "spain"
-        },
-        {
           "title": "El alcalde de Vox investigado por el incendio de La Mierla se defiende: \"Somos agricultores, no delincuentes\"",
           "source": "El Español",
           "url": "https://www.elespanol.com/eldigitalcastillalamancha/region/20260718/alcalde-vox-investigado-incendio-mierla-defiende-agricultores-no-delincuentes/1003744326135_0.html",
@@ -1034,10 +741,17 @@
           "category": "spain"
         },
         {
-          "title": "Vox exige la renovación integral de la trevesía de la N-420 por Poblete para mejorar la seguridad vial",
-          "source": "Lanza Digital",
-          "url": "https://www.lanzadigital.com/provincia/vox-exige-la-renovacion-integral-de-la-trevesia-de-la-n-420-por-poblete-para-mejorar-la-seguridad-vial/",
-          "date": "2026-07-18T11:57:04+00:00",
+          "title": "Vox Córdoba pide explicaciones y medidas ante el \"grave déficit de infraestructuras eléctricas\" en Lucena",
+          "source": "Europa Press",
+          "url": "https://www.europapress.es/andalucia/noticia-vox-cordoba-pide-explicaciones-medidas-grave-deficit-infraestructuras-electricas-lucena-20260718141039.html",
+          "date": "2026-07-18T12:10:39+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "VOX exige que las empresas del tanque de tormentas paguen los daños en Bajamar",
+          "source": "Andalucía Información",
+          "url": "https://www.andaluciainformacion.es/articulo/el-puerto/vox-exige-que-empresas-responsables-tanque-tormentas-paguen-danos-causados-viviendas-bajamar/202607181253263435091.html",
+          "date": "2026-07-18T10:53:26+00:00",
           "category": "spain"
         },
         {
@@ -1048,38 +762,10 @@
           "category": "spain"
         },
         {
-          "title": "VOX costa Águilas inmigración: exige más vigilancia",
-          "source": "Cartagena Diario",
-          "url": "https://cartagenadiario.es/vox-costa-aguilas-inmigracion-exige-mas-vigilancia/",
-          "date": "2026-07-18T10:31:57+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox reclama más medios humanos y materiales para vigilar la costa de Águilas",
-          "source": "Murcia Plaza",
-          "url": "https://murciaplaza.com/murciaplaza/region/vox-reclama-mas-medios-humanos-y-materiales-para-vigilar-la-costa-de-aguilas",
-          "date": "2026-07-18T10:04:06+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Meloni in campo: \"Mi aggredisci? Io mi difendo e senza risarcirti\"",
-          "source": "il Giornale",
-          "url": "https://www.ilgiornale.it/news/politica/meloni-campo-mi-aggredisci-io-mi-difendo-e-senza-risarcirti-2695077.html",
-          "date": "2026-07-18T10:03:41+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Donald Trump's brutal attack on Tuchel: \"Harry Kane? They took their best player and put him on defense\"",
-          "source": "MARCA",
-          "url": "https://www.marca.com/en/world-cup/2026/07/18/donald-trump-s-brutal-attack-on-tuchel-donald-trump-harry-kane-they-took-their-best-player-and-put-him-on-defense.html",
-          "date": "2026-07-18T09:39:44+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Prohens aplaza la ley agraria de Baleares pactada entre PP y Vox hasta octubre",
-          "source": "moncloa.com",
-          "url": "https://www.moncloa.com/2026/07/18/prohens-aplaza-ley-agraria-baleares-3401853/",
-          "date": "2026-07-18T09:04:24+00:00",
+          "title": "El alcalde señalado por el incendio de La Mierla rompe su silencio: «No somos delincuentes, somos agricultores y ganaderos»",
+          "source": "ABC",
+          "url": "https://www.abc.es/espana/castilla-la-mancha/alcalde-vox-senalado-incendio-mierla-rompe-silencio-20260718101415-nt.html",
+          "date": "2026-07-18T10:13:00+00:00",
           "category": "spain"
         },
         {
@@ -1087,13 +773,6 @@
           "source": "elDiario.es",
           "url": "https://www.eldiario.es/castilla-la-mancha/provincias/guadalajara/alcalde-vox-investigan-responsable-incendio-mierla-agricultores-no-delincuentes_1_13389983.html",
           "date": "2026-07-18T08:51:56+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "El alcalde de Vox a quien responsabilizan del incendio en Guadalajara se defiende: \"No somos delincuentes, somos agricultores\"",
-          "source": "ENCLM",
-          "url": "https://www.encastillalamancha.es/medio-ambiente-cat/el-alcalde-de-vox-a-quien-responsabilizan-del-incendio-en-guadalajara-se-defiende-no-somos-delincuentes-somos-agricultores/",
-          "date": "2026-07-18T08:46:00+00:00",
           "category": "spain"
         },
         {
@@ -1111,194 +790,132 @@
           "category": "spain"
         },
         {
-          "title": "Se defiende el alcalde de Vox señalado por el fuego de La Mierla: \"No somos delincuentes, somos",
-          "source": "Lanza Digital",
-          "url": "https://www.lanzadigital.com/castilla-la-mancha/se-defiende-el-alcalde-de-vox-senalado-por-el-fuego-de-la-mierla-no-somos-delincuentes-somos-agricultores/amp/",
-          "date": "2026-07-18T08:21:48+00:00",
+          "title": "MAGA moves to meddle in European politics",
+          "source": "dw.com",
+          "url": "https://amp.dw.com/en/maga-moves-to-meddle-in-european-politics/video-77984220",
+          "date": "2026-07-18T07:51:56+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Vox prepara su asalto a las aulas valencianas y exige al PP mayor control de la inspección para velar por la \"neutralidad ideológica\"",
+          "source": "Elplural.com",
+          "url": "https://www.elplural.com/autonomias/comunidad-valenciana/vox-prepara-asalto-aulas-valencianas-exige-pp-mayor-control-inspeccion-velar-neutralidad-ideologica_395738102_amp",
+          "date": "2026-07-18T05:04:01+00:00",
           "category": "spain"
-        },
-        {
-          "title": "Roggero, la linea di Meloni e la battaglia per la grazia. L'irritazione dei magistrati: «Accuse di doppiopesismo tanto odiose quanto generiche»",
-          "source": "Corriere Roma",
-          "url": "https://roma.corriere.it/notizie/cronaca/26_luglio_18/roggero-meloni-grazia-c6a7a49c-a1cc-4cf1-9a21-1887d2862xlk.shtml",
-          "date": "2026-07-18T07:19:12+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Meloni: nessun risarcimento a chi delinque per eventuali danni subiti",
-          "source": "l'Eco del Sud",
-          "url": "https://www.lecodelsud.it/meloni-nessun-risarcimento-a-chi-delinque-per-eventuali-danni-subiti",
-          "date": "2026-07-18T06:11:05+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Meloni: “Tolleranza zero” verso il crimine",
-          "source": "IlMetropolitano.it",
-          "url": "https://www.ilmetropolitano.it/2026/07/18/meloni-tolleranza-zero-crimine-sicurezza/",
-          "date": "2026-07-18T01:35:25+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Today’s News Headlines: Laos distillery owner charged over deadly poisoning",
-          "source": "Sky News Australia",
-          "url": "https://www.skynews.com.au/australia-news/todays-news-headlines-laos-distillery-owner-charged-over-deadly-poisoning/video/41a79de6a422009d00b350d9ac71bfc5?amp",
-          "date": "2026-07-17T22:31:05+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Meloni agli agenti di polizia: \"Lo Stato vi copre le spalle\"",
-          "source": "Sky TG24",
-          "url": "https://tg24.sky.it/politica/2026/07/17/meloni-agenti-polizia-incontro",
-          "date": "2026-07-17T20:53:37+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Meloni alle forze dell’ordine: “Lo Stato vi copre le spalle”",
-          "source": "la Repubblica",
-          "url": "https://www.repubblica.it/politica/2026/07/17/news/meloni_sicurezza_tolleranza_zero_agenti-425477855/",
-          "date": "2026-07-17T19:31:22+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Sicurezza, Meloni ad agenti: \"Stato non si volta dall'altra parte e vi copre le spalle\"",
-          "source": "Il Sole 24 ORE",
-          "url": "https://stream24.ilsole24ore.com/video/italia/sicurezza-meloni-ad-agenti-stato-non-si-volta-altra-parte-e-vi-copre-spalle/AJRXylN",
-          "date": "2026-07-17T19:16:07+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Meloni visita la Polizia: \"Non c'è libertà senza sicurezza\"",
-          "source": "Il Tempo",
-          "url": "https://www.iltempo.it/attualita/2026/07/17/news/meloni-visita-la-polizia-non-c-e-liberta-senza-sicurezza--48595702/",
-          "date": "2026-07-17T19:01:00+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Meloni agli agenti: \"Tolleranza zero sulle zone franche, lo Stato vi copre le spalle\"",
-          "source": "il Giornale",
-          "url": "https://www.ilgiornale.it/news/governo/meloni-agli-agenti-tolleranza-zero-sulle-zone-franche-stato-2695047.html",
-          "date": "2026-07-17T18:50:54+00:00",
-          "category": "italy"
         }
       ],
       "first_seen": "2026-07-18T03:48:08+00:00",
-      "last_seen": "2026-07-19T04:16:32+00:00"
+      "last_seen": "2026-07-19T14:17:17+00:00"
     },
     {
       "id": "trumps-election-fraud-claims-dominate-global-right-wing-discourse",
       "title": "Trump’s election fraud claims dominate global right-wing discourse",
-      "blurb": "Trump's persistent claims of election fraud are resonating with right-wing parties and media across multiple countries, shaping transnational narratives about electoral integrity and democratic vulnerabilities. This theme highlights the global impact of U.S. political rhetoric on right-wing movements.",
-      "convergence": 5,
+      "blurb": "Donald Trump's persistent allegations of election fraud continue to resonate across right-wing movements globally, influencing political narratives in the U.S., UK, and Poland. This theme highlights how Trump's rhetoric shapes transnational right-wing discourse, often serving as a rallying cry for voter integrity concerns.",
+      "convergence": 4,
       "countries": [
         {
           "name": "🇺🇸 MAGA / Trump",
-          "note": "Trump delivered a primetime speech alleging widespread election fraud and foreign interference, demanding stricter voting laws."
+          "note": "Trump's claims of election fraud remain central to his political messaging, with his administration pushing for stricter voter ID laws and investigations into alleged irregularities."
         },
         {
           "name": "🇬🇧 Reform UK",
-          "note": "Nigel Farage echoed Trump's claims, demanding immediate elections and criticizing mainstream parties for ignoring voter fraud concerns."
+          "note": "Nigel Farage and Reform UK amplify Trump's election fraud claims, using them to justify calls for electoral reform and stricter immigration policies."
         },
         {
           "name": "🇵🇱 Prawo i Sprawiedliwość",
-          "note": "PiS has amplified Trump's election fraud claims, using them to justify electoral reforms and challenge opposition legitimacy."
+          "note": "PiS echoes Trump's rhetoric, questioning the legitimacy of Poland's 2023 elections and advocating for stricter electoral oversight to prevent alleged fraud."
         }
       ],
       "signals": [
         "coordinated messaging",
-        "shared framing",
-        "transnational contagion"
+        "contagion of rhetoric",
+        "parallel policy debates",
+        "shared framing"
       ],
-      "article_count": 50,
+      "article_count": 60,
       "refs": [
         {
-          "title": "MAGA Stars’ Vance Bets Spark Insider Trading Concerns",
-          "source": "The Daily Beast",
-          "url": "https://www.thedailybeast.com/maga-stars-vance-bets-spark-insider-trading-concerns/",
-          "date": "2026-07-18T23:42:00+00:00",
+          "title": "RINO Alaskan Senator’s Opposition To Voter ID Likely Kills President Trump’s Legislation",
+          "source": "The Maine Wire",
+          "url": "https://www.themainewire.com/2026/07/rino-alaskan-senators-opposition-to-voter-id-likely-kills-president-trumps-legislation/",
+          "date": "2026-07-19T13:06:06+00:00",
           "category": "usa"
         },
         {
-          "title": "United States: the Trump administration shortens foreign journalist visas",
-          "source": "European Federation of Journalists",
-          "url": "https://europeanjournalists.org/blog/2026/07/18/united-states-the-trump-administration-shortens-foreign-journalist-visas/",
-          "date": "2026-07-18T21:59:43+00:00",
+          "title": "Despite Trump's unpopularity, new poll shows tight race for Congress",
+          "source": "Yahoo",
+          "url": "https://www.yahoo.com/news/politics/articles/despite-trumps-unpopularity-wapo-poll-123801176.html",
+          "date": "2026-07-19T12:38:01+00:00",
           "category": "usa"
         },
         {
-          "title": "Power & Politics: President Trump addresses the nation over SAVE",
-          "source": "News12 | Long Island",
-          "url": "https://longisland.news12.com/power-politics-president-trump-addresses-the-nation-over-save",
-          "date": "2026-07-18T21:31:19+00:00",
+          "title": "World Cup star says he will only shake Donald Trump’s hand ‘to avoid prison’",
+          "source": "Yahoo Sports",
+          "url": "https://sports.yahoo.com/articles/world-cup-star-says-only-110723897.html",
+          "date": "2026-07-19T11:07:23+00:00",
           "category": "usa"
         },
         {
-          "title": "Pete Hegseth pays tribute to two US troops killed in Iran attack",
-          "source": "The Independent",
-          "url": "https://www.independent.co.uk/bulletin/news/pete-hegseth-us-troops-killed-iran-attack-b3017496.html",
-          "date": "2026-07-18T19:29:00+00:00",
+          "title": "Federal judge dismisses Trump administration lawsuit to obtain CT voter rolls",
+          "source": "Hartford Courant",
+          "url": "https://www.courant.com/2026/07/19/federal-judge-dismisses-trump-administration-lawsuit-to-obtain-ct-voter-rolls/",
+          "date": "2026-07-19T10:03:36+00:00",
           "category": "usa"
         },
         {
-          "title": "MS NOW’s Alex Wagner Eviscerates Pete Hegseth’s ‘Embarrassing’ Testosterone Move",
-          "source": "TheWrap",
-          "url": "https://www.thewrap.com/industry-news/business/ms-now-alex-wagner-eviscerates-pete-hegseth-testosterone-move/",
-          "date": "2026-07-18T19:16:36+00:00",
+          "title": "Donald Trump is concerned a fair election will lead to oversight | Dan Butler",
+          "source": "Wisconsin State Journal",
+          "url": "https://madison.com/opinion/letters/article_d2ee35af-ff12-4a14-8532-add269174ea5.html",
+          "date": "2026-07-19T10:00:00+00:00",
           "category": "usa"
         },
         {
-          "title": "Is President Donald Trump going to the World Cup final? What we know",
-          "source": "USA Today",
-          "url": "https://www.usatoday.com/story/sports/soccer/worldcup/2026/07/18/president-donald-trump-attending-2026-world-cup-final-metlife/90966371007/",
-          "date": "2026-07-18T18:19:00+00:00",
+          "title": "States win suit over Trump administration’s termination of grants",
+          "source": "Jefferson City News Tribune",
+          "url": "https://www.newstribune.com/news/2026/jul/19/states-win-suit-over-trump-administrations/",
+          "date": "2026-07-19T09:00:00+00:00",
           "category": "usa"
         },
         {
-          "title": "\"Shutdown a la argentina\": una consultora analizó el proyecto que impulsa Javier Milei para garantizar el equilibrio fiscal",
-          "source": "Diario Río Negro",
-          "url": "https://www.rionegro.com.ar/economia/shutdown-a-la-argentina-una-consultora-analizo-el-proyecto-que-impulsa-javier-milei-para-garantizar-el-equilibrio-fiscal-4652968/",
-          "date": "2026-07-18T18:07:31+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Trump to fund Maga-aligned projects in Europe as he reorders US aid",
-          "source": "Financial Times",
-          "url": "https://www.ft.com/content/1cb986a4-2428-4e64-a559-7867cfa1a3e3?syn-25a6b1a6=1",
-          "date": "2026-07-18T17:22:03+00:00",
+          "title": "Trump is the real threat to fair U.S. elections",
+          "source": "New York Daily News",
+          "url": "https://www.nydailynews.com/2026/07/19/trump-is-the-real-threat-to-fair-u-s-elections/",
+          "date": "2026-07-19T08:00:29+00:00",
           "category": "usa"
         },
         {
-          "title": "Trump Administration Advances Permanent Fence Plan for Lafayette Square",
-          "source": "NBC Palm Springs",
-          "url": "https://www.nbcpalmsprings.com/2026/07/18/trump-administration-advances-permanent-fence-plan-for-lafayette-square",
-          "date": "2026-07-18T17:00:00+00:00",
+          "title": "The Trump administration DOJ went to a secret deportation court this week",
+          "source": "lawdork.com",
+          "url": "https://www.lawdork.com/p/trump-doj-secret-deportation-court-atrc",
+          "date": "2026-07-19T03:42:10+00:00",
           "category": "usa"
         },
         {
-          "title": "AfD-Landeschef Vincentz setzt sich bei Parteitag in NRW durch",
-          "source": "SZ.de",
-          "url": "https://www.sueddeutsche.de/politik/afd-nrw-parteitag-vincentz-landesliste-li.3518054",
-          "date": "2026-07-18T16:55:59+00:00",
-          "category": "germany"
+          "title": "Trump’s Election Integrity Speech Was Even Worse Than You Thought",
+          "source": "Washington Monthly",
+          "url": "https://washingtonmonthly.com/2026/07/18/trumps-election-integrity-speech-was-even-worse-than-you-thought/",
+          "date": "2026-07-19T00:23:13+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Hungary president signs law to end term in office after Orban's ousting",
+          "source": "The Jerusalem Post",
+          "url": "https://www.jpost.com/international/article-902886",
+          "date": "2026-07-18T21:20:17+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Roggero: Salvini apre a candidatura e modifica legge, mentre insorge l'opposizione",
+          "source": "Il Tempo",
+          "url": "https://www.iltempo.it/politica/2026/07/18/news/roggero-salvini-apre-a-candidatura-e-modifica-legge-mentre-insorge-l-opposizione-48602883/",
+          "date": "2026-07-18T19:45:00+00:00",
+          "category": "italy"
         },
         {
           "title": "‘He can go suck on a salt lick’: AZ election official SLAMS DHS Secretary Markwayne Mullin",
           "source": "MS NOW",
           "url": "https://www.ms.now/connect/watch/he-can-go-suck-on-a-salt-lick-az-election-official-slams-dhs-secretary-markwayne-mullin-2506959427540",
           "date": "2026-07-18T16:00:46+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Trump administration election security demands",
-          "source": "Channel 3000",
-          "url": "https://www.channel3000.com/video/trump-administration-election-security-demands/video_8b4f0050-b38b-5435-b9b2-a3e0f3e5ce4e.html",
-          "date": "2026-07-18T15:12:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Federal judge dismisses Trump administration lawsuit over Connecticut voter rolls",
-          "source": "CT Insider",
-          "url": "https://www.ctinsider.com/connecticut/article/trump-connecticut-voter-list-lawsuit-dismissed-22349668.php",
-          "date": "2026-07-18T14:50:28+00:00",
           "category": "usa"
         },
         {
@@ -1309,34 +926,6 @@
           "category": "usa"
         },
         {
-          "title": "Itthon: Karácsony Gergely is támogatja, hogy 16 évre csökkentsék a választási korhatárt",
-          "source": "| hvg.hu",
-          "url": "https://hvg.hu/itthon/20260718_karacsony-gergely-magyar-peter-valasztojog-korhatar",
-          "date": "2026-07-18T13:54:06+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "South Korea’s Far Right Is on the Rise — With the MAGA Movement’s Backing",
-          "source": "Truthout",
-          "url": "https://truthout.org/articles/south-koreas-far-right-is-on-the-rise-with-the-maga-movements-backing/",
-          "date": "2026-07-18T13:16:38+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Fight or Flight: Trump administration subpoenas journalists over Air Force One reporting - Scoop",
-          "source": "France 24",
-          "url": "https://www.france24.com/en/tv-shows/scoop/20260718-fight-or-flight-trump-administration-subpoenas-journalists-over-air-force-one-reporting",
-          "date": "2026-07-18T12:22:35+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Donald Trump Uses Alien Terrorist Removal Court For First Time Ever",
-          "source": "Newsweek",
-          "url": "https://www.newsweek.com/donald-trump-uses-alien-terrorist-removal-court-for-first-time-ever-12213771",
-          "date": "2026-07-18T12:12:00+00:00",
-          "category": "usa"
-        },
-        {
           "title": "Has Donald Trump finally jumped the shark?",
           "source": "The Independent",
           "url": "https://www.independent.co.uk/voices/donald-trump-tv-white-house-china-abc-election-b3016855.html",
@@ -1344,25 +933,18 @@
           "category": "usa"
         },
         {
-          "title": "World Cup audience stayed bipartisan despite Trump's prominent role, CNBC survey finds",
-          "source": "CNBC",
-          "url": "https://www.cnbc.com/2026/07/18/world-cup-viewership-trump-democrats-republicans-poll.html",
-          "date": "2026-07-18T12:00:02+00:00",
-          "category": "usa"
+          "title": "Karol Nawrocki ponownie złoży wniosek o referendum ws. polityki klimatycznej UE",
+          "source": "PolsatNews.pl",
+          "url": "https://www.polsatnews.pl/wiadomosc/2026-07-18/nawrocki-ponownie-zlozy-wniosek-o-referendum-chodzi-o-polityke-klimatyczna-ue/",
+          "date": "2026-07-18T12:02:00+00:00",
+          "category": "poland"
         },
         {
-          "title": "Marco Rubio’s Old Warning That Donald Trump’s Presidency Would ‘Not End Well’ Resurfaces as Netizens Question His Loyalty Shift",
-          "source": "AOL.com",
-          "url": "https://www.aol.com/articles/marco-rubio-old-warning-donald-110300000.html",
-          "date": "2026-07-18T11:15:26+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Judge rules Trump administration illegally terminated billions in federal grant funding, New Jersey attorney general says",
-          "source": "WRNJ Radio",
-          "url": "https://wrnjradio.com/judge-rules-trump-administration-illegally-terminated-billions-in-federal-grant-funding-new-jersey-attorney-general-says/",
-          "date": "2026-07-18T11:03:44+00:00",
-          "category": "usa"
+          "title": "Szefernaker: w najbliższym tygodniu ponowny wniosek prezydenta o referendum klimatyczne",
+          "source": "Polska Agencja Prasowa SA",
+          "url": "https://www.pap.pl/aktualnosci/szefernaker-w-najblizszym-tygodniu-ponowny-wniosek-prezydenta-o-referendum-klimatyczne",
+          "date": "2026-07-18T11:02:00+00:00",
+          "category": "poland"
         },
         {
           "title": "Donald Trump Scores Legal Victory In Major Mail-In Voting Change",
@@ -1386,24 +968,10 @@
           "category": "usa"
         },
         {
-          "title": "MAGA moves to meddle in European politics",
-          "source": "dw.com",
-          "url": "https://amp.dw.com/en/maga-moves-to-meddle-in-european-politics/video-77984220",
-          "date": "2026-07-18T07:51:56+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Trump, not Iran, is the world’s greatest danger. He’s a one-man weapon of mass destruction | Simon Tisdall",
-          "source": "The Guardian",
-          "url": "https://www.theguardian.com/commentisfree/2026/jul/18/donald-trump-iran-world-danger-bombing-us",
-          "date": "2026-07-18T07:37:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Concorso 411 Vice Ispettori, lettera alla Meloni: scorrere tutta la graduatoria",
-          "source": "FSP Polizia di Stato",
-          "url": "https://www.fsp-polizia.it/concorso-411-vice-ispettori-fsp-scrive-a-meloni-scorrere-tutta-la-graduatoria/",
-          "date": "2026-07-18T05:35:40+00:00",
+          "title": "Ridotti i debiti della Lega nord: Giorgetti tra i principali finanziatori con 36mila euro",
+          "source": "la Repubblica",
+          "url": "https://www.repubblica.it/politica/2026/07/18/news/lega_nord_bilancio_2025_debiti_giorgetti_finanziatore-425478484/",
+          "date": "2026-07-18T07:27:44+00:00",
           "category": "italy"
         },
         {
@@ -1412,213 +980,10 @@
           "url": "https://www.einpresswire.com/article/927600533/dhs-secretary-markwayne-mullin-sends-letters-to-secretaries-of-state-warning-about-non-citizens-on-voter-rolls",
           "date": "2026-07-18T04:53:00+00:00",
           "category": "usa"
-        },
-        {
-          "title": "Adding context to President Trump's claims during his primetime speech",
-          "source": "NBC 7 San Diego",
-          "url": "https://www.nbcsandiego.com/video/videos/adding-context-to-president-trumps-claims-during-his-primetime-speech/4050470/",
-          "date": "2026-07-18T04:48:31+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Trump Approval Rating: Hits All-Time Low On The Economy In Latest Poll",
-          "source": "Forbes",
-          "url": "https://www.forbes.com/sites/saradorn/2026/07/17/trump-approval-rating-hits-all-time-low-on-the-economy-in-latest-poll/",
-          "date": "2026-07-18T04:05:48+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Messi, Kane, Ronaldo: Five Takeaways From President Trump’s Surreal World Cup Speech",
-          "source": "Sports Illustrated",
-          "url": "https://www.si.com/soccer/five-takeaways-president-trump-surreal-world-cup-speech",
-          "date": "2026-07-18T04:00:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Rep. Adam Smith: Donald Trump’s war in Iran is creating ‘perpetual global chaos’",
-          "source": "MS NOW",
-          "url": "https://www.ms.now/the-last-word/watch/rep-adam-smith-donald-trump-s-war-in-iran-is-creating-perpetual-global-chaos-2506933315907",
-          "date": "2026-07-18T03:09:28+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Kto zagraża rządowi Donalda Tuska? Polacy wskazali w sondażu",
-          "source": "Wiadomości Onet",
-          "url": "https://wiadomosci.onet.pl/kraj/kto-najmocniej-zagraza-rzadom-donalda-tuska-jasne-wskazanie-polakow/ewzf1zv",
-          "date": "2026-07-18T03:05:00+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "What to know about the Trump administration's claim that 250K non-citizens are registered to vote in 4 states",
-          "source": "CBS News",
-          "url": "https://www.cbsnews.com/news/trump-markwayne-mullin-non-citizens-registered-voters-california-new-jersey-nevada-pennsylvania/",
-          "date": "2026-07-18T01:48:03+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Trump administration doubles down on election integrity claims",
-          "source": "CBS News",
-          "url": "https://www.cbsnews.com/newyork/video/trump-administration-doubles-down-on-election-integrity-claims/",
-          "date": "2026-07-18T01:15:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Homeland Security Secretary Mullin reiterates Trump threats about elections",
-          "source": "Al Jazeera",
-          "url": "https://www.aljazeera.com/news/2026/7/18/homeland-security-secretary-mullin-reiterates-trump-threats-about-elections",
-          "date": "2026-07-18T00:09:57+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Election security takes centerstage in President Trump’s national address",
-          "source": "kaaltv.com",
-          "url": "https://www.kaaltv.com/news/election-security-takes-centerstage-in-president-trumps-national-address/",
-          "date": "2026-07-17T23:18:47+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Trump tries to undermine trust in elections, but documents don't support his claims",
-          "source": "PBS",
-          "url": "https://www.pbs.org/newshour/show/trump-tries-to-undermine-trust-in-elections-but-documents-dont-support-his-claims",
-          "date": "2026-07-17T22:55:22+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Fact-checking Donald Trump’s address on Chinese election interference – video",
-          "source": "The Guardian",
-          "url": "https://www.theguardian.com/us-news/video/2026/jul/17/fact-checking-donald-trumps-address-on-chinese-election-interference-video",
-          "date": "2026-07-17T22:51:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Trump Administration Taking Action for Election Integrity",
-          "source": "news8000.com",
-          "url": "https://www.news8000.com/news/trump-administration-taking-action-for-election-integrity/video_5e01a066-95fa-5aae-82b8-f1b98b802926.html",
-          "date": "2026-07-17T22:19:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Tazewell County Clerk responds after President Trump’s speech raises election doubts",
-          "source": "WEEK | 25 News Now",
-          "url": "https://www.25newsnow.com/video/2026/07/17/tazewell-county-clerk-responds-after-president-trumps-speech-raises-election-doubts/",
-          "date": "2026-07-17T22:17:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "City Attorney Rejects Trump Administration’s Demand, Says Milwaukee Will Enforce Mask Ban",
-          "source": "Urban Milwaukee",
-          "url": "https://urbanmilwaukee.com/2026/07/17/city-attorney-rejects-trump-administrations-demand-says-milwaukee-will-enforce-mask-ban/",
-          "date": "2026-07-17T22:15:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Trump, allies seek to sow mistrust about election security ahead of midterms",
-          "source": "Los Angeles Times",
-          "url": "https://www.latimes.com/politics/story/2026-07-17/trump-allies-seek-to-sow-mistrust-about-election-security-ahead-of-midterms",
-          "date": "2026-07-17T21:55:51+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Trump administration demands oversight of states' voter rolls",
-          "source": "WTAE",
-          "url": "https://www.wtae.com/article/trump-administration-demands-oversight-of-states-voter-rolls/73173162",
-          "date": "2026-07-17T21:54:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Trump administration threatening states to go along with new election security plans",
-          "source": "CBS News",
-          "url": "https://www.cbsnews.com/boston/video/trump-administration-threatening-states-to-go-along-with-new-election-security-plans/",
-          "date": "2026-07-17T21:14:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Donald Trump’s Election-Fraud Bait and Switch",
-          "source": "The New Yorker",
-          "url": "https://www.newyorker.com/news/the-lede/trumps-election-fraud-bait-and-switch",
-          "date": "2026-07-17T21:13:15+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Commentary: Trump's voter fraud speech was bait. Stop biting",
-          "source": "Los Angeles Times",
-          "url": "https://www.latimes.com/california/story/2026-07-17/chabria-column-trump-speech-election-fraud-claims",
-          "date": "2026-07-17T21:08:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Fact-checking Trump's address on China, the 2020 election and what documents show",
-          "source": "PBS",
-          "url": "https://www.pbs.org/newshour/politics/fact-checking-trumps-address-on-china-the-2020-election-and-what-documents-show",
-          "date": "2026-07-17T20:20:23+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "President Trump delivers address on elections",
-          "source": "CBS News",
-          "url": "https://www.cbsnews.com/losangeles/video/president-trump-delivers-address-on-elections/",
-          "date": "2026-07-17T19:30:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Following Trump's speech, DHS secretary threatens prosecution for illegal voting",
-          "source": "Spectrum News",
-          "url": "https://spectrumlocalnews.com/nys/rochester/politics/2026/07/17/homeland-security-secretary-markwayne-mullin-president-donald-trump-speech-election-security",
-          "date": "2026-07-17T19:05:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Mullin pushes states to comply with election demands, echoing Trump's claims about midterm risks",
-          "source": "WKMG",
-          "url": "https://www.clickorlando.com/news/politics/2026/07/17/mullin-pushes-states-to-comply-with-election-demands-echoing-trumps-claims-about-midterm-risks/",
-          "date": "2026-07-17T19:01:08+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Homeland Security Secretary Markwayne Mullin threatens states over elections",
-          "source": "NBC News",
-          "url": "https://www.nbcnews.com/politics/elections/homeland-security-secretary-markwayne-mullin-threatens-states-election-rcna588002",
-          "date": "2026-07-17T18:23:55+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "DHS Secretary Markwayne Mullin issues stark warning to state elections officials",
-          "source": "CNN",
-          "url": "https://www.cnn.com/2026/07/17/politics/video/cncpm-markwayne-mullin-elections-officials",
-          "date": "2026-07-17T18:23:10+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Homeland Security secretary pushes states to crack down on noncitizen voting",
-          "source": "National Desk",
-          "url": "https://thenationaldesk.com/news/politics/homeland-security-secretary-pushes-states-to-crack-down-on-noncitizen-voting-markwayne-mullin-election-integrity",
-          "date": "2026-07-17T17:29:51+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "DHS secretary doubles down on Trump’s baseless 2020 election claims",
-          "source": "The Guardian",
-          "url": "https://www.theguardian.com/us-news/2026/jul/17/markwayne-mullin-trump-baseless-election-claims",
-          "date": "2026-07-17T17:12:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "DHS says it found noncitizens on voter rolls in several states before Trump speech",
-          "source": "Baltimore Sun",
-          "url": "https://www.baltimoresun.com/2026/07/17/dhs-says-it-found-noncitizens-on-voter-rolls-in-several-states-before-trump-speech/",
-          "date": "2026-07-17T17:02:06+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "DHS Sec. Threatens to Jail State Officials Who Defy Trump’s Demands",
-          "source": "The New Republic",
-          "url": "https://newrepublic.com/post/213208/department-homeland-secretary-threatens-defund-states-voter-rolls",
-          "date": "2026-07-17T16:55:01+00:00",
-          "category": "usa"
         }
       ],
       "first_seen": "2026-07-17T03:56:53+00:00",
-      "last_seen": "2026-07-19T04:16:32+00:00"
+      "last_seen": "2026-07-19T14:17:17+00:00"
     }
   ]
 }
