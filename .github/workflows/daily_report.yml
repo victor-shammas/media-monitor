@@ -19,8 +19,8 @@ on:
           - mistral-large
           - mistral-medium
           - mistral-small
-          - pro
           - flash
+          - flash-25
           - claude
 
 jobs:
@@ -64,13 +64,13 @@ jobs:
         #--markdown writes as a markdown report
         #
         #--model auto (now the default) — full fallback chain
-        #--model pro — Gemini 2.5 Pro only
         #--model claude — Claude Sonnet only
         #--model mistral — Mistral Large only
         #--model mistral-medium — Mistral Medium only
         #--model mistral-small — Mistral Small only
-        #--model flash — Gemini 2.5 Flash only
-        # the run line below captures the last 24 hours of news reports, sends both email and writes a markdown file, and follows the fallback chain: Mistral Large → Mistral Medium → Mistral Small → Gemini Pro → Gemini Flash → Sonnet
+        #--model flash — Gemini 3.6 Flash only
+        #--model flash-25 — Gemini 2.5 Flash only
+        # the run line below captures the last 24 hours of news reports, sends both email and writes a markdown file, and follows the fallback chain: Mistral Large → Mistral Medium → Mistral Small → Gemini 3.6 Flash → Gemini 2.5 Flash
         # ──────────────────────────────────────────────────────────
         run: python ai_reporter.py --hours 24 --model ${{ inputs.model || 'auto' }} --email --markdown
 
