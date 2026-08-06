@@ -4,7 +4,7 @@ AI Reporter — Generates intelligence briefs from the media monitor data.
 
 Consumes enriched JSON data (falling back to titles-only from monitor_state.json
 if necessary) to generate AI-produced intelligence briefs. Uses a resilient,
-multi-provider LLM fallback chain (Gemini Pro → Claude Sonnet → Gemini Flash).
+multi-provider LLM fallback chain (Mistral → Gemini 3.6 Flash → Gemini 2.5 Flash).
 
 Enriched files are keyed by article publication date (enriched_YYYY-MM-DD.json).
 The reporter loads enough daily files to cover the lookback window (e.g. 2 files
@@ -22,7 +22,7 @@ Usage Examples:
 Flags:
   --markdown          Write the analysis to a local Markdown file (.md) in reports/
   --email             Send the final report as an HTML email (default if --markdown isn't used)
-  --model MODEL       Force a specific model (options: auto, pro, claude, flash).
+  --model MODEL       Force a specific model (options: auto, mistral, flash, flash-25, claude).
                       'auto' uses the fallback chain (default: auto).
   --hours INT         Look-back window in hours for the analysis (default: 24)
   --no-enriched       Force titles-only analysis even if enriched article text exists
@@ -216,14 +216,14 @@ PROVIDERS = {
         "label": "Mistral Small",
         "env_key": "MISTRAL_API_KEY",
     },
-    "gemini-pro": {
-        "fn": lambda prompt: _call_gemini(prompt, "gemini-2.5-pro"),
-        "label": "Gemini 2.5 Pro",
+    "gemini-flash": {
+        "fn": lambda prompt: _call_gemini(prompt, "gemini-3.6-flash"),
+        "label": "Gemini 3.6 Flash",
         "env_key": "GEMINI_API_KEY",
     },
-    "gemini-flash": {
-        "fn": lambda prompt: _call_gemini(prompt, "gemini-3-flash"),
-        "label": "Gemini 3 Flash",
+    "gemini-flash-25": {
+        "fn": lambda prompt: _call_gemini(prompt, "gemini-2.5-flash"),
+        "label": "Gemini 2.5 Flash",
         "env_key": "GEMINI_API_KEY",
     },
     "claude-sonnet": {
@@ -239,7 +239,7 @@ PROVIDERS = {
 # for one-off explicit runs.
 DEFAULT_CHAIN = [
     "mistral-large", "mistral-medium", "mistral-small",
-    "gemini-pro", "gemini-flash",
+    "gemini-flash", "gemini-flash-25",
 ]
 
 MODEL_ALIASES = {
@@ -247,8 +247,8 @@ MODEL_ALIASES = {
     "mistral-large": "mistral-large",
     "mistral-medium": "mistral-medium",
     "mistral-small": "mistral-small",
-    "pro": "gemini-pro",
     "flash": "gemini-flash",
+    "flash-25": "gemini-flash-25",
     "claude": "claude-sonnet",
     "auto": None,
 }
@@ -715,9 +715,9 @@ def main():
         "--model",
         default="auto",
         choices=["auto", "mistral", "mistral-large", "mistral-medium",
-                 "mistral-small", "pro", "flash", "claude"],
+                 "mistral-small", "flash", "flash-25", "claude"],
         help="Model selection: 'auto' (full fallback chain), 'mistral' (Large), "
-        "'mistral-medium', 'mistral-small', 'pro', 'flash', 'claude'",
+        "'mistral-medium', 'mistral-small', 'flash', 'flash-25', 'claude'",
     )
     parser.add_argument(
         "--enriched-dir",
