@@ -1,514 +1,135 @@
 {
-  "updated_at": "2026-08-11T13:53:38+00:00",
+  "updated_at": "2026-08-12T03:05:19+00:00",
   "lookback_hours": 48,
   "model": "Mistral Large",
   "status": "ok",
   "hotspots": [
     {
-      "id": "legas-bank-levy-sparks-internal-revolt",
-      "title": "Lega’s bank levy sparks internal revolt",
-      "blurb": "Matteo Salvini’s proposal for a 5% annual levy on Italy’s top 10 banks has ignited fierce internal criticism within the Lega party, with Lombardy leaders demanding his resignation. The plan, aimed at funding security measures, has exposed deep divisions ahead of the Pontida rally and raised concerns about Salvini’s leadership.",
-      "affect": "This commands attention due to its high-stakes leadership crisis within a major right-wing party, with Salvini’s authority directly challenged by regional power brokers.",
+      "id": "trumps-secret-plane-switch-amid-iran-threat",
+      "title": "Trump’s secret plane switch amid Iran threat",
+      "blurb": "President Trump reportedly switched planes in Turkey due to an Iranian assassination threat, sparking intense media coverage and debates over national security protocols. The revelation has led to widespread speculation about the administration's handling of foreign threats and the implications for U.S. diplomatic relations.",
+      "affect": "This story commands disproportionate attention due to its high-stakes framing, involving national security, presidential safety, and geopolitical tensions with Iran.",
       "intensity": 5,
       "affect_signals": [
-        "leadership crisis tone",
-        "polarized contention",
-        "cross-source repetition",
-        "outrage-coded language",
-        "moral panic register"
-      ],
-      "categories": [
-        "🇮🇹 Fratelli d'Italia / Lega"
-      ],
-      "article_count": 45,
-      "refs": [
-        {
-          "title": "Manovra, Salvini: come Lega chiederemo contributo a prime dieci banche italiane",
-          "source": "la Repubblica",
-          "url": "http://finanza.repubblica.it/mobile/News/2026/08/11/manovra_salvini_come_lega_chiederemo_contributo_a_prime_dieci_banche_italiane-89/",
-          "date": "2026-08-11T13:03:00+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Un bel pezzo della Lega lombarda non ne può più di Salvini",
-          "source": "Il Post",
-          "url": "https://www.ilpost.it/2026/08/11/richiesta-dimissioni-salvini-lega-lombardia/",
-          "date": "2026-08-11T12:56:58+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Salvini \"Per la prossima manovra la Lega chiederà 5% su utili a prime 10 banche\"",
-          "source": "l'Eco del Sud",
-          "url": "https://www.lecodelsud.it/salvini-per-la-prossima-manovra-la-lega-chiedera-5-su-utili-a-prime-10-banche",
-          "date": "2026-08-11T12:56:44+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Lega, Salvini \"Al lavoro per rafforzare la squadra\"",
-          "source": "Il Sole 24 ORE",
-          "url": "https://stream24.ilsole24ore.com/video/italia/lega-salvini-al-lavoro-rafforzare-squadra/AJ2ni7j",
-          "date": "2026-08-11T12:55:40+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Attentato Ranucci, Salvini: “Chi è coinvolto direttamente in questa vicenda oscura dovrebbe prendersi una pausa”",
-          "source": "Il Sole 24 ORE",
-          "url": "https://stream24.ilsole24ore.com/video/italia/attentato-ranucci-salvini-chi-e-coinvolto-direttamente-questa-vicenda-oscura-dovrebbe-prendersi-pausa/AJEli7j",
-          "date": "2026-08-11T12:55:40+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Lega: Salvini, sto lavorando per rafforzare la squadra",
-          "source": "Il Sole 24 ORE",
-          "url": "https://en.ilsole24ore.com/radiocor/nRC_11.08.2026_13.22_31110311",
-          "date": "2026-08-11T12:09:08+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Banche, Salvini: chiederemo alle prime 10 un contributo del 5% sugli utili",
-          "source": "Askanews",
-          "url": "https://askanews.it/2026/08/11/banche-salvini-chiederemo-alle-prime-10-un-contributo-del-5-sugli-utili/",
-          "date": "2026-08-11T12:07:33+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Lega chiederà contributo 5% su utili prime dieci banche italiane - Salvini",
-          "source": "Yahoo Finanza",
-          "url": "https://it.finance.yahoo.com/notizie/lega-chieder%C3%A0-contributo-5-su-114931110.html",
-          "date": "2026-08-11T11:49:31+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Salvini \"Per la prossima manovra la Lega chiederà contributo banche del 5% degli utili\"",
-          "source": "Italpress",
-          "url": "https://www.italpress.com/salvini-per-la-prossima-manovra-la-lega-chiedera-contributo-banche-del-5-degli-utili/",
-          "date": "2026-08-11T11:28:37+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Manovra, Salvini: \"Chiederemo un contributo alle banche\"",
-          "source": "lapresse.it",
-          "url": "https://www.lapresse.it/economia/2026/08/11/manovra-salvini-chiederemo-un-contributo-alle-banche/",
-          "date": "2026-08-11T11:21:04+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Italia, Salvini propone un prelievo annuale del 5% sulle prime 10 banche",
-          "source": "MarketScreener Italia",
-          "url": "https://it.marketscreener.com/notizie/italia-salvini-propone-un-prelievo-annuale-del-5-sulle-prime-10-banche-ce7859dbd98bf524",
-          "date": "2026-08-11T11:19:16+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Salvini: chiederemo alle banche un contributo del 5% sugli utili",
-          "source": "Il Sole 24 ORE",
-          "url": "https://www.ilsole24ore.com/art/salvini-chiederemo-banche-contributo-5percento-utili-AJ5tJ2j",
-          "date": "2026-08-11T11:16:12+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "“Chiederemo il 5% alle prime 10 banche italiane”. Salvini punta all'incasso per la nuova manovra",
-          "source": "Quotidiano Nazionale",
-          "url": "https://www.quotidiano.net/economia/banche-manovra-2027-salvini-akufj56m",
-          "date": "2026-08-11T11:07:30+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Salvini: We will ask the banks to contribute 5 per cent of their profits",
-          "source": "Il Sole 24 ORE",
-          "url": "https://en.ilsole24ore.com/art/salvini-chiederemo-banche-contributo-5percento-utili-AJ5tJ2j",
-          "date": "2026-08-11T10:47:00+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Salvini, lavoro per rafforzare la Lega, a italiani non interessano beghe interne",
-          "source": "ANSA",
-          "url": "https://www.ansa.it/sito/notizie/topnews/2026/08/11/salvini-lavoro-per-rafforzare-la-lega-a-italiani-non-interessano-beghe-interne_b23e2855-c8d2-428e-8000-c42a44c4682c.html",
-          "date": "2026-08-11T10:46:00+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Direttivo Lega Lombarda, Salvini: Più attenzione al nord? Mai stati così tanti investimenti",
-          "source": "Vista Agenzia Televisiva Nazionale",
-          "url": "https://www.agenziavista.it/tempo-reale/2026/1062500_direttivo-lega-lombarda-salvini-piu-attenzione-al-nord-mai-stati-cosi-tanti-investimenti/",
-          "date": "2026-08-11T10:41:00+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Matteo Salvini sul caso Ranucci: «Bisogna fare piena luce prima che riprenda Report»",
-          "source": "Corriere Roma",
-          "url": "https://roma.corriere.it/notizie/politica/26_agosto_11/matteo-salvini-ranucci-16eaffd7-51a7-45e8-9431-d610855dbxlk.shtml",
-          "date": "2026-08-11T10:40:03+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Manovra: Salvini, chiederemo contributo banche, penso a 5% utili per 3 anni (RCO)",
-          "source": "Il Sole 24 ORE",
-          "url": "https://www.ilsole24ore.com/radiocor/nRC_11.08.2026_12.15_27110271",
-          "date": "2026-08-11T10:39:38+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Salvini, per prossima manovra chiederemo contributo banche del 5% degli utili",
-          "source": "ANSA",
-          "url": "https://www.ansa.it/sito/notizie/topnews/2026/08/11/salvini-per-prossima-manovra-chiederemo-contributo-banche-del-5-degli-utili_50c96baa-a4aa-43c1-8e66-acf9b356aee6.html",
-          "date": "2026-08-11T10:24:00+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Manovra, Salvini riapre il fronte banche: “Versino il 5% degli utili”",
-          "source": "La Stampa",
-          "url": "https://www.lastampa.it/politica/2026/08/11/news/manovra_salvini_contributo_banche_utili_tre_anni-15712503/",
-          "date": "2026-08-11T10:14:00+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Matteo Salvini prova ad arginare i malumori all'interno della Lega: \"Sto lavorando per rinforzare la squadra, più siamo meglio è\"",
-          "source": "LA7",
-          "url": "https://www.la7.it/laria-che-tira/video/matteo-salvini-prova-ad-arginare-i-malumori-allinterno-della-lega-sto-lavorando-per-rinforzare-la-11-08-2026-654352",
-          "date": "2026-08-11T10:12:52+00:00",
-          "category": "italy"
-        }
-      ],
-      "first_seen": "2026-08-11T13:53:38+00:00",
-      "last_seen": "2026-08-11T13:53:38+00:00"
-    },
-    {
-      "id": "voxs-ceuta-migrant-rhetoric-sparks-hate-crime-probes",
-      "title": "Vox’s Ceuta migrant rhetoric sparks hate crime probes",
-      "blurb": "Vox’s inflammatory rhetoric against migrants in Ceuta, including calls to 'hunt' them, has led to multiple hate crime investigations. The party’s refusal to accept €25 million in aid for unaccompanied minors has further escalated tensions with the Spanish government and other EU nations.",
-      "affect": "This commands attention due to its moral panic framing, with Vox’s language being treated as a direct incitement to violence, triggering legal and political backlash.",
-      "intensity": 4,
-      "affect_signals": [
         "alarmist framing",
-        "outrage-coded language",
         "cross-source repetition",
-        "moral panic register",
-        "polarized contention"
+        "national security crisis tone",
+        "polarized contention",
+        "high-profile secrecy"
       ],
       "categories": [
-        "🇪🇸 Vox"
+        "🇺🇸 MAGA / Trump"
       ],
-      "article_count": 40,
+      "article_count": 50,
       "refs": [
         {
-          "title": "Lidia Bedman, mujer de Santiago Abascal, tras el ingreso de sus tres hijos: \"Las noticias no acompañan\"",
-          "source": "Divinity",
-          "url": "https://www.divinity.es/actualidad/20260811/lidia-bedman-santiago-abascal-hijos-ingreso-hospital-noticias-no-acompanan_18_019929312.html",
-          "date": "2026-08-11T12:55:22+00:00",
-          "category": "spain"
+          "title": "President Trump says advisers wanted him off Air Force One in Turkey due to threat",
+          "source": "Chicago Tribune",
+          "url": "https://www.chicagotribune.com/2026/08/11/trump-air-force-one-turkey-threat/",
+          "date": "2026-08-12T01:44:36+00:00",
+          "category": "usa"
         },
         {
-          "title": "PSOE defiende con fuerza los valores andalucistas ante la llegada de Vox a la Junta",
-          "source": "andaluciainformacion.es",
-          "url": "https://www.andaluciainformacion.es/articulo/jaen/andalucia-jaen-psoe-reivindica-mas-fuerza-que-nunca-valores-andalucistas-entrada-vox-junta/202608111431033452826.html",
-          "date": "2026-08-11T12:31:03+00:00",
-          "category": "spain"
+          "title": "Trump praises Darline Graham after runoff projection, addresses Iran threat and secret plane switch",
+          "source": "jpost.com",
+          "url": "https://www.jpost.com/international/article-905255",
+          "date": "2026-08-12T01:23:25+00:00",
+          "category": "usa"
         },
         {
-          "title": "Rego ve \"vergonzoso\" que Vox rechace los 25 millones a Ceuta para la atención a menores",
-          "source": "Infobae",
-          "url": "https://www.infobae.com/espana/agencias/2026/08/11/rego-ve-vergonzoso-que-vox-rechace-los-25-millones-a-ceuta-para-la-atencion-a-menores/",
-          "date": "2026-08-11T12:12:11+00:00",
-          "category": "spain"
+          "title": "President Trump secretly switched planes to leave NATO summit last month",
+          "source": "CBS News",
+          "url": "https://www.cbsnews.com/minnesota/video/president-trump-secretly-switched-planes-to-leave-nato-summit-last-month/",
+          "date": "2026-08-11T22:26:00+00:00",
+          "category": "usa"
         },
         {
-          "title": "Pollán (VOX) defiende la \"oposición frontal\" de Castilla y León al reparto de menas: \"Es lo que dice el pacto\"",
-          "source": "Diario de Castilla y León",
-          "url": "https://www.diariodecastillayleon.es/castilla-y-leon/260811/108517/pollan-defiende-oposicion-frontal-reparto-menores-acudira-reunion-dice-pacto.html",
-          "date": "2026-08-11T11:53:58+00:00",
-          "category": "spain"
+          "title": "President Trump used elaborate ruse to fly out of Turkey following summit because of Iran threat, report says",
+          "source": "WCCB Charlotte",
+          "url": "https://www.wccbcharlotte.com/2026/08/11/president-trump-used-elaborate-ruse-to-fly-out-of-turkey-following-summit-because-of-iran-threat-report-says/",
+          "date": "2026-08-11T17:48:58+00:00",
+          "category": "usa"
         },
         {
-          "title": "Igualdad lleva ante la Fiscalía a Figaredo (Vox) por llamar a \"cazar\" a migrantes en Ceuta",
-          "source": "Telemadrid",
-          "url": "http://www.telemadrid.es/programas/120-minutos/Igualdad-lleva-ante-la-Fiscalia-a-Figaredo-Vox-por-llamar-a-cazar-a-migrantes-en-Ceuta-2-2915428436--20260811015336.html",
-          "date": "2026-08-11T11:53:36+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox aprovecha la crisis de Ceuta para relanzar su prioridad nacional y rechaza los 25 millones para menores",
-          "source": "moncloa.com",
-          "url": "https://www.moncloa.com/2026/08/11/vox-crisis-ceuta-rechaza-25-millones-3413816/",
-          "date": "2026-08-11T11:49:44+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Pollán (Vox) defiende la \"oposición frontal\" de CyL al reparto de menores y no acudirá a la reunión: \"Lo dice el pacto\"",
-          "source": "Teleprensa",
-          "url": "https://www.teleprensa.com/articulo/nacional-3/pollan-vox-defiende-oposicion-frontal-cyl-reparto-menores-acudira-reunion-dice-pacto/202608111147272485467.html",
-          "date": "2026-08-11T11:47:27+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "José María Figaredo, diputado de Vox, acumula denuncias por 'cazar' y 'pescar' migrantes de Ceuta",
-          "source": "moncloa.com",
-          "url": "https://www.moncloa.com/2026/08/11/figaredo-denuncias-cazar-migrantes-ceuta-3413834/",
-          "date": "2026-08-11T11:45:13+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Rego acusa a Vox de \"criminalizar\" a la infancia tras el llamamiento de Figaredo a \"cazar\" migrantes en Ceuta",
-          "source": "Europa Press",
-          "url": "https://www.europapress.es/epsocial/infancia/noticia-rego-acusa-vox-criminalizar-infancia-llamamiento-figaredo-cazar-migrantes-ceuta-20260811132612.html",
-          "date": "2026-08-11T11:26:12+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Igualdad pide a la Fiscalía investigar a Figaredo tras llamar a “cazar” a migrantes",
-          "source": "El Boletín",
-          "url": "https://www.elboletin.com/igualdad-pide-a-la-fiscalia-investigar-a-figaredo-tras-llamar-a-cazar-a-migrantes/",
-          "date": "2026-08-11T11:19:01+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "\"Ranucci si prenda una pausa\": Salvini ora chiede il cambio alla guida di Report. \"Vicenda oscura, serve fare chiarezza\"",
-          "source": "Il Fatto Quotidiano",
-          "url": "https://www.ilfattoquotidiano.it/2026/08/11/caso-ranucci-lavitola-salvini-report-notizie/8476142/",
-          "date": "2026-08-11T11:06:01+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "VOX alerta del «deterioro» de la seguridad en Castilla-La Mancha, “entre las diez regiones con más identificaciones policiales”",
-          "source": "MiCiudadReal.es",
-          "url": "https://www.miciudadreal.es/2026/08/11/vox-alerta-del-deterioro-de-la-seguridad-en-castilla-la-mancha-entre-las-diez-regiones-con-mas-identificaciones-policiales/",
-          "date": "2026-08-11T10:59:12+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Igualdad pide a la Fiscalía actuar contra Figaredo (Vox) por llamar a “cazar” a los migrantes de Ceuta",
-          "source": "lavanguardia.com",
-          "url": "https://www.lavanguardia.com/politica/20260811/11611974/igualdad-pide-fiscalia-actuar-figaredo-vox-llamar-cazar-migrantes-ceuta.html",
-          "date": "2026-08-11T10:49:45+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Igualdad pide a la Fiscalía investigar a Figaredo (Vox) por delito de odio tras llamar a \"cazar\" a migrantes",
-          "source": "Europa Press",
-          "url": "https://www.europapress.es/epsocial/igualdad/noticia-igualdad-pide-fiscalia-investigar-figaredo-vox-delito-odio-llamar-cazar-migrantes-20260811123457.html",
-          "date": "2026-08-11T10:34:57+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Igualdad pide a Fiscalía actuar contra Figaredo (Vox) por sus declaraciones alentando a \"cazar\" migrantes en Ceuta",
-          "source": "lasexta.com",
-          "url": "https://www.lasexta.com/noticias/nacional/igualdad-pide-fiscalia-actuar-figaredo-vox-sus-declaraciones-alentando-cazar-migrantes-ceuta_202608116a7af8f671b42a0b5de94a3f.html",
-          "date": "2026-08-11T10:27:02+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Igualdad lleva ante la Fiscalía a Figaredo (Vox) por hablar de la «invasión» de Ceuta: «Equipara a personas...",
-          "source": "OkDiario",
-          "url": "https://okdiario.com/espana/igualdad-lleva-fiscalia-figaredo-vox-hablar-invasion-ceuta-equipara-personas-presas-19161198",
-          "date": "2026-08-11T10:17:38+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox suma dos denuncias por querer \"cazar\" a los inmigrantes en Ceuta",
-          "source": "La Razón",
-          "url": "https://www.larazon.es/espana/vox-suma-dos-denuncias-querer-cazar-inmigrantes-ceuta_202608116a7af181a5690f047373d1d3.html",
-          "date": "2026-08-11T09:55:13+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Igualdad lleva ante la Fiscalía al diputado de Vox José María Figaredo por su llamada a \"cazar\" migrantes en Ceuta",
-          "source": "elDiario.es",
-          "url": "https://www.eldiario.es/politica/igualdad-lleva-fiscalia-diputado-vox-jose-maria-figaredo-llamada-cazar-migrantes-ceuta_1_13440093.html",
-          "date": "2026-08-11T09:51:37+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "VOX sigue creciendo en Málaga y roza casi los 3.000 afiliados en la provincia",
-          "source": "alsoldelacosta.com",
-          "url": "https://alsoldelacosta.com/vox-sigue-creciendo-en-malaga-y-roza-casi-los-3-000-afiliados-en-la-provincia/",
-          "date": "2026-08-11T09:33:46+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "La Casa Rosada busca acuerdos con los gobernadores para destrabar los proyectos que impulsa en el Senado",
-          "source": "TN",
-          "url": "https://tn.com.ar/politica/2026/08/11/el-gobierno-busca-acuerdos-con-los-gobernadores-para-destrabar-los-proyectos-que-impulsa-en-el-senado/",
-          "date": "2026-08-11T09:00:00+00:00",
-          "category": "argentina"
+          "title": "A new report contradicts public statements from the White House on Air Force One",
+          "source": "NPR",
+          "url": "https://www.npr.org/2026/08/11/g-s1-138233/white-house-air-force-one-report",
+          "date": "2026-08-11T15:27:14+00:00",
+          "category": "usa"
         }
       ],
-      "first_seen": "2026-08-11T13:53:38+00:00",
-      "last_seen": "2026-08-11T13:53:38+00:00"
+      "first_seen": "2026-08-12T03:05:19+00:00",
+      "last_seen": "2026-08-12T03:05:19+00:00"
     },
     {
       "id": "afds-surge-in-german-state-elections",
       "title": "AfD’s surge in German state elections",
-      "blurb": "The AfD continues to lead polls in Saxony-Anhalt and other German states, with its top candidate Ulrich Siegmund positioning the party as a viable alternative to mainstream conservatives. The party’s anti-immigration stance and promises of fiscal reform have resonated amid economic uncertainty.",
-      "affect": "This commands attention due to its high affective investment in Germany’s political future, with mainstream parties scrambling to counter the AfD’s rise through unprecedented coalitions.",
+      "blurb": "The Alternative für Deutschland (AfD) is leading polls in Saxony-Anhalt and Mecklenburg-Vorpommern, with potential to form the first far-right-led state government in post-war Germany. This development has sparked intense debates about the rise of far-right politics in Europe and its implications for democratic institutions.",
+      "affect": "The AfD’s electoral success is highly charged due to fears of democratic backsliding, historical parallels, and the party’s controversial policies on immigration and nationalism.",
       "intensity": 4,
       "affect_signals": [
+        "moral panic register",
+        "polarized contention",
         "alarmist framing",
         "cross-source repetition",
-        "polarized contention",
-        "leadership crisis tone",
-        "moral panic register"
+        "leadership crisis tone"
       ],
       "categories": [
         "🇩🇪 Alternative für Deutschland"
       ],
-      "article_count": 35,
+      "article_count": 45,
       "refs": [
         {
-          "title": "Personalmangel: AfD muss Nordkreis-Kandidaten durch den gesamten Landkreis Osnabrück schicken",
-          "source": "noz.de",
-          "url": "https://www.noz.de/lokales/region-osnabrueck/artikel/personalmangel-afd-muss-nordkreis-kandidaten-durch-den-gesamten-landkreis-osnabrueck-schicken-50854252",
-          "date": "2026-08-11T13:00:00+00:00",
+          "title": "Sachsen-Anhalt: BSW könnte AfD-Ministerpräsident ermöglichen",
+          "source": "ZDFheute",
+          "url": "https://www.zdfheute.de/politik/deutschland/sachsen-anhalt-landtagswahl-wagenknecht-bsw-afd-ministerpraesident-100.html",
+          "date": "2026-08-12T00:47:35+00:00",
           "category": "germany"
         },
         {
-          "title": "AfD vor den Wahlen: Stuss als Erfolgsrezept - nd-aktuell.de",
-          "source": "",
-          "url": "https://www.nd-aktuell.de/artikel/1201727.landtagswahlen-afd-vor-den-wahlen-stuss-als-erfolgsrezept.html",
-          "date": "2026-08-11T12:52:48+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Über 100-AfD-Mitglieder können Waffen verlieren - T-Online",
-          "source": "",
-          "url": "https://www.t-online.de/nachrichten/deutschland/parteien/id_101384246/afd-sachsen-anhalt-ueber-100-parteimitglieder-koennen-waffen-verlieren.html",
-          "date": "2026-08-11T12:51:39+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "AfD bei 28 Prozent, Merz auf Zustimmungstief",
-          "source": "Hasepost",
-          "url": "https://hasepost.de/afd-bei-28-prozent-merz-auf-zustimmungstief-741972/",
-          "date": "2026-08-11T12:32:04+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "21,7 Milliarden Euro Bürgergeld an Ausländer: Was hinter Siegmunds heftigem Vorwurf steckt",
-          "source": "Gießener Allgemeine",
-          "url": "https://www.giessener-allgemeine.de/politik/afd-21-milliarden-euro-buergergeld-an-auslaender-was-ist-dran-zr-94438529.html",
-          "date": "2026-08-11T12:27:24+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "„Wertloser“ BWL-Bachelor von Ulrich Siegmund: Die Häme hat die Seiten gewechselt",
-          "source": "der Freitag",
-          "url": "https://www.freitag.de/autoren/kallemorsa/wertloser-bwl-bachelor-von-ulrich-siegmund-die-haeme-hat-die-seiten-gewechselt",
-          "date": "2026-08-11T12:20:00+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Forsa: AfD bleibt auf Rekordkurs – Merz auf Allzeit-Tief",
-          "source": "Oldenburger Onlinezeitung",
-          "url": "https://www.oldenburger-onlinezeitung.de/nachrichten/forsa-afd-bleibt-auf-rekordkurs-merz-auf-allzeit-tief-222100.html",
-          "date": "2026-08-11T12:11:00+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Merz Ansehen fällt auf Rekordtief, Vertrauen in alle Parteien am Boden - n-tv.de",
-          "source": "",
-          "url": "https://www.n-tv.de/politik/RTL-ntv-Trendbarometer-Die-AfD-bleibt-mit-Abstand-staerkste-Kraft-Kanzler-Merz-stuerzt-weiter-ab-id31180694.html",
-          "date": "2026-08-11T12:05:10+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Salvini contestato al concerto per De André in Sardegna",
-          "source": "Sky TG24",
-          "url": "https://tg24.sky.it/cronaca/video/2026/08/11/salvini-contestato-concerto-de-andre-1117207",
-          "date": "2026-08-11T11:53:40+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Mehr als 100 AfD-Mitglieder könnten Waffen verlieren",
-          "source": "WELT",
-          "url": "https://www.welt.de/regionales/sachsen-anhalt/article6a7b098567ddb2e13c5840ca/mehr-als-100-afd-mitglieder-koennten-waffen-verlieren.html",
-          "date": "2026-08-11T11:38:45+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Bündnis gegen die AfD: Bodo Ramelow fordert CDU und Linke in Sachsen-Anhalt zur Zusammenarbeit auf",
-          "source": "weltwoche.ch",
-          "url": "https://weltwoche.ch/daily/buendnis-gegen-die-afd-bodo-ramelow-fordert-cdu-und-linke-in-sachsen-anhalt-zur-zusammenarbeit-auf/",
-          "date": "2026-08-11T11:28:02+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Mitteldeutscher Rundfunk gibt AfD-Spitzenkandidat Ulrich Siegmund bei Bürgergeld-Rechnung recht – Ministerien widersprechen",
-          "source": "weltwoche.ch",
-          "url": "https://weltwoche.ch/daily/mitteldeutscher-rundfunk-gibt-afd-spitzenkandidat-ulrich-siegmund-bei-buergergeld-rechnung-recht-ministerien-widersprechen/",
-          "date": "2026-08-11T11:10:01+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "AfD-Hammer in Deutschland wird wahrscheinlicher: Umfrage-Debakel ohne Ende für CDU und SPD",
-          "source": "Nordkurier",
-          "url": "https://www.nordkurier.de/politik/afd-hammer-in-deutschland-wird-wahrscheinlicher-umfrage-debakel-ohne-ende-fuer-cdu-und-spd-4775987",
-          "date": "2026-08-11T11:10:00+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Umfragehoch der AfD in Sachsen-Anhalt Ramelow wirbt für Zusammenarbeit von CDU und Linken",
-          "source": "Tagesspiegel",
-          "url": "https://www.tagesspiegel.de/politik/umfragehoch-der-afd-in-sachsen-anhalt-ramelow-wirbt-fur-zusammenarbeit-von-cdu-und-linken-15933745.html",
-          "date": "2026-08-11T10:58:43+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "AfD-Chaos in NRW: Vorwürfe von Korruption und Bestechung kurz vor Ost-Wahlen",
-          "source": "NZZ – Neue Zürcher Zeitung",
-          "url": "https://www.nzz.ch/deutschland/politik/der-machtkampf-der-afd-in-nordrhein-westfalen-koennte-zum-problem-fuer-die-bundespartei-werden-ld.10019018",
-          "date": "2026-08-11T10:38:26+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Insa-Umfrage: AfD jetzt acht Punkte vor Union – SPD-Politikerin steigt auf Platz 4 ein, Reichinnek rutscht ab - Video",
-          "source": "WELT",
-          "url": "https://www.welt.de/politik/video6a7af6e267ddb2e13c583f1f/insa-umfrage-afd-jetzt-acht-punkte-vor-union-spd-politikerin-steigt-auf-platz-4-ein-reichinnek-rutscht-ab.html",
-          "date": "2026-08-11T10:25:25+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Hier hat AfD-Spitzenkandidat Siegmund die Unwahrheit erzählt - T-Online",
-          "source": "",
-          "url": "https://www.t-online.de/nachrichten/deutschland/parteien/id_101383594/ulrich-siegmund-im-mdr-so-wahr-sind-die-aussagen-des-afd-manns.html",
-          "date": "2026-08-11T10:03:40+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "INSA-Umfrage: Union verliert - AfD legt zu - EU-Schwerbehinderung",
-          "source": "",
-          "url": "https://www.eu-schwerbehinderung.eu/index.php/33-aktuelles/35569-insa-umfrage-union-verliert-afd-legt-zu",
-          "date": "2026-08-11T09:36:19+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Landtagswahl 2026: Baseballschlägerjahre und Ärzte-Flucht – Ulrich Siegmund im Faktencheck",
-          "source": "MDR.de",
-          "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/interview-faktencheck-104,ulrich-siegmund-afd-136.html",
-          "date": "2026-08-11T09:19:00+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "AfD Sachsen-Anhalt: Waffenverbote für Mitglieder bestätigt",
+          "title": "Sachsen-Anhalt: BSW will notfalls AfD-Ministerpräsidenten zulassen",
           "source": "FAZ",
-          "url": "https://www.faz.net/premium/einspruch/exklusiv/afd-sachsen-anhalt-waffenverbote-fuer-mitglieder-bestaetigt-accg-201114356.html",
-          "date": "2026-08-11T08:29:05+00:00",
+          "url": "https://www.faz.net/aktuell/politik/inland/sachsen-anhalt-bsw-will-notfalls-afd-ministerpraesidenten-zulassen-201117040.html",
+          "date": "2026-08-11T23:51:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "BSW für AfD-Einbindung nach Landtagswahl in Sachsen-Anhalt - giessener-allgemeine.de",
+          "source": "",
+          "url": "https://www.giessener-allgemeine.de/politik/bsw-fuer-afd-einbindung-nach-landtagswahl-in-sachsen-anhalt-zr-94439363.html",
+          "date": "2026-08-11T22:02:36+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Landtagswahl im September: Wird das BSW in Sachsen-Anhalt zum Türöffner für die AfD?",
+          "source": "RP Online",
+          "url": "https://rp-online.de/politik/deutschland/bsw-als-afd-tueroeffner-spitzenkandidaten-wollen-abwahl-der-cdu_aid-152943935",
+          "date": "2026-08-11T19:30:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "AfD-Hammer in Deutschland ist wahrscheinlicher: Umfrage-Debakel ohne Ende für CDU und SPD",
+          "source": "Nordkurier",
+          "url": "https://www.nordkurier.de/politik/afd-hammer-in-deutschland-ist-wahrscheinlicher-umfrage-debakel-ohne-ende-fuer-cdu-und-spd-4775987",
+          "date": "2026-08-11T18:25:00+00:00",
           "category": "germany"
         }
       ],
       "first_seen": "2026-08-09T13:31:25+00:00",
-      "last_seen": "2026-08-11T13:53:38+00:00"
+      "last_seen": "2026-08-12T03:05:19+00:00"
     },
     {
       "id": "trumps-vaccine-order-sparks-medical-backlash",
       "title": "Trump’s vaccine order sparks medical backlash",
-      "blurb": "Donald Trump’s executive order reducing recommended childhood vaccines and splitting the MMR shot has drawn sharp criticism from medical experts, who warn of public health risks. The move aligns with MAGA-aligned skepticism of scientific consensus and has reignited debates over vaccine mandates.",
-      "affect": "This commands attention due to its high affective charge, with Trump’s order framed as a direct attack on public health norms and scientific authority.",
+      "blurb": "President Trump issued an executive order reducing the number of recommended childhood vaccines and splitting the MMR vaccine into three separate doses. The move has drawn sharp criticism from medical professionals, who argue it undermines public health and could lead to outbreaks of preventable diseases.",
+      "affect": "The order is highly charged due to its potential impact on public health, the use of executive power to override scientific consensus, and the polarized debate over vaccine mandates.",
       "intensity": 4,
       "affect_signals": [
         "outrage-coded language",
-        "alarmist framing",
-        "cross-source repetition",
         "moral panic register",
-        "polarized contention"
+        "cross-source repetition",
+        "polarized contention",
+        "public health crisis tone"
       ],
       "categories": [
         "🇺🇸 MAGA / Trump"
@@ -516,310 +137,157 @@
       "article_count": 30,
       "refs": [
         {
-          "title": "‘If He Is Gone’—Donald Trump Fires Warning at Power Bloc Moving Against FIFA’s Gianni Infantino",
-          "source": "Sports Illustrated",
-          "url": "https://www.si.com/soccer/donald-trump-warning-power-bloc-moving-against-fifa-gianni-infantino",
-          "date": "2026-08-11T13:00:02+00:00",
+          "title": "Confusion over Trump's vaccine executive order: What Colorado parents and health experts need to know",
+          "source": "Denver7",
+          "url": "https://www.denver7.com/lifestyle/health/confusion-over-trumps-vaccine-executive-order-what-colorado-parents-and-health-experts-need-to-know",
+          "date": "2026-08-11T23:20:48+00:00",
           "category": "usa"
         },
         {
-          "title": "Netanyahu’s New Likud Pick Apologizes for Attack on President Trump",
-          "source": "The Media Line",
-          "url": "https://themedialine.org/headlines/netanyahus-new-likud-pick-apologizes-for-attack-on-president-trump/",
-          "date": "2026-08-11T12:48:14+00:00",
+          "title": "Local pediatrician weighs in following President Trump's executive order on childhood vaccines",
+          "source": "6abc Philadelphia",
+          "url": "https://6abc.com/post/local-pediatrician-weighs-following-president-trumps-executive-order-childhood-vaccines/19663225/",
+          "date": "2026-08-11T21:00:00+00:00",
           "category": "usa"
         },
         {
-          "title": "More than 175,000 visas revoked by State Department for violations, crimes",
-          "source": "Baltimore Sun",
-          "url": "https://www.baltimoresun.com/2026/08/11/more-than-175000-visas-revoked-by-state-department-for-violations-crimes/",
-          "date": "2026-08-11T12:45:39+00:00",
+          "title": "New Bern parents react to Trump order calling for separate childhood vaccines",
+          "source": "WITN",
+          "url": "https://www.witn.com/2026/08/11/new-bern-parents-react-trump-order-calling-separate-childhood-vaccines/",
+          "date": "2026-08-11T19:56:00+00:00",
           "category": "usa"
         },
         {
-          "title": "President Trump demands reparations from Iran for decades of 'damage'",
-          "source": "CNBC",
-          "url": "https://www.cnbc.com/video/2026/08/11/u-s-president-trump-demands-reparations-from-iran-for-decades-of-damage.html",
-          "date": "2026-08-11T12:21:48+00:00",
+          "title": "What effect will Donald Trump’s childhood vaccine recommendations have in the US and beyond?",
+          "source": "The Guardian",
+          "url": "https://www.theguardian.com/society/2026/aug/11/what-effect-will-donald-trumps-childhood-vaccine-recommendations-have-in-the-us-and-beyond",
+          "date": "2026-08-11T17:15:00+00:00",
           "category": "usa"
         },
         {
-          "title": "When MAGA met FIFA: Inside Trump’s cosy relationship with Gianni Infantino",
-          "source": "Yahoo Sports",
-          "url": "https://sports.yahoo.com/articles/maga-met-fifa-inside-trump-121016028.html",
-          "date": "2026-08-11T12:10:16+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Salvini contestato al concerto per De André in Sardegna",
-          "source": "Sky TG24",
-          "url": "https://tg24.sky.it/cronaca/video/2026/08/11/salvini-contestato-concerto-de-andre-1117207",
-          "date": "2026-08-11T11:53:40+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Implications of President Trump's newest order on birthright citizenship",
-          "source": "news4jax.com",
-          "url": "https://www.news4jax.com/video/news/politics/2026/08/11/implications-of-president-trump-s-newest-order-on-birthright-citizenship/",
-          "date": "2026-08-11T11:45:25+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Wyciek nagrań z przesłuchania prezesa PiS. Prokuratura wszczyna śledztwo",
-          "source": "Wiadomości Onet",
-          "url": "https://wiadomosci.onet.pl/kraj/wyciek-nagran-z-przesluchania-prezesa-pis-prokuratura-wszczyna-sledztwo/30cvl7k",
-          "date": "2026-08-11T11:13:58+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Nigel Farage Slaps Down Zia Yusuf For Calling Ex-Tory Defence Secretary 'A Traitor'",
-          "source": "Yahoo News New Zealand",
-          "url": "https://nz.news.yahoo.com/nigel-farage-slaps-down-zia-105846966.html",
-          "date": "2026-08-11T10:58:46+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "FILE PHOTO: U.S. President Trump delivers remarks at Custer Farms in Chippewa Falls",
-          "source": "The Daily News | Texas' Oldest Newspaper",
-          "url": "https://www.galvnews.com/news_reuters/politics/file-photo-u-s-president-trump-delivers-remarks-at-custer-farms-in-chippewa-falls/image_5886eb10-0644-56a2-81ea-9157805380ea.html?block_id=531919",
-          "date": "2026-08-11T10:58:03+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Jordan Bardella: \"On veut que les entreprises françaises aient un avantage très clair dans la commande publique\"",
-          "source": "actu.orange.fr",
-          "url": "https://actu.orange.fr/videos/politique/jordan-bardella-on-veut-que-les-entreprises-francaises-aient-un-avantage-tres-clair-dans-la-commande-publique-CNT000002rcFTI.html?pid=",
-          "date": "2026-08-11T10:46:29+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Americans Are Divided Within Party Lines Too",
-          "source": "Navigator Research",
-          "url": "https://navigatorresearch.org/americans-are-divided-within-party-lines-too/",
-          "date": "2026-08-11T10:24:48+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Donald Trump secret Turkey flight: US President Trump hide inside catering truck for secret plane swap over Iran threat",
-          "source": "BBC",
-          "url": "https://www.bbc.com/pidgin/articles/c0ej75871nro",
-          "date": "2026-08-11T09:42:43+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Donald Trump took secret flight out of Turkey over Iran threat, the Washington Post reports",
-          "source": "crossroadstoday.com",
-          "url": "https://www.crossroadstoday.com/news/shareable-stories/donald-trump-took-secret-flight-out-of-turkey-over-iran-threat-the-washington-post-reports/video_1559450c-bbca-5e2b-857e-a757ce648e13.html",
-          "date": "2026-08-11T09:30:52+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Bicentenario di Silvestro Lega, continua la polemica: Cheli (Modigliana Attivazione) incalza l'Accademia degli Incamminati",
-          "source": "ForlìToday",
-          "url": "https://www.forlitoday.it/politica/bicentenario-di-silvestro-lega-continua-la-polemica-cheli-modigliana-attivazione-incalza-l-accademia-degli-incamminati.html",
-          "date": "2026-08-11T09:16:11+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Donald Trump signs order reducing recommended childhood vaccines",
-          "source": "France 24",
-          "url": "https://www.france24.com/en/donald-trump-signs-order-reducing-recommended-childhood-vaccines",
-          "date": "2026-08-11T08:38:02+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Donald Trump warns ditching Gianni Infantino would be ‘terrible mistake’",
-          "source": "Financial Times",
-          "url": "https://www.ft.com/content/a2dadec1-173f-40a9-89c0-2cf83f78de2a?syn-25a6b1a6=1",
-          "date": "2026-08-11T08:21:15+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Iranian threat to assassinate Donald Trump prompts secret plane switch in Turkey",
-          "source": "The Jerusalem Post",
-          "url": "https://www.jpost.com/international/article-905124",
-          "date": "2026-08-11T07:56:14+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "President Trump Secretly Switched Planes in Turkey Over Iranian Assassination Threat",
-          "source": "The Media Line",
-          "url": "https://themedialine.org/headlines/president-trump-secretly-switched-planes-in-turkey-over-iranian-assassination-threat/",
-          "date": "2026-08-11T07:42:59+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Donald Trump says replacing Gianni Infantino would be a ‘terrible mistake’",
-          "source": "Al Jazeera",
-          "url": "https://www.aljazeera.com/sports/2026/8/11/donald-trump-says-replacing-gianni-infantino-would-be-a-terrible-mistake",
-          "date": "2026-08-11T07:18:45+00:00",
+          "title": "Trump Administration Bypasses Science Again, Doubles Down on Restrictions to Childhood Vaccines",
+          "source": "Families USA",
+          "url": "https://www.familiesusa.org/press-releases/trump-administration-bypasses-science-again-doubles-down-on-restrictions-to-childhood-vaccines/",
+          "date": "2026-08-11T13:33:18+00:00",
           "category": "usa"
         }
       ],
       "first_seen": "2026-08-11T02:35:32+00:00",
-      "last_seen": "2026-08-11T13:53:38+00:00"
+      "last_seen": "2026-08-12T03:05:19+00:00"
     },
     {
-      "id": "pis-split-deepens-as-morawiecki-launches-rival-party",
-      "title": "PiS split deepens as Morawiecki launches rival party",
-      "blurb": "The defection of key PiS members to Mateusz Morawiecki’s new party, Rozwój Plus, has fractured Poland’s ruling right-wing coalition. The split threatens to dilute PiS’s electoral strength ahead of the 2027 elections, with polls showing potential losses for the united right.",
-      "affect": "This commands attention due to its high-stakes intra-party feud, with the ruling coalition’s future hanging in the balance and Morawiecki positioning himself as a kingmaker.",
+      "id": "mileis-crisis-deepens-amid-corruption-scandals",
+      "title": "Milei’s crisis deepens amid corruption scandals",
+      "blurb": "Argentinian President Javier Milei faces mounting criticism over corruption allegations involving his inner circle, including former Chief of Staff Manuel Adorni. The scandals have led to resignations, judicial investigations, and growing public discontent with Milei’s libertarian policies.",
+      "affect": "The scandals are highly charged due to their implications for Argentina’s economic stability, the erosion of public trust in government, and the moral failings of Milei’s administration.",
+      "intensity": 4,
+      "affect_signals": [
+        "outrage-coded language",
+        "cross-source repetition",
+        "leadership crisis tone",
+        "moral panic register",
+        "polarized contention"
+      ],
+      "categories": [
+        "🇦🇷 La Libertad Avanza"
+      ],
+      "article_count": 40,
+      "refs": [
+        {
+          "title": "La CAÍDA de la Ley DESTRUYÓ al Gobierno y no se salva nadie: KARINA MILEI CONTRA TODOS",
+          "source": "El Destape",
+          "url": "https://www.eldestapeweb.com/multimedia/NUYu2an2mEM/-la-caida-de-la-ley-destruyo-al-gobierno-y-no-se-salva-nadie-karina-milei-contra-todos",
+          "date": "2026-08-12T01:09:23+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "“Han influido en sus haceres”: Leila Gianni apuntó contra el entorno de Javier Milei",
+          "source": "El Intransigente",
+          "url": "https://elintransigente.com/2026/08/han-influido-en-sus-haceres-leila-gianni-apunto-contra-el-entorno-de-javier-milei/",
+          "date": "2026-08-12T00:56:15+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Manuel Adorni en la mira de la Justicia: los detalles de los millonarios gastos en efectivo y dólares",
+          "source": "Lmneuquen.com",
+          "url": "https://www.lmneuquen.com/pais/manuel-adorni-la-mira-la-justicia-los-detalles-los-millonarios-gastos-efectivo-y-dolares-n1249374",
+          "date": "2026-08-12T00:54:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Lander girl representing Wyoming at President Trump’s Patriot Games youth competition",
+          "source": "Cap City News",
+          "url": "https://capcity.news/wyoming/2026/08/11/lander-girl-representing-wyoming-at-president-trumps-patriot-games-youth-competition/",
+          "date": "2026-08-11T22:34:24+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Gastos en efectivo, propiedades y viajes al exterior: el informe que complica a Manuel Adorni por la evolución de su patrimonio",
+          "source": "Radio Mitre",
+          "url": "https://radiomitre.cienradios.com/politica/gastos-en-efectivo-propiedades-y-viajes-al-exterior-el-informe-que-complica-a-manuel-adorni-por-la-evolucion-de-su-patrimonio/",
+          "date": "2026-08-11T18:21:50+00:00",
+          "category": "argentina"
+        }
+      ],
+      "first_seen": "2026-08-12T03:05:19+00:00",
+      "last_seen": "2026-08-12T03:05:19+00:00"
+    },
+    {
+      "id": "salvinis-internal-lega-revolt",
+      "title": "Salvini’s internal Lega revolt",
+      "blurb": "Matteo Salvini, leader of Italy’s Lega party, faces growing internal dissent and calls for his resignation from regional leaders. The revolt comes amid declining poll numbers, coalition tensions with Fratelli d’Italia, and controversies over Salvini’s leadership style and policy decisions.",
+      "affect": "The internal strife is highly charged due to Salvini’s declining influence, the potential collapse of the Lega, and the broader implications for Italy’s right-wing coalition government.",
       "intensity": 3,
       "affect_signals": [
         "leadership crisis tone",
         "polarized contention",
         "cross-source repetition",
         "outrage-coded language",
-        "moral panic register"
+        "intra-party feud framing"
       ],
       "categories": [
-        "🇵🇱 Prawo i Sprawiedliwość"
+        "🇮🇹 Fratelli d'Italia / Lega"
       ],
-      "article_count": 25,
+      "article_count": 35,
       "refs": [
         {
-          "title": "Rozłam na prawicy. Kto odchodzi z PiS do Morawieckiego? Ustalenia mediów",
-          "source": "Polityka Super Express",
-          "url": "https://polityka.se.pl/wiadomosci/rozlam-na-prawicy-kto-odchodzi-z-pis-do-morawieckiego-ustalenia-mediow-aa-tkMS-S9AQ-gpcD.html",
-          "date": "2026-08-11T12:52:00+00:00",
-          "category": "poland"
+          "title": "Salvini e De André, i 'suoceri' trevigiani della nipote di Faber sulla polemica social: «Alice? Brava, non parla mai a vanvera»",
+          "source": "Il Gazzettino",
+          "url": "https://www.ilgazzettino.it/nordest/treviso/salvini_de_andre_polemica_social_alice_suoceri_brava_cos_e_successo-9702775.html",
+          "date": "2026-08-11T23:25:07+00:00",
+          "category": "italy"
         },
         {
-          "title": "Kaczyński o aferze z pomocą po powodzi: „Nie mają grama przyzwoitości”",
-          "source": "Newsmax Polska",
-          "url": "https://newsmaxpolska.pl/kraj/aktualnosci/63778/jaroslaw-kaczynski-ostro-o-aferze-z-pomoca-powodziowa/news",
-          "date": "2026-08-11T12:52:00+00:00",
-          "category": "poland"
+          "title": "Salvini sotto il fuoco incrociato dei «dissidenti» e di Vannacci",
+          "source": "il manifesto",
+          "url": "https://ilmanifesto.it/salvini-sotto-il-fuoco-incrociato-dei-dissidenti-e-di-vannacci",
+          "date": "2026-08-11T22:07:09+00:00",
+          "category": "italy"
         },
         {
-          "title": "PiS ruszył z kontrolami. Chodzi o ceny paliw i Orlen",
-          "source": "Interia Motoryzacja",
-          "url": "https://motoryzacja.interia.pl/wiadomosci/news-pis-ruszyl-z-kontrolami-chodzi-o-ceny-paliw-i-orlen,nId,23527627",
-          "date": "2026-08-11T12:36:47+00:00",
-          "category": "poland"
+          "title": "Siv Jensen er imot Frps drivstoffpolitikk",
+          "source": "Nettavisen",
+          "url": "https://www.nettavisen.no/nyheter/siv-jensen-er-imot-frps-drivstoffpolitikk/s/5-95-3191850",
+          "date": "2026-08-11T20:28:57+00:00",
+          "category": "norway"
         },
         {
-          "title": "Prokuratura zbada wyciek nagrania z przesłuchania Kaczyńskiego ws. dwóch wież",
-          "source": "Rzeczpospolita",
-          "url": "https://www.rp.pl/prawo-karne/art44973641-przesluchanie-jaroslawa-kaczynskiego-ws-dwoch-wiez-jest-sledztwo-dot-publikacji-nagrania",
-          "date": "2026-08-11T12:11:00+00:00",
-          "category": "poland"
+          "title": "Nella Lega sfida lombarda a Salvini ma leader dice no a passo indietro",
+          "source": "Askanews",
+          "url": "https://askanews.it/2026/08/11/nella-lega-sfida-lombarda-a-salvini-ma-leader-dice-no-a-passo-indietro/",
+          "date": "2026-08-11T16:09:15+00:00",
+          "category": "italy"
         },
         {
-          "title": "Prawica „puchnie” w sondażach. Morawiecki odbiera tlen Konfederacji i Polsce 2050",
-          "source": "Rzeczpospolita",
-          "url": "https://www.rp.pl/komentarze/art44973471-boguslaw-chrabota-po-secesji-morawieckiego-prawica-puchnie-w-sondazach-a-polska-2050-znika-jak-sen-zloty",
-          "date": "2026-08-11T12:07:25+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Rajya Sabha passes Tribunals Reforms Bill 2026; National commission to select tribunal heads",
-          "source": "morungexpress.com",
-          "url": "https://morungexpress.com/rajya-sabha-passes-tribunals-reforms-bill-2026-national-commission-to-select-tribunal-heads",
-          "date": "2026-08-11T11:56:23+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "PiS chce paktu senackiego. Liczy na pomoc prezydenta",
-          "source": "RadioMaryja.pl",
-          "url": "https://www.radiomaryja.pl/informacje/pis-chce-paktu-senackiego-liczy-na-pomoc-prezydenta/",
-          "date": "2026-08-11T11:52:12+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Wspólna lista prawicy pod sztandarem Nawrockiego? „To byłoby znakomite”",
-          "source": "rmf24.pl",
-          "url": "https://www.rmf24.pl/fakty/polityka/news-wspolna-lista-prawicy-pod-sztandarem-nawrockiego-to-byloby-z,nIdn,1013296",
-          "date": "2026-08-11T11:50:00+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "PIS skontrolowała ponad 30 tys. placówek medycznych. Co trzeci szpital z uchybieniami",
-          "source": "Alert Medyczny",
-          "url": "https://alertmedyczny.pl/pis-skontrolowala-ponad-30-tys-placowek-medycznych-co-trzeci-szpital-z-uchybieniami/",
-          "date": "2026-08-11T11:28:00+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "\"Dwóch pracowników złożyło wypowiedzenia\". Rozwój Plus \"łowi\" w PiS, nowe doniesienia",
-          "source": "Interia Wydarzenia",
-          "url": "https://wydarzenia.interia.pl/kraj/news-nowe-odejscia-z-pis-przejda-do-rozwoju-plus-media-zlozyli-wy,nId,23527566",
-          "date": "2026-08-11T11:24:31+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Wyciek nagrań z przesłuchania prezesa PiS. Prokuratura wszczyna śledztwo",
-          "source": "Wiadomości Onet",
-          "url": "https://wiadomosci.onet.pl/kraj/wyciek-nagran-z-przesluchania-prezesa-pis-prokuratura-wszczyna-sledztwo/30cvl7k",
-          "date": "2026-08-11T11:13:58+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Megszólalt Magyar Péter: meglepő helyszínen tartják a holnapi kormányülést",
-          "source": "Portfolio.hu",
-          "url": "https://www.portfolio.hu/gazdasag/20260811/megszolalt-magyar-peter-meglepo-helyszinen-tartjak-a-holnapi-kormanyulest-855538",
-          "date": "2026-08-11T11:03:00+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "‘Terrible mistake’: Donald Trump issues a warning to soccer community",
-          "source": "Yahoo Sports",
-          "url": "https://sports.yahoo.com/articles/terrible-mistake-donald-trump-issues-105042528.html",
-          "date": "2026-08-11T10:50:42+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Rozpad kluczowego biura PiS. \"Morawiecki podbiera nam pracowników\"",
-          "source": "Newsweek",
-          "url": "https://www.newsweek.pl/polska/polityka/biuro-prasowe-pis-w-sejmie-sie-rozpadlo-to-wtorny-wstrzas-po-rozlamie-w-partii/jwxgr83",
-          "date": "2026-08-11T10:38:32+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Kolejne transfery z PiS do stowarzyszenia Rozwój Plus",
-          "source": "Gazeta",
-          "url": "https://wiadomosci.gazeta.pl/polityka/7,198012,32962010,kolejne-transfery-z-pis-do-stowarzyszenia-rozwoj-plus.html",
-          "date": "2026-08-11T10:37:00+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Media: kolejne osoby odchodzą z PiS. Mają trafić do ekipy Morawieckiego",
-          "source": "Fakt",
-          "url": "https://www.fakt.pl/polityka/rozlam-pis-wp-kolejne-osoby-odchodza-do-stowarzyszenia-mateusza-morawieckiego/blxxblr",
-          "date": "2026-08-11T10:23:19+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Kolejne odejścia z PiS. Pracownicy biura przechodzą do ludzi Morawieckiego",
-          "source": "Do Rzeczy",
-          "url": "https://dorzeczy.pl/kraj/927388/kolejne-odejscia-z-pis-pracownicy-biura-przechodza-do-ludzi-morawieckiego.html",
-          "date": "2026-08-11T09:56:00+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Afera powodziowa w KO, PiS składa wniosek. \"Folwark pańszczyźniany\"",
-          "source": "wydarzenia.interia.pl",
-          "url": "https://wydarzenia.interia.pl/kraj/news-pis-w-ofensywie-jest-wniosek-do-cba-chodzi-o-afere-powodziow,nId,23527510",
-          "date": "2026-08-11T09:30:22+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Magyar Péter taktikát váltott: hallgatásba burkolózik Baka András jelölése ügyében",
-          "source": "Magyar Nemzet",
-          "url": "https://mno.hu/belfold/2026/08/magyar-peter-taktikat-valtott-hallgatasba-burkolozik-baka-andras-jelolese-ugyeben",
-          "date": "2026-08-11T09:13:14+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Odchodzą z PiS. Ludzie z biura prasowego partii przejdą do Rozwoju Plus Morawieckiego",
-          "source": "WP Wiadomości",
-          "url": "https://wiadomosci.wp.pl/odchodza-z-pis-ludzie-z-biura-prasowego-partii-przejda-do-rozwoju-plus-morawieckiego-7317246376814592a",
-          "date": "2026-08-11T08:49:01+00:00",
-          "category": "poland"
+          "title": "La Lega lombarda si ribella: Fontana e Romeo chiedono a Salvini di farsi da parte",
+          "source": "Il Fatto Quotidiano",
+          "url": "https://www.ilfattoquotidiano.it/2026/08/11/dissenso-lega-lombardia-salvini-passo-indietro-fontana-notizie/8476332/",
+          "date": "2026-08-11T14:36:32+00:00",
+          "category": "italy"
         }
       ],
-      "first_seen": "2026-08-11T13:53:38+00:00",
-      "last_seen": "2026-08-11T13:53:38+00:00"
+      "first_seen": "2026-08-12T03:05:19+00:00",
+      "last_seen": "2026-08-12T03:05:19+00:00"
     }
   ]
 }
