@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-14T14:06:27+00:00",
+  "updated_at": "2026-08-15T02:06:57+00:00",
   "lookback_hours": 48,
   "model": "Mistral Large",
   "status": "ok",
@@ -7,43 +7,78 @@
     {
       "id": "far-right-parties-exploit-migration-crises-for-political-gain",
       "title": "Far-right parties exploit migration crises for political gain",
-      "blurb": "Right-wing and far-right parties across Europe are leveraging migration crises to push for stricter border controls and anti-immigration policies. This theme is evident in Italy, Spain, and Hungary, where leaders like Giorgia Meloni, Santiago Abascal, and Péter Magyar are framing migration as a national security threat, often clashing with EU partners over border policies.",
+      "blurb": "Right-wing and far-right parties across Europe are leveraging the ongoing migration crisis in Ceuta and other border regions to push for stricter immigration policies and criticize mainstream governments. This theme is evident in Spain, Italy, and France, where parties like Vox, Fratelli d'Italia, and Rassemblement National are framing migration as a national security threat and demanding immediate action.",
       "convergence": 5,
       "countries": [
         {
           "name": "🇪🇸 Vox",
-          "note": "Vox demands stricter controls on migrant minors from Ceuta, accusing the government of treason and calling for a 'hygienic cordon' against the PSOE."
+          "note": "Demands immediate halt to migrant centers in Ceuta and criticizes Spain's government for failing to secure borders."
         },
         {
           "name": "🇮🇹 Fratelli d'Italia / Lega",
-          "note": "Meloni suspends Schengen with Spain over Ceuta crisis, prioritizes border security, and clashes with Germany over migrant repatriations."
-        },
-        {
-          "name": "🇭🇺 Fidesz / Tisza",
-          "note": "Magyar criticizes EU migration policies and frames Danube water management as a national security issue tied to energy independence."
-        },
-        {
-          "name": "🇳🇴 Fremskrittspartiet",
-          "note": "FrP highlights secondary immigration costs and opposes EU migration policies, using the issue to criticize the government."
+          "note": "Italian PM Meloni urges EU to strengthen borders, citing Ceuta crisis as a reason for temporary Schengen suspension."
         },
         {
           "name": "🇫🇷 Rassemblement National",
-          "note": "Le Pen demands a 'Marshall Plan' for firefighters and criticizes government handling of migration, linking it to national security."
+          "note": "Criticizes France's border policies and demands stronger measures to curb irregular migration."
+        },
+        {
+          "name": "🇪🇸 Vox",
+          "note": "Calls for a 'hygienic cordon' against PSOE over Ceuta crisis and threatens treason charges against Spain's PM."
+        },
+        {
+          "name": "🇮🇹 Fratelli d'Italia / Lega",
+          "note": "Meloni emphasizes border protection and criticizes Spain and Germany for migration policies."
         }
       ],
       "signals": [
         "shared framing",
         "policy imitation",
         "reaction to EU decision",
-        "contagion of rhetoric"
+        "coordinated messaging"
       ],
-      "article_count": 45,
+      "article_count": 50,
       "refs": [
         {
-          "title": "Abascal dice que, ante la crisis de Ceuta, \"es el momento\" de poner un \"cordón higiénico\" al PSOE",
-          "source": "Europa Press",
-          "url": "https://www.europapress.es/nacional/noticia-abascal-dice-crisis-ceuta-momento-poner-cordon-higienico-psoe-20260814143735.html",
-          "date": "2026-08-14T12:37:35+00:00",
+          "title": "¿El pacto ahora con Vox o el pacto solidario con Ceuta de 2024? La disyuntiva del Gobierno andaluz ante la crisis migratoria",
+          "source": "El Mundo",
+          "url": "https://www.elmundo.es/andalucia/2026/08/14/6a7eff01e4d4d88b488b45a5.html",
+          "date": "2026-08-14T20:44:40+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Ceuta: \"Nos frontières de l'Union européenne sont des frontières passoires\", estime Edwige Diaz, vice-présidente du Rassemblement national",
+          "source": "BFM",
+          "url": "https://www.bfmtv.com/international/video-ceuta-nos-frontieres-de-l-union-europeenne-sont-des-frontieres-passoires-estime-edwige-diaz-vice-presidente-du-rassemblement-national_VN-202608140497.html",
+          "date": "2026-08-14T19:17:33+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Meloni doubles down on her offensive against Spain over Ceuta and the Italian opposition accuses her of scoring an \"own goal\"",
+          "source": "El Constitucional",
+          "url": "https://www.elconstitucional.es/en/international/meloni-doubles-down-on-her-offensive-against-spain-over-ceuta-and-the-italian-opposition-accuses-her-of-scoring-an-own-goal_7112_102.html",
+          "date": "2026-08-14T17:53:45+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Abascal reparte carnés de \"decencia\" con la crisis de Ceuta y reclama al Partido Popular un \"cordón higiénico\" contra el PSOE",
+          "source": "El Constitucional",
+          "url": "https://www.elconstitucional.es/es/nacional/politica/abascal-reparte-carnes-decencia-con-crisis-ceuta-reclama-partido-popular-cordon-higienico-contra-psoe_7108_102.html",
+          "date": "2026-08-14T16:50:05+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Spain Media Highlights Morocco’s Security Boost at Ceuta Border Amid Anti-Moroccan Rhetoric",
+          "source": "Morocco World News",
+          "url": "https://www.moroccoworldnews.com/2026/08/334686/spain-media-highlights-moroccos-security-boost-at-ceuta-border-amid-anti-moroccan-rhetoric/",
+          "date": "2026-08-14T16:02:36+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Vox redobla la presión sobre el PP para imponer un \"cordón sanitario\" al PSOE por la crisis de Ceuta",
+          "source": "Elplural.com",
+          "url": "https://www.elplural.com/politica/espana/vox-redobla-presion-pp-imponer-cordon-sanitario-psoe-crisis-ceuta_398037102",
+          "date": "2026-08-14T13:38:00+00:00",
           "category": "spain"
         },
         {
@@ -54,94 +89,10 @@
           "category": "italy"
         },
         {
-          "title": "LLA mueve sus fichas en Provincia: Karina Milei inauguraró una sede y Santilli gana terreno como candidato",
-          "source": "Filo News",
-          "url": "https://www.filo.news/noticia/2026/08/14/lla-mueve-sus-fichas-en-provincia-karina-milei-inauguraro-una-sede-y-santilli-gana-terreno-como-candidato",
-          "date": "2026-08-14T12:07:59+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Már a NER is segít Pakson: Szijj László cége válaszolt Magyar Péter felszólítására",
-          "source": "privatbankar.hu",
-          "url": "https://privatbankar.hu/cikkek/kozerdeku/mar-a-ner-is-segit-pakson-szijj-laszlo-cege-valaszolt-magyar-peter-felszolitasara-.html",
-          "date": "2026-08-14T11:30:00+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Vox ve avalado su plante tras el veto del PP al debate sobre los menores de Ceuta",
-          "source": "moncloa.com",
-          "url": "https://www.moncloa.com/2026/08/14/pp-vox-menores-ceuta-2-3415302/",
-          "date": "2026-08-14T11:06:39+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Sondaż: Morawiecki podebrał głosy PiS-owi. Ale ledwo przekracza próg wyborczy",
-          "source": "Gazeta",
-          "url": "https://wiadomosci.gazeta.pl/polityka/7,198012,32968667,sondaz-morawiecki-podebral-glosy-pis-owi-ale-ledwo-przekracza.html",
-          "date": "2026-08-14T11:04:00+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Clacton results in full: Nigel Farage wins – but Count Binface sees record support",
-          "source": "The Independent",
-          "url": "https://www.independent.co.uk/news/uk/politics/clacton-by-election-result-in-full-farage-binface-turnout-votes-b3032333.html",
-          "date": "2026-08-14T10:59:00+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Najnowszy sondż partyjny. KO dystansuje PiS, słaby wynik PSL",
-          "source": "Farmer.pl",
-          "url": "https://www.farmer.pl/fakty/polska/najnowszy-sondz-partyjny-ko-dystansuje-pis-slaby-wynik-psl,181874.html",
-          "date": "2026-08-14T10:57:00+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Immigrazione, crisi energetica e nucleare: l'intervista di Giorgia Meloni a Milano Finanza",
-          "source": "Tgcom24",
-          "url": "https://www.tgcom24.mediaset.it/2026/video/immigrazione-crisi-energetica-e-nucleare-l-intervista-di-giorgia-meloni-a-milano-finanza_115444037-02k.shtml",
-          "date": "2026-08-14T10:56:00+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "TG4: Meloni: \"Possibile nuova ondata di arrivi a Ceuta, tuteliamo l'Italia\" Video",
-          "source": "Mediaset Infinity",
-          "url": "https://mediasetinfinity.mediaset.it/video/tg4/meloni-possibile-nuova-ondata-di-arrivi-a-ceuta-tuteliamo-litalia_F314232501451C01",
-          "date": "2026-08-14T10:41:30+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Parliamentary inquiry resumes after Reform UK leader wins by-election",
-          "source": "Anadolu Ajansı",
-          "url": "https://www.aa.com.tr/en/europe/parliamentary-inquiry-resumes-after-reform-uk-leader-wins-by-election/4027338",
-          "date": "2026-08-14T10:37:44+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Ceuta es España: Vox Navarra critica la gestión del Gobierno ante la crisis migratoria",
-          "source": "Navarra.com",
-          "url": "https://navarra.okdiario.com/blog/cartas-al-director/ceuta-es-espana/20260814121127656890.html",
-          "date": "2026-08-14T10:11:27+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox critica que solo se plantee el reparto de migrantes en vez de devolverlos a Marruecos",
-          "source": "Infobae",
-          "url": "https://www.infobae.com/espana/agencias/2026/08/14/vox-critica-que-solo-se-plantee-el-reparto-de-migrantes-en-vez-de-devolverlos-a-marruecos/",
-          "date": "2026-08-14T10:08:24+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Figaredo, de Vox, explica que habló de \"cazar\" migrantes como sinónimo de \"detener\" y acusa al Gobierno de “traidor”",
-          "source": "elDiario.es",
-          "url": "https://www.eldiario.es/politica/ultima-hora-actualidad-politica-directo_6_13446661_1124377.amp.html",
-          "date": "2026-08-14T09:59:04+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Figaredo (Vox) dice que habló de \"cazar\" migrantes como sinónimo de \"apresar\" y acusa al Gobierno de desviar la atención",
-          "source": "Teleprensa",
-          "url": "https://www.teleprensa.com/articulo/nacional-3/figaredo-vox-dice-que-hablo-cazar-migrantes-como-sinonimo-apresar-acusa-gobierno-desviar-atencion/202608140907342487321.amp.html",
-          "date": "2026-08-14T09:07:34+00:00",
+          "title": "Vox sobre el conflicto de Ceuta: \"La inmigación ilegal tiene consecuencias en Castellón y es normal que aparezcan pancartas\"",
+          "source": "El Periódico Mediterráneo",
+          "url": "https://www.elperiodicomediterraneo.com/castello/2026/08/14/vox-conflicto-ceuta-inmigacion-ilegal-castello-castellon-133358853.amp.html",
+          "date": "2026-08-14T11:11:35+00:00",
           "category": "spain"
         },
         {
@@ -152,337 +103,113 @@
           "category": "italy"
         },
         {
-          "title": "Vox exige al Consell de Pérez Llorca que no acoja a menores migrantes de Ceuta y amenaza con votos de castigo",
-          "source": "moncloa.com",
-          "url": "https://www.moncloa.com/2026/08/14/vox-menores-migrantes-ceuta-consell-3415214/",
-          "date": "2026-08-14T07:48:51+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Kikosarazta az Alkotmánybíróság a Fideszt a KEKVA-k ügyében",
-          "source": "24.hu",
-          "url": "https://24.hu/belfold/2026/08/14/alkotmanybirosag-kekva-fidesz-polt/",
-          "date": "2026-08-14T07:48:00+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Migranti, Meloni: già oggi stragrande maggioranza paesi Ue con Italia",
-          "source": "Askanews",
-          "url": "https://askanews.it/2026/08/14/migranti-meloni-gia-oggi-stragrande-maggioranza-paesi-ue-con-italia/",
-          "date": "2026-08-14T07:04:52+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Vox hará 'todo lo posible' en el Consell valenciano para no acoger a menores de Ceuta: 'Ni uno'",
-          "source": "moncloa.com",
-          "url": "https://www.moncloa.com/2026/08/14/vox-menores-ceuta-consell-valenciano-3415055/",
-          "date": "2026-08-14T06:14:00+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Meloni insiste: \"Proteggiamo le frontiere, la maggioranza dell'Europa è con me\"",
-          "source": "today.it",
-          "url": "https://www.today.it/politica/giorgia-meloni-intervista-milano-finanza-migranti-energia.html",
-          "date": "2026-08-14T06:11:00+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Migranti, Meloni: \"In Ue molti condividono Italia su priorità difesa sicurezza\"",
-          "source": "OglioPoNews",
-          "url": "https://www.oglioponews.it/2026/08/14/migranti-meloni-in-ue-molti-condividono-italia-su-priorita-difesa-sicurezza/",
-          "date": "2026-08-14T06:03:42+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Migranti, al premier Meloni: \"Avanti con le espulsioni di irregolari e difesa dei confini\" -",
-          "source": "quotidianolavoce.it",
-          "url": "https://www.quotidianolavoce.it/2026/08/14/migranti-al-premier-meloni-avanti-con-le-espulsioni-di-irregolari-e-difesa-dei-confini/?amp",
-          "date": "2026-08-14T05:32:42+00:00",
-          "category": "italy"
-        },
-        {
           "title": "Migranti, Meloni: \"Grave crisi aperta a Ceuta, rischio nuova ondata a Ferragosto\"",
           "source": "Adnkronos",
           "url": "https://www.adnkronos.com/politica/crisi-migranti-ue-ceuta-meloni-intervista-milano-finanza_4WzAoVpyvTkIU1Vtt1Hirr",
           "date": "2026-08-14T05:32:00+00:00",
           "category": "italy"
-        },
-        {
-          "title": "Migranti, Meloni: «In Ue molti condividono la posizione dell'Italia, proteggere le frontiere dall'immigrazione incontrollata»",
-          "source": "Il Messaggero",
-          "url": "https://www.ilmessaggero.it/AMP/politica/migranti_meloni_cosa_ha_detto_posizione_italia_ue_immigrazione-9707493.html",
-          "date": "2026-08-14T05:31:34+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Migranti, Meloni: \"Avanti con la difesa dei confini\". Piantedosi: \"3 arresti e 21 respinti dalla Spagna\"",
-          "source": "lapresse.it",
-          "url": "https://www.lapresse.it/politica/2026/08/14/migranti-meloni-avanti-con-la-difesa-dei-confini-piantedosi-3-arresti-e-21-respinti-dalla-spagna/",
-          "date": "2026-08-14T05:00:00+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Vox presiona a Llorca con los menores migrantes de Ceuta: harán \"todo lo posible\" para que no lleguen a la Comunitat",
-          "source": "elespanol.com",
-          "url": "https://www.elespanol.com/valencia/20260814/vox-presiona-llorca-menores-migrantes-ceuta-haran-posible-no-lleguen-comunitat/1003744352231_0.html",
-          "date": "2026-08-14T04:00:00+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Piantedosi conferma lo stop a Schengen: \"Rischio terrorismo\". E Meloni (anti Vannacci) rilancia la \"difesa dei confini\"",
-          "source": "Il Foglio",
-          "url": "https://www.ilfoglio.it/politica/2026/08/14/news/piantedosi-conferma-lo-stop-a-schengen-rischio-terrorismo-e-meloni-anti-vannacci-rilancia-la-difesa-dei-confini--404816",
-          "date": "2026-08-14T04:00:00+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Boicot de Vox mediante, el PP rechaza hablar sobre reubicación de menores",
-          "source": "naiz:",
-          "url": "https://www.naiz.eus/eu/hemeroteca/gara/editions/2026-08-14/hemeroteca_articles/boicot-de-vox-mediante-el-pp-rechaza-hablar-sobre-reubicacion-de-menores",
-          "date": "2026-08-13T22:00:00+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Migranti, l'Italia dice no alla Germania: «Nessun rientro per la 22enne somala e altri due irregolari",
-          "source": "Open",
-          "url": "https://www.open.online/2026/08/13/migranti-italia-germania-nessun-rientro-irregolari/",
-          "date": "2026-08-13T20:26:50+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Migranti, Almici (FdI): i numeri smentiscono la sinistra. Con Meloni meno sbarchi, più rimpatri e più sicurezza",
-          "source": "La Voce del Patriota",
-          "url": "https://www.lavocedelpatriota.it/migranti-almici-fdi-i-numeri-smentiscono-la-sinistra-con-meloni-meno-sbarchi-piu-rimpatri-e-piu-sicurezza/",
-          "date": "2026-08-13T20:14:33+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Vox marca el paso a Pérez Llorca con la acogida de menores migrantes de Ceuta: \"Que no se acoja ni a uno\"",
-          "source": "elDiario.es",
-          "url": "https://www.eldiario.es/comunitat-valenciana/politica/vox-marca-paso-perez-llorca-acogida-menores-migrantes-ceuta-no-acoja_1_13445955.html",
-          "date": "2026-08-13T20:07:25+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox y el reparto de menores: \"Es incompatible con los pactos\"",
-          "source": "RTVE.es",
-          "url": "https://www.rtve.es/play/audios/24-horas/vox-reparto-menores-ceuta-incompatible-nuestro-pacto-gobierno/17190489/",
-          "date": "2026-08-13T19:13:09+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "De la \"invasión\" al \"terror sexual\": Abascal endurece su campaña racista contra los migrantes de Ceuta",
-          "source": "El Constitucional",
-          "url": "https://www.elconstitucional.es/es/nacional/politica/invasion-terror-sexual-abascal-endurece-su-campana-racista-contra-migrantes-ceuta_7074_102.html",
-          "date": "2026-08-13T17:50:53+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Meloni ribadisce linea dura su migranti. Schlein: “Insegue Vannacci”",
-          "source": "Askanews",
-          "url": "https://askanews.it/2026/08/13/meloni-ribadisce-linea-dura-su-migranti-schlein-insegue-vannacci/",
-          "date": "2026-08-13T17:11:03+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Vox avisa a Llorca de votos de castigo si acepta la acogida de menores migrantes de Ceuta",
-          "source": "abc.es",
-          "url": "https://www.abc.es/espana/comunidad-valenciana/vox-avisa-llorca-votos-castigo-acepta-acogida-20260813185336-nt.html",
-          "date": "2026-08-13T16:59:23+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Abascal acusa a los inmigrantes y a Sánchez de provocar «terror sexual» en Ceuta",
-          "source": "The Objective",
-          "url": "https://theobjective.com/espana/politica/2026-08-13/abascal-acusa-inmigrantes-sanchez-provocar-terror-sexual-ceuta/",
-          "date": "2026-08-13T16:51:10+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Molteni (Lega): Nessun passo indietro su sospensione Schengen se ci sono rischi per sicurezza Italia",
-          "source": "Vista Agenzia Televisiva Nazionale",
-          "url": "https://www.agenziavista.it/tempo-reale/2026/1063734_molteni-lega-nessun-passo-indietro-su-sospensione-schengen-se-ci-sono-rischi-per-sicurezza-italia/",
-          "date": "2026-08-13T16:39:00+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Irregolari espulsi, Meloni: avanti con difesa confini. Piantedosi al Comitato Schengen",
-          "source": "Il Tempo",
-          "url": "https://www.iltempo.it/politica/2026/08/13/news/irregolari-espulsi-meloni-avanti-con-difesa-confini-piantedosi-al-comitato-schengen-48853034/",
-          "date": "2026-08-13T16:22:00+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Migranti, Schlein: Meloni rincorre Vannacci, chi si occupa degli italiani?",
-          "source": "Askanews",
-          "url": "https://askanews.it/2026/08/13/migranti-schlein-meloni-rincorre-vannacci-chi-si-occupa-degli-italiani/",
-          "date": "2026-08-13T15:53:10+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Migranti, Meloni: \"Proseguiremo con le espulsioni di irregolari\"",
-          "source": "Tgcom24",
-          "url": "https://www.tgcom24.mediaset.it/2026/video/migranti-meloni-proseguiremo-espulsioni-irregolari-video_115427225-02k.shtml",
-          "date": "2026-08-13T15:35:00+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Hatalmas méretet öltöttek a kárbejelentések: 106 milliárdot oszt szét a kormány a gazdák között",
-          "source": "Portfolio.hu",
-          "url": "https://www.portfolio.hu/gazdasag/20260813/hatalmas-meretet-oltottek-a-karbejelentesek-106-milliardot-oszt-szet-a-kormany-a-gazdak-kozott-856132?amp",
-          "date": "2026-08-13T15:31:00+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Migranti, Meloni: avanti con le espulsioni di irregolari e difesa confini",
-          "source": "Askanews",
-          "url": "https://askanews.it/2026/08/13/migranti-meloni-avanti-con-espulsioni-irregolari-e-difesa-confini/",
-          "date": "2026-08-13T15:01:13+00:00",
-          "category": "italy"
         }
       ],
       "first_seen": "2026-08-07T03:42:06+00:00",
-      "last_seen": "2026-08-14T14:06:27+00:00"
+      "last_seen": "2026-08-15T02:06:57+00:00"
     },
     {
       "id": "right-wing-governments-target-social-programs-amid-fiscal-debates",
       "title": "Right-wing governments target social programs amid fiscal debates",
-      "blurb": "Right-wing governments in Argentina, the U.S., and Hungary are pushing for fiscal austerity, often targeting social programs. This includes cuts to welfare, healthcare, and education funding, framed as necessary for economic stability but criticized as harmful to vulnerable populations.",
+      "blurb": "Right-wing governments in Argentina, the U.S., and Hungary are pushing for fiscal austerity, often targeting social programs and public spending. This theme reflects a broader trend of reducing state intervention in the economy, cutting welfare benefits, and privatizing public services, sparking debates over economic priorities and social equity.",
       "convergence": 4,
       "countries": [
         {
           "name": "🇦🇷 La Libertad Avanza",
-          "note": "Milei accelerates austerity measures, including cuts to healthcare and education, while negotiating electoral alliances for 2027."
+          "note": "Javier Milei's government cuts public spending, leading to job losses and reduced social programs."
         },
         {
           "name": "🇺🇸 MAGA / Trump",
-          "note": "Trump administration proposes cuts to Head Start, ACA subsidies, and social welfare programs, citing fiscal responsibility."
+          "note": "Trump administration targets federal funding for social programs, including healthcare and education."
         },
         {
           "name": "🇭🇺 Fidesz / Tisza",
-          "note": "Tisza government amends budget laws to bypass debt rules, facing criticism for prioritizing energy projects over social spending."
+          "note": "Hungary's Tisza government reduces public spending and privatizes state assets amid economic crisis."
         },
         {
           "name": "🇬🇧 Reform UK",
-          "note": "Farage's Reform UK proposes reducing welfare spending and tightening eligibility for social programs, framing it as a cost-saving measure."
+          "note": "Criticizes UK's welfare system and advocates for reduced public spending."
         },
         {
           "name": "🇵🇱 Prawo i Sprawiedliwość",
-          "note": "PiS proposes deporting unemployed Ukrainian migrants, citing fiscal strain and national security concerns."
+          "note": "Proposes cuts to social programs and criticizes EU funding mechanisms."
         }
       ],
       "signals": [
         "policy imitation",
         "parallel elections",
         "shared framing",
-        "contagion of rhetoric"
+        "fiscal austerity"
       ],
-      "article_count": 38,
+      "article_count": 40,
       "refs": [
         {
-          "title": "Karina Milei acelera el armado 2027 y abre la puerta a una alianza más amplia",
-          "source": "Mendoza 24",
-          "url": "https://mendoza24.com.ar/noticias_argentina/33800-Karina-Milei-acelera-el-armado-2027-y-abre-la-puerta-a-una-alianza-mas-amplia",
-          "date": "2026-08-14T13:00:55+00:00",
+          "title": "Se perdieron más de 400.000 empleos registrados desde la llegada de Javier Milei a la Casa Rosada",
+          "source": "NEA HOY",
+          "url": "https://neahoy.com/2026/08/14/se-perdieron-mas-de-400-000-empleos-registrados-desde-la-llegada-de-javier-milei-a-la-casa-rosada/",
+          "date": "2026-08-14T22:47:56+00:00",
           "category": "argentina"
         },
         {
-          "title": "“Hay gobernadores que tienen precio”: Marcela Pagano amplió su denuncia contra Javier Milei",
-          "source": "El Intransigente",
-          "url": "https://elintransigente.com/2026/08/hay-gobernadores-que-tienen-precio-marcela-pagano-amplio-su-denuncia-contra-javier-milei/",
-          "date": "2026-08-14T12:23:29+00:00",
+          "title": "JD Vance demands that the DOJ investigate hospitals caring for transgender patients",
+          "source": "Advocate.com",
+          "url": "https://www.advocate.com/politics/national/jd-vance-doj-transgender-hospitals",
+          "date": "2026-08-14T20:05:49+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Brutális, ami az almaterméssel történik Magyarországon: ezt hamarosan a pénztárcánk is megérzi",
+          "source": "Portfolio.hu",
+          "url": "https://www.portfolio.hu/gazdasag/20260814/brutalis-ami-az-almatermessel-tortenik-magyarorszagon-ezt-hamarosan-a-penztarcank-is-megerzi-856456?amp",
+          "date": "2026-08-14T19:49:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Ricardo Quintela en nota con Toti Pasman: \"Milei es un delincuente...¿te cabe alguna duda?\"",
+          "source": "Diario Registrado",
+          "url": "https://www.diarioregistrado.com/politica/ricardo-quintela-en-nota-con-toti-pasman---milei-es-un-delincuente----te-cabe-alguna-duda--_a6a7f5a1063a8347f3e2e8d2d",
+          "date": "2026-08-14T18:24:52+00:00",
           "category": "argentina"
         },
         {
-          "title": "La campaña 2027 empieza a moldear la agenda internacional de Javier Milei",
-          "source": "Ambito",
-          "url": "https://www.ambito.com/politica/la-campana-2027-empieza-moldear-la-agenda-internacional-javier-milei-n6310316",
-          "date": "2026-08-14T12:08:00+00:00",
+          "title": "La hoja de ruta hacia las elecciones 2027: el plan oficial para volcar dólares a las empresas y engrosar reservas",
+          "source": "Diario Río Negro",
+          "url": "https://www.rionegro.com.ar/economia/la-hoja-de-ruta-hacia-las-elecciones-2027-el-plan-oficial-para-volcar-dolares-a-las-empresas-y-engrosar-reservas-4683862/",
+          "date": "2026-08-14T17:00:37+00:00",
           "category": "argentina"
         },
         {
-          "title": "Mateusz Morawiecki oferuje program 3 600 plus. Sławomir Mentzen drwi: Na pewno się uda",
-          "source": "Wprost",
-          "url": "https://www.wprost.pl/opinie-i-komentarze/12414684/mateusz-morawiecki-oferuje-program-3-600-plus-slawomir-mentzen-drwi-na-pewno-sie-uda.html",
-          "date": "2026-08-14T12:06:00+00:00",
-          "category": "poland"
+          "title": "Döntött a Tisza-kormány, nem kapja meg az M6-os koncesszióját Mészáros Lőrinc, Paks 2 terveit inkább felülvizsgálnák",
+          "source": "Népszava",
+          "url": "https://nepszava.hu/3330959_m6-os-koncesszio-meszaros-lorinc-elutasitas-tisza-kormany-vitezy-david-bejelentes-paksi-atomeromu-bovites",
+          "date": "2026-08-14T15:39:00+00:00",
+          "category": "hungary"
         },
         {
-          "title": "Milei vs. Anti Milei: La disputa por PASO sí / PASO no, define el año electoral",
+          "title": "Argentina y Hungría estrechan vínculos: Del agua a la capacitación diplomática",
           "source": "Urgente24",
-          "url": "https://urgente24.com/milei-vs-anti-milei-la-disputa-paso-si-paso-no-define-el-ano-electoral-n630627",
-          "date": "2026-08-14T11:48:00+00:00",
+          "url": "https://urgente24.com/actualidad/argentina-y-hungria-estrechan-vinculos-del-agua-la-capacitacion-diplomatica-n630641",
+          "date": "2026-08-14T14:29:59+00:00",
           "category": "argentina"
         },
         {
-          "title": "Reunión del PRO y La Libertad Avanza en Casa Rosada",
-          "source": "elpaisdiario.com.ar",
-          "url": "https://www.elpaisdiario.com.ar/reunion-del-pro-y-la-libertad-avanza-en-casa-rosada-164764/",
-          "date": "2026-08-14T11:37:03+00:00",
+          "title": "Crisis laboral en la era de Javier Milei: en mayo, se perdieron 2.265 puestos de trabajo por día",
+          "source": "C5N",
+          "url": "https://www.c5n.com/economia/crisis-laboral-la-era-javier-milei-mayo-se-perdieron-2265-puestos-trabajo-dia-n246200",
+          "date": "2026-08-14T13:00:00+00:00",
           "category": "argentina"
         },
         {
-          "title": "2027 Budget: Income tax, pensions and banks – all the key issues (and tensions) within the ruling coalition",
-          "source": "Il Sole 24 ORE",
-          "url": "https://en.ilsole24ore.com/art/2027-budget-income-tax-pensions-and-banks-all-key-issues-and-sources-of-tension-within-the-majority-AJyen4l",
-          "date": "2026-08-14T11:02:41+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "A un año de las presidenciales, los partidos argentinos empiezan a definir alianzas",
-          "source": "es.mercopress.com",
-          "url": "https://es.mercopress.com/2026/08/14/a-un-ano-de-las-presidenciales-los-partidos-argentinos-empiezan-a-definir-alianzas",
-          "date": "2026-08-14T10:43:00+00:00",
+          "title": "Encuesta: más del 50% rechaza la economía de Milei y el regreso del kirchnerismo",
+          "source": "Perfil",
+          "url": "https://www.perfil.com/noticias/politica/encuesta-el-dato-que-preocupa-al-kirchnerismo-de-cara-a-las-elecciones-de-2027.phtml",
+          "date": "2026-08-14T09:30:00+00:00",
           "category": "argentina"
-        },
-        {
-          "title": "A year from the presidential vote, Argentina's parties begin to define alliances",
-          "source": "MercoPress",
-          "url": "https://en.mercopress.com/2026/08/14/a-year-from-the-presidential-vote-argentina-s-parties-begin-to-define-alliances",
-          "date": "2026-08-14T10:43:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Javier Milei y sus medidas, en vivo: las repercusiones de la inflación de julio y el armado electoral de cara al 2027",
-          "source": "impactocastex.com.ar",
-          "url": "https://impactocastex.com.ar/?p=24912",
-          "date": "2026-08-14T09:43:05+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "La letra chica del acuerdo entre el Gobierno y el PRO: cargos, provincias, listas y apoyo en el Congreso",
-          "source": "TN",
-          "url": "https://tn.com.ar/politica/2026/08/14/la-letra-chica-del-acuerdo-entre-el-gobierno-y-el-pro-cargos-provincias-listas-y-apoyo-en-el-congreso/",
-          "date": "2026-08-14T09:07:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Politikk, Sandnes | Kaller inn til ekstraordinært styremøte",
-          "source": "Sandnesposten",
-          "url": "https://www.sandnesposten.no/kaller-inn-til-ekstraordinart-styremote/s/5-105-1422467",
-          "date": "2026-08-14T08:22:02+00:00",
-          "category": "norway"
-        },
-        {
-          "title": "Tras la reunión con el PRO, La Libertad Avanza suma contactos con aliados y acelera el armado electoral para 2027",
-          "source": "TN",
-          "url": "https://tn.com.ar/politica/2026/08/14/tras-la-reunion-con-el-pro-la-libertad-avanza-suma-contactos-con-aliados-y-acelera-el-armado-electoral-para-2027/",
-          "date": "2026-08-14T08:00:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Szép csendben egy merész húzással vágja át a Tisza-kormány a költségvetési feladványt",
-          "source": "portfolio.hu",
-          "url": "https://www.portfolio.hu/gazdasag/20260814/szep-csendben-egy-meresz-huzassal-vagja-at-a-tisza-kormany-a-koltsegvetesi-feladvanyt-856178",
-          "date": "2026-08-14T07:35:00+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Tisza-kormány: hármas válsággal néz szembe Magyar Péter kabinetje, teljes a készültség a Pakson",
-          "source": "portfolio.hu",
-          "url": "https://www.portfolio.hu/gazdasag/20260814/tisza-kormany-harmas-valsaggal-nez-szembe-magyar-peter-kabinetje-teljes-a-keszultseg-a-pakson-856206",
-          "date": "2026-08-14T06:21:00+00:00",
-          "category": "hungary"
         },
         {
           "title": "Argentina Inflation Accelerates to 2.1% in July, Breaking Government Projections",
@@ -490,208 +217,94 @@
           "url": "https://www.telesurenglish.net/argentina-inflation-accelerates-to-2-1-in-july-breaking-government-projections/",
           "date": "2026-08-14T05:49:52+00:00",
           "category": "argentina"
-        },
-        {
-          "title": "Libertarios y peronistas activaron la rosca por 2027 mientras el bolsillo sufre las penurias de 2026",
-          "source": "Infobae",
-          "url": "https://www.infobae.com/politica/2026/08/14/libertarios-y-peronistas-activaron-la-rosca-por-2027-mientras-el-bolsillo-sufre-las-penurias-de-2026/?outputType=amp-type",
-          "date": "2026-08-14T04:52:38+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Fuerte respaldo empresarial a Javier Milei y advertencia de Estados Unidos por el avance de China",
-          "source": "Perfil",
-          "url": "https://www.perfil.com/noticias/economia/fuerte-respaldo-empresarial-a-javier-milei-y-advertencia-de-estados-unidos-por-el-avance-de-china-a40.phtml",
-          "date": "2026-08-14T03:52:15+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Karina Milei pidió unidad libertaria en la provincia durante la inauguración del nuevo local de La Libertad Avanza",
-          "source": "FM Del Sol Pehuajo",
-          "url": "https://radiodelsolpehuajo.com.ar/articulo/2026/08/karina-milei-pidio-unidad-libertaria-en-la-provincia-durante-la-inauguracion-del-nuevo-local-de-la-libertad-avanza.php",
-          "date": "2026-08-14T02:05:58+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Créditos en dólares: la apuesta de Javier Milei para reactivar la inversión",
-          "source": "Urgente24",
-          "url": "https://urgente24.com/dinero/creditos-dolares-la-apuesta-javier-milei-reactivar-la-inversion-n630606",
-          "date": "2026-08-14T00:55:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Karina Milei: \"Vamos a seguir trabajando para mejorar cada lugar de cada argentino\"",
-          "source": "Mnews",
-          "url": "https://mnews.com.ar/politica/177909-Karina-Milei-Vamos-a-seguir-trabajando-para-mejorar-cada-lugar-de-cada-argentino",
-          "date": "2026-08-14T00:35:05+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "La Libertad Avanza inauguró un nuevo local partidario con Karina Milei pidiendo unidad",
-          "source": "elpaisdiario.com.ar",
-          "url": "https://www.elpaisdiario.com.ar/la-libertad-avanza-inauguro-un-nuevo-local-partidario-con-karina-milei-pidiendo-unidad-164758/",
-          "date": "2026-08-14T00:01:38+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Karina Milei, sobre la campaña: “Vamos por mejorar cada lugar de cada argentino”",
-          "source": "La Nación",
-          "url": "https://www.lanacion.com.ar/politica/karina-milei-dijo-que-el-gobierno-trabajara-por-mejorar-cada-lugar-de-cada-argentino-y-descarto-nid13082026/",
-          "date": "2026-08-13T23:10:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Volvió a subir la inflación y el gobierno de Javier Milei suma desaciertos",
-          "source": "Urgente24",
-          "url": "https://urgente24.com/dinero/volvio-subir-la-inflacion-y-el-gobierno-javier-milei-suma-desaciertos-n630598",
-          "date": "2026-08-13T22:23:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Encuentro. La Libertad Avanza y el PRO dieron el primer paso para cerrar un acuerdo electoral de cara a 2027",
-          "source": "La Voz del Interior",
-          "url": "https://www.lavoz.com.ar/politica/libertad-avanza-pro-dieron-primer-paso-cerrar-acuerdo-electoral-cara-2027_0_nLAvIuBxRx.html",
-          "date": "2026-08-13T21:46:56+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Con el PRO y La Libertad Avanza solas no alcanza: Karina Milei busca sumar a la UCR en Buenos Aires",
-          "source": "Letra P",
-          "url": "https://www.letrap.com.ar/conurbano/con-el-pro-y-la-libertad-avanza-solas-no-alcanza-karina-milei-busca-sumar-la-ucr-buenos-aires-n5425822",
-          "date": "2026-08-13T21:05:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "“Fiscal Shackle” Revolution: Argentina’s Milei Aims to KILL the Debt State — for Good",
-          "source": "thenewamerican.com",
-          "url": "https://thenewamerican.com/world-news/fiscal-shackle-revolution-argentinas-milei-aims-to-kill-the-debt-state-for-good/",
-          "date": "2026-08-13T20:56:23+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "La inflación de julio fue 133% mayor a la del \"cero coma algo\" que predijo Javier Milei",
-          "source": "MinutoUno",
-          "url": "https://www.minutouno.com/economia/la-inflacion-julio-fue-133-mayor-la-del-cero-coma-algo-que-predijo-javier-milei-n6310615",
-          "date": "2026-08-13T20:46:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Se acelera la destrucción de empresas: ya se perdieron más de 30.000 durante el gobierno de Javier Milei",
-          "source": "Ambito",
-          "url": "https://www.ambito.com/economia/se-acelera-la-destruccion-empresas-ya-se-perdieron-mas-30000-el-gobierno-javier-milei-n6310550",
-          "date": "2026-08-13T19:58:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "La Libertad Avanza y el PRO conformaron una mesa de diálogo permanente para \"blindar el cambio\"",
-          "source": "baenegocios.com",
-          "url": "https://www.baenegocios.com/politica/la-libertad-avanza-y-el-pro-conformaron-una-mesa-de-dialogo-permanente-para-blindar-el-cambio-5906/",
-          "date": "2026-08-13T19:43:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Cayó la imagen de Javier Milei en un ranking de presidentes de América Latina",
-          "source": "Mendovoz",
-          "url": "https://www.mendovoz.com/actualidad/nacionales/2026/8/13/cayo-la-imagen-de-javier-milei-en-un-ranking-de-presidentes-de-america-latina-175161.html",
-          "date": "2026-08-13T19:04:17+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Nueva encuesta: la imagen negativa de Milei subió al 57,2 por ciento",
-          "source": "Revista Noticias",
-          "url": "https://noticias.perfil.com/noticias/politica/nueva-encuesta-la-imagen-negativa-de-milei-subio-al-572-por-ciento.phtml",
-          "date": "2026-08-13T18:27:27+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Una empresa de cosechadoras cerró una de sus plantas y más de 200 trabajadores quedan en la calle en medio de la crisis de Milei",
-          "source": "El Destape",
-          "url": "https://www.eldestapeweb.com/sociedad/metalfor-busca-despedir-200-trabajadores-cordoba-20268131501",
-          "date": "2026-08-13T18:01:02+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Alianza a nivel nacional: tras el llamado con Macri, Karina Milei busca sumar un escalón con el PRO",
-          "source": "El Cronista",
-          "url": "https://www.cronista.com/economia-politica/primer-paso/",
-          "date": "2026-08-13T17:12:56+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "El lado oculto de la reforma laboral: por qué habría despidos masivos el Día del Trabajador",
-          "source": "El Destape",
-          "url": "https://www.eldestapeweb.com/economia/lado-oculto-reforma-laboral-habria-despidos-masivos-dia-trabajador-2026813135624",
-          "date": "2026-08-13T17:01:29+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Patricia Bullrich se aleja de la candidatura en CABA para no frustar el acuerdo electoral entre Milei y Macri",
-          "source": "Diario Río Negro",
-          "url": "https://www.rionegro.com.ar/politica/patricia-bullrich-se-aleja-de-la-candidatura-en-caba-para-priorizar-el-acuerdo-electoral-entre-javier-milei-y-mauricio-macri-4682245/",
-          "date": "2026-08-13T16:48:30+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "El PRO y LLA acercaron posiciones a un año de las elecciones y confirmaron que volverán a reunirse cada 15 días",
-          "source": "TN",
-          "url": "https://tn.com.ar/politica/2026/08/13/tras-la-cumbre-con-lla-el-pro-nego-que-hayan-tratado-cuestiones-electorales-fue-un-primer-paso-para-construir-confianza/",
-          "date": "2026-08-13T16:37:05+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "“A Milei le faltan votos para ganar en primera vuelta”",
-          "source": "Diario Jornada",
-          "url": "https://www.diariojornada.com.ar/421715/politica/a_milei_le_faltan_votos_para_ganar_en_primera_vuelta",
-          "date": "2026-08-13T16:00:00+00:00",
-          "category": "argentina"
         }
       ],
       "first_seen": "2026-08-07T03:42:06+00:00",
-      "last_seen": "2026-08-14T14:06:27+00:00"
+      "last_seen": "2026-08-15T02:06:57+00:00"
     },
     {
       "id": "trump-administration-targets-gender-affirming-care-and-lgbtq-rights",
       "title": "Trump administration targets gender-affirming care and LGBTQ+ rights",
-      "blurb": "The Trump administration in the U.S. is intensifying efforts to restrict gender-affirming care for minors and roll back LGBTQ+ protections. Similar rhetoric and policy proposals are emerging in Poland and Hungary, where right-wing governments are also targeting LGBTQ+ rights under the guise of 'traditional values.'",
+      "blurb": "The Trump administration in the U.S. is intensifying efforts to restrict gender-affirming care and LGBTQ+ rights, a trend mirrored by right-wing governments in Poland and Hungary. This includes legal challenges, policy changes, and public rhetoric aimed at limiting healthcare access for transgender individuals and rolling back LGBTQ+ protections.",
       "convergence": 4,
       "countries": [
         {
           "name": "🇺🇸 MAGA / Trump",
-          "note": "Trump signs executive order to reduce childhood vaccines, including those for HPV, and JD Vance calls for DOJ investigations into gender-affirming care."
+          "note": "Trump administration probes hospitals for allegedly fraudulent billing of gender-affirming care."
         },
         {
           "name": "🇵🇱 Prawo i Sprawiedliwość",
-          "note": "PiS continues to oppose LGBTQ+ rights, framing them as a threat to traditional Polish values and family structures."
+          "note": "Poland's government restricts LGBTQ+ rights and opposes gender-affirming care policies."
         },
         {
           "name": "🇭🇺 Fidesz / Tisza",
-          "note": "Tisza government bans circus animal acts but faces criticism for not addressing broader LGBTQ+ rights issues, maintaining Orbán-era policies."
+          "note": "Hungary's government opposes LGBTQ+ rights and promotes traditional family values."
         },
         {
           "name": "🇬🇧 Reform UK",
-          "note": "Farage's Reform UK opposes gender-affirming care and LGBTQ+ protections, aligning with U.S. conservative rhetoric."
+          "note": "Criticizes gender-affirming care policies and advocates for traditional values."
+        },
+        {
+          "name": "🇺🇸 MAGA / Trump",
+          "note": "Trump administration wins case allowing it to keep transgender medical records private."
         }
       ],
       "signals": [
         "policy imitation",
-        "coordinated messaging",
-        "shared framing"
+        "shared framing",
+        "legal challenges",
+        "coordinated messaging"
       ],
-      "article_count": 22,
+      "article_count": 30,
       "refs": [
         {
-          "title": "Marco Rubio’s Tweet About American Citizenship Sparks Huge Online Debate",
-          "source": "Yahoo",
-          "url": "https://www.yahoo.com/news/politics/articles/marco-rubio-tweet-american-citizenship-122049727.html",
-          "date": "2026-08-14T12:20:49+00:00",
+          "title": "Trump administration wins transgender medical records case",
+          "source": "San Francisco Chronicle",
+          "url": "https://www.sfchronicle.com/politics/article/trump-administration-wins-transgender-medical-22388862.php",
+          "date": "2026-08-14T22:11:25+00:00",
           "category": "usa"
         },
         {
-          "title": "Mateusz Morawiecki oferuje program 3 600 plus. Sławomir Mentzen drwi: Na pewno się uda",
-          "source": "Wprost",
-          "url": "https://www.wprost.pl/opinie-i-komentarze/12414684/mateusz-morawiecki-oferuje-program-3-600-plus-slawomir-mentzen-drwi-na-pewno-sie-uda.html",
-          "date": "2026-08-14T12:06:00+00:00",
-          "category": "poland"
+          "title": "Trump administration targets UChicago, Lurie in gender care billing probe",
+          "source": "Crain's Chicago Business",
+          "url": "https://www.chicagobusiness.com/health-care/ccb-trumpdoj-hospitals-trans-coding-20260814/",
+          "date": "2026-08-14T20:55:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "JD Vance demands that the DOJ investigate hospitals caring for transgender patients",
+          "source": "Advocate.com",
+          "url": "https://www.advocate.com/politics/national/jd-vance-doj-transgender-hospitals",
+          "date": "2026-08-14T20:05:49+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "JD Vance & HHS are now accusing hospitals of fraudulently providing trans health care",
+          "source": "lgbtqnation.com",
+          "url": "https://www.lgbtqnation.com/2026/08/jd-vance-hhs-are-now-accusing-hospitals-of-fraudulently-providing-trans-health-care/",
+          "date": "2026-08-14T17:14:04+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Bogus Trump Administration ‘Report’ Launders Reheated Anti-Trans Rhetoric to Attack Transition Medical Care",
+          "source": "HRC | Human Rights Campaign",
+          "url": "https://www.hrc.org/press-releases/bogus-trump-administration-report-launders-reheated-anti-trans-rhetoric-to-attack-transition-medical-care",
+          "date": "2026-08-14T16:44:44+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Ben Shapiro Warns Marco Rubio’s Potential 2028 White House Bid Against JD Vance Could Backfire: 'If I Were in the Kalshi Markets…'",
+          "source": "Yahoo",
+          "url": "https://www.yahoo.com/news/politics/articles/ben-shapiro-warns-marco-rubio-150104446.html",
+          "date": "2026-08-14T15:01:04+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "JD Vance wants hospitals investigated over trans healthcare ‘fraud’",
+          "source": "attitude.co.uk",
+          "url": "https://www.attitude.co.uk/news/world/jd-vance-wants-hospitals-investigated-trans-healthcare-fraud-531595/",
+          "date": "2026-08-14T13:15:43+00:00",
+          "category": "networks"
         },
         {
           "title": "JD Vance calls for DOJ investigation into alleged fraud in transgender care for minors",
@@ -701,172 +314,107 @@
           "category": "usa"
         },
         {
-          "title": "Trump administration fights Republican effort to lower flood insurance costs",
-          "source": "eenews.net",
-          "url": "https://www.eenews.net/articles/trump-administration-fights-republican-effort-to-lower-flood-insurance-costs/",
-          "date": "2026-08-14T10:19:00+00:00",
+          "title": "Trump Is Trying to Sabotage the Health of All Our Kids",
+          "source": "The Nation",
+          "url": "https://www.thenation.com/article/politics/trump-vaccines-executive-order/",
+          "date": "2026-08-14T09:57:50+00:00",
           "category": "usa"
         },
         {
-          "title": "JD Vance warns Republicans not to blame young Americans for the appeal of socialism",
-          "source": "New York Post",
-          "url": "https://nypost.com/2026/08/14/us-news/jd-vance-warns-republicans-not-to-blame-young-americans-for-the-appeal-of-socialism/",
-          "date": "2026-08-14T09:38:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Record cyclosporiasis outbreak tests agencies hit by Trump administration's cuts",
-          "source": "Utah Public Radio",
-          "url": "https://www.upr.org/2026-08-14/record-cyclosporiasis-outbreak-tests-agencies-hit-by-trump-administrations-cuts",
-          "date": "2026-08-14T08:45:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Sad for Congress to have you as its leader: Nadda after Rahul & party leader's hug & Meloni remarks | The remarks faced criticism by several leaders | Inshorts",
-          "source": "Inshorts",
-          "url": "https://inshorts.com/en/amp_news/sad-for-congress-to-have-you-as-its-leader--nadda-after-rahul---party-leader-s-hug---meloni-remarks-1786692139647",
-          "date": "2026-08-14T07:23:56+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "JD Vance says low energy prices for Americans top priority amid US war on Iran",
-          "source": "Middle East Eye",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/jd-vance-says-low-energy-prices-americans-top-priority-amid-us-war-iran",
-          "date": "2026-08-14T06:41:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Are vaccines a partial cause of autism, as Secretary Markwayne Mullin suggested?",
-          "source": "Oklahoma Watch",
-          "url": "https://oklahomawatch.org/2026/08/13/are-vaccines-a-partial-cause-of-autism-as-secretary-markwayne-mullin-suggested/",
-          "date": "2026-08-14T04:00:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Richard Jomshof släpper bok om islam.",
-          "source": "Via TT",
-          "url": "https://via.tt.se/pressmeddelande/4495752/richard-jomshof-slapper-bok-om-islam?publisherId=3236128&lang=sv",
-          "date": "2026-08-14T04:00:00+00:00",
-          "category": "sweden"
-        },
-        {
-          "title": "Wydanie listu żelaznego dla Romanowskiego utrudnia nowelizacja z czasów PiS",
-          "source": "Rzeczpospolita",
-          "url": "https://www.rp.pl/prawo-karne/art44988001-list-zelazny-dla-romanowskiego-na-lasce-prokuratora-niekoniecznie",
-          "date": "2026-08-14T02:38:00+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "What to know about President Trump’s executive order on childhood vaccines",
-          "source": "TribLIVE.com",
-          "url": "https://triblive.com/local/regional/what-to-know-about-president-trumps-executive-order-on-childhood-vaccines/",
-          "date": "2026-08-13T22:23:43+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Votes being counted in Clacton by-election triggered by Nigel Farage",
-          "source": "Yahoo News Canada",
-          "url": "https://ca.news.yahoo.com/votes-being-counted-clacton-election-220150118.html",
-          "date": "2026-08-13T22:01:50+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Lawsuit alleges Trump administration's warrantless immigration raids in SoCal are unlawful",
-          "source": "ABC7 Los Angeles",
-          "url": "https://abc7.com/post/lawsuit-alleges-trump-administrations-warrantless-immigration-raids-socal-are-unlawful/19673995/",
-          "date": "2026-08-13T20:32:17+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "A horrifying anti-Trans ballot initiative is coming to Washington",
-          "source": "Seattle Gay News",
-          "url": "https://www.sgn.org/story/169278/Op-Ed/A%20horrifying%20anti-Trans%20ballot%20initiative%20is%20coming%20to%20Washington",
-          "date": "2026-08-13T19:40:41+00:00",
-          "category": "networks"
-        },
-        {
-          "title": "Trump Administration Revisiting Capital Gains Tax Reform",
-          "source": "RISMedia",
-          "url": "https://www.rismedia.com/2026/08/13/trump-administration-revisiting-capital-gains-tax-reform/",
-          "date": "2026-08-13T19:26:01+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "AI Regulation Has a Fundamental Problem. We’re RegulatingBased On What Might Happen.",
-          "source": "townhall.com",
-          "url": "https://townhall.com/news/dmitri-bolt/2026/08/13/heres-the-problem-with-ai-policy-n2681200",
-          "date": "2026-08-13T19:15:00+00:00",
-          "category": "networks"
-        },
-        {
-          "title": "Texas: Federal appeals court restores restrictions on absentee voting and voter assistance",
-          "source": "voz.us",
-          "url": "https://voz.us/en/politics/260813/38257/texas-federal-appeals-court-restores-restrictions-on-absentee-voting-and-voter-assistance.html",
-          "date": "2026-08-13T17:56:35+00:00",
-          "category": "networks"
-        },
-        {
-          "title": "Voters prefer socialist over MAGA candidate in 2028 matchup: Poll",
-          "source": "Colorado Politics",
-          "url": "https://www.coloradopolitics.com/2026/08/13/voters-prefer-socialist-over-maga-candidate-in-2028-matchup-poll/",
-          "date": "2026-08-13T17:43:03+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Policy: The Trump Administration Wants To Make Big Changes To Head Start : 1A",
-          "source": "npr.org",
-          "url": "https://www.npr.org/2026/08/13/nx-s1-5930416/policy-the-trump-administration-wants-to-make-big-changes-to-head-start",
-          "date": "2026-08-13T17:37:37+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "State sues Trump administration over ACA rule",
-          "source": "wislawjournal.com",
-          "url": "https://wislawjournal.com/2026/08/13/state-sues-trump-administration-over-obamacare-rule/",
-          "date": "2026-08-13T16:43:59+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Pete Hegseth cares more about dismantling DEI than being mission-ready",
-          "source": "MS NOW",
-          "url": "https://www.ms.now/news/news-analysis/pete-hegseth-cares-more-about-dismantling-dei-than-being-mission-ready",
-          "date": "2026-08-13T16:03:54+00:00",
+          "title": "Trump administration denies crucial access to nuclear safety watchdog",
+          "source": "Jefferson City News Tribune",
+          "url": "https://www.newstribune.com/news/2026/aug/14/trump-administration-denies-crucial-access-to/",
+          "date": "2026-08-14T09:00:00+00:00",
           "category": "usa"
         }
       ],
       "first_seen": "2026-08-12T03:15:33+00:00",
-      "last_seen": "2026-08-14T14:06:27+00:00"
+      "last_seen": "2026-08-15T02:06:57+00:00"
     },
     {
       "id": "afd-surge-reshapes-german-politics-ahead-of-regional-elections",
       "title": "AfD surge reshapes German politics ahead of regional elections",
-      "blurb": "Germany's AfD is leading in polls for upcoming regional elections in Saxony-Anhalt and Mecklenburg-Vorpommern, forcing other parties to adapt their strategies. This surge is mirrored in Sweden and France, where far-right parties are also gaining traction, often at the expense of traditional conservative parties.",
+      "blurb": "Germany's far-right Alternative für Deutschland (AfD) is gaining significant traction ahead of regional elections in Saxony-Anhalt and other states. This surge is influencing mainstream parties' strategies and sparking debates over coalition-building, tactical voting, and the potential for AfD-led governments, which could reshape Germany's political landscape.",
       "convergence": 4,
       "countries": [
         {
           "name": "🇩🇪 Alternative für Deutschland",
-          "note": "AfD leads polls in Saxony-Anhalt and Mecklenburg-Vorpommern, with Ulrich Siegmund as a key candidate, forcing other parties to strategize against them."
+          "note": "AfD leads polls in Saxony-Anhalt and faces internal debates over leadership and policies."
         },
         {
           "name": "🇸🇪 Sverigedemokraterna",
-          "note": "Sweden Democrats unveil election manifesto focusing on stricter immigration and law-and-order policies, gaining support ahead of elections."
+          "note": "Sweden Democrats influence German far-right discourse and electoral strategies."
         },
         {
           "name": "🇫🇷 Rassemblement National",
-          "note": "Le Pen's RN faces protests and vandalism during summer events, but maintains strong polling ahead of 2027 elections."
+          "note": "French far-right party monitors AfD's rise and adjusts its own strategies accordingly."
         },
         {
           "name": "🇳🇴 Fremskrittspartiet",
-          "note": "FrP gains support by opposing immigration and EU policies, positioning itself as a key player in Norway's political landscape."
+          "note": "Norwegian Progress Party observes AfD's impact on European far-right dynamics."
+        },
+        {
+          "name": "🇩🇪 Alternative für Deutschland",
+          "note": "AfD politician allegedly attacks youths for damaging election posters, sparking controversy."
         }
       ],
       "signals": [
         "parallel elections",
+        "policy imitation",
         "contagion of rhetoric",
-        "policy imitation"
+        "tactical voting"
       ],
-      "article_count": 30,
+      "article_count": 45,
       "refs": [
+        {
+          "title": "AfD: Politiker soll Jugendliche wegen Plakatbeschädigung angegriffen haben",
+          "source": "DIE ZEIT",
+          "url": "https://www.zeit.de/politik/deutschland/2026-08/afd-sachsen-anhalt-wahlplakate-angriff",
+          "date": "2026-08-14T20:40:49+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Neue Zweitstimmen-Kampagne soll AfD-Regierung verhindern - n-tv.de",
+          "source": "",
+          "url": "https://www.n-tv.de/politik/Gruene-und-SPD-nehmen-Hilfe-an-Kampagne-soll-AfD-Regierung-verhindern-id31194521.html",
+          "date": "2026-08-14T18:13:15+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Landtagswahlkampf: Siegmund zu kritischem «Spiegel»-Titel: «Sehr gute Werbung»",
+          "source": "DIE ZEIT",
+          "url": "https://www.zeit.de/news/2026-08/14/siegmund-zu-kritischem-spiegel-titel-sehr-gute-werbung",
+          "date": "2026-08-14T17:35:38+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Landtagswahl in Sachsen-Anhalt: Das sind die Spitzenkandidaten",
+          "source": "ZDFheute",
+          "url": "https://www.zdfheute.de/politik/deutschland/landtagswahl-sachsen-anhalt-spitzenkandidaten-schulze-siegmund-von-angern-100.html",
+          "date": "2026-08-14T16:34:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Ex-Richterbund-Chef Jens Gnisa warnt vor Justiz-Beben durch mögliche AfD-Regierung",
+          "source": "FOCUS online",
+          "url": "https://www.focus.de/politik/deutschland/ex-richterbund-chef-jens-gnisa-warnt-vor-justiz-beben-durch-moegliche-afd-regierung_7982e165-7bd3-40e7-bf9f-2ec66bc3c0ec.html",
+          "date": "2026-08-14T15:58:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Sachsen-Anhalt: AfD verhindern – Verein unterstützt SPD und Grüne mit 620.000-Euro-Kampagne",
+          "source": "welt.de",
+          "url": "https://www.welt.de/politik/deutschland/article6a7f192ba87e8142c31d0357/sachsen-anhalt-afd-verhindern-verein-unterstuetzt-spd-und-gruene-mit-620-000-euro-kampagne.html",
+          "date": "2026-08-14T14:50:05+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Civey-Umfrage: Würde ein starkes Abschneiden der AfD in Sachsen-Anhalt die Politik spürbar verändern? - Video",
+          "source": "welt.de",
+          "url": "https://www.welt.de/politik/deutschland/video6a7f15e6169e8e32c0ae82ab/civey-umfrage-wuerde-ein-starkes-abschneiden-der-afd-in-sachsen-anhalt-die-politik-spuerbar-veraendern.html",
+          "date": "2026-08-14T13:41:28+00:00",
+          "category": "germany"
+        },
         {
           "title": "Jan Josef Liefers spricht über möglichen AfD-Sieg in Sachsen-Anhalt",
           "source": "FOCUS online",
@@ -875,143 +423,10 @@
           "category": "germany"
         },
         {
-          "title": "Unbekannte beschädigen Auto eines AfD-Politikers in Bremen",
-          "source": "buten un binnen",
-          "url": "https://www.butenunbinnen.de/audios/auto-beschaedigt-100.html",
-          "date": "2026-08-14T12:52:09+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Im Schatten der AfD: Umfrage prophezeit düstere Zukunft für SPD-Chef Klingbeil",
-          "source": "Nordkurier",
-          "url": "https://www.nordkurier.de/politik/im-schatten-der-afd-umfrage-prophezeit-duestere-zukunft-fuer-spd-chef-klingbeil-4785486",
-          "date": "2026-08-14T12:50:00+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Arbeiter-Rechtsruck? AfD punktet besonders mit Migrations-Ablehnung",
-          "source": "NDR.de",
-          "url": "https://www.ndr.de/nachrichten/info/arbeiter-rechtsruck-afd-punktet-besonders-mit-migrations-ablehnung,arbeiterundafd-100.html",
-          "date": "2026-08-14T12:49:00+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Unbekannte demolieren Auto eines AfD-Politikers in Bremen",
-          "source": "buten un binnen",
-          "url": "https://www.butenunbinnen.de/nachrichten/bremen-auto-beschaedigt-afd-100.html",
-          "date": "2026-08-14T12:48:43+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Polizeigewerkschaft NRW stellt sich im AfD-Streit gegen Vize-Chef Hüber",
-          "source": "ostdeutscheallgemeine.com",
-          "url": "https://ostdeutscheallgemeine.com/article/gdp-nrw-hueber-afd-sachsen-anhalt-innenministerium-beamte-10293348",
-          "date": "2026-08-14T12:46:24+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Staatsschutz ermittelt: Berlin: Drei AfD-Wahlhelfer beim Aufhängen von Plakaten attackiert - n-tv.de",
-          "source": "",
-          "url": "https://www.n-tv.de/ticker/Berlin-Drei-AfD-Wahlhelfer-beim-Aufhaengen-von-Plakaten-attackiert-id31194780.html",
-          "date": "2026-08-14T12:44:15+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Bizarre Dynamik vor Sachsen-Anhalt-Wahl: Alle gegen alle bei AfD und BSW",
-          "source": "fr.de",
-          "url": "https://www.fr.de/politik/wagenknecht-bietet-afd-duldung-an-siegmund-lehnt-94442737.html",
-          "date": "2026-08-14T12:43:40+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Mi történt? Magyar Péter a kezdés előtt mondta le a mai kormányzati tájékoztatót",
-          "source": "Blikk",
-          "url": "https://www.blikk.hu/politika/magyar-politika/magyar-peter-lemondas-kormanyzati-sajtotajekoztato/7qpx2q8",
-          "date": "2026-08-14T12:27:51+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Oberflächlich: die \"Panorama\"-Reportage \"Alternative für Arbeiter?\"",
-          "source": "FAZ",
-          "url": "https://www.faz.net/aktuell/feuilleton/medien-und-film/fernsehfilm/oberflaechlich-die-panorama-reportage-alternative-fuer-arbeiter-accg-201123786.html",
-          "date": "2026-08-14T12:20:31+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Jan Josef Liefers über möglichen AfD-Sieg in Sachsen-Anhalt: \"Glaube nicht, dass das ein Weltuntergang wird\"",
-          "source": "web.de",
-          "url": "https://web.de/magazine/politik/videos/jan-josef-liefers-moeglichen-afd-sieg-sachsen-anhalt-glaube-weltuntergang-42613982",
-          "date": "2026-08-14T12:18:38+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Gewerkschaft der Polizei - Aufruf zu Widerstand gegen eine etwaige AfD-Landesregierung sorgt für Diskussion",
-          "source": "Deutschlandfunk",
-          "url": "https://www.deutschlandfunk.de/aufruf-zu-widerstand-gegen-eine-etwaige-afd-landesregierung-sorgt-fuer-diskussion-102.html",
-          "date": "2026-08-14T12:10:36+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "\"Spiegel\" setzt AfD-Kandidat Siegmund aufs Cover: Hat sich das Magazin verliebt?",
-          "source": "SZ.de",
-          "url": "https://www.sueddeutsche.de/medien/spiegel-ulrich-siegmund-cover-gefaehrlichster-mann-li.3531352",
-          "date": "2026-08-14T12:07:27+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Wegen der AfD: Wahlergebnis in MV könnte die „CDU vor eine Zerreißprobe stellen“",
-          "source": "Nordkurier",
-          "url": "https://www.nordkurier.de/regional/mecklenburg-vorpommern/wegen-der-afd-wahlergebnis-in-mv-koennte-die-cdu-vor-eine-zerreissprobe-stellen-4778116",
-          "date": "2026-08-14T11:30:00+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "AfD-Kandidat Ulrich Siegmund: Warum das „Spiegel“-Cover ihm nützen könnte",
-          "source": "FAZ",
-          "url": "https://www.faz.net/aktuell/feuilleton/medien-und-film/medienpolitik/afd-kandidat-ulrich-siegmund-warum-das-spiegel-cover-ihm-nuetzen-koennte-201125525.html",
-          "date": "2026-08-14T10:33:26+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Parteiaustritte und Kritik: Wagenknechts AfD-Kurs löst Unruhe im BSW aus",
-          "source": "WEB.DE",
-          "url": "https://web.de/magazine/politik/inland/wagenknechts-afd-kurs-loest-unruhe-bsw-42612606",
-          "date": "2026-08-14T10:29:03+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Wagenknechts AfD-Kurs löst Unruhe im BSW aus",
-          "source": "1und1.de",
-          "url": "https://home.1und1.de/magazine/politik/inland/wagenknechts-afd-kurs-loest-unruhe-bsw-42612606",
-          "date": "2026-08-14T10:29:03+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Wahlkreisbüro der AfD beschmiert",
-          "source": "Nordkurier",
-          "url": "https://www.nordkurier.de/regional/hagenow/wahlkreisbuero-der-afd-beschmiert-4785328",
-          "date": "2026-08-14T10:25:00+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Sachsen-Anhalt: Campact startet Kampagne zu strategischer Wahl gegen AfD - n-tv.de",
-          "source": "",
-          "url": "https://www.n-tv.de/regionales/sachsen-anhalt/Campact-startet-Kampagne-zu-strategischer-Wahl-gegen-AfD-id31193692.html",
-          "date": "2026-08-14T09:54:00+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Was passiert, wenn ein Linker in Halle bei AfD-Fans klingelt? Er hat es erlebt",
-          "source": "der Freitag",
-          "url": "https://www.freitag.de/autoren/der-freitag/landtagswahl-sachsen-anhalt-linker-jannik-balint-klingelt-auch-mal-bei-afd-fans",
-          "date": "2026-08-14T09:53:00+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Landtagswahl in Sachsen-Anhalt: AfD-Regierung droht – Bundesrat sieht sich gerüstet",
-          "source": "Frankfurter Rundschau",
-          "url": "https://www.fr.de/politik/afd-regierung-nach-sachsen-anhalt-wahl-bundesrat-sieht-sich-geruestet-zr-94443592.html",
-          "date": "2026-08-14T09:45:20+00:00",
+          "title": "Die AfD kann in Sachsen-Anhalt noch gestoppt werden",
+          "source": "Jacobin Magazin",
+          "url": "https://jacobin.de/die-afd-kann-in-sachsen-anhalt-noch-gestoppt-werden/",
+          "date": "2026-08-14T11:12:17+00:00",
           "category": "germany"
         },
         {
@@ -1020,343 +435,86 @@
           "url": "http://hpd.de/index.php/artikel/union-zwickmuehle-24331",
           "date": "2026-08-14T09:45:00+00:00",
           "category": "germany"
-        },
-        {
-          "title": "„AfD und Linkspartei sind so stark, dass die CDU wie ein Sandwich dazwischen eingeklemmt ist“",
-          "source": "WELT",
-          "url": "https://www.welt.de/videos/video6a7ed40c169e8e32c0ae7b0c/sachsen-anhalt-afd-und-linkspartei-sind-so-stark-dass-die-cdu-wie-ein-sandwich-dazwischen-eingeklemmt-ist.html",
-          "date": "2026-08-14T09:21:24+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "\"Überwachung\", \"Misstrauen\" und \"autoritärer Führungsstil\": Unruhe beim BSW",
-          "source": "WEB.DE",
-          "url": "https://web.de/magazine/politik/inland/ueberwachung-autoritaerer-fuehrungsstil-unruhe-bsw-42612606",
-          "date": "2026-08-14T09:13:10+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Löst AfD-​Spitzenkandidat Ul­rich Sieg­mund ein De­mo­kra­tie­be­ben aus?",
-          "source": "Die Rheinpfalz",
-          "url": "https://www.rheinpfalz.de/rheinpfalz-am-sonntag_artikel,-l%C3%B6st-afd-spitzenkandidat-ulrich-siegmund-ein-demokratiebeben-aus-_arid,5919352.html",
-          "date": "2026-08-14T09:06:00+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Das richtige Argument in den falschen Händen | Cicero Online",
-          "source": "Cicero Online",
-          "url": "https://www.cicero.de/innenpolitik/das-personalproblem-der-afd-das-richtige-argument-in-den-falschen-handen",
-          "date": "2026-08-14T08:46:14+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "UK parliamentary standards probe into Reform UK leader Farage lis",
-          "source": "Global Banking & Finance Review",
-          "url": "https://www.globalbankingandfinance.com/uk-parliamentary-standards-probe-reform-uk-leader-farage/",
-          "date": "2026-08-14T08:18:35+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "AfD in Sachsen-Anhalt: Warum das AfD-Programm nicht finanzierbar ist",
-          "source": "DIE ZEIT",
-          "url": "https://www.zeit.de/wirtschaft/2026-08/afd-sachsen-anhalt-wahlprogramm-finanzierungsluecke",
-          "date": "2026-08-14T08:16:11+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "GdP NRW distanziert sich von Hüber: AfD-Aussagen sorgen für Unruhe",
-          "source": "BILD",
-          "url": "https://www.bild.de/politik/inland/gdp-nrw-distanziert-sich-von-hueber-afd-aussagen-sorgen-fuer-unruhe-6a7ddb5f169e8e32c0ae7051",
-          "date": "2026-08-14T08:10:35+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "„AfD-Programm - was steht da eigentlich drin?“ - Zevener-Zeitung",
-          "source": "",
-          "url": "https://www.zevener-zeitung.de/nachrichten/afd-programm-was-steht-da-eigentlich-drin-402436.html",
-          "date": "2026-08-14T08:08:27+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Wie man mit der AfD besser nicht umgeht",
-          "source": "Augsburger Allgemeine",
-          "url": "https://www.augsburger-allgemeine.de/politik/sahra-wagenknecht-und-die-afd-so-peinlich-dass-es-wehtut-115012536",
-          "date": "2026-08-14T07:55:40+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Michael Blos, AfD-Bundestagsabgeordneter des Wahlkreises Emmendingen-Lahr: \"Wir schauen zuerst auf unser eigenes Land\"",
-          "source": "Badische Zeitung",
-          "url": "https://www.badische-zeitung.de/michael-blos-afd-bundestagsabgeordneter-des-wahlkreises-emmendingen-lahr-wir-schauen-zuerst-auf-unse",
-          "date": "2026-08-14T07:30:00+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "AfD sieht Rechtsextremismus nicht als größte Gefahr in Hessen",
-          "source": "FAZ",
-          "url": "https://www.faz.net/aktuell/rhein-main/region-und-hessen/afd-sieht-rechtsextremismus-nicht-als-groesste-gefahr-in-hessen-accg-201122165.html",
-          "date": "2026-08-14T07:19:46+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "AfD scheitert mit Eilanträgen vor Gericht: Früheres Kino bleibt als Veranstaltungsort verboten",
-          "source": "Merkur",
-          "url": "https://www.merkur.de/lokales/weilheim/weilheim-ort29677/geplantes-afd-zentrum-weilheim-urteile-eilantraege-verwaltungsgericht-muenchen-94442643.html",
-          "date": "2026-08-14T06:59:00+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "„Steigbügelhalter“ – Linke wirft BSW zu große Nähe zur AfD vor",
-          "source": "WELT",
-          "url": "https://www.welt.de/politik/deutschland/article6a7ea5d6169e8e32c0ae7788/landtagswahlen-steigbuegelhalter-linke-wirft-bsw-zu-grosse-naehe-zur-afd-vor.html",
-          "date": "2026-08-14T06:51:29+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Landtagswahlen in Ostdeutschland - BSW-Vorsitzende Mohamed Ali schließt Koalition mit AfD aus",
-          "source": "Deutschlandfunk",
-          "url": "https://www.deutschlandfunk.de/bsw-vorsitzende-mohamed-ali-schliesst-koalition-mit-afd-aus-102.html",
-          "date": "2026-08-14T05:51:06+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Bundesrat sieht sich für mögliche AfD-Regierung gewappnet - boerse.de",
-          "source": "boerse.de",
-          "url": "https://www.boerse.de/nachrichten/Bundesrat-sieht-sich-fuer-moegliche-AfD-Regierung-gewappnet/38528796",
-          "date": "2026-08-14T04:12:00+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "\"Jenseits der Brandmauer\": Punk-Sänger \"Monchi\" stellt neues Buch vor",
-          "source": "NDR.de",
-          "url": "https://www.ndr.de/nachrichten/mecklenburg-vorpommern/jenseits-der-brandmauer-punk-saenger-monchi-stellt-neues-buch-vor,buchmonchi-100.html",
-          "date": "2026-08-14T04:00:00+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Wahl in Sachsen-Anhalt: Bundesrat sieht sich gewappnet für mögliche AfD-Regierung - General-Anzeiger Bonn",
-          "source": "",
-          "url": "https://ga.de/news/politik/deutschland/bundesrat-sieht-sich-gewappnet-fuer-moegliche-afd-regierung_aid-153120471",
-          "date": "2026-08-14T03:23:00+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "AfD Sachsen-Anhalt: Radikal gegen „kulturfremde“ Migranten",
-          "source": "RiffReporter",
-          "url": "https://www.riffreporter.de/de/gesellschaft/afd-sachsen-anhalt-wahl-programm-migration-sicherheit-innenpolitik",
-          "date": "2026-08-14T03:05:24+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Würzburg: Würzburger Anwältin für AfD-Verbotsverfahren: „Wahlerfolge sind kein Freibrief für Verfassungsfeindlichkeit“ - Main-Post",
-          "source": "",
-          "url": "https://www.mainpost.de/franken/wuerzburg-wuerzburger-anwaeltin-fuer-afd-verbotsverfahren-wahlerfolge-sind-kein-freibrief-fuer-verfassungsfeindlichkeit-114996751",
-          "date": "2026-08-14T02:00:00+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "„Der gefährlichste Mann Deutschlands“ – Siegmund spottet über Spiegel-Titelcover",
-          "source": "WELT",
-          "url": "https://www.welt.de/politik/deutschland/article6a7e5315a87e8142c31cf72d/afd-der-gefaehrlichste-mann-deutschlands-siegmund-spottet-ueber-spiegel-titelcover.html",
-          "date": "2026-08-14T01:32:04+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Debatte um Umgang mit der AfD: Erst ausgelacht, dann gewählt, dann angebetet - T-Online",
-          "source": "",
-          "url": "https://www.t-online.de/nachrichten/tagesanbruch/id_101388372/afd-debatte-bertolt-brecht-wuerde-die-deutschen-jetzt-warnen.html",
-          "date": "2026-08-14T01:02:10+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Major Fight To Bring Jailed Pastor Home",
-          "source": "American Center for Law and Justice",
-          "url": "https://aclj.org/news/major-fight-to-bring-jailed-pastor-home",
-          "date": "2026-08-13T20:56:10+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Freiwillige Feuerwehr posiert mit AfD-Mann – Bürgermeister kündigt Folgen an",
-          "source": "RTL.de",
-          "url": "https://www.rtl.de/news/freiwillige-feuerwehr-posiert-mit-afd-mann-buergermeister-kuendigt-folgen-an-id31191664.html",
-          "date": "2026-08-13T19:20:29+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "AfD und Linke im Kabinett \"für mich ausgeschlossen\": So lief der Abend in der MDR-Wahlarena",
-          "source": "ZDFheute",
-          "url": "https://www.zdfheute.de/politik/deutschland/sachsen-anhalt-cdu-afd-landtagswahl-100.html",
-          "date": "2026-08-13T18:55:00+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Wieduwilt analysiert AfD-Manöver: Höcke-Angebot \"ist Theateraufführung und Blutgrätsche\" - n-tv.de",
-          "source": "",
-          "url": "https://www.n-tv.de/mediathek/videos/politik/Hoecke-Angebot-ist-Theaterauffuehrung-und-Blutgraetsche-id31191598.html",
-          "date": "2026-08-13T18:34:21+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Åkesson (SD): ”Vi har tagit steg i rätt riktning”",
-          "source": "Bulletin",
-          "url": "https://bulletin.nu/akesson-sd-vi-har-tagit-steg-i-ratt-riktning",
-          "date": "2026-08-13T17:41:42+00:00",
-          "category": "sweden"
-        },
-        {
-          "title": "AfD, BSW und die Ostwahlen: Die Linke als Stabilitätsanker",
-          "source": "taz.de",
-          "url": "https://taz.de/AfD-BSW-und-die-Ostwahlen/!6204135/",
-          "date": "2026-08-13T17:29:11+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Exklusiv: Brisanter Vorwurf gegen die AfD mitten im Wahlkampf",
-          "source": "Nordkurier",
-          "url": "https://www.nordkurier.de/regional/mecklenburg-vorpommern/exklusiv-brisanter-vorwurf-gegen-die-afd-mitten-im-wahlkampf-4782320",
-          "date": "2026-08-13T17:12:00+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "„Vielleicht ist Siegmund das, was Höcke gemacht hat, gar nicht so recht“",
-          "source": "WELT",
-          "url": "https://www.welt.de/politik/deutschland/video6a7decdea87e8142c31cf3c7/afd-angebot-an-wagenknecht-vielleicht-ist-siegmund-das-was-hoecke-gemacht-hat-gar-nicht-so-recht.html",
-          "date": "2026-08-13T16:51:35+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "'Did you hug me thinking I am Meloni?': Congress leader's swipe as Rahul mocks PM Modi | Video",
-          "source": "Moneycontrol.com",
-          "url": "https://www.moneycontrol.com/news/india/did-you-hug-me-thinking-i-am-meloni-congress-leader-s-swipe-as-rahul-mocks-pm-modi-video-14004971.html",
-          "date": "2026-08-13T16:25:58+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "AfD-Büro in Hagenow mit Graffitispray beschmiert",
-          "source": "NDR.de",
-          "url": "https://www.ndr.de/nachrichten/mecklenburg-vorpommern/westmecklenburg/afd-buero-in-hagenow-mit-graffitispray-beschmiert,mvregioschwerin-5216.html",
-          "date": "2026-08-13T16:21:01+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "heute journal - der Podcast: Was, wenn die AfD im Osten regierte?",
-          "source": "ZDFheute",
-          "url": "https://www.zdfheute.de/video/heute-journal/heute-journal-podcast-folge-80-afd-sachsen-anhalt-landtagswahl-100.html",
-          "date": "2026-08-13T16:00:00+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "AfD vor der Macht: Warum Ulrich Siegmund in Sachsen-Anhalt das BSW-Angebot ablehnt",
-          "source": "NZZ – Neue Zürcher Zeitung",
-          "url": "https://www.nzz.ch/der-andere-blick/ein-buendnis-mit-dem-bsw-waere-fuer-die-afd-ein-spiel-mit-dem-feuer-ld.10019450",
-          "date": "2026-08-13T15:55:35+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Élections sénatoriales : tout ce qu’il faut savoir sur le scrutin, alors que la campagne vient de commencer",
-          "source": "L'Humanité",
-          "url": "https://www.humanite.fr/politique/elections-senatoriales/elections-senatoriales-tout-ce-quil-faut-savoir-sur-le-scrutin-alors-que-la-campagne-vient-de-commencer",
-          "date": "2026-08-13T15:48:33+00:00",
-          "category": "france"
-        },
-        {
-          "title": "AfD beklagt Schmierereien an Wahlkreisbüro",
-          "source": "WELT",
-          "url": "https://www.welt.de/regionales/mecklenburg-vorpommern/article6a7de1f6dc674b59e6e1d836/afd-beklagt-schmierereien-an-wahlkreisbuero.html",
-          "date": "2026-08-13T15:31:36+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Mecklenburg-Vorpommern: AfD beklagt Schmierereien an Wahlkreisbüro - n-tv.de",
-          "source": "",
-          "url": "https://www.n-tv.de/regionales/mecklenburg-vorpommern/AfD-beklagt-Schmierereien-an-Wahlkreisbuero-id31191276.html",
-          "date": "2026-08-13T15:25:00+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Landtagswahlen in MV: AfD beklagt Schmierereien an Wahlkreisbüro",
-          "source": "DIE ZEIT",
-          "url": "https://www.zeit.de/news/2026-08/13/afd-beklagt-schmierereien-an-wahlkreisbuero",
-          "date": "2026-08-13T15:24:24+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Angebot an Sahra Wagenknecht: Höckes Neid und Siegmunds Ärger - T-Online",
-          "source": "",
-          "url": "https://www.t-online.de/nachrichten/deutschland/innenpolitik/id_101387746/hoecke-veraergert-mit-wagenknecht-offerte-seine-afd-kollegen-katastrophe-.html",
-          "date": "2026-08-13T15:20:06+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Wahlkampf: Feuerwehr-Foto mit AfD-Kandidat Siegmund sorgt für Debatte",
-          "source": "DIE ZEIT",
-          "url": "https://www.zeit.de/news/2026-08/13/feuerwehr-foto-mit-afd-kandidat-siegmund-sorgt-fuer-debatte",
-          "date": "2026-08-13T15:15:45+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "AfD Hessen als Verdachtsfall gelistet – „Radikalisierung“ belegt",
-          "source": "Frankfurter Rundschau",
-          "url": "https://www.fr.de/hessen/warum-die-afd-hessen-erstmals-im-verfassungsschutzbericht-steht-94440739.html",
-          "date": "2026-08-13T15:14:49+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Wahlkampf im Osten: Wie die AfD gegen Windmühlen kämpft",
-          "source": "correctiv.org",
-          "url": "https://correctiv.org/aktuelles/afd/2026/08/13/wahlkampf-im-osten-wie-die-afd-gegen-windmuehlen-kaempft/",
-          "date": "2026-08-13T15:10:14+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "TV-Duell in Mecklenburg-Vorpommern: CDU und Linke kritisieren geplante Debatte zwischen Schwesig und Holm",
-          "source": "DIE ZEIT",
-          "url": "https://www.zeit.de/politik/deutschland/2026-08/tv-duell-mecklenburg-vorpommern-manuela-schwesig-leif-erik-holm-rtl",
-          "date": "2026-08-13T14:51:19+00:00",
-          "category": "germany"
         }
       ],
       "first_seen": "2026-08-07T03:42:06+00:00",
-      "last_seen": "2026-08-14T14:06:27+00:00"
+      "last_seen": "2026-08-15T02:06:57+00:00"
     },
     {
       "id": "nigel-farage-s-by-election-win-fuels-reform-uk-momentum",
       "title": "Nigel Farage's by-election win fuels Reform UK momentum",
-      "blurb": "Nigel Farage's victory in the Clacton by-election has energized Reform UK, despite ongoing controversies over party finances and Farage's personal conduct. This win is being framed as a rejection of mainstream parties and a sign of growing far-right influence in UK politics, with parallels to similar movements in Europe.",
+      "blurb": "Nigel Farage's victory in the Clacton by-election has energized Reform UK, positioning the party as a significant force in British politics. However, Farage's win is overshadowed by ongoing investigations into his finances and internal party divisions, raising questions about the sustainability of Reform UK's momentum.",
       "convergence": 3,
       "countries": [
         {
           "name": "🇬🇧 Reform UK",
-          "note": "Farage wins Clacton by-election with 63% of the vote, despite facing scrutiny over undeclared donations and party finances."
+          "note": "Farage wins Clacton by-election, boosting Reform UK's profile amid financial scrutiny."
         },
         {
           "name": "🇫🇷 Rassemblement National",
-          "note": "Le Pen's RN faces similar financial scrutiny and internal divisions but maintains strong polling ahead of 2027 elections."
+          "note": "French far-right party monitors Reform UK's electoral success and internal challenges."
         },
         {
           "name": "🇪🇸 Vox",
-          "note": "Vox faces internal debates over alliances with PP but uses migration crises to push its agenda, similar to Reform UK's anti-immigration stance."
+          "note": "Spanish far-right party observes Reform UK's strategies and electoral performance."
+        },
+        {
+          "name": "🇬🇧 Reform UK",
+          "note": "Farage faces renewed probe into £5 million crypto-linked gift after by-election win."
+        },
+        {
+          "name": "🇬🇧 Reform UK",
+          "note": "Farage's victory overshadowed by financial controversies and internal party splits."
         }
       ],
       "signals": [
         "parallel elections",
-        "contagion of rhetoric",
-        "coordinated messaging"
+        "coordinated messaging",
+        "financial scrutiny",
+        "internal divisions"
       ],
-      "article_count": 25,
+      "article_count": 35,
       "refs": [
         {
-          "title": "Paramount’s 5 Asks ‘Nigel Farage: Where Does The Money Come From?’ After Binface By-Election",
-          "source": "Deadline",
-          "url": "https://deadline.com/2026/08/nigel-farage-where-does-money-come-from-paramount-5-binface-1237033649/",
-          "date": "2026-08-14T12:24:00+00:00",
+          "title": "Nigel Farage scores a pyrrhic victory in Clacton",
+          "source": "The Times",
+          "url": "https://www.thetimes.com/comment/the-times-view/article/nigel-farage-clacton-byelection-3s2gqrtjj",
+          "date": "2026-08-14T21:10:30+00:00",
           "category": "uk"
         },
         {
-          "title": "Nigel Farage beats ‘space warrior trashcan’ rival in UK bypoll he triggered",
-          "source": "The Times of India",
-          "url": "https://timesofindia.indiatimes.com/world/uk/nigel-farage-beats-space-warrior-trashcan-rival-in-uk-by-poll-he-triggered/articleshow/133240633.cms",
-          "date": "2026-08-14T12:06:00+00:00",
+          "title": "What’s next for far-right Reform UK after Farage’s by-election win?",
+          "source": "Al Jazeera",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/14/whats-next-for-far-right-reform-uk-after-farages-by-election-win",
+          "date": "2026-08-14T16:37:12+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Nigel Farage’s Clacton by-election gamble has hurt him more than he knows",
+          "source": "The Independent",
+          "url": "https://www.independent.co.uk/voices/nigel-farage-clacton-by-election-reform-uk-b3033258.html",
+          "date": "2026-08-14T16:14:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Is this a good day or a bad day for Nigel Farage?",
+          "source": "BBC",
+          "url": "https://www.bbc.co.uk/news/articles/cvgvjnyz8k7o",
+          "date": "2026-08-14T14:50:02+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "– Frps klimapolitikk er den dyreste",
+          "source": "E24",
+          "url": "https://e24.no/energi-og-klima/i/n1VMQJ/frps-klimapolitikk-er-den-dyreste",
+          "date": "2026-08-14T13:42:43+00:00",
+          "category": "norway"
+        },
+        {
+          "title": "What Clacton taught us about Nigel Farage’s path to power",
+          "source": "The Spectator",
+          "url": "https://spectator.com/article/the-gulf-between-those-who-love-and-hate-nigel-farage-is-growing-wider/",
+          "date": "2026-08-14T13:29:24+00:00",
           "category": "uk"
         },
         {
@@ -1367,108 +525,10 @@
           "category": "uk"
         },
         {
-          "title": "Essex Police's full statement amid Farage no-show at Clacton poll count",
-          "source": "London Evening Standard",
-          "url": "https://www.standard.co.uk/news/politics/nigel-farage-clacton-byelection-attend-count-threat-essex-police-b1293377.html",
-          "date": "2026-08-14T11:55:40+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Investigation into Nigel Farage finances resumes after by-election win",
-          "source": "The Times",
-          "url": "https://www.thetimes.com/uk/politics/article/nigel-farage-investigation-finances-gift-resumes-clacton-by-election-rdqwgc587",
-          "date": "2026-08-14T11:50:18+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "The Clacton by-election: what comes next for Nigel Farage?",
-          "source": "EUalive",
-          "url": "https://eualive.net/the-clacton-by-election-what-comes-next-for-nigel-farage/",
-          "date": "2026-08-14T11:49:30+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Reform UK Paid £440,000 to Firms Linked to Party Insiders",
-          "source": "Byline Times",
-          "url": "https://bylinetimes.com/2026/08/14/reform-uk-paid-440000-to-firms-linked-to-party-insiders/",
-          "date": "2026-08-14T11:41:49+00:00",
-          "category": "uk"
-        },
-        {
           "title": "Clacton results in full: Nigel Farage wins – but Count Binface sees record support",
           "source": "The Independent",
           "url": "https://www.independent.co.uk/news/uk/politics/clacton-by-election-result-in-full-farage-binface-turnout-votes-b3032333.html",
           "date": "2026-08-14T10:59:00+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Empty victory in Clacton is the beginning of the end for Nigel Farage, writes James Hanson",
-          "source": "lbc.co.uk",
-          "url": "https://www.lbc.co.uk/article/empty-victory-clacton-end-nigel-farage-opinion-5Hjdg4P_2/",
-          "date": "2026-08-14T10:40:09+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "What next for Nigel Farage after beating Count Binface to become MP once more?",
-          "source": "Middle East Eye",
-          "url": "https://www.middleeasteye.net/news/what-next-nigel-farage-after-beating-count-binface-become-mp-once-more",
-          "date": "2026-08-14T10:35:33+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Scrutiny over Farage’s finances has ‘hurt Reform UK support’",
-          "source": "Al Jazeera",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/14/scrutiny-over-farages-finances-has-hurt-reform-uk",
-          "date": "2026-08-14T10:32:58+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Pictures show scale of 'Farage Fest' as Reform leader wins back Clacton seat",
-          "source": "Clacton Gazette",
-          "url": "https://www.clactonandfrintongazette.co.uk/news/26464152.nigel-farage-reform-uk-celebrate-essex-estate/",
-          "date": "2026-08-14T10:30:00+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "UK’s Nigel Farage regains parliamentary seat, fights off Binface challenge",
-          "source": "South China Morning Post",
-          "url": "https://amp.scmp.com/news/world/europe/article/3364069/uks-nigel-farage-regains-parliamentary-seat-fights-binface-challenge",
-          "date": "2026-08-14T10:17:12+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Zapytaliśmy posłów wykluczonych z PiS, czy się odwołają. Dwa słowa",
-          "source": "Fakt",
-          "url": "https://www.fakt.pl/polityka/wykluczeni-poslowie-o-przyszlosci-rozwoj-plus-budujemy-od-zera/16fw8rs",
-          "date": "2026-08-14T10:12:42+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Patrick English: What does the data tell us about Nigel Farage's by-election victory and the future for Reform",
-          "source": "Conservative Home",
-          "url": "https://conservativehome.com/2026/08/14/patrick-english-what-does-the-data-tell-us-about-nigel-farages-by-election-victory-and-the-future-for-reform/",
-          "date": "2026-08-14T10:00:22+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Parliamentary probe into Nigel Farage’s £5m gift resumes after Clacton victory",
-          "source": "Somerset County Gazette",
-          "url": "http://www.thisisthewestcountry.co.uk/news/national/26464269.parliamentary-probe-nigel-farages-gbp5m-gift-resumes-clacton-victory/",
-          "date": "2026-08-14T09:52:14+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "What happens to Nigel Farage now he's been re-elected as Clacton MP?",
-          "source": "Metro.co.uk",
-          "url": "https://metro.co.uk/2026/08/14/happens-nigel-farage-now-re-elected-clacton-mp-29374990/",
-          "date": "2026-08-14T09:46:00+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Investigation into Nigel Farage's expenses reopened after by-election victory",
-          "source": "The Scotsman",
-          "url": "https://www.scotsman.com/news/politics/investigation-into-nigel-farages-expenses-reopened-after-by-election-victory-8920472",
-          "date": "2026-08-14T09:42:00+00:00",
           "category": "uk"
         },
         {
@@ -1479,736 +539,15 @@
           "category": "uk"
         },
         {
-          "title": "Farage has won Clacton. What happens next?",
-          "source": "Gulf News",
-          "url": "https://gulfnews.com/world/europe/farage-has-won-clacton-what-happens-next-1.500640855",
-          "date": "2026-08-14T09:35:44+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Nigel Farage Documentary Set at 5 Amid Standards Probe",
-          "source": "Variety",
-          "url": "https://variety.com/2026/tv/news/nigel-farage-documentary-5-standards-probe-1236834471/",
-          "date": "2026-08-14T09:21:00+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Standards watchdog resumes investigation into Nigel Farage over financial gifts",
-          "source": "The Guardian",
-          "url": "https://www.theguardian.com/politics/2026/aug/14/standards-watchdog-investigation-nigel-farage-financial-gifts",
-          "date": "2026-08-14T09:18:00+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Why Nigel Farage could face a second by-election in Clacton",
-          "source": "The Independent",
-          "url": "https://www.independent.co.uk/news/uk/politics/nigel-farage-clacton-by-election-count-binface-b3033020.html",
-          "date": "2026-08-14T09:17:00+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Clacton vote exposes Nigel Farage's polarizing nature: Professor",
-          "source": "CNBC",
-          "url": "https://www.cnbc.com/video/2026/08/14/clacton-vote-exposes-nigel-farages-polarizing-nature-professor.html",
-          "date": "2026-08-14T09:04:22+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Count Binface gets almost 10,000 votes in Clacton by-election",
-          "source": "BBC",
-          "url": "https://www.bbc.com/news/articles/crmr0kny7ego",
-          "date": "2026-08-14T08:56:02+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Nigel Farage re-elected as Member of Parliament for Clacton",
-          "source": "UK Parliament",
-          "url": "https://www.parliament.uk/business/news/2026/august-2026/nigel-farage-re-elected-as-member-of-parliament-for-clacton/",
-          "date": "2026-08-14T08:55:29+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "So Nigel Farage has beaten a man in a bin. But he's in deep trouble, and he knows it | Owen Jones",
-          "source": "The Guardian",
-          "url": "https://www.theguardian.com/commentisfree/2026/aug/14/nigel-farage-binface-reform-leader-people-clacton-byelection",
-          "date": "2026-08-14T08:54:50+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Despite his by-election win, Nigel Farage’s political future remains far from clear",
-          "source": "thenationalnews.com",
-          "url": "https://www.thenationalnews.com/opinion/comment/2026/08/14/despite-his-by-election-win-nigel-farages-political-future-remains-far-from-clear/",
-          "date": "2026-08-14T08:51:20+00:00",
-          "category": "uk"
-        },
-        {
           "title": "Nigel Farage wins in Clacton – and triggers investigation",
           "source": "City AM",
           "url": "https://www.cityam.com/nigel-farage-wins-clacton-by-election/",
           "date": "2026-08-14T08:46:59+00:00",
           "category": "uk"
-        },
-        {
-          "title": "Nigel Farage wins UK by-election as satirical candidate claims 'moral victory'",
-          "source": "trtworld.com",
-          "url": "https://www.trtworld.com/article/a1140b51ee1d",
-          "date": "2026-08-14T08:43:35+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Top Reform MP seethes in car crash interview over 'Nigel Farage humiliated' claim",
-          "source": "The National Scot",
-          "url": "https://www.thenational.scot/news/26463777.top-reform-mp-seethes-car-crash-interview-nigel-farage-snub/",
-          "date": "2026-08-14T08:35:37+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Police contest Farage ‘credible threat’ claim as Reform leader avoids Clacton count",
-          "source": "The Independent",
-          "url": "https://www.independent.co.uk/news/uk/politics/nigel-farage-essex-police-threat-clacton-b3032988.html",
-          "date": "2026-08-14T08:18:00+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Clacton shows how unserious Reform UK still is",
-          "source": "The Spectator",
-          "url": "https://spectator.com/article/clacton-shows-how-unserious-reform-uk-still-is/",
-          "date": "2026-08-14T08:17:36+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "UK parliamentary standards probe into Reform UK leader Farage listed as active",
-          "source": "Reuters",
-          "url": "https://www.reuters.com/world/uk/uk-parliamentary-standards-probe-into-reform-uk-leader-farage-listed-active-2026-08-14/",
-          "date": "2026-08-14T08:15:43+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Times Radio: Nigel Farage wins Clacton by-election – what happens next?",
-          "source": "The Times",
-          "url": "https://www.thetimes.com/video/times-radio/article/times-radio-nigel-farage-wins-clacton-by-election-what-happens-next-stdjbpwrr",
-          "date": "2026-08-14T08:11:17+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Nigel Farage avoids count after winning Clacton by-election",
-          "source": "The Independent",
-          "url": "https://www.independent.co.uk/bulletin/news/who-won-the-clacton-by-election-nigel-farage-b3032992.html",
-          "date": "2026-08-14T08:06:00+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Has the by-election changed things for Clacton?",
-          "source": "BBC",
-          "url": "https://www.bbc.com/news/articles/cy7430n5p44o",
-          "date": "2026-08-14T08:02:41+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Nigel Farage beats Count Binface in widely mocked election - ABC News",
-          "source": "Breaking News, Latest News and Videos",
-          "url": "https://abcnews.com/International/wireStory/nigel-farage-beats-count-binface-widely-mocked-election-135633476",
-          "date": "2026-08-14T08:02:32+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Nigel Farage retains seat in Clacton by-election but refuses to attend result due to ‘threats’",
-          "source": "The Independent",
-          "url": "https://www.independent.co.uk/news/uk/politics/nigel-farage-count-binface-clacton-by-election-b3032916.html",
-          "date": "2026-08-14T07:58:00+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Nigel Farage wins in Clacton, but shuns the “nobodies”",
-          "source": "New Statesman",
-          "url": "https://www.newstatesman.com/politics/uk-politics/2026/08/nigel-farage-wins-in-clacton-but-shuns-the-nobodies",
-          "date": "2026-08-14T07:48:17+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "UK: Nigel Farage beats a trash can in Clacton by-election",
-          "source": "dw.com",
-          "url": "https://www.dw.com/en/uk-nigel-farage-beats-a-trash-can-in-clacton-by-election/a-78362464",
-          "date": "2026-08-14T07:36:46+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Nigel Farage told 'this is no victory' as major sleaze probe looms",
-          "source": "The National Scot",
-          "url": "https://www.thenational.scot/news/26463604.nigel-farage-told-this-no-victory-major-sleaze-probe-looms/",
-          "date": "2026-08-14T07:33:57+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Döntött az Alkotmánybíróság, a kekvák ügyében elutasította a Fidesz kérését",
-          "source": "Népszava",
-          "url": "https://nepszava.hu/3330867_alkotmanybirosag-tisza-kormany-fidesz-kdnp-alkotmanymodositas",
-          "date": "2026-08-14T07:30:00+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Clacton has strengthened Nigel Farage",
-          "source": "spectator.com",
-          "url": "https://spectator.com/article/clacton-has-strengthened-nigel-farage/",
-          "date": "2026-08-14T07:19:10+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Nigel Farage romps to victory, but Count Binface grabs 27pc in bizarre UK by-election",
-          "source": "Malay Mail",
-          "url": "https://www.malaymail.com/news/world/2026/08/14/nigel-farage-romps-to-victory-but-count-binface-grabs-27pc-in-bizarre-uk-by-election/231348",
-          "date": "2026-08-14T07:17:08+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Nigel Farage defeats Count Binface to reclaim UK parliamentary seat",
-          "source": "Al Jazeera",
-          "url": "https://www.aljazeera.com/news/2026/8/14/nigel-farage-defeats-count-binface-to-reclaim-uk-parliamentary-seat",
-          "date": "2026-08-14T07:16:12+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Reform UK leader Nigel Farage beats Count Binface in widely mocked British election",
-          "source": "AP News",
-          "url": "https://apnews.com/article/britain-politics-farage-binface-clacton-election-reform-uk-16f5c7deff9de672c1c9b1950513b52f",
-          "date": "2026-08-14T07:12:00+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Farage wins Clacton by-election but avoids result declaration",
-          "source": "BBC",
-          "url": "https://www.bbc.co.uk/news/articles/c62x1gr62m1o",
-          "date": "2026-08-14T07:11:11+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "No-show Nigel Farage: Has Clacton by-election against Count Binface massively backfired for the Reform leader?",
-          "source": "London Evening Standard",
-          "url": "https://www.standard.co.uk/news/politics/nigel-farage-clacton-byelection-count-binface-attend-police-threat-b1293368.html",
-          "date": "2026-08-14T07:09:01+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Nigel Farage wins Clacton by-election but skips count over 'threat'",
-          "source": "North Wales Live",
-          "url": "https://www.dailypost.co.uk/news/uk-world-news/nigel-farage-wins-clacton-election-34456933",
-          "date": "2026-08-14T07:06:00+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "John Curtice gives verdict after Nigel Farage wins Clacton by-election",
-          "source": "The National Scot",
-          "url": "https://www.thenational.scot/news/26463533.john-curtice-gives-verdict-nigel-farage-wins-clacton-by-election/",
-          "date": "2026-08-14T06:59:16+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Nigel Farage wins Clacton by-election as police dispute credible threat claim against Reform leader",
-          "source": "Wales Online",
-          "url": "https://www.walesonline.co.uk/news/uk-news/nigel-farage-wins-clacton-election-34456879",
-          "date": "2026-08-14T06:59:00+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Count Binface responds after Nigel Farage wins Clacton by-election",
-          "source": "The National Scot",
-          "url": "https://www.thenational.scot/news/26463484.count-binface-responds-nigel-farage-wins-clacton-by-election/",
-          "date": "2026-08-14T06:44:12+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Nigel Farage wins landslide, defeats comedian dressed as trash and returns to Parliament",
-          "source": "Ynetnews",
-          "url": "https://www.ynetnews.com/article/bk2vhenlfe",
-          "date": "2026-08-14T06:40:55+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Donald Trump Orders Big Change to Aircraft Carrier That’s Already Being Built",
-          "source": "Yahoo",
-          "url": "https://www.yahoo.com/news/politics/articles/donald-trump-orders-big-change-064052641.html",
-          "date": "2026-08-14T06:40:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Nigel Farage makes first statement after Clacton by-election victory",
-          "source": "southendstandard.co.uk",
-          "url": "http://www.southendstandard.co.uk/news/26463457.nigel-farage-makes-first-statement-clacton-win/",
-          "date": "2026-08-14T06:40:00+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Reform UK Splits Burst Into Open Despite Nigel Farage's Clacton By-Election Victory",
-          "source": "HuffPost UK",
-          "url": "https://www.huffingtonpost.co.uk/entry/reform-splits-burst-into-open-despite-nigel-farages-clacton-by-election-victory_uk_6a7eaed9e4b0459fa2d27a5f",
-          "date": "2026-08-14T06:37:48+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Nigel Farage wins UK Clacton by-election",
-          "source": "Anadolu Ajansı",
-          "url": "https://www.aa.com.tr/en/europe/nigel-farage-wins-uk-clacton-by-election/4027045",
-          "date": "2026-08-14T06:36:53+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Nigel Farage beats Count Binface to regain UK parliamentary seat in widely mocked by-election",
-          "source": "france24.com",
-          "url": "https://www.france24.com/en/europe/20260814-nigel-farage-beats-count-binface-regain-uk-parliamentary-seat-by-election",
-          "date": "2026-08-14T06:34:35+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "What does Nigel Farage’s win in Clacton mean for Reform UK?",
-          "source": "The Times",
-          "url": "https://www.thetimes.com/video/news-video/article/nigel-farage-win-clacton-byelection-reform-uk-gdbhgpv82",
-          "date": "2026-08-14T06:33:24+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Clacton by-election: Muted response as Nigel Farage declared winner",
-          "source": "BBC",
-          "url": "https://www.bbc.co.uk/news/videos/c5ydzlry13zo",
-          "date": "2026-08-14T06:10:10+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Friday briefing: ​Nigel Farage’s Clacton ​circus ​is finally over, but ​his ​financial ​reckoning ​is just beginning",
-          "source": "The Guardian",
-          "url": "https://www.theguardian.com/world/2026/aug/14/friday-briefing-nigel-farages-clacton-circus-is-finally-over-but-his-financial-reckoning-is-just-beginning",
-          "date": "2026-08-14T05:52:54+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Nigel Farage Returns as MP",
-          "source": "BBC",
-          "url": "https://www.bbc.co.uk/iplayer/episode/l0058q4w/nigel-farage-returns-as-mp",
-          "date": "2026-08-14T05:49:21+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Nigel Farage is back on top… for now",
-          "source": "The Telegraph",
-          "url": "https://www.telegraph.co.uk/politics/2026/08/14/by-election-clacton-nigel-farage-count-binface-reform/",
-          "date": "2026-08-14T05:44:00+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Nigel Farage wins Clacton by-election but does not attend count",
-          "source": "Manchester Evening News",
-          "url": "https://www.manchestereveningnews.co.uk/news/uk-news/nigel-farage-wins-clacton-election-34456529",
-          "date": "2026-08-14T05:40:00+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Trump ally Nigel Farage wins special election to return to UK parliament",
-          "source": "CNBC",
-          "url": "https://www.cnbc.com/2026/08/14/nigel-farage-reform-uk-parliament-re-election.html",
-          "date": "2026-08-14T05:30:26+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Cotrina califica de \"buena noticia\" la continuidad de Almaraz y lamenta el \"ruido\" de PP y Vox",
-          "source": "canalextremadura.es",
-          "url": "https://www.canalextremadura.es/noticias/extremadura/cotrina-califica-de-buena-noticia-la-continuidad-de-almaraz-y-lamenta-el-ruido",
-          "date": "2026-08-14T05:29:14+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Nigel Farage’s risky gamble has paid off",
-          "source": "The Telegraph",
-          "url": "https://www.telegraph.co.uk/news/2026/08/14/nigel-farages-gamble-has-completely-paid-off/",
-          "date": "2026-08-14T05:27:00+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Farage's by-election victory won't stop questions about finances",
-          "source": "BBC",
-          "url": "https://www.bbc.co.uk/news/articles/cvgwz9delwwo",
-          "date": "2026-08-14T05:22:27+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Reform UK's Nigel Farage increases majority as Clacton MP with resounding win - gazette-news.co.uk",
-          "source": "",
-          "url": "https://www.gazette-news.co.uk/news/26463450.nigel-farage-wins-clacton-by-election-12-784-votes/",
-          "date": "2026-08-14T05:22:21+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Police didn't advise Nigel Farage not to attend Clacton count",
-          "source": "The National Scot",
-          "url": "https://www.thenational.scot/news/26463444.police-didnt-advise-nigel-farage-not-attend-clacton-by-election/",
-          "date": "2026-08-14T05:14:51+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Nigel Farage officially wins Clacton by-election with Count Binface second",
-          "source": "The National Scot",
-          "url": "https://www.thenational.scot/news/26463442.nigel-farage-officially-wins-clacton-by-election-count-binface/",
-          "date": "2026-08-14T05:10:27+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Nigel Farage wins Clacton by-election",
-          "source": "Financial Times",
-          "url": "https://www.ft.com/content/1bc8c77b-f3e2-4ad4-aefc-94b3f48426c6?syn-25a6b1a6=1",
-          "date": "2026-08-14T05:09:46+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Nigel Farage claims by-election win in Clacton | News - Greatest Hits Radio (Essex)",
-          "source": "Rayo",
-          "url": "https://planetradio.co.uk/greatest-hits/essex/news/nigel-farage-wins-clacton-by-election",
-          "date": "2026-08-14T05:09:27+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Nigel Farage reclaims seat in Clacton by-election win",
-          "source": "lbc.co.uk",
-          "url": "https://www.lbc.co.uk/article/nigel-farage-clacton-by-election-win-5Hjdg2r_2/",
-          "date": "2026-08-14T05:07:49+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Nigel Farage wins Clacton byelection in contest boycotted by every other major party",
-          "source": "The Guardian",
-          "url": "https://www.theguardian.com/politics/2026/aug/14/nigel-farage-wins-clacton-byelection-count-binface-boycotted-major-parties",
-          "date": "2026-08-14T05:07:00+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Nigel Farage Easily Wins Clacton By-Election – But Dodges Result Declaration",
-          "source": "huffingtonpost.co.uk",
-          "url": "https://www.huffingtonpost.co.uk/entry/nigel-farage-easily-wins-clacton-by-election-but-dodges-result-declaration_uk_6a7e9dafe4b081b49e2c9e6a",
-          "date": "2026-08-14T05:05:44+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Nigel Farage wins in Clacton with Count Binface securing more than 25% of vote",
-          "source": "Metro.co.uk",
-          "url": "https://metro.co.uk/2026/08/14/nigel-farage-clings-clacton-victory-count-binface-29367580/",
-          "date": "2026-08-14T05:05:00+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Reform UK's Nigel Farage to avoid election count against Count Binface",
-          "source": "Japan Today",
-          "url": "https://japantoday.com/category/world/reform-uk%27s-nigel-farage-to-avoid-election-count-against-count-binface",
-          "date": "2026-08-14T04:40:26+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Itthon: A Tisza-kormány tényleg betiltotta a cirkuszi vadállatok szerepeltetését",
-          "source": "| hvg.hu",
-          "url": "https://hvg.hu/itthon/20260814_gajdos-laszlo-tisza-kormany-cirkuszi-vadallatok-tiltas-kormanyrendelet",
-          "date": "2026-08-14T04:31:28+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Video: LIVE: Declaration in UK special election between Nigel Farage and Count Binface",
-          "source": "livetube.tv",
-          "url": "https://www.livetube.tv/news/video-live-declaration-in-uk-special-election-between-nigel-farage-and-count-binface",
-          "date": "2026-08-14T04:04:16+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Nigel Farage says he won't attend count in bizarre Clacton by-election",
-          "source": "ABC News & Headlines – Australian Broadcasting Corporation",
-          "url": "https://www.abc.net.au/news/2026-08-14/nigel-farage-to-skip-count-in-clacton-binface-byelection/107036762",
-          "date": "2026-08-14T03:56:15+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Nigel Farage declares he won't be attending Clacton by-election results - here's why",
-          "source": "Liverpool Echo",
-          "url": "https://www.liverpoolecho.co.uk/news/nigel-farage-declares-wont-attending-34456464",
-          "date": "2026-08-14T03:33:00+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Nigel Farage: We’ve secured 'far more votes' in Clacton compared to 2024",
-          "source": "BBC",
-          "url": "https://www.bbc.com/news/videos/c79gy8ndn5lo",
-          "date": "2026-08-14T03:28:54+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Why Nigel Farage won't be at Clacton by-election results",
-          "source": "Manchester Evening News",
-          "url": "https://www.manchestereveningnews.co.uk/news/uk-news/nigel-farage-wont-clacton-election-34456462",
-          "date": "2026-08-14T03:28:00+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Nigel Farage says he won't attend count and be 'humiliated by nobodies'",
-          "source": "Yahoo",
-          "url": "https://www.yahoo.com/news/videos/nigel-farage-says-wont-attend-032609740.html",
-          "date": "2026-08-14T03:26:00+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Nigel Farage says he won't attend Clacton by-election count after 'police advice'",
-          "source": "The National Scot",
-          "url": "https://www.thenational.scot/news/26463439.nigel-farage-says-wont-attend-clacton-by-election-count/",
-          "date": "2026-08-14T03:09:17+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Nigel Farage faces 34 rivals in Clacton by-election",
-          "source": "modernghana.com",
-          "url": "https://www.modernghana.com/videonews/aljazeera/1/699156",
-          "date": "2026-08-14T03:06:56+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Farage will not attend by-election result, saying he refuses to be 'humiliated' - gazette-news.co.uk",
-          "source": "",
-          "url": "https://www.gazette-news.co.uk/news/26463437.farage-will-not-attend-by-election-result-saying-refuses-humiliated/",
-          "date": "2026-08-14T02:08:37+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Count Binface responds to Nigel Farage declaring victory in Clacton by-election",
-          "source": "The National Scot",
-          "url": "https://www.thenational.scot/news/26463431.count-binface-responds-nigel-farage-claims-clacton-by-election-win/",
-          "date": "2026-08-14T01:41:15+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Rivals say Clacton by-election result won't make Nigel Farage donation questions stop",
-          "source": "The National Scot",
-          "url": "https://www.thenational.scot/news/26463389.reaction-clacton-by-election-count-gets-way/",
-          "date": "2026-08-14T01:15:14+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Nigel Farage declares victory against Count Binface in Clacton by-election",
-          "source": "The National Scot",
-          "url": "https://www.thenational.scot/news/26463420.nigel-farage-declares-victory-clacton-by-election/",
-          "date": "2026-08-14T01:14:13+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "UK vote count under way in Farage, Binface showdown in by-election",
-          "source": "RTE.ie",
-          "url": "https://www.rte.ie/news/uk/2026/0814/1587825-uk-election-clacton/",
-          "date": "2026-08-14T01:09:13+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Farage, Binface go head-to-head in snap UK poll",
-          "source": "Free Malaysia Today",
-          "url": "https://www.freemalaysiatoday.com/category/world/2026/08/14/farage-count-binface-go-head-to-head-in-snap-uk-poll",
-          "date": "2026-08-14T00:40:01+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Reform UK hold 'tragic' Clacton by-election party dubbed 'Farage Fest'",
-          "source": "The National Scot",
-          "url": "https://www.thenational.scot/news/26463427.reform-uk-hold-tragic-clacton-by-election-party-dubbed-farage-fest/",
-          "date": "2026-08-14T00:33:13+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Trump imposes tariffs of up to 100% on drone imports",
-          "source": "France 24",
-          "url": "https://www.france24.com/en/americas/20260814-donald-trump-imposes-tariffs-of-up-to-100-on-imported-drones",
-          "date": "2026-08-14T00:02:12+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Reform UK leader Farage faces parody candidate in by-election",
-          "source": "Semafor",
-          "url": "https://www.semafor.com/article/08/13/2026/reform-uk-leader-farage-faces-parody-candidate-in-by-election",
-          "date": "2026-08-13T22:59:00+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Pentagon Pete Drops ‘New’ Motto in Jungle Flex Video",
-          "source": "The Daily Beast",
-          "url": "https://www.thedailybeast.com/pentagon-pete-hegseth-drops-new-motto-in-jungle-flex-video/",
-          "date": "2026-08-13T22:55:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Votes being counted in Clacton by-election triggered by Nigel Farage",
-          "source": "Yahoo News Canada",
-          "url": "https://ca.news.yahoo.com/votes-being-counted-clacton-election-220150118.html",
-          "date": "2026-08-13T22:01:50+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Nigel Farage set for decisive but arguably empty victory in Clacton",
-          "source": "The Guardian",
-          "url": "https://www.theguardian.com/politics/2026/aug/13/nigel-farage-set-for-decisive-but-arguably-empty-victory-in-clacton",
-          "date": "2026-08-13T21:57:17+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Polls close in Clacton byelection as Nigel Farage battles Count Binface to retain his seat",
-          "source": "The Journal",
-          "url": "https://www.thejournal.ie/polls-close-clacton-byelection-nigel-farage-count-binface-7130679-Aug2026/",
-          "date": "2026-08-13T21:53:00+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Rivals say Clacton result will not make Farage donation questions stop",
-          "source": "Times & Star",
-          "url": "https://www.timesandstar.co.uk/news/national/26463383.rivals-say-clacton-result-will-not-make-farage-donation-questions-stop/",
-          "date": "2026-08-13T21:42:13+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Nigel Farage faces watchdog grilling after Clacton by-election",
-          "source": "The Times",
-          "url": "https://www.thetimes.com/uk/politics/article/nigel-farage-clacton-by-election-interviewed-standards-commissioner-l5wd7k5sk",
-          "date": "2026-08-13T21:25:32+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Clacton by-election polls close: What time is the result – as Farage aims to retain seat",
-          "source": "The Independent",
-          "url": "https://www.independent.co.uk/bulletin/news/clacton-by-election-polls-result-time-exit-farage-count-binface-b3032849.html",
-          "date": "2026-08-13T21:22:00+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Polls close in Clacton by-election as Nigel Farage hopes to retain seat after resignation",
-          "source": "lbc.co.uk",
-          "url": "https://www.lbc.co.uk/article/polls-close-in-clacton-by-election-as-nigel-farage-hopes-to-retain-seat-after-re-5Hjdg2c_2/",
-          "date": "2026-08-13T21:04:57+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Polls close in Clacton by-election as Farage vies to retain seat",
-          "source": "Sidmouth Herald",
-          "url": "https://www.sidmouthherald.co.uk/news/national/26463360.polls-close-clacton-by-election-farage-vies-retain-seat/",
-          "date": "2026-08-13T21:02:11+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Clacton by-election 2026 results in full as Nigel Farage hopes to regain seat",
-          "source": "Manchester Evening News",
-          "url": "https://www.manchestereveningnews.co.uk/news/uk-news/clacton-election-2026-results-full-34438775",
-          "date": "2026-08-13T21:00:00+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "How much did the Clacton by-election cost and who paid for it?",
-          "source": "Manchester Evening News",
-          "url": "https://www.manchestereveningnews.co.uk/news/uk-news/how-much-clacton-election-cost-34456064",
-          "date": "2026-08-13T21:00:00+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Is there an exit poll for the Clacton by-election?",
-          "source": "Manchester Evening News",
-          "url": "https://www.manchestereveningnews.co.uk/news/uk-news/exit-poll-clacton-election-34435344",
-          "date": "2026-08-13T21:00:00+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Counting of votes under way in Clacton by-election triggered by Farage",
-          "source": "RTE.ie",
-          "url": "https://www.rte.ie/news/uk/2026/0813/1587681-clacton-by-election/",
-          "date": "2026-08-13T20:27:25+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Clacton by-election LIVE results and reaction as Nigel Farage takes on Binface",
-          "source": "The National Scot",
-          "url": "https://www.thenational.scot/news/26463333.clacton-by-election-live-results-reaction/",
-          "date": "2026-08-13T20:26:54+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Encuesta: seis de cada diez personas creen que Milei no defiende la patria y la soberanía",
-          "source": "Letra P",
-          "url": "https://www.letrap.com.ar/politica/encuesta-seis-cada-diez-personas-creen-que-milei-no-defiende-la-patria-y-la-soberania-n5425808",
-          "date": "2026-08-13T20:16:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Clacton By-Election Marks Watershed Moment for Nigel Farage and Reform UK",
-          "source": "The New York Sun",
-          "url": "https://www.nysun.com/article/clacton-by-election-marks-watershed-moment-for-nigel-farage-and-reform-uk",
-          "date": "2026-08-13T19:37:35+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Clacton by-election LIVE results and reaction as Nigel Farage seeks to win back seat",
-          "source": "Manchester Evening News",
-          "url": "https://www.manchestereveningnews.co.uk/news/uk-news/clacton-election-live-results-reaction-34455968",
-          "date": "2026-08-13T19:34:13+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Voting underway in Farage by-election battle with bin-wearing comedian",
-          "source": "abc.net.au",
-          "url": "https://www.abc.net.au/news/2026-08-14/farage-clacton-election-night-result-2026/107035574",
-          "date": "2026-08-13T19:23:55+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Baby Etchecopar destrozó a Javier Milei en vivo: \"Todas las payasadas posibles\"",
-          "source": "El Destape",
-          "url": "https://www.eldestapeweb.com/espectaculos/baby-etchecopar-destrozo-javier-milei-vivo-todas-payasadas-posibles-2026813161519?outputType=amp",
-          "date": "2026-08-13T19:20:58+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Mateusz Morawiecki i śląscy posłowie wyrzuceni z PiS. Zapadła ostateczna decyzja",
-          "source": "Katowice Nasze Miasto",
-          "url": "https://katowice.naszemiasto.pl/mateusz-morawiecki-i-slascy-poslowie-wyrzuceni-z-pis-zapadla-ostateczna-decyzja/ar/c1p2-29265531",
-          "date": "2026-08-13T19:10:57+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Will Congress be left to define ultraprocessed foods?",
-          "source": "Food Dive",
-          "url": "https://www.fooddive.com/news/ultraprocessed-foods-definition-fda-congress-states/827831/",
-          "date": "2026-08-13T18:11:33+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "British Indian Entrepreneur Takes on Nigel Farage in Clacton’s Unusual Election",
-          "source": "EasternEye",
-          "url": "https://www.easterneye.biz/ketankumar-pipaliya-nigel-farage-clacton-by-election/",
-          "date": "2026-08-13T17:03:36+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Asian entrepreneur challenges Nigel Farage in Clacton vote",
-          "source": "EasternEye",
-          "url": "https://www.easterneye.biz/asian-entrepreneur-challenges-nigel-farage-in-clacton-vote/",
-          "date": "2026-08-13T16:54:36+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Reform thinks its own members are a ’threat’ to them taking power",
-          "source": "thecanary.co",
-          "url": "https://www.thecanary.co/trending/2026/08/13/reform-thinks-its/",
-          "date": "2026-08-13T16:38:10+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Farage and Reform UK damaged by Labour upheaval",
-          "source": "The Irish Times",
-          "url": "https://www.irishtimes.com/world/uk/2026/08/13/farage-and-reform-uk-damaged-by-labour-upheaval/",
-          "date": "2026-08-13T16:17:56+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Nigel Farage's unlikely challenger is a comedian dressed as a trash can",
-          "source": "Little Rock Public Radio",
-          "url": "https://www.ualrpublicradio.org/2026-08-13/nigel-farages-unlikely-challenger-is-a-comedian-dressed-as-a-trash-can?_amp=true",
-          "date": "2026-08-13T15:59:00+00:00",
-          "category": "uk"
         }
       ],
       "first_seen": "2026-08-14T14:06:27+00:00",
-      "last_seen": "2026-08-14T14:06:27+00:00"
+      "last_seen": "2026-08-15T02:06:57+00:00"
     }
   ]
 }
