@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-18T01:58:43+00:00",
+  "updated_at": "2026-08-18T13:25:25+00:00",
   "lookback_hours": 48,
   "model": "Mistral Large",
   "status": "ok",
@@ -7,26 +7,273 @@
     {
       "id": "afds-rise-and-far-right-governance-threats-in-germany",
       "title": "AfD’s rise and far-right governance threats in Germany",
-      "blurb": "The Alternative für Deutschland (AfD) continues to surge in polls, particularly in Saxony-Anhalt, where it leads with over 40% support. The party's potential to form a government raises alarms over its extremist ties, unconstitutional rhetoric, and impact on democratic institutions. Internal conflicts within other parties, such as the CDU and BSW, further complicate the political landscape.",
-      "affect": "This commands disproportionate attention due to the high stakes of far-right governance in Germany, the polarization over extremist rhetoric, and the potential erosion of democratic norms.",
+      "blurb": "The AfD leads polls in Saxony-Anhalt and Mecklenburg-Vorpommern, with potential to form governments. Celebrities and NGOs launch campaigns to block an AfD absolute majority, while courts bar AfD candidates from elections due to extremist ties.",
+      "affect": "This commands disproportionate attention due to fears of far-right governance, polarized contention, and moral panic over democratic backsliding.",
       "intensity": 5,
       "affect_signals": [
         "polarized contention",
         "alarmist framing",
         "cross-source repetition",
-        "leadership crisis tone",
-        "moral panic register"
+        "moral panic register",
+        "leadership crisis tone"
       ],
       "categories": [
-        "🇩🇪 Alternative für Deutschland"
+        "de",
+        "far-right",
+        "elections"
       ],
       "article_count": 120,
       "refs": [
         {
-          "title": "Landtagswahl in Sachsen-Anhalt: „Das BSW wird die AfD zu 100 Prozent unterstützen“",
+          "title": "Bundestag – AfD will bei Organspende geschlossen abstimmen",
+          "source": "PRO | Das christliche Medienmagazin",
+          "url": "https://www.pro-medienmagazin.de/afd-will-bei-organspende-geschlossen-abstimmen/",
+          "date": "2026-08-18T12:43:05+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Kanzler im Osten unerwünscht: Jetzt muss ausgerechnet Merz‘ größter Rivale die CDU retten",
+          "source": "merkur.de",
+          "url": "https://www.merkur.de/politik/statt-merz-wuest-soll-der-cdu-jetzt-die-wahl-in-sachsen-anhalt-retten-zr-94448919.html",
+          "date": "2026-08-18T12:23:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "AfD will Fördermittel für \"antideutsche\" Kultur streichen",
+          "source": "DW.com",
+          "url": "https://www.dw.com/de/afd-will-f%C3%B6rdermittel-f%C3%BCr-antideutsche-kultur-streichen/a-78303972",
+          "date": "2026-08-18T11:46:53+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Weimar und die Bundesrepublik: Wir haben nicht 1932",
+          "source": "RP Online",
+          "url": "https://rp-online.de/politik/analyse-und-meinung/afd-und-nsdap-wir-haben-nicht-1932_aid-153307707",
+          "date": "2026-08-18T11:08:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "‘Stopping AfD’: German Left-Wing Celebrities and NGOs Team Up Against Weidel’s Party",
+          "source": "The European Conservative",
+          "url": "https://europeanconservative.com/articles/news/anti-afd-campaign-german-left-wing-saxony-anhalt-election/",
+          "date": "2026-08-18T11:01:26+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Debatte: Wie links ist die AfD?",
+          "source": "SZ.de",
+          "url": "https://www.sueddeutsche.de/kultur/afd-rechts-links-sozialpolitik-debatte-li.3523031",
+          "date": "2026-08-18T10:55:04+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Buchholz:: AfD-Bürgermeisterkandidat lädt zum Wirtschafts- und Bürgerdialog - kreiszeitung-wochenblatt.de",
+          "source": "",
+          "url": "https://www.kreiszeitung-wochenblatt.de/buchholz/c-politik/afd-buergermeisterkandidat-laedt-zum-wirtschafts-und-buergerdialog_a415887",
+          "date": "2026-08-18T10:26:09+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Wie ihre US-Kollegen gegen Trump: Deutsche Promis stellen sich gegen die AfD",
+          "source": "Ostdeutsche Allgemeine",
+          "url": "https://ostdeutscheallgemeine.com/article/wie-ihre-us-kollegen-gegen-trump-deutsche-promis-stellen-sich-gegen-die-afd-10303727",
+          "date": "2026-08-18T10:25:13+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "AfD baut Vorsprung auf Union aus – SPD verliert Anschluss an die Grünen",
+          "source": "WELT",
+          "url": "https://www.welt.de/politik/deutschland/article6a83e81da87e8142c31d3695/afd-baut-vorsprung-auf-union-aus-spd-verliert-anschluss-an-die-gruenen.html",
+          "date": "2026-08-18T09:49:13+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Familien, Handwerker, Rechtsextreme: Wer jetzt Siegmund im AfD-Wahlkampf zujubelt",
+          "source": "BILD",
+          "url": "https://www.bild.de/politik/inland/von-kleinkindern-bis-rechtsextremen-wer-jetzt-siegmund-im-afd-wahlkampf-zujubelt-6a8359f0a87e8142c31d3382",
+          "date": "2026-08-18T08:50:37+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Aufstand an der Wahlurne: In Sachsen-Anhalt schlägt der Souverän zurück",
+          "source": "Ostdeutsche Allgemeine",
+          "url": "https://ostdeutscheallgemeine.com/article/sachsen-anhalt-jetzt-schlaegt-der-souveraen-zurueck-10283445",
+          "date": "2026-08-18T08:49:42+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Sonntagsfrage: AfD liegt baut in neuer Umfrage den Vorsprung vor der Union aus - T-Online",
+          "source": "",
+          "url": "https://www.t-online.de/nachrichten/deutschland/innenpolitik/id_101393690/neue-umfrage-afd-vergroessert-abstand-zur-union-in-sonntagsfrage.html",
+          "date": "2026-08-18T08:48:18+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "KI-Propaganda auf Tiktok: So inszenieren AfD-Supporter den Niedergang Deutschlands",
+          "source": "Golem",
+          "url": "https://www.golem.de/news/ki-propaganda-auf-tiktok-so-inszenieren-afd-supporter-den-niedergang-deutschlands-2608-211999.html",
+          "date": "2026-08-18T08:44:01+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "YouGov-Umfrage: AfD baut Vorsprung auf Union aus – Grüne erreichen besten Wert seit mehr als einem Jahr - Video",
+          "source": "WELT",
+          "url": "https://www.welt.de/videos/video6a8415e9d54f65372fb0ca1e/yougov-umfrage-afd-baut-vorsprung-auf-union-aus-gruene-erreichen-besten-wert-seit-mehr-als-einem-jahr.html",
+          "date": "2026-08-18T08:25:55+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Sachsen-Anhalt: Schulze warnt vor Wahl des BSW – „Wird die AfD zu 100 Prozent unterstützen“",
+          "source": "WELT",
+          "url": "https://www.welt.de/politik/deutschland/article6a8402a1d54f65372fb0c86e/sachsen-anhalt-schulze-warnt-vor-wahl-des-bsw-wird-die-afd-zu-100-prozent-unterstuetzen.html",
+          "date": "2026-08-18T07:59:23+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Sachsen-Anhalt: Sachsen-Anhalts Regierungschef Schulze warnt vor Wahl des BSW",
+          "source": "DIE ZEIT",
+          "url": "https://www.zeit.de/politik/deutschland/2026-08/sachsen-anhalt-sven-schulze-cdu-bsw-afd-ulrich-siegmund",
+          "date": "2026-08-18T07:28:03+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "„Wahre Heimatliebe ist“ Prominente unterstützen Kampagne gegen AfD-Alleinregierung in Sachsen-Anhalt",
+          "source": "Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/gesellschaft/wahre-heimatliebe-ist-prominente-unterstutzen-kampagne-gegen-afd-alleinregierung-in-sachsen-anhalt-15952931.html",
+          "date": "2026-08-18T07:25:06+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "„Das schärfste Schwert der wehrhaften Demokratie wird stumpf, wenn man es nicht nutzt“",
+          "source": "WELT",
+          "url": "https://www.welt.de/politik/deutschland/plus6a7d955e0773f8de246727ab/afd-verbotsverfahren-das-schaerfste-schwert-der-wehrhaften-demokratie-wird-stumpf-wenn-man-es-nicht-nutzt.html",
+          "date": "2026-08-18T07:22:07+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Umfrage: AfD baut Vorsprung auf Union aus – SPD verliert Anschluss an die Grünen",
+          "source": "WELT",
+          "url": "https://www.welt.de/politik/deutschland/article6a83e81da87e8142c31d3695/umfrage-afd-baut-vorsprung-auf-union-aus-spd-verliert-anschluss-an-die-gruenen.html",
+          "date": "2026-08-18T06:26:54+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "AfD in Sachsen-Anhalt: Auf allen Wegen zur Macht?",
+          "source": "Analyse & Kritik",
+          "url": "https://www.akweb.de/ausgaben/728/afd-in-sachsen-anhalt-auf-allen-wegen-zur-macht-die-szenarien-im-ueberblick/",
+          "date": "2026-08-18T06:06:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Was tun, wenn die extreme Rechte regiert?",
+          "source": "Analyse & Kritik",
+          "url": "https://www.akweb.de/ausgaben/728/was-tun-wenn-die-extreme-rechte-regiert-sachsen-anhalt-afd-antifaschismus-zivilgesellschaft/",
+          "date": "2026-08-18T06:04:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Machtkampf im BSW: Wolf gegen Wagenknecht in Koalitionsfrage – Sonderparteitag geplant",
+          "source": "Frankfurter Rundschau",
+          "url": "https://www.fr.de/politik/machtkampf-im-bsw-landesvorstand-trotzt-wagenknecht-sonderparteitag-soll-koalitionsfrage-klaeren-zr-94448105.html",
+          "date": "2026-08-18T05:40:55+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "CDU-Ministerpräsident Sven Schulze: „Das BSW wird die AfD zu 100 Prozent unterstützen“",
           "source": "Augsburger Allgemeine",
-          "url": "https://www.augsburger-allgemeine.de/politik/landtagswahl-in-sachsen-anhalt-das-bsw-wird-die-afd-zu-100-prozent-unterstuetzen-115028060",
-          "date": "2026-08-18T01:00:00+00:00",
+          "url": "https://www.augsburger-allgemeine.de/politik/landtagswahl-in-sachsen-anhalt-cdu-ministerpraesident-warnt-das-bsw-wird-die-afd-zu-100-prozent-unterstuetzen-115028060",
+          "date": "2026-08-18T05:19:55+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Debatte um AfD-Verbotsverfahren: Jetzt erst recht?",
+          "source": "taz.de",
+          "url": "https://taz.de/Debatte-um-AfD-Verbotsverfahren/!6204993/",
+          "date": "2026-08-18T05:16:31+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Im Falle eines Wahlsiegs: Sicherheitsbehörden beraten über Schutz vor AfD-Zugriff auf geheime Informationen - Video",
+          "source": "welt.de",
+          "url": "https://www.welt.de/videos/video6a83db1c9fcb5798aae39f73/im-falle-eines-wahlsiegs-sicherheitsbehoerden-beraten-ueber-schutz-vor-afd-zugriff-auf-geheime-informationen.html",
+          "date": "2026-08-18T04:59:11+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "„Schädlingsbekämpfung” – Didi Hallervorden macht auf TikTok Stimmung gegen die AfD",
+          "source": "WELT",
+          "url": "https://www.welt.de/videos/video6a83dccfa87e8142c31d3632/wahlkampf-schaedlingsbekaempfung-didi-hallervorden-macht-auf-tiktok-stimmung-gegen-die-afd.html",
+          "date": "2026-08-18T04:29:45+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "„Die Beweislast ist erdrückend“: Wieso zwei Augsburger Juristen ein AfD-Verbot fordern",
+          "source": "Augsburger Allgemeine",
+          "url": "https://www.augsburger-allgemeine.de/augsburg/afd-verbot-wieso-zwei-augsburger-juristen-ein-afd-verbotsverfahren-fordern-115015017",
+          "date": "2026-08-18T04:28:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Julian F.M. Stoeckel warnt vor AfD: „Wie der Rattenfänger von Hameln”",
+          "source": "BUNTE.de",
+          "url": "https://www.bunte.de/stars/julian-f-m-stoeckel-warnt-vor-afd-wie-der-rattenfaenger-von-hameln_c1c987e6-b13a-42e9-ae17-8fc047ff0533.html",
+          "date": "2026-08-18T04:04:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "„Wahre Heimatliebe ist“ – Prominente wollen mit Kampagne AfD-Alleinregierung verhindern",
+          "source": "WELT",
+          "url": "https://www.welt.de/politik/deutschland/article6a83d0e6a87e8142c31d35f3/sachsen-anhalt-wahre-heimatliebe-ist-prominente-wollen-mit-kampagne-afd-alleinregierung-verhindern.html",
+          "date": "2026-08-18T03:46:38+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Vier KI-Modelle machen den Wahl-O-Mat für Sachsen-Anhalt. Eine Partei landet immer hinten.",
+          "source": "NZZ – Neue Zürcher Zeitung",
+          "url": "https://www.nzz.ch/visuals/ki-chat-modelle-wahl-o-mat-sachsen-anhalt-afd-ld.10019466",
+          "date": "2026-08-18T03:30:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Prominente unterstützen Kampagne gegen AfD-Alleinregierung - Lippische Landes-Zeitung",
+          "source": "",
+          "url": "https://www.lz.de/starline/leute/24398364_Prominente-unterstuetzen-Kampagne-gegen-AfD-Alleinregierung.html",
+          "date": "2026-08-18T03:00:08+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "AfD-​Aussteiger: Die Brand­mau­er ist ge­fal­len, ein ra­di­ka­ler Strip­pen­zie­her aus Rheinland-​Pfalz",
+          "source": "rheinpfalz.de",
+          "url": "https://www.rheinpfalz.de/lokal/ludwigshafen_artikel,-afd-aussteiger-die-brandmauer-ist-gefallen-ein-radikaler-strippenzieher-aus-rheinland-pfalz-_arid,5920367.html",
+          "date": "2026-08-18T03:00:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "AfD und die Medien: Was ist da los? - T-Online",
+          "source": "",
+          "url": "https://www.t-online.de/nachrichten/tagesanbruch/id_101393126/afd-und-die-medien-gefaehrliche-gier-nach-aufmerksamkeit.html",
+          "date": "2026-08-18T02:25:48+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "AfD und die Medien: Die Fehler häufen sich - T-Online",
+          "source": "",
+          "url": "https://www.t-online.de/nachrichten/tagesanbruch/id_101393126/afd-und-die-medien-die-gefaehrliche-gier-nach-aufmerksamkeit.html",
+          "date": "2026-08-18T02:25:48+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "AfD in Senftenberg: Was auf der Veranstaltung nicht gesagt wurde",
+          "source": "moz.de",
+          "url": "https://www.moz.de/nachrichten/brandenburg/afd-in-senftenberg-was-auf-der-veranstaltung-nicht-gesagt-wurde-79388015.html",
+          "date": "2026-08-18T02:20:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Özdemir warnt vor Geheimdienstmissbrauch durch AfD-Regierung - EU-Schwerbehinderung",
+          "source": "",
+          "url": "https://www.eu-schwerbehinderung.eu/index.php/33-aktuelles/35650-oezdemir-warnt-vor-geheimdienstmissbrauch-durch-afd-regierung",
+          "date": "2026-08-18T01:40:00+00:00",
           "category": "germany"
         },
         {
@@ -44,17 +291,143 @@
           "category": "germany"
         },
         {
-          "title": "Ist für Merz bald Schluss?: In Sachsen-Anhalt \"wird sich eine Katastrophe ereignen\" - n-tv.de",
-          "source": "",
-          "url": "https://www.n-tv.de/politik/In-Sachsen-Anhalt-wird-sich-eine-Katastrophe-ereignen-id31203410.html",
-          "date": "2026-08-17T18:16:45+00:00",
+          "title": "Karina Milei reabrió las conversaciones con Mauricio Macri e inició negociaciones con gobernadores ante el impacto de las variables económicas",
+          "source": "Radio LV11",
+          "url": "https://www.radiolv11.com.ar/noticia/karina-milei-reabrio-las-conversaciones-con-mauricio-macri-e-inicio-negociaciones-con-gobernadores-ante-el-impacto-de-las-variables-economicas-",
+          "date": "2026-08-18T00:03:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "„Hier ist jeder auf der Mission absolute Mehrheit“",
+          "source": "BILD",
+          "url": "https://www.bild.de/politik/bild-reporter-bei-afd-wahlveranstaltung-hier-ist-jeder-auf-der-mission-absolute-mehrheit-6a836ad3a87e8142c31d3408",
+          "date": "2026-08-17T20:48:56+00:00",
           "category": "germany"
         },
         {
-          "title": "„Der Gipfel der Hilflosigkeit, auch der Unfähigkeit dieser Regierenden“",
-          "source": "WELT",
-          "url": "https://www.welt.de/politik/deutschland/video6a8342f29fcb5798aae39b1b/plaene-gegen-afd-regierung-der-gipfel-der-hilflosigkeit-auch-der-unfaehigkeit-dieser-regierenden.html",
-          "date": "2026-08-17T17:32:09+00:00",
+          "title": "Elutasította az Alkotmánybíróság a Fidesz beadványait a 17. alaptörvénymódosításról – a nap hírei",
+          "source": "Infostart",
+          "url": "https://infostart.hu/belfold/2026/08/17/elutasitotta-az-alkotmanybirosag-a-fidesz-beadvanyait-a-17-alaptorvenymodositasrol-a-nap-hirei",
+          "date": "2026-08-17T20:04:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Jimmie Åkesson öppnar för S-förslaget",
+          "source": "Expressen",
+          "url": "https://www.expressen.se/nyheter/politik/jimmie-akesson-oppnar-for-s-forslaget/",
+          "date": "2026-08-17T19:59:26+00:00",
+          "category": "sweden"
+        },
+        {
+          "title": "Wahl in Niedersachsen: Martin Sichert (AfD) ausgeschlossen",
+          "source": "NDR.de",
+          "url": "https://www.ndr.de/nachrichten/info/wahl-in-niedersachsen-martin-sichert-afd-ausgeschlossen,ndrinfo-16132.html",
+          "date": "2026-08-17T19:45:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "NDR Info - Wahl in Niedersachsen: Martin Sichert (AfD) ausgeschlossen - hier anschauen",
+          "source": "ardmediathek.de",
+          "url": "https://www.ardmediathek.de/video/ndr-info/wahl-in-niedersachsen-martin-sichert-afd-ausgeschlossen/ndr/Y3JpZDovL25kci5kZS9lMzFjN2ExZS0wY2I4LTQ5ODctOTgyNS04ZjY4MTJlYTZkZjQ",
+          "date": "2026-08-17T19:45:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Niedersachsen: Gericht weist Eilantrag von AfD-Landesvize gegen Ausschluss von Landratswahl ab",
+          "source": "welt.de",
+          "url": "https://www.welt.de/politik/deutschland/article6a8352d78434e27b14efabc0/niedersachsen-gericht-weist-eilantrag-von-afd-landesvize-gegen-ausschluss-von-landratswahl-ab.html",
+          "date": "2026-08-17T18:53:54+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Kommunalwahl 2026: AfD-Kandidaten klagen gegen Ausschlüsse",
+          "source": "NDR.de",
+          "url": "https://www.ndr.de/fernsehen/sendungen/hallo_niedersachsen/kommunalwahl-2026-afd-kandidaten-klagen-gegen-ausschluesse,hallonds-9544.html",
+          "date": "2026-08-17T18:23:22+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Niedersachsen & Bremen: Eilanträge gegen AfD-Ausschluss von Landratswahl abgewiesen - n-tv.de",
+          "source": "",
+          "url": "https://www.n-tv.de/regionales/niedersachsen-und-bremen/Eilantraege-gegen-AfD-Ausschluss-von-Landratswahl-abgewiesen-id31203774.html",
+          "date": "2026-08-17T18:22:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Eilanträge gegen AfD-Ausschluss von Landratswahl abgewiesen - GN-Online",
+          "source": "",
+          "url": "https://www.gn-online.de/niedersachsen/eilantraege-gegen-afd-ausschluss-von-landratswahl-abgewiesen-619532.html",
+          "date": "2026-08-17T18:22:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "\"Chce nam pokazać miejsce w szeregu\". Koalicjantka gorzko o Tusku",
+          "source": "PolsatNews.pl",
+          "url": "https://www.polsatnews.pl/gosc-wydarzen/2026-08-17/mielismy-byc-inni-niz-pis-koalicjantka-gorzko-o-decyzji-tuska/",
+          "date": "2026-08-17T18:16:00+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Trump administration pausing Big Bend construction",
+          "source": "The Texas Tribune",
+          "url": "https://www.texastribune.org/2026/08/17/texas-big-bend-national-park-border-wall-construction-pause/",
+          "date": "2026-08-17T18:13:16+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Zittern vor AfD-Wahlsiegen: Der Riss beginnt im Osten, der Bruch erfolgt im Westen - n-tv.de",
+          "source": "",
+          "url": "https://www.n-tv.de/politik/politik_kommentare/Der-Riss-beginnt-im-Osten-der-Bruch-erfolgt-im-Westen-id31200798.html",
+          "date": "2026-08-17T18:08:51+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "„Spiegel“-Cover mit AfD-Kandidat: Der „gefährlichste Mann Deutschlands“ freut sich",
+          "source": "DiePresse.com",
+          "url": "https://www.diepresse.com/41178207/spiegel-cover-mit-afd-kandidat-der-gefaehrlichste-mann-deutschlands",
+          "date": "2026-08-17T18:03:52+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Eklat vor Niedersachsen-Wahl: AfD-Kandidat scheitert mit Klage gegen Ausschluss",
+          "source": "BILD",
+          "url": "https://www.bild.de/politik/inland/eklat-vor-niedersachsen-wahl-afd-kandidat-scheitert-mit-klage-gegen-ausschluss-6a833d6b6ea5074f5dd87f7c",
+          "date": "2026-08-17T17:56:40+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Niedersachsen: Eilantrag von AfD-Politiker Sichert gegen Ausschluss von Landratswahl abgewiesen",
+          "source": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/niedersachsen-eilantrag-von-afd-politiker-sichert-gegen-ausschluss-von-landratswahl-abgewiesen-100.html",
+          "date": "2026-08-17T17:44:31+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Magyar Péter estére hozott egy jó hírt",
+          "source": "Mfor.hu",
+          "url": "https://mfor.hu/cikkek/kozelet/magyar-peter-estere-hozott-egy-jo-hirt.html",
+          "date": "2026-08-17T17:31:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Hallo Niedersachsen - Kommunalwahl 2026: AfD-Kandidaten klagen gegen Ausschlüsse - hier anschauen",
+          "source": "ARD Mediathek",
+          "url": "https://www.ardmediathek.de/video/hallo-niedersachsen/kommunalwahl-2026-afd-kandidaten-klagen-gegen-ausschluesse/ndr/Y3JpZDovL25kci5kZS8yNjY2ZTRkZC02ZmQxLTQ5ZGYtYWUyNS00OThiOTM2NTI2ZmU",
+          "date": "2026-08-17T17:30:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Itthon: Magyar Péter: Jövő héttől már elkezdhetik tervezni a paksi turbinák visszakapcsolását",
+          "source": "| hvg.hu",
+          "url": "https://hvg.hu/itthon/20260817_magyar-peter-paks-helyzetjelentes",
+          "date": "2026-08-17T17:20:54+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "XXL-Studie entlarvt Mythos vom abgehängten AfD-Wähler",
+          "source": "BILD",
+          "url": "https://www.bild.de/politik/inland/xxl-studie-entlarvt-mythos-vom-abgehaengten-afd-waehler-6a82ca1d9c4b6838990478dc",
+          "date": "2026-08-17T17:19:02+00:00",
           "category": "germany"
         },
         {
@@ -65,10 +438,52 @@
           "category": "germany"
         },
         {
+          "title": "\"Vernunft wählt niemals AfD\": Dieter Hallervorden positioniert sich vor Wahl in Sachsen-Anhalt",
+          "source": "TV Spielfilm",
+          "url": "https://www.tvspielfilm.de/news/stars/vernunft-waehlt-niemals-afd-dieter-hallervorden-positioniert-sich-vor-wahl-in-sachsen-anhalt,13408192,ApplicationArticle.html",
+          "date": "2026-08-17T16:52:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Reform deputy leader accused of being ‘completely out of touch’ for telling people to ‘enjoy’ climate change",
+          "source": "The Independent",
+          "url": "https://www.independent.co.uk/news/uk/politics/richard-tice-reform-enjoy-climate-change-greenpeace-b3034342.html",
+          "date": "2026-08-17T16:44:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Jordan Bilinski v. His Majesty the King",
+          "source": "CPAC",
+          "url": "https://www.cpac.ca/supreme-court-hearings/episode/jordan-bilinski-v-his-majesty-the-king?id=80e14d0d-3c40-4f87-918b-438b247c7169",
+          "date": "2026-08-17T16:35:26+00:00",
+          "category": "networks"
+        },
+        {
+          "title": "There’s a problem in the small print of Reform UK’s benefits plan",
+          "source": "The Times",
+          "url": "https://www.thetimes.com/uk/politics/article/reform-immigration-benefits-pip-policy-nigel-farage-qvdrs6vhh",
+          "date": "2026-08-17T16:30:33+00:00",
+          "category": "uk"
+        },
+        {
           "title": "Sahra Wagenknecht und AfD: Showdown der Populisten",
           "source": "FAZ",
           "url": "https://www.faz.net/aktuell/politik/inland/sahra-wagenknecht-und-afd-showdown-der-populisten-201133532.html",
           "date": "2026-08-17T16:21:01+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Trump orders Pete Hegseth to reduce South Korea military drills",
+          "source": "Fox News",
+          "url": "https://www.foxnews.com/video/6403590843112",
+          "date": "2026-08-17T16:05:16+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "AfD-Mann Sichert unterliegt mit seiner Beschwerde gegen Nicht-Zulassung zur Landratswahl",
+          "source": "Rundblick Niedersachsen",
+          "url": "https://rundblick-niedersachsen.de/afd-mann-sichert-unterliegt-mit-seiner-beschwerde-gegen-nicht-zulassung-zur-landratswahl",
+          "date": "2026-08-17T15:54:23+00:00",
           "category": "germany"
         },
         {
@@ -79,10 +494,227 @@
           "category": "general"
         },
         {
+          "title": "Kommunalwahl: Martin Sichert (AfD) scheitert vor Gericht",
+          "source": "OZ online",
+          "url": "https://www.oz-online.de/artikel/1679201/Martin-Sichert-AfD-scheitert-vor-Gericht",
+          "date": "2026-08-17T15:41:25+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Niedersachsen: AfD-Mann Sichert scheitert mit Eilantrag gegen Nichtzulassung bei Landratswahl",
+          "source": "WELT",
+          "url": "https://www.welt.de/politik/deutschland/article6a831b449fcb5798aae3987e/niedersachsen-afd-mann-sichert-scheitert-mit-eilantrag-gegen-nichtzulassung-bei-landratswahl.html",
+          "date": "2026-08-17T15:40:57+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Finden am 13. September statt: Von Kommunalwahl in Friesland ausgeschlossen: AfD-Politiker scheitert vor Gericht - n-tv.de",
+          "source": "",
+          "url": "https://www.n-tv.de/ticker/Von-Kommunalwahl-in-Friesland-ausgeschlossen-AfD-Politiker-scheitert-vor-Gericht-id31203421.html",
+          "date": "2026-08-17T15:36:48+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Berlin Code – mit Linda Zervakis - Sachsen-Anhalt, Wagenknecht und ein brisantes AfD-Angebot",
+          "source": "rbb24 Inforadio",
+          "url": "https://www.inforadio.de/podcast/feeds/berlin-code/episoden/2026/sachsen-anhalt--wagenknecht-und-ein-brisantes-afd-angebot.html",
+          "date": "2026-08-17T15:33:01+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Durván bezuhant a 4iG, miután Magyar Péter a szájára vette a céget",
+          "source": "Telex",
+          "url": "https://telex.hu/gazdasag/2026/08/17/4ig-vizsgalat-tozsde-arfolyam",
+          "date": "2026-08-17T15:31:26+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Wahl MV 2026: TV-DUELL, NDR hofiert Schwesig und AfD",
+          "source": "FAZ",
+          "url": "https://www.faz.net/aktuell/feuilleton/medien-und-film/medienpolitik/wahl-mv-2026-tv-duell-ndr-hofiert-schwesig-und-afd-201134271.html",
+          "date": "2026-08-17T15:25:54+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Jenrick: ‘Clean up your local high street or be stripped of your benefits’",
+          "source": "Newark Advertiser",
+          "url": "https://www.newarkadvertiser.co.uk/news/jenrick-clean-up-your-local-high-street-or-be-stripped-of-9478901/",
+          "date": "2026-08-17T15:24:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "YouGov Sonntagsfrage im August 2026: AfD stabil stärkste Kraft +++ Grüne so stark wie seit Januar 2025 nicht mehr",
+          "source": "yougov.com",
+          "url": "https://yougov.com/de-de/artikel/55376-yougov-sonntagsfrage-im-august-2026-afd-stabil-starkste-kraft-grune-so-stark-wie-seit-januar-2025-nicht-mehr",
+          "date": "2026-08-17T15:12:59+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Die Wahlkampfhilfe des \"Spiegel\" für die AfD ist unnötig",
+          "source": "Der Standard",
+          "url": "https://www.derstandard.at/story/3000000335893/die-wahlkampfhilfe-des-spiegel-fuer-die-afd-ist-unnoetig",
+          "date": "2026-08-17T15:06:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Brandmauer zur AfD gescheitert? BSW-Politiker De Masi mit klarer Ansage im ZDF",
+          "source": "Merkur",
+          "url": "https://www.merkur.de/politik/bsw-und-afd-de-masi-erklaert-kurs-vor-sachsen-anhalt-wahl-zr-94447733.html",
+          "date": "2026-08-17T15:05:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Kommunalwahl: AfD-Kandidatin teilt Medizin-Verschwörungstheorien - und arbeitet in Apotheke",
+          "source": "GA online",
+          "url": "https://www.ga-online.de/artikel/1679050/AfD-Kandidatin-teilt-Medizin-Verschwoerungstheorien-und-arbeitet-in-Apotheke",
+          "date": "2026-08-17T15:03:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Machtkampf unter Rechten: Warum der Holzwickeder AfD-Kreischef unter Druck gerät",
+          "source": "Hellweger Anzeiger",
+          "url": "https://www.hellwegeranzeiger.de/holzwickede/afd-machtkampf-nrw-grubendorfer-holzwickede-vincentz-helferich-konflikt-fellner-politik-rechte-w1233058-1001749952/",
+          "date": "2026-08-17T14:57:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Nagy vizsgálat indul a 4iG-nél, Magyar Péter kemény üzenetet küldött",
+          "source": "atv.hu",
+          "url": "https://www.atv.hu/belfold/20260817/vizsgalat-4ig-magyar-peter/",
+          "date": "2026-08-17T14:56:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "AfD in Sachsen-Anhalt: Studie sieht Strategie hinter Kleinen Anfragen",
+          "source": "MiGAZIN",
+          "url": "https://www.migazin.de/2026/08/17/studie-sieht-muster-hinter-parlamentarischen-anfragen-der-afd/",
+          "date": "2026-08-17T14:53:29+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Bonhoeffer-Großneffe Tobias Korenke will mit AfD sprechen – und betont zugleich: „Sie ist keine normale Partei\"",
+          "source": "Frankfurter Rundschau",
+          "url": "https://www.fr.de/politik/tobias-korenke-will-mit-afd-sprechen-sie-ist-aber-keine-normale-partei-94447632.html",
+          "date": "2026-08-17T14:52:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Visszautasította az Alkotmánybíróság a Fidesz maradék három alaptörvény-módosítás elleni beadványát is",
+          "source": "Jogászvilág",
+          "url": "https://jogaszvilag.hu/napi/visszautasitotta-az-alkotmanybirosag-a-fidesz-maradek-harom-alaptorveny-modositas-elleni-beadvanyat-is/",
+          "date": "2026-08-17T14:49:36+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Neues Bündnis für Ländliche Räume in SH – aus Frust über grünes Umweltministerium",
+          "source": "shz.de",
+          "url": "https://www.shz.de/deutschland-welt/schleswig-holstein/artikel/laendliche-raeume-in-sh-neues-buendnis-will-afd-bei-wahl-aufhalten-51081891",
+          "date": "2026-08-17T14:47:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Minden fideszes beadványt lesöpört az Alkotmánybíróság, érvényben marad a 17. alkotmánymódosítás",
+          "source": "| hvg.hu",
+          "url": "https://hvg.hu/itthon/20260817_alkotmanybirosag-17-alaptorvenymodositas-beadvany-fidesz-kdnp-ellenzek",
+          "date": "2026-08-17T14:46:28+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Döntött az Alkotmánybíróság: minden Fidesz-KDNP-s indítványt lesöpörtek az asztalról",
+          "source": "Portfolio.hu",
+          "url": "https://www.portfolio.hu/gazdasag/20260817/dontott-az-alkotmanybirosag-minden-fidesz-kdnp-s-inditvanyt-lesoportek-az-asztalrol-856812",
+          "date": "2026-08-17T14:32:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Döntött az Alkotmánybíróság: maradhat a 17. alkotmánymódosítás",
+          "source": "24.hu",
+          "url": "https://24.hu/belfold/2026/08/17/dontott-az-alkotmanybirosag-maradhat-a-17-alkotmanymodositas/",
+          "date": "2026-08-17T14:29:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Minden fideszes beadványt elkaszált az Alkotmánybíróság",
+          "source": "444",
+          "url": "https://444.hu/2026/08/17/minden-fideszes-beadvanyt-elkaszalt-az-alkotmanybirosag",
+          "date": "2026-08-17T14:25:52+00:00",
+          "category": "hungary"
+        },
+        {
           "title": "AfD nutzt Anfragen zur Stimmungsmache - juedische-allgemeine.de",
           "source": "",
           "url": "https://www.juedische-allgemeine.de/politik/afd-nutzt-anfragen-zur-stimmungsmache/",
           "date": "2026-08-17T14:22:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Erste Prognosen für AfD: Umfragen vor der Landtagswahl in Mecklenburg-Vorpommern",
+          "source": "Merkur",
+          "url": "https://www.merkur.de/politik/prognosen-afd-umfragen-vor-mv-wahl-2026-aktuelle-94384898.html",
+          "date": "2026-08-17T14:17:20+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Il pronostico di La Russa: “Alle elezioni il centrodestra a prescindere da Vannacci batterà la sinistra”",
+          "source": "Il Fatto Quotidiano",
+          "url": "https://www.ilfattoquotidiano.it/2026/08/17/la-russa-centrodestra-vannacci-elezioni-notizie/8480780/",
+          "date": "2026-08-17T14:17:20+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Erste Umfragen: AfD-Prognosen vor der Landtagswahl 2026 in Mecklenburg-Vorpommern",
+          "source": "Frankfurter Rundschau",
+          "url": "https://www.fr.de/politik/ergebnis-afd-umfragen-vor-mv-wahl-2026-prognosen-fuer-94384419.html",
+          "date": "2026-08-17T14:17:17+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Umfragen vor Landtagswahl in Mecklenburg-Vorpommern: SPD jagt AfD hinterher – erste Prognosen",
+          "source": "Merkur",
+          "url": "https://www.merkur.de/politik/stand-umfragen-vor-mv-wahl-2026-aktueller-prognose-94383955.html",
+          "date": "2026-08-17T14:17:14+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Erste Umfragen vor Landtagswahl 2026 in Mecklenburg-Vorpommern: SPD forciert AfD-Aufholjagd",
+          "source": "Frankfurter Rundschau",
+          "url": "https://www.fr.de/politik/ergebnis-umfragen-vor-mv-wahl-2026-erste-prognosen-fuer-94383933.html",
+          "date": "2026-08-17T14:17:12+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "„Es gibt verdichtete Anhaltspunkte für Kontakte Richtung Russland, aber auch Richtung China“",
+          "source": "WELT",
+          "url": "https://www.welt.de/politik/deutschland/video6a8310649c4b68389904809d/moegliche-afd-regierung-es-gibt-verdichtete-anhaltspunkte-fuer-kontakte-richtung-russland-aber-auch-richtung-china.html",
+          "date": "2026-08-17T14:10:33+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "BSW-Chef Fabio De Masi will \"neuen Weg\" im Umgang mit der AfD gehen",
+          "source": "prisma.de",
+          "url": "https://www.prisma.de/news/tv/BSW-Chef-Fabio-De-Masi-will-neuen-Weg-im-Umgang-mit-der-AfD-gehen,57782225",
+          "date": "2026-08-17T14:03:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "„Gefährlichster Mann Deutschlands“? Warum der „Spiegel“ Siegmund überschätzt",
+          "source": "der Freitag",
+          "url": "https://www.freitag.de/autoren/sebastian-friedrich/spiegel-cover-zum-afd-spitzenkandidaten-ulrich-siegmund-wird-ueberschaetzt",
+          "date": "2026-08-17T13:57:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "CDU und AfD: Wie in einem Landkreis in Sachsen-Anhalt die „Brandmauer“ bröckelt",
+          "source": "WELT",
+          "url": "https://www.welt.de/politik/deutschland/plus6a82b36a9fcb5798aae38f3b/cdu-und-afd-wie-in-einem-landkreis-in-sachsen-anhalt-die-brandmauer-broeckelt.html",
+          "date": "2026-08-17T13:52:48+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "VDMA-Vize Jakschik macht sich Sorgen über das Erstarken der AfD",
+          "source": "SZ.de",
+          "url": "https://www.sueddeutsche.de/wirtschaft/vdma-maschinenbau-ostdeutschland-li.3529462",
+          "date": "2026-08-17T13:42:26+00:00",
           "category": "germany"
         },
         {
@@ -93,41 +725,288 @@
           "category": "germany"
         },
         {
-          "title": "AfD steigt in Umfragen: Studie erschüttert häufigste Erklärung – „Es sind nicht die Benachteiligten“",
-          "source": "merkur.de",
-          "url": "https://www.merkur.de/politik/afd-steigt-in-umfragen-sachsen-anhalt-wahlstudie-erschuettert-gaengige-erklaerung-zr-94447054.html",
-          "date": "2026-08-17T11:17:15+00:00",
+          "title": "Ministerpräsidentäußert Haseloff äußert sich zur AfD",
+          "source": "GMX",
+          "url": "https://www.gmx.net/magazine/politik/videos/inland/ministerpraesidentaeussert-haseloff-aeussert-afd-42622638",
+          "date": "2026-08-17T13:39:30+00:00",
           "category": "germany"
         },
         {
-          "title": "„AfD lebt von Appell an unseren inneren Schweinehund”",
-          "source": "FOCUS online",
-          "url": "https://www.focus.de/politik/deutschland/afd-lebt-von-appell-an-unseren-inneren-schweinehund_f431d4cd-3732-4f2b-bd37-85ad8eab416a.html",
-          "date": "2026-08-17T10:04:00+00:00",
+          "title": "Extreme Social-Media-Posts von Oldenburger AfD-Ratskandidaten bringen Partei in Erklärungsnot",
+          "source": "NWZonline",
+          "url": "https://www.nwzonline.de/blaulicht/kommunalwahl-in-oldenburg-afd-kandidaten-antisemitismus-und-rassismus-auf-x_a_4,3,1453612514.html",
+          "date": "2026-08-17T13:34:11+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "AfD-Politiker mit Alkohol am Steuer erwischt",
+          "source": "FAZ",
+          "url": "https://www.faz.net/aktuell/politik/wahl-in-sachsen-anhalt/afd-politiker-mit-alkohol-am-steuer-erwischt-accg-201133169.html",
+          "date": "2026-08-17T13:27:33+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Monchi, Sänger von Feine Sahne Fischfilet, über das Leben in der ostdeutschen Provinz",
+          "source": "FAZ",
+          "url": "https://www.faz.net/aktuell/feuilleton/buecher/hoerbuch/monchi-saenger-von-feine-sahne-fischfilet-ueber-das-leben-in-der-ostdeutschen-provinz-accg-201119312.html",
+          "date": "2026-08-17T13:19:56+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Sachsen-Anhalt Wahl 2026: AfD verhindern durch taktisches Wählen?",
+          "source": "SZ.de",
+          "url": "https://www.sueddeutsche.de/politik/sachsen-anhalt-wahl-afd-spd-gruene-waehlen-li.3531409",
+          "date": "2026-08-17T13:19:49+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Si intensifica il confronto interno alla Lega in vista del raduno di Pontida",
+          "source": "RaiNews",
+          "url": "https://www.rainews.it/amp/tgr/lombardia/video/2026/08/si-intensifica-il-confronto-interno-alla-lega-in-vista-del-raduno-di-pontida-7ff82996-8b94-40e0-96c0-e52f69f321d9.html",
+          "date": "2026-08-17T13:15:27+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Sachsen-Anhalt-Wahl: Bundesrat sieht sich für AfD-Regierung gerüstet",
+          "source": "MiGAZIN",
+          "url": "https://www.migazin.de/2026/08/17/was-passiert-im-bundesrat-wenn-afd-gewinnt/",
+          "date": "2026-08-17T13:01:17+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "„Die AfD ist eine Westpartei“",
+          "source": "FAZ",
+          "url": "https://www.faz.net/aktuell/politik/wahl-in-sachsen-anhalt/reiner-haseloff-afd-ist-eine-westpartei-accg-201132933.html",
+          "date": "2026-08-17T12:53:16+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "AfD-Veranstaltung in „havenstudios“: Gastgeber begründet Entscheidung - nordsee-zeitung.de",
+          "source": "",
+          "url": "https://www.nordsee-zeitung.de/bremerhaven/afd-veranstaltung-in-havenstudios-gastgeber-begruendet-entscheidung-403500.html",
+          "date": "2026-08-17T12:52:29+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "»Taktisch Wählen« ist keine wirksame Politik gegen die AfD",
+          "source": "Jacobin Magazin",
+          "url": "https://jacobin.de/taktisch-waehlen-afd-sachsen-anhalt/",
+          "date": "2026-08-17T12:36:28+00:00",
           "category": "germany"
         }
       ],
       "first_seen": "2026-08-16T02:06:25+00:00",
-      "last_seen": "2026-08-18T01:58:43+00:00"
+      "last_seen": "2026-08-18T13:25:25+00:00"
     },
     {
       "id": "javier-mileis-governance-and-re-election-crisis",
       "title": "Javier Milei’s governance and re-election crisis",
-      "blurb": "Argentine President Javier Milei faces mounting challenges, including legislative setbacks, economic struggles, and declining approval ratings, particularly among youth. His government's efforts to secure alliances with PRO and other parties for the 2027 elections are fraught with tension, while his libertarian policies continue to spark controversy and public backlash.",
-      "affect": "This story dominates due to Milei’s polarizing leadership, the high-stakes battle for re-election, and the moral and economic debates surrounding his policies.",
+      "blurb": "Milei faces backlash over economic policies, failed legislative reforms, and internal party tensions. His government struggles with inflation, unemployment, and political alliances ahead of the 2027 elections.",
+      "affect": "This commands attention due to economic alarmism, polarized contention over libertarian policies, and leadership instability.",
       "intensity": 5,
       "affect_signals": [
-        "outrage-coded language",
+        "economic alarmism",
         "polarized contention",
         "cross-source repetition",
         "leadership crisis tone",
-        "moral charge"
+        "moral panic register"
       ],
       "categories": [
-        "🇦🇷 La Libertad Avanza"
+        "ar",
+        "libertarian",
+        "economy"
       ],
-      "article_count": 150,
+      "article_count": 100,
       "refs": [
+        {
+          "title": "Karina Milei encabezará la primera reunión para organizar la visita del papa León XIV a la Argentina",
+          "source": "Somos Jujuy",
+          "url": "https://www.somosjujuy.com.ar/nacionales/karina-milei-encabezara-primera-reunion-organizar-visita-papa-leon-xiv-argentina-n122538",
+          "date": "2026-08-18T11:00:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Karina Milei encabeza la organización de la visita del papa León XIV",
+          "source": "Opinando San Nicolás",
+          "url": "https://www.opinandosannicolas.ar/2026/08/karina-milei-organizacion-visita-papa-leon-xiv-argentina/",
+          "date": "2026-08-18T10:16:28+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "\"Desarmar el calendario\": las variables de Javier Milei para suspender las PASO y buscar la reelección en 2027",
+          "source": "Diario Río Negro",
+          "url": "https://www.rionegro.com.ar/politica/desarmar-el-calendario-las-variables-de-javier-milei-para-suspender-las-paso-y-buscar-la-reeleccion-en-2027-4686995/",
+          "date": "2026-08-18T10:08:07+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Tres nuevas designaciones del Gobierno: una en Secretaría de Comunicación y Medios y dos en Capital Humano",
+          "source": "Agencia Noticias Argentinas",
+          "url": "https://noticiasargentinas.com/politica/tres-nuevas-designaciones-del-gobierno--una-en-secretaria-de-comunicacion-y-medios-y-dos-en-capital-humano_a6a842a12dfee7bc69e4027b4",
+          "date": "2026-08-18T09:51:27+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Encuesta: La Libertad Avanza gana en primera vuelta, pero Milei empata con Kicillof en el balotaje",
+          "source": "Perfil",
+          "url": "https://www.perfil.com/noticias/politica/encuesta-la-libertad-avanza-gana-en-primera-vuelta-pero-milei-empata-con-kicillof-en-el-balotaje.phtml",
+          "date": "2026-08-18T09:30:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Karina Milei encabeza la primera reunión por la visita del Papa León XIV",
+          "source": "AHORA Entre Ríos",
+          "url": "https://ahora.com.ar/politica/karina-milei-encabeza-la-primera-reunion-por-la-visita-del-papa-leon-xiv",
+          "date": "2026-08-18T09:14:03+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Karina Milei les pone un freno a los Caputo y avisa que recién en 2027 negociará los acuerdos electorales",
+          "source": "Clarin.com",
+          "url": "https://www.clarin.com/politica/karina-milei-pone-freno-caputo-avisa-recien-2027-negociara-acuerdos-electorales_0_c4dJIcPSC1.html",
+          "date": "2026-08-18T09:01:53+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Hoy el Gobierno celebrará un encuentro clave: con qué 4 importantes figuras políticas se reunirá y cuál es el...",
+          "source": "Perfil",
+          "url": "https://www.perfil.com/noticias/politica/hoy-el-gobierno-celebrara-una-reunion-clave-con-que-4-importantes-figuras-politicas-se-reunira-y-cual-es-el-objetivo-del-encuentro.phtml",
+          "date": "2026-08-18T08:30:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Duhalde cuestionó duramente a Milei, criticó al peronismo y fue contundente sobre la candidatura presidencial...",
+          "source": "Perfil",
+          "url": "https://www.perfil.com/noticias/politica/duhalde-cuestiono-duramente-a-milei-critico-al-peronismo-y-fue-contundente-sobre-la-candidatura-presidencial-de-kicillof.phtml",
+          "date": "2026-08-18T08:26:55+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Con Karina Milei a la cabeza, el Gobierno Nacional convocó a una reunión para organizar la visita del Papa León XIV",
+          "source": "El Intransigente",
+          "url": "https://elintransigente.com/2026/08/con-karina-milei-a-la-cabeza-el-gobierno-nacional-convoco-a-una-reunion-para-organizar-la-visita-del-papa-leon-xiv/",
+          "date": "2026-08-18T07:59:37+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Milei volvió a tensar la relación con Brasil al cuestionar su “gramática” bilateral",
+          "source": "Infobae",
+          "url": "https://www.infobae.com/america/opinion/2026/08/18/milei-volvio-a-tensar-la-relacion-con-brasil-al-cuestionar-su-gramatica-bilateral/",
+          "date": "2026-08-18T07:07:16+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Argentina's vice-president says she is \"extremely worried\" about those who cannot make ends meet",
+          "source": "en.mercopress.com",
+          "url": "https://en.mercopress.com/2026/08/18/argentina-s-vice-president-says-she-is-extremely-worried-about-those-who-cannot-make-ends-meet",
+          "date": "2026-08-18T06:52:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "El Gobierno evalúa tres escenarios para la reforma electoral y pone el foco en la negociación con los aliados",
+          "source": "Infobae",
+          "url": "https://www.infobae.com/politica/2026/08/18/el-gobierno-evalua-tres-escenarios-para-la-reforma-electoral-y-pone-el-foco-en-la-negociacion-con-los-aliados/",
+          "date": "2026-08-18T06:00:28+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Türkiye residential property prices fall 5 percent in real terms in July",
+          "source": "Hürriyet Daily News",
+          "url": "https://www.hurriyetdailynews.com/turkiye-residential-property-prices-fall-5-percent-in-real-terms-in-july-225754",
+          "date": "2026-08-18T05:29:47+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei recordó el legado de San Martín y llamó a defender la libertad porque \"el enemigo no descansa\"",
+          "source": "El Intransigente",
+          "url": "https://elintransigente.com/2026/08/javier-milei-recordo-el-legado-de-san-martin-y-llamo-a-defender-la-libertad-porque-el-enemigo-no-descansa/",
+          "date": "2026-08-18T04:20:42+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Adrián Ravier acompañó al presidente Javier Milei en el homenaje al General San Martín",
+          "source": "En Boca de Todos",
+          "url": "https://www.enbocadetodoshd.com.ar/amp/adrian-ravier-acompano-al-presidente-javier-milei-en-el-homenaje-al-general-san-martin-121751.html",
+          "date": "2026-08-18T03:40:45+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Federico Sturzenegger difundió el DNU 70/23 de Javier Milei y se activan dos nuevos aeropuertos",
+          "source": "MinutoUno",
+          "url": "https://www.minutouno.com/politica/federico-sturzenegger-difundio-el-dnu-7023-javier-milei-y-se-activan-dos-nuevos-aeropuertos-n6311783",
+          "date": "2026-08-18T03:21:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei y sus medidas, EN VIVO: el efusivo abrazo de Milei a Sturzenegger frente a las cámaras y en medio del malestar por el fracaso de la Ley de Tierras",
+          "source": "Impacto Castex",
+          "url": "https://impactocastex.com.ar/politica/1071",
+          "date": "2026-08-18T02:54:18+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Karina Milei convocó a miembros de la Iglesia para coordinar la visita del Papa León XIV",
+          "source": "Tendencia de Noticias",
+          "url": "https://tendenciadenoticias.com.ar/politica/karina-milei-convoco-a-miembros-de-la-iglesia-para-coordinar-la-visita-del-papa-leon-xiv",
+          "date": "2026-08-18T02:50:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Santilli elogió el acercamiento entre el PRO y La Libertad Avanza para el 2027: “Dimos un puntapié inicial”",
+          "source": "El Canciller",
+          "url": "https://elcanciller.com/politica/santilli-elogio-el-acercamiento-entre-el-pro-y-la-libertad-avanza-para-el-2027---dimos-un-puntapie-inicial-_a6a836bc33dfbe1f6713fd8b9?output=amp",
+          "date": "2026-08-18T02:48:21+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Karina Milei encabezará la reunión inicial para organizar la visita histórica del Papa León XIV a la Argentina",
+          "source": "MinutoUno",
+          "url": "https://www.minutouno.com/politica/karina-milei-encabezara-la-reunion-inicial-organizar-la-visita-historica-del-papa-leon-xiv-la-argentina-n6311775",
+          "date": "2026-08-18T02:29:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Dólar colchón y más crédito, las apuestas del gobierno de Javier Milei para mejorar la actividad",
+          "source": "Diario Río Negro",
+          "url": "https://www.rionegro.com.ar/economia/dolar-colchon-y-mas-credito-las-apuestas-del-gobierno-de-javier-milei-para-mejorar-la-actividad-4686983/",
+          "date": "2026-08-18T02:07:45+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Visita del Papa León XIV: Karina Milei reúne este martes a funcionarios para organizar el operativo",
+          "source": "Los Andes",
+          "url": "https://www.losandes.com.ar/politica/visita-del-papa-leon-xiv-karina-milei-reune-este-martes-funcionarios-organizar-el-operativo-n6002660",
+          "date": "2026-08-18T01:53:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "PyMEs marchan a Plaza de Mayo contra la política económica de Javier Milei",
+          "source": "Cuestión Entrerriana",
+          "url": "https://cuestionentrerriana.com.ar/pymes-marchan-a-plaza-de-mayo-contra-la-politica-economica-de-javier-milei/",
+          "date": "2026-08-18T01:42:10+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Visita del papa León XIV a Argentina: Karina Milei encabeza la primera reunión para organizar el operativo",
+          "source": "ADNSUR",
+          "url": "https://www.adnsur.com.ar/politica/visita-del-papa-leon-xiv-a-argentina--karina-milei-encabeza-la-primera-reunion-para-organizar-el-operativo_a6a83b70cfa90492fd68e9cad",
+          "date": "2026-08-18T01:37:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "How families in Milei's Argentina sank deep into debt",
+          "source": "today.rtl.lu",
+          "url": "https://today.rtl.lu/news/world/how-families-in-mileis-argentina-sank-deep-into-debt-947555263",
+          "date": "2026-08-18T01:34:08+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei enfoca su semana económica entre el Consejo de las Américas y Rosario",
+          "source": "Mendovoz",
+          "url": "https://www.mendovoz.com/actualidad/nacionales/2026/8/17/javier-milei-enfoca-su-semana-economica-entre-el-consejo-de-las-americas-rosario-175275.html",
+          "date": "2026-08-18T01:24:28+00:00",
+          "category": "argentina"
+        },
         {
           "title": "Operativo León XIV en Argentina: Karina Milei encabeza la primera reunión con la Iglesia",
           "source": "El Cronista",
@@ -143,6 +1022,34 @@
           "category": "argentina"
         },
         {
+          "title": "Milei dejó en claro su apoyo a Sturzenegger en un acto que mostró el acercamiento entre La Libertad Avanza y el PRO",
+          "source": "La Prensa Digital",
+          "url": "https://www.laprensa.com.ar/Milei-dejo-en-claro-su-apoyo-a-Sturzenegger-en-un-acto-que-mostro-el-acercamiento-entre-La-Libertad-Avanza-y-el-PRO-574872.note.aspx",
+          "date": "2026-08-18T00:22:23+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Karina Milei encabezará la primera reunión para organizar la visita de León XIV",
+          "source": "El Esquiu",
+          "url": "https://www.elesquiu.com/politica/2026/8/18/karina-milei-encabezara-la-primera-reunion-para-organizar-la-visita-de-leon-xiv-593141.html",
+          "date": "2026-08-18T00:20:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Karina Milei encabezará una reunión clave con la Conferencia Episcopal por la visita del papa León XIV",
+          "source": "C5N",
+          "url": "https://www.c5n.com/politica/karina-milei-encabezara-una-reunion-clave-la-conferencia-episcopal-la-visita-del-papa-leon-xiv-n246437",
+          "date": "2026-08-18T00:16:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Santilli fue cauto sobre un eventual acuerdo entre La Libertad Avanza y el PRO: \"Hay que tener paciencia\"",
+          "source": "cronica.com.ar",
+          "url": "https://www.cronica.com.ar/politica/santilli-fue-cauto-sobre-un-eventual-acuerdo-entre-la-libertad-avanza-y-el-pro-hay-que-tener-paciencia-8281/",
+          "date": "2026-08-18T00:08:37+00:00",
+          "category": "argentina"
+        },
+        {
           "title": "Karina Milei reabrió las conversaciones con Mauricio Macri e inició negociaciones con gobernadores ante el impacto de las variables económicas",
           "source": "Radio LV11",
           "url": "https://www.radiolv11.com.ar/noticia/karina-milei-reabrio-las-conversaciones-con-mauricio-macri-e-inicio-negociaciones-con-gobernadores-ante-el-impacto-de-las-variables-economicas-",
@@ -150,10 +1057,24 @@
           "category": "argentina"
         },
         {
-          "title": "El picante comentario de Malena Pichot sobre las \"grandes dificultades\" de Karina Milei para hablar",
-          "source": "diarioregistrado.com",
-          "url": "https://www.diarioregistrado.com/politica/el-picante-comentario-de-malena-pichot-sobre-las--grandes-dificultades--de-karina-milei-para-hablar_a6a83878693d0811703e1d0e4",
-          "date": "2026-08-17T23:08:45+00:00",
+          "title": "Magyar’s Hungary in the Organization of Turkic States",
+          "source": "Eurasianet",
+          "url": "https://eurasianet.org/magyars-hungary-in-the-organization-of-turkic-states-0",
+          "date": "2026-08-17T23:06:30+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Javier Milei vinculó el legado de San Martín con su plan de gobierno",
+          "source": "Ceres Ciudad .com",
+          "url": "https://ceresciudad.com/javier-milei-vinculo-el-legado-de-san-martin-con-su-plan-de-gobierno/",
+          "date": "2026-08-17T23:01:57+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "La mesa política de Javier Milei vuelve a reunirse este martes con el objetivo de reordenar la agenda legislativa y repasar ejes de gestión",
+          "source": "Canal26",
+          "url": "https://www.canal26.com/politica/2026/08/17/la-mesa-politica-de-javier-milei-vuelve-a-reunirse-este-martes-con-el-objetivo-de-reordenar-la-agenda-legislativa-y-repasar-ejes-de-gestion/",
+          "date": "2026-08-17T22:38:45+00:00",
           "category": "argentina"
         },
         {
@@ -164,6 +1085,13 @@
           "category": "argentina"
         },
         {
+          "title": "Karina Milei reúne a la mesa política para afinar la agenda legislativa \"urgente\" y evitar otro revés en el Congreso",
+          "source": "clarin.com",
+          "url": "https://www.clarin.com/politica/karina-milei-reune-mesa-politica-afinar-agenda-legislativa-urgente-evitar-reves-congreso_0_4h5kh6q7uc.html",
+          "date": "2026-08-17T21:47:39+00:00",
+          "category": "argentina"
+        },
+        {
           "title": "El abrazo con Jorge Macri, el Gabinete porteño y la autocrítica libertaria: lo que no se vio del acto de Milei",
           "source": "infobae.com",
           "url": "https://www.infobae.com/politica/2026/08/17/el-abrazo-con-jorge-macri-el-gabinete-porteno-y-la-autocritica-libertaria-lo-que-no-se-vio-del-acto-de-milei/",
@@ -171,10 +1099,129 @@
           "category": "argentina"
         },
         {
+          "title": "Javier Milei no irá finalmente al Congreso para presentar el Presupuesto 2027",
+          "source": "MDZ Online",
+          "url": "https://www.mdzol.com/politica/javier-milei-no-ira-finalmente-al-congreso-presentar-el-presupuesto-2027-n1587675",
+          "date": "2026-08-17T20:59:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei reapareció en un acto por San Martín y cuestionó la expansión del Estado",
+          "source": "HolaSalta",
+          "url": "https://holasalta.com/post/javier-milei-reaparecio-acto-san-martin-cuestiono-expansion-estado/",
+          "date": "2026-08-17T20:56:56+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei comparó la gesta de San Martín con su plan de gobierno antes de su visita a Santa Fe",
+          "source": "Mirador Provincial",
+          "url": "https://www.miradorprovincial.com/2026/08/17/javier-milei-comparo-la-gesta-de-san-martin-con-su-plan-de-gobierno-antes-de-su-visita-a-santa-fe/",
+          "date": "2026-08-17T20:56:18+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Karina Milei reactiva la mesa política con la mira puesta en el Congreso y cerrar acuerdos electorales",
+          "source": "Perfil",
+          "url": "https://www.perfil.com/noticias/politica/karina-milei-reactiva-la-mesa-politica-con-la-mira-puesta-en-el-congreso-y-cerrar-acuerdos-electorales.phtml",
+          "date": "2026-08-17T20:55:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei homenajeó a San Martín: \"Tenemos que seguir el camino de nuestro padre fundador\"",
+          "source": "Uno Entre Rios",
+          "url": "https://www.unoentrerios.com.ar/el-pais/javier-milei-homenajeo-san-martin-tenemos-que-seguir-el-camino-nuestro-padre-fundador-n10275790.html",
+          "date": "2026-08-17T20:45:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei encabezó el acto en homenaje a José de San Martín: “Tenemos la libertad como mandato”",
+          "source": "Diario Digital Conclusión",
+          "url": "https://www.conclusion.com.ar/politica/javier-milei-encabezo-el-acto-en-homenaje-a-jose-de-san-martin-tenemos-la-libertad-como-mandato/08/2026/",
+          "date": "2026-08-17T20:34:35+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Qué hará esta semana y dónde hablará Javier Milei: empresarios, economía y viaje a Rosario - El Economista",
+          "source": "Últimas noticias económicas y financieras",
+          "url": "https://eleconomista.com.ar/politica/que-hara-esta-semana-donde-hablara-javier-milei-empresarios-economia-viaje-rosario-n97453",
+          "date": "2026-08-17T20:29:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei reapareció en el homenaje a San Martín con un discurso de tono electoral y gestos hacia el Pro",
+          "source": "La Nación",
+          "url": "https://www.lanacion.com.ar/politica/javier-milei-reaparecio-en-el-homenaje-a-san-martin-con-un-discurso-de-tono-electoral-y-gestos-hacia-nid17082026/",
+          "date": "2026-08-17T20:19:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Jordan Bardella a déjà gagné plus d’un million d’euros avec ses livres",
+          "source": "24matins",
+          "url": "https://www.24matins.fr/jordan-bardella-a-deja-gagne-plus-dun-million-deuros-avec-ses-livres-1419059",
+          "date": "2026-08-17T20:00:52+00:00",
+          "category": "france"
+        },
+        {
           "title": "Ajuste del sector privado: cerraron 16.422 empresas en un año y 30.285 en total desde que asumió Javier Milei",
           "source": "C5N",
           "url": "https://www.c5n.com/economia/ajuste-del-sector-privado-cerraron-16422-empresas-un-ano-y-30285-total-que-asumio-javier-milei-n246416",
           "date": "2026-08-17T19:55:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei homenajeó a San Martín y afirmó que Argentina todavía puede ser \"el país más libre del mundo\"",
+          "source": "0221",
+          "url": "https://www.0221.com.ar/nacional/javier-milei-homenajeo-san-martin-y-afirmo-que-argentina-todavia-puede-ser-el-pais-mas-libre-del-mundo-n132731",
+          "date": "2026-08-17T19:54:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei no iría al Congreso para presentar el presupuesto 2027",
+          "source": "Radio Mitre",
+          "url": "https://radiomitre.cienradios.com/politica/javier-milei-no-iria-al-congreso-para-presentar-el-presupuesto-2027/",
+          "date": "2026-08-17T19:48:18+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Discurso del Presidente de la Nación, Javier Milei, en el acto por el 176° aniversario del Paso a la Inmort...",
+          "source": "casarosada.gob.ar",
+          "url": "https://www.casarosada.gob.ar/slider-principal/51345-discurso-del-presidente-de-la-nacion-javier-milei-en-el-acto-por-el-176-aniversario-del-paso-a-la-inmortalidad-del-general-jose-de-san-martin/amp",
+          "date": "2026-08-17T19:40:17+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Tras 9 días, Javier Milei reapareció en público",
+          "source": "bardeo.news",
+          "url": "https://bardeo.news/politica/tras-9-dias--javier-milei-reaparecio-en-publico_a6a8304bc57f5b1776e8ba973?output=amp",
+          "date": "2026-08-17T19:36:43+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Milei reapareció en el acto por San Martín y dijo que \"la libertad se enfrenta a enemigos internos y externos\"",
+          "source": "elDiarioAR.com",
+          "url": "https://www.eldiarioar.com/politica/milei-reaparecio-acto-san-martin-dijo-libertad-enfrenta-enemigos-internos-externos_1_13452532.html",
+          "date": "2026-08-17T19:33:55+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "\"No hay milagro de Milei\": el duro cruce de Claudio Domínguez a Nadia Márquez",
+          "source": "Lmneuquen.com",
+          "url": "https://www.lmneuquen.com/neuquen/no-hay-milagro-milei-el-duro-cruce-claudio-dominguez-nadia-marquez-n1250024",
+          "date": "2026-08-17T19:30:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "“Hay que tener paciencia”: Diego Santilli habló sobre el posible acuerdo entre LLA y el PRO para 2027",
+          "source": "TN",
+          "url": "https://tn.com.ar/politica/2026/08/17/diego-santilli-hablo-sobre-el-acercamiento-entre-el-pro-y-lla-dimos-un-puntapie-inicial/",
+          "date": "2026-08-17T19:29:35+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei homenajeó a San Martín: \"Su gesta es una fuente permanente de inspiración para todo mi Gobierno\"",
+          "source": "Sitio Andino",
+          "url": "https://www.sitioandino.com.ar/politica/javier-milei-homenajeo-san-martin-su-gesta-es-una-fuente-permanente-inspiracion-todo-mi-gobierno-n5728407",
+          "date": "2026-08-17T19:23:00+00:00",
           "category": "argentina"
         },
         {
@@ -185,10 +1232,206 @@
           "category": "argentina"
         },
         {
+          "title": "Milei, en el homenaje a San Martín: La libertad se enfrenta a un nuevo conjunto de enemigos internos y externos",
+          "source": "La Gaceta",
+          "url": "https://www.lagaceta.com.ar/nota/1150087/politica/milei-homenaje-san-martin-libertad-se-enfrenta-nuevo-conjunto-enemigos-internos-externos.html",
+          "date": "2026-08-17T19:17:30+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei volvió monocorde y sin novedades: batalla cultural y abrazo con Jorge Macri",
+          "source": "Letra P",
+          "url": "https://www.letrap.com.ar/milei-volvio-monocorde-y-novedades-batalla-cultural-y-abrazo-jorge-macri-plena-rosca-el-pro-n5425884",
+          "date": "2026-08-17T19:16:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei encabezó el acto de homenaje a José de San Martín",
+          "source": "Eldópolis",
+          "url": "https://eldopolis.com/news/X4F3M6eNJeVKYZpRvVYw",
+          "date": "2026-08-17T19:01:37+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "En el acto por San Martín, Javier Milei apuntó contra los “enemigos de la libertad”",
+          "source": "Cba24n",
+          "url": "https://www.cba24n.com.ar/argentina/en-el-acto-por-san-martin--javier-milei-apunto-contra-los--enemigos-de-la-libertad-_a6a835616c9105fd5b300074b",
+          "date": "2026-08-17T18:58:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei en el homenaje a San Martín: “Hay algunos que quieren volver al pasado”",
+          "source": "eldoce",
+          "url": "https://eldoce.tv/politica/2026/08/17/javier-milei-en-el-homenaje-a-san-martin-hay-algunos-que-quieren-volver-al-pasado/",
+          "date": "2026-08-17T18:47:07+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Uno por uno: los puntos más importantes del discurso de Javier Milei para homenajear a San Martín",
+          "source": "MDZ Online",
+          "url": "https://www.mdzol.com/uno-uno-los-puntos-mas-importantes-del-discurso-javier-milei-homenajear-san-martin-n1587599",
+          "date": "2026-08-17T18:44:38+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "En un paralelismo con San Martín, Javier Milei habló de los \"nuevos enemigos\" y redobló su apuesta por la \"batalla cultural\"",
+          "source": "Ambito",
+          "url": "https://www.ambito.com/politica/en-un-paralelismo-san-martin-javier-milei-hablo-los-nuevos-enemigos-y-redoblo-su-apuesta-la-batalla-cultural-n6311664",
+          "date": "2026-08-17T18:37:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Milei: “Hay quienes quieren que vuelva el pasado”",
+          "source": "Los Primeros TV",
+          "url": "https://www.losprimeros.tv/politica/milei---hay-quienes-quieren-que-vuelva-el-pasado-_a6a8352d457f5b1776e9c8818",
+          "date": "2026-08-17T18:32:09+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Milei homenajeó a San Martín: Tenemos la libertad como mandato y seguir el camino de nuestro padre fundador",
+          "source": "Los Andes",
+          "url": "https://www.losandes.com.ar/politica/milei-homenajeo-san-martin-tenemos-la-libertad-como-mandato-y-seguir-el-camino-nuestro-padre-fundador-n6002619",
+          "date": "2026-08-17T18:32:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei homenajeó a San Martín: \"La libertad se enfrenta a nuevos enemigos\"",
+          "source": "todojujuy.com",
+          "url": "https://www.todojujuy.com/pais/javier-milei-homenajeo-san-martin-la-libertad-se-enfrenta-nuevos-enemigos-n294728",
+          "date": "2026-08-17T18:29:09+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Milei criticó al kirchnerismo en el acto por San Martín: \"Quieren volver al pasado\"",
+          "source": "Cadena 3 Argentina",
+          "url": "https://www.cadena3.com/amp/noticia/politica-y-economia/milei-encabezo-el-acto-por-san-martin-con-criticas-al-kirchnerismo-quieren-que-vuelva-el-pasado_584226",
+          "date": "2026-08-17T18:28:53+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "“Hay quienes quieren que vuelva el pasado”: Javier Milei encabezó el acto en homenaje a San Martín con críticas al kirchnerismo",
+          "source": "Radio Mitre",
+          "url": "https://radiomitre.cienradios.com/politica/hay-quienes-quieren-que-vuelva-el-pasado-javier-milei-encabezo-el-acto-en-homenaje-a-san-martin-con-criticas-al-kirchnerismo/",
+          "date": "2026-08-17T18:28:27+00:00",
+          "category": "argentina"
+        },
+        {
           "title": "Nueva encuesta nacional y nuevas malas noticias para el oficialismo",
           "source": "Gente de Salta",
           "url": "https://www.gentedesalta.com/politica/nueva-encuesta-nacional-nuevas-malas-noticias-oficialismo-n10951",
           "date": "2026-08-17T18:27:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei habló de \"enemigos de la libertad\" en el acto homenaje al General San Martín",
+          "source": "Diario El Sol Mendoza",
+          "url": "https://www.elsol.com.ar/el-pais/javier-milei-hablo-de-enemigos-de-la-libertad-en-el-acto-homenaje-al-general-san-martin/",
+          "date": "2026-08-17T18:26:20+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei habló en el acto para conmemorar a San Martín: “Hoy la libertad se enfrenta a un nuevo conjunto de enemigos internos y externos”",
+          "source": "Infobae",
+          "url": "https://www.infobae.com/politica/2026/08/17/javier-milei-hablo-en-el-acto-para-conmemorar-a-san-martin-hoy-la-libertad-se-enfrenta-a-un-nuevo-conjunto-de-enemigos-internos-y-externos/",
+          "date": "2026-08-17T18:21:08+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei en el acto de San Martín: \"Algunos quieren que vuelva el pasado, pero tenemos que defender la libertad\"",
+          "source": "Lmneuquen.com",
+          "url": "https://www.lmneuquen.com/pais/javier-milei-el-acto-san-martin-algunos-quieren-que-vuelva-el-pasado-pero-tenemos-que-defender-la-libertad-n1250012",
+          "date": "2026-08-17T18:18:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Milei encabeza el acto por San Martín: “Hoy la libertad nos enfrenta a enemigos internos y externos”",
+          "source": "La Opinión Austral",
+          "url": "https://laopinionaustral.com.ar/argentina/milei-encabeza-el-acto-por-san-martin-hoy-la-libertad-nos-enfrenta-a-enemigos-internos-y-externos-696210.html",
+          "date": "2026-08-17T18:13:02+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Con dos incógnitas, Javier Milei regresará al Congreso para defender el Presupuesto 2027",
+          "source": "tn.com.ar",
+          "url": "https://tn.com.ar/politica/2026/08/17/javier-milei-regresara-al-congreso-para-defender-el-presupuesto-2027/",
+          "date": "2026-08-17T18:10:48+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Video El abrazo de Javier Milei con Federico Sturzenegger",
+          "source": "Clarin.com",
+          "url": "https://www.clarin.com/videos/abrazo-javier-milei-federico-sturzenegger_3_nrsrMbBTi3.html",
+          "date": "2026-08-17T18:08:06+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei encabezó el acto por el aniversario de San Martín: \"Hoy la libertad enfrenta enemigos internos y externos\"",
+          "source": "El Ancasti",
+          "url": "https://www.elancasti.com.ar/politica-y-economia/javier-milei-encabezo-el-acto-el-aniversario-san-martin-hoy-la-libertad-enfrenta-enemigos-internos-y-externos-n619495",
+          "date": "2026-08-17T18:02:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei encabezó el acto en conmemoración al General José de San Martín: su discurso",
+          "source": "Diario Río Negro",
+          "url": "https://www.rionegro.com.ar/politica/en-vivo-javier-milei-encabeza-el-acto-en-conmemoracion-al-general-jose-de-san-martin-4686638/",
+          "date": "2026-08-17T17:57:50+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "En vivo | Javier Milei encabeza el acto en conmemoración al General José de San Martín: su discurso",
+          "source": "Diario Río Negro",
+          "url": "https://www.rionegro.com.ar/politica/en-vivo-javier-milei-encabeza-el-acto-en-conmemoracion-al-general-jose-de-san-martin-4686638/?amp=1",
+          "date": "2026-08-17T17:57:50+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei en el acto por el paso a la inmortalidad del General José de San Martín:",
+          "source": "cronica.com.ar",
+          "url": "https://www.cronica.com.ar/politica/javier-milei-en-el-acto-por-el-paso-a-la-inmortalidad-del-general-jose-de-san-martin-6662/",
+          "date": "2026-08-17T17:56:57+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei: \"Nuestra misión es revivir la llama de la libertad que otros creían extinta\"",
+          "source": "BAE Negocios",
+          "url": "https://www.baenegocios.com/politica/javier-milei-nuestra-mision-es-revivir-la-llama-de-la-libertad-que-otros-creian-extinta/",
+          "date": "2026-08-17T17:52:17+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "EN VIVO | El presidente Javier Milei encabeza el acto por el 176° aniversario del paso a la inmortalidad del General San Martín",
+          "source": "MisionesOnline",
+          "url": "https://misionesonline.net/2026/08/17/en-vivo-el-presidente-javier-milei-encabeza-el-acto-por-el-176-aniversario-del-paso-a-la-inmortalidad-del-general-san-martin/",
+          "date": "2026-08-17T17:49:53+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Milei encabeza el acto por San Martín en medio del acercamiento entre LLA y el PRO",
+          "source": "Cadena 3 Argentina",
+          "url": "https://www.cadena3.com/amp/noticia/politica-y-economia/milei-encabeza-el-acto-por-san-martin-en-medio-del-acercamiento-entre-lla-y-el-pro_584226",
+          "date": "2026-08-17T17:34:50+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Dolor de cabeza para Luis Caputo y Javier Milei en medio del feriado: el dato clave que complica los planes del Gobierno",
+          "source": "eldestapeweb.com",
+          "url": "https://www.eldestapeweb.com/economia/bajan-bonos-riesgo-pais-acerca-500-puntos-2026817142255?outputType=amp",
+          "date": "2026-08-17T17:32:44+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Qué es la conferencia por el Mes de la Herencia Hispana, el evento al que asistirá Javier Milei en Estados Unidos",
+          "source": "TN",
+          "url": "https://tn.com.ar/politica/2026/08/17/que-es-la-conferencia-por-el-mes-de-la-herencia-hispana-el-evento-al-que-asistira-milei-en-estados-unidos/",
+          "date": "2026-08-17T16:58:37+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei presentará el Presupuesto 2027 en Diputados: los cambios de dinámicas en el Congreso",
+          "source": "Diario Río Negro",
+          "url": "https://www.rionegro.com.ar/politica/javier-milei-presentara-el-presupuesto-2027-en-diputados-los-cambios-de-dinamicas-en-el-congreso-4686536/",
+          "date": "2026-08-17T16:55:38+00:00",
           "category": "argentina"
         },
         {
@@ -199,10 +1442,234 @@
           "category": "argentina"
         },
         {
+          "title": "Alerta para Javier Milei: una encuesta ubica al peronismo al frente de la intención de voto para 2027",
+          "source": "MDZ Online",
+          "url": "https://www.mdzol.com/politica/alerta-javier-milei-una-encuesta-ubica-al-peronismo-al-frente-la-intencion-voto-2027-n1587522",
+          "date": "2026-08-17T16:38:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Se empantana en el Congreso la iniciativa de reforma electoral que propone La Libertad Avanza",
+          "source": "DataClave",
+          "url": "https://www.dataclave.com.ar/poder/se-empantana-en-el-congreso-la-iniciativa-de-reforma-electoral-que-propone-la-libertad-avanza_a6a8336a9f2c2dbedfb99e2c8?output=amp",
+          "date": "2026-08-17T16:37:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Billionaire Peter Thiel wanders into Vaca Muerta after buying stake in Argentina operator",
+          "source": "Upstream Online",
+          "url": "https://www.upstreamonline.com/shale/billionaire-peter-thiel-wanders-into-vaca-muerta-after-buying-stake-in-argentina-operator/2-1-2030231",
+          "date": "2026-08-17T16:33:37+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Carlos Maslatón soltó un batacazo político que preocupa a Javier Milei: \"Es\"",
+          "source": "El Destape",
+          "url": "https://www.eldestapeweb.com/espectaculos/carlos-maslaton-solto-batacazo-politico-preocupa-javier-milei-2026817132145",
+          "date": "2026-08-17T16:26:04+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Nelson Castro y un análisis lapidario sobre el futuro de Javier Milei: \"No va a ocurrir\"",
+          "source": "El Destape",
+          "url": "https://www.eldestapeweb.com/economia/dudaron-de-la-promesa-de-luis-caputo-8220-no-van-a-ocurrir-8221--2026817113057",
+          "date": "2026-08-17T16:16:18+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei vuelve a Rosario este viernes por el 142° aniversario de la Bolsa de Comercio",
+          "source": "Radiofonica 100.7",
+          "url": "https://radiofonica.com/javier-milei-vuelve-a-rosario-este-viernes-por-el-142-aniversario-de-la-bolsa-de-comercio/",
+          "date": "2026-08-17T16:13:22+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Milei encabeza el acto por el Paso a la inmortalidad de San Martín tras casi 10 días de agenda oficial reducida",
+          "source": "El Cronista",
+          "url": "https://www.cronista.com/economia-politica/milei-encabeza-el-acto-por-el-paso-a-la-inmortalidad-de-san-martin-tras-casi-10-dias-de-agenda-oficial-reducida/?outputType=amp-type",
+          "date": "2026-08-17T16:12:41+00:00",
+          "category": "argentina"
+        },
+        {
           "title": "Para Nadia Márquez, el \"milagro\" de Vaca Muerta es gracias a Javier Milei",
           "source": "Lmneuquen.com",
           "url": "https://www.lmneuquen.com/neuquen/para-nadia-marquez-el-milagro-vaca-muerta-es-gracias-javier-milei-n1249973",
           "date": "2026-08-17T15:41:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Preocupa el impacto de la alta morosidad en el consumo y hay dudas entre los inversores por la elección 2027",
+          "source": "Diario Río Negro",
+          "url": "https://www.rionegro.com.ar/economia/preocupa-el-impacto-de-la-alta-morosidad-en-el-consumo-y-hay-dudas-entre-los-inversores-por-la-eleccion-2027-4686399/",
+          "date": "2026-08-17T15:38:40+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "“Las privatizaciones son de saqueo”: Rubén “Pollo” Sobrero apuntó contra Javier Milei y reclamó inversiones",
+          "source": "El Intransigente",
+          "url": "https://elintransigente.com/2026/08/las-privatizaciones-son-de-saqueo-ruben-pollo-sobrero-apunto-contra-javier-milei-y-reclamo-inversiones/",
+          "date": "2026-08-17T15:28:32+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Senior Israeli official calls for killing of \"30 to 40\" people in Gaza every night: \"They're not even people\"",
+          "source": "CBS News",
+          "url": "https://www.cbsnews.com/news/israel-ben-gvir-gaza-netanyahu-kill-every-night/",
+          "date": "2026-08-17T15:28:19+00:00",
+          "category": "general"
+        },
+        {
+          "title": "Magyar Péter: felülvizsgáljuk a 4iG állami szerződéseit és visszaszerezzük a magyar emberek pénzét",
+          "source": "Blikk",
+          "url": "https://www.blikk.hu/politika/magyar-politika/magyar-peter-4ig-vizsgalat/27n52z6",
+          "date": "2026-08-17T15:21:25+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Javier Milei retoma sus actividades y dará un discurso en homenaje a José de San Martín",
+          "source": "Somos Jujuy",
+          "url": "https://www.somosjujuy.com.ar/politica/javier-milei-retoma-sus-actividades-dara-discurso-homenaje-jose-san-martin-n122513/amp",
+          "date": "2026-08-17T15:07:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei volverá al Congreso a presentar el Presupuesto 2027",
+          "source": "Infobae",
+          "url": "https://www.infobae.com/politica/2026/08/17/javier-milei-volvera-al-congreso-a-presentar-el-presupuesto-2027/",
+          "date": "2026-08-17T15:03:15+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei retoma su agenda pública encabezando el acto por San Martín",
+          "source": "todojujuy.com",
+          "url": "https://www.todojujuy.com/pais/javier-milei-retoma-su-agenda-publica-encabezando-el-acto-san-martin-n294720",
+          "date": "2026-08-17T14:54:54+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Con el foco puesto en las elecciones 2027: LLA reorganiza su armado porteño para disputarle Ciudad al PRO",
+          "source": "Diario Río Negro",
+          "url": "https://www.rionegro.com.ar/politica/con-el-foco-puesto-en-las-elecciones-2027-lla-reorganiza-su-armado-porteno-para-disputarle-ciudad-al-pro-4686369/",
+          "date": "2026-08-17T14:43:50+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Pullaro suma foto con Milei tras Karina y Santilli: se potencia el acuerdo 2027",
+          "source": "SL24",
+          "url": "https://sl24.com.ar/pullaro-foto-javier-milei-karina-santilli-acuerdo-electoral-2027-bolsa-comercio-rosario/",
+          "date": "2026-08-17T14:38:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Tras nueve días en Olivos, Javier Milei retoma su agenda y prepara una semana clave",
+          "source": "El Intransigente",
+          "url": "https://elintransigente.com/2026/08/tras-nueve-dias-en-olivos-javier-milei-retoma-su-agenda-y-prepara-una-semana-clave/",
+          "date": "2026-08-17T14:34:36+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Atauche: “Los jóvenes fueron los primeros en entender a Javier Milei y en abrazar la transformación de Argentina”",
+          "source": "las 24 horas de jujuy",
+          "url": "https://las24horasdejujuy.com.ar/atauche-los-jovenes-fueron-los-primeros-en-entender-a-javier-milei-y-en-abrazar-la-transformacion-de-argentina/",
+          "date": "2026-08-17T14:18:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Tras una semana encerrado en Olivos, Milei reaparece para el acto por San Martín",
+          "source": "El Ágora Digital",
+          "url": "https://elagora.digital/argentina/javier-milei-acto-san-martin-aislado-quinta-olivos/",
+          "date": "2026-08-17T14:16:25+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "El oficialismo refuerza su estrategia territorial en la Ciudad con la mira en 2027, pese al acercamiento a Pro",
+          "source": "La Nación",
+          "url": "https://www.lanacion.com.ar/politica/el-oficialismo-refuerza-su-estrategia-territorial-en-la-ciudad-con-la-mira-en-2027-pese-al-nid17082026/",
+          "date": "2026-08-17T14:02:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Pergamino, la pieza que La Libertad Avanza necesita ordenar",
+          "source": "primeraplana.com.ar",
+          "url": "https://primeraplana.com.ar/92882-opinion-pergamino-la-pieza-que-la-libertad-avanza-necesita-ordenar",
+          "date": "2026-08-17T13:59:05+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei retoma la agenda oficial con el acto en homenaje al general San Martín",
+          "source": "elcanciller.com",
+          "url": "https://elcanciller.com/politica/javier-milei-retoma-la-agenda-oficial-con-el-acto-en-homenaje-al-general-san-martin_a6a830c7e21d2dacc80b702cc",
+          "date": "2026-08-17T13:45:08+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei reaparecerá públicamente este lunes en un acto en conmemoración a José de San Martín",
+          "source": "InfoVeloz.com",
+          "url": "https://www.infoveloz.com/post/javier-milei-reaparecera-publicamente-este-lunes-en-un-acto-en-conmemoracion-a-jose-de-san-martin_282912",
+          "date": "2026-08-17T13:37:06+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei reaparece públicamente con una agenda de hiperactividad para disipar críticas en el Gobierno",
+          "source": "El Observador",
+          "url": "https://www.elobservador.com.uy/argentina/politica/javier-milei-reaparece-publicamente-una-agenda-hiperactividad-disipar-criticas-el-gobierno-n6054305/amp",
+          "date": "2026-08-17T13:30:33+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Milei define su batalla legislativa: qué proyectos quiere sacar antes de septiembre y cuáles postergaría",
+          "source": "Crónica",
+          "url": "https://www.cronica.com.ar/politica/milei-define-su-batalla-legislativa-que-proyectos-quiere-sacar-antes-de-septiembre-y-cuales-postergaria/",
+          "date": "2026-08-17T13:19:28+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "El fin de semana largo le dio una terrible noticia a Javier Milei: por qué Argentina volvió a la pandemia por esta noticia",
+          "source": "El Destape",
+          "url": "https://www.eldestapeweb.com/economia/produccion-metalurgica-desplomo-julio-esta-niveles-pandemia-2026817101244",
+          "date": "2026-08-17T13:15:13+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei retoma la agenda oficial tras 9 días en la quinta de Olivos",
+          "source": "Agencia Noticias Argentinas",
+          "url": "https://noticiasargentinas.com/politica/javier-milei-retoma-la-agenda-oficial-tras-9-dias-recluido-en-la-quinta-de-olivos_a6a8301abe4f46c978212b084",
+          "date": "2026-08-17T13:12:47+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei presentará el Presupuesto 2027 en el Congreso y busca blindar su agenda de reformas en la Casa Rosada",
+          "source": "Mirador Provincial",
+          "url": "https://www.miradorprovincial.com/2026/08/17/javier-milei-presentara-el-presupuesto-2027-en-el-congreso-y-busca-blindar-su-agenda-de-reformas-en-la-casa-rosada/",
+          "date": "2026-08-17T13:02:26+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Karina Milei encabeza este martes la primera reunión por la visita del Papa León XIV a la Argentina",
+          "source": "Los Primeros TV",
+          "url": "https://www.losprimeros.tv/actualidad/karina-milei-encabeza-este-martes-la-primera-reunion-por-la-visita-del-papa-leon-xiv-a-la-argentina-_a6a83066757f5b1776e8c0cda",
+          "date": "2026-08-17T13:02:26+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Tras 9 días, Javier Milei reaparece en público",
+          "source": "Bardeo.news",
+          "url": "https://bardeo.news/politica/tras-9-dias--javier-milei-reaparece-en-publico_a6a8304bc57f5b1776e8ba973",
+          "date": "2026-08-17T13:01:19+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Todos empiezan a jugar para el 2027",
+          "source": "Cadena 3 Argentina",
+          "url": "https://www.cadena3.com/amp/noticia/opinion/todos-empiezan-a-jugar-para-el-2027_584076",
+          "date": "2026-08-17T13:01:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei reaparece este lunes en el homenaje a San Martín: a qué hora será el acto",
+          "source": "elsolnoticias.com.ar",
+          "url": "https://elsolnoticias.com.ar/javier-milei-reaparece-este-lunes-en-el-homenaje-a-san-martin/",
+          "date": "2026-08-17T13:00:13+00:00",
           "category": "argentina"
         },
         {
@@ -211,48 +1678,302 @@
           "url": "https://www.infocielo.com/politica-y-economia/soberania-una-palabra-olvidada-que-volvio-a-significar-y-condiciona-a-javier-milei",
           "date": "2026-08-17T12:53:37+00:00",
           "category": "argentina"
+        },
+        {
+          "title": "Javier Milei reaparece en el acto por San Martín junto a Jorge Macri en plena rosca con el PRO",
+          "source": "letrap.com.ar",
+          "url": "https://www.letrap.com.ar/politica/javier-milei-reaparece-el-acto-san-martin-despues-diez-dias-perfil-n5425879",
+          "date": "2026-08-17T12:52:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei pierde terreno entre los jóvenes y el desencanto pone en peligro su reelección",
+          "source": "letrap.com.ar",
+          "url": "https://www.letrap.com.ar/politica/javier-milei-pierde-terreno-los-jovenes-y-el-desencanto-pone-peligro-su-reeleccion-n5425876",
+          "date": "2026-08-17T12:37:00+00:00",
+          "category": "argentina"
         }
       ],
       "first_seen": "2026-08-16T02:06:25+00:00",
-      "last_seen": "2026-08-18T01:58:43+00:00"
+      "last_seen": "2026-08-18T13:25:25+00:00"
     },
     {
       "id": "trumps-iran-policy-and-economic-sanctions-escalation",
       "title": "Trump’s Iran policy and economic sanctions escalation",
-      "blurb": "President Trump’s aggressive stance on Iran, including threats to bomb Oman and reduce military exercises with South Korea, has escalated tensions in the Middle East. His administration’s handling of the Iran conflict, coupled with economic sanctions and rising gas prices, has drawn criticism from allies and domestic opponents alike.",
-      "affect": "This commands attention due to the high-stakes geopolitical risks, Trump’s confrontational rhetoric, and the economic impact of rising fuel prices on everyday Americans.",
+      "blurb": "Trump threatens military action against Oman and Iran, escalates sanctions, and reduces U.S.-South Korea military drills. The administration faces backlash over troop conditions and economic impacts.",
+      "affect": "This commands attention due to geopolitical alarmism, polarized contention over military strategy, and moral panic over economic consequences.",
       "intensity": 4,
       "affect_signals": [
-        "alarmist framing",
-        "outrage-coded language",
+        "geopolitical alarmism",
+        "polarized contention",
         "cross-source repetition",
-        "moral charge",
-        "polarized contention"
+        "outrage-coded language",
+        "moral panic register"
       ],
       "categories": [
-        "🇺🇸 MAGA / Trump"
+        "us",
+        "foreign-policy",
+        "military"
       ],
-      "article_count": 100,
+      "article_count": 80,
       "refs": [
         {
-          "title": "President Trump blasts allies as Iran war deadline passes with no deal",
-          "source": "NBC News",
-          "url": "https://www.nbcnews.com/nightly-news/video/president-trump-blasts-allies-as-iran-war-deadline-passes-with-no-deal-268431941815",
-          "date": "2026-08-17T23:13:24+00:00",
+          "title": "Donald Trump: Strait of Hormuz is new US territory",
+          "source": "The Jerusalem Post",
+          "url": "https://www.jpost.com/middle-east/iran-news/article-905890",
+          "date": "2026-08-18T12:26:59+00:00",
           "category": "usa"
         },
         {
-          "title": "WSJ unmasks Trump’s desperate move to hide latest major embarrassment",
-          "source": "AlterNet",
-          "url": "https://www.alternet.org/trump-trying-to-change-the-subject-to-distract-from-embarrassment-wsj/",
-          "date": "2026-08-17T22:28:00+00:00",
+          "title": "President Trump Posts Map Labeling Strait of Hormuz ‘New US Territory’",
+          "source": "The Media Line",
+          "url": "https://themedialine.org/headlines/president-trump-posts-map-labeling-strait-of-hormuz-new-us-territory/",
+          "date": "2026-08-18T12:14:11+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "U.S. and Iran miss peace talks deadline. And, Alaska, Florida and Wyoming primaries",
+          "source": "NPR",
+          "url": "https://www.npr.org/2026/08/18/g-s1-139072/up-first-newsletter-iran-south-korea-jared-kushner-florida-wyoming-alaska-primaries-luigi-mangione",
+          "date": "2026-08-18T11:40:35+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "U.S., Canada in last-minute talks to head off steep new U.S. tariffs",
+          "source": "CBS News",
+          "url": "https://www.cbsnews.com/news/us-canada-last-minute-talks-steep-new-us-tariffs/",
+          "date": "2026-08-18T11:28:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump should listen to the sailors aboard the USS Lincoln — and their families",
+          "source": "San Francisco Chronicle",
+          "url": "https://www.sfchronicle.com/opinion/openforum/article/uss-lincoln-deployment-trump-hegseth-iran-war-22389246.php",
+          "date": "2026-08-18T11:20:06+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "President Trump threatens to ‘bomb Oman’ amid regional waterway dispute",
+          "source": "kbrx.com",
+          "url": "https://www.kbrx.com/2026/08/18/president-trump-threatens-to-bomb-oman-amid-regional-waterway-dispute/",
+          "date": "2026-08-18T11:06:54+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Elecnor reclama 903.266 euros al Ayuntamiento y VOX Caudete exige revisar el origen del problema",
+          "source": "caudetedigital.com",
+          "url": "https://caudetedigital.com/elecnor-reclama-903-266-euros-al-ayuntamiento-y-vox-caudete-exige-revisar-el-origen-del-problema/",
+          "date": "2026-08-18T11:01:52+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Drug prices have declined sharply, and Trump is taking credit. The reason behind the drop is complex",
+          "source": "MyNorthwest.com",
+          "url": "https://mynorthwest.com/national/drug-prices-have-declined-sharply-and-trump-is-taking-credit-the-reason-behind-the-drop-is-complex/4266931",
+          "date": "2026-08-18T10:50:41+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Vox rechaza las zonas tensionadas y apuesta por \"más viviendas, menos impuestos y menos burocracia\"",
+          "source": "Europa Press",
+          "url": "https://www.europapress.es/asturias/noticia-vox-rechaza-zonas-tensionadas-apuesta-mas-viviendas-menos-impuestos-menos-burocracia-20260818123313.html",
+          "date": "2026-08-18T10:33:13+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Pete Hegseth uses anti-trans slur during Iowa State Fair speech",
+          "source": "attitude.co.uk",
+          "url": "https://www.attitude.co.uk/news/pete-hegseth-uses-anti-trans-slur-during-iowa-state-fair-speech-531840/",
+          "date": "2026-08-18T10:21:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump Is Putting His Face On Everything",
+          "source": "The Atlantic",
+          "url": "https://www.theatlantic.com/politics/2026/08/trump-name-on-everything/688090/",
+          "date": "2026-08-18T10:00:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "President Trump Warns Oman Over Strait of Hormuz",
+          "source": "The Presidential Prayer Team",
+          "url": "https://www.presidentialprayerteam.org/2026/08/18/president-trump-warns-oman-over-strait-of-hormuz/",
+          "date": "2026-08-18T10:00:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Religious leaders form united front in Dearborn before far-right extremist's demonstration",
+          "source": "FOX 2 Detroit",
+          "url": "https://www.fox2detroit.com/video/fmc-rkbbpsktoyr44j18",
+          "date": "2026-08-18T09:58:23+00:00",
+          "category": "general"
+        },
+        {
+          "title": "Donald Trump says Iran should surrender, threatens to bomb Oman",
+          "source": "irishtimes.com",
+          "url": "https://www.irishtimes.com/world/middle-east/2026/08/17/donald-trump-says-iran-should-surrender-threatens-to-bomb-oman/",
+          "date": "2026-08-18T09:48:56+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Donald Trump Has Finally Done Something All of D.C. Can Get Behind",
+          "source": "Slate Magazine",
+          "url": "https://slate.com/business/2026/08/donald-trump-dulles-airport-people-mover-dc-renovation.html",
+          "date": "2026-08-18T09:45:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Vergarolla, Meloni: «Un crimine impunito. La verità è la via maestra»",
+          "source": "La Voce del Patriota",
+          "url": "https://www.lavocedelpatriota.it/vergarolla-meloni-un-crimine-impunito-la-verita-e-la-via-maestra/",
+          "date": "2026-08-18T09:12:04+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "A look at the Trump administration's evolving relationship with Asia",
+          "source": "NPR",
+          "url": "https://www.npr.org/2026/08/18/nx-s1-5935428/a-look-at-the-trump-administrations-evolving-relationship-with-asia",
+          "date": "2026-08-18T08:40:08+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump lashes out at CNN reporter over South Korea question",
+          "source": "Al Jazeera",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/8/18/trump-lashes-out-at-cnn-reporter-over-south-korea-question",
+          "date": "2026-08-18T08:34:10+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "President Trump Orders Pentagon to Reduce Scope of Joint Drills with South Korea",
+          "source": "The Presidential Prayer Team",
+          "url": "https://www.presidentialprayerteam.org/2026/08/18/president-trump-reduces-scope-of-joint-military-exercises-with-south-korea/",
+          "date": "2026-08-18T08:30:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "The U.S. Is About To Hit Iran With An Economic Tsunami",
+          "source": "News Radio 1200 WOAI",
+          "url": "https://woai.iheart.com/featured/san-antonios-first-news/content/2026-08-17-the-us-is-about-to-hit-iran-with-an-economic-tsunami/",
+          "date": "2026-08-18T08:30:00+00:00",
           "category": "networks"
+        },
+        {
+          "title": "War Secretary Pete Hegseth Says Cuba Military Intervention \"On The Table\"",
+          "source": "NewsRadio 740 KTRH",
+          "url": "https://ktrh.iheart.com/featured/houston-texas-news/content/2026-08-17-war-secretary-pete-hegseth-says-cuba-military-intervention-on-the-table/",
+          "date": "2026-08-18T08:30:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Donald Trump Says Kim Jong Un Responded, but Leaves One Big Question Unanswered",
+          "source": "Yahoo",
+          "url": "https://www.yahoo.com/news/politics/articles/donald-trump-says-kim-jong-074925203.html",
+          "date": "2026-08-18T07:49:25+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Donald Trump & JD Vance Can’t Agree on What Comes First in Iran",
+          "source": "Yahoo",
+          "url": "https://www.yahoo.com/news/politics/articles/donald-trump-jd-vance-t-070729146.html",
+          "date": "2026-08-18T07:07:29+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Donald Trump’s Iran War Is Colliding With His Midterm Reality — Poll",
+          "source": "Yahoo",
+          "url": "https://www.yahoo.com/news/politics/articles/donald-trump-iran-war-colliding-065128723.html",
+          "date": "2026-08-18T06:51:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Donald Trump Just Floated a Dramatic New Move in the Strait of Hormuz",
+          "source": "Yahoo",
+          "url": "https://www.yahoo.com/news/politics/articles/donald-trump-just-floated-dramatic-065142933.html",
+          "date": "2026-08-18T06:51:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump says N Korea’s Kim has responded to his request for a conversation",
+          "source": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/8/18/trump-says-n-koreas-kim-has-responded-to-his-request-for-a-conversation",
+          "date": "2026-08-18T05:54:47+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "South Korea president calls for military independence in wake of Trump call to cut joint drills",
+          "source": "The Guardian",
+          "url": "https://www.theguardian.com/world/2026/aug/18/south-korea-president-trump-military-drills-control-opcon-kim-jong-un",
+          "date": "2026-08-18T05:50:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Why South Koreans thought Trump's drill decision was 'fake news'",
+          "source": "ABC News & Headlines – Australian Broadcasting Corporation",
+          "url": "https://www.abc.net.au/news/2026-08-18/trump-warms-to-north-korea-kim-jong-un/107049122",
+          "date": "2026-08-18T05:40:35+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Rosie Sends Special Message to Trump in Fiery Kimmel Debut",
+          "source": "The Daily Beast",
+          "url": "https://www.thedailybeast.com/obsessed/rosie-odonnell-sends-special-message-to-donald-trump-in-fiery-kimmel-debut/",
+          "date": "2026-08-18T04:55:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Judge blocks Trump administration's attempt to scrap move to Biden-selected FBI headquarters",
+          "source": "Yahoo News Singapore",
+          "url": "https://sg.news.yahoo.com/judge-blocks-trump-administrations-attempt-044714358.html",
+          "date": "2026-08-18T04:47:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Meeting di Rimini, chi ci sarà: da Papa Leone XIV a mezzo governo (ma non Meloni). E torna anche de Pascale",
+          "source": "Corriere di Bologna",
+          "url": "https://corrieredibologna.corriere.it/notizie/politica/26_agosto_18/meeting-di-rimini-chi-ci-sara-da-papa-leone-xiv-a-mezzo-governo-ma-non-meloni-e-torna-anche-de-pascale-f2e9d46c-4df7-4ecd-9074-c9f41b22exlk_amp.shtml",
+          "date": "2026-08-18T04:30:14+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Donald Trump’s cuts to military drills stir doubts about US resolve in Asia",
+          "source": "Financial Times",
+          "url": "https://www.ft.com/content/1d713822-e68f-4476-be94-ffab3418bfe4?syn-25a6b1a6=1",
+          "date": "2026-08-18T04:00:23+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "‘Be Quiet!’: Donald Trump Snaps at Kristen Holmes, CNN Fires Back After ‘Personal Attacks’",
+          "source": "Yahoo",
+          "url": "https://www.yahoo.com/news/politics/articles/quiet-donald-trump-snaps-kristen-035708018.html",
+          "date": "2026-08-18T03:57:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "White House launches personal attack on CNN reporter over question to Trump",
+          "source": "The Guardian",
+          "url": "https://www.theguardian.com/us-news/2026/aug/17/white-house-personal-attack-cnn-reporter-trump",
+          "date": "2026-08-18T02:08:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump dismisses USS Lincoln criticism and snaps at CNN reporter to ‘be quiet’",
+          "source": "The Guardian",
+          "url": "https://www.theguardian.com/us-news/2026/aug/17/trump-uss-abraham-lincoln-strait-of-hormuz",
+          "date": "2026-08-18T00:30:00+00:00",
+          "category": "usa"
         },
         {
           "title": "President Trump: 'Iran should wave the white flag'",
           "source": "Channel 3000",
           "url": "https://www.channel3000.com/video/president-trump-iran-should-wave-the-white-flag/video_94d27285-2b28-5b5e-934e-3181f7297892.html",
           "date": "2026-08-17T21:30:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump’s Bombing Threats Have a Golf Course Problem",
+          "source": "Mother Jones",
+          "url": "https://www.motherjones.com/politics/2026/08/trumps-bombing-threats-have-a-golf-course-problem/",
+          "date": "2026-08-17T21:29:05+00:00",
           "category": "usa"
         },
         {
@@ -263,10 +1984,59 @@
           "category": "usa"
         },
         {
+          "title": "President Trump threatens to bomb Oman with Iran war stuck in stalemate",
+          "source": "CBS News",
+          "url": "https://www.cbsnews.com/detroit/video/president-trump-threatens-to-bomb-oman-with-iran-war-stuck-in-stalemate/",
+          "date": "2026-08-17T21:14:00+00:00",
+          "category": "usa"
+        },
+        {
           "title": "Trump’s approval rating sinks to new low at 33 percent",
           "source": "Al Jazeera",
           "url": "https://www.aljazeera.com/economy/2026/8/17/trumps-approval-rating-sinks-to-new-low",
           "date": "2026-08-17T20:44:29+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "President Trump Dismisses Reports About Conditions Aboard USS Lincoln As \"CNN Fake Report\" - C-SPAN",
+          "source": "",
+          "url": "https://www.c-span.org/clip/white-house-event/president-trump-dismisses-reports-about-conditions-aboard-uss-lincoln-as-cnn-fake-report/5204475",
+          "date": "2026-08-17T19:54:37+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "WATCH: Trump meets with teen lifeguard who rescued child in California",
+          "source": "PBS",
+          "url": "https://www.pbs.org/newshour/politics/watch-trump-meets-with-teen-lifeguard-who-rescued-child-in-california",
+          "date": "2026-08-17T19:41:27+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump administration pauses construction of border project in Big Bend National Park",
+          "source": "Le Monde.fr",
+          "url": "https://www.lemonde.fr/en/international/article/2026/08/17/trump-administration-pauses-construction-of-border-project-in-big-bend-national-park_6756603_4.html",
+          "date": "2026-08-17T19:38:08+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "U.S. President Trump greets lifeguard Ryder Williams, who saved a child off the coast of Santa Cruz, at the White House in Washington",
+          "source": "The Lufkin Daily News",
+          "url": "https://lufkindailynews.com/news_reuters/national/u-s-president-trump-greets-lifeguard-ryder-williams-who-saved-a-child-off-the-coast/image_bcf7be78-779d-5721-87fd-fb7868d9da51.html",
+          "date": "2026-08-17T18:47:10+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "President Trump asked about current progress of the deal to end the Iran war - WBAL-TV",
+          "source": "",
+          "url": "https://www.wbaltv.com/article/president-trump-iran-war-deal-question/73455170",
+          "date": "2026-08-17T18:44:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Nebraska congressman on President Trump's remarks on Iran, oil prices and USS Abraham Lincoln",
+          "source": "kyma.com",
+          "url": "https://kyma.com/decision-politics/national-politics/2026/08/17/nebraska-congressman-on-president-trumps-remarks-on-iran-oil-prices-and-uss-abraham-lincoln/",
+          "date": "2026-08-17T18:19:25+00:00",
           "category": "usa"
         },
         {
@@ -277,10 +2047,59 @@
           "category": "usa"
         },
         {
+          "title": "Marco Rubio Asfixiando al Régimen Cubano",
+          "source": "foxnews.com",
+          "url": "https://www.foxnews.com/video/6403598809112",
+          "date": "2026-08-17T18:11:55+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "President Trump honors heroic teen lifeguard",
+          "source": "FOX6 News Milwaukee",
+          "url": "https://www.fox6now.com/video/fmc-j8hbqh7vil2yz9s4",
+          "date": "2026-08-17T18:07:11+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Donald Trump administration strengthens biosecurity against potential AI threats",
+          "source": "The Jerusalem Post",
+          "url": "https://www.jpost.com/health-and-wellness/article-905807",
+          "date": "2026-08-17T17:57:22+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "President Trump Delivers Remarks to Police in Nassau County, NY",
+          "source": "The White House (.gov)",
+          "url": "https://www.whitehouse.gov/videos/president-trump-delivers-remarks-to-police-in-nassau-county-ny/",
+          "date": "2026-08-17T17:30:56+00:00",
+          "category": "usa"
+        },
+        {
           "title": "Trump threaten to bomb Oman: President Donald Trump threaten to bomb US ally Oman",
           "source": "BBC",
           "url": "https://www.bbc.com/pidgin/articles/cwy4z73n3dno",
           "date": "2026-08-17T17:27:35+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "President Trump threatens Oman as it works with Iran on a Strait of Hormuz deal",
+          "source": "WBAL News Radio",
+          "url": "https://www.wbal.com/president-trump-threatens-oman-as-it-works-with-iran-on-a-strait-of-hormuz-deal",
+          "date": "2026-08-17T17:26:02+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "GOP pressure builds on Trump to find path out of Iran war",
+          "source": "WBKB11.com",
+          "url": "https://www.wbkb11.com/news/politics/national-politics/gop-pressure-builds-on-trump-to-find-path-out-of-iran-war/article_fa64f4c3-01c6-578e-bcdb-604dbb67f023.html",
+          "date": "2026-08-17T17:15:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Supreme Court denies Trump’s request to reconsider appeal of Carroll verdict",
+          "source": "Baltimore Sun",
+          "url": "https://www.baltimoresun.com/2026/08/17/supreme-court-denies-trumps-request-to-reconsider-appeal-of-carroll-verdict/",
+          "date": "2026-08-17T17:03:45+00:00",
           "category": "usa"
         },
         {
@@ -291,10 +2110,73 @@
           "category": "usa"
         },
         {
+          "title": "President Trump says Iran should wave the white flag and surrendere",
+          "source": "WHIO TV",
+          "url": "https://www.whio.com/news/president-trump-says-iran-should-wave-white-flag-surrendere/c462be44-216a-4f93-b898-1c16a2c12583/",
+          "date": "2026-08-17T16:31:36+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Map Shows Countries Donald Trump Has Bombed as Oman Faces US Threat",
+          "source": "Newsweek",
+          "url": "https://www.newsweek.com/map-countries-donald-trump-bombed-oman-us-threat-12331876",
+          "date": "2026-08-17T16:29:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump Administration Moves Closer to Pacific Seabed Mining Lease Sale",
+          "source": "gCaptain",
+          "url": "https://gcaptain.com/trump-administration-moves-closer-to-pacific-seabed-mining-lease-sale/",
+          "date": "2026-08-17T16:21:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "The Trump Administration’s Deep-Sea Mining Scheme",
+          "source": "Center for American Progress",
+          "url": "https://www.americanprogress.org/article/the-trump-administrations-deep-sea-mining-scheme/",
+          "date": "2026-08-17T16:20:40+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "US President Trump Says He 'may Endorse Someone' Ahead Of The Israeli Elections",
+          "source": "i24NEWS",
+          "url": "https://www.i24news.tv/en/news/israel-election-s-2026/artc-us-president-trump-says-he-may-endorse-someone-ahead-of-the-israeli-elections",
+          "date": "2026-08-17T16:00:16+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "President Trump orders Pentagon to cut back military exercises with South Korea",
+          "source": "CNBC",
+          "url": "https://www.cnbc.com/video/2026/08/17/president-trump-orders-pentagon-to-cut-back-military-excises-with-south-korea.html",
+          "date": "2026-08-17T15:43:06+00:00",
+          "category": "usa"
+        },
+        {
           "title": "Trump Threatens to 'Bomb the Shit Out of Oman' if It Hampers Iran War",
           "source": "Haaretz",
           "url": "https://www.haaretz.com/israel-news/israel-security/2026-08-17/ty-article/trump-threatens-to-bomb-the-shit-out-of-oman-if-it-hampers-iran-war/000001a0-1001-d0aa-abfb-be1160620000",
           "date": "2026-08-17T15:05:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Reform risks losing voter appeal with drastic benefits overhaul, UK’s leading pollster warns",
+          "source": "The Independent",
+          "url": "https://www.independent.co.uk/news/uk/politics/reform-uk-benefits-welfare-cuts-eu-foreign-nationals-pip-b3034235.html",
+          "date": "2026-08-17T15:00:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Why Donald Trump is threatening Oman over the Strait of Hormuz",
+          "source": "The Jerusalem Post",
+          "url": "https://www.jpost.com/middle-east/article-905795",
+          "date": "2026-08-17T14:50:50+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Donald Trump: Iran Is a Good Poker Player, But It Must Surrender",
+          "source": "IranWire",
+          "url": "https://iranwire.com/en/news/156409-donald-trump-iran-is-a-good-poker-player-but-it-must-surrender/",
+          "date": "2026-08-17T14:42:39+00:00",
           "category": "usa"
         },
         {
@@ -303,34 +2185,295 @@
           "url": "https://www.bbc.com/news/articles/cy5dzk0ryzdo",
           "date": "2026-08-17T14:36:44+00:00",
           "category": "usa"
+        },
+        {
+          "title": "President Trump threatens to 'bomb' Oman if it 'gets in the way' as U.S.-Iran ceasefire expires",
+          "source": "cnbc.com",
+          "url": "https://www.cnbc.com/video/2026/08/17/president-trump-threatens-to-bomb-oman-if-it-gets-in-the-way-as-u-s-iran-ceasefire-expires.html",
+          "date": "2026-08-17T14:25:42+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Iran signals readiness for ‘US ground operations’ as MoU expires",
+          "source": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/8/17/iran-signals-readiness-for-us-ground-operations-as-mou-expires",
+          "date": "2026-08-17T14:22:10+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "VOTE: Do you think President Trump can resolve the war in Iran?",
+          "source": "thenationaldesk.com",
+          "url": "https://thenationaldesk.com/news/americas-news-now/vote-do-you-think-president-trump-can-resolve-the-war-in-iran-monday-ceasefire-60-day-negotiations-expires-surrender-bomb-oman-threat-strait-of-hormuz-us-territory",
+          "date": "2026-08-17T14:07:21+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Hero teen lifeguard to meet with President Trump in Oval Office",
+          "source": "nypost.com",
+          "url": "https://nypost.com/2026/08/17/us-news/hero-teen-lifeguard-to-meet-with-president-trump-at-white-house/",
+          "date": "2026-08-17T14:04:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump hails Mecca pact: Can it replace the region’s US security umbrella?",
+          "source": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/8/17/trump-hails-mecca-pact-can-it-replace-the-regions-us-security-umbrella",
+          "date": "2026-08-17T13:58:34+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump Wakes Up and Threatens to “Bomb the Shit” Out of Another Country",
+          "source": "The New Republic",
+          "url": "https://newrepublic.com/post/214401/trump-bomb-shit-oman-iran-war",
+          "date": "2026-08-17T13:56:31+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump Burns Allies Over Iran. South Korea and Oman Are Next.",
+          "source": "Mother Jones",
+          "url": "https://www.motherjones.com/politics/2026/08/trump-burns-allies-over-iran-south-korea-and-oman-are-next/",
+          "date": "2026-08-17T13:55:01+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Supreme Court turns away Trump’s latest bid to block E. Jean Carroll award",
+          "source": "NBC News",
+          "url": "https://www.nbcnews.com/politics/supreme-court/supreme-court-declines-trump-appeal-e-jean-carroll-award-rcna592887",
+          "date": "2026-08-17T13:32:51+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Israeli election: Donald Trump may endorse candidate, makes no mention of Benjamin Netanyahu",
+          "source": "The Jerusalem Post",
+          "url": "https://www.jpost.com/israel-election-2026/article-905784",
+          "date": "2026-08-17T13:20:35+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Why is Donald Trump punishing South Korea?",
+          "source": "theweek.com",
+          "url": "https://theweek.com/world-news/why-is-donald-trump-punishing-south-korea",
+          "date": "2026-08-17T13:09:35+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump Hands North Korea’s Kim Jong Un a Massive Gift",
+          "source": "The New Republic",
+          "url": "https://newrepublic.com/post/214399/trump-north-korea-kim-jong-un-south-korea",
+          "date": "2026-08-17T13:05:47+00:00",
+          "category": "usa"
         }
       ],
       "first_seen": "2026-08-16T13:11:16+00:00",
-      "last_seen": "2026-08-18T01:58:43+00:00"
+      "last_seen": "2026-08-18T13:25:25+00:00"
     },
     {
       "id": "reform-uks-welfare-overhaul-and-migration-policies",
       "title": "Reform UK’s welfare overhaul and migration policies",
-      "blurb": "Reform UK has proposed sweeping changes to the UK’s welfare system, including scrapping disability benefits for millions and mandating community work for long-term claimants. The party’s anti-immigration stance, including stripping foreign nationals of benefits, has sparked intense debate over its feasibility and morality.",
-      "affect": "This story is charged due to the drastic nature of the proposed welfare cuts, the targeting of vulnerable groups, and the polarized debate over immigration and social safety nets.",
+      "blurb": "Reform UK proposes drastic welfare cuts, including scrapping PIP benefits and banning foreign nationals from welfare. The party faces backlash over climate denialism and internal rifts.",
+      "affect": "This commands attention due to outrage over welfare cuts, polarized contention over migration, and alarmist framing of economic impacts.",
       "intensity": 4,
       "affect_signals": [
         "outrage-coded language",
-        "moral panic register",
         "polarized contention",
         "cross-source repetition",
-        "alarmist framing"
+        "alarmist framing",
+        "moral panic register"
       ],
       "categories": [
-        "🇬🇧 Reform UK"
+        "uk",
+        "welfare",
+        "migration"
       ],
       "article_count": 60,
       "refs": [
+        {
+          "title": "Richard Tice wants to double down on climate chaos",
+          "source": "thecanary.co",
+          "url": "https://www.thecanary.co/trending/2026/08/18/richard-tice-climate-chaos/",
+          "date": "2026-08-18T12:42:52+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Reform UK suspends Tory defector Tim Montgomerie after criticism of Nigel Farage",
+          "source": "Financial Times",
+          "url": "https://www.ft.com/content/4e58775a-4c71-4945-895a-5dc31306ddd6?syn-25a6b1a6=1",
+          "date": "2026-08-18T12:02:19+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Richard Tice's guide to sitting back and enjoying a wildfire",
+          "source": "The Daily Mash",
+          "url": "https://www.thedailymash.co.uk/politics/richard-tices-guide-to-sitting-back-and-enjoying-a-wildfire-20260818268736",
+          "date": "2026-08-18T12:01:16+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Putin is an open threat to the UK – will his admirer Nigel Farage finally say so?",
+          "source": "The Independent",
+          "url": "https://www.independent.co.uk/voices/vladimir-putin-nuclear-threat-nigel-farage-b3034836.html",
+          "date": "2026-08-18T11:46:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Reform is using welfare to distract from its problems",
+          "source": "hyphenonline.com",
+          "url": "https://hyphenonline.com/2026/08/18/reform-uk-cuts-pip-welfare-benefits-foreign-nationals-distract-christopher-harborne-election-binface/",
+          "date": "2026-08-18T11:43:55+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Richard Tice slammed after telling people to stop being 'doom and gloom' about climate change",
+          "source": "The London Economic",
+          "url": "https://www.thelondoneconomic.com/politics/richard-tice-slammed-after-telling-people-to-stop-being-doom-and-gloom-about-climate-change-408970/",
+          "date": "2026-08-18T11:26:05+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "We must speak out against fascism at every opportunity",
+          "source": "The National Scot",
+          "url": "https://www.thenational.scot/politics/26472423.must-speak-fascism-every-opportunity/",
+          "date": "2026-08-18T11:02:25+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "BREAKING: ConservativeHome founder Tim Montgomerie is ‘suspended’ from Reform UK",
+          "source": "Conservative Home",
+          "url": "https://conservativehome.com/2026/08/18/breaking-conservativehome-founder-tim-montgomerie-is-suspended-from-reform-uk/",
+          "date": "2026-08-18T10:49:13+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Labour writes to Gambling Commission over allegations against Reform donors",
+          "source": "nation.cymru",
+          "url": "https://nation.cymru/news/labour-writes-to-gambling-commission-over-allegations-against-reform-donors/",
+          "date": "2026-08-18T10:38:30+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Reform UK suspends senior figure after public criticism of Zia Yusuf",
+          "source": "The Independent",
+          "url": "https://www.independent.co.uk/bulletin/news/tim-montgomerie-reform-zia-yusuf-farage-b3034824.html",
+          "date": "2026-08-18T10:32:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Half Of Brits Think Farage Should Face A Second By-Election If Found To Have Broken Donation Rules",
+          "source": "HuffPost UK",
+          "url": "https://www.huffingtonpost.co.uk/entry/farage-second-by-election-5m-donation_uk_6a841c7de4b05886dff677fe?ncid=flipboard-HP",
+          "date": "2026-08-18T10:28:07+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Jordan Bardella devenu millionnaire grâce à des “livres qu’il n’a pas écrits” : il a les oreilles qui sifflent après sa déclaration de revenus",
+          "source": "Closer",
+          "url": "https://www.closermag.fr/politique/jordan-bardella-devenu-millionnaire-grace-a-des-livres-quil-na-pas-ecrits-il-a-les-oreilles-qui-sifflent-apres-sa-declaration-de-revenus-3653403",
+          "date": "2026-08-18T10:00:36+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Jimmie Åkesson öppnar för S i stor fråga",
+          "source": "Marcus Oscarsson",
+          "url": "https://marcusoscarsson.se/jimmie-akesson-oppnar-for-s-i-stor-fraga/",
+          "date": "2026-08-18T09:23:20+00:00",
+          "category": "sweden"
+        },
+        {
+          "title": "Reform 'Suspends Senior Figure' After He Says Zia Yusuf 'Behaves Like A Child'",
+          "source": "HuffPost UK",
+          "url": "https://www.huffingtonpost.co.uk/entry/reform-uk-tim-montgomerie-zia-yusuf-farage_uk_6a8417c8e4b05886dff676cc?origin=home-latest-unit",
+          "date": "2026-08-18T09:22:24+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Tidö parties fail to close ground as Swedish opposition holds ten-point lead",
+          "source": "The Local Sweden",
+          "url": "https://www.thelocal.se/20260818/tido-parties-fail-to-close-ground-as-swedish-opposition-holds-ten-point-lead?gaa_at=eafs&gaa_n=AXbw80Q3_V1OVtKws5ZkkDvNXJyLd-RELZrYems3EAYo5t36hRPLt2mDTj-5&gaa_ts=6a842aba&gaa_sig=rLbbSS668EaXf37DekIExANce2ibJUA83bHvdHLqRju81NH6miHsmKPnPEQPR6on6woj2RmygYYD6uC-aEFSew%3D%3D",
+          "date": "2026-08-18T09:19:17+00:00",
+          "category": "sweden"
+        },
+        {
+          "title": "Richard Tice Dubbed 'Tone-Deaf' After Encouraging Brits To Enjoy Heatwaves Amid Climate Change Crisis",
+          "source": "Yahoo News UK",
+          "url": "https://uk.news.yahoo.com/richard-tice-dubbed-tone-deaf-075432545.html",
+          "date": "2026-08-18T07:54:32+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "New Government campaign warns of the terms 'tradwife' and 'manosphere'",
+          "source": "The Irish Times",
+          "url": "https://www.irishtimes.com/video/video/2026/08/17/new-government-campaign-warns-of-the-terms-tradwife-and-manosphere/",
+          "date": "2026-08-18T07:18:06+00:00",
+          "category": "general"
+        },
+        {
+          "title": "Can we normalise normal please?",
+          "source": "Nation.Cymru",
+          "url": "https://nation.cymru/opinion/can-we-normalise-normal-please/",
+          "date": "2026-08-18T06:54:12+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Reform UK councillor resigns from Leicestershire County Council",
+          "source": "BBC",
+          "url": "https://www.bbc.com/news/articles/cx2dzrgyd74o",
+          "date": "2026-08-18T06:53:03+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Reform UK councillor resigns from county council",
+          "source": "Yahoo",
+          "url": "https://www.yahoo.com/news/politics/articles/reform-uk-councillor-resigns-county-065308882.html",
+          "date": "2026-08-18T06:53:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "While Farage won big in Clacton, Badenoch’s joking fell flat",
+          "source": "The Scotsman",
+          "url": "https://www.scotsman.com/news/opinion/while-farage-won-big-in-clacton-badenochs-joking-fell-flat-8926161",
+          "date": "2026-08-18T05:00:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Tice's climate comments are 'idiotic', eco-millionaire Dale Vince says as he admits he 'wouldn't mind' making climate denial illegal",
+          "source": "lbc.co.uk",
+          "url": "https://www.lbc.co.uk/article/richard-tice-dale-vince-climate-change-holocaust-denial-5HjdgDS_2/",
+          "date": "2026-08-18T01:32:50+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Reform’s Richard Tice says UK should ‘celebrate’ climate change: ‘You can’t stop it’",
+          "source": "The Independent",
+          "url": "https://www.independent.co.uk/bulletin/news/richard-tice-reform-uk-climate-change-b3034452.html",
+          "date": "2026-08-17T23:21:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Richard Tice accused of spreading heatwave misinformation",
+          "source": "lbc.co.uk",
+          "url": "https://www.lbc.co.uk/videos/2JsSf8EbAP3/",
+          "date": "2026-08-17T22:11:37+00:00",
+          "category": "uk"
+        },
         {
           "title": "Reform’s Pip plans are ‘fantasy economics’, Labour say as claimants speak out against proposals",
           "source": "The Independent",
           "url": "https://www.independent.co.uk/bulletin/news/pip-dwp-reform-robert-jenrick-b3034552.html",
           "date": "2026-08-17T20:59:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Javier Milei encabezó el acto en homenaje a José de San Martín: “Tenemos la libertad como mandato”",
+          "source": "Diario Digital Conclusión",
+          "url": "https://www.conclusion.com.ar/politica/javier-milei-encabezo-el-acto-en-homenaje-a-jose-de-san-martin-tenemos-la-libertad-como-mandato/08/2026/",
+          "date": "2026-08-17T20:34:35+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "‘We’re not scroungers – we need it’: Furious PIP claimants hit back at Reform’s plan to axe benefits",
+          "source": "The Independent",
+          "url": "https://www.independent.co.uk/news/uk/home-news/reform-benefits-policy-pip-anger-b3034324.html",
+          "date": "2026-08-17T19:25:00+00:00",
           "category": "uk"
         },
         {
@@ -341,6 +2484,34 @@
           "category": "uk"
         },
         {
+          "title": "Richard Tice: Scrap net zero and enjoy the weather",
+          "source": "The Times",
+          "url": "https://www.thetimes.co.uk/uk/politics/article/richard-tice-scrap-net-zero-reform-uk-climate-change-tnxj65fv0",
+          "date": "2026-08-17T18:55:59+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "DWP PIP claimants are being tricked into voting Reform",
+          "source": "thecanary.co",
+          "url": "https://www.thecanary.co/trending/2026/08/17/reform-dwp-pip/",
+          "date": "2026-08-17T18:13:32+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Itthon: Magyar Péter: Jövő héttől már elkezdhetik tervezni a paksi turbinák visszakapcsolását",
+          "source": "| hvg.hu",
+          "url": "https://hvg.hu/itthon/20260817_magyar-peter-paks-helyzetjelentes",
+          "date": "2026-08-17T17:20:54+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Reform deputy leader accused of being ‘completely out of touch’ for telling people to ‘enjoy’ climate change",
+          "source": "The Independent",
+          "url": "https://www.independent.co.uk/news/uk/politics/richard-tice-reform-enjoy-climate-change-greenpeace-b3034342.html",
+          "date": "2026-08-17T16:44:00+00:00",
+          "category": "uk"
+        },
+        {
           "title": "There’s a problem in the small print of Reform UK’s benefits plan",
           "source": "The Times",
           "url": "https://www.thetimes.com/uk/politics/article/reform-immigration-benefits-pip-policy-nigel-farage-qvdrs6vhh",
@@ -348,10 +2519,59 @@
           "category": "uk"
         },
         {
+          "title": "Reform MP blasted after saying climate change is 'fantastic' as it helps English wine",
+          "source": "The National Scot",
+          "url": "https://www.thenational.scot/news/26471766.richard-tice-claims-climate-change-make-english-wine-better/",
+          "date": "2026-08-17T16:06:03+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Jenrick: ‘Clean up your local high street or be stripped of your benefits’",
+          "source": "Newark Advertiser",
+          "url": "https://www.newarkadvertiser.co.uk/news/jenrick-clean-up-your-local-high-street-or-be-stripped-of-9478901/",
+          "date": "2026-08-17T15:24:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Jon Ossoff’s Latest Donald Trump Takedown Took an Unexpected Natalie Harp Turn",
+          "source": "Yahoo",
+          "url": "https://www.yahoo.com/news/politics/articles/jon-ossoff-latest-donald-trump-151227681.html",
+          "date": "2026-08-17T15:12:27+00:00",
+          "category": "usa"
+        },
+        {
           "title": "Britain's Reform UK party pledges to strip all foreign nationals of benefits, including EU citizens",
           "source": "Euronews.com",
           "url": "https://www.euronews.com/my-europe/2026/08/17/britains-reform-uk-party-pledges-to-strip-all-foreign-nationals-of-benefits-including-eu-c",
           "date": "2026-08-17T15:00:17+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Reform risks losing voter appeal with drastic benefits overhaul, UK’s leading pollster warns",
+          "source": "The Independent",
+          "url": "https://www.independent.co.uk/news/uk/politics/reform-uk-benefits-welfare-cuts-eu-foreign-nationals-pip-b3034235.html",
+          "date": "2026-08-17T15:00:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Reform UK benefits ban for foreign nationals slammed as ‘cruel and unworkable’",
+          "source": "The National Scot",
+          "url": "https://www.thenational.scot/news/26471679.reform-uk-benefits-ban-foreign-nationals-cruel-unworkable/",
+          "date": "2026-08-17T14:58:09+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Reform UK Pledges to Ban All Foreigners from British Benefits",
+          "source": "News.by",
+          "url": "https://news.by/eng/news/v_mire/reform-uk-pledges-to-ban-all-foreigners-from-british-benefits",
+          "date": "2026-08-17T14:45:44+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Cancer patient confronts Reform London mayor candidate Laila Cunningham live on radio over major benefit cuts",
+          "source": "London Evening Standard",
+          "url": "https://www.standard.co.uk/news/london/nigel-farage-benefits-pip-cuts-laila-cunningham-cancer-patient-b1293681.html",
+          "date": "2026-08-17T14:19:48+00:00",
           "category": "uk"
         },
         {
@@ -362,39 +2582,370 @@
           "category": "uk"
         },
         {
-          "title": "Long-term benefits claimants to work or face being stripped of cash: Reform UK",
-          "source": "Northwich Guardian",
-          "url": "https://www.winsfordguardian.co.uk/news/national/26470703.long-term-benefits-claimants-work-face-stripped-cash-reform-uk/",
-          "date": "2026-08-17T11:52:23+00:00",
+          "title": "Reform say people on benefits should be cleaning the streets or face being stripped of their cash",
+          "source": "lbc.co.uk",
+          "url": "https://www.lbc.co.uk/article/reform-benefits-cleaning-streets-stripped-cash-5HjdgCX_2/",
+          "date": "2026-08-17T14:00:44+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "‘America first’ means saying no to Saudi nuclear power | Opinion",
+          "source": "Sun Sentinel",
+          "url": "https://www.sun-sentinel.com/2026/08/17/america-first-means-saying-no-to-saudi-nuclear-power-opinion/",
+          "date": "2026-08-17T14:00:04+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Climate change is real but people should enjoy it – Richard Tice",
+          "source": "Nation.Cymru",
+          "url": "https://nation.cymru/news/climate-change-is-real-but-people-should-enjoy-it-richard-tice/",
+          "date": "2026-08-17T13:23:08+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Richard Tice tells people not to be so 'doom and gloom' about global warming as it could improve English wine",
+          "source": "lbc.co.uk",
+          "url": "https://www.lbc.co.uk/article/richard-tice-global-warming-climate-change-reform-wine-5HjdgCT_2/",
+          "date": "2026-08-17T13:11:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Reform UK told 'fantasy numbers are simply not plausible' as they announce DWP welfare plans",
+          "source": "Yahoo News UK",
+          "url": "https://uk.news.yahoo.com/reform-uk-told-fantasy-numbers-131029997.html",
+          "date": "2026-08-17T13:10:29+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Not all 'doom and gloom': Reform's deputy leader downplays climate crisis – video",
+          "source": "The Guardian",
+          "url": "https://www.theguardian.com/uk-news/video/2026/aug/17/not-doom-and-gloom-reform-uk-deputy-leader-richard-tice-climate-crisis-video",
+          "date": "2026-08-17T13:05:00+00:00",
           "category": "uk"
         }
       ],
       "first_seen": "2026-08-17T02:03:07+00:00",
-      "last_seen": "2026-08-18T01:58:43+00:00"
+      "last_seen": "2026-08-18T13:25:25+00:00"
     },
     {
       "id": "legas-internal-crisis-and-salvinis-leadership-challenge",
       "title": "Lega’s internal crisis and Salvini’s leadership challenge",
-      "blurb": "Italy’s Lega party is embroiled in an internal power struggle, with regional leaders like Attilio Fontana openly questioning Matteo Salvini’s leadership. The party’s declining poll numbers and infighting have raised questions about its future direction and ability to remain a dominant force in Italian politics.",
-      "affect": "This commands attention due to the high-stakes leadership battle within one of Italy’s major political parties, the potential for a split, and the broader implications for the right-wing coalition.",
+      "blurb": "Lega faces internal rebellion as northern leaders demand Salvini’s resignation. The party’s declining polls and strategic missteps fuel leadership disputes ahead of elections.",
+      "affect": "This commands attention due to leadership crisis tone, polarized contention, and moral panic over party fragmentation.",
       "intensity": 4,
       "affect_signals": [
         "leadership crisis tone",
         "polarized contention",
         "cross-source repetition",
         "outrage-coded language",
-        "moral charge"
+        "moral panic register"
       ],
       "categories": [
-        "🇮🇹 Fratelli d'Italia / Lega"
+        "it",
+        "far-right",
+        "elections"
       ],
-      "article_count": 80,
+      "article_count": 70,
       "refs": [
+        {
+          "title": "Polemiche dopo la vicenda dell'agente che ha sparato in corsia, Salvini: \"Ha solo fatto il suo dovere\"",
+          "source": "Tgcom24",
+          "url": "https://www.tgcom24.mediaset.it/2026/video/polemiche-dopo-la-vicenda-dell-agente-che-ha-sparato-in-corsia-salvini-ha-solo-fatto-il-suo-dovere-_115598527-02k.shtml",
+          "date": "2026-08-18T11:04:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Lega, tensioni su Salvini: il Nord chiede un passo indietro",
+          "source": "Sky TG24",
+          "url": "https://tg24.sky.it/politica/video/2026/08/18/lega-tensioni-su-salvini-il-nord-chiede-un-passo-indietro-1118405",
+          "date": "2026-08-18T10:57:36+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Fontana difende l'unità della Lega: \"Più rispetto per Salvini\"",
+          "source": "Il Foglio",
+          "url": "https://www.ilfoglio.it/politica/2026/08/18/news/fontana-difende-lunita-della-lega-piu-rispetto-per-salvini--405054",
+          "date": "2026-08-18T10:52:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Sicurezza, gli Stati generali del sindaco Ianeselli: altolà di Fratelli d'Italia, cauta la Lega",
+          "source": "Corriere del Trentino",
+          "url": "https://corrieredeltrentino.corriere.it/notizie/politica/26_agosto_18/sicurezza-gli-stati-generali-del-sindaco-ianeselli-altola-di-fratelli-d-italia-cauta-la-lega-e46eef00-64da-4e52-9438-c26e6f74fxlk.shtml",
+          "date": "2026-08-18T10:22:56+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Lega, il libro di Romeo: \"Racconto desiderio di rinnovamento della base\"",
+          "source": "lapresse.it",
+          "url": "https://www.lapresse.it/politica/2026/08/18/lega-il-libro-di-romeo-racconto-desiderio-di-rinnovamento-della-base/",
+          "date": "2026-08-18T10:13:06+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Giochi sotto l’ombrellone, a Modica, fra Forza Italia e Fratelli d’Italia",
+          "source": "ragusalibera.it",
+          "url": "https://ragusalibera.it/giochi-sotto-lombrellone-a-modica-fra-forza-italia-e-fratelli-ditalia/",
+          "date": "2026-08-18T10:08:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "“La Lega vince unita: più rispetto per Salvini. L’Occidente sbaglia se cancella le sue radici”",
+          "source": "il Giornale",
+          "url": "https://www.ilgiornale.it/intervista/interni/la-lega-vince-unita-piu-rispetto-per-salvini-loccidente-sbaglia-se-cancella-le-sue-radici/",
+          "date": "2026-08-18T10:00:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Massimiliano Romeo non lascia ma raddoppia: \"Ci siamo imborghesiti, la Lega torni a fare la Lega\"",
+          "source": "HuffPost Italia",
+          "url": "https://www.huffingtonpost.it/politica/2026/08/18/news/romeo_rilancia_la_lega_nazionale_con_il_suo_nuovo_libro_litalia_diventi_una_repubblica_federale-22551713/",
+          "date": "2026-08-18T10:00:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Meloni ricorda la strage di Vergarolla: «Sia fatta luce»",
+          "source": "avvenire.it",
+          "url": "https://www.avvenire.it/politica/meloni-ricorda-la-strage-di-vergarolla-sia-fatta-luce_112073",
+          "date": "2026-08-18T09:55:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Meloni: 80 anni fa la strage di Vergarolla",
+          "source": "RaiNews",
+          "url": "https://www.rainews.it/articoli/ultimora/meloni-80-anni-fa-la-strage-di-vergarolla-2099c312-75c6-4a4f-b5a0-23e56a902646.html",
+          "date": "2026-08-18T09:45:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Lega, Centinaio risponde a Fontana: «Prima di puntare il dito contro Salvini, facciamo un esame di coscienza»",
+          "source": "laprovinciapavese.gelocal.it",
+          "url": "https://laprovinciapavese.gelocal.it/sport/2026/08/18/news/lega_centinaio_risponde_a_fontana_prima_di_puntare_il_dito_contro_salvini_facciamo_un_esame_di_coscienza-15716942/",
+          "date": "2026-08-18T09:44:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Vergarolla, Meloni a 80 anni dalla strage: “Crimine ancora impunito, la verità è la via per la giustizia”",
+          "source": "La Discussione",
+          "url": "https://ladiscussione.com/457170/attualita/strage-vergarolla-meloni/",
+          "date": "2026-08-18T09:36:21+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "OPPEANO, LA FESTA DELLA LEGA COMPIE 25 ANNI: ARRIVANO SALVINI, FONTANA, STEFANI E CONTE",
+          "source": "Il Nuovo Giornale Web",
+          "url": "https://www.ilnuovogiornaleweb.it/2026/08/18/oppeano-la-festa-della-lega-compie-25-anni-arrivano-salvini-fontana-stefani-e-conte/",
+          "date": "2026-08-18T09:32:28+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Lega: libro di Romeo, 'racconto desiderio rinnovamento della base'",
+          "source": "ANSA",
+          "url": "https://www.ansa.it/sito/notizie/topnews/2026/08/18/lega-libro-di-romeo-racconto-desiderio-rinnovamento-della-base_9e127bde-be80-4054-9af6-9fc6e95156ee.html",
+          "date": "2026-08-18T09:28:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Vox reprueba 192.000 euros del Ayuntamiento de Badajoz destinados a proyectos de cooperación y desarrollo",
+          "source": "Onda Cero Radio",
+          "url": "https://www.ondacero.es/emisoras/extremadura/badajoz/vox-reprueba-192000-euros-ayuntamiento-badajoz-destinados-proyectos-cooperacion-desarrollo_202608186a8421c571b42a0b5df5b5b5.html",
+          "date": "2026-08-18T09:11:33+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Vertenza Menarini, Zaolino (Fismic/Filcom): «Il Governo Meloni ha fallito»",
+          "source": "Orticalab",
+          "url": "https://www.orticalab.it/Vertenza-Menarini-Zaolino-Fismic-Filcom-Il-Governo-Meloni-ha-fallito",
+          "date": "2026-08-18T08:52:58+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Il filo invisibile che lega Alvaro e Giovanni Verga",
+          "source": "Il Quotidiano del Sud",
+          "url": "https://www.quotidianodelsud.it/calabria/societa-e-cultura/estate/2026/08/18/il-filo-invisibile-che-lega-alvaro-e-giovanni-verga",
+          "date": "2026-08-18T08:44:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Tasse, contratti, bollette, nucleare: i quattro dossier di Meloni per l'autunno",
+          "source": "Teleborsa",
+          "url": "https://www.teleborsa.it/News/2026/08/18/tasse-contratti-bollette-nucleare-i-quattro-dossier-di-meloni-per-l-autunno-45.html",
+          "date": "2026-08-18T08:43:57+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Florida primaries pose a test for far-right antisemites",
+          "source": "Jewish Insider",
+          "url": "https://jewishinsider.com/2026/08/florida-primaries-far-right-donalds-fine-fishback-bilzerian/",
+          "date": "2026-08-18T08:42:04+00:00",
+          "category": "general"
+        },
+        {
+          "title": "Gamarra presenta el plan del PP para Ceuta: mando único y devolución de todos los migrantes, incluidos menores",
+          "source": "moncloa.com",
+          "url": "https://www.moncloa.com/2026/08/18/plan-pp-ceuta-3417133/",
+          "date": "2026-08-18T08:27:50+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Centinaio (Lega): “Ecco le proposte al Masaf per il settore vitivinicolo”",
+          "source": "Alimentando",
+          "url": "https://www.alimentando.info/centinaio-lega-ecco-le-proposte-al-masaf-per-il-settore-vitivinicolo/",
+          "date": "2026-08-18T08:13:15+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Lega Nerviano: “Dubbi sull’affidabilità di Aemme”",
+          "source": "Sempione News",
+          "url": "https://www.sempionenews.it/istituzioni/lega-nerviano-dubbi-sullaffidabilita-di-aemme/",
+          "date": "2026-08-18T07:58:10+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Giorgia Meloni in vacanza in Puglia: i retroscena",
+          "source": "Virgilio InItalia",
+          "url": "https://initalia.virgilio.it/giorgia-meloni-vacanza-puglia-retroscena-130722",
+          "date": "2026-08-18T07:55:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Fontana, Fedriga, Zaia e Fugatti. L'asse per l'«associazione» e il cambio al vertice del partito",
+          "source": "Corriere della Sera",
+          "url": "https://www.corriere.it/politica/26_agosto_18/fontana-fedriga-zaia-e-fugatti-l-asse-per-l-associazione-e-il-cambio-al-vertice-del-partito-5e888451-2722-46da-be90-c925284cfxlk_amp.shtml",
+          "date": "2026-08-18T07:49:16+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "La Lega in apnea: Stefani difende Salvini mentre i sondaggi e Vannacci mordono ai fianchi",
+          "source": "L'Identità",
+          "url": "https://www.lidentita.it/stefani-salvini-vannacci/",
+          "date": "2026-08-18T07:15:36+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Videó: Újabb apadási hullámról számolt be Paksnál Magyar Péter",
+          "source": "HírTv",
+          "url": "https://hirtv.origo.hu/video/ujabb-apadasi-hullamrol-szamolt-be-paksnal-magyar-peter",
+          "date": "2026-08-18T07:14:58+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Lega, Fontana “Si vince uniti, più rispetto per Salvini”",
+          "source": "Stampa Parlamento",
+          "url": "https://www.stampaparlamento.it/2026/08/18/lega-fontana-si-vince-uniti-piu-rispetto-per-salvini/",
+          "date": "2026-08-18T06:52:01+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Lorenzo Fontana: \"Salvini merita rispetto, ha salvato una Lega data per morta\"",
+          "source": "HuffPost Italia",
+          "url": "https://www.huffingtonpost.it/politica/2026/08/18/news/lorenzo_fontana_salvini_merita_rispetto_ha_salvato_una_lega_morta-22550621/",
+          "date": "2026-08-18T06:08:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "La Lega scopre i diritti civili mentre perde se stessa",
+          "source": "lidentita.it",
+          "url": "https://www.lidentita.it/la-lega-scopre-i-diritti-civili-mentre-perde-se-stessa/",
+          "date": "2026-08-18T05:49:03+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Effetto domino nella Lega dopo le parole di Fontana: a sorridere è solo Vannacci",
+          "source": "ilnordest.it",
+          "url": "https://www.ilnordest.it/editoriali/lega-fontana-salvini-cosa-succede-commento-carlo-bertini-dkv6vil6",
+          "date": "2026-08-18T05:18:06+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Lega, la fronda nordista allo scoperto per un passo indietro di Matteo Salvini",
+          "source": "ilnordest.it",
+          "url": "https://www.ilnordest.it/politica/lega-nord-fontana-passo-indietro-salvini-chat-infuocate-xjjufoh0",
+          "date": "2026-08-18T05:16:32+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Lega, Molinari prende le distanze. Dagli Usa osserva gli anti Salvini",
+          "source": "Lo Spiffero",
+          "url": "https://lospiffero.com/ls_article.php?id=101470",
+          "date": "2026-08-18T05:00:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Tensioni nella Lega, Fontana: “C’è malessere, su Salvini nessuna soluzione va esclusa”",
+          "source": "Calabria Diretta News",
+          "url": "https://www.calabriadirettanews.com/2026/08/18/tensioni-nella-lega-fontana-ce-malessere-su-salvini-nessuna-soluzione-va-esclusa/",
+          "date": "2026-08-18T04:51:24+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Ghiozzi sostiene esposto Lega Collesalvetti alla corte dei Conti: 'bilancio irregolare, concorsi d'agosto e forzature contabili da chiarire immediatamente'",
+          "source": "Virgilio",
+          "url": "https://www.virgilio.it/italia/collesalvetti/notizielocali/ghiozzi_sostiene_esposto_lega_collesalvetti_alla_corte_dei_conti_bilancio_irregolare_concorsi_d_agosto_e_forzature_contabili_da_chiarire_immediatamente_-77258583.html",
+          "date": "2026-08-18T04:01:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Salvini’s isolation. Northern governors are preparing to oust him and are open to his replacement. Farewell to the Ministry of the Interior",
+          "source": "Il Foglio",
+          "url": "https://www.ilfoglio.it/en/politics/2026/08/18/news/salvinis-isolation-northern-governors-are-preparing-to-oust-him-and-are-open-to-his-replacement-farewell-to-the-ministry-of-the-interior--405034",
+          "date": "2026-08-18T04:00:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Salvini’s escape route",
+          "source": "Il Foglio",
+          "url": "https://www.ilfoglio.it/en/politics/2026/08/18/news/salvinis-escape-route--405014",
+          "date": "2026-08-18T04:00:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Carroccio in subbuglio, Corbetta: “Stavolta non sto con Fontana, che errore guardare al centro perché a destra c’è Vannacci”",
+          "source": "Il Giorno",
+          "url": "https://www.ilgiorno.it/milano/politica/carroccio-in-subbuglio-corbetta-stavolta-non-sto-con-fontana-che-errore-guardare-al-centro-perche-a-destra-ce-vannacci-l6diazs9",
+          "date": "2026-08-18T01:44:31+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "La Lega Araba accusa Israele di ostacolare il processo di pace a Gaza.",
+          "source": "Vietnam.vn",
+          "url": "https://www.vietnam.vn/it/lien-doan-arab-cao-buoc-israel-can-tro-tien-trinh-hoa-binh-gaza",
+          "date": "2026-08-17T23:38:27+00:00",
+          "category": "italy"
+        },
         {
           "title": "Nella Lega volano gli stracci. I pretoriani difendono Salvini, ma finiscono nel mirino",
           "source": "La Stampa",
           "url": "https://www.lastampa.it/politica/2026/08/19/news/nella_lega_volano_gli_stracci_i_pretoriani_difendono_salvini_ma_finiscono_nel_mirino-15716619/",
           "date": "2026-08-17T23:00:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Lega, i ribelli verso Pontida: “Salvini cambi o congresso”",
+          "source": "la Repubblica",
+          "url": "https://www.repubblica.it/politica/2026/08/18/news/lega_ribelli_pontida_salvini_congresso-425533701/",
+          "date": "2026-08-17T23:00:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "A Prato spara all'ex detenuto in fuga: agente indagato per tentato omicidio. E Salvini lo difende",
+          "source": "Abruzzo Popolare",
+          "url": "https://www.abruzzopopolare.com/2026/08/17/a-prato-spara-allex-detenuto-in-fuga-agente-indagato-per-tentato-omicidio-e-salvini-lo-difende/",
+          "date": "2026-08-17T21:53:04+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Late-night host torches Hegseth over USS Lincoln with ‘American Horror Story’ analogy",
+          "source": "The Independent",
+          "url": "https://www.independent.co.uk/news/world/americas/us-politics/john-oliver-uss-lincoln-hegseth-b3034508.html",
+          "date": "2026-08-17T21:47:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Castelli: la Lega ha tradito la sua vocazione. «Fontana? Se son rose fioriranno»",
+          "source": "La Prealpina",
+          "url": "https://www.prealpina.it/news/varese/534325/castelli-la-lega-ha-tradito-la-sua-vocazione-fontana-se-son-rose-fioriranno.html",
+          "date": "2026-08-17T20:34:41+00:00",
           "category": "italy"
         },
         {
@@ -405,6 +2956,48 @@
           "category": "italy"
         },
         {
+          "title": "Le reazioni alle accuse di Fontana. Salvini e l'ira per l'attacco «nordista». I suoi: «Così si fa il male della Lega»",
+          "source": "roma.corriere.it",
+          "url": "https://roma.corriere.it/notizie/politica/26_agosto_17/reazioni-fontana-salvini-c4abff5e-ec51-49fb-bd1a-ff7deb828xlk.shtml",
+          "date": "2026-08-17T20:19:44+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "SD vill sänka EU:s klimatkrav – Åkesson ensam i partiledardebatten",
+          "source": "HurBra.se",
+          "url": "https://hurbra.se/akesson-sanka-eu-klimatkrav/",
+          "date": "2026-08-17T20:16:14+00:00",
+          "category": "sweden"
+        },
+        {
+          "title": "Scalia, di Fratelli d’Italia, attacca la giunta di Mantova: «Servono risposte sulla sicurezza»",
+          "source": "Gazzetta di Mantova",
+          "url": "https://www.gazzettadimantova.it/territorio-mantovano/sicurezza-mantova-fratelli-italia-comune-prefetto-1.13099780",
+          "date": "2026-08-17T19:35:55+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "N.L. and Quebec Reach Churchill Falls Energy Deal – August 17, 2026",
+          "source": "CPAC",
+          "url": "https://www.cpac.ca/headline-politics/episode/nl-and-quebec-reach-churchill-falls-energy-deal--august-17-2026?id=76027259-a7c6-474e-9213-d0d59b621476",
+          "date": "2026-08-17T18:32:25+00:00",
+          "category": "networks"
+        },
+        {
+          "title": "Mps, le parole di Meloni aprono il tema spezzatino",
+          "source": "Milano Finanza",
+          "url": "https://www.milanofinanza.it/news/mps-le-parole-di-meloni-aprono-il-tema-spezzatino-202608172011347826",
+          "date": "2026-08-17T18:09:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Meloni: complimenti ad atleti Azzurri per risultati Europei atletica e nuoto",
+          "source": "Il Sole 24 ORE",
+          "url": "https://www.ilsole24ore.com/radiocor/nRC_17.08.2026_18.57_417",
+          "date": "2026-08-17T17:19:33+00:00",
+          "category": "italy"
+        },
+        {
           "title": "Lega, Attilio Fontana: ”C'è malcontento, serve una svolta. Salvini? Non si escluda passo indietro”",
           "source": "Milano Pavia NEWS",
           "url": "https://milanopavia.news/news-milano/lega-attilio-fontana-ce-malcontento-serve-una-svolta-salvini-non-si-escluda-passo-indietro/",
@@ -412,10 +3005,38 @@
           "category": "italy"
         },
         {
-          "title": "Il futuro di Salvini passa da Pontida. I nordisti chiedono il “commissariamento” del Capitano",
-          "source": "Radio Popolare",
-          "url": "https://www.radiopopolare.it/il-futuro-di-salvini-passa-da-pontida-i-nordisti-chiedono-il-commissariamento-del-capitano",
-          "date": "2026-08-17T15:38:24+00:00",
+          "title": "Lega, Salvini verso Pontida: sprint su Autonomia, legittima difesa e lotta all'immigrazione",
+          "source": "ilmessaggero.it",
+          "url": "https://www.ilmessaggero.it/AMP/politica/lega_salvini_verso_pontida-9711440.html",
+          "date": "2026-08-17T17:08:17+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Fontana al Corriere torna a parlare della necessità di un cambio di passo nella Lega",
+          "source": "VareseNews",
+          "url": "https://www.varesenews.it/2026/08/fontana-al-corriere-torna-a-parlare-della-necessita-di-un-cambio-di-passo-nella-lega/2658955/",
+          "date": "2026-08-17T16:03:46+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Trequanda: plauso della Lega Alta Valdichiana senese ai Carabinieri per lo smantellamento del bivacco di spaccio",
+          "source": "Centritalia News",
+          "url": "https://www.centritalianews.it/trequanda-plauso-della-lega-alta-valdichiana-senese-ai-carabinieri-per-lo-smantellamento-del-bivacco-di-spaccio/",
+          "date": "2026-08-17T15:20:22+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Per Matteo Salvini agosto è un mese terribile",
+          "source": "Il Post",
+          "url": "https://www.ilpost.it/2026/08/17/matteo-salvini-lega-fontana-agosto/",
+          "date": "2026-08-17T14:57:23+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Da Le Pen a Vannacci: il mito della “preferenza nazionale” che alimenta la propaganda delle destre",
+          "source": "Domani",
+          "url": "https://www.editorialedomani.it/politica/europa/preferenza-nazionale-le-pen-vannacci-salvini-propaganda-destre-lvprtr5h",
+          "date": "2026-08-17T14:54:00+00:00",
           "category": "italy"
         },
         {
@@ -426,6 +3047,20 @@
           "category": "italy"
         },
         {
+          "title": "Il pronostico di La Russa: “Alle elezioni il centrodestra a prescindere da Vannacci batterà la sinistra”",
+          "source": "Il Fatto Quotidiano",
+          "url": "https://www.ilfattoquotidiano.it/2026/08/17/la-russa-centrodestra-vannacci-elezioni-notizie/8480780/",
+          "date": "2026-08-17T14:17:20+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Salvini col casco da cantiere alla Stazione in costruzione del Pigneto: Opera per unire il quartiere",
+          "source": "Vista Agenzia Televisiva Nazionale",
+          "url": "https://www.agenziavista.it/top-video/2026/1063972_salvini-col-casco-da-cantiere-alla-stazione-del-pigneto-opera-per-unire-il-quartiere/",
+          "date": "2026-08-17T13:53:00+00:00",
+          "category": "italy"
+        },
+        {
           "title": "Crisi nella Lega: chi sono i possibili successori di Matteo Salvini?",
           "source": "ItaliaOggi",
           "url": "https://www.italiaoggi.it/economia-e-politica/attualita/crisi-nella-lega-chi-sono-i-possibili-successori-di-matteo-salvini-etbc4zil",
@@ -433,22 +3068,22 @@
           "category": "italy"
         },
         {
-          "title": "Lega, Fontana lancia l'assalto del nord: \"Il partito va salvato dal declino. Un passo indietro di Salvini? Da non escludere\"",
-          "source": "Il Fatto Quotidiano",
-          "url": "https://www.ilfattoquotidiano.it/2026/08/17/fontana-salvini-lega-nord-passo-indietro-rivolta/8480660/",
-          "date": "2026-08-17T10:47:56+00:00",
+          "title": "Case Rosi, Fiazza (Lega): \"Nuovo tassello per il rinnovamento della frazione\"",
+          "source": "ParmaDaily.it",
+          "url": "https://www.parmadaily.it/case-rosi-fiazza-lega-nuovo-tassello-per-il-rinnovamento-della-frazione/",
+          "date": "2026-08-17T13:47:37+00:00",
           "category": "italy"
         },
         {
-          "title": "Fontana “commissaria” Salvini: la Lega è crollata e serve una svolta",
-          "source": "Avvenire",
-          "url": "https://www.avvenire.it/politica/fontana-commissaria-salvini-la-lega-e-crollata-serve-una-svolta_112040",
-          "date": "2026-08-17T09:24:00+00:00",
+          "title": "Si intensifica il confronto interno alla Lega in vista del raduno di Pontida",
+          "source": "RaiNews",
+          "url": "https://www.rainews.it/amp/tgr/lombardia/video/2026/08/si-intensifica-il-confronto-interno-alla-lega-in-vista-del-raduno-di-pontida-7ff82996-8b94-40e0-96c0-e52f69f321d9.html",
+          "date": "2026-08-17T13:15:27+00:00",
           "category": "italy"
         }
       ],
       "first_seen": "2026-08-18T01:58:43+00:00",
-      "last_seen": "2026-08-18T01:58:43+00:00"
+      "last_seen": "2026-08-18T13:25:25+00:00"
     }
   ]
 }
