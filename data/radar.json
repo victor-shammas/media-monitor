@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-18T02:08:47+00:00",
+  "updated_at": "2026-08-18T13:33:58+00:00",
   "lookback_hours": 48,
   "model": "Mistral Large",
   "status": "ok",
@@ -7,38 +7,84 @@
     {
       "id": "right-wing-parties-push-anti-immigration-policies-amid-border-crises",
       "title": "Right-wing parties push anti-immigration policies amid border crises",
-      "blurb": "Multiple right-wing and far-right parties across Europe and the Americas are intensifying their focus on anti-immigration policies in response to recent border crises. This theme is evident in Spain, Italy, Norway, the UK, and France, where parties like Vox, Fratelli d'Italia, Fremskrittspartiet, Reform UK, and Rassemblement National are advocating for stricter border controls, deportations, and opposition to migrant resettlement programs.",
+      "blurb": "Far-right and right-wing parties across Europe and the Americas are intensifying anti-immigration rhetoric and policies, often framing migration as a national security crisis. This theme is evident in Spain, Italy, Norway, and the UK, where parties like Vox, Fratelli d'Italia, Fremskrittspartiet, and Reform UK are advocating for stricter border controls, deportations, and the suspension of international agreements like Schengen.",
       "convergence": 5,
       "countries": [
         {
           "name": "🇪🇸 Vox",
-          "note": "Criticizes government for handling of unaccompanied migrant minors and demands stricter border controls in Ceuta and Melilla."
+          "note": "Criticizes government for migrant influx in Ceuta, demands stricter border controls and repatriation of minors."
         },
         {
           "name": "🇮🇹 Fratelli d'Italia / Lega",
-          "note": "Meloni's government maintains Schengen suspension over migration disputes with Spain, focusing on border security and deportations."
+          "note": "Clashes with Germany over NGO-assisted migration, suspends Schengen with Spain over Ceuta crisis."
         },
         {
           "name": "🇳🇴 Fremskrittspartiet",
-          "note": "Criticizes government's handling of migration issues, particularly in relation to Ceuta and broader immigration policies."
+          "note": "Criticizes Conservative Party's immigration policies, demands stricter controls."
         },
         {
           "name": "🇬🇧 Reform UK",
-          "note": "Proposes banning foreign nationals from receiving benefits and advocates for stricter immigration controls."
+          "note": "Proposes banning foreign nationals from UK benefits, advocates for stricter immigration enforcement."
         },
         {
           "name": "🇫🇷 Rassemblement National",
-          "note": "Continues to push for stricter immigration policies and border controls as a central part of their platform."
+          "note": "Criticizes Macron's immigration policies, pushes for stricter national controls."
+        },
+        {
+          "name": "🇺🇸 MAGA / Trump",
+          "note": "Trump administration tightens immigration policies, including work requirements for Medicaid and stricter asylum rules."
         }
       ],
       "signals": [
         "policy imitation",
         "shared framing",
-        "reaction to EU decision",
-        "parallel elections"
+        "reaction to external event",
+        "contagion of rhetoric"
       ],
-      "article_count": 50,
+      "article_count": 45,
       "refs": [
+        {
+          "title": "Rome Clashes with Berlin Over German NGOs Helping Illegal Migration",
+          "source": "The European Conservative",
+          "url": "https://europeanconservative.com/articles/news/rome-berlin-clash-german-ngos-helping-illegal-migration/",
+          "date": "2026-08-18T11:25:25+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Reform UK suspends senior figure after public criticism of Zia Yusuf",
+          "source": "The Independent",
+          "url": "https://www.independent.co.uk/bulletin/news/tim-montgomerie-reform-zia-yusuf-farage-b3034824.html",
+          "date": "2026-08-18T10:32:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Vox exige a Vivas que ejerza sus competencias en Salud Pública ante el riesgo epidemiológico",
+          "source": "El Pueblo de Ceuta",
+          "url": "https://www.elpueblodeceuta.es/sec/sanidad/vox-exige-vivas-ejerza-competencias_1_1185819.html",
+          "date": "2026-08-18T08:36:00+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Vox carga contra las 'explicaciones contradictorias' del Principado por el centro de menores de La Florida",
+          "source": "Europa Press",
+          "url": "https://www.europapress.es/asturias/noticia-vox-carga-contra-explicaciones-contradictorias-principado-centro-menores-florida-20260818100151.html",
+          "date": "2026-08-18T08:01:51+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Vox prepara el terreno para entrar en el gobierno de Sevilla tras las elecciones",
+          "source": "Diario de Sevilla",
+          "url": "https://www.diariodesevilla.es/sevilla/vox-prepara-terreno-entrar-gobierno_0_2007735693.html",
+          "date": "2026-08-18T04:00:45+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Vox se desmarca de la propuesta de Hermann Tertsch para reconocer el Sáhara como marroquí a cambio de Ceuta y Melilla",
+          "source": "Confidencial Digital",
+          "url": "https://www.elconfidencialdigital.com/articulo/politica/vox-desmarca-propuesta-hermann-tertsch-reconocer-sahara-como-marroqui-cambio-ceuta-melilla/202608180500001036397.html",
+          "date": "2026-08-18T03:00:00+00:00",
+          "category": "spain"
+        },
         {
           "title": "Así funciona el reparto de menores migrantes que volverá a enfrentar a las comunidades de PP y Vox con el Gobierno",
           "source": "El Independiente",
@@ -47,45 +93,38 @@
           "category": "spain"
         },
         {
-          "title": "Italy-Spain border feud exposes Europe’s deepening immigration divide",
-          "source": "Fox News",
-          "url": "https://www.foxnews.com/world/italy-spain-border-feud-exposes-europes-deepening-immigration-divide.amp",
-          "date": "2026-08-17T18:54:08+00:00",
+          "title": "Meloni-Sánchez, stallo sui migranti. Restano le chiusure incrociate",
+          "source": "Quotidiano Nazionale",
+          "url": "https://www.quotidiano.net/politica/meloni-sanchez-stallo-sui-migranti-restano-le-chiusure-incrociate-fn1a8rls",
+          "date": "2026-08-17T20:07:45+00:00",
           "category": "italy"
         },
         {
-          "title": "VOX responsabiliza al Gobierno por la invasión de Ceuta y reclama desclasificar los informes del CNI",
-          "source": "Ceuta Ahora",
-          "url": "https://ceutaahora.com/art/22513/vox-responsabiliza-al-gobierno-por-la-invasion-de-ceuta-y-reclama-desclasificar-los-informes-del-cni",
-          "date": "2026-08-17T18:21:58+00:00",
+          "title": "Mal di propaganda, su Schengen Meloni è bloccata in un vicolo cieco",
+          "source": "Domani",
+          "url": "https://www.editorialedomani.it/politica/italia/schengen-spagna-italia-risultati-controlli-propaganda-politica-ultime-notizie-meloni-vannacci-l8fozi88",
+          "date": "2026-08-17T18:23:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Crisis interna Vox: los concejales de Madrid afines a Ortega Smith quedan no adscritos",
+          "source": "moncloa.com",
+          "url": "https://www.moncloa.com/2026/08/17/crisis-interna-vox-concejales-no-adscritos-3416816/",
+          "date": "2026-08-17T17:20:48+00:00",
           "category": "spain"
         },
         {
-          "title": "Vox exige al Gobierno desclasificar los informes del CNI sobre Marruecos y la avalancha migratoria en Ceuta",
-          "source": "El Debate",
-          "url": "https://www.eldebate.com/espana/20260817/vox-exige-gobierno-desclasificar-informes-cni-sobre-marruecos-avalancha-migratoria-ceuta_450157.html",
-          "date": "2026-08-17T16:32:39+00:00",
-          "category": "spain"
+          "title": "Migranti: grazie a governo Meloni Lampedusa non più \"Ceuta italiana\" - fratelli-italia.it",
+          "source": "",
+          "url": "https://www.fratelli-italia.it/migranti-fdi-grazie-a-governo-meloni-lampedusa-non-piu-ceuta-italiana/",
+          "date": "2026-08-17T16:28:20+00:00",
+          "category": "italy"
         },
         {
-          "title": "Vox tacha de \"despilfarro\" que el Ayuntamiento de Badajoz destine 192.000 euros a cooperación internacional",
-          "source": "La Crónica de Badajoz",
-          "url": "https://www.lacronicabadajoz.com/badajoz/2026/08/17/vox-tacha-despilfarro-ayuntamiento-badajoz-133436647.amp.html",
-          "date": "2026-08-17T16:18:07+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox exige a Vivas que emprenda ya acciones legales contra Sánchez",
-          "source": "El Debate",
-          "url": "https://www.eldebate.com/espana/20260817/vox-exige-vivas-emprenda-acciones-legales-contra-sanchez_450144.html",
-          "date": "2026-08-17T16:00:48+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox eleva el reproche a Vivas: “Ceuta necesita un Gobierno que actúe, no comparecencias vacías”",
-          "source": "Ceuta Ahora",
-          "url": "https://ceutaahora.com/art/22511/vox-eleva-el-reproche-a-vivas-ceuta-necesita-un-gobierno-que-actue-no-comparecencias-vacias",
-          "date": "2026-08-17T15:25:58+00:00",
+          "title": "Vox exige al Gobierno la desclasificación de los informes del CNI sobre el colapso en Ceuta",
+          "source": "The Objective",
+          "url": "https://theobjective.com/espana/politica/2026-08-17/vox-gobierno-desclasificacion-cni-ceuta/",
+          "date": "2026-08-17T15:13:11+00:00",
           "category": "spain"
         },
         {
@@ -96,17 +135,17 @@
           "category": "spain"
         },
         {
+          "title": "VOX reclama poner fin a las deficiencias de la red de EMASA para evitar nuevos cierres de playas por vertidos en Málaga",
+          "source": "Andalucía Información",
+          "url": "https://www.andaluciainformacion.es/articulo/malaga/vox-reclama-poner-fin-deficiencias-red-emasa-evitar-nuevos-cierres-playas-vertidos-malaga/202608171617373456504.html",
+          "date": "2026-08-17T14:17:37+00:00",
+          "category": "spain"
+        },
+        {
           "title": "Vox pide al Gobierno la desclasificación de los informes del CNI sobre la avalancha de Ceuta",
           "source": "Servimedia",
           "url": "https://www.servimedia.es/noticias/vox-pide-gobierno-desclasificacion-informes-cni-sobre-avalancha-ceuta/1413195168",
           "date": "2026-08-17T14:08:00+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox reclama a Vivas más acción y vuelve a tender la mano para un Gobierno de coalición",
-          "source": "El Faro de Ceuta",
-          "url": "https://elfarodeceuta.es/vox-reclama-vivas-mas-accion-vuelve-tender-mano-gobierno-coalicion/amp/",
-          "date": "2026-08-17T13:34:57+00:00",
           "category": "spain"
         },
         {
@@ -115,122 +154,171 @@
           "url": "https://www.elpueblodeceuta.es/sec/politica/inmigracion/vox-culpa-vivas-crisis-mantiene_1_1185750.html",
           "date": "2026-08-17T12:41:00+00:00",
           "category": "spain"
-        },
-        {
-          "title": "Vox pide al Supremo que declare la \"competencia irrenunciable\" de la JEC y la obligue a actuar por la Ley de Nietos",
-          "source": "Libertad Digital",
-          "url": "https://www.libertaddigital.com/espana/2026-08-17/vox-pide-al-supremo-que-declare-la-competencia-irrenunciable-de-la-jec-y-la-obligue-a-actuar-por-la-ley-de-nietos-7449278/amp.html",
-          "date": "2026-08-17T11:51:13+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Siero avanza en la privatización del agua con los votos de PSOE y Vox",
-          "source": "elDiario.es",
-          "url": "https://www.eldiario.es/asturias/siero-avanza-privatizacion-agua-votos-psoe-vox_1_13451256.html",
-          "date": "2026-08-17T10:52:12+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Independentistas protestan en el acto en recuerdo del 17-A para exigir \"la verdad\" y se encaran con Vox",
-          "source": "El Nacional.cat",
-          "url": "https://www.elnacional.cat/es/politica/independentistas-protestan-acto-en-recuerdo-17a-exigir-verdad-se-encaran-con-vox_1682431_102.html",
-          "date": "2026-08-17T10:08:32+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "VOX urge activar un plan de saneamiento integral de la Costa del Sol ante el aumento de vertidos en las playas",
-          "source": "alsoldelacosta.com",
-          "url": "https://alsoldelacosta.com/vox-urge-activar-un-plan-de-saneamiento-integral-de-la-costa-del-sol-ante-el-aumento-de-vertidos-en-las-playas/",
-          "date": "2026-08-17T09:56:56+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox reclama al Gobierno que desaloje a los migrantes de la playa del Trampolín",
-          "source": "El Pueblo de Ceuta",
-          "url": "https://www.elpueblodeceuta.es/sec/politica/inmigracion/vox-reclama-gobierno-desaloje-migrantes_1_1185720.html",
-          "date": "2026-08-17T09:35:00+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox exige a Vivas que cumpla la Ordenanza de Playas en el Trampolín",
-          "source": "El Faro de Ceuta",
-          "url": "https://elfarodeceuta.es/vox-exige-vivas-cumpla-ordenanza-playas-trampolin/amp/",
-          "date": "2026-08-17T08:00:19+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "VOX exige a Vivas que haga cumplir la Ordenanza de Playas y desaloje el asentamiento del Trampolín",
-          "source": "Teleceuta",
-          "url": "https://teleceuta.com/vox-exige-a-vivas-que-haga-cumplir-la-ordenanza-de-playas-y-desaloje-el-asentamiento-del-trampolin/",
-          "date": "2026-08-17T07:16:22+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "VOX exige a Vivas el desalojo “inmediato” del asentamiento del Trampolín y reclama hacer cumplir la Ordenanza de Playas",
-          "source": "La Verdad de Ceuta",
-          "url": "https://www.laverdaddeceuta.com/home/noticias/politica/politica/vox-exige-a-vivas-el-desalojo-inmediato-del-asentamiento-del-trampolin-y-reclama-hacer-cumplir-la-ordenanza-de-playas",
-          "date": "2026-08-17T07:14:06+00:00",
-          "category": "spain"
         }
       ],
       "first_seen": "2026-08-16T02:13:49+00:00",
-      "last_seen": "2026-08-18T02:08:47+00:00"
+      "last_seen": "2026-08-18T13:33:58+00:00"
     },
     {
       "id": "far-right-parties-gain-ground-in-regional-and-national-elections",
       "title": "Far-right parties gain ground in regional and national elections",
-      "blurb": "Far-right parties are making significant electoral gains across Europe, particularly in Germany, Sweden, France, Spain, and Norway. This trend is marked by rising poll numbers, internal party conflicts, and debates over leadership and strategy as these parties position themselves for upcoming elections.",
+      "blurb": "Far-right parties are making significant electoral gains across Europe, particularly in Germany, Sweden, and Italy. These gains are often framed as a backlash against mainstream parties, with far-right leaders positioning themselves as the only viable alternative to the status quo. The theme is marked by intense campaigning, internal party conflicts, and rising poll numbers.",
       "convergence": 4,
       "countries": [
         {
           "name": "🇩🇪 Alternative für Deutschland",
-          "note": "Leads polls in Saxony-Anhalt and faces internal debates about extremism and leadership ahead of state elections."
+          "note": "Leads polls in Saxony-Anhalt, gains traction in national polls, faces internal divisions and legal challenges."
         },
         {
           "name": "🇸🇪 Sverigedemokraterna",
-          "note": "Continues to gain influence in Swedish politics, with debates about their role in government and policy positions."
+          "note": "Proposes state-run psychiatric homes, debates nationalization of healthcare, faces internal policy disputes."
+        },
+        {
+          "name": "🇮🇹 Fratelli d'Italia / Lega",
+          "note": "Faces internal leadership challenges, Salvini's leadership questioned amid declining poll numbers."
         },
         {
           "name": "🇫🇷 Rassemblement National",
-          "note": "Expands voter base and prepares for 2027 presidential elections, with Jordan Bardella emerging as a key figure."
-        },
-        {
-          "name": "🇪🇸 Vox",
-          "note": "Faces internal divisions but remains a significant force in Spanish regional politics, particularly in Andalusia and Madrid."
+          "note": "Jordan Bardella's rising influence, party gains in polls ahead of 2027 elections."
         },
         {
           "name": "🇳🇴 Fremskrittspartiet",
-          "note": "Gains traction in Norwegian politics with a focus on climate policy and local governance issues."
+          "note": "Leads polls in Norway, faces internal debates over climate and energy policies."
         }
       ],
       "signals": [
         "parallel elections",
-        "policy contagion",
-        "internal divisions",
-        "leadership challenges"
+        "contagion of rhetoric",
+        "policy imitation",
+        "internal divisions"
       ],
-      "article_count": 45,
+      "article_count": 38,
       "refs": [
         {
-          "title": "Landtagswahl in Sachsen-Anhalt: „Das BSW wird die AfD zu 100 Prozent unterstützen“",
-          "source": "Augsburger Allgemeine",
-          "url": "https://www.augsburger-allgemeine.de/politik/landtagswahl-in-sachsen-anhalt-das-bsw-wird-die-afd-zu-100-prozent-unterstuetzen-115028060",
-          "date": "2026-08-18T01:00:00+00:00",
+          "title": "Bundestag – AfD will bei Organspende geschlossen abstimmen",
+          "source": "PRO | Das christliche Medienmagazin",
+          "url": "https://www.pro-medienmagazin.de/afd-will-bei-organspende-geschlossen-abstimmen/",
+          "date": "2026-08-18T12:43:05+00:00",
           "category": "germany"
         },
         {
-          "title": "Ein Normalo soll es richten: Wie Sven Schulze in Sachsen-Anhalt gegen die AfD kämpft",
-          "source": "Augsburger Allgemeine",
-          "url": "https://www.augsburger-allgemeine.de/politik/afd-vor-sieg-in-sachsen-anhalt-cdu-ministerpraesident-schulze-will-sich-und-sein-amt-retten-115008317",
-          "date": "2026-08-18T01:00:00+00:00",
+          "title": "Kanzler im Osten unerwünscht: Jetzt muss ausgerechnet Merz‘ größter Rivale die CDU retten",
+          "source": "merkur.de",
+          "url": "https://www.merkur.de/politik/statt-merz-wuest-soll-der-cdu-jetzt-die-wahl-in-sachsen-anhalt-retten-zr-94448919.html",
+          "date": "2026-08-18T12:23:00+00:00",
           "category": "germany"
         },
         {
-          "title": "„Dann wäre eine Spaltung nach links nicht auszuschließen“",
-          "source": "Augsburger Allgemeine",
-          "url": "https://www.augsburger-allgemeine.de/politik/cdu-vor-der-landtagswahl-in-sachsen-anhalt-dann-waere-eine-spaltung-nach-links-nicht-auszuschliessen-115028066",
-          "date": "2026-08-18T01:00:00+00:00",
+          "title": "AfD will Fördermittel für \"antideutsche\" Kultur streichen",
+          "source": "DW.com",
+          "url": "https://www.dw.com/de/afd-will-f%C3%B6rdermittel-f%C3%BCr-antideutsche-kultur-streichen/a-78303972",
+          "date": "2026-08-18T11:46:53+00:00",
           "category": "germany"
+        },
+        {
+          "title": "‘Stopping AfD’: German Left-Wing Celebrities and NGOs Team Up Against Weidel’s Party",
+          "source": "The European Conservative",
+          "url": "https://europeanconservative.com/articles/news/anti-afd-campaign-german-left-wing-saxony-anhalt-election/",
+          "date": "2026-08-18T11:01:26+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Debatte: Wie links ist die AfD?",
+          "source": "SZ.de",
+          "url": "https://www.sueddeutsche.de/kultur/afd-rechts-links-sozialpolitik-debatte-li.3523031",
+          "date": "2026-08-18T10:55:04+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "AfD baut Vorsprung auf Union aus – SPD verliert Anschluss an die Grünen",
+          "source": "WELT",
+          "url": "https://www.welt.de/politik/deutschland/article6a83e81da87e8142c31d3695/afd-baut-vorsprung-auf-union-aus-spd-verliert-anschluss-an-die-gruenen.html",
+          "date": "2026-08-18T09:49:13+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Sverigedemokraterna vill inrätta moderna mentalsjukhus",
+          "source": "Omni – Alla nyheter. Alla perspektiv.",
+          "url": "https://omni.se/sverigedemokraterna-vill-inratta-moderna-mentalsjukhus/a/zOVJx9",
+          "date": "2026-08-18T08:52:01+00:00",
+          "category": "sweden"
+        },
+        {
+          "title": "Sonntagsfrage: AfD liegt baut in neuer Umfrage den Vorsprung vor der Union aus - T-Online",
+          "source": "",
+          "url": "https://www.t-online.de/nachrichten/deutschland/innenpolitik/id_101393690/neue-umfrage-afd-vergroessert-abstand-zur-union-in-sonntagsfrage.html",
+          "date": "2026-08-18T08:48:18+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "YouGov-Umfrage: AfD baut Vorsprung auf Union aus – Grüne erreichen besten Wert seit mehr als einem Jahr - Video",
+          "source": "WELT",
+          "url": "https://www.welt.de/videos/video6a8415e9d54f65372fb0ca1e/yougov-umfrage-afd-baut-vorsprung-auf-union-aus-gruene-erreichen-besten-wert-seit-mehr-als-einem-jahr.html",
+          "date": "2026-08-18T08:25:55+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Sachsen-Anhalt: Sachsen-Anhalts Regierungschef Schulze warnt vor Wahl des BSW",
+          "source": "DIE ZEIT",
+          "url": "https://www.zeit.de/politik/deutschland/2026-08/sachsen-anhalt-sven-schulze-cdu-bsw-afd-ulrich-siegmund",
+          "date": "2026-08-18T07:28:03+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "„Wahre Heimatliebe ist“ Prominente unterstützen Kampagne gegen AfD-Alleinregierung in Sachsen-Anhalt",
+          "source": "Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/gesellschaft/wahre-heimatliebe-ist-prominente-unterstutzen-kampagne-gegen-afd-alleinregierung-in-sachsen-anhalt-15952931.html",
+          "date": "2026-08-18T07:25:06+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "AfD in Sachsen-Anhalt: Auf allen Wegen zur Macht?",
+          "source": "Analyse & Kritik",
+          "url": "https://www.akweb.de/ausgaben/728/afd-in-sachsen-anhalt-auf-allen-wegen-zur-macht-die-szenarien-im-ueberblick/",
+          "date": "2026-08-18T06:06:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "CDU-Ministerpräsident Sven Schulze: „Das BSW wird die AfD zu 100 Prozent unterstützen“",
+          "source": "Augsburger Allgemeine",
+          "url": "https://www.augsburger-allgemeine.de/politik/landtagswahl-in-sachsen-anhalt-cdu-ministerpraesident-warnt-das-bsw-wird-die-afd-zu-100-prozent-unterstuetzen-115028060",
+          "date": "2026-08-18T05:19:55+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "„Wahre Heimatliebe ist“ – Prominente wollen mit Kampagne AfD-Alleinregierung verhindern",
+          "source": "WELT",
+          "url": "https://www.welt.de/politik/deutschland/article6a83d0e6a87e8142c31d35f3/sachsen-anhalt-wahre-heimatliebe-ist-prominente-wollen-mit-kampagne-afd-alleinregierung-verhindern.html",
+          "date": "2026-08-18T03:46:38+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Prominente unterstützen Kampagne gegen AfD-Alleinregierung - Lippische Landes-Zeitung",
+          "source": "",
+          "url": "https://www.lz.de/starline/leute/24398364_Prominente-unterstuetzen-Kampagne-gegen-AfD-Alleinregierung.html",
+          "date": "2026-08-18T03:00:08+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "„Hier ist jeder auf der Mission absolute Mehrheit“",
+          "source": "BILD",
+          "url": "https://www.bild.de/politik/bild-reporter-bei-afd-wahlveranstaltung-hier-ist-jeder-auf-der-mission-absolute-mehrheit-6a836ad3a87e8142c31d3408",
+          "date": "2026-08-17T20:48:56+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "SD vill sänka EU:s klimatkrav – Åkesson ensam i partiledardebatten",
+          "source": "HurBra.se",
+          "url": "https://hurbra.se/akesson-sanka-eu-klimatkrav/",
+          "date": "2026-08-17T20:16:14+00:00",
+          "category": "sweden"
+        },
+        {
+          "title": "Jimmie Åkesson öppnar för S-förslaget",
+          "source": "Expressen",
+          "url": "https://www.expressen.se/nyheter/politik/jimmie-akesson-oppnar-for-s-forslaget/",
+          "date": "2026-08-17T19:59:26+00:00",
+          "category": "sweden"
         },
         {
           "title": "„Spiegel“-Cover mit AfD-Kandidat: Der „gefährlichste Mann Deutschlands“ freut sich",
@@ -247,150 +335,168 @@
           "category": "germany"
         },
         {
-          "title": "„Die AfD ist ein Sicherheitsrisiko, auch für Sachsen-Anhalt“",
-          "source": "WELT",
-          "url": "https://www.welt.de/politik/deutschland/video6a833dac9fcb5798aae39aec/roman-poseck-die-afd-ist-ein-sicherheitsrisiko-auch-fuer-sachsen-anhalt.html",
-          "date": "2026-08-17T17:09:01+00:00",
+          "title": "\"Vernunft wählt niemals AfD\": Dieter Hallervorden positioniert sich vor Wahl in Sachsen-Anhalt",
+          "source": "TV Spielfilm",
+          "url": "https://www.tvspielfilm.de/news/stars/vernunft-waehlt-niemals-afd-dieter-hallervorden-positioniert-sich-vor-wahl-in-sachsen-anhalt,13408192,ApplicationArticle.html",
+          "date": "2026-08-17T16:52:00+00:00",
           "category": "germany"
         },
         {
-          "title": "Sahra Wagenknecht und AfD: Showdown der Populisten",
-          "source": "FAZ",
-          "url": "https://www.faz.net/aktuell/politik/inland/sahra-wagenknecht-und-afd-showdown-der-populisten-201133532.html",
-          "date": "2026-08-17T16:21:01+00:00",
+          "title": "YouGov Sonntagsfrage im August 2026: AfD stabil stärkste Kraft +++ Grüne so stark wie seit Januar 2025 nicht mehr",
+          "source": "yougov.com",
+          "url": "https://yougov.com/de-de/artikel/55376-yougov-sonntagsfrage-im-august-2026-afd-stabil-starkste-kraft-grune-so-stark-wie-seit-januar-2025-nicht-mehr",
+          "date": "2026-08-17T15:12:59+00:00",
           "category": "germany"
         },
         {
-          "title": "Die Wahlkampfhilfe des \"Spiegel\" für die AfD ist unnötig",
-          "source": "Der Standard",
-          "url": "https://www.derstandard.at/story/3000000335893/die-wahlkampfhilfe-des-spiegel-fuer-die-afd-ist-unnoetig",
-          "date": "2026-08-17T15:06:00+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Erste Prognosen für AfD: Umfragen vor der Landtagswahl in Mecklenburg-Vorpommern",
-          "source": "Merkur",
-          "url": "https://www.merkur.de/politik/prognosen-afd-umfragen-vor-mv-wahl-2026-aktuelle-94384898.html",
+          "title": "Il pronostico di La Russa: “Alle elezioni il centrodestra a prescindere da Vannacci batterà la sinistra”",
+          "source": "Il Fatto Quotidiano",
+          "url": "https://www.ilfattoquotidiano.it/2026/08/17/la-russa-centrodestra-vannacci-elezioni-notizie/8480780/",
           "date": "2026-08-17T14:17:20+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Erste Umfragen: AfD-Prognosen vor der Landtagswahl 2026 in Mecklenburg-Vorpommern",
-          "source": "Frankfurter Rundschau",
-          "url": "https://www.fr.de/politik/ergebnis-afd-umfragen-vor-mv-wahl-2026-prognosen-fuer-94384419.html",
-          "date": "2026-08-17T14:17:17+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Höcke, Chrupalla, Siegmund: Sind die AfD-Wähler auf dem rechten Ohr taub?",
-          "source": "Berliner Morgenpost",
-          "url": "https://www.morgenpost.de/politik/article412885828/hoecke-chrupalla-siegmund-sind-die-afd-waehler-auf-dem-rechten-ohr-taub.html",
-          "date": "2026-08-17T13:40:54+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Reform UK told 'fantasy numbers are simply not plausible' as they announce DWP welfare plans",
-          "source": "Yahoo News UK",
-          "url": "https://uk.news.yahoo.com/reform-uk-told-fantasy-numbers-131029997.html",
-          "date": "2026-08-17T13:10:29+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Marteria zieht klare Grenze: „Keinen Bock“ auf eine AfD-Regierung in MV - T-Online",
-          "source": "",
-          "url": "https://www.t-online.de/unterhaltung/stars/id_101392544/rapper-marteria-hat-keinen-bock-auf-die-afd.html",
-          "date": "2026-08-17T12:23:47+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "AfD steigt in Umfragen: Studie erschüttert häufigste Erklärung – „Es sind nicht die Benachteiligten“",
-          "source": "merkur.de",
-          "url": "https://www.merkur.de/politik/afd-steigt-in-umfragen-sachsen-anhalt-wahlstudie-erschuettert-gaengige-erklaerung-zr-94447054.html",
-          "date": "2026-08-17T11:17:15+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "„AfD lebt von Appell an unseren inneren Schweinehund”",
-          "source": "FOCUS online",
-          "url": "https://www.focus.de/politik/deutschland/afd-lebt-von-appell-an-unseren-inneren-schweinehund_f431d4cd-3732-4f2b-bd37-85ad8eab416a.html",
-          "date": "2026-08-17T10:04:00+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Brandmauer gegen AfD ist gescheitert – Autoren fordern neuen Kurs",
-          "source": "24Rhein",
-          "url": "https://www.24rhein.de/politik/brandmauer-gegen-afd-ist-gescheitert-autoren-fordern-neuen-kurs-zr-94444734.html",
-          "date": "2026-08-17T10:00:00+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "„Spiegel“ verteidigt Cover mit Ulrich Siegmund (AfD) als „gefährlichsten Mann Deutschlands“",
-          "source": "Deutschlandfunk",
-          "url": "https://www.deutschlandfunk.de/spiegel-verteidigt-cover-mit-ulrich-siegmund-afd-als-gefaehrlichsten-mann-deutschlands-100.html",
-          "date": "2026-08-17T09:42:20+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Lega, parla Fontana: «Un passo indietro di Salvini? Nulla va escluso»",
-          "source": "Corriere della Calabria",
-          "url": "https://www.corrieredellacalabria.it/2026/08/17/lega-parla-fontana-un-passo-indietro-di-salvini-nulla-va-escluso/",
-          "date": "2026-08-17T08:41:00+00:00",
           "category": "italy"
         },
         {
-          "title": "I tormenti della Lega, Fontana non esclude un passo indietro di Salvini",
-          "source": "malpensa24",
-          "url": "https://www.malpensa24.it/i-tormenti-della-lega-fontana-non-esclude-un-passo-indietro-di-salvini/",
-          "date": "2026-08-17T08:06:05+00:00",
-          "category": "italy"
+          "title": "Umfragen vor Landtagswahl in Mecklenburg-Vorpommern: SPD jagt AfD hinterher – erste Prognosen",
+          "source": "Merkur",
+          "url": "https://www.merkur.de/politik/stand-umfragen-vor-mv-wahl-2026-aktueller-prognose-94383955.html",
+          "date": "2026-08-17T14:17:14+00:00",
+          "category": "germany"
         },
         {
-          "title": "AfD-Spitzenmann Ulrich Siegmund freut sich über Wahlkampfhilfe vom \"Spiegel\"",
-          "source": "Der Standard",
-          "url": "https://www.derstandard.at/story/3000000335797/afd-spitzenmann-ulrich-siegmund-freut-sich-ueber-wahlkampfhilfe-vom-spiegel",
-          "date": "2026-08-17T06:21:00+00:00",
+          "title": "Sachsen-Anhalt Wahl 2026: AfD verhindern durch taktisches Wählen?",
+          "source": "SZ.de",
+          "url": "https://www.sueddeutsche.de/politik/sachsen-anhalt-wahl-afd-spd-gruene-waehlen-li.3531409",
+          "date": "2026-08-17T13:19:49+00:00",
           "category": "germany"
         }
       ],
       "first_seen": "2026-08-16T13:23:03+00:00",
-      "last_seen": "2026-08-18T02:08:47+00:00"
+      "last_seen": "2026-08-18T13:33:58+00:00"
     },
     {
       "id": "right-wing-governments-target-social-programs-amid-fiscal-debates",
       "title": "Right-wing governments target social programs amid fiscal debates",
-      "blurb": "Right-wing governments in the UK, Argentina, Norway, and Poland are implementing or proposing significant cuts to social programs as part of broader fiscal debates. These policies often target welfare benefits, disability support, and public services, sparking public backlash and political controversy.",
+      "blurb": "Right-wing and far-right governments are increasingly targeting social programs, including welfare, healthcare, and education, as part of broader fiscal austerity measures. These policies are often justified as necessary to reduce public spending and debt, but they face significant backlash from opposition parties and civil society groups.",
       "convergence": 4,
       "countries": [
         {
           "name": "🇬🇧 Reform UK",
-          "note": "Proposes drastic cuts to welfare programs, including disability benefits, and mandatory community work for long-term claimants."
+          "note": "Proposes cutting disability benefits, mandating community work for welfare recipients, and scrapping PIP."
         },
         {
           "name": "🇦🇷 La Libertad Avanza",
-          "note": "Implements austerity measures, including cuts to public services and social programs, as part of economic reforms."
+          "note": "Javier Milei's government cuts social spending, privatizes state-owned enterprises, and faces protests from unions and civil society."
         },
         {
           "name": "🇳🇴 Fremskrittspartiet",
-          "note": "Advocates for reduced public spending and questions the sustainability of current welfare programs."
+          "note": "Debates welfare reforms, proposes tax cuts, and criticizes government spending on social programs."
         },
         {
           "name": "🇵🇱 Prawo i Sprawiedliwość",
-          "note": "Criticizes government's handling of fiscal policies, including fuel taxes and social program funding."
+          "note": "Criticizes government's handling of state-owned enterprises, proposes reforms to social programs."
+        },
+        {
+          "name": "🇭🇺 Fidesz / Tisza",
+          "note": "Tisza government reviews state contracts, cuts funding for social programs, and faces criticism over economic policies."
         }
       ],
       "signals": [
         "policy imitation",
-        "austerity measures",
-        "public backlash",
-        "welfare reform"
+        "shared framing",
+        "parallel elections",
+        "contagion of rhetoric"
       ],
-      "article_count": 35,
+      "article_count": 32,
       "refs": [
+        {
+          "title": "Attorney General Nessel sues Trump administration over Medicaid work requirements, MDHHS offers response",
+          "source": "East Village Magazine",
+          "url": "https://www.eastvillagemagazine.org/2026/08/18/attorney-general-nessel-sues-trump-administration-over-medicaid-work-requirements-mdhhs-offers-response/",
+          "date": "2026-08-18T12:31:37+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Reform is using welfare to distract from its problems",
+          "source": "hyphenonline.com",
+          "url": "https://hyphenonline.com/2026/08/18/reform-uk-cuts-pip-welfare-benefits-foreign-nationals-distract-christopher-harborne-election-binface/",
+          "date": "2026-08-18T11:43:55+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Hegseth Plots Jaw-Droppingly Ambitious Move That Will Anger Trump",
+          "source": "The Daily Beast",
+          "url": "https://www.thedailybeast.com/pete-hegseths-aides-believe-hes-plotting-jaw-droppingly-ambitious-future-bid-for-the-presidency/",
+          "date": "2026-08-18T10:45:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "VOX en Aragón denuncia las prioridades de Sánchez: dedica 54 euros al mes por dependiente frente a los 6.000...",
+          "source": "gaceta.es",
+          "url": "https://gaceta.es/espana/vox-en-aragon-denuncia-las-prioridades-de-sanchez-dedica-54-euros-al-mes-por-dependiente-frente-a-los-6-000-euros-por-cada-mena-20260818-1143/",
+          "date": "2026-08-18T09:45:14+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Vertenza Menarini, Zaolino (Fismic/Filcom): «Il Governo Meloni ha fallito»",
+          "source": "Orticalab",
+          "url": "https://www.orticalab.it/Vertenza-Menarini-Zaolino-Fismic-Filcom-Il-Governo-Meloni-ha-fallito",
+          "date": "2026-08-18T08:52:58+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Diputados de La Libertad Avanza visitaron la ciudad en apoyo al campo",
+          "source": "primeraplana.com.ar",
+          "url": "https://primeraplana.com.ar/92884-politica-diputados-de-la-libertad-avanza-visitaron-la-ciudad-en-apoyo-al-campo",
+          "date": "2026-08-18T08:14:13+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Miało być „wielkie odrodzenie”, jest finansowa katastrofa. Stadniny w 2 lata straciły więcej niż za całych rządów PiS!",
+          "source": "wPolsce24",
+          "url": "https://wpolsce24.tv/gospodarka/fatalne-wyniki-panstwowych-stadnin-ponad-10-mln-zl-strat,233379",
+          "date": "2026-08-18T07:33:40+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Argentina's vice-president says she is \"extremely worried\" about those who cannot make ends meet",
+          "source": "en.mercopress.com",
+          "url": "https://en.mercopress.com/2026/08/18/argentina-s-vice-president-says-she-is-extremely-worried-about-those-who-cannot-make-ends-meet",
+          "date": "2026-08-18T06:52:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Más de 4.000 firmas a la petición de AFRA Mujeres para impedir que Vox gestione la protección de las víctimas de violencia machista en Andalucía | NR | Periodismo alternativo",
+          "source": "NR | Periodismo alternativo",
+          "url": "https://nuevarevolucion.es/mas-de-4-000-firmas-y-nuevos-apoyos-profesionales-a-la-peticion-de-afra-mujeres-para-impedir-que-vox-gestione-la-proteccion-de-las-victimas-de-violencia-machista-en-andalucia/",
+          "date": "2026-08-18T05:00:20+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "PyMEs marchan a Plaza de Mayo contra la política económica de Javier Milei",
+          "source": "Cuestión Entrerriana",
+          "url": "https://cuestionentrerriana.com.ar/pymes-marchan-a-plaza-de-mayo-contra-la-politica-economica-de-javier-milei/",
+          "date": "2026-08-18T01:42:10+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Karina Milei reúne a la mesa política para afinar la agenda legislativa \"urgente\" y evitar otro revés en el Congreso",
+          "source": "clarin.com",
+          "url": "https://www.clarin.com/politica/karina-milei-reune-mesa-politica-afinar-agenda-legislativa-urgente-evitar-reves-congreso_0_4h5kh6q7uc.html",
+          "date": "2026-08-17T21:47:39+00:00",
+          "category": "argentina"
+        },
         {
           "title": "Reform’s Pip plans are ‘fantasy economics’, Labour say as claimants speak out against proposals",
           "source": "The Independent",
           "url": "https://www.independent.co.uk/bulletin/news/pip-dwp-reform-robert-jenrick-b3034552.html",
           "date": "2026-08-17T20:59:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "‘We’re not scroungers – we need it’: Furious PIP claimants hit back at Reform’s plan to axe benefits",
+          "source": "The Independent",
+          "url": "https://www.independent.co.uk/news/uk/home-news/reform-benefits-policy-pip-anger-b3034324.html",
+          "date": "2026-08-17T19:25:00+00:00",
           "category": "uk"
         },
         {
@@ -401,6 +507,13 @@
           "category": "uk"
         },
         {
+          "title": "Dolor de cabeza para Luis Caputo y Javier Milei en medio del feriado: el dato clave que complica los planes del Gobierno",
+          "source": "eldestapeweb.com",
+          "url": "https://www.eldestapeweb.com/economia/bajan-bonos-riesgo-pais-acerca-500-puntos-2026817142255?outputType=amp",
+          "date": "2026-08-17T17:32:44+00:00",
+          "category": "argentina"
+        },
+        {
           "title": "There’s a problem in the small print of Reform UK’s benefits plan",
           "source": "The Times",
           "url": "https://www.thetimes.com/uk/politics/article/reform-immigration-benefits-pip-policy-nigel-farage-qvdrs6vhh",
@@ -408,17 +521,10 @@
           "category": "uk"
         },
         {
-          "title": "Reform UK benefits ban for foreign nationals slammed as ‘cruel and unworkable’",
-          "source": "The National Scot",
-          "url": "https://www.thenational.scot/news/26471679.reform-uk-benefits-ban-foreign-nationals-cruel-unworkable/",
-          "date": "2026-08-17T14:58:09+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Cancer patient confronts Reform London mayor candidate Laila Cunningham live on radio over major benefit cuts",
-          "source": "London Evening Standard",
-          "url": "https://www.standard.co.uk/news/london/nigel-farage-benefits-pip-cuts-laila-cunningham-cancer-patient-b1293681.html",
-          "date": "2026-08-17T14:19:48+00:00",
+          "title": "Reform risks losing voter appeal with drastic benefits overhaul, UK’s leading pollster warns",
+          "source": "The Independent",
+          "url": "https://www.independent.co.uk/news/uk/politics/reform-uk-benefits-welfare-cuts-eu-foreign-nationals-pip-b3034235.html",
+          "date": "2026-08-17T15:00:00+00:00",
           "category": "uk"
         },
         {
@@ -441,86 +547,160 @@
           "url": "https://uk.news.yahoo.com/reform-uk-told-fantasy-numbers-131029997.html",
           "date": "2026-08-17T13:10:29+00:00",
           "category": "uk"
-        },
-        {
-          "title": "Reform UK announces welfare plans with long-term claimants made to clean high streets",
-          "source": "Manchester Evening News",
-          "url": "https://www.manchestereveningnews.co.uk/news/uk-news/reform-uk-announces-welfare-plans-34471121",
-          "date": "2026-08-17T11:53:00+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Long-term benefits claimants to work or face being stripped of cash: Reform UK",
-          "source": "Northwich Guardian",
-          "url": "https://www.winsfordguardian.co.uk/news/national/26470703.long-term-benefits-claimants-work-face-stripped-cash-reform-uk/",
-          "date": "2026-08-17T11:52:23+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "The party says it would reduce the benefits budget by £50billion",
-          "source": "Kent Live",
-          "url": "https://www.kentlive.news/news/uk-world-news/millions-would-lose-benefits-under-11113476",
-          "date": "2026-08-17T10:29:49+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Everything you need to know about Reform's welfare overhaul",
-          "source": "The i Paper",
-          "url": "https://inews.co.uk/shorts/everything-you-need-to-know-about-reforms-welfare-overhaul",
-          "date": "2026-08-17T09:02:59+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "After killing hundreds in boat strikes, US military expands campaign on land in Latin America",
-          "source": "New Haven Register",
-          "url": "https://www.nhregister.com/news/world/article/after-killing-hundreds-in-boat-strikes-us-22390975.php",
-          "date": "2026-08-17T07:14:39+00:00",
-          "category": "usa"
         }
       ],
       "first_seen": "2026-08-07T03:42:06+00:00",
-      "last_seen": "2026-08-18T02:08:47+00:00"
+      "last_seen": "2026-08-18T13:33:58+00:00"
     },
     {
       "id": "right-wing-leaders-face-internal-party-divisions-and-leadership-challenges",
       "title": "Right-wing leaders face internal party divisions and leadership challenges",
-      "blurb": "Across multiple countries, right-wing and far-right parties are experiencing significant internal divisions and leadership challenges. These conflicts often revolve around policy directions, electoral strategies, and personal rivalries, threatening party unity and electoral prospects.",
+      "blurb": "Internal divisions and leadership challenges are roiling right-wing and far-right parties across multiple countries. These conflicts often revolve around ideological differences, strategic direction, and personal rivalries, with factions pushing for leadership changes or even party splits.",
       "convergence": 4,
       "countries": [
         {
           "name": "🇵🇱 Prawo i Sprawiedliwość",
-          "note": "Faces internal divisions over strategy, alliances, and leadership, with former PM Morawiecki forming a new party."
+          "note": "Faces internal splits, with key members leaving to form new factions like Rozwój Plus."
         },
         {
           "name": "🇮🇹 Fratelli d'Italia / Lega",
-          "note": "Lega faces leadership crisis with calls for Salvini's resignation and internal debates about party direction."
+          "note": "Salvini faces calls to step down, internal factions demand party restructuring and return to federalist roots."
         },
         {
           "name": "🇬🇧 Reform UK",
-          "note": "Experiences internal rifts and leadership challenges, particularly around Nigel Farage's role and financial controversies."
+          "note": "Internal rifts over leadership and strategy, suspension of key figures like Tim Montgomerie."
         },
         {
           "name": "🇪🇸 Vox",
-          "note": "Faces internal divisions and defections, particularly in Madrid, over party direction and leadership."
+          "note": "Internal crisis in Madrid, expulsion of key members, and public disputes over party direction."
+        },
+        {
+          "name": "🇭🇺 Fidesz / Tisza",
+          "note": "Fidesz faces internal surveys on leadership and party future, Tisza government faces criticism over policies."
         },
         {
           "name": "🇦🇷 La Libertad Avanza",
-          "note": "Experiences tensions with potential allies like PRO over electoral strategies and policy compromises."
+          "note": "Javier Milei faces internal dissent, negotiations with PRO party for electoral alliances."
         }
       ],
       "signals": [
-        "leadership challenges",
         "internal divisions",
-        "policy disputes",
-        "electoral strategy"
+        "leadership challenges",
+        "parallel elections",
+        "contagion of rhetoric"
       ],
       "article_count": 40,
       "refs": [
         {
-          "title": "Nella Lega volano gli stracci. I pretoriani difendono Salvini, ma finiscono nel mirino",
-          "source": "La Stampa",
-          "url": "https://www.lastampa.it/politica/2026/08/19/news/nella_lega_volano_gli_stracci_i_pretoriani_difendono_salvini_ma_finiscono_nel_mirino-15716619/",
-          "date": "2026-08-17T23:00:00+00:00",
+          "title": "Reform UK suspends Tory defector Tim Montgomerie after criticism of Nigel Farage",
+          "source": "Financial Times",
+          "url": "https://www.ft.com/content/4e58775a-4c71-4945-895a-5dc31306ddd6?syn-25a6b1a6=1",
+          "date": "2026-08-18T12:02:19+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Lega, tensioni su Salvini: il Nord chiede un passo indietro",
+          "source": "Sky TG24",
+          "url": "https://tg24.sky.it/politica/video/2026/08/18/lega-tensioni-su-salvini-il-nord-chiede-un-passo-indietro-1118405",
+          "date": "2026-08-18T10:57:36+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Tim Montgomerie: Former Farage ally suspended from Reform after hitting out at Zia Yusuf",
+          "source": "The Independent",
+          "url": "https://www.independent.co.uk/news/uk/politics/tim-montgomerie-zia-yusuf-reform-suspended-nigel-farage-b3034781.html",
+          "date": "2026-08-18T10:56:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Fontana difende l'unità della Lega: \"Più rispetto per Salvini\"",
+          "source": "Il Foglio",
+          "url": "https://www.ilfoglio.it/politica/2026/08/18/news/fontana-difende-lunita-della-lega-piu-rispetto-per-salvini--405054",
+          "date": "2026-08-18T10:52:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "BREAKING: ConservativeHome founder Tim Montgomerie is ‘suspended’ from Reform UK",
+          "source": "Conservative Home",
+          "url": "https://conservativehome.com/2026/08/18/breaking-conservativehome-founder-tim-montgomerie-is-suspended-from-reform-uk/",
+          "date": "2026-08-18T10:49:13+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "OPPEANO, LA FESTA DELLA LEGA COMPIE 25 ANNI: ARRIVANO SALVINI, FONTANA, STEFANI E CONTE",
+          "source": "Il Nuovo Giornale Web",
+          "url": "https://www.ilnuovogiornaleweb.it/2026/08/18/oppeano-la-festa-della-lega-compie-25-anni-arrivano-salvini-fontana-stefani-e-conte/",
+          "date": "2026-08-18T09:32:28+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Rozłam w PiS. \"Decyzja jest podjęta. Wychodzimy\"",
+          "source": "Tygodnik Solidarność",
+          "url": "https://tysol.pl/wiadomosci/rozlam-w-pis-decyzja-jest-podjeta-wychodzimy,196469",
+          "date": "2026-08-18T08:27:29+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Ludzie Morawieckiego wezmą rozwód z PiS w europarlamencie. 'Partia wykorzysta to jako pretekst'",
+          "source": "Gazeta",
+          "url": "https://wiadomosci.gazeta.pl/polityka/7,198012,32973732,ludzie-morawieckiego-wezma-rozwod-z-pis-w-europarlamencie-partia.html",
+          "date": "2026-08-18T07:22:50+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Lega, Fontana “Si vince uniti, più rispetto per Salvini”",
+          "source": "Stampa Parlamento",
+          "url": "https://www.stampaparlamento.it/2026/08/18/lega-fontana-si-vince-uniti-piu-rispetto-per-salvini/",
+          "date": "2026-08-18T06:52:01+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Morawiecki odcina się od PiS także w Brukseli. Powstanie nowa delegacja",
+          "source": "Do Rzeczy",
+          "url": "https://dorzeczy.pl/kraj/930034/morawiecki-odcina-sie-od-pis-takze-w-brukseli-powstanie-nowa-delegacja.html",
+          "date": "2026-08-18T06:36:00+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "La Lega scopre i diritti civili mentre perde se stessa",
+          "source": "lidentita.it",
+          "url": "https://www.lidentita.it/la-lega-scopre-i-diritti-civili-mentre-perde-se-stessa/",
+          "date": "2026-08-18T05:49:03+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Lega, la fronda nordista allo scoperto per un passo indietro di Matteo Salvini",
+          "source": "ilnordest.it",
+          "url": "https://www.ilnordest.it/politica/lega-nord-fontana-passo-indietro-salvini-chat-infuocate-xjjufoh0",
+          "date": "2026-08-18T05:16:32+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Tensioni nella Lega, Fontana: “C’è malessere, su Salvini nessuna soluzione va esclusa”",
+          "source": "Calabria Diretta News",
+          "url": "https://www.calabriadirettanews.com/2026/08/18/tensioni-nella-lega-fontana-ce-malessere-su-salvini-nessuna-soluzione-va-esclusa/",
+          "date": "2026-08-18T04:51:24+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "L'isolamento di Salvini. I governatori del nord gli preparano la festa e aprono alla sostituzione. Addio Viminale",
+          "source": "Il Foglio",
+          "url": "https://www.ilfoglio.it/politica/2026/08/18/news/lisolamento-di-salvini-i-governatori-del-nord-gli-preparano-la-festa-e-aprono-alla-sostituzione-addio-viminale--405033",
+          "date": "2026-08-18T04:00:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "„Taktyka salami” - to czeka Rozwój Plus Mateusza Morawieckiego. W PiS zapadła decyzja",
+          "source": "Rzeczpospolita",
+          "url": "https://www.rp.pl/polityka/art45006931-politycy-pis-czuja-sie-zdradzeni-beda-grillowac-rozwoj-plus",
+          "date": "2026-08-18T02:30:00+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Carroccio in subbuglio, Corbetta: “Stavolta non sto con Fontana, che errore guardare al centro perché a destra c’è Vannacci”",
+          "source": "Il Giorno",
+          "url": "https://www.ilgiorno.it/milano/politica/carroccio-in-subbuglio-corbetta-stavolta-non-sto-con-fontana-che-errore-guardare-al-centro-perche-a-destra-ce-vannacci-l6diazs9",
+          "date": "2026-08-18T01:44:31+00:00",
           "category": "italy"
         },
         {
@@ -538,31 +718,31 @@
           "category": "italy"
         },
         {
-          "title": "Le reazioni alle accuse di Fontana. Salvini e l'ira per l'attacco «nordista». I suoi: «Così si fa il male della Lega»",
-          "source": "roma.corriere.it",
-          "url": "https://roma.corriere.it/notizie/politica/26_agosto_17/reazioni-fontana-salvini-c4abff5e-ec51-49fb-bd1a-ff7deb828xlk.shtml",
-          "date": "2026-08-17T20:19:44+00:00",
-          "category": "italy"
+          "title": "Tras 9 días, Javier Milei reapareció en público",
+          "source": "bardeo.news",
+          "url": "https://bardeo.news/politica/tras-9-dias--javier-milei-reaparecio-en-publico_a6a8304bc57f5b1776e8ba973?output=amp",
+          "date": "2026-08-17T19:36:43+00:00",
+          "category": "argentina"
         },
         {
-          "title": "Lega, Attilio Fontana: ”C'è malcontento, serve una svolta. Salvini? Non si escluda passo indietro”",
-          "source": "Milano Pavia NEWS",
-          "url": "https://milanopavia.news/news-milano/lega-attilio-fontana-ce-malcontento-serve-una-svolta-salvini-non-si-escluda-passo-indietro/",
-          "date": "2026-08-17T17:09:32+00:00",
-          "category": "italy"
+          "title": "Vox de Badajoz: «Hay que gastar menos en los de fuera y más en nuestra gente»",
+          "source": "Hoy",
+          "url": "https://www.hoy.es/badajoz/vox-badajoz-gastar-gente-20260817184008-nt.html",
+          "date": "2026-08-17T18:27:01+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Milei encabeza el acto por San Martín en medio del acercamiento entre LLA y el PRO",
+          "source": "Cadena 3 Argentina",
+          "url": "https://www.cadena3.com/amp/noticia/politica-y-economia/milei-encabeza-el-acto-por-san-martin-en-medio-del-acercamiento-entre-lla-y-el-pro_584226",
+          "date": "2026-08-17T17:34:50+00:00",
+          "category": "argentina"
         },
         {
           "title": "Polveriera Lega, Fontana contro Salvini. L’amarezza nella chat del Consiglio federale: “Basta polemiche”",
           "source": "Quotidiano Nazionale",
           "url": "https://www.quotidiano.net/politica/polveriera-lega-fontana-contro-salvini-chat-consiglio-federale-fx9gs0n4",
           "date": "2026-08-17T16:38:42+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Aprire il dopo Salvini. Fontana apre le danze, in arrivo nuovi assalti: \"Ripensare la Lega\" (di G. Ucciero)",
-          "source": "HuffPost Italia",
-          "url": "https://www.huffingtonpost.it/politica/2026/08/17/news/logorare_salvini_rivolta_lega-22549036/",
-          "date": "2026-08-17T15:46:00+00:00",
           "category": "italy"
         },
         {
@@ -573,18 +753,11 @@
           "category": "italy"
         },
         {
-          "title": "Błaszczak chce jednej listy prawicy. Padło „tak” na PiS i Konfederację. Potem ostro uderzył w Morawieckiego",
-          "source": "Polityka Super Express",
-          "url": "https://polityka.se.pl/wiadomosci/blaszczak-chce-jednej-listy-prawicy-padlo-tak-na-pis-i-konfederacje-potem-ostro-uderzyl-w-morawieckiego-aa-VaQT-78MR-Hngm.html",
-          "date": "2026-08-17T15:00:00+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "The British far right is stalling — so why is nobody talking about it?",
-          "source": "National Herald",
-          "url": "https://www.nationalheraldindia.com/opinion/the-british-far-right-is-stalling-so-why-is-nobody-talking-about-it-nigel-farage-rupert-lowe",
-          "date": "2026-08-17T14:43:41+00:00",
-          "category": "general"
+          "title": "Fontana: il rilancio della Lega è una priorità per il centrodestra",
+          "source": "Il Foglio",
+          "url": "https://www.ilfoglio.it/politica/2026/08/17/news/fontana-il-rilancio-della-lega-e-una-priorita-per-il-centrodestra--404965",
+          "date": "2026-08-17T14:18:03+00:00",
+          "category": "italy"
         },
         {
           "title": "Crisi nella Lega: chi sono i possibili successori di Matteo Salvini?",
@@ -599,150 +772,125 @@
           "url": "https://www.rainews.it/amp/tgr/lombardia/video/2026/08/si-intensifica-il-confronto-interno-alla-lega-in-vista-del-raduno-di-pontida-7ff82996-8b94-40e0-96c0-e52f69f321d9.html",
           "date": "2026-08-17T13:15:27+00:00",
           "category": "italy"
-        },
-        {
-          "title": "Le parole di Fontana scuotono la Lega",
-          "source": "RaiNews",
-          "url": "https://www.rainews.it/amp/tgr/lombardia/video/2026/08/le-parole-di-fontana-scuotono-la-lega-358d8b36-7110-4a77-9ac1-f977ae9a2edc.html",
-          "date": "2026-08-17T11:59:45+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Lega, Fontana lancia l'assalto del nord: \"Il partito va salvato dal declino. Un passo indietro di Salvini? Da non escludere\"",
-          "source": "Il Fatto Quotidiano",
-          "url": "https://www.ilfattoquotidiano.it/2026/08/17/fontana-salvini-lega-nord-passo-indietro-rivolta/8480660/",
-          "date": "2026-08-17T10:47:56+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Lega, Fontana apre alla successione di Salvini: 'Nessun passo indietro è escluso'",
-          "source": "tg.la7.it",
-          "url": "https://tg.la7.it/politica/lega-fontana-successione-salvini-dimissioni-17-08-2026-261279",
-          "date": "2026-08-17T10:19:04+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Fontana “commissaria” Salvini: la Lega è crollata e serve una svolta",
-          "source": "Avvenire",
-          "url": "https://www.avvenire.it/politica/fontana-commissaria-salvini-la-lega-e-crollata-serve-una-svolta_112040",
-          "date": "2026-08-17T09:24:00+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Aria di crisi in casa Lega, Fontana sfida Salvini: «Nessuna soluzione può essere esclusa a priori»",
-          "source": "Il Dubbio",
-          "url": "https://www.ildubbio.news/news/politica/51936/lega-fontana-salvini-rinnovamento.html",
-          "date": "2026-08-17T08:26:10+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Lega, Fontana rompe gli indugi e apre alla successione di Salvini. Molinari ora non ha più alibi",
-          "source": "Lo Spiffero",
-          "url": "https://lospiffero.com/ls_article.php?id=101448",
-          "date": "2026-08-17T07:51:00+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Fontana vuole cambiare la Lega, anche a costo di sostituire Salvini",
-          "source": "Il Post",
-          "url": "https://www.ilpost.it/2026/08/17/attilio-fontana-lega-matteo-salvini/",
-          "date": "2026-08-17T06:45:55+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Attilio Fontana: «Nella Lega c'è malessere. Un passo indietro di Salvini? Niente va escluso»",
-          "source": "Corriere Milano",
-          "url": "https://milano.corriere.it/notizie/politica/26_agosto_17/attilio-fontana-lega-malessere-intervista-8a127577-1fed-4d82-bbf8-2d312f1b9xlk.shtml",
-          "date": "2026-08-17T05:22:00+00:00",
-          "category": "italy"
         }
       ],
       "first_seen": "2026-08-17T02:11:47+00:00",
-      "last_seen": "2026-08-18T02:08:47+00:00"
+      "last_seen": "2026-08-18T13:33:58+00:00"
     },
     {
       "id": "trump-administration-targets-gender-affirming-care-and-lgbtq-rights",
       "title": "Trump administration targets gender-affirming care and LGBTQ+ rights",
-      "blurb": "The Trump administration in the United States is implementing policies that target gender-affirming care and LGBTQ+ rights, with parallel actions seen in Poland, the UK, and Spain. These policies include restrictions on healthcare, legal challenges, and cultural rhetoric that often frames LGBTQ+ issues as threats to traditional values.",
+      "blurb": "The Trump administration and allied right-wing governments are intensifying efforts to restrict gender-affirming care and LGBTQ+ rights. These policies are framed as protecting traditional values and family structures, but they face strong opposition from human rights groups and progressive organizations.",
       "convergence": 3,
       "countries": [
         {
           "name": "🇺🇸 MAGA / Trump",
-          "note": "Implements policies restricting gender-affirming care, reduces recommended childhood vaccines, and faces lawsuits over LGBTQ+ rights."
+          "note": "Trump administration drops appeal for trans kids' medical records, proposes reducing childhood vaccines, and faces criticism over LGBTQ+ policies."
         },
         {
           "name": "🇵🇱 Prawo i Sprawiedliwość",
-          "note": "Continues to promote traditional values and opposes LGBTQ+ rights, with rhetoric linking these issues to national identity."
+          "note": "Criticizes government's handling of LGBTQ+ issues, proposes reforms to education and social policies."
         },
         {
           "name": "🇬🇧 Reform UK",
-          "note": "Criticizes gender policies in schools and public institutions, framing them as threats to traditional values."
+          "note": "Criticizes gender-affirming policies, proposes reforms to education and social welfare."
         },
         {
           "name": "🇪🇸 Vox",
-          "note": "Opposes LGBTQ+ rights and gender policies, particularly in education and public institutions, framing them as ideological impositions."
+          "note": "Opposes gender-affirming policies, criticizes government's handling of LGBTQ+ issues."
+        },
+        {
+          "name": "🇮🇹 Fratelli d'Italia / Lega",
+          "note": "Criticizes gender-affirming policies, faces internal debates over social issues."
         }
       ],
       "signals": [
-        "policy contagion",
-        "cultural rhetoric",
-        "legal challenges",
-        "healthcare restrictions"
+        "policy imitation",
+        "shared framing",
+        "contagion of rhetoric"
       ],
-      "article_count": 25,
+      "article_count": 20,
       "refs": [
         {
-          "title": "The Trump administration has revised its policies on vaccines, Medicaid, and dietary supplements",
-          "source": "ua.news",
-          "url": "https://ua.news/en/health/administratsiia-trampa-pereglianula-politiku-shchodo-vaktsin-medicaid-i-kharchovikh-dobavok",
-          "date": "2026-08-17T12:19:23+00:00",
+          "title": "Pete Hegseth uses anti-trans slur during Iowa State Fair speech",
+          "source": "attitude.co.uk",
+          "url": "https://www.attitude.co.uk/news/pete-hegseth-uses-anti-trans-slur-during-iowa-state-fair-speech-531840/",
+          "date": "2026-08-18T10:21:00+00:00",
           "category": "usa"
         },
         {
-          "title": "KFF Health News: Health and Human Services Secretary Robert F. Kennedy Jr.’s Quiet Hunt for Autism Culprits Stalls as Trump Orders Baseless Changes to Childhood Shots",
-          "source": "Sierra Sun Times",
-          "url": "https://goldrushcam.com/sierrasuntimes/index.php/news/local-news/80816-kff-health-news-health-and-human-services-secretary-robert-f-kennedy-jr-s-quiet-hunt-for-autism-culprits-stalls-as-trump-orders-baseless-changes-to-childhood-shots",
-          "date": "2026-08-17T12:14:06+00:00",
+          "title": "Trump’s Latest Catch-22 for Immigrants",
+          "source": "The American Prospect",
+          "url": "https://prospect.org/2026/08/18/trump-immigrants-green-card-public-benefits/",
+          "date": "2026-08-18T09:00:00+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Meta trial over social media harm to children begins",
+          "source": "DW.com",
+          "url": "https://www.dw.com/en/meta-trial-over-social-media-harm-to-children-begins/a-78408050",
+          "date": "2026-08-18T08:04:58+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Trump administration drops appeal for trans kids’ medical records",
+          "source": "Q Voice News",
+          "url": "https://qvoicenews.com/2026/08/18/trump-administration-drops-appeal-for-trans-kids-medical-records/",
+          "date": "2026-08-18T07:07:53+00:00",
           "category": "usa"
         },
         {
-          "title": "Inside the twisted MAGA fantasy that just won't go away",
-          "source": "AlterNet",
-          "url": "https://www.alternet.org/trump-third-term-bannon/",
-          "date": "2026-08-17T11:04:00+00:00",
+          "title": "Lubbock Turning Point USA claims LISD keeps harmful library materials - Lubbock Avalanche-Journal",
+          "source": "",
+          "url": "https://www.lubbockonline.com/picture-gallery/news/2026/08/18/turning-point-usa-event-claims-lubbock-isd-keeps-harmful-library-materials/91346148007/",
+          "date": "2026-08-18T05:25:00+00:00",
+          "category": "networks"
+        },
+        {
+          "title": "Tice's climate comments are 'idiotic', eco-millionaire Dale Vince says as he admits he 'wouldn't mind' making climate denial illegal",
+          "source": "lbc.co.uk",
+          "url": "https://www.lbc.co.uk/article/richard-tice-dale-vince-climate-change-holocaust-denial-5HjdgDS_2/",
+          "date": "2026-08-18T01:32:50+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Justice Department creates a new pathway to restore gun rights for some people convicted of felonies",
+          "source": "PBS",
+          "url": "https://www.pbs.org/newshour/politics/justice-department-creates-a-new-pathway-to-restore-gun-rights-for-some-people-convicted-of-felonies",
+          "date": "2026-08-17T21:24:08+00:00",
           "category": "usa"
         },
         {
-          "title": "How Far Will the Trump Administration Go to Deport Mahmoud Khalil?",
-          "source": "The New Yorker",
-          "url": "https://www.newyorker.com/magazine/2026/08/24/how-far-will-the-trump-administration-go-to-deport-mahmoud-khalil",
-          "date": "2026-08-17T10:00:00+00:00",
+          "title": "President Trump Wants to Reduce Childhood Vaccines. Here’s What That Means for Indian Country.",
+          "source": "Native News Online",
+          "url": "https://nativenewsonline.net/health/president-trump-wants-to-reduce-childhood-vaccines-heres-what-that-means-for-indian-country/",
+          "date": "2026-08-17T19:46:11+00:00",
           "category": "usa"
         },
         {
-          "title": "Florida Man Pleads Guilty After Multiple Death Threats Against Secretary of State",
-          "source": "The Presidential Prayer Team",
-          "url": "https://www.presidentialprayerteam.org/2026/08/17/florida-man-pleads-guilty-after-multiple-death-threats-against-secretary-of-state/",
-          "date": "2026-08-17T09:00:00+00:00",
+          "title": "US Assumes Control Over Global Anti-Abortion Geneva Consensus Declaration, Affirms Religious Groups",
+          "source": "Health Policy Watch",
+          "url": "https://healthpolicy-watch.news/us-assumes-control-over-global-anti-abortion-geneva-consensus-declaration/'",
+          "date": "2026-08-17T17:37:28+00:00",
+          "category": "networks"
+        },
+        {
+          "title": "Pete Hegseth Mocked by Critics as He Unveils New Motto in War on Drug Cartels: 'How Can His Wife Stand the Sight of Him?'",
+          "source": "AOL.com",
+          "url": "https://www.aol.com/articles/pete-hegseth-mocked-critics-unveils-174500000.html",
+          "date": "2026-08-17T15:32:34+00:00",
           "category": "usa"
         },
         {
-          "title": "Revenge of the White Supremacists: Trump's DOJ Indicts Far Right Extremism Expert Heidi Beirich",
-          "source": "Bucks County Beacon",
-          "url": "https://buckscountybeacon.com/2026/08/revenge-of-the-white-supremacists-trumps-doj-indicts-far-right-extremism-expert-heidi-beirich/",
-          "date": "2026-08-17T08:00:00+00:00",
-          "category": "general"
-        },
-        {
-          "title": "Modern counter-revolution and fascism",
-          "source": "International Viewpoint Online magazine",
-          "url": "https://internationalviewpoint.org/Modern-counter-revolution-and-fascism",
-          "date": "2026-08-17T06:29:53+00:00",
-          "category": "general"
+          "title": "Trump Administration Seeks to Bolster Biosecurity Protections After Cuts",
+          "source": "Yahoo",
+          "url": "https://www.yahoo.com/news/politics/articles/trump-administration-seeks-bolster-biosecurity-144727106.html",
+          "date": "2026-08-17T14:47:27+00:00",
+          "category": "usa"
         }
       ],
       "first_seen": "2026-08-12T03:15:33+00:00",
-      "last_seen": "2026-08-18T02:08:47+00:00"
+      "last_seen": "2026-08-18T13:33:58+00:00"
     }
   ]
 }
