@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-19T13:34:11+00:00",
+  "updated_at": "2026-08-20T02:09:27+00:00",
   "lookback_hours": 48,
   "model": "Mistral Large",
   "status": "ok",
@@ -8,21 +8,476 @@
       "id": "javier-milei",
       "name": "Javier Milei",
       "role": "President of Argentina, Leader of La Libertad Avanza",
-      "blurb": "Milei remains a dominant figure in global right-wing discourse due to his aggressive economic reforms, public feuds with opposition leaders, and high-profile international engagements. His government's policies, including austerity measures and deregulation, continue to spark intense debate, while his personal absence from public view has fueled speculation about his health and political strategy. His sister, Karina Milei, has also become a central figure in managing political alliances and organizing high-profile events, such as the upcoming papal visit.",
+      "blurb": "Javier Milei remains a dominant figure in the news cycle due to his economic policies, public appearances, and political maneuvers ahead of the 2027 elections. His administration's decisions, such as the proposed Central Bank reform and interactions with global leaders, continue to generate significant media attention. Additionally, controversies involving his advisors and internal party dynamics are shaping the narrative around his leadership.",
       "prominence": 5,
       "signals": [
         "economic policy announcements",
-        "international posturing",
-        "leadership challenges",
-        "scandal fallout"
+        "2027 re-election campaign",
+        "controversies involving advisors",
+        "international diplomacy"
       ],
       "categories": [
-        "economic policy",
-        "international relations",
-        "domestic politics"
+        "Economic Policy",
+        "Political Strategy",
+        "International Relations"
       ],
       "article_count": 150,
       "refs": [
+        {
+          "title": "Francisco Adorni y el “cero de más”: el diputado libertario intenta explicar ante la Justicia sus números patrimoniales",
+          "source": "Infocielo",
+          "url": "https://www.infocielo.com/politica-y-economia/francisco-adorni-y-el-cero-de-mas-el-diputado-libertario-intenta-explicar-ante-la-justicia-sus-numeros-patrimoniales",
+          "date": "2026-08-20T00:50:52+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Seis meses de prisión preventiva para Fernando Cerimedo, exasesor de Javier Milei",
+          "source": "MinutoUno",
+          "url": "https://www.minutouno.com/politica/seis-meses-prision-preventiva-fernando-cerimedo-exasesor-javier-milei-n6312675",
+          "date": "2026-08-20T00:39:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei expondrá su plan económico en el Alvear",
+          "source": "» Cholila Online",
+          "url": "https://cholilaonline.ar/2026/08/javier-milei-cerrara-el-consejo-de-las-americas.html",
+          "date": "2026-08-19T23:29:42+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "La inquietante advertencia de Eduardo Feinmann para Javier Milei relacionada con Mauricio Macri, y un alerta para los argentinos",
+          "source": "MDZ Online",
+          "url": "https://www.mdzol.com/mdz-show/la-inquietante-advertencia-eduardo-feinmann-javier-milei-relacionada-mauricio-macri-y-un-alerta-los-argentinos-n1589301",
+          "date": "2026-08-19T23:22:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei cerrará el Consejo de las Américas con un discurso",
+          "source": "eleco.com.ar",
+          "url": "https://www.eleco.com.ar/nacionales/javier-milei-cerrara-el-consejo-de-las-americas-con-un-discurso",
+          "date": "2026-08-19T23:20:30+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Grabois denunció una “persecución religiosa” de parte de Javier Milei",
+          "source": "El Eco",
+          "url": "https://www.eleco.com.ar/nacionales/grabois-denuncio-una-persecucion-religiosa-de-parte-de-javier-milei",
+          "date": "2026-08-19T23:16:48+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Butazzoni: “La Libertad Avanza se está quedando sin discurso para las discusiones provinciales”",
+          "source": "Radio Profesional 89.9",
+          "url": "https://fm899.com.ar/butazzoni-la-libertad-avanza-se-esta-quedando-sin-discurso-para-las-discusiones-provinciales/",
+          "date": "2026-08-19T23:03:19+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "El desempleo se convirtió en una de las principales amenazas políticas para Javier Milei",
+          "source": "Nuevo Diario de Salta",
+          "url": "https://nuevodiariodesalta.com.ar/el-desempleo-se-convirtio-en-una-de-las-principales-amenazas-politicas-para-javier-milei/",
+          "date": "2026-08-19T23:01:44+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Ultra-Right Strategist (Bolsonaro, Milei, Paz) Arrested for Attack on Ex-Partner",
+          "source": "Mexico Solidarity Media",
+          "url": "https://mexicosolidarity.com/ultraright-strategist-arrested/",
+          "date": "2026-08-19T23:00:31+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "En plan opositor, Karina Milei se sumó a las recorridas de Pilar Ramírez en CABA y reclamó más desregulación al PRO",
+          "source": "Ambito",
+          "url": "https://www.ambito.com/politica/en-plan-opositor-karina-milei-se-sumo-las-recorridas-pilar-ramirez-caba-y-reclamo-mas-desregulacion-al-pro-n6312651",
+          "date": "2026-08-19T22:56:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei reunirá a empresarios, ministros y gobernadores en el cierre del Council of the Americas",
+          "source": "C5N",
+          "url": "https://www.c5n.com/politica/javier-milei-reunira-empresarios-ministros-y-gobernadores-el-cierre-del-council-of-the-americas-n246644",
+          "date": "2026-08-19T22:52:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "\"Otro golazo\": el durísimo tuit de Manu Jove por el viaje de Milei a Estados Unidos y la conexión con Cerimedo",
+          "source": "Diario Registrado",
+          "url": "https://www.diarioregistrado.com/politica/-otro-golazo---el-durisimo-tuit-de-manu-jove-por-el-viaje-de-milei-a-estados-unidos-y-la-conexion-con-cerimedo_a6a862d8d0894a222eddfef64",
+          "date": "2026-08-19T22:39:36+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei se reunirá con empresarios en el Council para despejar dudas sobre la reactivación de la economía",
+          "source": "Radio Mitre",
+          "url": "https://radiomitre.cienradios.com/politica/javier-milei-se-reunira-con-empresarios-en-el-council-para-despejar-dudas-sobre-la-reactivacion-de-la-economia/",
+          "date": "2026-08-19T22:05:48+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei nominado al Nobel... \"a la destrucción\"",
+          "source": "Urgente24",
+          "url": "https://urgente24.com/actualidad/javier-milei-nominado-al-nobel-a-la-destruccion-n630905",
+          "date": "2026-08-19T22:05:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei cerrará el Consejo de las Américas con un discurso sobre su Gobierno",
+          "source": "Agencia Noticias Argentinas",
+          "url": "https://noticiasargentinas.com/politica/javier-milei-cerrara-el-consejo-de-las-americas-con-un-discurso-sobre-su-gobierno_a6a86187e81183b8c11300fc7",
+          "date": "2026-08-19T22:05:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "El otro mercado que aún cree: plataformas de predicciones online tienen a Javier Milei como favorito en 2027 - El Economista",
+          "source": "Últimas noticias económicas y financieras",
+          "url": "https://eleconomista.com.ar/economia/el-otro-mercado-aun-cree-plataformas-predicciones-online-tienen-javier-milei-como-favorito-2027-n97528",
+          "date": "2026-08-19T21:25:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "La Rioja relanzó los \"Chachos\" para reactivar la economía y Javier Milei los tildó de \"Plan Platita 2.0\"",
+          "source": "Argentar Noticias",
+          "url": "https://argentarnoticias.com.ar/la-rioja-relanzo-los-chachos-para-reactivar-la-economia-y-javier-milei-los-tildo-de-plan-platita-2-0/",
+          "date": "2026-08-19T21:12:33+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Encuesta: el 63% rechaza la reelección de Javier Milei, pero el peronismo no logra imponerse",
+          "source": "Letra P",
+          "url": "https://www.letrap.com.ar/politica/encuesta-el-63-rechaza-la-reeleccion-javier-milei-pero-el-peronismo-no-logra-imponerse-n5425920",
+          "date": "2026-08-19T20:49:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Sachsen-Anhalt: CDU-Mann spendet 10000 Euro an die AfD",
+          "source": "SZ.de",
+          "url": "https://www.sueddeutsche.de/politik/sachsen-anhalt-cdu-afd-spende-li.3534018",
+          "date": "2026-08-19T20:45:13+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "En la gestión de Javier Milei, Fernando Cerimedo ingresó 13 veces a la Casa Rosada entre 2023 y 2024",
+          "source": "MDZ Online",
+          "url": "https://www.mdzol.com/politica/en-la-gestion-javier-milei-fernando-cerimedo-ingreso-13-veces-la-casa-rosada-2023-y-2024-n1589180",
+          "date": "2026-08-19T20:30:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Pilar Ramírez enfría la posibilidad de una alianza con el PRO | 19 de agosto de 2026",
+          "source": "Hoy Día Córdoba",
+          "url": "https://hoydia.com.ar/politica/nacional/pilar-ramirez-enfria-un-acuerdo-con-el-pro/",
+          "date": "2026-08-19T20:29:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "List of felons who have reoffended after Donald Trump pardons",
+          "source": "Newsweek",
+          "url": "https://www.newsweek.com/list-of-felons-accused-of-reoffending-after-donald-trump-pardons-12343378",
+          "date": "2026-08-19T20:23:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Inflación, créditos en dólares e inversión: Javier Milei expondrá ante empresarios para disipar dudas sobre la economía argentina",
+          "source": "Canal26",
+          "url": "https://www.canal26.com/politica/2026/08/19/inflacion-creditos-en-dolares-e-inversion-javier-milei-expondra-ante-empresarios-para-disipar-dudas-sobre-la-economia-argentina/",
+          "date": "2026-08-19T20:11:15+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Las pymes marchan a Casa Rosada y le quieren dar el “Nobel de la destrucción” a Javier Milei",
+          "source": "Cambio 2000",
+          "url": "https://cambio2000.com.ar/site/las-pymes-marchan-a-casa-rosada-y-le-quieren-dar-el-nobel-de-la-destruccion-a-javier-milei/",
+          "date": "2026-08-19T20:10:48+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei posterga los cargos más difíciles de la Corte y busca avanzar con jueces federales sin negociar con el kirchnerismo",
+          "source": "MDZ Online",
+          "url": "https://www.mdzol.com/politica/javier-milei-posterga-los-cargos-mas-dificiles-la-corte-y-busca-avanzar-jueces-federales-negociar-el-kirchnerismo-n1589144",
+          "date": "2026-08-19T20:00:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Fernando Cerimedo: quién es el argentino detenido en Bolivia y qué relación tuvo con Javier Milei",
+          "source": "minutodecierre.com",
+          "url": "https://www.minutodecierre.com/nota/2026-8-19-16-36-0-fernando-cerimedo-quien-es-el-argentino-detenido-en-bolivia-y-que-relacion-tuvo-con-javier-milei",
+          "date": "2026-08-19T19:40:53+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Vox fomentaría la inmigración",
+          "source": "Libertad Digital",
+          "url": "https://www.libertaddigital.com/espana/politica/2026-08-19/jose-garcia-dominguez-vox-fomentaria-la-inmigracion-7450086/amp.html",
+          "date": "2026-08-19T19:14:03+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Las PYME marchan a Casa Rosada y le quieren dar el \"Nobel de la destrucción\" a Javier Milei",
+          "source": "Infocielo",
+          "url": "https://www.infocielo.com/politica-y-economia/las-pyme-marchan-a-casa-rosada-y-le-quieren-dar-el-nobel-de-la-destruccion-a-javier-milei",
+          "date": "2026-08-19T18:46:14+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "El violento antecedente de Fernando Cerimedo cuando trabajaba para Javier Milei",
+          "source": "cronica.com.ar",
+          "url": "https://www.cronica.com.ar/policiales/el-violento-antecedente-de-fernando-cerimedo-cuando-trabajaba-para-javier-milei/",
+          "date": "2026-08-19T18:12:32+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "La ex de Cerimedo apuntó contra Karina Milei: “Fernando me dijo que la hermana de Milei era corrupta",
+          "source": "Agencia Noticias Argentinas",
+          "url": "https://noticiasargentinas.com/politica/la-ex-de-cerimedo-apunto-contra-karina-milei---fernando-me-dijo-que-la-hermana-de-milei-era-corrupta-_a6a85de2481183b8c1126d5ce",
+          "date": "2026-08-19T18:02:31+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Kid Rock announces 2 new albums – one with a Christian theme",
+          "source": "yahoo.com",
+          "url": "https://www.yahoo.com/entertainment/music/articles/kid-rock-announces-2-albums-175232794.html",
+          "date": "2026-08-19T17:52:32+00:00",
+          "category": "networks"
+        },
+        {
+          "title": "Alerta total en el Gobierno por lo que contó Rodrigo Lussich sobre Javier Milei: \"Está\"",
+          "source": "eldestapeweb.com",
+          "url": "https://www.eldestapeweb.com/espectaculos/alerta-total-gobierno-conto-rodrigo-lussich-javier-milei-esta-2026819143752",
+          "date": "2026-08-19T17:48:45+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Milei se presentará ante empresarios y buscará despejar dudas sobre la reactivación de la economía",
+          "source": "TN",
+          "url": "https://tn.com.ar/economia/2026/08/19/milei-se-presentara-ante-empresarios-y-buscara-despejar-dudas-sobre-la-reactivacion-de-la-economia/",
+          "date": "2026-08-19T17:44:04+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "\"Óriási örömhír\" - Paksról jelentkezett be Magyar Péter",
+          "source": "Blikk",
+          "url": "https://www.blikk.hu/aktualis/belfold/magyar-peter-paks/nfh882q",
+          "date": "2026-08-19T17:33:33+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Victoria Villarruel habló sobre Karina Milei tras la detención de Fernando Cerimedo por el ataque a Nadia Beller",
+          "source": "Crónica",
+          "url": "https://www.cronica.com.ar/politica/victoria-villarruel-hablo-sobre-karina-milei-tras-la-detencion-de-fernando-cerimedo-por-el-ataque-a-nadia-beller-8710/",
+          "date": "2026-08-19T17:10:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "El Gobierno de Javier Milei bloquea todos los celulares de las cárceles provinciales: quieren terminar con el negocio de los crímenes virtuales de los presos",
+          "source": "El Cronista",
+          "url": "https://www.cronista.com/informacion-gral/el-gobierno-de-javier-milei-bloquea-todos-los-celulares-de-las-carceles-provinciales-quieren-terminar-con-el-negocio-de-los-crimenes-virtuales-de-los-presos/",
+          "date": "2026-08-19T17:02:57+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Abdala negó un acuerdo electoral entre LLA y San Luis: “Hoy no existe ningún acuerdo”",
+          "source": "La Posta de San Luis",
+          "url": "https://lapostadesanluis.com.ar/abdala-nego-un-acuerdo-electoral-entre-lla-y-san-luis-hoy-no-existe-ningun-acuerdo/",
+          "date": "2026-08-19T16:54:40+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Asaltaron a Ariel Diwan, candidato de La Libertad Avanza en Morón: “tengo las pelotas llenas ya”",
+          "source": "Primer Plano Online",
+          "url": "https://primerplanoonline.com.ar/asaltaron-a-ariel-diwan-candidato-de-la-libertad-avanza-en-moron-tengo-las-pelotas-llenas-ya/",
+          "date": "2026-08-19T16:36:32+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Trump’s endorsement record takes a hit at the end of primary season",
+          "source": "NBC News",
+          "url": "https://www.nbcnews.com/politics/2026-election/trumps-endorsement-record-takes-hit-end-primary-season-rcna593351",
+          "date": "2026-08-19T16:25:29+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Otra advertencia de Bloomberg a Javier Milei: \"La mayor amenaza política\"",
+          "source": "Urgente24",
+          "url": "https://urgente24.com/dinero/otra-advertencia-bloomberg-javier-milei-la-mayor-amenaza-politica-n630867",
+          "date": "2026-08-19T16:19:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Sheinbaum vinculó a Fernando Cerimedo con La Derecha Diario y cuestionó su actividad política en América Latina",
+          "source": "La Gaceta",
+          "url": "https://www.lagaceta.com.ar/nota/1150342/mundo/sheinbaum-vinculo-fernando-cerimedo-derecha-diario-cuestiono-actividad-politica-america-latina.html",
+          "date": "2026-08-19T16:09:32+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "\"La corrupta es la hermana de Javier Milei\": la revelación de Nadia Beller, la ex de Cerimedo atacada a balazos",
+          "source": "lmneuquen.com",
+          "url": "https://www.lmneuquen.com/pais/la-corrupta-es-la-hermana-javier-milei-la-revelacion-nadia-beller-la-ex-cerimedo-atacada-balazos-n1250264",
+          "date": "2026-08-19T16:03:47+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "El PRO enfría un acuerdo con Javier Milei y advierte: \"No queremos sumisión\"",
+          "source": "MDZ Online",
+          "url": "https://www.mdzol.com/politica/el-pro-enfria-un-acuerdo-javier-milei-y-advierte-no-queremos-sumision-n1589014",
+          "date": "2026-08-19T16:00:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "AfD vor Sieg bei Landtagswahl: Bundesregierung kann zu Mittel greifen, was noch nie zum Einsatz kam",
+          "source": "Nordkurier",
+          "url": "https://www.nordkurier.de/politik/afd-vor-sieg-bei-landtagswahl-bundesregierung-kann-zu-mittel-greifen-was-noch-nie-zum-einsatz-kam-4793034",
+          "date": "2026-08-19T16:00:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Tras el ninguneo de Javier Milei y Caputo, los endeudados marcharán al ministerio de Economía",
+          "source": "Urgente24",
+          "url": "https://urgente24.com/actualidad/tras-el-ninguneo-javier-milei-y-caputo-los-endeudados-marcharan-al-ministerio-economia-n630868",
+          "date": "2026-08-19T15:48:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Nadia Márquez aparece entre los nombres que impulsan los evangélicos para acompañar a Milei en 2027",
+          "source": "Neuquen Post",
+          "url": "https://neuquenpost.com/nadia-marquez-aparece-entre-los-nombres-que-impulsan-los-evangelicos-para-acompanar-a-milei-en-2027/",
+          "date": "2026-08-19T15:45:06+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Gonzalo Bonadeo destrozó a Milei y reveló lo que todos pensaban: \"La guita\"",
+          "source": "El Destape",
+          "url": "https://www.eldestapeweb.com/espectaculos/gonzalo-bonadeo-destrozo-milei-revelo-todos-pensaban-guita-2026819124237",
+          "date": "2026-08-19T15:43:32+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "El Gobierno pone fichas a la alianza con el PRO de cara a las elecciones 2027 para polarizar con el PJ",
+          "source": "Diario Río Negro",
+          "url": "https://www.rionegro.com.ar/politica/el-gobierno-pone-fichas-a-la-alianza-con-el-pro-de-cara-a-las-elecciones-2027-para-polarizar-con-el-pj-4689178/",
+          "date": "2026-08-19T15:38:41+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Villarruel profundizó la interna: usó el escándalo de Cerimedo para golpear a Karina Milei",
+          "source": "La Gaceta",
+          "url": "https://www.lagaceta.com.ar/nota/1150336/politica/villarruel-profundizo-interna-uso-escandalo-cerimedo-para-golpear-karina-milei.html",
+          "date": "2026-08-19T15:34:34+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Poll shows drop in climate scepticism as Reform double down",
+          "source": "thecanary.co",
+          "url": "https://www.thecanary.co/trending/2026/08/19/climate-scepticism-reform/",
+          "date": "2026-08-19T15:34:05+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "\"Un gasto innecesario\": Rolando Figueroa opinó del proyecto de Javier Milei para eliminar las PASO",
+          "source": "Diario Río Negro",
+          "url": "https://www.rionegro.com.ar/politica/un-gasto-innecesario-rolando-figueroa-opino-del-proyecto-de-javier-milei-para-eliminar-las-paso-4688974/",
+          "date": "2026-08-19T15:23:56+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "El Gobierno de Javier Milei analiza un aumento salarial para las Fuerzas Armadas y de Seguridad",
+          "source": "Diario Río Negro",
+          "url": "https://www.rionegro.com.ar/politica/el-gobierno-de-javier-milei-analiza-un-aumento-salarial-para-las-fuerzas-armadas-y-de-seguridad-4689095/",
+          "date": "2026-08-19T15:23:39+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Aflojar o no aflojar: el dilema político y económico que desvela a Javier Milei",
+          "source": "Ciudadano News",
+          "url": "https://ciudadano.news/economia/aflojar-o-no-aflojar-dilema-politico-economico-javier-milei-n121219",
+          "date": "2026-08-19T15:21:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Cerró una histórica empresa textil de 50 años por la crisis de Javier Milei: \"Piensen la próxima vez que voten\"",
+          "source": "El Destape",
+          "url": "https://www.eldestapeweb.com/sociedad/cerro-historica-empresa-textil-50-anos-crisis-javier-milei-piensen-proxima-vez-voten-202681911564?outputType=amp",
+          "date": "2026-08-19T15:07:24+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Intento de femicidio en Bolivia: la expareja de un exasesor de Milei denunció corrupción y apuntó contra Karina Milei",
+          "source": "El Ciudadano",
+          "url": "https://elciudadanoweb.com/intento-de-femicidio-en-bolivia-la-expareja-de-un-exasesor-de-milei-denuncio-corrupcion-y-apunto-contra-karina-milei/",
+          "date": "2026-08-19T14:56:30+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "El giro en la estrategia de Javier Milei para no seguir acumulando derrotas en el Congreso Por Antonio Riccobene",
+          "source": "notiar.com.ar",
+          "url": "https://www.notiar.com.ar/index.php/politica/142083-el-giro-en-la-estrategia-de-javier-milei-para-no-seguir-acumulando-derrotas-en-el-congreso-por-antonio-riccobene",
+          "date": "2026-08-19T14:54:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Detención de Fernando Cerimedo en Bolivia: habló su expareja tras el ataque y reveló un intercambio de chats",
+          "source": "Diario Río Negro",
+          "url": "https://www.rionegro.com.ar/politica/detencion-de-fernando-cerimedo-en-bolivia-hablo-su-expareja-tras-el-ataque-y-revelo-un-intercambio-de-chats-4689077/",
+          "date": "2026-08-19T14:47:05+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Detuvieron a Fernando Cerimedo, exasesor de Javier Milei, acusado de encargar el intento de asesinato de su expareja",
+          "source": "Net tv | Aire Fresco",
+          "url": "https://www.canalnet.tv/programas/longobardi-en-vivo/detuvieron-a-fernando-cerimedo-exasesor-de-javier-milei-acusado-de-encargar-el-intento-de-asesinato-de-su-expareja_20260819/",
+          "date": "2026-08-19T14:37:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei se desmarcó de Fernando Cerimedo tras su detención en Bolivia: “Es un mercenario”",
+          "source": "CFIN Noticias",
+          "url": "https://www.cfin.com.ar/destacados/milei-cerimedo-detencion-bolivia/",
+          "date": "2026-08-19T13:56:19+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Jimmie Åkesson: ”Siktar på statsministerposten 2030”",
+          "source": "Omni – Alla nyheter. Alla perspektiv.",
+          "url": "https://omni.se/jimmie-akesson-siktar-pa-statsministerposten-2030/a/xrVonX",
+          "date": "2026-08-19T13:35:45+00:00",
+          "category": "sweden"
+        },
+        {
+          "title": "Rolando Figueroa respaldó la reforma del Banco Central que envió Javier Milei al Congreso",
+          "source": "Diario Río Negro",
+          "url": "https://www.rionegro.com.ar/sociedad/rolando-figueroa-respaldo-la-reforma-del-banco-central-que-envio-javier-milei-al-congreso-4688931/",
+          "date": "2026-08-19T13:23:26+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei enfrenta una seguidilla de tropiezos mientras se prepara para la carrera por la reelección en 2027",
+          "source": "CNN Chile",
+          "url": "https://www.cnnchile.com/mundo/milei-tropiezos-gobierno-reeleccion-2027-argentina/",
+          "date": "2026-08-19T13:12:40+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei cierra el Council of the Americas en una jornada que reunirá a empresarios, ministros y gobernadores",
+          "source": "Ambito",
+          "url": "https://www.ambito.com/politica/javier-milei-cierra-el-council-of-the-americas-una-jornada-que-reunira-empresarios-ministros-y-gobernadores-n6312320",
+          "date": "2026-08-19T13:08:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "El gobierno de Javier Milei prepara un nuevo aumento para las Fuerzas Armadas y de la Seguridad",
+          "source": "minutouno.com",
+          "url": "https://www.minutouno.com/politica/el-gobierno-javier-milei-prepara-un-nuevo-aumento-las-fuerzas-armadas-y-la-seguridad-n6312322",
+          "date": "2026-08-19T13:05:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Nadia Beller acusó a Cerimedo por el ataque y acusó de presuntos hechos de corrupción a Karina Milei",
+          "source": "Filo News",
+          "url": "https://www.filo.news/noticia/2026/08/19/nadia-beller-acuso-a-cerimedo-por-el-ataque-y-acuso-de-presuntos-hechos-de-corrupcion-a-karina-milei",
+          "date": "2026-08-19T12:45:41+00:00",
+          "category": "argentina"
+        },
         {
           "title": "Javier Milei visita Rosario este viernes para participar del aniversario de la Bolsa de Comercio",
           "source": "Mirador Provincial",
@@ -38,13 +493,6 @@
           "category": "argentina"
         },
         {
-          "title": "Impulsan una vice evangelista para Milei en 2027",
-          "source": "Bardeo.news",
-          "url": "https://bardeo.news/politica/impulsan-una-vice-evangelista-para-milei-en-2027_a6a859ce654a9e2257c2caca1",
-          "date": "2026-08-19T12:21:46+00:00",
-          "category": "argentina"
-        },
-        {
           "title": "La cargada agenda de Javier Milei tras días sin apariciones públicas: el reacomodo que acelera la campaña 2027",
           "source": "Diario Río Negro",
           "url": "https://www.rionegro.com.ar/politica/la-cargada-agenda-de-javier-milei-tras-dias-sin-apariciones-publicas-el-reacomodo-que-acelera-la-campana-2027-4688777/",
@@ -52,10 +500,24 @@
           "category": "argentina"
         },
         {
-          "title": "Nadia Beller, la ex de Fernando Cerimedo atacada a balazos, apuntó contra Karina Milei: “Él me dijo que era corrupta”",
-          "source": "InfoVeloz.com",
-          "url": "https://www.infoveloz.com/post/nadia-beller-la-ex-de-fernando-cerimedo-atacada-a-balazos-apunto-contra-karina-milei-el-me-dijo-que-era-corrupta_282963",
-          "date": "2026-08-19T12:06:38+00:00",
+          "title": "Ni Javier Milei ni el peronismo: la indiferencia al poder",
+          "source": "Letra P",
+          "url": "https://www.letrap.com.ar/politica/ni-javier-milei-ni-el-peronismo-la-indiferencia-al-poder-n5425917",
+          "date": "2026-08-19T12:17:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Vuelve Milei: apoya a Sturzenegger, pero más que nunca la política la monopoliza Karina",
+          "source": "Cadena 3 Argentina",
+          "url": "https://www.cadena3.com/amp/noticia/cuadro-de-situacion/vuelve-milei-apoya-a-sturzenegger-pero-mas-que-nunca-la-politica-la-monopoliza-karina_584783",
+          "date": "2026-08-19T12:06:55+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei se desmarcó de Fernando Cerimedo tras su detención: \"Asesoró al kirchnerismo y es un mercenario\"",
+          "source": "MDZ Online",
+          "url": "https://www.mdzol.com/politica/javier-milei-se-desmarco-fernando-cerimedo-su-detencion-asesoro-al-kirchnerismo-y-es-un-mercenario-n1588758",
+          "date": "2026-08-19T12:06:00+00:00",
           "category": "argentina"
         },
         {
@@ -66,31 +528,73 @@
           "category": "argentina"
         },
         {
-          "title": "Ulovlig innvandring skal aldri lønne seg",
-          "source": "Aftenposten",
-          "url": "https://www.aftenposten.no/meninger/debatt/i/JOL2zj/ulovlig-innvandring-skal-aldri-loenne-seg",
-          "date": "2026-08-19T11:48:20+00:00",
-          "category": "norway"
-        },
-        {
-          "title": "La Libertad Avanza redefine su estrategia en la sección para revertir el escenario 2025",
-          "source": "Séptima Sección",
-          "url": "https://septimaseccion.com.ar/la-libertad-avanza-redefine-su-estrategia-en-la-seccion-para-revertir-el-escenario-2025/",
-          "date": "2026-08-19T11:08:44+00:00",
+          "title": "Karina Milei mueve las fichas para 2027: PASO, gobernadores y alianzas en la mira",
+          "source": "mnews.com.ar",
+          "url": "https://mnews.com.ar/politica/178305-Karina-Milei-mueve-las-fichas-para-2027-PASO-gobernadores-y-alianzas-en-la-mira",
+          "date": "2026-08-19T11:51:37+00:00",
           "category": "argentina"
         },
         {
-          "title": "Vice President JD Vance plans trip to Middletown to speak on economic agenda",
-          "source": "WCPO 9 News",
-          "url": "https://www.wcpo.com/news/local-news/butler-county/middletown/vice-president-jd-vance-plans-trip-to-middletown-to-speak-on-economic-agenda",
-          "date": "2026-08-19T10:30:36+00:00",
-          "category": "usa"
+          "title": "El Gobierno profundiza las negociaciones con la oposición dialoguista y condiciona los acuerdos electorales al apoyo para eliminar las PASO",
+          "source": "tn.com.ar",
+          "url": "https://tn.com.ar/politica/2026/08/19/el-gobierno-profundiza-las-negociaciones-con-la-oposicion-dialoguista-y-condiciona-los-acuerdos-al-apoyo-para-eliminar-las-paso/",
+          "date": "2026-08-19T11:40:17+00:00",
+          "category": "argentina"
         },
         {
-          "title": "Operativo evangélico para que Nadia Márquez sea candidata a vice de Milei",
-          "source": "Lmneuquen.com",
-          "url": "https://www.lmneuquen.com/neuquen/operativo-evangelico-que-nadia-marquez-sea-candidata-vice-milei-n1250155",
-          "date": "2026-08-19T10:16:00+00:00",
+          "title": "Nadia Beller sospecha que Cerimedo contrató sicarios para asesinarla en Bolivia",
+          "source": "La Gaceta",
+          "url": "https://www.lagaceta.com.ar/nota/1150289/mundo/nadia-beller-sospecha-cerimedo-contrato-sicarios-para-asesinarla-bolivia.html",
+          "date": "2026-08-19T11:15:15+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "La campaña electoral se adelanta y comienza a ocupar la agenda del Gobierno de Javier Milei",
+          "source": "Neuquen Post",
+          "url": "https://neuquenpost.com/la-campana-electoral-se-adelanta-y-comienza-a-ocupar-la-agenda-del-gobierno-de-javier-milei/",
+          "date": "2026-08-19T10:55:04+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Quién es Fernando Cerimedo, exasesor de Javier Milei detenido en Bolivia por el presunto ataque sicario contra Nadia Beller",
+          "source": "Canal26",
+          "url": "https://www.canal26.com/politica/2026/08/19/quien-es-fernando-cerimedo-exasesor-de-javier-milei-detenido-en-bolivia-por-el-presunto-ataque-sicario-contra-nadia-beller/",
+          "date": "2026-08-19T10:21:30+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Nadia Beller, ex de Cerimedo, apuntó contra Karina Milei: \"Él me dijo que la corrupta era la hermana\"",
+          "source": "Perfil",
+          "url": "https://www.perfil.com/noticias/politica/nadia-beller-ex-de-cerimedo-apunto-contra-karina-milei-el-me-dijo-que-la-corrupta-era-la-hermana.phtml",
+          "date": "2026-08-19T10:20:04+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Milei descartó presentar el Presupuesto 2027 en el Congreso y se expuso otro cortocircuito interno",
+          "source": "El Cronista",
+          "url": "https://www.cronista.com/economia-politica/milei-descarto-presentar-el-presupuesto-2027-en-el-congreso-y-se-expuso-otro-cortocircuito-interno/",
+          "date": "2026-08-19T10:08:53+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei no irá al Congreso a presentar el Presupuesto 2027",
+          "source": "AHORA Entre Ríos",
+          "url": "https://ahora.com.ar/ultimas-noticias/javier-milei-no-ira-al-congreso-a-presentar-el-presupuesto-2027",
+          "date": "2026-08-19T09:45:10+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "La reelección de Javier Milei puede llegar sin fuerza y el Círculo Rojo ya empieza a mostrar su preocupación",
+          "source": "MDZ Online",
+          "url": "https://www.mdzol.com/politica/la-reeleccion-javier-milei-puede-llegar-fuerza-y-el-circulo-rojo-ya-empieza-mostrar-su-preocupacion-n1588567",
+          "date": "2026-08-19T09:40:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "La economía y las elecciones: el Círculo Rojo pone la mira en Javier Milei",
+          "source": "MDZ Online",
+          "url": "https://www.mdzol.com/politica/la-economia-y-las-elecciones-el-circulo-rojo-pone-la-mira-javier-milei-n1588567",
+          "date": "2026-08-19T09:40:00+00:00",
           "category": "argentina"
         },
         {
@@ -101,18 +605,25 @@
           "category": "argentina"
         },
         {
-          "title": "Encuesta: los indecisos ya son la tercera fuerza de cara a las elecciones de 2027",
-          "source": "Perfil",
-          "url": "https://www.perfil.com/noticias/politica/encuesta-los-indecisos-ya-son-la-tercera-fuerza-de-cara-a-las-elecciones-de-2027.phtml",
-          "date": "2026-08-19T08:30:00+00:00",
+          "title": "Karina Milei condiciona los acuerdos electorales a la reforma política y presiona: \"Estás adentro o estás afuera\"",
+          "source": "Clarin.com",
+          "url": "https://www.clarin.com/politica/karina-milei-condiciona-acuerdos-electorales-reforma-politica-presiona-adentro-afuera_0_Gk7T5bBKK0.html",
+          "date": "2026-08-19T09:00:06+00:00",
           "category": "argentina"
         },
         {
-          "title": "Kult: Magyar Péter: Cserhalmi György kapja a Magyar Érdemrend nagykeresztjét",
-          "source": "| hvg.hu",
-          "url": "https://hvg.hu/kultura/20260819_cserhalmi-gyorgy-kapja-iden-a-magyar-erdemrend-nagykeresztjet",
-          "date": "2026-08-19T08:11:16+00:00",
-          "category": "hungary"
+          "title": "Tras la quietud de la gestión, el anticipado escenario electoral copa la agenda del Gobierno",
+          "source": "Agencia Noticias Argentinas",
+          "url": "https://noticiasargentinas.com/politica/tras-la-quietud-de-la-gestion--el-anticipado-escenario-electoral-copa-la-agenda-del-gobierno_a6a84904cdfee7bc69e4f8ae8",
+          "date": "2026-08-19T09:00:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Iran Considers Strikes on U.S. Military Targets in Europe if Donald Trump Escalates War, Threatening to Expand Conflict",
+          "source": "The National Herald",
+          "url": "https://www.thenationalherald.com/iran-considers-strikes-on-u-s-military-targets-in-europe-if-donald-trump-escalates-war-threatening-to-expand-conflict/",
+          "date": "2026-08-19T07:38:40+00:00",
+          "category": "usa"
         },
         {
           "title": "Milei multiplica sus apariciones públicas en medio de especulaciones y con la agenda 2027 en el horizonte",
@@ -129,10 +640,10 @@
           "category": "argentina"
         },
         {
-          "title": "Visita papal. Karina Milei y la Iglesia pulen los detalles de la llegada de León XIV.",
-          "source": "puntoseguido.com.ar",
-          "url": "https://puntoseguido.com.ar/info/visita-papal-karina-milei-y-la-iglesia-pulen-los-detalles-de-la-llegada-de-leon-xiv/",
-          "date": "2026-08-19T03:50:41+00:00",
+          "title": "Una denuncia de \"tentativa de feminicidio\" en Bolivia complica al exasesor de Javier Milei",
+          "source": "Infobae",
+          "url": "https://www.infobae.com/america/agencias/2026/08/19/una-denuncia-de-tentativa-de-feminicidio-en-bolivia-complica-al-exasesor-de-javier-milei/",
+          "date": "2026-08-19T04:22:28+00:00",
           "category": "argentina"
         },
         {
@@ -140,6 +651,20 @@
           "source": "El Destape",
           "url": "https://www.eldestapeweb.com/espectaculos/-el-gobierno-puede-encerrarse-en-su-burbuja-la-dura-advertencia-sobre-la-economia-202681813056",
           "date": "2026-08-19T03:49:54+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Karina Milei encabezó la primera reunión por la visita del Papa: Qué se habló y cómo será el operativo",
+          "source": "Gente de Salta",
+          "url": "https://www.gentedesalta.com/sociedad/karina-milei-encabezo-primera-reunion-visita-papa-hablo-como-sera-operativo-n11001",
+          "date": "2026-08-19T02:44:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Fernando Cerimedo, exasesor de Javier Milei, fue detenido en Bolivia por un presunto ataque a balazos",
+          "source": "La Capital",
+          "url": "https://www.lacapital.com.ar/politica/fernando-cerimedo-exasesor-javier-milei-fue-detenido-bolivia-un-presunto-ataque-balazos-n10275944.html",
+          "date": "2026-08-19T01:01:24+00:00",
           "category": "argentina"
         },
         {
@@ -157,272 +682,587 @@
           "category": "argentina"
         },
         {
-          "title": "Javier Milei festejó que: \"Al final empezó con cero\" la inflación mayorista",
-          "source": "diariopopular.com.ar",
-          "url": "https://www.diariopopular.com.ar/economia/javier-milei-festejo-que-al-final-empezo-cero-la-inflacion-mayorista-n915358",
-          "date": "2026-08-18T22:55:00+00:00",
+          "title": "Presupuesto 2027: Axel Kicillof encabeza una ofensiva para sumar obras viales y complica a Javier Milei",
+          "source": "Letra P",
+          "url": "https://www.letrap.com.ar/congreso/presupuesto-2027-axel-kicillof-encabeza-una-ofensiva-sumar-obras-viales-y-complica-javier-milei-n5425907",
+          "date": "2026-08-19T00:12:00+00:00",
           "category": "argentina"
         },
         {
-          "title": "Javier Milei firmó el decreto que repone el Día de la Raza",
-          "source": "El Ciudadano",
-          "url": "https://elciudadanoweb.com/javier-milei-firmo-el-decreto-que-repone-el-dia-de-la-raza/",
-          "date": "2026-08-18T22:36:03+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Donald Trump’s Trickle-Down Misogyny",
-          "source": "Slate Magazine",
-          "url": "https://slate.com/news-and-politics/2026/08/trump-news-kristen-holmes-cnn-reporter.html",
-          "date": "2026-08-18T22:33:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Javier Milei cerrará la cumbre de la Fundación Libertad y Progreso: fecha, oradores y detalles",
-          "source": "Crónica",
-          "url": "https://www.cronica.com.ar/politica/javier-milei-cerrara-la-cumbre-de-la-fundacion-libertad-y-progreso-fecha-oradores-y-detalles-1512/",
-          "date": "2026-08-18T22:13:11+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Javier Milei cerrará la cumbre de la Fundación Libertad y Progreso que reunirá a oradores de 15 países",
-          "source": "Infobae",
-          "url": "https://www.infobae.com/politica/2026/08/18/javier-milei-cerrara-la-cumbre-de-la-fundacion-libertad-y-progreso-que-reunira-a-oradores-de-15-paises/",
-          "date": "2026-08-18T21:59:24+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Javier Milei apuntó contra los Chachos de La Rioja y los calificó como “Plan Platita 2.0”",
-          "source": "La Gaceta",
-          "url": "https://www.lagaceta.com.ar/nota/amp/1150229/politica/javier-milei-apunto-contra-chachos-rioja-califico-como-plan-platita-20.html",
-          "date": "2026-08-18T20:51:04+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Bajo la presión del riesgo país, Javier Milei busca blindar su plan económico ante el círculo rojo",
-          "source": "rionegro.com.ar",
-          "url": "https://www.rionegro.com.ar/economia/bajo-la-presion-del-riesgo-pais-javier-milei-busca-blindar-su-plan-economico-ante-el-circulo-rojo-4688307/",
-          "date": "2026-08-18T20:44:58+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "El dato que sorprende sobre Javier Milei y los DNU: dictó 11 e igualó la cantidad de leyes que se promulgaron durante 2025",
-          "source": "FM Del Sol Pehuajo",
-          "url": "https://radiodelsolpehuajo.com.ar/articulo/2026/08/el-dato-que-sorprende-sobre-javier-milei-y-los-dnu-dicto-11-e-igualo-la-cantidad-de-leyes-que-se-promulgaron-durante-2025.php",
-          "date": "2026-08-18T20:09:44+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Javier Milei celebró la inflación mayorista de julio: “Al final empezó con cero”",
-          "source": "Cba24n",
-          "url": "https://www.cba24n.com.ar/argentina/javier-milei-celebro-la-inflacion-mayorista-de-julio---al-final-empezo-con-cero-_a6a84b636dfa5f26f78448cb6",
-          "date": "2026-08-18T20:01:56+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "El giro en la estrategia de Javier Milei para no seguir acumulando derrotas en el Congreso",
-          "source": "MDZ Online",
-          "url": "https://www.mdzol.com/politica/el-giro-la-estrategia-javier-milei-no-seguir-acumulando-derrotar-el-congreso-n1588252",
-          "date": "2026-08-18T19:49:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Far-Right Operator Arrested: Milei and Bolsonaro Strategist Suspected of Hiring Hitmen in Ex-Partner Shooting",
-          "source": "elciudadano.com",
-          "url": "https://www.elciudadano.com/en/far-right-operator-arrested-milei-and-bolsonaro-strategist-suspected-of-hiring-hitmen-in-ex-partner-shooting/08/18/",
-          "date": "2026-08-18T19:33:19+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Detenido por intentar matar a su ex: quién es Fernando Cerimedo y cuál es su vínculo con Javier Milei",
-          "source": "Lmneuquen.com",
-          "url": "https://www.lmneuquen.com/mundo/detenido-intentar-matar-su-ex-quien-es-fernando-cerimedo-y-cual-es-su-vinculo-javier-milei-n1250148",
-          "date": "2026-08-18T19:19:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Quién es Fernando Cerimedo, el estratega digital que pasó por Milei, Bolsonaro y ahora quedó detenido en Bolivia",
-          "source": "El Litoral",
-          "url": "https://www.ellitoral.com/internacionales/paso-cerimedo-bolivia-milei-bolsonaro_0_cQvllfqyqu.html",
-          "date": "2026-08-18T18:42:16+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Javier Milei prepara una nueva agenda internacional con viajes a Francia y Estados Unidos",
-          "source": "elDiarioAR.com",
-          "url": "https://www.eldiarioar.com/politica/javier-milei-prepara-nueva-agenda-internacional-viajes-francia-estados-unidos_1_13454569.html",
-          "date": "2026-08-18T18:02:09+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Javier Milei definió el relanzamiento de los \"Chachos\" como el \"Plan Platita 2.0\"",
-          "source": "BAE Negocios",
-          "url": "https://www.baenegocios.com/politica/javier-milei-definio-el-relanzamiento-de-los-chachos-como-el-plan-platita-2-0/",
-          "date": "2026-08-18T17:57:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Qué investiga la Policía de Bolivia sobre el exasesor de Javier Milei que decide mantenerlo detenido",
-          "source": "MDZ Online",
-          "url": "https://www.mdzol.com/politica/que-investiga-la-policia-bolivia-el-exasesor-javier-milei-que-decide-mantenerlo-detenido-n1588258",
-          "date": "2026-08-18T17:15:18+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Javier Milei cuestionó al gobernador de La Rioja por relanzar una cuasimoneda: “Plan platita 2.0”",
-          "source": "radiomitre.cienradios.com",
-          "url": "https://radiomitre.cienradios.com/economia/javier-milei-cuestiono-al-gobernador-de-la-rioja-por-relanzar-una-cuasimoneda-plan-platita-20/",
-          "date": "2026-08-18T16:46:14+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Dato mata relato. Myriam Bregman, ¿con la misma fórmula que Javier Milei?",
-          "source": "La Voz del Interior",
-          "url": "https://www.lavoz.com.ar/politica/myriam-bregman-misma-formula-javier-milei_0_XGzhcEfeEM.html",
-          "date": "2026-08-18T16:44:09+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Javier Milei calificó a los Chachos de La Rioja como “receta para la esclavitud”",
-          "source": "Cuestión Entrerriana",
-          "url": "https://cuestionentrerriana.com.ar/javier-milei-califico-a-los-chachos-de-la-rioja-como-receta-para-la-esclavitud/",
-          "date": "2026-08-18T16:42:43+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Karina Milei se planta y avisa que no va a apurar alianzas con los gobernadores",
-          "source": "urgente24.com",
-          "url": "https://urgente24.com/actualidad/politica/karina-milei-se-planta-y-avisa-que-no-va-apurar-alianzas-los-gobernadores-n630774",
-          "date": "2026-08-18T16:22:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "La agenda de viajes de Javier Milei para los próximos días: Francia y Estados Unidos",
-          "source": "Agencia Noticias Argentinas",
-          "url": "https://noticiasargentinas.com/politica/la-agenda-de-viajes-de-javier-milei-para-los-proximos-dias--francia-y-estados-unidos_a6a8457a2dfee7bc69e468932",
-          "date": "2026-08-18T16:12:02+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Javier Milei cruzó al gobernador de La Rioja por haber relanzado una cuasimoneda: “Plan platita 2.0″",
-          "source": "TN",
-          "url": "https://tn.com.ar/economia/2026/08/18/javier-milei-cruzo-al-gobernador-de-la-rioja-por-haber-relanzado-una-cuasimoneda-plan-platita-20/",
-          "date": "2026-08-18T15:14:56+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "El vocero presidencial aseguró que Javier Milei está “muy bien” de salud",
-          "source": "La Nación",
-          "url": "https://www.lanacion.com.ar/politica/el-vocero-presidencial-aseguro-que-javier-milei-esta-muy-bien-de-salud-nid18082026/",
-          "date": "2026-08-18T15:13:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "\"Plan Platita 2.0\" y \"cínicos\": la furiosa crítica de Javier Milei tras el relanzamiento de los \"Chachos\" en La Rioja",
-          "source": "Clarin.com",
-          "url": "https://www.clarin.com/politica/plan-platita-20-cinicos-furiosa-critica-javier-milei-relanzamiento-chachos-rioja_0_aKPGfJkRBC.html",
-          "date": "2026-08-18T14:41:54+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Quién es Fernando Cerimedo, el exasesor de Javier Milei detenido en Bolivia por el presunto ataque a una mujer",
-          "source": "MDZ Online",
-          "url": "https://www.mdzol.com/politica/quien-es-fernando-cerimedo-el-exasesor-javier-milei-detenido-bolivia-el-presunto-ataque-una-mujer-n1588066",
-          "date": "2026-08-18T14:18:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Así fue el ataque en Bolivia a la ex de Fernando Cerimedo por el que quedó detenido el exasesor de Javier Milei",
-          "source": "MDZ Online",
-          "url": "https://www.mdzol.com/politica/asi-fue-el-ataque-bolivia-la-ex-fernando-cerimedo-el-que-quedo-detenido-el-exasesor-javier-milei-n1588055",
-          "date": "2026-08-18T13:53:01+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Detienen al fundador de La Derecha Diario y exasesor de Javier Milei, Fernando Cerimedo, por un posible intento de femicidio",
-          "source": "Gente de Salta",
-          "url": "https://www.gentedesalta.com/policiales/detienen-fundador-derecha-diario-exasesor-javier-milei-fernando-cerimedo-posible-intento-femicidio-n10981",
-          "date": "2026-08-18T13:40:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Detuvieron en Bolivia a Fernando Cerimedo, exasesor de Javier Milei, por un supuesto ataque a una mujer",
-          "source": "MDZ Online",
-          "url": "https://www.mdzol.com/politica/detuvieron-bolivia-fernando-cerimedo-exasesor-javier-milei-un-supuesto-ataque-una-mujer-n1588029",
-          "date": "2026-08-18T13:19:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Quién es Fernando Cerimedo, el exasesor de Javier Milei detenido en Bolivia",
-          "source": "La Nación",
-          "url": "https://www.lanacion.com.ar/politica/quien-es-fernando-cerimedo-el-exasesor-de-javier-milei-detenido-en-bolivia-nid18082026/",
-          "date": "2026-08-18T12:50:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Javier Milei firmó el decreto que avala el regreso del “Día de la Raza”",
-          "source": "Canal 12 Web",
-          "url": "https://canal12web.com/javier-milei-firmo-el-decreto-que-avala-el-regreso-del-dia-de-la-raza/",
-          "date": "2026-08-18T12:41:39+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Javier Milei y los mercados velan las armas",
-          "source": "letrap.com.ar",
-          "url": "https://www.letrap.com.ar/economia/javier-milei-y-los-mercados-velan-las-armas-n5425888",
-          "date": "2026-08-18T12:27:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Más de 30.000 empresas cerraron en Argentina desde la llegada de Javier Milei; conozca la razón",
-          "source": "El Tiempo",
-          "url": "https://www.eltiempo.com/mundo/latinoamerica/mas-de-30-000-empresas-cerraron-en-argentina-desde-la-llegada-de-javier-milei-conozca-la-razon-3579007",
-          "date": "2026-08-18T12:23:22+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "¿Qué le pasó a Javier Milei que estuvo 9 días recluido y en silencio?",
-          "source": "Tribuna de Periodistas",
-          "url": "https://periodicotribuna.com.ar/que-le-paso-a-javier-milei-que-estuvo-9-dias-recluido-y-en-silencio/",
-          "date": "2026-08-18T12:10:48+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "El Ejecutivo oficializó tres nuevas designaciones en el gabinete nacional",
-          "source": "El Eco",
-          "url": "https://www.eleco.com.ar/politica/el-ejecutivo-oficializo-tres-nuevas-designaciones-en-el-gabinete-nacional",
-          "date": "2026-08-18T11:50:48+00:00",
+          "title": "El fuerte ataque de Javier Milei a la oposición y a sus críticos: “Son imbéciles”",
+          "source": "Mendovoz",
+          "url": "https://www.mendovoz.com/actualidad/nacionales/2026/8/18/el-fuerte-ataque-de-javier-milei-la-oposicion-sus-criticos-son-imbeciles-175311.html",
+          "date": "2026-08-18T23:58:28+00:00",
           "category": "argentina"
         }
       ],
       "first_seen": "2026-08-17T02:12:00+00:00",
-      "last_seen": "2026-08-19T13:34:11+00:00"
+      "last_seen": "2026-08-20T02:09:27+00:00"
     },
     {
       "id": "donald-trump",
       "name": "Donald Trump",
       "role": "President of the United States, Leader of the MAGA Movement",
-      "blurb": "Trump remains the defining figure of the global right-wing news cycle, with his administration's policies—ranging from tariffs and sanctions to military engagements—continuously generating controversy. His influence extends beyond U.S. borders, shaping international relations, particularly in the Middle East and with allies like Canada. Domestically, his administration's actions, such as sanctions on ICC officials and proposed environmental deregulation, have sparked legal battles and public outcry. His re-election campaign and the broader MAGA movement continue to dominate political discourse.",
+      "blurb": "Donald Trump continues to dominate the news cycle with his administration's policies, international dealings, and domestic controversies. His recent moves, such as the proposed end to the 2001 Roadless Area Conservation Rule, trade negotiations with Canada, and new strategies on Iran, have kept him at the forefront of media coverage. Additionally, his influence on the Republican Party and upcoming elections remains a significant topic of discussion.",
       "prominence": 5,
       "signals": [
-        "international posturing",
-        "policy announcements",
-        "judicial proceedings",
-        "election campaign"
+        "trade negotiations with Canada",
+        "environmental policy changes",
+        "international posturing on Iran",
+        "2026 midterm election strategies"
       ],
       "categories": [
-        "foreign policy",
-        "domestic policy",
-        "legal issues",
-        "election politics"
+        "Trade Policy",
+        "Environmental Policy",
+        "International Relations",
+        "Domestic Politics"
       ],
-      "article_count": 140,
+      "article_count": 120,
       "refs": [
         {
-          "title": "Mark Walter tipped to strike Donald Trump deal as $7.6B crisis mounts",
-          "source": "uk.finance.yahoo.com",
-          "url": "https://uk.finance.yahoo.com/news/mark-walter-tipped-strike-donald-123504242.html",
-          "date": "2026-08-19T12:35:04+00:00",
+          "title": "Trump administration moves to end 2001 Roadless Area Conservation Rule",
+          "source": "KTVZ",
+          "url": "https://ktvz.com/news/government-politics/2026/08/19/trump-administration-moves-to-end-2001-roadless-area-conservation-rule/",
+          "date": "2026-08-20T01:06:28+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump administration says it's making progress toward trade deal with Canada",
+          "source": "CBS News",
+          "url": "https://www.cbsnews.com/newyork/video/trump-administration-says-its-making-progress-toward-trade-deal-with-canada/",
+          "date": "2026-08-20T00:53:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "'ECONOMIC WARFARE': President Trump announces new Iran strategy",
+          "source": "Fox News",
+          "url": "https://www.foxnews.com/video/6403737443112",
+          "date": "2026-08-20T00:46:27+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Donald Trump proposed reviving the Keystone XL pipeline. Does Canada still want it?",
+          "source": "Financial Times",
+          "url": "https://www.ft.com/content/28a39ff4-cc0b-4a32-93d7-d5fbc8a4bcb9?syn-25a6b1a6=1",
+          "date": "2026-08-20T00:28:12+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "RFK Jr. touts Trump administration work in Dubuque visit",
+          "source": "thegazette.com",
+          "url": "https://www.thegazette.com/news/healthcare/rfk-jr-touts-trump-administration-work-in-dubuque-visit/article_a8f7d871-df3b-42e2-84c4-928f669defaf.html",
+          "date": "2026-08-20T00:00:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump administration planning to rescind 25-year-old rule protecting National Forests",
+          "source": "Central Oregon Daily",
+          "url": "https://www.centraloregondaily.com/trump-administration-planning-to-rescind-25-year-old-rule-protecting-national-forests/video_d29943df-3bfe-558f-8966-d1a02a844fc3.html",
+          "date": "2026-08-19T23:50:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Expert says just fighting against President Trump isn’t an effective campaign strategy",
+          "source": "Fox Business",
+          "url": "https://www.foxbusiness.com/video/6403732936112",
+          "date": "2026-08-19T23:06:14+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Due su tre senza seggio sicuro alle elezioni: faida nella Lega per i posti",
+          "source": "la Repubblica",
+          "url": "https://www.repubblica.it/politica/2026/08/20/news/lega_faida_candidati_elezioni_politiche-425536914/",
+          "date": "2026-08-19T23:00:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Trump administration attacks unaccompanied children right to counsel",
+          "source": "American Immigration Council",
+          "url": "https://www.americanimmigrationcouncil.org/blog/trump-administration-makes-it-harder-for-unaccompanied-children-to-navigate-the-immigration-courts-by-attacking-their-right-to-counsel/",
+          "date": "2026-08-19T22:31:11+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump administration advances plan to open national forests to development",
+          "source": "grist.org",
+          "url": "https://grist.org/regulation/trump-administration-advances-roadless-rule-national-forests/",
+          "date": "2026-08-19T22:19:39+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump administration say it's making progress on trade deal with Canada",
+          "source": "CBS News",
+          "url": "https://www.cbsnews.com/boston/video/trump-administration-say-its-making-progress-on-trade-deal-with-canada/",
+          "date": "2026-08-19T22:03:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "President Trump says he's struck a trade deal with Canada",
+          "source": "CBS News",
+          "url": "https://www.cbsnews.com/texas/video/president-trump-says-hes-struck-a-trade-deal-with-canada/",
+          "date": "2026-08-19T21:42:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Opinion | Trump’s blunt remarks offer South Korea an opportunity",
+          "source": "South China Morning Post",
+          "url": "https://www.scmp.com/opinion/asia-opinion/article/3364417/donald-trumps-blunt-remarks-offer-south-korea-opportunity",
+          "date": "2026-08-19T21:30:06+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Experts raise alarms over Census Bureau report Trump is touting on noncitizen voting",
+          "source": "NPR",
+          "url": "https://www.npr.org/2026/08/19/nx-s1-5938799/trump-census-bureau-noncitizen-voting",
+          "date": "2026-08-19T21:27:51+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "President Trump says US and Canada have a trade deal, but key terms remain unclear",
+          "source": "Chicago Tribune",
+          "url": "https://www.chicagotribune.com/2026/08/19/us-canada-trade-deal/",
+          "date": "2026-08-19T21:24:29+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump administration moves to end 2001 roadless rule on national forests",
+          "source": "LiveNOW from FOX",
+          "url": "https://www.livenowfox.com/news/trump-administration-moves-end-2001-roadless-rule-national-forests",
+          "date": "2026-08-19T21:23:10+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump administration reaches last-minute deal to delay 50% tariffs on Canadian imports",
+          "source": "CBS News",
+          "url": "https://www.cbsnews.com/chicago/video/trump-administration-reaches-last-minute-deal-to-delay-50-tariffs-on-canadian-imports/",
+          "date": "2026-08-19T21:17:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Anne Arundel schools updates gender identity regulation following Trump administration threats",
+          "source": "The Baltimore Banner",
+          "url": "https://www.thebanner.com/education/k-12-schools/anne-arundel-schools-transgender-policy-trump-lawsuit-5VRPSSTXDJDSFP7KB2ENDS6O2A/",
+          "date": "2026-08-19T21:08:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "AG Brenna Bird defends state’s decision to give Trump administration Iowa voter information",
+          "source": "Little Village Magazine",
+          "url": "https://littlevillagemag.com/bird-defends-decision-to-hand-over-voter-data/",
+          "date": "2026-08-19T20:49:14+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "'This is not moving': Trump presents White House construction projects in bid for modernization",
+          "source": "The Jerusalem Post",
+          "url": "https://www.jpost.com/american-politics/article-906039",
+          "date": "2026-08-19T20:44:05+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "WATCH: Trump talks about North Korea, interest rates while hosting cryptocurrency leaders at the White House",
+          "source": "PBS",
+          "url": "https://www.pbs.org/newshour/politics/watch-trump-talks-about-north-korea-interest-rates-while-hosting-cryptocurrency-leaders-at-the-white-house",
+          "date": "2026-08-19T20:39:50+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Who is Natalie Harp? See photos of President Trump's assistant - The Florida Times-Union",
+          "source": "",
+          "url": "https://www.jacksonville.com/picture-gallery/news/nation-world/2026/08/19/natalie-harp-photos-preident-trump-aide-personal-assistant/91376747007/",
+          "date": "2026-08-19T20:21:45+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "JD Vance takes on Marine Corps obstacle course in new video",
+          "source": "Yahoo",
+          "url": "https://www.yahoo.com/news/politics/articles/jd-vance-takes-marine-corps-201510149.html",
+          "date": "2026-08-19T20:15:10+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump says US and Canada have a trade deal, but key terms remain unclear",
+          "source": "Boston Herald",
+          "url": "https://www.bostonherald.com/2026/08/19/us-canada-tariffs-what-to-know/",
+          "date": "2026-08-19T20:10:28+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump plays White House tour guide to show off work on his helipad and ballroom",
+          "source": "Hartford Courant",
+          "url": "https://www.courant.com/2026/08/19/trump-white-house-construction/",
+          "date": "2026-08-19T19:59:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Donald Trump’s Freedom 250 Grand Prix plan to ‘waste taxpayer money’ sparks outrage",
+          "source": "yahoo.com",
+          "url": "https://www.yahoo.com/news/politics/articles/donald-trump-freedom-250-grand-195000484.html",
+          "date": "2026-08-19T19:50:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "President Trump to Nominate Heidi Overton as FDA Commissioner | PharmExec",
+          "source": "Pharmaceutical Executive",
+          "url": "https://www.pharmexec.com/view/daily-trump-nominate-heidi-overton-fda-commissioner",
+          "date": "2026-08-19T19:36:54+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "President Donald Trump picks Dr. Heidi Overton, a top White House aide, to lead the Food and Drug Administration",
+          "source": "Chicago Tribune",
+          "url": "https://www.chicagotribune.com/2026/08/19/trump-picks-dr-heidi-overton-fda/",
+          "date": "2026-08-19T19:18:27+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Donald Trump told US Congress to provide $206 million for Gaza peacekeeping force",
+          "source": "The Jerusalem Post",
+          "url": "https://www.jpost.com/israel-news/article-906036",
+          "date": "2026-08-19T19:16:06+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "VIDEO: President Trump pauses tariffs on Canadian goods",
+          "source": "KIRO 7 News Seattle",
+          "url": "https://www.kiro7.com/news/local/video-president-trump-pauses-tariffs-canadian-goods/f6de6e44-a50f-4449-bc60-6649c74b5cdd/",
+          "date": "2026-08-19T19:06:37+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump administration moves ahead to end roadless rule on national forests, including Oregon",
+          "source": "KPTV",
+          "url": "https://www.kptv.com/2026/08/19/trump-administration-moves-ahead-end-roadless-rule-national-forests-including-oregon/",
+          "date": "2026-08-19T19:06:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "President Trump Delivers Remarks with Technology Leaders",
+          "source": "wknofm.org",
+          "url": "https://www.wknofm.org/2026-08-19/president-trump-delivers-remarks-with-technology-leaders?_amp=true",
+          "date": "2026-08-19T18:58:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "President Trump votes by mail — despite his push to restrict it",
+          "source": "KCRA",
+          "url": "https://www.kcra.com/article/president-trump-votes-by-mail/73476443",
+          "date": "2026-08-19T18:58:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Tulsi Gabbard Shares Criticism of Flock Cameras",
+          "source": "Yahoo",
+          "url": "https://www.yahoo.com/news/politics/articles/tulsi-gabbard-shares-criticism-flock-185319640.html",
+          "date": "2026-08-19T18:53:19+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump nominates Heidi Overton to lead US Food and Drug Administration",
+          "source": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/8/19/trump-nominates-heidi-overton-to-lead-us-food-and-drug-administration",
+          "date": "2026-08-19T18:51:54+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Coalition sues Trump administration over limits on foreign student visa stays",
+          "source": "EL PAÍS English",
+          "url": "https://english.elpais.com/usa/2026-08-19/coalition-sues-trump-administration-over-limits-on-foreign-student-visa-stays.html",
+          "date": "2026-08-19T18:42:50+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "USS Abraham Lincoln problems include reports of low morale, shortages. What to know amid long deployment",
+          "source": "The Tennessean",
+          "url": "https://www.tennessean.com/story/news/politics/2026/08/19/uss-abraham-lincoln-problems-pete-hegseth-response/91368454007/",
+          "date": "2026-08-19T18:31:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "An alarmed bond market gets the Trump administration to act again | National News | 2news.com",
+          "source": "KTVN",
+          "url": "http://www.ktvn.com/news/national/an-alarmed-bond-market-gets-the-trump-administration-to-act-again/article_41aa9a9e-f324-597a-874c-425438c370be.html",
+          "date": "2026-08-19T18:30:12+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "An alarmed bond market gets the Trump administration to act again",
+          "source": "WSLS",
+          "url": "https://www.wsls.com/news/politics/2026/08/19/an-alarmed-bond-market-gets-the-trump-administration-to-act-again/",
+          "date": "2026-08-19T18:30:11+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Kennedy Center agrees not to restore Trump’s name before September 8",
+          "source": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/8/19/kennedy-center-board-says-it-wont-try-to-immediately-restore-trumps-name",
+          "date": "2026-08-19T18:07:54+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump DOJ Urges Supreme Court To Greenlight White House Ballroom Construction",
+          "source": "forbes.com",
+          "url": "https://www.forbes.com/sites/alisondurkee/2026/08/19/trump-administration-says-it-doesnt-matter-if-people-think-white-house-ballroom-is-ugly/",
+          "date": "2026-08-19T17:59:12+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "President Trump comments on Kim Jong Un, tariffs, Iran, oil | Videos",
+          "source": "KTVN",
+          "url": "https://www.2news.com/video/president-trump-comments-on-kim-jong-un-tariffs-iran-oil/video_770f240e-abcf-4898-b37d-bc1c6c9d7af4.html",
+          "date": "2026-08-19T17:55:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "President Trump Pauses 50% Tariff on Canadian Goods",
+          "source": "Advanced Manufacturing",
+          "url": "https://www.advancedmanufacturing.org/news-desk/president-trump-pauses-50-tariff-on-canadian-goods/article_479e29f1-f5dd-4797-b408-fcda6c4e6c9a.html",
+          "date": "2026-08-19T17:50:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Marco Rubio is right. Dismantle the ICC | Opinion",
+          "source": "AOL.com",
+          "url": "https://www.aol.com/articles/marco-rubio-dismantle-icc-opinion-172532000.html",
+          "date": "2026-08-19T17:48:47+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "'He has 57 powerful nuclear weapons': Trump says he will meet North Korea's Kim Jong Un",
+          "source": "The Jerusalem Post",
+          "url": "https://www.jpost.com/international/article-906033",
+          "date": "2026-08-19T17:46:44+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump picks White House adviser Overton to head FDA",
+          "source": "Roll Call",
+          "url": "https://rollcall.com/2026/08/19/trump-picks-white-house-adviser-overton-to-head-fda/",
+          "date": "2026-08-19T17:25:32+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "President Trump Delivers Remarks, Aug. 19, 2026",
+          "source": "The White House (.gov)",
+          "url": "https://www.whitehouse.gov/videos/president-trump-delivers-remarks-aug-19-2026/",
+          "date": "2026-08-19T17:21:58+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "President Trump unveils White House upgrades, says construction is ahead of schedule",
+          "source": "Fox News",
+          "url": "https://www.foxnews.com/video/6403716174112",
+          "date": "2026-08-19T17:18:49+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Jimmy Kimmel turns Donald Trump attacks into Emmy campaign",
+          "source": "USA Today",
+          "url": "https://www.usatoday.com/story/entertainment/tv/2026/08/19/jimmy-kimmel-donald-trump-emmy-campaign/91370411007/",
+          "date": "2026-08-19T17:14:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "US and Canada reach ‘very fair’ trade agreement, Trump says",
+          "source": "Al Jazeera",
+          "url": "https://www.aljazeera.com/economy/2026/8/19/us-and-canada-reach-very-fair-trade-agreement-trump-says",
+          "date": "2026-08-19T17:01:39+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "President Trump delivers remarks with technology leaders at the White House: LIVE",
+          "source": "Central Oregon Daily",
+          "url": "https://www.centraloregondaily.com/news/nation-world/president-trump-delivers-remarks-with-technology-leaders-at-the-white-house-live/video_f2151dd6-75a5-5889-941c-f184e7c479b3.html",
+          "date": "2026-08-19T17:01:16+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump administration moves to end rule protecting areas within National Forests",
+          "source": "WDIO.com",
+          "url": "https://www.wdio.com/top-stories/trump-administration-moves-to-end-rule-protecting-areas-within-national-forests/",
+          "date": "2026-08-19T17:00:39+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "President Trump To Host Crypto Execs At White House",
+          "source": "Bitcoin Magazine",
+          "url": "https://bitcoinmagazine.com/news/trump-to-host-crypto-execs",
+          "date": "2026-08-19T16:58:03+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Unhinged White House response shows senator’s ‘Natalie’ barb struck a nerve",
+          "source": "The Guardian",
+          "url": "https://www.theguardian.com/us-news/2026/aug/19/trump-white-house-attacks",
+          "date": "2026-08-19T16:56:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "U.S. Delays Tariffs On $20 Billion Worth Of Canadian Imports Including Hockey Sticks",
+          "source": "kpq.com",
+          "url": "https://kpq.com/ixp/1144/p/trump-delays-tariffs-canada/",
+          "date": "2026-08-19T16:30:50+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Erfurt: AfD stellt zweiten Misstrauensantrag gegen Mario Voigt im Landtag",
+          "source": "Ostdeutsche Allgemeine",
+          "url": "https://ostdeutscheallgemeine.com/article/erfurt-afd-stellt-zweiten-misstrauensantrag-gegen-mario-voigt-im-landtag-10310076",
+          "date": "2026-08-19T16:27:08+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Trump’s endorsement record takes a hit at the end of primary season",
+          "source": "NBC News",
+          "url": "https://www.nbcnews.com/politics/2026-election/trumps-endorsement-record-takes-hit-end-primary-season-rcna593351",
+          "date": "2026-08-19T16:25:29+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Is Donald Trump Good for the Korean Peninsula?",
+          "source": "Foreign Policy in Focus",
+          "url": "https://fpif.org/is-donald-trump-good-for-the-korean-peninsula/",
+          "date": "2026-08-19T16:06:44+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "U.S. President Trump Discusses Canada-U.S. Trade Talks – August 19, 2026",
+          "source": "CPAC",
+          "url": "https://www.cpac.ca/headline-politics/episode/us-president-trump-discusses-canada-us-trade-talks--august-19-2026?id=f3b8b2cd-9c88-406e-a6d2-7827d2730db6",
+          "date": "2026-08-19T16:02:54+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump says he expects to meet again with North Korea's Kim Jong Un​ this year",
+          "source": "CBS News",
+          "url": "https://www.cbsnews.com/news/trump-kim-jong-un-north-korea-meeting-nuclear-weapons/",
+          "date": "2026-08-19T15:57:04+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "President Trump: We have a deal with Canada",
+          "source": "CNBC",
+          "url": "https://www.cnbc.com/video/2026/08/19/president-trump-we-have-a-deal-with-canada.html",
+          "date": "2026-08-19T15:54:05+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump Is Trying to Pretend He Didn’t Endorse Loser Cory Mills",
+          "source": "The New Republic",
+          "url": "https://newrepublic.com/post/214518/trump-pretend-didnt-endorse-loser-cory-mills",
+          "date": "2026-08-19T15:53:34+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump pauses new tariffs on Canada for three days, saying deal close",
+          "source": "BBC",
+          "url": "https://www.bbc.com/news/articles/cy9wz79ze29o",
+          "date": "2026-08-19T15:47:31+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "President Trump gives preview of White House construction",
+          "source": "Central Oregon Daily",
+          "url": "https://www.centraloregondaily.com/news/nation-world/president-trump-gives-preview-of-white-house-construction/video_56188a36-242f-516d-89be-b34b77516d3a.html",
+          "date": "2026-08-19T15:29:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Hegseth Covered Up the Real Reason the USS Lincoln Wasn’t Resupplied",
+          "source": "The New Republic",
+          "url": "https://newrepublic.com/post/214510/hegseth-uss-lincoln-iran-war-base-destroyed",
+          "date": "2026-08-19T15:03:06+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "President Trump is reviving American manufacturing, and Texas is benefiting",
+          "source": "fbherald.com",
+          "url": "https://www.fbherald.com/opinion/article_4e4bf352-7979-45c5-9fee-6d93aa43df37.html",
+          "date": "2026-08-19T15:03:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Vice President JD Vance to return to his hometown to speak at Middletown plant",
+          "source": "fox23.com",
+          "url": "https://www.fox23.com/news/nation-world/vice-president-jd-vance-speak-middletown-plant-cleveland-cliffs-economic-ak-steel-modernization-construction-jobs-cincinnati",
+          "date": "2026-08-19T14:37:29+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Liberia will welcome 1,200 third-country deportees under Trump administration agreement",
+          "source": "KATU",
+          "url": "https://katu.com/news/nation-world/liberia-will-welcome-1200-third-country-deportees-under-trump-administration-agreement-deportation-immigration-illegal-migrantas-west-africa?teaserSource=databricks",
+          "date": "2026-08-19T14:29:14+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump announces temporary pause on new Canada tariffs",
+          "source": "abcnews.com",
+          "url": "https://abcnews.com/International/trump-announces-temporary-pause-new-canada-tariffs/story?id=135759598",
+          "date": "2026-08-19T14:20:50+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Donald Trump to meet with cryptocurrency executives at White House",
+          "source": "Fox Business",
+          "url": "https://www.foxbusiness.com/video/6403709805112",
+          "date": "2026-08-19T14:14:32+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "President Trump Set to Nominate Heidi Overton as FDA Commissioner",
+          "source": "Pharmaceutical Executive",
+          "url": "https://www.pharmexec.com/view/trump-nominate-heidi-overton-fda-commissioner",
+          "date": "2026-08-19T14:12:09+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "President Trump To Fundraise In Houston Next Week",
+          "source": "NewsRadio 740 KTRH",
+          "url": "https://ktrh.iheart.com/featured/houston-texas-news/content/2026-08-18-president-trump-to-fundraise-in-houston-next-week/",
+          "date": "2026-08-19T14:09:26+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "‘Flushing a Whole Bunch of Money Down the Toilet’ — President Donald Trump’s Sporting Events Lost $90M This Year",
+          "source": "Yahoo Finance",
+          "url": "https://finance.yahoo.com/media-advertising/articles/flushing-whole-bunch-money-down-140748687.html",
+          "date": "2026-08-19T14:07:48+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Donald Trump Reaffirms Plan to Treat Veterans With Psychedelic Drugs",
+          "source": "Military.com",
+          "url": "https://www.military.com/donald-trump-reaffirms-plan-to-treat-veterans-with-psychadelic-drugs",
+          "date": "2026-08-19T14:07:06+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "President Trump pauses Canada tariffs for 3 days",
+          "source": "Furniture Today",
+          "url": "https://www.furnituretoday.com/tariffs/president-trump-pauses-canada-tariffs-for-3-days/",
+          "date": "2026-08-19T14:03:37+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Russia places Robert F. Kennedy Jr.’s son, who fought in Ukraine, on wanted list",
+          "source": "ProtoThema English",
+          "url": "https://en.protothema.gr/2026/08/19/russia-places-robert-f-kennedy-jr-s-son-who-fought-in-ukraine-on-wanted-list/",
+          "date": "2026-08-19T14:01:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump Administration Postpones Tariffs on Canada for 3 Days",
+          "source": "members.asicentral.com",
+          "url": "https://members.asicentral.com/news/industry-news/august-2026/trump-administration-postpones-tariffs-on-canada-for-3-days/",
+          "date": "2026-08-19T13:54:09+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump doubles down on threat to claim the Strait of Hormuz",
+          "source": "KFVS12",
+          "url": "https://www.kfvs12.com/2026/08/19/trump-doubles-down-threat-claim-strait-hormuz/",
+          "date": "2026-08-19T12:34:00+00:00",
           "category": "usa"
         },
         {
@@ -433,10 +1273,10 @@
           "category": "usa"
         },
         {
-          "title": "Natalie Harp and Donald Trump: a timeline of their relationship",
-          "source": "Yahoo",
-          "url": "https://www.yahoo.com/news/politics/articles/natalie-harp-donald-trump-timeline-113700621.html",
-          "date": "2026-08-19T11:37:00+00:00",
+          "title": "Europe should wish Marco Rubio a bright future",
+          "source": "Financial Times",
+          "url": "https://www.ft.com/content/763bf6a1-31de-4c6a-9591-963440f0562b?syn-25a6b1a6=1",
+          "date": "2026-08-19T11:20:13+00:00",
           "category": "usa"
         },
         {
@@ -454,10 +1294,38 @@
           "category": "usa"
         },
         {
+          "title": "UK ‘open to discussing’ digital services tax with Trump administration",
+          "source": "politico.eu",
+          "url": "https://www.politico.eu/article/uk-open-to-discussing-digital-services-tax-with-trump-administration/",
+          "date": "2026-08-19T11:15:00+00:00",
+          "category": "usa"
+        },
+        {
           "title": "Trump administration sanctions sitting president of the International Criminal Court for 'abuses of power'",
           "source": "Fox News",
           "url": "https://www.foxnews.com/us/trump-administration-sanctions-sitting-president-international-criminal-court-abuses-power",
           "date": "2026-08-19T11:15:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Mexico outraged as Trump administration deports Mexican migrants to other countries",
+          "source": "CBS News",
+          "url": "https://www.cbsnews.com/video/mexico-angered-as-trump-administration-deports-mexican-migrants-to-other-countries/",
+          "date": "2026-08-19T11:14:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump administration moves to allow logging in 62,000 acres of Superior National Forest",
+          "source": "Duluth News Tribune",
+          "url": "https://www.duluthnewstribune.com/news/local/trump-administration-moves-to-allow-logging-in-62-000-acres-of-superior-national-forest",
+          "date": "2026-08-19T11:01:19+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "A capital in chaos: Donald Trump, Iran, and the dysfunction in Washington",
+          "source": "The Jerusalem Post",
+          "url": "https://www.jpost.com/opinion/article-905849",
+          "date": "2026-08-19T11:00:00+00:00",
           "category": "usa"
         },
         {
@@ -468,23 +1336,30 @@
           "category": "usa"
         },
         {
-          "title": "Disney fights back: ABC sues Trump administration over threatened broadcast licences",
-          "source": "Yahoo News Singapore",
-          "url": "https://sg.news.yahoo.com/disney-fights-back-abc-sues-100350430.html",
-          "date": "2026-08-19T10:03:50+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Senators Criticize Trump Administration’s Demands to Access Health Data as a Condition for Lifesaving Aid",
-          "source": "ProPublica",
-          "url": "https://www.propublica.org/article/senators-letter-health-data-africa-humanitarian-aid",
+          "title": "President Trump Says Naval Blockade Remains as Iran Talks Cease",
+          "source": "The Presidential Prayer Team",
+          "url": "https://www.presidentialprayerteam.org/2026/08/19/president-trump-says-naval-blockade-remains-as-iran-talks-cease/",
           "date": "2026-08-19T10:00:00+00:00",
           "category": "usa"
         },
         {
-          "title": "President Trump Says Naval Blockade Remains as Iran Talks Cease",
-          "source": "The Presidential Prayer Team",
-          "url": "https://www.presidentialprayerteam.org/2026/08/19/president-trump-says-naval-blockade-remains-as-iran-talks-cease/",
+          "title": "Anxiety grips Pacific allies as Trump pulls back",
+          "source": "Los Angeles Times",
+          "url": "https://www.latimes.com/politics/story/2026-08-19/anxiety-grips-pacific-allies-as-trump-pulls-back",
+          "date": "2026-08-19T10:00:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Pete Hegseth’s effort to campaign for GOP lawmakers makes zero sense",
+          "source": "Yahoo",
+          "url": "https://www.yahoo.com/news/politics/articles/pete-hegseth-effort-campaign-gop-100000715.html",
+          "date": "2026-08-19T10:00:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "The Next Front in Trump’s War on Reproductive Health Care",
+          "source": "The New Republic",
+          "url": "https://newrepublic.com/article/214333/maha-trump-war-reproductive-healthcare",
           "date": "2026-08-19T10:00:00+00:00",
           "category": "usa"
         },
@@ -494,6 +1369,13 @@
           "url": "https://www.independent.co.uk/bulletin/news/south-korea-trump-military-drill-kim-jong-un-b3035512.html",
           "date": "2026-08-19T09:31:00+00:00",
           "category": "usa"
+        },
+        {
+          "title": "Proponents of Solitary Confinement Attempt to Stifle Reform",
+          "source": "The American Prospect",
+          "url": "https://prospect.org/2026/08/19/proponents-of-solitary-confinement-attempt-to-stifle-reform/",
+          "date": "2026-08-19T09:30:00+00:00",
+          "category": "poland"
         },
         {
           "title": "Trump administration won’t commit to building FBI headquarters in Greenbelt",
@@ -510,17 +1392,24 @@
           "category": "usa"
         },
         {
-          "title": "Iran Considers Strikes on U.S. Military Targets in Europe if Donald Trump Escalates War, Threatening to Expand Conflict",
-          "source": "The National Herald",
-          "url": "https://www.thenationalherald.com/iran-considers-strikes-on-u-s-military-targets-in-europe-if-donald-trump-escalates-war-threatening-to-expand-conflict/",
-          "date": "2026-08-19T07:38:40+00:00",
-          "category": "usa"
-        },
-        {
           "title": "US SECRETARY OF STATE MARCO RUBIO DISCUSSES WITH UAE ON HOLDING IRAN RESPONSIBLE FOR MISSILE ATTACKS",
           "source": "news.cgtn.com",
           "url": "https://news.cgtn.com/news/2026-08-19/news-1PJEltaBFTO/p.html",
           "date": "2026-08-19T07:31:54+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Donald Trump Picks Heidi Overton to Lead FDA After Months of Turmoil",
+          "source": "Yahoo",
+          "url": "https://www.yahoo.com/news/politics/articles/donald-trump-picks-heidi-overton-052702957.html",
+          "date": "2026-08-19T05:27:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Donald Trump, Carney reach tentative tariff deal, more work remains",
+          "source": "The Jerusalem Post",
+          "url": "https://www.jpost.com/international/article-905959",
+          "date": "2026-08-19T05:16:44+00:00",
           "category": "usa"
         },
         {
@@ -545,10 +1434,38 @@
           "category": "usa"
         },
         {
+          "title": "Iran eyes military targets in Europe if Donald Trump escalates war, insiders say",
+          "source": "Financial Times",
+          "url": "https://www.ft.com/content/9ea0cde8-129e-4d88-976f-e367b7dd4d2c?syn-25a6b1a6=1",
+          "date": "2026-08-19T04:00:32+00:00",
+          "category": "usa"
+        },
+        {
           "title": "US, UAE discuss regional security, Strait of Hormuz",
           "source": "Anadolu Ajansı",
           "url": "https://www.aa.com.tr/en/us-israel-iran-war/us-uae-discuss-regional-security-strait-of-hormuz/4031163",
           "date": "2026-08-19T03:06:14+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "President Trump: US and Canada have reached last-minute deal to delay 50% tariffs on imports",
+          "source": "FOX 2 Detroit",
+          "url": "https://www.fox2detroit.com/news/president-trump-us-canada-have-reached-last-minute-deal-delay-50-tariffs-imports",
+          "date": "2026-08-19T02:56:41+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "US sanctions ICC president, senior trial lawyer in latest attack on court",
+          "source": "Awani International",
+          "url": "https://international.astroawani.com/global-news/us-sanctions-icc-president-senior-trial-lawyer-latest-attack-court",
+          "date": "2026-08-19T02:52:58+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "US, Canada reach trade deal to avert steep tariffs, Trump says",
+          "source": "Al Jazeera",
+          "url": "https://www.aljazeera.com/economy/2026/8/19/us-canada-reach-trade-deal-to-avert-steep-tariffs-trump-says",
+          "date": "2026-08-19T02:37:28+00:00",
           "category": "usa"
         },
         {
@@ -559,243 +1476,222 @@
           "category": "usa"
         },
         {
+          "title": "Slotkin presses Trump administration for commitment to keep military out of midterm elections",
+          "source": "michiganpublic.org",
+          "url": "https://www.michiganpublic.org/politics-government/2026-08-18/slotkin-presses-trump-administration-for-commitment-to-keep-military-out-of-midterm-elections",
+          "date": "2026-08-19T01:12:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Republican Voter Delivers Blunt 1 Word Message To Donald Trump",
+          "source": "Yahoo News Singapore",
+          "url": "https://sg.news.yahoo.com/republican-voter-delivers-blunt-1-005116432.html",
+          "date": "2026-08-19T00:51:00+00:00",
+          "category": "usa"
+        },
+        {
           "title": "Vice President JD Vance to return to hometown for economic speech amid tense primary season",
           "source": "FOX19 | Cincinnati",
           "url": "https://www.fox19.com/2026/08/19/vice-president-jd-vance-return-hometown-economic-speech-amid-tense-primary-season/",
           "date": "2026-08-19T00:35:00+00:00",
           "category": "usa"
-        },
-        {
-          "title": "President Trump reportedly will go on a lap of honor around the Freedom 250 Grand Prix street circuit",
-          "source": "foxnews.com",
-          "url": "https://www.foxnews.com/outkick-sports/president-trump-lap-honor-freedom-250-grand-prix-street-circuit-report",
-          "date": "2026-08-18T22:57:15+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Trump’s latest assault on public lands",
-          "source": "vox.com",
-          "url": "https://www.vox.com/the-logoff-newsletter-trump/499747/trump-administration-roadless-rule-national-forests-logging",
-          "date": "2026-08-18T22:40:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Prescription Drug Prices Drop Even Faster Than in First Trump Administration—Hospital Price Inflation Still Hot",
-          "source": "paragoninstitute.org",
-          "url": "https://paragoninstitute.org/paragon-pic/prescription-drug-prices-drop-even-faster-than-in-first-trump-administration-hospital-price-inflation-still-hot/",
-          "date": "2026-08-18T21:23:53+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Gov. Pritzker Demands Answers from Trump Administration on USS Abraham Lincoln - gov-pritzker-newsroom.prezly.com",
-          "source": "",
-          "url": "https://gov-pritzker-newsroom.prezly.com/s/5df54b29-e583-4f27-ada5-a97974088869?preview",
-          "date": "2026-08-18T20:58:30+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Trump threatened to bomb Oman because he’s unhappy with country’s deal with Iran, officials say",
-          "source": "FOX Carolina News",
-          "url": "https://www.foxcarolina.com/2026/08/18/trump-threatened-bomb-oman-because-hes-unhappy-with-countrys-deal-with-iran-officials-say/",
-          "date": "2026-08-18T20:35:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "No, Trump Didn’t Actually Save Natalie Harp’s Life",
-          "source": "newrepublic.com",
-          "url": "https://newrepublic.com/post/214488/no-trump-didnt-actually-save-natalie-harp-life",
-          "date": "2026-08-18T20:32:12+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Sen. Jon Ossoff calls President Trump a 'draft-dodging, crook president'",
-          "source": "CNN",
-          "url": "https://edition.cnn.com/2026/08/18/politics/video/jon-ossoff-president-trump-mark-kelly-digvid-vrtc",
-          "date": "2026-08-18T19:52:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Trump appears to repeatedly contradict his own top advisers on the Iran war",
-          "source": "NBC News",
-          "url": "https://www.nbcnews.com/politics/trump-administration/trump-appears-repeatedly-contradict-top-advisers-iran-war-rcna593118",
-          "date": "2026-08-18T19:38:27+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Trump administration to rescind rule protecting old growth forests",
-          "source": "The Guardian",
-          "url": "https://www.theguardian.com/us-news/2026/aug/18/trump-administration-growth-forests",
-          "date": "2026-08-18T18:53:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "President Trump Delivers the Largest Drop in Violent Crime in American History",
-          "source": "The White House (.gov)",
-          "url": "https://www.whitehouse.gov/releases/2026/08/president-trump-delivers-the-largest-drop-in-violent-crime-in-american-history/",
-          "date": "2026-08-18T18:38:45+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "U.S. quietly deporting Mexican migrants to Guatemala and Honduras, angering Mexico",
-          "source": "cbsnews.com",
-          "url": "https://www.cbsnews.com/news/us-deportations-mexican-migrants-guatemala-honduras/",
-          "date": "2026-08-18T18:07:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Donald Trump Is Losing Ground On His Strongest Issue",
-          "source": "Newsweek",
-          "url": "https://www.newsweek.com/donald-trumps-advantage-on-immigration-has-collapsed-12338209",
-          "date": "2026-08-18T17:24:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "The Trump Administration Launches a New Angle of Attack Against Trans Healthcare",
-          "source": "Mother Jones",
-          "url": "https://www.motherjones.com/politics/2026/08/trump-transgender-healthcare-hhs-gender-affirming-care-billing-intimidation-campaign/",
-          "date": "2026-08-18T16:50:59+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Trump’s capitalist government is heading toward fascism",
-          "source": "The West Volusia Beacon",
-          "url": "https://www.beacononlinenews.com/articles/opinion-letters_to_editor/trumps-capitalist-government-is-heading-toward-fascism/",
-          "date": "2026-08-18T16:45:40+00:00",
-          "category": "general"
-        },
-        {
-          "title": "President Donald Trump says US has no talks planned with Iran and other news from the Middle East",
-          "source": "Chicago Tribune",
-          "url": "https://www.chicagotribune.com/2026/08/18/trump-iran/",
-          "date": "2026-08-18T16:31:02+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Judge rules paint tests on Eisenhower Building can proceed, advancing Trump's makeover plans for now",
-          "source": "Los Angeles Times",
-          "url": "https://www.latimes.com/world-nation/story/2026-08-18/judge-rules-paint-tests-on-eisenhower-building-can-proceed-advancing-trumps-makeover-plans-for-now",
-          "date": "2026-08-18T16:14:05+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Donald Trump’s Attorney General Refuses To Pledge DOJ Independence",
-          "source": "Yahoo",
-          "url": "https://www.yahoo.com/news/politics/articles/donald-trump-attorney-general-refuses-154914051.html",
-          "date": "2026-08-18T15:49:14+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Trump administration sees record number of ultra-rich: 57 have fortunes exceeding 100 million",
-          "source": "Il Sole 24 ORE",
-          "url": "https://en.ilsole24ore.com/art/trumps-administration-has-a-record-number-of-ultra-wealthy-individuals-57-have-net-worths-in-excess-of-100-million-AJhZs2o",
-          "date": "2026-08-18T15:31:04+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Report: Trump administration has record number of ultra-wealthy officials",
-          "source": "NBC Los Angeles",
-          "url": "https://www.nbclosangeles.com/video/news/national-international/trump-administration-wealthy-officials-report-public-citizen/3930787/",
-          "date": "2026-08-18T15:16:04+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Trump says people who oppose White House ballroom are ‘very disloyal to our country’",
-          "source": "WWNY",
-          "url": "https://www.wwnytv.com/2026/08/18/trump-says-people-who-oppose-white-house-ballroom-are-very-disloyal-our-country/",
-          "date": "2026-08-18T14:49:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Quebec separatist leader says no independence referendum until President Donald Trump leaves office",
-          "source": "The Journal Gazette",
-          "url": "https://www.journalgazette.net/news/national/quebec-separatist-leader-says-no-independence-referendum-until-president-donald-trump-leaves-office/article_bd47e707-3ddc-5d30-bf29-9a444d3c0c71.html",
-          "date": "2026-08-18T14:24:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Trump met with 16-year-old lifeguard whose dramatic ocean rescue was caught on camera",
-          "source": "WBTV",
-          "url": "https://www.wbtv.com/2026/08/18/trump-met-with-16-year-old-lifeguard-whose-dramatic-ocean-rescue-was-caught-camera/",
-          "date": "2026-08-18T14:04:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Donald Trump Lashes Out at ‘Milktoast’ Fox News Host Shannon Bream: ‘Her Show Is So Biased Against MAGA’",
-          "source": "Yahoo",
-          "url": "https://www.yahoo.com/entertainment/celebrity/articles/donald-trump-lashes-milktoast-fox-135057128.html",
-          "date": "2026-08-18T13:50:57+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Renaming Florida's Palm Beach airport after Donald Trump cost an estimated $5.5 million. Take a look at the changes.",
-          "source": "Business Insider",
-          "url": "https://www.businessinsider.com/donald-trump-airport-name-change-palm-beach-photos-2026-8",
-          "date": "2026-08-18T13:15:10+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Donald Trump Mocked Over ‘Travel With Natalie’ By Jon Ossoff",
-          "source": "Yahoo",
-          "url": "https://www.yahoo.com/news/politics/articles/donald-trump-mocked-over-travel-131259985.html",
-          "date": "2026-08-18T13:12:59+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Donald Trump: Strait of Hormuz is new US territory",
-          "source": "The Jerusalem Post",
-          "url": "https://www.jpost.com/middle-east/iran-news/article-905890",
-          "date": "2026-08-18T12:26:59+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "President Trump Posts Map Labeling Strait of Hormuz ‘New US Territory’",
-          "source": "The Media Line",
-          "url": "https://themedialine.org/headlines/president-trump-posts-map-labeling-strait-of-hormuz-new-us-territory/",
-          "date": "2026-08-18T12:14:11+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "MAGA Has Changed American Style. Who Defines It Now?",
-          "source": "Vanity Fair",
-          "url": "https://www.vanityfair.com/story/editors-letter-style-issue",
-          "date": "2026-08-18T12:00:00+00:00",
-          "category": "usa"
         }
       ],
       "first_seen": "2026-08-16T02:13:23+00:00",
-      "last_seen": "2026-08-19T13:34:11+00:00"
+      "last_seen": "2026-08-20T02:09:27+00:00"
     },
     {
       "id": "matteo-salvini",
       "name": "Matteo Salvini",
       "role": "Leader of Lega, Italy",
-      "blurb": "Salvini remains a central figure in European right-wing politics, though his leadership of the Lega party is increasingly contested. Internal divisions within the party, particularly from northern leaders like Attilio Fontana and Massimiliano Romeo, have intensified, with calls for his resignation or a shift in party strategy. Salvini's focus on migration and regional autonomy continues to drive coverage, but his declining popularity and the rise of figures like Roberto Vannacci have weakened his influence. His leadership will be tested in the upcoming Pontida rally and potential electoral alliances.",
+      "blurb": "Matteo Salvini remains a central figure in Italian politics, particularly within the Lega party. His leadership is currently under scrutiny due to internal party conflicts and challenges from regional governors. Salvini's stance on issues such as migration, regional autonomy, and party unity continues to drive significant media coverage, especially as the party prepares for upcoming elections and internal leadership debates.",
       "prominence": 4,
       "signals": [
-        "leadership challenge",
-        "policy announcements",
-        "coalition negotiations",
-        "internal party disputes"
+        "internal party conflicts",
+        "leadership challenges",
+        "regional autonomy debates",
+        "migration policies"
       ],
       "categories": [
-        "domestic politics",
-        "migration policy",
-        "party dynamics"
+        "Political Leadership",
+        "Party Dynamics",
+        "Migration Policy"
       ],
       "article_count": 80,
       "refs": [
+        {
+          "title": "Lega, la fronda contro Salvini e i veleni. I fedelissimi: mano dura contro i ribelli",
+          "source": "Il Messaggero",
+          "url": "https://www.ilmessaggero.it/AMP/politica/lega_la_fronda_contro_salvini_veleni_fedelissimi_mano_dura_contro_ribelli-9715208.html",
+          "date": "2026-08-20T00:25:09+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "«Difendo la Lega di Salvini dove Nord e Sud collaborano in primis sull’Autonomia»",
+          "source": "ilmattino.it",
+          "url": "https://www.ilmattino.it/napoli/politica/difendo_la_lega_di_salvini_dove_nord_sud_collaborano_primis_sull_autonomia-9715193.html",
+          "date": "2026-08-19T23:05:04+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Gancia: “Nella Lega opportunisti e ruffiani, chi critica Salvini lo osannava”",
+          "source": "la Repubblica",
+          "url": "https://www.repubblica.it/politica/2026/08/20/news/gianna_gancia_lega_salvini_intervista-425536936/",
+          "date": "2026-08-19T23:00:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Plastici, show, gadget e simulatori: Salvini si celebra al Meeting",
+          "source": "Il Fatto Quotidiano",
+          "url": "https://www.ilfattoquotidiano.it/in-edicola/articoli/2026/08/20/plastici-show-gadget-e-simulatori-salvini-si-celebra-al-meeting/8483285/",
+          "date": "2026-08-19T22:01:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Karina Milei se pone al frente de las recorridas por la Ciudad y visitó una fábrica de muebles en Lugano",
+          "source": "clarin.com",
+          "url": "https://www.clarin.com/politica/karina-milei-pone-frente-recorridas-ciudad-visito-fabrica-muebles-lugano_0_z3463fUtYk.html",
+          "date": "2026-08-19T21:40:39+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Kid Rock promises 'a lot of music' due soon, including Christian album",
+          "source": "The Detroit News",
+          "url": "https://www.detroitnews.com/story/entertainment/music/2026/08/19/kid-rock-says-hes-readying-christian-album-has-follow-up-set-to-go/91376762007/",
+          "date": "2026-08-19T20:48:00+00:00",
+          "category": "networks"
+        },
+        {
+          "title": "La Lega a un passo dallo «strappo». Salvini: tengo unito chi vuole esserlo",
+          "source": "Corriere della Sera",
+          "url": "https://www.corriere.it/politica/26_agosto_19/la-lega-a-un-passo-dallo-strappo-salvini-tengo-unito-chi-vuole-esserlo-6c36fd84-63bb-4955-8e73-c19b63f3dxlk.shtml",
+          "date": "2026-08-19T20:06:05+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Rząd Tuska sprywatyzuje całą służbę zdrowia? Poseł PiS ostrzega",
+          "source": "Niezależna",
+          "url": "https://niezalezna.pl/polityka/tusk-sprywatyzuje-cala-sluzbe-zdrowia-posel-pis-ostrzega/577545",
+          "date": "2026-08-19T19:59:00+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Strada del Caffaro, Girelli chiede fondi per Barghe-Vestone",
+          "source": "Radio Bruno Brescia",
+          "url": "https://www.radiobrunobrescia.it/territori/valsabbia/2026/08/19/caffaro-barghe-vestone/",
+          "date": "2026-08-19T19:04:21+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "I governatori «ribelli» del Nord contro Matteo Salvini",
+          "source": "L'Adige",
+          "url": "https://www.ladige.it/cronaca/i-governatori-ribelli-del-nord-contro-matteo-salvini-oe4dfdam",
+          "date": "2026-08-19T18:36:12+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "“Law & Order: SVU ”EP hints at Christopher Meloni’s return in season 28",
+          "source": "Yahoo News UK",
+          "url": "https://uk.news.yahoo.com/law-order-svu-ep-hints-181632237.html",
+          "date": "2026-08-19T18:16:32+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "– Ikke straff bilistene igjen",
+          "source": "Oppegård Avis",
+          "url": "https://www.oavis.no/bilister-drivstoffavgifter-fremskrittspartiet/ikke-straff-bilistene-igjen/1306130",
+          "date": "2026-08-19T18:02:00+00:00",
+          "category": "norway"
+        },
+        {
+          "title": "INSÄNDARE: Sverigedemokraterna är garanten för Karlshamns sjukhus",
+          "source": "Sydöstran",
+          "url": "https://www.sydostran.se/insandare/sverigedemokraterna-ar-garanten-for-karlshamns-sjukhus/",
+          "date": "2026-08-19T17:50:08+00:00",
+          "category": "sweden"
+        },
+        {
+          "title": "Anti-Salvini e no: chi resta col segretario e chi vuole la svolta del Nord",
+          "source": "Policy Maker",
+          "url": "https://www.policymakermag.it/italia/anti-salvini-e-no-chi-resta-col-segretario-e-chi-vuole-la-svolta-del-nord/",
+          "date": "2026-08-19T17:26:15+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "FONTANIVA | DONNE E BAMBINI RUBANO IN CAFFETTERIA, MARCATO E BEDIN, LEGA: «FATTI GRAVISSIMI»",
+          "source": "RETE VENETA",
+          "url": "https://reteveneta.medianordest.it/120359/fontaniva-donne-e-bambini-rubano-in-caffetteria-marcato-e-bedin-lega-fatti-gravissimi/",
+          "date": "2026-08-19T17:08:34+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Il ministro del Turismo Mazzi: \"Col governo Meloni tanti in più gli italiani in vacanza\"",
+          "source": "San Marino Rtv",
+          "url": "https://www.sanmarinortv.sm/news/italia-c7/il-ministro-del-turismo-mazzi-col-governo-meloni-tanti-in-piu-gli-italiani-in-vacanza-a294764",
+          "date": "2026-08-19T16:27:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Sammartino: «La Lega deve restare unita, Salvini ha un progetto serio per il sud»",
+          "source": "Giornale di Sicilia",
+          "url": "https://palermo.gds.it/articoli/politica/2026/08/19/sammartino-la-lega-deve-restare-unita-salvini-ha-un-progetto-serio-per-il-sud-d1481f0a-cce5-4dfd-9f45-ed2174700dd6/",
+          "date": "2026-08-19T15:52:40+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Non solo i nordisti. L'altra grana di Salvini: FdI non vuole la sua riforma dei porti",
+          "source": "HuffPost Italia",
+          "url": "https://www.huffingtonpost.it/politica/2026/08/19/news/lega_porti-22559226/",
+          "date": "2026-08-19T15:20:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Borghi, 'nessuna spaccatura nella Lega, qualcuno fa casino e la stampa ci si butta'",
+          "source": "Quotidiano Nazionale",
+          "url": "https://www.quotidiano.net/ultimaora/borghi-nessuna-spaccatura-nella-lega-59c136a8",
+          "date": "2026-08-19T15:11:24+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Castelli attacca Salvini: \"La Lega ha danneggiato il Nord\"",
+          "source": "Il Fatto Quotidiano",
+          "url": "https://www.ilfattoquotidiano.it/2026/08/19/castelli-salvini-lega-nord-notizie/8482864/",
+          "date": "2026-08-19T14:58:52+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "La Lega si interroga sul futuro: Fontana apre al dopo-Salvini, il partito si divide",
+          "source": "lanternaweb.it",
+          "url": "https://www.lanternaweb.it/la-lega-si-interroga-sul-futuro-fontana-apre-al-dopo-salvini-il-partito-si-divide/",
+          "date": "2026-08-19T14:55:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Vox exige quitar la sanidad a los ilegales en Ceuta para frenar el colapso",
+          "source": "Libertad Digital",
+          "url": "https://www.libertaddigital.com/espana/2026-08-19/vox-exige-quitar-la-sanidad-a-los-ilegales-en-ceuta-para-frenar-el-colapso-7450006/",
+          "date": "2026-08-19T14:24:26+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Lega, il Veneto Alberto Stefani rompe il fronte dei governatori del Nord: «Salvini resti al suo posto",
+          "source": "La Piazza Web",
+          "url": "https://www.lapiazzaweb.it/news/attualita/755783/lega-il-veneto-alberto-stefani-rompe-il-fronte-dei-governatori-del-nord-salvini-resti-al-suo-posto.html",
+          "date": "2026-08-19T13:10:02+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Lite nella Lega sulla leadership di Salvini, Sammartino: \"Basta polemiche, il partito resti unito\"",
+          "source": "PalermoToday",
+          "url": "https://www.palermotoday.it/politica/lite-lega-salvini-sammartino-basta-polemiche.html",
+          "date": "2026-08-19T13:00:09+00:00",
+          "category": "italy"
+        },
         {
           "title": "\"Stop polemiche nella Lega, non temo Vannacci\", dice Sammartino",
           "source": "LiveSicilia",
           "url": "https://livesicilia.it/sammartino-basta-polemiche-interne-nella-lega-vannacci-non-lo-temiamo/",
           "date": "2026-08-19T12:42:02+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Figuccia: \"La Lega cresce nei territori, obiettivo 100 comitati entro l’anno\"",
-          "source": "Il Moderatore",
-          "url": "https://www.ilmoderatore.it/figuccia-lega-dei-territori-100-comitati-palermo/",
-          "date": "2026-08-19T12:40:31+00:00",
           "category": "italy"
         },
         {
@@ -806,13 +1702,6 @@
           "category": "italy"
         },
         {
-          "title": "Sondaggi su Salvini leader della Lega, Mannheimer: “La base è con lui, ma è diminuita molto\"",
-          "source": "LA7",
-          "url": "https://www.la7.it/laria-che-tira/articolo/sondaggi-su-salvini-leader-della-lega-mannheimer-la-base-e-con-lui-ma-e-diminuita-molto-654886",
-          "date": "2026-08-19T12:26:58+00:00",
-          "category": "italy"
-        },
-        {
           "title": "La crisi della Lega, anche Romeo attacca Salvini",
           "source": "TGLA7",
           "url": "https://tg.la7.it/politica/crisi-lega-romeo-salvini-19-08-2026-261406",
@@ -820,18 +1709,11 @@
           "category": "italy"
         },
         {
-          "title": "Gavira (Vox) se niega a aplicar medidas contra la turistificación y se plega ante la patronal: \"No podemos tocar al sector que tanta riqueza genera\"",
-          "source": "Elplural.com",
-          "url": "https://www.elplural.com/autonomias/andalucia/gavira-vox-niega-aplicar-medidas-contra-turistificacion-plega-patronal-no-podemos-tocar-sector-tanta-riqueza-genera_398331102",
-          "date": "2026-08-19T11:50:20+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "El líder de VOX Melilla y portavoz del Grupo Mixto, José Miguel Tasende, critica que el PP presente una moción propia sobre la españolidad de Ceuta y Melilla",
-          "source": "Cope Melilla",
-          "url": "http://copemelilla.com/actualidad/el-lider-de-vox-melilla-y-portavoz-del-grupo-mixto-jose-miguel-tasende-critica-que-el-pp-presente-una-mocion-propia-sobre-la-espanolidad-de-ceuta-y-melilla/219997",
-          "date": "2026-08-19T11:19:16+00:00",
-          "category": "spain"
+          "title": "Salvini e la sfida dei governatori. La Lega verso il congresso più difficile degli ultimi anni",
+          "source": "Formiche.net",
+          "url": "https://formiche.net/2026/08/salvini-governatori-lega-congresso-piu-difficile/",
+          "date": "2026-08-19T11:12:01+00:00",
+          "category": "italy"
         },
         {
           "title": "Dalle stelle alle...? La parabola di Salvini",
@@ -841,25 +1723,32 @@
           "category": "italy"
         },
         {
-          "title": "El fin de las multas a coches en La Cartuja se alarga: Vox exige a José Luis Sanz que elimine las sanciones desde enero hasta agosto",
-          "source": "El Correo de Andalucía",
-          "url": "https://www.elcorreoweb.es/sevilla/2026/08/19/multas-coches-cartuja-vox-zona-bajas-emisiones-133465106.html",
-          "date": "2026-08-19T10:30:50+00:00",
+          "title": "La Lega alla battaglia del velo",
+          "source": "LA7",
+          "url": "https://www.la7.it/laria-che-tira/video/la-lega-alla-battaglia-del-velo-19-08-2026-654866",
+          "date": "2026-08-19T10:40:58+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Lega, all’attacco anche Romeo: “La base chiede rinnovamento”",
+          "source": "il Giornale",
+          "url": "https://www.ilgiornale.it/news/interni/lega-allattacco-anche-romeo-la-base-chiede-rinnovamento/",
+          "date": "2026-08-19T10:00:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "“Vogliono fondare un’associazione? Strano, per Vannacci erano contrari”",
+          "source": "il Giornale",
+          "url": "https://www.ilgiornale.it/news/interni/vogliono-fondare-unassociazione-strano-per-vannacci-erano-contrari/",
+          "date": "2026-08-19T10:00:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Vox no desautoriza a su máximo dirigente en Bruselas sobre la soberanía de Ceuta y Melilla",
+          "source": "ecsaharaui",
+          "url": "https://ecsaharaui.com/08/2026/vox-no-desautoriza-a-su-maximo-dirigente-en-bruselas-sobre-la-soberania-de-ceuta-y-melilla/",
+          "date": "2026-08-19T09:17:58+00:00",
           "category": "spain"
-        },
-        {
-          "title": "Jüdische Gemeindepräsidentin Knobloch vergleicht AfD mit NSDAP",
-          "source": "Berliner Zeitung",
-          "url": "https://www.berliner-zeitung.de/article/charlotte-knobloch-afd-nsdap-verbotsverfahren-sachsen-anhalt-ulrich-siegmund-10308539",
-          "date": "2026-08-19T10:08:57+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Több mint 30 törvény, két alaptörvény-módosítás és számos döntés – Száznapos mérleget vont a Tisza-frakció",
-          "source": "Népszava",
-          "url": "https://nepszava.hu/3331208_tisza-frakcio-szaz-nap-merleg-torvenyhozas-dontesek-demokracia-valasztasi-igeret",
-          "date": "2026-08-19T09:35:00+00:00",
-          "category": "hungary"
         },
         {
           "title": "Il confronto nella Lega, la questione settentrionale e la politica nazionale: Fontana e Romeo alla Versiliana",
@@ -869,24 +1758,17 @@
           "category": "italy"
         },
         {
-          "title": "Tensioni nel centrodestra, Gomez: “La cartina tornasole sarà la legge elettorale”",
-          "source": "LA7",
-          "url": "https://www.la7.it/in-onda/video/tensioni-nel-centrodestra-gomez-la-cartina-tornasole-sara-la-legge-elettorale-19-08-2026-654854",
-          "date": "2026-08-19T08:14:12+00:00",
-          "category": "italy"
+          "title": "Vox estudia junto a la asociación Origen la mejora del patrimonio de Cartagena",
+          "source": "Murcia Plaza",
+          "url": "https://murciaplaza.com/murciaplaza/cartagena/vox-estudia-junto-a-la-asociacion-origen-la-mejora-del-patrimonio-de-cartagena",
+          "date": "2026-08-19T08:30:32+00:00",
+          "category": "spain"
         },
         {
-          "title": "Migranti, l’opposizione attacca: “Il sovranismo di Meloni indebolisce la Ue e isola l’Italia”",
-          "source": "la Repubblica",
-          "url": "https://www.repubblica.it/politica/2026/08/19/news/migranti_opposizione_meloni_ue_italia-425535665/",
-          "date": "2026-08-19T07:27:13+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Mit, Salvini al lavoro per ridurre il costo del trasporto pubblico locale per gli studenti",
-          "source": "Italpress",
-          "url": "https://www.italpress.com/mit-salvini-al-lavoro-per-ridurre-il-costo-del-trasporto-pubblico-locale-per-gli-studenti/",
-          "date": "2026-08-19T07:17:50+00:00",
+          "title": "Lega, Ceccardi: non si torna al secessionismo, stagione finita",
+          "source": "Askanews",
+          "url": "https://askanews.it/2026/08/19/lega-ceccardi-non-si-torna-al-secessionismo-stagione-finita/",
+          "date": "2026-08-19T07:46:24+00:00",
           "category": "italy"
         },
         {
@@ -918,6 +1800,13 @@
           "category": "italy"
         },
         {
+          "title": "Terremoto Lega, i sindaci di Veneto e Fvg chiedono la svolta",
+          "source": "il Nord Est",
+          "url": "https://www.ilnordest.it/politica/lega-nord-caso-salvini-reazioni-nordest-sindaci-chiedono-svolta-h3kuwc2n",
+          "date": "2026-08-19T05:26:54+00:00",
+          "category": "italy"
+        },
+        {
           "title": "Si infiamma il dibattito nella Lega, Romeo: \"La base vuole il rinnovamento\"",
           "source": "lapresse.it",
           "url": "https://www.lapresse.it/politica/2026/08/19/si-infiamma-il-dibattito-nella-lega-romeo-la-base-vuole-il-rinnovamento/",
@@ -925,10 +1814,17 @@
           "category": "italy"
         },
         {
-          "title": "L'ex ministro Castelli: \"Il governo penalizza il Nord. Salvini? Fontana farà da detonatore nella Lega\"",
-          "source": "BergamoNews",
-          "url": "https://www.bergamonews.it/2026/08/19/lex-ministro-castelli-il-governo-penalizza-il-nord-salvini-fontana-fara-da-detonatore-nella-lega/916003/",
-          "date": "2026-08-19T04:05:00+00:00",
+          "title": "La Lega (forse) prepara la conta. Ecco chi sta con chi in Piemonte",
+          "source": "Lo Spiffero",
+          "url": "https://lospiffero.com/ls_article.php?id=101500",
+          "date": "2026-08-19T05:00:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Lega novarese: con Attilio Fontana coltivando un sogno centrista",
+          "source": "malpensa24",
+          "url": "https://www.malpensa24.it/novara-lega-salvini-elezioni-malpensa24/",
+          "date": "2026-08-19T04:06:31+00:00",
           "category": "italy"
         },
         {
@@ -946,6 +1842,13 @@
           "category": "italy"
         },
         {
+          "title": "Salvini is digging in his heels and considering reprisals against the “rebels”",
+          "source": "Il Foglio",
+          "url": "https://www.ilfoglio.it/en/politics/2026/08/19/news/salvini-is-digging-in-his-heels-and-considering-reprisals-against-the-rebels--405116",
+          "date": "2026-08-19T04:00:00+00:00",
+          "category": "italy"
+        },
+        {
           "title": "“Calo della Lega colpa di tutti. Parliamo di temi e candidato”",
           "source": "il Giornale",
           "url": "https://www.ilgiornale.it/news/interni/calo-della-lega-colpa-di-tutti-parliamo-di-temi-e-candidato/",
@@ -953,247 +1856,667 @@
           "category": "italy"
         },
         {
-          "title": "Non c’è pace per la Lega. Salvini sceglie il silenzio. Ma la base chiede la svolta",
-          "source": "Quotidiano Nazionale",
-          "url": "https://www.quotidiano.net/politica/lega-salvini-v8uwk0w0",
-          "date": "2026-08-19T00:31:56+00:00",
+          "title": "Lega, il «settembre bollente» dei governatori: anche il presidente Fugatti inserito tra i ribelli di Salvini",
+          "source": "Il T Quotidiano",
+          "url": "https://www.iltquotidiano.it/articoli/lega-il-settembre-bollente-dei-governatori-anche-il-presidente-fugatti-inserito-tra-i-ribelli-di-salvini/",
+          "date": "2026-08-19T03:33:07+00:00",
           "category": "italy"
-        },
-        {
-          "title": "La Lega e le alternative al declino di Salvini",
-          "source": "la Repubblica",
-          "url": "https://www.repubblica.it/commenti/2026/08/19/news/il_punto_di_folli_del_19_agosto_2026-425535279/",
-          "date": "2026-08-18T22:00:00+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Fontana e la controffensiva dei salviniani, Claudio Borghi: «Parole spiacevoli, nel partito ha dato fastidio. A Pontida chi contesta Salvini rischia di essere contestato",
-          "source": "Open",
-          "url": "https://www.open.online/2026/08/18/claudio-borghi-fontana-divisioni-lega/",
-          "date": "2026-08-18T20:10:55+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Roadless Rule entirely thrown out under new Trump Administration proposal",
-          "source": "wildfiretoday.com",
-          "url": "https://wildfiretoday.com/roadless-rule-entirely-thrown-out-under-new-trump-administration-proposal/",
-          "date": "2026-08-18T18:23:16+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Lega, Salvini assediato dai big del Nord: serve rinnovamento",
-          "source": "Sky TG24",
-          "url": "https://tg24.sky.it/politica/video/2026/08/18/lega-salvini-assediato-dai-big-del-nord-serve-rinnovamento-1118484",
-          "date": "2026-08-18T18:08:08+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Matteo Salvini al centro delle tensioni nella Lega dopo l'attacco di Attilio Fontana: è scontro interno",
-          "source": "Virgilio",
-          "url": "https://www.virgilio.it/notizie/matteo-salvini-al-centro-delle-tensioni-nella-lega-dopo-l-attacco-di-attilio-fontana-e-scontro-interno-1776961",
-          "date": "2026-08-18T17:05:00+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Lega, i malumori del Nord e il libro di Romeo: «La base chiede rinnovamento»",
-          "source": "Il Messaggero",
-          "url": "https://www.ilmessaggero.it/politica/lega_salvini_malumori_libro_romeo_rinnovamento-9713183.html",
-          "date": "2026-08-18T16:26:10+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Lega, tra Salvini e Fontana: cosa sta succedendo?",
-          "source": "La Provincia Unica Tv",
-          "url": "https://www.laprovinciaunicatv.it/stories/politica/lega-tensioni-salvini-fontana-lecco-o_3931752_11/",
-          "date": "2026-08-18T16:01:08+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Bimbi coinvolti nel furto a Fontaniva, Mosco: «La Lega ha già indicato la strada»",
-          "source": "PadovaOggi",
-          "url": "https://www.padovaoggi.it/politica/fontaniva-furto-bimbi-mosco-lega-18-agosto-2026.html",
-          "date": "2026-08-18T14:57:06+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Lega, il libro di Massimiliano Romeo: ''La base del partito chiede un rinnovamento''",
-          "source": "Milano Pavia NEWS",
-          "url": "https://milanopavia.news/politica-milano/lega-il-libro-di-massimiliano-romeo-la-base-del-partito-chiede-un-rinnovamento/",
-          "date": "2026-08-18T13:46:57+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Tensioni su Salvini, Fontana e altri governatori ipotizzano cambio ai vertici della Lega",
-          "source": "Sky TG24",
-          "url": "https://tg24.sky.it/politica/2026/08/18/lega-salvini-fontana-crisi",
-          "date": "2026-08-18T12:48:08+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "„Keiner redet darüber“ – Gabriel rechnet mit der AfD ab",
-          "source": "Soester Anzeiger",
-          "url": "https://www.soester-anzeiger.de/politik/brandmauer-gescheitert-gabriels-warnung-vor-der-afd-zr-94448888.html",
-          "date": "2026-08-18T12:13:00+00:00",
-          "category": "germany"
         }
       ],
       "first_seen": "2026-08-18T02:08:03+00:00",
-      "last_seen": "2026-08-19T13:34:11+00:00"
+      "last_seen": "2026-08-20T02:09:27+00:00"
     },
     {
-      "id": "pete-hegseth",
-      "name": "Pete Hegseth",
-      "role": "Secretary of War, United States",
-      "blurb": "Hegseth has emerged as a highly controversial figure due to his dual role as a political campaigner and Pentagon chief. His recent appearances at Republican fundraisers and public events, where he has made inflammatory remarks, have drawn criticism for blurring the lines between military leadership and partisan politics. His actions have raised questions about the politicization of the U.S. military and his potential ambitions for higher office, including speculation about a 2028 presidential run.",
+      "id": "peter-magyar",
+      "name": "Péter Magyar",
+      "role": "Prime Minister of Hungary, Leader of Tisza Party",
+      "blurb": "Péter Magyar has quickly become a defining figure in Hungarian politics following his party's recent electoral success. His administration's first 100 days have been marked by efforts to recover EU funds, implement anti-corruption measures, and address economic challenges such as the water crisis affecting the Paks nuclear plant. Magyar's leadership and policy decisions are generating significant media attention both domestically and internationally.",
       "prominence": 4,
       "signals": [
-        "policy announcements",
-        "international posturing",
-        "controversial statements",
-        "political campaigning"
+        "EU fund recovery efforts",
+        "anti-corruption measures",
+        "economic policy announcements",
+        "nuclear plant water crisis management"
       ],
       "categories": [
-        "military policy",
-        "domestic politics",
-        "controversies"
+        "Economic Policy",
+        "Anti-Corruption",
+        "Energy Policy"
       ],
-      "article_count": 40,
+      "article_count": 70,
       "refs": [
         {
-          "title": "The Pentagon White Wall Under Pete Hegseth",
-          "source": "levelman.com",
-          "url": "https://www.levelman.com/the-pentagon-white-wall-under-pete-hegseth/",
-          "date": "2026-08-19T11:04:13+00:00",
+          "title": "Magyar Péter: jövő csütörtök-péntekre teljes kapacitással működhet az atomerőmű",
+          "source": "Körös Hírcentrum",
+          "url": "https://koroshircentrum.hu/2026/08/19/magyar-peter-paksi-atomeromu-teljes-kapacitas/",
+          "date": "2026-08-19T20:23:19+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Elzárja a pénzcsapot a kormány: maximálják a vezetők fizetését az állami cégeknél",
+          "source": "Portfolio.hu",
+          "url": "https://www.portfolio.hu/gazdasag/20260819/elzarja-a-penzcsapot-a-kormany-maximaljak-a-vezetok-fizeteset-az-allami-cegeknel-857398?amp",
+          "date": "2026-08-19T20:02:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Fotózni sem lehet: kizárják a sajtót a Tisza Szigetek országos találkozójáról",
+          "source": "ORIGO",
+          "url": "https://www.origo.hu/belpol/2026/08/tisza-szigetek-talalkozo-agusztus-20-margitsziget",
+          "date": "2026-08-19T20:00:46+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Magyar Péter bejelentette, hogy vasárnap éjféltől újraindíthatják a leállított paksi turbinákat",
+          "source": "pcwplus.hu",
+          "url": "https://www.pcwplus.hu/pcwlite/magyar-peter-bejelentette-hogy-vasarnap-ejfeltol-ujraindithatjak-a-leallitott-paksi-turbinakat-386817.html",
+          "date": "2026-08-19T19:34:32+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Police Arrest 22 People At Far-Right Islamophobic Rally In Michigan",
+          "source": "Yahoo News Singapore",
+          "url": "https://sg.news.yahoo.com/police-arrest-22-people-far-192317468.html",
+          "date": "2026-08-19T19:23:17+00:00",
+          "category": "general"
+        },
+        {
+          "title": "Magyar Péter: vasárnaptól újraindítják a Paksi Atomerőművet, ami jövő hét végére teljes kapacitáson működhet",
+          "source": "Kontroll",
+          "url": "https://kontroll.hu/cikk/belfold/2026/08/19/magyar-peter-vasarnaptol-ujrainditjak-paks-toebbi-turbinajat-joevo-het-vegere-teljes-kapacitason-mukoedhet-az-eromu",
+          "date": "2026-08-19T18:59:23+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "A Tisza-kormány korlátozza az állam többségi befolyása alatt álló köztulajdonú gazdasági társaságok vezetőinek és testületi tagjainak a díjazását",
+          "source": "Népszava",
+          "url": "https://nepszava.hu/3331256_allami-cegek-javadalmazas-kotlatozas-harom-komplexitasi-kategoria",
+          "date": "2026-08-19T18:54:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "PM Magyar’s first 100 days: success or failure?",
+          "source": "Daily News Hungary",
+          "url": "https://dailynewshungary.com/pm-magyar-first-100-days-success-or-failure/",
+          "date": "2026-08-19T18:25:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Magyar Péter: Az igazán nehéz munka csak ezután jön",
+          "source": "Szabad Magyar Szó",
+          "url": "https://szmsz.press/2026/08/19/magyar-peter-az-igazan-nehez-munka-csak-ezutan-jon/",
+          "date": "2026-08-19T18:19:27+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Magyar Péter: vasárnaptól elkedhetik visszakapcsolni Paks leállított turbináit",
+          "source": "Magyar Hang",
+          "url": "https://hang.hu/belfold/magyar-peter-vasarnaptol-visszakapcsolhatjak-paks-leallitott-turbinait-191569",
+          "date": "2026-08-19T18:08:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Itt van Magyar Péter jó híre",
+          "source": "Privátbankár.hu",
+          "url": "https://privatbankar.hu/cikkek/makro/itt-van-magyar-peter-jo-hire.html",
+          "date": "2026-08-19T18:06:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Magyar Péter: Nem kell lekapcsolni egyetlen üzemelő turbinát sem Pakson",
+          "source": "Népszava",
+          "url": "https://nepszava.hu/3331254_magyar-peter-paks",
+          "date": "2026-08-19T18:02:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Magyar Péter bejelentette, mikor indulhat újra a paksi atomerőmű – helyszíni videó",
+          "source": "Infostart",
+          "url": "https://infostart.hu/belfold/2026/08/19/magyar-peter-bejelentette-mikor-indulhat-ujra-a-paksi-atomeromu-helyszini-video",
+          "date": "2026-08-19T17:58:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Magyar Péter rendkívüli bejelentést tett, a paksi atomerőmű egyik turbináját sem kell lekapcsolni",
+          "source": "ORIGO",
+          "url": "https://www.origo.hu/belpol/2026/08/magyar-peter-paks-duna-vizszint-turbina",
+          "date": "2026-08-19T17:52:06+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Magyar Péter: Vasárnap éjféltől ütemezetten újraindul a Paksi Atomerőmű",
+          "source": "24.hu",
+          "url": "https://24.hu/belfold/2026/08/19/magyar-peter-paksi-atomeromu-ujrainditas-breaking/",
+          "date": "2026-08-19T17:51:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Magyar Péter Paksról: Jövő hét csütörtök-péntekre már teljes kapacitással fog üzemelni a paksi atomerőmű",
+          "source": "| hvg.hu",
+          "url": "https://hvg.hu/itthon/20260819_magyar-peter-bejelentes-paks-atomeromu-ebx",
+          "date": "2026-08-19T17:50:30+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Magyar Péter így értékelte az első száz napot",
+          "source": "24.hu",
+          "url": "https://24.hu/belfold/2026/08/19/magyar-peter-szaz-nap-ertekeles/",
+          "date": "2026-08-19T17:50:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Bejelentette Magyar Péter: vasárnap elkezdik visszakapcsolni a Paksi Atomerőmű turbináit",
+          "source": "Portfolio.hu",
+          "url": "https://www.portfolio.hu/gazdasag/20260819/bejelentette-magyar-peter-vasarnap-elkezdik-visszakapcsolni-a-paksi-atomeromu-turbinait-857386",
+          "date": "2026-08-19T17:50:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Magyar Péter: Nem áll le Paks, a jövő hét közepétől teljes kapacitással üzemelhet az atomerőmű",
+          "source": "Index.hu",
+          "url": "https://index.hu/belfold/2026/08/19/magyar-peter-bejelentes-paks-oromhir-duna-vizszint/",
+          "date": "2026-08-19T17:22:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Americans have elected only 3 Black governors. This year, 8 major party candidates are on the ballot",
+          "source": "PBS",
+          "url": "https://www.pbs.org/newshour/politics/americans-have-elected-only-3-black-governors-this-year-8-major-party-candidates-are-on-the-ballot",
+          "date": "2026-08-19T17:19:12+00:00",
+          "category": "networks"
+        },
+        {
+          "title": "Mérleget vont Magyar Péter a Tisza-kormány első száz napjáról",
+          "source": "Portfolio.hu",
+          "url": "https://www.portfolio.hu/gazdasag/20260819/merleget-vont-magyar-peter-a-tisza-kormany-elso-szaz-napjarol-857370",
+          "date": "2026-08-19T17:01:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "„Lépésről lépésre, bábról bábra” – Magyar Péter az államalapítás ünnepének előestéjén értékelte a Tisza-kormány első száz napját",
+          "source": "| hvg.hu",
+          "url": "https://hvg.hu/itthon/20260819_magyar-peter-tisza-kormany-elso-100-nap",
+          "date": "2026-08-19T16:56:49+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Rendkívüli napokon jön a parlament rendkívüli ülése, több javaslatot is tárgyalnak",
+          "source": "Portfolio.hu",
+          "url": "https://www.portfolio.hu/gazdasag/20260819/rendkivuli-napokon-jon-a-parlament-rendkivuli-ulese-tobb-javaslatot-is-targyalnak-857374?amp",
+          "date": "2026-08-19T16:52:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Tisza-számadás az első 100 napról",
+          "source": "Városi Kurír",
+          "url": "https://varosikurir.hu/tisza-szamadas-az-elso-100-naprol/",
+          "date": "2026-08-19T16:29:52+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Megérkezett Magyar Péter összegzése a kormány első száz napjáról, szerinte most kezdődik az igazán nehéz munka",
+          "source": "Index.hu",
+          "url": "https://index.hu/belfold/2026/08/19/magyar-peter-tisza-part-kormany-szaz-nap/",
+          "date": "2026-08-19T16:16:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Magyar Péter bejelentkezett: itt ellenőrizheti, mit végzett el a kormány 100 nap alatt",
+          "source": "Mfor.hu",
+          "url": "https://mfor.hu/cikkek/kozelet/magyar-peter-bejelentkezett-itt-ellenorizheti-mit-vegzett-el-a-kormany-100-nap-alatt.html",
+          "date": "2026-08-19T16:10:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Uniós pénzek, kiadáscsökkentés, átalakított közmédia – Magyar Péter mérleget vont az első száz napról",
+          "source": "Magyar Hang",
+          "url": "https://hang.hu/belfold/unios-penzek-kiadascsokkentes-atalakitott-kozmedia-magyar-peter-merleget-vont-az-elso-szaz-naprol-191567",
+          "date": "2026-08-19T15:54:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Videó: Nem sikerült hazahívnia a külföldön dolgozó magyarokat a Tisza-kormánynak",
+          "source": "HírTv",
+          "url": "https://hirtv.origo.hu/video/nem-sikerult-hazahivnia-a-kulfoldon-dolgozo-magyarokat-a-tisza-kormanynak",
+          "date": "2026-08-19T15:42:13+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Baj van a részeg tengerésszel – addig dalolt az ittas motorcsónakos, míg a rendőrök horgára akadt a Tisza-tavon",
+          "source": "HEOL",
+          "url": "https://www.heol.hu/helyi-kozelet/2026/08/ittas-hajos-akadt-horogra-a-tisza-tonal",
+          "date": "2026-08-19T15:33:06+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Hosszú a lista: pontokba szedte a Fidesz Magyar Péter és a Tisza Párt elmaradt választási ígéreteit",
+          "source": "Blikk",
+          "url": "https://www.blikk.hu/politika/magyar-politika/szamonkeres-magyar-peter-valasztasi-igeretek-fidesz-boka-janos/w1xt4qk",
+          "date": "2026-08-19T15:07:18+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Magyar Péter rendkívüli időpontra hívta össze az országgyűlést",
+          "source": "Blikk",
+          "url": "https://www.blikk.hu/politika/magyar-politika/orszaggyules-magyar-peter-rendkivuli-ules-bejelentes-parlament/8p81h60",
+          "date": "2026-08-19T14:56:33+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Hungary drops fabricated case against Ukrainian cash-in-transit officers",
+          "source": "Українська правда",
+          "url": "https://www.pravda.com.ua/eng/news/2026/08/19/8049334/",
+          "date": "2026-08-19T14:26:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Magyar Péter levelet írt Forsthoffer Ágnesnek, rendkívüli ülés jön",
+          "source": "Infostart",
+          "url": "https://infostart.hu/belfold/2026/08/19/magyar-peter-levelet-irt-forsthoffer-agnesnek-rendkivuli-ules-jon",
+          "date": "2026-08-19T14:08:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Tisza-kormány: feloszolhat a Fidesz, bulizni hív mindenkit Magyar Péter",
+          "source": "portfolio.hu",
+          "url": "https://www.portfolio.hu/gazdasag/20260819/tisza-kormany-feloszolhat-a-fidesz-bulizni-hiv-mindenkit-magyar-peter-857140",
+          "date": "2026-08-19T13:59:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Azonnali felszólítást küldött a MOHU-nak a miniszter",
+          "source": "portfolio.hu",
+          "url": "https://www.portfolio.hu/uzlet/20260819/azonnali-felszolitast-kuldott-a-mohu-nak-a-miniszter-857330?amp",
+          "date": "2026-08-19T13:59:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Trump Administration Postpones Tariffs on Canada for 3 Days",
+          "source": "members.asicentral.com",
+          "url": "https://members.asicentral.com/news/industry-news/august-2026/trump-administration-postpones-tariffs-on-canada-for-3-days/",
+          "date": "2026-08-19T13:54:09+00:00",
           "category": "usa"
         },
         {
-          "title": "Opinion | Pete Hegseth's effort to campaign for GOP lawmakers makes zero sense",
-          "source": "MS NOW",
-          "url": "https://www.ms.now/opinion/hegseth-iowa-campaign-nunn-iran-midterms",
-          "date": "2026-08-19T10:00:00+00:00",
-          "category": "usa"
+          "title": "„Mi nem vakságot fogadtunk” – sok aktivista kritikákkal készül a Tisza Szigetek országos találkozójára",
+          "source": "| hvg.hu",
+          "url": "https://hvg.hu/360/20260819_tisza-sziget-aktivistak-augusztus-20",
+          "date": "2026-08-19T13:30:00+00:00",
+          "category": "hungary"
         },
         {
-          "title": "Donald Trump Picks Heidi Overton to Lead FDA After Months of Turmoil",
-          "source": "Yahoo",
-          "url": "https://www.yahoo.com/news/politics/articles/donald-trump-picks-heidi-overton-052702957.html",
-          "date": "2026-08-19T05:27:00+00:00",
-          "category": "usa"
+          "title": "Augusztus 20. - Magyar Péter: Cserhalmi György kapja meg a Magyar Érdemrend nagykeresztjét",
+          "source": "marcaliportal.hu",
+          "url": "https://marcaliportal.hu/mti-hirek/82594-augusztus-20-magyar-peter-cserhalmi-gyorgy-kapja-meg-a-magyar-erdemrend-nagykeresztjet",
+          "date": "2026-08-19T13:20:31+00:00",
+          "category": "hungary"
         },
         {
-          "title": "Slotkin presses Trump administration for commitment to keep military out of midterm elections",
-          "source": "michiganpublic.org",
-          "url": "https://www.michiganpublic.org/politics-government/2026-08-18/slotkin-presses-trump-administration-for-commitment-to-keep-military-out-of-midterm-elections",
-          "date": "2026-08-19T01:12:00+00:00",
-          "category": "usa"
+          "title": "Magyar Péter üzenetet küldött augusztus 20. miatt minden magyarnak",
+          "source": "Portfolio.hu",
+          "url": "https://www.portfolio.hu/gazdasag/20260819/magyar-peter-uzenetet-kuldott-augusztus-20-miatt-minden-magyarnak-857312",
+          "date": "2026-08-19T13:20:00+00:00",
+          "category": "hungary"
         },
         {
-          "title": "Did Pete Hegseth break DOD rules for Zach Nunn?",
-          "source": "Iowa Starting Line",
-          "url": "https://iowastartingline.com/news/politics/hegseth-nunn-fundraiser-dod-rules/",
-          "date": "2026-08-18T22:04:31+00:00",
-          "category": "usa"
+          "title": "Tovább fogy a Tisza vize: új korlátozásokra volt szükség",
+          "source": "Agroinform",
+          "url": "https://www.agroinform.hu/amp/kornyezetvedelem/tovabb-fogy-a-tisza-vize-uj-korlatozasokra-volt-szukseg-103187-001",
+          "date": "2026-08-19T13:06:00+00:00",
+          "category": "hungary"
         },
         {
-          "title": "Pete Hegseth campaigns for Nunn, uses slurs and says troops dying is the 'cost' of fighting 'radical Islamist crazies' at Iowa State Fair",
-          "source": "Little Village Magazine",
-          "url": "https://littlevillagemag.com/pete-hegseth-zach-nunn-iowa-state-fair/",
-          "date": "2026-08-18T21:59:31+00:00",
-          "category": "usa"
+          "title": "Nagy Attila Tibor: A Tisza-kormánynak bizonyítania kell, hogy jobban teljesít az elődjénél",
+          "source": "HírTv",
+          "url": "https://hirtv.origo.hu/shorts/nagy-attila-tibor-a-tisza-kormanynak-bizonyitania-kell-hogy-jobban-teljesit-az-elodjenel",
+          "date": "2026-08-19T12:48:26+00:00",
+          "category": "hungary"
         },
         {
-          "title": "Hegseth stumps for Nunn at Iowa State Fair, promotes $1.5T defense budget",
-          "source": "Iowa Public Radio",
-          "url": "https://www.iowapublicradio.org/political-news/2026-08-18/pete-hegseth-zach-nunn-iowa-state-fair-defense-war-budget",
-          "date": "2026-08-18T20:31:00+00:00",
-          "category": "usa"
+          "title": "Videó: Nagy Attila Tibor: A Tisza-kormánynak bizonyítania kell, hogy jobban teljesít az elődjénél",
+          "source": "HírTv",
+          "url": "https://hirtv.origo.hu/video/nagy-attila-tibor-a-tisza-kormanynak-bizonyitania-kell-hogy-jobban-teljesit-az-elodjenel",
+          "date": "2026-08-19T12:46:18+00:00",
+          "category": "hungary"
         },
         {
-          "title": "Pete Hegseth Casually Tosses Out a Slur at Iowa State Fair",
-          "source": "The New Republic",
-          "url": "https://newrepublic.com/post/214484/pete-hegseth-anti-trans-slur-iowa-state-fair",
-          "date": "2026-08-18T19:02:35+00:00",
-          "category": "usa"
+          "title": "Vox pide que los inmigrantes hospitalizados en Ceuta sean deportados, salvo casos urgentes",
+          "source": "Infobae",
+          "url": "https://www.infobae.com/espana/agencias/2026/08/19/vox-pide-que-los-inmigrantes-hospitalizados-en-ceuta-sean-deportados-salvo-casos-urgentes/",
+          "date": "2026-08-19T12:25:15+00:00",
+          "category": "spain"
         },
         {
-          "title": "Pete Hegseth calls trans people a slur during speech about how military is now \"gender neutral\"",
-          "source": "LGBTQ Nation",
-          "url": "https://www.lgbtqnation.com/2026/08/pete-hegseth-calls-trans-people-a-slur-during-speech-about-how-military-is-now-gender-neutral/",
-          "date": "2026-08-18T17:30:00+00:00",
-          "category": "usa"
+          "title": "„Van egy hiperaktív miniszterelnök” – Borókai Gábor összegezte Magyar Péter első 100 napját",
+          "source": "Index.hu",
+          "url": "https://index.hu/belfold/2026/08/19/borokai-gabor-magyar-peter-tisza-kormany-elso-100-nap/",
+          "date": "2026-08-19T12:14:00+00:00",
+          "category": "hungary"
         },
         {
-          "title": "‘Resign, Resign, Resign!’: Pete Hegseth Torched By Gary Peters As USS Lincoln Crisis Plot Thickens",
-          "source": "The Times of India",
-          "url": "https://timesofindia.indiatimes.com/videos/international/resign-resign-resign-pete-hegseth-torched-by-gary-peters-as-uss-lincoln-crisis-plot-thickens/videoshow/133328366.cms",
-          "date": "2026-08-18T17:14:42+00:00",
-          "category": "usa"
+          "title": "Súlyos alkotmánybírói kritikát kapott a Tisza Alaptörvény-módosítása",
+          "source": "Infostart",
+          "url": "https://infostart.hu/belfold/2026/08/19/sulyos-alkotmanybiroi-kritikat-kapott-a-tisza-alaptorveny-modositasa",
+          "date": "2026-08-19T12:08:00+00:00",
+          "category": "hungary"
         },
         {
-          "title": "Does Pete Hegseth have presidential delusions?",
-          "source": "Daily Kos",
-          "url": "https://www.dailykos.com/stories/2026/8/18/800085982/news/does-pete-hegseth-have-presidential-delusions/",
-          "date": "2026-08-18T16:30:00+00:00",
-          "category": "usa"
+          "title": "More Than 30 Laws and Two Constitutional Amendments in Tisza Majority’s First 100 Days",
+          "source": "Hungarian Conservative",
+          "url": "https://www.hungarianconservative.com/articles/current/tisza-majority-first-100-days-parliament/",
+          "date": "2026-08-19T12:02:30+00:00",
+          "category": "hungary"
         },
         {
-          "title": "US Defence Secretary Pete Hegseth uses anti-trans slur in Iowa speech",
-          "source": "PinkNews",
-          "url": "https://www.thepinknews.com/2026/08/18/pete-hegseth-iowa-state-fair-2026/",
-          "date": "2026-08-18T15:35:21+00:00",
-          "category": "usa"
+          "title": "„Mindenkinek össze kell szoknia” – mérlegen a Tisza-kormány első 100 napja",
+          "source": "RTL.hu",
+          "url": "https://rtl.hu/reggeli/2026/08/19/tisza-kormany-elso-szaz-nap-galgoczi-eszter",
+          "date": "2026-08-19T12:00:00+00:00",
+          "category": "hungary"
         },
         {
-          "title": "Karol Nawrocki „łowi” poparcie. Wielka impreza i afront wobec PiS",
-          "source": "Wprost",
-          "url": "https://www.wprost.pl/kraj/12417624/karol-nawrocki-lowi-poparcie-wielka-impreza-i-afront-wobec-pis.html",
-          "date": "2026-08-18T14:44:00+00:00",
-          "category": "poland"
+          "title": "Nagy hajszát hozott a Tisza első száz napja, és jövőre derülhet ki, mit is ígér valójában az új kormány a gazdaságnak",
+          "source": "Telex",
+          "url": "https://telex.hu/gazdasag/2026/08/19/tisza-kormany-gazdasag-elso-100-nap-igeretek-inflacio-koltsegvetes-piaci-varakozasok-nemeth-david-elemzo",
+          "date": "2026-08-19T11:26:32+00:00",
+          "category": "hungary"
         },
         {
-          "title": "Pete Hegseth Orders Military Blockade Of Woman Attempting To Walk Away From Him",
-          "source": "The Onion",
-          "url": "https://theonion.com/pete-hegseth-orders-military-blockade-of-woman-attempting-to-walk-away-from-him/",
-          "date": "2026-08-18T13:59:29+00:00",
-          "category": "usa"
+          "title": "Could Hungarians directly elect a much stronger president next year? This is what one of Tisza’s strongmen now says",
+          "source": "Daily News Hungary",
+          "url": "https://dailynewshungary.com/new-president-direct-election-strong-powers/",
+          "date": "2026-08-19T11:04:00+00:00",
+          "category": "hungary"
         },
         {
-          "title": "Kennedy’s quiet hunt for autism culprits stalls as Trump orders baseless changes to childhood shots - Lake County Record-Bee",
-          "source": "",
-          "url": "https://www.record-bee.com/2026/08/18/kennedys-quiet-hunt-for-autism-culprits-stalls-as-trump-orders-baseless-changes-to-childhood-shots/",
-          "date": "2026-08-18T13:32:35+00:00",
-          "category": "usa"
+          "title": "Magyar Péter már mostanra többször szólalt fel a parlamentben, mint ahányszor Antall József tette",
+          "source": "| hvg.hu",
+          "url": "https://hvg.hu/360/20260819_premium-hirlevelek-adatbanyasz-parlament-miniszterelnok-felszolalas-magyar-orban-gyurcsany-antall-statisztika",
+          "date": "2026-08-19T10:30:00+00:00",
+          "category": "hungary"
         },
         {
-          "title": "Attorney General Nessel sues Trump administration over Medicaid work requirements, MDHHS offers response",
-          "source": "East Village Magazine",
-          "url": "https://www.eastvillagemagazine.org/2026/08/18/attorney-general-nessel-sues-trump-administration-over-medicaid-work-requirements-mdhhs-offers-response/",
-          "date": "2026-08-18T12:31:37+00:00",
-          "category": "usa"
+          "title": "Veszélybe került a nagy béremelés Magyarországon, most Magyar Péter döntésén múlhat minden",
+          "source": "Index.hu",
+          "url": "https://index.hu/gazdasag/2026/08/19/magyar-peter-kormany-perlusz-laszlo-bermegallapodas-minimalber/",
+          "date": "2026-08-19T10:21:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "De mit tett értünk a Tisza-kormány? Íme az eddigi mérleg",
+          "source": "Klubrádió",
+          "url": "https://www.klubradio.hu/hirek/de-mit-tett-ertunk-a-tisza-kormany-ime-az-eddigi-merleg-163154",
+          "date": "2026-08-19T10:10:59+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Magyar Péter minden magyar ember nevében köszönetet mond: Cserhalmi György kapja a Magyar Érdemrend nagykeresztjét",
+          "source": "PORT",
+          "url": "https://port.hu/cikk/magazin/magyar-peter-minden-magyar-ember-neveben-koszonetet-mond-cserhalmi-gyorgy-kapja-a-magyar-erdemrend-nagykeresztjet/article-130110",
+          "date": "2026-08-19T10:05:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Simicskó István szerint a Tisza Párt homályban hagyja a családtámogatások jövőjét (VIDEÓ)",
+          "source": "Vasárnap.hu",
+          "url": "https://vasarnap.hu/2026/08/19/simicsko-istvan-tisza-part-homalyban-hagyja-a-csaladtamogatasok-jovojet-video/",
+          "date": "2026-08-19T10:03:59+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Legfőbb belső dilemmájával szembesül a Tisza a közmédia átalakításánál",
+          "source": "444",
+          "url": "https://444.hu/2026/08/19/legfobb-belso-dilemmajaval-szembesul-a-tisza-a-kozmedia-atalakitasanal",
+          "date": "2026-08-19T10:02:08+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Két alaptörvény-módosítás és több mint 30 törvény – a Tisza első száz napjának mérlege",
+          "source": "Infostart",
+          "url": "https://infostart.hu/belfold/2026/08/19/ket-alaptorveny-modositas-es-tobb-mint-30-torveny-a-tisza-elso-szaz-napjanak-merlege",
+          "date": "2026-08-19T09:47:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Több mint 30 törvény, két alaptörvény-módosítás és számos döntés – Száznapos mérleget vont a Tisza-frakció",
+          "source": "Népszava",
+          "url": "https://nepszava.hu/3331208_tisza-frakcio-szaz-nap-merleg-torvenyhozas-dontesek-demokracia-valasztasi-igeret",
+          "date": "2026-08-19T09:35:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Azonnali hatállyal lépett a Tisza-kormány: jön a feketeleves az Otthon Startnál?",
+          "source": "Pénzcentrum",
+          "url": "https://www.penzcentrum.hu/otthon/20260819/azonnali-hatallyal-lepett-a-tisza-kormany-jon-a-feketeleves-az-otthon-startnal-1204157",
+          "date": "2026-08-19T09:31:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Duplán rendkívüli parlamenti ülést kezdeményezett Magyar Péter",
+          "source": "ORIGO",
+          "url": "https://www.origo.hu/belpol/2026/08/magyar-peter-rendkivuli-parlamenti-ules-kezdemenyezes",
+          "date": "2026-08-19T09:24:08+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Hungarian tourism casts also Orbán's legacy into the trash heap of history",
+          "source": "TravelMole",
+          "url": "https://travelmole.com/news/hungarian-tourism-orban-legacy-dismantled",
+          "date": "2026-08-19T09:11:04+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Magyar Péter két rendkívüli ülésnap összehívását kérte a jövő hétre a parlamentben, ezekről a témákról dönthet az Országgyűlés",
+          "source": "Forbes Magyarország",
+          "url": "https://www.forbes.hu/hirek/magyar-peter-parlament-orszaggyules-rendkivuli-ules-politika/",
+          "date": "2026-08-19T09:02:11+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "„Beírta magát a magyar történelembe” – Magyar Péter bejelentette, ki kapja idén a Magyar Érdemrend nagykeresztjét",
+          "source": "nlc",
+          "url": "https://nlc.hu/sztarok/20260819/beirta-magat-a-magyar-tortenelembe-magyar-peter-bejelentette-ki-kapja-iden-a-magyar-erdemrend-nagykeresztjet/",
+          "date": "2026-08-19T08:43:21+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Itthon: Magyar Péter javasolta, minden szempontból rendkívüli lesz a jövő heti parlamenti ülés",
+          "source": "| hvg.hu",
+          "url": "https://hvg.hu/itthon/20260819_rendkivuli-lesz-jovo-het-parlament-magyar-peter-kormany",
+          "date": "2026-08-19T08:37:44+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Ez az új kormány első 100 napjának mérlege",
+          "source": "mfor.hu",
+          "url": "https://mfor.hu/cikkek/kozelet/ez-az-uj-kormany-elso-100-napjanak-merlege.html",
+          "date": "2026-08-19T08:20:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Magyar Péter már bejelentette, hogy Cserhalmi György kapja az egyik legmagasabb állami kitüntetést augusztus 20-án",
+          "source": "444",
+          "url": "https://444.hu/2026/08/19/magyar-peter-mar-most-bejelentette-hogy-cserhalmi-gyorgy-kapja-az-egyik-legmagasabb-allami-kituntetest-augusztus-20-an",
+          "date": "2026-08-19T08:16:01+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Magyar Péter: Cserhalmi György kapja az egyik legmagasabb állami kitüntetést",
+          "source": "Blikk",
+          "url": "https://www.blikk.hu/politika/magyar-politika/cserhelmi-gyorgy-magyar-peter-magyar-erdemrend-nagykereszt/7r8q563",
+          "date": "2026-08-19T08:12:32+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Magyar Péter bejelentése: ő kapja a Magyar Érdemrend nagykeresztjét augusztus 20-án",
+          "source": "Pénzcentrum",
+          "url": "https://www.penzcentrum.hu/szorakozas/20260819/magyar-peter-bejelentese-o-kapja-a-magyar-erdemrend-nagykeresztjet-augusztus-20-an-1204168",
+          "date": "2026-08-19T08:08:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Teljesítette az ígéreteit a Tisza-kormány az első 100 napban?",
+          "source": "Blikk",
+          "url": "https://www.blikk.hu/politika/magyar-politika/tisza-kormany-igeret-szavazas/svj48t9",
+          "date": "2026-08-19T08:06:28+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "30 ezer milliárd forintnyi ellopott közvagyont szerezne vissza a Tisza",
+          "source": "24.hu",
+          "url": "https://24.hu/belfold/2026/08/19/30-ezer-milliard-forint-ellopott-kozvagyon-szerezne-vissza-a-tisza/",
+          "date": "2026-08-19T08:02:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Cserhalmi Györggyel kapcsolatban tett bejelentést Magyar Péter",
+          "source": "Infostart",
+          "url": "https://infostart.hu/belfold/2026/08/19/cserhalmi-gyorggyel-kapcsolatban-tett-bejelentest-magyar-peter",
+          "date": "2026-08-19T07:59:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Ilyen volt a TISZA-kormány első 100 napja",
+          "source": "atv.hu",
+          "url": "https://www.atv.hu/belfold/20260819/tisza-torveny-orszaggyules-dontes/",
+          "date": "2026-08-19T07:39:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Megbukott a Fidesz kísérlete, ma új korszak kezdődik",
+          "source": "Hirnavigator",
+          "url": "https://hirnavigator.hu/hir/10657407-megbukott-a-fidesz-kiserlete-ma-uj-korszak-kezdodik",
+          "date": "2026-08-19T07:35:05+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Melléthei-Barna: A vagyonvisszaszerzési hivatal nem lesz ÁVH",
+          "source": "24.hu",
+          "url": "https://24.hu/belfold/2026/08/19/mellethai-barna-tisza-interju-alkotmany/",
+          "date": "2026-08-19T07:27:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Hivatalba lépett Baka András",
+          "source": "mfor.hu",
+          "url": "https://mfor.hu/cikkek/kozelet/hivatalba-lepett-baka-andras.html",
+          "date": "2026-08-19T06:51:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Magyar Péter visszafizettetné az \"álcivilekkel\" a jogosulatlanul kapott közpénzeket",
+          "source": "pecsma.hu",
+          "url": "https://www.pecsma.hu/magyar-peter-visszafizettetne-az-alcivilekkel-a-jogosulatlanul-kapott-kozpenzeket/",
+          "date": "2026-08-19T06:40:33+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Magyar Péter is megszólalt Baka András első államfői munkanapján",
+          "source": "Infostart",
+          "url": "https://infostart.hu/belfold/2026/08/19/magyar-peter-is-megszolalt-baka-andras-elso-allamfoi-munkanapjan",
+          "date": "2026-08-19T06:30:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Elfoglalta hivatalát Baka András – Így gratulált neki Magyar Péter",
+          "source": "Blikk",
+          "url": "https://www.blikk.hu/politika/magyar-politika/magyar-peter-baka-andras-gratulacio/m2yy040",
+          "date": "2026-08-19T06:24:09+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Magyar Péter bejelentette, mikortól kapcsolhatják vissza a paksi turbinákat",
+          "source": "Forbes Magyarország",
+          "url": "https://www.forbes.hu/hirek/magyar-peter-paks-duna-vizszint-atomeromu-aszaly-energia/",
+          "date": "2026-08-19T06:22:07+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Magyar Péter üzent Baka Andrásnak, aki mától Magyarország köztársasági elnöke",
+          "source": "atv.hu",
+          "url": "https://www.atv.hu/belfold/20260819/hivatalba-lep-baka-andras/",
+          "date": "2026-08-19T06:08:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Véget ért a választások utáni legfontosabb intézményi konfliktus",
+          "source": "Forbes Magyarország",
+          "url": "https://www.forbes.hu/hirek/baka-andras-koztarsasagi-elnok-hivatalba-lepes/",
+          "date": "2026-08-19T06:04:56+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Hungary PM vows to keep Paks reactors online amid drought",
+          "source": "Montel News",
+          "url": "https://montelnews.com/news/808286a8-0120-42e1-9047-bd7ef4d09f3c/hungary-pm-vows-to-keep-paks-reactors-online-amid-drought",
+          "date": "2026-08-19T05:38:42+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Rászoruló gyerekekkel hergelt a mindszenti Tisza, gyorsan kiderült, hogy kamuznak",
+          "source": "Cs3.hu",
+          "url": "https://cs3.hu/2026/08/19/raszorulo-gyerekekkel-hergelt-a-mindszenti-tisza-gyorsan-kiderult-hogy-kamuznak/",
+          "date": "2026-08-19T05:01:37+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Tisza-kormány: feloszolhat a Fidesz, mától államfő Baka András",
+          "source": "Portfolio.hu",
+          "url": "https://www.portfolio.hu/gazdasag/20260819/tisza-kormany-feloszolhat-a-fidesz-matol-allamfo-baka-andras-857140",
+          "date": "2026-08-19T04:44:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Mától Baka András a köztársasági elnök",
+          "source": "24.hu",
+          "url": "https://24.hu/belfold/2026/08/19/matol-baka-andras-a-koztarsasagi-elnok/",
+          "date": "2026-08-19T04:19:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Ezt is meglépik Magyar Péterék: Tisza pártünnepet csinál augusztus 20-ból",
+          "source": "Magyar Nemzet",
+          "url": "https://mno.hu/belfold/2026/08/magyar-peter-tisza-part-augusztus-20-unnep-margitsziget",
+          "date": "2026-08-19T04:10:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Itthon: Négyezer milliárdot bukott a NER a Tisza miatt – Newscast",
+          "source": "hvg.hu",
+          "url": "https://hvg.hu/itthon/20260819_negyezer-milliardot-bukott-a-ner-a-tisza-miatt-newscast",
+          "date": "2026-08-19T03:00:00+00:00",
+          "category": "hungary"
         }
       ],
-      "first_seen": "2026-08-19T02:10:15+00:00",
-      "last_seen": "2026-08-19T13:34:11+00:00"
+      "first_seen": "2026-08-20T02:09:27+00:00",
+      "last_seen": "2026-08-20T02:09:27+00:00"
     },
     {
       "id": "jordan-bardella",
       "name": "Jordan Bardella",
       "role": "President of the National Rally, France",
-      "blurb": "Bardella continues to shape France's far-right political landscape, particularly as the National Rally (RN) prepares for the 2027 presidential election. His leadership has been marked by efforts to moderate the party's image while maintaining its hardline stance on immigration and national sovereignty. Bardella's financial disclosures, including significant author royalties, have also drawn attention, highlighting the intersection of personal wealth and political influence. His role in the RN's electoral strategy and potential alliances remains a key focus of media coverage.",
+      "blurb": "Jordan Bardella continues to shape the political landscape in France as the leader of the National Rally. His recent activities, including high-profile appearances and policy statements, have kept him in the media spotlight. Bardella's role in the party's strategy for the upcoming 2027 presidential elections and his stance on key issues such as immigration and national identity are driving significant coverage.",
       "prominence": 3,
       "signals": [
-        "election campaign",
-        "policy announcements",
-        "financial disclosures",
-        "coalition negotiations"
+        "2027 presidential election campaign",
+        "immigration policy",
+        "national identity debates",
+        "party leadership dynamics"
       ],
       "categories": [
-        "domestic politics",
-        "immigration policy",
-        "electoral strategy"
+        "Political Leadership",
+        "Immigration Policy",
+        "Election Campaigns"
       ],
       "article_count": 30,
       "refs": [
+        {
+          "title": "Jordan Bardella en vacances : son choix d'une chanson d'amour intrigue depuis qu'il assume Maria Carolina",
+          "source": "Legossip.net",
+          "url": "https://www.legossip.net/jordan-bardella-vacances-choix-chanson-amour-intrigue-assume-maria-carolina,625560.html",
+          "date": "2026-08-19T15:00:00+00:00",
+          "category": "france"
+        },
         {
           "title": "Bardella déclare plus d’un million d’euros de droits d’auteur : le chiffre qui interroge",
           "source": "Le Tribunal du Net",
@@ -1202,25 +2525,18 @@
           "category": "france"
         },
         {
-          "title": "CHEGA, socio de Vox, logra en Portugal la ley que prohíbe el burka en lugares públicos",
-          "source": "moncloa.com",
-          "url": "https://www.moncloa.com/2026/08/19/chega-ley-burka-portugal-3417753/",
-          "date": "2026-08-19T09:58:36+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Présidentielle 2027 : LFI fait sa rentrée dans la Drôme, Raphaël Glucksmann prépare sa candidature… la campagne est lancée",
-          "source": "Sud Ouest",
-          "url": "https://www.sudouest.fr/politique/presidentielle-2027-lfi-fait-sa-rentree-dans-la-drome-raphael-glucksmann-prepare-sa-candidature-la-campagne-est-lancee-30302956.php",
-          "date": "2026-08-19T09:48:51+00:00",
+          "title": "Présidentielle 2027: pourquoi, à gauche, la campagne débute vraiment ce week-end - LCP-Assemblée nationale",
+          "source": "",
+          "url": "https://lcp.fr/actualites/presidentielle-2027-pourquoi-a-gauche-la-campagne-debute-vraiment-ce-week-end-440499?amp",
+          "date": "2026-08-19T10:30:45+00:00",
           "category": "france"
         },
         {
-          "title": "Présidentielle : Parti communiste français, France insoumise, Parti socialiste, Écologistes, Place publique... À gauche, la rentrée politique de toutes les batailles",
-          "source": "L'Humanité",
-          "url": "https://www.humanite.fr/politique/francois-ruffin/presidentielle-a-gauche-la-rentree-politique-de-toutes-les-batailles",
-          "date": "2026-08-19T09:07:54+00:00",
-          "category": "france"
+          "title": "Karina Milei condiciona los acuerdos electorales a la reforma política y presiona: \"Estás adentro o estás afuera\"",
+          "source": "Clarin.com",
+          "url": "https://www.clarin.com/politica/karina-milei-condiciona-acuerdos-electorales-reforma-politica-presiona-adentro-afuera_0_Gk7T5bBKK0.html",
+          "date": "2026-08-19T09:00:06+00:00",
+          "category": "argentina"
         },
         {
           "title": "Un référendum contournant le Parlement permettrait-il au RN d'inscrire la priorité nationale dans la Constitution",
@@ -1230,50 +2546,15 @@
           "category": "france"
         },
         {
-          "title": "Election présidentielle 2027. La course aux candidatures s'emballe déjà",
-          "source": "lamanchelibre.fr",
-          "url": "https://www.lamanchelibre.fr/actualite-1236514-election-presidentielle-2027-la-course-aux-candidatures-s-emballe-deja",
-          "date": "2026-08-19T06:30:00+00:00",
-          "category": "france"
-        },
-        {
-          "title": "À Six-Fours, le maire RN Frédéric Boccaletti éjecte sa première adjointe",
-          "source": "www.lamarseillaise.fr",
-          "url": "https://www.lamarseillaise.fr/politique/a-six-fours-le-maire-rn-frederic-boccaletti-ejecte-sa-premiere-adjointe-IO20598033",
-          "date": "2026-08-19T05:17:00+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Présidentielle 2027. La cacophonie bien orchestrée du RN",
-          "source": "charliehebdo.fr",
-          "url": "https://charliehebdo.fr/2026/08/politique/extreme-droite/presidentielle-2027-la-cacophonie-bien-orchestree-du-rn/",
-          "date": "2026-08-18T23:01:33+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Europe shifts right: What will upcoming elections across Old World mean for Ukraine?",
-          "source": "Цензор.НЕТ",
-          "url": "https://censor.net/en/resonance/4018554/europe-shifts-right-what-2026-2027-elections-mean-for-ukraine",
-          "date": "2026-08-18T18:47:00+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Retraites, budget, Élysée : Thierry Breton trace sa ligne",
-          "source": "24matins",
-          "url": "https://www.24matins.fr/retraites-budget-elysee-thierry-breton-trace-sa-ligne-1419119",
-          "date": "2026-08-18T13:00:03+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Retraites : Éric Ciotti affiche des divergences avec le RN et «espère une évolution» du programme",
-          "source": "Gentside",
-          "url": "https://www.gentside.com/news/politique/retraites-eric-ciotti-affiche-des-divergences-avec-le-rn-et-espere-une-evolution-du-programme_art126716.html?",
-          "date": "2026-08-18T12:30:00+00:00",
+          "title": "\"L’extrême droite et l’extrême gauche sont deux poisons mortels\" : Jean-Noël Barrot \"récuse\" un duel Le Pen - Mélenchon en 2027",
+          "source": "lechorepublicain.fr",
+          "url": "https://www.lechorepublicain.fr/paris-75000/actualites/lextreme-droite-et-lextreme-gauche-sont-deux-poisons-mortels-pour-la-france-jean-noel-barrot-recuse-un-duel-le-pen-melenchon-en-2027_15034107/",
+          "date": "2026-08-19T05:00:00+00:00",
           "category": "france"
         }
       ],
       "first_seen": "2026-08-19T13:34:11+00:00",
-      "last_seen": "2026-08-19T13:34:11+00:00"
+      "last_seen": "2026-08-20T02:09:27+00:00"
     }
   ]
 }
