@@ -1,32 +1,272 @@
 {
-  "updated_at": "2026-08-22T01:58:25+00:00",
+  "updated_at": "2026-08-22T13:10:45+00:00",
   "lookback_hours": 48,
   "model": "Mistral Large",
   "status": "ok",
   "hotspots": [
     {
-      "id": "javier-mileis-economic-defense-and-backlash",
-      "title": "Javier Milei’s economic defense and backlash",
-      "blurb": "President Javier Milei’s aggressive economic policies, including deregulation and austerity, have sparked widespread protests and internal dissent. His recent speeches defending these measures and denying responsibility for rising debt and unemployment have intensified public outrage and media criticism.",
-      "affect": "This commands disproportionate attention due to Milei’s polarizing rhetoric, which frames economic struggles as a moral battle, and the visible public backlash against his policies.",
+      "id": "afds-rise-and-far-right-governance-threats-in-germany",
+      "title": "AfD’s rise and far-right governance threats in Germany",
+      "blurb": "The AfD's surge in Saxony-Anhalt and other German states has sparked intense debate over far-right governance, extremism allegations, and potential coalitions. Polls show the AfD leading with 41%, raising fears of democratic backsliding and economic consequences.",
+      "affect": "This commands disproportionate attention due to fears of extremism, democratic erosion, and the AfD's potential to reshape German politics, especially in eastern states.",
       "intensity": 5,
       "affect_signals": [
         "polarized contention",
-        "outrage-coded language",
-        "moral panic register",
+        "alarmist framing",
         "cross-source repetition",
+        "leadership crisis tone",
+        "moral panic register"
+      ],
+      "categories": [
+        "🇩🇪 Alternative für Deutschland"
+      ],
+      "article_count": 120,
+      "refs": [
+        {
+          "title": "„Politico“-Spaziergang: Überläufer aus der CDU zur AfD? „Das wird nicht passieren“, sagt Schulze",
+          "source": "WELT",
+          "url": "https://www.welt.de/politik/deutschland/article6a86c2273e2ba7edf221f822/politico-spaziergang-ueberlaeufer-aus-der-cdu-zur-afd-das-wird-nicht-passieren-sagt-schulze.html",
+          "date": "2026-08-22T12:16:03+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Neue Umfrage wirbelt Berliner Wahlkampf auf: Linke springt auf 22 Prozent – CDU und AfD gleichauf abgehängt",
+          "source": "Frankfurter Rundschau",
+          "url": "https://www.fr.de/politik/umfrage-berlin-wahl-linke-vor-cdu-und-afd-spd-verliert-zr-94455228.html",
+          "date": "2026-08-22T11:55:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "D: „Verwerfungen und Polarisierung“",
+          "source": "Vatican News",
+          "url": "https://www.vaticannews.va/de/kirche/news/2026-08/feige-bischof-magdeburg-politik-wahlen-afd-deutschland-ddr.html",
+          "date": "2026-08-22T10:51:10+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Itt van Magyar Péter friss bejelentése! Többen mennek",
+          "source": "Hirnavigator",
+          "url": "https://hirnavigator.hu/hir/10669187-itt-van-magyar-peter-friss-bejelentese-tobben-mennek",
+          "date": "2026-08-22T10:19:04+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Geburtsprämie, 2. Kindergeld, Gratis-Schulessen, kostenlose Schulbücher… Wie die AfD Familien ködert – Wirtschaftsforscher: Nicht finanzierbar",
+          "source": "News4teachers",
+          "url": "https://www.news4teachers.de/2026/08/zweites-kindergeld-geburtenpraemie-gratis-schulessen-kostenlose-schulbuecher-wie-die-afd-familien-koedert-wirtschaftsforscher-programm-nicht-finanzierbar/",
+          "date": "2026-08-22T09:55:17+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "AfD: Der »Spiegel« als Steigbügelhalter des Faschismus - nd-aktuell.de",
+          "source": "",
+          "url": "https://www.nd-aktuell.de/artikel/1201916.titelbild-mit-ulrich-siegmund-afd-der-spiegel-als-steigbuegelhalter-des-faschismus.html",
+          "date": "2026-08-22T09:38:09+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Sachsen-Anhalt: Warum viele Wähler der AfD trotz Rechtsextremismus-Vorwurf die Stimme geben",
+          "source": "WELT",
+          "url": "https://www.welt.de/debatte/plus6a7d6ca9169e8e32c0ae633a/sachsen-anhalt-warum-viele-waehler-der-afd-trotz-rechtsextremismus-vorwurf-die-stimme-geben.html",
+          "date": "2026-08-22T09:11:51+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "AfD und NSDAP vor 1933: Warum Charlotte Knobloch diesen Vergleich zieht",
+          "source": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/afd-nsdap-nazi-vergleich-knobloch-100.html",
+          "date": "2026-08-22T07:40:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "„Neuer Hitler ist er nicht“ Wagenknecht lehnt Dämonisierung von AfD-Kandidat Siegmund ab",
+          "source": "Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/politik/neuer-hitler-ist-er-nicht-wagenknecht-lehnt-damonisierung-von-afd-kandidat-siegmund-ab-15970670.html",
+          "date": "2026-08-22T06:24:24+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Wahlkampf in Sachsen-Anhalt: Warnungen vor Kooperation mit AfD",
+          "source": "ORF",
+          "url": "https://orf.at/stories/3439613/",
+          "date": "2026-08-22T05:37:30+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Sachsen-Anhalt wählt bald Landtag: Warum AfD-Wähler krasse Selbstsabotage betreiben - T-Online",
+          "source": "",
+          "url": "https://www.t-online.de/nachrichten/tagesanbruch/id_101399994/landtagswahl-sachsen-anhalt-warum-sich-afd-waehler-selbst-schaden.html",
+          "date": "2026-08-22T03:03:18+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Sachsen-Anhalt: Philipp Amthor bezeichnet Ulrich Siegmund als „Duftkerzenverkäufer“",
+          "source": "WELT",
+          "url": "https://www.welt.de/politik/deutschland/article6a88c7d51c4720d416547bd0/sachsen-anhalt-philipp-amthor-bezeichnet-ulrich-siegmund-als-duftkerzenverkaeufer.html",
+          "date": "2026-08-21T21:59:27+00:00",
+          "category": "germany"
+        }
+      ],
+      "first_seen": "2026-08-16T02:06:25+00:00",
+      "last_seen": "2026-08-22T13:10:45+00:00"
+    },
+    {
+      "id": "melonis-strained-u-s-italy-relations-and-migration-policy",
+      "title": "Meloni’s strained U.S.-Italy relations and migration policy",
+      "blurb": "Italian Prime Minister Giorgia Meloni faces backlash over her migration policies and strained relations with U.S. President Donald Trump. Her government's handling of the EU Migration Pact and criticism of opposition leaders have intensified domestic and international scrutiny.",
+      "affect": "This commands attention due to Italy's geopolitical role, Meloni's leadership challenges, and the moral and humanitarian stakes of migration policy.",
+      "intensity": 4,
+      "affect_signals": [
+        "outrage-coded language",
+        "polarized contention",
+        "cross-source repetition",
+        "moral charge",
+        "leadership crisis tone"
+      ],
+      "categories": [
+        "🇮🇹 Fratelli d'Italia / Lega"
+      ],
+      "article_count": 110,
+      "refs": [
+        {
+          "title": "MELONI DEMOLISCE ELLY",
+          "source": "Le Cronache Lucane",
+          "url": "https://www.lecronachelucane.it/2026/08/22/meloni-demolisce-elly/",
+          "date": "2026-08-22T11:06:37+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Giochi del Mediterraneo, fischi alla premier Meloni. Sindaco di Lecce: «Gesto di ingratitudine, auspico scuse». Il M5S: «Paese allo stremo»",
+          "source": "Quotidiano Di Puglia",
+          "url": "https://www.quotidianodipuglia.it/regione/giochi_mediterraneo_fischi_sindaca_lecce_fischi_a_meloni_gesto_di_ingratitudine_auspico_scuse-9719827.html",
+          "date": "2026-08-22T10:14:02+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Aperti a Taranto i Giochi del Mediterraneo, l’ovazione per Mattarella. Meloni fischiata",
+          "source": "Askanews",
+          "url": "https://askanews.it/2026/08/22/aperti-a-taranto-i-giochi-del-mediterraneo-ovazione-per-mattarella-2/",
+          "date": "2026-08-22T08:42:20+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Giorgia Meloni contestata ai Giochi del Mediterraneo a Taranto, la sua reazione e l'annuncio sull'ex Ilva",
+          "source": "Virgilio",
+          "url": "https://www.virgilio.it/notizie/giorgia-meloni-contestata-ai-giochi-del-mediterraneo-a-taranto-la-sua-reazione-e-l-annuncio-sull-ex-ilva-1777765",
+          "date": "2026-08-22T07:30:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Per Meloni un’estate da dimenticare: la premier prova a uscire dall’angolo",
+          "source": "Domani",
+          "url": "https://www.editorialedomani.it/politica/italia/meloni-intervista-nyt-migranti-dublinanti-olanda-svizzera-paesi-ue-patto-migrazioni-asilo-l9q19x86",
+          "date": "2026-08-22T05:00:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "La mossa di Meloni: parla di Trump con il New York Times",
+          "source": "la Repubblica",
+          "url": "https://www.repubblica.it/esteri/2026/08/22/news/new_york_times_giorgia_meloni_intervista_trump-425540766/",
+          "date": "2026-08-21T23:00:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Giorgia Meloni says ‘I thought it would be easier with Trump’ New York Times reports",
+          "source": "Euronews.com",
+          "url": "https://www.euronews.com/my-europe/2026/08/21/giorgia-meloni-says-i-thought-it-would-be-easier-with-trump-new-york-times-reports",
+          "date": "2026-08-21T19:51:42+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Mattarella e Meloni accolgono delegazioni straniere ai Giochi del Mediterraneo a Taranto",
+          "source": "Vista Agenzia Televisiva Nazionale",
+          "url": "https://www.agenziavista.it/slider/mattarella-e-meloni-accolgono-delegazioni-straniere-ai-giochi-del-mediterraneo-a-taranto/",
+          "date": "2026-08-21T17:45:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "L'Olanda si unisce al fronte del Nord, dublinanti in Italia. Meloni: 'Nessun boomerang, il Patto tutela il Paese'",
+          "source": "ANSA",
+          "url": "https://www.ansa.it/sito/notizie/mondo/europa/2026/08/21/lolanda-si-unisce-al-fronte-del-nord-dublinanti-in-italia.-meloni-nessun-boomerang_62a47941-97c9-4c45-8b38-94176f4ab80b.html",
+          "date": "2026-08-21T16:40:01+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Meloni ‘own goal’ leaves Italy facing wave of migrant returns",
+          "source": "The Telegraph",
+          "url": "https://www.telegraph.co.uk/world-news/2026/08/21/meloni-own-goal-leaves-italy-facing-wave-of-migrant-returns/",
+          "date": "2026-08-21T12:55:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Migranti, parla Meloni: «Il nuovo Patto sui migranti tutela l'Italia». L'attacco a Schlein",
+          "source": "Avvenire",
+          "url": "https://www.avvenire.it/politica/meloni-a-schlein-nessun-boomerang-il-nuovo-patto-sui-migranti-tutela-litalia_112198",
+          "date": "2026-08-21T11:28:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Meloni su Trump: \"Pensavo sarebbe stato più facile\"",
+          "source": "Il Fatto Quotidiano",
+          "url": "https://www.ilfattoquotidiano.it/2026/08/21/meloni-trump-rapporto-intervista-notizie/8484696/",
+          "date": "2026-08-21T11:01:32+00:00",
+          "category": "italy"
+        }
+      ],
+      "first_seen": "2026-08-22T01:58:25+00:00",
+      "last_seen": "2026-08-22T13:10:45+00:00"
+    },
+    {
+      "id": "javier-mileis-economic-defense-and-backlash",
+      "title": "Javier Milei’s economic defense and backlash",
+      "blurb": "Argentine President Javier Milei continues to defend his economic policies amid rising public discontent, protests, and criticism from opposition leaders. His government faces challenges over inflation, unemployment, and social welfare cuts, with growing calls for policy reversals.",
+      "affect": "This commands attention due to the high stakes of economic stability, public suffering, and Milei's polarizing leadership style, which blends triumphant rhetoric with harsh austerity measures.",
+      "intensity": 5,
+      "affect_signals": [
+        "outrage-coded language",
+        "alarmist framing",
+        "cross-source repetition",
+        "moral charge",
         "leadership crisis tone"
       ],
       "categories": [
         "🇦🇷 La Libertad Avanza"
       ],
-      "article_count": 150,
+      "article_count": 130,
       "refs": [
         {
-          "title": "Javier Milei buscó desligarse del aumento de los créditos impagos: \"No hay elementos para culpar al Gobierno por el tema morosidad\"",
-          "source": "Clarin.com",
-          "url": "https://www.clarin.com/politica/javier-milei-busco-desligarse-aumento-creditos-impagos-elementos-culpar-gobierno-tema-morosidad_0_dsrC74QLGi.html",
-          "date": "2026-08-22T01:11:25+00:00",
+          "title": "Javier Milei defendió el rumbo de la economía y su Gobierno: las frases destacadas de su discurso ante empresarios en Rosario",
+          "source": "Diario Río Negro",
+          "url": "https://www.rionegro.com.ar/politica/javier-milei-defendio-el-rumbo-de-la-economia-y-su-gobierno-las-frases-destacadas-de-su-discurso-ante-empresarios-en-rosario-4693005/",
+          "date": "2026-08-22T11:58:37+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei deslindó al Gobierno del aumento de la morosidad y descartó un rescate estatal: «No hay elementos para culpar a la política»",
+          "source": "sinfiltro.ar",
+          "url": "https://sinfiltro.ar/javier-milei-deslindo-al-gobierno-del-aumento-de-la-morosidad-y-descarto-un-rescate-estatal-no-hay-elementos-para-culpar-a-la-politica/",
+          "date": "2026-08-22T11:42:46+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Milei en Rosario: defensa cerrada del plan económico y duros ataques a la prensa y la oposición",
+          "source": "La Gaceta",
+          "url": "https://www.lagaceta.com.ar/nota/1150761/politica/milei-rosario-defensa-cerrada-plan-economico-duros-ataques-prensa-oposicion.html",
+          "date": "2026-08-22T10:19:07+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "La encrucijada de la economía en las encuestas, el dilema de los outsiders y el reclamo de Luis Caputo a la mesa política",
+          "source": "TN",
+          "url": "https://tn.com.ar/politica/2026/08/22/la-encrucijada-de-la-economia-en-las-encuestas-el-dilema-de-los-outsiders-y-el-reclamo-de-luis-caputo-a-la-mesa-politica/",
+          "date": "2026-08-22T08:35:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "En un fuerte discurso cargado de insultos, Milei desligó la política económica de la morosidad",
+          "source": "Perfil",
+          "url": "https://www.perfil.com/noticias/politica/en-un-fuerte-discurso-cargado-de-insultos-milei-desligo-la-politica-economica-de-la-morosidad.phtml",
+          "date": "2026-08-22T04:18:54+00:00",
           "category": "argentina"
         },
         {
@@ -37,303 +277,63 @@
           "category": "argentina"
         },
         {
-          "title": "Milei disertó en el aniversario de la Bolsa de Comercio de Rosario",
-          "source": "TV Pública",
-          "url": "https://www.tvpublica.com.ar/post/milei-diserto-en-el-aniversario-de-la-bolsa-de-comercio-de-rosario",
-          "date": "2026-08-22T01:03:45+00:00",
+          "title": "Javier Milei y la morosidad de las familias: \"No hay elementos para culpar al Gobierno\"",
+          "source": "todojujuy.com",
+          "url": "https://www.todojujuy.com/pais/javier-milei-y-la-morosidad-las-familias-no-hay-elementos-culpar-al-gobierno-n295002",
+          "date": "2026-08-22T00:23:00+00:00",
           "category": "argentina"
         },
         {
-          "title": "Ante empresarios, Javier Milei rechazó que el Gobierno sea responsable por la morosidad y culpó a la política",
-          "source": "Ambito",
-          "url": "https://www.ambito.com/politica/javier-milei-vuelve-hablar-empresarios-disertara-la-bolsa-comercio-rosario-n6313226",
-          "date": "2026-08-22T00:56:39+00:00",
+          "title": "Emmanuel Álvarez Agis ironizó sobre la promesas de Javier Milei: \"¿Vamos a llegar vivos a la inflación cero?\"",
+          "source": "C5N",
+          "url": "https://www.c5n.com/economia/emmanuel-alvarez-agis-ironizo-la-promesas-javier-milei-vamos-llegar-vivos-la-inflacion-cero-n246839",
+          "date": "2026-08-21T21:26:00+00:00",
           "category": "argentina"
         },
         {
-          "title": "Marcha contra Javier Milei en Rosario: \"No alcanza la plata para poder vivir\"",
-          "source": "Cadena 3 Argentina",
-          "url": "https://www.cadena3.com/noticia/viva-la-radio-rosario/marcha-contra-javier-milei-en-rosario-no-alcanza-la-plata-para-poder-vivir_586040",
-          "date": "2026-08-22T00:28:23+00:00",
+          "title": "Javier Milei pierde la batalla cultural: el 52% de la sociedad se considera opositora al Gobierno",
+          "source": "InfoRegión",
+          "url": "https://www.inforegion.com.ar/2026/08/21/javier-milei-pierde-la-batalla-cultural-el-52-de-la-sociedad-se-considera-opositora-al-gobierno/",
+          "date": "2026-08-21T18:49:54+00:00",
           "category": "argentina"
         },
         {
-          "title": "WATCH LIVE: President Trump speaks at rally for Sen. Darline Graham",
-          "source": "WIS News 10",
-          "url": "https://www.wistv.com/2026/08/21/watch-live-president-trump-speaks-rally-sen-darline-graham/",
-          "date": "2026-08-21T23:11:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Repudiable ataque de Javier Milei al periodista Marcelo Bonelli tras un informe sobre la economía",
-          "source": "Somos Jujuy",
-          "url": "https://www.somosjujuy.com.ar/politica/repudiable-ataque-javier-milei-periodista-marcelo-bonelli-tras-informe-sobre-economia-n122770",
-          "date": "2026-08-21T22:31:00+00:00",
+          "title": "\"Como esta época, ninguna\": cierra una histórica fábrica de calzado por la crisis de Javier Milei",
+          "source": "El Destape",
+          "url": "https://www.eldestapeweb.com/sociedad/esta-epoca-ninguna-cierra-historica-fabrica-calzado-crisis-javier-milei-20268211424",
+          "date": "2026-08-21T17:04:28+00:00",
           "category": "argentina"
         },
         {
-          "title": "Javier Milei no pisa la Casa Rosada desde Julio y reduce su actividad oficial",
-          "source": "Data Diario",
-          "url": "https://www.datadiario.com/politica/javier-milei-no-pisa-la-casa-rosada-desde-julio-y-reduce-su-actividad-oficial-202682117240",
-          "date": "2026-08-21T20:48:09+00:00",
+          "title": "Milei se aleja de la Casa Rosada y hace home office: Lleva todo agosto sin pisar Balcarce 50",
+          "source": "Urgente24",
+          "url": "https://urgente24.com/actualidad/politica/milei-se-aleja-la-casa-rosada-y-hace-home-office-lleva-todo-agosto-pisar-balcarce-50-n631056",
+          "date": "2026-08-21T16:27:00+00:00",
           "category": "argentina"
         },
         {
-          "title": "Repudiable ataque del Presidente al periodista Marcelo Bonelli por una columna sobre la situación económica",
-          "source": "Perfil",
-          "url": "https://www.perfil.com/noticias/politica/milei-desbordado-repudiable-ataque-del-presidente-al-periodista-marcelo-bonelli-por-una-columna-sobre-la-situacion-economica.phtml",
-          "date": "2026-08-21T19:33:14+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Aborto, desempleo y consumo: 3 narrativas que Javier Milei repite y que no se sostienen con los datos",
-          "source": "Chequeado",
-          "url": "https://chequeado.com/ultimas-noticias/aborto-desempleo-y-consumo-3-narrativas-que-javier-milei-repite-y-que-no-se-sostienen-con-los-datos/",
-          "date": "2026-08-21T19:00:33+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Javier Milei cruzó críticas con duras cifras",
-          "source": "» Cholila Online",
-          "url": "https://cholilaonline.ar/2026/08/milei-insiste-con-la-mejora-de-los-indicadores.html",
-          "date": "2026-08-21T17:47:08+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Video: Milei se desmintió a sí mismo al festejar el 0,8 por ciento de inflación minorista",
-          "source": "Revista Noticias",
-          "url": "https://noticias.perfil.com/noticias/politica/video-milei-se-desmintio-a-si-mismo-al-festejar-el-08-por-ciento-de-inflacion-minorista.phtml",
-          "date": "2026-08-21T17:18:05+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Javier Milei respalda los indicadores de crecimiento económico y enfatiza: \"Dato mata relato\"",
-          "source": "Mendovoz",
-          "url": "https://www.mendovoz.com/actualidad/nacionales/2026/8/21/javier-milei-respalda-los-indicadores-de-crecimiento-economico-enfatiza-dato-mata-relato-175428.html",
-          "date": "2026-08-21T16:17:57+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Javier Milei negó una destrucción del empleo: “Hay que mirar las empresas que cierran y las que abren”",
-          "source": "FM Del Sol Pehuajo",
-          "url": "https://radiodelsolpehuajo.com.ar/articulo/2026/08/javier-milei-nego-una-destruccion-del-empleo-hay-que-mirar-las-empresas-que-cierran-y-las-que-abren.php",
-          "date": "2026-08-21T16:04:47+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Milei en el Council of the Americas. Un discurso sobre otra realidad",
-          "source": "Periodismo de Izquierda",
-          "url": "https://periodismodeizquierda.com/milei-en-el-council-of-the-americas-un-discurso-sobre-otra-realidad/",
-          "date": "2026-08-21T15:12:35+00:00",
+          "title": "Argentina’s economy grows, but public frustration remains",
+          "source": "Semafor",
+          "url": "https://www.semafor.com/article/08/21/2026/argentinas-economy-grows-but-public-frustration-remains",
+          "date": "2026-08-21T14:57:00+00:00",
           "category": "argentina"
         }
       ],
       "first_seen": "2026-08-22T01:58:25+00:00",
-      "last_seen": "2026-08-22T01:58:25+00:00"
-    },
-    {
-      "id": "afds-rise-and-far-right-governance-threats-in-germany",
-      "title": "AfD’s rise and far-right governance threats in Germany",
-      "blurb": "The Alternative für Deutschland (AfD) is poised for significant gains in upcoming state elections, particularly in Saxony-Anhalt, where it leads polls. The party’s potential governance has raised alarms about democratic backsliding, antisemitism, and economic consequences, with critics warning of parallels to historical far-right movements.",
-      "affect": "This commands disproportionate attention due to fears of democratic erosion, antisemitic rhetoric, and the normalization of far-right governance in Germany.",
-      "intensity": 5,
-      "affect_signals": [
-        "alarmist framing",
-        "polarized contention",
-        "cross-source repetition",
-        "moral charge",
-        "leadership crisis tone"
-      ],
-      "categories": [
-        "🇩🇪 Alternative für Deutschland"
-      ],
-      "article_count": 120,
-      "refs": [
-        {
-          "title": "Vor dem Amtsende - Auch Antisemitismusbeauftragter Klein warnt vor drohender Auswanderung von Juden bei AfD-Erfolg bei Landtagswahlen",
-          "source": "Deutschlandfunk",
-          "url": "https://www.deutschlandfunk.de/auch-antisemitismusbeauftragter-klein-warnt-vor-drohender-auswanderung-von-juden-bei-afd-erfolg-bei--102.html",
-          "date": "2026-08-22T01:10:22+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Sachsen-Anhalt: Philipp Amthor bezeichnet Ulrich Siegmund als „Duftkerzenverkäufer“",
-          "source": "WELT",
-          "url": "https://www.welt.de/politik/deutschland/article6a88c7d51c4720d416547bd0/sachsen-anhalt-philipp-amthor-bezeichnet-ulrich-siegmund-als-duftkerzenverkaeufer.html",
-          "date": "2026-08-21T21:59:27+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "AfD in Sachsen-Anhalt vor Wahlsieg",
-          "source": "ORF",
-          "url": "https://orf.at/av/video/onDemandVideoNews93578",
-          "date": "2026-08-21T21:03:39+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "AfD in Sachsen-Anhalt vor fulminantem Wahlsieg",
-          "source": "ORF ON",
-          "url": "https://on.orf.at/video/14336143/16142142/afd-in-sachsen-anhalt-vor-fulminantem-wahlsieg",
-          "date": "2026-08-21T20:08:44+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "AfD vor Sieg: CDU-Mann Schulze hat bei Brandmauer \"andere Meinung\" als seine Partei - T-Online",
-          "source": "",
-          "url": "https://www.t-online.de/nachrichten/deutschland/innenpolitik/id_101400326/afd-vor-sieg-in-sachsen-anhalt-schulze-lehnt-brandmauer-als-begriff-ab.html",
-          "date": "2026-08-21T18:38:20+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Wahlkampf: Amthor bezeichnet Siegmund als «Duftkerzenverkäufer»",
-          "source": "DIE ZEIT",
-          "url": "https://www.zeit.de/news/2026-08/21/amthor-bezeichnet-siegmund-als-duftkerzenverkaeufer",
-          "date": "2026-08-21T17:18:05+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Deutschland 2033: AfD und Union in einer Koalition – so könnte es aussehen",
-          "source": "FAZ",
-          "url": "https://www.faz.net/aktuell/politik/inland/deutschland-2033-afd-und-union-in-einer-koalition-so-koennte-es-aussehen-201133141.html",
-          "date": "2026-08-21T16:31:27+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "„Eindruck, dass der AfD-Spitzenkandidat nicht willfährige Beamte loswerden will“",
-          "source": "WELT",
-          "url": "https://www.welt.de/politik/deutschland/plus6a846d97d537b08639dcc255/beamte-alarmiert-eindruck-dass-der-afd-spitzenkandidat-nicht-willfaehrige-beamte-loswerden-will.html",
-          "date": "2026-08-21T15:51:56+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Landtagswahl Sachsen-Anhalt: Was passiert, wenn die AfD gewinnt",
-          "source": "WiWo",
-          "url": "https://www.wiwo.de/politik/deutschland/landtagswahl-sachsen-anhalt-was-passiert-wenn-die-afd-gewinnt/100248316.html",
-          "date": "2026-08-21T14:40:00+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Wahl in Sachsen-Anhalt 2026: Politik und Sicherheitsapparat wappnen sich gegen AfD - T-Online",
-          "source": "",
-          "url": "https://www.t-online.de/nachrichten/deutschland/innenpolitik/id_101399772/landtagswahl-sachsen-anhalt-2026-politik-wappnet-sich-gegen-afd.html",
-          "date": "2026-08-21T12:46:57+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Sachsen-Anhalt: Wie der Bund einer AfD-Regierung Grenzen setzen könnte",
-          "source": "SZ.de",
-          "url": "https://www.sueddeutsche.de/politik/afd-landtagswahl-sachsen-anhalt-grundgesetz-li.3533673",
-          "date": "2026-08-21T11:43:21+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "AfD führt in Umfrage mit Rekord-Vorsprung – CDU fällt auf niedrigsten Wert seit 2021",
-          "source": "WELT",
-          "url": "https://www.welt.de/politik/deutschland/article6a880af3c3692834ff6d80fc/umfrage-afd-fuehrt-bei-allensbach-mit-rekord-vorsprung-cdu-faellt-auf-niedrigsten-wert-seit-2021.html",
-          "date": "2026-08-21T10:38:34+00:00",
-          "category": "germany"
-        }
-      ],
-      "first_seen": "2026-08-16T02:06:25+00:00",
-      "last_seen": "2026-08-22T01:58:25+00:00"
-    },
-    {
-      "id": "trump-administrations-iran-economic-warfare-escalation",
-      "title": "Trump administration’s Iran economic warfare escalation",
-      "blurb": "The Trump administration has announced plans to intensify economic sanctions on Iran, framing it as an 'economic D-Day.' This escalation, coupled with threats to countries aiding Iran, has drawn global attention and criticism, particularly from allies who view it as destabilizing.",
-      "affect": "This commands disproportionate attention due to its high-stakes geopolitical implications, Trump’s aggressive rhetoric, and the potential for broader regional conflict.",
-      "intensity": 4,
-      "affect_signals": [
-        "alarmist framing",
-        "polarized contention",
-        "cross-source repetition",
-        "moral charge",
-        "outrage-coded language"
-      ],
-      "categories": [
-        "🇺🇸 MAGA / Trump"
-      ],
-      "article_count": 80,
-      "refs": [
-        {
-          "title": "President Donald Trump: Iran is not ready to make the ‘right deal’",
-          "source": "Fox Business",
-          "url": "https://www.foxbusiness.com/video/6403841391112",
-          "date": "2026-08-21T22:53:29+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Trump administration plans to turn up economic pressure on Iran",
-          "source": "CBS News",
-          "url": "https://www.cbsnews.com/atlanta/video/trump-administration-plans-to-turn-up-economic-pressure-on-iran/",
-          "date": "2026-08-21T21:23:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "President Trump threatens countries who help Iran",
-          "source": "KTVU",
-          "url": "https://www.ktvu.com/video/fmc-n5kw7vqq9bmhmaip",
-          "date": "2026-08-21T00:52:33+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "The Latest: Trump warns of ‘economic D-Day’ against Iran days before 6-month mark of war",
-          "source": "KSAT",
-          "url": "https://www.ksat.com/news/politics/2026/08/21/the-latest-trump-warns-of-economic-d-day-against-iran-days-before-6-month-mark-of-war/",
-          "date": "2026-08-21T13:29:23+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "JD Vance: Economic Pressure is Our Most Effective Tool Against Iran",
-          "source": "IranWire",
-          "url": "https://iranwire.com/en/news/156567-jd-vance-economic-pressure-is-our-most-effective-tool-against-iran/",
-          "date": "2026-08-21T10:52:30+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "JD Vance says US economic pressure 'most effective tool' against war on Iran",
-          "source": "Middle East Eye",
-          "url": "https://www.middleeasteye.net/live-blog/live-blog-update/jd-vance-says-us-economic-pressure-most-effective-tool-against-war-iran?topic=War%2520on%2520Iran&nid=442386&fid=557639",
-          "date": "2026-08-21T06:19:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "'A delicate dance': JD Vance says economic pressure is the best way to achieve Washington's objectives in Iran",
-          "source": "CNBC",
-          "url": "https://www.cnbc.com/2026/08/21/us-iran-war-trump-hormuz-vance-economic-pressure.html",
-          "date": "2026-08-21T04:32:59+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Trump warns of 'economic D-Day' against Iran, but Tehran is well acquainted with sanctions",
-          "source": "WKMG",
-          "url": "https://www.clickorlando.com/news/politics/2026/08/21/trump-warns-of-economic-d-day-against-iran-but-tehran-is-well-acquainted-with-sanctions/",
-          "date": "2026-08-21T04:01:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Milei negó que haya más desempleo y dijo que los salarios \"tampoco cayeron\"",
-          "source": "Diario Nuevo Día",
-          "url": "https://www.eldiarionuevodia.com.ar/nacionales/milei-nego-que-haya-mas-desempleo-y-dijo-que-los-salarios-tampoco-cayeron-7999/",
-          "date": "2026-08-20T23:54:01+00:00",
-          "category": "argentina"
-        }
-      ],
-      "first_seen": "2026-08-21T02:08:26+00:00",
-      "last_seen": "2026-08-22T01:58:25+00:00"
+      "last_seen": "2026-08-22T13:10:45+00:00"
     },
     {
       "id": "legas-internal-rebellion-against-salvinis-leadership",
       "title": "Lega’s internal rebellion against Salvini’s leadership",
-      "blurb": "Matteo Salvini’s leadership of Italy’s Lega party is under threat from internal factions, particularly northern governors who accuse him of abandoning the party’s federalist roots. The rebellion has escalated ahead of the party’s annual Pontida rally, with calls for a more collegial leadership model.",
-      "affect": "This commands disproportionate attention due to the high-stakes power struggle within one of Italy’s major parties, with implications for the broader right-wing coalition.",
+      "blurb": "Italy’s Lega party is embroiled in internal strife as northern governors and party leaders challenge Matteo Salvini’s leadership. Tensions over policy direction, regional autonomy, and Salvini’s declining influence have sparked calls for a leadership overhaul ahead of the 2027 elections.",
+      "affect": "This commands attention due to the Lega’s pivotal role in Italy’s governing coalition, the potential for a party split, and the broader implications for right-wing politics in Europe.",
       "intensity": 4,
       "affect_signals": [
         "polarized contention",
         "leadership crisis tone",
         "cross-source repetition",
-        "moral charge",
-        "outrage-coded language"
+        "outrage-coded language",
+        "moral charge"
       ],
       "categories": [
         "🇮🇹 Fratelli d'Italia / Lega"
@@ -341,10 +341,38 @@
       "article_count": 90,
       "refs": [
         {
-          "title": "L’analisi di Bruno Vespa. Salvini-nordisti, prove di mediazione. Ma il vero nodo è il ruolo del leader",
-          "source": "Quotidiano Nazionale",
-          "url": "https://www.quotidiano.net/politica/lanalisi-di-bruno-vespa-salvini-nordisti-prove-di-mediazione-ma-il-vero-nodo-e-il-ruolo-del-leader-cawvrjsp",
-          "date": "2026-08-22T00:00:48+00:00",
+          "title": "Lega, il governatore del Trentino Fugatti a colazione con Salvini. A Pinzolo il «caffè della pace», colloquio di un'ora dopo le polemiche: «Incontro amichevole»",
+          "source": "Corriere del Trentino",
+          "url": "https://corrieredeltrentino.corriere.it/notizie/politica/26_agosto_22/lega-il-governatore-del-trentino-fugatti-a-colazione-con-salvini-a-pinzolo-il-caffe-della-pace-colloquio-di-un-ora-dopo-le-95c7b654-44c8-480a-9a25-60958b504xlk.shtml",
+          "date": "2026-08-22T10:46:53+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Salvini a Pinzolo, tra l'assenza di Fugatti e le tensioni nella Lega",
+          "source": "RaiNews",
+          "url": "https://www.rainews.it/tgr/trento/video/2026/08/salvini-a-pinzolo-tra-lassenza-di-fugatti-e-le-tensioni-nella-lega-f72d587c-6c14-4975-a256-8fe70c2d61cd.html",
+          "date": "2026-08-22T09:55:27+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Tensioni Lega, Papetti: «Salvini vittima della 'politica dei leader': una crisi interna arrivata vicino a un punto di non ritorno»",
+          "source": "Il Gazzettino",
+          "url": "https://www.ilgazzettino.it/lettere_al_direttore/lega_salvini_tensioni_crisi_papetti_cosa_ha_detto-9719031.html",
+          "date": "2026-08-22T07:54:34+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Consensi che svaniscono, Marone difende Salvini: «Nella Lega servono meno personalismi e più politica",
+          "source": "ecoaltomolise.net",
+          "url": "https://ecoaltomolise.net/consensi-che-svaniscono-marone-difende-salvini-nella-lega-servono-meno-personalismi-e-piu-politica/",
+          "date": "2026-08-22T06:37:19+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Fontana e Romeo sfidano Salvini: “Così non va, serve un nuovo assetto per il partito”",
+          "source": "Il Globo",
+          "url": "https://ilglobo.com/news/fontana-e-romeo-sfidano-salvini-cosi-non-va-serve-un-nuovo-assetto-per-il-partito-150337/",
+          "date": "2026-08-22T04:25:32+00:00",
           "category": "italy"
         },
         {
@@ -355,25 +383,25 @@
           "category": "italy"
         },
         {
-          "title": "Lega, prove di dialogo: verso il faccia a faccia tra Salvini e i nordisti prima di Pontida",
-          "source": "La Prealpina",
-          "url": "https://www.prealpina.it/news/politica/535922/lega-prove-di-dialogo-verso-il-faccia-a-faccia-tra-salvini-e-i-nordisti-prima-di-pontida.html",
-          "date": "2026-08-21T19:25:52+00:00",
+          "title": "Lega, Castelli: “Quando io facevo il ministro e il capogruppo in Senato, Salvini aveva i calzoni corti. Non gli devo nulla”",
+          "source": "LA7",
+          "url": "https://www.la7.it/in-onda/video/lega-castelli-quando-io-facevo-il-ministro-e-il-capogruppo-in-senato-salvini-aveva-i-calzoni-corti-21-08-2026-655089",
+          "date": "2026-08-21T20:55:59+00:00",
           "category": "italy"
         },
         {
-          "title": "Lega, Salvini risponde ai ribelli Romeo e Fontana: 'Coinvolgere i governatori? Intendo farlo da mesi'",
-          "source": "TGLA7",
-          "url": "https://tg.la7.it/politica/lega-salvini-risponde-ribelli-romeo-fontana-21-08-2026-261522",
-          "date": "2026-08-21T17:22:58+00:00",
+          "title": "Donzelli su problemi nella Lega: Nessun impatto sul Governo, centrodestra compatto",
+          "source": "Vista Agenzia Televisiva Nazionale",
+          "url": "https://www.agenziavista.it/tempo-reale/2026/1064632_donzelli-su-problemi-nella-lega-nessun-impatto-sul-governo-centrodestra-compatto/",
+          "date": "2026-08-21T18:34:00+00:00",
           "category": "italy"
         },
         {
-          "title": "Rárepült a Fidesz az augusztus 20-i ünnepség furcsa tenderére, hatósági bejelentést tesznek",
-          "source": "| hvg.hu",
-          "url": "https://hvg.hu/itthon/20260821_fidesz-augusztus-20-unnepseg-furcsa-tender-hatosagi-bejelentes",
-          "date": "2026-08-21T15:43:00+00:00",
-          "category": "hungary"
+          "title": "Lega, il coordinatore regionale Dreosto invita all'unità",
+          "source": "RaiNews",
+          "url": "https://www.rainews.it/tgr/fvg/articoli/2026/08/lega-il-coordinatore-regionale-dreosto-invita-allunita-74de85e6-c3b3-498b-b769-9efa9155e0a0.html",
+          "date": "2026-08-21T16:22:16+00:00",
+          "category": "italy"
         },
         {
           "title": "Scontro nella Lega a un mese da Pontida: la soluzione è nelle mani di Salvini",
@@ -395,116 +423,116 @@
           "url": "https://www.lindipendente.online/2026/08/21/nella-lega-ora-e-scontro-aperto-i-nordisti-puntano-a-cacciare-salvini/",
           "date": "2026-08-21T11:00:22+00:00",
           "category": "italy"
+        }
+      ],
+      "first_seen": "2026-08-21T02:08:26+00:00",
+      "last_seen": "2026-08-22T13:10:45+00:00"
+    },
+    {
+      "id": "trump-administrations-iran-economic-warfare-escalation",
+      "title": "Trump administration’s Iran economic warfare escalation",
+      "blurb": "The Trump administration has announced a new wave of economic sanctions against Iran, escalating tensions over nuclear negotiations and regional conflicts. The move has drawn international criticism and raised fears of further destabilization in the Middle East.",
+      "affect": "This commands attention due to the high geopolitical stakes, the potential for military escalation, and the Trump administration’s aggressive foreign policy posture.",
+      "intensity": 4,
+      "affect_signals": [
+        "alarmist framing",
+        "cross-source repetition",
+        "moral charge",
+        "outrage-coded language",
+        "leadership crisis tone"
+      ],
+      "categories": [
+        "🇺🇸 MAGA / Trump"
+      ],
+      "article_count": 80,
+      "refs": [
+        {
+          "title": "2026 midterms: Is Trump dragging Republicans down?",
+          "source": "vox.com",
+          "url": "https://www.vox.com/america-actually/500153/donald-trump-cj-pearson-republicans-2026-midterms-electability",
+          "date": "2026-08-22T12:00:00+00:00",
+          "category": "usa"
         },
         {
-          "title": "Lega, Romeo e Fontana rilanciano la \"proposta a Salvini per coinvolgere Zaia o Fedriga\". Ma i fedelissimi difendono il segretario del Carroccio: \"Il capitano non si tocca\"",
-          "source": "L'Espresso",
-          "url": "https://lespresso.it/c/politica/2026/8/21/lega-versiliana-romeo-fontana-incontro-salvini-zaia-fedriga/64229",
-          "date": "2026-08-21T09:14:33+00:00",
+          "title": "Lula turns to Donald Trump as unlikely ally in Brazil’s clash with Marco Rubio",
+          "source": "Financial Times",
+          "url": "https://www.ft.com/content/da43f854-8083-4ec1-86da-76b47c84e64a?syn-25a6b1a6=1",
+          "date": "2026-08-22T11:00:09+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Aoun and Meloni discuss security in south Lebanon",
+          "source": "thenationalnews.com",
+          "url": "https://www.thenationalnews.com/video/DKa7WApW/aoun-and-meloni-discuss-security-in-south-lebanon/",
+          "date": "2026-08-22T09:19:00+00:00",
           "category": "italy"
         },
         {
-          "title": "Tensione nella Lega, fronda del Nord contro Salvini: \"Così non va, prima di Pontida serve una svolta",
-          "source": "RaiNews",
-          "url": "https://www.rainews.it/articoli/2026/08/tensione-nella-lega-fronda-del-nord-contro-salvini-cosi-non-va-prima-di-pontida-serve-una-svolta-c8cd4fe8-729c-46a8-a060-508d07d081ab.html",
-          "date": "2026-08-21T02:25:00+00:00",
+          "title": "How Trump is dismantling the rules-based global order",
+          "source": "DW.com",
+          "url": "https://www.dw.com/en/how-trump-is-dismantling-the-rules-based-global-order/video-78445054",
+          "date": "2026-08-22T05:02:32+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump administration plans to turn up economic pressure on Iran",
+          "source": "CBS News",
+          "url": "https://www.cbsnews.com/atlanta/video/trump-administration-plans-to-turn-up-economic-pressure-on-iran/",
+          "date": "2026-08-21T21:23:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Why Do Young Africans Love Donald Trump?",
+          "source": "Foreign Policy",
+          "url": "https://foreignpolicy.com/2026/08/21/african-youth-survey-donald-trump-transactionalism-popularity/",
+          "date": "2026-08-21T17:01:32+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Why Dubai may be vital to the Trump administration's economic war on Iran",
+          "source": "CBS News",
+          "url": "https://www.cbsnews.com/news/why-dubai-uae-vital-trump-administration-economic-war-iran/",
+          "date": "2026-08-21T15:27:43+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "President Donald Trump warns of ‘economic D-Day’ against Iran, but Tehran is well acquainted with sanctions",
+          "source": "Chicago Tribune",
+          "url": "https://www.chicagotribune.com/2026/08/21/trump-iran-economic-d-day/",
+          "date": "2026-08-21T13:48:51+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "The Latest: Trump warns of ‘economic D-Day’ against Iran days before 6-month mark of war",
+          "source": "KSAT",
+          "url": "https://www.ksat.com/news/politics/2026/08/21/the-latest-trump-warns-of-economic-d-day-against-iran-days-before-6-month-mark-of-war/",
+          "date": "2026-08-21T13:29:23+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "JD Vance: Economic Pressure is Our Most Effective Tool Against Iran",
+          "source": "IranWire",
+          "url": "https://iranwire.com/en/news/156567-jd-vance-economic-pressure-is-our-most-effective-tool-against-iran/",
+          "date": "2026-08-21T10:52:30+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump administration moves to calm bond market haven’t worked so far, US ramps up Cuba sanctions",
+          "source": "AP News",
+          "url": "https://apnews.com/newsletter/morning-wire/august-21-2026",
+          "date": "2026-08-21T10:40:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Meloni: “The new migration and asylum pact and Schengen are two completely different things”",
+          "source": "Il Foglio",
+          "url": "https://www.ilfoglio.it/en/politics/2026/08/21/news/meloni-the-new-migration-and-asylum-pact-and-schengen-are-two-completely-different-things--405298",
+          "date": "2026-08-21T10:26:00+00:00",
           "category": "italy"
         }
       ],
       "first_seen": "2026-08-21T02:08:26+00:00",
-      "last_seen": "2026-08-22T01:58:25+00:00"
-    },
-    {
-      "id": "melonis-strained-u-s-italy-relations-and-migration-policy",
-      "title": "Meloni’s strained U.S.-Italy relations and migration policy",
-      "blurb": "Italian Prime Minister Giorgia Meloni’s relationship with Donald Trump has soured, with Meloni admitting in a New York Times interview that she expected easier cooperation. Meanwhile, her hardline migration policies face backlash as EU countries resume sending asylum seekers back to Italy under the Dublin Regulation.",
-      "affect": "This commands disproportionate attention due to Meloni’s high-profile admission of diplomatic tensions and the contentious nature of EU migration policies.",
-      "intensity": 4,
-      "affect_signals": [
-        "polarized contention",
-        "alarmist framing",
-        "cross-source repetition",
-        "moral charge",
-        "leadership crisis tone"
-      ],
-      "categories": [
-        "🇮🇹 Fratelli d'Italia / Lega"
-      ],
-      "article_count": 70,
-      "refs": [
-        {
-          "title": "La mossa di Meloni: parla di Trump con il New York Times",
-          "source": "la Repubblica",
-          "url": "https://www.repubblica.it/esteri/2026/08/22/news/new_york_times_giorgia_meloni_intervista_trump-425540766/",
-          "date": "2026-08-21T23:00:00+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Meloni al New York Times: «Pensavo fosse più facile parlare con Trump»",
-          "source": "L'Unione Sarda.it",
-          "url": "https://www.unionesarda.it/news/mondo/meloni-al-new-york-times-pensavo-fosse-piu-facile-parlare-con-trump-qfhoa33z",
-          "date": "2026-08-21T17:50:00+00:00",
-          "category": "italy"
-        },
-        {
-          "title": ">>>ANSA/Thought it would be easier with Trump says Meloni",
-          "source": "ANSA",
-          "url": "https://www.ansa.it/amp/english/newswire/english_service/2026/08/21/ansathought-it-would-be-easier-with-trump-says-meloni_fa18f7cb-60b0-4488-8cfd-ce9aefd72914.html",
-          "date": "2026-08-21T16:24:54+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Meloni al New York Times: \"Con Trump pensavo sarebbe stato più facile\"",
-          "source": "Euronews.com",
-          "url": "https://it.euronews.com/my-europe/2026/08/21/meloni-al-new-york-times-con-trump-pensavo-sarebbe-stato-piu-facile",
-          "date": "2026-08-21T15:00:54+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Meloni al New York Times: \"Se risentirò Trump? Vedremo...\"",
-          "source": "Il Dubbio",
-          "url": "https://www.ildubbio.news/news/politica/52005/meloni-al-new-york-times-se-risentiro-trump-vedremo.html",
-          "date": "2026-08-21T13:32:52+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Meloni admits relationship with Trump ‘would be easier’",
-          "source": "Brussels Signal",
-          "url": "https://brusselssignal.eu/2026/08/meloni-admits-relationship-with-trump-would-be-easier/",
-          "date": "2026-08-21T12:51:30+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Meloni al New York Times: \"Credevo che con Trump sarebbe stato più facile\"",
-          "source": "Tgcom24",
-          "url": "https://www.tgcom24.mediaset.it/mondo/meloni-trump_115680912-202602k.shtml",
-          "date": "2026-08-21T11:39:32+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Meloni sceglie il 'nemico' New York Times per riparlare di Trump: \"Pensavo fosse più facile”",
-          "source": "la Repubblica",
-          "url": "https://www.repubblica.it/politica/2026/08/21/news/meloni_trump_new_york_times_intervista-425539855/",
-          "date": "2026-08-21T11:15:23+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Meloni al New York Times e il gelo con Trump: «Se lo sentirò? Vedremo. Perché credevo che sarebbe stato più facile con lui",
-          "source": "Open",
-          "url": "https://www.open.online/2026/08/21/meloni-trump-intervista-new-york-times/",
-          "date": "2026-08-21T10:39:08+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "La linea di Meloni sui migranti: Ceuta non c'entra. Sui «dublinanti» si valuta caso per caso",
-          "source": "Corriere Roma",
-          "url": "https://roma.corriere.it/notizie/politica/26_agosto_21/linea-meloni-migranti-ceuta-dublinanti-b3ce889e-3b80-4010-9b37-62bc16cd2xlk.shtml",
-          "date": "2026-08-21T03:52:03+00:00",
-          "category": "italy"
-        }
-      ],
-      "first_seen": "2026-08-22T01:58:25+00:00",
-      "last_seen": "2026-08-22T01:58:25+00:00"
+      "last_seen": "2026-08-22T13:10:45+00:00"
     }
   ]
 }
