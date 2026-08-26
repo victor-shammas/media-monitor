@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-25T13:43:02+00:00",
+  "updated_at": "2026-08-26T02:17:11+00:00",
   "lookback_hours": 48,
   "model": "Mistral Large",
   "status": "ok",
@@ -7,42 +7,63 @@
     {
       "id": "far-right-parties-push-anti-immigration-policies-amid-border-crises",
       "title": "Far-right parties push anti-immigration policies amid border crises",
-      "blurb": "Right-wing and far-right parties across Europe and the Americas are intensifying their focus on anti-immigration policies, framing border crises as existential threats to national security and cultural identity. This theme is particularly strong in countries like Italy, Spain, Germany, and the U.S., where leaders are advocating for stricter border controls, deportations, and opposition to asylum policies.",
+      "blurb": "Right-wing and far-right parties across Europe and the Americas are intensifying anti-immigration rhetoric and policies in response to perceived border crises. This theme is evident in Spain's Vox party blaming the government for migration surges, Italy's Lega and Fratelli d'Italia demanding stricter controls, and the U.S. Trump administration's mass visa revocations targeting asylum seekers. The convergence reflects a shared framing of immigration as an existential threat requiring urgent, draconian measures.",
       "convergence": 5,
       "countries": [
         {
-          "name": "🇺🇸 MAGA / Trump",
-          "note": "Trump administration escalates trade war with Canada, citing immigration concerns and imposing tariffs on Canadian goods."
+          "name": "🇪🇸 Vox",
+          "note": "Demands prosecution of Spanish government for 'treason' over Ceuta migration crisis, accusing Morocco of 'hybrid warfare' and calling for border closures."
         },
         {
           "name": "🇮🇹 Fratelli d'Italia / Lega",
-          "note": "Salvini and Meloni push for stricter EU migration policies, including opposition to NGO rescue ships and calls for deportations."
+          "note": "Salvini and Meloni push for stricter immigration controls, with Salvini proposing bank taxes to fund long-term fuel subsidies and criticizing NGOs for aiding migrants."
         },
         {
-          "name": "🇩🇪 Alternative für Deutschland",
-          "note": "AfD demands mass deportations, revocation of citizenship for migrants, and stricter border controls ahead of state elections."
-        },
-        {
-          "name": "🇪🇸 Vox",
-          "note": "Vox accuses Spain's government of funding Morocco to facilitate border invasions, demanding legal action against PM Sánchez."
+          "name": "🇺🇸 MAGA / Trump",
+          "note": "Trump administration announces plans to revoke up to 200,000 visas of asylum seekers, pauses global visa appointments, and threatens to demolish the Kennedy Center over immigration-related disputes."
         },
         {
           "name": "🇬🇧 Reform UK",
-          "note": "Reform UK proposes prioritizing British-born citizens for social housing and evicting foreign nationals from council homes."
+          "note": "Nigel Farage exposes Channel migrant crossings, accusing UK and French governments of collusion, and proposes prioritizing married couples for social housing."
         },
         {
           "name": "🇳🇴 Fremskrittspartiet",
-          "note": "FrP demands stricter immigration policies, including bans on hawala transactions and opposition to asylum seeker housing."
+          "note": "Calls for stricter immigration policies, including banning hawala money transfers and deporting foreign criminals."
+        },
+        {
+          "name": "🇫🇷 Rassemblement National",
+          "note": "Marine Le Pen leads polls with anti-immigration platform, criticizing Macron's policies and advocating for 'national priority' in welfare and jobs."
         }
       ],
       "signals": [
-        "policy imitation",
-        "shared framing",
-        "reaction to EU decision",
-        "coordinated messaging"
+        "shared framing of migration as existential threat",
+        "policy imitation across borders",
+        "coordinated messaging on border security",
+        "reaction to EU/NATO inaction"
       ],
       "article_count": 45,
       "refs": [
+        {
+          "title": "The ultra Abascal uses the crisis in Ceuta to intensify his insults: he accuses Sánchez of having a \"mafia\" and having committed \"a betrayal\"",
+          "source": "El Constitucional",
+          "url": "https://www.elconstitucional.es/en/national/the-ultra-abascal-uses-the-crisis-in-ceuta-to-intensify-his-insults-he-accuses-sanchez-of-having-mafia-and-having-committed-betrayal_7363_102.html",
+          "date": "2026-08-25T15:57:02+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Vox avisa de que Sánchez pretende convertir Ceuta en \"una nueva Lampedusa\"",
+          "source": "El Pueblo de Ceuta",
+          "url": "https://www.elpueblodeceuta.es/sec/politica/inmigracion/vox-avisa-sanchez-pretende-convertir_1_1186543.html",
+          "date": "2026-08-25T15:40:00+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "VOX avisa de que Sánchez pretende convertir Ceuta en una nueva Lampedusa y exige a Vivas que se oponga frontalmente",
+          "source": "Ceuta Ahora",
+          "url": "https://ceutaahora.com/art/22636/vox-avisa-de-que-sanchez-pretende-convertir-ceuta-en-una-nueva-lampedusa-y-exige-a-vivas-que-se-oponga-frontalmente",
+          "date": "2026-08-25T15:23:34+00:00",
+          "category": "spain"
+        },
         {
           "title": "Abascal insiste en sus ataques a Sánchez y le exige que responda ante el Supremo: \"Ha financiado a quien invade Ceuta\"",
           "source": "La Razón",
@@ -51,137 +72,236 @@
           "category": "spain"
         },
         {
-          "title": "Migranti, Salvini: l’Italia non è il campo profughi d’Europa",
-          "source": "Askanews",
-          "url": "https://askanews.it/2026/08/25/migranti-salvini-litalia-non-e-il-campo-profughi-deuropa/",
-          "date": "2026-08-25T12:00:15+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Vox exige a Vivas un plan para recuperar Ceuta y cuestiona la eficacia del mando único",
-          "source": "Infobae",
-          "url": "https://www.infobae.com/espana/agencias/2026/08/25/vox-exige-a-vivas-un-plan-para-recuperar-ceuta-y-cuestiona-la-eficacia-del-mando-unico/",
-          "date": "2026-08-25T11:35:27+00:00",
+          "title": "VOX insiste en que \"nadie se cree que el Gobierno de Sánchez no tuviera conocimiento de la invasión\" de...",
+          "source": "gaceta.es",
+          "url": "https://gaceta.es/espana/vox-insiste-en-que-nadie-se-cree-que-el-gobierno-de-sanchez-no-tuviera-conocimiento-de-la-invasion-de-ceuta-20260825-1337/",
+          "date": "2026-08-25T11:38:38+00:00",
           "category": "spain"
         },
         {
-          "title": "Vox reclama “recuperar las calles” y la seguridad de Ceuta",
-          "source": "El Faro de Ceuta",
-          "url": "https://elfarodeceuta.es/vox-reclama-recuperar-calles-seguridad-ceuta/",
-          "date": "2026-08-25T11:11:24+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox, sobre el mando único: “Han esperado a que terminen las vacaciones del presidente”",
-          "source": "El Pueblo de Ceuta",
-          "url": "https://www.elpueblodeceuta.es/sec/politica/vox-mando-unico-han-esperado_1_1186512.html",
-          "date": "2026-08-25T10:37:00+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "VOX demanda a Vivas un plan local para recuperar Ceuta ante un mando único que “llega tarde y no servirá de nada”",
-          "source": "Ceuta Ahora",
-          "url": "https://ceutaahora.com/art/22628/vox-demanda-a-vivas-un-plan-local-para-recuperar-ceuta-ante-un-mando-unico-que-llega-tarde-y-no-servira-de-nada",
-          "date": "2026-08-25T10:18:45+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Vox radicaliza su discurso xenófobo y \"exige\" a Barbón que revele el lugar donde van a vivir ocho menores extranjeros",
-          "source": "elDiario.es",
-          "url": "https://www.eldiario.es/asturias/vox-radicaliza-discurso-xenofobo-exige-barbon-revele-instalarse-ocho-menores-extranjeros_1_13465095.html",
-          "date": "2026-08-25T09:14:42+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "AfD greift Briefwahl an: Wie sicher ist sie wirklich?",
-          "source": "MOPO",
-          "url": "https://www.mopo.de/ratgeber/afd-will-briefwahl-abschaffen-wie-sicher-ist-die-abstimmung-per-post/4953008",
-          "date": "2026-08-25T07:45:15+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Los ocho ministros que comparecen por la crisis de Ceuta: primera gran batalla del curso para Vox y el PP",
-          "source": "moncloa.com",
-          "url": "https://www.moncloa.com/2026/08/25/crisis-ceuta-vox-pp-congreso-3420322/",
-          "date": "2026-08-25T06:13:00+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Trump administration deports wife of active-duty US soldier to Honduras",
-          "source": "The Independent",
-          "url": "https://www.independent.co.uk/news/world/americas/us-soldier-wife-deported-honduras-dhs-b3038568.html",
-          "date": "2026-08-25T01:22:00+00:00",
+          "title": "Trump administration issues pause on visa appointments for applicants worldwide",
+          "source": "The Detroit News",
+          "url": "https://www.detroitnews.com/story/news/politics/2026/08/25/trump-administration-issues-pause-on-visa-appointments-for-applicants-worldwide/91467150007/",
+          "date": "2026-08-26T01:10:00+00:00",
           "category": "usa"
         },
         {
-          "title": "Far-right AfD party gains could push Jews to leave Germany, antisemitism commissioner warns",
-          "source": "Ynetnews",
-          "url": "https://www.ynetnews.com/jewish-world/article/hjhcelqvzg",
-          "date": "2026-08-24T21:17:24+00:00",
-          "category": "general"
+          "title": "Trump administration plans mass visa revocations for people seeking asylum",
+          "source": "USA Today",
+          "url": "https://www.usatoday.com/story/news/nation/2026/08/25/trump-administration-plans-mass-visa-revocations-for-people-seeking-asylum/91454455007/",
+          "date": "2026-08-25T22:18:00+00:00",
+          "category": "usa"
         },
         {
-          "title": "Far-right AfD demands ban on Muslim headscarves in German schools",
-          "source": "Anadolu Ajansı",
-          "url": "https://aa.com.tr/en/europe/far-right-afd-demands-ban-on-muslim-headscarves-in-german-schools/4036237",
-          "date": "2026-08-24T18:52:15+00:00",
-          "category": "general"
+          "title": "Trump administration plans to target business and tourism visas of up to 200,000 asylum seekers",
+          "source": "Yahoo",
+          "url": "https://www.yahoo.com/news/politics/articles/trump-administration-plans-target-business-185613504.html",
+          "date": "2026-08-25T18:56:13+00:00",
+          "category": "usa"
         },
         {
-          "title": "Vox acusa al PP de hacer caja con las multas de tráfico en Oviedo",
-          "source": "LNE",
-          "url": "https://www.lne.es/oviedo/2026/08/24/vox-acusa-pp-caja-multas-133625031.html",
-          "date": "2026-08-24T18:46:07+00:00",
-          "category": "spain"
+          "title": "US to revoke visas of short-term visitors seeking asylum",
+          "source": "BBC",
+          "url": "https://www.bbc.com/news/articles/c9qrg82dvjqo",
+          "date": "2026-08-25T18:12:09+00:00",
+          "category": "usa"
         },
         {
-          "title": "Enfermos obligados a caminar medio kilómetro para llegar a Urgencias del Hospital de Toledo",
-          "source": "El Debate",
-          "url": "https://www.eldebate.com/espana/castilla-la-mancha/20260824/enfermos-obligados-caminar-medio-kilometro-llegar-urgencias-hospital-toledo_451895.html",
-          "date": "2026-08-24T16:23:01+00:00",
-          "category": "spain"
+          "title": "200,000 visas could be revoked by the Trump administration. Here's who's affected and what happens next",
+          "source": "Yahoo",
+          "url": "https://www.yahoo.com/news/us/article/200000-visas-could-be-revoked-by-the-trump-administration-heres-whos-affected-and-what-happens-next-163433224.html",
+          "date": "2026-08-25T16:34:33+00:00",
+          "category": "usa"
         },
         {
-          "title": "Vox acusa al PP de \"hacer caja\" con las multas de tráfico en Oviedo mientras \"mantiene intacto su despilfarro\"",
-          "source": "20Minutos",
-          "url": "https://www.20minutos.es/asturias/vox-acusa-pp-hacer-caja-con-las-multas-trafico-oviedo-mientras-mantiene-intacto-su-despilfarro_7028860_0.html",
-          "date": "2026-08-24T15:52:13+00:00",
-          "category": "spain"
+          "title": "U.S. set for largest mass visa revocation in history, up to 200,000 foreigners, officials say",
+          "source": "NPR",
+          "url": "https://www.npr.org/2026/08/25/nx-s1-5944058/us-largest-mass-visa-revocation-200-000-foreigners",
+          "date": "2026-08-25T04:56:29+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Reform UK pledges to ease data rules and director liability for small businesses",
+          "source": "Traders Union",
+          "url": "https://tradersunion.com/news/financial-news/show/3109399-reform-uk-small-business-data-rules/",
+          "date": "2026-08-25T23:11:36+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Supreme Court allows President Trump to implement parts of his mail-in voting executive order",
+          "source": "Central Oregon Daily",
+          "url": "https://www.centraloregondaily.com/news/nation-world/supreme-court-allows-president-trump-to-implement-parts-of-his-mail-in-voting-executive-order/video_6c6d517c-dae7-5574-a652-2ef42255c330.html",
+          "date": "2026-08-25T14:03:11+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Frp krever norsk nettpoker: – Folk er utålmodige",
+          "source": "FriFagbevegelse",
+          "url": "https://frifagbevegelse.no/nyheter/frp-krever-norsk-nettpoker--folk-er-utalmodige-6.158.1218580.ce04b18f37",
+          "date": "2026-08-25T11:00:35+00:00",
+          "category": "norway"
+        },
+        {
+          "title": "US plans to revoke business, tourism visas of 200,000 asylum seekers",
+          "source": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/8/25/us-plans-to-revoke-business-tourism-visas-of-200000-asylum-seekers",
+          "date": "2026-08-25T01:07:25+00:00",
+          "category": "usa"
         }
       ],
       "first_seen": "2026-08-23T02:16:32+00:00",
-      "last_seen": "2026-08-25T13:43:02+00:00"
+      "last_seen": "2026-08-26T02:17:11+00:00"
     },
     {
       "id": "right-wing-leaders-seek-re-election-amid-economic-controversies",
       "title": "Right-wing leaders seek re-election amid economic controversies",
-      "blurb": "Leaders from right-wing and far-right parties are positioning themselves for re-election despite facing significant economic backlash. This includes Javier Milei in Argentina, who is pushing controversial reforms, and figures in Poland and Hungary navigating internal party divisions and economic challenges. The theme highlights how economic policies are central to their re-election strategies.",
+      "blurb": "Right-wing leaders in Argentina, Poland, and Hungary are navigating re-election campaigns while facing economic backlash. Javier Milei's austerity measures have sparked public discontent despite inflation control, while Poland's PiS and Hungary's Fidesz/Tisza grapple with internal divisions and voter dissatisfaction over economic policies. The theme highlights parallel struggles to balance ideological commitments with electoral pragmatism.",
       "convergence": 4,
       "countries": [
         {
           "name": "🇦🇷 La Libertad Avanza",
-          "note": "Milei announces re-election bid for 2027, facing declining approval ratings and economic backlash over austerity measures."
+          "note": "Milei faces growing discontent over austerity measures, with polls showing declining approval despite inflation control. Government denies economic crisis while preparing for 2027 re-election."
         },
         {
           "name": "🇵🇱 Prawo i Sprawiedliwość",
-          "note": "PiS faces internal divisions and declining poll numbers, with Morawiecki positioning himself for a potential return to power."
+          "note": "PiS faces internal divisions and declining polls, with Morawiecki launching a rival party (Rozwój Plus) and Kaczyński struggling to maintain unity ahead of elections."
         },
         {
           "name": "🇭🇺 Fidesz / Tisza",
-          "note": "Hungary's new government under Péter Magyar faces economic challenges, including austerity measures and budget deficits."
+          "note": "Tisza government implements austerity measures despite pre-election promises, facing criticism over budget cuts and economic mismanagement."
         },
         {
           "name": "🇺🇸 MAGA / Trump",
-          "note": "Trump administration faces criticism over economic policies, including tariffs and trade wars, ahead of midterm elections."
+          "note": "Trump's economic policies, including tariffs and beef import plans, face backlash from farmers and ranchers, complicating his re-election narrative."
         }
       ],
       "signals": [
-        "parallel elections",
-        "economic policy debates",
-        "internal party challenges"
+        "parallel economic backlash",
+        "internal party divisions",
+        "electoral pragmatism vs. ideological purity",
+        "austerity measures sparking discontent"
       ],
-      "article_count": 30,
+      "article_count": 38,
       "refs": [
+        {
+          "title": "Javier Milei visitará Misiones en un marco de reclamos de los productores yerbateros y madereros",
+          "source": "MDZ Online",
+          "url": "https://www.mdzol.com/politica/javier-milei-visitara-misiones-un-marco-reclamos-los-productores-yerbateros-y-madereros-n1592931",
+          "date": "2026-08-26T01:00:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei reunió a sus legisladores y les pidió defender el rumbo económico ante una semana clave en el Congreso",
+          "source": "Sitio Andino",
+          "url": "https://www.sitioandino.com.ar/politica/milei-reunio-sus-legisladores-y-les-pidio-defender-el-rumbo-economico-una-semana-clave-el-congreso-n5728961",
+          "date": "2026-08-26T00:44:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Milei reunió a los legisladores de La Libertad Avanza antes de jornadas clave en el Congreso",
+          "source": "elsolnoticias.com.ar",
+          "url": "https://elsolnoticias.com.ar/milei-reunio-a-los-legisladores-de-la-libertad-avanza-antes-de-jornadas-clave-en-el-congreso/",
+          "date": "2026-08-26T00:21:54+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei reunió a los bloques de La Libertad Avanza y pidió sostener el rumbo económico",
+          "source": "Diario Río Negro",
+          "url": "https://www.rionegro.com.ar/politica/javier-milei-reunio-a-los-bloques-de-la-libertad-avanza-y-pidio-sostener-el-rumbo-economico-4697169/",
+          "date": "2026-08-25T23:57:46+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei, a los gritos frente a legisladores: alentó las reformas y rechazó la ayuda a los morosos",
+          "source": "MDZ Online",
+          "url": "https://www.mdzol.com/politica/javier-milei-los-gritos-frente-legisladores-alento-las-reformas-y-rechazo-la-ayuda-los-morosos-n1592978",
+          "date": "2026-08-25T23:44:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei recibió a los legisladores de LLA en la Casa Rosada y les pidió defender el rumbo de la gestión",
+          "source": "TN",
+          "url": "https://tn.com.ar/politica/2026/08/25/con-el-presupuesto-2027-como-eje-milei-recibe-a-los-legisladores-de-lla-en-la-casa-rosada/",
+          "date": "2026-08-25T23:25:09+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "La semana libertaria. Internas, ausencias y negación de la crisis",
+          "source": "Periodismo de Izquierda",
+          "url": "https://periodismodeizquierda.com/la-semana-libertaria-internas-ausencias-y-negacion-de-la-crisis/",
+          "date": "2026-08-25T23:01:57+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Milei reunió a diputados y senadores libertarios ante una semana clave en el Congreso",
+          "source": "Perfil",
+          "url": "https://www.perfil.com/noticias/politica/milei-reunio-a-sus-legisladores-y-puso-el-foco-en-el-presupuesto-2027.phtml",
+          "date": "2026-08-25T22:51:12+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Rundfunk - MDR warnt mit Kampagne vor Kündigungsplänen der AfD in Sachsen-Anhalt",
+          "source": "Deutschlandfunk Kultur",
+          "url": "https://www.deutschlandfunkkultur.de/mdr-warnt-mit-kampagne-vor-kuendigungsplaenen-der-afd-in-sachsen-anhalt-106.html",
+          "date": "2026-08-25T22:26:03+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "La Libertad Avanza y la cúpula del PRO volverán a reunirse",
+          "source": "Perfil",
+          "url": "https://www.perfil.com/noticias/politica/operativo-seduccion-y-la-traba-de-las-paso-la-libertad-avanza-y-la-cupula-del-pro-volveran-a-verse-las-caras.phtml",
+          "date": "2026-08-25T22:10:30+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Ćwierć wieku Tuska i Kaczyńskiego. Politolog: Ten układ się wyczerpuje",
+          "source": "Newsmax Polska",
+          "url": "https://newsmaxpolska.pl/kraj/polityka/66356/25-lat-tuska-i-kaczynskiego-politolog-ten-uklad-sie-wyczerpuje/news",
+          "date": "2026-08-25T20:50:00+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "La economía de Javier Milei: cómo le fue a los diferentes sectores desde que asumió a fines de 2023",
+          "source": "MDZ Online",
+          "url": "https://www.mdzol.com/dinero/la-economia-javier-milei-como-le-fue-los-diferentes-sectores-que-asumio-fines-2023-n1592754",
+          "date": "2026-08-25T19:35:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Barron’s Manosphere Pals Forced to Make Embarrassing Wealth Admission",
+          "source": "The Daily Beast",
+          "url": "https://www.thedailybeast.com/barrons-manosphere-pals-forced-to-make-embarrassing-wealth-admission/",
+          "date": "2026-08-25T18:53:00+00:00",
+          "category": "general"
+        },
+        {
+          "title": "RDI: afirman que Javier Milei está completamente solo en Olivos porque “hubo una caída del 42% en las visitas”",
+          "source": "Perfil",
+          "url": "https://www.perfil.com/noticias/masperfil/javier-milei-completamente-solo-en-olivos-en-rdi-se-indico-que-hubo-una-caida-del-42-en-las-visitas-que-recibio-el-presidente.phtml",
+          "date": "2026-08-25T18:50:22+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei le abre la puerta a los acuerdos electorales con los gobernadores",
+          "source": "Ambito",
+          "url": "https://www.ambito.com/politica/javier-milei-le-abre-la-puerta-los-acuerdos-electorales-los-gobernadores-n6314595",
+          "date": "2026-08-25T16:34:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Ricardo Quintela cruzó a Javier Milei: “Este debe ser el gobierno más corrupto de la historia argentina”",
+          "source": "Radio Mitre",
+          "url": "https://radiomitre.cienradios.com/videos/ricardo-quintela-cruzo-a-javier-milei-este-debe-ser-el-gobierno-mas-corrupto-de-la-historia-argentina/",
+          "date": "2026-08-25T15:49:46+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Grieta en el Gabinete: el reto de Javier Milei para Luis Caputo y Patricia Bullrich",
+          "source": "Ambito",
+          "url": "https://www.ambito.com/politica/grieta-el-gabinete-el-reto-javier-milei-luis-toto-caputo-y-patricia-bullrich-n6314482",
+          "date": "2026-08-25T14:06:00+00:00",
+          "category": "argentina"
+        },
         {
           "title": "Argentina | El presidente Javier Milei anunció que presentará su candidatura en las próximas elecciones presidenciales previstas para octubre de 2027 - NODAL",
           "source": "Noticias de América Latina y el Caribe",
@@ -190,17 +310,10 @@
           "category": "argentina"
         },
         {
-          "title": "Carlos Pagni analizó a Javier Milei y el riesgo de quedar atrapado en su propia ideología",
-          "source": "Tribuna de Periodistas",
-          "url": "https://periodicotribuna.com.ar/carlos-pagni-analizo-a-javier-milei-y-el-riesgo-de-quedar-atrapado-en-su-propia-ideologia/",
-          "date": "2026-08-25T12:13:35+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Chile protestará ante el gobierno de Javier Milei por un nuevo entredicho sobre el Estrecho de Magallanes",
-          "source": "Minutouno",
-          "url": "https://www.minutouno.com/politica/chile-protestara-el-gobierno-javier-milei-un-nuevo-entredicho-el-estrecho-magallanes-n6314411",
-          "date": "2026-08-25T11:45:00+00:00",
+          "title": "Diputados de la oposición preparan una ofensiva contra Javier Milei con proyectos incómodos para el gobierno",
+          "source": "Diario Uno Santa Fe",
+          "url": "https://www.unosantafe.com.ar/el-pais/diputados-la-oposicion-preparan-una-ofensiva-contra-javier-milei-proyectos-incomodos-el-gobierno-n10277135.html/amp",
+          "date": "2026-08-25T12:12:23+00:00",
           "category": "argentina"
         },
         {
@@ -211,10 +324,10 @@
           "category": "argentina"
         },
         {
-          "title": "Senado: La Libertad Avanza negocia cambios para el Súper RIGI",
-          "source": "Radio Facundo Quiroga",
-          "url": "https://facundoquiroga.com/senado-la-libertad-avanza-negocia-cambios-para-el-super-rigi/",
-          "date": "2026-08-25T10:52:10+00:00",
+          "title": "Milei encabeza una cumbre con legisladores: semana clave para la reforma del BCRA e Inocencia Fiscal",
+          "source": "Crónica",
+          "url": "https://www.cronica.com.ar/politica/milei-encabezara-una-cumbre-con-legisladores-semana-clave-para-la-reforma-del-bcra-e-inocencia-fiscal/",
+          "date": "2026-08-25T10:50:00+00:00",
           "category": "argentina"
         },
         {
@@ -225,18 +338,25 @@
           "category": "argentina"
         },
         {
-          "title": "Milei recibe a legisladores de LLA en una semana clave en el Congreso y busca asegurar votos",
-          "source": "DataClave",
-          "url": "https://www.dataclave.com.ar/poder/milei-recibe-a-legisladores-de-lla-en-una-semana-clave-en-el-congreso-y-busca-asegurar-votos_a6a8c6d5da06855a899c684d9",
-          "date": "2026-08-25T09:54:26+00:00",
+          "title": "Cumbre en Casa Rosada: Javier Milei busca ordenar a LLA antes de una semana decisiva en el Congreso",
+          "source": "MDZ Online",
+          "url": "https://www.mdzol.com/politica/cumbre-casa-rosada-javier-milei-busca-ordenar-lla-antes-una-semana-decisiva-el-congreso-n1592390",
+          "date": "2026-08-25T09:52:26+00:00",
           "category": "argentina"
         },
         {
-          "title": "Italy's Salvini calls for EUR20 billion in extra deficit in 2027 budget",
-          "source": "marketscreener.com",
-          "url": "https://www.marketscreener.com/news/italy-s-salvini-calls-for-eur20-billion-in-extra-deficit-in-2027-budget-ce7858d8d98ef520",
-          "date": "2026-08-25T08:00:34+00:00",
-          "category": "italy"
+          "title": "Milei celebrará un encuentro fundamental este martes: con quiénes se reunirá y cuál es su objetivo político",
+          "source": "Perfil",
+          "url": "https://www.perfil.com/noticias/politica/milei-celebrara-un-encuentro-fundamental-este-martes-con-quienes-se-reunira-y-cual-es-su-objetivo-politico.phtml",
+          "date": "2026-08-25T08:55:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Encuesta: Milei vuelve al 34% de aprobación, pero crecen las señales de alerta para el Gobierno",
+          "source": "Perfil",
+          "url": "https://www.perfil.com/noticias/politica/encuesta-milei-vuelve-al-34-de-aprobacion-pero-crecen-las-senales-de-alerta-para-el-gobierno.phtml",
+          "date": "2026-08-25T08:30:00+00:00",
+          "category": "argentina"
         },
         {
           "title": "Presionado por la economía, Milei vuelve a sacudir la interna y no deja margen para la diferenciación",
@@ -246,114 +366,164 @@
           "category": "argentina"
         },
         {
-          "title": "Milei busca mostrarse activo: reunión con legisladores y gira por Estados Unidos y Europa",
-          "source": "Perfil",
-          "url": "https://www.perfil.com/noticias/politica/milei-busca-mostrarse-activo-reunion-con-legisladores-y-gira-por-estados-unidos-y-europa.phtml",
-          "date": "2026-08-25T01:12:37+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Estados Unidos y Francia: los próximos viajes en la agenda de Javier Milei",
-          "source": "Infobae",
-          "url": "https://www.infobae.com/politica/2026/08/24/estados-unidos-y-francia-los-proximos-viajes-en-la-agenda-de-javier-milei/",
-          "date": "2026-08-24T22:44:35+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Javier Milei regresó a la Casa Rosada tras 24 días y reunió a todo su Gabinete",
-          "source": "0221",
-          "url": "https://www.0221.com.ar/nacional/javier-milei-regreso-la-casa-rosada-24-dias-y-reunio-todo-su-gabinete-n133089",
-          "date": "2026-08-24T20:42:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Javier Milei reunió a su Gabinete tras tres semanas de ausencia y ratificó el rumbo económico sin concesiones",
-          "source": "MisionesOnline",
-          "url": "https://misionesonline.net/2026/08/24/javier-milei-reunio-a-su-gabinete-tras-tres-semanas-de-ausencia-y-ratifico-el-rumbo-economico-sin-concesiones/",
-          "date": "2026-08-24T17:45:46+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Tras casi un mes en Olivos, Milei volvió a Casa Rosada y reunió a su gabinete",
-          "source": "Los Andes",
-          "url": "https://www.losandes.com.ar/politica/tras-casi-un-mes-olivos-milei-volvio-casa-rosada-y-reunio-su-gabinete-n6003452",
-          "date": "2026-08-24T16:34:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Javier Milei regresó a la Casa Rosada tras más de 20 días y encabezó una reunión de Gabinete con el foco en la agenda legislativa",
-          "source": "C5N",
-          "url": "https://www.c5n.com/politica/reunion-gabinete-javier-milei-casa-rosada-24-agosto-2026",
-          "date": "2026-08-24T16:03:56+00:00",
+          "title": "Previo a una sesión clave en Diputados, Javier Milei encabezará una cumbre con los legisladores libertarios",
+          "source": "Diario Río Negro",
+          "url": "https://www.rionegro.com.ar/politica/previo-a-una-sesion-clave-en-diputados-javier-milei-encabezara-una-cumbre-con-los-legisladores-libertarios-4695696/?amp=1",
+          "date": "2026-08-25T02:15:29+00:00",
           "category": "argentina"
         }
       ],
       "first_seen": "2026-08-23T02:16:32+00:00",
-      "last_seen": "2026-08-25T13:43:02+00:00"
+      "last_seen": "2026-08-26T02:17:11+00:00"
     },
     {
       "id": "internal-divisions-challenge-right-wing-party-unity",
       "title": "Internal divisions challenge right-wing party unity",
-      "blurb": "Internal divisions within right-wing and far-right parties are creating significant challenges to their unity and electoral prospects. This theme is evident in Italy, Poland, and Hungary, where factions are clashing over leadership, policy directions, and alliances, often leading to public disputes and resignations.",
+      "blurb": "Right-wing parties in Italy, Poland, and the UK are grappling with internal fractures that threaten their electoral prospects. Italy's Lega faces leadership tensions between Salvini and regional governors, Poland's PiS is splintering with Morawiecki's defection, and Reform UK struggles with candidate controversies. These divisions reflect broader transnational patterns of ideological fragmentation within right-wing movements.",
       "convergence": 4,
       "countries": [
         {
           "name": "🇮🇹 Fratelli d'Italia / Lega",
-          "note": "Lega faces internal dissent over Salvini's leadership, with regional leaders calling for change and Vannacci's party gaining traction."
+          "note": "Salvini faces internal rebellion from regional governors like Fontana and Zaia, with tensions over leadership and policy direction ahead of elections."
         },
         {
           "name": "🇵🇱 Prawo i Sprawiedliwość",
-          "note": "PiS experiences mass resignations and internal conflicts, with Morawiecki forming a rival faction."
+          "note": "PiS fractures as Morawiecki launches Rozwój Plus, challenging Kaczyński's leadership and creating a rival right-wing faction."
         },
         {
           "name": "🇬🇧 Reform UK",
-          "note": "Reform UK faces internal disputes over leadership and policy direction, including suspensions and public disagreements."
+          "note": "Faces candidate controversies, including a councillor's suspension over historical social media posts and internal disputes over strategy."
         },
         {
-          "name": "🇭🇺 Fidesz / Tisza",
-          "note": "Tisza Party faces internal challenges, including resignations and disputes over government appointments and policies."
+          "name": "🇦🇷 La Libertad Avanza",
+          "note": "Internal conflicts emerge between Milei's faction and local leaders like Olmedo and Orozco in Salta, challenging national strategy."
         }
       ],
       "signals": [
-        "leadership disputes",
-        "factional splits",
-        "public disagreements"
+        "leadership challenges",
+        "ideological fragmentation",
+        "regional vs. national tensions",
+        "electoral consequences of disunity"
       ],
-      "article_count": 25,
+      "article_count": 35,
       "refs": [
         {
-          "title": "\"Po rozpadzie nie ma już PiS, do którego wstępowałem\". Mazowiecki radny odszedł z PiS",
-          "source": "Warszawa.Wyborcza.pl",
-          "url": "https://warszawa.wyborcza.pl/warszawa/7,54420,32985703,partia-wypalona-programowo-mazowiecki-radny-odszedl-z-pis.html",
-          "date": "2026-08-25T12:10:00+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Lega, Salvini: nessun passo di lato, faccio un passo avanti",
-          "source": "Askanews",
-          "url": "https://askanews.it/2026/08/25/lega-salvini-nessun-passo-di-lato-faccio-un-passo-avanti/",
-          "date": "2026-08-25T12:06:55+00:00",
+          "title": "Salvini-Fontana al Meeting, stretta di mano a denti stretti. E la data dell’incontro ancora non c’è",
+          "source": "Il Giorno",
+          "url": "https://www.ilgiorno.it/milano/politica/incontro-salvini-fontana-meeting-enha0ryk",
+          "date": "2026-08-26T00:40:38+00:00",
           "category": "italy"
         },
         {
-          "title": "Kolejne odejście z PiS. \"Nie ma już partii, do której wstępowałem\"",
-          "source": "Fakt",
-          "url": "https://www.fakt.pl/polityka/krzysztof-zochowski-odchodzi-z-pis-powiedzial-o-wypaleniu-programowym/ym5tlm8",
-          "date": "2026-08-25T09:50:00+00:00",
+          "title": "Salvini sotto assedio: “Nessun passo di lato”. Gelo con Fontana a Rimini",
+          "source": "la Repubblica",
+          "url": "https://www.repubblica.it/politica/2026/08/26/news/salvini_scontro_lega_fontana_rimini-425547182/",
+          "date": "2026-08-25T23:00:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Lega, stretta di mano tra Salvini e Fontana a Rimini: 'Pronto alla guida collegiale'",
+          "source": "TGLA7",
+          "url": "https://tg.la7.it/politica/lega-salvini-fontana-meeting-rimini-valditara-25-08-2026-261647",
+          "date": "2026-08-25T18:44:05+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Lega, prove di pace tra Salvini e il presidente lombardo Fontana: gelo con Vannacci",
+          "source": "Milano Pavia NEWS",
+          "url": "https://milanopavia.news/politica-milano/lega-prove-di-pace-tra-salvini-e-il-presidente-lombardo-fontana-gelo-con-vannacci/",
+          "date": "2026-08-25T17:21:14+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Salvini-Fontana, stretta di mano al Meeting di Rimini",
+          "source": "RaiNews",
+          "url": "https://www.rainews.it/amp/tgr/lombardia/video/2026/08/salvini-fontana-stretta-di-mano-al-meeting-di-rimini-cc23f162-14d3-4149-9cd4-2cc6e3a5bd80.html",
+          "date": "2026-08-25T16:42:02+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Kłótnia o stołek wicemarszałka. Błaszczak zarzucił Morawieckiemu „działanie na rzecz rządzących”",
+          "source": "Wprost",
+          "url": "https://www.wprost.pl/kraj/12423429/klotnia-o-stolek-wicemarszalka-blaszczak-zarzucil-morawieckiemu-dzialanie-na-rzecz-rzadzacych.html",
+          "date": "2026-08-25T16:26:00+00:00",
           "category": "poland"
         },
         {
-          "title": "Żochowski odchodzi z PiS. Wieloletni radny ogłosił decyzję",
+          "title": "Ostre spięcie Olejnik z posłem PiS. „Niech pan nie obraża Lecha Kaczyńskiego\"",
+          "source": "Goniec.pl",
+          "url": "https://goniec.pl/ostre-spiecie-olejnik-z-poslem-pis-niech-pan-nie-obraza-lecha-kaczynskiego-ki-wksw-250826",
+          "date": "2026-08-25T15:18:29+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Wrze na prawicy. Błaszczak ostro o ruchu Morawieckiego",
+          "source": "Interia Wydarzenia",
+          "url": "https://wydarzenia.interia.pl/kraj/news-blaszczak-uderza-w-morawieckiego-dzialanie-na-rzecz-koalicji,nId,23533919",
+          "date": "2026-08-25T15:05:39+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Błaszczak uderza w Morawieckiego. \"Prezent dla Koalicji 13 grudnia\"",
           "source": "Do Rzeczy",
-          "url": "https://dorzeczy.pl/opinie/933529/zochowski-odchodzi-z-pis-wieloletni-radny-oglosil-decyzje.html",
-          "date": "2026-08-25T09:18:00+00:00",
+          "url": "https://dorzeczy.pl/opinie/933664/blaszczak-uderza-w-morawieckiego-prezent-dla-koalicji-13-grudnia.html",
+          "date": "2026-08-25T14:34:00+00:00",
           "category": "poland"
         },
         {
-          "title": "Krzysztof Żochowski odchodzi z PiS. Radny sejmiku i dyrektor szpitala ogłosił decyzję",
-          "source": "WP Wiadomości",
-          "url": "https://wiadomosci.wp.pl/krzysztof-zochowski-odchodzi-z-pis-radny-sejmiku-i-dyrektor-szpitala-oglosil-decyzje-7322187107989696a",
-          "date": "2026-08-25T08:36:34+00:00",
+          "title": "Salvini tira dritto e sfida i malumori nella Lega: “Nessun passo di lato”",
+          "source": "il Giornale",
+          "url": "https://www.ilgiornale.it/news/interni/salvini-tira-dritto-e-sfida-i-malumori-nella-lega-nessun-passo-di-lato/",
+          "date": "2026-08-25T12:48:30+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Governo, Salvini: la scadenza naturale è l’autunno del 2027",
+          "source": "Askanews",
+          "url": "https://askanews.it/2026/08/25/governo-salvini-la-scadenza-naturale-e-lautunno-del-2027/",
+          "date": "2026-08-25T12:12:15+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Fratelli d'Italia, è Rossato contro tutti: \"Gerosa e Urzì pensino ai risultati del loro governo di partito. Goio? Mi bypassava per parlare coi vertici. Ho agito con serietà\"",
+          "source": "il Dolomiti",
+          "url": "https://www.ildolomiti.it/politica/2026/fratelli-ditalia-e-rossato-contro-tutti-gerosa-e-urzi-pensino-ai-risultati-del-loro-governo-di-partito-goio-mi-bypassava-per-parlare-coi-vertici-ho-agito-con-serieta",
+          "date": "2026-08-25T11:30:37+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "\"Nie wziąłbym go\". Morawiecki skreśla Sasina, ale Bosaka już nie",
+          "source": "PolsatNews.pl",
+          "url": "https://www.polsatnews.pl/wiadomosc/2026-08-25/nie-wzialbym-go-morawiecki-skresla-nazwisko-sasina/",
+          "date": "2026-08-25T11:02:00+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Awantura o fotel wicemarszałka Sejmu. Trzech kandydatów na jedno stanowisko",
+          "source": "Wprost",
+          "url": "https://www.wprost.pl/kraj/12422976/awantura-o-fotel-wicemarszalka-sejmu-trzech-kandydatow-na-jedno-stanowisko.html",
+          "date": "2026-08-25T09:02:00+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "10 najbardziej leniwych polskich posłów. Dominują nazwiska z PiS i Konfederacji",
+          "source": "Wprost",
+          "url": "https://www.wprost.pl/polityka/12422970/10-najbardziej-leniwych-polskich-poslow-dominuja-nazwiska-z-pis-i-konfederacji.html",
+          "date": "2026-08-25T08:52:00+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Ruszyła wielka prawicowa układanka. Tusk zaciera ręce, ale za chwilę może mieć duży problem",
+          "source": "Interia Wydarzenia",
+          "url": "https://wydarzenia.interia.pl/kraj/news-dekompozycja-prawicy-o-losach-kraju-zadecyduje-kilkanascie-p,nId,23533531",
+          "date": "2026-08-25T08:37:46+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Był \"PiS-owcem z krwi i kości\". Teraz odchodzi z partii",
+          "source": "Wiadomości Onet",
+          "url": "https://wiadomosci.onet.pl/kraj/krzysztof-zochowski-oglosil-decyzje-nie-ma-juz-pis-u/lvwwz65",
+          "date": "2026-08-25T07:18:37+00:00",
           "category": "poland"
         },
         {
@@ -371,95 +541,103 @@
           "category": "italy"
         },
         {
-          "title": "Csurrant-cseppent a fideszes polgármesterek és képviselők egyesületeinek az állami támogatásokból",
-          "source": "Telex",
-          "url": "https://telex.hu/belfold/2026/08/25/civil-szervezetek-tamogatasai-kormany-terkepes-adatbazis",
-          "date": "2026-08-25T02:55:29+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Krzysztof Żochowski odchodzi z PiS. „Nie ma już PiS-u, do którego wstępowałem”",
-          "source": "Podlasie24",
-          "url": "https://podlasie24.pl/region/krzysztof-zochowski-odchodzi-z-pis-nie-ma-juz-pis-u-do-ktorego-wstepowalem-20260825003959",
-          "date": "2026-08-24T22:43:51+00:00",
+          "title": "W PiS są wściekli na Morawieckiego. Mówią: Rozwój Plus to Plagiat Plus",
+          "source": "Newsweek",
+          "url": "https://www.newsweek.pl/polska/polityka/rozlam-w-pis-mateusz-morawiecki-oskarzany-o-podkradanie-programu-partii/fr2jhxq",
+          "date": "2026-08-25T03:50:00+00:00",
           "category": "poland"
-        },
-        {
-          "title": "PiS z najgorszym wynikiem od wyborów. Niezdecydowani depczą mu po piętach",
-          "source": "Polityka Super Express",
-          "url": "https://polityka.se.pl/wiadomosci/pis-z-najgorszym-wynikiem-od-wyborow-niezdecydowani-depcza-mu-po-pietach-aa-wH67-kERu-EKN7.html",
-          "date": "2026-08-24T20:44:00+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Najnowszy sondaż budzi emocje. Partia \"Trudno powiedzieć\" tuż za PiS",
-          "source": "WP Wiadomości",
-          "url": "https://wiadomosci.wp.pl/najnowszy-sondaz-budzi-emocje-partia-trudno-powiedziec-tuz-za-pis-7322002855131264a",
-          "date": "2026-08-24T19:58:26+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "PiS odcina się od Zondacrypto. \"Dęta sprawa, która ma przykryć afery PO\"",
-          "source": "Polskie Radio 24",
-          "url": "https://polskieradio24.pl/polityka/pis-odcina-sie-od-zondacrypto-deta-sprawa-ktora-ma-przykryc-afery-po",
-          "date": "2026-08-24T18:44:32+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Rozłam w PiS dotarł do UE. Ruch europosłów Mateusza Morawieckiego",
-          "source": "Wprost",
-          "url": "https://www.wprost.pl/kraj/12422517/rozlam-w-pis-dotarl-do-ue-ruch-europoslow-mateusza-morawieckiego.html",
-          "date": "2026-08-24T17:36:00+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "PiS odcina się od Piesiewicza. W tle zegarek wart 40 tys. euro. Suski: „Nie znam go”",
-          "source": "Polityka Super Express",
-          "url": "https://polityka.se.pl/wiadomosci/pis-odcina-sie-od-piesiewicza-w-tle-zegarek-wart-40-tys-euro-suski-nie-znam-go-aa-iC6o-MPU3-rH5W.html",
-          "date": "2026-08-24T16:47:00+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "A választás óta a felére csökkent a Fidesz–KDNP-frakció létszáma a pécsi közgyűlésben",
-          "source": "Telex",
-          "url": "https://telex.hu/belfold/2026/08/24/fidesz-kdnp-pecs-cziraki-attila-kilepes",
-          "date": "2026-08-24T15:49:42+00:00",
-          "category": "hungary"
         }
       ],
       "first_seen": "2026-08-23T02:16:32+00:00",
-      "last_seen": "2026-08-25T13:43:02+00:00"
+      "last_seen": "2026-08-26T02:17:11+00:00"
     },
     {
       "id": "far-right-parties-gain-ground-in-regional-and-national-polls",
       "title": "Far-right parties gain ground in regional and national polls",
-      "blurb": "Far-right parties are making significant gains in polls across Europe, particularly in Germany, Sweden, and France. This trend reflects growing public dissatisfaction with mainstream parties and a shift toward nationalist and anti-establishment platforms. The theme highlights how far-right parties are capitalizing on economic and social anxieties to expand their influence.",
+      "blurb": "Far-right parties are making significant electoral gains across Europe, with Germany's AfD leading in Saxony-Anhalt polls, Sweden Democrats narrowing the gap in Sweden, and France's Rassemblement National dominating presidential polls. This transnational surge reflects growing voter dissatisfaction with mainstream parties and a shift toward nationalist, anti-establishment platforms.",
       "convergence": 3,
       "countries": [
         {
           "name": "🇩🇪 Alternative für Deutschland",
-          "note": "AfD leads polls in Saxony-Anhalt and eastern Germany, positioning itself for potential governance."
+          "note": "AfD leads polls in Saxony-Anhalt with 43%, potentially securing an absolute majority and making Ulrich Siegmund Germany's first far-right state premier."
         },
         {
           "name": "🇸🇪 Sverigedemokraterna",
-          "note": "Sweden Democrats propose radical housing policies and face legal challenges over campaign materials."
+          "note": "Gains support in polls, narrowing the right-wing bloc's lead over the opposition to 6.8%, while pushing for stricter immigration and housing policies."
         },
         {
           "name": "🇫🇷 Rassemblement National",
-          "note": "Marine Le Pen leads French presidential polls, with RN gaining traction ahead of the 2027 election."
+          "note": "Marine Le Pen leads 2027 presidential polls with 35-38%, positioning her as the frontrunner against leftist rivals like Mélenchon."
         },
         {
           "name": "🇬🇧 Reform UK",
-          "note": "Reform UK gains in UK polls, challenging the Conservative Party and influencing policy debates."
+          "note": "Leads polls at 24%, surpassing Conservatives, with Nigel Farage's influence growing amid internal Tory struggles."
         }
       ],
       "signals": [
-        "polling trends",
-        "electoral gains",
-        "public dissatisfaction"
+        "voter dissatisfaction with mainstream parties",
+        "nationalist platform resonance",
+        "electoral surge in regional strongholds",
+        "anti-establishment sentiment"
       ],
-      "article_count": 20,
+      "article_count": 28,
       "refs": [
+        {
+          "title": "Medienbericht: Diese Branchen würde eine AfD-Regierung in Sachsen-Anhalt belasten",
+          "source": "RP Online",
+          "url": "https://rp-online.de/politik/deutschland/sachsen-anhalt-diese-branchen-wuerden-unter-afd-regierung-leiden_aid-153729099",
+          "date": "2026-08-25T23:02:00+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "IWH: AfD-Regierung könnte Wirtschaftswachstum reduzieren",
+          "source": "WELT",
+          "url": "https://www.welt.de/regionales/sachsen-anhalt/article6a8e1102511d4fd3bc4e3e58/iwh-afd-regierung-koennte-wirtschaftswachstum-reduzieren.html",
+          "date": "2026-08-25T22:05:22+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "France: Marine Le Pen aborde clairement en favorite la course à la présidence",
+          "source": "weltwoche.ch",
+          "url": "https://weltwoche.ch/fr/daily/france-marine-le-pen-aborde-clairement-en-favorite-la-course-a-la-presidence/",
+          "date": "2026-08-25T19:53:08+00:00",
+          "category": "france"
+        },
+        {
+          "title": "«Gefährlichster Mann Deutschlands» steht vor Erdrutschsieg",
+          "source": "Blick",
+          "url": "https://www.blick.ch/ausland/zuerst-sachsen-anhalt-dann-ganz-deutschland-mit-diesem-programm-greift-die-afd-nach-der-macht-migranten-ausschaffen-verfassungsschutz-abschaffen-schulsystem-umbauen-id22209855.html",
+          "date": "2026-08-25T19:25:52+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Forsa-Umfrage: AfD in Ostdeutschland mehr als doppelt so stark wie Linke",
+          "source": "Ostdeutsche Allgemeine",
+          "url": "https://ostdeutscheallgemeine.com/article/forsa-afd-ostdeutschland-linke-cdu-10327717",
+          "date": "2026-08-25T16:15:44+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "AfD bleibt in Forsa-Umfrage vor der Union",
+          "source": "Hasepost",
+          "url": "https://hasepost.de/afd-bleibt-in-forsa-umfrage-vor-der-union-747390/",
+          "date": "2026-08-25T16:02:05+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Högsta stödet för L sedan kramen",
+          "source": "Dagens Nyheter",
+          "url": "https://www.dn.se/sverige/hogsta-stodet-for-l-sedan-kramen/",
+          "date": "2026-08-25T14:57:49+00:00",
+          "category": "sweden"
+        },
+        {
+          "title": "„Trendbarometer“: AfD und Linke bei den Ost-Wählern auf Platz eins und zwei",
+          "source": "WELT",
+          "url": "https://www.welt.de/politik/deutschland/article6a8d9195511d4fd3bc4e368f/trendbarometer-afd-und-linke-bei-den-ost-waehlern-auf-platz-eins-und-zwei.html",
+          "date": "2026-08-25T14:00:12+00:00",
+          "category": "germany"
+        },
         {
           "title": "AfD auf Rekordhoch, Union und SPD kommen nicht vom Fleck - n-tv.de",
           "source": "",
@@ -468,11 +646,25 @@
           "category": "germany"
         },
         {
-          "title": "French far-right leader Marine Le Pen polling at record high ahead of 2027 election",
-          "source": "Middle East Eye",
-          "url": "https://www.middleeasteye.net/news/french-far-right-candidate-marine-le-pen-polls-record-high-ahead-2027-election",
-          "date": "2026-08-25T11:13:12+00:00",
-          "category": "france"
+          "title": "Wählt Sachsen-Anhalt am 6. September eine AfD-Regierung?",
+          "source": "DW.com",
+          "url": "https://www.dw.com/de/landtagswahl-sachsen-anhalt-6-september-afd-regierung-moeglich-rechtsextrem-alternative-deutschland/a-78478790",
+          "date": "2026-08-25T11:36:43+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Fjällräven kräver att SD byter typsnitt – Senaste nytt om valet 2026",
+          "source": "SVT Nyheter",
+          "url": "https://www.svt.se/nyheter/inrikes/senaste-nytt-om-val-2026?inlagg=d354c3fdd94367af911740e3fd55ad24",
+          "date": "2026-08-25T10:35:29+00:00",
+          "category": "sweden"
+        },
+        {
+          "title": "Javier Milei reúne a su tropa legislativa para definir la estrategia en el Congreso",
+          "source": "Ambito",
+          "url": "https://www.ambito.com/politica/javier-milei-reune-su-tropa-legislativa-definir-la-estrategia-el-congreso-n6314362",
+          "date": "2026-08-25T10:00:00+00:00",
+          "category": "argentina"
         },
         {
           "title": "Weidel nennt Merz und Klingbeil „Flachzangen“ – dann legt sie ihre Pläne offen",
@@ -482,11 +674,11 @@
           "category": "germany"
         },
         {
-          "title": "Sverigedemokraterna återradikaliseras",
-          "source": "Dagens Arena",
-          "url": "https://www.dagensarena.se/innehall/sverigedemokraterna-aterradikaliseras/",
-          "date": "2026-08-25T08:59:59+00:00",
-          "category": "sweden"
+          "title": "Banaszak warnt vor AfD-Regierung in Sachsen-Anhalt: \"Kein spannendes Live-Experiment\"",
+          "source": "prisma.de",
+          "url": "https://www.prisma.de/news/tv/Banaszak-warnt-vor-AfD-Regierung-in-Sachsen-Anhalt-Kein-spannendes-Live-Experiment,57838003",
+          "date": "2026-08-25T09:09:00+00:00",
+          "category": "germany"
         },
         {
           "title": "Umfrage: Merz im Politiker-Ranking mit großem Rückstand auf letztem Platz – AfD baut Vorsprung vor Union aus",
@@ -496,11 +688,18 @@
           "category": "germany"
         },
         {
-          "title": "Najnowszy sondaż partyjny. PiS odrabia straty, jedna partia mocno w górę",
-          "source": "Polskie Radio 24",
-          "url": "https://polskieradio24.pl/polska/najnowszy-sondaz-partyjny-pis-odrabia-straty-jedna-partia-mocno-w-gore",
-          "date": "2026-08-25T07:08:23+00:00",
-          "category": "poland"
+          "title": "Politische Bücher: Warum ist die AfD im Osten so erfolgreich?",
+          "source": "FAZ",
+          "url": "https://www.faz.net/aktuell/politik/politische-buecher/politische-buecher-warum-ist-die-afd-im-osten-so-erfolgreich-accg-200821889.html",
+          "date": "2026-08-25T07:20:41+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Germany’s hot political autumn",
+          "source": "ING THINK economic and financial analysis | ING THINK",
+          "url": "https://think.ing.com/articles/germanys-hot-political-fall-season/",
+          "date": "2026-08-25T06:16:23+00:00",
+          "category": "germany"
         },
         {
           "title": "Umfragen vor der Landtagswahl 2026 in Sachsen-Anhalt: AfD forciert Alleinregierung – Erste Prognosen",
@@ -510,203 +709,141 @@
           "category": "germany"
         },
         {
+          "title": "The ultra ex-military man who threatens to overtake Meloni on the right",
+          "source": "Diari ARA",
+          "url": "https://en.ara.cat/international/the-ultra-ex-military-man-who-threatens-to-overtake-meloni-the-right_1_5831457.html",
+          "date": "2026-08-25T05:03:16+00:00",
+          "category": "italy"
+        },
+        {
           "title": "AfD could take power in German state for first time",
           "source": "Hürriyet Daily News",
           "url": "https://www.hurriyetdailynews.com/afd-could-take-power-in-german-state-for-first-time-226015",
           "date": "2026-08-25T02:47:01+00:00",
           "category": "germany"
-        },
-        {
-          "title": "Falls sie nicht über 5 Prozent kommen – Grüne und Linke warnen wegen AfD vor „irreversiblen Folgen“",
-          "source": "WELT",
-          "url": "https://www.welt.de/politik/deutschland/article6a8ceac7511d4fd3bc4e2cab/sachsen-anhalt-falls-sie-nicht-ueber-5-prozent-kommen-gruene-und-linke-warnen-wegen-afd-vor-irreversiblen-folgen.html",
-          "date": "2026-08-25T01:22:03+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Marine Le Pen, Jean-Luc Mélenchon... Ce que révèle le dernier sondage sur les intentions de vote",
-          "source": "BFM",
-          "url": "https://www.bfmtv.com/politique/elections/presidentielle/video-marine-le-pen-jean-luc-melenchon-ce-que-revele-le-dernier-sondage-sur-les-intentions-de-vote_VN-202608240899.html",
-          "date": "2026-08-24T21:24:36+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Présidentielle 2027 : Mélenchon remonte, Philippe vacille et Marine Le Pen reste très loin devant",
-          "source": "Gentside",
-          "url": "https://www.gentside.com/news/politique/presidentielle-2027-melenchon-remonte-philippe-vacille-et-marine-le-pen-reste-tres-loin-devant_art126803.html",
-          "date": "2026-08-24T20:30:00+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Présidentielle 2027 : Marine Le Pen à 35 %, Mélenchon deuxième devant Édouard Philippe",
-          "source": "lemediaen442.fr",
-          "url": "https://lemediaen442.fr/presidentielle-2027-marine-le-pen-a-35-melenchon-deuxieme-devant-edouard-philippe/",
-          "date": "2026-08-24T17:38:47+00:00",
-          "category": "france"
-        },
-        {
-          "title": "PARIS : Présidentielle 2027 – Le RN en tête d’un sondage, appelle au « rassemblement »",
-          "source": "Presse Agence",
-          "url": "https://presseagence.fr/paris-presidentielle-2027-le-rn-en-tete-dun-sondage-appelle-au-rassemblement/",
-          "date": "2026-08-24T17:00:53+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Andersson: SD har övergett Liberalerna inför valet",
-          "source": "HurBra.se",
-          "url": "https://hurbra.se/andersson-sd-overgett-liberalerna-24-augusti-2026/",
-          "date": "2026-08-24T15:58:53+00:00",
-          "category": "sweden"
-        },
-        {
-          "title": "Sondage présidentielle : Le Pen gagnante dans tous les scénarios, Mélenchon en position de rejoindre le second tour",
-          "source": "Charente Libre",
-          "url": "https://www.charentelibre.fr/elections/presidentielles/presidentielle-2027-jean-luc-melenchon-donne-au-second-tour-marine-le-pen-gagnante-dans-tous-les-scenarios-30354629.php",
-          "date": "2026-08-24T14:43:11+00:00",
-          "category": "france"
         }
       ],
       "first_seen": "2026-08-23T02:16:32+00:00",
-      "last_seen": "2026-08-25T13:43:02+00:00"
+      "last_seen": "2026-08-26T02:17:11+00:00"
     },
     {
       "id": "right-wing-governments-target-social-programs-amid-fiscal-debates",
       "title": "Right-wing governments target social programs amid fiscal debates",
-      "blurb": "Right-wing governments are increasingly targeting social programs as part of broader fiscal debates, often justifying cuts as necessary for economic stability. This theme is evident in Argentina, the U.S., and Hungary, where leaders are pushing austerity measures and reducing public spending on welfare and education programs.",
+      "blurb": "Right-wing governments in Argentina, Hungary, and the UK are implementing or proposing cuts to social programs as part of broader fiscal consolidation efforts. Milei's administration refuses aid to indebted families, Hungary's Tisza government faces backlash over austerity measures, and Reform UK proposes housing policy changes that critics argue could harm vulnerable groups. These parallel developments reflect a shared ideological commitment to reducing state welfare spending.",
       "convergence": 3,
       "countries": [
         {
           "name": "🇦🇷 La Libertad Avanza",
-          "note": "Milei's government implements austerity measures, including cuts to social programs and public spending."
-        },
-        {
-          "name": "🇺🇸 MAGA / Trump",
-          "note": "Trump administration proposes cuts to school lunch programs and other social initiatives, prioritizing fiscal restraint."
+          "note": "Government refuses aid to 5.86 million indebted families, calling debt a 'private issue' despite rising default rates."
         },
         {
           "name": "🇭🇺 Fidesz / Tisza",
-          "note": "Hungary's new government implements austerity measures, including cuts to social programs and public spending."
+          "note": "Tisza government implements austerity measures, including budget cuts and reduced social spending, despite pre-election promises."
         },
         {
           "name": "🇬🇧 Reform UK",
-          "note": "Reform UK proposes cuts to social housing and welfare programs, prioritizing British-born citizens."
+          "note": "Proposes prioritizing married couples with children for social housing, raising concerns from domestic abuse charities about victims staying with abusers."
+        },
+        {
+          "name": "🇺🇸 MAGA / Trump",
+          "note": "Proposes changes to Medicare and Social Security, including ending Medicare Part D in 2027, sparking concerns about healthcare access."
         }
       ],
       "signals": [
-        "austerity measures",
-        "fiscal policy debates",
-        "welfare cuts"
+        "fiscal consolidation rhetoric",
+        "welfare state retrenchment",
+        "targeted cuts to social programs",
+        "ideological commitment to reduced state spending"
       ],
-      "article_count": 15,
+      "article_count": 22,
       "refs": [
         {
-          "title": "New guidelines for school lunch issued by Trump administration",
-          "source": "CBS News",
-          "url": "https://www.cbsnews.com/texas/video/new-guidelines-for-school-lunch-issued-by-trump-administration/",
-          "date": "2026-08-25T12:24:00+00:00",
+          "title": "El Gobierno ratificó que no asistirá a las familias endeudadas",
+          "source": "Diagonales",
+          "url": "https://www.diagonales.com/nacion/el-gobierno-ratifico-que-no-asistira-a-las-familias-endeudadas_a6a8dc50de913f1a23ba05f7a",
+          "date": "2026-08-25T16:59:31+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "President Trump Approval Rating Hits Record Low",
+          "source": "FOX Sports Radio",
+          "url": "https://foxsportsradio.iheart.com/content/2026-08-25-president-trump-approval-rating-hits-record-low/",
+          "date": "2026-08-25T16:44:00+00:00",
           "category": "usa"
         },
         {
-          "title": "Trump EPA aims to exempt datacenters from disclosing air pollution, advocates warn",
-          "source": "The Guardian",
-          "url": "https://www.theguardian.com/us-news/2026/aug/25/datacenters-air-pollution-epa",
-          "date": "2026-08-25T11:00:00+00:00",
-          "category": "usa"
+          "title": "La encuesta que muestra cabeza a cabeza a Milei y Kicillof para 2027",
+          "source": "Revista Noticias",
+          "url": "https://noticias.perfil.com/noticias/politica/la-encuesta-que-muestra-cabeza-a-cabeza-a-milei-y-kicillof-para-2027.phtml",
+          "date": "2026-08-25T16:13:00+00:00",
+          "category": "argentina"
         },
         {
-          "title": "La encuesta que generó alivio en la Casa Rosada y el plan de Milei para activar la campaña libertaria en Tucumán",
-          "source": "TN",
-          "url": "https://tn.com.ar/politica/2026/08/25/la-encuesta-que-genero-alivio-en-la-casa-rosada-y-el-plan-de-milei-para-activar-la-campana-libertaria-en-tucuman/",
+          "title": "63 milliárd forintba fognak kerülni a Tisza-kormány első szociális intézkedései",
+          "source": "Telex",
+          "url": "https://telex.hu/gazdasag/2026/08/25/penzugyminiszterium-karman-andras-2026-koltsegvetes-modositasa",
+          "date": "2026-08-25T14:25:51+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Ruth Moschner prüft Wahlversprechen: „Die AfD liebt Menschen wie mich!“",
+          "source": "SWR3",
+          "url": "https://www.swr3.de/aktuell/promi-news/ruth-moschner-afd-108.html",
+          "date": "2026-08-25T12:32:29+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Carburanti, altra proroga accise: poi aiuti mirati per chi guadagna meno",
+          "source": "Il Fatto Quotidiano",
+          "url": "https://www.ilfattoquotidiano.it/2026/08/25/prezzi-carburanti-proroga-accise-notizie/8487601/",
+          "date": "2026-08-25T11:28:17+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Szalai Piroska: Miért nem elég a Tisza-kormánynak 12 ezer milliárd forint?",
+          "source": "HírTv",
+          "url": "https://hirtv.origo.hu/hirtv-gazdasagi-hirei/2026/08/szalai-piroska-miert-nem-eleg-a-tisza-kormanynak-12-ezer-milliard-forint",
+          "date": "2026-08-25T10:53:02+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Tisza-kormány: Orbán Anita feljelentést tett a lélegeztetőgép-ügyben, Magyar Péter keményen üzent az előző rendszer haszonélvezőinek",
+          "source": "Portfolio.hu",
+          "url": "https://www.portfolio.hu/gazdasag/20260825/tisza-kormany-orban-anita-feljelentest-tett-a-lelegeztetogep-ugyben-magyar-peter-kemenyen-uzent-az-elozo-rendszer-haszonelvezoinek-857944",
           "date": "2026-08-25T10:11:00+00:00",
-          "category": "argentina"
+          "category": "hungary"
         },
         {
-          "title": "Salvini, avanti senza remore sul contributo da grandi banche ed energetici",
-          "source": "ANSA",
-          "url": "https://www.ansa.it/sito/notizie/topnews/2026/08/25/salvini-avanti-senza-remore-sul-contributo-da-grandi-banche-ed-energetici_c2e0e816-cf2e-4dff-9a11-e3f70de1cc14.html",
-          "date": "2026-08-25T09:06:00+00:00",
-          "category": "italy"
+          "title": "Nagy a csönd a Tisza nyugdíjígéretei körül – Tényleg ezekre az intézkedésekre lenne szükség?",
+          "source": "Portfolio.hu",
+          "url": "https://www.portfolio.hu/gazdasag/20260825/nagy-a-csond-a-tisza-nyugdijigeretei-korul-tenyleg-ezekre-az-intezkedesekre-lenne-szukseg-857800?amp",
+          "date": "2026-08-25T10:00:00+00:00",
+          "category": "hungary"
         },
         {
-          "title": "Nevada sues Trump administration over reduction in Colorado River water use",
-          "source": "Anadolu Ajansı",
-          "url": "https://www.aa.com.tr/en/americas/nevada-sues-trump-administration-over-reduction-in-colorado-river-water-use/4036496",
-          "date": "2026-08-25T07:32:17+00:00",
+          "title": "Vegyi szennyezés történhetett a Holt-Tiszánál: zavaros, habos víz miatt tettek feljelentést",
+          "source": "Pénzcentrum",
+          "url": "https://www.penzcentrum.hu/hellovidek/20260825/vegyi-szennyezes-tortenhetett-a-holt-tiszanal-zavaros-habos-viz-miatt-tettek-feljelentest-1204389/amp",
+          "date": "2026-08-25T07:45:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "A 73%-tól a megszorításokig: Magyar Péter kormányának első igazi politikai válsága",
+          "source": "Szócikk",
+          "url": "https://szocikk.hu/2026/08/25/a-73-tol-a-megszoritasokig-magyar-peter-kormanyanak-elso-igazi-politikai-valsaga/",
+          "date": "2026-08-25T06:41:15+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "The Trump Administration’s Quiet Take Down Of Healthcare Safety Agency",
+          "source": "Forbes",
+          "url": "https://www.forbes.com/sites/brucelee/2026/08/24/the-trump-administrations-quiet-take-down-of-healthcare-safety-agency/",
+          "date": "2026-08-25T02:33:52+00:00",
           "category": "usa"
-        },
-        {
-          "title": "Carburante, la stangata. Domani scade lo ’sconto’: \"E il potere d’acquisto è sempre più basso\"",
-          "source": "Il Resto del Carlino",
-          "url": "https://www.ilrestodelcarlino.it/ferrara/cronaca/carburante-la-stangata-domani-scade-6d43510c",
-          "date": "2026-08-25T05:17:01+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "La CAME desmintió a Javier Milei, quien aseguró que el Mundial disparó las deudas por la compra de televisores",
-          "source": "Minuto Neuquen",
-          "url": "https://www.minutoneuquen.com/nacionales/2026/8/25/la-came-desmintio-a-javier-milei-quien-aseguro-que-el-mundial-disparo-las-deudas-por-la-compra-de-te-409900.html",
-          "date": "2026-08-25T00:17:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Preocupa la caída del apoyo a Milei entre los votantes jóvenes | 24 de agosto de 2026",
-          "source": "Hoy Día Córdoba",
-          "url": "https://hoydia.com.ar/politica/nacional/el-apoyo-a-milei-se-desploma-entre-los-votantes-jovenes/",
-          "date": "2026-08-24T21:33:57+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Aborto, desempleo y consumo: tres narrativas que Javier Milei repite y que no se sostienen con los datos",
-          "source": "El Miércoles Digital",
-          "url": "https://www.elmiercolesdigital.com.ar/aborto-desempleo-y-consumo-tres-narrativas-que-javier-milei-repite-y-que-no-se-sostienen-con-los-datos/",
-          "date": "2026-08-24T19:31:17+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Trump administration pushes healthier school meals, stronger farm connections",
-          "source": "Brownfield Ag News",
-          "url": "https://www.brownfieldagnews.com/news/trump-administration-pushes-healthier-school-meals-stronger-farm-connections/",
-          "date": "2026-08-24T18:32:55+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Endeudamiento: la CAME desmintió al Gobierno y afirmó que las familias toman deuda para comer",
-          "source": "Data Diario",
-          "url": "https://www.datadiario.com/economia/la-came-desmintio-al-gobierno-de-javier-milei-y-afirmo-que-las-familias-se-endeudan-para-comer-202682414420",
-          "date": "2026-08-24T18:11:15+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Arrinconado, Milei intenta contrarrestar la crisis de la mora con relato",
-          "source": "Urgente24",
-          "url": "https://urgente24.com/actualidad/politica/arrinconado-milei-intenta-contrarrestar-la-crisis-la-mora-relato-n631179",
-          "date": "2026-08-24T17:01:59+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "\"Fue un delirio\": Marcelo Longobardi no le tuvo piedad a Javier Milei por sus dichos sobre la morosidad",
-          "source": "Urgente24",
-          "url": "https://urgente24.com/medios/fue-un-delirio-marcelo-longobardi-no-le-tuvo-piedad-javier-milei-sus-dichos-la-morosidad-n631163",
-          "date": "2026-08-24T15:55:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Los datos que desmienten a Javier Milei: menos televisores y más deudas para subsistir",
-          "source": "C5N",
-          "url": "https://www.c5n.com/economia/los-datos-que-desmienten-javier-milei-menos-televisores-y-mas-deudas-subsistir-n246979",
-          "date": "2026-08-24T14:48:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "La llamativa justificación que reveló Luis Majul sobre los insultos de Javier Milei",
-          "source": "El Destape",
-          "url": "https://www.eldestapeweb.com/politica/-si-no-puteara-no-seria-milei-la-llamativa-justificacion-que-revelo-luis-majul-202682403211",
-          "date": "2026-08-24T14:43:32+00:00",
-          "category": "argentina"
         }
       ],
       "first_seen": "2026-08-07T03:42:06+00:00",
-      "last_seen": "2026-08-25T13:43:02+00:00"
+      "last_seen": "2026-08-26T02:17:11+00:00"
     }
   ]
 }
