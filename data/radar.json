@@ -1,111 +1,127 @@
 {
-  "updated_at": "2026-08-27T10:39:14+00:00",
+  "updated_at": "2026-08-27T22:39:47+00:00",
   "lookback_hours": 48,
   "model": "Gemini 3.6 Flash",
   "status": "ok",
   "themes": [
     {
-      "id": "far-right-parties-push-anti-immigration-policies-amid-border-crises",
-      "title": "Far-right parties push anti-immigration policies amid border crises",
-      "blurb": "Right-wing and far-right parties across North America and Europe are intensifying anti-immigration rhetoric and legal measures centered on border management. Proposals range from mass visa revocations and prohibitive fees in the U.S. to aggressive attacks on government migration management in Spain, Italy, and the U.K.",
-      "convergence": 5,
+      "id": "internal-divisions-challenge-right-wing-party-unity",
+      "title": "Internal divisions challenge right-wing party unity",
+      "blurb": "Right-wing and far-right parties across Europe and South America face growing internal fractures, power struggles, and splinter movements. Coalition friction in Italy, leadership rivalries and local leader revolts in Argentina, party defections in Hungary, and parliamentary realignments in Poland highlight rising volatility within conservative blocs.",
+      "convergence": 4,
       "countries": [
         {
-          "name": "🇺🇸 MAGA / Trump",
-          "note": "Trump administration moves to pause visa processing and revoke up to 200,000 visas for asylum seekers while proposing a $103,000 H-1B fee."
-        },
-        {
-          "name": "🇪🇸 Vox",
-          "note": "Santiago Abascal and Vox accuse the Spanish government of treason over the Ceuta border surge, labeling it a hybrid war act and warning Ceuta could become 'another Lampedusa'."
-        },
-        {
           "name": "🇮🇹 Fratelli d'Italia / Lega",
-          "note": "Matteo Salvini asserts Italy will not become 'Europe's migrant camp,' while Fratelli d'Italia proposes a 'charter of duties' for asylum seekers in Udine."
+          "note": "Tension between Salvini and regional leaders like Fontana alongside disputes over election timing and potential mergers"
         },
         {
-          "name": "🇬🇧 Reform UK",
-          "note": "Nigel Farage and Reform UK highlight Channel crossings, arguing illegal arrivals pose security risks and advocating strict housing prioritization."
+          "name": "🇦🇷 La Libertad Avanza",
+          "note": "Internal strife between Casa Rosada leadership and local municipal chapters over 2027 strategy"
+        },
+        {
+          "name": "🇵🇱 Prawo i Sprawiedliwość",
+          "note": "Factional splits prompt Sejm leadership changes while former PM Morawiecki builds a separate political movement"
+        },
+        {
+          "name": "🇭🇺 Fidesz / Tisza",
+          "note": "Fidesz faces internal resignations and faction departures following electoral setbacks"
+        },
+        {
+          "name": "🇸🇪 Sverigedemokraterna",
+          "note": "Right-wing coalition dynamics fracture following the breakdown of Liberalerna's agreement with SD"
         }
       ],
       "signals": [
-        "policy imitation",
-        "reaction to border surge",
-        "coordinated messaging"
+        "factional splits",
+        "coalition tension",
+        "leadership rivalries",
+        "party realignments"
       ],
-      "article_count": 35,
+      "article_count": 15,
       "refs": [
         {
-          "title": "Trump administration plans mass visa revocations for people seeking asylum",
-          "source": "USA Today",
-          "url": "https://www.usatoday.com/story/news/nation/2026/08/25/trump-administration-plans-mass-visa-revocations-for-people-seeking-asylum/91454455007/",
-          "date": "2026-08-25T22:18:00+00:00",
-          "category": "usa"
+          "title": "KARL RYDÅ: Sista natten med gänget för Liberalerna",
+          "source": "UNT",
+          "url": "https://www.unt.se/ledare/artikel/sista-natten-med-ganget-for-liberalerna/r496mw9j",
+          "date": "2026-08-26T04:30:00+00:00",
+          "category": "sweden"
         },
         {
-          "title": "VOX avisa de que Sánchez pretende convertir Ceuta en una nueva Lampedusa y exige a Vivas que se oponga frontalmente",
-          "source": "Ceuta Ahora",
-          "url": "https://ceutaahora.com/art/22636/vox-avisa-de-que-sanchez-pretende-convertir-ceuta-en-una-nueva-lampedusa-y-exige-a-vivas-que-se-oponga-frontalmente",
-          "date": "2026-08-25T15:23:34+00:00",
-          "category": "spain"
+          "title": "Elérkezett a Fidesz-történelem vége?",
+          "source": "| hvg.hu",
+          "url": "https://hvg.hu/360/20260826_fidesz-tortenelem-jovo-megosztottsag-uj-szervezodesek-orban-viktor-navracsics-tibor-semjen-zsolt",
+          "date": "2026-08-26T04:30:00+00:00",
+          "category": "hungary"
         },
         {
-          "title": "Migranti, Salvini: l’Italia non è il campo profughi d’Europa",
-          "source": "Askanews",
-          "url": "https://askanews.it/2026/08/25/migranti-salvini-litalia-non-e-il-campo-profughi-deuropa/",
-          "date": "2026-08-25T12:00:15+00:00",
+          "title": "Salvini resiste ai nordisti con una strategia",
+          "source": "Il Foglio",
+          "url": "https://www.ilfoglio.it/politica/2026/08/26/news/salvini-resiste-ai-nordisti-con-una-strategia--405593",
+          "date": "2026-08-26T04:00:00+00:00",
           "category": "italy"
         },
         {
-          "title": "TalkTV paused for migrant bombshell as Nigel Farage sparks small boat fears",
-          "source": "Daily Express",
-          "url": "https://www.express.co.uk/showbiz/tv-radio/2242345/talktv-migrant-bombshell-nigel-farage",
-          "date": "2026-08-25T13:39:00+00:00",
-          "category": "uk"
+          "title": "Morawiecki kusi samorządowców. Prezydent z Dolnego Śląska rozważa dołączenie do Rozwoju Plus",
+          "source": "wroclaw.wyborcza.pl",
+          "url": "https://wroclaw.wyborcza.pl/wroclaw/7,35771,32986270,morawiecki-przyciaga-nie-tylko-dzialaczy-pis-swojej-szansy.html",
+          "date": "2026-08-26T04:00:00+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Libertarios del Conurbano amenazan con un éxodo porque Karina relega las discusiones locales",
+          "source": "La Política Online",
+          "url": "https://www.lapoliticaonline.com/provincia/libertarios-del-conurbano-amenazan-con-un-exodo-porque-karina-relega-las-discusiones-locales/",
+          "date": "2026-08-26T00:09:49+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Salvini sotto assedio: “Nessun passo di lato”. Gelo con Fontana a Rimini",
+          "source": "la Repubblica",
+          "url": "https://www.repubblica.it/politica/2026/08/26/news/salvini_scontro_lega_fontana_rimini-425547182/",
+          "date": "2026-08-25T23:00:00+00:00",
+          "category": "italy"
         }
       ],
       "first_seen": "2026-08-23T02:16:32+00:00",
-      "last_seen": "2026-08-27T10:39:14+00:00"
+      "last_seen": "2026-08-27T22:39:47+00:00"
     },
     {
       "id": "far-right-parties-gain-ground-in-regional-and-national-polls",
       "title": "Far-right parties gain ground in regional and national polls",
-      "blurb": "Far-right parties in multiple European nations continue to show momentum in opinion polling ahead of regional and national elections. From Germany's AfD holding strong state-level leads to Norway's Progress Party and France's Rassemblement National dominating national surveys, right-wing forces are expanding their electoral reach.",
+      "blurb": "Far-right parties across Northern Europe and the UK continue to show strong polling momentum ahead of upcoming local, regional, and national elections. From Germany's AfD dominating state polls to Norway's FrP doubling traditional conservative rivals, populist right platforms are capitalizing on voter dissatisfaction with established governments.",
       "convergence": 4,
       "countries": [
         {
           "name": "🇩🇪 Alternative für Deutschland",
-          "note": "AfD leads polls in Saxony-Anhalt at 42-43% and maintains a 28% national polling average."
+          "note": "AfD leads polls with over 40% in Saxony-Anhalt state elections, rattling Berlin's political establishment"
         },
         {
           "name": "🇳🇴 Fremskrittspartiet",
-          "note": "FrP surges past 30% support in Norwegian polling, doubling its nearest conservative rival Høyre."
-        },
-        {
-          "name": "🇫🇷 Rassemblement National",
-          "note": "Marine Le Pen maintains a commanding lead in 2027 French presidential polls, placing first in first-round projections."
-        },
-        {
-          "name": "🇸🇪 Sverigedemokraterna",
-          "note": "SD anchors the right-wing Tidö block, maintaining high support while putting pressure on smaller coalition partners."
+          "note": "FrP surges to over 30% in national opinion polls, cementing a massive lead over Høyre"
         },
         {
           "name": "🇬🇧 Reform UK",
-          "note": "Reform UK wins a Cumberland Council seat in Cumbria, expanding its local electoral footprint."
+          "note": "Secures council by-election victories over Labour and Conservatives in Cumbria ahead of regional elections"
+        },
+        {
+          "name": "🇸🇪 Sverigedemokraterna",
+          "note": "Maintains strong voter loyalty and voter preference advantages over left-wing coalition partners"
         }
       ],
       "signals": [
-        "parallel elections",
-        "poll momentum",
-        "electoral surge"
+        "polling surges",
+        "electoral pressure",
+        "populist momentum",
+        "by-election victories"
       ],
-      "article_count": 30,
+      "article_count": 12,
       "refs": [
         {
-          "title": "Umfragen lagen 2021 völlig daneben – wieder große Wahl-Überraschung in Sachsen-Anhalt? Experte ordnet ein",
-          "source": "Merkur",
-          "url": "https://www.merkur.de/politik/ueberraschung-umfragen-zur-sachsen-anhalt-wahl-gibt-es-beim-ergebnis-eine-zr-94459232.html",
-          "date": "2026-08-26T02:47:00+00:00",
-          "category": "germany"
+          "title": "Frp over 30 prosent – Høyre-effekten uteblir",
+          "source": "Investornytt",
+          "url": "https://www.investornytt.no/nyheter/frp-befester-seg-pa-over-30-prosent/542594",
+          "date": "2026-08-26T07:06:43+00:00",
+          "category": "norway"
         },
         {
           "title": "Frp dobbelt så store som Høyre – Ine-effekten uteblir",
@@ -115,18 +131,11 @@
           "category": "norway"
         },
         {
-          "title": "France: Marine Le Pen aborde clairement en favorite la course à la présidence",
-          "source": "weltwoche.ch",
-          "url": "https://weltwoche.ch/fr/daily/france-marine-le-pen-aborde-clairement-en-favorite-la-course-a-la-presidence/",
-          "date": "2026-08-25T19:53:08+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Liberalerna får högsta stödet på länge – gapet minskar",
-          "source": "Nyheter24",
-          "url": "https://nyheter24.se/nyheter/inrikes/1507736-liberalerna-far-hogsta-stodet-pa-lange-gapet-minskar",
-          "date": "2026-08-25T15:40:00+00:00",
-          "category": "sweden"
+          "title": "FR-üh dran: Nervenkrieg vor der Kamera – kann Sven Schulze dem AfD-Kandidaten im MDR standhalten?",
+          "source": "Frankfurter Rundschau",
+          "url": "https://www.fr.de/politik/schulze-vs-siegmund-live-im-mdr-das-steht-beim-tv-duell-auf-dem-spiel-94460005.html",
+          "date": "2026-08-26T04:10:10+00:00",
+          "category": "germany"
         },
         {
           "title": "Reform’s by-election victory puts Cumbria’s political map in sharper focus",
@@ -134,192 +143,62 @@
           "url": "https://www.newsandstar.co.uk/news/26494347.political-implications-reforms-historic-by-election-win/",
           "date": "2026-08-26T04:00:00+00:00",
           "category": "uk"
-        }
-      ],
-      "first_seen": "2026-08-23T02:16:32+00:00",
-      "last_seen": "2026-08-27T10:39:14+00:00"
-    },
-    {
-      "id": "internal-divisions-challenge-right-wing-party-unity",
-      "title": "Internal divisions challenge right-wing party unity",
-      "blurb": "Governing right-wing coalitions and major conservative parties are grappling with internal friction, factional battles, and leadership disputes. Disputes between key figures in Italy, Sweden, Poland, Argentina, and Hungary highlight ongoing governance challenges within right-wing blocs.",
-      "convergence": 4,
-      "countries": [
-        {
-          "name": "🇮🇹 Fratelli d'Italia / Lega",
-          "note": "Matteo Salvini faces internal dissent from northern League leaders like Attilio Fontana, alongside friction with FdI over election timing."
         },
         {
-          "name": "🇸🇪 Sverigedemokraterna",
-          "note": "Jimmie Åkesson threatens to drop support for Liberalerna if it fails to clear parliamentary thresholds, straining coalition unity."
-        },
-        {
-          "name": "🇵🇱 Prawo i Sprawiedliwość",
-          "note": "Factional disputes between Mateusz Morawiecki's Rozwój Plus group and PiS leadership lead to Sejm seating controversies and member resignations."
-        },
-        {
-          "name": "🇦🇷 La Libertad Avanza",
-          "note": "Power struggles in Casa Rosada escalate as Karina Milei sidelines Santiago Caputo's digital comms team while regional party branches split."
-        },
-        {
-          "name": "🇭🇺 Fidesz / Tisza",
-          "note": "Fidesz faces internal realignment as key figures step down, while Tisza navigates disputed internal nomination processes."
-        }
-      ],
-      "signals": [
-        "coalition strain",
-        "leadership rivalry",
-        "factional infighting"
-      ],
-      "article_count": 40,
-      "refs": [
-        {
-          "title": "Salvini sotto assedio: “Nessun passo di lato”. Gelo con Fontana a Rimini",
-          "source": "la Repubblica",
-          "url": "https://www.repubblica.it/politica/2026/08/26/news/salvini_scontro_lega_fontana_rimini-425547182/",
-          "date": "2026-08-25T23:00:00+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "KARL RYDÅ: Sista natten med gänget för Liberalerna",
-          "source": "UNT",
-          "url": "https://www.unt.se/ledare/artikel/sista-natten-med-ganget-for-liberalerna/r496mw9j",
-          "date": "2026-08-26T04:30:00+00:00",
-          "category": "sweden"
-        },
-        {
-          "title": "Wrze na prawicy. Błaszczak ostro o ruchu Morawieckiego",
-          "source": "Interia Wydarzenia",
-          "url": "https://wydarzenia.interia.pl/kraj/news-blaszczak-uderza-w-morawieckiego-dzialanie-na-rzecz-koalicji,nId,23533919",
-          "date": "2026-08-25T15:05:39+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Santiago Caputo perdió la interna: Karina Milei le sacó la comunicación digital y puso a Santiago Oría en su lugar",
-          "source": "Infocielo",
-          "url": "https://www.infocielo.com/politica-y-economia/santiago-caputo-perdio-la-interna-karina-milei-le-saco-la-comunicacion-digital-y-puso-a-santiago-oria-en-su-lugar",
-          "date": "2026-08-25T18:46:16+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Elérkezett a Fidesz-történelem vége?",
-          "source": "| hvg.hu",
-          "url": "https://hvg.hu/360/20260826_fidesz-tortenelem-jovo-megosztottsag-uj-szervezodesek-orban-viktor-navracsics-tibor-semjen-zsolt",
-          "date": "2026-08-26T04:30:00+00:00",
-          "category": "hungary"
-        }
-      ],
-      "first_seen": "2026-08-23T02:16:32+00:00",
-      "last_seen": "2026-08-27T10:39:14+00:00"
-    },
-    {
-      "id": "right-wing-parties-escalate-attacks-on-public-media-and-press",
-      "title": "Right-wing parties escalate attacks on public media and press",
-      "blurb": "Right-wing figures and administrations are stepping up confrontations with public broadcasters and independent media outlets. From AfD plans to defund state broadcasters in Germany to sharp verbal attacks on news organizations in Argentina and Hungary, press institutions are emerging as primary targets.",
-      "convergence": 4,
-      "countries": [
-        {
-          "name": "🇩🇪 Alternative für Deutschland",
-          "note": "AfD plans to terminate state broadcasting contracts for MDR and NDR, leading public broadcasters to run warning blackout campaigns."
-        },
-        {
-          "name": "🇦🇷 La Libertad Avanza",
-          "note": "Javier Milei escalates aggressive verbal attacks against journalists and media outlets, accusing them of trying to destabilize his administration."
-        },
-        {
-          "name": "🇭🇺 Fidesz / Tisza",
-          "note": "Péter Magyar publicly attacks independent outlets 444 and Telex over critical coverage, amid ongoing debates over public media oversight."
-        }
-      ],
-      "signals": [
-        "rhetorical escalation",
-        "media intimidation",
-        "shared framing"
-      ],
-      "article_count": 25,
-      "refs": [
-        {
-          "title": "Rundfunk - MDR warnt mit Kampagne vor Kündigungsplänen der AfD in Sachsen-Anhalt",
-          "source": "Deutschlandfunk Kultur",
-          "url": "https://www.deutschlandfunkkultur.de/mdr-warnt-mit-kampagne-vor-kuendigungsplaenen-der-afd-in-sachsen-anhalt-106.html",
-          "date": "2026-08-25T22:26:03+00:00",
+          "title": "Umfragen lagen 2021 völlig daneben – wieder große Wahl-Überraschung in Sachsen-Anhalt? Experte ordnet ein",
+          "source": "Merkur",
+          "url": "https://www.merkur.de/politik/ueberraschung-umfragen-zur-sachsen-anhalt-wahl-gibt-es-beim-ergebnis-eine-zr-94459232.html",
+          "date": "2026-08-26T02:47:00+00:00",
           "category": "germany"
         },
         {
-          "title": "\"Mierdas humanas mentirosas\": Milei volvió a insultar a periodistas y respaldó el pedido de Caputo",
-          "source": "Somos Jujuy",
-          "url": "https://www.somosjujuy.com.ar/nacionales/mierdas-humanas-mentirosas-milei-volvio-insultar-periodistas-respaldo-pedido-caputo-n122945",
-          "date": "2026-08-25T19:45:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Magyar Péter egy kommentben támadta be a 444 szerkesztőségét",
-          "source": "HírTv",
-          "url": "https://hirtv.origo.hu/ahirtvhirei/2026/08/magyar-peter-egy-kommentben-tamadta-be-a-444-szerkesztoseget",
-          "date": "2026-08-25T13:04:27+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Sachsen-Anhalt: MDR unterbricht Programm für Warnung vor AfD unter Ulrich Siegmund",
-          "source": "BILD",
-          "url": "https://www.bild.de/politik/inland/sachsen-anhalt-mdr-unterbricht-programm-fuer-warnung-vor-afd-unter-ulrich-siegmund-6a8d6acd511d4fd3bc4e336e",
-          "date": "2026-08-25T12:49:46+00:00",
-          "category": "germany"
+          "title": "Ulrich Siegmund, the rising star of Germany's far right who electrifies crowds and rattles Berlin",
+          "source": "Le Monde.fr",
+          "url": "https://www.lemonde.fr/en/international/article/2026/08/26/ulrich-siegmund-the-rising-star-of-germany-s-far-right-who-electrifies-crowds-and-rattles-berlin_6756849_4.html",
+          "date": "2026-08-25T23:48:04+00:00",
+          "category": "general"
         }
       ],
-      "first_seen": "2026-08-26T13:49:51+00:00",
-      "last_seen": "2026-08-27T10:39:14+00:00"
+      "first_seen": "2026-08-23T02:16:32+00:00",
+      "last_seen": "2026-08-27T22:39:47+00:00"
     },
     {
       "id": "right-wing-governments-target-social-programs-amid-fiscal-debates",
       "title": "Right-wing governments target social programs amid fiscal debates",
-      "blurb": "Right-wing administrations and parties are advancing spending cuts, budget recalibrations, and deregulatory measures to handle fiscal constraints. Debates center on refusing state debt relief, altering tax structures, and curbing public expenditure.",
-      "convergence": 3,
+      "blurb": "Conservative and right-wing populist administrations are pushing aggressive fiscal measures, budget cuts, and economic reforms to rein in state spending. Debates over taxing corporate profits, reforming central bank mandates, and curtailing social program expenditures reflect a shared emphasis on fiscal discipline and market-driven policies.",
+      "convergence": 4,
       "countries": [
         {
           "name": "🇦🇷 La Libertad Avanza",
-          "note": "Javier Milei's government explicitly rejects financial assistance for over 5 million indebted families, citing personal responsibility while enforcing fiscal austerity."
+          "note": "President Milei demands strict adherence to fiscal austerity, Central Bank reforms, and refusal of aid to loan defaulters"
         },
         {
           "name": "🇮🇹 Fratelli d'Italia / Lega",
-          "note": "Matteo Salvini calls for a €20 billion budget expansion as the government debates temporary fuel tax cuts and bank windfall taxes."
-        },
-        {
-          "name": "🇬🇧 Reform UK",
-          "note": "Reform UK proposes deregulatory measures for small businesses, scrapping GDPR, and reversing inheritance taxes on family farms."
+          "note": "Italian government ministers clash over proposed taxes on bank and energy company profits to cover infrastructure deficits"
         },
         {
           "name": "🇭🇺 Fidesz / Tisza",
-          "note": "The government introduces hundreds of billions of HUF in budget savings to control state deficit targets."
+          "note": "Contested government plans for major year-end budget savings trigger opposition warnings of public service cuts"
+        },
+        {
+          "name": "🇳🇴 Fremskrittspartiet",
+          "note": "FrP pushes to curb public expenditure and reduce oil fund spending hysteria through tax cuts"
         }
       ],
       "signals": [
         "fiscal austerity",
-        "deregulation push",
-        "spending cuts"
+        "bank profit tax",
+        "budget cuts",
+        "economic deregulation"
       ],
-      "article_count": 30,
+      "article_count": 16,
       "refs": [
         {
-          "title": "El Gobierno ratificó que no asistirá a las familias endeudadas",
-          "source": "Diagonales",
-          "url": "https://www.diagonales.com/nacion/el-gobierno-ratifico-que-no-asistira-a-las-familias-endeudadas_a6a8dc50de913f1a23ba05f7a",
-          "date": "2026-08-25T16:59:31+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "UNCAPTIONED: Italy's Salvini calls for €20 billion increase in 2027 budget deficit",
-          "source": "Yahoo",
-          "url": "https://www.yahoo.com/news/videos/uncaptioned-italys-salvini-calls-20-123500863.html",
-          "date": "2026-08-25T12:35:00+00:00",
+          "title": "Energia, Schlein: è il momento di tassare extraprofitti, Meloni abbia coraggio",
+          "source": "Askanews",
+          "url": "https://askanews.it/2026/08/26/energia-schlein-e-il-momento-di-tassare-extraprofitti-meloni-abbia-coraggio/",
+          "date": "2026-08-26T07:45:26+00:00",
           "category": "italy"
-        },
-        {
-          "title": "Reform UK vows to scrap Labour's inheritance tax raid on family farms and businesses",
-          "source": "GB News",
-          "url": "https://www.gbnews.com/money/reform-uk-reverse-inheritance-tax-raid-farms-businesses",
-          "date": "2026-08-25T21:03:52+00:00",
-          "category": "uk"
         },
         {
           "title": "A Fidesz megszorításnak látja, a kormány szerint túlárazás szűnik meg",
@@ -327,10 +206,184 @@
           "url": "https://infostart.hu/belfold/2026/08/26/a-fidesz-megszoritasnak-latja-a-kormany-szerint-tularazas-szunik-meg",
           "date": "2026-08-26T07:28:52+00:00",
           "category": "hungary"
+        },
+        {
+          "title": "Il Cdm sui carburanti annuncia la grande manovra, Salvini apre il dibattito",
+          "source": "L'Identità",
+          "url": "https://www.lidentita.it/governo-manovra-carburanti-contributo/",
+          "date": "2026-08-26T07:14:48+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "– Overdrevent hysteri rundt oljepengebruk",
+          "source": "E24",
+          "url": "https://e24.no/norsk-oekonomi/i/ArJ6XE/overdrevent-hysteri-rundt-oljepengebruk",
+          "date": "2026-08-26T04:10:33+00:00",
+          "category": "norway"
+        },
+        {
+          "title": "Javier Milei reunió a los legisladores de LLA y pidió defender el rumbo del Gobierno",
+          "source": "CFIN Noticias",
+          "url": "https://www.cfin.com.ar/destacados/javier-milei-legisladores-lla-casa-rosada-rumbo-gobierno-meta-description-seo/",
+          "date": "2026-08-26T02:43:03+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Javier Milei, a los gritos frente a legisladores: alentó las reformas y rechazó la ayuda a los morosos",
+          "source": "MDZ Online",
+          "url": "https://www.mdzol.com/politica/javier-milei-los-gritos-frente-legisladores-alento-las-reformas-y-rechazo-la-ayuda-los-morosos-n1592978",
+          "date": "2026-08-25T23:44:00+00:00",
+          "category": "argentina"
         }
       ],
       "first_seen": "2026-08-07T03:42:06+00:00",
-      "last_seen": "2026-08-27T10:39:14+00:00"
+      "last_seen": "2026-08-27T22:39:47+00:00"
+    },
+    {
+      "id": "far-right-parties-push-anti-immigration-policies-amid-border-crises",
+      "title": "Far-right parties push anti-immigration policies amid border crises",
+      "blurb": "Right-wing leaders and administrations are escalating border enforcement measures and tightening restrictions on foreign nationals. From worldwide visa suspensions and strict screening criteria in the US to localized obligations for asylum seekers in Italy, hardline anti-immigration rhetoric remains a central policy pillar.",
+      "convergence": 3,
+      "countries": [
+        {
+          "name": "🇺🇸 MAGA / Trump",
+          "note": "The Trump administration pauses global immigrant visa appointments and introduces massive fee hikes and public charge screening rules"
+        },
+        {
+          "name": "🇮🇹 Fratelli d'Italia / Lega",
+          "note": "Fratelli d'Italia politicians propose a 'charter of duties' for asylum seekers in northern Italian municipalities"
+        },
+        {
+          "name": "🇩🇪 Alternative für Deutschland",
+          "note": "AfD campaigns on strict immigration controls, sparking economic warnings regarding foreign workforce needs"
+        }
+      ],
+      "signals": [
+        "visa suspensions",
+        "screening policy",
+        "asylum restrictions",
+        "hardline border rhetoric"
+      ],
+      "article_count": 12,
+      "refs": [
+        {
+          "title": "Trump Administration Pauses Immigrant Visa Appointments Worldwide Days After 75-Country Ban Struck Down",
+          "source": "Law Commentary",
+          "url": "https://www.lawcommentary.com/articles/trump-administration-pauses-immigrant-visa-appointments-worldwide-days-after-75-country-ban-struck-down",
+          "date": "2026-08-27T14:47:43+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump administration pauses all immigrant visa applications amid new screening policy",
+          "source": "NBC News",
+          "url": "https://www.nbcnews.com/news/us-news/trump-administration-pauses-immigrant-visa-applications-new-screening-rcna594669",
+          "date": "2026-08-27T12:47:28+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Una carta dei doveri per i richiedenti asilo, a Udine fa discutere la proposta di Fratelli d’Italia: è scontro con il Comune",
+          "source": "Messaggero Veneto",
+          "url": "https://www.messaggeroveneto.it/cronaca/carta-doveri-richiedenti-asilo-udine-proposta-fratelli-italia--comune-ntmpxdbl",
+          "date": "2026-08-26T07:00:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Trump administration issues pause on visa appointments worldwide",
+          "source": "thenationalnews.com",
+          "url": "https://www.thenationalnews.com/news/us/2026/08/26/us-visa-appointments-paused/",
+          "date": "2026-08-26T04:08:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump administration issues pause on visa appointments for applicants worldwide",
+          "source": "The Detroit News",
+          "url": "https://www.detroitnews.com/story/news/politics/2026/08/25/trump-administration-issues-pause-on-visa-appointments-for-applicants-worldwide/91467150007/",
+          "date": "2026-08-26T01:10:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Medienbericht: Diese Branchen würde eine AfD-Regierung in Sachsen-Anhalt belasten",
+          "source": "RP Online",
+          "url": "https://rp-online.de/politik/deutschland/sachsen-anhalt-diese-branchen-wuerden-unter-afd-regierung-leiden_aid-153729099",
+          "date": "2026-08-25T23:02:00+00:00",
+          "category": "germany"
+        }
+      ],
+      "first_seen": "2026-08-23T02:16:32+00:00",
+      "last_seen": "2026-08-27T22:39:47+00:00"
+    },
+    {
+      "id": "right-wing-parties-escalate-attacks-on-public-media-and-press",
+      "title": "Right-wing parties escalate attacks on public media and press",
+      "blurb": "Right-wing movements and leaders are intensifying efforts to challenge, reshape, or discredit traditional news outlets and public broadcasters. Through hostile public rhetoric, political appointment maneuvering, and state-backed media networks, conservative figures seek to counter critical media coverage.",
+      "convergence": 3,
+      "countries": [
+        {
+          "name": "🇦🇷 La Libertad Avanza",
+          "note": "President Milei escalates verbal attacks against journalists while reshuffling government digital media strategy"
+        },
+        {
+          "name": "🇮🇹 Fratelli d'Italia / Lega",
+          "note": "Prime Minister Meloni navigates public broadcaster Rai reform and high-profile editorial shifts"
+        },
+        {
+          "name": "🇭🇺 Fidesz / Tisza",
+          "note": "Ongoing fallout over state-funded Fidesz propaganda outlets clashing with independent news coverage"
+        }
+      ],
+      "signals": [
+        "hostile press rhetoric",
+        "broadcaster reform",
+        "media influence",
+        "state propaganda debates"
+      ],
+      "article_count": 7,
+      "refs": [
+        {
+          "title": "A Fidesz-propagandát gyártó cég vezetője csinált gigaprofitot NER-es állami megbízásokból",
+          "source": "| hvg.hu",
+          "url": "https://hvg.hu/itthon/20260826_fidesz-propagand-ceg-profit-ner-allami-megbizas",
+          "date": "2026-08-26T07:03:13+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Mentana e il ritorno in Rai. La simpatia di Meloni e l’incrocio con la riforma",
+          "source": "Il Foglio",
+          "url": "https://www.ilfoglio.it/politica/2026/08/26/news/mentana-e-il-ritorno-in-rai-la-simpatia-di-meloni-e-lincrocio-con-la-riforma--405602",
+          "date": "2026-08-26T04:00:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Mentana and his return to Rai. Meloni’s support and the link to the reform",
+          "source": "Il Foglio",
+          "url": "https://www.ilfoglio.it/en/politics/2026/08/26/news/mentana-and-his-return-to-rai-melonis-support-and-the-link-to-the-reform--405603",
+          "date": "2026-08-26T04:00:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Ocho horas de agresiones verbales de Milei contra el periodismo: llamó \"mierd*s\" a los periodistas",
+          "source": "Data Diario",
+          "url": "https://www.datadiario.com/politica/javier-milei-descargo-insultos-durante-ocho-horas-contra-el-periodismo-y-apoyo-una-ley-para-sancionar-a-la-prensa-202682521370",
+          "date": "2026-08-26T02:37:30+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Descontrol en Casa Rosada: entre las peleas internas y la furia de Javier Milei",
+          "source": "Página|12",
+          "url": "https://www.pagina12.com.ar/2026/08/25/descontrol-en-casa-rosada-entre-las-peleas-internas-y-la-furia-de-javier-milei/",
+          "date": "2026-08-25T23:55:12+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Arenga política de Milei a senadores y diputados: \"No nos dejemos psicopatear por los kukas y los periodistas\"",
+          "source": "Clarin.com",
+          "url": "https://www.clarin.com/politica/arenga-politica-milei-senadores-diputados-dejemos-psicopatear-kukas-periodistas_0_LfpMScKD3V.html",
+          "date": "2026-08-25T23:29:01+00:00",
+          "category": "argentina"
+        }
+      ],
+      "first_seen": "2026-08-26T13:49:51+00:00",
+      "last_seen": "2026-08-27T22:39:47+00:00"
     }
   ]
 }
