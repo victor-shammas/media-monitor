@@ -1,78 +1,630 @@
 {
-  "updated_at": "2026-09-01T05:46:05+00:00",
+  "updated_at": "2026-09-01T17:00:12+00:00",
   "lookback_hours": 48,
   "model": "Mistral Medium",
   "status": "ok",
   "themes": [
     {
-      "id": "populist-right-battles-media-bias-and-digital-censorship",
-      "title": "Populist Right Battles Media Bias and Digital Censorship",
-      "blurb": "Right-wing figures in the US and Sweden continue to frame mainstream media as biased, with Trump targeting individual journalists and Swedish far-right normalization sparking debates over media representation. The theme reflects a shared grievance narrative against perceived elite control of information.",
-      "convergence": 3,
+      "id": "far-right-surge-in-european-regional-elections-and-governance",
+      "title": "Far-Right Surge in European Regional Elections and Governance",
+      "blurb": "Right-wing and far-right parties in Germany (AfD), France (RN), and Spain (Vox) are either leading polls or pushing hardline policies, with AfD poised to win in Saxony-Anhalt, RN proposing a veil ban referendum, and Vox escalating sovereignty rhetoric over Ceuta. This reflects a coordinated push for nationalist governance and cultural identity politics.",
+      "convergence": 5,
       "countries": [
         {
-          "name": "🇺🇸 MAGA / Trump",
-          "note": "Trump threatens to report NBC's Kristen Welker to the FCC over critical coverage."
+          "name": "🇩🇪 Alternative für Deutschland",
+          "note": "AfD leads polls in Saxony-Anhalt with 40-42%, threatening to form the first far-right state government in post-WWII Germany. Debates over economic impact, media restructuring, and legal bans dominate coverage."
         },
         {
-          "name": "🇸🇪 Sverigedemokraterna",
-          "note": "Far-right normalization in Sweden raises concerns about media portrayal and societal acceptance."
+          "name": "🇫🇷 Rassemblement National",
+          "note": "Marine Le Pen proposes a referendum to ban Islamic veils in public spaces, framing it as combating Islamist ideology. The proposal sparks legal and political backlash but unifies the party’s base."
+        },
+        {
+          "name": "🇪🇸 Vox",
+          "note": "Vox intensifies rhetoric over Ceuta and Melilla, accusing the Spanish government of betrayal and demanding the suspension of the Spain-Morocco friendship treaty. Mass protests and diplomatic pressure are central themes."
+        },
+        {
+          "name": "🇮🇹 Fratelli d'Italia / Lega",
+          "note": "Lega faces internal rebellion as dissidents revive the Lega Nord brand, challenging Salvini’s leadership. Meanwhile, Fratelli d’Italia celebrates government longevity, signaling stability amid right-wing fragmentation."
         }
       ],
       "signals": [
-        "shared grievance framing",
-        "anti-media rhetoric",
-        "parallel elite critique"
+        "parallel electoral momentum",
+        "shared cultural identity framing",
+        "coordinated sovereignty rhetoric",
+        "internal party rebellion as transnational pattern"
       ],
-      "article_count": 3,
+      "article_count": 45,
       "refs": [
         {
-          "title": "Donald Trump says NBC's Welker will be reported to FCC",
-          "source": "The Jerusalem Post",
-          "url": "https://www.jpost.com/international/article-907044",
-          "date": "2026-08-30T13:27:26+00:00",
+          "title": "Est-il vraiment possible de sanctionner le port du voile, comme le souhaite le Rassemblement national?",
+          "source": "BFM",
+          "url": "https://www.bfmtv.com/politique/front-national/video-est-il-vraiment-possible-de-sanctionner-le-port-du-voile-comme-le-souhaite-le-rassemblement-national_VN-202609010626.html",
+          "date": "2026-09-01T14:22:49+00:00",
+          "category": "france"
+        },
+        {
+          "title": "« Un bras de fer avec le Conseil constitutionnel » : comment Marine Le Pen veut interdire le voile",
+          "source": "l'Opinion",
+          "url": "https://www.lopinion.fr/politique/un-bras-de-fer-avec-le-conseil-constitutionnel-comment-marine-le-pen-veut-interdire-le-voile",
+          "date": "2026-09-01T14:08:13+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Interdiction du voile dans l'espace public : Éric Zemmour abonde dans le sens du RN",
+          "source": "lejdd.fr",
+          "url": "https://www.lejdd.fr/politique/interdiction-du-voile-dans-lespace-public-eric-zemmour-abonde-dans-le-sens-du-rn-182307",
+          "date": "2026-09-01T13:43:56+00:00",
+          "category": "france"
+        },
+        {
+          "title": "PP, Vox y UPN impulsan concentraciones para «salvar Ceuta», también en Euskal Herria",
+          "source": "naiz.eus",
+          "url": "https://www.naiz.eus/en/info/noticia/20260901/pp-vox-y-upn-impulsan-las-concentraciones-por-ceuta-tambien-en-euskal-herria",
+          "date": "2026-09-01T13:18:11+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Vox alerta de que la soberanía española en Ceuta y Melilla está «en peligro» con este Gobierno",
+          "source": "El Correo",
+          "url": "https://www.elcorreo.com/politica/vox-alerta-soberania-espanola-ceuta-melilla-peligro-20260901151054-ntrc.html",
+          "date": "2026-09-01T13:10:54+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "À Belfort, un énième militant « Rassemblement National » empêtré dans des saillies racistes",
+          "source": "Le Ch'ni",
+          "url": "https://www.lechni.info/20260901/a-belfort-un-enieme-militant-rassemblement-national-empetre-dans-des-saillies-racistes/",
+          "date": "2026-09-01T13:05:54+00:00",
+          "category": "france"
+        },
+        {
+          "title": "En promettant de verbaliser les femmes voilées dans l’espace public, le RN relance un débat explosif en France",
+          "source": "Le Temps",
+          "url": "https://www.letemps.ch/monde/france/en-promettant-de-verbaliser-les-femmes-voilees-dans-l-espace-public-le-rn-relance-un-debat-explosif-en-france",
+          "date": "2026-09-01T12:54:41+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Le Rassemblement national veut un référendum sur le port du voile en France : réactions à La Réunion - Outre-mer La 1ère",
+          "source": "",
+          "url": "https://la1ere.franceinfo.fr/reunion/le-rassemblement-national-veut-un-referendum-sur-le-port-du-voile-en-france-reactions-a-la-reunion-1734299.html",
+          "date": "2026-09-01T12:31:17+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Artgemeinschaft-Razzia: 250 Beamte, 15 Beschuldigte in Sachsen-Anhalt",
+          "source": "WELT",
+          "url": "https://www.welt.de/regionales/sachsen-anhalt/article6a96a31f9452c5223822f418/artgemeinschaft-razzia-250-beamte-15-beschuldigte-in-sachsen-anhalt.html",
+          "date": "2026-09-01T11:48:33+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Germany's far-right AfD promises 'boom' but economists fear worst",
+          "source": "France 24",
+          "url": "https://www.france24.com/en/live-news/20260901-germany-s-far-right-afd-promises-boom-but-economists-fear-worst",
+          "date": "2026-09-01T11:41:27+00:00",
+          "category": "general"
+        },
+        {
+          "title": "Port du voile dans l'espace public : la proposition de Marine Le Pen suscite de vives réactions dans la classe politique",
+          "source": "Europe 1",
+          "url": "https://www.europe1.fr/politique/port-du-voile-dans-lespace-public-la-proposition-de-marine-le-pen-suscite-de-vives-reactions-dans-la-classe-politique-1048076",
+          "date": "2026-09-01T10:34:00+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Le Pen Vows Referendum to ‘Combat Islamist Ideologies’, Including Fines for Veiling of Women and Girls",
+          "source": "breitbart.com",
+          "url": "https://www.breitbart.com/europe/2026/09/01/le-pen-vows-referendum-to-combat-islamist-ideologies-including-fines-for-veiling-of-women-and-girls/",
+          "date": "2026-09-01T09:06:47+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Nowe 800 zł od PiS? Mentzen zakpił i natychmiast dostał odpowiedź",
+          "source": "Wiadomości Onet",
+          "url": "https://wiadomosci.onet.pl/kraj/mentzen-uderzyl-w-nowy-pomysl-pis-chyba-w-koalicji-z-razem-i-lewica/7lc7cz8",
+          "date": "2026-09-01T08:44:31+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Présidentielle 2027: Marine Le Pen promet un référendum sur l’interdiction du voile",
+          "source": "TRT Français",
+          "url": "https://www.trtfrancais.com/article/75828bc91a37",
+          "date": "2026-09-01T08:19:19+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Meloni è tornata in vacanza a La Maddalena: la promessa mantenuta",
+          "source": "Virgilio InItalia",
+          "url": "https://initalia.virgilio.it/meloni-tornata-vacanza-la-maddalena-promessa-mantenuta-131405",
+          "date": "2026-09-01T07:48:00+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Sachsen-Anhalt: Die „Brandmauer“ sollte die AfD kleinkriegen. Jetzt könnte sie die CDU zerstören",
+          "source": "WELT",
+          "url": "https://www.welt.de/politik/deutschland/plus6a8de22fc3692834ff6dc990/sachsen-anhalt-die-brandmauer-sollte-die-afd-kleinkriegen-jetzt-koennte-sie-die-cdu-zerstoeren.html",
+          "date": "2026-09-01T06:51:47+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Meloni attesa a Bari, mobilitazione in crescita nel Tarantino: dodici autobus e una presenza compatta",
+          "source": "cronachetarantine.it",
+          "url": "https://www.cronachetarantine.it/index.php/attualita/17739-meloni-attesa-a-bari-mobilitazione-in-crescita-nel-tarantino-dodici-autobus-e-una-presenza-compatta",
+          "date": "2026-09-01T06:38:04+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Magyar Péter kész tárgyalni Horvátországgal az INA és a Mol kapcsolatáról",
+          "source": "Telex",
+          "url": "https://telex.hu/gazdasag/2026/08/31/magyar-peter-horvatorszag-ina-mol-andrej-plenkovic",
+          "date": "2026-09-01T06:36:37+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Javier Milei sigue de cerca el impacto de la morosidad y analiza ordenarle al Banco Central una medida especial",
+          "source": "Infobae",
+          "url": "https://www.infobae.com/politica/2026/09/01/javier-milei-sigue-de-cerca-el-impacto-de-la-morosidad-y-analiza-ordenarle-al-banco-central-una-medida-especial/",
+          "date": "2026-09-01T06:26:46+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Alleinregierung der AfD in Sachsen-Anhalt? So könnte es wirklich dazu kommen",
+          "source": "nordkurier.de",
+          "url": "https://www.nordkurier.de/politik/alleinregierung-der-afd-in-sachsen-anhalt-so-koennte-es-wirklich-dazu-kommen-4807883",
+          "date": "2026-09-01T04:20:00+00:00",
+          "category": "germany"
+        }
+      ],
+      "first_seen": "2026-09-01T17:00:12+00:00",
+      "last_seen": "2026-09-01T17:00:12+00:00"
+    },
+    {
+      "id": "immigration-and-border-security-as-political-wedges",
+      "title": "Immigration and Border Security as Political Wedges",
+      "blurb": "Vox in Spain and RN in France are weaponizing immigration and border security as central campaign issues, with Vox accusing Sánchez of ceding sovereignty over Ceuta to Morocco and RN proposing hardline measures like veil bans. This theme also appears in Sweden (SD) with anti-immigration messaging.",
+      "convergence": 4,
+      "countries": [
+        {
+          "name": "🇪🇸 Vox",
+          "note": "Vox dominates discourse on Ceuta, framing migrant inflows as a national security crisis and accusing the government of enabling Moroccan encroachment. Calls for breaking diplomatic ties and mass protests are prominent."
+        },
+        {
+          "name": "🇫🇷 Rassemblement National",
+          "note": "RN ties immigration to cultural identity, proposing fines for veil-wearing in public as a way to assert French secularism and combat perceived Islamist influence."
+        },
+        {
+          "name": "🇸🇪 Sverigedemokraterna",
+          "note": "Sweden Democrats use immigration as a key wedge issue, with messaging around crime and integration, including controversial public campaigns (e.g., Stockholm Central Station posters)."
+        }
+      ],
+      "signals": [
+        "shared framing of immigration as existential threat",
+        "sovereignty rhetoric",
+        "transnational contagion of hardline policies",
+        "electoral mobilization around border crises"
+      ],
+      "article_count": 30,
+      "refs": [
+        {
+          "title": "PP, Vox y UPN impulsan concentraciones para «salvar Ceuta», también en Euskal Herria",
+          "source": "naiz.eus",
+          "url": "https://www.naiz.eus/en/info/noticia/20260901/pp-vox-y-upn-impulsan-las-concentraciones-por-ceuta-tambien-en-euskal-herria",
+          "date": "2026-09-01T13:18:11+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Vox alerta de que la soberanía española en Ceuta y Melilla está «en peligro» con este Gobierno",
+          "source": "El Correo",
+          "url": "https://www.elcorreo.com/politica/vox-alerta-soberania-espanola-ceuta-melilla-peligro-20260901151054-ntrc.html",
+          "date": "2026-09-01T13:10:54+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Podemos, PP y Vox coinciden en que Sánchez \"utiliza\" al Rey para polemizar y no hablar de su gestión en Ceuta",
+          "source": "El Independiente",
+          "url": "https://www.elindependiente.com/espana/2026/09/01/podemos-pp-y-vox-coinciden-en-que-sanchez-utiliza-al-rey-para-polemizar-y-no-hablar-de-su-gestion-en-ceuta/",
+          "date": "2026-09-01T12:59:56+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Baldoví: \"Veo la hipocresía de PP y Vox: dicen estar preocupadísimos por Ceuta, pero no colaboran en ninguna solución\"",
+          "source": "LaSexta",
+          "url": "https://amp.lasexta.com/programas/al-rojo-vivo/baldovi-veo-hipocresia-vox-dicen-estar-preocupadisimos-ceuta-pero-colaboran-ninguna-solucion_202609016a96c9f54941316b1e738f39.html",
+          "date": "2026-09-01T12:49:57+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Vox pide romper relaciones diplomáticas con Marruecos: «Hay que retirar a nuestro embajador y convocar al m...",
+          "source": "OkDiario",
+          "url": "https://okdiario.com/espana/vox-pide-romper-relaciones-diplomaticas-marruecos-hay-que-retirar-nuestro-embajador-convocar-marroqui-20208583",
+          "date": "2026-09-01T12:28:46+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Vox alerta de que la invasión de Ceuta «incrementa la amenaza yihadista» en Castilla-La Mancha",
+          "source": "ABC",
+          "url": "https://www.abc.es/espana/castilla-la-mancha/vox-alerta-invasion-ceuta-incrementa-amenaza-yihadista-20260901142825-nt.html",
+          "date": "2026-09-01T12:28:25+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Vox intensifica sus críticas a Sánchez: cree que podría no convocar elecciones y ofrecer una «cosoberanía» de Ceuta a Marruecos",
+          "source": "ABC",
+          "url": "https://www.abc.es/espana/vox-intensifica-criticas-sanchez-cree-convocar-elecciones-20260901135931-nt.html",
+          "date": "2026-09-01T11:59:32+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Vox alerta de que Sánchez podría utilizar la tensión en Ceuta como «excusa» para no convocar elecciones",
+          "source": "El Debate",
+          "url": "https://www.eldebate.com/espana/20260901/vox-alerta-sanchez-podria-utilizar-tension-ceuta-como-excusa-no-convocar-elecciones_454123.html",
+          "date": "2026-09-01T11:58:05+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Vox ve a Sánchez capaz de no convocar elecciones: \"Busca el estallido social para ceder cosoberanía en Ceuta y Melilla\"",
+          "source": "PressDigital",
+          "url": "https://www.pressdigital.es/articulo/politica/2026-09-01/5999624-vox-ve-sanchez-capaz-no-convocar-elecciones-busca-estallido-social-ceder-cosoberania-ceuta-melilla",
+          "date": "2026-09-01T11:51:00+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Vox llama a ir a las manifestaciones por Ceuta y critica la \"tibieza\" del PP",
+          "source": "ABC",
+          "url": "https://www.abc.es/espana/vox-llama-manifestaciones-ceuta-critica-tibieza-pp-20260901132759-nt.html",
+          "date": "2026-09-01T11:28:03+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Vox anima a los portuenses a acudir a la concentración por Ceuta este miércoles",
+          "source": "Diario de Cádiz",
+          "url": "https://www.diariodecadiz.es/elpuerto/vox-anima-portuenses-acudir-concentracion_0_2007848891.html",
+          "date": "2026-09-01T11:25:21+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Port du voile dans l'espace public : la proposition de Marine Le Pen suscite de vives réactions dans la classe politique",
+          "source": "Europe 1",
+          "url": "https://www.europe1.fr/politique/port-du-voile-dans-lespace-public-la-proposition-de-marine-le-pen-suscite-de-vives-reactions-dans-la-classe-politique-1048076",
+          "date": "2026-09-01T10:34:00+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Le Pen Vows Referendum to ‘Combat Islamist Ideologies’, Including Fines for Veiling of Women and Girls",
+          "source": "breitbart.com",
+          "url": "https://www.breitbart.com/europe/2026/09/01/le-pen-vows-referendum-to-combat-islamist-ideologies-including-fines-for-veiling-of-women-and-girls/",
+          "date": "2026-09-01T09:06:47+00:00",
+          "category": "france"
+        },
+        {
+          "title": "El Gato Al Agua | SÁNCHEZ ATACA AL REY Y VOX DENUNCIA SU “TRAICIÓN” A CEUTA | 31/08/2026",
+          "source": "El Toro TV",
+          "url": "https://eltorotv.com/programas/el-gato-al-agua/el-gato-al-agua-sanchez-ataca-al-rey-y-vox-denuncia-su-traicion-a-ceuta-31-08-2026-20260901",
+          "date": "2026-09-01T08:57:27+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Vox ganaría las elecciones en Ceuta con el 31,8% y adelantaría al PP, según ElectoPanel",
+          "source": "moncloa.com",
+          "url": "https://www.moncloa.com/2026/09/01/vox-gana-elecciones-ceuta-3424290/",
+          "date": "2026-09-01T08:23:20+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Unger Anna: Engem ne hívogasson se Magyar Péter, se senki más!",
+          "source": "atv.hu",
+          "url": "https://www.atv.hu/videok/unger-anna-engem-ne-hivogasson-se-magyar-peter-se-senki-mas/",
+          "date": "2026-09-01T08:14:23+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "VOX adelanta al PP y ganaría las elecciones locales en Ceuta con casi un tercio de los votos y nueve...",
+          "source": "gaceta.es",
+          "url": "https://gaceta.es/espana/vox-adelanta-al-pp-y-ganaria-las-elecciones-locales-en-ceuta-con-casi-un-tercio-de-los-votos-y-nueve-diputados-20260901-0920/",
+          "date": "2026-09-01T07:22:44+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Donald Trump’s red scare - Le Monde diplomatique",
+          "source": "English edition",
+          "url": "https://mondediplo.com/2026/09/02us",
+          "date": "2026-09-01T07:09:08+00:00",
           "category": "usa"
         },
         {
-          "title": "A lone Black woman’s defiance of Swedish neo-Nazis, 10 years on",
-          "source": "The Guardian",
-          "url": "https://www.theguardian.com/world/2026/aug/30/sweden-neo-nazi-resistance-2016-tess-asplund-far-right",
-          "date": "2026-08-30T07:03:00+00:00",
-          "category": "sweden"
+          "title": "Del \"oscurantismo\" de la Mezquita a la oficina antiokupas: los motivos de Vox para \"desconfiar\" de Sanz",
+          "source": "El Español",
+          "url": "https://www.elespanol.com/sevilla/20260901/oscurantismo-mezquita-oficina-antiokupas-motivos-vox-desconfiar-sanz/1003744367845_0.amp.html",
+          "date": "2026-09-01T04:50:00+00:00",
+          "category": "spain"
         },
         {
-          "title": "Donald Trump Suddenly Has a Favorite CNN Star: Data Guru Harry Enten",
-          "source": "The Daily Beast",
-          "url": "https://www.thedailybeast.com/donald-trump-suddenly-has-a-favorite-cnn-star-data-guru-harry-enten/",
-          "date": "2026-08-30T06:48:00+00:00",
+          "title": "Reps. Mfume, Bell, Strickland Lead 70+ Congresspeople in Efforts to Stop Navy from Renaming Ship Honoring War Hero to instead Honor Donald Trump",
+          "source": "Representative Kweisi Mfume | (.gov)",
+          "url": "http://mfume.house.gov/media/press-releases/reps-mfume-bell-strickland-lead-70-congresspeople-in-efforts-to-stop-navy-from-renaming-ship-honoring-war-hero-to-instead-honor-donald-trump",
+          "date": "2026-08-31T19:07:41+00:00",
           "category": "usa"
         }
       ],
-      "first_seen": "2026-08-30T17:01:22+00:00",
-      "last_seen": "2026-09-01T05:46:05+00:00"
+      "first_seen": "2026-09-01T05:46:05+00:00",
+      "last_seen": "2026-09-01T17:00:12+00:00"
     },
     {
-      "id": "nationalist-symbolism-and-rebranding-of-public-institutions",
-      "title": "Nationalist Symbolism and Rebranding of Public Institutions",
-      "blurb": "Trump's executive actions to rename geographic features (e.g., Lake Ontario to 'Lake America') and create new national institutions (e.g., U.S. Space Academy) resonate with nationalist themes of legacy-building and sovereignty, echoed in far-right rhetoric across borders.",
+      "id": "populist-right-battles-media-bias-and-digital-censorship",
+      "title": "Populist Right Battles Media Bias and Digital Censorship",
+      "blurb": "The MAGA movement in the U.S. and Sweden Democrats continue to frame mainstream media and digital platforms as biased against them, with narratives of censorship and unfair treatment. This theme persists as a unifying grievance across right-wing movements.",
       "convergence": 4,
       "countries": [
         {
           "name": "🇺🇸 MAGA / Trump",
-          "note": "Trump renames Lake Ontario, orders creation of U.S. Space Academy, and rebrands institutions."
+          "note": "Trump and allies decry media bias, with outlets like Fox Business and The Guardian covering MAGA defectors and censorship claims. Legal battles over voting rights and data privacy also tie into this narrative."
         },
         {
-          "name": "🇳🇴 Fremskrittspartiet",
-          "note": "Norwegian Progress Party engages in political symbolism (e.g., price hikes, accusations of breaking political truce)."
+          "name": "🇸🇪 Sverigedemokraterna",
+          "note": "Sweden Democrats amplify messages of media hostility, including conflicts with public broadcasters and accusations of left-wing bias in coverage."
+        },
+        {
+          "name": "🇬🇧 Reform UK",
+          "note": "Nigel Farage’s return to Parliament and clashes with the BBC (e.g., over live-broadcasted criticism) reinforce the theme of media bias against the right."
         }
       ],
       "signals": [
-        "nationalist rebranding",
-        "sovereignty emphasis",
-        "parallel institutional symbolism"
+        "shared victimhood narrative",
+        "media as adversary framing",
+        "legal and rhetorical pushback against platforms",
+        "transnational coordination in messaging"
       ],
-      "article_count": 5,
+      "article_count": 20,
       "refs": [
+        {
+          "title": "Lindstrom selects America First Party to revive Nebraska governor bid",
+          "source": "Nebraska Examiner",
+          "url": "https://nebraskaexaminer.com/2026/09/01/lindstrom-selects-america-first-party-to-revive-nebraska-governor-bid/",
+          "date": "2026-09-01T14:23:10+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Four Maga defectors on what led them to walk away: ‘I’d been addicted to fear and rage’",
+          "source": "The Guardian",
+          "url": "https://www.theguardian.com/us-news/2026/sep/01/former-maga-supporters-trump",
+          "date": "2026-09-01T14:02:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Challenging the Trump administration’s threats to voting rights, privacy, and state authority over elections",
+          "source": "Protect Democracy",
+          "url": "https://protectdemocracy.org/work/trump-administration-threat-voting-rights-privacy-elections/",
+          "date": "2026-09-01T13:34:56+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "BBC bias reared its ugly head once again after Farage hiccup - it's final nail in coffin",
+          "source": "Daily Express",
+          "url": "https://www.express.co.uk/celebrity-news/2244361/bbc-nigel-farage-bias",
+          "date": "2026-09-01T12:13:38+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "El PP rechaza la idea de Vox para debatir en el Congreso el delito de traición contra Sánchez: \"Son fuegos de artificio\"",
+          "source": "Europa Press",
+          "url": "https://www.europapress.es/nacional/noticia-pp-rechaza-idea-vox-debatir-congreso-delito-traicion-contra-sanchez-son-fuegos-artificio-20260901115528.html",
+          "date": "2026-09-01T09:55:28+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Life after Maga: the group offering an ‘exit ramp’ for rightwingers questioning Trumpism",
+          "source": "The Guardian",
+          "url": "https://www.theguardian.com/us-news/2026/sep/01/leaving-maga-support-group",
+          "date": "2026-09-01T09:00:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Salvini celebra 40 anni e sceglie Andrea Delogu come nuovo volto della maison",
+          "source": "youmark.it",
+          "url": "https://youmark.it/salvini-40-anni-andrea-delogu-nuovo-volto-campagna/",
+          "date": "2026-09-01T08:38:24+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Kan Sverigedemokraterna övertyga dig under en hisstur?",
+          "source": "Sundsvalls Tidning",
+          "url": "https://www.st.nu/sundsvall/kan-sverigedemokraterna-overtyga-dig-under-en-hisstur/",
+          "date": "2026-09-01T07:17:21+00:00",
+          "category": "sweden"
+        },
+        {
+          "title": "Wahl Sachsen-Anhalt 2026: Wie Lydia Hüskens' FDP gegen die AfD kämpft",
+          "source": "faz.net",
+          "url": "https://www.faz.net/aktuell/politik/wahl-in-sachsen-anhalt/wahl-sachsen-anhalt-2026-wie-lydia-hueskens-fdp-gegen-die-afd-kaempft-accg-201163835.html",
+          "date": "2026-09-01T05:56:42+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "VIDEO: Freedom Morning – A Hard Blow to Antifa - Freedom News",
+          "source": "frihetsnytt.se",
+          "url": "https://frihetsnytt.se/en/movie-freedom-morning-a-harsh-blow-to-antifa/",
+          "date": "2026-09-01T05:11:27+00:00",
+          "category": "sweden"
+        },
+        {
+          "title": "Jimmie Åkesson | Det är inte vackert att se borgerligheten kräla",
+          "source": "Aftonbladet",
+          "url": "https://www.aftonbladet.se/ledare/a/K8qOKe/jimmie-akesson-det-ar-inte-vackert-att-se-borgerligheten-krala",
+          "date": "2026-09-01T04:00:00+00:00",
+          "category": "sweden"
+        },
+        {
+          "title": "Ron Dermer praises JD Vance ahead of RJC appearance",
+          "source": "Jewish Insider",
+          "url": "https://jewishinsider.com/2026/08/ron-dermer-jd-vance-republican-jewish-coalition/",
+          "date": "2026-08-31T17:18:54+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Be bolder, Kemi. Pick a fight with Nigel",
+          "source": "The i Paper",
+          "url": "https://inews.co.uk/opinion/kemi-badenoch-conservative-shadow-cabinet-reshuffle-4727132",
+          "date": "2026-08-31T15:00:27+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Vance to privately address Republican Jewish Coalition during tension over Israel and antisemitism",
+          "source": "KSAT",
+          "url": "https://www.ksat.com/news/politics/2026/08/31/vance-to-privately-address-republican-jewish-coalition-during-tension-over-israel-and-antisemitism/",
+          "date": "2026-08-31T04:22:17+00:00",
+          "category": "usa"
+        }
+      ],
+      "first_seen": "2026-08-30T17:01:22+00:00",
+      "last_seen": "2026-09-01T17:00:12+00:00"
+    },
+    {
+      "id": "nationalist-symbolism-and-rebranding-of-public-institutions",
+      "title": "Nationalist Symbolism and Rebranding of Public Institutions",
+      "blurb": "Right-wing parties in the U.S. (Trump), Hungary (Tisza), and Poland (PiS) are engaged in symbolic rebranding, from renaming institutions to revisiting historical narratives. This includes Trump’s proposed renaming of Lake Ontario and Hungary’s dismantling of Orbán-era structures.",
+      "convergence": 4,
+      "countries": [
+        {
+          "name": "🇺🇸 MAGA / Trump",
+          "note": "Trump’s administration and allies push symbolic acts like renaming Lake Ontario to 'Lake America' and proposing a U.S. Space Academy, reinforcing nationalist branding."
+        },
+        {
+          "name": "🇭🇺 Fidesz / Tisza",
+          "note": "The Tisza government dismantles Orbán-era institutions (e.g., Media Council reshuffles, closing Orbán-backed think tanks) as part of a broader rebranding away from the previous regime."
+        },
+        {
+          "name": "🇵🇱 Prawo i Sprawiedliwość",
+          "note": "PiS emphasizes historical grievances, including demands for WWII reparations from Germany and critiques of German-Polish relations, as part of a nationalist narrative."
+        }
+      ],
+      "signals": [
+        "symbolic policy acts",
+        "institutional rebranding",
+        "historical grievance mobilization",
+        "transnational nationalist messaging"
+      ],
+      "article_count": 25,
+      "refs": [
+        {
+          "title": "Orbán-backed Brussels think tank MCC Brussels to close after funding cut",
+          "source": "Yahoo News Australia",
+          "url": "https://au.news.yahoo.com/orb-n-backed-brussels-think-121130802.html",
+          "date": "2026-09-01T12:11:30+00:00",
+          "category": "networks"
+        },
+        {
+          "title": "Polska nie ma szans na reparacje. Ale są pieniądze, o które powinna się starać od Niemiec",
+          "source": "Rzeczpospolita",
+          "url": "https://www.rp.pl/publicystyka/art45080611-boguslaw-chrabota-karol-nawrocki-gra-reparacjami-na-rzecz-afd-ale-swoje-wygrac-moze-donald-tusk",
+          "date": "2026-09-01T11:00:30+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Tilbake til «gamle» priser",
+          "source": "altaposten.no",
+          "url": "https://www.altaposten.no/nyheter/n/xrXRPQ/tilbake-til-gamle-priser-for-alle-som-maa-fylle-drivstoff",
+          "date": "2026-09-01T09:48:43+00:00",
+          "category": "norway"
+        },
+        {
+          "title": "Dlaczego Nawrocki teraz domaga się reparacji? \"Sprawa SAFE ich uwiera. Będzie chciał zatrzeć to wrażenie\"",
+          "source": "TOK FM",
+          "url": "https://www.tokfm.pl/polityka/nawrocki-domaga-sie-reparacji-sprawa-safe-ich-uwiera",
+          "date": "2026-09-01T09:04:37+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "32 év után újra önállóan indulhat a KDNP – van esélyük a Fidesz nélkül?",
+          "source": "atv.hu",
+          "url": "https://www.atv.hu/videok/32-ev-utan-ujra-onalloan-indulhat-a-kdnp-van-eselyuk-a-fidesz-nelkul/",
+          "date": "2026-09-01T08:14:23+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Unger Anna: Engem ne hívogasson se Magyar Péter, se senki más!",
+          "source": "atv.hu",
+          "url": "https://www.atv.hu/videok/unger-anna-engem-ne-hivogasson-se-magyar-peter-se-senki-mas/",
+          "date": "2026-09-01T08:14:23+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Béremelésről beszélt Magyar Péter és Lannert Judit az országos tanévnyitón",
+          "source": "atv.hu",
+          "url": "https://www.atv.hu/videok/beremelesrol-beszelt-magyar-peter-es-lannert-judit-az-orszagos-tanevnyiton/",
+          "date": "2026-09-01T07:50:25+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Wiemy, kim jest prezes miejskiej spółki zatrzymany w dużej akcji CBA. To człowiek burmistrza Myślenic z PiS",
+          "source": "krakow.wyborcza.pl",
+          "url": "https://krakow.wyborcza.pl/krakow/7,44425,32995816,burmistrz-myslenic-z-pis-namascil-go-na-szefa-miejskiej-spolki.html",
+          "date": "2026-09-01T07:00:00+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Są taśmy z Karolem Nawrockim? Pałac Prezydencki reaguje na plotki",
+          "source": "Wiadomości Onet",
+          "url": "https://wiadomosci.onet.pl/kraj/palac-prezydencki-o-tasmach-z-karolem-nawrockim-to-sa-po-prostu-bzdury/gs37fcd",
+          "date": "2026-09-01T06:50:09+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Cedegolo celebra i 100 anni di Dario Fo: Alessio Lega porta in scena canzoni e giullarate",
+          "source": "radiobrunobrescia.it",
+          "url": "https://www.radiobrunobrescia.it/territori/valcamonica/2026/09/01/dario-fo-cedegolo/",
+          "date": "2026-09-01T06:03:52+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "CDU und AfD: Am Wahlabend wird die infantile Realitätsverweigerung auffliegen",
+          "source": "WELT",
+          "url": "https://www.welt.de/debatte/plus6a9030d514f40f555e0a3a82/cdu-und-afd-am-wahlabend-wird-die-infantile-realitaetsverweigerung-auffliegen.html",
+          "date": "2026-09-01T04:36:53+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Blog | Con gli aumenti torna la questione extraprofitti: Meloni decida da che parte stare",
+          "source": "Il Fatto Quotidiano",
+          "url": "https://www.ilfattoquotidiano.it/2026/09/01/extraprofitti-tassa-energia-banche-notizie/8492985/",
+          "date": "2026-09-01T04:19:31+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Nawrocki apeluje do Niemców o reparacje. „Załatwmy tę sprawę z myślą o przyszłości”",
+          "source": "zero.pl",
+          "url": "https://zero.pl/news/karol-nawrocki-apeluje-do-niemiec-o-reparacje-zalatwmy-te-sprawe-z-mysla-o-przyszlosci",
+          "date": "2026-09-01T04:17:45+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Nawrocki nie wytrzymał. Tak mówił o Niemcach i Tusku na Westerplatte",
+          "source": "Wiadomości Onet",
+          "url": "https://wiadomosci.onet.pl/trojmiasto/karol-nawrocki-na-westerplatte-istnieje-prawda-z-ktora-wielki-problem-ma-rzad/h88mjzf",
+          "date": "2026-09-01T03:36:16+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "\"Prawda, z którą Niemcy mają problem\". Nawrocki stanowczo na Westerplatte",
+          "source": "Interia Wydarzenia",
+          "url": "https://wydarzenia.interia.pl/kraj/news-uroczystosci-na-westerplatte-nawrocki-prawda-z-ktora-niemcy,nId,23536812",
+          "date": "2026-09-01T03:35:12+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "\"Prawda, z którą problem mają Niemcy i rząd\". Nawrocki zabrał głos podczas uroczystości na Westerplatte",
+          "source": "Interia Wydarzenia",
+          "url": "https://wydarzenia.interia.pl/kraj/news-uroczystosci-na-westerplatte-nawrocki-prawda-z-ktora-problem,nId,23536812",
+          "date": "2026-09-01T03:35:12+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Det går fint an å hedre en høyt aktet konge uten å stenge ned den politiske debatten",
+          "source": "Klassekampen",
+          "url": "https://klassekampen.no/artikkel/2026-09-01/leder",
+          "date": "2026-08-31T22:10:57+00:00",
+          "category": "norway"
+        },
         {
           "title": "Apple May Soon Join Google In Renaming Lake Ontario After Donald Trump's Executive Order",
           "source": "Deadline",
@@ -86,108 +638,157 @@
           "url": "https://lancasteronline.com/opinion/letters_to_editor/amid-global-and-domestic-crises-president-trump-tries-to-rename-a-lake-letter/article_8562d8d2-0ad6-4f51-8329-fac41a2f45d6.html",
           "date": "2026-08-31T09:00:00+00:00",
           "category": "usa"
-        },
-        {
-          "title": "Donald Trump signs order to launch creation of U.S. Space Academy",
-          "source": "AzerNews",
-          "url": "https://www.azernews.az/region/263113.html",
-          "date": "2026-08-31T04:00:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Nå kommer prishoppet",
-          "source": "ht.no",
-          "url": "https://www.ht.no/nyheter/n/Arq6nz/naa-kommer-prishoppet",
-          "date": "2026-08-31T10:21:13+00:00",
-          "category": "norway"
-        },
-        {
-          "title": "Kong Harald, Stortinget | Vedum anklages for å bryte politisk våpenhvile",
-          "source": "Nationen",
-          "url": "https://www.nationen.no/vedum-anklages-for-a-bryte-politisk-vapenhvile/s/5-148-963554",
-          "date": "2026-08-31T09:10:18+00:00",
-          "category": "norway"
         }
       ],
       "first_seen": "2026-09-01T05:46:05+00:00",
-      "last_seen": "2026-09-01T05:46:05+00:00"
-    },
-    {
-      "id": "far-right-normalization-and-executive-power-debates",
-      "title": "Far-Right Normalization and Executive Power Debates",
-      "blurb": "Ongoing discussions in the US and Sweden about the normalization of far-right politics, with Trump's executive actions (e.g., tariffs, deportations) and Swedish far-right's political prominence highlighting debates over democratic norms and executive overreach.",
-      "convergence": 3,
-      "countries": [
-        {
-          "name": "🇺🇸 MAGA / Trump",
-          "note": "Trump's controversial executive orders (e.g., tariffs, deportations) spark legal and political debates."
-        },
-        {
-          "name": "🇸🇪 Sverigedemokraterna",
-          "note": "Swedish far-right's rise to political prominence fuels normalization debates."
-        }
-      ],
-      "signals": [
-        "executive power expansion",
-        "democratic norm erosion",
-        "parallel normalization debates"
-      ],
-      "article_count": 4,
-      "refs": [
-        {
-          "title": "Untested in court, Trump’s new tariffs on Canada raise legal questions",
-          "source": "Los Angeles Times",
-          "url": "https://www.latimes.com/world-nation/story/2026-08-31/untested-in-court-trumps-new-tariffs-on-canada-raise-legal-questions",
-          "date": "2026-08-31T10:00:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Trump Administration Deports Afghan Man Whose Brothers Worked with U.S. Military to Africa",
-          "source": "8AM Media",
-          "url": "https://8am.media/eng/trump-administration-deports-afghan-man-whose-brothers-worked-with-u-s-military-to-africa/",
-          "date": "2026-08-30T07:32:09+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "A lone Black woman’s defiance of Swedish neo-Nazis, 10 years on",
-          "source": "The Guardian",
-          "url": "https://www.theguardian.com/world/2026/aug/30/sweden-neo-nazi-resistance-2016-tess-asplund-far-right",
-          "date": "2026-08-30T07:03:00+00:00",
-          "category": "sweden"
-        },
-        {
-          "title": "Trump’s mail voting restrictions would create logistical nightmare for midterm elections",
-          "source": "Votebeat",
-          "url": "https://www.votebeat.org/national/2026/08/31/trump-mail-voting-postal-service-election-challenges-court/",
-          "date": "2026-08-31T09:00:00+00:00",
-          "category": "usa"
-        }
-      ],
-      "first_seen": "2026-09-01T05:46:05+00:00",
-      "last_seen": "2026-09-01T05:46:05+00:00"
+      "last_seen": "2026-09-01T17:00:12+00:00"
     },
     {
       "id": "economic-nationalism-and-trade-disputes",
       "title": "Economic Nationalism and Trade Disputes",
-      "blurb": "Trump's protectionist policies (e.g., tariffs on Canada, oil deals with Venezuela) and Norway's Fremskrittspartiet's focus on economic issues (e.g., price hikes) reflect a cross-national trend of economic nationalism and skepticism toward global trade frameworks.",
+      "blurb": "The U.S. (Trump) and Hungary (Tisza) are pursuing economic nationalism, with Trump imposing tariffs and striking oil deals while Hungary renegotiates EU funds and bilateral economic ties. This reflects a broader right-wing trend of prioritizing national economic interests over multilateralism.",
       "convergence": 3,
       "countries": [
         {
           "name": "🇺🇸 MAGA / Trump",
-          "note": "Trump imposes tariffs on Canada, strikes oil deals with Venezuela, and faces trade negotiation challenges."
+          "note": "Trump’s administration imposes tariffs on Canada, strikes oil deals with Venezuela, and meets with oil executives, signaling a protectionist and resource-focused economic agenda."
         },
         {
-          "name": "🇳🇴 Fremskrittspartiet",
-          "note": "Norwegian Progress Party addresses economic concerns like price hikes and political truce violations."
+          "name": "🇭🇺 Fidesz / Tisza",
+          "note": "Hungary’s Tisza government secures EU funds while criticizing EU financial demands, and renegotiates economic ties with Croatia (e.g., INA-MOL dispute)."
+        },
+        {
+          "name": "🇵🇱 Prawo i Sprawiedliwość",
+          "note": "PiS proposes economic populism, such as increasing school allowances and investigating financial scandals (Zondacrypto) to appeal to nationalist economic sentiment."
         }
       ],
       "signals": [
-        "protectionist policies",
-        "trade skepticism",
-        "parallel economic nationalism"
+        "protectionist trade policies",
+        "resource nationalism",
+        "EU funds as sovereignty lever",
+        "populist economic proposals"
       ],
-      "article_count": 5,
+      "article_count": 20,
       "refs": [
+        {
+          "title": "President Trump to meet with oil and gas refiners",
+          "source": "CBS News",
+          "url": "https://www.cbsnews.com/chicago/video/president-trump-to-meet-with-oil-and-gas-refiners/",
+          "date": "2026-09-01T14:18:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Prezydenci Nawrocki i Trump spotkają się jeszcze w tym roku. Padły ważne deklaracje",
+          "source": "Business Insider Polska",
+          "url": "https://businessinsider.com.pl/wiadomosci/karol-nawrocki-spotka-sie-z-donaldem-trumpem-podczas-szczytu-g20/n2h58pn",
+          "date": "2026-09-01T13:45:47+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Orbán-backed Brussels think tank MCC Brussels to close after funding cut",
+          "source": "Yahoo News Australia",
+          "url": "https://au.news.yahoo.com/orb-n-backed-brussels-think-121130802.html",
+          "date": "2026-09-01T12:11:30+00:00",
+          "category": "networks"
+        },
+        {
+          "title": "Hajszálra volt a Tisza-kormány leggyengébb forintárfolyama",
+          "source": "Portfolio.hu",
+          "url": "https://www.portfolio.hu/deviza/20260901/hajszalra-volt-a-tisza-kormany-leggyengebb-forintarfolyama-859534",
+          "date": "2026-09-01T11:03:26+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Touristiker warnen vor AfD-Plänen für den Tourismus",
+          "source": "Reise vor9",
+          "url": "https://www.reisevor9.de/inside/touristiker-warnen-vor-afd-plaenen-fuer-den-tourismus",
+          "date": "2026-09-01T09:49:50+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Tilbake til «gamle» priser",
+          "source": "altaposten.no",
+          "url": "https://www.altaposten.no/nyheter/n/xrXRPQ/tilbake-til-gamle-priser-for-alle-som-maa-fylle-drivstoff",
+          "date": "2026-09-01T09:48:43+00:00",
+          "category": "norway"
+        },
+        {
+          "title": "Was hinter dem Streit der AfD-Jugend um Europa steckt",
+          "source": "faz.net",
+          "url": "https://www.faz.net/aktuell/politik/inland/was-hinter-dem-streit-der-afd-jugend-um-europa-steckt-accg-201174887.html",
+          "date": "2026-09-01T08:29:47+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "White House unveils more details of Trump’s Venezuela oil deal",
+          "source": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/9/1/white-house-unveils-more-details-of-trumps-venezuela-oil-deal",
+          "date": "2026-09-01T07:44:41+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Wiemy, kim jest prezes miejskiej spółki zatrzymany w dużej akcji CBA. To człowiek burmistrza Myślenic z PiS",
+          "source": "krakow.wyborcza.pl",
+          "url": "https://krakow.wyborcza.pl/krakow/7,44425,32995816,burmistrz-myslenic-z-pis-namascil-go-na-szefa-miejskiej-spolki.html",
+          "date": "2026-09-01T07:00:00+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Lemondott a brüsszeli MCC vezetője azt állítva, hogy az út szélén hagyta őket a Tisza-kormány",
+          "source": "Kontroll",
+          "url": "https://kontroll.hu/cikk/kulfold/2026/09/01/lemondott-a-bruesszeli-mcc-vezetoje-azt-allitva-hogy-az-ut-szelen-hagyta-oket-a-tisza-kormany",
+          "date": "2026-09-01T06:47:26+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Magyar Péter kész tárgyalni Horvátországgal az INA és a Mol kapcsolatáról",
+          "source": "Telex",
+          "url": "https://telex.hu/gazdasag/2026/08/31/magyar-peter-horvatorszag-ina-mol-andrej-plenkovic",
+          "date": "2026-09-01T06:36:37+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "„Gerade hochqualifizierte Fachkräfte haben Alternativen“ – Top-Ökonom warnt vor AfD-Effekt",
+          "source": "WELT",
+          "url": "https://www.welt.de/wirtschaft/plus6a9533e5ec27d32fb526a51c/reint-gropp-gerade-hochqualifizierte-fachkraefte-haben-alternativen-top-oekonom-warnt-vor-afd-effekt.html",
+          "date": "2026-09-01T05:51:02+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Magyarország és Horvátország újra tárgyalhat az INA-ról",
+          "source": "24.hu",
+          "url": "https://24.hu/fn/gazdasag/2026/09/01/mol-ina-magyar-horvat-targyalasok/",
+          "date": "2026-09-01T05:30:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Gazdaság: Magyar Péter: Magyarország kész tárgyalni Horvátországgal az INA és a Mol kapcsolatáról",
+          "source": "| hvg.hu",
+          "url": "https://hvg.hu/gazdasag/20260901_magyar-peter-magyarorszag-kesz-targyalni-horvatorszaggal-az-ina-es-a-mol-kapcsolatarol?utm_source=hirstart&utm_medium=referral&utm_campaign=ct",
+          "date": "2026-09-01T03:43:12+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Washington Policy Weekly: Trump Administration Launches New Economic Offensive Against Iran",
+          "source": "Arab Center Washington DC",
+          "url": "https://arabcenterdc.org/resource/washington-policy-weekly-trump-administration-launches-new-economic-offensive-against-iran/",
+          "date": "2026-08-31T22:56:25+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump Calls for Passage of Federal Film and TV Tax Incentive: “Let’s Get This Done!”",
+          "source": "The Hollywood Reporter",
+          "url": "https://www.hollywoodreporter.com/business/business-news/president-trump-federal-film-and-tv-tax-incentive-1236686220/",
+          "date": "2026-08-31T22:56:01+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump administration announces drug pricing deals with Teva, Astellas and others",
+          "source": "WTVB",
+          "url": "https://wtvbam.com/2026/08/31/trump-administration-to-announce-drug-pricing-deals/",
+          "date": "2026-08-31T22:10:13+00:00",
+          "category": "usa"
+        },
         {
           "title": "Untested in court, Trump’s new tariffs on Canada raise legal questions",
           "source": "Los Angeles Times",
@@ -203,83 +804,15 @@
           "category": "usa"
         },
         {
-          "title": "The Trump administration claims America will soon get a majority of its oil from Venezuela with new deal",
-          "source": "Utah Public Radio",
-          "url": "https://www.upr.org/2026-08-30/the-trump-administration-claims-america-will-soon-get-a-majority-of-its-oil-from-venezuela-with-new-deal",
-          "date": "2026-08-30T12:02:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Nå kommer prishoppet",
-          "source": "ht.no",
-          "url": "https://www.ht.no/nyheter/n/Arq6nz/naa-kommer-prishoppet",
-          "date": "2026-08-31T10:21:13+00:00",
-          "category": "norway"
-        },
-        {
-          "title": "What game theory teaches Canada about negotiating with an untrustworthy Donald Trump",
-          "source": "The Conversation",
-          "url": "https://theconversation.com/what-game-theory-teaches-canada-about-negotiating-with-an-untrustworthy-donald-trump-290688",
-          "date": "2026-08-30T19:55:01+00:00",
+          "title": "President Trump calls it the \"biggest oil deal in world history\" | National News | 2news.com",
+          "source": "KTVN",
+          "url": "http://www.ktvn.com/news/national/president-trump-calls-it-the-biggest-oil-deal-in-world-history/video_a94ab23d-7ac1-5538-99e6-979af0a52d04.html",
+          "date": "2026-08-31T06:18:00+00:00",
           "category": "usa"
         }
       ],
       "first_seen": "2026-09-01T05:46:05+00:00",
-      "last_seen": "2026-09-01T05:46:05+00:00"
-    },
-    {
-      "id": "immigration-and-border-security-as-political-wedges",
-      "title": "Immigration and Border Security as Political Wedges",
-      "blurb": "Trump's hardline immigration policies (e.g., deportations, ICE arrests, border policy claims) and European far-right parties' focus on immigration control highlight a shared emphasis on border security as a mobilizing issue.",
-      "convergence": 2,
-      "countries": [
-        {
-          "name": "🇺🇸 MAGA / Trump",
-          "note": "Trump administration enforces immigration laws, deports Afghans, and links border policies to domestic outcomes."
-        },
-        {
-          "name": "🇸🇪 Sverigedemokraterna",
-          "note": "Swedish far-right's rise is partly tied to anti-immigration rhetoric and policies."
-        }
-      ],
-      "signals": [
-        "border security focus",
-        "anti-immigration rhetoric",
-        "parallel political mobilization"
-      ],
-      "article_count": 4,
-      "refs": [
-        {
-          "title": "Trump administration responds to reports of ICE arrests at Danbury bus stops",
-          "source": "WFSB",
-          "url": "https://www.wfsb.com/2026/08/30/trump-administration-responds-reports-ice-arrests-danbury-bus-stops/",
-          "date": "2026-08-30T22:54:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Trump Administration Deports Afghan Man Whose Brothers Worked with U.S. Military to Africa",
-          "source": "8AM Media",
-          "url": "https://8am.media/eng/trump-administration-deports-afghan-man-whose-brothers-worked-with-u-s-military-to-africa/",
-          "date": "2026-08-30T07:32:09+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Fact check: Are Maine's overdoses down because of Trump's border policies?",
-          "source": "Houston Chronicle",
-          "url": "https://www.houstonchronicle.com/politics/texas/politifact/article/fact-check-overdoses-trump-border-22408361.php",
-          "date": "2026-08-31T09:04:09+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "A lone Black woman’s defiance of Swedish neo-Nazis, 10 years on",
-          "source": "The Guardian",
-          "url": "https://www.theguardian.com/world/2026/aug/30/sweden-neo-nazi-resistance-2016-tess-asplund-far-right",
-          "date": "2026-08-30T07:03:00+00:00",
-          "category": "sweden"
-        }
-      ],
-      "first_seen": "2026-09-01T05:46:05+00:00",
-      "last_seen": "2026-09-01T05:46:05+00:00"
+      "last_seen": "2026-09-01T17:00:12+00:00"
     }
   ]
 }
