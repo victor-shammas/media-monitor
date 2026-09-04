@@ -1,180 +1,118 @@
 {
-  "updated_at": "2026-09-03T16:44:56+00:00",
+  "updated_at": "2026-09-04T05:12:38+00:00",
   "lookback_hours": 48,
-  "model": "Mistral Large",
+  "model": "Gemini 3.6 Flash",
   "status": "ok",
   "themes": [
     {
       "id": "far-right-surge-in-european-regional-elections-and-governance",
       "title": "Far-Right Surge in European Regional Elections and Governance",
-      "blurb": "The far-right continues to dominate regional elections and governance discussions across Europe, with significant coverage in Germany, Italy, and Sweden. Parties like AfD, Fratelli d'Italia, and Sverigedemokraterna are positioning themselves for major electoral gains, reflecting a broader transnational trend of right-wing political ascendancy.",
+      "blurb": "Right-wing nationalist parties across Western and Central Europe are capitalizing on high polling momentum to demand direct governing roles or celebrate unprecedented administrative stability. From state elections in East Germany to coalition power dynamics in Scandinavia, populist movements are positioning themselves as central governing authorities rather than peripheral protest movements.",
       "convergence": 5,
       "countries": [
         {
           "name": "🇩🇪 Alternative für Deutschland",
-          "note": "AfD leads polls in Saxony-Anhalt and Mecklenburg-Vorpommern, with potential to form first far-right state government since WWII."
-        },
-        {
-          "name": "🇮🇹 Fratelli d'Italia / Lega",
-          "note": "Meloni's government celebrates record longevity, but faces internal coalition tensions and rising competition from Vannacci's party."
+          "note": "Leading polls at 42-43% in Saxony-Anhalt ahead of Sunday's vote, threatening a historic absolute majority and the collapse of the CDU political firewall."
         },
         {
           "name": "🇸🇪 Sverigedemokraterna",
-          "note": "SD seeks 12-14 ministerial posts in potential right-wing coalition, normalizing their influence despite past opposition."
+          "note": "Asserting influence over the Tidö coalition while demanding up to 12-14 ministerial posts in the next government formation."
+        },
+        {
+          "name": "🇮🇹 Fratelli d'Italia / Lega",
+          "note": "Giorgia Meloni and her coalition partners mark 1,413 days in power, establishing the longest-serving uninterrupted government in Italy's post-war republican history."
         },
         {
           "name": "🇫🇷 Rassemblement National",
-          "note": "Le Pen and Bardella clash over campaign strategies, with RN leading polls for the 2027 presidential election."
+          "note": "Marine Le Pen maintains strong polling leads for the 2027 presidential race while securing over 400 official candidate sponsorships."
+        },
+        {
+          "name": "🇳🇴 Fremskrittspartiet",
+          "note": "Surging to become Norway's largest party in national polls at 31.4%, eclipsing both the governing Labour Party and Conservatives."
         }
       ],
       "signals": [
-        "parallel elections",
-        "policy imitation",
-        "shared framing",
-        "contagion of rhetoric"
+        "election momentum",
+        "coalition demands",
+        "record longevity",
+        "polling leads"
       ],
-      "article_count": 120,
+      "article_count": 38,
       "refs": [
         {
-          "title": "Die AfD greift nach der Macht – was die Menschen vor Ort wirklich dazu sagen",
-          "source": "bluewin.ch",
-          "url": "https://www.bluewin.ch/de/news/international/die-afd-greift-nach-der-macht-was-die-menschen-vor-ort-wirklich-dazu-sagen-li.3582404",
-          "date": "2026-09-03T02:30:43+00:00",
+          "title": "Wird die Landtagswahl in Sachsen-Anhalt eine Zeitenwende?",
+          "source": "ZDFheute",
+          "url": "https://www.zdfheute.de/politik/deutschland/wahl-sachsen-anhalt-illner-afd-spaltung-100.html",
+          "date": "2026-09-04T00:39:00+00:00",
           "category": "germany"
         },
         {
-          "title": "Is Germany’s far right AfD about to take over a state government for the first time?",
-          "source": "The Conversation",
-          "url": "https://theconversation.com/is-germanys-far-right-afd-about-to-take-over-a-state-government-for-the-first-time-290970",
-          "date": "2026-09-02T15:34:34+00:00",
-          "category": "general"
+          "title": "Han vill ha egna ministrar",
+          "source": "8 Sidor",
+          "url": "https://8sidor.se/alla-valjare/2026/09/han-vill-ha-egna-ministrar/",
+          "date": "2026-09-03T09:34:22+00:00",
+          "category": "sweden"
         },
         {
-          "title": "Trotz Merz-Visite: Schulze jetzt 21 Prozentpunkte hinter der AfD",
-          "source": "BILD",
-          "url": "https://www.bild.de/politik/inland/trotz-merz-visite-schulze-jetzt-21-prozentpunkte-hinter-der-afd-6a97ebad3ae913be367b651e",
-          "date": "2026-09-02T11:14:05+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Forsa-Umfrage zur Landtagswahl: SPD holt auf",
-          "source": "NDR.de",
-          "url": "https://www.ndr.de/nachrichten/mecklenburg-vorpommern/landtagswahl/forsa-umfrage-zur-landtagswahl-spd-holt-auf,mvwahl-312.html",
-          "date": "2026-09-02T10:00:00+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Umfrage: AfD führt in Mecklenburg-Vorpommern, aber Schwesig könnte Regierung bilden",
-          "source": "de.tradingview.com",
-          "url": "https://de.tradingview.com/news/reuters.com,2026:newsml_L8N44U0JM:0/",
-          "date": "2026-09-02T07:59:59+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Warum die Landtagswahl in Sachsen-Anhalt weltweit für Aufmerksamkeit sorgt – Mehr im Ticker",
-          "source": "mdr.de",
-          "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/ticker-news-108,wahl-560.html",
-          "date": "2026-09-02T06:01:01+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Vor den Landtagswahlen: AfD auf Rekordkurs, Koalitionen wanken",
-          "source": "NZZ",
-          "url": "https://www.nzz.ch/meinung/die-afd-vor-dem-hoehenflug-eine-analyse-vor-den-landtagswahlen-in-sachsen-anhalt-mecklenburg-vorpommern-und-berlin-ld.10021289",
-          "date": "2026-09-02T03:30:00+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Sondaggi politici, confermato il sorpasso di Vannacci su Forza Italia. Sei punti dividono FdI e Pd",
-          "source": "la Repubblica",
-          "url": "https://www.repubblica.it/politica/2026/09/01/news/sondaggi_politici_vannacci_forza_italia_fdi_pd-425558459/",
-          "date": "2026-09-01T22:48:16+00:00",
+          "title": "Milestone: Meloni's government is Italy's longest-lasting in decades",
+          "source": "Euronews.com",
+          "url": "https://www.euronews.com/my-europe/2026/09/03/milestone-giorgia-melonis-right-wing-government-becomes-italys-longest-lasting-since-wwii",
+          "date": "2026-09-03T06:10:50+00:00",
           "category": "italy"
         },
         {
-          "title": "Why Germany's far right is on verge of biggest win since before WWII",
-          "source": "This is the Coast",
-          "url": "https://www.thisisthecoast.co.uk/news/world-news/why-germanys-far-right-is-on-verge-of-biggest-win-since-before-wwii/",
-          "date": "2026-09-01T18:11:54+00:00",
-          "category": "general"
+          "title": "Ny måling: Frp det største partiet i landet, medan Ap mistar veljarar",
+          "source": "Firda Tidend",
+          "url": "https://www.firdatidend.no/nyhende/ny-maling-frp-det-storste-partiet-i-landet-medan-ap-mistar-veljarar/537214",
+          "date": "2026-09-02T19:29:48+00:00",
+          "category": "norway"
         },
         {
-          "title": "„45 Prozent plus X“: Ulrich Siegmund will die AfD bei Wahl in Sachsen-Anhalt zum Triumph führen",
-          "source": "Frankfurter Rundschau",
-          "url": "https://www.fr.de/politik/afd-bei-wahl-in-sachsen-anhalt-wer-ist-spitzenkandidat-ulrich-siegmund-zr-94470597.html",
-          "date": "2026-09-01T17:53:57+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Wahl Sachsen-Anhalt 2026: Die Wut der Wutwähler hat Merz nicht besänftigt",
-          "source": "FAZ",
-          "url": "https://www.faz.net/aktuell/politik/wahl-in-sachsen-anhalt/wahl-sachsen-anhalt-2026-die-wut-der-wutwaehler-hat-merz-nicht-besaenftigt-201179634.html",
-          "date": "2026-09-01T17:33:54+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Vor Sachsen-Anhalt-Wahl: Journalist packt über aggressive Stimmung aus – wurde „fast körperlich bedroht“",
-          "source": "Frankfurter Rundschau",
-          "url": "https://www.fr.de/politik/ueber-aggressive-stimmung-vor-sachsen-anhalt-wahl-fast-koerperlich-bedroht-journalist-zr-94467347.html",
-          "date": "2026-09-01T17:00:00+00:00",
-          "category": "germany"
+          "title": "Parlons-en, les invités - 2027 : les dés sont-ils déjà jetés ? Parlons-en avec E. Pineau, C. Urien-Tomaka et B. Cautrès",
+          "source": "France 24",
+          "url": "https://www.france24.com/fr/%C3%A9missions/parlons-en-les-invit%C3%A9s/20260902-2027-les-d%C3%A9s-sont-ils-d%C3%A9j%C3%A0-jet%C3%A9s-parlons-en-avec-e-pineau-c-urien-tomaka-et-b-cautr%C3%A8s",
+          "date": "2026-09-02T15:18:23+00:00",
+          "category": "france"
         }
       ],
       "first_seen": "2026-09-01T17:00:12+00:00",
-      "last_seen": "2026-09-03T16:44:56+00:00"
+      "last_seen": "2026-09-04T05:12:38+00:00"
     },
     {
       "id": "immigration-and-border-security-as-political-wedges",
       "title": "Immigration and Border Security as Political Wedges",
-      "blurb": "Immigration and border security remain central issues for right-wing parties, with parallel debates in Spain, Italy, and Sweden. The Ceuta migrant crisis and Sweden Democrats' anti-Islamization proposals exemplify this cross-national focus on migration as a defining political issue.",
+      "blurb": "Right-wing parties across Europe are using territorial border friction and migration influxes to weaponize national security concerns against incumbent governments. Recent border tensions in the Spanish enclave of Ceuta have become a focal point for coordinated messaging across Spanish, Italian, and French nationalist movements.",
       "convergence": 5,
       "countries": [
         {
           "name": "🇪🇸 Vox",
-          "note": "Vox leads protests over Ceuta migrant crisis, accusing government of treason and demanding stronger border controls."
+          "note": "Organizing nationwide protests and EU demonstrations over the Ceuta migrant crisis, framing the influx as Moroccan 'hybrid warfare'."
         },
         {
           "name": "🇮🇹 Fratelli d'Italia / Lega",
-          "note": "Meloni's government faces criticism over migrant policies, with Lega proposing mosque bans and stricter border controls."
+          "note": "Lega lawmakers visited Ceuta to demand EU border enforcement while Matteo Salvini pushed for aggressive municipal migrant crackdowns in Naples."
         },
         {
-          "name": "🇸🇪 Sverigedemokraterna",
-          "note": "SD proposes banning new mosques and halting municipal aid to Islamist groups in Gothenburg."
+          "name": "🇩🇪 Alternative für Deutschland",
+          "note": "Focusing state election debates on rapid mass deportations, abolishing asylum rights, and barring foreign workers."
         },
         {
           "name": "🇫🇷 Rassemblement National",
-          "note": "Le Pen proposes penalizing veil-wearing in public spaces, sparking controversy over religious freedom."
+          "note": "Denouncing 'forced immigration' and using border crises to advocate for strict European frontier controls."
+        },
+        {
+          "name": "🇸🇪 Sverigedemokraterna",
+          "note": "Partnering with the government to roll out expanded emergency measures against criminal migrant networks and urban integration issues."
         }
       ],
       "signals": [
-        "policy imitation",
-        "shared framing",
-        "reaction to external event",
-        "coordinated messaging"
+        "border crisis mobilization",
+        "rhetoric of invasion",
+        "asylum policy debate",
+        "electoral wedge"
       ],
-      "article_count": 95,
+      "article_count": 42,
       "refs": [
-        {
-          "title": "SD presenterar åtgärdspaket för att stoppa islamiseringen av Göteborg",
-          "source": "Mynewsdesk",
-          "url": "https://www.mynewsdesk.com/se/sverigedemokraterna-goteborg/pressreleases/sd-presenterar-aatgaerdspaket-foer-att-stoppa-islamiseringen-av-goeteborg-3464534?utm_source=rss&utm_medium=rss&utm_campaign=Alert&utm_content=pressrelease",
-          "date": "2026-09-03T10:30:00+00:00",
-          "category": "sweden"
-        },
-        {
-          "title": "Moschea a Mestre, esposto della Lega sulla colletta per il centro di preghiera: «I conti non tornano»",
-          "source": "Il Gazzettino",
-          "url": "https://www.ilgazzettino.it/nordest/venezia/moschea_mestre_esposto_lega_colletta-9739861.html",
-          "date": "2026-09-03T06:21:47+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "U.S. Mint is now selling $1 coins featuring President Trump's face",
-          "source": "PhillyVoice",
-          "url": "https://www.phillyvoice.com/us-mint-unveils-dollar-coin-boasting-president-trumps-face-to-go-on-sale-wednesday/",
-          "date": "2026-09-02T19:46:48+00:00",
-          "category": "usa"
-        },
         {
           "title": "Ceccardi (Lega), 'Ceuta è Europa, riappropriamoci dei nostri confini'",
           "source": "ANSA",
@@ -197,95 +135,60 @@
           "category": "spain"
         },
         {
-          "title": "Vox exige bloquear la acogida de menores de Ceuta en Andalucía y cortar ayudas a ONG y la izquierda amaga con los tribunales",
-          "source": "El Correo de Andalucía",
-          "url": "https://www.elcorreoweb.es/andalucia/2026/09/02/vox-exige-bloquear-acogida-menores-ong-133866437.html",
-          "date": "2026-09-02T11:10:02+00:00",
-          "category": "spain"
+          "title": "Vor der Wahl in Sachsen-Anhalt - Duell Schulze vs. Siegmund – AfD will Geheimdienst umbauen - Politik - SZ.de",
+          "source": "SZ.de",
+          "url": "https://www.sueddeutsche.de/politik/vor-der-wahl-in-sachsen-anhalt-duell-schulze-vs-siegmund-afd-will-geheimdienst-umbauen-dpa.urn-newsml-dpa-com-20090101-260902-930-621818",
+          "date": "2026-09-02T11:56:46+00:00",
+          "category": "germany"
         },
         {
-          "title": "Vox asegura que hay mecanismos «administrativos y legales» para evitar que menores migrantes lleguen a Andalucía",
-          "source": "ABC",
-          "url": "https://www.abc.es/espana/andalucia/vox-asegura-mecanismos-administrativos-legales-evitar-menores-20260902123232-nts.html",
-          "date": "2026-09-02T10:34:06+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Abascal anima a concentrarse frente a la «traición» a los ceutíes de un Gobierno que no actuó",
-          "source": "Ultima Hora",
-          "url": "https://www.ultimahora.es/noticias/nacional/2026/09/02/2700419/abascal-anima-concentrarse-frente-traicion-ceuties-gobierno-actuo.html",
-          "date": "2026-09-02T08:02:00+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Santiago Abascal responde al intento de prohibición de la manifestación en apoyo a Ceuta: \"Mañana miles y...",
-          "source": "gaceta.es",
-          "url": "https://gaceta.es/espana/santiago-abascal-responde-al-intento-de-prohibicion-de-la-manifestacion-en-apoyo-a-ceuta-manana-miles-y-miles-de-espanoles-estaran-en-las-calles-yo-estare-entre-ellos-20260901-2053/",
-          "date": "2026-09-02T05:59:06+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "La invasión de Ceuta permite a Vox marcar distancias con Trump e Israel: «La soberanía es inviolable»",
-          "source": "OkDiario",
-          "url": "https://okdiario.com/espana/invasion-ceuta-permite-vox-marcar-distancias-trump-israel-soberania-inviolable-20210904",
-          "date": "2026-09-02T03:49:27+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "VOX se vuelca con las manifestaciones este miércoles en apoyo al pueblo ceutí tras la invasión y la guerra híbrida de Marruecos",
-          "source": "gaceta.es",
-          "url": "https://gaceta.es/espana/vox-se-vuelca-con-las-manifestaciones-este-miercoles-en-apoyo-al-pueblo-ceuti-tras-la-invasion-y-la-guerra-hibrida-de-marruecos-20260902-0021/",
-          "date": "2026-09-01T22:26:15+00:00",
-          "category": "spain"
+          "title": "La grande interview de Sébastien Chenu, député RN du Nord, vice-président du Rassemblement Nation...",
+          "source": "Europe 1",
+          "url": "https://www.europe1.fr/emissions/la-grande-interview-europe-1-cnews/la-grande-interview-de-sebastien-chenu-depute-rn-du-nord-vice-president-du-rassemblement-nation-1050296",
+          "date": "2026-09-02T08:05:01+00:00",
+          "category": "france"
         }
       ],
       "first_seen": "2026-09-01T05:46:05+00:00",
-      "last_seen": "2026-09-03T16:44:56+00:00"
+      "last_seen": "2026-09-04T05:12:38+00:00"
     },
     {
       "id": "populist-right-battles-media-bias-and-digital-censorship",
       "title": "Populist Right Battles Media Bias and Digital Censorship",
-      "blurb": "Right-wing parties across multiple countries are amplifying claims of media bias and digital censorship, framing themselves as defenders of free speech against perceived establishment suppression. This theme appears prominently in coverage from the US, UK, Germany, and Hungary.",
+      "blurb": "Right-wing political figures and movements are intensifying their offensive against established news outlets and public broadcasting structures. From legal interventions in tech copyright disputes to threats of defunding state broadcasters, conservative actors frame existing media entities as ideologically hostile.",
       "convergence": 4,
       "countries": [
         {
           "name": "🇺🇸 MAGA / Trump",
-          "note": "Trump administration sues media outlets and tech platforms, accusing them of bias and censorship against conservative voices."
-        },
-        {
-          "name": "🇬🇧 Reform UK",
-          "note": "Farage accuses BBC and other media of bias, facing investigations over funding and campaign practices."
+          "note": "The administration intervened in court to back OpenAI against The New York Times while Trump threatened regulatory actions against major television networks."
         },
         {
           "name": "🇩🇪 Alternative für Deutschland",
-          "note": "AfD accuses German media of bias, proposing reforms to public broadcasting and challenging media narratives."
+          "note": "Pledging to terminate the state contract for public broadcaster MDR in Saxony-Anhalt, condemning state media as a threat to democracy."
+        },
+        {
+          "name": "🇬🇧 Reform UK",
+          "note": "Nigel Farage attacked public broadcasters, accusing news organizations of fabricating conspiracy theories regarding party funding sources."
         },
         {
           "name": "🇭🇺 Fidesz / Tisza",
-          "note": "Hungarian government investigates media organizations for alleged bias, proposing stricter regulations on digital platforms."
+          "note": "Contesting oversight and appointment rules for the Independent Public Media Authority ahead of national broadcasting restructuring."
         }
       ],
       "signals": [
-        "shared framing",
-        "coordinated messaging",
-        "reaction to perceived bias",
-        "policy imitation"
+        "attacks on public broadcasting",
+        "clashes with mainstream news",
+        "fair use legal defenses",
+        "media authority battles"
       ],
-      "article_count": 80,
+      "article_count": 21,
       "refs": [
         {
-          "title": "Trump administration uses ICE unit to probe voter fraud claims in nine states",
-          "source": "KBAK",
-          "url": "https://bakersfieldnow.com/news/local/trump-administration-uses-ice-unit-to-probe-voter-fraud-claims-in-nine-states",
-          "date": "2026-09-03T05:56:54+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "‘Darn Unusual’ DOJ Filing Has the Trump Administration on Different Path - News of the United States",
-          "source": "NOTUS",
-          "url": "https://www.notus.org/courts/trump-administration-justice-department-openai-path",
-          "date": "2026-09-03T01:58:57+00:00",
-          "category": "usa"
+          "title": "MDR-Intendant: \"Die AfD will die Axt an einen Grundstein der Demokratie anlegen\"",
+          "source": "WEB.DE",
+          "url": "https://web.de/magazine/politik/wahlen/landtagswahlen/sachsen-anhalt/ralf-ludwig-afd-axt-grundstein-demokratie-anlegen-42674872",
+          "date": "2026-09-03T02:00:00+00:00",
+          "category": "germany"
         },
         {
           "title": "Trump administration sides with OpenAI in lawsuit against New York Times",
@@ -295,222 +198,75 @@
           "category": "usa"
         },
         {
-          "title": "Uncovering the Trump administration’s secret rules for AI model release",
-          "source": "Protect Democracy",
-          "url": "https://protectdemocracy.org/work/uncovering-the-trump-administrations-secret-rules-for-ai-model-release/",
-          "date": "2026-09-02T18:33:45+00:00",
+          "title": "BBC's Chris Mason Accuses Nigel Farage Of Spouting 'Conspiracy Theories' In Tense Interview",
+          "source": "HuffPost UK",
+          "url": "https://www.huffingtonpost.co.uk/entry/chris-mason-nigel-farage-scrutiny_uk_6a9822d4e4b087cf7f009ee8?origin=home-latest-unit",
+          "date": "2026-09-02T14:24:11+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Bayer Judit lehet a Független Közmédia Testület elnöke – a TISZA leszavazta az ellenzéki tagjelölteket, a kormánypártiak és a médiaszakmai jelöltek továbbjutottak",
+          "source": "Media1",
+          "url": "https://media1.hu/2026/09/02/bayer-judit-lehet-a-fuggetlen-kozmedia-testulet-elnoke-a-tisza-leszavazta-az-ellenzeki-tagjelolteket-a-kormanypartiak-es-a-mediaszakmai-jeloltek-tovabbjutottak/",
+          "date": "2026-09-02T13:06:40+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Steve Chapman: Donald Trump’s war on NBC, ABC and freedom of the press",
+          "source": "Chicago Tribune",
+          "url": "https://www.chicagotribune.com/2026/09/02/column-donald-trump-free-speech-news-media-chapman/",
+          "date": "2026-09-02T11:00:28+00:00",
           "category": "usa"
-        },
-        {
-          "title": "The Trump administration is supporting OpenAI in the NYT copyright lawsuit",
-          "source": "The Verge",
-          "url": "https://www.theverge.com/ai-artificial-intelligence/988344/trump-administration-new-york-times-openai-lawsuit",
-          "date": "2026-09-02T16:12:25+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Farage in fresh Parliament storm after filming video on roof",
-          "source": "The Independent",
-          "url": "https://www.independent.co.uk/bulletin/news/farage-reform-uk-video-parliament-b3043391.html",
-          "date": "2026-09-02T11:00:00+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Nigel Farage breaks parliamentary rules on first day back",
-          "source": "Yahoo News UK",
-          "url": "https://uk.news.yahoo.com/nigel-farage-breaks-parliamentary-rules-093049892.html",
-          "date": "2026-09-02T09:30:49+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Nigel Farage 'breaks Parliament rules' on first day back as MP",
-          "source": "Manchester Evening News",
-          "url": "https://www.manchestereveningnews.co.uk/news/uk-news/nigel-farage-breaks-parliament-rules-34554022",
-          "date": "2026-09-02T07:37:00+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Less than a day after returning to the Commons, Nigel Farage casually broke parliamentary rules - 19 flashes of déjà vu",
-          "source": "The Poke",
-          "url": "https://www.thepoke.com/2026/09/02/less-than-a-day-after-returning-to-the-commons-nigel-farage-casually-broke-parliamentary-rules/",
-          "date": "2026-09-02T04:47:45+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Nach Auftritt in Grimmen: Strafanzeige gegen AfD-Chef Chrupalla",
-          "source": "NDR.de",
-          "url": "https://www.ndr.de/nachrichten/mecklenburg-vorpommern/nach-auftritt-in-grimmen-strafanzeige-gegen-afd-chef-chrupalla,audio-3452472.html",
-          "date": "2026-09-02T03:30:00+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "BBC broadcasts rapper chanting ‘f*ck Farage and free Palestine’",
-          "source": "thecanary.co",
-          "url": "https://www.thecanary.co/trending/2026/09/01/loyle-carner-reading-festival/",
-          "date": "2026-09-01T20:11:35+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Nigel Farage breaks Parliament security rules just hours after returning as an MP",
-          "source": "Daily Mirror",
-          "url": "https://www.mirror.co.uk/news/politics/nigel-farage-breaks-rules-video-37616588",
-          "date": "2026-09-01T19:34:08+00:00",
-          "category": "uk"
         }
       ],
       "first_seen": "2026-08-30T17:01:22+00:00",
-      "last_seen": "2026-09-03T16:44:56+00:00"
-    },
-    {
-      "id": "economic-nationalism-and-trade-disputes",
-      "title": "Economic Nationalism and Trade Disputes",
-      "blurb": "Economic nationalism remains a dominant theme, with right-wing governments and parties across multiple countries engaging in trade disputes and protectionist policies. The US, Argentina, and Poland feature prominently in this cross-national economic conflict narrative.",
-      "convergence": 4,
-      "countries": [
-        {
-          "name": "🇺🇸 MAGA / Trump",
-          "note": "Trump administration imposes tariffs on Canada and Venezuela, promotes domestic industries, and challenges global trade norms."
-        },
-        {
-          "name": "🇦🇷 La Libertad Avanza",
-          "note": "Milei's government pursues aggressive economic reforms, challenges trade partners, and seeks to renegotiate international agreements."
-        },
-        {
-          "name": "🇵🇱 Prawo i Sprawiedliwość",
-          "note": "PiS government challenges EU trade policies, promotes domestic industries, and resists foreign economic influence."
-        },
-        {
-          "name": "🇳🇴 Fremskrittspartiet",
-          "note": "FrP advocates for protectionist policies in Norway's energy sector, resisting international climate agreements."
-        }
-      ],
-      "signals": [
-        "policy imitation",
-        "parallel economic policies",
-        "trade disputes",
-        "nationalist economic framing"
-      ],
-      "article_count": 75,
-      "refs": [
-        {
-          "title": "President Trump Says the U.S. Does Not Need Canadian Goods Amid Ongoing Trade War - C-SPAN",
-          "source": "",
-          "url": "https://www.c-span.org/clip/white-house-event/president-trump-says-the-us-does-not-need-canadian-goods-amid-ongoing-trade-war/5205512",
-          "date": "2026-09-02T21:40:33+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Trump Administration Delivers $77M in Water Infrastructure Improvements to Broken Bow, Idabel Rural Water Systems",
-          "source": "oklahomafarmreport.com",
-          "url": "https://www.oklahomafarmreport.com/2026/09/02/trump-administration-delivers-77m-in-water-infrastructure-improvements-to-broken-bow-idabel-rural-water-systems/",
-          "date": "2026-09-02T18:59:04+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "La jugada de Javier Milei y su discurso en cadena nacional sobre Malvinas para reordenar el tablero político",
-          "source": "Diario Río Negro",
-          "url": "https://www.rionegro.com.ar/politica/la-jugada-de-javier-milei-y-su-discurso-en-cadena-nacional-sobre-malvinas-para-reordenar-el-tablero-4706573/",
-          "date": "2026-09-02T14:57:15+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "El dato que alerta a Javier Milei de cara a las elecciones 2027: una encuesta reveló cuál es la prioridad de los votantes",
-          "source": "eldestapeweb.com",
-          "url": "https://www.eldestapeweb.com/politica/2027-mitad-sociedad-prefiere-candidato-incentive-consumo-2026929025",
-          "date": "2026-09-02T13:18:31+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "El Gobierno oficializó la suba del Salario Mínimo, Vital y Móvil de apenas 7 mil pesos para septiembre 2026",
-          "source": "MinutoUno",
-          "url": "https://www.minutouno.com/economia/el-gobierno-oficializo-la-suba-del-salario-minimo-vital-y-movil-apenas-7-mil-pesos-septiembre-2026-n6317493",
-          "date": "2026-09-02T11:05:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Donald Trump approval ratings: Here's what the latest polls show",
-          "source": "Yahoo",
-          "url": "https://www.yahoo.com/news/politics/articles/donald-trump-approval-ratings-heres-094133366.html",
-          "date": "2026-09-02T09:41:33+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Javier Milei sigue de cerca el impacto de la morosidad y analiza ordenarle al Banco Central una medida esp ...",
-          "source": "Jujuy al día",
-          "url": "https://www.jujuyaldia.com.ar/2026/09/02/javier-milei-sigue-de-cerca-el-impacto-de-la-morosidad-y-analiza-ordenarle-al-banco-central-una-medida-especial/",
-          "date": "2026-09-02T08:00:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Scott Bessent elogió las reformas de Javier Milei y se reunió con Luis Caputo en el G20",
-          "source": "Tendencia de Noticias",
-          "url": "https://tendenciadenoticias.com.ar/eco%20&%20negocios/scott-bessent-elogio-las-reformas-de-javier-milei-y-se-reunio-con-luis-caputo-en-el-g20",
-          "date": "2026-09-02T05:46:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Sin Javier Milei, la UIA conmemora el Día de la Industria sin nada que celebrar",
-          "source": "minutouno.com",
-          "url": "https://www.minutouno.com/politica/sin-javier-milei-la-uia-conmemora-el-dia-la-industria-nada-que-celebrar-n6317469",
-          "date": "2026-09-02T03:15:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Donald Trump & friends have a welcome plot twist for Hollywood",
-          "source": "New York Post",
-          "url": "https://nypost.com/2026/09/01/opinion/donald-trump-friends-promote-tax-credits-for-hollywood/",
-          "date": "2026-09-02T01:39:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "President Trump meets oil executives as US eyes Venezuelan oil expansion",
-          "source": "KCRA",
-          "url": "https://www.kcra.com/article/trump-meets-oil-executives-venezuelan-expansion/73585322",
-          "date": "2026-09-01T22:01:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Citing California as a problem state, Trump administration shuts down 110 trucking schools",
-          "source": "latimes.com",
-          "url": "https://www.latimes.com/politics/story/2026-08-31/citing-california-as-problem-state-trump-administration-shuts-down-110-trucking-schools",
-          "date": "2026-09-01T19:41:00+00:00",
-          "category": "usa"
-        }
-      ],
-      "first_seen": "2026-09-01T05:46:05+00:00",
-      "last_seen": "2026-09-03T16:44:56+00:00"
+      "last_seen": "2026-09-04T05:12:38+00:00"
     },
     {
       "id": "nationalist-symbolism-and-rebranding-of-public-institutions",
       "title": "Nationalist Symbolism and Rebranding of Public Institutions",
-      "blurb": "Right-wing governments and parties are increasingly using nationalist symbolism and rebranding public institutions to reflect their ideological priorities. This theme appears in the US, Hungary, Italy, and Poland, with each country implementing symbolic changes to assert national identity.",
+      "blurb": "Populist and nationalist leaders are systematically utilizing physical monuments, institutional symbolism, and sovereign infrastructure to project power and cement historical legacies. Government executive actions are increasingly focused on physically redesigning public spaces or asserting national control over disputed sites.",
       "convergence": 4,
       "countries": [
         {
           "name": "🇺🇸 MAGA / Trump",
-          "note": "Trump administration renames Lake Ontario to 'Lake America,' issues coins with Trump's image, and rebrands federal programs."
+          "note": "Issuing $1 coins depicting Donald Trump's face, advancing plans for a White House ballroom, and proposing interstate highways named in his honor."
         },
         {
-          "name": "🇭🇺 Fidesz / Tisza",
-          "note": "Hungarian government rebrands public institutions, changes street names, and promotes nationalist symbols in public spaces."
+          "name": "🇦🇷 La Libertad Avanza",
+          "note": "Announcing a national naval base project in Tierra del Fuego to physically reinforce sovereignty claims over the Falkland Islands."
         },
         {
           "name": "🇮🇹 Fratelli d'Italia / Lega",
-          "note": "Meloni's government emphasizes nationalist symbolism in public ceremonies and institutional branding."
+          "note": "Hosting major public gatherings at port facilities in Bari to celebrate government longevity and commemorate historical right-wing icons."
         },
         {
-          "name": "🇵🇱 Prawo i Sprawiedliwość",
-          "note": "PiS government promotes nationalist symbolism in public institutions and historical commemorations."
+          "name": "🇭🇺 Fidesz / Tisza",
+          "note": "Revoking special designations and oversight structures for major public campus developments and state-backed cultural projects."
         }
       ],
       "signals": [
-        "policy imitation",
-        "shared framing",
-        "nationalist symbolism",
-        "institutional rebranding"
+        "presidential currency and monuments",
+        "sovereignty base renamings",
+        "institutional record celebrations",
+        "public asset revoking"
       ],
-      "article_count": 65,
+      "article_count": 24,
       "refs": [
+        {
+          "title": "Panel moves ahead with another piece of President Trump’s plan to redesign DC",
+          "source": "WTOP News",
+          "url": "https://wtop.com/dc/2026/09/panel-moves-ahead-with-another-piece-of-president-trumps-plan-to-redesign-dc/",
+          "date": "2026-09-04T00:39:16+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Javier Milei, sobre las islas Malvinas, uno por uno los anuncios del presidente en la cadena nacional",
+          "source": "lanacion.com.ar",
+          "url": "https://www.lanacion.com.ar/politica/javier-milei-sobre-las-islas-malvinas-uno-por-uno-los-anuncios-del-presidente-en-la-cadena-nacional-nid03092026/",
+          "date": "2026-09-04T00:26:00+00:00",
+          "category": "argentina"
+        },
         {
           "title": "Video President Trump's face is now on money, with $1 coins going into circulation - ABC News",
           "source": "Breaking News, Latest News and Videos",
@@ -519,85 +275,92 @@
           "category": "usa"
         },
         {
-          "title": "U.S. Mint is now selling $1 coins featuring President Trump's face",
-          "source": "PhillyVoice",
-          "url": "https://www.phillyvoice.com/us-mint-unveils-dollar-coin-boasting-president-trumps-face-to-go-on-sale-wednesday/",
-          "date": "2026-09-02T19:46:48+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "US Mint rolls out new $1 coins featuring President Trump’s face",
-          "source": "New York Post",
-          "url": "https://nypost.com/2026/09/02/business/us-mint-rolls-out-new-1-coins-featuring-donald-trumps-face/",
-          "date": "2026-09-02T18:31:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Hat taggal is munkának lát a közmédia új testülete, hamarosan kiírhatják a vezérigazgatói pályázatot",
-          "source": "Portfolio.hu",
-          "url": "https://www.portfolio.hu/gazdasag/20260902/hat-taggal-is-munkanak-lat-a-kozmedia-uj-testulete-hamarosan-kiirhatjak-a-vezerigazgatoi-palyazatot-860036?amp",
-          "date": "2026-09-02T14:46:00+00:00",
+          "title": "Lecsapott a Tisza-kormány az Orbán-rendszer kiemelt beruházásaira",
+          "source": "forbes.hu",
+          "url": "https://www.forbes.hu/penz/kiemelt-beruhazas-orban-rendszer-tisza-kormany/",
+          "date": "2026-09-02T15:02:10+00:00",
           "category": "hungary"
         },
         {
-          "title": "Miranda Devine reacts to JD Vance slamming Abdul El-Sayed's campaign",
-          "source": "Fox Business",
-          "url": "https://www.foxbusiness.com/video/6404484181112",
-          "date": "2026-09-02T11:29:22+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Magyar Péter a büntetőügyek gyorsításával próbálná közelebb hozni a vagyonvisszaszerzés eredményeit",
-          "source": "atv.hu",
-          "url": "https://www.atv.hu/videok/magyar-peter-a-buntetougyek-gyorsitasaval-probalna-kozelebb-hozni-a-vagyonvisszaszerzes-eredmenyeit/",
-          "date": "2026-09-02T08:49:14+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Itthon: Magyar Péter Manfred Webernek: Magyarország az eddig kiszabott menekültügyi bírság jóváírását fogja kérni",
-          "source": "| hvg.hu",
-          "url": "https://hvg.hu/itthon/20260902_magyar-peter-manfred-webernek-magyarorszag-az-eddig-kiszabott-menekultugyi-birsag-jovairasat-fogja-kerni",
-          "date": "2026-09-02T07:28:55+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Magyar Péter: Az Európai Néppárt elnöke segítséget ajánlott",
-          "source": "ORIGO",
-          "url": "https://www.origo.hu/belpol/2026/09/magyar-peter-az-europai-neppart-elnoke-segitseget-ajanlott",
-          "date": "2026-09-02T06:01:42+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Javier Milei confirmó una cadena nacional por Malvinas y respondió con dureza a las críticas",
-          "source": "diariolapluma.com.ar",
-          "url": "https://diariolapluma.com.ar/javier-milei-confirmo-una-cadena-nacional-por-malvinas-y-respondio-con-dureza-a-las-criticas/",
-          "date": "2026-09-02T03:41:43+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Apple Maps renames Lake Ontario as Lake America after Trump order",
-          "source": "BBC",
-          "url": "https://www.bbc.com/news/articles/cddvyyz0e47o",
-          "date": "2026-09-02T01:32:24+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "New UMass Amherst Poll Finds Trump’s Approval Down to 32%",
-          "source": "Amherst Indy",
-          "url": "https://www.amherstindy.org/2026/09/01/new-umass-amherst-poll-finds-trumps-approval-down-to-32/",
-          "date": "2026-09-01T22:06:35+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "VOX exige que Santander rompa el convenio con Jacobo Pombo por su vinculación con el ‘caso Ábalos’",
-          "source": "cantabriadirecta.es",
-          "url": "https://www.cantabriadirecta.es/148104-2-noticias-cantabria-santander-jacobo-pombo/",
-          "date": "2026-09-01T18:51:22+00:00",
-          "category": "spain"
+          "title": "Governo, tutto pronto per la festa di Fdi a Bari con Meloni: al porto l'omaggio a Pinuccio Tatarella",
+          "source": "Cremonaoggi",
+          "url": "https://www.cremonaoggi.it/2026/09/02/governo-tutto-pronto-per-la-festa-di-fdi-a-bari-con-meloni-al-porto-lomaggio-a-pinuccio-tatarella/",
+          "date": "2026-09-02T13:44:02+00:00",
+          "category": "italy"
         }
       ],
       "first_seen": "2026-09-01T05:46:05+00:00",
-      "last_seen": "2026-09-03T16:44:56+00:00"
+      "last_seen": "2026-09-04T05:12:38+00:00"
+    },
+    {
+      "id": "economic-nationalism-and-trade-disputes",
+      "title": "Economic Nationalism and Trade Disputes",
+      "blurb": "Right-wing agendas are increasingly prioritizing domestic energy extraction, industrial protectionism, and aggressive posture in international trade conflicts. Parties argue that globalist environmental regulations and foreign trade reliance severely handicap national industries.",
+      "convergence": 4,
+      "countries": [
+        {
+          "name": "🇺🇸 MAGA / Trump",
+          "note": "Escalating trade war rhetoric against Canadian imports, lifting beef tariff limits, and securing bilateral energy access in South America."
+        },
+        {
+          "name": "🇦🇷 La Libertad Avanza",
+          "note": "Pushing the Súper RIGI economic reform bill through Congress with local supplier mandates while spending on foreign defense acquisitions."
+        },
+        {
+          "name": "🇬🇧 Reform UK",
+          "note": "Demanding unrestricted North Sea oil and gas expansion and promising the total repeal of net-zero energy levies."
+        },
+        {
+          "name": "🇩🇪 Alternative für Deutschland",
+          "note": "Attacking green transition policies and Russian sanctions, linking EV mandates directly to major domestic automotive plant closures."
+        }
+      ],
+      "signals": [
+        "trade war rhetoric",
+        "fossil fuel deregulation",
+        "protectionist energy policies",
+        "industrial subsidy disputes"
+      ],
+      "article_count": 19,
+      "refs": [
+        {
+          "title": "Reform UK's Richard Tice calls for more North Sea drilling",
+          "source": "Yahoo News Canada",
+          "url": "https://ca.news.yahoo.com/reform-uks-richard-tice-calls-222428572.html",
+          "date": "2026-09-03T22:24:28+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "President Trump Says the U.S. Does Not Need Canadian Goods Amid Ongoing Trade War - C-SPAN",
+          "source": "",
+          "url": "https://www.c-span.org/clip/white-house-event/president-trump-says-the-us-does-not-need-canadian-goods-amid-ongoing-trade-war/5205512",
+          "date": "2026-09-02T21:40:33+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "En el día de la industria, Peter Lamelas elogió el plan económico de Javier Milei",
+          "source": "c5n.com",
+          "url": "https://www.c5n.com/economia/en-el-dia-la-industria-peter-lamelas-elogio-el-plan-economico-javier-milei-n247824",
+          "date": "2026-09-02T16:18:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Tino Chrupalla: Arbeitsplätze in Automobilindustrie dauerhaft sichern",
+          "source": "Presseportal",
+          "url": "https://www.presseportal.de/pm/110332/6344566",
+          "date": "2026-09-02T13:04:23+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "La Libertad Avanza aceptó cambios al Súper RIGI y el proyecto volverá a Diputados",
+          "source": "Radio Facundo Quiroga",
+          "url": "https://facundoquiroga.com/la-libertad-avanza-acepto-cambios-al-super-rigi-y-el-proyecto-volvera-a-diputados/",
+          "date": "2026-09-02T12:22:20+00:00",
+          "category": "argentina"
+        }
+      ],
+      "first_seen": "2026-09-01T05:46:05+00:00",
+      "last_seen": "2026-09-04T05:12:38+00:00"
     }
   ]
 }
