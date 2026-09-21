@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-21T05:35:44+00:00",
+  "updated_at": "2026-09-21T18:23:01+00:00",
   "lookback_hours": 48,
   "model": "Gemini 3.6 Flash",
   "status": "ok",
@@ -7,33 +7,41 @@
     {
       "id": "electoral-volatility-and-internal-friction-facing-right-wing-parties",
       "title": "Electoral Volatility and Internal Friction Facing Right-Wing Parties",
-      "blurb": "Right-wing and populist parties across multiple nations are grappling with internal dissension, governance accountability, and shifting voter alignments. In Sweden and France, populist parties face polling setbacks and mainstream policy co-optation, while in the US and UK, right-wing movements face campaign finance scrutiny and internal base divisions.",
+      "blurb": "Right-wing parties across Europe and North America are contending with internal strategic disputes, voter erosion after taking governance responsibility, and mid-term campaigning friction. From Swedish populist support dips to local coalition squabbles in Italy and donor tension in the US, right-leaning movements are navigating shifting voter expectations.",
       "convergence": 4,
       "countries": [
         {
           "name": "🇸🇪 Sverigedemokraterna",
-          "note": "SD experiences voter erosion nationally and in regional strongholds as mainstream parties adopt their migration platform and governance creates accountability pressures."
-        },
-        {
-          "name": "🇫🇷 Rassemblement National",
-          "note": "RN navigates delicate 2027 budget negotiations while facing an economic credibility ceiling among traditional right-wing voters."
+          "note": "Facing voter loss nationally and locally as governing accountability sets in and rivals adopt their core migration stances"
         },
         {
           "name": "🇺🇸 MAGA / Trump",
-          "note": "Vulnerable Republicans distance themselves from Trump in tight midterm races while internal MAGA base splits emerge over AI and technology policies."
+          "note": "Experiencing internal friction with state Republicans distancing from national leadership and donor pushback over policy positions"
+        },
+        {
+          "name": "🇫🇷 Rassemblement National",
+          "note": "Reorganizing legislative responsibilities and party management following legal rulings affecting top executive leadership"
         },
         {
           "name": "🇬🇧 Reform UK",
-          "note": "The party faces regulatory scrutiny from the UK election watchdog over campaign spending limits following major crypto donations."
+          "note": "Navigating scrutiny and political pushback surrounding campaign funding and election finance limits"
+        },
+        {
+          "name": "🇮🇹 Fratelli d'Italia / Lega",
+          "note": "Managing center-right coalition tension and mayoral candidacy competition in key local elections"
+        },
+        {
+          "name": "🇳🇴 Fremskrittspartiet",
+          "note": "Dealing with localized party friction and legal clearance following municipal organizational disputes"
         }
       ],
       "signals": [
-        "electoral accountability",
-        "internal base division",
-        "policy co-optation",
-        "regulatory scrutiny"
+        "voter support erosion",
+        "internal party friction",
+        "midterm strategy friction",
+        "coalition rivalry"
       ],
-      "article_count": 12,
+      "article_count": 8,
       "refs": [
         {
           "title": "California Republicans walk a tightrope as Trump jumps into midterms campaigning",
@@ -43,6 +51,20 @@
           "category": "usa"
         },
         {
+          "title": "Jean-Philippe Tanguy, un fidèle de Marine Le Pen aux manettes du budget",
+          "source": "La Croix",
+          "url": "https://www.la-croix.com/politique/jean-philippe-tanguy-un-fidele-de-marine-le-pen-aux-manettes-du-budget-20260920",
+          "date": "2026-09-20T09:27:47+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Åsnes, Fremskrittspartiet | Frikjent etter drama i lokalpartiet: – En enorm lettelse",
+          "source": "Glåmdalen",
+          "url": "https://www.glomdalen.no/frikjent-etter-drama-i-lokalpartiet-en-enorm-lettelse/s/80-19-358713",
+          "date": "2026-09-20T07:56:06+00:00",
+          "category": "norway"
+        },
+        {
           "title": "Malin Lernfelt När Sverigedemokraterna fick ta ansvar valde väljarna att lämna",
           "source": "TTELA",
           "url": "https://www.ttela.se/asikt/ledare/nar-sverigedemokraterna-fick-ta-ansvar-valde-valjarna-att-lamna.91a23bbb-d4fd-4154-aee9-d9edcd12005c",
@@ -50,63 +72,49 @@
           "category": "sweden"
         },
         {
+          "title": "Perego davanti a Sardone per le Comunali a Milano, Lupi rincorre: svelato il sondaggio del centrodestra",
+          "source": "Il Giorno",
+          "url": "https://www.ilgiorno.it/milano/cronaca/perego-davanti-sardone-comunali-sondaggio-centrodestra-v6b42ata",
+          "date": "2026-09-20T00:03:50+00:00",
+          "category": "italy"
+        },
+        {
           "title": "Elections watchdog reviews spending limits amid Reform UK donation row",
           "source": "Yahoo",
           "url": "https://www.yahoo.com/news/politics/articles/elections-watchdog-reviews-spending-limits-000338170.html",
           "date": "2026-09-20T00:03:00+00:00",
           "category": "uk"
-        },
-        {
-          "title": "Budget 2027 : le pas de deux entre Sébastien Lecornu et le Rassemblement national",
-          "source": "Le Monde.fr",
-          "url": "https://www.lemonde.fr/politique/article/2026/09/19/budget-2027-le-pas-de-deux-entre-sebastien-lecornu-et-le-rassemblement-national_6777398_823448.html",
-          "date": "2026-09-19T07:30:16+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Statsvetaren: Valvinden för SD har varit deras nackdel",
-          "source": "Omni – Alla nyheter. Alla perspektiv.",
-          "url": "https://omni.se/statsvetaren-valvinden-for-sd-har-varit-deras-nackdel/a/d4AmAo",
-          "date": "2026-09-19T06:21:27+00:00",
-          "category": "sweden"
-        },
-        {
-          "title": "Albert Zennou : « Marine Le Pen face à son dernier plafond de verre, l’économie »",
-          "source": "Le Figaro",
-          "url": "https://www.lefigaro.fr/vox/politique/albert-zennou-marine-le-pen-face-a-son-dernier-plafond-de-verre-l-economie-20260919",
-          "date": "2026-09-19T06:05:00+00:00",
-          "category": "france"
         }
       ],
       "first_seen": "2026-09-15T17:21:39+00:00",
-      "last_seen": "2026-09-21T05:35:44+00:00"
+      "last_seen": "2026-09-21T18:23:01+00:00"
     },
     {
       "id": "challenges-to-established-institutions-and-norms",
       "title": "Challenges to Established Institutions and Norms",
-      "blurb": "Far-right and populist political actors continue to push against traditional democratic norms, press access, and regulatory structures. Executive actions restricting critical media outlets and efforts to centralize administrative control provoke constitutional concerns and regulatory reviews across borders.",
+      "blurb": "Populist right-wing actors are testing boundaries against institutional norms, including independent monetary authorities, regulatory campaign watchdogs, and press freedoms. These moves reflect broader cross-border friction between right-wing political movements and established democratic gatekeepers.",
       "convergence": 4,
       "countries": [
         {
           "name": "🇺🇸 MAGA / Trump",
-          "note": "The White House bars major news outlets, drawing First Amendment backlash, while attempting to bring health research funding under direct political control."
+          "note": "Restricting White House press credentials, challenging Federal Reserve rate independence, and centralizing grant funding"
         },
         {
           "name": "🇬🇧 Reform UK",
-          "note": "Electoral regulators review campaign finance framework limits in response to massive individual and crypto-billionaire contributions."
+          "note": "Pushing campaign finance boundaries with mega-donations, prompting calls for regulatory spending oversight"
         },
         {
           "name": "🇫🇷 Rassemblement National",
-          "note": "High-stakes maneuvers surrounding the 2027 budget challenge standard legislative procedure and executive balance."
+          "note": "Navigating judicial restrictions on executive eligibility while building long-term parliamentary power"
         }
       ],
       "signals": [
-        "press freedom restrictions",
-        "institutional pushback",
-        "administrative centralization",
-        "regulatory review"
+        "press access restrictions",
+        "regulatory scrutiny",
+        "institutional resistance",
+        "executive overreach"
       ],
-      "article_count": 9,
+      "article_count": 6,
       "refs": [
         {
           "title": "Cory Booker says President Trump ‘has no regard’ for the First Amendment after WH media bans",
@@ -116,17 +124,17 @@
           "category": "usa"
         },
         {
+          "title": "Jean-Philippe Tanguy, un fidèle de Marine Le Pen aux manettes du budget",
+          "source": "La Croix",
+          "url": "https://www.la-croix.com/politique/jean-philippe-tanguy-un-fidele-de-marine-le-pen-aux-manettes-du-budget-20260920",
+          "date": "2026-09-20T09:27:47+00:00",
+          "category": "france"
+        },
+        {
           "title": "Journalists locked out of the White House after Trump ban",
           "source": "Al Jazeera",
           "url": "https://www.aljazeera.com/video/newsfeed/2026/9/20/journalists-locked-out-of-the-white-house-after-trump-ban",
           "date": "2026-09-20T05:49:04+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Donald Trump seeks to bring health-research funding under his control, Politico reports",
-          "source": "The Hindu",
-          "url": "https://www.thehindu.com/news/international/donald-trump-seeks-to-bring-health-research-funding-under-his-control-politico-reports/article71487082.ece",
-          "date": "2026-09-20T04:44:31+00:00",
           "category": "usa"
         },
         {
@@ -142,106 +150,37 @@
           "url": "https://www.yahoo.com/news/politics/articles/elections-watchdog-reviews-spending-limits-000338170.html",
           "date": "2026-09-20T00:03:00+00:00",
           "category": "uk"
-        },
-        {
-          "title": "MAGA Turns on Trump Over Wild Media Ban",
-          "source": "The Daily Beast",
-          "url": "https://www.thedailybeast.com/maga-turns-on-trump-over-wild-media-ban/",
-          "date": "2026-09-19T07:11:00+00:00",
-          "category": "usa"
         }
       ],
       "first_seen": "2026-09-18T05:20:08+00:00",
-      "last_seen": "2026-09-21T05:35:44+00:00"
-    },
-    {
-      "id": "trump-s-america-first-global-repercussions",
-      "title": "Trump's 'America First' Global Repercussions",
-      "blurb": "The unilateral posture of the U.S. administration continues to reshape international relations and force domestic adaptations by foreign right-wing parties. From asserting strategic dominance over Greenland to dictating major foreign defense sales, 'America First' policies ripple through allied political debates.",
-      "convergence": 3,
-      "countries": [
-        {
-          "name": "🇺🇸 MAGA / Trump",
-          "note": "The administration asserts permanent defense control over Greenland, approves major Saudi stealth jet sales, and enacts sweeping sanctions on Russia and Iran."
-        },
-        {
-          "name": "🇫🇷 Rassemblement National",
-          "note": "Marine Le Pen works to manage internal party position shifts regarding Ukraine aid amidst broader global power shifts."
-        }
-      ],
-      "signals": [
-        "unilateral diplomacy",
-        "geopolitical realignment",
-        "strategic defense pacts",
-        "foreign policy friction"
-      ],
-      "article_count": 6,
-      "refs": [
-        {
-          "title": "Trump Is Dismantling the World America Built",
-          "source": "Rolling Stone",
-          "url": "https://www.rollingstone.com/politics/political-commentary/trump-maga-destroyed-global-order-1235629022/",
-          "date": "2026-09-20T14:00:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Trump announces US-Denmark-Greenland security agreement",
-          "source": "WITN",
-          "url": "https://www.witn.com/2026/09/19/trump-announces-us-denmark-greenland-security-agreement/",
-          "date": "2026-09-19T18:36:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "La guerre en Ukraine, une épine dans le pied de Marine Le Pen ?",
-          "source": "parismatch.com",
-          "url": "https://www.parismatch.com/actu/politique/la-guerre-en-ukraine-une-epine-dans-le-pied-de-marine-le-pen-275930",
-          "date": "2026-09-19T07:39:25+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Trump says deal with Denmark gives US ‘permanent control’ over Greenland",
-          "source": "Al Jazeera",
-          "url": "https://www.aljazeera.com/news/2026/9/18/trump-claims-deal-with-denmark-gives-us-permanent-control-over-greenland",
-          "date": "2026-09-19T06:38:31+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Trump Signs Russia-Iran Sanctions Bill, Putting New Pressure Tools At His Disposal",
-          "source": "rferl.org",
-          "url": "https://www.rferl.org/a/33859294.html",
-          "date": "2026-09-19T05:53:39+00:00",
-          "category": "usa"
-        }
-      ],
-      "first_seen": "2026-09-18T16:48:21+00:00",
-      "last_seen": "2026-09-21T05:35:44+00:00"
+      "last_seen": "2026-09-21T18:23:01+00:00"
     },
     {
       "id": "enduring-influence-of-populist-personalities",
       "title": "Enduring Influence of Populist Personalities",
-      "blurb": "Charismatic party figures remain the primary drivers of messaging, policy direction, and media coverage within right-wing political movements. The spotlight on figures like Donald Trump, Jimmie Åkesson, and Marine Le Pen underlines how populist political movements remain tightly tethered to the personal authority of top leadership.",
+      "blurb": "Key political figureheads remain central to driving party messaging, voter mobilization, and organizational hierarchy. Across multiple nations, right-wing movements rely heavily on prominent individual leaders to anchor campaign rallies and maintain movement cohesion.",
       "convergence": 3,
       "countries": [
         {
           "name": "🇺🇸 MAGA / Trump",
-          "note": "Trump and JD Vance dominate national media coverage through rallies, provocative public statements, and attacks on critics."
+          "note": "Trump and Vance drive party platform, midterm endorsements, and media narratives across early voting states"
         },
         {
           "name": "🇸🇪 Sverigedemokraterna",
-          "note": "Jimmie Åkesson's central persona and controversial rhetoric drive public mobilization and define SD's political footprint."
+          "note": "Top party leaders Åkesson, Lindberg, and Vinge personally lead pre-election rallies to energize the base"
         },
         {
           "name": "🇫🇷 Rassemblement National",
-          "note": "Marine Le Pen's personal leadership trajectory and legal standing remain the single most defining factor in RN's strategic planning."
+          "note": "Marine Le Pen retains dominant personal authority over party appointments and parliamentary strategy"
         }
       ],
       "signals": [
-        "leader-driven strategy",
-        "personality politics",
-        "rhetorical provocation",
-        "media dominance"
+        "charismatic leadership",
+        "personality-driven campaigns",
+        "top-down messaging",
+        "movement cohesion"
       ],
-      "article_count": 8,
+      "article_count": 5,
       "refs": [
         {
           "title": "Jean-Philippe Tanguy, un fidèle de Marine Le Pen aux manettes du budget",
@@ -258,83 +197,154 @@
           "category": "usa"
         },
         {
+          "title": "JD Vance targets Rob Sand, 'crazy' Democrats in Iowa rally - The Quad-City Times",
+          "source": "",
+          "url": "https://qctimes.com/news/state-regional/article_dc72cbbc-f638-58b8-84c0-f76b3a64df65.html",
+          "date": "2026-09-20T06:33:52+00:00",
+          "category": "usa"
+        },
+        {
           "title": "LEDARE: Fröken Snusk drar inga väljare i SD-land",
           "source": "Sydsvenskan",
           "url": "https://www.sydsvenskan.se/opinion/moa-berglof/froken-snusk-drar-inga-valjare-i-sd-land/",
           "date": "2026-09-20T04:43:00+00:00",
           "category": "sweden"
-        },
-        {
-          "title": "Trump calls Hasan Piker a 'terrible liability' for Democrats & labels him a communist",
-          "source": "WJAR",
-          "url": "https://turnto10.com/news/nation-world/trump-calls-hasan-piker-a-terrible-liability-for-democrats-labels-him-a-communist-politics-midterm-elections-campaign-liberal-conservative-gop-vote-voting-polls-political-commentator-social-media-streamer-youtube-president-donald-trump",
-          "date": "2026-09-19T12:47:27+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "”Jimmie Åkesson väckte den björn som sov”",
-          "source": "dn.se",
-          "url": "https://www.dn.se/sverige/jimmie-akesson-vackte-den-bjorn-som-sov/",
-          "date": "2026-09-19T08:10:14+00:00",
-          "category": "sweden"
-        },
-        {
-          "title": "What attendees at JD Vance rally thought about Trump administration, vice president - Omaha World-Herald",
-          "source": "",
-          "url": "https://omaha.com/news/local/government-politics/elections/article_f1a25ff5-8edb-49fb-9789-6488874246ae.html",
-          "date": "2026-09-19T07:02:03+00:00",
-          "category": "usa"
         }
       ],
       "first_seen": "2026-09-17T05:33:44+00:00",
-      "last_seen": "2026-09-21T05:35:44+00:00"
+      "last_seen": "2026-09-21T18:23:01+00:00"
     },
     {
-      "id": "immigration-policy-and-enforcement-debates",
-      "title": "Immigration Policy and Enforcement Debates",
-      "blurb": "Immigration management and enforcement practices remain persistent touchpoints for right-wing political agendas. Debates over detention oversight, demographic policies, and mainstream adoption of restrictive migration frameworks reflect the enduring centrality of immigration issues across borders.",
-      "convergence": 2,
+      "id": "local-and-regional-dynamics-in-right-wing-electoral-strategy",
+      "title": "Local and Regional Dynamics in Right-Wing Electoral Strategy",
+      "blurb": "Right-wing parties are grappling with geographical divides between rural strongholds and urban centers. Strategists across borders are balancing localized constituent priorities against overarching national platforms ahead of municipal and midterm elections.",
+      "convergence": 3,
       "countries": [
         {
-          "name": "🇺🇸 MAGA / Trump",
-          "note": "The administration's strict immigration enforcement faces scrutiny over ICE detention conditions alongside pro-natalist rhetoric from MAGA commentators."
+          "name": "🇸🇪 Sverigedemokraterna",
+          "note": "Managing stark rural-urban geographic polarizations in municipal strongholds like Trelleborg"
         },
         {
-          "name": "🇸🇪 Sverigedemokraterna",
-          "note": "SD's core migration platform continues to dictate Sweden's broader political landscape as rival parties integrate similar policies."
+          "name": "🇮🇹 Fratelli d'Italia / Lega",
+          "note": "Navigating municipal polling metrics and local candidate selection ahead of the Milan mayoral race"
+        },
+        {
+          "name": "🇺🇸 MAGA / Trump",
+          "note": "Moderate state candidates tailor messages to local constituents while national figures run targeted regional rallies"
+        },
+        {
+          "name": "🇳🇴 Fremskrittspartiet",
+          "note": "Resolving localized municipal party disputes to stabilize local political apparatuses"
         }
       ],
       "signals": [
-        "enforcement scrutiny",
-        "mainstream policy adoption",
-        "demographic rhetoric"
+        "rural-urban divides",
+        "municipal election battles",
+        "local vs national messaging",
+        "coalition management"
       ],
-      "article_count": 3,
+      "article_count": 5,
       "refs": [
         {
-          "title": "Malin Lernfelt När Sverigedemokraterna fick ta ansvar valde väljarna att lämna",
-          "source": "TTELA",
-          "url": "https://www.ttela.se/asikt/ledare/nar-sverigedemokraterna-fick-ta-ansvar-valde-valjarna-att-lamna.91a23bbb-d4fd-4154-aee9-d9edcd12005c",
-          "date": "2026-09-20T06:45:00+00:00",
-          "category": "sweden"
-        },
-        {
-          "title": "Maga wants more babies. But they don’t seem too worried about miscarriages in ICE detention",
-          "source": "The Guardian",
-          "url": "https://www.theguardian.com/commentisfree/2026/sep/19/maga-pro-life-miscarriages-pregnancy-ice-detention",
-          "date": "2026-09-19T12:01:00+00:00",
+          "title": "California Republicans walk a tightrope as Trump jumps into midterms campaigning",
+          "source": "Los Angeles Times",
+          "url": "https://www.latimes.com/politics/story/2026-09-20/california-republicans-walk-tightrope-as-trump-jumps-into-campaigning",
+          "date": "2026-09-20T10:00:00+00:00",
           "category": "usa"
         },
         {
-          "title": "”Jimmie Åkesson väckte den björn som sov”",
-          "source": "dn.se",
-          "url": "https://www.dn.se/sverige/jimmie-akesson-vackte-den-bjorn-som-sov/",
-          "date": "2026-09-19T08:10:14+00:00",
+          "title": "Åsnes, Fremskrittspartiet | Frikjent etter drama i lokalpartiet: – En enorm lettelse",
+          "source": "Glåmdalen",
+          "url": "https://www.glomdalen.no/frikjent-etter-drama-i-lokalpartiet-en-enorm-lettelse/s/80-19-358713",
+          "date": "2026-09-20T07:56:06+00:00",
+          "category": "norway"
+        },
+        {
+          "title": "JD Vance targets Rob Sand, 'crazy' Democrats in Iowa rally - The Quad-City Times",
+          "source": "",
+          "url": "https://qctimes.com/news/state-regional/article_dc72cbbc-f638-58b8-84c0-f76b3a64df65.html",
+          "date": "2026-09-20T06:33:52+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Ett splittrat Trelleborg – de lever i partiernas starkaste fästen",
+          "source": "Trelleborgs Allehanda",
+          "url": "https://www.trelleborgsallehanda.se/trelleborg/ett-splittrat-trelleborg-de-lever-i-partiernas-starkaste-fasten/",
+          "date": "2026-09-20T03:00:00+00:00",
           "category": "sweden"
+        },
+        {
+          "title": "Perego davanti a Sardone per le Comunali a Milano, Lupi rincorre: svelato il sondaggio del centrodestra",
+          "source": "Il Giorno",
+          "url": "https://www.ilgiorno.it/milano/cronaca/perego-davanti-sardone-comunali-sondaggio-centrodestra-v6b42ata",
+          "date": "2026-09-20T00:03:50+00:00",
+          "category": "italy"
         }
       ],
-      "first_seen": "2026-09-18T16:48:21+00:00",
-      "last_seen": "2026-09-21T05:35:44+00:00"
+      "first_seen": "2026-09-21T18:23:01+00:00",
+      "last_seen": "2026-09-21T18:23:01+00:00"
+    },
+    {
+      "id": "financial-incentives-and-campaign-funding-scrutiny",
+      "title": "Financial Incentives and Campaign Funding Scrutiny",
+      "blurb": "Money in politics has become a focal point of debate for right-wing parties, spanning direct financial promises to voters and scrutiny over high-dollar donor influence. Regulators and critics are challenging these financial strategies across borders.",
+      "convergence": 2,
+      "countries": [
+        {
+          "name": "🇬🇧 Reform UK",
+          "note": "Elections watchdog reviews campaign limits following unprecedented donations from crypto-billionaires"
+        },
+        {
+          "name": "🇺🇸 MAGA / Trump",
+          "note": "Direct voter dividend promises draw accusations of financial gimmicks while donor disputes emerge over tech policy"
+        }
+      ],
+      "signals": [
+        "voter financial pledges",
+        "mega-donor influence",
+        "electoral regulatory review",
+        "donor pushback"
+      ],
+      "article_count": 5,
+      "refs": [
+        {
+          "title": "MAGA Donors Turn on Trump Over Key Issue",
+          "source": "The Daily Beast",
+          "url": "https://www.thedailybeast.com/maga-donors-turn-on-trump-over-key-issue/",
+          "date": "2026-09-20T17:08:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "J.D. Tuccille: Donald Trump's bribe to American voters",
+          "source": "Yahoo News Canada",
+          "url": "https://ca.news.yahoo.com/j-d-tuccille-donald-trumps-100056742.html",
+          "date": "2026-09-20T10:00:56+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Donald Trump Says He'll Issue $5,000 Dividend to Every Adult American If GOP Wins Congress, Critics Call It 'Desperate Gimmick'",
+          "source": "Yahoo Lifestyle Canada",
+          "url": "https://ca.style.yahoo.com/donald-trump-says-hell-issue-093300830.html",
+          "date": "2026-09-20T09:33:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Elections watchdog reviews spending limits amid Reform UK donation row",
+          "source": "Yahoo",
+          "url": "https://www.yahoo.com/news/politics/articles/elections-watchdog-reviews-spending-limits-000338170.html",
+          "date": "2026-09-20T00:03:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Stephen Miller’s Wife Panics Over Legal Bills From Trump Probes",
+          "source": "The Daily Beast",
+          "url": "https://www.thedailybeast.com/stephen-millers-wife-panics-over-legal-bills-from-trump-probes/",
+          "date": "2026-09-19T18:58:00+00:00",
+          "category": "usa"
+        }
+      ],
+      "first_seen": "2026-09-21T18:23:01+00:00",
+      "last_seen": "2026-09-21T18:23:01+00:00"
     }
   ]
 }
