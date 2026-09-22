@@ -29,14 +29,19 @@ socket.setdefaulttimeout(30)
 
 try:
     import trafilatura
-    from googlenewsdecoder import new_decoderv1
+    try:
+        # googlenewsdecoder >= 0.2 renamed new_decoderv1 -> gnewsdecoder
+        from googlenewsdecoder import gnewsdecoder
+    except ImportError:
+        from googlenewsdecoder import new_decoderv1 as gnewsdecoder
     from tenacity import (
         retry,
         retry_if_exception,
         stop_after_attempt,
         wait_exponential,
     )
-except ImportError:
+except ImportError as e:
+    print(f"Missing or incompatible dependency: {e}")
     print("Install dependencies: pip install trafilatura googlenewsdecoder tenacity")
     sys.exit(1)
 
@@ -221,8 +226,11 @@ def load_existing_enriched(outdir: str, date_slug: str) -> dict | None:
 def resolve_url(google_url: str) -> tuple[str | None, str]:
     """Decode a Google News URL. Returns (resolved_url, status)."""
     try:
-        decoded = new_decoderv1(google_url, interval=0.5)
-        if decoded.get("status") and decoded.get("decoded_url"):
+        decoded = gnewsdecoder(google_url, interval=0.5)
+        # >= 0.2 reports "success"; <= 0.1.x reported "status"
+        if (decoded.get("success") or decoded.get("status")) and decoded.get(
+            "decoded_url"
+        ):
             return decoded["decoded_url"], "ok"
         return None, "decode_failed"
     except Exception as e:
