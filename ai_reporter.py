@@ -237,9 +237,17 @@ PROVIDERS = {
 # Anthropic costs. Re-add "claude-sonnet" to this list to reactivate it; the
 # PROVIDERS entry above is left in place. The --model claude flag still works
 # for one-off explicit runs.
+#
+# Ordering: gemini-flash (3.6) leads because it is the strongest model that
+# actually succeeds in CI, and because the Mistral tiers ahead of it were
+# costing every run ~30-60s of retry backoff before failing anyway
+# (mistral-large returns a persistent 403; medium/small return 429).
+# gemini-flash-25 (2.5) stays last as a genuine last resort -- landing on it
+# means everything above it failed, which is worth being able to see.
 DEFAULT_CHAIN = [
+    "gemini-flash",
     "mistral-large", "mistral-medium", "mistral-small",
-    "gemini-flash", "gemini-flash-25",
+    "gemini-flash-25",
 ]
 
 MODEL_ALIASES = {
