@@ -240,13 +240,20 @@ PROVIDERS = {
 #
 # Ordering: gemini-flash (3.6) leads because it is the strongest model that
 # actually succeeds in CI, and because the Mistral tiers ahead of it were
-# costing every run ~30-60s of retry backoff before failing anyway
-# (mistral-large returns a persistent 403; medium/small return 429).
+# costing every run retry backoff before failing anyway.
 # gemini-flash-25 (2.5) stays last as a genuine last resort -- landing on it
 # means everything above it failed, which is worth being able to see.
+#
+# mistral-large is intentionally OMITTED: this account's key cannot reach it.
+# GET /v1/models lists no mistral-large entry of any kind, and calls to
+# mistral-large-latest return a persistent 403 (not the 429 that medium and
+# small return, which is what authenticated-but-throttled looks like). It is
+# therefore a guaranteed-dead round trip on every run, not a transient
+# failure. The PROVIDERS entry is left in place -- re-add the name here if
+# the plan ever grants access.
 DEFAULT_CHAIN = [
     "gemini-flash",
-    "mistral-large", "mistral-medium", "mistral-small",
+    "mistral-medium", "mistral-small",
     "gemini-flash-25",
 ]
 
