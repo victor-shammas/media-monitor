@@ -125,7 +125,7 @@ ai_reporter.py ◀────────────────────�
 ### Prerequisites
 
 ```bash
-pip install google-genai anthropic tenacity markdown trafilatura googlenewsdecoder
+pip install google-genai anthropic tenacity markdown trafilatura "googlenewsdecoder>=0.2,<0.3"
 ```
 
 ### Set environment variables

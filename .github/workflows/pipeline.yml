@@ -40,7 +40,7 @@ jobs:
           python-version: "3.x"
 
       - name: Install dependencies
-        run: pip install trafilatura googlenewsdecoder google-genai tenacity
+        run: pip install trafilatura "googlenewsdecoder>=0.2,<0.3" google-genai tenacity
 
       - name: Run unified pipeline
         timeout-minutes: 35
