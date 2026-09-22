@@ -25,19 +25,19 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Checkout private data repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           repository: victor-shammas/media-monitor-data
           path: data-private
           token: ${{ secrets.DATA_REPO_PAT }}
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v7
         with:
-          python-version: "3.x"
+          python-version: "3.12"
 
       - name: Install dependencies
         run: pip install trafilatura "googlenewsdecoder>=0.2,<0.3" google-genai tenacity
