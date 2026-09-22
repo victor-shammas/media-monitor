@@ -1,65 +1,194 @@
 {
-  "updated_at": "2026-09-22T05:26:48+00:00",
+  "updated_at": "2026-09-22T17:22:05+00:00",
   "lookback_hours": 48,
-  "model": "Gemini 3.6 Flash",
+  "model": "Gemini 2.5 Flash",
   "status": "ok",
   "actors": [
     {
       "id": "donald-trump",
       "name": "Donald Trump",
       "role": "President of the United States",
-      "blurb": "Donald Trump dominates the news cycle with major policy proposals, including plans to establish an 'AI Force' and construct a military-grade arch in Washington. He faces intense scrutiny over restricting White House access for major media outlets, while actively campaigning for midterms with a proposed $5,000 citizen dividend.",
+      "blurb": "President Trump is the central figure, attending the UN General Assembly, holding meetings with world leaders, launching 'Trump TV' after banning news outlets, and facing lawsuits over Medicaid work requirements and immigration crackdowns.",
       "prominence": 5,
       "signals": [
-        "AI policy announcement",
-        "media access restrictions",
-        "midterm campaign proposals",
-        "international diplomacy"
+        "UN General Assembly attendance",
+        "media ban and 'Trump TV' launch",
+        "foreign policy engagements",
+        "domestic policy lawsuits"
       ],
       "categories": [
         "MAGA / Trump",
-        "US Politics"
+        "International Relations",
+        "Media Policy",
+        "Domestic Policy"
       ],
-      "article_count": 21,
+      "article_count": 25,
       "refs": [
         {
-          "title": "Trump says his planned arch would become a 'military complex' able to host drones and snipers",
-          "source": "Los Angeles Times",
-          "url": "https://www.latimes.com/world-nation/story/2026-09-20/trump-says-his-arch-would-become-military-complex-with-drones-nd-snipers",
-          "date": "2026-09-20T20:15:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "President Trump to Create an “AI Force,” Appoint an AI Czar as AI Fears Grow",
-          "source": "24/7 Wall St.",
-          "url": "https://247wallst.com/investing/2026/09/20/president-trump-to-create-an-ai-force-appoint-an-ai-czar-as-ai-fears-grow/",
-          "date": "2026-09-20T17:03:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Cory Booker says President Trump ‘has no regard’ for the First Amendment after WH media bans",
-          "source": "Modern Ghana",
-          "url": "https://www.modernghana.com/videonews/nbc/1/720282",
-          "date": "2026-09-20T14:03:04+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Donald Trump Says He'll Issue $5,000 Dividend to Every Adult American If GOP Wins Congress, Critics Call It 'Desperate Gimmick'",
-          "source": "Yahoo Lifestyle Canada",
-          "url": "https://ca.style.yahoo.com/donald-trump-says-hell-issue-093300830.html",
-          "date": "2026-09-20T09:33:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Journalists locked out of the White House after Trump ban",
+          "title": "White House launches ‘Trump TV’ after press bans",
           "source": "Al Jazeera",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/20/journalists-locked-out-of-the-white-house-after-trump-ban",
-          "date": "2026-09-20T05:49:04+00:00",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/22/white-house-launches-trump-tv-after-press-bans",
+          "date": "2026-09-22T13:15:33+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump is in New York for the UN General Assembly: Here's his schedule",
+          "source": "NBC 6 South Florida",
+          "url": "https://www.nbcmiami.com/news/local/trump-is-in-new-york-for-the-un-general-assembly-heres-his-schedule/3862428/",
+          "date": "2026-09-22T11:31:13+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Donald Trump Launches ‘Trump TV’ 3 Days After Banning Multiple News Outlets from the White House",
+          "source": "People.com",
+          "url": "https://people.com/donald-trump-launches-trump-tv-3-days-after-banning-multiple-news-outlets-12133925",
+          "date": "2026-09-22T11:18:49+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Barred outlets sue Trump administration - The Arkansas Democrat-Gazette",
+          "source": "",
+          "url": "https://www.arkansasonline.com/news/2026/sep/22/barred-outlets-sue-trump-administration/",
+          "date": "2026-09-22T09:00:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Major US outlets boycott shared Trump coverage in protest at media ban",
+          "source": "BBC",
+          "url": "https://www.bbc.com/news/articles/cje3rezd92y3o",
+          "date": "2026-09-22T08:17:15+00:00",
           "category": "usa"
         }
       ],
       "first_seen": "2026-08-16T02:13:23+00:00",
-      "last_seen": "2026-09-22T05:26:48+00:00"
+      "last_seen": "2026-09-22T17:22:05+00:00"
+    },
+    {
+      "id": "donald-trump-jr",
+      "name": "Donald Trump Jr.",
+      "role": "Son of the President",
+      "blurb": "Donald Trump Jr. is drawing attention as Republican Senator John Curtis seeks to subpoena him over alleged financial ties to a Russian oligarch who funded his wedding after-party, raising questions of undue influence.",
+      "prominence": 3,
+      "signals": [
+        "Congressional subpoena request",
+        "ethics investigation",
+        "foreign financial dealings"
+      ],
+      "categories": [
+        "MAGA / Trump",
+        "Legal/Ethics"
+      ],
+      "article_count": 3,
+      "refs": [
+        {
+          "title": "GOP senator seeks investigation into Donald Trump Jr. over Russian oligarch’s wedding gift",
+          "source": "Fortune",
+          "url": "https://fortune.com/2026/09/22/donald-trump-jr-russian-oligarch-curtis-investigation/",
+          "date": "2026-09-22T13:34:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "GOP senator asks Senate Judiciary Committee to subpoena Donald Trump Jr. and Hunter Biden",
+          "source": "CBS News",
+          "url": "https://www.cbsnews.com/news/john-curtis-subpoena-donald-trump-jr-hunter-biden/",
+          "date": "2026-09-22T13:24:37+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "John Curtis to Senate Judiciary: Subpoena Donald Trump Jr.",
+          "source": "Punchbowl News",
+          "url": "https://punchbowl.news/article/senate/curtis-wants-to-investigate-donald-trump-jr/",
+          "date": "2026-09-22T10:02:28+00:00",
+          "category": "usa"
+        }
+      ],
+      "first_seen": "2026-09-22T17:22:05+00:00",
+      "last_seen": "2026-09-22T17:22:05+00:00"
+    },
+    {
+      "id": "john-curtis",
+      "name": "John Curtis",
+      "role": "GOP Senator from Utah",
+      "blurb": "Senator John Curtis (R-UT) is prominent for actively pursuing an investigation and subpoena against Donald Trump Jr. regarding alleged financial improprieties involving a Russian oligarch, indicating a push for accountability within the GOP.",
+      "prominence": 3,
+      "signals": [
+        "Congressional oversight",
+        "calling for subpoenas",
+        "investigation into Trump Jr."
+      ],
+      "categories": [
+        "MAGA / Trump",
+        "Legal/Ethics",
+        "Congressional Action"
+      ],
+      "article_count": 3,
+      "refs": [
+        {
+          "title": "GOP senator seeks investigation into Donald Trump Jr. over Russian oligarch’s wedding gift",
+          "source": "Fortune",
+          "url": "https://fortune.com/2026/09/22/donald-trump-jr-russian-oligarch-curtis-investigation/",
+          "date": "2026-09-22T13:34:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "GOP senator asks Senate Judiciary Committee to subpoena Donald Trump Jr. and Hunter Biden",
+          "source": "CBS News",
+          "url": "https://www.cbsnews.com/news/john-curtis-subpoena-donald-trump-jr-hunter-biden/",
+          "date": "2026-09-22T13:24:37+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "John Curtis to Senate Judiciary: Subpoena Donald Trump Jr.",
+          "source": "Punchbowl News",
+          "url": "https://punchbowl.news/article/senate/curtis-wants-to-investigate-donald-trump-jr/",
+          "date": "2026-09-22T10:02:28+00:00",
+          "category": "usa"
+        }
+      ],
+      "first_seen": "2026-09-22T17:22:05+00:00",
+      "last_seen": "2026-09-22T17:22:05+00:00"
+    },
+    {
+      "id": "xi-jinping",
+      "name": "Xi Jinping",
+      "role": "President of China",
+      "blurb": "Chinese President Xi Jinping is newsworthy for his upcoming high-stakes summit with President Trump, with preliminary talks underway and Senator Schumer raising concerns about AI chip export controls, highlighting his active role in global diplomacy.",
+      "prominence": 3,
+      "signals": [
+        "US-China summit preparations",
+        "foreign policy leadership",
+        "AI chip export concerns"
+      ],
+      "categories": [
+        "International Relations",
+        "Trade/Technology"
+      ],
+      "article_count": 3,
+      "refs": [
+        {
+          "title": "Xi Jinping brings his \"A-Game\" to Donald Trump’s Washington",
+          "source": "merics.org",
+          "url": "https://merics.org/en/comment/xi-jinping-brings-his-game-donald-trumps-washington",
+          "date": "2026-09-22T11:56:39+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Chuck Schumer warns Donald Trump on AI, chips",
+          "source": "Punchbowl News",
+          "url": "https://punchbowl.news/article/senate/schumer-on-ai-chips/",
+          "date": "2026-09-22T10:02:54+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "US, China open high-level talks ahead of Trump-Xi summit",
+          "source": "Al Jazeera",
+          "url": "https://www.aljazeera.com/economy/2026/9/20/us-china-open-high-level-talks-ahead-of-trump-xi-summit",
+          "date": "2026-09-20T19:46:38+00:00",
+          "category": "usa"
+        }
+      ],
+      "first_seen": "2026-09-22T17:22:05+00:00",
+      "last_seen": "2026-09-22T17:22:05+00:00"
     }
   ]
 }
