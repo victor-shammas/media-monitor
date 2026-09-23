@@ -4,7 +4,7 @@ AI Reporter — Generates intelligence briefs from the media monitor data.
 
 Consumes enriched JSON data (falling back to titles-only from monitor_state.json
 if necessary) to generate AI-produced intelligence briefs. Uses a resilient,
-multi-provider LLM fallback chain (Mistral → Gemini 3.6 Flash → Gemini 2.5 Flash).
+multi-provider LLM fallback chain (Gemini 3.6 Flash → Mistral Medium → Mistral Small → Gemini 2.5 Flash).
 
 Enriched files are keyed by article publication date (enriched_YYYY-MM-DD.json).
 The reporter loads enough daily files to cover the lookback window (e.g. 2 files
@@ -600,6 +600,19 @@ def build_prompt(context: str, enriched: bool = False, hours: int = 24) -> str:
 
 # ── HTML Template ──────────────────────────────────────────────────────────
 
+# System sans-serif stack: renders natively on Apple Mail, Gmail, Outlook.
+FONT_STACK = (
+    "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, "
+    "'Helvetica Neue', Arial, sans-serif"
+)
+
+# Warm-neutral palette, shared with the web dashboard (index.html).
+INK = "#1c1917"
+BODY_TEXT = "#292524"
+MUTE = "#78716c"
+LINE = "#e7e5e4"
+ACCENT = "#b45309"
+
 
 def build_html_email(
     analysis_html: str,
@@ -615,26 +628,27 @@ def build_html_email(
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body style="margin:0; padding:0; background-color:#f0f0f0; font-family:Georgia, 'Times New Roman', serif;">
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#f0f0f0;">
+<body style="margin:0; padding:0; background-color:#f5f5f4; font-family:{FONT_STACK};">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#f5f5f4;">
 <tr><td align="center" style="padding:24px 16px;">
 
 <!-- Container -->
 <table role="presentation" width="640" cellpadding="0" cellspacing="0"
-       style="background-color:#ffffff; border-radius:4px; max-width:640px; width:100%;">
+       style="background-color:#ffffff; border:1px solid {LINE}; border-radius:8px; max-width:640px; width:100%;">
 
   <!-- Header -->
   <tr>
-    <td style="background-color:#1a1a2e; padding:32px 40px; border-radius:4px 4px 0 0;">
-      <p style="margin:0 0 4px 0; font-size:11px; letter-spacing:2px; text-transform:uppercase;
-                color:#8888aa; font-family:Helvetica,Arial,sans-serif;">
+    <td style="background-color:#fafaf9; padding:36px 40px 28px 40px; border-top:3px solid {ACCENT};
+               border-bottom:1px solid {LINE}; border-radius:8px 8px 0 0; font-family:{FONT_STACK};">
+      <p style="margin:0 0 10px 0; font-size:11px; font-weight:600; letter-spacing:1.8px;
+                text-transform:uppercase; color:{ACCENT};">
         Intelligence Brief
       </p>
-      <h1 style="margin:0; font-size:22px; color:#ffffff; font-weight:normal; line-height:1.3;">
+      <h1 style="margin:0; font-size:24px; color:{INK}; font-weight:600; line-height:1.25;
+                 letter-spacing:-0.3px;">
         Transatlantic Right-Wing Media Monitor
       </h1>
-      <p style="margin:8px 0 0 0; font-size:13px; color:#8888aa;
-                font-family:Helvetica,Arial,sans-serif;">
+      <p style="margin:10px 0 0 0; font-size:13px; color:{MUTE};">
         {today_str}&ensp;·&ensp;{article_count} articles across {category_count} categories
       </p>
     </td>
@@ -642,15 +656,16 @@ def build_html_email(
 
   <!-- Body -->
   <tr>
-    <td style="padding:32px 40px; font-size:15px; line-height:1.7; color:#2a2a2a;">
+    <td style="padding:32px 40px; font-size:15px; line-height:1.65; color:{BODY_TEXT};
+               font-family:{FONT_STACK};">
       {analysis_html}
     </td>
   </tr>
 
   <!-- Footer -->
   <tr>
-    <td style="padding:24px 40px; border-top:1px solid #e0e0e0; font-size:11px;
-               color:#999999; font-family:Helvetica,Arial,sans-serif;">
+    <td style="padding:24px 40px; border-top:1px solid {LINE}; font-size:11px;
+               color:#a8a29e; font-family:{FONT_STACK};">
       Generated automatically by the Transatlantic Right-Wing Media Monitor.
       Analysis by {provider_label}&ensp;·&ensp;Data from Google News RSS.
     </td>
@@ -670,38 +685,37 @@ def build_html_email(
 
 def style_html(raw_html: str) -> str:
     """Inject inline styles into the converted Markdown HTML for email clients."""
+    hr = f'<hr style="border:none; border-top:1px solid {LINE}; margin:28px 0;">'
     replacements = [
         (
             "<h1>",
-            '<h1 style="font-size:20px; color:#1a1a2e; margin:28px 0 12px 0; '
-            'border-bottom:2px solid #1a1a2e; padding-bottom:6px;">',
+            f'<h1 style="font-size:20px; font-weight:600; color:{INK}; margin:28px 0 12px 0; '
+            f'border-bottom:1px solid {LINE}; padding-bottom:8px; font-family:{FONT_STACK};">',
         ),
-        ("<h2>", '<h2 style="font-size:17px; color:#1a1a2e; margin:24px 0 10px 0;">'),
+        (
+            "<h2>",
+            f'<h2 style="font-size:17px; font-weight:600; color:{INK}; margin:28px 0 10px 0; '
+            f'letter-spacing:-0.2px; font-family:{FONT_STACK};">',
+        ),
         (
             "<h3>",
-            '<h3 style="font-size:15px; color:#333; margin:20px 0 8px 0; '
-            'font-family:Helvetica,Arial,sans-serif;">',
+            f'<h3 style="font-size:12px; font-weight:600; color:{MUTE}; margin:20px 0 8px 0; '
+            f'letter-spacing:1.2px; text-transform:uppercase; font-family:{FONT_STACK};">',
         ),
         ("<p>", '<p style="margin:0 0 14px 0;">'),
         ("<ul>", '<ul style="margin:0 0 16px 0; padding-left:20px;">'),
         ("<ol>", '<ol style="margin:0 0 16px 0; padding-left:20px;">'),
         ("<li>", '<li style="margin:0 0 6px 0;">'),
-        ("<strong>", '<strong style="color:#1a1a2e;">'),
+        ("<strong>", f'<strong style="color:{INK}; font-weight:600;">'),
         (
             "<blockquote>",
             '<blockquote style="margin:16px 0; padding:12px 20px; '
-            "border-left:3px solid #1a1a2e; background:#f8f8fa; "
-            'font-style:italic; color:#555;">',
+            f'border-left:3px solid {ACCENT}; background:#fafaf9; color:#57534e;">',
         ),
-        ("<hr>", '<hr style="border:none; border-top:1px solid #ddd; margin:24px 0;">'),
-        (
-            "<hr/>",
-            '<hr style="border:none; border-top:1px solid #ddd; margin:24px 0;">',
-        ),
-        (
-            "<hr />",
-            '<hr style="border:none; border-top:1px solid #ddd; margin:24px 0;">',
-        ),
+        ("<a href=", f'<a style="color:{ACCENT}; text-decoration:none;" href='),
+        ("<hr>", hr),
+        ("<hr/>", hr),
+        ("<hr />", hr),
     ]
     for old, new in replacements:
         raw_html = raw_html.replace(old, new)
