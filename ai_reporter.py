@@ -11,6 +11,9 @@ The reporter loads enough daily files to cover the lookback window (e.g. 2 files
 for --hours 24, since the window straddles midnight), then filters articles by
 their publication timestamp to include only those within the window.
 
+For continuity, condensed versions of the last few briefs in reports/ (see
+`previous_issues` in config.toml) are included in the prompt as background.
+
 Usage Examples:
   python ai_reporter.py                          → HTML email mode (production default)
   python ai_reporter.py --markdown               → Writes local .md files (testing/review)
@@ -581,10 +584,121 @@ def build_sources_appendix_md(ref_map: dict, cited: set) -> str:
     return "\n".join(lines) + "\n"
 
 
+# ── Continuity (previous issues) ─────────────────────────────────────────
+
+REPORT_NAME_RE = re.compile(r"^(\d{4}-\d{2}-\d{2})_\d{4}_report\.md$")
+# One or more citations, linked ([[N]](url)) or bare ([N] / [N, M]), including
+# any commas or spaces between them.
+CITATION_RE = re.compile(
+    r"(?:\s*,?\s*(?:\[\[\d+\]\]\([^)]*\)|\[\d+(?:\s*,\s*\d+)*\]))+"
+)
+SUMMARY_LABEL_RE = re.compile(r"^executive summary\s*:?\s*", re.I)
+SENTENCE_SPLIT_RE = re.compile(r"(?<=[.!?])\s+(?=[A-Z\"“*])")
+PREVIOUS_SECTION_SENTENCES = 2
+PREVIOUS_MAX_LINE_CHARS = 400
+
+
+def _clip(text: str, limit: int = PREVIOUS_MAX_LINE_CHARS) -> str:
+    text = " ".join(text.split())
+    return text if len(text) <= limit else text[: limit - 1].rstrip() + "…"
+
+
+def condense_report(md: str) -> str:
+    """Reduce a saved brief to its skeleton for use as continuity context.
+
+    Keeps the executive summary, each section heading with its opening
+    sentences, and the Watchlist items. Drops citations, the Sources
+    appendix and the report's header/disclaimer.
+    """
+    # Body starts after the first horizontal rule (below the header/disclaimer
+    # block) and ends at the Sources appendix.
+    parts = re.split(r"^---\s*$", md, maxsplit=1, flags=re.M)
+    body = parts[1] if len(parts) == 2 else md
+    body = re.split(r"^#{1,3}\s*Sources\s*$", body, maxsplit=1, flags=re.M)[0]
+    body = CITATION_RE.sub("", body).replace("**", "")
+
+    # Split into (heading, paragraphs) pairs; text before any heading is
+    # treated as the executive summary.
+    sections: list[tuple[str, list[str]]] = [("Executive Summary", [])]
+    for block in re.split(r"\n\s*\n", body):
+        block = block.strip()
+        if not block or re.fullmatch(r"-{3,}", block):
+            continue
+        m = re.match(r"^(#{1,6})\s*(.+?)\s*$", block.splitlines()[0])
+        if m:
+            level, title = len(m.group(1)), m.group(2)
+            rest = "\n".join(block.splitlines()[1:]).strip()
+            # A top-level title like "Daily Intelligence Brief: ..." is not a section.
+            if level > 1:
+                if title.lower().startswith("executive summary"):
+                    title = "Executive Summary"
+                sections.append((title, []))
+            if rest:
+                sections[-1][1].append(rest)
+        else:
+            sections[-1][1].append(block)
+
+    lines = []
+    for title, paras in sections:
+        if not paras and title != "Executive Summary":
+            lines.append(f"- {title}")
+            continue
+        if not paras:
+            continue
+        if title == "Executive Summary":
+            # Some briefs put the label inline ("Executive Summary: ...") or on
+            # its own line above the paragraph.
+            text = " ".join(SUMMARY_LABEL_RE.sub("", p) for p in paras).strip()
+            if text:
+                lines.append(f"Summary: {_clip(text, 800)}")
+        elif title.lower().startswith("watchlist"):
+            lines.append("Watchlist:")
+            for para in paras:
+                for item in re.split(r"\n(?=\s*(?:\d+\.|[-*])\s)", para):
+                    item = re.sub(r"^\s*(?:\d+\.|[-*])\s*", "", item).strip()
+                    if item:
+                        lines.append(f"  * {_clip(item)}")
+        else:
+            opening = " ".join(SENTENCE_SPLIT_RE.split(" ".join(paras[0].split()))[
+                :PREVIOUS_SECTION_SENTENCES
+            ])
+            lines.append(f"- {title}: {_clip(opening)}")
+    return "\n".join(lines)
+
+
+def load_previous_issues(reports_dir: str, count: int, today: str) -> str:
+    """Condensed text of the last `count` briefs, one per day, newest first.
+
+    Reports dated `today` are skipped so a same-day re-run does not treat an
+    earlier run over the same window as a previous issue.
+    """
+    if count <= 0 or not os.path.isdir(reports_dir):
+        return ""
+    latest_by_date: dict[str, str] = {}
+    for name in sorted(os.listdir(reports_dir)):
+        m = REPORT_NAME_RE.match(name)
+        if m and m.group(1) < today:
+            latest_by_date[m.group(1)] = name  # sorted, so the last run of a day wins
+    issues = []
+    for date in sorted(latest_by_date, reverse=True)[:count]:
+        path = os.path.join(reports_dir, latest_by_date[date])
+        try:
+            with open(path, "r", encoding="utf-8") as f:
+                condensed = condense_report(f.read())
+        except OSError as e:
+            print(f"  ⚠ Could not read previous issue {path}: {e}")
+            continue
+        label = datetime.strptime(date, "%Y-%m-%d").strftime("%B %d, %Y")
+        issues.append(f"=== Issue of {label} ===\n{condensed}")
+    return "\n\n".join(issues)
+
+
 # ── Prompt ─────────────────────────────────────────────────────────────────
 
 
-def build_prompt(context: str, enriched: bool = False, hours: int = 24) -> str:
+def build_prompt(
+    context: str, enriched: bool = False, hours: int = 24, previous: str = ""
+) -> str:
     prompt_cfg = CONFIG["prompt"]
     data_description = (
         prompt_cfg["enriched_data_description"]
@@ -594,6 +708,7 @@ def build_prompt(context: str, enriched: bool = False, hours: int = 24) -> str:
     return prompt_cfg["instructions"].format(
         hours=hours,
         data_description=data_description,
+        previous=previous or "(none available)",
         context=context,
     )
 
@@ -842,7 +957,21 @@ def main():
         print(f"No articles found. Skipping report.")
         sys.exit(0)
 
-    prompt = build_prompt(prompt_context, enriched=using_enriched, hours=args.hours)
+    previous_issues = load_previous_issues(
+        args.outdir, CONFIG["prompt"].get("previous_issues", 0), now.strftime("%Y-%m-%d")
+    )
+    if previous_issues:
+        n_prev = previous_issues.count("=== Issue of ")
+        print(f"Continuity: {n_prev} previous issue(s), {len(previous_issues):,} chars.")
+    else:
+        print("Continuity: no previous issues found.")
+
+    prompt = build_prompt(
+        prompt_context,
+        enriched=using_enriched,
+        hours=args.hours,
+        previous=previous_issues,
+    )
 
     print(
         f"Compiled {article_count} articles across {category_count} categories "
@@ -899,7 +1028,7 @@ def main():
             f.write("---\n\n")
             f.write("## Prompt Instructions\n\n")
             f.write(
-                f"```\n{build_prompt('(article data follows below)', enriched=using_enriched, hours=args.hours)}\n```\n\n"
+                f"```\n{build_prompt('(article data follows below)', enriched=using_enriched, hours=args.hours, previous=previous_issues)}\n```\n\n"
             )
             f.write("---\n\n")
             f.write("## Article Data\n\n")
