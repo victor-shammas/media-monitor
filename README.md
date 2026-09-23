@@ -64,6 +64,8 @@ Runs daily at 05:00 UTC. Loads enriched files covering the lookback window, filt
 
 The reporter assigns sequential reference numbers to articles before sending to the LLM. The prompt instructs the model to cite sources inline, and the script replaces each `[N]` with a clickable link post-hoc. This avoids LLM hallucination of URLs.
 
+For continuity, the prompt also includes condensed versions of the previous briefs in `reports/` (one per day, set by `previous_issues` in `config.toml`; default 3). Each keeps only the executive summary, section headings with their opening sentences, and the Watchlist, with all citations removed. The model is told to use them only to frame ongoing stories and follow up on the last Watchlist, never to cite them.
+
 **Output modes:**
 - Default: styled HTML email via Gmail SMTP
 - `--markdown`: writes to `reports/`
