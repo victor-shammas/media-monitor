@@ -1,7 +1,70 @@
 {
-  "updated_at": "2026-09-25T05:29:27+00:00",
+  "updated_at": "2026-09-25T17:37:45+00:00",
   "lookback_hours": 48,
-  "model": null,
-  "status": "no-qualifying-themes",
-  "themes": []
+  "model": "Gemini 2.5 Flash",
+  "status": "ok",
+  "themes": [
+    {
+      "id": "government-economic-intervention-sectoral-impact",
+      "title": "Government Economic Intervention & Sectoral Impact",
+      "blurb": "Right-wing news in the US and Norway highlights government economic policies and their diverse impacts on specific sectors and citizens. In Norway, coverage focuses on national fees threatening the fishing industry and interest rate hikes pushing families toward welfare assistance. In the US, discussions revolve around the Trump administration's cancellation of offshore wind leases, a proposed diesel export ban to manage energy prices, and broader trade policies.",
+      "convergence": 2,
+      "countries": [
+        {
+          "name": "🇳🇴 Fremskrittspartiet",
+          "note": "Reports on 'special Norwegian fees' threatening fishermen and interest rate hikes causing families to seek welfare assistance."
+        },
+        {
+          "name": "🇺🇸 MAGA / Trump",
+          "note": "Covers the Trump administration's decisions to cancel offshore wind leases, leading to states' lawsuits, and plans for a diesel export ban to influence energy prices."
+        }
+      ],
+      "signals": [
+        "Diverse policy impacts",
+        "sectoral policy debates",
+        "government intervention consequences",
+        "economic burden"
+      ],
+      "article_count": 5,
+      "refs": [
+        {
+          "title": "Frykter flere rentehopp: –⁠ Nødt til å be Nav om hjelp",
+          "source": "E24",
+          "url": "https://e24.no/norsk-oekonomi/i/8pa81r/frykter-flere-rentehopp-noedt-til-aa-be-nav-om-hjelp",
+          "date": "2026-09-25T06:55:39+00:00",
+          "category": "norway"
+        },
+        {
+          "title": "– Ufatteleg at særnorske avgifter skal tvinga stolte fiskarar ut av næringa",
+          "source": "Fiskeribladet",
+          "url": "https://www.fiskeribladet.no/meninger/-ufatteleg-at-sarnorske-avgifter-skal-tvinga-stolte-fiskarar-ut-av-naringa/2-1-2049358",
+          "date": "2026-09-25T06:51:30+00:00",
+          "category": "norway"
+        },
+        {
+          "title": "States Sue Trump Administration Over $1.5 Billion Deals to Pay Companies to Abandon Offshore Wind Projects",
+          "source": "Law Commentary",
+          "url": "https://www.lawcommentary.com/articles/states-sue-trump-administration-1-5-billion-offshore-wind-deals",
+          "date": "2026-09-25T12:02:20+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Maine sues Trump administration for canceling offshore wind leases",
+          "source": "wgme.com",
+          "url": "https://wgme.com/news/local/maine-sues-trump-administration-for-canceling-offshore-wind-leases-department-of-the-interior-judgment-fund-invenergy",
+          "date": "2026-09-24T11:14:41+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump administration preparing plan for 90-day diesel exports ban: Report",
+          "source": "aa.com.tr",
+          "url": "https://aa.com.tr/en/americas/trump-administration-preparing-plan-for-90-day-diesel-exports-ban-report/4067203",
+          "date": "2026-09-24T04:48:30+00:00",
+          "category": "usa"
+        }
+      ],
+      "first_seen": "2026-09-25T17:37:45+00:00",
+      "last_seen": "2026-09-25T17:37:45+00:00"
+    }
+  ]
 }
