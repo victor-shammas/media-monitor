@@ -1,37 +1,115 @@
 {
-  "updated_at": "2026-09-26T05:36:27+00:00",
+  "updated_at": "2026-09-26T16:50:51+00:00",
   "lookback_hours": 48,
-  "model": "Gemini 3.6 Flash",
+  "model": "Gemini 2.5 Flash",
   "status": "ok",
   "themes": [
     {
-      "id": "government-economic-intervention-sectoral-impact",
-      "title": "Government Economic Intervention & Sectoral Impact",
-      "blurb": "Right-wing coverage across Norway and the United States focuses on how government financial decisions, interest rates, and regulatory fees impact working households and specific economic sectors. In Norway, FrP criticizes rate hikes and industry fees, while in the US, coverage addresses state-level legal challenges against federal policy shifts in the energy sector.",
-      "convergence": 2,
+      "id": "right-wing-political-alignment-electoral-strategy",
+      "title": "Right-Wing Political Alignment & Electoral Strategy",
+      "blurb": "Across various nations, right-wing and far-right parties are engaged in strategic maneuvering for political power. This includes discussions on party unity, electoral alliances, and shifts in public messaging to appeal to voters or counter opponents ahead of future elections.",
+      "convergence": 4,
       "countries": [
         {
-          "name": "🇳🇴 Fremskrittspartiet",
-          "note": "Highlights how interest rate hikes and state fees threaten local fishermen and drive families toward welfare."
+          "name": "🇺🇸 MAGA / Trump",
+          "note": "President Trump's efforts to unify the GOP amidst internal struggles and campaigning for midterms, alongside discussions of potential future leaders."
         },
         {
-          "name": "🇺🇸 MAGA / Trump",
-          "note": "Covers legal actions against federal interventions in offshore energy projects and financial redirections."
+          "name": "🇫🇷 Rassemblement National",
+          "note": "Calls for the right and center to unite to prevent specific electoral outcomes and RN's strategic adjustments to its platform and messaging."
+        },
+        {
+          "name": "🇸🇪 Sverigedemokraterna",
+          "note": "The party's focus on securing governing roles in municipalities following recent election gains."
+        },
+        {
+          "name": "🇳🇴 Fremskrittspartiet",
+          "note": "Deliberations on local political cooperation and budgetary alliances to secure stable governance."
         }
       ],
       "signals": [
-        "sectoral impact",
-        "regulatory burden",
-        "economic policy debate"
+        "electoral strategy",
+        "party unity challenges",
+        "political positioning",
+        "coalition building"
       ],
-      "article_count": 4,
+      "article_count": 6,
       "refs": [
         {
-          "title": "States Sue Trump Administration Over $1.5 Billion Deals to Pay Companies to Abandon Offshore Wind Projects",
-          "source": "Law Commentary",
-          "url": "https://www.lawcommentary.com/articles/states-sue-trump-administration-1-5-billion-offshore-wind-deals",
-          "date": "2026-09-25T12:02:20+00:00",
+          "title": "Battenfeld: President Trump struggles to hold panicking GOP together",
+          "source": "Boston Herald",
+          "url": "https://www.bostonherald.com/2026/09/26/battenfeld-president-trump-struggles-to-hold-panicking-gop-together/",
+          "date": "2026-09-26T09:56:22+00:00",
           "category": "usa"
+        },
+        {
+          "title": "«Le seul antidote au duel RN-LFI» Maud Bregeon appelle la droite et le centre à se rallier à Édouard Philippe",
+          "source": "gentside.com",
+          "url": "https://www.gentside.com/news/politique/art121228-le-seul-antidote-au-duel-rn-lfi-maud-bregeon-appelle-la-droite-et-le-centre-se-rallier.html",
+          "date": "2026-09-26T09:00:00+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Politique, le choix de la semaine - Le Rassemblement national 2027 est-il devenu pro-Ukraine?",
+          "source": "RFI",
+          "url": "https://www.rfi.fr/fr/podcasts/politique-le-choix-de-la-semaine/20260926-le-rassemblement-national-2027-est-il-devenu-pro-ukraine",
+          "date": "2026-09-26T06:06:25+00:00",
+          "category": "france"
+        },
+        {
+          "title": "– Frp må velge i Oslo: Bråk eller makt?",
+          "source": "VartOslo",
+          "url": "https://www.vartoslo.no/magnus-birkelund-oslo-oslo-frp/frp-ma-velge-i-oslo-brak-eller-makt/1299928",
+          "date": "2026-09-26T05:29:39+00:00",
+          "category": "norway"
+        },
+        {
+          "title": "Samtalen fortsätter – oppositionen siktar på att styra Ulricehamn",
+          "source": "Ulricehamns Tidning",
+          "url": "https://www.ut.se/ulricehamn/oppositionen-siktar-pa-att-styra-ulricehamn-ar-redo/",
+          "date": "2026-09-26T02:18:00+00:00",
+          "category": "sweden"
+        },
+        {
+          "title": "President Trump to visit Mobile for midterm rally",
+          "source": "FOX Carolina News",
+          "url": "https://www.foxcarolina.com/video/2026/09/25/president-trump-visit-mobile-midterm-rally/",
+          "date": "2026-09-25T03:54:00+00:00",
+          "category": "usa"
+        }
+      ],
+      "first_seen": "2026-09-26T16:50:51+00:00",
+      "last_seen": "2026-09-26T16:50:51+00:00"
+    },
+    {
+      "id": "government-economic-intervention-sectoral-impact",
+      "title": "Government Economic Intervention & Sectoral Impact",
+      "blurb": "Right-wing media in multiple countries highlights government actions impacting the economy, from large-scale deals and regulatory changes to the direct financial burden on citizens and specific industries. Coverage includes debates over state-driven economic policies and their consequences.",
+      "convergence": 4,
+      "countries": [
+        {
+          "name": "🇳🇴 Fremskrittspartiet",
+          "note": "Focus on rising living costs, interest rate hikes impacting families, and government fees threatening the fishing industry."
+        },
+        {
+          "name": "🇺🇸 MAGA / Trump",
+          "note": "Coverage of controversial oil deals, the administration's influence on offshore wind projects, discussions about international currency (yen), and challenges to EU fines."
+        }
+      ],
+      "signals": [
+        "economic policy debate",
+        "cost of living pressure",
+        "industry regulation",
+        "international trade discussions"
+      ],
+      "article_count": 6,
+      "refs": [
+        {
+          "title": "- Stressa av hvor dyrt det blir",
+          "source": "rbnett.no",
+          "url": "https://www.rbnett.no/nyheter/n/e7VqMR/hoerer-nesten-ikke-om-andre-parti",
+          "date": "2026-09-26T08:01:04+00:00",
+          "category": "norway"
         },
         {
           "title": "Frykter flere rentehopp: –⁠ Nødt til å be Nav om hjelp",
@@ -48,45 +126,52 @@
           "category": "norway"
         },
         {
-          "title": "Maine sues Trump administration for canceling offshore wind leases",
-          "source": "wgme.com",
-          "url": "https://wgme.com/news/local/maine-sues-trump-administration-for-canceling-offshore-wind-leases-department-of-the-interior-judgment-fund-invenergy",
-          "date": "2026-09-24T11:14:41+00:00",
+          "title": "The truth behind Donald Trump’s ‘biggest oil deal in world history’",
+          "source": "The Guardian",
+          "url": "https://www.theguardian.com/us-news/2026/sep/26/donald-trump-oil-deal-with-venezuela",
+          "date": "2026-09-26T10:02:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "States Sue Trump Administration Over $1.5 Billion Deals to Pay Companies to Abandon Offshore Wind Projects",
+          "source": "Law Commentary",
+          "url": "https://www.lawcommentary.com/articles/states-sue-trump-administration-1-5-billion-offshore-wind-deals",
+          "date": "2026-09-25T12:02:20+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Donald Trump raised weak yen with Sanae Takaichi, Japan finance minister says",
+          "source": "Financial Times",
+          "url": "https://www.ft.com/content/901ccfbc-6ddb-4fb3-b74d-1f337efca9ff?syn-25a6b1a6=1",
+          "date": "2026-09-25T04:58:32+00:00",
           "category": "usa"
         }
       ],
       "first_seen": "2026-09-25T17:37:45+00:00",
-      "last_seen": "2026-09-26T05:36:27+00:00"
+      "last_seen": "2026-09-26T16:50:51+00:00"
     },
     {
       "id": "federal-immigration-policy-and-local-enforcement-mandates",
       "title": "Federal Immigration Policy and Local Enforcement Mandates",
-      "blurb": "Coverage across Polish right-wing media and US MAGA channels addresses hardline immigration enforcement policies and their jurisdictional impacts. Outlets track local reliance on federal funding tied to ICE mandates as well as executive branch legal appeals to accelerate third-country deportations.",
-      "convergence": 2,
+      "blurb": "News coverage highlights ongoing debates and actions concerning immigration policy, specifically federal mandates and their implications for enforcement at local levels. This includes legal challenges to deportation policies and the allocation of resources for immigration-related infrastructure.",
+      "convergence": 3,
       "countries": [
         {
-          "name": "🇵🇱 Prawo i Sprawiedliwość",
-          "note": "Examines local law enforcement building funds that come with federal ICE-related enforcement conditions."
+          "name": "🇺🇸 MAGA / Trump",
+          "note": "The administration's appeal to the Supreme Court regarding third-country deportations, facing judicial scrutiny."
         },
         {
-          "name": "🇺🇸 MAGA / Trump",
-          "note": "Focuses on the administration's Supreme Court appeals to uphold rapid third-country deportation policies."
+          "name": "🇵🇱 Prawo i Sprawiedliwość",
+          "note": "Discussion around federal funding linked to ICE-related infrastructure for local justice buildings, indicating local impact of federal immigration priorities."
         }
       ],
       "signals": [
-        "immigration enforcement",
-        "federal mandates",
-        "judicial oversight"
+        "deportation policy",
+        "federal funding for enforcement",
+        "judicial challenges to immigration"
       ],
       "article_count": 3,
       "refs": [
-        {
-          "title": "Grant County Eyes Federal Money for $30M Courthouse Overhaul — With an ICE-Related Catch",
-          "source": "Source ONE News",
-          "url": "https://www.yoursourceone.com/columbia_basin/grant-county-eyes-federal-money-for-30m-courthouse-overhaul-with-an-ice-related-catch/article_eddeec68-55cf-432b-a9b5-1f1ab62ec5b1.html",
-          "date": "2026-09-26T00:11:29+00:00",
-          "category": "poland"
-        },
         {
           "title": "Trump administration appeals to Supreme Court as 3rd-country deportations are thrown into question",
           "source": "PBS",
@@ -100,10 +185,17 @@
           "url": "https://www.post-gazette.com/news/politics-nation/2026/09/24/trump-supreme-court-third-country-deportations/stories/202609240078",
           "date": "2026-09-24T21:55:09+00:00",
           "category": "usa"
+        },
+        {
+          "title": "Grant County Eyes Federal Money for $30M Courthouse Overhaul — With an ICE-Related Catch",
+          "source": "Source ONE News",
+          "url": "https://www.yoursourceone.com/columbia_basin/grant-county-eyes-federal-money-for-30m-courthouse-overhaul-with-an-ice-related-catch/article_eddeec68-55cf-432b-a9b5-1f1ab62ec5b1.html",
+          "date": "2026-09-26T00:11:29+00:00",
+          "category": "poland"
         }
       ],
       "first_seen": "2026-09-26T05:36:27+00:00",
-      "last_seen": "2026-09-26T05:36:27+00:00"
+      "last_seen": "2026-09-26T16:50:51+00:00"
     }
   ]
 }
