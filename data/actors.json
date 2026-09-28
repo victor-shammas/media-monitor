@@ -1,136 +1,96 @@
 {
-  "updated_at": "2026-09-28T05:56:44+00:00",
+  "updated_at": "2026-09-28T19:53:32+00:00",
   "lookback_hours": 48,
-  "model": "Gemini 3.6 Flash",
+  "model": "Gemini 2.5 Flash",
   "status": "ok",
   "actors": [
     {
       "id": "donald-trump",
       "name": "Donald Trump",
       "role": "President of the United States",
-      "blurb": "President Trump dominates news coverage with major executive actions on immigration, energy regulations, and foreign policy decisions involving Iran and Ukraine. He is also making high-profile public appearances at sporting events while facing new impeachment articles introduced by House Democrats.",
+      "blurb": "Trump is the dominant figure in the news cycle, making significant policy decisions such as rolling back fuel economy standards and rejecting Iran's peace proposals. His administration faces legal challenges and controversy over spending, while he actively campaigns for midterm candidates and makes public appearances.",
       "prominence": 5,
       "signals": [
-        "policy announcement",
-        "international posturing",
-        "impeachment proceedings",
-        "election campaign"
+        "policy rollbacks",
+        "midterm campaigning",
+        "foreign policy decisions",
+        "legal challenges",
+        "public appearances"
       ],
       "categories": [
-        "MAGA / Trump"
+        "US Politics",
+        "Executive Action",
+        "Foreign Relations",
+        "Campaign"
       ],
-      "article_count": 50,
+      "article_count": 55,
       "refs": [
         {
-          "title": "White House releases new taxpayer-funded ad describing ‘final battle’",
-          "source": "NBC News",
-          "url": "https://www.nbcnews.com/politics/trump-administration/white-house-releases-new-taxpayer-funded-ad-describing-final-battle-rcna600171",
-          "date": "2026-09-28T03:45:00+00:00",
+          "title": "Trump administration rolls back fuel economy standards for automakers: What to know",
+          "source": "abcnews.com",
+          "url": "https://abcnews.com/Business/trump-administration-rolls-back-fuel-economy-standards-automakers/story?id=136818690",
+          "date": "2026-09-28T17:06:32+00:00",
           "category": "usa"
         },
         {
-          "title": "Trump says that Iran wants a Strait of Hormuz deal ‘because they’re dying’",
-          "source": "WPBN",
-          "url": "https://upnorthlive.com/news/nation-world/us-president-donald-trump-says-that-iran-wants-a-strait-of-hormuz-deal-because-theyre-dying-rejected-ceasefire-military-history-blockade-control-war-united-nations-general-assembly-strikes-winning-oil?teaserSource=trending",
-          "date": "2026-09-27T16:52:05+00:00",
+          "title": "President Trump to host midterm campaign rally in Vandalia",
+          "source": "Dayton Daily News",
+          "url": "https://www.daytondailynews.com/local/president-trump-to-host-midterm-campaign-rally-in-vandalia/article_4faed480-a9da-5ac2-bee0-9a8ed1acf53a.html",
+          "date": "2026-09-28T10:59:00+00:00",
           "category": "usa"
         },
         {
-          "title": "Donald Trump Approves New Fuel Economy Standards, Rolling Back Biden’s EV Mandate: how 21 outlets framed it",
-          "source": "NewsCord",
-          "url": "https://newscord.org/article/donald-trump-approves-new-fuel-economy-standards-rolling-back-bidens-ev-mandate--Story_20260927_MidtermsKraftstoffveae1b79df",
-          "date": "2026-09-27T10:56:46+00:00",
+          "title": "President Trump rejects Iran proposal to reopen Strait of Hormuz",
+          "source": "WRAL",
+          "url": "https://www.wral.com/video/trump-rejects-iran-proposal-reopen-strait-hormuz-september-2026/",
+          "date": "2026-09-28T09:55:02+00:00",
           "category": "usa"
         },
         {
-          "title": "Donald Trump gives Ukraine license to manufacture Patriot missiles, Volodymyr Zelensky says",
-          "source": "The Jerusalem Post",
-          "url": "https://www.jpost.com/international/internationalrussia-ukraine-war/article-909790",
-          "date": "2026-09-26T20:37:28+00:00",
+          "title": "What to know about the $810 million in spending canceled by President Trump",
+          "source": "NPR",
+          "url": "https://www.npr.org/2026/09/28/nx-s1-5982739/what-to-know-about-the-810-million-in-spending-canceled-by-president-trump",
+          "date": "2026-09-28T09:00:00+00:00",
           "category": "usa"
         },
         {
-          "title": "Donald Trump Hit With 26 Articles Of Impeachment",
-          "source": "newsweek.com",
-          "url": "https://www.newsweek.com/donald-trump-hit-with-26-articles-of-impeachment-12492238",
-          "date": "2026-09-26T08:53:00+00:00",
+          "title": "Donald Trump booed at Tennessee-Texas game as midterms loom",
+          "source": "TheGrio",
+          "url": "https://thegrio.com/2026/09/27/donald-trump-booed-tennessee-texas-game/",
+          "date": "2026-09-27T20:21:25+00:00",
           "category": "usa"
         }
       ],
       "first_seen": "2026-08-16T02:13:23+00:00",
-      "last_seen": "2026-09-28T05:56:44+00:00"
-    },
-    {
-      "id": "xi-jinping",
-      "name": "Xi Jinping",
-      "role": "President of China",
-      "blurb": "Chinese President Xi Jinping engaged in high-level bilateral meetings with US President Donald Trump in Washington. The summit produced agreements to open a bilateral communication channel on artificial intelligence safety and advance military crisis communication.",
-      "prominence": 3,
-      "signals": [
-        "international posturing",
-        "bilateral summit",
-        "AI safety channel"
-      ],
-      "categories": [
-        "MAGA / Trump"
-      ],
-      "article_count": 5,
-      "refs": [
-        {
-          "title": "Trump’s ‘super intelligence’ rebranding lost in translation with Xi",
-          "source": "AFR",
-          "url": "https://www.afr.com/world/north-america/trump-s-super-intelligence-rebranding-lost-in-translation-with-xi-20260927-p610rg",
-          "date": "2026-09-26T22:19:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "China and U.S. agree to establish AI safety channel and continue trade and military talks",
-          "source": "PBS",
-          "url": "https://www.pbs.org/newshour/world/china-and-u-s-agree-to-establish-ai-safety-channel-and-continue-trade-and-military-talks",
-          "date": "2026-09-26T17:53:24+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "China, US to open AI ‘communication channel’ after summit, White House says",
-          "source": "Al Jazeera",
-          "url": "https://www.aljazeera.com/news/2026/9/26/china-us-to-open-ai-communication-channel-after-summit-white-house-says",
-          "date": "2026-09-26T09:07:18+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "US President Donald Trump and China's President Xi Jinping meet at the White House",
-          "source": "The Lufkin Daily News",
-          "url": "https://lufkindailynews.com/news_reuters/top_news/us-president-donald-trump-and-chinas-president-xi-jinping-meet-at-the-white-house/image_de111d66-78a9-5ff9-9b7e-459ffed06e69.html",
-          "date": "2026-09-26T08:38:36+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "US President Donald Trump and China's President Xi Jinping tour the National Archives in Washington",
-          "source": "The Lufkin Daily News",
-          "url": "https://lufkindailynews.com/news_reuters/top_news/us-president-donald-trump-and-chinas-president-xi-jinping-tour-the-national-archives-in-washington/image_52ce0f5c-d34c-580f-a336-3e49de69c05d.html",
-          "date": "2026-09-26T08:38:36+00:00",
-          "category": "usa"
-        }
-      ],
-      "first_seen": "2026-09-23T17:31:26+00:00",
-      "last_seen": "2026-09-28T05:56:44+00:00"
+      "last_seen": "2026-09-28T19:53:32+00:00"
     },
     {
       "id": "jd-vance",
       "name": "JD Vance",
-      "role": "Vice President of the United States",
-      "blurb": "Vice President JD Vance is actively promoting the administration's economic reshoring agenda, targeting American small towns. He issued warnings to corporations against replacing American workers with foreign H-1B visa labor while continuing to build his future political standing.",
-      "prominence": 2,
+      "role": "US Senator",
+      "blurb": "Senator JD Vance is gaining attention for his \"America First\" economic policies, particularly his stance against replacing American workers with H-1B visa holders. His growing influence within the Republican party is seen as a challenge to traditional GOP alliances.",
+      "prominence": 3,
       "signals": [
-        "policy advocacy",
-        "labor policy",
-        "election campaign"
+        "economic policy advocacy",
+        "immigration stance",
+        "intra-party influence",
+        "America First agenda"
       ],
       "categories": [
-        "MAGA / Trump"
+        "US Politics",
+        "Economic Policy",
+        "Immigration",
+        "Congressional Activity"
       ],
       "article_count": 3,
       "refs": [
+        {
+          "title": "Opinion | Netanyahu's bet on the GOP runs into an emboldened JD Vance faction",
+          "source": "Haaretz",
+          "url": "https://www.haaretz.com/opinion/2026-09-28/ty-article-opinion/.premium/netanyahus-bet-on-the-gop-runs-into-an-emboldened-jd-vance-faction/000001a0-e714-d9ab-abfd-f7b563260000",
+          "date": "2026-09-28T08:41:00+00:00",
+          "category": "usa"
+        },
         {
           "title": "DAVID MARCUS: Why JD Vance's reshoring message is a perfect fit for struggling small towns like St. Cloud",
           "source": "Fox News",
@@ -144,58 +104,10 @@
           "url": "https://www.yahoo.com/news/politics/articles/jd-vance-warns-companies-against-094512437.html",
           "date": "2026-09-27T09:45:12+00:00",
           "category": "usa"
-        },
-        {
-          "title": "Battenfeld: President Trump struggles to hold panicking GOP together",
-          "source": "Boston Herald",
-          "url": "https://www.bostonherald.com/2026/09/26/battenfeld-president-trump-struggles-to-hold-panicking-gop-together/",
-          "date": "2026-09-26T09:56:22+00:00",
-          "category": "usa"
         }
       ],
       "first_seen": "2026-09-27T17:20:48+00:00",
-      "last_seen": "2026-09-28T05:56:44+00:00"
-    },
-    {
-      "id": "marine-le-pen",
-      "name": "Marine Le Pen",
-      "role": "Leader of Rassemblement National",
-      "blurb": "Marine Le Pen and her party are responding to public attacks from Moscow accusing the party of anti-Russian positions regarding Ukraine. At the same time, her party's broader ideological positioning is shifting toward emphasizing France's Christian heritage.",
-      "prominence": 2,
-      "signals": [
-        "international posturing",
-        "party ideology shift",
-        "coalition negotiations"
-      ],
-      "categories": [
-        "Rassemblement National"
-      ],
-      "article_count": 3,
-      "refs": [
-        {
-          "title": "« Il ne décroche jamais »… Maria Carolina de Bourbon des Deux-Siciles se confie sur sa relation avec Jordan Bardella",
-          "source": "20 Minutes",
-          "url": "https://www.20minutes.fr/politique/4249098-20260927-decroche-jamais-maria-carolina-bourbon-deux-siciles-confie-relation-jordan-bardella",
-          "date": "2026-09-27T12:11:00+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Le Rassemblement national cible de Moscou : riposte ferme de Le Pen - L'info au quotidien -",
-          "source": "",
-          "url": "https://linfoauquotidien.com/politique/le-rassemblement-national-cible-de-moscou-riposte-ferme-de-le-pen/",
-          "date": "2026-09-27T12:03:49+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Au RN, la laïcité un temps mise en avant par Marine Le Pen cède la place à l’exaltation des « racines chrétiennes de la France »",
-          "source": "Le Monde.fr",
-          "url": "https://www.lemonde.fr/politique/article/2026/09/26/visite-du-pape-a-paris-au-rn-la-laicite-cede-la-place-a-l-exaltation-des-racines-chretiennes-de-la-france_6783010_823448.html",
-          "date": "2026-09-26T10:17:20+00:00",
-          "category": "france"
-        }
-      ],
-      "first_seen": "2026-09-27T17:20:48+00:00",
-      "last_seen": "2026-09-28T05:56:44+00:00"
+      "last_seen": "2026-09-28T19:53:32+00:00"
     }
   ]
 }
