@@ -4,7 +4,8 @@ AI Reporter — Generates intelligence briefs from the media monitor data.
 
 Consumes enriched JSON data (falling back to titles-only from monitor_state.json
 if necessary) to generate AI-produced intelligence briefs. Uses a resilient,
-multi-provider LLM fallback chain (Gemini 3.6 Flash → Mistral Medium → Mistral Small → Gemini 2.5 Flash).
+multi-provider LLM fallback chain (Gemini 3.6 Flash → Gemini 3.5 Flash-Lite →
+Mistral Medium → Mistral Small → Gemini 2.5 Flash).
 
 Enriched files are keyed by article publication date (enriched_YYYY-MM-DD.json).
 The reporter loads enough daily files to cover the lookback window (e.g. 2 files
@@ -25,7 +26,8 @@ Usage Examples:
 Flags:
   --markdown          Write the analysis to a local Markdown file (.md) in reports/
   --email             Send the final report as an HTML email (default if --markdown isn't used)
-  --model MODEL       Force a specific model (options: auto, mistral, flash, flash-25, claude).
+  --model MODEL       Force a specific model (options: auto, mistral, flash, flash-25,
+                      flash-lite, groq, github, claude).
                       'auto' uses the fallback chain (default: auto).
   --hours INT         Look-back window in hours for the analysis (default: 24)
   --no-enriched       Force titles-only analysis even if enriched article text exists
@@ -102,6 +104,8 @@ MAX_PROMPT_CHARS = 700_000
 # ── Provider Backends ──────────────────────────────────────────────────────
 
 MISTRAL_BASE_URL = "https://api.mistral.ai/v1"
+GROQ_BASE_URL = "https://api.groq.com/openai/v1"
+GITHUB_MODELS_BASE_URL = "https://models.github.ai/inference"
 
 
 @retry(
@@ -113,29 +117,45 @@ MISTRAL_BASE_URL = "https://api.mistral.ai/v1"
         f"(attempt {rs.attempt_number})"
     ),
 )
-def _call_mistral(prompt: str, model: str = "mistral-large-latest") -> str:
+def _call_openai_compatible(
+    prompt: str,
+    base_url: str,
+    api_key: str,
+    model: str,
+    max_tokens: int | None = 16384,
+    extra: dict | None = None,
+) -> str:
+    """POST to an OpenAI-compatible /chat/completions endpoint (Mistral, Groq,
+    GitHub Models). max_tokens=None leaves the field out of the request."""
     import urllib.request
 
-    api_key = os.environ["MISTRAL_API_KEY"]
-    payload = json.dumps(
-        {
-            "model": model,
-            "messages": [{"role": "user", "content": prompt}],
-            "max_tokens": 16384,
-        }
-    ).encode()
+    body = {"model": model, "messages": [{"role": "user", "content": prompt}]}
+    if max_tokens is not None:
+        body["max_tokens"] = max_tokens
+    if extra:
+        body.update(extra)
     req = urllib.request.Request(
-        f"{MISTRAL_BASE_URL}/chat/completions",
-        data=payload,
+        f"{base_url}/chat/completions",
+        data=json.dumps(body).encode(),
         headers={
             "Authorization": f"Bearer {api_key}",
             "Content-Type": "application/json",
+            # Groq sits behind Cloudflare, which rejects urllib's default UA.
+            "User-Agent": "media-monitor/1.0",
         },
     )
     with urllib.request.urlopen(req, timeout=300) as resp:
         data = json.loads(resp.read())
-    text = data["choices"][0]["message"]["content"]
+    text = data["choices"][0]["message"].get("content")
+    if not text:
+        raise RuntimeError(f"{model} returned an empty response")
     return re.sub(r"<think>.*?</think>\s*", "", text, flags=re.DOTALL)
+
+
+def _call_mistral(prompt: str, model: str = "mistral-large-latest") -> str:
+    return _call_openai_compatible(
+        prompt, MISTRAL_BASE_URL, os.environ["MISTRAL_API_KEY"], model
+    )
 
 
 @retry(
@@ -229,6 +249,37 @@ PROVIDERS = {
         "label": "Gemini 2.5 Flash",
         "env_key": "GEMINI_API_KEY",
     },
+    # Flash-Lite has its own free-tier quota, separate from Flash, and a 1M
+    # context, so it can back up the daily report as well.
+    "gemini-flash-lite": {
+        "fn": lambda prompt: _call_gemini(prompt, "gemini-3.5-flash-lite"),
+        "label": "Gemini 3.5 Flash-Lite",
+        "env_key": "GEMINI_API_KEY",
+    },
+    # Groq free tier: 8K tokens/minute counting prompt + output, so only small
+    # prompts fit. max_tokens is left unset so the request isn't rejected for
+    # reserving more output than the TPM budget allows.
+    "groq-gpt-oss": {
+        "fn": lambda prompt: _call_openai_compatible(
+            prompt, GROQ_BASE_URL, os.environ["GROQ_API_KEY"],
+            "openai/gpt-oss-120b", max_tokens=None,
+            extra={"reasoning_effort": "low"},
+        ),
+        "label": "GPT-OSS 120B (Groq)",
+        "env_key": "GROQ_API_KEY",
+        "max_prompt_chars": 24_000,
+    },
+    # GitHub Models free tier: 8K input / 4K output tokens per request. In
+    # Actions, GITHUB_TOKEN works as the key when the job has `models: read`.
+    "github-gpt-41": {
+        "fn": lambda prompt: _call_openai_compatible(
+            prompt, GITHUB_MODELS_BASE_URL, os.environ["GITHUB_TOKEN"],
+            "openai/gpt-4.1", max_tokens=4000,
+        ),
+        "label": "GPT-4.1 (GitHub Models)",
+        "env_key": "GITHUB_TOKEN",
+        "max_prompt_chars": 26_000,
+    },
     "claude-sonnet": {
         "fn": lambda prompt: _call_anthropic(prompt, "claude-sonnet-4-6"),
         "label": "Claude Sonnet 4.6",
@@ -256,6 +307,22 @@ PROVIDERS = {
 # the plan ever grants access.
 DEFAULT_CHAIN = [
     "gemini-flash",
+    "gemini-flash-lite",
+    "mistral-medium", "mistral-small",
+    "gemini-flash-25",
+]
+
+# For the hotspots / radar / actors generators, whose prompts are typically
+# ~20-25K chars. Groq and GitHub Models are free but cap request size, so they
+# only belong here, not in the daily report's chain (prompts up to ~700K chars
+# and long-form output). Each is also skipped automatically when the prompt
+# exceeds its max_prompt_chars. They sit ahead of Mistral because Mistral has
+# been returning 429s, and they don't share an outage with Gemini.
+SHORT_PROMPT_CHAIN = [
+    "gemini-flash",
+    "groq-gpt-oss",
+    "gemini-flash-lite",
+    "github-gpt-41",
     "mistral-medium", "mistral-small",
     "gemini-flash-25",
 ]
@@ -267,6 +334,9 @@ MODEL_ALIASES = {
     "mistral-small": "mistral-small",
     "flash": "gemini-flash",
     "flash-25": "gemini-flash-25",
+    "flash-lite": "gemini-flash-lite",
+    "groq": "groq-gpt-oss",
+    "github": "github-gpt-41",
     "claude": "claude-sonnet",
     "auto": None,
 }
@@ -286,17 +356,21 @@ def generate_with_fallback(
     skipped = []
     for name in chain:
         prov = PROVIDERS[name]
-        if os.environ.get(prov["env_key"]):
-            available.append(name)
-        else:
+        limit = prov.get("max_prompt_chars")
+        if not os.environ.get(prov["env_key"]):
             skipped.append(f"{prov['label']} (no {prov['env_key']})")
+        elif limit and len(prompt) > limit:
+            skipped.append(f"{prov['label']} (prompt over {limit:,} chars)")
+        else:
+            available.append(name)
 
     if skipped:
         print(f"  ℹ Skipping: {', '.join(skipped)}")
 
     if not available:
         print(
-            "Error: No API keys set. Need at least one of: GEMINI_API_KEY, ANTHROPIC_API_KEY"
+            "Error: No usable provider. Need at least one of: "
+            + ", ".join(sorted({PROVIDERS[n]["env_key"] for n in chain}))
         )
         sys.exit(1)
 
@@ -858,10 +932,10 @@ def main():
     parser.add_argument(
         "--model",
         default="auto",
-        choices=["auto", "mistral", "mistral-large", "mistral-medium",
-                 "mistral-small", "flash", "flash-25", "claude"],
+        choices=list(MODEL_ALIASES),
         help="Model selection: 'auto' (full fallback chain), 'mistral' (Large), "
-        "'mistral-medium', 'mistral-small', 'flash', 'flash-25', 'claude'",
+        "'mistral-medium', 'mistral-small', 'flash', 'flash-25', 'flash-lite', "
+        "'groq', 'github', 'claude'",
     )
     parser.add_argument(
         "--enriched-dir",
@@ -899,10 +973,8 @@ def main():
         chain = [model_key]
 
     # Check at least one API key exists
-    available_keys = {
-        k for k in ["MISTRAL_API_KEY", "GEMINI_API_KEY", "ANTHROPIC_API_KEY"] if os.environ.get(k)
-    }
     needed_keys = {PROVIDERS[name]["env_key"] for name in chain}
+    available_keys = {k for k in needed_keys if os.environ.get(k)}
     if not available_keys & needed_keys:
         print(f"Error: No API keys set for the requested providers.")
         print(f"  Need at least one of: {', '.join(sorted(needed_keys))}")

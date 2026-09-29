@@ -26,7 +26,7 @@ import unicodedata
 from datetime import datetime, timedelta, timezone
 
 from monitor_utils import CONFIG, CATEGORY_LABELS, get_sort_time, normalize_title_for_dedup
-from ai_reporter import generate_with_fallback, load_enriched
+from ai_reporter import SHORT_PROMPT_CHAIN, generate_with_fallback, load_enriched
 
 STATE_FILE = "data/monitor_state.json"
 DEFAULT_OUTDIR = "data"
@@ -324,7 +324,7 @@ def main() -> int:
     print(f"  Prompt size: {len(prompt):,} chars")
     print(f"→ Calling LLM (continuity from {len(previous)} previous theme(s))...")
     try:
-        response_text, model_label = generate_with_fallback(prompt)
+        response_text, model_label = generate_with_fallback(prompt, SHORT_PROMPT_CHAIN)
     except SystemExit:
         write_empty_output(out_path, "llm-unavailable", args.hours)
         return 1
