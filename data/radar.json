@@ -1,31 +1,45 @@
 {
-  "updated_at": "2026-09-29T06:55:51+00:00",
+  "updated_at": "2026-09-29T18:20:49+00:00",
   "lookback_hours": 48,
   "model": "GPT-OSS 120B (Groq)",
   "status": "ok",
   "themes": [
     {
-      "id": "energy-policy-rollbacks-fuel-price-backlash",
-      "title": "Energy Policy Rollbacks & Fuel Price Backlash",
-      "blurb": "Right‑wing outlets in the United States and Norway are simultaneously highlighting government actions that lower fuel‑efficiency standards or raise fuel costs, framing them as victories for consumers and national industry while condemning perceived elite overreach.",
+      "id": "fuel-policy-rollbacks-price-backlash",
+      "title": "Fuel Policy Rollbacks & Price Backlash",
+      "blurb": "Both the United States and Norway see right‑wing actors pushing for reduced fuel taxes or rolling back efficiency standards while publicly decrying high fuel prices. The parallel framing links national economic hardship to government overreach on energy policy.",
       "convergence": 4,
       "countries": [
         {
           "name": "🇺🇸 MAGA / Trump",
-          "note": "Trump administration pushes sharply lower vehicle fuel‑economy standards, touting cheaper cars and reduced regulation."
+          "note": "Trump administration scaling back vehicle fuel‑efficiency standards and promoting lower fuel‑economy rules."
         },
         {
           "name": "🇳🇴 Fremskrittspartiet",
-          "note": "FrP stages protests at gas stations over soaring fuel prices, demanding policy change and blaming government inaction."
+          "note": "FrP demanding a reinstatement of fuel‑tax cuts and criticizing record pump prices."
         }
       ],
       "signals": [
-        "shared framing of ‘affordable energy’",
-        "policy imitation",
-        "parallel criticism of environmental regulation"
+        "shared framing of fuel costs as government failure",
+        "policy imitation across borders",
+        "parallel tax‑cut demands"
       ],
-      "article_count": 5,
+      "article_count": 9,
       "refs": [
+        {
+          "title": "Trump administration says it's scaling back fuel efficiency standards for new cars",
+          "source": "NPR",
+          "url": "https://www.npr.org/2026/09/29/nx-s1-5983673/trump-administration-says-its-scaling-back-fuel-efficiency-standards-for-new-cars",
+          "date": "2026-09-29T08:46:49+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Pete Buttigieg discusses Trump administration’s rollback of fuel efficiency standards",
+          "source": "NPR",
+          "url": "https://www.npr.org/2026/09/29/nx-s1-5983537/pete-buttigieg-discusses-trump-administrations-rollback-of-fuel-efficiency-standards",
+          "date": "2026-09-29T08:46:41+00:00",
+          "category": "usa"
+        },
         {
           "title": "Trump administration rolls back fuel economy standards for automakers: What to know",
           "source": "abcnews.com",
@@ -41,130 +55,43 @@
           "category": "usa"
         },
         {
+          "title": "Trump administration set to roll out lower fuel economy standards for cars, light trucks - ABC News",
+          "source": "Breaking News, Latest News and Videos",
+          "url": "https://abcnews.com/US/wireStory/trump-administration-set-roll-lower-fuel-economy-standards-136813319",
+          "date": "2026-09-28T06:13:25+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Tordner: – Grusomt",
+          "source": "tv2.no",
+          "url": "https://www.tv2.no/nyheter/tordner-grusomt/19271253/",
+          "date": "2026-09-29T10:52:20+00:00",
+          "category": "norway"
+        },
+        {
+          "title": "Listhaug fillerister Høyre: – Jeg er svært skuffet",
+          "source": "Nettavisen",
+          "url": "https://www.nettavisen.no/nyheter/listhaug-til-frontalangrep-pa-soreide-jeg-er-svart-skuffet/s/80-95-117077",
+          "date": "2026-09-29T10:13:46+00:00",
+          "category": "norway"
+        },
+        {
+          "title": "FrP vil gjeninnføre avgiftskutt på drivstoff - Fremskrittspartiet",
+          "source": "FrP.",
+          "url": "https://www.frp.no/nyheter/frp-vil-gjeninnfore-avgiftskutt-pa-drivstoff",
+          "date": "2026-09-29T08:50:00+00:00",
+          "category": "norway"
+        },
+        {
           "title": "FrP på stand i Fagernes: – Det kan ikke fortsette, vi må ha endring",
           "source": "Avisa Valdres",
           "url": "https://www.avisa-valdres.no/frp-pa-stand-i-fagernes-det-kan-ikke-fortsette-vi-ma-ha-endring/v/80-54-11892",
           "date": "2026-09-28T10:30:00+00:00",
           "category": "norway"
-        },
-        {
-          "title": "Donald Trump Approves New Fuel Economy Standards, Rolling Back Biden’s EV Mandate: how 21 outlets framed it",
-          "source": "NewsCord",
-          "url": "https://newscord.org/article/donald-trump-approves-new-fuel-economy-standards-rolling-back-bidens-ev-mandate--Story_20260927_MidtermsKraftstoffveae1b79df",
-          "date": "2026-09-27T10:56:46+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "The Worst Possible Way to End the Trump Era",
-          "source": "The New Republic",
-          "url": "https://newrepublic.com/post/215852/oust-donald-trump-military-coup",
-          "date": "2026-09-27T10:00:00+00:00",
-          "category": "usa"
         }
       ],
-      "first_seen": "2026-09-29T06:55:51+00:00",
-      "last_seen": "2026-09-29T06:55:51+00:00"
-    },
-    {
-      "id": "legal-battles-over-federal-grants-and-aid",
-      "title": "Legal Battles Over Federal Grants and Aid",
-      "blurb": "Right‑wing media in the United States and Norway report lawsuits and parliamentary inquiries targeting the withdrawal or redirection of government funds, portraying the moves as partisan retaliation against opposition areas.",
-      "convergence": 3,
-      "countries": [
-        {
-          "name": "🇺🇸 MAGA / Trump",
-          "note": "Boston files suit after the Trump administration rescinds a $20 million federal grant for Roxbury street improvements."
-        },
-        {
-          "name": "🇳🇴 Fremskrittspartiet",
-          "note": "FrP questions the Justice Minister’s handling of budget cuts that threaten local services, framing it as a political power play."
-        }
-      ],
-      "signals": [
-        "parallel accusations of partisan fund stripping",
-        "shared narrative of ‘government overreach’",
-        "coordination of legal challenges"
-      ],
-      "article_count": 4,
-      "refs": [
-        {
-          "title": "Boston sues Trump administration over clawback of $20 million grant for Roxbury neighborhood",
-          "source": "WCVB",
-          "url": "https://www.wcvb.com/article/boston-sues-over-canceled-roxbury-grant/73927796",
-          "date": "2026-09-28T22:28:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Pressley, Wu Announce Lawsuit Against Trump Administration to Protect $20 Million Federal Grant for Roxbury’s Street Improvements",
-          "source": "House.gov",
-          "url": "https://pressley.house.gov/2026/09/28/pressley-wu-announce-lawsuit-against-trump-administration-to-protect-20-million-federal-grant-for-roxburys-street-improvements/",
-          "date": "2026-09-28T22:17:36+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Boston Mayor Wu sues Trump administration for rescinding Roxbury's $20M federal transit grant",
-          "source": "Boston Herald",
-          "url": "https://www.bostonherald.com/2026/09/28/boston-mayor-wu-sues-trump-administration-for-rescinding-roxburys-20m-federal-transit-grant/",
-          "date": "2026-09-28T21:58:34+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Spørsmål om politiets evne til å håndtere hverdagskriminalitet - Fremskrittspartiet",
-          "source": "FrP.",
-          "url": "https://www.frp.no/nyheter/lokalt/sporsmal-om-politiets-evne-til-a-handtere-hverdagskriminalitet",
-          "date": "2026-09-28T09:25:00+00:00",
-          "category": "norway"
-        }
-      ],
-      "first_seen": "2026-09-29T06:55:51+00:00",
-      "last_seen": "2026-09-29T06:55:51+00:00"
-    },
-    {
-      "id": "sovereignty-rhetoric-against-foreign-powers",
-      "title": "Sovereignty Rhetoric Against Foreign Powers",
-      "blurb": "Right‑wing voices in the United States and France invoke national sovereignty to attack foreign actors, with Trump rejecting Iran’s Strait of Hormuz proposal and France’s RN confronting Moscow over alleged ‘russophobia.’",
-      "convergence": 2,
-      "countries": [
-        {
-          "name": "🇺🇸 MAGA / Trump",
-          "note": "President Trump dismisses Iran’s offer to reopen the Strait of Hormuz, casting it as a threat to U.S. interests."
-        },
-        {
-          "name": "🇫🇷 Rassemblement National",
-          "note": "RN rebuffs Russian criticism, defending its stance on Ukraine aid and accusing Moscow of interference."
-        }
-      ],
-      "signals": [
-        "shared sovereignty framing",
-        "reaction to external diplomatic moves",
-        "rhetorical contagion"
-      ],
-      "article_count": 3,
-      "refs": [
-        {
-          "title": "President Trump rejects Iran proposal to reopen Strait of Hormuz",
-          "source": "WRAL",
-          "url": "https://www.wral.com/video/trump-rejects-iran-proposal-reopen-strait-hormuz-september-2026/",
-          "date": "2026-09-28T09:55:02+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "President Trump rejects Iran's latest proposal as war enters its eighth month",
-          "source": "WLWT",
-          "url": "https://www.wlwt.com/article/president-trump-iran-proposal-rejected-september-2026/73920641",
-          "date": "2026-09-28T09:43:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Le Rassemblement national cible de Moscou : riposte ferme de Le Pen - L'info au quotidien -",
-          "source": "",
-          "url": "https://linfoauquotidien.com/politique/le-rassemblement-national-cible-de-moscou-riposte-ferme-de-le-pen/",
-          "date": "2026-09-27T12:03:49+00:00",
-          "category": "france"
-        }
-      ],
-      "first_seen": "2026-09-29T06:55:51+00:00",
-      "last_seen": "2026-09-29T06:55:51+00:00"
+      "first_seen": "2026-09-29T18:20:49+00:00",
+      "last_seen": "2026-09-29T18:20:49+00:00"
     }
   ]
 }
