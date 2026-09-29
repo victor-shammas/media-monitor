@@ -1,182 +1,51 @@
 {
-  "updated_at": "2026-09-28T05:58:08+00:00",
+  "updated_at": "2026-09-29T06:55:51+00:00",
   "lookback_hours": 48,
-  "model": "Gemini 3.6 Flash",
+  "model": "GPT-OSS 120B (Groq)",
   "status": "ok",
   "themes": [
     {
-      "id": "right-wing-political-alignment-electoral-strategy",
-      "title": "Right-Wing Political Alignment & Electoral Strategy",
-      "blurb": "Right-wing and far-right parties across multiple nations are actively navigating electoral headwinds, internal ideological positioning, and post-election coalition dynamics. From midterm prep and GOP consolidation in the US to candidate realignment and ideological shifting in France, Sweden, and Norway, parties are adjusting their strategies to secure governance.",
+      "id": "energy-policy-rollbacks-fuel-price-backlash",
+      "title": "Energy Policy Rollbacks & Fuel Price Backlash",
+      "blurb": "Right‑wing outlets in the United States and Norway are simultaneously highlighting government actions that lower fuel‑efficiency standards or raise fuel costs, framing them as victories for consumers and national industry while condemning perceived elite overreach.",
       "convergence": 4,
       "countries": [
         {
           "name": "🇺🇸 MAGA / Trump",
-          "note": "Focus on midterm election maneuvering, GOP unity struggles, and administration efforts to reshape voting and electoral rules."
-        },
-        {
-          "name": "🇫🇷 Rassemblement National",
-          "note": "Positioning ahead of the 2027 presidential election, highlighting ideological shifts toward France's Christian roots and internal leadership dynamics."
-        },
-        {
-          "name": "🇸🇪 Sverigedemokraterna",
-          "note": "Navigating post-2026 election coalition gridlock and analyzing shifts in local and regional support."
+          "note": "Trump administration pushes sharply lower vehicle fuel‑economy standards, touting cheaper cars and reduced regulation."
         },
         {
           "name": "🇳🇴 Fremskrittspartiet",
-          "note": "Local party list organization and regional constituency messaging ahead of upcoming electoral cycles."
+          "note": "FrP stages protests at gas stations over soaring fuel prices, demanding policy change and blaming government inaction."
         }
       ],
       "signals": [
-        "electoral maneuvering",
-        "coalition gridlock",
-        "ideological positioning",
-        "party strategy"
+        "shared framing of ‘affordable energy’",
+        "policy imitation",
+        "parallel criticism of environmental regulation"
       ],
-      "article_count": 14,
+      "article_count": 5,
       "refs": [
         {
-          "title": "Trump administration is trying to reshape election rules to its advantage ahead of midterm elections",
-          "source": "Le Monde.fr",
-          "url": "https://www.lemonde.fr/en/international/article/2026/09/27/trump-administration-is-trying-to-reshape-election-rules-to-its-advantage-ahead-of-midterm-elections_6758005_4.html",
-          "date": "2026-09-27T11:00:08+00:00",
+          "title": "Trump administration rolls back fuel economy standards for automakers: What to know",
+          "source": "abcnews.com",
+          "url": "https://abcnews.com/Business/trump-administration-rolls-back-fuel-economy-standards-automakers/story?id=136818690",
+          "date": "2026-09-28T17:06:32+00:00",
           "category": "usa"
         },
         {
-          "title": "Varför är det så svårt att bilda regering i Sverige efter valet 2026?",
-          "source": "hurbra.se",
-          "url": "https://hurbra.se/varfor-svart-bilda-regering-2026/",
-          "date": "2026-09-27T09:14:41+00:00",
-          "category": "sweden"
-        },
-        {
-          "title": "Au RN, la laïcité un temps mise en avant par Marine Le Pen cède la place à l’exaltation des « racines chrétiennes de la France »",
-          "source": "Le Monde.fr",
-          "url": "https://www.lemonde.fr/politique/article/2026/09/26/visite-du-pape-a-paris-au-rn-la-laicite-cede-la-place-a-l-exaltation-des-racines-chretiennes-de-la-france_6783010_823448.html",
-          "date": "2026-09-26T10:17:20+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Battenfeld: President Trump struggles to hold panicking GOP together",
-          "source": "Boston Herald",
-          "url": "https://www.bostonherald.com/2026/09/26/battenfeld-president-trump-struggles-to-hold-panicking-gop-together/",
-          "date": "2026-09-26T09:56:22+00:00",
+          "title": "Trump administration to finalize sharply lower vehicle fuel economy standards",
+          "source": "Maryland Daily Record",
+          "url": "https://thedailyrecord.com/2026/09/28/trump-administration-lowers-vehicle-fuel-economy-standards/",
+          "date": "2026-09-28T16:48:24+00:00",
           "category": "usa"
         },
         {
-          "title": "«Le seul antidote au duel RN-LFI» Maud Bregeon appelle la droite et le centre à se rallier à Édouard Philippe",
-          "source": "gentside.com",
-          "url": "https://www.gentside.com/news/politique/art121228-le-seul-antidote-au-duel-rn-lfi-maud-bregeon-appelle-la-droite-et-le-centre-se-rallier.html",
-          "date": "2026-09-26T09:00:00+00:00",
-          "category": "france"
-        },
-        {
-          "title": "How nativism has been normalised in Sweden",
-          "source": "The Week",
-          "url": "https://theweek.com/world-news/how-nativism-has-been-normalised-in-sweden",
-          "date": "2026-09-26T06:19:32+00:00",
-          "category": "sweden"
-        }
-      ],
-      "first_seen": "2026-09-26T16:50:51+00:00",
-      "last_seen": "2026-09-28T05:58:08+00:00"
-    },
-    {
-      "id": "right-wing-realignment-on-foreign-policy-and-defense",
-      "title": "Right-Wing Realignment on Foreign Policy and Defense",
-      "blurb": "Right-wing factions are asserting hardline foreign policy stances, balancing nationalist defense priorities with international conflict responses. The US administration and France's Rassemblement National both emphasize firmness against hostile foreign actors while recalibrating their stances on Ukraine military support.",
-      "convergence": 3,
-      "countries": [
-        {
-          "name": "🇫🇷 Rassemblement National",
-          "note": "Strongly condemning Russian pressure tactics and affirming support for Ukrainian defense capabilities."
-        },
-        {
-          "name": "🇺🇸 MAGA / Trump",
-          "note": "Rejecting Iranian diplomatic proposals over maritime security while authorizing domestic missile manufacturing licensing for Ukraine."
-        }
-      ],
-      "signals": [
-        "reaction to foreign threats",
-        "policy pivot",
-        "shared framing"
-      ],
-      "article_count": 7,
-      "refs": [
-        {
-          "title": "Trump says that Iran wants a Strait of Hormuz deal ‘because they’re dying’",
-          "source": "WPBN",
-          "url": "https://upnorthlive.com/news/nation-world/us-president-donald-trump-says-that-iran-wants-a-strait-of-hormuz-deal-because-theyre-dying-rejected-ceasefire-military-history-blockade-control-war-united-nations-general-assembly-strikes-winning-oil?teaserSource=trending",
-          "date": "2026-09-27T16:52:05+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Le Rassemblement national cible de Moscou : riposte ferme de Le Pen - L'info au quotidien -",
-          "source": "",
-          "url": "https://linfoauquotidien.com/politique/le-rassemblement-national-cible-de-moscou-riposte-ferme-de-le-pen/",
-          "date": "2026-09-27T12:03:49+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Donald Trump gives Ukraine license to manufacture Patriot missiles, Volodymyr Zelensky says",
-          "source": "The Jerusalem Post",
-          "url": "https://www.jpost.com/international/internationalrussia-ukraine-war/article-909790",
-          "date": "2026-09-26T20:37:28+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Middle-East: Iran proposes Hormuz plan, Donald Trump reportedly refuses",
-          "source": "France 24",
-          "url": "https://www.france24.com/en/middle-east-iran-proposes-hormuz-plan-donald-trump-reportedly-refuses",
-          "date": "2026-09-26T08:15:05+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Politique, le choix de la semaine - Le Rassemblement national 2027 est-il devenu pro-Ukraine?",
-          "source": "RFI",
-          "url": "https://www.rfi.fr/fr/podcasts/politique-le-choix-de-la-semaine/20260926-le-rassemblement-national-2027-est-il-devenu-pro-ukraine",
-          "date": "2026-09-26T06:06:25+00:00",
-          "category": "france"
-        }
-      ],
-      "first_seen": "2026-09-27T05:53:26+00:00",
-      "last_seen": "2026-09-28T05:58:08+00:00"
-    },
-    {
-      "id": "government-economic-intervention-sectoral-impact",
-      "title": "Government Economic Intervention & Sectoral Impact",
-      "blurb": "Right-wing commentators and lawmakers are highlighting state intervention in energy and industrial sectors, targeting federal mandates and market pressures. Discussions center on deregulation, protecting domestic industrial infrastructure, and addressing rising public anxiety over cost-of-living increases.",
-      "convergence": 3,
-      "countries": [
-        {
-          "name": "🇺🇸 MAGA / Trump",
-          "note": "Rolling back electric vehicle mandates, incentivizing domestic energy production, and promoting reshoring policies."
-        },
-        {
-          "name": "🇳🇴 Fremskrittspartiet",
-          "note": "Highlighting public stress over soaring electricity costs driven by state-directed offshore power projects."
-        }
-      ],
-      "signals": [
-        "protectionist rhetoric",
-        "energy market disruption",
-        "voter cost-of-living concerns"
-      ],
-      "article_count": 7,
-      "refs": [
-        {
-          "title": "3 U.S. Energy Stocks Tied To America First Policy Shifts",
-          "source": "simplywall.st",
-          "url": "https://simplywall.st/stocks/us/energy/nyse-btu/peabody-energy/news/3-us-energy-stocks-tied-to-america-first-policy-shifts",
-          "date": "2026-09-28T03:39:13+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "DAVID MARCUS: Why JD Vance's reshoring message is a perfect fit for struggling small towns like St. Cloud",
-          "source": "Fox News",
-          "url": "https://www.foxnews.com/opinion/david-marcus-jd-vance-reshoring-message-perfect-fit-struggling-small-towns-st-cloud",
-          "date": "2026-09-27T17:10:52+00:00",
-          "category": "usa"
+          "title": "FrP på stand i Fagernes: – Det kan ikke fortsette, vi må ha endring",
+          "source": "Avisa Valdres",
+          "url": "https://www.avisa-valdres.no/frp-pa-stand-i-fagernes-det-kan-ikke-fortsette-vi-ma-ha-endring/v/80-54-11892",
+          "date": "2026-09-28T10:30:00+00:00",
+          "category": "norway"
         },
         {
           "title": "Donald Trump Approves New Fuel Economy Standards, Rolling Back Biden’s EV Mandate: how 21 outlets framed it",
@@ -186,83 +55,116 @@
           "category": "usa"
         },
         {
-          "title": "Frykter prissjokk når strømmen sendes til havs: – Kan få ekstreme utslag",
-          "source": "innherred.no",
-          "url": "https://www.innherred.no/nyheter/n/wrqdaM/frykter-prissjokk-naar-stroemmen-sendes-til-havs-kan-faa-ekstreme-utslag",
-          "date": "2026-09-27T03:45:00+00:00",
-          "category": "norway"
+          "title": "The Worst Possible Way to End the Trump Era",
+          "source": "The New Republic",
+          "url": "https://newrepublic.com/post/215852/oust-donald-trump-military-coup",
+          "date": "2026-09-27T10:00:00+00:00",
+          "category": "usa"
+        }
+      ],
+      "first_seen": "2026-09-29T06:55:51+00:00",
+      "last_seen": "2026-09-29T06:55:51+00:00"
+    },
+    {
+      "id": "legal-battles-over-federal-grants-and-aid",
+      "title": "Legal Battles Over Federal Grants and Aid",
+      "blurb": "Right‑wing media in the United States and Norway report lawsuits and parliamentary inquiries targeting the withdrawal or redirection of government funds, portraying the moves as partisan retaliation against opposition areas.",
+      "convergence": 3,
+      "countries": [
+        {
+          "name": "🇺🇸 MAGA / Trump",
+          "note": "Boston files suit after the Trump administration rescinds a $20 million federal grant for Roxbury street improvements."
         },
         {
-          "title": "- Stressa av hvor dyrt det blir",
-          "source": "rbnett.no",
-          "url": "https://www.rbnett.no/nyheter/n/e7VqMR/hoerer-nesten-ikke-om-andre-parti",
-          "date": "2026-09-26T08:01:04+00:00",
+          "name": "🇳🇴 Fremskrittspartiet",
+          "note": "FrP questions the Justice Minister’s handling of budget cuts that threaten local services, framing it as a political power play."
+        }
+      ],
+      "signals": [
+        "parallel accusations of partisan fund stripping",
+        "shared narrative of ‘government overreach’",
+        "coordination of legal challenges"
+      ],
+      "article_count": 4,
+      "refs": [
+        {
+          "title": "Boston sues Trump administration over clawback of $20 million grant for Roxbury neighborhood",
+          "source": "WCVB",
+          "url": "https://www.wcvb.com/article/boston-sues-over-canceled-roxbury-grant/73927796",
+          "date": "2026-09-28T22:28:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Pressley, Wu Announce Lawsuit Against Trump Administration to Protect $20 Million Federal Grant for Roxbury’s Street Improvements",
+          "source": "House.gov",
+          "url": "https://pressley.house.gov/2026/09/28/pressley-wu-announce-lawsuit-against-trump-administration-to-protect-20-million-federal-grant-for-roxburys-street-improvements/",
+          "date": "2026-09-28T22:17:36+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Boston Mayor Wu sues Trump administration for rescinding Roxbury's $20M federal transit grant",
+          "source": "Boston Herald",
+          "url": "https://www.bostonherald.com/2026/09/28/boston-mayor-wu-sues-trump-administration-for-rescinding-roxburys-20m-federal-transit-grant/",
+          "date": "2026-09-28T21:58:34+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Spørsmål om politiets evne til å håndtere hverdagskriminalitet - Fremskrittspartiet",
+          "source": "FrP.",
+          "url": "https://www.frp.no/nyheter/lokalt/sporsmal-om-politiets-evne-til-a-handtere-hverdagskriminalitet",
+          "date": "2026-09-28T09:25:00+00:00",
           "category": "norway"
         }
       ],
-      "first_seen": "2026-09-25T17:37:45+00:00",
-      "last_seen": "2026-09-28T05:58:08+00:00"
+      "first_seen": "2026-09-29T06:55:51+00:00",
+      "last_seen": "2026-09-29T06:55:51+00:00"
     },
     {
-      "id": "nativist-labor-policies-and-immigration-restrictions",
-      "title": "Nativist Labor Policies and Immigration Restrictions",
-      "blurb": "A shared rhetorical and policy focus emphasizes restricting foreign labor and curtailing immigration to protect domestic workforces. Measures range from high regulatory fees on foreign technical visas to broader political debates on the societal integration of nativist platforms.",
+      "id": "sovereignty-rhetoric-against-foreign-powers",
+      "title": "Sovereignty Rhetoric Against Foreign Powers",
+      "blurb": "Right‑wing voices in the United States and France invoke national sovereignty to attack foreign actors, with Trump rejecting Iran’s Strait of Hormuz proposal and France’s RN confronting Moscow over alleged ‘russophobia.’",
       "convergence": 2,
       "countries": [
         {
           "name": "🇺🇸 MAGA / Trump",
-          "note": "Enforcing substantial fee increases on foreign worker visas and targeting foreign labor substitution in American firms."
+          "note": "President Trump dismisses Iran’s offer to reopen the Strait of Hormuz, casting it as a threat to U.S. interests."
         },
         {
-          "name": "🇸🇪 Sverigedemokraterna",
-          "note": "Evaluating the long-term political impact and normalization of anti-immigrant policies in national discourse."
+          "name": "🇫🇷 Rassemblement National",
+          "note": "RN rebuffs Russian criticism, defending its stance on Ukraine aid and accusing Moscow of interference."
         }
       ],
       "signals": [
-        "nativist rhetoric",
-        "labor market protectionism",
-        "immigration curtailment"
+        "shared sovereignty framing",
+        "reaction to external diplomatic moves",
+        "rhetorical contagion"
       ],
-      "article_count": 5,
+      "article_count": 3,
       "refs": [
         {
-          "title": "Nonimmigrant visas in flux due to Trump administration fees",
-          "source": "Washington Examiner",
-          "url": "https://www.washingtonexaminer.com/premium/4733962/nonimmigrant-visas-in-flux-trump-administration-fees/",
-          "date": "2026-09-27T11:05:00+00:00",
+          "title": "President Trump rejects Iran proposal to reopen Strait of Hormuz",
+          "source": "WRAL",
+          "url": "https://www.wral.com/video/trump-rejects-iran-proposal-reopen-strait-hormuz-september-2026/",
+          "date": "2026-09-28T09:55:02+00:00",
           "category": "usa"
         },
         {
-          "title": "JD Vance Warns Companies Against 'Cheap' H-1B Replacements: 'We're Not Going to Let You Lay Off American Workers'",
-          "source": "Yahoo",
-          "url": "https://www.yahoo.com/news/politics/articles/jd-vance-warns-companies-against-094512437.html",
-          "date": "2026-09-27T09:45:12+00:00",
+          "title": "President Trump rejects Iran's latest proposal as war enters its eighth month",
+          "source": "WLWT",
+          "url": "https://www.wlwt.com/article/president-trump-iran-proposal-rejected-september-2026/73920641",
+          "date": "2026-09-28T09:43:00+00:00",
           "category": "usa"
         },
         {
-          "title": "President Trump moving to cancel fund for refugees",
-          "source": "KXLY.com",
-          "url": "https://www.kxly.com/video/president-trump-moving-to-cancel-fund-for-refugees/video_f80abe25-d4dd-5f1f-ba80-3c4f34425760.html",
-          "date": "2026-09-27T04:07:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Federal judge blocks Trump administration’s attempt to limit international students’ length of stay",
-          "source": "The Huntington News",
-          "url": "https://huntnewsnu.com/93956/primary-homepage/federal-judge-blocks-trump-administrations-attempt-to-limit-international-students-length-of-stay/",
-          "date": "2026-09-26T21:45:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "How nativism has been normalised in Sweden",
-          "source": "The Week",
-          "url": "https://theweek.com/world-news/how-nativism-has-been-normalised-in-sweden",
-          "date": "2026-09-26T06:19:32+00:00",
-          "category": "sweden"
+          "title": "Le Rassemblement national cible de Moscou : riposte ferme de Le Pen - L'info au quotidien -",
+          "source": "",
+          "url": "https://linfoauquotidien.com/politique/le-rassemblement-national-cible-de-moscou-riposte-ferme-de-le-pen/",
+          "date": "2026-09-27T12:03:49+00:00",
+          "category": "france"
         }
       ],
-      "first_seen": "2026-09-27T17:21:15+00:00",
-      "last_seen": "2026-09-28T05:58:08+00:00"
+      "first_seen": "2026-09-29T06:55:51+00:00",
+      "last_seen": "2026-09-29T06:55:51+00:00"
     }
   ]
 }
