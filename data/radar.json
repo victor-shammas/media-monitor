@@ -1,45 +1,44 @@
 {
-  "updated_at": "2026-09-30T06:03:11+00:00",
+  "updated_at": "2026-09-30T18:12:06+00:00",
   "lookback_hours": 48,
-  "model": "Gemini 3.6 Flash",
+  "model": "GPT-OSS 120B (Groq)",
   "status": "ok",
   "themes": [
     {
       "id": "fuel-policy-rollbacks-price-backlash",
       "title": "Fuel Policy Rollbacks & Price Backlash",
-      "blurb": "Right-wing figures in both Norway and the US are heavily focusing on energy and fuel costs as a key political issue. In Norway, the Progress Party (FrP) is mounting intense public pressure against record fuel prices while demanding tax relief, while in the US, the Trump administration is dismantling federal vehicle fuel efficiency standards.",
+      "blurb": "Right‑wing outlets in the United States and Norway are both highlighting the rollback of fuel‑related standards and the push for tax cuts, framing them as necessary relief for consumers facing soaring prices. The coverage links policy reversals to government overreach and portrays them as a victory for ordinary voters.",
       "convergence": 4,
       "countries": [
         {
           "name": "🇺🇸 MAGA / Trump",
-          "note": "Trump administration rolls back federal vehicle fuel economy standards to cut automobile prices."
+          "note": "Trump administration scales back fuel‑efficiency standards for cars and trucks, while critics claim the move harms climate goals."
         },
         {
           "name": "🇳🇴 Fremskrittspartiet",
-          "note": "FrP campaigns heavily against record pump prices and demands fuel tax cut extensions."
+          "note": "Progress Party pushes to reinstate fuel‑tax cuts, citing record‑high pump prices and demanding tax relief."
         }
       ],
       "signals": [
-        "shared framing",
-        "fuel cost focus",
-        "policy backlash",
-        "deregulation rhetoric"
+        "policy imitation",
+        "shared framing of price relief",
+        "cross‑border backlash against environmental regulations"
       ],
-      "article_count": 9,
+      "article_count": 4,
       "refs": [
         {
-          "title": "Tordner: – Grusomt",
-          "source": "tv2.no",
-          "url": "https://www.tv2.no/nyheter/tordner-grusomt/19271253/",
-          "date": "2026-09-29T10:52:20+00:00",
-          "category": "norway"
+          "title": "Trump administration says it's scaling back fuel efficiency standards for new cars",
+          "source": "NPR",
+          "url": "https://www.npr.org/2026/09/29/nx-s1-5983673/trump-administration-says-its-scaling-back-fuel-efficiency-standards-for-new-cars",
+          "date": "2026-09-29T08:46:49+00:00",
+          "category": "usa"
         },
         {
-          "title": "Listhaug fillerister Høyre: – Jeg er svært skuffet",
-          "source": "Nettavisen",
-          "url": "https://www.nettavisen.no/nyheter/listhaug-til-frontalangrep-pa-soreide-jeg-er-svart-skuffet/s/80-95-117077",
-          "date": "2026-09-29T10:13:46+00:00",
-          "category": "norway"
+          "title": "Pete Buttigieg discusses Trump administration’s rollback of fuel efficiency standards",
+          "source": "NPR",
+          "url": "https://www.npr.org/2026/09/29/nx-s1-5983537/pete-buttigieg-discusses-trump-administrations-rollback-of-fuel-efficiency-standards",
+          "date": "2026-09-29T08:46:41+00:00",
+          "category": "usa"
         },
         {
           "title": "FrP vil gjeninnføre avgiftskutt på drivstoff - Fremskrittspartiet",
@@ -49,90 +48,15 @@
           "category": "norway"
         },
         {
-          "title": "Trump administration says it's scaling back fuel efficiency standards for new cars",
-          "source": "NPR",
-          "url": "https://www.npr.org/2026/09/29/nx-s1-5983673/trump-administration-says-its-scaling-back-fuel-efficiency-standards-for-new-cars",
-          "date": "2026-09-29T08:46:49+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Trump administration rolls back fuel economy standards for automakers: What to know",
-          "source": "abcnews.com",
-          "url": "https://abcnews.com/Business/trump-administration-rolls-back-fuel-economy-standards-automakers/story?id=136818690",
-          "date": "2026-09-28T17:06:32+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Trump administration set to roll out lower fuel economy standards for cars, light trucks - ABC News",
-          "source": "Breaking News, Latest News and Videos",
-          "url": "https://abcnews.com/US/wireStory/trump-administration-set-roll-lower-fuel-economy-standards-136813319",
-          "date": "2026-09-28T06:13:25+00:00",
-          "category": "usa"
+          "title": "Tordner: – Grusomt",
+          "source": "tv2.no",
+          "url": "https://www.tv2.no/nyheter/tordner-grusomt/19271253/",
+          "date": "2026-09-29T10:52:20+00:00",
+          "category": "norway"
         }
       ],
       "first_seen": "2026-09-29T18:20:49+00:00",
-      "last_seen": "2026-09-30T06:03:11+00:00"
-    },
-    {
-      "id": "law-and-order-rhetoric-amid-public-safety-concerns",
-      "title": "Law and Order Rhetoric Amid Public Safety Concerns",
-      "blurb": "Right-wing coverage across Norway and the US highlights a parallel emphasis on public safety, state enforcement powers, and law enforcement gaps. Norway's Progress Party criticizes government inaction on youth crime and police resource shortages, while US reporting focuses on federal election integrity probes and strict deportation enforcement.",
-      "convergence": 2,
-      "countries": [
-        {
-          "name": "🇳🇴 Fremskrittspartiet",
-          "note": "FrP blasts government over rising youth crime and police dropping everyday criminal cases."
-        },
-        {
-          "name": "🇺🇸 MAGA / Trump",
-          "note": "Federal authorities pursue illegal voting criminal probes and expand rapid deportation enforcement."
-        }
-      ],
-      "signals": [
-        "shared framing",
-        "law and order rhetoric",
-        "incumbent crime policy critique"
-      ],
-      "article_count": 5,
-      "refs": [
-        {
-          "title": "Trump administration facing indictment for contempt after deporting Venezuelans to El Salvador",
-          "source": "EL PAÍS English",
-          "url": "https://english.elpais.com/usa/2026-09-29/trump-administration-facing-indictment-for-contempt-after-deporting-venezuelans-to-el-salvador.html",
-          "date": "2026-09-29T12:12:53+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Subpoena records offer clues about Trump administration probe of L.A. County voters",
-          "source": "latimes.com",
-          "url": "https://www.latimes.com/politics/story/2026-09-29/subpoena-records-trump-administration-probe-la-county-voters",
-          "date": "2026-09-29T10:00:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Spørsmål om politiets evne til å håndtere hverdagskriminalitet - Fremskrittspartiet",
-          "source": "FrP.",
-          "url": "https://www.frp.no/nyheter/lokalt/sporsmal-om-politiets-evne-til-a-handtere-hverdagskriminalitet",
-          "date": "2026-09-28T09:25:00+00:00",
-          "category": "norway"
-        },
-        {
-          "title": "Feds are seeking noncitizen voters. They’ve found three in Georgia. - The Atlanta Journal-Constitution",
-          "source": "",
-          "url": "https://www.ajc.com/politics/2026/09/trump-administration-crackdown-on-noncitizens-voters-comes-in-advance-of-midterms/",
-          "date": "2026-09-28T09:01:45+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Ungdomskriminalitet, Astri Aas-Hansen | Raser mot regjeringens grep: – Fremstår som en bruktbilselger",
-          "source": "Nettavisen",
-          "url": "https://www.nettavisen.no/nyheter/raser-mot-regjeringens-grep-fremstar-som-en-bruktbilselger/s/30-95-22828",
-          "date": "2026-09-28T08:37:44+00:00",
-          "category": "norway"
-        }
-      ],
-      "first_seen": "2026-09-30T06:03:11+00:00",
-      "last_seen": "2026-09-30T06:03:11+00:00"
+      "last_seen": "2026-09-30T18:12:06+00:00"
     }
   ]
 }
