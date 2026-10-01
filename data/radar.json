@@ -1,44 +1,59 @@
 {
-  "updated_at": "2026-09-30T18:12:06+00:00",
+  "updated_at": "2026-10-01T06:37:56+00:00",
   "lookback_hours": 48,
-  "model": "GPT-OSS 120B (Groq)",
+  "model": "Gemini 3.6 Flash",
   "status": "ok",
   "themes": [
     {
       "id": "fuel-policy-rollbacks-price-backlash",
       "title": "Fuel Policy Rollbacks & Price Backlash",
-      "blurb": "Right‑wing outlets in the United States and Norway are both highlighting the rollback of fuel‑related standards and the push for tax cuts, framing them as necessary relief for consumers facing soaring prices. The coverage links policy reversals to government overreach and portrays them as a victory for ordinary voters.",
+      "blurb": "Right-wing figures in both the United States and Norway are actively capitalizing on consumer frustration over high energy and pump prices. In the US, the Trump administration is pushing deregulation by rolling back federal fuel efficiency standards, while in Norway, the Progress Party (FrP) is demanding immediate fuel tax cuts as petrol prices hit historic highs.",
       "convergence": 4,
       "countries": [
         {
           "name": "🇺🇸 MAGA / Trump",
-          "note": "Trump administration scales back fuel‑efficiency standards for cars and trucks, while critics claim the move harms climate goals."
+          "note": "The Trump administration scales back CAFE fuel economy standards while facing criticism over sustained high energy prices."
         },
         {
           "name": "🇳🇴 Fremskrittspartiet",
-          "note": "Progress Party pushes to reinstate fuel‑tax cuts, citing record‑high pump prices and demanding tax relief."
+          "note": "FrP leader Sylvi Listhaug sharply criticizes political rivals and demands fuel tax reductions as prices top 31 kroner per liter."
         }
       ],
       "signals": [
-        "policy imitation",
-        "shared framing of price relief",
-        "cross‑border backlash against environmental regulations"
+        "policy rollbacks",
+        "tax cut demands",
+        "fuel price backlash",
+        "cost-of-living rhetoric"
       ],
-      "article_count": 4,
+      "article_count": 8,
       "refs": [
         {
-          "title": "Trump administration says it's scaling back fuel efficiency standards for new cars",
-          "source": "NPR",
-          "url": "https://www.npr.org/2026/09/29/nx-s1-5983673/trump-administration-says-its-scaling-back-fuel-efficiency-standards-for-new-cars",
-          "date": "2026-09-29T08:46:49+00:00",
+          "title": "Trump administration resets fuel economy standards",
+          "source": "Transportation Today",
+          "url": "https://transportationtodaynews.com/news/38859-trump-administration-resets-fuel-economy-standards/",
+          "date": "2026-09-30T21:07:24+00:00",
           "category": "usa"
         },
         {
-          "title": "Pete Buttigieg discusses Trump administration’s rollback of fuel efficiency standards",
-          "source": "NPR",
-          "url": "https://www.npr.org/2026/09/29/nx-s1-5983537/pete-buttigieg-discusses-trump-administrations-rollback-of-fuel-efficiency-standards",
-          "date": "2026-09-29T08:46:41+00:00",
+          "title": "Murray, Kaptur Slam Trump Administration’s Oil Reserve Release as Months Too Late for Families Paying High Energy Costs",
+          "source": "Senator Patty Murray (.gov)",
+          "url": "https://www.murray.senate.gov/murray-kaptur-slam-trump-administrations-oil-reserve-release-as-months-too-late-for-families-paying-high-energy-costs/",
+          "date": "2026-09-30T15:43:27+00:00",
           "category": "usa"
+        },
+        {
+          "title": "Tordner: – Grusomt",
+          "source": "tv2.no",
+          "url": "https://www.tv2.no/nyheter/tordner-grusomt/19271253/",
+          "date": "2026-09-29T10:52:20+00:00",
+          "category": "norway"
+        },
+        {
+          "title": "Listhaug fillerister Høyre: – Jeg er svært skuffet",
+          "source": "Nettavisen",
+          "url": "https://www.nettavisen.no/nyheter/listhaug-til-frontalangrep-pa-soreide-jeg-er-svart-skuffet/s/80-95-117077",
+          "date": "2026-09-29T10:13:46+00:00",
+          "category": "norway"
         },
         {
           "title": "FrP vil gjeninnføre avgiftskutt på drivstoff - Fremskrittspartiet",
@@ -48,15 +63,15 @@
           "category": "norway"
         },
         {
-          "title": "Tordner: – Grusomt",
-          "source": "tv2.no",
-          "url": "https://www.tv2.no/nyheter/tordner-grusomt/19271253/",
-          "date": "2026-09-29T10:52:20+00:00",
-          "category": "norway"
+          "title": "Trump administration says it's scaling back fuel efficiency standards for new cars",
+          "source": "NPR",
+          "url": "https://www.npr.org/2026/09/29/nx-s1-5983673/trump-administration-says-its-scaling-back-fuel-efficiency-standards-for-new-cars",
+          "date": "2026-09-29T08:46:49+00:00",
+          "category": "usa"
         }
       ],
       "first_seen": "2026-09-29T18:20:49+00:00",
-      "last_seen": "2026-09-30T18:12:06+00:00"
+      "last_seen": "2026-10-01T06:37:56+00:00"
     }
   ]
 }
