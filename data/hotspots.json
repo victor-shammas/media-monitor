@@ -1,26 +1,69 @@
 {
-  "updated_at": "2026-10-02T06:00:39+00:00",
+  "updated_at": "2026-10-02T18:00:01+00:00",
   "lookback_hours": 48,
-  "model": "Gemini 3.6 Flash",
+  "model": "GPT-OSS 120B (Groq)",
   "status": "ok",
   "hotspots": [
     {
       "id": "midterm-campaign-blitz",
       "title": "Midterm Campaign Blitz",
-      "blurb": "President Trump and Vice President J.D. Vance have launched an aggressive campaign circuit across key red strongholds including Oklahoma, Florida, and Texas. Huge crowds and high-stakes rally speeches are aiming to invigorate lagging Republican voter turnout ahead of the upcoming midterm elections.",
-      "affect": "High-energy rallies and urgent appeals to base voters generate intense electoral fervor and partisan mobilization as midterms approach.",
+      "blurb": "President Trump and Vice President JD Vance crisscross deep‑red states, holding rallies in Oklahoma, Alabama, Ohio and other key districts while endorsing local candidates and stoking fears about immigration and inflation.",
+      "affect": "The nonstop rally circuit fuels a sense of imminent electoral showdown, with charged language about “saving America” and “defeating the opposition.”",
       "intensity": 5,
       "affect_signals": [
-        "electoral fervor",
-        "cross-source repetition",
-        "rallying tone",
-        "polarized contention"
+        "polarized contention",
+        "triumphal framing",
+        "high‑stakes election tone",
+        "mass mobilization rhetoric"
       ],
       "categories": [
-        "MAGA / Trump"
+        "US politics",
+        "campaign"
       ],
-      "article_count": 7,
+      "article_count": 11,
       "refs": [
+        {
+          "title": "President Donald Trump looks ahead to Oklahoma elections during midterm rally",
+          "source": "KOCO",
+          "url": "https://www.koco.com/article/donald-trump-oklahoma-rally-midterm-elections-2026/73992603",
+          "date": "2026-10-02T14:05:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "President Trump to visit Ohio for midterm rally: What to know",
+          "source": "WLWT",
+          "url": "https://www.wlwt.com/article/trump-rally-vandalia-ohio-midterms-husted/73993604",
+          "date": "2026-10-02T14:02:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Less than 24 hours away from President Donald Trump’s mid-term rally in Mobile",
+          "source": "fox10tv.com",
+          "url": "https://www.fox10tv.com/2026/10/02/less-than-24-hours-away-president-donald-trumps-mid-term-rally-mobile/",
+          "date": "2026-10-02T02:51:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "WATCH: President Trump in Durant for political rally",
+          "source": "KTEN",
+          "url": "https://www.kten.com/news/watch-president-trump-in-durant-for-political-rally/article_207bb157-8d77-4ab8-a15b-82ed384d0a4c.html",
+          "date": "2026-10-02T02:40:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Oklahomans Gather in Durant Ahead of President Trump’s Visit",
+          "source": "Oklahoma Farm Report",
+          "url": "https://www.oklahomafarmreport.com/2026/10/01/oklahoma-republicans-gather-in-durant-ahead-of-president-trumps-visit/",
+          "date": "2026-10-02T02:22:42+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "President Donald Trump endorses Cindy Byrd for state treasurer during Durant speech",
+          "source": "KOCO",
+          "url": "https://www.koco.com/article/president-donald-trump-endorses-cindy-byrd-for-state-treasurer/73984307",
+          "date": "2026-10-02T01:58:00+00:00",
+          "category": "usa"
+        },
         {
           "title": "Thousands rally around Vice President J.D. Vance during an event in Lakeland",
           "source": "WUSF",
@@ -48,28 +91,43 @@
           "url": "https://www.koco.com/article/oklahoma-residents-prepare-president-trump-campaign-rally/73968285",
           "date": "2026-10-01T03:13:00+00:00",
           "category": "usa"
+        },
+        {
+          "title": "Durant Stockyards invite President Trump to Thursday sale ahead of rally",
+          "source": "KXII",
+          "url": "https://www.kxii.com/2026/10/01/durant-stockyards-invite-trump-thursday-sale-ahead-rally/",
+          "date": "2026-10-01T03:03:00+00:00",
+          "category": "usa"
         }
       ],
       "first_seen": "2026-10-01T18:32:08+00:00",
-      "last_seen": "2026-10-02T06:00:39+00:00"
+      "last_seen": "2026-10-02T18:00:01+00:00"
     },
     {
       "id": "immigration-enforcement-legal-battles",
       "title": "Immigration Enforcement Legal Battles",
-      "blurb": "The Supreme Court agreed to review the administration's mandatory detention policy for immigrants, while federal ICE officers face wrongful death lawsuits stemming from a fatal shooting in Minneapolis. Simultaneously, officials face public scrutiny over proposed border security expansions in national park lands.",
-      "affect": "Contentious legal challenges over federal ICE enforcement and supreme court reviews evoke intense moral framing and polarized debate over national security versus civil rights.",
+      "blurb": "Multiple stories spotlight the Trump administration’s hard‑line immigration tactics, from denied ICE presence at polls and lawsuits over voter‑roll access to a family suing over a fatal ICE shooting.",
+      "affect": "The coverage mixes alarmist warnings of “illegal voting” with outrage over alleged government overreach and lethal enforcement actions.",
       "intensity": 4,
       "affect_signals": [
-        "outrage-coded language",
-        "legal confrontation",
-        "moral panic register",
-        "high-stakes litigation"
+        "alarmist framing",
+        "outrage‑coded language",
+        "legal showdown narrative",
+        "fear of voter suppression"
       ],
       "categories": [
-        "MAGA / Trump"
+        "immigration",
+        "law"
       ],
-      "article_count": 4,
+      "article_count": 5,
       "refs": [
+        {
+          "title": "Trump administration says it has no plans for ICE officers at polls. Activists are preparing, anyway - ABC News",
+          "source": "Breaking News, Latest News and Videos",
+          "url": "https://abcnews.com/US/wireStory/trump-administration-plans-ice-officers-polls-activists-preparing-136939854",
+          "date": "2026-10-02T04:40:54+00:00",
+          "category": "usa"
+        },
         {
           "title": "Family of Renee Good Sues Trump Administration, ICE Agents Months After Fatal Shooting in Minneapolis",
           "source": "WTTW News",
@@ -78,154 +136,10 @@
           "category": "usa"
         },
         {
-          "title": "Supreme Court grants review of Trump administration's mandatory detention policy for immigrants",
-          "source": "PBS",
-          "url": "https://www.pbs.org/newshour/politics/supreme-court-grants-review-of-trump-administrations-mandatory-detention-policy-for-immigrants",
-          "date": "2026-10-01T15:45:07+00:00",
-          "category": "usa"
-        },
-        {
           "title": "Renee Good's family sues Trump administration, immigration officials in fatal ICE shooting",
           "source": "kmph.com",
           "url": "https://kmph.com/news/nation-world/renee-goods-family-sues-trump-administration-immigration-officials-in-fatal-ice-shooting-shot-killed-crime-crackdown-immigration-and-customs-enforcement-agents-officers-wrongful-death-lawsuit-minneapolis-minnesota-president-donald-trump?teaserSource=trending",
           "date": "2026-10-01T15:01:38+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Trump administration considers scaling back border project in Texas' Big Bend National Park - ABC News",
-          "source": "Breaking News, Latest News and Videos",
-          "url": "https://abcnews.com/US/wireStory/trump-administration-considers-scaling-back-border-project-texas-136890653",
-          "date": "2026-09-30T15:39:27+00:00",
-          "category": "usa"
-        }
-      ],
-      "first_seen": "2026-10-01T18:32:08+00:00",
-      "last_seen": "2026-10-02T06:00:39+00:00"
-    },
-    {
-      "id": "trump-ai-selfregulation-push",
-      "title": "Trump AI Self‑Regulation Push",
-      "blurb": "President Trump hosted top technology executives at the White House to establish voluntary AI safeguards and self-regulation frameworks. Prominent conservative allies backed the executive-led initiative as essential to outpace technological competition from China, despite criticism from policy skeptics.",
-      "affect": "The white-hot debate over federal AI leadership versus corporate self-regulation taps into deep technological anxiety and national security urgency.",
-      "intensity": 4,
-      "affect_signals": [
-        "ideological contention",
-        "prominent policy focus",
-        "national security framing"
-      ],
-      "categories": [
-        "MAGA / Trump"
-      ],
-      "article_count": 4,
-      "refs": [
-        {
-          "title": "Rick Scott trusts Donald Trump to hash out AI rules",
-          "source": "floridapolitics.com",
-          "url": "https://floridapolitics.com/archives/822483-scott-trusts-trump-ai/",
-          "date": "2026-09-30T14:22:32+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "AI agreement signed by President Trump faces criticism",
-          "source": "FOX 10 Phoenix",
-          "url": "https://www.fox10phoenix.com/video/fmc-fqh69kgxw364vsec",
-          "date": "2026-09-30T13:40:48+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Tech executives agree to voluntary AI safeguards at President Trump's White House gathering",
-          "source": "CNBC",
-          "url": "https://www.cnbc.com/video/2026/09/30/tech-executives-agree-to-voluntary-ai-safeguards-at-president-trumps-white-house-gathering.html",
-          "date": "2026-09-30T10:21:50+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "US President Donald Trump speaks to the press at the White House driveway following a luncheon for tech leaders in the East Room, in Washington, D.C., US, September 29, 2026. REUTERS/Jonathan Ernst",
-          "source": "The Lufkin Daily News",
-          "url": "https://lufkindailynews.com/news_reuters/national/us-president-donald-trump-speaks-to-the-press-at-the-white-house-driveway-following-a/image_14ca53de-3eae-531d-a2bb-355945bfd5d0.html",
-          "date": "2026-09-30T10:05:43+00:00",
-          "category": "usa"
-        }
-      ],
-      "first_seen": "2026-10-01T18:32:08+00:00",
-      "last_seen": "2026-10-02T06:00:39+00:00"
-    },
-    {
-      "id": "economic-policy-rollbacks-funding-cuts",
-      "title": "Economic Policy Rollbacks & Funding Cuts",
-      "blurb": "Seven US states filed lawsuits challenging federal fund withholding, while government watchdogs contested the administration's efforts to cancel $810 million in approved funding. Meanwhile, the administration began distributing $500 healthcare refund checks and launched new student loan default support programs.",
-      "affect": "Fierce disputes over impounded federal dollars and direct government disbursements provoke strong partisan reactions over federal spending authority.",
-      "intensity": 3,
-      "affect_signals": [
-        "policy polarization",
-        "institutional clash",
-        "grievance framing"
-      ],
-      "categories": [
-        "MAGA / Trump"
-      ],
-      "article_count": 4,
-      "refs": [
-        {
-          "title": "Seven US states sue Trump administration over withholding of federal funds",
-          "source": "Jurist.org",
-          "url": "https://www.jurist.org/news/2026/10/seven-us-states-sue-trump-administration-over-withholding-of-federal-funds/",
-          "date": "2026-10-02T00:22:41+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Trump ad­min­is­tration moves to cancel $810M in federal funding as watchdog chal­lenges legality",
-          "source": "Spectrum News",
-          "url": "https://spectrumlocalnews.com/nys/central-ny/news/2026/10/01/trump-administration-moves-to-cancel--810m-in-federal-funding",
-          "date": "2026-10-01T00:59:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Trump administration starts sending $500 Obamacare refund checks — who stands to benefit",
-          "source": "cnbc.com",
-          "url": "https://www.cnbc.com/2026/09/30/obamacare-aca-refund-checks.html",
-          "date": "2026-09-30T16:18:11+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Treasury launches student loan support center as new data show 9.3 million borrowers in default",
-          "source": "cnbc.com",
-          "url": "https://www.cnbc.com/2026/09/30/student-loan-default-support-center.html",
-          "date": "2026-09-30T15:56:15+00:00",
-          "category": "usa"
-        }
-      ],
-      "first_seen": "2026-10-01T18:32:08+00:00",
-      "last_seen": "2026-10-02T06:00:39+00:00"
-    },
-    {
-      "id": "judicial-rebukes-of-executive-power",
-      "title": "Judicial Rebukes of Executive Power",
-      "blurb": "Federal judges blocked multiple administration initiatives, including striking down loyalty questions for federal job applicants and denying access to Georgia state voter records. Courts also reinstated a fired U.S. attorney in Washington State, delivering successive legal setbacks to executive authority.",
-      "affect": "Repeated judicial interventions against executive actions spark ongoing contention over constitutional boundaries and executive overreach.",
-      "intensity": 3,
-      "affect_signals": [
-        "institutional clash",
-        "legal pushback",
-        "polarized contention"
-      ],
-      "categories": [
-        "MAGA / Trump"
-      ],
-      "article_count": 4,
-      "refs": [
-        {
-          "title": "Federal judge in Seattle reinstates fired U.S. attorney in rebuke to Trump administration",
-          "source": "KUOW",
-          "url": "https://www.kuow.org/law/2026-10-01/federal-judge-in-seattle-reinstates-fired-u-s-attorney-in-rebuke-to-trump-administration",
-          "date": "2026-10-01T20:00:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Court Rules Trump Administration's Loyalty Test for Job Applicants Likely Unconstitutional",
-          "source": "The Fulcrum",
-          "url": "https://thefulcrum.us/rule-of-law/court-blocks-trump-loyalty-question-federal-jobs",
-          "date": "2026-10-01T04:30:19+00:00",
           "category": "usa"
         },
         {
@@ -243,8 +157,101 @@
           "category": "usa"
         }
       ],
+      "first_seen": "2026-10-01T18:32:08+00:00",
+      "last_seen": "2026-10-02T18:00:01+00:00"
+    },
+    {
+      "id": "norwegian-fueltax-protest-coalition",
+      "title": "Norwegian Fuel‑Tax Protest Coalition",
+      "blurb": "Three right‑wing Norwegian parties (FrP, Sp, KrF) have united to demand a year‑long cut to diesel and gasoline taxes amid soaring fuel prices, turning tax policy into a heated political showdown.",
+      "affect": "The coalition’s demand is framed as a fight against “unfair” taxation, rallying nationalist sentiment and economic grievance.",
+      "intensity": 3,
+      "affect_signals": [
+        "economic grievance",
+        "cross‑party unity",
+        "moral‑charge language",
+        "public protest vibe"
+      ],
+      "categories": [
+        "Europe",
+        "economics"
+      ],
+      "article_count": 4,
+      "refs": [
+        {
+          "title": "FrP, Sp og KrF med felles avgiftsopprør: Krever kutt i drivstoffavgiftene ut året",
+          "source": "Namdalsavisa",
+          "url": "https://www.namdalsavisa.no/frp-sp-og-krf-med-felles-avgiftsoppror-krever-kutt-i-drivstoffavgiftene-ut-aret/s/80-121-12378",
+          "date": "2026-10-02T07:29:05+00:00",
+          "category": "norway"
+        },
+        {
+          "title": "FrP, Sp og KrF utfordrer Høyre: Kutt drivstoffavgiftene",
+          "source": "frp.no",
+          "url": "https://www.frp.no/nyheter/frp-sp-og-krf-utfordrer-hoyre-kutt-drivstoffavgiftene",
+          "date": "2026-10-02T04:30:00+00:00",
+          "category": "norway"
+        },
+        {
+          "title": "Saman om avgiftskutt på diesel og bensin",
+          "source": "bygdebladet.com",
+          "url": "https://bygdebladet.com/saman-om-avgiftskutt-pa-diesel-og-bensin/19.15850",
+          "date": "2026-10-02T05:54:25+00:00",
+          "category": "norway"
+        },
+        {
+          "title": "Amundsen refser egen komité: – Må bli tydeligere",
+          "source": "Nettavisen",
+          "url": "https://www.nettavisen.no/nyheter/amundsen-refser-egen-komit-ma-bli-tydeligere/s/80-95-123498",
+          "date": "2026-10-01T07:21:14+00:00",
+          "category": "norway"
+        }
+      ],
+      "first_seen": "2026-10-02T18:00:01+00:00",
+      "last_seen": "2026-10-02T18:00:01+00:00"
+    },
+    {
+      "id": "judicial-rebukes-of-executive-power",
+      "title": "Judicial Rebukes of Executive Power",
+      "blurb": "Courts have pushed back on Trump administration actions, from a federal judge reinstating a fired U.S. attorney to a ruling that the “loyalty question” for federal hires is likely unconstitutional.",
+      "affect": "These rulings are portrayed as checks on presidential overreach, feeding a narrative of a tug‑of‑war between the judiciary and the executive.",
+      "intensity": 3,
+      "affect_signals": [
+        "legal rebuke framing",
+        "constitutionality debate",
+        "executive‑judicial tension",
+        "authoritarian alarm"
+      ],
+      "categories": [
+        "law",
+        "government"
+      ],
+      "article_count": 3,
+      "refs": [
+        {
+          "title": "Federal judge in Seattle reinstates fired U.S. attorney in rebuke to Trump administration",
+          "source": "KUOW",
+          "url": "https://www.kuow.org/law/2026-10-01/federal-judge-in-seattle-reinstates-fired-u-s-attorney-in-rebuke-to-trump-administration",
+          "date": "2026-10-01T20:00:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Court Rules Trump Administration's Loyalty Test for Job Applicants Likely Unconstitutional",
+          "source": "The Fulcrum",
+          "url": "https://thefulcrum.us/rule-of-law/court-blocks-trump-loyalty-question-federal-jobs",
+          "date": "2026-10-01T04:30:19+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump ad­min­is­tration moves to cancel $810M in federal funding as watchdog chal­lenges legality",
+          "source": "Spectrum News",
+          "url": "https://spectrumlocalnews.com/nys/central-ny/news/2026/10/01/trump-administration-moves-to-cancel--810m-in-federal-funding",
+          "date": "2026-10-01T00:59:00+00:00",
+          "category": "usa"
+        }
+      ],
       "first_seen": "2026-10-02T06:00:39+00:00",
-      "last_seen": "2026-10-02T06:00:39+00:00"
+      "last_seen": "2026-10-02T18:00:01+00:00"
     }
   ]
 }
