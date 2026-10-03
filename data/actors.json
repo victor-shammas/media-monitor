@@ -1,38 +1,47 @@
 {
-  "updated_at": "2026-10-02T18:07:00+00:00",
+  "updated_at": "2026-10-03T05:48:31+00:00",
   "lookback_hours": 48,
-  "model": "Gemini 3.5 Flash-Lite",
+  "model": "GPT-OSS 120B (Groq)",
   "status": "ok",
   "actors": [
     {
       "id": "donald-trump",
       "name": "Donald Trump",
       "role": "President of the United States",
-      "blurb": "President Trump is driving the national news cycle through a flurry of executive actions, lawsuits, and a high-profile midterm campaign blitz across states like Oklahoma and Ohio. His administration is clashing with federal courts over immigration, voter rolls, and federal funding cuts, while also negotiating international energy releases.",
+      "blurb": "Trump is leading a massive midterm rally tour across the South, endorsing candidates, announcing policy moves such as diesel releases and school‑choice tax credits, and facing legal challenges over taxpayer‑funded ads and border‑wall construction.",
       "prominence": 5,
       "signals": [
-        "midterm campaign rally",
-        "executive policy rollout",
-        "legal challenges and lawsuits",
-        "international energy announcements"
+        "midterm rally tour",
+        "policy announcements",
+        "legal battles",
+        "candidate endorsements"
       ],
       "categories": [
-        "🇺🇸 MAGA / Trump"
+        "campaign",
+        "policy",
+        "legal"
       ],
-      "article_count": 52,
+      "article_count": 30,
       "refs": [
         {
-          "title": "President Trump: Europe has agreed to release a massive amount of diesel",
-          "source": "CNBC",
-          "url": "https://www.cnbc.com/video/2026/10/02/president-trump-europe-has-agreed-to-release-a-massive-amount-of-diesel.html",
-          "date": "2026-10-02T14:28:44+00:00",
+          "title": "Donald Trump tells Mobile rally to ‘pretend I’m on the ballot’",
+          "source": "Alabama Reflector",
+          "url": "https://alabamareflector.com/2026/10/02/donald-trump-tells-mobile-rally-to-pretend-im-on-the-ballot/",
+          "date": "2026-10-03T03:25:07+00:00",
           "category": "usa"
         },
         {
-          "title": "Trump: Europe agrees to release diesel reserves ‘immediately’ as fuel prices hover near record highs",
-          "source": "Lowell Sun",
-          "url": "https://www.lowellsun.com/2026/10/02/trump-europe-diesel-reserves/",
-          "date": "2026-10-02T14:20:50+00:00",
+          "title": "President Trump arrives at University of South Alabama",
+          "source": "fox10tv.com",
+          "url": "https://www.fox10tv.com/video/2026/10/02/president-trump-arrives-university-south-alabama/",
+          "date": "2026-10-02T23:08:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Attendees react to President Donald Trump’s historic midterm rally in Durant",
+          "source": "kxii.com",
+          "url": "https://www.kxii.com/2026/10/02/attendees-react-president-donald-trumps-historic-midterm-rally-durant/",
+          "date": "2026-10-02T23:00:00+00:00",
           "category": "usa"
         },
         {
@@ -43,46 +52,102 @@
           "category": "usa"
         },
         {
-          "title": "Trump Administration Sues Harvard for Employment Records",
-          "source": "Inside Higher Ed",
-          "url": "https://www.insidehighered.com/news/quick-takes/2026/10/02/trump-administration-sues-harvard-employment-records",
-          "date": "2026-10-02T07:04:37+00:00",
+          "title": "President Trump to visit Ohio for midterm rally: What to know",
+          "source": "WLWT",
+          "url": "https://www.wlwt.com/article/trump-rally-vandalia-ohio-midterms-husted/73993604",
+          "date": "2026-10-02T14:02:00+00:00",
           "category": "usa"
         },
         {
-          "title": "Seven US states sue Trump administration over withholding of federal funds",
-          "source": "Jurist.org",
-          "url": "https://www.jurist.org/news/2026/10/seven-us-states-sue-trump-administration-over-withholding-of-federal-funds/",
-          "date": "2026-10-02T00:22:41+00:00",
+          "title": "Trump administration says it has no plans for ICE officers at polls. Activists are preparing, anyway - ABC News",
+          "source": "Breaking News, Latest News and Videos",
+          "url": "https://abcnews.com/US/wireStory/trump-administration-plans-ice-officers-polls-activists-preparing-136939854",
+          "date": "2026-10-02T04:40:54+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Brazil probes alleged US plan to fund far-right causes in the country",
+          "source": "Euronews.com",
+          "url": "https://www.euronews.com/2026/10/02/brazil-launches-probe-into-alleged-trump-administration-plan-to-fund-far-right-causes-in-t",
+          "date": "2026-10-02T03:53:14+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "President Donald Trump talks about moving to Oklahoma during Durant rally",
+          "source": "KOCO",
+          "url": "https://www.koco.com/article/president-donald-trump-talks-moving-to-oklahoma-durant-rally/73987844",
+          "date": "2026-10-02T02:55:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "President Donald Trump endorses Cindy Byrd for state treasurer during Durant speech",
+          "source": "KOCO",
+          "url": "https://www.koco.com/article/president-donald-trump-endorses-cindy-byrd-for-state-treasurer/73984307",
+          "date": "2026-10-02T01:58:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump says US may ask Europe to release diesel reserves",
+          "source": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/2/trump-says-us-may-ask-europe-to-release-diesel-reserves",
+          "date": "2026-10-02T01:38:36+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump administration implementing school choice tax credit - ABC News",
+          "source": "Breaking News, Latest News and Videos",
+          "url": "https://abcnews.com/Politics/trump-administration-implementing-school-choice-tax-credit/story?id=136896368",
+          "date": "2026-10-01T19:51:52+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Supreme Court grants review of Trump administration's mandatory detention policy for immigrants",
+          "source": "PBS",
+          "url": "https://www.pbs.org/newshour/politics/supreme-court-grants-review-of-trump-administrations-mandatory-detention-policy-for-immigrants",
+          "date": "2026-10-01T15:45:07+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump administration accused of pushing ‘plainly illegal’ taxpayer-funded ads to promote president",
+          "source": "The Guardian",
+          "url": "https://www.theguardian.com/us-news/2026/oct/01/house-democrats-letter-trump-ads",
+          "date": "2026-10-01T15:39:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump says he’d consider issuing pardons to administration officials before he leaves office",
+          "source": "NBC News",
+          "url": "https://www.nbcnews.com/politics/trump-administration/trump-considering-preemptive-pardons-administration-officials-rcna600905",
+          "date": "2026-10-01T15:06:15+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "US President Trump makes an announcement at the White House in Washington, D.C.",
+          "source": "The Lufkin Daily News",
+          "url": "https://lufkindailynews.com/news_reuters/top_news/us-president-trump-makes-an-announcement-at-the-white-house-in-washington-d-c/image_684e6d1e-f9f4-5300-b90b-b49b56017add.html",
+          "date": "2026-10-01T06:54:08+00:00",
           "category": "usa"
         }
       ],
       "first_seen": "2026-08-16T02:13:23+00:00",
-      "last_seen": "2026-10-02T18:07:00+00:00"
+      "last_seen": "2026-10-03T05:48:31+00:00"
     },
     {
       "id": "jd-vance",
       "name": "JD Vance",
       "role": "Vice President of the United States",
-      "blurb": "Vice President JD Vance is actively campaigning on the road to boost enthusiasm for Republican candidates in tight midterm races. He recently headlined major rallies in Florida and the Rio Grande Valley while defending administration policies.",
+      "blurb": "Vance is touring key swing states, holding rallies and stumping for Republican candidates ahead of the midterms, while also appearing in commentary pieces linking his and Mehmet Oz’s messaging to fraud narratives.",
       "prominence": 3,
       "signals": [
-        "midterm campaign tour",
-        "voter mobilization",
-        "administration defense"
+        "midterm campaign stops",
+        "rally speeches",
+        "political commentary"
       ],
       "categories": [
-        "🇺🇸 MAGA / Trump"
+        "campaign"
       ],
-      "article_count": 5,
+      "article_count": 3,
       "refs": [
-        {
-          "title": "What to Make of JD Vance and Mehmet Oz’s Fraud Show",
-          "source": "CounterPunch.org",
-          "url": "https://www.counterpunch.org/2026/10/02/what-to-make-of-jd-vance-and-mehmet-ozs-fraud-show/",
-          "date": "2026-10-02T05:53:17+00:00",
-          "category": "usa"
-        },
         {
           "title": "Thousands rally around Vice President J.D. Vance during an event in Lakeland",
           "source": "WUSF",
@@ -98,22 +163,15 @@
           "category": "usa"
         },
         {
-          "title": "Trump and Vance hit the campaign trail in deep-red areas where GOP candidates seek a boost",
-          "source": "News4JAX",
-          "url": "https://www.news4jax.com/news/politics/2026/10/01/trump-and-vance-hit-the-campaign-trail-in-deep-red-areas-where-gop-candidates-seek-a-boost/",
-          "date": "2026-10-01T04:08:39+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Vice President Vance attends rally in Rio Grande Valley",
-          "source": "CBS News",
-          "url": "https://www.cbsnews.com/texas/video/vice-president-vance-attends-rally-in-rio-grande-valley/",
-          "date": "2026-10-01T00:22:00+00:00",
+          "title": "What to Make of JD Vance and Mehmet Oz’s Fraud Show",
+          "source": "CounterPunch.org",
+          "url": "https://www.counterpunch.org/2026/10/02/what-to-make-of-jd-vance-and-mehmet-ozs-fraud-show/",
+          "date": "2026-10-02T05:53:17+00:00",
           "category": "usa"
         }
       ],
       "first_seen": "2026-10-01T18:37:00+00:00",
-      "last_seen": "2026-10-02T18:07:00+00:00"
+      "last_seen": "2026-10-03T05:48:31+00:00"
     }
   ]
 }
