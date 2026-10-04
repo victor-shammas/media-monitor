@@ -42,7 +42,7 @@ try:
     )
 except ImportError as e:
     print(f"Missing or incompatible dependency: {e}")
-    print("Install dependencies: pip install trafilatura googlenewsdecoder tenacity")
+    print("Install dependencies: pip install trafilatura \"googlenewsdecoder>=0.2,<0.3\" \"selectolax<1.0\" tenacity")
     sys.exit(1)
 
 from monitor_utils import (
