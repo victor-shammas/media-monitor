@@ -1,35 +1,30 @@
 {
-  "updated_at": "2026-10-03T16:49:01+00:00",
+  "updated_at": "2026-10-04T06:26:36+00:00",
   "lookback_hours": 48,
-  "model": "Gemini 3.6 Flash",
+  "model": "GPT-OSS 120B (Groq)",
   "status": "ok",
   "themes": [
     {
-      "id": "fuelprice-crisis-spurs-rightwing-policy-push",
-      "title": "Fuel‑Price Crisis Spurs Right‑Wing Policy Push",
-      "blurb": "Surging fuel and energy costs are driving right-wing parties in multiple nations to demand immediate policy relief and tax cuts. In Norway, Fremskrittspartiet is leading a parliamentary alliance to slash taxes on diesel, while in Sweden and the United States, right-wing leaders are using high pump prices to push for emergency fuel releases and tax rollbacks.",
+      "id": "fuel-price-crisis-sparks-tax-cut-calls",
+      "title": "Fuel Price Crisis Sparks Tax Cut Calls",
+      "blurb": "Right‑wing parties in Norway and the United States are pushing immediate relief measures as diesel and gasoline prices hit record highs. Norway’s coalition parties demand a year‑long fuel tax cut, while President Trump touts a European diesel release to curb U.S. fuel costs.",
       "convergence": 4,
       "countries": [
         {
           "name": "🇳🇴 Fremskrittspartiet",
-          "note": "Unites with opposition parties to demand immediate parliamentary cuts to fuel taxes amid record diesel prices."
+          "note": "FRP, Sp and KrF unite to demand fuel‑tax reductions for the rest of the year."
         },
         {
           "name": "🇺🇸 MAGA / Trump",
-          "note": "Leverages record fuel costs to announce international diesel reserve releases and demand energy price intervention."
-        },
-        {
-          "name": "🇸🇪 Sverigedemokraterna",
-          "note": "Pushes low fuel prices as a core constituent priority despite national tax policy shifts."
+          "note": "Trump announces Europe will release 100 million barrels of diesel to lower U.S. fuel prices."
         }
       ],
       "signals": [
         "policy imitation",
-        "fuel tax cuts",
-        "energy price relief",
-        "shared economic messaging"
+        "shared framing of energy emergency",
+        "cross‑border economic relief narrative"
       ],
-      "article_count": 9,
+      "article_count": 4,
       "refs": [
         {
           "title": "Frp, Sp og KrF går sammen om kutt i drivstoffavgiften",
@@ -39,20 +34,6 @@
           "category": "norway"
         },
         {
-          "title": "PATRIK KRONQVIST: Svenska bilister blir blåsta av SD",
-          "source": "Expressen",
-          "url": "https://www.expressen.se/ledare/patrik-kronqvist/svenska-bilister-blir-blasta-av-sd/",
-          "date": "2026-10-03T05:00:00+00:00",
-          "category": "sweden"
-        },
-        {
-          "title": "Trump: Europe agrees to release diesel reserves ‘immediately’ as fuel prices hover near record highs",
-          "source": "Lowell Sun",
-          "url": "https://www.lowellsun.com/2026/10/02/trump-europe-diesel-reserves/",
-          "date": "2026-10-02T14:20:50+00:00",
-          "category": "usa"
-        },
-        {
           "title": "FrP, Sp og KrF med felles avgiftsopprør: Krever kutt i drivstoffavgiftene ut året",
           "source": "Namdalsavisa",
           "url": "https://www.namdalsavisa.no/frp-sp-og-krf-med-felles-avgiftsoppror-krever-kutt-i-drivstoffavgiftene-ut-aret/s/80-121-12378",
@@ -60,150 +41,22 @@
           "category": "norway"
         },
         {
-          "title": "Trump says US may ask Europe to release diesel reserves",
-          "source": "Al Jazeera",
-          "url": "https://www.aljazeera.com/news/2026/10/2/trump-says-us-may-ask-europe-to-release-diesel-reserves",
-          "date": "2026-10-02T01:38:36+00:00",
+          "title": "President Trump: Europe has agreed to release a massive amount of diesel",
+          "source": "CNBC",
+          "url": "https://www.cnbc.com/video/2026/10/02/president-trump-europe-has-agreed-to-release-a-massive-amount-of-diesel.html",
+          "date": "2026-10-02T14:28:44+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump: Europe agrees to release diesel reserves ‘immediately’ as fuel prices hover near record highs",
+          "source": "Lowell Sun",
+          "url": "https://www.lowellsun.com/2026/10/02/trump-europe-diesel-reserves/",
+          "date": "2026-10-02T14:20:50+00:00",
           "category": "usa"
         }
       ],
-      "first_seen": "2026-10-02T18:06:43+00:00",
-      "last_seen": "2026-10-03T16:49:01+00:00"
-    },
-    {
-      "id": "rightwing-parties-gaining-regional-power",
-      "title": "Right‑Wing Parties Gaining Regional Power",
-      "blurb": "Right-wing parties are concentrating heavily on regional and local election campaigns to consolidate grassroots political strength. From Trump's multi-state midterm rally campaign across the US to Fremskrittspartiet building record candidate lists in Norwegian municipalities and Sverigedemokraterna defending its local governance record in Sweden, regional power remains a primary focus.",
-      "convergence": 3,
-      "countries": [
-        {
-          "name": "🇺🇸 MAGA / Trump",
-          "note": "Launches an aggressive multi-state midterm campaign blitz to mobilize local voters and elect state-level candidates."
-        },
-        {
-          "name": "🇳🇴 Fremskrittspartiet",
-          "note": "Builds record-long municipal candidate lists while party leader Listhaug reaches a dead heat for prime minister."
-        },
-        {
-          "name": "🇸🇪 Sverigedemokraterna",
-          "note": "Faces scrutiny and debates over its local municipal accomplishments and coalition governance."
-        }
-      ],
-      "signals": [
-        "regional campaign blitz",
-        "grassroots mobilization",
-        "local election momentum",
-        "electoral parity"
-      ],
-      "article_count": 13,
-      "refs": [
-        {
-          "title": "INSÄNDARE: Vad har SD gjort för Eksjö? - Smålands-Tidningen",
-          "source": "",
-          "url": "https://www.smt.se/eksjo/vad-har-sd-gjort-for-eksjo/",
-          "date": "2026-10-03T10:00:00+00:00",
-          "category": "sweden"
-        },
-        {
-          "title": "Dødt løp mellom Støre og Listhaug",
-          "source": "Nettavisen",
-          "url": "https://www.nettavisen.no/nyheter/dodt-lop-mellom-jonas-gahr-store-og-sylvi-listhaug-i-nettavisens-statsministermaling/s/80-95-128472",
-          "date": "2026-10-03T08:15:56+00:00",
-          "category": "norway"
-        },
-        {
-          "title": "Donald Trump tells Mobile rally to ‘pretend I’m on the ballot’",
-          "source": "Alabama Reflector",
-          "url": "https://alabamareflector.com/2026/10/02/donald-trump-tells-mobile-rally-to-pretend-im-on-the-ballot/",
-          "date": "2026-10-03T03:25:07+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "President Donald Trump looks ahead to Oklahoma elections during midterm rally",
-          "source": "KOCO",
-          "url": "https://www.koco.com/article/donald-trump-oklahoma-rally-midterm-elections-2026/73992603",
-          "date": "2026-10-02T14:05:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Nyhet, Frp | Nikolay topper FrP-lista i Modum",
-          "source": "Bygdeposten",
-          "url": "https://www.bygdeposten.no/nikolay-topper-frp-lista-i-modum/s/80-10-10429",
-          "date": "2026-10-02T04:30:00+00:00",
-          "category": "norway"
-        },
-        {
-          "title": "Thousands rally around Vice President J.D. Vance during an event in Lakeland",
-          "source": "WUSF",
-          "url": "https://www.wusf.org/politics-issues/2026-10-01/thousands-rally-around-vice-president-jd-vance-during-event-lakeland",
-          "date": "2026-10-02T00:06:00+00:00",
-          "category": "usa"
-        }
-      ],
-      "first_seen": "2026-10-02T18:06:43+00:00",
-      "last_seen": "2026-10-03T16:49:01+00:00"
-    },
-    {
-      "id": "right-wing-demands-for-stricter-immigration-controls",
-      "title": "Right-Wing Demands for Stricter Immigration Controls",
-      "blurb": "Immigration restrictions and demographic warnings remain central pillars of right-wing political messaging across borders. Norway's Fremskrittspartiet is warning of rising non-Western immigration relative to Sweden to demand stricter laws, while the US Trump administration continues emphasizing border wall construction and aggressive enforcement measures.",
-      "convergence": 3,
-      "countries": [
-        {
-          "name": "🇳🇴 Fremskrittspartiet",
-          "note": "Warns Norway could exceed Swedish non-Western immigration growth rates by 2040, urging urgent policy tightening."
-        },
-        {
-          "name": "🇺🇸 MAGA / Trump",
-          "note": "Promotes border wall expansion and aggressive enforcement strategies as key midterm rally talking points."
-        }
-      ],
-      "signals": [
-        "stricter enforcement",
-        "demographic warnings",
-        "shared framing",
-        "border security push"
-      ],
-      "article_count": 7,
-      "refs": [
-        {
-          "title": "Norge kan få høyere ikke-vestlig innvandring enn Sverige - Fremskrittspartiet",
-          "source": "FrP.",
-          "url": "https://www.frp.no/nyheter/norge-kan-fa-hoyere-ikke-vestlig-innvandring-enn-sverige",
-          "date": "2026-10-03T07:16:00+00:00",
-          "category": "norway"
-        },
-        {
-          "title": "Trump administration says it has no plans to send ICE to polls. Activists are preparing anyway",
-          "source": "Anchorage Daily News",
-          "url": "https://www.adn.com/nation-world/2026/10/02/trump-administration-says-it-has-no-plans-to-send-ice-to-polls-activists-are-preparing-anyway/",
-          "date": "2026-10-03T01:01:41+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Federal judge orders Trump administration to stop border wall construction at Big Bend National Park",
-          "source": "NBC News",
-          "url": "https://www.nbcnews.com/video/judge-orders-trump-administration-to-stop-border-wall-construction-at-big-bend-national-park-270942789587",
-          "date": "2026-10-02T21:42:33+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Sen. James Lankford reacts to President Donald Trump’s speech in Durant",
-          "source": "KOCO",
-          "url": "https://www.koco.com/article/sen-james-lankford-reacts-to-president-trump-speech-durant/73987892",
-          "date": "2026-10-02T03:09:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Oklahomans Gather in Durant Ahead of President Trump’s Visit",
-          "source": "Oklahoma Farm Report",
-          "url": "https://www.oklahomafarmreport.com/2026/10/01/oklahoma-republicans-gather-in-durant-ahead-of-president-trumps-visit/",
-          "date": "2026-10-02T02:22:42+00:00",
-          "category": "usa"
-        }
-      ],
-      "first_seen": "2026-10-03T16:49:01+00:00",
-      "last_seen": "2026-10-03T16:49:01+00:00"
+      "first_seen": "2026-10-04T06:26:36+00:00",
+      "last_seen": "2026-10-04T06:26:36+00:00"
     }
   ]
 }
