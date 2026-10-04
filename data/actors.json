@@ -1,26 +1,42 @@
 {
-  "updated_at": "2026-10-04T06:24:44+00:00",
+  "updated_at": "2026-10-04T17:05:37+00:00",
   "lookback_hours": 48,
-  "model": "Gemini 3.6 Flash",
+  "model": "GPT-OSS 120B (Groq)",
   "status": "ok",
   "actors": [
     {
       "id": "donald-trump",
       "name": "Donald Trump",
       "role": "President of the United States",
-      "blurb": "President Trump is undertaking an aggressive campaign rally tour across Alabama, Oklahoma, and Ohio to bolster Republican candidates ahead of the midterms. Simultaneously, he is driving policy headlines with announcements on senior Medicare relief checks, fuel reserve releases, and ongoing disputes with federal courts and educational institutions.",
+      "blurb": "Trump is on an intensive rally tour across swing states, delivering speeches, announcing senior‑citizen checks, and courting GOP candidates ahead of the midterm elections. His appearances are generating both massive supporter turn‑outs and protests, dominating right‑wing media coverage.",
       "prominence": 5,
       "signals": [
-        "election campaign",
-        "policy announcement",
-        "international posturing",
-        "judicial proceedings"
+        "rally tour",
+        "senior‑citizen checks",
+        "midterm campaign push",
+        "controversial statements"
       ],
       "categories": [
-        "MAGA / Trump"
+        "United States",
+        "President",
+        "MAGA"
       ],
-      "article_count": 27,
+      "article_count": 12,
       "refs": [
+        {
+          "title": "President Trump to speak at San Antonio rally next week - San Antonio Express-News",
+          "source": "",
+          "url": "https://www.expressnews.com/politics/article/president-trump-rally-freeman-coliseum-san-antonio-22460807.php",
+          "date": "2026-10-03T14:14:26+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump Humiliated by Empty Seats at Red State MAGA Rally",
+          "source": "Yahoo",
+          "url": "https://www.yahoo.com/news/videos/trump-humiliated-empty-seats-red-133151089.html",
+          "date": "2026-10-03T13:31:51+00:00",
+          "category": "usa"
+        },
         {
           "title": "Trump announces $90 checks for more than 20M seniors to help combat Medicare costs",
           "source": "Fox Business",
@@ -36,6 +52,20 @@
           "category": "usa"
         },
         {
+          "title": "President Trump’s visit to Mobile draws crowds of supporters and protestors",
+          "source": "fox10tv.com",
+          "url": "https://www.fox10tv.com/2026/10/03/president-trumps-visit-mobile-draws-crowds-supporters-protestors/",
+          "date": "2026-10-03T04:14:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "President Trump holds rally in Mobile",
+          "source": "AZ Family",
+          "url": "https://www.azfamily.com/video/2026/10/03/president-trump-holds-rally-mobile/",
+          "date": "2026-10-03T04:08:00+00:00",
+          "category": "usa"
+        },
+        {
           "title": "Donald Trump tells Mobile rally to ‘pretend I’m on the ballot’",
           "source": "Alabama Reflector",
           "url": "https://alabamareflector.com/2026/10/02/donald-trump-tells-mobile-rally-to-pretend-im-on-the-ballot/",
@@ -43,63 +73,43 @@
           "category": "usa"
         },
         {
-          "title": "Trump: Europe agrees to release diesel reserves ‘immediately’ as fuel prices hover near record highs",
-          "source": "Lowell Sun",
-          "url": "https://www.lowellsun.com/2026/10/02/trump-europe-diesel-reserves/",
-          "date": "2026-10-02T14:20:50+00:00",
+          "title": "President Trump arrives at University of South Alabama",
+          "source": "fox10tv.com",
+          "url": "https://www.fox10tv.com/video/2026/10/02/president-trump-arrives-university-south-alabama/",
+          "date": "2026-10-02T23:08:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Attendees react to President Donald Trump’s historic midterm rally in Durant",
+          "source": "kxii.com",
+          "url": "https://www.kxii.com/2026/10/02/attendees-react-president-donald-trumps-historic-midterm-rally-durant/",
+          "date": "2026-10-02T23:00:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "President Trump Gaggles with Press Upon Departure from the White House, Oct. 2, 2026",
+          "source": "The White House (.gov)",
+          "url": "https://www.whitehouse.gov/videos/president-trump-gaggles-with-press-upon-departure-from-the-white-house-oct-2-2026/",
+          "date": "2026-10-02T22:46:11+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Federal judge orders Trump administration to stop border wall construction at Big Bend National Park",
+          "source": "NBC News",
+          "url": "https://www.nbcnews.com/video/judge-orders-trump-administration-to-stop-border-wall-construction-at-big-bend-national-park-270942789587",
+          "date": "2026-10-02T21:42:33+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Hegseth urges military to vote as Trump administration makes it harder for them to cast ballots",
+          "source": "democracydocket.com",
+          "url": "https://www.democracydocket.com/news-alerts/hegseth-urges-military-to-vote-as-trump-administration-makes-it-harder-for-them-to-cast-ballots/",
+          "date": "2026-10-02T19:47:24+00:00",
           "category": "usa"
         }
       ],
       "first_seen": "2026-08-16T02:13:23+00:00",
-      "last_seen": "2026-10-04T06:24:44+00:00"
-    },
-    {
-      "id": "sylvi-listhaug",
-      "name": "Sylvi Listhaug",
-      "role": "Leader of the Progress Party (FrP)",
-      "blurb": "Sylvi Listhaug is tied with Prime Minister Jonas Gahr Støre in the latest preferred prime minister polling. Under her leadership, the Progress Party has united opposition parties to demand immediate fuel tax reductions while raising warnings regarding non-Western immigration trends in Norway.",
-      "prominence": 3,
-      "signals": [
-        "polling performance",
-        "coalition negotiations",
-        "policy announcement"
-      ],
-      "categories": [
-        "Fremskrittspartiet"
-      ],
-      "article_count": 4,
-      "refs": [
-        {
-          "title": "Frp, Sp og KrF går sammen om kutt i drivstoffavgiften",
-          "source": "Klassekampen",
-          "url": "https://klassekampen.no/utgave/2026-10-03/frp-sp-og-krf-gar-sammen-om-kutt-i-drivstoffavgiften",
-          "date": "2026-10-03T08:19:17+00:00",
-          "category": "norway"
-        },
-        {
-          "title": "Dødt løp mellom Støre og Listhaug",
-          "source": "Nettavisen",
-          "url": "https://www.nettavisen.no/nyheter/dodt-lop-mellom-jonas-gahr-store-og-sylvi-listhaug-i-nettavisens-statsministermaling/s/80-95-128472",
-          "date": "2026-10-03T08:15:56+00:00",
-          "category": "norway"
-        },
-        {
-          "title": "Norge kan få høyere ikke-vestlig innvandring enn Sverige - Fremskrittspartiet",
-          "source": "FrP.",
-          "url": "https://www.frp.no/nyheter/norge-kan-fa-hoyere-ikke-vestlig-innvandring-enn-sverige",
-          "date": "2026-10-03T07:16:00+00:00",
-          "category": "norway"
-        },
-        {
-          "title": "FrP, Sp og KrF med felles avgiftsopprør: Krever kutt i drivstoffavgiftene ut året",
-          "source": "Namdalsavisa",
-          "url": "https://www.namdalsavisa.no/frp-sp-og-krf-med-felles-avgiftsoppror-krever-kutt-i-drivstoffavgiftene-ut-aret/s/80-121-12378",
-          "date": "2026-10-02T07:29:05+00:00",
-          "category": "norway"
-        }
-      ],
-      "first_seen": "2026-10-03T16:47:14+00:00",
-      "last_seen": "2026-10-04T06:24:44+00:00"
+      "last_seen": "2026-10-04T17:05:37+00:00"
     }
   ]
 }
