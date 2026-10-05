@@ -1,0 +1,104 @@
+name: Daily AI Intelligence Report
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+on:
+  schedule:
+    # Runs daily at 03:00 UTC — padded for Actions scheduling delays
+    - cron: "0 3 * * *"
+  workflow_dispatch:
+    inputs:
+      model:
+        description: "LLM model (auto = full fallback chain)"
+        required: false
+        default: "auto"
+        type: choice
+        options:
+          - auto
+          - mistral-large
+          - mistral-medium
+          - mistral-small
+          - flash
+          - flash-25
+          - claude
+
+jobs:
+  email-report:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+
+      - name: Checkout private data repo
+        uses: actions/checkout@v7
+        with:
+          repository: victor-shammas/media-monitor-data
+          path: data-private
+          token: ${{ secrets.DATA_REPO_PAT }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install google-genai tenacity markdown anthropic
+
+      - name: Run AI Reporter
+        env:
+          MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          SENDER_EMAIL: ${{ secrets.SENDER_EMAIL }}
+          EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
+          RECEIVER_EMAIL: ${{ secrets.RECEIVER_EMAIL }}
+        # ──────────────────────────────────────────────────────────
+        # TESTING:  use --markdown to write reports/ instead of email
+        # PRODUCTION: remove --markdown to send HTML email
+        #
+        #--email sends email
+        #--markdown writes as a markdown report
+        #
+        #--model auto (now the default) — full fallback chain
+        #--model claude — Claude Sonnet only
+        #--model mistral — Mistral Large only
+        #--model mistral-medium — Mistral Medium only
+        #--model mistral-small — Mistral Small only
+        #--model flash — Gemini 3.6 Flash only
+        #--model flash-25 — Gemini 2.5 Flash only
+        # the run line below captures the last 24 hours of news reports, sends both email and writes a markdown file, and follows the fallback chain: Gemini 3.6 Flash → Mistral Medium → Mistral Small → Gemini 2.5 Flash (see DEFAULT_CHAIN in ai_reporter.py)
+        # ──────────────────────────────────────────────────────────
+        run: python ai_reporter.py --hours 24 --model ${{ inputs.model || 'auto' }} --email --markdown
+
+      - name: Push input logs to private repo
+        run: |
+          cd data-private
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Report input $(date -u +%Y-%m-%d)" || echo "No changes"
+          for attempt in 1 2 3 4 5; do
+            git pull --rebase --autostash && git push && exit 0
+            echo "Push attempt $attempt rejected (concurrent update to data repo); re-syncing and retrying in $((attempt * 5))s..."
+            sleep $((attempt * 5))
+          done
+          echo "::error::Failed to push to data repo after 5 attempts due to concurrent updates"
+          exit 1
+
+      - name: Commit reports
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add reports/
+          git commit -m "Daily intelligence report" || echo "No changes to commit"
+          for attempt in 1 2 3 4 5; do
+            git -c fetch.recurseSubmodules=no pull --rebase --autostash && git push && exit 0
+            echo "Push attempt $attempt rejected (concurrent update to main); re-syncing and retrying in $((attempt * 5))s..."
+            sleep $((attempt * 5))
+          done
+          echo "::error::Failed to push to main after 5 attempts due to concurrent updates"
+          exit 1

@@ -1,0 +1,462 @@
+[settings]
+window = "2d"   # Google News time window (e.g. "1d", "3d", "7d"); overridable per feed
+
+[categories]
+usa = "🇺🇸 MAGA / Trump"
+norway = "🇳🇴 Fremskrittspartiet"
+sweden = "🇸🇪 Sverigedemokraterna"
+france = "🇫🇷 Rassemblement National"
+italy = "🇮🇹 Fratelli d'Italia / Lega"
+uk = "🇬🇧 Reform UK"
+germany = "🇩🇪 Alternative für Deutschland"
+hungary = "🇭🇺 Fidesz / Tisza"
+poland = "🇵🇱 Prawo i Sprawiedliwość"
+spain = "🇪🇸 Vox"
+argentina = "🇦🇷 La Libertad Avanza"
+general = "🌍 General Right-Wing News"
+networks = "🕸️ Transnational Networks"
+
+[prompt]
+enriched_data_description = "Each article includes a title and, where available, an EXTRACT with the opening paragraphs of the article. Use the extracts to ground your analysis in the actual framing and argumentation of the source material."
+
+titles_only_data_description = "Each article is represented by its headline and source outlet."
+
+# How many previous briefs (one per day, most recent first) are condensed and
+# passed back into the prompt for continuity. 0 disables it.
+previous_issues = 3
+
+instructions = """\
+You are an expert political analyst writing a daily intelligence brief. Analyze the last {hours} hours of right-wing and far-right news from the data below.
+
+DATA DESCRIPTION: {data_description}
+
+FORMAT INSTRUCTIONS:
+- Write in Markdown.
+- Begin with a short executive summary paragraph (2-3 sentences) of the day's most significant developments.
+- Open the executive summary with the single most significant development itself, stated concretely (who did what). Do NOT open with a stock time-frame phrase such as 'The past 24 hours', 'Over the last day', 'In the last {hours} hours' or 'Today', and do not open by characterizing the period as a whole (e.g. 'reveal a dual dynamic', 'highlight a dual focus').
+- Then organize your analysis by thematic cluster, NOT by country. Use ## headings for each cluster.
+- Within each section, note cross-national patterns and connections where they exist.
+- Use **bold** for party names and key actors on first mention.
+- End with a short 'Watchlist' section flagging 3 emerging stories to track.
+- Keep the tone analytical and concise — this is a professional briefing, not a news summary.
+- Treat headline-only items more cautiously: they can help identify a development, but you should avoid making strong interpretive claims unless the extract supports them.
+
+CONTINUITY INSTRUCTIONS:
+- Below, under PREVIOUS ISSUES, are condensed versions of the most recent briefs (newest first). They are background only, so you can recognize ongoing stories.
+- Today's DATA alone decides what matters most and what leads. Do not carry a theme forward just because it featured before.
+- When a story continues from a previous issue, frame it as a development (escalating, easing, reversing, spreading to new actors) instead of re-introducing it from scratch.
+- Where today's DATA speaks to an item on the most recent issue's Watchlist, briefly say what happened, within the relevant section.
+- Do not reuse the wording, sentence structure or section headings of previous issues. Write fresh.
+- NEVER cite previous issues, and never state anything from them as fact unless today's DATA supports it. Every citation must refer to today's DATA.
+
+CITATION INSTRUCTIONS:
+- Each article in the data has a reference number in square brackets, e.g. [1], [2].
+- When you make a claim that draws on a specific article, cite it inline using its number: e.g. 'Politician X said A [14], while Politician Y claimed B instead [27].' However, cite only the single most relevant source per claim: Never stack multiple citations (e.g. do NOT write, "Politician X said A [3] [27] [99] [104].").
+- Do NOT invent reference numbers that are not in the data.
+- Do NOT create a bibliography or references section — just use inline citations.
+
+PREVIOUS ISSUES:
+{previous}
+
+DATA:
+{context}"""
+
+# ── Hotspots ──────────────────────────────────────────────────────────────
+# A "hotspot" is an event or development that commands disproportionate
+# attention as a subject of high affective investment — not just the most
+# covered story, but the most charged. The hotspots_generator script trawls
+# the last N hours of articles (with summaries) and asks the LLM to identify
+# the top-N hotspots across the whole cross-category universe.
+
+[hotspots]
+top_n = 5
+min_articles = 3
+lookback_hours = 48
+
+# Tweak this prompt to change how the LLM defines, scores, and selects
+# hotspots. The {top_n}, {min_articles}, {hours}, {previous}, {context}
+# placeholders are filled in by hotspots_generator.py.
+prompt = """\
+You are a media-attention analyst. Your job is to identify the TOP {top_n}
+HOTSPOTS in right-wing and far-right news coverage from the last {hours} hours.
+
+DEFINITION — A hotspot is an event, development, or controversy that commands
+disproportionate attention because it carries high AFFECTIVE INVESTMENT:
+strong-emotion framing (outrage, alarm, triumph, grievance, fear), polarized
+contention, moral charge, or a sense that something is at stake. A hotspot is
+NOT just "whatever has the most articles". It is the news story that the
+discourse is most CHARGED around. Volume matters, but so does intensity:
+a smaller cluster of furious coverage can outrank a large cluster of routine
+reporting.
+
+A hotspot does NOT have to be a single discrete event — it can be a thematic
+focal point (e.g., "panic over migration ruling", "celebration of court
+victory", "intra-party feud over leadership") that weaves together multiple
+articles. It also does not have to be cross-category; a hotspot may live
+entirely inside one country's coverage, as long as it is sufficiently charged.
+
+REQUIREMENTS:
+- Each hotspot must be supported by at least {min_articles} articles from the
+  data below. Do not invent a hotspot from a single article.
+- Rank from most to least intense. Return EXACTLY {top_n} hotspots if the
+  data supports it; fewer is acceptable if the day is genuinely quiet.
+- For each hotspot, score `intensity` from 1 to 5:
+    1 = mildly notable, low affective charge
+    2 = moderate attention, some heat
+    3 = clearly charged, prominent in coverage
+    4 = strongly charged, dominant theme, intense framing
+    5 = white-hot — defining story of the window, maximum affective investment
+- Justify the score with `affect_signals`: 2-4 short phrases naming what makes
+  this charged (e.g. "polarized contention", "alarmist framing", "cross-source repetition",
+  "outrage-coded language", "leadership crisis tone", "moral panic register").
+- For `refs`, choose 3-5 representative articles by their reference number
+  from the data. Pick ones that best capture the affective register.
+
+CONTINUITY — A previous run's hotspots are listed below under PREVIOUS
+HOTSPOTS. If a hotspot from the previous run still ranks in the top {top_n},
+REUSE its `title` verbatim so the front-end can recognize it as the same
+ongoing story. Only mint a new title if the hotspot is genuinely new.
+
+OUTPUT — Respond with ONLY a single JSON object, no prose, no markdown
+fences. Schema:
+{{
+  "hotspots": [
+    {{
+      "title": "string, max 8 words, headline-style label",
+      "blurb": "2-3 sentences describing the hotspot",
+      "affect": "one sentence on why this commands disproportionate attention",
+      "intensity": 1-5,
+      "affect_signals": ["short phrase", "short phrase", ...],
+      "categories": ["category_id", ...],
+      "article_count": integer,
+      "refs": [reference_number, reference_number, ...]
+    }},
+    ...
+  ]
+}}
+
+PREVIOUS HOTSPOTS (from the last run, for continuity):
+{previous}
+
+DATA (articles from the last {hours} hours, each prefixed with [N] reference
+number):
+{context}"""
+
+# ── Key Actors ────────────────────────────────────────────────────────────
+# A "key actor" is a political figure who commands disproportionate coverage
+# in the current window — not just mentioned often, but the one whose actions,
+# statements, or position are *driving* the discourse. The actors_generator
+# script trawls the last N hours of articles (with summaries) and asks the LLM
+# to identify the top-N actors across the whole cross-category universe.
+
+[actors]
+top_n = 5
+min_articles = 3
+lookback_hours = 48
+
+prompt = """\
+You are a media-coverage analyst. Your job is to identify the TOP {top_n}
+KEY ACTORS — individual political figures — who are driving right-wing and
+far-right news coverage in the last {hours} hours.
+
+DEFINITION — A key actor is a named politician, party leader, government
+official, or movement figure whose actions, statements, decisions, or
+position are generating significant coverage. The actor must be a SPECIFIC
+NAMED INDIVIDUAL (not a party, institution, or abstract concept).
+
+Rank by PROMINENCE: how much this person's actions are shaping the current
+news cycle. Consider both volume of coverage and centrality — a figure who
+is the subject of intense debate across multiple stories outranks one who is
+merely mentioned in many articles.
+
+REQUIREMENTS:
+- Each actor must be supported by at least {min_articles} articles from the
+  data below. Do not invent an actor from a single article.
+- Rank from most to least prominent. Return EXACTLY {top_n} actors if the
+  data supports it; fewer is acceptable if the window is genuinely quiet.
+- For each actor, score `prominence` from 1 to 5:
+    1 = minor mention, routine coverage
+    2 = moderate attention, some notable action
+    3 = clearly prominent, multiple stories driven by their actions
+    4 = dominant figure in the window, major decisions or controversy
+    5 = defining actor of the cycle — the person the discourse revolves around
+- Provide `signals`: 2-4 short phrases describing what makes this person
+  newsworthy right now (e.g. "coalition negotiations", "scandal fallout",
+  "policy announcement", "leadership challenge", "international posturing",
+  "election campaign", "judicial proceedings").
+- For `refs`, choose 3-5 representative articles by their reference number.
+
+CONTINUITY — A previous run's actors are listed below under PREVIOUS ACTORS.
+If an actor from the previous run still ranks in the top {top_n}, REUSE
+their `name` verbatim so the front-end can recognize them as the same person.
+Only use a different name if the person is genuinely new.
+
+OUTPUT — Respond with ONLY a single JSON object, no prose, no markdown
+fences. Schema:
+{{
+  "actors": [
+    {{
+      "name": "Full Name",
+      "role": "brief role description, e.g. 'Prime Minister of Hungary' or 'Leader of Vox'",
+      "blurb": "2-3 sentences on what this person is doing RIGHT NOW that generates coverage",
+      "prominence": 1-5,
+      "signals": ["short phrase", "short phrase", ...],
+      "categories": ["category_label", ...],
+      "article_count": integer,
+      "refs": [reference_number, reference_number, ...]
+    }},
+    ...
+  ]
+}}
+
+PREVIOUS ACTORS (from the last run, for continuity):
+{previous}
+
+DATA (articles from the last {hours} hours, each prefixed with [N] reference
+number):
+{context}"""
+
+# ── Cross-National Radar ─────────────────────────────────────────────────
+# A "radar theme" is a story, framing, or policy pattern that surfaces in
+# multiple country categories simultaneously — evidence of transnational
+# contagion, parallel developments, or shared discourse. The radar_generator
+# script identifies themes appearing in 2+ country categories.
+
+[radar]
+top_n = 5
+min_categories = 2
+min_articles = 3
+lookback_hours = 48
+
+prompt = """\
+You are a cross-national media analyst. Your job is to identify the TOP {top_n}
+CROSS-NATIONAL THEMES in right-wing and far-right news coverage from the last
+{hours} hours.
+
+DEFINITION — A cross-national theme is a story, policy development, rhetorical
+frame, or political pattern that appears in at least {min_categories} DIFFERENT
+COUNTRY categories simultaneously. This captures transnational contagion
+(e.g. "national priority" language spreading from Spain to Italy), parallel
+developments (multiple countries holding similar policy debates at the same
+time), or shared reactions to the same external event.
+
+The "General" and "Networks" categories do NOT count toward the minimum country
+threshold — only named country categories (USA, UK, France, Italy, Germany,
+Hungary, Poland, Spain, Sweden, Norway, Argentina) count.
+
+Rank by CONVERGENCE: how strongly the same theme resonates across borders.
+A theme appearing intensely in 4 countries outranks one appearing faintly in 6.
+
+REQUIREMENTS:
+- Each theme must appear in at least {min_categories} distinct country
+  categories (not counting General or Networks).
+- Rank from strongest to weakest cross-national convergence. Return EXACTLY
+  {top_n} themes if the data supports it; fewer is acceptable.
+- For each theme, score `convergence` from 1 to 5:
+    1 = weak parallel, loosely connected coverage
+    2 = moderate — same broad topic in a few countries
+    3 = clear convergence — similar framing or shared concern across borders
+    4 = strong — intense parallel coverage, possible contagion or coordination
+    5 = dominant transnational theme — defining cross-border story of the window
+- Provide `signals`: 2-4 short phrases describing the nature of the
+  cross-national connection (e.g. "policy imitation", "shared framing",
+  "reaction to EU decision", "coordinated messaging", "parallel elections",
+  "contagion of rhetoric").
+- For `countries`, list each country category where the theme appears, with
+  a brief note on how it manifests there.
+- For `refs`, choose 3-6 representative articles by their reference number,
+  drawn from MULTIPLE countries.
+
+CONTINUITY — A previous run's themes are listed below under PREVIOUS THEMES.
+If a theme from the previous run still ranks in the top {top_n}, REUSE
+its `title` verbatim so the front-end can recognize it as the same ongoing
+pattern. Only mint a new title if the theme is genuinely new.
+
+OUTPUT — Respond with ONLY a single JSON object, no prose, no markdown
+fences. Schema:
+{{
+  "themes": [
+    {{
+      "title": "string, max 8 words, headline-style label",
+      "blurb": "2-3 sentences describing the cross-national pattern",
+      "convergence": 1-5,
+      "countries": [
+        {{"name": "category label (e.g. '🇪🇸 Vox')", "note": "brief note on how theme appears here"}},
+        ...
+      ],
+      "signals": ["short phrase", "short phrase", ...],
+      "article_count": integer,
+      "refs": [reference_number, reference_number, ...]
+    }},
+    ...
+  ]
+}}
+
+PREVIOUS THEMES (from the last run, for continuity):
+{previous}
+
+DATA (articles from the last {hours} hours, each prefixed with [N] reference
+number):
+{context}"""
+
+# ── Feed Definitions ──────────────────────────────────────────────────────
+
+[[feeds]]
+id = "usa"
+filename = "usa.txt"
+window = "5d"
+queries = [
+    '"Donald Trump" OR "President Trump" OR "Trump administration" OR MAGA OR "JD Vance" OR "Vice President Vance" OR "America First" OR "Stephen Miller" OR "Steve Bannon"',
+    '"Pete Hegseth" OR "Tulsi Gabbard" OR "Howard Lutnick" OR "Robert F. Kennedy Jr." OR "Markwayne Mullin" OR "Marco Rubio"',
+]
+lang = "en"
+country = "US"
+
+[[feeds]]
+id = "norway"
+filename = "norway.txt"
+q = 'Fremskrittspartiet OR FrP OR "Sylvi Listhaug" OR "Norwegian Progress Party" OR "Per-Willy Amundsen" OR "Hans Andreas Limi" OR "Simen Velle"'
+
+[[feeds.variants]]
+lang = "no"
+country = "NO"
+
+[[feeds.variants]]
+lang = "en"
+country = "US"
+q = 'Fremskrittspartiet OR "Sylvi Listhaug" OR "Norwegian Progress Party" OR "Per-Willy Amundsen" OR "Hans Andreas Limi" OR "Simen Velle"'
+
+[[feeds]]
+id = "sweden"
+filename = "sweden.txt"
+q = 'Sverigedemokraterna OR "Jimmie Åkesson" OR "Sweden Democrats"'
+
+[[feeds.variants]]
+lang = "sv"
+country = "SE"
+
+[[feeds.variants]]
+lang = "en"
+country = "US"
+
+[[feeds]]
+id = "france"
+filename = "france.txt"
+q = '"Rassemblement National" OR "Marine Le Pen" OR "Jordan Bardella" OR "Marion Maréchal"'
+
+[[feeds.variants]]
+lang = "fr"
+country = "FR"
+
+[[feeds.variants]]
+lang = "en"
+country = "US"
+
+[[feeds]]
+id = "italy"
+filename = "italy.txt"
+q = '''Meloni OR Salvini OR "Fratelli d'Italia" OR "Brothers of Italy" OR Lega'''
+
+[[feeds.variants]]
+lang = "it"
+country = "IT"
+
+[[feeds.variants]]
+lang = "en"
+country = "US"
+q = '''Meloni OR Salvini OR "Fratelli d'Italia" OR "Brothers of Italy"'''
+
+[[feeds]]
+id = "uk"
+filename = "uk.txt"
+q = '"Reform UK" OR "Nigel Farage" OR "Richard Tice"'
+lang = "en"
+country = "GB"
+
+[[feeds]]
+id = "germany"
+filename = "germany.txt"
+q = '"Alternative fur Deutschland" OR AfD OR "Tino Chrupalla" OR "Alice Weidel"'
+
+[[feeds.variants]]
+lang = "de"
+country = "DE"
+
+[[feeds.variants]]
+lang = "en"
+country = "US"
+q = '"Alternative fur Deutschland" OR "Tino Chrupalla" OR "Alice Weidel"'
+
+[[feeds]]
+id = "general"
+filename = "general.txt"
+q = '"far right" OR "alt-right" OR "techno-fascism" OR "manosphere" OR "right-wing extremist" OR "national conservatism" OR "illiberal democracy" OR "fascism" OR "ethnonationalism" OR "white nationalism" OR "Christian nationalism"'
+lang = "en"
+country = "US"
+
+[[feeds]]
+id = "networks"
+filename = "networks.txt"
+queries = [
+    '"Heritage Foundation" OR "Project 2025" OR "American Enterprise Institute" OR "Claremont Institute" OR "Edmund Burke Foundation"',
+    '"Danube Institute" OR "Mathias Corvinus Collegium" OR "MCC Budapest" OR "MCC Brussels"',
+    '"National Conservatism" OR "NatCon" OR "Conservative Political Action Conference" OR "CPAC" OR "Turning Point USA" OR "Turning Point UK"',
+    '"Institute of Economic Affairs" OR "Policy Exchange" OR "Centre for Policy Studies" OR "Alliance for Responsible Citizenship"',
+]
+lang = "en"
+country = "US"
+
+[[feeds]]
+id = "hungary"
+filename = "hungary.txt"
+q = '"Viktor Orbán" OR "Magyar Péter" OR "Fidesz" OR "Tisza"'
+
+[[feeds.variants]]
+lang = "hu"
+country = "HU"
+
+[[feeds.variants]]
+lang = "en"
+country = "US"
+q = '"Viktor Orbán" OR "Peter Magyar" OR "Fidesz" OR "Tisza"'
+
+[[feeds]]
+id = "poland"
+filename = "poland.txt"
+q = '"Prawo i Sprawiedliwość" OR "PiS" OR "Jarosław Kaczyński" OR "Mateusz Morawiecki" OR "Karol Nawrocki" OR "Law and Justice"'
+
+[[feeds.variants]]
+lang = "pl"
+country = "PL"
+
+[[feeds.variants]]
+lang = "en"
+country = "US"
+q = '"Prawo i Sprawiedliwość" OR "Jarosław Kaczyński" OR "Mateusz Morawiecki" OR "Karol Nawrocki" OR "Law and Justice"'
+
+[[feeds]]
+id = "spain"
+filename = "spain.txt"
+q = '"Vox" OR "Santiago Abascal" OR "Ignacio Garriga" OR "Javier Ortega Smith" OR "Rocío Monasterio" OR "Kiko Méndez-Monasterio"'
+
+[[feeds.variants]]
+lang = "es"
+country = "ES"
+
+[[feeds.variants]]
+lang = "en"
+country = "US"
+q = '"Vox party" OR "Santiago Abascal" OR "Ignacio Garriga" OR "Javier Ortega Smith" OR "Rocío Monasterio" OR "Kiko Méndez-Monasterio"'
+
+[[feeds]]
+id = "argentina"
+filename = "argentina.txt"
+q = '"Javier Milei" OR "La Libertad Avanza" OR "Manuel Adorni" OR "Gabriel Bornoroni" OR "Karina Milei"'
+
+[[feeds.variants]]
+lang = "es"
+country = "AR"
+
+[[feeds.variants]]
+lang = "en"
+country = "US"

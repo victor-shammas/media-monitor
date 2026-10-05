@@ -1,0 +1,84 @@
+name: Backfill Summaries
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+on:
+  workflow_dispatch:
+    inputs:
+      per_feed:
+        description: "Articles per feed to backfill"
+        required: false
+        default: "20"
+      category:
+        description: "Only backfill this category (leave blank for all)"
+        required: false
+        default: ""
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+
+      - name: Checkout private data repo
+        uses: actions/checkout@v7
+        with:
+          repository: victor-shammas/media-monitor-data
+          path: data-private
+          token: ${{ secrets.DATA_REPO_PAT }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install trafilatura "googlenewsdecoder>=0.2,<0.3" "selectolax<1.0" google-genai tenacity
+
+      - name: Run backfiller
+        timeout-minutes: 60
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
+          PER_FEED: ${{ inputs.per_feed }}
+          CATEGORY: ${{ inputs.category }}
+        run: |
+          args=(--per-feed "$PER_FEED")
+          if [ -n "$CATEGORY" ]; then
+            args+=(--category "$CATEGORY")
+          fi
+          python backfill_summaries.py "${args[@]}"
+
+      - name: Push enriched data to private repo
+        run: |
+          cd data-private
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Backfill summaries $(date -u +%Y-%m-%d)" || echo "No changes"
+          for attempt in 1 2 3 4 5; do
+            git pull --rebase --autostash && git push && exit 0
+            echo "Push attempt $attempt rejected (concurrent update to data repo); re-syncing and retrying in $((attempt * 5))s..."
+            sleep $((attempt * 5))
+          done
+          echo "::error::Failed to push to data repo after 5 attempts due to concurrent updates"
+          exit 1
+
+      - name: Push state and feeds to main repo
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add feeds/ data/monitor_state.json
+          git commit -m "Backfill summaries $(date -u +%Y-%m-%d)" || echo "No changes"
+          for attempt in 1 2 3 4 5; do
+            git -c fetch.recurseSubmodules=no pull --rebase --autostash && git push && exit 0
+            echo "Push attempt $attempt rejected (concurrent update to main); re-syncing and retrying in $((attempt * 5))s..."
+            sleep $((attempt * 5))
+          done
+          echo "::error::Failed to push to main after 5 attempts due to concurrent updates"
+          exit 1
