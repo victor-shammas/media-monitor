@@ -33,7 +33,7 @@ import unicodedata
 from datetime import datetime, timedelta, timezone
 
 from monitor_utils import CONFIG, CATEGORY_LABELS, get_sort_time, normalize_title_for_dedup
-from ai_reporter import SHORT_PROMPT_CHAIN, generate_with_fallback, load_enriched
+from ai_reporter import SHORT_PROMPT_CHAIN, extract_json, generate_with_fallback, load_enriched
 
 STATE_FILE = "data/monitor_state.json"
 DEFAULT_OUTDIR = "data"
@@ -159,22 +159,6 @@ def format_previous(prev: list[dict]) -> str:
 
 
 # ── LLM response parsing ───────────────────────────────────────────────────
-
-
-def extract_json(text: str) -> dict:
-    """Pull a JSON object out of an LLM response, tolerating markdown fences."""
-    text = text.strip()
-    fence = re.match(r"^```(?:json)?\s*(.*?)\s*```$", text, flags=re.DOTALL)
-    if fence:
-        text = fence.group(1).strip()
-    try:
-        return json.loads(text)
-    except json.JSONDecodeError:
-        # Last-ditch: find the first {...} block
-        match = re.search(r"\{.*\}", text, flags=re.DOTALL)
-        if not match:
-            raise
-        return json.loads(match.group(0))
 
 
 def slugify(text: str) -> str:
@@ -341,7 +325,9 @@ def main() -> int:
     print(f"  Prompt size: {len(prompt):,} chars")
     print(f"→ Calling LLM (continuity from {len(previous)} previous hotspot(s))...")
     try:
-        response_text, model_label = generate_with_fallback(prompt, SHORT_PROMPT_CHAIN)
+        response_text, model_label = generate_with_fallback(
+            prompt, SHORT_PROMPT_CHAIN, validate=extract_json
+        )
     except SystemExit:
         write_empty_output(out_path, "llm-unavailable", args.hours)
         return 1
