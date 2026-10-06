@@ -342,11 +342,45 @@ MODEL_ALIASES = {
 }
 
 
+_TRAILING_COMMA = re.compile(r",\s*([}\]])")
+
+
+def extract_json(text: str) -> dict:
+    """Pull a JSON object out of an LLM response.
+
+    Tolerates markdown fences, prose around the object, and trailing commas
+    before a closing bracket — the malformations models most often produce.
+    """
+    text = text.strip()
+    fence = re.match(r"^```(?:json)?\s*(.*?)\s*```$", text, flags=re.DOTALL)
+    if fence:
+        text = fence.group(1).strip()
+    candidates = [text]
+    match = re.search(r"\{.*\}", text, flags=re.DOTALL)
+    if match and match.group(0) != text:
+        candidates.append(match.group(0))
+    last_error = None
+    for candidate in candidates:
+        for attempt in (candidate, _TRAILING_COMMA.sub(r"\1", candidate)):
+            try:
+                parsed = json.loads(attempt)
+            except json.JSONDecodeError as e:
+                last_error = e
+                continue
+            if not isinstance(parsed, dict):
+                raise ValueError(f"expected a JSON object, got {type(parsed).__name__}")
+            return parsed
+    raise last_error
+
+
 def generate_with_fallback(
-    prompt: str, chain: list[str] | None = None
+    prompt: str, chain: list[str] | None = None, validate=None
 ) -> tuple[str, str]:
     """Try each provider in the chain until one succeeds.
     Returns (response_text, provider_label).
+
+    If `validate` is given, it is called on each response; a response it
+    raises on counts as a provider failure and the chain moves on.
     """
     if chain is None:
         chain = DEFAULT_CHAIN
@@ -380,6 +414,13 @@ def generate_with_fallback(
         print(f"  → Trying {prov['label']}...")
         try:
             text = prov["fn"](prompt)
+            if validate:
+                try:
+                    validate(text)
+                except Exception as e:
+                    raise ValueError(
+                        f"unusable response ({e}); first 300 chars: {text[:300]!r}"
+                    ) from e
             print(f"  ✓ Success with {prov['label']}")
             return text, prov["label"]
         except Exception as e:
