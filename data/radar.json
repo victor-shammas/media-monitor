@@ -1,59 +1,109 @@
 {
-  "updated_at": "2026-10-05T06:21:03+00:00",
+  "updated_at": "2026-10-06T06:56:15+00:00",
   "lookback_hours": 48,
   "model": "GPT-OSS 120B (Groq)",
   "status": "ok",
   "themes": [
     {
-      "id": "immigration-restriction-rhetoric-spreads-across-europe",
-      "title": "Immigration Restriction Rhetoric Spreads Across Europe",
-      "blurb": "Right‑wing parties in France, Norway and Sweden are echoing each other’s calls for stricter immigration controls, linking demographic concerns to cultural threats. The narrative ties tighter borders to national security and economic stability, showing a coordinated framing across national lines.",
-      "convergence": 4,
+      "id": "transport-cost-cuts-spread-across-scandinavia",
+      "title": "Transport Cost Cuts Spread Across Scandinavia",
+      "blurb": "Both Norway and Sweden see right‑wing parties championing reductions in user fees – Norway pushes to halve tolls while Sweden’s SD calls for extending fuel tax cuts. The framing emphasizes relief for drivers amid higher energy prices.",
+      "convergence": 3,
       "countries": [
         {
-          "name": "🇫🇷 Rassemblement National",
-          "note": "Marine Le Pen’s plan to enshrine a fiscal \"golden rule\" is coupled with anti‑immigration messaging, warning of cultural dilution."
-        },
-        {
           "name": "🇳🇴 Fremskrittspartiet",
-          "note": "Party warns that non‑Western immigration could rise 36% by 2040, urging stricter policies."
+          "note": "Advocates halving toll rates and touts the measure as optimistic for motorists."
         },
         {
           "name": "🇸🇪 Sverigedemokraterna",
-          "note": "Local questioning of the party’s achievements reflects a broader focus on immigration impact on communities."
+          "note": "Presses to extend temporary fuel‑tax cuts, arguing the war and market disruptions keep prices high."
         }
       ],
       "signals": [
-        "shared framing",
         "policy imitation",
-        "cross‑border rhetorical contagion"
+        "shared framing of cost‑of‑living relief",
+        "regional contagion of transport subsidies"
+      ],
+      "article_count": 4,
+      "refs": [
+        {
+          "title": "Vil halvere bomsat­sene: – Er opti­mist",
+          "source": "fvn.no",
+          "url": "https://www.fvn.no/nyheter/lokalt/n/rMAVke/vil-halvere-bomsatsene-paa-e39",
+          "date": "2026-10-05T08:15:39+00:00",
+          "category": "norway"
+        },
+        {
+          "title": "PER-OLA OLSSON: Kriget pågår – förläng skattesänkningen på drivmedel",
+          "source": "nt.se",
+          "url": "https://www.nt.se/ledare/artikel/kriget-pagar-forlang-skattesankningen-pa-drivmedel/r9mx6wzl",
+          "date": "2026-10-05T02:00:00+00:00",
+          "category": "sweden"
+        },
+        {
+          "title": "Gjeld, Økonomi | Dramatisk økning: – Flere står i fare for å miste boligen sin",
+          "source": "Nettavisen",
+          "url": "https://www.nettavisen.no/okonomi/dramatisk-okning-flere-star-i-fare-for-a-miste-boligen-sin/s/80-95-127830",
+          "date": "2026-10-05T02:16:38+00:00",
+          "category": "norway"
+        },
+        {
+          "title": "Debatt, Fremskrittspartiet | At Frp er størst er utrolig",
+          "source": "Avisa Nordland",
+          "url": "https://www.an.no/at-frp-er-storst-er-utrolig/o/80-4-31409",
+          "date": "2026-10-05T07:43:13+00:00",
+          "category": "norway"
+        }
+      ],
+      "first_seen": "2026-10-06T06:56:15+00:00",
+      "last_seen": "2026-10-06T06:56:15+00:00"
+    },
+    {
+      "id": "farright-parties-grapple-with-internal-criticism",
+      "title": "Far‑Right Parties Grapple with Internal Criticism",
+      "blurb": "Sweden’s Sweden Democrats and Norway’s Progress Party both face internal debates and criticism over strategy and leadership, highlighting a pattern of self‑scrutiny within European right‑wing movements.",
+      "convergence": 2,
+      "countries": [
+        {
+          "name": "🇸🇪 Sverigedemokraterna",
+          "note": "Social Democrats critique SD’s electoral strategy; SD insiders debate focus on the party."
+        },
+        {
+          "name": "🇳🇴 Fremskrittspartiet",
+          "note": "Local debates and polls spark criticism of FrP’s vague program and funding priorities."
+        }
+      ],
+      "signals": [
+        "parallel internal debates",
+        "shared rhetoric of strategic reassessment",
+        "contagion of intra‑party scrutiny"
       ],
       "article_count": 3,
       "refs": [
         {
-          "title": "Septembre noir au Rassemblement national : une rentrée ratée en 10 dates (Video)",
-          "source": "L'Humanité",
-          "url": "https://www.humanite.fr/politique/antisemitisme/septembre-noir-au-rassemblement-national-une-rentree-ratee-en-10-dates",
-          "date": "2026-10-03T10:01:00+00:00",
-          "category": "france"
+          "title": "Intern S-kritik efter valet: \"Fokuserade för mycket på SD\"",
+          "source": "morgonbladet.se",
+          "url": "https://morgonbladet.se/politik/intern-s-kritik-efter-valet-fokuserade-for-mycket-pa-sd",
+          "date": "2026-10-05T04:34:32+00:00",
+          "category": "sweden"
         },
         {
-          "title": "Norge kan få høyere ikke-vestlig innvandring enn Sverige - Fremskrittspartiet",
-          "source": "FrP.",
-          "url": "https://www.frp.no/nyheter/norge-kan-fa-hoyere-ikke-vestlig-innvandring-enn-sverige",
-          "date": "2026-10-03T07:16:00+00:00",
+          "title": "Debatt, Fremskrittspartiet | At Frp er størst er utrolig",
+          "source": "Avisa Nordland",
+          "url": "https://www.an.no/at-frp-er-storst-er-utrolig/o/80-4-31409",
+          "date": "2026-10-05T07:43:13+00:00",
           "category": "norway"
         },
         {
-          "title": "INSÄNDARE: Vad har SD gjort för Eksjö? - Smålands-Tidningen",
-          "source": "",
-          "url": "https://www.smt.se/eksjo/vad-har-sd-gjort-for-eksjo/",
-          "date": "2026-10-03T10:00:00+00:00",
-          "category": "sweden"
+          "title": "Skriftlig spørsmål fra Bjørnar Laabak (FrP) til kommunal- og distriktsministeren",
+          "source": "Stortinget",
+          "url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Sporsmal/Skriftlige-sporsmal-og-svar/Skriftlig-sporsmal/?qnid=127536",
+          "date": "2026-10-05T05:02:05+00:00",
+          "category": "norway"
         }
       ],
-      "first_seen": "2026-10-05T06:21:03+00:00",
-      "last_seen": "2026-10-05T06:21:03+00:00"
+      "first_seen": "2026-10-06T06:56:15+00:00",
+      "last_seen": "2026-10-06T06:56:15+00:00"
     }
   ]
 }
