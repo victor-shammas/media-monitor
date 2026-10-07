@@ -1,39 +1,46 @@
 {
-  "updated_at": "2026-10-07T06:34:01+00:00",
+  "updated_at": "2026-10-07T19:08:18+00:00",
   "lookback_hours": 48,
-  "model": "GPT-OSS 120B (Groq)",
+  "model": "Gemini 3.6 Flash",
   "status": "ok",
   "actors": [
     {
       "id": "donald-trump",
       "name": "Donald Trump",
-      "role": "Former President of the United States",
-      "blurb": "Trump is front‑and‑center in the news cycle, delivering multiple rallies across the Midwest, announcing a super‑PAC‑funded ad campaign, signing an executive order on diesel pricing, and promoting a controversial denaturalization effort ahead of the midterm elections.",
+      "role": "President of the United States",
+      "blurb": "Trump dominates the news cycle with midterm rally stops in Nebraska and Texas, announcements on defense shipbuilding in Baltimore, and executive orders targeting fuel taxes and immigration. Meanwhile, his administration faces legal challenges regarding migrant enforcement and scrutiny over political advertising expenditures.",
       "prominence": 5,
       "signals": [
-        "midterm rally tour",
-        "super‑PAC ad funding",
-        "executive order on diesel",
-        "denaturalization push"
+        "election campaign",
+        "policy announcement",
+        "judicial proceedings",
+        "rally appearances"
       ],
       "categories": [
-        "U.S. politics",
-        "right‑wing campaigning"
+        "us_politics",
+        "maga_trump"
       ],
-      "article_count": 15,
+      "article_count": 42,
       "refs": [
         {
-          "title": "USC community left dumbfounded following President Trump’s remarks suggesting Iran ‘take out’ Los Angeles and San Diego",
-          "source": "Annenberg Media",
-          "url": "https://www.uscannenbergmedia.com/2026/10/06/usc-community-left-dumbfounded-following-president-trumps-remarks-suggesting-iran-take-out-los-angeles-and-san-diego/",
-          "date": "2026-10-07T04:25:00+00:00",
+          "title": "Ravens players ride with President Trump in motorcade, get shoutout during speech at Baltimore shipyard event",
+          "source": "Fox News",
+          "url": "https://www.foxnews.com/outkick-sports/ravens-players-ride-president-trump-motorcade-shoutout-speech-baltimore-shipyard-event",
+          "date": "2026-10-07T11:15:55+00:00",
           "category": "usa"
         },
         {
-          "title": "President Trump to travel to San Antonio",
-          "source": "FOX 7 Austin",
-          "url": "https://www.fox7austin.com/video/fmc-k2wu598odc78q1nv",
-          "date": "2026-10-06T22:59:27+00:00",
+          "title": "President Trump's Sparrows Point shipyard plan signals defense manufacturing boom",
+          "source": "Fox Business",
+          "url": "https://www.foxbusiness.com/video/6406408987112",
+          "date": "2026-10-07T10:55:31+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Donald Trump visits Nebraska to support Ricketts, Pillen, rally GOP voters",
+          "source": "The Daily Nebraskan",
+          "url": "https://www.dailynebraskan.com/news/donald-trump-visits-nebraska-to-support-ricketts-pillen-rally-gop-voters/article_0868088e-bf51-40ac-9e4e-6c907aa99931.html",
+          "date": "2026-10-07T05:00:00+00:00",
           "category": "usa"
         },
         {
@@ -44,17 +51,93 @@
           "category": "usa"
         },
         {
-          "title": "Could the executive order signed by President Trump Monday lower diesel costs ahead of midterms? - WBAL-TV",
-          "source": "",
-          "url": "https://www.wbaltv.com/article/executive-order-trump-lower-diesel-costs-midterms/74045673",
-          "date": "2026-10-06T11:31:31+00:00",
-          "category": "usa"
-        },
-        {
           "title": "Trump Administration Mounts ‘Largest Denaturalization Effort in Modern History’",
           "source": "Time Magazine",
           "url": "https://time.com/article/2026/10/06/denaturalization-citizenship-immigration-justice-department-trump/",
           "date": "2026-10-06T09:45:24+00:00",
+          "category": "usa"
+        }
+      ],
+      "first_seen": "2026-08-16T02:13:23+00:00",
+      "last_seen": "2026-10-07T19:08:18+00:00"
+    },
+    {
+      "id": "jd-vance",
+      "name": "JD Vance",
+      "role": "Vice President of the United States",
+      "blurb": "Vance is headlining campaign events across Alaska to bolster Republican candidates facing tight midterm contests. He also generated international headlines by demanding steep Iranian nuclear enrichment reductions prior to any deal negotiations.",
+      "prominence": 4,
+      "signals": [
+        "election campaign",
+        "international posturing",
+        "midterm rallies"
+      ],
+      "categories": [
+        "us_politics",
+        "maga_trump"
+      ],
+      "article_count": 9,
+      "refs": [
+        {
+          "title": "JD Vance to Iran: Meaningful Enrichment Reductions Required Before Any Agreement",
+          "source": "IranWire",
+          "url": "https://iranwire.com/en/news/158582-jd-vance-to-iran-meaningful-enrichment-reductions-required-before-any-agreement/",
+          "date": "2026-10-07T10:58:47+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "It depends on who you ask: Trump and Vance offer slightly different takes on the economy - ABC News",
+          "source": "Breaking News, Latest News and Videos",
+          "url": "https://abcnews.com/Politics/depends-trump-vance-offer-slightly-takes-economy/story?id=137010597",
+          "date": "2026-10-07T09:08:54+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Vice President JD Vance answers KTUU questions",
+          "source": "Alaska's News Source",
+          "url": "https://www.alaskasnewssource.com/video/2026/10/07/vice-president-jd-vance-answers-ktuu-questions/",
+          "date": "2026-10-07T05:48:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Vice President JD Vance holds Fairbanks rally to boost Republican candidates",
+          "source": "Anchorage Daily News",
+          "url": "https://www.adn.com/politics/2026/10/06/vice-president-jd-vance-holds-fairbanks-rally-to-boost-republican-candidates/",
+          "date": "2026-10-06T09:44:14+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "JD Vance holds rally in Fairbanks as the state faces two toss-up races",
+          "source": "Alaska's News Source",
+          "url": "https://www.alaskasnewssource.com/video/2026/10/06/jd-vance-holds-rally-fairbanks-state-faces-two-toss-up-races/",
+          "date": "2026-10-06T06:24:00+00:00",
+          "category": "usa"
+        }
+      ],
+      "first_seen": "2026-10-06T06:55:23+00:00",
+      "last_seen": "2026-10-07T19:08:18+00:00"
+    },
+    {
+      "id": "pete-ricketts",
+      "name": "Pete Ricketts",
+      "role": "U.S. Senator from Nebraska",
+      "blurb": "Ricketts featured prominently alongside Donald Trump at a major midterm campaign rally in Grand Island, Nebraska. The event focused on energizing the state's conservative base to secure Republican Senate and local seats.",
+      "prominence": 2,
+      "signals": [
+        "election campaign",
+        "rally appearances"
+      ],
+      "categories": [
+        "us_politics",
+        "maga_trump"
+      ],
+      "article_count": 4,
+      "refs": [
+        {
+          "title": "Donald Trump visits Nebraska to support Ricketts, Pillen, rally GOP voters",
+          "source": "The Daily Nebraskan",
+          "url": "https://www.dailynebraskan.com/news/donald-trump-visits-nebraska-to-support-ricketts-pillen-rally-gop-voters/article_0868088e-bf51-40ac-9e4e-6c907aa99931.html",
+          "date": "2026-10-07T05:00:00+00:00",
           "category": "usa"
         },
         {
@@ -72,92 +155,56 @@
           "category": "usa"
         },
         {
-          "title": "Donald Trump To Hold Rally In Youngstown Oct. 12",
-          "source": "The Intelligencer",
-          "url": "https://www.theintelligencer.net/news/top-headlines/2026/10/donald-trump-to-hold-rally-in-youngstown-oct-12/",
-          "date": "2026-10-05T17:59:18+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Donald Trump’s Gains With Latino Voters Are Slipping, New Poll Shows",
-          "source": "Yahoo",
-          "url": "https://www.yahoo.com/news/politics/articles/donald-trump-gains-latino-voters-074413000.html",
-          "date": "2026-10-05T07:44:13+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Donald Trump’s Aide Reappears for Another Trip With Him",
-          "source": "AOL.com",
-          "url": "https://www.aol.com/articles/donald-trump-aide-reappears-another-071828000.html",
-          "date": "2026-10-05T07:18:28+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Trump heads to Nebraska on Monday, where his plan to import more beef has angered ranchers",
-          "source": "Orlando Sentinel",
-          "url": "https://www.orlandosentinel.com/2026/10/05/trump-heads-to-nebraska-on-monday-where-his-plan-to-import-more-beef-has-angered-ranchers/",
-          "date": "2026-10-05T07:05:06+00:00",
+          "title": "Gallery: President Donald Trump holds rally in Grand Island",
+          "source": "Central Nebraska Today",
+          "url": "https://www.centralnebraskatoday.com/2026/10/05/gallery-president-donald-trump-holds-rally-in-grand-island/",
+          "date": "2026-10-06T01:37:40+00:00",
           "category": "usa"
         }
       ],
-      "first_seen": "2026-08-16T02:13:23+00:00",
-      "last_seen": "2026-10-07T06:34:01+00:00"
+      "first_seen": "2026-10-07T19:08:18+00:00",
+      "last_seen": "2026-10-07T19:08:18+00:00"
     },
     {
-      "id": "jd-vance",
-      "name": "JD Vance",
-      "role": "Vice President of the United States",
-      "blurb": "Vance is traveling to Alaska to headline rallies that aim to boost Republican Senate and House candidates, while also defending Trump’s ad strategy and positioning himself as a key campaign surrogate in swing‑state battles.",
-      "prominence": 4,
+      "id": "jim-pillen",
+      "name": "Jim Pillen",
+      "role": "Governor of Nebraska",
+      "blurb": "Governor Pillen appeared on stage with Donald Trump during a midterm rally in Grand Island to mobilize Republican voters. His appearance showcased unified state GOP backing ahead of upcoming elections.",
+      "prominence": 2,
       "signals": [
-        "Alaska rally tour",
-        "supporting GOP candidates",
-        "defending Trump ads"
+        "election campaign",
+        "rally appearances"
       ],
       "categories": [
-        "U.S. politics",
-        "right‑wing campaigning"
+        "us_politics",
+        "maga_trump"
       ],
-      "article_count": 5,
+      "article_count": 3,
       "refs": [
         {
-          "title": "JD Vance visits local breakfast staple during Anchorage stay",
-          "source": "Alaska's News Source",
-          "url": "https://www.alaskasnewssource.com/2026/10/07/jd-vance-visits-local-breakfast-staple-during-anchorage-stay/",
-          "date": "2026-10-07T04:01:00+00:00",
+          "title": "Donald Trump visits Nebraska to support Ricketts, Pillen, rally GOP voters",
+          "source": "The Daily Nebraskan",
+          "url": "https://www.dailynebraskan.com/news/donald-trump-visits-nebraska-to-support-ricketts-pillen-rally-gop-voters/article_0868088e-bf51-40ac-9e4e-6c907aa99931.html",
+          "date": "2026-10-07T05:00:00+00:00",
           "category": "usa"
         },
         {
-          "title": "Vice President JD Vance holds Fairbanks rally to boost Republican candidates",
-          "source": "Anchorage Daily News",
-          "url": "https://www.adn.com/politics/2026/10/06/vice-president-jd-vance-holds-fairbanks-rally-to-boost-republican-candidates/",
-          "date": "2026-10-06T09:44:14+00:00",
+          "title": "President Trump stumps for Republicans in Grand Island",
+          "source": "KOLN | Nebraska Local News, Weather, Sports | Lincoln, NE",
+          "url": "https://www.1011now.com/video/2026/10/06/president-trump-stumps-republicans-grand-island/",
+          "date": "2026-10-06T03:51:00+00:00",
           "category": "usa"
         },
         {
-          "title": "JD Vance holds rally in Fairbanks as the state faces two toss-up races",
-          "source": "Alaska's News Source",
-          "url": "https://www.alaskasnewssource.com/video/2026/10/06/jd-vance-holds-rally-fairbanks-state-faces-two-toss-up-races/",
-          "date": "2026-10-06T06:24:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "JD Vance to rally in Fairbanks as the state faces two toss-up races",
-          "source": "Alaska's News Source",
-          "url": "https://www.alaskasnewssource.com/video/2026/10/06/jd-vance-rally-fairbanks-state-faces-two-toss-up-races/",
-          "date": "2026-10-06T03:07:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Vance Says Trump’s Ads Begging People to Love Him Are “Not Partisan”",
-          "source": "The New Republic",
-          "url": "https://newrepublic.com/post/216204/jd-vance-donald-trump-ads-not-partisan",
-          "date": "2026-10-05T17:07:15+00:00",
+          "title": "President Donald Trump speaks at the Midterm rally",
+          "source": "KOLN | Nebraska Local News, Weather, Sports | Lincoln, NE",
+          "url": "https://www.1011now.com/video/2026/10/06/president-donald-trump-speaks-midterm-rally/",
+          "date": "2026-10-06T03:01:00+00:00",
           "category": "usa"
         }
       ],
-      "first_seen": "2026-10-06T06:55:23+00:00",
-      "last_seen": "2026-10-07T06:34:01+00:00"
+      "first_seen": "2026-10-07T19:08:18+00:00",
+      "last_seen": "2026-10-07T19:08:18+00:00"
     }
   ]
 }
