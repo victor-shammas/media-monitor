@@ -1,26 +1,34 @@
 {
-  "updated_at": "2026-10-08T06:27:58+00:00",
+  "updated_at": "2026-10-08T18:59:02+00:00",
   "lookback_hours": 48,
-  "model": "Gemini 3.6 Flash",
+  "model": "GPT-OSS 120B (Groq)",
   "status": "ok",
   "hotspots": [
     {
-      "id": "trump-midterm-rally-frenzy",
-      "title": "Trump Midterm Rally Frenzy",
-      "blurb": "President Trump's relentless campaign swing through key states including Texas, Nebraska, and Maryland commands major coverage as the midterms draw closer. Packed rally venues, high-profile shipyard appearances, and controversial public remarks continue to energize his base while driving intense news cycles.",
-      "affect": "The high frequency and provocative rhetoric of Trump's public rallies spark intense base enthusiasm and sharp partisan contention.",
+      "id": "trump-rally-tour-blitz",
+      "title": "Trump Rally Tour Blitz",
+      "blurb": "President Trump embarked on a multi‑state rally marathon, hitting Alaska, Texas, San Antonio, Nebraska and more, drawing massive crowds and intense media focus as he gears up for the midterms.",
+      "affect": "The nonstop rally schedule fuels outrage, triumph and fear among supporters and opponents, making it the defining story of the window.",
       "intensity": 5,
       "affect_signals": [
-        "cross-source repetition",
-        "outrage-coded language",
         "polarized contention",
-        "triumphant campaign framing"
+        "triumph framing",
+        "massive on‑the‑ground coverage",
+        "leadership rally tone"
       ],
       "categories": [
-        "maga_trump"
+        "us_politics",
+        "campaign"
       ],
-      "article_count": 10,
+      "article_count": 7,
       "refs": [
+        {
+          "title": "President Trump coming to Alaska next week to campaign for Republicans",
+          "source": "Anchorage Daily News",
+          "url": "https://www.adn.com/politics/2026/10/08/president-trump-coming-to-alaska-next-week-to-campaign-for-republicans/",
+          "date": "2026-10-08T17:21:39+00:00",
+          "category": "usa"
+        },
         {
           "title": "President Trump hosts rally in Texas",
           "source": "news8000.com",
@@ -29,10 +37,10 @@
           "category": "usa"
         },
         {
-          "title": "Ravens players ride with President Trump in motorcade, get shoutout during speech at Baltimore shipyard event",
-          "source": "Fox News",
-          "url": "https://www.foxnews.com/outkick-sports/ravens-players-ride-president-trump-motorcade-shoutout-speech-baltimore-shipyard-event",
-          "date": "2026-10-07T11:15:55+00:00",
+          "title": "Road closures, traffic expected in San Antonio amid President Trump visit today",
+          "source": "MySA",
+          "url": "https://www.mysanantonio.com/news/local/traffic/article/trump-rally-san-antonio-22463771.php",
+          "date": "2026-10-07T10:43:51+00:00",
           "category": "usa"
         },
         {
@@ -43,74 +51,69 @@
           "category": "usa"
         },
         {
-          "title": "USC community left dumbfounded following President Trump’s remarks suggesting Iran ‘take out’ Los Angeles and San Diego",
-          "source": "Annenberg Media",
-          "url": "https://www.uscannenbergmedia.com/2026/10/06/usc-community-left-dumbfounded-following-president-trumps-remarks-suggesting-iran-take-out-los-angeles-and-san-diego/",
-          "date": "2026-10-07T04:25:00+00:00",
-          "category": "usa"
-        }
-      ],
-      "first_seen": "2026-10-04T16:57:43+00:00",
-      "last_seen": "2026-10-08T06:27:58+00:00"
-    },
-    {
-      "id": "trumpfunded-ad-controversy",
-      "title": "Trump‑Funded Ad Controversy",
-      "blurb": "A $20 million DNC lawsuit challenging the Trump administration's use of taxpayer funds for political promotional ads sparked swift pushback and a strategic retreat, with MAGA Inc. taking over costs. The administration continues to defend the campaign, creating a prominent political and legal fight.",
-      "affect": "Allegations of taxpayer misallocation provoke intense ethical debate and defensive political maneuvering.",
-      "intensity": 4,
-      "affect_signals": [
-        "outrage-coded language",
-        "polarized contention",
-        "leadership crisis tone"
-      ],
-      "categories": [
-        "maga_trump"
-      ],
-      "article_count": 3,
-      "refs": [
-        {
-          "title": "🚨 Democratic National Committee v. Trump",
-          "source": "Democracy Docket",
-          "url": "https://www.democracydocket.com/cases/trump-administration-taxpayer-funded-political-ads-challenge-dnc/",
-          "date": "2026-10-07T22:01:29+00:00",
+          "title": "President Trump to travel to San Antonio",
+          "source": "FOX 7 Austin",
+          "url": "https://www.fox7austin.com/video/fmc-k2wu598odc78q1nv",
+          "date": "2026-10-06T22:59:27+00:00",
           "category": "usa"
         },
         {
-          "title": "Trump says his super PAC will start paying for controversial taxpayer-funded ads",
-          "source": "CBS News",
-          "url": "https://www.cbsnews.com/news/trump-super-pac-maga-inc-taxpayer-funded-ads/",
-          "date": "2026-10-06T13:38:23+00:00",
+          "title": "Signs dedicating East Tennessee bridge to President Donald Trump back up after being vandalized",
+          "source": "WVLT",
+          "url": "https://www.wvlt.tv/video/2026/10/06/signs-dedicating-east-tennessee-bridge-president-donald-trump-back-up-after-being-vandalized/",
+          "date": "2026-10-06T21:40:00+00:00",
           "category": "usa"
         },
         {
-          "title": "Trump defends ad, says MAGA Inc. will cover cost instead of taxpayers",
-          "source": "Scripps News",
-          "url": "https://www.scrippsnews.com/politics/the-president/trump-defends-ad-says-maga-inc-will-cover-cost-instead-of-taxpayers",
-          "date": "2026-10-06T11:21:41+00:00",
+          "title": "Signs dedicating East Tennessee bridge to President Donald Trump back up after being vandalized: TDOT",
+          "source": "WVLT",
+          "url": "https://www.wvlt.tv/2026/10/06/signs-dedicating-east-tennessee-bridge-president-donald-trump-back-up-after-being-vandalized-tdot/",
+          "date": "2026-10-06T19:11:00+00:00",
           "category": "usa"
         }
       ],
-      "first_seen": "2026-10-06T18:39:35+00:00",
-      "last_seen": "2026-10-08T06:27:58+00:00"
+      "first_seen": "2026-10-08T18:59:02+00:00",
+      "last_seen": "2026-10-08T18:59:02+00:00"
     },
     {
-      "id": "immigration-crackdown-migrant-policy",
-      "title": "Immigration Crackdown & Migrant Policy",
-      "blurb": "The Trump administration is expanding its immigration crackdown with an unprecedented denaturalization push and plans to use government lawyers for unaccompanied minors. These efforts face pushback in federal court, where a judge blocked $1.8 million fines against noncitizens.",
-      "affect": "Aggressive executive action combined with active judicial intervention generates deep moral debate and ideological outrage.",
-      "intensity": 4,
+      "id": "immigration-enforcement-crackdown",
+      "title": "Immigration Enforcement Crackdown",
+      "blurb": "The Trump administration announced sweeping actions: suspending tech firms from green‑card programs, planning its own lawyers for migrant children, and seeking to block state aid for undocumented students, sparking heated debate.",
+      "affect": "The moves are portrayed as attacks on immigrants and U.S. jobs, generating alarmist framing and moral panic across outlets.",
+      "intensity": 5,
       "affect_signals": [
         "alarmist framing",
         "moral panic register",
-        "polarized contention",
-        "judicial pushback framing"
+        "cross‑source repetition",
+        "outrage‑coded language"
       ],
       "categories": [
-        "maga_trump"
+        "immigration",
+        "policy"
       ],
-      "article_count": 4,
+      "article_count": 6,
       "refs": [
+        {
+          "title": "Trump Administration Blocks Microsoft, Adobe From Green Card Program Over Alleged Fraud",
+          "source": "Law Commentary",
+          "url": "https://www.lawcommentary.com/articles/trump-microsoft-adobe-green-card-suspension",
+          "date": "2026-10-08T17:49:34+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Microsoft responds to Trump administration accusation that it abuses foreign worker programs",
+          "source": "GeekWire",
+          "url": "https://www.geekwire.com/2026/microsoft-responds-to-trump-administration-accusation-that-it-abuses-foreign-worker-programs/",
+          "date": "2026-10-08T17:48:31+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "The Trump administration is suspending Microsoft from a green card program, alleging fraud",
+          "source": "NBC News",
+          "url": "https://www.nbcnews.com/politics/trump-administration/microsoft-suspended-green-cards-h-1b-visa-j-1-visa-vance-rcna602314",
+          "date": "2026-10-08T17:46:09+00:00",
+          "category": "usa"
+        },
         {
           "title": "Trump Administration Plans to Have Its Own Lawyers Represent Migrant Kids",
           "source": "Mother Jones",
@@ -126,36 +129,72 @@
           "category": "usa"
         },
         {
-          "title": "Trump Administration Mounts ‘Largest Denaturalization Effort in Modern History’",
+          "title": "Trump Administration Proposes $70K Fee for International Students to Work in U.S.",
           "source": "Time Magazine",
-          "url": "https://time.com/article/2026/10/06/denaturalization-citizenship-immigration-justice-department-trump/",
-          "date": "2026-10-06T09:45:24+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "How Maine voters feel about the Trump administration's immigration crackdown",
-          "source": "NPR",
-          "url": "https://www.npr.org/2026/10/06/nx-s1-5989429/how-maine-voters-feel-about-the-trump-administrations-immigration-crackdown",
-          "date": "2026-10-06T08:49:47+00:00",
+          "url": "https://time.com/article/2026/10/08/international-student-training-opt-fee-work-trump-administration/",
+          "date": "2026-10-08T10:00:00+00:00",
           "category": "usa"
         }
       ],
-      "first_seen": "2026-10-07T19:03:56+00:00",
-      "last_seen": "2026-10-08T06:27:58+00:00"
+      "first_seen": "2026-10-08T18:59:02+00:00",
+      "last_seen": "2026-10-08T18:59:02+00:00"
+    },
+    {
+      "id": "frp-populist-surge-scandal",
+      "title": "Frp Populist Surge & Scandal",
+      "blurb": "Norway’s Progress Party (Frp) hit record poll numbers under Sylvi Listhaug while internal disputes erupted over a NOK 1.7 million payout to party leaders, creating a volatile mix of triumph and controversy.",
+      "affect": "The juxtaposition of soaring popularity and alleged financial impropriety fuels intra‑party outrage and public suspicion.",
+      "intensity": 3,
+      "affect_signals": [
+        "polarized contention",
+        "leadership crisis tone",
+        "scandal framing"
+      ],
+      "categories": [
+        "europe",
+        "norway"
+      ],
+      "article_count": 3,
+      "refs": [
+        {
+          "title": "Meningsmåling: Frp og Sylvi Listhaug har aldri vært mer populære: – Voldsom høy måling",
+          "source": "TV 2",
+          "url": "https://www.tv2.no/nyheter/frp-og-sylvi-listhaug-har-aldri-vaert-mer-populaere-voldsom-hoy-maling/19300700/",
+          "date": "2026-10-08T18:05:46+00:00",
+          "category": "norway"
+        },
+        {
+          "title": "Strid om millionutbetalinger til Frps toppduo",
+          "source": "itromso.no",
+          "url": "https://www.itromso.no/nyheter/n/Ely0JG/strid-om-millionutbetalinger-til-frps-toppduo",
+          "date": "2026-10-08T17:23:28+00:00",
+          "category": "norway"
+        },
+        {
+          "title": "Energiforsyning | Frp skaper usikkerhet for næringslivet",
+          "source": "Nye Troms",
+          "url": "https://www.nyetroms.no/frp-skaper-usikkerhet-for-naringslivet/o/80-163-9015",
+          "date": "2026-10-08T17:17:24+00:00",
+          "category": "norway"
+        }
+      ],
+      "first_seen": "2026-10-08T18:59:02+00:00",
+      "last_seen": "2026-10-08T18:59:02+00:00"
     },
     {
       "id": "vance-alaska-rally-surge",
       "title": "Vance Alaska Rally Surge",
-      "blurb": "Vice President JD Vance conducted a targeted campaign blitz across Alaska to rally support for vulnerable Republican incumbents. His Fairbanks rally and local appearances focused heavily on bolstering GOP prospects in tight midterm contests.",
-      "affect": "High-level executive intervention in competitive congressional races highlights strategic urgency and base mobilization.",
-      "intensity": 3,
+      "blurb": "Vice President JD Vance led high‑energy rallies in Alaska, touring Anchorage and Fairbanks, while Trump also campaigned there, intensifying the GOP push in the state ahead of the midterms.",
+      "affect": "The flurry of appearances underscores a strategic battle for the Alaskan electorate, generating heated local coverage.",
+      "intensity": 4,
       "affect_signals": [
-        "triumphant campaign framing",
-        "cross-source repetition",
-        "strategic urgency"
+        "leadership rally tone",
+        "regional contestation",
+        "enthusiastic supporter framing"
       ],
       "categories": [
-        "maga_trump"
+        "us_politics",
+        "alaska"
       ],
       "article_count": 3,
       "refs": [
@@ -174,15 +213,64 @@
           "category": "usa"
         },
         {
-          "title": "Vice President JD Vance holds Fairbanks rally to boost Republican candidates",
+          "title": "President Trump coming to Alaska next week to campaign for Republicans",
           "source": "Anchorage Daily News",
-          "url": "https://www.adn.com/politics/2026/10/06/vice-president-jd-vance-holds-fairbanks-rally-to-boost-republican-candidates/",
-          "date": "2026-10-06T09:44:14+00:00",
+          "url": "https://www.adn.com/politics/2026/10/08/president-trump-coming-to-alaska-next-week-to-campaign-for-republicans/",
+          "date": "2026-10-08T17:21:39+00:00",
           "category": "usa"
         }
       ],
       "first_seen": "2026-10-07T06:18:19+00:00",
-      "last_seen": "2026-10-08T06:27:58+00:00"
+      "last_seen": "2026-10-08T18:59:02+00:00"
+    },
+    {
+      "id": "techsector-visa-attack",
+      "title": "Tech‑Sector Visa Attack",
+      "blurb": "The administration accused Microsoft, Adobe and other tech giants of abusing H‑1B and green‑card programs, suspending their participation and sparking a public feud with the industry.",
+      "affect": "Targeting high‑profile companies frames a narrative of protecting American jobs, provoking sharp backlash and defensive rhetoric from the tech sector.",
+      "intensity": 4,
+      "affect_signals": [
+        "outrage‑coded language",
+        "industry backlash",
+        "policy‑attack framing"
+      ],
+      "categories": [
+        "technology",
+        "immigration"
+      ],
+      "article_count": 4,
+      "refs": [
+        {
+          "title": "Trump Administration Blocks Microsoft, Adobe From Green Card Program Over Alleged Fraud",
+          "source": "Law Commentary",
+          "url": "https://www.lawcommentary.com/articles/trump-microsoft-adobe-green-card-suspension",
+          "date": "2026-10-08T17:49:34+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Microsoft responds to Trump administration accusation that it abuses foreign worker programs",
+          "source": "GeekWire",
+          "url": "https://www.geekwire.com/2026/microsoft-responds-to-trump-administration-accusation-that-it-abuses-foreign-worker-programs/",
+          "date": "2026-10-08T17:48:31+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "The Trump administration is suspending Microsoft from a green card program, alleging fraud",
+          "source": "NBC News",
+          "url": "https://www.nbcnews.com/politics/trump-administration/microsoft-suspended-green-cards-h-1b-visa-j-1-visa-vance-rcna602314",
+          "date": "2026-10-08T17:46:09+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "J.D. Vance",
+          "source": "WXOW",
+          "url": "https://www.wxow.com/j-d-vance/image_4d30acbc-ba4a-4c53-8bcb-3816fba5d025.html",
+          "date": "2026-10-08T16:12:00+00:00",
+          "category": "usa"
+        }
+      ],
+      "first_seen": "2026-10-08T18:59:02+00:00",
+      "last_seen": "2026-10-08T18:59:02+00:00"
     }
   ]
 }
