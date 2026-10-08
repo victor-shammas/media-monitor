@@ -1,27 +1,40 @@
 {
-  "updated_at": "2026-10-07T19:03:56+00:00",
+  "updated_at": "2026-10-08T06:27:58+00:00",
   "lookback_hours": 48,
-  "model": "GPT-OSS 120B (Groq)",
+  "model": "Gemini 3.6 Flash",
   "status": "ok",
   "hotspots": [
     {
       "id": "trump-midterm-rally-frenzy",
       "title": "Trump Midterm Rally Frenzy",
-      "blurb": "President Trump is criss‑crossing key battleground states, headlining rallies in Nebraska, Texas and beyond, while GOP candidates rally around his appearances. The coverage is saturated with enthusiastic language, traffic disruptions and calls to vote.",
-      "affect": "The constant stream of rally reporting fuels outrage and triumph, positioning the rallies as the linchpin of the midterm strategy.",
+      "blurb": "President Trump's relentless campaign swing through key states including Texas, Nebraska, and Maryland commands major coverage as the midterms draw closer. Packed rally venues, high-profile shipyard appearances, and controversial public remarks continue to energize his base while driving intense news cycles.",
+      "affect": "The high frequency and provocative rhetoric of Trump's public rallies spark intense base enthusiasm and sharp partisan contention.",
       "intensity": 5,
       "affect_signals": [
+        "cross-source repetition",
+        "outrage-coded language",
         "polarized contention",
-        "triumph framing",
-        "mass rally coverage",
-        "high‑frequency repetition"
+        "triumphant campaign framing"
       ],
       "categories": [
-        "politics",
-        "elections"
+        "maga_trump"
       ],
-      "article_count": 7,
+      "article_count": 10,
       "refs": [
+        {
+          "title": "President Trump hosts rally in Texas",
+          "source": "news8000.com",
+          "url": "https://www.news8000.com/news/president-trump-hosts-rally-in-texas/video_133ed3cc-0a52-5e70-9b83-ccb1528ba8e7.html",
+          "date": "2026-10-08T03:18:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Ravens players ride with President Trump in motorcade, get shoutout during speech at Baltimore shipyard event",
+          "source": "Fox News",
+          "url": "https://www.foxnews.com/outkick-sports/ravens-players-ride-president-trump-motorcade-shoutout-speech-baltimore-shipyard-event",
+          "date": "2026-10-07T11:15:55+00:00",
+          "category": "usa"
+        },
         {
           "title": "Donald Trump visits Nebraska to support Ricketts, Pillen, rally GOP voters",
           "source": "The Daily Nebraskan",
@@ -30,69 +43,39 @@
           "category": "usa"
         },
         {
-          "title": "President Trump stumps for Republicans in Grand Island",
-          "source": "KOLN | Nebraska Local News, Weather, Sports | Lincoln, NE",
-          "url": "https://www.1011now.com/video/2026/10/06/president-trump-stumps-republicans-grand-island/",
-          "date": "2026-10-06T03:51:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Gallery: President Donald Trump holds rally in Grand Island",
-          "source": "Central Nebraska Today",
-          "url": "https://www.centralnebraskatoday.com/2026/10/05/gallery-president-donald-trump-holds-rally-in-grand-island/",
-          "date": "2026-10-06T01:37:40+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "President Trump to travel to San Antonio",
-          "source": "FOX 7 Austin",
-          "url": "https://www.fox7austin.com/video/fmc-k2wu598odc78q1nv",
-          "date": "2026-10-06T22:59:27+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Road closures, traffic expected in San Antonio amid President Trump visit today",
-          "source": "MySA",
-          "url": "https://www.mysanantonio.com/news/local/traffic/article/trump-rally-san-antonio-22463771.php",
-          "date": "2026-10-07T10:43:51+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "President Donald Trump speaks at the Midterm rally",
-          "source": "KOLN | Nebraska Local News, Weather, Sports | Lincoln, NE",
-          "url": "https://www.1011now.com/video/2026/10/06/president-donald-trump-speaks-midterm-rally/",
-          "date": "2026-10-06T03:01:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Alaska leaders rally with JD Vance in Fairbanks",
-          "source": "Alaska's News Source",
-          "url": "https://www.alaskasnewssource.com/video/2026/10/06/alaska-leaders-rally-with-jd-vance-fairbanks/",
-          "date": "2026-10-06T02:22:00+00:00",
+          "title": "USC community left dumbfounded following President Trump’s remarks suggesting Iran ‘take out’ Los Angeles and San Diego",
+          "source": "Annenberg Media",
+          "url": "https://www.uscannenbergmedia.com/2026/10/06/usc-community-left-dumbfounded-following-president-trumps-remarks-suggesting-iran-take-out-los-angeles-and-san-diego/",
+          "date": "2026-10-07T04:25:00+00:00",
           "category": "usa"
         }
       ],
       "first_seen": "2026-10-04T16:57:43+00:00",
-      "last_seen": "2026-10-07T19:03:56+00:00"
+      "last_seen": "2026-10-08T06:27:58+00:00"
     },
     {
       "id": "trumpfunded-ad-controversy",
       "title": "Trump‑Funded Ad Controversy",
-      "blurb": "A wave of reporting highlights Trump's response to criticism over taxpayer‑funded TV ads, with his super PAC stepping in to pay and his defense of the ads becoming a flashpoint in the media.",
-      "affect": "The story pits Trump against accusations of abusing public funds, generating heated debate over election‑related spending.",
+      "blurb": "A $20 million DNC lawsuit challenging the Trump administration's use of taxpayer funds for political promotional ads sparked swift pushback and a strategic retreat, with MAGA Inc. taking over costs. The administration continues to defend the campaign, creating a prominent political and legal fight.",
+      "affect": "Allegations of taxpayer misallocation provoke intense ethical debate and defensive political maneuvering.",
       "intensity": 4,
       "affect_signals": [
-        "outrage‑coded language",
-        "political funding debate",
-        "cross‑source repetition",
-        "moral charge"
+        "outrage-coded language",
+        "polarized contention",
+        "leadership crisis tone"
       ],
       "categories": [
-        "politics",
-        "campaign finance"
+        "maga_trump"
       ],
       "article_count": 3,
       "refs": [
+        {
+          "title": "🚨 Democratic National Committee v. Trump",
+          "source": "Democracy Docket",
+          "url": "https://www.democracydocket.com/cases/trump-administration-taxpayer-funded-political-ads-challenge-dnc/",
+          "date": "2026-10-07T22:01:29+00:00",
+          "category": "usa"
+        },
         {
           "title": "Trump says his super PAC will start paying for controversial taxpayer-funded ads",
           "source": "CBS News",
@@ -106,90 +89,25 @@
           "url": "https://www.scrippsnews.com/politics/the-president/trump-defends-ad-says-maga-inc-will-cover-cost-instead-of-taxpayers",
           "date": "2026-10-06T11:21:41+00:00",
           "category": "usa"
-        },
-        {
-          "title": "President Trump’s efforts to ‘SAVE’ voting focus on a nonexistent issue",
-          "source": "The Daily Orange",
-          "url": "https://dailyorange.com/2026/10/president-trumps-efforts-to-save-voting-focus-on-a-nonexistent-issue/",
-          "date": "2026-10-07T03:06:30+00:00",
-          "category": "usa"
         }
       ],
       "first_seen": "2026-10-06T18:39:35+00:00",
-      "last_seen": "2026-10-07T19:03:56+00:00"
-    },
-    {
-      "id": "vance-alaska-rally-surge",
-      "title": "Vance Alaska Rally Surge",
-      "blurb": "Vice President JD Vance has made multiple stops in Alaska, holding rallies in Fairbanks and Anchorage, drawing both fervent support and protest, and emphasizing the state's pivotal toss‑up races.",
-      "affect": "The intense local coverage underscores a high‑stakes contest in a swing state, with vivid descriptions of crowds and confrontations.",
-      "intensity": 4,
-      "affect_signals": [
-        "leadership crisis tone",
-        "regional polarization",
-        "protest‑rally juxtaposition",
-        "high‑stakes framing"
-      ],
-      "categories": [
-        "politics",
-        "regional"
-      ],
-      "article_count": 5,
-      "refs": [
-        {
-          "title": "Vice President JD Vance answers KTUU questions",
-          "source": "Alaska's News Source",
-          "url": "https://www.alaskasnewssource.com/video/2026/10/07/vice-president-jd-vance-answers-ktuu-questions/",
-          "date": "2026-10-07T05:48:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "JD Vance visits local breakfast staple during Anchorage stay",
-          "source": "Alaska's News Source",
-          "url": "https://www.alaskasnewssource.com/2026/10/07/jd-vance-visits-local-breakfast-staple-during-anchorage-stay/",
-          "date": "2026-10-07T04:01:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "JD Vance holds rally in Fairbanks as the state faces two toss-up races",
-          "source": "Alaska's News Source",
-          "url": "https://www.alaskasnewssource.com/video/2026/10/06/jd-vance-holds-rally-fairbanks-state-faces-two-toss-up-races/",
-          "date": "2026-10-06T06:24:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "JD Vance to rally in Fairbanks as the state faces two toss-up races",
-          "source": "Alaska's News Source",
-          "url": "https://www.alaskasnewssource.com/video/2026/10/06/jd-vance-rally-fairbanks-state-faces-two-toss-up-races/",
-          "date": "2026-10-06T03:07:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Alaska leaders rally with JD Vance in Fairbanks",
-          "source": "Alaska's News Source",
-          "url": "https://www.alaskasnewssource.com/video/2026/10/06/alaska-leaders-rally-with-jd-vance-fairbanks/",
-          "date": "2026-10-06T02:22:00+00:00",
-          "category": "usa"
-        }
-      ],
-      "first_seen": "2026-10-07T06:18:19+00:00",
-      "last_seen": "2026-10-07T19:03:56+00:00"
+      "last_seen": "2026-10-08T06:27:58+00:00"
     },
     {
       "id": "immigration-crackdown-migrant-policy",
       "title": "Immigration Crackdown & Migrant Policy",
-      "blurb": "Multiple reports focus on the Trump administration’s aggressive immigration actions: new lawyers for migrant kids, a blocked $1.8 M fine on migrants, a massive denaturalization push, and voter concerns in Maine.",
-      "affect": "These pieces weave a narrative of authoritarian enforcement, sparking fear and moral panic among both supporters and opponents.",
+      "blurb": "The Trump administration is expanding its immigration crackdown with an unprecedented denaturalization push and plans to use government lawyers for unaccompanied minors. These efforts face pushback in federal court, where a judge blocked $1.8 million fines against noncitizens.",
+      "affect": "Aggressive executive action combined with active judicial intervention generates deep moral debate and ideological outrage.",
       "intensity": 4,
       "affect_signals": [
         "alarmist framing",
         "moral panic register",
-        "cross‑issue linkage",
-        "legal showdown tone"
+        "polarized contention",
+        "judicial pushback framing"
       ],
       "categories": [
-        "immigration",
-        "law"
+        "maga_trump"
       ],
       "article_count": 4,
       "refs": [
@@ -223,50 +141,48 @@
         }
       ],
       "first_seen": "2026-10-07T19:03:56+00:00",
-      "last_seen": "2026-10-07T19:03:56+00:00"
+      "last_seen": "2026-10-08T06:27:58+00:00"
     },
     {
-      "id": "diesel-tax-relief-debate",
-      "title": "Diesel Tax Relief Debate",
-      "blurb": "The administration’s push to suspend taxes on on‑road dyed diesel and the executive order aimed at lowering fuel costs have generated mixed reactions ahead of the midterms.",
-      "affect": "The story mixes economic anxiety with political maneuvering, prompting both criticism and praise in the coverage.",
+      "id": "vance-alaska-rally-surge",
+      "title": "Vance Alaska Rally Surge",
+      "blurb": "Vice President JD Vance conducted a targeted campaign blitz across Alaska to rally support for vulnerable Republican incumbents. His Fairbanks rally and local appearances focused heavily on bolstering GOP prospects in tight midterm contests.",
+      "affect": "High-level executive intervention in competitive congressional races highlights strategic urgency and base mobilization.",
       "intensity": 3,
       "affect_signals": [
-        "economic anxiety",
-        "policy criticism",
-        "midterm timing emphasis",
-        "repetition across outlets"
+        "triumphant campaign framing",
+        "cross-source repetition",
+        "strategic urgency"
       ],
       "categories": [
-        "economy",
-        "energy"
+        "maga_trump"
       ],
       "article_count": 3,
       "refs": [
         {
-          "title": "Trump administration urges states to allow on-road dyed diesel",
-          "source": "New Jersey Monitor",
-          "url": "https://newjerseymonitor.com/2026/10/07/trump-administration-urges-states-to-allow-on-road-dyed-diesel/",
-          "date": "2026-10-07T10:49:16+00:00",
+          "title": "Vice President JD Vance answers KTUU questions",
+          "source": "Alaska's News Source",
+          "url": "https://www.alaskasnewssource.com/video/2026/10/07/vice-president-jd-vance-answers-ktuu-questions/",
+          "date": "2026-10-07T05:48:00+00:00",
           "category": "usa"
         },
         {
-          "title": "Could the executive order signed by President Trump Monday lower diesel costs ahead of midterms? - WBAL-TV",
-          "source": "",
-          "url": "https://www.wbaltv.com/article/executive-order-trump-lower-diesel-costs-midterms/74045673",
-          "date": "2026-10-06T11:31:31+00:00",
+          "title": "JD Vance visits local breakfast staple during Anchorage stay",
+          "source": "Alaska's News Source",
+          "url": "https://www.alaskasnewssource.com/2026/10/07/jd-vance-visits-local-breakfast-staple-during-anchorage-stay/",
+          "date": "2026-10-07T04:01:00+00:00",
           "category": "usa"
         },
         {
-          "title": "President Trump promotes strong dollar",
-          "source": "WTVM.com",
-          "url": "https://www.wtvm.com/2026/10/06/president-trump-promotes-strong-dollar/",
-          "date": "2026-10-06T22:36:00+00:00",
+          "title": "Vice President JD Vance holds Fairbanks rally to boost Republican candidates",
+          "source": "Anchorage Daily News",
+          "url": "https://www.adn.com/politics/2026/10/06/vice-president-jd-vance-holds-fairbanks-rally-to-boost-republican-candidates/",
+          "date": "2026-10-06T09:44:14+00:00",
           "category": "usa"
         }
       ],
-      "first_seen": "2026-10-07T19:03:56+00:00",
-      "last_seen": "2026-10-07T19:03:56+00:00"
+      "first_seen": "2026-10-07T06:18:19+00:00",
+      "last_seen": "2026-10-08T06:27:58+00:00"
     }
   ]
 }
