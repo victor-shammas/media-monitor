@@ -1,29 +1,70 @@
 {
-  "updated_at": "2026-10-08T19:03:45+00:00",
+  "updated_at": "2026-10-09T06:49:03+00:00",
   "lookback_hours": 48,
-  "model": "Gemini 3.6 Flash",
+  "model": "GPT-OSS 120B (Groq)",
   "status": "ok",
   "actors": [
     {
       "id": "donald-trump",
       "name": "Donald Trump",
-      "role": "President of the United States",
-      "blurb": "President Trump continues to drive news coverage through midterm campaign rallies across Alaska, Texas, and Nebraska. His administration is enacting hardline policy enforcement, including green card suspensions for major tech firms, legal challenges against universities, and foreign policy declarations concerning Iran.",
+      "role": "Former President of the United States",
+      "blurb": "Trump is dominating the news cycle with a flurry of rallies, policy moves on immigration and green‑card programs, and high‑profile legal battles, while positioning himself ahead of the midterm elections.",
       "prominence": 5,
       "signals": [
-        "election campaign",
-        "policy announcement",
-        "judicial proceedings",
-        "international posturing"
+        "midterm rally tour",
+        "immigration enforcement actions",
+        "green‑card program suspensions",
+        "legal disputes with universities"
       ],
       "categories": [
-        "MAGA / Trump",
-        "Elections",
-        "Immigration",
-        "Foreign Policy"
+        "USA",
+        "former president",
+        "right‑wing"
       ],
-      "article_count": 44,
+      "article_count": 30,
       "refs": [
+        {
+          "title": "Arlington County sues Trump administration over Triumphal Arch project",
+          "source": "WJLA",
+          "url": "https://wjla.com/news/local/arlington-trump-arch-project-controversy-triumphal-lawsuit-construction-public-safety-military-complex-lawsuits-national-park-service-memorial-circle-emergency-service",
+          "date": "2026-10-09T03:42:04+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "President Trump tells Minnesota to ‘fight back’ against Somali immigrants",
+          "source": "Minnesota Reformer",
+          "url": "https://minnesotareformer.com/2026/10/08/president-trump-tells-minnesota-to-fight-back-against-somali-immigrants/",
+          "date": "2026-10-09T02:00:05+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "President Trump to visit Syracuse Friday for midterm rally",
+          "source": "Spectrum News",
+          "url": "https://spectrumlocalnews.com/nys/central-ny/politics/2026/10/08/trump-to-visit-syracuse-friday-for-midterm-rally-",
+          "date": "2026-10-08T22:58:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "More than 500 U.S. citizens have been detained during the Trump administration's immigration operations",
+          "source": "MPR News",
+          "url": "https://www.mprnews.org/episode/2026/10/07/us-citizens-detained-during-trump-administrations-immigration-operations",
+          "date": "2026-10-08T18:11:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump Administration Blocks Microsoft, Adobe From Green Card Program Over Alleged Fraud",
+          "source": "Law Commentary",
+          "url": "https://www.lawcommentary.com/articles/trump-microsoft-adobe-green-card-suspension",
+          "date": "2026-10-08T17:49:34+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Microsoft responds to Trump administration accusation that it abuses foreign worker programs",
+          "source": "GeekWire",
+          "url": "https://www.geekwire.com/2026/microsoft-responds-to-trump-administration-accusation-that-it-abuses-foreign-worker-programs/",
+          "date": "2026-10-08T17:48:31+00:00",
+          "category": "usa"
+        },
         {
           "title": "The Trump administration is suspending Microsoft from a green card program, alleging fraud",
           "source": "NBC News",
@@ -36,6 +77,13 @@
           "source": "Anchorage Daily News",
           "url": "https://www.adn.com/politics/2026/10/08/president-trump-coming-to-alaska-next-week-to-campaign-for-republicans/",
           "date": "2026-10-08T17:21:39+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump Administration Seeks to Exempt Oil and Gas Exploration in the Western Arctic from Environmental Review and Public Comment",
+          "source": "Earthjustice",
+          "url": "https://earthjustice.org/press/2026/trump-administration-seeks-to-exempt-oil-and-gas-exploration-in-the-western-arctic-from-standard-environmental-review",
+          "date": "2026-10-08T16:54:51+00:00",
           "category": "usa"
         },
         {
@@ -53,34 +101,156 @@
           "category": "usa"
         },
         {
-          "title": "Donald Trump visits Nebraska to support Ricketts, Pillen, rally GOP voters",
-          "source": "The Daily Nebraskan",
-          "url": "https://www.dailynebraskan.com/news/donald-trump-visits-nebraska-to-support-ricketts-pillen-rally-gop-voters/article_0868088e-bf51-40ac-9e4e-6c907aa99931.html",
-          "date": "2026-10-07T05:00:00+00:00",
+          "title": "President Trump approves $17.9 million in disaster relief for Wisconsin",
+          "source": "WBAY",
+          "url": "https://www.wbay.com/video/2026/10/07/president-trump-approves-179-million-disaster-relief-wisconsin/",
+          "date": "2026-10-07T17:34:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "President Trump's Sparrows Point shipyard plan signals defense manufacturing boom",
+          "source": "Fox Business",
+          "url": "https://www.foxbusiness.com/video/6406408987112",
+          "date": "2026-10-07T10:55:31+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump administration urges states to allow on-road dyed diesel",
+          "source": "New Jersey Monitor",
+          "url": "https://newjerseymonitor.com/2026/10/07/trump-administration-urges-states-to-allow-on-road-dyed-diesel/",
+          "date": "2026-10-07T10:49:16+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Road closures, traffic expected in San Antonio amid President Trump visit today",
+          "source": "MySA",
+          "url": "https://www.mysanantonio.com/news/local/traffic/article/trump-rally-san-antonio-22463771.php",
+          "date": "2026-10-07T10:43:51+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "FILE PHOTO: US President Trump makes an announcement from the Oval Office at the White House",
+          "source": "The Lufkin Daily News",
+          "url": "https://lufkindailynews.com/news_reuters/national/file-photo-us-president-trump-makes-an-announcement-from-the-oval-office-at-the-white/image_6bcf93d2-df7d-588e-9df7-664981c6d5f4.html",
+          "date": "2026-10-07T10:08:14+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Donald Trump’s Rally Suit Under Scrutiny",
+          "source": "Newsweek",
+          "url": "https://www.newsweek.com/donald-trump-rally-suit-under-scrutiny-12533439",
+          "date": "2026-10-07T09:52:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Commercial fishers sue Trump administration to block expanded recreational red snapper seasons",
+          "source": "SeafoodSource",
+          "url": "https://www.seafoodsource.com/news/commercial-fishers-sue-trump-administration-to-block-expanded-recreational-red-snapper-seasons",
+          "date": "2026-10-07T09:03:32+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "CT Officials Tell Trump Administration: Hands Off Head Start",
+          "source": "CT News Junkie",
+          "url": "https://ctnewsjunkie.com/2026/10/07/ct-officials-tell-trump-administration-hands-off-head-start/",
+          "date": "2026-10-07T09:00:00+00:00",
           "category": "usa"
         }
       ],
       "first_seen": "2026-08-16T02:13:23+00:00",
-      "last_seen": "2026-10-08T19:03:45+00:00"
+      "last_seen": "2026-10-09T06:49:03+00:00"
     },
     {
-      "id": "jd-vance",
-      "name": "JD Vance",
-      "role": "Vice President of the United States",
-      "blurb": "Vice President Vance is campaigning heavily for GOP candidates on a multi-stop tour in Alaska. He is also taking a prominent stance on foreign affairs by setting firm demands on Iran's nuclear enrichment and publicly defending administration curbs on tech worker visas.",
-      "prominence": 3,
+      "id": "sylvi-listhaug",
+      "name": "Sylvi Listhaug",
+      "role": "Leader of Norway's Progress Party (FrP)",
+      "blurb": "Listhaug’s popularity surged to a record high in recent polls and she is front‑and‑center in debates over the party’s energy policy and public service disruptions, making her a focal point of right‑wing coverage in Norway.",
+      "prominence": 4,
       "signals": [
-        "election campaign",
-        "international posturing",
-        "policy announcement"
+        "record poll numbers",
+        "energy policy debate",
+        "public transport scandal",
+        "party funding controversy"
       ],
       "categories": [
-        "MAGA / Trump",
-        "Elections",
-        "Foreign Policy"
+        "Norway",
+        "party leader",
+        "right‑wing"
       ],
-      "article_count": 8,
+      "article_count": 5,
       "refs": [
+        {
+          "title": "Meningsmåling: Frp og Sylvi Listhaug har aldri vært mer populære: – Voldsom høy måling",
+          "source": "TV 2",
+          "url": "https://www.tv2.no/nyheter/frp-og-sylvi-listhaug-har-aldri-vaert-mer-populaere-voldsom-hoy-maling/19300700/",
+          "date": "2026-10-08T18:05:46+00:00",
+          "category": "norway"
+        },
+        {
+          "title": "(+) Frp krever svar etter buss- og båtsvikten på Askøy",
+          "source": "askoy24",
+          "url": "https://www.askoy24.no/nyheter/frp-krever-svar-etter-buss-og-batsvikten-pa-askoy/240812",
+          "date": "2026-10-08T17:59:57+00:00",
+          "category": "norway"
+        },
+        {
+          "title": "Strid om millionutbetalinger til Frps toppduo",
+          "source": "itromso.no",
+          "url": "https://www.itromso.no/nyheter/n/Ely0JG/strid-om-millionutbetalinger-til-frps-toppduo",
+          "date": "2026-10-08T17:23:28+00:00",
+          "category": "norway"
+        },
+        {
+          "title": "Energiforsyning | Frp skaper usikkerhet for næringslivet",
+          "source": "Nye Troms",
+          "url": "https://www.nyetroms.no/frp-skaper-usikkerhet-for-naringslivet/o/80-163-9015",
+          "date": "2026-10-08T17:17:24+00:00",
+          "category": "norway"
+        },
+        {
+          "title": "How California attorney general candidates say they’d handle homelessness, the Trump administration and more",
+          "source": "Orange County Register",
+          "url": "https://www.ocregister.com/2026/10/08/how-california-attorney-general-candidates-say-theyd-handle-homelessness-the-trump-administration-and-more/",
+          "date": "2026-10-08T17:15:18+00:00",
+          "category": "usa"
+        }
+      ],
+      "first_seen": "2026-10-09T06:49:03+00:00",
+      "last_seen": "2026-10-09T06:49:03+00:00"
+    },
+    {
+      "id": "j-d-vance",
+      "name": "J.D. Vance",
+      "role": "Vice President of the United States",
+      "blurb": "Vance is making headlines with his hard‑line stance on Iran, criticism of tech firms’ immigration practices, and frequent appearances alongside Trump on economic and security issues.",
+      "prominence": 4,
+      "signals": [
+        "Iran nuclear demand",
+        "critique of Microsoft H‑1B practices",
+        "economic commentary with Trump",
+        "visa‑fraud accusations"
+      ],
+      "categories": [
+        "USA",
+        "vice president",
+        "right‑wing"
+      ],
+      "article_count": 5,
+      "refs": [
+        {
+          "title": "Trump Official Lauds Admin. for ‘Protecting White American Men From Discrimination’",
+          "source": "Rolling Stone",
+          "url": "https://www.rollingstone.com/politics/politics-news/trump-administration-protect-white-american-men-1235639789/",
+          "date": "2026-10-08T16:49:10+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "J.D. Vance",
+          "source": "WXOW",
+          "url": "https://www.wxow.com/j-d-vance/image_4d30acbc-ba4a-4c53-8bcb-3816fba5d025.html",
+          "date": "2026-10-08T16:12:00+00:00",
+          "category": "usa"
+        },
         {
           "title": "JD Vance Forced to Eat His Words Immediately After Trashing Microsoft",
           "source": "The New Republic",
@@ -101,24 +271,54 @@
           "url": "https://abcnews.com/Politics/depends-trump-vance-offer-slightly-takes-economy/story?id=137010597",
           "date": "2026-10-07T09:08:54+00:00",
           "category": "usa"
-        },
+        }
+      ],
+      "first_seen": "2026-10-09T06:49:03+00:00",
+      "last_seen": "2026-10-09T06:49:03+00:00"
+    },
+    {
+      "id": "susan-collins",
+      "name": "Susan Collins",
+      "role": "U.S. Senator from Maine (Republican)",
+      "blurb": "Collins is repeatedly cited as a pivotal swing‑vote in the Senate, with coverage focusing on her attempts to distance herself from Trump while being framed as a key figure for the GOP’s midterm strategy.",
+      "prominence": 3,
+      "signals": [
+        "Maine Senate debate",
+        "relationship with Trump",
+        "potential swing vote",
+        "campaign fundraising scrutiny"
+      ],
+      "categories": [
+        "USA",
+        "senator",
+        "right‑wing"
+      ],
+      "article_count": 3,
+      "refs": [
         {
-          "title": "Vice President JD Vance answers KTUU questions",
-          "source": "Alaska's News Source",
-          "url": "https://www.alaskasnewssource.com/video/2026/10/07/vice-president-jd-vance-answers-ktuu-questions/",
-          "date": "2026-10-07T05:48:00+00:00",
+          "title": "If Susan Collins wins, Donald Trump wins | Steve Collins - Portland Press Herald",
+          "source": "Maine Sunday Telegram",
+          "url": "https://www.pressherald.com/2026/10/08/if-susan-collins-wins-donald-trump-wins-steve-collins/",
+          "date": "2026-10-08T18:00:00+00:00",
           "category": "usa"
         },
         {
-          "title": "JD Vance visits local breakfast staple during Anchorage stay",
-          "source": "Alaska's News Source",
-          "url": "https://www.alaskasnewssource.com/2026/10/07/jd-vance-visits-local-breakfast-staple-during-anchorage-stay/",
-          "date": "2026-10-07T04:01:00+00:00",
+          "title": "In first Maine Senate debate, Sen. Collins seeks to distance herself from President Trump",
+          "source": "WABI",
+          "url": "https://www.wabi.tv/2026/10/07/first-maine-senate-debate-sen-collins-seeks-distance-herself-president-trump/",
+          "date": "2026-10-07T09:53:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Donald Trump’s Rally Suit Under Scrutiny",
+          "source": "Newsweek",
+          "url": "https://www.newsweek.com/donald-trump-rally-suit-under-scrutiny-12533439",
+          "date": "2026-10-07T09:52:00+00:00",
           "category": "usa"
         }
       ],
-      "first_seen": "2026-10-06T06:55:23+00:00",
-      "last_seen": "2026-10-08T19:03:45+00:00"
+      "first_seen": "2026-10-09T06:49:03+00:00",
+      "last_seen": "2026-10-09T06:49:03+00:00"
     }
   ]
 }
