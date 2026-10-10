@@ -1,36 +1,44 @@
 {
-  "updated_at": "2026-10-09T18:34:40+00:00",
+  "updated_at": "2026-10-10T06:27:59+00:00",
   "lookback_hours": 48,
-  "model": "GPT-OSS 120B (Groq)",
+  "model": "Gemini 3.6 Flash",
   "status": "ok",
   "themes": [
     {
       "id": "populist-rally-fever-across-borders",
       "title": "Populist Rally Fever Across Borders",
-      "blurb": "Right‑wing leaders in the United States and Norway are staging high‑profile rallies and mobilising popular support, signalling a synchronized surge in populist momentum.",
-      "convergence": 5,
+      "blurb": "Right-wing populist movements in both the US and Norway are experiencing heightened momentum, driven by high-profile campaign appearances and record-breaking poll numbers. Donald Trump's nationwide midterm rallies mirror Frp's historic surge in Norwegian polling under Sylvi Listhaug.",
+      "convergence": 4,
       "countries": [
         {
           "name": "🇺🇸 MAGA / Trump",
-          "note": "Multiple Trump rallies in Texas, San Antonio and Syracuse, plus rally‑focused polling."
+          "note": "Trump and Vance ramp up high-energy midterm campaign rallies across multiple states to energize young voters and the conservative base."
         },
         {
           "name": "🇳🇴 Fremskrittspartiet",
-          "note": "Frp leader Sylvi Listhaug hits record poll numbers, energising the party base."
+          "note": "Frp hits a record-high 31.9% in national polls under Sylvi Listhaug, reflecting strong populist electoral momentum."
         }
       ],
       "signals": [
-        "parallel rally scheduling",
-        "shared populist framing",
-        "cross‑border mobilisation"
+        "populist momentum",
+        "campaign rallies",
+        "electoral polling surge",
+        "voter mobilization"
       ],
       "article_count": 5,
       "refs": [
         {
-          "title": "US President Donald Trump holds a rally in San Antonio",
-          "source": "The Lufkin Daily News",
-          "url": "https://lufkindailynews.com/news_reuters/national/us-president-donald-trump-holds-a-rally-in-san-antonio/image_cdc41573-d1a8-52d8-90c4-ec36d88061e9.html",
-          "date": "2026-10-09T10:20:38+00:00",
+          "title": "WATCH: President Trump calls out Hochul, brings Mike Tyson on stage at Syracuse rally",
+          "source": "WSTM",
+          "url": "https://cnycentral.com/news/local/watch-republicans-rally-in-syracuse-president-trump-to-speak",
+          "date": "2026-10-10T03:46:38+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "JD Vance tasked with reclaiming young male voters as midterm poll shows shift",
+          "source": "Fox Business",
+          "url": "https://www.foxbusiness.com/video/6406528409112",
+          "date": "2026-10-09T10:50:34+00:00",
           "category": "usa"
         },
         {
@@ -41,13 +49,6 @@
           "category": "usa"
         },
         {
-          "title": "President Trump hosts rally in Texas",
-          "source": "news8000.com",
-          "url": "https://www.news8000.com/news/president-trump-hosts-rally-in-texas/video_133ed3cc-0a52-5e70-9b83-ccb1528ba8e7.html",
-          "date": "2026-10-08T03:18:00+00:00",
-          "category": "usa"
-        },
-        {
           "title": "Meningsmåling: Frp og Sylvi Listhaug har aldri vært mer populære: – Voldsom høy måling",
           "source": "TV 2",
           "url": "https://www.tv2.no/nyheter/frp-og-sylvi-listhaug-har-aldri-vaert-mer-populaere-voldsom-hoy-maling/19300700/",
@@ -55,45 +56,39 @@
           "category": "norway"
         },
         {
-          "title": "Energiforsyning | Frp skaper usikkerhet for næringslivet",
-          "source": "Nye Troms",
-          "url": "https://www.nyetroms.no/frp-skaper-usikkerhet-for-naringslivet/o/80-163-9015",
-          "date": "2026-10-08T17:17:24+00:00",
-          "category": "norway"
+          "title": "President Trump coming to Alaska next week to campaign for Republicans",
+          "source": "Anchorage Daily News",
+          "url": "https://www.adn.com/politics/2026/10/08/president-trump-coming-to-alaska-next-week-to-campaign-for-republicans/",
+          "date": "2026-10-08T17:21:39+00:00",
+          "category": "usa"
         }
       ],
       "first_seen": "2026-10-09T06:51:26+00:00",
-      "last_seen": "2026-10-09T18:34:40+00:00"
+      "last_seen": "2026-10-10T06:27:59+00:00"
     },
     {
       "id": "energy-policy-battles-heat-up",
       "title": "Energy Policy Battles Heat Up",
-      "blurb": "Conservative governments in the US and Norway are pushing controversial energy initiatives, from Arctic oil exemptions to uncertainty over domestic oil‑gas supply, highlighting a transnational contest over fossil fuel policy.",
+      "blurb": "Energy strategy and environmental regulations remain central policy battlegrounds across right-wing movements. US initiatives to deregulate Arctic oil exploration mirror Frp's efforts to reopen fundamental debates on Norway's national energy supply.",
       "convergence": 4,
       "countries": [
         {
           "name": "🇺🇸 MAGA / Trump",
-          "note": "Administration seeks categorical exemption for Western Arctic oil and gas exploration."
+          "note": "The administration moves to exempt Western Arctic oil and gas drilling from environmental review while facing lawsuits over solar program changes."
         },
         {
           "name": "🇳🇴 Fremskrittspartiet",
-          "note": "Frp revives debate on Norway’s oil and gas supply, creating business uncertainty."
+          "note": "Frp reopens high-stakes policy debates on national energy supply and the strategic direction of the oil and gas industry."
         }
       ],
       "signals": [
-        "policy imitation",
-        "shared framing of energy security",
-        "regional fossil‑fuel push"
+        "fossil fuel prioritization",
+        "deregulation push",
+        "energy policy debate",
+        "environmental rollbacks"
       ],
       "article_count": 3,
       "refs": [
-        {
-          "title": "Trump Administration Seeks to Exempt Oil and Gas Exploration in the Western Arctic from Environmental Review and Public Comment",
-          "source": "Earthjustice",
-          "url": "https://earthjustice.org/press/2026/trump-administration-seeks-to-exempt-oil-and-gas-exploration-in-the-western-arctic-from-standard-environmental-review",
-          "date": "2026-10-08T16:54:51+00:00",
-          "category": "usa"
-        },
         {
           "title": "Environmentalists sue Trump administration over changes to rural energy program",
           "source": "WPR",
@@ -107,38 +102,101 @@
           "url": "https://www.nyetroms.no/frp-skaper-usikkerhet-for-naringslivet/o/80-163-9015",
           "date": "2026-10-08T17:17:24+00:00",
           "category": "norway"
+        },
+        {
+          "title": "Trump Administration Seeks to Exempt Oil and Gas Exploration in the Western Arctic from Environmental Review and Public Comment",
+          "source": "Earthjustice",
+          "url": "https://earthjustice.org/press/2026/trump-administration-seeks-to-exempt-oil-and-gas-exploration-in-the-western-arctic-from-standard-environmental-review",
+          "date": "2026-10-08T16:54:51+00:00",
+          "category": "usa"
         }
       ],
       "first_seen": "2026-10-09T06:51:26+00:00",
-      "last_seen": "2026-10-09T18:34:40+00:00"
+      "last_seen": "2026-10-10T06:27:59+00:00"
     },
     {
-      "id": "legal-strikes-against-institutions",
-      "title": "Legal Strikes Against Institutions",
-      "blurb": "Right‑wing actors in both countries are launching lawsuits and legal challenges against established institutions, from federal projects in the US to internal party financial disputes in Norway.",
+      "id": "funding-scrutiny-and-internal-pay-disputes",
+      "title": "Funding Scrutiny and Internal Pay Disputes",
+      "blurb": "Financial allocations and public spending integrity are drawing sharp scrutiny across conservative spheres. Contests over government grants and ad funds in the US run parallel to internal leadership payout controversies within Norway's Frp.",
       "convergence": 3,
       "countries": [
         {
           "name": "🇺🇸 MAGA / Trump",
-          "note": "Arlington County sues over the Trump Triumphal Arch; DOJ sues University of Delaware over tuition policy."
+          "note": "The administration faces legal fights over executive ad spending, federal funding cuts to elite universities, and corporate subsidies."
         },
         {
           "name": "🇳🇴 Fremskrittspartiet",
-          "note": "Internal controversy over multi‑million kroner payouts to party leaders sparks calls for accountability."
+          "note": "Frp faces internal debate and public scrutiny over large financial payouts made to top party leadership figures."
         }
       ],
       "signals": [
-        "coordinated legal pressure",
-        "institutional targeting",
-        "parallel accountability battles"
+        "financial transparency",
+        "funding battles",
+        "payout controversy",
+        "resource allocation"
       ],
       "article_count": 4,
       "refs": [
         {
-          "title": "Trump's memorial arch faces a new lawsuit from Arlington County, Virginia",
-          "source": "PBS",
-          "url": "https://www.pbs.org/newshour/nation/trumps-memorial-arch-faces-a-new-lawsuit-from-arlington-county-virginia",
-          "date": "2026-10-09T16:12:34+00:00",
+          "title": "Wisconsin Democrats sue Trump administration for propaganda TV ads",
+          "source": "Civic Media",
+          "url": "https://civicmedia.us/news/2026/10/09/wisconsin-democrats-sue-trump-administration-for-propaganda-tv-ads",
+          "date": "2026-10-09T22:43:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Here's some Upstate New York topics that President Trump has weighed in on before",
+          "source": "WSTM",
+          "url": "https://cnycentral.com/news/local/heres-some-topics-about-cny-that-president-trump-has-weighed-in-on-before",
+          "date": "2026-10-09T16:36:45+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Strid om millionutbetalinger til Frps toppduo",
+          "source": "itromso.no",
+          "url": "https://www.itromso.no/nyheter/n/Ely0JG/strid-om-millionutbetalinger-til-frps-toppduo",
+          "date": "2026-10-08T17:23:28+00:00",
+          "category": "norway"
+        },
+        {
+          "title": "Trump Administration Asks Appeals Court to Restore Harvard Funding Cuts",
+          "source": "Harvard Magazine",
+          "url": "https://www.harvardmagazine.com/harvard-in-the-crosshairs/trump-administration-harvard-funding-freeze-appeal",
+          "date": "2026-10-08T16:28:49+00:00",
+          "category": "usa"
+        }
+      ],
+      "first_seen": "2026-10-09T06:51:26+00:00",
+      "last_seen": "2026-10-10T06:27:59+00:00"
+    },
+    {
+      "id": "legal-strikes-against-institutions",
+      "title": "Legal Strikes Against Institutions",
+      "blurb": "Conservative actors are escalating administrative challenges and legal disputes against institutional authorities. Federal lawsuits against municipal ordinances in the US reflect parallel demands by regional Frp officials for formal accountability from transport bodies.",
+      "convergence": 3,
+      "countries": [
+        {
+          "name": "🇺🇸 MAGA / Trump",
+          "note": "The administration sues local jurisdictions over law enforcement regulations and university tuition policies while defending against county suits."
+        },
+        {
+          "name": "🇳🇴 Fremskrittspartiet",
+          "note": "Vestland Frp demands formal answers and accountability from public transit authorities following widespread service disruptions."
+        }
+      ],
+      "signals": [
+        "institutional clashes",
+        "legal challenges",
+        "governance disputes",
+        "demands for accountability"
+      ],
+      "article_count": 4,
+      "refs": [
+        {
+          "title": "Trump administration sues Denver over law enforcement mask ban",
+          "source": "Colorado Newsline",
+          "url": "https://coloradonewsline.com/2026/10/09/trump-administration-sues-denver-over-law-enforcement-mask-ban/",
+          "date": "2026-10-09T22:05:54+00:00",
           "category": "usa"
         },
         {
@@ -149,69 +207,22 @@
           "category": "usa"
         },
         {
+          "title": "(+) Frp krever svar etter buss- og båtsvikten på Askøy",
+          "source": "askoy24",
+          "url": "https://www.askoy24.no/nyheter/frp-krever-svar-etter-buss-og-batsvikten-pa-askoy/240812",
+          "date": "2026-10-08T17:59:57+00:00",
+          "category": "norway"
+        },
+        {
           "title": "Trump administration sues UD over undocumented student tuition policy",
           "source": "Spotlight Delaware",
           "url": "https://spotlightdelaware.org/2026/10/08/trump-administration-sues-ud-over-undocumented-student-tuition-policy/",
           "date": "2026-10-08T12:25:03+00:00",
           "category": "usa"
-        },
-        {
-          "title": "Strid om millionutbetalinger til Frps toppduo",
-          "source": "itromso.no",
-          "url": "https://www.itromso.no/nyheter/n/Ely0JG/strid-om-millionutbetalinger-til-frps-toppduo",
-          "date": "2026-10-08T17:23:28+00:00",
-          "category": "norway"
         }
       ],
       "first_seen": "2026-10-09T06:51:26+00:00",
-      "last_seen": "2026-10-09T18:34:40+00:00"
-    },
-    {
-      "id": "funding-scrutiny-and-internal-pay-disputes",
-      "title": "Funding Scrutiny and Internal Pay Disputes",
-      "blurb": "Financial oversight becomes a focal point as US conservatives challenge federal funding to universities while Norway’s Frp faces controversy over large internal payouts.",
-      "convergence": 3,
-      "countries": [
-        {
-          "name": "🇺🇸 MAGA / Trump",
-          "note": "Administration appeals to restore Harvard funding cuts and proposes hefty fees for international student work programs."
-        },
-        {
-          "name": "🇳🇴 Fremskrittspartiet",
-          "note": "Revelation of 1.7 million NOK payments to top Frp officials sparks public outcry."
-        }
-      ],
-      "signals": [
-        "budgetary attacks",
-        "internal financial controversy",
-        "politicised funding debates"
-      ],
-      "article_count": 3,
-      "refs": [
-        {
-          "title": "Trump Administration Asks Appeals Court to Restore Harvard Funding Cuts",
-          "source": "Harvard Magazine",
-          "url": "https://www.harvardmagazine.com/harvard-in-the-crosshairs/trump-administration-harvard-funding-freeze-appeal",
-          "date": "2026-10-08T16:28:49+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Trump Administration Proposes $70K Fee for International Students to Work in U.S.",
-          "source": "Time Magazine",
-          "url": "https://time.com/article/2026/10/08/international-student-training-opt-fee-work-trump-administration/",
-          "date": "2026-10-08T10:00:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Strid om millionutbetalinger til Frps toppduo",
-          "source": "itromso.no",
-          "url": "https://www.itromso.no/nyheter/n/Ely0JG/strid-om-millionutbetalinger-til-frps-toppduo",
-          "date": "2026-10-08T17:23:28+00:00",
-          "category": "norway"
-        }
-      ],
-      "first_seen": "2026-10-09T06:51:26+00:00",
-      "last_seen": "2026-10-09T18:34:40+00:00"
+      "last_seen": "2026-10-10T06:27:59+00:00"
     }
   ]
 }
