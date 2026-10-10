@@ -44,6 +44,7 @@ import unicodedata
 from datetime import datetime, timedelta, timezone
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
+from email.utils import getaddresses
 
 try:
     import markdown as md_lib
@@ -1196,7 +1197,11 @@ def main():
         msg = MIMEMultipart("alternative")
         msg["Subject"] = subject
         msg["From"] = sender_email
-        msg["To"] = receiver_email
+        # Recipients go in Bcc so they can't see each other's addresses;
+        # RECEIVER_EMAIL may be a comma-separated list.
+        msg["To"] = sender_email
+        msg["Bcc"] = receiver_email
+        recipients = [addr for _, addr in getaddresses([receiver_email]) if addr]
         msg.attach(MIMEText(plain_text, "plain", "utf-8"))
         msg.attach(MIMEText(sanitize(full_html), "html", "utf-8"))
 
@@ -1205,7 +1210,7 @@ def main():
             server = smtplib.SMTP("smtp.gmail.com", 587)
             server.starttls()
             server.login(sender_email, email_password)
-            server.send_message(msg)
+            server.send_message(msg, to_addrs=recipients)
             server.quit()
             print("  ✓ Report emailed successfully!")
         except Exception as e:
