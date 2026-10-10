@@ -1,27 +1,34 @@
 {
-  "updated_at": "2026-10-09T18:33:49+00:00",
+  "updated_at": "2026-10-10T06:26:36+00:00",
   "lookback_hours": 48,
-  "model": "GPT-OSS 120B (Groq)",
+  "model": "Gemini 3.6 Flash",
   "status": "ok",
   "actors": [
     {
       "id": "donald-trump",
       "name": "Donald Trump",
-      "role": "Former President of the United States",
-      "blurb": "Trump dominates the news cycle with a string of rallies, policy pronouncements, and legal battles, from announcing a non‑strike policy on Iran to suing over a proposed triumphal arch and targeting tech firms in immigration reforms.",
+      "role": "President of the United States",
+      "blurb": "Donald Trump dominates right-wing news coverage through midterm campaign rallies across New York, Texas, and Alaska, along with high-profile policy announcements regarding Iran and AI regulations. His administration faces multiple legal challenges while implementing aggressive crackdowns on tech worker green card programs and foreign student visas.",
       "prominence": 5,
       "signals": [
-        "midterm rally tour",
-        "immigration crackdown on tech firms",
-        "legal challenges to his projects",
-        "foreign policy stance on Iran"
+        "election campaign",
+        "policy announcement",
+        "judicial proceedings",
+        "international posturing"
       ],
       "categories": [
-        "U.S. politics",
-        "right‑wing populism"
+        "US Politics",
+        "MAGA"
       ],
-      "article_count": 15,
+      "article_count": 33,
       "refs": [
+        {
+          "title": "WATCH: President Trump calls out Hochul, brings Mike Tyson on stage at Syracuse rally",
+          "source": "WSTM",
+          "url": "https://cnycentral.com/news/local/watch-republicans-rally-in-syracuse-president-trump-to-speak",
+          "date": "2026-10-10T03:46:38+00:00",
+          "category": "usa"
+        },
         {
           "title": "President Donald Trump says anyone using the term ‘artificial intelligence’ is ‘the enemy’",
           "source": "The Next Web",
@@ -37,24 +44,10 @@
           "category": "usa"
         },
         {
-          "title": "US President Donald Trump holds a rally in San Antonio",
-          "source": "The Lufkin Daily News",
-          "url": "https://lufkindailynews.com/news_reuters/national/us-president-donald-trump-holds-a-rally-in-san-antonio/image_cdc41573-d1a8-52d8-90c4-ec36d88061e9.html",
-          "date": "2026-10-09T10:20:38+00:00",
-          "category": "usa"
-        },
-        {
           "title": "President Trump tells Minnesota to ‘fight back’ against Somali immigrants",
           "source": "Minnesota Reformer",
           "url": "https://minnesotareformer.com/2026/10/08/president-trump-tells-minnesota-to-fight-back-against-somali-immigrants/",
           "date": "2026-10-09T02:00:05+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "President Trump to visit Syracuse Friday for midterm rally",
-          "source": "Spectrum News",
-          "url": "https://spectrumlocalnews.com/nys/central-ny/politics/2026/10/08/trump-to-visit-syracuse-friday-for-midterm-rally-",
-          "date": "2026-10-08T22:58:00+00:00",
           "category": "usa"
         },
         {
@@ -63,53 +56,25 @@
           "url": "https://www.lawcommentary.com/articles/trump-microsoft-adobe-green-card-suspension",
           "date": "2026-10-08T17:49:34+00:00",
           "category": "usa"
-        },
-        {
-          "title": "President Trump coming to Alaska next week to campaign for Republicans",
-          "source": "Anchorage Daily News",
-          "url": "https://www.adn.com/politics/2026/10/08/president-trump-coming-to-alaska-next-week-to-campaign-for-republicans/",
-          "date": "2026-10-08T17:21:39+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "President Trump: Will not be attacking Iran before U.S. midterm elections",
-          "source": "CNBC",
-          "url": "https://www.cnbc.com/video/2026/10/08/president-trump-will-not-be-attacking-iran-before-u-s-midterm-elections.html",
-          "date": "2026-10-08T16:53:57+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "President Trump hosts rally in Texas",
-          "source": "news8000.com",
-          "url": "https://www.news8000.com/news/president-trump-hosts-rally-in-texas/video_133ed3cc-0a52-5e70-9b83-ccb1528ba8e7.html",
-          "date": "2026-10-08T03:18:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "🚨 Democratic National Committee v. Trump",
-          "source": "Democracy Docket",
-          "url": "https://www.democracydocket.com/cases/trump-administration-taxpayer-funded-political-ads-challenge-dnc/",
-          "date": "2026-10-07T22:01:29+00:00",
-          "category": "usa"
         }
       ],
       "first_seen": "2026-08-16T02:13:23+00:00",
-      "last_seen": "2026-10-09T18:33:49+00:00"
+      "last_seen": "2026-10-10T06:26:36+00:00"
     },
     {
       "id": "j-d-vance",
       "name": "J.D. Vance",
       "role": "Vice President of the United States",
-      "blurb": "Vance is featured in multiple stories as the administration’s point person on immigration enforcement, targeting major tech companies, and leading efforts to win back young male voters ahead of the midterms.",
+      "blurb": "J.D. Vance is spearheading campaign efforts to retain young male voters as midterm polling signals shifting demographics. He has also generated headlines while defending administration restrictions on tech company immigration programs and casting his early ballot in Ohio.",
       "prominence": 4,
       "signals": [
-        "immigration enforcement against tech firms",
-        "young male voter outreach",
-        "midterm election strategy"
+        "election campaign",
+        "voter outreach",
+        "policy announcement"
       ],
       "categories": [
-        "U.S. politics",
-        "right‑wing policy"
+        "US Politics",
+        "MAGA"
       ],
       "article_count": 6,
       "refs": [
@@ -128,24 +93,10 @@
           "category": "usa"
         },
         {
-          "title": "Trump Administration Blocks Microsoft, Adobe From Green Card Program Over Alleged Fraud",
-          "source": "Law Commentary",
-          "url": "https://www.lawcommentary.com/articles/trump-microsoft-adobe-green-card-suspension",
-          "date": "2026-10-08T17:49:34+00:00",
-          "category": "usa"
-        },
-        {
           "title": "Trump Official Lauds Admin. for ‘Protecting White American Men From Discrimination’",
           "source": "Rolling Stone",
           "url": "https://www.rollingstone.com/politics/politics-news/trump-administration-protect-white-american-men-1235639789/",
           "date": "2026-10-08T16:49:10+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "J.D. Vance",
-          "source": "WXOW",
-          "url": "https://www.wxow.com/j-d-vance/image_4d30acbc-ba4a-4c53-8bcb-3816fba5d025.html",
-          "date": "2026-10-08T16:12:00+00:00",
           "category": "usa"
         },
         {
@@ -157,7 +108,7 @@
         }
       ],
       "first_seen": "2026-10-09T06:49:03+00:00",
-      "last_seen": "2026-10-09T18:33:49+00:00"
+      "last_seen": "2026-10-10T06:26:36+00:00"
     }
   ]
 }
