@@ -1,31 +1,39 @@
 {
-  "updated_at": "2026-10-11T06:33:28+00:00",
+  "updated_at": "2026-10-11T17:51:07+00:00",
   "lookback_hours": 48,
-  "model": "GPT-OSS 120B (Groq)",
+  "model": "Gemini 3.6 Flash",
   "status": "ok",
   "themes": [
     {
       "id": "trumprussia-diesel-deal-fallout",
       "title": "Trump‑Russia Diesel Deal Fallout",
-      "blurb": "President Trump’s agreement to purchase Russian diesel sparked outrage in Ukraine and allied nations, with parallel coverage in the United States and France highlighting the diplomatic and security implications.",
+      "blurb": "President Trump's agreement to purchase Russian diesel fuel despite energy sanctions has ignited fierce condemnation from Ukraine and drawn intense media focus across transatlantic outlets. Right-wing and mainstream commentary in both the US and France are tracking the geopolitical blowback as Kyiv accuses Washington of undermining its war effort.",
       "convergence": 5,
       "countries": [
         {
           "name": "🇺🇸 MAGA / Trump",
-          "note": "US media report Trump’s diesel deal with Russia and Ukraine’s anger"
+          "note": "Coverage highlights Trump defending the energy deal to lower domestic fuel prices while dismissing Ukrainian criticism."
         },
         {
           "name": "🇫🇷 Rassemblement National",
-          "note": "French outlets link the diesel pact to broader criticism of Trump’s Russia policy"
+          "note": "French outlets analyze the diplomatic fallout and strain on European-American alliance unity following the deal."
         }
       ],
       "signals": [
-        "shared framing",
-        "reaction to EU‑Russia tension",
-        "policy contagion"
+        "reaction to external event",
+        "geopolitical friction",
+        "sanctions controversy",
+        "transnational media focus"
       ],
-      "article_count": 4,
+      "article_count": 7,
       "refs": [
+        {
+          "title": "'Get a new president': Trump attacks Zelenskyy over Russian oil deal",
+          "source": "SBS",
+          "url": "https://www.sbs.com.au/news/article/trump-zelenskyy-russia-us-oil-deal/hyxyhzn35",
+          "date": "2026-10-11T03:58:26+00:00",
+          "category": "usa"
+        },
         {
           "title": "How Russia turned sanctions into a diesel deal",
           "source": "DW.com",
@@ -56,35 +64,43 @@
         }
       ],
       "first_seen": "2026-10-11T06:33:28+00:00",
-      "last_seen": "2026-10-11T06:33:28+00:00"
+      "last_seen": "2026-10-11T17:51:07+00:00"
     },
     {
       "id": "scandinavian-farright-youth-surge",
       "title": "Scandinavian Far‑Right Youth Surge",
-      "blurb": "Polling data shows a dramatic rise in support for far‑right parties among young voters in Norway and Sweden, indicating a cross‑national generational shift toward nationalist platforms.",
+      "blurb": "Right-wing parties across Scandinavia are navigating major political shifts focused on younger voters. While Norway's Progress Party (FrP) reaches historic polling highs propelled by massive support under age 30, Sweden Democrats (SD) leadership is debating missteps that caused a drop in youth backing.",
       "convergence": 4,
       "countries": [
         {
           "name": "🇳🇴 Fremskrittspartiet",
-          "note": "FrP tops polls among under‑30s with 53% support"
+          "note": "FrP becomes Norway's largest party overall at 33.2%, commanding an extraordinary 53% support among voters under 30."
         },
         {
           "name": "🇸🇪 Sverigedemokraterna",
-          "note": "SD faces criticism for policies that alienate young voters"
+          "note": "SD leaders conduct internal debate after key proposals alienated young voters and dented electoral prospects."
         }
       ],
       "signals": [
-        "parallel electoral dynamics",
-        "shared rhetoric",
-        "youth mobilization"
+        "parallel electoral shifts",
+        "youth voter dynamics",
+        "policy fallout",
+        "regional momentum"
       ],
-      "article_count": 3,
+      "article_count": 4,
       "refs": [
         {
           "title": "Ny måling: FrP suverent største partiet blant unge velgere",
           "source": "inyheter.no",
           "url": "https://inyheter.no/10/10/2026/ny-maling-frp-suverent-storste-partiet-blant-unge-velgere/",
           "date": "2026-10-10T10:35:34+00:00",
+          "category": "norway"
+        },
+        {
+          "title": "Høyre i fritt fall: svakeste måling på 17 år",
+          "source": "Investornytt",
+          "url": "https://www.investornytt.no/nyheter/hoyres-darligste-maling-pa-17-ar-vi-sliter-for-tida/547121",
+          "date": "2026-10-10T09:34:28+00:00",
           "category": "norway"
         },
         {
@@ -103,7 +119,54 @@
         }
       ],
       "first_seen": "2026-10-11T06:33:28+00:00",
-      "last_seen": "2026-10-11T06:33:28+00:00"
+      "last_seen": "2026-10-11T17:51:07+00:00"
+    },
+    {
+      "id": "us-sanctions-and-pressure-on-international-institutions",
+      "title": "US Sanctions and Pressure on International Institutions",
+      "blurb": "The Trump administration's aggressive measures against global judicial bodies—specifically targeting the International Criminal Court (ICC) and criticizing international reports—are triggering debate across borders. Outlets in both the US and France are following the White House's confrontation with international consensus.",
+      "convergence": 3,
+      "countries": [
+        {
+          "name": "🇺🇸 MAGA / Trump",
+          "note": "Administration sanctions the ICC over arrest warrants and publicly attacks UN-related peace prize recognitions."
+        },
+        {
+          "name": "🇫🇷 Rassemblement National",
+          "note": "French media details US ultimatums issued to ICC member states regarding enforcement and cooperation."
+        }
+      ],
+      "signals": [
+        "foreign policy pressure",
+        "pushback against global governance",
+        "unilateral sanctions"
+      ],
+      "article_count": 3,
+      "refs": [
+        {
+          "title": "Why is the Trump administration trying to dismantle the ICC?",
+          "source": "Al Jazeera",
+          "url": "https://www.aljazeera.com/video/inside-story/2026/10/10/why-is-the-trump-administration-trying-to-dismantle-the-icc",
+          "date": "2026-10-10T20:05:01+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Benjamin Netanyahu, Donald Trump criticize Nobel Peace Prize awarded to Navi Pillay",
+          "source": "The Jerusalem Post",
+          "url": "https://www.jpost.com/israel-news/article-911248",
+          "date": "2026-10-10T19:50:16+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "US announces ICC sanctions and issues ultimatum to member states",
+          "source": "Le Monde.fr",
+          "url": "https://www.lemonde.fr/en/international/article/2026/10/10/us-announces-icc-sanctions-and-issues-ultimatum-to-member-states_6758453_4.html",
+          "date": "2026-10-10T10:26:16+00:00",
+          "category": "france"
+        }
+      ],
+      "first_seen": "2026-10-11T17:51:07+00:00",
+      "last_seen": "2026-10-11T17:51:07+00:00"
     }
   ]
 }
