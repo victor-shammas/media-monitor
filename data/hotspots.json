@@ -1,31 +1,95 @@
 {
-  "updated_at": "2026-10-10T17:27:07+00:00",
+  "updated_at": "2026-10-11T06:09:10+00:00",
   "lookback_hours": 48,
   "model": "Gemini 3.6 Flash",
   "status": "ok",
   "hotspots": [
     {
-      "id": "techsector-visa-attack",
-      "title": "Tech‑Sector Visa Attack",
-      "blurb": "The Trump administration has escalated its aggressive crackdown on foreign worker programs, suspending tech giants like Microsoft and Adobe from green card sponsorship over alleged fraud and worker displacement. The offensive has triggered broad corporate pushback, national security mandates on AI firms, and diplomatic friction following JD Vance's sharp rhetoric on Indian H-1B visa holders.",
-      "affect": "Commands maximum attention due to high-stakes conflict between economic nationalism, tech industry leadership, and international diplomatic blowback.",
+      "id": "trump-putin-diesel-deal-backlash",
+      "title": "Trump-Putin Diesel Deal Backlash",
+      "blurb": "President Trump's agreement to import Russian diesel fuel has ignited fierce international outrage, particularly from Ukrainian President Volodymyr Zelenskyy and European allies. The transaction is framed as undermining energy sanctions and providing economic assistance to Moscow during ongoing warfare.",
+      "affect": "The deal commands massive attention due to white-hot outrage framing over geopolitical betrayal, economic sanction-busting, and transactional diplomacy.",
       "intensity": 5,
       "affect_signals": [
-        "alleged visa fraud",
-        "economic protectionism",
-        "cross-source repetition",
-        "diplomatic friction"
+        "outrage-coded language",
+        "geopolitical alarmism",
+        "polarized contention",
+        "cross-source repetition"
+      ],
+      "categories": [
+        "maga_trump",
+        "rassemblement_national"
+      ],
+      "article_count": 5,
+      "refs": [
+        {
+          "title": "How Russia turned sanctions into a diesel deal",
+          "source": "DW.com",
+          "url": "https://www.dw.com/en/how-russia-turned-sanctions-into-a-diesel-deal/video-79629687",
+          "date": "2026-10-10T23:50:52+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "US-Russian diesel deal angers Ukraine",
+          "source": "DW.com",
+          "url": "https://www.dw.com/en/diesel-deal-between-trump-and-putin-angers-ukraine/video-79630136",
+          "date": "2026-10-10T22:43:10+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump and Putin sign diesel deal, angering Ukraine and its allies",
+          "source": "Le Monde.fr",
+          "url": "https://www.lemonde.fr/en/international/article/2026/10/10/trump-and-putin-sign-diesel-deal-angering-ukraine-and-its-allies_6758450_4.html",
+          "date": "2026-10-10T09:38:38+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Zelenskyy furious as Trump announces deal to buy Russian diesel",
+          "source": "The Guardian",
+          "url": "https://www.theguardian.com/us-news/2026/oct/09/trump-putin-russian-diesel-ukraine",
+          "date": "2026-10-10T08:39:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "'Constructive discussions': US, Europe and Ukraine work on joint plan to end war",
+          "source": "France 24",
+          "url": "https://www.france24.com/en/americas/20261010-us-ukrainians-europeans-discuss-new-ideas-to-end-war-diesel",
+          "date": "2026-10-10T07:47:39+00:00",
+          "category": "usa"
+        }
+      ],
+      "first_seen": "2026-10-11T06:09:10+00:00",
+      "last_seen": "2026-10-11T06:09:10+00:00"
+    },
+    {
+      "id": "techsector-visa-attack",
+      "title": "Tech‑Sector Visa Attack",
+      "blurb": "The Trump administration has escalated its immigration crackdown by targeting skilled-worker visas and suspending tech giants like Microsoft from green-card programs. The move, alongside Vice President JD Vance's hostile remarks regarding H-1B workers, has drawn condemnation from tech leaders and foreign diplomats.",
+      "affect": "This story generates strong emotional investment by blending populist anti-immigration rhetoric with high-stakes economic conflict in the technology sector.",
+      "intensity": 4,
+      "affect_signals": [
+        "populist grievance framing",
+        "diplomatic fallout",
+        "economic protectionism pushback",
+        "cross-source repetition"
       ],
       "categories": [
         "maga_trump"
       ],
-      "article_count": 8,
+      "article_count": 4,
       "refs": [
         {
           "title": "JD Vance’s comments about immigrants 'unwarranted' and ‘deeply offensive’, India's Foreign Ministry says",
           "source": "The National",
           "url": "https://www.thenationalnews.com/business/2026/10/09/us-bars-microsoft-adobe-and-indian-it-firms-from-worker-visa-programme/",
           "date": "2026-10-10T06:15:35+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump administration mandates AI incident reporting after Anthropic disclosure: Report",
+          "source": "Anadolu Ajansı",
+          "url": "https://www.aa.com.tr/en/americas/trump-administration-mandates-ai-incident-reporting-after-anthropic-disclosure-report/4084155",
+          "date": "2026-10-10T03:12:56+00:00",
           "category": "usa"
         },
         {
@@ -41,41 +105,27 @@
           "url": "https://www.hungarianconservative.com/articles/tech/us-suspends-microsoft-it-firms-green-card-programme/",
           "date": "2026-10-09T11:26:15+00:00",
           "category": "usa"
-        },
-        {
-          "title": "Trump Administration Blocks Microsoft, Adobe From Green Card Program Over Alleged Fraud",
-          "source": "Law Commentary",
-          "url": "https://www.lawcommentary.com/articles/trump-microsoft-adobe-green-card-suspension",
-          "date": "2026-10-08T17:49:34+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "The Trump administration is suspending Microsoft from a green card program, alleging fraud",
-          "source": "NBC News",
-          "url": "https://www.nbcnews.com/politics/trump-administration/microsoft-suspended-green-cards-h-1b-visa-j-1-visa-vance-rcna602314",
-          "date": "2026-10-08T17:46:09+00:00",
-          "category": "usa"
         }
       ],
       "first_seen": "2026-10-08T18:59:02+00:00",
-      "last_seen": "2026-10-10T17:27:07+00:00"
+      "last_seen": "2026-10-11T06:09:10+00:00"
     },
     {
       "id": "frp-populist-surge-scandal",
       "title": "Frp Populist Surge & Scandal",
-      "blurb": "Norway's Progress Party (Frp) and leader Sylvi Listhaug have reached unprecedented historical polling peaks, securing over 33% overall support and a staggering 53% among voters under 30. This electoral surge is unfolding alongside intra-party squabbles and local controversy surrounding party spending transparency in Tromsø.",
-      "affect": "Drives intense coverage through triumphant momentum over a political generational shift coupled with local governance and funding disputes.",
+      "blurb": "Norway's right-wing Progress Party (Frp) has surged to become the country's largest political party in new polling, capturing 53% support among young voters. However, this momentum is counterbalanced by internal disputes, administrative power struggles, and public scrutiny over party funding.",
+      "affect": "The narrative captures media focus by contrasting a triumphalist populist momentum story against institutional anxiety and internal party friction.",
       "intensity": 4,
       "affect_signals": [
-        "triumphant polling narrative",
-        "youth voter realignment",
-        "populist momentum",
-        "internal trust breakdown"
+        "triumphalist polling narrative",
+        "institutional anxiety",
+        "internal friction",
+        "cross-source repetition"
       ],
       "categories": [
         "fremskrittspartiet"
       ],
-      "article_count": 8,
+      "article_count": 6,
       "refs": [
         {
           "title": "Ny måling: FrP suverent største partiet blant unge velgere",
@@ -92,34 +142,33 @@
           "category": "norway"
         },
         {
+          "title": "Torbjørn Røe Isaksens spådom",
+          "source": "utenfilter.no",
+          "url": "https://www.utenfilter.no/2026/10/10/torbjorn-roe-isaksens-spadom/",
+          "date": "2026-10-10T09:05:47+00:00",
+          "category": "norway"
+        },
+        {
           "title": "Står fram etter Frp-innsynet: – Jeg har mistet all tillit",
           "source": "itromso.no",
           "url": "https://www.itromso.no/nyheter/n/8GPwkA/staar-fram-etter-frp-innsynet-jeg-har-mistet-all-tillit",
           "date": "2026-10-10T08:20:47+00:00",
           "category": "norway"
-        },
-        {
-          "title": "Meningsmåling: Frp og Sylvi Listhaug har aldri vært mer populære: – Voldsom høy måling",
-          "source": "TV 2",
-          "url": "https://www.tv2.no/nyheter/frp-og-sylvi-listhaug-har-aldri-vaert-mer-populaere-voldsom-hoy-maling/19300700/",
-          "date": "2026-10-08T18:05:46+00:00",
-          "category": "norway"
         }
       ],
       "first_seen": "2026-10-08T18:59:02+00:00",
-      "last_seen": "2026-10-10T17:27:07+00:00"
+      "last_seen": "2026-10-11T06:09:10+00:00"
     },
     {
       "id": "trump-rally-tour-blitz",
       "title": "Trump Rally Tour Blitz",
-      "blurb": "President Trump continues a high-tempo swing of midterm campaign rallies across key states, making headlines in Syracuse and San Antonio. The events feature high-profile pop culture appearances, sharp attacks on Democratic leadership, and energized voter mobilizations ahead of the 2026 midterms.",
-      "affect": "Generates strong affective investment through campaign spectacle, combative political attacks, and polarized audience engagement.",
-      "intensity": 4,
+      "blurb": "President Donald Trump and Vice President JD Vance are executing a series of high-energy campaign rallies in key locations like Syracuse and San Antonio. Featuring high-profile guests like Mike Tyson and sharp attacks on state officials, the tour aims to mobilize conservative voters ahead of the 2026 midterms.",
+      "affect": "The rallies drive coverage through aggressive spectacle, partisan combat, and direct populist mobilization of the voter base.",
+      "intensity": 3,
       "affect_signals": [
-        "rally energy",
-        "midterm campaign fervor",
-        "populist spectacle",
-        "polarized attacks"
+        "populist campaign spectacle",
+        "grievance framing",
+        "polarized contention"
       ],
       "categories": [
         "maga_trump"
@@ -141,40 +190,46 @@
           "category": "usa"
         },
         {
+          "title": "POLL: If you could ask President Trump about one CNY topic, what would it be?",
+          "source": "WSTM",
+          "url": "https://cnycentral.com/news/local/poll-if-you-could-ask-president-trump-about-one-topic-what-would-it-be",
+          "date": "2026-10-09T16:47:42+00:00",
+          "category": "usa"
+        },
+        {
           "title": "US President Donald Trump holds a rally in San Antonio",
           "source": "The Lufkin Daily News",
           "url": "https://lufkindailynews.com/news_reuters/national/us-president-donald-trump-holds-a-rally-in-san-antonio/image_cdc41573-d1a8-52d8-90c4-ec36d88061e9.html",
           "date": "2026-10-09T10:20:38+00:00",
           "category": "usa"
-        },
-        {
-          "title": "President Trump to visit Syracuse Friday for midterm rally",
-          "source": "Spectrum News",
-          "url": "https://spectrumlocalnews.com/nys/central-ny/politics/2026/10/08/trump-to-visit-syracuse-friday-for-midterm-rally-",
-          "date": "2026-10-08T22:58:00+00:00",
-          "category": "usa"
         }
       ],
       "first_seen": "2026-10-08T18:59:02+00:00",
-      "last_seen": "2026-10-10T17:27:07+00:00"
+      "last_seen": "2026-10-11T06:09:10+00:00"
     },
     {
       "id": "trump-administration-legal-battles",
       "title": "Trump Administration Legal Battles",
-      "blurb": "The Trump administration is embroiled in a series of high-profile legal fights, including lawsuits by Arlington County over a proposed 250-foot Triumphal Arch and Wisconsin Democrats challenging federal TV ads as illegal political propaganda. Meanwhile, the administration is suing municipal leadership in Denver over local ordinances banning law enforcement mask use.",
-      "affect": "Captures sustained focus due to intense institutional conflict and courtroom battles testing federal authority against local and opposition challenges.",
+      "blurb": "The Trump administration faces a rising tide of legal challenges, ranging from lawsuits over tax-funded campaign-style television ads to local disputes over law enforcement mask bans and national monument approvals. Simultaneously, the Department of Justice has launched an antitrust probe into major television networks over White House pool coverage.",
+      "affect": "These legal actions attract steady coverage by highlighting persistent institutional warfare between the federal executive branch, state entities, and media organizations.",
       "intensity": 3,
       "affect_signals": [
-        "litigation escalation",
-        "institutional clash",
-        "unauthorized monument controversy",
-        "partisan warfare"
+        "institutional warfare",
+        "legal retaliation tone",
+        "polarized contention"
       ],
       "categories": [
         "maga_trump"
       ],
       "article_count": 5,
       "refs": [
+        {
+          "title": "U.S. DOJ Will Probe TV Networks Over President Trump’s Pool Coverage",
+          "source": "Variety",
+          "url": "https://variety.com/2026/tv/news/justice-department-investigation-tv-networks-trump-pool-1236907815/",
+          "date": "2026-10-10T23:55:00+00:00",
+          "category": "usa"
+        },
         {
           "title": "Wisconsin Democrats sue Trump administration for propaganda TV ads",
           "source": "Civic Media",
@@ -195,66 +250,10 @@
           "url": "https://www.pbs.org/newshour/nation/trumps-memorial-arch-faces-a-new-lawsuit-from-arlington-county-virginia",
           "date": "2026-10-09T16:12:34+00:00",
           "category": "usa"
-        },
-        {
-          "title": "Environmentalists sue Trump administration over changes to rural energy program",
-          "source": "WPR",
-          "url": "https://www.wpr.org/news/environmentalists-sue-trump-administration-changes-rural-energy-program",
-          "date": "2026-10-09T10:00:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Arlington County sues Trump administration over Triumphal Arch project",
-          "source": "WJLA",
-          "url": "https://wjla.com/news/local/arlington-trump-arch-project-controversy-triumphal-lawsuit-construction-public-safety-military-complex-lawsuits-national-park-service-memorial-circle-emergency-service",
-          "date": "2026-10-09T03:42:04+00:00",
-          "category": "usa"
         }
       ],
       "first_seen": "2026-10-10T06:11:52+00:00",
-      "last_seen": "2026-10-10T17:27:07+00:00"
-    },
-    {
-      "id": "immigration-enforcement-crackdown",
-      "title": "Immigration Enforcement Crackdown",
-      "blurb": "Aggressive federal immigration initiatives face mounting scrutiny following investigative reports revealing that over 500 U.S. citizens have been detained during recent enforcement sweeps. Simultaneously, President Trump heightened nativist rhetoric during regional visits, urging Minnesota residents to 'fight back' against Somali immigrant communities.",
-      "affect": "Elicits sharp emotional investment through outrage over civil liberties detentions and racially charged political rhetoric.",
-      "intensity": 3,
-      "affect_signals": [
-        "alarmist rhetoric",
-        "civil liberties alarm",
-        "enforcement overreach",
-        "xenophobic framing"
-      ],
-      "categories": [
-        "maga_trump"
-      ],
-      "article_count": 3,
-      "refs": [
-        {
-          "title": "Trump administration sues Denver over law enforcement mask ban",
-          "source": "Colorado Newsline",
-          "url": "https://coloradonewsline.com/2026/10/09/trump-administration-sues-denver-over-law-enforcement-mask-ban/",
-          "date": "2026-10-09T22:05:54+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "President Trump tells Minnesota to ‘fight back’ against Somali immigrants",
-          "source": "Minnesota Reformer",
-          "url": "https://minnesotareformer.com/2026/10/08/president-trump-tells-minnesota-to-fight-back-against-somali-immigrants/",
-          "date": "2026-10-09T02:00:05+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "More than 500 U.S. citizens have been detained during the Trump administration's immigration operations",
-          "source": "MPR News",
-          "url": "https://www.mprnews.org/episode/2026/10/07/us-citizens-detained-during-trump-administrations-immigration-operations",
-          "date": "2026-10-08T18:11:00+00:00",
-          "category": "usa"
-        }
-      ],
-      "first_seen": "2026-10-08T18:59:02+00:00",
-      "last_seen": "2026-10-10T17:27:07+00:00"
+      "last_seen": "2026-10-11T06:09:10+00:00"
     }
   ]
 }
