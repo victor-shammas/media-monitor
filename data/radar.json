@@ -1,94 +1,42 @@
 {
-  "updated_at": "2026-10-12T06:38:52+00:00",
+  "updated_at": "2026-10-12T21:27:37+00:00",
   "lookback_hours": 48,
-  "model": "Gemini 3.6 Flash",
+  "model": "GPT-OSS 120B (Groq)",
   "status": "ok",
   "themes": [
     {
-      "id": "trumprussia-diesel-deal-fallout",
-      "title": "Trump‑Russia Diesel Deal Fallout",
-      "blurb": "Donald Trump's agreement to import Russian diesel to lower US domestic fuel prices has triggered severe international and domestic backlash. The agreement has drawn sharp condemnation from Ukrainian leadership and European allies while provoking bipartisan criticism in Washington over financial lifelines to Moscow.",
-      "convergence": 5,
+      "id": "rightwing-media-critique-surge",
+      "title": "Right‑Wing Media Critique Surge",
+      "blurb": "Across the Atlantic, right‑wing outlets and politicians intensify attacks on mainstream media, framing journalists as hostile elites and alleging antitrust violations. In the US, the DOJ probes major TV networks over the suspension of White House pool coverage, while Norwegian FrP leaders denounce sensationalist reporting, and French RN members publicly challenge media accusations, signalling a coordinated narrative of media distrust.",
+      "convergence": 4,
       "countries": [
         {
           "name": "🇺🇸 MAGA / Trump",
-          "note": "Bipartisan senators and Ukrainian officials condemn Trump's deal to import Russian energy."
+          "note": "DOJ investigation into TV networks for halting Trump‑focused coverage; leaders claim media bias."
+        },
+        {
+          "name": "🇳🇴 Fremskrittspartiet",
+          "note": "Listhaug criticises sensational language used by media, urging serious political discourse."
         },
         {
           "name": "🇫🇷 Rassemblement National",
-          "note": "French conservative media reports extensively on Ukrainian fury and transatlantic discord over the bilateral energy deal."
+          "note": "RN president Jordan Bardella legally challenges media accusations of antisemitism."
         }
       ],
       "signals": [
-        "diplomatic backlash",
-        "energy policy controversy",
-        "transatlantic friction",
-        "reaction to US decision"
+        "shared framing",
+        "coordinated messaging",
+        "anti‑media rhetoric"
       ],
-      "article_count": 8,
+      "article_count": 5,
       "refs": [
         {
-          "title": "Senators urge Trump administration to reverse Russian diesel plan to lower fuel prices",
-          "source": "WVLT",
-          "url": "https://www.wvlt.tv/2026/10/11/senators-urge-trump-administration-reverse-russian-diesel-plan-lower-fuel-prices/",
-          "date": "2026-10-11T22:03:00+00:00",
+          "title": "Donald Trump Press Fight Escalates as DOJ Probes 5 Major TV Networks",
+          "source": "Yahoo",
+          "url": "https://www.yahoo.com/news/politics/articles/donald-trump-press-fight-escalates-072659030.html",
+          "date": "2026-10-12T07:26:59+00:00",
           "category": "usa"
         },
-        {
-          "title": "'Get a new president': Trump attacks Zelenskyy over Russian oil deal",
-          "source": "SBS",
-          "url": "https://www.sbs.com.au/news/article/trump-zelenskyy-russia-us-oil-deal/hyxyhzn35",
-          "date": "2026-10-11T03:58:26+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "How Russia turned sanctions into a diesel deal",
-          "source": "DW.com",
-          "url": "https://www.dw.com/en/how-russia-turned-sanctions-into-a-diesel-deal/video-79629687",
-          "date": "2026-10-10T23:50:52+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Trump and Putin sign diesel deal, angering Ukraine and its allies",
-          "source": "Le Monde.fr",
-          "url": "https://www.lemonde.fr/en/international/article/2026/10/10/trump-and-putin-sign-diesel-deal-angering-ukraine-and-its-allies_6758450_4.html",
-          "date": "2026-10-10T09:38:38+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Zelenskyy furious as Trump announces deal to buy Russian diesel",
-          "source": "The Guardian",
-          "url": "https://www.theguardian.com/us-news/2026/oct/09/trump-putin-russian-diesel-ukraine",
-          "date": "2026-10-10T08:39:00+00:00",
-          "category": "usa"
-        }
-      ],
-      "first_seen": "2026-10-11T06:33:28+00:00",
-      "last_seen": "2026-10-12T06:38:52+00:00"
-    },
-    {
-      "id": "scandinavian-farright-youth-surge",
-      "title": "Scandinavian Far‑Right Youth Surge",
-      "blurb": "Right-wing populist parties in Scandinavia continue to demonstrate strong political momentum, driven by surging popularity among young voters. Norway's Progress Party (FrP) has posted record polling figures among youth, while political friction around populist influence persists in neighboring Sweden.",
-      "convergence": 3,
-      "countries": [
-        {
-          "name": "🇳🇴 Fremskrittspartiet",
-          "note": "FrP hits historic poll highs, becoming Norway's largest party overall and capturing 53% support among under-30 voters."
-        },
-        {
-          "name": "🇸🇪 Sverigedemokraterna",
-          "note": "Sweden Democrats remain a primary focal point of institutional and civic friction regarding right-wing political influence."
-        }
-      ],
-      "signals": [
-        "youth demographic shift",
-        "polling surges",
-        "nordic political realignment",
-        "populist momentum"
-      ],
-      "article_count": 8,
-      "refs": [
         {
           "title": "Takk til Listhaug",
           "source": "Nationen",
@@ -96,126 +44,12 @@
           "date": "2026-10-11T05:42:15+00:00",
           "category": "norway"
         },
-        {
-          "title": "Kyrkoherde frias efter SD-kritiskt inlägg på församlingens Facebook",
-          "source": "Dagen",
-          "url": "https://www.dagen.se/nyheter/kyrkoherde-frias-efter-sd-kritiskt-inlaegg-pa-foersamlingens-facebook/10571916",
-          "date": "2026-10-11T03:00:00+00:00",
-          "category": "sweden"
-        },
-        {
-          "title": "Ny måling: FrP suverent største partiet blant unge velgere",
-          "source": "inyheter.no",
-          "url": "https://inyheter.no/10/10/2026/ny-maling-frp-suverent-storste-partiet-blant-unge-velgere/",
-          "date": "2026-10-10T10:35:34+00:00",
-          "category": "norway"
-        },
-        {
-          "title": "Høyre i fritt fall: svakeste måling på 17 år",
-          "source": "Investornytt",
-          "url": "https://www.investornytt.no/nyheter/hoyres-darligste-maling-pa-17-ar-vi-sliter-for-tida/547121",
-          "date": "2026-10-10T09:34:28+00:00",
-          "category": "norway"
-        },
-        {
-          "title": "Torbjørn Røe Isaksens spådom",
-          "source": "utenfilter.no",
-          "url": "https://www.utenfilter.no/2026/10/10/torbjorn-roe-isaksens-spadom/",
-          "date": "2026-10-10T09:05:47+00:00",
-          "category": "norway"
-        }
-      ],
-      "first_seen": "2026-10-11T06:33:28+00:00",
-      "last_seen": "2026-10-12T06:38:52+00:00"
-    },
-    {
-      "id": "us-sanctions-and-pressure-on-international-institutions",
-      "title": "US Sanctions and Pressure on International Institutions",
-      "blurb": "The US administration's hostile posture toward multilateral institutions, including sanctions targeting the International Criminal Court (ICC) and sharp attacks on global prize committees, resonates across international right-wing coverage. The policy reflects a broader nationalist strategy to challenge international judicial oversight.",
-      "convergence": 3,
-      "countries": [
-        {
-          "name": "🇺🇸 MAGA / Trump",
-          "note": "Trump administration sanctions ICC officials and issues ultimatums to crippling effect following warrants for allied leaders."
-        },
-        {
-          "name": "🇫🇷 Rassemblement National",
-          "note": "French outlets track Washington's sanctions and demands directed at ICC member states."
-        }
-      ],
-      "signals": [
-        "sovereignty rhetoric",
-        "institutional friction",
-        "reaction to international rulings",
-        "anti-globalist framing"
-      ],
-      "article_count": 3,
-      "refs": [
-        {
-          "title": "Why is the Trump administration trying to dismantle the ICC?",
-          "source": "Al Jazeera",
-          "url": "https://www.aljazeera.com/video/inside-story/2026/10/10/why-is-the-trump-administration-trying-to-dismantle-the-icc",
-          "date": "2026-10-10T20:05:01+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Benjamin Netanyahu, Donald Trump criticize Nobel Peace Prize awarded to Navi Pillay",
-          "source": "The Jerusalem Post",
-          "url": "https://www.jpost.com/israel-news/article-911248",
-          "date": "2026-10-10T19:50:16+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "US announces ICC sanctions and issues ultimatum to member states",
-          "source": "Le Monde.fr",
-          "url": "https://www.lemonde.fr/en/international/article/2026/10/10/us-announces-icc-sanctions-and-issues-ultimatum-to-member-states_6758453_4.html",
-          "date": "2026-10-10T10:26:16+00:00",
-          "category": "france"
-        }
-      ],
-      "first_seen": "2026-10-11T17:51:07+00:00",
-      "last_seen": "2026-10-12T06:38:52+00:00"
-    },
-    {
-      "id": "populist-leaders-clash-with-mainstream-media-outlets",
-      "title": "Populist Leaders Clash with Mainstream Media Outlets",
-      "blurb": "Conservative and populist figures across multiple nations are intensifying confrontations with mainstream news media. Actions range from DOJ antitrust investigations into US news pools following press access bans to legal defamation battles in France and public attacks on media sensationalism in Norway.",
-      "convergence": 3,
-      "countries": [
-        {
-          "name": "🇺🇸 MAGA / Trump",
-          "note": "Justice Department investigates major TV networks for potential antitrust violations after they suspended pool coverage in solidarity with barred outlets."
-        },
-        {
-          "name": "🇫🇷 Rassemblement National",
-          "note": "Jordan Bardella files legal actions against investigative news outlet Mediapart over reports on historical antisemitic posts."
-        },
-        {
-          "name": "🇳🇴 Fremskrittspartiet",
-          "note": "FrP leader Sylvi Listhaug publicly attacks press outlets for using sensationalist language to undermine conservative discourse."
-        }
-      ],
-      "signals": [
-        "media bias accusations",
-        "legal action against press",
-        "press access disputes",
-        "anti-establishment rhetoric"
-      ],
-      "article_count": 8,
-      "refs": [
         {
           "title": "RN : Jordan Bardella à l’offensive pour tourner la page",
           "source": "lejdd.fr",
           "url": "https://www.lejdd.fr/politique/rn-jordan-bardella-a-loffensive-pour-tourner-la-page-185709",
           "date": "2026-10-11T05:50:03+00:00",
           "category": "france"
-        },
-        {
-          "title": "Takk til Listhaug",
-          "source": "Nationen",
-          "url": "https://www.nationen.no/listhaug-etterspor-spraklig-skikk-og-bruk-hva-med-henne-selv/o/80-148-41168",
-          "date": "2026-10-11T05:42:15+00:00",
-          "category": "norway"
         },
         {
           "title": "US justice department investigating TV networks over Trump pool coverage",
@@ -230,17 +64,68 @@
           "url": "https://www.kptv.com/2026/10/11/doj-says-its-investigating-whether-white-house-tv-pools-coverage-halt-violated-antitrust-law/",
           "date": "2026-10-11T02:24:00+00:00",
           "category": "usa"
-        },
-        {
-          "title": "Mediapart dévoile de nouvelles preuves reliant Jordan Bardella à des messages antisémites",
-          "source": "L'Est Républicain",
-          "url": "https://www.estrepublicain.fr/videos/mediapart-devoile-de-nouvelles-preuves-reliant-jordan-bardella-a-des-messages-antisemites-3mllxk5?playlist=qls5zz",
-          "date": "2026-10-10T10:33:13+00:00",
-          "category": "france"
         }
       ],
-      "first_seen": "2026-10-12T06:38:52+00:00",
-      "last_seen": "2026-10-12T06:38:52+00:00"
+      "first_seen": "2026-10-12T21:27:37+00:00",
+      "last_seen": "2026-10-12T21:27:37+00:00"
+    },
+    {
+      "id": "intraparty-power-struggles",
+      "title": "Intra‑Party Power Struggles",
+      "blurb": "Right‑wing parties confront internal disputes over leadership and strategy. In the US, Trump pressures Senate Republicans and fuels GOP factionalism ahead of midterms. Norway’s Progress Party experiences infighting between FrP and Høyre and leadership contests, while France’s RN mounts legal offensives to defend its leader. These parallel battles reveal a transnational pattern of intra‑party tension.",
+      "convergence": 3,
+      "countries": [
+        {
+          "name": "🇺🇸 MAGA / Trump",
+          "note": "Trump urges Senator Fetterman to switch parties and attacks GOP rivals at rallies."
+        },
+        {
+          "name": "🇳🇴 Fremskrittspartiet",
+          "note": "FrP refuses debate with Høyre, internal leadership nominations and criticism of media."
+        },
+        {
+          "name": "🇫🇷 Rassemblement National",
+          "note": "Bardella launches legal offensive against media accusations, positioning himself before elections."
+        }
+      ],
+      "signals": [
+        "parallel elections",
+        "leadership contention",
+        "political infighting"
+      ],
+      "article_count": 4,
+      "refs": [
+        {
+          "title": "President Donald Trump urges Pennsylvania Senator John Fetterman to switch parties and become a Republican",
+          "source": "6abc Philadelphia",
+          "url": "https://6abc.com/post/president-donald-trump-urges-pennsylvania-senator-john-fetterman-switch-parties-become-republican/19931636/",
+          "date": "2026-10-12T10:07:30+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Sylvi Listhaug, Frp | Ut mot Frp: – Nekter å møte til «parterapi»",
+          "source": "Nettavisen",
+          "url": "https://www.nettavisen.no/nyheter/ut-mot-frp-nekter-a-mote-til-parterapi/s/80-95-150776",
+          "date": "2026-10-12T08:29:52+00:00",
+          "category": "norway"
+        },
+        {
+          "title": "RN : Jordan Bardella à l’offensive pour tourner la page",
+          "source": "lejdd.fr",
+          "url": "https://www.lejdd.fr/politique/rn-jordan-bardella-a-loffensive-pour-tourner-la-page-185709",
+          "date": "2026-10-11T05:50:03+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Får ofte høre at han «ikke er så verst til å være Frp-er»: Nå er Arne (61) innstilt helt i toppen",
+          "source": "iFinnmark",
+          "url": "https://www.ifinnmark.no/far-ofte-hore-at-han-ikke-er-sa-verst-til-a-vare-frp-er-na-er-arne-61-innstilt-helt-i-toppen/s/80-81-31893",
+          "date": "2026-10-12T09:14:43+00:00",
+          "category": "norway"
+        }
+      ],
+      "first_seen": "2026-10-12T21:27:37+00:00",
+      "last_seen": "2026-10-12T21:27:37+00:00"
     }
   ]
 }
