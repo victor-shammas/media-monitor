@@ -1,26 +1,41 @@
 {
-  "updated_at": "2026-10-12T06:18:42+00:00",
+  "updated_at": "2026-10-12T21:23:27+00:00",
   "lookback_hours": 48,
-  "model": "Gemini 3.6 Flash",
+  "model": "GPT-OSS 120B (Groq)",
   "status": "ok",
   "hotspots": [
     {
       "id": "trump-putin-diesel-deal-backlash",
       "title": "Trump-Putin Diesel Deal Backlash",
-      "blurb": "Donald Trump's agreement to purchase Russian diesel has sparked severe bipartisan pushback from US senators and widespread anger from Ukrainian leadership. Trump escalated the row by publicly attacking Ukrainian President Volodymyr Zelenskyy, telling him to 'get a new president,' while claiming an unverified energy ceasefire.",
-      "affect": "A high-stakes geopolitical narrative combining accusations of foreign betrayal with direct personal attacks between political leaders generates maximum outrage.",
+      "blurb": "President Trump's agreement to purchase Russian diesel has ignited fierce criticism from lawmakers, Ukraine, and the media, framing it as a betrayal of sanctions and a boost to Russia’s war effort.",
+      "affect": "The story dominates coverage with alarmist language, bipartisan outrage, and claims of national security jeopardy.",
       "intensity": 5,
       "affect_signals": [
-        "geopolitical outrage",
-        "bipartisan rebellion",
-        "accusations of betrayal",
-        "diplomatic fallout"
+        "polarized contention",
+        "alarmist framing",
+        "cross‑source repetition",
+        "national security panic"
       ],
       "categories": [
-        "maga_trump"
+        "us_politics",
+        "foreign_policy"
       ],
-      "article_count": 8,
+      "article_count": 6,
       "refs": [
+        {
+          "title": "President Trump reaches diesel deal with Russia",
+          "source": "WSMV",
+          "url": "https://www.wsmv.com/video/2026/10/12/president-trump-reaches-diesel-deal-with-russia/",
+          "date": "2026-10-12T19:39:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "President Trump Has Struck A Deal With Putin For Russian Diesel To Ease Prices, But The Unintended Consequences Could Be Devastating",
+          "source": "24/7 Wall St.",
+          "url": "https://247wallst.com/investing/2026/10/12/president-trump-has-struck-a-deal-with-putin-for-russian-diesel-to-ease-prices-but-the-unintended-consequences-could-be-devastating/",
+          "date": "2026-10-12T08:36:00+00:00",
+          "category": "usa"
+        },
         {
           "title": "Senators urge Trump administration to reverse Russian diesel plan to lower fuel prices",
           "source": "WVLT",
@@ -29,10 +44,10 @@
           "category": "usa"
         },
         {
-          "title": "'Get a new president': Trump attacks Zelenskyy over Russian oil deal",
-          "source": "SBS",
-          "url": "https://www.sbs.com.au/news/article/trump-zelenskyy-russia-us-oil-deal/hyxyhzn35",
-          "date": "2026-10-11T03:58:26+00:00",
+          "title": "How Russia turned sanctions into a diesel deal",
+          "source": "DW.com",
+          "url": "https://www.dw.com/en/how-russia-turned-sanctions-into-a-diesel-deal/video-79629687",
+          "date": "2026-10-10T23:50:52+00:00",
           "category": "usa"
         },
         {
@@ -43,40 +58,55 @@
           "category": "usa"
         },
         {
-          "title": "Trump and Putin sign diesel deal, angering Ukraine and its allies",
-          "source": "Le Monde.fr",
-          "url": "https://www.lemonde.fr/en/international/article/2026/10/10/trump-and-putin-sign-diesel-deal-angering-ukraine-and-its-allies_6758450_4.html",
-          "date": "2026-10-10T09:38:38+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Zelenskyy furious as Trump announces deal to buy Russian diesel",
-          "source": "The Guardian",
-          "url": "https://www.theguardian.com/us-news/2026/oct/09/trump-putin-russian-diesel-ukraine",
-          "date": "2026-10-10T08:39:00+00:00",
+          "title": "Pres. Donald Trump says Russia and Ukraine reach ‘energy ceasefire’ but gives no details",
+          "source": "Chicago Tribune",
+          "url": "https://www.chicagotribune.com/2026/10/11/trump-says-russia-and-ukraine-reach-energy-ceasefire/",
+          "date": "2026-10-11T18:21:01+00:00",
           "category": "usa"
         }
       ],
       "first_seen": "2026-10-11T06:09:10+00:00",
-      "last_seen": "2026-10-12T06:18:42+00:00"
+      "last_seen": "2026-10-12T21:23:27+00:00"
     },
     {
       "id": "trump-administration-legal-battles",
       "title": "Trump Administration Legal Battles",
-      "blurb": "A federal judge ordered the Trump administration to immediately cease airing $20 million in taxpayer-funded promotional TV ads, ruling them illegal political misuse. Meanwhile, Trump's Justice Department launched antitrust investigations targeting major television networks that suspended press pool coverage after the administration banned selected journalists.",
-      "affect": "Escalating legal warfare over state-funded propaganda and administration retaliation against news networks drives intense media polarization.",
-      "intensity": 4,
+      "blurb": "Federal judges have repeatedly ordered the Trump administration to halt taxpayer‑funded TV ads, labeling them illegal political propaganda and sparking a legal showdown over executive use of public money.",
+      "affect": "The cascade of rulings fuels anger and claims of governmental overreach, creating a charged legal‑political battle.",
+      "intensity": 5,
       "affect_signals": [
-        "press freedom clash",
-        "judicial intervention",
-        "weaponized justice rhetoric",
-        "retaliatory antitrust probes"
+        "outrage‑coded language",
+        "repetitive injunctions",
+        "political weaponization narrative",
+        "legal drama emphasis"
       ],
       "categories": [
-        "maga_trump"
+        "us_government",
+        "legal"
       ],
       "article_count": 7,
       "refs": [
+        {
+          "title": "Judge orders the Trump administration to cancel taxpayer-funded TV ads",
+          "source": "PBS",
+          "url": "https://www.pbs.org/newshour/amp/politics/judge-orders-the-trump-administration-to-cancel-taxpayer-funded-tv-ads",
+          "date": "2026-10-12T19:00:14+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump administration ordered to cancel taxpayer-funded TV ads",
+          "source": "CBS News",
+          "url": "https://www.cbsnews.com/news/trump-taxpayer-funded-ads-judge-cancels/",
+          "date": "2026-10-12T03:18:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Judge orders Trump administration to stop airing controversial ads",
+          "source": "LiveNOW from FOX",
+          "url": "https://www.livenowfox.com/news/judge-orders-trump-administration-stop-airing-controversial-ads",
+          "date": "2026-10-12T02:02:10+00:00",
+          "category": "usa"
+        },
         {
           "title": "Federal judge orders pro-Trump TV ads funded by taxpayers off air immediately",
           "source": "NBC News",
@@ -85,10 +115,53 @@
           "category": "usa"
         },
         {
+          "title": "Judge orders Trump administration to immediately stop taxpayer-funded TV ads",
+          "source": "CNBC",
+          "url": "https://www.cnbc.com/2026/10/11/trump-ads-dhs-judge-order.html",
+          "date": "2026-10-12T00:29:00+00:00",
+          "category": "usa"
+        },
+        {
           "title": "Judge orders the Trump administration to cancel taxpayer-funded promotional TV ads | National News | 2news.com",
           "source": "KTVN",
           "url": "http://www.ktvn.com/news/national/judge-orders-the-trump-administration-to-cancel-taxpayer-funded-promotional-tv-ads/article_18dc5876-18e0-536e-bd83-0378484354f1.html",
           "date": "2026-10-12T00:16:34+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "The Trump Administration Says Its Promotional Ads End Sunday",
+          "source": "notus.org",
+          "url": "https://www.notus.org/whitehouse/trump-promotional-ads-watchdog-lawsuit",
+          "date": "2026-10-11T22:23:40+00:00",
+          "category": "usa"
+        }
+      ],
+      "first_seen": "2026-10-10T06:11:52+00:00",
+      "last_seen": "2026-10-12T21:23:27+00:00"
+    },
+    {
+      "id": "doj-probe-of-tv-network-antitrust",
+      "title": "DOJ Probe of TV Network Antitrust",
+      "blurb": "The Justice Department is investigating whether major TV networks violated antitrust law by halting the White House press pool after Trump barred certain outlets, prompting heated debate over media freedom and political retaliation.",
+      "affect": "Coverage is rife with accusations of censorship, partisan attacks, and fears of a crackdown on the press.",
+      "intensity": 4,
+      "affect_signals": [
+        "polarized contention",
+        "media freedom alarm",
+        "cross‑source echo",
+        "government overreach framing"
+      ],
+      "categories": [
+        "media",
+        "law"
+      ],
+      "article_count": 5,
+      "refs": [
+        {
+          "title": "Donald Trump Press Fight Escalates as DOJ Probes 5 Major TV Networks",
+          "source": "Yahoo",
+          "url": "https://www.yahoo.com/news/politics/articles/donald-trump-press-fight-escalates-072659030.html",
+          "date": "2026-10-12T07:26:59+00:00",
           "category": "usa"
         },
         {
@@ -106,6 +179,13 @@
           "category": "usa"
         },
         {
+          "title": "DOJ says it’s investigating whether White House TV pool’s coverage halt violated antitrust law",
+          "source": "KPTV",
+          "url": "https://www.kptv.com/2026/10/11/doj-says-its-investigating-whether-white-house-tv-pools-coverage-halt-violated-antitrust-law/",
+          "date": "2026-10-11T02:24:00+00:00",
+          "category": "usa"
+        },
+        {
           "title": "U.S. DOJ Will Probe TV Networks Over President Trump’s Pool Coverage",
           "source": "Variety",
           "url": "https://variety.com/2026/tv/news/justice-department-investigation-tv-networks-trump-pool-1236907815/",
@@ -113,75 +193,89 @@
           "category": "usa"
         }
       ],
-      "first_seen": "2026-10-10T06:11:52+00:00",
-      "last_seen": "2026-10-12T06:18:42+00:00"
+      "first_seen": "2026-10-12T21:23:27+00:00",
+      "last_seen": "2026-10-12T21:23:27+00:00"
     },
     {
       "id": "frp-populist-surge-scandal",
-      "title": "Frp Populist Surge & Scandal",
-      "blurb": "Norway's Progress Party (FrP) reached a landmark 33.2% in national polls, taking the top spot overall and securing 53% support among voters under 30. However, party leader Sylvi Listhaug continues to slam mainstream media framing while local party transparency scandals in Tromsø erode voter trust.",
-      "affect": "Triumphant narrative of establishment political displacement clashes with media grievance and internal accountability disputes.",
-      "intensity": 4,
+      "title": "FrP Populist Surge & Scandal",
+      "blurb": "Norway's Progress Party (FrP) enjoys a rapid rise among young women while internal disputes flare, including refusals to debate with Høyre and criticism of sensational media coverage.",
+      "affect": "The narrative blends triumph over gender gaps with intra‑party conflict, driving emotionally charged reporting.",
+      "intensity": 3,
       "affect_signals": [
-        "triumphant polling surge",
-        "media-bias grievance",
-        "establishment downfall narrative",
-        "local financial scandal"
+        "moral victory framing",
+        "intra‑party feud",
+        "gender gap rhetoric",
+        "media criticism tone"
       ],
       "categories": [
-        "fremskrittspartiet"
+        "norway_politics"
       ],
-      "article_count": 7,
+      "article_count": 5,
       "refs": [
+        {
+          "title": "FrP vokser kraftig blant unge kvinner – kjønnsgapet krymper",
+          "source": "Avisen Minerva",
+          "url": "https://www.minerva.no/fremskrittspartiet-kjonnspolarisering-opinion/frp-vokser-kraftig-blant-unge-kvinner/520171",
+          "date": "2026-10-12T10:09:15+00:00",
+          "category": "norway"
+        },
+        {
+          "title": "Det er lett å rope høyt fra evig opposisjon",
+          "source": "fvn.no",
+          "url": "https://www.fvn.no/mening/debattinnlegg/o/zl69ew/det-er-lett-aa-rope-hoeyt-fra-evig-opposisjon",
+          "date": "2026-10-12T09:10:38+00:00",
+          "category": "norway"
+        },
+        {
+          "title": "Sylvi Listhaug, Frp | Ut mot Frp: – Nekter å møte til «parterapi»",
+          "source": "Nettavisen",
+          "url": "https://www.nettavisen.no/nyheter/ut-mot-frp-nekter-a-mote-til-parterapi/s/80-95-150776",
+          "date": "2026-10-12T08:29:52+00:00",
+          "category": "norway"
+        },
+        {
+          "title": "Får ofte høre at han «ikke er så verst til å være Frp-er»: Nå er Arne (61) innstilt helt i toppen",
+          "source": "iFinnmark",
+          "url": "https://www.ifinnmark.no/far-ofte-hore-at-han-ikke-er-sa-verst-til-a-vare-frp-er-na-er-arne-61-innstilt-helt-i-toppen/s/80-81-31893",
+          "date": "2026-10-12T09:14:43+00:00",
+          "category": "norway"
+        },
         {
           "title": "Takk til Listhaug",
           "source": "Nationen",
           "url": "https://www.nationen.no/listhaug-etterspor-spraklig-skikk-og-bruk-hva-med-henne-selv/o/80-148-41168",
           "date": "2026-10-11T05:42:15+00:00",
           "category": "norway"
-        },
-        {
-          "title": "Ny måling: FrP suverent største partiet blant unge velgere",
-          "source": "inyheter.no",
-          "url": "https://inyheter.no/10/10/2026/ny-maling-frp-suverent-storste-partiet-blant-unge-velgere/",
-          "date": "2026-10-10T10:35:34+00:00",
-          "category": "norway"
-        },
-        {
-          "title": "Høyre i fritt fall: svakeste måling på 17 år",
-          "source": "Investornytt",
-          "url": "https://www.investornytt.no/nyheter/hoyres-darligste-maling-pa-17-ar-vi-sliter-for-tida/547121",
-          "date": "2026-10-10T09:34:28+00:00",
-          "category": "norway"
-        },
-        {
-          "title": "Står fram etter Frp-innsynet: – Jeg har mistet all tillit",
-          "source": "itromso.no",
-          "url": "https://www.itromso.no/nyheter/n/8GPwkA/staar-fram-etter-frp-innsynet-jeg-har-mistet-all-tillit",
-          "date": "2026-10-10T08:20:47+00:00",
-          "category": "norway"
         }
       ],
       "first_seen": "2026-10-08T18:59:02+00:00",
-      "last_seen": "2026-10-12T06:18:42+00:00"
+      "last_seen": "2026-10-12T21:23:27+00:00"
     },
     {
       "id": "trump-rally-tour-blitz",
       "title": "Trump Rally Tour Blitz",
-      "blurb": "President Donald Trump and Vice President JD Vance are conducting a series of high-energy midterm campaign rallies in swing and key states. At a Tennessee rally, Trump made headlines by promising $5,000 annual cash payments to all adult US citizens if Republicans win congressional majorities.",
-      "affect": "Audacious populist economic promises combined with campaign tour excitement generate strong emotional buy-in among supporters.",
-      "intensity": 3,
+      "blurb": "Amid low approval and dwindling crowds, Trump crisscrosses swing states delivering promises of $5,000 annual payments and even renaming an ocean, while rally footage fuels both fervor and mockery.",
+      "affect": "The rallies are portrayed as a high‑stakes showdown for the midterms, packed with hyperbolic promises and viral moments.",
+      "intensity": 4,
       "affect_signals": [
-        "populist giveaway promises",
-        "electoral mobilization",
-        "high-energy rally rhetoric",
-        "partisan cheerleading"
+        "triumphalist language",
+        "viral rally moments",
+        "midterm stakes framing",
+        "polarized audience reaction"
       ],
       "categories": [
-        "maga_trump"
+        "us_politics"
       ],
-      "article_count": 6,
+      "article_count": 5,
       "refs": [
+        {
+          "title": "Facing smaller crowds and low approval ratings, Trump tries to rally the base for the midterms",
+          "source": "NBC News",
+          "url": "https://www.nbcnews.com/politics/2026-election/smaller-crowds-low-approval-ratings-trump-rally-base-midterms-rcna601885",
+          "date": "2026-10-12T09:16:00+00:00",
+          "category": "usa"
+        },
         {
           "title": "President Trump speaks at rally in Clarksville ahead of midterm election",
           "source": "WSMV",
@@ -204,57 +298,15 @@
           "category": "usa"
         },
         {
-          "title": "Constantino with President Trump, Gendebien criticizes the ‘cheerleading’",
-          "source": "WWNY",
-          "url": "https://www.wwnytv.com/2026/10/10/constantino-with-president-trump-gendebien-criticizes-cheerleading/",
-          "date": "2026-10-10T15:18:00+00:00",
+          "title": "Donald Trump’s Unexpected Compliment for Woman at Rally Goes Viral",
+          "source": "Yahoo",
+          "url": "https://www.yahoo.com/news/politics/articles/donald-trump-unexpected-compliment-woman-061009136.html",
+          "date": "2026-10-12T06:10:09+00:00",
           "category": "usa"
         }
       ],
       "first_seen": "2026-10-08T18:59:02+00:00",
-      "last_seen": "2026-10-12T06:18:42+00:00"
-    },
-    {
-      "id": "jordan-bardella-antisemitism-controversy",
-      "title": "Jordan Bardella Antisemitism Controversy",
-      "blurb": "Rassemblement National president Jordan Bardella launched legal actions against investigative outlet Mediapart over reports linking him to historic antisemitic messages. However, new media reports from Libération contradicted Bardella's legal defense claims, intensifying scrutiny on the far-right leader.",
-      "affect": "Severe moral charges threatening the legitimacy of a major political figure trigger defensive legal battles and intense press focus.",
-      "intensity": 3,
-      "affect_signals": [
-        "defamation legal battles",
-        "damaging media exposés",
-        "moral panic register",
-        "leadership defense tone"
-      ],
-      "categories": [
-        "rassemblement_national"
-      ],
-      "article_count": 3,
-      "refs": [
-        {
-          "title": "RN : Jordan Bardella à l’offensive pour tourner la page",
-          "source": "lejdd.fr",
-          "url": "https://www.lejdd.fr/politique/rn-jordan-bardella-a-loffensive-pour-tourner-la-page-185709",
-          "date": "2026-10-11T05:50:03+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Mediapart dévoile de nouvelles preuves reliant Jordan Bardella à des messages antisémites",
-          "source": "L'Est Républicain",
-          "url": "https://www.estrepublicain.fr/videos/mediapart-devoile-de-nouvelles-preuves-reliant-jordan-bardella-a-des-messages-antisemites-3mllxk5?playlist=qls5zz",
-          "date": "2026-10-10T10:33:13+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Cette révélation de « Libération » taille en pièces un argument de Jordan Bardella sur les écrits antisémites",
-          "source": "Le HuffPost",
-          "url": "https://www.huffingtonpost.fr/politique/article/cette-revelation-de-liberation-taille-en-pieces-un-argument-de-jordan-bardella-sur-les-ecrits-antisemites_337262.html",
-          "date": "2026-10-10T10:11:17+00:00",
-          "category": "france"
-        }
-      ],
-      "first_seen": "2026-10-12T06:18:42+00:00",
-      "last_seen": "2026-10-12T06:18:42+00:00"
+      "last_seen": "2026-10-12T21:23:27+00:00"
     }
   ]
 }
