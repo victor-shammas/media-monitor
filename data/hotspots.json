@@ -1,34 +1,77 @@
 {
-  "updated_at": "2026-10-13T06:59:08+00:00",
+  "updated_at": "2026-10-13T19:27:48+00:00",
   "lookback_hours": 48,
   "model": "GPT-OSS 120B (Groq)",
   "status": "ok",
   "hotspots": [
     {
-      "id": "doj-probe-of-tv-network-antitrust",
-      "title": "DOJ Probe of TV Network Antitrust",
-      "blurb": "The Department of Justice launched an antitrust investigation into five major television networks for limiting White House coverage of President Trump, sparking a wave of court orders to halt taxpayer‑funded pro‑Trump ads.",
-      "affect": "The story combines legal action with accusations of media bias, prompting outrage and alarm across right‑wing outlets.",
+      "id": "trump-putin-diesel-deal-backlash",
+      "title": "Trump-Putin Diesel Deal Backlash",
+      "blurb": "Senators and media are erupting over President Trump's new diesel purchase agreement with Russia, condemning it as a betrayal and a dangerous lifeline to Moscow while framing it as a catastrophic policy.",
+      "affect": "The story fuels polarized outrage and moral panic, with bipartisan lawmakers demanding reversal and commentators warning of national security fallout.",
       "intensity": 5,
       "affect_signals": [
         "polarized contention",
-        "alarmist framing",
-        "cross‑source repetition",
-        "legal showdown tone"
+        "outrage-coded language",
+        "national security alarm",
+        "cross‑source repetition"
       ],
       "categories": [
-        "US Politics",
-        "Media"
+        "US politics",
+        "energy policy"
       ],
-      "article_count": 9,
+      "article_count": 4,
       "refs": [
         {
-          "title": "Donald Trump Press Fight Escalates as DOJ Probes 5 Major TV Networks",
-          "source": "Yahoo",
-          "url": "https://www.yahoo.com/news/politics/articles/donald-trump-press-fight-escalates-072659030.html",
-          "date": "2026-10-12T07:26:59+00:00",
+          "title": "Senators demand Donald Trump revoke Russian diesel deal",
+          "source": "Punchbowl News",
+          "url": "https://punchbowl.news/article/senate/trump-russian-diesel-deal/",
+          "date": "2026-10-13T17:53:45+00:00",
           "category": "usa"
         },
+        {
+          "title": "President Trump reaches diesel deal with Russia",
+          "source": "WSMV",
+          "url": "https://www.wsmv.com/video/2026/10/12/president-trump-reaches-diesel-deal-with-russia/",
+          "date": "2026-10-12T19:39:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "President Trump Has Struck A Deal With Putin For Russian Diesel To Ease Prices, But The Unintended Consequences Could Be Devastating",
+          "source": "24/7 Wall St.",
+          "url": "https://247wallst.com/investing/2026/10/12/president-trump-has-struck-a-deal-with-putin-for-russian-diesel-to-ease-prices-but-the-unintended-consequences-could-be-devastating/",
+          "date": "2026-10-12T08:36:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Senators urge Trump administration to reverse Russian diesel plan to lower fuel prices",
+          "source": "WVLT",
+          "url": "https://www.wvlt.tv/2026/10/11/senators-urge-trump-administration-reverse-russian-diesel-plan-lower-fuel-prices/",
+          "date": "2026-10-11T22:03:00+00:00",
+          "category": "usa"
+        }
+      ],
+      "first_seen": "2026-10-11T06:09:10+00:00",
+      "last_seen": "2026-10-13T19:27:48+00:00"
+    },
+    {
+      "id": "taxpayerfunded-protrump-tv-ads-halted",
+      "title": "Taxpayer‑Funded Pro‑Trump TV Ads Halted",
+      "blurb": "Federal judges across the country have ordered the Trump administration to stop airing promotional television ads funded by taxpayers, labeling them illegal political propaganda and sparking a legal showdown.",
+      "affect": "The injunctions trigger fierce debates over government misuse of funds, evoking accusations of corruption and a fight over free speech versus electoral fairness.",
+      "intensity": 4,
+      "affect_signals": [
+        "legal showdown",
+        "accusations of corruption",
+        "political propaganda framing",
+        "rapid cross‑source coverage"
+      ],
+      "categories": [
+        "US politics",
+        "legal"
+      ],
+      "article_count": 7,
+      "refs": [
         {
           "title": "Judge orders the Trump administration to cancel taxpayer-funded TV ads",
           "source": "PBS",
@@ -77,103 +120,41 @@
           "url": "https://www.notus.org/whitehouse/trump-promotional-ads-watchdog-lawsuit",
           "date": "2026-10-11T22:23:40+00:00",
           "category": "usa"
-        },
-        {
-          "title": "Senators urge Trump administration to reverse Russian diesel plan to lower fuel prices",
-          "source": "WVLT",
-          "url": "https://www.wvlt.tv/2026/10/11/senators-urge-trump-administration-reverse-russian-diesel-plan-lower-fuel-prices/",
-          "date": "2026-10-11T22:03:00+00:00",
-          "category": "usa"
         }
       ],
-      "first_seen": "2026-10-12T21:23:27+00:00",
-      "last_seen": "2026-10-13T06:59:08+00:00"
+      "first_seen": "2026-10-13T19:27:48+00:00",
+      "last_seen": "2026-10-13T19:27:48+00:00"
     },
     {
-      "id": "trump-putin-diesel-deal-backlash",
-      "title": "Trump-Putin Diesel Deal Backlash",
-      "blurb": "President Trump’s agreement with Russia to import diesel to lower U.S. fuel prices has ignited fierce criticism from bipartisan senators and commentators who warn it funds Moscow’s war effort.",
-      "affect": "The deal is portrayed as a betrayal and a dangerous concession, driving high‑emotion coverage and calls for reversal.",
+      "id": "trump-rally-violence-outbursts",
+      "title": "Trump Rally Violence & Outbursts",
+      "blurb": "Recent Trump rallies have been marred by a protester being assaulted, a bizarre physical commentary about a senator, and a viral compliment incident, highlighting escalating tensions at campaign events.",
+      "affect": "The incidents amplify outrage and alarm, portraying the rallies as volatile hotspots of confrontation and sensational behavior.",
       "intensity": 4,
       "affect_signals": [
-        "outrage‑coded language",
-        "moral panic register",
-        "cross‑party condemnation",
-        "high‑stakes framing"
+        "violent incident",
+        "outrage‑coded commentary",
+        "viral sensationalism",
+        "polarized crowd dynamics"
       ],
       "categories": [
-        "US Politics",
-        "Energy"
+        "US politics",
+        "campaign"
       ],
-      "article_count": 4,
+      "article_count": 3,
       "refs": [
         {
-          "title": "President Trump reaches diesel deal with Russia",
-          "source": "WSMV",
-          "url": "https://www.wsmv.com/video/2026/10/12/president-trump-reaches-diesel-deal-with-russia/",
-          "date": "2026-10-12T19:39:00+00:00",
+          "title": "Trump, 80, Creeps on Male MAGA Senator, 59, in Wild Outburst",
+          "source": "The Daily Beast",
+          "url": "https://www.thedailybeast.com/trump-80-thirsts-over-maga-senator-59-in-wild-outburst",
+          "date": "2026-10-13T07:33:07+00:00",
           "category": "usa"
         },
         {
-          "title": "President Trump Has Struck A Deal With Putin For Russian Diesel To Ease Prices, But The Unintended Consequences Could Be Devastating",
-          "source": "24/7 Wall St.",
-          "url": "https://247wallst.com/investing/2026/10/12/president-trump-has-struck-a-deal-with-putin-for-russian-diesel-to-ease-prices-but-the-unintended-consequences-could-be-devastating/",
-          "date": "2026-10-12T08:36:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Senators urge Trump administration to reverse Russian diesel plan to lower fuel prices",
-          "source": "WVLT",
-          "url": "https://www.wvlt.tv/2026/10/11/senators-urge-trump-administration-reverse-russian-diesel-plan-lower-fuel-prices/",
-          "date": "2026-10-11T22:03:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Pres. Donald Trump says Russia and Ukraine reach ‘energy ceasefire’ but gives no details",
-          "source": "Chicago Tribune",
-          "url": "https://www.chicagotribune.com/2026/10/11/trump-says-russia-and-ukraine-reach-energy-ceasefire/",
-          "date": "2026-10-11T18:21:01+00:00",
-          "category": "usa"
-        }
-      ],
-      "first_seen": "2026-10-11T06:09:10+00:00",
-      "last_seen": "2026-10-13T06:59:08+00:00"
-    },
-    {
-      "id": "trump-rally-tour-blitz",
-      "title": "Trump Rally Tour Blitz",
-      "blurb": "Amid dwindling crowds and low approval ratings, Trump has crisscrossed the country rallying his base, emphasizing turning traditionally Democratic areas red ahead of the midterms.",
-      "affect": "Rallies are framed as desperate battles to reclaim power, fueling fervent support and criticism alike.",
-      "intensity": 3,
-      "affect_signals": [
-        "triumph framing",
-        "leadership crisis tone",
-        "regional showdown narrative"
-      ],
-      "categories": [
-        "US Politics"
-      ],
-      "article_count": 4,
-      "refs": [
-        {
-          "title": "Facing smaller crowds and low approval ratings, Trump tries to rally the base for the midterms",
-          "source": "NBC News",
-          "url": "https://www.nbcnews.com/politics/2026-election/smaller-crowds-low-approval-ratings-trump-rally-base-midterms-rcna601885",
-          "date": "2026-10-12T09:16:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Turning Memphis red dominates Trump’s Clarksville stop",
-          "source": "Daily Memphian",
-          "url": "https://dailymemphian.com/section/metroelections/article/67522/political-roundup-donald-trump-clarksville-outmemphis",
-          "date": "2026-10-12T09:00:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Donald Trump Now Wants an Ocean Named After Himself Before He Leaves Office",
-          "source": "Yahoo",
-          "url": "https://www.yahoo.com/news/politics/articles/donald-trump-now-wants-ocean-071854803.html",
-          "date": "2026-10-12T07:18:54+00:00",
+          "title": "Protester attacked by multiple attendees at Donald Trump rally in Ohio",
+          "source": "ABC7 Los Angeles",
+          "url": "https://abc7.com/post/protester-attacked-multiple-attendees-donald-trump-rally-ohio/19934104/",
+          "date": "2026-10-13T05:23:42+00:00",
           "category": "usa"
         },
         {
@@ -184,38 +165,31 @@
           "category": "usa"
         }
       ],
-      "first_seen": "2026-10-08T18:59:02+00:00",
-      "last_seen": "2026-10-13T06:59:08+00:00"
+      "first_seen": "2026-10-13T19:27:48+00:00",
+      "last_seen": "2026-10-13T19:27:48+00:00"
     },
     {
-      "id": "frp-internal-feud-surge",
-      "title": "FrP Internal Feud & Surge",
-      "blurb": "Norway’s Progress Party (FrP) experiences a rapid rise among young women while grappling with internal disputes, including a refusal to debate Høyre over the 2027 budget.",
-      "affect": "The juxtaposition of electoral gains and party infighting creates a charged narrative of a populist force in turmoil.",
+      "id": "frp-surge-among-young-women",
+      "title": "FrP Surge Among Young Women",
+      "blurb": "Norway's Progress Party (FrP) is experiencing a rapid rise in support among young female voters, narrowing the traditional gender gap and prompting internal debates about the party’s direction.",
+      "affect": "The surge creates intra‑party tension and fuels a broader cultural narrative about right‑wing parties reshaping gender dynamics.",
       "intensity": 3,
       "affect_signals": [
-        "intra‑party conflict",
-        "celebration of gains",
-        "polarized contention"
+        "intra‑party feud",
+        "gender gap narrative",
+        "rapid support shift",
+        "regional political stakes"
       ],
       "categories": [
-        "Europe",
-        "Norway"
+        "Norway politics"
       ],
-      "article_count": 4,
+      "article_count": 3,
       "refs": [
         {
           "title": "FrP vokser kraftig blant unge kvinner – kjønnsgapet krymper",
           "source": "Avisen Minerva",
           "url": "https://www.minerva.no/fremskrittspartiet-kjonnspolarisering-opinion/frp-vokser-kraftig-blant-unge-kvinner/520171",
           "date": "2026-10-12T10:09:15+00:00",
-          "category": "norway"
-        },
-        {
-          "title": "Sylvi Listhaug, Frp | Ut mot Frp: – Nekter å møte til «parterapi»",
-          "source": "Nettavisen",
-          "url": "https://www.nettavisen.no/nyheter/ut-mot-frp-nekter-a-mote-til-parterapi/s/80-95-150776",
-          "date": "2026-10-12T08:29:52+00:00",
           "category": "norway"
         },
         {
@@ -233,8 +207,8 @@
           "category": "norway"
         }
       ],
-      "first_seen": "2026-10-13T06:59:08+00:00",
-      "last_seen": "2026-10-13T06:59:08+00:00"
+      "first_seen": "2026-10-13T19:27:48+00:00",
+      "last_seen": "2026-10-13T19:27:48+00:00"
     }
   ]
 }
