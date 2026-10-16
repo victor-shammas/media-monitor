@@ -1,36 +1,44 @@
 {
-  "updated_at": "2026-10-16T05:10:02+00:00",
+  "updated_at": "2026-10-16T17:02:50+00:00",
   "lookback_hours": 48,
-  "model": "GPT-OSS 120B (Groq)",
+  "model": "Gemini 3.5 Flash-Lite",
   "status": "ok",
   "themes": [
     {
-      "id": "antiimmigration-targeting-of-minorities",
-      "title": "Anti‑Immigration Targeting of Minorities",
-      "blurb": "Right‑wing outlets in the United States and France frame immigration as a security threat, focusing attacks on Muslim or foreign‑born politicians and warning that minorities might leave the country if nationalist parties win.",
+      "id": "anti-immigration-targeting-of-minorities",
+      "title": "Anti-Immigration Targeting of Minorities",
+      "blurb": "Right-wing leaders and administrations are escalating aggressive immigration and citizenship policies, including plans to denaturalize prominent lawmakers and prioritize specific demographic groups for refugee quotas.",
       "convergence": 4,
       "countries": [
         {
           "name": "🇺🇸 MAGA / Trump",
-          "note": "VP JD Vance attacks Democrat Abdul El‑Sayed; Trump administration probes Rep. Ilhan Omar’s citizenship."
+          "note": "Administration reportedly targets Representative Ilhan Omar for denaturalization and deportation while setting restrictive refugee quotas prioritizing white South Africans."
         },
         {
           "name": "🇫🇷 Rassemblement National",
-          "note": "Poll shows 46 % of French Muslims would consider emigrating if Marine Le Pen wins."
+          "note": "Figures like Marion Maréchal link domestic blockades directly to unassimilated mass immigration, while polls show high anxiety among Muslim communities regarding Le Pen's platform."
         }
       ],
       "signals": [
-        "shared framing",
-        "politicized immigration",
-        "minority exodus rhetoric"
+        "citizenship revocation plans",
+        "demographic refugee prioritization",
+        "anti-immigrant rhetoric",
+        "contagion of rhetoric"
       ],
-      "article_count": 3,
+      "article_count": 5,
       "refs": [
         {
-          "title": "Fact check: JD Vance attacks Abdul El-Sayed in Michigan",
-          "source": "Bridge Michigan",
-          "url": "https://bridgemi.com/michigan-government/fact-check-jd-vance-attacks-abdul-el-sayed-in-michigan/",
-          "date": "2026-10-16T00:01:10+00:00",
+          "title": "Trump administration sets a refugee limit, prioritizing white South Africans",
+          "source": "America Magazine",
+          "url": "https://www.americamagazine.org/politics-society/dispatches/2026/10/16/trump-refugee-white-south-african/",
+          "date": "2026-10-16T14:58:56+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump Administration Reportedly Trying to Denaturalize and Deport Ilhan Omar",
+          "source": "Truthout",
+          "url": "https://truthout.org/articles/trump-administration-reportedly-trying-to-denaturalize-and-deport-ilhan-omar/",
+          "date": "2026-10-15T17:27:22+00:00",
           "category": "usa"
         },
         {
@@ -41,6 +49,13 @@
           "category": "france"
         },
         {
+          "title": "Blocage des lycées : Marion Maréchal fait le lien entre violences et immigration",
+          "source": "lejdd.fr",
+          "url": "https://www.lejdd.fr/politique/blocage-des-lycees-marion-marechal-fait-le-lien-entre-violences-et-immigration-186075",
+          "date": "2026-10-15T06:24:10+00:00",
+          "category": "france"
+        },
+        {
           "title": "Trump administration probe into Rep. Ilhan Omar aims to build case for stripping her citizenship: Report",
           "source": "Anadolu Ajansı",
           "url": "https://www.aa.com.tr/en/americas/trump-administration-probe-into-rep-ilhan-omar-aims-to-build-case-for-stripping-her-citizenship-report/4089168",
@@ -48,40 +63,43 @@
           "category": "usa"
         }
       ],
-      "first_seen": "2026-10-16T05:10:02+00:00",
-      "last_seen": "2026-10-16T05:10:02+00:00"
+      "first_seen": "2026-10-16T17:02:50+00:00",
+      "last_seen": "2026-10-16T17:02:50+00:00"
     },
     {
       "id": "energy-policy-as-a-political-battleground",
       "title": "Energy Policy as a Political Battleground",
-      "blurb": "Both Norway’s right‑wing parties and the U.S. Trump administration push controversial energy moves—nuclear expansion in Norway and a Russian diesel deal in the United States—using them to rally their bases and challenge establishment policies.",
+      "blurb": "Transnational right-wing coverage heavily focuses on energy independence, rising fuel prices, and controversial supply deals that intersect with foreign policy and domestic electoral strategies.",
       "convergence": 3,
       "countries": [
         {
+          "name": "🇺🇸 MAGA / Trump",
+          "note": "Administration navigates surging diesel prices through overseas diplomatic visits to refineries and contested energy deals involving sanctions relief."
+        },
+        {
           "name": "🇳🇴 Fremskrittspartiet",
-          "note": "Calls for immediate nuclear power regulations and licensing."
-        },
-        {
-          "name": "🇺🇸 MAGA / Trump",
-          "note": "Trump announces a diesel purchase from Russia, framing it as an ‘energy cease‑fire’."
-        },
-        {
-          "name": "🇺🇸 MAGA / Trump",
-          "note": "Tariff policy debate highlights energy‑related trade impacts."
+          "note": "Engages in domestic political battles over energy priorities and opposition accountability amidst tightening conservative coalition talks."
         }
       ],
       "signals": [
-        "policy imitation",
-        "energy nationalism",
-        "controversial deals"
+        "supply chain and fuel price focus",
+        "transnational energy deals",
+        "domestic political positioning"
       ],
       "article_count": 3,
       "refs": [
         {
-          "title": "Krever kjernekraft-grep - Fremskrittspartiet",
-          "source": "FrP.",
-          "url": "https://www.frp.no/nyheter/vil-ha-fortgang-om-kjernekraft",
-          "date": "2026-10-14T05:23:00+00:00",
+          "title": "Marco Rubio to visit Indian billionaire Ambani's refinery in Gujarat as U.S. diesel prices surge",
+          "source": "CNBC",
+          "url": "https://www.cnbc.com/2026/10/16/marco-rubio-reliance-jamnagar-refinery.html",
+          "date": "2026-10-16T06:45:02+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Nytt radarpar: Her er det plass til flere",
+          "source": "Nettavisen",
+          "url": "https://www.nettavisen.no/norsk-debatt/listhaug-og-ulstein-er-det-nye-radarparet-plass-til-soreide-ogsa/o/80-95-159834",
+          "date": "2026-10-15T05:56:07+00:00",
           "category": "norway"
         },
         {
@@ -90,43 +108,32 @@
           "url": "https://www.dw.com/en/how-trumps-diesel-deal-with-russia-will-impact-the-united-states-and-ukraine/a-79658596",
           "date": "2026-10-14T18:06:13+00:00",
           "category": "usa"
-        },
-        {
-          "title": "Trump Administration Tariffs Are Not Achieving Their Goals",
-          "source": "Progressive Policy Institute",
-          "url": "https://www.progressivepolicy.org/trump-administration-tariffs-are-not-achieving-their-goals/",
-          "date": "2026-10-14T18:16:34+00:00",
-          "category": "usa"
         }
       ],
       "first_seen": "2026-10-16T05:10:02+00:00",
-      "last_seen": "2026-10-16T05:10:02+00:00"
+      "last_seen": "2026-10-16T17:02:50+00:00"
     },
     {
-      "id": "cutting-aid-to-ukraine-prorussia-energy-moves",
-      "title": "Cutting Aid to Ukraine & Pro‑Russia Energy Moves",
-      "blurb": "Right‑wing leaders in France and the United States link support for Ukraine to domestic financial strain, with France’s RN pledging to halt aid and the U.S. Trump team pursuing a diesel purchase from Russia, signalling a coordinated re‑orientation toward Russia‑friendly energy policies.",
+      "id": "cutting-aid-to-ukraine-pro-russia-energy-moves",
+      "title": "Cutting Aid to Ukraine & Pro-Russia Energy Moves",
+      "blurb": "Far-right figures in Europe and North America campaign on rolling back financial support for Ukraine, tying foreign aid reductions directly to national economic strain and alternative diplomatic settlements.",
       "convergence": 3,
       "countries": [
         {
           "name": "🇫🇷 Rassemblement National",
-          "note": "Marine Le Pen vows to cut French financial aid to Ukraine after six months."
+          "note": "Marine Le Pen explicitly vows to cut off French financial aid to Ukraine within six months if elected president, citing exhausted national means."
         },
         {
           "name": "🇺🇸 MAGA / Trump",
-          "note": "Trump’s diesel deal with Russia eases sanctions, framed as helping Ukraine."
-        },
-        {
-          "name": "🇺🇸 MAGA / Trump",
-          "note": "Criticism of wind project linked to broader energy strategy."
+          "note": "Administration pursues controversial energy arrangements and pushes for disputed energy ceasefires intersecting with the conflict."
         }
       ],
       "signals": [
-        "shared framing",
-        "reaction to EU‑Ukraine aid",
-        "pro‑Russia energy"
+        "foreign aid reduction",
+        "conditional assistance deadlines",
+        "shared skepticism of foreign commitments"
       ],
-      "article_count": 3,
+      "article_count": 6,
       "refs": [
         {
           "title": "Présidentielle 2027 : Marine Le Pen coupera l'aide à l'Ukraine au bout de six mois si elle est élue",
@@ -136,91 +143,58 @@
           "category": "france"
         },
         {
+          "title": "Présidentielle française - Si elle arrive à l'Elysée, Marine Le Pen promet de couper l'aide à l'Ukraine : \"Je ne prends personne en traître\"",
+          "source": "parismatch.be",
+          "url": "https://www.parismatch.be/actualites/monde/2026/10/15/presidentielle-francaise-si-elle-arrive-a-lelysee-marine-le-pen-promet-de-couper-laide-a-lukraine-je-ne-prends-personne-en-traitre-EKOIX7JLGZBBTPVJXNLDVDTVXY/",
+          "date": "2026-10-15T06:07:00+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Guerre en Ukraine: \"Nous ne pouvons plus assumer cet aide financière\", juge Marine Le Pen",
+          "source": "RMC",
+          "url": "https://rmc.bfmtv.com/replay-emissions/apolline-matin/video-guerre-en-ukraine-nous-ne-pouvons-plus-assumer-cet-aide-financiere-juge-marine-le-pen_VN-202610150194.html",
+          "date": "2026-10-15T06:06:43+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Marine Le Pen promet de couper l'aide financière française à l'Ukraine après six mois, en cas de victoire à la présidentielle",
+          "source": "La Libre.be",
+          "url": "https://www.lalibre.be/international/europe/elections-france/2026/10/15/marine-le-pen-promet-de-couper-laide-financiere-francaise-a-lukraine-apres-six-mois-en-cas-de-victoire-a-la-presidentielle-D4LGAWTQSZENHAJ5YKIDP7DSQY/",
+          "date": "2026-10-15T05:57:00+00:00",
+          "category": "france"
+        },
+        {
           "title": "How Trump’s diesel deal with Russia will impact the United States and Ukraine",
           "source": "DW.com",
           "url": "https://www.dw.com/en/how-trumps-diesel-deal-with-russia-will-impact-the-united-states-and-ukraine/a-79658596",
           "date": "2026-10-14T18:06:13+00:00",
           "category": "usa"
-        },
-        {
-          "title": "Donald Trump wind project move scares House Democrats",
-          "source": "Punchbowl News",
-          "url": "https://punchbowl.news/article/energy/trump-wind-project-move-democrats/",
-          "date": "2026-10-14T18:06:14+00:00",
-          "category": "usa"
         }
       ],
-      "first_seen": "2026-10-16T05:10:02+00:00",
-      "last_seen": "2026-10-16T05:10:02+00:00"
-    },
-    {
-      "id": "legal-pushback-against-executive-actions",
-      "title": "Legal Pushback Against Executive Actions",
-      "blurb": "Courts in the United States and Norway are increasingly used by opponents to block controversial executive moves, from environmental projects to media bans, illustrating a transnational pattern of judicial resistance to right‑wing governance.",
-      "convergence": 2,
-      "countries": [
-        {
-          "name": "🇺🇸 MAGA / Trump",
-          "note": "Federal judges block Trump’s attempts to ban CNN and to cut funding for national parks."
-        },
-        {
-          "name": "🇳🇴 Fremskrittspartiet",
-          "note": "Norwegian media criticism over selective anonymity reflects legal‑style challenges to government narratives."
-        }
-      ],
-      "signals": [
-        "judicial resistance",
-        "court‑blocking of policies",
-        "media freedom battles"
-      ],
-      "article_count": 3,
-      "refs": [
-        {
-          "title": "‘Totally beyond the pale’: angry judge shuts down Trump administration’s mass destruction of DC trees",
-          "source": "mronline.org",
-          "url": "https://mronline.org/2026/10/15/totally-beyond-the-pale-angry-judge-shuts-down-trump-administrations-mass-destruction-of-dc-trees/",
-          "date": "2026-10-15T13:02:38+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Judge blocks Trump administration from banning CNN, MS NOW and Politico",
-          "source": "KTVQ",
-          "url": "https://www.ktvq.com/politics/judge-blocks-trump-administration-from-banning-cnn-ms-now-and-politico",
-          "date": "2026-10-14T11:46:46+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Navnga Frp-rådgiver – anonymiserer hallikdømt Ap-rådgiver: Nå svarer mediene",
-          "source": "inyheter.no",
-          "url": "https://inyheter.no/15/10/2026/navnga-frp-radgiver-anonymiserer-hallikdomt-ap-radgiver-na-svarer-mediene/",
-          "date": "2026-10-15T07:00:16+00:00",
-          "category": "norway"
-        }
-      ],
-      "first_seen": "2026-10-16T05:10:02+00:00",
-      "last_seen": "2026-10-16T05:10:02+00:00"
+      "first_seen": "2026-10-16T17:02:50+00:00",
+      "last_seen": "2026-10-16T17:02:50+00:00"
     },
     {
       "id": "populist-leaders-personal-attacks",
       "title": "Populist Leaders’ Personal Attacks",
-      "blurb": "Right‑wing figures in the United States and France employ direct personal attacks against political opponents, using incendiary language to delegitimize rivals and energize supporters.",
-      "convergence": 2,
+      "blurb": "Prominent right-wing figures and administration leaders frequently utilize harsh personal rhetoric and insults directed at political opponents, institutional figures, and critics during campaign rallies.",
+      "convergence": 3,
       "countries": [
         {
           "name": "🇺🇸 MAGA / Trump",
-          "note": "JD Vance calls Democrat a ‘little weasel’; Trump insults Arizona Gov. Katie Hobbs."
+          "note": "Donald Trump and JD Vance deploy aggressive personal attacks against political rivals, state governors, and local candidates during midterm rallies."
         },
         {
           "name": "🇫🇷 Rassemblement National",
-          "note": "Marine Le Pen threatens a ‘brass‑knuckle’ showdown with Europe over France’s contributions."
+          "note": "Marine Le Pen aggressively targets institutional opponents, demanding resignations and challenging constitutional neutralities."
         }
       ],
       "signals": [
-        "incendiary rhetoric",
-        "personal vilification",
-        "rally‑cry aggression"
+        "insults toward opponents",
+        "confrontational rhetoric",
+        "demands for institutional resignations"
       ],
-      "article_count": 3,
+      "article_count": 5,
       "refs": [
         {
           "title": "Fact check: JD Vance attacks Abdul El-Sayed in Michigan",
@@ -230,6 +204,13 @@
           "category": "usa"
         },
         {
+          "title": "'Il a rompu avec la neutralité'. Marine Le Pen exige la démission de Richard Ferrand après son veto sur le référendum constitutionnel",
+          "source": "France 3 Régions",
+          "url": "https://france3-regions.franceinfo.fr/bretagne/finistere/brest/il-a-rompu-avec-la-neutralite-marine-le-pen-exige-la-demission-de-richard-ferrand-apres-son-veto-sur-le-referendum-constitutionnel-3433743.html",
+          "date": "2026-10-15T06:16:25+00:00",
+          "category": "france"
+        },
+        {
           "title": "President Donald Trump insults Gov. Katie Hobbs in Bullhead City rally: ‘She’s just a dumb person’",
           "source": "KTAR News 92.3 FM",
           "url": "https://ktar.com/arizona-politics-news/election/trump-rally-katie-hobbs",
@@ -237,15 +218,22 @@
           "category": "usa"
         },
         {
-          "title": "Marine Le Pen isolée à Bruxelles après avoir menacé d’engager un « bras de fer » avec l’Europe au sujet de la contribution financière de la France",
-          "source": "Le Monde.fr",
-          "url": "https://www.lemonde.fr/international/article/2026/10/15/a-bruxelles-marine-le-pen-bien-isolee-apres-avoir-menace-l-europe-d-un-bras-de-fer_6794068_3210.html",
-          "date": "2026-10-15T06:34:30+00:00",
-          "category": "france"
+          "title": "Donald Trump rally in Arizona on Oct. 14: details",
+          "source": "KTAR News 92.3 FM",
+          "url": "https://ktar.com/arizona-politics-news/election/donald-trump-rally-arizona",
+          "date": "2026-10-14T18:05:29+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Vice President JD Vance meets with supporters in Atlanta",
+          "source": "WRDW",
+          "url": "https://www.wrdw.com/2026/10/14/vice-president-jd-vance-meets-with-supporters-atlanta/",
+          "date": "2026-10-14T18:02:00+00:00",
+          "category": "usa"
         }
       ],
       "first_seen": "2026-10-16T05:10:02+00:00",
-      "last_seen": "2026-10-16T05:10:02+00:00"
+      "last_seen": "2026-10-16T17:02:50+00:00"
     }
   ]
 }
