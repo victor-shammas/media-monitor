@@ -1,110 +1,93 @@
 {
-  "updated_at": "2026-10-17T05:03:13+00:00",
+  "updated_at": "2026-10-17T15:59:54+00:00",
   "lookback_hours": 48,
-  "model": "GPT-OSS 120B (Groq)",
+  "model": "Gemini 3.6 Flash",
   "status": "ok",
   "actors": [
     {
       "id": "donald-trump",
       "name": "Donald Trump",
       "role": "President of the United States",
-      "blurb": "Trump is touring key battleground states, rallying for GOP Senate and governor candidates ahead of the 2026 midterms, while his administration faces internal chaos with a departing press secretary and legal setbacks.",
+      "blurb": "President Trump is driving coverage through a whirlwind midterm rally schedule across key states like Georgia and Kentucky while making major policy decisions, including pausing new Russia sanctions. His administration is also facing intense media focus over high White House staff turnover and ongoing legal challenges.",
       "prominence": 5,
       "signals": [
-        "midterm campaign rallies",
-        "press secretary turnover",
-        "legal defeats"
+        "campaign rallies",
+        "sanctions policy",
+        "midterm elections",
+        "administration turnover"
       ],
       "categories": [
-        "USA",
-        "Republican"
+        "US Politics",
+        "MAGA",
+        "Elections"
       ],
-      "article_count": 30,
+      "article_count": 61,
       "refs": [
         {
-          "title": "WATCH: President Trump campaigns for GOP's Collins, Jackson in Dalton Friday",
-          "source": "Local 3 News",
-          "url": "https://www.local3news.com/local-news/watch-president-trump-campaigns-for-gops-collins-jackson-in-dalton-friday/article_0d0833b9-bfa2-4599-ad55-35b8c30d0d5c.html",
-          "date": "2026-10-16T22:19:37+00:00",
+          "title": "President Trump visits Northern Kentucky for rally. Follow live updates",
+          "source": "WLWT",
+          "url": "https://www.wlwt.com/article/president-donald-trump-visit-northern-kentucky-rally-truist/74150286",
+          "date": "2026-10-17T13:43:28+00:00",
           "category": "usa"
         },
         {
-          "title": "Trump heads to Kansas to stump for Sen. Marshall ahead of midterms",
-          "source": "WWNY",
-          "url": "https://www.wwnytv.com/2026/10/16/trump-heads-kansas-stump-sen-marshall-ahead-midterms/",
-          "date": "2026-10-16T22:00:00+00:00",
+          "title": "Russia-Ukraine war news: Donald Trump waives Russia sanctions; Volodymyr Zelenskyy urges support for new ones",
+          "source": "ABC7 Bay Area",
+          "url": "https://abc7news.com/amp/post/russia-ukraine-war-news-donald-trump-waives-sanctions-volodymyr-zelenskyy-urges-support-new-ones/19947635/",
+          "date": "2026-10-17T13:07:30+00:00",
           "category": "usa"
         },
         {
-          "title": "Donald Trump to campaign in Fort Myers next week",
-          "source": "Florida Phoenix",
-          "url": "https://floridaphoenix.com/2026/10/16/donald-trump-to-campaign-in-fort-myers-next-week/",
-          "date": "2026-10-16T15:14:32+00:00",
+          "title": "Trump puts on hold new Russia sanctions he signed into law",
+          "source": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/17/trump-puts-on-hold-new-russia-sanctions-he-signed-into-law",
+          "date": "2026-10-17T07:38:39+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Video: President Donald Trump comes to Dalton for rally ahead of November elections",
+          "source": "Chattanooga Times Free Press",
+          "url": "https://www.timesfreepress.com/news/2026/oct/17/video-president-donald-trump-comes-to-dalton-for-rally-ahead-of-november-elections/",
+          "date": "2026-10-17T04:33:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump will rally Georgia Republicans despite party divisions in battleground state",
+          "source": "PBS",
+          "url": "https://www.pbs.org/newshour/politics/trump-will-rally-georgia-republicans-despite-party-divisions-in-battleground-state",
+          "date": "2026-10-16T14:57:37+00:00",
           "category": "usa"
         }
       ],
       "first_seen": "2026-08-16T02:13:23+00:00",
-      "last_seen": "2026-10-17T05:03:13+00:00"
-    },
-    {
-      "id": "marine-le-pen",
-      "name": "Marine Le Pen",
-      "role": "Leader of France's National Rally",
-      "blurb": "Le Pen is intensifying her presidential campaign rhetoric, threatening a showdown with the EU over France’s contributions and pledging to cut aid to Ukraine, while polls show a surge in Muslim opposition to her candidacy.",
-      "prominence": 4,
-      "signals": [
-        "EU funding showdown",
-        "Ukraine aid cut pledge",
-        "poll on Muslim voters"
-      ],
-      "categories": [
-        "France",
-        "National Rally"
-      ],
-      "article_count": 6,
-      "refs": [
-        {
-          "title": "Présidentielle 2027 : 46% des musulmans envisagent de quitter la France si Marine Le Pen est élue",
-          "source": "Epoch Times",
-          "url": "https://www.epochtimes.fr/presidentielle-2027-46-des-musulmans-envisagent-de-quitter-la-france-si-marine-le-pen-est-elue-3370387.html",
-          "date": "2026-10-15T06:52:27+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Marine Le Pen isolée à Bruxelles après avoir menacé d’engager un « bras de fer » avec l’Europe au sujet de la contribution financière de la France",
-          "source": "Le Monde.fr",
-          "url": "https://www.lemonde.fr/international/article/2026/10/15/a-bruxelles-marine-le-pen-bien-isolee-apres-avoir-menace-l-europe-d-un-bras-de-fer_6794068_3210.html",
-          "date": "2026-10-15T06:34:30+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Présidentielle 2027 : Marine Le Pen coupera l'aide à l'Ukraine au bout de six mois si elle est élue",
-          "source": "France 24",
-          "url": "https://www.france24.com/fr/france/20261015-pr%C3%A9sidentielle-2027-marine-le-pen-coupera-aide-ukraine-six-mois-si-%C3%A9lue",
-          "date": "2026-10-15T06:29:28+00:00",
-          "category": "france"
-        }
-      ],
-      "first_seen": "2026-10-15T17:25:00+00:00",
-      "last_seen": "2026-10-17T05:03:13+00:00"
+      "last_seen": "2026-10-17T15:59:54+00:00"
     },
     {
       "id": "jd-vance",
       "name": "JD Vance",
       "role": "Vice President of the United States",
-      "blurb": "Vance is touring swing states, defending ICE policies and attacking Democratic opponents, while also confronting criticism over his visa‑fraud accusations against tech executives.",
+      "blurb": "Vice President Vance is actively stumping for Republican midterm candidates in key battleground states like Michigan and North Carolina. He is making headlines for defending federal immigration enforcement policies while drawing media attention over public disputes with tech leaders and political opponents.",
       "prominence": 3,
       "signals": [
-        "midterm rally tours",
-        "ICE defense",
-        "visa fraud dispute"
+        "midterm campaign",
+        "immigration defense",
+        "corporate disputes",
+        "campaign trail controversies"
       ],
       "categories": [
-        "USA",
-        "Republican"
+        "US Politics",
+        "MAGA",
+        "Elections"
       ],
-      "article_count": 4,
+      "article_count": 7,
       "refs": [
+        {
+          "title": "JD Vance’s Biggest Problem",
+          "source": "The New Republic",
+          "url": "https://newrepublic.com/article/216750/jd-vance-trump-successor-2028-biggest-problem",
+          "date": "2026-10-17T10:00:00+00:00",
+          "category": "usa"
+        },
         {
           "title": "JD Vance heading to Hendersonville as Trump admin. ramps up NC rallies before election",
           "source": "WRAL",
@@ -125,69 +108,139 @@
           "url": "https://www.cbsnews.com/detroit/news/jd-vance-monroe-campaign-rally-midterm-election/",
           "date": "2026-10-16T03:39:05+00:00",
           "category": "usa"
+        },
+        {
+          "title": "Microsoft’s Brad Smith pushes back on Vice President JD Vance’s visa fraud accusations",
+          "source": "GeekWire",
+          "url": "https://www.geekwire.com/2026/microsofts-brad-smith-pushes-back-on-vice-president-jd-vances-visa-fraud-accusations/",
+          "date": "2026-10-15T17:36:39+00:00",
+          "category": "usa"
         }
       ],
       "first_seen": "2026-10-15T05:18:45+00:00",
-      "last_seen": "2026-10-17T05:03:13+00:00"
+      "last_seen": "2026-10-17T15:59:54+00:00"
     },
     {
-      "id": "mike-collins",
-      "name": "Mike Collins",
-      "role": "Republican U.S. Senate candidate in Georgia",
-      "blurb": "Collins is receiving high‑profile support from Trump at rallies in Dalton and elsewhere, positioning himself as a key GOP target in a competitive Senate race.",
-      "prominence": 2,
+      "id": "katie-zacharia",
+      "name": "Katie Zacharia",
+      "role": "Former White House Press Secretary",
+      "blurb": "Katie Zacharia generated major headlines following her abrupt departure as White House Press Secretary after just five days in the position. Her rapid exit triggered widespread press coverage regarding administrative instability and scrutiny over press office vetting.",
+      "prominence": 3,
       "signals": [
-        "Trump endorsement rally",
-        "Senate campaign",
-        "Georgia early voting"
+        "resignation fallout",
+        "administration turnover",
+        "press briefing scrutiny"
       ],
       "categories": [
-        "USA",
-        "Georgia",
-        "Republican"
+        "US Politics",
+        "White House"
       ],
-      "article_count": 3,
+      "article_count": 7,
       "refs": [
         {
-          "title": "WATCH: President Trump campaigns for GOP's Collins, Jackson in Dalton Friday",
-          "source": "Local 3 News",
-          "url": "https://www.local3news.com/local-news/watch-president-trump-campaigns-for-gops-collins-jackson-in-dalton-friday/article_0d0833b9-bfa2-4599-ad55-35b8c30d0d5c.html",
-          "date": "2026-10-16T22:19:37+00:00",
+          "title": "Why Trump’s latest White House press secretary lasted just five days",
+          "source": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/17/why-trumps-latest-white-house-press-secretary-lasted-just-five-days",
+          "date": "2026-10-17T13:45:55+00:00",
           "category": "usa"
         },
         {
-          "title": "Trump will rally Georgia Republicans despite party divisions in battleground state",
-          "source": "PBS",
-          "url": "https://www.pbs.org/newshour/politics/trump-will-rally-georgia-republicans-despite-party-divisions-in-battleground-state",
-          "date": "2026-10-16T14:57:37+00:00",
+          "title": "Katie Zachariah:White House Press Secretary wey US President Trump fire",
+          "source": "BBC",
+          "url": "https://www.bbc.com/pidgin/articles/cqm24m0vryd4o",
+          "date": "2026-10-17T11:09:36+00:00",
           "category": "usa"
         },
         {
-          "title": "President Donald Trump attending Georgia rally for Mike Collins, Rick Jackson today - WSB-TV",
-          "source": "",
-          "url": "https://www.wsbtv.com/news/local/president-donald-trump-attending-georgia-rally-mike-collins-rick-jackson-today/ATMEJFQRLNAMFEKQWS2CB4MVKY/",
-          "date": "2026-10-16T08:45:04+00:00",
+          "title": "Donald Trump Tells Katie Zacharia To Reconsider Role After Five Days: 15 outlets compared",
+          "source": "NewsCord",
+          "url": "https://newscord.org/article/donald-trump-tells-katie-zacharia-to-reconsider-role-after-five-days--Story_20261017_Trumptoldnewpresssecd3270433",
+          "date": "2026-10-17T05:44:07+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "A look back at President Trump’s past White House press secretaries",
+          "source": "NBC News",
+          "url": "https://www.nbcnews.com/video/a-look-back-at-president-trump-s-past-white-house-press-secretaries-271730757961",
+          "date": "2026-10-17T00:52:18+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump casts doubt on press secretary's future",
+          "source": "NPR",
+          "url": "https://www.npr.org/2026/10/16/nx-s1-6005317/trump-casts-doubt-on-press-secretarys-future",
+          "date": "2026-10-16T18:08:33+00:00",
           "category": "usa"
         }
       ],
-      "first_seen": "2026-10-17T05:03:13+00:00",
-      "last_seen": "2026-10-17T05:03:13+00:00"
+      "first_seen": "2026-10-17T15:59:54+00:00",
+      "last_seen": "2026-10-17T15:59:54+00:00"
     },
     {
       "id": "rick-jackson",
       "name": "Rick Jackson",
       "role": "Republican candidate for Governor of Georgia",
-      "blurb": "Jackson is campaigning alongside Trump and Collins in Georgia, drawing attention for his proposed Medicaid cuts and the controversy surrounding Trump's presence at his rally.",
+      "blurb": "Rick Jackson is receiving heightened media focus as President Trump headlines high-profile campaign rallies on his behalf in Georgia. Jackson's gubernatorial campaign serves as a focal point for GOP efforts to rally conservative turnout in critical midterm races.",
       "prominence": 2,
       "signals": [
-        "governor campaign",
-        "Trump rally appearance",
-        "policy criticism"
+        "gubernatorial campaign",
+        "presidential endorsement",
+        "midterm elections"
       ],
       "categories": [
-        "USA",
-        "Georgia",
-        "Republican"
+        "US Politics",
+        "Elections",
+        "Georgia Politics"
+      ],
+      "article_count": 4,
+      "refs": [
+        {
+          "title": "WATCH: President Trump campaigns for GOP's Collins, Jackson in Dalton Friday",
+          "source": "Local 3 News",
+          "url": "https://www.local3news.com/local-news/watch-president-trump-campaigns-for-gops-collins-jackson-in-dalton-friday/article_0d0833b9-bfa2-4599-ad55-35b8c30d0d5c.html",
+          "date": "2026-10-16T22:19:37+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump will rally Georgia Republicans despite party divisions in battleground state",
+          "source": "PBS",
+          "url": "https://www.pbs.org/newshour/politics/trump-will-rally-georgia-republicans-despite-party-divisions-in-battleground-state",
+          "date": "2026-10-16T14:57:37+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "President Donald Trump attending Georgia rally for Mike Collins, Rick Jackson today - WSB-TV",
+          "source": "",
+          "url": "https://www.wsbtv.com/news/local/president-donald-trump-attending-georgia-rally-mike-collins-rick-jackson-today/ATMEJFQRLNAMFEKQWS2CB4MVKY/",
+          "date": "2026-10-16T08:45:04+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Kiesha Lance Bottoms speaks on President Trump’s Visit to Georgia",
+          "source": "WTOC",
+          "url": "https://www.wtoc.com/2026/10/16/kiesha-lance-bottoms-speaks-president-trumps-visit-georgia/",
+          "date": "2026-10-16T03:29:00+00:00",
+          "category": "usa"
+        }
+      ],
+      "first_seen": "2026-10-17T05:03:13+00:00",
+      "last_seen": "2026-10-17T15:59:54+00:00"
+    },
+    {
+      "id": "mike-collins",
+      "name": "Mike Collins",
+      "role": "Republican U.S. Senate candidate in Georgia",
+      "blurb": "Mike Collins features prominently in midterm coverage following joint campaign appearances with Donald Trump at rallies in Georgia. His Senate race remains a strategic priority for Republicans looking to secure congressional control.",
+      "prominence": 2,
+      "signals": [
+        "senate campaign",
+        "presidential endorsement",
+        "midterm elections"
+      ],
+      "categories": [
+        "US Politics",
+        "Elections",
+        "Georgia Politics"
       ],
       "article_count": 3,
       "refs": [
@@ -214,7 +267,7 @@
         }
       ],
       "first_seen": "2026-10-17T05:03:13+00:00",
-      "last_seen": "2026-10-17T05:03:13+00:00"
+      "last_seen": "2026-10-17T15:59:54+00:00"
     }
   ]
 }
