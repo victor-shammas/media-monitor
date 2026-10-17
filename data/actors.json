@@ -1,81 +1,67 @@
 {
-  "updated_at": "2026-10-16T17:01:06+00:00",
+  "updated_at": "2026-10-17T05:03:13+00:00",
   "lookback_hours": 48,
-  "model": "Gemini 3.5 Flash-Lite",
+  "model": "GPT-OSS 120B (Groq)",
   "status": "ok",
   "actors": [
     {
       "id": "donald-trump",
       "name": "Donald Trump",
       "role": "President of the United States",
-      "blurb": "President Trump is aggressively campaigning across multiple states including Florida, Georgia, Arizona, and Montana to boost Republican candidates ahead of the upcoming midterm elections. His administration is simultaneously generating intense legal and political controversies over restrictive asylum policies, refugee limits prioritizing white South Africans, and aggressive actions against federal employees and political opponents.",
+      "blurb": "Trump is touring key battleground states, rallying for GOP Senate and governor candidates ahead of the 2026 midterms, while his administration faces internal chaos with a departing press secretary and legal setbacks.",
       "prominence": 5,
       "signals": [
         "midterm campaign rallies",
-        "immigration and refugee policy",
-        "administrative purges and lawsuits",
-        "economic claims under scrutiny"
+        "press secretary turnover",
+        "legal defeats"
       ],
       "categories": [
-        "🇺🇸 MAGA / Trump"
+        "USA",
+        "Republican"
       ],
-      "article_count": 66,
+      "article_count": 30,
       "refs": [
+        {
+          "title": "WATCH: President Trump campaigns for GOP's Collins, Jackson in Dalton Friday",
+          "source": "Local 3 News",
+          "url": "https://www.local3news.com/local-news/watch-president-trump-campaigns-for-gops-collins-jackson-in-dalton-friday/article_0d0833b9-bfa2-4599-ad55-35b8c30d0d5c.html",
+          "date": "2026-10-16T22:19:37+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump heads to Kansas to stump for Sen. Marshall ahead of midterms",
+          "source": "WWNY",
+          "url": "https://www.wwnytv.com/2026/10/16/trump-heads-kansas-stump-sen-marshall-ahead-midterms/",
+          "date": "2026-10-16T22:00:00+00:00",
+          "category": "usa"
+        },
         {
           "title": "Donald Trump to campaign in Fort Myers next week",
           "source": "Florida Phoenix",
           "url": "https://floridaphoenix.com/2026/10/16/donald-trump-to-campaign-in-fort-myers-next-week/",
           "date": "2026-10-16T15:14:32+00:00",
           "category": "usa"
-        },
-        {
-          "title": "Advocacy groups accuse Trump administration of fast-tracking migrant children's asylum cases - ABC News",
-          "source": "Breaking News, Latest News and Videos",
-          "url": "https://abcnews.com/US/advocacy-groups-accuse-trump-administration-fast-tracking-migrant/story?id=137318785",
-          "date": "2026-10-16T14:59:46+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Trump administration sets a refugee limit, prioritizing white South Africans",
-          "source": "America Magazine",
-          "url": "https://www.americamagazine.org/politics-society/dispatches/2026/10/16/trump-refugee-white-south-african/",
-          "date": "2026-10-16T14:58:56+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Trump’s MAGA Pals Push Sinister Martial Law Plot",
-          "source": "The Daily Beast",
-          "url": "https://www.thedailybeast.com/trumps-maga-pals-push-sinister-martial-law-plot",
-          "date": "2026-10-16T12:44:39+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Trump suggests those who leak government information should ‘be shot’",
-          "source": "Al Jazeera",
-          "url": "https://www.aljazeera.com/amp/news/2026/10/15/trump-suggests-those-who-leak-government-information-should-be-shot",
-          "date": "2026-10-15T01:35:03+00:00",
-          "category": "usa"
         }
       ],
       "first_seen": "2026-08-16T02:13:23+00:00",
-      "last_seen": "2026-10-16T17:01:06+00:00"
+      "last_seen": "2026-10-17T05:03:13+00:00"
     },
     {
       "id": "marine-le-pen",
       "name": "Marine Le Pen",
       "role": "Leader of France's National Rally",
-      "blurb": "Marine Le Pen is shaping European and French headlines by declaring she will cut France's financial aid to Ukraine within six months if elected president in 2027. She is also facing diplomatic isolation in Brussels after threatening a showdown over France's European financial contributions, and demanding the resignation of a political opponent over a disputed constitutional referendum.",
-      "prominence": 5,
+      "blurb": "Le Pen is intensifying her presidential campaign rhetoric, threatening a showdown with the EU over France’s contributions and pledging to cut aid to Ukraine, while polls show a surge in Muslim opposition to her candidacy.",
+      "prominence": 4,
       "signals": [
-        "foreign policy overhaul on Ukraine",
-        "clash with EU leadership",
-        "2027 presidential campaign strategy",
-        "institutional confrontations"
+        "EU funding showdown",
+        "Ukraine aid cut pledge",
+        "poll on Muslim voters"
       ],
       "categories": [
-        "🇫🇷 Rassemblement National"
+        "France",
+        "National Rally"
       ],
-      "article_count": 9,
+      "article_count": 6,
       "refs": [
         {
           "title": "Présidentielle 2027 : 46% des musulmans envisagent de quitter la France si Marine Le Pen est élue",
@@ -97,112 +83,138 @@
           "url": "https://www.france24.com/fr/france/20261015-pr%C3%A9sidentielle-2027-marine-le-pen-coupera-aide-ukraine-six-mois-si-%C3%A9lue",
           "date": "2026-10-15T06:29:28+00:00",
           "category": "france"
-        },
-        {
-          "title": "'Il a rompu avec la neutralité'. Marine Le Pen exige la démission de Richard Ferrand après son veto sur le référendum constitutionnel",
-          "source": "France 3 Régions",
-          "url": "https://france3-regions.franceinfo.fr/bretagne/finistere/brest/il-a-rompu-avec-la-neutralite-marine-le-pen-exige-la-demission-de-richard-ferrand-apres-son-veto-sur-le-referendum-constitutionnel-3433743.html",
-          "date": "2026-10-15T06:16:25+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Présidentielle française - Si elle arrive à l'Elysée, Marine Le Pen promet de couper l'aide à l'Ukraine : \"Je ne prends personne en traître\"",
-          "source": "parismatch.be",
-          "url": "https://www.parismatch.be/actualites/monde/2026/10/15/presidentielle-francaise-si-elle-arrive-a-lelysee-marine-le-pen-promet-de-couper-laide-a-lukraine-je-ne-prends-personne-en-traitre-EKOIX7JLGZBBTPVJXNLDVDTVXY/",
-          "date": "2026-10-15T06:07:00+00:00",
-          "category": "france"
         }
       ],
       "first_seen": "2026-10-15T17:25:00+00:00",
-      "last_seen": "2026-10-16T17:01:06+00:00"
+      "last_seen": "2026-10-17T05:03:13+00:00"
     },
     {
       "id": "jd-vance",
       "name": "JD Vance",
       "role": "Vice President of the United States",
-      "blurb": "Vice President JD Vance is actively hitting the campaign trail in battleground states like Michigan and Georgia to rally support for key Republican Senate candidates. In addition to election stumping, he is driving policy debates and corporate scrutiny through high-profile accusations regarding visa fraud and sharp attacks on Democratic opponents.",
+      "blurb": "Vance is touring swing states, defending ICE policies and attacking Democratic opponents, while also confronting criticism over his visa‑fraud accusations against tech executives.",
       "prominence": 3,
       "signals": [
-        "midterm election campaigning",
-        "corporate visa fraud accusations",
-        "partisan rhetoric and debate"
+        "midterm rally tours",
+        "ICE defense",
+        "visa fraud dispute"
       ],
       "categories": [
-        "🇺🇸 MAGA / Trump"
+        "USA",
+        "Republican"
       ],
       "article_count": 4,
       "refs": [
+        {
+          "title": "JD Vance heading to Hendersonville as Trump admin. ramps up NC rallies before election",
+          "source": "WRAL",
+          "url": "https://www.wral.com/news/nccapitol/jd-vance-hendersonville-trump-greenville-ramps-up-midterm-rallies-election-october-2026/",
+          "date": "2026-10-16T20:55:33+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Vance defends ICE but says there's a responsibility to investigate when agents \"screw up\"",
+          "source": "CBS News",
+          "url": "https://www.cbsnews.com/news/vance-ice-investigate-agents-screw-up/",
+          "date": "2026-10-16T20:55:00+00:00",
+          "category": "usa"
+        },
         {
           "title": "Vice President JD Vance appeals to voters in Monroe ahead of midterm election",
           "source": "CBS News",
           "url": "https://www.cbsnews.com/detroit/news/jd-vance-monroe-campaign-rally-midterm-election/",
           "date": "2026-10-16T03:39:05+00:00",
           "category": "usa"
-        },
-        {
-          "title": "Fact check: JD Vance attacks Abdul El-Sayed in Michigan",
-          "source": "Bridge Michigan",
-          "url": "https://bridgemi.com/michigan-government/fact-check-jd-vance-attacks-abdul-el-sayed-in-michigan/",
-          "date": "2026-10-16T00:01:10+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Microsoft’s Brad Smith pushes back on Vice President JD Vance’s visa fraud accusations",
-          "source": "GeekWire",
-          "url": "https://www.geekwire.com/2026/microsofts-brad-smith-pushes-back-on-vice-president-jd-vances-visa-fraud-accusations/",
-          "date": "2026-10-15T17:36:39+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Vice President JD Vance meets with supporters in Atlanta",
-          "source": "WRDW",
-          "url": "https://www.wrdw.com/2026/10/14/vice-president-jd-vance-meets-with-supporters-atlanta/",
-          "date": "2026-10-14T18:02:00+00:00",
-          "category": "usa"
         }
       ],
       "first_seen": "2026-10-15T05:18:45+00:00",
-      "last_seen": "2026-10-16T17:01:06+00:00"
+      "last_seen": "2026-10-17T05:03:13+00:00"
     },
     {
-      "id": "sylvi-listhaug",
-      "name": "Sylvi Listhaug",
-      "role": "Leader of Norway's Progress Party (FrP)",
-      "blurb": "Sylvi Listhaug is working to consolidate conservative alliances in Norway, appearing in a high-profile joint interview with Christian Democratic leader Dag Inge Ulstein to signal closer cooperation. Her party is also navigating domestic media scrutiny regarding the differential treatment of political advisors in public controversies.",
+      "id": "mike-collins",
+      "name": "Mike Collins",
+      "role": "Republican U.S. Senate candidate in Georgia",
+      "blurb": "Collins is receiving high‑profile support from Trump at rallies in Dalton and elsewhere, positioning himself as a key GOP target in a competitive Senate race.",
       "prominence": 2,
       "signals": [
-        "conservative coalition building",
-        "media strategy and criticism"
+        "Trump endorsement rally",
+        "Senate campaign",
+        "Georgia early voting"
       ],
       "categories": [
-        "🇳🇴 Fremskrittspartiet"
+        "USA",
+        "Georgia",
+        "Republican"
       ],
       "article_count": 3,
       "refs": [
         {
-          "title": "- Jeg synes ikke vi skal overdrive",
-          "source": "Dagbladet",
-          "url": "https://www.dagbladet.no/nyheter/jeg-synes-ikke-vi-skal-overdrive/85279974",
-          "date": "2026-10-16T10:42:42+00:00",
-          "category": "norway"
+          "title": "WATCH: President Trump campaigns for GOP's Collins, Jackson in Dalton Friday",
+          "source": "Local 3 News",
+          "url": "https://www.local3news.com/local-news/watch-president-trump-campaigns-for-gops-collins-jackson-in-dalton-friday/article_0d0833b9-bfa2-4599-ad55-35b8c30d0d5c.html",
+          "date": "2026-10-16T22:19:37+00:00",
+          "category": "usa"
         },
         {
-          "title": "Navnga Frp-rådgiver – anonymiserer hallikdømt Ap-rådgiver: Nå svarer mediene",
-          "source": "inyheter.no",
-          "url": "https://inyheter.no/15/10/2026/navnga-frp-radgiver-anonymiserer-hallikdomt-ap-radgiver-na-svarer-mediene/",
-          "date": "2026-10-15T07:00:16+00:00",
-          "category": "norway"
+          "title": "Trump will rally Georgia Republicans despite party divisions in battleground state",
+          "source": "PBS",
+          "url": "https://www.pbs.org/newshour/politics/trump-will-rally-georgia-republicans-despite-party-divisions-in-battleground-state",
+          "date": "2026-10-16T14:57:37+00:00",
+          "category": "usa"
         },
         {
-          "title": "Nytt radarpar: Her er det plass til flere",
-          "source": "Nettavisen",
-          "url": "https://www.nettavisen.no/norsk-debatt/listhaug-og-ulstein-er-det-nye-radarparet-plass-til-soreide-ogsa/o/80-95-159834",
-          "date": "2026-10-15T05:56:07+00:00",
-          "category": "norway"
+          "title": "President Donald Trump attending Georgia rally for Mike Collins, Rick Jackson today - WSB-TV",
+          "source": "",
+          "url": "https://www.wsbtv.com/news/local/president-donald-trump-attending-georgia-rally-mike-collins-rick-jackson-today/ATMEJFQRLNAMFEKQWS2CB4MVKY/",
+          "date": "2026-10-16T08:45:04+00:00",
+          "category": "usa"
         }
       ],
-      "first_seen": "2026-10-16T17:01:06+00:00",
-      "last_seen": "2026-10-16T17:01:06+00:00"
+      "first_seen": "2026-10-17T05:03:13+00:00",
+      "last_seen": "2026-10-17T05:03:13+00:00"
+    },
+    {
+      "id": "rick-jackson",
+      "name": "Rick Jackson",
+      "role": "Republican candidate for Governor of Georgia",
+      "blurb": "Jackson is campaigning alongside Trump and Collins in Georgia, drawing attention for his proposed Medicaid cuts and the controversy surrounding Trump's presence at his rally.",
+      "prominence": 2,
+      "signals": [
+        "governor campaign",
+        "Trump rally appearance",
+        "policy criticism"
+      ],
+      "categories": [
+        "USA",
+        "Georgia",
+        "Republican"
+      ],
+      "article_count": 3,
+      "refs": [
+        {
+          "title": "WATCH: President Trump campaigns for GOP's Collins, Jackson in Dalton Friday",
+          "source": "Local 3 News",
+          "url": "https://www.local3news.com/local-news/watch-president-trump-campaigns-for-gops-collins-jackson-in-dalton-friday/article_0d0833b9-bfa2-4599-ad55-35b8c30d0d5c.html",
+          "date": "2026-10-16T22:19:37+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump will rally Georgia Republicans despite party divisions in battleground state",
+          "source": "PBS",
+          "url": "https://www.pbs.org/newshour/politics/trump-will-rally-georgia-republicans-despite-party-divisions-in-battleground-state",
+          "date": "2026-10-16T14:57:37+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "President Donald Trump attending Georgia rally for Mike Collins, Rick Jackson today - WSB-TV",
+          "source": "",
+          "url": "https://www.wsbtv.com/news/local/president-donald-trump-attending-georgia-rally-mike-collins-rick-jackson-today/ATMEJFQRLNAMFEKQWS2CB4MVKY/",
+          "date": "2026-10-16T08:45:04+00:00",
+          "category": "usa"
+        }
+      ],
+      "first_seen": "2026-10-17T05:03:13+00:00",
+      "last_seen": "2026-10-17T05:03:13+00:00"
     }
   ]
 }
