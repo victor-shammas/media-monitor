@@ -1,32 +1,39 @@
 {
-  "updated_at": "2026-10-16T17:02:50+00:00",
+  "updated_at": "2026-10-17T05:04:58+00:00",
   "lookback_hours": 48,
-  "model": "Gemini 3.5 Flash-Lite",
+  "model": "Gemini 3.6 Flash",
   "status": "ok",
   "themes": [
     {
       "id": "anti-immigration-targeting-of-minorities",
       "title": "Anti-Immigration Targeting of Minorities",
-      "blurb": "Right-wing leaders and administrations are escalating aggressive immigration and citizenship policies, including plans to denaturalize prominent lawmakers and prioritize specific demographic groups for refugee quotas.",
+      "blurb": "Right-wing figures across the US and France are sharpening focus on anti-immigration policy and minority demographics. Coverage highlights administrative pushes for deportations, selective refugee policies, and rhetoric linking immigration directly to social unrest.",
       "convergence": 4,
       "countries": [
         {
           "name": "🇺🇸 MAGA / Trump",
-          "note": "Administration reportedly targets Representative Ilhan Omar for denaturalization and deportation while setting restrictive refugee quotas prioritizing white South Africans."
+          "note": "Fast-tracking migrant child asylum deportations, setting refugee limits that favor white South Africans, and targeting Rep. Ilhan Omar for denaturalization"
         },
         {
           "name": "🇫🇷 Rassemblement National",
-          "note": "Figures like Marion Maréchal link domestic blockades directly to unassimilated mass immigration, while polls show high anxiety among Muslim communities regarding Le Pen's platform."
+          "note": "Marion Maréchal attributes school violence to mass immigration, while polls reflect heightened concern among French Muslims regarding an RN presidency"
         }
       ],
       "signals": [
-        "citizenship revocation plans",
-        "demographic refugee prioritization",
-        "anti-immigrant rhetoric",
-        "contagion of rhetoric"
+        "hardline migration stance",
+        "targeting minority groups",
+        "shared framing",
+        "nationalist identity focus"
       ],
       "article_count": 5,
       "refs": [
+        {
+          "title": "Advocacy groups accuse Trump administration of fast-tracking migrant children's asylum cases - ABC News",
+          "source": "Breaking News, Latest News and Videos",
+          "url": "https://abcnews.com/US/advocacy-groups-accuse-trump-administration-fast-tracking-migrant/story?id=137318785",
+          "date": "2026-10-16T14:59:46+00:00",
+          "category": "usa"
+        },
         {
           "title": "Trump administration sets a refugee limit, prioritizing white South Africans",
           "source": "America Magazine",
@@ -54,148 +61,45 @@
           "url": "https://www.lejdd.fr/politique/blocage-des-lycees-marion-marechal-fait-le-lien-entre-violences-et-immigration-186075",
           "date": "2026-10-15T06:24:10+00:00",
           "category": "france"
-        },
-        {
-          "title": "Trump administration probe into Rep. Ilhan Omar aims to build case for stripping her citizenship: Report",
-          "source": "Anadolu Ajansı",
-          "url": "https://www.aa.com.tr/en/americas/trump-administration-probe-into-rep-ilhan-omar-aims-to-build-case-for-stripping-her-citizenship-report/4089168",
-          "date": "2026-10-15T03:36:10+00:00",
-          "category": "usa"
         }
       ],
       "first_seen": "2026-10-16T17:02:50+00:00",
-      "last_seen": "2026-10-16T17:02:50+00:00"
-    },
-    {
-      "id": "energy-policy-as-a-political-battleground",
-      "title": "Energy Policy as a Political Battleground",
-      "blurb": "Transnational right-wing coverage heavily focuses on energy independence, rising fuel prices, and controversial supply deals that intersect with foreign policy and domestic electoral strategies.",
-      "convergence": 3,
-      "countries": [
-        {
-          "name": "🇺🇸 MAGA / Trump",
-          "note": "Administration navigates surging diesel prices through overseas diplomatic visits to refineries and contested energy deals involving sanctions relief."
-        },
-        {
-          "name": "🇳🇴 Fremskrittspartiet",
-          "note": "Engages in domestic political battles over energy priorities and opposition accountability amidst tightening conservative coalition talks."
-        }
-      ],
-      "signals": [
-        "supply chain and fuel price focus",
-        "transnational energy deals",
-        "domestic political positioning"
-      ],
-      "article_count": 3,
-      "refs": [
-        {
-          "title": "Marco Rubio to visit Indian billionaire Ambani's refinery in Gujarat as U.S. diesel prices surge",
-          "source": "CNBC",
-          "url": "https://www.cnbc.com/2026/10/16/marco-rubio-reliance-jamnagar-refinery.html",
-          "date": "2026-10-16T06:45:02+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Nytt radarpar: Her er det plass til flere",
-          "source": "Nettavisen",
-          "url": "https://www.nettavisen.no/norsk-debatt/listhaug-og-ulstein-er-det-nye-radarparet-plass-til-soreide-ogsa/o/80-95-159834",
-          "date": "2026-10-15T05:56:07+00:00",
-          "category": "norway"
-        },
-        {
-          "title": "How Trump’s diesel deal with Russia will impact the United States and Ukraine",
-          "source": "DW.com",
-          "url": "https://www.dw.com/en/how-trumps-diesel-deal-with-russia-will-impact-the-united-states-and-ukraine/a-79658596",
-          "date": "2026-10-14T18:06:13+00:00",
-          "category": "usa"
-        }
-      ],
-      "first_seen": "2026-10-16T05:10:02+00:00",
-      "last_seen": "2026-10-16T17:02:50+00:00"
-    },
-    {
-      "id": "cutting-aid-to-ukraine-pro-russia-energy-moves",
-      "title": "Cutting Aid to Ukraine & Pro-Russia Energy Moves",
-      "blurb": "Far-right figures in Europe and North America campaign on rolling back financial support for Ukraine, tying foreign aid reductions directly to national economic strain and alternative diplomatic settlements.",
-      "convergence": 3,
-      "countries": [
-        {
-          "name": "🇫🇷 Rassemblement National",
-          "note": "Marine Le Pen explicitly vows to cut off French financial aid to Ukraine within six months if elected president, citing exhausted national means."
-        },
-        {
-          "name": "🇺🇸 MAGA / Trump",
-          "note": "Administration pursues controversial energy arrangements and pushes for disputed energy ceasefires intersecting with the conflict."
-        }
-      ],
-      "signals": [
-        "foreign aid reduction",
-        "conditional assistance deadlines",
-        "shared skepticism of foreign commitments"
-      ],
-      "article_count": 6,
-      "refs": [
-        {
-          "title": "Présidentielle 2027 : Marine Le Pen coupera l'aide à l'Ukraine au bout de six mois si elle est élue",
-          "source": "France 24",
-          "url": "https://www.france24.com/fr/france/20261015-pr%C3%A9sidentielle-2027-marine-le-pen-coupera-aide-ukraine-six-mois-si-%C3%A9lue",
-          "date": "2026-10-15T06:29:28+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Présidentielle française - Si elle arrive à l'Elysée, Marine Le Pen promet de couper l'aide à l'Ukraine : \"Je ne prends personne en traître\"",
-          "source": "parismatch.be",
-          "url": "https://www.parismatch.be/actualites/monde/2026/10/15/presidentielle-francaise-si-elle-arrive-a-lelysee-marine-le-pen-promet-de-couper-laide-a-lukraine-je-ne-prends-personne-en-traitre-EKOIX7JLGZBBTPVJXNLDVDTVXY/",
-          "date": "2026-10-15T06:07:00+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Guerre en Ukraine: \"Nous ne pouvons plus assumer cet aide financière\", juge Marine Le Pen",
-          "source": "RMC",
-          "url": "https://rmc.bfmtv.com/replay-emissions/apolline-matin/video-guerre-en-ukraine-nous-ne-pouvons-plus-assumer-cet-aide-financiere-juge-marine-le-pen_VN-202610150194.html",
-          "date": "2026-10-15T06:06:43+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Marine Le Pen promet de couper l'aide financière française à l'Ukraine après six mois, en cas de victoire à la présidentielle",
-          "source": "La Libre.be",
-          "url": "https://www.lalibre.be/international/europe/elections-france/2026/10/15/marine-le-pen-promet-de-couper-laide-financiere-francaise-a-lukraine-apres-six-mois-en-cas-de-victoire-a-la-presidentielle-D4LGAWTQSZENHAJ5YKIDP7DSQY/",
-          "date": "2026-10-15T05:57:00+00:00",
-          "category": "france"
-        },
-        {
-          "title": "How Trump’s diesel deal with Russia will impact the United States and Ukraine",
-          "source": "DW.com",
-          "url": "https://www.dw.com/en/how-trumps-diesel-deal-with-russia-will-impact-the-united-states-and-ukraine/a-79658596",
-          "date": "2026-10-14T18:06:13+00:00",
-          "category": "usa"
-        }
-      ],
-      "first_seen": "2026-10-16T17:02:50+00:00",
-      "last_seen": "2026-10-16T17:02:50+00:00"
+      "last_seen": "2026-10-17T05:04:58+00:00"
     },
     {
       "id": "populist-leaders-personal-attacks",
       "title": "Populist Leaders’ Personal Attacks",
-      "blurb": "Prominent right-wing figures and administration leaders frequently utilize harsh personal rhetoric and insults directed at political opponents, institutional figures, and critics during campaign rallies.",
+      "blurb": "Right-wing campaigns in multiple nations are leaning into direct personal attacks against political opponents and institutional figures. Leaders utilize aggressive rhetoric to undermine rivals and question the neutrality of officials.",
       "convergence": 3,
       "countries": [
         {
           "name": "🇺🇸 MAGA / Trump",
-          "note": "Donald Trump and JD Vance deploy aggressive personal attacks against political rivals, state governors, and local candidates during midterm rallies."
+          "note": "JD Vance attacks Democratic Senate candidate Abdul El-Sayed with personal slurs during Michigan campaigning"
         },
         {
           "name": "🇫🇷 Rassemblement National",
-          "note": "Marine Le Pen aggressively targets institutional opponents, demanding resignations and challenging constitutional neutralities."
+          "note": "Marine Le Pen demands the resignation of constitutional chief Richard Ferrand after he vetoes her referendum proposal"
+        },
+        {
+          "name": "🇳🇴 Fremskrittspartiet",
+          "note": "FrP figures dismiss online harassment directed at rival politicians, calling public concern exaggerated"
         }
       ],
       "signals": [
-        "insults toward opponents",
-        "confrontational rhetoric",
-        "demands for institutional resignations"
+        "rhetorical escalation",
+        "attacks on opponents",
+        "institutional confrontation",
+        "shared framing"
       ],
-      "article_count": 5,
+      "article_count": 3,
       "refs": [
+        {
+          "title": "- Jeg synes ikke vi skal overdrive",
+          "source": "Dagbladet",
+          "url": "https://www.dagbladet.no/nyheter/jeg-synes-ikke-vi-skal-overdrive/85279974",
+          "date": "2026-10-16T10:42:42+00:00",
+          "category": "norway"
+        },
         {
           "title": "Fact check: JD Vance attacks Abdul El-Sayed in Michigan",
           "source": "Bridge Michigan",
@@ -209,31 +113,128 @@
           "url": "https://france3-regions.franceinfo.fr/bretagne/finistere/brest/il-a-rompu-avec-la-neutralite-marine-le-pen-exige-la-demission-de-richard-ferrand-apres-son-veto-sur-le-referendum-constitutionnel-3433743.html",
           "date": "2026-10-15T06:16:25+00:00",
           "category": "france"
-        },
-        {
-          "title": "President Donald Trump insults Gov. Katie Hobbs in Bullhead City rally: ‘She’s just a dumb person’",
-          "source": "KTAR News 92.3 FM",
-          "url": "https://ktar.com/arizona-politics-news/election/trump-rally-katie-hobbs",
-          "date": "2026-10-14T21:37:04+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Donald Trump rally in Arizona on Oct. 14: details",
-          "source": "KTAR News 92.3 FM",
-          "url": "https://ktar.com/arizona-politics-news/election/donald-trump-rally-arizona",
-          "date": "2026-10-14T18:05:29+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Vice President JD Vance meets with supporters in Atlanta",
-          "source": "WRDW",
-          "url": "https://www.wrdw.com/2026/10/14/vice-president-jd-vance-meets-with-supporters-atlanta/",
-          "date": "2026-10-14T18:02:00+00:00",
-          "category": "usa"
         }
       ],
       "first_seen": "2026-10-16T05:10:02+00:00",
-      "last_seen": "2026-10-16T17:02:50+00:00"
+      "last_seen": "2026-10-17T05:04:58+00:00"
+    },
+    {
+      "id": "right-wing-campaign-mobilization-coalition-building",
+      "title": "Right-Wing Campaign Mobilization & Coalition Building",
+      "blurb": "Right-wing parties across borders are intensifying grassroots campaign efforts and forging alliances ahead of crucial midterm and general elections. Across the US, France, and Norway, populist leaders are seeking to consolidate conservative voter blocs.",
+      "convergence": 3,
+      "countries": [
+        {
+          "name": "🇺🇸 MAGA / Trump",
+          "note": "Trump and Vance conduct extensive multi-state rally tours to bolster GOP candidates in key midterm battlegrounds"
+        },
+        {
+          "name": "🇫🇷 Rassemblement National",
+          "note": "Le Pen consolidates electoral momentum, leading prospective 2027 presidential runoff polls"
+        },
+        {
+          "name": "🇳🇴 Fremskrittspartiet",
+          "note": "FrP leader Sylvi Listhaug holds joint strategy talks with Christian Democrats to build a broader conservative bloc"
+        }
+      ],
+      "signals": [
+        "electoral positioning",
+        "coalition building",
+        "campaign momentum",
+        "parallel elections"
+      ],
+      "article_count": 4,
+      "refs": [
+        {
+          "title": "WATCH: President Trump campaigns for GOP's Collins, Jackson in Dalton Friday",
+          "source": "Local 3 News",
+          "url": "https://www.local3news.com/local-news/watch-president-trump-campaigns-for-gops-collins-jackson-in-dalton-friday/article_0d0833b9-bfa2-4599-ad55-35b8c30d0d5c.html",
+          "date": "2026-10-16T22:19:37+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "JD Vance heading to Hendersonville as Trump admin. ramps up NC rallies before election",
+          "source": "WRAL",
+          "url": "https://www.wral.com/news/nccapitol/jd-vance-hendersonville-trump-greenville-ramps-up-midterm-rallies-election-october-2026/",
+          "date": "2026-10-16T20:55:33+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Présidentielle 2027 : l'hypothèse d'un duel Marine Le Pen-Jean-Luc Mélenchon au second tour prend de l'ampleur, selon un dernier sondage",
+          "source": "CNews",
+          "url": "https://www.cnews.fr/france/2026-10-15/presidentielle-2027-lhypothese-dun-duel-marine-le-pen-jean-luc-melenchon-au",
+          "date": "2026-10-15T06:10:38+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Nytt radarpar: Her er det plass til flere",
+          "source": "Nettavisen",
+          "url": "https://www.nettavisen.no/norsk-debatt/listhaug-og-ulstein-er-det-nye-radarparet-plass-til-soreide-ogsa/o/80-95-159834",
+          "date": "2026-10-15T05:56:07+00:00",
+          "category": "norway"
+        }
+      ],
+      "first_seen": "2026-10-17T05:04:58+00:00",
+      "last_seen": "2026-10-17T05:04:58+00:00"
+    },
+    {
+      "id": "right-wing-clashes-with-media-and-neutral-institutions",
+      "title": "Right-Wing Clashes with Media and Neutral Institutions",
+      "blurb": "Conservative outlets and leaders in several countries are escalating attacks against mainstream media and neutral state bodies, alleging systemic political bias and overreach while framing their movements as targets of institutional unfairness.",
+      "convergence": 3,
+      "countries": [
+        {
+          "name": "🇺🇸 MAGA / Trump",
+          "note": "Trump administration faces court defeats over press bans and lawsuits from fired FBI agents claiming retaliation"
+        },
+        {
+          "name": "🇳🇴 Fremskrittspartiet",
+          "note": "Alternative media outlets accuse mainstream press of double standards in reporting on political advisers"
+        },
+        {
+          "name": "🇫🇷 Rassemblement National",
+          "note": "Marine Le Pen publicly challenges the constitutional council's authority, accusing it of abandoning neutrality"
+        }
+      ],
+      "signals": [
+        "institutional friction",
+        "media bias claims",
+        "contesting neutral oversight",
+        "shared framing"
+      ],
+      "article_count": 4,
+      "refs": [
+        {
+          "title": "Trump is losing a lot of court cases lately",
+          "source": "Maryland Daily Record",
+          "url": "https://thedailyrecord.com/2026/10/16/trump-administration-court-losses-white-house-bans-environment/",
+          "date": "2026-10-16T18:09:38+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "9 fired FBI employees sue Trump administration",
+          "source": "WPLG Local 10",
+          "url": "https://www.local10.com/video/news/2026/10/16/9-fired-fbi-employees-sue-trump-administration/",
+          "date": "2026-10-16T12:32:36+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Navnga Frp-rådgiver – anonymiserer hallikdømt Ap-rådgiver: Nå svarer mediene",
+          "source": "inyheter.no",
+          "url": "https://inyheter.no/15/10/2026/navnga-frp-radgiver-anonymiserer-hallikdomt-ap-radgiver-na-svarer-mediene/",
+          "date": "2026-10-15T07:00:16+00:00",
+          "category": "norway"
+        },
+        {
+          "title": "'Il a rompu avec la neutralité'. Marine Le Pen exige la démission de Richard Ferrand après son veto sur le référendum constitutionnel",
+          "source": "France 3 Régions",
+          "url": "https://france3-regions.franceinfo.fr/bretagne/finistere/brest/il-a-rompu-avec-la-neutralite-marine-le-pen-exige-la-demission-de-richard-ferrand-apres-son-veto-sur-le-referendum-constitutionnel-3433743.html",
+          "date": "2026-10-15T06:16:25+00:00",
+          "category": "france"
+        }
+      ],
+      "first_seen": "2026-10-17T05:04:58+00:00",
+      "last_seen": "2026-10-17T05:04:58+00:00"
     }
   ]
 }
