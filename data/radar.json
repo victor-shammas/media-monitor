@@ -1,32 +1,52 @@
 {
-  "updated_at": "2026-10-17T05:04:58+00:00",
+  "updated_at": "2026-10-17T16:00:44+00:00",
   "lookback_hours": 48,
-  "model": "Gemini 3.6 Flash",
+  "model": "Gemini 3.5 Flash-Lite",
   "status": "ok",
   "themes": [
     {
       "id": "anti-immigration-targeting-of-minorities",
       "title": "Anti-Immigration Targeting of Minorities",
-      "blurb": "Right-wing figures across the US and France are sharpening focus on anti-immigration policy and minority demographics. Coverage highlights administrative pushes for deportations, selective refugee policies, and rhetoric linking immigration directly to social unrest.",
-      "convergence": 4,
+      "blurb": "Right-wing leaders and administrations across borders continue to advance restrictive immigration agendas, target non-citizens, and frame strict border policies as protective measures for local populations.",
+      "convergence": 2,
       "countries": [
         {
           "name": "🇺🇸 MAGA / Trump",
-          "note": "Fast-tracking migrant child asylum deportations, setting refugee limits that favor white South Africans, and targeting Rep. Ilhan Omar for denaturalization"
+          "note": "Administration takes legal action over non-citizen ballots and advances investigations targeting prominent lawmakers' citizenship status."
         },
         {
-          "name": "🇫🇷 Rassemblement National",
-          "note": "Marion Maréchal attributes school violence to mass immigration, while polls reflect heightened concern among French Muslims regarding an RN presidency"
+          "name": "🇳🇴 Fremskrittspartiet",
+          "note": "Party leadership defends strict immigration controls as a shield protecting immigrants from oppressive cultural practices."
         }
       ],
       "signals": [
-        "hardline migration stance",
-        "targeting minority groups",
-        "shared framing",
-        "nationalist identity focus"
+        "restrictive asylum policies",
+        "citizenship scrutiny",
+        "border enforcement rhetoric"
       ],
       "article_count": 5,
       "refs": [
+        {
+          "title": "(+) Listhaug: Streng innvandringspolitikk beskytter innvandrere",
+          "source": "Dagen",
+          "url": "https://www.dagen.no/nyheter/listhaug-streng-innvandringspolitikk-beskytter-innvandrere/1667432",
+          "date": "2026-10-17T11:20:53+00:00",
+          "category": "norway"
+        },
+        {
+          "title": "Listhaug langer ut: – Mange tør ikke å snakke om dette",
+          "source": "Nettavisen",
+          "url": "https://www.nettavisen.no/nyheter/listhaug-langer-ut-mange-tor-ikke-a-snakke-om-dette/s/80-95-168333",
+          "date": "2026-10-17T10:39:47+00:00",
+          "category": "norway"
+        },
+        {
+          "title": "Trump administration threatens to prosecute local California election workers - ABC News",
+          "source": "Breaking News, Latest News and Videos",
+          "url": "https://abcnews.com/Politics/trump-administration-threatens-prosecute-local-california-election-workers/story?id=137339732",
+          "date": "2026-10-17T03:48:05+00:00",
+          "category": "usa"
+        },
         {
           "title": "Advocacy groups accuse Trump administration of fast-tracking migrant children's asylum cases - ABC News",
           "source": "Breaking News, Latest News and Videos",
@@ -35,206 +55,15 @@
           "category": "usa"
         },
         {
-          "title": "Trump administration sets a refugee limit, prioritizing white South Africans",
-          "source": "America Magazine",
-          "url": "https://www.americamagazine.org/politics-society/dispatches/2026/10/16/trump-refugee-white-south-african/",
-          "date": "2026-10-16T14:58:56+00:00",
-          "category": "usa"
-        },
-        {
           "title": "Trump Administration Reportedly Trying to Denaturalize and Deport Ilhan Omar",
           "source": "Truthout",
           "url": "https://truthout.org/articles/trump-administration-reportedly-trying-to-denaturalize-and-deport-ilhan-omar/",
           "date": "2026-10-15T17:27:22+00:00",
           "category": "usa"
-        },
-        {
-          "title": "Présidentielle 2027 : 46% des musulmans envisagent de quitter la France si Marine Le Pen est élue",
-          "source": "Epoch Times",
-          "url": "https://www.epochtimes.fr/presidentielle-2027-46-des-musulmans-envisagent-de-quitter-la-france-si-marine-le-pen-est-elue-3370387.html",
-          "date": "2026-10-15T06:52:27+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Blocage des lycées : Marion Maréchal fait le lien entre violences et immigration",
-          "source": "lejdd.fr",
-          "url": "https://www.lejdd.fr/politique/blocage-des-lycees-marion-marechal-fait-le-lien-entre-violences-et-immigration-186075",
-          "date": "2026-10-15T06:24:10+00:00",
-          "category": "france"
         }
       ],
       "first_seen": "2026-10-16T17:02:50+00:00",
-      "last_seen": "2026-10-17T05:04:58+00:00"
-    },
-    {
-      "id": "populist-leaders-personal-attacks",
-      "title": "Populist Leaders’ Personal Attacks",
-      "blurb": "Right-wing campaigns in multiple nations are leaning into direct personal attacks against political opponents and institutional figures. Leaders utilize aggressive rhetoric to undermine rivals and question the neutrality of officials.",
-      "convergence": 3,
-      "countries": [
-        {
-          "name": "🇺🇸 MAGA / Trump",
-          "note": "JD Vance attacks Democratic Senate candidate Abdul El-Sayed with personal slurs during Michigan campaigning"
-        },
-        {
-          "name": "🇫🇷 Rassemblement National",
-          "note": "Marine Le Pen demands the resignation of constitutional chief Richard Ferrand after he vetoes her referendum proposal"
-        },
-        {
-          "name": "🇳🇴 Fremskrittspartiet",
-          "note": "FrP figures dismiss online harassment directed at rival politicians, calling public concern exaggerated"
-        }
-      ],
-      "signals": [
-        "rhetorical escalation",
-        "attacks on opponents",
-        "institutional confrontation",
-        "shared framing"
-      ],
-      "article_count": 3,
-      "refs": [
-        {
-          "title": "- Jeg synes ikke vi skal overdrive",
-          "source": "Dagbladet",
-          "url": "https://www.dagbladet.no/nyheter/jeg-synes-ikke-vi-skal-overdrive/85279974",
-          "date": "2026-10-16T10:42:42+00:00",
-          "category": "norway"
-        },
-        {
-          "title": "Fact check: JD Vance attacks Abdul El-Sayed in Michigan",
-          "source": "Bridge Michigan",
-          "url": "https://bridgemi.com/michigan-government/fact-check-jd-vance-attacks-abdul-el-sayed-in-michigan/",
-          "date": "2026-10-16T00:01:10+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "'Il a rompu avec la neutralité'. Marine Le Pen exige la démission de Richard Ferrand après son veto sur le référendum constitutionnel",
-          "source": "France 3 Régions",
-          "url": "https://france3-regions.franceinfo.fr/bretagne/finistere/brest/il-a-rompu-avec-la-neutralite-marine-le-pen-exige-la-demission-de-richard-ferrand-apres-son-veto-sur-le-referendum-constitutionnel-3433743.html",
-          "date": "2026-10-15T06:16:25+00:00",
-          "category": "france"
-        }
-      ],
-      "first_seen": "2026-10-16T05:10:02+00:00",
-      "last_seen": "2026-10-17T05:04:58+00:00"
-    },
-    {
-      "id": "right-wing-campaign-mobilization-coalition-building",
-      "title": "Right-Wing Campaign Mobilization & Coalition Building",
-      "blurb": "Right-wing parties across borders are intensifying grassroots campaign efforts and forging alliances ahead of crucial midterm and general elections. Across the US, France, and Norway, populist leaders are seeking to consolidate conservative voter blocs.",
-      "convergence": 3,
-      "countries": [
-        {
-          "name": "🇺🇸 MAGA / Trump",
-          "note": "Trump and Vance conduct extensive multi-state rally tours to bolster GOP candidates in key midterm battlegrounds"
-        },
-        {
-          "name": "🇫🇷 Rassemblement National",
-          "note": "Le Pen consolidates electoral momentum, leading prospective 2027 presidential runoff polls"
-        },
-        {
-          "name": "🇳🇴 Fremskrittspartiet",
-          "note": "FrP leader Sylvi Listhaug holds joint strategy talks with Christian Democrats to build a broader conservative bloc"
-        }
-      ],
-      "signals": [
-        "electoral positioning",
-        "coalition building",
-        "campaign momentum",
-        "parallel elections"
-      ],
-      "article_count": 4,
-      "refs": [
-        {
-          "title": "WATCH: President Trump campaigns for GOP's Collins, Jackson in Dalton Friday",
-          "source": "Local 3 News",
-          "url": "https://www.local3news.com/local-news/watch-president-trump-campaigns-for-gops-collins-jackson-in-dalton-friday/article_0d0833b9-bfa2-4599-ad55-35b8c30d0d5c.html",
-          "date": "2026-10-16T22:19:37+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "JD Vance heading to Hendersonville as Trump admin. ramps up NC rallies before election",
-          "source": "WRAL",
-          "url": "https://www.wral.com/news/nccapitol/jd-vance-hendersonville-trump-greenville-ramps-up-midterm-rallies-election-october-2026/",
-          "date": "2026-10-16T20:55:33+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Présidentielle 2027 : l'hypothèse d'un duel Marine Le Pen-Jean-Luc Mélenchon au second tour prend de l'ampleur, selon un dernier sondage",
-          "source": "CNews",
-          "url": "https://www.cnews.fr/france/2026-10-15/presidentielle-2027-lhypothese-dun-duel-marine-le-pen-jean-luc-melenchon-au",
-          "date": "2026-10-15T06:10:38+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Nytt radarpar: Her er det plass til flere",
-          "source": "Nettavisen",
-          "url": "https://www.nettavisen.no/norsk-debatt/listhaug-og-ulstein-er-det-nye-radarparet-plass-til-soreide-ogsa/o/80-95-159834",
-          "date": "2026-10-15T05:56:07+00:00",
-          "category": "norway"
-        }
-      ],
-      "first_seen": "2026-10-17T05:04:58+00:00",
-      "last_seen": "2026-10-17T05:04:58+00:00"
-    },
-    {
-      "id": "right-wing-clashes-with-media-and-neutral-institutions",
-      "title": "Right-Wing Clashes with Media and Neutral Institutions",
-      "blurb": "Conservative outlets and leaders in several countries are escalating attacks against mainstream media and neutral state bodies, alleging systemic political bias and overreach while framing their movements as targets of institutional unfairness.",
-      "convergence": 3,
-      "countries": [
-        {
-          "name": "🇺🇸 MAGA / Trump",
-          "note": "Trump administration faces court defeats over press bans and lawsuits from fired FBI agents claiming retaliation"
-        },
-        {
-          "name": "🇳🇴 Fremskrittspartiet",
-          "note": "Alternative media outlets accuse mainstream press of double standards in reporting on political advisers"
-        },
-        {
-          "name": "🇫🇷 Rassemblement National",
-          "note": "Marine Le Pen publicly challenges the constitutional council's authority, accusing it of abandoning neutrality"
-        }
-      ],
-      "signals": [
-        "institutional friction",
-        "media bias claims",
-        "contesting neutral oversight",
-        "shared framing"
-      ],
-      "article_count": 4,
-      "refs": [
-        {
-          "title": "Trump is losing a lot of court cases lately",
-          "source": "Maryland Daily Record",
-          "url": "https://thedailyrecord.com/2026/10/16/trump-administration-court-losses-white-house-bans-environment/",
-          "date": "2026-10-16T18:09:38+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "9 fired FBI employees sue Trump administration",
-          "source": "WPLG Local 10",
-          "url": "https://www.local10.com/video/news/2026/10/16/9-fired-fbi-employees-sue-trump-administration/",
-          "date": "2026-10-16T12:32:36+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Navnga Frp-rådgiver – anonymiserer hallikdømt Ap-rådgiver: Nå svarer mediene",
-          "source": "inyheter.no",
-          "url": "https://inyheter.no/15/10/2026/navnga-frp-radgiver-anonymiserer-hallikdomt-ap-radgiver-na-svarer-mediene/",
-          "date": "2026-10-15T07:00:16+00:00",
-          "category": "norway"
-        },
-        {
-          "title": "'Il a rompu avec la neutralité'. Marine Le Pen exige la démission de Richard Ferrand après son veto sur le référendum constitutionnel",
-          "source": "France 3 Régions",
-          "url": "https://france3-regions.franceinfo.fr/bretagne/finistere/brest/il-a-rompu-avec-la-neutralite-marine-le-pen-exige-la-demission-de-richard-ferrand-apres-son-veto-sur-le-referendum-constitutionnel-3433743.html",
-          "date": "2026-10-15T06:16:25+00:00",
-          "category": "france"
-        }
-      ],
-      "first_seen": "2026-10-17T05:04:58+00:00",
-      "last_seen": "2026-10-17T05:04:58+00:00"
+      "last_seen": "2026-10-17T16:00:44+00:00"
     }
   ]
 }
