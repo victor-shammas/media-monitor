@@ -1,31 +1,38 @@
 {
-  "updated_at": "2026-10-19T05:25:26+00:00",
+  "updated_at": "2026-10-19T18:53:43+00:00",
   "lookback_hours": 48,
-  "model": "Gemini 3.6 Flash",
+  "model": "GPT-OSS 120B (Groq)",
   "status": "ok",
   "themes": [
     {
-      "id": "geopolitical-debates-over-ukraine-and-russia-policy",
-      "title": "Geopolitical Debates Over Ukraine and Russia Policy",
-      "blurb": "Right-wing figures across the US and Europe remain actively engaged in debates over foreign assistance, sanctions policy, and strategic priorities regarding the Russia-Ukraine war. While Donald Trump waives US sanctions on Moscow to incentivize peace talks and lower fuel costs, Scandinavian right-wing leaders like Norway's Sylvi Listhaug explicitly reaffirm support for Ukraine and NATO.",
-      "convergence": 3,
+      "id": "trump-waives-russia-sanctions",
+      "title": "Trump Waives Russia Sanctions",
+      "blurb": "Donald Trump’s decision to temporarily lift U.S. sanctions on Russia is covered across multiple right‑wing outlets, framing it as a peace‑building move while condemning Ukrainian leadership. The story spreads to foreign‑language platforms, highlighting a coordinated narrative that links sanctions relief to domestic economic benefits and diplomatic outreach.",
+      "convergence": 4,
       "countries": [
         {
           "name": "🇺🇸 MAGA / Trump",
-          "note": "Trump waives newly passed Russia sanctions and criticizes President Zelenskyy, arguing for direct negotiations and lower energy prices."
+          "note": "Multiple articles report the waiver, portray it as a peace‑negotiation tool and criticize Zelenskyy."
         },
         {
-          "name": "🇳🇴 Fremskrittspartiet",
-          "note": "FrP leader Sylvi Listhaug explicitly reaffirms strong support for Ukraine and NATO alongside domestic party platforms."
+          "name": "🇫🇷 Rassemblement National",
+          "note": "French right‑wing coverage (via France 24) republishes the waiver story, echoing U.S. framing and adding anti‑EU sentiment."
         }
       ],
       "signals": [
-        "sanctions debates",
-        "foreign policy divergence",
-        "shared geopolitical focus"
+        "shared framing of sanctions relief as peace",
+        "coordinated messaging across US and French right‑wing media",
+        "reaction to Kremlin‑related geopolitics"
       ],
-      "article_count": 10,
+      "article_count": 4,
       "refs": [
+        {
+          "title": "President Trump waives new sanctions on Russia",
+          "source": "KOCO",
+          "url": "https://www.koco.com/article/trump-waives-new-russia-sanctions/74176154",
+          "date": "2026-10-19T11:53:00+00:00",
+          "category": "usa"
+        },
         {
           "title": "Trump defends Russia sanctions waivers, accuses Zelenskyy of 'prolonging war'",
           "source": "DW.com",
@@ -34,137 +41,22 @@
           "category": "usa"
         },
         {
+          "title": "Trump defends Russia sanctions relief, accuses Zelensky of rejecting peace",
+          "source": "France 24",
+          "url": "https://www.france24.com/en/europe/20261018-ukraine-zelensky-war-trump-peace-russia-sanctions",
+          "date": "2026-10-18T21:59:34+00:00",
+          "category": "usa"
+        },
+        {
           "title": "Ukraine: Volodymyr Zelensky denounces the lifting of US sanctions against Russia decided by Donald Trump",
           "source": "i24NEWS",
           "url": "https://www.i24news.tv/en/news/international/ukraine-russia-war/artc-ukraine-volodymyr-zelensky-denounces-the-lifting-of-us-sanctions-against-russia-decided-by-donald-trump",
           "date": "2026-10-18T09:45:00+00:00",
           "category": "usa"
-        },
-        {
-          "title": "President Trump waives new Russia sanctions citing 'national interests'",
-          "source": "FOX 10 Phoenix",
-          "url": "https://www.fox10phoenix.com/video/fmc-2jn9j9k71ildgzkd",
-          "date": "2026-10-18T02:37:40+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Listhaug langer ut: – Mange tør ikke å snakke om dette",
-          "source": "Nettavisen",
-          "url": "https://www.nettavisen.no/nyheter/listhaug-langer-ut-mange-tor-ikke-a-snakke-om-dette/s/80-95-168333",
-          "date": "2026-10-17T10:39:47+00:00",
-          "category": "norway"
         }
       ],
-      "first_seen": "2026-10-18T16:11:48+00:00",
-      "last_seen": "2026-10-19T05:25:26+00:00"
-    },
-    {
-      "id": "rising-fuel-costs-and-energy-inflation",
-      "title": "Rising Fuel Costs and Energy Inflation",
-      "blurb": "Soaring fuel prices and energy inflation serve as central political rallying points for right-wing movements in North America and Scandinavia. Politicians and activists are leveraging voter frustration over gas price surges and tax policies to fault incumbent governments and mobilize base supporters.",
-      "convergence": 3,
-      "countries": [
-        {
-          "name": "🇺🇸 MAGA / Trump",
-          "note": "JD Vance and campaign surrogates emphasize high gas prices and energy costs to attack current economic policies at town halls and rallies."
-        },
-        {
-          "name": "🇳🇴 Fremskrittspartiet",
-          "note": "FrP pushes back against fuel tax reinstatements following a 27.7% single-month surge in domestic fuel costs."
-        }
-      ],
-      "signals": [
-        "energy inflation",
-        "cost of living messaging",
-        "voter economic anxiety"
-      ],
-      "article_count": 6,
-      "refs": [
-        {
-          "title": "BRIAN HOWEY | President Trump’s diesel grade betrayal of Ukraine",
-          "source": "nwitimes.com",
-          "url": "https://nwitimes.com/opinion/article_5d0a6121-49fb-42f2-a3ca-e84db264879d.html",
-          "date": "2026-10-18T11:00:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Top takeaways from JD Vance town hall: Costly gas, DC corruption, immigration hot takes and the war",
-          "source": "Fox News",
-          "url": "https://www.foxnews.com/politics/top-takeaways-from-jd-vance-town-hall-costly-gas-dc-corruption-immigration-hot-takes-war",
-          "date": "2026-10-18T02:32:15+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Retired teacher urges Trump to adopt new MAGA: ‘Make Affordable Gas Again’ - San Diego Union-Tribune",
-          "source": "",
-          "url": "https://www.sandiegouniontribune.com/2026/10/17/retired-teacher-urges-trump-to-adopt-new-maga-make-affordable-gas-again/",
-          "date": "2026-10-17T18:04:37+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Drivstoffet ble 27,7 prosent dyrere på én måned: – Det er helt hårreisende",
-          "source": "Eidsvoll Ullensaker Blad",
-          "url": "https://www.eub.no/drivstoffet-ble-27-7-prosent-dyrere-pa-n-maned-det-er-helt-harreisende/s/80-136-6494",
-          "date": "2026-10-17T10:00:00+00:00",
-          "category": "norway"
-        }
-      ],
-      "first_seen": "2026-10-18T16:11:48+00:00",
-      "last_seen": "2026-10-19T05:25:26+00:00"
-    },
-    {
-      "id": "anti-immigration-targeting-of-minorities",
-      "title": "Anti-Immigration Targeting of Minorities",
-      "blurb": "Nationalist and right-wing populist parties continue to frame strict border controls and immigration limits as fundamental to protecting national culture and social cohesion. Leaders emphasize the need to confront non-integrated cultural norms and secure borders ahead of upcoming election cycles.",
-      "convergence": 3,
-      "countries": [
-        {
-          "name": "🇳🇴 Fremskrittspartiet",
-          "note": "Sylvi Listhaug argues that strict immigration limits protect society from clan culture and religious dominance."
-        },
-        {
-          "name": "🇺🇸 MAGA / Trump",
-          "note": "JD Vance and Trump surrogates place immigration restrictions and border security at the forefront of national campaign events."
-        }
-      ],
-      "signals": [
-        "cultural defense",
-        "strict border rhetoric",
-        "populist immigration framing"
-      ],
-      "article_count": 6,
-      "refs": [
-        {
-          "title": "JD Vance’s immigration tiger is turning on its rider",
-          "source": "The Times of India",
-          "url": "https://timesofindia.indiatimes.com/world/us/jd-vances-immigration-tiger-is-turning-on-its-rider/articleshow/135028163.cms",
-          "date": "2026-10-18T11:47:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Vance faces tough questions on Iran war, immigration and more in CBS town hall - ABC News",
-          "source": "Breaking News, Latest News and Videos",
-          "url": "https://abcnews.com/US/wireStory/vance-faces-tough-questions-iran-war-immigration-cbs-137356407",
-          "date": "2026-10-18T04:52:04+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "(+) Listhaug: Streng innvandringspolitikk beskytter innvandrere",
-          "source": "Dagen",
-          "url": "https://www.dagen.no/nyheter/listhaug-streng-innvandringspolitikk-beskytter-innvandrere/1667432",
-          "date": "2026-10-17T11:20:53+00:00",
-          "category": "norway"
-        },
-        {
-          "title": "Listhaug langer ut: – Mange tør ikke å snakke om dette",
-          "source": "Nettavisen",
-          "url": "https://www.nettavisen.no/nyheter/listhaug-langer-ut-mange-tor-ikke-a-snakke-om-dette/s/80-95-168333",
-          "date": "2026-10-17T10:39:47+00:00",
-          "category": "norway"
-        }
-      ],
-      "first_seen": "2026-10-16T17:02:50+00:00",
-      "last_seen": "2026-10-19T05:25:26+00:00"
+      "first_seen": "2026-10-19T18:53:43+00:00",
+      "last_seen": "2026-10-19T18:53:43+00:00"
     }
   ]
 }
