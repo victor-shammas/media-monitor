@@ -1,30 +1,31 @@
 {
-  "updated_at": "2026-10-19T18:53:43+00:00",
+  "updated_at": "2026-10-20T05:26:05+00:00",
   "lookback_hours": 48,
-  "model": "GPT-OSS 120B (Groq)",
+  "model": "Gemini 3.6 Flash",
   "status": "ok",
   "themes": [
     {
       "id": "trump-waives-russia-sanctions",
       "title": "Trump Waives Russia Sanctions",
-      "blurb": "Donald Trump’s decision to temporarily lift U.S. sanctions on Russia is covered across multiple right‑wing outlets, framing it as a peace‑building move while condemning Ukrainian leadership. The story spreads to foreign‑language platforms, highlighting a coordinated narrative that links sanctions relief to domestic economic benefits and diplomatic outreach.",
+      "blurb": "President Trump's decision to temporarily waive sanctions on Russia's energy sector to facilitate peace negotiations and lower domestic fuel costs continues to generate significant cross-border fallout. While Trump defends the relief as essential leverage for peace while accusing Ukrainian leadership of prolonging the war, foreign media and international observers frame the move as a major concession to Moscow.",
       "convergence": 4,
       "countries": [
         {
           "name": "🇺🇸 MAGA / Trump",
-          "note": "Multiple articles report the waiver, portray it as a peace‑negotiation tool and criticize Zelenskyy."
+          "note": "Trump administration defends energy sanctions relief as a pragmatic measure to lower domestic fuel costs for farmers and force peace talks."
         },
         {
           "name": "🇫🇷 Rassemblement National",
-          "note": "French right‑wing coverage (via France 24) republishes the waiver story, echoing U.S. framing and adding anti‑EU sentiment."
+          "note": "French and international coverage focuses on Zelensky's denunciation of the US policy shift and its impact on European security."
         }
       ],
       "signals": [
-        "shared framing of sanctions relief as peace",
-        "coordinated messaging across US and French right‑wing media",
-        "reaction to Kremlin‑related geopolitics"
+        "reaction to US decision",
+        "foreign policy shift",
+        "sanctions relief",
+        "peace negotiation framing"
       ],
-      "article_count": 4,
+      "article_count": 5,
       "refs": [
         {
           "title": "President Trump waives new sanctions on Russia",
@@ -48,6 +49,13 @@
           "category": "usa"
         },
         {
+          "title": "BRIAN HOWEY | President Trump’s diesel grade betrayal of Ukraine",
+          "source": "nwitimes.com",
+          "url": "https://nwitimes.com/opinion/article_5d0a6121-49fb-42f2-a3ca-e84db264879d.html",
+          "date": "2026-10-18T11:00:00+00:00",
+          "category": "usa"
+        },
+        {
           "title": "Ukraine: Volodymyr Zelensky denounces the lifting of US sanctions against Russia decided by Donald Trump",
           "source": "i24NEWS",
           "url": "https://www.i24news.tv/en/news/international/ukraine-russia-war/artc-ukraine-volodymyr-zelensky-denounces-the-lifting-of-us-sanctions-against-russia-decided-by-donald-trump",
@@ -56,7 +64,7 @@
         }
       ],
       "first_seen": "2026-10-19T18:53:43+00:00",
-      "last_seen": "2026-10-19T18:53:43+00:00"
+      "last_seen": "2026-10-20T05:26:05+00:00"
     }
   ]
 }
