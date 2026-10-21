@@ -1,33 +1,40 @@
 {
-  "updated_at": "2026-10-20T17:35:52+00:00",
+  "updated_at": "2026-10-21T05:22:42+00:00",
   "lookback_hours": 48,
-  "model": "Gemini 3.6 Flash",
+  "model": "GPT-OSS 120B (Groq)",
   "status": "ok",
   "actors": [
     {
       "id": "donald-trump",
       "name": "Donald Trump",
       "role": "President of the United States",
-      "blurb": "President Donald Trump dominates right-wing news coverage with a high-intensity midterm campaign swing across multiple states while promoting major economic initiatives, including an $8 billion agricultural relief plan. He also faces intense news focus over foreign policy moves on Russia and Israel, along with ongoing legal clashes over executive action and election policies.",
+      "blurb": "Trump is touring key swing states, unveiling a $25 million whistleblower reward program, pushing an $8 billion farm relief plan, and repeatedly campaigning for Republican Senate candidates ahead of the midterms, while also courting media attention with controversial proposals like renaming New Mexico.",
       "prominence": 5,
       "signals": [
         "midterm campaign blitz",
-        "executive policy moves",
-        "foreign policy decisions",
-        "election lawsuits"
+        "whistleblower program launch",
+        "farm relief announcement",
+        "state renaming proposal"
       ],
       "categories": [
-        "MAGA / Trump",
-        "US Midterms",
-        "US Policy"
+        "campaign",
+        "policy",
+        "controversy"
       ],
-      "article_count": 40,
+      "article_count": 31,
       "refs": [
         {
-          "title": "Trump Administration announces $8 billion farm relief plan as fuel, fertilizer costs bite",
-          "source": "Toledo Blade",
-          "url": "https://www.toledoblade.com/business/agriculture/2026/10/20/trump-administration-announces-8-billion-farm-relief-plan-as-fuel-fertilizer-costs-bite/stories/20261020088",
-          "date": "2026-10-20T13:33:42+00:00",
+          "title": "In announcing whistleblower reward program, Trump again zones in on Minnesota",
+          "source": "MPR News",
+          "url": "https://www.mprnews.org/story/2026/10/20/anti-fraud-whistleblower-reward-program-announced-by-president-donald-trump",
+          "date": "2026-10-21T00:47:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump and Vance to announce a $25M whistleblower program to encourage public to report alleged fraud",
+          "source": "Baltimore Sun",
+          "url": "https://www.baltimoresun.com/2026/10/20/trump-vance-fraud-whistleblower-program/",
+          "date": "2026-10-20T14:39:44+00:00",
           "category": "usa"
         },
         {
@@ -38,47 +45,41 @@
           "category": "usa"
         },
         {
+          "title": "Jon Stewart Criticizes JD Vance for Constantly Demonizing Immigrants",
+          "source": "Rolling Stone",
+          "url": "https://www.rollingstone.com/tv-movies/tv-movie-news/jon-stewart-jd-vance-immigrants-criticism-daily-show-1235645320/",
+          "date": "2026-10-20T06:34:11+00:00",
+          "category": "usa"
+        },
+        {
           "title": "President Trump reiterating New Mexico's name change to New America",
           "source": "KOAT",
           "url": "https://www.koat.com/article/president-trump-reiterating-new-mexicos-name-change-to-new-america/74186672",
           "date": "2026-10-20T04:15:00+00:00",
           "category": "usa"
-        },
-        {
-          "title": "President Trump waives new sanctions on Russia",
-          "source": "KOCO",
-          "url": "https://www.koco.com/article/trump-waives-new-russia-sanctions/74176154",
-          "date": "2026-10-19T11:53:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Trump defends Russia sanctions waivers, accuses Zelenskyy of 'prolonging war'",
-          "source": "DW.com",
-          "url": "https://www.dw.com/en/trump-defends-russia-sanctions-waivers-accuses-zelenskyy-of-prolonging-war/a-79694674",
-          "date": "2026-10-19T00:32:38+00:00",
-          "category": "usa"
         }
       ],
       "first_seen": "2026-08-16T02:13:23+00:00",
-      "last_seen": "2026-10-20T17:35:52+00:00"
+      "last_seen": "2026-10-21T05:22:42+00:00"
     },
     {
       "id": "jd-vance",
       "name": "JD Vance",
       "role": "Vice President of the United States",
-      "blurb": "Vice President JD Vance is actively headlining midterm campaign rallies in swing and key districts across North Carolina and Ohio. He is also generating media attention for his public exchanges over immigration policy, foreign endorsement stances, and future presidential aspirations.",
+      "blurb": "Vice President Vance is active on the campaign trail, defending immigration policies at town halls, refusing to endorse Israel’s Netanyahu, and rallying Republican candidates in North Carolina and Ohio, while facing criticism for his remarks on immigrants.",
       "prominence": 4,
       "signals": [
-        "midterm campaign rallies",
-        "immigration rhetoric",
-        "foreign policy stance",
-        "2028 election speculation"
+        "immigration town hall",
+        "Netanyahu endorsement refusal",
+        "state campaign rallies",
+        "public criticism"
       ],
       "categories": [
-        "MAGA / Trump",
-        "US Midterms"
+        "campaign",
+        "immigration",
+        "foreign policy"
       ],
-      "article_count": 14,
+      "article_count": 9,
       "refs": [
         {
           "title": "Catholic sister challenges JD Vance over ICE tactics, treatment of immigrants",
@@ -95,46 +96,46 @@
           "category": "usa"
         },
         {
-          "title": "'I am not expressing opposition' US VP JD Vance Refuses to Support Netanyahu in Israeli Elections",
-          "source": "i24NEWS",
-          "url": "https://www.i24news.tv/en/news/israel-election-s-2026/artc-i-am-not-expressing-opposition-us-vp-jd-vance-refuses-to-support-netanyahu-in-israeli-elections",
-          "date": "2026-10-20T05:55:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "JD Vance says Trump would likely endorse him if he runs for president",
-          "source": "Anadolu Ajansı",
-          "url": "https://www.aa.com.tr/en/americas/jd-vance-says-trump-would-likely-endorse-him-if-he-runs-for-president/4094013",
-          "date": "2026-10-20T02:37:30+00:00",
-          "category": "usa"
-        },
-        {
           "title": "JD Vance campaigns for Republican candidates at western North Carolina rally",
           "source": "WLOS",
           "url": "https://wlos.com/news/local/vice-president-jd-vance-campaigns-republican-candidates-gop-western-north-carolina-rally-hendersonville-midterm-elections-jennifer-balkcom-michael-whatley",
           "date": "2026-10-19T22:39:37+00:00",
           "category": "usa"
+        },
+        {
+          "title": "Live updates: Republican supporters await VP J.D. Vance's arrival in Hendersonville",
+          "source": "WLOS",
+          "url": "https://wlos.com/news/local/vice-president-jd-vance-visit-traffic-delays-expected-along-us-64-in-hendersonville-alertnate-routes-slow-rolls-henderson-county-government-sheriffs-office-jennifer-balkcom-midterm-election",
+          "date": "2026-10-19T18:01:41+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "JD Vance to hold campaign rally in Hendersonville Monday",
+          "source": "828 News Now",
+          "url": "https://828newsnow.com/news/228822-jd-vance-to-hold-campaign-rally-in-hendersonville-monday/",
+          "date": "2026-10-19T12:07:03+00:00",
+          "category": "usa"
         }
       ],
       "first_seen": "2026-10-15T05:18:45+00:00",
-      "last_seen": "2026-10-20T17:35:52+00:00"
+      "last_seen": "2026-10-21T05:22:42+00:00"
     },
     {
       "id": "roger-marshall",
       "name": "Roger Marshall",
       "role": "U.S. Senator from Kansas",
-      "blurb": "Senator Roger Marshall is receiving heightened national coverage as Donald Trump campaigns directly on his behalf in Kansas. Marshall is locked in a competitive toss-up re-election battle, making his race a key focal point of the Republican effort to maintain Senate control.",
-      "prominence": 2,
+      "blurb": "Senator Marshall is in a tight Senate race, receiving high‑profile support from Trump at Kansas rallies, while protests and media coverage focus on his vulnerable position against Democrat Adam Hamilton.",
+      "prominence": 3,
       "signals": [
-        "election campaign",
-        "midterm battleground",
-        "presidential endorsement"
+        "tight Senate race",
+        "Trump endorsement rally",
+        "protest disruptions"
       ],
       "categories": [
-        "MAGA / Trump",
-        "US Midterms"
+        "campaign",
+        "election"
       ],
-      "article_count": 4,
+      "article_count": 3,
       "refs": [
         {
           "title": "Donald Trump’s MAGA Rally Is Constantly Derailed by Protesters",
@@ -151,13 +152,6 @@
           "category": "usa"
         },
         {
-          "title": "President Donald Trump urges Kansans to get out and vote in midterm elections",
-          "source": "KSHB 41 Kansas City",
-          "url": "https://www.kshb.com/news/local-news/missouri/kansas-city/president-donald-trump-urges-kansans-to-get-out-and-vote-in-midterm-elections",
-          "date": "2026-10-20T04:00:59+00:00",
-          "category": "usa"
-        },
-        {
           "title": "President Trump shows support for Sen. Roger Marshall with Kansas stop ahead of midterm",
           "source": "WIBW",
           "url": "https://www.wibw.com/2026/10/20/president-trump-shows-support-sen-roger-marshall-with-kansas-stop-ahead-midterm/",
@@ -166,7 +160,7 @@
         }
       ],
       "first_seen": "2026-10-20T17:35:52+00:00",
-      "last_seen": "2026-10-20T17:35:52+00:00"
+      "last_seen": "2026-10-21T05:22:42+00:00"
     }
   ]
 }
