@@ -1,30 +1,31 @@
 {
-  "updated_at": "2026-10-22T17:42:14+00:00",
+  "updated_at": "2026-10-23T05:28:37+00:00",
   "lookback_hours": 48,
-  "model": "GPT-OSS 120B (Groq)",
+  "model": "Gemini 3.6 Flash",
   "status": "ok",
   "themes": [
     {
       "id": "transnational-right-weaponizes-french-riots",
       "title": "Transnational Right Weaponizes French Riots",
-      "blurb": "Right‑wing outlets in the United States and France are using recent street unrest in France to energize their bases, framing the riots as evidence of state failure and a rallying cry for law‑and‑order politics ahead of elections.",
-      "convergence": 5,
+      "blurb": "Right-wing political figures in both France and the United States are seizing on recent French civil unrest to push shared law-and-order rhetoric. While Rassemblement National frames the riots as evidence of a collapsing French state, MAGA strategists are actively incorporating the turmoil into US midterm campaign messaging.",
+      "convergence": 4,
       "countries": [
         {
           "name": "🇫🇷 Rassemblement National",
-          "note": "Marine Le Pen cites the October 17 riots as proof the French state is collapsing and uses them to boost her poll numbers."
+          "note": "Marine Le Pen leverages domestic riots and urban violence to argue the French state is collapsing, cementing her hardline platform."
         },
         {
           "name": "🇺🇸 MAGA / Trump",
-          "note": "Le Monde reports Trump’s campaign is invoking the French riots to mobilise MAGA supporters before the U.S. midterms."
+          "note": "Trump campaign operatives exploit coverage of French unrest to stoke security fears and energize their base ahead of midterms."
         }
       ],
       "signals": [
         "shared framing",
-        "reaction to external unrest",
-        "contagion of rhetoric"
+        "rhetorical exploitation",
+        "transnational contagion",
+        "law-and-order focus"
       ],
-      "article_count": 5,
+      "article_count": 4,
       "refs": [
         {
           "title": "Violences du 17 octobre, présidentielle, propos antisémites attribués à Jordan Bardella... Le \"8h30 franceinfo\" de Marine Le Pen",
@@ -53,47 +54,34 @@
           "url": "https://www.franceinfo.fr/replay-radio/l-edito-politique/edito-a-six-mois-de-l-election-presidentielle-la-popularite-de-marine-le-pen-semble-inalterable_8226091.html",
           "date": "2026-10-21T06:05:17+00:00",
           "category": "france"
-        },
-        {
-          "title": "Steven Shook and Libertarian Gray face ‘MAGA Warrior’ Brandon Gill for US House District 26 - Denton Record-Chronicle",
-          "source": "",
-          "url": "https://dentonrc.com/elections/steven-shook-and-libertarian-gray-face-maga-warrior-brandon-gill-for-us-house-district-26/article_c6fd1674-cdca-49d7-8807-b4b87b32653d.html",
-          "date": "2026-10-22T00:27:56+00:00",
-          "category": "usa"
         }
       ],
       "first_seen": "2026-10-22T17:42:14+00:00",
-      "last_seen": "2026-10-22T17:42:14+00:00"
+      "last_seen": "2026-10-23T05:28:37+00:00"
     },
     {
       "id": "hardline-antiimmigration-policies-surge",
       "title": "Hardline Anti‑Immigration Policies Surge",
-      "blurb": "Both Norway’s Progress Party and the Trump administration are pushing stricter immigration controls, from limiting family reunification to accelerating deportations and building a new border wall.",
+      "blurb": "Populist right parties across Europe and North America are intensifying their focus on aggressive anti-immigration proposals and border enforcement. In Norway, FrP is calling for third-country asylum processing and restricted family reunification, echoing the Trump administration's ongoing border wall litigation and elevated deportation numbers.",
       "convergence": 4,
       "countries": [
         {
           "name": "🇳🇴 Fremskrittspartiet",
-          "note": "Party leader Sylvi Listhaug proposes tighter asylum rules and caps on family reunification."
+          "note": "Party leader Sylvi Listhaug advocates closing doors to new immigrants and outsourcing asylum processing to third countries."
         },
         {
           "name": "🇺🇸 MAGA / Trump",
-          "note": "Trump administration reports higher deportation numbers and seeks Supreme Court approval for a new wall."
+          "note": "The administration highlights rising deportation totals while pursuing Supreme Court approval for border wall expansion and purging noncitizens from voter rolls."
         }
       ],
       "signals": [
+        "border enforcement",
         "policy imitation",
-        "parallel legislation",
-        "shared anti‑immigration framing"
+        "hardline rhetoric",
+        "shared messaging"
       ],
       "article_count": 4,
       "refs": [
-        {
-          "title": "Listhaug vil stenge døren for flere innvandrere – dette kan bli konsekvensene",
-          "source": "Utrop",
-          "url": "https://www.utrop.no/nyheter/391735/",
-          "date": "2026-10-21T05:39:19+00:00",
-          "category": "norway"
-        },
         {
           "title": "Deportations climb under President Donald Trump but fall short of White House target, a new report finds",
           "source": "Chicago Tribune",
@@ -114,49 +102,64 @@
           "url": "https://www.washingtonexaminer.com/news/justice/4774650/democrats-sue-trump-administration-voter-roll-efforts/",
           "date": "2026-10-22T00:50:55+00:00",
           "category": "usa"
+        },
+        {
+          "title": "Listhaug vil stenge døren for flere innvandrere – dette kan bli konsekvensene",
+          "source": "Utrop",
+          "url": "https://www.utrop.no/nyheter/391735/",
+          "date": "2026-10-21T05:39:19+00:00",
+          "category": "norway"
         }
       ],
       "first_seen": "2026-10-22T17:42:14+00:00",
-      "last_seen": "2026-10-22T17:42:14+00:00"
+      "last_seen": "2026-10-23T05:28:37+00:00"
     },
     {
       "id": "populist-right-momentum-ahead-of-elections",
       "title": "Populist Right Momentum Ahead of Elections",
-      "blurb": "Right‑wing parties in the United States, France, and Norway are experiencing a surge in electoral enthusiasm, highlighted by high‑profile rallies, stable poll numbers, and strategic positioning for upcoming votes.",
+      "blurb": "Right-wing parties across multiple Western democracies are rallying supporters and sustaining polling strength ahead of upcoming legislative and executive elections. High-profile campaign blitzes in the United States parallel strong presidential polling for Marine Le Pen in France and assertive agenda-setting by Norway's FrP.",
       "convergence": 3,
       "countries": [
         {
           "name": "🇺🇸 MAGA / Trump",
-          "note": "Extensive rally coverage, promises of cash “goodies,” and Vance’s campaign trips."
+          "note": "Trump and Vance execute high-volume campaign rallies and heavy financial investments to defend their congressional majority."
         },
         {
           "name": "🇫🇷 Rassemblement National",
-          "note": "Marine Le Pen maintains strong poll standings six months before the French presidential election."
+          "note": "Marine Le Pen maintains resilient polling leadership and frontrunner status ahead of the French presidential election."
         },
         {
           "name": "🇳🇴 Fremskrittspartiet",
-          "note": "FrP’s growing influence is discussed as a possible game‑changer for Norway’s 2027 elections."
+          "note": "FrP drives public debates on key policy issues to challenge the ruling government and build electoral support."
         }
       ],
       "signals": [
-        "parallel election cycles",
-        "coordinated campaigning",
-        "cross‑border momentum narrative"
+        "electoral momentum",
+        "campaign blitzes",
+        "populist mobilization",
+        "parallel elections"
       ],
       "article_count": 6,
       "refs": [
         {
-          "title": "Punches thrown during Trump rally in South Carolina: ‘He got whacked’",
-          "source": "WBTV",
-          "url": "https://www.wbtv.com/2026/10/22/punches-thrown-during-trump-rally-south-carolina-he-got-whacked/",
-          "date": "2026-10-22T12:48:00+00:00",
+          "title": "Trump Rally: Touts Trump administration accomplishments while supporting Iowa candidates",
+          "source": "KTIV",
+          "url": "https://www.ktiv.com/video/2026/10/23/trump-rally-touts-trump-administration-accomplishments-while-supporting-iowa-candidates/",
+          "date": "2026-10-23T00:50:00+00:00",
           "category": "usa"
         },
         {
-          "title": "President Donald Trump visits Greenville, joined by Whatley and Buckhout",
-          "source": "WUNC News",
-          "url": "https://www.wunc.org/2026-10-21/president-donald-trump-visits-greenville-whatley-buckhout",
-          "date": "2026-10-21T12:32:00+00:00",
+          "title": "Donald Trump’s last push to save GOP majority",
+          "source": "Punchbowl News",
+          "url": "https://punchbowl.news/article/house/trump-gop-majority/",
+          "date": "2026-10-22T18:02:48+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Vice President Vance rallies Ohio Republicans ahead of midterm election",
+          "source": "Spectrum News",
+          "url": "https://spectrumnews1.com/oh/columbus/news/2026/10/21/vice-president-vance-rallies-ohio-republicans-ahead-of-midterm-election",
+          "date": "2026-10-21T21:38:00+00:00",
           "category": "usa"
         },
         {
@@ -167,17 +170,10 @@
           "category": "france"
         },
         {
-          "title": "(+) Et gigantisk Frp kan være redningen for Støre",
-          "source": "Morgenbladet",
-          "url": "https://www.morgenbladet.no/ideer/et-gigantisk-frp-kan-vaere-redningen-for-store/10590437",
-          "date": "2026-10-21T02:15:00+00:00",
-          "category": "norway"
-        },
-        {
-          "title": "Violences du 17 octobre, présidentielle, propos antisémites attribués à Jordan Bardella... Le \"8h30 franceinfo\" de Marine Le Pen",
+          "title": "Édito. À six mois de l'élection présidentielle, la popularité de Marine Le Pen semble inaltérable",
           "source": "franceinfo",
-          "url": "https://www.franceinfo.fr/replay-radio/8h30-fauvelle-dely/violences-du-17-octobre-presidentielle-propos-antisemites-attribues-a-jordan-bardella-le-8h30-franceinfo-de-marine-le-pen_8226034.html",
-          "date": "2026-10-21T06:53:05+00:00",
+          "url": "https://www.franceinfo.fr/replay-radio/l-edito-politique/edito-a-six-mois-de-l-election-presidentielle-la-popularite-de-marine-le-pen-semble-inalterable_8226091.html",
+          "date": "2026-10-21T06:05:17+00:00",
           "category": "france"
         },
         {
@@ -189,61 +185,7 @@
         }
       ],
       "first_seen": "2026-10-22T17:42:14+00:00",
-      "last_seen": "2026-10-22T17:42:14+00:00"
-    },
-    {
-      "id": "internal-party-turmoil-and-scandal",
-      "title": "Internal Party Turmoil and Scandal",
-      "blurb": "Both Sweden’s Democrats and the U.S. MAGA movement are grappling with internal controversies that threaten party cohesion, from leadership disputes to public backlash over inflammatory remarks.",
-      "convergence": 2,
-      "countries": [
-        {
-          "name": "🇸🇪 Sverigedemokraterna",
-          "note": "Analyses link recent electoral defeat to perceived chaos within the party."
-        },
-        {
-          "name": "🇺🇸 MAGA / Trump",
-          "note": "Multiple reports of Trump’s contentious statements and legal challenges create internal friction."
-        }
-      ],
-      "signals": [
-        "shared scandal narrative",
-        "leadership criticism",
-        "media focus on discord"
-      ],
-      "article_count": 4,
-      "refs": [
-        {
-          "title": "LEDARE: Var det kaoset i Dalarna som fick SD:s väljare att fly? - Falu-Kuriren",
-          "source": "",
-          "url": "https://www.falukuriren.se/opinion/ledare/var-det-kaoset-i-dalarna-som-fick-sd-s-valjare-att-fly/",
-          "date": "2026-10-21T03:05:00+00:00",
-          "category": "sweden"
-        },
-        {
-          "title": "Donald Trump Snaps at Andrew Feinberg, Warns Him To Be Careful in Oval Office: how 12 outlets framed it",
-          "source": "NewsCord",
-          "url": "https://newscord.org/article/donald-trump-snaps-at-andrew-feinberg-warns-him-to-be-careful-in-oval-office--Story_20261021_Quietquietareyouasic96e8c276",
-          "date": "2026-10-21T05:32:42+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Michael Kosta Delivers A Reality Check To MAGA After Trump's Latest Bonkers Remarks",
-          "source": "Yahoo News Singapore",
-          "url": "https://sg.news.yahoo.com/michael-kosta-delivers-reality-check-061420905.html",
-          "date": "2026-10-21T06:14:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Jewish community speaks out after President Trump uses antisemitic slur at rally",
-          "source": "KWCH",
-          "url": "https://www.kwch.com/video/2026/10/21/jewish-community-speaks-out-after-president-trump-uses-antisemitic-slur-rally/",
-          "date": "2026-10-21T03:15:00+00:00",
-          "category": "usa"
-        }
-      ],
-      "first_seen": "2026-10-22T17:42:14+00:00",
-      "last_seen": "2026-10-22T17:42:14+00:00"
+      "last_seen": "2026-10-23T05:28:37+00:00"
     }
   ]
 }
