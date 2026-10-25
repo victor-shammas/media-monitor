@@ -1,49 +1,63 @@
 {
-  "updated_at": "2026-10-25T05:25:00+00:00",
+  "updated_at": "2026-10-25T16:53:50+00:00",
   "lookback_hours": 48,
-  "model": "Gemini 3.6 Flash",
+  "model": "Gemini 3.5 Flash-Lite",
   "status": "ok",
   "themes": [
     {
       "id": "populist-right-momentum-ahead-of-elections",
       "title": "Populist Right Momentum Ahead of Elections",
-      "blurb": "Right-wing and populist movement leaders across the United States, France, and Italy are mobilizing voters through high-profile campaign rallies, national party congresses, and early voting drives. Figures such as Donald Trump, Marine Le Pen, and Matteo Salvini are using these major platform events to consolidate party unity, present platform visions, and rally their bases for upcoming elections.",
+      "blurb": "National populist and far-right parties across multiple countries are organizing major congresses, launching aggressive campaign drives, and dominating polls ahead of upcoming legislative and presidential votes.",
       "convergence": 4,
       "countries": [
         {
-          "name": "🇺🇸 MAGA / Trump",
-          "note": "Trump and Vance lead midterm campaign rallies, cast early ballots, and push voter turnout efforts across key swing states"
+          "name": "🇫🇷 Rassemblement National",
+          "note": "Marine Le Pen and Jordan Bardella launch presidential campaign and party congress in Orléans amid high poll numbers (up to 38%)."
         },
         {
-          "name": "🇫🇷 Rassemblement National",
-          "note": "Marine Le Pen launches her presidential campaign promising 'renaissance' as the party prepares for its national congress"
+          "name": "🇺🇸 MAGA / Trump",
+          "note": "Donald Trump and JD Vance aggressively campaign across key states for the midterm elections, holding major rallies and pushing executive priorities."
         },
         {
           "name": "🇮🇹 Fratelli d'Italia / Lega",
-          "note": "Lega opens its national congress with hundreds of delegates gathering to debate party direction and leadership strategy"
+          "note": "Lega opens its party congress in Italy featuring internal leadership tensions and strategic policy motions."
         }
       ],
       "signals": [
-        "campaign mobilization",
+        "parallel elections",
+        "campaign launches",
         "party congresses",
-        "electoral strategy",
-        "leadership consolidation"
+        "polling dominance"
       ],
-      "article_count": 12,
+      "article_count": 8,
       "refs": [
+        {
+          "title": "Congrès du Rassemblement national: que faut-il attendre des discours de Marine Le Pen et Jordan Bardella?",
+          "source": "BFM",
+          "url": "https://www.bfmtv.com/politique/front-national/video-congres-du-rassemblement-national-que-faut-il-attendre-des-discours-de-marine-le-pen-et-jordan-bardella_VN-202610250250.html",
+          "date": "2026-10-25T14:40:18+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Orléans : Marine Le Pen lance sa campagne au lendemain de l'acte II de la mobilisation sociale",
+          "source": "Yahoo Actualités",
+          "url": "https://fr.news.yahoo.com/orl%C3%A9ans-marine-pen-lance-campagne-141202198.html",
+          "date": "2026-10-25T14:12:02+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Le Pen leads polls with up to 38% six months before election",
+          "source": "France 24",
+          "url": "https://www.france24.com/en/le-pen-leads-polls-with-up-to-38-six-months-before-election",
+          "date": "2026-10-25T13:46:17+00:00",
+          "category": "france"
+        },
         {
           "title": "President Trump cast his vote early in West Palm Beach, Florida | National News | 2news.com",
           "source": "KTVN",
           "url": "http://www.ktvn.com/news/national/president-trump-cast-his-vote-early-in-west-palm-beach-florida/video_8e2a877d-4df5-52c4-b13c-6df44b5d3276.html",
           "date": "2026-10-25T00:27:00+00:00",
           "category": "usa"
-        },
-        {
-          "title": "Pour son premier meeting de campagne, Le Pen veut \"insuffler de l'optimisme\" dans un pays en crise",
-          "source": "La Provence",
-          "url": "https://www.laprovence.com/article/france-monde/2274795751748714/pour-son-premier-meeting-de-campagne-le-pen-veut-insuffler-de-loptimisme-dans-un-pays-en-crise",
-          "date": "2026-10-25T00:19:23+00:00",
-          "category": "france"
         },
         {
           "title": "President Trump to hold midterm rally in Daytona Beach",
@@ -53,10 +67,17 @@
           "category": "usa"
         },
         {
-          "title": "Vance front and center in Republican midterms push – is this a dry run for a White House bid?",
-          "source": "The Guardian",
-          "url": "https://www.theguardian.com/us-news/ng-interactive/2026/oct/24/jd-vance-trump-midterms-white-house",
-          "date": "2026-10-24T09:01:00+00:00",
+          "title": "In Sioux City, Trump demands Iowans get out and vote to stave off 'darkness' - Waterloo-Cedar Falls Courier",
+          "source": "",
+          "url": "https://wcfcourier.com/news/state-regional/government-politics/elections/article_cc1efbaa-b59d-45a0-881a-58eb592baf16.html",
+          "date": "2026-10-24T10:00:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "President Donald Trump visits Florida as campaigns for governor, Senate hit home stretch",
+          "source": "WPBF",
+          "url": "https://www.wpbf.com/article/president-trump-visits-florida-campaign-governor-senate/74235540",
+          "date": "2026-10-24T03:17:00+00:00",
           "category": "usa"
         },
         {
@@ -65,17 +86,125 @@
           "url": "https://www.ilgiorno.it/milano/politica/congresso-lega-milano-salvini-garavaglia-fontana-mozioni-fjc2gaoc",
           "date": "2026-10-24T00:16:48+00:00",
           "category": "italy"
-        },
-        {
-          "title": "Arnaud Demanche anticipe le congrès du Rassemblement national à Orléans",
-          "source": "RMC",
-          "url": "https://rmc.bfmtv.com/actualites/societe/video-arnaud-demanche-anticipe-le-congres-du-rassemblement-national-a-orleans_VN-202610230225.html",
-          "date": "2026-10-23T06:31:11+00:00",
-          "category": "france"
         }
       ],
       "first_seen": "2026-10-22T17:42:14+00:00",
-      "last_seen": "2026-10-25T05:25:00+00:00"
+      "last_seen": "2026-10-25T16:53:50+00:00"
+    },
+    {
+      "id": "immigration-and-refugee-policy-backlash",
+      "title": "Immigration and Refugee Policy Backlash",
+      "blurb": "Right-wing parties in local and national legislatures continue to push hardline stances against refugee resettlement, migration numbers, and multicultural integration initiatives.",
+      "convergence": 3,
+      "countries": [
+        {
+          "name": "🇳🇴 Fremskrittspartiet",
+          "note": "The Progress Party stands alone in local debates opposing increased refugee acceptance quotas."
+        },
+        {
+          "name": "🇸🇪 Sverigedemokraterna",
+          "note": "Sweden Democrats impact local municipal policies regarding refugee integration and cultural symbols."
+        }
+      ],
+      "signals": [
+        "local council opposition",
+        "anti-refugee stance",
+        "policy friction"
+      ],
+      "article_count": 3,
+      "refs": [
+        {
+          "title": "DEBATT: Vill de verkligen rädda mängdrabatten – igen?",
+          "source": "Expressen",
+          "url": "https://www.expressen.se/debatt/debatt-vill-de-verkligen-radda-mangdrabatten-igen/",
+          "date": "2026-10-25T14:40:02+00:00",
+          "category": "sweden"
+        },
+        {
+          "title": "Politikk, Flyktninger | Frp ble stående alene i flyktningedebatten",
+          "source": "Varingen",
+          "url": "https://www.varingen.no/frp-ble-staende-alene-i-flyktningedebatten/s/80-92-18395",
+          "date": "2026-10-25T13:30:00+00:00",
+          "category": "norway"
+        },
+        {
+          "title": "INSÄNDARE: Den nya majoriteten i Malå – till och med Tyko Jonsson är upprörd",
+          "source": "Norran",
+          "url": "https://www.norran.se/insandare/artikel/den-nya-majoriteten-i-mala-till-och-med-tyko-jonsson-ar-upprord/r49ozzoj",
+          "date": "2026-10-25T11:05:48+00:00",
+          "category": "sweden"
+        }
+      ],
+      "first_seen": "2026-10-25T16:53:50+00:00",
+      "last_seen": "2026-10-25T16:53:50+00:00"
+    },
+    {
+      "id": "voter-integrity-and-election-challenge-measures",
+      "title": "Voter Integrity and Election Challenge Measures",
+      "blurb": "Right-wing and populist administrations intensify efforts around voter rolls, citizenship verifications, and legal challenges to contest unfavorable electoral outcomes.",
+      "convergence": 3,
+      "countries": [
+        {
+          "name": "🇺🇸 MAGA / Trump",
+          "note": "Trump administration launches legal challenges against Alaska Senate results and demands rigorous noncitizen voting purges."
+        },
+        {
+          "name": "🇸🇪 Sverigedemokraterna",
+          "note": "Local political shifts driven by populist right scrutiny over administrative and integration practices."
+        }
+      ],
+      "signals": [
+        "election lawsuits",
+        "voter roll purges",
+        "legal challenges"
+      ],
+      "article_count": 6,
+      "refs": [
+        {
+          "title": "Democrats ask judge to dismiss Trump administration’s challenge to Alaska Senate race",
+          "source": "NBC News",
+          "url": "https://www.nbcnews.com/politics/2026-election/democrats-ask-judge-dismiss-trump-administrations-challenge-alaska-sen-rcna605472",
+          "date": "2026-10-25T03:45:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "California leaders rebuke Trump administration’s push over alleged noncitizen voting",
+          "source": "The Guardian",
+          "url": "https://www.theguardian.com/us-news/2026/oct/24/california-noncitizen-voting-trump-administration",
+          "date": "2026-10-25T00:16:00+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Donald Trump challenges Alaska Senate trace",
+          "source": "France 24",
+          "url": "https://www.france24.com/en/donald-trump-challenges-alaska-senate-trace",
+          "date": "2026-10-24T11:36:32+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump says he ordered the Justice Department lawsuit over Alaska’s US Senate race",
+          "source": "WFLX",
+          "url": "https://www.wflx.com/2026/10/23/trump-administration-files-lawsuit-block-possible-democratic-win-alaska-senate-race/",
+          "date": "2026-10-24T02:00:34+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump administration sues to block possible Democratic win in Alaska",
+          "source": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/23/trump-administration-sues-to-block-possible-democratic-win-in-alaska",
+          "date": "2026-10-23T21:23:29+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump administration seeks to block Alaska Senate results if GOP incumbent loses",
+          "source": "KVII",
+          "url": "https://abc7amarillo.com/news/nation-world/president-donald-trump-administration-justice-department-seeks-to-block-alaska-senate-results-if-gop-republican-incumbent-dan-s-sullivan-loses-democrat-daniel-j-sullivan-mary-peltola-confuse-mislead-voters",
+          "date": "2026-10-23T18:06:28+00:00",
+          "category": "usa"
+        }
+      ],
+      "first_seen": "2026-10-25T16:53:50+00:00",
+      "last_seen": "2026-10-25T16:53:50+00:00"
     }
   ]
 }
