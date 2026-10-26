@@ -48,6 +48,7 @@ from monitor_utils import (
     load_blocklist,
     git_sync,
     normalize_title_for_dedup,
+    write_json_atomic,
 )
 
 # ── Configuration ──────────────────────────────────────────────────────────
@@ -222,7 +223,10 @@ def fetch_feed(
         {"lang": feed["lang"], "country": feed["country"]}
     ]
 
+    per_variant: list[list[dict]] = []
     for variant in variants:
+        variant_items: list[dict] = []
+        per_variant.append(variant_items)
         lang = variant["lang"]
         country = variant["country"]
         # Per-variant query override, falling back to feed-level queries
@@ -260,6 +264,7 @@ def fetch_feed(
                         "date": item.get("pubDate", ""),
                         "added_at": timestamp,
                         "summary": "",
+                        "_pub_dt": pub_dt,
                     }
 
                     # Check against blocklist before accepting
@@ -267,7 +272,7 @@ def fetch_feed(
                         blocked_count += 1
                         continue
 
-                    new_items.append(candidate)
+                    variant_items.append(candidate)
             except Exception as e:
                 errors.append(f"[{lang}] {q[:40]}…: {e}")
 
@@ -277,7 +282,17 @@ def fetch_feed(
         for err in errors[:3]:
             print(f"  ⚠ {err}", file=sys.stderr)
 
-    # Universal cap of new items per run
+    # Universal cap of new items per run. Take the newest of each language
+    # variant in turn, so a busy native-language feed can't crowd the English
+    # one (or the newest items) out of the cap; a variant's unused share goes
+    # to the others.
+    oldest = datetime.min.replace(tzinfo=timezone.utc)
+    for variant_items in per_variant:
+        variant_items.sort(key=lambda c: c["_pub_dt"] or oldest, reverse=True)
+    for i in range(max((len(v) for v in per_variant), default=0)):
+        new_items += [v[i] for v in per_variant if i < len(v)]
+    for c in new_items:
+        del c["_pub_dt"]
     return new_items[:MAX_NEW_PER_RUN]
 
 
@@ -449,8 +464,7 @@ def main():
                 state = json.load(f)
             removed = purge_blocked_from_state(state, blocklist)
             if removed:
-                with open(STATE_FILE, "w", encoding="utf-8") as f:
-                    json.dump(state, f, indent=2, ensure_ascii=False)
+                write_json_atomic(STATE_FILE, state)
                 print(f"  Purged {removed} matching item(s) from state.")
                 # Regenerate text files so feeds/ stays in sync
                 timestamp = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S")
@@ -497,8 +511,7 @@ def main():
         # Purge any blocklisted items before writing
         purged = purge_blocked_from_state(state, blocklist)
         if purged:
-            with open(STATE_FILE, "w", encoding="utf-8") as f:
-                json.dump(state, f, indent=2, ensure_ascii=False)
+            write_json_atomic(STATE_FILE, state)
             print(
                 f"  ✗ Purged {purged} blocklisted item(s) from state.", file=sys.stderr
             )
@@ -542,8 +555,7 @@ def main():
             state[fid] = deduped
 
         if total_removed:
-            with open(STATE_FILE, "w", encoding="utf-8") as f:
-                json.dump(state, f, indent=2, ensure_ascii=False)
+            write_json_atomic(STATE_FILE, state)
             print(f"Removed {total_removed} duplicate article(s) from state.", file=sys.stderr)
             timestamp = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S")
             os.makedirs(args.outdir, exist_ok=True)
@@ -572,13 +584,16 @@ def main():
         active_feeds = [f for f in FEEDS if f["id"] in args.feeds]
 
     # Load the database (if it exists)
+    # A state file that exists but won't parse must stop the run: starting
+    # from {} would commit a near-empty database over the real one.
     state = {}
     if os.path.exists(STATE_FILE):
         try:
             with open(STATE_FILE, "r", encoding="utf-8") as f:
                 state = json.load(f)
-        except Exception:
-            pass
+        except Exception as e:
+            print(f"Error: could not read {STATE_FILE} ({e}); refusing to overwrite it.", file=sys.stderr)
+            sys.exit(1)
 
     for feed in FEEDS:
         if feed["id"] not in state:
@@ -627,8 +642,7 @@ def main():
         state[fid].sort(key=get_sort_time, reverse=True)
 
     # Save the updated, strictly sorted database back to JSON
-    with open(STATE_FILE, "w", encoding="utf-8") as f:
-        json.dump(state, f, indent=2, ensure_ascii=False)
+    write_json_atomic(STATE_FILE, state)
 
     # Rewrite each feed into its own text file
     print("\n[Writing files...]", file=sys.stderr)

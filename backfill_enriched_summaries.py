@@ -18,6 +18,7 @@ import sys
 import subprocess
 
 from article_scraper import generate_summaries, STATE_FILE
+from monitor_utils import write_json_atomic
 
 
 def main():
@@ -109,8 +110,7 @@ def main():
                 updated += 1
                 break
 
-    with open(STATE_FILE, "w", encoding="utf-8") as f:
-        json.dump(state, f, indent=2, ensure_ascii=False)
+    write_json_atomic(STATE_FILE, state)
     print(f"Updated {updated} entries in {STATE_FILE}")
 
     # Step 4: Rebuild feed .txt files

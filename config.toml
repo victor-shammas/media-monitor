@@ -1,6 +1,15 @@
 [settings]
 window = "2d"   # Google News time window (e.g. "1d", "3d", "7d"); overridable per feed
 
+[summaries]
+# One-sentence article summaries (article_scraper.py). Free-tier LLMs cap
+# requests per day, so articles go in batches of one category and one title
+# language; each answer must read as English and name things from its own
+# article, else it is retried later on its own. Set batch_size = 1 for one
+# request per article.
+batch_size = 10
+max_requests_per_run = 20
+
 [categories]
 usa = "🇺🇸 MAGA / Trump"
 norway = "🇳🇴 Fremskrittspartiet"
@@ -466,13 +475,6 @@ country = "US"
 id = "brazil"
 filename = "brazil.txt"
 
-# English first: the per-run cap (MAX_NEW_PER_RUN) is filled in variant
-# order, and the Portuguese queries alone can exceed it on a busy day.
-[[feeds.variants]]
-lang = "en"
-country = "US"
-q = '''Bolsonaro OR "Brazil's far right" OR "Brazilian far right" OR "Brazil far-right" OR "Brazilian far-right" OR "Tarcisio de Freitas" OR "Brazil's Liberal Party"'''
-
 [[feeds.variants]]
 lang = "pt-419"
 country = "BR"
@@ -480,3 +482,8 @@ queries = [
     'Bolsonaro OR bolsonarismo OR bolsonarista OR "Partido Liberal" OR "Valdemar Costa Neto" OR "trama golpista" OR "atos golpistas"',
     '"Tarcísio de Freitas" OR "Nikolas Ferreira" OR "Silas Malafaia" OR "Damares Alves" OR "Pablo Marçal" OR "bancada evangélica" OR "extrema direita brasileira"',
 ]
+
+[[feeds.variants]]
+lang = "en"
+country = "US"
+q = '''Bolsonaro OR "Brazil's far right" OR "Brazilian far right" OR "Brazil far-right" OR "Brazilian far-right" OR "Tarcisio de Freitas" OR "Brazil's Liberal Party"'''

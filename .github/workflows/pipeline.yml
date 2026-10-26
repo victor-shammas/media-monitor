@@ -5,7 +5,8 @@ env:
 
 on:
   schedule:
-    - cron: "0 * * * *"
+    # Off the hour: GitHub drops many runs scheduled at :00 under load.
+    - cron: "17 * * * *"
   workflow_dispatch:
     inputs:
       fetch_only:

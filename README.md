@@ -10,7 +10,7 @@ The system is a unified pipeline with an optional daily reporting step, orchestr
 ┌─────────────────────────────────────────────────────────────────┐
 │                        GitHub Actions                           │
 │                                                                 │
-│   Every 2h (pipeline.yml)              05:00 UTC                │
+│   Hourly (pipeline.yml)                05:00 UTC                │
 │   ┌──────────────────────────────┐     ┌──────────────────┐    │
 │   │ media-monitor.py --enrich    │     │  ai_reporter.py  │    │
 │   │                              │     │                  │    │
@@ -33,7 +33,9 @@ A single script that handles both RSS fetching and article enrichment:
 
 **Fetch phase** (always runs): Scrapes Google News RSS feeds for fourteen categories of right-wing political activity. Stores all seen articles in `data/monitor_state.json` with deduplication per category. Generates human-readable `.txt` files in `feeds/` for browsing.
 
-**Enrichment phase** (with `--enrich`): Takes recent articles from state, decodes Google News redirect URLs using `googlenewsdecoder`, extracts article text via `trafilatura` (truncated to ~300 words), and generates one-sentence AI summaries in batches. Summaries are written back to both `data/monitor_state.json` and dated enriched JSON files in `data-private/`.
+**Enrichment phase** (with `--enrich`): Takes recent articles from state, decodes Google News redirect URLs using `googlenewsdecoder`, extracts article text via `trafilatura` (truncated to ~300 words), and generates one-sentence AI summaries. Summaries are written back to both `data/monitor_state.json` and dated enriched JSON files in `data-private/`.
+
+**Summaries under free-tier limits:** the providers cap requests per day, so articles are sent in small batches (`[summaries]` in `config.toml`), each from one category and one title language. Every answer must read as English and mention something from its own article; anything else is retried later as a single-article request (up to 3 tries). Each run works through the backlog of unsummarized articles in the current day files, newest first and round-robin across categories, so a run cut short by rate limits leaves work for the next one rather than losing it. Failed URL decodes and fetches are likewise retried on later runs (up to 3 tries).
 
 Without `--enrich`, the script only fetches RSS metadata — fast, lightweight, and immune to 403 blocks.
 
@@ -82,7 +84,7 @@ For continuity, the prompt also includes condensed versions of the previous brie
 ```
 media-monitor/
 ├── .github/workflows/
-│   ├── pipeline.yml            # Unified RSS + enrichment pipeline, every 2h
+│   ├── pipeline.yml            # Unified RSS + enrichment pipeline, hourly at :17
 │   ├── daily_report.yml        # AI intelligence brief, daily 05:00 UTC
 │   ├── backfill.yml            # Manual backfill of AI summaries
 │   └── pages.yml               # GitHub Pages deploy for index.html

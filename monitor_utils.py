@@ -5,6 +5,7 @@ import os
 import re
 import subprocess
 import sys
+import tempfile
 import unicodedata
 from datetime import datetime, timezone
 
@@ -33,6 +34,21 @@ def get_sort_time(item: dict) -> datetime:
             )
         except Exception:
             return datetime.min.replace(tzinfo=timezone.utc)
+
+
+def write_json_atomic(path: str, data, indent: int | None = 2) -> None:
+    """Write JSON to a temp file beside `path`, then rename it into place, so
+    an interrupted run can never leave a truncated (unparseable) file."""
+    directory = os.path.dirname(os.path.abspath(path))
+    fd, tmp = tempfile.mkstemp(dir=directory, prefix=".tmp-", suffix=".json")
+    try:
+        with os.fdopen(fd, "w", encoding="utf-8") as f:
+            json.dump(data, f, indent=indent, ensure_ascii=False)
+        os.replace(tmp, path)
+    except BaseException:
+        if os.path.exists(tmp):
+            os.remove(tmp)
+        raise
 
 
 def normalize_title_for_dedup(title: str) -> str:
