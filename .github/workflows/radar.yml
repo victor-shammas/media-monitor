@@ -59,7 +59,8 @@ jobs:
           python radar_generator.py \
             --hours "${{ inputs.hours || '48' }}" \
             --top-n "${{ inputs.top_n || '5' }}" \
-            --enriched-dir data-private
+            --enriched-dir data-private \
+            --archive-dir data-private
 
       - name: Commit and push
         run: |
@@ -73,4 +74,22 @@ jobs:
             sleep $((attempt * 5))
           done
           echo "::error::Failed to push to main after 5 attempts due to concurrent updates"
+          exit 1
+
+      # After the public update, so a failed archive push never holds it back.
+      - name: Archive to private data repo
+        if: ${{ !cancelled() }}
+        run: |
+          cd data-private
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add radar/ 2>/dev/null || true
+          git commit -m "Archive cross-national radar $(date -u +%Y-%m-%d_%H%M)" || { echo "Nothing to archive"; exit 0; }
+          for attempt in 1 2 3 4 5; do
+            git pull --rebase --autostash && git push && exit 0
+            git rebase --abort 2>/dev/null || true
+            echo "Push attempt $attempt rejected (concurrent update to data repo); re-syncing and retrying in $((attempt * 5))s..."
+            sleep $((attempt * 5))
+          done
+          echo "::error::Failed to push archive to data repo after 5 attempts"
           exit 1

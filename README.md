@@ -74,6 +74,12 @@ For continuity, the prompt also includes condensed versions of the previous brie
 - Default: styled HTML email via Gmail SMTP
 - `--markdown`: writes to `reports/`
 
+### Hotspots, Key Actors and Cross-National Radar
+
+`hotspots_generator.py`, `actors_generator.py` and `radar_generator.py` run twice daily (`hotspots.yml`, `actors.yml`, `radar.yml`) over the last 48 hours. Each one asks an LLM to rank the most charged stories, the figures driving coverage, or the themes appearing in two or more countries at once. The prompts live in `config.toml`, and the result is written to `data/<kind>.json` for the viewer.
+
+They share their input code in `generator_common.py`. Every article is included: with its AI summary where one exists, otherwise as a headline, with at most `max_per_category` articles per country (summarized ones first), so no one country dominates. `data/<kind>.json` is overwritten each run. Each successful run is also archived to the data repo as `<kind>/<kind>_YYYY-MM-DD_HHMM.json`.
+
 ### Backfill Utilities
 
 - `backfill_summaries.py` — generates summaries for the top N articles per feed that don't yet have one, reusing existing extracts where possible.

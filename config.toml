@@ -75,13 +75,14 @@ DATA:
 # A "hotspot" is an event or development that commands disproportionate
 # attention as a subject of high affective investment — not just the most
 # covered story, but the most charged. The hotspots_generator script trawls
-# the last N hours of articles (with summaries) and asks the LLM to identify
+# the last N hours of articles (summaries, else headlines) and asks the LLM to identify
 # the top-N hotspots across the whole cross-category universe.
 
 [hotspots]
 top_n = 5
 min_articles = 3
 lookback_hours = 48
+max_per_category = 40   # articles per country/category in the prompt (summarized first)
 
 # Tweak this prompt to change how the LLM defines, scores, and selects
 # hotspots. The {top_n}, {min_articles}, {hours}, {previous}, {context}
@@ -149,20 +150,22 @@ PREVIOUS HOTSPOTS (from the last run, for continuity):
 {previous}
 
 DATA (articles from the last {hours} hours, each prefixed with [N] reference
-number):
+number). Articles with a SUMMARY line were read in full; the rest are
+headline-only, so lean on them only for what the headline itself states:
 {context}"""
 
 # ── Key Actors ────────────────────────────────────────────────────────────
 # A "key actor" is a political figure who commands disproportionate coverage
 # in the current window — not just mentioned often, but the one whose actions,
 # statements, or position are *driving* the discourse. The actors_generator
-# script trawls the last N hours of articles (with summaries) and asks the LLM
+# script trawls the last N hours of articles (summaries, else headlines) and asks the LLM
 # to identify the top-N actors across the whole cross-category universe.
 
 [actors]
 top_n = 5
 min_articles = 3
 lookback_hours = 48
+max_per_category = 40   # articles per country/category in the prompt (summarized first)
 
 prompt = """\
 You are a media-coverage analyst. Your job is to identify the TOP {top_n}
@@ -223,7 +226,8 @@ PREVIOUS ACTORS (from the last run, for continuity):
 {previous}
 
 DATA (articles from the last {hours} hours, each prefixed with [N] reference
-number):
+number). Articles with a SUMMARY line were read in full; the rest are
+headline-only, so lean on them only for what the headline itself states:
 {context}"""
 
 # ── Cross-National Radar ─────────────────────────────────────────────────
@@ -237,6 +241,7 @@ top_n = 5
 min_categories = 2
 min_articles = 3
 lookback_hours = 48
+max_per_category = 40   # articles per country/category in the prompt (summarized first)
 
 prompt = """\
 You are a cross-national media analyst. Your job is to identify the TOP {top_n}
@@ -306,7 +311,8 @@ PREVIOUS THEMES (from the last run, for continuity):
 {previous}
 
 DATA (articles from the last {hours} hours, each prefixed with [N] reference
-number):
+number). Articles with a SUMMARY line were read in full; the rest are
+headline-only, so lean on them only for what the headline itself states:
 {context}"""
 
 # ── Feed Definitions ──────────────────────────────────────────────────────
