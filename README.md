@@ -1,6 +1,6 @@
 # Transatlantic Right-Wing Media Monitor
 
-An automated research tool that tracks far-right and right-wing political movements across twelve categories spanning multiple countries and transnational networks. The system scrapes headlines from Google News RSS in both native languages and English, enriches them with article text and AI-generated one-sentence summaries, and produces daily intelligence briefs.
+An automated research tool that tracks far-right and right-wing political movements across fourteen categories spanning multiple countries and transnational networks. The system scrapes headlines from Google News RSS in both native languages and English, enriches them with article text and AI-generated one-sentence summaries, and produces daily intelligence briefs.
 
 ## Architecture
 
@@ -31,7 +31,7 @@ The system is a unified pipeline with an optional daily reporting step, orchestr
 
 A single script that handles both RSS fetching and article enrichment:
 
-**Fetch phase** (always runs): Scrapes Google News RSS feeds for twelve categories of right-wing political activity. Stores all seen articles in `data/monitor_state.json` with deduplication per category. Generates human-readable `.txt` files in `feeds/` for browsing.
+**Fetch phase** (always runs): Scrapes Google News RSS feeds for fourteen categories of right-wing political activity. Stores all seen articles in `data/monitor_state.json` with deduplication per category. Generates human-readable `.txt` files in `feeds/` for browsing.
 
 **Enrichment phase** (with `--enrich`): Takes recent articles from state, decodes Google News redirect URLs using `googlenewsdecoder`, extracts article text via `trafilatura` (truncated to ~300 words), and generates one-sentence AI summaries in batches. Summaries are written back to both `data/monitor_state.json` and dated enriched JSON files in `data-private/`.
 
@@ -39,7 +39,7 @@ Without `--enrich`, the script only fetches RSS metadata — fast, lightweight, 
 
 **Feed definitions live in `config.toml`.** Queries, `lang`, `country`, and `variants` are defined there rather than hardcoded in Python.
 
-**Bilingual scraping:** Eight non-English categories define `variants` — each feed is scraped once in the native language and once in English. The English variant uses `country: "US"` since the US Google News index surfaces the broadest international English coverage. Some feeds use per-variant query overrides to drop ambiguous acronyms from the English variant.
+**Bilingual scraping:** Ten non-English categories define `variants` — each feed is scraped once in the native language and once in English. The English variant uses `country: "US"` since the US Google News index surfaces the broadest international English coverage. Some feeds use per-variant query overrides to drop ambiguous acronyms from the English variant, or (Brazil) to run several native-language queries.
 
 **Categories tracked:**
 
@@ -55,6 +55,8 @@ Without `--enrich`, the script only fetches RSS metadata — fast, lightweight, 
 | `hungary`  | Fidesz / Tisza                           | hu + en   |
 | `poland`   | Prawo i Sprawiedliwosc                   | pl + en   |
 | `spain`    | Vox                                      | es + en   |
+| `argentina` | La Libertad Avanza                      | es + en   |
+| `brazil`   | Bolsonarismo / Partido Liberal           | pt + en   |
 | `general`  | General Right-Wing News                  | en        |
 | `networks` | Transnational Networks                   | en        |
 
