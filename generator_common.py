@@ -112,12 +112,13 @@ def build_context(articles: list[dict]) -> tuple[str, dict]:
 
 def archive_payload(payload: dict, archive_dir: str, kind: str) -> None:
     """Save a dated copy of a successful run (e.g. <archive_dir>/radar/
-    radar_2026-10-26_1250.json). The public data/<kind>.json is overwritten
-    every run; this keeps the history."""
+    2026-10-26_1250_radar.json, date first like the data repo's reports/).
+    The public data/<kind>.json is overwritten every run; this keeps the
+    history, and the data repo's weekly job bundles each week's copies."""
     if payload.get("status") != "ok":
         return
     stamp = datetime.now(timezone.utc).strftime("%Y-%m-%d_%H%M")
-    path = os.path.join(archive_dir, kind, f"{kind}_{stamp}.json")
+    path = os.path.join(archive_dir, kind, f"{stamp}_{kind}.json")
     os.makedirs(os.path.dirname(path), exist_ok=True)
     write_json_atomic(path, payload)
     print(f"  Archived {path}")

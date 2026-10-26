@@ -3,8 +3,14 @@ name: Deploy GitHub Pages
 on:
   push:
     branches: [main]
+  # Bot pushes (GITHUB_TOKEN) don't trigger `push`, so redeploy whenever a
+  # workflow that commits viewer data finishes.
   workflow_run:
-    workflows: ["Media Monitor Pipeline"]
+    workflows:
+      - "Media Monitor Pipeline"
+      - "Generate Hotspots"
+      - "Generate Key Actors"
+      - "Generate Cross-National Radar"
     types: [completed]
   workflow_dispatch:
 
