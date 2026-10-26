@@ -90,15 +90,20 @@ MISTRAL_BASE_URL = "https://api.mistral.ai/v1"
 MISTRAL_MODEL = "mistral-small-latest"
 SUMMARY_SYSTEM_PROMPT = (
     "You are a news summarizer. Write exactly one sentence (max 25 words) "
-    "that summarizes the key news from the article. Be concrete and specific. "
+    "that summarizes the key news from the article. Be concrete and specific: "
+    "name the people, parties, organizations and places involved (a person's "
+    "name, not 'a politician' or 'a political leader'). "
     "Always translate and respond in English, even if the article is in another "
     "language. Return ONLY the summary sentence, nothing else."
 )
 BATCH_SYSTEM_PROMPT = (
     "You are a news summarizer. You will receive several UNRELATED articles, "
     "each marked [ref N]. For EACH article write exactly one sentence (max 25 "
-    "words) summarizing that article only. Never carry names, facts or wording "
-    "over from one article to another. Every summary must be in English: "
+    "words) that summarizes the key news from that article. Be concrete: name "
+    "the people, parties, organizations and places involved exactly as the "
+    "article names them (a person's name, not 'a politician', 'a political "
+    "leader' or 'an official'). Use only facts from that article itself, never "
+    "from the other articles. Every summary must be in English: "
     "translate if the article is in another language, whatever language the "
     "other articles are in. Return ONLY JSON of the form "
     '{"summaries": [{"ref": 1, "summary": "..."}, ...]} with one entry per article.'
@@ -385,17 +390,31 @@ def _fold(text: str) -> str:
     return "".join(c for c in text if not unicodedata.combining(c))
 
 
+# Indefinite stand-ins for a named actor ("a politician", "a political
+# leader"): the mark of a summary that anonymized its article.
+_VAGUE_ACTOR_RE = re.compile(
+    r"\b(?:a|an|one|another) (?:(?:former|local|senior|political|party|"
+    r"government|opposition|right-wing|far-right) )*(?:politician|leader|"
+    r"official|candidate|minister|senator|lawmaker|figure|party|deputy|mayor)\b",
+    re.I,
+)
+
+
 def _is_grounded(summary: str, rec: dict) -> bool:
-    """True if the summary's names plausibly come from its own article: some
-    capitalized word in it (past the first) shares its first five letters
-    with a word of the article. Guards batches against cross-article mix-ups;
-    a summary with no such word passes, since there is nothing to check."""
+    """True if a batch summary is concrete and about its own article: it names
+    something (a capitalized word that isn't a function word), doesn't fall
+    back on stand-ins like "a politician", and some named word shares its
+    first five letters with a word of the article. Guards batches against
+    cross-article mix-ups and anonymized summaries; a rejected one is retried
+    on its own."""
+    if _VAGUE_ACTOR_RE.search(summary):
+        return False
     names = [
-        w for w in re.findall(r"[^\W\d_][\w'’-]*", summary)[1:]
+        w for w in re.findall(r"[^\W\d_][\w'’-]*", summary)
         if w[0].isupper() and len(w) >= 4 and w.lower() not in _EN_WORDS
     ]
     if not names:
-        return True
+        return False
     source = {w[:5] for w in _words(_fold(f"{rec.get('title', '')} {rec.get('extract', '')}"))}
     return any(_fold(w)[:5] in source for w in names)
 
@@ -426,6 +445,15 @@ def _parse_batch(text: str, n: int) -> dict[int, str]:
     return out
 
 
+def _needs_summary(r: dict) -> bool:
+    """No summary yet, or an anonymized one ("a politician …") from the first
+    batched runs that hasn't been redone yet."""
+    summary = (r.get("summary") or "").strip()
+    if not summary:
+        return True
+    return bool(_VAGUE_ACTOR_RE.search(summary)) and not r.get("resummarized")
+
+
 def _summary_batches(records: list[dict]) -> list[list[dict]]:
     """Eligible records grouped into batches of one category and one title
     language (newest first), with previously rejected records as singles,
@@ -436,7 +464,7 @@ def _summary_batches(records: list[dict]) -> list[list[dict]]:
         if (
             r.get("extract_status") == "ok"
             and r.get("extract")
-            and not (r.get("summary") or "").strip()
+            and _needs_summary(r)
             and r.get("summary_attempts", 0) < MAX_SUMMARY_ATTEMPTS
         ):
             by_cat.setdefault(r.get("category", ""), []).append(r)
@@ -550,6 +578,7 @@ def generate_summaries(
         if results is not None:
             for k, rec in enumerate(batch, 1):
                 summary = results.get(k)
+                redo = bool((rec.get("summary") or "").strip())
                 if (
                     summary
                     and len(summary.split()) <= 45
@@ -557,8 +586,10 @@ def generate_summaries(
                     and (len(batch) == 1 or _is_grounded(summary, rec))
                 ):
                     rec["summary"] = summary
+                    if redo:
+                        rec["resummarized"] = True
                     generated += 1
-                else:
+                else:  # a redo keeps its old summary meanwhile
                     rec["summary_attempts"] = rec.get("summary_attempts", 0) + 1
                     rejected += 1
 

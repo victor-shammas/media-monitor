@@ -13,8 +13,8 @@ max_total_minutes = 22
 [summaries]
 # One-sentence article summaries (article_scraper.py). Free-tier LLMs cap
 # requests per day, so articles go in batches of one category and one title
-# language; each answer must read as English and name things from its own
-# article, else it is retried later on its own. Set batch_size = 1 for one
+# language; each answer must read as English and name the people and parties
+# from its own article, else it is retried later on its own. Set batch_size = 1 for one
 # request per article.
 batch_size = 10
 max_requests_per_run = 20
