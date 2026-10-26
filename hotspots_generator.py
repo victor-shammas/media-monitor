@@ -5,9 +5,9 @@ Hotspots Generator — Identifies the top-N "hotspots" in recent coverage.
 A hotspot is an event or development that commands disproportionate attention
 because of high affective investment (intensity of framing, controversy, moral
 charge), not just article volume. The script trawls the last N hours of
-articles (preferring enriched files with summaries, falling back to
-monitor_state.json), asks the LLM to cluster and rank, and writes the result
-to feeds/hotspots.json for the front-end to render.
+articles (summary where one exists, else headline only, capped per category;
+see generator_common.py), asks the LLM to cluster and rank, and writes the
+result to data/hotspots.json for the front-end to render.
 
 The previous run's hotspots are passed back into the prompt so that ongoing
 hotspots keep the same title across runs (continuity).
@@ -15,13 +15,10 @@ hotspots keep the same title across runs (continuity).
 Usage:
   python hotspots_generator.py
   python hotspots_generator.py --hours 48 --top-n 5 --min-articles 3
-  python hotspots_generator.py --enriched-dir data-private --outdir feeds \\
-      --private-outdir data-private
+  python hotspots_generator.py --enriched-dir data-private --archive-dir data-private
 
-Output is written to both --outdir (public, served to the frontend) and
---private-outdir (canonical artifact in the private data repo). The contents
-are identical — a hotspot is derived from already-public summaries — but the
-private copy provides an audit trail alongside the enriched JSON files.
+With --archive-dir, each successful run is also saved as a dated copy under
+<dir>/hotspots/, since data/hotspots.json is overwritten every run.
 """
 
 import argparse
@@ -30,118 +27,14 @@ import os
 import re
 import sys
 import unicodedata
-from datetime import datetime, timedelta, timezone
+from datetime import datetime, timezone
 
-from monitor_utils import CONFIG, CATEGORY_LABELS, get_sort_time, normalize_title_for_dedup
-from ai_reporter import SHORT_PROMPT_CHAIN, extract_json, generate_with_fallback, load_enriched
+from monitor_utils import CONFIG
+from ai_reporter import SHORT_PROMPT_CHAIN, extract_json, generate_with_fallback
+from generator_common import archive_payload, build_context, load_recent_articles
 
-STATE_FILE = "data/monitor_state.json"
 DEFAULT_OUTDIR = "data"
 HOTSPOTS_FILENAME = "hotspots.json"
-MAX_PROMPT_CHARS = 350_000
-
-
-# ── Article loading ────────────────────────────────────────────────────────
-
-
-def load_recent_articles(enriched_dir: str, hours: int) -> list[dict]:
-    """Load articles from the last `hours` hours.
-
-    Prefers enriched data (which has real summaries). Falls back to
-    monitor_state.json articles whose `summary` field is non-empty (the
-    enriched pipeline writes summaries back to state).
-    """
-    cutoff = datetime.now(timezone.utc) - timedelta(hours=hours)
-    enriched = load_enriched(enriched_dir, hours=hours)
-
-    articles: list[dict] = []
-    seen: set[str] = set()
-
-    if enriched:
-        for a in enriched:
-            if get_sort_time(a) < cutoff:
-                continue
-            summary = (a.get("summary") or "").strip()
-            if not summary:
-                continue
-            key = normalize_title_for_dedup(a.get("title", ""))
-            if not key or key in seen:
-                continue
-            seen.add(key)
-            articles.append({
-                "title": a.get("title", ""),
-                "source": a.get("source", ""),
-                "url": a.get("resolved_url") or a.get("google_url", ""),
-                "date": a.get("date", ""),
-                "category": a.get("category", "unknown"),
-                "summary": summary,
-            })
-
-    if articles:
-        return articles
-
-    # Fallback: state file (summaries are written back from enrichment)
-    if not os.path.exists(STATE_FILE):
-        return []
-    try:
-        with open(STATE_FILE, "r", encoding="utf-8") as f:
-            state = json.load(f)
-    except Exception as e:
-        print(f"  ⚠ Could not read {STATE_FILE}: {e}")
-        return []
-
-    for category, items in state.items():
-        for item in items:
-            if get_sort_time(item) < cutoff:
-                continue
-            summary = (item.get("summary") or "").strip()
-            if not summary:
-                continue
-            key = normalize_title_for_dedup(item.get("title", ""))
-            if not key or key in seen:
-                continue
-            seen.add(key)
-            articles.append({
-                "title": item.get("title", ""),
-                "source": item.get("source", ""),
-                "url": item.get("url", ""),
-                "date": item.get("date", ""),
-                "category": category,
-                "summary": summary,
-            })
-
-    return articles
-
-
-# ── Prompt assembly ────────────────────────────────────────────────────────
-
-
-def build_context(articles: list[dict]) -> tuple[str, dict]:
-    """Format articles into the LLM context block. Returns (text, ref_map).
-
-    Articles are sorted newest-first and ref_map maps reference number → article.
-    Truncates if the joined context exceeds MAX_PROMPT_CHARS.
-    """
-    articles = sorted(articles, key=get_sort_time, reverse=True)
-    lines: list[str] = []
-    ref_map: dict[int, dict] = {}
-    chars_used = 0
-
-    for i, a in enumerate(articles, start=1):
-        cat_label = CATEGORY_LABELS.get(a["category"], a["category"])
-        date_short = (a.get("date") or "")[:10]
-        line = (
-            f"[{i}] {a['title']} | {cat_label} | {date_short} | {a['source']}\n"
-            f"    SUMMARY: {a['summary']}"
-        )
-        if lines and chars_used + len(line) > MAX_PROMPT_CHARS:
-            print(f"  ⚠ Truncated at {i - 1} articles to fit context window")
-            break
-        lines.append(line)
-        ref_map[i] = a
-        chars_used += len(line)
-
-    return "\n".join(lines), ref_map
 
 
 def format_previous(prev: list[dict]) -> str:
@@ -289,6 +182,8 @@ def main() -> int:
     parser.add_argument("--top-n", type=int, default=cfg.get("top_n", 5))
     parser.add_argument("--min-articles", type=int, default=cfg.get("min_articles", 3))
     parser.add_argument("--enriched-dir", default="data-private")
+    parser.add_argument("--archive-dir", default=None,
+                        help="Also save a dated copy of a successful run under <dir>/hotspots/")
     parser.add_argument("--outdir", default=DEFAULT_OUTDIR,
                         help="Output dir served to the frontend")
     args = parser.parse_args()
@@ -297,8 +192,9 @@ def main() -> int:
     continuity_path = out_path
 
     print(f"→ Loading articles from last {args.hours}h...")
-    articles = load_recent_articles(args.enriched_dir, args.hours)
-    print(f"  Found {len(articles)} articles with summaries")
+    articles = load_recent_articles(
+        args.enriched_dir, args.hours, cfg.get("max_per_category", 40)
+    )
 
     if len(articles) < args.min_articles:
         write_empty_output(out_path, "insufficient-data", args.hours)
@@ -365,6 +261,8 @@ def main() -> int:
         "hotspots": hotspots,
     }
     write_payload(payload, out_path)
+    if args.archive_dir:
+        archive_payload(payload, args.archive_dir, "hotspots")
     print(f"✓ {len(hotspots)} hotspot(s) generated via {model_label}")
     return 0
 

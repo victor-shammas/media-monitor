@@ -23,106 +23,14 @@ import os
 import re
 import sys
 import unicodedata
-from datetime import datetime, timedelta, timezone
+from datetime import datetime, timezone
 
-from monitor_utils import CONFIG, CATEGORY_LABELS, get_sort_time, normalize_title_for_dedup
-from ai_reporter import SHORT_PROMPT_CHAIN, extract_json, generate_with_fallback, load_enriched
+from monitor_utils import CONFIG
+from ai_reporter import SHORT_PROMPT_CHAIN, extract_json, generate_with_fallback
+from generator_common import archive_payload, build_context, load_recent_articles
 
-STATE_FILE = "data/monitor_state.json"
 DEFAULT_OUTDIR = "data"
 RADAR_FILENAME = "radar.json"
-MAX_PROMPT_CHARS = 350_000
-
-
-# ── Article loading ────────────────────────────────────────────────────────
-
-
-def load_recent_articles(enriched_dir: str, hours: int) -> list[dict]:
-    cutoff = datetime.now(timezone.utc) - timedelta(hours=hours)
-    enriched = load_enriched(enriched_dir, hours=hours)
-
-    articles: list[dict] = []
-    seen: set[str] = set()
-
-    if enriched:
-        for a in enriched:
-            if get_sort_time(a) < cutoff:
-                continue
-            summary = (a.get("summary") or "").strip()
-            if not summary:
-                continue
-            key = normalize_title_for_dedup(a.get("title", ""))
-            if not key or key in seen:
-                continue
-            seen.add(key)
-            articles.append({
-                "title": a.get("title", ""),
-                "source": a.get("source", ""),
-                "url": a.get("resolved_url") or a.get("google_url", ""),
-                "date": a.get("date", ""),
-                "category": a.get("category", "unknown"),
-                "summary": summary,
-            })
-
-    if articles:
-        return articles
-
-    if not os.path.exists(STATE_FILE):
-        return []
-    try:
-        with open(STATE_FILE, "r", encoding="utf-8") as f:
-            state = json.load(f)
-    except Exception as e:
-        print(f"  ⚠ Could not read {STATE_FILE}: {e}")
-        return []
-
-    for category, items in state.items():
-        for item in items:
-            if get_sort_time(item) < cutoff:
-                continue
-            summary = (item.get("summary") or "").strip()
-            if not summary:
-                continue
-            key = normalize_title_for_dedup(item.get("title", ""))
-            if not key or key in seen:
-                continue
-            seen.add(key)
-            articles.append({
-                "title": item.get("title", ""),
-                "source": item.get("source", ""),
-                "url": item.get("url", ""),
-                "date": item.get("date", ""),
-                "category": category,
-                "summary": summary,
-            })
-
-    return articles
-
-
-# ── Prompt assembly ────────────────────────────────────────────────────────
-
-
-def build_context(articles: list[dict]) -> tuple[str, dict]:
-    articles = sorted(articles, key=get_sort_time, reverse=True)
-    lines: list[str] = []
-    ref_map: dict[int, dict] = {}
-    chars_used = 0
-
-    for i, a in enumerate(articles, start=1):
-        cat_label = CATEGORY_LABELS.get(a["category"], a["category"])
-        date_short = (a.get("date") or "")[:10]
-        line = (
-            f"[{i}] {a['title']} | {cat_label} | {date_short} | {a['source']}\n"
-            f"    SUMMARY: {a['summary']}"
-        )
-        if lines and chars_used + len(line) > MAX_PROMPT_CHARS:
-            print(f"  ⚠ Truncated at {i - 1} articles to fit context window")
-            break
-        lines.append(line)
-        ref_map[i] = a
-        chars_used += len(line)
-
-    return "\n".join(lines), ref_map
 
 
 def format_previous(prev: list[dict]) -> str:
@@ -274,6 +182,8 @@ def main() -> int:
     parser.add_argument("--min-categories", type=int, default=cfg.get("min_categories", 2))
     parser.add_argument("--min-articles", type=int, default=cfg.get("min_articles", 3))
     parser.add_argument("--enriched-dir", default="data-private")
+    parser.add_argument("--archive-dir", default=None,
+                        help="Also save a dated copy of a successful run under <dir>/radar/")
     parser.add_argument("--outdir", default=DEFAULT_OUTDIR,
                         help="Output dir served to the frontend")
     args = parser.parse_args()
@@ -282,8 +192,9 @@ def main() -> int:
     continuity_path = out_path
 
     print(f"→ Loading articles from last {args.hours}h...")
-    articles = load_recent_articles(args.enriched_dir, args.hours)
-    print(f"  Found {len(articles)} articles with summaries")
+    articles = load_recent_articles(
+        args.enriched_dir, args.hours, cfg.get("max_per_category", 40)
+    )
 
     if len(articles) < args.min_articles:
         write_empty_output(out_path, "insufficient-data", args.hours)
@@ -355,6 +266,8 @@ def main() -> int:
         "themes": themes,
     }
     write_payload(payload, out_path)
+    if args.archive_dir:
+        archive_payload(payload, args.archive_dir, "radar")
     print(f"✓ {len(themes)} theme(s) generated via {model_label}")
     return 0
 
