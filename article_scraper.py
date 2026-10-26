@@ -115,7 +115,21 @@ SUMMARY_MAX_REQUESTS = int(_SUMMARY_CFG.get("max_requests_per_run", 20))
 MAX_SUMMARY_ATTEMPTS = 3
 
 # Resolve/fetch failures are retried on later runs, up to this many tries.
-MAX_ENRICH_ATTEMPTS = 3
+MAX_ENRICH_ATTEMPTS = 2
+
+# Time budget per run (minutes from the start of run_scraper). The pipeline
+# step is killed at 35 min and results are only written at the end, so a run
+# that overran lost everything. Scraping stops at max_scrape_minutes (what's
+# left waits for the next run) and summary requests stop at
+# max_total_minutes, leaving time to write the files and push.
+_ENRICH_CFG = CONFIG.get("enrichment", {})
+MAX_SCRAPE_MINUTES = float(_ENRICH_CFG.get("max_scrape_minutes", 15))
+MAX_TOTAL_MINUTES = float(_ENRICH_CFG.get("max_total_minutes", 22))
+
+# After this many fetch failures from one domain in a run, skip the rest of
+# that domain's articles for the run (sites that block the scraper fail every
+# time and would otherwise eat the budget).
+DOMAIN_FAILURE_LIMIT = 3
 
 genai = None
 
@@ -494,9 +508,12 @@ def _request_summaries(batch, circuit, has_mistral, has_gemini, label):
     return {1: summary} if summary else {}
 
 
-def generate_summaries(records: list[dict], max_requests: int | None = None) -> int:
+def generate_summaries(
+    records: list[dict], max_requests: int | None = None, deadline: float | None = None
+) -> int:
     """Generate one-sentence English summaries for extracted records that lack
-    one, at most `max_requests` LLM requests (None = until providers run out).
+    one, at most `max_requests` LLM requests (None = until providers run out)
+    and none started after `deadline` (a time.monotonic() value).
     Records are updated in place: `summary` on success, `summary_attempts`
     when a provider answered but the summary was missing or failed the
     checks (rate-limit skips don't count). Returns the number generated."""
@@ -519,6 +536,9 @@ def generate_summaries(records: list[dict], max_requests: int | None = None) -> 
     circuit = ProviderCircuit(threshold=3)
 
     for i, batch in enumerate(batches, 1):
+        if deadline is not None and time.monotonic() > deadline:
+            print(f"    ⏱ Time budget reached; {len(batches) - i + 1} request(s) left for the next run")
+            break
         if circuit.is_open("mistral") and circuit.is_open("gemini"):
             print(
                 f"    ⚠ All providers rate-limited; skipping remaining "
@@ -596,6 +616,7 @@ def run_scraper(
         print(f"Error: {STATE_FILE} not found.")
         return
 
+    started = time.monotonic()
     with open(STATE_FILE, "r", encoding="utf-8") as f:
         state = json.load(f)
 
@@ -661,6 +682,11 @@ def run_scraper(
             seen_titles.add(title_key)
         articles.append(c)
 
+    # New articles first (newest first), then retries of earlier failures, so
+    # a run that hits its time budget has spent it on fresh coverage.
+    articles.sort(key=get_sort_time, reverse=True)
+    articles.sort(key=lambda c: c.get("url", "") in retry_records)
+
     timestamp = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S")
 
     if not articles:
@@ -688,7 +714,16 @@ def run_scraper(
         "failed_extract": 0,
     }
 
+    domain_failures: dict[str, int] = {}
+    processed = 0
     for i, item in enumerate(articles, 1):
+        if time.monotonic() - started > MAX_SCRAPE_MINUTES * 60:
+            print(
+                f"\n  ⏱ Scrape budget ({MAX_SCRAPE_MINUTES:g} min) reached; "
+                f"{len(articles) - i + 1} article(s) left for the next run"
+            )
+            break
+        processed += 1
         cat_id = item["_category"]
         cat_label = CATEGORY_LABELS.get(cat_id, cat_id)
         title = item.get("title", "")
@@ -761,7 +796,17 @@ def run_scraper(
             new_by_date.setdefault(ds, []).append(record)
             continue
 
+        if domain_failures.get(domain, 0) >= DOMAIN_FAILURE_LIMIT:
+            record["extract_status"] = "fetch_failed"
+            stats["failed_extract"] += 1
+            print(f"    ✗ fetch_failed ({domain}, skipped: failing this run)")
+            ds = article_date_slug(record)
+            new_by_date.setdefault(ds, []).append(record)
+            continue
+
         extract, word_count, extract_status = extract_article(resolved_url)
+        if extract_status == "fetch_failed":
+            domain_failures[domain] = domain_failures.get(domain, 0) + 1
         record["extract"] = extract
         record["word_count"] = word_count
         record["extract_status"] = extract_status
@@ -776,6 +821,8 @@ def run_scraper(
         ds = article_date_slug(record)
         new_by_date.setdefault(ds, []).append(record)
         time.sleep(REQUEST_DELAY)
+
+    stats["total"] = processed
 
     # ── Merge into per-day files ──────────────────────────────────────────
 
@@ -805,7 +852,11 @@ def run_scraper(
 
     all_records = [a for merged in merged_by_date.values() for a in merged]
     before = {id(a): (a.get("summary"), a.get("summary_attempts")) for a in all_records}
-    summary_count = generate_summaries(all_records, max_requests=SUMMARY_MAX_REQUESTS)
+    summary_count = generate_summaries(
+        all_records,
+        max_requests=SUMMARY_MAX_REQUESTS,
+        deadline=started + MAX_TOTAL_MINUTES * 60,
+    )
     touched = {
         id(a) for a in all_records
         if (a.get("summary"), a.get("summary_attempts")) != before[id(a)]

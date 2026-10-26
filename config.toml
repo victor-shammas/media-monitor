@@ -1,6 +1,15 @@
 [settings]
 window = "2d"   # Google News time window (e.g. "1d", "3d", "7d"); overridable per feed
 
+[enrichment]
+# Per-run time budget for article_scraper.py, in minutes from the start of
+# enrichment. The pipeline step is killed at 35 min (pipeline.yml), and
+# results are written only at the end. So scraping stops at
+# max_scrape_minutes, leaving the rest for the next run, and summary
+# requests stop at max_total_minutes.
+max_scrape_minutes = 15
+max_total_minutes = 22
+
 [summaries]
 # One-sentence article summaries (article_scraper.py). Free-tier LLMs cap
 # requests per day, so articles go in batches of one category and one title
