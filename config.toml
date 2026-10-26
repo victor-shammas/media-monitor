@@ -13,6 +13,7 @@ hungary = "🇭🇺 Fidesz / Tisza"
 poland = "🇵🇱 Prawo i Sprawiedliwość"
 spain = "🇪🇸 Vox"
 argentina = "🇦🇷 La Libertad Avanza"
+brazil = "🇧🇷 Bolsonarismo / Partido Liberal"
 general = "🌍 General Right-Wing News"
 networks = "🕸️ Transnational Networks"
 
@@ -242,7 +243,7 @@ time), or shared reactions to the same external event.
 
 The "General" and "Networks" categories do NOT count toward the minimum country
 threshold — only named country categories (USA, UK, France, Italy, Germany,
-Hungary, Poland, Spain, Sweden, Norway, Argentina) count.
+Hungary, Poland, Spain, Sweden, Norway, Argentina, Brazil) count.
 
 Rank by CONVERGENCE: how strongly the same theme resonates across borders.
 A theme appearing intensely in 4 countries outranks one appearing faintly in 6.
@@ -460,3 +461,22 @@ country = "AR"
 [[feeds.variants]]
 lang = "en"
 country = "US"
+
+[[feeds]]
+id = "brazil"
+filename = "brazil.txt"
+
+# English first: the per-run cap (MAX_NEW_PER_RUN) is filled in variant
+# order, and the Portuguese queries alone can exceed it on a busy day.
+[[feeds.variants]]
+lang = "en"
+country = "US"
+q = '''Bolsonaro OR "Brazil's far right" OR "Brazilian far right" OR "Brazil far-right" OR "Brazilian far-right" OR "Tarcisio de Freitas" OR "Brazil's Liberal Party"'''
+
+[[feeds.variants]]
+lang = "pt-419"
+country = "BR"
+queries = [
+    'Bolsonaro OR bolsonarismo OR bolsonarista OR "Partido Liberal" OR "Valdemar Costa Neto" OR "trama golpista" OR "atos golpistas"',
+    '"Tarcísio de Freitas" OR "Nikolas Ferreira" OR "Silas Malafaia" OR "Damares Alves" OR "Pablo Marçal" OR "bancada evangélica" OR "extrema direita brasileira"',
+]
