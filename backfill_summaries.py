@@ -39,6 +39,7 @@ from article_scraper import (
     SKIP_DOMAINS,
     STATE_FILE,
 )
+from monitor_utils import write_json_atomic
 from urllib.parse import urlparse
 
 
@@ -244,8 +245,7 @@ def main():
                 updated += 1
                 break
 
-    with open(STATE_FILE, "w", encoding="utf-8") as f:
-        json.dump(state, f, indent=2, ensure_ascii=False)
+    write_json_atomic(STATE_FILE, state)
 
     print(f"\nWrote {updated} summaries to {STATE_FILE}")
 

@@ -74,7 +74,11 @@ jobs:
         # ──────────────────────────────────────────────────────────
         run: python ai_reporter.py --hours 24 --model ${{ inputs.model || 'auto' }} --email --markdown
 
+      # Commit even if the reporter step failed (e.g. an SMTP error after the
+      # Markdown brief was written): otherwise the brief, its input log and the
+      # next day's continuity are lost. The job still shows as failed.
       - name: Push input logs to private repo
+        if: ${{ !cancelled() }}
         run: |
           cd data-private
           git config user.name "github-actions[bot]"
@@ -90,6 +94,7 @@ jobs:
           exit 1
 
       - name: Commit reports
+        if: ${{ !cancelled() }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

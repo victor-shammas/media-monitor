@@ -22,6 +22,7 @@ import re
 import socket
 import sys
 import time
+import unicodedata
 from datetime import datetime, timedelta, timezone
 from urllib.parse import urlparse
 
@@ -46,12 +47,14 @@ except ImportError as e:
     sys.exit(1)
 
 from monitor_utils import (
+    CONFIG,
     STATE_FILE,
     BLOCKLIST_FILE,
     CATEGORY_LABELS,
     get_sort_time,
     git_sync,
     normalize_title_for_dedup,
+    write_json_atomic,
 )
 from llm_rate_limit import (
     ProviderCircuit,
@@ -91,6 +94,28 @@ SUMMARY_SYSTEM_PROMPT = (
     "Always translate and respond in English, even if the article is in another "
     "language. Return ONLY the summary sentence, nothing else."
 )
+BATCH_SYSTEM_PROMPT = (
+    "You are a news summarizer. You will receive several UNRELATED articles, "
+    "each marked [ref N]. For EACH article write exactly one sentence (max 25 "
+    "words) summarizing that article only. Never carry names, facts or wording "
+    "over from one article to another. Every summary must be in English: "
+    "translate if the article is in another language, whatever language the "
+    "other articles are in. Return ONLY JSON of the form "
+    '{"summaries": [{"ref": 1, "summary": "..."}, ...]} with one entry per article.'
+)
+
+# Summaries are the free-tier bottleneck (requests per day, not tokens), so
+# articles are sent in small batches of one category and one language. Every
+# answer is checked (English, about its own article) before it is kept; a
+# rejected one is retried later as a single-article request. batch_size = 1
+# restores one request per article. See [summaries] in config.toml.
+_SUMMARY_CFG = CONFIG.get("summaries", {})
+SUMMARY_BATCH_SIZE = max(1, int(_SUMMARY_CFG.get("batch_size", 10)))
+SUMMARY_MAX_REQUESTS = int(_SUMMARY_CFG.get("max_requests_per_run", 20))
+MAX_SUMMARY_ATTEMPTS = 3
+
+# Resolve/fetch failures are retried on later runs, up to this many tries.
+MAX_ENRICH_ATTEMPTS = 3
 
 genai = None
 
@@ -117,9 +142,12 @@ def _ensure_gemini():
     retry=retry_if_exception(is_retryable_error),
     reraise=True,
 )
-def _call_gemini_batch(prompt: str) -> str:
+def _call_gemini_batch(prompt: str, json_mode: bool = False) -> str:
     client = genai.Client()
-    response = client.models.generate_content(model=SUMMARY_MODEL, contents=prompt)
+    config = {"response_mime_type": "application/json"} if json_mode else None
+    response = client.models.generate_content(
+        model=SUMMARY_MODEL, contents=prompt, config=config
+    )
     return response.text or ""
 
 
@@ -133,20 +161,24 @@ def _ensure_mistral():
     retry=retry_if_exception(is_retryable_error),
     reraise=True,
 )
-def _call_mistral_batch(user_prompt: str) -> str:
+def _call_mistral_batch(user_prompt: str, json_mode: bool = False) -> str:
     import urllib.request
 
     api_key = os.environ["MISTRAL_API_KEY"]
-    payload = json.dumps(
-        {
-            "model": MISTRAL_MODEL,
-            "messages": [
-                {"role": "system", "content": SUMMARY_SYSTEM_PROMPT},
-                {"role": "user", "content": user_prompt},
-            ],
-            "max_tokens": 1024,
-        }
-    ).encode()
+    body = {
+        "model": MISTRAL_MODEL,
+        "messages": [
+            {
+                "role": "system",
+                "content": BATCH_SYSTEM_PROMPT if json_mode else SUMMARY_SYSTEM_PROMPT,
+            },
+            {"role": "user", "content": user_prompt},
+        ],
+        "max_tokens": 2048 if json_mode else 1024,
+    }
+    if json_mode:
+        body["response_format"] = {"type": "json_object"}
+    payload = json.dumps(body).encode()
     req = urllib.request.Request(
         f"{MISTRAL_BASE_URL}/chat/completions",
         data=payload,
@@ -206,6 +238,27 @@ def article_date_slug(record: dict) -> str:
         return dt.strftime("%Y-%m-%d")
     except Exception:
         return datetime.now(timezone.utc).strftime("%Y-%m-%d")
+
+
+def _added_time(item: dict) -> datetime:
+    try:
+        return datetime.strptime(item.get("added_at", ""), "%Y-%m-%d %H:%M:%S").replace(
+            tzinfo=timezone.utc
+        )
+    except Exception:
+        return datetime.min.replace(tzinfo=timezone.utc)
+
+
+def _is_retryable(record: dict) -> bool:
+    """A resolve/fetch failure that may succeed on a later run (decoder
+    throttling, a site's transient error) and hasn't used up its tries."""
+    status = record.get("extract_status") or ""
+    transient = (
+        status.startswith("resolve_")
+        or status == "fetch_failed"
+        or status.startswith("error")
+    )
+    return transient and record.get("enrich_attempts", 1) < MAX_ENRICH_ATTEMPTS
 
 
 def load_existing_enriched(outdir: str, date_slug: str) -> dict | None:
@@ -281,8 +334,172 @@ def _extract_summary(text: str) -> str | None:
     return None
 
 
-def generate_summaries(records: list[dict]) -> int:
-    """Generate one-sentence AI summaries, one article at a time."""
+# Function words used to tell an English sentence from one in a monitored
+# language. Words shared with those languages (a, in, to, for, over, will, …)
+# count on both sides, so an English summary must clearly outweigh them.
+_EN_WORDS = {
+    "the", "of", "and", "with", "after", "from", "has", "have", "had", "were",
+    "are", "its", "his", "their", "that", "amid", "says", "said", "would",
+    "into", "against", "about", "which", "who", "while", "following", "than",
+    "this", "been", "a", "an", "to", "in", "on", "for", "is", "as", "by", "at",
+    "over", "will", "her", "was",
+}
+_FOREIGN_WORDS = {
+    "der", "die", "das", "und", "nicht", "mit", "für", "ist", "sich", "den",
+    "dem", "ein", "eine", "les", "des", "est", "une", "pour", "dans", "avec",
+    "sur", "pas", "qui", "il", "che", "non", "per", "della", "del", "con",
+    "sono", "los", "las", "por", "para", "una", "que", "og", "er", "ikke",
+    "til", "som", "av", "på", "och", "är", "inte", "att", "för", "się",
+    "jest", "nie", "oraz", "że", "przez", "dla", "na", "w", "z", "az", "és",
+    "hogy", "nem", "egy", "não", "uma", "em", "com", "os", "como", "mais",
+}
+
+
+def _words(text: str) -> list[str]:
+    return re.findall(r"[^\W\d_]+", text.lower())
+
+
+def _looks_english(text: str) -> bool:
+    words = _words(text)
+    en = sum(w in _EN_WORDS for w in words)
+    foreign = sum(w in _FOREIGN_WORDS for w in words)
+    return en >= 2 and en > foreign
+
+
+def _fold(text: str) -> str:
+    text = unicodedata.normalize("NFKD", text.lower())
+    return "".join(c for c in text if not unicodedata.combining(c))
+
+
+def _is_grounded(summary: str, rec: dict) -> bool:
+    """True if the summary's names plausibly come from its own article: some
+    capitalized word in it (past the first) shares its first five letters
+    with a word of the article. Guards batches against cross-article mix-ups;
+    a summary with no such word passes, since there is nothing to check."""
+    names = [
+        w for w in re.findall(r"[^\W\d_][\w'’-]*", summary)[1:]
+        if w[0].isupper() and len(w) >= 4 and w.lower() not in _EN_WORDS
+    ]
+    if not names:
+        return True
+    source = {w[:5] for w in _words(_fold(f"{rec.get('title', '')} {rec.get('extract', '')}"))}
+    return any(_fold(w)[:5] in source for w in names)
+
+
+def _parse_batch(text: str, n: int) -> dict[int, str]:
+    """Map ref → summary from a batch response; anything malformed is dropped."""
+    text = re.sub(r"<think>.*?</think>\s*", "", text, flags=re.DOTALL)
+    start = min((i for i in (text.find("{"), text.find("[")) if i >= 0), default=-1)
+    if start < 0:
+        return {}
+    try:
+        data, _ = json.JSONDecoder().raw_decode(text[start:])
+    except ValueError:
+        return {}
+    if isinstance(data, dict):
+        data = data.get("summaries", [])
+    out: dict[int, str] = {}
+    for entry in data if isinstance(data, list) else []:
+        if not isinstance(entry, dict):
+            continue
+        try:
+            ref = int(entry.get("ref"))
+        except (TypeError, ValueError):
+            continue
+        summary = str(entry.get("summary") or "").strip()
+        if 1 <= ref <= n and summary and ref not in out:
+            out[ref] = summary
+    return out
+
+
+def _summary_batches(records: list[dict]) -> list[list[dict]]:
+    """Eligible records grouped into batches of one category and one title
+    language (newest first), with previously rejected records as singles,
+    then interleaved round-robin across categories so a capped run spreads
+    its requests over every country instead of starting with the first."""
+    by_cat: dict[str, list[dict]] = {}
+    for r in records:
+        if (
+            r.get("extract_status") == "ok"
+            and r.get("extract")
+            and not (r.get("summary") or "").strip()
+            and r.get("summary_attempts", 0) < MAX_SUMMARY_ATTEMPTS
+        ):
+            by_cat.setdefault(r.get("category", ""), []).append(r)
+
+    per_cat: list[list[list[dict]]] = []
+    for recs in by_cat.values():
+        recs.sort(key=get_sort_time, reverse=True)
+        fresh = [r for r in recs if not r.get("summary_attempts")]
+        groups: list[list[dict]] = [[], []]
+        for r in fresh:
+            groups[0 if _looks_english(r.get("title", "")) else 1].append(r)
+        batches = [
+            g[i:i + SUMMARY_BATCH_SIZE]
+            for g in groups
+            for i in range(0, len(g), SUMMARY_BATCH_SIZE)
+        ]
+        batches.sort(key=lambda b: get_sort_time(b[0]), reverse=True)
+        batches += [[r] for r in recs if r.get("summary_attempts")]
+        per_cat.append(batches)
+
+    ordered = []
+    for i in range(max((len(b) for b in per_cat), default=0)):
+        ordered += [b[i] for b in per_cat if i < len(b)]
+    return ordered
+
+
+def _request_summaries(batch, circuit, has_mistral, has_gemini, label):
+    """One LLM request for a batch. Returns ref → summary text (refs are
+    1-based positions in the batch), or None if no provider answered."""
+    json_mode = len(batch) > 1
+    if json_mode:
+        user_prompt = "\n\n".join(
+            f"[ref {k}]\nTitle: {r['title']}\n{' '.join(r['extract'].split()[:200])}"
+            for k, r in enumerate(batch, 1)
+        )
+    else:
+        r = batch[0]
+        user_prompt = f"Title: {r['title']}\n\n{' '.join(r['extract'].split()[:200])}"
+
+    text = None
+    if has_mistral and not circuit.is_open("mistral"):
+        try:
+            text = _call_mistral_batch(user_prompt, json_mode=json_mode)
+            circuit.record_success("mistral")
+        except Exception as e:
+            if is_rate_limit_error(e):
+                if circuit.record_rate_limit("mistral"):
+                    print("    ⚠ Mistral rate-limited; disabling for the rest of the run")
+            elif not has_gemini or circuit.is_open("gemini"):
+                print(f"    [{label}] Mistral failed: {e}")
+
+    if text is None and has_gemini and not circuit.is_open("gemini"):
+        system = BATCH_SYSTEM_PROMPT if json_mode else SUMMARY_SYSTEM_PROMPT
+        try:
+            text = _call_gemini_batch(f"{system}\n\n{user_prompt}", json_mode=json_mode)
+            circuit.record_success("gemini")
+        except Exception as e:
+            if is_rate_limit_error(e):
+                if circuit.record_rate_limit("gemini"):
+                    print("    ⚠ Gemini rate-limited; disabling for the rest of the run")
+            else:
+                print(f"    [{label}] All providers failed: {e}")
+
+    if text is None:
+        return None
+    if json_mode:
+        return _parse_batch(text, len(batch))
+    summary = _extract_summary(text)
+    return {1: summary} if summary else {}
+
+
+def generate_summaries(records: list[dict], max_requests: int | None = None) -> int:
+    """Generate one-sentence English summaries for extracted records that lack
+    one, at most `max_requests` LLM requests (None = until providers run out).
+    Records are updated in place: `summary` on success, `summary_attempts`
+    when a provider answered but the summary was missing or failed the
+    checks (rate-limit skips don't count). Returns the number generated."""
     has_gemini = _ensure_gemini()
     has_mistral = _ensure_mistral()
 
@@ -290,69 +507,45 @@ def generate_summaries(records: list[dict]) -> int:
         print("  Warning: neither GEMINI_API_KEY nor MISTRAL_API_KEY set, skipping summaries")
         return 0
 
-    extractable = [
-        r for r in records if r.get("extract_status") == "ok" and r.get("extract")
-    ]
-    if not extractable:
+    batches = _summary_batches(records)
+    if max_requests is not None:
+        batches = batches[:max_requests]
+    if not batches:
         return 0
 
-    print(f"\n  Generating summaries for {len(extractable)} articles...")
-    generated = 0
+    total = sum(len(b) for b in batches)
+    print(f"\n  Generating summaries for {total} articles in {len(batches)} request(s)...")
+    generated = rejected = 0
     circuit = ProviderCircuit(threshold=3)
 
-    for i, rec in enumerate(extractable, 1):
+    for i, batch in enumerate(batches, 1):
         if circuit.is_open("mistral") and circuit.is_open("gemini"):
-            remaining = len(extractable) - i + 1
             print(
                 f"    ⚠ All providers rate-limited; skipping remaining "
-                f"{remaining} articles"
+                f"{len(batches) - i + 1} request(s)"
             )
             break
 
-        snippet = " ".join(rec["extract"].split()[:200])
-        user_prompt = f"Title: {rec['title']}\n\n{snippet}"
-
-        text = None
-
-        if has_mistral and not circuit.is_open("mistral"):
-            try:
-                text = _call_mistral_batch(user_prompt)
-                circuit.record_success("mistral")
-            except Exception as e:
-                if is_rate_limit_error(e):
-                    if circuit.record_rate_limit("mistral"):
-                        print(
-                            "    ⚠ Mistral rate-limited; disabling for the "
-                            "rest of the run"
-                        )
-                elif not has_gemini or circuit.is_open("gemini"):
-                    print(f"    [{i}] Mistral failed: {e}")
-
-        if text is None and has_gemini and not circuit.is_open("gemini"):
-            gemini_prompt = f"{SUMMARY_SYSTEM_PROMPT}\n\n{user_prompt}"
-            try:
-                text = _call_gemini_batch(gemini_prompt)
-                circuit.record_success("gemini")
-            except Exception as e:
-                if is_rate_limit_error(e):
-                    if circuit.record_rate_limit("gemini"):
-                        print(
-                            "    ⚠ Gemini rate-limited; disabling for the "
-                            "rest of the run"
-                        )
+        results = _request_summaries(batch, circuit, has_mistral, has_gemini, i)
+        if results is not None:
+            for k, rec in enumerate(batch, 1):
+                summary = results.get(k)
+                if (
+                    summary
+                    and len(summary.split()) <= 45
+                    and _looks_english(summary)
+                    and (len(batch) == 1 or _is_grounded(summary, rec))
+                ):
+                    rec["summary"] = summary
+                    generated += 1
                 else:
-                    print(f"    [{i}] All providers failed: {e}")
-
-        if text:
-            summary = _extract_summary(text)
-            if summary:
-                rec["summary"] = summary
-                generated += 1
+                    rec["summary_attempts"] = rec.get("summary_attempts", 0) + 1
+                    rejected += 1
 
         if i % 10 == 0:
-            print(f"    Progress: {i}/{len(extractable)} ({generated} summaries)")
+            print(f"    Progress: {i}/{len(batches)} requests ({generated} summaries)")
 
-        if i < len(extractable):
+        if i < len(batches):
             time.sleep(REQUEST_DELAY)
 
     skipped_providers = [p for p in ("mistral", "gemini") if circuit.is_open(p)]
@@ -361,7 +554,8 @@ def generate_summaries(records: list[dict]) -> int:
         if skipped_providers
         else ""
     )
-    print(f"  Summaries generated: {generated}/{len(extractable)}{skipped_note}")
+    rejected_note = f", {rejected} rejected for retry" if rejected else ""
+    print(f"  Summaries generated: {generated}/{total}{rejected_note}{skipped_note}")
     return generated
 
 
@@ -384,8 +578,7 @@ def _write_summaries_to_state(records: list[dict]) -> int:
                 updated += 1
                 break
 
-    with open(STATE_FILE, "w", encoding="utf-8") as f:
-        json.dump(state, f, indent=2, ensure_ascii=False)
+    write_json_atomic(STATE_FILE, state)
 
     return updated
 
@@ -418,12 +611,14 @@ def run_scraper(
     cutoff = datetime.now(timezone.utc) - timedelta(hours=hours)
     os.makedirs(outdir, exist_ok=True)
 
+    # Recent by publication date OR by when the monitor first saw it, so an
+    # article indexed late by Google News still gets enriched.
     candidates = []
     for cat_id, items in state.items():
         if category and cat_id != category:
             continue
         for item in items:
-            if get_sort_time(item) >= cutoff:
+            if get_sort_time(item) >= cutoff or _added_time(item) >= cutoff:
                 candidates.append({**item, "_category": cat_id})
 
     if not candidates:
@@ -432,29 +627,53 @@ def run_scraper(
 
     candidate_dates = {article_date_slug(c) for c in candidates}
     already_processed_urls = set()
+    retry_records: dict[str, dict] = {}
+    titles_by_date: dict[str, set] = {}
     existing_by_date = {}
     for ds in candidate_dates:
         data = load_existing_enriched(outdir, ds)
         if data:
             existing_by_date[ds] = data
             for a in data.get("articles", []):
-                already_processed_urls.add(a.get("google_url", ""))
+                url = a.get("google_url", "")
+                if _is_retryable(a):
+                    retry_records[url] = a
+                else:
+                    already_processed_urls.add(url)
+                titles_by_date.setdefault(ds, set()).add(
+                    normalize_title_for_dedup(a.get("title", ""))
+                )
 
-    articles = [c for c in candidates if c.get("url", "") not in already_processed_urls]
+    # Skip articles whose title is already in their day's file or earlier in
+    # this batch (the same story under another category or URL): the merge
+    # below would drop them anyway, and since their URL is never recorded
+    # they'd be re-scraped every run.
+    articles = []
+    for c in candidates:
+        url = c.get("url", "")
+        if url in already_processed_urls:
+            continue
+        if url not in retry_records:
+            seen_titles = titles_by_date.setdefault(article_date_slug(c), set())
+            title_key = normalize_title_for_dedup(c.get("title", ""))
+            if title_key in seen_titles:
+                continue
+            seen_titles.add(title_key)
+        articles.append(c)
 
     timestamp = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S")
 
     if not articles:
+        # Nothing new to scrape, but the summary backlog below may still need work.
         print(f"[{timestamp}] All {len(candidates)} articles already processed.")
-        return
-
-    cat_count = len(set(a["_category"] for a in articles))
-    print(
-        f"[{timestamp}] Scraping {len(articles)} new articles across {cat_count} categories"
-    )
-    print(f"  ({len(candidates) - len(articles)} already processed, skipped)")
-    print(f"  Look-back: {hours}h | Output: {outdir}/enriched_YYYY-MM-DD.json")
-    print()
+    else:
+        cat_count = len(set(a["_category"] for a in articles))
+        print(
+            f"[{timestamp}] Scraping {len(articles)} new articles across {cat_count} categories"
+        )
+        print(f"  ({len(candidates) - len(articles)} already processed, skipped)")
+        print(f"  Look-back: {hours}h | Output: {outdir}/enriched_YYYY-MM-DD.json")
+        print()
 
     # ── Process each article ──────────────────────────────────────────────
 
@@ -488,6 +707,9 @@ def run_scraper(
             "extract_status": "pending",
             "word_count": 0,
             "summary": None,
+            "enrich_attempts": retry_records[google_url].get("enrich_attempts", 1) + 1
+            if google_url in retry_records
+            else 1,
         }
 
         progress = f"[{i}/{len(articles)}]"
@@ -555,34 +777,50 @@ def run_scraper(
         new_by_date.setdefault(ds, []).append(record)
         time.sleep(REQUEST_DELAY)
 
+    # ── Merge into per-day files ──────────────────────────────────────────
+
+    merged_by_date: dict[str, list[dict]] = {}
+    for ds in sorted(set(new_by_date) | set(existing_by_date)):
+        new_articles = new_by_date.get(ds, [])
+        existing = existing_by_date.get(ds)
+        merged = list(existing.get("articles", [])) if existing else []
+        index_by_url = {a["google_url"]: i for i, a in enumerate(merged)}
+        existing_titles_in_file = {
+            normalize_title_for_dedup(a.get("title", "")) for a in merged
+        }
+        for a in new_articles:
+            if a["google_url"] in index_by_url:  # a retried failure: replace it
+                merged[index_by_url[a["google_url"]]] = a
+                continue
+            title_key = normalize_title_for_dedup(a.get("title", ""))
+            if title_key not in existing_titles_in_file:
+                merged.append(a)
+                existing_titles_in_file.add(title_key)
+        merged_by_date[ds] = merged
+
     # ── Step 3: Generate AI summaries ────────────────────────────────────
+    # Over everything in these day files that still lacks a summary, not just
+    # this run's new articles, so a run cut short by rate limits leaves a
+    # backlog for the next run instead of losing those summaries for good.
 
-    all_new_records = [r for recs in new_by_date.values() for r in recs]
-    summary_count = generate_summaries(all_new_records)
+    all_records = [a for merged in merged_by_date.values() for a in merged]
+    before = {id(a): (a.get("summary"), a.get("summary_attempts")) for a in all_records}
+    summary_count = generate_summaries(all_records, max_requests=SUMMARY_MAX_REQUESTS)
+    touched = {
+        id(a) for a in all_records
+        if (a.get("summary"), a.get("summary_attempts")) != before[id(a)]
+    }
+    summarized_records = [a for a in all_records if id(a) in touched and a.get("summary")]
 
-    # ── Merge into per-day files and write ────────────────────────────────
+    # ── Write the day files that changed ─────────────────────────────────
 
     written_files = []
-    for ds in sorted(new_by_date.keys()):
-        new_articles = new_by_date[ds]
+    for ds, merged in merged_by_date.items():
+        new_count = len(new_by_date.get(ds, []))
+        if not new_count and not any(id(a) in touched for a in merged):
+            continue
         existing = existing_by_date.get(ds)
-
-        if existing:
-            merged = list(existing.get("articles", []))
-            existing_urls_in_file = {a["google_url"] for a in merged}
-            existing_titles_in_file = {
-                normalize_title_for_dedup(a.get("title", "")) for a in merged
-            }
-            for a in new_articles:
-                title_key = normalize_title_for_dedup(a.get("title", ""))
-                if (a["google_url"] not in existing_urls_in_file
-                        and title_key not in existing_titles_in_file):
-                    merged.append(a)
-                    existing_titles_in_file.add(title_key)
-            generated_at = existing.get("generated_at", timestamp)
-        else:
-            merged = list(new_articles)
-            generated_at = timestamp
+        generated_at = existing.get("generated_at", timestamp) if existing else timestamp
 
         for idx, a in enumerate(merged, 1):
             a["ref"] = idx
@@ -622,15 +860,14 @@ def run_scraper(
         }
 
         outpath = os.path.join(outdir, f"enriched_{ds}.json")
-        with open(outpath, "w", encoding="utf-8") as f:
-            json.dump(output, f, indent=2, ensure_ascii=False)
+        write_json_atomic(outpath, output)
 
-        written_files.append((outpath, len(new_articles), len(merged)))
+        written_files.append((outpath, new_count, len(merged)))
 
     # ── Write AI summaries back to monitor_state.json + rebuild feeds ────
 
     if summary_count:
-        state_updated = _write_summaries_to_state(all_new_records)
+        state_updated = _write_summaries_to_state(summarized_records)
         print(f"\n  Wrote {state_updated} summaries back to {STATE_FILE}")
 
         import subprocess
