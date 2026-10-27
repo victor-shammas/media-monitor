@@ -1,50 +1,71 @@
 {
-  "updated_at": "2026-10-26T18:55:26+00:00",
+  "updated_at": "2026-10-27T05:43:31+00:00",
   "lookback_hours": 48,
-  "model": "Gemini 3.5 Flash-Lite",
+  "model": "Gemini 3.6 Flash",
   "status": "ok",
   "themes": [
     {
       "id": "populist-right-momentum-ahead-of-elections",
       "title": "Populist Right Momentum Ahead of Elections",
-      "blurb": "Right-wing and nationalist parties across multiple countries are actively organizing congresses, launching aggressive presidential and legislative campaign bids, and celebrating high poll numbers as they position themselves against incumbent governments.",
+      "blurb": "Right-wing populist parties across Europe and the Americas are ramping up major campaign initiatives, forming strategic electoral pacts, and posting strong polling numbers. Marine Le Pen launched her 2027 French presidential campaign, Vox and the PP finalized a strategic Senate alliance in Spain, Norway's FrP reached record polling highs, and MAGA and Reform UK leadership staged key campaign rallies and policy blitzes ahead of upcoming votes.",
       "convergence": 5,
       "countries": [
         {
           "name": "🇫🇷 Rassemblement National",
-          "note": "Marine Le Pen officially launched her 2027 presidential campaign at the Orléans congress, emphasizing national sovereignty and leading polls."
-        },
-        {
-          "name": "🇮🇹 Fratelli d'Italia / Lega",
-          "note": "Matteo Salvini was reconfirmed as Lega leader with a focus on federalism and regional issues ahead of upcoming political battles."
+          "note": "Marine Le Pen officially launched her 2027 presidential campaign in Orléans, promising a national renaissance and zero tolerance on crime."
         },
         {
           "name": "🇪🇸 Vox",
-          "note": "Vox and the PP finalized strategic electoral pacts and candidate lists across numerous provinces to consolidate the right-wing vote."
+          "note": "Vox and the Popular Party secured a pact for Senate lists across multiple provinces to maximize right-wing representation."
         },
         {
           "name": "🇳🇴 Fremskrittspartiet",
-          "note": "The Progress Party surged to a historic 35.3% in a new poll under Sylvi Listhaug, pointing toward potential solo governance."
+          "note": "FrP surged to a historic 35.3% in new polling, eclipsing the governing coalition and placing Sylvi Listhaug in a strong position."
+        },
+        {
+          "name": "🇬🇧 Reform UK",
+          "note": "Nigel Farage and party leaders launched an 'Economic Rescue Plan' policy blitz to rally voters ahead of the UK budget."
         },
         {
           "name": "🇺🇸 MAGA / Trump",
-          "note": "Donald Trump and JD Vance ramped up campaign rallies across states like South Carolina, Montana, and Michigan ahead of the midterms."
+          "note": "Trump and JD Vance headlined multiple midterm rallies across swing states including Kansas, South Carolina, and Michigan."
         }
       ],
       "signals": [
         "campaign launches",
-        "strategic electoral pacts",
-        "surging poll numbers",
-        "rally mobilization"
+        "electoral pacts",
+        "polling surge",
+        "coordinated rally blitzes"
       ],
-      "article_count": 24,
+      "article_count": 48,
       "refs": [
         {
-          "title": "\"LE 20.27\" - Marine Le Pen lance sa campagne",
-          "source": "BFM",
-          "url": "https://www.bfmtv.com/politique/video-le-20-27-marine-le-pen-lance-sa-campagne_VN-202610260705.html",
-          "date": "2026-10-26T17:19:22+00:00",
+          "title": "Le Pen Launches Election Campaign – Promises to Take Back France",
+          "source": "FrihetsNytt",
+          "url": "https://frihetsnytt.se/en/le-pen-launches-election-campaign-promises-to-take-back-france/",
+          "date": "2026-10-26T18:03:00+00:00",
           "category": "france"
+        },
+        {
+          "title": "PP y Vox alcanzan un acuerdo en el Senado para hacer frente a la izquierda",
+          "source": "ABC",
+          "url": "https://www.abc.es/espana/miguel-tellado-comparece-ante-medios-dar-informacion-20261026132738-nt.html",
+          "date": "2026-10-26T21:52:29+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Sylvi Listhaug kan ta makten alene",
+          "source": "Nettavisen",
+          "url": "https://www.nettavisen.no/norsk-debatt/oppturen-fortsetter-for-frp-og-listhaug/o/80-95-192210",
+          "date": "2026-10-26T12:52:05+00:00",
+          "category": "norway"
+        },
+        {
+          "title": "“Britain is broke, but Britain isn’t beaten”: Reform UK unveils SIXTY-FOUR pro-growth measures to get Britain moving",
+          "source": "Reform UK",
+          "url": "https://www.reformparty.uk/news/reform-economic-rescue-plan-jenrick-tax-free-overtime-growth",
+          "date": "2026-10-26T16:47:25+00:00",
+          "category": "uk"
         },
         {
           "title": "President Trump announces 2nd visit to South Carolina ahead of midterms",
@@ -52,131 +73,119 @@
           "url": "https://www.wyff4.com/article/president-trump-announces-2nd-visit-to-south-carolina-ahead-of-midterms/74250201",
           "date": "2026-10-26T17:05:05+00:00",
           "category": "usa"
-        },
-        {
-          "title": "WATCH: Vice President Vance to campaign for Republicans in Belgrade, Montana",
-          "source": "Nonstop Local News Montana",
-          "url": "https://www.montanarightnow.com/elections/watch-vice-president-vance-to-campaign-for-republicans-in-belgrade-montana/video_acafbb3e-5ec2-420a-a83f-a5034c3c8129.html",
-          "date": "2026-10-26T17:00:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Salvini, la conferma con il 76%. E dice no al voto in primavera",
-          "source": "Corriere della Sera",
-          "url": "https://www.corriere.it/politica/26_ottobre_26/salvini-la-conferma-con-il-76-e-dice-no-al-voto-in-primavera-5cd8fd69-3dd7-4b48-b2f5-ceef75490xlk.shtml",
-          "date": "2026-10-26T09:24:22+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Présidentielle : Marine Le Pen lance sa campagne à Orléans et souhaite l’axer sur la « renaissance » avec l’ambition « d’insuffler un peu d’optimisme »",
-          "source": "Sud Ouest",
-          "url": "https://www.sudouest.fr/elections/presidentielle/presidentielle-marine-le-pen-lance-sa-campagne-a-orleans-et-souhaite-l-axer-sur-la-renaissance-avec-l-ambition-d-insuffler-un-peu-d-optimisme-31234926.php",
-          "date": "2026-10-25T13:22:35+00:00",
-          "category": "france"
         }
       ],
       "first_seen": "2026-10-22T17:42:14+00:00",
-      "last_seen": "2026-10-26T18:55:26+00:00"
+      "last_seen": "2026-10-27T05:43:31+00:00"
     },
     {
       "id": "far-right-election-contestation-following-brazilian-runoff-defeat",
       "title": "Far-Right Election Contestation Following Brazilian Runoff Defeat",
-      "blurb": "Following Lula da Silva's presidential runoff victory in Brazil over the right-wing candidate, conservative commentators, allied leaders, and party figures across international borders have reacted with mixed congratulations, calls for legal challenges, and analyses of the broader regional shift.",
+      "blurb": "Following Flávio Bolsonaro's runoff loss to Luiz Inácio Lula da Silva in Brazil, right-wing leaders internationally have taken divergent stances on the result. While Donald Trump repeatedly labeled the election 'rigged,' Argentina's Javier Milei maintained a conspicuous silence that strained bilateral ties, even as Bolsonaro's Liberal Party officially recognized the outcome while court orders confiscated Bolsonaro's passports.",
       "convergence": 4,
       "countries": [
         {
           "name": "🇧🇷 Bolsonarismo / Partido Liberal",
-          "note": "Flávio Bolsonaro and allied leaders faced defeat in the runoff election, prompting internal debates over whether to concede or contest the results."
-        },
-        {
-          "name": "🇦🇷 La Libertad Avanza",
-          "note": "Javier Milei notably withheld direct congratulations to Lula while celebrating other events, maintaining strict ideological separation despite regional integration pressures."
+          "note": "Flávio Bolsonaro challenged election aspects and was ordered to hand over passports, while his party PL accepted Lula's victory."
         },
         {
           "name": "🇺🇸 MAGA / Trump",
-          "note": "US right-wing commentary framed Lula's victory as a significant blow to the broader hemispheric nationalist movement and an embarrassment for allied forces."
+          "note": "Donald Trump repeatedly amplified claims that the Brazilian presidential runoff election was rigged against his conservative ally."
         },
         {
-          "name": "🇪🇸 Vox",
-          "note": "Spanish right-wing outlets and politicians analyzed the geopolitical fallout of Brazil's election, noting its implications for the global right."
+          "name": "🇦🇷 La Libertad Avanza",
+          "note": "Javier Milei's deliberate refusal to congratulate Lula created domestic controversy and Heightened bilateral uncertainty with Brazil."
         }
       ],
       "signals": [
-        "refusal to concede",
-        "geopolitical fallout analysis",
-        "ideological distancing",
-        "international reactions"
+        "electoral fraud claims",
+        "diplomatic silence",
+        "transnational solidarity",
+        "post-election legal challenges"
       ],
-      "article_count": 18,
+      "article_count": 32,
       "refs": [
         {
-          "title": "Javier Milei no reconoció la reelección de Lula da Silva en Brasil",
-          "source": "» Cholila Online",
-          "url": "https://cholilaonline.ar/2026/10/javier-milei-no-reconocio-a-lula-silva.html",
-          "date": "2026-10-26T17:22:13+00:00",
+          "title": "Bolsonaro’s party accepts Brazil election after Trump calls vote ‘rigged’",
+          "source": "Yahoo News Canada",
+          "url": "https://ca.news.yahoo.com/bolsonaro-party-accepts-brazil-election-013254925.html",
+          "date": "2026-10-27T01:32:00+00:00",
+          "category": "brazil"
+        },
+        {
+          "title": "Trump says Brazil election looked ‘rigged,’ defeated Bolsonaro’s party recognizes Lula win",
+          "source": "The Japan Times",
+          "url": "https://www.japantimes.co.jp/news/2026/10/27/world/politics/bolsonaro-party-lula-win/",
+          "date": "2026-10-27T00:59:00+00:00",
+          "category": "brazil"
+        },
+        {
+          "title": "El silencio del gobierno de Javier Milei ante el triunfo de Lula da Silva profundiza la incertidumbre en la relación bilateral con Brasil",
+          "source": "Mnews",
+          "url": "https://mnews.com.ar/politica/183276-El-silencio-del-gobierno-de-Javier-Milei-ante-el-triunfo-de-Lula-da-Silva-profundiza-la-incertidumbre-en-la-relacion-bilateral-con-Brasil",
+          "date": "2026-10-26T22:43:39+00:00",
           "category": "argentina"
         },
         {
-          "title": "Lula wins Brazil’s presidential election; Bolsonaro refuses to accept result: Early analysis from Chatham House experts",
-          "source": "Chatham House",
-          "url": "https://www.chathamhouse.org/2026/10/lula-wins-brazils-presidential-election-bolsonaro-refuses-accept-result-early-analysis",
-          "date": "2026-10-26T17:03:45+00:00",
+          "title": "Trump says Brazil election looked ‘rigged’ after Bolsonaro loses",
+          "source": "Politico",
+          "url": "https://www.politico.com/news/2026/10/26/trump-brazil-election-bolsonaro-rigged-01135566",
+          "date": "2026-10-26T22:10:00+00:00",
           "category": "brazil"
         },
         {
-          "title": "Brazil’s Lula wins ‘historic victory’ against right-wing Trump ally Flávio Bolsonaro",
-          "source": "The Real News Network",
-          "url": "https://therealnews.com/brazil-lula-historic-victory-against-trump-flavio-bolsonaro",
-          "date": "2026-10-26T15:34:15+00:00",
+          "title": "Brazil: defeated Flávio Bolsonaro ordered to surrender passports",
+          "source": "The Guardian",
+          "url": "https://www.theguardian.com/world/2026/oct/26/flavio-bolsonaro-brazil-lula-election",
+          "date": "2026-10-26T22:02:00+00:00",
           "category": "brazil"
-        },
-        {
-          "title": "Trump Ally Plunges to Stunning Loss in Humiliation for MAGA",
-          "source": "The Daily Beast",
-          "url": "https://www.thedailybeast.com/trump-ally-flavio-bolsonaro-plunges-to-stunning-loss-in-brazil-in-humiliation-for-maga",
-          "date": "2026-10-26T07:35:17+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "\"Will request annulment of elections\": Brazil's far- right candidate Flávio Bolsonaro refuses to concede after loss",
-          "source": "ANI News",
-          "url": "https://www.aninews.in/news/world/others/will-request-annulment-of-elections-brazils-far-right-candidate-fl225vio-bolsonaro-refuses-to-concede-after-loss20261026083215",
-          "date": "2026-10-26T03:02:00+00:00",
-          "category": "general"
         }
       ],
       "first_seen": "2026-10-26T11:15:46+00:00",
-      "last_seen": "2026-10-26T18:55:26+00:00"
+      "last_seen": "2026-10-27T05:43:31+00:00"
     },
     {
       "id": "us-diplomatic-backing-for-viktor-orban-s-international-stature",
       "title": "US Diplomatic Backing for Viktor Orbán's International Stature",
-      "blurb": "Reports emerging from Washington indicate that elements of the US administration are actively floating and backing Hungarian Prime Minister Viktor Orbán for the position of UN Secretary-General, drawing mixed international reactions and diplomatic maneuvers.",
+      "blurb": "High-level diplomatic coordination between the US conservative ecosystem and Hungary's ruling Fidesz party continues to elevate Prime Minister Viktor Orbán on the global stage. Reports that Donald Trump floated Orbán as a potential candidate for UN Secretary-General sparked intense debate, while Hungarian ministers met top US officials in Washington to preserve bilateral deals.",
       "convergence": 3,
       "countries": [
         {
           "name": "🇺🇸 MAGA / Trump",
-          "note": "Trump administration officials and allied policy circles reportedly advanced discussions to position Orbán for the top United Nations post."
+          "note": "Figures in Trump's political orbit floated Viktor Orbán for international roles and hosted Hungarian diplomats in Washington."
         },
         {
           "name": "🇭🇺 Fidesz / Tisza",
-          "note": "Hungarian diplomatic channels and media engaged with the reports while regional neighbors like Ukraine voiced sharp ironic criticism over the proposal."
+          "note": "Hungarian media and government officials reacted to high-level US backing and held talks with US officials to protect sanctions exemptions."
         }
       ],
       "signals": [
-        "UN leadership speculation",
-        "diplomatic alignment",
-        "transnational endorsement",
-        "regional pushback"
+        "diplomatic backing",
+        "transnational endorsements",
+        "bilateral negotiations"
       ],
-      "article_count": 8,
+      "article_count": 16,
       "refs": [
         {
-          "title": "Magyar Péter szövetségese szerint Orbán Viktor ENSZ-főtitkári jelölése csak egy újabb nevetséges pletyka",
-          "source": "Index.hu",
-          "url": "https://index.hu/belfold/2026/10/26/orban-viktor-ensz-fotitkar-jeloles-donald-tusk-andrij-szibiha-reakcio/",
-          "date": "2026-10-26T17:23:00+00:00",
+          "title": "Orbán Viktor ENSZ-főtitkári jelölése teljesen felforgathatná a magyar belpolitikát",
+          "source": "ORIGO",
+          "url": "https://www.origo.hu/belpol/2026/10/orban-viktor-ensz-fotitkar-deak-daniel-torok-gabor",
+          "date": "2026-10-27T00:51:59+00:00",
           "category": "hungary"
+        },
+        {
+          "title": "Trump seeks Viktor Orbán as next UN secretary-general",
+          "source": "todoalicante.es",
+          "url": "https://www.todoalicante.es/english/trump-seeks-viktor-orban-20261026061007-nt.html",
+          "date": "2026-10-26T18:18:07+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Is Trump Nominating Hungary's Ousted Far-Right Leader Viktor Orbán for United Nations Chief?",
+          "source": "GO Magazine",
+          "url": "https://gomag.com/article/is-trump-nominating-hungarys-ousted-far-right-leader-viktor-orban-for-united-nations-chief/",
+          "date": "2026-10-26T17:42:46+00:00",
+          "category": "general"
         },
         {
           "title": "Hungary’s FM to Meet Marco Rubio on Mission to Preserve Orbán-Era Deals",
@@ -186,74 +195,60 @@
           "category": "usa"
         },
         {
-          "title": "The UN was no friend of Orbán – So why is he now linked to its top job?",
-          "source": "Daily News Hungary",
-          "url": "https://dailynewshungary.com/orban-at-un-contradictions-potential-comeback/",
-          "date": "2026-10-26T15:14:00+00:00",
+          "title": "World leaders scoff at Trump mulling Orbán as UN secretary general",
+          "source": "The Hill",
+          "url": "https://thehill.com/policy/international/6172596-world-leaders-scoff-orban-unsg/amp/",
+          "date": "2026-10-26T16:10:31+00:00",
           "category": "hungary"
-        },
-        {
-          "title": "Trump Administration Advocates for Viktor Orbán’s Nomination as UN Secretary-General",
-          "source": "SSBCrack",
-          "url": "https://news.ssbcrack.com/trump-administration-advocates-for-viktor-orbans-nomination-as-un-secretary-general/",
-          "date": "2026-10-26T14:25:28+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Trump Administration backs Orbán for UN Secretary-General – media",
-          "source": "Ukrinform",
-          "url": "https://www.ukrinform.net/rubric-polytics/4178104-trump-administration-backs-orban-for-un-secretarygeneral-media.html",
-          "date": "2026-10-26T05:28:00+00:00",
-          "category": "usa"
         }
       ],
       "first_seen": "2026-10-26T11:15:46+00:00",
-      "last_seen": "2026-10-26T18:55:26+00:00"
+      "last_seen": "2026-10-27T05:43:31+00:00"
     },
     {
       "id": "populist-energy-policies-and-rollbacks-of-climate-regulations",
       "title": "Populist Energy Policies and Rollbacks of Climate Regulations",
-      "blurb": "Right-wing parties across Europe are championing cost-of-living relief through energy tax cuts, opposing European Union environmental frameworks like the Emissions Trading System, and pushing to restart traditional hydrocarbon exploration.",
+      "blurb": "Right-wing parties across Europe are uniting around demands to slash energy taxes, rollback green regulations, and revive traditional fossil fuel industries. Marine Le Pen promised to repeal laws banning hydrocarbon exploration in France, Giorgia Meloni pushed the EU to modify the Emissions Trading System, and Poland's PiS introduced emergency lower-VAT energy legislation.",
       "convergence": 3,
       "countries": [
         {
-          "name": "🇵🇱 Prawo i Sprawiedliwość",
-          "note": "PiS proposed emergency legislative sessions and tax cuts on heating fuels, coal, and electricity to counter winter heating cost spikes."
-        },
-        {
           "name": "🇫🇷 Rassemblement National",
-          "note": "Marine Le Pen pledged to abrogate strict environmental legislation and restart hydrocarbon exploration as part of her national sovereignty platform."
+          "note": "Marine Le Pen pledged to abrogate green laws prohibiting hydrocarbon exploration to boost French energy sovereignty."
         },
         {
           "name": "🇮🇹 Fratelli d'Italia / Lega",
-          "note": "Prime Minister Meloni and Matteo Salvini called for urgent EU-level interventions to revise emissions trading systems and protect domestic chemical and housing sectors."
+          "note": "Prime Minister Giorgia Meloni urged EU intervention on carbon trading costs to protect domestic heavy industry."
+        },
+        {
+          "name": "🇵🇱 Prawo i Sprawiedliwość",
+          "note": "PiS submitted emergency legislative proposals to slash VAT on heating, electricity, and gas for Polish households."
         },
         {
           "name": "🇬🇧 Reform UK",
-          "note": "Reform UK rolled out extensive pro-growth economic counter-proposals challenging current net-zero trajectories and energy levies."
+          "note": "Reform UK made repealing Net Zero commitments and lowering energy taxes central pillars of its national policy launch."
         }
       ],
       "signals": [
-        "fuel tax cut proposals",
-        "anti-ETS messaging",
-        "hydrocarbon exploration pledges",
-        "cost-of-living populism"
+        "climate regulation rollback",
+        "fossil fuel revival",
+        "EU green pushback",
+        "energy tax cuts"
       ],
-      "article_count": 12,
+      "article_count": 14,
       "refs": [
         {
-          "title": "Affitti brevi, Salvini: \"Bloccheremo il regolamento Ue\". E propone lo sgombero per le seconde case",
-          "source": "MilanoToday",
-          "url": "https://www.milanotoday.it/politica/affitti-brevi-salvini-regolamento-europeo.html",
-          "date": "2026-10-26T16:07:56+00:00",
+          "title": "Vertice con i partiti sulla manovra, Meloni: “Non mi sfiancate”. Dubbi della Ue sull’energia",
+          "source": "la Repubblica",
+          "url": "https://www.repubblica.it/economia/dossier/manovra-finanziaria-legge-di-bilancio/manovra-finanziaria-legge-di-bilancio-2026/2026/10/27/news/manovra_vertice_maggioranza_meloni_dubbi_ue_energia-425677596/",
+          "date": "2026-10-27T00:00:00+00:00",
           "category": "italy"
         },
         {
-          "title": "Meloni: rivedere l'ETS per difendere la chimica",
-          "source": "Polimerica",
-          "url": "https://www.polimerica.it/articolo.asp?id=36709",
-          "date": "2026-10-26T15:31:00+00:00",
-          "category": "italy"
+          "title": "PiS chce obniżyć VAT na ogrzewanie",
+          "source": "Gazeta Polska Codziennie",
+          "url": "https://gpcodziennie.pl/839769-pis-chce-obnizyc-vat-na-ogrzewanie.html",
+          "date": "2026-10-26T23:00:01+00:00",
+          "category": "poland"
         },
         {
           "title": "« Un vernis de souveraineté » : pourquoi Marine Le Pen veut relancer la recherche d’hydrocarbures en France",
@@ -263,81 +258,74 @@
           "category": "france"
         },
         {
-          "title": "PiS proponuje program „Tanie Ogrzewanie”. Chce obniżyć VAT na opał, prąd i ciepło",
-          "source": "Kurier Rzeszowski",
-          "url": "https://kurierrzeszowski.pl/2026/10/26/pis-proponuje-program-tanie-ogrzewanie-chce-obnizyc-vat-na-opal-prad-i-cieplo/",
-          "date": "2026-10-26T14:22:03+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Prawo i Sprawiedliwość proponuje obniżkę VAT na paliwa stałe",
-          "source": "Radio VIA",
-          "url": "https://radiovia.com.pl/aktualnosci/informacje-lokalne/prawo-i-sprawiedliwosc-proponuje-obnizke-vat-na-paliwa-stale",
-          "date": "2026-10-26T14:03:45+00:00",
-          "category": "poland"
+          "title": "Chimica, produzione a -3%: Ue decisiva. Meloni: intervenire sugli Ets",
+          "source": "Il Sole 24 ORE",
+          "url": "https://www.ilsole24ore.com/art/chimica-produzione-calo-3percento-politiche-ue-decisive-cambio-passo-meloni-intervenire-ets-AJOpNAuB",
+          "date": "2026-10-26T12:24:34+00:00",
+          "category": "italy"
         }
       ],
       "first_seen": "2026-10-26T11:15:46+00:00",
-      "last_seen": "2026-10-26T18:55:26+00:00"
+      "last_seen": "2026-10-27T05:43:31+00:00"
     },
     {
       "id": "internal-coalition-friction-over-foreign-policy-and-media-strategy",
       "title": "Internal Coalition Friction Over Foreign Policy and Media Strategy",
-      "blurb": "Right-wing populist parties across various nations are experiencing internal friction, messaging miscues, and public disputes involving leadership authority, foreign alignments, and media communication strategies.",
+      "blurb": "Right-wing movements across several nations face internal rifts and coalition friction over key foreign policy stances and tactical messaging. In Italy, Matteo Salvini's call to halt military aid to Ukraine sparked sharp rebukes from coalition partners, while internal ideological disputes over nationalism flared in Sweden, and massive email leaks rocked Germany's AfD.",
       "convergence": 3,
       "countries": [
         {
           "name": "🇮🇹 Fratelli d'Italia / Lega",
-          "note": "Tensions surfaced within the Italian right as Matteo Salvini's leadership stance on military aid to Ukraine sparked internal debate and factional shifts."
+          "note": "Matteo Salvini's demand to stop arming Ukraine triggered fierce pushback from foreign and defense ministers Tajani and Crosetto."
         },
         {
           "name": "🇦🇷 La Libertad Avanza",
-          "note": "Javier Milei faced internal cabinet discussions and public critiques from political allies regarding his aggressive rhetoric against journalists."
-        },
-        {
-          "name": "🇬🇧 Reform UK",
-          "note": "Nigel Farage publicly blamed staff incompetence for half-empty event venues and messaging hiccups during recent economic policy rollouts."
+          "note": "Javier Milei's foreign policy silence on Brazil created friction with mainstream coalition partners like Mauricio Macri."
         },
         {
           "name": "🇩🇪 Alternative für Deutschland",
-          "note": "The AfD leadership scrambled to address a major internal e-mail leak while managing ongoing controversies and regional pressure."
+          "note": "The publication of hundreds of thousands of internal emails caused severe leadership stress and internal factional conflict."
+        },
+        {
+          "name": "🇸🇪 Sverigedemokraterna",
+          "note": "Prominent SD figures clashed publicly online over whether Swedish national identity should be defined ethnically or culturally."
         }
       ],
       "signals": [
-        "leadership friction",
-        "messaging miscues",
-        "internal e-mail leaks",
-        "public rebukes"
+        "coalition friction",
+        "foreign policy split",
+        "ideological disputes",
+        "leaks and internal dissent"
       ],
-      "article_count": 10,
+      "article_count": 22,
       "refs": [
         {
-          "title": "AfD-Spitze will E-Mail-Leak «lückenlos aufklären» - Panorama - SZ.de",
-          "source": "SZ.de",
-          "url": "https://www.sueddeutsche.de/panorama/afd-spitze-will-e-mail-leak-lueckenlos-aufklaeren-li.3569511",
-          "date": "2026-10-26T17:09:59+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Nigel Farage fumes at ‘staff incompetence’ for half-empty Reform event",
-          "source": "The London Economic",
-          "url": "https://www.thelondoneconomic.com/politics/nigel-farage-fumes-at-staff-incompetence-for-half-empty-reform-event-410967/",
-          "date": "2026-10-26T16:22:20+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Patricia Bullrich marcó diferencias con Javier Milei por sus ataques a la prensa: “Cruzó un límite”",
-          "source": "El Eco",
-          "url": "https://www.eleco.com.ar/politica/patricia-bullrich-marco-diferencias-con-javier-milei-por-sus-ataques-a-la-prensa-cruzo-un-limite",
-          "date": "2026-10-26T16:14:35+00:00",
+          "title": "Elecciones en Brasil: el triunfo de Lula da Silva expuso diferencias entre Javier Milei, la oposición y sus aliados en el Congreso",
+          "source": "TN",
+          "url": "https://tn.com.ar/politica/2026/10/26/elecciones-en-brasil-el-triunfo-de-lula-da-silva-expuso-diferencias-entre-javier-milei-la-oposicion-y-sus-aliados-en-el-congreso/",
+          "date": "2026-10-26T22:45:55+00:00",
           "category": "argentina"
         },
         {
-          "title": "Vannacci: \"Salvini sembra essersi vannaccizzato. Siamo pronti a una crisi di governo\"",
-          "source": "LA7",
-          "url": "https://www.la7.it/intanto/video/vannacci-salvini-sembra-essersi-vannaccizzato-siamo-pronti-a-una-crisi-di-governo-26-10-2026-663310",
-          "date": "2026-10-26T14:53:40+00:00",
+          "title": "Ucraina, tensione nella maggioranza dopo le parole di Salvini. Tajani e Crosetto: \"La linea dell'Italia non cambia\"",
+          "source": "LaPresse",
+          "url": "https://www.lapresse.it/politica/2026/10/26/ucraina-tensione-nella-maggioranza-dopo-le-parole-di-salvini-tajani-e-crosetto-la-linea-dellitalia-non-cambia/",
+          "date": "2026-10-26T20:53:58+00:00",
           "category": "italy"
+        },
+        {
+          "title": "Gehackt und vertippt",
+          "source": "Polisphere",
+          "url": "https://polisphere.eu/aktuelles/gehackt-und-vertippt",
+          "date": "2026-10-26T19:07:13+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Ryter ifrån mot SD-toppen: ”Ett etniskt nödläge”",
+          "source": "Expressen",
+          "url": "https://www.expressen.se/nyheter/politik/sd-topparna-i-oppet-ordbrak-om-svenskhet/",
+          "date": "2026-10-26T16:53:45+00:00",
+          "category": "sweden"
         },
         {
           "title": "Salvini wins League leadership vote and demands: ‘Stop arming Kyiv’",
@@ -348,7 +336,7 @@
         }
       ],
       "first_seen": "2026-10-26T11:15:46+00:00",
-      "last_seen": "2026-10-26T18:55:26+00:00"
+      "last_seen": "2026-10-27T05:43:31+00:00"
     }
   ]
 }
