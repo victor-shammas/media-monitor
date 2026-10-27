@@ -1,91 +1,153 @@
 {
-  "updated_at": "2026-10-26T18:54:26+00:00",
+  "updated_at": "2026-10-27T05:41:02+00:00",
   "lookback_hours": 48,
-  "model": "Gemini 3.5 Flash-Lite",
+  "model": "Gemini 3.6 Flash",
   "status": "ok",
   "actors": [
     {
       "id": "donald-trump",
       "name": "Donald Trump",
       "role": "President of the United States",
-      "blurb": "President Donald Trump continues to dominate right-wing news coverage as his administration advances the 'Arsenal of Freedom', weighs geopolitical maneuvers such as backing Viktor Orbán for UN Secretary-General, and engages in aggressive social media attacks against critics. He is also ramping up midterm campaign rallies across states like South Carolina and Michigan.",
+      "blurb": "President Trump is actively campaigning in midterm rallies across Kansas and South Carolina while his administration pursues a third criminal indictment against former FBI Director James Comey. He has also drawn international attention by claiming Brazil's presidential election was 'rigged' following Flávio Bolsonaro's defeat.",
       "prominence": 5,
       "signals": [
-        "campaign rally",
-        "international posturing",
-        "policy announcement",
-        "social media attack"
+        "midterm election campaign",
+        "judicial proceedings",
+        "electoral integrity claims",
+        "foreign policy posturing"
       ],
       "categories": [
-        "US Politics",
-        "MAGA",
-        "Foreign Policy"
+        "MAGA / Trump",
+        "US Politics"
       ],
-      "article_count": 35,
+      "article_count": 44,
       "refs": [
         {
-          "title": "Thanks to President Trump, we are ACCELERATING the Arsenal of Freedom.",
-          "source": "MilitaryNews.com",
-          "url": "https://www.militarynews.com/multimedia/videos/thanks-to-president-trump-we-are-accelerating-the-arsenal-of-freedom/video_401fd8d0-121d-50b5-a4ae-79a37d600fed.html",
-          "date": "2026-10-26T17:16:14+00:00",
+          "title": "Trump administration brings third criminal case against former FBI Director James Comey over alleged leak",
+          "source": "DW.com",
+          "url": "https://www.dw.com/en/james-comey-usa-donald-trump/a-79771256",
+          "date": "2026-10-27T01:42:13+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Trump administration asks Washington to set aside hundreds of ballots from suspected noncitizen voters",
+          "source": "The Guardian",
+          "url": "https://www.theguardian.com/us-news/2026/oct/26/trump-washington-ballots-aside-noncitizen-voters",
+          "date": "2026-10-27T01:26:00+00:00",
           "category": "usa"
         },
         {
-          "title": "President Trump announces 2nd visit to South Carolina ahead of midterms",
-          "source": "WYFF",
-          "url": "https://www.wyff4.com/article/president-trump-announces-2nd-visit-to-south-carolina-ahead-of-midterms/74250201",
-          "date": "2026-10-26T17:05:05+00:00",
+          "title": "President Trump returning to Kansas on Saturday",
+          "source": "KWCH",
+          "url": "https://www.kwch.com/2026/10/27/president-trump-returning-kansas-saturday/",
+          "date": "2026-10-27T00:58:00+00:00",
           "category": "usa"
         },
         {
-          "title": "Trump administration investigates Palo Alto, San Francisco and North Monterey County school districts over ‘Wheel of Privilege’ survey",
-          "source": "The Mercury News",
-          "url": "https://www.mercurynews.com/2026/10/26/trump-administration-investigates-palo-alto-san-francisco-and-north-monterey-county-school-districts-over-wheel-of-privilege-survey/",
-          "date": "2026-10-26T16:58:19+00:00",
+          "title": "James Comey charged for third time by Trump administration",
+          "source": "NBC News",
+          "url": "https://www.nbcnews.com/video/shorts/james-comey-charged-for-third-time-by-trump-administration-272272453651",
+          "date": "2026-10-27T00:53:57+00:00",
           "category": "usa"
         },
         {
-          "title": "Trump Administration backs Orbán for UN Secretary-General – media",
-          "source": "Ukrinform",
-          "url": "https://www.ukrinform.net/rubric-polytics/4178104-trump-administration-backs-orban-for-un-secretarygeneral-media.html",
-          "date": "2026-10-26T05:28:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Donald Trump Attacks Bill Maher in Scathing, 1,318-Word Social Media Post: “Complete and Total Loser”",
-          "source": "The Hollywood Reporter",
-          "url": "https://www.hollywoodreporter.com/tv/tv-news/donald-trump-attacks-bill-maher-truth-social-post-loser-1236739778/",
-          "date": "2026-10-26T05:03:20+00:00",
+          "title": "Trump offers $1 million reward for voter fraud tips that lead to convictions",
+          "source": "NBC News",
+          "url": "https://www.nbcnews.com/politics/2026-election/trump-offers-1-million-reward-voter-fraud-tips-lead-convictions-rcna605798",
+          "date": "2026-10-26T22:09:48+00:00",
           "category": "usa"
         }
       ],
       "first_seen": "2026-08-16T02:13:23+00:00",
-      "last_seen": "2026-10-26T18:54:26+00:00"
+      "last_seen": "2026-10-27T05:41:02+00:00"
+    },
+    {
+      "id": "flavio-bolsonaro",
+      "name": "Flávio Bolsonaro",
+      "role": "Senator of Brazil and defeated presidential candidate",
+      "blurb": "Following his narrow election defeat to Lula da Silva, Flávio Bolsonaro was ordered by Brazil's Supreme Court to surrender his passport amid a money laundering inquiry. While his Liberal Party (PL) formally recognized the election results, Bolsonaro has challenged the outcome and pledged to lead the national opposition.",
+      "prominence": 4,
+      "signals": [
+        "election defeat fallout",
+        "judicial proceedings",
+        "passport confiscation",
+        "opposition leadership"
+      ],
+      "categories": [
+        "Bolsonarismo / Partido Liberal",
+        "Latin America"
+      ],
+      "article_count": 36,
+      "refs": [
+        {
+          "title": "Flávio Bolsonaro diz que recebeu intimação para entregar passaporte e não pode deixar o país",
+          "source": "Exame",
+          "url": "https://exame.com/brasil/flavio-bolsonaro-diz-recebeu-intimicao-para-entregar-passsaporte-e-nao-pode-deixar-o-pais/",
+          "date": "2026-10-27T01:49:37+00:00",
+          "category": "brazil"
+        },
+        {
+          "title": "Brazil's defeated Flávio Bolsonaro ordered to surrender passports",
+          "source": "Yahoo",
+          "url": "https://www.yahoo.com/news/world/articles/brazils-defeated-fl-vio-bolsonaro-010328601.html",
+          "date": "2026-10-27T01:03:00+00:00",
+          "category": "brazil"
+        },
+        {
+          "title": "Flávio muda a rota e agora diz que vai pedir ao TSE cassação da chapa Lula-Alckmin",
+          "source": "BBC",
+          "url": "https://www.bbc.com/portuguese/articles/cr9dzne66j1go",
+          "date": "2026-10-27T01:00:02+00:00",
+          "category": "brazil"
+        },
+        {
+          "title": "Brazil Supreme Court Orders Flávio Bolsonaro to Hand Over Passports in Money Laundering Inquiry",
+          "source": "The New York Times",
+          "url": "https://www.nytimes.com/2026/10/26/world/americas/flavio-bolsonaro-passport-brazil.html",
+          "date": "2026-10-26T23:55:15+00:00",
+          "category": "brazil"
+        },
+        {
+          "title": "PL, partido de Flávio Bolsonaro, reconhece resultado da eleição, mas cobra esclarecimentos",
+          "source": "G1",
+          "url": "https://g1.globo.com/politica/eleicoes/2026/noticia/2026/10/26/pl-reconhece-resultado-das-eleicoes.ghtml",
+          "date": "2026-10-26T22:17:30+00:00",
+          "category": "brazil"
+        }
+      ],
+      "first_seen": "2026-10-27T05:41:02+00:00",
+      "last_seen": "2026-10-27T05:41:02+00:00"
     },
     {
       "id": "marine-le-pen",
       "name": "Marine Le Pen",
       "role": "Leader of Rassemblement National",
-      "blurb": "Marine Le Pen has officially launched her 'LE 20.27' presidential campaign at the party congress in Orléans, positioning herself as the leading figure for 2027. She is drawing intense media scrutiny and voter enthusiasm by invoking national sovereignty, promising strict law and order, and pledging to overturn energy and resource restrictions.",
+      "blurb": "Marine Le Pen officially launched her 2027 French presidential campaign at the Rassemblement National congress in Orléans, promising a national 'renaissance', strict law enforcement, and restored border controls. Polls show her leading early vote intention projections against left-wing and centrist rivals.",
       "prominence": 4,
       "signals": [
-        "election campaign",
-        "policy announcement",
-        "congress rally",
-        "polling dominance"
+        "election campaign launch",
+        "party congress",
+        "policy announcements",
+        "polling lead"
       ],
       "categories": [
-        "French Politics",
         "Rassemblement National",
-        "Elections"
+        "European Politics"
       ],
-      "article_count": 18,
+      "article_count": 25,
       "refs": [
         {
-          "title": "\"LE 20.27\" - Marine Le Pen lance sa campagne",
-          "source": "BFM",
-          "url": "https://www.bfmtv.com/politique/video-le-20-27-marine-le-pen-lance-sa-campagne_VN-202610260705.html",
-          "date": "2026-10-26T17:19:22+00:00",
+          "title": "Le Pen Launches Election Campaign – Promises to Take Back France",
+          "source": "FrihetsNytt",
+          "url": "https://frihetsnytt.se/en/le-pen-launches-election-campaign-promises-to-take-back-france/",
+          "date": "2026-10-26T18:03:00+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Présidentielles 2027 : opposants, militants et service d’ordre… Des incidents perturbent le congrès du RN et le début de campagne de Marine Le Pen",
+          "source": "Sud Ouest",
+          "url": "https://www.sudouest.fr/politique/presidentielles-2027-opposants-militants-et-service-d-ordre-des-incidents-perturbent-le-congres-du-rn-et-le-debut-de-campagne-de-marine-le-pen-31253964.php",
+          "date": "2026-10-26T17:50:56+00:00",
           "category": "france"
         },
         {
@@ -93,13 +155,6 @@
           "source": "Breitbart",
           "url": "https://www.breitbart.com/europe/2026/10/26/le-pen-invokes-joan-of-arc-as-she-launches-presidential-campaign-vowing-to-usher-in-new-french-renaissance/",
           "date": "2026-10-26T14:44:22+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Sondages Marine Le Pen : la candidate caracole en tête",
-          "source": "Causeur",
-          "url": "https://www.causeur.fr/sondages-marine-le-pen-orleans-campagne-presidentielle-336046",
-          "date": "2026-10-26T14:42:47+00:00",
           "category": "france"
         },
         {
@@ -118,146 +173,102 @@
         }
       ],
       "first_seen": "2026-10-25T05:23:30+00:00",
-      "last_seen": "2026-10-26T18:54:26+00:00"
+      "last_seen": "2026-10-27T05:41:02+00:00"
     },
     {
       "id": "javier-milei",
       "name": "Javier Milei",
       "role": "President of Argentina",
-      "blurb": "Argentine President Javier Milei is generating extensive controversy and coverage by dismissing Brazil's presidential election results, maintaining silence on Lula da Silva's victory, and doubling down on his economic doctrine before his cabinet. Domestically, he is facing sharp backlash from business leaders and media figures over his aggressive rhetorical attacks on journalists.",
+      "blurb": "President Javier Milei is driving coverage due to his trip to Catamarca to inaugurate lithium plants and his viral 'Six-Seven' balcony gesture from Casa Rosada. He also faces criticism for remaining silent on Lula da Silva's victory in Brazil and for human rights complaints regarding his rhetoric against journalists.",
       "prominence": 4,
       "signals": [
-        "international posturing",
-        "scandal fallout",
-        "cabinet meeting",
-        "economic policy"
+        "mining infrastructure launch",
+        "diplomatic silence",
+        "press freedom controversy",
+        "viral social media gesture"
       ],
       "categories": [
-        "Argentine Politics",
         "La Libertad Avanza",
         "Latin America"
       ],
-      "article_count": 22,
+      "article_count": 32,
       "refs": [
         {
-          "title": "Javier Milei no reconoció la reelección de Lula da Silva en Brasil",
-          "source": "» Cholila Online",
-          "url": "https://cholilaonline.ar/2026/10/javier-milei-no-reconocio-a-lula-silva.html",
-          "date": "2026-10-26T17:22:13+00:00",
+          "title": "Qué significa \"Six-Seven\", el gesto que hizo Javier Milei en Casa Rosada",
+          "source": "El Destape",
+          "url": "https://www.eldestapeweb.com/politica/significa-six-seven-gesto-hizo-javier-milei-casa-rosada-20261026224930",
+          "date": "2026-10-27T01:52:30+00:00",
           "category": "argentina"
         },
         {
-          "title": "Javier Milei llamó a sus ministros a \"redoblar los esfuerzos\" y ratificó el rumbo económico",
-          "source": "A24.com",
-          "url": "https://www.a24.com/politica/javier-milei-llamo-sus-ministros-redoblar-los-esfuerzos-y-ratifico-el-rumbo-economico-n1610222",
-          "date": "2026-10-26T16:41:00+00:00",
+          "title": "Qué significa \"six-seven\": el origen del meme viral que hizo Javier Milei en el balcón de Casa Rosada",
+          "source": "Clarin.com",
+          "url": "https://www.clarin.com/politica/significa-six-seven-origen-meme-viral-hizo-javier-milei-balcon-casa-rosada_0_Ahyfbme0U9.html",
+          "date": "2026-10-27T00:35:13+00:00",
           "category": "argentina"
         },
         {
-          "title": "Javier Milei minimizó el triunfo de Lula frente al Gabinete: \"No nos vamos a correr un mílimetro de las ideas de la libertad\"",
-          "source": "MDZ Online",
-          "url": "https://www.mdzol.com/politica/2026/10/26/javier-milei-minimizo-el-triunfo-de-lula-frente-al-gabinete-no-nos-vamos-a-correr-un-milimetro-de-la-1990837.html",
-          "date": "2026-10-26T15:50:13+00:00",
+          "title": "Por primera vez, Javier Milei visita Catamarca: inauguración de nuevas plantas de litio y encuentro con su militancia",
+          "source": "C5N",
+          "url": "https://www.c5n.com/politica/por-primera-vez-javier-milei-visita-catamarca-inauguracion-nuevas-plantas-litio-y-encuentro-su-militancia-n252628",
+          "date": "2026-10-27T00:15:00+00:00",
           "category": "argentina"
         },
         {
-          "title": "Duro mensaje de IDEA a Milei: los empresarios le marcaron un límite por sus ataques a periodistas - El Economista",
-          "source": "Últimas noticias económicas y financieras",
-          "url": "https://eleconomista.com.ar/politica/duro-mensaje-idea-milei-empresarios-le-marcaron-limite-sus-ataques-periodistas-n99203",
-          "date": "2026-10-26T15:40:27+00:00",
+          "title": "El silencio del gobierno de Javier Milei ante el triunfo de Lula da Silva profundiza la incertidumbre en la relación bilateral con Brasil",
+          "source": "Mnews",
+          "url": "https://mnews.com.ar/politica/183276-El-silencio-del-gobierno-de-Javier-Milei-ante-el-triunfo-de-Lula-da-Silva-profundiza-la-incertidumbre-en-la-relacion-bilateral-con-Brasil",
+          "date": "2026-10-26T22:43:39+00:00",
           "category": "argentina"
         },
         {
-          "title": "Javier Milei se metió en las redes, pero en silencio total sobre el triunfo de Lula",
-          "source": "FM Del Sol Pehuajo",
-          "url": "https://radiodelsolpehuajo.com.ar/articulo/2026/10/javier-milei-se-metio-en-las-redes-pero-en-silencio-total-sobre-el-triunfo-de-lula.php",
-          "date": "2026-10-26T13:03:28+00:00",
+          "title": "Amnistía Internacional denunciará a Javier Milei ante la CIDH por ataques a periodistas",
+          "source": "El Ancasti",
+          "url": "https://www.elancasti.com.ar/politica-y-economia/amnistia-internacional-denunciara-javier-milei-la-cidh-ataques-periodistas-n624728",
+          "date": "2026-10-26T21:51:00+00:00",
           "category": "argentina"
         }
       ],
       "first_seen": "2026-10-26T18:54:26+00:00",
-      "last_seen": "2026-10-26T18:54:26+00:00"
-    },
-    {
-      "id": "jd-vance",
-      "name": "JD Vance",
-      "role": "Vice President of the United States",
-      "blurb": "Vice President JD Vance is actively campaigning on the ground for Republican candidates in high-stakes Senate and local races across states like Montana, Michigan, and Kansas. He is utilizing his platform to rally the conservative base while shaping the administration's populist message ahead of the midterms.",
-      "prominence": 3,
-      "signals": [
-        "election campaign",
-        "rally appearance",
-        "voter mobilization"
-      ],
-      "categories": [
-        "US Politics",
-        "MAGA",
-        "Elections"
-      ],
-      "article_count": 6,
-      "refs": [
-        {
-          "title": "WATCH: Vice President Vance to campaign for Republicans in Belgrade, Montana",
-          "source": "Nonstop Local News Montana",
-          "url": "https://www.montanarightnow.com/elections/watch-vice-president-vance-to-campaign-for-republicans-in-belgrade-montana/video_acafbb3e-5ec2-420a-a83f-a5034c3c8129.html",
-          "date": "2026-10-26T17:00:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Vice President JD Vance to speak at aviation company in Howell, Michigan",
-          "source": "WSMH",
-          "url": "https://midmichigannow.com/news/local/vice-president-jd-vance-to-speak-at-aviation-company-in-howell-michigan",
-          "date": "2026-10-26T16:50:30+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Vice President JD Vance on Augustine, Mamaw and the Power of Faith",
-          "source": "Focus on the Family",
-          "url": "https://dailycitizen.focusonthefamily.com/jd-vance-jim-daly-interview/",
-          "date": "2026-10-26T06:11:18+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Vice President JD Vance returns to Kansas for rally as Senate race remains tight",
-          "source": "KMBC",
-          "url": "https://www.kmbc.com/article/jd-vance-topeka-kansas-rally-roger-marshall-senate-race-2026/74244203",
-          "date": "2026-10-26T05:58:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Political expert explains what Vice President JD Vance’s upcoming visit means for Kansas",
-          "source": "KWCH",
-          "url": "https://www.kwch.com/2026/10/26/political-expert-explains-what-vice-president-jd-vances-upcoming-visit-means-kansas/",
-          "date": "2026-10-26T03:19:00+00:00",
-          "category": "usa"
-        }
-      ],
-      "first_seen": "2026-10-25T16:51:50+00:00",
-      "last_seen": "2026-10-26T18:54:26+00:00"
+      "last_seen": "2026-10-27T05:41:02+00:00"
     },
     {
       "id": "nigel-farage",
       "name": "Nigel Farage",
       "role": "Leader of Reform UK",
-      "blurb": "Nigel Farage is driving UK political discourse as Reform UK unveils a major package of economic policies and growth measures ahead of the budget. However, he is also managing internal party turbulence and dealing with public mockery regarding hall attendance and staff logistics during recent public addresses.",
+      "blurb": "Nigel Farage unveiled Reform UK's 64-point 'Economic Rescue Plan' ahead of the UK budget, proposing major tax cuts and deregulation while clashing with PM Andy Burnham over Brexit. He also traveled to Gibraltar to oppose proposed UK gambling tax increases.",
       "prominence": 3,
       "signals": [
-        "policy announcement",
-        "party management",
-        "economic debate"
+        "economic plan launch",
+        "tax policy campaign",
+        "Gibraltar visit",
+        "Brexit debate"
       ],
       "categories": [
-        "UK Politics",
         "Reform UK",
-        "Economic Policy"
+        "UK Politics"
       ],
-      "article_count": 14,
+      "article_count": 22,
       "refs": [
         {
-          "title": "Blundering Andy Burnham just made a catastrophic mistake – Nigel Farage will be laughing",
+          "title": "Nigel Farage lands in Gibraltar to lay out UK gambling concerns",
+          "source": "CDC Gaming",
+          "url": "https://cdcgaming.com/brief/nigel-farage-lands-in-gibraltar-to-lay-out-uk-gambling-concerns/",
+          "date": "2026-10-26T20:39:33+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Farage and Jenrick unveil Reform UK's ‘Economic Rescue Plan’",
+          "source": "ITN",
+          "url": "https://www.itn.co.uk/news/farage-and-jenrick-unveil-reform-uks-economic-rescue-plan",
+          "date": "2026-10-26T19:19:55+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Nigel Farage explains how anyone earning above £20,000 will be £486 richer if he is PM",
           "source": "Daily Express",
-          "url": "https://www.express.co.uk/news/politics/2260532/andy-burnham-brexit-nigel-farage",
-          "date": "2026-10-26T17:00:00+00:00",
+          "url": "https://www.express.co.uk/news/politics/2260620/nigel-farage-personal-allowance-reform-uk",
+          "date": "2026-10-26T18:00:00+00:00",
           "category": "uk"
         },
         {
@@ -268,29 +279,15 @@
           "category": "uk"
         },
         {
-          "title": "Nigel Farage and Robert Jenrick face rows of empty seats as big speech falls flat",
-          "source": "The Mirror",
-          "url": "https://www.mirror.co.uk/news/politics/nigel-farage-reform-press-conference-37812208",
-          "date": "2026-10-26T16:35:00+00:00",
-          "category": "uk"
-        },
-        {
           "title": "Nigel Farage admits Reform UK need to win back voters after 'difficult summer' - as he blames 'staff incompetence' for party delivering its own 'Teal Budget' to a half-empty hall",
           "source": "Daily Mail",
           "url": "https://www.dailymail.com/news/article-16239845/Nigel-Farage-admits-Reform-UK-need-win-voters-difficult-summer-blames-staff-incompetence-party-delivering-Teal-Budget-half-hall.html",
           "date": "2026-10-26T15:32:21+00:00",
           "category": "uk"
-        },
-        {
-          "title": "Reform UK Unveils Economic Rescue Plan Ahead of Budget",
-          "source": "BBC",
-          "url": "https://www.bbc.co.uk/iplayer/episode/l005910n/reform-uk-unveils-economic-rescue-plan-ahead-of-budget",
-          "date": "2026-10-26T13:57:27+00:00",
-          "category": "uk"
         }
       ],
       "first_seen": "2026-10-26T18:54:26+00:00",
-      "last_seen": "2026-10-26T18:54:26+00:00"
+      "last_seen": "2026-10-27T05:41:02+00:00"
     }
   ]
 }
