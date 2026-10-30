@@ -1,53 +1,151 @@
 {
-  "updated_at": "2026-10-29T18:42:31+00:00",
+  "updated_at": "2026-10-30T06:33:34+00:00",
   "lookback_hours": 48,
-  "model": "Gemini 3.5 Flash-Lite",
+  "model": "Gemini 3.6 Flash",
   "status": "ok",
   "themes": [
     {
+      "id": "far-right-election-contestation-following-brazilian-runoff-defeat",
+      "title": "Far-Right Election Contestation Following Brazilian Runoff Defeat",
+      "blurb": "Following Flávio Bolsonaro's flight to Florida after his election defeat, right-wing networks in Latin America and the US have aligned to portray his legal troubles as political persecution. The Trump administration granted US visas while Milei's government in Argentina faces severe domestic criticism and judicial scrutiny for allegedly assisting Bolsonaro's transit.",
+      "convergence": 5,
+      "countries": [
+        {
+          "name": "🇧🇷 Bolsonarismo / Partido Liberal",
+          "note": "Flávio Bolsonaro fled Brazil for Florida via Argentina and Ecuador, claiming election fraud and self-proclaiming as Brazil's legitimate leader from abroad"
+        },
+        {
+          "name": "🇦🇷 La Libertad Avanza",
+          "note": "Milei's administration faces judicial investigations and opposition criticism for allegedly facilitating Bolsonaro's escape through Argentina"
+        },
+        {
+          "name": "🇺🇸 MAGA / Trump",
+          "note": "The Trump administration welcomed Bolsonaro to Miami, granting US visas despite Brazilian court exit bans and denouncing the election outcome"
+        }
+      ],
+      "signals": [
+        "transnational sanctuary",
+        "shared fraud rhetoric",
+        "diplomatic friction",
+        "coordinated exile"
+      ],
+      "article_count": 32,
+      "refs": [
+        {
+          "title": "Argentine judge orders review of possible assistance to Flávio Bolsonaro — Buenos Aires Times",
+          "source": "UA.NEWS",
+          "url": "https://ua.news/en/dovkolo-svitu/argentinska-suddia-priznachila-perevirku-mozhlivoyi-dopomogi-flavio-bolsonaru-buenos-aires-times",
+          "date": "2026-10-30T01:32:44+00:00",
+          "category": "brazil"
+        },
+        {
+          "title": "Resumão diário do JN: Governo Trump ajudou Flávio Bolsonaro a fugir para os EUA, diz imprensa americana; presidente do PL diz que não aprova carta em tom golpista divulgada pelo senador",
+          "source": "G1",
+          "url": "https://g1.globo.com/jornal-nacional/noticia/2026/10/29/resumao-diario-do-jn-governo-trump-ajudou-flavio-bolsonaro-a-fugir-para-os-eua-diz-imprensa-americana-presidente-do-pl-diz-que-nao-aprova-carta-em-tom-golpista-divulgada-pelo-senador.ghtml",
+          "date": "2026-10-30T00:41:10+00:00",
+          "category": "brazil"
+        },
+        {
+          "title": "Trump says won’t ‘take sides’ in Brazil election, but calls it a ‘disgrace’",
+          "source": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/10/29/trump-says-wont-take-sides-in-brazil-election-but-calls-it-a-disgrace",
+          "date": "2026-10-29T19:26:04+00:00",
+          "category": "brazil"
+        },
+        {
+          "title": "Bolsonaro Declares Victory in Election After Fleeing Brazil",
+          "source": "globalpost.com",
+          "url": "https://globalpost.com/stories/bolsonaro-declares-victory-in-election-after-fleeing-brazil/",
+          "date": "2026-10-29T09:00:37+00:00",
+          "category": "brazil"
+        },
+        {
+          "title": "El Gobierno de Javier Milei confirmó que Flávio Bolsonaro partió de madrugada desde Puerto Iguazú",
+          "source": "Minuto Neuquén",
+          "url": "https://www.minutoneuquen.com/nacionales/2026/10/28/el-gobierno-de-javier-milei-confirmo-que-flavio-bolsonaro-partio-de-madrugada-desde-puerto-iguazu-413146.html",
+          "date": "2026-10-28T12:38:32+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "U.S. State Department Issues Visas For Flávio Bolsonaro After Brazil Election Loss: 27 outlets compared",
+          "source": "NewsCord",
+          "url": "https://newscord.org/article/us-state-department-issues-visas-for-flvio-bolsonaro-after-brazil-election-loss--Story_20261028_Bolsonarosdeparturef1f62b64d",
+          "date": "2026-10-28T11:20:35+00:00",
+          "category": "brazil"
+        }
+      ],
+      "first_seen": "2026-10-26T11:15:46+00:00",
+      "last_seen": "2026-10-30T06:33:34+00:00"
+    },
+    {
       "id": "populist-right-momentum-ahead-of-elections",
       "title": "Populist Right Momentum Ahead of Elections",
-      "blurb": "Right-wing and nationalist parties across multiple countries are surging in polls, preparing for upcoming elections, or facing coalition arithmetic debates as they position themselves for executive power.",
+      "blurb": "Populist right parties across Europe are celebrating record-breaking polling numbers and expanding local government power. From Norway and Germany to Spain and France, right-wing leaders are capitalizing on voter dissatisfaction with incumbent governments to position themselves as dominant political forces.",
       "convergence": 5,
       "countries": [
         {
           "name": "🇳🇴 Fremskrittspartiet",
-          "note": "Reaches record polling numbers (37.6%), outpacing traditional center-right and center-left rivals."
+          "note": "FrP hit a record-breaking 37.6% in national polls, completely outpacing both the Labour Party and Høyre"
         },
         {
-          "name": "🇸🇪 Sverigedemokraterna",
-          "note": "Negotiates municipal governance and post-election coalitions while navigating right-wing internal polling shifts."
+          "name": "🇩🇪 Alternative für Deutschland",
+          "note": "AfD surges to unprecedented highs in state polling, rivaling major traditional parties in Hessen and eastern Germany"
         },
         {
           "name": "🇪🇸 Vox",
-          "note": "Deploys candidates and campaigns aggressively ahead of regional and general elections, clashing with opponents."
+          "note": "Vox maintains strong electoral projections and secures expanded regional and Senate candidate pacts ahead of upcoming votes"
         },
         {
           "name": "🇫🇷 Rassemblement National",
-          "note": "Marine Le Pen launches her 2027 presidential campaign under the 'Renaissance' banner while handling institutional challenges."
+          "note": "Marine Le Pen dominates presidential polling for 2027 while solidifying alliances with defecting mainstream conservatives"
+        },
+        {
+          "name": "🇸🇪 Sverigedemokraterna",
+          "note": "SD expands its presence across municipal executive boards despite broader right-bloc negotiations"
         }
       ],
       "signals": [
-        "poll surges",
-        "coalition positioning",
-        "campaign launches",
-        "transnational right-wing momentum"
+        "polling surges",
+        "electoral momentum",
+        "mainstream party decline",
+        "parallel elections"
       ],
-      "article_count": 18,
+      "article_count": 25,
       "refs": [
         {
-          "title": "Uppgifter: M och SD förbereder sig för extraval",
-          "source": "Kvartal",
-          "url": "https://kvartal.se/nyheter/artiklar/uppgifter-m-och-sd-forbereder-sig-for-extraval/cG9zdDoyNDIxMzY",
-          "date": "2026-10-29T13:03:57+00:00",
+          "title": "Flera minoritetsstyren: SD tror på ökat inflytande",
+          "source": "Sveriges Radio",
+          "url": "https://www.sverigesradio.se/artikel/flera-minoritetsstyren-sd-tror-pa-okat-inflytande",
+          "date": "2026-10-29T22:04:42+00:00",
           "category": "sweden"
         },
         {
-          "title": "La République et \"l'oiseau\" : comment Marine Le Pen se donne le beau rôle de sa campagne",
-          "source": "France 24",
-          "url": "https://www.france24.com/fr/info-en-continu/20261029-la-r%C3%A9publique-et-l-oiseau-comment-marine-le-pen-se-donne-le-beau-r%C3%B4le-de-sa-campagne",
-          "date": "2026-10-29T08:52:45+00:00",
+          "title": "AfD: 39 Prozent – Umfrage lässt Koalitionspläne plötzlich wackeln",
+          "source": "WELT",
+          "url": "https://www.welt.de/politik/deutschland/article6ae38cc8981b80c0b798616a/afd-39-prozent-umfrage-laesst-koalitionsplaene-ploetzlich-wackeln.html",
+          "date": "2026-10-29T19:36:53+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Utrolig Frp-måling",
+          "source": "Finansavisen",
+          "url": "https://www.finansavisen.no/politikk/2026/10/29/8391579/utrolig-frp-maling",
+          "date": "2026-10-29T19:00:02+00:00",
+          "category": "norway"
+        },
+        {
+          "title": "Présidentielle 2027 : Éric Ciotti ferme la porte à David Lisnard et réaffirme son alliance avec le RN",
+          "source": "Nice Premium",
+          "url": "https://www.nicepremium.fr/actualites/presidentielle-2027-eric-ciotti-ferme-la-porte-a-david-lisnard-et-reaffirme-son-alliance-avec-le-rn/",
+          "date": "2026-10-29T14:53:41+00:00",
           "category": "france"
+        },
+        {
+          "title": "Encuestas elecciones generales en Castilla-La Mancha: resultados de PSOE, PP y Vox y ganador según los sondeos el 29N",
+          "source": "ABC",
+          "url": "https://www.abc.es/espana/castilla-la-mancha/encuestas-elecciones-generales-castillala-mancha-resultados-psoe-20261029050000-nt.html",
+          "date": "2026-10-29T07:42:10+00:00",
+          "category": "spain"
         },
         {
           "title": "Knuser ny rekord: Listhaug pulveriserer Ap og Høyre",
@@ -55,163 +153,66 @@
           "url": "https://www.document.no/2026/10/28/knuser-ny-rekord-listhaug-pulveriserer-ap-og-hoyre",
           "date": "2026-10-28T10:18:10+00:00",
           "category": "norway"
-        },
-        {
-          "title": "Tidöpartierna går om de rödgröna i ny mätning - FluxNytt",
-          "source": "Howl.Link",
-          "url": "https://t.co/bV8gh8KkgX",
-          "date": "2026-10-28T06:30:09+00:00",
-          "category": "sweden"
-        },
-        {
-          "title": "Frp med ny rekordmåling",
-          "source": "ABC Nyheter",
-          "url": "https://www.abcnyheter.no/nyheter/frp-med-ny-rekordmaling/1712804",
-          "date": "2026-10-28T04:43:02+00:00",
-          "category": "norway"
-        },
-        {
-          "title": "DN/Ipsos 27 oktober 2026: M på 24 procent",
-          "source": "HurBra.se",
-          "url": "https://hurbra.se/dn-ipsos-27-oktober-2026/",
-          "date": "2026-10-27T20:15:43+00:00",
-          "category": "sweden"
         }
       ],
       "first_seen": "2026-10-22T17:42:14+00:00",
-      "last_seen": "2026-10-29T18:42:31+00:00"
-    },
-    {
-      "id": "far-right-election-contestation-following-brazilian-runoff-defeat",
-      "title": "Far-Right Election Contestation Following Brazilian Runoff Defeat",
-      "blurb": "The fallout from the Brazilian presidential election continues to reverberate internationally as defeated figures like Flávio Bolsonaro flee to the US, claim rightful leadership, and face legal isolation.",
-      "convergence": 5,
-      "countries": [
-        {
-          "name": "🇧🇷 Bolsonarismo / Partido Liberal",
-          "note": "Flávio Bolsonaro flees to the US via Argentina, declares himself the true leader, and faces domestic calls for disqualification."
-        },
-        {
-          "name": "🇦🇷 La Libertad Avanza",
-          "note": "Javier Milei's government manages diplomatic fallout, denying congratulations to Lula while handling transit questions regarding the Bolsonaro clan."
-        },
-        {
-          "name": "🇺🇸 MAGA / Trump",
-          "note": "The Trump administration grants visas to the Bolsonaro family, providing a safe haven and fueling international debates over democratic norms."
-        }
-      ],
-      "signals": [
-        "transnational asylum",
-        "electoral fraud claims",
-        "diplomatic fallout",
-        "right-wing solidarity across the Americas"
-      ],
-      "article_count": 22,
-      "refs": [
-        {
-          "title": "Trump calls Brazil election a ‘disgrace’ as Bolsonaro flees to US",
-          "source": "TRT World",
-          "url": "https://www.trtworld.com/article/3279b4c5c41d",
-          "date": "2026-10-29T16:51:08+00:00",
-          "category": "brazil"
-        },
-        {
-          "title": "Vice-líder do governo lança ofensiva para tornar Flávio Bolsonaro inelegível",
-          "source": "CartaCapital",
-          "url": "https://www.cartacapital.com.br/cartaexpressa/vice-lider-do-governo-lanca-ofensiva-para-tornar-flavio-bolsonaro-inelegivel/",
-          "date": "2026-10-29T16:44:00+00:00",
-          "category": "brazil"
-        },
-        {
-          "title": "Bolsonaro says he 'did not flee Brazil' after arriving in US following election loss",
-          "source": "WZTV",
-          "url": "https://fox17.com/news/nation-world/presidential-candidate-flavio-bolsonaro-says-he-did-not-flee-brazil-after-arriving-in-us-following-election-loss-lula-united-states-visa-miami-opa-locka-executive-airport-florida-trump-state-department-supreme-court-investigation-corruption",
-          "date": "2026-10-29T16:37:22+00:00",
-          "category": "brazil"
-        },
-        {
-          "title": "Flavio Bolsonaro’s great escape: Is this the beginning of the end for ‘Bolsonarism’?",
-          "source": "France 24",
-          "url": "https://www.france24.com/en/americas/20261029-flavio-bolsonaro-s-great-escape-is-this-the-beginning-of-the-end-for-bolsonarism",
-          "date": "2026-10-29T16:19:17+00:00",
-          "category": "brazil"
-        },
-        {
-          "title": "What to Know about the Impacts of Flávio Bolsonaro’s Move from Brazil to the US - ASHARQ AL-AWSAT English",
-          "source": "",
-          "url": "https://english.aawsat.com/features/5335067-what-know-about-impacts-fl%C3%A1vio-bolsonaro%E2%80%99s-move-brazil-us",
-          "date": "2026-10-29T09:31:44+00:00",
-          "category": "brazil"
-        },
-        {
-          "title": "Flavio Bolsonaro claims he is Brazil’s true leader after fleeing to U.S.",
-          "source": "The Hindu",
-          "url": "https://www.thehindu.com/news/international/flavio-bolsonaro-claims-he-is-brazils-true-leader-after-fleeing-to-us/article71639212.ece",
-          "date": "2026-10-29T06:17:57+00:00",
-          "category": "brazil"
-        },
-        {
-          "title": "US says it will grant Flavio Bolsonaro visa as he flees Brazil",
-          "source": "Euronews.com",
-          "url": "https://www.euronews.com/2026/10/28/us-to-grant-flavio-bolsonaro-visa-as-he-flees-brazil-and-makes-brief-stop-in-ecuador-via-a",
-          "date": "2026-10-28T11:14:24+00:00",
-          "category": "brazil"
-        },
-        {
-          "title": "El Gobierno confirmó que Milei no felicitará a Lula: “No es hipócrita”",
-          "source": "ANDigital",
-          "url": "https://andigital.com.ar/nota/144552/el-gobierno-confirmo-que-milei-no-felicitara-a-lula-no-es-hipocrita/",
-          "date": "2026-10-27T19:52:21+00:00",
-          "category": "argentina"
-        }
-      ],
-      "first_seen": "2026-10-26T11:15:46+00:00",
-      "last_seen": "2026-10-29T18:42:31+00:00"
+      "last_seen": "2026-10-30T06:33:34+00:00"
     },
     {
       "id": "national-priority-rhetoric-and-hardline-migration-demands",
       "title": "National Priority Rhetoric and Hardline Migration Demands",
-      "blurb": "Right-wing actors continue to press hardline anti-immigration positions, demanding national preferences in social spending, housing, and public services while blaming governing parties for systemic failures.",
+      "blurb": "Right-wing parties across multiple European nations are escalating demands for hardline migration restrictions and the prioritization of native citizens in social services. Leaders frame unchecked migration as a direct threat to national security, housing markets, and public healthcare capacity.",
       "convergence": 4,
       "countries": [
         {
-          "name": "🇫🇷 Rassemblement National",
-          "note": "Marine Le Pen proposes abolishing the SRU law to prioritize French citizens for social housing amid heated security debates."
-        },
-        {
           "name": "🇳🇴 Fremskrittspartiet",
-          "note": "Demands strict caps on refugee settlement and prioritizes native populations over immigration commitments."
+          "note": "FrP demands a total freeze on refugee processing, warning that immigration levels have become completely uncontrolled"
         },
         {
-          "name": "🇬🇧 Reform UK",
-          "note": "Nigel Farage and local candidates campaign heavily against asylum housing, migrant dinghies, and municipal integration policies."
+          "name": "🇫🇷 Rassemblement National",
+          "note": "Marine Le Pen proposes ending social housing eligibility for non-citizens under a strict 'national priority' framework"
         },
         {
           "name": "🇪🇸 Vox",
-          "note": "Links immigration directly to strained public services and medical waiting lists during campaign rallies."
+          "note": "Santiago Abascal explicitly links immigration to public hospital waiting lists and attacks government border policies"
+        },
+        {
+          "name": "🇸🇪 Sverigedemokraterna",
+          "note": "SD reiterates that religious freedom must yield to Swedish law, advocating a return to strong national cultural values"
+        },
+        {
+          "name": "🇬🇧 Reform UK",
+          "note": "Local party representatives attack asylum accommodation plans and challenge community integration initiatives"
         }
       ],
       "signals": [
-        "housing priority demands",
-        "anti-immigration rhetoric",
-        "blaming elites for migrant flows",
-        "national preference frameworks"
+        "national priority",
+        "welfare chauvinism",
+        "hardline border demands",
+        "shared framing"
       ],
-      "article_count": 14,
+      "article_count": 18,
       "refs": [
         {
-          "title": "Nigel Farage rages over fresh migrant farce as dinghy leaves Belgium while police watch",
-          "source": "AOL.com",
-          "url": "https://www.aol.co.uk/articles/nigel-farage-rages-over-fresh-133500000.html",
-          "date": "2026-10-29T13:41:56+00:00",
+          "title": "Vox acusa al PP de dejar que Sánchez le \"tomara el pelo\" antes de la invasión",
+          "source": "El Faro de Ceuta",
+          "url": "https://elfarodeceuta.es/vox-acusa-pp-dejar-sanchez-tomara-pelo-invasion-pleno/",
+          "date": "2026-10-29T09:45:45+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Cumberland councillor to question impact of HMOs on family housing availability",
+          "source": "News & Star",
+          "url": "https://www.newsandstar.co.uk/news/26678624.cumberland-councillor-raise-housing-trading-issues/",
+          "date": "2026-10-29T05:00:00+00:00",
           "category": "uk"
         },
         {
-          "title": "Nittedal skal ta imot 30 flyktninger",
-          "source": "Varingen",
-          "url": "https://www.varingen.no/nittedal-skal-ta-imot-30-flyktninger/s/80-92-19580",
-          "date": "2026-10-29T13:04:25+00:00",
-          "category": "norway"
+          "title": "INSÄNDARE: SD-svaret: Religionsfrihet är ingen frihet från svensk lag",
+          "source": "MVT, Motala Vadstena Tidning",
+          "url": "https://www.mvt.se/insandare/artikel/sd-svaret-religionsfrihet-ar-ingen-frihet-fran-svensk-lag/r1wgn7pl",
+          "date": "2026-10-28T20:00:00+00:00",
+          "category": "sweden"
         },
         {
           "title": "\"Arrêtons de dire que les pauvres sont des barbares\" : la mixité sociale, enjeu de la présidentielle",
@@ -228,154 +229,60 @@
           "category": "spain"
         },
         {
-          "title": "Vil gjøre det enklere å slette medlemskap i trossamfunn - Fremskrittspartiet",
-          "source": "FrP.",
-          "url": "https://www.frp.no/nyheter/vil-gjore-det-enklere-a-slette-medlemskap-i-trossamfunn",
-          "date": "2026-10-28T10:31:00+00:00",
+          "title": "Frp slår alarm: – Helt ukontrollert",
+          "source": "Nettavisen",
+          "url": "https://www.nettavisen.no/nyheter/frp-slar-alarm-helt-ukontrollert/v/80-95-198134",
+          "date": "2026-10-28T07:37:27+00:00",
           "category": "norway"
         }
       ],
       "first_seen": "2026-10-28T06:23:48+00:00",
-      "last_seen": "2026-10-29T18:42:31+00:00"
-    },
-    {
-      "id": "internal-coalition-friction-over-foreign-policy-and-media-strategy",
-      "title": "Internal Coalition Friction Over Foreign Policy and Media Strategy",
-      "blurb": "Right-wing parties experience internal friction and public scandals involving leadership disputes, parliamentary altercations, and strategic disagreements over media messaging and alliances.",
-      "convergence": 4,
-      "countries": [
-        {
-          "name": "🇬🇧 Reform UK",
-          "note": "Nigel Farage faces intense media scrutiny and physical altercation controversies in Parliament while launching party newspapers."
-        },
-        {
-          "name": "🇵🇱 Prawo i Sprawiedliwość",
-          "note": "Internal fractures emerge over Jarosław Kaczyński's controversial statements on the European Union and potential coalition futures."
-        },
-        {
-          "name": "🇸🇪 Sverigedemokraterna",
-          "note": "Public debates between high-ranking figures over nationalist definitions and strategy strain right-wing bloc unity."
-        },
-        {
-          "name": "🇮🇹 Fratelli d'Italia / Lega",
-          "note": "Coalition partners clash over budget allocations, tax rates for the self-employed, and judicial appointments."
-        }
-      ],
-      "signals": [
-        "public altercations",
-        "strategy disputes",
-        "parliamentary friction",
-        "ideological boundary debates"
-      ],
-      "article_count": 16,
-      "refs": [
-        {
-          "title": "Lib Dems and Reform UK in war of words over alleged shove",
-          "source": "BBC",
-          "url": "https://www.bbc.co.uk/news/articles/cwg7x3kegymvo",
-          "date": "2026-10-29T16:53:35+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Nigel Farage accused of ‘shoving’ female Lib Dem MP",
-          "source": "The Times",
-          "url": "https://www.thetimes.com/uk/politics/article/nigel-farage-shoved-female-mp-0j78qxlsx",
-          "date": "2026-10-29T16:35:00+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Szejna o słowach Kaczyńskiego. \"To przygotowanie elektoratu na koalicję z Braunem\"",
-          "source": "Polskie Radio 24",
-          "url": "https://polskieradio24.pl/polityka/szejna-o-slowach-kaczynskiego-to-przygotowanie-elektoratu-na-koalicje-z-braunem",
-          "date": "2026-10-29T16:34:51+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "\"Nie ma na to naszej zgody\". Mateusz Morawiecki kontra Jarosław Kaczyński",
-          "source": "Wiadomości Onet",
-          "url": "https://wiadomosci.onet.pl/kraj/mateusz-morawiecki-kontra-jaroslaw-kaczynski-politycy-spieraja-sie-o-ue/gvfqbjj",
-          "date": "2026-10-29T16:09:22+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Nigel Farage accused of shoving female Lib Dem MP in parliament",
-          "source": "The Guardian",
-          "url": "https://www.theguardian.com/politics/2026/oct/29/nigel-farage-accused-shoving-female-lib-dem-parliament",
-          "date": "2026-10-29T15:42:00+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Statsvetare: SD-bråket kan skada hela högersidan",
-          "source": "Omni – Alla nyheter. Alla perspektiv.",
-          "url": "https://omni.se/statsvetare-sd-braket-kan-skada-hela-hogersidan/a/mKqK9l",
-          "date": "2026-10-29T05:24:46+00:00",
-          "category": "sweden"
-        },
-        {
-          "title": "Irpef e flat tax, l’aiutino di FI e Lega a redditi più elevati e partite Iva",
-          "source": "Il Fatto Quotidiano",
-          "url": "https://www.ilfattoquotidiano.it/in-edicola/articoli/2026/10/29/irpef-e-flat-tax-laiutino-di-fi-e-lega-a-redditi-piu-elevati-e-partite-iva/8553545/",
-          "date": "2026-10-28T23:01:00+00:00",
-          "category": "italy"
-        }
-      ],
-      "first_seen": "2026-10-26T11:15:46+00:00",
-      "last_seen": "2026-10-29T18:42:31+00:00"
+      "last_seen": "2026-10-30T06:33:34+00:00"
     },
     {
       "id": "judicial-crackdowns-and-surveillance-targeting-the-far-right",
       "title": "Judicial Crackdowns and Surveillance Targeting the Far-Right",
-      "blurb": "Governments and state institutions step up legal pressure, surveillance reclassifications, and judicial oversight against far-right organizations and leaders across Europe.",
-      "convergence": 3,
+      "blurb": "Right-wing parties in Western democracy are coming into direct conflict with judicial institutions, state intelligence oversight, and legal restrictions. Politicians respond to judicial actions and surveillance classifications by framing the legal system as politically biased.",
+      "convergence": 4,
       "countries": [
         {
           "name": "🇩🇪 Alternative für Deutschland",
-          "note": "Courts reject AfD complaints upholding their reclassification as a suspected extremist observation object, while data leaks spark public outcry."
+          "note": "Courts uphold state intelligence surveillance designations for AfD chapters as universities tighten legal checks on party-affiliated staff"
+        },
+        {
+          "name": "🇮🇹 Fratelli d'Italia / Lega",
+          "note": "Giorgia Meloni openly attacks a judge's decision releasing a radical activist, triggering an immediate clash with magistrate associations"
         },
         {
           "name": "🇫🇷 Rassemblement National",
-          "note": "Legal battles persist over Marine Le Pen's contested presidential ineligibility rulings and judicial scrutiny."
+          "note": "Marine Le Pen faces ongoing judicial challenges regarding her 2027 eligibility while RN files defamation lawsuits against major press outlets"
         },
         {
           "name": "🇪🇸 Vox",
-          "note": "Party figures face hate crime trials and legal challenges regarding historical memory laws and public statements."
+          "note": "Vox parliamentary leaders face hate crime trials over political demonstrations and public destruction of imagery"
         }
       ],
       "signals": [
-        "state surveillance",
-        "judicial disqualification",
-        "court battles",
-        "administrative crackdowns"
+        "judicial interference claims",
+        "executive-judiciary clashes",
+        "legal battles",
+        "surveillance opposition"
       ],
-      "article_count": 12,
+      "article_count": 21,
       "refs": [
         {
-          "title": "OVG bestätigt Hochstufung: AfD Niedersachsen bleibt Beobachtungsobjekt von erheblicher Bedeutung - beck-aktuell",
-          "source": "",
-          "url": "https://www.beck-aktuell.de/heute-im-recht/rechtsprechung/ovg-lueneburg-11me20526-hochstufung-afd-niedersachsen-verfassungsschutz-2026-10-29",
-          "date": "2026-10-29T16:51:49+00:00",
+          "title": "OVG Lüneburg bestätigt AfD-Einstufung – Abstimmung über Verbot folgt",
+          "source": "Hildesheimer Presse",
+          "url": "https://hildesheimer-presse.de/2026/10/29/ovg-lueneburg-bestaetigt-afd-einstufung-abstimmung-ueber-verbot-folgt/",
+          "date": "2026-10-29T19:12:35+00:00",
           "category": "germany"
         },
         {
-          "title": "AfD-Beschwerde gegen vorläufige Hochstufung erfolglos",
-          "source": "STERN.de",
-          "url": "https://www.stern.de/politik/deutschland/afd-beschwerde-gegen-vorlaeufige-hochstufung-erfolglos-38471950.html",
-          "date": "2026-10-29T16:37:00+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "AfD Niedersachsen: Gericht weist Beschwerde zurück – Entscheidung ist unanfechtbar",
-          "source": "WELT",
-          "url": "https://www.welt.de/politik/deutschland/article6ae367f47953cec15ae665e5/afd-niedersachsen-gericht-weist-beschwerde-zurueck-entscheidung-ist-unanfechtbar.html",
-          "date": "2026-10-29T16:15:33+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Niederlage vor dem OVG Niedersächsische AfD bleibt vorerst Beobachtungsobjekt des Verfassungsschutzes",
-          "source": "Tagesspiegel",
-          "url": "https://www.tagesspiegel.de/politik/afp-dpa-niederlage-vor-dem-ovg-niedersachsische-afd-bleibt-vorerst-beobachtungsobjekt-des-verfassungsschutzes-16216610.html",
-          "date": "2026-10-29T16:04:02+00:00",
-          "category": "germany"
+          "title": "Youssef Siher libero: non è terrorismo. Meloni: decisione vergognosa",
+          "source": "La Gazzetta del Mezzogiorno",
+          "url": "https://www.lagazzettadelmezzogiorno.it/news/primo-piano/2189172/youssef-siher-libero-non-e-terrorismo-meloni-decisione-vergognosa.html",
+          "date": "2026-10-29T08:27:00+00:00",
+          "category": "italy"
         },
         {
           "title": "Un magistrat maintient l'inéligibilité de Marine Le Pen pour 2027 : ses avocats parlent d'une décision « purement politique »",
@@ -383,6 +290,13 @@
           "url": "https://www.socialmag.news/29/10/2026/un-magistrat-maintient-lineligibilite-de-marine-le-pen-pour-2027-ses-avocats-parlent-dune-decision-purement-politique/",
           "date": "2026-10-29T06:25:58+00:00",
           "category": "france"
+        },
+        {
+          "title": "Meloni attacca subito la giudice: “Vergogna”. Anm: “Intimidatoria”",
+          "source": "Il Fatto Quotidiano",
+          "url": "https://www.ilfattoquotidiano.it/in-edicola/articoli/2026/10/29/meloni-attacca-subito-la-giudice-vergogna-anm-intimidatoria/8553525/",
+          "date": "2026-10-28T23:01:00+00:00",
+          "category": "italy"
         },
         {
           "title": "El president del Parlament balear (Vox), en el banquillo acusado de un delito de odio",
@@ -393,7 +307,84 @@
         }
       ],
       "first_seen": "2026-10-29T18:42:31+00:00",
-      "last_seen": "2026-10-29T18:42:31+00:00"
+      "last_seen": "2026-10-30T06:33:34+00:00"
+    },
+    {
+      "id": "internal-coalition-friction-over-foreign-policy-and-media-strategy",
+      "title": "Internal Coalition Friction Over Foreign Policy and Media Strategy",
+      "blurb": "Populist and conservative right factions face rising internal disputes over geopolitical positions, coalition conditions, and communication tactics. Leaders are increasingly attempting to bypass mainstream media by creating independent publishing platforms while struggling to maintain unified party discipline.",
+      "convergence": 4,
+      "countries": [
+        {
+          "name": "🇵🇱 Prawo i Sprawiedliwość",
+          "note": "Jarosław Kaczyński's radical rhetoric proposing hardline EU exit negotiations triggers backlash from political opponents and internal right-wing critics"
+        },
+        {
+          "name": "🇸🇪 Sverigedemokraterna",
+          "note": "Prominent SD figures engage in public spats over ideological identity, threatening fragile ties with mainstream coalition partners"
+        },
+        {
+          "name": "🇦🇷 La Libertad Avanza",
+          "note": "Electoral alliance talks between Milei's government and Macri's PRO party stall completely due to disagreements over 2027 strategy"
+        },
+        {
+          "name": "🇬🇧 Reform UK",
+          "note": "Nigel Farage launches a self-published national newspaper to circumvent traditional outlets while managing internal friction regarding fringe activists"
+        }
+      ],
+      "signals": [
+        "coalition tension",
+        "bypassing mainstream media",
+        "identity disputes",
+        "electoral alliance breakdown"
+      ],
+      "article_count": 19,
+      "refs": [
+        {
+          "title": "Mauricio Macri dijo que “no se ha avanzado nada” en el acuerdo electoral con La Libertad Avanza para 2027",
+          "source": "La Nación",
+          "url": "https://www.lanacion.com.ar/politica/mauricio-macri-dijo-que-no-se-ha-avanzado-nada-en-el-acuerdo-electoral-con-la-libertad-avanza-para-nid29102026/",
+          "date": "2026-10-30T01:07:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Polexit jako plan awaryjny? Orzeł ujawnia trzy etapy strategii Kaczyńskiego",
+          "source": "Radio Wnet",
+          "url": "https://wnet.fm/2026/10/29/polexit-jako-plan-awaryjny-orzel-ujawnia-trzy-etapy-strategii-kaczynskiego",
+          "date": "2026-10-29T19:53:04+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Reform UK launches its own ‘newspaper’ with Farage on front page",
+          "source": "The Guardian",
+          "url": "https://www.theguardian.com/politics/2026/oct/29/reform-uk-launches-newspaper-publishing-the-reformer-farage",
+          "date": "2026-10-29T16:22:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Prezes PiS chce polexitu? Politycy komentują słowa Kaczyńskiego",
+          "source": "wnp.pl",
+          "url": "https://www.wnp.pl/polityka-i-sondaze/prezes-pis-chce-polexitu-politycy-komentuja-slowa-kaczynskiego,1114023.html",
+          "date": "2026-10-29T09:44:00+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Statsvetare: SD-bråket kan skada hela högersidan",
+          "source": "Omni – Alla nyheter. Alla perspektiv.",
+          "url": "https://omni.se/statsvetare-sd-braket-kan-skada-hela-hogersidan/a/mKqK9l",
+          "date": "2026-10-29T05:24:46+00:00",
+          "category": "sweden"
+        },
+        {
+          "title": "Vad händer bakom kulisserna när Jomshof & Karlsson bråkar öppet?",
+          "source": "FrihetsNytt",
+          "url": "https://frihetsnytt.se/vad-hander-bakom-kulisserna-nar-jomshof-karlsson-brakar-oppet/",
+          "date": "2026-10-28T07:58:42+00:00",
+          "category": "sweden"
+        }
+      ],
+      "first_seen": "2026-10-26T11:15:46+00:00",
+      "last_seen": "2026-10-30T06:33:34+00:00"
     }
   ]
 }
