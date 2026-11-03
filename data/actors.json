@@ -1,140 +1,89 @@
 {
-  "updated_at": "2026-11-03T07:18:29+00:00",
+  "updated_at": "2026-11-03T19:55:08+00:00",
   "lookback_hours": 48,
-  "model": "Gemini 3.6 Flash",
+  "model": "Gemini 3.5 Flash-Lite",
   "status": "ok",
   "actors": [
     {
       "id": "donald-trump",
       "name": "Donald Trump",
       "role": "President of the United States",
-      "blurb": "Donald Trump is driving intense coverage ahead of the US midterms with campaign rallies in Kansas and Iowa, a pledged $15 billion aid package for farmers, and ongoing legal battles over state election protocols in California and Alaska. His administration also faces scrutiny over foreign policy concerns regarding Iran, press freedom ratings, and controversies surrounding high-profile pardon decisions.",
+      "blurb": "President Trump is currently dominating the news cycle as the U.S. midterm elections arrive, with his administration deploying a record 1,000 election monitors across all 50 states. He also made shock waves internationally and domestically by announcing that the U.S. will cease its $4 billion annual aid to Israel by the end of 2026, while facing legal challenges over vanity and election projects.",
       "prominence": 5,
       "signals": [
-        "election campaign",
-        "farm relief package",
-        "judicial proceedings",
-        "foreign policy tension"
+        "midterm elections",
+        "aid policy announcement",
+        "election monitoring",
+        "legal proceedings"
       ],
       "categories": [
-        "MAGA",
-        "Transnational Networks"
+        "MAGA / Trump"
       ],
-      "article_count": 36,
+      "article_count": 27,
       "refs": [
         {
-          "title": "Trump administration asks Supreme Court to set aside 20,000 disputed ballots in California",
-          "source": "KBAK",
-          "url": "https://bakersfieldnow.com/news/nation-world/trump-administration-asks-supreme-court-to-set-aside-20000-disputed-ballots-in-california-noncitizens-illegal-voters-federal-appeals-court-midterms-election",
-          "date": "2026-11-02T17:54:03+00:00",
+          "title": "US midterms: Democrats odds-on to take control of Senate and House in a big night for Trump's legacy",
+          "source": "Racing Post",
+          "url": "https://www.racingpost.com/sport/special-events/politics/clacton-by-election-betting-nigel-farage-count-binface-aQnNA6H11j32/",
+          "date": "2026-11-03T17:47:43+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Trump Administration Dispatches Record Election Monitors for Midterms, to Accept Complaints for a Week",
+          "source": "news.sbs.co.kr",
+          "url": "https://news.sbs.co.kr/english/article.do?news_id=N1008829257",
+          "date": "2026-11-03T17:21:30+00:00",
           "category": "usa"
         },
         {
-          "title": "Trump Administration Pledges $15 Billion in Farmer Relief Ahead of Midterm Elections",
-          "source": "Yahoo",
-          "url": "https://www.yahoo.com/news/politics/articles/trump-administration-pledges-15-billion-173402404.html",
-          "date": "2026-11-02T17:34:02+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "President Trump Salina rally in pictures",
-          "source": "Salina Post",
-          "url": "https://salinapost.com/posts/48cce751-3c4a-4f3d-b5eb-12685f9eaab8",
-          "date": "2026-11-02T06:32:03+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Trump pledges $15B for farmers struggling with costs ahead of midterm elections",
-          "source": "New York Post",
-          "url": "https://nypost.com/2026/11/01/us-news/trump-pledges-15b-for-farmers-struggling-with-costs/",
-          "date": "2026-11-01T18:58:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Judge Trina Thompson Orders Trump Administration To Stop Threatening California Election Officials",
+          "title": "Donald Trump Says He Will Stop $4 Billion Aid To Israel By End Of 2026: 66 outlets compared",
           "source": "NewsCord",
-          "url": "https://newscord.org/article/judge-trina-thompson-orders-trump-administration-to-stop-threatening-california--Story_20261101_JudgeordersTrumpadmi75dc983b",
-          "date": "2026-11-01T08:37:42+00:00",
+          "url": "https://newscord.org/article/trump-says-us-will-cut-4-billion-aid-to-israel-by-end-of-2026--Story_20261103_98e85352",
+          "date": "2026-11-03T16:37:47+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump Makes Stunning Announcement About Aid for Israel",
+          "source": "The New Republic",
+          "url": "https://newrepublic.com/post/217498/donald-trump-announcement-aid-israel",
+          "date": "2026-11-03T16:14:40+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Trump's not on the ballot so what does he have to do with the midterms?",
+          "source": "ABC News & Headlines – Australian Broadcasting Corporation",
+          "url": "https://www.abc.net.au/news/2026-11-03/what-are-the-us-midterm-elections-why-they-matter-to-trump/107114830",
+          "date": "2026-11-03T01:34:41+00:00",
           "category": "usa"
         }
       ],
       "first_seen": "2026-10-31T17:24:45+00:00",
-      "last_seen": "2026-11-03T07:18:29+00:00"
-    },
-    {
-      "id": "flavio-bolsonaro",
-      "name": "Flávio Bolsonaro",
-      "role": "Senator of Brazil and defeated presidential candidate",
-      "blurb": "Following his presidential election defeat, Flávio Bolsonaro remains at the center of international and domestic controversy after fleeing Brazil for Florida. His defense is actively appealing to Brazil's Supreme Federal Court to lift measures imposed by Minister Alexandre de Moraes, while local law enforcement and international reports investigate allegations regarding his covert departure.",
-      "prominence": 5,
-      "signals": [
-        "exile fallout",
-        "judicial proceedings",
-        "investigation appeal",
-        "party leadership"
-      ],
-      "categories": [
-        "Bolsonarismo",
-        "Partido Liberal"
-      ],
-      "article_count": 26,
-      "refs": [
-        {
-          "title": "Flávio Bolsonaro recorre ao STF para recuperar passaportes e afastar Moraes de investigação",
-          "source": "Vero Notícias",
-          "url": "https://veronoticias.com/politica/flavio-bolsonaro-recorre-ao-stf-para-recuperar-passaportes-e-afastar-moraes-de-investigacao/",
-          "date": "2026-11-03T00:30:00+00:00",
-          "category": "brazil"
-        },
-        {
-          "title": "Flávio Bolsonaro pede ao STF fim de restrições de Moraes",
-          "source": "Portal ABC do ABC",
-          "url": "https://www.abcdoabc.com.br/flavio-bolsonaro-pede-stf-fim-restricoes/",
-          "date": "2026-11-03T00:00:08+00:00",
-          "category": "brazil"
-        },
-        {
-          "title": "Flávio Bolsonaro vai a culto na Flórida e faz primeira aparição pública após fuga do Brasil",
-          "source": "www.correiodamanha.com.br",
-          "url": "https://www.correiodamanha.com.br/politica/2026/11/331774-flavio-bolsonaro-vai-a-culto-na-florida-e-faz-primeira-aparicao-publica-apos-fuga-do-brasil.html",
-          "date": "2026-11-02T17:38:00+00:00",
-          "category": "brazil"
-        },
-        {
-          "title": "Ex-agente do governo israelense teria ajudado Flávio Bolsonaro a fugir para os EUA, diz TV",
-          "source": "Folha de S.Paulo",
-          "url": "https://www1.folha.uol.com.br/poder/2026/11/ex-agente-do-governo-israelense-teria-ajudado-flavio-bolsonaro-a-fugir-para-os-eua-diz-tv.shtml",
-          "date": "2026-11-02T17:18:00+00:00",
-          "category": "brazil"
-        },
-        {
-          "title": "Flávio Bolsonaro follows a well-worn right-wing path: Exile in Florida",
-          "source": "Salon.com",
-          "url": "https://www.salon.com/2026/11/01/flavio-bolsonaro-follows-a-well-worn-right-wing-path-exile-in-florida/",
-          "date": "2026-11-01T14:00:25+00:00",
-          "category": "brazil"
-        }
-      ],
-      "first_seen": "2026-10-27T05:41:02+00:00",
-      "last_seen": "2026-11-03T07:18:29+00:00"
+      "last_seen": "2026-11-03T19:55:08+00:00"
     },
     {
       "id": "javier-milei",
       "name": "Javier Milei",
       "role": "President of Argentina",
-      "blurb": "Javier Milei is dominating Latin American news as he prepares to host Pope Leo XIV for an official visit to Argentina, complete with planned national broadcasts. At the same time, Milei is embarking on an international trip to Madrid for the Ibero-American Summit and continuing strong public backing for Israel amidst legislative pushback over economic and electoral reforms.",
-      "prominence": 4,
+      "blurb": "Javier Milei is driving intense media attention as he prepares to host Pope Leo XIV for his first official papal visit to Argentina, while navigating a busy international and domestic schedule. He recently delivered a hardline pro-Israel speech at the 'Noche de Celebración por Israel' and continues to push Argentina as a regulation-free AI haven.",
+      "prominence": 5,
       "signals": [
-        "papal visit preparation",
+        "papal visit",
         "international summit",
-        "policy announcement",
-        "diplomatic posturing"
+        "foreign policy",
+        "economic and AI policy"
       ],
       "categories": [
         "La Libertad Avanza"
       ],
-      "article_count": 30,
+      "article_count": 25,
       "refs": [
+        {
+          "title": "“Ni un tuit”: el pedido de Mario Pergolini a Javier Milei antes de la llegada del papa León XIV",
+          "source": "Radio 10 Mar del Plata",
+          "url": "https://radio10mardelplata.com.ar/ni-un-tuit-el-pedido-de-mario-pergolini-a-javier-milei-antes-de-la-llegada-del-papa-leon-xiv/",
+          "date": "2026-11-03T17:44:04+00:00",
+          "category": "argentina"
+        },
         {
           "title": "Javier Milei se reunió con un rabino enviado por Donald Trump y luego disertó en la Noche de Celebración por Israel",
           "source": "Diario Río Negro",
@@ -157,34 +106,27 @@
           "category": "argentina"
         },
         {
-          "title": "Javier Milei se prepara para un nuevo viaje internacional: la agenda semanal",
-          "source": "Minutouno",
-          "url": "https://www.minutouno.com/politica/javier-milei-se-prepara-un-nuevo-viaje-internacional-la-agenda-semanal-n6340372",
-          "date": "2026-11-02T03:46:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Una nueva visita a Madrid: Javier Milei viajará con Karina y participará de una cumbre internacional",
-          "source": "Diario Panorama",
-          "url": "https://www.diariopanorama.com/noticia/571584/nueva-visita-madrid-javier-milei-viajara-karina-participara-cumbre-internacional",
-          "date": "2026-11-02T03:30:43+00:00",
+          "title": "Javier Milei celebró la visita del Papa a la Argentina: “Servirá para consolidar los valores judeocristianos”",
+          "source": "TN",
+          "url": "https://tn.com.ar/politica/2026/11/02/javier-milei-celebro-la-visita-del-papa-a-la-argentina-servira-para-consolidar-los-valores-judeocristianos/",
+          "date": "2026-11-03T00:23:00+00:00",
           "category": "argentina"
         }
       ],
       "first_seen": "2026-10-26T18:54:26+00:00",
-      "last_seen": "2026-11-03T07:18:29+00:00"
+      "last_seen": "2026-11-03T19:55:08+00:00"
     },
     {
       "id": "karol-nawrocki",
       "name": "Karol Nawrocki",
       "role": "President of Poland",
-      "blurb": "Karol Nawrocki is at the heart of an escalating constitutional crisis in Poland following reported confrontations at the Constitutional Tribunal (TK). The administration faces intense political strain and public spats with Prime Minister Donald Tusk's government over judicial control, leading to potential prosecutorial investigations and calls for a constitutional reset.",
+      "blurb": "Karol Nawrocki is at the center of a severe constitutional crisis in Poland, leading high-stakes confrontations with Prime Minister Donald Tusk's government over the status of the Constitutional Tribunal. His direct interventions and physical entry into state tribunal buildings have sparked intense domestic outcry and international media scrutiny.",
       "prominence": 4,
       "signals": [
         "constitutional crisis",
-        "judicial confrontation",
-        "leadership challenge",
-        "political standoff"
+        "clash with prime minister",
+        "judicial proceedings",
+        "state institution takeover"
       ],
       "categories": [
         "Prawo i Sprawiedliwość"
@@ -192,17 +134,31 @@
       "article_count": 18,
       "refs": [
         {
-          "title": "Karol Nawrocki kontra Donald Tusk. Prezydent reaguje na spór o TK",
-          "source": "Wprost",
-          "url": "https://www.wprost.pl/kraj/12490090/karol-nawrocki-kontra-donald-tusk-prezydent-reaguje-na-spor-o-tk.html",
-          "date": "2026-11-02T21:08:00+00:00",
+          "title": "Posiedzenie RBN. Nawrocki: Oczekuję od premiera opamiętania, naprawy i oddania spraw Polski",
+          "source": "Wyborcza.pl",
+          "url": "https://wyborcza.pl/7,75398,33114747,posiedzenie-rbn-nawrocki-oczekuje-od-premiera-opamietania.html",
+          "date": "2026-11-03T17:49:56+00:00",
           "category": "poland"
         },
         {
-          "title": "„To prezydent Karol Nawrocki użył siły”. Rośnie napięcie wokół TK",
-          "source": "Radio Zet",
-          "url": "https://wiadomosci.radiozet.pl/na-zywo/post/gosc-radia-zet-to-prezydent-karol-nawrocki-uzyl-sily-rosnie-napiecie-wokol-tk",
-          "date": "2026-11-02T07:21:00+00:00",
+          "title": "Prezydent K. Nawrocki: Oczekuję od premiera opamiętania i zaprzestania nielegalnych działań w budynku Trybunału Konstytucyjnego",
+          "source": "RadioMaryja.pl",
+          "url": "https://www.radiomaryja.pl/informacje/prezydent-k-nawrocki-oczekuje-od-premiera-opamietania-i-zaprzestania-nielegalnych-dzialan-w-budynku-trybunalu-konstytucyjnego/",
+          "date": "2026-11-03T17:31:31+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Poland's President: Government Is Plunging the Country Into a Constitutional Crisis",
+          "source": "blue News",
+          "url": "https://www.bluewin.ch/en/news/poland-s-president-government-is-plunging-the-country-into-a-constitutional-crisis-li.3659711",
+          "date": "2026-11-03T17:14:00+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "What is at stake for Poland as President-PM fight spills out into the open?",
+          "source": "TRT World",
+          "url": "https://www.trtworld.com/article/57297f3da30e",
+          "date": "2026-11-03T17:04:01+00:00",
           "category": "poland"
         },
         {
@@ -211,80 +167,122 @@
           "url": "https://pl.euronews.com/2026/11/02/donald-tusk-kontra-karol-nawrocki-kryzys-w-trybunale-konstytucyjnym",
           "date": "2026-11-02T07:04:16+00:00",
           "category": "poland"
-        },
-        {
-          "title": "Prokuratura zajmie się Karolem Nawrockim? „Mógł złamać prawo razem z I prezesem SN”",
-          "source": "Rzeczpospolita",
-          "url": "https://www.rp.pl/polityka/art45429701-wiceminister-sprawiedliwosci-prezydent-mogl-zlamac-artykul-193-kodeksu-karnego",
-          "date": "2026-11-02T06:30:04+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Sędzia o wydarzeniach w TK. \"Wypowiedział słowa: idzie prezydent\"",
-          "source": "Fakt",
-          "url": "https://www.fakt.pl/polityka/trybunal-konstytucyjny-korwin-piotrowska-karol-nawrocki-natarl-na-mnie/yf4gsx1",
-          "date": "2026-11-02T05:37:40+00:00",
-          "category": "poland"
         }
       ],
       "first_seen": "2026-10-31T17:24:45+00:00",
-      "last_seen": "2026-11-03T07:18:29+00:00"
+      "last_seen": "2026-11-03T19:55:08+00:00"
+    },
+    {
+      "id": "flavio-bolsonaro",
+      "name": "Flávio Bolsonaro",
+      "role": "Senator of Brazil",
+      "blurb": "Flávio Bolsonaro continues to drive massive headlines following his sudden flight to the United States amidst an ongoing Supreme Federal Court (STF) money laundering and corruption investigation. His defense team has formally petitioned the STF to replace Justice Alexandre de Moraes and return his seized passports, while political fallout reverberates across Brazilian conservative circles.",
+      "prominence": 4,
+      "signals": [
+        "scandal fallout",
+        "judicial proceedings",
+        "legal appeals",
+        "international flight"
+      ],
+      "categories": [
+        "Bolsonarismo / Partido Liberal"
+      ],
+      "article_count": 20,
+      "refs": [
+        {
+          "title": "Defesa de Flávio Bolsonaro pede que André Mendonça assuma investigação no lugar de Moraes no STF",
+          "source": "TV Gazeta",
+          "url": "https://www.tvgazeta.com.br/videos/defesa-de-flavio-bolsonaro-pede-que-andre-mendonca-assuma-investigacao-no-lugar-de-moraes-no-stf/",
+          "date": "2026-11-03T17:46:34+00:00",
+          "category": "brazil"
+        },
+        {
+          "title": "Porta-voz do governo de Javier Milei afirma que assunto sobre entrada de Flávio Bolsonaro na Argentina está encerrado",
+          "source": "Portal VV8",
+          "url": "https://portalvv8.com.br/noticia/83442/porta-voz-do-governo-de-javier-milei-afirma-que-assunto-sobre-entrada-de-flavio-bolsonaro-na-argentina-esta-encerrado",
+          "date": "2026-11-03T17:43:15+00:00",
+          "category": "brazil"
+        },
+        {
+          "title": "Flávio Bolsonaro recorre ao STF para recuperar passaportes e afastar Moraes de investigação",
+          "source": "Vero Notícias",
+          "url": "https://veronoticias.com/politica/flavio-bolsonaro-recorre-ao-stf-para-recuperar-passaportes-e-afastar-moraes-de-investigacao/",
+          "date": "2026-11-03T00:30:00+00:00",
+          "category": "brazil"
+        },
+        {
+          "title": "Flávio Bolsonaro recorre ao Supremo contra a apreensão dos seus passaportes",
+          "source": "Jornal O Sul",
+          "url": "https://www.osul.com.br/flavio-bolsonaro-recorre-ao-supremo-contra-a-apreensao-dos-seus-passaportes/",
+          "date": "2026-11-03T00:00:00+00:00",
+          "category": "brazil"
+        },
+        {
+          "title": "Flávio Bolsonaro recorre contra apreensão de passaportes e alega impedimento de Moraes",
+          "source": "GZH",
+          "url": "https://gauchazh.clicrbs.com.br/politica/noticia/2026/11/flavio-bolsonaro-recorre-contra-apreensao-de-passaportes-e-alega-impedimento-de-moraes-cmvzosjfu0081015ocwio2qej.html",
+          "date": "2026-11-02T23:42:19+00:00",
+          "category": "brazil"
+        }
+      ],
+      "first_seen": "2026-10-27T05:41:02+00:00",
+      "last_seen": "2026-11-03T19:55:08+00:00"
     },
     {
       "id": "marine-le-pen",
       "name": "Marine Le Pen",
       "role": "Presidential Candidate and Leader of Rassemblement National",
-      "blurb": "Marine Le Pen is shaping European right-wing discourse after launching her 2027 presidential campaign in Orléans while criticizing EU inaction over Poland's Constitutional Tribunal crisis. As polling indicates growing support among former Macron voters, her future campaign eligibility remains subject to an upcoming Cour de cassation ruling.",
+      "blurb": "Marine Le Pen is dominating French far-right coverage as polling ahead of the 2027 presidential election shows her surging among young voters and leading trust metrics on economic and security issues. She has also faced intense political crossfire following controversial remarks on France's security situation and sharp criticisms of the EU and political rivals.",
       "prominence": 3,
       "signals": [
         "election campaign",
-        "international commentary",
-        "judicial appeal",
-        "poll gains"
+        "opinion polls",
+        "security debate",
+        "international posturing"
       ],
       "categories": [
         "Rassemblement National"
       ],
-      "article_count": 18,
+      "article_count": 16,
       "refs": [
         {
-          "title": "Pologne : Marine Le Pen dénonce « une prise de contrôle forcée » du tribunal constitutionnel, Varsovie lui demande du « respect »",
-          "source": "Le Parisien",
-          "url": "https://www.leparisien.fr/international/pologne-marine-le-pen-denonce-une-prise-de-controle-forcee-du-tribunal-constitutionnel-varsovie-lui-demande-du-respect-02-11-2026-FPNBXP7HLBDALDPO3WKL6264RU.php",
-          "date": "2026-11-02T22:17:52+00:00",
+          "title": "Ukraine : quand Volodymyr Zelensky invite Marine Le Pen à se confronter au réel",
+          "source": "L'Express",
+          "url": "https://www.lexpress.fr/politique/ukraine-quand-volodymyr-zelensky-invite-marine-le-pen-a-se-confronter-au-reel-CKVHZL3ZRND75ARURUN3WPGOMY/",
+          "date": "2026-11-03T17:30:00+00:00",
           "category": "france"
         },
         {
-          "title": "France's Le Pen condemns Poland's Constitutional Tribunal crisis",
-          "source": "Euronews.com",
-          "url": "https://www.euronews.com/2026/11/02/le-pen-condemns-polands-constitutional-tribunal-crisis-sikorski-tells-her-not-to-interfere",
-          "date": "2026-11-02T06:44:01+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Présidentielle 2027 : jusqu'à 19 % des électeurs de Macron en 2022 envisagent désormais de voter Marine Le Pen",
-          "source": "21News",
-          "url": "https://www.21news.be/presidentielle-2027-jusqua-19-des-electeurs-de-macron-en-2022-envisagent-desormais-de-voter-marine-le-pen/",
-          "date": "2026-11-02T06:39:00+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Pologne : Marine Le Pen déplore «une prise de contrôle forcée» du tribunal constitutionnel",
+          "title": "Présidentielle 2027 : préoccupés par le niveau de la dette, les Français font d’abord confiance à Marine Le Pen pour la réduire",
           "source": "Le Figaro",
-          "url": "https://www.lefigaro.fr/international/pologne-marine-le-pen-deplore-une-prise-de-controle-forcee-du-tribunal-constitutionnel-20261101",
-          "date": "2026-11-01T14:14:30+00:00",
+          "url": "https://www.lefigaro.fr/elections/presidentielles/sondages/presidentielle-2027-preoccupes-par-le-niveau-de-la-dette-les-francais-font-d-abord-confiance-a-marine-le-pen-pour-la-reduire-20261103",
+          "date": "2026-11-03T17:00:00+00:00",
           "category": "france"
         },
         {
-          "title": "Présidentielle 2027 : La Cour de cassation peut-elle trancher l’inéligibilité de Marine le Pen avant l’élection",
-          "source": "Yahoo Actualités",
-          "url": "https://fr.news.yahoo.com/pr%C3%A9sidentielle-2027-cour-cassation-peut-073236855.html",
-          "date": "2026-11-01T07:32:36+00:00",
+          "title": "Les propos de Marine Le Pen sur la \"mexicanisation\" de la France suscitent l’indignation au Mexique",
+          "source": "BFM",
+          "url": "https://www.bfmtv.com/international/amerique-latine/mexique/video-les-propos-de-marine-le-pen-sur-la-mexicanisation-de-la-france-suscitent-l-indignation-au-mexique_VN-202611030677.html",
+          "date": "2026-11-03T15:29:58+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Marine Le Pen est la candidate qui convainc le plus de Français sur la mobilisation contre la vie chère, selon un sondage",
+          "source": "Gentside",
+          "url": "https://www.gentside.com/news/politique/art122038-marine-le-pen-est-la-candidate-qui-convainc-le-plus-de-francais-sur-la-mobilisation-contre.html",
+          "date": "2026-11-03T13:00:00+00:00",
+          "category": "france"
+        },
+        {
+          "title": "France’s Marine Le Pen expected to win the next presidential election amid nation’s riot troubles",
+          "source": "News24",
+          "url": "https://www.news24.com.au/world/europe/frances-marine-le-pen-expected-to-win-the-next-presidential-election-amid-nations-riot-troubles/video/5a1a17b9c2a96337e00a96049d3f8af0",
+          "date": "2026-11-03T04:47:44+00:00",
           "category": "france"
         }
       ],
       "first_seen": "2026-11-01T18:09:57+00:00",
-      "last_seen": "2026-11-03T07:18:29+00:00"
+      "last_seen": "2026-11-03T19:55:08+00:00"
     }
   ]
 }
