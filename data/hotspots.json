@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T19:39:47+00:00",
+  "updated_at": "2026-11-07T06:22:51+00:00",
   "lookback_hours": 48,
   "model": "Gemini 3.6 Flash",
   "status": "ok",
@@ -7,21 +7,20 @@
     {
       "id": "us-midterm-election-rout-maga-internal-backlash",
       "title": "US Midterm Election Rout & MAGA Internal Backlash",
-      "blurb": "Fallout from the Republican defeat in the US midterm elections continues to dominate coverage, with internal MAGA factions trading blame over administration policy and the ongoing war in Iran. Prominent figures like Vice President JD Vance, Representative Thomas Massie, and European allies are publicly distancing themselves or calling for personnel changes, including the impeachment of Defense Secretary Pete Hegseth.",
-      "affect": "Commands white-hot investment as the movement processes a major electoral defeat, sparking open infighting and existential panic over leadership strategy.",
+      "blurb": "The fallout from the Republican Party's heavy losses in the US midterm elections continues to dominate right-wing media landscape. Internal party finger-pointing has intensified, with Vice President JD Vance blaming the administration's intervention in Iran while lawmakers like Thomas Massie move to impeach War Secretary Pete Hegseth. Reports of Secretary of State Marco Rubio contemplating resignation highlight growing destabilization within MAGA leadership.",
+      "affect": "The unexpected election losses have triggered widespread anxiety and aggressive blame-shifting across MAGA media, turning internal administration disputes into a high-stakes public conflict.",
       "intensity": 5,
       "affect_signals": [
         "leadership crisis tone",
-        "blame-shifting narrative",
-        "polarized contention",
-        "existential alarm"
+        "intense blame-shifting",
+        "existential threat framing",
+        "cross-source repetition"
       ],
       "categories": [
-        "maga_trump",
-        "transnational_networks",
-        "reform_uk"
+        "us_maga_trump",
+        "transnational_networks"
       ],
-      "article_count": 62,
+      "article_count": 48,
       "refs": [
         {
           "title": "Hegseth vows to fight amid calls for him to be sacked or impeached",
@@ -31,11 +30,11 @@
           "category": "usa"
         },
         {
-          "title": "JD Vance’s Stunning Act of Disloyalty - American Enterprise Institute",
-          "source": "AEI",
-          "url": "https://www.aei.org/commentary/jd-vances-stunning-act-of-disloyalty/",
-          "date": "2026-11-05T21:40:27+00:00",
-          "category": "networks"
+          "title": "Top Trump Goon Marco Rubio’s Plan to Quit Disaster Admin Is Leaked",
+          "source": "The Daily Beast",
+          "url": "https://www.thedailybeast.com/top-trump-goon-marco-rubios-plan-to-quit-disaster-admin-is-leaked",
+          "date": "2026-11-05T23:13:17+00:00",
+          "category": "usa"
         },
         {
           "title": "'The old Republican party sucked.' MAGA lawmakers double down after getting shellacked in midterms",
@@ -60,24 +59,24 @@
         }
       ],
       "first_seen": "2026-11-04T20:00:04+00:00",
-      "last_seen": "2026-11-06T19:39:47+00:00"
+      "last_seen": "2026-11-07T06:22:51+00:00"
     },
     {
       "id": "polish-constitutional-court-crisis-coup-accusations",
       "title": "Polish Constitutional Court Crisis & Coup Accusations",
-      "blurb": "Tensions surrounding Poland's Constitutional Tribunal escalated significantly after President Karol Nawrocki entered the building under State Protection Service escort during a standoff with law enforcement. PiS Chairman Jarosław Kaczyński announced a specialized parliamentary team to investigate what he termed an unconstitutional coup d'état, warning that political opponents could face life imprisonment.",
-      "affect": "Extremely charged due to dramatic legal escalation, threats of criminal prosecution against government officials, and physical security confrontations at state institutions.",
+      "blurb": "The standoff surrounding Poland's Constitutional Tribunal (TK) has reached a fever pitch as Law and Justice (PiS) leader Jarosław Kaczyński announced a parliamentary team to investigate what he labels an unconstitutional coup d'état. Tensions escalated further as President Karol Nawrocki forced entry into the Tribunal building accompanied by State Protection Service officers, while PiS launched a no-confidence motion against Interior Minister Marcin Kierwiński.",
+      "affect": "The acute legal and institutional standoff is amplified by rhetoric invoking illegal coups and potential life imprisonment, charging the debate with intense existential outrage.",
       "intensity": 5,
       "affect_signals": [
-        "coup d'état framing",
-        "legal retaliation threats",
-        "polarized contention",
-        "high-stakes confrontation"
+        "coup d'etat rhetoric",
+        "existential threat framing",
+        "outrage-coded language",
+        "polarized contention"
       ],
       "categories": [
-        "prawo_i_sprawiedliwosc"
+        "pis_poland"
       ],
-      "article_count": 33,
+      "article_count": 35,
       "refs": [
         {
           "title": "PiS chce odwołać ministra Kierwińskiego. Szef MSW czuje się doceniony przez opozycję",
@@ -94,10 +93,17 @@
           "category": "poland"
         },
         {
-          "title": "Były szef BOR o zachowaniu Nawrockiego. \"Wbrew procedurom\"",
-          "source": "Fakt",
-          "url": "https://www.fakt.pl/polityka/karol-nawrocki-w-tk-byly-szef-bor-ocenil-zachowanie-prezydenta/my6441r",
-          "date": "2026-11-05T10:02:00+00:00",
+          "title": "Nawrocki nie ma pretensji do SOP. Media pisały o \"torowaniu drogi\" do TK",
+          "source": "Gazeta",
+          "url": "https://wiadomosci.gazeta.pl/polityka/7,198012,33115329,nawrocki-torowal-droge-sop-do-tk-bogucki-prezydent-nie-ma.html",
+          "date": "2026-11-05T10:15:51+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "\"Zespół do spraw rozliczenia zamachu na TK\". Jarosław Kaczyński zapowiedział",
+          "source": "Interia Wydarzenia",
+          "url": "https://wydarzenia.interia.pl/kraj/news-kaczynski-zapowiada-ws-trybunalu-korwin-piotrowska-nazwal-uz,nId,23569281",
+          "date": "2026-11-05T09:27:12+00:00",
           "category": "poland"
         },
         {
@@ -106,91 +112,84 @@
           "url": "https://niezalezna.pl/polityka/nawet-dozywocie-prezes-pis-mocno-o-tym-co-czeka-uzurpatorow-okupujacych-tk/583373",
           "date": "2026-11-05T09:20:00+00:00",
           "category": "poland"
-        },
-        {
-          "title": "PiS tworzy specjalny zespół po wydarzeniach przed TK. \"Mamy do czynienia z bardzo ciężkimi przestępstwami\"",
-          "source": "Wiadomości Onet",
-          "url": "https://wiadomosci.onet.pl/kraj/pis-tworzy-specjalny-zespol-po-wydarzeniach-przed-tk-ciezkie-przestepstwa/l0rgcc3",
-          "date": "2026-11-05T09:08:04+00:00",
-          "category": "poland"
         }
       ],
       "first_seen": "2026-10-31T17:21:14+00:00",
-      "last_seen": "2026-11-06T19:39:47+00:00"
+      "last_seen": "2026-11-07T06:22:51+00:00"
     },
     {
       "id": "flavio-bolsonaro-defeat-brazil-election-fraud-claims",
       "title": "Flávio Bolsonaro Defeat & Brazil Election Fraud Claims",
-      "blurb": "Following his presidential election loss, Senator Flávio Bolsonaro travelled to the United States to address a CPAC gala at Mar-a-Lago, declaring he would take political secrets 'to the grave.' The story has intensified amid allegations of fast-tracked Italian citizenship for the family and growing scrutiny from Brazilian judicial authorities.",
-      "affect": "Driven by intense narrative investment in exile political drama, accusations of legal persecution, and ongoing battles over electoral legitimacy.",
+      "blurb": "Following his election loss, Senator Flávio Bolsonaro generated widespread debate by admitting in an interview that he lacks concrete proof of election fraud, while continuing to challenge the legitimacy of the results. His high-profile appearance at a Mar-a-Lago CPAC event alongside US allies coincides with legal actions taken against him by Brazil's Superior Electoral Court (TSE) and parliamentary maneuvers to preserve his Senate mandate.",
+      "affect": "The combination of lingering election denialism, legal pressure, and international posturing maintains high affective investment among Bolsonarista channels.",
       "intensity": 4,
       "affect_signals": [
-        "persecution narrative",
-        "exile intrigue",
-        "outrage-coded language",
-        "polarized contention"
+        "election denial rhetoric",
+        "grievance framing",
+        "polarized contention",
+        "cross-source repetition"
       ],
       "categories": [
-        "bolsonarismo_partido_liberal"
+        "bolsonarismo_brazil"
       ],
-      "article_count": 33,
+      "article_count": 32,
       "refs": [
         {
-          "title": "Prometida como ‘bombástica’, entrevista de Flávio Bolsonaro ao NYT expõe fuga e teorias conspiratórias",
-          "source": "CartaCapital",
-          "url": "https://www.cartacapital.com.br/politica/prometida-como-bombastica-entrevista-de-flavio-bolsonaro-ao-nyt-expoe-fuga-e-teorias-conspiratorias/",
-          "date": "2026-11-06T14:53:00+00:00",
+          "title": "Flávio Bolsonaro admite não ter provas de fraude eleitoral e diz que apoiará pai em 2030 se ele ficar elegível",
+          "source": "Rede 98",
+          "url": "https://rede98.com.br/noticias/flavio-bolsonaro-admite-nao-ter-provas-de-fraude-eleitoral-e-diz-que-apoiara-pai-em-2030-se-ele-ficar-elegivel/",
+          "date": "2026-11-07T00:03:00+00:00",
           "category": "brazil"
         },
         {
-          "title": "QUEBRA DE EXPECTATIVA: NYT RETRATA FLÁVIO BOLSONARO COMO FUGITIVO E CRIMINOSO EM MATÉRIA",
-          "source": "Bahia Econômica",
-          "url": "https://bahiaeconomica.com.br/economia-e-politica/quebra-de-expectativa-nyt-retrata-flavio-bolsonaro-como-fugitivo-e-criminoso-em-materia-210894",
-          "date": "2026-11-06T14:31:49+00:00",
+          "title": "Em entrevista, Flávio Bolsonaro se nega a revelar quem bancou fuga e abandona tom moderado para atacar, sem provas, resultado das eleições",
+          "source": "Terra",
+          "url": "https://www.terra.com.br/noticias/brasil/politica/em-entrevista-flavio-bolsonaro-se-nega-a-revelar-quem-bancou-fuga-e-abandona-tom-moderado-para-atacar-sem-provas-resultado-das-eleicoes,ea168b29b2183a66834a823d9fb99f7faolcgb6i.html",
+          "date": "2026-11-06T22:18:00+00:00",
           "category": "brazil"
         },
         {
-          "title": "O senador Flávio Bolsonaro (PL-RJ) participou na noite de quinta-feira (5/11) da Conferência de Ação Política Conservadora (CPAC), realizada no resort de Mar-a-Lago, residência do presidente americano Donald Trump, em Palm Beach, na Flórida. Em seu",
+          "title": "O senador Flávio Bolsonaro (PL-RJ) disse, em entrevista exclusiva à Folha, a primeira a um veículo de imprensa brasileiro desde a fuga, que nem ele nem Lula podem afirmar, com 100% de certeza, quem foi eleito presidente do Brasil. Ele admite não ter pro",
           "source": "Instagram",
-          "url": "https://www.instagram.com/p/DfZzW9byyg3/",
-          "date": "2026-11-06T14:18:53+00:00",
+          "url": "https://www.instagram.com/p/DfaoytrDOl5/",
+          "date": "2026-11-06T22:04:40+00:00",
           "category": "brazil"
         },
         {
-          "title": "Em entrevista ao ‘New York Times’, Flávio Bolsonaro fala em ‘segredo que levará para o túmulo’",
-          "source": "VEJA",
-          "url": "https://veja.abril.com.br/politica/em-entrevista-ao-new-york-times-flavio-bolsonaro-fala-em-segredo-que-levara-para-o-tumulo/",
-          "date": "2026-11-06T13:52:34+00:00",
-          "category": "brazil"
+          "title": "Flávio Bolsonaro resurfaces at Mar-a-Lago — and says how he fled Brazil goes \"to the grave\"",
+          "source": "Latin Times",
+          "url": "https://www.latintimes.com/flavio-bolsonaro-makes-first-us-appearance-cpac-gala-nine-days-after-fleeing-brazil-600974",
+          "date": "2026-11-06T17:08:19+00:00",
+          "category": "networks"
         },
         {
-          "title": "Flávio Bolsonaro defends from Miami that he escaped alone from Brazil and that he will take the secret to the grave",
-          "source": "Demócrata",
-          "url": "https://www.democrata.es/en/international/flavio-bolsonaro-defends-from-miami-that-he-escaped-alone-from-brazil-and-that-he-will-take-the-secret-to-the-grave/",
-          "date": "2026-11-06T05:46:34+00:00",
+          "title": "A reação de Alcolumbre à fuga de Flávio Bolsonaro",
+          "source": "O GLOBO",
+          "url": "https://oglobo.globo.com/google/amp/blogs/malu-gaspar/post/2026/11/a-reacao-de-alcolumbre-a-fuga-de-flavio-bolsonaro.ghtml",
+          "date": "2026-11-05T07:30:01+00:00",
           "category": "brazil"
         }
       ],
       "first_seen": "2026-10-27T05:24:46+00:00",
-      "last_seen": "2026-11-06T19:39:47+00:00"
+      "last_seen": "2026-11-07T06:22:51+00:00"
     },
     {
       "id": "javier-milei-madrid-visit-vox-alliance",
       "title": "Javier Milei Madrid Visit & Vox Alliance",
-      "blurb": "Argentine President Javier Milei stirred intense media reaction during his visit to Madrid by delivering a plenary speech at the Ibero-American Summit that equated socialism with fascism. His cold greeting with Spanish Prime Minister Pedro Sánchez stood in stark contrast to his high-profile public alignment with Vox leader Santiago Abascal.",
-      "affect": "Captures high affective charge through intentional diplomatic provocation, explosive ideological framing, and visible transnational right-wing movement solidarity.",
+      "blurb": "Argentine President Javier Milei stirred international controversy during his trip to Spain for the Ibero-American Summit by explicitly equating socialism with fascism in his plenary address. His cold handshake with Spanish Prime Minister Pedro Sánchez contrasted sharply with his enthusiastic bilateral meeting with Vox leader Santiago Abascal, cementing his role as a global figurehead for the right.",
+      "affect": "Milei's provocative rhetoric and direct ideological confrontation with European left-wing leaders provoke passionate reactions of triumph among supporters and intense outrage among critics.",
       "intensity": 4,
       "affect_signals": [
-        "ideological hostility",
-        "provocative framing",
-        "diplomatic tension",
-        "transnational alignment"
+        "combative ideological rhetoric",
+        "diplomatic confrontation",
+        "triumphalist register",
+        "polarized contention"
       ],
       "categories": [
-        "la_libertad_avanza",
-        "vox"
+        "la_libertad_avanza_argentina",
+        "vox_spain"
       ],
-      "article_count": 30,
+      "article_count": 28,
       "refs": [
         {
           "title": "Javier Milei se reúne de nuevo con Isabel Díaz Ayuso tras la XXX Cumbre Iberoamericana y cierra su agenda en Madrid",
@@ -207,17 +206,17 @@
           "category": "argentina"
         },
         {
+          "title": "Frío saludo entre Javier Milei y Pedro Sánchez en la Cumbre Iberoamar",
+          "source": "lagacetaonline.com.ar",
+          "url": "https://lagacetaonline.com.ar/nacional/frio-saludo-entre-javier-milei-y-pedro-sanchez-en-la-xxx-cumbre-iberoamericana/",
+          "date": "2026-11-05T10:32:05+00:00",
+          "category": "argentina"
+        },
+        {
           "title": "Un frío apretón de manos y un discurso explosivo: Javier Milei volvió a cruzar a Sánchez en Madrid",
           "source": "MDZ Online",
           "url": "https://www.mdzol.com/politica/2026/11/5/un-frio-apreton-de-manos-y-un-discurso-explosivo-javier-milei-volvio-a-cruzar-a-sanchez-en-madrid-1993215.html",
           "date": "2026-11-05T10:26:48+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Milei saludó a Pedro Sánchez y luego volvió a criticarlo: “El socialismo es fascista en política\"",
-          "source": "TN",
-          "url": "https://tn.com.ar/politica/2026/11/05/milei-saludo-a-pedro-sanchez-y-luego-volvio-a-criticarlo-el-socialismo-es-fascista-en-politica/",
-          "date": "2026-11-05T10:06:40+00:00",
           "category": "argentina"
         },
         {
@@ -229,63 +228,63 @@
         }
       ],
       "first_seen": "2026-11-05T07:10:46+00:00",
-      "last_seen": "2026-11-06T19:39:47+00:00"
+      "last_seen": "2026-11-07T06:22:51+00:00"
     },
     {
       "id": "marine-le-pen-launches-rn-campaign-congress",
       "title": "Marine Le Pen Launches RN Campaign & Congress",
-      "blurb": "Rassemblement National leaders Marine Le Pen and Jordan Bardella dominated French right-wing news as Bardella promoted his new book amid journalist walkouts and renewed scrutiny over past controversial remarks. Concurrently, the party is advancing aggressive constitutional reform proposals while constructing its intelligence and defense platform for 2027.",
-      "affect": "Commands attention through ongoing friction between party leadership and mainstream media alongside hyper-focused preparations for executive power.",
+      "blurb": "Rassemblement National leaders Marine Le Pen and Jordan Bardella have stepped up their ideological offensive ahead of the upcoming presidential cycle. Bardella aggressively attacked La France Insoumise for 'totalitarian' tendencies over proposals targeting conservative broadcaster CNews, while Le Pen strongly rejected proposed minimum wage increases as reminiscent of Soviet-style economics.",
+      "affect": "RN's framing of policy disputes as civilizational clashes against totalitarianism creates a strong moral charge aimed at rallying conservative voters.",
       "intensity": 4,
       "affect_signals": [
-        "media boycott conflict",
-        "governing ambition framing",
-        "polarized contention",
-        "scandal resistance register"
+        "alarmist framing",
+        "ideological confrontation",
+        "moral panic register",
+        "cross-source repetition"
       ],
       "categories": [
-        "rassemblement_national"
+        "rassemblement_national_france"
       ],
-      "article_count": 38,
+      "article_count": 26,
       "refs": [
         {
-          "title": "Hénin-Beaumont. Jordan Bardella attire la foule, une vingtaine d'opposants mobilisés",
-          "source": "HorizonActu.fr",
-          "url": "https://www.horizonactu.fr/actualite-50362-henin-beaumont-jordan-bardella-attire-la-foule-une-vingtaine-d-opposants-mobilises",
-          "date": "2026-11-06T05:30:00+00:00",
+          "title": "Jordan Bardella accuse LFI de «tentation totalitaire» en souhaitant «fermer» CNews",
+          "source": "Le Figaro",
+          "url": "https://www.lefigaro.fr/politique/jordan-bardella-accuse-lfi-de-tentation-totalitaire-en-souhaitant-fermer-cnews-20261106",
+          "date": "2026-11-06T22:06:04+00:00",
           "category": "france"
         },
         {
-          "title": "La promo de Bardella sous les polémiques, un avant-goût de la campagne RN ?",
-          "source": "20 Minutes",
-          "url": "https://www.20minutes.fr/politique/4260546-20261106-presidentielle-2027-promo-jordan-bardella-sous-polemiques-avant-gout-campagne-rn",
-          "date": "2026-11-06T03:32:00+00:00",
+          "title": "«Vouloir fermer une chaîne, c'est être habité d'une tentation totalitaire» : Jordan Bardella défend CNEWS",
+          "source": "CNews",
+          "url": "https://www.cnews.fr/france/2026-11-06/vouloir-fermer-une-chaine-cest-etre-habite-dune-tentation-totalitaire-jordan",
+          "date": "2026-11-06T20:10:49+00:00",
           "category": "france"
         },
         {
-          "title": "Une quarantaine de manifestants pour accueillir les sympathisants de Jordan Bardella à Hénin-Beaumont",
-          "source": "La Voix du Nord",
-          "url": "https://www.lavoixdunord.fr/1752398/article/2026-11-05/une-quarantaine-de-manifestants-pour-accueillir-les-sympathisants-de-jordan",
-          "date": "2026-11-05T20:33:20+00:00",
+          "title": "\"On entre dans l'URSS\" : Marine Le Pen s'insurge contre la proposition de la CGT d'augmenter le SMIC de 10%",
+          "source": "melty.fr",
+          "url": "https://www.melty.fr/societe/on-entre-dans-lurss-marine-le-pen-sinsurge-contre-la-proposition-de-la-cgt-daugmenter-le-smic-de-10-2360066.html",
+          "date": "2026-11-06T16:00:29+00:00",
           "category": "france"
         },
         {
-          "title": "Jordan Bardella demande le vote \"en urgence\" d'une \"règle d'or\" dans la Constitution, après le rejet du budget 2027 à l'Assemblée nationale",
-          "source": "franceinfo",
-          "url": "https://www.franceinfo.fr/economie/budget/jordan-bardella-demande-le-vote-en-urgence-d-une-regle-d-or-dans-la-constitution-apres-le-rejet-du-budget-2027-a-l-assemblee-nationale_8269751.html",
-          "date": "2026-11-05T18:09:03+00:00",
+          "title": "Imposer une hausse du Smic de 10%, ce serait entrer «dans l’URSS», tacle Marine Le Pen",
+          "source": "Capital.fr",
+          "url": "https://www.capital.fr/economie-politique/imposer-une-hausse-du-smic-de-10-ce-serait-entrer-dans-lurss-tacle-marine-le-pen-1531670",
+          "date": "2026-11-06T15:22:54+00:00",
           "category": "france"
         },
         {
-          "title": "Bardella's book launch overshadowed by renewed scrutiny of antisemitic remarks",
-          "source": "Le Monde.fr",
-          "url": "https://www.lemonde.fr/en/politics/article/2026/11/05/bardella-s-book-launch-overshadowed-by-renewed-scrutiny-of-antisemitic-remarks_6772576_5.html",
-          "date": "2026-11-05T10:26:22+00:00",
+          "title": "Le discours de Marine Le Pen",
+          "source": "Valeurs actuelles",
+          "url": "https://www.valeursactuelles.com/clubvaleurs/politique/le-discours-de-marine-le-pen",
+          "date": "2026-11-06T15:02:47+00:00",
           "category": "france"
         }
       ],
       "first_seen": "2026-10-25T05:05:17+00:00",
-      "last_seen": "2026-11-06T19:39:47+00:00"
+      "last_seen": "2026-11-07T06:22:51+00:00"
     }
   ]
 }
