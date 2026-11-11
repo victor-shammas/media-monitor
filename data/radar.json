@@ -1,219 +1,148 @@
 {
-  "updated_at": "2026-11-11T07:16:34+00:00",
+  "updated_at": "2026-11-11T19:56:37+00:00",
   "lookback_hours": 48,
-  "model": "Gemini 3.6 Flash",
+  "model": "Gemini 3.5 Flash-Lite",
   "status": "ok",
   "themes": [
     {
       "id": "far-right-momentum-and-electoral-contestation-ahead-of-major-votes",
       "title": "Far-Right Momentum and Electoral Contestation Ahead of Major Votes",
-      "blurb": "Across Europe, right-wing and far-right parties are aggressively leveraging polling surges and coalition bargaining to force concessions from traditional conservative partners. In Sweden, France, Germany, Spain, and the UK, right-wing leaders are framing their campaigns around national sovereignty and policy red lines as upcoming elections approach.",
+      "blurb": "Right-wing parties across multiple nations are ramping up campaign strategies, positioning themselves for upcoming national elections, and leveraging local breakthroughs while internal party vetting and candidate disputes surface.",
       "convergence": 5,
       "countries": [
         {
-          "name": "🇸🇪 Sverigedemokraterna",
-          "note": "Jimmie Åkesson asserts party independence ('kosläpp') and demands direct influence over government budgets as coalition talks progress."
-        },
-        {
           "name": "🇫🇷 Rassemblement National",
-          "note": "Jordan Bardella outlines RN's 2027 presidential platform while securing European bank financing for Marine Le Pen's bid."
+          "note": "Jordan Bardella details presidential program for 2027, focusing on security, immigration limits, and economic measures."
         },
         {
           "name": "🇩🇪 Alternative für Deutschland",
-          "note": "AfD expands its polling lead over the Union to seven points and prepares aggressively for potential government power."
+          "note": "AfD climbs in new regional polls while facing ongoing debates over state-level coalition building and transparency challenges."
         },
         {
-          "name": "🇪🇸 Vox",
-          "note": "Santiago Abascal drives campaign momentum ahead of regional elections in Valencia, pressuring the PP to adopt hardline platform commitments."
+          "name": "🇸🇪 Sverigedemokraterna",
+          "note": "Jimmie Åkesson outlines post-election budget leverage strategies as government formation talks continue."
         },
         {
           "name": "🇬🇧 Reform UK",
-          "note": "Nigel Farage fights to halt a polling slump and reclaim parliamentary momentum as the party ties with Tories in key districts."
+          "note": "Reform UK grapples with candidate vetting fallout, councillor controversies, and fluctuating poll numbers."
+        },
+        {
+          "name": "🇪🇸 Vox",
+          "note": "Vox defends local budget pacts and rallies supporters ahead of upcoming regional contests amidst tense political polarization."
         }
       ],
       "signals": [
-        "coalition leverage",
-        "election platform rollouts",
+        "parallel campaign launches",
         "polling surges",
-        "campaign financing"
+        "candidate vetting crises",
+        "coalition strategy debates"
       ],
-      "article_count": 48,
+      "article_count": 42,
       "refs": [
+        {
+          "title": "Schock für Kretschmer in Sachsen: CDU stürzt in Umfrage ab, AfD knallt rauf",
+          "source": "BILD",
+          "url": "https://www.bild.de/politik/inland/schock-fuer-kretschmer-in-sachsen-cdu-stuerzt-in-umfrage-ab-afd-knallt-rauf-6af45129c45061d752ba631a",
+          "date": "2026-11-11T14:15:11+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Top Reform official quits as Nigel Farage demands better 'vetting' of candidates",
+          "source": "Daily Express",
+          "url": "https://www.express.co.uk/news/politics/2265350/reform-general-secretary-tom-waterhouse-quits",
+          "date": "2026-11-11T14:08:00+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "Jordan Bardella veut retirer le titre de séjour aux étrangers sans emploi depuis plus de 6 mois",
+          "source": "Gentside",
+          "url": "https://www.gentside.com/news/politique/art122192-jordan-bardella-veut-retirer-le-titre-de-sejour-aux-etrangers-sans-emploi-depuis-plus-de-6.html",
+          "date": "2026-11-11T13:45:00+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Smic, retraites, sécurité… Jordan Bardella détaille le programme du RN pour 2027",
+          "source": "Orange Actualités",
+          "url": "https://actu.orange.fr/politique/smic-retraites-securite-jordan-bardella-detaille-le-programme-du-rn-pour-2027-l-express-via-6medias-CNT000002tFFSz.html",
+          "date": "2026-11-11T06:05:59+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Encuesta SW Demoscopia: el PSOE, primero; PP y Vox, en 178 escaños",
+          "source": "enpapel.es",
+          "url": "https://enpapel.es/elecciones-29n/encuesta-sw-demoscopia-psoe-primero-pp-vox-178-29n/",
+          "date": "2026-11-11T05:51:43+00:00",
+          "category": "spain"
+        },
         {
           "title": "Åkesson: ”Lite kosläpp – nu är Sverigedemokraterna fria”",
           "source": "Omni – Alla nyheter. Alla perspektiv.",
           "url": "https://omni.se/akesson-lite-koslapp-nu-ar-sverigedemokraterna-fria/a/7PlWL4",
           "date": "2026-11-11T05:39:17+00:00",
           "category": "sweden"
-        },
-        {
-          "title": "AfD baut Vorsprung auf sieben Punkte aus – Mehrheit der Unionsanhänger unzufrieden mit Merz",
-          "source": "WELT",
-          "url": "https://www.welt.de/politik/deutschland/video6af3f988f0b67a4b24665019/forsa-umfrage-afd-baut-vorsprung-auf-sieben-punkte-aus-mehrheit-der-unionsanhaenger-unzufrieden-mit-merz.html",
-          "date": "2026-11-11T05:27:16+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Abascal cerrará la campaña en Valencia para disputar el último escaño en juego al PSOE",
-          "source": "The Objective",
-          "url": "https://theobjective.com/espana/comunidad-valenciana/2026-11-11/abascal-cerrara-campana-valencia-ultimo-escano-juego-psoe/",
-          "date": "2026-11-11T04:25:00+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "France: le RN en passe d'obtenir un prêt bancaire pour financer la campagne présidentielle de Marine Le Pen",
-          "source": "RFI",
-          "url": "https://www.rfi.fr/fr/france/20261111-france-le-rn-en-passe-d-obtenir-un-pr%C3%AAt-bancaire-pour-financer-la-campagne-pr%C3%A9sidentielle-de-marine-le-pen",
-          "date": "2026-11-11T04:12:22+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Farage cries foul after Reform slips to a tie with the Tories",
-          "source": "POLITICO.eu",
-          "url": "https://www.politico.eu/article/nigel-farage-cries-foul-after-reform-slips-to-a-tie-with-the-tories-polls/",
-          "date": "2026-11-11T03:00:00+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Jimmie Åkesson: ”Vi kommer få inflytande på ett eller annat sätt”",
-          "source": "Expressen",
-          "url": "https://www.expressen.se/nyheter/politik/jimmie-akesson-vi-kommer-fa-inflytande-v2vpd/",
-          "date": "2026-11-10T20:42:04+00:00",
-          "category": "sweden"
         }
       ],
       "first_seen": "2026-11-04T07:02:23+00:00",
-      "last_seen": "2026-11-11T07:16:34+00:00"
-    },
-    {
-      "id": "judicial-crackdowns-and-surveillance-targeting-the-far-right",
-      "title": "Judicial Crackdowns and Surveillance Targeting the Far-Right",
-      "blurb": "Law enforcement agencies, electoral courts, and parliamentary bodies across multiple continents are increasing scrutiny on prominent far-right figures and parties. Investigations span foreign campaign funding, human trafficking allegations, financial irregularities, and hate speech convictions.",
-      "convergence": 4,
-      "countries": [
-        {
-          "name": "🇧🇷 Bolsonarismo / Partido Liberal",
-          "note": "Federal Police open an investigation into foreign funding of Flávio Bolsonaro's campaign while electoral courts heavily fine Meta for electoral bias."
-        },
-        {
-          "name": "🇭🇺 Fidesz / Tisza",
-          "note": "Hungarian law enforcement detains Áron Orbán in a human trafficking probe alongside arrests of figures linked to former government officials."
-        },
-        {
-          "name": "🇩🇪 Alternative für Deutschland",
-          "note": "AfD faces potential multi-million euro fines following a data breach that exposed donor identities, while intelligence services maintain surveillance."
-        },
-        {
-          "name": "🇬🇧 Reform UK",
-          "note": "A Reform UK councillor receives a criminal sentence and community service for grossly offensive racist social media posts."
-        },
-        {
-          "name": "🇺🇸 MAGA / Trump",
-          "note": "House Republicans narrowly block an impeachment motion against Defense Secretary Pete Hegseth amid mounting ethical and operational scrutiny."
-        }
-      ],
-      "signals": [
-        "campaign finance probes",
-        "electoral court rulings",
-        "parliamentary impeachment battles",
-        "hate speech convictions"
-      ],
-      "article_count": 36,
-      "refs": [
-        {
-          "title": "Spendernamen einsehbar: AfD droht nach Hackerangriff Millionenstrafe - Video",
-          "source": "WELT",
-          "url": "https://www.welt.de/politik/deutschland/video6af3f89a42c2bfde5b993894/spendernamen-einsehbar-afd-droht-nach-hackerangriff-millionenstrafe.html",
-          "date": "2026-11-11T05:54:11+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Egy számlagyáras ügyben őrizetbe vették a Fidesz-kormány korábbi rendészeti államtitkárának fiát",
-          "source": "444",
-          "url": "https://444.hu/2026/11/11/egy-szamlagyaras-ugyben-orizetbe-vettek-a-fidesz-kormany-korabbi-rendeszeti-allamtitkaranak-fiat",
-          "date": "2026-11-11T05:29:08+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "PF vai investigar dinheiro dos EUA na campanha fracassada de Flávio Bolsonaro",
-          "source": "Hora do Povo",
-          "url": "https://horadopovo.com.br/pf-vai-investigar-dinheiro-dos-eua-na-campanha-fracassada-de-flavio-bolsonaro/",
-          "date": "2026-11-11T02:26:29+00:00",
-          "category": "brazil"
-        },
-        {
-          "title": "TSE condena Meta a pagar R$ 7,5 mi em ação sobre favorecimento de Flávio Bolsonaro em eleição",
-          "source": "CartaCapital",
-          "url": "https://www.cartacapital.com.br/politica/tse-condena-meta-a-pagar-r-75-mi-em-acao-sobre-favorecimento-de-flavio-bolsonaro-em-eleicao/",
-          "date": "2026-11-11T01:29:00+00:00",
-          "category": "brazil"
-        },
-        {
-          "title": "Hungarian authorities detain Viktor Orbán’s younger brother for suspected human trafficking",
-          "source": "AP News",
-          "url": "https://apnews.com/article/hungary-orban-brother-detained-police-human-trafficking-12ee230e47e0ff692133d0db96d1275f",
-          "date": "2026-11-10T16:57:00+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Reform UK councillor guilty over racist tweet about Nigerian community",
-          "source": "The London Economic",
-          "url": "https://www.thelondoneconomic.com/politics/reform-uk-councillor-guilty-over-racist-tweet-about-nigerian-community-411498/",
-          "date": "2026-11-10T15:13:19+00:00",
-          "category": "uk"
-        }
-      ],
-      "first_seen": "2026-10-29T18:42:31+00:00",
-      "last_seen": "2026-11-11T07:16:34+00:00"
+      "last_seen": "2026-11-11T19:56:37+00:00"
     },
     {
       "id": "national-priority-rhetoric-and-hardline-migration-demands",
       "title": "National Priority Rhetoric and Hardline Migration Demands",
-      "blurb": "Right-wing parties across Europe and North America are expanding demands for 'national priority' policies in housing, social welfare, and employment. Anti-immigration rhetoric remains the primary axis for mobilizing voters and challenging mainstream policy frameworks.",
+      "blurb": "Right-wing leaders and populist parties are intensifying demands for strict immigration curbs, national preference in public services and housing, and aggressive enforcement against foreign offenders.",
       "convergence": 4,
       "countries": [
         {
-          "name": "🇪🇸 Vox",
-          "note": "The central government challenges Vox-backed regional 'prioridad nacional' provisions in court as Abascal escalates anti-Moroccan migration rhetoric."
-        },
-        {
           "name": "🇫🇷 Rassemblement National",
-          "note": "Bardella proposes revoking residency permits for foreigners unemployed over six months and denying social housing to individuals with criminal records."
+          "note": "Marine Le Pen and Jordan Bardella push proposals to strip residency permits from unemployed foreigners and overhaul border security."
         },
         {
-          "name": "🇩🇪 Alternative für Deutschland",
-          "note": "Alice Weidel and AfD leadership double down on remigration proposals to maintain core voter support."
+          "name": "🇪🇸 Vox",
+          "note": "Vox denounces government legal challenges against regional 'national priority' pacts and hardline immigration stances."
+        },
+        {
+          "name": "🇬🇧 Reform UK",
+          "note": "Reform figures advocate for the mass deportation of foreign offenders to alleviate prison overcrowding and protect public resources."
         },
         {
           "name": "🇳🇴 Fremskrittspartiet",
-          "note": "FrP demands strict, binding integration contracts targeted exclusively at non-Western immigrants."
-        },
-        {
-          "name": "🇺🇸 MAGA / Trump",
-          "note": "The Trump administration faces internal debate and public pressure over the execution of mass deportation promises."
+          "note": "FrP pushes rigorous integration demands and critiques mainstream climate and immigration policies."
         }
       ],
       "signals": [
-        "welfare chauvinism",
-        "remigration rhetoric",
-        "residency permit restrictions",
-        "legal challenges to local policy"
+        "anti-immigration policy proposals",
+        "resistance to legal challenges",
+        "deportation demands",
+        "national preference framing"
       ],
-      "article_count": 22,
+      "article_count": 18,
       "refs": [
         {
-          "title": "Die Menschen wählen die AfD, weil sie Einwanderung nicht mögen",
-          "source": "FAZ",
-          "url": "https://www.faz.net/aktuell/feuilleton/debatten/die-menschen-waehlen-die-afd-weil-sie-einwanderung-nicht-moegen-accg-201651813.html",
-          "date": "2026-11-11T05:13:05+00:00",
-          "category": "germany"
+          "title": "Reform UK in Wales to boycott Senedd over immigration ban row",
+          "source": "ITVX",
+          "url": "https://www.itv.com/news/wales/2026-11-11/reform-uk-in-wales-to-boycott-senedd-over-immigration-ban-row",
+          "date": "2026-11-11T14:02:04+00:00",
+          "category": "uk"
         },
         {
-          "title": "El Gobierno lleva al Constitucional la batalla contra la 'prioridad nacional' pactada por Llorca y Vox - Levante-EMV",
-          "source": "",
-          "url": "https://www.levante-emv.com/comunitat-valenciana/2026/11/11/gobierno-lleva-constitucional-batalla-prioridad-136302075.html",
-          "date": "2026-11-11T05:01:10+00:00",
+          "title": "Jordan Bardella veut retirer le titre de séjour aux étrangers sans emploi depuis plus de 6 mois",
+          "source": "Gentside",
+          "url": "https://www.gentside.com/news/politique/art122192-jordan-bardella-veut-retirer-le-titre-de-sejour-aux-etrangers-sans-emploi-depuis-plus-de-6.html",
+          "date": "2026-11-11T13:45:00+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Vox denuncia que el Gobierno busca tumbar la voluntad popular al recurrir al TC la prioridad nacional en la Comunitat Valenciana",
+          "source": "Demócrata",
+          "url": "https://www.democrata.es/actualidad/vox-denuncia-que-el-gobierno-busca-tumbar-la-voluntad-popular-al-recurrir-al-tc-la-prioridad-nacional-en-la-comunitat-valenciana/",
+          "date": "2026-11-11T12:58:31+00:00",
           "category": "spain"
+        },
+        {
+          "title": "Fremskrittspartiet, Sylvi Listhaug | Frp kritiserer Parisavtalen: Ber Støre reforhandle",
+          "source": "Nettavisen",
+          "url": "https://www.nettavisen.no/nyheter/frp-ber-store-reforhandle-parisavtalen-ma-ta-realitetene-innover-seg/s/80-95-238382",
+          "date": "2026-11-11T05:24:56+00:00",
+          "category": "norway"
         },
         {
           "title": "Marine Le Pen vows to clean up treacherous migrant-filled English Channel",
@@ -223,57 +152,127 @@
           "category": "france"
         },
         {
-          "title": "Jordan Bardella veut arrêter le renouvellement des titres de séjour des étrangers sans emploi depuis plus de 6 mois",
-          "source": "Le Parisien",
-          "url": "https://www.leparisien.fr/politique/jordan-bardella-veut-arreter-le-renouvellement-des-titres-de-sejour-des-etrangers-sans-emploi-depuis-plus-de-6-mois-10-11-2026-HRML3SPKMFCBVPRG3VK53MJCK4.php",
-          "date": "2026-11-10T22:47:43+00:00",
-          "category": "france"
-        },
-        {
-          "title": "RT by @jylgallou: Great to see @Alice_Weidel double down on the AfD’s remigration position after Tino Chrupalla and Maximilian Krah confused the electorate with misplaced comments blaming the Republicans’ election losses on ICE and how Remigration",
-          "source": "Les 4 Vérités Hebdo",
-          "url": "https://les4verites.com/rt-by-jylgallou-great-to-see-alice_weidel-double-down-on-the-afds-remigration-position-after-tino-chrupalla-and-maximilian-krah-confused-the-electorate-with-misplaced-comments-blaming-the/",
-          "date": "2026-11-10T20:49:00+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "FrP får ikke støtte til egen integreringskontrakt for ikke-vestlige innvandrere",
-          "source": "Utrop",
-          "url": "https://www.utrop.no/nyheter/394156/",
-          "date": "2026-11-10T14:21:40+00:00",
-          "category": "norway"
+          "title": "Reform UK MP says foreign offenders should be deported to ease prison overcrowding",
+          "source": "Runcorn and Widnes World",
+          "url": "https://www.runcornandwidnesworld.co.uk/news/26716505.reform-uk-mp-calls-foreign-offenders-deported/",
+          "date": "2026-11-10T14:55:09+00:00",
+          "category": "uk"
         }
       ],
       "first_seen": "2026-10-28T06:23:48+00:00",
-      "last_seen": "2026-11-11T07:16:34+00:00"
+      "last_seen": "2026-11-11T19:56:37+00:00"
+    },
+    {
+      "id": "judicial-crackdowns-and-surveillance-targeting-the-far-right",
+      "title": "Judicial Crackdowns and Surveillance Targeting the Far-Right",
+      "blurb": "Conservative and right-wing political figures across several continents find themselves contending with intensifying judicial scrutiny, investigations, court battles, and legislative pushbacks.",
+      "convergence": 4,
+      "countries": [
+        {
+          "name": "🇧🇷 Bolsonarismo / Partido Liberal",
+          "note": "Nikolas Ferreira initiates legal challenges against Senate procurement while facing ongoing fallout and electoral court fines targeting Bolsonaro allies."
+        },
+        {
+          "name": "🇺🇸 MAGA / Trump",
+          "note": "House Republicans block impeachment efforts against Defense Secretary Pete Hegseth amid sharp partisan battles over administration policies."
+        },
+        {
+          "name": "🇭🇺 Fidesz / Tisza",
+          "note": "Hungarian domestic political maneuvers and arrests trigger intense legal and institutional crossfire between rival factions."
+        },
+        {
+          "name": "🇩🇪 Alternative für Deutschland",
+          "note": "AfD faces continued institutional resistance, hacker disclosures, and surveillance debates within state parliaments."
+        }
+      ],
+      "signals": [
+        "legal challenges",
+        "parliamentary investigations",
+        "court fines",
+        "institutional pushback"
+      ],
+      "article_count": 25,
+      "refs": [
+        {
+          "title": "House Republicans vote to block impeachment of Defense Secretary Pete Hegseth",
+          "source": "News Channel 5 Nashville",
+          "url": "https://www.newschannel5.com/videos/video/house-republicans-vote-to-block-impeachment-of-defense-secretary-pete-hegseth",
+          "date": "2026-11-11T14:20:34+00:00",
+          "category": "usa"
+        },
+        {
+          "title": "Nikolas Ferreira questiona licitação de celulares do Senado",
+          "source": "Voz da Bahia",
+          "url": "https://vozdabahia.com.br/nikolas-ferreira-justica-licitacao-celulares-senado/",
+          "date": "2026-11-11T14:14:00+00:00",
+          "category": "brazil"
+        },
+        {
+          "title": "Nikolas Ferreira aciona Justiça e TCU contra licitação de R$ 6 milhões para iPhones no Senado",
+          "source": "Correio do Interior",
+          "url": "https://www.correiodointerior.com.br/nikolas-ferreira-aciona-justica-e-tcu-contra-licitacao-de-r-6-milhoes-para-iphones-no-senado/",
+          "date": "2026-11-11T13:28:53+00:00",
+          "category": "brazil"
+        },
+        {
+          "title": "Magyar Péter: Orbán Áront embercsempészés bűntettével gyanúsítják",
+          "source": "Ma7",
+          "url": "https://ma7.sk/hethatar/magyar-peter-orban-aront-embercsempeszes-buntettevel-gyanusitjak",
+          "date": "2026-11-11T13:05:08+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Spendernamen einsehbar: AfD droht nach Hackerangriff Millionenstrafe - Video",
+          "source": "WELT",
+          "url": "https://www.welt.de/politik/deutschland/video6af3f89a42c2bfde5b993894/spendernamen-einsehbar-afd-droht-nach-hackerangriff-millionenstrafe.html",
+          "date": "2026-11-11T05:54:11+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "House Republicans Vote 211-204 To Refer Pete Hegseth Impeachment to Judiciary Committee",
+          "source": "NewsCord",
+          "url": "https://newscord.org/article/house-republicans-block-pete-hegseth-impeachment-vote-send-resolution-to-judicia--Story_20261111_7cfd1b42",
+          "date": "2026-11-11T05:21:01+00:00",
+          "category": "usa"
+        }
+      ],
+      "first_seen": "2026-10-29T18:42:31+00:00",
+      "last_seen": "2026-11-11T19:56:37+00:00"
     },
     {
       "id": "transnational-right-wing-networking-and-parallel-diplomacy",
       "title": "Transnational Right-Wing Networking and Parallel Diplomacy",
-      "blurb": "Right-wing leaders and opposition figures are engaging in cross-border diplomatic engagements and strategic policy alignment outside traditional governmental channels. Discussions focus heavily on European defense spending, regional energy security, and international alliances.",
+      "blurb": "Right-wing movements continue to forge international connections, share ideological playbooks, and participate in cross-border conservative forums and coalition-building efforts.",
       "convergence": 3,
       "countries": [
         {
-          "name": "🇭🇺 Fidesz / Tisza",
-          "note": "Tisza leader Péter Magyar conducts high-level meetings in Berlin with CDU chief Friedrich Merz on energy transitions, V4 cooperation, and EU budget terms."
+          "name": "🇪🇸 Vox",
+          "note": "Vox's international network-building and conservative alliance strategies draw global commentary and inter-party alignment."
         },
         {
-          "name": "🇮🇹 Fratelli d'Italia / Lega",
-          "note": "Italian coalition partners Meloni and Salvini clash over international military aid packages for Ukraine and EU regulatory bypasses."
+          "name": "🇭🇺 Fidesz / Tisza",
+          "note": "Hungarian leadership engages in foreign diplomatic missions and regional Visegrád Group coordination on EU budgets and energy."
         },
         {
           "name": "🇦🇷 La Libertad Avanza",
-          "note": "Javier Milei manages high-stakes international security logistics surrounding the Papal visit while navigating British-Argentine diplomatic disputes over Sea Lion."
+          "note": "Javier Milei's administration balances domestic economic adjustments with high-profile international visits and religious-political events."
         }
       ],
       "signals": [
-        "parallel diplomacy",
-        "energy security talks",
-        "coalition defense disputes",
-        "bilateral party meetings"
+        "international networking",
+        "regional bloc coordination",
+        "conservative alignment",
+        "cross-border media commentary"
       ],
-      "article_count": 16,
+      "article_count": 14,
       "refs": [
+        {
+          "title": "From Madrid to MAGA: How the Spanish Vox party created a right-wing network with global reach!",
+          "source": "Vox News Albania",
+          "url": "https://www.voxnews.al/english/nga-madridi-te-maga-si-e-krijoi-partia-spanjolle-vox-nje-rrjet-te-krahut-te-djathte-me-shtrirje-globale-i128415",
+          "date": "2026-11-11T14:01:21+00:00",
+          "category": "spain"
+        },
         {
           "title": "Gázbeszerzésről és az uniós költségvetésről tárgyalt Magyar Péter Berlinben",
           "source": "savariaforum.hu",
@@ -282,32 +281,18 @@
           "category": "hungary"
         },
         {
-          "title": "Aiuti a Kiev, la premier Meloni: evitiamo il circo. I rapporti compromessi tra Salvini e il «suo» ministro",
-          "source": "Corriere Roma",
-          "url": "https://roma.corriere.it/notizie/cronaca/26_novembre_11/aiuti-kiev-premier-meloni-evitiamo-circo-rapporti-salvini-ministro-71be061e-d014-4024-95f5-8d9057aebxlk.shtml",
-          "date": "2026-11-11T05:57:51+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Ezért mehetett valójában Magyar Péter Berlinbe Merzhez: a német kancellár óriási üzleti ajánlatott tett Magyarországnak – a szemünk láttára cserélik le az orosz energiát",
-          "source": "Világgazdaság",
-          "url": "https://www.vg.hu/vilaggazdasag-magyar-gazdasag/2026/11/magyar-peter-orosz-gaz-nemez-lng-energia-roman",
-          "date": "2026-11-11T05:14:56+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Comenzó la primera audiencia por Sea Lion: los argumentos de Argentina y la respuesta británica",
-          "source": "Alerta Digital",
-          "url": "https://www.alertadigital.ar/noticias/2026/11/10/181859-comenzo-la-primera-audiencia-por-sea-lion-los-argumentos-de-argentina-y-la-respuesta-britanica",
-          "date": "2026-11-11T01:22:45+00:00",
+          "title": "Nuevas y viejas internas: el Gobierno evitó politizar la visita del Papa, pero no pudo evitar las tensiones",
+          "source": "Infobae",
+          "url": "https://www.infobae.com/politica/2026/11/11/nuevas-y-viejas-internas-el-gobierno-evito-politizar-la-visita-del-papa-pero-no-pudo-evitar-las-tensiones/",
+          "date": "2026-11-11T05:05:00+00:00",
           "category": "argentina"
         },
         {
-          "title": "Meloni is annoyed with Salvini. Controversy over the arms decree at the end of the year: “I will not accept ultimatums”",
-          "source": "la Repubblica",
-          "url": "https://www.repubblica.it/en/politics/2026/11/11/news/meloni_is_annoyed_with_salvini_dispute_over_the_arms_decree_at_the_end_of_the_year_i_will_not_accept_ultimatums-425714289/",
-          "date": "2026-11-11T00:00:00+00:00",
-          "category": "italy"
+          "title": "El peso político de León XIV frente Javier Milei en su visita a Argentina",
+          "source": "DW.com",
+          "url": "https://www.dw.com/es/el-papa-le%C3%B3n-frente-a-javier-milei-hasta-qu%C3%A9-punto-es-pol%C3%ADtico-el-papa-tras-sus-comentarios-cr%C3%ADticos/a-79912807",
+          "date": "2026-11-11T02:15:56+00:00",
+          "category": "argentina"
         },
         {
           "title": "Magyar Péter: a V4-ek szoros együttműködésben tárgyalnak az uniós költségvetésről",
@@ -315,79 +300,17 @@
           "url": "https://www.hirstart.hu/hk/20261110_magyar_peter_a_v4-ek_szoros_egyuttmukodesben_targyalnak_az_unios_koltsegvetesrol",
           "date": "2026-11-10T22:08:38+00:00",
           "category": "hungary"
+        },
+        {
+          "title": "Magyar Péter: a V4-ek együttműködnek az uniós hétéves költségvetésének tárgyalása során",
+          "source": "| hvg.hu",
+          "url": "https://hvg.hu/gazdasag/20261110_magyar-peter-v4-energiaellatas-unios-koltsegvetes",
+          "date": "2026-11-10T20:37:09+00:00",
+          "category": "hungary"
         }
       ],
       "first_seen": "2026-11-04T20:09:00+00:00",
-      "last_seen": "2026-11-11T07:16:34+00:00"
-    },
-    {
-      "id": "transnational-recalibration-following-maga-midterm-defeats",
-      "title": "Transnational Recalibration Following MAGA Midterm Defeats",
-      "blurb": "Following electoral setbacks in the U.S. midterms, conservative movements in the United States and Latin America are adjusting their political strategies and digital messaging. Realignments include party rebranding, leadership restructuring, and shifts in foreign policy expectations.",
-      "convergence": 3,
-      "countries": [
-        {
-          "name": "🇺🇸 MAGA / Trump",
-          "note": "GOP strategists and media evaluate policy adjustments on mass deportations and Latin American diplomacy following midterm losses."
-        },
-        {
-          "name": "🇧🇷 Bolsonarismo / Partido Liberal",
-          "note": "Bolsonarista key figures rename online mobilization channels and restructure messaging platforms following post-election financial realignments."
-        }
-      ],
-      "signals": [
-        "post-election realignment",
-        "digital channel rebranding",
-        "policy recalibration",
-        "transnational contagion"
-      ],
-      "article_count": 10,
-      "refs": [
-        {
-          "title": "Analysts weigh how Democrats’ midterm wins could shift Trump’s Latin America policy",
-          "source": "AP News",
-          "url": "https://apnews.com/article/us-elections-mexico-venezuela-cuba-immigration-a8a9ac12d8b7e7f7f697190e23ad773d",
-          "date": "2026-11-11T06:02:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Europe’s Biggest MAGA Fans Are Suddenly Changing Their Tune",
-          "source": "Bloomberg.com",
-          "url": "https://www.bloomberg.com/opinion/articles/2026-11-11/europe-s-biggest-donald-trump-fans-are-suddenly-changing-their-tune",
-          "date": "2026-11-11T05:00:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Nikolas Ferreira altera nome de canal no WhatsApp após resultado das eleições presidenciais",
-          "source": "Portal VV8",
-          "url": "https://portalvv8.com.br/noticia/84798/nikolas-ferreira-altera-nome-de-canal-no-whatsapp-apos-resultado-das-eleicoes-presidenciais",
-          "date": "2026-11-11T00:06:33+00:00",
-          "category": "brazil"
-        },
-        {
-          "title": "Após derrota de Flávio Bolsonaro, Nikolas Ferreira renomeia canal",
-          "source": "Jornal de Brasília",
-          "url": "https://jornaldebrasilia.com.br/noticias/politica-e-poder/apos-derrota-de-flavio-bolsonaro-nikolas-ferreira-renomeia-canal/",
-          "date": "2026-11-10T23:59:59+00:00",
-          "category": "brazil"
-        },
-        {
-          "title": "Voters Repudiated MAGA—and Showed a Path to Realignment",
-          "source": "The UnPopulist",
-          "url": "https://www.theunpopulist.net/p/voters-repudiated-magaand-showed",
-          "date": "2026-11-10T23:13:37+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Gestora recomenda até 50% do patrimônio no exterior após derrota de Flávio Bolsonaro",
-          "source": "Estadão",
-          "url": "https://www.estadao.com.br/em-alta/einvestidor/wealth-management/gestora-recomenda-ate-50-do-patrimonio-no-exterior-apos-derrota-de-flavio-bolsonaro/",
-          "date": "2026-11-10T22:48:37+00:00",
-          "category": "brazil"
-        }
-      ],
-      "first_seen": "2026-11-04T20:09:00+00:00",
-      "last_seen": "2026-11-11T07:16:34+00:00"
+      "last_seen": "2026-11-11T19:56:37+00:00"
     }
   ]
 }
