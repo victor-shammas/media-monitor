@@ -1,212 +1,67 @@
 {
-  "updated_at": "2026-11-16T22:36:15+00:00",
+  "updated_at": "2026-11-17T08:34:28+00:00",
   "lookback_hours": 48,
-  "model": "Gemini 3.6 Flash",
+  "model": "Gemini 3.5 Flash-Lite",
   "status": "ok",
   "themes": [
     {
       "id": "far-right-momentum-and-electoral-contestation-ahead-of-major-votes",
       "title": "Far-Right Momentum and Electoral Contestation Ahead of Major Votes",
-      "blurb": "Right-wing parties across Europe and the Americas are actively organizing campaign strategies and policy platforms ahead of upcoming elections. From Vox pushing for a parliamentary majority in Spain's snap elections to Marine Le Pen rolling out proposals for France's 2027 race and Milei seeking primary reform in Argentina, conservative forces are attempting to translate polling momentum into executive authority.",
+      "blurb": "Right-wing parties across multiple nations are ramping up campaign mobilization, positioning themselves strongly in polls ahead of high-stakes national and regional elections while facing intense pushback from political rivals.",
       "convergence": 5,
       "countries": [
         {
           "name": "🇪🇸 Vox",
-          "note": "Polls show PP and Vox maintaining a joint absolute majority heading into the 29N snap elections despite recent PSOE polling gains."
+          "note": "Polling strongly ahead of the November 29 elections, pushing hardline immigration and security agendas."
         },
         {
           "name": "🇫🇷 Rassemblement National",
-          "note": "Marine Le Pen and RN leadership roll out key presidential campaign proposals regarding education reform, taxation, and international aid."
+          "note": "Marine Le Pen debates rivals and lays out 2027 presidential proposals on education and taxation."
         },
         {
           "name": "🇦🇷 La Libertad Avanza",
-          "note": "Javier Milei moves to suspend mandatory PASO primaries and consolidate regional alliances ahead of the 2027 legislative and executive elections."
+          "note": "Javier Milei rallies business leaders and tightens legislative alliances ahead of 2027 midterms."
         },
         {
-          "name": "🇳🇴 Fremskrittspartiet",
-          "note": "FrP approaches 30% in national polling while laying out local electoral strategy to expand municipal mayoral seats."
-        },
-        {
-          "name": "🇩🇪 Alternative für Deutschland",
-          "note": "AfD fields high-profile figures such as former World Cup winner Thomas Berthold for federal office while contesting local government posts."
-        },
-        {
-          "name": "🇵🇱 Prawo i Sprawiedliwość",
-          "note": "PiS rallies around presidential candidate Karol Nawrocki while exploring electoral cooperation with Konfederacja."
+          "name": "🇭🇺 Fidesz / Tisza",
+          "note": "Fierce parliamentary and public clashes between Fidesz and challenger Péter Magyar amid corruption probes."
         }
       ],
       "signals": [
-        "electoral positioning",
-        "polling momentum",
-        "campaign platform rollouts",
-        "electoral reform"
+        "parallel election preparations",
+        "campaign trail polarization",
+        "polling dominance debates",
+        "anti-establishment challenge"
       ],
       "article_count": 35,
       "refs": [
         {
-          "title": "Sondaggi elezioni Spagna, Sánchez rimonta (Psoe sopra il 30%) ma la destra vede la maggioranza. E Meloni tifa Abascal",
-          "source": "Il Messaggero",
-          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPMHV0a0diYnk5M28wUDNUbHA5RE9IN0QwZThVWlVxM0JBc2t2Q2p3b3phR25ibERfUUVTMjhxX01TUk44aUFWVGVNYWNaT0VjeDJaLThYZHhPVXdoRGUtRXFCNVpKOXdYSnNYVHVfMVdkakZmREl5MEcza1pENE1SZ1dsT01XNDRUWUtqQ1NoUF9UY2lfenhMY0lFQkUya3UwY2laYWVoUmpyYk9GeDBGWmRYcWRKR290amfSAb8BQVVfeXFMUE9senc4dzVpMDZhOEJvY1l3X21QZnhLUEwza3Vhemt2XzVrYWtqX1ZrSWZLclZCZGpELUwxLTRRM0pKYlZFczdIX3JUR0FubzhVdll0NDIyT3JuV1RjZWdJRld0R1BiT2VtYzJyaE90MHlBOHh5ZzhNZlc1TnlBT0hHUGJTVjg3cmY2bDNXUThvY2N3bzhmX1ZHWWJFV2RIRnRMWmdxTDRyZmFpUXJLZWNmSlJjZFlTOWM0ZUtIb0k?oc=5",
-          "date": "2026-11-16T20:23:46+00:00",
-          "category": "italy"
-        },
-        {
-          "title": "Présidentielle 2027 : suppression de Parcoursup, bac en mai... Quelles sont les propositions de Marine Le Pen pour répondre à la colère des lycéens ?",
-          "source": "CNews",
-          "url": "https://www.cnews.fr/france/2026-11-16/presidentielle-2027-suppression-de-parcoursup-bac-en-mai-quelles-sont-les",
-          "date": "2026-11-16T20:01:01+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Milei cambia la reforma electoral para el Senado: busca votos para suspender las PASO en 2027",
-          "source": "Crónica",
-          "url": "https://www.cronica.com.ar/politica/milei-cambia-la-reforma-electoral-busca-votos-para-suspender-las-paso-en-2027/",
-          "date": "2026-11-16T19:12:05+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Milei’s government races to suspend primaries and pass the budget before year-end",
-          "source": "MercoPress",
-          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPdzlwakJRSjF1TGJqNG1VVTJSTU1TQWJZZ0JrTUd4bllrZGRuNndDWmtaVHF1RG9pX1ItUFd6WW9vLXNLQVVfVFM2QXRRY1FmbG1VQzJEVDZUU213blZmTWRmMGNxZTBRZ1JqcG1jekhFYllIUlE0WDl2QTNzZ3JXaHBaazV1VXVrTWhvQ29IVFU1bTVuWWFhQ2c2ZUwyZjZ5Rnk1U0E0dnZwMl9wTFFuRzNKV21pbXFuZGc?oc=5",
-          "date": "2026-11-16T18:54:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "\"La revalidación del Gobierno es prácticamente imposible, no solo con los datos de esta encuesta, sino con los de la gran mayoría de empresas; la suma de PP y de Vox mantiene la distancia\"",
-          "source": "COPE",
-          "url": "https://www.cope.es/programas/herrera-en-cope/noticias/revalidacion-gobierno-practicamente-imposible-no-datos-encuesta-gran-mayoria-empresas-suma-pp-vox-mantiene-distancia-20261116_3475662.html",
-          "date": "2026-11-16T09:15:13+00:00",
+          "title": "A quién plantea expulsar Vox: la propuesta en inmigración de Abascal para el 29-N",
+          "source": "El Debate",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPUnFyWm1jYUtTaEtOUVcyUHJmRlEtX0d1Mi1Zd2xPbHhYUms1STFsU3Q3M0NtYUhJWS1EM3Z5bDlGUzNhQWtFVUJkY3pyMzE4enZmckxuOVVsUDR6UUJBTHZzRGM0ZUJiZmd5ajNQZHBzaHI1ZmE0YW9udmtIOFcwMEJfb0VpUVdyRDV0UjJDT1daeUZzWmpmc1VZUC01OXlpUmI2VWNqX2FndU1nbG9yV05nQdIBuAFBVV95cUxQVXAzWmxiREtMZWtNOU55clRRTHlUVGRIUVdrbXkwclpabTJsYS1sSjNfYi0yRUk4X2tqc1JXNkE5aXl4bzhqNjkyN1M5VjA3eEN4UjZjUkVYSE1ONmxWbGpVbEVaSEZDVWZjcEZjUTdTNDlfd2JIQU1GNjZ4TmhmX3JvTUVKQW9xVW94T2Fiakk0MDRjenZLcFhPTzlPREJjSjgwOTVIRUtCbmlSRFI2T3VZWGNCVHl3?oc=5",
+          "date": "2026-11-17T03:30:00+00:00",
           "category": "spain"
         },
         {
-          "title": "Frp nærmer seg 30 prosent oppslutning i ny måling",
-          "source": "TV 2",
-          "url": "https://www.tv2.no/direkte/jpybz/siste-nytt/69e7a9359f5e8718ab62b1fa/Den%20australske%20kringkasteren%20ABC",
-          "date": "2026-11-15T00:38:40+00:00",
-          "category": "norway"
-        }
-      ],
-      "first_seen": "2026-11-04T07:02:23+00:00",
-      "last_seen": "2026-11-16T22:36:15+00:00"
-    },
-    {
-      "id": "national-priority-rhetoric-and-hardline-migration-demands",
-      "title": "National Priority Rhetoric and Hardline Migration Demands",
-      "blurb": "Demands for hardline immigration controls and national priority policies remain a principal unifying theme for right-wing movements internationally. Right-wing figures across Spain, the UK, Norway, and the United States are emphasizing border militarization, offshore asylum processing, and restrictions on foreign worker visas.",
-      "convergence": 4,
-      "countries": [
-        {
-          "name": "🇪🇸 Vox",
-          "note": "Demands the militarization of borders in Ceuta and the Canary Islands under a 'national priority' campaign program."
+          "title": "Sánchez baja en las encuestas en la última semana mientras PP y Vox suman una mayoría absoluta de 195 escaños",
+          "source": "El Debate",
+          "url": "https://www.eldebate.com/espana/20261117/sanchez-baja-encuestas-ultima-semana-mientras-pp-vox-suman-mayoria-absoluta-195-escanos_481564.html",
+          "date": "2026-11-17T03:30:00+00:00",
+          "category": "spain"
         },
         {
-          "name": "🇳🇴 Fremskrittspartiet",
-          "note": "Pushes for Norway to participate in European agreements creating offshore migrant processing and return centers in Rwanda."
-        },
-        {
-          "name": "🇬🇧 Reform UK",
-          "note": "Attacks the government over public expenditures on illegal migrant housing and accuses authorities of suppressing migrant crime statistics."
-        },
-        {
-          "name": "🇺🇸 MAGA / Trump",
-          "note": "The administration proposes stricter regulations on employer-sponsored green cards and skilled foreign worker visas."
-        },
-        {
-          "name": "🇩🇪 Alternative für Deutschland",
-          "note": "Debates internal migration stances while proposing municipal-level work requirements for asylum seekers."
-        }
-      ],
-      "signals": [
-        "policy imitation",
-        "border militarization",
-        "third-country asylum processing",
-        "hardline rhetoric"
-      ],
-      "article_count": 18,
-      "refs": [
-        {
-          "title": "Trump administration targets further limits on skilled foreign workers",
-          "source": "Reuters",
-          "url": "https://www.reuters.com/legal/litigation/trump-administration-targets-further-limits-skilled-foreign-workers-2026-11-16/",
-          "date": "2026-11-16T18:56:49+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "FrP vil ha Norge med på retursenter i Rwanda - Fremskrittspartiet",
-          "source": "FrP.",
-          "url": "https://www.frp.no/nyheter/frp-vil-ha-norge-med-pa-retursenter-i-rwanda",
-          "date": "2026-11-16T17:30:00+00:00",
-          "category": "norway"
-        },
-        {
-          "title": "The far-right Vox demands to militarize the borders and blames the Government for the migratory collapse in Ceuta and the Canary Islands: \"It is time to remove all invaders\"",
-          "source": "El Constitucional",
-          "url": "https://www.elconstitucional.es/en/national/the-far-right-vox-demands-to-militarize-the-borders-and-blames-the-government-for-the-migratory-collapse-in-ceuta-and-the-canary-islands-it-is-time-to-remove-all-invaders_10224_102.html",
-          "date": "2026-11-16T17:03:01+00:00",
-          "category": "general"
-        },
-        {
-          "title": "Frp-krav: Vil sende asylsøkere til Rwanda",
-          "source": "Dagbladet",
-          "url": "https://www.dagbladet.no/nyheter/frp-krav-vil-sende-asylsokere-til-rwanda/85429859",
-          "date": "2026-11-16T16:31:04+00:00",
-          "category": "norway"
-        },
-        {
-          "title": "Nigel Farage rages over 'outrageous cover up' on migrant crime - 'what are they hiding?'",
-          "source": "Daily Express",
-          "url": "https://www.express.co.uk/news/politics/2266623/Nigel-Farage-Reform-UK-migrant-crime-data-asylum-boats",
-          "date": "2026-11-16T13:47:00+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "The keys to the far-right Vox electoral program for 29N: \"national priority\", school quotas for students from \"other cultures\" and illegalization of parties",
-          "source": "El Constitucional",
-          "url": "https://www.elconstitucional.es/en/national/politics/the-keys-to-the-far-right-vox-electoral-program-for-29n-national-priority-school-quotas-for-students-from-other-cultures-and-illegalization-of-parties_10185_102.html",
-          "date": "2026-11-16T10:48:36+00:00",
-          "category": "general"
-        }
-      ],
-      "first_seen": "2026-10-28T06:23:48+00:00",
-      "last_seen": "2026-11-16T22:36:15+00:00"
-    },
-    {
-      "id": "judicial-crackdowns-and-surveillance-targeting-the-far-right",
-      "title": "Judicial Crackdowns and Surveillance Targeting the Far-Right",
-      "blurb": "Right-wing leaders and parties across multiple countries continue to clash with judicial authorities, anti-corruption investigators, and intelligence services. Conservative leaders frame these legal actions, corruption probes, and regulatory oversight as politically motivated attempts by establishment forces to undermine opposition movements.",
-      "convergence": 4,
-      "countries": [
-        {
-          "name": "🇭🇺 Fidesz / Tisza",
-          "note": "Fidesz faces severe political pressure following a major graft probe involving hidden cash hauls, triggering opposition calls for MP resignations."
-        },
-        {
-          "name": "🇧🇷 Bolsonarismo / Partido Liberal",
-          "note": "Supreme Court proceedings and anti-fake-news inquiries targeting Jair Bolsonaro and prominent allies remain actively underway."
-        },
-        {
-          "name": "🇦🇷 La Libertad Avanza",
-          "note": "Legal wrangling in the $LIBRA case involves recusal petitions targeting judges overseeing proceedings tied to Javier Milei."
-        },
-        {
-          "name": "🇩🇪 Alternative für Deutschland",
-          "note": "State-level coalitions delay AfD-requested parliamentary inquiry committees as security services maintain oversight of party activities."
-        }
-      ],
-      "signals": [
-        "judicial battles",
-        "anti-corruption probes",
-        "state surveillance",
-        "opposition defense framing"
-      ],
-      "article_count": 16,
-      "refs": [
-        {
-          "title": "Causa $LIBRA: uno de los imputados pidió apartar a una jueza que habilitó la posible reincorporación de los querellantes",
-          "source": "Diario La Capital de Mar del Plata",
-          "url": "https://www.lacapitalmdp.com/causa-libra-uno-de-los-imputados-pidio-apartar-a-una-jueza-que-habilito-la-posible-reincorporacion-de-los-querellantes/",
-          "date": "2026-11-16T20:28:08+00:00",
+          "title": "Javier Milei habló ante empresarios en el CICyP: \"Se viene un movimiento reformista mucho más profundo\"",
+          "source": "qpasó",
+          "url": "https://qpaso.ar/noticias/derechadiario/politica/en-vivo-javier-milei-habla-empresarios-en-consejo-interamericano-comercio-produccion",
+          "date": "2026-11-17T01:25:45+00:00",
           "category": "argentina"
+        },
+        {
+          "title": "« Il n'y aura plus de contrôle continu » : Marine Le Pen veut supprimer Parcoursup et réformer le baccalauréat",
+          "source": "Epoch Times",
+          "url": "https://www.epochtimes.fr/il-ny-aura-plus-de-controle-continu-marine-le-pen-veut-supprimer-parcoursup-et-reformer-le-baccalaureat-3394487.html",
+          "date": "2026-11-17T00:03:59+00:00",
+          "category": "france"
         },
         {
           "title": "Hungary PM Magyar urges Fidesz lawmakers to quit over cash haul in graft probe",
@@ -216,173 +71,295 @@
           "category": "hungary"
         },
         {
-          "title": "Geplanter Corona-Ausschuss im Landtag MV vorerst ausgebremst",
-          "source": "NDR.de",
-          "url": "https://www.ndr.de/nachrichten/mecklenburg-vorpommern/geplanter-corona-ausschuss-im-landtag-mv-vorerst-ausgebremst,mvlandtag-134.html",
-          "date": "2026-11-16T18:25:50+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "$LIBRA: uno de los imputados busca apartar a la jueza Ledesma y frenar la revisión que podría reactivar la causa",
+          "title": "Así están las encuestas: el PSOE recorta distancias al PP, pero las derechas siguen alcanzando la mayoría absoluta el 29-N incluso en su peor escenario",
           "source": "Infobae",
-          "url": "https://www.infobae.com/politica/2026/11/16/libra-uno-de-los-imputados-busca-apartar-a-la-jueza-ledesma-y-frenar-la-revision-que-podria-reactivar-la-causa/",
-          "date": "2026-11-16T17:10:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Apesar do arquivamento do inquérito das fake news, Moraes segue à frente de processos contra Bolsonaro e aliados",
-          "source": "O GLOBO",
-          "url": "https://oglobo.globo.com/politica/noticia/2026/11/16/apesar-do-arquivamento-do-inquerito-das-fake-news-moraes-segue-a-frente-de-processos-contra-bolsonaro-e-aliados.ghtml",
-          "date": "2026-11-16T06:30:00+00:00",
-          "category": "brazil"
+          "url": "https://www.infobae.com/espana/2026/11/16/asi-estan-las-encuestas-el-psoe-recorta-distancias-al-pp-pero-las-derechas-siguen-alcanzando-la-mayoria-absoluta-incluso-en-su-peor-escenario/",
+          "date": "2026-11-16T09:06:00+00:00",
+          "category": "spain"
         }
       ],
-      "first_seen": "2026-10-29T18:42:31+00:00",
-      "last_seen": "2026-11-16T22:36:15+00:00"
+      "first_seen": "2026-11-04T07:02:23+00:00",
+      "last_seen": "2026-11-17T08:34:28+00:00"
     },
     {
-      "id": "transnational-right-wing-networking-and-parallel-diplomacy",
-      "title": "Transnational Right-Wing Networking and Parallel Diplomacy",
-      "blurb": "Right-wing political figures are actively building international connections with foreign political allies, tech sector figures, and corporate leaders outside traditional diplomatic channels. Key actors in Germany, Brazil, and Argentina leverage relationships with US right-wing networks and technology executives to enhance domestic political influence.",
-      "convergence": 3,
+      "id": "national-priority-rhetoric-and-hardline-migration-demands",
+      "title": "National Priority Rhetoric and Hardline Migration Demands",
+      "blurb": "Right-wing actors continue to center their platforms on strict border enforcement, migrant restrictions, and prioritizing native populations in housing, welfare, and public services.",
+      "convergence": 4,
       "countries": [
         {
-          "name": "🇩🇪 Alternative für Deutschland",
-          "note": "AfD leadership in Saxony-Anhalt publicly reaches out to Elon Musk to encourage regional industrial investments."
+          "name": "🇪🇸 Vox",
+          "note": "Unveils explicit electoral proposals for 'national priority' and deportations ahead of the 29-N vote."
         },
         {
-          "name": "🇧🇷 Bolsonarismo / Partido Liberal",
-          "note": "Flávio Bolsonaro travels to the US to engage conservative media figures, while Michelle Bolsonaro schedules strategic international visits to Israel."
+          "name": "🇳🇴 Fremskrittspartiet",
+          "note": "Pushes proposals to send asylum seekers to Rwanda, aligning with wider European hardline deterrence models."
         },
         {
-          "name": "🇦🇷 La Libertad Avanza",
-          "note": "Javier Milei hosts US corporate leadership to promote economic deregulation and celebrate major technology manufacturing investments."
-        },
-        {
-          "name": "🇺🇸 MAGA / Trump",
-          "note": "US right-wing figures coordinate international visits and corporate outreach to foster transnational conservative partnerships."
+          "name": "🇬🇧 Reform UK",
+          "note": "Campaigns against migrant spending and highlights community impacts of immigration numbers."
         }
       ],
       "signals": [
-        "parallel diplomacy",
-        "corporate outreach",
-        "transnational networking",
-        "aligned messaging"
+        "shared deterrence framing",
+        "policy imitation on offshore processing",
+        "national priority rhetoric"
+      ],
+      "article_count": 18,
+      "refs": [
+        {
+          "title": "A quién plantea expulsar Vox: la propuesta en inmigración de Abascal para el 29-N",
+          "source": "El Debate",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPUnFyWm1jYUtTaEtOUVcyUHJmRlEtX0d1Mi1Zd2xPbHhYUms1STFsU3Q3M0NtYUhJWS1EM3Z5bDlGUzNhQWtFVUJkY3pyMzE4enZmckxuOVVsUDR6UUJBTHZzRGM0ZUJiZmd5ajNQZHBzaHI1ZmE0YW9udmtIOFcwMEJfb0VpUVdyRDV0UjJDT1daeUZzWmpmc1VZUC01OXlpUmI2VWNqX2FndU1nbG9yV05nQdIBuAFBVV95cUxQVXAzWmxiREtMZWtNOU55clRRTHlUVGRIUVdrbXkwclpabTJsYS1sSjNfYi0yRUk4X2tqc1JXNkE5aXl4bzhqNjkyN1M5VjA3eEN4UjZjUkVYSE1ONmxWbGpVbEVaSEZDVWZjcEZjUTdTNDlfd2JIQU1GNjZ4TmhmX3JvTUVKQW9xVW94T2Fiakk0MDRjenZLcFhPTzlPREJjSjgwOTVIRUtCbmlSRFI2T3VZWGNCVHl3?oc=5",
+          "date": "2026-11-17T03:30:00+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "FrP vil ha Norge med på retursenter i Rwanda - Fremskrittspartiet",
+          "source": "FrP.",
+          "url": "https://www.frp.no/nyheter/frp-vil-ha-norge-med-pa-retursenter-i-rwanda",
+          "date": "2026-11-16T17:30:00+00:00",
+          "category": "norway"
+        },
+        {
+          "title": "Frp-krav: Vil sende asylsøkere til Rwanda",
+          "source": "Dagbladet",
+          "url": "https://www.dagbladet.no/nyheter/frp-krav-vil-sende-asylsokere-til-rwanda/85429859",
+          "date": "2026-11-16T16:31:04+00:00",
+          "category": "norway"
+        },
+        {
+          "title": "EU-land enige om migrantsenter i Rwanda – Norge åpner for liknende løsning",
+          "source": "Aftenposten",
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPVm1PM3VZcEM5WTlZT2plR2p4MHdISlhaM3Y3WUJZSVNTaFdLVUFpRmUzazNGRjlZR2NpNVRHT25zaUtLcTlQeHVqZkxGS1FhTFN6TXBPXy1ZRmoteXZqYmpiUmRaMk9Iam5CNUxrRkJHaVJva3lxcXVwWnVUN3pOejNfdldBaXhQeWdYTURBazNZN0k3OXBTYUsxTDNhd0ZmbU0wcXdNSXlpWWRidEczX0dvaEZZSDdk?oc=5",
+          "date": "2026-11-16T15:26:51+00:00",
+          "category": "norway"
+        },
+        {
+          "title": "The keys to the far-right Vox electoral program for 29N: \"national priority\", school quotas for students from \"other cultures\" and illegalization of parties",
+          "source": "El Constitucional",
+          "url": "https://www.elconstitucional.es/en/national/politics/the-keys-to-the-far-right-vox-electoral-program-for-29n-national-priority-school-quotas-for-students-from-other-cultures-and-illegalization-of-parties_10185_102.html",
+          "date": "2026-11-16T10:48:36+00:00",
+          "category": "general"
+        },
+        {
+          "title": "Programa electoral de Vox para el 29-N: las medidas sobre inmigración, prioridad nacional, Ceuta y Melilla y vivienda",
+          "source": "El Confidencial",
+          "url": "https://www.elconfidencial.com/espana/2026-11-16/programa-electoral-vox-29n-inmigracion-prioridad-nacional-ceuta-vivienda_4465636/",
+          "date": "2026-11-16T08:40:00+00:00",
+          "category": "spain"
+        }
+      ],
+      "first_seen": "2026-10-28T06:23:48+00:00",
+      "last_seen": "2026-11-17T08:34:28+00:00"
+    },
+    {
+      "id": "judicial-crackdowns-and-surveillance-targeting-the-far-right",
+      "title": "Judicial Crackdowns and Surveillance Targeting the Far-Right",
+      "blurb": "Right-wing movements in several countries report facing aggressive legal maneuvers, state surveillance, and court restrictions aimed at limiting their political influence or penalizing figures.",
+      "convergence": 4,
+      "countries": [
+        {
+          "name": "🇧🇷 Bolsonarismo / Partido Liberal",
+          "note": "Outraged by Supreme Court Justice Alexandre de Moraes barring political allies from visiting jailed former president Bolsonaro."
+        },
+        {
+          "name": "🇩🇪 Alternative für Deutschland",
+          "note": "Faces intensifying calls from mainstream politicians for an official party ban via federal mechanisms."
+        },
+        {
+          "name": "🇦🇷 La Libertad Avanza",
+          "note": "Faced with ongoing judicial challenges and recusals surrounding legal cases tied to the administration."
+        }
+      ],
+      "signals": [
+        "lawfare allegations",
+        "ban debates",
+        "judicial restrictions on political access"
+      ],
+      "article_count": 22,
+      "refs": [
+        {
+          "title": "Marinho e Tereza Cristina criticam Moraes por negar visitas a Bolsonaro",
+          "source": "Poder360",
+          "url": "https://www.poder360.com.br/poder-congresso/marinho-e-tereza-cristina-criticam-moraes-por-negar-visitas-a-bolsonaro/",
+          "date": "2026-11-17T02:17:01+00:00",
+          "category": "brazil"
+        },
+        {
+          "title": "Moraes barra visitas políticas a Bolsonaro em prisão domiciliar",
+          "source": "iG Último Segundo",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPUVIwZElUbDNZWDJHdjZ0Y19jbFd1aWZqTkxRWGRma1UwZWRtY3hDbEwwb0dtbGpTSmNqM1VUSGxxZTM0dDZjOGRWc0NsMTA0c2FEWkE1U3pFcmJJYW9TbFc3RTc5RGNDYVoyRm9WdHQ0MjlmVWxyTC1SSkM4b1NJcG91VWQ4ZGFqN3FfRUpzQl91eWxadGM4WlRkRUdJWkFiaTdlWmZDMS04Zw?oc=5",
+          "date": "2026-11-17T01:18:00+00:00",
+          "category": "brazil"
+        },
+        {
+          "title": "Högl will AfD-Verbot über Bundesrat beantragen",
+          "source": "Hasepost",
+          "url": "https://hasepost.de/hoegl-will-afd-verbot-ueber-bundesrat-beantragen-778875/",
+          "date": "2026-11-16T23:42:19+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Högl will AfD-Verbotsantrag über Bundesrat stellen",
+          "source": "Presse Augsburg",
+          "url": "https://presse-augsburg.de/hoegl-will-afd-verbotsantrag-ueber-bundesrat-stellen/",
+          "date": "2026-11-16T23:08:26+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "Causa $LIBRA: uno de los imputados pidió apartar a una jueza que habilitó la posible reincorporación de los querellantes",
+          "source": "Diario La Capital de Mar del Plata",
+          "url": "https://www.lacapitalmdp.com/causa-libra-uno-de-los-imputados-pidio-apartar-a-una-jueza-que-habilito-la-posible-reincorporacion-de-los-querellantes/",
+          "date": "2026-11-16T20:28:08+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Caso $LIBRA: dos jueces recusados en la disputa para evitar que Milei quede definitivamente sobreseído",
+          "source": "Diario Mendoza Today",
+          "url": "https://mendozatoday.com.ar/nacionales/caso-libra-dos-jueces-recusados-en-la-disputa-para-evitar-que-milei-quede-definitivamente-sobreseido/",
+          "date": "2026-11-16T19:19:50+00:00",
+          "category": "argentina"
+        }
+      ],
+      "first_seen": "2026-10-29T18:42:31+00:00",
+      "last_seen": "2026-11-17T08:34:28+00:00"
+    },
+    {
+      "id": "foreign-aid-rollbacks-and-skepticism-toward-ukraine-support",
+      "title": "Foreign Aid Rollbacks and Skepticism Toward Ukraine Support",
+      "blurb": "Far-right political figures are increasingly vocal about slashing or terminating financial assistance to Ukraine, framing foreign aid as an unaffordable burden on domestic taxpayers.",
+      "convergence": 3,
+      "countries": [
+        {
+          "name": "🇫🇷 Rassemblement National",
+          "note": "Marine Le Pen explicitly tells Ukraine's ambassador that a future right government will cut off financial aid."
+        },
+        {
+          "name": "🇳🇴 Fremskrittspartiet",
+          "note": "Voter polling shows strong agreement that Norway is contributing excessively to Ukrainian aid."
+        }
+      ],
+      "signals": [
+        "shared fiscal nationalism",
+        "foreign policy revisionism",
+        "direct messaging to diplomats"
       ],
       "article_count": 12,
       "refs": [
         {
-          "title": "Nach Milliarden-Zusage: Siegmund wirbt bei Musk für Investment in Sachsen-Anhalt - T-Online",
-          "source": "",
-          "url": "https://www.t-online.de/nachrichten/deutschland/innenpolitik/id_101531732/tesla-siegmund-wirbt-bei-musk-fuer-investment-in-sachsen-anhalt.html",
-          "date": "2026-11-16T18:43:15+00:00",
-          "category": "germany"
+          "title": "Le Pen reaffirms plan to end aid to Ukraine if elected",
+          "source": "The New Voice of Ukraine",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPLWxpZ3E3Ymk5QUtQM1ZfMHVVWkhNa000NDNvcnRYaFJIMmw3OE9fRTBaWUtxM1lBcWphdnU0RXpDNkRWRjE1a2tIN0VYWkpId2Raelg3a1lfQjdidEhyRVV4eWRET1JETjNLT280SVg2X3VNUnJqTk9vblEwSDgwd2lHZXFHbVpabFZuR2QwYXlkdUNPXzR4ZFhTUGJCQdIBmgFBVV95cUxQckNmTVU2YVp1Z210Zm1XMHdiYjM1WE9oWWJucXhudkpDeXFWV3pVbVA5cjJfNTNfYzV3Y01YdUZBQ2xDZmZKbHZZUHJ2Q2VzaGVSOERIVnd4VmE4RWhCbkF3STllREoya04yZWhPNm9qMHUwbnB2Mlp4M2NSVjE3R18yNGYwdUgzMDA5bXhiUnI0THZDR0JjMDFn?oc=5",
+          "date": "2026-11-16T20:54:00+00:00",
+          "category": "france"
         },
         {
-          "title": "Javier Milei participará del lanzamiento de Tesla en Argentina",
-          "source": "qpasó",
-          "url": "https://qpaso.ar/noticias/derechadiario/economia/javier-milei-participara-lanzamiento-tesla-en-argentina",
-          "date": "2026-11-16T18:26:12+00:00",
-          "category": "argentina"
+          "title": "Marine Le Pen told Ukraine's ambassador that France could stop financial aid to Kyiv if she is elected in 2027",
+          "source": "Informat.ro",
+          "url": "https://informat.ro/en/international/marine-le-pen-would-halt-financial-aid-to-ukraine-if-elected-president-148703",
+          "date": "2026-11-16T19:31:29+00:00",
+          "category": "france"
         },
         {
-          "title": "Michelle Bolsonaro confirma viagem a Israel e diz ter aval de Jair Bolsonaro",
-          "source": "tmc.com.br",
-          "url": "https://tmc.com.br/politica/michelle-bolsonaro-viagem-israel-dez-dias-aval-marido/",
-          "date": "2026-11-16T01:39:20+00:00",
-          "category": "brazil"
+          "title": "Måling for iNyheter: Over halvparten av Frp-velgerne mener Norge gir for mye til Ukraina",
+          "source": "inyheter.no",
+          "url": "https://inyheter.no/16/11/2026/maling-for-inyheter-over-halvparten-av-frp-velgerne-mener-norge-gir-for-mye-til-ukraina/",
+          "date": "2026-11-16T18:49:30+00:00",
+          "category": "norway"
         },
         {
-          "title": "Fact Check. Donald Trump recebeu Flávio Bolsonaro nos EUA após as eleições brasileiras?",
-          "source": "Observador",
-          "url": "https://observador.pt/factchecks/fact-check-donald-trump-recebeu-flavio-bolsonaro-nos-eua-apos-as-eleicoes-brasileiras/",
-          "date": "2026-11-15T19:57:00+00:00",
-          "category": "brazil"
+          "title": "Marine Le Pen : \"La France continuerait à soutenir l'Ukraine\", mais pas financièrement",
+          "source": "Yahoo Actualités",
+          "url": "https://fr.news.yahoo.com/marine-pen-france-continuerait-%C3%A0-182119816.html",
+          "date": "2026-11-16T18:21:19+00:00",
+          "category": "france"
         },
         {
-          "title": "Nos EUA, Flávio Bolsonaro questiona urnas eletrônicas e cobra voto impresso no Brasil",
-          "source": "JD1 Notícias",
-          "url": "https://www.jd1noticias.com/politica/2026/11/15/nos-eua-flavio-bolsonaro-questiona-urnas-eletronicas-e-cobra-voto-impresso-no-brasil.html",
-          "date": "2026-11-15T19:49:00+00:00",
-          "category": "brazil"
+          "title": "Présidentielle 2027 : Marine Le Pen a dit à l'ambassadeur d'Ukraine qu'en cas d'élection, \"l'état des finances publiques ne permettrait plus\" d'aider Kiev",
+          "source": "ladepeche.fr",
+          "url": "https://news.google.com/rss/articles/CBMinAJBVV95cUxPMG5OYVlZQzEwWDlRbXlXV2Q2d0l6cWd2Q3owalR2clJmVjQxTTVoc2wwcldJTFFzcnhDeTl0OWRHeGl4cUNCWDVnQkp2RmVIaDQ3dEpQX2FtSk5jZE9rd1JDWmQ3ZDZjREdqdHJmcUVFZ3VWaTVsRzViM2d1RzV0elE3dzJGaHNyR2VZeUI2S1E3V3pUaFRQbC10SXpId1hpa0JfSkNWei14eVdUWUxXUGFvNG9mbm1zS0dXS0lxS2xJckFpSXZfaTdTVjg2Z2R2UnRmeTZzZjlMeEFaQ29oX0V2ZklsZkxFajB0TndfRDZfQzJSckZ0QkZlSEVwb09QcGcwS0Nuaks1M1JrUnBCRndZTUZkWWx0VC1EZw?oc=5",
+          "date": "2026-11-16T17:53:00+00:00",
+          "category": "france"
+        },
+        {
+          "title": "'No money left': French far-right leader Le Pen vows to cut off Ukraine aid if elected president",
+          "source": "The Times of India",
+          "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxNaU10d3h0Ul9IU1NJek1MdDRISjdSNjZDMVRyRmRlUDBHbzBncjBnajdQZ2RPS3BMVXdjblJuQTZoXzd6WkJnbEdaei0tZXlFV2lTaTVrZ0g4c28xaHc4anR3QjBvMVRfVHkxckRBRU1ETzVpTFo4SVV1NFY0VWlaYm0tN1ZWcDVkWXVvankzWmFSZVNkVFZZdEdHM2lUU19GSk9QcFZmS1M3V3dFRms0c3F1VExoM0ZBX2I4dHMtV2ptQnFzQW5lc0pmU2tiTEpXSmNsbWZtQnVCcnRPX3VQZnVfNi12UjZPcWtZaVAyazY1djBIZlBYLUtpQ1DSAYICQVVfeXFMTjdrTEdlNExQWldyWm9MUm03MGhIblVpTkRLNTF5eTI1Y0FGYllkQ1ZJTXBWWDVEM3Q2V3hMT1lvcl9oQk4tbXh4UlNSYUUwOWdvZkFIcWR2WWg3S25xN1F5a2w2R3hmVFRLdGlkT2ZtblNxVFY4TzBVUmxlTXZia1lCQzRFSkFPeVVuWXlURDJfU3Qtb21sWEYxanhCSjUzM05VUkE2RzQxR2xHaHRQQXdVbjQ3cDJmUVdrcC05dEZVck95OWt1U3dobTJScXJYcHVRQWlkZlBTTG9LeWxfeFBXcVVFY2FxZGRrNFZRN0piTGprR3NOVDFiTGs5Sl92LUxR?oc=5",
+          "date": "2026-11-16T17:43:00+00:00",
+          "category": "general"
         }
       ],
-      "first_seen": "2026-11-04T20:09:00+00:00",
-      "last_seen": "2026-11-16T22:36:15+00:00"
+      "first_seen": "2026-11-17T08:34:28+00:00",
+      "last_seen": "2026-11-17T08:34:28+00:00"
     },
     {
       "id": "anti-establishment-hostility-to-public-media-and-information-control",
       "title": "Anti-Establishment Hostility to Public Media and Information Control",
-      "blurb": "Right-wing movements are increasingly challenging traditional media networks and digital regulatory frameworks. Conservative leaders across Sweden, Poland, Hungary, and the UK frame mainstream journalism and EU digital governance as biased mechanisms designed to censor right-wing viewpoints and shield incumbent elites.",
+      "blurb": "Populist and right-wing political actors routinely clash with mainstream broadcasters, journalists, and cultural institutions, accusing them of bias, censorship, and political gatekeeping.",
       "convergence": 3,
       "countries": [
         {
-          "name": "🇸🇪 Sverigedemokraterna",
-          "note": "SD experiences political fallout and media boycotts following investigative reporting uncovering undisclosed online influence operations."
-        },
-        {
-          "name": "🇵🇱 Prawo i Sprawiedliwość",
-          "note": "PiS presidential figures place strict conditions on EU Digital Services Act compliance, warning against government digital censorship."
-        },
-        {
-          "name": "🇭🇺 Fidesz / Tisza",
-          "note": "Opposition figures criticize state-aligned media outlets for attempting to downplay systemic corruption investigations."
-        },
-        {
-          "name": "🇬🇧 Reform UK",
-          "note": "Nigel Farage accuses public broadcasters and government institutions of concealing critical crime and migration data from the public."
+          "name": "🇪🇸 Vox",
+          "note": "Engages in sharp public spats and legal challenges against state-adjacent television hosts and media outlets."
         },
         {
           "name": "🇺🇸 MAGA / Trump",
-          "note": "Right-wing figures resist federal oversight of independent monitoring applications while debating platform freedom and independent media."
+          "note": "Continues friction over press blacklists, media access rules, and clashes with information gatekeepers."
         }
       ],
       "signals": [
-        "anti-media rhetoric",
-        "censorship allegations",
-        "information sovereignty",
-        "platform contestation"
+        "media hostility",
+        "accusations of institutional bias",
+        "anti-establishment communication strategies"
       ],
-      "article_count": 10,
+      "article_count": 14,
       "refs": [
         {
-          "title": "Trump administration backs off effort to censor Indiana man’s ICE monitoring app",
-          "source": "IndyStar",
-          "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOTVV1TmxVc0J2M2RBZjlpajVaS19oQlZlemNIOUxwVnllWllMa1pfeWNXNGNRODBOOEswSi10UV9rUkhwaHgzYzFDQWNVWFNULUlPM1hVSWpUQUdBSklSU3FULU1iUXU4cEtqa25zMzU2c1UxLXpKWExwM1BoVlljLUVzcTduYkRQZFh4ZW8tLXdNUWtnQU9PZmpzM0dPNmhEYTljcWlYeVhNQXp1N1EyWG9pRXVWbDI3c0tDUkxreUlKd3JQUXNhVGowbnZFZ1UxbVlFV3FVZjlac0JoOVRJ?oc=5",
-          "date": "2026-11-16T18:57:00+00:00",
+          "title": "Broncano rabia ahora contra Abascal: «Hice una excepción con Vox y la cagué, nunca le concederé nada más»...",
+          "source": "OkDiario",
+          "url": "https://okdiario.com/cool/television/broncano-rabia-ahora-contra-abascal-hice-excepcion-vox-cague-nunca-concedere-nada-mas-20973369",
+          "date": "2026-11-16T23:18:19+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Broncano hace “una puntualización importante” a Vox tras la denuncia por la entrevista de Abascal",
+          "source": "Diario AS",
+          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNNzdOdzFudXNzWkFzSC1Tbl9FSDhEVDBieDQzVkVyU0p2NTVHS3RhbmdMcnhfcXpvTlIwbmFzS0dOYzBmMnotS1o1dGxwcVZnNEwya0J5Y3lvMzE0Q19lVDRRTTVxX1VfbkZhcllkbXlUQ2VDdUQ3TVNyN2o3azA4RWs0TzA2c1pFWVpCSVBuTm5UZlkwdDR5dW1WcHZrSF9WTTZDUEU4d3pFQTFZUGNKdEN6MFFwQnFyVU1RWVF6NjNhenlF0gHYAUFVX3lxTE5RYXBCUmZwbnNCWTJyVVlXV1k5ZWR6bGRvRlFrM05McWpZWWlrbEdOcXE3YTVZUFZrVFQyTXNPV1c0WlZtWDhTVkZwZDVraXl3eHpqNVVKSDRyb0RmcThoTW5ObXJST2Q4WkdTMjM3YXlmWE9LZ1FXd3huek9XanFybGxzUFZhTFRVUTY4cUwzUEF6bldUSEIzVVZ2S0x1NzV1N2dvZ3JKUEIzSVRZSzc5U2JWZnEwQmdQTDlyZEE4aWpFaW9fcVl4WlYtZ09pNHEyNHNzUVB3aQ?oc=5",
+          "date": "2026-11-16T22:29:30+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Broncano estalla contra Vox tras su denuncia por la entrevista a Abascal: \"Ya hicimos una excepción y la cagamos\"",
+          "source": "El HuffPost",
+          "url": "https://www.huffingtonpost.es/virales/broncano-estalla-vox-denuncia-entrevista-abascal-ya-hicimos-excepcion-cagamos-f202611.html",
+          "date": "2026-11-16T22:19:49+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "David Broncano estalla contra Vox tras su denuncia a 'La Revuelta' ante la Junta Electoral Central: \"No vamos a concederles ni una más\"",
+          "source": "MARCA",
+          "url": "https://www.marca.com/tiramillas/television/2026/11/16/david-broncano-estalla-vox-denuncia-revuelta-junta-electoral-central-concederles.html",
+          "date": "2026-11-16T21:40:10+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Journalism Groups Sue Pete Hegseth’s Pentagon Over Alleged ‘Media Blacklist’",
+          "source": "TheWrap",
+          "url": "https://www.thewrap.com/industry-news/public-policy-legal/pentagon-journalist-blacklist-lawsuit/",
+          "date": "2026-11-16T20:50:58+00:00",
           "category": "usa"
         },
         {
-          "title": "Nawrocki gotów podpisać ustawę wdrażającą DSA. Jest warunek",
-          "source": "Do Rzeczy",
-          "url": "https://dorzeczy.pl/opinie/972726/nawrocki-gotow-podpisac-ustawe-wdrazajaca-dsa-jest-warunek.html",
-          "date": "2026-11-16T16:53:00+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Soha nem látott leolvadást okozott a Fidesz médiájában az NVVH által kiásott pénz",
-          "source": "444",
-          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQaEk3RGNTSjhHTV9hU2ZzcmsySGRGLWJGTzY1Mm0wOGRIdE1KdC1STUlwOXZQRlBoNjlyU3Fidlpial9rWXB5OVNTOEVDZ1NjUjlOYzFLbzdGUG4yaEtPdlJ6aUFDLXF2OGVfLWRUMHhMN29zTEU5Wks4MTczcFFaRVFiRWd4eG5pWXZkUTNwam5pamJ4S05nd05mRHNXOVoyaWlBNFVvSGdyVlU?oc=5",
-          "date": "2026-11-16T14:46:58+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Nigel Farage rages over 'outrageous cover up' on migrant crime - 'what are they hiding?'",
-          "source": "Daily Express",
-          "url": "https://www.express.co.uk/news/politics/2266623/Nigel-Farage-Reform-UK-migrant-crime-data-asylum-boats",
-          "date": "2026-11-16T13:47:00+00:00",
-          "category": "uk"
-        },
-        {
-          "title": "Sweden Democrats troll factory revealed by TV4",
-          "source": "TV4 Nyheterna",
-          "url": "https://www.tv4.se/artikel/4A3ctxFCytb4R7kKQanI9H/sds-troll-factory-revealed-reporter-worked-undercover",
-          "date": "2026-11-15T03:38:20+00:00",
-          "category": "sweden"
+          "title": "Joe Rogan slams Trump, says MAGA betrayed ‘podcast bros’",
+          "source": "The Hill",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPNF9CdzA0QkR6Q09VNGlBd2RtSFZRcUw1UnJPWDFZTXFCM0RzWExYNnE0OGo5VGQxLUdBeEdMb2RIWldNblpKcGFwRjFHcE4zcHo2ZmdzOVphbzBDV0hHNU93aEYzREU0NEFmYXRLN1ZrM0w3Y3R3Q3Q4Y1JiVjctM3cxY19PTlZSZ0dBZ3I1dGU?oc=5",
+          "date": "2026-11-16T19:47:00+00:00",
+          "category": "usa"
         }
       ],
       "first_seen": "2026-11-12T07:48:42+00:00",
-      "last_seen": "2026-11-16T22:36:15+00:00"
+      "last_seen": "2026-11-17T08:34:28+00:00"
     }
   ]
 }
