@@ -1,35 +1,47 @@
 {
-  "updated_at": "2026-11-19T08:02:37+00:00",
+  "updated_at": "2026-11-19T21:03:59+00:00",
   "lookback_hours": 48,
-  "model": "Gemini 3.5 Flash-Lite",
+  "model": "Gemini 3.6 Flash",
   "status": "ok",
   "themes": [
     {
       "id": "national-priority-rhetoric-and-hardline-migration-demands",
       "title": "National Priority Rhetoric and Hardline Migration Demands",
-      "blurb": "Right-wing parties across multiple European nations continue to press hardline border control and national preference agendas, with Spanish, British, and Norwegian populist figures demanding stricter deportations and explicit restrictions on asylum seekers.",
+      "blurb": "Right-wing parties across Europe are intensifying demands for aggressive border controls and externalized migration processing, with multiple national movements rallying around third-country deportation models like the Rwanda framework. Rhetoric across Spain, Sweden, Norway, and the UK increasingly links housing and welfare access strictly to national priority.",
       "convergence": 5,
       "countries": [
         {
+          "name": "🇳🇴 Fremskrittspartiet",
+          "note": "Demanding parliamentary approval for Rwanda-style offshore deportation processing and halting refugee intakes"
+        },
+        {
+          "name": "🇸🇪 Sverigedemokraterna",
+          "note": "Proposing explicit legislation to send deported migrants to third countries such as Rwanda or Somalia"
+        },
+        {
           "name": "🇪🇸 Vox",
-          "note": "Pushing national priority in housing and public aid ahead of upcoming elections alongside deportation pledges"
+          "note": "Campaigning on national priority for housing and social aid while demanding immediate deportation of migrant offenders"
         },
         {
           "name": "🇬🇧 Reform UK",
-          "note": "Immigration policy friction and warnings over border security and demographic pressures"
-        },
-        {
-          "name": "🇳🇴 Fremskrittspartiet",
-          "note": "Demanding fast-track migrant returns and stricter asylum caps amidst surging poll numbers"
+          "note": "Enforcing strict party discipline on border policy while attacking government immigration measures"
         }
       ],
       "signals": [
-        "shared framing",
-        "contagion of rhetoric",
-        "hardline border demands"
+        "Rwanda deportation model",
+        "national priority framing",
+        "hardline border demands",
+        "transnational policy imitation"
       ],
-      "article_count": 18,
+      "article_count": 19,
       "refs": [
+        {
+          "title": "SD Proposal: Send Deported Migrants to Rwanda—or Somalia",
+          "source": "FrihetsNytt",
+          "url": "https://frihetsnytt.se/en/sds-proposal-send-deported-migrants-to-rwanda-or-somalia/",
+          "date": "2026-11-19T08:47:02+00:00",
+          "category": "sweden"
+        },
         {
           "title": "Vox propone prioridad nacional en vivienda y ayudas en Cádiz para las elecciones del 29N",
           "source": "Cadiznoticias",
@@ -45,17 +57,17 @@
           "category": "spain"
         },
         {
+          "title": "(+) Frp krever Rwanda-ja fra Stortinget",
+          "source": "Avisen Minerva",
+          "url": "https://www.minerva.no/asylpolitikk-fremskrittspartiet-retursenter/frp-krever-rwanda-ja-fra-stortinget/524408",
+          "date": "2026-11-18T13:16:18+00:00",
+          "category": "norway"
+        },
+        {
           "title": "Frp-forslag i Stortinget: Vil ha lynrask prosess om Rwanda-returer",
           "source": "Aftenposten",
           "url": "https://www.aftenposten.no/norge/politikk/i/9BvxWd/frp-forslag-i-stortinget-vil-ha-lynrask-prosess-om-rwanda-returer",
           "date": "2026-11-18T13:13:44+00:00",
-          "category": "norway"
-        },
-        {
-          "title": "(+) Frp vil ikke ta imot flyktninger",
-          "source": "askoy24",
-          "url": "https://www.askoy24.no/nyheter/frp-vil-ikke-ta-imot-flyktninger/247497",
-          "date": "2026-11-18T12:46:12+00:00",
           "category": "norway"
         },
         {
@@ -64,116 +76,224 @@
           "url": "https://inyheter.no/18/11/2026/listhaug-vil-sende-migranter-til-rwanda-store-noler/",
           "date": "2026-11-18T10:59:39+00:00",
           "category": "norway"
-        },
-        {
-          "title": "Nigel Farage's bombshell '1m more migrants' warning as Andy Burnham plots Brexit U-turn",
-          "source": "Daily Express",
-          "url": "https://www.express.co.uk/news/politics/2267070/EU-Brexit-Labour-Andy-Burnham-Nigel-Farage-freedom-of-movement",
-          "date": "2026-11-17T17:14:00+00:00",
-          "category": "uk"
         }
       ],
       "first_seen": "2026-10-28T06:23:48+00:00",
-      "last_seen": "2026-11-19T08:02:37+00:00"
+      "last_seen": "2026-11-19T21:03:59+00:00"
     },
     {
       "id": "far-right-momentum-and-electoral-contestation-ahead-of-major-votes",
       "title": "Far-Right Momentum and Electoral Contestation Ahead of Major Votes",
-      "blurb": "Far-right and populist movements are ramping up campaign machinery, satirical media efforts, and electoral positioning as they anticipate critical upcoming political contests in Europe and Latin America.",
+      "blurb": "Far-right parties in Germany, France, Argentina, and Spain are actively leveraging favorable polling trends and strategic timing to challenge ruling coalitions. Campaigns are accelerating preparations for upcoming regional executive votes and future presidential contests through early candidate announcements and aggressive electoral positioning.",
       "convergence": 5,
       "countries": [
         {
-          "name": "🇦🇷 La Libertad Avanza",
-          "note": "Advancing legislation to suspend primary elections while managing internal coalition dynamics"
-        },
-        {
-          "name": "🇪🇸 Vox",
-          "note": "Releasing video game satire campaigns to reach younger voters ahead of regional elections"
+          "name": "🇩🇪 Alternative für Deutschland",
+          "note": "Attempting to fast-track state parliament votes to elect Ulrich Siegmund as minister-president in Saxony-Anhalt while surging in regional polls"
         },
         {
           "name": "🇫🇷 Rassemblement National",
-          "note": "Positioning Le Pen and Bardella at the forefront of presidential polling favorites"
+          "note": "Consolidating 2027 presidential campaign strategy as Marine Le Pen and Jordan Bardella lead national head-to-head polls"
         },
         {
-          "name": "🇧🇷 Bolsonarismo / Partido Liberal",
-          "note": "Navigating intense institutional conflicts, legislative leadership battles, and judicial crackdowns"
+          "name": "🇦🇷 La Libertad Avanza",
+          "note": "Building momentum and youth voter backing ahead of legislative and presidential re-election battles"
+        },
+        {
+          "name": "🇪🇸 Vox",
+          "note": "Surging past main establishment parties in regional voter barometers in Murcia and southern Spain"
         }
       ],
       "signals": [
-        "parallel elections",
-        "campaign innovation",
-        "transnational electoral momentum"
+        "electoral momentum",
+        "polling surges",
+        "early election maneuvering",
+        "presidential campaign readiness"
       ],
-      "article_count": 24,
+      "article_count": 25,
       "refs": [
         {
-          "title": "GTA 6 versión libertaria: el video animado donde Javier Milei promete destruir el Banco Central",
-          "source": "Ambito",
-          "url": "https://www.ambito.com/politica/gta-6-version-libertaria-el-video-animado-donde-javier-milei-promete-destruir-el-banco-central-n6346942",
-          "date": "2026-11-19T01:16:00+00:00",
-          "category": "argentina"
+          "title": "Neuer Termin in Sachsen-Anhalt AfD will wohl Siegmund früher zum Ministerpräsidenten wählen",
+          "source": "Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/politik/afd-erwagt-fruhere-wahl-von-siegmund-zum-ministerprasidenten-16302643.html",
+          "date": "2026-11-19T12:37:00+00:00",
+          "category": "germany"
         },
         {
-          "title": "La Libertad Avanza consiguió el dictamen para el proyecto de suspensión de las PASO y ahora va al recinto",
-          "source": "Tiempo Argentino",
-          "url": "https://www.tiempoar.com.ar/ta_article/la-libertad-avanza-consiguio-el-dictamen-para-el-proyecto-de-suspension-de-las-paso-y-ahora-va-al-recinto/",
-          "date": "2026-11-18T23:39:26+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Vox lleva sus propuestas electorales a un videojuego con una sección satírica sobre Sánchez",
-          "source": "101tv Sevilla",
-          "url": "https://101tvsevilla.es/vox-lleva-sus-propuestas-electorales-a-un-videojuego-con-una-seccion-satirica-sobre-sanchez/",
-          "date": "2026-11-18T22:51:55+00:00",
+          "title": "El PP obtendría cuatro escaños, por los tres de Vox y del PSOE, según el barómetro de la UCAM",
+          "source": "Onda Regional de Murcia | ORM",
+          "url": "https://www.orm.es/informativos/el-pp-obtendria-cuatro-escanos-por-los-tres-de-vox-y-del-psoe-segun-el-barometro-de-la-ucam/",
+          "date": "2026-11-19T12:20:04+00:00",
           "category": "spain"
         },
         {
-          "title": "Vox se apunta a la fiebre del GTA VI y lanza un videojuego para recortar impuestos y remover el móvil de Sánchez",
-          "source": "El Nacional.cat",
-          "url": "https://www.elnacional.cat/es/politica/vox-se-apunta-fiebre-gta-vi-lanza-videojuego-recortar-impuestos-remover-movil-sanchez_1727816_102.html",
-          "date": "2026-11-18T21:42:11+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Buenos Aires se encamina a sostener las PASO aunque Milei logre suspenderlas a nivel nacional",
-          "source": "Letra P",
-          "url": "https://www.letrap.com.ar/politica/buenos-aires-se-encamina-sostener-las-paso-aunque-milei-logre-suspenderlas-nivel-nacional-n5428332",
-          "date": "2026-11-18T21:27:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Présidentielle : Le Pen en tête, Mélenchon progresse, le duel se profile",
-          "source": "Valeurs actuelles",
-          "url": "https://www.valeursactuelles.com/politique/presidentielle-2027-marine-le-pen-toujours-loin-devant-jean-luc-melenchon-progresse-le-second-tour-des-extremes-se-profile",
-          "date": "2026-11-18T17:20:21+00:00",
+          "title": "Jordan Bardella prêt à s’installer à Matignon en 2027 : il a déjà une liste de ministres en tête, et Éric Ciotti pourrait hériter d’un poste prestigieux…",
+          "source": "Gala",
+          "url": "https://www.gala.fr/politique/jordan-bardella-pret-a-s-installer-a-matignon-en-2027-il-a-deja-une-liste-de-ministres-en-tete-et-eric-ciotti-pourrait-heriter-d-un-poste-prestigieux-20261119",
+          "date": "2026-11-19T11:15:00+00:00",
           "category": "france"
+        },
+        {
+          "title": "Milei busca la reelección entre tensiones internas, una economía fría y una oposición fracturada",
+          "source": "El Debate",
+          "url": "https://www.eldebate.com/internacional/iberoamerica/20261119/milei-busca-reeleccion-entre-tensiones-internas-economia-fria-oposicion-fracturada_482772.html",
+          "date": "2026-11-19T11:13:01+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Présidentielle 2027 : la candidate Marine Le Pen annoncée à Reims le mercredi 25 novembre",
+          "source": "L'Union",
+          "url": "https://www.lunion.fr/id841172/article/2026-11-19/presidentielle-2027-la-candidate-marine-le-pen-annoncee-reims-le-mercredi-25",
+          "date": "2026-11-19T10:24:46+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Encuesta: el voto joven acerca a Javier Milei a la primera vuelta, pero no le alcanza",
+          "source": "Perfil",
+          "url": "https://www.perfil.com/politica/encuesta-el-voto-joven-acerca-a-javier-milei-a-la-primera-vuelta-pero-no-le-alcanza-aF4eI7d7Asbv",
+          "date": "2026-11-19T08:36:50+00:00",
+          "category": "argentina"
         }
       ],
       "first_seen": "2026-11-04T07:02:23+00:00",
-      "last_seen": "2026-11-19T08:02:37+00:00"
+      "last_seen": "2026-11-19T21:03:59+00:00"
+    },
+    {
+      "id": "judicial-crackdowns-and-surveillance-targeting-the-far-right",
+      "title": "Judicial Crackdowns and Surveillance Targeting the Far-Right",
+      "blurb": "Legal battles, criminal indictments, and constitutional standoffs targeting right-wing leadership are escalating simultaneously across several countries. Parties frame these judicial proceedings as politically motivated persecution by state institutions, while courts press forward with corruption, immunity, and campaign finance inquiries.",
+      "convergence": 4,
+      "countries": [
+        {
+          "name": "🇧🇷 Bolsonarismo / Partido Liberal",
+          "note": "Attorney General files formal charges against Flávio Bolsonaro while Supreme Court imposes strict restrictions on Jair Bolsonaro"
+        },
+        {
+          "name": "🇵🇱 Prawo i Sprawiedliwość",
+          "note": "Locked in an intense constitutional standoff over tribunal reforms after the Constitutional Tribunal chief was stripped of immunity"
+        },
+        {
+          "name": "🇫🇷 Rassemblement National",
+          "note": "Facing potential electoral ineligibility risks alongside international financial probes into past campaign loans"
+        },
+        {
+          "name": "🇩🇪 Alternative für Deutschland",
+          "note": "Multiple party figures facing court fines, assault charges, and fraud penalty orders"
+        }
+      ],
+      "signals": [
+        "prosecutorial actions",
+        "judicial immunity disputes",
+        "campaign finance probes",
+        "ineligibility threats"
+      ],
+      "article_count": 29,
+      "refs": [
+        {
+          "title": "Prezes PiS stawia warunek ws. resetu w TK. \"Grubą kreskę już przerabialiśmy\"",
+          "source": "Tysol.pl",
+          "url": "https://tysol.pl/wiadomosci/prezes-pis-stawia-warunek-ws-resetu-w-tk-gruba-kreske-juz-przerabialismy,224476",
+          "date": "2026-11-19T11:46:20+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Bracelet, inéligibilité... Ce que risque encore Marine Le Pen avant la présidentielle",
+          "source": "Marianne",
+          "url": "https://www.marianne.net/politique/le-pen/bracelet-ineligibilite-ce-que-risque-encore-marine-le-pen-avant-la-presidentielle",
+          "date": "2026-11-19T11:00:10+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Polish Constitutional Tribunal chief stripped of judicial immunity",
+          "source": "Harici",
+          "url": "https://harici.com.tr/en/polish-constitutional-tribunal-chief-stripped-of-judicial-immunity/?amp=1",
+          "date": "2026-11-19T10:34:11+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "PGR apresenta denúncia contra Flávio Bolsonaro por publicação sobre Lula nas redes sociais",
+          "source": "deolhonacidade.net",
+          "url": "https://www.deolhonacidade.net/pgr-apresenta-denuncia-contra-flavio-bolsonaro-por-publicacao-sobre-lula-nas-redes-sociais",
+          "date": "2026-11-19T09:52:47+00:00",
+          "category": "brazil"
+        },
+        {
+          "title": "France : la banque hongroise qui a prêté à Marine Le Pen au cœur d’une enquête sur des flux russes suspects",
+          "source": "Anadolu Ajansı",
+          "url": "https://www.aa.com.tr/fr/france/france-la-banque-hongroise-qui-a-pr%C3%AAt%C3%A9-%C3%A0-marine-le-pen-au-c%C5%93ur-d-une-enqu%C3%AAte-sur-des-flux-russes-suspects/4130121",
+          "date": "2026-11-19T08:20:39+00:00",
+          "category": "france"
+        },
+        {
+          "title": "AfD-Mann Klaus Esser akzeptiert Strafbefehl wegen gefälschter Abschlüsse",
+          "source": "FAZ",
+          "url": "https://www.faz.net/aktuell/politik/inland/afd-mann-klaus-esser-akzeptiert-strafbefehl-wegen-gefaelschter-abschluesse-201696117.html",
+          "date": "2026-11-18T19:15:33+00:00",
+          "category": "germany"
+        }
+      ],
+      "first_seen": "2026-10-29T18:42:31+00:00",
+      "last_seen": "2026-11-19T21:03:59+00:00"
     },
     {
       "id": "pensions-overhaul-and-fiscal-populism-debates",
       "title": "Pensions Overhaul and Fiscal Populism Debates",
-      "blurb": "Right-wing and populist opposition figures are championing worker-centric fiscal policies, including lowered retirement ages and tax cuts, while clashing with establishment governments over budgetary burdens.",
+      "blurb": "Right-wing platforms across Europe and Latin America are locked in heated debates over state spending, tax relief, and pension solvency. Leaders are balancing free-market deregulation and strict fiscal discipline with populist promises to protect workers and small businesses from rising costs.",
       "convergence": 4,
       "countries": [
         {
           "name": "🇫🇷 Rassemblement National",
-          "note": "Defending proposals to lower the retirement age to 60 and finance pensions through work rather than taxes"
+          "note": "Revising pension platform toward mandatory capitalization models and work incentives amid critique from employer federations"
+        },
+        {
+          "name": "🇦🇷 La Libertad Avanza",
+          "note": "Javier Milei rejects economic stimulus spending and defends zero-deficit austerity despite public financial hardship"
         },
         {
           "name": "🇮🇹 Fratelli d'Italia / Lega",
-          "note": "Debating tax cuts, banking levies, and budget maneuvers within the ruling coalition"
+          "note": "Governing coalition debating bank tax increases and budget cuts while defending tax cuts against general strike protests"
+        },
+        {
+          "name": "🇪🇸 Vox",
+          "note": "Promoting historic tax cuts and immediate deregulation for small businesses and self-employed workers"
         }
       ],
       "signals": [
-        "fiscal populism",
-        "pension reform debate",
-        "anti-tax rhetoric"
+        "fiscal austerity defense",
+        "pension reform shifts",
+        "tax cut demands",
+        "economic populism"
       ],
-      "article_count": 12,
+      "article_count": 22,
       "refs": [
+        {
+          "title": "Javier Milei descartó un \"plan platita\" para 2027 y defendió el equilibrio fiscal",
+          "source": "Diario Río Negro",
+          "url": "https://www.rionegro.com.ar/economia/javier-milei-descarto-un-plan-platita-para-2027-y-defendio-el-equilibrio-fiscal-4804228/",
+          "date": "2026-11-19T11:57:12+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Présidentielle 2027 : le Rassemblement national se convertit à une dose de capitalisation obligatoire en matière de retraite",
+          "source": "L'Argus de l'assurance",
+          "url": "https://www.argusdelassurance.com/epargne/retraite-complementaire/retraite-supplementaire/presidentielle-2027-le-rassemblement-national-se-convertit-a-une-dose-de-capitalisation-obligatoire-en-matiere-de-retraite.UWIF76URHVAQJBFCSJZM3XS4HQ.html",
+          "date": "2026-11-19T10:41:28+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Retraites : le RN piégé par ses promesses",
+          "source": "Le Monde.fr",
+          "url": "https://www.lemonde.fr/idees/article/2026/11/19/retraites-le-rn-piege-par-ses-promesses_6813264_3232.html",
+          "date": "2026-11-19T09:30:09+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Marcela Reigía de Vox defiende la necesidad de acabar con las trabas burocráticas y la presión fiscal: \"Basta ya\"",
+          "source": "Onda Cero",
+          "url": "https://www.ondacero.es/emisoras/extremadura/noticias/marcela-reigia-vox-defiende-necesidad-acabar-trabas-burocraticas-presion-fiscal-basta_202611196afe595521e74551e81eecc3.html",
+          "date": "2026-11-19T02:05:09+00:00",
+          "category": "spain"
+        },
         {
           "title": "Manovra, la Lega vuole alzare l’Ires alle banche. Pressing sul caro-materiali: ristori per lavori 2025",
           "source": "Il Messaggero",
@@ -187,182 +307,83 @@
           "url": "https://ladiscussione.com/472932/politica/meloni-patrimoniale-ucraina/",
           "date": "2026-11-18T23:09:10+00:00",
           "category": "italy"
-        },
-        {
-          "title": "Pour Marine Le Pen, seul le travail pourra financer la retraite",
-          "source": "Le Cercle Des Épargnants",
-          "url": "https://www.cercledesepargnants.com/article/pour-marine-le-pen-seul-le-travail-pourra-financer-la-retraite",
-          "date": "2026-11-18T22:38:54+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Âge de départ à 62 ans, voire 60 ans : le Medef \"ne comprend pas très bien\" comment Marine Le Pen compte finan",
-          "source": "Boursorama",
-          "url": "https://www.boursorama.com/actualite-economique/actualites/age-de-depart-a-62-ans-voire-60-ans-le-medef-ne-comprend-pas-tres-bien-comment-marine-le-pen-compte-financer-sa-reforme-des-retraites-735e1f9d092acb6940beb65f0342297d",
-          "date": "2026-11-18T20:21:00+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Présidentielle 2027 : comment Marine Le Pen s'est convertie à la retraite par capitalisation",
-          "source": "Les Echos",
-          "url": "https://www.lesechos.fr/elections/presidentielle/presidentielle-2027-comment-marine-le-pen-sest-convertie-a-la-retraite-par-capitalisation-2263374",
-          "date": "2026-11-18T16:55:50+00:00",
-          "category": "france"
-        },
-        {
-          "title": "France's Far-Right Le Pen Pledges \"Retirement Age Cut to 60\"; Fiscal Burden Concerns",
-          "source": "아시아경제",
-          "url": "https://www.asiae.co.kr/en/article/world-general/2026111809491455321",
-          "date": "2026-11-18T02:24:00+00:00",
-          "category": "general"
         }
       ],
       "first_seen": "2026-11-18T20:59:12+00:00",
-      "last_seen": "2026-11-19T08:02:37+00:00"
+      "last_seen": "2026-11-19T21:03:59+00:00"
     },
     {
-      "id": "judicial-crackdowns-and-surveillance-targeting-the-far-right",
-      "title": "Judicial Crackdowns and Surveillance Targeting the Far-Right",
-      "blurb": "Establishment judicial and political institutions are intensifying legal scrutiny, investigations, and restrictions against prominent right-wing figures and allied organizations across several countries.",
-      "convergence": 4,
-      "countries": [
-        {
-          "name": "🇧🇷 Bolsonarismo / Partido Liberal",
-          "note": "Facing ongoing Supreme Court prosecutions and restrictions targeting Bolsonaro and his allies"
-        },
-        {
-          "name": "🇩🇪 Alternative für Deutschland",
-          "note": "Confronting judicial penalties, political exclusion zones, and intense legal hurdles over extremist rhetoric"
-        },
-        {
-          "name": "🇵🇱 Prawo i Sprawiedliwość",
-          "note": "Navigating ongoing institutional standoffs and presidential vetoes against current government policies"
-        }
-      ],
-      "signals": [
-        "judicial pressure",
-        "institutional pushback",
-        "legal crackdowns"
-      ],
-      "article_count": 15,
-      "refs": [
-        {
-          "title": "PGR denuncia Flávio Bolsonaro ao STF por calúnia contra Lula em publicação na rede X",
-          "source": "A Crítica de Campo Grande",
-          "url": "https://acritica.net/justica/pgr-denuncia-flavio-bolsonaro-ao-stf-por-calunia-contra-lula-em-postagem/",
-          "date": "2026-11-19T02:15:00+00:00",
-          "category": "brazil"
-        },
-        {
-          "title": "Flávio Bolsonaro pode virar réu no STF por calúnia contra Lula",
-          "source": "BNC Amazonas",
-          "url": "https://bncamazonas.com.br/poder/flavio-10/",
-          "date": "2026-11-19T01:35:54+00:00",
-          "category": "brazil"
-        },
-        {
-          "title": "AfD-Mann Klaus Esser akzeptiert Strafbefehl wegen gefälschter Abschlüsse",
-          "source": "FAZ",
-          "url": "https://www.faz.net/aktuell/politik/inland/afd-mann-klaus-esser-akzeptiert-strafbefehl-wegen-gefaelschter-abschluesse-201696117.html",
-          "date": "2026-11-18T19:15:33+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Wyższe ceny alkoholu od 2027 roku. Prezydent Karol Nawrocki złożył podpis pod nowelizacją",
-          "source": "Strefa Inwestorów",
-          "url": "https://strefainwestorow.pl/wiadomosci/20261118/wyzsze-ceny-alkoholu-od-2027-roku-prezydent-karol-nawrocki-zlozyl-podpis-pod",
-          "date": "2026-11-18T17:57:00+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "„Alle Register gezogen, um das Verfahren zu torpedieren“: AfD-Abgeordneter Rau wegen SA-Parole verurteilt",
-          "source": "Frankfurter Rundschau",
-          "url": "https://www.fr.de/politik/afd-abgeordneter-rau-wegen-verbotener-sa-parole-verurteilt-94597112.html",
-          "date": "2026-11-18T16:52:30+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "„Alles für Deutschland“: Wegen Nazi-Parole auf Instagram: AfD-Mann Phillipp-Anders Rau zu 1500 Euro Strafe verurteilt",
-          "source": "Volksstimme",
-          "url": "https://www.volksstimme.de/lokal/burg/wegen-nazi-parole-auf-instagram-afd-mann-phillipp-anders-rau-zu-1500-euro-strafe-verurteilt-4358686",
-          "date": "2026-11-18T15:41:57+00:00",
-          "category": "germany"
-        }
-      ],
-      "first_seen": "2026-10-29T18:42:31+00:00",
-      "last_seen": "2026-11-19T08:02:37+00:00"
-    },
-    {
-      "id": "anti-establishment-hostility-to-public-media-and-information-control",
-      "title": "Anti-Establishment Hostility to Public Media and Information Control",
-      "blurb": "Right-wing populists are intensifying their attacks on mainstream media credibility, regulatory bodies, and information gatekeepers, accusing establishment networks of bias and censorship.",
+      "id": "gamified-pop-culture-tactics-and-digital-propaganda",
+      "title": "Gamified Pop-Culture Tactics and Digital Propaganda",
+      "blurb": "Right-wing populist parties are adopting video game aesthetics and pop-culture launches to bypass traditional media channels. By co-opting blockbuster gaming releases like GTA VI for political memes and custom interactive releases, parties are seeking direct engagement with younger demographics.",
       "convergence": 3,
       "countries": [
         {
-          "name": "🇺🇸 MAGA / Trump",
-          "note": "Insisting on the administration's right to exclude hostile press outlets from the White House pool"
-        },
-        {
-          "name": "🇭🇺 Fidesz / Tisza",
-          "note": "Investigating alleged foreign-backed information operations and media manipulation plots"
+          "name": "🇦🇷 La Libertad Avanza",
+          "note": "Javier Milei releases official GTA-inspired video showcasing his chainsaw reform agenda against political opponents"
         },
         {
           "name": "🇬🇧 Reform UK",
-          "note": "Challenging mainstream media framing on two-tier policing and public debate integrity"
+          "note": "Nigel Farage and Reform MPs publish GTA-styled viral videos targeting Channel migrant crossings"
+        },
+        {
+          "name": "🇪🇸 Vox",
+          "note": "Launches a custom campaign video game to promote municipal platform proposals across Spanish regions"
         }
       ],
       "signals": [
-        "media hostility",
-        "anti-establishment framing",
-        "information control debates"
+        "pop-culture hijacking",
+        "viral video game propaganda",
+        "youth voter outreach",
+        "anti-establishment messaging"
       ],
-      "article_count": 11,
+      "article_count": 8,
       "refs": [
         {
-          "title": "Trump administration insists it can ban MS NOW, CNN and Politico from White House press pool",
-          "source": "MS NOW",
-          "url": "https://www.ms.now/news/trump-administration-insists-it-can-ban-ms-now-cnn-and-politico-from-white-house-press-pool",
-          "date": "2026-11-18T21:35:57+00:00",
-          "category": "usa"
+          "title": "Javier Milei y la \"versión libertaria\" del GTA VI: la motosierra, los kirchneristas y Karina",
+          "source": "Lmneuquen.com",
+          "url": "https://www.lmneuquen.com/pais/javier-milei-y-la-version-libertaria-del-gta-vi-la-motosierra-los-kirchneristas-y-karina-n1261823",
+          "date": "2026-11-19T12:27:00+00:00",
+          "category": "argentina"
         },
         {
-          "title": "A külügy vizsgálja, hogyan juthattak el Szijjártóhoz a Tisza lejáratásáról szóló orosz iratok",
-          "source": "Kontroll",
-          "url": "https://kontroll.hu/cikk/belfold/2026/11/18/a-kueluegy-vizsgalja-hogyan-juthattak-el-szijjartohoz-a-tisza-lejaratasarol-szolo-orosz-iratok",
-          "date": "2026-11-18T16:41:31+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Összejátszhatott a Fidesz-kormány az oroszokkal a magyar választásoknál, eljárást indítottak az ügyben",
-          "source": "Portfolio.hu",
-          "url": "https://www.portfolio.hu/gazdasag/20261118/osszejatszhatott-a-fidesz-kormany-az-oroszokkal-a-magyar-valasztasoknal-eljarast-inditottak-az-ugyben-877476",
-          "date": "2026-11-18T15:47:00+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Vizsgálatot rendelt el a Külügyminisztérium az állítólag Szijjártónak eljuttatott orosz kormányzati iratokról, amelyek a Tisza lejáratásáról szóltak",
-          "source": "Telex",
-          "url": "https://telex.hu/kulfold/2026/11/18/kulugyminiszterium-vizsgalat-szijjarto-peter-orosz-kormany-levelezese-moszkva-nagykovet",
-          "date": "2026-11-18T14:59:34+00:00",
-          "category": "hungary"
-        },
-        {
-          "title": "Zia Yusuf: Shabana Mahmood only cares about tackling the “perception” of two-tier policing",
-          "source": "Reform UK",
-          "url": "https://reformparty.uk/news/zia-yusuf-mahmood-two-tier-policing",
-          "date": "2026-11-18T12:59:53+00:00",
+          "title": "Nigel Farage Plays GTA 6 To Stop Boats In English Channel",
+          "source": "Newsweek",
+          "url": "https://www.newsweek.com/videos/nigel-farage-plays-gta-6-to-stop-boats-in-english-channel",
+          "date": "2026-11-19T11:26:42+00:00",
           "category": "uk"
         },
         {
-          "title": "Shabana Mahmood dismisses Nigel Farage's claim of 'systematic two-tier policing' in Britain",
-          "source": "GB News",
-          "url": "https://www.gbnews.com/politics/politics-news-andy-burnham-brexit-surrender-eu-conservatives-kemi-badenoch-reform-nigel-farage",
-          "date": "2026-11-18T08:03:59+00:00",
+          "title": "Reform MPs transform themselves into GTA characters for launch day videos",
+          "source": "Brentwood Live",
+          "url": "https://www.brentwoodlive.co.uk/news/26743839.nigel-farage-grand-theft-auto-parody-gta-6-release/?ref=rss",
+          "date": "2026-11-19T10:37:06+00:00",
           "category": "uk"
+        },
+        {
+          "title": "Nigel Farage plays GTA 6-style video game starring Robert Jenrick",
+          "source": "Yahoo",
+          "url": "https://www.yahoo.com/news/videos/nigel-farage-plays-gta-6-101757208.html",
+          "date": "2026-11-19T10:17:57+00:00",
+          "category": "uk"
+        },
+        {
+          "title": "GTA 6 versión libertaria: el video animado donde Javier Milei promete destruir el Banco Central",
+          "source": "Ambito",
+          "url": "https://www.ambito.com/politica/gta-6-version-libertaria-el-video-animado-donde-javier-milei-promete-destruir-el-banco-central-n6346942",
+          "date": "2026-11-19T01:16:00+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Vox lanza un videojuego para dar a conocer sus propuestas para distintos puntos de España",
+          "source": "Diario de Santiago",
+          "url": "https://www.diariodesantiago.es/espana/vox-lanza-un-videojuego-para-dar-a-conocer-sus-propuestas-para-distintos-puntos-de-espana/",
+          "date": "2026-11-19T00:27:47+00:00",
+          "category": "spain"
         }
       ],
-      "first_seen": "2026-11-12T07:48:42+00:00",
-      "last_seen": "2026-11-19T08:02:37+00:00"
+      "first_seen": "2026-11-19T21:03:59+00:00",
+      "last_seen": "2026-11-19T21:03:59+00:00"
     }
   ]
 }
