@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-23T08:20:53+00:00",
+  "updated_at": "2026-11-24T00:27:43+00:00",
   "lookback_hours": 48,
   "model": "Gemini 3.6 Flash",
   "status": "ok",
@@ -7,62 +7,69 @@
     {
       "id": "far-right-momentum-and-electoral-contestation-ahead-of-major-votes",
       "title": "Far-Right Momentum and Electoral Contestation Ahead of Major Votes",
-      "blurb": "Right-wing parties across Europe and the Americas are ramping up regional and national election campaigns while navigating poll swings and potential coalition pacts. Coverage highlights competitive campaign maneuvers in Spain's 29-N elections, early positioning for France's 2027 presidential race, program formulation for Germany's upcoming regional elections, and electoral strategy debates in Argentina, Norway, and the UK.",
+      "blurb": "Right-wing parties across Europe and South America are gearing up for snap elections, presidential cycles, and legislative battles. As Spain approaches its November 29 snap vote and France's 2027 presidential positioning intensifies, right-wing factions are driving media narratives around coalition viability and polling surges.",
       "convergence": 5,
       "countries": [
         {
           "name": "🇪🇸 Vox",
-          "note": "Intense campaign activity and polling analysis ahead of the 29-N vote, with polls projecting potential PP-Vox majorities."
+          "note": "Dominates election coverage ahead of the 29N snap election, debating potential governing coalitions with the PP while attacking the ruling PSOE."
         },
         {
           "name": "🇫🇷 Rassemblement National",
-          "note": "Marine Le Pen and RN figures build early momentum and foreign media visibility for the 2027 presidential race."
+          "note": "Maintains a strong lead in 2027 presidential polls as Marine Le Pen and Jordan Bardella frame their platform against center-right rivals."
         },
         {
-          "name": "🇩🇪 Alternative für Deutschland",
-          "note": "AfD state branches convene party congresses in North Rhine-Westphalia to finalize 2027 election manifestos."
-        },
-        {
-          "name": "🇦🇷 La Libertad Avanza",
-          "note": "Milei moves to suspend primary elections (PASO) while consolidating provincial party structures for future elections."
-        },
-        {
-          "name": "🇬🇧 Reform UK",
-          "note": "Nigel Farage explores non-aggression pacts with rival right-wing groups to counter Labour's electoral edge."
+          "name": "🇵🇱 Prawo i Sprawiedliwość",
+          "note": "Mobilizes presidential candidate Karol Nawrocki for international exposure while Jarosław Kaczyński outlines strategy for returning to power."
         },
         {
           "name": "🇳🇴 Fremskrittspartiet",
-          "note": "FrP hits record poll numbers of over 35%, solidifying a broad right-leaning parliamentary majority."
+          "note": "Reaches record polling numbers of up to 35.7%, sharpening opposition to the sitting government ahead of upcoming votes."
+        },
+        {
+          "name": "🇩🇪 Alternative für Deutschland",
+          "note": "Prepares state and municipal election campaigns while forcing center-right parties to defend political cordons sanitaires."
+        },
+        {
+          "name": "🇸🇪 Sverigedemokraterna",
+          "note": "Leverages parliamentary clout to force debate among opposition and governing center-right parties over future coalition terms."
         }
       ],
       "signals": [
         "parallel elections",
-        "campaign messaging",
-        "polling surges",
-        "coalition maneuvering"
+        "coalition bargaining",
+        "rising polling numbers",
+        "campaign rhetoric"
       ],
-      "article_count": 42,
+      "article_count": 55,
       "refs": [
         {
-          "title": "El PSOE ganaría en Canarias, Vox triplica sus resultados y Coalición Canaria se juega su único diputado",
-          "source": "Diario de Avisos",
-          "url": "https://diariodeavisos.elespanol.com/2026/11/psoe-ganaria-canarias-vox-triplica-resultados-coalicion-canaria/",
-          "date": "2026-11-23T00:06:51+00:00",
+          "title": "El último CIS antes de las elecciones da al PSOE una ventaja de casi diez puntos sobre el PP, que con Vox no suma mayoría absoluta",
+          "source": "elDiario.es",
+          "url": "https://www.eldiario.es/politica/ultimo-cis-elecciones-da-psoe-ventaja-diez-puntos-pp-vox-no-suma-mayoria-absoluta_1_13685466.html",
+          "date": "2026-11-23T20:33:27+00:00",
           "category": "spain"
         },
         {
-          "title": "Présidentielle 2027 : qui sont les principaux candidats déjà déclarés ?",
-          "source": "Touteleurope.eu",
-          "url": "https://www.touteleurope.eu/vie-politique-des-etats-membres/presidentielle-2027-qui-sont-les-candidats-deja-declares/",
-          "date": "2026-11-23T00:02:35+00:00",
-          "category": "france"
+          "title": "Últimos sondeos en España auguran una coalición de PP y Vox",
+          "source": "PanAm Post",
+          "url": "https://panampost.com/efe-panampost/2026/11/23/ultimos-sondeos-en-espana-auguran-una-coalicion-de-pp-y-vox/",
+          "date": "2026-11-23T20:08:22+00:00",
+          "category": "spain"
         },
         {
-          "title": "La Libertad Avanza reunió a su Congreso en Neuquén, pero no definió candidatos para las elecciones de 2027",
-          "source": "Diario Neuquino",
-          "url": "https://diarioneuquino.com.ar/la-libertad-avanza-reunio-a-su-congreso-en-neuquen-pero-no-definio-candidatos-para-las-elecciones-de-2027/",
-          "date": "2026-11-22T22:48:35+00:00",
-          "category": "argentina"
+          "title": "KO traci, PiS zyskuje. Nowy sondaż poparcia dla partii politycznych",
+          "source": "Niezależna",
+          "url": "https://niezalezna.pl/polityka/ko-traci-pis-zyskuje-nowy-sondaz-poparcia-dla-partii-politycznych/584799",
+          "date": "2026-11-23T18:28:00+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Marine Le Pen maintains strong lead in 2027 French presidential race: Poll",
+          "source": "A News",
+          "url": "https://www.anews.com.tr/sport/2026/11/23/marine-le-pen-maintains-strong-lead-in-2027-french-presidential-race-poll",
+          "date": "2026-11-23T13:20:51+00:00",
+          "category": "france"
         },
         {
           "title": "Rekordmåling for Frp: 35,7 prosent",
@@ -70,229 +77,230 @@
           "url": "https://inyheter.no/22/11/2026/rekordmaling-for-frp-357-prosent/",
           "date": "2026-11-22T20:55:31+00:00",
           "category": "norway"
-        },
-        {
-          "title": "NRW-AfD beschließt Wahlprogramm für 2027",
-          "source": "Denkstrom",
-          "url": "https://denkstrom.org/artikel/nrw-afd-beschliesst-wahlprogramm-fuer-2027/",
-          "date": "2026-11-22T19:38:00+00:00",
-          "category": "germany"
-        },
-        {
-          "title": "Conservatives and Reform UK deal must be on the table to beat Labour",
-          "source": "News24",
-          "url": "https://www.news24.com.au/politics/uk-politics/conservatives-and-reform-uk-deal-must-be-on-the-table-to-beat-labour/video/003859daf7eaef9a6f0c83d074b6a96b",
-          "date": "2026-11-22T11:44:16+00:00",
-          "category": "uk"
         }
       ],
       "first_seen": "2026-11-04T07:02:23+00:00",
-      "last_seen": "2026-11-23T08:20:53+00:00"
+      "last_seen": "2026-11-24T00:27:43+00:00"
     },
     {
       "id": "national-priority-rhetoric-and-hardline-migration-demands",
       "title": "National Priority Rhetoric and Hardline Migration Demands",
-      "blurb": "Right-wing platforms in Germany, Spain, and the UK are converging around explicit 'national priority' framing and aggressive demands for forced returns or remigration. Hardline immigration policies targeting foreign benefits and border enforcement remain core themes used to rally base supporters.",
-      "convergence": 5,
+      "blurb": "Right-wing platforms continue to push hardline anti-immigration policies, focusing on enforcement mechanisms, labor restrictions, and remigration concepts. Figures in Germany, the US, Norway, and the UK are coordinating rhetorical emphasis on prioritizing native citizens over foreign nationals.",
+      "convergence": 4,
       "countries": [
         {
           "name": "🇩🇪 Alternative für Deutschland",
-          "note": "AfD leadership calls for large-scale deportations of up to 2.6 million foreigners, making 'remigration' central to campaign manifestos."
+          "note": "Debates internal limits on remigration and mass deportation proposals, pushing hardline rhetoric into mainstream political discussions."
         },
         {
-          "name": "🇪🇸 Vox",
-          "note": "Vox leaders mandate 'prioridad nacional' for public services and highlight remigration as a cornerstone of their electoral platform."
+          "name": "🇺🇸 MAGA / Trump",
+          "note": "Enforces E-Verify compliance on federal contractors and institutes restrictions targeting international students and mixed-status families."
+        },
+        {
+          "name": "🇳🇴 Fremskrittspartiet",
+          "note": "Rallies against state expenditure on non-Western immigrant translation services and demands tighter integration standards."
         },
         {
           "name": "🇬🇧 Reform UK",
-          "note": "Reform UK advocates banning student loans and tightening welfare rules for non-UK nationals."
+          "note": "Frames incoming migrants as threats to working-class identity and local infrastructure capacity."
         }
       ],
       "signals": [
-        "shared framing",
-        "policy imitation",
-        "contagion of rhetoric",
-        "remigration demands"
+        "remigration rhetoric",
+        "hardline deportation demands",
+        "border enforcement",
+        "nativist framing"
       ],
-      "article_count": 18,
+      "article_count": 15,
       "refs": [
         {
-          "title": "Isabel Pérez Moñino, portavoz de Vox en Madrid: \"La prioridad nacional es inevitable para que España funcione. Los servicios están colapsados\"",
-          "source": "El Mundo",
-          "url": "https://www.elmundo.es/madrid/2026/11/23/6b008f4921efa04f628b4580.html",
-          "date": "2026-11-22T23:02:00+00:00",
-          "category": "spain"
+          "title": "Trump administration puts more than 1.5K contractors on notice over E-Verify compliance",
+          "source": "HR Dive",
+          "url": "https://www.hrdive.com/news/trump-administration-puts-more-than-15k-contractors-on-notice-over-e-verify-compliance/875510/",
+          "date": "2026-11-23T21:01:06+00:00",
+          "category": "usa"
         },
         {
-          "title": "Chamorro (Vox) defiende la prioridad nacional, la remigración y la bajada de impuestos en Ciudad Real",
-          "source": "ABC",
-          "url": "https://www.abc.es/espana/castilla-la-mancha/chamorro-vox-defiende-prioridad-nacional-remigracion-bajada-20261122194347-nt.html",
-          "date": "2026-11-22T18:43:48+00:00",
-          "category": "spain"
+          "title": "22 states sue Trump administration to block federal rule on mixed-status households",
+          "source": "WBNG",
+          "url": "https://www.wbng.com/2026/11/23/22-states-sue-trump-administration-block-federal-rule-mixed-status-households/",
+          "date": "2026-11-23T20:31:00+00:00",
+          "category": "usa"
         },
         {
-          "title": "In NRW setzt die AfD auf „rechtsstaatliche Remigration“",
-          "source": "FAZ",
-          "url": "https://www.faz.net/aktuell/politik/inland/in-nrw-setzt-die-afd-auf-rechtsstaatliche-remigration-201705943.html",
-          "date": "2026-11-22T17:29:07+00:00",
+          "title": "Maximilian Krah: AfD-Mann weist Maximalforderungen in Abschiebedebatte zurück",
+          "source": "Stuttgarter Nachrichten",
+          "url": "https://www.stuttgarter-nachrichten.de/politik/maximilian-krah-afd-mann-weist-maximalforderungen-in-abschiebedebatte-zurueck-79774446.html",
+          "date": "2026-11-23T19:06:16+00:00",
           "category": "germany"
         },
         {
-          "title": "AfD Co-Leader Calls for Repatriating Up to 2.6M People From Germany, Including Ukrainians",
-          "source": "Kyiv Post",
-          "url": "https://www.kyivpost.com/post/90852",
-          "date": "2026-11-22T14:40:53+00:00",
+          "title": "Richtungsstreit in der AfD: Der Kampf um die Grenzen der „Remigration“",
+          "source": "WELT",
+          "url": "https://www.welt.de/politik/deutschland/plus6b007cf939a3e8110f0e4782/richtungsstreit-in-der-afd-der-kampf-um-die-grenzen-der-remigration.html",
+          "date": "2026-11-23T16:47:09+00:00",
           "category": "germany"
         },
         {
-          "title": "Reform vows to ban foreign graduates who fail to repay student loans from UK",
-          "source": "The Independent",
-          "url": "https://www.independent.co.uk/news/uk/politics/reform-foreign-graduate-student-loan-ban-b3089282.html",
-          "date": "2026-11-21T21:35:00+00:00",
+          "title": "Reform's Scotland leader defends deputy calling migrants 'strangers' as working-class",
+          "source": "The Herald",
+          "url": "https://www.heraldscotland.com/news/26754976.offord-defends-reform-deputy-calling-migrants-strangers/",
+          "date": "2026-11-23T16:29:08+00:00",
           "category": "uk"
         },
         {
-          "title": "Surge in unemployed non-UK nationals fuels call for tighter rules on migrants and benefits",
-          "source": "AOL.co.uk",
-          "url": "https://www.aol.co.uk/articles/surge-unemployed-non-uk-nationals-140000000.html",
-          "date": "2026-11-21T14:00:00+00:00",
-          "category": "uk"
+          "title": "FrP snakker om «ikke-vestlige» innvandrere, men sier ikke hvem de er",
+          "source": "Utrop",
+          "url": "https://www.utrop.no/nyheter/nytt/395599/",
+          "date": "2026-11-23T07:38:24+00:00",
+          "category": "norway"
         }
       ],
       "first_seen": "2026-10-28T06:23:48+00:00",
-      "last_seen": "2026-11-23T08:20:53+00:00"
+      "last_seen": "2026-11-24T00:27:43+00:00"
     },
     {
       "id": "judicial-crackdowns-and-surveillance-targeting-the-far-right",
       "title": "Judicial Crackdowns and Surveillance Targeting the Far-Right",
-      "blurb": "Far-right movements across several nations face intensifying legal investigations, judicial rulings, and potential regulatory bans, prompting fierce allegations of political persecution. Figures in Brazil, France, Germany, and Poland frame judicial and state oversight as institutional warfare designed to delegitimize conservative leadership.",
+      "blurb": "Right-wing leaders across multiple jurisdictions face intense legal scrutiny, judicial summons, and law enforcement investigations. Right-wing media outlets frame these actions as politically motivated lawfare by left-wing or establishment judicial bodies.",
       "convergence": 4,
       "countries": [
         {
           "name": "🇧🇷 Bolsonarismo / Partido Liberal",
-          "note": "Flávio Bolsonaro accuses the Brazilian judiciary of political persecution following Supreme Court coup conviction rulings."
+          "note": "Supreme Court Justice Moraes issues formal citations against Flávio Bolsonaro for slander while maintaining judicial restrictions on Jair Bolsonaro."
         },
         {
           "name": "🇫🇷 Rassemblement National",
-          "note": "Marine Le Pen defends against investigations into leaked confidential documents from the Interior Ministry found with allies."
-        },
-        {
-          "name": "🇩🇪 Alternative für Deutschland",
-          "note": "Renewed calls and legal pressure emerge from government officials seeking a formal ban procedure against the AfD."
+          "note": "Responds to law enforcement raids and investigations into state intelligence leaks allegedly reaching Jordan Bardella's circle."
         },
         {
           "name": "🇵🇱 Prawo i Sprawiedliwość",
-          "note": "PiS supporters protest government attempts to reform the Constitutional Tribunal, claiming President Nawrocki is targeted by the state."
+          "note": "Denounces police raids targeting aligned lawyers and ongoing constitutional court disputes with Donald Tusk's administration."
+        },
+        {
+          "name": "🇪🇸 Vox",
+          "note": "Faces Electoral Board sanction threats while accusing government authorities of planning electoral fraud and judicial interference."
         }
       ],
       "signals": [
-        "judicial scrutiny",
-        "persecution rhetoric",
-        "investigative probes",
-        "party ban threats"
+        "judicial surveillance",
+        "police raids",
+        "electoral board sanctions",
+        "lawfare claims"
       ],
-      "article_count": 22,
+      "article_count": 18,
       "refs": [
         {
-          "title": "Fuites présumées vers le RN : un mail retrouvé chez Chatillon, Marine Le Pen se défend",
-          "source": "Entrevue.fr",
-          "url": "https://entrevue.fr/politique/fuites-presumees-vers-le-rn-un-mail-retrouve-chez-chatillon-marine-le-pen/",
-          "date": "2026-11-23T00:04:58+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Flávio Bolsonaro accuses Brazilian judiciary of political persecution",
-          "source": "Fox News",
-          "url": "https://www.foxnews.com/video/6408744941112",
-          "date": "2026-11-22T22:44:36+00:00",
+          "title": "Moraes usa exemplo de Eduardo Bolsonaro e manda citar Flávio por edital por calúnia contra Lula",
+          "source": "JOTA Info",
+          "url": "https://www.jota.info/stf/do-supremo/moraes-usa-exemplo-de-eduardo-bolsonaro-e-manda-citar-flavio-por-edital-por-calunia-contra-lula",
+          "date": "2026-11-23T21:17:41+00:00",
           "category": "brazil"
         },
         {
-          "title": "French interior ministry rocked by probe into prefect's leaks to RN",
-          "source": "Euronews.com",
-          "url": "https://www.euronews.com/2026/11/22/french-interior-ministry-rocked-by-probe-into-prefects-leaks-to-national-rally",
-          "date": "2026-11-22T19:35:17+00:00",
-          "category": "france"
+          "title": "Supreme Court Warns of Constitutional Power Struggle",
+          "source": "American Center for Law and Justice",
+          "url": "https://aclj.org/news/supreme-court-warns-of-constitutional-power-struggle",
+          "date": "2026-11-23T21:06:46+00:00",
+          "category": "poland"
         },
         {
-          "title": "Flávio Bolsonaro afirma em entrevista à Fox News que foi prejudicado por “sistema” político e judicial",
-          "source": "Portal VV8",
-          "url": "https://portalvv8.com.br/noticia/86770/flavio-bolsonaro-afirma-em-entrevista-a-fox-news-que-foi-prejudicado-por-qsistemaq-politico-e-judicial",
-          "date": "2026-11-22T18:47:21+00:00",
+          "title": "Moraes determina citação de Flávio Bolsonaro por edital em ação por calúnia contra Lula",
+          "source": "Portal Diário do RN",
+          "url": "https://diariodorn.com.br/moraes-determina-citacao-de-flavio-bolsonaro-por-edital-em-acao-por-calunia-contra-lula/",
+          "date": "2026-11-23T20:40:05+00:00",
           "category": "brazil"
         },
         {
-          "title": "\"NS-Gedankengut\" - Nach FAZ-Beitrag zu Tillschneider: Prien macht Druck für AfD-Verbot",
-          "source": "Deutschlandfunk",
-          "url": "https://www.deutschlandfunk.de/nach-faz-beitrag-zu-tillschneider-prien-macht-druck-fuer-afd-verbot-100.html",
-          "date": "2026-11-22T18:22:55+00:00",
-          "category": "germany"
+          "title": "Jordan Bardella trouve le « timing » de la perquisition au RN « étrange »",
+          "source": "20 Minutes",
+          "url": "https://www.20minutes.fr/politique/4265225-20261123-fuites-presumees-profit-rn-jordan-bardella-trouve-timing-perquisition-etrange",
+          "date": "2026-11-23T20:11:00+00:00",
+          "category": "france"
         },
         {
-          "title": "Operacja likwidacja. Prezydent Karol Nawrocki na celowniku władzy",
-          "source": "wPolityce.pl",
-          "url": "https://wpolityce.pl/tygodniksieci/operacja-likwidacja,303060",
-          "date": "2026-11-22T17:45:56+00:00",
+          "title": "The Electoral Board opens a sanctioning file against Silvia Intxaurrondo for questioning Vox's presence on RTVE.",
+          "source": "Demócrata",
+          "url": "https://www.democrata.es/en/general-elections-spain/the-electoral-board-opens-a-sanctioning-file-against-silvia-intxaurrondo-for-questioning-vox-s-presence-on-rtve/amp/",
+          "date": "2026-11-23T16:46:00+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Police Raid Lawyer Who Filed Indictment Against Tusk in Latest ‘Fake Alert’ Incident",
+          "source": "Hungarian Conservative",
+          "url": "https://www.hungarianconservative.com/articles/current/poland-tusk-police-raid-fake-alert-intimidation-pis/",
+          "date": "2026-11-23T16:10:51+00:00",
           "category": "poland"
         }
       ],
       "first_seen": "2026-10-29T18:42:31+00:00",
-      "last_seen": "2026-11-23T08:20:53+00:00"
+      "last_seen": "2026-11-24T00:27:43+00:00"
     },
     {
       "id": "transnational-friction-over-us-russia-foreign-policy",
       "title": "Transnational Friction Over US-Russia Foreign Policy",
-      "blurb": "Trump's foreign policy stances and interactions with Vladimir Putin are creating significant friction among international conservative allies. British right-wing figures are explicitly distancing themselves from Washington's stance, while French right-wing leaders maintain a cautious stance on foreign entanglements.",
+      "blurb": "European right-wing parties are grappling with divergent stances on the Ukraine war and relations with Vladimir Putin. While UK right-wingers publicly distance themselves from pro-Putin statements made in the US, French and Hungarian conservative leaders maintain skepticism toward EU aid and NATO posture.",
       "convergence": 4,
       "countries": [
         {
           "name": "🇬🇧 Reform UK",
-          "note": "Senior Reform UK figures like Richard Tice strongly reject Trump's positive framing of Putin, declaring Putin is not a friend."
-        },
-        {
-          "name": "🇺🇸 MAGA / Trump",
-          "note": "Trump administration officials push for rapid peace negotiations while DNI Jay Clayton publicly insists Putin is not America's friend."
+          "note": "Leaders publicly reject Donald Trump's sympathetic social media posts regarding Vladimir Putin, declaring Putin 'not a friend'."
         },
         {
           "name": "🇫🇷 Rassemblement National",
-          "note": "Marine Le Pen declines invitations to visit Kyiv, refusing international trips during her presidential campaign."
+          "note": "Marine Le Pen refuses to label Putin a war criminal and reiterates opposition to Ukraine's ascension to the European Union."
+        },
+        {
+          "name": "🇭🇺 Fidesz / Tisza",
+          "note": "Sparks sharp debate as opposition leader Péter Magyar rejects tying Ukraine funding to the EU budget while Orbán maintains anti-Kyiv rhetoric."
+        },
+        {
+          "name": "🇩🇪 Alternative für Deutschland",
+          "note": "Faces heavy attacks from establishment German politicians accusing party leaders of acting as Kremlin collaborators."
         }
       ],
       "signals": [
-        "foreign policy divergence",
-        "distancing from Trump",
-        "rhetorical friction",
-        "diplomatic stance"
+        "distance from Trump-Putin rhetoric",
+        "opposition to Ukraine aid",
+        "EU budget veto threat",
+        "divergent foreign policy frames"
       ],
-      "article_count": 12,
+      "article_count": 16,
       "refs": [
         {
-          "title": "Putin is ‘not America’s friend in Ukraine,’ DNI Jay Clayton says",
-          "source": "The Washington Post",
-          "url": "https://www.washingtonpost.com/national-security/2026/11/22/putin-is-not-americas-friend-ukraine-dni-jay-clayton-says/",
-          "date": "2026-11-23T00:18:58+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Marine Le Pen refused to go to Kyiv at Zelenskyy's invitation",
-          "source": "Українські Національні Новини (УНН)",
-          "url": "https://unn.ua/en/news/marine-le-pen-refused-to-go-to-kyiv-at-zelenskyys-invitation",
-          "date": "2026-11-22T23:16:18+00:00",
+          "title": "Marine Le Pen declines Zelenskyy's invitation to visit Kyiv: here's how she explained it",
+          "source": "Ukranews",
+          "url": "https://ukranews.com/en/news/1189493-marine-le-pen-declined-zelenskyys-invitation-to-visit-kyiv-heres-how-she-explained-it",
+          "date": "2026-11-23T20:30:14+00:00",
           "category": "france"
         },
         {
-          "title": "Richard Tice Rejects Trump's Putin Post in Uk Politicians' Response To Trump's Comments On Putin",
-          "source": "شبكة تواصل الإخبارية",
-          "url": "https://twaslnews1.twaslnews.com/8135813/",
-          "date": "2026-11-22T19:26:22+00:00",
+          "title": "Magyar Péter: Nem fogadjuk el azt, hogy Ukrajna finanszírozását összekössék az uniós költségvetéssel",
+          "source": "Magyar Hang",
+          "url": "https://hang.hu/kulfold/magyar-peter-nem-fogadjuk-el-azt-hogy-ukrajna-finanszirozasat-osszekossek-az-unios-koltsegvetessel-194100",
+          "date": "2026-11-23T19:59:00+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "‘Just wrong’: British right distances itself from Trump after Putin ‘friend’ post",
+          "source": "Daily Sun",
+          "url": "https://www.daily-sun.com/world/910865/just-wrong-british-right-distances-itself-from-trump-after-putin-friend-post",
+          "date": "2026-11-23T14:51:41+00:00",
           "category": "uk"
         },
         {
-          "title": "UK right-wingers distance themselves from Trump: Putin is not our friend",
-          "source": "Українська правда",
-          "url": "https://www.pravda.com.ua/eng/news/2026/11/22/8064082/",
-          "date": "2026-11-22T16:39:00+00:00",
-          "category": "uk"
+          "title": "Le Pen Rejects Ukraine’s EU Membership Bid, Won’t Call Putin a War Criminal",
+          "source": "Kyiv Post",
+          "url": "https://www.kyivpost.com/post/90927",
+          "date": "2026-11-23T13:17:38+00:00",
+          "category": "france"
+        },
+        {
+          "title": "CDU-Mann bei „Caren Miosga“ - Röttgen schimpft AfD: „Kollaborateure des Kriegsverbrechers“",
+          "source": "Yahoo Nachrichten",
+          "url": "https://de.nachrichten.yahoo.com/cdu-mann-caren-miosga-r%C3%B6ttgen-071021103.html",
+          "date": "2026-11-23T07:10:00+00:00",
+          "category": "germany"
         },
         {
           "title": "Richard Tice 'appalled' by Trump's praise for Putin after president shared picture calling Russian leader a 'friend'",
@@ -303,77 +311,84 @@
         }
       ],
       "first_seen": "2026-11-22T20:02:33+00:00",
-      "last_seen": "2026-11-23T08:20:53+00:00"
+      "last_seen": "2026-11-24T00:27:43+00:00"
     },
     {
       "id": "pensions-overhaul-and-fiscal-populism-debates",
       "title": "Pensions Overhaul and Fiscal Populism Debates",
-      "blurb": "Socioeconomic debates regarding pension age rollbacks, budget deficits, and state-subsidized credit dominate right-wing policy discussions. Movements in France, Argentina, Poland, and Norway debate the fiscal costs of populist social spending versus market realities.",
+      "blurb": "Economic debates across right-wing parties center on pension reform, welfare protections for domestic workers, and state intervention against inflation. Parties balance fiscal conservatism with populist promises to protect retirees and working-class voters.",
       "convergence": 3,
       "countries": [
         {
           "name": "🇫🇷 Rassemblement National",
-          "note": "RN faces intense scrutiny over the 100B+ euro cost of its proposed retirement at 60 and constitutional golden rule proposals."
+          "note": "Pledges retirement at 60 for early-career workers while navigating fiscal critique over potential pension shortfalls."
         },
         {
-          "name": "🇦🇷 La Libertad Avanza",
-          "note": "Milei defends Central Bank gold reserve transfers while facing warnings from international financial media over debt servicing."
+          "name": "🇮🇹 Fratelli d'Italia / Lega",
+          "note": "Proposes extending the 'Opzione Donna' early retirement scheme in the 2027 budget amendments while debating tax amnesties."
         },
         {
           "name": "🇵🇱 Prawo i Sprawiedliwość",
-          "note": "PiS pushes affordable housing proposals featuring government-subsidized 2.5% mortgage rates."
+          "note": "Unveils state-subsidized housing and zero-down-payment mortgage promises to counter living costs."
         },
         {
-          "name": "🇳🇴 Fremskrittspartiet",
-          "note": "FrP faces political pushback and accusations regarding its pension promises to voters."
+          "name": "🇦🇷 La Libertad Avanza",
+          "note": "Navigates 2027 budget negotiations amid persistent inflation, economic recession, and declining wage purchasing power."
         }
       ],
       "signals": [
-        "fiscal messaging",
-        "populist economic platforms",
-        "pension reform debates",
-        "budgetary scrutiny"
+        "pension reform demands",
+        "fiscal populism",
+        "welfare promises",
+        "budgetary battles"
       ],
-      "article_count": 15,
+      "article_count": 14,
       "refs": [
         {
-          "title": "Javier Milei defendió la gestión del oro del BCRA",
-          "source": "Cuestión Entrerriana",
-          "url": "https://cuestionentrerriana.com.ar/milei-ataca-con-ironias-para-tapar-las-perdidas-millonarias-del-banco-central-con-el-oro/",
-          "date": "2026-11-22T22:55:45+00:00",
-          "category": "argentina"
+          "title": "Manovra 2027, oltre 1.700 emendamenti dichiarati inammissibili",
+          "source": "Sky TG24",
+          "url": "https://tg24.sky.it/politica/2026/11/23/manovra-2027-emendamenti-inammissibili",
+          "date": "2026-11-23T20:50:47+00:00",
+          "category": "italy"
         },
         {
-          "title": "Retraite à 60 ans de Marine Le Pen : il manque plus de 100 milliards d’euros",
-          "source": "Contrepoints",
-          "url": "https://contrepoints.org/retraite-a-60-ans-de-marine-le-pen-il-manque-plus-de-100-milliards-deuros/",
-          "date": "2026-11-22T19:59:32+00:00",
+          "title": "Retraites: Jordan Bardella, président du Rassemblement national, souhaite \"une réforme ambitieuse, pour la France du travail\"",
+          "source": "Orange Actualités",
+          "url": "https://actu.orange.fr/videos/france/retraites-jordan-bardella-president-du-rassemblement-national-souhaite-une-reforme-ambitieuse-pour-la-france-du-travail-CNT000002u15pL.html",
+          "date": "2026-11-23T19:24:45+00:00",
           "category": "france"
         },
         {
-          "title": "Réforme des retraites du Rassemblement national : les femmes travaillant à temps partiel auront-elles toujours droit à une retraite ? Réponse de Jean-Philippe Tanguy, président délégué du groupe RN à l'Assemblée nationale. Pour en savoir plus, écoutez Le",
-          "source": "Facebook",
-          "url": "https://www.facebook.com/franceinter/posts/r%C3%A9forme-des-retraites-du-rassemblement-national-les-femmes-travaillant-%C3%A0-temps-p/1655773469911329/",
-          "date": "2026-11-22T18:30:33+00:00",
-          "category": "france"
-        },
-        {
-          "title": "Kredyt 2,5 proc. Burza w sieci już drugi dzień. Czarnek odpowiada",
-          "source": "Money.pl",
-          "url": "https://www.money.pl/gospodarka/kredyt-2-5-proc-goraco-w-sieci-czarnek-manipulacja-7353791319705632a.html",
-          "date": "2026-11-22T15:47:44+00:00",
+          "title": "Dopłaty do kredytów i państwo jako deweloper. Tak PiS chce walczyć z problemem mieszkaniowym w Polsce",
+          "source": "Forsal.pl",
+          "url": "https://forsal.pl/nieruchomosci/aktualnosci/artykuly/11350263,polski-program-mieszkaniowy-pis-opis-podsumowanie-komentarze.html",
+          "date": "2026-11-23T08:42:05+00:00",
           "category": "poland"
         },
         {
-          "title": "Anklager Sylvi for pensjons-bløff",
-          "source": "Dagbladet",
-          "url": "https://www.dagbladet.no/nyheter/anklager-sylvi-for-pensjons-bloff/85426581",
-          "date": "2026-11-22T12:51:59+00:00",
-          "category": "norway"
+          "title": "Opzione Donna, Lega e FdI propongono di riaprirla nel 2027. Chi potrebbe andare in pensione prima",
+          "source": "Ascuolaoggi",
+          "url": "https://www.ascuolaoggi.com/post/opzione-donna-lega-e-fdi-propongono-di-riaprirla-nel-2027-chi-potrebbe-andare-in-pensione-prima",
+          "date": "2026-11-23T06:58:50+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Javier Milei buscará la reelección en una Argentina que crece con menos trabajo, más informalidad y menos poder adquisitivo",
+          "source": "Sonido Gremial",
+          "url": "https://sonidogremial.com.ar/javier-milei-buscara-la-reeleccion-en-una-argentina-que-crece-con-menos-trabajo-mas-informalidad-y-menos-poder-adquisitivo/",
+          "date": "2026-11-23T04:17:05+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Economía bajo el gobierno de Javier Milei: seis de cada diez argentinos dicen estar peor, los sueldos no alcanzan y crece el endeudamiento",
+          "source": "Impacto Castex",
+          "url": "https://impactocastex.com.ar/nacionales/19670/economia-bajo-el-gobierno-de-javier-milei-seis-de-cada-diez-argentinos-dicen",
+          "date": "2026-11-23T01:30:00+00:00",
+          "category": "argentina"
         }
       ],
       "first_seen": "2026-11-18T20:59:12+00:00",
-      "last_seen": "2026-11-23T08:20:53+00:00"
+      "last_seen": "2026-11-24T00:27:43+00:00"
     }
   ]
 }
