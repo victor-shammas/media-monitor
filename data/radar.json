@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-24T22:50:07+00:00",
+  "updated_at": "2026-11-25T09:18:26+00:00",
   "lookback_hours": 48,
   "model": "Gemini 3.6 Flash",
   "status": "ok",
@@ -7,39 +7,57 @@
     {
       "id": "far-right-momentum-and-electoral-contestation-ahead-of-major-votes",
       "title": "Far-Right Momentum and Electoral Contestation Ahead of Major Votes",
-      "blurb": "Right-wing parties across Europe are leveraging polling gains and parliamentary friction to position themselves as central power brokers. In Spain and Sweden, conservative leaders face intense negotiations over coalition terms, while French and German far-right figures attempt to convert steady electoral momentum into formal governance roles.",
+      "blurb": "Right-wing and far-right parties across Europe are navigating high-stakes election campaigns and complex parliamentary coalition negotiations. From Spain's upcoming snap election to government formation battles in Sweden and Germany, right-wing forces are seeking to leverage momentum to dictate coalition terms or secure executive power.",
       "convergence": 5,
       "countries": [
         {
           "name": "🇪🇸 Vox",
-          "note": "Positioned as an essential coalition partner for the PP ahead of the November 29 snap election, demanding cabinet seats and policy concessions."
+          "note": "Campaigning aggressively ahead of the November 29 snap election, positioning itself as an indispensable coalition partner for the PP."
         },
         {
           "name": "🇸🇪 Sverigedemokraterna",
-          "note": "Signals willingness to tolerate Ulf Kristersson's prime ministerial vote while using its parliamentary weight to force concessions from moderate parties."
-        },
-        {
-          "name": "🇫🇷 Rassemblement National",
-          "note": "Marine Le Pen maintains strong presidential polling leads for 2027 while mobilizing party infrastructure to fend off rival right-wing contenders."
+          "note": "Playing a central kingmaker role in Swedish prime ministerial vote negotiations and government formation."
         },
         {
           "name": "🇩🇪 Alternative für Deutschland",
-          "note": "Sustains high polling figures while exploring formal cooperation agreements with opposition factions in state assemblies."
+          "note": "Facing coalition rejections from BSW while building electoral dominance in eastern state politics like Saxony-Anhalt."
+        },
+        {
+          "name": "🇫🇷 Rassemblement National",
+          "note": "Maneuvering for the 2027 presidential race as rivals attempt to counter Marine Le Pen's polling leads."
+        },
+        {
+          "name": "🇬🇧 Reform UK",
+          "note": "Tabling no-confidence motions in devolved parliaments and challenging established parties in local council fights."
         }
       ],
       "signals": [
-        "electoral positioning",
+        "parallel elections",
         "coalition negotiations",
-        "polling momentum",
-        "shared framing"
+        "electoral momentum",
+        "parliamentary strategy"
       ],
-      "article_count": 35,
+      "article_count": 55,
       "refs": [
         {
-          "title": "PP y Vox presentan juntos 17 enmiendas parciales al Presupuesto andaluz",
-          "source": "ABC",
-          "url": "https://www.abc.es/espana/andalucia/pp-vox-presentan-juntos-enmiendas-parciales-presupuesto-20261124182322-nts.html",
-          "date": "2026-11-24T17:23:22+00:00",
+          "title": "España: PSOE y PP empatan en la última encuesta antes de la elección pero Vox le da mayoría a la derecha - Ex-ante",
+          "source": "",
+          "url": "https://www.ex-ante.cl/internacional/espana-encuesta-da-victoria-pp-y-vox/",
+          "date": "2026-11-24T21:23:07+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "BSW-Zoff: Wagenknecht hält Abmachungen mit AfD für möglich – „Schriftliche Vereinbarungen nicht ausschließen“",
+          "source": "Frankfurter Rundschau",
+          "url": "https://www.fr.de/politik/afd-streit-entzweit-bsw-vor-parteitag-soll-ein-kompromiss-nun-die-wogen-glaetten-zr-94606637.html",
+          "date": "2026-11-24T20:55:58+00:00",
+          "category": "germany"
+        },
+        {
+          "title": "A general strike brought Spain to a standstill. Now a battle of personalities is driving the country’s election campaign",
+          "source": "Monocle",
+          "url": "https://monocle.com/affairs/politics/spain-housing-election-personality-contest/",
+          "date": "2026-11-24T18:45:42+00:00",
           "category": "spain"
         },
         {
@@ -50,155 +68,222 @@
           "category": "sweden"
         },
         {
-          "title": "Andersson ger upp – Kristersson vill bilda fyrpartiregering",
-          "source": "News55",
-          "url": "https://www.news55.se/samhalle/andersson-ger-upp-tillfalligt-kristersson-vill-bilda-fyrpartiregering/",
-          "date": "2026-11-24T16:32:11+00:00",
-          "category": "sweden"
-        },
-        {
-          "title": "Spain election tracker: Right-wing coalition favourite to win on betting markets as Sanchez falls behind",
-          "source": "AOL.com",
-          "url": "https://www.aol.com/articles/spain-election-poll-tracker-wing-162022000.html",
-          "date": "2026-11-24T16:23:14+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Spain goes to the polls on November 29 with the right and far right favoured and Sánchez facing an uphill battle",
-          "source": "ProtoThema English",
-          "url": "https://en.protothema.gr/2026/11/24/spain-goes-to-the-polls-on-november-29-with-the-right-and-far-right-favoured-and-sanchez-facing-an-uphill-battle/",
-          "date": "2026-11-24T14:00:10+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Feijóo: «Repartir los ministerios con Vox según los escaños sería lo lógico»",
-          "source": "OkDiario",
-          "url": "https://okdiario.com/espana/feijoo-repartir-ministerios-vox-segun-escanos-seria-lo-logico-21254513",
-          "date": "2026-11-24T05:50:39+00:00",
-          "category": "spain"
+          "title": "Sondage présidentielle 2027 : seuls David Lisnard et Édouard Philippe préférés à Marine Le Pen au second tour",
+          "source": "Le Parisien",
+          "url": "https://www.leparisien.fr/elections/presidentielle/sondage-presidentielle-2027-seuls-david-lisnard-et-edouard-philippe-preferes-a-marine-le-pen-au-second-tour-24-11-2026-3A5ULXBSGJEKNPTY4HTKIBTU3I.php",
+          "date": "2026-11-24T14:42:42+00:00",
+          "category": "france"
         }
       ],
       "first_seen": "2026-11-04T07:02:23+00:00",
-      "last_seen": "2026-11-24T22:50:07+00:00"
+      "last_seen": "2026-11-25T09:18:26+00:00"
+    },
+    {
+      "id": "transnational-conservative-alliances-and-bilateral-right-wing-diplomacy",
+      "title": "Transnational Conservative Alliances and Bilateral Right-Wing Diplomacy",
+      "blurb": "Right-wing leaders and political figures are actively building cross-border diplomatic ties and ideological partnerships to project international legitimacy. High-profile bilateral encounters, such as Polish President Nawrocki's summit with Argentina's Javier Milei and Tisza leader Péter Magyar's meeting with Volodymyr Zelenskyy, demonstrate a push for conservative international alignment.",
+      "convergence": 4,
+      "countries": [
+        {
+          "name": "🇦🇷 La Libertad Avanza",
+          "note": "President Javier Milei hosted Polish President Karol Nawrocki in Buenos Aires to solidify economic and strategic ties."
+        },
+        {
+          "name": "🇵🇱 Prawo i Sprawiedliwość",
+          "note": "President Karol Nawrocki conducted high-level bilateral diplomacy in Argentina, reinforcing shared conservative values and G20 support."
+        },
+        {
+          "name": "🇭🇺 Fidesz / Tisza",
+          "note": "Tisza leader Péter Magyar held a high-profile summit with Ukrainian President Zelenskyy in Zakarpattia to discuss bilateral relations."
+        },
+        {
+          "name": "🇧🇷 Bolsonarismo / Partido Liberal",
+          "note": "Key allies maintain diplomatic links with US MAGA figures while navigating personnel changes in US-Brazil diplomatic channels."
+        }
+      ],
+      "signals": [
+        "bilateral diplomacy",
+        "coordinated messaging",
+        "transnational alliances",
+        "ideological alignment"
+      ],
+      "article_count": 32,
+      "refs": [
+        {
+          "title": "Aliado da família Bolsonaro, assessor de Trump para o Brasil deixa cargo no Departamento de Estado dos EUA",
+          "source": "G1",
+          "url": "https://g1.globo.com/mundo/noticia/2026/11/24/assessor-de-trump-aliado-da-familia-bolsonaro-deixa-cargo-no-departamento-de-estado-dos-eua.ghtml",
+          "date": "2026-11-25T02:06:32+00:00",
+          "category": "brazil"
+        },
+        {
+          "title": "El presidente Javier Milei recibe a su homólogo de Polonia, Karol Nawrocki, en la Casa Rosada - EFE",
+          "source": "Agencia de noticias",
+          "url": "https://efe.com/mundo/2026-11-25/argentina-milei-recibe-presidente-polonia-nawrocki/",
+          "date": "2026-11-24T23:36:04+00:00",
+          "category": "argentina"
+        },
+        {
+          "title": "Polish, Argentine presidents discuss closer economic ties in Buenos Aires",
+          "source": "polskieradio.pl",
+          "url": "https://polskieradio.pl/395/7784/Artykul/3756664,polish-argentine-presidents-discuss-closer-economic-ties-in-buenos-aires",
+          "date": "2026-11-24T22:55:00+00:00",
+          "category": "poland"
+        },
+        {
+          "title": "Zelenskyy meets with Hungarian Prime Minister Magyar in Zakarpattia",
+          "source": "Ukranews",
+          "url": "https://ukranews.com/en/news/1189784-zelenskyy-met-with-hungarian-prime-minister-magyar-in-transcarpathia",
+          "date": "2026-11-24T21:12:10+00:00",
+          "category": "hungary"
+        },
+        {
+          "title": "Javier Milei recibió al presidente de Polonia, aliado estratégico de Donald Trump en Europa",
+          "source": "Infobae",
+          "url": "https://www.infobae.com/politica/2026/11/24/javier-milei-recibio-al-presidente-de-polonia-aliado-estrategico-de-donald-trump-en-europa/",
+          "date": "2026-11-24T17:07:00+00:00",
+          "category": "argentina"
+        }
+      ],
+      "first_seen": "2026-11-24T22:50:07+00:00",
+      "last_seen": "2026-11-25T09:18:26+00:00"
     },
     {
       "id": "judicial-crackdowns-and-surveillance-targeting-the-far-right",
       "title": "Judicial Crackdowns and Surveillance Targeting the Far-Right",
-      "blurb": "Right-wing movements in multiple democracies are framing ongoing judicial inquiries, law enforcement raids, and electoral disqualification efforts as coordinated political persecution. Leaders in Brazil, France, the US, Germany, and Poland cite institutional bias to rally their activist bases against state oversight.",
+      "blurb": "Right-wing politicians and parties across multiple jurisdictions are embroiled in complex legal battles, judicial investigations, and court challenges. Leaders accuse judicial bodies of politicized lawfare while aggressively pursuing counter-suits against electoral authorities and political opponents.",
       "convergence": 4,
       "countries": [
         {
           "name": "🇧🇷 Bolsonarismo / Partido Liberal",
-          "note": "Flávio Bolsonaro is summoned by Supreme Court Justice Moraes while legal teams navigate potential sentence reduction rulings for Jair Bolsonaro."
-        },
-        {
-          "name": "🇫🇷 Rassemblement National",
-          "note": "Jordan Bardella denounces the timing of judicial raids on party headquarters regarding leaked investigation files."
-        },
-        {
-          "name": "🇺🇸 MAGA / Trump",
-          "note": "Congressional committees expand investigations into Donald Trump Jr.'s investment firm and executive ethics compliance."
-        },
-        {
-          "name": "🇩🇪 Alternative für Deutschland",
-          "note": "Faces multiple court challenges regarding party congress bans and municipal election rules alongside renewed ban petitions."
+          "note": "Figures like Jair and Eduardo Bolsonaro face strict Supreme Court supervision and ongoing legal actions in electoral courts."
         },
         {
           "name": "🇵🇱 Prawo i Sprawiedliwość",
-          "note": "PiS figures challenge court decisions on legal immunity and express outrage over European court rulings on migrant compensation."
+          "note": "Party leaders denounce European court rulings while clashing over judicial appointments and filing defamation lawsuits."
+        },
+        {
+          "name": "🇩🇪 Alternative für Deutschland",
+          "note": "The party files high-stakes legal challenges in regional courts over investigative committees and election exclusion rules."
+        },
+        {
+          "name": "🇺🇸 MAGA / Trump",
+          "note": "The administration faces ongoing legal battles and lawsuits over historical exhibits and deportation procedures."
+        },
+        {
+          "name": "🇫🇷 Rassemblement National",
+          "note": "Spokespersons and candidates face legal scrutiny and public fallout over past controversial writings and campaign complaints."
         }
       ],
       "signals": [
-        "lawfare claims",
-        "judicial oversight",
-        "investigative pressure",
-        "defensive rhetoric"
+        "legal battles",
+        "judicial scrutiny",
+        "accusations of lawfare",
+        "electoral court challenges"
       ],
-      "article_count": 22,
+      "article_count": 28,
       "refs": [
         {
-          "title": "Brazil’s Dictator-Judge Summons Flávio Bolsonaro for ‘Slandering’ President Lula da Silva",
-          "source": "Breitbart News",
-          "url": "https://www.breitbart.com/national-security/2026/11/24/brazils-dictator-judge-summons-flavio-bolsonaro-for-slandering-president-lula/",
-          "date": "2026-11-24T17:20:14+00:00",
+          "title": "Moraes autoriza advogado a visitar Bolsonaro no hospital",
+          "source": "Poder360",
+          "url": "https://www.poder360.com.br/poder-justica/moraes-autoriza-advogado-a-visitar-bolsonaro-no-hospital/",
+          "date": "2026-11-24T23:20:39+00:00",
           "category": "brazil"
         },
         {
-          "title": "Streit um AfD-Parteitag landet vor Gericht: AfD-Politiker in ungewöhnlicher Doppelrolle",
-          "source": "Nordkurier",
-          "url": "https://www.nordkurier.de/regional/anklam/anklam-land/streit-um-afd-parteitag-landet-vor-gericht-afd-politiker-in-ungewoehnlicher-doppelrolle-5035544",
-          "date": "2026-11-24T17:09:00+00:00",
-          "category": "germany"
+          "title": "Eduardo Bolsonaro contesta no STF condenação por difamação",
+          "source": "Diário do Poder",
+          "url": "https://diariodopoder.com.br/brasil-e-regioes/e10-brasil/eduardo-bolsonaro-contesta-no-stf-condenacao-por-difamacao",
+          "date": "2026-11-24T21:33:00+00:00",
+          "category": "brazil"
         },
         {
-          "title": "Raskin probes Donald Trump Jr.'s political pull around investment firm",
-          "source": "upi",
-          "url": "https://www.upi.com/Top_News/US/2026/11/24/jamie-raskin-probe-donald-trump-jr-1789-capital/2801795536626/",
-          "date": "2026-11-24T16:34:47+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "ETPCz każe Polsce wypłacić \"zadośćuczynienia\" nielegalnym migrantom. Ostry komentarz prezesa PiS",
-          "source": "Niezależna",
-          "url": "https://niezalezna.pl/polityka/etpcz-kaze-polsce-wyplacic-zadoscuczynienia-nielegalnym-migrantom-ostry-komentarz-prezesa-pis/584868",
-          "date": "2026-11-24T15:57:00+00:00",
+          "title": "Kaczyński grzmi po wyroku ETPC. \"Europa i jej instytucje pogrążają się w szaleństwie\"",
+          "source": "naTemat.pl",
+          "url": "https://natemat.pl/676864,kaczynski-grzmi-po-wyroku-etpc-europa-i-jej-instytucje-pograzaja-sie-w-szalenstwie",
+          "date": "2026-11-24T20:50:03+00:00",
           "category": "poland"
         },
         {
-          "title": "Jordan Bardella juge «étrange» le timing de la perquisition du RN et nie toute fuite à sa connaissance",
-          "source": "Gentside",
-          "url": "https://www.gentside.com/news/politique/art122426-jordan-bardella-juge-etrange-le-timing-de-la-perquisition-du-rn-et-nie-toute-fuite-sa.html",
-          "date": "2026-11-24T10:30:00+00:00",
-          "category": "france"
+          "title": "Nachgefragt: Hat die Klage der AfD in Rheinland-Pfalz Erfolg?",
+          "source": "SWR",
+          "url": "https://www.swr.de/swraktuell/rheinland-pfalz/klage-afd-rheinland-pfalz-nachgefragt-100.html",
+          "date": "2026-11-24T20:02:58+00:00",
+          "category": "germany"
         },
         {
-          "title": "US Vice President Vance Under Investigation: The Donor Network Behind the Venezuela Oil Deal",
-          "source": "BigGo Finance",
-          "url": "https://finance.biggo.com/news/30ef6d76-b911-4125-807b-81913a450917",
-          "date": "2026-11-24T04:55:00+00:00",
-          "category": "usa"
+          "title": "Passé antisémite de Laure Lavalette : le RN s’enfonce en défense",
+          "source": "Les Jours",
+          "url": "https://lesjours.fr/obsessions/rn-derniere-marche-3/ep15-lavalette-suite/",
+          "date": "2026-11-24T17:59:00+00:00",
+          "category": "france"
         }
       ],
       "first_seen": "2026-10-29T18:42:31+00:00",
-      "last_seen": "2026-11-24T22:50:07+00:00"
+      "last_seen": "2026-11-25T09:18:26+00:00"
     },
     {
       "id": "national-priority-rhetoric-and-hardline-migration-demands",
       "title": "National Priority Rhetoric and Hardline Migration Demands",
-      "blurb": "Far-right factions are unifying around demands for 'national priority' in state services and mass deportation policies. From Spain to Germany and Norway, populist parties are pushing hardline anti-immigration frames to define electoral debates and challenge liberal asylum standards.",
+      "blurb": "Far-right parties are intensifying calls for strict national preference policies and aggressive anti-immigration measures. Framing immigration as a threat to national identity, public safety, and welfare resources, right-wing actors are pushing for deportations and restrictions on access to public benefits.",
       "convergence": 4,
       "countries": [
         {
           "name": "🇪🇸 Vox",
-          "note": "Demands explicit 'prioridad nacional' and remigration policies as conditions for government support, clashing with election boards over campaign banners."
+          "note": "Demanding strict national priority for Spaniards in public housing and escalating rhetoric against migrant integration."
         },
         {
           "name": "🇩🇪 Alternative für Deutschland",
-          "note": "Party leadership calls for mass deportations of over 2.6 million foreign residents, establishing remigration as a core campaign pillar."
+          "note": "Senior figures explicitly advocate for large-scale deportations and strict policy boundaries around remigration."
         },
         {
           "name": "🇳🇴 Fremskrittspartiet",
-          "note": "Local branches vote against municipal refugee quotas while promoting externalized asylum models modeled on third-country processing."
+          "note": "Consistently voting against local refugee settlement plans while advocating for restrictive asylum models."
+        },
+        {
+          "name": "🇫🇷 Rassemblement National",
+          "note": "Proposing financial penalties on companies hiring foreign workers to enforce national priority in employment."
         },
         {
           "name": "🇺🇸 MAGA / Trump",
-          "note": "Federal restrictions targeting non-citizens' access to subsidized housing spark legal challenges from municipal governments."
+          "note": "Executing hardline deportation mandates and voluntary self-deportation agreements for non-citizens."
         }
       ],
       "signals": [
-        "policy contagion",
-        "hardline rhetoric",
-        "remigration demands",
-        "border security framing"
+        "national priority",
+        "hardline migration demands",
+        "remigration rhetoric",
+        "welfare nativism"
       ],
-      "article_count": 16,
+      "article_count": 24,
       "refs": [
         {
-          "title": "La Junta Electoral suspende la retirada de la lona de Vox contra la inmigración en València",
-          "source": "La Vanguardia",
-          "url": "https://www.lavanguardia.com/local/valencia/20261124/11692432/junta-electoral-suspende-retirada-lona-vox-inmigracion-valencia.html",
-          "date": "2026-11-24T16:55:24+00:00",
+          "title": "Vox plantea en Cádiz rebajar el IRPF y priorizar a los españoles en el acceso a vivienda pública",
+          "source": "Cadiznoticias",
+          "url": "https://cadiznoticias.es/vox-plantea-en-cadiz-rebajar-el-irpf-y-priorizar-a-los-espanoles-en-el-acceso-a-vivienda-publica/",
+          "date": "2026-11-25T00:54:43+00:00",
           "category": "spain"
+        },
+        {
+          "title": "VRAI/FAUX. Le programme du Rassemblement national prévoit-il une amende pour les entreprises embauchant des travailleurs immigrés comme l'affirme Manuel Bompard?",
+          "source": "BFM",
+          "url": "https://www.bfmtv.com/vrai-faux/vrai-faux-le-programme-du-rassemblement-national-prevoit-il-une-amende-pour-les-entreprises-embauchant-des-travailleurs-immigres-comme-l-affirme-manuel-bompard_AV-202611241031.html",
+          "date": "2026-11-24T22:55:31+00:00",
+          "category": "france"
+        },
+        {
+          "title": "Vox endurece su discurso en Reus: «No queremos que la Avinguda Jaume I sea la de Abderramán»",
+          "source": "Diari de Tarragona",
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPQ0pZWllxeGtxcl9MdEt2Wl9jcXhMQ2dNeGVmMDMzVFNHUFA1a2ltbGs5U3FjSWt1NXR5LVVhN0RrUUx1YnVhcHEzZGJNYjMta290VVJjcjF5cWxJM0hwaXpFM2NjcDU1bDRsSUZGR3FhV3lCRWJfaFRIS09kNVJNWUFSaHdpdlMxaTZEYWJPa2k1bGt5dWUzNTBKVXlwdUFWQmlqeVJvQmRhVk9fTWRlaVQ2eGc5RDJy0gG-AUFVX3lxTFBUQjhUbVRIQ25qYmsxYzFrWWRzU0RxS3Z2TzhEUWozeWNzZWNMZnBleE9qUGtmLUctWWJibXpxLW1PeEpJcmIyWnJrcEdMUmRQeXllcmQwRjItX29BdFZjeHhVcUNOSXl6WGtBLTl6SkZDQ3AwaTRxU3NpUG9zM085SWdhX21EWmxCOV9UYjJqSEF1aVNuWlJneC1mWGxYaUxsS08wOFRnUTQ3eUE2bEJDeVZ2NHpMZE5Qb1lpcHc?oc=5",
+          "date": "2026-11-24T20:37:16+00:00",
+          "category": "spain"
+        },
+        {
+          "title": "Maximilian Krah und die AfD: Kampf um die Grenzen der „Remigration“",
+          "source": "WELT",
+          "url": "https://www.welt.de/politik/deutschland/plus6b007cf939a3e8110f0e4782/maximilian-krah-und-die-afd-kampf-um-die-grenzen-der-remigration.html",
+          "date": "2026-11-24T19:02:38+00:00",
+          "category": "germany"
         },
         {
           "title": "AfD Leader Calls for 2.6 Million Deportations From Germany",
@@ -213,171 +298,91 @@
           "url": "https://www.iharstad.no/formannskapet-vil-bosette-110-flyktninger-frp-stemte-imot/s/80-126-36891",
           "date": "2026-11-24T11:53:40+00:00",
           "category": "norway"
-        },
-        {
-          "title": "Boston sues Trump Administration over new rule targeting immigrants in federally-subsidized housing",
-          "source": "Boston.com",
-          "url": "https://www.boston.com/news/local-news/2026/11/24/boston-housing-authority-lawsuit-department-housing-urban-development-hud/",
-          "date": "2026-11-24T05:10:00+00:00",
-          "category": "usa"
-        },
-        {
-          "title": "Maribel Cerezo, candidata de Vox Baleares al Congreso: \"Apoyaremos un acuerdo con el PP siempre que acepten la prioridad nacional, la desregulación y la remigración\"",
-          "source": "Diario de Mallorca",
-          "url": "https://www.diariodemallorca.es/mallorca/2026/11/24/maribel-cerezo-candidata-vox-baleares-136764487.html",
-          "date": "2026-11-24T05:01:18+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Nyheter, Danmark | Avtale mellom Danmark og Rwanda – skal bane vei for asylsøker-utsendelser",
-          "source": "Nettavisen",
-          "url": "https://www.nettavisen.no/nyheter/avtale-mellom-danmark-og-rwanda-skal-bane-vei-for-asylsoker-utsendelser/s/80-95-275351",
-          "date": "2026-11-23T19:03:59+00:00",
-          "category": "norway"
         }
       ],
       "first_seen": "2026-10-28T06:23:48+00:00",
-      "last_seen": "2026-11-24T22:50:07+00:00"
-    },
-    {
-      "id": "transnational-conservative-alliances-and-bilateral-right-wing-diplomacy",
-      "title": "Transnational Conservative Alliances and Bilateral Right-Wing Diplomacy",
-      "blurb": "Right-wing leaders are building bilateral networks to bypass traditional diplomatic channels and project strength internationally. High-profile meetings between South American libertarian figures and European national-conservatives demonstrate an effort to solidify a global right-wing alliance.",
-      "convergence": 4,
-      "countries": [
-        {
-          "name": "🇦🇷 La Libertad Avanza",
-          "note": "Javier Milei hosts Polish conservative presidential candidate Karol Nawrocki in Buenos Aires, offering symbolic support and backing Poland's G20 ambitions."
-        },
-        {
-          "name": "🇵🇱 Prawo i Sprawiedliwość",
-          "note": "PiS-backed candidate Karol Nawrocki travels to Argentina to align with Milei on economic reform and anti-establishment strategy."
-        },
-        {
-          "name": "🇪🇸 Vox",
-          "note": "Media analysis highlights Vox's expanding global ambitions and international network building across Europe and the Americas."
-        }
-      ],
-      "signals": [
-        "bilateral summits",
-        "symbolic alignment",
-        "cross-border endorsement",
-        "networked nationalism"
-      ],
-      "article_count": 12,
-      "refs": [
-        {
-          "title": "Javier Milei recibió al presidente de Polonia, aliado estratégico de Donald Trump en Europa",
-          "source": "Infobae",
-          "url": "https://www.infobae.com/politica/2026/11/24/javier-milei-recibio-al-presidente-de-polonia-aliado-estrategico-de-donald-trump-en-europa/",
-          "date": "2026-11-24T17:07:00+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Argentine President Milei backs Poland’s G20 membership — RMF24",
-          "source": "UA.NEWS",
-          "url": "https://ua.news/en/world/prezident-argentini-milei-zaiaviv-pro-pidtrimku-chlenstva-polshchi-v-g20-rmf24",
-          "date": "2026-11-24T17:05:52+00:00",
-          "category": "poland"
-        },
-        {
-          "title": "Milei y el presidente de Polonia, Karol Nawrocki, posaron con la motosierra en la Casa Rosada",
-          "source": "Crónica",
-          "url": "https://www.cronica.com.ar/politica/milei-se-reunio-con-el-presidente-de-polonia-karol-nawrocki-en-la-casa-rosada/",
-          "date": "2026-11-24T15:28:20+00:00",
-          "category": "argentina"
-        },
-        {
-          "title": "Networked nationalism: The global ambitions of Spain’s Vox party",
-          "source": "European Council on Foreign Relations",
-          "url": "https://ecfr.eu/article/networked-nationalism-the-global-ambitions-of-spains-vox-party/",
-          "date": "2026-11-24T14:47:55+00:00",
-          "category": "spain"
-        },
-        {
-          "title": "Nawrocki w Argentynie. \"W grudniu będziemy na szczycie G20\"",
-          "source": "Do Rzeczy",
-          "url": "https://dorzeczy.pl/kraj/976362/nawrocki-w-argentynie-w-grudniu-bedziemy-na-szczycie-g20.html",
-          "date": "2026-11-24T05:39:00+00:00",
-          "category": "poland"
-        }
-      ],
-      "first_seen": "2026-11-24T22:50:07+00:00",
-      "last_seen": "2026-11-24T22:50:07+00:00"
+      "last_seen": "2026-11-25T09:18:26+00:00"
     },
     {
       "id": "pensions-overhaul-and-fiscal-populism-debates",
       "title": "Pensions Overhaul and Fiscal Populism Debates",
-      "blurb": "Right-wing parties are combining tax-cutting promises with fiscal populism to attract working-class voters. Factions in France, Italy, Argentina, Spain, and Norway are debating state spending caps, tax exemptions, and pension reform rollbacks ahead of upcoming legislative sessions.",
+      "blurb": "Right-wing movements are championing fiscal populism, combining demands for aggressive spending cuts and tax reductions with protection for populist welfare initiatives. From state downsizing in South America to tax cuts and pension reform demands in Europe, conservative factions are pushing economic restructuring.",
       "convergence": 3,
       "countries": [
         {
-          "name": "🇫🇷 Rassemblement National",
-          "note": "Defends pension reform promises against critics while seeking to reassure voters on long-term fiscal responsibility."
+          "name": "🇦🇷 La Libertad Avanza",
+          "note": "Javier Milei's administration cuts tens of thousands of public sector jobs to enforce fiscal balance and lower public spending."
         },
         {
           "name": "🇮🇹 Fratelli d'Italia / Lega",
-          "note": "Coalition leaders negotiate youth flat-tax proposals and budget adjustments amid pressure from municipal governments."
-        },
-        {
-          "name": "🇦🇷 La Libertad Avanza",
-          "note": "Pushes aggressive public sector headcount reductions aiming for multi-billion dollar budget savings."
-        },
-        {
-          "name": "🇪🇸 Vox",
-          "note": "Pledges sweeping tax cuts, deregulation for agricultural sectors, and the elimination of green energy levies."
+          "note": "The ruling coalition debates 2027 budget measures, pushing tax amnesties, youth flat taxes, and pension protection."
         },
         {
           "name": "🇳🇴 Fremskrittspartiet",
-          "note": "Campaigns on phasing out local property taxes and capping municipal fiscal burdens."
+          "note": "Pushing for dramatic fuel tax cuts and advocating for the total phase-out of municipal property taxes."
+        },
+        {
+          "name": "🇫🇷 Rassemblement National",
+          "note": "Demanding immediate VAT reductions on energy while navigating contentious debates over pension eligibility."
+        },
+        {
+          "name": "🇪🇸 Vox",
+          "note": "Proposing regional income tax cuts and fiscal incentives for savings ahead of major elections."
         }
       ],
       "signals": [
-        "tax cut promises",
-        "deregulation demands",
-        "fiscal discipline",
-        "populist economic messaging"
+        "fiscal populism",
+        "tax cut demands",
+        "state spending cuts",
+        "pension policy debates"
       ],
-      "article_count": 18,
+      "article_count": 26,
       "refs": [
         {
-          "title": "Meloni revives the flat-rate tax for young people. But FdI is negotiating with Giorgetti to replace it: here’s how",
-          "source": "la Repubblica",
-          "url": "https://www.repubblica.it/en/economy/2026/11/24/news/meloni_revives_the_flat-rate_tax_for_young_people_but_fdi_is_negotiating_with_giorgetti_to_replace_it_here_s_how-425746978/",
-          "date": "2026-11-24T16:39:31+00:00",
-          "category": "italy"
+          "title": "Vox plantea en Cádiz rebajar el IRPF y priorizar a los españoles en el acceso a vivienda pública",
+          "source": "Cadiznoticias",
+          "url": "https://cadiznoticias.es/vox-plantea-en-cadiz-rebajar-el-irpf-y-priorizar-a-los-espanoles-en-el-acceso-a-vivienda-publica/",
+          "date": "2026-11-25T00:54:43+00:00",
+          "category": "spain"
         },
         {
-          "title": "El Gobierno Nacional estima un ahorro anual de US$3.491 millones con 22.000 puestos públicos menos",
-          "source": "LA17",
-          "url": "https://lu17.com/contenido/159068/el-gobierno-nacional-estima-un-ahorro-anual-de-us-3-491-millones-con-22-000-puestos-publicos-menos",
-          "date": "2026-11-24T16:39:00+00:00",
+          "title": "El Gobierno nacional redujo casi 22.000 empleos públicos en la era Javier Milei",
+          "source": "Aire de Santa Fe",
+          "url": "https://www.airedesantafe.com.ar/economia/el-gobierno-nacional-redujo-casi-22000-empleos-publicos-la-era-javier-milei-n677955",
+          "date": "2026-11-24T23:09:00+00:00",
           "category": "argentina"
         },
         {
-          "title": "Flertallet avviste skattekutt og robotplan: Vil beholde eiendomsskatten og fremskynde aktivitetspark",
-          "source": "Avisen Agder",
-          "url": "https://www.avisenagder.no/flertallet-avviste-skattekutt-og-robotplan-vil-beholde-eiendomsskatten-og-fremskynde-aktivitetspark/s/80-99-27918",
-          "date": "2026-11-24T16:13:00+00:00",
-          "category": "norway"
+          "title": "Manovra, Lega in pressing su condono e pensioni",
+          "source": "Quotidiano Nazionale",
+          "url": "https://www.quotidiano.net/politica/manovra-lega-in-pressing-su-condono-e-pensioni-llz636yl",
+          "date": "2026-11-24T22:16:42+00:00",
+          "category": "italy"
         },
         {
-          "title": "Retraites : ces « cas types » qui montrent que la réforme du RN « serait l'une des plus dures de ces vingt dernières années »",
-          "source": "Les Echos",
-          "url": "https://www.lesechos.fr/elections/programmes-dechiffres/retraites-ces-cas-types-qui-montrent-que-la-reforme-du-rn-serait-lune-des-plus-dures-de-ces-vingt-dernieres-annees-2264203",
-          "date": "2026-11-24T05:45:08+00:00",
+          "title": "Una manovra con la «coperta corta». Meloni ha un obiettivo: uscire dalla procedura d'infrazione sul deficit",
+          "source": "Giornale di Sicilia",
+          "url": "https://gds.it/articoli/politica/2026/11/24/una-manovra-con-la-coperta-corta-meloni-ha-un-obiettivo-uscire-dalla-procedura-dinfrazione-sul-deficit-b25584d3-d349-458d-986a-d0ca60bda8ca/",
+          "date": "2026-11-24T20:29:04+00:00",
+          "category": "italy"
+        },
+        {
+          "title": "Présidentielle 2027 : « Baisser la TVA à 5,5 % sur l’énergie, c’est la première des urgences » selon Marine Le Pen",
+          "source": "L'Union",
+          "url": "https://www.lunion.fr/id842338/article/2026-11-24/presidentielle-2027-baisser-la-tva-55-sur-lenergie-cest-la-premiere-des-urgences",
+          "date": "2026-11-24T19:15:32+00:00",
           "category": "france"
         },
         {
-          "title": "La batalla fiscal de las elecciones del 29N : PP y Vox prometen una bajada de impuestos generalizada, mientras PSOE y Frente Amplio quieren gravar a las grandes fortunas",
-          "source": "El Economista",
-          "url": "https://www.eleconomista.es/economia/noticias/14030215/11/26/la-batalla-fiscal-de-las-elecciones-del-29n-pp-y-vox-prometen-una-bajada-de-impuestos-generalizada-mientras-psoe-y-frente-amplio-quieren-gravar-a-las-grandes-fortunas.html",
-          "date": "2026-11-24T05:00:14+00:00",
-          "category": "spain"
+          "title": "Listhaug slakter skatteforlik med SV og Rødt: – Som å tro på julenissen",
+          "source": "Finansavisen",
+          "url": "https://www.finansavisen.no/politikk/2026/11/24/8398201/listhaug-slakter-skatteforlik-med-sv-og-rodt-som-a-tro-pa-julenissen",
+          "date": "2026-11-24T18:06:33+00:00",
+          "category": "norway"
         }
       ],
       "first_seen": "2026-11-18T20:59:12+00:00",
-      "last_seen": "2026-11-24T22:50:07+00:00"
+      "last_seen": "2026-11-25T09:18:26+00:00"
     }
   ]
 }
